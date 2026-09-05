@@ -14107,6 +14107,13 @@ class App:
         r = ttk.Frame(src)
         r.pack(fill="x")
         self.import_src = tk.StringVar(value="")
+        # Defaults to the book the rest of the app is pointed at, so the
+        # common case needs no thought; changing it here does not disturb the
+        # Setup tab, because importing somebody else's chapters into a second
+        # book is a reasonable thing to want.
+        self.import_dest = tk.StringVar(
+            value=self.out_dir1.get().strip()
+            or _quests_dir_for(self.mods_dir.get().strip()))
         ttk.Entry(r, textvariable=self.import_src, width=52).pack(side="left")
         b = ttk.Button(r, text="Browse folder...", command=self._import_browse_dir)
         b.pack(side="left", padx=(6, 0))
@@ -14117,6 +14124,36 @@ class App:
         b3.pack(side="left", padx=(10, 0))
         self.import_lbl = ttk.Label(src, text="", style="CardMuted.TLabel")
         self.import_lbl.pack(anchor="w", pady=(6, 0))
+
+        dst = ttk.Labelframe(pad, text="INTO WHICH MODPACK")
+        dst.pack(fill="x", pady=(12, 0))
+        ttk.Label(dst, wraplength=760, style="CardMuted.TLabel", justify="left",
+                  text="The book these chapters are copied into. It starts as the "
+                       "pack you scanned, which is what the \u201cMod installed?\u201d "
+                       "column below is answered against - point it somewhere else "
+                       "and that column is answering about a different pack.").pack(
+            anchor="w", pady=(0, 8))
+        if getattr(self, "_instances", None):
+            di = ttk.Frame(dst)
+            di.pack(fill="x", pady=(0, 4))
+            ttk.Label(di, text="Detected instances", width=18).pack(side="left")
+            self._import_inst = tk.StringVar(value="")
+            dcb = ttk.Combobox(di, textvariable=self._import_inst, state="readonly",
+                               values=[lbl for lbl, _ in self._instances])
+            dcb.pack(side="left", fill="x", expand=True)
+            dcb.bind("<<ComboboxSelected>>", self._on_pick_import_dest)
+        dr = ttk.Frame(dst)
+        dr.pack(fill="x")
+        ttk.Label(dr, text="Book folder", width=18).pack(side="left")
+        ttk.Entry(dr, textvariable=self.import_dest).pack(
+            side="left", fill="x", expand=True)
+        ttk.Button(dr, text="Browse",
+                   command=lambda: self._b_out(self.import_dest)).pack(
+            side="left", padx=(6, 0))
+        self.import_dest_lbl = ttk.Label(dst, text="", style="CardMuted.TLabel")
+        self.import_dest_lbl.pack(anchor="w", pady=(6, 0))
+        self.import_dest.trace_add("write", lambda *_a: self._update_import_dest())
+        self._update_import_dest()
 
         lst = ttk.Labelframe(pad, text="CHAPTERS FOUND  (select the ones to copy)")
         lst.pack(fill="both", expand=True, pady=(12, 0))
@@ -14151,6 +14188,31 @@ class App:
                         style="Accent.TButton", command=self.on_import_install)
         b4.pack(side="left", padx=(12, 0))
         self._import_rows = []
+
+    def _on_pick_import_dest(self, _e=None):
+        lbl = self._import_inst.get()
+        for name, mods in self._instances:
+            if name == lbl:
+                self.import_dest.set(_quests_dir_for(mods))
+                return
+
+    def _update_import_dest(self):
+        """Say which pack the destination is, and whether it is the scanned one."""
+        dest = self.import_dest.get().strip()
+        if not dest:
+            self.import_dest_lbl.configure(text="no destination set")
+            return
+        d_inst = self._instance_of(dest)
+        s_inst = self._instance_of(self.mods_dir.get().strip())
+        name = Path(d_inst).name if d_inst else dest
+        if d_inst and s_inst and d_inst != s_inst:
+            self.import_dest_lbl.configure(
+                text="writing into %s - a DIFFERENT pack from the one you "
+                     "scanned (%s), so the Mod installed? column is about %s, "
+                     "not about where these chapters are going"
+                     % (name, Path(s_inst).name, Path(s_inst).name))
+        else:
+            self.import_dest_lbl.configure(text="writing into %s" % name)
 
     def _import_browse_dir(self):
         from tkinter import filedialog
@@ -14199,6 +14261,30 @@ class App:
         self.import_lbl.configure(
             text="%d chapter(s) found - select and press Import" % len(rows))
 
+    def _guard_import(self, dest) -> bool:
+        """Confirm before copying chapters into a pack they were not checked
+        against. Returns True to proceed.
+
+        _guard_pack compares the mods folder against the OUTPUT folders, and
+        import writes somewhere it chose itself, so that guard cannot see this
+        one. The consequence is specific enough to be worth its own sentence:
+        the chapters were filtered against the scanned pack's mod list, so
+        into a different pack they bring quests for mods that are not there.
+        """
+        d_inst = self._instance_of(dest)
+        s_inst = self._instance_of(self.mods_dir.get().strip())
+        if not d_inst or not s_inst or d_inst == s_inst:
+            return True
+        nl = chr(10)
+        return messagebox.askyesno(APP_NAME, nl.join([
+            "These chapters were checked against a different pack.", "",
+            "Checked against:", "    " + (Path(s_inst).name or s_inst), "",
+            "Importing into:", "    " + (Path(d_inst).name or d_inst), "",
+            "The Mod installed? column is about the first one. Quests for "
+            "mods the second pack does not have will show in game as a purple "
+            "\u201cMissing Item\u201d and can never be completed.", "",
+            "Import anyway?"]), icon="warning", default="no")
+
     def on_import_install(self):
         if self._need_scan():
             return
@@ -14206,9 +14292,16 @@ class App:
         if not sel:
             messagebox.showwarning(APP_NAME, "Select at least one chapter in the list.")
             return
-        outs = self._out_dirs()
-        if not outs:
-            messagebox.showwarning(APP_NAME, "Set an Output folder on the Setup tab.")
+        dest = self.import_dest.get().strip()
+        if not dest:
+            messagebox.showwarning(
+                APP_NAME, "Pick the modpack to import into, above the list.")
+            return
+        outs = [Path(dest)]
+        # The same gate the generate paths go through. Import had none at all,
+        # which made it the easiest way in the whole app to put one pack's
+        # quests into another pack's book.
+        if not self._guard_import(dest) or not self._guard_mc():
             return
         picks = [self._import_rows[i] for i in sel]
         group = self.import_group.get().strip() or "Imported"
