@@ -1,0 +1,87 @@
+{
+  "mod": "createutilities",
+  "parent_mod": "create",
+  "verified_against": "createutilities-0.3.2+1.20.1.jar",
+  "item_count_in_jar": 17,
+  "chain": [
+    {
+      "id": "createutilities:lshaped_gearbox",
+      "title": "L-Shaped Gearbox",
+      "desc": "Two cogwheels and an andesite casing in an L. Create's gearbox always sends rotation four ways; this one bends it round exactly one corner and nothing else."
+    },
+    {
+      "id": "createutilities:gearcube",
+      "title": "6-Axis Gearbox",
+      "desc": "Four cogwheels around an andesite casing. Rotation in on any face, out on all the rest - the piece that finally lets a shaft turn up and sideways at the same time."
+    },
+    {
+      "id": "createutilities:polished_amethyst",
+      "title": "Polished Amethyst",
+      "desc": "Run an amethyst shard under a Mechanical Press loaded with sandpaper. The mod's second material line starts here, and the whole void tier needs it."
+    },
+    {
+      "id": "createutilities:void_steel_ingot",
+      "title": "Void Steel Ingot",
+      "desc": "Mix a netherite ingot with an ender pearl over a Blaze Burner at heated. Netherite in the recipe is the point - everything below is warm-up, and everything above is endgame."
+    },
+    {
+      "id": "createutilities:void_steel_sheet",
+      "title": "Void Steel Sheet",
+      "desc": "Press a Void Steel Ingot. Flat stock for the Graviton Tube, and the only thing the press will do with void steel."
+    },
+    {
+      "id": "createutilities:void_casing",
+      "title": "Void Casing",
+      "desc": "Apply a Void Steel Ingot to a block of obsidian - a Deployer will do it, or your own hand. The shell every void machine in the mod is wrapped in."
+    },
+    {
+      "id": "createutilities:graviton_tube",
+      "title": "Graviton Tube",
+      "desc": "Polished Amethyst over a Void Steel Sheet. Two items, and it is the component that makes a void machine reach across the world instead of across the room."
+    },
+    {
+      "id": "createutilities:void_motor",
+      "title": "Void Motor",
+      "desc": "Graviton Tube, Void Casing and a shaft. It draws rotation from a linked Void Battery rather than from a cogwheel, so a contraption can spin with nothing physically attached."
+    },
+    {
+      "id": "createutilities:void_battery",
+      "title": "Void Battery",
+      "desc": "Graviton Tube and Void Casing between two copper plates with a gold nugget beneath. It stores rotational force and hands it back to any Void Motor bound to it - wireless kinetics."
+    },
+    {
+      "id": "createutilities:void_chest",
+      "title": "Void Chest",
+      "desc": "A chest sandwiched between the Graviton Tube and the Void Casing. Every Void Chest you own shares one inventory, so what you drop in at the mine comes out at base."
+    },
+    {
+      "id": "createutilities:void_tank",
+      "title": "Void Tank",
+      "desc": "The Void Chest recipe with a barrel instead of a chest. The same trick for fluids - one shared tank, however far apart the two ends are."
+    },
+    {
+      "id": "createutilities:void_steel_block",
+      "title": "Block of Void Steel",
+      "desc": "Nine Void Steel Ingots, and nine back out again. Storage for the most expensive material in the mod, and a wall you can point at."
+    },
+    {
+      "id": "createutilities:amethyst_tiles",
+      "title": "Amethyst Tiles",
+      "desc": "Stonecut two from a Polished Amethyst, or fold four small tiles together. The mod's one purely decorative line, and it goes with Create's palette better than raw amethyst does."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "createutilities:void_steel_block",
+      "members": [
+        "createutilities:void_steel_bars",
+        "createutilities:void_steel_ladder",
+        "createutilities:void_steel_scaffolding",
+        "createutilities:amethyst_tiles",
+        "createutilities:small_amethyst_tiles",
+        "createutilities:polished_amethyst"
+      ]
+    }
+  ],
+  "notes": "Verified against createutilities-0.3.2+1.20.1.jar: META-INF/mods.toml modId=createutilities, modLoader=javafml, minecraft versionRange [1.20,1.21), forge [47.0.0,), depends on create [0.5.1.d,); no fabric.mod.json, all 64 sampled class files at major version 61 (Java 17 = 1.20.1). This project also ships a Fabric build under the same version string, so the loader was taken from the jar, not the Modrinth label. ID DERIVATION, two independent passes, both giving 17 with no widening required. Pass 1 (assets): assets/createutilities/models/item/ holds 17 json files and assets/createutilities/lang/en_us.json holds exactly 17 matching stems - 4 under item.createutilities.* (graviton_tube, polished_amethyst, void_steel_ingot, void_steel_sheet) and 13 under block.createutilities.*. model-minus-lang and lang-minus-model are both EMPTY, which is rare and makes this mod's count unambiguous. Pass 2 (bytecode, derived without touching assets): parsing the CONSTANT_Utf8 pool of every class turns up all 17 registry names, and the split is confirmed structurally - me/duquee/createutilities/items/CUItems.class carries exactly the four pure-item names graviton_tube, polished_amethyst, void_steel_ingot, void_steel_sheet, matching the four item. lang keys, and me/duquee/createutilities/blocks/CUBlocks.class carries the block names. Blockstates number 13, matching the 13 block lang keys exactly. models/block/ holds 27 files against 13 blockstates, which is the usual multi-part inflation (bars and scaffolding alone contribute several) and is correctly ignored - a blockstate proves a block, a block model does not. OBTAINABILITY: all 17 confirmed, nothing dropped. Every id has at least one recipe; the 13 blocks additionally have loot tables. IMPORTANT SCAN NOTE: four of this mod's recipes are Create-family types that use a plural \"results\" ARRAY instead of a singular \"result\" object - create:mixing (void_steel_ingot), create:pressing (void_steel_sheet), create:item_application (void_casing) and create:sandpaper_polishing (polished_amethyst). A scanner reading only \"result\" finds none of those four, and void_steel_ingot is the root of the entire mod, so that single omission would have made the whole chain look unobtainable. Recipes also live in nested subfolders (data/createutilities/recipes/shaped/, /shapeless/, /stonecutting/, /mixing/, /pressing/, /item_application/, /sandpaper_polishing/) rather than flat. ORDERING is a strict recipe graph. Two independent roots: the andesite-tier gearboxes (create:cogwheel + create:andesite_casing, no createutilities ingredient at all) and the void line. The void line is linear and forced: create:mixing at heat, netherite_ingot + ender_pearl -> void_steel_ingot; that ingot then feeds three branches - create:pressing -> void_steel_sheet, create:item_application on obsidian -> void_casing, and stonecutting -> bars/ladder/scaffolding. polished_amethyst + void_steel_sheet -> graviton_tube. Then graviton_tube + void_casing is the shared prefix of ALL FOUR void machines: void_motor adds create:shaft, void_battery adds copper plates and a gold nugget, void_chest adds minecraft:chest, void_tank adds minecraft:barrel. The gearboxes are placed first because they are reachable at andesite tier while everything else needs netherite. CONSENSUS CONFLICT, RECORDED: moddb.json lists 4 ids and orders them void_steel_ingot 0.0, graviton_tube 0.333, void_casing 0.667, void_battery 1.0 - i.e. graviton_tube before void_casing. There is no recipe edge between those two so this is not an impossible ordering, but it is the more expensive item first: void_casing is one ingot applied to obsidian, while graviton_tube needs a pressed sheet AND a polished amethyst, two more processing steps. The graph ordering by ingredient depth is preferred and casing is placed before tube. Consensus also omits the gearboxes, both of which are craftable long before any void item and are the first thing a player of this mod actually builds."
+}

@@ -1,0 +1,35 @@
+{
+ "mod": "ae2wtlib",
+ "verified_against": "ae2wtlib-15.3.3-forge.jar",
+ "item_count_in_jar": 5,
+ "parent_mod": "ae2",
+ "chain": [
+  {
+   "id": "ae2wtlib:wireless_pattern_encoding_terminal",
+   "title": "Encoding Without a Wall",
+   "desc": "Craft a Wireless Receiver over an AE2 Pattern Encoding Terminal over a Dense Energy Cell; encode autocrafting patterns anywhere a Wireless Access Point reaches."
+  },
+  {
+   "id": "ae2wtlib:wireless_pattern_access_terminal",
+   "title": "Patterns in Your Pocket",
+   "desc": "Craft a Wireless Receiver over a Pattern Access Terminal over a Dense Energy Cell; audit and edit every pattern provider on the network from the field."
+  },
+  {
+   "id": "ae2wtlib:wireless_universal_terminal",
+   "title": "One Terminal to Hold Them",
+   "desc": "Combine two wireless terminals in a crafting grid, or upgrade a single one; the universal terminal carries crafting, pattern access and pattern encoding in a single slot."
+  },
+  {
+   "id": "ae2wtlib:magnet_card",
+   "title": "Magnet Card",
+   "desc": "Craft from a redstone block, an Annihilation Plane, a lapis block, iron blocks and an Advanced Card; slot it into a wireless terminal to vacuum drops straight into network storage."
+  },
+  {
+   "id": "ae2wtlib:quantum_bridge_card",
+   "title": "Across the Bridge",
+   "desc": "Craft from two Fluix Pearls over a Wireless Receiver; it lets a wireless terminal reach through a Quantum Network Bridge into another dimension."
+  }
+ ],
+ "collections": [],
+ "notes": "Thin by design - the jar registers exactly 5 items and this chain quests all 5, so there is nothing to pad and no wheel large enough to be worth writing. Despite the tiny item count this is the single most-downloaded AE2 addon on Modrinth. ASSUMES FROM PARENT (ae2): Wireless Receiver, Dense Energy Cell, Wireless Access Point, Pattern Encoding Terminal, Pattern Access Terminal, Wireless Crafting Terminal, Fluix Pearl, Annihilation Plane, Advanced Card, Quantum Network Bridge. VERIFICATION: strict intersection of assets/ae2wtlib/models/item stems with item./block. lang keys; 5/5 matched, no widening needed, no drops. The 3 extra lang keys the strict pass rejected (magnet_card.desc, quantum_bridge_card.desc, wireless_universal_terminal.desc) are tooltip strings, not items. The Universal Terminal deliberately has no grid pattern: it is produced only by the custom ae2wtlib:combine and ae2wtlib:upgrade recipe types, which is why its desc describes combining terminals rather than a shape."
+}

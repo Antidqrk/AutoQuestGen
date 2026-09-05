@@ -1,0 +1,350 @@
+{
+ "mod": "enderio",
+ "verified_against": "EnderIO-1.20.1-6.2.18-beta-all.jar",
+ "item_count_in_jar": 360,
+ "chain": [
+  {
+   "id": "enderio:grains_of_infinity",
+   "title": "Grains of Infinity",
+   "desc": "Not crafted and not mined. Build a fire on a bedrock plinth, throw the right things in, and this black powder is what the fire leaves behind."
+  },
+  {
+   "id": "enderio:conduit_binder_composite",
+   "title": "Conduit Binder",
+   "desc": "Gravel, sand and a clay ball. Cheap as dirt because you are about to need hundreds of it; every conduit in the mod is mostly this."
+  },
+  {
+   "id": "enderio:conduit_binder",
+   "title": "Fired Binder",
+   "desc": "The composite smelted into a hard block. This is the actual ingredient the conduits ask for, and the composite is only its raw form."
+  },
+  {
+   "id": "enderio:primitive_alloy_smelter",
+   "title": "Primitive Alloy Smelter",
+   "desc": "A furnace, deepslate and grains of infinity. Runs on solid fuel with no power at all, which is the only reason the mod can bootstrap itself."
+  },
+  {
+   "id": "enderio:void_chassis",
+   "title": "Void Chassis",
+   "desc": "Iron, iron bars and grains of infinity. The frame every machine in the mod is built around, and the reason grains are step one."
+  },
+  {
+   "id": "enderio:iron_gear",
+   "title": "Iron Gear",
+   "desc": "Iron ingots, nuggets and a grain of infinity. Wood and stone gears come first and cost less, but the machines all want this one."
+  },
+  {
+   "id": "enderio:copper_alloy_ingot",
+   "title": "Copper Alloy",
+   "desc": "Copper and silicon in the alloy smelter. The first alloy, and the one the wrench and the early machine casings are cut from."
+  },
+  {
+   "id": "enderio:yeta_wrench",
+   "title": "Yeta Wrench",
+   "desc": "Copper alloy on a stone gear. Rotates machines, reconfigures conduit connections and picks blocks up without losing their settings."
+  },
+  {
+   "id": "enderio:dark_steel_ingot",
+   "title": "Dark Steel",
+   "desc": "Iron, coal dust and obsidian alloyed together. The structural metal of the whole mod, and the gate that decides how early the rest of it opens."
+  },
+  {
+   "id": "enderio:sag_mill",
+   "title": "SAG Mill",
+   "desc": "Dark steel, iron gears, flint and a void chassis on the chassis. Grinds ore into two dusts and makes every powder the mod runs on."
+  },
+  {
+   "id": "enderio:silicon",
+   "title": "Silicon",
+   "desc": "Ground out of clay and redstone ore in the SAG mill. Half the alloys need it, which is why the mill pays for itself immediately."
+  },
+  {
+   "id": "enderio:alloy_smelter",
+   "title": "Alloy Smelter",
+   "desc": "The primitive version rebuilt properly, on dark steel and a void chassis. Takes power, runs faster, and takes a grinding ball for bonus output."
+  },
+  {
+   "id": "enderio:stirling_generator",
+   "title": "Stirling Generator",
+   "desc": "A furnace, dark steel, iron gears and a piston. Burns coal for Forge Energy; crude, but it is what powers the first real machine room."
+  },
+  {
+   "id": "enderio:basic_capacitor",
+   "title": "Basic Capacitor",
+   "desc": "Grains of infinity between copper and gold nuggets. Slot it into any machine to make it faster; the whole mod is tuned around upgrading these."
+  },
+  {
+   "id": "enderio:redstone_alloy_ingot",
+   "title": "Redstone Alloy",
+   "desc": "Redstone dust and silicon. Conducts a signal rather than power, which is exactly what the redstone conduit and the filters want."
+  },
+  {
+   "id": "enderio:conductive_alloy_ingot",
+   "title": "Conductive Alloy",
+   "desc": "Copper alloy, iron and redstone. The cheap conductor, and the ingot the energy conduit is drawn from."
+  },
+  {
+   "id": "enderio:energy_conduit",
+   "title": "Energy Conduit",
+   "desc": "Conductive alloy on conduit binder. Nine of them share one block space with the other conduit types, which is Ender IO's whole reason to exist."
+  },
+  {
+   "id": "enderio:energetic_alloy_ingot",
+   "title": "Energetic Alloy",
+   "desc": "Gold, glowstone dust and redstone. First alloy that stores real energy, and the step where capacitors stop being an afterthought."
+  },
+  {
+   "id": "enderio:double_layer_capacitor",
+   "title": "Double Layer Capacitor",
+   "desc": "A basic capacitor between energetic alloy and coal dust. Second rung of a three-rung capacitor ladder that every machine reads directly."
+  },
+  {
+   "id": "enderio:basic_capacitor_bank",
+   "title": "Capacitor Bank",
+   "desc": "Energy storage that tiles: place several together and they merge into one buffer with a shared readout and a shared output face."
+  },
+  {
+   "id": "enderio:energized_gear",
+   "title": "Energized Gear",
+   "desc": "An iron gear rebuilt with energetic alloy. The mid-tier gear, and a hard requirement of the soul binder and the Slice'N'Splice."
+  },
+  {
+   "id": "enderio:pulsating_alloy_ingot",
+   "title": "Pulsating Alloy",
+   "desc": "Iron and ender pearls. Everything to do with teleportation in this mod is priced in pulsating alloy, starting with the item conduit."
+  },
+  {
+   "id": "enderio:pulsating_crystal",
+   "title": "Pulsating Crystal",
+   "desc": "A diamond wrapped in pulsating alloy nuggets. The gem form, and the component the travel anchor and the vacuum chest both demand."
+  },
+  {
+   "id": "enderio:travel_anchor",
+   "title": "Travel Anchor",
+   "desc": "Iron, conduit binder and a pulsating crystal. Place two and you can jump between them on sight, which quietly replaces most of your walking."
+  },
+  {
+   "id": "enderio:vibrant_alloy_ingot",
+   "title": "Vibrant Alloy",
+   "desc": "Energetic alloy and ender pearls. The high-tier conductor and the material the octadic capacitor and the vibrant crystal are made from."
+  },
+  {
+   "id": "enderio:vibrant_crystal",
+   "title": "Vibrant Crystal",
+   "desc": "An emerald in vibrant alloy nuggets. Gates the powered spawner and, through the ender crystal, everything to do with dimensional reach."
+  },
+  {
+   "id": "enderio:octadic_capacitor",
+   "title": "Octadic Capacitor",
+   "desc": "A double layer capacitor, vibrant alloy and glowstone. Top of the capacitor ladder; a machine running one of these is running as fast as it can."
+  },
+  {
+   "id": "enderio:soularium_ingot",
+   "title": "Soularium",
+   "desc": "Gold alloyed with soul sand. Every block in the mod that touches mobs, souls or experience is made of this, and none of them work without it."
+  },
+  {
+   "id": "enderio:ensouled_chassis",
+   "title": "Ensouled Chassis",
+   "desc": "Soularium, quartz and a soul chain. The void chassis for the mob half of the mod, and the frame of everything in the next four steps."
+  },
+  {
+   "id": "enderio:empty_soul_vial",
+   "title": "Soul Vial",
+   "desc": "Fused quartz and soularium. Right-click a mob and it goes inside; right-click the ground and it comes back. Mob transport, solved."
+  },
+  {
+   "id": "enderio:soul_binder",
+   "title": "Soul Binder",
+   "desc": "An ensouled chassis, soularium, energized gears, a soul vial and a Z-logic controller. Consumes a captive mob plus experience to make things you cannot craft."
+  },
+  {
+   "id": "enderio:end_steel_ingot",
+   "title": "End Steel",
+   "desc": "Dark steel, obsidian and end stone. The last structural metal, and the reason the mod's endgame waits until you have been to the End."
+  },
+  {
+   "id": "enderio:powered_spawner",
+   "title": "Powered Spawner",
+   "desc": "A broken spawner, an ensouled chassis, soularium and a vibrant crystal. Spawns whatever the broken spawner remembered, on your terms and your power."
+  },
+  {
+   "id": "enderio:staff_of_travelling",
+   "title": "Staff of Travelling",
+   "desc": "Dark steel around an ender crystal. Extends travel anchor range and lets you blink to any block you can see. The mod's victory lap."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "enderio:energy_conduit",
+   "members": [
+    "enderio:item_conduit",
+    "enderio:fluid_conduit",
+    "enderio:redstone_conduit",
+    "enderio:ender_fluid_conduit",
+    "enderio:pressurized_fluid_conduit",
+    "enderio:conduit_probe"
+   ]
+  },
+  {
+   "hub": "enderio:silicon",
+   "members": [
+    "enderio:powdered_iron",
+    "enderio:powdered_gold",
+    "enderio:powdered_copper",
+    "enderio:powdered_coal",
+    "enderio:powdered_obsidian",
+    "enderio:powdered_ender_pearl",
+    "enderio:powdered_lapis_lazuli",
+    "enderio:powdered_quartz",
+    "enderio:flour",
+    "enderio:plant_matter_green",
+    "enderio:plant_matter_brown"
+   ]
+  },
+  {
+   "hub": "enderio:dark_steel_block",
+   "members": [
+    "enderio:copper_alloy_block",
+    "enderio:conductive_alloy_block",
+    "enderio:redstone_alloy_block",
+    "enderio:energetic_alloy_block",
+    "enderio:vibrant_alloy_block",
+    "enderio:pulsating_alloy_block",
+    "enderio:soularium_block",
+    "enderio:end_steel_block",
+    "enderio:reinforced_obsidian_block",
+    "enderio:industrial_insulation_block"
+   ]
+  },
+  {
+   "hub": "enderio:dark_steel_grinding_ball",
+   "members": [
+    "enderio:copper_alloy_grinding_ball",
+    "enderio:conductive_alloy_grinding_ball",
+    "enderio:redstone_alloy_grinding_ball",
+    "enderio:energetic_alloy_grinding_ball",
+    "enderio:vibrant_alloy_grinding_ball",
+    "enderio:pulsating_alloy_grinding_ball",
+    "enderio:soularium_grinding_ball",
+    "enderio:end_steel_grinding_ball"
+   ]
+  },
+  {
+   "hub": "enderio:redstone_filter_base",
+   "members": [
+    "enderio:redstone_and_filter",
+    "enderio:redstone_or_filter",
+    "enderio:redstone_not_filter",
+    "enderio:redstone_nand_filter",
+    "enderio:redstone_nor_filter",
+    "enderio:redstone_xor_filter",
+    "enderio:redstone_xnor_filter",
+    "enderio:redstone_toggle_filter",
+    "enderio:redstone_counting_filter",
+    "enderio:redstone_sensor_filter",
+    "enderio:redstone_timer_filter"
+   ]
+  },
+  {
+   "hub": "enderio:crafter",
+   "members": [
+    "enderio:enchanter",
+    "enderio:painting_machine",
+    "enderio:slice_and_splice",
+    "enderio:impulse_hopper",
+    "enderio:wired_charger",
+    "enderio:vacuum_chest",
+    "enderio:drain",
+    "enderio:fluid_tank",
+    "enderio:pressurized_fluid_tank",
+    "enderio:xp_obelisk",
+    "enderio:xp_vacuum"
+   ]
+  },
+  {
+   "hub": "enderio:zombie_electrode",
+   "members": [
+    "enderio:z_logic_controller",
+    "enderio:frank_n_zombie",
+    "enderio:skeletal_contractor",
+    "enderio:monster_token",
+    "enderio:animal_token",
+    "enderio:player_token",
+    "enderio:entity_filter",
+    "enderio:experience_rod",
+    "enderio:soul_chain",
+    "enderio:soul_engine",
+    "enderio:broken_spawner",
+    "enderio:enderman_head"
+   ]
+  },
+  {
+   "hub": "enderio:ender_crystal",
+   "members": [
+    "enderio:prescient_crystal",
+    "enderio:weather_crystal",
+    "enderio:enticing_crystal",
+    "enderio:ender_resonator",
+    "enderio:infinity_rod",
+    "enderio:electromagnet"
+   ]
+  },
+  {
+   "hub": "enderio:vibrant_capacitor_bank",
+   "members": [
+    "enderio:advanced_capacitor_bank",
+    "enderio:loot_capacitor",
+    "enderio:photovoltaic_plate",
+    "enderio:photovoltaic_composite",
+    "enderio:energetic_photovoltaic_module",
+    "enderio:pulsating_photovoltaic_module",
+    "enderio:vibrant_photovoltaic_module"
+   ]
+  },
+  {
+   "hub": "enderio:dark_steel_sword",
+   "members": [
+    "enderio:dark_steel_bars",
+    "enderio:dark_steel_ladder",
+    "enderio:dark_steel_door",
+    "enderio:dark_steel_trapdoor",
+    "enderio:dark_steel_pressure_plate",
+    "enderio:soularium_pressure_plate",
+    "enderio:glider_wing",
+    "enderio:staff_of_levity",
+    "enderio:cold_fire_igniter",
+    "enderio:coordinate_selector"
+   ]
+  },
+  {
+   "hub": "enderio:clear_glass",
+   "members": [
+    "enderio:clear_glass_d",
+    "enderio:clear_glass_e",
+    "enderio:clear_glass_black",
+    "enderio:clear_glass_blue",
+    "enderio:clear_glass_red",
+    "enderio:clear_glass_green",
+    "enderio:clear_glass_white",
+    "enderio:clear_glass_yellow",
+    "enderio:clear_glass_orange",
+    "enderio:clear_glass_purple"
+   ]
+  },
+  {
+   "hub": "enderio:enderios",
+   "members": [
+    "enderio:cake_base",
+    "enderio:nutritious_stick",
+    "enderio:black_paper",
+    "enderio:organic_black_dye",
+    "enderio:organic_brown_dye",
+    "enderio:organic_green_dye",
+    "enderio:clayed_glowstone",
+    "enderio:nethercotta"
+   ]
+  }
+ ],
+ "notes": "Verified against EnderIO-1.20.1-6.2.18-beta-all.jar from Modrinth project 'enderio'; META-INF/mods.toml gives modLoader='javafml', modId='enderio', version='6.2.18-beta', minecraft versionRange='[1.20.1]' and forge versionRange='[47.1.1,)' - a native 1.20.1 Forge build. All 52 of the project's 1.20.1 versions are loaders=['forge']. Every 1.20.1 build is marked alpha or beta; 6.2.18-beta is the newest. It carries eight JarInJar libraries (GraphLib3, Registrate, guava and friends) which register nothing. OPTIONAL integrations declared in mods.toml, all non-mandatory: ae2, mekanism, computercraft, kubejs_enderio and create. ID COUNT: 963 item models, 820 blockstates, 173 item.enderio.* and 207 block.enderio.* lang keys. The union is 996, but only 360 of those have BOTH an asset and a lang key, and that is the number used. THE 616-ID GAP IS ALMOST ENTIRELY CONNECTED-TEXTURE GLASS. Of the 616 registered-but-unnamed entries, 306 are fused/clear glass model variants with suffixes like clear_glass_a_black, clear_glass_da_blue and clear_glass_a_light_gray - the '_a' and '_da' forms are per-connection-state models for the connected-texture renderer, not items. This is the per-variant model inflation failure mode at the largest scale I found in any of these jars: a naive models-INTERSECT-lang count would report 963 items for a mod that has 360, and a models-only count would be wrong by a factor of nearly three. The 20 lang-only keys are also phantoms - loot_capacitor_dud, loot_capacitor_enhanced, loot_capacitor_modifier_good, loot_capacitor_modifier_incredibly, loot_capacitor_burning_energy_generation and so on are the randomised modifier fragments Ender IO stitches together at runtime to name a single item, enderio:loot_capacitor, which is itself real and appears in the capacitor wheel. 'conduit.chemical.multi' is likewise a composed string. A RECIPE-PARSING TRAP WORTH RECORDING. Ender IO's machine recipes nest the output one level deeper than usual - enderio:sag_milling writes outputs as [{'chance':1.0,'item':{'item':'enderio:powdered_iron'},'optional':false}], with the item id inside a nested 'item' object rather than as a string. A result-walker that reads o['item'] only when it is a string, and skips recursing into it when it is a dict, silently returns ZERO outputs for all 65 sag_milling recipes. On the first pass that made silicon, every powder, flour and both plant matters look unobtainable, which would have deleted the mod's entire material base. Fixing the walker to recurse into nested item/id/name containers took enderio's own recipe outputs from 909 to 927 and turned all of those items REC. Anyone re-deriving this set must recurse unconditionally. THE BOOTSTRAP GATE - the most important thing a pack author needs to know about Ender IO 6.x, and it is not visible in any single recipe. enderio:dark_steel_ingot is produced only by an alloy_smelting recipe taking forge:ingots/iron + forge:dusts/coal + forge:obsidian (its other two recipes are uncompress-from-block and nugget-to-ingot, both circular). The only source of coal dust inside this jar is data/enderio/recipes/sag_milling/coal.json, which needs the SAG Mill. The SAG Mill's own recipe requires forge:ingots/dark_steel. Ender IO alone is therefore DEADLOCKED: no dark steel without coal dust, no coal dust without the mill, no mill without dark steel. The same is true one step lower for enderio:silicon, which comes only from sag_milling clay and redstone ore yet is required by copper_alloy_ingot and redstone_alloy_ingot. Both are forge: tags, so in a real pack the deadlock is broken by any mod that fills forge:dusts/coal and forge:silicon - Mekanism's enrichment chamber, Thermal's pulverizer, Immersive Engineering's crusher. In a pack WITHOUT such a mod, everything in this chain from step 9 onward is uncompletable. The chain is ordered so the SAG Mill sits immediately after dark steel and before silicon and every powder, and this gate should be surfaced in the quest text rather than left for the player to discover. Steps 1 through 8 (grains, binder, primitive smelter, void chassis, iron gear, wrench) are reachable with no external mod at all, which is what makes the primitive alloy smelter the honest starting point. OBTAINABILITY - KEPT DESPITE NO CRAFTING RECIPE: enderio:grains_of_infinity comes from data/enderio/loot_tables/fire_crafting/infinity.json, driven by the enderio:fire_crafting recipe type - an in-world ritual, not a bench craft, and the quest must say so. enderio:enderman_head is a mob drop and enderio:loot_capacitor comes from data/enderio/loot_tables/chests/common_loot.json. DROPPED, with reasons. Needing a metal this jar does not provide: 'enderio:powdered_tin' and 'enderio:powdered_cobalt' have models and lang keys but no recipe produces them, because their sag_milling entries key off ore tags no vanilla or Ender IO content fills. Internal or technical blocks with no recipe and no loot: 'enderio:conduit' (the invisible multi-conduit host block), 'enderio:light_node' (the invisible half of a light block), 'enderio:cold_fire' (the flame block placed by the igniter, which IS craftable and is in a wheel), and 'enderio:location_printout'. NBT variants rather than items: 'enderio:filled_soul_vial' (empty_soul_vial after use) and 'enderio:confusing_powder', which has no source at all. Fluid buckets left off the spine: xp_juice_bucket, hootch_bucket, rocket_fuel_bucket, fire_water_bucket, nutrient_distillation_bucket, liquid_sunshine_bucket, cloud_seed_bucket, cloud_seed_concentrated_bucket, dew_of_the_void_bucket and vapor_of_levity_bucket all have lang keys but no recipes - they are filled by scooping fluids the machines produce, so they are reachable but unsafe as literal quest targets. COMPAT CONDUITS DELIBERATELY EXCLUDED FROM THE CONDUIT WHEEL: enderio:me_conduit and enderio:dense_me_conduit are gated on forge:mod_loaded ae2, enderio:refined_storage_conduit on refinedstorage, and enderio:chemical_conduit, enderio:pressurized_chemical_conduit, enderio:ender_chemical_conduit and enderio:heat_conduit on mekanism. All seven are real, registered and craftable IF those mods are present, and all seven are dead otherwise. The wheel uses only the six unconditional conduits plus the probe. DESIRABILITY: the jar carries a large family of _slab, _stairs and _wall variants of the alloy and glass blocks plus fifteen silent_* pressure plates and eleven resetting_lever_* variants; none are in the chain, and the wheels use base blocks only. ORDERING vs moddb consensus (15 entries, all 15 id-verified against this jar, no renamed ids): the consensus is unusually good here and was followed almost exactly. It reads grains_of_infinity 0.0, conduit_binder_composite 0.071, basic_capacitor 0.143, primitive_alloy_smelter 0.214, alloy_smelter 0.286, double_layer_capacitor 0.357, conductive_alloy_ingot 0.429, energy_conduit 0.5, yeta_wrench 0.571. ONE CONFLICT: consensus places basic_capacitor at 0.143, ahead of the primitive alloy smelter at 0.214, but the capacitor needs forge:dusts/grains_of_infinity plus copper and gold nuggets, which is fine, while the smelter is what every subsequent alloy needs - putting the capacitor first is harmless but leaves the player with an upgrade and nothing to slot it into. It was moved to step 14, after the alloy smelter and the stirling generator that actually consume it. Consensus also has double_layer_capacitor at 0.357 ahead of conductive_alloy_ingot 0.429, which the recipe graph contradicts only indirectly: the double layer capacitor needs energetic alloy, which needs the powered alloy smelter, which needs a generator. The graph ordering was preferred. Consensus does not include dark_steel_ingot, the SAG mill or silicon at all, which is precisely the bootstrap gate described above going unrecorded."
+}

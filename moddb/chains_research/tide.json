@@ -1,0 +1,315 @@
+{
+ "mod": "tide",
+ "verified_against": "tide-forge-1.20.1-2.1.1-hotfix.jar",
+ "item_count_in_jar": 391,
+ "chain": [
+  {
+   "id": "tide:stone_fishing_rod",
+   "title": "A Rod Worth Using",
+   "desc": "Cobblestone and string. Tide replaces vanilla fishing wholesale and the stone rod is the bottom of a five-rung smithing ladder that runs to netherite."
+  },
+  {
+   "id": "tide:fishing_line",
+   "title": "Line",
+   "desc": "String alone. Line, hook and bobber are three separate slots on a Tide rod, and the line is the one that changes reel speed."
+  },
+  {
+   "id": "tide:fishing_hook",
+   "title": "Hook",
+   "desc": "Cobblestone and an iron nugget. Six hooks exist and each one changes what the rod can pull out of the water."
+  },
+  {
+   "id": "tide:bait",
+   "title": "Bait",
+   "desc": "Seeds, bone meal, rotten flesh and the bait_plants tag. Bait is what turns a rod from a slot machine into a tool you aim."
+  },
+  {
+   "id": "tide:angling_table",
+   "title": "The Bench",
+   "desc": "Copper, string and planks. The angling table is where lines, hooks and bobbers get fitted to a rod."
+  },
+  {
+   "id": "tide:fishing_journal",
+   "title": "Write It Down",
+   "desc": "A book and any fish. The journal tracks all 101 species and the mod's journal_completed advancement is its real endgame."
+  },
+  {
+   "id": "tide:iron_fishing_rod",
+   "title": "Smithed To Iron",
+   "desc": "A smithing_transform on the stone rod with iron and string. Every rod upgrade is smithing, not crafting, which is unusual and worth knowing."
+  },
+  {
+   "id": "tide:copper_line",
+   "title": "Better Line",
+   "desc": "Copper and fishing line. Copper, iron, golden and diamond lines each add reel strength."
+  },
+  {
+   "id": "tide:fish_satchel",
+   "title": "Somewhere To Put Them",
+   "desc": "Leather and any fish. The satchel holds a catch and has three separate model states depending on how full it is."
+  },
+  {
+   "id": "tide:wooden_crate",
+   "title": "Pull Up A Crate",
+   "desc": "Wooden slabs. Crates are placed on the bottom by ten crate definitions - surface, deep, underground, nether, end and three lava variants - and reeling one in has its own advancement."
+  },
+  {
+   "id": "tide:golden_fishing_rod",
+   "title": "Smithed To Gold",
+   "desc": "Gold, string and the iron rod. Gold is a real rung here rather than a joke tier, because the Midas rod branches off it."
+  },
+  {
+   "id": "tide:pocket_watch",
+   "title": "The Time",
+   "desc": "A clock and a chain. The pocket watch is one of five instruments the fish finder wants."
+  },
+  {
+   "id": "tide:weather_radio",
+   "title": "The Weather",
+   "desc": "Redstone, copper and a lightning rod. Several fish only bite in rain, so this is not decoration."
+  },
+  {
+   "id": "tide:depth_meter",
+   "title": "The Depth",
+   "desc": "Redstone, iron and a stick. Fish definitions carry above and below Y conditions, which is exactly what this reads."
+  },
+  {
+   "id": "tide:climate_gauge",
+   "title": "The Climate",
+   "desc": "Redstone, glass and iron nuggets. Every fish definition names the biome tags it can be found in."
+  },
+  {
+   "id": "tide:lunar_calendar",
+   "title": "The Moon",
+   "desc": "Ink, paper and a spyglass. The fifth and last instrument."
+  },
+  {
+   "id": "tide:fish_finder",
+   "title": "All Five At Once",
+   "desc": "Climate gauge, depth meter, lunar calendar, pocket watch and weather radio, shapeless. It tells you what is biting here, and it is the mod's best single item."
+  },
+  {
+   "id": "tide:crystal_fishing_rod",
+   "title": "Smithed To Amethyst",
+   "desc": "Amethyst, string and the golden rod. The crystal rod is the gate to the diamond one."
+  },
+  {
+   "id": "tide:luminescent_jellyfish",
+   "title": "Underground Water",
+   "desc": "Caught below ground. The jellyfish crafts into jelly torches, which is the mod's one building-block payoff."
+  },
+  {
+   "id": "tide:iron_tetra",
+   "title": "Fish That Are Ore",
+   "desc": "Iron tetra becomes raw iron, gilded minnow becomes raw gold, lapis lanternfish becomes lapis, crystal shrimp becomes amethyst. The underground group is a mine you fish."
+  },
+  {
+   "id": "tide:fiery_hook",
+   "title": "A Hook For Lava",
+   "desc": "Iron and a blaze rod. Eleven fish live only in lava and you cannot reach one without this."
+  },
+  {
+   "id": "tide:lavaproof_hook",
+   "title": "And A Line That Survives It",
+   "desc": "Gold and obsidian. The mod's fish_in_lava advancement is the check that you have got this far."
+  },
+  {
+   "id": "tide:magma_mackerel",
+   "title": "Fishing In The Nether",
+   "desc": "One of eleven lava species, alongside ash perch, blazing swordfish, crimson fangjaw, ember koi, inferno guppy, obsidian pike, soulscale, volcano tuna, warped guppy and witherfin."
+  },
+  {
+   "id": "tide:diamond_fishing_rod",
+   "title": "Smithed To Diamond",
+   "desc": "Diamond, string and the crystal rod. The fourth rung and the base of the netherite one."
+  },
+  {
+   "id": "tide:void_hook",
+   "title": "A Hook For Nothing",
+   "desc": "Crying obsidian and dragon breath. The void group is 26 species deep and this is the only way in; fish_in_void is its advancement."
+  },
+  {
+   "id": "tide:enderfin",
+   "title": "Fish From The Void",
+   "desc": "Enderfin crafts into an ender pearl and endergazer into an eye of ender. The void group turns the End into a fishery."
+  },
+  {
+   "id": "tide:netherite_fishing_rod",
+   "title": "The Last Rod",
+   "desc": "Netherite upgrade template, netherite and the diamond rod. Five rods smithed in sequence, and all_fishing_rods is the advancement that wants every one."
+  },
+  {
+   "id": "tide:midas_fish",
+   "title": "Legendary",
+   "desc": "One of seven legendary fish, with alpha fish, coelacanth, devil's hole pupfish, dragon fish, shooting starfish and voidseeker. catch_legendary is its own advancement."
+  },
+  {
+   "id": "tide:midas_fishing_rod",
+   "title": "The Rod Off The Ladder",
+   "desc": "Golden rod, string and the midas fish itself. It is not part of the stone-to-netherite line - it is a sixth rod you can only make by catching a legendary."
+  },
+  {
+   "id": "tide:dragonfin_boots",
+   "title": "Boots From A Fish",
+   "desc": "Netherite boots, dragon breath and the dragon fish, smithed. The only armour in the mod and the only use for one of its seven legendaries."
+  },
+  {
+   "id": "tide:starlight_bow",
+   "title": "A Bow From A Starfish",
+   "desc": "A vanilla bow and a shooting starfish, shapeless. Two legendary fish become equipment; the other five become journal entries."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "tide:midas_fish",
+   "members": [
+    "tide:alpha_fish",
+    "tide:coelacanth",
+    "tide:devils_hole_pupfish",
+    "tide:dragon_fish",
+    "tide:shooting_starfish",
+    "tide:voidseeker"
+   ]
+  },
+  {
+   "hub": "tide:stone_fishing_rod",
+   "members": [
+    "tide:iron_fishing_rod",
+    "tide:golden_fishing_rod",
+    "tide:crystal_fishing_rod",
+    "tide:diamond_fishing_rod",
+    "tide:netherite_fishing_rod",
+    "tide:midas_fishing_rod",
+    "tide:blazing_fishing_rod",
+    "tide:echo_fishing_rod",
+    "tide:honeycomb_fishing_rod",
+    "tide:prismarine_fishing_rod",
+    "tide:sunflower_fishing_rod",
+    "tide:village_fishing_rod"
+   ]
+  },
+  {
+   "hub": "tide:fishing_hook",
+   "members": [
+    "tide:fiery_hook",
+    "tide:lavaproof_hook",
+    "tide:permafrost_hook",
+    "tide:twilight_hook",
+    "tide:void_hook",
+    "tide:fishing_line",
+    "tide:copper_line",
+    "tide:iron_line",
+    "tide:golden_line",
+    "tide:diamond_line",
+    "tide:bait",
+    "tide:lucky_bait",
+    "tide:magnetic_bait",
+    "tide:abyss_bait"
+   ]
+  },
+  {
+   "hub": "tide:carp",
+   "members": [
+    "tide:arapaima",
+    "tide:black_crappie",
+    "tide:blossom_bass",
+    "tide:bluegill",
+    "tide:brook_trout",
+    "tide:catfish",
+    "tide:largemouth_bass",
+    "tide:pike",
+    "tide:rainbow_trout",
+    "tide:sturgeon",
+    "tide:walleye",
+    "tide:yellow_perch"
+   ]
+  },
+  {
+   "hub": "tide:tuna",
+   "members": [
+    "tide:anchovy",
+    "tide:angelfish",
+    "tide:flounder",
+    "tide:great_white_shark",
+    "tide:mackerel",
+    "tide:mahi_mahi",
+    "tide:manta_ray",
+    "tide:ocean_perch",
+    "tide:red_snapper",
+    "tide:sailfish",
+    "tide:snook",
+    "tide:swordfish"
+   ]
+  },
+  {
+   "hub": "tide:iron_tetra",
+   "members": [
+    "tide:abyss_angler",
+    "tide:anglerfish",
+    "tide:cave_eel",
+    "tide:chasm_eel",
+    "tide:crystal_shrimp",
+    "tide:crystalline_carp",
+    "tide:dripstone_darter",
+    "tide:echo_snapper",
+    "tide:gilded_minnow",
+    "tide:glowfish",
+    "tide:lapis_lanternfish",
+    "tide:luminescent_jellyfish"
+   ]
+  },
+  {
+   "hub": "tide:magma_mackerel",
+   "members": [
+    "tide:ash_perch",
+    "tide:blazing_swordfish",
+    "tide:crimson_fangjaw",
+    "tide:ember_koi",
+    "tide:inferno_guppy",
+    "tide:obsidian_pike",
+    "tide:soulscale",
+    "tide:volcano_tuna",
+    "tide:warped_guppy",
+    "tide:witherfin"
+   ]
+  },
+  {
+   "hub": "tide:enderfin",
+   "members": [
+    "tide:chorus_cod",
+    "tide:darkness_eater",
+    "tide:deep_blue",
+    "tide:dutchman_sock",
+    "tide:elytrout",
+    "tide:ender_glider",
+    "tide:endergazer",
+    "tide:judgment_fish",
+    "tide:pentapus",
+    "tide:shadow_shark",
+    "tide:snatcher_squid",
+    "tide:vengeance",
+    "tide:violet_carp"
+   ]
+  },
+  {
+   "hub": "tide:fish_finder",
+   "members": [
+    "tide:climate_gauge",
+    "tide:depth_meter",
+    "tide:lunar_calendar",
+    "tide:pocket_watch",
+    "tide:weather_radio",
+    "tide:enchanted_pocket_watch",
+    "tide:angling_table",
+    "tide:fishing_journal",
+    "tide:fish_satchel",
+    "tide:fish_display",
+    "tide:jelly_torch",
+    "tide:wooden_crate",
+    "tide:obsidian_crate",
+    "tide:purpur_crate"
+   ]
+  }
+ ],
+ "notes": "LOADER: META-INF/mods.toml, modId tide, displayName 'Tide', 1.20.1 Forge (also declares neoforge, and cloth_config as a dependency). Modrinth slug is tide. Note the jar carries compat data for SEVEN other fishing mods it does not bundle - data/fishingreal (103 files), data/hybrid_aquatic (58), data/stardew_fishing (20), data/fishofthieves (16), data/netherdepthsupgrade (15), data/trinkets and data/curios - so a naive namespace count suggests eight mods in one jar when there is only one. Only assets/tide and data/tide carry items. VERIFICATION, TWO PASSES: pass A took the 417 assets/tide/models/item stems INTERSECT the item./block. lang keys and gave 391. Pass B independently rebuilt from recipe results, loot-table entry names, blockstates and lang keys and gave 418. All 27 differences resolved and NOT ONE is an item - every single one is a model state: thirteen *_fishing_rod_cast models (the bent-rod pose while a line is out), six fishing_bobber_* and ender_bobber models, three fish_satchel_* fill-state models, three starlight_bow_pulling_N draw frames, fish_sword and jelly_wall_torch. All have zero references anywhere in data/. Final count stays 391 with no widening. THE HONEST NUMBER IS 290, NOT 391. 101 of the ids are spawn eggs with zero data references - creative-tab only - and none appears in this file. The other 101 *_bucket items DO stay, because every one is named in a fish definition file. OBTAINABILITY - THE WHOLE MOD RUNS ON ITS OWN REGISTRY, and this is the thing to understand about Tide: 208 of the 391 pass-A ids have no recipe and no mod loot table, and almost all of them are fish. They are not unobtainable. data/tide/fishing/fish/ holds 101 json files, one per species, grouped into freshwater (22), saltwater (23), underground (19), void (26) and lava (11). Each file names the fish item, its bucket item, its display entity, a selection_weight, a journal_profile with a rarity, and a conditions array using the mod's own predicate types - tide:found_in with biome tags, tide:freshwater, tide:fluid, tide:dimension, tide:above and tide:below with a Y value. That is a complete, declarative catch table and it is the obtainability proof for every fish, every bucket and every entity in the mod. A scan that only looks at recipes and loot_tables concludes 208 items are dead, which is wrong by a factor of about seventy. There are also 102 entity loot tables (the fish exist as real mobs too) and ten crate definitions under data/tide/fishing/crates/ - surface_freshwater, surface_saltwater, surface_lava, deep, deep_lava, underground, underground_lava, nether and end - each pairing a placed crate block with its own chest loot table. RARITY, straight from the journal_profile fields: 7 legendary (alpha_fish, coelacanth, devils_hole_pupfish, dragon_fish, midas_fish, shooting_starfish, voidseeker), 17 very_rare, 27 rare, 20 uncommon, 30 unlabelled. The legendary wheel above is exactly those seven and is the single best collection quest in the mod. GRAPH: the rod ladder is FIVE SMITHING TRANSFORMS, not crafts - stone (crafted from cobblestone and string) -> iron -> golden -> crystal -> diamond -> netherite, each consuming the previous rod plus its metal or gem plus string. midas_fishing_rod branches off the golden rod and needs the legendary midas_fish, so it is off-ladder. The other six rods in the rod wheel (blazing, echo, honeycomb, prismarine, sunflower, village) are variant rods outside that line. Three items are made FROM legendary fish: midas_fishing_rod (midas_fish), dragonfin_boots (dragon_fish, smithed onto netherite boots with dragon breath) and starlight_bow (shooting_starfish on a vanilla bow); enchanted_pocket_watch needs the coelacanth. Four underground fish craft into vanilla resources - iron_tetra to raw iron, gilded_minnow to raw gold, lapis_lanternfish to lapis, crystal_shrimp to amethyst - and four void fish do the same for ender pearls (enderfin), eyes of ender (endergazer), phantom membrane (elytrout) and obsidian (obsidian_fragment). ADVANCEMENTS: root, get_bait, pull_crate, fish_in_lava, fish_in_void, catch_legendary, catch_midas_with_midas_rod, all_fishing_rods, freeze_coelacanth, release_pupfish, journal_halfway_completed and journal_completed. The chain follows that progression, which is also why the lava and void hooks are chain steps rather than wheel members - each is a hard gate on a whole fish group. CONSENSUS: moddb.json lists 20 tide ids and all 20 resolve in this jar. No conflict with the graph. DESIRABILITY: no ores, ingots, nuggets, slabs or stairs exist in this mod; the 33 *_bobber ids are cosmetic rod attachments and are left out of both the chain and the wheels because they are a 33-way colour family with no progression, exactly the shape the wheel rule exists to avoid padding with."
+}

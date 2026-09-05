@@ -1,0 +1,745 @@
+{
+ "mod": "mekanism",
+ "ids_in_jar": 397,
+ "videos": [
+  {
+   "id": "kU4dY3ks96s",
+   "title": "Mekanism! - The Complete Beginner's Guide",
+   "channel": "Hellfirem4ge",
+   "views": 389298,
+   "duration": 1780,
+   "chars": 28930
+  },
+  {
+   "id": "a6UKlcFNtAI",
+   "title": "Mekanism Bit-by-Bit: 🛠 BASICS 🛠 to Digital Miner! Pt1",
+   "channel": "Mischief of Mice",
+   "views": 409510,
+   "duration": 1205,
+   "chars": 20205
+  },
+  {
+   "id": "VYtFLNL18lo",
+   "title": "EVERYTHING You Should Know About MEKANISM in All The Mods 10  (ATM10)",
+   "channel": "John Hall",
+   "views": 93315,
+   "duration": 1889,
+   "chars": 32618
+  },
+  {
+   "id": "TEZaAvQJWd0",
+   "title": "Mekanism Full 5X Ore Processing Complete Tutorial",
+   "channel": "JaviHerobrine",
+   "views": 151536,
+   "duration": 722,
+   "chars": 11274
+  },
+  {
+   "id": "ZmBTS8vMZUg",
+   "title": "Fission Power is Powerful (And Deadly) - Mekanism Fission Reactor (+ Turbine) Guide",
+   "channel": "Hellfirem4ge",
+   "views": 597583,
+   "duration": 1393,
+   "chars": 20540
+  }
+ ],
+ "not_transcribed": [],
+ "items": {
+  "mekanism:enrichment_chamber": {
+   "mentions": 13,
+   "videos": 3,
+   "first_at": 0.2946,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "mekanism:chemical_infuser": {
+   "mentions": 13,
+   "videos": 2,
+   "first_at": 0.5642,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "mekanism:jetpack": {
+   "mentions": 12,
+   "videos": 2,
+   "first_at": 0.4854,
+   "praise": 8,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "mekanism:purification_chamber": {
+   "mentions": 10,
+   "videos": 2,
+   "first_at": 0.4283,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "mekanism:digital_miner": {
+   "mentions": 8,
+   "videos": 2,
+   "first_at": 0.1536,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "mekanism:electrolytic_separator": {
+   "mentions": 8,
+   "videos": 2,
+   "first_at": 0.2894,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "mekanism:basic_universal_cable": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.1389,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "mekanism:configurator": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.4891,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "mekanism:crusher": {
+   "mentions": 16,
+   "videos": 1,
+   "first_at": 0.1418,
+   "praise": 9,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:chemical_injection_chamber": {
+   "mentions": 12,
+   "videos": 1,
+   "first_at": 0.2232,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "mekanism:block_refined_obsidian": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.24,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 4
+  },
+  "mekanism:pellet_plutonium": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.9101,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:bio_fuel": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.1387,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:upgrade_energy": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.5973,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "mekanism:isotopic_centrifuge": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.8096,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "mekanism:basic_control_circuit": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.1191,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:chemical_dissolution_chamber": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.4947,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:metallurgic_infuser": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.2204,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:pellet_antimatter": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.0054,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "mekanism:chemical_oxidizer": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.6033,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:enriched_carbon": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.4101,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:osmium_ore": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.014,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 5,
+   "late_cue": 0
+  },
+  "mekanism:energized_smelter": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3083,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "mekanism:alloy_infused": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.2297,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "mekanism:upgrade_speed": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.5761,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:pressurized_reaction_chamber": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.9591,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 3
+  },
+  "mekanism:thermal_evaporation_block": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.272,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "mekanism:precision_sawmill": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.452,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:dust_iron": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8414,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:ingot_osmium": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0278,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 0
+  },
+  "mekanism:upgrade_anchor": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6353,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "mekanism:elite_universal_cable": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2041,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:advanced_universal_cable": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1949,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:resistive_heater": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2997,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "mekanism:dust_osmium": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0632,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:basic_smelting_factory": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6655,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "mekanism:advanced_smelting_factory": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6709,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "mekanism:elite_logistical_transporter": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7875,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "mekanism:basic_energy_cube": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1793,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "mekanism:basic_thermodynamic_conductor": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7642,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:alloy_atomic": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2654,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:alloy_reinforced": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2646,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:clump_iron": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8249,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:dirty_dust_iron": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8412,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:upgrade_filter": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6187,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:upgrade_gas": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6308,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:upgrade_stone_generator": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6445,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "mekanism:teleportation_core": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5478,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "mekanism:basic_chemical_tank": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5263,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:substrate": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9713,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "mekanism:jetpack_armored": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5307,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:chemical_crystallizer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5021,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mekanism:dirty_dust_osmium": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0715,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "Osmium is the literal first action in the mod. Every guide opens on it, before any machine or power.",
+    "ids": [
+     "mekanism:osmium_ore",
+     "mekanism:deepslate_osmium_ore",
+     "mekanism:raw_osmium",
+     "mekanism:ingot_osmium"
+    ]
+   },
+   {
+    "note": "Steel casing plus a control circuit is the tax on essentially every machine; guides build a steel loop before any specific machine.",
+    "ids": [
+     "mekanism:steel_casing",
+     "mekanism:basic_control_circuit",
+     "mekanism:ingot_steel",
+     "mekanism:enriched_iron"
+    ]
+   },
+   {
+    "note": "The configurator is presented as a prerequisite TOOL, not an optional convenience - pipes do nothing until you can configure sides.",
+    "ids": [
+     "mekanism:configurator"
+    ]
+   },
+   {
+    "note": "Power storage and movement come before machine expansion: energy cube then universal cable.",
+    "ids": [
+     "mekanism:basic_energy_cube",
+     "mekanism:basic_universal_cable"
+    ]
+   },
+   {
+    "note": "Metallurgic infuser is the early pivot machine: it makes enriched iron/steel and infused alloy, which gate the advanced tier.",
+    "ids": [
+     "mekanism:metallurgic_infuser",
+     "mekanism:enrichment_chamber",
+     "mekanism:energized_smelter",
+     "mekanism:crusher"
+    ]
+   }
+  ],
+  "tiers": [
+   {
+    "note": "The mod's spine: basic -> advanced -> elite -> ultimate, repeated across EVERY infrastructure family. Learning one teaches all of them.",
+    "ids": [
+     "mekanism:basic_energy_cube",
+     "mekanism:advanced_energy_cube",
+     "mekanism:elite_energy_cube",
+     "mekanism:ultimate_energy_cube",
+     "mekanism:basic_universal_cable",
+     "mekanism:advanced_universal_cable",
+     "mekanism:elite_universal_cable",
+     "mekanism:ultimate_universal_cable",
+     "mekanism:basic_control_circuit",
+     "mekanism:advanced_control_circuit",
+     "mekanism:elite_control_circuit",
+     "mekanism:ultimate_control_circuit",
+     "mekanism:basic_induction_cell",
+     "mekanism:advanced_induction_cell",
+     "mekanism:elite_induction_cell",
+     "mekanism:ultimate_induction_cell",
+     "mekanism:basic_chemical_tank",
+     "mekanism:advanced_chemical_tank",
+     "mekanism:elite_chemical_tank",
+     "mekanism:ultimate_chemical_tank",
+     "mekanism:basic_fluid_tank",
+     "mekanism:advanced_fluid_tank",
+     "mekanism:elite_fluid_tank",
+     "mekanism:ultimate_fluid_tank",
+     "mekanism:basic_pressurized_tube",
+     "mekanism:advanced_pressurized_tube",
+     "mekanism:elite_pressurized_tube",
+     "mekanism:ultimate_pressurized_tube"
+    ]
+   },
+   {
+    "note": "Factory ladder is about SLOT COUNT, and guides give exact numbers: basic 3, advanced 5, elite 7, ultimate 9. An elite factory replaces nine standalone machines.",
+    "ids": [
+     "mekanism:basic_smelting_factory",
+     "mekanism:advanced_smelting_factory",
+     "mekanism:elite_smelting_factory",
+     "mekanism:ultimate_smelting_factory",
+     "mekanism:basic_enriching_factory",
+     "mekanism:advanced_enriching_factory",
+     "mekanism:elite_enriching_factory",
+     "mekanism:ultimate_enriching_factory"
+    ]
+   },
+   {
+    "note": "Alloy ladder is the real currency of tier progression - each alloy unlocks the next tier of every family above.",
+    "ids": [
+     "mekanism:alloy_infused",
+     "mekanism:alloy_reinforced",
+     "mekanism:alloy_atomic"
+    ]
+   },
+   {
+    "note": "ORE PROCESSING LADDER, the mod's defining progression. 2x enrichment only; 3x adds purification (needs oxygen); 4x adds chemical injection (needs hydrogen chloride); 5x adds the dissolution/washer/crystallizer front-end. Each tier PREPENDS a stage and reuses everything below it.",
+    "ids": [
+     "mekanism:enrichment_chamber",
+     "mekanism:purification_chamber",
+     "mekanism:chemical_injection_chamber",
+     "mekanism:chemical_dissolution_chamber",
+     "mekanism:chemical_washer",
+     "mekanism:chemical_crystallizer",
+     "mekanism:crusher",
+     "mekanism:energized_smelter"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "Each ore-processing tier is gated on a GAS, not on the machine. The machine is cheap; the gas chain is the real block.",
+    "ids": [
+     "mekanism:electrolytic_separator",
+     "mekanism:chemical_infuser",
+     "mekanism:chemical_oxidizer",
+     "mekanism:pressurized_reaction_chamber"
+    ]
+   },
+   {
+    "note": "Electrolytic separator splitting water into hydrogen and oxygen is the single unlock that opens 3x and 4x at once.",
+    "ids": [
+     "mekanism:electrolytic_separator",
+     "mekanism:electrolytic_core"
+    ]
+   },
+   {
+    "note": "Infused alloy hard-gates the whole advanced tier; guides warn the recipe varies by modpack so players should check it rather than assume.",
+    "ids": [
+     "mekanism:alloy_infused"
+    ]
+   },
+   {
+    "note": "Reinforced alloy is called out as the gate on the top-tier cables specifically.",
+    "ids": [
+     "mekanism:alloy_reinforced",
+     "mekanism:ultimate_universal_cable"
+    ]
+   },
+   {
+    "note": "5x needs a sulfuric acid chain and heat, so thermal evaporation is an infrastructure prerequisite, not a side machine.",
+    "ids": [
+     "mekanism:thermal_evaporation_controller",
+     "mekanism:thermal_evaporation_block",
+     "mekanism:thermal_evaporation_valve"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "Stone generator upgrade: the one upgrade a guide openly admits never having found a use for.",
+    "ids": [
+     "mekanism:upgrade_stone_generator"
+    ]
+   },
+   {
+    "note": "Precision sawmill is explicitly demoted - nice-to-have, not part of the critical path.",
+    "ids": [
+     "mekanism:precision_sawmill"
+    ]
+   },
+   {
+    "note": "Guides warn the anchor upgrade causes server problems; treat as situational rather than a default install.",
+    "ids": [
+     "mekanism:upgrade_anchor"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "The 5x ore processing chain IS Mekanism to these guides - it is what every video builds toward and the reason the mod is installed.",
+    "ids": [
+     "mekanism:chemical_dissolution_chamber",
+     "mekanism:chemical_washer",
+     "mekanism:chemical_crystallizer",
+     "mekanism:enrichment_chamber"
+    ]
+   },
+   {
+    "note": "Digital miner is treated as the mod's showpiece quality-of-life machine, repeatedly the payoff of a beginner series.",
+    "ids": [
+     "mekanism:digital_miner"
+    ]
+   },
+   {
+    "note": "Speed and energy upgrades are the always-correct answer to slow machines; guides call them the most important lever after pipes.",
+    "ids": [
+     "mekanism:upgrade_speed",
+     "mekanism:upgrade_energy",
+     "mekanism:upgrade_gas"
+    ]
+   },
+   {
+    "note": "Late-game toys the guides sell the mod on: teleporters, entangloporter, jetpack, and the Robit.",
+    "ids": [
+     "mekanism:teleporter",
+     "mekanism:portable_teleporter",
+     "mekanism:quantum_entangloporter",
+     "mekanism:jetpack",
+     "mekanism:robit",
+     "mekanism:digital_miner"
+    ]
+   },
+   {
+    "note": "QIO is Mekanism's own answer to AE2/RS storage and is pitched as a reason not to need those mods at all.",
+    "ids": [
+     "mekanism:qio_drive_array",
+     "mekanism:qio_dashboard",
+     "mekanism:qio_drive_base",
+     "mekanism:portable_qio_dashboard"
+    ]
+   }
+  ],
+  "namespace_caveat": "Guides spend a large share of runtime on Mekanism GENERATORS (heat/solar/wind/gas-burning, fission, fusion) and on Mekanism TOOLS (paxels), but none of those ids exist in the `mekanism` namespace - they ship in the separate MekanismGenerators / MekanismTools modules. A scan of the core jar alone would conclude the mod has no power generation at all, which is the opposite of how every guide teaches it. The 'very first energy source' a beginner is told to build is a heat generator, which is NOT a `mekanism:` id."
+ },
+ "transcript_profile": "whisper small, vad, beam 1, WITH the legacy Minecraft-vocabulary initial_prompt that was later removed from ytgrab as biasing. Counts may be slightly inflated toward mod-name-like words; human_notes quotes were read directly and are unaffected."
+}

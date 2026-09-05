@@ -1,0 +1,162 @@
+{
+  "mod": "cataclysm",
+  "verified_against": "L_Enders_Cataclysm-3.31.jar",
+  "item_count_in_jar": 282,
+  "chain": [
+    {
+      "id": "kill:cataclysm:ender_golem",
+      "title": "Palette Swap in the Citadel",
+      "desc": "Ender Golems patrol the Ruined Citadel and drop a Void Core on death."
+    },
+    {
+      "id": "cataclysm:void_core",
+      "title": "A Splinter of the Void",
+      "desc": "The Void Core is the Ender Golem's only drop and can be right-clicked to summon Void Runes."
+    },
+    {
+      "id": "kill:cataclysm:netherite_monstrosity",
+      "title": "The Nether's Broken Warmachine",
+      "desc": "The Netherite Monstrosity is summoned in the Soul Blacksmith and is the mod's entry-tier boss."
+    },
+    {
+      "id": "cataclysm:monstrous_horn",
+      "title": "Torn From the Colossus",
+      "desc": "The Monstrous Horn drops from the Netherite Monstrosity alongside the Infernal Forge."
+    },
+    {
+      "id": "cataclysm:monstrous_helm",
+      "title": "Wearing the Beast's Skull",
+      "desc": "Smithing a Monstrous Horn onto a netherite helmet knocks nearby entities back when you fall below half health."
+    },
+    {
+      "id": "cataclysm:infernal_forge",
+      "title": "The Hammer That Was a Pickaxe",
+      "desc": "The Infernal Forge is a Netherite Monstrosity drop that deals area damage on right-click and still mines like a pickaxe."
+    },
+    {
+      "id": "kill:cataclysm:the_harbinger",
+      "title": "Out-of-Place Machinery",
+      "desc": "The Harbinger sleeps in the Ancient Factory and fights with laser beams and a flight phase."
+    },
+    {
+      "id": "cataclysm:witherite_ingot",
+      "title": "Salvage From the Factory Floor",
+      "desc": "The Harbinger drops a Witherite Block, which unpacks into nine Witherite Ingots."
+    },
+    {
+      "id": "cataclysm:wither_assault_shoulder_weapon",
+      "title": "Shoulder-Mounted Artillery",
+      "desc": "Built from Witherite, gunpowder and a redstone block, it fires Wither Missiles and sneak-fires Wither Howitzers."
+    },
+    {
+      "id": "kill:cataclysm:ender_guardian",
+      "title": "Wasn't That a Shulker?",
+      "desc": "The Ender Guardian seals the Ruined Citadel and answers gravity-pull grabs with a brutal second phase."
+    },
+    {
+      "id": "cataclysm:gauntlet_of_guard",
+      "title": "The Hand That Pulls",
+      "desc": "The Gauntlet of Guard is the Ender Guardian's signature drop and yanks entities toward you on right-click."
+    },
+    {
+      "id": "cataclysm:void_forge",
+      "title": "Reforged in Nothing",
+      "desc": "Fusing a Void Core into the Infernal Forge produces a pickaxe that fires Void Runes in a fan."
+    },
+    {
+      "id": "cataclysm:void_assault_shoulder_weapon",
+      "title": "Howitzers of the End",
+      "desc": "Fusing a Void Core into the Wither Assault Shoulder Weapon upgrades its payload to Void Howitzers."
+    },
+    {
+      "id": "kill:cataclysm:ancient_remnant",
+      "title": "Death Finds a Way",
+      "desc": "Digging the suspicious sand inside the Cursed Pyramid wakes the Ancient Remnant."
+    },
+    {
+      "id": "cataclysm:sandstorm_in_a_bottle",
+      "title": "Bottled Desert Fury",
+      "desc": "The Ancient Remnant drops this bottle, which summons two orbiting sandstorms around you."
+    },
+    {
+      "id": "cataclysm:gauntlet_of_maelstrom",
+      "title": "Vortex in the Fist",
+      "desc": "Fusing Sandstorm in a Bottle into the Gauntlet of Guard lets it summon a Void Vortex."
+    },
+    {
+      "id": "kill:cataclysm:ignis",
+      "title": "The Extinguished Fire",
+      "desc": "Ignis must be summoned in the Burning Arena and is widely rated the mod's hardest fight."
+    },
+    {
+      "id": "cataclysm:ignitium_ingot",
+      "title": "Metal From a Dead Sun",
+      "desc": "Ignitium Ingots drop only from Ignis and upgrade netherite armour through a smithing template."
+    },
+    {
+      "id": "cataclysm:ignitium_elytra_chestplate",
+      "title": "Wings of the Burning Arena",
+      "desc": "Fusing an Elytra into an Ignitium Chestplate merges flight and fire-tier armour into one slot."
+    },
+    {
+      "id": "kill:cataclysm:the_leviathan",
+      "title": "A Multidimensional Predator",
+      "desc": "The Leviathan is summoned in the Sunken City and is invincible outside of water."
+    },
+    {
+      "id": "cataclysm:tidal_claws",
+      "title": "Grapple of the Deep",
+      "desc": "The Leviathan's drop fires a grappling hook on right-click and a damaging tentacle on left-click."
+    },
+    {
+      "id": "kill:cataclysm:maledictus",
+      "title": "Crusade Against the Curse",
+      "desc": "Maledictus is summoned at the Cursed Tombstone inside the Frosted Prison."
+    },
+    {
+      "id": "cataclysm:cursium_chestplate",
+      "title": "Armour That Refuses the Blow",
+      "desc": "Cursium armour is smithed from Maledictus' ingots and can outright ignore incoming attacks."
+    },
+    {
+      "id": "kill:cataclysm:scylla",
+      "title": "The Calm After the Storm",
+      "desc": "Scylla the Storm Empress rules the sky-borne Acropolis and completes the Cataclysmfarer gauntlet."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "cataclysm:music_disc_the_cataclysmfarer",
+      "members": [
+        "cataclysm:music_disc_netherite_monstrosity",
+        "cataclysm:music_disc_ender_guardian",
+        "cataclysm:music_disc_the_harbinger",
+        "cataclysm:music_disc_ancient_remnant",
+        "cataclysm:music_disc_ignis",
+        "cataclysm:music_disc_the_leviathan",
+        "cataclysm:music_disc_maledictus",
+        "cataclysm:music_disc_scylla"
+      ]
+    },
+    {
+      "hub": "cataclysm:mechanical_fusion_anvil",
+      "members": [
+        "cataclysm:the_annihilator",
+        "cataclysm:the_immolator",
+        "cataclysm:the_incinerator",
+        "cataclysm:soul_render",
+        "cataclysm:zweiender",
+        "cataclysm:khopesh",
+        "cataclysm:ancient_spear",
+        "cataclysm:coral_bardiche",
+        "cataclysm:laser_gatling",
+        "cataclysm:meat_shredder",
+        "cataclysm:cursed_bow",
+        "cataclysm:wrath_of_the_desert",
+        "cataclysm:astrape",
+        "cataclysm:ceraunus"
+      ]
+    }
+  ],
+  "notes": "Verified against L_Enders_Cataclysm-3.31.jar: 282 ids appear both as assets/cataclysm/models/item/*.json and as item./block. lang keys. Boss roster confirmed from data/cataclysm/advancements/kill_all_bosses.json, which requires netherite_monstrosity, ender_guardian, the_harbinger, ancient_remnant, ignis, the_leviathan, maledictus and scylla - all eight exist in this jar and all are used. Every drop claim is taken from data/cataclysm/loot_tables/entities/*.json and every fusion claim from data/cataclysm/recipes/weapon_infusion/*.json. Ordering follows the advancement parent tree (find_<structure> -> kill_<boss>) plus community difficulty guides: Netherite Monstrosity is documented as the first boss, Ignis and Scylla as the last. IDS DROPPED: cataclysm:cursium_upgrade_smithing_template (referenced by the cursium smithing recipes but has no assets/cataclysm/models/item entry in this jar, so it fails the set-membership check); cataclysm:barako and cataclysm:the_cataclysmfarer as entities (no entity.cataclysm.* lang key - 'the_cataclysmfarer' exists only as a music disc). No boss listed in the task brief was missing: all seven named bosses plus Scylla are present."
+}

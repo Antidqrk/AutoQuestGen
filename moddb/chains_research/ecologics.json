@@ -1,0 +1,188 @@
+{
+ "mod": "ecologics",
+ "verified_against": "ecologics-forge-1.20.1-2.2.7.jar",
+ "item_count_in_jar": 103,
+ "chain": [
+  {
+   "id": "ecologics:seashell",
+   "title": "Beachcombing",
+   "desc": "Scattered across every minecraft:beach by the mod's own feature modifier, alongside the coconut palms; it is the raw material of the whole shore building set."
+  },
+  {
+   "id": "ecologics:sandcastle",
+   "title": "Fortress of Sanditude",
+   "desc": "Sand and seashells. Placed over turtle eggs it shelters them, and the mod's advancement only fires when the block actually has eggs inside it."
+  },
+  {
+   "id": "ecologics:seashell_block",
+   "title": "Shells, Packed",
+   "desc": "Nine seashells; it cuts on into Seashell Tiles with the usual slab, stair and wall set."
+  },
+  {
+   "id": "ecologics:coconut",
+   "title": "Look Up",
+   "desc": "Coconuts hang from the beach palms and fall on their own; the fallen block breaks into slices and another coconut."
+  },
+  {
+   "id": "kill:ecologics:coconut_crab",
+   "title": "It Came Out of the Coconut",
+   "desc": "No biome spawns Coconut Crabs. A hanging coconut that falls has a configurable chance to spawn one instead of landing - the block itself carries the spawn."
+  },
+  {
+   "id": "ecologics:crab_claw",
+   "title": "Shears With Attitude",
+   "desc": "The Coconut Crab's only drop, and the mod registers it into the shears, tools and enchantable tags - it works as a shear."
+  },
+  {
+   "id": "ecologics:crab_meat",
+   "title": "Turnabout",
+   "desc": "A Crab Claw in a furnace, a smoker or on a campfire. Three recipes exist for it and all three cook the same thing."
+  },
+  {
+   "id": "ecologics:coconut_slice",
+   "title": "Cracked Open",
+   "desc": "Dropped by both the fallen coconut and the hanging one, and the item a Coconut Crab will follow you for."
+  },
+  {
+   "id": "ecologics:coconut_husk",
+   "title": "Stripped Off the Log",
+   "desc": "It has no recipe of its own; the mod's right-click handler takes it off a Coconut Log. It substitutes for a bowl in stew and soup recipes."
+  },
+  {
+   "id": "ecologics:tropical_stew",
+   "title": "Dinner on the Sand",
+   "desc": "Coconut Slice in a bowl, and the only cooked dish the tropical half of this mod produces."
+  },
+  {
+   "id": "ecologics:prickly_pear",
+   "title": "Fruit With a Warning",
+   "desc": "Grows on cacti in minecraft:desert through the mod's prickly_pear feature; eaten raw it hurts, so the mod ships three ways to cook it."
+  },
+  {
+   "id": "ecologics:cooked_prickly_pear",
+   "title": "Burn the Spines Off",
+   "desc": "Furnace, smoker or campfire - after which it is simply good food."
+  },
+  {
+   "id": "kill:ecologics:camel",
+   "title": "Ecologics Had One First",
+   "desc": "This mod's own Camel spawns in minecraft:desert at weight 1, one at a time, and drops leather; it predates and is separate from the vanilla camel."
+  },
+  {
+   "id": "structure:ecologics:desert_ruin",
+   "title": "Something Was Here",
+   "desc": "The mod's single structure, a surface ruin on the #ecologics:has_structure/desert_ruin biome tag with its own structure type."
+  },
+  {
+   "id": "ecologics:pot",
+   "title": "Carved Pot",
+   "desc": "The mod's own pottery, mineable with a pickaxe and part of the desert-ruin dressing."
+  },
+  {
+   "id": "ecologics:walnut",
+   "title": "Shaken From the Leaves",
+   "desc": "Walnut trees replace the vanilla plains trees outright - the mod removes minecraft:trees_plains and adds its own - and the nuts drop from the leaves."
+  },
+  {
+   "id": "kill:ecologics:squirrel",
+   "title": "Plains, Reoccupied",
+   "desc": "Squirrels spawn in minecraft:plains at weight 10, two or three at a time, and they will follow anyone holding a Walnut."
+  },
+  {
+   "id": "ecologics:walnut_log",
+   "title": "The Plains Tree",
+   "desc": "One of the mod's three new woods, with the full plank, boat, sign and building set behind it."
+  },
+  {
+   "id": "ecologics:surface_moss",
+   "title": "Moss That Grows Up Here",
+   "desc": "A lush-cave patch feature; two of them recombine into a vanilla moss block, which is the reverse of the usual direction."
+  },
+  {
+   "id": "ecologics:azalea_log",
+   "title": "Azalea Is a Tree Now",
+   "desc": "The mod replaces the vanilla rooted azalea tree with its own, so lush caves finally grow harvestable azalea wood - plain and flowering."
+  },
+  {
+   "id": "ecologics:thin_ice",
+   "title": "Do Not Run",
+   "desc": "Laid over frozen oceans, frozen rivers and snowy plains at the top_layer_modification step; it breaks when you stand on it."
+  },
+  {
+   "id": "kill:ecologics:penguin",
+   "title": "Four to Five at a Time",
+   "desc": "Penguins spawn in exactly the three biomes thin ice covers - frozen ocean, frozen river and snowy plains - in groups of four or five, at weight 2."
+  },
+  {
+   "id": "ecologics:penguin_feather",
+   "title": "Happy Feet",
+   "desc": "It comes off the CHICK, not the adult: the mod's advancement is to breed penguins and take the feather the baby leaves."
+  },
+  {
+   "id": "ecologics:ice_bricks",
+   "title": "Ice, Squared",
+   "desc": "The frozen half of the mod gets its own brick set, with slabs, stairs and walls."
+  },
+  {
+   "id": "ecologics:snow_bricks",
+   "title": "Building With Winter",
+   "desc": "The matching snow set - the two together are what the mod gives you for surviving the cold biomes."
+  },
+  {
+   "id": "ecologics:music_disc_coconut",
+   "title": "Buried on the Beach",
+   "desc": "The mod injects it into vanilla buried treasure with a global loot modifier; it is in no recipe and no other table, so digging up treasure is the only way to own it."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "ecologics:coconut_planks",
+   "members": [
+    "ecologics:azalea_planks",
+    "ecologics:flowering_azalea_planks",
+    "ecologics:walnut_planks",
+    "ecologics:coconut_log",
+    "ecologics:azalea_log",
+    "ecologics:flowering_azalea_log",
+    "ecologics:walnut_log"
+   ]
+  },
+  {
+   "hub": "ecologics:seashell_tiles",
+   "members": [
+    "ecologics:seashell_block",
+    "ecologics:ice_bricks",
+    "ecologics:snow_bricks",
+    "ecologics:surface_moss",
+    "ecologics:moss_layer",
+    "ecologics:thin_ice",
+    "ecologics:pot",
+    "ecologics:sandcastle"
+   ]
+  },
+  {
+   "hub": "ecologics:coconut_boat",
+   "members": [
+    "ecologics:azalea_boat",
+    "ecologics:flowering_azalea_boat",
+    "ecologics:walnut_boat",
+    "ecologics:coconut_chest_boat",
+    "ecologics:azalea_chest_boat",
+    "ecologics:flowering_azalea_chest_boat",
+    "ecologics:walnut_chest_boat"
+   ]
+  },
+  {
+   "hub": "ecologics:tropical_stew",
+   "members": [
+    "ecologics:coconut_slice",
+    "ecologics:coconut_husk",
+    "ecologics:crab_meat",
+    "ecologics:prickly_pear",
+    "ecologics:cooked_prickly_pear",
+    "ecologics:walnut"
+   ]
+  }
+ ],
+ "notes": "Item set = 104 stems of assets/ecologics/models/item/*.json intersected with item.ecologics.* / block.ecologics.* lang keys = 103; the only item.lang key without a model is music_disc_coconut.desc, the disc's author line, not an item. ENTITY VERIFICATION - 6 entity.ecologics.* lang keys, of which entity.ecologics.boat and entity.ecologics.chest_boat are VEHICLE types, not mobs, and were never candidates. The four real ones are all used and all are proved: THREE HAVE A forge:add_spawns BIOME MODIFIER in data/ecologics/forge/biome_modifier/ - spawn_camel.json (ecologics:camel, minecraft:desert, weight 1, 1-1), spawn_penguin.json (ecologics:penguin, minecraft:frozen_ocean + frozen_river + snowy_plains, weight 2, 4-5), spawn_squirrel.json (ecologics:squirrel, minecraft:plains, weight 10, 2-3); each also has a spawn egg. ecologics:coconut_crab is the interesting one and the reason this file does not just trust the loot table: it has an entity loot table (crab_claw) and a spawn egg but NO biome modifier and NO reference in any data file - a naive spawn check would either miss it or wrongly reject it. The proof is in the block: samebutdifferent/ecologics/block/HangingCoconutBlock.class holds the constants COCONUT_CRAB, coconutCrab and coconutCrabSpawnChance, and ModConfigForge exposes that chance - a falling coconut spawns the crab. NOTE ON LOOT: ecologics:penguin and ecologics:squirrel have NO entity loot table at all (they drop nothing), which is why neither kill step promises a drop; camel drops minecraft:leather and coconut_crab drops ecologics:crab_claw, and those two are stated. THREE ITEMS WITH NO RECIPE AND NO LOOT TABLE were traced rather than dropped: ecologics:coconut_husk appears only as an INGREDIENT of four soup and stew recipes, and its source is the RightClickBlock handler in samebutdifferent/ecologics/forge/EcologicsForge.class, whose constant pool holds COCONUT_HUSK next to COCONUT_LOG and CHISEL - you take the husk off a coconut log by hand; ecologics:penguin_feather appears only in the feathers tags and in husbandry/breed_penguin.json, whose description says plainly that it comes from the baby after breeding; ecologics:music_disc_coconut is in no recipe and no loot table but IS the subject of data/ecologics/loot_modifiers/music_disc_buried_treasure.json, a global loot modifier registered through data/forge/loot_modifiers/global_loot_modifiers.json, so vanilla buried treasure is its source. All three are safe and all three are chain steps. WORLDGEN, which is most of what this mod does, read from the ten biome modifiers: add_beach_features (trees_beach + seashell into minecraft:beach), add_prickly_pear (minecraft:desert), add_walnut_tree (minecraft:plains) paired with remove_trees_plains, which DELETES the vanilla plains trees - that is why Walnut is the plains tree here; add_rooted_azalea_tree and add_surface_moss_patch into minecraft:lush_caves, paired with remove_rooted_azalea_tree and remove_classic_vines_cave_feature; add_thin_ice_patch into frozen_ocean, frozen_river and snowy_plains at top_layer_modification. Structures: exactly ONE, data/ecologics/worldgen/structure/desert_ruin.json, a custom ecologics:desert_ruin type on the #ecologics:has_structure/desert_ruin biome tag with empty spawn_overrides. No dimensions: data/ecologics/dimension/ does not exist. Ordering follows the recipe graph and the two real advancements (husbandry/sandcastle requires the sandcastle block to have 1-4 turtle eggs inside; husbandry/breed_penguin requires both a bred penguin child and the feather in inventory); the remaining 101 advancements are recipe unlocks. CONSENSUS CONFLICT (moddb): moddb lists eight ecologics ids at 3 packs each - coconut (0.0), walnut (0.143), sandcastle (0.286), snow_bricks (0.429), crab_claw (0.571), pot (0.714), prickly_pear (0.857), azalea_log (1.0). All eight are real ids in this jar and all eight are on this spine, but the consensus order is essentially random with respect to how the mod actually works, so the biome/recipe graph was preferred: the chain is grouped by BIOME (beach -> coconut -> desert -> plains -> lush caves -> frozen) because that is how the ten biome modifiers partition the content, which puts snow_bricks and azalea_log late and sandcastle early rather than the reverse. DESIRABILITY: the mod is largely *_slab / *_stairs / *_wall / *_fence / *_door / *_sign / stripped_* variants of three woods plus four brick sets; none is a chain step and the wheels take the family heads only."
+}

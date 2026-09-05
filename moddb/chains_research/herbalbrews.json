@@ -1,0 +1,161 @@
+{
+ "mod": "herbalbrews",
+ "verified_against": "letsdo-herbalbrews-forge-1.0.12.jar",
+ "item_count_in_jar": 42,
+ "chain": [
+  {
+   "id": "herbalbrews:tea_blossom",
+   "title": "A Blossom Off A Wild Bush",
+   "desc": "Tea Blossoms drop from wild tea plants, hibiscus and lavender, and they are the seed you replant. Every leaf in this mod traces back to one."
+  },
+  {
+   "id": "herbalbrews:green_tea_leaf",
+   "title": "Pick The Leaves",
+   "desc": "Harvesting a grown tea plant gives Green Tea Leaves alongside the blossom. Green is the only leaf the world will give you; the other three are made, not found."
+  },
+  {
+   "id": "herbalbrews:stove",
+   "title": "Light The Stove",
+   "desc": "A campfire under stone with iron nuggets across the top. The Stove is the heat source; a kettle on cold ground brews nothing."
+  },
+  {
+   "id": "herbalbrews:tea_kettle",
+   "title": "The Kettle",
+   "desc": "Iron and sticks. Every drink in the mod comes out of a kettle sitting on a stove, and each one needs a set amount of water and forty heat."
+  },
+  {
+   "id": "herbalbrews:green_tea_leaf_block",
+   "title": "Bale The Leaves",
+   "desc": "Nine green tea leaves pressed into a block. Placing this block is the mod's central mechanic and nothing else in it works this way."
+  },
+  {
+   "id": "herbalbrews:dried_green_tea",
+   "title": "Let It Dry Out",
+   "desc": "A placed leaf block runs a DRYING blockstate on a timer and turns itself into a Dried Out Green Tea Leaf Block. Break that and you get Dried Green Tea. You wait for it; there is no recipe."
+  },
+  {
+   "id": "herbalbrews:green_tea",
+   "title": "The First Cup",
+   "desc": "Kettle: dried green tea plus a glass bottle, 25 ticks at heat 40. Green Tea grants Balanced for 1800 ticks, which gives nearby players absorption."
+  },
+  {
+   "id": "herbalbrews:dried_green_tea_leaf_block",
+   "title": "Bale It Again",
+   "desc": "Nine Dried Green Tea back into a block. Baling the dried leaf is what starts the second oxidation, and this is the step most people never find."
+  },
+  {
+   "id": "herbalbrews:dried_black_tea",
+   "title": "Second Drying, Black",
+   "desc": "The dried block dries a second time into a Black Tea Leaf Block, and breaking that gives Dried Black Tea. Same block, second pass through the same timer."
+  },
+  {
+   "id": "herbalbrews:black_tea",
+   "title": "Black Tea",
+   "desc": "Kettle: dried black tea, sugar and a bottle. Stronger than green and the base of the mod's deepest ladder."
+  },
+  {
+   "id": "herbalbrews:mixed_tea_leaf_block",
+   "title": "Blend The Two Leaves",
+   "desc": "Dried black and dried green tea crafted together. The Mixed Tea Leaf Block is the only recipe that takes two different dried leaves at once."
+  },
+  {
+   "id": "herbalbrews:dried_oolong_tea",
+   "title": "Third Drying, Oolong",
+   "desc": "The mixed block dries into an Oolong Tea Leaf Block, and breaking that gives Dried Oolong Tea. Three placements and three waits from a single wild bush."
+  },
+  {
+   "id": "herbalbrews:oolong_tea",
+   "title": "Oolong",
+   "desc": "Kettle: dried oolong and a bottle. The end of the tea ladder, and the leaf the Herbal Infusion cannot be made without."
+  },
+  {
+   "id": "herbalbrews:wild_coffee_plant",
+   "title": "Find Wild Coffee",
+   "desc": "Wild Coffee generates as its own plant. Breaking it returns both beans and the plant itself, so one find is enough to start a plantation."
+  },
+  {
+   "id": "herbalbrews:coffee_beans",
+   "title": "Beans From The Bush",
+   "desc": "Shapeless from a wild coffee plant, or harvested off a grown coffee plant. Coffee is the one line that never touches the drying blocks."
+  },
+  {
+   "id": "herbalbrews:coffee",
+   "title": "Black Coffee",
+   "desc": "Kettle: beans and a bottle, no sugar. The only brew in the mod that needs two ingredients instead of three."
+  },
+  {
+   "id": "herbalbrews:copper_tea_kettle",
+   "title": "The Copper Kettle",
+   "desc": "Copper and sticks instead of iron. The second kettle, and the one that makes a kitchen look like it belongs to somebody who takes tea seriously."
+  },
+  {
+   "id": "herbalbrews:cauldron",
+   "title": "The Brewing Cauldron",
+   "desc": "Iron and sticks in a wider frame. The Cauldron is a second machine entirely, and it does not brew tea at all."
+  },
+  {
+   "id": "herbalbrews:flask",
+   "title": "Three Potions Into One Flask",
+   "desc": "The Cauldron takes three vanilla potions and returns a single Flask. A flask carries its effect to everyone standing near you rather than to you alone."
+  },
+  {
+   "id": "herbalbrews:herbal_infusion",
+   "title": "All Three Leaves At Once",
+   "desc": "Four dried black, three dried green and three dried oolong in one grid. It cannot be made until every stage of the drying ladder has been walked, which makes it the mod's completion mark."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "herbalbrews:tea_kettle",
+   "members": [
+    "herbalbrews:green_tea",
+    "herbalbrews:black_tea",
+    "herbalbrews:oolong_tea",
+    "herbalbrews:hibiscus_tea",
+    "herbalbrews:lavender_tea",
+    "herbalbrews:rooibos_tea",
+    "herbalbrews:yerba_mate_tea",
+    "herbalbrews:coffee",
+    "herbalbrews:milk_coffee"
+   ]
+  },
+  {
+   "hub": "herbalbrews:tea_blossom",
+   "members": [
+    "herbalbrews:green_tea_leaf",
+    "herbalbrews:hibiscus",
+    "herbalbrews:lavender",
+    "herbalbrews:lavender_blossom",
+    "herbalbrews:wild_coffee_plant",
+    "herbalbrews:wild_rooibos_plant",
+    "herbalbrews:wild_yerba_mate_plant",
+    "herbalbrews:rooibos_leaf",
+    "herbalbrews:yerba_mate_leaf"
+   ]
+  },
+  {
+   "hub": "herbalbrews:green_tea_leaf_block",
+   "members": [
+    "herbalbrews:dried_green_tea_leaf_block",
+    "herbalbrews:mixed_tea_leaf_block",
+    "herbalbrews:tea_leaf_crate",
+    "herbalbrews:dried_green_tea",
+    "herbalbrews:dried_black_tea",
+    "herbalbrews:dried_oolong_tea"
+   ]
+  },
+  {
+   "hub": "herbalbrews:flask",
+   "members": [
+    "herbalbrews:cauldron",
+    "herbalbrews:stove",
+    "herbalbrews:copper_tea_kettle",
+    "herbalbrews:jug",
+    "herbalbrews:herbal_infusion",
+    "herbalbrews:top_hat",
+    "herbalbrews:witch_hat"
+   ]
+  }
+ ],
+ "notes": "THE DEFINING MECHANIC, read from bytecode because no datapack file states it: tea does not oxidise on the bush the way Farmer's Respite does, it dries in a PLACED BLOCK. net.satisfy.herbalbrews.core.blocks.TeaLeafBlock carries an IntegerProperty DRYING and TeaLeafBlockEntity.tick counts a saved 'Timer' up, advances DRYING, and finally calls Level.setBlock with TeaLeafBlockEntity.getEndBlock. Disassembling getEndBlock gives the whole ladder: GREEN_TEA_LEAF_BLOCK becomes DRIED_OUT_GREEN_TEA_LEAF_BLOCK, MIXED_TEA_LEAF_BLOCK becomes OOLONG_TEA_LEAF_BLOCK, DRIED_GREEN_TEA_LEAF_BLOCK becomes BLACK_TEA_LEAF_BLOCK, and anything else becomes air. The block loot tables then close the loop: dried_out_green_tea_leaf_block drops herbalbrews:dried_green_tea, black_tea_leaf_block drops dried_black_tea, oolong_tea_leaf_block drops dried_oolong_tea, and mixed_tea_leaf_block drops dried_black_tea plus green_tea_leaf. That is why the spine alternates craft-a-block, wait, break-it three times over, and it is the fact a generator working from recipes alone would completely miss, because none of the three dried teas is the result of any recipe in the jar. WIDENING AND ITS PROOF - this mod is a harsher version of the Farmer's Respite trap, because item ids and lang-key ids do not even match. There are only nine item.herbalbrews.* keys in the whole lang file. herbalbrews:tea_blossom is named by block.herbalbrews.tea_plant ('Tea Blossom'), herbalbrews:coffee_beans by block.herbalbrews.coffee_plant ('Coffee Beans'), herbalbrews:rooibos_leaf by block.herbalbrews.rooibos_plant and herbalbrews:yerba_mate_leaf by block.herbalbrews.yerba_mate_plant. Worse, the nine drinks - green_tea, black_tea, oolong_tea, hibiscus_tea, lavender_tea, rooibos_tea, yerba_mate_tea, coffee and milk_coffee - have NO lang key of their own at all; the display strings sit on the matching *_tea_block placed-drink blocks. Every one of those nine was therefore confirmed three independent ways before being used: an item model at assets/herbalbrews/models/item/<id>.json, a namespaced result inside a data/herbalbrews/recipes/kettle_brewing/*.json file, and a registry constant loaded by name in ObjectRegistry.<clinit> (offsets 616 through 728 load 'green_tea', 'black_tea', 'lavender_tea', 'yerba_mate_tea', 'oolong_tea', 'rooibos_tea', 'hibiscus_tea', 'milk_coffee' and 'coffee' in that order). The count of 42 is the 48 item models minus the six flask render stems. RECIPE FACTS used for ordering: the kettle takes herbalbrews:kettle_brewing recipes with a fluid amount, a heat_needed of 40, a crafting_duration and an effect - green_tea grants herbalbrews:balanced for 1800 ticks, and the mod defines seven of its own area effects (balanced, bonding, deeprush, feral, fortune, lifeleech, tough) that apply to NEARBY players rather than the drinker, which is what makes the drinks worth a quest. The Brewing Cauldron is a separate machine on a separate recipe type: data/herbalbrews/recipes/cauldron_brewing/dummy_recipe.json turns three minecraft:potion into one herbalbrews:flask. herbal_infusion is a 3x3 of four dried black, three dried green and three dried oolong, so it is unmakeable until all three drying stages are done, which is why it closes the chain. DROPPED AS UNOBTAINABLE, with reasons: herbalbrews:flask_1 through flask_6 are item-model render stems for the flask's fill levels - no lang key, no recipe, no loot table. The three intermediate leaf blocks (dried_out_green_tea_leaf_block, black_tea_leaf_block, oolong_tea_leaf_block) exist in the world but their loot tables drop the dried TEA, never the block, so their item forms are creative-only and they are described in the chain rather than being quest targets. The placed-drink blocks (green_tea_block, black_tea_block, lavender_tea_block, yerba_mate_tea_block, oolong_tea_block, rooibos_tea_block, hibiscus_tea_block, milk_coffee_block, coffee_block) and the five potted_* variants have no recipe and no loot table. herbalbrews:herbalbrews_banner and herbalbrews_wall_banner were left out: the only recipe touching the banner is a smithing_transform that consumes a banner to produce a banner, so its real source is an advancement reward and not a craft, and it cannot be honestly chained. CONFLICT WITH moddb.json, recorded as required: the consensus row for herbalbrews lists herbalbrews:armor_flask, armor_flask_big, damage_flask, damage_flask_big, feral_flask and feral_flask_big. NONE of those six ids exist in this jar. Version 1.0.12 ships a single herbalbrews:flask item whose effect is stored on the stack, plus the six flask_N model stems. Those consensus ids come from a different build of the mod, and the recipe graph in the jar was preferred as instructed. The consensus also lists herbalbrews:lavender and herbalbrews:hibiscus, which do exist and are placed in the plants wheel. NO CONDITIONAL RECIPES: the conditions sweep over all 33 recipes returned zero forge:conditional wrappers, so nothing here is gated on another mod."
+}

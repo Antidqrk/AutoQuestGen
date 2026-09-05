@@ -1,0 +1,122 @@
+{
+ "mod": "epicfight",
+ "verified_against": "epic-fight-20.14.17-mc1.20.1-forge.jar",
+ "item_count_in_jar": 37,
+ "chain": [
+  {
+   "id": "epicfight:skillbook",
+   "title": "One Book, Forty-Three Skills",
+   "desc": "The Skillbook has no recipe. A global loot modifier gives every mob killed by a player a chance to drop one, already rolled with a random skill inside."
+  },
+  {
+   "id": "epicfight:glove",
+   "title": "Put Up Your Dukes",
+   "desc": "Two iron nuggets over two leather. The Glove is the mod's fist weapon and the cheapest way into Epic Fight's combat system."
+  },
+  {
+   "id": "epicfight:wooden_longsword",
+   "title": "First Blade, First Stance",
+   "desc": "A wooden sword with two planks above it. The Longsword class trades reach for the Sheathing and Guard stances."
+  },
+  {
+   "id": "epicfight:wooden_greatsword",
+   "title": "Eight Planks and Bad Intentions",
+   "desc": "Pure planks, no sword needed - the only Epic Fight weapon you can make before you have any tools at all."
+  },
+  {
+   "id": "epicfight:stone_dagger",
+   "title": "Small, Fast, Rude",
+   "desc": "One #minecraft:stone_tool_materials over a stick. Daggers are the fastest class in the mod and the one that can be dual-wielded."
+  },
+  {
+   "id": "epicfight:stone_spear",
+   "title": "Keep Them Off You",
+   "desc": "A stone sword and two sticks. Spears have the longest reach of the five weapon classes and a dedicated thrust animation set."
+  },
+  {
+   "id": "epicfight:iron_longsword",
+   "title": "Proper Steel",
+   "desc": "An iron sword and two iron ingots. From here every class simply re-runs the same shape one material up."
+  },
+  {
+   "id": "epicfight:iron_tachi",
+   "title": "Draw and Cut",
+   "desc": "Two iron ingots stacked over an iron sword. The Tachi is the katana class, the one Battojutsu and Battojutsu Passive are written for."
+  },
+  {
+   "id": "epicfight:iron_greatsword",
+   "title": "Wind Up, Follow Through",
+   "desc": "Five iron ingots braced on planks. Greatswords hit slowest and hardest and are the class Sweeping Edge and Meteor Slam key off."
+  },
+  {
+   "id": "epicfight:stray_hat",
+   "title": "Off a Frozen Head",
+   "desc": "Epic Fight dresses vanilla Strays in a hat, robe and pants of their own; StrayPatch equips them and they drop as normal mob equipment."
+  },
+  {
+   "id": "epicfight:golden_dagger",
+   "title": "Fast and Fragile",
+   "desc": "A gold ingot over a stick. Gold sits between stone and diamond here, exactly as it does in vanilla - fast, sharp, and gone in a week."
+  },
+  {
+   "id": "epicfight:diamond_longsword",
+   "title": "The Real Longsword",
+   "desc": "A diamond sword and two diamonds. This is the smithing base for the netherite version, so it is the one to build first."
+  },
+  {
+   "id": "epicfight:diamond_spear",
+   "title": "Reach, Refined",
+   "desc": "A diamond sword and two sticks. The Spear keeps its reach at every tier - the material only changes how much the thrust hurts."
+  },
+  {
+   "id": "epicfight:diamond_tachi",
+   "title": "Sharpened for the Draw",
+   "desc": "Two diamonds over a diamond sword, and the last Tachi you can craft outright."
+  },
+  {
+   "id": "epicfight:uchigatana",
+   "title": "Not for Sale, Only Found",
+   "desc": "The Uchigatana has no recipe. EpicFightLootTables injects it into vanilla loot pools at a configurable chance - it is the only found weapon in the mod, and it sheathes."
+  },
+  {
+   "id": "epicfight:netherite_longsword",
+   "title": "Upgrade at the Anvil's Big Brother",
+   "desc": "Netherite upgrade smithing template, the Diamond Longsword, and a netherite ingot. All five netherite weapons work exactly this way."
+  },
+  {
+   "id": "epicfight:netherite_tachi",
+   "title": "End of the Line",
+   "desc": "The Diamond Tachi upgraded with netherite. Nothing in Epic Fight's own namespace goes past this."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "epicfight:wooden_dagger",
+   "members": [
+    "epicfight:wooden_spear",
+    "epicfight:wooden_tachi",
+    "epicfight:stone_longsword",
+    "epicfight:stone_greatsword",
+    "epicfight:stone_tachi",
+    "epicfight:golden_longsword",
+    "epicfight:golden_greatsword",
+    "epicfight:golden_spear",
+    "epicfight:golden_tachi"
+   ]
+  },
+  {
+   "hub": "epicfight:diamond_greatsword",
+   "members": [
+    "epicfight:iron_dagger",
+    "epicfight:iron_spear",
+    "epicfight:diamond_dagger",
+    "epicfight:netherite_dagger",
+    "epicfight:netherite_greatsword",
+    "epicfight:netherite_spear",
+    "epicfight:stray_robe",
+    "epicfight:stray_pants"
+   ]
+  }
+ ],
+ "notes": "THE BRIEF'S QUESTION ANSWERED: Epic Fight's SKILLS ARE DATA, NOT ITEMS. There are 43 skills, shipped as data/epicfight/skill_parameters/*.json - adaptive_skin, adrenaline_fiend, basic_attack, battojutsu, battojutsu_passive, berserker, blade_rush, bonebreaker, catharsis, dancing_edge, death_harvest, demolition_leap, emergency_escape, endurance, everlasting_allegiance, eviscerate, forbidden_strength, grasping_spire, guard, heartpiercer, hypervitality, impact_guard, knockdown_wakeup, liechtenauer, meteor_slam, parrying, phantom_ascent, relentless_combo, revelation, roll, rushing_tempo, sharp_stab, stamina_pillager, steel_whirlwind, step, sweeping_edge, swordmaster, technician, the_guillotine, tsunami, vengeance, wrathful_lighting and basic_attack's siblings. NONE of them is an item id, and there is exactly ONE skillbook item - epicfight:skillbook - whose contents are NBT. The five extra models skillbook_dodge, skillbook_guard, skillbook_identity, skillbook_mover and skillbook_passive are predicate overrides on that single item, not separate items, which is most of the gap between 48 item models and 37 lang keys. A ladder of one skillbook per skill is NOT expressible in this namespace; if the pack wants skill progression questing it has to go through NBT-matched tasks on epicfight:skillbook. VERIFIED AGAINST epic-fight-20.14.17-mc1.20.1-forge.jar (mods.toml modId=\"epicfight\", version 20.14.17, forge \"[47.4.0,)\", minecraft \"[1.20,1.21)\"; no fabric.mod.json). The strict 3-segment scan finds 37 item.epicfight.* keys and ZERO block.epicfight.* keys - the single blockstate, fracture_block, has no lang key and is the invisible technical block the mod uses for wall-impact effects, so it is excluded. The 37 are 30 weapons (5 classes - dagger, longsword, greatsword, spear, tachi - across 6 materials: wooden, stone, iron, golden, diamond, netherite) plus bokken, glove, skillbook, stray_hat, stray_pants, stray_robe and uchigatana. ONE ID DROPPED FOR OBTAINABILITY: epicfight:bokken. It is registered in EpicFightItems and has a model and a lang key, but it has no recipe, no weapon capability file under data/epicfight/capabilities/weapons/ (every other weapon has one), no loot table anywhere in the jar, and no data reference at all - the only non-class files that mention it are the lang files and its own model. Creative-only in this build, so it is left out rather than made into an uncompletable quest. NO KILLABLE ENTITIES - ALL THREE ENTITY KEYS EXCLUDED: entity.epicfight.area_effect_breath is the dragon and wither breath volume; entity.epicfight.wither_ghost and entity.epicfight.wither_skeleton_minion belong to the mod's rewritten Wither fight, and wither_skeleton_minion is referenced only from skill_parameters/revelation.json. The jar contains NO loot_tables directory at all, no spawn eggs and no biome modifiers, so none of the three has a single valid proof of spawnability and no kill: step appears in this chain. OBTAINABILITY OF THE THREE UNCRAFTED ITEMS, ALL TRACED: skillbook comes from data/epicfight/loot_modifiers/skillbook_modifier.json, a epicfight:skillbook_loot_table_modifier registered in data/forge/loot_modifiers/global_loot_modifiers.json with a single minecraft:killed_by_player condition, so it can drop from anything; uchigatana is added by EpicFightLootTables.modifyVanillaLootPools, whose constant pool holds UCHIGATANA, dropChance and antiDropChance next to each other; stray_hat, stray_robe and stray_pants are referenced by StrayPatch.class, which equips them onto vanilla Strays so they drop as mob equipment. ORDERING is the recipe graph and it is unambiguous, because Epic Fight's recipes name vanilla swords directly: wooden_greatsword needs only planks and so opens the chapter's crafting, every other weapon consumes the same-tier vanilla sword, and all five netherite weapons are minecraft:smithing_transform with the matching diamond weapon as base, a netherite ingot as addition and the vanilla netherite_upgrade_smithing_template. Gold is placed between stone and diamond to match that graph rather than raw damage. ARMOUR RULE: the Stray set is the only armour in the mod and it is three pieces with no helmet-equivalent hierarchy worth splitting, so stray_hat - the head slot - is the chain step and robe and pants are wheeled, which is the same shape as the measured 51.9% helmet-only pattern. CONSENSUS: epicfight is absent from moddb.json, so there is no pack ordering to cross-check and no conflict to record."
+}

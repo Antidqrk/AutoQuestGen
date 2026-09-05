@@ -1,0 +1,258 @@
+{
+ "mod": "paladins_oath",
+ "verified_against": "paladins_oath-1.2.1-forge-1.20.1.jar",
+ "item_count_in_jar": 442,
+ "chain": [
+  {
+   "id": "paladins_oath:silver_scrap",
+   "title": "Scrap Off the Illagers",
+   "desc": "Dropped by the Berserker, Bomber, Engineer, Exalted Evoker, Exalted Vindicator, Ravager and Silver Golem, and stocked in every pillager lookout and outpost chest the mod places."
+  },
+  {
+   "id": "paladins_oath:silver_ingot",
+   "title": "Silver Drawn Out",
+   "desc": "Scrap bound with iron ingots. Silver is the trunk of this mod - every other metal in it is silver scrap alloyed with something else."
+  },
+  {
+   "id": "paladins_oath:silver_armor_template",
+   "title": "The Template That Repeats",
+   "desc": "Dropped by Ravagers and seeded through the pillager structures, and self-duplicating with iron and silver; it is the template slot for the whole silver tier."
+  },
+  {
+   "id": "paladins_oath:silver_helmet",
+   "title": "Crowned in Silver",
+   "desc": "Smithing an iron helmet with the silver template and a silver ingot; the rest of the set follows the same shape."
+  },
+  {
+   "id": "paladins_oath:iron_greatsword",
+   "title": "Too Much Sword",
+   "desc": "An iron block over an ingot and a stick; this greatsword is the required base for five of the mod's six branch weapons."
+  },
+  {
+   "id": "paladins_oath:silver_greatsword",
+   "title": "Silvered Steel",
+   "desc": "The iron greatsword smithed up with silver; from here the mod splits into its elemental branches."
+  },
+  {
+   "id": "paladins_oath:rune",
+   "title": "A Rune Cut Small",
+   "desc": "Iron nuggets around silver scrap; the mod's enchantment-adjacent system runs on these."
+  },
+  {
+   "id": "paladins_oath:runic_table",
+   "title": "Where Runes Are Set",
+   "desc": "Iron, silver ingot and silver scrap; the bench the runes are applied at."
+  },
+  {
+   "id": "paladins_oath:imbuement_station",
+   "title": "The Imbuing Bench",
+   "desc": "An iron block, a silver ingot and any dust; the second of the mod's two workstations."
+  },
+  {
+   "id": "paladins_oath:ravager_leather",
+   "title": "Hide of a Ravager",
+   "desc": "A Ravager drop that also turns up in seven different structure chests; it backs the cloth armour lines."
+  },
+  {
+   "id": "paladins_oath:evoker_fabric",
+   "title": "Woven Off an Evoker",
+   "desc": "Ravager leather stitched with string, using the fabric evokers themselves drop."
+  },
+  {
+   "id": "paladins_oath:evoker_helmet",
+   "title": "The Illager's Hood",
+   "desc": "Evoker fabric over silver; the cloth counterpart to the silver plate line."
+  },
+  {
+   "id": "paladins_oath:hex_powder",
+   "title": "Powder From a Witch",
+   "desc": "Witches drop it, and so does the Hermit Boss; it opens the venom branch."
+  },
+  {
+   "id": "paladins_oath:venom_fabric",
+   "title": "Cloth That Bites Back",
+   "desc": "Also from the Hermit Boss; paired with hex powder it forms the venom armour template."
+  },
+  {
+   "id": "paladins_oath:hexeblade",
+   "title": "A Blade Steeped in Venom",
+   "desc": "Hex powder, silver, venom fabric and the venom template; the venom branch's signature weapon."
+  },
+  {
+   "id": "paladins_oath:bolt_rod",
+   "title": "A Rod Full of Storm",
+   "desc": "Dropped by the Stormcoil and the Voltforge, and carried by the Futen and Storm Wraith."
+  },
+  {
+   "id": "paladins_oath:electro_dust",
+   "title": "Ground to Sparks",
+   "desc": "A bolt rod broken down; it is the reactive half of every gale recipe."
+  },
+  {
+   "id": "paladins_oath:gale_scrap",
+   "title": "Scrap of the Storm",
+   "desc": "From the Stormcoil and Voltforge, and from the chests inside the gale_ruins structure."
+  },
+  {
+   "id": "paladins_oath:gale_ingot",
+   "title": "Gale Alloy",
+   "desc": "Gale scrap alloyed with silver scrap - the pattern every branch metal in this mod follows."
+  },
+  {
+   "id": "paladins_oath:gale_bound_helmet",
+   "title": "Helm of the Gale",
+   "desc": "Smithed onto the silver helmet rather than an iron one, so the silver tier is a hard prerequisite for every branch."
+  },
+  {
+   "id": "paladins_oath:tempesword",
+   "title": "The Storm's Edge",
+   "desc": "The silver greatsword smithed with a gale ingot under the gale template."
+  },
+  {
+   "id": "paladins_oath:wisp_essence",
+   "title": "Essence of a Wisp",
+   "desc": "From witches, the Polter and the Hermit Boss; the reagent that makes soul metal work."
+  },
+  {
+   "id": "paladins_oath:soul_scrap",
+   "title": "Scrap of a Soul",
+   "desc": "Dropped by the Soulgeist and the Spiriton, the mod's two spirit mobs."
+  },
+  {
+   "id": "paladins_oath:spectrilium_ingot",
+   "title": "Spectrilium",
+   "desc": "Soul scrap alloyed with silver scrap; the spirit branch's metal."
+  },
+  {
+   "id": "paladins_oath:spectrilium_helmet",
+   "title": "Helm of the Spirit",
+   "desc": "Smithed onto the silver helmet with the spectrilium template."
+  },
+  {
+   "id": "paladins_oath:spectreslash",
+   "title": "A Sword That Cuts Spirits",
+   "desc": "Silver greatsword plus spectrilium; the spirit branch's greatsword."
+  },
+  {
+   "id": "paladins_oath:soul_stone",
+   "title": "Stone of the Soul Palace",
+   "desc": "Quarried from the soul_palace, spirit_castle and spirit outpost structures; the branch's building block."
+  },
+  {
+   "id": "paladins_oath:purpur_scrap",
+   "title": "Scrap From the Shulkor",
+   "desc": "The Shulkor drops it, and the mod's two End structures stock it in their chests."
+  },
+  {
+   "id": "paladins_oath:purpur_ingot",
+   "title": "Purpur Alloy",
+   "desc": "Purpur scrap fused with obsidian - the one branch metal that does not use silver scrap."
+  },
+  {
+   "id": "paladins_oath:purpur_helmet",
+   "title": "Helm of the Void",
+   "desc": "Smithed onto an iron helmet under the mod's self-duplicating purpur template."
+  },
+  {
+   "id": "paladins_oath:voidrend_sword",
+   "title": "Rent From the End",
+   "desc": "The iron greatsword taken straight to purpur, skipping silver; the void branch's weapon."
+  },
+  {
+   "id": "paladins_oath:undying_scrap",
+   "title": "Scrap That Refuses to Die",
+   "desc": "Dropped by the Revivor and pulled from the chests inside the undying tower structures."
+  },
+  {
+   "id": "paladins_oath:ingot_of_undying",
+   "title": "Ingot of Undying",
+   "desc": "Undying scrap bound with iron; the deepest metal the mod ships."
+  },
+  {
+   "id": "paladins_oath:undying_smithing_template",
+   "title": "The Undying Template",
+   "desc": "Emeralds and an ingot of undying, self-duplicating like the others."
+  },
+  {
+   "id": "paladins_oath:undying_helmet",
+   "title": "Crown of the Undying",
+   "desc": "The terminal helmet in the mod's ladder."
+  },
+  {
+   "id": "paladins_oath:sword_of_resurrection",
+   "title": "Raised From the Grave",
+   "desc": "The iron greatsword smithed with an ingot of undying; the terminal weapon of the chain."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "paladins_oath:silver_helmet",
+   "members": [
+    "paladins_oath:silver_chestplate",
+    "paladins_oath:silver_leggings",
+    "paladins_oath:silver_boots",
+    "paladins_oath:silver_shield",
+    "paladins_oath:silvers_sword",
+    "paladins_oath:silvers_axe",
+    "paladins_oath:silvers_pickaxe",
+    "paladins_oath:silvers_shovel",
+    "paladins_oath:silvers_hoe",
+    "paladins_oath:silver_bow",
+    "paladins_oath:silver_dagger",
+    "paladins_oath:silver_battle_axe"
+   ]
+  },
+  {
+   "hub": "paladins_oath:silver_scrap",
+   "members": [
+    "paladins_oath:gale_scrap",
+    "paladins_oath:soul_scrap",
+    "paladins_oath:purpur_scrap",
+    "paladins_oath:undying_scrap",
+    "paladins_oath:bolt_rod",
+    "paladins_oath:wisp_essence",
+    "paladins_oath:hex_powder",
+    "paladins_oath:ravager_leather",
+    "paladins_oath:ravager_horn",
+    "paladins_oath:evoker_fabric"
+   ]
+  },
+  {
+   "hub": "paladins_oath:silver_ingot",
+   "members": [
+    "paladins_oath:gale_ingot",
+    "paladins_oath:spectrilium_ingot",
+    "paladins_oath:purpur_ingot",
+    "paladins_oath:ingot_of_undying",
+    "paladins_oath:electro_dust",
+    "paladins_oath:venom_fabric"
+   ]
+  },
+  {
+   "hub": "paladins_oath:gale_bound_helmet",
+   "members": [
+    "paladins_oath:spectrilium_helmet",
+    "paladins_oath:purpur_helmet",
+    "paladins_oath:undying_helmet",
+    "paladins_oath:evoker_helmet",
+    "paladins_oath:poison_robe_helmet",
+    "paladins_oath:shulker_mask",
+    "paladins_oath:silver_helmet"
+   ]
+  },
+  {
+   "hub": "paladins_oath:silver_greatsword",
+   "members": [
+    "paladins_oath:tempesword",
+    "paladins_oath:spectreslash",
+    "paladins_oath:voidrend_sword",
+    "paladins_oath:sword_of_resurrection",
+    "paladins_oath:hexeblade",
+    "paladins_oath:spear_of_undying",
+    "paladins_oath:void_scythe",
+    "paladins_oath:soulpiercer"
+   ]
+  }
+ ],
+ "notes": "READ THIS FIRST - THIS IS NOT THE MOD WITH MODID \"paladins\". The assignment named modid paladins, which is Paladins & Priests (RPG Series), Modrinth slug paladins-and-priests. EVERY 1.20.1 file of that project is Fabric - its NeoForge builds start at 1.21 - so there is no 1.20.1 Forge build of paladins and it was skipped rather than substituted. This file documents a DIFFERENT mod that a name search plausibly resolves to: Paladin's Oath, Modrinth slug paladins-oath, whose real modid is paladins_oath, confirmed in META-INF/mods.toml (modId \"paladins_oath\", displayName \"Paladin's Oath\", loaderVersion [47,), minecraft [1.20.1], optional kleidersplayerrenderer, curios_api, geckolib, particlepresets; no fabric.mod.json). It is genuinely Forge 1.20.1 and the file is named for its own modid so it cannot be mistaken for the assigned one. ID SET. 460 model/item stems intersect with item.paladins_oath.<name> to give 324 items; 118 blocks each carry a blockstate and a block.paladins_oath.<name> key. Verified set = 442. Note the mods.toml version field reads 1.0.0 while the filename and the Modrinth listing both say 1.2.1 - the author did not bump it, so the filename is the reliable version and is what verified_against records. NBT-VARIANT CHECK: not applicable, everything is a separate registered id. DROP SOURCES ARE CODE PROCEDURES, NOT LOOT TABLES - THIS IS THE KEY FINDING. A plain obtainability audit reports 181 of 442 ids unsourced, which looks catastrophic and is misleading. Paladin's Oath is an MCreator project: mob drops are implemented as <Mob>EntityDiesProcedure classes rather than as loot table JSON. Tracing the orphaned materials class by class resolves nearly all of them: silver_scrap is granted by SilverGolemEntityDiesProcedure and carried by BerserkerEntity, BomberEntity, EngineerEntity, ExaltedEvokerEntity and ExaltedVindicatorEntity; soul_scrap by SoulgeistEntityDiesProcedure and SpiritonEntityDiesProcedure; gale_scrap and bolt_rod by StormcoilEntityDiesProcedure and VoltforgeEntityDiesProcedure and carried by FutenEntity and StormWraithEntity; undying_scrap by RevivorEntityDiesProcedure and carried by ResurrectorEntity; purpur_scrap by ShulkorEntityDiesProcedure; wisp_essence by PolterEntityDiesProcedure and EsperagerEntity; hex_powder, venom_fabric, blood_plate and wisp_essence by HermitBossEntityDiesProcedure; dark_steel_ingot by DreadKnightEntityDiesProcedure; swampagator_scale by SwampagatorEntityDiesProcedure; mycrophage by MycoswineEntityDiesProcedure; boulder_rod by BoulderEntityDiesProcedure; silver_core by SilverGolemEntity; big_bone by BoneRevenantEntity; soul_sickle by SkelechargerEntity. Every material named in the chain above has one of those proofs, plus in most cases a second independent proof from a structure NBT. Structure evidence read from the raw NBT: gale_scrap in gale_ruins.nbt and ruins.nbt; undying_scrap and ingot_of_undying in tower.nbt and undyddydydying.nbt; purpur_scrap and purpur_ingot in bill.nbt and island_zamn.nbt; soul_stone in soul_palace.nbt, spirit_castle.nbt, spirt_outpost.nbt, hermit_towa.nbt and rock.nbt; silver_scrap, silver_ingot, silver_armor_template and ravager_leather across ten structures including pillager_lookout_1 and _2, pil_structure and watchtowea; esper_log in esper_tree.nbt; viler_log in witch.nbt. STILL DROPPED. paladins_oath:infernal_ingot is referenced only by PaladinsOathModItems, PaladinsOathModTabs, two item classes and a generically named SuchProcedure - there is no EntityDies procedure and no structure or loot proof, so although the code path exists the source cannot be stated, and the entire infernal branch (infernal_helmet, infernal_bane, infernal_aegis, infernal_forge, infernal_grimoire, hell_pan, hell_ring) is kept out of both chain and wheels. Also excluded: all 60-odd <mob>_spawn_egg ids, the dc_ boss trophies, the illager chest and opened-chest technical blocks, dungeon_key, hermit_mask_helmet and the arena entities. ENTITY CHECK. 153 entity lang keys, and the great majority are projectiles, summons and multi-part boss segments - beam_attack, bolt, bolts, boulder, missle, missle_2, gust, vine, tornado, thunder_strike, hermit_serpent_1 through _4, hermit_serpenthead, hermit_serpenttail, storm_coil_segment_1 through _4, storm_coil_tail, undying_circle, poison_orb, venenum_orb, purpur_bomb, witch_bomb, sanguine_bomb, spark_bomb, flare_bomb, flame_bomb, silver_bomb, endstone_spike, bone_hand, soul_hand, soul_fist, shulker_portal, swamp_portal, and one literally named test. No kill step was emitted. Every mob named in a chain description is one with a confirmed EntityDies procedure that grants the item, which is the strongest proof this mod offers. ORDERING follows the material graph, which is unusually clean: silver_scrap + iron -> silver_ingot -> silver gear, then each branch is <branch>_scrap + silver_scrap -> <branch>_ingot, and the branch armour smiths onto the SILVER piece rather than the iron one, so silver is a hard gate on gale, spectrilium and sanguine. Purpur is the exception - purpur_scrap + obsidian, and its armour smiths onto iron - so it is reachable in parallel; it is placed late anyway because purpur_scrap only comes from the End. Undying is last: its scrap is confined to the two tower structures and the Revivor. ARMOUR RULE APPLIED throughout - six helmets are quested and no lone chestplate, leggings or boots quest appears; the silver set's other pieces are in the first wheel and the branch helmets share a wheel of their own. Five wheels sized 12, 10, 6, 7 and 8. Every _slab, _stairs, _wall, chiseled_ and stripped_ block among the 118 is excluded."
+}

@@ -1,0 +1,153 @@
+{
+ "mod": "vinery",
+ "verified_against": "letsdo-vinery-forge-1.4.41.jar",
+ "item_count_in_jar": 168,
+ "chain": [
+  {
+   "id": "vinery:grapevine_stem",
+   "title": "Stem to Stern",
+   "desc": "A Grapevine Stem is cut from any logs and is the trellis every vine climbs."
+  },
+  {
+   "id": "vinery:grapevine_pot",
+   "title": "Pot of Gold",
+   "desc": "The Grapevine Pot holds a vine and is the planter the whole vineyard is built on."
+  },
+  {
+   "id": "vinery:red_grape_seeds",
+   "title": "Sow It Begins",
+   "desc": "Red Grape Seeds come from a single grape and start a red vine on its stem."
+  },
+  {
+   "id": "vinery:red_grape",
+   "title": "Grape Expectations",
+   "desc": "Red Grapes are harvested from a mature vine and are the base of the red wine line."
+  },
+  {
+   "id": "vinery:white_grape",
+   "title": "The White Stuff",
+   "desc": "White Grapes run the parallel pale line, from crisp ciders to Sun-kissed Wine."
+  },
+  {
+   "id": "vinery:basket",
+   "title": "Basket Case",
+   "desc": "The Basket collects grapes straight off the vines as you harvest."
+  },
+  {
+   "id": "vinery:storage_pot",
+   "title": "Vessel of Champions",
+   "desc": "The Storage Pot holds pressed juice until it is ready for the barrel."
+  },
+  {
+   "id": "vinery:red_grapejuice",
+   "title": "Juice Almighty",
+   "desc": "Red Grapejuice is pressed from red grapes and is the must the fermentation barrel drinks."
+  },
+  {
+   "id": "vinery:white_grapejuice",
+   "title": "White Lines",
+   "desc": "White Grapejuice fills the same role for the pale half of the cellar."
+  },
+  {
+   "id": "vinery:wine_bottle",
+   "title": "Bottle Service",
+   "desc": "Wine Bottles are shaped from glass bottles and hold the finished vintage."
+  },
+  {
+   "id": "vinery:fermentation_barrel",
+   "title": "Barrel of Laughs",
+   "desc": "The Fermentation Barrel is a barrel and sticks, and it is where must plus an additive becomes wine."
+  },
+  {
+   "id": "vinery:red_wine",
+   "title": "Red Letter Day",
+   "desc": "Red must and sugar ferment into Red Wine, the house standard."
+  },
+  {
+   "id": "vinery:apple_press",
+   "title": "Press Any Key",
+   "desc": "The Apple Press is built from a barrel, an iron trapdoor and sticks, and it mashes fruit into must."
+  },
+  {
+   "id": "vinery:apple_mash",
+   "title": "Mash Notes",
+   "desc": "Apples worked in the press become Apple Mash."
+  },
+  {
+   "id": "vinery:apple_juice",
+   "title": "Juicy Details",
+   "desc": "Apple mash fermented in the press becomes Apple Juice."
+  },
+  {
+   "id": "vinery:apple_wine",
+   "title": "An Apple a Day",
+   "desc": "Apple juice fermented in the barrel produces Apple Wine."
+  },
+  {
+   "id": "vinery:cherry",
+   "title": "Life Is Just a Bowl",
+   "desc": "Cherries come from Dark Cherry trees and are the mod's second fruit line."
+  },
+  {
+   "id": "vinery:cherry_wine",
+   "title": "Cherry on Top",
+   "desc": "Cherries fermented on red must give Cherry Wine."
+  },
+  {
+   "id": "vinery:oak_wine_rack_mid",
+   "title": "Rack and Ruin",
+   "desc": "An Oak Wine Rack displays your bottles; matching racks exist for every wood."
+  },
+  {
+   "id": "vinery:jellie_wine",
+   "title": "The Blend of the Affair",
+   "desc": "Jellie Wine is blended in the barrel from Apple, Chenet and Bolvar Wine over white must, and it is the deepest vintage in the cellar."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "vinery:fermentation_barrel",
+   "members": [
+    "vinery:red_wine",
+    "vinery:noir_wine",
+    "vinery:clark_wine",
+    "vinery:chenet_wine",
+    "vinery:cherry_wine",
+    "vinery:glowing_wine",
+    "vinery:eiswein",
+    "vinery:chorus_wine",
+    "vinery:mead",
+    "vinery:magnetic_wine",
+    "vinery:solaris_wine",
+    "vinery:stal_wine",
+    "vinery:strad_wine",
+    "vinery:mellohi_wine"
+   ]
+  },
+  {
+   "hub": "vinery:apple_press",
+   "members": [
+    "vinery:apple_mash",
+    "vinery:apple_juice",
+    "vinery:apple_wine",
+    "vinery:apple_cider",
+    "vinery:kelp_cider"
+   ]
+  },
+  {
+   "hub": "vinery:wine_box",
+   "members": [
+    "vinery:bottle_mojang_noir",
+    "vinery:creepers_crush",
+    "vinery:villagers_fright",
+    "vinery:jo_special_mixture",
+    "vinery:lilitu_wine",
+    "vinery:jellie_wine",
+    "vinery:bolvar_wine",
+    "vinery:aegis_wine",
+    "vinery:cristel_wine"
+   ]
+  }
+ ],
+ "notes": "Progression read from data/vinery/recipes: vinery:apple_mashing and vinery:apple_fermenting run on the Apple Press, and vinery:wine_fermentation runs on the Fermentation Barrel. Every wine_fermentation recipe declares a 'juice' block (red_general, white_general or apple) plus item ingredients, so grape must is the real gate on the whole wine tree, and jellie_wine is the only recipe that consumes three finished wines. Grape juice itself has no datapack recipe (it is produced by the press/basket in code), but red_grapejuice and white_grapejuice are confirmed items via model stem plus lang key. Biome grape variants (jungle/savanna/taiga, red and white) exist as items but only have bag and seed conversions, so they were left out of the ordered chain. Dropped as unverifiable: applesauce, big_bottle, red_vine (model stems with no lang key and no recipe output)."
+}

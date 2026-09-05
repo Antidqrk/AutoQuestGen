@@ -1,0 +1,66 @@
+{
+ "mod": "automobility",
+ "verified_against": "automobility-0.4.2+1.20.1-forge.jar",
+ "item_count_in_jar": 20,
+ "chain": [
+  {
+   "id": "automobility:auto_mechanic_table",
+   "title": "Where Cars Get Made",
+   "desc": "Copper ingots over stone. Its own three-slot workbench, and the only place frames, wheels, engines and attachments can be built - none of them have a crafting-grid recipe."
+  },
+  {
+   "id": "automobility:automobile_frame",
+   "title": "Pick Your Chassis",
+   "desc": "One item id with thirty-one recipes behind it, from a Shopping Cart of copper and iron bars up to a Bejeweled Motorcar of diamond blocks and obsidian. The frame you choose sets the car's handling before a wheel is fitted."
+  },
+  {
+   "id": "automobility:automobile_wheel",
+   "title": "Rubber Meets Road",
+   "desc": "Nine recipes on the mechanic table, from the Carriage Wheel to the Steel and Gilded ones. Wheel choice trades grip against top speed, and off-road wheels are the only ones that ignore rough ground."
+  },
+  {
+   "id": "automobility:automobile_engine",
+   "title": "Under the Hood",
+   "desc": "Five tiers on the same id: a Stone engine of logs and coal, then copper, iron, gold and finally diamond and obsidian around a redstone block. This is the part you keep coming back to replace."
+  },
+  {
+   "id": "automobility:automobile_assembler",
+   "title": "Bolting It Together",
+   "desc": "Copper over stone again, and the block that turns three parts into a driveable car. Drop in a frame, wheels and an engine; leave one out and it tells you the automobile is incomplete."
+  },
+  {
+   "id": "automobility:crowbar",
+   "title": "Taking It Apart",
+   "desc": "One copper and one iron ingot, shapeless. The mod's own prompt is blunt about it - use a crowbar to remove parts - so this is how you get an engine back out of a finished car."
+  },
+  {
+   "id": "automobility:front_attachment",
+   "title": "Something on the Nose",
+   "desc": "Three recipes on one id: a Grass Cutter, a Crop Harvester and a Mob Controller. Front attachments do work as you drive, which is how a car becomes a farm vehicle."
+  },
+  {
+   "id": "automobility:rear_attachment",
+   "title": "Towing the Workshop",
+   "desc": "Fourteen recipes on one id - chest, ender chest, crafting table, smithing table, stonecutter, loom, grindstone, cartography table, a saddled barrel, a passenger seat, a banner post, a backhoe, a paver, even a second mechanic table. Your base learns to follow you."
+  },
+  {
+   "id": "automobility:dash_panel",
+   "title": "Free Speed",
+   "desc": "Blaze powder and a glow ink sac over iron and redstone. Drive across it and the car is thrown forward; it also boosts anything in the mod's dash_panel_boostables entity tag, not just automobiles."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "automobility:grass_off_road",
+   "members": [
+    "automobility:dirt_off_road",
+    "automobility:sand_off_road",
+    "automobility:snow_off_road",
+    "automobility:launch_gel",
+    "automobility:slope",
+    "automobility:steep_slope"
+   ]
+  }
+ ],
+ "notes": "Verified against automobility-0.4.2+1.20.1-forge.jar (Forge [46,), minecraft [1.20,1.21)). Modrinth slug automobility, project id rqIsPf9F - slug and modid agree for once. This is the Forge build of a mod that is primarily Fabric/Quilt; the same 0.4.2 version number ships for both loaders and the Forge jar is the one verified here. NOT A CREATE ADDON despite being grouped with them - it declares no create dependency and ships no Create recipe types; its data folder is recipes/, loot_tables/, tags/ and damage_type/ only. THE ID SET IS 20: assets/automobility/models/item/*.json gives 20 names; the 13 blockstates are all already among those 20, so no widening was needed and none is claimed. Only 7 of the 20 carry an item.automobility.* lang key - the other 13 are keyed block.automobility.* - so the naive models-intersect-item.<modid> rule would have found 7 of 20 and is what the widened rule fixes. THE SINGLE MOST IMPORTANT FACT FOR QUESTING THIS MOD: automobile_frame, automobile_wheel, automobile_engine, front_attachment and rear_attachment are FIVE item ids that carry SIXTY-TWO recipes between them (31 frames, 9 wheels, 5 engines, 3 front, 14 rear). Every variant is the same registered id with different NBT, named through prefab.automobility.* lang keys (Amethyst Rickshaw, Bejeweled Motorcar, Red Tractor, Shopping Cart, Pineapple, and so on). There is no per-variant id to quest, so the chain quests the id once and the description carries the range. All 62 live in data/automobility/recipes/{frame,wheel,engine,attachment}/ under the custom recipe type automobility:auto_mechanic_table - RECIPES OUTSIDE THE PLAIN CRAFTING GRID, and the reason a naive crafting-only scan would conclude this mod has almost nothing in it. Only 11 of the 80 recipe files are vanilla crafting. DROPPED as uncompletable, all four verified twice: (1) automobility:automobile - registered, has an item model and an item.automobility.automobile lang key, but has NO recipe in the jar and NO loot table; it is the prefab item behind the itemGroup.automobility.automobility_prefabs creative tab, and the survival route to a car is the Automobile Assembler producing the entity, not this item. (2) automobility:allow - blockstate, item model, block.automobility.allow lang key and a tooltip.block.automobility.allow string, but no recipe and no loot table. (3) automobility:sloped_dash_panel and (4) automobility:steep_sloped_dash_panel - both have item models and block.* lang keys but no recipe, and I read the loot tables directly to be sure: data/automobility/loot_tables/blocks/slope_with_dash_panel.json and steep_slope_with_dash_panel.json drop automobility:dash_panel and automobility:slope as two separate pools, never the combined item. The combined blocks are made in world by putting a dash panel onto a slope; the item form is unobtainable and would be a dead quest. Note the id mismatch that made this worth checking: the BLOCKSTATES are named slope_with_dash_panel / steep_slope_with_dash_panel while the ITEM MODELS are named sloped_dash_panel / steep_sloped_dash_panel. ORDERING CONFLICT vs moddb consensus (8 entries, all 8 id-verified, none renamed): consensus opens with rear_attachment 0.0 and automobile_frame 0.083 and only reaches auto_mechanic_table at 0.167, automobile_assembler at 0.542 and automobile_wheel at 0.625. That is impossible on the recipe graph - all 62 frame/wheel/engine/attachment recipes are automobility:auto_mechanic_table recipes, so the table must be first, and a car cannot exist before its wheels. The table was moved to step 1 and the wheel moved up next to the frame; the assembler was moved ahead of the crowbar because the crowbar exists to undo what the assembler does. Consensus ordering rejected, recipe graph preferred. The consensus never mentions dash_panel, launch_gel or any off-road block; they are real and craftable and sit in the wheel. MECHANICS FROM THE LANG FILE: driving is accelerate / brake / drift (there are dedicated midnightcontrols bindings for all three), the mechanic table's own container is labelled Auto Parts and sorts by part_category frames / engines / wheels / attachments, collisions and skids have their own subtitles, and there are two custom damage types plus death.attack.automobile - you can be run over."
+}

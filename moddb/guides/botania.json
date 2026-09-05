@@ -1,0 +1,1267 @@
+{
+ "mod": "botania",
+ "ids_in_jar": 895,
+ "videos": [
+  {
+   "title": "How to: Botania | Basic Mana (Minecraft 1.16.5)",
+   "channel": "Mondays",
+   "views": 158919,
+   "duration": 1050,
+   "id": "9xLEqV1BZ7M",
+   "chars": 17236
+  },
+  {
+   "title": "Surviving With Botania 1.16 :: E03 - Portal to Alfheim",
+   "channel": "RagePlaysGames",
+   "views": 108469,
+   "duration": 721,
+   "id": "CfZd7UHll7E",
+   "chars": 12487
+  },
+  {
+   "title": "How does Botania even work? - The Complete Guide",
+   "channel": "Hellfirem4ge",
+   "views": 317026,
+   "duration": 1827,
+   "id": "F0gVFId_XGo",
+   "chars": 30184
+  }
+ ],
+ "items": {
+  "botania:livingwood": {
+   "mentions": 27,
+   "videos": 3,
+   "first_at": 0.315,
+   "praise": 17,
+   "warn": 0,
+   "early_cue": 9,
+   "late_cue": 4
+  },
+  "botania:mana_pool": {
+   "mentions": 20,
+   "videos": 2,
+   "first_at": 0.1989,
+   "praise": 11,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 2
+  },
+  "botania:mana_spreader": {
+   "mentions": 12,
+   "videos": 3,
+   "first_at": 0.4107,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 2
+  },
+  "botania:endoflame": {
+   "mentions": 11,
+   "videos": 1,
+   "first_at": 0.4739,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:livingrock": {
+   "mentions": 11,
+   "videos": 3,
+   "first_at": 0.1932,
+   "praise": 9,
+   "warn": 0,
+   "early_cue": 4,
+   "late_cue": 2
+  },
+  "botania:pure_daisy": {
+   "mentions": 9,
+   "videos": 2,
+   "first_at": 0.1481,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "botania:spark": {
+   "mentions": 9,
+   "videos": 2,
+   "first_at": 0.4305,
+   "praise": 13,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:fertilizer": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.1149,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:alfheim_portal": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.598,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 3
+  },
+  "botania:twig_wand": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.4355,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "botania:mana_tablet": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.3148,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "botania:alchemy_catalyst": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.871,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:runic_altar": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.4348,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:white_petal": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.1626,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:lexicon": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.0131,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 0
+  },
+  "botania:mana_pearl": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.2538,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "botania:glimmering_livingwood": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.6065,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "botania:pixie_dust": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.4395,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "botania:open_crate": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1554,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:mana_mirror": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.9623,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 3
+  },
+  "botania:rune_fire": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.4463,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:blue_petal": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1525,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:apothecary_default": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1999,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:red_petal": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.057,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:terra_plate": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2155,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "botania:terrasteel_ingot": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1531,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:mana_diamond": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.4194,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:dreamwood": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6486,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:super_lava_pendant": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7843,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "botania:rosa_arcana": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.294,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:natura_pylon": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5982,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 4,
+   "late_cue": 0
+  },
+  "botania:super_cloud_pendant": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7827,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:orange_petal": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1036,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:terrasteel_nugget": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5463,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:manasteel_ingot": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3954,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:rainbow_rod": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7711,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "botania:munchdew": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.38,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:livingwood_twig": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0741,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:reach_ring": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7001,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:conjuration_catalyst": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9099,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:mana_pylon": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8186,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:magnet_ring": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6791,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:cloud_pendant": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7166,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:mana_powder": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4472,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:mana_ring": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6652,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "botania:crystal_bow": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6717,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "items_by_display_name": {
+  "botania:mana_pool": {
+   "mentions": 20,
+   "videos": 2,
+   "first_at": 0.1989,
+   "praise": 11,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 2,
+   "display": "Mana Pool"
+  },
+  "botania:mana_spreader": {
+   "mentions": 12,
+   "videos": 3,
+   "first_at": 0.4107,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 2,
+   "display": "Mana Spreader"
+  },
+  "botania:endoflame": {
+   "mentions": 11,
+   "videos": 1,
+   "first_at": 0.4739,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Endoflame"
+  },
+  "botania:pure_daisy": {
+   "mentions": 9,
+   "videos": 2,
+   "first_at": 0.1481,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0,
+   "display": "Pure Daisy"
+  },
+  "botania:alfheim_portal": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.598,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 3,
+   "display": "Elven Gateway Core"
+  },
+  "botania:twig_wand": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.4355,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1,
+   "display": "Wand of the Forest"
+  },
+  "botania:mana_tablet": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.3148,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0,
+   "display": "Mana Tablet"
+  },
+  "botania:runic_altar": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.4348,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Runic Altar"
+  },
+  "botania:alchemy_catalyst": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.871,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Alchemy Catalyst"
+  },
+  "botania:lexicon": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.0131,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 0,
+   "display": "Lexica Botania"
+  },
+  "botania:glimmering_livingwood": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.6065,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1,
+   "display": "Glimmering Livingwood"
+  },
+  "botania:mana_pearl": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.2538,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1,
+   "display": "Mana Pearl"
+  },
+  "botania:pixie_dust": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.4395,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1,
+   "display": "Pixie Dust"
+  },
+  "botania:open_crate": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1554,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Open Crate"
+  },
+  "botania:rune_fire": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.4463,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Rune of Fire"
+  },
+  "botania:mana_mirror": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.9623,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 3,
+   "display": "Mana Mirror"
+  },
+  "botania:apothecary_default": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1999,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Petal Apothecary"
+  },
+  "botania:fertilizer": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1149,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Floral Fertilizer"
+  },
+  "botania:terra_plate": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2155,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1,
+   "display": "Terrestrial Agglomeration Plate"
+  },
+  "botania:mana_diamond": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.4194,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Mana Diamond"
+  },
+  "botania:terrasteel_ingot": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1531,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Terrasteel Ingot"
+  },
+  "botania:natura_pylon": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5982,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 4,
+   "late_cue": 0,
+   "display": "Natura Pylon"
+  },
+  "botania:dreamwood": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6486,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Dreamwood"
+  },
+  "botania:rosa_arcana": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.294,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Rosa Arcana"
+  },
+  "botania:super_lava_pendant": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7843,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1,
+   "display": "Crimson Pendant"
+  },
+  "botania:super_cloud_pendant": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7827,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Nimbus Amulet"
+  },
+  "botania:manasteel_ingot": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3954,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Manasteel Ingot"
+  },
+  "botania:terrasteel_nugget": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5463,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Terrasteel Nugget"
+  },
+  "botania:mana_pylon": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8186,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Mana Pylon"
+  },
+  "botania:conjuration_catalyst": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9099,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Conjuration Catalyst"
+  },
+  "botania:munchdew": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.38,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Munchdew"
+  },
+  "botania:livingwood_twig": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0741,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Livingwood Twig"
+  },
+  "botania:mana_ring": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6652,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Band of Mana"
+  },
+  "botania:magnet_ring": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6791,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Ring of Magnetization"
+  },
+  "botania:reach_ring": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7001,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Ring of Far Reach"
+  },
+  "botania:rainbow_rod": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7711,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1,
+   "display": "Rod of the Bifrost"
+  },
+  "botania:crystal_bow": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6717,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Crystal Bow"
+  },
+  "botania:mana_powder": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4472,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Mana Powder"
+  },
+  "botania:cloud_pendant": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7166,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Cirrus Amulet"
+  }
+ },
+ "human_notes": {
+  "_confidence": "STRONG. Two sources, cross-checked against Botania-1.20.1-454-FORGE.jar. F0gVFId_XGo (Hellfirem4ge, 'How does Botania even work? - The Complete Guide') is native English and dense, and carries the mid and late game; it is Vault Hunters flavoured, so ignore its remarks about things being disabled. 9xLEqV1BZ7M (Mondays) is dubbed from Italian and its item names need decoding, but its early-game ORDER is unambiguous and is what corrects the wand's position. CAVEAT: F0gVFId_XGo was transcribed under the earlier Whisper vocabulary prompt; it was kept rather than redone because every id below is independently jar-verified and the two biggest claims (the Terra Plate as its own step, and Gaia II being summoned with the Gaia Spirit Ingot) are separately corroborated by the jar's own advancement and Patchouli data.",
+  "order": [
+   {
+    "claim": "Start with the Lexica Botania -- one book plus any sapling. Guides open with it every time, and the book itself unlocks as you progress, so it doubles as the progress tracker.",
+    "video": "9xLEqV1BZ7M",
+    "ids": [
+     "botania:lexicon"
+    ],
+    "note": "The Lexica Botania is the standard first craft - it is the mod's complete in-game guide."
+   },
+   {
+    "claim": "Gather Mystical Flowers and turn them into petals first. Sixteen colours generate in the world, each giving its own petal, and petals are the input to literally every flower recipe. Floral Fertilizer is the standard trick for farming more colours -- click it on grass and a patch of mystical flowers appears.",
+    "video": "9xLEqV1BZ7M",
+    "ids": [
+     "botania:fertilizer",
+     "botania:white_petal",
+     "botania:pink_mystical_flower",
+     "botania:white_mystical_flower",
+     "botania:flower_bag"
+    ],
+    "note": "Petals are the universal ingredient - every flower recipe wants them - so gather several colours early. Floral fertilizer force-spawns mystical flowers on grass."
+   },
+   {
+    "claim": "Build the Petal Apothecary before anything else -- it is the first structure in the mod. Fill it with water, throw in petals, then a seed. Every flower in the mod, generating or functional, is made this way; until it exists you cannot make a single flower.",
+    "video": "9xLEqV1BZ7M",
+    "ids": [
+     "botania:apothecary_default"
+    ],
+    "note": "The Petal Apothecary is the first workstation. It needs water inside (right-click with water) before petals and a seed will produce a flower."
+   },
+   {
+    "claim": "The Pure Daisy is the FIRST flower you make, before any mana flower -- four white petals and a seed. It converts stone into Livingrock and logs into Livingwood, which every early recipe needs. Nothing else can start until this is running.",
+    "video": "9xLEqV1BZ7M",
+    "ids": [
+     "botania:pure_daisy",
+     "botania:livingrock",
+     "botania:livingwood",
+     "botania:white_petal"
+    ],
+    "note": "The Pure Daisy needs only four petals and converts adjacent blocks using ambient mana: stone becomes livingrock, logs become livingwood."
+   },
+   {
+    "claim": "THE WAND OF THE FOREST IS CRAFTED IMMEDIATELY AFTER THE PURE DAISY, BEFORE ANY MANA GENERATION EXISTS. As soon as the Pure Daisy gives you Livingwood you make Livingwood Twigs, and three twigs plus two petals give you the wand. The two petals you pick set its colours, which is why guides show it being recoloured. This is the third or fourth craft in the entire mod -- it belongs at the very start of a quest chain, not in a late tools section.",
+    "video": "9xLEqV1BZ7M",
+    "ids": [
+     "botania:twig_wand",
+     "botania:livingwood_twig",
+     "botania:livingwood",
+     "botania:pure_daisy"
+    ],
+    "note": "Wand of the Forest: livingwood makes livingwood twigs, and twigs plus two coloured petals make the wand - the petal colours recolour it."
+   },
+   {
+    "claim": "The Mana Spreader comes next -- seven Livingwood Twigs around a petal. It is the delivery pipe for every flower you are about to build, so it precedes the generating flowers rather than following them.",
+    "video": "9xLEqV1BZ7M",
+    "ids": [
+     "botania:mana_spreader",
+     "botania:livingwood_twig"
+    ],
+    "note": "A Mana Spreader crafts from seven livingwood twigs around a coloured petal or mushroom."
+   },
+   {
+    "claim": "Endoflame is the first mana flower to build, with Hydroangeas as the other starter. It is not the best flower, it is the cheapest -- petals only, no runes -- which is exactly why every guide starts a mana farm with it. Feed it coal or any furnace fuel.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:endoflame",
+     "botania:hydroangeas",
+     "botania:apothecary_default"
+    ],
+    "note": "Endoflames are the classic first mana farm: they cost little more than petals, so they scale cheaply."
+   },
+   {
+    "claim": "Two starter flowers are taught together: Endoflame burns fuel for mana, Hydroangeas sits in water. Hydroangeas must be placed close to the Mana Spreader or it cannot hand its mana over.",
+    "video": "9xLEqV1BZ7M",
+    "ids": [
+     "botania:endoflame",
+     "botania:hydroangeas",
+     "botania:mana_spreader"
+    ],
+    "note": "Endoflames and Hydroangeas are the two usual starter generating flowers; keep them close to a Mana Spreader or the mana never gets collected."
+   },
+   {
+    "claim": "The Runic Altar sits between the cheap flowers and everything else, because better flowers need runes. Two of its ingredients are simpler than they look: a Mana Pearl is just an ender pearl dropped in a mana pool, and a Mana Diamond is a diamond done the same way.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:runic_altar",
+     "botania:livingrock",
+     "botania:mana_pearl",
+     "botania:mana_diamond",
+     "botania:entropinnyum"
+    ],
+    "note": "Higher-tier flowers such as the Entropinnyum need runes. Rune crafting takes livingrock plus a mana pearl (an ender pearl dropped into a mana pool) or a mana diamond (same trick with a diamond)."
+   },
+   {
+    "claim": "THE TERRESTRIAL AGGLOMERATION PLATE IS ITS OWN JOB, DONE BEFORE TERRASTEEL EXISTS. Craft the plate, then build the multiblock around it -- a cross of Livingrock filled in with lapis blocks, plate in the middle. Guides always teach this as a separate step, never as a line inside the Terrasteel explanation.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:terra_plate",
+     "botania:terrasteel_ingot",
+     "botania:livingrock"
+    ],
+    "note": "The terrasteel multiblock is a cross of livingrock squared off with lapis blocks, with the Terrestrial Agglomeration Plate at the centre."
+   },
+   {
+    "claim": "Spend your first Terrasteel ingot on nuggets, not on gear. Two Natura Pylons and the Elven Gateway Core together cost exactly one ingot, and they are what open Alfheim.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:terrasteel_ingot",
+     "botania:terrasteel_nugget",
+     "botania:natura_pylon",
+     "botania:alfheim_portal",
+     "botania:ender_eye_block",
+     "botania:mana_pylon",
+     "botania:livingwood"
+    ],
+    "note": "Break the first terrasteel ingot into nuggets: Natura Pylons and the Elven Gateway Core (three nuggets plus six livingwood) together cost about one ingot."
+   },
+   {
+    "claim": "SET UP ALFHEIM EARLIER THAN FEELS NATURAL. Guides deliberately do the portal near the start rather than the end, because so many quality-of-life blocks need elven-trade materials -- doing it early means every later build is the good version first time instead of something you tear down and redo.",
+    "video": "CfZd7UHll7E",
+    "ids": [
+     "botania:alfheim_portal",
+     "botania:elementium_ingot",
+     "botania:pixie_dust"
+    ],
+    "note": "A common veteran route is to rush the elven tier early - every later build then gets made once, in its best version, instead of being upgraded piecemeal."
+   },
+   {
+    "claim": "The Terra Plate multiblock is a 3x3: Livingrock in the four corners and the centre, Lapis Blocks in the remaining four, and the Terrestrial Agglomeration Plate on top of the centre Livingrock.",
+    "video": "CfZd7UHll7E",
+    "ids": [
+     "botania:terra_plate",
+     "botania:livingrock",
+     "botania:terrasteel_ingot"
+    ],
+    "note": "Terra Plate layout: livingrock in the four corners and the centre, lapis blocks in the remaining cells, and the Agglomeration Plate on the centre livingrock."
+   },
+   {
+    "claim": "The portal frame is a 3x3 opening: put the Elven Gateway Core at the centre of the base, then run Livingwood three blocks along each side with Glimmering Livingwood in the middle of each side.",
+    "video": "CfZd7UHll7E",
+    "ids": [
+     "botania:alfheim_portal",
+     "botania:livingwood",
+     "botania:glimmering_livingwood",
+     "botania:natura_pylon"
+    ],
+    "note": "Portal frame: the Elven Gateway Core at centre base, sides of livingwood three long enclosing a 3x3, with glimmering livingwood in each side's middle."
+   },
+   {
+    "claim": "THE FIRST THING TO THROW INTO THE PORTAL IS YOUR LEXICA BOTANIA. It comes straight back as the elven edition with a whole new set of chapters unlocked, including the Alfheim material itself.",
+    "video": "CfZd7UHll7E",
+    "ids": [
+     "botania:lexicon",
+     "botania:lexicon_elven",
+     "botania:alfheim_portal"
+    ],
+    "note": "Throw the Lexica Botania through the Alfheim portal first - it comes back with the elven chapters unlocked, including the portal's own documentation."
+   },
+   {
+    "claim": "Elven trading is the gate on the whole late game. The portal is not something you walk through -- you throw items in and better items come back. Dreamwood, Elementium and Pixie Dust all come from it, and those are what let you build the Gaia arena.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:alfheim_portal",
+     "botania:dreamwood",
+     "botania:elementium_ingot",
+     "botania:pixie_dust"
+    ],
+    "note": "Elven trading supplies the high-tier materials: throw livingwood through the portal for dreamwood, and so on down the trade list."
+   }
+  ],
+  "gates": [
+   {
+    "claim": "Craft the Wand of the Forest early -- it is one of the first things you make, and almost nothing past the Petal Apothecary works without it. You need it to finish every rune on the Runic Altar, and you need it to open the Alfheim portal. If you have skipped it, you are stuck. (The player who called this 'the wand of wonders' means this item; no id by that name exists in any installed jar.)",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:twig_wand",
+     "botania:runic_altar",
+     "botania:alfheim_portal",
+     "botania:rune_fire"
+    ],
+    "note": "When the Runic Altar prompts for it, add livingrock and tap the altar with the wand to finish the rune. The elven gateway opens by right-clicking its core with the Wand of the Forest."
+   },
+   {
+    "claim": "If your Runic Altar has all the right ingredients floating above it and still will not convert, it is not a bug -- the altar has no mana. Aim a Mana Spreader at it from a pool or a flower before you expect a rune.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:mana_spreader",
+     "botania:runic_altar",
+     "botania:mana_pool"
+    ],
+    "note": "A Runic Altar does not run unpowered - aim a mana spreader at it before recipes will convert."
+   },
+   {
+    "claim": "The Terra Plate is fed by Sparks, not by a spreader. Put one Spark on the plate and one on a full mana pool and they link up on their own. Learn the four augments while you are here: Dominant pulls mana into its pool, Recessive pushes it out, Isolated opts out of both, Dispersive also tops up items in your inventory.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:spark",
+     "botania:terra_plate",
+     "botania:mana_pool",
+     "botania:spark_upgrade_dominant",
+     "botania:spark_upgrade_recessive",
+     "botania:spark_upgrade_isolated",
+     "botania:spark_upgrade_dispersive"
+    ],
+    "note": "The Terra Plate is fed with Sparks rather than a spreader: one Spark on the plate, one on a mana pool, and the mana flows across."
+   },
+   {
+    "claim": "Natura Pylons only work over mana pools that are already well charged. Place them on empty pools and the portal will simply never light. The pools and pylons can sit anywhere within an 11x11x11 box around the portal, so they do not have to be directly in front of it.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:natura_pylon",
+     "botania:mana_pool"
+    ],
+    "note": "Two Natura Pylons cost six terrasteel nuggets; stand them over mana pools that already hold a healthy reserve."
+   },
+   {
+    "claim": "The portal is opened by right-clicking the Elven Gateway Core with the Wand of the Forest -- another place the wand is mandatory. It only stays open if the 200,000 mana is actually available; a green flicker with no mana means it failed. Once open it costs nothing to stay open, only mana per trade.",
+    "video": "CfZd7UHll7E",
+    "ids": [
+     "botania:alfheim_portal",
+     "botania:twig_wand",
+     "botania:natura_pylon",
+     "botania:mana_pool"
+    ],
+    "note": "The Alfheim portal needs 200,000 mana on tap to open (a sputter of green portal shows if there is not enough). Once open it costs nothing to keep open - only a fee per item traded."
+   },
+   {
+    "claim": "You cannot fight Gaia until you have been to Alfheim. The arena needs four Gaia Pylons, and each one needs Elementium and Pixie Dust that only elven trading provides. Set them around a lit vanilla beacon.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:gaia_pylon",
+     "botania:mana_pylon",
+     "botania:elementium_ingot",
+     "botania:pixie_dust",
+     "botania:alfheim_portal"
+    ],
+    "note": "The Gaia arena needs four Gaia Pylons around an activated beacon. Each pylon takes a Mana Pylon plus elementium and pixie dust, both from elven trading."
+   }
+  ],
+  "bosses": [
+   {
+    "claim": "Gaia Guardian I is summoned by dropping a Terrasteel Ingot onto the lit beacon inside the ring of four Gaia Pylons. It drops Gaia Spirits.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:terrasteel_ingot",
+     "botania:life_essence",
+     "botania:gaia_pylon",
+     "botania:gaia_head"
+    ],
+    "note": "Summon the Gaia Guardian by pressing a terrasteel ingot on the beacon; the fight pays out Gaia Spirits."
+   },
+   {
+    "claim": "GAIA GUARDIAN II IS A SEPARATE, LATER FIGHT WITH A DIFFERENT SUMMONING ITEM. Craft Gaia Spirits into a Gaia Spirit Ingot and throw that on the beacon instead of Terrasteel. So the chain is: Terrasteel summons Gaia I, Gaia I's drops become the Gaia Spirit Ingot, and that summons Gaia II.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:gaia_ingot",
+     "botania:life_essence",
+     "botania:terrasteel_ingot"
+    ],
+    "note": "Using a Gaia Spirit Ingot instead of terrasteel summons the tier-2 Gaia - a harder fight with much better rewards."
+   },
+   {
+    "claim": "Fight Gaia in daylight. At around 25 health it starts summoning a wave of mobs, and in the sun most of that wave burns without you doing anything.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:gaia_head"
+    ],
+    "note": "Below roughly a quarter health the Gaia starts summoning mob waves; fight in daytime and most of the adds burn away on their own."
+   },
+   {
+    "claim": "THE RELICS DROP FROM GAIA II ONLY, NOT GAIA I. Verified in the jar rather than from a video: in Botania-1.20.1-454-FORGE.jar every relic advancement hangs off botania:challenge/gaia_guardian_hardmode. That set is the Key of the King's Law, Dice of Fate, Eye of the Fluegel, Fruit of Grisaia, Ring of Loki, Ring of Odin, Ring of Thor and the Pinkinator. The Key of the King's Law is the item the player calls 'the Key to the Heavens' -- nothing by that name exists in any installed jar, and their memory that it is a second-Gaia reward is correct.",
+    "video": null,
+    "ids": [
+     "botania:king_key",
+     "botania:dice",
+     "botania:flugel_eye",
+     "botania:infinite_fruit",
+     "botania:loki_ring",
+     "botania:odin_ring",
+     "botania:thor_ring",
+     "botania:pinkinator",
+     "botania:gaia_ingot"
+    ],
+    "note": "(jar-side confirmation from Botania-1.20.1-454-FORGE.jar advancements; no transcript claim relied on)"
+   },
+   {
+    "claim": "Gaia sits between the two tiers of bauble, not at the end of the mod. The Cirrus Amulet, Sojourner's Sash and Pyroclast Pendant are craftable beforehand; Gaia Spirits are the only way to upgrade them into the Nimbus Amulet, Globetrotter's Sash and Crimson Pendant.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:life_essence",
+     "botania:super_cloud_pendant",
+     "botania:super_travel_belt",
+     "botania:super_lava_pendant",
+     "botania:cloud_pendant",
+     "botania:travel_belt",
+     "botania:lava_pendant",
+     "botania:gaia_spreader"
+    ],
+    "note": "The Nimbus Amulet, Globetrotter's Sash and Crimson Pendant upgrades all require Gaia Spirits, and only the Gaia boss drops those."
+   }
+  ],
+  "traps": [
+   {
+    "claim": "STAND WELL BACK FROM THE TERRA PLATE ONCE IT STARTS. If you pick up the Mana Pearl, Manasteel Ingot or Mana Diamond after the process begins -- even by walking over them a moment before it finishes -- the whole thing stops and every point of mana already spent is destroyed. That is around half a mana pool gone.",
+    "video": "CfZd7UHll7E",
+    "ids": [
+     "botania:terra_plate",
+     "botania:mana_pearl",
+     "botania:manasteel_ingot",
+     "botania:mana_diamond",
+     "botania:terrasteel_ingot"
+    ],
+    "note": "Never pick up the Terra Plate's ingredients mid-craft: the process stops and every point of mana already invested is voided, even seconds from completion."
+   },
+   {
+    "claim": "Budget for the mana before you start. One Terrasteel ingot costs roughly half a Mana Pool, and opening the Alfheim portal costs 200,000 on top -- about 10% of two full pools. Fill both pools to at least a quarter before you try to open it.",
+    "video": "CfZd7UHll7E",
+    "ids": [
+     "botania:terra_plate",
+     "botania:mana_pool",
+     "botania:alfheim_portal",
+     "botania:mana_tablet"
+    ],
+    "note": "Budget about half a mana pool per terrasteel and 200,000 mana for the portal. A pool holds a million, so around a quarter full is a comfortable margin."
+   },
+   {
+    "claim": "Count your runes carefully: the Runic Altar gives back runes used as catalysts, but the Petal Apothecary does not. Make a flower and the runes are gone for good, so plan rune production around the flowers you want, not around the altar recipes.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:runic_altar",
+     "botania:apothecary_default",
+     "botania:rune_summer",
+     "botania:rune_fire"
+    ],
+    "note": "The Runic Altar returns component runes after crafting; apothecary flower recipes consume them outright - plan rune stocks around the difference."
+   },
+   {
+    "claim": "Be careful with the Conjuration Catalyst. It duplicates what it has already duplicated, so a stack of glowstone becomes several stacks fast, and it is very easy to lag or crash a server with it.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:conjuration_catalyst"
+    ],
+    "note": "The Conjuration Catalyst chain-reacts: duplicated items duplicate again if left in the pool, so collect outputs promptly."
+   },
+   {
+    "claim": "Do not solve mana throughput problems by building more plain Mana Spreaders. The base spreader is the bottleneck; upgrade the spreader tier instead, and move to the Gaia Mana Spreader as soon as you can.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:mana_spreader",
+     "botania:gaia_spreader",
+     "botania:elven_spreader"
+    ],
+    "note": "Basic mana spreaders become the throughput bottleneck; upgrading to the top-tier spreader is worth doing as soon as it is affordable."
+   },
+   {
+    "claim": "If a recipe calls for an ingredient you cannot find a crafting recipe for, check the elven trades before assuming it is from another mod. A lot of mid-game Botania materials only exist as portal trades.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:alfheim_portal",
+     "botania:dreamwood",
+     "botania:elementium_ingot"
+    ],
+    "note": "An ingredient with no visible recipe is often an elven-trade item - check the trade list before assuming it is unobtainable."
+   }
+  ],
+  "signature": [
+   {
+    "claim": "The Terra Shatterer is Botania's headline tool, and it arrives EARLY -- the moment you can make Terrasteel, not near Gaia. It has no other heavy requirements; it simply levels up as you pour mana into it, so it is a long investment that should be started as soon as possible.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:terra_pick",
+     "botania:terrasteel_ingot"
+    ],
+    "note": "The Terra Shatterer is the flagship tool: it out-mines nearly everything, unlocks as soon as terrasteel does, and ranking it up is a long but worthwhile mana investment."
+   },
+   {
+    "claim": "Mana generation and storage are what the mod is actually about. There is deliberately no single correct generating flower -- guides tell players to pick whichever matches the resource they already have in bulk.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:mana_pool",
+     "botania:mana_spreader",
+     "botania:endoflame",
+     "botania:hydroangeas",
+     "botania:gourmaryllis",
+     "botania:entropinnyum"
+    ],
+    "note": "There is no single correct mana generator - the right flower is whichever resource the player already has in surplus."
+   },
+   {
+    "claim": "Make the Band of Mana before the other baubles. It is what gives you the blue mana bar and lets every other mana-powered item work away from your pools.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:mana_ring",
+     "botania:crystal_bow",
+     "botania:magnet_ring",
+     "botania:reach_ring",
+     "botania:travel_belt",
+     "botania:cloud_pendant",
+     "botania:goddess_charm",
+     "botania:rainbow_rod"
+    ],
+    "note": "The Band of Mana carries mana on the player (the blue bar) and powers mana-using items away from base."
+   },
+   {
+    "claim": "Functional flowers are the mod's automation layer and are worth their own attention, separate from the mana flowers -- Hopperhock as a ranged hopper, Bellethorne as a mob killer, Vinculotus to stop endermen teleporting, Tigerseye to keep creepers away, Pollidisiac to breed animals.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:vinculotus",
+     "botania:tigerseye",
+     "botania:pollidisiac",
+     "botania:hopperhock",
+     "botania:bellethorn",
+     "botania:loonium"
+    ],
+    "note": "One-line flower guide: Vinculotus stops enderman teleports, Tigerseye turns creepers away, Pollidisiac feeds and breeds animals, the Hopperhock is a hopper-flower, and Bellethorne kills nearby mobs without XP - a mob-farm staple."
+   },
+   {
+    "claim": "After Alfheim the two payoffs guides single out are Alchemy Catalyst conversion farms and the Mana Mirror, which mirrors one pool so you always have mana on you wherever you are.",
+    "video": "F0gVFId_XGo",
+    "ids": [
+     "botania:alchemy_catalyst",
+     "botania:mana_mirror",
+     "botania:open_crate"
+    ],
+    "note": "The Alchemy Catalyst converts a long list of materials, and the Mana Mirror draws remotely on a bound mana pool - effectively portable mana."
+   }
+  ]
+ }
+}

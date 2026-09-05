@@ -1,0 +1,19 @@
+{
+  "mod": "betterwitchhuts",
+  "verified_against": "YungsBetterWitchHuts-1.20-Forge-3.0.3.jar",
+  "item_count_in_jar": 0,
+  "chain": [
+    {
+      "id": "structure:betterwitchhuts:witch_hut",
+      "title": "The Hut Rebuilt",
+      "desc": "The rebuilt swamp hut, on minecraft:swamp and mangrove_swamp with witch and cat spawn overrides. Its chests/hut_0 table is the mod's only loot: potions, splash potions, phantom membrane, pufferfish, rabbit foot, spider eyes and sugar."
+    },
+    {
+      "id": "structure:betterwitchhuts:witch_circle",
+      "title": "The Circle in the Marsh",
+      "desc": "A second, chestless structure on minecraft:swamp only, also spawning witches and cats. It has NO loot table - the reward here is the coven, not a chest."
+    }
+  ],
+  "collections": [],
+  "notes": "SHORT ON PURPOSE - TWO STRUCTURES, NO ITEMS. THE MOD ID IS betterwitchhuts, NOT yungsbetterwitchhuts (META-INF/mods.toml: modId betterwitchhuts, version 1.20-Forge-3.0.3, minecraft [1.20,1.21), forge [46.0.2,), no fabric.mod.json). assets/betterwitchhuts/ has no models/item, no blockstates and no item./block. keys, so item_count_in_jar is 0 and collections is empty. CONTENT: two structures at data/betterwitchhuts/worldgen/structure/ - witch_hut and witch_circle - both type yungsapi:yung_jigsaw at the surface_structures step, both with minecraft:witch and minecraft:cat spawn overrides. LOOT: exactly one table in the whole jar, data/betterwitchhuts/loot_tables/chests/hut_0.json, and the nbt walk resolved it to witch_hut directly out of the raw NBT. Contents read from the json: potion, splash_potion, phantom_membrane, pufferfish, rabbit_foot, spider_eye, sugar, gunpowder, redstone, slime_ball and carrot - a brewing kit, which is the point of a witch hut. WITCH_CIRCLE HAS NO CHEST AT ALL and it is kept anyway, with that stated in its own description rather than hidden: it is the one place in the jar where the content is the mob encounter. Under the 'purely decorative scenery is weak content' rule it is borderline, and a pack that wants only loot destinations should drop it and keep witch_hut. The jar's five nbt pieces are witch_hut_sm, witch_hut_lg, witch_hut_double, witch_circle, plus witch.nbt and cat.nbt mob templates. NOTE THE LOADER THRESHOLD: _load_researched_chains keeps curated chains of 4+ rows, so this two-row file will be skipped by that path; structure_quests() still reads both ids from the jar scan and this file is the loot record behind them. No kill: entries - no entity lang keys, and both mobs are vanilla. No dim: entries. ID FORM: 'structure:' + fully namespaced. Requires yungsapi. data/morevillagers/tags in the jar is compat, not content."
+}

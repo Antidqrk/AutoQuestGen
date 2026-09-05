@@ -1,0 +1,108 @@
+{
+ "mod": "powah",
+ "verified_against": "Powah-5.0.11.jar",
+ "item_count_in_jar": 144,
+ "chain": [
+  {
+   "id": "powah:dielectric_paste",
+   "title": "Dielectric Paste",
+   "desc": "Craft dielectric paste from three coal or charcoal, two clay balls and a lava bucket; it is the binder in every Powah component."
+  },
+  {
+   "id": "powah:dielectric_casing",
+   "title": "Dielectric Casing",
+   "desc": "Craft the casing from four iron ingots plus vertical and horizontal dielectric rods; it is the core of all Powah machines."
+  },
+  {
+   "id": "powah:furnator_starter",
+   "title": "Furnator",
+   "desc": "Craft with a furnace, a dielectric casing, two tiny basic capacitors and dielectric paste; it burns furnace fuel into FE."
+  },
+  {
+   "id": "powah:thermo_generator_starter",
+   "title": "Thermo Generator",
+   "desc": "Craft from three thermoelectric plates, a casing and tiny capacitors, then place it over a heat source like lava for passive FE."
+  },
+  {
+   "id": "powah:energy_cell_starter",
+   "title": "Energy Cell",
+   "desc": "Craft the first FE battery block from iron ingots, four tiny basic capacitors and a dielectric casing."
+  },
+  {
+   "id": "powah:energy_cable_starter",
+   "title": "Energy Cable",
+   "desc": "Craft starter cables to pipe FE between your generators, cells and machines."
+  },
+  {
+   "id": "powah:energizing_orb",
+   "title": "Energizing Orb",
+   "desc": "Craft from glass, a dielectric casing and horizontal dielectric rods; it is the crafting hub where energizing recipes happen."
+  },
+  {
+   "id": "powah:energizing_rod_starter",
+   "title": "Energizing Rod",
+   "desc": "Craft from quartz, two tiny capacitors, a casing and a dielectric rod; place rods near the Orb and power them to energize items."
+  },
+  {
+   "id": "powah:steel_energized",
+   "title": "Energized Steel",
+   "desc": "Energize one iron ingot and one gold ingot in the Orb (10,000 FE) to get two energized steel, the material for the Hardened tier."
+  },
+  {
+   "id": "powah:crystal_blazing",
+   "title": "Blazing Crystal",
+   "desc": "Energize four blaze powder (120,000 FE) into a blazing crystal, unlocking Blazing-tier machines and capacitors."
+  },
+  {
+   "id": "powah:crystal_niotic",
+   "title": "Niotic Crystal",
+   "desc": "Energize a single diamond (300,000 FE) into a niotic crystal for the Niotic tier."
+  },
+  {
+   "id": "powah:crystal_spirited",
+   "title": "Spirited Crystal",
+   "desc": "Energize a single emerald (1,000,000 FE) into a spirited crystal for the Spirited tier."
+  },
+  {
+   "id": "powah:uraninite",
+   "title": "Uraninite",
+   "desc": "Mine uraninite ore (also in deepslate) and smelt it, or energize raw uraninite (2,000 FE) to double it into uraninite fuel."
+  },
+  {
+   "id": "powah:reactor_starter",
+   "title": "Uraninite Reactor Block",
+   "desc": "Craft reactor blocks from dielectric casings, tiny capacitors and uraninite; you need 36 of them for the reactor."
+  },
+  {
+   "id": "powah:reactor_basic",
+   "title": "Uraninite Reactor",
+   "desc": "Place 36 reactor blocks to assemble the multiblock reactor, then feed it uraninite (plus optional redstone and coolant) for large FE output."
+  },
+  {
+   "id": "powah:ender_core",
+   "title": "Ender Core",
+   "desc": "Energize an eye of ender with a dielectric casing and a tiny capacitor (50,000 FE) to make the core for ender energy blocks."
+  },
+  {
+   "id": "powah:ender_cell_basic",
+   "title": "Ender Cell",
+   "desc": "Craft from an ender core, iron and obsidian; ender cells share one wireless energy pool across dimensions via numbered channels."
+  },
+  {
+   "id": "powah:crystal_nitro",
+   "title": "Nitro Crystal",
+   "desc": "Energize a nether star, two redstone blocks and a blazing crystal block (20,000,000 FE) into 16 nitro crystals, the final tier material."
+  },
+  {
+   "id": "powah:energy_cell_nitro",
+   "title": "Nitro Energy Cell",
+   "desc": "Upgrade through the cell tiers using nitro crystals to reach Powah's highest-capacity energy storage."
+  },
+  {
+   "id": "powah:thermo_generator_nitro",
+   "title": "Nitro Thermo Generator",
+   "desc": "Tier up thermo generators to nitro for the classic endgame passive-power setup over lava or magma blocks."
+  }
+ ],
+ "notes": "Tier order Starter->Basic->Hardened->Blazing->Niotic->Spirited->Nitro. Tier materials verified from capacitor recipes: Hardened=energized steel, Blazing=blazing crystal, Niotic=niotic crystal (diamond), Spirited=spirited crystal (emerald), Nitro=nitro crystal (nether star). Energizing FE costs read from data/powah/recipes/energizing/*. All ids set-checked against 144 item models in jar."
+}

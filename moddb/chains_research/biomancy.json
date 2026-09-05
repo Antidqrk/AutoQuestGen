@@ -1,0 +1,202 @@
+{
+ "mod": "biomancy",
+ "verified_against": "biomancy-forge-1.20.1-2.8.19.0.jar",
+ "item_count_in_jar": 149,
+ "chain": [
+  {
+   "id": "biomancy:mob_sinew",
+   "title": "Everything Bleeds Something",
+   "desc": "Injected into 183 separate vanilla mob loot tables - more than any other item in the mod. Killing almost anything starts you off."
+  },
+  {
+   "id": "biomancy:mob_claw",
+   "title": "Claws Off the Dead",
+   "desc": "A narrower injection across 34 tables, and one of the two ingredients that lets you skip straight to the Bio-Forge."
+  },
+  {
+   "id": "biomancy:living_flesh",
+   "title": "Flesh That Won't Die",
+   "desc": "Dropped by every flesh blob variant and injected into fourteen tables; it is the beating heart of every machine recipe in the mod."
+  },
+  {
+   "id": "biomancy:bio_forge",
+   "title": "The Bench That Grows Things",
+   "desc": "Crafted in a plain grid from claws, raw meat, a slime ball and living flesh - the one machine with a vanilla recipe, so it is always the entry point."
+  },
+  {
+   "id": "biomancy:flesh_bits",
+   "title": "Trimmings",
+   "desc": "Shorn from the mod's flesh livestock; five of them go into almost every Bio-Forge recipe."
+  },
+  {
+   "id": "biomancy:decomposer",
+   "title": "Take It Apart",
+   "desc": "Forged from living flesh, flesh bits, bone fragments, elastic fibers and mineral fragment; 296 decomposing recipes run in it."
+  },
+  {
+   "id": "biomancy:bone_fragments",
+   "title": "Ground to Fragments",
+   "desc": "A decomposer output, and the structural filler in nearly every Bio-Forge recipe from here on."
+  },
+  {
+   "id": "biomancy:elastic_fibers",
+   "title": "Something That Stretches",
+   "desc": "The other universal decomposer output; vials, injectors and every machine housing need it."
+  },
+  {
+   "id": "biomancy:digester",
+   "title": "Turn Meat Into Fuel",
+   "desc": "Needs bile as well as the usual four, so the decomposer has to run before this can be built."
+  },
+  {
+   "id": "biomancy:nutrient_paste",
+   "title": "Paste",
+   "desc": "The digester's product; nutrients are the currency every Bio-Forge and Bio-Lab recipe spends."
+  },
+  {
+   "id": "biomancy:nutrient_bar",
+   "title": "Pressed Into a Bar",
+   "desc": "Nine paste compressed, and edible in a pinch."
+  },
+  {
+   "id": "biomancy:bio_lab",
+   "title": "The Chemistry Bench",
+   "desc": "Forged from living flesh, flesh bits, bone fragments, exotic dust and tough fibers; the fifteen bio_brewing recipes all run here."
+  },
+  {
+   "id": "biomancy:vial",
+   "title": "Something to Brew Into",
+   "desc": "Elastic fibers alone; every compound and serum is held in one."
+  },
+  {
+   "id": "biomancy:organic_compound",
+   "title": "The Base Reagent",
+   "desc": "Bile, nutrients, organic matter and a vial; the root of the entire compound tree."
+  },
+  {
+   "id": "biomancy:exotic_compound",
+   "title": "Compound, Enriched",
+   "desc": "Organic compound with exotic dust and mineral fragment; it reacts into the combat serums."
+  },
+  {
+   "id": "biomancy:genetic_compound",
+   "title": "Compound, Written",
+   "desc": "Organic compound with hormone secretion and nutrient paste; the branch that changes living things."
+  },
+  {
+   "id": "biomancy:injector",
+   "title": "The Delivery End",
+   "desc": "Elastic fibers, flesh bits, mineral fragment and tough fibers; serums do nothing without it."
+  },
+  {
+   "id": "biomancy:absorption_boost",
+   "title": "First Serum",
+   "desc": "Brewed from a healing additive, exotic dust and mineral fragment reacting against exotic compound."
+  },
+  {
+   "id": "biomancy:ravenous_claws",
+   "title": "Claws of Your Own",
+   "desc": "Living flesh, flesh bits, mineral fragment, tough fibers and a mob claw; the mod's first real weapon."
+  },
+  {
+   "id": "biomancy:thorn_shield",
+   "title": "A Shield With Teeth",
+   "desc": "The same shape built around a mob fang instead."
+  },
+  {
+   "id": "biomancy:acolyte_armor_helmet",
+   "title": "Grown, Not Forged",
+   "desc": "Living flesh, flesh bits, tough fibers, mineral fragment and bone fragments; the helmet is also the piece with its own dynamic upgrade recipe."
+  },
+  {
+   "id": "biomancy:caustic_gunblade",
+   "title": "A Gland on a Blade",
+   "desc": "Requires a mob gland and a primal orifice block, so the malignant flesh biome has to be found first."
+  },
+  {
+   "id": "biomancy:primordial_core",
+   "title": "Every Meat at Once",
+   "desc": "Beef, chicken, mutton, porkchop, rotten flesh, a spider eye and an ender pearl in one grid - a plain vanilla craft, and the mod's second entry point."
+  },
+  {
+   "id": "biomancy:primordial_cradle",
+   "title": "Feed It and See",
+   "desc": "The core set with raw meat and fangs; feeding the cradle is how the primordial flesh blobs and the deeper materials are summoned."
+  },
+  {
+   "id": "biomancy:despoil_sickle",
+   "title": "Harvest the Dead",
+   "desc": "A primordial core with raw meat and bone; it raises the organ yield from everything you kill, closing the loop the chain opened on."
+  },
+  {
+   "id": "biomancy:fleshkin_chest",
+   "title": "A Chest That Bites",
+   "desc": "Living flesh, flesh bits, bone fragments, mineral fragment and tough fibers; it refuses anyone but its owner."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "biomancy:mob_sinew",
+   "members": [
+    "biomancy:mob_claw",
+    "biomancy:mob_fang",
+    "biomancy:mob_gland",
+    "biomancy:mob_marrow",
+    "biomancy:withered_mob_marrow",
+    "biomancy:toxin_gland",
+    "biomancy:volatile_gland",
+    "biomancy:living_flesh",
+    "biomancy:flesh_bits"
+   ]
+  },
+  {
+   "hub": "biomancy:absorption_boost",
+   "members": [
+    "biomancy:ageing_serum",
+    "biomancy:breeding_stimulant",
+    "biomancy:cleansing_serum",
+    "biomancy:enlargement_serum",
+    "biomancy:shrinking_serum",
+    "biomancy:frenzy_serum",
+    "biomancy:rejuvenation_serum",
+    "biomancy:insomnia_cure",
+    "biomancy:decaying_additive",
+    "biomancy:healing_additive"
+   ]
+  },
+  {
+   "hub": "biomancy:bio_forge",
+   "members": [
+    "biomancy:decomposer",
+    "biomancy:digester",
+    "biomancy:bio_lab",
+    "biomancy:maw_hopper",
+    "biomancy:storage_sac",
+    "biomancy:fleshkin_chest",
+    "biomancy:tongue",
+    "biomancy:modular_larynx",
+    "biomancy:vial_holder",
+    "biomancy:extractor",
+    "biomancy:primordial_cradle"
+   ]
+  },
+  {
+   "hub": "biomancy:flesh",
+   "members": [
+    "biomancy:fibrous_flesh",
+    "biomancy:packed_flesh",
+    "biomancy:ornate_flesh",
+    "biomancy:chiseled_flesh",
+    "biomancy:tubular_flesh",
+    "biomancy:flesh_door",
+    "biomancy:flesh_iris_door",
+    "biomancy:flesh_ladder",
+    "biomancy:flesh_pillar",
+    "biomancy:flesh_spike",
+    "biomancy:bio_lantern_blue",
+    "biomancy:bio_lantern_yellow"
+   ]
+  }
+ ],
+ "notes": "Forge, 1.20.1, confirmed from META-INF/mods.toml (modId \"biomancy\", displayName \"Biomancy 2\", loaderVersion [47,), minecraft [1.20.1,1.20.2), mandatory geckolib, optional jei; no fabric.mod.json). ID SET. 166 model/item stems intersect with item.biomancy.<name> to give 75 items; 74 blocks each carry a blockstate and a block.biomancy.<name> key. Verified set = 149. Note the model/block asymmetry - 175 block model stems against 74 blockstates - which is the multipart flesh blocks shipping many part models each; the blockstate requirement filters them correctly. NBT-VARIANT CHECK: not applicable, every item and block is separately registered. OBTAINABILITY - THE FIRST AUDIT WAS WRONG AND WAS REDONE. A naive result-key scan reported 35 unsourced ids including nutrients, organic_matter, bile, tough_fibers, elastic_fibers, exotic_dust, mineral_fragment, gem_fragments, bone_fragments, stone_powder, hormone_secretion, toxin_extract, regenerative_fluid, volatile_fluid and withering_ooze. That was an artefact: biomancy:decomposing recipes emit a \"results\" ARRAY, not a \"result\" object, so a scan reading only \"result\" misses all 296 of them. Re-run against results/outputs arrays, the true unsourced count is 19 and every one of those fragments is correctly sourced as a decomposer output. The remaining 19 are 8 spawn eggs, the acid fluid trio (acid_bucket, acid_cauldron, acid_fluid_block - fluid handling, not craftable), bloomberry, essence, gift_sac, guide_book, dev_arm_cannon and the two legacy/primordial blob eggs. None is quested. ENTITY CHECK. 11 entity lang keys; the flesh blob family (flesh_blob, hungry_flesh_blob, legacy_flesh_blob, primordial_flesh_blob, primordial_hungry_flesh_blob, plus size_2 through size_10 sub-tables) all drop living_flesh through real loot tables, and the flesh livestock (flesh_cow, flesh_pig, flesh_sheep, flesh_chicken, chroma_sheep, thick_fur_sheep) are shearable rather than killed for flesh_bits - the \"unshorn\" table is what supplies flesh_bits. No projectile or summon was used as a kill target and the chain phrases the blob and livestock steps as drops rather than as kill quests. ORDERING. The graph has TWO valid entry points and both are in the chain deliberately: biomancy:bio_forge has a minecraft:crafting_shaped recipe (claws tag, raw_meats tag, slime ball, living flesh) as well as a biomancy:bio_forging one, and biomancy:primordial_core and primordial_cradle are plain vanilla crafts. Everything else routes through the Bio-Forge, so the order is mob drops -> Bio-Forge -> Decomposer (which is what actually unlocks bone_fragments and elastic_fibers) -> Digester -> nutrients -> Bio-Lab -> vials and compounds -> serums and gear. Recipe types counted: 76 bio_forging, 296 decomposing, 71 digesting, 15 bio_brewing, 60 vanilla crafting, 23 stonecutting, plus four dynamic crafting types. Some digesting recipes are guarded by forge:mod_loaded conditions for alexscaves, alexsmobs, create and quark; none of those is on the chain's critical path. ARMOUR RULE APPLIED: only acolyte_armor_helmet is quested, and it is the piece with the dynamic upgrade recipe anyway; the other three acolyte pieces are not quested individually. Four wheels sized 9, 10, 11 and 12; every _slab, _stairs and _wall among the 74 blocks is excluded from both chain and wheels."
+}

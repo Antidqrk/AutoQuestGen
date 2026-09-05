@@ -1,0 +1,178 @@
+{
+ "mod": "railways",
+ "verified_against": "Steam_Rails-1.7.3+forge-mc1.20.1.jar",
+ "item_count_in_jar": 1876,
+ "chain": [
+  {
+   "id": "railways:conductor_whistle",
+   "title": "All Aboard",
+   "desc": "A copper ingot and a brass nugget. Held in hand it calls a nearby train's conductor to your position and gets a schedule moving."
+  },
+  {
+   "id": "railways:paint_brush",
+   "title": "A Fresh Coat",
+   "desc": "Feather, stick and an iron ingot. Dipped in a paint pitcher it recolours locometal and train carriages in place, no crafting grid involved."
+  },
+  {
+   "id": "railways:smokestack_coalburner",
+   "title": "Breathing Soot",
+   "desc": "A campfire ringed by iron plates. Bolted to a locomotive it changes both the exhaust plume and the sound the engine makes."
+  },
+  {
+   "id": "railways:conductor_vent",
+   "title": "Grated Steel",
+   "desc": "One industrial iron block cut on a stonecutter gives two. Trains breathe through it, and it tiles cleanly into engine rooms."
+  },
+  {
+   "id": "railways:track_oak",
+   "title": "Sleepers of Oak",
+   "desc": "Oak slabs sequenced through a deployer with iron or zinc nuggets, then pressed. Ordinary Create track, but built on honest timber."
+  },
+  {
+   "id": "railways:track_oak_wide",
+   "title": "Broad Gauge",
+   "desc": "Feed finished oak track back through the assembly line with more slabs. Wide track reads as a heavier mainline than the standard bed."
+  },
+  {
+   "id": "railways:track_monorail",
+   "title": "One Rail Is Enough",
+   "desc": "Assembled from a metal girder with a bracket and iron plates. Trains ride the single beam, ideal for elevated runs over open ground."
+  },
+  {
+   "id": "railways:track_tieless",
+   "title": "Glass and Nothing",
+   "desc": "A glass pane deployed with nuggets and pressed. The ties vanish entirely, leaving rails that appear to float above whatever you lay them on."
+  },
+  {
+   "id": "railways:track_switch_andesite",
+   "title": "Choosing the Fork",
+   "desc": "A lever above an andesite casing above a cogwheel. Placed beside a junction it throws trains down one branch or the other on a redstone signal."
+  },
+  {
+   "id": "railways:small_buffer",
+   "title": "Stopping Short",
+   "desc": "Industrial iron, a shaft and an iron plate make four. A low sprung block that halts a rolling carriage without tearing it apart."
+  },
+  {
+   "id": "railways:big_buffer",
+   "title": "The Heavy Stop",
+   "desc": "Small buffers rebuilt with more industrial iron and plate. Taller and squarer, sized for the end of a goods siding rather than a shunting spur."
+  },
+  {
+   "id": "railways:link_and_pin",
+   "title": "Iron Between Wagons",
+   "desc": "Industrial iron, a shaft, iron nuggets and plate. The oldest coupling style in the mod, hung on a headstock to join carriages nose to tail."
+  },
+  {
+   "id": "railways:wooden_headstock_link_and_pin",
+   "title": "The Wagon's Face",
+   "desc": "Any deco coupler pinned above wooden slabs. Headstocks cap the ends of a train and carry whichever coupler you chose to show."
+  },
+  {
+   "id": "railways:copycat_headstock_link_and_pin",
+   "title": "Wearing Any Skin",
+   "desc": "The same coupler over Create copycat panels. Right-click it with a block and the headstock takes on that block's texture."
+  },
+  {
+   "id": "railways:buffer",
+   "title": "End of the Line",
+   "desc": "Wooden headstocks over metal girders over industrial iron. A full-height terminus block that stops a train dead at the platform end."
+  },
+  {
+   "id": "railways:semaphore",
+   "title": "The Arm Drops",
+   "desc": "Iron plates, an andesite casing, an electron tube and a fence post. A mechanical signal whose arm swings to show block occupancy at a glance."
+  },
+  {
+   "id": "railways:track_coupler",
+   "title": "Rotation from the Rails",
+   "desc": "An iron plate, redstone and a railway casing. Clamped to track it reads a passing train's speed and turns that motion into rotational output."
+  },
+  {
+   "id": "railways:track_switch_brass",
+   "title": "The Smart Junction",
+   "desc": "A lever, brass casing and precision mechanism. Unlike the andesite switch it can be told which branch to take by the train's own schedule."
+  },
+  {
+   "id": "railways:handcar",
+   "title": "Pump Your Way Home",
+   "desc": "Andesite casing, cogwheel, contraption controls, andesite alloy and slabs. A pedal-powered cart that runs on train track with no engine at all."
+  },
+  {
+   "id": "railways:riveted_locometal",
+   "title": "Skin of the Engine",
+   "desc": "One iron block cut on a stonecutter yields eight. The base plate of the whole locomotive palette, and paintable in twenty-odd colours."
+  },
+  {
+   "id": "railways:locometal_boiler",
+   "title": "Where the Steam Lives",
+   "desc": "Mechanical crafting: a shell of slashed locometal around blaze rods and a bucket, four at a time. The defining silhouette of a steam engine."
+  },
+  {
+   "id": "railways:fuel_tank",
+   "title": "Range Extender",
+   "desc": "A Create fluid tank between two sturdy sheets. Mounted on a train it feeds liquid fuel to the boiler so the loco runs far longer between stops."
+  },
+  {
+   "id": "railways:portable_fuel_interface",
+   "title": "Refuel Without Stopping",
+   "desc": "A railway casing and a chute. One half rides the train, the other sits on the platform, and fuel passes between them as the train slows past."
+  },
+  {
+   "id": "railways:remote_lens",
+   "title": "Eyes Down the Line",
+   "desc": "A precision mechanism, an ender eye and a brass plate. Linked to a display it streams a live view of distant track back to your control room."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "railways:track_oak",
+   "members": [
+    "railways:track_spruce",
+    "railways:track_birch",
+    "railways:track_jungle",
+    "railways:track_acacia",
+    "railways:track_dark_oak",
+    "railways:track_mangrove",
+    "railways:track_cherry",
+    "railways:track_bamboo",
+    "railways:track_crimson",
+    "railways:track_warped",
+    "railways:track_blackstone",
+    "railways:track_ender",
+    "railways:track_phantom",
+    "railways:track_oak_narrow"
+   ]
+  },
+  {
+   "hub": "railways:smokestack_coalburner",
+   "members": [
+    "railways:smokestack_woodburner",
+    "railways:smokestack_oilburner",
+    "railways:smokestack_streamlined",
+    "railways:smokestack_long",
+    "railways:smokestack_caboosestyle",
+    "railways:smokestack_diesel"
+   ]
+  },
+  {
+   "hub": "railways:riveted_locometal",
+   "members": [
+    "railways:slashed_locometal",
+    "railways:plated_locometal",
+    "railways:flat_riveted_locometal",
+    "railways:flat_slashed_locometal",
+    "railways:locometal_pillar",
+    "railways:locometal_vent",
+    "railways:locometal_smokebox",
+    "railways:locometal_flywheel",
+    "railways:iron_wrapped_locometal",
+    "railways:copper_wrapped_locometal",
+    "railways:brass_wrapped_locometal",
+    "railways:wrapped_locometal_smokebox",
+    "railways:locometal_rung_ladder"
+   ]
+  }
+ ],
+ "notes": "Steam n Rails is a pure Create addon: it never re-teaches rotation. The chain assumes the player already has create:andesite_alloy, create:andesite_casing, create:brass_casing, create:railway_casing, create:industrial_iron_block, create:metal_girder, create:metal_bracket, create:shaft, create:cogwheel, create:copycat_panel, create:chute, create:propeller, create:flywheel, create:electron_tube, create:precision_mechanism, create:contraption_controls, create:fluid_tank and create:sturdy_sheet, plus a working Depot/Deployer/Mechanical Press sequenced-assembly line and Create own create:track and Train Station. ORDERING CONFLICT vs moddb consensus (7 entries, all id-verified): consensus places railways:fuel_tank first (pos 0.0) and railways:conductor_whistle late (pos 0.611). The recipe graph inverts this - fuel_tank needs create:sturdy_sheet (a late-game Create item) while conductor_whistle is one copper ingot plus one brass nugget, the cheapest recipe the mod ships. Chain follows the recipe graph. Consensus placements for remote_lens (0.25, needs create:precision_mechanism) and portable_fuel_interface (0.333, needs create:railway_casing) are likewise earlier than their ingredients allow and were moved late. track_coupler (0.444), handcar (0.75) and semaphore (0.75) agree well with the graph and were kept near those positions. DROPPED - present as items but with ZERO recipe files anywhere in the jar, so unobtainable and unquestable: railways:knuckle_coupler, railways:screwlink_coupler, railways:split_knuckle_coupler, railways:link_and_pin_linkless (all four sit in the railways:deco_couplers tag but nothing produces them), the bare railways:wooden_headstock and railways:copycat_headstock (only the *_link_and_pin coupled forms are craftable), and every metal-capped smokestack (railways:smokestack_coalburner_copper, _brass, _iron_cap_steel and the ~50 siblings) which are applied in-world rather than crafted. railways:conductor_cap does NOT exist - only the 16 dyed forms (railways:blue_conductor_cap etc) are real ids; they come from a sequenced assembly plus a dyeing recipe, and were left out of the chain because no single neutral id exists to quest. The jar also ships ~700 compat track ids for mods that are not installed (track_biomesoplenty_*, track_tfc_*, track_hexcasting_*); these pass the model-plus-lang test because the lang file always registers them, but they are dead unless that mod is present, so all were excluded. Item total is dominated by the locometal palette: 25 paint colours x ~30 decorative forms. Only the neutral base forms are quested. Tracks are wheeled rather than chained (14 wood/stone variants share one sequenced-assembly pattern); track_monorail and track_tieless stay on the spine because their recipes differ structurally (metal girder and glass pane bases). _slab/_stairs/_wall and stripped_ variants excluded per desirability; railways:track_stripped_bamboo omitted for that reason. railways:benchcart and railways:jukeboxcart are valid and craftable (a crafting table or a jukebox dropped into a minecart) but were cut to keep the spine inside the 24-step budget; either is a cheap filler quest if the book has room."
+}

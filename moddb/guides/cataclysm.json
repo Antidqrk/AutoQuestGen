@@ -1,0 +1,1761 @@
+{
+ "mod": "cataclysm",
+ "jar": "L_Enders_Cataclysm-3.31.jar",
+ "ids_in_jar": 284,
+ "entities_in_jar": 40,
+ "videos": [
+  {
+   "id": "VkvGGGiPdg8",
+   "title": "L_Ender 's Cataclysm (1.20.1) | (Full Showcase)",
+   "channel": "Noxus",
+   "views": 340540,
+   "duration": 801,
+   "chars": 14654,
+   "secs": 0
+  },
+  {
+   "id": "knlruNG2kUA",
+   "title": "L_Ender's Cataclysm 1.20.1 (Full Mod Showcase) Epic Bosses",
+   "channel": "Eccentric Emerald",
+   "views": 72928,
+   "duration": 1387,
+   "chars": 18248,
+   "secs": 920
+  }
+ ],
+ "items": {
+  "cataclysm:infernal_forge": {
+   "kind": "item",
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.1235,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:bulwark_of_the_flame": {
+   "kind": "item",
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.3479,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:mechanical_fusion_anvil": {
+   "kind": "item",
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.519,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:void_core": {
+   "kind": "item",
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.3567,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:burning_ashes": {
+   "kind": "item",
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.5397,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 4
+  },
+  "cataclysm:gauntlet_of_bulwark": {
+   "kind": "item",
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.6333,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:monstrous_horn": {
+   "kind": "item",
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.131,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:monstrous_helm": {
+   "kind": "item",
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.1365,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:the_incinerator": {
+   "kind": "item",
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.645,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:void_forge": {
+   "kind": "item",
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.5287,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:void_scatter_arrow": {
+   "kind": "item",
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.3557,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:amethyst_crab_meat": {
+   "kind": "item",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0369,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:coral_spear": {
+   "kind": "item",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5947,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:gauntlet_of_guard": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9466,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:void_assault_shoulder_weapon": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9231,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:abyssal_egg": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7614,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:abyssal_sacrifice": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6503,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:altar_of_fire": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8374,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "cataclysm:amethyst_crab_shell": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0356,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:ignitium_ingot": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9311,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:meat_shredder": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.358,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:remnant_skull": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.56,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:tidal_claws": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.779,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "cataclysm:void_crystal": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2535,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:void_jaw": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1909,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cataclysm:witherite_block": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4482,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "entities": {
+  "cataclysm:ignis": {
+   "kind": "entity",
+   "mentions": 18,
+   "videos": 2,
+   "first_at": 0.5298,
+   "praise": 11,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 9,
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:the_harbinger": {
+   "kind": "entity",
+   "mentions": 16,
+   "videos": 2,
+   "first_at": 0.5377,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:deepling": {
+   "kind": "entity",
+   "mentions": 9,
+   "videos": 1,
+   "first_at": 0.5845,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:ancient_remnant": {
+   "kind": "entity",
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.4932,
+   "praise": 0,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:ender_guardian": {
+   "kind": "entity",
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.4183,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 2,
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:amethyst_crab": {
+   "kind": "entity",
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.0183,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:ender_golem": {
+   "kind": "entity",
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.172,
+   "praise": 3,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:the_leviathan": {
+   "kind": "entity",
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.6601,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:ignited_revenant": {
+   "kind": "entity",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1884,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1,
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:lionfish": {
+   "kind": "entity",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.578,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:deepling_angler": {
+   "kind": "entity",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5845,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:netherite_monstrosity": {
+   "kind": "entity",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0514,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:deepling_brute": {
+   "kind": "entity",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6238,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:deepling_priest": {
+   "kind": "entity",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6095,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:modern_remnant": {
+   "kind": "entity",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5624,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:the_baby_leviathan": {
+   "kind": "entity",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7638,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "cataclysm:the_prowler": {
+   "kind": "entity",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3517,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:the_watcher": {
+   "kind": "entity",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3382,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  }
+ },
+ "human_notes": {
+  "_source": "guide (full showcase, transcribed) + jar (loot tables, recipe graph, eye recipes)",
+  "structure_gating": [
+   "Every major structure is found with a crafted 'Eye of X' that works like an ender eye — this, not the fight, is the real gate, and all eight are craftable from VANILLA materials with no boss drop required",
+   "cataclysm:monstrous_eye -> Soul Blacksmith (Nether) -> entity:cataclysm:netherite_monstrosity",
+   "cataclysm:flame_eye -> Burning Arena (Nether) -> entity:cataclysm:ignis",
+   "cataclysm:desert_eye -> desert structure -> entity:cataclysm:ancient_remnant",
+   "cataclysm:cursed_eye -> entity:cataclysm:maledictus",
+   "cataclysm:storm_eye -> entity:cataclysm:scylla",
+   "cataclysm:abyss_eye -> entity:cataclysm:the_leviathan",
+   "cataclysm:void_eye -> end structure -> entity:cataclysm:ender_guardian",
+   "cataclysm:mech_eye -> entity:cataclysm:modern_remnant",
+   "Ingredient tiers imply the intended order: mech_eye (iron/redstone) and desert_eye (emerald/sandstone) are cheap; monstrous_eye and flame_eye need netherite scrap; void_eye needs a shulker shell, so it is post-End"
+  ],
+  "measured_emphasis": [
+   "Across 2 transcribed showcases the two bosses guides actually dwell on are entity:cataclysm:ignis (18 mentions, 11 in praising language) and entity:cataclysm:the_harbinger (16) — roughly triple any other boss. Treat those two as the mod's headline fights",
+   "entity:cataclysm:ender_guardian (5) and entity:cataclysm:netherite_monstrosity (2) get far less airtime than their position in the ladder suggests",
+   "The items guides keep returning to are cataclysm:infernal_forge, cataclysm:bulwark_of_the_flame, cataclysm:mechanical_fusion_anvil and cataclysm:void_core — stations and defensive gear, not swords",
+   "entity:cataclysm:amethyst_crab is mentioned first (first_at 0.02) in one video: it is the early, harmless-looking mob players meet before any boss"
+  ],
+  "boss_order": [
+   "entity:cataclysm:ender_guardian — end-structure boss, drops cataclysm:gauntlet_of_guard",
+   "entity:cataclysm:netherite_monstrosity — nether boss; drops cataclysm:infernal_forge, the crafting station the later tiers need",
+   "entity:cataclysm:ignis — nether boss; sole source of cataclysm:ignitium_ingot",
+   "entity:cataclysm:the_harbinger — drops cataclysm:witherite_block, gating the witherite weapon tier",
+   "entity:cataclysm:ancient_remnant — desert boss; cataclysm:ancient_metal_block + cataclysm:sandstorm_in_a_bottle",
+   "entity:cataclysm:maledictus — sole source of cataclysm:cursium_ingot",
+   "entity:cataclysm:scylla — drops cataclysm:essence_of_the_storm and cataclysm:lacrima",
+   "entity:cataclysm:the_leviathan — ocean boss; cataclysm:tidal_claws and cataclysm:abyssal_egg"
+  ],
+  "prep": [
+   "The guide's verdict on Ignis: 'only face this boss well prepared' — fire resistance is mandatory (it sets you on fire), plus healing potions, golden apples and enchanted netherite gear",
+   "Ignis applies Blazing Brand, which strips up to 20 armour and 5 toughness and life-steals off you — raw armour stacking does not work, mobility does",
+   "entity:cataclysm:netherite_monstrosity is asleep until you enter its structure, so the fight starts on your terms; it has 500 HP, 10 armour, 22 damage and enrages below 33%",
+   "entity:cataclysm:ignited_revenant blocks with a shield — the guide gives three specific counters: a crossbow enchanted with Piercing, breaking shields with critical hits, or hitting them while they throw bones",
+   "cataclysm:infernal_forge (from the Netherite Monstrosity) is a prerequisite station — cataclysm:brontes and cataclysm:void_forge are both built with it",
+   "cataclysm:mechanical_fusion_anvil is the witherite-tier upgrade station and itself costs cataclysm:witherite_ingot",
+   "Ignitium armour is applied to NETHERITE armour in a smithing table, so full netherite is a hard prerequisite for the mod's top armour"
+  ],
+  "order": [
+   "Ore/mob tier first: cataclysm:black_steel_ingot feeds the entry weapons (black_steel_sword, black_steel_targe) with no boss required",
+   "entity:cataclysm:wadjet and entity:cataclysm:kobolediator drop cataclysm:ancient_metal_ingot — the first boss-grade material, before the big four",
+   "Ignis is SUMMONED, not found: kill entity:cataclysm:ignited_revenant for cataclysm:burning_ashes, then use them on the burning altar (cataclysm:altar_of_fire) on the arena's upper floor",
+   "The altars (cataclysm:altar_of_fire, :altar_of_abyss, :altar_of_void, :altar_of_amethyst) are summon rituals, so several bosses need a fetch step before the fight exists at all",
+   "Each headline boss unlocks exactly one material, and that material unlocks a weapon/armour family — the mod is a clean one-boss-one-tier ladder"
+  ],
+  "key_drops": [
+   "cataclysm:ignitium_ingot -> ignitium armour set, cataclysm:bulwark_of_the_flame, cataclysm:the_incinerator",
+   "cataclysm:witherite_ingot -> cataclysm:wither_assault_shoulder_weapon, cataclysm:laser_gatling, cataclysm:meat_shredder",
+   "cataclysm:cursium_ingot -> cursium armour, cataclysm:soul_render, cataclysm:cursed_bow",
+   "cataclysm:infernal_forge -> cataclysm:brontes, cataclysm:void_forge",
+   "cataclysm:monstrous_horn -> cataclysm:monstrous_helm (guide: below half HP it knocks monsters back and grants defence/regen)",
+   "cataclysm:burning_ashes — from Ignited Revenants; the Ignis summon component, so it gates a boss rather than a recipe",
+   "cataclysm:essence_of_the_storm + cataclysm:lacrima -> cataclysm:astrape, cataclysm:ceraunus"
+  ],
+  "traps": [
+   "entity:cataclysm:nameless_sorcerer has a spawn egg but NO loot table and its own display name ends in '(W.I.P)' — do not build a kill task on it",
+   "The Leviathan is invincible outside water (the mod ships a dedicated 'the_leviathan_immune' message) — a land-based kill task cannot be completed",
+   "Do not target cataclysm:ignis_fireball, cataclysm:lava_bomb, cataclysm:tidal_tentacle, cataclysm:abyss_blast or cataclysm:void_rune: projectiles/effects with lang keys but no loot, egg or kill advancement"
+  ],
+  "signature": [
+   "entity:cataclysm:netherite_monstrosity",
+   "entity:cataclysm:ignis",
+   "entity:cataclysm:the_harbinger",
+   "entity:cataclysm:the_leviathan",
+   "cataclysm:ignitium_ingot",
+   "cataclysm:witherite_ingot",
+   "cataclysm:infernal_forge",
+   "cataclysm:void_forge"
+  ]
+ },
+ "verified_entities": {
+  "cataclysm:amethyst_crab": {
+   "name": "Amethyst Crab",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:ancient_remnant": {
+   "name": "Ancient Remnant",
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:aptrgangr": {
+   "name": "Aptrgangr",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:cindaria": {
+   "name": "Cindaria",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:clawdian": {
+   "name": "Clawdian",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:coral_golem": {
+   "name": "Coral Golem",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:coralssus": {
+   "name": "Coralssus",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:deepling": {
+   "name": "Deepling",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:deepling_angler": {
+   "name": "Deepling Angler",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:deepling_brute": {
+   "name": "Deepling Brute",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:deepling_priest": {
+   "name": "Deepling Priest",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:deepling_warlock": {
+   "name": "Deepling Warlock",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:draugr": {
+   "name": "Draugr",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:drowned_host": {
+   "name": "Drowned Host",
+   "evidence": [
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:elite_draugr": {
+   "name": "Elite Draugr",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:ender_golem": {
+   "name": "Ender Golem",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:ender_guardian": {
+   "name": "Ender Guardian",
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:endermaptera": {
+   "name": "Endermaptera",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:hippocamtus": {
+   "name": "Hippocamtus",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:ignis": {
+   "name": "Ignis",
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:ignited_berserker": {
+   "name": "Ignited Berserker",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:ignited_revenant": {
+   "name": "Ignited Revenant",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:kobolediator": {
+   "name": "Kobolediator",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:koboleton": {
+   "name": "Koboleton",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:lionfish": {
+   "name": "Lionfish",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:maledictus": {
+   "name": "Maledictus",
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:modern_remnant": {
+   "name": "Modern Remnant",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:nameless_sorcerer": {
+   "name": "Nameless Sorcerer(W.I.P)",
+   "evidence": [
+    "egg",
+    "lang"
+   ]
+  },
+  "cataclysm:netherite_ministrosity": {
+   "name": "Netherite Ministrosity",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:netherite_monstrosity": {
+   "name": "Netherite Monstrosity",
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:royal_draugr": {
+   "name": "Royal Draugr",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:scylla": {
+   "name": "Scylla",
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:symbiocto": {
+   "name": "Symbiocto",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:the_baby_leviathan": {
+   "name": "The Baby Leviathan",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "cataclysm:the_harbinger": {
+   "name": "The Harbinger",
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:the_leviathan": {
+   "name": "The Leviathan",
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:the_prowler": {
+   "name": "The Prowler",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:the_watcher": {
+   "name": "The Watcher",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:urchinkin": {
+   "name": "Urchinkin",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "cataclysm:wadjet": {
+   "name": "Wadjet",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  }
+ },
+ "unusable_entities": {
+  "cataclysm:abyss_blast": {
+   "name": "Abyss Blast",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:abyss_blast_portal": {
+   "name": "Abyss Blast Portal",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:abyss_mine": {
+   "name": "Abyss Mine",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:abyss_orb": {
+   "name": "Abyss Orb",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:abyss_portal": {
+   "name": "Abyss Portal",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:amethyst_cluster_projectile": {
+   "name": "Amethyst Cluster",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:ancient_ancient_remnant": {
+   "name": "Ancient Ancient Remnant",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:ancient_desert_stele": {
+   "name": "Ancient Desert Stele",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:ashen_breath": {
+   "name": "Ashen Breath",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:axe_blade": {
+   "name": "Axe Blade",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:bolt_strike": {
+   "name": "Bolt Strike",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:cm_falling_block": {
+   "name": "Cataclysm Falling Block",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:coral_bardiche": {
+   "name": "Coral Bardiche",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:coral_spear": {
+   "name": "Coral Spear",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:death_laser_beam": {
+   "name": "Death Laser Beam",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:dimensional_rift": {
+   "name": "Dimensional Rift",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:earthquake": {
+   "name": "Earthquake",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:ender_guardian_bullet": {
+   "name": "Ender Guardian Bullet",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:flame_jet": {
+   "name": "Flame Jet",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:flame_strike": {
+   "name": "Flame Strike",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:flare_bomb": {
+   "name": "Flare Bomb",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:ignis_abyss_fireball": {
+   "name": "Ignis' Abyss Fireball",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:ignis_fireball": {
+   "name": "Ignis' Fireball",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:laser_beam": {
+   "name": "Laser Beam",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:lava_bomb": {
+   "name": "Lava Bomb",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:lightning_area_effect": {
+   "name": "Lightning Area Effect",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:lightning_spear": {
+   "name": "Lightning Spear",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:lightning_storm": {
+   "name": "Lightning Storm",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:lionfish_spike": {
+   "name": "Lionfish's Spike",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:mini_abyss_blast": {
+   "name": "Mini Abyss Blast",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:octo_ink": {
+   "name": "Octo Ink",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:old_netherite_monstrosity": {
+   "name": "Old Netherite Monstrosity",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:onyx": {
+   "name": "Onyx",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:phantom_arrow": {
+   "name": "Phantom Arrow",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:phantom_halberd": {
+   "name": "Phantom Halberd",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:porta_abyss_blast": {
+   "name": "Abyss Blast",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:portal_abyss_blast": {
+   "name": "Portal's Abyss Blast",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:rage_meter": {
+   "name": "",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:sandstorm": {
+   "name": "Sandstorm",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:sandstorm_projectile": {
+   "name": "Sandstorm Projectile",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:scylla_ceraunus": {
+   "name": "Ceraunus",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:storm_serpent": {
+   "name": "Storm Serpent",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:the_leviathan_immune": {
+   "name": "The Leviathan is invincible outside of water!",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:tidal_hook": {
+   "name": "Tidal Hook",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:tidal_tentacle": {
+   "name": "Tidal Tentacle",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:void_howitzer": {
+   "name": "Void Howitzer",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:void_rune": {
+   "name": "Void Rune",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:void_scatter_arrow": {
+   "name": "Void Scatter Arrow",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:void_shard": {
+   "name": "Void Shard",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:void_vortex": {
+   "name": "Void Vortex",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:water_spear": {
+   "name": "Water Spear",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:wave": {
+   "name": "Wave",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:wither_homing_missile": {
+   "name": "Wither Homing Missile",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:wither_howitzer": {
+   "name": "Wither Howitzer",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:wither_missile": {
+   "name": "Wither Missile",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:wither_smoke_effect": {
+   "name": "Wither Smoke",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "cataclysm:you_cant_escape": {
+   "name": "You can't escape",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  }
+ },
+ "fake_item_ids": [
+  "cataclysm:astrape_throwing",
+  "cataclysm:azure_sea_shield_blocking",
+  "cataclysm:black_steel_targe_blocking",
+  "cataclysm:blazing_bone",
+  "cataclysm:blood_clot",
+  "cataclysm:brontes_throwing",
+  "cataclysm:bulwark_of_the_flame_blocking",
+  "cataclysm:ceraunus_throwing",
+  "cataclysm:coral_bardiche_throwing",
+  "cataclysm:coral_chunk_1",
+  "cataclysm:coral_chunk_2",
+  "cataclysm:coral_chunk_3",
+  "cataclysm:coral_spear_throwing",
+  "cataclysm:meat_shredder_using",
+  "cataclysm:ravenous_fang",
+  "cataclysm:soul_render_blocking",
+  "cataclysm:urchin_spike"
+ ],
+ "verified_items": [
+  "cataclysm:abyss_eye",
+  "cataclysm:abyssal_egg",
+  "cataclysm:abyssal_sacrifice",
+  "cataclysm:altar_of_abyss",
+  "cataclysm:altar_of_amethyst",
+  "cataclysm:altar_of_fire",
+  "cataclysm:altar_of_void",
+  "cataclysm:amethyst_crab_meat",
+  "cataclysm:amethyst_crab_shell",
+  "cataclysm:amethyst_crab_spawn_egg",
+  "cataclysm:ancient_metal_block",
+  "cataclysm:ancient_metal_ingot",
+  "cataclysm:ancient_metal_nugget",
+  "cataclysm:ancient_remnant_spawn_egg",
+  "cataclysm:ancient_spear",
+  "cataclysm:aptrgangr_head",
+  "cataclysm:aptrgangr_spawn_egg",
+  "cataclysm:astrape",
+  "cataclysm:athame",
+  "cataclysm:azure_sea_shield",
+  "cataclysm:azure_seastone",
+  "cataclysm:azure_seastone_brick_slab",
+  "cataclysm:azure_seastone_brick_stairs",
+  "cataclysm:azure_seastone_brick_wall",
+  "cataclysm:azure_seastone_bricks",
+  "cataclysm:azure_seastone_fence",
+  "cataclysm:azure_seastone_mural_cindaria",
+  "cataclysm:azure_seastone_mural_clawdian",
+  "cataclysm:azure_seastone_mural_empty",
+  "cataclysm:azure_seastone_mural_harvest",
+  "cataclysm:azure_seastone_mural_hippocamtus",
+  "cataclysm:azure_seastone_mural_sea",
+  "cataclysm:azure_seastone_mural_smithing",
+  "cataclysm:azure_seastone_mural_thunder",
+  "cataclysm:azure_seastone_mural_underworld",
+  "cataclysm:azure_seastone_mural_urchinkin",
+  "cataclysm:azure_seastone_mural_wisdom",
+  "cataclysm:azure_seastone_pillar",
+  "cataclysm:azure_seastone_pillar_wall",
+  "cataclysm:azure_seastone_slab",
+  "cataclysm:azure_seastone_stairs",
+  "cataclysm:azure_seastone_tiles",
+  "cataclysm:azure_seastone_wall",
+  "cataclysm:belt_of_beginner",
+  "cataclysm:belt_of_monstrosity",
+  "cataclysm:berserker_soul_amulet",
+  "cataclysm:black_steel_axe",
+  "cataclysm:black_steel_block",
+  "cataclysm:black_steel_fence",
+  "cataclysm:black_steel_hoe",
+  "cataclysm:black_steel_ingot",
+  "cataclysm:black_steel_nugget",
+  "cataclysm:black_steel_pickaxe",
+  "cataclysm:black_steel_shovel",
+  "cataclysm:black_steel_sword",
+  "cataclysm:black_steel_targe",
+  "cataclysm:black_steel_wall",
+  "cataclysm:blackstone_pillar",
+  "cataclysm:blazing_grips",
+  "cataclysm:blessed_amethyst_crab_meat",
+  "cataclysm:bloom_stone_pauldrons",
+  "cataclysm:bone_reptile_chestplate",
+  "cataclysm:bone_reptile_helmet",
+  "cataclysm:boss_respawner",
+  "cataclysm:brontes",
+  "cataclysm:bulwark_of_the_flame",
+  "cataclysm:burning_ashes",
+  "cataclysm:ceraunus",
+  "cataclysm:chain_of_soul_binding",
+  "cataclysm:chiseled_azure_seastone",
+  "cataclysm:chiseled_azure_seastone_pillar",
+  "cataclysm:chiseled_azure_seastone_pillar_wall",
+  "cataclysm:chiseled_end_stone_bricks",
+  "cataclysm:chiseled_obsidian_bricks",
+  "cataclysm:chiseled_purpur_block",
+  "cataclysm:chiseled_stone_brick_pillar",
+  "cataclysm:chitin_claw",
+  "cataclysm:chorus_fence",
+  "cataclysm:chorus_planks",
+  "cataclysm:chorus_slab",
+  "cataclysm:chorus_stairs",
+  "cataclysm:chorus_stem",
+  "cataclysm:chorus_trapdoor",
+  "cataclysm:cindaria_spawn_egg",
+  "cataclysm:clawdian_spawn_egg",
+  "cataclysm:coral_bardiche",
+  "cataclysm:coral_chunk",
+  "cataclysm:coral_golem_spawn_egg",
+  "cataclysm:coral_spear",
+  "cataclysm:coralssus_spawn_egg",
+  "cataclysm:crystallized_coral",
+  "cataclysm:crystallized_coral_fragments",
+  "cataclysm:cursed_bow",
+  "cataclysm:cursed_eye",
+  "cataclysm:cursed_tombstone",
+  "cataclysm:cursium_block",
+  "cataclysm:cursium_boots",
+  "cataclysm:cursium_chestplate",
+  "cataclysm:cursium_helmet",
+  "cataclysm:cursium_ingot",
+  "cataclysm:cursium_leggings",
+  "cataclysm:cursium_upgrade_smithing_template",
+  "cataclysm:curved_azure_seastone_cindaria_1",
+  "cataclysm:curved_azure_seastone_cindaria_2",
+  "cataclysm:curved_azure_seastone_cindaria_3",
+  "cataclysm:curved_azure_seastone_cindaria_4",
+  "cataclysm:curved_azure_seastone_clawdian_1",
+  "cataclysm:curved_azure_seastone_clawdian_2",
+  "cataclysm:curved_azure_seastone_clawdian_3",
+  "cataclysm:curved_azure_seastone_clawdian_4",
+  "cataclysm:curved_azure_seastone_hippocamtus_1",
+  "cataclysm:curved_azure_seastone_hippocamtus_2",
+  "cataclysm:curved_azure_seastone_hippocamtus_3",
+  "cataclysm:curved_azure_seastone_hippocamtus_4",
+  "cataclysm:curved_azure_seastone_scylla_1",
+  "cataclysm:curved_azure_seastone_scylla_2",
+  "cataclysm:curved_azure_seastone_scylla_3",
+  "cataclysm:curved_azure_seastone_scylla_4",
+  "cataclysm:curved_azure_seastone_scylla_5",
+  "cataclysm:curved_azure_seastone_scylla_6",
+  "cataclysm:curved_azure_seastone_scylla_7",
+  "cataclysm:curved_azure_seastone_scylla_8",
+  "cataclysm:curved_azure_seastone_scylla_9",
+  "cataclysm:curved_azure_seastone_urchinkin",
+  "cataclysm:deepling_angler_spawn_egg",
+  "cataclysm:deepling_brute_spawn_egg",
+  "cataclysm:deepling_priest_spawn_egg",
+  "cataclysm:deepling_spawn_egg",
+  "cataclysm:deepling_warlock_spawn_egg",
+  "cataclysm:desert_eye",
+  "cataclysm:door_of_seal",
+  "cataclysm:draugr_head",
+  "cataclysm:draugr_spawn_egg",
+  "cataclysm:dungeon_block",
+  "cataclysm:dying_ember",
+  "cataclysm:elite_draugr_spawn_egg",
+  "cataclysm:emp",
+  "cataclysm:end_stone_pillar",
+  "cataclysm:end_stone_teleport_trap_bricks",
+  "cataclysm:ender_golem_spawn_egg",
+  "cataclysm:ender_guardian_spawn_egg",
+  "cataclysm:enderite_block",
+  "cataclysm:enderite_ingot",
+  "cataclysm:endermaptera_spawn_egg",
+  "cataclysm:essence_of_the_storm",
+  "cataclysm:final_fractal",
+  "cataclysm:flame_eye",
+  "cataclysm:frosted_stone_brick_slab",
+  "cataclysm:frosted_stone_brick_stairs",
+  "cataclysm:frosted_stone_brick_wall",
+  "cataclysm:frosted_stone_bricks",
+  "cataclysm:gauntlet_of_bulwark",
+  "cataclysm:gauntlet_of_guard",
+  "cataclysm:gauntlet_of_maelstrom",
+  "cataclysm:goddess_statue",
+  "cataclysm:hippocamtus_spawn_egg",
+  "cataclysm:ignis_spawn_egg",
+  "cataclysm:ignited_berserker_spawn_egg",
+  "cataclysm:ignited_revenant_spawn_egg",
+  "cataclysm:ignitium_block",
+  "cataclysm:ignitium_boots",
+  "cataclysm:ignitium_chestplate",
+  "cataclysm:ignitium_elytra_chestplate",
+  "cataclysm:ignitium_helmet",
+  "cataclysm:ignitium_ingot",
+  "cataclysm:ignitium_leggings",
+  "cataclysm:ignitium_upgrade_smithing_template",
+  "cataclysm:infernal_forge",
+  "cataclysm:khopesh",
+  "cataclysm:kobolediator_skull",
+  "cataclysm:kobolediator_spawn_egg",
+  "cataclysm:koboleton_bone",
+  "cataclysm:koboleton_spawn_egg",
+  "cataclysm:lacrima",
+  "cataclysm:laser_gatling",
+  "cataclysm:lava_power_cell",
+  "cataclysm:lionfish",
+  "cataclysm:lionfish_spawn_egg",
+  "cataclysm:lionfish_spike",
+  "cataclysm:maledictus_spawn_egg",
+  "cataclysm:meat_shredder",
+  "cataclysm:mech_eye",
+  "cataclysm:mechanical_fusion_anvil",
+  "cataclysm:modern_remnant_bucket",
+  "cataclysm:modern_remnant_spawn_egg",
+  "cataclysm:monstrous_eye",
+  "cataclysm:monstrous_helm",
+  "cataclysm:monstrous_horn",
+  "cataclysm:music_disc_ancient_remnant",
+  "cataclysm:music_disc_ender_guardian",
+  "cataclysm:music_disc_ignis",
+  "cataclysm:music_disc_maledictus",
+  "cataclysm:music_disc_netherite_monstrosity",
+  "cataclysm:music_disc_scylla",
+  "cataclysm:music_disc_the_cataclysmfarer",
+  "cataclysm:music_disc_the_harbinger",
+  "cataclysm:music_disc_the_leviathan",
+  "cataclysm:nameless_sorcerer_spawn_egg",
+  "cataclysm:necklace_of_the_desert",
+  "cataclysm:netherite_effigy",
+  "cataclysm:netherite_ministrosity_bucket",
+  "cataclysm:netherite_ministrosity_spawn_egg",
+  "cataclysm:netherite_monstrosity_spawn_egg",
+  "cataclysm:obsidian_brick_slab",
+  "cataclysm:obsidian_brick_stairs",
+  "cataclysm:obsidian_brick_wall",
+  "cataclysm:obsidian_bricks",
+  "cataclysm:obsidian_explosion_trap_bricks",
+  "cataclysm:obsidian_fence",
+  "cataclysm:obsidian_pillar",
+  "cataclysm:octohost_spawn_egg",
+  "cataclysm:pointed_icicle",
+  "cataclysm:polished_azure_seastone",
+  "cataclysm:polished_azure_seastone_slab",
+  "cataclysm:polished_azure_seastone_stairs",
+  "cataclysm:polished_azure_seastone_wall",
+  "cataclysm:polished_end_stone",
+  "cataclysm:polished_end_stone_slab",
+  "cataclysm:polished_end_stone_stairs",
+  "cataclysm:polished_obsidian",
+  "cataclysm:polished_obsidian_slab",
+  "cataclysm:polished_obsidian_stairs",
+  "cataclysm:polished_obsidian_wall",
+  "cataclysm:polished_sandstone",
+  "cataclysm:prismarine_brick_fence",
+  "cataclysm:prismarine_brick_wall",
+  "cataclysm:purpur_tile_pillar",
+  "cataclysm:purpur_tile_slab",
+  "cataclysm:purpur_tile_stairs",
+  "cataclysm:purpur_tile_wall",
+  "cataclysm:purpur_tiles",
+  "cataclysm:purpur_void_rune_trap_block",
+  "cataclysm:purpur_wall",
+  "cataclysm:quartz_brick_wall",
+  "cataclysm:remnant_skull",
+  "cataclysm:ring_of_grudged",
+  "cataclysm:royal_draugr_spawn_egg",
+  "cataclysm:sandstone_falling_trap",
+  "cataclysm:sandstone_ignite_trap",
+  "cataclysm:sandstone_poison_dart_trap",
+  "cataclysm:sandstorm_in_a_bottle",
+  "cataclysm:scylla_spawn_egg",
+  "cataclysm:soul_render",
+  "cataclysm:sticky_gloves",
+  "cataclysm:stone_pillar",
+  "cataclysm:stone_tile_slab",
+  "cataclysm:stone_tile_stairs",
+  "cataclysm:stone_tile_wall",
+  "cataclysm:stone_tiles",
+  "cataclysm:storm_eye",
+  "cataclysm:strange_key",
+  "cataclysm:sturdy_boots",
+  "cataclysm:symbiocto_spawn_egg",
+  "cataclysm:the_annihilator",
+  "cataclysm:the_baby_leviathan_bucket",
+  "cataclysm:the_baby_leviathan_spawn_egg",
+  "cataclysm:the_harbinger_spawn_egg",
+  "cataclysm:the_immolator",
+  "cataclysm:the_incinerator",
+  "cataclysm:the_leviathan_spawn_egg",
+  "cataclysm:the_prowler_spawn_egg",
+  "cataclysm:the_watcher_spawn_egg",
+  "cataclysm:tidal_claws",
+  "cataclysm:unbreakable_skull",
+  "cataclysm:urchinkin_spawn_egg",
+  "cataclysm:vitality_ankh",
+  "cataclysm:void_assault_shoulder_weapon",
+  "cataclysm:void_core",
+  "cataclysm:void_crystal",
+  "cataclysm:void_eye",
+  "cataclysm:void_forge",
+  "cataclysm:void_infused_end_stone_bricks",
+  "cataclysm:void_jaw",
+  "cataclysm:void_lantern_block",
+  "cataclysm:void_purpur_tiles",
+  "cataclysm:void_scatter_arrow",
+  "cataclysm:void_shard",
+  "cataclysm:void_stone",
+  "cataclysm:wadjet_spawn_egg",
+  "cataclysm:wither_assault_shoulder_weapon",
+  "cataclysm:witherite_block",
+  "cataclysm:witherite_ingot",
+  "cataclysm:wrath_of_the_desert",
+  "cataclysm:zweiender"
+ ]
+}

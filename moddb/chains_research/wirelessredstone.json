@@ -1,0 +1,68 @@
+{
+  "mod": "wirelessredstone",
+  "verified_against": "wirelessredstone-forge-1.2.2+1.20.1.jar",
+  "item_count_in_jar": 9,
+  "chain": [
+    {
+      "id": "wirelessredstone:circuit",
+      "title": "Circuit",
+      "desc": "Redstone, glowstone dust, gold, nether quartz and an ender pearl at the centre, for two. Every other item in the mod is built around one of these, so nothing works until you make it."
+    },
+    {
+      "id": "wirelessredstone:redstone_transmitter",
+      "title": "Redstone Transmitter",
+      "desc": "A circuit ringed with iron, redstone and redstone torches. Give a redstone signal to this block and it broadcasts on its frequency - the sending half of every wireless line you build."
+    },
+    {
+      "id": "wirelessredstone:redstone_receiver",
+      "title": "Redstone Receiver",
+      "desc": "The same iron ring, but plain redstone instead of torches. Set it to a frequency and it powers whatever is next to it whenever any transmitter on that frequency fires."
+    },
+    {
+      "id": "wirelessredstone:frequency_tool",
+      "title": "Frequency Tool",
+      "desc": "A comparator, redstone and iron around a circuit. It reads a placed device's frequency and copies it into another, which is how you pair anything without retyping numbers."
+    },
+    {
+      "id": "wirelessredstone:remote",
+      "title": "Remote",
+      "desc": "An ender pearl, two redstone torches and iron around a circuit. Carry it and transmit on a frequency from anywhere - a door, a farm, a lamp, keyed to a button in your inventory."
+    },
+    {
+      "id": "wirelessredstone:p2p_redstone_transmitter",
+      "title": "P2P Redstone Transmitter",
+      "desc": "The transmitter recipe with copper in place of iron. Point-to-point instead of broadcast: it talks to one specific receiver you bind it to, so a crowded base does not need a frequency register."
+    },
+    {
+      "id": "wirelessredstone:p2p_redstone_receiver",
+      "title": "P2P Redstone Receiver",
+      "desc": "Copper, redstone and a circuit. The bound endpoint - a P2P pair ignores every other signal in the world, which is the point of using it over the broadcast version."
+    },
+    {
+      "id": "wirelessredstone:linker",
+      "title": "Linker",
+      "desc": "Two amethyst shards, two redstone torches and iron around a circuit. This is what actually binds a P2P transmitter to its receiver: click one, then the other."
+    },
+    {
+      "id": "wirelessredstone:frequency_sniffer",
+      "title": "Frequency Sniffer",
+      "desc": "Two comparators and four iron around a circuit. Hold it and it shows every frequency in use nearby, which is how you find a free channel or debug a line that stopped working."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "wirelessredstone:circuit",
+      "members": [
+        "wirelessredstone:redstone_transmitter",
+        "wirelessredstone:redstone_receiver",
+        "wirelessredstone:p2p_redstone_transmitter",
+        "wirelessredstone:p2p_redstone_receiver",
+        "wirelessredstone:linker",
+        "wirelessredstone:frequency_tool",
+        "wirelessredstone:frequency_sniffer",
+        "wirelessredstone:remote"
+      ]
+    }
+  ],
+  "notes": "SHORT CHAIN, DECLARED SHORT: this mod registers exactly 9 items and all 9 are in the chain. Nothing is padded. Verified against wirelessredstone-forge-1.2.2+1.20.1.jar: META-INF/mods.toml modId=wirelessredstone, modLoader=javafml, minecraft versionRange [1.20.1,1.20.2) - a closed range that pins it to 1.20.1 exactly - forge [47,), no fabric.mod.json, all 53 sampled class files at major version 61 (Java 17 = 1.20.1). Note this project also publishes Fabric and NeoForge builds of the same version number, so the loader had to be read from the jar rather than the Modrinth label; this file is the artifact whose filename contains 'forge' AND whose META-INF/mods.toml exists. ID DERIVATION, two independent passes, and the naive rule OVERCOUNTS by one. Pass 1 (assets): assets/wirelessredstone/models/item/ holds 10 json files but assets/wirelessredstone/lang/en_us.json yields only 9 real item stems - 5 under item.wirelessredstone.* and 4 under block.wirelessredstone.*. Pass 2 (bytecode, derived without reference to assets): the constant pool of rzk/wirelessredstone/registry/ModItems.class contains the registry names circuit, frequency_sniffer, frequency_tool, linker, remote, and rzk/wirelessredstone/registry/ModBlocks.class contains p2p_redstone_receiver, p2p_redstone_transmitter, redstone_receiver, redstone_transmitter. Five plus four is nine, matching pass 1. FALSE ID CAUGHT AND EXCLUDED: wirelessredstone:remote_on has a models/item file and nothing else - no lang key, no recipe, and the string remote_on appears in no class constant pool in the jar. It is the model the single remote item swaps to while transmitting, the direct analogue of the vanilla lit/unlit override, and asking for it would be an uncompletable quest. The same pattern is visible one level down in assets/wirelessredstone/models/block/, which holds 12 files for only 4 blocks - each block has _off/_on variants and the P2P pair additionally has _linked/_unlinked, so 4 blockstates expand to 12 block models. Blockstate count (4) is the honest number there, and it matches the 4 block lang keys exactly. OBTAINABILITY: all 9 confirmed. Every one of the 9 has a crafting_shaped recipe in data/wirelessredstone/recipes/, and the 4 blocks additionally have loot tables in data/wirelessredstone/loot_tables/blocks/. Nothing was dropped for unobtainability. ORDERING is a hard recipe graph with one root and one layer. wirelessredstone:circuit is the only recipe in the jar built from vanilla materials (redstone, glowstone dust, gold, nether quartz, ender pearl); all EIGHT other recipes list {\"item\":\"wirelessredstone:circuit\"} as a key ingredient, so circuit is mandatory first and every other item is exactly one step behind it. Within that layer the order is by what the second material implies: the iron-framed broadcast pair (transmitter, receiver) comes before the copper-framed P2P pair because P2P is useless until you also have the Linker to bind it, and the linker recipe is the only one demanding amethyst shards. frequency_tool is placed early despite being a utility because the broadcast pair is unusable at any scale without it. CONSENSUS CONFLICT, RECORDED AND OVERRIDDEN: moddb.json lists 5 ids for wirelessredstone and puts wirelessredstone:frequency_sniffer at pos 0.0, first. That is impossible in this jar - data/wirelessredstone/recipes/frequency_sniffer.json requires wirelessredstone:circuit, so the sniffer cannot precede the circuit. Worse, consensus omits wirelessredstone:circuit entirely even though every single recipe in the mod consumes it. This is the same failure mode already recorded elsewhere in this database: a machine ranked ahead of the part it is built from. The graph is preferred throughout. Consensus also omits the whole P2P pair and the linker, all three of which are real and recipe-backed."
+}

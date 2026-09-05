@@ -1,0 +1,128 @@
+{
+ "mod": "mekanismadditions",
+ "verified_against": "MekanismAdditions-1.20.1-10.4.16.80.jar",
+ "item_count_in_jar": 295,
+ "parent_mod": "mekanism",
+ "chain": [
+  {
+   "id": "mekanismadditions:white_plastic",
+   "title": "Sheet Into Block",
+   "desc": "Craft four at a time from four HDPE Sheets around a dye; plastic is what Mekanism's oil chain was always for, and it comes in eighteen colours."
+  },
+  {
+   "id": "mekanismadditions:white_plastic_transparent",
+   "title": "Cast in Clear",
+   "desc": "Craft eight at a time from eight HDPE Sheets around a dye; tinted transparent plastic for windows and machine housings."
+  },
+  {
+   "id": "mekanismadditions:white_plastic_glow",
+   "title": "Plastic That Glows",
+   "desc": "Craft three at a time from three plastic blocks and glowstone dust; a light source with no torch and no flicker."
+  },
+  {
+   "id": "mekanismadditions:white_reinforced_plastic",
+   "title": "Osmium-Reinforced",
+   "desc": "Craft four at a time from four plastic blocks around osmium dust; blast-resistant plastic for anywhere you plan to test explosives."
+  },
+  {
+   "id": "mekanismadditions:white_slick_plastic",
+   "title": "Slick Plastic",
+   "desc": "Craft four at a time from four plastic blocks around a slimeball; near-frictionless, so entities slide across it forever."
+  },
+  {
+   "id": "mekanismadditions:white_plastic_road",
+   "title": "Speed Strip",
+   "desc": "Craft three at a time from slick plastic between rows of sand; walk onto it and you are moving faster than a horse."
+  },
+  {
+   "id": "mekanismadditions:white_glow_panel",
+   "title": "Glow Panel",
+   "desc": "Craft two at a time from glass panes, HDPE Sheets, glowstone dust and a dye; a flat directional lamp that mounts on any face."
+  },
+  {
+   "id": "mekanismadditions:white_balloon",
+   "title": "Tethered Balloon",
+   "desc": "Craft two at a time from leather, string and a dye; tie one to a mob and it floats, or hang a row of them off your base for no reason at all."
+  },
+  {
+   "id": "mekanismadditions:white_plastic_fence",
+   "title": "Plastic Barrier",
+   "desc": "Craft three at a time from plastic blocks and plastic rods; fencing that matches whatever colour the rest of the build is."
+  },
+  {
+   "id": "mekanismadditions:white_plastic_fence_gate",
+   "title": "Plastic Gate",
+   "desc": "Craft from plastic blocks and plastic rods; the matching gate for the barrier."
+  },
+  {
+   "id": "mekanismadditions:obsidian_tnt",
+   "title": "A Bigger Hole",
+   "desc": "Craft from obsidian around three TNT; it blasts through obsidian itself and digs far deeper than vanilla TNT."
+  },
+  {
+   "id": "mekanismadditions:walkie_talkie",
+   "title": "Walkie-Talkie",
+   "desc": "Craft from osmium, steel and a basic control circuit; tune two of them to the same channel and talk across the world."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mekanismadditions:white_plastic",
+   "members": [
+    "mekanismadditions:black_plastic",
+    "mekanismadditions:blue_plastic",
+    "mekanismadditions:brown_plastic",
+    "mekanismadditions:cyan_plastic",
+    "mekanismadditions:gray_plastic",
+    "mekanismadditions:green_plastic",
+    "mekanismadditions:light_blue_plastic",
+    "mekanismadditions:light_gray_plastic",
+    "mekanismadditions:lime_plastic",
+    "mekanismadditions:magenta_plastic",
+    "mekanismadditions:orange_plastic",
+    "mekanismadditions:pink_plastic",
+    "mekanismadditions:purple_plastic",
+    "mekanismadditions:red_plastic"
+   ]
+  },
+  {
+   "hub": "mekanismadditions:white_glow_panel",
+   "members": [
+    "mekanismadditions:black_glow_panel",
+    "mekanismadditions:blue_glow_panel",
+    "mekanismadditions:brown_glow_panel",
+    "mekanismadditions:cyan_glow_panel",
+    "mekanismadditions:gray_glow_panel",
+    "mekanismadditions:green_glow_panel",
+    "mekanismadditions:light_blue_glow_panel",
+    "mekanismadditions:light_gray_glow_panel",
+    "mekanismadditions:lime_glow_panel",
+    "mekanismadditions:magenta_glow_panel",
+    "mekanismadditions:orange_glow_panel",
+    "mekanismadditions:pink_glow_panel",
+    "mekanismadditions:purple_glow_panel",
+    "mekanismadditions:red_glow_panel"
+   ]
+  },
+  {
+   "hub": "mekanismadditions:white_balloon",
+   "members": [
+    "mekanismadditions:black_balloon",
+    "mekanismadditions:blue_balloon",
+    "mekanismadditions:brown_balloon",
+    "mekanismadditions:cyan_balloon",
+    "mekanismadditions:gray_balloon",
+    "mekanismadditions:green_balloon",
+    "mekanismadditions:light_blue_balloon",
+    "mekanismadditions:light_gray_balloon",
+    "mekanismadditions:lime_balloon",
+    "mekanismadditions:magenta_balloon",
+    "mekanismadditions:orange_balloon",
+    "mekanismadditions:pink_balloon",
+    "mekanismadditions:purple_balloon",
+    "mekanismadditions:red_balloon"
+   ]
+  }
+ ],
+ "notes": "Large item count, small quest surface - and this chain says so rather than padding. 295 verified ids sounds enormous but it is 17 decorative block families times 18 colours (16 vanilla dyes plus aqua and dark_red) with almost no mechanics attached. The spine therefore walks one representative colour through each distinct family and the three wheels are used for what wheels are actually good at: collect-them-all colour sets. ASSUMES FROM PARENT (mekanism): HDPE Sheet and plastic rods (the whole oil to polyethylene chain), osmium dust, steel ingots, basic control circuits, and the Painting Machine plus pigments if you want to recolour blocks rather than re-craft them. Nothing here is reachable before the parent's plastic production exists. VERIFICATION: strict model/lang intersection, 295/295 matched, no widening needed. DROPPED BY DESIGN: every _slab, _stairs, _glow_slab, _glow_stairs, _transparent_slab and _transparent_stairs variant - six families times eighteen colours, 108 ids - because slabs, stairs and walls are effectively never worth questing. ALSO DROPPED: the five baby mob spawn eggs (baby_creeper, baby_enderman, baby_skeleton, baby_stray, baby_wither_skeleton) - these are creative-only items with no recipe; the baby mobs they represent spawn naturally, so the entities are reachable but the eggs are not craftable and must not become quest tasks."
+}

@@ -1,0 +1,112 @@
+{
+ "mod": "xercamusic",
+ "verified_against": "xercamusic-1.20.1-1.2.0.jar",
+ "item_count_in_jar": 25,
+ "chain": [
+  {
+   "id": "xercamusic:music_sheet",
+   "title": "Something To Write On",
+   "desc": "Paper, a feather and an ink sac. Every instrument in this mod is silent without a sheet in it, so the sheet is the true root of the whole thing and not the instruments."
+  },
+  {
+   "id": "xercamusic:flute",
+   "title": "Four Sticks",
+   "desc": "Sticks and nothing else. The flute is the cheapest instrument in the mod, which makes it the one you learn the note editor on."
+  },
+  {
+   "id": "xercamusic:lyre",
+   "title": "Sticks And String",
+   "desc": "Sticks and string. The lyre is the second-cheapest and the first thing here that sounds like an instrument rather than a whistle."
+  },
+  {
+   "id": "xercamusic:drum",
+   "title": "Leather Over Wood",
+   "desc": "Leather and planks. Percussion is a separate branch from the strings and the drum is where it starts."
+  },
+  {
+   "id": "xercamusic:cymbal",
+   "title": "Gold And Iron",
+   "desc": "A gold nugget on an iron nugget. The cymbal is the only instrument in the mod that exists mainly to be combined with another one."
+  },
+  {
+   "id": "xercamusic:drum_kit",
+   "title": "The Only Real Craft Chain",
+   "desc": "A cymbal and a drum. This is the ONE recipe in the entire mod that consumes another xercamusic item; everything else is made straight from vanilla materials."
+  },
+  {
+   "id": "xercamusic:guitar",
+   "title": "Oak, Sticks, String",
+   "desc": "The guitar is the mod's signature item and the recipe is the plainest possible reading of one: oak planks for the body, a stick for the neck, string for the strings."
+  },
+  {
+   "id": "xercamusic:violin",
+   "title": "Spruce Instead Of Oak",
+   "desc": "The same shape in spruce. The wood in the recipe is what distinguishes the guitar, the violin, the cello and the banjo from one another."
+  },
+  {
+   "id": "xercamusic:piano",
+   "title": "Iron Nuggets And Planks",
+   "desc": "Iron nuggets, planks and string. The piano is a block rather than a held item and it is the centrepiece of any room built around this mod."
+  },
+  {
+   "id": "xercamusic:saxophone",
+   "title": "All Gold",
+   "desc": "Nine gold nuggets and nothing else. The brass family - saxophone, trumpet, french horn - are pure gold recipes and are the most expensive tier here."
+  },
+  {
+   "id": "xercamusic:organ",
+   "title": "Gold, Planks And String",
+   "desc": "The organ is the largest instrument in the mod and the only one that reads as architecture."
+  },
+  {
+   "id": "xercamusic:music_box",
+   "title": "Play It Back Without You",
+   "desc": "A gold ingot, planks and redstone. The music box plays a written sheet on its own, which is what turns a composition into a build."
+  },
+  {
+   "id": "xercamusic:redstone_guitar",
+   "title": "Wired To The Circuit",
+   "desc": "The guitar recipe plus redstone. The redstone instruments play from a signal rather than from your hands, and there are exactly two of them."
+  },
+  {
+   "id": "xercamusic:redstone_piano",
+   "title": "The Other Half Of The Wiring",
+   "desc": "Planks, string and redstone. Pair it with the redstone guitar and a note sequence and the room plays itself."
+  },
+  {
+   "id": "xercamusic:metronome",
+   "title": "Keeping Time",
+   "desc": "A clock and a note block. The metronome sets tempo for everything else and it is the last thing this mod has to give you."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "xercamusic:guitar",
+   "members": [
+    "xercamusic:banjo",
+    "xercamusic:bass_guitar",
+    "xercamusic:cello",
+    "xercamusic:violin",
+    "xercamusic:lyre",
+    "xercamusic:sansula",
+    "xercamusic:xylophone"
+   ]
+  },
+  {
+   "hub": "xercamusic:saxophone",
+   "members": [
+    "xercamusic:trumpet",
+    "xercamusic:french_horn",
+    "xercamusic:oboe",
+    "xercamusic:tubular_bell",
+    "xercamusic:flute",
+    "xercamusic:organ",
+    "xercamusic:cymbal",
+    "xercamusic:drum",
+    "xercamusic:drum_kit",
+    "xercamusic:piano"
+   ]
+  }
+ ],
+ "notes": "THIS IS A SMALL MOD AND THE CHAIN IS SHORT ON PURPOSE. 25 registered ids, 24 of them obtainable, and 22 of those are instruments built from the same flat vanilla-materials pattern. There is exactly ONE internal recipe dependency in the whole mod (cymbal + drum -> drum_kit), so there is no tech tree to lay out; the chain is 15 steps ordered by recipe cost, and padding it to twenty would mean repeating the wheels. LOADER: META-INF/mods.toml, modId xercamusic, 1.20.1 Forge. The Modrinth project is called 'Music Maker' with slug music-maker-mod - NOT xercamusic, and searching the modid finds nothing. There is a separate neoforge-only project (music-maker-mod-neoforge) which is not this file. VERIFICATION, TWO PASSES: pass A took the 28 assets/xercamusic/models/item stems INTERSECT the item./block. lang keys and gave 24. Pass B independently rebuilt from recipe results, loot-table entry names, blockstates and lang keys and gave 31. All 7 differences resolved. WIDENING ACCEPTED, 1 id: xercamusic:metronome. It is the result of a real crafting_shapeless recipe (a clock and a note block), it has an item model, and it has a block loot table that drops itself - but there is no item.xercamusic.metronome or block.xercamusic.metronome key. The lang file instead carries block.xercamusic.block_metronome = 'Metronome'. That is the inverted-lang case again: the BLOCK registry name is block_metronome while the ITEM is metronome, and a strict model-INTERSECT-lang rule loses it. Final count 25. WIDENING REJECTED: harp_mc, instrument and instrument_string are parent models with zero data references (harp_mc in particular is a texture-variant model, not a harp item - there is no harp in this mod); instrument_gui and item_cello are lang keys for the note editor screen and a duplicate cello label (item.xercamusic.item_cello and item.xercamusic.cello both read 'Cello', and only the latter matches the registered item); block_metronome is the block half of the metronome discussed above. DROPPED AS UNCOMPLETABLE: xercamusic:god, lang name 'Voice of God'. It passes the model-and-lang test but has zero references anywhere in data/ - no recipe, no loot table, no trade. It is a creative-only debug item and appears nowhere in this file. That leaves 24 obtainable ids, of which the chain uses 15 and the two wheels cover all 22 instruments between them. RECIPE GRAPH: banjo is acacia, violin and bass_guitar are spruce, cello is dark oak, guitar and redstone_guitar are oak - the wood species is the whole difference between the string instruments. saxophone, trumpet and french_horn are pure gold nuggets. oboe, piano and sansula use iron nuggets. flute, lyre and xylophone are sticks and string only. There is also one crafting_special_notecloning recipe, a special recipe type with no result id, which copies a written music sheet the way a book-and-quill is copied - worth knowing about but not a quest target. CONSENSUS: moddb.json lists 21 xercamusic ids and every one resolves in this jar. Notably moddb includes xercamusic:metronome, which independently confirms the widening above - packs quest it, so it is a real id despite failing the naive lang test. moddb also includes music_sheet, which agrees with putting the sheet first in the chain. No conflict. DESIRABILITY: nothing dropped for shape; this mod has no ores, nuggets, slabs, stairs or walls."
+}

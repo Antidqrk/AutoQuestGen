@@ -1,0 +1,169 @@
+{
+  "mod": "xkdeco",
+  "verified_against": "XeKr's Decoration-1.20.1-Forge-0.9.6.jar",
+  "item_count_in_jar": 647,
+  "chain": [
+    {
+      "id": "xkdeco:varnished_planks",
+      "title": "Smoke Oak into Varnished Planks",
+      "desc": "Put oak planks in a SMOKER, not a crafting table - that is the whole trick. One plank in, one varnished plank out, and from there a stonecutter turns them into a 34-piece furniture set: tables, chairs, desks, shelves, screens, windows, lattice doors. Make a stack, not one."
+    },
+    {
+      "id": "xkdeco:mud_wall_block",
+      "title": "Ram a Mud Wall Block",
+      "desc": "Clay packed with bone meal, and the cheapest building family in the mod - fourteen rammed-earth blocks including cracked, dirty and straw-lined faces, all reached by stonecutting this one. Good for the outside of a village build before you have anything better."
+    },
+    {
+      "id": "xkdeco:maya_stone",
+      "title": "Mix Maya Stone",
+      "desc": "Granite and andesite in a checker, and the gateway block for the biggest stone set here - 34 Maya pieces plus the 9-piece Aztec set on top of it. Everything downstream comes off a stonecutter, so you only ever need to craft this one."
+    },
+    {
+      "id": "xkdeco:black_tiles",
+      "title": "Fire Black Roof Tiles",
+      "desc": "Terracotta over planks. On its own it is a floor tile, but on a stonecutter it becomes the whole thirteen-piece black roof - ridges, eaves, ends, tips and the oblique decorations. Each of the six tile colours opens its own roof set."
+    },
+    {
+      "id": "xkdeco:black_roof_ridge",
+      "title": "Stonecut a Roof Ridge",
+      "desc": "The spine piece that caps an East-Asian roof, cut from Black Tiles. Placing several in a line makes them join up and change shape on their own; it is also the ingredient for the Roofed Lamp. Cut plenty - a roof eats them."
+    },
+    {
+      "id": "xkdeco:quartz_sand",
+      "title": "Grind Quartz Sand",
+      "desc": "Stonecut from a block of quartz. Smelt it for the mod's clean Quartz Glass, and keep some back - it is half of the recipe for the tougher glass later."
+    },
+    {
+      "id": "xkdeco:steel_block",
+      "title": "Blast Iron into Steel",
+      "desc": "A BLAST FURNACE turns an iron block into a steel block, and steel is the single most productive material in the mod: one block stonecuts into four of any of the twenty steelwork pieces - beams, hollow columns, ladders, trapdoors, air ducts. Bring several."
+    },
+    {
+      "id": "xkdeco:steel_tiles",
+      "title": "Cut Steel Tiles",
+      "desc": "Steel block to steel tiles, one for one, plus the slab and stair versions. The slab is a required ingredient in the Factory Lamp, so cut a few extra rather than only what your floor needs."
+    },
+    {
+      "id": "xkdeco:steel_ladder",
+      "title": "Cut a Steel Ladder",
+      "desc": "One of the twenty steelwork pieces and one of the few that does something rather than sits there - it climbs like a vanilla ladder but attaches to industrial framing. The Safety Ladder version has the hooped cage around it."
+    },
+    {
+      "id": "xkdeco:air_duct",
+      "title": "Run Air Ducts",
+      "desc": "Ventilation piping from the same steel family, with a matching oblique piece for corners. Ducts auto-connect to each other, so a run of them reads as real plumbing across a ceiling."
+    },
+    {
+      "id": "xkdeco:steel_filings",
+      "title": "Shave Steel Filings",
+      "desc": "Stonecut off a steel block. It is not a building block - it exists to be mixed into sand, so only make as many as the glass you actually want."
+    },
+    {
+      "id": "xkdeco:toughened_sand",
+      "title": "Mix Toughened Sand",
+      "desc": "Steel filings shaken into quartz sand, four at a time. Nobody builds with this - it is the furnace feedstock for toughened glass and the step people miss, because the glass has no direct recipe from the filings."
+    },
+    {
+      "id": "xkdeco:toughened_glass",
+      "title": "Smelt Toughened Glass",
+      "desc": "Fire the toughened sand and you get the mod's dark industrial glazing, with its own slab and stair - the glass to use in a factory wall where ordinary panes look wrong. One sand, one pane of glass, so smelt the whole batch."
+    },
+    {
+      "id": "xkdeco:bronze_block",
+      "title": "Alloy a Bronze Block",
+      "desc": "Copper ingots and iron nuggets in a checker gives the mod's own metal, with nine cut, smooth, chiselled and pillar variants behind it on the stonecutter. Warm-toned trim for builds where steel reads too cold."
+    },
+    {
+      "id": "xkdeco:factory_block",
+      "title": "Stamp a Factory Block",
+      "desc": "Stonecut from an IRON BLOCK, nine factory blocks per block of iron. It opens a thirty-piece industrial set: hazard, radiation, biohazard and high-voltage placards, each in clean, rusting and fully rusted states so you can age a building by hand."
+    },
+    {
+      "id": "xkdeco:factory_lamp",
+      "title": "Wire a Factory Lamp",
+      "desc": "Glass panes and glowstone dust around a steel tile slab - the workshop light that matches the factory blocks. It is also a component of the Mechanical Screen, so build one more than you need."
+    },
+    {
+      "id": "xkdeco:tech_screen",
+      "title": "Panel a Tech Screen",
+      "desc": "Six blue stained glass panes. On its own it is just a dark panel; its real job is to be the middle of the Screen Off frame in the next step."
+    },
+    {
+      "id": "xkdeco:screen_off",
+      "title": "Frame a Monitor",
+      "desc": "Iron nuggets around a Tech Screen. This is the hub of the mod's electronics: it is the dark screen, and stonecutting swaps it for any of the eight lit displays - waveforms, DNA, diagrams, transit maps, message boards - and back again. One craft covers the lot."
+    },
+    {
+      "id": "xkdeco:hologram_base",
+      "title": "Stonecut a Hologram Base",
+      "desc": "Cut from a Screen Off, and the projector plinth for five floating holograms - a planet, a DNA helix, a picture reel, a message and the mod's logo. They emit light and animate on their own with no redstone."
+    },
+    {
+      "id": "xkdeco:plain_item_display",
+      "title": "Build an Item Display",
+      "desc": "An item frame on a smooth stone pedestal. Right-click to put ONE item on the stand and it renders in 3D on top - the proper way to show a weapon or a trophy. Stonecut it for the gorgeous, mechanical and tech-styled pedestals; the block display version holds a full block instead."
+    },
+    {
+      "id": "xkdeco:item_projector",
+      "title": "Assemble the Item Projector",
+      "desc": "A spyglass over a Tech Item Display, and the end of the mod's functional line - it projects the item you give it as a glowing hologram above the pedestal. The one build in XeKr's Decoration that is genuinely a machine rather than a shape."
+    }
+  ],
+  "collections": [
+    {
+      "name": "Furniture Woods",
+      "desc": "Three furniture woods, each SMOKED from a vanilla wood (oak, dark oak, mangrove) at log, wood and plank level, and each plank opening a 34-piece set on the stonecutter: tables, stools, desks, shelves, screens, windows, dougong brackets, lattice doors.",
+      "hub": "xkdeco:varnished_planks",
+      "members": [
+        "xkdeco:ebony_planks",
+        "xkdeco:mahogany_planks",
+        "xkdeco:varnished_log",
+        "xkdeco:ebony_log",
+        "xkdeco:mahogany_log",
+        "xkdeco:varnished_wood",
+        "xkdeco:ebony_wood",
+        "xkdeco:mahogany_wood"
+      ]
+    },
+    {
+      "name": "Roof Tiles",
+      "desc": "Six colours of tile, each crafted from matching terracotta over planks, each stonecutting into its own thirteen-piece roof.",
+      "hub": "xkdeco:black_tiles",
+      "members": ["xkdeco:blue_tiles", "xkdeco:cyan_tiles", "xkdeco:green_tiles", "xkdeco:red_tiles", "xkdeco:yellow_tiles"]
+    },
+    {
+      "name": "Greek Columns",
+      "desc": "Nine Doric, Ionic and Corinthian pieces, all stonecut straight from a vanilla Quartz Pillar with no xkdeco craft in front of them - the cheapest set in the mod to start. Roman columns come off the Stone Brick Pillar and Egyptian off the Sandstone Pillar the same way.",
+      "hub": "xkdeco:greek_column",
+      "members": [
+        "xkdeco:greek_doric_column_head",
+        "xkdeco:greek_ionic_column_base",
+        "xkdeco:greek_ionic_column_head",
+        "xkdeco:greek_ionic_column_head_corner",
+        "xkdeco:greek_corinthian_column_base",
+        "xkdeco:greek_corinthian_column_head",
+        "xkdeco:greek_moulding",
+        "xkdeco:greek_moulding2"
+      ]
+    },
+    {
+      "name": "Item Displays",
+      "desc": "Four pedestal styles for items; the plain one is the only craft, the rest are stonecutter exchanges from it and back. The Tech version is what the Item Projector is built on.",
+      "hub": "xkdeco:plain_item_display",
+      "members": ["xkdeco:gorgeous_item_display", "xkdeco:mechanical_item_display", "xkdeco:tech_item_display", "xkdeco:plain_block_display", "xkdeco:gorgeous_block_display", "xkdeco:mechanical_block_display", "xkdeco:tech_block_display"]
+    },
+    {
+      "name": "Wall Screens",
+      "desc": "One craft, nine faces. Screen Off is the dark panel; stonecutting exchanges it for any of the eight lit animations and back again, so you never need to craft a second.",
+      "hub": "xkdeco:screen_off",
+      "members": ["xkdeco:screen_wave", "xkdeco:screen_dna", "xkdeco:screen_diagram", "xkdeco:screen_list", "xkdeco:screen_message", "xkdeco:screen_cube", "xkdeco:screen_transport", "xkdeco:screen_three_bodies"]
+    },
+    {
+      "name": "Holograms",
+      "desc": "Five floating projections, all stonecut off the Hologram Base. They light and animate with no redstone.",
+      "hub": "xkdeco:hologram_base",
+      "members": ["xkdeco:hologram_planet", "xkdeco:hologram_dna", "xkdeco:hologram_pictures", "xkdeco:hologram_message", "xkdeco:hologram_xekr_logo"]
+    }
+  ],
+  "notes": "THE STONECUTTER IS THIS MOD'S ENTIRE PROGRESSION AND A GENERATOR THAT ONLY READS data/xkdeco/recipes WILL GET IT WRONG. There are 647 blocks in assets/xkdeco_extra/lang/en_us.json but only 293 recipe files covering 284 distinct results, so a naive recipe scan concludes that 363 blocks are uncraftable. They are not. assets/xkdeco/kiwi/family/*.yaml (75 files) each declare 'stonecutter_exchange: true' plus either 'stonecutter_from: <block>' (with an optional stonecutter_from_multiplier) or 'exchange_inputs_in_viewer: <block>', and Kiwi generates the stonecutter recipes at runtime from those. Resolving the families against the recipe results leaves only SEVEN unobtainable blocks in the whole jar: xkdeco:crossed_mud_wall_block and the six wardrobes (xkdeco:varnished_wardrobe, xkdeco:ebony_wardrobe, xkdeco:mahogany_wardrobe, xkdeco:iron_wardrobe, xkdeco:glass_wardrobe, xkdeco:full_glass_wardrobe). THE WARDROBES ARE THE TRAP: they have lang names, blockstates, models and a working WardrobeBlock + WardrobeBlockEntity, but they belong to NO family and have NO recipe in 0.9.6, so they are creative-only. Never emit a wardrobe as a task. THE FAMILY ENTRY POINTS, verbatim from the yaml, are the reason the chain is short: steelwork <- xkdeco:steel_block x4 (20 blocks); factory_block <- minecraft:iron_block x9 (30 blocks); steel_tiles <- xkdeco:steel_block; each roof <- its own xkdeco tiles; maya <- xkdeco:maya_stone (34); aztec <- xkdeco:maya_stone; inca <- xkdeco:inca_stone; mud_wall <- xkdeco:mud_wall_block (14); the three plank families <- their own planks (34 each); hologram <- xkdeco:hologram_base; screen <- xkdeco:screen_off; item_display and block_display <- their plain versions; roman <- xkdeco:stone_brick_pillar; egyptian <- xkdeco:sandstone_pillar; tech_table <- xkdeco:tech_table; and a long list straight off VANILLA blocks with no xkdeco craft needed at all - greek <- minecraft:quartz_pillar, dark_stone handrails <- stone_bricks, light_stone handrails <- polished_diorite, glass_tiles <- glass, willow_leaves <- oak_leaves, the three porcelains <- white / light_blue / lime glazed terracotta, cut_obsidian <- obsidian, gold_block family <- gold_block x4, tech_lamp_block <- sea_lantern x4, factory_lamp_block <- glowstone x4, plus cobblestone, sandstone, red_sandstone, deepslate, blackstone, gilded_blackstone and crying_obsidian sets. THE TWO NON-OBVIOUS CRAFTS worth teaching a player, both of which look like bugs if you do not know them: the three furniture woods come from SMOKING vanilla wood in a smoker (minecraft:smoking, oak -> varnished, dark oak -> ebony, mangrove -> mahogany, at log, wood and plank level), and steel comes from BLASTING an iron block (minecraft:blasting, minecraft:iron_block -> xkdeco:steel_block). Both are cooking recipes, not crafting-table recipes. xkdeco:mimic_wall IS DELIBERATELY NOT IN THE CHAIN: it is a dynamic block whose lang key is the format string 'Mimic %s' in assets/xkdeco/lang/en_us.json, produced by a custom recipe type xkdeco:mimic_wall (data/xkdeco/recipes/mimic_wall.json, 'another': glass_pane) that copies the appearance of whatever wall you combine with a pane. It carries NBT, so a plain item task on xkdeco:mimic_wall would likely never match a player's stack. THERE ARE ZERO ITEMS: not one item.xkdeco.* key exists in either lang file - every id in this mod is a block. There is also no worldgen, no loot beyond 642 self-drop block tables, no entities, and all 296 files in data/xkdeco/advancements are auto-generated recipe unlocks with no display block, so advancements were NOT usable as an ordering source; the chain order is derived from the family graph plus the material each entry point costs. item_count_in_jar 647 = block.xkdeco.* keys in assets/xkdeco_extra/lang/en_us.json (the main assets/xkdeco/lang/en_us.json holds only 2 keys, both for the mimic wall - a scanner that reads only the primary lang file will think this mod is empty). Ships builder rules for roofs (replace_in_hand / cycle_property) that let you reshape a placed roof by clicking it. Depends on Kiwi; has optional integration with diagonalwalls. Appears in 1 of the 6 measured packs. VERIFIER PASS: all 21 chain ids and all 45 collection ids re-read out of assets/xkdeco_extra/lang/en_us.json, assets/xkdeco/models/item/ and assets/xkdeco/blockstates/ - every one present, no wardrobe and no mimic_wall emitted. ONE REAL ORDERING DEFECT WAS FOUND AND FIXED: the chain went steel_filings -> toughened_glass, but data/xkdeco/recipes/toughened_glass.json is minecraft:smelting with ingredient xkdeco:toughened_sand, and data/xkdeco/recipes/toughened_sand.json is the shapeless steel_filings + quartz_sand -> 4 toughened_sand. There is NO recipe anywhere that turns filings into glass directly, so the old step 12 was unreachable from step 11 and the intermediate xkdeco:toughened_sand is now its own step. Also corrected: screen_off's desc claimed 'all nine animated wall displays' - assets/xkdeco/kiwi/family/screen.yaml holds nine blocks INCLUDING screen_off itself, so there are eight lit animations plus the dark panel. Both remaining desc claims that reach outside their own step were checked and hold: data/xkdeco/recipes/roofed_lamp.json really does take xkdeco:black_roof_ridge, and data/xkdeco/recipes/mechanical_screen.json really does take xkdeco:factory_lamp. Family multipliers re-read and correct: steelwork 20 blocks from steel_block x4, factory_block 30 blocks from minecraft:iron_block x9, maya 34, aztec 9, mud_wall 14, black_roof 13, hologram 5, item_display 4, block_display 4, greek 9, roman 17, egyptian 18. The collections were rewritten into the {hub, members} shape the loader actually reads (_load_researched_collections wants hub/members and drops any wheel under 4 members): the 3-member Wood Sets grew into a 9-member Furniture Woods wheel with the verified log and wood forms (xkdeco:varnished_log/_wood, ebony, mahogany, all results of real minecraft:smoking recipes), the 3-member Classical Columns was replaced by a 9-member Greek Columns wheel taken verbatim from greek.yaml, and Screens and Holograms was split into two wheels because they have different stonecutter roots."
+}

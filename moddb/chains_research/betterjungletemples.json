@@ -1,0 +1,14 @@
+{
+  "mod": "betterjungletemples",
+  "verified_against": "YungsBetterJungleTemples-1.20-Forge-2.0.5.jar",
+  "item_count_in_jar": 0,
+  "chain": [
+    {
+      "id": "structure:betterjungletemples:jungle_temple",
+      "title": "The Temple in the Vines",
+      "desc": "The mod's whole content: one rebuilt jungle temple placed on #minecraft:has_structure/jungle_temple, so it lands exactly where the vanilla one would. A campsite chest, a treasure chest of diamonds, emeralds and gold, and a suspicious-sand archaeology table that yields an emerald."
+    }
+  ],
+  "collections": [],
+  "notes": "SHORT ON PURPOSE - ONE STRUCTURE, NO ITEMS, so one entry and no padding. THE MOD ID IS betterjungletemples, NOT yungsbetterjungletemples (META-INF/mods.toml: modId betterjungletemples, version 1.20-Forge-2.0.5, minecraft [1.20,1.21), forge [46.0.2,), no fabric.mod.json). assets/betterjungletemples/ has no models/item, no blockstates and no item./block. keys, so item_count_in_jar is 0 and collections is empty. CONTENT: one structure, data/betterjungletemples/worldgen/structure/jungle_temple.json, type yungsapi:yung_jigsaw, step surface_structures, built from 69 nbt pieces across structures/entrance, floor_1, floor_2, challenge_room, stairs, props, misc and mod_integration. PLACEMENT IS NOTABLE: its biomes field is the vanilla tag #minecraft:has_structure/jungle_temple rather than a biome list, which means it inherits the vanilla jungle temple's exact placement rules - so it substitutes for the vanilla temple instead of adding a second destination. LOOT: 3 tables, and the nbt walk resolved ALL THREE directly out of the raw NBT - chests/campsite (saddle, iron/gold/diamond horse armour, bamboo), chests/treasure (diamond, emerald, gold_ingot) and archaeology/emerald, which is a 1.20 suspicious-block table whose single entry is minecraft:emerald. That archaeology table is the reason this structure is worth the trip on 1.20.1 specifically: brushing is the only way to reach it. NOTE THE LOADER THRESHOLD: _load_researched_chains keeps curated chains of 4+ rows, so this one-row file will be skipped by that path; structure_quests() still reads the id from the jar scan and this file is the loot record. No kill: entries (no entity lang keys, no spawn overrides on the structure). No dim: entries. ID FORM: 'structure:' + fully namespaced. Requires yungsapi. data/morevillagers/tags in the jar is compat, not content."
+}

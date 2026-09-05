@@ -1,0 +1,39 @@
+{
+ "mod": "supplementaries",
+ "ids_in_jar": 253,
+ "installed_in_pack": true,
+ "videos": [],
+ "items": {},
+ "structures_in_jar": [
+  "supplementaries:way_sign"
+ ],
+ "structures": {},
+ "no_video_evidence": "transcription did not complete for this mod; human_notes below are jar-derived only",
+ "human_notes": {
+  "order": [
+   "[jar] There is no progression spine. supplementaries is a wide, flat pile of small utilities and decorations, all craftable from ordinary early-game materials.",
+   "[jar] the genuinely FUNCTIONAL items, which are what a quest should target rather than the colour variants: supplementaries:sack (portable storage), supplementaries:safe (locked storage, paired with supplementaries:key), supplementaries:quiver, supplementaries:rope and supplementaries:rope_arrow (traversal), supplementaries:slingshot, supplementaries:pedestal, supplementaries:item_shelf, supplementaries:notice_board, supplementaries:hourglass, supplementaries:clock_block, supplementaries:altimeter, supplementaries:cannon with supplementaries:cannonball, supplementaries:bomb, supplementaries:spring_launcher, supplementaries:turn_table, supplementaries:crank, supplementaries:speaker_block, supplementaries:bellows, supplementaries:blackboard, supplementaries:cage, supplementaries:jar, supplementaries:planter, supplementaries:faucet, supplementaries:soap.",
+   "[jar] supplementaries:sign_post and supplementaries:wind_vane are the signature 'village character' pieces; supplementaries:globe is the trophy-grade one."
+  ],
+  "gates": [
+   "[jar] Nothing hard. supplementaries:flax and supplementaries:flax_block are the one small crop chain, feeding rope.",
+   "[jar] supplementaries:ash / supplementaries:ash_brick come from burning things, which is the only real 'unlock' in the mod."
+  ],
+  "structures": [
+   "[jar] supplementaries:way_sign - roadside signposts that generate in the world pointing at villages. The mod's only worldgen."
+  ],
+  "traps": [
+   "[jar] The id list is dominated by colour variants - 16 awnings, 16 buntings, 16 flags, 17 candle holders, 15 presents and 14 trapped presents. Quest generation MUST filter these or the questline becomes a colour swatch. Target the base id (supplementaries:awning, supplementaries:bunting, supplementaries:present) and ignore the _colour suffixes.",
+   "NOT VERIFIED BY VIDEO: transcription did not reach this mod."
+  ],
+  "signature": [
+   "supplementaries:sack",
+   "supplementaries:safe",
+   "supplementaries:sign_post",
+   "supplementaries:globe",
+   "supplementaries:cannon",
+   "supplementaries:rope",
+   "supplementaries:hourglass"
+  ]
+ }
+}

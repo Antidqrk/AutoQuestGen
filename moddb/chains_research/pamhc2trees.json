@@ -1,0 +1,153 @@
+{
+  "mod": "pamhc2trees",
+  "verified_against": "pamhc2trees-1.20-1.0.2.jar",
+  "item_count_in_jar": 157,
+  "chain": [
+    {
+      "id": "pamhc2trees:cherryitem",
+      "title": "Fruit in the Canopy",
+      "desc": "Wild fruit blocks grow on trees in forests - cherry, pear, peach, walnut and more. Break a fully ripe one (it visibly fills out) to get the fruit; unripe blocks drop nothing, and the fruit regrows if you leave the block alone."
+    },
+    {
+      "id": "pamhc2trees:cherry_sapling",
+      "title": "Plant Your Own Orchard",
+      "desc": "Eight of any one fruit plus ANY vanilla sapling craft into that fruit's sapling. One good wild harvest converts into a permanent tree - this recipe is the entire domestication loop of the mod."
+    },
+    {
+      "id": "pamhc2trees:walnutitem",
+      "title": "Go Nutting",
+      "desc": "Forests also carry nut trees: walnut, chestnut, hazelnut, acorn. Nuts roll into the forge:nuts tag, which means cooking oil for the kitchen mods - an orchard doubles as an oil well."
+    },
+    {
+      "id": "pamhc2trees:roastedwalnutitem",
+      "title": "Roast the Harvest",
+      "desc": "Every nut smelts, smokes or campfire-cooks into a roasted version with better food value. No kitchen tools needed - furnace snacking straight off the tree."
+    },
+    {
+      "id": "pamhc2trees:lemonitem",
+      "title": "Pick a Lemon",
+      "desc": "Citrus starts in forests with lemon and orange. Lemons feed candied lemon, lemonade-adjacent drinks and a pile of Extended dessert recipes - one tree covers you forever."
+    },
+    {
+      "id": "pamhc2trees:avocadoitem",
+      "title": "Avocado",
+      "desc": "Another forest find. Grab eight and make the sapling - avocado toast and burritos in the Extended pack want a steady supply, and wild trees are too scattered to rely on."
+    },
+    {
+      "id": "pamhc2trees:coconutitem",
+      "title": "Head for the Palms",
+      "desc": "The second tree family lives in warm, wet biomes - jungles and lush regions. Coconut is its flagship: curry, chocolate bars and island desserts all pull from it."
+    },
+    {
+      "id": "pamhc2trees:bananaitem",
+      "title": "Bananas",
+      "desc": "From the same wet-biome trees. Bananas star in a whole Extended line - banana bread, banana split, banana jelly - so this is one of the first tropical saplings worth mass-planting."
+    },
+    {
+      "id": "pamhc2trees:mangoitem",
+      "title": "Mango",
+      "desc": "Wet-biome fruit needed for mango chutney, which in turn gates the deluxe curry - one of the deepest recipes in the whole HarvestCraft suite. Plant it before you need it."
+    },
+    {
+      "id": "pamhc2trees:dragonfruititem",
+      "title": "Dragonfruit",
+      "desc": "The showiest of the tropical fruits, with its own jelly, juice and pie line. Like all fruit here, eight of them plus any sapling brings the tree home."
+    },
+    {
+      "id": "pamhc2trees:pinenutitem",
+      "title": "Cold-Climate Pines",
+      "desc": "The third tree family grows in coniferous biomes: pinenut trees hide among the spruces. Pinenuts roast like other nuts and mark the biome where the real prize grows..."
+    },
+    {
+      "id": "pamhc2trees:maplesyrupitem",
+      "title": "Tap the Maple",
+      "desc": "Maple trees in coniferous biomes carry fruit LOGS instead of fruit - break a ripe one for maple syrup. Syrup sweetens pancakes, waffles, sausage and oatmeal across the Extended pack."
+    },
+    {
+      "id": "pamhc2trees:maple_sapling",
+      "title": "A Sugarbush of Your Own",
+      "desc": "Eight maple syrup plus any sapling. Expensive - but it turns a lucky taiga find into an infinite syrup farm, and syrup-hungry recipes never stop coming."
+    },
+    {
+      "id": "pamhc2trees:cinnamonitem",
+      "title": "Strip Cinnamon Bark",
+      "desc": "Cinnamon is another fruit-log tree, from warm wet biomes. Ground cinnamon (Extended's grinder recipe) goes into curry powder, cinnamon rolls and chai - a spice tree, not a snack tree."
+    },
+    {
+      "id": "pamhc2trees:peppercornitem",
+      "title": "Peppercorns",
+      "desc": "Wet-biome tree fruit that exists to be ground into black pepper. Salt you can boil from water; pepper you must grow. Together they season half the gourmet recipes in Extended."
+    },
+    {
+      "id": "pamhc2trees:vanillabeanitem",
+      "title": "Vanilla Beans",
+      "desc": "A wet-biome tree whose pods flavor ice creams, custards and cakes downstream. One of those ingredients you only notice when a recipe stops you cold - plant it preemptively."
+    },
+    {
+      "id": "pamhc2trees:oliveitem",
+      "title": "Olives",
+      "desc": "Mediterranean staple from wet-biome trees - eaten straight or feeding salad and pasta recipes. Rounds out a pantry that now spans four biome families."
+    },
+    {
+      "id": "pamhc2trees:spiderweb_sapling",
+      "title": "The Spiderweb Tree",
+      "desc": "The mod's oddity: a tree whose fruit blocks yield STRING when ripe. The sapling costs eight string plus any sapling - plant one and your farm literally grows bowstring. A fitting final flex for a tree farmer."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "pamhc2trees:roastedalmonditem",
+      "members": [
+        "pamhc2trees:roastedacornitem",
+        "pamhc2trees:roastedcashewitem",
+        "pamhc2trees:roastedchestnutitem",
+        "pamhc2trees:roastedhazelnutitem",
+        "pamhc2trees:roastedpecanitem",
+        "pamhc2trees:roastedpinenutitem",
+        "pamhc2trees:roastedpistachioitem"
+      ]
+    },
+    {
+      "hub": "pamhc2trees:pearitem",
+      "members": [
+        "pamhc2trees:peachitem",
+        "pamhc2trees:plumitem",
+        "pamhc2trees:orangeitem",
+        "pamhc2trees:gooseberryitem",
+        "pamhc2trees:pawpawitem",
+        "pamhc2trees:soursopitem",
+        "pamhc2trees:nutmegitem",
+        "pamhc2trees:candlenutitem",
+        "pamhc2trees:chestnutitem",
+        "pamhc2trees:hazelnutitem",
+        "pamhc2trees:acornitem"
+      ]
+    },
+    {
+      "hub": "pamhc2trees:papayaitem",
+      "members": [
+        "pamhc2trees:passionfruititem",
+        "pamhc2trees:jackfruititem",
+        "pamhc2trees:durianitem",
+        "pamhc2trees:lycheeitem",
+        "pamhc2trees:rambutanitem",
+        "pamhc2trees:starfruititem",
+        "pamhc2trees:tamarinditem",
+        "pamhc2trees:guavaitem",
+        "pamhc2trees:figitem",
+        "pamhc2trees:dateitem",
+        "pamhc2trees:grapefruititem",
+        "pamhc2trees:limeitem",
+        "pamhc2trees:pomegranateitem",
+        "pamhc2trees:persimmonitem",
+        "pamhc2trees:breadfruititem",
+        "pamhc2trees:cashewitem",
+        "pamhc2trees:pistachioitem",
+        "pamhc2trees:almonditem",
+        "pamhc2trees:apricotitem",
+        "pamhc2trees:pecanitem"
+      ]
+    }
+  ],
+  "notes": "Verified against pamhc2trees-1.20-1.0.2.jar found in the GayChaseyPacxk instance: 157 lang keys, item registry names cross-checked against com/pam/pamhc2trees/init/ItemRegistration.class bytecode strings, loot tables and all sapling recipes read. Three biome families via forge biome_modifiers: minecraft:is_forest (acorn, apple, avocado, candlenut, cherry, chestnut, gooseberry, hazelnut, lemon, nutmeg, orange, pawpaw, peach, pear, plum, soursop, spiderweb, walnut), forge:is_wet (almond, apricot, banana, breadfruit, cashew, cinnamon, coconut, date, dragonfruit, durian, fig, grapefruit, guava, jackfruit, lime, lychee, mango, olive, papaya, paperbark, passionfruit, peppercorn, persimmon, pistachio, pomegranate, rambutan, starfruit, tamarind, vanillabean), forge:is_coniferous (maple, pinenut). Fruit blocks drop their item only at age=7 (block loot table condition) and drop the block itself when sheared. Every sapling = 8x fruit + any minecraft:saplings tag member. IMPORTANT ID TRAP: the maple item's registry name is maplesyrupitem (confirmed in ItemRegistration.class, item model, loot table and maple_sapling recipe) even though the lang file carries a stale item.pamhc2trees.mapleitem key - and there is NO pamhc2trees:appleitem in the registry (apple trees use minecraft:apple; the lang key is vestigial). spiderweb fruit drops minecraft:string; spiderweb_sapling costs 8 string. Roasted nuts are plain smelting/smoking/campfire recipes."
+}

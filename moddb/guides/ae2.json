@@ -1,0 +1,945 @@
+{
+ "mod": "ae2",
+ "ids_in_jar": 379,
+ "videos": [
+  {
+   "id": "J8zRYlmlDII",
+   "title": "Teaching 95% of AE2 in under 15 minutes.. oh boy | MC 1.20.1",
+   "channel": "IHelpYa",
+   "views": 638637,
+   "duration": 840,
+   "chars": 16585
+  },
+  {
+   "id": "3htUhkDYbJ8",
+   "title": "Applied Energistics 2 [AE2] - A Complete Guide & Mod Showcase  - All The Mods 10",
+   "channel": "BucketSt",
+   "views": 343122,
+   "duration": 1906,
+   "chars": 41558
+  },
+  {
+   "id": "ay0Js2TkI1E",
+   "title": "Guide to New Applied Energistics 2 from Simple to Advanced",
+   "channel": "ChosenArchitect",
+   "views": 1097157,
+   "duration": 3478,
+   "chars": 56805
+  },
+  {
+   "id": "xSatDAXRvNk",
+   "title": "Applied Energistics 2 Guide (AE2) From Basic To Advanced!",
+   "channel": "Pilpoh",
+   "views": 76406,
+   "duration": 3578,
+   "chars": 49114
+  },
+  {
+   "id": "Ole8af59zKg",
+   "title": "The Ultimate Guide to Applied Energistics 2 - Minecraft 1.20 - 1.21",
+   "channel": "JaviHerobrine",
+   "views": 39918,
+   "duration": 5096,
+   "chars": 63783
+  }
+ ],
+ "not_transcribed": [],
+ "items": {
+  "ae2:terminal": {
+   "mentions": 108,
+   "videos": 5,
+   "first_at": 0.2014,
+   "praise": 24,
+   "warn": 2,
+   "early_cue": 8,
+   "late_cue": 1
+  },
+  "ae2:controller": {
+   "mentions": 90,
+   "videos": 5,
+   "first_at": 0.0605,
+   "praise": 26,
+   "warn": 0,
+   "early_cue": 4,
+   "late_cue": 1
+  },
+  "ae2:molecular_assembler": {
+   "mentions": 36,
+   "videos": 5,
+   "first_at": 0.5009,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:storage_bus": {
+   "mentions": 50,
+   "videos": 4,
+   "first_at": 0.2045,
+   "praise": 8,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 3
+  },
+  "ae2:import_bus": {
+   "mentions": 31,
+   "videos": 4,
+   "first_at": 0.5634,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:export_bus": {
+   "mentions": 24,
+   "videos": 4,
+   "first_at": 0.4408,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "ae2:energy_acceptor": {
+   "mentions": 18,
+   "videos": 4,
+   "first_at": 0.3116,
+   "praise": 4,
+   "warn": 1,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "ae2:quartz_fiber": {
+   "mentions": 8,
+   "videos": 4,
+   "first_at": 0.611,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "ae2:pattern_provider": {
+   "mentions": 50,
+   "videos": 3,
+   "first_at": 0.4619,
+   "praise": 17,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 1
+  },
+  "ae2:drive": {
+   "mentions": 30,
+   "videos": 3,
+   "first_at": 0.504,
+   "praise": 8,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:crafting_terminal": {
+   "mentions": 20,
+   "videos": 3,
+   "first_at": 0.2992,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "ae2:interface": {
+   "mentions": 18,
+   "videos": 3,
+   "first_at": 0.2171,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:guide": {
+   "mentions": 16,
+   "videos": 3,
+   "first_at": 0.0168,
+   "praise": 7,
+   "warn": 1,
+   "early_cue": 5,
+   "late_cue": 0
+  },
+  "ae2:inscriber": {
+   "mentions": 16,
+   "videos": 3,
+   "first_at": 0.3739,
+   "praise": 9,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 3
+  },
+  "ae2:singularity": {
+   "mentions": 13,
+   "videos": 3,
+   "first_at": 0.798,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:quartz_block": {
+   "mentions": 13,
+   "videos": 3,
+   "first_at": 0.2493,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "ae2:processing_pattern": {
+   "mentions": 9,
+   "videos": 3,
+   "first_at": 0.5108,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:speed_card": {
+   "mentions": 7,
+   "videos": 3,
+   "first_at": 0.4186,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "ae2:mysterious_cube": {
+   "mentions": 6,
+   "videos": 3,
+   "first_at": 0.0363,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:meteorite_compass": {
+   "mentions": 4,
+   "videos": 3,
+   "first_at": 0.03,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "ae2:memory_card": {
+   "mentions": 3,
+   "videos": 3,
+   "first_at": 0.8624,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:logic_processor": {
+   "mentions": 12,
+   "videos": 2,
+   "first_at": 0.2599,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 1
+  },
+  "ae2:energy_cell": {
+   "mentions": 10,
+   "videos": 2,
+   "first_at": 0.4566,
+   "praise": 1,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:wireless_access_point": {
+   "mentions": 10,
+   "videos": 2,
+   "first_at": 0.8181,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:io_port": {
+   "mentions": 7,
+   "videos": 2,
+   "first_at": 0.3467,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:growth_accelerator": {
+   "mentions": 7,
+   "videos": 2,
+   "first_at": 0.4156,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:quantum_ring": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.7522,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:condenser": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.7971,
+   "praise": 2,
+   "warn": 4,
+   "early_cue": 4,
+   "late_cue": 0
+  },
+  "ae2:wireless_crafting_terminal": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.8145,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:creative_energy_cell": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.4568,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:tiny_tnt": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.8117,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:charger": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.3614,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "ae2:paint": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.5231,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:cable_anchor": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.5501,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:level_emitter": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.8748,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:silicon": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.5872,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "ae2:sky_stone_block": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.035,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:engineering_processor": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.5448,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:formation_core": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.5249,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "ae2:capacity_card": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.4101,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:pattern_access_terminal": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.5647,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:fuzzy_card": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.6113,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:quartz_cluster": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.4157,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "ae2:annihilation_plane": {
+   "mentions": 10,
+   "videos": 1,
+   "first_at": 0.406,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:chest": {
+   "mentions": 9,
+   "videos": 1,
+   "first_at": 0.063,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:formation_plane": {
+   "mentions": 7,
+   "videos": 1,
+   "first_at": 0.7994,
+   "praise": 13,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "ae2:ender_dust": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.8828,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:calculation_processor": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.3334,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "ae2:color_applicator": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.226,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:quantum_link": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7253,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:toggle_bus": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.78,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:quantum_entangled_singularity": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7288,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:quartz_glass": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.122,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:monitor": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6912,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "ae2:spatial_io_port": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7918,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:storage_monitor": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6912,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "ae2:energy_card": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7774,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:inverter_card": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2944,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:redstone_card": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7912,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:fluix_covered_cable": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0621,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:vibration_chamber": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2847,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:equal_distribution_card": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2485,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:pattern_encoding_terminal": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4974,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:crafting_card": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3383,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:spatial_anchor": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7484,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:silicon_press": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9593,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:wireless_booster": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7151,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:crafting_accelerator": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4368,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:void_card": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.261,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:fluix_smart_cable": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.844,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:fluix_crystal": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7062,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:crafting_monitor": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.691,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "ae2:stonecutting_pattern": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6146,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:printed_silicon": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2149,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:wireless_terminal": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9357,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:crafting_unit": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6438,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:me_p2p_tunnel": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9866,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ae2:logic_processor_press": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0649,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "AE2 does not start at a crafting bench, it starts at WORLDGEN. Every guide's first instruction is to go find a meteorite, and the meteorite compass is the tool for it.",
+    "ids": [
+     "ae2:meteorite_compass",
+     "ae2:mysterious_cube",
+     "ae2:certus_quartz_crystal",
+     "ae2:charged_certus_quartz_crystal"
+    ]
+   },
+   {
+    "note": "The presses inside the mysterious cube are the real prize of the meteorite - they are not craftable and everything downstream needs them.",
+    "ids": [
+     "ae2:silicon_press",
+     "ae2:logic_processor_press",
+     "ae2:calculation_processor_press",
+     "ae2:engineering_processor_press",
+     "ae2:inscriber"
+    ]
+   },
+   {
+    "note": "Certus growth is set up before any network: budding blocks plus growth accelerators are the sustainable supply.",
+    "ids": [
+     "ae2:flawless_budding_quartz",
+     "ae2:growth_accelerator",
+     "ae2:certus_quartz_crystal",
+     "ae2:fluix_crystal"
+    ]
+   },
+   {
+    "note": "First actual network is a tiny fixed shape: controller + drive + terminal, powered through an energy acceptor.",
+    "ids": [
+     "ae2:controller",
+     "ae2:drive",
+     "ae2:terminal",
+     "ae2:energy_acceptor",
+     "ae2:energy_cell",
+     "ae2:charger"
+    ]
+   },
+   {
+    "note": "Storage bus is taught immediately after the first terminal - it is how existing chests get absorbed into the network.",
+    "ids": [
+     "ae2:storage_bus",
+     "ae2:import_bus",
+     "ae2:export_bus",
+     "ae2:interface"
+    ]
+   },
+   {
+    "note": "Autocrafting comes last and is a MULTIBLOCK, not a machine: crafting unit plus storage plus co-processing, fed by pattern providers into molecular assemblers.",
+    "ids": [
+     "ae2:crafting_unit",
+     "ae2:1k_crafting_storage",
+     "ae2:crafting_accelerator",
+     "ae2:pattern_provider",
+     "ae2:molecular_assembler",
+     "ae2:crafting_terminal"
+    ]
+   }
+  ],
+  "tiers": [
+   {
+    "note": "Storage cell ladder 1k -> 4k -> 16k -> 64k -> 256k, mirrored for fluids. This is the mod's main sink for resources.",
+    "ids": [
+     "ae2:item_storage_cell_1k",
+     "ae2:item_storage_cell_4k",
+     "ae2:item_storage_cell_16k",
+     "ae2:item_storage_cell_64k",
+     "ae2:item_storage_cell_256k",
+     "ae2:fluid_storage_cell_1k",
+     "ae2:fluid_storage_cell_4k",
+     "ae2:fluid_storage_cell_16k",
+     "ae2:fluid_storage_cell_64k",
+     "ae2:fluid_storage_cell_256k"
+    ]
+   },
+   {
+    "note": "Crafting storage ladder 1k -> 4k -> 16k -> 64k -> 256k governs how many parallel crafts a CPU can hold.",
+    "ids": [
+     "ae2:1k_crafting_storage",
+     "ae2:4k_crafting_storage",
+     "ae2:16k_crafting_storage",
+     "ae2:64k_crafting_storage",
+     "ae2:256k_crafting_storage"
+    ]
+   },
+   {
+    "note": "Processor ladder: printed part -> finished processor, in three flavours, all through the inscriber.",
+    "ids": [
+     "ae2:printed_logic_processor",
+     "ae2:printed_calculation_processor",
+     "ae2:printed_engineering_processor",
+     "ae2:logic_processor",
+     "ae2:calculation_processor",
+     "ae2:engineering_processor",
+     "ae2:printed_silicon"
+    ]
+   },
+   {
+    "note": "Terminal ladder ends in wireless: terminal -> crafting terminal -> wireless terminal via access point.",
+    "ids": [
+     "ae2:terminal",
+     "ae2:crafting_terminal",
+     "ae2:wireless_terminal",
+     "ae2:wireless_crafting_terminal",
+     "ae2:wireless_access_point",
+     "ae2:wireless_booster"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "CHANNELS are the mod's defining constraint and the thing guides spend the most effort explaining. One channel per device is the rule that shapes every build.",
+    "ids": [
+     "ae2:controller",
+     "ae2:quartz_fiber",
+     "ae2:cable_bus"
+    ]
+   },
+   {
+    "note": "Only ONE controller may exist per network, and controller size is what raises the channel ceiling - so the controller is a hard architectural gate, not an upgrade.",
+    "ids": [
+     "ae2:controller"
+    ]
+   },
+   {
+    "note": "Presses are meteorite-only. Without finding worldgen there is no processor line and therefore no autocrafting at all.",
+    "ids": [
+     "ae2:mysterious_cube",
+     "ae2:silicon_press",
+     "ae2:logic_processor_press"
+    ]
+   },
+   {
+    "note": "Co-processing units gate parallel crafting; without one the pattern provider cannot reach the assembler.",
+    "ids": [
+     "ae2:crafting_accelerator",
+     "ae2:molecular_assembler",
+     "ae2:pattern_provider"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "The single most repeated warning in AE2 guides: never break the flawless budding block, it is the only renewable certus source and degrades permanently.",
+    "ids": [
+     "ae2:flawless_budding_quartz",
+     "ae2:flawed_budding_quartz",
+     "ae2:chipped_budding_quartz",
+     "ae2:damaged_budding_quartz"
+    ]
+   },
+   {
+    "note": "Condenser draws warnings as a resource sink that mostly voids items; it collected the highest warn score in the corpus.",
+    "ids": [
+     "ae2:condenser",
+     "ae2:singularity"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "The ME terminal and controller ARE the mod to these guides - highest mention counts in the entire corpus and taught within the first 6% of runtime.",
+    "ids": [
+     "ae2:terminal",
+     "ae2:controller",
+     "ae2:drive",
+     "ae2:storage_bus"
+    ]
+   },
+   {
+    "note": "Autocrafting is repeatedly called the reason to choose AE2 over any other storage mod.",
+    "ids": [
+     "ae2:molecular_assembler",
+     "ae2:pattern_provider",
+     "ae2:crafting_terminal",
+     "ae2:pattern_encoding_terminal"
+    ]
+   },
+   {
+    "note": "Endgame showpieces: quantum ring network bridge and spatial IO.",
+    "ids": [
+     "ae2:quantum_ring",
+     "ae2:quantum_link",
+     "ae2:quantum_entangled_singularity",
+     "ae2:spatial_io_port",
+     "ae2:spatial_pylon"
+    ]
+   }
+  ]
+ },
+ "transcript_profile": "whisper small, vad, beam 1, WITH the legacy Minecraft-vocabulary initial_prompt that was later removed from ytgrab as biasing. Counts may be slightly inflated toward mod-name-like words; human_notes quotes were read directly and are unaffected."
+}

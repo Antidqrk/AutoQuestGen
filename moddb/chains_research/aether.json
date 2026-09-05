@@ -1,0 +1,176 @@
+{
+  "mod": "aether",
+  "verified_against": "aether-1.20.1-1.5.2-neoforge.jar",
+  "item_count_in_jar": 284,
+  "chain": [
+    {
+      "id": "dim:aether:the_aether",
+      "title": "Water Poured Into Light",
+      "desc": "Reached by building a nether-portal-shaped frame out of glowstone and pouring a water bucket into it, as the mod's own tip line states."
+    },
+    {
+      "id": "aether:skyroot_log",
+      "title": "First Cut in the Clouds",
+      "desc": "Chopped from the skyroot trees that cover the floating islands, and it is the source of every skyroot plank, stick and starter tool."
+    },
+    {
+      "id": "aether:holystone",
+      "title": "The Bones of the Islands",
+      "desc": "Mined from under the Aether grass layer; the mod describes it as the Aether's native rock and it substitutes for cobblestone in tool recipes."
+    },
+    {
+      "id": "aether:holystone_pickaxe",
+      "title": "Chalk-White Bite",
+      "desc": "Crafted from holystone and skyroot sticks, and it is the first pickaxe capable of mining zanite and icestone."
+    },
+    {
+      "id": "aether:ambrosium_shard",
+      "title": "Coal That Heals",
+      "desc": "Smelted or blasted from Ambrosium Ore; it fuels the Altar and restores a little health when eaten."
+    },
+    {
+      "id": "aether:zanite_gemstone",
+      "title": "Violet in the Stone",
+      "desc": "Smelted or blasted from Zanite Ore, the Aether's iron equivalent, whose tools get stronger as their durability drops."
+    },
+    {
+      "id": "aether:altar",
+      "title": "The Enchanting Slab",
+      "desc": "Crafted from holystone and a zanite gemstone, powered by Ambrosium Shards, and used for every enchanting recipe in the mod as well as armour repair."
+    },
+    {
+      "id": "aether:zanite_pickaxe",
+      "title": "Sharper With Every Swing",
+      "desc": "Crafted from zanite gemstones and skyroot sticks; it is the tier required to mine Gravitite Ore and Golden Oak Logs."
+    },
+    {
+      "id": "aether:zanite_chestplate",
+      "title": "Purple Plate for the Descent",
+      "desc": "Crafted from zanite gemstones, and it is the realistic armour tier for a first Bronze Dungeon attempt."
+    },
+    {
+      "id": "aether:golden_amber",
+      "title": "Sap of the Golden Oak",
+      "desc": "Drops when Golden Oak Logs are mined with a zanite or gravitite axe, and it is the ammunition base for darts and dart shooters."
+    },
+    {
+      "id": "aether:golden_dart_shooter",
+      "title": "A Reach Advantage",
+      "desc": "Crafted from golden amber and skyroot planks, giving the ranged option that Zephyrs and Cockatrices demand."
+    },
+    {
+      "id": "kill:aether:slider",
+      "title": "The Stone That Charges",
+      "desc": "The Bronze Dungeon boss, a four-hundred-health block of living stone found in dungeons buried inside the islands, and it can only be hurt by pickaxes."
+    },
+    {
+      "id": "aether:bronze_dungeon_key",
+      "title": "A Dull Prize",
+      "desc": "Dropped by the Slider along with carved stone, and it unlocks the Bronze Dungeon's locked reward chest."
+    },
+    {
+      "id": "aether:sentry_boots",
+      "title": "Landing Without Consequence",
+      "desc": "Bronze Dungeon treasure loot; wearing them removes fall damage, which matters enormously on floating islands."
+    },
+    {
+      "id": "aether:victory_medal",
+      "title": "Proof You Beat a Knight",
+      "desc": "Dropped by lesser Valkyries when defeated, and the item's own lore says a pile of them is what proves you worthy of fighting the Valkyrie Queen."
+    },
+    {
+      "id": "kill:aether:valkyrie_queen",
+      "title": "Audience With the Sky Warrior",
+      "desc": "The Silver Dungeon boss, who only accepts a duel once you hand her enough Victory Medals."
+    },
+    {
+      "id": "aether:silver_dungeon_key",
+      "title": "The Reflective Key",
+      "desc": "Given by the Valkyrie Queen after her defeat, and it opens the Silver Dungeon's treasure room."
+    },
+    {
+      "id": "aether:valkyrie_chestplate",
+      "title": "Borrowed Wings of the Order",
+      "desc": "Found in the Valkyrie armour chests inside the Silver Dungeon, alongside the matching valkyrie tools and lance."
+    },
+    {
+      "id": "aether:gravitite_ore",
+      "title": "The Ore That Falls Upward",
+      "desc": "The Aether's rarest ore; it floats when unsupported and also appears in Silver Dungeon gravitite chests."
+    },
+    {
+      "id": "aether:enchanted_gravitite",
+      "title": "Charged on the Altar",
+      "desc": "Made by enchanting Gravitite Ore in an Altar, and it is the only material accepted by gravitite tool and armour recipes."
+    },
+    {
+      "id": "aether:gravitite_chestplate",
+      "title": "The Set That Launches You",
+      "desc": "Crafted from Enchanted Gravitite; wearing the full set grants an extra high jump, and it is the mod's best craftable armour."
+    },
+    {
+      "id": "kill:aether:sun_spirit",
+      "title": "Arguing With a Star",
+      "desc": "The Gold Dungeon boss, a being of pure fire and energy who guards the rarest treasure in the Aether."
+    },
+    {
+      "id": "aether:gold_dungeon_key",
+      "title": "Shine on the Last Lock",
+      "desc": "Dropped by the Sun Spirit together with the Sun Altar, and it opens the Gold Dungeon's back treasure room."
+    },
+    {
+      "id": "aether:phoenix_chestplate",
+      "title": "Cinders You Can Wear",
+      "desc": "Gold Dungeon treasure; the full set grants fire resistance and lava swimming, but stepping into water converts it into the obsidian set."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "aether:altar",
+      "members": [
+        "aether:enchanted_gravitite",
+        "aether:healing_stone",
+        "aether:quicksoil_glass",
+        "aether:enchanted_berry",
+        "aether:enchanted_dart_shooter"
+      ]
+    },
+    {
+      "hub": "aether:zanite_gemstone",
+      "members": [
+        "aether:zanite_pickaxe",
+        "aether:zanite_axe",
+        "aether:zanite_shovel",
+        "aether:zanite_hoe",
+        "aether:zanite_sword",
+        "aether:zanite_helmet",
+        "aether:zanite_chestplate",
+        "aether:zanite_leggings",
+        "aether:zanite_boots",
+        "aether:zanite_gloves",
+        "aether:zanite_ring",
+        "aether:zanite_pendant"
+      ]
+    },
+    {
+      "hub": "aether:life_shard",
+      "members": [
+        "aether:hammer_of_kingbdogz",
+        "aether:valkyrie_lance",
+        "aether:phoenix_bow",
+        "aether:cloud_staff",
+        "aether:flaming_sword",
+        "aether:holy_sword",
+        "aether:lightning_sword",
+        "aether:vampire_blade",
+        "aether:pig_slayer",
+        "aether:shield_of_repulsion",
+        "aether:invisibility_cloak",
+        "aether:regeneration_stone",
+        "aether:iron_bubble",
+        "aether:agility_cape"
+      ]
+    }
+  ],
+  "notes": "Item set = 284 stems of assets/aether/models/item/*.json intersected with item./block. keys across every assets/*/lang/en_us.json in the jar; every id above is a member of that set. Only one dimension file exists (data/aether/dimension/the_aether.json), so dim:aether:the_aether is the sole dimension milestone. Portal method taken from the jar's own tip string aether.pro_tips.line.aether.glowstone_portal_forming: 'Place water into a Glowstone frame'. Boss and key wiring verified from loot tables: entities/slider.json drops aether:bronze_dungeon_key, entities/valkyrie_queen.json drops aether:silver_dungeon_key, entities/sun_spirit.json drops aether:gold_dungeon_key plus aether:sun_altar, entities/valkyrie.json drops aether:victory_medal. Armour placement verified from chests/dungeon/bronze/bronze_dungeon_neptune.json (neptune set), chests/dungeon/silver/silver_dungeon_valkyrie.json (valkyrie set), chests/dungeon/gold/gold_dungeon_treasure.json (phoenix set + life shard). All three kill: entity ids exist as entity.aether.* lang keys (slider, valkyrie_queen, sun_spirit). DROPPED: aether:aether_portal_frame was considered as the opening step but the item's own lore says it is 'Not something you're likely to find naturally' and it has no recipe or loot entry - it is only granted by the optional config option aether.common.gameplay.start_with_portal, so a glowstone-and-water dim: step is used instead. Also dropped: aether:obsidian_chestplate and the rest of the obsidian set, because they have no recipe and are produced only by a runtime conversion of worn phoenix armour in water, which no quest task can reliably check; aether:aether_portal, aether:frosted_ice and aether:unstable_obsidian, which have lang keys but no item model and are therefore not items; and the 260-odd *_trim glove model variants, which have item models but no lang key of their own. Structures present: bronze_dungeon, silver_dungeon, gold_dungeon, large_aercloud. Note that this Modrinth build is published for both the forge and neoforge loaders under one file."
+}

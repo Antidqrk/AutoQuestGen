@@ -1,0 +1,182 @@
+{
+ "mod": "create_sa",
+ "verified_against": "create-stuff-additions1.20.1_v2.1.2.jar",
+ "item_count_in_jar": 80,
+ "chain": [
+  {
+   "id": "create_sa:zinc_handle",
+   "title": "A Grip Worth Keeping",
+   "desc": "Two zinc ingots stacked give two handles. Every high-tier tool the mod makes is built on one of these instead of a plain stick."
+  },
+  {
+   "id": "create_sa:copper_pickaxe",
+   "title": "Filling the Gap",
+   "desc": "Copper ingots on wooden rods. Base Minecraft never gave copper a tool tier; this mod does, and zinc and brass follow the same pattern."
+  },
+  {
+   "id": "create_sa:copper_helmet",
+   "title": "Green at the Edges",
+   "desc": "Five copper ingots. The lightest of the mod's three metal armour sets, and the one you can afford before the first ore-washing line runs."
+  },
+  {
+   "id": "create_sa:heat_engine",
+   "title": "The Little Furnace",
+   "desc": "Andesite alloy through a sequenced assembly of deploying and pressing. Burns fuel inside wearable gear so the jetpack and flamethrower have something to run on."
+  },
+  {
+   "id": "create_sa:hydraulic_engine",
+   "title": "Pressure Instead of Fire",
+   "desc": "Copper plates sequenced with water filling and pressing. The water-driven counterpart to the heat engine, and the heart of the copper gear line."
+  },
+  {
+   "id": "create_sa:steam_engine",
+   "title": "Both at Once",
+   "desc": "Brass plates sequenced with cogwheels, a propeller and pressing. The top engine, drawing on fuel and water together for the brass tier of gear."
+  },
+  {
+   "id": "create_sa:small_fueling_tank",
+   "title": "Carrying Your Own Coal",
+   "desc": "A Create fluid tank inside obsidian plates. Right-click lava to fill it, then it refuels any worn gadget automatically instead of by hand."
+  },
+  {
+   "id": "create_sa:small_filling_tank",
+   "title": "Carrying Your Own Water",
+   "desc": "One Create fluid tank, reshaped. Right-click water to fill it; the copper gear line runs on water pressure and this keeps it topped up."
+  },
+  {
+   "id": "create_sa:andesite_jetpack_chestplate",
+   "title": "Leaving the Ground",
+   "desc": "Mechanical crafting: encased fans, belt connectors, cogwheels and a heat engine. Burns fuel to fly, hover, swim faster and outrun anything on foot."
+  },
+  {
+   "id": "create_sa:brass_drone_item",
+   "title": "Something Else Does the Walking",
+   "desc": "Mechanical crafting from propellers, a redstone link, a precision mechanism and andesite alloy. A flying servant that carries modules and obeys a controller."
+  },
+  {
+   "id": "create_sa:drone_controller",
+   "title": "The Other End of the Link",
+   "desc": "A Create linked controller ringed with brass. Steers the drone at range, adjusts how far it will wander, and switches its modules on and off."
+  },
+  {
+   "id": "create_sa:fan_component",
+   "title": "Wind on a Drone",
+   "desc": "Zinc ingots and andesite alloy around a propeller. Slotted into a drone it becomes the Fan Module, pushing entities and items where you point it."
+  },
+  {
+   "id": "create_sa:vault_component",
+   "title": "Cargo Hold",
+   "desc": "One Create item vault, taken apart. As the drone's Vault Module it gives the machine an inventory, so it can fetch and carry rather than just hover."
+  },
+  {
+   "id": "create_sa:copper_magnet",
+   "title": "Everything Comes To You",
+   "desc": "Eight copper ingots around a netherite ingot. Attracts items and entities within four blocks, and doubles as the drone's Magnet Module."
+  },
+  {
+   "id": "create_sa:brass_cube",
+   "title": "The Brass Twin",
+   "desc": "The magnet's recipe in brass: eight brass ingots around a netherite ingot. Deploys as its own entity rather than sitting in a slot."
+  },
+  {
+   "id": "create_sa:block_picker",
+   "title": "Lifting What You Point At",
+   "desc": "Copper ingots, cogwheels, a hydraulic engine and a copper magnet. A gravity gun in all but name, toggled on and off with a right-click."
+  },
+  {
+   "id": "create_sa:brass_drill_head",
+   "title": "Teeth for the Drill",
+   "desc": "A brass pickaxe surrounded by andesite alloy and brass ingots. Not a tool on its own; it is the business end of the machine that follows."
+  },
+  {
+   "id": "create_sa:portable_drill",
+   "title": "Three by Three",
+   "desc": "A drill head, a steam engine, cogwheels and brass. Chews through nearly any block, takes only the Digging enchantment, and eats fuel and water as it goes."
+  },
+  {
+   "id": "create_sa:grapplin_whisk",
+   "title": "Swinging Between Trees",
+   "desc": "Mechanical crafting: a Create whisk, minecart couplings, a heat engine, cogwheels and zinc. Wear slime boots with it, or the landing decides the outcome."
+  },
+  {
+   "id": "create_sa:flamethrower",
+   "title": "A Furnace You Carry",
+   "desc": "Mechanical crafting from a blaze burner, a heat engine, obsidian plates and andesite alloy. Sets fire to everything, and smelts items dropped into the flame."
+  },
+  {
+   "id": "create_sa:heap_of_experience",
+   "title": "Levels Made Solid",
+   "desc": "Four Create experience nuggets pressed together. Raw stored knowledge, and the only thing the mod's self-consuming tool line is built from."
+  },
+  {
+   "id": "create_sa:experience_pickaxe",
+   "title": "It Pays As It Dies",
+   "desc": "Three heaps of experience on a zinc handle. Every swing wears the tool down a little and occasionally coughs up an orb of XP in return."
+  },
+  {
+   "id": "create_sa:rose_quartz_pickaxe",
+   "title": "Gilded and Sharp",
+   "desc": "Mechanical crafting: polished rose quartz, gold, iron plates and a zinc handle. The mod's showpiece tier, built on Create's own gemstone line."
+  },
+  {
+   "id": "create_sa:blazing_pickaxe",
+   "title": "Too Hot to Break",
+   "desc": "A golden pickaxe mixed hot with powdered obsidian. Smelts whatever it mines and takes no damage at all while you are in the Nether."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "create_sa:copper_pickaxe",
+   "members": [
+    "create_sa:copper_sword",
+    "create_sa:copper_axe",
+    "create_sa:copper_shovel",
+    "create_sa:copper_hoe",
+    "create_sa:zinc_pickaxe",
+    "create_sa:zinc_sword",
+    "create_sa:zinc_axe",
+    "create_sa:zinc_shovel",
+    "create_sa:zinc_hoe",
+    "create_sa:brass_pickaxe",
+    "create_sa:brass_sword",
+    "create_sa:brass_axe",
+    "create_sa:brass_shovel",
+    "create_sa:brass_hoe"
+   ]
+  },
+  {
+   "hub": "create_sa:copper_helmet",
+   "members": [
+    "create_sa:copper_chestplate",
+    "create_sa:copper_leggings",
+    "create_sa:copper_boots",
+    "create_sa:zinc_helmet",
+    "create_sa:zinc_chestplate",
+    "create_sa:zinc_leggings",
+    "create_sa:zinc_boots",
+    "create_sa:brass_helmet",
+    "create_sa:brass_chestplate",
+    "create_sa:brass_leggings",
+    "create_sa:brass_boots",
+    "create_sa:slime_helmet",
+    "create_sa:slime_boots"
+   ]
+  },
+  {
+   "hub": "create_sa:andesite_jetpack_chestplate",
+   "members": [
+    "create_sa:copper_jetpack_chestplate",
+    "create_sa:brass_jetpack_chestplate",
+    "create_sa:netherite_jetpack_chestplate",
+    "create_sa:andesite_exoskeleton_chestplate",
+    "create_sa:copper_exoskeleton_chestplate",
+    "create_sa:brass_exoskeleton_chestplate",
+    "create_sa:medium_fueling_tank",
+    "create_sa:large_fueling_tank",
+    "create_sa:medium_filling_tank",
+    "create_sa:large_filling_tank"
+   ]
+  }
+ ],
+ "notes": "Create Stuff and Additions is a gear-and-gadget addon; it adds no processing machines and re-teaches nothing. Base-Create dependencies derived from the recipes: create:andesite_alloy, create:cogwheel, create:large_cogwheel, create:belt_connector, create:encased_fan, create:propeller, create:fluid_tank, create:item_vault, create:blaze_burner, create:precision_mechanism, create:redstone_link, create:linked_controller, create:minecart_coupling, create:whisk, create:polished_rose_quartz, create:powdered_obsidian, create:experience_nugget, and the forge tags plates/copper, plates/brass, plates/iron, plates/obsidian, ingots/copper, ingots/zinc, ingots/brass, storage_blocks/copper, storage_blocks/brass. A sequenced-assembly line (depot, deployer, press, spout) is mandatory: all three engines are create:sequenced_assembly, and mechanical crafters are mandatory for the jetpacks, exoskeletons, drone, flamethrower, grapplin whisk and the rose quartz tools. THE REAL SPINE, from the recipe graph: zinc_handle and the metal tool tiers are the cheap opening, then the three ENGINES gate everything else - heat_engine (fuel) feeds andesite gear, hydraulic_engine (water) feeds copper gear, steam_engine (fuel plus water) feeds brass gear. The fueling and filling tanks exist purely to recharge those, per the in-jar item_desc strings. DISCOVERY worth recording: create_sa:fan_component, :vault_component, :copper_magnet and :brass_cube read as loose components but the lang file names them as DRONE MODULES - entity.create_sa.fan_module, entity.create_sa.magnet_module, gui.create_sa.vault_module_gui and entity.create_sa.brass_cube_r. They are slotted into create_sa:brass_drone_item, so the chain places the drone and its controller before all four rather than treating them as unrelated crafting components. moddb consensus places fan_component 0.072 and vault_component 0.101 far ahead of brass_drone_item 0.177, which reads them as generic parts; the recipe graph and the drone GUI strings say otherwise, and the graph was preferred. ORDERING CONFLICTS vs moddb consensus (26 entries, ALL 26 id-verified, none renamed or impossible): (1) create_sa:brass_drill_head sits at 0.318 but its recipe consumes a create_sa:brass_pickaxe, and no brass tool appears in the consensus list at all. (2) create_sa:blazing_pickaxe 0.167, :blazing_axe 0.289 and :blazing_cleaver 0.294 are placed early, but all four blazing tools are a heated create:mixing of a GOLDEN tool with create:powdered_obsidian, which needs a working mixer with a heat source - later than the consensus suggests. (3) create_sa:heat_engine 0.240 is placed after create_sa:steam_engine 0.202, but the two are independent sequenced assemblies off andesite alloy and brass plates respectively; the chain orders them andesite, copper, brass by material cost instead. Consensus positions retained: zinc_handle 0.104, small_filling_tank 0.109, small_fueling_tank 0.267, heap_of_experience 0.246, hydraulic_engine 0.321, andesite_jetpack_chestplate 0.331 (12 packs, the single most-quested item in the mod) and rose_quartz_shovel 0.335. DROPPED - valid ids with no recipe anywhere: create_sa:creative_filling_tank (creative-only), :flamethrower_pr and :flamethrower_pr_2 and :propeller_render_prop (render props, not real gear), and the five sequenced-assembly transitional items :incomplete_heat_engine, :incomplete_hydraulic_engine, :incomplete_steam_engine, :incomplete_book and :incomplete_web. create_sa:chains is a valid id with no recipe and no derivable source in this jar, so it was dropped too. VALID BUT UNUSED for length: the nine remaining specialty tools (create_sa:experience_axe, :experience_shovel, :experience_sword, :rose_quartz_axe, :rose_quartz_shovel, :rose_quartz_sword, :blazing_axe, :blazing_shovel, :blazing_cleaver) - one pickaxe of each family is on the spine and the siblings share its recipe shape exactly, so they would be a fourth wheel if the limit allowed. The jar also ships several recipes that produce only vanilla or base-Create outputs and so contributed no ids: coral revival by filling with create:potion, iron-to-chainmail armour by create:haunting, obsidian to crying obsidian, cobblestone to netherrack, flint plus lava to deepslate, sponge wetting and drying, quartz crushing to create:experience_nugget, and item_vault round-tripping through :vault_component."
+}

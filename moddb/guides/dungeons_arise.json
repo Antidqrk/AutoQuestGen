@@ -1,0 +1,80 @@
+{
+ "mod": "dungeons_arise",
+ "ids_in_jar": 0,
+ "installed_in_pack": false,
+ "videos": [],
+ "items": {},
+ "id_source": "NOT in the CREATE FEMBY instance. Ids verified against a reference 1.20.1 Forge jar taken from another instance on this machine - correct for the mod, but they will not resolve in this pack until the mod is added.",
+ "structures_in_jar": [
+  "dungeons_arise:abandoned_temple",
+  "dungeons_arise:aviary",
+  "dungeons_arise:bandit_towers",
+  "dungeons_arise:bandit_village",
+  "dungeons_arise:bathhouse",
+  "dungeons_arise:ceryneian_hind",
+  "dungeons_arise:coliseum",
+  "dungeons_arise:fishing_hut",
+  "dungeons_arise:foundry",
+  "dungeons_arise:giant_mushroom",
+  "dungeons_arise:greenwood_pub",
+  "dungeons_arise:heavenly_challenger",
+  "dungeons_arise:heavenly_conqueror",
+  "dungeons_arise:heavenly_rider",
+  "dungeons_arise:illager_campsite",
+  "dungeons_arise:illager_corsair",
+  "dungeons_arise:illager_fort",
+  "dungeons_arise:illager_galley",
+  "dungeons_arise:illager_windmill",
+  "dungeons_arise:infested_temple",
+  "dungeons_arise:jungle_tree_house",
+  "dungeons_arise:keep_kayra",
+  "dungeons_arise:lighthouse",
+  "dungeons_arise:mechanical_nest",
+  "dungeons_arise:merchant_campsite",
+  "dungeons_arise:mining_system",
+  "dungeons_arise:monastery",
+  "dungeons_arise:mushroom_house",
+  "dungeons_arise:mushroom_mines",
+  "dungeons_arise:mushroom_village",
+  "dungeons_arise:plague_asylum",
+  "dungeons_arise:scorched_mines",
+  "dungeons_arise:shiraz_palace",
+  "dungeons_arise:small_blimp",
+  "dungeons_arise:small_prairie_house",
+  "dungeons_arise:thornborn_towers",
+  "dungeons_arise:typhon",
+  "dungeons_arise:undead_pirate_ship",
+  "dungeons_arise:wishing_well"
+ ],
+ "structures": {},
+ "no_video_evidence": "transcription did not complete for this mod; human_notes below are jar-derived only",
+ "human_notes": {
+  "order": [
+   "[jar] There is no item ladder to order. dungeons_arise registers ZERO items and ZERO blocks - 39 structures and 171 chest loot tables, nothing else. Any quest for this mod is 'go to this place', never 'craft this thing'."
+  ],
+  "gates": [
+   "[jar] The only real gate is gear tier, and it is legible from the loot: the iron/chainmail structures are safe at early-game kit, the netherite/totem structures are not."
+  ],
+  "structures": [
+   "[jar] TOP TIER, netherite and totems in the chests, treat as end-game destinations: dungeons_arise:shiraz_palace (netherite_scrap x4, netherite_boots, 6x diamond armour pieces - the richest in the mod), dungeons_arise:heavenly_challenger, dungeons_arise:heavenly_conqueror, dungeons_arise:heavenly_rider (all three carry totem_of_undying, enchanted_golden_apple and netherite_scrap), dungeons_arise:aviary (netherite_ingot, enchanted_golden_apple, full diamond kit), dungeons_arise:keep_kayra (diamond armour x4-5 plus 7 enchanted books).",
+   "[jar] STRONG MID TIER, diamond and enchanted books: dungeons_arise:foundry (netherite_scrap, diamond_block, emerald_block, blaze rods - a Nether-flavoured forge), dungeons_arise:scorched_mines, dungeons_arise:infested_temple, dungeons_arise:illager_fort, dungeons_arise:thornborn_towers, dungeons_arise:bandit_towers, dungeons_arise:plague_asylum.",
+   "[jar] UTILITY, worth a detour for one specific thing rather than for the loot: dungeons_arise:mining_system and dungeons_arise:mushroom_mines (diamond_pickaxe in the treasure tables), dungeons_arise:fishing_hut (a trident, in a tiny building), dungeons_arise:mechanical_nest (redstone gear - lightning_rod, redstone_block, redstone_lamp), dungeons_arise:small_blimp (pistons, comparators, repeaters).",
+   "[jar] LOW TIER, flavour builds: dungeons_arise:small_prairie_house, dungeons_arise:merchant_campsite, dungeons_arise:mushroom_village, dungeons_arise:greenwood_pub, dungeons_arise:bathhouse, dungeons_arise:lighthouse, dungeons_arise:fishing_hut, dungeons_arise:wishing_well, dungeons_arise:giant_mushroom.",
+   "[jar] Structures with no chest loot table at all, so purely scenery: dungeons_arise:coliseum, dungeons_arise:monastery is thin, dungeons_arise:wishing_well."
+  ],
+  "traps": [
+   "[jar] dungeons_arise:typhon is the clearest trap in the mod: it is one of the largest and most imposing builds, and its entire chest table is one each of iron kit, a skeleton_skull and a single diamond. Huge time cost, near-zero reward.",
+   "[jar] dungeons_arise:illager_corsair and dungeons_arise:illager_galley share an identical, poor loot table (cobweb, tnt, one iron sword) despite being big ships crawling with illagers - the worst effort-to-reward pair after typhon.",
+   "[jar] dungeons_arise:bathhouse and dungeons_arise:greenwood_pub are almost entirely potions and food. Fine to visit, not worth a quest reward.",
+   "NOT VERIFIED BY VIDEO: the danger ranking here is inferred from loot tier and structure size, because the tier-list video did not finish transcribing. Treat the loot facts as solid and the 'how dangerous' half as an inference."
+  ],
+  "signature": [
+   "dungeons_arise:shiraz_palace",
+   "dungeons_arise:keep_kayra",
+   "dungeons_arise:heavenly_challenger",
+   "dungeons_arise:aviary",
+   "dungeons_arise:foundry",
+   "dungeons_arise:infested_temple"
+  ]
+ }
+}

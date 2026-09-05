@@ -1,0 +1,174 @@
+{
+ "mod": "twilightdelight",
+ "verified_against": "twilightdelight-2.2.2.jar",
+ "item_count_in_jar": 158,
+ "parent_mod": "twilightforest",
+ "chain": [
+  {
+   "id": "twilightdelight:ironwood_knife",
+   "title": "First Blade Of The Forest",
+   "desc": "A stick and a Twilight Forest ironwood ingot. Farmer's Delight cutting boards need a knife; this is the first one the twilight tech tree can supply."
+  },
+  {
+   "id": "twilightdelight:raw_meef_slice",
+   "title": "Portioning The Minotaur",
+   "desc": "Knife raw meef on a cutting board. Slices are the base of the pasta, wrap and wellington lines."
+  },
+  {
+   "id": "twilightdelight:mushgloom_sauce",
+   "title": "Sauce From The Undergrowth",
+   "desc": "Cooking Pot: mushgloom, brown mushroom and onion. It is the binding ingredient in half this mod's savoury recipes."
+  },
+  {
+   "id": "twilightdelight:mushgloom_meef_pasta",
+   "title": "Minotaur With Mushrooms",
+   "desc": "Cooking Pot: raw meef slice, mushgloom sauce and raw pasta. The first proper meal a Twilight Forest player can cook."
+  },
+  {
+   "id": "twilightdelight:torchberry_cake",
+   "title": "Baking With Torchberries",
+   "desc": "Milk, egg, sugar, wheat and torchberries. Torchberries glow, and so does the cake."
+  },
+  {
+   "id": "twilightdelight:glowstew",
+   "title": "Stew That Lights The Room",
+   "desc": "Cooking Pot: mushgloom, torchberries, glowstone dust and a bowl. Its own light source, and an ingredient in the Glow 113 line."
+  },
+  {
+   "id": "twilightdelight:steeleaf_knife",
+   "title": "Labyrinth Steel, Sharpened",
+   "desc": "A steeleaf ingot on a stick. Steeleaf comes out of the Labyrinth, so this knife marks that you got past the Minoshroom."
+  },
+  {
+   "id": "twilightdelight:raw_tomahawk_smeak",
+   "title": "Cut Off The Minoshroom",
+   "desc": "Dropped by the Minoshroom and by ordinary minotaurs through data/twilightdelight/loot_modifiers/. The largest single cut of meat in the mod."
+  },
+  {
+   "id": "twilightdelight:knightmetal_knife",
+   "title": "The Knight's Own Edge",
+   "desc": "A knightmetal ingot on a stick. Knightmetal comes from the Knight Stronghold, which puts this knife two bosses deep."
+  },
+  {
+   "id": "twilightdelight:maze_stove",
+   "title": "Cooking On Mazestone",
+   "desc": "Campfire, mazestone brick, knightmetal and torchberries. A Farmer's Delight stove built entirely from Labyrinth spoil."
+  },
+  {
+   "id": "twilightdelight:naga_chip",
+   "title": "Chipping A Naga Scale",
+   "desc": "Cut a naga scale with a Diamond Minotaur Axe. It is the only recipe in the ecosystem that uses the axe as a tool rather than a weapon."
+  },
+  {
+   "id": "twilightdelight:hydra_piece",
+   "title": "Carving The Hydra",
+   "desc": "Knife a hydra chop on a cutting board. The Hydra is the Twilight Forest's fourth boss and this is what it tastes like."
+  },
+  {
+   "id": "twilightdelight:hydra_burger",
+   "title": "Something That Regrew Three Times",
+   "desc": "Hydra meat, bread, onion, tomato and salad greens. A boss reduced to lunch."
+  },
+  {
+   "id": "twilightdelight:fiery_knife",
+   "title": "A Blade That Cooks Itself",
+   "desc": "Fiery ingot and a blaze rod, or an iron knife dipped in a fiery vial. Cutting with it sears what it cuts."
+  },
+  {
+   "id": "twilightdelight:fiery_cooking_pot",
+   "title": "The Pot That Needs No Fire",
+   "desc": "Fiery ingot, mazestone brick, an ironwood shovel and a water bucket. Twilight Forest's fiery metal turned into the ecosystem's best cooking pot."
+  },
+  {
+   "id": "twilightdelight:fiery_snakes_block",
+   "title": "Hydra, Torchberries And Fire",
+   "desc": "Cooking Pot: hydra meat, fiery vial, naga scale, torchberries and tomato sauce. Three bosses in one dish."
+  },
+  {
+   "id": "twilightdelight:glacier_cake",
+   "title": "Baked From An Ice Bomb",
+   "desc": "Milk, egg, sugar, wheat and a Twilight Forest ice bomb. The Alpha Yeti's material, used for dessert."
+  },
+  {
+   "id": "twilightdelight:aurora_cake",
+   "title": "A Cake Cut From The Aurora Palace",
+   "desc": "An aurora block folded into cake batter. The Snow Queen's palace is now an ingredient supplier."
+  },
+  {
+   "id": "twilightdelight:twilight_spring",
+   "title": "Bottled Off Raw Ironwood",
+   "desc": "Glass bottle, ice and raw ironwood. A drink that only exists because ironwood is a Twilight Forest ore."
+  },
+  {
+   "id": "twilightdelight:ghast_burger",
+   "title": "Experiment 115, In A Bun",
+   "desc": "Twilight Forest's Experiment 115 with bread, onion, tomato and beetroot. The Ur-Ghast's laboratory food, repurposed."
+  },
+  {
+   "id": "twilightdelight:experiment_113",
+   "title": "Cut From The Ur-Ghast's Trophy",
+   "desc": "Knifing an Ur-Ghast Trophy on a cutting board yields Experiment 110 and 113. The trophy is the Dark Tower's clear reward, and this mod turns it into a renewable ingredient."
+  },
+  {
+   "id": "twilightdelight:teardrop_sword",
+   "title": "Reforged In Ghast Tears",
+   "desc": "Smithing Experiment 110 onto a Fiery Sword with a netherite template. The strongest weapon in the Twilight Forest ecosystem and the end of this chain."
+  },
+  {
+   "id": "twilightdelight:thousand_plant_stew",
+   "title": "Everything That Grows Down There",
+   "desc": "Cooking Pot: fiddlehead, liveroot, root strand, fallen leaves, torchberry plant and vine. It needs six different twilight plants, so it is a botany completion quest disguised as soup."
+  },
+  {
+   "id": "twilightdelight:phytochemical_cake",
+   "title": "Cake From The Thorn Lands",
+   "desc": "The phytochemical family runs on Twilight Forest's thorn-and-liveroot materials and is the last dessert line to open."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "twilightdelight:ironwood_knife",
+   "members": [
+    "twilightdelight:canopy_cabinet",
+    "twilightdelight:dark_cabinet",
+    "twilightdelight:mining_cabinet",
+    "twilightdelight:time_cabinet",
+    "twilightdelight:sorting_cabinet",
+    "twilightdelight:transformation_cabinet",
+    "twilightdelight:twilight_oak_cabinet",
+    "twilightdelight:mangrove_cabinet"
+   ]
+  },
+  {
+   "hub": "twilightdelight:torchberry_cake",
+   "members": [
+    "twilightdelight:torchberry_cake_slice",
+    "twilightdelight:torchberry_pie",
+    "twilightdelight:torchberry_pie_slice",
+    "twilightdelight:torchberry_cookie",
+    "twilightdelight:torchberry_juice",
+    "twilightdelight:aurora_cake_slice",
+    "twilightdelight:aurora_pie",
+    "twilightdelight:glacier_cake_slice",
+    "twilightdelight:phytochemical_cake_slice",
+    "twilightdelight:phytochemical_juice",
+    "twilightdelight:glacier_ice_tea"
+   ]
+  },
+  {
+   "hub": "twilightdelight:experiment_113",
+   "members": [
+    "twilightdelight:experiment_110",
+    "twilightdelight:chocolate_113",
+    "twilightdelight:glow_113",
+    "twilightdelight:honey_113",
+    "twilightdelight:milky_113",
+    "twilightdelight:tear_drink",
+    "twilightdelight:borer_tear_soup",
+    "twilightdelight:ghast_brain_salad",
+    "twilightdelight:grilled_ghast"
+   ]
+  }
+ ],
+ "notes": "90 ids resolve as assets/twilightdelight/models/item/<id>.json intersected with item./block. lang keys. The 163 block. lang keys include 72 dyed candle_cake variants which are correctly excluded by the model intersection. Ordering follows Twilight Forest's own boss ladder because the recipes do: ironwood_knife needs ironwood_ingot (pre-Naga), steeleaf_knife needs steeleaf_ingot (post-Naga/Lich), knightmetal_knife and maze_stove need knightmetal_ingot and mazestone_brick (Knight Stronghold), the hydra line needs hydra_chop, the fiery line needs fiery_ingot and fiery_vial, and teardrop_sword smiths onto a twilightforest:fiery_sword. Two mechanics worth noting, both read from data/twilightdelight/recipes/: naga_chip is cut from a naga_scale using twilightforest:diamond_minotaur_axe as the tool, and experiment_110 + experiment_113 are cut off a twilightforest:ur_ghast_trophy with a knife - a boss trophy turned into a renewable food ingredient. Boss trophies for the Naga, Minoshroom and Hydra are similarly knife-cuttable back into their materials. Mob drops verified in data/twilightdelight/loot_modifiers/: raw and cooked tomahawk_smeak from minotaur and minoshroom, twilightforest:experiment_115 from ghasts, carminite ghastguards and ghastlings. DELIBERATELY EXCLUDED: all seven ice creams and all four milkshakes, because every one of their recipes is forge:conditional on the Neapolitan mod (they need neapolitan:ice_cubes) and would be uncraftable without it. Parent items this addon assumes you already have: twilightforest:ironwood_ingot, twilightforest:steeleaf_ingot, twilightforest:knightmetal_ingot, twilightforest:fiery_ingot, twilightforest:fiery_vial, twilightforest:fiery_sword, twilightforest:mazestone_brick, twilightforest:torchberries, twilightforest:mushgloom, twilightforest:liveroot, twilightforest:raw_meef, twilightforest:hydra_chop, twilightforest:naga_scale, twilightforest:ur_ghast_trophy, twilightforest:aurora_block, twilightforest:ice_bomb, twilightforest:diamond_minotaur_axe, farmersdelight:cutting_board, farmersdelight:cooking_pot, farmersdelight:pie_crust."
+}

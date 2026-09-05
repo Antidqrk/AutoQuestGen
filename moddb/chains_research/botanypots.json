@@ -1,0 +1,212 @@
+{
+ "mod": "botanypots",
+ "verified_against": "BotanyPots-Forge-1.20.1-13.0.43.jar",
+ "item_count_in_jar": 98,
+ "chain": [
+  {
+   "id": "minecraft:flower_pot",
+   "title": "Start With A Flower Pot",
+   "desc": "Every one of the mod's 98 pots is a vanilla flower pot with five terracotta, glazed terracotta or concrete blocks ringed around it. Make a few - you will want more pots than you think."
+  },
+  {
+   "id": "botanypots:terracotta_botany_pot",
+   "title": "The Pot That Farms Itself",
+   "desc": "Put a soil block in the left slot and a seed in the right and it grows and harvests on its own, no water, no light level, no bone meal needed. This is the entire mod."
+  },
+  {
+   "id": "minecraft:dirt",
+   "title": "Plain Dirt, Speed 1.0x",
+   "desc": "The baseline soil. It covers the whole 'dirt' crop category - wheat, carrots, potatoes, beetroot, most modded field crops - and one block feeds one pot forever."
+  },
+  {
+   "id": "minecraft:wheat_seeds",
+   "title": "The First Crop",
+   "desc": "Drop seeds into a dirt-filled pot and watch the progress bar. Hover any seed to see its grow time and drop chances before you commit a pot to it."
+  },
+  {
+   "id": "minecraft:bone_meal",
+   "title": "The Only Fertiliser",
+   "desc": "Bone meal is the single fertiliser the mod defines. Right-click a growing pot and it jumps the crop forward by a large chunk in one go."
+  },
+  {
+   "id": "minecraft:hopper",
+   "title": "Something To Catch It",
+   "desc": "Harvests pop out on the ground otherwise. A hopper is the upgrade part that turns a pot from a curiosity into a farm."
+  },
+  {
+   "id": "botanypots:terracotta_hopper_botany_pot",
+   "title": "The Hopper Pot",
+   "desc": "Pushes every harvest straight into the container below. Add a hopper to a pot you already own, or craft the hopper version outright - build these, not the plain ones."
+  },
+  {
+   "id": "minecraft:farmland",
+   "title": "Till The Pot, Speed 1.05x",
+   "desc": "Use a hoe on dirt that is already sitting in a pot and it becomes farmland - a free 5% speed bump on every dirt crop. Easy to miss and it costs nothing."
+  },
+  {
+   "id": "minecraft:hay_block",
+   "title": "Mulch, Speed 1.05x",
+   "desc": "Hay is the 'mulch' category - brown and red mushrooms take it, and a lot of modded crops demand it outright. Dried kelp is the same category but runs at plain 1.0x, so hay is the one worth stocking."
+  },
+  {
+   "id": "minecraft:sand",
+   "title": "Sand For The Desert Crops",
+   "desc": "The sand category. Cactus will grow in nothing else, and sugar cane takes it as well. Red sand is the same category, so either works. Bamboo is not a sand crop - that one wants plain dirt."
+  },
+  {
+   "id": "minecraft:water_bucket",
+   "title": "A Bucket As A Soil",
+   "desc": "Water itself is a valid soil, which is how you farm kelp, seagrass and sea pickles in a pot on dry land."
+  },
+  {
+   "id": "minecraft:obsidian",
+   "title": "The Trick With Two Buckets",
+   "desc": "Put a lava bucket in a pot as its soil, then use a water bucket on it: the pot turns it into obsidian. Water plus a lava bucket the other way gives stone."
+  },
+  {
+   "id": "minecraft:soul_sand",
+   "title": "Soul Sand For Nether Wart",
+   "desc": "Nether wart matches the 'soul_sand' category and nothing else - plain netherrack will not do it. One trip to the Nether for a single block and you never need to go back."
+  },
+  {
+   "id": "minecraft:warped_nylium",
+   "title": "Bring Back Both Nyliums",
+   "desc": "Warped nylium is the only soil that grows warped fungus, warped roots, twisting vines and nether sprouts; crimson nylium is a different category again and is the only one for crimson fungus, crimson roots and weeping vines. Carry a block of each home - one will not substitute for the other."
+  },
+  {
+   "id": "minecraft:end_stone",
+   "title": "End Stone For Chorus",
+   "desc": "The end category. One block of it turns chorus fruit into a renewable crop without ever going back through the portal."
+  },
+  {
+   "id": "minecraft:bone_block",
+   "title": "Bone, Its Own Category",
+   "desc": "A category on its own, reserved by packs for their odder plants. Worth stocking a pot with it so nothing in JEI is unreachable."
+  },
+  {
+   "id": "minecraft:soul_soil",
+   "title": "Soul Soil, Speed 1.1x",
+   "desc": "The fastest soil you can just place. It covers the same nether crops as soul sand and runs 10% quicker, so replace soul sand once you have it."
+  },
+  {
+   "id": "minecraft:cod_bucket",
+   "title": "The Fastest Soil Is A Fish",
+   "desc": "A bucket of cod, salmon or tropical fish is the quickest soil in the mod at 1.15x, and it counts as water. It is consumed by the pot, so it is a per-pot investment."
+  },
+  {
+   "id": "botanypots:white_concrete_botany_pot",
+   "title": "Build The Greenhouse",
+   "desc": "The same pot in 48 more colours - sixteen each of terracotta, glazed terracotta and concrete, every one available as a hopper version. Only the look changes."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "botanypots:terracotta_botany_pot",
+   "note": "The remaining basic pots (49 exist in total, minus the ones already in the chain). Recipe is always the same: five of the colour block in a 'S S / SPS / _S_' ring around one minecraft:flower_pot. Only the look changes.",
+   "members": [
+    "botanypots:white_terracotta_botany_pot",
+    "botanypots:orange_terracotta_botany_pot",
+    "botanypots:magenta_terracotta_botany_pot",
+    "botanypots:light_blue_terracotta_botany_pot",
+    "botanypots:yellow_terracotta_botany_pot",
+    "botanypots:lime_terracotta_botany_pot",
+    "botanypots:pink_terracotta_botany_pot",
+    "botanypots:gray_terracotta_botany_pot",
+    "botanypots:light_gray_terracotta_botany_pot",
+    "botanypots:cyan_terracotta_botany_pot",
+    "botanypots:purple_terracotta_botany_pot",
+    "botanypots:blue_terracotta_botany_pot",
+    "botanypots:brown_terracotta_botany_pot",
+    "botanypots:green_terracotta_botany_pot",
+    "botanypots:red_terracotta_botany_pot",
+    "botanypots:black_terracotta_botany_pot",
+    "botanypots:white_glazed_terracotta_botany_pot",
+    "botanypots:orange_glazed_terracotta_botany_pot",
+    "botanypots:magenta_glazed_terracotta_botany_pot",
+    "botanypots:light_blue_glazed_terracotta_botany_pot",
+    "botanypots:yellow_glazed_terracotta_botany_pot",
+    "botanypots:lime_glazed_terracotta_botany_pot",
+    "botanypots:pink_glazed_terracotta_botany_pot",
+    "botanypots:gray_glazed_terracotta_botany_pot",
+    "botanypots:light_gray_glazed_terracotta_botany_pot",
+    "botanypots:cyan_glazed_terracotta_botany_pot",
+    "botanypots:purple_glazed_terracotta_botany_pot",
+    "botanypots:blue_glazed_terracotta_botany_pot",
+    "botanypots:brown_glazed_terracotta_botany_pot",
+    "botanypots:green_glazed_terracotta_botany_pot",
+    "botanypots:red_glazed_terracotta_botany_pot",
+    "botanypots:black_glazed_terracotta_botany_pot",
+    "botanypots:orange_concrete_botany_pot",
+    "botanypots:magenta_concrete_botany_pot",
+    "botanypots:light_blue_concrete_botany_pot",
+    "botanypots:yellow_concrete_botany_pot",
+    "botanypots:lime_concrete_botany_pot",
+    "botanypots:pink_concrete_botany_pot",
+    "botanypots:gray_concrete_botany_pot",
+    "botanypots:light_gray_concrete_botany_pot",
+    "botanypots:cyan_concrete_botany_pot",
+    "botanypots:purple_concrete_botany_pot",
+    "botanypots:blue_concrete_botany_pot",
+    "botanypots:brown_concrete_botany_pot",
+    "botanypots:green_concrete_botany_pot",
+    "botanypots:red_concrete_botany_pot",
+    "botanypots:black_concrete_botany_pot"
+   ]
+  },
+  {
+   "hub": "botanypots:terracotta_hopper_botany_pot",
+   "note": "The remaining hopper pots (49 exist in total). Each is its basic pot plus a hopper, shapeless - so never require both forms of the same colour in one quest.",
+   "members": [
+    "botanypots:white_terracotta_hopper_botany_pot",
+    "botanypots:orange_terracotta_hopper_botany_pot",
+    "botanypots:magenta_terracotta_hopper_botany_pot",
+    "botanypots:light_blue_terracotta_hopper_botany_pot",
+    "botanypots:yellow_terracotta_hopper_botany_pot",
+    "botanypots:lime_terracotta_hopper_botany_pot",
+    "botanypots:pink_terracotta_hopper_botany_pot",
+    "botanypots:gray_terracotta_hopper_botany_pot",
+    "botanypots:light_gray_terracotta_hopper_botany_pot",
+    "botanypots:cyan_terracotta_hopper_botany_pot",
+    "botanypots:purple_terracotta_hopper_botany_pot",
+    "botanypots:blue_terracotta_hopper_botany_pot",
+    "botanypots:brown_terracotta_hopper_botany_pot",
+    "botanypots:green_terracotta_hopper_botany_pot",
+    "botanypots:red_terracotta_hopper_botany_pot",
+    "botanypots:black_terracotta_hopper_botany_pot",
+    "botanypots:white_glazed_terracotta_hopper_botany_pot",
+    "botanypots:orange_glazed_terracotta_hopper_botany_pot",
+    "botanypots:magenta_glazed_terracotta_hopper_botany_pot",
+    "botanypots:light_blue_glazed_terracotta_hopper_botany_pot",
+    "botanypots:yellow_glazed_terracotta_hopper_botany_pot",
+    "botanypots:lime_glazed_terracotta_hopper_botany_pot",
+    "botanypots:pink_glazed_terracotta_hopper_botany_pot",
+    "botanypots:gray_glazed_terracotta_hopper_botany_pot",
+    "botanypots:light_gray_glazed_terracotta_hopper_botany_pot",
+    "botanypots:cyan_glazed_terracotta_hopper_botany_pot",
+    "botanypots:purple_glazed_terracotta_hopper_botany_pot",
+    "botanypots:blue_glazed_terracotta_hopper_botany_pot",
+    "botanypots:brown_glazed_terracotta_hopper_botany_pot",
+    "botanypots:green_glazed_terracotta_hopper_botany_pot",
+    "botanypots:red_glazed_terracotta_hopper_botany_pot",
+    "botanypots:black_glazed_terracotta_hopper_botany_pot",
+    "botanypots:white_concrete_hopper_botany_pot",
+    "botanypots:orange_concrete_hopper_botany_pot",
+    "botanypots:magenta_concrete_hopper_botany_pot",
+    "botanypots:light_blue_concrete_hopper_botany_pot",
+    "botanypots:yellow_concrete_hopper_botany_pot",
+    "botanypots:lime_concrete_hopper_botany_pot",
+    "botanypots:pink_concrete_hopper_botany_pot",
+    "botanypots:gray_concrete_hopper_botany_pot",
+    "botanypots:light_gray_concrete_hopper_botany_pot",
+    "botanypots:cyan_concrete_hopper_botany_pot",
+    "botanypots:purple_concrete_hopper_botany_pot",
+    "botanypots:blue_concrete_hopper_botany_pot",
+    "botanypots:brown_concrete_hopper_botany_pot",
+    "botanypots:green_concrete_hopper_botany_pot",
+    "botanypots:red_concrete_hopper_botany_pot",
+    "botanypots:black_concrete_hopper_botany_pot"
+   ]
+  }
+ ],
+ "notes": "THE HONEST SHAPE OF THIS MOD: BotanyPots registers exactly 98 items and every single one is a Botany Pot. There is no tool, no ingot, no seed, no food, no machine. The 98 are 49 basic pots (plain terracotta, plus sixteen colours each of terracotta, glazed terracotta and concrete) times two, because each has a hopper version. Counted from assets/botanypots/models/item/ and confirmed against data/botanypots/tags/items/basic_botany_pots.json and hopper_botany_pots.json.\n\nBECAUSE OF THAT, the progression is not an item ladder - it is a SOIL ladder, and the soils are vanilla blocks. A chain made only of botanypots: ids would be 49 colour variants of the same quest, which is worthless. The minecraft: ids below are deliberate: they are the real gates on what you can grow, and the app should render them as ordinary item quests.\n\nORDER SOURCE: the author's advancements, data/botanypots/advancements/husbandry/, which contain exactly two nodes and state the whole intended arc - get_basic_pot ('Let It Grow', parent minecraft:husbandry/plant_seed, satisfied by the basic_botany_pots tag) then get_hopper_pot ('Now You're Growing With Hoppers', parent get_basic_pot, satisfied by the hopper_botany_pots tag). Everything after that is ordered by growthModifier and by which crop categories a soil unlocks.\n\nSOIL SPEEDS verified from data/botanypots/recipes/minecraft/*.json, type botanypots:soil, field growthModifier: fish buckets (cod / salmon / tropical_fish) 1.15 - the fastest in the mod; soul_soil 1.1; farmland 1.05; hay_bale 1.05; the large flat majority (dirt, grass, sand, stone, all the ores, all the woods, netherrack, nylium, end_stone, bone, clay, gravel, snow, water, lava, obsidian, podzol, mycelium) 1.0; brown/red mushroom, mushroom_stem, moss, magma_block, coarse_dirt, rooted_dirt 0.95; dirt_path 0.5, the worst soil in the mod. Categories come from the same files' 'categories' array, which is what a crop matches against. A soil carries SEVERAL categories at once and the useful facts are about overlap, not separation - an earlier draft got this backwards. The real relationships: warped_nylium = [warped, nylium, warped_nylium, mushroom, netherrack, nether] and crimson_nylium = [crimson, nylium, crimson_nylium, mushroom, netherrack, nether], so each nylium is a SUPERSET of plain netherrack, but the two nyliums do NOT cover each other - warped fungus/roots/twisting vines/nether sprouts need warped_nylium and crimson fungus/roots/weeping vines need crimson_nylium. soul_sand = [soul_sand, nether] and soul_soil = [nether, soul_sand, soul_soil], so soul soil is a strict upgrade over soul sand; nether wart's category is soul_sand, NOT nether, so netherrack will not grow it. farmland = [dirt, farmland], a strict superset of dirt. The fish buckets = [water, fish, <species>], so they cover everything plain water does. Genuinely standalone categories with no vanilla crop attached: bone, clay, snow. gravel = [gravel, loose_soil] and obsidian = [obsidian, glass] are standalone in practice but each carries a second name a pack may target. Vanilla crop-to-soil gotchas worth repeating: cactus is sand-only, sugar cane is [sand, dirt], BAMBOO IS DIRT (not sand), chorus is end_stone-only, wither rose is soul_sand, cocoa beans need jungle_wood, and every coral, kelp, seagrass, sea pickle and lily pad is water.\n\nFERTILISER: exactly one exists. data/botanypots/recipes/minecraft/bonemeal.json, type botanypots:fertilizer, ingredient minecraft:bone_meal, min_growth 400 / max_growth 550. No other item accelerates a pot.\n\nPOT INTERACTIONS are a real and easily missed mechanic - six recipes of type botanypots:pot_interaction in data/botanypots/recipes/minecraft/: a hoe on grass/dirt/dirt_path in a pot makes farmland (the free 1.05x); a hoe on coarse_dirt or rooted_dirt turns it back to dirt (rooted_dirt also drops hanging roots); a shovel on any dirt makes dirt_path; a water bucket used on a lava-bucket soil makes obsidian; a lava bucket used on a water-bucket soil makes stone. The obsidian one is in the chain because it is the only place in the mod where a pot produces a block rather than a crop.\n\nCROP AND SOIL DATA IS COMPAT DATA. data/botanypots/recipes/ holds roughly 2,000 files across 90-plus other mod ids (croparia, regions_unexplored, mysticalagriculture, byg, betterend, pamhc2crops and so on). They are all datapack entries for OTHER mods' plants and are inert unless that mod is installed. Never mine that folder for quest ids - the ids in it belong to mods that may not be in the pack. Only data/botanypots/recipes/minecraft/ is guaranteed present.\n\nTHE MOD ADDS NO SEEDS OF ITS OWN, no worldgen, no structures, no entities, no dimension. A crop quest for this mod must always target another mod's seed."
+}

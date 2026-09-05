@@ -1,0 +1,146 @@
+{
+ "mod": "undergarden",
+ "verified_against": "The_Undergarden-1.20.1-0.8.14.jar",
+ "item_count_in_jar": 284,
+ "chain": [
+  {
+   "id": "undergarden:catalyst",
+   "title": "One Ticket, Please",
+   "desc": "Shaped from diamond, gold and iron; the mod's advancement tree makes holding it the root of everything, and it is what ignites the portal."
+  },
+  {
+   "id": "dim:undergarden:undergarden",
+   "title": "Down Past the Deepslate",
+   "desc": "A frame of any block in undergarden:portal_frame_blocks - stone bricks, deepslate bricks, depthrock bricks and their kin - struck with the Catalyst."
+  },
+  {
+   "id": "undergarden:depthrock_pebble",
+   "title": "Ammunition Underfoot",
+   "desc": "Thrown by Stoneborn and dropped by them on death; the standard slingshot ammunition."
+  },
+  {
+   "id": "undergarden:slingshot",
+   "title": "A Pebble Goes Far",
+   "desc": "Crafted from a Twistytwig and wooden rods; it fires pebbles, goo balls, gronglets and rotten blisterberries, each with a different effect."
+  },
+  {
+   "id": "undergarden:underbeans",
+   "title": "Beans From the Dark",
+   "desc": "The Undergarden's staple crop, harvested from underbean bushes and tracked by its own advancement."
+  },
+  {
+   "id": "undergarden:gloomgourd",
+   "title": "The Gourd That Glowers",
+   "desc": "The dimension's pumpkin analogue; it carves into a Boomgourd and its seeds plant a full farm."
+  },
+  {
+   "id": "undergarden:utheric_shard",
+   "title": "Shed by the Rot",
+   "desc": "Dropped by Rotlings, Rotwalkers and Rotbeasts and stocked in Catacombs chests; nine of them press into a Utherium Crystal."
+  },
+  {
+   "id": "undergarden:shard_torch",
+   "title": "Light Against the Rot",
+   "desc": "A Utheric Shard on a wooden rod - the first light source the mod gives you, and the reward for your first Rotling kill."
+  },
+  {
+   "id": "undergarden:cloggrum_ingot",
+   "title": "Ore of the Depthrock",
+   "desc": "Smelted from Raw Cloggrum or from Depthrock and Shiverstone Cloggrum Ore; the Undergarden's baseline metal."
+  },
+  {
+   "id": "undergarden:cloggrum_helmet",
+   "title": "First Plate Down Here",
+   "desc": "Five Cloggrum ingots; the mod's cloggrum_armor advancement wants the whole set, and this is where it starts."
+  },
+  {
+   "id": "undergarden:froststeel_ingot",
+   "title": "Metal With a Chill",
+   "desc": "Smelted from Raw Froststeel or Shiverstone Froststeel Ore, found in the frozen half of the dimension."
+  },
+  {
+   "id": "undergarden:utherium_crystal",
+   "title": "Bloodstone of the Deep",
+   "desc": "Blasted from Depthrock and Shiverstone Utherium Ore, or pressed from nine Utheric Shards; the strongest ore-borne tier here."
+  },
+  {
+   "id": "undergarden:regalium_crystal",
+   "title": "Currency of the Stoneborn",
+   "desc": "Mined from Regalium Ore and the thing the Stoneborn actually want; it is also seeded into Catacombs chests."
+  },
+  {
+   "id": "undergarden:blisterberry",
+   "title": "Eat It and Run",
+   "desc": "Picked from blisterberry bushes in the Smog Spires; it grants speed at a cost, and rotten ones become slingshot ammunition."
+  },
+  {
+   "id": "undergarden:depthrock_bricks",
+   "title": "Bones of the Catacombs",
+   "desc": "The worked stone of the Catacombs, and one of the blocks tagged undergarden:portal_frame_blocks for building a return gate."
+  },
+  {
+   "id": "undergarden:cloggrum_battleaxe",
+   "title": "Prised From Cold Dead Hands",
+   "desc": "It has no recipe - the mod's own advancement says to take one from a Forgotten that spawned carrying it."
+  },
+  {
+   "id": "undergarden:forgotten_upgrade_smithing_template",
+   "title": "The Pattern in the Vault",
+   "desc": "Found only in Catacombs chests; it is the smithing template that turns any cloggrum tool into its Forgotten counterpart."
+  },
+  {
+   "id": "kill:undergarden:forgotten_guardian",
+   "title": "Keeper of the Catacombs",
+   "desc": "The Catacombs boss; its loot table is the mod's main source of Forgotten Nuggets."
+  },
+  {
+   "id": "undergarden:forgotten_ingot",
+   "title": "Nine Nuggets of the Lost",
+   "desc": "Pressed from nine Forgotten Nuggets, which drop from the Forgotten Guardian and salt the Catacombs chests; there is no ore for it."
+  },
+  {
+   "id": "undergarden:forgotten_battleaxe",
+   "title": "Axe of Legends",
+   "desc": "A smithing_transform of the Cloggrum Battleaxe with a Forgotten Ingot and the Forgotten template - the top of the mod's weapon ladder."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "undergarden:smogstem_log",
+   "members": [
+    "undergarden:wigglewood_log",
+    "undergarden:grongle_log",
+    "undergarden:smogstem_sapling",
+    "undergarden:wigglewood_sapling",
+    "undergarden:grongle_sapling",
+    "undergarden:twistytwig"
+   ]
+  },
+  {
+   "hub": "undergarden:veil_mushroom",
+   "members": [
+    "undergarden:indigo_mushroom",
+    "undergarden:ink_mushroom",
+    "undergarden:blood_mushroom",
+    "undergarden:glitterkelp",
+    "undergarden:droopvine_item",
+    "undergarden:mogmoss",
+    "undergarden:gloomgourd_seeds",
+    "undergarden:veiled_stew",
+    "undergarden:inky_stew"
+   ]
+  },
+  {
+   "hub": "undergarden:cloggrum_helmet",
+   "members": [
+    "undergarden:froststeel_helmet",
+    "undergarden:utherium_helmet",
+    "undergarden:cloggrum_shield",
+    "undergarden:brute_tusk",
+    "undergarden:goo_ball",
+    "undergarden:raw_dweller_meat"
+   ]
+  }
+ ],
+ "notes": "Item set = the 284 stems of assets/undergarden/models/item/*.json intersected with item.undergarden.* / block.undergarden.* keys in assets/undergarden/lang/en_us.json; every undergarden: id above is a member of that set except the one allow-listed id described below. Ordering follows data/undergarden/advancements/undergarden/: root -> catalyst -> enter_undergarden -> {mine_ore -> cloggrum_armor, slingshot, underbeans, plant_gloomgourd, kill_rotling -> shard_torch, catacombs -> {cloggrum_battleaxe -> forgotten_battleaxe, kill_forgotten_guardian -> forgotten_ingot -> forgotten_tools}}. Single dimension confirmed from data/undergarden/dimension/undergarden.json; portal frame blocks read from data/undergarden/tags/blocks/portal_frame_blocks.json (vanilla stone bricks, mossy stone bricks, deepslate bricks/tiles, polished and reinforced deepslate, plus the mod's depthrock bricks, depthrock tiles, polished depthrock and shiverstone bricks). ALLOW-LISTED ID: undergarden:forgotten_upgrade_smithing_template has an item model, is the result of data/undergarden/recipes/forgotten_upgrade_smithing_template.json, is an entry in data/undergarden/loot_tables/chests/catacombs.json, and is the template of all six forgotten_*_smithing recipes - but like every vanilla smithing template its display name lives under upgrade.undergarden.forgotten_upgrade rather than item.undergarden.<id>, so it fails a naive model-intersect-lang test. It is real and it is the gate for the entire Forgotten tier, so it is kept and flagged here. DROPPED, UNVERIFIABLE: undergarden:denizen_mask - moddb lists it at pos 0.167 across 3 packs, but it has no model, no lang key and no data reference anywhere in 0.8.14; it was removed from the mod since those packs were built. undergarden:ancient_helmet / ancient_chestplate / ancient_leggings are registered in UGItems and have lang keys but no recipe and appear in no loot table in the jar, so they have no survival source and were left out. undergarden:masticated_chestplate is craftable but the set has no helmet, and a lone chestplate quest was ruled out. ENTITY CHECK: 27 entity.undergarden.* lang keys exist but only 17 are real mobs with loot tables. The 10 without are projectiles and vehicles (blisterbomb, boomgourd, depthrock_pebble, goo_ball, gronglet, rotten_blisterberry, minion_projectile, boat, chest_boat) plus undergarden:minion, the Forgotten Minion, which is a summoned add with no loot table; none were used as kill targets. Only kill:undergarden:forgotten_guardian is used, and it is backed by both a loot table and the kill_forgotten_guardian advancement. CONSENSUS AGREEMENT: moddb's top three (catalyst 0.000, veil_mushroom 0.073, slingshot 0.190) all sit in the same relative order here, and its cloggrum (0.274) -> froststeel (0.368) -> forgotten (0.372) ingot ordering matches the advancement graph exactly."
+}

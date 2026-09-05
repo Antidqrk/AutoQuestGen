@@ -1,0 +1,128 @@
+{
+  "mod": "mekanism",
+  "verified_against": "Mekanism-1.20.1-10.4.16.80.jar",
+  "item_count_in_jar": 415,
+  "chain": [
+    {
+      "id": "mekanism:ingot_osmium",
+      "title": "Osmium Ingot",
+      "desc": "Osmium Ore generates at nearly every Y level and drops Raw Osmium; smelt it in a furnace. Osmium is the mod's starting metal."
+    },
+    {
+      "id": "mekanism:metallurgic_infuser",
+      "title": "Metallurgic Infuser",
+      "desc": "Hand-crafted from 2 furnaces, 4 iron ingots, 2 redstone dust and 1 Osmium Ingot; the only Mekanism machine you can build before having steel."
+    },
+    {
+      "id": "mekanism:basic_control_circuit",
+      "title": "Basic Control Circuit",
+      "desc": "Infuse an Osmium Ingot with 20 units of Redstone in the Metallurgic Infuser. Circuits are the tier currency of every later machine recipe."
+    },
+    {
+      "id": "mekanism:alloy_infused",
+      "title": "Infused Alloy",
+      "desc": "Infuse an iron ingot with 10 units of Redstone in the Metallurgic Infuser; tier 2 of the four alloy tiers (plain redstone is tier 1)."
+    },
+    {
+      "id": "mekanism:ingot_steel",
+      "title": "Steel Ingot",
+      "desc": "Infuse iron with Carbon (coal or charcoal dust) for Enriched Iron, infuse that again with Carbon for Steel Dust, then smelt the dust."
+    },
+    {
+      "id": "mekanism:steel_casing",
+      "title": "Steel Casing",
+      "desc": "4 Steel Ingots, 4 glass and 1 Osmium Ingot. Almost every Mekanism machine is a Steel Casing wrapped in alloys and circuits."
+    },
+    {
+      "id": "mekanism:enrichment_chamber",
+      "title": "Enrichment Chamber",
+      "desc": "Steel Casing surrounded by 4 redstone, 2 Basic Control Circuits and 2 iron. Turns 1 ore into 2 dust: the first ore-processing tier."
+    },
+    {
+      "id": "mekanism:energized_smelter",
+      "title": "Energized Smelter",
+      "desc": "Steel Casing with 4 redstone, 2 Basic Control Circuits and 2 glass. Smelts on machine power, so it pairs with the Enrichment Chamber for a full 2x ore line."
+    },
+    {
+      "id": "mekanism:crusher",
+      "title": "Crusher",
+      "desc": "Steel Casing with 4 redstone, 2 Basic Control Circuits and 2 lava buckets. Grinds ingots to dust and clumps to dirty dust, closing the higher ore-processing loops."
+    },
+    {
+      "id": "mekanism:basic_energy_cube",
+      "title": "Basic Energy Cube",
+      "desc": "Steel Casing with 4 redstone, 2 Energy Tablets and 2 iron. Buffers generator output so machines keep running; Energy Tablets need Infused Alloy, gold and redstone."
+    },
+    {
+      "id": "mekanism:electrolytic_separator",
+      "title": "Electrolytic Separator",
+      "desc": "Built around an Electrolytic Core with 4 iron, 2 redstone and 2 Infused Alloy. Splits water into Hydrogen and Oxygen, the gases the next ore tiers run on."
+    },
+    {
+      "id": "mekanism:purification_chamber",
+      "title": "Purification Chamber",
+      "desc": "An Enrichment Chamber ringed with 4 Infused Alloy, 2 Advanced Control Circuits and 2 Osmium Ingots. Feeds on Oxygen to turn 1 ore into 3 clumps (3x ore)."
+    },
+    {
+      "id": "mekanism:alloy_reinforced",
+      "title": "Reinforced Alloy",
+      "desc": "Infuse an Infused Alloy with 20 units of Diamond in the Metallurgic Infuser. Gates Elite Control Circuits and every 4x-tier machine."
+    },
+    {
+      "id": "mekanism:chemical_injection_chamber",
+      "title": "Chemical Injection Chamber",
+      "desc": "A Purification Chamber ringed with 4 Reinforced Alloy, 2 Elite Control Circuits and 2 gold. Injects Hydrogen Chloride to turn 1 ore into 4 shards (4x ore)."
+    },
+    {
+      "id": "mekanism:alloy_atomic",
+      "title": "Atomic Alloy",
+      "desc": "Infuse a Reinforced Alloy with 40 units of Refined Obsidian in the Metallurgic Infuser; Refined Obsidian Dust comes from infusing obsidian dust with Diamond."
+    },
+    {
+      "id": "mekanism:chemical_dissolution_chamber",
+      "title": "Chemical Dissolution Chamber",
+      "desc": "Steel Casing with 4 Refined Obsidian Ingots, 2 Basic Chemical Tanks and 2 Ultimate Control Circuits. Dissolves ore in Sulfuric Acid into Dirty Slurry, which a Chemical Washer and Chemical Crystallizer turn into Crystals for the full 5x ore yield."
+    },
+    {
+      "id": "mekanism:digital_miner",
+      "title": "Digital Miner",
+      "desc": "Steel Casing with 2 Atomic Alloy, a Basic Control Circuit, 2 Logistical Sorters, a Robit and 2 Teleportation Cores. Filter-mines a whole chunk radius automatically."
+    },
+    {
+      "id": "mekanism:atomic_disassembler",
+      "title": "Atomic Disassembler",
+      "desc": "4 Infused Alloy, an Energy Tablet, an Atomic Alloy and a Refined Obsidian Ingot. Powered all-purpose tool and the base item of the Meka-Tool."
+    },
+    {
+      "id": "mekanism:pressurized_reaction_chamber",
+      "title": "Pressurized Reaction Chamber",
+      "desc": "An Enrichment Chamber with a Dynamic Tank, 2 Basic Chemical Tanks, 2 Basic Control Circuits, 2 steel and an Infused Alloy. Combines item, fluid and gas inputs."
+    },
+    {
+      "id": "mekanism:hdpe_sheet",
+      "title": "HDPE Sheet",
+      "desc": "Bio Fuel plus water and Hydrogen in the Reaction Chamber makes Substrate, then Substrate plus Ethene and Oxygen makes HDPE Pellets; enrich 3 pellets into a sheet."
+    },
+    {
+      "id": "mekanism:pellet_polonium",
+      "title": "Polonium Pellet",
+      "desc": "Run Nuclear Waste through a Solar Neutron Activator for Polonium gas, then react Polonium with Fluorite Dust and water in the Reaction Chamber."
+    },
+    {
+      "id": "mekanism:meka_tool",
+      "title": "Meka-Tool",
+      "desc": "Atomic Disassembler and a Configurator with 2 HDPE Sheets, 2 Ultimate Control Circuits, 2 Polonium Pellets and a Basic Induction Cell; upgraded at a Modification Station."
+    },
+    {
+      "id": "mekanism:mekasuit_bodyarmor",
+      "title": "MekaSuit Bodyarmor",
+      "desc": "A netherite chestplate with 4 HDPE Sheets, an Ultimate Control Circuit, 2 Polonium Pellets and a Basic Induction Cell. Modules slot in at a Modification Station."
+    },
+    {
+      "id": "mekanism:antiprotonic_nucleosynthesizer",
+      "title": "Antiprotonic Nucleosynthesizer",
+      "desc": "Steel Casing with 4 Atomic Alloy, 2 Ultimate Control Circuits and 2 Antimatter Pellets; antimatter is produced by the SPS multiblock from Polonium."
+    }
+  ],
+  "notes": "All 24 ids were checked against Mekanism-1.20.1-10.4.16.80.jar (Modrinth, Forge/NeoForge 1.20.1); item ids were taken from assets/mekanism/models/item/*.json unioned with item./block. keys in assets/mekanism/lang/en_us.json (415 unique paths). Descriptions were derived from the jar's own data/mekanism/recipes/*.json, so ingredient counts are exact. IMPORTANT CROSS-MOD DEPENDENCY: base Mekanism has no generators. Practical power (Heat Generator, Gas-Burning Generator, Fission and Fusion Reactors) lives in Mekanism: Generators (modid mekanismgenerators), and the Nuclear Waste that gates the Polonium Pellet / Meka-Tool / MekaSuit / Antiprotonic Nucleosynthesizer entries is a Fission Reactor output. If Mekanism: Generators is not in the pack, the last four entries are unreachable without another waste source. Wiki-named things deliberately NOT included because they are not mekanism: items in this jar: Heat Generator, Gas-Burning Generator, Fission Reactor Casing, Fusion Reactor, Turbine and Wind Generator (all mekanismgenerators), and Paxel/armor tiers (mekanismtools). The SPS is represented by the Antiprotonic Nucleosynthesizer rather than mekanism:sps_casing so the chain ends on a machine; mekanism:sps_casing, mekanism:sps_port, mekanism:pellet_antimatter and mekanism:pellet_plutonium all exist in the jar if the integrator wants extra endgame steps. Other verified ids worth using as optional side quests: mekanism:teleportation_core, mekanism:teleporter, mekanism:quantum_entangloporter, mekanism:qio_drive_array, mekanism:thermal_evaporation_controller, mekanism:solar_neutron_activator, mekanism:isotopic_centrifuge, mekanism:modification_station, mekanism:jetpack, mekanism:free_runners, mekanism:robit, mekanism:basic_induction_cell, mekanism:induction_casing, mekanism:chemical_washer, mekanism:chemical_crystallizer (the two 5x-tier machines folded into the Dissolution Chamber entry). Only two entities exist (entity.mekanism.robit, entity.mekanism.flame) and the mod adds no dimensions, so no kill: or dim: steps apply."
+}

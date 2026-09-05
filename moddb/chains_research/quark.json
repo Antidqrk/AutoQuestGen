@@ -1,0 +1,227 @@
+{
+ "mod": "quark",
+ "verified_against": "Quark-4.0-462.jar",
+ "item_count_in_jar": 837,
+ "chain": [
+  {
+   "id": "quark:clear_shard",
+   "title": "Break Glass, Keep Something",
+   "desc": "Glass no longer vanishes when you break it: Quark overwrites minecraft:loot_tables/blocks/glass.json so it drops a Glass Shard. Four shards remake a pane and the sixteen stained colours each have their own shard. MODULE FLAG: glass_shard."
+  },
+  {
+   "id": "quark:rope",
+   "title": "Three Rope Per String",
+   "desc": "Three string in a column. Rope extends downward as you place it, pulls back up, and carries mobs and blocks with it - one of Quark's oldest and least replaceable tools. MODULE FLAG: rope."
+  },
+  {
+   "id": "quark:iron_rod",
+   "title": "The End Rod's Cheap Cousin",
+   "desc": "Iron ingots in a column. If the iron_rod_pre_end flag is on it costs iron alone; otherwise the recipe wants a vanilla end rod as well, which is a deliberate pre-End versus post-End gate. MODULE FLAGS: iron_rod, iron_rod_pre_end."
+  },
+  {
+   "id": "quark:gold_bars",
+   "title": "Sixteen Bars of Gold",
+   "desc": "Six gold ingots laid like iron bars. Gold Bars are the only decorative metal grille Quark adds and they cost exactly what vanilla iron bars do. MODULE FLAG: gold_bars."
+  },
+  {
+   "id": "quark:iron_ladder",
+   "title": "A Ladder That Is Not Wood",
+   "desc": "Iron ingots and nuggets, three per craft. Quark also adds a ladder in every wood, but the iron one is the only one that is not a straight recolour. MODULE FLAG: iron_ladder."
+  },
+  {
+   "id": "quark:grate",
+   "title": "Walk Over Water",
+   "desc": "Iron bars in a square. Items and water fall through a Grate while players walk across it, which makes it the cheapest drop-chute floor in the game. MODULE FLAG: grate."
+  },
+  {
+   "id": "quark:pipe",
+   "title": "Six Pipes Per Craft",
+   "desc": "Copper ingots around glass. Pipes push items along without redstone, and crafting one with glass gives an Encased Pipe that hides its contents - the craft reverses. MODULE FLAGS: pipes, encased_pipes."
+  },
+  {
+   "id": "quark:chute",
+   "title": "Under the Hopper",
+   "desc": "Planks and a wooden rod. The Chute drops items out of its underside into whatever is below, which is the half of a hopper that vanilla never separated out. MODULE FLAG: chute."
+  },
+  {
+   "id": "quark:crate",
+   "title": "Storage Without Slots",
+   "desc": "Planks, a wooden chest and iron. A Crate holds a large amount of a small number of item types and cannot be opened by a hopper the way a chest can. MODULE FLAG: crate."
+  },
+  {
+   "id": "quark:crafter",
+   "title": "Redstone Builds It For You",
+   "desc": "A crafting table on a dropper with iron and redstone. Quark's Crafter holds a recipe and produces it on a redstone pulse - autocrafting with no tech mod involved. MODULE FLAG: crafter."
+  },
+  {
+   "id": "quark:redstone_randomizer",
+   "title": "A Coin Flip in Redstone",
+   "desc": "Prismarine crystals, a redstone torch and stone. It sends its signal left or right at random, which is the one logic gate vanilla redstone genuinely lacks. MODULE FLAG: redstone_randomizer."
+  },
+  {
+   "id": "quark:ender_watcher",
+   "title": "It Knows You Looked",
+   "desc": "An eye of ender on obsidian with redstone. The Ender Watcher emits a signal while a player is looking directly at it. MODULE FLAG: ender_watcher."
+  },
+  {
+   "id": "quark:gravisand",
+   "title": "Sand That Falls Upward",
+   "desc": "Ender pearls and colourless sand, eight at a time. Gravisand reverses its own gravity on a redstone signal. MODULE FLAG: gravisand."
+  },
+  {
+   "id": "quark:feeding_trough",
+   "title": "Let the Animals Eat Themselves",
+   "desc": "Planks around wheat. Animals breed off a stocked trough without you standing there clicking, which quietly rewrites how a farm is laid out. MODULE FLAG: feeding_trough."
+  },
+  {
+   "id": "quark:trowel",
+   "title": "Place a Random Block",
+   "desc": "Iron and a wooden rod. The Trowel places a random block from your hotbar, which is the fastest way to lay a naturally mottled wall. MODULE FLAG: trowel."
+  },
+  {
+   "id": "quark:seed_pouch",
+   "title": "One Slot, One Crop",
+   "desc": "Leather and string around anything in the quark:seed_pouch_holdable tag. The pouch stacks a huge quantity of one seed and plants from it directly. MODULE FLAG: seed_pouch."
+  },
+  {
+   "id": "quark:abacus",
+   "title": "Count the Blocks",
+   "desc": "Iron, a wooden rod and planks. The Abacus measures distance in the world and reads it back on 49 predicate models, one per count. MODULE FLAG: abacus."
+  },
+  {
+   "id": "quark:magnet",
+   "title": "Pull the Metal",
+   "desc": "Iron, cobblestone, redstone and blue dye. With the magnet_pre_end flag it takes copper instead of a chorus fruit, so like the iron rod it has a deliberate before-and-after-the-End version. It drags metal blocks around and creates Magnetized Blocks. MODULE FLAGS: magnets, magnet_pre_end."
+  },
+  {
+   "id": "quark:glass_item_frame",
+   "title": "A Frame You Cannot See",
+   "desc": "An item frame between glass panes, two at a time. The frame itself is invisible; a glow ink sac upgrades it to the glowing version. MODULE FLAG: glass_item_frame."
+  },
+  {
+   "id": "quark:blaze_lantern",
+   "title": "Blaze Rods, Boxed",
+   "desc": "Blaze powder around a blaze rod. It is a light source and a fuel block in one. MODULE FLAG: blaze_lantern."
+  },
+  {
+   "id": "quark:diamond_heart",
+   "title": "Cut It Out of a Stoneling",
+   "desc": "Not a recipe: the Heart of Diamond drops from Quark's Stoneling mob (loot_tables/entities/stoneling.json). It is the gate item for both the Pickarang and the Tiny Potato, and both have a no-heart fallback recipe behind their own flag. MODULE FLAG: stonelings."
+  },
+  {
+   "id": "quark:pickarang",
+   "title": "A Pickaxe You Throw",
+   "desc": "A heart of diamond with diamonds and planks - or, with the pickarang_never_uses_heart flag on, diamonds and planks alone. It mines at range and comes back. MODULE FLAGS: pickarang, pickarang_never_uses_heart, stonelings."
+  },
+  {
+   "id": "quark:flamerang",
+   "title": "Netherite on the Boomerang",
+   "desc": "The only smithing recipe in the mod and the only unflagged one: a Pickarang, a netherite upgrade template and a netherite ingot. The Flamerang sets what it hits on fire and is the mod's genuine top tier."
+  },
+  {
+   "id": "quark:ravager_hide",
+   "title": "Skin the Ravager",
+   "desc": "Ravager Hide is a mob drop with no recipe of its own; nine compress into a Bonded Ravager Hide and back. It is the expensive half of the Backpack recipe, which also has a no-hide fallback. MODULE FLAGS: ravager_hide, backpack."
+  },
+  {
+   "id": "quark:backpack",
+   "title": "Wear Your Chest",
+   "desc": "A wooden chest, iron, leather and ravager hide. The Backpack occupies the chestplate slot and adds a second row of inventory. MODULE FLAG: backpack."
+  },
+  {
+   "id": "quark:soul_bead",
+   "title": "What the Wraith Leaves",
+   "desc": "Dropped by Quark's Wraith (loot_tables/entities/wraith.json). No recipe, no other source - a pure mob-hunt item."
+  },
+  {
+   "id": "quark:crab_leg",
+   "title": "Crabs Have Legs",
+   "desc": "Dropped by Quark's Crab. Smelting, smoking or campfire-cooking it gives a Cooked Crab Leg, and those three are the only recipes in the whole jar with no module flag on them at all."
+  },
+  {
+   "id": "quark:monster_box",
+   "title": "Do Not Mine This",
+   "desc": "Found underground with its own loot table at loot_tables/misc/monster_box.json. Breaking it releases everything inside, which is the point."
+  },
+  {
+   "id": "quark:white_corundum_cluster",
+   "title": "Crystals in the Cave",
+   "desc": "Corundum grows underground in eight colours as clusters you mine. The cluster crafts into the Corundum block, which waxes, and the coloured Rainbow Lamps are built from it. MODULE FLAGS: corundum, rainbow_lamps, rainbow_lamp_corundum."
+  },
+  {
+   "id": "quark:myalite",
+   "title": "The Stone of the End",
+   "desc": "Myalite generates in the End, drops Myalite Crystal, and darkens into Dusky Myalite. Jasper, Shale, Limestone and Permafrost are its four overworld counterparts, each a mined stone with its own polished and brick ladder. MODULE FLAGS: myalite, jasper, shale, limestone, permafrost."
+  },
+  {
+   "id": "quark:midori_block",
+   "title": "Green Glazed Blocks",
+   "desc": "Midori is one of a dozen small building-block families - alongside duskbound blocks, blue nether bricks, netherrack bricks, blackstone bricks, dirt bricks, thatch, sturdy stone and the shingles - each behind its own module flag and each a self-contained set. MODULE FLAG: midori."
+  },
+  {
+   "id": "quark:charcoal_block",
+   "title": "Nine Charcoal, One Block",
+   "desc": "The compression blocks are Quark's simplest module family: charcoal, sticks, cactus, sugar cane, chorus fruit, bonded leather and rabbit hide, six crates and five sacks, each one flag and one reversible recipe. MODULE FLAG: charcoal_block."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "quark:apple_crate",
+   "members": [
+    "quark:golden_apple_crate",
+    "quark:carrot_crate",
+    "quark:golden_carrot_crate",
+    "quark:potato_crate",
+    "quark:beetroot_crate",
+    "quark:berry_sack",
+    "quark:glowberry_sack",
+    "quark:cocoa_beans_sack",
+    "quark:gunpowder_sack",
+    "quark:nether_wart_sack",
+    "quark:stick_block",
+    "quark:cactus_block",
+    "quark:sugar_cane_block",
+    "quark:chorus_fruit_block"
+   ]
+  },
+  {
+   "hub": "quark:red_corundum_cluster",
+   "members": [
+    "quark:orange_corundum_cluster",
+    "quark:yellow_corundum_cluster",
+    "quark:green_corundum_cluster",
+    "quark:blue_corundum_cluster",
+    "quark:indigo_corundum_cluster",
+    "quark:violet_corundum_cluster",
+    "quark:black_corundum_cluster",
+    "quark:red_corundum",
+    "quark:orange_corundum",
+    "quark:yellow_corundum",
+    "quark:green_corundum",
+    "quark:blue_corundum",
+    "quark:indigo_corundum",
+    "quark:violet_corundum"
+   ]
+  },
+  {
+   "hub": "quark:oak_post",
+   "members": [
+    "quark:spruce_post",
+    "quark:birch_post",
+    "quark:jungle_post",
+    "quark:acacia_post",
+    "quark:dark_oak_post",
+    "quark:mangrove_post",
+    "quark:cherry_post",
+    "quark:bamboo_post",
+    "quark:crimson_post",
+    "quark:warped_post",
+    "quark:oak_hedge",
+    "quark:spruce_hedge",
+    "quark:birch_hedge",
+    "quark:jungle_hedge"
+   ]
+  }
+ ],
+ "notes": "QUARK IS 124 SEPARATELY TOGGLEABLE FEATURES, NOT ONE MOD, AND EVERY CHAIN STEP ABOVE CARRIES ITS FLAG SO A DISABLED MODULE IS VISIBLE BEFORE THE QUEST IS WRITTEN. Verified against Quark-4.0-462.jar as shipped in this pack (Forge, MC 1.20.1; the jar also requires Zeta, which this pack ships as Zeta-1.0-31.jar). ID DETECTION AND WIDENING: 996 item models, 809 blockstates, 914 lang block./item. keys; models INTERSECT lang = 837, and that is the count used. WIDENING REJECTED for the 42 blockstate-only stems, which are 6 wall_sign / wall_hanging_sign states for the three new woods and 36 potted_* flower-pot states - none is an item. NARROWED for the 159 model-only stems, and this is the case where the naive model set OVER-counts badly: 50 of them are the abacus_0 through abacus_48 plus abacus_unset predicate models of a single item, 32 are <colour>_frame_empty / _frame_map predicate models of the dyed item frames, 13 are tropical_fish_bucket_* variant models, and the rest are backpack_locked, slime_in_a_bucket_excited, the axolotl and crab bucket colours, three lootr_* chest boats and the vanilla-slab overrides Quark ships for its vertical-slab module. NARROWED for the 43 lang-only keys: 15 are biome_map.* sub-keys of one item, 9 are music_disc_*.desc descriptions, 10 are <colour>_corundum_lamp names, and - a nice trap - block.quark.oak_ladder ('Oak Ladder'), block.quark.oak_bookshelf ('Oak Bookshelf'), block.quark.iron_chain ('Iron Chain') and block.quark.weather_sensor ('Weather Detector') are Quark RENAMING VANILLA BLOCKS, not registering new ones. THE FLAG SYSTEM - THE MOST IMPORTANT FINDING FOR QUEST SAFETY: 1558 of the jar's 1564 recipe files are wrapped in a forge condition of type quark:flag naming the feature that owns them, across 124 distinct flags. Disable a module in the Quark config and its recipes disappear from the game, so any quest targeting an item behind a disabled flag is uncompletable. The six unflagged recipes are three cooked_crab_leg variants (smelting, smoking, campfire), flamerang_smithing.json, trowel_to_iron_nugget.json and dye_item.json. FLAG COUNTS THAT MATTER: vertical_slabs owns 422 recipes and 188 quark outputs on its own, shingles 186/68, stone_bricks 130/60, variant_chests 53/34, corundum 45/36, more_stone_variants 42/21, blossom_trees 36/33. Those seven flags between them account for well over half the jar and are entirely variant families. At the other end, 40-odd flags own exactly one or two recipes each and those are the mechanics that make the chain above. PAIRED PRE-END FLAGS: iron_rod/iron_rod_pre_end, magnets/magnet_pre_end, pickarang/pickarang_never_uses_heart and tiny_potato/tiny_potato_never_uses_heart each ship TWO recipes for the same item - a cheap version and a version gated behind an End-tier or Stoneling-drop ingredient - and which one is live depends on the second flag. A quest on any of those four items is safe either way, but the ingredient it asks for is not fixed. NON-RECIPE OBTAINABLE, ALL TRACED: diamond_heart and pathfinders_quill from loot_tables/entities/stoneling.json, crab_leg and crab_shell from entities/crab.json, soul_bead from entities/wraith.json, forgotten_hat from entities/forgotten.json, ancient_fruit from loot_tables/blocks/ancient_leaves.json, monster_box from loot_tables/misc/monster_box.json, clear_shard and the sixteen coloured shards by Quark overwriting minecraft's own glass loot tables, ravager_hide from ravagers, and the corundum clusters, glow shrooms, chorus twist and weeds, myalite, jasper, shale, limestone and permafrost from worldgen with block loot tables. dragon_scale and bottled_cloud have no data-side source in the jar at all - both are code-side (the dragon and the Cloud block respectively) and are therefore obtainable but not provable from datapack files, which is why neither leads a chain step. ancient_tome likewise has only an advancement and a bookshelf_books tag entry; its loot injection is code-side. DROPPED AS NOT AN OBTAINABLE ITEM: quark:matrix_enchanter. It passes every membership test - item model, lang key 'Matrix Enchanting Table', blockstate, loot table, and it is in forge:needs_diamond_tool - but data/quark/loot_tables/blocks/matrix_enchanter.json drops minecraft:enchanting_table, not itself. The Matrix Enchanting module swaps the vanilla enchanting table for this block in the world; the item never enters an inventory and no recipe produces it. MODDB: no consensus signal - moddb.json has no quark key - so ordering is the recipe graph plus flag-family size, and there is no conflict to record. DROPS BY THE DESIRABILITY RULE: every vertical_slab, shingle, stone_brick variant, variant chest, ladder, bookshelf, hollow log, leaf carpet and stool - roughly 550 of the 837 verified ids - none of which is a mechanic."
+}

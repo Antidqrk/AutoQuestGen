@@ -1,0 +1,200 @@
+{
+  "mod": "advanced_ae",
+  "parent_mod": "ae2",
+  "verified_against": "AdvancedAE-1.3.6-1.20.1.jar",
+  "item_count_in_jar": 66,
+  "chain": [
+    {
+      "id": "advanced_ae:adv_pattern_encoder",
+      "title": "Advanced Pattern Encoder",
+      "desc": "An Engineering Processor and charged certus quartz over redstone. It encodes patterns without a terminal open, and it is the cheapest thing this mod asks you to build."
+    },
+    {
+      "id": "advanced_ae:small_adv_pattern_provider",
+      "title": "Advanced Pattern Provider",
+      "desc": "An AE2 Pattern Provider with a Logic Processor, an ender pearl and redstone. It holds far more patterns than the one it replaces and pushes to more targets at once."
+    },
+    {
+      "id": "advanced_ae:adv_pattern_provider",
+      "title": "Advanced Extended Pattern Provider",
+      "desc": "No crafting recipe. Craft an Advanced Pattern Provider Upgrade, then right-click a placed Pattern Provider with it - the block converts in place, keeping every pattern already inside."
+    },
+    {
+      "id": "advanced_ae:throughput_monitor",
+      "title": "ME Throughput Monitor",
+      "desc": "An AE2 Storage Monitor plus a Calculation Processor. It shows how fast an item is moving through the network instead of how many you have - the difference between a number and a diagnosis."
+    },
+    {
+      "id": "advanced_ae:quantum_structure",
+      "title": "Quantum Computer Structural Glass",
+      "desc": "Quartz glass around sky stone. The casing the quantum computer multiblock is walled in; cheap, and you will need a great many of them."
+    },
+    {
+      "id": "advanced_ae:reaction_chamber",
+      "title": "Reaction Chamber",
+      "desc": "An AE2 Condenser and a Vibration Chamber with fluix dust, glowstone and a bucket. Every material this mod invents comes out of this machine, so nothing below exists until it is built."
+    },
+    {
+      "id": "advanced_ae:shattered_singularity",
+      "title": "Shattered Singularity",
+      "desc": "React an AE2 Singularity with ender pearl dust and sky dust in lava. Two out per singularity in, and it is the seed crystal for the entire quantum tier."
+    },
+    {
+      "id": "advanced_ae:quantum_infused_dust",
+      "title": "Quantum Infused Dust",
+      "desc": "Press a Shattered Singularity in an Inscriber. It exists for one purpose: to be dissolved into the fluid everything else is infused with."
+    },
+    {
+      "id": "advanced_ae:quantum_infusion_bucket",
+      "title": "Quantum Infusion",
+      "desc": "React one dust into four buckets of water and the chamber fills with Quantum Infusion, a litre at a time. Bucket some out - the higher reactions all demand it as their working fluid."
+    },
+    {
+      "id": "advanced_ae:quantum_alloy",
+      "title": "Quantum Alloy",
+      "desc": "Copper, a Shattered Singularity and an AE2 Singularity reacted in Quantum Infusion. One ingot per cycle, and both processors and armour are made of it."
+    },
+    {
+      "id": "advanced_ae:quantum_processor_press",
+      "title": "Inscriber Quantum Press",
+      "desc": "Press a Shattered Singularity between AE2's Logic and Engineering presses. Like every AE2 press it can then duplicate itself from an iron block, so you only ever make one the hard way."
+    },
+    {
+      "id": "advanced_ae:printed_quantum_processor",
+      "title": "Printed Quantum Circuit",
+      "desc": "Inscribe Quantum Alloy with the Quantum Press. The fourth print, sitting one whole tier above AE2's engineering circuit."
+    },
+    {
+      "id": "advanced_ae:quantum_processor",
+      "title": "Quantum Processor",
+      "desc": "The printed circuit over printed silicon with redstone between, in an Inscriber - or four at a time in the Reaction Chamber. Every block past this point needs one."
+    },
+    {
+      "id": "advanced_ae:quantum_alloy_plate",
+      "title": "Quantum Alloy Plate",
+      "desc": "Eight Quantum Alloy, two netherite ingots and a whole nether star reacted in Quantum Infusion for a single plate. The most expensive single step in the mod."
+    },
+    {
+      "id": "advanced_ae:quantum_upgrade_base",
+      "title": "Quantum Upgrade Base Card",
+      "desc": "A Quantum Alloy Plate and a Quantum Processor. Blank stock for the twenty-three upgrade cards the quantum armour accepts - none of them exist without it."
+    },
+    {
+      "id": "advanced_ae:quantum_unit",
+      "title": "Quantum Crafting Unit",
+      "desc": "A Quantum Processor, an AE2 Crafting Unit and a Singularity. The brick the whole quantum computer multiblock is assembled from."
+    },
+    {
+      "id": "advanced_ae:quantum_storage_component",
+      "title": "Quantum Storage Component",
+      "desc": "A Quantum Processor with a 256k cell component, vibrant quartz glass and a spatial component. The densest storage part in the ecosystem."
+    },
+    {
+      "id": "advanced_ae:quantum_storage_256",
+      "title": "256M Quantum Computer Storage",
+      "desc": "Built up from the 128M version with more units and singularities. This is the crafting storage that lets a quantum computer hold a job the size of a whole base."
+    },
+    {
+      "id": "advanced_ae:quantum_accelerator",
+      "title": "Quantum Computer Accelerator",
+      "desc": "A Quantum Processor, a Quantum Crafting Unit and a Shattered Singularity. Co-processing for the quantum computer, and every higher block in the mod takes one as an ingredient."
+    },
+    {
+      "id": "advanced_ae:quantum_crafter",
+      "title": "Quantum Crafter",
+      "desc": "An Accelerator, a Crafting Unit, a Shattered Singularity and a 64k cell component. It runs crafting patterns directly, at a rate a wall of Molecular Assemblers cannot match."
+    },
+    {
+      "id": "advanced_ae:quantum_core",
+      "title": "Quantum Computer Core",
+      "desc": "An Accelerator, the 256M Storage, a Crafting Unit, a Shattered Singularity and a Singularity. The heart of the multiblock - one per computer, and it is what the structural glass is wrapped around."
+    },
+    {
+      "id": "advanced_ae:quantum_multi_threader",
+      "title": "Quantum Computer Multi-Threader",
+      "desc": "An Accelerator, a Core, a Processor and a Crafting Unit. It lets one quantum computer run several crafting jobs at once instead of queueing them."
+    },
+    {
+      "id": "advanced_ae:data_entangler",
+      "title": "Quantum Data Entangler",
+      "desc": "A Core, the 256M Storage, a Crafting Unit and a Shattered Singularity. The last block in the mod, and the one that ties two quantum computers into a single machine."
+    },
+    {
+      "id": "advanced_ae:quantum_helmet",
+      "title": "Quantum Helmet",
+      "desc": "A netherite helmet with a Quantum Alloy Plate, a Quantum Processor, a Storage Component and a Wireless Access Point. Powered armour with slots - it is what all those upgrade cards go into."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "advanced_ae:quantum_helmet",
+      "members": [
+        "advanced_ae:quantum_chestplate",
+        "advanced_ae:quantum_leggings",
+        "advanced_ae:quantum_boots",
+        "advanced_ae:flight_card",
+        "advanced_ae:hp_buffer_card",
+        "advanced_ae:evasion_card",
+        "advanced_ae:magnet_card",
+        "advanced_ae:night_vision_card",
+        "advanced_ae:luck_card"
+      ]
+    },
+    {
+      "hub": "advanced_ae:quantum_upgrade_base",
+      "members": [
+        "advanced_ae:walk_speed_card",
+        "advanced_ae:sprint_speed_card",
+        "advanced_ae:swim_speed_card",
+        "advanced_ae:jump_height_card",
+        "advanced_ae:step_assist_card",
+        "advanced_ae:flight_drift_card",
+        "advanced_ae:reach_card",
+        "advanced_ae:attack_speed_card",
+        "advanced_ae:strength_card",
+        "advanced_ae:regeneration_card",
+        "advanced_ae:water_breathing_card",
+        "advanced_ae:lava_immunity_card",
+        "advanced_ae:recharging_card",
+        "advanced_ae:auto_feeding_card"
+      ]
+    },
+    {
+      "hub": "advanced_ae:adv_pattern_provider",
+      "members": [
+        "advanced_ae:adv_pattern_provider_part",
+        "advanced_ae:small_adv_pattern_provider",
+        "advanced_ae:small_adv_pattern_provider_part",
+        "advanced_ae:adv_pattern_provider_upgrade",
+        "advanced_ae:adv_pattern_provider_capacity_upgrade",
+        "advanced_ae:import_export_bus_part",
+        "advanced_ae:stock_export_bus_part",
+        "advanced_ae:advanced_io_bus_part",
+        "advanced_ae:adv_pattern_encoder"
+      ]
+    },
+    {
+      "hub": "advanced_ae:quantum_crafter_terminal",
+      "members": [
+        "advanced_ae:wireless_quantum_crafter_terminal",
+        "advanced_ae:throughput_monitor",
+        "advanced_ae:throughput_monitor_configurator",
+        "advanced_ae:auto_stock_card",
+        "advanced_ae:pick_craft_card",
+        "advanced_ae:portable_workbench_card"
+      ]
+    },
+    {
+      "hub": "advanced_ae:quantum_alloy_block",
+      "members": [
+        "advanced_ae:quantum_alloy_slab",
+        "advanced_ae:quantum_alloy_stairs",
+        "advanced_ae:quantum_alloy_wall",
+        "advanced_ae:quantum_alloy",
+        "advanced_ae:quantum_alloy_plate",
+        "advanced_ae:quantum_storage_128"
+      ]
+    }
+  ],
+  "notes": "Verified against AdvancedAE-1.3.6-1.20.1.jar: META-INF/mods.toml modId=advanced_ae, modLoader=javafml, minecraft versionRange [1.20.1,1.20.2) - a closed range pinning 1.20.1 - forge [47,), mandatory dependencies on ae2 [15.4.9,) and ae2wtlib [15.3.0,); no fabric.mod.json, all 298 sampled class files at major version 61 (Java 17 = 1.20.1). The Modrinth artifact is labelled both 'forge' and 'neoforge' on the same file, so the loader had to be settled from META-INF/mods.toml, which is the Forge file and carries no neoforge.mods.toml. ID DERIVATION, two independent passes, both landing on 66. Pass 1 (assets): assets/advanced_ae/models/item/ holds 66 json files, and assets/advanced_ae/lang/en_us.json yields 50 item.advanced_ae.* plus 17 block.advanced_ae.* stems; model-minus-lang is EMPTY and lang-minus-model is exactly one entry. Pass 2 (bytecode, derived without reference to assets): the CONSTANT_Utf8 pools of net/pedroksl/advanced_ae/common/definitions/AAEItems.class and AAEBlocks.class between them contain 65 of the 66 model names. The single one they do not is advanced_ae:quantum_infusion_bucket, which is correct and expected - bucket items are registered off the fluid definition, and the jar backs that up with fluid.advanced_ae.quantum_infusion_source, fluid.advanced_ae.quantum_infusion_flowing and fluid_type.advanced_ae.quantum_infusion_type lang keys. WIDENING REJECTED, with the counter-example the brief warns about: advanced_ae:quantum_infusion_block has BOTH a lang key (block.advanced_ae.quantum_infusion_block) AND a blockstate, and is still not an item - it is the fluid's own block, the liquid you see in the world. A blockstate proves a block, not an item, and this is that case. The item you can actually hold is the bucket. GeckoLib was checked and is a non-issue here: assets/advanced_ae/geo/item/ contains quantum_armor.geo.json and quantum_armor2.geo.json, but the four armour pieces they render all have ordinary models/item files as well, so nothing is hidden behind geo. NAMESPACE NOTE: the jar also ships assets/ae2/models/item/cable_pattern_provider.json and export_bus.json - two ae2-namespace model overrides, not new items. No advanced_ae content registers under a foreign namespace, so no registers_into entry is needed. UNOBTAINABLE, DROPPED, 1 of 66: advanced_ae:adv_processing_pattern has model, lang key and registration but no recipe and no loot table. It is the encoded output of the Advanced Pattern Encoder rather than a blank you can craft, and asking for one by id is not a task a player can plan against. Everything else - 65 ids - has a verified obtain path. OBTAIN PATH THAT IS NOT A RECIPE, and it matters because a recipe-only scan reads it as impossible: advanced_ae:adv_pattern_provider looks like a closed loop. Its only two data recipes are a shapeless conversion to and from advanced_ae:adv_pattern_provider_part, plus a forge:conditional shaped recipe gated on modid 'expatternprovider' being loaded - so with Extended AE absent there is no crafting entry at all. The real path is in bytecode: net/pedroksl/advanced_ae/common/items/AdvPatternProviderUpgradeItem.class overrides useOn, tests the clicked block entity against appeng PatternProviderBlockEntity and against AAEBlocks.SMALL_ADV_PATTERN_PROVIDER, and swaps it for AAEBlocks.ADV_PATTERN_PROVIDER in place via BlockUpgradeItem.replaceTile, carrying the NBT across. Craft advanced_ae:adv_pattern_provider_upgrade, right-click a placed AE2 Pattern Provider, break the result. The block loot table then yields the item. RECIPE-FORMAT TRAPS in this jar, all handled: (a) the custom advanced_ae:reaction type does not use 'result' at all - its output is an AE2 GenericStack shaped {\"#\": count, \"#c\": \"ae2:i\" or \"ae2:f\", \"id\": <id>}, and the \"#c\" discriminator is the only thing distinguishing an item output from a FLUID output. quantum_infusion.json is the fluid case, emitting 1000mB of advanced_ae:quantum_infusion_source, which is why quantum_infusion_source appears as a produced id with no item model. (b) Seven recipes are forge:conditional wrappers gating content on a THIRD mod - expatternprovider (2), appflux (3), megacells (2) - and those produce appflux:, megacells: and expatternprovider-dependent results, none of which are counted here. One further conditional, wireless_quantum_crafter_terminal.json, is gated on ae2wtlib, but ae2wtlib is a MANDATORY dependency in mods.toml, so that condition is always satisfied and the terminal is genuinely obtainable. (c) Recipes for this mod's own items also live under data/advanced_ae/recipes/ using ae2:inscriber and ae2wtlib:combine / ae2wtlib:upgrade types, not just vanilla ones. ORDERING is a deep recipe graph, read edge by edge. The reaction spine is forced and linear: reaction_chamber (AE2 condenser + vibration chamber, no advanced_ae ingredient) -> shattered_singularity (reacts ae2:singularity in lava) -> quantum_infused_dust (inscriber-presses the shattered singularity) -> the quantum_infusion_source fluid -> quantum_alloy (which reacts IN that fluid, so the fluid is a hard prerequisite) -> printed_quantum_processor (inscribed from quantum_alloy with the quantum press) -> quantum_processor. quantum_alloy_plate then reacts eight alloy with netherite and a nether star, again in the infusion fluid. From quantum_processor the multiblock builds up: quantum_unit -> quantum_accelerator -> quantum_core (which explicitly takes advanced_ae:quantum_accelerator AND advanced_ae:quantum_storage_256) -> quantum_multi_threader (takes core AND accelerator) -> data_entangler (takes core). Storage is its own line: quantum_storage_component -> quantum_storage_128 -> quantum_storage_256. The pattern-provider and bus items sit off to the side at AE2's own tier and are placed first because they need no advanced_ae material at all. CONSENSUS CONFLICT, RECORDED AND OVERRIDDEN - this is the 'machine ranked before the parts it is built from' failure again, and here it is provable from a single recipe file. moddb.json orders printed_quantum_processor 0.0, quantum_core 0.25, quantum_structure 0.5, quantum_multi_threader 0.75, quantum_accelerator 1.0, i.e. it puts quantum_accelerator LAST. But the shaped recipe for advanced_ae:quantum_core lists advanced_ae:quantum_accelerator as an ingredient, and quantum_multi_threader lists both the core and the accelerator, so accelerator must precede both. Separately, consensus puts quantum_structure at 0.5, in the middle of the quantum tier, when its recipe is nothing but ae2:quartz_glass around ae2:sky_stone_block - buildable before any advanced_ae material exists. The graph is preferred on both points. Consensus also omits the entire reaction line (chamber, shattered singularity, infused dust, infusion fluid, alloy, plate) which is every prerequisite of the item it ranks first. DESIRABILITY: quantum_alloy_slab, quantum_alloy_stairs and quantum_alloy_wall are kept out of the chain by the slab/stairs/wall rule and wheeled. ARMOUR: only advanced_ae:quantum_helmet is quested; chestplate, leggings and boots are wheeled with the cards that plug into them, which is the same set the mod's own GUI treats as one system."
+}

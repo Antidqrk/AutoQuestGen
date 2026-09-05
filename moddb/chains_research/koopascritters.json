@@ -1,0 +1,269 @@
+{
+ "mod": "koopascritters",
+ "verified_against": "KoopasCritters_1.20.1Forge_V0.5.jar",
+ "item_count_in_jar": 249,
+ "chain": [
+  {
+   "id": "koopascritters:kopje_fig_log",
+   "title": "The Fig Tree",
+   "desc": "Kopje fig is the mod's only wood and the whole kopje building set comes off it. Logs smelt to charcoal and strip into planks the usual way."
+  },
+  {
+   "id": "koopascritters:kopje_fig_planks",
+   "title": "Planks",
+   "desc": "The planks make an oak boat, a chest and sticks as well as the mod's own door, trapdoor, fence, button, pressure plate, slab and stairs - a complete wood family from one tree."
+  },
+  {
+   "id": "koopascritters:fig_kc",
+   "title": "Figs",
+   "desc": "Figs come off the kopje fig tree and replant as saplings. They are the base of the mod's small food line."
+  },
+  {
+   "id": "koopascritters:crate_of_figs",
+   "title": "A Crate Of Them",
+   "desc": "Nine figs. The mod has three crates - figs, frass and salt - and each is a straight nine-to-one storage block."
+  },
+  {
+   "id": "koopascritters:fig_neuton_kc",
+   "title": "Fig Newton",
+   "desc": "A fig, bread and a milk bucket. The mod's food recipes are small in number and all of them are jokes worth reading."
+  },
+  {
+   "id": "koopascritters:porkchop_fig",
+   "title": "Pork And Fig",
+   "desc": "The other fig dish, and the better one."
+  },
+  {
+   "id": "koopascritters:termite_raw_kc",
+   "title": "Termites",
+   "desc": "Raw termites come off the mound. They cook three ways and they are the reagent for every termite block in the mod."
+  },
+  {
+   "id": "koopascritters:cooked_termite_kc",
+   "title": "Cook Them",
+   "desc": "Furnace, smoker or campfire. Cooked termites plus a bowl make kumbe kumbe, which is a real dish and the mod is not joking about that one."
+  },
+  {
+   "id": "koopascritters:termite_mound",
+   "title": "Build A Mound",
+   "desc": "Raw termites and dirt. The mound is the root of a six-block family - chamber, nursery, beetle colony, infested, wall and brick."
+  },
+  {
+   "id": "koopascritters:termite_mound_beetle_colony",
+   "title": "Let The Beetles In",
+   "desc": "A mound plus more raw termites. The colony is what the nursery is built from and it is where headlight beetles come from."
+  },
+  {
+   "id": "koopascritters:termite_brick",
+   "title": "Brick From The Mound",
+   "desc": "The termite brick and its slab and stairs are the mod's building material, and the only one that is not wood or granite."
+  },
+  {
+   "id": "koopascritters:frass",
+   "title": "Frass",
+   "desc": "Frass is insect droppings and it crafts straight into vanilla bone meal, which makes the termite line quietly useful for farming."
+  },
+  {
+   "id": "koopascritters:beetle_juice",
+   "title": "Beetle Juice",
+   "desc": "Harvested from headlight beetles. It converts back and forth with the lamp, and infesting a termite mound needs it."
+  },
+  {
+   "id": "koopascritters:beetle_juice_lamp",
+   "title": "A Lamp That Is Alive",
+   "desc": "Beetle juice in a block. The mod's only light source and the best-looking thing in it."
+  },
+  {
+   "id": "koopascritters:goo_kc",
+   "title": "Snail Goo",
+   "desc": "Goo comes off the giant African land snail. It crafts into a vanilla slime ball, so a snail pen is a slime farm."
+  },
+  {
+   "id": "koopascritters:goo_block",
+   "title": "A Block Of Goo",
+   "desc": "Nine goo. Goo, gooball and goo_block all convert between each other, which is three ids for one material."
+  },
+  {
+   "id": "koopascritters:giant_snail_shell",
+   "title": "The Shell",
+   "desc": "Off the giant snail. The shell, goo and lapis make a bubble blower, which is the only toy in the mod."
+  },
+  {
+   "id": "koopascritters:raw_snail_kc",
+   "title": "Snail Meat",
+   "desc": "The other half of the snail, and the start of the mod's best recipe."
+  },
+  {
+   "id": "koopascritters:buff_milk",
+   "title": "Buffalo Milk",
+   "desc": "Cape buffalo milk. It is not a bucket - it is its own item, which is why a milk-bucket quest will not match it."
+  },
+  {
+   "id": "koopascritters:organic_salt_kc",
+   "title": "Salt",
+   "desc": "Organic salt crates up nine-to-one and is needed by both the butter and the escargot."
+  },
+  {
+   "id": "koopascritters:cape_buffalo_butter",
+   "title": "Butter",
+   "desc": "Buffalo milk, salt and sugar. Shapeless, and the only dairy step in the mod."
+  },
+  {
+   "id": "koopascritters:escargot",
+   "title": "Escargot",
+   "desc": "Butter, salt, raw snail, an allium, a golden carrot and leaves. Six ingredients across three animals - the most demanding craft in the mod and the one it is built around."
+  },
+  {
+   "id": "koopascritters:reptile_hide",
+   "title": "Reptile Hide",
+   "desc": "Hide from the mod's lizards and snakes. It crafts into vanilla leather, or into something better."
+  },
+  {
+   "id": "koopascritters:bonded_reptile_leather",
+   "title": "Bonded Leather",
+   "desc": "Nine hides. Note the id spelling: the mod ALSO registers koopascritters:reptilehide with no underscore, and only reptile_hide appears in any recipe."
+  },
+  {
+   "id": "koopascritters:muntjac_antler",
+   "title": "An Antler",
+   "desc": "Off the giant muntjac. It makes the mod's only knife."
+  },
+  {
+   "id": "koopascritters:muntjac_antler_knife",
+   "title": "The Antler Knife",
+   "desc": "One of only two equipment items the mod adds, the other being impalla horn leggings."
+  },
+  {
+   "id": "koopascritters:impalla_horn_block",
+   "title": "Impala Horn",
+   "desc": "The horn block is both decoration and armour material, and it has a double-height variant that drops the single."
+  },
+  {
+   "id": "koopascritters:impalla_armor_leggings",
+   "title": "Horn Leggings",
+   "desc": "Horn block, diamond and leather. The only armour piece in the mod - there is no helmet, chestplate or boot to match it."
+  },
+  {
+   "id": "koopascritters:penguin_feather_kc",
+   "title": "Penguin Feather",
+   "desc": "From the four penguin species. Feathers make arrows and writable books, which is the mod quietly giving you a feather source that is not a chicken."
+  },
+  {
+   "id": "koopascritters:penguin_boot_armor_kc_boots",
+   "title": "Penguin Boots",
+   "desc": "The mod's second and last wearable, and it does not pair with the impala leggings in any set bonus."
+  },
+  {
+   "id": "koopascritters:kopje_granite_kc",
+   "title": "Kopje Granite",
+   "desc": "The stone of the kopje biome, with a polished form, slabs, stairs and a wall. It is where the animals live."
+  },
+  {
+   "id": "koopascritters:zoology_box_kc",
+   "title": "The Zoology Box",
+   "desc": "The mod is a zoo mod at heart, and the zoology box plus the forty-six species and infographic display blocks are how it presents its animals."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "koopascritters:termite_mound",
+   "members": [
+    "koopascritters:termite_mound_chamber",
+    "koopascritters:termite_mound_beetle_colony",
+    "koopascritters:termite_mound_infested",
+    "koopascritters:termite_mound_wall",
+    "koopascritters:termine_mound_nursery",
+    "koopascritters:termite_brick",
+    "koopascritters:termite_brick_slab",
+    "koopascritters:termite_brick_stairs",
+    "koopascritters:smooth_termite_mount",
+    "koopascritters:smooth_termite_mound_slab",
+    "koopascritters:crate_of_frass"
+   ]
+  },
+  {
+   "hub": "koopascritters:kopje_fig_planks",
+   "members": [
+    "koopascritters:kopje_fig_log",
+    "koopascritters:kopje_fig_branch",
+    "koopascritters:kopje_fig_leaves",
+    "koopascritters:kopje_fig_leaves_hanging",
+    "koopascritters:kopje_fig_sapling",
+    "koopascritters:kopje_fig_blossom",
+    "koopascritters:kopje_fig_bud",
+    "koopascritters:kopje_fig_fruit",
+    "koopascritters:kopje_carved_planks",
+    "koopascritters:kopje_door",
+    "koopascritters:kopje_trapdoor",
+    "koopascritters:kopje_fence",
+    "koopascritters:kopje_roots",
+    "koopascritters:stripped_kopje_log"
+   ]
+  },
+  {
+   "hub": "koopascritters:kopje_granite_kc",
+   "members": [
+    "koopascritters:polished_granite_kc",
+    "koopascritters:kopje_granite_slab_kc",
+    "koopascritters:kopje_granite_kc_stairs",
+    "koopascritters:polished_kopje_granite_slab",
+    "koopascritters:polished_kopje_granite_stairs_kc",
+    "koopascritters:polished_kopje_granite_wall_kc",
+    "koopascritters:pebbles",
+    "koopascritters:pebbles_slab",
+    "koopascritters:sticks_n_dirt"
+   ]
+  },
+  {
+   "hub": "koopascritters:pot_of_desert_rain_frog",
+   "members": [
+    "koopascritters:pot_of_candy_cane_snail",
+    "koopascritters:pot_of_chinese_cave_gecko",
+    "koopascritters:pot_of_fire_salamander",
+    "koopascritters:pot_of_mexican_rosy_boa",
+    "koopascritters:pot_of_pink_land_iguana",
+    "koopascritters:pot_of_pink_velvet_worm",
+    "koopascritters:pot_of_rainbow_rock_lizard",
+    "koopascritters:pot_of_tricolor_hognose",
+    "koopascritters:potof_african_giant_snail",
+    "koopascritters:potof_chinese_crocodile_lizard",
+    "koopascritters:potof_sagalla_caecilian",
+    "koopascritters:potof_tree_lobster",
+    "koopascritters:chuckwalla_pot",
+    "koopascritters:indian_bullfrog_pot"
+   ]
+  },
+  {
+   "hub": "koopascritters:raw_wild_bird",
+   "members": [
+    "koopascritters:cooked_wild_bird",
+    "koopascritters:raw_agazzis_cichlid",
+    "koopascritters:raw_bowmouth_guitarfish",
+    "koopascritters:raw_clown_loach",
+    "koopascritters:raw_goblin_shark",
+    "koopascritters:raw_peacock_bass",
+    "koopascritters:raw_scallophead_shark",
+    "koopascritters:raw_snail_kc",
+    "koopascritters:kumbe_kumbe_kc",
+    "koopascritters:escargot",
+    "koopascritters:owl_pellet_kc"
+   ]
+  },
+  {
+   "hub": "koopascritters:chinstrap_nest_1",
+   "members": [
+    "koopascritters:gentoo_nest_1",
+    "koopascritters:rockhopper_nest_1",
+    "koopascritters:yellow_eye_nest_1",
+    "koopascritters:infographic_one",
+    "koopascritters:infographic_two",
+    "koopascritters:infographic_three",
+    "koopascritters:infographic_four_kc",
+    "koopascritters:infographic_five_kc",
+    "koopascritters:zoology_box_kc",
+    "koopascritters:bubble_blower_shell_kc"
+   ]
+  }
+ ],
+ "notes": "THIS MOD HAS NO ENTITY LOOT TABLES AT ALL, which is the single most important thing to know about it. It registers 74 distinct animals (74 spawn eggs, 73 entity.koopascritters.* lang keys) and data/koopascritters/loot_tables/entities does not exist - not one file. Every animal product in the mod (termite_raw_kc, reptile_hide, goo_kc, giant_snail_shell, raw_snail_kc, buff_milk, muntjac_antler, penguin_feather_kc, beetle_juice, organic_salt_kc, owl_pellet_kc, frass, raw_wild_bird and the six raw fish) is dropped or harvested through code, not through a datapack table. Consequently NO kill: step is written anywhere in this file - there is no verifiable drop to hang one on - and the chain asks for the products directly instead. DUPLICATE REGISTRATIONS, and this WILL kill quests. The mod registers several things twice under two spellings, one with underscores and one without. Items: reptile_hide AND reptilehide, raw_wild_bird AND rawwildbird, cooked_wild_bird AND cookedwildbird, pebbles_slab AND pebblesslab. Entities: asian_leopard_cat AND asianleopardcat, california_quail AND californiaquail, desert_rain_frog AND desertrainfrog, fire_salamander AND firesalamander, pallas_cat AND pallascat, uakari_monkey AND ukarimonkey, yellow_footed_tortoise AND yellowfootedtortoise. In every case the UNDERSCORED form is the live one - it is the only spelling that appears in any recipe (bonded_reptile_leather is crafted from reptile_hide, the cooking recipes take raw_wild_bird) - and the run-together form is a dead legacy duplicate. The mod is also internally inconsistent about the pattern in names it did not duplicate: it ships pot_of_desert_rain_frog and pot_of_fire_salamander alongside potof_african_giant_snail and potof_tree_lobster, and termine_mound_nursery is a typo for termite. Never normalise or guess a koopascritters id; read it. LOADER: META-INF/mods.toml declares modId koopascritters and the jar carries BOTH META-INF/mods.toml and META-INF/neoforge.mods.toml, so it loads on Forge and NeoForge 1.20.1. This mod is CurseForge only - it does not exist on Modrinth under any slug - and the file was pulled through the CurseForge API. VERIFICATION, TWO PASSES: pass A took the assets/koopascritters/models/item stems INTERSECT the item./block. lang keys and gave 249. Pass B independently rebuilt from recipe results, loot-table entry names, blockstates and lang keys and gave 250. The single difference is pebblesslab_double, a blockstate-only double-slab placement state with zero data references. No widening; final count stays 249. THE HONEST NUMBER IS ABOUT 129. Of the 249 ids: 74 are spawn eggs with zero data references (creative-tab only, none used here); 46 are speciegraphic_* and species_graphic_* display blocks, one per animal, which are placeable info plaques rather than content; and 12 are bucket_of_/bowl_of_/bottle_of_ containers filled by using a bucket or bowl on a live animal in code. That leaves roughly 129 real, craftable or harvestable ids, of which 78 are the result of a datapack recipe. OBTAINABILITY: 128 pass-A ids have neither a recipe nor a loot table, and 74 of those are the spawn eggs. The rest are the code-harvested animal products listed above plus the containers. Nothing was dropped as uncompletable, because every non-egg item either has a recipe, has a block loot table that drops itself, or is a documented animal product consumed by a recipe that does exist - escargot consuming raw_snail_kc and buff_milk is proof that both are gettable. GRAPH: three small trees. The fig tree gives kopje_fig_log -> planks -> the nine-block wood family, and fig_kc -> crate/newton/porkchop/sapling. The termite line gives termite_raw_kc -> termite_mound -> chamber, beetle colony, nursery, infested, wall and brick -> brick slab and stairs, with frass crafting to bone meal on the side. The animal-product line converges on escargot, which needs cape_buffalo_butter (from buff_milk and organic_salt_kc), organic_salt_kc again, and raw_snail_kc - three different animals in one bowl, and it is the deepest recipe the mod has. Everything else is flat. CONSENSUS: moddb.json lists 26 koopascritters ids and all 26 resolve in this jar - goo_block, termite_brick, termite_mound_wall, escargot, kopje_fig_log, crate_of_figs, frass, polished_granite_kc, fig_kc, buff_milk, termite_mound_beetle_colony, bonded_reptile_leather, porkchop_fig and the rest. Every one uses the underscored spelling, which independently confirms that the run-together duplicates are dead. No conflict with the recipe graph. DESIRABILITY: the granite and termite slab, stair and wall variants are kept out of the spine and appear only in their wheels; there are no ores or nuggets in this mod."
+}

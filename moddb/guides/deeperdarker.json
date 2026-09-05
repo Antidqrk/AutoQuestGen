@@ -1,0 +1,158 @@
+{
+ "mod": "deeperdarker",
+ "ids_in_jar": 270,
+ "videos": [
+  {
+   "id": "KZQcFSvNb4c",
+   "title": null,
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 7710
+  }
+ ],
+ "items": {
+  "deeperdarker:warden_helmet": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.0531,
+   "praise": 5,
+   "warn": 1,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "deeperdarker:ancient_vase": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.1634,
+   "praise": 4,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "deeperdarker:soul_dust": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.6152,
+   "praise": 3,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "deeperdarker:warden_upgrade_smithing_template": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.2047,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "deeperdarker:heart_of_the_deep": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1459,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "deeperdarker:soul_crystal": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7219,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "deeperdarker:reinforced_echo_shard": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1801,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "deeperdarker:gloomslate": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9192,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "deeperdarker:warden_chestplate": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7657,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "deeperdarker:warden_carapace": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1385,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "deeperdarker:echo_soil": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4047,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "entry": [
+   "You do NOT build this portal. The frame already exists, pre-generated in the middle of every vanilla Ancient City. Your job is to find it and switch it on. Source KZQcFSvNb4c.",
+   "The key is deeperdarker:heart_of_the_deep, and the ONLY way to get it is to kill the vanilla Warden. There is no alternative recipe.",
+   "To open it: clear every sculk vein off the inner frame, then right-click the frame with deeperdarker:heart_of_the_deep. It becomes deeperdarker:otherside_portal and you can jump in.",
+   "Before going, the guide insists on a full kit: netherite armour, a deeperdarker:warden_helmet, enchanted diamond or netherite weapons and tools, an ender chest, healing potions, food, golden apples and building blocks. 'This dimension is extremely dangerous and you will need these items to survive there.'",
+   "deeperdarker:warden_helmet is the one piece it calls mandatory rather than nice-to-have, because wardens spawn in the Otherside and inflict Darkness, which the helmet negates. Build it: craft deeperdarker:reinforced_echo_shard from 1 minecraft:echo_shard + 4 minecraft:phantom_membrane + 4 deeperdarker:warden_carapace, then combine it in a smithing table with a minecraft:netherite_helmet and a deeperdarker:warden_upgrade_smithing_template. The template drops from Ancient City chests at roughly 60%.",
+   "deeperdarker:warden_carapace comes 1-3 at a time from killing the Warden; deeperdarker:ancient_vase can also yield it but the guide says the chance is 'really low'.",
+   "A SECOND portal frame exists in the bottom level of the Ancient Temple inside the Otherside itself. It needs sculk veins AND misplaced minecraft:reinforced_deepslate cleared, which the guide warns 'takes a lot of time', then the same deeperdarker:heart_of_the_deep activation."
+  ],
+  "boss_order": [
+   "This mod has NO boss ladder of its own. The vanilla Warden is the single gate, and it sits BEFORE the dimension rather than inside it. Everything past the portal is biome and structure exploration, not a boss chain.",
+   "deeperdarker:stalker is the nearest thing to a mini-boss: it rarely appears when you break a deeperdarker:ancient_vase and is the only source of deeperdarker:soul_crystal."
+  ],
+  "order": [
+   "This is a POST-NETHERITE, endgame dimension. Ordering it early in a questbook is wrong: the entry item requires beating the Warden, which most players do last.",
+   "FIRST, in the Overworld: find an Ancient City, loot the deeperdarker:warden_upgrade_smithing_template, kill the Warden for deeperdarker:heart_of_the_deep and deeperdarker:warden_carapace, and build the warden armour BEFORE entering.",
+   "On arrival: place a bed. Beds do NOT explode in the Otherside, unlike the Nether, so you can set spawn there - the guide calls this out explicitly.",
+   "Three biomes in ascending safety: Otherside Deeplands (worst - sculk shriekers, deeperdarker:sculk_jaw, deeperdarker:infested_sculk), Echoing Forest (brighter, no shriekers, 'a bit less dangerous'), Overcast Columns (deeperdarker:gloomy_geyser and deeperdarker:crystallized_amber).",
+   "The Ancient Temple is the only structure and has three levels; the bottom one is HIDDEN behind a 2x2 water pool in the centre of the entrance level, and holds the rare deeperdarker:sculk_transmitter."
+  ],
+  "gates": [
+   "HARD GATE: no deeperdarker:heart_of_the_deep means no dimension, and the only reliable source is killing the Warden.",
+   "HARD GATE on the helmet: without the deeperdarker:warden_upgrade_smithing_template from Ancient City chests you cannot make deeperdarker:warden_helmet at all.",
+   "The inner frame must be completely cleared of sculk veins before it will activate."
+  ],
+  "traps": [
+   "deeperdarker:sculk_jaw looks like floor. It opens as you walk onto it, drops you in and deals heavy damage - 'that will kill you if you don't escape quickly'.",
+   "Moving too much or breaking blocks summons the Warden inside the Otherside, exactly as in an Ancient City.",
+   "deeperdarker:gloomy_geyser launches you upward; the danger is the fall damage on the way back down.",
+   "Breaking deeperdarker:ancient_vase can spawn a deeperdarker:stalker and swarms of deeperdarker:sculk_leech.",
+   "There is no weather and no light except deeperdarker:sculk_gleam - bring your own light source.",
+   "Bring an ender chest specifically so a death does not lose the kit."
+  ],
+  "signature": [
+   "deeperdarker:heart_of_the_deep - the Warden drop that is the entire key to the mod.",
+   "deeperdarker:warden_helmet and the rest of the deeperdarker:warden_carapace armour set - the mod's marquee gear.",
+   "deeperdarker:reinforced_echo_shard and deeperdarker:warden_upgrade_smithing_template - the crafting spine of that set.",
+   "deeperdarker:sculk_transmitter - the rare treasure at the bottom of the Ancient Temple.",
+   "deeperdarker:soul_elytra and deeperdarker:sonorous_staff - late items present in the jar; the transcript cuts off before covering them, so their recipes are NOT sourced here.",
+   "deeperdarker:sculk_snapper - tameable with an enchanted minecraft:netherite_chestplate, then it fights for you and hands over enchanted books."
+  ]
+ }
+}

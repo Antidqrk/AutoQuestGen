@@ -1,0 +1,160 @@
+{
+ "mod": "notreepunching",
+ "verified_against": "notreepunching-forge-1.20-7.1.0.jar",
+ "item_count_in_jar": 51,
+ "chain": [
+  {
+   "id": "notreepunching:stone_loose_rock",
+   "title": "Pebbles Before Pickaxes",
+   "desc": "Loose Rocks generate scattered on the ground and are the one block you may still take bare-handed; four of them press into a cobblestone."
+  },
+  {
+   "id": "notreepunching:flint_shard",
+   "title": "Chips Off the Old World",
+   "desc": "Striking flint against a hard block knaps it into Flint Shards, the only cutting edge available before metal."
+  },
+  {
+   "id": "notreepunching:flint_knife",
+   "title": "First Edge",
+   "desc": "A flint shard lashed to a stick makes the Flint Knife, which unlocks fibre, string and leather cutting."
+  },
+  {
+   "id": "notreepunching:plant_fiber",
+   "title": "Harvest the Undergrowth",
+   "desc": "Cutting leaves, vines, saplings, flowers, wheat or sugar cane with a knife yields Plant Fiber."
+  },
+  {
+   "id": "notreepunching:plant_string",
+   "title": "Twisted Priorities",
+   "desc": "Three plant fibres twist into Plant String, the mod's substitute for spider silk, and it smelts into vanilla string."
+  },
+  {
+   "id": "notreepunching:flint_axe",
+   "title": "Bite Into Bark",
+   "desc": "Shard, string and stick make the Flint Axe, a weak saw that finally turns logs into sticks and lets you fell trees."
+  },
+  {
+   "id": "notreepunching:flint_pickaxe",
+   "title": "Permission to Mine",
+   "desc": "The Flint Pickaxe is the first tool allowed to break stone and ore, since bare hands now drop nothing."
+  },
+  {
+   "id": "notreepunching:fire_starter",
+   "title": "Friction Fiction",
+   "desc": "Stick, string and a flint shard make the Fire Starter, which lights kindling laid on logs and can build a campfire outright."
+  },
+  {
+   "id": "notreepunching:macuahuitl",
+   "title": "Toothed Paddle",
+   "desc": "Flint shards set along a wooden blade give the Macuahuitl, the flint-tier sword."
+  },
+  {
+   "id": "notreepunching:clay_tool",
+   "title": "Potter's Apprentice",
+   "desc": "Five sticks arranged into the Clay Tool, the shaping implement for every piece of pottery."
+  },
+  {
+   "id": "notreepunching:clay_worked",
+   "title": "Throwing the Clay",
+   "desc": "Striking a placed clay block with the clay tool works it through a sequence toward a chosen shape."
+  },
+  {
+   "id": "notreepunching:clay_brick",
+   "title": "Brick by Brick",
+   "desc": "The clay tool cuts clay balls or blocks into unfired Clay Bricks, which fire into vanilla bricks."
+  },
+  {
+   "id": "notreepunching:clay_small_vessel",
+   "title": "Green Ware",
+   "desc": "Worked clay shaped into a Small Vessel, still soft and useless until it meets fire."
+  },
+  {
+   "id": "notreepunching:ceramic_small_vessel",
+   "title": "Pocket Pottery",
+   "desc": "Firing the small vessel in a furnace or campfire gives storage that holds four stacks inside one inventory slot."
+  },
+  {
+   "id": "notreepunching:clay_bucket",
+   "title": "Leaky by Design",
+   "desc": "The Clay Bucket comes off the pottery block unfired and will not hold a drop until it is baked."
+  },
+  {
+   "id": "notreepunching:ceramic_bucket",
+   "title": "Hold Water",
+   "desc": "Fired into a Ceramic Bucket, this carries water and lava long before you can afford three iron ingots."
+  },
+  {
+   "id": "notreepunching:ceramic_large_vessel",
+   "title": "The Big Jar",
+   "desc": "The fired Large Vessel is a nine-slot storage block that keeps its contents when broken and picked up."
+  },
+  {
+   "id": "notreepunching:iron_knife",
+   "title": "Steel Yourself",
+   "desc": "An Iron Knife outlasts flint by a wide margin and speeds every cutting recipe in the mod."
+  },
+  {
+   "id": "notreepunching:iron_saw",
+   "title": "Cutting Corners",
+   "desc": "The Iron Saw takes eight sticks out of a log where the flint axe managed six."
+  },
+  {
+   "id": "notreepunching:iron_mattock",
+   "title": "Three Tools, One Handle",
+   "desc": "The Mattock merges axe, shovel and hoe into a single tool that mines all three block sets."
+  },
+  {
+   "id": "notreepunching:diamond_mattock",
+   "title": "Gem of All Trades",
+   "desc": "The Diamond Mattock carries the combined tool through the mid game at diamond speed and durability."
+  },
+  {
+   "id": "notreepunching:netherite_mattock",
+   "title": "The Last Handle",
+   "desc": "Smithing the diamond mattock with a netherite ingot ends the tool ladder for good."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "notreepunching:stone_loose_rock",
+   "members": [
+    "notreepunching:granite_loose_rock",
+    "notreepunching:andesite_loose_rock",
+    "notreepunching:diorite_loose_rock",
+    "notreepunching:sandstone_loose_rock",
+    "notreepunching:red_sandstone_loose_rock",
+    "notreepunching:granite_cobblestone",
+    "notreepunching:andesite_cobblestone",
+    "notreepunching:diorite_cobblestone"
+   ]
+  },
+  {
+   "hub": "notreepunching:flint_knife",
+   "members": [
+    "notreepunching:flint_axe",
+    "notreepunching:flint_pickaxe",
+    "notreepunching:flint_shovel",
+    "notreepunching:flint_hoe",
+    "notreepunching:macuahuitl",
+    "notreepunching:fire_starter"
+   ]
+  },
+  {
+   "hub": "notreepunching:iron_mattock",
+   "members": [
+    "notreepunching:iron_knife",
+    "notreepunching:iron_saw",
+    "notreepunching:gold_knife",
+    "notreepunching:gold_saw",
+    "notreepunching:gold_mattock",
+    "notreepunching:diamond_knife",
+    "notreepunching:diamond_saw",
+    "notreepunching:diamond_mattock",
+    "notreepunching:netherite_knife",
+    "notreepunching:netherite_saw",
+    "notreepunching:netherite_mattock"
+   ]
+  }
+ ],
+ "notes": "FULL CHAIN JUSTIFIED. No Tree Punching rewrites the first hour of the game and the chain above is literally the ladder it imposes: nothing but gravel, sand, dirt, leaves and loose rocks drops bare-handed (data/notreepunching/tags/blocks/always_drops.json), so flint knapping is the true game-start and every later tool hangs off it. Ordering is taken from the recipe graph in the jar, not from vibes: flint_knife needs only shard+stick, plant_fiber needs a knife (#notreepunching:knives on all eight fibre recipes), plant_string needs three fibres, and flint_axe and flint_pickaxe both need string, so the fibre detour is genuinely mandatory before any flint tool beyond the knife. MODDB AGREEMENT: moddb has only 5 notreepunching entries and its order (flint_shard 0.00 -> flint_knife 0.19 -> plant_string 0.58 -> flint_axe 0.75 -> flint_pickaxe 1.00) matches the recipe graph exactly. No conflicts. moddb has zero coverage of the pottery line, the loose rocks or the metal tool tiers; those come from the recipe graph alone. MECHANICS NOT EXPRESSIBLE AS RECIPES (verified in class files, not guessed): flint_shard has no datapack recipe and comes from knapping (EventHandler.class references FLINT_KNAPPABLE, FLINT_SHARD, KNAPPING and Config.flintKnappingSuccessChance); loose rocks are worldgen (Config.enableLooseRocksWorldGen, tag loose_rock_placeable_on); clay_worked, clay_bucket, clay_small_vessel, clay_large_vessel and clay_flower_pot have no recipes and are produced by hitting a placed pottery block with the clay tool (PotteryBlock.class, Config.potteryBlockSequences, tag notreepunching:pottery). DELIBERATE EXCLUSIONS: the nine cobblestone _slab/_stairs/_wall variants (andesite/diorite/granite x3) are excluded per the measured desirability rule; they are real, verified ids but were quested essentially zero times across the corpus. Also left out of the chain: clay_flower_pot (fires into a vanilla flower pot, no new capability) and ceramic_water_bucket (the filled state of ceramic_bucket, not a separate craft). DROPS: none - all 51 model-stem-and-lang-key ids verified, every chain and wheel id is in that set."
+}

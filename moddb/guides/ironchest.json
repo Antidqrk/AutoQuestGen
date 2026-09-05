@@ -1,0 +1,208 @@
+{
+ "mod": "ironchest",
+ "ids_in_jar": 21,
+ "videos": [
+  {
+   "id": "P3ZN-zcf3ys",
+   "title": "Minecraft Mod Spotlight ~Iron Chest ~ Mod Tutorial",
+   "channel": "Lava Temptress",
+   "views": 10554,
+   "duration": 540,
+   "chars": 7446,
+   "legacy_vocab_prompt": true
+  }
+ ],
+ "items": {
+  "ironchest:iron_chest": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.0259,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "ironchest:diamond_chest": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.4959,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ironchest:gold_chest": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.4676,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ironchest:dirt_chest": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.0736,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "ironchest:copper_chest": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1117,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ironchest:obsidian_chest": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5519,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ironchest:gold_to_diamond_chest_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.88,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ironchest:crystal_chest": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5426,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "The mod has no tools and no prerequisites - the first craft is simply a wooden chest wrapped in a metal. Copper and iron are both valid entries straight off a vanilla chest.",
+    "ids": [
+     "ironchest:copper_chest",
+     "ironchest:iron_chest"
+    ]
+   },
+   {
+    "note": "After the first metal chest the mod is purely a climb; there is nothing else to learn.",
+    "ids": [
+     "ironchest:gold_chest"
+    ]
+   }
+  ],
+  "ladder": [
+   {
+    "note": "MAIN LADDER, verified from recipes - each chest is crafted from the previous chest plus a material. Copper is an optional first rung (wood goes straight to iron too). At diamond the ladder BRANCHES rather than continuing in a line.",
+    "ids": [
+     "ironchest:copper_chest",
+     "ironchest:iron_chest",
+     "ironchest:gold_chest",
+     "ironchest:diamond_chest"
+    ]
+   },
+   {
+    "note": "The branch: obsidian and crystal are BOTH made from a diamond chest and neither leads to the other. Obsidian is the blast-resistant end point; crystal is the see-through one. Treating them as sequential tiers would be wrong.",
+    "ids": [
+     "ironchest:diamond_chest",
+     "ironchest:obsidian_chest",
+     "ironchest:crystal_chest"
+    ]
+   },
+   {
+    "note": "Parallel upgrade-item path: rather than re-crafting, an upgrade item converts a placed chest in-world without unloading it. One upgrade item per step of the ladder, including both diamond branches.",
+    "ids": [
+     "ironchest:wood_to_copper_chest_upgrade",
+     "ironchest:wood_to_iron_chest_upgrade",
+     "ironchest:copper_to_iron_chest_upgrade",
+     "ironchest:iron_to_gold_chest_upgrade",
+     "ironchest:gold_to_diamond_chest_upgrade",
+     "ironchest:diamond_to_obsidian_chest_upgrade",
+     "ironchest:diamond_to_crystal_chest_upgrade"
+    ]
+   },
+   {
+    "note": "Every tier has a trapped variant, made by adding a tripwire hook to the finished chest. These are side-grades, never rungs.",
+    "ids": [
+     "ironchest:trapped_iron_chest",
+     "ironchest:trapped_diamond_chest"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "Only vanilla materials gate this mod: copper, iron, gold, diamond, obsidian and glass. Diamond chests need glass as well as diamonds, which is the one non-obvious ingredient.",
+    "ids": [
+     "ironchest:diamond_chest"
+    ]
+   },
+   {
+    "note": "In-world upgrade items are the intended way to climb once a chest is full - crafting the next tier directly means emptying the old one first.",
+    "ids": [
+     "ironchest:gold_to_diamond_chest_upgrade"
+    ]
+   }
+  ],
+  "payoff": [
+   {
+    "note": "The very first rung already feels like a win - the guide stresses that a vanilla chest is 27 slots while the copper chest is 45 (9x5), 'definitely a huge upgrade'. Slot counts continue iron 54 (9x6), gold 81 (9x9), diamond 108 (12x9). Front-loading that first craft is what sells the mod.",
+    "ids": [
+     "ironchest:copper_chest",
+     "ironchest:iron_chest",
+     "ironchest:gold_chest",
+     "ironchest:diamond_chest"
+    ]
+   },
+   {
+    "note": "The diamond chest is where the mod stops mattering for most players - it is the point where storage stops being the constraint.",
+    "ids": [
+     "ironchest:diamond_chest"
+    ]
+   },
+   {
+    "note": "The crystal chest's transparency is a genuine quality-of-life pick, not just cosmetic - contents are readable without opening.",
+    "ids": [
+     "ironchest:crystal_chest"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "The dirt chest is a joke item, not a tier - the guide calls it 'the dirt chest 9000', a troll item with a SINGLE slot. It must never appear on the ladder even though its name pattern matches the real chests.",
+    "ids": [
+     "ironchest:dirt_chest",
+     "ironchest:trapped_dirt_chest"
+    ]
+   },
+   {
+    "note": "GUIDE CONTRADICTS THE JAR: the video walks through eight tiers including a SILVER chest (72 slots) between iron and gold. There is no silver chest in the installed 1.20.1 Forge jar - the 21 real ids cover dirt, copper, iron, gold, diamond, obsidian and crystal only. Silver is a leftover from older versions/forks. Any quest built from that video's ladder would reference an item that does not exist.",
+    "ids": [
+     "ironchest:iron_chest",
+     "ironchest:gold_chest"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "The metal chest line is the entire mod - one of the oldest and most recognisable storage ladders in modded Minecraft.",
+    "ids": [
+     "ironchest:iron_chest",
+     "ironchest:diamond_chest",
+     "ironchest:obsidian_chest",
+     "ironchest:crystal_chest"
+    ]
+   }
+  ]
+ }
+}

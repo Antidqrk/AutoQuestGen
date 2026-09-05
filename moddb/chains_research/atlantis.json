@@ -1,0 +1,198 @@
+{
+ "mod": "atlantis",
+ "verified_against": "atlantis-2024.6.11-1.20.1-6.2-forge.jar",
+ "item_count_in_jar": 1039,
+ "chain": [
+  {
+   "id": "atlantis:aquamarine_ore",
+   "title": "Blue Under Your Feet",
+   "desc": "Atlantis seeds its own ore into the OVERWORLD, not into its dimension - the mod's forge biome modifier adds it to every overworld biome in the underground_ores step, so the whole journey starts in a cave you already know."
+  },
+  {
+   "id": "atlantis:aquamarine_gem",
+   "title": "Smelted Seawater",
+   "desc": "Smelted or blasted from Aquamarine Ore; it is the currency of every recipe that leads to the portal and the base of the mod's first armour tier."
+  },
+  {
+   "id": "atlantis:ocean_stone",
+   "title": "Stone That Remembers Water",
+   "desc": "Four plain stone around a Water Bucket makes four; it is the filler block of the portal frame and the base of Atlantean Crystal."
+  },
+  {
+   "id": "atlantis:drop_of_atlantis",
+   "title": "One Drop of the Drowned City",
+   "desc": "Four Aquamarine Gems and four gold nuggets pressed around a diamond; the portal frame needs four of them and the igniting orb needs one more."
+  },
+  {
+   "id": "atlantis:ocean_lantern",
+   "title": "Raid a Monument First",
+   "desc": "Two Sea Lanterns and an Iron Ingot, which means you must have cracked open an Ocean Monument before Atlantis will open for you."
+  },
+  {
+   "id": "atlantis:atlantean_core",
+   "title": "The Heart of the Frame",
+   "desc": "An Ocean Lantern caged in iron and cobblestone; exactly one sits at the centre of the portal frame block."
+  },
+  {
+   "id": "atlantis:atlantean_portal_frame",
+   "title": "Build the Gate",
+   "desc": "Four Drops of Atlantis, four Ocean Stone and one Atlantean Core. Stack these into a frame - the mod's OrbOfAtlantis class matches a block pattern of these frames and fills it with portal."
+  },
+  {
+   "id": "atlantis:atlantean_crystal",
+   "title": "Eight Stones Round a Nugget",
+   "desc": "Eight Ocean Stone around a gold nugget yields eight crystals; they feed the Orb, the Amulet and the Atlantean Spear."
+  },
+  {
+   "id": "atlantis:orb_of_atlantis",
+   "title": "The Thing That Lights It",
+   "desc": "Four Atlantean Crystals around a Drop of Atlantis. This is the igniter - right-click the finished frame with it and the frame turns to portal; nothing else in the mod will do it."
+  },
+  {
+   "id": "dim:atlantis:atlantis",
+   "title": "Welcome To Atlantis",
+   "desc": "Right-click the lit portal block and the mod prints its own greeting. A fully flooded dimension of seven biomes - Atlantis Biome, Atlantean Garden, Coconut Isles, Goo Lagoons, Jellyfish Fields, Volcanic Darksea and the Atlantean Islands."
+  },
+  {
+   "id": "atlantis:atlantean_log",
+   "title": "Trees That Grow Drowned",
+   "desc": "Cut from the atlantean trees the dimension plants underwater; it is the only wood down here besides the palms of the Coconut Isles."
+  },
+  {
+   "id": "atlantis:atlantean_prismarine",
+   "title": "Bricks for the Sunken City",
+   "desc": "Plain prismarine shaken up with Ocean Stone; four of these make a Linguistic Glyph, which is how the Atlantean alphabet gets written."
+  },
+  {
+   "id": "atlantis:crab_legs",
+   "title": "Crab Raves",
+   "desc": "Dropped by the Atlantean Crab and the Coconut Crab, the two things down here that will actually pinch back. The mod's own advancement for scooping one into a bucket is called Crab Raves."
+  },
+  {
+   "id": "atlantis:aquamarine_chestplate",
+   "title": "Armour the Colour of the Water",
+   "desc": "Crafted from Aquamarine Gems, and also seeded into the Atlantean chest loot; it is the mandatory base for every Orichalcum smithing upgrade."
+  },
+  {
+   "id": "atlantis:pickaxe_aquamarine",
+   "title": "The Aquamarine Set",
+   "desc": "Crafted from Aquamarine Gems; the tool half of the same tier, and the base item the Orichalcum smithing recipes transform."
+  },
+  {
+   "id": "atlantis:orichalcum_blend",
+   "title": "The Legendary Alloy, Unfired",
+   "desc": "Six raw copper, one raw gold and an Aquamarine Gem shaken together into three blends; smelting or blasting them gives the ingot."
+  },
+  {
+   "id": "atlantis:orichalcum_ingot",
+   "title": "Orichalcum",
+   "desc": "Smelted from Orichalcum Blend, and the single heaviest-weighted entry in the Atlantean chest loot table; the mod's top metal."
+  },
+  {
+   "id": "structure:atlantis:configured_atlantean_city",
+   "title": "Swim Into the Sunken City",
+   "desc": "The largest thing in the dimension - a jigsaw sprawling up to 256 blocks from its centre, at 0.7 frequency. Its chests are the only place the Orichalcum pattern exists, so no amount of mining or crafting substitutes for actually finding it."
+  },
+  {
+   "id": "atlantis:orichalcum_upgrade_smithing_template",
+   "title": "The Pattern in the Ruins",
+   "desc": "Out of the Atlantean chest loot. Every Orichalcum tool and armour piece is a smithing_transform that requires it, and its own recipe only duplicates a template you already hold - so looting the city is not optional."
+  },
+  {
+   "id": "atlantis:orichalcum_chestplate",
+   "title": "Plate of the Old Empire",
+   "desc": "An Aquamarine Chestplate, an Orichalcum Ingot and the Orichalcum pattern in a smithing table; the mod's final armour tier."
+  },
+  {
+   "id": "atlantis:orichalcum_pickaxe",
+   "title": "Cutting the Drowned Stone",
+   "desc": "The same smithing_transform applied to the Aquamarine Pickaxe, finishing the tool ladder."
+  },
+  {
+   "id": "atlantis:atlantean_amulet",
+   "title": "Fire Held Under Water",
+   "desc": "Eight Atlantean Crystals ringing a Fire Charge; the mod's one wearable trinket."
+  },
+  {
+   "id": "atlantis:atlantean_spear",
+   "title": "Reach in the Deep",
+   "desc": "An Atlantean Crystal on a shaft of two iron ingots - the throwing weapon for a dimension where everything you fight is swimming away from you."
+  },
+  {
+   "id": "kill:atlantis:leviathan",
+   "title": "The Phantom of The Depths",
+   "desc": "The dimension's apex predator, spawned by the biome spawner lists of three Atlantis biomes. The mod's own advancement only asks you to survive being hurt by one; killing it is the harder claim."
+  },
+  {
+   "id": "atlantis:linguistic_glyph_scroll",
+   "title": "Learning to Write Atlantean",
+   "desc": "Ink, paper and an Atlantean Fire Melon Spike. Feed it through a Writing Block and it becomes any of the thirty-six lettered scrolls, which stamp Linguistic Glyph blocks."
+  },
+  {
+   "id": "atlantis:submarine",
+   "title": "Stop Swimming",
+   "desc": "Glass, raw iron blocks and an Orb of Atlantis. A rideable submarine, and the largest single sink for the orb you spent getting here."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "atlantis:aquamarine_helmet",
+   "members": [
+    "atlantis:aquamarine_chestplate",
+    "atlantis:aquamarine_leggings",
+    "atlantis:aquamarine_boots",
+    "atlantis:sword_aquamarine",
+    "atlantis:axe_aquamarine",
+    "atlantis:shovel_aquamarine",
+    "atlantis:hoe_aquamarine",
+    "atlantis:brown_wrought_helmet",
+    "atlantis:brown_wrought_chestplate",
+    "atlantis:brown_wrought_leggings",
+    "atlantis:brown_wrought_boots"
+   ]
+  },
+  {
+   "hub": "atlantis:orichalcum_ingot",
+   "members": [
+    "atlantis:orichalcum_helmet",
+    "atlantis:orichalcum_chestplate",
+    "atlantis:orichalcum_leggings",
+    "atlantis:orichalcum_boots",
+    "atlantis:orichalcum_sword",
+    "atlantis:orichalcum_axe",
+    "atlantis:orichalcum_shovel",
+    "atlantis:orichalcum_hoe",
+    "atlantis:orichalcum_block"
+   ]
+  },
+  {
+   "hub": "atlantis:atlantean_power_stone",
+   "members": [
+    "atlantis:atlantean_power_dust",
+    "atlantis:atlantean_power_torch",
+    "atlantis:atlantean_power_lever",
+    "atlantis:atlantean_power_lamp",
+    "atlantis:atlantean_power_repeater",
+    "atlantis:atlantean_power_comparator",
+    "atlantis:atlantean_tripwire_hook"
+   ]
+  },
+  {
+   "hub": "atlantis:crab_bucket",
+   "members": [
+    "atlantis:jellyfish_bucket",
+    "atlantis:seahorse_bucket",
+    "atlantis:shrimp_bucket",
+    "atlantis:shrimp",
+    "atlantis:cooked_shrimp",
+    "atlantis:crab_legs",
+    "atlantis:coconut",
+    "atlantis:carved_coconut",
+    "atlantis:sea_salt",
+    "atlantis:fire_melon_jelly_bottle",
+    "atlantis:jellyfish_jelly_bottle"
+   ]
+  }
+ ],
+ "notes": "LOADER VERIFIED: META-INF/mods.toml present, no fabric.mod.json, modId=atlantis, deps forge/minecraft/cloth_config/geckolib3; Modrinth version 2024.6.11-1.20.1-6.2-forge lists loaders [forge, neoforge] and game version 1.20.1. Item set = the 1039 stems of assets/atlantis/models/item/*.json intersected with item.atlantis.* / block.atlantis.* keys in assets/atlantis/lang/en_us.json; every atlantis: id above is in that set EXCEPT the one allow-listed widening below. DIMENSION ENTRY, fully derived from the recipe graph and com/mystic/atlantis/items/OrbOfAtlantis.class: aquamarine_ore (data/atlantis/forge/biome_modifier/aquamarine.json adds atlantis:aquamarine to biomes '#minecraft:is_overworld' at step underground_ores, count 150, y -64..450 - so the ore is OVERWORLD, not Atlantis-only) -> aquamarine_gem (smelting/blasting) -> drop_of_atlantis (4 gems + 4 gold nuggets + 1 diamond) and ocean_stone (4 stone + water bucket) and ocean_lantern (2 sea lantern + iron) -> atlantean_core (cobble + iron + ocean_lantern) -> atlantean_portal_frame (4 drop + 4 ocean_stone + core) ; separately atlantean_crystal (8 ocean_stone + gold nugget) -> orb_of_atlantis (4 crystal + drop). OrbOfAtlantis.m_6225_ checks the clicked block is BlockInit.ATLANTEAN_PORTAL_FRAME (an AtlanteanCoreFrame), flips its LIT boolean property, runs a BlockPattern match and fills the pattern with ATLANTIS_CLEAR_PORTAL. AtlantisPortalBlock.m_6227_ then teleports the player to ATLANTIS_WORLD on right-click and prints the literal string 'Welcome To Atlantis!!!'. Only one dimension file exists (data/atlantis/dimension/atlantis.json) so dim:atlantis:atlantis is the sole dimension milestone. NOTE the portal is entered by RIGHT-CLICKING the portal block, not by walking into it. ENTITY VERIFICATION. com/mystic/atlantis/init/AtlantisEntityInit.class registers exactly twelve types: atlantean_boat, palm_boat, atlantean_crab, coconut_crab, atlantean_jellyfish, atlantean_shrimp, leviathan, atlantean_seahorse, atlantean_starfish, atlantean_starzomfish, sodium_bomb, atlantean_submarine. Excluded as vehicles/projectiles: atlantean_boat, palm_boat, atlantean_submarine, sodium_bomb. Only atlantis:leviathan is used as a kill: target, and it is verified TWICE: it appears in the spawners block of three data/atlantis/worldgen/biome/*.json files (3 spawner entries total), and data/atlantis/advancements/leviathan_advancement.json triggers on minecraft:entity_hurt_player with source_entity type atlantis:leviathan, which only fires if the mob exists in the world. It has NO entity loot table, so it drops nothing - the kill task still completes, but do not attach a drop to it. Note also that only four entity.atlantis.* lang keys exist (crab, jellyfish, shrimp, submarine) while eight entity loot tables exist - a naive lang-key entity scan would MISS the leviathan, the seahorse, the starfish, the starzomfish and the coconut crab. ALLOW-LISTED ID (widening, with proof): atlantis:orichalcum_upgrade_smithing_template has assets/atlantis/models/item/orichalcum_upgrade_smithing_template.json and com/mystic/atlantis/items/OrichalcumSmithingTemplateItem.class, but like every vanilla smithing template it carries NO item.atlantis.* lang key - it is named by upgrade.minecraft.orichalcum_upgrade and item.minecraft.smithing_template.orichalcum_upgrade.*, i.e. under the MINECRAFT namespace, so it fails both a models-intersect-lang test and an upgrade.<modid>.* widening. It is load-bearing: all nine orichalcum_* recipes are minecraft:smithing_transform requiring it as template, and its own recipe is a duplication recipe that consumes an existing template. Its survival source is data/atlantis/loot_tables/chests/atlantean_loot.json, the mod's single chest table, so the Atlantean structures are the only entry point to the whole orichalcum tier. DROPPED, NO ACQUISITION PATH: atlantis:sodium_nugget appears ONLY as an ingredient of data/atlantis/recipes/sodium_bomb.json - no recipe, no loot table, no structure gives it, so the sodium bomb is uncraftable in 6.2 and the nugget is a dead id. atlantis:leviathan_egg exists as an item model but is referenced nowhere except as the icon of leviathan_advancement - no recipe, no loot table. atlantis:atlantis_portal is explicitly labelled 'Legacy... Creative only!!!' in its own lang string. CONSENSUS CONFLICTS (moddb): moddb lists atlantis:ancient_cuprum_ingot at pos 0.042 and atlantis:sodium_nugget at 0.250; a full-jar byte scan finds ancient_cuprum_ingot in NO file at all (it does not exist in 6.2 - a rename or removal from an older build) and sodium_nugget only as an ingredient. Graph preferred, both dropped. moddb also front-loads 26 atlantis:linguistic_glyph_scroll_<letter> ids across the whole 0.0-1.0 range; these are 36 identical lettered variants of one item and were collapsed to the single linguistic_glyph_scroll step, with the coloured glyph blocks left out entirely (there are 36 letters x 17 colours = 612 of them, over half the mod's item count). STRUCTURES - AND THE IDS ARE NOT WHAT THE STRUCTURE_SET FILENAMES SAY. data/atlantis/worldgen/structure/ contains nine files and EIGHT of them carry a 'configured_' prefix that the structure_set filenames do not: configured_atlantean_city, configured_atlantean_temple, configured_atlantean_spire, configured_atlantean_tower, configured_atlantean_fountain, configured_atlantean_house_1, configured_atlantean_house_3, configured_oyster_structure - plus atlantean_village, which is the one WITHOUT the prefix. The structure_set files are named atlantean_city.json, atlantean_temple.json and so on, so a structure: step derived from structure_set filenames would produce atlantis:atlantean_city, which does not exist and would be uncompletable. The chain uses structure:atlantis:configured_atlantean_city, verified against the structure file. Placement: the city is an atlantis:atlantean_city jigsaw, size 1, max_distance_from_center 256, biomes '#atlantis:has_structures/configured_atlantean_city', step surface_structures, random_spread at frequency 0.7; the rest sit at frequency 0.5, and atlantean_village is spacing 32 / separation 16 and overrides water_ambient spawns with tropical fish. All nine feed the single atlantean_loot chest table, which is why one city step covers the loot the whole orichalcum tier depends on. Mob drops verified from data/atlantis/loot_tables/entities/: crab and coconut_crab -> crab_legs, jellyfish -> atlantean_string, starfish and shrimp -> shrimp, seahorse -> minecraft:seagrass, starzomfish -> the vanilla drowned table."
+}

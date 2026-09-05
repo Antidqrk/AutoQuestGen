@@ -1,0 +1,109 @@
+{
+ "mod": "creeperoverhaul",
+ "verified_against": "creeperoverhaul-3.0.2-forge.jar",
+ "item_count_in_jar": 17,
+ "chain": [
+  {
+   "id": "kill:creeperoverhaul:hills_creeper",
+   "title": "Uphill Both Ways",
+   "desc": "The Hills Creeper spawns across #minecraft:is_hill and in stony peaks, and is the plainest of the fifteen - gunpowder and nothing else."
+  },
+  {
+   "id": "kill:creeperoverhaul:spruce_creeper",
+   "title": "Timber",
+   "desc": "Taigas get the Spruce Creeper, a mossy thing that leaves spruce logs behind along with its gunpowder."
+  },
+  {
+   "id": "kill:creeperoverhaul:snowy_creeper",
+   "title": "Cold Blooded",
+   "desc": "The Snowy Creeper walks on powder snow without sinking and drops white wool instead of gunpowder."
+  },
+  {
+   "id": "kill:creeperoverhaul:beach_creeper",
+   "title": "Sunburnt and Explosive",
+   "desc": "Beach Creepers drop sand, seagrass, prismarine shards and, rarely, a nautilus shell - the best early trade goods in the mod."
+  },
+  {
+   "id": "kill:creeperoverhaul:desert_creeper",
+   "title": "Dry Heat",
+   "desc": "The Desert Creeper spawns around desert pyramids and scatters cactus when it dies."
+  },
+  {
+   "id": "creeperoverhaul:tiny_cactus",
+   "title": "Souvenir of the Sands",
+   "desc": "The only block Creeper Overhaul adds. It is left behind by the Desert Creeper rather than crafted, drops itself when broken, and can be potted."
+  },
+  {
+   "id": "kill:creeperoverhaul:badlands_creeper",
+   "title": "Gold in Them Hills",
+   "desc": "Badlands Creepers spawn where mesa mineshafts generate and drop gold nuggets on top of their gunpowder."
+  },
+  {
+   "id": "kill:creeperoverhaul:savannah_creeper",
+   "title": "Acacia Delivery Service",
+   "desc": "The Savannah Creeper roams #minecraft:is_savanna and drops acacia logs; it does not drop gunpowder at all."
+  },
+  {
+   "id": "kill:creeperoverhaul:jungle_creeper",
+   "title": "Green on Green",
+   "desc": "The Jungle Creeper hides in the canopy and shares its biome with the Bamboo Creeper, so both spawn at weight 75."
+  },
+  {
+   "id": "kill:creeperoverhaul:bamboo_creeper",
+   "title": "Panda Fuel",
+   "desc": "The Bamboo Creeper drops bamboo and no gunpowder - it is a renewable bamboo source that walks to you."
+  },
+  {
+   "id": "kill:creeperoverhaul:swamp_creeper",
+   "title": "Bog Standard",
+   "desc": "Swamp Creepers spawn where swamp ruined portals generate and drop bone alongside their gunpowder."
+  },
+  {
+   "id": "kill:creeperoverhaul:dark_oak_creeper",
+   "title": "Something in the Woods",
+   "desc": "The Dark Oak Creeper is restricted to the dark forest and leaves cobwebs and dark oak logs where it detonates."
+  },
+  {
+   "id": "kill:creeperoverhaul:dripstone_creeper",
+   "title": "Spike Trap With Legs",
+   "desc": "The Dripstone Creeper spawns in dripstone and lush caves and drops pointed dripstone."
+  },
+  {
+   "id": "kill:creeperoverhaul:cave_creeper",
+   "title": "Mining Without a Pickaxe",
+   "desc": "The Cave Creeper spawns everywhere creepers normally do and carries the richest table in the mod: stone, raw iron, raw gold, emerald and diamond."
+  },
+  {
+   "id": "kill:creeperoverhaul:mushroom_creeper",
+   "title": "Spore Print",
+   "desc": "Mushroom Fields is the only biome that gets the Mushroom Creeper, and it spawns at weight 10 instead of the usual 75."
+  },
+  {
+   "id": "kill:creeperoverhaul:ocean_creeper",
+   "title": "Deep Trouble",
+   "desc": "The Ocean Creeper is the rarest of the fifteen at weight 1 in warm and lukewarm oceans only; it drops cod and salmon and never explodes on land."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "creeperoverhaul:cave_creeper_spawn_egg",
+   "members": [
+    "creeperoverhaul:badlands_creeper_spawn_egg",
+    "creeperoverhaul:bamboo_creeper_spawn_egg",
+    "creeperoverhaul:beach_creeper_spawn_egg",
+    "creeperoverhaul:dark_oak_creeper_spawn_egg",
+    "creeperoverhaul:desert_creeper_spawn_egg",
+    "creeperoverhaul:dripstone_creeper_spawn_egg",
+    "creeperoverhaul:hills_creeper_spawn_egg",
+    "creeperoverhaul:jungle_creeper_spawn_egg",
+    "creeperoverhaul:mushroom_creeper_spawn_egg",
+    "creeperoverhaul:ocean_creeper_spawn_egg",
+    "creeperoverhaul:savannah_creeper_spawn_egg",
+    "creeperoverhaul:snowy_creeper_spawn_egg",
+    "creeperoverhaul:spruce_creeper_spawn_egg",
+    "creeperoverhaul:swamp_creeper_spawn_egg"
+   ]
+  }
+ ],
+ "notes": "THIS IS A MOB MOD WITH ALMOST NO ITEMS, SO THE SPINE IS KILL TASKS. Verified against creeperoverhaul-3.0.2-forge.jar (META-INF/mods.toml, modId=\"creeperoverhaul\", version 3.0.2, forge \"[46,)\", minecraft \"[1.20,)\", mandatory geckolib and resourcefulconfig - no fabric.mod.json). The strict 3-segment scan finds 17 lang-named ids: 15 *_creeper_spawn_egg items plus block.creeperoverhaul.tiny_cactus and block.creeperoverhaul.potted_tiny_cactus. There is no ore, no ingot, no armour and no tool in this namespace, so the 51.9% helmet-only rule and the _ingot/_ore weighting have nothing to act on here. ENTITY VERIFICATION - ALL FIFTEEN PROVEN THREE INDEPENDENT WAYS: (1) a forge:add_spawns biome modifier under data/creeperoverhaul/forge/biome_modifier/ names each entity type explicitly (badlands, bamboo, beach, cave, dark_oak, desert, dripstone, hill + hills_mountain, jungle, mushroom, ocean, savannah, snowy, spruce, swamp - sixteen files for fifteen creepers because the Hills Creeper gets both #minecraft:is_hill and an explicit minecraft:stony_peaks entry); (2) each has an entity loot table under data/creeperoverhaul/loot_tables/entities/; (3) each has a spawn egg with a matching item lang key. All fifteen are also listed in data/creeperoverhaul/tags/entity_types/creepers.json. Chain order follows spawn accessibility rather than any recipe graph - there is no recipe graph, the jar contains ZERO recipe files - so it runs overworld-surface (hills, spruce, snowy, beach, desert) into structure-gated (badlands mesa mineshafts, savannah, jungle/bamboo, swamp ruined portals, dark forest) into caves (dripstone, cave) and finishes on the two rarest by spawn weight: mushroom at 10 and ocean at 1, against 75 for everything else. TRAP CONFIRMED AND EXCLUDED: assets/creeperoverhaul/models/item/plains_creeper_spawn_egg.json exists but there is NO entity.creeperoverhaul.plains_creeper lang key, NO item lang key for the egg, NO loot table and NO biome modifier. Tracing the string through the jar shows plains_creeper appears ONLY in ReplacedCreeperModel.class and ReplacedCreeperGlowLayer.class - it is the client-side re-skin Creeper Overhaul applies to the VANILLA minecraft:creeper (which its remove_vanilla.json biome modifier deletes from #creeperoverhaul:where_creepers_spawn). There is no creeperoverhaul:plains_creeper entity and a kill task naming one would never complete. DROPPED: creeperoverhaul:potted_tiny_cactus - it has a block lang key and a loot table (flower pot plus the cactus back) but no item form and no models/item entry, so it cannot be the subject of an item task. TINY CACTUS OBTAINABILITY: no recipe and no worldgen feature file, but data/creeperoverhaul/loot_tables/blocks/tiny_cactus.json drops the block itself and CreeperTypes.class is the only gameplay class that references it - the Desert Creeper places it, which is why it sits immediately after that kill in the chain. THE WHEEL IS SPAWN EGGS BY NECESSITY: fifteen eggs are the only items in the namespace, and fifteen exceeds the 14-member cap, so one egg hubs the other fourteen. Precedent for wheeling eggs is illageandspillage.json in this same folder. Note for the generator: these are creative-tab items, so if the pack disallows spawn eggs this wheel should be skipped rather than rewritten. CONSENSUS: creeperoverhaul is absent from moddb.json, so there is no pack ordering to cross-check and no conflict to record; the biome-modifier evidence above is the sole ordering authority used."
+}

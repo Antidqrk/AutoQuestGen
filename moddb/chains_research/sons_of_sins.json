@@ -1,0 +1,173 @@
+{
+ "mod": "sons_of_sins",
+ "verified_against": "sons_of_sins-2.2.1-forge-1.20.1.jar",
+ "item_count_in_jar": 95,
+ "chain": [
+  {
+   "id": "sons_of_sins:osseous_sword",
+   "title": "Bone and String",
+   "desc": "Bones bound with string; the whole osseous tool set is craftable on day one and is the mod's actual starting point."
+  },
+  {
+   "id": "sons_of_sins:bloody_bone",
+   "title": "What the Sins Leave",
+   "desc": "Dropped by five of the mod's mobs - blud, butcher, prowler, walking_bed and wistiver - and the material behind the sinful tools."
+  },
+  {
+   "id": "sons_of_sins:sinful_sword",
+   "title": "Sharper Than Bone",
+   "desc": "Bloody bones and string in the osseous shape; a straight upgrade across all five tool types."
+  },
+  {
+   "id": "sons_of_sins:ether_ashes",
+   "title": "Ash of the Ether",
+   "desc": "Dropped by the Curse and the Ether Ghost, and stocked in the Sinful Church chest; every deeper material in the mod starts from these ashes."
+  },
+  {
+   "id": "sons_of_sins:iron_and_ether",
+   "title": "Iron, Steeped",
+   "desc": "An iron ingot rubbed with ether ashes; an intermediate the church chest sometimes hands you outright."
+  },
+  {
+   "id": "sons_of_sins:soul_steel",
+   "title": "Fired Into Soul Steel",
+   "desc": "Smelting or blasting the steeped iron; Kelvin also drops it directly. It is the mod's one real metal."
+  },
+  {
+   "id": "sons_of_sins:crystallized_ether",
+   "title": "Ashes Made Solid",
+   "desc": "Produced by the mod's etheric_blood_imbibation ritual on ether ashes rather than by any crafting grid."
+  },
+  {
+   "id": "sons_of_sins:sickle_of_struggle",
+   "title": "A Reaper's Curve",
+   "desc": "Soul steel over a stick; it is also the one weapon seeded into the Sinful Church chest."
+  },
+  {
+   "id": "sons_of_sins:ether_sword",
+   "title": "Ether Given an Edge",
+   "desc": "Crystallized ether set into soul steel; the deepest blade the mod crafts."
+  },
+  {
+   "id": "sons_of_sins:remnant_helmet",
+   "title": "Helm of the Remnant",
+   "desc": "Soul steel worked into the mod's only armour set; the chestplate additionally demands crystallized ether."
+  },
+  {
+   "id": "sons_of_sins:heart",
+   "title": "Still Beating",
+   "desc": "Injected into the Sinful Church chest; hearts, muscles and ribs are the organ economy the mod runs on."
+  },
+  {
+   "id": "sons_of_sins:creeper_ribs",
+   "title": "Ribs From a Creeper",
+   "desc": "A loot injection onto the vanilla creeper - the mod adds organ drops to ordinary Minecraft mobs rather than shipping its own ore chain."
+  },
+  {
+   "id": "sons_of_sins:enderman_muscle",
+   "title": "Muscle From an Enderman",
+   "desc": "The same trick on endermen; ravagers, blazes, iron golems, snow golems, striders, spiders and slimes each give up their own organ."
+  },
+  {
+   "id": "sons_of_sins:block_of_hearts",
+   "title": "Nine Hearts, Stacked",
+   "desc": "Every organ compresses into a block and back again; it is the mod's only storage mechanic."
+  },
+  {
+   "id": "sons_of_sins:flesh_of_demise",
+   "title": "Flesh From a Bone",
+   "desc": "The imbibation ritual run on a plain bone, and also stocked in the church chest."
+  },
+  {
+   "id": "sons_of_sins:flesh_carcass",
+   "title": "Hung on the Hook",
+   "desc": "Assembled from anything in the mod's is_flesh tag."
+  },
+  {
+   "id": "sons_of_sins:flesh_sword",
+   "title": "The Blade That Was Fed",
+   "desc": "An osseous sword pushed through the imbibation ritual; the flesh tools are the ritual's terminal upgrade of the bone tools."
+  },
+  {
+   "id": "sons_of_sins:butcher_cleaver",
+   "title": "Taken From the Butcher",
+   "desc": "Only the Butcher drops it, and only from its own loot table."
+  },
+  {
+   "id": "sons_of_sins:hand_of_riot",
+   "title": "Torn From a Prowler",
+   "desc": "The Prowler's unique drop, alongside the bloody bones it shares with the other sins."
+  },
+  {
+   "id": "sons_of_sins:cursed_head",
+   "title": "Taken From the Curse",
+   "desc": "The Curse drops both this and the ether ashes that open the soul steel line."
+  },
+  {
+   "id": "sons_of_sins:ether_engine",
+   "title": "Pulled From Kelvin",
+   "desc": "Kelvin is the mod's mechanical sin and the only source of the engine, along with raw soul steel."
+  },
+  {
+   "id": "sons_of_sins:shape_shifting_tool",
+   "title": "Change What You Are",
+   "desc": "Crystallized ether in soul steel; the mod's one utility item rather than a weapon."
+  },
+  {
+   "id": "sons_of_sins:ether_lantern",
+   "title": "Light From the Ether",
+   "desc": "The same two materials hung as a lamp, and the only block in the mod with its own loot table."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "sons_of_sins:heart",
+   "members": [
+    "sons_of_sins:muscle",
+    "sons_of_sins:ribs",
+    "sons_of_sins:creeper_ribs",
+    "sons_of_sins:enderman_muscle",
+    "sons_of_sins:ravager_muscle",
+    "sons_of_sins:strider_muscle",
+    "sons_of_sins:spider_heart",
+    "sons_of_sins:slime_rear",
+    "sons_of_sins:golem_cuirass",
+    "sons_of_sins:ice_heart",
+    "sons_of_sins:blazing_heart"
+   ]
+  },
+  {
+   "hub": "sons_of_sins:osseous_sword",
+   "members": [
+    "sons_of_sins:osseous_axe",
+    "sons_of_sins:osseous_pickaxe",
+    "sons_of_sins:osseous_shovel",
+    "sons_of_sins:osseous_hoe",
+    "sons_of_sins:sinful_sword",
+    "sons_of_sins:sinful_axe",
+    "sons_of_sins:sinful_pickaxe",
+    "sons_of_sins:sinful_shovel",
+    "sons_of_sins:sinful_hoe",
+    "sons_of_sins:flesh_sword",
+    "sons_of_sins:flesh_axe",
+    "sons_of_sins:flesh_pickaxe",
+    "sons_of_sins:flesh_shovel"
+   ]
+  },
+  {
+   "hub": "sons_of_sins:soul_steel",
+   "members": [
+    "sons_of_sins:soul_steel_block",
+    "sons_of_sins:soul_steel_tiles",
+    "sons_of_sins:soul_steel_chain",
+    "sons_of_sins:soul_steel_door",
+    "sons_of_sins:soul_steel_trapdoor",
+    "sons_of_sins:remnant_helmet",
+    "sons_of_sins:remnant_chestplate",
+    "sons_of_sins:remnant_leggings",
+    "sons_of_sins:remnant_boots"
+   ]
+  }
+ ],
+ "notes": "Forge, 1.20.1, confirmed from META-INF/mods.toml (modId \"sons_of_sins\", loaderVersion [47,), minecraft [1.20.1], optional jei; no fabric.mod.json). ID SET. 106 model/item stems intersect with item.sons_of_sins.<name> to give 72 items; 23 blocks each carry a blockstate and a block.sons_of_sins.<name> key. Verified set = 95. No widening was needed. NBT-VARIANT CHECK: not applicable - every tool, organ and block is a separately registered id. OBTAINABILITY - 20 UNSOURCED, 14 OF THEM SPAWN EGGS. The non-egg orphans are blood_ball, blood_pr, bottle_of_blood, charged_creeper_ribs and nibbler_lava_bucket; none is a recipe result or a loot entry. bottle_of_blood is worth flagging because sons_of_sins:blood_bucket is crafted from it, so blood_bucket is only reachable if the bottle can be filled from the mod's blood fluid block in world, which no data file proves. Neither is quested. charged_creeper_ribs is the charged-creeper counterpart to creeper_ribs and presumably drops in code, but again there is no table, so the ordinary creeper_ribs is what the chain uses. ENTITY CHECK - EVERY KILL SOURCE PROVED BY A LOOT TABLE. Nine entity tables exist and all nine were used or checked: blud, butcher, prowler, walking_bed and wistiver each drop bloody_bone plus one signature item (touch_of_greed, butcher_cleaver, hand_of_riot, puppet_of_strife, wistivers_jaws); curse drops cursed_head and ether_ashes; ether_ghost drops ether_ashes; kelvin drops ether_engine and soul_steel. Of the 24 registered entity lang keys the remainder are organ-shedding bodies and summons - devourer_organs, grub_organs, gulber_organs, guzzler_organs, nibbler_organs, wistiver_jaw, sin_summon, blud_aggressive, blud_trade - and none of those was used as a kill target. VANILLA LOOT INJECTION IS THE MOD'S CORE IDEA and was verified table by table: separate injection tables add creeper_ribs to creepers, enderman_muscle to endermen, ravager_muscle to ravagers, blazing_heart to blazes, golem_cuirass to iron golems and ice_heart to snow golems. The Sinful Church, placed by data/sons_of_sins/structures/sinful_church.nbt, carries the one chest table and stocks ether_ashes, heart, muscle, ribs, flesh_of_demise, iron_and_ether, nibbler_bucket, osseous_sword, osseous_axe and sickle_of_struggle. ORDERING was read from data/sons_of_sins/recipes/**: bone tools are free, bloody bones upgrade them, ether ashes gate iron_and_ether which smelts into soul_steel, soul steel plus crystallized ether makes the ether sword, the remnant armour and the lantern. The custom recipe type sons_of_sins:etheric_blood_imbibation is a ritual rather than a bench craft and is the only route to crystallized_ether, flesh_of_demise, the four flesh tools, soul_steel from plain iron, and sins_music_disc; the chain names it explicitly wherever it is required. ARMOUR RULE APPLIED: only remnant_helmet is quested and the other three pieces sit in the soul steel wheel. Three wheels sized 11, 13 and 9. Chain is 23 steps against 95 ids, which is honest for a mod whose depth is mob variety rather than crafting length."
+}

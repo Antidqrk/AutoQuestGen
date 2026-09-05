@@ -1,0 +1,1424 @@
+{
+ "mod": "iceandfire",
+ "jar": "iceandfire__iceandfire-2.1.13-1.20.1-beta-5.jar",
+ "ids_in_jar": 543,
+ "entities_in_jar": 29,
+ "videos": [
+  {
+   "id": "6tYUdPMbBqU",
+   "title": "The ULTIMATE Minecraft Ice and Fire Guide",
+   "channel": "KrypackMC",
+   "views": 455493,
+   "duration": 294,
+   "chars": 6451,
+   "secs": 0
+  },
+  {
+   "id": "tsnjcNXgnS8",
+   "title": "Minecraft Ice and Fire BEGINNER GUIDE",
+   "channel": "KrypackMC",
+   "views": 209077,
+   "duration": 1106,
+   "chars": 18915,
+   "secs": 0
+  }
+ ],
+ "items": {
+  "iceandfire:dragonbone": {
+   "kind": "item",
+   "mentions": 7,
+   "videos": 2,
+   "first_at": 0.1526,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "iceandfire:dragonbone_sword": {
+   "kind": "item",
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1582,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "iceandfire:pixie_dust": {
+   "kind": "item",
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.5181,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "iceandfire:ectoplasm": {
+   "kind": "item",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.9404,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "iceandfire:dragon_flute": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.178,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "iceandfire:dragon_ice": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0652,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "iceandfire:dragon_meal": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2412,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "iceandfire:hippocampus_fin": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5727,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "iceandfire:hippocampus_slapper": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5762,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "iceandfire:hydra_skull": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3766,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "iceandfire:rotten_egg": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8128,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "entities": {
+  "iceandfire:hydra": {
+   "kind": "entity",
+   "mentions": 16,
+   "videos": 2,
+   "first_at": 0.3242,
+   "praise": 15,
+   "warn": 1,
+   "early_cue": 1,
+   "late_cue": 3,
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:pixie": {
+   "kind": "entity",
+   "mentions": 14,
+   "videos": 1,
+   "first_at": 0.5076,
+   "praise": 8,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:fire_dragon": {
+   "kind": "entity",
+   "mentions": 10,
+   "videos": 2,
+   "first_at": 0.0591,
+   "praise": 10,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:gorgon": {
+   "kind": "entity",
+   "mentions": 10,
+   "videos": 2,
+   "first_at": 0.379,
+   "praise": 8,
+   "warn": 9,
+   "early_cue": 1,
+   "late_cue": 3,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:siren": {
+   "kind": "entity",
+   "mentions": 8,
+   "videos": 2,
+   "first_at": 0.7441,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:lightning_dragon": {
+   "kind": "entity",
+   "mentions": 7,
+   "videos": 1,
+   "first_at": 0.0665,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:cyclops": {
+   "kind": "entity",
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.3594,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:hippocampus": {
+   "kind": "entity",
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.5727,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:ghost": {
+   "kind": "entity",
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.8165,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:troll": {
+   "kind": "entity",
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.8641,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:ice_dragon": {
+   "kind": "entity",
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.0657,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  }
+ },
+ "human_notes": {
+  "_source": "guide (a transcribed 100-days run + a transcribed 'ultimate guide') + jar loot tables",
+  "measured_emphasis": [
+   "Across 2 transcribed guides the most-discussed mob is NOT a dragon: entity:iceandfire:hydra leads with 16 mentions, then entity:iceandfire:pixie (14), entity:iceandfire:fire_dragon (10) and entity:iceandfire:gorgon (10)",
+   "That matches the advice itself — the Hydra is the fight guides feel obliged to warn about, so it deserves a prep-heavy quest rather than a footnote",
+   "entity:iceandfire:pixie ranking second is a reminder that a chunk of this mod is collection and utility (iceandfire:pixie_dust), not combat",
+   "iceandfire:dragonbone is the single most-named item (7) — the entry material players actually interact with, well before dragonsteel"
+  ],
+  "how_to_fight": [
+   "entity:iceandfire:fire_dragon is the easiest of the three ONLY because a fire resistance potion negates its breath outright — the guide says so explicitly. Ice and lightning dragons have no such cheap counter and need real gear",
+   "entity:iceandfire:hydra MUST be kept on fire: if it is not burning it regrows heads faster than you can cut them and the fight becomes unwinnable. Bring a Flame bow or a Fire Aspect sword. This is the single most important prep fact in the mod",
+   "entity:iceandfire:gorgon kills anything that meets its gaze — wear iceandfire:blindfold. Also bring milk for its poison",
+   "entity:iceandfire:siren lures you in with its song; iceandfire:earplugs are the counter",
+   "entity:iceandfire:cyclops — shoot it in the eye with a bow to blind it, then close in",
+   "Dragon tiers matter: stage 1-3 dragons are the surface ones, stage 4-5 live only in dragon caves and are far deadlier. Do not write one 'kill a dragon' task as if they were equivalent",
+   "Only FEMALE dragons drop eggs, which is why eggs are the mod's rarest gate — a kill-a-dragon quest does not reliably yield one",
+   "Dragon bones come from right-clicking a dragon skeleton found in the world, not only from a kill"
+  ],
+  "boss_order": [
+   "entity:iceandfire:hippogryph — tameable, the guide uses it as the early mount rather than a kill",
+   "entity:iceandfire:troll — the guide's first real underground scare while mining",
+   "entity:iceandfire:fire_dragon — easiest and most common of the three dragons, per the guide",
+   "entity:iceandfire:ice_dragon — snowy biomes, met second",
+   "entity:iceandfire:lightning_dragon — the guide calls these 'the most difficult' and does them last",
+   "entity:iceandfire:cyclops, entity:iceandfire:hydra, entity:iceandfire:gorgon — side bosses, not on the dragon ladder"
+  ],
+  "prep": [
+   "The guide is blunt that iron armour 'is nothing for a dragon' — dragon-scale armour first, then dragonsteel",
+   "iceandfire:bestiary is the in-game manual and the guide has to go and read it to progress (hatching, taming, the command staff) — treat it as a genuine early prerequisite",
+   "Bottles before the kill: dragon blood is collected from the CORPSE with a glass bottle, ~4 per small dragon, and the guide loses hours to not having gathered it",
+   "iceandfire:dragon_stick (Dragon Command Staff) / iceandfire:dragon_horn before raising a dragon — a grown untamed dragon wrecks your base"
+  ],
+  "order": [
+   "Dragon scales -> dragon-scale armour (better than diamond)",
+   "Dragon blood + a dragonforge -> dragonsteel (iceandfire:dragonsteel_fire_ingot etc.), which the guide calls stronger than netherite",
+   "A dragonforge needs a LIVE chained dragon of the right element to fire it — one forge per element",
+   "Eggs are RNG drops from dragons; hatching medium differs by element — fire needs flame, ice needs water, lightning needs RAIN, which the guide gets stuck waiting on"
+  ],
+  "key_drops": [
+   "iceandfire:fire_dragon_blood / :ice_dragon_blood / :lightning_dragon_blood — the dragonsteel gate",
+   "iceandfire:dragonscales_red / :dragonscales_blue / :dragonscales_electric — armour tier",
+   "iceandfire:dread_key — from entity:iceandfire:dread_lich, opens the dread structures",
+   "iceandfire:hydra_heart — held in the hotbar it regenerates you faster the lower your health; the guide singles it out as the best drop of the three mini-bosses",
+   "iceandfire:hydra_fang -> iceandfire:hydra_arrow, which poisons and leeches life",
+   "iceandfire:cyclops_eye — held in hand it weakens nearby enemies; iceandfire:gorgon_head petrifies non-undead",
+   "iceandfire:blindfold and iceandfire:earplugs — cheap prep items that hard-counter the Gorgon and the Siren; good early quest rewards",
+   "Sea serpent scales -> the sea-serpent armour set, which the guide values for strength plus water breathing",
+   "iceandfire:deathworm_chitin_red and iceandfire:deathworm_gauntlet_red — Death Worm tier"
+  ],
+  "traps": [
+   "iceandfire:dread_queen is NOT a spawnable entity in this build: lang key only, no loot table, no spawn egg, no kill advancement — yet iceandfire:dread_queen_sword and :dread_queen_staff exist as real items. A kill task on the Dread Queen is permanently uncompletable",
+   "iceandfire:black_frost_dragon is a lang-only leftover with zero other files in the jar",
+   "iceandfire:dragon_multipart, :hydra_multipart, :cylcops_multipart are hitbox segments, not mobs",
+   "entity:iceandfire:cockatrice petrifies you if you meet its gaze; entity:iceandfire:gorgon turns you to stone — the guide treats both as run-away mobs",
+   "Sea serpents ambush anything in open water; one guide loses a dragon to one and the other says outright not to travel by sea early",
+   "Do not open the chests inside the mod's graveyards — the guide warns they are guarded by hostile ghosts, and the area is dangerous at night"
+  ],
+  "signature": [
+   "entity:iceandfire:fire_dragon",
+   "entity:iceandfire:ice_dragon",
+   "entity:iceandfire:lightning_dragon",
+   "iceandfire:bestiary",
+   "iceandfire:dragonsteel_fire_ingot",
+   "iceandfire:dragonforge_fire_core",
+   "iceandfire:dragon_stick",
+   "iceandfire:fire_dragon_blood"
+  ]
+ },
+ "verified_entities": {
+  "iceandfire:amphithere": {
+   "name": "Amphithere",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:cockatrice": {
+   "name": "Cockatrice",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:cyclops": {
+   "name": "Cyclops",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:deathworm": {
+   "name": "Death Worm",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "iceandfire:dread_beast": {
+   "name": "Dread Beast",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "iceandfire:dread_ghoul": {
+   "name": "Dread Ghoul",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "iceandfire:dread_horse": {
+   "name": "Dread Knight Horse",
+   "evidence": [
+    "egg",
+    "lang",
+    "tag"
+   ]
+  },
+  "iceandfire:dread_knight": {
+   "name": "Dread Knight",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "iceandfire:dread_lich": {
+   "name": "Dread Lich",
+   "evidence": [
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "iceandfire:dread_scuttler": {
+   "name": "Dread Scuttler",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "iceandfire:dread_thrall": {
+   "name": "Dread Thrall",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "iceandfire:fire_dragon": {
+   "name": "Fire Dragon",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:ghost": {
+   "name": "Ghost",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:gorgon": {
+   "name": "Gorgon",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:hippocampus": {
+   "name": "Hippocampus",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:hippogryph": {
+   "name": "Hippogryph",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:hydra": {
+   "name": "Hydra",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:ice_dragon": {
+   "name": "Ice Dragon",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "iceandfire:lightning_dragon": {
+   "name": "Lightning Dragon",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:myrmex_queen": {
+   "name": "Myrmex Queen",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:myrmex_royal": {
+   "name": "Myrmex Royal",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:myrmex_sentinel": {
+   "name": "Myrmex Sentinel",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:myrmex_soldier": {
+   "name": "Myrmex Soldier",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:myrmex_worker": {
+   "name": "Myrmex Worker",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:pixie": {
+   "name": "Pixie",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:sea_serpent": {
+   "name": "Sea Serpent",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:siren": {
+   "name": "Siren",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:stymphalian_bird": {
+   "name": "Stymphalian Bird",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "iceandfire:troll": {
+   "name": "Troll",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  }
+ },
+ "unusable_entities": {
+  "iceandfire:amphithere_arrow": {
+   "name": "Amphithere Arrow",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:black_frost_dragon": {
+   "name": "Black Frost",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:chain_tie": {
+   "name": "Chain",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:cockatrice_egg": {
+   "name": "Cockatrice Egg",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:cylcops_multipart": {
+   "name": "Cyclops Eye",
+   "evidence": [
+    "lang"
+   ],
+   "why": "body part / segment of a larger mob"
+  },
+  "iceandfire:deathworm_egg": {
+   "name": "Death Worm Egg",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:dragon_arrow": {
+   "name": "Dragon Bone Arrow",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:dragon_egg": {
+   "name": "Dragon Egg",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:dragon_multipart": {
+   "name": "Dragon Part",
+   "evidence": [
+    "lang"
+   ],
+   "why": "body part / segment of a larger mob"
+  },
+  "iceandfire:dragon_skull": {
+   "name": "Dragon Skull",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:dread_lich_skull": {
+   "name": "Dread Lich Skull",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:dread_queen": {
+   "name": "Dread Queen",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:fire_dragon_charge": {
+   "name": "Dragon Fire Charge",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:hippogryph_egg": {
+   "name": "Hippogryph Egg",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:hydra_arrow": {
+   "name": "Hydra Arrow",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:hydra_breath": {
+   "name": "Hydra Breath",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:hydra_multipart": {
+   "name": "Hydra Neck",
+   "evidence": [
+    "lang"
+   ],
+   "why": "body part / segment of a larger mob"
+  },
+  "iceandfire:ice_dragon_charge": {
+   "name": "Dragon Ice Charge",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:lightning_dragon_charge": {
+   "name": "Dragon Lightning Charge",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:mob_skull": {
+   "name": "Skull",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:multipart": {
+   "name": "Part",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:myrmex_egg": {
+   "name": "Myrmex Egg",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:myrmex_swarmer": {
+   "name": "Myrmex Swarmer",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:pixie_charge": {
+   "name": "Pixie Wand Beam",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:player": {
+   "name": "Player",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:sea_serpent_arrow": {
+   "name": "Sea Serpent Arrow",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:sea_serpent_bubbles": {
+   "name": "Sea Serpent Bubbles",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:stone_statue": {
+   "name": "Stone Statue",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:stymphalian_arrow": {
+   "name": "Stymphalian Arrow",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:stymphalian_feather": {
+   "name": "Stymphalian Bird Feather",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "iceandfire:tide_trident": {
+   "name": "Tide Trident",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  }
+ },
+ "verified_items": [
+  "iceandfire:ambrosia",
+  "iceandfire:amphithere_arrow",
+  "iceandfire:amphithere_feather",
+  "iceandfire:amphithere_macuahuitl",
+  "iceandfire:amphithere_skull",
+  "iceandfire:amythest_gem",
+  "iceandfire:armor_amythest_boots",
+  "iceandfire:armor_amythest_chestplate",
+  "iceandfire:armor_amythest_helmet",
+  "iceandfire:armor_amythest_leggings",
+  "iceandfire:armor_black_boots",
+  "iceandfire:armor_black_chestplate",
+  "iceandfire:armor_black_helmet",
+  "iceandfire:armor_black_leggings",
+  "iceandfire:armor_blue_boots",
+  "iceandfire:armor_blue_chestplate",
+  "iceandfire:armor_blue_helmet",
+  "iceandfire:armor_blue_leggings",
+  "iceandfire:armor_bronze_boots",
+  "iceandfire:armor_bronze_chestplate",
+  "iceandfire:armor_bronze_helmet",
+  "iceandfire:armor_bronze_leggings",
+  "iceandfire:armor_copper_boots",
+  "iceandfire:armor_copper_chestplate",
+  "iceandfire:armor_copper_helmet",
+  "iceandfire:armor_copper_leggings",
+  "iceandfire:armor_copper_metal_boots",
+  "iceandfire:armor_copper_metal_chestplate",
+  "iceandfire:armor_copper_metal_helmet",
+  "iceandfire:armor_copper_metal_leggings",
+  "iceandfire:armor_electric_boots",
+  "iceandfire:armor_electric_chestplate",
+  "iceandfire:armor_electric_helmet",
+  "iceandfire:armor_electric_leggings",
+  "iceandfire:armor_gray_boots",
+  "iceandfire:armor_gray_chestplate",
+  "iceandfire:armor_gray_helmet",
+  "iceandfire:armor_gray_leggings",
+  "iceandfire:armor_green_boots",
+  "iceandfire:armor_green_chestplate",
+  "iceandfire:armor_green_helmet",
+  "iceandfire:armor_green_leggings",
+  "iceandfire:armor_red_boots",
+  "iceandfire:armor_red_chestplate",
+  "iceandfire:armor_red_helmet",
+  "iceandfire:armor_red_leggings",
+  "iceandfire:armor_sapphire_boots",
+  "iceandfire:armor_sapphire_chestplate",
+  "iceandfire:armor_sapphire_helmet",
+  "iceandfire:armor_sapphire_leggings",
+  "iceandfire:armor_silver_boots",
+  "iceandfire:armor_silver_chestplate",
+  "iceandfire:armor_silver_helmet",
+  "iceandfire:armor_silver_leggings",
+  "iceandfire:armor_silver_metal_boots",
+  "iceandfire:armor_silver_metal_chestplate",
+  "iceandfire:armor_silver_metal_helmet",
+  "iceandfire:armor_silver_metal_leggings",
+  "iceandfire:armor_white_boots",
+  "iceandfire:armor_white_chestplate",
+  "iceandfire:armor_white_helmet",
+  "iceandfire:armor_white_leggings",
+  "iceandfire:ash",
+  "iceandfire:banner_pattern_amphithere",
+  "iceandfire:banner_pattern_bird",
+  "iceandfire:banner_pattern_dread",
+  "iceandfire:banner_pattern_eye",
+  "iceandfire:banner_pattern_fae",
+  "iceandfire:banner_pattern_feather",
+  "iceandfire:banner_pattern_fire",
+  "iceandfire:banner_pattern_fire_head",
+  "iceandfire:banner_pattern_gorgon",
+  "iceandfire:banner_pattern_hippocampus",
+  "iceandfire:banner_pattern_hippogryph_head",
+  "iceandfire:banner_pattern_ice",
+  "iceandfire:banner_pattern_ice_head",
+  "iceandfire:banner_pattern_lightning",
+  "iceandfire:banner_pattern_lightning_head",
+  "iceandfire:banner_pattern_mermaid",
+  "iceandfire:banner_pattern_sea_serpent",
+  "iceandfire:banner_pattern_troll",
+  "iceandfire:banner_pattern_weezer",
+  "iceandfire:bestiary",
+  "iceandfire:blindfold",
+  "iceandfire:burnt_torch",
+  "iceandfire:cannoli",
+  "iceandfire:chain",
+  "iceandfire:chain_sticky",
+  "iceandfire:chared_cobblestone",
+  "iceandfire:chared_dirt",
+  "iceandfire:chared_dirt_path",
+  "iceandfire:chared_grass",
+  "iceandfire:chared_gravel",
+  "iceandfire:chared_stone",
+  "iceandfire:cockatrice_eye",
+  "iceandfire:cockatrice_scepter",
+  "iceandfire:cockatrice_skull",
+  "iceandfire:copper_axe",
+  "iceandfire:copper_hoe",
+  "iceandfire:copper_nugget",
+  "iceandfire:copper_pickaxe",
+  "iceandfire:copper_pile",
+  "iceandfire:copper_shovel",
+  "iceandfire:copper_sword",
+  "iceandfire:crackled_cobblestone",
+  "iceandfire:crackled_dirt",
+  "iceandfire:crackled_dirt_path",
+  "iceandfire:crackled_grass",
+  "iceandfire:crackled_gravel",
+  "iceandfire:crackled_stone",
+  "iceandfire:creative_dragon_meal",
+  "iceandfire:cyclops_eye",
+  "iceandfire:cyclops_skull",
+  "iceandfire:deathworm_chitin_red",
+  "iceandfire:deathworm_chitin_white",
+  "iceandfire:deathworm_chitin_yellow",
+  "iceandfire:deathworm_egg",
+  "iceandfire:deathworm_egg_giant",
+  "iceandfire:deathworm_gauntlet_red",
+  "iceandfire:deathworm_gauntlet_white",
+  "iceandfire:deathworm_gauntlet_yellow",
+  "iceandfire:deathworm_red_boots",
+  "iceandfire:deathworm_red_chestplate",
+  "iceandfire:deathworm_red_helmet",
+  "iceandfire:deathworm_red_leggings",
+  "iceandfire:deathworm_tounge",
+  "iceandfire:deathworm_white_boots",
+  "iceandfire:deathworm_white_chestplate",
+  "iceandfire:deathworm_white_helmet",
+  "iceandfire:deathworm_white_leggings",
+  "iceandfire:deathworm_yellow_boots",
+  "iceandfire:deathworm_yellow_chestplate",
+  "iceandfire:deathworm_yellow_helmet",
+  "iceandfire:deathworm_yellow_leggings",
+  "iceandfire:deepslate_silver_ore",
+  "iceandfire:desert_myrmex_cocoon",
+  "iceandfire:diamond_hippogryph_armor",
+  "iceandfire:dragon_bone_block",
+  "iceandfire:dragon_bone_wall",
+  "iceandfire:dragon_debug_stick",
+  "iceandfire:dragon_flute",
+  "iceandfire:dragon_horn",
+  "iceandfire:dragon_horn_fire",
+  "iceandfire:dragon_horn_ice",
+  "iceandfire:dragon_ice",
+  "iceandfire:dragon_ice_spikes",
+  "iceandfire:dragon_meal",
+  "iceandfire:dragon_skull_fire",
+  "iceandfire:dragon_skull_ice",
+  "iceandfire:dragon_skull_lightning",
+  "iceandfire:dragon_stick",
+  "iceandfire:dragonarmor_copper_body",
+  "iceandfire:dragonarmor_copper_head",
+  "iceandfire:dragonarmor_copper_neck",
+  "iceandfire:dragonarmor_copper_tail",
+  "iceandfire:dragonarmor_diamond_body",
+  "iceandfire:dragonarmor_diamond_head",
+  "iceandfire:dragonarmor_diamond_neck",
+  "iceandfire:dragonarmor_diamond_tail",
+  "iceandfire:dragonarmor_dragonsteel_fire_body",
+  "iceandfire:dragonarmor_dragonsteel_fire_head",
+  "iceandfire:dragonarmor_dragonsteel_fire_neck",
+  "iceandfire:dragonarmor_dragonsteel_fire_tail",
+  "iceandfire:dragonarmor_dragonsteel_ice_body",
+  "iceandfire:dragonarmor_dragonsteel_ice_head",
+  "iceandfire:dragonarmor_dragonsteel_ice_neck",
+  "iceandfire:dragonarmor_dragonsteel_ice_tail",
+  "iceandfire:dragonarmor_dragonsteel_lightning_body",
+  "iceandfire:dragonarmor_dragonsteel_lightning_head",
+  "iceandfire:dragonarmor_dragonsteel_lightning_neck",
+  "iceandfire:dragonarmor_dragonsteel_lightning_tail",
+  "iceandfire:dragonarmor_gold_body",
+  "iceandfire:dragonarmor_gold_head",
+  "iceandfire:dragonarmor_gold_neck",
+  "iceandfire:dragonarmor_gold_tail",
+  "iceandfire:dragonarmor_iron_body",
+  "iceandfire:dragonarmor_iron_head",
+  "iceandfire:dragonarmor_iron_neck",
+  "iceandfire:dragonarmor_iron_tail",
+  "iceandfire:dragonarmor_silver_body",
+  "iceandfire:dragonarmor_silver_head",
+  "iceandfire:dragonarmor_silver_neck",
+  "iceandfire:dragonarmor_silver_tail",
+  "iceandfire:dragonbone",
+  "iceandfire:dragonbone_arrow",
+  "iceandfire:dragonbone_axe",
+  "iceandfire:dragonbone_bow",
+  "iceandfire:dragonbone_hoe",
+  "iceandfire:dragonbone_pickaxe",
+  "iceandfire:dragonbone_shovel",
+  "iceandfire:dragonbone_sword",
+  "iceandfire:dragonbone_sword_fire",
+  "iceandfire:dragonbone_sword_ice",
+  "iceandfire:dragonbone_sword_lightning",
+  "iceandfire:dragonegg_amythest",
+  "iceandfire:dragonegg_black",
+  "iceandfire:dragonegg_blue",
+  "iceandfire:dragonegg_bronze",
+  "iceandfire:dragonegg_copper",
+  "iceandfire:dragonegg_electric",
+  "iceandfire:dragonegg_gray",
+  "iceandfire:dragonegg_green",
+  "iceandfire:dragonegg_red",
+  "iceandfire:dragonegg_sapphire",
+  "iceandfire:dragonegg_silver",
+  "iceandfire:dragonegg_white",
+  "iceandfire:dragonforge_fire_brick",
+  "iceandfire:dragonforge_fire_core",
+  "iceandfire:dragonforge_fire_core_disabled",
+  "iceandfire:dragonforge_fire_input",
+  "iceandfire:dragonforge_ice_brick",
+  "iceandfire:dragonforge_ice_core",
+  "iceandfire:dragonforge_ice_core_disabled",
+  "iceandfire:dragonforge_ice_input",
+  "iceandfire:dragonforge_lightning_brick",
+  "iceandfire:dragonforge_lightning_core",
+  "iceandfire:dragonforge_lightning_core_disabled",
+  "iceandfire:dragonforge_lightning_input",
+  "iceandfire:dragonscale_amythest",
+  "iceandfire:dragonscale_black",
+  "iceandfire:dragonscale_blue",
+  "iceandfire:dragonscale_bronze",
+  "iceandfire:dragonscale_copper",
+  "iceandfire:dragonscale_electric",
+  "iceandfire:dragonscale_gray",
+  "iceandfire:dragonscale_green",
+  "iceandfire:dragonscale_red",
+  "iceandfire:dragonscale_sapphire",
+  "iceandfire:dragonscale_silver",
+  "iceandfire:dragonscale_white",
+  "iceandfire:dragonscales_amythest",
+  "iceandfire:dragonscales_black",
+  "iceandfire:dragonscales_blue",
+  "iceandfire:dragonscales_bronze",
+  "iceandfire:dragonscales_copper",
+  "iceandfire:dragonscales_electric",
+  "iceandfire:dragonscales_gray",
+  "iceandfire:dragonscales_green",
+  "iceandfire:dragonscales_red",
+  "iceandfire:dragonscales_sapphire",
+  "iceandfire:dragonscales_silver",
+  "iceandfire:dragonscales_white",
+  "iceandfire:dragonsteel_fire_axe",
+  "iceandfire:dragonsteel_fire_block",
+  "iceandfire:dragonsteel_fire_boots",
+  "iceandfire:dragonsteel_fire_chestplate",
+  "iceandfire:dragonsteel_fire_helmet",
+  "iceandfire:dragonsteel_fire_hoe",
+  "iceandfire:dragonsteel_fire_ingot",
+  "iceandfire:dragonsteel_fire_leggings",
+  "iceandfire:dragonsteel_fire_pickaxe",
+  "iceandfire:dragonsteel_fire_shovel",
+  "iceandfire:dragonsteel_fire_sword",
+  "iceandfire:dragonsteel_ice_axe",
+  "iceandfire:dragonsteel_ice_block",
+  "iceandfire:dragonsteel_ice_boots",
+  "iceandfire:dragonsteel_ice_chestplate",
+  "iceandfire:dragonsteel_ice_helmet",
+  "iceandfire:dragonsteel_ice_hoe",
+  "iceandfire:dragonsteel_ice_ingot",
+  "iceandfire:dragonsteel_ice_leggings",
+  "iceandfire:dragonsteel_ice_pickaxe",
+  "iceandfire:dragonsteel_ice_shovel",
+  "iceandfire:dragonsteel_ice_sword",
+  "iceandfire:dragonsteel_lightning_axe",
+  "iceandfire:dragonsteel_lightning_block",
+  "iceandfire:dragonsteel_lightning_boots",
+  "iceandfire:dragonsteel_lightning_chestplate",
+  "iceandfire:dragonsteel_lightning_helmet",
+  "iceandfire:dragonsteel_lightning_hoe",
+  "iceandfire:dragonsteel_lightning_ingot",
+  "iceandfire:dragonsteel_lightning_leggings",
+  "iceandfire:dragonsteel_lightning_pickaxe",
+  "iceandfire:dragonsteel_lightning_shovel",
+  "iceandfire:dragonsteel_lightning_sword",
+  "iceandfire:dread_key",
+  "iceandfire:dread_knight_sword",
+  "iceandfire:dread_portal",
+  "iceandfire:dread_queen_staff",
+  "iceandfire:dread_queen_sword",
+  "iceandfire:dread_shard",
+  "iceandfire:dread_spawner",
+  "iceandfire:dread_stone",
+  "iceandfire:dread_stone_bricks",
+  "iceandfire:dread_stone_bricks_chiseled",
+  "iceandfire:dread_stone_bricks_cracked",
+  "iceandfire:dread_stone_bricks_mossy",
+  "iceandfire:dread_stone_face",
+  "iceandfire:dread_stone_slab",
+  "iceandfire:dread_stone_stairs",
+  "iceandfire:dread_stone_tile",
+  "iceandfire:dread_sword",
+  "iceandfire:dread_torch",
+  "iceandfire:dreadwood_log",
+  "iceandfire:dreadwood_planks",
+  "iceandfire:dreadwood_planks_lock",
+  "iceandfire:earplugs",
+  "iceandfire:ectoplasm",
+  "iceandfire:egginice",
+  "iceandfire:fire_dragon_blood",
+  "iceandfire:fire_dragon_flesh",
+  "iceandfire:fire_dragon_heart",
+  "iceandfire:fire_lily",
+  "iceandfire:fire_stew",
+  "iceandfire:fishing_spear",
+  "iceandfire:forest_troll_leather_boots",
+  "iceandfire:forest_troll_leather_chestplate",
+  "iceandfire:forest_troll_leather_helmet",
+  "iceandfire:forest_troll_leather_leggings",
+  "iceandfire:frost_lily",
+  "iceandfire:frost_stew",
+  "iceandfire:frost_troll_leather_boots",
+  "iceandfire:frost_troll_leather_chestplate",
+  "iceandfire:frost_troll_leather_helmet",
+  "iceandfire:frost_troll_leather_leggings",
+  "iceandfire:frozen_cobblestone",
+  "iceandfire:frozen_dirt",
+  "iceandfire:frozen_dirt_path",
+  "iceandfire:frozen_grass",
+  "iceandfire:frozen_gravel",
+  "iceandfire:frozen_splinters",
+  "iceandfire:frozen_stone",
+  "iceandfire:ghost_chest",
+  "iceandfire:ghost_ingot",
+  "iceandfire:ghost_sword",
+  "iceandfire:gold_hippogryph_armor",
+  "iceandfire:gold_pile",
+  "iceandfire:gorgon_head",
+  "iceandfire:graveyard_soil",
+  "iceandfire:hippocampus_fin",
+  "iceandfire:hippocampus_slapper",
+  "iceandfire:hippogryph_egg",
+  "iceandfire:hippogryph_skull",
+  "iceandfire:hippogryph_sword",
+  "iceandfire:hippogryph_talon",
+  "iceandfire:hydra_arrow",
+  "iceandfire:hydra_fang",
+  "iceandfire:hydra_heart",
+  "iceandfire:hydra_skull",
+  "iceandfire:ice_dragon_blood",
+  "iceandfire:ice_dragon_flesh",
+  "iceandfire:ice_dragon_heart",
+  "iceandfire:iron_hippogryph_armor",
+  "iceandfire:jungle_myrmex_cocoon",
+  "iceandfire:lectern",
+  "iceandfire:lich_staff",
+  "iceandfire:lightning_dragon_blood",
+  "iceandfire:lightning_dragon_flesh",
+  "iceandfire:lightning_dragon_heart",
+  "iceandfire:lightning_lily",
+  "iceandfire:lightning_stew",
+  "iceandfire:manuscript",
+  "iceandfire:mountain_troll_leather_boots",
+  "iceandfire:mountain_troll_leather_chestplate",
+  "iceandfire:mountain_troll_leather_helmet",
+  "iceandfire:mountain_troll_leather_leggings",
+  "iceandfire:myrmex_desert_axe",
+  "iceandfire:myrmex_desert_biolight",
+  "iceandfire:myrmex_desert_boots",
+  "iceandfire:myrmex_desert_chestplate",
+  "iceandfire:myrmex_desert_chitin",
+  "iceandfire:myrmex_desert_egg",
+  "iceandfire:myrmex_desert_helmet",
+  "iceandfire:myrmex_desert_hoe",
+  "iceandfire:myrmex_desert_leggings",
+  "iceandfire:myrmex_desert_pickaxe",
+  "iceandfire:myrmex_desert_resin",
+  "iceandfire:myrmex_desert_resin_block",
+  "iceandfire:myrmex_desert_resin_glass",
+  "iceandfire:myrmex_desert_shovel",
+  "iceandfire:myrmex_desert_staff",
+  "iceandfire:myrmex_desert_swarm",
+  "iceandfire:myrmex_desert_sword",
+  "iceandfire:myrmex_desert_sword_venom",
+  "iceandfire:myrmex_jungle_axe",
+  "iceandfire:myrmex_jungle_biolight",
+  "iceandfire:myrmex_jungle_boots",
+  "iceandfire:myrmex_jungle_chestplate",
+  "iceandfire:myrmex_jungle_chitin",
+  "iceandfire:myrmex_jungle_egg",
+  "iceandfire:myrmex_jungle_helmet",
+  "iceandfire:myrmex_jungle_hoe",
+  "iceandfire:myrmex_jungle_leggings",
+  "iceandfire:myrmex_jungle_pickaxe",
+  "iceandfire:myrmex_jungle_resin",
+  "iceandfire:myrmex_jungle_resin_block",
+  "iceandfire:myrmex_jungle_resin_glass",
+  "iceandfire:myrmex_jungle_shovel",
+  "iceandfire:myrmex_jungle_staff",
+  "iceandfire:myrmex_jungle_swarm",
+  "iceandfire:myrmex_jungle_sword",
+  "iceandfire:myrmex_jungle_sword_venom",
+  "iceandfire:myrmex_resin_desert",
+  "iceandfire:myrmex_resin_jungle",
+  "iceandfire:myrmex_resin_sticky_desert",
+  "iceandfire:myrmex_resin_sticky_jungle",
+  "iceandfire:myrmex_stinger",
+  "iceandfire:nest",
+  "iceandfire:pixie_dust",
+  "iceandfire:pixie_house_birch",
+  "iceandfire:pixie_house_dark_oak",
+  "iceandfire:pixie_house_mushroom_brown",
+  "iceandfire:pixie_house_mushroom_red",
+  "iceandfire:pixie_house_oak",
+  "iceandfire:pixie_house_spruce",
+  "iceandfire:pixie_jar_0",
+  "iceandfire:pixie_jar_1",
+  "iceandfire:pixie_jar_2",
+  "iceandfire:pixie_jar_3",
+  "iceandfire:pixie_jar_4",
+  "iceandfire:pixie_jar_empty",
+  "iceandfire:pixie_wand",
+  "iceandfire:pixie_wings",
+  "iceandfire:podium_acacia",
+  "iceandfire:podium_birch",
+  "iceandfire:podium_dark_oak",
+  "iceandfire:podium_jungle",
+  "iceandfire:podium_oak",
+  "iceandfire:podium_spruce",
+  "iceandfire:raw_silver",
+  "iceandfire:raw_silver_block",
+  "iceandfire:rotten_egg",
+  "iceandfire:sapphire_block",
+  "iceandfire:sapphire_gem",
+  "iceandfire:sapphire_ore",
+  "iceandfire:sea_serpent_arrow",
+  "iceandfire:sea_serpent_fang",
+  "iceandfire:sea_serpent_scale_block_blue",
+  "iceandfire:sea_serpent_scale_block_bronze",
+  "iceandfire:sea_serpent_scale_block_deepblue",
+  "iceandfire:sea_serpent_scale_block_green",
+  "iceandfire:sea_serpent_scale_block_purple",
+  "iceandfire:sea_serpent_scale_block_red",
+  "iceandfire:sea_serpent_scale_block_teal",
+  "iceandfire:sea_serpent_scales_blue",
+  "iceandfire:sea_serpent_scales_bronze",
+  "iceandfire:sea_serpent_scales_deepblue",
+  "iceandfire:sea_serpent_scales_green",
+  "iceandfire:sea_serpent_scales_purple",
+  "iceandfire:sea_serpent_scales_red",
+  "iceandfire:sea_serpent_scales_teal",
+  "iceandfire:seaserpent_skull",
+  "iceandfire:sheep_boots",
+  "iceandfire:sheep_chestplate",
+  "iceandfire:sheep_helmet",
+  "iceandfire:sheep_leggings",
+  "iceandfire:shiny_scales",
+  "iceandfire:sickly_dragon_meal",
+  "iceandfire:silver_axe",
+  "iceandfire:silver_block",
+  "iceandfire:silver_hoe",
+  "iceandfire:silver_ingot",
+  "iceandfire:silver_nugget",
+  "iceandfire:silver_ore",
+  "iceandfire:silver_pickaxe",
+  "iceandfire:silver_pile",
+  "iceandfire:silver_shovel",
+  "iceandfire:silver_sword",
+  "iceandfire:siren_flute",
+  "iceandfire:siren_tear",
+  "iceandfire:spawn_egg_amphithere",
+  "iceandfire:spawn_egg_cockatrice",
+  "iceandfire:spawn_egg_cyclops",
+  "iceandfire:spawn_egg_death_worm",
+  "iceandfire:spawn_egg_dread_beast",
+  "iceandfire:spawn_egg_dread_ghoul",
+  "iceandfire:spawn_egg_dread_horse",
+  "iceandfire:spawn_egg_dread_knight",
+  "iceandfire:spawn_egg_dread_scuttler",
+  "iceandfire:spawn_egg_dread_thrall",
+  "iceandfire:spawn_egg_fire_dragon",
+  "iceandfire:spawn_egg_ghost",
+  "iceandfire:spawn_egg_gorgon",
+  "iceandfire:spawn_egg_hippocampus",
+  "iceandfire:spawn_egg_hippogryph",
+  "iceandfire:spawn_egg_hydra",
+  "iceandfire:spawn_egg_ice_dragon",
+  "iceandfire:spawn_egg_lich",
+  "iceandfire:spawn_egg_lightning_dragon",
+  "iceandfire:spawn_egg_myrmex_queen",
+  "iceandfire:spawn_egg_myrmex_royal",
+  "iceandfire:spawn_egg_myrmex_sentinel",
+  "iceandfire:spawn_egg_myrmex_soldier",
+  "iceandfire:spawn_egg_myrmex_worker",
+  "iceandfire:spawn_egg_pixie",
+  "iceandfire:spawn_egg_sea_serpent",
+  "iceandfire:spawn_egg_siren",
+  "iceandfire:spawn_egg_stymphalian_bird",
+  "iceandfire:spawn_egg_troll",
+  "iceandfire:stone_statue",
+  "iceandfire:stymphalian_arrow",
+  "iceandfire:stymphalian_bird_dagger",
+  "iceandfire:stymphalian_bird_feather",
+  "iceandfire:stymphalian_feather_bundle",
+  "iceandfire:stymphalian_skull",
+  "iceandfire:summoning_crystal_fire",
+  "iceandfire:summoning_crystal_ice",
+  "iceandfire:summoning_crystal_lightning",
+  "iceandfire:tide_blue_boots",
+  "iceandfire:tide_blue_chestplate",
+  "iceandfire:tide_blue_helmet",
+  "iceandfire:tide_blue_leggings",
+  "iceandfire:tide_bronze_boots",
+  "iceandfire:tide_bronze_chestplate",
+  "iceandfire:tide_bronze_helmet",
+  "iceandfire:tide_bronze_leggings",
+  "iceandfire:tide_deepblue_boots",
+  "iceandfire:tide_deepblue_chestplate",
+  "iceandfire:tide_deepblue_helmet",
+  "iceandfire:tide_deepblue_leggings",
+  "iceandfire:tide_green_boots",
+  "iceandfire:tide_green_chestplate",
+  "iceandfire:tide_green_helmet",
+  "iceandfire:tide_green_leggings",
+  "iceandfire:tide_purple_boots",
+  "iceandfire:tide_purple_chestplate",
+  "iceandfire:tide_purple_helmet",
+  "iceandfire:tide_purple_leggings",
+  "iceandfire:tide_red_boots",
+  "iceandfire:tide_red_chestplate",
+  "iceandfire:tide_red_helmet",
+  "iceandfire:tide_red_leggings",
+  "iceandfire:tide_teal_boots",
+  "iceandfire:tide_teal_chestplate",
+  "iceandfire:tide_teal_helmet",
+  "iceandfire:tide_teal_leggings",
+  "iceandfire:tide_trident",
+  "iceandfire:tide_trident_inventory",
+  "iceandfire:troll_leather_forest",
+  "iceandfire:troll_leather_frost",
+  "iceandfire:troll_leather_mountain",
+  "iceandfire:troll_skull",
+  "iceandfire:troll_tusk",
+  "iceandfire:troll_weapon_axe",
+  "iceandfire:troll_weapon_column",
+  "iceandfire:troll_weapon_column_forest",
+  "iceandfire:troll_weapon_column_frost",
+  "iceandfire:troll_weapon_hammer",
+  "iceandfire:troll_weapon_trunk",
+  "iceandfire:troll_weapon_trunk_frost",
+  "iceandfire:weezer_blue_album",
+  "iceandfire:wither_shard",
+  "iceandfire:witherbone"
+ ],
+ "fake_item_ids": [
+  "iceandfire:ancient_stone_stairs",
+  "iceandfire:chain_link",
+  "iceandfire:copper_block",
+  "iceandfire:copper_ingot",
+  "iceandfire:copper_ore",
+  "iceandfire:desert_myrmex_resin",
+  "iceandfire:desert_myrmex_resin_sticky",
+  "iceandfire:dragon_horn_lightning",
+  "iceandfire:dragonbone_bow_pulling_0",
+  "iceandfire:dragonbone_bow_pulling_1",
+  "iceandfire:dragonbone_bow_pulling_2",
+  "iceandfire:dread_stone_slab_double",
+  "iceandfire:dread_stone_slab_upper",
+  "iceandfire:jungle_myrmex_resin",
+  "iceandfire:jungle_myrmex_resin_sticky",
+  "iceandfire:pixie_house",
+  "iceandfire:pixie_jar_5",
+  "iceandfire:summoning_crystal_fire_active",
+  "iceandfire:summoning_crystal_ice_active",
+  "iceandfire:summoning_crystal_lightning_active",
+  "iceandfire:tide_trident_throwing",
+  "iceandfire:troll_weapon"
+ ]
+}

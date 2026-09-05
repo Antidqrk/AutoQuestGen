@@ -1,0 +1,105 @@
+{
+ "mod": "myths_of_the_sea",
+ "verified_against": "MOTS-Forge-1.20.1-1.3.0.jar",
+ "item_count_in_jar": 18,
+ "chain": [
+  {
+   "id": "kill:myths_of_the_sea:bunyip",
+   "title": "Something in the Mangroves",
+   "desc": "The only land-adjacent myth in the mod: Bunyips spawn three or four at a time in minecraft:swamp and mangrove_swamp at weight 4."
+  },
+  {
+   "id": "myths_of_the_sea:bunyip_fang",
+   "title": "Pulled From the Jaw",
+   "desc": "The Bunyip's single drop, and the first thing this mod gives you that you can build with."
+  },
+  {
+   "id": "myths_of_the_sea:bunyip_claw",
+   "title": "Better With Two",
+   "desc": "Three Bunyip Fangs over four leather. Its own tooltip promises +2 Attack Damage when dual wielding, so the mod means you to make a pair."
+  },
+  {
+   "id": "kill:myths_of_the_sea:hippocampus",
+   "title": "Horses of the Warm Ocean",
+   "desc": "Hippocampi shoal two to four at a time in minecraft:warm_ocean at weight 12 - the commonest sea myth here after the Abaia."
+  },
+  {
+   "id": "myths_of_the_sea:hippocampus_eye",
+   "title": "Sight Under Water",
+   "desc": "It has no recipe of its own; it is a BREWING ingredient, and the potion it makes is the mod's extended Night Vision - which is exactly what diving deeper needs."
+  },
+  {
+   "id": "kill:myths_of_the_sea:abaia",
+   "title": "The Eel That Guards the Reef",
+   "desc": "Abaia are the densest spawn in the mod - weight 25, one or two at a time, throughout minecraft:warm_ocean."
+  },
+  {
+   "id": "myths_of_the_sea:abaia_fin",
+   "title": "Cut From the Tail",
+   "desc": "The Abaia's only drop and the one material in the mod that pairs with vanilla prismarine."
+  },
+  {
+   "id": "myths_of_the_sea:abaia_tail_boots",
+   "title": "Swim Like the Eel",
+   "desc": "Two prismarine shards over two Abaia Fins. The mod registers its own water_speed attribute for these, displayed as Depth Strider."
+  },
+  {
+   "id": "kill:myths_of_the_sea:bake_kujira",
+   "title": "The Ghost Whale",
+   "desc": "A skeletal whale that haunts plain minecraft:ocean at weight 3, alone. It is the mod's armour tier and the step where the open water gets dangerous."
+  },
+  {
+   "id": "myths_of_the_sea:bake_kujira_bone",
+   "title": "Bone From a Dead Whale",
+   "desc": "The Bake Kujira's only drop, and the sole ingredient of all four pieces of the mod's armour set - twenty-four bones for the full suit."
+  },
+  {
+   "id": "myths_of_the_sea:bake_kujira_helmet",
+   "title": "Wearing the Whale",
+   "desc": "Five Bake Kujira Bones. The helmet is the cheapest piece and the gateway to the chestplate, leggings and boots."
+  },
+  {
+   "id": "kill:myths_of_the_sea:leviathan",
+   "title": "Cold Water, Big Problem",
+   "desc": "Leviathans spawn alone in minecraft:cold_ocean and deep_cold_ocean at weight 2 - half as common as the ghost whale and considerably worse tempered."
+  },
+  {
+   "id": "myths_of_the_sea:leviathan_heart",
+   "title": "Still Beating",
+   "desc": "The Leviathan's only drop. It has no recipe and no further use in the jar - it is a trophy, and the mod treats it as one."
+  },
+  {
+   "id": "kill:myths_of_the_sea:kraken",
+   "title": "The Rarest Thing in the Ocean",
+   "desc": "Weight 1, one at a time, and only in deep_ocean, deep_cold_ocean and deep_lukewarm_ocean - the lowest spawn weight in the mod by a factor of two."
+  },
+  {
+   "id": "myths_of_the_sea:kraken_tentacle",
+   "title": "Torn Off and Kept",
+   "desc": "The Kraken's only drop, and the one drop in this mod that is a weapon in its own right rather than a crafting ingredient."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "myths_of_the_sea:bake_kujira_helmet",
+   "members": [
+    "myths_of_the_sea:bake_kujira_chestplate",
+    "myths_of_the_sea:bake_kujira_leggings",
+    "myths_of_the_sea:bake_kujira_boots",
+    "myths_of_the_sea:abaia_tail_boots",
+    "myths_of_the_sea:bunyip_claw"
+   ]
+  },
+  {
+   "hub": "myths_of_the_sea:leviathan_heart",
+   "members": [
+    "myths_of_the_sea:kraken_tentacle",
+    "myths_of_the_sea:hippocampus_eye",
+    "myths_of_the_sea:abaia_fin",
+    "myths_of_the_sea:bake_kujira_bone",
+    "myths_of_the_sea:bunyip_fang"
+   ]
+  }
+ ],
+ "notes": "THIS IS A SHORT MOD AND THE CHAIN IS DECLARED SHORT: fifteen steps is the whole thing, not a truncation. Item set = 18 stems of assets/myths_of_the_sea/models/item/*.json intersected with item.myths_of_the_sea.* lang keys = 18, and there are ZERO block.myths_of_the_sea.* keys and zero blockstates - this mod places nothing. Six of the eighteen items are spawn eggs with no recipe and no loot table, so the obtainable set is TWELVE items: six mob drops (abaia_fin, bake_kujira_bone, bunyip_fang, hippocampus_eye, kraken_tentacle, leviathan_heart) and six crafted (bunyip_claw, abaia_tail_boots, and the four bake_kujira armour pieces). All twelve are in this file. The one item.lang key with no model is bunyip_claw.tooltip ('+2 Attack Damage when dual wielding'), a tooltip line rather than an item. ENTITY VERIFICATION - 6 entity.myths_of_the_sea.* lang keys and ALL SIX ARE REAL MOBS with three independent proofs each. There are no projectile, vehicle, body-part or message-string entity keys in this jar at all, so there was nothing to filter. Every one has (a) its own entity loot table in data/myths_of_the_sea/loot_tables/entities/, each with exactly one drop, (b) a <name>_spawn_egg item, and (c) its OWN forge:add_spawns biome modifier: spawn_abaia.json (minecraft:warm_ocean, weight 25, 1-2), spawn_hippocampus.json (minecraft:warm_ocean, weight 12, 2-4), spawn_bunyip.json (minecraft:swamp + mangrove_swamp, weight 4, 3-4), spawn_bake_kujira.json (minecraft:ocean, weight 3, 1-1), spawn_leviathan.json (minecraft:cold_ocean + deep_cold_ocean, weight 2, 1-1), spawn_kraken.json (minecraft:deep_ocean + deep_cold_ocean + deep_lukewarm_ocean, weight 1, 1-1). ORDERING IS BY SPAWN WEIGHT AND BIOME DEPTH, because there is nothing else to order by: the mod ships only six advancements and all six are recipe unlocks (abaia_tail_boots, bunyip_claw and the four armour pieces), so there is no progression tree. The chain therefore runs swamp (weight 4) -> warm ocean (weight 25 and 12) -> open ocean (weight 3) -> cold ocean (weight 2) -> deep ocean (weight 1), which is also the order the recipe graph allows, since bunyip_claw needs only leather while the armour needs twenty-four whale bones. Recipes read from the six files in data/myths_of_the_sea/recipes/: bunyip_claw <- 3 bunyip_fang + 4 leather; abaia_tail_boots <- 2 prismarine_shard + 2 abaia_fin; bake_kujira_{helmet,chestplate,leggings,boots} <- 5/8/7/4 bake_kujira_bone. THREE DROPS HAVE NO RECIPE THAT CONSUMES THEM and each was traced instead of assumed: myths_of_the_sea:hippocampus_eye is used by HippocampusEyeBrewingRecipe.class, which is what the mod's very_long_night_vision potion lang keys belong to - it is a brewing ingredient; myths_of_the_sea:kraken_tentacle has its own KrakenTentacleItem, BaseKrakenTentacleItem, model and renderer, so it is a held weapon; myths_of_the_sea:leviathan_heart appears only in MTSItems, MTSCreativeModeTabs, MTSItemModelProvider and MTSLootTableProvider - it has no use whatever beyond being dropped, which is stated plainly in its chain entry rather than dressed up. The mod also registers its own attribute, myths_of_the_sea water_speed, whose display name is 'Depth Strider' (MTSEntityAttributes.class) - that is what the Abaia Tail Boots grant. No structures: data/myths_of_the_sea/worldgen/ does not exist. No dimensions. ARMOUR RULE APPLIED: only bake_kujira_helmet is a chain step; the chestplate, leggings and boots are wheel members. CONSENSUS CONFLICT (moddb): moddb lists eight ids at 3 packs each - bake_kujira_chestplate (0.0), abaia_tail_boots (0.143), bunyip_claw (0.286), kraken_tentacle (0.429), leviathan_heart (0.571), bake_kujira_boots (0.714), bake_kujira_leggings (0.857), bake_kujira_helmet (1.0). Every one is a real id here. The consensus order is wrong in two clear ways and the graph was preferred: it splits the four bake_kujira armour pieces across positions 0.0, 0.714, 0.857 and 1.0 although all four are made from the same single ingredient and are therefore simultaneous, and it puts bunyip_claw (leather and swamp fangs) after bake_kujira_chestplate (eight bones from an ocean whale). The armour is collapsed to the helmet plus a wheel, and the spine follows spawn rarity. DROPPED: the six *_spawn_egg items, all creative-only. Requires cerbons_api and geckolib 4.7.1.2; the curios and trinkets data directories in the jar are optional compat only."
+}

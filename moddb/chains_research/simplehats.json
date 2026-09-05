@@ -1,0 +1,124 @@
+{
+ "mod": "simplehats",
+ "verified_against": "simplehats-forge-1.20.1-0.4.0a.jar",
+ "item_count_in_jar": 311,
+ "chain": [
+  {
+   "id": "simplehats:hatscraps_common",
+   "title": "Unpick a Loser",
+   "desc": "Dropping an unwanted hat into the crafting grid tears it down into Hat Scraps of that hat's own rarity."
+  },
+  {
+   "id": "simplehats:hatbag_common",
+   "title": "Four Scraps and a Prayer",
+   "desc": "Four common scraps in a square make a Common Hat Grab-Bag, which opens into a random common hat."
+  },
+  {
+   "id": "simplehats:hatscraps_uncommon",
+   "title": "Trading Up",
+   "desc": "Two common scraps compress into one Uncommon Hat Scrap, the mod's only currency conversion."
+  },
+  {
+   "id": "simplehats:hatbag_uncommon",
+   "title": "Better Odds",
+   "desc": "Four uncommon scraps bag an uncommon hat, the second of four quality tiers."
+  },
+  {
+   "id": "simplehats:hatscraps_rare",
+   "title": "Rarer Rags",
+   "desc": "Two uncommon scraps compress again into a Rare Hat Scrap; the ladder costs four commons per rare."
+  },
+  {
+   "id": "simplehats:hatbag_rare",
+   "title": "The Good Stuff",
+   "desc": "Four rare scraps make a Rare Hat Grab-Bag, the best bag the crafting table can produce."
+  },
+  {
+   "id": "simplehats:hatbag_epic",
+   "title": "No Recipe, Only Luck",
+   "desc": "There is no epic scrap tier and no epic bag recipe; the Epic Hat Grab-Bag drops only from chests and mobs at its configured weight."
+  },
+  {
+   "id": "simplehats:special",
+   "title": "The Simple Hat",
+   "desc": "Leather and string in a hat shape make The Simple Hat, the one hat in the mod with a real crafting recipe."
+  },
+  {
+   "id": "simplehats:hatdisplay",
+   "title": "Somewhere to Put It All",
+   "desc": "A log over a wooden slab makes the Hat Stand, which wears and shows off a single hat."
+  },
+  {
+   "id": "simplehats:hatscraps_halloween",
+   "title": "Seasonal Salvage",
+   "desc": "Tearing down a seasonal hat yields its own seasonal scrap instead of a rarity scrap; Halloween hats give Halloween scraps."
+  },
+  {
+   "id": "simplehats:hatbag_halloween",
+   "title": "Trick and Treat",
+   "desc": "Four Halloween scraps bag a Halloween hat, drawn only from the eleven hats flagged for that season."
+  },
+  {
+   "id": "simplehats:hatbag_festive",
+   "title": "Wrapped and Waiting",
+   "desc": "The Festive bag draws from the twelve winter hats; seasonal bags also drop on their own at seasonalBagChance."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "simplehats:hatbag_common",
+   "members": [
+    "simplehats:burgerhat",
+    "simplehats:binky",
+    "simplehats:summerhat",
+    "simplehats:brownbrick",
+    "simplehats:bandana",
+    "simplehats:baseballhat",
+    "simplehats:beanie",
+    "simplehats:bowler",
+    "simplehats:chefshat",
+    "simplehats:cowboy",
+    "simplehats:crown",
+    "simplehats:bigbrain",
+    "simplehats:bigeyes",
+    "simplehats:bicorne"
+   ]
+  },
+  {
+   "hub": "simplehats:hatbag_epic",
+   "members": [
+    "simplehats:bandanargb",
+    "simplehats:rgbsmallbowler",
+    "simplehats:rgbtoptophathat",
+    "simplehats:headphonesblue",
+    "simplehats:mindflayer_alhoon",
+    "simplehats:thumbnail",
+    "simplehats:octodad",
+    "simplehats:babyturtle",
+    "simplehats:beehat",
+    "simplehats:discoball",
+    "simplehats:fireworks",
+    "simplehats:christmastree",
+    "simplehats:ghostmask",
+    "simplehats:jackohat"
+   ]
+  },
+  {
+   "hub": "simplehats:hatbag_halloween",
+   "members": [
+    "simplehats:batwinghat",
+    "simplehats:beaniespooky",
+    "simplehats:ghostmask",
+    "simplehats:headbolts",
+    "simplehats:hockeymask",
+    "simplehats:jackohat",
+    "simplehats:murdered",
+    "simplehats:pinhead",
+    "simplehats:plaguedoctor",
+    "simplehats:spiderweb",
+    "simplehats:zigzagwitchhat"
+   ]
+  }
+ ],
+ "notes": "THIN MOD - SHORT CHAIN IS THE HONEST ANSWER. Simple Hats has 311 verified ids and exactly 17 of them are mechanics: 7 scrap types, 8 grab-bags, the hat stand and The Simple Hat. The other 294 are cosmetic head slots with no recipe, no ingredient use and no gating whatsoever. The 12-step chain above is the complete craftable content; anything longer would be padding a hat list. THE ONE REAL LOOP, verified in data/simplehats/recipes/: hatscraps.json is a code recipe (simplehats:custom_hatscraps, HatScrapRecipe.class) that converts a hat into scraps of its own rarity or season; hatscraps_uncommon.json and hatscraps_rare.json each fuse two scraps of the tier below; the seven hatbag_*.json recipes are all 2x2 of the matching scrap. hatvariants.json (simplehats:custom_hatvariants) re-rolls a hat's colour variant and produces no new id. hatbag_epic is registered and loot-injected but has NO recipe and there is no hatscraps_epic - that asymmetry is real, LootRegistry.class injects hats and bags into vanilla chest tables and mob drops with per-rarity weights (chestEpicWeight, entityEpicWeight, seasonalBagChance in SimpleHatsConfig$Common). WHEEL MEMBERSHIP IS VERIFIED, NOT GUESSED. Rarity and season were decompiled out of the <clinit> constant pool and bytecode of fonnymunkey/simplehats/common/init/HatJson.class: 293 hat entries parsed, 293 matched the jar item set, zero unmatched. Distribution: 75 COMMON, 78 UNCOMMON, 74 RARE, 66 EPIC; seasons 8 EASTER, 12 FESTIVE, 11 HALLOWEEN, 9 SUMMER, 253 none. The Halloween wheel above is the COMPLETE 11-hat season, not a selection. The common and epic wheels are capped at 14 and were seeded from moddb popularity first (burgerhat, binky, summerhat and brownbrick are common and quested in 7-13 packs; bandanargb, rgbsmallbowler, rgbtoptophathat, headphonesblue, octodad, thumbnail and mindflayer_alhoon are epic and quested in 6-13 packs) then filled from the same verified rarity bucket. MODDB VS RECIPE GRAPH: no conflict is possible - moddb's 26 simplehats entries are all cosmetic hats with no recipes at all, so they carry no ordering information. Notably this mod is the exception to the corpus-wide rule that per-variant cosmetics are never quested individually: 13 packs quest individual hats, presumably as a collection page. That still belongs in wheels, which is where they are. DROPS: none - every chain and wheel id is in the 311-id verified set. EXCLUDED BY JUDGEMENT: simplehats:haticon (\"Simple Hats Icon\", the creative-tab icon, not obtainable content) and the 40 model stems with no lang key (hatparent, hatparent2 and 38 unregistered art assets such as santahat, minerhat, vikinghat, peepo and the teddy_bear_* set - these have models but no item and no HatJson entry, so they would fail any membership check)."
+}

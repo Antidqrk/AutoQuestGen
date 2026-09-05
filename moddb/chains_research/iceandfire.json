@@ -1,0 +1,174 @@
+{
+ "mod": "iceandfire",
+ "verified_against": "iceandfire-2.1.13-1.20.1-beta-5.jar",
+ "item_count_in_jar": 435,
+ "chain": [
+  {
+   "id": "iceandfire:manuscript",
+   "title": "Pages Torn From Nowhere",
+   "desc": "Manuscript pages drop from myrmex and appear in dungeon loot; three of them bind into the Bestiary."
+  },
+  {
+   "id": "iceandfire:bestiary",
+   "title": "The Book That Names Monsters",
+   "desc": "The Bestiary is crafted from three manuscripts and reveals dragon den and mob knowledge in-world."
+  },
+  {
+   "id": "iceandfire:silver_ingot",
+   "title": "Pale Metal in Deep Stone",
+   "desc": "Silver ore and deepslate silver ore smelt into silver ingots, the base metal of the mod's early gear."
+  },
+  {
+   "id": "kill:iceandfire:hippogryph",
+   "title": "Talons on the Wind",
+   "desc": "Hippogryphs nest across plains and mountains and are the first real fight the mod puts in your way."
+  },
+  {
+   "id": "iceandfire:hippogryph_talon",
+   "title": "A Curved Trophy",
+   "desc": "Hippogryph talons drop on death and craft into the hippogryph sword."
+  },
+  {
+   "id": "kill:iceandfire:troll",
+   "title": "Rocks That Woke Up",
+   "desc": "Forest, frost and mountain trolls roam caves at night and hit far harder than anything vanilla at that depth."
+  },
+  {
+   "id": "iceandfire:troll_tusk",
+   "title": "Torn From the Jaw",
+   "desc": "Troll tusks drop from all three troll variants and feed the troll weapon recipes."
+  },
+  {
+   "id": "kill:iceandfire:cyclops",
+   "title": "One Eye, One Chance",
+   "desc": "Cyclopes guard beach caves stocked with stolen sheep and deal enormous melee damage."
+  },
+  {
+   "id": "iceandfire:cyclops_eye",
+   "title": "The Eye That Watched You",
+   "desc": "The cyclops eye drops on death and is a core ingredient of the dragon summoning crystals."
+  },
+  {
+   "id": "kill:iceandfire:gorgon",
+   "title": "Do Not Look Back",
+   "desc": "The gorgon lairs in her temple and petrifies anything that meets her gaze; a blindfold is the counter."
+  },
+  {
+   "id": "iceandfire:gorgon_head",
+   "title": "A Head Still Staring",
+   "desc": "The severed gorgon head can be wielded to turn other mobs to stone."
+  },
+  {
+   "id": "kill:iceandfire:sea_serpent",
+   "title": "Coils in the Cold Water",
+   "desc": "Sea serpents surface in deep oceans in seven colours and are the ocean tier of the mod."
+  },
+  {
+   "id": "iceandfire:sea_serpent_fang",
+   "title": "Salt-Bitten Ivory",
+   "desc": "Sea serpent fangs pair with serpent scales for tide armor and the tide trident."
+  },
+  {
+   "id": "kill:iceandfire:siren",
+   "title": "Wax in Your Ears",
+   "desc": "Sirens sing from ocean islands and drown anyone who listens; earplugs or a blindfold break the charm."
+  },
+  {
+   "id": "kill:iceandfire:myrmex_queen",
+   "title": "Regicide in the Hive",
+   "desc": "Desert and jungle myrmex hives are ruled by a queen whose death collapses the colony."
+  },
+  {
+   "id": "kill:iceandfire:hydra",
+   "title": "Cut One, Grow Two",
+   "desc": "The hydra lives in swamp caves and regrows every severed head unless the stumps are burned."
+  },
+  {
+   "id": "iceandfire:hydra_heart",
+   "title": "Still Beating",
+   "desc": "The hydra heart is the boss drop that grants regeneration when consumed."
+  },
+  {
+   "id": "iceandfire:dragonbone",
+   "title": "Ribs of the Fallen",
+   "desc": "Dragon bone drops from dragon skeletons and slain dragons and is the backbone of the dragon tech tree."
+  },
+  {
+   "id": "iceandfire:dragonbone_sword",
+   "title": "First Blade of Bone",
+   "desc": "Dragon bone crafts a sword above diamond, the stepping stone to the elemental blades."
+  },
+  {
+   "id": "kill:iceandfire:fire_dragon",
+   "title": "Down Comes the Red",
+   "desc": "An adult fire dragon is the mod's centrepiece kill and the only source of fire dragon blood and heart."
+  },
+  {
+   "id": "iceandfire:fire_dragon_blood",
+   "title": "Blood That Burns Cold",
+   "desc": "Fire dragon blood is the reagent that turns ordinary iron into dragonsteel."
+  },
+  {
+   "id": "iceandfire:dragonforge_fire_core",
+   "title": "A Forge That Eats Flame",
+   "desc": "Dragonforge bricks and the fire core build a forge that only a living dragon's breath can light."
+  },
+  {
+   "id": "iceandfire:dragonsteel_fire_ingot",
+   "title": "Iron Reborn in the Forge",
+   "desc": "The dragonforge cooks iron with fire dragon blood for a thousand ticks into dragonsteel fire ingots."
+  },
+  {
+   "id": "iceandfire:dragonsteel_fire_sword",
+   "title": "The Last Sword You Need",
+   "desc": "Two dragonsteel fire ingots on a witherbone haft make the strongest weapon Ice and Fire offers."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "iceandfire:shiny_scales",
+   "members": [
+    "iceandfire:dragonscales_amythest",
+    "iceandfire:dragonscales_black",
+    "iceandfire:dragonscales_blue",
+    "iceandfire:dragonscales_bronze",
+    "iceandfire:dragonscales_copper",
+    "iceandfire:dragonscales_electric",
+    "iceandfire:dragonscales_gray",
+    "iceandfire:dragonscales_green",
+    "iceandfire:dragonscales_red",
+    "iceandfire:dragonscales_sapphire",
+    "iceandfire:dragonscales_silver",
+    "iceandfire:dragonscales_white"
+   ]
+  },
+  {
+   "hub": "iceandfire:lectern",
+   "members": [
+    "iceandfire:amphithere_skull",
+    "iceandfire:cockatrice_skull",
+    "iceandfire:cyclops_skull",
+    "iceandfire:dragon_skull_fire",
+    "iceandfire:dragon_skull_ice",
+    "iceandfire:dragon_skull_lightning",
+    "iceandfire:hippogryph_skull",
+    "iceandfire:hydra_skull",
+    "iceandfire:seaserpent_skull",
+    "iceandfire:stymphalian_skull",
+    "iceandfire:troll_skull"
+   ]
+  },
+  {
+   "hub": "iceandfire:dragon_horn",
+   "members": [
+    "iceandfire:dragonsteel_fire_ingot",
+    "iceandfire:dragonsteel_ice_ingot",
+    "iceandfire:dragonsteel_lightning_ingot",
+    "iceandfire:dragonforge_fire_core",
+    "iceandfire:dragonforge_ice_core",
+    "iceandfire:dragonforge_lightning_core"
+   ]
+  }
+ ],
+ "notes": "Verified against iceandfire 2.1.13-1.20.1-beta-5 (Modrinth slug 'ice-and-fire-dragons'). Item ids = assets/iceandfire/models/item stems intersected with item./block. lang keys, PLUS dragonegg_<colour> and dragonscales_<colour>, which share a single lang key each (item.iceandfire.dragonegg and .dragonscales) and so fail a naive intersection; both families were confirmed directly against IafItemRegistry. Note the block is dragonscale_<colour> (singular) while the item is dragonscales_<colour> (plural) - the scale wheel uses the item form. Entity ids come from IafEntityRegistry, not from lang: the lang file also carries variant subkeys (hippogryph.alex, pixie.type_0) and two names with no registry entry at all, dread_queen and black_frost_dragon, which were dropped. The ice and lightning branches mirror the fire branch exactly (dragonforge_<element>_core plus <element>_dragon_blood into dragonsteel_<element>_ingot, tag forge:bones/wither for the haft) and are folded into the dragonsteel wheel rather than repeated as chain steps. moddb agreement: manuscript (6 packs) and bestiary (8 packs) sit earliest, matching this chain; blindfold (6 packs, pos 0.215) is placed mid-run by moddb but is really the gorgon counter, so it is named in the gorgon step instead of getting its own. moddb entry iceandfire:dragon_seeker does not exist in this jar and was ignored."
+}

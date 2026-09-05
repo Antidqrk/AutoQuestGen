@@ -1,0 +1,94 @@
+{
+  "mod": "terralith",
+  "verified_against": "Terralith_1.20.x_v2.5.4.jar",
+  "item_count_in_jar": 0,
+  "chain": [
+    {
+      "id": "structure:terralith:witch_hut",
+      "title": "The Hut in the Orchid Swamp",
+      "desc": "Terralith's rebuilt swamp hut generates in Orchid Swamp, Ice Marsh and vanilla swamp; its chest holds potions, a splash potion, a golden apple and a tadpole bucket."
+    },
+    {
+      "id": "structure:terralith:glacial_hut",
+      "title": "Shelter in the Chasm",
+      "desc": "A small ruin that generates only in the Glacial Chasm biome. Its main chest carries stone and wooden tools, leather armour and food - a survival cache, not treasure."
+    },
+    {
+      "id": "structure:terralith:igloo",
+      "title": "Under the Cherry Snow",
+      "desc": "Terralith's own igloo generates in the Snowy Cherry Grove. Its chest is stocked with emeralds, lapis, amethyst shards, a writable book and cherry logs and saplings."
+    },
+    {
+      "id": "structure:terralith:valley_lodge",
+      "title": "The Lodge in the Clearing",
+      "desc": "A hunting lodge that only appears in Valley Clearing and Shield Clearing. Its lodge_drinkables chest holds potions, suspicious stew, honey bottles, bowls and bottles."
+    },
+    {
+      "id": "structure:terralith:desert_outpost",
+      "title": "Pillagers in the Sand",
+      "desc": "A desert outpost with a pillager spawn override. Its chest can hold a crossbow, arrows, a goat horn and both the Dune and Sentry armour trim smithing templates."
+    },
+    {
+      "id": "structure:terralith:underground_cabin",
+      "title": "A Cabin Beneath the Lush Caves",
+      "desc": "A buried cabin in the Lush Caves. Its underground chest table runs from raw copper and clay up to diamond ore, a diamond helmet and a diamond pickaxe."
+    },
+    {
+      "id": "structure:terralith:underground/mining_outpost",
+      "title": "The Camp in Deep Caves",
+      "desc": "An abandoned mining camp that generates only in Terralith's Deep Caves biome, stocked from the same underground chest table of iron, gold and diamond gear."
+    },
+    {
+      "id": "structure:terralith:underground/old_refinery",
+      "title": "The Refinery That Stopped",
+      "desc": "A derelict refinery in the Fungal Caves, Infested Caves and Deep Caves biomes, carrying the underground chest loot."
+    },
+    {
+      "id": "structure:terralith:underground/sunken_tower",
+      "title": "The Tower That Sank",
+      "desc": "A tower swallowed by the Lush Caves and Underground Jungle, still holding an underground chest."
+    },
+    {
+      "id": "structure:terralith:underground/frosted_dungeon",
+      "title": "Frostfire Dungeon",
+      "desc": "A dungeon buried in the Frostfire Caves biome; the only Terralith structure that generates there, and it keeps an underground chest."
+    },
+    {
+      "id": "structure:terralith:underground/giant_bee_hive",
+      "title": "The Hive Below",
+      "desc": "A giant hive in Lush Caves and Underground Jungle. Its chest gives honeycomb and honey bottles and rolls the royal_jelly table, which is a potion."
+    },
+    {
+      "id": "structure:terralith:fortified_village",
+      "title": "Walls Around the Plains",
+      "desc": "A walled village for Plains, Meadow, Temperate/Forested/Alpine Highlands and Brushland, with twelve loot tables including a treasure chest that can drop an enchanted golden apple."
+    },
+    {
+      "id": "structure:terralith:fortified_desert_village",
+      "title": "Walls Around the Oasis",
+      "desc": "The desert counterpart, generating in Desert, Desert Oasis and Lush Desert with its own twelve-table village loot set."
+    },
+    {
+      "id": "structure:terralith:mage_tower",
+      "title": "The Mage's Tower",
+      "desc": "A lone tower in Moonlight Valley, Lavender Valley, Amethyst Canyon and Mirage Isles. Its mage treasure chest holds diamonds and rolls the mage extras table."
+    },
+    {
+      "id": "structure:terralith:mage_complex",
+      "title": "The Order's Compound",
+      "desc": "The full mage complex, restricted to Moonlight Grove, Lavender Forest and Amethyst Rainforest. Three tables: barracks, extras and treasure."
+    },
+    {
+      "id": "structure:terralith:mage_tower_winter",
+      "title": "A Tower in the Skylands",
+      "desc": "One of four seasonal mage towers that generate only on the floating Skylands. This one is bound to Skylands Winter and carries the mage treasure chest."
+    },
+    {
+      "id": "structure:terralith:spire",
+      "title": "The Spire on Frozen Water",
+      "desc": "Terralith's rarest build, generating only on Frozen River. Four chest tables; the treasure roll can yield a trident and a full set of diamond tools."
+    }
+  ],
+  "collections": [],
+  "notes": "TERRALITH ADDS NO ITEMS AT ALL. This is a verified finding, not a gap: the jar contains ZERO assets/ entries - no assets/terralith/models/item/, no blockstates, no lang file, nothing. It is a datapack shipped in a jar, with data/ only. item_count_in_jar is therefore 0 and collections is empty; there is nothing to build a wheel out of. LOADER: META-INF/mods.toml and META-INF/neoforge.mods.toml both present (modId terralith, version 2.5.4, minecraft [1.20,1.21)), plus a fabric.mod.json - it is a multiloader datapack jar and the Modrinth 1.20.1 Forge listing resolves to this exact file. CONTENT: 99 biomes at data/terralith/worldgen/biome/*.json and 28 structures at data/terralith/worldgen/structure/*.json. STRUCTURE->LOOT was resolved mechanically, not guessed: each structure json's resource ids were followed through data/terralith/worldgen/template_pool/ transitively, every referenced data/terralith/structures/*.nbt was gunzipped, and the id-like strings inside the raw NBT were intersected with the jar's 51 real loot_tables/*.json. 22 of the 28 structures resolve to at least one chest loot table. THE 6 WITH NO LOOT ARE ALL EXCLUDED from the chain: rubble_desert, rubble_forest, rubble_jungle, rubble_mesa, rubble_mountain and rubble_taiga are decorative surface ruins with zero chest tables - exactly the 'purely decorative scenery' case, so they are not quested. ALSO EXCLUDED: terralith:underground/witch_hut, which does resolve loot but whose biomes field is #terralith:has_structure/none, and that tag file is literally {\"replace\": false, \"values\": []} - it can never generate, so questing it would be unwinnable. The three unused seasonal mage towers (mage_tower_autumn, mage_tower_spring, mage_tower_summer) are real and loot-bearing but are the same build as mage_tower_winter in a different Skylands season, so only one representative is used. Loot contents quoted above were read out of the loot table json, not inferred from the name: spire/treasure lists minecraft:trident plus diamond sword/axe/pickaxe/shovel and full diamond armour; desert_outpost lists dune_armor_trim_smithing_template and sentry_armor_trim_smithing_template; village/fortified/treasure lists enchanted_golden_apple; underground/giant_bee_hive rolls TABLE terralith:royal_jelly, which is a minecraft:potion. Biome placements come from each structure's biomes field resolved through data/terralith/tags/worldgen/biome/has_structure/*.json. ID FORM: every chain entry is 'structure:' + a fully namespaced id, and every one of those ids is a file that exists at data/terralith/worldgen/structure/<path>.json in this jar (the two nested ones keep their folder, e.g. terralith:underground/mining_outpost). The 'structure:' prefix mirrors the existing kill: and dim: prefixes and maps to the generator's {\"type\":\"structure\",\"structure\":\"<id>\"} task; the loader in autoquestgen.py currently only strips kill:/dim:, so it needs the same three-line branch for structure: before these entries reach the book. No template_pool, start_pool, structure_set or processor names appear as chain ids."
+}

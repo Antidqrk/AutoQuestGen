@@ -1,0 +1,388 @@
+{
+ "mod": "powah",
+ "ids_in_jar": 149,
+ "videos": [
+  {
+   "id": "aPjbieQ2zF0",
+   "title": "The Complete Powah! Guide for Beginners",
+   "channel": "Hellfirem4ge",
+   "views": 203971,
+   "duration": 1070,
+   "chars": 15748
+  },
+  {
+   "id": "BsG6IF0gZQI",
+   "title": "Beginner's Guide to Getting POWER in All The Mods 10! [Powah]",
+   "channel": "Mint Gaming",
+   "views": 90779,
+   "duration": 514,
+   "chars": 9462
+  },
+  {
+   "id": "g3IWuwtXo5w",
+   "title": "Powah! Mod Spotlight - Reactors, Generators, and more! - Minecraft 1.18",
+   "channel": "The MindCrafters",
+   "views": 394868,
+   "duration": 1368,
+   "chars": 18941
+  },
+  {
+   "id": "7s80ppj6GYY",
+   "title": "Powah Complete Mod Tutorial - MC 1.16 - 1.21",
+   "channel": "JaviHerobrine",
+   "views": 40164,
+   "duration": 1387,
+   "chars": 20933
+  },
+  {
+   "id": "Dw4zTlSSbC4",
+   "title": "The ULTIMATE Guide to Power in All The Mods 10 (ATM10)",
+   "channel": "John Hall",
+   "views": 214349,
+   "duration": 970,
+   "chars": 17933
+  }
+ ],
+ "not_transcribed": [],
+ "items": {
+  "powah:solar_panel_": {
+   "mentions": 13,
+   "videos": 4,
+   "first_at": 0.234,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 0
+  },
+  "powah:solar_panel": {
+   "mentions": 13,
+   "videos": 4,
+   "first_at": 0.234,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 0
+  },
+  "powah:player_transmitter": {
+   "mentions": 6,
+   "videos": 3,
+   "first_at": 0.8413,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:crystal_nitro": {
+   "mentions": 3,
+   "videos": 3,
+   "first_at": 0.4471,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "powah:binding_card": {
+   "mentions": 10,
+   "videos": 2,
+   "first_at": 0.8134,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:dry_ice": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.3613,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:dielectric_paste": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.1895,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:capacitor_basic": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.0571,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:dielectric_rod": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.1772,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:energizing_orb": {
+   "mentions": 10,
+   "videos": 1,
+   "first_at": 0.5459,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 4,
+   "late_cue": 0
+  },
+  "powah:wrench": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.2264,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:crystal_blazing": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.3469,
+   "praise": 4,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:steel_energized": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.5569,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "powah:capacitor_hardened": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1931,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:crystal_spirited": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6938,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:ender_core": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.955,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:binding_card_dim": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8325,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:dielectric_casing": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0268,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:energy_cable_starter": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1233,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:solar_panel_hardened": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4466,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:furnator_starter": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0154,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "powah:charged_snowball": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6929,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "powah:blazing_crystal_block": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3465,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "Two utility items come before any generator: the wrench to configure machines and the book to look recipes up.",
+    "ids": [
+     "powah:wrench",
+     "powah:book"
+    ]
+   },
+   {
+    "note": "Starter-tier burn generators are the entry point, then energy cells for storage, then cabling.",
+    "ids": [
+     "powah:furnator_starter",
+     "powah:magmator_starter",
+     "powah:energy_cell_starter",
+     "powah:energy_cable_starter"
+    ]
+   },
+   {
+    "note": "Energizing rods plus an orb are the crafting engine that makes the higher-tier crystals, so they are built early despite looking optional.",
+    "ids": [
+     "powah:energizing_rod_starter",
+     "powah:energizing_rod_basic",
+     "powah:energizing_orb"
+    ]
+   }
+  ],
+  "tiers": [
+   {
+    "note": "SEVEN-STEP LADDER, named explicitly and applied to nearly every block in the mod. This is the single most important fact about Powah and it is stated outright.",
+    "ids": [
+     "powah:energy_cell_starter",
+     "powah:energy_cell_basic",
+     "powah:energy_cell_hardened",
+     "powah:energy_cell_blazing",
+     "powah:energy_cell_niotic",
+     "powah:energy_cell_spirited",
+     "powah:energy_cell_nitro"
+    ]
+   },
+   {
+    "note": "The same seven tiers repeat across every generator family - reactors, thermo generators, magmators, furnators and solar panels.",
+    "ids": [
+     "powah:reactor_starter",
+     "powah:reactor_basic",
+     "powah:reactor_hardened",
+     "powah:reactor_blazing",
+     "powah:reactor_niotic",
+     "powah:reactor_spirited",
+     "powah:reactor_nitro",
+     "powah:thermo_generator_starter",
+     "powah:thermo_generator_nitro",
+     "powah:magmator_starter",
+     "powah:magmator_nitro",
+     "powah:furnator_starter",
+     "powah:furnator_nitro",
+     "powah:solar_panel_starter",
+     "powah:solar_panel_nitro"
+    ]
+   },
+   {
+    "note": "Crystal ladder is the gating material for the upper tiers: blazing -> niotic -> spirited -> nitro.",
+    "ids": [
+     "powah:crystal_blazing",
+     "powah:crystal_niotic",
+     "powah:crystal_spirited",
+     "powah:crystal_nitro"
+    ]
+   },
+   {
+    "note": "Wireless energy also tiers seven ways, via ender cells and ender gates.",
+    "ids": [
+     "powah:ender_cell_starter",
+     "powah:ender_cell_basic",
+     "powah:ender_cell_hardened",
+     "powah:ender_cell_blazing",
+     "powah:ender_cell_niotic",
+     "powah:ender_cell_spirited",
+     "powah:ender_cell_nitro",
+     "powah:ender_gate_starter",
+     "powah:ender_gate_nitro"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "Higher tiers are gated on crystals made in the energizing rods, so the rod array is a prerequisite for the whole upper half of the mod.",
+    "ids": [
+     "powah:energizing_rod_blazing",
+     "powah:energizing_orb",
+     "powah:crystal_blazing",
+     "powah:crystal_niotic"
+    ]
+   },
+   {
+    "note": "Ender gates need a binding card to pair, which is an easily missed second item.",
+    "ids": [
+     "powah:binding_card",
+     "powah:binding_card_bound",
+     "powah:ender_gate_basic"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "Solar panels are treated as the weakest option and largely a novelty next to reactors at the same tier.",
+    "ids": [
+     "powah:solar_panel_starter",
+     "powah:solar_panel_basic"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "Nitro reactors are the mod's endgame headline and what most Powah videos are actually about.",
+    "ids": [
+     "powah:reactor_nitro",
+     "powah:reactor_spirited",
+     "powah:energy_cell_nitro"
+    ]
+   },
+   {
+    "note": "Powah's pitch is being the simple, readable power mod - a full ladder from a furnace-alike to a reactor with no multiblock complexity.",
+    "ids": [
+     "powah:furnator_starter",
+     "powah:reactor_nitro",
+     "powah:energy_cell_starter"
+    ]
+   }
+  ]
+ },
+ "transcript_profile": "whisper small, vad, beam 1, WITH the legacy Minecraft-vocabulary initial_prompt that was later removed from ytgrab as biasing. Counts may be slightly inflated toward mod-name-like words; human_notes quotes were read directly and are unaffected."
+}

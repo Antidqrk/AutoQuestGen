@@ -1,0 +1,326 @@
+{
+ "mod": "forbidden_arcanus",
+ "ids_in_jar": 296,
+ "videos": [
+  {
+   "title": "Beginners Guide To Forbidden Arcanus | ATM10 | All The Mods 10 Tutorial",
+   "channel": "Korodecim",
+   "views": 62940,
+   "duration": 709,
+   "id": "1aNFFhI4-qc",
+   "chars": 14243
+  }
+ ],
+ "items": {
+  "forbidden_arcanus:soul_extractor": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.1759,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 1,
+   "late_cue": 2
+  },
+  "forbidden_arcanus:arcane_crystal": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1527,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "forbidden_arcanus:dark_matter": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4147,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "forbidden_arcanus:darkstone": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0687,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "forbidden_arcanus:arcane_crystal_block": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2158,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "forbidden_arcanus:arcane_crystal_obelisk": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1637,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "forbidden_arcanus:elementarium": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5109,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "items_by_display_name": {
+  "forbidden_arcanus:soul_extractor": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.1759,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 1,
+   "late_cue": 2,
+   "display": "Soul Extractor"
+  },
+  "forbidden_arcanus:arcane_crystal": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1527,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Arcane Crystal"
+  },
+  "forbidden_arcanus:dark_matter": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4147,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Dark Matter"
+  },
+  "forbidden_arcanus:darkstone": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0687,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0,
+   "display": "Darkstone"
+  },
+  "forbidden_arcanus:arcane_crystal_block": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2158,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Arcane Crystal Block"
+  },
+  "forbidden_arcanus:arcane_crystal_obelisk": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1637,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Arcane Crystal Obelisk"
+  },
+  "forbidden_arcanus:elementarium": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5109,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Elementarium"
+  }
+ },
+ "human_notes": {
+  "_confidence": "USABLE, with decoding. 1aNFFhI4-qc (Korodecim, 'Beginners Guide To Forbidden Arcanus | ATM10') is dubbed from German -- the Hephaestus Forge is rendered as 'the smithy/the smith', Edelwood as 'stainless steel', Aureal as 'Aro/Auro'. It is nonetheless the most VERSION-CURRENT source found for any mod in this set: it is explicitly about ATM10 on 1.20.1 and it opens by warning that older guides are now wrong. Ids below were all matched against forbidden_arcanus-1.20.1-2.2.6. The mod ships no non-recipe advancements and no guidebook data, so the video is the only ordering source.",
+  "order": [
+   {
+    "claim": "Collect three world materials before anything else: Darkstone (the bulk material for the forge), Arcane Crystal, and Stella Arcanum. You will need a lot of Darkstone, so pick it up while mining rather than making a special trip later.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:darkstone",
+     "forbidden_arcanus:arcane_crystal",
+     "forbidden_arcanus:stella_arcanum",
+     "forbidden_arcanus:arcane_crystal_ore"
+    ],
+    "note": "Three core resources to stockpile: Stella Arcanum (explosive when mined carelessly), arcane crystals and runic material - plus plenty of darkstone, the forge's main building block."
+   },
+   {
+    "claim": "Three intermediate materials come next: smelt Arcane Crystals into Arcane Crystal Dust, make Corrupti Dust, and make Deorum Ingots. Only then can you craft the forge blocks.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:arcane_crystal_dust",
+     "forbidden_arcanus:corrupti_dust",
+     "forbidden_arcanus:deorum_ingot"
+    ],
+    "note": "The processing chain: arcane crystal dust smelted from arcane crystals, corrupti dust, and deorum ingots made from it - together the inputs for the forge blocks."
+   },
+   {
+    "claim": "THE HEPHAESTUS FORGE IS A MULTIBLOCK, NOT A CRAFTING TABLE. Lay eight Darkstone blocks as the outer ring, put the forge in the middle, then click it with Corrupti Dust to activate it. Until you do that last step it is inert.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:hephaestus_forge",
+     "forbidden_arcanus:darkstone",
+     "forbidden_arcanus:corrupti_dust"
+    ],
+    "note": "Forge assembly: the forge block centred on eight darkstones in the documented pattern, activated by clicking corrupti dust onto it."
+   },
+   {
+    "claim": "The forge has five tiers, and you do not need all five for most goals. Build to the tier the recipe you actually want requires and stop there.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:hephaestus_forge",
+     "forbidden_arcanus:hephaestus_forge_tier_2",
+     "forbidden_arcanus:hephaestus_forge_tier_3",
+     "forbidden_arcanus:hephaestus_forge_tier_4",
+     "forbidden_arcanus:hephaestus_forge_tier_5"
+    ],
+    "note": "The Hephaestus Forge has five stages; mid-tier goals do not require pushing to stage five."
+   }
+  ],
+  "gates": [
+   {
+    "claim": "The forge runs on FOUR separate resources and you need a plan for each: Aureal, Souls, Blood and Experience. Experience is the hardest of the four to supply. Do not start forge recipes until all four supplies exist.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:hephaestus_forge",
+     "forbidden_arcanus:aureal_bottle",
+     "forbidden_arcanus:xpetrified_orb"
+    ],
+    "note": "The forge consumes four resources - Aureal, souls, blood and experience - with experience the hardest of the four to keep supplied."
+   },
+   {
+    "claim": "For Aureal, build an Arcane Crystal Obelisk rather than relying on bottles -- polished darkstone with two Arcane Crystal Blocks on top. You cannot pick the block up once placed, and its placement position does not matter, so site it near the forge.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:arcane_crystal_obelisk",
+     "forbidden_arcanus:arcane_crystal_block",
+     "forbidden_arcanus:aureal_bottle",
+     "forbidden_arcanus:corrupted_arcane_crystal_obelisk"
+    ],
+    "note": "Aureal is best produced by an Arcane Crystal Obelisk: polished darkstone with two arcane crystal blocks on top. Once placed it cannot be picked up, though placement position does not matter."
+   },
+   {
+    "claim": "Souls need a Soul Extractor placed on soul sand, and the extractor needs Edelwood. THIS IS THE STEP OLD GUIDES GET WRONG: Edelwood no longer generates in dark forest biomes. You now get your first two by visiting a dark forest and completing the offered quest -- an exploration compass makes finding one easier.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:soul_extractor",
+     "forbidden_arcanus:edelwood_log"
+    ],
+    "note": "Edelwood no longer generates in dark forests - older guides mislead here. The starter edelwood comes from accepting the dark-forest quest, which rewards two logs."
+   },
+   {
+    "claim": "To get MORE Edelwood you convert oak saplings with a Corrupt Soul. Corrupt Souls drop from mobs killed with a soul-stealing enchantment on your weapon, and you then kill the Corrupt Soul itself to collect it. Hit an oak sapling with it and it becomes an Edelwood sapling; bonemeal speeds the growth.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:corrupt_soul",
+     "forbidden_arcanus:edelwood_log",
+     "forbidden_arcanus:soul_extractor"
+    ],
+    "note": "The renewable edelwood route: mobs sometimes drop a Corrupt Soul on death; strike an oak sapling with it to convert it into an edelwood sapling, then grow it normally or with bone meal."
+   },
+   {
+    "claim": "Blood is collected by killing mobs while holding a Blood Test Tube, or by killing them next to the forge so it fills automatically. A mob spawner works fine as a source.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:blood_test_tube",
+     "forbidden_arcanus:hephaestus_forge"
+    ],
+    "note": "Blood is easy: kill mobs while holding a blood test tube or near the forge; spawner-bred mobs count."
+   }
+  ],
+  "bosses": [],
+  "traps": [
+   {
+    "claim": "MOBS KILLED BY INDIRECT DAMAGE GIVE NO BLOOD. If your mob farm kills with fall damage, lava or a machine, the forge gets nothing -- you have to land the killing blow yourself.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:blood_test_tube",
+     "forbidden_arcanus:hephaestus_forge"
+    ],
+    "note": "Mobs that die to indirect damage put no blood in the forge - the kill has to be direct."
+   },
+   {
+    "claim": "Mine Stella Arcanum carefully -- it is destroyed if you break it wrong.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:stella_arcanum",
+     "forbidden_arcanus:eternal_stella"
+    ],
+    "note": "Stella Arcanum ore is explosive - mine it with care."
+   },
+   {
+    "claim": "Do not trust pre-1.20 Forbidden and Arcanus guides. The mod changed substantially and the guide's own opening warning is that older resources will lead you to systems that no longer work that way.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:hephaestus_forge",
+     "forbidden_arcanus:edelwood_log"
+    ],
+    "note": "The mod has changed heavily between versions, and most published guides no longer match current recipes - trust in-game documentation over old videos."
+   },
+   {
+    "claim": "Do not plan on buying Edelwood from a wandering trader. It is theoretically possible but the guide reports never actually seeing it offered.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:edelwood_log"
+    ],
+    "note": "A travelling merchant can occasionally sell edelwood, but it is too rare to rely on."
+   }
+  ],
+  "signature": [
+   {
+    "claim": "The Hephaestus Forge is the mod -- a four-resource multiblock that everything else is crafted in. Quests should treat reaching each forge tier as a milestone in its own right.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:hephaestus_forge",
+     "forbidden_arcanus:hephaestus_forge_tier_5"
+    ],
+    "note": "The four-resource forge economy - Aureal, souls, blood, experience - is the system the whole mod hangs off."
+   },
+   {
+    "claim": "The Obsidian Skull line is what players remember the mod for -- the Skull, the Obsidian Skull Shield, and the Eternal Obsidian Skull as the endgame version.",
+    "video": null,
+    "ids": [
+     "forbidden_arcanus:obsidian_skull",
+     "forbidden_arcanus:obsidian_skull_shield",
+     "forbidden_arcanus:eternal_obsidian_skull"
+    ],
+    "note": "(mod structure; 'OBSIDIAN SKULL' appears in the titles of the most-viewed Forbidden and Arcanus videos in the corpus)"
+   },
+   {
+    "claim": "The Clibano is the mod's second machine and the other thing beginners are pointed at -- a faster, fuel-flexible furnace built around a Clibano Core.",
+    "video": null,
+    "ids": [
+     "forbidden_arcanus:clibano_core"
+    ],
+    "note": "(mod structure; 'Clibano and Hephaestus' is how the Jangro getting-started video frames the mod's two entry points)"
+   },
+   {
+    "claim": "Xpetrified Orbs are the mod's stored-experience currency and are worth a quest because experience is the hardest of the forge's four inputs to supply.",
+    "video": "1aNFFhI4-qc",
+    "ids": [
+     "forbidden_arcanus:xpetrified_orb",
+     "forbidden_arcanus:xpetrified_ore"
+    ],
+    "note": "Of the forge's four resources, experience is the hardest to keep topped up."
+   }
+  ]
+ }
+}

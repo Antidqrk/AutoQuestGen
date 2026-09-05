@@ -1,0 +1,259 @@
+{
+ "mod": "malum",
+ "verified_against": "malum-1.20.1-1.6.7.jar",
+ "item_count_in_jar": 487,
+ "chain": [
+  {
+   "id": "malum:runewood_sapling",
+   "title": "The Blue-Leafed Tree",
+   "desc": "Runewood generates across the Overworld. Its planks build the Spirit Altar, the Totemic Staff and the Runic Workbench."
+  },
+  {
+   "id": "malum:processed_soulstone",
+   "title": "Stone That Remembers",
+   "desc": "Soulstone Ore smelted down. Every single thing in Malum traces back through this one material."
+  },
+  {
+   "id": "malum:encyclopedia_arcana",
+   "title": "Open the Encyclopedia",
+   "desc": "A book and one Soulstone. The mod's own guide, and the only place the arcana is written down."
+  },
+  {
+   "id": "malum:crude_scythe",
+   "title": "The First Harvest",
+   "desc": "Iron, sticks and Soulstone. A scythe sweeps a wide arc and, unlike any other weapon, reaps Spirits from what it kills."
+  },
+  {
+   "id": "malum:arcane_spirit",
+   "title": "Reap the First Soul",
+   "desc": "Kill with a scythe and the soul rises out. Which of the eight aspects you get is decided by the creature, not by you."
+  },
+  {
+   "id": "malum:spirit_altar",
+   "title": "Spirit Infusion",
+   "desc": "Runewood planks, gold and Soulstone. Feed it an item, ring it with pedestals, and throw the demanded Spirits at it."
+  },
+  {
+   "id": "malum:hex_ash",
+   "title": "Gunpowder, Cursed",
+   "desc": "Infuse gunpowder with a single Arcane Spirit. The cheapest infusion in the mod and an ingredient in half the rest."
+  },
+  {
+   "id": "malum:hallowed_gold_ingot",
+   "title": "Gold Made Holy",
+   "desc": "A gold ingot infused with Sacred and Arcane Spirits; the metal all the mod's trinket bases are cast from."
+  },
+  {
+   "id": "malum:spirit_jar",
+   "title": "Somewhere to Put Them",
+   "desc": "Glass panes around Hallowed Gold. It holds one aspect of Spirit in bulk and feeds altars and crucibles nearby."
+  },
+  {
+   "id": "malum:soul_stained_steel_ingot",
+   "title": "Soulstained Steel",
+   "desc": "Iron infused with three Wicked, one Earthen and one Arcane Spirit. The mod's weapon and armour metal."
+  },
+  {
+   "id": "malum:soul_stained_steel_scythe",
+   "title": "A Better Harvest",
+   "desc": "The Crude Scythe rebuilt in Soulstained Steel. It reaps far more Spirit per kill, which is the whole economy of Malum."
+  },
+  {
+   "id": "malum:tainted_rock",
+   "title": "Stone Turned Sacred",
+   "desc": "Cobblestone infused with Sacred and Arcane. One half of the opposed pair every machine in the mod is built from."
+  },
+  {
+   "id": "malum:twisted_rock",
+   "title": "Stone Turned Wicked",
+   "desc": "The same infusion run with Wicked instead of Sacred. Tainted and Twisted pull against each other; that tension is the machine."
+  },
+  {
+   "id": "malum:spirit_crucible",
+   "title": "The Crucible",
+   "desc": "A furnace infused with twelve Infernal and four Arcane. It focuses Spirits into an Impetus over time instead of all at once."
+  },
+  {
+   "id": "malum:tainted_rock_tablet",
+   "title": "A Tablet of Eight Aspects",
+   "desc": "The first recipe that demands Aerial, Aqueous, Earthen, Infernal AND two Eldritch at once - the mod's real difficulty spike."
+  },
+  {
+   "id": "malum:runic_workbench",
+   "title": "Where Runes Are Cut",
+   "desc": "Hallowed Gold, a Runewood pedestal and planks. Runeworking stamps a rune into a tablet using sixteen Spirits of one aspect."
+  },
+  {
+   "id": "malum:runic_brooch",
+   "title": "The Central Pin",
+   "desc": "The brooch is the focus a rune is set into, turning one-off trinkets into a socketed system you can rearrange."
+  },
+  {
+   "id": "malum:blazing_quartz",
+   "title": "Quartz That Burns",
+   "desc": "Generates in the Nether and is also reaped from Nether mobs; the seed crystal for Ether."
+  },
+  {
+   "id": "malum:ether",
+   "title": "A Light That Does Not Go Out",
+   "desc": "Glowstone dust infused with Infernal and Arcane. It burns in colours, lights the Catalyzer and never needs fuel."
+  },
+  {
+   "id": "malum:spirit_catalyzer",
+   "title": "Heat the Crucible",
+   "desc": "A Twisted Rock pedestal infused with Infernal and Aerial. Up to eight fuelled Catalyzers accelerate one Crucible."
+  },
+  {
+   "id": "malum:alchemical_calx",
+   "title": "Clay, Rendered",
+   "desc": "Clay infused with Arcane, Earthen and Aqueous. The blank substrate under every augment and every Impetus."
+  },
+  {
+   "id": "malum:alchemical_impetus",
+   "title": "The Crucible's Heart",
+   "desc": "Calx, Hex Ash and Soulstone. Placed in the Crucible it is the thing Spirits are actually focused into."
+  },
+  {
+   "id": "malum:cthonic_gold",
+   "title": "Gold From Below",
+   "desc": "Cthonic Gold Ore generates in the deeps. It is what turns a plain Impetus into a metal-specific one."
+  },
+  {
+   "id": "malum:copper_impetus",
+   "title": "Spirit Focusing",
+   "desc": "An Alchemical Impetus and Cthonic Gold, taking eight Earthen and eight Infernal. Focused in the Crucible it duplicates copper."
+  },
+  {
+   "id": "malum:eldritch_spirit",
+   "title": "The Aspect That Gates Everything",
+   "desc": "Reaped only from Endermen, Endermites, Shulkers, Evokers, Ravagers, Elder Guardians and the Wither. Nothing late runs without it."
+  },
+  {
+   "id": "malum:primordial_soup",
+   "title": "The Weeping Well",
+   "desc": "A generated structure with a pool of Primordial Soup at its heart. Throw items in and the void hands something else back."
+  },
+  {
+   "id": "malum:void_salts",
+   "title": "Favor of the Void",
+   "desc": "Hex Ash surrendered to the Weeping Well. The favor_of_the_void recipe type is a second, separate crafting economy."
+  },
+  {
+   "id": "malum:null_slate",
+   "title": "Slate Without Properties",
+   "desc": "Soulstone given to the well. It is the base of Malignant Pewter and of the Void Tablet."
+  },
+  {
+   "id": "malum:malignant_lead",
+   "title": "Lead of the Black Crystal",
+   "desc": "Cthonic Gold given to the well, and the first item on the hidden black-crystal branch of the mod."
+  },
+  {
+   "id": "malum:malignant_pewter_ingot",
+   "title": "Pewter, Malignant",
+   "desc": "Iron infused with sixteen Earthen and four Eldritch alongside Malignant Lead and Null Slate. The endgame alloy."
+  },
+  {
+   "id": "malum:void_tablet",
+   "title": "Runes of the Void",
+   "desc": "A Tainted Rock Tablet with Null Slate and Void Salts, taking four Eldritch. It carries the runes nothing else can hold."
+  },
+  {
+   "id": "malum:encyclopedia_esoterica",
+   "title": "The Book, Rewritten",
+   "desc": "Throw the Encyclopedia Arcana into the Weeping Well. What comes back documents the chapters the first book would not."
+  },
+  {
+   "id": "malum:edge_of_deliverance",
+   "title": "The Last Scythe",
+   "desc": "A Soulstained Steel Scythe and Malignant Pewter, taking thirty-two Earthen, thirty-two Wicked and sixteen Eldritch."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "malum:arcane_spirit",
+   "members": [
+    "malum:sacred_spirit",
+    "malum:wicked_spirit",
+    "malum:earthen_spirit",
+    "malum:infernal_spirit",
+    "malum:aerial_spirit",
+    "malum:aqueous_spirit",
+    "malum:eldritch_spirit"
+   ]
+  },
+  {
+   "hub": "malum:arcane_spirited_glass",
+   "members": [
+    "malum:sacred_spirited_glass",
+    "malum:wicked_spirited_glass",
+    "malum:earthen_spirited_glass",
+    "malum:infernal_spirited_glass",
+    "malum:aerial_spirited_glass",
+    "malum:aqueous_spirited_glass",
+    "malum:eldritch_spirited_glass"
+   ]
+  },
+  {
+   "hub": "malum:rune_of_bolstering",
+   "members": [
+    "malum:rune_of_aliment_cleansing",
+    "malum:rune_of_culling",
+    "malum:rune_of_dexterity",
+    "malum:rune_of_fervor",
+    "malum:rune_of_haste",
+    "malum:rune_of_idle_restoration",
+    "malum:rune_of_igneous_solace",
+    "malum:rune_of_loyalty",
+    "malum:rune_of_motion",
+    "malum:rune_of_reactive_shielding",
+    "malum:rune_of_reinforcement",
+    "malum:rune_of_toughness",
+    "malum:rune_of_warding"
+   ]
+  },
+  {
+   "hub": "malum:gilded_ring",
+   "members": [
+    "malum:ring_of_alchemical_mastery",
+    "malum:ring_of_arcane_prowess",
+    "malum:ring_of_curative_talent",
+    "malum:ring_of_desperate_voracity",
+    "malum:ring_of_echoing_arcana",
+    "malum:ring_of_esoteric_spoils",
+    "malum:ring_of_growing_flesh",
+    "malum:ring_of_gruesome_concentration",
+    "malum:ring_of_manaweaving",
+    "malum:ring_of_the_demolitionist",
+    "malum:ring_of_the_endless_well",
+    "malum:ring_of_the_hoarder"
+   ]
+  },
+  {
+   "hub": "malum:ornate_necklace",
+   "members": [
+    "malum:necklace_of_blissful_harmony",
+    "malum:necklace_of_the_hidden_blade",
+    "malum:necklace_of_the_mystic_mirror",
+    "malum:necklace_of_the_narrow_edge",
+    "malum:necklace_of_the_watcher",
+    "malum:necklace_of_tidal_affinity"
+   ]
+  },
+  {
+   "hub": "malum:soul_stained_steel_sword",
+   "members": [
+    "malum:soul_stained_steel_axe",
+    "malum:soul_stained_steel_pickaxe",
+    "malum:soul_stained_steel_shovel",
+    "malum:soul_stained_steel_hoe",
+    "malum:soul_stained_steel_knife",
+    "malum:soul_stained_steel_helmet",
+    "malum:soul_stained_steel_chestplate",
+    "malum:soul_stained_steel_leggings",
+    "malum:soul_stained_steel_boots"
+   ]
+  }
+ ],
+ "notes": "VERIFICATION: 494 stems pass item-model INTERSECT (lang key OR recipe result OR loot entry OR tag OR advancement); 487 survive the obtainability audit. The recipe scanner unwraps forge:conditional wrappers, without which 20 impetus and node ids look sourceless. All 33 chain ids, 6 wheel hubs and 54 wheel members (93 ids total) were re-checked, fully namespaced, against the surviving set on a second pass whose derivation is deliberately independent of the first: exact item-model path existence plus the literal \"<ns>:<path>\" string appearing in the jar data trees. 0 failures. DROPS, all registered-but-unreachable: malum:umbral_spirit is the headline one - it has a model, an item.malum.umbral_spirit key reading 'Umbral Spirit', and sits in data/malum/tags/items/spirit.json, but that tag is literally ['#malum:aspected_spirits', 'malum:umbral_spirit'], i.e. it is deliberately NOT an aspected spirit; it appears in zero of the 732 data/malum/spirit_data/entity/*.json files, in zero of the 98 spirit_infusion recipes, in no loot table and in no reaping_data, and the guide book only teases it ('Strange equations - assuming an absence of existence'). It cannot be obtained in 1.6.7. Also dropped: ritual_shard (5 brightness model variants and a lang key, but no recipe, loot, tag or structure - the 'Ritual magic' book headline is unimplemented), ritual_plinth (a real block with a RitualPlinthBlock class and a self-drop loot table, but no recipe and it does not appear in data/malum/structures/weeping_well.nbt, so nothing places it), void_depot (same shape - class, model, self-drop loot, no recipe, not in the structure), creative_scythe (in the scythe and magic_capable_weapon tags only, no recipe), soul_of_a_scythe (two model files and nothing else anywhere in the jar), and token_of_gratitude (a CurioTokenOfGratitude cosmetic in data/curios/tags/items/charm.json with no in-game source). TIER GATE: the analogue of Bewitchment's chalk tier is SPIRIT ASPECT. Every malum:spirit_infusion recipe declares a 'spirits' array of {type,count}, and across the 98 of them the aspects appear arcane 47, earthen 39, wicked 38, ELDRITCH 35, aqueous 30, infernal 23, aerial 21, sacred 19. Eldritch is the real gate: data/malum/spirit_data shows it is reaped only from enderman, endermite, shulker, evoker, ravager, elder_guardian and wither, and it is required by tainted_rock_tablet (2), void_tablet (4), malignant_pewter_ingot (4), mnemonic_hex_staff (8), tyrving (8), catalyst_lobber (8), edge_of_deliverance (16), weight_of_worlds (16) and erosion_scepter (16). Underneath that sits a second gate, the Weeping Well: malum:favor_of_the_void is a whole separate recipe type (13 recipes) performed by throwing items into malum:primordial_soup, which exists only inside the generated structure data/malum/worldgen/structure/weeping_well.json. Everything on the hidden black-crystal branch (data/malum/tags/items/hidden_items/black_crystal.json - malignant pewter, the stronghold armour, weight_of_worlds, edge_of_deliverance, erosion_scepter, mnemonic_hex_staff, void_tablet) is behind that well. ENTITIES: no kill step is offered. All 12 entity.malum.* keys are projectiles or vehicles - auric_flame_bolt, draining_bolt, etheric_nitrate, hex_bolt, hidden_blade_delayed_impact, scythe_boomerang, thrown_gluttony, vivid_nitrate, two boats, plus natural_spirit and pneuma_void which are the visual soul entities the scythe releases, not mobs. Malum registers no killable creature; every spirit source is a vanilla or other-mod mob. NON-RECIPE ACQUISITION kept and verified: the 8 aspected spirits (spirit_data), warp_flux (data/malum/reaping_data/enderman.json, 10% for 2-4), grim_talc, rotting_essence, blazing_quartz and astral_weave (also reaping_data), runic_sap and cursed_sap (SapFilledLogBlock - collected from exposed/revealed Runewood and Soulwood logs), and the 12 cracked_*_impetus items, which the Crucible produces when an Impetus fails and which feed data/malum/recipes/spirit_crucible/repair/metal_impetus_restoration.json. PACK-DEPENDENT: the aluminum, cobalt, lead, nickel, osmium, silver, tin, uranium and zinc impetus and node pairs (18 ids) come only from forge:conditional recipes gated on those metals existing, so they are counted but deliberately kept out of the wheels; copper, gold and iron are the three unconditional ones. CONSENSUS: moddb.json and harvested_order.json both have no malum entry, so there is no consensus ordering to cross-check and no conflict to record - the chain is built purely from the recipe graph and the spirit-aspect gate."
+}

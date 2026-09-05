@@ -1,0 +1,105 @@
+{
+ "mod": "botanypots",
+ "ids_in_jar": 98,
+ "videos": [],
+ "items": {},
+ "human_notes": {
+  "order": [
+   {
+    "note": "One pot first - a flower pot plus five of any terracotta, glazed terracotta or concrete. All 49 material variants cost the same and behave identically, so the choice is decorative only.",
+    "ids": [
+     "botanypots:terracotta_botany_pot"
+    ]
+   },
+   {
+    "note": "Then a soil and a seed. The pot does nothing on its own: it needs a soil block AND a compatible seed, and the seed's allowed soil categories must include that soil.",
+    "ids": [
+     "botanypots:terracotta_botany_pot"
+    ]
+   },
+   {
+    "note": "Hopper pots once one pot is proven - they push harvests into a container below and are what turns the mod from a planter into a farm.",
+    "ids": [
+     "botanypots:terracotta_hopper_botany_pot"
+    ]
+   }
+  ],
+  "ladder": [
+   {
+    "note": "The only real ladder is SOIL QUALITY, and it lives in data, not items - each soil carries a growthModifier. In THIS pack the usable ladder is: dirt path 0.5, coarse dirt 0.95, dirt and grass 1.0, farmland 1.05, soul soil 1.1, and Farmer's Delight rich soil farmland 1.25 as the best available.",
+    "ids": [
+     "farmersdelight:rich_soil_farmland",
+     "farmersdelight:organic_compost"
+    ]
+   },
+   {
+    "note": "Structural ladder is only two rungs: plain pot, then hopper pot for automatic output. There is no tier-3.",
+    "ids": [
+     "botanypots:terracotta_botany_pot",
+     "botanypots:terracotta_hopper_botany_pot"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "Soil CATEGORIES gate which crops a pot can grow - a seed lists the categories it accepts (e.g. wheat accepts 'dirt' and 'farmland') and a mismatched soil simply will not grow it. This is the mod's one real rule and the usual source of confusion.",
+    "ids": [
+     "botanypots:terracotta_botany_pot"
+    ]
+   },
+   {
+    "note": "Crop support is entirely data-driven: 1797 soil and crop definitions ship in the jar, keyed per supporting mod. A crop from a mod with no Botany Pots definition cannot be grown at all, no matter how ordinary it looks.",
+    "ids": [
+     "botanypots:terracotta_botany_pot"
+    ]
+   },
+   {
+    "note": "Hopper pots need a container beneath them to be worth anything - the pot itself has no internal buffer worth harvesting from.",
+    "ids": [
+     "botanypots:terracotta_hopper_botany_pot"
+    ]
+   }
+  ],
+  "payoff": [
+   {
+    "note": "The click moment is a hopper pot over a chest: a fully hands-off, tickable farm in one block, with no water, no light rules and no farmland trampling.",
+    "ids": [
+     "botanypots:terracotta_hopper_botany_pot"
+    ]
+   },
+   {
+    "note": "PACK-SPECIFIC AND HIGH VALUE: Farmer's Delight rich soil farmland is a registered Botany Pots soil at 1.25x growth, and it is the best soil obtainable in this pack because Farming for Blockheads, Snad and Mystical Agriculture are all absent. That makes the two mods a natural quest pairing - compost into rich soil, rich soil into faster pots.",
+    "ids": [
+     "farmersdelight:organic_compost",
+     "farmersdelight:rich_soil",
+     "farmersdelight:rich_soil_farmland",
+     "botanypots:terracotta_hopper_botany_pot"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "The 98 ids are 49 decorative materials times two functional types. Enumerating colours as progression would be meaningless - pick one material and treat the plain/hopper split as the only distinction.",
+    "ids": [
+     "botanypots:white_concrete_botany_pot",
+     "botanypots:black_glazed_terracotta_hopper_botany_pot"
+    ]
+   },
+   {
+    "note": "The jar ships crafting recipes for 'compact hopper' pot variants, but their results resolve to the same 98 registered items - there is no third pot type to chase despite the recipe filenames suggesting one.",
+    "ids": [
+     "botanypots:terracotta_hopper_botany_pot"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "The pot and its hopper variant are the whole mod - a self-contained crop block that removes farmland management entirely.",
+    "ids": [
+     "botanypots:terracotta_botany_pot",
+     "botanypots:terracotta_hopper_botany_pot"
+    ]
+   }
+  ]
+ }
+}

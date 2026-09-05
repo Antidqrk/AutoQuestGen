@@ -1,0 +1,178 @@
+{
+  "mod": "techreborn",
+  "verified_against": "TechReborn-5.8.15.jar",
+  "item_count_in_jar": 648,
+  "chain": [
+    {
+      "id": "techreborn:treetap",
+      "title": "Tapper's First Draw",
+      "desc": "Crafted from three planks and a stick, then right-clicked on a rubber tree's sap hole to collect sap."
+    },
+    {
+      "id": "techreborn:rubber",
+      "title": "The Bleeding Tree",
+      "desc": "Smelted in any furnace from the sap a treetap draws out of rubber trees."
+    },
+    {
+      "id": "techreborn:refined_iron_ingot",
+      "title": "Iron, Only Better",
+      "desc": "Smelted or blasted from a plain vanilla iron ingot, and later mass-produced in the industrial blast furnace."
+    },
+    {
+      "id": "techreborn:basic_machine_frame",
+      "title": "Skeleton of Industry",
+      "desc": "Eight refined iron ingots ringed around an empty centre slot in the crafting grid."
+    },
+    {
+      "id": "techreborn:electronic_circuit",
+      "title": "Etched in Silicon",
+      "desc": "Assembled in the assembling machine from one silicon plate and two copper plates."
+    },
+    {
+      "id": "techreborn:electric_furnace",
+      "title": "Smelting Without Smoke",
+      "desc": "An iron furnace flanked by redstone with an electronic circuit set above it."
+    },
+    {
+      "id": "techreborn:grinder",
+      "title": "Twice From Every Vein",
+      "desc": "Flint over cobblestone, a basic machine frame and an electronic circuit; it mills ores into dust."
+    },
+    {
+      "id": "techreborn:compressor",
+      "title": "Squeezed Flat",
+      "desc": "Stone walls around a basic machine frame with an electronic circuit, pressing ingots and dusts into plates."
+    },
+    {
+      "id": "techreborn:extractor",
+      "title": "Latex Line",
+      "desc": "Four treetaps and an electronic circuit built onto a basic machine frame."
+    },
+    {
+      "id": "techreborn:solid_fuel_generator",
+      "title": "First Spark on the Grid",
+      "desc": "A shapeless mix of a red cell battery, a basic machine frame and a furnace; it burns fuel into energy."
+    },
+    {
+      "id": "techreborn:advanced_circuit",
+      "title": "Electrum Logic",
+      "desc": "Assembled from one silicon plate and two electrum plates in the assembling machine."
+    },
+    {
+      "id": "techreborn:advanced_machine_frame",
+      "title": "Carbon Reinforced",
+      "desc": "A basic machine frame flanked by advanced alloy plates with carbon plates above and below."
+    },
+    {
+      "id": "techreborn:industrial_blast_furnace",
+      "title": "White Heat",
+      "desc": "An electric furnace and advanced circuits bolted to an advanced machine frame with cupronickel heating coils."
+    },
+    {
+      "id": "techreborn:steel_ingot",
+      "title": "Carburised",
+      "desc": "Fired in the industrial blast furnace from a refined iron ingot and four coal dust."
+    },
+    {
+      "id": "techreborn:industrial_grinder",
+      "title": "Ore Rendered Down",
+      "desc": "A grinder, an industrial electrolyzer, diamond grinding heads and advanced circuits on an advanced machine frame."
+    },
+    {
+      "id": "techreborn:lapotron_crystal",
+      "title": "The Blue Battery",
+      "desc": "Lazurite plates and industrial circuits packed around an energy crystal."
+    },
+    {
+      "id": "techreborn:industrial_machine_frame",
+      "title": "Titanium Chassis",
+      "desc": "Chromium and titanium plates pressed around an advanced machine frame."
+    },
+    {
+      "id": "techreborn:vacuum_freezer",
+      "title": "Absolute Cold",
+      "desc": "An extractor, steel plates, advanced circuits and reinforced glass; it quenches white-hot ingots."
+    },
+    {
+      "id": "techreborn:tungstensteel_ingot",
+      "title": "Quenched Tungstensteel",
+      "desc": "Chilled in the vacuum freezer from a hot tungstensteel ingot."
+    },
+    {
+      "id": "techreborn:lapotronic_orb",
+      "title": "Orb of Stored Lightning",
+      "desc": "Eight lapotron crystals wrapped around a single iridium alloy plate."
+    },
+    {
+      "id": "techreborn:energy_flow_chip",
+      "title": "Flow Control",
+      "desc": "Assembled from a lapotron crystal and an industrial circuit."
+    },
+    {
+      "id": "techreborn:matter_fabricator",
+      "title": "Matter From Scrap",
+      "desc": "Industrial machine frames, extractors and energy flow chips built around a lapotronic orb."
+    },
+    {
+      "id": "techreborn:fusion_coil",
+      "title": "Winding the Coil",
+      "desc": "An advanced machine casing wound with superconductors, nichrome heating coils, energy flow chips and an iridium neutron reflector."
+    },
+    {
+      "id": "techreborn:fusion_control_computer",
+      "title": "Star in a Bottle",
+      "desc": "Energy crystals and energy flow chips assembled around a fusion coil to run the fusion reactor."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "techreborn:basic_machine_frame",
+      "members": [
+        "techreborn:grinder",
+        "techreborn:electric_furnace",
+        "techreborn:compressor",
+        "techreborn:extractor",
+        "techreborn:alloy_smelter",
+        "techreborn:recycler",
+        "techreborn:rolling_machine",
+        "techreborn:wire_mill",
+        "techreborn:solid_fuel_generator",
+        "techreborn:auto_crafting_table",
+        "techreborn:iron_alloy_furnace"
+      ]
+    },
+    {
+      "hub": "techreborn:industrial_machine_frame",
+      "members": [
+        "techreborn:industrial_grinder",
+        "techreborn:industrial_blast_furnace",
+        "techreborn:industrial_centrifuge",
+        "techreborn:industrial_electrolyzer",
+        "techreborn:industrial_sawmill",
+        "techreborn:implosion_compressor",
+        "techreborn:vacuum_freezer",
+        "techreborn:distillation_tower",
+        "techreborn:chemical_reactor",
+        "techreborn:assembly_machine",
+        "techreborn:matter_fabricator",
+        "techreborn:fluid_replicator"
+      ]
+    },
+    {
+      "hub": "techreborn:lapotronic_orb",
+      "members": [
+        "techreborn:red_cell_battery",
+        "techreborn:lithium_ion_battery",
+        "techreborn:energy_crystal",
+        "techreborn:lapotron_crystal",
+        "techreborn:low_voltage_su",
+        "techreborn:medium_voltage_su",
+        "techreborn:high_voltage_su",
+        "techreborn:lsu_storage",
+        "techreborn:lapotronic_su",
+        "techreborn:lapotronic_orbpack"
+      ]
+    }
+  ],
+  "notes": "Verified against the Fabric build of Tech Reborn 5.8.15 for 1.20.1 (the only 1.20.1 build published on Modrinth; item ids are identical on any loader). Ids were checked as the intersection of assets/techreborn/models/item/*.json stems with item./block. keys in assets/*/lang/en_us.json, widened by ids referenced inside data/techreborn/**. Progression was read directly from data/techreborn/recipes/**: crafting_table/machine/*, assembling_machine/*, blast_furnace/*, vacuum_freezer/* and fusion_reactor/*. Fusion reactor recipes in the jar output helium3, helium plasma, iridium ore and platinum dust from deuterium/tritium/wolframium cells, so the chain ends at the fusion_control_computer rather than a fluid. Nothing was dropped: every id listed passed the set-membership check."
+}

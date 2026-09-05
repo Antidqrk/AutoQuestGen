@@ -1,0 +1,325 @@
+{
+ "mod": "minecolonies",
+ "ids_in_jar": 272,
+ "installed_in_pack": true,
+ "videos": [
+  {
+   "id": "irl3EMpEQ0I",
+   "title": "MineColonies Complete Beginner Guide (2024 UPDATED)",
+   "channel": "DeepLaughs",
+   "views": 346546,
+   "duration": 1358,
+   "chars": 20168
+  },
+  {
+   "id": "BCsj3irCnto",
+   "title": "Minecolonies: 10 THINGS I WISH I KNEW EARLIER",
+   "channel": "Sjin",
+   "views": 286219,
+   "duration": 950,
+   "chars": 15370
+  },
+  {
+   "id": "P-vSA_ynitA",
+   "title": "Minecolonies: Guide #1 - THE BEST START LOCATION",
+   "channel": "Sjin",
+   "views": 154892,
+   "duration": 1094,
+   "chars": 16574
+  }
+ ],
+ "items": {
+  "minecolonies:blockhutbuilder": {
+   "mentions": 52,
+   "videos": 3,
+   "first_at": 0.4435,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 0
+  },
+  "minecolonies:blockhuttownhall": {
+   "mentions": 52,
+   "videos": 2,
+   "first_at": 0.3153,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 2
+  },
+  "minecolonies:blockhutguardtower": {
+   "mentions": 35,
+   "videos": 2,
+   "first_at": 0.6674,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:supplycampdeployer": {
+   "mentions": 26,
+   "videos": 2,
+   "first_at": 0.1782,
+   "praise": 8,
+   "warn": 0,
+   "early_cue": 4,
+   "late_cue": 0
+  },
+  "minecolonies:blockhuttavern": {
+   "mentions": 18,
+   "videos": 2,
+   "first_at": 0.6845,
+   "praise": 9,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:blockhutfisherman": {
+   "mentions": 16,
+   "videos": 3,
+   "first_at": 0.4601,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:blockhutbarracks": {
+   "mentions": 16,
+   "videos": 1,
+   "first_at": 0.4261,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:supplychestdeployer": {
+   "mentions": 10,
+   "videos": 2,
+   "first_at": 0.1782,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 1
+  },
+  "structurize:sceptergold": {
+   "mentions": 9,
+   "videos": 2,
+   "first_at": 0.3836,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "minecolonies:blockhutstonesmeltery": {
+   "mentions": 8,
+   "videos": 1,
+   "first_at": 0.8304,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:blockhutlumberjack": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.8765,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:blockhutdeliveryman": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.4935,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:blockhutuniversity": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.5542,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:blockhutsmeltery": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.8315,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:blockhutwarehouse": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.9248,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:resourcescroll": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3822,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "minecolonies:blockhutcitizen": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.9211,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:blockhutminer": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8892,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:blockhutfarmer": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1416,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:blockhuthospital": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9331,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:blockhutlibrary": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.952,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "minecolonies:blockhutsawmill": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9364,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "domum_ornamentum:sand_stone_bricks": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8331,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "structures_in_jar": [
+  "minecolonies:amazon_camp",
+  "minecolonies:asian_colony",
+  "minecolonies:barbarian_camp",
+  "minecolonies:caledonia_colony",
+  "minecolonies:colonial_colony",
+  "minecolonies:desert_camp",
+  "minecolonies:desertoasis_colony",
+  "minecolonies:incan_colony",
+  "minecolonies:lostmesacity_colony",
+  "minecolonies:medieval_birch_colony",
+  "minecolonies:medieval_dark_oak_colony",
+  "minecolonies:medieval_oak_colony",
+  "minecolonies:medieval_spruce_colony",
+  "minecolonies:ship",
+  "minecolonies:shire_colony",
+  "minecolonies:warpednetherlands_colony"
+ ],
+ "structures": {
+  "minecolonies:ship": {
+   "mentions": 14,
+   "videos": 3,
+   "first_at": 0.2101,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 1
+  }
+ },
+ "human_notes": {
+  "order": [
+   "[video] STEP ZERO IS NOT CRAFTING, IT IS SITE CHOICE. All three guides open here and spend minutes on it. Four criteria, in the order they are taught: (1) a biome whose stone is plain - extra granite/diorite/limestone variants from other mods clog the warehouse; (2) ACCESS TO WATER, because minecolonies:blockhutfisherman is the early food engine and an ocean biome gives it better loot; (3) flat ground, to avoid hours of terraforming; (4) the surrounding biome, because it decides which raider faction attacks you.",
+   "[video] minecolonies:supplycampdeployer (5 logs) or minecolonies:supplychestdeployer (5 logs + 5 boats) goes down next - it is the only source of the Build Tool and the Town Hall block. Unlike every other building these two are PRE-BUILT and need no builder.",
+   "[video] structurize:sceptergold - the Build Tool, taken out of the supply camp's chest. Nothing in the mod is placed without it.",
+   "[video] minecolonies:blockhuttownhall - placed at the CENTRE of the intended town, because it defines the build radius. Placing it founds the colony; it does not have to be built up early.",
+   "[video] minecolonies:blockhutbuilder - the first hut built and the first worker hired. Nothing else progresses until a builder exists.",
+   "[video] minecolonies:blockhuttavern - where colonists sleep and where new recruits show up.",
+   "[video] minecolonies:blockhutfisherman - food first. The guide picks the Fisher over minecolonies:blockhutfarmer specifically because it produces sooner.",
+   "[video] minecolonies:blockhutlumberjack - Forester's Hut, the first real automation (wood).",
+   "[video] minecolonies:blockhutminer - the Mine, for stone and ores.",
+   "[video] minecolonies:blockhutwarehouse with minecolonies:blockhutdeliveryman - Warehouse plus Courier is the point where hauling stops being manual.",
+   "[video] minecolonies:blockhutguardtower - standing before the colony reaches 7 citizens.",
+   "[video] minecolonies:blockhutstonesmeltery - the Brick yard, feeding bricks and stone bricks to every later build.",
+   "[video] minecolonies:blockhutuniversity - called 'the most important building'; unlocks research and should stay the highest-level building you own.",
+   "[video] minecolonies:blockhutlibrary - studies that speed research along.",
+   "[video] minecolonies:blockhutbarracks - the late answer to defence, replacing scattered guard towers."
+  ],
+  "gates": [
+   "[video] HARD AND UNIVERSAL: minecolonies:blockhutbuilder level caps every other building's level. A level 3 Builder's Hut means nothing else passes level 3. This is the most repeated rule in the mod.",
+   "[video] HARD: raids begin at 7 citizens, so minecolonies:blockhutguardtower must exist before the colony grows past that.",
+   "[video] HARD: all research needs minecolonies:blockhutuniversity, and the research tier available equals the University's level.",
+   "[video] Research is charged in REAL time and only ticks while researchers actually work: roughly 30min / 1h / 2h / 4h / 8h / 16h for tiers 1-6. That is why guides say start the University early rather than start it well.",
+   "[jar] confirms the video's two mobility researches: 'vines' (colonists climb vines) requires minecolonies:blockhutcitizen level 3; 'rails' requires minecolonies:blockhutdeliveryman level 3.",
+   "[jar] colony-size chain is outpost -> hamlet -> village -> city, gated on minecolonies:blockhutcitizen levels 4/5 and minecolonies:blockhuttownhall levels 4/5.",
+   "[jar] minecolonies:blockhutbarracks level 3 gates most of the combat branch (improvedbows, improvedswords, preciseshot, quickdraw).",
+   "[jar] minecolonies:blockhutgraveyard levels 2-5 gate the undertaker/resurrection line; minecolonies:blockhutschool level 1 gates the child-growth line.",
+   "[video] ONE-SHOT AND IRREVERSIBLE: in survival you get a single supply camp/ship placement per world. Place it wrong and there is no second one. Both the camp and the ship also refuse to place on uneven ground, and the ship additionally needs clear, correctly-levelled water - the classic first-hour failure.",
+   "[video] BUILD STYLE IS A LONG-TERM COMMITMENT chosen at the supply camp, because each style demands different materials for every later building. Medieval is the recommended beginner style. 'Fortress' is special-cased - the Town Hall must be placed where four block corners meet and the whole colony generates as one connected fortress. Fortress and 'Space Wars' are both explicitly called bad first-playthrough choices."
+  ],
+  "structures": [
+   "[video+jar] THE RAIDER FACTION IS CHOSEN BY YOUR BIOME, and this is the most quest-shaped fact in the mod. Taiga gives Norsemen; desert gives Egyptians, whose pharaohs drop minecolonies:pharaoscepter, a real weapon your own archers can then use; deep water gives Pirates, who arrive on a ship with spawn points that keeps producing raiders until you destroy the spawners or it leaves after three days; jungle gives Amazons, named the deadliest; anything else gives Barbarians, the easiest. The jar backs this with minecolonies:barbarian_camp, minecolonies:amazon_camp and minecolonies:desert_camp, plus minecolonies:barbchiefegg, minecolonies:amazonchiefegg and minecolonies:norsemenchiefegg.",
+   "[jar] the remaining minecolonies worldgen entries (minecolonies:colonial_colony, minecolonies:medieval_oak_colony, minecolonies:shire_colony, minecolonies:incan_colony, minecolonies:caledonia_colony and friends) are generated NPC colonies, not player content.",
+   "[video] minecolonies:ship - the Supply Ship variant of the starter camp, and the most-discussed 'structure' in the guides because placing it at the wrong water height is the classic first mistake."
+  ],
+  "traps": [
+   "[video] THE big one, and it is not a crafting problem: colonists outside the entity activation range FREEZE. Wander to the Nether or across the map and the whole colony stalls, because every worker is waiting on a courier who is not loaded. Stay near the colony or raise entityDistanceScaling.",
+   "[video] One builder builds one thing at a time. Queueing several projects on a single Builder's Hut stalls all of them while resources get split.",
+   "[video] Do not zone all the housing together. A worker lives between minecolonies:blockhutcitizen and their workplace; long commutes cost happiness and get them killed at night.",
+   "[video] minecolonies:blockhutstonesmeltery is extremely slow. The advice is two Brick yards rather than one high-level one.",
+   "[video] Spamming individual minecolonies:blockhutguardtower is wasted effort - two or three early to widen the border, then minecolonies:blockhutbarracks, which holds up to 4 towers x 5 guards.",
+   "[video] Rails through the colony are a strong early speedup that becomes pointless once movement research lands; expect to tear them out.",
+   "[video] Colonists avoid stairs and move much faster on ladders.",
+   "[video] A mountainous site means hours of manual terraforming, because huts demand flat ground.",
+   "[video] Recruit cost signals recruit quality at the Tavern - the expensive visitors are the good ones, and a higher-level Tavern offers better ones."
+  ],
+  "signature": [
+   "minecolonies:blockhuttownhall",
+   "minecolonies:blockhutbuilder",
+   "structurize:sceptergold",
+   "minecolonies:supplycampdeployer",
+   "minecolonies:blockhutuniversity",
+   "minecolonies:clipboard",
+   "minecolonies:resourcescroll"
+  ]
+ }
+}

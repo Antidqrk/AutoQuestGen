@@ -1,0 +1,264 @@
+{
+  "mod": "pamhc2foodcore",
+  "verified_against": "pamhc2foodcore-1.20.4-1.0.5.jar",
+  "item_count_in_jar": 181,
+  "chain": [
+    {
+      "id": "pamhc2foodcore:freshwateritem",
+      "title": "Bottle the River",
+      "desc": "One water bucket crafts straight into 8 Fresh Water, and nearly every pot recipe in HarvestCraft asks for it. This is the cheapest ingredient in the whole mod - grab a stack's worth early."
+    },
+    {
+      "id": "pamhc2foodcore:potitem",
+      "title": "The Pot",
+      "desc": "A copper ingot and sticks make the first of nine kitchen tools. Tools sit in the crafting grid and are never consumed - one pot boils salt, stock, soups and fried food for the rest of the game."
+    },
+    {
+      "id": "pamhc2foodcore:saltitem",
+      "title": "Boil Off Some Salt",
+      "desc": "Pot plus Fresh Water gives salt, the seasoning half the mod's recipes quietly demand - dough, cheese, jerky, fries all want it. The pot comes back, so salt effectively costs only water."
+    },
+    {
+      "id": "pamhc2foodcore:grinderitem",
+      "title": "The Grinder",
+      "desc": "Andesite and a stick. The grinder mills grain into flour, beans into cocoa powder and raw meat into ground meat - it is the gateway to both the bakery and the burger lines."
+    },
+    {
+      "id": "pamhc2foodcore:flouritem",
+      "title": "Mill Your First Flour",
+      "desc": "Grinder plus any grain - wheat works, so do barley, oats or rice from the crops mod. Flour feeds dough, batter and fried chicken; you will burn through it faster than any other ingredient."
+    },
+    {
+      "id": "pamhc2foodcore:mixingbowlitem",
+      "title": "The Mixing Bowl",
+      "desc": "Planks and a stick. The bowl mixes dough, batter, cream, ice cream and mashed potatoes - the wet-ingredients workhorse of the kitchen."
+    },
+    {
+      "id": "pamhc2foodcore:doughitem",
+      "title": "Knead the Dough",
+      "desc": "Bowl, flour, water and salt make 2 dough. Dough becomes bread, pies, pasta and pizza bases - it is the single most reused intermediate in all of HarvestCraft, so make it in bulk."
+    },
+    {
+      "id": "pamhc2foodcore:bakewareitem",
+      "title": "The Bakeware",
+      "desc": "Eight terracotta in a ring. Bakeware turns one dough into a whole bread - far cheaper than three wheat - and bakes every pie, cake, muffin and cracker from here on."
+    },
+    {
+      "id": "pamhc2foodcore:freshmilkitem",
+      "title": "Milk by the Carton",
+      "desc": "A milk bucket splits into 8 Fresh Milk. Butter, cheese, batter, caramel and yogurt all drink from this supply, so keep a cow close to the kitchen."
+    },
+    {
+      "id": "pamhc2foodcore:butteritem",
+      "title": "Churn Butter",
+      "desc": "Pot plus milk. Butter is the difference between plain bread and toast, and it hides inside mashed potatoes, pancakes and most of the pastry recipes coming up."
+    },
+    {
+      "id": "pamhc2foodcore:cheeseitem",
+      "title": "Make Cheese",
+      "desc": "Pot, milk and your homemade salt. Cheese unlocks every burger upgrade, grilled cheese, mac n cheese and pizza - it is the most-wanted animal product in the mod."
+    },
+    {
+      "id": "pamhc2foodcore:batteritem",
+      "title": "Whisk Up Batter",
+      "desc": "Bowl, flour, milk and an egg give 2 batter. Batter is the base of donuts, pancakes, waffles and cheesecake - the sweet half of the kitchen runs on it."
+    },
+    {
+      "id": "pamhc2foodcore:skilletitem",
+      "title": "The Skillet",
+      "desc": "Copper and sticks again. The skillet fries: toast, eggs, burgers, pancakes and grilled sandwiches all happen here. With pot, bowl and bakeware you now own the core four tools."
+    },
+    {
+      "id": "pamhc2foodcore:toastitem",
+      "title": "Toast",
+      "desc": "Skillet, bread and butter give 2 toast. Modest on its own, but toast is the base for jelly toast and the breakfast plates - and it proves your whole dairy pipeline works."
+    },
+    {
+      "id": "pamhc2foodcore:grilledcheeseitem",
+      "title": "Grilled Cheese",
+      "desc": "Bread, butter and cheese in the skillet. The first proper meal of the chain - solid hunger and saturation from ingredients a starter farm already produces on its own."
+    },
+    {
+      "id": "pamhc2foodcore:rolleritem",
+      "title": "The Roller",
+      "desc": "A log between two sticks. The roller flattens dough into pasta and, more importantly, presses nuts, seeds and vegetables into cooking oil."
+    },
+    {
+      "id": "pamhc2foodcore:cookingoilitem",
+      "title": "Press Cooking Oil",
+      "desc": "Roller plus any nuts or vegetables gives 2 oil - canola from the crops mod gives 4. Everything deep-fried wants oil: fries, fried chicken, donuts. Stockpile it."
+    },
+    {
+      "id": "pamhc2foodcore:juiceritem",
+      "title": "The Juicer",
+      "desc": "Four terracotta. The juicer squeezes every fruit into juice and smoothies, and it has one savory trick: it turns a single egg into mayonnaise."
+    },
+    {
+      "id": "pamhc2foodcore:mayonaiseitem",
+      "title": "Mayonnaise",
+      "desc": "One egg in the juicer. This is Food Core's only condiment, and burgers, hot dogs and sandwiches all require 'a condiment' - so this humble jar gates the entire sandwich board."
+    },
+    {
+      "id": "pamhc2foodcore:cuttingboarditem",
+      "title": "The Cutting Board",
+      "desc": "Copper, stick, plank on a diagonal. The board assembles sandwiches, slices jerky and plates full dinners - the last tool between you and the burger."
+    },
+    {
+      "id": "pamhc2foodcore:groundbeefitem",
+      "title": "Grind the Beef",
+      "desc": "Grinder plus raw beef. Ground meat cooks into its own food, but its real job is patties - every hamburger in Food Core and the Extended pack starts here."
+    },
+    {
+      "id": "pamhc2foodcore:basichamburgeritem",
+      "title": "First Hamburger",
+      "desc": "Skillet, ground beef, your mayonnaise and bread. The full production line pays off: farm to grinder to condiment to burger. Cheese and bacon versions are one ingredient away."
+    },
+    {
+      "id": "pamhc2foodcore:friesitem",
+      "title": "Fries",
+      "desc": "Pot, a potato, cooking oil and salt. Cheap, filling, and one of the two halves of fish and chips - your oil press starts earning its keep here."
+    },
+    {
+      "id": "pamhc2foodcore:friedchickenitem",
+      "title": "Fried Chicken",
+      "desc": "Pot, flour, raw chicken and oil. Better food than cooked chicken from the same bird, and a required part of the Chicken Dinner plate at the end of this chain."
+    },
+    {
+      "id": "pamhc2foodcore:mashedpotatoesitem",
+      "title": "Mashed Potatoes",
+      "desc": "Bowl, baked potato, butter and salt. The second component of the Chicken Dinner - and proof that even a furnace product can be upgraded with your dairy line."
+    },
+    {
+      "id": "pamhc2foodcore:saucepanitem",
+      "title": "The Saucepan",
+      "desc": "Just a stick and a copper ingot - the cheapest tool, saved for the sweets: caramel, chocolate, yogurt, marshmallows and every candy in the mod come out of this pan."
+    },
+    {
+      "id": "pamhc2foodcore:caramelitem",
+      "title": "Caramel",
+      "desc": "Saucepan, sugar and milk. Caramel headlines its own donut, pie, ice cream and fudge line - and a caramel apple is the fastest way to use one."
+    },
+    {
+      "id": "pamhc2foodcore:chocolatebaritem",
+      "title": "Chocolate Bar",
+      "desc": "Saucepan plus cocoa beans. The bar is eaten as-is or melted into smores, fudge, cake and hot chocolate - the other pillar of the candy aisle."
+    },
+    {
+      "id": "pamhc2foodcore:stockitem",
+      "title": "Simmer Some Stock",
+      "desc": "Pot plus a bone or any raw meat gives 2 stock. Stock is the soup backbone - noodle soup, pot roast, stew and the Extended pack's ramen and gravy all start with it."
+    },
+    {
+      "id": "pamhc2foodcore:chickendinneritem",
+      "title": "Winner Winner",
+      "desc": "Cutting board, fried chicken, mashed potatoes and a vegetable: a three-recipe-deep plated dinner that exercises every tool you built. This is Food Core's graduation meal."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "pamhc2foodcore:plaindonutitem",
+      "members": [
+        "pamhc2foodcore:appledonutitem",
+        "pamhc2foodcore:carameldonutitem",
+        "pamhc2foodcore:carrotdonutitem",
+        "pamhc2foodcore:chocolatedonutitem",
+        "pamhc2foodcore:chorusdonutitem",
+        "pamhc2foodcore:glowberrydonutitem",
+        "pamhc2foodcore:honeyglazeddonutitem",
+        "pamhc2foodcore:melondonutitem",
+        "pamhc2foodcore:powdereddonutitem",
+        "pamhc2foodcore:pumpkindonutitem",
+        "pamhc2foodcore:sprinklesdonutitem",
+        "pamhc2foodcore:sweetberrydonutitem"
+      ]
+    },
+    {
+      "hub": "pamhc2foodcore:beefjerkyitem",
+      "members": [
+        "pamhc2foodcore:chickenjerkyitem",
+        "pamhc2foodcore:fishjerkyitem",
+        "pamhc2foodcore:muttonjerkyitem",
+        "pamhc2foodcore:porkjerkyitem",
+        "pamhc2foodcore:rabbitjerkyitem"
+      ]
+    },
+    {
+      "hub": "pamhc2foodcore:beefpotpieitem",
+      "members": [
+        "pamhc2foodcore:chickenpotpieitem",
+        "pamhc2foodcore:fishpotpieitem",
+        "pamhc2foodcore:muttonpotpieitem",
+        "pamhc2foodcore:porkpotpieitem",
+        "pamhc2foodcore:rabbitpotpieitem"
+      ]
+    },
+    {
+      "hub": "pamhc2foodcore:applepieitem",
+      "members": [
+        "pamhc2foodcore:caramelpieitem",
+        "pamhc2foodcore:carrotpieitem",
+        "pamhc2foodcore:chocolatepieitem",
+        "pamhc2foodcore:choruspieitem",
+        "pamhc2foodcore:glowberrypieitem",
+        "pamhc2foodcore:honeypieitem",
+        "pamhc2foodcore:sweetberrypieitem",
+        "pamhc2foodcore:cheesecakeitem",
+        "pamhc2foodcore:pumpkincheesecakeitem"
+      ]
+    },
+    {
+      "hub": "pamhc2foodcore:yogurtitem",
+      "members": [
+        "pamhc2foodcore:appleyogurtitem",
+        "pamhc2foodcore:caramelyogurtitem",
+        "pamhc2foodcore:chocolateyogurtitem",
+        "pamhc2foodcore:chorusyogurtitem",
+        "pamhc2foodcore:glowberryyogurtitem",
+        "pamhc2foodcore:melonyogurtitem",
+        "pamhc2foodcore:pumpkinyogurtitem",
+        "pamhc2foodcore:sweetberryyogurtitem"
+      ]
+    },
+    {
+      "hub": "pamhc2foodcore:marshmellowsitem",
+      "members": [
+        "pamhc2foodcore:cottoncandyitem",
+        "pamhc2foodcore:gummycreepersitem",
+        "pamhc2foodcore:jellybeansitem",
+        "pamhc2foodcore:smoresitem",
+        "pamhc2foodcore:chocolatecaramelfudgeitem",
+        "pamhc2foodcore:hotchocolateitem",
+        "pamhc2foodcore:chocolatebaconitem",
+        "pamhc2foodcore:epicbaconitem"
+      ]
+    },
+    {
+      "hub": "pamhc2foodcore:icecreamitem",
+      "members": [
+        "pamhc2foodcore:chocolateicecreamitem",
+        "pamhc2foodcore:caramelicecreamitem",
+        "pamhc2foodcore:fudgesicleitem",
+        "pamhc2foodcore:applepopsicleitem",
+        "pamhc2foodcore:melonpopsicleitem",
+        "pamhc2foodcore:sweetberrypopsicleitem",
+        "pamhc2foodcore:glowberrypopsicleitem",
+        "pamhc2foodcore:choruspopsicleitem"
+      ]
+    },
+    {
+      "hub": "pamhc2foodcore:applejuiceitem",
+      "members": [
+        "pamhc2foodcore:carrotjuiceitem",
+        "pamhc2foodcore:melonjuiceitem",
+        "pamhc2foodcore:sweetberryjuiceitem",
+        "pamhc2foodcore:glowberryjuiceitem",
+        "pamhc2foodcore:chorusjuiceitem",
+        "pamhc2foodcore:fruitpunchitem",
+        "pamhc2foodcore:p8juiceitem",
+        "pamhc2foodcore:applesmoothieitem",
+        "pamhc2foodcore:melonsmoothieitem"
+      ]
+    }
+  ],
+  "notes": "Verified against pamhc2foodcore-1.20.4-1.0.5.jar found in the GayChaseyPacxk instance: 181 item lang keys, 181 recipe files read directly. Order is real dependency: the 9 tools (pot/skillet/saucepan need copper ingots + sticks, grinder andesite, bakeware/juicer terracotta, bowl/roller/board wood) are never consumed and gate everything - recipes reference them via forge:tool_* tags, so other kitchen mods' tools also satisfy them. freshwater_x8/freshmilk_x8 recipes convert one bucket into 8 units. forge:condiments in this jar contains only mayonaise (juicer + egg), which is why mayo precedes the hamburger. Chain caps at chickendinneritem (friedchicken + mashedpotatoes + vegetable on the cutting board). epicbaconitem (cooked pork + all 7 dye tags in bakeware) sits in the candy/novelty collection. Collections group the mechanical donut/jerky/potpie/pie/yogurt/candy/icecream/juice families, each hubbed on its plainest member. This mod is the tool-and-ingredient backbone for pamhc2foodextended - its tags (forge:flour, forge:dough, forge:cheese, forge:stock, forge:batter) are what Extended's 800+ recipes consume."
+}

@@ -1,0 +1,205 @@
+{
+ "mod": "createcasing",
+ "verified_against": "Create Encased-1.20.1-1.8-ht2.jar",
+ "item_count_in_jar": 520,
+ "parent_mod": "create",
+ "chain": [
+  {
+   "id": "createcasing:oak_shaft",
+   "title": "Whittle a Wooden Shaft",
+   "desc": "Carries rotation exactly like Create's andesite shaft, but costs two stripped logs for eight. Before andesite alloy is flowing this is the cheapest way to run power across a base, so make a stack."
+  },
+  {
+   "id": "createcasing:glass_shaft",
+   "title": "Run a Glass Shaft",
+   "desc": "Same job as any other shaft, but you can watch the rotation through it - handy inside a machine you want to show off, or to see at a glance which line has stopped."
+  },
+  {
+   "id": "createcasing:copper_gearbox",
+   "title": "Case a Gearbox in Copper",
+   "desc": "Behaves like Create's andesite gearbox in every way; the point is that the block now matches a copper-themed build instead of clashing with it. Make as many as your drivetrain needs corners."
+  },
+  {
+   "id": "createcasing:vertical_copper_gearbox",
+   "title": "Stand the Gearbox Upright",
+   "desc": "The same gearbox oriented on the vertical axis, and a shapeless craft flips it back and forth. Use it where the horizontal one would send rotation the wrong way."
+  },
+  {
+   "id": "createcasing:copper_configurable_gearbox",
+   "title": "Assemble the Configurable Gearbox",
+   "desc": "The one genuinely new machine here. Right-click each face with a shaft or a wrench to open or close it, so a single block can drive two, three or six directions at once instead of forcing a bulky shaft junction."
+  },
+  {
+   "id": "createcasing:copper_encased_shaft",
+   "title": "Encase a Shaft in Copper",
+   "desc": "Right-click a placed shaft while holding a copper casing - no crafting recipe involved. Encased shafts hide the moving parts and let you build flush walls around your drivetrain."
+  },
+  {
+   "id": "createcasing:copper_depot",
+   "title": "Set a Copper Depot",
+   "desc": "A stationary belt tile: items sit on it to be pressed, deployed onto, or picked up by a Mechanical Arm. Cheap enough that most processing setups want two or three."
+  },
+  {
+   "id": "createcasing:copper_mechanical_drill",
+   "title": "Bolt on a Copper Drill",
+   "desc": "Breaks the block in front of it under rotation, and breaks a path through terrain when carried on a contraption. Identical to the vanilla Create drill apart from the shell."
+  },
+  {
+   "id": "createcasing:copper_encased_fan",
+   "title": "Mount a Copper Encased Fan",
+   "desc": "Blow its airflow through lava, water or fire and it smelts, washes or smokes whatever is on the belt or depot below. The cheapest bulk processing Create has - one per recipe you want to automate."
+  },
+  {
+   "id": "createcasing:copper_press",
+   "title": "Drop a Copper Press",
+   "desc": "Presses items on the depot or belt beneath it, and compacts anything held in a Basin underneath. Sheet metal and most compacting recipes go through one of these."
+  },
+  {
+   "id": "createcasing:brass_shaft",
+   "title": "Saw a Brass Shaft",
+   "desc": "Cut a brass ingot on a Mechanical Saw for six. Unlike the other shafts this one reads your network: put a comparator on it and it outputs max, used or remaining stress, with a configurable threshold. This is the stress alarm Create never shipped."
+  },
+  {
+   "id": "createcasing:brass_mixer",
+   "title": "Hang a Brass Mixer",
+   "desc": "Brass-cased Mechanical Mixer. Over a Basin it automates shapeless recipes and mixing, with a Blaze Burner underneath for the ones that need heat."
+  },
+  {
+   "id": "createcasing:brass_deployer",
+   "title": "Fit a Brass Deployer",
+   "desc": "Brass-cased Deployer - places blocks, uses items, attacks and harvests two blocks in front of itself. The workhorse of item processing lines and contraptions."
+  },
+  {
+   "id": "createcasing:brass_chain_conveyor",
+   "title": "String a Brass Chain Conveyor",
+   "desc": "Connect two of them with chains to relay rotation across a gap, and grab the chain with a wrench to ride along it yourself. You need at least two for any of that to work."
+  },
+  {
+   "id": "createcasing:industrial_iron_press",
+   "title": "Move Up to Industrial Iron",
+   "desc": "The same press cased in Create's Industrial Iron Block. A distinct steel-grey tier for factory interiors, and the first casing here that is a plain block rather than a crafted casing."
+  },
+  {
+   "id": "createcasing:weathered_iron_gearbox",
+   "title": "Weather Your Gearboxes",
+   "desc": "Built on Create's Weathered Iron Block. Functionally the copper gearbox again - pick this tier when you want the rusted look instead of the clean one."
+  },
+  {
+   "id": "createcasing:railway_mechanical_roller",
+   "title": "Case a Roller in Railway",
+   "desc": "Railway casing gives the roller a livery that matches your track. Mounted on a train it clears terrain and lays paving material as the contraption moves."
+  },
+  {
+   "id": "createcasing:refined_radiance_mechanical_saw",
+   "title": "Cut with Refined Radiance",
+   "desc": "Needs a Refined Radiance Casing, so this tier waits until you have chromatic compound and a light source to charge it. A glowing saw for the endgame workshop."
+  },
+  {
+   "id": "createcasing:shadow_steel_portable_storage_interface",
+   "title": "Shadow Steel the Interface",
+   "desc": "The darkest casing tier, gated behind Shadow Steel from the Nether-charged chromatic compound. Same job as always: exchange items with a contraption without stopping it."
+  },
+  {
+   "id": "createcasing:chorium_ingot",
+   "title": "Assemble a Chorium Ingot",
+   "desc": "Not a crafting recipe - a four-loop Sequenced Assembly on polished rose quartz, filling with lava, deploying popped chorus fruit and pressing each pass. Build the line once; you need one ingot per Creative Casing."
+  },
+  {
+   "id": "createcasing:creative_casing",
+   "title": "Forge the Creative Casing",
+   "desc": "Apply a Chorium Ingot to an Industrial Iron Block with a Deployer. This is the mod's real prize: a survival-obtainable creative-tier casing that unlocks the whole creative component set."
+  },
+  {
+   "id": "createcasing:creative_configurable_gearbox",
+   "title": "Finish with a Creative Gearbox",
+   "desc": "The last tier of every machine in this mod is now open to you - drills, presses, mixers, depots and the rest, all in the creative shell. This one is the showpiece: six faces you can wrench open or shut."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "createcasing:oak_shaft",
+   "members": [
+    "createcasing:acacia_shaft",
+    "createcasing:bamboo_shaft",
+    "createcasing:birch_shaft",
+    "createcasing:cherry_shaft",
+    "createcasing:crimson_shaft",
+    "createcasing:dark_oak_shaft",
+    "createcasing:jungle_shaft",
+    "createcasing:mangrove_shaft",
+    "createcasing:spruce_shaft",
+    "createcasing:warped_shaft",
+    "createcasing:glass_shaft"
+   ]
+  },
+  {
+   "hub": "createcasing:oak_cogwheel",
+   "members": [
+    "createcasing:oak_large_cogwheel",
+    "createcasing:birch_cogwheel",
+    "createcasing:birch_large_cogwheel",
+    "createcasing:spruce_cogwheel",
+    "createcasing:spruce_large_cogwheel",
+    "createcasing:acacia_cogwheel",
+    "createcasing:acacia_large_cogwheel",
+    "createcasing:jungle_cogwheel",
+    "createcasing:jungle_large_cogwheel",
+    "createcasing:dark_oak_cogwheel",
+    "createcasing:dark_oak_large_cogwheel",
+    "createcasing:cherry_cogwheel",
+    "createcasing:cherry_large_cogwheel",
+    "createcasing:mangrove_cogwheel",
+    "createcasing:mangrove_large_cogwheel",
+    "createcasing:bamboo_cogwheel",
+    "createcasing:bamboo_large_cogwheel",
+    "createcasing:crimson_cogwheel",
+    "createcasing:crimson_large_cogwheel",
+    "createcasing:warped_cogwheel",
+    "createcasing:warped_large_cogwheel"
+   ]
+  },
+  {
+   "hub": "createcasing:vertical_copper_gearbox",
+   "members": [
+    "createcasing:vertical_brass_gearbox",
+    "createcasing:vertical_industrial_iron_gearbox",
+    "createcasing:vertical_weathered_iron_gearbox",
+    "createcasing:vertical_railway_gearbox",
+    "createcasing:vertical_refined_radiance_gearbox",
+    "createcasing:vertical_shadow_steel_gearbox",
+    "createcasing:vertical_creative_gearbox"
+   ]
+  },
+  {
+   "hub": "createcasing:creative_casing",
+   "members": [
+    "createcasing:creative_press",
+    "createcasing:creative_mixer",
+    "createcasing:creative_mechanical_drill",
+    "createcasing:creative_mechanical_saw",
+    "createcasing:creative_deployer",
+    "createcasing:creative_depot",
+    "createcasing:creative_encased_fan",
+    "createcasing:creative_portable_storage_interface",
+    "createcasing:creative_chain_conveyor",
+    "createcasing:creative_clutch",
+    "createcasing:creative_gearshift",
+    "createcasing:creative_gearbox"
+   ]
+  },
+  {
+   "hub": "createcasing:copper_encased_shaft",
+   "members": [
+    "createcasing:copper_encased_cogwheel",
+    "createcasing:copper_encased_large_cogwheel",
+    "createcasing:copper_encased_oak_shaft",
+    "createcasing:copper_encased_oak_cogwheel",
+    "createcasing:copper_encased_oak_large_cogwheel",
+    "createcasing:copper_encased_glass_shaft",
+    "createcasing:brass_encased_oak_shaft",
+    "createcasing:andesite_encased_oak_shaft"
+   ]
+  }
+ ],
+ "notes": "VERIFIER CORRECTION - three descs quoted the recipe and quoted it low: gearbox/copper.json is FOUR create:cogwheel around one create:copper_casing, chain_conveyor/brass.json is FOUR create:brass_casing around one create:large_cogwheel, and configurable_gearbox/creative.json is FOUR create:large_cogwheel around one createcasing:creative_casing. Those clauses are gone; do not reintroduce ingredient lists here, they were both redundant with the recipe the player can see and wrong. This is a VARIANT mod, not a tech tree: 520 registered blocks/items, of which the overwhelming majority are the same eighteen Create machines re-cased in nine shells (andesite, copper, brass, industrial_iron, weathered_iron, railway, refined_radiance, shadow_steel, creative) plus every shaft and cogwheel in every wood crossed with every casing. The chain therefore walks the CASING TIERS rather than trying to be exhaustive, and quests one representative machine per tier. Real progression gates, all verified from the shipped recipes: copper/brass casings are Create mid-game; create:industrial_iron_block and create:weathered_iron_block are plain Create blocks; create:railway_casing is Create's train tier; create:refined_radiance_casing and create:shadow_steel_casing require chromatic compound, so they are genuinely late; and the creative tier is gated behind createcasing:creative_casing, which in this build IS survival-obtainable - data/createcasing/recipes/sequenced_assembly/chorium_ingot.json turns create:polished_rose_quartz into createcasing:chorium_ingot over 4 loops of filling with lava / deploying popped chorus fruit / pressing, and data/createcasing/recipes/item_application/creative_casing.json then deploys that ingot onto create:industrial_iron_block. createcasing:processing_chorium is the sequenced-assembly transitional item (Incomplete Chorium) - obtainable but never a sensible quest target, so it is deliberately not in the chain. IMPORTANT VERB WARNING: no crafting recipe ships for ANY cogwheel or ANY encased block. The wooden cogwheels have no shipped recipe at all (a pack may add one via KubeJS - the jar carries a kubejs.plugins.txt), and every *_encased_* block is obtained the Create way, by right-clicking a placed shaft or cogwheel with the casing item, then breaking it. Never write 'Craft' for those. Only createcasing:brass_shaft is machine-made rather than grid-crafted: data/createcasing/recipes/cutting/brass_ingot.json cuts one create:brass_ingot into 6 on a Mechanical Saw. The brass shaft is also the only item in the mod with unique behaviour - its lang keys (createcasing.brass_shaft.max_stress / .mode.used_stress / .mode.remaining_stress / .operation.less|equals|greater) show it emits a configurable comparator signal about network stress. The other genuinely new block is the Configurable Gearbox, which per the mod's own ponder lets you wrench individual faces open or shut. Everything else is cosmetic parity with vanilla Create, so a generator should NOT give each of the 520 entries its own quest."
+}

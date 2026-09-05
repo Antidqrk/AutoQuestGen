@@ -1,0 +1,64 @@
+{
+ "mod": "dimdungeons",
+ "ids_in_jar": 38,
+ "videos": [
+  {
+   "id": "s3M7papGNKU",
+   "title": null,
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 6015
+  },
+  {
+   "id": "uAEDL7xoix8",
+   "title": null,
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 6506
+  }
+ ],
+ "items": {},
+ "human_notes": {
+  "entry": [
+   "You build the portal ANYWHERE - that is the whole point of the mod. Sources uAEDL7xoix8 (the mod author's own 1.20.1 primer) and s3M7papGNKU. 'Dim Dungeons puts your dungeons in their own dimension, easily accessible from a portal you can build anywhere.'",
+   "The pieces, agreed by both guides: dimdungeons:block_gilded_portal, dimdungeons:block_portal_keyhole (the Portal Keystone), dimdungeons:block_portal_crown, and a dimdungeons:item_portal_key (Blank Portal Key).",
+   "Assembly (uAEDL7xoix8): two 2-tall stone-brick pylons joined into a 1x2 frame with NO corner blocks, dimdungeons:block_portal_keyhole at the top, gilded portal blocks capping the pylons.",
+   "RECIPE CAUTION - the two guides DISAGREE on the exact recipes and block counts. uAEDL7xoix8 says 3 gilded portal blocks (chiseled stone brick + 8 gold ingots) and a keystone of chiseled gold block + eye of ender + treasure chest; s3M7papGNKU says 2 gilded portal blocks and a keystone of 1 gilded portal block + redstone + ender eye. Prefer the author's primer, and confirm against the in-game book rather than trusting either number.",
+   "CRITICAL AND EASY TO MISS, and this both guides agree on: a fresh dimdungeons:item_portal_key is BLANK and leads nowhere. Charge it at a vanilla STRONGHOLD - right-click an eye of ender out of the End portal frame (this does not break it), right-click the empty socket with your key, and it is activated. The eye can go back afterwards.",
+   "Install Patchouli and craft dimdungeons:item_guidebook (book + chiseled stone brick). The author 'highly recommends' it, and given the recipe conflict above it is the reliable in-game reference."
+  ],
+  "boss_order": [
+   "NO bosses and no ladder. This mod is a dungeon generator, not a progression chain.",
+   "The nearest thing to progression is key tiers: dimdungeons:item_key_level1 for basic dungeons, then dimdungeons:item_key_level2 for 'much tougher and more challenging dungeons with much better loot'. s3M7papGNKU confirms the advanced key is FOUND INSIDE a basic dungeon.",
+   "There is a collectible set instead: dimdungeons:item_trophy_1 through dimdungeons:item_trophy_8, each labelled 'Trophy N/8' in the jar - a natural completion goal for a questbook."
+  ],
+  "order": [
+   "FIRST: build the portal and charge one key at a stronghold. Nothing else in the mod works until a key is activated.",
+   "THEN: run basic dungeons. Every fresh key generates an individually-made dungeon, so the loop is 'swap key, new dungeon'.",
+   "Dungeons are aligned to an 8x8 chunk border, so any map item is a reliable navigation aid - the author calls this out as the anti-getting-lost feature.",
+   "UPGRADE PATH: find an advanced key inside a basic dungeon, and enhance the portal with dungeon treasure so it accepts dimdungeons:item_key_level2.",
+   "LATE/LUCKY: advanced dungeons can drop dimdungeons:item_blank_teleporter_key, giving a one-room dungeon with 8 portals, each keyed to a dimdungeons:item_key_teleporter usable anywhere - effectively an 8-node fast-travel network.",
+   "Also from luck: dimdungeons:item_blank_theme_key leads to dungeons themed after the Nether, the Desert or the Sewers."
+  ],
+  "gates": [
+   "HARD GATE: an unactivated dimdungeons:item_portal_key contains no dungeon. Activation requires a stronghold End-portal frame, so the whole mod sits behind finding a stronghold.",
+   "Advanced dungeons need dimdungeons:item_key_level2, which is loot from a basic dungeon - you cannot craft your way to the good tier.",
+   "dimdungeons:block_key_charger (the Key Inscribing Station) has NO crafting recipe - it exists so modpack authors can bypass the stronghold requirement, and is otherwise dungeon loot. Do not write a craft quest for it."
+  ],
+  "traps": [
+   "Dungeon rooms hide redstone traps, triggered pistons and parkour sections - the author is explicit that rooms 'might not look special' but conceal them.",
+   "dimdungeons:item_homeward_pearl (ender pearl + blank portal key + bottle of enchanting) looks expensive but warps you to the dungeon entrance from anywhere inside. Worth making before a deep run.",
+   "Keys are reusable: take a key back out of the portal and save it, so a dungeon you liked is not lost. Players who discard keys lose that dungeon forever."
+  ],
+  "signature": [
+   "dimdungeons:item_portal_key - the item the entire mod revolves around.",
+   "dimdungeons:block_gilded_portal and dimdungeons:block_portal_keyhole - the buildable-anywhere portal.",
+   "dimdungeons:item_blank_build_key -> a personal 8x8-chunk pocket dimension, from a homeward pearl + echo shard + grass block + 6 ender pearls. The author calls it 'the big wonderful shiny reward'.",
+   "dimdungeons:item_homeward_pearl - the escape hatch.",
+   "dimdungeons:item_trophy_1 .. dimdungeons:item_trophy_8 - the 8-piece collectible set.",
+   "dimdungeons:item_secret_bell - dungeon-found, not craftable."
+  ]
+ }
+}

@@ -1,0 +1,144 @@
+{
+ "mod": "sophisticatedstorage",
+ "verified_against": "sophisticatedstorage-1.20.1-1.4.86.2131.jar",
+ "item_count_in_jar": 146,
+ "chain": [
+  {"id": "sophisticatedstorage:barrel", "title": "A Barrel With Ambitions", "desc": "Planks, a matching slab and a lever; one registry id covers every wood, because the wood is stored on the item rather than being a separate block."},
+  {"id": "sophisticatedstorage:chest", "title": "The Chest, Reconsidered", "desc": "Planks around a lever, or a lever added shapelessly to a Quark chest; it accepts upgrades that a vanilla chest never could."},
+  {"id": "sophisticatedstorage:limited_barrel_1", "title": "Fewer Slots, Deeper Stacks", "desc": "The barrel recipe rearranged into Limited Barrel I: one slot only, but a much larger stack multiplier and the contents shown on the face."},
+  {"id": "sophisticatedstorage:upgrade_base", "title": "The Blank Plate", "desc": "Iron ingots and planks; almost every upgrade in the mod is this plate with one more ingredient added."},
+  {"id": "sophisticatedstorage:packing_tape", "title": "Moving Day", "desc": "A slimeball and paper; taping a full storage block lets you break and carry it with everything still inside."},
+  {"id": "sophisticatedstorage:basic_tier_upgrade", "title": "Converting What You Already Own", "desc": "Wooden rods around a lever; applied to a vanilla chest, barrel or shulker box it turns that block into the mod's version in place."},
+  {"id": "sophisticatedstorage:stack_upgrade_tier_1", "title": "Twice the Stacks", "desc": "Logs on the upgrade base; the first rung of the stack ladder, doubling how many stacks fit in each slot."},
+  {"id": "sophisticatedstorage:pickup_upgrade", "title": "Picking Up After You", "desc": "A sticky piston, redstone and planks on the upgrade base; the storage collects items you walk over."},
+  {"id": "sophisticatedstorage:filter_upgrade", "title": "Choosing What Gets In", "desc": "String and redstone on the upgrade base, controlling which items may be piped into or out of the block."},
+  {"id": "sophisticatedstorage:copper_barrel", "title": "Copper Tier", "desc": "Copper ingots applied to a barrel through the mod's own storage_tier_upgrade recipe; more slots and an extra upgrade slot."},
+  {"id": "sophisticatedstorage:magnet_upgrade", "title": "Pulling Things In", "desc": "Ender pearls, lapis, iron and redstone worked onto a PICKUP upgrade - the magnet is the pickup upgrade's next tier, never a fresh craft."},
+  {"id": "sophisticatedstorage:hopper_upgrade", "title": "In From Above, Out From Below", "desc": "A hopper, iron and redstone on the upgrade base, moving items between the storage and the blocks touching it."},
+  {"id": "sophisticatedstorage:iron_barrel", "title": "Iron Tier", "desc": "Iron ingots applied to a plain or copper barrel; the ladder lets you skip rungs but never go down."},
+  {"id": "sophisticatedstorage:compacting_upgrade", "title": "Squashing on Intake", "desc": "A piston, iron and redstone on the upgrade base; incoming items are compressed into their block forms as they arrive."},
+  {"id": "sophisticatedstorage:smelting_upgrade", "title": "A Furnace in the Tab", "desc": "A furnace, iron and redstone on the upgrade base; it is also the parent of the smoking and blasting upgrades."},
+  {"id": "sophisticatedstorage:crafting_upgrade", "title": "A Bench in the Tab", "desc": "A crafting table, a chest and iron on the upgrade base, giving the storage its own crafting grid."},
+  {"id": "sophisticatedstorage:oak_storage_connector", "title": "Bridging the Gap", "desc": "Oak planks and sticks; connectors let a multiblock of storages span a wall opening without breaking the network."},
+  {"id": "sophisticatedstorage:controller", "title": "One Face for Many Blocks", "desc": "Stone, a comparator, planks and a base-tier wooden storage; every storage it touches becomes one inventory."},
+  {"id": "sophisticatedstorage:storage_link", "title": "Joining a Second Cluster", "desc": "Ender pearls, stone, planks and a repeater, or an ender pearl added to a controller; links a separate group of storages to the controller."},
+  {"id": "sophisticatedstorage:storage_io", "title": "Pipes Get a Port", "desc": "Gold, stone, planks, a repeater and a base-tier storage; placed in a multiblock it lets automation both insert and extract."},
+  {"id": "sophisticatedstorage:shulker_box", "title": "Portable and Upgradeable", "desc": "A shulker shell, a chest and a lever; it keeps its contents when broken and still takes the mod's upgrades."},
+  {"id": "sophisticatedstorage:void_upgrade", "title": "Throwing the Rest Away", "desc": "Obsidian, an ender pearl and redstone on the upgrade base, deleting whatever you list instead of filling up with it."},
+  {"id": "sophisticatedstorage:gold_barrel", "title": "Gold Tier", "desc": "Gold ingots applied to an iron barrel."},
+  {"id": "sophisticatedstorage:storage_tool", "title": "The Wand for the Wall", "desc": "An ender pearl, iron, a wooden rod and a redstone torch; it links storages to a controller and toggles the counts, tiers and locks drawn on their faces."},
+  {"id": "sophisticatedstorage:decoration_table", "title": "The Paint Shop", "desc": "Logs, planks and an upgrade base; it sets the materials and colours that the paintbrush will apply."},
+  {"id": "sophisticatedstorage:paintbrush", "title": "Restyling in Place", "desc": "A wooden rod and wool; loaded from the decoration table, it repaints storage blocks already standing in the world."},
+  {"id": "sophisticatedstorage:diamond_barrel", "title": "Diamond Tier", "desc": "Diamonds applied to a gold barrel."},
+  {"id": "sophisticatedstorage:netherite_barrel", "title": "The Top of the Barrel Ladder", "desc": "Netherite ingots added shapelessly to a diamond barrel; the highest storage tier the mod ships."},
+  {"id": "sophisticatedstorage:stack_upgrade_omega_tier", "title": "The Absurd One", "desc": "Made from a tier five stack upgrade; the tooltip puts the multiplier at 33,554,431 times the base stack size."}
+ ],
+ "collections": [
+  {
+   "hub": "sophisticatedstorage:barrel",
+   "members": [
+    "sophisticatedstorage:chest",
+    "sophisticatedstorage:shulker_box",
+    "sophisticatedstorage:copper_barrel",
+    "sophisticatedstorage:iron_barrel",
+    "sophisticatedstorage:gold_barrel",
+    "sophisticatedstorage:diamond_barrel",
+    "sophisticatedstorage:netherite_barrel",
+    "sophisticatedstorage:limited_barrel_1",
+    "sophisticatedstorage:limited_barrel_2",
+    "sophisticatedstorage:limited_barrel_3",
+    "sophisticatedstorage:limited_barrel_4"
+   ]
+  },
+  {
+   "hub": "sophisticatedstorage:upgrade_base",
+   "members": [
+    "sophisticatedstorage:pickup_upgrade",
+    "sophisticatedstorage:magnet_upgrade",
+    "sophisticatedstorage:filter_upgrade",
+    "sophisticatedstorage:void_upgrade",
+    "sophisticatedstorage:compacting_upgrade",
+    "sophisticatedstorage:compression_upgrade",
+    "sophisticatedstorage:hopper_upgrade",
+    "sophisticatedstorage:crafting_upgrade",
+    "sophisticatedstorage:smelting_upgrade",
+    "sophisticatedstorage:smoking_upgrade",
+    "sophisticatedstorage:blasting_upgrade",
+    "sophisticatedstorage:stonecutter_upgrade",
+    "sophisticatedstorage:jukebox_upgrade",
+    "sophisticatedstorage:feeding_upgrade"
+   ]
+  },
+  {
+   "hub": "sophisticatedstorage:advanced_filter_upgrade",
+   "members": [
+    "sophisticatedstorage:advanced_pickup_upgrade",
+    "sophisticatedstorage:advanced_magnet_upgrade",
+    "sophisticatedstorage:advanced_void_upgrade",
+    "sophisticatedstorage:advanced_compacting_upgrade",
+    "sophisticatedstorage:advanced_hopper_upgrade",
+    "sophisticatedstorage:advanced_jukebox_upgrade",
+    "sophisticatedstorage:advanced_feeding_upgrade",
+    "sophisticatedstorage:advanced_alchemy_upgrade",
+    "sophisticatedstorage:auto_smelting_upgrade",
+    "sophisticatedstorage:auto_smoking_upgrade",
+    "sophisticatedstorage:auto_blasting_upgrade"
+   ]
+  },
+  {
+   "hub": "sophisticatedstorage:stack_upgrade_tier_1",
+   "members": [
+    "sophisticatedstorage:stack_upgrade_tier_1_plus",
+    "sophisticatedstorage:stack_upgrade_tier_2",
+    "sophisticatedstorage:stack_upgrade_tier_3",
+    "sophisticatedstorage:stack_upgrade_tier_4",
+    "sophisticatedstorage:stack_upgrade_tier_5",
+    "sophisticatedstorage:stack_upgrade_omega_tier",
+    "sophisticatedstorage:stack_downgrade_tier_1",
+    "sophisticatedstorage:stack_downgrade_tier_2",
+    "sophisticatedstorage:stack_downgrade_tier_3"
+   ]
+  },
+  {
+   "hub": "sophisticatedstorage:oak_storage_connector",
+   "members": [
+    "sophisticatedstorage:spruce_storage_connector",
+    "sophisticatedstorage:birch_storage_connector",
+    "sophisticatedstorage:jungle_storage_connector",
+    "sophisticatedstorage:acacia_storage_connector",
+    "sophisticatedstorage:dark_oak_storage_connector",
+    "sophisticatedstorage:mangrove_storage_connector",
+    "sophisticatedstorage:cherry_storage_connector",
+    "sophisticatedstorage:bamboo_storage_connector",
+    "sophisticatedstorage:crimson_storage_connector",
+    "sophisticatedstorage:warped_storage_connector"
+   ]
+  },
+  {
+   "hub": "sophisticatedstorage:basic_tier_upgrade",
+   "members": [
+    "sophisticatedstorage:basic_to_copper_tier_upgrade",
+    "sophisticatedstorage:basic_to_iron_tier_upgrade",
+    "sophisticatedstorage:basic_to_gold_tier_upgrade",
+    "sophisticatedstorage:basic_to_diamond_tier_upgrade",
+    "sophisticatedstorage:basic_to_netherite_tier_upgrade",
+    "sophisticatedstorage:copper_to_iron_tier_upgrade",
+    "sophisticatedstorage:iron_to_gold_tier_upgrade",
+    "sophisticatedstorage:gold_to_diamond_tier_upgrade",
+    "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
+   ]
+  },
+  {
+   "hub": "sophisticatedstorage:chipped/carpenters_table_upgrade",
+   "members": [
+    "sophisticatedstorage:chipped/alchemy_bench_upgrade",
+    "sophisticatedstorage:chipped/botanist_workbench_upgrade",
+    "sophisticatedstorage:chipped/glassblower_upgrade",
+    "sophisticatedstorage:chipped/loom_table_upgrade",
+    "sophisticatedstorage:chipped/mason_table_upgrade",
+    "sophisticatedstorage:chipped/tinkering_table_upgrade"
+   ]
+  }
+ ],
+ "notes": "146 item-model stems in the jar; 145 of them carry a display name and 139 of those are obtainable. THE NAIVE RULE VERIFIES ONLY 127 OF 146 HERE - a 19-id under-count - and it fails in two separate ways, one of which produces silently WRONG ids rather than missing ones.\n\nTRAP 1, PATH SEPARATOR (7 ids, and this one is dangerous). Seven upgrades live at assets/sophisticatedstorage/models/item/chipped/*.json, so their registry paths contain a SLASH: sophisticatedstorage:chipped/carpenters_table_upgrade. Their lang keys use a DOT (item.sophisticatedstorage.chipped.carpenters_table_upgrade) because Minecraft's ResourceLocation#toLanguageKey replaces '/' with '.'. A rule that reads the lang key and reconstructs an id gets sophisticatedstorage:chipped.carpenters_table_upgrade, which is not a registered item and will never resolve. The recipe files settle it: data/sophisticatedstorage/recipes/chipped/carpenters_table_upgrade.json has result item 'sophisticatedstorage:chipped/carpenters_table_upgrade', slash included. Every chipped id in this file uses the slash.\n\nTRAP 2, COMPOSED NAMES (11 ids), the same shape as Storage Drawers. The eleven wood storage connectors - acacia_storage_connector through warped_storage_connector - have NO per-block lang key. There is one composed key, block.sophisticatedstorage.storage_connector = '%1$s%2$sStorage Connector', filled from wood_name.sophisticatedstorage.<wood> ('Oak', 'Bamboo', ...). All eleven are nevertheless real registered blocks: each has a blockstate, an item model, a block loot table AND its own crafting recipe (planks + sticks). Blockstate plus recipe result is the proof; the lang file simply never names them individually.\n\nTHE INVERSE TRAP - one id where the naive rule would OVER-count if applied backwards. block.sophisticatedstorage.barrel is '%s%sBarrel' and block.sophisticatedstorage.chest is '%s%sChest'. There is exactly ONE barrel block, ONE chest block and ONE shulker box block for all eleven woods; the wood is NBT on the stack, not a registry entry. The thirteen barrel recipes, twenty-four chest recipes and nineteen shulker box recipes all resolve to those three ids. Never write sophisticatedstorage:oak_barrel - it does not exist. Contrast this with the connectors above, which genuinely ARE eleven blocks. The mod does both things at once, and the lang file looks identical in both cases.\n\nDROPPED - sophisticatedstorage:inaccessible_slot. Item model present, no lang key under any convention, no blockstate, no recipe, no loot table. A GUI slot-rendering asset, not a quest target.\nDROPPED, REGISTERED BUT NO RECIPE ANYWHERE: pump_upgrade, advanced_pump_upgrade and xp_pump_upgrade (all three named in lang and modelled, all three referencing a 'Tank upgrade' that Sophisticated Storage does not register in 1.20.1 - there is no tank_upgrade model in the jar); debug_tool; and the two admin items infinity_upgrade ('Infinity Upgrade (Admin)') and survival_infinity_upgrade. I also read sophisticatedcore-1.20.1-1.3.84.2308.jar to be sure the recipes were not being supplied by the required core mod: Sophisticated Core ships exactly ONE recipe (sophisticatedcore:upgrade_clear) and one item model, so it does not provide them either. Six uncompletable quests avoided.\n\nCONSENSUS CONFLICTS, recipe graph preferred:\n1. moddb puts sophisticatedstorage:controller FIRST at pos 0.000, ahead of upgrade_base (0.073) and of any storage block. The controller recipe requires the sophisticatedstorage:base_tier_wooden_storage tag plus a comparator, so a barrel or chest has to exist first; upgrade_base is iron and planks. This is the identical mistake moddb makes with storagedrawers and functionalstorage - it consistently front-loads controllers.\n2. moddb places pickup_upgrade at 0.146 and magnet_upgrade nowhere near it, listing stack_upgrade_tier_1 at 0.195 and stack_upgrade_tier_1_plus at 0.610. The magnet is not a sibling of the pickup upgrade, it is its NEXT TIER: data/sophisticatedstorage/recipes/magnet_upgrade.json is type sophisticatedcore:upgrade_next_tier and consumes a pickup_upgrade. Every 'advanced_' item in this mod works the same way, consuming the basic version, so the basic upgrade always gates its advanced form.\n3. moddb lists basic_to_copper_tier_upgrade at 0.024, second overall, before even packing_tape. It is a fine early item, but the whole tier-upgrade family is a parallel route to the same blocks and is modelled as a wheel here rather than as chain steps.\n\nCROSS-NAMESPACE RECIPES, not a registration. This jar ships 40 recipe files whose RESULT is in the sophisticatedbackpacks namespace (sophisticatedbackpacks:magnet_upgrade and so on) - conversion recipes between storage upgrades and backpack upgrades, loaded only when Sophisticated Backpacks is present, which it is in this pack. Those are that mod's items, not this one's, so no registers_into entry is warranted; but a results-scraper that does not filter by namespace will attribute 40 backpack items to this mod.\n\nWHEELS follow the mod's seven real families. The 24 tiered limited barrels (4 slot counts x 6 tiers) and the tiered chest and shulker box lines are deliberately represented by one member each rather than enumerated - they are the same ladder in three shapes. The chipped wheel is included specifically because it is the only place in the project where quest ids legitimately contain a slash."
+}

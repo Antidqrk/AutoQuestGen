@@ -1,0 +1,266 @@
+{
+ "mod": "hexcasting",
+ "verified_against": "hexcasting-forge-1.20.1-0.11.4.jar",
+ "item_count_in_jar": 124,
+ "chain": [
+  {
+   "id": "hexcasting:amethyst_dust",
+   "title": "Dust From the Geode",
+   "desc": "Mine an Amethyst Cluster with anything short of Silk Touch. A loot injection turns the shards into 1-4 dust, Fortune-scaled."
+  },
+  {
+   "id": "hexcasting:charged_amethyst",
+   "title": "A Shard That Holds Media",
+   "desc": "The rarer drop from the same clusters. Every staff, focus and spellbook is built on one, and it is what media is measured in."
+  },
+  {
+   "id": "hexcasting:staff/oak",
+   "title": "Take Up the Staff",
+   "desc": "Oak planks, a stick and a Charged Amethyst. Right-click the air with it and the hexagonal casting grid opens."
+  },
+  {
+   "id": "hexcasting:scroll_paper",
+   "title": "Paper Worth Writing On",
+   "desc": "Paper and an amethyst shard. Blank scrolls are the medium every pattern you find is recorded on."
+  },
+  {
+   "id": "hexcasting:scroll",
+   "title": "A Pattern Written Down",
+   "desc": "Amethyst Dust and paper. Hung on a wall it displays one pattern; found in loot it teaches you one you did not know."
+  },
+  {
+   "id": "hexcasting:lens",
+   "title": "The Scrying Lens",
+   "desc": "Amethyst Dust and glass. Held in the offhand it reads the media in blocks and shows what a circle is doing."
+  },
+  {
+   "id": "hexcasting:focus",
+   "title": "Somewhere to Keep an Iota",
+   "desc": "Paper, leather, glowstone and a Charged Amethyst. It stores one iota out of the stack for later."
+  },
+  {
+   "id": "hexcasting:spellbook",
+   "title": "A Book of Many Iotas",
+   "desc": "A writable book, gold nuggets, a chorus fruit and a Charged Amethyst. It is a Focus with pages."
+  },
+  {
+   "id": "hexcasting:slate",
+   "title": "Blank Slate",
+   "desc": "Deepslate and Amethyst Dust. Write a pattern onto a slate and lay them in a ring to build a spell circle."
+  },
+  {
+   "id": "hexcasting:slate_block",
+   "title": "Slate in Bulk",
+   "desc": "Nine slates packed. The Impetus and the Directrix are both built out of these."
+  },
+  {
+   "id": "hexcasting:cypher",
+   "title": "One Spell, Once",
+   "desc": "Copper and Amethyst Dust. Seal a hex into it and it casts on use until the media runs out."
+  },
+  {
+   "id": "hexcasting:trinket",
+   "title": "The Second Vessel",
+   "desc": "Iron and an amethyst shard. A Trinket holds a hex the way a Cypher does, but takes more punishment."
+  },
+  {
+   "id": "hexcasting:artifact",
+   "title": "The Third Vessel",
+   "desc": "Gold, a music disc and a Charged Amethyst. The strongest of the three sealed-spell items."
+  },
+  {
+   "id": "hexcasting:abacus",
+   "title": "Counting Beads",
+   "desc": "Planks, sticks and amethyst. Scroll it to dial in an exact number instead of building one out of patterns."
+  },
+  {
+   "id": "hexcasting:jeweler_hammer",
+   "title": "The Jeweler's Hammer",
+   "desc": "Iron and an amethyst shard. It splits amethyst blocks into slates and clusters into their parts without waste."
+  },
+  {
+   "id": "hexcasting:edified_planks",
+   "title": "Wood That Grew Wrong",
+   "desc": "Edified Trees generate with amethyst, aventurine or citrine leaves. Their planks are the only wood the good staff accepts."
+  },
+  {
+   "id": "hexcasting:staff/edified",
+   "title": "The Edified Staff",
+   "desc": "Edified planks around a Charged Amethyst. Functionally the same as oak, and the one every hexcaster actually carries."
+  },
+  {
+   "id": "hexcasting:akashic_bookshelf",
+   "title": "Shelves for the Record",
+   "desc": "Edified logs, planks and books. Each shelf stores one iota keyed to one pattern."
+  },
+  {
+   "id": "hexcasting:akashic_connector",
+   "title": "Wire the Library",
+   "desc": "Edified wood, Amethyst Dust, a shard and a Charged Amethyst. The connectors bind the shelves to the record."
+  },
+  {
+   "id": "hexcasting:akashic_record",
+   "title": "Brainsweep the Librarian",
+   "desc": "A brainsweep on an Akashic Connector, requiring a level 5 Librarian villager and 1,000,000 media. Read-write storage keyed by pattern."
+  },
+  {
+   "id": "hexcasting:battery",
+   "title": "Phial of Media",
+   "desc": "There is no crafting recipe. Craft Phial is one of the fourteen actions in hexcasting:requires_enlightenment - you must be Enlightened first."
+  },
+  {
+   "id": "hexcasting:impetus/empty",
+   "title": "The Circle Needs a Start",
+   "desc": "A Slate Block, purpur, iron bars and a Charged Amethyst. Empty, it does nothing; it is the blank a brainsweep is performed on."
+  },
+  {
+   "id": "hexcasting:impetus/rightclick",
+   "title": "Impetus of Awakening",
+   "desc": "Brainsweep the empty Impetus using a level 2 Toolsmith. It starts the circle when a player right-clicks it."
+  },
+  {
+   "id": "hexcasting:directrix/empty",
+   "title": "The Circle Needs to Branch",
+   "desc": "A Slate Block, a comparator, an observer and a Charged Amethyst; the blank half of the redstone logic."
+  },
+  {
+   "id": "hexcasting:directrix/redstone",
+   "title": "Directrix of Redstone",
+   "desc": "Brainsweep the empty Directrix using a level 1 Mason. It routes the circle's execution on a redstone signal."
+  },
+  {
+   "id": "hexcasting:quenched_allay",
+   "title": "Quench an Allay",
+   "desc": "The one brainsweep that takes no villager: an Allay, over an amethyst block, for 100,000 media rather than a million."
+  },
+  {
+   "id": "hexcasting:quenched_allay_shard",
+   "title": "Shards of the Quenched",
+   "desc": "Break the Quenched Allay block without Silk Touch. It decomposes back into Charged Amethyst, dust or shards at will."
+  },
+  {
+   "id": "hexcasting:staff/quenched",
+   "title": "The Quenched Staff",
+   "desc": "A Quenched Allay Shard, a stick and a Charged Amethyst - a staff built out of something that used to be alive."
+  },
+  {
+   "id": "hexcasting:staff/mindsplice",
+   "title": "The Mindsplice Staff",
+   "desc": "Built around any brainswept circle component. It is the last staff in the mod and proof you have run the whole apparatus."
+  },
+  {
+   "id": "hexcasting:ancient_cypher",
+   "title": "Someone Cast This Before You",
+   "desc": "Injected at 40% into ancient city, jungle temple, desert pyramid, mineshaft, dungeon, stronghold and nether fortress chests."
+  },
+  {
+   "id": "hexcasting:lore_fragment",
+   "title": "Fragments of a Story",
+   "desc": "Injected into village house, woodland mansion, pillager outpost, mineshaft, dungeon and stronghold library chests. Reading one fills in the book's Lore."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "hexcasting:staff/oak",
+   "members": [
+    "hexcasting:staff/birch",
+    "hexcasting:staff/spruce",
+    "hexcasting:staff/jungle",
+    "hexcasting:staff/acacia",
+    "hexcasting:staff/dark_oak",
+    "hexcasting:staff/mangrove",
+    "hexcasting:staff/cherry",
+    "hexcasting:staff/bamboo",
+    "hexcasting:staff/crimson",
+    "hexcasting:staff/warped",
+    "hexcasting:staff/edified",
+    "hexcasting:staff/quenched",
+    "hexcasting:staff/mindsplice"
+   ]
+  },
+  {
+   "hub": "hexcasting:cypher",
+   "members": [
+    "hexcasting:trinket",
+    "hexcasting:artifact",
+    "hexcasting:focus",
+    "hexcasting:spellbook",
+    "hexcasting:thought_knot",
+    "hexcasting:scroll",
+    "hexcasting:scroll_medium",
+    "hexcasting:scroll_small",
+    "hexcasting:abacus",
+    "hexcasting:lens"
+   ]
+  },
+  {
+   "hub": "hexcasting:default_colorizer",
+   "members": [
+    "hexcasting:uuid_colorizer",
+    "hexcasting:ancient_colorizer",
+    "hexcasting:dye_colorizer_white",
+    "hexcasting:dye_colorizer_black",
+    "hexcasting:dye_colorizer_red",
+    "hexcasting:dye_colorizer_blue",
+    "hexcasting:dye_colorizer_green",
+    "hexcasting:dye_colorizer_yellow",
+    "hexcasting:dye_colorizer_purple",
+    "hexcasting:dye_colorizer_orange"
+   ]
+  },
+  {
+   "hub": "hexcasting:pride_colorizer_transgender",
+   "members": [
+    "hexcasting:pride_colorizer_agender",
+    "hexcasting:pride_colorizer_aroace",
+    "hexcasting:pride_colorizer_aromantic",
+    "hexcasting:pride_colorizer_asexual",
+    "hexcasting:pride_colorizer_bisexual",
+    "hexcasting:pride_colorizer_demiboy",
+    "hexcasting:pride_colorizer_demigirl",
+    "hexcasting:pride_colorizer_gay",
+    "hexcasting:pride_colorizer_genderfluid",
+    "hexcasting:pride_colorizer_genderqueer",
+    "hexcasting:pride_colorizer_intersex",
+    "hexcasting:pride_colorizer_lesbian",
+    "hexcasting:pride_colorizer_nonbinary",
+    "hexcasting:pride_colorizer_pansexual"
+   ]
+  },
+  {
+   "hub": "hexcasting:slate_bricks",
+   "members": [
+    "hexcasting:slate_bricks_small",
+    "hexcasting:slate_tiles",
+    "hexcasting:slate_pillar",
+    "hexcasting:slate_amethyst_bricks",
+    "hexcasting:slate_amethyst_bricks_small",
+    "hexcasting:slate_amethyst_tiles",
+    "hexcasting:slate_amethyst_pillar",
+    "hexcasting:amethyst_bricks",
+    "hexcasting:amethyst_bricks_small",
+    "hexcasting:amethyst_tiles",
+    "hexcasting:amethyst_pillar",
+    "hexcasting:amethyst_sconce"
+   ]
+  },
+  {
+   "hub": "hexcasting:edified_planks",
+   "members": [
+    "hexcasting:edified_panel",
+    "hexcasting:edified_tile",
+    "hexcasting:edified_slab",
+    "hexcasting:edified_stairs",
+    "hexcasting:edified_door",
+    "hexcasting:edified_trapdoor",
+    "hexcasting:edified_fence",
+    "hexcasting:edified_fence_gate",
+    "hexcasting:edified_button",
+    "hexcasting:edified_pressure_plate",
+    "hexcasting:edified_wood",
+    "hexcasting:stripped_edified_log"
+   ]
+  }
+ ],
+ "notes": "LOADER CHECK PASSED: this jar has META-INF/mods.toml with modId = \"hexcasting\" and a required dependency on modId = \"forge\", and NO fabric.mod.json. Hex Casting is Fabric-first but 0.11.4 does ship a real 1.20.1 Forge build (Modrinth lists loaders ['forge'] for game_versions ['1.20.1']), so no substitution was needed. VERIFICATION: 127 stems pass item-model INTERSECT (lang key OR recipe result OR loot entry OR tag OR advancement); 124 survive the obtainability audit. All 31 chain ids, 6 wheel hubs and 71 wheel members (108 ids total) were re-checked, fully namespaced, against the surviving set on a second pass whose derivation is deliberately independent of the first: exact item-model path existence plus the literal \"<ns>:<path>\" string appearing in the jar data trees. 0 failures. SLASH-PATHED IDS - the biggest trap in this mod: the staffs, impetuses and directrixes are NOT hexcasting:oak_staff or hexcasting:staff_oak, they are hexcasting:staff/oak, hexcasting:impetus/rightclick and hexcasting:directrix/redstone, with a forward slash in the path. Proof is direct: data/hexcasting/recipes/staff/oak.json declares result {\"item\": \"hexcasting:staff/oak\"}, and data/hexcasting/recipes/brainsweep/directrix_redstone.json declares blockIn hexcasting:directrix/empty and result hexcasting:directrix/redstone. The lang keys convert the slash to a dot (item.hexcasting.staff.oak, 'Oak Staff'), which is why a naive model-INTERSECT-lang scan misses all 21 of them; the models live at assets/hexcasting/models/item/staff/oak.json. Any generator that flattens to the basename will emit hexcasting:oak, which does not exist. GUIDE BOOK: there is NO hexcasting-namespaced book id. data/hexcasting/recipes/patchi_book.json is a patchouli:shapeless_book_recipe with \"book\": \"hexcasting:thehexbook\", and data/hexcasting/loot_tables/grant_patchi_book.json is an advancement_reward table handing out patchouli:guide_book with the NBT {\"patchouli:book\": \"hexcasting:thehexbook\"}. The stem 'book' exists only as a lang key and 'patchouli_book' only as a model override - same shape as Zenith, and it must not be quested as a hexcasting id. DROPS: hexcasting:creative_unlocker ('The Media Cube', a creative item in data/hexcasting/tags/items/grants_root_advancement.json with no recipe or loot), and hexcasting:conjured_block and hexcasting:conjured_light, which are spell-created blocks appearing only in data/hexcasting/tags/blocks/cheap_to_break_block.json with no loot table and no item source - you can make them appear but never hold them. NOTE also that data/hexcasting/recipes/brainsweep/impetus_storedplayer.json is misleadingly named: its result is hexcasting:impetus/redstone, so there is no impetus/storedplayer id, and only four impetuses exist (empty, look, rightclick, redstone). TIER GATE: the analogue of Bewitchment's chalk tier is ENLIGHTENMENT crossed with BRAINSWEEP COST. data/hexcasting/tags/hexcasting/action/requires_enlightenment.json lists fourteen actions - lightning, flight, create_lava, teleport/great, sentinel/create/great, dispel_rain, summon_rain, BRAINSWEEP and CRAFT/BATTERY among them - that simply refuse to run until the caster is Enlightened, and Enlightenment is bought by overcasting to near-death (the mod's own advancements trigger on hexcasting:overcast with health_used min 0.8). Since Brainsweep is behind that wall, so is every block in the spell-circle apparatus. The second axis is the brainsweep itself: seven hexcasting:brainsweep recipes each name a blockIn, a media cost and a specific entityIn - akashic_record needs a level 5 LIBRARIAN and 1,000,000 media, impetus/rightclick a level 2 toolsmith, impetus/look a level 2 fletcher, impetus/redstone a level 2 cleric, directrix/redstone a level 1 mason, directrix/boolean a level 1 shepherd, and quench_allay an Allay for only 100,000. Villager profession and level are therefore a hard, checkable gate, and a pack should treat 'get a level 5 librarian' as the real prerequisite for the Akashic Record. NON-RECIPE ACQUISITION kept, with proof: amethyst_dust and charged_amethyst come from data/hexcasting/loot_tables/inject/amethyst_cluster.json applied through the hexcasting:amethyst_cluster loot modifier when a cluster is mined without Silk Touch; quenched_allay_shard from data/hexcasting/loot_tables/blocks/quenched_allay.json; battery from the craft/battery action only; and ancient_cypher and lore_fragment from forge global loot modifiers - data/forge/loot_modifiers/global_loot_modifiers.json registers hexcasting:inject_cyphers at 40% into ancient_city, jungle_temple, desert_pyramid, abandoned_mineshaft, nether_bridge, simple_dungeon and stronghold_corridor, and the lore set into five village house types, woodland_mansion, pillager_outpost, stronghold_library, abandoned_mineshaft and simple_dungeon. ENTITIES: no kill step is offered. Of the 4 entity.hexcasting.* keys three are the mod's own projectiles and one is the wall scroll; the mod adds no mobs. The Allay in the quench ritual is vanilla and is consumed by the ritual rather than killed for a drop, so it is written as the block quest rather than a kill task. WHEELS: the pride colorizer family has 16 members, one more than a 14-member wheel plus hub can hold, so hexcasting:pride_colorizer_plural is the single one left out; it is a real, craftable id and can be swapped in freely. CONSENSUS: moddb.json and harvested_order.json have no hexcasting entry, so there is no consensus ordering to cross-check and no conflict to record."
+}

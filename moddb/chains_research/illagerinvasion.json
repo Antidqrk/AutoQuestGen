@@ -1,0 +1,154 @@
+{
+ "mod": "illagerinvasion",
+ "verified_against": "IllagerInvasion-v8.0.7-1.20.1-Forge.jar",
+ "item_count_in_jar": 23,
+ "chain": [
+  {
+   "id": "structure:illagerinvasion:sorcerer_hut",
+   "title": "The Hut in the Dark Forest",
+   "desc": "A dark forest cabin, the densest structure in the mod at spacing 18; its chest holds Unusual Dust, an enchanted golden apple and dark oak saplings."
+  },
+  {
+   "id": "kill:illagerinvasion:sorcerer",
+   "title": "Teleport, Then Stab",
+   "desc": "A raider that blinks between hits and blinds you as it goes; it drops Unusual Dust, a book and emeralds."
+  },
+  {
+   "id": "illagerinvasion:unusual_dust",
+   "title": "Powdered Wrongness",
+   "desc": "The Sorcerer's dust, also found in the sorcerer hut chest, and one of the two dusts the Hallowed Gem recipe needs."
+  },
+  {
+   "id": "structure:illagerinvasion:illusioner_tower",
+   "title": "Three Floors of Nothing Real",
+   "desc": "A taiga, dark forest and swamp tower built from three jigsaw pieces; the stairway chest is the other place Illusionary Dust appears."
+  },
+  {
+   "id": "illagerinvasion:illusionary_dust",
+   "title": "Dust of the Unreal",
+   "desc": "Injected into the vanilla Illusioner's drop table and stocked in the illusioner tower stairway chest, so there are two ways to get it."
+  },
+  {
+   "id": "illagerinvasion:hallowed_gem",
+   "title": "Two Dusts and a Diamond",
+   "desc": "Four amethyst shards, two Unusual Dust, two Illusionary Dust and a diamond in a ring; the mod's one crafted treasure and the gate to the Horn."
+  },
+  {
+   "id": "illagerinvasion:horn_of_sight",
+   "title": "Blow to Reveal",
+   "desc": "A goat horn, a Hallowed Gem and three gold ingots; it plays the mod's own Reveal instrument and marks nearby illagers through walls."
+  },
+  {
+   "id": "structure:illagerinvasion:illager_fort",
+   "title": "The Fort in the Pines",
+   "desc": "A taiga and snowy plains keep that spawn-overrides Pillagers, Marauders, Bashers and Provokers; the tower chest pays diamonds and an enchanted golden apple."
+  },
+  {
+   "id": "kill:illagerinvasion:marauder",
+   "title": "Axes, Thrown",
+   "desc": "The Marauder throws its hatchet at you rather than swinging it, and it is the only illager in the mod that fights at range with a melee weapon."
+  },
+  {
+   "id": "illagerinvasion:platinum_infused_hatchet",
+   "title": "Catch",
+   "desc": "The Marauder's own weapon, carried in its hand slot in the mod's mob template, so the only way to own one is to make it drop the thing it is throwing at you."
+  },
+  {
+   "id": "kill:illagerinvasion:basher",
+   "title": "Shield Wall of One",
+   "desc": "A shield-carrying illager that blocks the front and has to be flanked or disarmed with an axe; it drops iron nuggets and emeralds."
+  },
+  {
+   "id": "kill:illagerinvasion:provoker",
+   "title": "The One Who Buffs the Rest",
+   "desc": "A support illager that strengthens the raiders around it; it drops arrows and emeralds and is a member of the raiders tag."
+  },
+  {
+   "id": "kill:illagerinvasion:inquisitor",
+   "title": "Interrogation Ends Badly",
+   "desc": "The heavily armoured raider, and the only one of the eleven whose own loot table lists Platinum Chunk alongside iron ingots and leather."
+  },
+  {
+   "id": "illagerinvasion:platinum_chunk",
+   "title": "Three Illagers Carry It",
+   "desc": "Dropped by the Inquisitor outright and injected into the vanilla Pillager and Ravager tables, so ordinary raids yield it too."
+  },
+  {
+   "id": "illagerinvasion:platinum_sheet",
+   "title": "The Illagers' Trim",
+   "desc": "Four Platinum Chunks pressed flat; it is a registered smithing trim material, so armour trimmed with it carries the mod's own Platinum effects."
+  },
+  {
+   "id": "structure:illagerinvasion:firecaller_hut",
+   "title": "Obelisk in the Badlands",
+   "desc": "A badlands farmstead of six jigsaw pieces - crops, hay, a stable, a well and an obelisk - and the only place the Firecaller lives."
+  },
+  {
+   "id": "kill:illagerinvasion:firecaller",
+   "title": "It Burns the Ground",
+   "desc": "The Firecaller lays sheets of the mod's own Magic Fire under your feet; killing it returns emeralds and fire charges."
+  },
+  {
+   "id": "kill:illagerinvasion:necromancer",
+   "title": "Raising the Dead for Fun",
+   "desc": "It fights by summoning the undead and drops a skeleton skull, a zombie head and emeralds."
+  },
+  {
+   "id": "kill:illagerinvasion:archivist",
+   "title": "The Illager Librarian",
+   "desc": "It carries the raid's books, and it drops books, paper and emeralds when it stops carrying them."
+  },
+  {
+   "id": "kill:illagerinvasion:alchemist",
+   "title": "Bad Potions, Thrown Hard",
+   "desc": "The potion-throwing raider - the mod's Berserking effect exists for it - and it drops glass bottles, gunpowder and emeralds."
+  },
+  {
+   "id": "structure:illagerinvasion:labyrinth",
+   "title": "Buried Maze",
+   "desc": "A seven-piece maze buried forty blocks down under forests, taigas, jungles and savannas, with terrain adaptation bury and no spawn overrides of its own."
+  },
+  {
+   "id": "illagerinvasion:lost_candle",
+   "title": "It Tells You What Is Near",
+   "desc": "Found only in the labyrinth's map chest, alongside a compass, a clock and a map; held, it names what it senses nearby."
+  },
+  {
+   "id": "kill:illagerinvasion:invoker",
+   "title": "The Mansion's Real Owner",
+   "desc": "The mod rewrites fourteen woodland mansion room templates to place an Invoker; it conjures walls of fangs, teleports, and is immune to fall damage."
+  },
+  {
+   "id": "kill:illagerinvasion:surrendered",
+   "title": "Not Vexes Any More",
+   "desc": "The Invoker's summon goal calls Surrendered instead of vexes - drowned illager spirits that charge you and track whoever raised them."
+  },
+  {
+   "id": "illagerinvasion:primal_essence",
+   "title": "What the Invoker Was Made Of",
+   "desc": "The Invoker's only unique drop and the single ingredient that gates the Imbuing Table."
+  },
+  {
+   "id": "illagerinvasion:imbuing_table",
+   "title": "Push an Enchantment Past Max",
+   "desc": "Copper blocks, dark oak, paper, an experience bottle and Primal Essence; it takes a maxed enchanted book and pushes that enchantment one level beyond the vanilla cap."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "illagerinvasion:platinum_sheet",
+   "members": [
+    "illagerinvasion:platinum_chunk",
+    "illagerinvasion:platinum_infused_hatchet",
+    "illagerinvasion:unusual_dust",
+    "illagerinvasion:illusionary_dust",
+    "illagerinvasion:primal_essence",
+    "illagerinvasion:hallowed_gem",
+    "illagerinvasion:horn_of_sight",
+    "illagerinvasion:lost_candle",
+    "illagerinvasion:imbuing_table"
+   ]
+  }
+ ],
+ "notes": "Item set = 24 stems of assets/illagerinvasion/models/item/*.json intersected with item.illagerinvasion.* / block.illagerinvasion.* keys = 23; the one model with no lang key of its own is covered by item.illagerinvasion.lost_candle.foundNearby, a message string, not an item. block.illagerinvasion.magic_fire has a blockstate but NO models/item entry and NO item lang key, so it is a block with no item and is correctly outside the 23 - this is the *_wall_torch case the brief warns about. ENTITY VERIFICATION - 11 entity.illagerinvasion.* lang keys and ALL ELEVEN are real: every one has both a loot table under data/illagerinvasion/loot_tables/entities/ and a <name>_spawn_egg item. There are no projectile or body-part entity keys in this jar at all (InvokerFangs and Hatchet are entity classes but carry no entity.illagerinvasion.* lang key, so they never entered the candidate set). Spawn proof beyond the loot tables, per mob: eight of them (alchemist, archivist, basher, inquisitor, marauder, necromancer, provoker, sorcerer) are listed in data/minecraft/tags/entity_types/raiders.json, so they arrive in ordinary raids; the same eight plus the structures place them via data/illagerinvasion/structures/mobs/<name>.nbt mob templates. illagerinvasion:firecaller is placed by data/illagerinvasion/structures/mobs/firecaller.nbt inside firecaller_hut. illagerinvasion:invoker is placed by the mod's WoodlandMansionPieceMixin together with fourteen OVERRIDDEN vanilla templates the jar ships at data/minecraft/structures/woodland_mansion/*.nbt, each carrying an 'invoker' structure-block metadata marker - that is how a mansion gets one. illagerinvasion:surrendered is summoned by Invoker$SummonVexGoal, which is why it sits directly after the Invoker on the spine. Structures verified from the five files in data/illagerinvasion/worldgen/structure/, each with a structure_set and a has_structure/* biome tag: sorcerer_hut (dark_forest, spacing 18), illusioner_tower (taiga/old growth/dark forest/swamp), illager_fort (#is_taiga + snowy_plains, frequency 0.2), firecaller_hut (#is_badlands), labyrinth (#is_taiga/#is_jungle/#is_forest/#is_savanna, start_height -40, terrain_adaptation bury, custom type illagerinvasion:labyrinth). Chest contents quoted from loot_tables/chests/*.json. Recipe graph read from the four files in data/illagerinvasion/recipes/: platinum_sheet <- 4x platinum_chunk; hallowed_gem <- 4 amethyst_shard + 2 unusual_dust + 2 illusionary_dust + diamond; horn_of_sight <- goat_horn + hallowed_gem + 3 gold_ingot; imbuing_table <- 4 copper_block + dark_oak_log + paper + experience_bottle + primal_essence. The mod's only four advancements are recipe unlocks for exactly those four items, and they confirm the same order. platinum_sheet is a smithing trim material - data/minecraft/tags/items/trim_materials.json lists it and the lang file carries trim_material.illagerinvasion.platinum plus four effect strings. CONSENSUS CONFLICT (moddb): moddb lists five ids at 3 packs each - platinum_infused_hatchet (0.0), primal_essence (0.25), hallowed_gem (0.5), imbuing_table (0.75), horn_of_sight (1.0). The recipe graph disagrees with that ordering on two counts and was preferred: hallowed_gem must precede horn_of_sight because it is an ingredient of it, and primal_essence must precede imbuing_table for the same reason, so both pairs are adjacent here in graph order rather than consensus order. platinum_infused_hatchet is kept at consensus position 0-ish (step 10) because it is a Marauder drop and the Marauder is one of the earliest raiders. ITS PROOF IS UNUSUAL AND WORTH STATING: it has no recipe and appears in no loot table, but data/illagerinvasion/structures/mobs/marauder.nbt places an illagerinvasion:marauder whose HandItems contains illagerinvasion:platinum_infused_hatchet with a HandDropChances tag, so it is an equipment drop, not a table drop. DROPPED, no obtainability proof: illagerinvasion:magical_fire_charge - a registered item (string in ModRegistry.class) with a model and a lang key, but NO recipe, NO loot table, and no reference from any other class except the data-generator providers; nothing in the jar can give it to a player. ALSO DROPPED: the twelve *_spawn_egg items (the eleven mod mobs plus illagerinvasion:illusioner_spawn_egg, which spawns the vanilla Illusioner) - none has a recipe or a loot entry, so all are creative-only. No dimensions: data/illagerinvasion/dimension/ does not exist. Requires puzzleslib; the numismatic-overhaul entity tag in the jar is optional compat and was not used as spawn proof."
+}

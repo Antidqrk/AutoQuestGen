@@ -1,0 +1,166 @@
+{
+ "mod": "arsdelight",
+ "verified_against": "arsdelight-1.2.2.jar",
+ "item_count_in_jar": 79,
+ "parent_mod": "ars_nouveau",
+ "chain": [
+  {
+   "id": "arsdelight:enchanters_knife",
+   "title": "A Knife Worth Enchanting",
+   "desc": "Enchanting Apparatus: a Farmer's Delight diamond knife, a diamond, a gold block and a source block. It is the only cutting-board knife in the ecosystem that never wears out."
+  },
+  {
+   "id": "arsdelight:flourishing_bark",
+   "title": "Bark From A Living Tree",
+   "desc": "Axe an archwood log on a cutting board. Each of the four Ars Nouveau archwoods gives its own bark, and bark is the reagent that decides what a jam does."
+  },
+  {
+   "id": "arsdelight:source_berry_jam",
+   "title": "Preserving The Bush",
+   "desc": "Source berries cooked down with sugar in a bottle. The first thing you can do with an Ars Nouveau berry bush other than eat it raw."
+  },
+  {
+   "id": "arsdelight:source_berry_crate",
+   "title": "Berries By The Crate",
+   "desc": "Nine source berry bushes packed away. It unpacks back to bushes, so it doubles as compact seed storage for a magic berry farm."
+  },
+  {
+   "id": "arsdelight:mendosteen_crate",
+   "title": "Crating The Healing Fruit",
+   "desc": "Ars Nouveau's magic fruits have no storage form. This packs mendosteen pods nine at a time and unpacks them again."
+  },
+  {
+   "id": "arsdelight:activated_mendosteen_jam",
+   "title": "Jam That Still Heals",
+   "desc": "Cooking Pot: a mendosteen pod, cascading bark, a bottle and sugar. Cascading bark keeps the pod's regeneration effect alive through the boil - the wrong bark neutralises it instead."
+  },
+  {
+   "id": "arsdelight:neutralized_bombegrante_jam",
+   "title": "Jam That Does Not Explode",
+   "desc": "The same recipe with the wrong bark on purpose. Bombegranate normally detonates; neutralised, it is just very good jam."
+  },
+  {
+   "id": "arsdelight:wilden_meat",
+   "title": "Butchering The Woods",
+   "desc": "Wilden Hunters drop meat through data/arsdelight/loot_modifiers/scavenge_wilden_hunter_meat.json. The Wilden are Ars Nouveau's only real hostile faction and now they are also livestock."
+  },
+  {
+   "id": "arsdelight:wilden_meat_slice",
+   "title": "Portioned",
+   "desc": "Knife the meat on a cutting board. Slices cook faster and feed the skewer and stew recipes."
+  },
+  {
+   "id": "arsdelight:grilled_wilden_skewer",
+   "title": "Wilden On A Stick",
+   "desc": "Skewered wilden meat over a campfire. The first genuinely good food this mod gives you."
+  },
+  {
+   "id": "arsdelight:wilden_spike_powder",
+   "title": "Grinding The Spikes",
+   "desc": "Wilden spikes milled into powder. A seasoning that turns a plain skewer into the chimera line's base ingredient."
+  },
+  {
+   "id": "arsdelight:wilden_sauce",
+   "title": "The Sauce Everything Uses",
+   "desc": "Wilden trimmings reduced in the Cooking Pot. It appears in the pork, steak, mutton and chicken recipes of all five fruit families."
+  },
+  {
+   "id": "arsdelight:chimera_meat",
+   "title": "After The Chimera",
+   "desc": "The Wilden Chimera drops meat through data/arsdelight/loot_modifiers/scavenge_chimera_meat.json. Ars Nouveau's boss is now a butchery quest."
+  },
+  {
+   "id": "arsdelight:chimera_horn",
+   "title": "The Horn Off The Boss",
+   "desc": "Also a Chimera drop. Every Hornbeer in the mod - five of them, one per fruit - needs one, so the boss is a repeatable ingredient."
+  },
+  {
+   "id": "arsdelight:grilled_chimera_meat",
+   "title": "Boss, Grilled",
+   "desc": "Chimera meat over heat. The best raw food value in the Ars ecosystem."
+  },
+  {
+   "id": "arsdelight:honey_glazed_chimera",
+   "title": "Glazed And Plated",
+   "desc": "The Chimera worked into a full block-sized meal that feeds a table rather than a player."
+  },
+  {
+   "id": "arsdelight:horn_roll",
+   "title": "Baking With A Trophy",
+   "desc": "Chimera horn powder folded into dough. Ars Nouveau gives the horn one crafting use; this gives it several."
+  },
+  {
+   "id": "arsdelight:bastion_hornbeer",
+   "title": "Brewed On A Boss Horn",
+   "desc": "Cooking Pot: a bastion pod, magebloom, a source berry bush, chimera horn and flourishing bark. Hornbeers are the mod's top drinks and each needs a Chimera kill."
+  },
+  {
+   "id": "arsdelight:arch_sauce",
+   "title": "Four Barks, One Pot",
+   "desc": "Blazing, cascading, flourishing and vexing bark reduced together. It needs all four archwood species, which means a complete Ars Nouveau tree farm."
+  },
+  {
+   "id": "arsdelight:arch_soup",
+   "title": "The Whole Grove In A Bowl",
+   "desc": "Arch sauce finished into soup. The completion dish for anyone who planted every archwood."
+  },
+  {
+   "id": "arsdelight:unstable_cocktail",
+   "title": "Drinking Something You Should Not",
+   "desc": "The Unstable Cocktail is the joke at the end of the mod, and it does exactly what its name promises."
+  },
+  {
+   "id": "arsdelight:archwood_cabinet",
+   "title": "Storage Made Of Magic Wood",
+   "desc": "Archwood slab and trapdoor. A Farmer's Delight cabinet in the one wood Farmer's Delight has never supported."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "arsdelight:source_berry_pie_slice",
+   "members": [
+    "arsdelight:bastion_pie_slice",
+    "arsdelight:bombegrante_pie_slice",
+    "arsdelight:flashpine_pie_slice",
+    "arsdelight:frostaya_pie_slice",
+    "arsdelight:mendosteen_pie_slice",
+    "arsdelight:bastion_pie",
+    "arsdelight:bombegrante_pie",
+    "arsdelight:flashpine_pie",
+    "arsdelight:frostaya_pie",
+    "arsdelight:mendosteen_pie"
+   ]
+  },
+  {
+   "hub": "arsdelight:source_berry_tea",
+   "members": [
+    "arsdelight:bastion_tea",
+    "arsdelight:bombegrante_tea",
+    "arsdelight:flashpine_tea",
+    "arsdelight:frostaya_tea",
+    "arsdelight:mendosteen_tea",
+    "arsdelight:bombegrante_hornbeer",
+    "arsdelight:flashpine_hornbeer",
+    "arsdelight:frostaya_hornbeer",
+    "arsdelight:mendosteen_hornbeer",
+    "arsdelight:source_berry_hornbeer"
+   ]
+  },
+  {
+   "hub": "arsdelight:source_berry_crate",
+   "members": [
+    "arsdelight:bastion_crate",
+    "arsdelight:bombegrante_crate",
+    "arsdelight:flashpine_crate",
+    "arsdelight:frostaya_crate",
+    "arsdelight:source_berry_jelly",
+    "arsdelight:bastion_jelly",
+    "arsdelight:bombegrante_jelly",
+    "arsdelight:flashpine_jelly",
+    "arsdelight:frostaya_jelly",
+    "arsdelight:mendosteen_jelly"
+   ]
+  }
+ ],
+ "notes": "All 79 ids resolve as assets/arsdelight/models/item/<id>.json intersected with item./block. lang keys, with zero models_only and zero lang_only entries - an unusually clean jar. Ordering read from data/arsdelight/recipes/*.json: farmersdelight:cutting, farmersdelight:cooking and ars_nouveau:enchanting_apparatus. The mod's real mechanic is the bark pairing: each of the four archwood barks activates or neutralises a different magic fruit's effect when cooked into jam, which is why flourishing/cascading/blazing/vexing bark come before the jams in the chain. Mob drops verified in data/arsdelight/loot_modifiers/: scavenge_wilden_hunter_meat, scavenge_chimera_meat and scavenge_chimera_horn. Chimera horn is required by all six Hornbeers, so the Wilden Chimera boss is a repeatable ingredient rather than a one-off. arsdelight:flashpine_crate packs ars_elemental:flashpine_pod, so the flashpine family only exists when Ars Elemental is also installed. Parent items this addon assumes you already have: ars_nouveau:source_berry_bush, ars_nouveau:mendosteen_pod, ars_nouveau:bastion_pod, ars_nouveau:bombegranate_pod, ars_nouveau:frostaya_pod, ars_nouveau:magebloom, the four ars_nouveau archwood logs, an Enchanting Apparatus, a defeated Wilden Chimera, farmersdelight:cooking_pot, farmersdelight:cutting_board, farmersdelight:diamond_knife."
+}

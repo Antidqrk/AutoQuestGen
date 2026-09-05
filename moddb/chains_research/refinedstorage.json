@@ -1,0 +1,170 @@
+{
+ "mod": "refinedstorage",
+ "verified_against": "refinedstorage-1.12.4.jar",
+ "item_count_in_jar": 91,
+ "chain": [
+  {
+   "id": "refinedstorage:quartz_enriched_iron",
+   "title": "Iron Laced With Quartz",
+   "desc": "Craft quartz enriched iron from iron ingots and nether quartz; it is the base metal of every Refined Storage component."
+  },
+  {
+   "id": "refinedstorage:silicon",
+   "title": "Sand Of Pure Thought",
+   "desc": "Smelt nether quartz into silicon, the wafer every processor is printed on."
+  },
+  {
+   "id": "refinedstorage:processor_binding",
+   "title": "Slime And Sinew",
+   "desc": "Bind slimeballs with string to make the processor binding that holds a raw circuit together."
+  },
+  {
+   "id": "refinedstorage:basic_processor",
+   "title": "The First Circuit Fires",
+   "desc": "Combine silicon, iron, redstone and a processor binding into a raw basic processor, then smelt it into the finished chip."
+  },
+  {
+   "id": "refinedstorage:machine_casing",
+   "title": "A Shell Worth Building In",
+   "desc": "Ring stone with quartz enriched iron to form the machine casing that houses nearly every network block."
+  },
+  {
+   "id": "refinedstorage:improved_processor",
+   "title": "Gilded Logic",
+   "desc": "Swap the iron for gold to print an improved processor, the mid-tier chip used by grids and upgrades."
+  },
+  {
+   "id": "refinedstorage:construction_core",
+   "title": "The Mind That Places",
+   "desc": "Mix a basic processor with glowstone dust to make the construction core, the half of the network that puts things down."
+  },
+  {
+   "id": "refinedstorage:destruction_core",
+   "title": "The Mind That Breaks",
+   "desc": "Mix a basic processor with nether quartz to make the destruction core, the half of the network that takes things apart."
+  },
+  {
+   "id": "refinedstorage:advanced_processor",
+   "title": "Diamond-Cut Reasoning",
+   "desc": "Print a raw advanced processor with a diamond and smelt it; controllers, disk drives and crafters all demand one."
+  },
+  {
+   "id": "refinedstorage:controller",
+   "title": "The Network Draws Breath",
+   "desc": "Build the controller from advanced processors, silicon and a machine casing. Everything downstream needs its power."
+  },
+  {
+   "id": "refinedstorage:cable",
+   "title": "Threading The Network",
+   "desc": "Craft cable from quartz enriched iron, redstone and glass to carry the network signal between blocks."
+  },
+  {
+   "id": "refinedstorage:grid",
+   "title": "A Window Into Everything",
+   "desc": "The grid pairs a construction and destruction core with an improved processor, giving you a searchable view of the whole network."
+  },
+  {
+   "id": "refinedstorage:storage_housing",
+   "title": "An Empty Vessel",
+   "desc": "Craft the storage housing that any storage part can be slotted into to become a finished disk."
+  },
+  {
+   "id": "refinedstorage:1k_storage_part",
+   "title": "One Thousand Promises",
+   "desc": "Silicon, glass, redstone and quartz enriched iron form the 1k storage part, the first rung of the disk ladder."
+  },
+  {
+   "id": "refinedstorage:1k_storage_disk",
+   "title": "First Platter Spun Up",
+   "desc": "Seat a 1k storage part into a storage housing to make a working 1k disk holding one thousand items."
+  },
+  {
+   "id": "refinedstorage:disk_drive",
+   "title": "The Spinning Library",
+   "desc": "Craft the disk drive from a chest, machine casing and advanced processors; it is where the network's disks actually live."
+  },
+  {
+   "id": "refinedstorage:importer",
+   "title": "Pulling Things Inward",
+   "desc": "Cable, a destruction core and an improved processor make the importer, which sucks items out of adjacent inventories."
+  },
+  {
+   "id": "refinedstorage:exporter",
+   "title": "Pushing Things Outward",
+   "desc": "The mirror of the importer, built with a construction core, feeding items back out to machines and chests."
+  },
+  {
+   "id": "refinedstorage:external_storage",
+   "title": "Annexing The Chests",
+   "desc": "External storage exposes an entire adjacent inventory to the network without moving a single item into a disk."
+  },
+  {
+   "id": "refinedstorage:crafting_grid",
+   "title": "Craft Without Carrying",
+   "desc": "Upgrade a grid into a crafting grid so recipes pull their ingredients straight from network storage."
+  },
+  {
+   "id": "refinedstorage:pattern_grid",
+   "title": "Blueprints On Glass",
+   "desc": "The pattern grid writes recipes onto patterns, the instruction sheets autocrafting runs on."
+  },
+  {
+   "id": "refinedstorage:crafter",
+   "title": "Hands That Never Tire",
+   "desc": "Load patterns into a crafter and the network builds recipes on demand instead of waiting on you."
+  },
+  {
+   "id": "refinedstorage:wireless_transmitter",
+   "title": "Casting The Signal Out",
+   "desc": "An ender pearl, advanced processor and machine casing broadcast the network beyond its cables."
+  },
+  {
+   "id": "refinedstorage:wireless_grid",
+   "title": "Your Storage, Untethered",
+   "desc": "Bind a wireless grid to a transmitter and carry the entire network in one inventory slot."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "refinedstorage:disk_drive",
+   "members": [
+    "refinedstorage:1k_storage_part",
+    "refinedstorage:4k_storage_part",
+    "refinedstorage:16k_storage_part",
+    "refinedstorage:64k_storage_part",
+    "refinedstorage:4k_storage_disk",
+    "refinedstorage:16k_storage_disk",
+    "refinedstorage:64k_storage_disk",
+    "refinedstorage:64k_storage_block"
+   ]
+  },
+  {
+   "hub": "refinedstorage:fluid_grid",
+   "members": [
+    "refinedstorage:64k_fluid_storage_part",
+    "refinedstorage:256k_fluid_storage_part",
+    "refinedstorage:1024k_fluid_storage_part",
+    "refinedstorage:4096k_fluid_storage_part",
+    "refinedstorage:64k_fluid_storage_disk",
+    "refinedstorage:256k_fluid_storage_disk",
+    "refinedstorage:1024k_fluid_storage_disk",
+    "refinedstorage:4096k_fluid_storage_disk"
+   ]
+  },
+  {
+   "hub": "refinedstorage:upgrade",
+   "members": [
+    "refinedstorage:speed_upgrade",
+    "refinedstorage:stack_upgrade",
+    "refinedstorage:range_upgrade",
+    "refinedstorage:crafting_upgrade",
+    "refinedstorage:regulator_upgrade",
+    "refinedstorage:silk_touch_upgrade",
+    "refinedstorage:fortune_1_upgrade",
+    "refinedstorage:fortune_2_upgrade",
+    "refinedstorage:fortune_3_upgrade"
+   ]
+  }
+ ],
+ "notes": "Chain derived from data/refinedstorage/recipes/**. Verified dependency spine: iron+quartz -> quartz_enriched_iron; quartz -(smelt)-> silicon; slimeball+string -> processor_binding; silicon+binding+iron/gold/diamond -> raw_{basic,improved,advanced}_processor -(smelt)-> processor; stone+quartz_enriched_iron -> machine_casing; basic_processor+glowstone/quartz -> construction_core/destruction_core; controller needs advanced_processor+machine_casing+silicon. Storage ladder confirmed as 1k -> 4k (basic_processor) -> 16k (improved_processor) -> 64k (advanced_processor); fluid ladder 64k -> 256k -> 1024k -> 4096k. Disks are part+storage_housing. Autocrafting spine confirmed: pattern (glass+redstone+qei) -> pattern_grid -> crafter (advanced_processor + both cores) -> crafter_manager/crafting_monitor. Wireless line confirmed: wireless_grid = grid + advanced_processor + ender pearl, and wireless_transmitter is the paired network block. MODDB AGREEMENT: quartz_enriched_iron first (pos 0.0), machine_casing 0.073, basic_processor 0.083, controller 0.12, disk_drive 0.397, crafting_grid 0.528 -- all match the recipe order used here. MODDB CONFLICTS: (1) moddb ranks silicon at 0.207, i.e. AFTER machine_casing and basic_processor, but the recipe graph requires silicon before any processor exists -- recipe order used. (2) moddb ranks importer 0.159 / exporter 0.247 before grid 0.456 and disk_drive 0.397; published packs gate these cheap I/O blocks early, but they are useless before a controller and drive exist, so they are placed after the drive here. (3) moddb ranks external_storage and portable_grid at 0.306, before grid -- both literally require a grid/controller in their recipe, so recipe order was used. COLOR VARIANTS: the jar ships 16 dyed recipes for controller/grid/crafter/etc., but only the base ids carry lang keys, so no dyed id is used anywhere in this file. silk_touch_upgrade and fortune_*_upgrade use the custom recipe type refinedstorage:upgrade_with_enchanted_book (enchanted book + upgrade), not a vanilla shaped recipe. ID VERIFICATION: every id in this file was set-membership-checked against the jar; nothing was dropped."
+}

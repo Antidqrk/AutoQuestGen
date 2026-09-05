@@ -1,0 +1,49 @@
+{
+  "mod": "bettermineshafts",
+  "verified_against": "YungsBetterMineshafts-1.20-Forge-4.0.4.jar",
+  "item_count_in_jar": 0,
+  "chain": [
+    {
+      "id": "structure:bettermineshafts:mineshaft_oak",
+      "title": "The Shaft Under the Plains",
+      "desc": "The default oak mineshaft, generating under plains, sunflower plains, swamp and meadow at the underground_structures step."
+    },
+    {
+      "id": "structure:bettermineshafts:mineshaft_spruce",
+      "title": "Timbers in the Taiga",
+      "desc": "The spruce variant, bound to #minecraft:is_taiga. A separate mineshaft_spruce_snowy covers snowy taiga, snowy plains, snowy slopes and jagged peaks."
+    },
+    {
+      "id": "structure:bettermineshafts:mineshaft_desert",
+      "title": "Buried in Sand",
+      "desc": "The desert mineshaft, placed under minecraft:desert and the modded desert tags. Its sibling mineshaft_red_desert covers badlands."
+    },
+    {
+      "id": "structure:bettermineshafts:mineshaft_mesa",
+      "title": "Shafts in the Badlands",
+      "desc": "The mesa variant, bound to #minecraft:is_badlands and the forge/c mesa tags."
+    },
+    {
+      "id": "structure:bettermineshafts:mineshaft_jungle",
+      "title": "Overgrown Rails",
+      "desc": "The jungle mineshaft, on #minecraft:is_jungle."
+    },
+    {
+      "id": "structure:bettermineshafts:mineshaft_lush",
+      "title": "Rails Through the Moss",
+      "desc": "The one variant restricted to a single biome: minecraft:lush_caves and nothing else."
+    },
+    {
+      "id": "structure:bettermineshafts:mineshaft_dripstone",
+      "title": "Pointed Ceilings",
+      "desc": "Likewise restricted to minecraft:dripstone_caves alone."
+    },
+    {
+      "id": "structure:bettermineshafts:mineshaft_mushroom",
+      "title": "The Shaft Nobody Dug",
+      "desc": "The rarest of the thirteen: minecraft:mushroom_fields plus the optional forge and c mushroom tags."
+    }
+  ],
+  "collections": [],
+  "notes": "YUNG'S BETTER MINESHAFTS ADDS NO ITEMS AND NO LOOT TABLES OF ITS OWN. THE MOD ID IS bettermineshafts, NOT yungsbettermineshafts (META-INF/mods.toml: modId bettermineshafts, version 1.20-Forge-4.0.4, minecraft [1.20,1.21), forge [46.0.2,), no fabric.mod.json). assets/bettermineshafts/ has no models/item, no blockstates and no item./block. lang keys, and data/bettermineshafts/ has NO loot_tables folder at all - zero tables. LOOT EVIDENCE IS THEREFORE NEGATIVE AND IS RECORDED AS SUCH: these thirteen are rebuilt vanilla mineshafts, and the chests they place carry vanilla's own minecraft:chests/abandoned_mineshaft, which this jar neither ships nor overrides. They are still real destinations - a mineshaft is a loot place by definition and this mod reshapes every one in the world - but no entry above claims a mod chest, because there is none to claim. The jar also contains ZERO .nbt files: the structure type is bettermineshafts:mineshaft, a code-driven piece generator, not a jigsaw, so there is nothing for an nbt walk to read. CONTENT: 13 structures at data/bettermineshafts/worldgen/structure/*.json - mineshaft_acacia, mineshaft_desert, mineshaft_dripstone, mineshaft_ice, mineshaft_jungle, mineshaft_lush, mineshaft_mesa, mineshaft_mushroom, mineshaft_oak, mineshaft_overgrown, mineshaft_red_desert, mineshaft_spruce and mineshaft_spruce_snowy. All thirteen are verified to exist; 8 are chained. THE 5 NOT CHAINED - mineshaft_acacia (savanna), mineshaft_ice (ice spikes and frozen peaks), mineshaft_overgrown (any forest), mineshaft_red_desert (badlands) and mineshaft_spruce_snowy (snowy taiga) - are biome re-skins of ones already in the chain and would be filler; mineshaft_spruce_snowy and mineshaft_red_desert are named in their siblings' descriptions instead. Biome placement above is read from each structure's biomes field, which is worth noting for a different reason: those lists carry optional entries for terralith:, byg:, forge: and c: biomes, so this mod is already written to cooperate with the biome mods in this slice. No kill: entries (no entity lang keys), no dim: entries (no dimension files), and collections is empty because there are no items to put in a wheel. ID FORM: 'structure:' + fully namespaced; every id is a real file under data/bettermineshafts/worldgen/structure/. Requires yungsapi. The jar also ships data/morevillagers/tags, which is compat, not content."
+}

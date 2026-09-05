@@ -1,0 +1,205 @@
+{
+ "mod": "born_in_chaos_v1",
+ "verified_against": "born_in_chaos_[Forge]1.20.1_1.7.5.jar",
+ "item_count_in_jar": 351,
+ "chain": [
+  {
+   "id": "born_in_chaos_v1:monster_skin",
+   "title": "Skinned in the Dark",
+   "desc": "Torn from Dread Hounds, their Leader and the Nightmare Stalker; it is the leather of this mod and the second half of every Dark Metal Armor Plate."
+  },
+  {
+   "id": "kill:born_in_chaos_v1:dread_hound",
+   "title": "They Hunt in Fives",
+   "desc": "Dread Hounds spawn three to five at a time, at weight 15 in any biome, and they are the first mob here that can actually kill you."
+  },
+  {
+   "id": "born_in_chaos_v1:pieceofdarkmetal",
+   "title": "Metal That Should Not Exist",
+   "desc": "Mined from a Dark Metal Deposit or torn off Barrel Zombies, Bonescallers, Door Knights and Fallen Chaos Knights; holding one is the mod's Dark Metallurgy advancement."
+  },
+  {
+   "id": "born_in_chaos_v1:dark_metal_ingot",
+   "title": "Dark Forging",
+   "desc": "Pressed from Dark Metal Nuggets; every weapon, plate and block in the mod's metal tree runs through it."
+  },
+  {
+   "id": "born_in_chaos_v1:bone_handle",
+   "title": "Every Weapon Needs a Grip",
+   "desc": "The universal haft - not one dark metal weapon in the mod is craftable without it."
+  },
+  {
+   "id": "born_in_chaos_v1:sharpened_dark_metal_sword",
+   "title": "Dark Blacksmith",
+   "desc": "A Bone Handle and Dark Metal Ingots; the simplest of the mod's weapons and the one that unlocks the rest of the smithing tree."
+  },
+  {
+   "id": "born_in_chaos_v1:armor_plate_from_dark_metal",
+   "title": "Plate Beaten Over Hide",
+   "desc": "Dark Metal Ingots wrapped in Monster Skin; it is the smithing-template ingredient for the whole Dark Metal armour set."
+  },
+  {
+   "id": "kill:born_in_chaos_v1:fallen_chaos_knight",
+   "title": "The Knight That Fell First",
+   "desc": "A weight-5 rarity that carries the Dark Upgrade smithing template as well as Dark Metal and a Seed of Chaos."
+  },
+  {
+   "id": "born_in_chaos_v1:dark_metal_armor_helmet",
+   "title": "Chaos Knight",
+   "desc": "A smithing transform: a netherite helmet, a Dark Metal Armor Plate and the Fallen Chaos Knight's Dark Upgrade. The full set is the mod's endgame armour."
+  },
+  {
+   "id": "born_in_chaos_v1:darkwarblade",
+   "title": "My Size!",
+   "desc": "A Bone Handle and solid Dark Metal Blocks; the heaviest thing in the mod's weapon rack and the one its own advancement singles out."
+  },
+  {
+   "id": "kill:born_in_chaos_v1:bonescaller",
+   "title": "Junior Summoner",
+   "desc": "A skeletal caster that raises minions; it drops a Shattered Skull, an Orb of the Summoner and the Staff of Magic Arrows."
+  },
+  {
+   "id": "born_in_chaos_v1:bonescaller_staff",
+   "title": "Compact Necromancy",
+   "desc": "A Bone Handle, Dark Metal Nuggets, a Shattered Skull and the Orb of the Summoner; it raises your own skeletons instead of somebody else's."
+  },
+  {
+   "id": "kill:born_in_chaos_v1:supreme_bonescaller_stage_2",
+   "title": "Senior Summoner",
+   "desc": "The rarest natural spawn in the mod at weight 1; the first form only converts when beaten, and this second form is the one that actually dies and drops."
+  },
+  {
+   "id": "born_in_chaos_v1:bone_heart",
+   "title": "A Heart Made of Bones",
+   "desc": "Four bones around a Fused Bone, which the split halves of the Siamese Skeletons leave behind; it is the core of the Dark Atrium."
+  },
+  {
+   "id": "kill:born_in_chaos_v1:lifestealer_true_form",
+   "title": "Horror Under the Mantle",
+   "desc": "The Lifestealer hides as something harmless and only its revealed true form carries a loot table - and the Lifestealer Bone with it."
+  },
+  {
+   "id": "born_in_chaos_v1:dark_atrium",
+   "title": "Protected by Darkness",
+   "desc": "A Bone Heart bound with Lifestealer Bone; the mod's own advancement treats crafting it as the reward for killing the Lifestealer."
+  },
+  {
+   "id": "kill:born_in_chaos_v1:nightmare_stalker",
+   "title": "Fighting Nightmares",
+   "desc": "A weight-4 horror that drops Monster Skin, a Nightmare Claw and its own Skull - the three things the Nightmare set is built from."
+  },
+  {
+   "id": "born_in_chaos_v1:nightmare_mantleofthe_night_helmet",
+   "title": "Unity With Darkness",
+   "desc": "The Nightmare Mask - Dark Metal Nuggets, Monster Skin and the Nightmare Stalker Skull. The full Mantle of the Night is the set the advancement wants."
+  },
+  {
+   "id": "kill:born_in_chaos_v1:mother_spider",
+   "title": "Arachnophobe's Nightmare",
+   "desc": "The Spiders Mother spawns at weight 15 in any biome and is the only source of the Spider Mandible."
+  },
+  {
+   "id": "kill:born_in_chaos_v1:firelight",
+   "title": "Lights in the Crimson",
+   "desc": "Firelights drift through crimson forests and nether wastes one to three at a time; they and the Bone Imps are the mod's Nether tier."
+  },
+  {
+   "id": "born_in_chaos_v1:fire_dust",
+   "title": "Fire Light Dust",
+   "desc": "Left by Firelights, Bone Imps and Seared Spirits - the Nether-side reagent of the mod's alchemy."
+  },
+  {
+   "id": "kill:born_in_chaos_v1:sir_pumpkinhead",
+   "title": "Pumpkin Sir",
+   "desc": "A weight-4 headless horseman; beating him is what the mod's own tree makes the gate to the whole Transmutalogy branch."
+  },
+  {
+   "id": "born_in_chaos_v1:transmuting_elixir",
+   "title": "Transmutalogy",
+   "desc": "Nine ingredients - a sculk catalyst, a Chaos Component brewed in a stand, chorus fruit, blaze powder, diamond, scute, Holiday Candy, Intoxicating Decoction and a torchflower."
+  },
+  {
+   "id": "kill:born_in_chaos_v1:lord_pumpkinhead_head",
+   "title": "Last Night",
+   "desc": "The mod's final fight. Lord Pumpkinhead rides a Felsteed and only the severed head carries the loot table - the Hat, the Pumpkin Pistol and a Bag of Candy."
+  },
+  {
+   "id": "born_in_chaos_v1:lord_pumpkinheads_hat_helmet",
+   "title": "Infernal Musketeer",
+   "desc": "The Lord's own hat, dropped by nothing else in the jar, and the last of the four hats the Hatman advancement asks for."
+  },
+  {
+   "id": "kill:born_in_chaos_v1:krampus",
+   "title": "Wrong Santa",
+   "desc": "Do enough mischief and Krampus comes for you at weight 2; he and his Henchmen are the only source of the Permafrost Shard."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "born_in_chaos_v1:great_reaper_axe",
+   "members": [
+    "born_in_chaos_v1:darkwarblade",
+    "born_in_chaos_v1:nightmare_scythe",
+    "born_in_chaos_v1:frostbitten_blade",
+    "born_in_chaos_v1:dark_ritual_dagger",
+    "born_in_chaos_v1:intoxicating_dagger",
+    "born_in_chaos_v1:spiritual_sword",
+    "born_in_chaos_v1:sharpened_dark_metal_sword",
+    "born_in_chaos_v1:spider_bite_sword",
+    "born_in_chaos_v1:skullbreaker_hammer",
+    "born_in_chaos_v1:shell_mace"
+   ]
+  },
+  {
+   "hub": "born_in_chaos_v1:charmof_power",
+   "members": [
+    "born_in_chaos_v1:charmof_endurance",
+    "born_in_chaos_v1:charmof_fury",
+    "born_in_chaos_v1:charmof_resistance",
+    "born_in_chaos_v1:charmof_stealth"
+   ]
+  },
+  {
+   "hub": "born_in_chaos_v1:tombstone_orion",
+   "members": [
+    "born_in_chaos_v1:tombstone_2003wise",
+    "born_in_chaos_v1:tombstone_2_dling",
+    "born_in_chaos_v1:tombstone_carrion",
+    "born_in_chaos_v1:tombstone_d_4rkdevilx",
+    "born_in_chaos_v1:tombstone_dark_titan_066",
+    "born_in_chaos_v1:tombstone_derivas",
+    "born_in_chaos_v1:tombstone_euthymia",
+    "born_in_chaos_v1:tombstone_feral",
+    "born_in_chaos_v1:tombstone_fubuki_banzai",
+    "born_in_chaos_v1:tombstone_memesus",
+    "born_in_chaos_v1:tombstone_mike_rory",
+    "born_in_chaos_v1:tombstone_nino_4416",
+    "born_in_chaos_v1:tombstone_petasi"
+   ]
+  },
+  {
+   "hub": "born_in_chaos_v1:holiday_candy",
+   "members": [
+    "born_in_chaos_v1:caramel_pepper",
+    "born_in_chaos_v1:chocolate_heart",
+    "born_in_chaos_v1:coffee_candy",
+    "born_in_chaos_v1:gummy_vampire_teeth",
+    "born_in_chaos_v1:mint_candy",
+    "born_in_chaos_v1:eternal_candy",
+    "born_in_chaos_v1:magical_holiday_candy"
+   ]
+  },
+  {
+   "hub": "born_in_chaos_v1:missionary_hat_helmet",
+   "members": [
+    "born_in_chaos_v1:damned_demomans_hat_helmet",
+    "born_in_chaos_v1:lord_pumpkinheads_hat_helmet",
+    "born_in_chaos_v1:spiritual_guide_sombrero_helmet",
+    "born_in_chaos_v1:dark_metal_armor_helmet",
+    "born_in_chaos_v1:nightmare_mantleofthe_night_helmet",
+    "born_in_chaos_v1:spiny_shell_armor_helmet"
+   ]
+  }
+ ],
+ "notes": "Item set = 355 stems of assets/born_in_chaos_v1/models/item/*.json intersected with item.born_in_chaos_v1.* / block.born_in_chaos_v1.* keys = 351. ENTITY VERIFICATION - this is the mod where the traps are thickest: 86 entity.born_in_chaos_v1.* lang keys, and DISPLAY NAMES ARE NOT UNIQUE (six different keys all render 'Lord Pumpkinhead', three render 'Bonescaller', two each render 'Dread Hound', 'Skeleton Thrasher', 'Zombie Clown', 'Seared Spirit', 'Door Knight', 'Firelight', 'Decaying Zombie', 'Baby Skeleton', 'Baby Spider', 'Supreme Bonescaller', 'Lifestealer', 'Mr. Pumpkin', 'Phantom Creeper', 'Felsteed', 'Sir Pumpkinhead', 'Missionary'), so a name-based pick would land on the wrong EntityType constantly. THE PROOF ACTUALLY USED: data/born_in_chaos_v1/forge/biome_modifier/*.json - 49 files, 44 of which are forge:add_spawns modifiers naming exactly one born_in_chaos_v1 entity each with a weight and min/max count. That is the definitive natural-spawn set and every kill: step above is either in it or is the second stage of something in it. Per step: dread_hound (weight 15, 3-5, forge:any), fallen_chaos_knight (weight 5), bonescaller (weight 11), nightmare_stalker (weight 4), mother_spider (weight 15), firelight (weight 15, 1-3, crimson_forest + nether_wastes), sir_pumpkinhead (weight 4), krampus (weight 2) - all eight have their own biome modifier AND a loot table AND a spawn egg. TWO STEPS DELIBERATELY NAME A SECOND-STAGE ENTITY AND HERE IS WHY: born_in_chaos_v1:supreme_bonescaller has the biome modifier (weight 1) but NO loot table, while born_in_chaos_v1:supreme_bonescaller_stage_2 has the loot table and no modifier - the first form converts rather than dying, so the killable one is stage_2. Identically, born_in_chaos_v1:lifestealer has the modifier (weight 3) and no loot table while born_in_chaos_v1:lifestealer_true_form has the loot table - the disguise transforms before it can be killed. Same reasoning for born_in_chaos_v1:lord_pumpkinhead_head, which is the only one of the six 'Lord Pumpkinhead' keys with a loot table (it carries lord_pumpkinheads_hat_helmet, pumpkinhandgun and bagof_candy); born_in_chaos_v1:lord_pumpkinhead, lord_pumpkinhead_withouta_horse, lord_the_headless, lords_felsteed and riding_lords_felsteed are the mount/phase entities and none of them drops anything. TRAPS AVOIDED: entity.born_in_chaos_v1.minibosseswarning ('Something powerful is nearby') and entity.born_in_chaos_v1.stalkerwarning ('You feel like something is watching you') are MESSAGE STRINGS wearing entity lang keys - no loot, no egg, no data reference at all; born_in_chaos_v1:phantom_bomb_entity and born_in_chaos_v1:pumpkin_bomb are projectiles; the twelve *_not_despawn, *_controlled, *_minion and *_copy keys are duplicate EntityTypes with the same display name as their parent and were never used as kill targets. Also dropped as chain candidates: born_in_chaos_v1:all_charm and born_in_chaos_v1:hats - both are registered items with models and lang keys, but each appears ONLY as the display icon of an advancement (charm_collector and hatman) and has no recipe, no loot table and no other reference; born_in_chaos_v1:chaos_component, born_in_chaos_v1:fused_bone and born_in_chaos_v1:lord_pumpkinheads_empty_lamp appear in the jar only as recipe INGREDIENTS, never as a result - chaos_component is produced by a brewing-stand recipe registered in code (ChaosComponentCraftBrewingRecipe, alongside the four elixirs), fused_bone is a code-side drop from SiameseSkeletonsleftEntity/SiameseSkeletonsrightEntity, and lord_pumpkinheads_empty_lamp only comes back out of LordPumpkinheadsLampclicProcedure, so only the first two are treated as obtainable and none of the three is a chain step. Ordering follows the mod's own 62 advancements, whose criteria are all minecraft:impossible (MCreator code triggers) but whose PARENT links form a real tree: bornin_chaos -> dark_metallurgy -> dark_forging -> dark_blacksmith -> my_size -> squireofthe_dark_lord, with chaos_knight hanging off dark_forging; bornin_chaos -> junior_summoner -> {compact_necromancy, dismantledto_bones}; bornin_chaos -> horror_underthe_mantle -> {heart_thief, protectedby_darkness}; bornin_chaos -> fighting_nightmares -> unitywith_darknessachievement; bornin_chaos -> pumpkin_sir -> transmutalogy -> pumpkin_lord -> infernal_hatman -> hatman; bornin_chaos -> naughty_child -> wrong_santa. Recipe graph cross-checked from the 160 files in data/born_in_chaos_v1/recipes/. Wheel membership is taken from the mod's own collection advancements: charm_collector names exactly the five charms (all five drop from missioner/missionary_raider), bury_them_all names nineteen tombstones (thirteen picked to stay inside the 14 cap, each with its own blocks/tombstone_*.json loot table and its own grave_* structure), trickor_treat names the sweets, squireofthe_dark_lord names the dark metal weapons, hatman names the hats. CONSENSUS CONFLICT (moddb): moddb lists six ids at 3 packs each - monster_skin (0.0), armor_plate_from_dark_metal (0.2), nightmare_mantleofthe_night_helmet (0.4), fire_dust (0.6), dark_metal_ingot (0.8), bone_heart (1.0). All six are on the spine, but the recipe graph disagrees with the consensus ORDER in one place and was preferred: dark_metal_ingot is an INGREDIENT of armor_plate_from_dark_metal, so it cannot sit at 0.8 behind it; it is placed at step 4 and the plate at step 7. Structures: 31 files in data/born_in_chaos_v1/worldgen/structure/, nineteen of them grave_* / gravecarrionexe, one per tombstone, each pinned to a single biome (grave_orion is birch_forest, grave_nino_4416 is swamp, grave_the_gentleman_frog is mangrove_swamp, and so on). No structure: steps are used because the graves are one-block set dressing rather than places to explore, and because the tombstone wheel already covers them. No dimensions: data/born_in_chaos_v1/dimension/ does not exist. Requires geckolib; jei is an optional dependency."
+}

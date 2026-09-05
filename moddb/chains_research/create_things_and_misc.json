@@ -1,0 +1,223 @@
+{
+ "mod": "create_things_and_misc",
+ "verified_against": "create_misc_and_things_ 1.20.1_4.0A.jar",
+ "item_count_in_jar": 97,
+ "parent_mod": "create",
+ "chain": [
+  {
+   "id": "create_things_and_misc:rose_quartz_sheet",
+   "title": "Quartz Under the Press",
+   "desc": "Rose quartz pressed flat - the plate Create itself never added. Both of the mod's sequenced assemblies start from one of these, so nothing clever happens until you can press them in bulk."
+  },
+  {
+   "id": "create_things_and_misc:vibration_mechanism",
+   "title": "Listening Mechanism",
+   "desc": "A sequenced assembly on a rose quartz sheet: a deployer adds an amethyst shard, then a cogwheel, then redstone. The mod's own precision mechanism, and neither the radar nor the speaker exists without it."
+  },
+  {
+   "id": "create_things_and_misc:radar",
+   "title": "Sweeping the Horizon",
+   "desc": "Eight andesite alloy and a display board around the vibration mechanism. It watches the area and reports what it finds to the board, which makes it the mod's first genuinely automated sensor."
+  },
+  {
+   "id": "create_things_and_misc:brass_speaker",
+   "title": "Saying It Out Loud",
+   "desc": "Railway casings and filters around a vibration mechanism, two at a time. Its own GUI lets you type a message and clear it, so a station can finally announce itself."
+  },
+  {
+   "id": "create_things_and_misc:experience_sheet",
+   "title": "Experience, Flattened",
+   "desc": "One of Create's experience nuggets under the press. Worthless on its own and the only possible starting item for the mending rune."
+  },
+  {
+   "id": "create_things_and_misc:mending_rune",
+   "title": "Repair Without a Grindstone",
+   "desc": "A sequenced assembly from an experience sheet, deploying a rose quartz sheet and then experience onto it. Both of the mod's assemblies converge here, and it is the single most valuable thing it adds."
+  },
+  {
+   "id": "create_things_and_misc:empty_card",
+   "title": "Blank Stock",
+   "desc": "A copper sheet and a paper, shapeless. Nothing is written on it yet - that is what the inscriber is for."
+  },
+  {
+   "id": "create_things_and_misc:card_press",
+   "title": "The Card Inscriber",
+   "desc": "Brass sheets and casings around a mechanical press. Its GUI is labelled Card Inscriber with a single Inscribe button, and it is the only way to write anything onto a blank card."
+  },
+  {
+   "id": "create_things_and_misc:card_reader",
+   "title": "Checking the Card",
+   "desc": "Brass sheets around stone, redstone and dried kelp. Present a card to it and it emits a signal, which turns cards into keys and doors into locks."
+  },
+  {
+   "id": "create_things_and_misc:empty_ticket",
+   "title": "Punching a Ticket",
+   "desc": "Deploying shears onto paper. The train-station companion to the card - a blank waiting for a destination."
+  },
+  {
+   "id": "create_things_and_misc:sprinkler_head",
+   "title": "One Nozzle",
+   "desc": "Dried kelp over a copper ingot. Three of them go into the finished sprinkler, so make them before you make anything else in the irrigation line."
+  },
+  {
+   "id": "create_things_and_misc:sprinkler",
+   "title": "Watering the Field",
+   "desc": "Three sprinkler heads and a propeller over copper casings and a fluid tank. Feed it water and it soaks a radius of farmland without a single dispenser."
+  },
+  {
+   "id": "create_things_and_misc:glue_packaging",
+   "title": "A Tube for Glue",
+   "desc": "An iron sheet and an iron nugget. Fill it with 100 mB of the mod's slime fluid at a spout and it becomes one of Create's own Super Glue - which is the cheapest automated glue in any Create pack."
+  },
+  {
+   "id": "create_things_and_misc:sticky_launcher",
+   "title": "Throwing Things Upward",
+   "desc": "Item application: a copper block onto one of Create's stickers. It launches whatever lands on it, so belts can finally go straight up without a chute."
+  },
+  {
+   "id": "create_things_and_misc:brass_sticky_launcher",
+   "title": "The Stronger Throw",
+   "desc": "A brass block applied to the copper launcher. Same trick, longer arc, and the natural second half of any launcher quest."
+  },
+  {
+   "id": "create_things_and_misc:sticky_boots_boots",
+   "title": "Walking on Contraptions",
+   "desc": "Two stickers and two slime blocks. Wear them and you stop sliding off moving contraptions, which is worth more than it sounds on a train."
+  },
+  {
+   "id": "create_things_and_misc:spout_gun",
+   "title": "A Spout You Carry",
+   "desc": "Mechanical crafting a fluid tank, fluid pipes, copper sheets, a precision mechanism and one of Create's spouts. Fill it at a spout with water, lava, honey, chocolate or the mod's slime and it dispenses that fluid by hand."
+  },
+  {
+   "id": "create_things_and_misc:crushed_magma",
+   "title": "Magma Through the Wheels",
+   "desc": "Crushing a magma block gives two, sometimes three, plus a chance of Create's scoria. It exists so magma cream can be made industrially rather than farmed off slimes."
+  },
+  {
+   "id": "create_things_and_misc:slime_cake",
+   "title": "Slime on a Blaze Cake",
+   "desc": "Filling one of Create's blaze cake bases with 250 mB of the mod's own slime fluid. A blaze cake variant that Create never shipped."
+  },
+  {
+   "id": "create_things_and_misc:sturdy_sheet_block",
+   "title": "Sturdy, By the Block",
+   "desc": "Stonecut from Create's sturdy sheets. Structural rather than decorative - the train buffer and the balloon cannon are both built out of it."
+  },
+  {
+   "id": "create_things_and_misc:train_buffer",
+   "title": "The End of the Line",
+   "desc": "Two sturdy sheet blocks side by side, two at a time. The stop block every terminus wants and Steam 'n' Rails does not give you."
+  },
+  {
+   "id": "create_things_and_misc:blaze_ballon",
+   "title": "Hot Air, Literally",
+   "desc": "One of Create's white sails over a blaze burner. A lifting element for contraptions built out of the two things every Create player already has stacks of."
+  },
+  {
+   "id": "create_things_and_misc:blaze_balloon_fire",
+   "title": "Arming the Balloon",
+   "desc": "Mechanical crafting a blaze burner, metal girders, a white sail, iron and sturdy sheet blocks. The balloon's cannon, and the most expensive single item in the mod."
+  },
+  {
+   "id": "create_things_and_misc:magnifying_glass",
+   "title": "A Closer Look",
+   "desc": "An amethyst shard, a copper ingot and a stick on the diagonal. Cheap, early, and the one item here you can make in the first hour."
+  },
+  {
+   "id": "create_things_and_misc:neon_tube",
+   "title": "Cold Light",
+   "desc": "Glass above and below one of Create's electron tubes. A lighting element that reads as industrial rather than magical, and it places as a neon tube block."
+  },
+  {
+   "id": "create_things_and_misc:portable_whistle",
+   "title": "A Whistle in Your Pocket",
+   "desc": "Golden sheets over a copper and a gold ingot. Create's steam whistle is a block; this is the hand-held one, and it upgrades by smithing into a netherite version."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "create_things_and_misc:oak_sail",
+   "members": [
+    "create_things_and_misc:acacia_sail",
+    "create_things_and_misc:birch_sail",
+    "create_things_and_misc:spruce_sail",
+    "create_things_and_misc:jungle_sail",
+    "create_things_and_misc:dark_oak_sail",
+    "create_things_and_misc:cherry_sail",
+    "create_things_and_misc:mangrove_sail",
+    "create_things_and_misc:bamboo_sail",
+    "create_things_and_misc:crimson_sail",
+    "create_things_and_misc:warped_sail",
+    "create_things_and_misc:chorus_sail",
+    "create_things_and_misc:jaboticaba_sail",
+    "create_things_and_misc:ramboutan_sail"
+   ]
+  },
+  {
+   "hub": "create_things_and_misc:train_sing",
+   "members": [
+    "create_things_and_misc:train_sing_2",
+    "create_things_and_misc:train_sing_3",
+    "create_things_and_misc:train_sing_4",
+    "create_things_and_misc:train_sing_5",
+    "create_things_and_misc:train_sing_yellow_1",
+    "create_things_and_misc:train_sing_yellow_2",
+    "create_things_and_misc:train_sing_yellow_3",
+    "create_things_and_misc:train_sing_yellow_4",
+    "create_things_and_misc:train_sing_yellow_5",
+    "create_things_and_misc:green_sing",
+    "create_things_and_misc:redsing",
+    "create_things_and_misc:train_stop"
+   ]
+  },
+  {
+   "hub": "create_things_and_misc:speed_25",
+   "members": [
+    "create_things_and_misc:speed_50",
+    "create_things_and_misc:speed_75",
+    "create_things_and_misc:speed_100",
+    "create_things_and_misc:green_sing_1",
+    "create_things_and_misc:green_sing_2",
+    "create_things_and_misc:green_sing_3",
+    "create_things_and_misc:green_sing_4",
+    "create_things_and_misc:green_sing_5",
+    "create_things_and_misc:green_sing_6",
+    "create_things_and_misc:redsing_1",
+    "create_things_and_misc:redsing_2"
+   ]
+  },
+  {
+   "hub": "create_things_and_misc:brass_bricks",
+   "members": [
+    "create_things_and_misc:brass_tiles",
+    "create_things_and_misc:brass_brick_slab",
+    "create_things_and_misc:brass_brick_stairs",
+    "create_things_and_misc:brass_tiles_slab",
+    "create_things_and_misc:brass_tiles_stair",
+    "create_things_and_misc:sturdy_sheet_slab",
+    "create_things_and_misc:sturdy_sheet_slab_stairs",
+    "create_things_and_misc:andesite_casing_trapdoor",
+    "create_things_and_misc:brass_casing_trapdoor",
+    "create_things_and_misc:copper_casing_trapdoor",
+    "create_things_and_misc:powdered_obsidian_block"
+   ]
+  },
+  {
+   "hub": "create_things_and_misc:spout_gun_water",
+   "members": [
+    "create_things_and_misc:spout_gun_lava",
+    "create_things_and_misc:spout_gun_honey",
+    "create_things_and_misc:spout_gun_chocolate",
+    "create_things_and_misc:spout_gun_slime",
+    "create_things_and_misc:copper_knife",
+    "create_things_and_misc:brass_knife",
+    "create_things_and_misc:zinc_knife",
+    "create_things_and_misc:netherite_portable_whistle",
+    "create_things_and_misc:slime_bucket",
+    "create_things_and_misc:diluted_bonemeal_bucket"
+   ]
+  }
+ ],
+ "notes": "WRONG-VERSION TRAP CAUGHT - READ THIS FIRST. Modrinth slug is create-misc-and-things (project uWrs8XlB) while the modid is create_things_and_misc, so slug and modid are not just different, they are WORD-SWAPPED. Worse, the newest 1.20.1-tagged file on Modrinth is named create_things_and_misc-4.1.0-forge-1.20.1.jar and IS NOT A 1.20.1 FORGE JAR: its META-INF/mods.toml declares modId=neoforge versionRange=[21.1.65,) and modId=minecraft versionRange=[1.21.1], and its data folder carries 65 loot tables and a potato_cannon_projectile_types folder that the real 1.20.1 build does not have. The filename lies. The correct build is version 4.0, filename 'create_misc_and_things_ 1.20.1_4.0A.jar' (note the space before the version), which declares modLoader=javafml, loaderVersion=[47,), minecraft [1.20.1] and create [0,). Everything in this file is verified against 4.0. ID SET IS 97: 95 item models (none of them in subdirectories) plus exactly two blockstate-only ids picked up by widening to (blockstates INTERSECT lang) - create_things_and_misc:slime and create_things_and_misc:diluted_bonemeal, which are the two fluid BLOCKS (blockstate + block.* lang key, no item model, so neither is questable; the bucket items are the questable form). Only 32 of the 97 carry an item.create_things_and_misc.* key and 65 carry block.create_things_and_misc.*, so the naive item.<modid> rule would have found a third of the mod. One further widening detail: create_things_and_misc:diluted_bonemeal_bucket has an item model but NO lang key of any kind, so a models-INTERSECT-lang rule would have dropped it too - the id set used here is (item models) UNION (blockstates INTERSECT lang), which keeps it. STALE NAMESPACE IN THE LANG FILE: en_us.json still contains 30-odd keys under the OLD namespace create_addon (block.create_addon.brass_bricks, item.create_addon.spout_gun, item.create_addon.slime_bucket, entity.create_addon.sit, fluid.create_addon.slime, and also item.create_addon.canon_ball, portable_canon, portable_vault, potato_entity_spawn_egg and block.create_addon.potato_turret / shematic_chair). Those create_addon keys are dead - the mod was renamed - and the last five name items that DO NOT EXIST in this jar at all. Do not harvest ids from that lang file without filtering the namespace. DROPPED as uncompletable, each checked twice against every recipe and the loot tables: create_things_and_misc:card (the written card; the Card Inscriber produces it through its own GUI, not a datapack recipe, so there is no recipe to point a quest at - quest empty_card and the card_press instead), create_things_and_misc:ticket (same situation, produced from empty_ticket at a station rather than by a recipe), create_things_and_misc:incomplete_mending_rune and create_things_and_misc:incomplete_vibration_mechanism (sequenced-assembly transitional items - assembly steps, never quest targets), create_things_and_misc:card_reader_on, create_things_and_misc:sprinkleron and create_things_and_misc:neon_tube_block (powered/placed states of blocks whose off-state item is the real one). TWO RECIPES PRODUCE A NON-ITEM: copper_scaffolding_craft.json and schematic_chair.json both have result create_things_and_misc:deleted_mod_element, an MCreator placeholder for a feature that was removed - they are dead recipes for a nonexistent id. This mod is MCreator-built (credits string says so) and that shows in the data: 4.0 ships ZERO loot tables, so block drops are handled in code, and several ids are misspelled in ways you must copy exactly - blaze_ballon (one L), sturdy_sheet_slab_stairs (says slab, is the stairs), the train signs are 'sing' not 'sign', and there are two separate spellings redsing and train_sing_yellow_*. create_things_and_misc:slime_bucket and create_things_and_misc:diluted_bonemeal_bucket have no recipe file but are the bucket items of the mod's two registered fluids (fluid.create_things_and_misc.slime and .diluted_bonemeal) - slime_emptiying.json empties a slime bucket, which proves a full one is obtainable, and Create fills either at a spout or item drain. They sit in a wheel, not the chain. ORDERING CONFLICT vs moddb consensus (15 entries, all 15 id-verified, none renamed): consensus puts empty_ticket 0.0 and mending_rune 0.071 first and empty_card at 0.929, LAST. That is backwards twice over - mending_rune is a create:sequenced_assembly whose ingredient is an experience_sheet and whose deployer step needs a rose_quartz_sheet, so two pressing steps precede it, and empty_card is the blank the card_press (consensus 0.429) and card_reader (0.286) both exist to consume, so it must come before both. Consensus also lists radar 0.857 and brass_speaker 0.714 without ever mentioning create_things_and_misc:vibration_mechanism, which is a hard ingredient of both and is itself a sequenced assembly - a book built on the consensus alone would ask for a radar with no route to its centre piece. Recipe graph preferred throughout: rose_quartz_sheet, vibration_mechanism, then the two things that consume it; experience_sheet then mending_rune; empty_card before card_press and card_reader. PARENT ASSUMPTIONS: mechanical press, crushing wheels, deployers on a belt for both sequenced assemblies, a mechanical crafter array, a spout, a stonecutter, plus Create's rose quartz, experience nugget, copper/brass/iron/golden sheets, andesite alloy, electron tube, display board, filter, railway casing, sticker, propeller, fluid tank, fluid pipe, precision mechanism, metal girder, white sail, blaze burner, blaze cake base, sturdy sheet, powdered obsidian and super glue. Farmer's Delight tags are shipped for the three knives but the knives themselves are plain crafting recipes with no mod_loaded gate, so they work standalone."
+}

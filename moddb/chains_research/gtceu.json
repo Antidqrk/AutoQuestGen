@@ -1,0 +1,176 @@
+{
+ "mod": "gtceu",
+ "verified_against": "gtceu-1.20.1-7.5.3.jar",
+ "item_count_in_jar": 2041,
+ "chain": [
+  {
+   "id": "gtceu:coke_oven",
+   "title": "Smoke and Creosote",
+   "desc": "Bakes logs and coal into coke and creosote, the first fuel worth burning."
+  },
+  {
+   "id": "gtceu:primitive_blast_furnace",
+   "title": "Brick by Stubborn Brick",
+   "desc": "A hand-fed brick stack that turns iron and coal into your first steel."
+  },
+  {
+   "id": "gtceu:bronze_machine_casing",
+   "title": "The Shape of Every Machine",
+   "desc": "Bronze plates folded into the casing every steam-age machine is built around."
+  },
+  {
+   "id": "gtceu:lp_steam_solid_boiler",
+   "title": "First Kettle",
+   "desc": "Burns solid fuel to boil water into steam, the pressure that drives the bronze age."
+  },
+  {
+   "id": "gtceu:lp_steam_macerator",
+   "title": "Ore, Twice Over",
+   "desc": "Steam-driven grinding turns each ore into two dusts, doubling every vein you mine."
+  },
+  {
+   "id": "gtceu:bronze_large_boiler",
+   "title": "A Boiler You Can Walk Into",
+   "desc": "A bronze multiblock boiler producing far more steam than any single machine."
+  },
+  {
+   "id": "gtceu:steam_grinder",
+   "title": "Nine Stones at Once",
+   "desc": "The steam multiblock that grinds nine inputs in parallel, ending single-slot bottlenecks."
+  },
+  {
+   "id": "gtceu:lv_machine_hull",
+   "title": "Current Replaces Pressure",
+   "desc": "The first electric hull; steam gives way to Low Voltage wiring."
+  },
+  {
+   "id": "gtceu:resin_circuit_board",
+   "title": "Sawdust and Resin",
+   "desc": "A crude board of resin-soaked wood pulp, the substrate every early circuit is printed on."
+  },
+  {
+   "id": "gtceu:basic_electronic_circuit",
+   "title": "Thinking in Copper",
+   "desc": "The Low Voltage circuit; nearly every LV recipe asks for a stack of these."
+  },
+  {
+   "id": "gtceu:lv_steam_turbine",
+   "title": "Steam, Now Wired",
+   "desc": "Converts the steam you already produce into LV electricity."
+  },
+  {
+   "id": "gtceu:lv_macerator",
+   "title": "The Grind Goes Electric",
+   "desc": "The electric macerator, faster than steam and the front of every ore line."
+  },
+  {
+   "id": "gtceu:lv_assembler",
+   "title": "Many Parts, One Output",
+   "desc": "Combines several components into one; the machine that builds other machines."
+  },
+  {
+   "id": "gtceu:electric_blast_furnace",
+   "title": "Heat Beyond Fire",
+   "desc": "A multiblock reaching alloying temperatures no furnace can, gating aluminium and steel at scale."
+  },
+  {
+   "id": "gtceu:mv_machine_hull",
+   "title": "Twice the Volts",
+   "desc": "The Medium Voltage hull: 128 EU/t and a whole new tier of recipes."
+  },
+  {
+   "id": "gtceu:good_electronic_circuit",
+   "title": "A Better Brain",
+   "desc": "The MV-tier circuit, printed on phenolic board."
+  },
+  {
+   "id": "gtceu:mv_combustion",
+   "title": "Burning Fuel, Not Coal",
+   "desc": "A generator that runs refined liquid fuels for far more energy than solids give."
+  },
+  {
+   "id": "gtceu:vacuum_freezer",
+   "title": "Cold on Demand",
+   "desc": "Chills white-hot ingots and liquefies gases; mandatory for aluminium and titanium."
+  },
+  {
+   "id": "gtceu:hv_machine_hull",
+   "title": "High Voltage",
+   "desc": "The HV hull at 512 EU/t, where GregTech stops being polite."
+  },
+  {
+   "id": "gtceu:advanced_integrated_circuit",
+   "title": "Etched Small",
+   "desc": "The HV-tier integrated circuit, built on epoxy board."
+  },
+  {
+   "id": "gtceu:distillation_tower",
+   "title": "Oil, Sorted by Weight",
+   "desc": "Splits crude oil into a full column of fuels and chemical feedstocks."
+  },
+  {
+   "id": "gtceu:large_chemical_reactor",
+   "title": "Industrial Chemistry",
+   "desc": "A multiblock reactor running chemical recipes without the single-machine penalty."
+  },
+  {
+   "id": "gtceu:ev_machine_hull",
+   "title": "Extreme Voltage",
+   "desc": "The EV hull at 2048 EU/t, built on titanium."
+  },
+  {
+   "id": "gtceu:assembly_line",
+   "title": "The Long Factory",
+   "desc": "A room-sized multiblock that assembles components no crafting table can."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "gtceu:resin_circuit_board",
+   "members": [
+    "gtceu:resin_printed_circuit_board",
+    "gtceu:phenolic_circuit_board",
+    "gtceu:phenolic_printed_circuit_board",
+    "gtceu:plastic_circuit_board",
+    "gtceu:plastic_printed_circuit_board",
+    "gtceu:epoxy_circuit_board",
+    "gtceu:fiber_reinforced_circuit_board",
+    "gtceu:multilayer_fiber_reinforced_circuit_board",
+    "gtceu:wetware_circuit_board"
+   ]
+  },
+  {
+   "hub": "gtceu:lv_machine_hull",
+   "members": [
+    "gtceu:lv_alloy_smelter",
+    "gtceu:lv_bender",
+    "gtceu:lv_canner",
+    "gtceu:lv_centrifuge",
+    "gtceu:lv_chemical_reactor",
+    "gtceu:lv_compressor",
+    "gtceu:lv_cutter",
+    "gtceu:lv_electrolyzer",
+    "gtceu:lv_extractor",
+    "gtceu:lv_lathe",
+    "gtceu:lv_polarizer",
+    "gtceu:lv_wiremill",
+    "gtceu:lv_forge_hammer",
+    "gtceu:lv_fluid_solidifier"
+   ]
+  },
+  {
+   "hub": "gtceu:bronze_large_boiler",
+   "members": [
+    "gtceu:steel_large_boiler",
+    "gtceu:titanium_large_boiler",
+    "gtceu:tungstensteel_large_boiler",
+    "gtceu:large_combustion_engine",
+    "gtceu:extreme_combustion_engine",
+    "gtceu:steam_large_turbine",
+    "gtceu:gas_large_turbine",
+    "gtceu:plasma_large_turbine"
+   ]
+  }
+ ],
+ "notes": "Verified against gtceu-1.20.1-7.5.3.jar (GregTech CEu Modern, Modrinth slug 'gregtechceu-modern'; the slug 'gtceu' 404s). Item set = 2041 ids from the strict intersection of assets/gtceu/models/item/*.json stems with item./block. keys in assets/gtceu/lang/en_us.json. WIDENING WAS IMPOSSIBLE: the jar ships ZERO recipe JSONs (data/gtceu/recipes/** does not exist) - GregTech registers every recipe in code - so recipe-result widening could not be applied here. CONSEQUENCE: all GregTech MATERIAL items (ingots, dusts, plates, foils, rods, cables, wires, gems) are generated in code from the material registry and carry neither an item model JSON nor a shipped lang key, so they are unverifiable and were entirely excluded. Only 6 material-shaped ids survive verification (carbon_fiber_plate, energium_dust and mould items), which is why the chain is built purely from statically-registered blocks and machines - consistent with the measured desirability weights (generator 5.5x, machine 2.0x, casing 1.6x). Cables per tier, requested as part of the tier spine, had to be dropped for this reason. CONSENSUS CONFLICTS (moddb, 26 entries, 2-4 packs each - a very thin and addon-contaminated sample): 20 of 26 do not exist in the jar and were rejected - alumina_dust, bauxite_dust, molybdenum_trioxide_dust, sphalerite_dust, calcium_hydroxide_dust, activated_carbon_dust, phosphate_dust, nickel_fluoride_dust, neptunium_dust, tiny_glowstone_dust, electrotine_dust, ruby_gem (all code-generated materials); oil_light_bucket, oil_medium_bucket, dimethylamine_bucket, biostimulating_mixture_bucket, maleic_anhydride_bucket, hydrogen_chloride_bucket (code-generated fluid buckets); rubber_mallet (code-generated tool); and draconyallium_ingot + aurourium_ingot, which are not GregTech items at all but come from GTCEu ADDON mods, showing the consensus sample conflated addon content with base gtceu. pitchblende_dust has a lang key but no item model, so it also failed verification. IMPOSSIBLE ORDERING: hv_extruder sits at pos 0.0, the earliest possible rank, though an HV-tier machine is roughly the midpoint of the whole mod and cannot precede steam or LV; lv_super_tank and qbit_cpu_wafer (a late-game wafer) are likewise ranked at pos 0.0-0.022. The consensus positions for this mod are therefore not usable as an ordering signal and the recipe/tier graph was preferred throughout, as instructed. Only 3 consensus entries survived verification and none of them are tier-defining. SPINE: steam age (coke oven -> primitive blast furnace -> bronze casing -> LP steam boiler/macerator -> large bronze boiler -> steam grinder) then the electric ladder LV -> MV -> HV -> EV, each tier anchored on its machine hull plus that tier's circuit, with the four gateway multiblocks (EBF, vacuum freezer, distillation tower, large chemical reactor, assembly line) placed where the tier actually unlocks them. Tiers above EV (IV/LuV/ZPM/UV and the fusion reactors luv_fusion_reactor, zpm_fusion_reactor, uv_fusion_reactor - all verified present) were deliberately left out to keep the arc to 24 milestones; iv_machine_hull, luv_machine_hull and uv_machine_hull are all verified and available if the ladder is extended. No _slab/_stairs/_wall/stripped_/potted_ ids used."
+}

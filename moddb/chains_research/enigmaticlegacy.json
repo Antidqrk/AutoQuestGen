@@ -1,0 +1,225 @@
+{
+ "mod": "enigmaticlegacy",
+ "verified_against": "EnigmaticLegacy-2.30.1.jar",
+ "item_count_in_jar": 122,
+ "chain": [
+  {
+   "id": "enigmaticlegacy:the_acknowledgment",
+   "title": "The Acknowledgment",
+   "desc": "A Book shapelessly combined with a Lantern. This is the mod's guide and it is written as the diary of a cursed demigod, which is also the tone the rest of the mod is played in."
+  },
+  {
+   "id": "enigmaticlegacy:iron_ring",
+   "title": "Iron Ring",
+   "desc": "Iron Ingots around an Iron Nugget. It does nothing on its own; it is the blank every other ring is built from."
+  },
+  {
+   "id": "enigmaticlegacy:golden_ring",
+   "title": "Golden Ring",
+   "desc": "The Iron Ring reworked in gold. Worn in a curio slot it slowly repairs the gear you are holding."
+  },
+  {
+   "id": "enigmaticlegacy:magnet_ring",
+   "title": "Magnet Ring",
+   "desc": "An Iron Ring with Redstone, Iron, Gold and a Diamond. It pulls dropped items to you, and the Super Magnet Ring upgrade widens the radius and pulls experience too."
+  },
+  {
+   "id": "enigmaticlegacy:ender_ring",
+   "title": "Ender Ring",
+   "desc": "An Iron Ring with an Ender Chest, an Ender Pearl and Gold. It opens your Ender Chest anywhere and reduces the damage of your own pearl throws."
+  },
+  {
+   "id": "enigmaticlegacy:enchantment_transposer",
+   "title": "Enchantment Transposer",
+   "desc": "A Book with Lapis, Redstone, Blaze Powder, Prismarine Crystals and Gold Nuggets. It strips the enchantments off one item and prints them into a book without the anvil's level tax."
+  },
+  {
+   "id": "enigmaticlegacy:extradimensional_eye",
+   "title": "Extradimensional Eye",
+   "desc": "An Eye of Ender with Blaze Powder, Phantom Membrane and Gold. Thrown, it hunts down the nearest structure rather than the nearest stronghold."
+  },
+  {
+   "id": "enigmaticlegacy:enigmatic_amulet",
+   "title": "Enigmatic Amulet",
+   "desc": "Not crafted: you begin the world with it already in your pockets. Its colour is rolled per player and decides which small permanent boon you carry, and it is the base of both late amulets."
+  },
+  {
+   "id": "enigmaticlegacy:earth_heart",
+   "title": "Heart of the Earth",
+   "desc": "Found in the deepest dungeon rooms below the Overworld. It is the Heart of the Sea's underground counterpart and the reagent for the Mining Charm and the Twisted Heart."
+  },
+  {
+   "id": "enigmaticlegacy:mining_charm",
+   "title": "Mining Charm",
+   "desc": "A Heart of the Earth with a Diamond, a Ghast Tear, Glowstone Dust, Gold and Iron Nuggets. Worn, it grants permanent haste and night vision underground."
+  },
+  {
+   "id": "enigmaticlegacy:etherium_ore",
+   "title": "Etherium Ore",
+   "desc": "Generated only in the End, and not in the crust of the main islands - you have to go out past the gateways to find it. It cannot be mined with anything below a diamond pickaxe."
+  },
+  {
+   "id": "enigmaticlegacy:etherium_ingot",
+   "title": "Etherium",
+   "desc": "Smelt or blast the ore. Etherium gear does not break: at zero durability it simply stops working until it recharges."
+  },
+  {
+   "id": "enigmaticlegacy:astral_dust",
+   "title": "Astral Dust",
+   "desc": "Looted from the rooms of End Cities. It is the binding agent in the Ender Rod, the Astral Breaker, the Lore Inscriber, the Cosmic Heart and the Fabulous Scroll."
+  },
+  {
+   "id": "enigmaticlegacy:ender_rod",
+   "title": "Ender Rod",
+   "desc": "A Blaze Rod, an Ender Pearl and Astral Dust. Every Etherium tool is hafted on one of these."
+  },
+  {
+   "id": "enigmaticlegacy:etherium_pickaxe",
+   "title": "Etherium Pickaxe",
+   "desc": "Etherium on an Ender Rod. It mines in a 3x3 and, like the rest of the set, recharges instead of breaking."
+  },
+  {
+   "id": "enigmaticlegacy:etherium_chestplate",
+   "title": "Etherium Armour",
+   "desc": "Etherium plate. The full set gives damage resistance that scales with how much of it you wear and it never has to be repaired."
+  },
+  {
+   "id": "enigmaticlegacy:astral_breaker",
+   "title": "Astral Breaker",
+   "desc": "The Etherium pickaxe, axe and shovel merged with Astral Dust, Dragon's Breath and an Eye of Ender. One tool for all three jobs, in a 3x3."
+  },
+  {
+   "id": "enigmaticlegacy:angel_blessing",
+   "title": "Angel's Blessing",
+   "desc": "One of the six Spellstones, and like all of them it is found rather than made - the book is explicit that there is no known way to recreate them. It grants a burst of flight on demand."
+  },
+  {
+   "id": "enigmaticlegacy:heaven_scroll",
+   "title": "Heaven Scroll",
+   "desc": "An Angel's Blessing bound into a Large Scroll with Gold, Lapis, a Feather and an Ink Sac. Scrolls turn a spellstone into a permanent passive instead of an active."
+  },
+  {
+   "id": "enigmaticlegacy:eye_of_nebula",
+   "title": "Eye of the Nebula",
+   "desc": "The Spellstone of the void: it teleports you along your line of sight and grants a chance to phase out of incoming damage."
+  },
+  {
+   "id": "enigmaticlegacy:enigmatic_elytra",
+   "title": "Enigmatic Elytra",
+   "desc": "An Elytra with Etherium, Astral Dust, Dragon's Breath, an Angel's Blessing and an Eye of the Nebula. It flies without fireworks and repairs itself."
+  },
+  {
+   "id": "enigmaticlegacy:evil_essence",
+   "title": "Evil Essence",
+   "desc": "The Wither's soul rather than its skull - it drops from killing one. Everything cursed below runs on it."
+  },
+  {
+   "id": "enigmaticlegacy:cursed_ring",
+   "title": "Ring of the Seven Curses",
+   "desc": "The mod's real fork in the road. Putting it on is permanent even through death: it inflicts seven fixed curses and in exchange unlocks the recipes and relics no uncursed player can ever touch."
+  },
+  {
+   "id": "enigmaticlegacy:twisted_heart",
+   "title": "Twisted Heart",
+   "desc": "A Heart of the Earth twisted with an Eye of Ender, a Ghast Tear, Blaze Powder and Redstone. The recipe type is enigmaticlegacy:crafting_shaped_cursed - the grid will not produce it unless you are wearing the Ring of the Seven Curses."
+  },
+  {
+   "id": "enigmaticlegacy:the_twist",
+   "title": "The Twist",
+   "desc": "The Acknowledgment itself, a Twisted Heart, Evil Essence, Netherite and Redstone. A cursed weapon that scales with how much of your health you are willing to spend."
+  },
+  {
+   "id": "enigmaticlegacy:cosmic_heart",
+   "title": "Cosmic Heart",
+   "desc": "A Nether Star, a Heart of the Sea, an Eye of Ender, Blaze Powder and Astral Dust. The Wither and the ocean monument both have to be beaten before this exists."
+  },
+  {
+   "id": "enigmaticlegacy:abyssal_heart",
+   "title": "Heart of the Abyss",
+   "desc": "The eldritch counterpart to the Cosmic Heart, and the corrupting agent that turns the Amulet of Ascension into the Eldritch Amulet."
+  },
+  {
+   "id": "enigmaticlegacy:the_infinitum",
+   "title": "The Infinitum",
+   "desc": "The Twist plus a Cosmic Heart, a Heart of the Abyss, an Enchanter Pearl, Evil Essence and Netherite. The mod's final weapon and the end of the cursed line."
+  },
+  {
+   "id": "enigmaticlegacy:the_cube",
+   "title": "The Cube",
+   "desc": "Forged only once all six Spellstones are in your possession and the power of the cosmos is on hand. It carries every spellstone ability in a single curio slot."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "enigmaticlegacy:angel_blessing",
+   "members": [
+    "enigmaticlegacy:ocean_stone",
+    "enigmaticlegacy:golem_heart",
+    "enigmaticlegacy:blazing_core",
+    "enigmaticlegacy:void_pearl",
+    "enigmaticlegacy:enigmatic_item",
+    "enigmaticlegacy:unholy_grail",
+    "enigmaticlegacy:void_stone",
+    "enigmaticlegacy:guardian_heart",
+    "enigmaticlegacy:forbidden_fruit",
+    "enigmaticlegacy:ichor_bottle",
+    "enigmaticlegacy:astral_fruit",
+    "enigmaticlegacy:ascension_amulet"
+   ]
+  },
+  {
+   "hub": "enigmaticlegacy:heaven_scroll",
+   "members": [
+    "enigmaticlegacy:xp_scroll",
+    "enigmaticlegacy:escape_scroll",
+    "enigmaticlegacy:fabulous_scroll",
+    "enigmaticlegacy:darkest_scroll",
+    "enigmaticlegacy:cursed_scroll",
+    "enigmaticlegacy:avarice_scroll",
+    "enigmaticlegacy:cosmic_scroll",
+    "enigmaticlegacy:thicc_scroll",
+    "enigmaticlegacy:lore_fragment",
+    "enigmaticlegacy:lore_inscriber"
+   ]
+  },
+  {
+   "hub": "enigmaticlegacy:etherium_pickaxe",
+   "members": [
+    "enigmaticlegacy:etherium_axe",
+    "enigmaticlegacy:etherium_shovel",
+    "enigmaticlegacy:etherium_sword",
+    "enigmaticlegacy:etherium_scythe",
+    "enigmaticlegacy:etherium_helmet",
+    "enigmaticlegacy:etherium_leggings",
+    "enigmaticlegacy:etherium_boots",
+    "enigmaticlegacy:etherium_block",
+    "enigmaticlegacy:etherium_nugget",
+    "enigmaticlegacy:forbidden_axe",
+    "enigmaticlegacy:ender_slayer",
+    "enigmaticlegacy:infernal_shield",
+    "enigmaticlegacy:eldritch_pan",
+    "enigmaticlegacy:evil_ingot"
+   ]
+  },
+  {
+   "hub": "enigmaticlegacy:big_lamp",
+   "members": [
+    "enigmaticlegacy:big_shroomlamp",
+    "enigmaticlegacy:big_redstonelamp",
+    "enigmaticlegacy:massive_lamp",
+    "enigmaticlegacy:massive_shroomlamp",
+    "enigmaticlegacy:massive_redstonelamp",
+    "enigmaticlegacy:mega_sponge",
+    "enigmaticlegacy:twisted_mirror",
+    "enigmaticlegacy:soul_compass",
+    "enigmaticlegacy:end_anchor",
+    "enigmaticlegacy:curse_transposer",
+    "enigmaticlegacy:animal_guidebook",
+    "enigmaticlegacy:hunter_guidebook",
+    "enigmaticlegacy:infinimeal",
+    "enigmaticlegacy:cosmic_cake"
+   ]
+  }
+ ],
+ "notes": "Verified twice against EnigmaticLegacy-2.30.1.jar (mods.toml declares minecraft [1.20,1.21) under javafml; Modrinth lists this file as 1.20.1 / forge only). Pass 1: 208 assets/enigmaticlegacy/models/item stems intersected with item./block. lang keys = 122 ids (item_count_in_jar). Pass 2 rebuilt 383 ids independently from blockstates, all 93 recipe jsons, tags and curios tags. WHY THE TWO COUNTS DIVERGE, CHECKED RATHER THAN ASSUMED: 86 model stems have no lang key and 73 lang keys have no model. Both gaps are benign and neither needed a widening. The models-only side is render variants, not items: compass_00 through compass_31 for the Soul Compass needle, enigmatic_amulet_01 through _07 for the amulet's seven colours, the 3d/ handheld models, enigmatic_eye_dormant_1, the eldritch_pan pose models, and dark_helmet/chestplate/leggings/boots which are the Dark Armour cosmetic overlay and are not registered items. The lang-only side is the potion sub-keys - item.enigmaticlegacy.ultimate_potion.effect.<effect> and the common_potion, splash and lingering variants of the same - which are effect names inside one registered potion item, not separate items. Proof that 122 is right rather than low: every single recipe result in the jar is already inside the strict intersection (the set difference is empty), so no real craftable was lost. CODE-OBTAINED IDS, DECLARED: Enigmatic Legacy injects its world drops through one global loot modifier, data/enigmaticlegacy/loot_modifiers/special_loot_modifier.json of type enigmaticlegacy:special_loot_modifier, which carries no item list at all - the table is built in code. So the relics have no readable loot table and a naive obtainability filter marks them unreachable. Each one used here was instead sourced from its own Patchouli entry in assets/enigmaticlegacy/patchouli_books: astral_dust from End City rooms, etherium_ore from End generation away from the main islands, earth_heart from the deepest Overworld dungeon rooms, evil_essence from killing the Wither, guardian_heart from Guardians, forbidden_fruit from Bastion treasure, the six Spellstones from world loot with the book stating outright that there is no known way to recreate them, and enigmatic_amulet and cursed_ring from the player's own starting inventory. THE CURSED FORK IS REAL AND MECHANICAL, NOT FLAVOUR: data/enigmaticlegacy/recipes/twisted_heart.json uses the custom recipe type enigmaticlegacy:crafting_shaped_cursed, so the Twisted Heart and everything downstream of it (The Twist, The Infinitum, the Berserk Charm, the cursed and avarice scrolls, the Soul Compass, the Infernal Shield) is gated behind actually wearing the Ring of the Seven Curses. The chain places the ring immediately before the first cursed craft for that reason. There is also one enigmaticlegacy:crafting_shaped_hidden recipe and one enigmaticlegacy:void_stone_combine, one enigmaticlegacy:bind_to_player and one enigmaticlegacy:enchantment_transposing, none of which name a result in data and none of which are used as chain steps. ORDER SOURCE: the bundled Patchouli book gives an explicit category sortnum order - world 0, materials 10, tools 20, armor 30, decorations 40, accessories 50, relics 60, brewing 70, enchantments and misc 80 - and within materials it orders ancient_debris, netherite, etherium_ore, etherium, astral_dust, ender_rod, earth_heart, twisted_heart, evil_essence, abyssal_heart, cosmic_heart. That matches the recipe graph exactly and is what this chain follows. CONSENSUS CONFLICT (recipe graph and book order preferred): moddb.json puts enigmaticlegacy:cursed_ring at pos 0.0, the very first Enigmatic Legacy item, with five Spellstones behind it at 0.017 to 0.119 and enigmaticlegacy:iron_ring - five iron ingots, the blank for every other ring - all the way back at 0.203, behind enigmaticlegacy:evil_ingot at 0.186. Evil Ingot needs Evil Essence, a Ghast Tear and a Netherite Ingot, so the consensus has a post-Wither netherite craft landing before the mod's cheapest item. The consensus also ranks the_acknowledgment, the mod's own guidebook, at 0.085, behind four relics. The recipe graph is used throughout. DROPPED: nothing was found registered-but-unreachable in this jar once the code loot route was accepted; the only ids excluded are render variants and potion sub-keys, which are not items. Variant families kept in wheels: the six Spellstones and the found relics, the scroll family, the Etherium tool and armour set, and the lamp and utility blocks."
+}

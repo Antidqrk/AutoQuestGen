@@ -1,0 +1,177 @@
+{
+ "mod": "megacells",
+ "verified_against": "megacells-forge-2.4.6-1.20.1.jar",
+ "item_count_in_jar": 89,
+ "parent_mod": "ae2",
+ "chain": [
+  {
+   "id": "megacells:sky_steel_ingot",
+   "title": "Quenched in Sky Stone",
+   "desc": "Throw a Charged Certus Quartz Crystal, an iron ingot and a Sky Stone Block into water; the in-world transform returns two Sky Steel Ingots, the metal every MEGA component is built from."
+  },
+  {
+   "id": "megacells:accumulation_processor_press",
+   "title": "The Fourth Press",
+   "desc": "Inscribe an Engineering Processor Press and a Calculation Processor Press around a Singularity; AE2 gave you three presses, this is the one that unlocks everything past 256k."
+  },
+  {
+   "id": "megacells:printed_accumulation_processor",
+   "title": "Printed Accumulation Circuit",
+   "desc": "Inscribe a Sky Steel Ingot under the Accumulation Processor Press to stamp the printed circuit."
+  },
+  {
+   "id": "megacells:accumulation_processor",
+   "title": "Accumulation Processor",
+   "desc": "Inscribe printed silicon, fluix dust and a printed accumulation circuit together; every single MEGA device downstream needs one."
+  },
+  {
+   "id": "megacells:mega_item_cell_housing",
+   "title": "MEGA Item Cell Housing",
+   "desc": "Craft from Vibrant Quartz Glass, Sky Dust and Sky Steel Ingots; the housing that turns a MEGA component into a working item cell."
+  },
+  {
+   "id": "megacells:cell_component_1m",
+   "title": "One Million",
+   "desc": "Craft from Sky Dust, an accumulation processor, an AE2 256k Storage Component and Vibrant Quartz Glass; the ladder starts exactly where vanilla AE2 stops."
+  },
+  {
+   "id": "megacells:item_storage_cell_1m",
+   "title": "1M Item Cell",
+   "desc": "Craft the 1M component into an item cell with Vibrant Quartz Glass, Sky Dust and iron; four times the capacity of AE2's largest disk."
+  },
+  {
+   "id": "megacells:cell_component_4m",
+   "title": "Four Million",
+   "desc": "Feed the 1M component back through the same pattern with ender pearl dust; each tier eats the tier below it, so the ladder is genuinely cumulative."
+  },
+  {
+   "id": "megacells:cell_component_16m",
+   "title": "Sixteen Million",
+   "desc": "Craft from ender pearl dust, an accumulation processor, a 4M component and Vibrant Quartz Glass."
+  },
+  {
+   "id": "megacells:cell_component_64m",
+   "title": "Sixty-Four Million",
+   "desc": "Craft from Matter Balls, an accumulation processor, a 16M component and Vibrant Quartz Glass; Matter Balls mean the Matter Condenser is now on your critical path."
+  },
+  {
+   "id": "megacells:cell_component_256m",
+   "title": "The Last Component",
+   "desc": "Craft from Matter Balls, an accumulation processor, a 64M component and Vibrant Quartz Glass; the top of the storage ladder."
+  },
+  {
+   "id": "megacells:item_storage_cell_256m",
+   "title": "256M Item Cell",
+   "desc": "Assemble the top component into an item cell; a single disk that will outlast the world you built it in."
+  },
+  {
+   "id": "megacells:mega_fluid_cell_housing",
+   "title": "MEGA Fluid Cell Housing",
+   "desc": "Craft from Vibrant Quartz Glass, Sky Dust and copper ingots; the same component ladder now applies to fluids."
+  },
+  {
+   "id": "megacells:fluid_storage_cell_256m",
+   "title": "256M Fluid Cell",
+   "desc": "Combine the 256M component with the fluid housing; store an ocean of lava, oil or coolant in one slot."
+  },
+  {
+   "id": "megacells:bulk_cell_component",
+   "title": "Bulk Storage Component",
+   "desc": "Craft from Sky Dust, an AE2 Spatial Storage Component, accumulation processors, Vibrant Quartz Glass and a 1M component; it holds exactly one item type with no upper bound."
+  },
+  {
+   "id": "megacells:bulk_item_cell",
+   "title": "Truly Bottomless",
+   "desc": "Craft the bulk component into a cell with Vibrant Quartz Glass, Sky Dust and netherite; one item type, effectively infinite quantity - the answer to a cobblegen you never want to think about again."
+  },
+  {
+   "id": "megacells:cell_dock",
+   "title": "ME Cell Dock",
+   "desc": "Craft from iron, copper and a glass cable; dock a portable or bulk cell straight onto the network without giving up a drive bay."
+  },
+  {
+   "id": "megacells:mega_energy_cell",
+   "title": "Superdense Energy Cell",
+   "desc": "Craft from eight Dense Energy Cells around an accumulation processor; enough buffer to ride out a full crafting job on a MEGA CPU."
+  },
+  {
+   "id": "megacells:greater_energy_card",
+   "title": "Greater Energy Card",
+   "desc": "Craft shapelessly from an Advanced Card and a Superdense Energy Cell; it extends the battery of any portable cell or wireless terminal."
+  },
+  {
+   "id": "megacells:mega_interface",
+   "title": "MEGA Interface",
+   "desc": "Craft shapelessly from an ME Interface and an accumulation processor; nine times the stock slots of the interface it replaces."
+  },
+  {
+   "id": "megacells:mega_pattern_provider",
+   "title": "MEGA Pattern Provider",
+   "desc": "Craft shapelessly from an ME Pattern Provider and an accumulation processor; holds far more patterns per block, so one provider can feed a whole machine wall."
+  },
+  {
+   "id": "megacells:mega_crafting_unit",
+   "title": "MEGA Crafting Unit",
+   "desc": "Craft from AE2 Crafting Units, Logic Processors, smart cable and an accumulation processor; the frame block of the oversized crafting CPU."
+  },
+  {
+   "id": "megacells:mega_crafting_accelerator",
+   "title": "MEGA Co-Processing Unit",
+   "desc": "Craft shapelessly from a MEGA Crafting Unit and an Engineering Processor; each one runs many parallel crafting threads instead of one."
+  },
+  {
+   "id": "megacells:256m_crafting_storage",
+   "title": "256M Crafting Storage",
+   "desc": "Craft shapelessly from a MEGA Crafting Unit and a 256M component; a crafting CPU big enough to plan a build the size of a base in a single job."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "megacells:mega_item_cell_housing",
+   "members": [
+    "megacells:item_storage_cell_1m",
+    "megacells:item_storage_cell_4m",
+    "megacells:item_storage_cell_16m",
+    "megacells:item_storage_cell_64m",
+    "megacells:item_storage_cell_256m",
+    "megacells:portable_item_cell_1m",
+    "megacells:portable_item_cell_4m",
+    "megacells:portable_item_cell_16m",
+    "megacells:portable_item_cell_64m",
+    "megacells:portable_item_cell_256m",
+    "megacells:bulk_item_cell"
+   ]
+  },
+  {
+   "hub": "megacells:mega_fluid_cell_housing",
+   "members": [
+    "megacells:fluid_storage_cell_1m",
+    "megacells:fluid_storage_cell_4m",
+    "megacells:fluid_storage_cell_16m",
+    "megacells:fluid_storage_cell_64m",
+    "megacells:fluid_storage_cell_256m",
+    "megacells:portable_fluid_cell_1m",
+    "megacells:portable_fluid_cell_4m",
+    "megacells:portable_fluid_cell_16m",
+    "megacells:portable_fluid_cell_64m",
+    "megacells:portable_fluid_cell_256m"
+   ]
+  },
+  {
+   "hub": "megacells:mega_crafting_unit",
+   "members": [
+    "megacells:1m_crafting_storage",
+    "megacells:4m_crafting_storage",
+    "megacells:16m_crafting_storage",
+    "megacells:64m_crafting_storage",
+    "megacells:256m_crafting_storage",
+    "megacells:mega_crafting_accelerator",
+    "megacells:mega_crafting_monitor",
+    "megacells:mega_energy_cell",
+    "megacells:greater_energy_card",
+    "megacells:cell_dock"
+   ]
+  }
+ ],
+ "notes": "The cleanest tier ladder in the AE2 ecosystem: a brand new metal (Sky Steel), a brand new inscriber press (Accumulation), and a five-rung 1M-to-256M component line where each rung physically consumes the one below it. Starts exactly where AE2's 256k cell stops. ASSUMES FROM PARENT (ae2): Charged Certus Quartz, Sky Stone Block, Sky Dust, Vibrant Quartz Glass, fluix dust, printed silicon, Logic/Calculation/Engineering Processors and their presses, Singularity, Matter Ball and the Matter Condenser, cell_component_256k, Spatial Storage Component, Dense Energy Cell, ME Chest, ME Interface, ME Pattern Provider, Crafting Unit, Storage Monitor, Advanced Card, smart and glass cable. VERIFICATION: strict model/lang intersection, 89/89 matched, no widening needed. DROPPED - cross-mod gated, all present as items but with forge:conditional recipes that never fire without a third mod installed: the 10 mana_storage_cell_* / portable_mana_cell_* ids (Botania via appbot), the 10 source_storage_cell_* / portable_source_cell_* ids plus mega_source_cell_housing (Ars Nouveau), mega_emc_interface / cable_mega_emc_interface (ProjectE via appliede), and the chemical line - chemical_storage_cell_1m-256m, portable_chemical_cell_1m-256m, mega_chemical_cell_housing, radioactive_cell_component and radioactive_chemical_cell (require Applied Mekanistics; quest those from appmek.json's ladder instead if that mod is in the pack). ALSO DROPPED: decompression_module / decompression_pattern / compression_card were left out of the spine as a side mechanic rather than a rung, and sky_steel_block as a pure 9x compression block."
+}

@@ -1,0 +1,172 @@
+{
+ "mod": "culturaldelights",
+ "verified_against": "culturaldelights-0.16.7.jar",
+ "item_count_in_jar": 72,
+ "parent_mod": "farmersdelight",
+ "chain": [
+  {
+   "id": "culturaldelights:wild_cucumbers",
+   "title": "Found Growing Wild",
+   "desc": "Wild cucumbers spawn in the world the way Farmer's Delight's wild cabbages do. Knifing them is how the crop line starts."
+  },
+  {
+   "id": "culturaldelights:cucumber_seeds",
+   "title": "Saving The Seed",
+   "desc": "Cut from wild cucumbers. Cucumber is the mod's most-used vegetable and the only one that ferments."
+  },
+  {
+   "id": "culturaldelights:cucumber",
+   "title": "The First Harvest",
+   "desc": "Grown from seed on farmland. It appears in the tacos, the salad and every roll in the sushi line."
+  },
+  {
+   "id": "culturaldelights:cut_cucumber",
+   "title": "Sliced Thin",
+   "desc": "Knife a cucumber on a cutting board. Slices are what the rolls actually take."
+  },
+  {
+   "id": "culturaldelights:pickle",
+   "title": "Left In The Barrel",
+   "desc": "Cucumber put through Farmer's Delight fermentation. The only fermented crop in the mod and the one that keeps."
+  },
+  {
+   "id": "culturaldelights:wild_corn",
+   "title": "Corn In The Wild",
+   "desc": "Wild corn is the second of the three wild patches this mod seeds into worldgen."
+  },
+  {
+   "id": "culturaldelights:corn_cob",
+   "title": "An Ear Of Corn",
+   "desc": "Grown from the wild patch. Corn is the mod's staple grain and the base of tortillas, popcorn and elote."
+  },
+  {
+   "id": "culturaldelights:corn_kernels",
+   "title": "Stripping The Cob",
+   "desc": "Knife a corn cob and it gives kernels and Farmer's Delight straw. Kernels replant, and they pop."
+  },
+  {
+   "id": "culturaldelights:popcorn",
+   "title": "Kernels Over A Campfire",
+   "desc": "Campfire-cook the kernels. The fastest snack in the Farmer's Delight ecosystem."
+  },
+  {
+   "id": "culturaldelights:corn_dough",
+   "title": "Masa",
+   "desc": "Corn with a water bucket. Corn dough is a separate dough from Farmer's Delight's wheat dough and the tortilla depends on it."
+  },
+  {
+   "id": "culturaldelights:tortilla",
+   "title": "The Flatbread Everything Wraps In",
+   "desc": "Made from corn dough. Every taco, burrito and wrap in the mod runs through it."
+  },
+  {
+   "id": "culturaldelights:chicken_taco",
+   "title": "Folded And Filled",
+   "desc": "Tortilla, cooked chicken, cucumber, corn, onion and tomato sauce. The mod's signature dish."
+  },
+  {
+   "id": "culturaldelights:wild_eggplants",
+   "title": "Eggplant, Wild",
+   "desc": "The third wild patch. Eggplant is the mod's most temperamental crop and has a white variant."
+  },
+  {
+   "id": "culturaldelights:eggplant",
+   "title": "Grown Purple",
+   "desc": "From seed. Eggplant is the base of the parmesan and the burger, and it smokes into three different products."
+  },
+  {
+   "id": "culturaldelights:eggplant_parmesan_block",
+   "title": "Baked In A Dish",
+   "desc": "Cooking Pot: eggplants, raw pasta, tomato sauce, bread, egg and milk. A feast-sized block that needs Farmer's Delight's whole pantry."
+  },
+  {
+   "id": "culturaldelights:avocado_sapling",
+   "title": "Planting An Avocado",
+   "desc": "Avocado trees are this mod's only tree, with their own log, wood, leaves and a fruiting leaf state."
+  },
+  {
+   "id": "culturaldelights:avocado",
+   "title": "The Fruit Itself",
+   "desc": "Harvested from fruiting avocado leaves. It has a pit that replants and appears in a third of the recipes here."
+  },
+  {
+   "id": "culturaldelights:avocado_pit",
+   "title": "Saving The Stone",
+   "desc": "Squeezed out of an avocado. Plant it for the next tree."
+  },
+  {
+   "id": "culturaldelights:cut_avocado",
+   "title": "Halved",
+   "desc": "Knife an avocado. Cut avocado is what the toast, the burrito and the rolls actually consume."
+  },
+  {
+   "id": "culturaldelights:avocado_toast",
+   "title": "The Obvious Joke",
+   "desc": "Cut avocado on bread. Every pack that ships this mod has this quest whether it wants to or not."
+  },
+  {
+   "id": "culturaldelights:midori_roll",
+   "title": "Green Roll",
+   "desc": "Avocado, cucumber, Farmer's Delight cooked rice and dried kelp. The first of the sushi line."
+  },
+  {
+   "id": "culturaldelights:exotic_roll_medley",
+   "title": "One Of Each",
+   "desc": "The medley needs the whole roll family assembled, which makes it the mod's completion dish."
+  },
+  {
+   "id": "culturaldelights:beef_burrito",
+   "title": "Rolled And Sealed",
+   "desc": "Tortilla, cooked rice, cooked beef and avocado. The heaviest single meal in the mod."
+  },
+  {
+   "id": "culturaldelights:spicy_curry",
+   "title": "With Ginger",
+   "desc": "Ginger is the mod's one spice, and the curry is the only recipe that uses it."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "culturaldelights:avocado_crate",
+   "members": [
+    "culturaldelights:corn_cob_crate",
+    "culturaldelights:cucumber_crate",
+    "culturaldelights:eggplant_crate",
+    "culturaldelights:white_eggplant_crate",
+    "culturaldelights:pickle_crate",
+    "culturaldelights:avocado_bundle",
+    "culturaldelights:avocado_log",
+    "culturaldelights:avocado_wood"
+   ]
+  },
+  {
+   "hub": "culturaldelights:midori_roll",
+   "members": [
+    "culturaldelights:midori_roll_slice",
+    "culturaldelights:tropical_roll",
+    "culturaldelights:pufferfish_roll",
+    "culturaldelights:calamari_roll",
+    "culturaldelights:egg_roll",
+    "culturaldelights:chicken_roll",
+    "culturaldelights:chicken_roll_slice",
+    "culturaldelights:rice_ball"
+   ]
+  },
+  {
+   "hub": "culturaldelights:chicken_taco",
+   "members": [
+    "culturaldelights:fish_taco",
+    "culturaldelights:pork_wrap",
+    "culturaldelights:empanada",
+    "culturaldelights:elote",
+    "culturaldelights:creamed_corn",
+    "culturaldelights:smoked_corn",
+    "culturaldelights:tortilla_chips",
+    "culturaldelights:hearty_salad",
+    "culturaldelights:mutton_sandwich",
+    "culturaldelights:eggplant_burger"
+   ]
+  }
+ ],
+ "notes": "69 ids resolve as assets/culturaldelights/models/item/<id>.json intersected with item./block. lang keys. The three wild patches (wild_corn, wild_cucumbers, wild_eggplants) are the entry points, exactly mirroring Farmer's Delight's own wild_cabbages/wild_tomatoes pattern, which is why they open the chain. Ordering read from data/culturaldelights/recipes/: farmersdelight:cutting for the seed and slice steps, farmersdelight:cooking for the pot dishes, and farmersdelight:fermenting for the pickle - the only fermented item in this set. corn_dough is a SEPARATE dough from farmersdelight's wheat dough (corn plus a water bucket) and is what the tortilla, and therefore the whole taco/burrito/wrap branch, depends on. Two loot modifiers add squid and glow squid drops (culturaldelights:squid and glow_squid), which feed the calamari line. The three lang-only ids (corn, cucumbers, eggplants) are crop block states rather than items and are excluded, as are avocado_leaf_carpet, bamboo_mat and fried_eggplant_pasta which have models but no lang key in this build. Parent items this addon assumes you already have: farmersdelight:cutting_board, farmersdelight:cooking_pot, farmersdelight:cooked_rice, farmersdelight:tomato_sauce, farmersdelight:raw_pasta, farmersdelight:tomato and onion crops, a barrel for farmersdelight:fermenting, any forge:tools/knives knife."
+}

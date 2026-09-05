@@ -1,0 +1,177 @@
+{
+  "mod": "biomesoplenty",
+  "verified_against": "BiomesOPlenty-1.20.1-18.0.0.592.jar",
+  "item_count_in_jar": 349,
+  "chain": [
+    {
+      "id": "biomesoplenty:clover",
+      "title": "Luck of the Meadow",
+      "desc": "Break the low clover ground cover that carpets the Clover Patch, Orchard and Mystic Grove biomes."
+    },
+    {
+      "id": "biomesoplenty:goldenrod",
+      "title": "Prairie Gold",
+      "desc": "Pick goldenrod from open Prairie biomes; each stalk crafts into two yellow dye."
+    },
+    {
+      "id": "biomesoplenty:lavender",
+      "title": "The Purple Horizon",
+      "desc": "Harvest lavender from the Lavender Field and Lavender Forest biomes; one bloom crafts into purple dye."
+    },
+    {
+      "id": "biomesoplenty:cattail",
+      "title": "Reeds of the Standing Water",
+      "desc": "Cut cattails from the shallows of Wetland and Bayou biomes; each crafts into two brown dye."
+    },
+    {
+      "id": "biomesoplenty:barley",
+      "title": "A Handful of Grain",
+      "desc": "Gather wild barley from the tall grass of Pasture and Seasonal Orchard biomes."
+    },
+    {
+      "id": "biomesoplenty:toadstool",
+      "title": "Speckled Cap",
+      "desc": "Collect toadstools from Coniferous Forest, Wetland, Fungal Jungle and Pumpkin Patch floors; one can replace the mushroom in rabbit stew."
+    },
+    {
+      "id": "biomesoplenty:fir_log",
+      "title": "Timber of the Cold Slopes",
+      "desc": "Fell the tall fir trees that fill Coniferous Forest, Fir Clearing and Snowy Coniferous Forest biomes."
+    },
+    {
+      "id": "biomesoplenty:willow_log",
+      "title": "Roots in Black Water",
+      "desc": "Chop willow trees standing in the flooded Bayou and Wetland biomes."
+    },
+    {
+      "id": "biomesoplenty:white_sand",
+      "title": "Bleached Shore",
+      "desc": "Shovel white sand from the disks that generate in Mystic Grove and Tropics biomes."
+    },
+    {
+      "id": "biomesoplenty:black_sand",
+      "title": "Ash on the Beach",
+      "desc": "Dig black sand from the disks that generate around Volcanic Plains and Volcano biomes."
+    },
+    {
+      "id": "biomesoplenty:magic_log",
+      "title": "Wood That Hums",
+      "desc": "Fell the pale magic trees that grow only in the Mystic Grove biome."
+    },
+    {
+      "id": "biomesoplenty:glowshroom",
+      "title": "Lanterns Underfoot",
+      "desc": "Pick glowshrooms from the cave floor of the underground Glowing Grotto biome."
+    },
+    {
+      "id": "biomesoplenty:glowing_moss_block",
+      "title": "The Grotto Breathes Light",
+      "desc": "Mine the glowing moss blocks that pave the Glowing Grotto's vegetation layer."
+    },
+    {
+      "id": "biomesoplenty:glowworm_silk",
+      "title": "Threads That Shine",
+      "desc": "Shear the hanging glowworm silk strands from the ceilings of the Glowing Grotto."
+    },
+    {
+      "id": "biomesoplenty:spider_egg",
+      "title": "Do Not Wake Them",
+      "desc": "Mine a spider egg with a Silk Touch tool inside the Spider Nest biome."
+    },
+    {
+      "id": "biomesoplenty:stringy_cobweb",
+      "title": "Cut the Threads",
+      "desc": "Shear stringy cobweb from the choked passages of the Spider Nest biome."
+    },
+    {
+      "id": "biomesoplenty:rose_quartz_chunk",
+      "title": "Pink Fracture",
+      "desc": "Break a rose quartz cluster in the Crystalline Chasm with a pickaxe to shed two chunks, more with Fortune."
+    },
+    {
+      "id": "biomesoplenty:rose_quartz_block",
+      "title": "Compressed Blush",
+      "desc": "Craft four rose quartz chunks in a square; rose quartz also serves as an armor trim material."
+    },
+    {
+      "id": "biomesoplenty:brimstone",
+      "title": "The Inferno Erupts",
+      "desc": "Mine brimstone from the Erupting Inferno biome in the Nether; four blocks craft into brimstone bricks."
+    },
+    {
+      "id": "biomesoplenty:flesh",
+      "title": "The Ground Is Alive",
+      "desc": "Mine the flesh terrain that makes up the Visceral Heap biome in the Nether."
+    },
+    {
+      "id": "biomesoplenty:blood_bucket",
+      "title": "Draw From the Lake",
+      "desc": "Fill an empty bucket from the blood lakes and springs that pool across the Visceral Heap."
+    },
+    {
+      "id": "biomesoplenty:hellbark_log",
+      "title": "Bark of the Scorched",
+      "desc": "Fell the blackened hellbark trees that grow in the Undergrowth biome."
+    },
+    {
+      "id": "biomesoplenty:origin_sapling",
+      "title": "Where It All Began",
+      "desc": "Break the leaves of an origin tree in the rare Origin Valley biome to drop its sapling."
+    },
+    {
+      "id": "biomesoplenty:music_disc_wanderer",
+      "title": "Every Corner of the World",
+      "desc": "Awarded by the mod's all_biomes challenge advancement, which requires standing in all sixty-four Biomes O' Plenty biomes."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "biomesoplenty:wildflower",
+      "members": [
+        "biomesoplenty:rose",
+        "biomesoplenty:violet",
+        "biomesoplenty:orange_cosmos",
+        "biomesoplenty:pink_daffodil",
+        "biomesoplenty:pink_hibiscus",
+        "biomesoplenty:blue_hydrangea",
+        "biomesoplenty:icy_iris",
+        "biomesoplenty:glowflower",
+        "biomesoplenty:wilted_lily",
+        "biomesoplenty:waterlily",
+        "biomesoplenty:white_petals",
+        "biomesoplenty:burning_blossom",
+        "biomesoplenty:tall_lavender"
+      ]
+    },
+    {
+      "hub": "biomesoplenty:mahogany_planks",
+      "members": [
+        "biomesoplenty:dead_planks",
+        "biomesoplenty:fir_planks",
+        "biomesoplenty:hellbark_planks",
+        "biomesoplenty:jacaranda_planks",
+        "biomesoplenty:magic_planks",
+        "biomesoplenty:palm_planks",
+        "biomesoplenty:redwood_planks",
+        "biomesoplenty:umbran_planks",
+        "biomesoplenty:willow_planks"
+      ]
+    },
+    {
+      "hub": "biomesoplenty:porous_flesh",
+      "members": [
+        "biomesoplenty:flesh_tendons",
+        "biomesoplenty:pus_bubble",
+        "biomesoplenty:eyebulb",
+        "biomesoplenty:hair",
+        "biomesoplenty:blackstone_bulb",
+        "biomesoplenty:blackstone_spines",
+        "biomesoplenty:brimstone_fumarole",
+        "biomesoplenty:brimstone_bud",
+        "biomesoplenty:brimstone_cluster",
+        "biomesoplenty:webbing"
+      ]
+    }
+  ],
+  "notes": "Item set = 349 ids from assets/biomesoplenty/models/item/*.json intersected with item./block. keys in assets/*/lang/en_us.json. Every id above is set-membership verified against that intersection. Biome attributions were resolved by walking data/biomesoplenty/worldgen/configured_feature -> placed_feature -> biome; dye recipes, the rose_quartz_cluster loot table (2 chunks with Fortune ore_drops), the rose_quartz_block and brimstone_bricks recipes, the shears-gated loot tables (glowworm_silk, stringy_cobweb, flesh_tendons, hair), the Silk Touch-gated loot tables (spider_egg, brimstone_cluster, eyebulb, pus_bubble, buds), the rabbit_stew_from_toadstool recipe and data/biomesoplenty/loot_tables/advancements/all_biomes.json (which awards music_disc_wanderer) were all read from the jar. DROPPED: biomesoplenty:dried_salt - the item verifies, but the jar contains no worldgen feature or recipe for it (only a pickaxe tag and its block loot table), so no factual acquisition sentence could be written. No kill: entries - the only entity lang keys in the jar are entity.biomesoplenty.boat and entity.biomesoplenty.chest_boat, which are vehicles, not mobs. No dim: entries - the jar contains no data/biomesoplenty/dimension/ files; BoP adds 64 overworld/Nether biomes, not dimensions. bop_icon was excluded as a creative-tab placeholder. Only one representative log per wood line is used, and saplings are deliberately not enumerated per biome."
+}

@@ -1,0 +1,162 @@
+{
+ "mod": "mekanismtools",
+ "verified_against": "MekanismTools-1.20.1-10.4.16.80.jar",
+ "item_count_in_jar": 72,
+ "parent_mod": "mekanism",
+ "chain": [
+  {
+   "id": "mekanismtools:bronze_pickaxe",
+   "title": "Bronze Before Iron",
+   "desc": "Craft from three bronze ingots over two sticks; bronze comes out of the Metallurgic Infuser and beats iron on both speed and durability."
+  },
+  {
+   "id": "mekanismtools:bronze_chestplate",
+   "title": "Bronze Plate",
+   "desc": "Craft from eight bronze ingots; the first full armour tier the parent's alloying line hands you."
+  },
+  {
+   "id": "mekanismtools:osmium_pickaxe",
+   "title": "Osmium Edge",
+   "desc": "Craft from three osmium ingots over two sticks; osmium is the metal you were already mining for machines, so this tier costs you nothing new."
+  },
+  {
+   "id": "mekanismtools:osmium_chestplate",
+   "title": "Osmium Plate",
+   "desc": "Craft from eight osmium ingots; tougher than iron and cheap once a Digital Miner is running."
+  },
+  {
+   "id": "mekanismtools:lapis_lazuli_pickaxe",
+   "title": "Blue and Brittle",
+   "desc": "Craft from three lapis lazuli over two sticks; a deliberate joke tier that mines fast and shatters faster."
+  },
+  {
+   "id": "mekanismtools:steel_pickaxe",
+   "title": "Steel Edge",
+   "desc": "Craft from three steel ingots over two sticks; steel is infused iron, so this tier arrives with your first Metallurgic Infuser line."
+  },
+  {
+   "id": "mekanismtools:steel_chestplate",
+   "title": "Steel Plate",
+   "desc": "Craft from eight steel ingots; the workhorse armour of the mid game."
+  },
+  {
+   "id": "mekanismtools:steel_shield",
+   "title": "Steel Shield",
+   "desc": "Craft steel ingots around a vanilla shield; every Mekanism Tools material can reskin and re-stat a shield this way."
+  },
+  {
+   "id": "mekanismtools:refined_glowstone_pickaxe",
+   "title": "Glowstone Edge",
+   "desc": "Craft from three refined glowstone ingots over two sticks; refined glowstone is glowstone dust enriched through the Metallurgic Infuser, and the tool arrives pre-enchanted with Fortune."
+  },
+  {
+   "id": "mekanismtools:refined_glowstone_chestplate",
+   "title": "Glowstone Plate",
+   "desc": "Craft from eight refined glowstone ingots; fast to break but it comes out of the grid already enchanted."
+  },
+  {
+   "id": "mekanismtools:refined_obsidian_pickaxe",
+   "title": "Obsidian Edge",
+   "desc": "Craft from three refined obsidian ingots over two sticks; refined obsidian is the top Mekanism alloy metal and this is the best pickaxe the module makes."
+  },
+  {
+   "id": "mekanismtools:refined_obsidian_helmet",
+   "title": "Obsidian Crown",
+   "desc": "Craft from five refined obsidian ingots; the first piece of the endgame armour set."
+  },
+  {
+   "id": "mekanismtools:refined_obsidian_chestplate",
+   "title": "Obsidian Plate",
+   "desc": "Craft from eight refined obsidian ingots; armour toughness and durability far past netherite, at the cost of a lot of obsidian dust."
+  },
+  {
+   "id": "mekanismtools:refined_obsidian_leggings",
+   "title": "Obsidian Greaves",
+   "desc": "Craft from seven refined obsidian ingots; the heaviest and most expensive piece of the set."
+  },
+  {
+   "id": "mekanismtools:refined_obsidian_boots",
+   "title": "Obsidian Boots",
+   "desc": "Craft from four refined obsidian ingots and finish the set."
+  },
+  {
+   "id": "mekanismtools:refined_obsidian_sword",
+   "title": "Obsidian Blade",
+   "desc": "Craft from two refined obsidian ingots over a stick; the highest raw damage in the module."
+  },
+  {
+   "id": "mekanismtools:refined_obsidian_shield",
+   "title": "Obsidian Shield",
+   "desc": "Craft refined obsidian ingots around a vanilla shield; the toughest shield the module offers."
+  },
+  {
+   "id": "mekanismtools:iron_paxel",
+   "title": "One Tool, Three Jobs",
+   "desc": "Craft an iron axe, pickaxe and shovel together over two sticks; the paxel is Mekanism Tools' signature item and mines all three block classes."
+  },
+  {
+   "id": "mekanismtools:diamond_paxel",
+   "title": "Diamond Paxel",
+   "desc": "Craft a diamond axe, pickaxe and shovel over two sticks; the stepping stone to the netherite upgrade."
+  },
+  {
+   "id": "mekanismtools:netherite_paxel",
+   "title": "Netherite Paxel",
+   "desc": "Smith a diamond paxel with a netherite ingot and a Netherite Upgrade template; the strongest vanilla-material paxel."
+  },
+  {
+   "id": "mekanismtools:refined_obsidian_paxel",
+   "title": "The Last Paxel",
+   "desc": "Craft a refined obsidian axe, pickaxe and shovel over two sticks; the module's endgame tool, and a genuine rival to the Meka-Tool until you can afford one."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mekanismtools:refined_obsidian_chestplate",
+   "members": [
+    "mekanismtools:refined_obsidian_helmet",
+    "mekanismtools:refined_obsidian_leggings",
+    "mekanismtools:refined_obsidian_boots",
+    "mekanismtools:refined_obsidian_sword",
+    "mekanismtools:refined_obsidian_pickaxe",
+    "mekanismtools:refined_obsidian_axe",
+    "mekanismtools:refined_obsidian_shovel",
+    "mekanismtools:refined_obsidian_hoe",
+    "mekanismtools:refined_obsidian_paxel",
+    "mekanismtools:refined_obsidian_shield"
+   ]
+  },
+  {
+   "hub": "mekanismtools:steel_chestplate",
+   "members": [
+    "mekanismtools:steel_helmet",
+    "mekanismtools:steel_leggings",
+    "mekanismtools:steel_boots",
+    "mekanismtools:steel_sword",
+    "mekanismtools:steel_pickaxe",
+    "mekanismtools:steel_axe",
+    "mekanismtools:steel_shovel",
+    "mekanismtools:steel_hoe",
+    "mekanismtools:steel_paxel",
+    "mekanismtools:steel_shield"
+   ]
+  },
+  {
+   "hub": "mekanismtools:diamond_paxel",
+   "members": [
+    "mekanismtools:wood_paxel",
+    "mekanismtools:stone_paxel",
+    "mekanismtools:iron_paxel",
+    "mekanismtools:gold_paxel",
+    "mekanismtools:netherite_paxel",
+    "mekanismtools:bronze_paxel",
+    "mekanismtools:osmium_paxel",
+    "mekanismtools:steel_paxel",
+    "mekanismtools:lapis_lazuli_paxel",
+    "mekanismtools:refined_glowstone_paxel",
+    "mekanismtools:refined_obsidian_paxel"
+   ]
+  }
+ ],
+ "notes": "A pure material tier ladder with three parallel rungs at every step - tool, armour, shield - plus the paxel line that crosses all of them. Six addon materials (bronze, lapis lazuli, osmium, steel, refined glowstone, refined obsidian) times eleven item shapes, so the spine walks the materials and the wheels collect the shapes. ASSUMES FROM PARENT (mekanism): the entire alloying chain - bronze, osmium, steel, refined glowstone and refined obsidian ingots all come from the Metallurgic Infuser and Enrichment Chamber. This module adds no materials of its own, only shapes for the parent's metals, so it is meaningless before a Metallurgic Infuser exists. VERIFICATION: strict model/lang intersection gave 72 ids, all used ids checked against it. NO widening was needed and none was applied. IMPORTANT PARSING NOTE: the naive lang scan finds 168 item/block keys and the jar has 318 item models, but 246 of those models and 96 of those keys are per-colour shield overlay variants (bronze_shield.black, osmium_shield.cyan and so on - 6 materials times 16 dye colours). Those are banner-pattern render states produced by the mekanismtools:banner_shield recipe, NOT separate items; matching only exact three-segment item.<modid>.<name> lang keys removes all of them and leaves the true 72. DROPPED: nothing real. The 246 model-only stems are the shield overlays described above."
+}

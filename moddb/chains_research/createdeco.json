@@ -1,0 +1,134 @@
+{
+ "mod": "createdeco",
+ "verified_against": "createdeco-2.0.3-1.20.1-forge.jar",
+ "item_count_in_jar": 411,
+ "parent_mod": "create",
+ "chain": [
+  {
+   "id": "createdeco:andesite_sheet",
+   "title": "The Plate Create Forgot",
+   "desc": "A mechanical press flattens an andesite alloy into an Andesite Alloy Sheet, the plate tier the parent mod never added and the base of every andesite fitting below."
+  },
+  {
+   "id": "createdeco:industrial_iron_ingot",
+   "title": "Iron, Compacted and Hot",
+   "desc": "Heated compacting in a basin turns one plain iron ingot into an Industrial Iron Ingot; nine nuggets or one of Create's industrial iron blocks also work."
+  },
+  {
+   "id": "createdeco:industrial_iron_sheet",
+   "title": "Grey Steel Rolled Flat",
+   "desc": "Press an industrial iron ingot. This sheet is the plate the mod's whole industrial-iron line is built from, from ladders to hulls."
+  },
+  {
+   "id": "createdeco:andesite_support",
+   "title": "Something to Lean On",
+   "desc": "Four andesite alloy in a diamond yield four Andesite Supports, the vertical prop that lets pipework and machinery look like it is actually holding itself up."
+  },
+  {
+   "id": "createdeco:andesite_bars",
+   "title": "Sixteen Bars in One Go",
+   "desc": "Six andesite alloy laid in two rows produce sixteen bars, or stonecut a single alloy for the same block at a slower rate."
+  },
+  {
+   "id": "createdeco:andesite_catwalk",
+   "title": "Walkways Above the Works",
+   "desc": "Four andesite plates ringing a set of andesite bars make four catwalks; add the matching railing and a factory finally gets a floor to stand on."
+  },
+  {
+   "id": "createdeco:industrial_iron_ladder",
+   "title": "Two Rungs Per Ingot",
+   "desc": "Stonecutting one industrial iron ingot yields two ladders, a straight metal climb to match the grey machinery."
+  },
+  {
+   "id": "createdeco:industrial_iron_hull",
+   "title": "Bodywork for the Train",
+   "desc": "Industrial iron plates ringing an industrial iron block. Train hulls read as locomotive shell and come in every metal the mod adds."
+  },
+  {
+   "id": "createdeco:andesite_window",
+   "title": "Glass in an Andesite Frame",
+   "desc": "Three andesite alloy around a pane of colourless glass gives two windows, and six windows craft down into window panes."
+  },
+  {
+   "id": "createdeco:andesite_sheet_metal",
+   "title": "Panelling the Walls",
+   "desc": "Four andesite plates in a square yield four Andesite Sheet Metal, the flat cladding block that hides everything the catwalks do not."
+  },
+  {
+   "id": "createdeco:brass_door",
+   "title": "Brass on Its Hinges",
+   "desc": "Six brass ingots in the usual door shape make three Brass Doors, one of five metal door families the mod adds."
+  },
+  {
+   "id": "createdeco:locked_brass_door",
+   "title": "Only Redstone Opens This",
+   "desc": "A redstone torch and a brass door, shapeless. The locked variant refuses hands and answers only to a signal."
+  },
+  {
+   "id": "createdeco:decal_warning",
+   "title": "Signs of Danger",
+   "desc": "Stonecut one of Create's iron sheets into a warning decal; the same cut yields arrows, a skull, a fire diamond and a radiation trefoil."
+  },
+  {
+   "id": "createdeco:blue_industrial_iron_lamp",
+   "title": "Caged Blue Flame",
+   "desc": "An industrial iron nugget over a soul torch over an industrial iron plate. Swapping the torch and the metal gives twenty-four cage lamps in four colours."
+  },
+  {
+   "id": "createdeco:blue_shipping_container",
+   "title": "Freight, Stackable",
+   "desc": "A barrel, two of Create's iron sheets and a dye; or simply craft a dye together with a Create item vault to recolour it into a container."
+  },
+  {
+   "id": "createdeco:yellow_placard",
+   "title": "Label the Line",
+   "desc": "An item frame, a Create brass sheet and a dye. Placards hold an item on the wall as a legible sign for a sorting bay."
+  },
+  {
+   "id": "createdeco:netherite_sheet",
+   "title": "The Last Sheet",
+   "desc": "Pressing a netherite ingot gives the sheet the parent mod stops short of, closing out the metal ladder that starts at andesite."
+  },
+  {
+   "id": "createdeco:gold_coin",
+   "title": "Minting the Payroll",
+   "desc": "The press stamps a gold nugget into a coin, and four coins crafted together stack into a Gold Coin Stack that unstacks for four again."
+  },
+  {
+   "id": "createdeco:blue_bricks",
+   "title": "Bricks with Create's Colour",
+   "desc": "Eight vanilla bricks ringing one block of Create asurine give four Blue Bricks; every other Create decorative stone has its own brick colour."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "createdeco:brass_support",
+   "members": [
+    "createdeco:copper_support",
+    "createdeco:zinc_support",
+    "createdeco:iron_support",
+    "createdeco:industrial_iron_support",
+    "createdeco:brass_catwalk",
+    "createdeco:copper_catwalk",
+    "createdeco:zinc_catwalk",
+    "createdeco:iron_catwalk",
+    "createdeco:industrial_iron_catwalk",
+    "createdeco:brass_bars",
+    "createdeco:copper_bars",
+    "createdeco:zinc_bars",
+    "createdeco:industrial_iron_bars"
+   ]
+  },
+  {
+   "hub": "createdeco:scarlet_bricks",
+   "members": [
+    "createdeco:dean_bricks",
+    "createdeco:dusk_bricks",
+    "createdeco:pearl_bricks",
+    "createdeco:umber_bricks",
+    "createdeco:verdant_bricks"
+   ]
+  }
+ ],
+ "notes": "Verified against createdeco-2.0.3-1.20.1-forge.jar (Forge, MC 1.20.1). All 411 ids come from assets/createdeco/models/item/*.json intersected with block./item. keys in assets/createdeco/lang/en_us.json. PARENT ASSUMPTIONS: the chain starts after Create has supplied andesite alloy, brass ingots/nuggets/sheets, copper and zinc ingots, create:iron_sheet, create:industrial_iron_block, create:item_vault, a mechanical press, a basin with a heat source for heated compacting, and the decorative stones asurine, crimsite, ochrum, veridium, limestone, scoria and scorchia. Recipe sources read: data/createdeco/recipes/*.json plus data/createdeco/recipes/{pressing,compacting}/*. Verified yields: andesite_bars 16, andesite_catwalk 4, andesite_support 4, industrial_iron_support 4, andesite_sheet_metal 4, andesite_window 2, industrial_iron_ladder 2 (stonecutting), brass_door 3, gold_coin 4 from a coinstack. createdeco:industrial_iron_ingot has three routes: create:compacting with heatRequirement heated from one minecraft:iron_ingot, nine createdeco:industrial_iron_nugget, or one create:industrial_iron_block into nine. Most metal parts also have a stonecutting shortcut straight from the ingot. Cage lamps exist in blue/green/red/yellow across andesite, brass, copper, iron, industrial iron and zinc, and the blue variant is the one using minecraft:soul_torch. Shipping containers and placards exist in all sixteen dye colours. DROPPED by the desirability rule (present in the jar, deliberately unquested): every _slab, _stairs, _wall, catwalk_stairs and window_pane variant, and all *_bars_overlay and *_nugget entries. DROPPED as unverifiable: createdeco:red_bricks was checked and does NOT exist as a plain item in this jar - only the corner_, cracked_, long_, mossy_, short_ and tiled_ red-brick variants are registered, so the mod ships exactly seven base brick colours (blue from asurine, scarlet from crimsite, dean from ochrum, verdant from veridium, pearl from limestone, umber from scoria, dusk from scorchia). the parent-mod ids create:iron_sheet, create:industrial_iron_block and create:item_vault are named in descriptions only and are not quest targets here."
+}

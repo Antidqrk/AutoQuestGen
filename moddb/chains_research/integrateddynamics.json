@@ -1,0 +1,229 @@
+{
+ "mod": "integrateddynamics",
+ "verified_against": "IntegratedDynamics-1.20.1-1.31.0.jar",
+ "item_count_in_jar": 80,
+ "chain": [
+  {
+   "id": "integrateddynamics:menril_log",
+   "title": "Menril Log",
+   "desc": "Cut down a Menril tree - the tall blue-white trees that generate across the Overworld and densely in the Meneglin biome. Everything in this mod starts here."
+  },
+  {
+   "id": "integrateddynamics:menril_berries",
+   "title": "Menril Berries",
+   "desc": "Harvested from Menril leaves. Eating them clears every bad potion effect, and they are the light source inside display panels."
+  },
+  {
+   "id": "integrateddynamics:squeezer",
+   "title": "Squeezer",
+   "desc": "Iron ingots, an iron block, planks and a stick. Drop a Menril log in, right-click the piston down, and it wrings out Menril Resin."
+  },
+  {
+   "id": "integrateddynamics:drying_basin",
+   "title": "Drying Basin",
+   "desc": "Logs, iron and black dye. Pour Menril Resin in and let it evaporate; the residue is a Crystalized Menril Block."
+  },
+  {
+   "id": "integrateddynamics:crystalized_menril_block",
+   "title": "Crystalized Menril Block",
+   "desc": "The dried output of the basin. Log to resin to block is the whole resource loop, and it is worth automating before you build anything else."
+  },
+  {
+   "id": "integrateddynamics:crystalized_menril_chunk",
+   "title": "Crystalized Menril Chunk",
+   "desc": "Break the block into nine chunks. This is the currency of the mod - almost every part, cable and machine has a chunk in its recipe."
+  },
+  {
+   "id": "integrateddynamics:on_the_dynamics_of_integration",
+   "title": "On the Dynamics of Integration",
+   "desc": "A book and a chunk. The in-game manual, and genuinely the fastest way to understand what a variable card actually is."
+  },
+  {
+   "id": "integrateddynamics:cable",
+   "title": "Logic Cable",
+   "desc": "Sticks, redstone and chunks. Cables carry the network; parts clip onto their faces, and a network is just the set of cables touching each other."
+  },
+  {
+   "id": "integrateddynamics:wrench",
+   "title": "Wrench",
+   "desc": "Chunks and redstone. It pops parts off cables and rotates them without breaking the network you have already run."
+  },
+  {
+   "id": "integrateddynamics:logic_programmer",
+   "title": "Logic Programmer",
+   "desc": "A crafting table and a Crystalized Menril Block. This is where you actually write logic: pick operators, feed them variables, and get a new variable card out."
+  },
+  {
+   "id": "integrateddynamics:variable",
+   "title": "Variable Card",
+   "desc": "Paper and a chunk. A blank card. Everything the network computes is written onto one of these in the Logic Programmer."
+  },
+  {
+   "id": "integrateddynamics:variablestore",
+   "title": "Variable Store",
+   "desc": "A wooden chest, a Crystalized Menril Block and chunks. Cards only exist to the network while they sit in a store attached to it."
+  },
+  {
+   "id": "integrateddynamics:variable_transformer_input",
+   "title": "Input Variable Transformer",
+   "desc": "A sticky piston, a chunk and a Variable Card. The reader half of every part - if a part reads the world, this is inside it."
+  },
+  {
+   "id": "integrateddynamics:variable_transformer_output",
+   "title": "Output Variable Transformer",
+   "desc": "The same with a plain piston. The writer half; every part that acts on the world is built from one of these."
+  },
+  {
+   "id": "integrateddynamics:part_inventory_reader",
+   "title": "Inventory Reader",
+   "desc": "A wooden chest and an Input Transformer. Clip it to a cable against a chest and the network can see stack counts, slots and contents as values."
+  },
+  {
+   "id": "integrateddynamics:part_redstone_writer",
+   "title": "Redstone Writer",
+   "desc": "Redstone dust, a redstone block and an Output Transformer. Feed it a boolean or an integer and it emits the signal - the simplest way to make logic do something."
+  },
+  {
+   "id": "integrateddynamics:part_static_light_panel",
+   "title": "Static Light Panel",
+   "desc": "Menril Berries, redstone and an Output Transformer; a lit blank face on a cable, and the base of the display panel."
+  },
+  {
+   "id": "integrateddynamics:part_display_panel",
+   "title": "Display Panel",
+   "desc": "Berries and an Output Transformer on a Static Light Panel. Point a variable at it and it prints the live value on the wall - your debugger."
+  },
+  {
+   "id": "integrateddynamics:proxy",
+   "title": "Proxy",
+   "desc": "Iron, planks, a Variable Card and a Variable Store. It gives one variable a network-wide name so a dozen parts can reference the same computed value."
+  },
+  {
+   "id": "integrateddynamics:materializer",
+   "title": "Materializer",
+   "desc": "Obsidian, diamond, redstone and a Variable Card. It freezes a live computed value into a literal card, which is how you break feedback loops."
+  },
+  {
+   "id": "integrateddynamics:delay",
+   "title": "Delay",
+   "desc": "A clock, chunks, a Variable Card and a Variable Store. It remembers a value's history, giving the network the one thing pure logic cannot do: state over time."
+  },
+  {
+   "id": "integrateddynamics:energy_battery",
+   "title": "Energy Battery",
+   "desc": "A redstone block, a Crystalized Menril Block and chunks. Parts run on energy once you scale up, and batteries combine into larger ones in the grid."
+  },
+  {
+   "id": "integrateddynamics:coal_generator",
+   "title": "Coal Generator",
+   "desc": "Shapeless from a furnace and an Energy Battery. Crude, but enough to keep a wall of writers and the mechanical machines ticking."
+  },
+  {
+   "id": "integrateddynamics:mechanical_squeezer",
+   "title": "Mechanical Squeezer",
+   "desc": "A Squeezer, an Energy Battery, obsidian and diamonds. It does the same job on RF instead of right-clicks, and gets you off the manual resin loop."
+  },
+  {
+   "id": "integrateddynamics:proto_chorus",
+   "title": "Proto Chorus",
+   "desc": "Menril Berries and an ender pearl. Squeeze it for Liquid Chorus, and dry that for Crystalized Chorus - the second, End-flavoured resource line."
+  },
+  {
+   "id": "integrateddynamics:logic_director",
+   "title": "Logic Director",
+   "desc": "Diamonds, a Crystalized Menril Chunk and a Crystalized Chorus Chunk. It rewrites variable cards inside a store automatically, so the network can reprogram itself."
+  },
+  {
+   "id": "integrateddynamics:part_connector_omni_directional",
+   "title": "Omni-Directional Connector",
+   "desc": "Built by a dedicated recipe serializer rather than a plain shaped recipe: connectors are made and paired in groups, and a matched pair welds two distant networks into one across any distance."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "integrateddynamics:part_network_reader",
+   "members": [
+    "integrateddynamics:part_inventory_reader",
+    "integrateddynamics:part_redstone_reader",
+    "integrateddynamics:part_machine_reader",
+    "integrateddynamics:part_fluid_reader",
+    "integrateddynamics:part_entity_reader",
+    "integrateddynamics:part_block_reader",
+    "integrateddynamics:part_world_reader",
+    "integrateddynamics:part_extradimensional_reader",
+    "integrateddynamics:part_audio_reader"
+   ]
+  },
+  {
+   "hub": "integrateddynamics:part_effect_writer",
+   "members": [
+    "integrateddynamics:part_inventory_writer",
+    "integrateddynamics:part_redstone_writer",
+    "integrateddynamics:part_machine_writer",
+    "integrateddynamics:part_entity_writer",
+    "integrateddynamics:part_audio_writer",
+    "integrateddynamics:part_static_light_panel",
+    "integrateddynamics:part_dynamic_light_panel",
+    "integrateddynamics:part_display_panel",
+    "integrateddynamics:part_connector_mono_directional",
+    "integrateddynamics:part_connector_omni_directional"
+   ]
+  },
+  {
+   "hub": "integrateddynamics:logic_director",
+   "members": [
+    "integrateddynamics:logic_programmer",
+    "integrateddynamics:portable_logic_programmer",
+    "integrateddynamics:variable",
+    "integrateddynamics:variablestore",
+    "integrateddynamics:variable_transformer_input",
+    "integrateddynamics:variable_transformer_output",
+    "integrateddynamics:proxy",
+    "integrateddynamics:delay",
+    "integrateddynamics:materializer",
+    "integrateddynamics:labeller",
+    "integrateddynamics:enhancement_offset"
+   ]
+  },
+  {
+   "hub": "integrateddynamics:mechanical_drying_basin",
+   "members": [
+    "integrateddynamics:squeezer",
+    "integrateddynamics:drying_basin",
+    "integrateddynamics:mechanical_squeezer",
+    "integrateddynamics:coal_generator",
+    "integrateddynamics:energy_battery",
+    "integrateddynamics:cable",
+    "integrateddynamics:wrench",
+    "integrateddynamics:facade"
+   ]
+  },
+  {
+   "hub": "integrateddynamics:menril_planks",
+   "members": [
+    "integrateddynamics:menril_log",
+    "integrateddynamics:menril_wood",
+    "integrateddynamics:menril_door",
+    "integrateddynamics:menril_fence",
+    "integrateddynamics:menril_fence_gate",
+    "integrateddynamics:menril_torch",
+    "integrateddynamics:menril_torch_stone",
+    "integrateddynamics:menril_sapling",
+    "integrateddynamics:menril_leaves",
+    "integrateddynamics:menril_berries"
+   ]
+  },
+  {
+   "hub": "integrateddynamics:crystalized_chorus_brick",
+   "members": [
+    "integrateddynamics:crystalized_menril_block",
+    "integrateddynamics:crystalized_menril_brick",
+    "integrateddynamics:crystalized_menril_chunk",
+    "integrateddynamics:crystalized_chorus_block",
+    "integrateddynamics:crystalized_chorus_chunk",
+    "integrateddynamics:proto_chorus"
+   ]
+  }
+ ],
+ "notes": "THE PARTS ARE THE MOD, AND A NAIVE ID PASS LOSES ALL 21 OF THEM. Strict models INTERSECT lang finds 59 ids; the 21 integrateddynamics:part_* items have item models but NO item.integrateddynamics.* or block.integrateddynamics.* lang key. They are named under an INVERTED CONVENTION: parttype.integrateddynamics.<name> (e.g. parttype.integrateddynamics.inventory_reader = 'Inventory Reader', with a matching .info key). WIDENED TO 80 ON THAT PROOF - item model + parttype lang key + a shaped recipe for 20 of the 21. Pass 2 re-derived the whole set independently from .class constant-pool strings, item textures, blockstates, recipe results and loot tables and corroborated every one of the 80; the only two things pass 2 surfaced that pass 1 had not claimed were menril_torch_wall and menril_torch_stone_wall, which are wall-mounted torch blockstates with no item form (exactly like minecraft:wall_torch) and are correctly excluded. A SECOND RECIPE MISS, REGISTERED IN CODE: part_connector_omni_directional is the one part with no ordinary recipe result. It is produced by three custom serializers - integrateddynamics:crafting_special_shaped_omni_directional, _shaped_omni_directional_3 and _shapeless_omni_directional - whose recipe JSONs carry a type and nothing else, with the shape and result in RecipeSerializerCraftingSpecialShapedOmniDirectionalConfig.class. It IS obtainable; a result-key scan would have wrongly dropped it, so its chain description names the mechanic (paired connectors) rather than a shape the jar does not contain. THE RESOURCE LOOP IS NOT A CRAFTING RECIPE. crystalized_menril_block has no grid recipe: it comes from an integrateddynamics:drying_basin / mechanical_drying_basin recipe consuming 1000mB of integrateddynamics:menril_resin, and that fluid comes from an integrateddynamics:squeezer / mechanical_squeezer recipe on a menril_log (1000mB) or menril_planks (250mB). The chorus line is the same shape: popped_chorus_fruit or proto_chorus -> liquid_chorus -> crystalized_chorus_block. Both machines are therefore hard prerequisites for every other item in the mod, which is why they sit at steps 3 and 4. WORLDGEN IS THE ENTRY POINT: data/integrateddynamics/worldgen/biome/meneglin.json defines the Meneglin biome and data/integrateddynamics/forge/biome_modifier/add_feature_menril_overworld.json injects tree_menril_general into the wider Overworld, so menril_log, menril_leaves, menril_sapling, menril_berries and menril_log_filled are all worldgen-sourced with block loot tables and no recipe - obtainable, correctly kept. DROPPED AS UNOBTAINABLE: integrateddynamics:energy_battery_creative (creative-only; no recipe) and integrateddynamics:invisible_light (a technical light-source block with no recipe and no loot table). Also excluded from the chain per the desirability rule: the crystalized menril/chorus block and brick slabs and stairs, menril_slab, menril_planks_stairs, and the stripped menril log and wood variants - the block and brick forms carry the family in a wheel instead. integrateddynamics:variable_transformer is a lang-only grouping key ('Input/Output Variable Transformers'), not a registered item; the two real transformers are in the chain. NO CONSENSUS DATA: moddb.json has no integrateddynamics entry, so ordering is the recipe dependency graph alone. Jar confirmed 1.20.1 Forge: META-INF/mods.toml with modIds integrateddynamics + bundled integrateddynamicscompat (which registers no items of its own), minecraft versionRange [1.20.1,], pack_format 15, Java 17 class files, no fabric.mod.json; Modrinth lists this exact file under game_versions ['1.20.1'] and loaders ['forge']. Hard dependencies on cyclopscore and commoncapabilities must be present for any of this to load."
+}

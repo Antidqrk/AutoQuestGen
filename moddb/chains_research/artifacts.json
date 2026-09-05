@@ -1,0 +1,70 @@
+{
+ "mod": "artifacts",
+ "verified_against": "artifacts-forge-9.5.19.jar",
+ "item_count_in_jar": 45,
+ "chain": [
+  {"id": "artifacts:everlasting_beef", "title": "The Cut That Regrows", "desc": "Dropped rarely by cows and mooshrooms, and also found in bastion hoglin stables and butcher village chests."},
+  {"id": "artifacts:eternal_steak", "title": "Dinner That Never Ends", "desc": "Cooked from everlasting beef in a furnace, smoker or campfire."},
+  {"id": "artifacts:whoopee_cushion", "title": "The Oldest Joke", "desc": "Found in spawn bonus chests, desert pyramids, village tannery chests and rare trail ruins suspicious gravel."},
+  {"id": "artifacts:villager_hat", "title": "Hat of the Settled Folk", "desc": "Found in plains, desert, savanna, snowy and taiga village house chests, igloo chests and rare trail ruins."},
+  {"id": "artifacts:snowshoes", "title": "Walking on Powder", "desc": "Found in igloo chests, ancient city ice boxes, snowy and taiga village houses and rare trail ruins."},
+  {"id": "artifacts:digging_claws", "title": "Nails Like Shovels", "desc": "Found in abandoned mineshaft, buried treasure and village toolsmith chests, and in cold ocean ruin suspicious sand."},
+  {"id": "artifacts:superstitious_hat", "title": "Luck You Can Wear", "desc": "Found in abandoned mineshafts, pillager outposts, stronghold corridors, underwater ruins, armorer village chests and desert wells."},
+  {"id": "artifacts:umbrella", "title": "Shade and Slow Descent", "desc": "Found in desert pyramids, buried treasure, village tannery chests and desert well suspicious sand."},
+  {"id": "artifacts:flippers", "title": "Built for the Current", "desc": "Found in buried treasure, shipwreck treasure and large underwater ruin chests."},
+  {"id": "artifacts:anglers_hat", "title": "The Lucky Angler", "desc": "Found in buried treasure, jungle temples, large underwater ruins, village tannery chests and cold ocean ruin suspicious sand."},
+  {"id": "artifacts:night_vision_goggles", "title": "Eyes for the Dark", "desc": "Found in abandoned mineshafts, nether fortresses, ruined portals, shipwreck treasure and desert pyramid suspicious sand."},
+  {"id": "artifacts:obsidian_skull", "title": "Skull That Shrugs Off Fire", "desc": "Found in abandoned mineshafts, ruined portals, shipwreck treasure and desert pyramid suspicious sand."},
+  {"id": "artifacts:cowboy_hat", "title": "Reins Over Anything", "desc": "Found in nether fortresses, bastion hoglin stables, ruined portals and desert pyramid suspicious sand."},
+  {"id": "artifacts:power_glove", "title": "A Heavier Fist", "desc": "Found in pillager outposts, ruined portals, stronghold corridors, large underwater ruins and desert pyramid suspicious sand."},
+  {"id": "artifacts:vampiric_glove", "title": "Taking Back What Was Lost", "desc": "Found in abandoned mineshafts, desert pyramids, armorer village chests and warm ocean ruin suspicious sand."},
+  {"id": "artifacts:fire_gauntlet", "title": "The Burning Hand", "desc": "Found in bastion treasure rooms, ruined portals, large underwater ruins and cold ocean ruin suspicious sand."},
+  {"id": "artifacts:cross_necklace", "title": "A Longer Grace", "desc": "Found in bastion treasure rooms, nether fortresses, pillager outposts, large underwater ruins and temple village chests."},
+  {"id": "artifacts:crystal_heart", "title": "Four Hearts More", "desc": "Found in bastion treasure rooms, end city treasure and pillager outpost chests."},
+  {"id": "artifacts:helium_flamingo", "title": "Absurd but Effective", "desc": "Found in ancient city, end city treasure and stronghold corridor chests."},
+  {"id": "artifacts:chorus_totem", "title": "Second Chance from the End", "desc": "Found in end city treasure chests and woodland mansions."}
+ ],
+ "collections": [
+  {
+   "hub": "artifacts:running_shoes",
+   "members": [
+    "artifacts:aqua_dashers",
+    "artifacts:bunny_hoppers",
+    "artifacts:flippers",
+    "artifacts:kitty_slippers",
+    "artifacts:rooted_boots",
+    "artifacts:snowshoes",
+    "artifacts:steadfast_spikes"
+   ]
+  },
+  {
+   "hub": "artifacts:superstitious_hat",
+   "members": [
+    "artifacts:anglers_hat",
+    "artifacts:cowboy_hat",
+    "artifacts:villager_hat",
+    "artifacts:night_vision_goggles",
+    "artifacts:novelty_drinking_hat",
+    "artifacts:plastic_drinking_hat",
+    "artifacts:snorkel"
+   ]
+  },
+  {
+   "hub": "artifacts:cross_necklace",
+   "members": [
+    "artifacts:panic_necklace",
+    "artifacts:flame_pendant",
+    "artifacts:shock_pendant",
+    "artifacts:thorn_pendant",
+    "artifacts:charm_of_sinking",
+    "artifacts:antidote_vessel",
+    "artifacts:universal_attractor",
+    "artifacts:chorus_totem",
+    "artifacts:crystal_heart",
+    "artifacts:lucky_scarf",
+    "artifacts:scarf_of_invisibility"
+   ]
+  }
+ ],
+ "notes": "All ids verified against assets/artifacts/models/item/*.json intersected with item./block. lang keys (45 items). Artifacts is almost entirely loot-driven: the jar contains only 4 recipe files (eternal_steak from everlasting_beef via smelting, smoking and campfire_cooking - the other file is the shared advancement), so every chain 'desc' was derived from data/artifacts/loot_tables/inject/** and the matching data/artifacts/loot_modifiers/inject/** global loot modifiers, which name the exact vanilla chest, archaeology or entity table each artifact is injected into. Two additional universal sources exist and cover every wearable: data/artifacts/loot_tables/entities/mimic.json rolls the artifacts:artifact table on every mimic kill, and data/artifacts/loot_tables/chests/campsite_chest.json rolls the same table in the underground campsite structure - note campsites and mimics only generate in chunks created after the mod was installed. Dropped ids: umbrella_blocking, umbrella_gui, umbrella_held_blocking, umbrella_held_idle and umbrella_idle (render-only models with no item./block. lang key, so they failed set-membership). Excluded from the chain but real items: artifacts:mimic_spawn_egg (creative-only spawn egg, no loot or recipe source), and artifacts:novelty_drinking_hat / artifacts:plastic_drinking_hat, which are only reachable through the artifacts:items/drinking_hat sub-table rolled inside artifacts:artifact rather than any named structure - they are kept as wheel members only. artifacts:artifact is a loot table id, not an item, and was deliberately not written as a quest id. No unverifiable ids were written."
+}

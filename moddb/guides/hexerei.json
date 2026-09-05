@@ -1,0 +1,531 @@
+{
+ "mod": "hexerei",
+ "ids_in_jar": 357,
+ "videos": [
+  {
+   "title": "Hexerei [1.18 Forge | Full Showcase]",
+   "channel": "yorkmouse",
+   "views": 73234,
+   "duration": 439,
+   "id": "0EITuNiow9c",
+   "chars": 6608
+  }
+ ],
+ "items": {
+  "hexerei:candle": {
+   "mentions": 7,
+   "videos": 1,
+   "first_at": 0.334,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:mixing_cauldron": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1334,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:candle_dipper": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2992,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:herb_drying_rack": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2431,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:infused_fabric": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6227,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:blood_sigil": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5863,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:tallow_impurity": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3832,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:book_of_shadows": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5328,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:crystal_ball": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5502,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:broom_keychain": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8725,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:warhammer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6559,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:animal_fat": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3143,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:sage_burning_plate": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4385,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:sage_bundle": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4441,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:herb_jar": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.488,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:coffer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1748,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:pestle_and_mortar": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3939,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "hexerei:gold_rings": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8622,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "items_by_display_name": {
+  "hexerei:mixing_cauldron": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1334,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Mixing Cauldron"
+  },
+  "hexerei:herb_drying_rack": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2431,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Drying Rack"
+  },
+  "hexerei:warhammer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6559,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Warhammer"
+  },
+  "hexerei:gold_rings": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8622,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Gold Rings"
+  },
+  "hexerei:blood_sigil": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5863,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Blood Sigil"
+  },
+  "hexerei:tallow_impurity": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3832,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Tallow Impurity"
+  },
+  "hexerei:crystal_ball": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5502,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Crystal Ball"
+  },
+  "hexerei:pestle_and_mortar": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3939,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Pestle and Mortar"
+  },
+  "hexerei:sage_bundle": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4441,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Sage Bundle"
+  },
+  "hexerei:infused_fabric": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6227,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Infused Fabric"
+  },
+  "hexerei:animal_fat": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3143,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Animal Fat"
+  },
+  "hexerei:sage_burning_plate": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4385,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Sage Burning Plate"
+  },
+  "hexerei:broom_keychain": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8725,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Broom Chain"
+  },
+  "hexerei:book_of_shadows": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5328,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Book of Shadows"
+  }
+ },
+ "human_notes": {
+  "_confidence": "GOOD. 0EITuNiow9c (yorkmouse, 'Hexerei Full Showcase') is native English and transcribed cleanly. It is a showcase rather than a step-by-step tutorial, so it is stronger on WHAT MATTERS and gotchas than on strict ordering; the ordering below is what the video establishes explicitly (find selenite -> mixing cauldron -> everything else). Hexerei ships NO advancements and NO patchouli data in the jar, so a jar scan gives no ordering whatever for this mod. Note the video is from an early-access build and flags several items as work-in-progress -- those are recorded under traps.",
+  "order": [
+   {
+    "claim": "Selenite is the material everything else waits on, and it only generates in geodes in JUNGLE and SWAMP biomes. Craft a Dowsing Rod first and use it to find them -- the leaves on the rod turn green when you look towards the right biome.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:dowsing_rod",
+     "hexerei:budding_selenite",
+     "hexerei:large_selenite_bud",
+     "hexerei:medium_selenite_bud"
+    ],
+    "note": "Selenite crystals spawn in geodes, but only under jungles and swamps. The Dowsing Rod locates those biomes - its leaves tint green when facing one."
+   },
+   {
+    "claim": "The same two biomes carry the mod's two trees: Mahogany in jungles, Willow in swamps. Both matter later because your broom is made from one of them.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:mahogany_broom",
+     "hexerei:willow_broom"
+    ],
+    "note": "Two new trees: mahogany in jungles and willow in swamps."
+   },
+   {
+    "claim": "THE MIXING CAULDRON REPLACES THE CRAFTING TABLE. This is the mod's workstation and nearly every recipe runs through it -- fill it with a fluid from buckets, right-click to open it, then add the items. Build it before anything else you want to make.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:mixing_cauldron"
+    ],
+    "note": "The Mixing Cauldron replaces the crafting table as the witch's workstation - ingredients combined with fluids produce the mod's gear."
+   },
+   {
+    "claim": "Herbs are the mod's renewable input and there are four to find in swamps: Mugwort, Belladonna, Mandrake and Yellow Dock. Each gives two different drops when harvested. Sage is a fifth, and its seeds come from breaking grass.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:mugwort_bush",
+     "hexerei:belladonna_plant",
+     "hexerei:mandrake_plant",
+     "hexerei:yellow_dock_bush",
+     "hexerei:sage_bundle"
+    ],
+    "note": "Four herb bushes - mugwort, belladonna, mandrake and yellow dock - each give two items per harvest; sage seeds come from breaking grass."
+   },
+   {
+    "claim": "Candles are the first real production chain: combine animal fat and honeycomb in the cauldron to make Tallow, put a Dipper on top of the cauldron, give it string, and it produces candles automatically.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:candle_dipper",
+     "hexerei:mixing_cauldron",
+     "hexerei:tallow_bucket",
+     "hexerei:candle",
+     "hexerei:candelabra"
+    ],
+    "note": "Candle production: a Candle Dipper on the Mixing Cauldron, equipped with string, over a cauldron of tallow (animal fat plus honeycomb combined in the cauldron)."
+   },
+   {
+    "claim": "The Broom is the goal players actually come for, and it is a late craft made from Mahogany or Willow planks. Everything before it is preparation.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:mahogany_broom",
+     "hexerei:willow_broom",
+     "hexerei:broom_brush"
+    ],
+    "note": "Brooms craft from either mahogany or willow."
+   }
+  ],
+  "gates": [
+   {
+    "claim": "Pick your broom wood deliberately -- they are not cosmetic variants. Willow is the cheap one and is slower and less precise; Mahogany is faster AND fire resistant. If you intend to fly anywhere near lava, make the Mahogany one.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:mahogany_broom",
+     "hexerei:willow_broom"
+    ],
+    "note": "Willow brooms are the cheap option - slower and less precise; mahogany flies faster and resists fire."
+   },
+   {
+    "claim": "A broom needs a brush attachment to fly. Place the broom, shift-right-click to open its GUI, and fit attachments there; the standard Broom Brush comes with it and the Enhanced Broom Brush has twice the durability.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:broom_brush",
+     "hexerei:herb_enhanced_broom_brush",
+     "hexerei:mahogany_broom"
+    ],
+    "note": "Shift-right-click a placed broom to open its attachment GUI; the enhanced brush carries double the durability of the default."
+   },
+   {
+    "claim": "Water and lava will throw you off a broom unless you fit the right tip. The Waterproof Tip lets you fly through water for a limited time, the Netherite Tip through lava without the broom burning.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:broom_waterproof_tip",
+     "hexerei:broom_netherite_tip"
+    ],
+    "note": "The waterproof tip allows limited underwater flight (normally an instant dismount); the netherite tip survives lava."
+   },
+   {
+    "claim": "Blood is a real ingredient and you harvest it from yourself: craft a Blood Sigil, put it in a Mixing Cauldron, then jump in and out. Drinking it gives temporary absorption; it also dyes candles.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:blood_sigil",
+     "hexerei:mixing_cauldron",
+     "hexerei:blood_bottle",
+     "hexerei:blood_bucket"
+    ],
+    "note": "Blood: place a blood sigil in the mixing cauldron and hop in and out. Drinking it grants temporary absorption, and it also dyes candles."
+   },
+   {
+    "claim": "Herbs must be dried on a Drying Rack before most recipes accept them, and the Pestle and Mortar is what grinds them afterwards.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:herb_drying_rack",
+     "hexerei:pestle_and_mortar",
+     "hexerei:dried_mugwort_leaves",
+     "hexerei:dried_sage"
+    ],
+    "note": "The Herb Drying Rack dries the swamp herbs; the pestle and mortar grinds them for later recipes."
+   }
+  ],
+  "bosses": [],
+  "traps": [
+   {
+    "claim": "Do not farm dried herbs expecting to use them yet. At this version they have no purpose beyond compost -- the ritual and candle-effect systems they are meant for are not finished.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:dried_mugwort_leaves",
+     "hexerei:dried_belladonna_flowers",
+     "hexerei:dried_mandrake_flowers",
+     "hexerei:dried_yellow_dock_flowers"
+    ],
+    "note": "Dried herbs currently have little use beyond compost."
+   },
+   {
+    "claim": "Do not eat Belladonna Berries. The guide flags them specifically.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:belladonna_berries"
+    ],
+    "note": "Belladonna berries are best left uneaten."
+   },
+   {
+    "claim": "The Book of Shadows and the Crystal Ball are unfinished decoration at this version -- the scrying and infusion systems they belong to do not exist yet. Do not build quests that expect them to do something.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:book_of_shadows",
+     "hexerei:crystal_ball"
+    ],
+    "note": "The Book of Shadows and the crystal ball are work-in-progress - decorative for now."
+   },
+   {
+    "claim": "Descending on a broom with shift is buggy. The reliable method is to open the broom's settings, pick the green option so it floats indefinitely, then sneak-click and pick the red option to make it descend when uncontrolled -- and you take no fall damage that way.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:mahogany_broom",
+     "hexerei:willow_broom"
+    ],
+    "note": "Broom descent on the sneak key is buggy: the green broom setting hovers indefinitely, the red setting auto-lands the broom gently when dismounted."
+   },
+   {
+    "claim": "Witch's Armour is weaker than iron and its special abilities are not implemented yet -- it is currently a cosmetic choice, not an upgrade.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:infused_fabric"
+    ],
+    "note": "Witch armor (infused fabric) sits slightly below iron in protection and is still work-in-progress."
+   }
+  ],
+  "signature": [
+   {
+    "claim": "The flying broom is the mod's whole identity and the thing every guide builds towards -- it takes storage satchels, cosmetic rings and a customisable chain, plus the water and lava tips.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:mahogany_broom",
+     "hexerei:willow_broom",
+     "hexerei:large_satchel",
+     "hexerei:ender_satchel",
+     "hexerei:broom_keychain",
+     "hexerei:broom_seat"
+    ],
+    "note": "Broom satchels add 9-27 slots of storage to the broom itself, and the broom chain displays any chosen item as a hanging charm."
+   },
+   {
+    "claim": "The Sage Burning Plate is the mod's standout utility: burn a Dried Sage Bundle in it and mobs cannot spawn within 48 blocks. Sneak-right-click with an empty hand to take the bundle back, right-click to cycle its particle display.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:sage_burning_plate",
+     "hexerei:dried_sage_bundle",
+     "hexerei:sage_bundle"
+    ],
+    "note": "A dried sage bundle burning on the sage plate suppresses mob spawning in a 48-block radius; crouch-click with an empty hand to remove the bundle."
+   },
+   {
+    "claim": "Two storage items are worth their own quests because they behave unusually. The Coffer is a portable shulker-like box that opens automatically when you walk near it, can be dyed and renamed, and is picked up instantly by punching it. The Herb Jar holds one item type up to 1024 -- punch the front for one, sneak-punch for a stack, other sides open the GUI.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:coffer",
+     "hexerei:herb_jar"
+    ],
+    "note": "The Coffer is a portable chest in the shulker mould - punch it to pick it up, and it opens automatically nearby. The Herb Jar stores up to 1,024 of one item."
+   },
+   {
+    "claim": "Candles are unusually deep for a decoration item -- up to four on one block, each dyeable and each lit individually, and they feed the Candelabra which can stand or hang.",
+    "video": "0EITuNiow9c",
+    "ids": [
+     "hexerei:candle",
+     "hexerei:candelabra",
+     "hexerei:candle_dipper"
+    ],
+    "note": "Candles can be dyed, placed four to a block, mixed by colour and lit individually; the candelabra version stands or hangs from ceilings."
+   }
+  ]
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "mod": "blue_skies",
+ "ids_in_jar": 1245,
+ "videos": [
+  {
+   "id": "5NkFASCTTVs",
+   "title": "HOW TO GO TO THE 2 DIMENSIONS IN THE BLUE SKIES MOD IN MINECRAFT!",
+   "channel": "Podaling11",
+   "views": 735,
+   "duration": 347,
+   "chars": 2615,
+   "secs": 815
+  }
+ ],
+ "items": {
+  "blue_skies:lunar_stone": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2465,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "blue_skies:lunar_stonebrick": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2465,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "entry": [
+   "TWO separate dimensions, each with its OWN portal, built like a Nether portal frame but from the dimension's own stone brick, and lit with blue_skies:zeal_lighter (the guide says 'zeoliter' - Whisper mangling of Zeal Lighter). Source 5NkFASCTTVs.",
+   "EVERDAWN: frame of blue_skies:lunar_stonebrick, lit with blue_skies:zeal_lighter, creating blue_skies:everdawn_portal. The guide describes arriving to 'purple trees, purple everything'.",
+   "EVERBRIGHT: frame of blue_skies:turquoise_stonebrick, lit with blue_skies:zeal_lighter, creating blue_skies:everbright_portal. The guide notes you 'end up in a cave' and have to climb to the surface.",
+   "The guide says the frame is 'similar to a nether portal... just make it kinda skinnier', so exact dimensions are NOT reliably captured here.",
+   "Both stone bricks and the lighter must be obtained in the OVERWORLD before either dimension is reachable - this is the fact the generator most needs."
+  ],
+  "boss_order": [
+   "NOT CAPTURED. Only the entry video was transcribed for this mod. Blue Skies' dungeon/boss ladder (each dimension has its own) is NOT sourced here and must not be invented."
+  ],
+  "order": [
+   "You spawn holding a lore book the guide calls 'Blue Lore', but in the version filmed it was unopenable: 'this item is a work in progress and incomplete so you can't open the book yet'. Do NOT build a quest around reading it without checking it works in 1.20.1.",
+   "Everbright drops you underground; the first task on arrival there is to dig up to the surface."
+  ],
+  "gates": [
+   "HARD GATE: no portal lights without blue_skies:zeal_lighter. Flint and steel does not work."
+  ],
+  "traps": [
+   "The guide warns the Immersive Portals mod is incompatible (loader/mixin mismatch in the version filmed). Version-specific, but worth not promising portal-linking behaviour."
+  ],
+  "signature": [
+   "blue_skies:zeal_lighter - the single item that unlocks both dimensions.",
+   "blue_skies:lunar_stonebrick and blue_skies:turquoise_stonebrick - the two frame materials that distinguish Everdawn from Everbright."
+  ]
+ }
+}

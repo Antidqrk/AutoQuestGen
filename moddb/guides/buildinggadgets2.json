@@ -1,0 +1,35 @@
+{
+ "mod": "buildinggadgets2",
+ "ids_in_jar": 9,
+ "installed_in_pack": true,
+ "videos": [],
+ "items": {},
+ "no_video_evidence": "transcription did not complete for this mod; human_notes below are jar-derived only",
+ "human_notes": {
+  "order": [
+   "[jar] every gadget shares one base of iron + lapis + redstone and differs only by its 'power' component, so the whole mod unlocks at roughly the same moment: once you have diamonds.",
+   "[jar] buildinggadgets2:gadget_building - diamond. The one people mean by 'the building gadget'.",
+   "[jar] buildinggadgets2:gadget_exchanging - diamond. Swaps placed blocks for another type.",
+   "[jar] buildinggadgets2:gadget_copy_paste - emerald. Copies a region and stamps it elsewhere.",
+   "[jar] buildinggadgets2:gadget_cut_paste - shears. Moves a region rather than duplicating it.",
+   "[jar] buildinggadgets2:gadget_destruction - ender pearl. Bulk removal.",
+   "[jar] buildinggadgets2:template_manager (iron + lapis + paper + redstone) plus buildinggadgets2:template and buildinggadgets2:redprint are the save/share layer for copied builds."
+  ],
+  "gates": [
+   "[jar] HARD: diamond for the two most-used gadgets, emerald for copy-paste, an ender pearl for destruction. There is no cheap early-game entry.",
+   "[jar] The mod is buildinggadgets2, a rewrite - NOT the older 'buildinggadgets'. Its registry has only 9 real ids; the other 21 entries in assets/.../models/item are render states, not craftables."
+  ],
+  "structures": [],
+  "traps": [
+   "[jar] buildinggadgets2:render_block is literally named 'Render Block (DO NOT USE)' in the mod's own lang file. It must never appear as a quest task or reward.",
+   "NOT VERIFIED BY VIDEO: transcription did not reach this mod."
+  ],
+  "signature": [
+   "buildinggadgets2:gadget_building",
+   "buildinggadgets2:gadget_exchanging",
+   "buildinggadgets2:gadget_copy_paste",
+   "buildinggadgets2:gadget_destruction",
+   "buildinggadgets2:template_manager"
+  ]
+ }
+}

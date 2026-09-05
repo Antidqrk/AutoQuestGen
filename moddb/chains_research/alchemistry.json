@@ -1,0 +1,93 @@
+{
+  "mod": "alchemistry",
+  "verified_against": "alchemistry-1.20.1-2.3.4.jar",
+  "item_count_in_jar": 14,
+  "chain": [
+    {
+      "id": "alchemistry:dissolver",
+      "title": "Dissolver",
+      "desc": "Iron, pistons and two magma blocks around redstone. Feed it dirt or a diamond and it breaks the thing into the chemical elements it is made of. Nothing else here works until it exists."
+    },
+    {
+      "id": "alchemistry:compactor",
+      "title": "Compactor",
+      "desc": "The same iron-and-piston frame with two stone pressure plates. It squeezes element dust into ingots, which is how the periodic table becomes metal you can actually use."
+    },
+    {
+      "id": "alchemistry:liquifier",
+      "title": "Liquifier",
+      "desc": "A cauldron under the frame. Turns an element or compound into its fluid form, and it is the only way to get chlorine or hydrogen into a tank."
+    },
+    {
+      "id": "alchemistry:atomizer",
+      "title": "Atomizer",
+      "desc": "Two cauldrons instead of one, flanking the redstone. The Liquifier run backwards - fluid in, solid out - so gases can be condensed back into something stackable."
+    },
+    {
+      "id": "alchemistry:combiner",
+      "title": "Combiner",
+      "desc": "A diamond over obsidian in the machine frame. It builds compounds out of elements by formula: two hydrogen and an oxygen really do give you water. This is the machine the whole mod is named for."
+    },
+    {
+      "id": "alchemistry:reactor_casing",
+      "title": "Reactor Casing",
+      "desc": "Blaze powder ringed with osmium and platinum ingots, four at a time. Both metals come out of your own Dissolver and Compactor, so this is the first block that requires the mod to already be running."
+    },
+    {
+      "id": "alchemistry:reactor_input",
+      "title": "Reactor Input",
+      "desc": "A hopper above and below a Reactor Casing. One face of the reactor multiblock, and the only way to get feedstock into it."
+    },
+    {
+      "id": "alchemistry:reactor_output",
+      "title": "Reactor Output",
+      "desc": "A dropper above and below a Reactor Casing. The other end of the plumbing - without one the reactor jams as soon as it makes anything."
+    },
+    {
+      "id": "alchemistry:reactor_energy",
+      "title": "Reactor Energy",
+      "desc": "Redstone above and below a Reactor Casing. The power port; a reactor with no energy face is a very expensive stack of blocks."
+    },
+    {
+      "id": "alchemistry:reactor_glass",
+      "title": "Reactor Glass",
+      "desc": "Not a crafting recipe - combine lead oxide with silicon dioxide in the Combiner. Leaded glass, so you can watch a fission reaction without being cooked by it."
+    },
+    {
+      "id": "alchemistry:fission_core",
+      "title": "Fission Core",
+      "desc": "Three blaze rods between six yttrium ingots. Yttrium is a rare-earth you will only ever see by dissolving something and compacting the dust, which is what gates the reactor tier."
+    },
+    {
+      "id": "alchemistry:fission_chamber_controller",
+      "title": "Fission Chamber Controller",
+      "desc": "Reactor Casings, glass and glowstone dust around redstone. The brain of the fission multiblock: it splits a heavy element into two lighter ones, so uranium becomes things you actually wanted."
+    },
+    {
+      "id": "alchemistry:fusion_core",
+      "title": "Fusion Core",
+      "desc": "Three netherite scrap between six tungsten ingots. Tungsten is another Dissolver product, and the scrap makes this the most expensive component in the mod."
+    },
+    {
+      "id": "alchemistry:fusion_chamber_controller",
+      "title": "Fusion Chamber Controller",
+      "desc": "Reactor Casings and glass around a nether star. Fuses two light elements into a heavier one - the endgame machine, and the only route to elements that exist nowhere in the world."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "alchemistry:reactor_casing",
+      "members": [
+        "alchemistry:reactor_input",
+        "alchemistry:reactor_output",
+        "alchemistry:reactor_energy",
+        "alchemistry:reactor_glass",
+        "alchemistry:fission_core",
+        "alchemistry:fission_chamber_controller",
+        "alchemistry:fusion_core",
+        "alchemistry:fusion_chamber_controller"
+      ]
+    }
+  ],
+  "notes": "SHORT CHAIN, DECLARED SHORT, AND THE REASON IS STRUCTURAL: alchemistry registers exactly 14 items and all 14 are in the chain. Nothing is padded. The mod is enormous by recipe count - 5,735 recipes across 14 custom types - but every one of those recipes produces an item in the CHEMLIB namespace, not its own. alchemistry ships the machines; chemlib ships the periodic table and the compounds. That is why a mod with 3,481 fusion recipes has a 14-step chain. Verified against alchemistry-1.20.1-2.3.4.jar: META-INF/mods.toml modId=alchemistry, modLoader=javafml, minecraft versionRange [1.20.1,1.21), forge [47,), mandatory dependencies on chemlib [2.0.18,) and alchemylib [1.0.29,); no fabric.mod.json, all 201 sampled class files at major version 61 (Java 17 = 1.20.1). ID DERIVATION, two independent passes, both giving 14 with no widening required. Pass 1 (assets): assets/alchemistry/models/item/ holds 14 json files, assets/alchemistry/blockstates/ holds 14, and assets/alchemistry/lang/en_us.json holds exactly 14 block.alchemistry.* keys and ZERO item.alchemistry.* keys. model-minus-lang and lang-minus-model are both empty. The zero item. keys are the tell: every one of this mod's items is a BlockItem, and a rule that only looked at item.<modid>.* would have returned nothing at all for this mod. Pass 2 (bytecode, derived without touching assets): the CONSTANT_Utf8 pool of com/smashingmods/alchemistry/registry/BlockRegistry.class lists exactly those 14 registry names, and ItemRegistry.class contains no names of its own - it streams BlockRegistry and derives each BlockItem from the block's path, which confirms structurally that there are no pure items. WHY NO CHEMLIB IDS APPEAR HERE: the ~1,900 element, dust, ingot, compound and fluid ids this mod's recipes produce all live under chemlib:, a separate mod with its own jar, its own mods.toml and its own registry. They are not alchemistry's to claim and a chemlib.json is where they belong; moddb.json has no chemlib entry yet either. This file therefore deliberately contains only alchemistry: ids, and no registers_into entry is added, because alchemistry does NOT register into chemlib - it merely consumes it. OBTAINABILITY: all 14 confirmed, nothing dropped. Thirteen have crafting_shaped recipes in data/alchemistry/recipes/ and all 14 have block loot tables. The fourteenth, alchemistry:reactor_glass, has NO crafting recipe and is made in the mod's own machine - data/alchemistry/recipes/combiner/reactor_glass.json is type alchemistry:combiner taking chemlib:lead_oxide plus chemlib:silicon_dioxide - so a scanner that only reads vanilla recipe types would report it unobtainable. It is obtainable, but only after the Combiner exists, which is why it sits below the Combiner in the chain. FORGE:CONDITIONAL WRAPPERS: 707 of the recipes in this jar are wrapped in forge:conditional gating on a third mod being loaded. None of them produces an alchemistry: id - they exist so that dissolving, say, a Mekanism or Thermal ore yields the right elements when that mod is present - so no id above is conditional on anything but alchemistry itself. ORDERING. The crafting graph alone is nearly flat: all five base machines (dissolver, compactor, liquifier, atomizer, combiner) are built from vanilla materials only and none takes another as an ingredient. The decisive graph here is the MATERIAL flow, which is unambiguous and readable straight off the recipe types. alchemistry:dissolver is the only machine in the mod whose inputs are vanilla items - its 707 dissolver recipes take minecraft: blocks and give chemlib: elements. Every other machine's recipes take chemlib: inputs: compactor turns chemlib dust into chemlib ingots, liquifier turns a chemlib item into a chemlib fluid, atomizer turns a chemlib fluid back into an item, combiner assembles chemlib elements into chemlib compounds. So without the Dissolver the other four have literally nothing to eat. Above the base tier the crafting graph takes over and is strict: reactor_casing needs chemlib:osmium_ingot and chemlib:platinum_ingot, i.e. Dissolver plus Compactor output; reactor_input, reactor_output, reactor_energy, fission_chamber_controller and fusion_chamber_controller all list alchemistry:reactor_casing as a key ingredient; fission_core needs chemlib:yttrium_ingot and fusion_core needs chemlib:tungsten_ingot plus netherite scrap, which places fusion last. CONSENSUS CONFLICT, RECORDED AND OVERRIDDEN: moddb.json orders liquifier 0.0, compactor 0.167, combiner 0.333, dissolver 0.5, atomizer 0.667, fission_chamber_controller 0.833, fusion_chamber_controller 1.0 - putting the Dissolver FOURTH, behind three machines that cannot process anything until it has run. No crafting edge forbids that order, which is presumably how it survived into three packs, but the material graph does: liquifier, compactor and combiner all take chemlib inputs exclusively, and in a world with only alchemistry and chemlib installed the Dissolver is the sole source of those. The graph is preferred and the Dissolver is placed first. Consensus also omits the seven reactor blocks and both cores, all of which are real and recipe-backed. Consensus agrees with the graph on the last two entries (fission then fusion), which the recipes confirm - fusion_chamber_controller demands a minecraft:nether_star and fission_chamber_controller does not."
+}

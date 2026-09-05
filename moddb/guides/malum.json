@@ -1,0 +1,810 @@
+{
+ "mod": "malum",
+ "ids_in_jar": 610,
+ "videos": [
+  {
+   "title": "Spirit Magic in Minecraft! Malum Beginner's Guide",
+   "channel": "ignVoiding",
+   "views": 24891,
+   "duration": 676,
+   "id": "sNurQTYaqv0",
+   "chars": 6084
+  }
+ ],
+ "items": {
+  "malum:runewood": {
+   "mentions": 7,
+   "videos": 1,
+   "first_at": 0.1405,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:hex_ash": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.2928,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:spirit_crucible": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.7754,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:alchemical_impetus": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.7848,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:arcane_spirit": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.0348,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:runewood_planks": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4209,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:wicked_spirit": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0289,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:spirit_altar": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1372,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:spirit_fabric": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4539,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:tainted_rock": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2651,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:sacred_spirit": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0193,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:twisted_rock": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2525,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:ether": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0658,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:runewood_log": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.9693,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:blazing_quartz": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.11,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:eldritch_spirit": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0747,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:raw_soulstone": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2095,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:runewood_totem_base": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9568,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:aerial_spirit": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0407,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:natural_quartz": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1034,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:ring_of_alchemical_mastery": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6612,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:necklace_of_the_hidden_blade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7308,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:spirit_jar": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3808,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:infernal_spirit": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0584,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:spirit_pouch": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4787,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:aqueous_spirit": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0668,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:astral_weave": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5728,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:earthen_spirit": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0497,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:ring_of_curative_talent": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6471,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:belt_of_the_prospector": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6082,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "malum:runewood_obelisk": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4079,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "items_by_display_name": {
+  "malum:runewood": {
+   "mentions": 7,
+   "videos": 1,
+   "first_at": 0.1405,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Runewood"
+  },
+  "malum:spirit_crucible": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.7754,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Spirit Crucible"
+  },
+  "malum:alchemical_impetus": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.7848,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Alchemical Impetus"
+  },
+  "malum:arcane_spirit": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.0348,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Arcane Spirit"
+  },
+  "malum:runewood_log": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.9693,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Runewood Log"
+  },
+  "malum:runewood_planks": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4209,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Runewood Planks"
+  },
+  "malum:spirit_altar": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1372,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Spirit Altar"
+  },
+  "malum:tainted_rock": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2651,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Tainted Rock"
+  },
+  "malum:twisted_rock": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2525,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Twisted Rock"
+  },
+  "malum:sacred_spirit": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0193,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Sacred Spirit"
+  },
+  "malum:spirit_fabric": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4539,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Spirit Fabric"
+  },
+  "malum:wicked_spirit": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0289,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Wicked Spirit"
+  },
+  "malum:runewood_obelisk": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4079,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Runewood Obelisk"
+  },
+  "malum:runewood_totem_base": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9568,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Runewood Totem Base"
+  },
+  "malum:spirit_jar": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3808,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Spirit Jar"
+  },
+  "malum:aerial_spirit": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0407,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Aerial Spirit"
+  },
+  "malum:aqueous_spirit": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0668,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Aqueous Spirit"
+  },
+  "malum:astral_weave": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5728,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Astral Weave"
+  },
+  "malum:belt_of_the_prospector": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6082,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Belt of the Prospector"
+  },
+  "malum:blazing_quartz": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.11,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Blazing Quartz"
+  },
+  "malum:earthen_spirit": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0497,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Earthen Spirit"
+  },
+  "malum:eldritch_spirit": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0747,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Eldritch Spirit"
+  },
+  "malum:infernal_spirit": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0584,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Infernal Spirit"
+  },
+  "malum:natural_quartz": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1034,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Natural Quartz"
+  },
+  "malum:necklace_of_the_hidden_blade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7308,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Necklace of the Hidden Blade"
+  },
+  "malum:raw_soulstone": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2095,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Raw Soulstone"
+  },
+  "malum:ring_of_alchemical_mastery": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6612,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Ring of Alchemical Mastery"
+  },
+  "malum:ring_of_curative_talent": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6471,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Ring of Curative Talent"
+  },
+  "malum:spirit_pouch": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4787,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Spirit Pouch"
+  }
+ },
+ "human_notes": {
+  "_confidence": "GOOD, with one caveat. sNurQTYaqv0 (ignVoiding, 'Spirit Magic in Minecraft! Malum Beginner's Guide') is native English and transcribed cleanly and densely -- it is the strongest source in this whole set. CAVEAT: this transcript was produced under the earlier Whisper vocabulary prompt that was later found to bias output; it was kept rather than redone because every id below was independently verified against malum-1.20.1-1.6.7 and the prose contains no invented mod names. Malum ships NO non-recipe advancements and NO guidebook data in the jar, so the video is the ONLY ordering source that exists for this mod; a jar/recipe scan can produce nothing here.",
+  "order": [
+   {
+    "claim": "Two things start the mod, in this order: mine Raw Soulstone, then craft a Crude Scythe. The scythe is not optional flavour -- it is the only way to harvest spirits, which are the mod's entire currency.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:raw_soulstone",
+     "malum:crude_scythe",
+     "malum:processed_soulstone"
+    ],
+    "note": "Entry point: mine Soulstone and craft a crude scythe from it."
+   },
+   {
+    "claim": "Learn which mob drops which spirit early, because every recipe is specified in them: Sacred from passive mobs, Wicked from undead, Arcane from witches, Aerial from fast mobs, Earthen from roaming mobs, Infernal from nether mobs, Aqueous from water mobs, Eldritch from endermen.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:sacred_spirit",
+     "malum:wicked_spirit",
+     "malum:arcane_spirit",
+     "malum:aerial_spirit",
+     "malum:earthen_spirit",
+     "malum:infernal_spirit",
+     "malum:aqueous_spirit",
+     "malum:eldritch_spirit"
+    ],
+    "note": "The spirit taxonomy: Sacred from passive mobs, Wicked from undead, Arcane from witches, Aerial from swift creatures, Earthen from wild roamers, Infernal from nether mobs, Aqueous from water creatures, Eldritch from End dwellers."
+   },
+   {
+    "claim": "The Spirit Altar is the mod's first and central machine, and it is built on Runewood. Everything after this point is an infusion done at the altar.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:spirit_altar",
+     "malum:runewood_item_pedestal"
+    ],
+    "note": "Runewood is the mod's magic wood (its charcoal burns longer than normal). A Spirit Altar built over a runewood base infuses spirits into items."
+   },
+   {
+    "claim": "Hex Ash is the first infusion and the gateway reagent -- gunpowder plus an Arcane Spirit. Almost every later recipe wants it, so make it before anything ambitious.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:hex_ash",
+     "malum:arcane_spirit",
+     "malum:spirit_altar"
+    ],
+    "note": "A first altar recipe: hex ash from gunpowder plus an arcane spirit."
+   },
+   {
+    "claim": "Infused stones come next and are the branch point: stone with Wicked plus Arcane gives Twisted Rock, stone with Sacred plus Arcane gives Tainted Rock. Both are needed later for the Spirit Crucible, and both double as building blocks.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:twisted_rock",
+     "malum:tainted_rock",
+     "malum:wicked_spirit",
+     "malum:sacred_spirit",
+     "malum:arcane_spirit"
+    ],
+    "note": "Twisted rock is stone infused with wicked and arcane spirits; tainted rock is stone with sacred and arcane."
+   },
+   {
+    "claim": "Soulstained Steel is the first metal: infuse iron with spirits. Hallowed Gold is the second: infuse gold with spirits and quartz. These two split the mod's gear into a combat line and a trinket line.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:soul_stained_steel_ingot",
+     "malum:hallowed_gold_ingot"
+    ],
+    "note": "Soul Stained Steel is iron infused with spirits; Hallowed Gold is gold infused with spirits and quartz."
+   },
+   {
+    "claim": "The Spirit Crucible is the second machine and it is gated on having both infused rocks. Its reagent is the Alchemical Impetus, made from Processed Soulstone, Hex Ash, spirits and Alchemical Calx.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:spirit_crucible",
+     "malum:twisted_rock",
+     "malum:tainted_rock",
+     "malum:alchemical_impetus",
+     "malum:processed_soulstone",
+     "malum:hex_ash",
+     "malum:alchemical_calx"
+    ],
+    "note": "Twisted and tainted rock build the Spirit Crucible. Its base reagent, the Alchemical Impetus, is infused from processed soulstone, hex ash and spirits with alchemical calx."
+   },
+   {
+    "claim": "Totemic magic is the last system taught. Infuse Runewood planks, Hex Ash and spirits with a Runewood log to get a Totem Base, stack a Runewood log on it, then right-click with a spirit to run a rite.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:runewood_totem_base",
+     "malum:soulwood_totem_base",
+     "malum:hex_ash"
+    ],
+    "note": "Totem magic acts on the world instead of the caster: infuse a runewood totem base, stack runewood logs above it, and right-click with a spirit to run a rite."
+   }
+  ],
+  "gates": [
+   {
+    "claim": "Pedestals must be within four blocks of the Spirit Altar or the infusion will not see them. If a recipe needs extra items beyond the spirits, they go on pedestals, not in the altar.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:runewood_item_pedestal",
+     "malum:soulwood_item_pedestal",
+     "malum:spirit_altar"
+    ],
+    "note": "Extra infusion ingredients go on item pedestals within four blocks of the altar."
+   },
+   {
+    "claim": "Soulstained Steel gives you tools but NOT armour. The armour is a separate, much heavier recipe needing Soulstained Steel, Hex Ash, Processed Soulstone, Twisted Rock, diamonds and spirits infused into iron armour -- do not expect to make a set as soon as you have the ingot.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:soul_stained_steel_ingot",
+     "malum:soul_stained_steel_scythe",
+     "malum:hex_ash",
+     "malum:processed_soulstone",
+     "malum:twisted_rock"
+    ],
+    "note": "Soul stained steel makes tools directly; armor instead comes from infusing iron armor with the steel, hex ash, processed soulstone, twisted rock and diamonds."
+   },
+   {
+    "claim": "Corrupted Resonance unlocks the deeper recipe tree and is itself an infusion of Raw Soulstone with Brilliance, lapis, diamond, Hex Ash and spirits. Brilliance is XP in physical form, so you need a mob or XP source running first.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:raw_soulstone",
+     "malum:chunk_of_brilliance",
+     "malum:hex_ash"
+    ],
+    "note": "Corrupted resonance infuses from raw soulstone with brilliance (XP in item form), lapis, diamond, hex ash and spirits."
+   },
+   {
+    "claim": "A Spirit Jar holds a near-infinite number of spirits but only ONE type each. Plan on a wall of jars, one per spirit, rather than a single jar for everything.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:spirit_jar",
+     "malum:hallowed_gold_ingot",
+     "malum:spirit_pouch",
+     "malum:spirit_fabric"
+    ],
+    "note": "The Spirit Jar (hallowed gold) stores a near-unlimited amount of spirits, but only one type per jar."
+   },
+   {
+    "claim": "Repairing gear in the Spirit Crucible needs a Runewood Tablet facing the crucible as well as the crucible itself -- put a spirit crystal in the tablet and the item in the crucible.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:runewood_tablet",
+     "malum:soulwood_tablet",
+     "malum:spirit_crucible"
+    ],
+    "note": "Repair: a twisted tablet facing the crucible, loaded with the right spirit, restores the item sitting in the crucible."
+   }
+  ],
+  "bosses": [],
+  "traps": [
+   {
+    "claim": "Infusions are slow by default. Do not sit and wait -- build Runewood Obelisks near the altar. Each one adds 25% infusion speed and you can have four.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:runewood_obelisk",
+     "malum:brilliant_obelisk",
+     "malum:spirit_altar",
+     "malum:hex_ash"
+    ],
+    "note": "Runewood obelisks near the altar speed infusions by 25% apiece, stacking up to four."
+   },
+   {
+    "claim": "Soul Hunter gear looks like an armour upgrade but is not one -- it boosts your magic at the cost of protection. Take it for a caster build, not as a replacement for Soulstained Steel armour.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:spirit_fabric",
+     "malum:soul_stained_steel_ingot"
+    ],
+    "note": "Soul Hunter gear trades raw protection for arcane amplification - deliberately weaker armor."
+   }
+  ],
+  "signature": [
+   {
+    "claim": "Harvesting spirits with a scythe is the mod's whole identity. Every machine, metal and trinket is priced in spirits, and shattering a soul also increases a mob's normal drops -- Rotting Essence from zombies, Grim Talc from skeletons, Alchemical Calx from witches, Astral Weave from phantoms.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:crude_scythe",
+     "malum:rotting_essence",
+     "malum:grim_talc",
+     "malum:alchemical_calx",
+     "malum:astral_weave"
+    ],
+    "note": "Soul shattering adds bonus drops per mob family: Rotting Essence from zombies, Grim Talc from skeletons (grinds to bone meal), Alchemical Calx from witches, Astralweave from phantoms."
+   },
+   {
+    "claim": "Soul Ward is Malum's signature defensive mechanic and the reason to chase Soulstained Steel armour: it sits on top of your armour, almost completely absorbs magic damage and softens physical damage, then takes time to regenerate once broken.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:soul_stained_steel_ingot",
+     "malum:belt_of_the_magebane"
+    ],
+    "note": "Soul Ward is stained armor's extra layer: near-total magic absorption and dampened physical damage, slow to recover once broken."
+   },
+   {
+    "claim": "The trinket set is a major draw and is split by metal -- Hallowed Gold trinkets act like light armour, Soulstained Steel trinkets add toughness. Named examples worth quests: Belt of the Prospector protects ore from your own explosions, Ring of the Hoarder magnets blast drops to you, Ring of Curative Talent heals you when you collect spirits, Ring of Esoteric Spoils harvests an extra spirit, Belt of the Magebane makes Soul Ward recover almost instantly, Necklace of the Narrow Edge focuses sweep damage onto one target.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:belt_of_the_prospector",
+     "malum:ring_of_the_hoarder",
+     "malum:ring_of_curative_talent",
+     "malum:ring_of_alchemical_mastery",
+     "malum:ring_of_arcane_prowess",
+     "malum:belt_of_the_starved",
+     "malum:ring_of_desperate_voracity",
+     "malum:necklace_of_the_narrow_edge",
+     "malum:necklace_of_the_hidden_blade",
+     "malum:belt_of_the_magebane",
+     "malum:ring_of_esoteric_spoils"
+    ],
+    "note": "Hallowed gold trinkets add light protection and soul stained steel trinkets add armor toughness; the Magebane Belt all but removes soul-ward recovery time, and the Ring of Esoteric Spoils harvests one extra spirit per kill."
+   },
+   {
+    "claim": "The Spirit Crucible is the mod's answer to ore processing and is worth its own quest branch: infuse an Alchemical Impetus with a metal plus Chthonic Gold, gunpowder and spirits, then run it in the crucible with the right spirits to get nodes that smelt into nuggets. It also makes crystals and ashes.",
+    "video": "sNurQTYaqv0",
+    "ids": [
+     "malum:spirit_crucible",
+     "malum:alchemical_impetus",
+     "malum:blazing_quartz"
+    ],
+    "note": "The crucible transmutes metals: infuse the Alchemical Impetus with iron, gold or copper plus chthonic gold and gunpowder, then run it with the right spirits for three nodes that smelt into nuggets."
+   }
+  ]
+ }
+}

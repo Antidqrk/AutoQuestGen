@@ -1,0 +1,521 @@
+{
+ "mod": "gobber2",
+ "jar": "Gobber2-Forge-1.20.1-2.8.9.jar",
+ "ids_in_jar": 153,
+ "videos": [
+  {
+   "id": "4-w35W3MRW4",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 8144
+  },
+  {
+   "id": "S27TZdzMsjw",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 20538
+  },
+  {
+   "id": "gZ8QNtiC9Mc",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 14877
+  }
+ ],
+ "items": {
+  "gobber2:dragon_star": {
+   "mentions": 7,
+   "videos": 2,
+   "first_at": 0.5599,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_end": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.2651,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_staff_clearing": {
+   "mentions": 4,
+   "videos": 3,
+   "first_at": 0.7684,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:dragon_elytra": {
+   "mentions": 4,
+   "videos": 3,
+   "first_at": 0.4529,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_gooey_beef": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.2368,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_sword_end": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.3796,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_attraction": {
+   "mentions": 3,
+   "videos": 3,
+   "first_at": 0.5311,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_sword_sniper": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.6419,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:clear_glass": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.733,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_leaping": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.5227,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_nether": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.6414,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_above": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.5343,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_staff_sniper": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.6742,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_farmer": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5117,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_gooey_beefstew": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.2396,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_chestplate_end": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1788,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_return": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.5222,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_repair": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.6215,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_curing": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.6035,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_ascent": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.5282,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_gooey_bread": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.2363,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_staff_farmer": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.8154,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_blaze": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6915,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_sword_traveler": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4411,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_void": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.6906,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_hammer_end": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3315,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_medallion_healing": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5774,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_medallion_healing2": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5955,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_chestplate": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1579,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_chestplate_dragon": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1875,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_miner": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5095,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ingot_end": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2195,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_staff_nature": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7075,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_pickaxe": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0793,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_gooey_apple": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2868,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_foo": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2519,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_acceleration": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5216,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_traveler": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5192,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_airwalking": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7365,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_staff_stars": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9501,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_sunshine": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6198,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_leggings_nether": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5235,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_pyro": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.707,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_excavator_end": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3171,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_helmet_dragon": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2702,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_boots_nether": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5244,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_medallion_breathing": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7022,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_ring_swiftness": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6274,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gobber2:gobber2_helmet_end": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8374,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "note": "Banked corpus: 3 of 8 usable (4-w35W3MRW4 overview, S27TZdzMsjw full 1.20.1 guide, gZ8QNtiC9Mc long showcase - together they cover the whole mod). _zElXn6-KEM / hai9n_MmV2s transcribed to 0 chars, b8GsXaZI1-E / hgYzgPId_dA / qmIjFsf92MQ under 1500 (shorts) - dropped. Jar Gobber2-Forge-1.20.1-2.8.9 (local ArcanumLand instance).",
+ "human_notes": {
+  "entry": [
+   "This mod STARTS WHERE VANILLA ENDS: gobber2:gobber2_ore in the overworld requires a NETHERITE pickaxe to mine. There is no early game - the correct opening quest is 'obtain a netherite pickaxe', then 'mine Gobber Ore'.",
+   "Ore drops gobber2:gobber2_globette; NINE globettes CRAFT (not smelt) into gobber2:gobber2_glob; a glob + iron ingot + gold ingot + diamond crafts gobber2:gobber2_ingot. That ingot is the base of everything.",
+   "The gentler on-ramp is gobber2:gobber2_lucky_block - generates much shallower, needs only an IRON pickaxe, never trolls (guides stress: no explosions), and drops finished mod items like gooey foods and even fuel. A taste of the mod before the netherite wall.",
+   "Ore tooltips state Y-levels and vein sizes in-game - quests can trust the tooltip rather than restating numbers."
+  ],
+  "boss_order": [
+   "No bosses of its own - but VANILLA bosses are its currency: the Wither must die repeatedly (nether stars for nether armor, end armor links, dragon star) and the Ender Dragon repeatedly (dragon head, dragon's breath, elytra) for the dragon tier."
+  ],
+  "order": [
+   "1. Netherite pickaxe -> overworld gobber2:gobber2_ore -> globettes -> gobber2:gobber2_glob -> gobber2:gobber2_ingot.",
+   "2. Gobber tier gear: tools/sword from ingots + gobber2:gobber2_rod (2 ingots); armor recipes include an emerald. Full set grants water breathing + passive healing + feeding. Chestplate ~11 armor, already past netherite.",
+   "3. gobber2:gobber2_pickaxe unlocks gobber2:gobber2_ore_nether. Nether ingot = 2 gobber ingots + nether glob + netherite scrap. Nether armor needs NETHER STARS; full set adds fire protection.",
+   "4. Nether gobber pickaxe unlocks gobber2:gobber2_ore_end. End ingot = 2 nether ingots + end glob + chorus flower. End armor is built from gobber2:gobber2_links_end (2 End Rings + 2 nether stars each) - ~40 armor total, 8000 durability, no fall damage, gliding.",
+   "5. Dragon tier caps it: smithing template + end armor piece + gobber2:dragon_star (nether star + 4 dragon's breath + 3 end gobber ingots + dragon head); the chestplate instead uses gobber2:dragon_elytra (real elytra + end ingots + dragon parts). Full dragon set = CREATIVE FLIGHT plus growing absorption - guides call the wearer 'pretty immortal'.",
+   "6. Alongside the gear ladder, QoL tools per tier: gobber2:gobber2_hammer (3x3, sneak for single-block), gobber2:gobber2_excavator (3x3 shovel), gobber2:gobber2_tree_axe (fells connected trees), gobber2:gobber2_paxel (pick+axe+shovel, 10 dmg), gobber2:gobber2_paxel_stars (paxel that shift-right-click places torches).",
+   "7. The trinket layer is the mod's real fame: rings (base gobber2:gobber2_ring = 4 ingots; nether/end ring tiers above) and medallions (gobber2:gobber2_medallion = 5 ingots) that work passively FROM THE INVENTORY - attraction magnet, return-to-bed, miner, farmer, husbandry, swiftness, curing, vision, phoenix, void (free travel to/from the End), blink, teleport, airwalking, stealth, explorer; medallions for stepping, water breathing, healing x3, experience, glowing, dolphin's grace, conduit power, village hero.",
+   "8. Staff layer: gobber2:gobber2_staff_clearing (12x6x12 vegetation wipe), _staff_nature (cycles sapling types, cane<->bamboo, makes gobber2:clear_glass), _staff_farmer / _staff_harvest (grow and auto-harvest), _staff_stars (infinite torches), _staff_sniper (~60 damage hitscan arrow - one right-click kills a Warden-adjacent health pool), _staff_ensnarement (captures passive mobs/villagers).",
+   "9. Combo weapons close the tree: gobber2:gobber2_sword_traveler (end sword + Ring of the Traveler; right-click infinite air-jumps) and gobber2:gobber2_sword_sniper (end sword + staff of the sniper).",
+   "Fuel thread through it all: gobber2:gobber2_foo tiers smelt 320/480/640 items - outlasts coal and lava for mass smelting."
+  ],
+  "gates": [
+   "HARD GATE at entry: netherite pickaxe for overworld gobber ore. Then a strict tool ladder - gobber pickaxe gates nether gobber ore, nether gobber pickaxe gates end gobber ore. Skipping a tier is impossible.",
+   "Nether star gates: nether armor, end armor links AND the dragon star each consume them - plan multiple Wither fights.",
+   "Dragon tier is gated on Ender Dragon farming: dragon head, 4x dragon's breath per star, plus a real elytra for the chestplate.",
+   "End ingots need a chorus flower - an End-side plant, so the End must be visited before end-tier crafting starts (or use the Ring of the Void once available)."
+  ],
+  "traps": [
+   "The Traveler Sword's infinite right-click jump has no landing plan - guides demonstrate dying to their own ascent. Fall management (end armor's no-fall, dragon flight) belongs BEFORE this toy.",
+   "The tree axe only fells CONNECTED logs and deliberately under-cuts so it cannot delete builds - players read partial fells as a bug.",
+   "The hammer's 3x3 is always-on; sneaking is the documented way to mine a single block - precision mining without sneak eats floors.",
+   "Rings and medallions overlap heavily (healing, water breathing, speed); medallions are 5 ingots vs 4 plus extras for rings - guides note the ring works out slightly cheaper. A quest chain should not require both of a duplicate pair.",
+   "4-w35W3MRW4 shows a Staff of Transformation and a Sonic Boom staff - those ids do NOT exist in the 1.20.1-2.8.9 jar (newer version content); do not emit them.",
+   "Blink ring teleports only to loaded, visible blocks and can catch on invisible/unloaded geometry - flashy but unreliable as a quest task."
+  ],
+  "signature": [
+   "The glob ladder: gobber2:gobber2_glob -> _glob_nether -> _glob_end, with gobber2:gobber2_globette as the drop unit.",
+   "gobber2:gobber2_lucky_block family - the friendly, never-hostile lucky block.",
+   "gobber2:gobber2_ring_attraction and gobber2:gobber2_ring_void - the two rings every guide dwells on (magnet; free End travel).",
+   "gobber2:gobber2_staff_sniper / gobber2:gobber2_sword_sniper - the 60-damage right-click.",
+   "gobber2:dragon_star and gobber2:dragon_elytra - the dragon-tier tokens; full set = creative flight.",
+   "gobber2:gobber2_paxel_stars - paxel plus torch placement, the mod's QoL in one item.",
+   "gobber2:gobber2_glass family - light-emitting glass, plus gobber2:clear_glass via the Staff of Nature."
+  ]
+ }
+}

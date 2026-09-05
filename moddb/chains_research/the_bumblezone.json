@@ -1,0 +1,174 @@
+{
+ "mod": "the_bumblezone",
+ "verified_against": "the_bumblezone-7.13.4+1.20.1-forge.jar",
+ "item_count_in_jar": 146,
+ "chain": [
+  {
+   "id": "dim:the_bumblezone:the_bumblezone",
+   "title": "Through The Hive Wall",
+   "desc": "Throw an ender pearl at a bee nest or beehive, or let a piston shove you into one, and you fall into the Bumblezone."
+  },
+  {
+   "id": "the_bumblezone:honey_bucket",
+   "title": "A Bucket Of Liquid Gold",
+   "desc": "Scoop honey straight from the dimension's filled honeycomb, or craft the bucket from a honey block."
+  },
+  {
+   "id": "the_bumblezone:pollen_puff",
+   "title": "Yellow Dust, Weaponised",
+   "desc": "Bees drop pollen puffs. Thrown, they pollinate flowers, calm hostile bees and dust mobs with pollen."
+  },
+  {
+   "id": "the_bumblezone:bee_bread",
+   "title": "Bread The Bees Approve Of",
+   "desc": "Honey and a pollen puff make bee bread, the food that stacks the Beenergized effect."
+  },
+  {
+   "id": "the_bumblezone:beehive_beeswax",
+   "title": "Wax From The Walls",
+   "desc": "Harvested from the dimension's hive structures; combine it with honeycomb to build vanilla bee nests."
+  },
+  {
+   "id": "the_bumblezone:carvable_wax",
+   "title": "Wax Worth Carving",
+   "desc": "Smelt beeswax or honeycomb into carvable wax, the blank block every decorative wax pattern is cut from."
+  },
+  {
+   "id": "the_bumblezone:honey_crystal_shards",
+   "title": "Splinters Of Sweet Amber",
+   "desc": "Break honey crystal clusters for shards, the shared reagent of the shield, the glistering crystal and the crystal cannon."
+  },
+  {
+   "id": "the_bumblezone:honey_crystal",
+   "title": "Amber, Whole",
+   "desc": "The full honey crystal block grows through the dimension and is the source of every shard."
+  },
+  {
+   "id": "the_bumblezone:glistering_honey_crystal",
+   "title": "Amber That Glows",
+   "desc": "Pressing shards together yields a glistering honey crystal, a brewing reagent and a light source in one."
+  },
+  {
+   "id": "the_bumblezone:sticky_honey_residue",
+   "title": "The Sticky Leftovers",
+   "desc": "Smelting honey blocks or any honey crystal leaves residue, the slowing goo that coats the Bumblezone's floors."
+  },
+  {
+   "id": "the_bumblezone:honey_web",
+   "title": "Snare Of Syrup",
+   "desc": "Woven from residue, the honey web catches anything that walks into it."
+  },
+  {
+   "id": "the_bumblezone:honey_compass",
+   "title": "The Needle Points To Honey",
+   "desc": "A compass, honey, a pollen puff and crystal shards make the honey compass that navigates you to the dimension's structures."
+  },
+  {
+   "id": "the_bumblezone:sugar_water_bucket",
+   "title": "Sweetened Water",
+   "desc": "Sugar stirred into a water bucket. Sugar water fills the dimension's pools and speeds anything swimming in it."
+  },
+  {
+   "id": "the_bumblezone:sugar_infused_cobblestone",
+   "title": "Stone With A Sweet Tooth",
+   "desc": "Sugar water meeting lava produces sugar-infused stone and cobblestone, the ammunition base for the bee cannon."
+  },
+  {
+   "id": "the_bumblezone:bee_cannon",
+   "title": "Artillery With A Sting",
+   "desc": "Gunpowder and both sugar-infused stones build a cannon you load with live bees and fire at your problems."
+  },
+  {
+   "id": "the_bumblezone:crystal_cannon",
+   "title": "Shrapnel Of Crystal",
+   "desc": "Feeding the bee cannon a honey crystal and shards converts it into the crystal cannon, which fires shattering amber instead."
+  },
+  {
+   "id": "kill:the_bumblezone:honey_slime",
+   "title": "The Gelatinous Harvest",
+   "desc": "Honey slimes wander the dimension and drop honey when slain, or can be milked with a bottle if you prefer them alive."
+  },
+  {
+   "id": "the_bumblezone:bee_stinger",
+   "title": "Barbed Trophy",
+   "desc": "Bee stingers are the Bee Queen's own drop and a brewing ingredient for the mod's poison and paralysis potions."
+  },
+  {
+   "id": "the_bumblezone:stinger_spear",
+   "title": "A Spear That Paralyses",
+   "desc": "Lash stingers to a stick for a throwable spear that poisons on hit and can paralyse even a boss."
+  },
+  {
+   "id": "the_bumblezone:honey_crystal_shield",
+   "title": "The Amber Bulwark",
+   "desc": "Built entirely from honey crystal shards, this shield grows stronger the more damage it correctly blocks."
+  },
+  {
+   "id": "the_bumblezone:stingless_bee_helmet_1",
+   "title": "Warrior Of The Hive",
+   "desc": "The first piece of the bee armour set; the full set unlocks flight, super sight and pollen handling."
+  },
+  {
+   "id": "the_bumblezone:crystalline_flower",
+   "title": "The Enchanting Bloom",
+   "desc": "Found in the dimension's garden structure, the crystalline flower is fed items and experience to grow and enchant gear."
+  },
+  {
+   "id": "the_bumblezone:royal_jelly_bottle",
+   "title": "The Queen's Own Vintage",
+   "desc": "Royal jelly is the Bee Queen's reward tier, bottled from her throne pillar and drunk for a powerful regeneration effect."
+  },
+  {
+   "id": "the_bumblezone:essence_of_the_bees",
+   "title": "Journey's End",
+   "desc": "Granted only after every Queen's Desire trade is completed. Consuming it unlocks the six essences, which stay locked without it."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "the_bumblezone:essence_of_the_bees",
+   "members": [
+    "the_bumblezone:essence_raging",
+    "the_bumblezone:essence_knowing",
+    "the_bumblezone:essence_calming",
+    "the_bumblezone:essence_life",
+    "the_bumblezone:essence_radiance",
+    "the_bumblezone:essence_continuity"
+   ]
+  },
+  {
+   "hub": "the_bumblezone:carvable_wax",
+   "members": [
+    "the_bumblezone:ancient_wax_bricks",
+    "the_bumblezone:ancient_wax_compound_eyes",
+    "the_bumblezone:ancient_wax_diamond",
+    "the_bumblezone:luminescent_wax_channel",
+    "the_bumblezone:luminescent_wax_corner",
+    "the_bumblezone:luminescent_wax_node",
+    "the_bumblezone:luminescent_wax_node_blue",
+    "the_bumblezone:luminescent_wax_node_green",
+    "the_bumblezone:luminescent_wax_node_red",
+    "the_bumblezone:luminescent_wax_node_yellow",
+    "the_bumblezone:luminescent_wax_node_purple",
+    "the_bumblezone:luminescent_wax_node_white"
+   ]
+  },
+  {
+   "hub": "the_bumblezone:music_disc_flight_of_the_bumblebee_rimsky_korsakov",
+   "members": [
+    "the_bumblezone:music_disc_a_last_first_last",
+    "the_bumblezone:music_disc_bee_laxing_with_the_hom_bees",
+    "the_bumblezone:music_disc_bee_ware_of_the_temple",
+    "the_bumblezone:music_disc_beenna_box",
+    "the_bumblezone:music_disc_drowning_in_despair",
+    "the_bumblezone:music_disc_honey_bee_rat_faced_boy",
+    "the_bumblezone:music_disc_knowing_renren",
+    "the_bumblezone:music_disc_la_bee_da_loca",
+    "the_bumblezone:music_disc_life_renren",
+    "the_bumblezone:music_disc_radiance_renren",
+    "the_bumblezone:music_disc_rivers_of_honey_moserao"
+   ]
+  }
+ ],
+ "notes": "DIMENSION CONFIRMED: data/the_bumblezone/dimension/the_bumblezone.json and data/the_bumblezone/dimension_type/the_bumblezone.json both exist, so dim:the_bumblezone:the_bumblezone is a real dimension id. Entry method taken from the mod's own advancement tree (teleportation/is_near_beehive -> teleport_to_bumblezone_piston -> teleport_to_bumblezone_pearl) and cross-checked against community docs: throw an ender pearl at a bee nest, or get pushed into one by a piston. You leave by falling below Y=0 or climbing above Y=256. CHAIN SOURCE: the mod ships 133 advancements whose parent links give an author-authored progression. Verified backbone: root -> is_near_beehive -> teleport_to_bumblezone_* -> teleport_out_of_bumblezone -> {obtain_honey_bucket, comb_cutter_tool, craft_honey_compass, music_discs} -> honey_compass_use -> enter_cell_maze -> {enter_garden -> grow_crystalline_flower, obtain_throne_honey_compass -> enter_throne_pillar} -> the_queens_desire/the_beginning ... -> the_queens_desire/journeys_end (icon: essence_of_the_bees) -> essence/bee_essence_infusion -> enter_sempiternal_sanctum -> the six essence advancements. This is why essence_of_the_bees is the final chain step. ESSENCES: data/the_bumblezone/loot_tables/gameplay/rewards/{red,yellow,green,blue,purple,white}_arena_victory.json each drop exactly one essence item (red -> essence_raging, confirmed by reading the file), so the essence wheel is won in the Sempiternal Sanctum arenas. The lang string 'item.the_bumblezone.essence_locked_description_2' states outright that essences are unusable until you consume Essence of the Bees, which is the gate the chain models. KILL STEP: kill:the_bumblezone:honey_slime is double-verified -- lang key entity.the_bumblezone.honey_slime AND data/the_bumblezone/loot_tables/entities/honey_slime.json. Also available and verified the same way: bee_queen, beehemoth, rootmin. bee_queen's loot table drops the_bumblezone:bee_stinger. MODDB AGREEMENT: moddb ranks glistering_honey_crystal 0.0 / honey_crystal_shards 0.163 early and essence_of_the_bees 1.0 dead last, matching this chain's shape exactly. Also agrees pollen_puff 0.366 ~ honey_compass 0.369 sit together mid-chain and bee_stinger 0.813 / royal_jelly_bottle 0.875 sit late. MODDB CONFLICT: moddb puts royal_jelly_bucket at 0.0 while royal_jelly_bottle sits at 0.875, which is internally inconsistent (the bucket is crafted FROM the bottle); the recipe order was used and the bucket left out of the chain. SUGAR WATER: sugar_water_bucket is a crafted recipe (sugar + water bucket); sugar_water_bottle exists as an item but has no jar recipe, so only the bucket is used as a chain step. TRADES: 327 files under data/the_bumblezone/bz_bee_queen_trades/ define the Bee Queen barter table, which is the mechanism behind the Queen's Desire advancement line. The 12 music discs and the wax decoration blocks are pure collection material, hence two of the wheels. ID VERIFICATION: every id in this file was set-membership-checked against the jar; nothing was dropped."
+}

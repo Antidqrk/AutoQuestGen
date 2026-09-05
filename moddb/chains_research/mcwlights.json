@@ -1,0 +1,151 @@
+{
+ "mod": "mcwlights",
+ "verified_against": "mcw-lights-1.1.5-mc1.20.1forge.jar",
+ "item_count_in_jar": 140,
+ "chain": [
+  {
+   "id": "mcwlights:striped_lantern",
+   "title": "One Torch, Two Nuggets",
+   "desc": "A torch between two iron nuggets. The Striped Lantern is the cheapest of the hanging lanterns and the shape all the others vary."
+  },
+  {
+   "id": "mcwlights:covered_lantern",
+   "title": "The Same Torch, More Iron",
+   "desc": "The lantern frame closed at the bottom. Covered, cross, festive, bell, chain and tavern lanterns are six arrangements of the same torch and nuggets, and each has a matching wall version."
+  },
+  {
+   "id": "mcwlights:wall_lantern",
+   "title": "Hang a Vanilla Lantern",
+   "desc": "A vanilla lantern and any wooden fence, shapeless. It is the only recipe in the mod that takes a finished vanilla light as its input."
+  },
+  {
+   "id": "mcwlights:garden_light",
+   "title": "A Lamp on a Post",
+   "desc": "Glowstone dust between iron nuggets over an iron ingot. Garden lights come in six silhouettes and the mod's own hint says they can be built taller by placing another on top."
+  },
+  {
+   "id": "mcwlights:classic_street_lamp",
+   "title": "Streetlight",
+   "desc": "A vanilla lantern over a fence over a stone brick wall, three at a time. The double-headed version is the same column with two lanterns, and both have soul variants."
+  },
+  {
+   "id": "mcwlights:oak_tiki_torch",
+   "title": "Fire on a Pole",
+   "desc": "A torch on a fence of the same wood. Tiki torches come in eleven woods, stack upwards to make taller poles, and have a soul-torch twin for every one of them."
+  },
+  {
+   "id": "mcwlights:white_lamp",
+   "title": "Wool Around a Redstone Lamp",
+   "desc": "A redstone lamp wrapped in wool over a fence, six at a time. The mod's central hint - 'Right-click with any dye to recolor' - applies here, so all sixteen colours are one dye away from any one of them."
+  },
+  {
+   "id": "mcwlights:white_ceiling_light",
+   "title": "The Same Lamp, Overhead",
+   "desc": "The identical recipe flipped: fence on top, wool and lamp below. Ceiling lights, lamps and paper lamps are three silhouettes of one idea in sixteen colours each."
+  },
+  {
+   "id": "mcwlights:white_paper_lamp",
+   "title": "Paper Instead of Wool",
+   "desc": "The paper lamp is the third sixteen-colour family, and its coloured versions are shapeless - white paper lamp plus a dye - rather than being crafted from scratch."
+  },
+  {
+   "id": "mcwlights:oak_ceiling_fan_light",
+   "title": "It Actually Turns",
+   "desc": "A slab, glowstone dust and iron over an iron nugget. Ceiling fans exist in ten woods and are the only moving thing the mod adds."
+  },
+  {
+   "id": "mcwlights:copper_candle_holder",
+   "title": "Wax, String and Copper",
+   "desc": "A honeycomb and string on a copper base, two at a time. Copper and gold each get a candle holder, a double, a triple, a low one, a wall one, a chandelier and a small chandelier - seven shapes, two metals."
+  },
+  {
+   "id": "mcwlights:copper_chandelier",
+   "title": "Overhead Candles",
+   "desc": "Copper ingots, honeycomb and string in a hanging frame. The chandelier is the largest of the candle shapes and the golden version costs gold ingots instead."
+  },
+  {
+   "id": "mcwlights:copper_chain",
+   "title": "A Chain to Hang It From",
+   "desc": "Three copper ingots on a diagonal give three Copper Chains; gold ingots give the golden one. They exist to suspend the lanterns and chandeliers above."
+  },
+  {
+   "id": "mcwlights:lava_lamp",
+   "title": "A Bucket of Lava, Framed",
+   "desc": "A lava bucket in an iron frame. It is the only light in the mod that consumes a bucket and the only one that is not made from a torch, a lamp or glowstone."
+  },
+  {
+   "id": "mcwlights:glowstone_slab",
+   "title": "Half-Height Light",
+   "desc": "Three glowstone give six slabs; sea lanterns, shroomlights and redstone lamps each give their own. Four light-emitting vanilla blocks, four identical slab recipes."
+  },
+  {
+   "id": "mcwlights:upgraded_torch",
+   "title": "A Torch That Lasts",
+   "desc": "Charcoal or coal between iron nuggets over a stick, four at a time. Upgraded, framed, reinforced and rustic torches are four arrangements of the same three ingredients."
+  },
+  {
+   "id": "mcwlights:square_wall_lamp",
+   "title": "Flush to the Wall",
+   "desc": "Wool around a redstone lamp with a fence in the corner, six at a time. The plain Wall Lamp is the same recipe one row shorter and three at a time."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mcwlights:red_lamp",
+   "members": [
+    "mcwlights:orange_lamp",
+    "mcwlights:yellow_lamp",
+    "mcwlights:lime_lamp",
+    "mcwlights:green_lamp",
+    "mcwlights:cyan_lamp",
+    "mcwlights:light_blue_lamp",
+    "mcwlights:blue_lamp",
+    "mcwlights:purple_lamp",
+    "mcwlights:magenta_lamp",
+    "mcwlights:pink_lamp",
+    "mcwlights:brown_lamp",
+    "mcwlights:gray_lamp",
+    "mcwlights:light_gray_lamp",
+    "mcwlights:black_lamp"
+   ]
+  },
+  {
+   "hub": "mcwlights:red_paper_lamp",
+   "members": [
+    "mcwlights:orange_paper_lamp",
+    "mcwlights:yellow_paper_lamp",
+    "mcwlights:lime_paper_lamp",
+    "mcwlights:green_paper_lamp",
+    "mcwlights:cyan_paper_lamp",
+    "mcwlights:light_blue_paper_lamp",
+    "mcwlights:blue_paper_lamp",
+    "mcwlights:purple_paper_lamp",
+    "mcwlights:magenta_paper_lamp",
+    "mcwlights:pink_paper_lamp",
+    "mcwlights:brown_paper_lamp",
+    "mcwlights:gray_paper_lamp",
+    "mcwlights:light_gray_paper_lamp",
+    "mcwlights:black_paper_lamp"
+   ]
+  },
+  {
+   "hub": "mcwlights:soul_oak_tiki_torch",
+   "members": [
+    "mcwlights:soul_spruce_tiki_torch",
+    "mcwlights:soul_birch_tiki_torch",
+    "mcwlights:soul_jungle_tiki_torch",
+    "mcwlights:soul_acacia_tiki_torch",
+    "mcwlights:soul_dark_oak_tiki_torch",
+    "mcwlights:soul_mangrove_tiki_torch",
+    "mcwlights:soul_cherry_tiki_torch",
+    "mcwlights:soul_bamboo_tiki_torch",
+    "mcwlights:soul_crimson_tiki_torch",
+    "mcwlights:soul_warped_tiki_torch",
+    "mcwlights:soul_classic_street_lamp",
+    "mcwlights:soul_double_street_lamp",
+    "mcwlights:covered_wall_lantern"
+   ]
+  }
+ ],
+ "notes": "MACAW'S MODS SHARE ONE STRUCTURE: A SMALL NUMBER OF DISTINCT BLOCK TYPES CROSSED WITH A LARGE MATERIAL TABLE. The chain below is one step per distinct RECIPE SHAPE, not one per id, and the material tables go to wheels. MODDB: no consensus signal - moddb.json contains no key for any Macaw's mod - so every ordering here is the recipe graph alone and there is no conflict to record. Verified against mcw-lights-1.1.5-mc1.20.1forge.jar (Modrinth version 1.1.5, loaders=[forge], game_versions=[1.20.1]). ID DETECTION - THE CLEANEST JAR IN THE WHOLE SLICE: 140 item models, 140 blockstates, 140 lang block.mcwlights.* keys, 140 recipes, 140 loot tables, and all four sets are the SAME 140 stems. There is nothing to widen and nothing to narrow; models INTERSECT lang, models UNION blockstates UNION lang and the recipe-result set are all identical. No orphan assets, no lang-only strings, no unobtainable ids. DISTINCT BLOCK TYPES: 68 by name-stem, but the sixteen-colour families collapse hard - ceiling_light 16, lamp 16, paper_lamp 16 and the eleven-wood tiki torches with their eleven soul twins account for 76 of the 140 ids on four recipe shapes. Verified yields: hanging lanterns 1, wall_lantern 1 (shapeless), garden lights 1, street lamps 3, tiki torches 1, lamp / ceiling_light / square_wall_lamp 6, wall_lamp 3, ceiling fans 1, candle holders 2, chandeliers 1, chains 3, glowstone / redstone lamp / sea lantern / shroomlight slabs 6, torches 4, lava_lamp 1. MECHANICS, all from lang/en_us.json: 'Right-click with any dye to recolor' applies to the dyeable lights, which is why the sixteen-colour families are wheel material rather than sixteen separate chain steps; 'Can be built taller, by placing another one on top of this one' applies to both garden lights and tiki torches; and the jar ships subtitle.mcwlights.light_switch and subtitle.mcwlights.torch_on, so lights toggle and tiki torches ignite as in-world interactions. ONE ASYMMETRY WORTH KNOWING: the paper lamp family is built differently from the other two sixteen-colour families - black_paper_lamp is SHAPELESS from white_paper_lamp plus black dye, while black_lamp and black_ceiling_light are each crafted from scratch out of black wool. That is why the paper-lamp wheel hangs off a colour hub and the other two do not need to. DROPS: none. Every one of the 140 verified ids has a crafting recipe and a loot table."
+}

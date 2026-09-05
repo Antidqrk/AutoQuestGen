@@ -1,0 +1,266 @@
+{
+ "mod": "thermal",
+ "ids_in_jar": 415,
+ "videos": [
+  {
+   "id": "QEDrK-Ky6l8",
+   "title": "Thermal Series mods Pt1 Foundation & Locomotion Bit-By-Bit 1.16.5",
+   "channel": "Mischief of Mice",
+   "views": 176158,
+   "duration": 679,
+   "chars": 10941
+  },
+  {
+   "id": "PgkZwF1DSX8",
+   "title": "Master Thermal Mod: Complete Guide to Machines, Dynamos & Augments!",
+   "channel": "DSD Does Minecraft",
+   "views": 61197,
+   "duration": 1238,
+   "chars": 19425
+  },
+  {
+   "id": "0OJjbdDEPoM",
+   "title": "Thermal Series mods Pt2 Cultivation & Unpowered Machines Bit-By-Bit 1.16.5",
+   "channel": "Mischief of Mice",
+   "views": 93764,
+   "duration": 964,
+   "chars": 14638
+  },
+  {
+   "id": "9DG8Cu35Us0",
+   "title": "Thermal Series mods Pt3 The Basics of Expansion Bit-By-Bit 1.16.5",
+   "channel": "Mischief of Mice",
+   "views": 63975,
+   "duration": 1323,
+   "chars": 22939
+  },
+  {
+   "id": "LC6y9xzmxJc",
+   "title": "Thermal Series mods Pt4 Innovation Bit-By-Bit 1.16.5",
+   "channel": "Mischief of Mice",
+   "views": 45030,
+   "duration": 854,
+   "chars": 14539
+  },
+  {
+   "id": "JQnpJpxdzCo",
+   "title": "Thermal Expansion: Basics (Power, Machine Menus, Automation) | Modded Minecraft Tutorial",
+   "channel": "ZennsWorld",
+   "views": 70967,
+   "duration": 1073,
+   "chars": 16941
+  }
+ ],
+ "not_transcribed": [],
+ "items": {
+  "thermal:nickel_dust": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.4185,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "thermal:machine_pulverizer": {
+   "mentions": 9,
+   "videos": 1,
+   "first_at": 0.0045,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "thermal:watering_can": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.884,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "thermal:flour": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5677,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "thermal:frost_melon": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7268,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "thermal:dynamo_magmatic": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5403,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "thermal:tin_dust": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5046,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "thermal:machine_chiller": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6959,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "thermal:dynamo_compression": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1375,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "thermal:chocolate_cake": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6776,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "thermal:spice_cake": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6665,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "thermal:dough": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5738,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "thermal:spinach": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6858,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "thermal:tin_gear": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2654,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "thermal:nickel_ingot": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5236,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "Thermal is taught as machine-first: a redstone furnace and a pulverizer before any power planning, because both run on a small dynamo.",
+    "ids": [
+     "thermal:machine_furnace",
+     "thermal:machine_pulverizer"
+    ]
+   },
+   {
+    "note": "Stirling dynamo is the entry generator - it burns solid fuel and needs no infrastructure.",
+    "ids": [
+     "thermal:dynamo_stirling",
+     "thermal:dynamo_magmatic"
+    ]
+   }
+  ],
+  "tiers": [
+   {
+    "note": "Thermal tiers by AUGMENT rather than by rebuilding machines: the same pulverizer is upgraded in place. This is the mod's structural difference from Mekanism's basic/advanced/elite/ultimate rebuild ladder.",
+    "ids": [
+     "thermal:machine_pulverizer",
+     "thermal:machine_furnace",
+     "thermal:machine_smelter"
+    ]
+   },
+   {
+    "note": "Dynamo family is chosen by available fuel rather than by tier - stirling for solids, magmatic for lava, compression for fuel, plus niche gourmand/lapidary/numismatic/disenchantment variants.",
+    "ids": [
+     "thermal:dynamo_stirling",
+     "thermal:dynamo_magmatic",
+     "thermal:dynamo_compression",
+     "thermal:dynamo_lapidary",
+     "thermal:dynamo_numismatic",
+     "thermal:dynamo_gourmand",
+     "thermal:dynamo_disenchantment"
+    ]
+   },
+   {
+    "note": "Machine roster expands sideways into processing specialities rather than upward.",
+    "ids": [
+     "thermal:machine_insolator",
+     "thermal:machine_centrifuge",
+     "thermal:machine_crucible",
+     "thermal:machine_pyrolyzer",
+     "thermal:machine_chiller",
+     "thermal:machine_press",
+     "thermal:machine_sawmill",
+     "thermal:machine_refinery",
+     "thermal:machine_bottler",
+     "thermal:machine_crystallizer"
+    ]
+   }
+  ],
+  "gates": [],
+  "traps": [],
+  "signature": [
+   {
+    "note": "The pulverizer plus redstone furnace pair is the classic Thermal opening and what the mod is remembered for.",
+    "ids": [
+     "thermal:machine_pulverizer",
+     "thermal:machine_furnace"
+    ]
+   },
+   {
+    "note": "Fluxduct/itemduct logistics and the flux capacitor are Thermal's other identity pieces.",
+    "ids": [
+     "thermal:flux_capacitor"
+    ]
+   }
+  ],
+  "confidence": "LOW. See the report - Thermal is the weakest mod in this batch. Its ids are prefix-ordered (machine_pulverizer) while speech is natural-order ('the pulverizer'), it ships NO lang file for the expansion machines, and the best available video series is Foundation/Cultivation-heavy rather than machine-heavy. Counts here are thin and the ladder above is inferred from limited corroboration."
+ },
+ "transcript_profile": "whisper small, vad, beam 1, WITH the legacy Minecraft-vocabulary initial_prompt that was later removed from ytgrab as biasing. Counts may be slightly inflated toward mod-name-like words; human_notes quotes were read directly and are unaffected."
+}

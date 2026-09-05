@@ -1,0 +1,287 @@
+{
+ "mod": "exdeorum",
+ "verified_against": "exdeorum-1.53.jar",
+ "item_count_in_jar": 237,
+ "chain": [
+  {
+   "id": "exdeorum:crook",
+   "title": "A Bent Stick",
+   "desc": "Five sticks in a hook. Hit leaves with it and they give up saplings far more readily than a bare hand, plus the occasional silk worm."
+  },
+  {
+   "id": "exdeorum:wooden_hammer",
+   "title": "The First Hammer",
+   "desc": "Planks and sticks. It smashes cobblestone into gravel, gravel into sand, sand into dust, and that descending line is the whole economy of a skyblock."
+  },
+  {
+   "id": "exdeorum:oak_barrel",
+   "title": "Barrel",
+   "desc": "Planks around a slab. Fill it with leaves or saplings and wait and you get dirt; fill it with water and lava and you get stone. Free matter from nothing."
+  },
+  {
+   "id": "exdeorum:silk_worm",
+   "title": "Silk Worm",
+   "desc": "Shaken out of leaves by the crook. Put one back on a leaf block and it slowly infests it, and infested leaves break into string."
+  },
+  {
+   "id": "exdeorum:cooked_silk_worm",
+   "title": "Cooked Silk Worm",
+   "desc": "A silk worm in a furnace. Genuinely edible, and in the opening hour of a skyblock that is not nothing."
+  },
+  {
+   "id": "exdeorum:stone_hammer",
+   "title": "Stone Hammer",
+   "desc": "The second rung. Same job as the wooden one but it survives long enough to be worth carrying, and the ladder continues up through netherite."
+  },
+  {
+   "id": "exdeorum:oak_sieve",
+   "title": "Sieve",
+   "desc": "Planks, a slab and sticks. The other half of the mod: everything the hammer breaks down goes through here to be picked over for seeds and ore."
+  },
+  {
+   "id": "exdeorum:string_mesh",
+   "title": "String Mesh",
+   "desc": "Six string in a frame. A sieve does nothing without a mesh, and this coarsest one is what gets you your first saplings and seeds."
+  },
+  {
+   "id": "exdeorum:stone_pebble",
+   "title": "Pebbles",
+   "desc": "Sifted out of dirt and gravel four at a time. Four pebbles make a cobblestone, which is how a world with no stone in it gets stone."
+  },
+  {
+   "id": "exdeorum:dust",
+   "title": "Dust",
+   "desc": "Sand hammered one step finer. Sifted, it gives the bone meal, redstone and glowstone that no amount of gravel will ever produce."
+  },
+  {
+   "id": "exdeorum:flint_mesh",
+   "title": "Flint Mesh",
+   "desc": "String mesh reinforced with flint. Second rung of the mesh ladder, and the first one that will let ore chunks through at all."
+  },
+  {
+   "id": "exdeorum:oak_crucible",
+   "title": "Wooden Crucible",
+   "desc": "A log and a slab. Drop leaves and saplings in and it renders them slowly into water, which a world without an ocean badly needs."
+  },
+  {
+   "id": "exdeorum:porcelain_clay_ball",
+   "title": "Porcelain Clay",
+   "desc": "Clay and bone meal kneaded together. Ordinary clay cannot survive a crucible full of lava; this can."
+  },
+  {
+   "id": "exdeorum:unfired_porcelain_crucible",
+   "title": "Unfired Crucible",
+   "desc": "Seven porcelain clay in a bowl shape. Fragile and useless until it has been through a furnace, like every real piece of pottery."
+  },
+  {
+   "id": "exdeorum:porcelain_crucible",
+   "title": "Porcelain Crucible",
+   "desc": "The unfired crucible smelted. Now it will hold cobblestone and turn it into lava, which is the single biggest jump in the mod's power curve."
+  },
+  {
+   "id": "exdeorum:iron_mesh",
+   "title": "Iron Mesh",
+   "desc": "Flint mesh bound with iron. Third rung, and the one that opens the sieve up to the middle band of the ore chunk table."
+  },
+  {
+   "id": "exdeorum:iron_ore_chunk",
+   "title": "Ore Chunks",
+   "desc": "Sifted out of gravel and crushed rock. Smelt it like raw ore; this is where a world with no stone finally starts producing metal."
+  },
+  {
+   "id": "exdeorum:golden_mesh",
+   "title": "Golden Mesh",
+   "desc": "Iron mesh gilded. Fourth rung. The returns per sieve pull rise with every rung, which is the only reason to keep climbing."
+  },
+  {
+   "id": "exdeorum:diamond_mesh",
+   "title": "Diamond Mesh",
+   "desc": "Golden mesh set with diamonds. Fifth rung, and the point at which sifting stops being a chore and starts being a factory input."
+  },
+  {
+   "id": "exdeorum:netherite_mesh",
+   "title": "Netherite Mesh",
+   "desc": "Diamond mesh through a smithing table with a netherite ingot and an upgrade template. Top of the mesh ladder and the best drop table in the mod."
+  },
+  {
+   "id": "exdeorum:compressed_dirt",
+   "title": "Compressed Blocks",
+   "desc": "Nine dirt in a square. The compressed forms exist so the compressed sieve and hammer can process nine blocks in one action instead of one."
+  },
+  {
+   "id": "exdeorum:oak_compressed_sieve",
+   "title": "Compressed Sieve",
+   "desc": "A log, iron and sticks. Takes compressed blocks and returns nine blocks' worth of drops per pull, which is the first real throughput upgrade."
+  },
+  {
+   "id": "exdeorum:mechanical_sieve",
+   "title": "Mechanical Sieve",
+   "desc": "An iron block, a hopper, glass and iron bars. Runs on Forge Energy and sifts without you, which is where the mod hands off to the tech mods."
+  },
+  {
+   "id": "exdeorum:mechanical_hammer",
+   "title": "Mechanical Hammer",
+   "desc": "An iron block, a hopper, iron and a hammer to seat inside it. Powered crushing; between the two machines the whole loop automates."
+  },
+  {
+   "id": "exdeorum:grass_seeds",
+   "title": "Grass Seeds",
+   "desc": "Sifted from dirt. Scatter them on a dirt block and it becomes grass, which is what lets animals spawn and the world stop being sterile."
+  },
+  {
+   "id": "exdeorum:witch_water_bucket",
+   "title": "Witch Water",
+   "desc": "Mixed in a barrel from water, mushrooms and gunpowder. Drop mobs and blocks into it and they turn into their darker counterparts."
+  },
+  {
+   "id": "exdeorum:end_cake",
+   "title": "End Cake",
+   "desc": "Crushed end stone, eggs, sugar and an eye of ender. Eat a slice and it moves you to the End, which for a skyblock is the only door there is."
+  },
+  {
+   "id": "exdeorum:sculk_core",
+   "title": "Sculk Core",
+   "desc": "An echo shard and an ender pearl. A late curiosity that gives the deep dark's materials to a world that never had a deep dark."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "exdeorum:stone_hammer",
+   "members": [
+    "exdeorum:iron_hammer",
+    "exdeorum:golden_hammer",
+    "exdeorum:diamond_hammer",
+    "exdeorum:netherite_hammer",
+    "exdeorum:bone_crook",
+    "exdeorum:compressed_wooden_hammer",
+    "exdeorum:compressed_stone_hammer",
+    "exdeorum:compressed_iron_hammer",
+    "exdeorum:compressed_golden_hammer",
+    "exdeorum:compressed_diamond_hammer",
+    "exdeorum:compressed_netherite_hammer"
+   ]
+  },
+  {
+   "hub": "exdeorum:iron_ore_chunk",
+   "members": [
+    "exdeorum:copper_ore_chunk",
+    "exdeorum:gold_ore_chunk",
+    "exdeorum:tin_ore_chunk",
+    "exdeorum:lead_ore_chunk",
+    "exdeorum:silver_ore_chunk",
+    "exdeorum:nickel_ore_chunk",
+    "exdeorum:zinc_ore_chunk",
+    "exdeorum:osmium_ore_chunk",
+    "exdeorum:uranium_ore_chunk",
+    "exdeorum:aluminum_ore_chunk",
+    "exdeorum:platinum_ore_chunk",
+    "exdeorum:iridium_ore_chunk",
+    "exdeorum:cobalt_ore_chunk"
+   ]
+  },
+  {
+   "hub": "exdeorum:compressed_dirt",
+   "members": [
+    "exdeorum:compressed_gravel",
+    "exdeorum:compressed_sand",
+    "exdeorum:compressed_cobblestone",
+    "exdeorum:compressed_deepslate",
+    "exdeorum:compressed_netherrack",
+    "exdeorum:compressed_end_stone",
+    "exdeorum:compressed_granite",
+    "exdeorum:compressed_diorite",
+    "exdeorum:compressed_andesite",
+    "exdeorum:compressed_blackstone",
+    "exdeorum:compressed_red_sand",
+    "exdeorum:compressed_soul_sand",
+    "exdeorum:compressed_dust",
+    "exdeorum:compressed_moss_block"
+   ]
+  },
+  {
+   "hub": "exdeorum:wooden_watering_can",
+   "members": [
+    "exdeorum:stone_watering_can",
+    "exdeorum:iron_watering_can",
+    "exdeorum:golden_watering_can",
+    "exdeorum:diamond_watering_can",
+    "exdeorum:netherite_watering_can"
+   ]
+  },
+  {
+   "hub": "exdeorum:crushed_netherrack",
+   "members": [
+    "exdeorum:crushed_deepslate",
+    "exdeorum:crushed_end_stone",
+    "exdeorum:crushed_blackstone",
+    "exdeorum:andesite_pebble",
+    "exdeorum:diorite_pebble",
+    "exdeorum:granite_pebble",
+    "exdeorum:basalt_pebble",
+    "exdeorum:calcite_pebble",
+    "exdeorum:tuff_pebble",
+    "exdeorum:deepslate_pebble",
+    "exdeorum:blackstone_pebble"
+   ]
+  },
+  {
+   "hub": "exdeorum:oak_barrel",
+   "members": [
+    "exdeorum:spruce_barrel",
+    "exdeorum:birch_barrel",
+    "exdeorum:jungle_barrel",
+    "exdeorum:acacia_barrel",
+    "exdeorum:dark_oak_barrel",
+    "exdeorum:mangrove_barrel",
+    "exdeorum:cherry_barrel",
+    "exdeorum:bamboo_barrel",
+    "exdeorum:crimson_barrel",
+    "exdeorum:warped_barrel",
+    "exdeorum:stone_barrel"
+   ]
+  },
+  {
+   "hub": "exdeorum:oak_sieve",
+   "members": [
+    "exdeorum:spruce_sieve",
+    "exdeorum:birch_sieve",
+    "exdeorum:jungle_sieve",
+    "exdeorum:acacia_sieve",
+    "exdeorum:dark_oak_sieve",
+    "exdeorum:mangrove_sieve",
+    "exdeorum:cherry_sieve",
+    "exdeorum:bamboo_sieve",
+    "exdeorum:crimson_sieve",
+    "exdeorum:warped_sieve"
+   ]
+  },
+  {
+   "hub": "exdeorum:oak_crucible",
+   "members": [
+    "exdeorum:spruce_crucible",
+    "exdeorum:birch_crucible",
+    "exdeorum:jungle_crucible",
+    "exdeorum:acacia_crucible",
+    "exdeorum:dark_oak_crucible",
+    "exdeorum:mangrove_crucible",
+    "exdeorum:cherry_crucible",
+    "exdeorum:bamboo_crucible",
+    "exdeorum:crimson_crucible",
+    "exdeorum:warped_crucible"
+   ]
+  },
+  {
+   "hub": "exdeorum:porcelain_bucket",
+   "members": [
+    "exdeorum:unfired_porcelain_bucket",
+    "exdeorum:wood_chippings",
+    "exdeorum:random_pottery_sherd",
+    "exdeorum:random_armor_trim",
+    "exdeorum:mycelium_spores",
+    "exdeorum:crimson_nylium_spores",
+    "exdeorum:warped_nylium_spores"
+   ]
+  }
+ ],
+ "notes": "Verified against exdeorum-1.53.jar from Modrinth project 'ex-deorum'; META-INF/mods.toml gives modLoader='javafml', modId='exdeorum', version='1.53', minecraft versionRange='[1.20.1]' and forge versionRange='[47,)' - a native 1.20.1 Forge build with no other hard dependencies. ID COUNT: 236 item models, 165 blockstates, 75 item.exdeorum.* and 166 block.exdeorum.* lang keys. The union across all four is 242; five of those are lang-only and are NOT items, so the registered count is 237. LANG-ONLY PHANTOMS dropped (the inverted-convention failure mode): 'infested_leaves.fully_infested' (a state suffix appended to the block name), 'mechanical_hammer.hammer_label' and 'mechanical_sieve.mesh_label' (GUI labels reading 'Hammer:' and 'Mesh:'), 'random_armor_trim.no_upgrade' (a tooltip line) and 'watering_can_fluid_display' whose value is literally ': %s / %s' - a format string, not a name. A naive item.<modid>.* sweep turns all five into ids. Also dropped: 'oak_barrel_composting', a blockstate with no lang key and no item model, which is the render-only state of a barrel mid-compost. THE BIG STRUCTURAL FACT - MOST OF THE JAR IS CONDITIONAL WOOD VARIANTS. Of the 229 exdeorum ids produced by some recipe, 88 sit behind a forge:mod_loaded condition: 40 on 'biomesoplenty' (fir, hellbark, jacaranda, magic, mahogany, palm, redwood, umbran, willow, dead barrels/sieves/crucibles/compressed sieves), 32 on 'blue_skies' (bluebright, comet, crystallized, dusk, frostbright, lunar, maple, starlit), 10 on 'ars_nouveau' (the blue/green/purple/red archwood set, whose lang names are Cascading, Flourishing, Vexing and Blazing Archwood) and 6 on 'aether' (skyroot). NONE of those were used anywhere in this file - every wood-variant wheel above is restricted to the 141 unconditional outputs, which is vanilla woods plus stone. If the pack ships BoP or Blue Skies those families become legal additions; if it does not, quoting them would be an uncompletable quest. RECIPE TYPES: exdeorum:sieve (539) and exdeorum:compressed_sieve (539) dominate, wrapped in 729 forge:conditional envelopes; then crafting_shaped (97), barrel_compost (63), hammer (26), water_crucible (26), tag_result (15), crucible_heat_source (11), barrel_mixing (8), compressed_hammer (8), barrel_fluid_mixing (5), crook (4). NOTE ON EXTRACTION METHOD: the forge:conditional wrapper means a top-level 'result' key scan finds nothing - the real recipe is nested inside conditional.recipes[].recipe. An unwrapped scan reported 0 outputs for this mod; unwrapping it produced 229. Anyone re-deriving this set must recurse. THE TWO LADDERS are the backbone and both are real dependency chains, not cosmetic tiers. Mesh: string_mesh (string only) -> flint_mesh (consumes string_mesh) -> iron_mesh (consumes flint_mesh) -> golden_mesh (consumes iron_mesh) -> diamond_mesh (consumes golden_mesh) -> netherite_mesh (consumes diamond_mesh plus minecraft:netherite_upgrade_smithing_template). Hammer: wooden -> stone -> iron -> golden -> diamond, each an independent craft from rods plus its material, then netherite_hammer which consumes diamond_hammer and the smithing template. The netherite rung of both ladders needs the vanilla template, so both are gated behind a bastion. OBTAINABILITY - KEPT DESPITE NO CRAFTING RECIPE: exdeorum:silk_worm is produced by the four exdeorum:crook recipes (crook used on leaves), not by a bench. exdeorum:porcelain_bucket has a smelting recipe from unfired_porcelain_bucket and is in a wheel. exdeorum:witch_water_bucket needs a word of explanation because an automated obtainability check flags it: the BUCKET ITEM has no recipe of its own, but the FLUID it holds has an explicit one - data/exdeorum/recipes/barrel_fluid_transformation/witch_water.json turns a barrel of minecraft:water into exdeorum:witch_water with red and brown mushrooms as weighted byproducts. The fluid is also registered into data/minecraft/tags/fluids/water.json alongside exdeorum:flowing_witch_water, and two further recipes consume it (barrel_fluid_mixing/netherrack.json and barrel_mixing/soul_sand.json), so the fluid is unambiguously live. Filling a vanilla bucket from a registered fluid that ships a bucket item always works, so the step is completable; the quest text should say 'fill a bucket from a barrel of witch water' rather than implying a craft. This is a stricter standard than was applied to the Ender IO fluid buckets, which were dropped - there the FLUIDS themselves had no verified recipe, only machine output, whereas here the fluid's recipe is in the jar. DROPPED FOR NO VERIFIED SOURCE: 'exdeorum:infested_leaves' - it has a blockstate, an item model and a lang key, but no recipe and no loot table; it is placed by using a silk worm on a leaf block, which is code-registered, so it is very likely reachable but nothing in the data proves it and it was left off rather than guessed. The four filled porcelain buckets (porcelain_lava_bucket, porcelain_milk_bucket, porcelain_water_bucket, porcelain_witch_water_bucket) were likewise dropped - they are fill-by-use variants of the empty bucket with no recipe of their own. 'exdeorum:witch_water' (the fluid block) dropped as a fluid registration rather than an item. DESIRABILITY: the jar carries a large number of _slab, _stairs and _wall variants of the compressed and crushed blocks; per the rule none appear in the chain, and the wheels use only the base blocks. 'exdeorum:random_armor_trim' is kept in a wheel despite its _trim suffix - it is not a block trim variant but a genuine sieve reward item with its own model, lang key and two sieve recipes (data/exdeorum/recipes/sieve/sand/golden/random_armor_trim.json). ORDERING vs moddb consensus (15 entries, all 15 id-verified): NO SERIOUS CONFLICT, which is unusual. Consensus reads crook 0.0, oak_barrel 0.071, silk_worm 0.143, cooked_silk_worm 0.214, stone_hammer 0.286, oak_crucible 0.357, string_mesh 0.429, porcelain_clay_ball 0.5, dust 0.571, porcelain_crucible 0.643 and the recipe graph agrees with all of it. The only adjustment made was inserting exdeorum:wooden_hammer before stone_hammer (consensus omits it entirely, but it is the cheaper first rung and the crafting recipe is planks plus rods, strictly earlier than the stone one) and moving oak_sieve up beside string_mesh, since a mesh is inert without a sieve to seat it in."
+}

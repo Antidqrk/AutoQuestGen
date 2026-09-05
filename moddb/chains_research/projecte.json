@@ -1,0 +1,291 @@
+{
+ "mod": "projecte",
+ "verified_against": "ProjectE-1.20.1-PE1.0.1.jar",
+ "item_count_in_jar": 107,
+ "chain": [
+  {
+   "id": "projecte:philosophers_stone",
+   "title": "Philosopher's Stone",
+   "desc": "Glowstone dust, redstone dust and diamonds. It is not a crafting ingredient - it is the key that makes the whole EMC economy readable, and right-clicking it opens a 3x3 transmutation grid on the spot."
+  },
+  {
+   "id": "projecte:transmutation_table",
+   "title": "Transmutation Table",
+   "desc": "Stone, obsidian and the Philosopher's Stone. Drop anything in and it becomes a stored EMC balance; spend that balance on anything else you have learned. This is the mod."
+  },
+  {
+   "id": "projecte:low_covalence_dust",
+   "title": "Low Covalence Dust",
+   "desc": "Cobblestone and charcoal. The three covalence dusts are the mod's cheap crafting reagent, and the low tier is where the ladder starts."
+  },
+  {
+   "id": "projecte:medium_covalence_dust",
+   "title": "Medium Covalence Dust",
+   "desc": "Iron and redstone. Together with the high dust it builds the Alchemical Chest and the Repair Talisman."
+  },
+  {
+   "id": "projecte:high_covalence_dust",
+   "title": "High Covalence Dust",
+   "desc": "Diamond and coal. Every Alchemical Bag colour needs one, so make more than you think."
+  },
+  {
+   "id": "projecte:alchemical_chest",
+   "title": "Alchemical Chest",
+   "desc": "A wooden chest, iron, diamond, stone and all three covalence dusts. 104 slots, and the shell that both the condensers and every alchemical bag are built around."
+  },
+  {
+   "id": "projecte:condenser_mk1",
+   "title": "Energy Condenser",
+   "desc": "Diamonds and obsidian around an Alchemical Chest. Put a target item in the top slot, feed it junk, and it converts EMC into copies of that target. The first real automation."
+  },
+  {
+   "id": "projecte:collector_mk1",
+   "title": "Energy Collector",
+   "desc": "A diamond block, glowstone, glass and a furnace. It turns light into EMC on its own. Slow - but it never stops, and it is what makes the economy self-sustaining."
+  },
+  {
+   "id": "projecte:relay_mk1",
+   "title": "Antimatter Relay",
+   "desc": "Diamond blocks, obsidian and glass. Relays gather EMC from several collectors and feed it into one target, which is how collector arrays get built."
+  },
+  {
+   "id": "projecte:alchemical_coal",
+   "title": "Alchemical Coal",
+   "desc": "Four coal and a Philosopher's Stone. The first rung of the fuel ladder - each rung burns longer and stores more EMC than the one below."
+  },
+  {
+   "id": "projecte:mobius_fuel",
+   "title": "Mobius Fuel",
+   "desc": "Four Alchemical Coal and a Philosopher's Stone. Second rung, and the reagent behind Klein Stars and the Nova Catalyst."
+  },
+  {
+   "id": "projecte:klein_star_ein",
+   "title": "Klein Star Ein",
+   "desc": "Diamonds around Mobius Fuel. A portable EMC battery. Carry it while you mine and it fills itself; the tiers upgrade by combining four of the rung below."
+  },
+  {
+   "id": "projecte:aeternalis_fuel",
+   "title": "Aeternalis Fuel",
+   "desc": "Four Mobius Fuel and a Philosopher's Stone. Top of the fuel ladder and the reagent that turns diamond blocks into matter."
+  },
+  {
+   "id": "projecte:dark_matter",
+   "title": "Dark Matter",
+   "desc": "Aeternalis Fuel compressed around diamond blocks. The first alchemical metal, and the gate on every tool, ring and amulet in the mod."
+  },
+  {
+   "id": "projecte:dark_matter_block",
+   "title": "Dark Matter Block",
+   "desc": "Nine Dark Matter. The machines and the higher tables all want it in block form, so it is worth reaching this before spending matter on tools."
+  },
+  {
+   "id": "projecte:dm_furnace",
+   "title": "Dark Matter Furnace",
+   "desc": "A furnace inside a Dark Matter Block. It smelts far faster than vanilla and holds a much larger input and output buffer."
+  },
+  {
+   "id": "projecte:dm_pick",
+   "title": "Dark Matter Pickaxe",
+   "desc": "Dark Matter on a stick. It never breaks, it mines everything, and holding a charge key widens it into a 3x3 area - the DM tools are quality-of-life more than damage."
+  },
+  {
+   "id": "projecte:collector_mk2",
+   "title": "Collector MK2",
+   "desc": "Dark Matter and glowstone around a MK1. Each collector tier generates several times the EMC of the last, and this is where passive income starts to matter."
+  },
+  {
+   "id": "projecte:transmutation_tablet",
+   "title": "Transmutation Tablet",
+   "desc": "Stone, a Dark Matter Block and a Transmutation Table. The table you carry - full EMC access from your inventory, anywhere."
+  },
+  {
+   "id": "projecte:klein_star_omega",
+   "title": "Klein Star Omega",
+   "desc": "Reached by combining four Klein Stars at each of five tiers, through a dedicated shapeless-kleinstar recipe serializer that carries the stored charge forward. The largest EMC battery in the mod."
+  },
+  {
+   "id": "projecte:red_matter",
+   "title": "Red Matter",
+   "desc": "Aeternalis Fuel around Dark Matter. The second alchemical metal and the top of the material ladder."
+  },
+  {
+   "id": "projecte:condenser_mk2",
+   "title": "Energy Condenser MK2",
+   "desc": "A Dark Matter Block and a Red Matter Block around a MK1 condenser. It can pull its input from a linked chest instead of only from its own inventory."
+  },
+  {
+   "id": "projecte:collector_mk3",
+   "title": "Collector MK3",
+   "desc": "Red Matter and glowstone around a MK2. The top passive generator; a wall of these with MK3 relays is what an endgame ProjectE base looks like."
+  },
+  {
+   "id": "projecte:gem_of_eternal_density",
+   "title": "Gem of Eternal Density",
+   "desc": "Dark Matter, diamond and obsidian. It quietly converts everything in your inventory into diamonds as you pick items up, feeding the condenser without you thinking about it."
+  },
+  {
+   "id": "projecte:swiftwolf_rending_gale",
+   "title": "Swiftwolf's Rending Gale",
+   "desc": "Dark Matter, feathers and an Iron Band. Creative flight, a lightning repel field and a mob-repel field, all off Klein Star charge."
+  },
+  {
+   "id": "projecte:mercurial_eye",
+   "title": "Mercurial Eye",
+   "desc": "Red Matter, diamond, obsidian and bricks. Point it at the world with a Klein Star and a block in the offhand and it builds or replaces whole structures on EMC."
+  },
+  {
+   "id": "projecte:arcana_ring",
+   "title": "Arcana Ring",
+   "desc": "Red Matter combining the Zero Ring, Ignition Ring, Harvest Goddess Band and Swiftwolf's Rending Gale into one item with a mode dial. The endgame of the ring line."
+  },
+  {
+   "id": "projecte:tome",
+   "title": "Tome of Knowledge",
+   "desc": "A book, High Covalence Dust and a full set of charged Klein Stars, behind a forge:conditional recipe gated on projecte:tome_enabled and projecte:full_klein_stars. It teaches you every EMC-valued item in the game at once - the true end of the mod, and the thing packs most often disable."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "projecte:klein_star_omega",
+   "members": [
+    "projecte:klein_star_ein",
+    "projecte:klein_star_zwei",
+    "projecte:klein_star_drei",
+    "projecte:klein_star_vier",
+    "projecte:klein_star_sphere",
+    "projecte:tome"
+   ]
+  },
+  {
+   "hub": "projecte:collector_mk3",
+   "members": [
+    "projecte:collector_mk1",
+    "projecte:collector_mk2",
+    "projecte:relay_mk1",
+    "projecte:relay_mk2",
+    "projecte:relay_mk3",
+    "projecte:condenser_mk1",
+    "projecte:condenser_mk2",
+    "projecte:alchemical_chest"
+   ]
+  },
+  {
+   "hub": "projecte:aeternalis_fuel",
+   "members": [
+    "projecte:alchemical_coal",
+    "projecte:alchemical_coal_block",
+    "projecte:mobius_fuel",
+    "projecte:mobius_fuel_block",
+    "projecte:aeternalis_fuel_block",
+    "projecte:nova_catalyst",
+    "projecte:nova_cataclysm"
+   ]
+  },
+  {
+   "hub": "projecte:dm_hammer",
+   "members": [
+    "projecte:dm_pick",
+    "projecte:dm_axe",
+    "projecte:dm_shovel",
+    "projecte:dm_hoe",
+    "projecte:dm_sword",
+    "projecte:dm_shears",
+    "projecte:dm_furnace",
+    "projecte:dm_pedestal",
+    "projecte:dm_helmet",
+    "projecte:dm_chestplate",
+    "projecte:dm_leggings",
+    "projecte:dm_boots"
+   ]
+  },
+  {
+   "hub": "projecte:rm_morning_star",
+   "members": [
+    "projecte:rm_pick",
+    "projecte:rm_axe",
+    "projecte:rm_shovel",
+    "projecte:rm_hoe",
+    "projecte:rm_sword",
+    "projecte:rm_katar",
+    "projecte:rm_shears",
+    "projecte:rm_hammer",
+    "projecte:rm_furnace",
+    "projecte:rm_helmet",
+    "projecte:rm_chestplate",
+    "projecte:rm_leggings",
+    "projecte:rm_boots"
+   ]
+  },
+  {
+   "hub": "projecte:arcana_ring",
+   "members": [
+    "projecte:iron_band",
+    "projecte:zero_ring",
+    "projecte:ignition_ring",
+    "projecte:harvest_goddess_band",
+    "projecte:black_hole_band",
+    "projecte:swiftwolf_rending_gale",
+    "projecte:void_ring",
+    "projecte:evertide_amulet",
+    "projecte:volcanite_amulet",
+    "projecte:watch_of_flowing_time",
+    "projecte:repair_talisman",
+    "projecte:gem_of_eternal_density"
+   ]
+  },
+  {
+   "hub": "projecte:life_stone",
+   "members": [
+    "projecte:body_stone",
+    "projecte:mind_stone",
+    "projecte:soul_stone",
+    "projecte:philosophers_stone",
+    "projecte:catalytic_lens",
+    "projecte:hyperkinetic_lens",
+    "projecte:destruction_catalyst",
+    "projecte:mercurial_eye",
+    "projecte:archangel_smite",
+    "projecte:interdiction_torch"
+   ]
+  },
+  {
+   "hub": "projecte:black_alchemical_bag",
+   "members": [
+    "projecte:white_alchemical_bag",
+    "projecte:light_gray_alchemical_bag",
+    "projecte:gray_alchemical_bag",
+    "projecte:red_alchemical_bag",
+    "projecte:orange_alchemical_bag",
+    "projecte:yellow_alchemical_bag",
+    "projecte:lime_alchemical_bag"
+   ]
+  },
+  {
+   "hub": "projecte:blue_alchemical_bag",
+   "members": [
+    "projecte:light_blue_alchemical_bag",
+    "projecte:cyan_alchemical_bag",
+    "projecte:green_alchemical_bag",
+    "projecte:purple_alchemical_bag",
+    "projecte:magenta_alchemical_bag",
+    "projecte:pink_alchemical_bag",
+    "projecte:brown_alchemical_bag"
+   ]
+  },
+  {
+   "hub": "projecte:gem_chestplate",
+   "members": [
+    "projecte:gem_helmet",
+    "projecte:gem_leggings",
+    "projecte:gem_boots",
+    "projecte:divining_rod_1",
+    "projecte:divining_rod_2",
+    "projecte:divining_rod_3",
+    "projecte:low_covalence_dust",
+    "projecte:medium_covalence_dust",
+    "projecte:high_covalence_dust"
+   ]
+  }
+ ],
+ "notes": "PROJECTE IS NOT A CRAFTING LADDER AND THIS CHAIN DOES NOT PRETEND IT IS. The mod's real content is an EMC economy: every item in the game carries an Energy-Matter Covalence value, the Transmutation Table converts anything into that value and back out as anything else you have LEARNED, and the whole game becomes a single fungible currency. The values themselves are not items - they live in data/projecte/pe_custom_conversions/defaults.json and metals.json as a conversion datapack, which is why no amount of recipe scanning will ever surface 'the EMC system' as a questable id. The four things that ARE questable and that ARE the progression are: (1) the Philosopher's Stone, which makes EMC legible; (2) the Transmutation Table and later Tablet, which are the interface to the currency; (3) the Collector / Relay / Condenser triangle, which turns the currency from a converter into a GENERATOR - collectors make EMC out of light, relays aggregate it, condensers spend it on copies of a target item, and an array of the three is a self-running item factory; and (4) the matter tiers - Alchemical Coal, Mobius Fuel, Aeternalis Fuel, Dark Matter, Red Matter - which are the real difficulty gates because every tool, ring, amulet and machine tier hangs off which matter you have reached. The chain is ordered on that spine. Do not read the tool wheels as the goal; in play the tools are what you buy once the economy runs. The Tome of Knowledge is placed last deliberately - it ends the mod by teaching every EMC-valued item at once, and its recipe is a forge:conditional gated on projecte:tome_enabled and projecte:full_klein_stars, so packs that keep ProjectE balanced usually disable it. VERIFICATION AND A LARGE CORRECTED OVERCOUNT: the jar has 250 item models but only 107 real items. The 143 extras are armour trim overlays (dm_/rm_/gem_ boots, chestplate, helmet, leggings each x amethyst, copper, diamond, emerald, gold, iron, lapis, netherite, quartz, redstone trims) plus on/off state models for the toggleable rings and the arcana modes (arcana_harv_on/off, arcana_ignition_on/off, arcana_swrg_on/off, arcana_zero_on/off, black_hole_band_on, body_stone_on and similar). None has a lang key or a recipe. Strict models INTERSECT lang gives 107, and ALL 107 have a recipe in data/projecte/recipes - there is not a single unobtainable item in this jar, so nothing was dropped. Pass 2 re-derived the set independently from .class constant-pool strings, item textures, blockstates, recipe results and loot tables: all 107 corroborated; the only id pass 2 surfaced that pass 1 had not claimed was projecte:wall_interdiction_torch, the wall-mounted blockstate of the Interdiction Torch with no item form, correctly excluded. COMPLETABILITY CAVEAT ON FIVE ENDGAME IDS: gem_helmet, gem_chestplate, gem_leggings, gem_boots and tome are the only ids here whose recipes are wrapped in forge:conditional, with the result nested inside recipes[].recipe.result rather than at the top level - a shallow result-key scan reports them as having no recipe, which they do have. All five are gated on the projecte:full_klein_stars condition, and each Gem Armour piece additionally consumes a forge:partial_nbt Klein Star Omega carrying StoredEMC 51200000, i.e. a FULLY CHARGED Omega. They are obtainable, but they are the deepest items in the mod and a pack that nerfs Klein Star capacity or EMC rates can put them out of reach; they are kept in a wheel rather than the chain for that reason. RECIPES REGISTERED THROUGH CUSTOM SERIALIZERS: projecte:crafting_shapeless_kleinstar (the five Klein Star tier-ups, which carry stored charge forward), projecte:covalence_repair and projecte:philo_stone_smelting are all real and all obtainable; six more recipes including the Tome sit behind forge:conditional wrappers. ALCHEMICAL BAGS: 16 dye colours, split across two wheels of seven so no wheel exceeds the cap and every colour is covered. NO CONSENSUS DATA: moddb.json has no projecte entry (only the separate projectexpansion addon), so ordering is the recipe dependency graph alone. Jar confirmed 1.20.1 Forge: META-INF/mods.toml, modId projecte, minecraft versionRange [1.20.1], pack_format 15, Java 17 class files, no fabric.mod.json. ProjectE is not on Modrinth; this is CurseForge project 226410 file 4901949, the newest 1.20.1 build. The data/curios entries are slot definitions (belt, necklace, ring, klein_star) and tag files only - ProjectE registers no items into the curios namespace, so no registers_into declaration is needed."
+}

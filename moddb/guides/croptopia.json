@@ -1,0 +1,1115 @@
+{
+ "mod": "croptopia",
+ "ids_in_jar": 447,
+ "videos": [
+  {
+   "id": "a9F1tR5L8d0",
+   "title": "CROPTOPIA MOD - MINECRAFT 1.19.2 (MOD SHOWCASE)",
+   "channel": "UltraUnit17",
+   "views": 48806,
+   "duration": 596,
+   "chars": 11628,
+   "legacy_vocab_prompt": true
+  },
+  {
+   "id": "DPNR1Oa5zgY",
+   "title": "CROPTOPIA MOD UPDATE - MINECRAFT 1.19.4 (MOD SHOWCASE)",
+   "channel": "UltraUnit17",
+   "views": 43424,
+   "duration": 541,
+   "chars": 10273,
+   "legacy_vocab_prompt": true
+  },
+  {
+   "id": "BYgFCqM1rgA",
+   "title": "Come farm with me! - Croptopia mod showcase - Minecraft 1.21",
+   "channel": "DeltaZangoose",
+   "views": 674,
+   "duration": 3060,
+   "chars": 26631,
+   "legacy_vocab_prompt": true
+  }
+ ],
+ "items": {
+  "croptopia:toast": {
+   "mentions": 26,
+   "videos": 2,
+   "first_at": 0.2872,
+   "praise": 12,
+   "warn": 4,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:coffee": {
+   "mentions": 19,
+   "videos": 3,
+   "first_at": 0.5227,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:cinnamon": {
+   "mentions": 12,
+   "videos": 3,
+   "first_at": 0.366,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "croptopia:strawberry": {
+   "mentions": 12,
+   "videos": 3,
+   "first_at": 0.4124,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:grape": {
+   "mentions": 11,
+   "videos": 3,
+   "first_at": 0.3072,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "croptopia:cooking_pot": {
+   "mentions": 11,
+   "videos": 2,
+   "first_at": 0.221,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:flour": {
+   "mentions": 9,
+   "videos": 2,
+   "first_at": 0.6204,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:food_press": {
+   "mentions": 8,
+   "videos": 2,
+   "first_at": 0.318,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:frying_pan": {
+   "mentions": 8,
+   "videos": 2,
+   "first_at": 0.2313,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:orange": {
+   "mentions": 8,
+   "videos": 2,
+   "first_at": 0.3067,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "croptopia:onion": {
+   "mentions": 8,
+   "videos": 1,
+   "first_at": 0.0402,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:vanilla": {
+   "mentions": 7,
+   "videos": 3,
+   "first_at": 0.7441,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:banana": {
+   "mentions": 6,
+   "videos": 3,
+   "first_at": 0.54,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:tomato": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.4234,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:butter": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.4896,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:popcorn": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.2773,
+   "praise": 0,
+   "warn": 6,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:coffee_beans": {
+   "mentions": 5,
+   "videos": 3,
+   "first_at": 0.5422,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:cantaloupe": {
+   "mentions": 5,
+   "videos": 3,
+   "first_at": 0.5821,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 3
+  },
+  "croptopia:dough": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.6186,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:avocado": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.2703,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:lettuce": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.7363,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:pumpkin_spice_latte": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.6739,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:cucumber": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.7467,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:olive": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.7838,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:pecan": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.161,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "croptopia:ginger": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.8398,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 4
+  },
+  "croptopia:peanut": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.1197,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:strawberry_jam": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.0761,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:pepper": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.7494,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:paprika": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.685,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:barley": {
+   "mentions": 3,
+   "videos": 3,
+   "first_at": 0.5394,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:melon_juice": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.333,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:oatmeal": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.7848,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:dragonfruit": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.298,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "croptopia:squash": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.804,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:toast_with_jam": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1251,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:calamari": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4339,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:apricot": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3569,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:rhubarb": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.6895,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:bacon": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7493,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:buttered_toast": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8592,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:lemon": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.6503,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:knife": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.2369,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:walnut": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.2884,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "croptopia:lemonade": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.6503,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:starfruit": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4163,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:strawberry_smoothie": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.5806,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:grapefruit": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.3836,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "croptopia:cucumber_salad": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7147,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:pizza": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.4166,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:cherry": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5177,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:peach": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5246,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:sushi": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8169,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:grape_jam": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0708,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:ginger_seed": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8415,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "croptopia:rhubarb_pie": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6319,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:doughnut": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7325,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:cabbage": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2863,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:almond": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3561,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:molasses": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4686,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:olive_oil": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8136,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:toast_sandwich": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8549,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:steamed_crab": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8947,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:apple_sapling": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3619,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:veggie_salad": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7742,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:celery": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.288,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:avocado_toast": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7991,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:cantaloupe_seed": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5232,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:hamburger": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7843,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:glowing_calamari": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4416,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:banana_cream_pie": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7573,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:broccoli": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2871,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:water_bottle": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8374,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:corn_bread": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8484,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:honeydew": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5124,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:coconut": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1802,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:raisin_oatmeal_cookie": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7841,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:peach_jam": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5246,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:pecan_pie": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5936,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:strawberry_ice_cream": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5713,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:spinach": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7212,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:apple_pie": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.59,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:soy_milk": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6536,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:banana_smoothie": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5334,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:raisins": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7879,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:fish_and_chips": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8044,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:caesar_salad": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7131,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:cranberry_juice": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5019,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:cherry_jam": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5177,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:nectarine": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1779,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:cinnamon_sapling": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4021,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:roasted_sunflower_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2751,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:cranberry": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5019,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:cashew": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1816,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:peanut_butter_and_jam": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1197,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:grape_juice": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0689,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:mango": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5116,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:sweet_crepes": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1955,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:rutabaga": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8437,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "croptopia:rice_seed": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7451,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:pineapple": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.86,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "croptopia:peanut_butter": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1197,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "Both guides open the same way and it is unusually explicit: craft ALL FIVE tools before touching any food. 'You're going to want to make yourself a cooking pot, an all-purpose food press, a frying pan, a knife and a mortar and pestle.' They are taught as one set, not a progression.",
+    "ids": [
+     "croptopia:cooking_pot",
+     "croptopia:food_press",
+     "croptopia:frying_pan",
+     "croptopia:knife",
+     "croptopia:mortar_and_pestle"
+    ]
+   },
+   {
+    "note": "Then two staple ingredients that gate huge recipe families and are easy to miss: cinnamon (found growing on trees in the world) and salt (produced in a furnace, not farmed).",
+    "ids": [
+     "croptopia:cinnamon",
+     "croptopia:salt"
+    ]
+   },
+   {
+    "note": "Only then crops. Seeds come from breaking wild plants found while exploring - there is no crafting route into the crop set.",
+    "ids": [
+     "croptopia:strawberry",
+     "croptopia:grape",
+     "croptopia:coffee_beans"
+    ]
+   }
+  ],
+  "ladder": [
+   {
+    "note": "This mod has no tier ladder at all - it is a BREADTH mod. The only real progression is tool-to-recipe-family: each tool unlocks a whole category rather than a better version of itself. Four of the five tools are just iron.",
+    "ids": [
+     "croptopia:knife",
+     "croptopia:cooking_pot",
+     "croptopia:frying_pan",
+     "croptopia:mortar_and_pestle",
+     "croptopia:food_press"
+    ]
+   },
+   {
+    "note": "Ingredient chain, the closest thing to a ladder: a flourable crop becomes flour, flour plus a water bottle in the cooking pot becomes dough, and dough plus the frying pan becomes the baked goods.",
+    "ids": [
+     "croptopia:flour",
+     "croptopia:dough",
+     "croptopia:pecan_pie"
+    ]
+   },
+   {
+    "note": "The food press is the most expensive tool (hopper plus piston, so redstone-gated) and it alone unlocks every juice and, with the cooking pot, butter. Effectively the mod's tier-2.",
+    "ids": [
+     "croptopia:food_press",
+     "croptopia:orange_juice",
+     "croptopia:coffee",
+     "croptopia:butter"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "Recipe families map one-to-one onto tools: juice = food press + glass bottle + fruit; jam = cooking pot + sugar + fruit; pies = frying pan + dough. Without the matching tool the entire family is unreachable.",
+    "ids": [
+     "croptopia:food_press",
+     "croptopia:cooking_pot",
+     "croptopia:frying_pan",
+     "croptopia:strawberry_jam",
+     "croptopia:orange_juice"
+    ]
+   },
+   {
+    "note": "The tools are consumed as recipe INGREDIENTS in the shapeless recipes rather than being placed as blocks - they are returned, but they must be in the grid, which surprises players expecting a machine to place down.",
+    "ids": [
+     "croptopia:cooking_pot",
+     "croptopia:food_press",
+     "croptopia:butter"
+    ]
+   },
+   {
+    "note": "Salt is smelted, not grown - a guide stumbles over this on camera ('it says a blasting furnace? okay, any kind of furnace'). It gates a large share of the savoury recipes.",
+    "ids": [
+     "croptopia:salt"
+    ]
+   },
+   {
+    "note": "Every crop is world-gated: seeds only come from breaking wild plants in the right biome. Fully grown crops can be right-click harvested without breaking them.",
+    "ids": [
+     "croptopia:coffee_beans",
+     "croptopia:cinnamon"
+    ]
+   }
+  ],
+  "payoff": [
+   {
+    "note": "The click moment is finishing the five-tool set - the recipe book goes from a handful of items to hundreds at once. Guides describe 'three double chests worth' of plantable foods.",
+    "ids": [
+     "croptopia:cooking_pot",
+     "croptopia:food_press",
+     "croptopia:frying_pan",
+     "croptopia:knife",
+     "croptopia:mortar_and_pestle"
+    ]
+   },
+   {
+    "note": "Drinks are the most-discussed family and the one guides visibly enjoy - juices, smoothies and especially coffee.",
+    "ids": [
+     "croptopia:coffee",
+     "croptopia:banana_smoothie",
+     "croptopia:orange_juice"
+    ]
+   },
+   {
+    "note": "Composite dishes are the showpiece rewards - the mod's identity is that a real meal is a multi-step craft.",
+    "ids": [
+     "croptopia:caesar_salad",
+     "croptopia:fish_and_chips",
+     "croptopia:anchovy_pizza"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "REAL RISK IN A BIG PACK: a guide warns that Croptopia's tool recipes are 'very common for a lot of mods' and that with several installed 'you might have a conflicting argument and issues crafting this particular item'. The knife and mortar-and-pestle shapes collide with other food mods - and this pack also runs Farmer's Delight and the whole Let's Do suite, so a Croptopia quest must specify the exact item, never a generic craft.",
+    "ids": [
+     "croptopia:knife",
+     "croptopia:mortar_and_pestle"
+    ]
+   },
+   {
+    "note": "Raw ingredients are not the point and are poor food - 'you are not meant to eat these ingredients by themselves, although you can.' Quests should target finished dishes, not the crops.",
+    "ids": [
+     "croptopia:flour",
+     "croptopia:butter",
+     "croptopia:olive_oil"
+    ]
+   },
+   {
+    "note": "The crop and food list is enormous (447 real ids). Enumerating it would swamp a quest book; pick the tools, the families and a handful of signature dishes instead.",
+    "ids": [
+     "croptopia:saguaro",
+     "croptopia:toast"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "The five tools ARE the mod's mechanical identity - everything else is content hanging off them.",
+    "ids": [
+     "croptopia:cooking_pot",
+     "croptopia:food_press",
+     "croptopia:frying_pan",
+     "croptopia:knife",
+     "croptopia:mortar_and_pestle"
+    ]
+   },
+   {
+    "note": "Coffee and cinnamon are the two ingredients guides single out as distinctly Croptopia.",
+    "ids": [
+     "croptopia:coffee",
+     "croptopia:cinnamon"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "mod": "everyxhotpot",
+ "verified_against": "everyxhotpot-2.0.0-pre1-1.20.1-TeaCon2023.jar",
+ "item_count_in_jar": 10,
+ "chain": [
+  {
+   "id": "everyxhotpot:hotpot",
+   "title": "Set The Hotpot Down",
+   "desc": "A cauldron on a campfire with copper ingots at the corners. The whole mod is one block: you fill it with a soup, drop food in, and everyone standing round it eats from the same pot."
+  },
+  {
+   "id": "minecraft:water_bucket",
+   "title": "Clear Soup",
+   "desc": "A bucket of water poured into the hotpot fills it with Clear Soup, the plain base. A water bottle works too and fills it part way."
+  },
+  {
+   "id": "everyxhotpot:hotpot_chopstick",
+   "title": "Chopsticks",
+   "desc": "A copper ingot and sticks. Without chopsticks you can put food into the pot but you cannot take anything out of it."
+  },
+  {
+   "id": "everyxhotpot:hotpot_small_plate",
+   "title": "The Small Plate",
+   "desc": "Quartz. Plates sit around the pot and hold the raw ingredients waiting to go in, which is what makes a hotpot a table rather than a machine."
+  },
+  {
+   "id": "everyxhotpot:hotpot_long_plate",
+   "title": "The Long Plate",
+   "desc": "More quartz in a longer frame. It seats more ingredients along one edge of the table."
+  },
+  {
+   "id": "everyxhotpot:hotpot_large_round_plate",
+   "title": "The Large Round Plate",
+   "desc": "The biggest of the three serving plates, and the one a full table is built around."
+  },
+  {
+   "id": "everyxhotpot:hotpot_soup_spoon",
+   "title": "The Soup Spoon",
+   "desc": "An iron ingot beaten into a spoon. It lifts broth rather than solids, which is a different job from the chopsticks."
+  },
+  {
+   "id": "everyxhotpot:hotpot_slotted_spoon",
+   "title": "The Slotted Spoon",
+   "desc": "Iron bars over an iron ingot. Slotted so the broth drains away and only what you cooked comes out."
+  },
+  {
+   "id": "everyxhotpot:hotpot_skewer",
+   "title": "An Empty Skewer",
+   "desc": "Three sticks. Loading a skewer is its own special crafting recipe, and a loaded skewer can be lowered into the pot whole."
+  },
+  {
+   "id": "everyxhotpot:hotpot_spice_pack",
+   "title": "The Spice Pack",
+   "desc": "Paper and string. A spice pack is filled by its own special recipe and carries charges, so it seasons the pot repeatedly instead of once."
+  },
+  {
+   "id": "minecraft:blaze_powder",
+   "title": "Spicy Soup",
+   "desc": "Blaze powder, gunpowder and redstone thrown into a clear pot turn it Spicy. Spicy soup applies the mod's own Acrid effect to whoever eats out of it."
+  },
+  {
+   "id": "minecraft:milk_bucket",
+   "title": "Cheese Soup",
+   "desc": "Milk, by bucket or by bottle, makes Cheese Soup. It is the only base that does not start from water."
+  },
+  {
+   "id": "minecraft:lava_bucket",
+   "title": "Lava Soup",
+   "desc": "A bucket of lava is a legal soup base. The mod's own death message says a player who falls in becomes a hotpot ingredient, involuntarily."
+  },
+  {
+   "id": "everyxhotpot:hotpot_paper_bowl",
+   "title": "Takeaway",
+   "desc": "A paper bowl packs a whole hotpot, or a skewer out of one, into a single carried item - Packed Hotpot, Packed Skewer In Hotpot, or Drained. It is the last thing the mod adds and the only way the meal leaves the table."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "everyxhotpot:hotpot",
+   "members": [
+    "everyxhotpot:hotpot_chopstick",
+    "everyxhotpot:hotpot_small_plate",
+    "everyxhotpot:hotpot_long_plate",
+    "everyxhotpot:hotpot_large_round_plate",
+    "everyxhotpot:hotpot_soup_spoon",
+    "everyxhotpot:hotpot_slotted_spoon",
+    "everyxhotpot:hotpot_skewer",
+    "everyxhotpot:hotpot_spice_pack",
+    "everyxhotpot:hotpot_paper_bowl"
+   ]
+  },
+  {
+   "hub": "everyxhotpot:hotpot_spice_pack",
+   "members": [
+    "minecraft:water_bucket",
+    "minecraft:potion",
+    "minecraft:milk_bucket",
+    "minecraft:lava_bucket",
+    "minecraft:blaze_powder",
+    "minecraft:gunpowder",
+    "minecraft:redstone",
+    "minecraft:diamond"
+   ]
+  }
+ ],
+ "notes": "HONEST SIZE: this mod registers exactly TEN obtainable items - hotpot, hotpot_chopstick, hotpot_small_plate, hotpot_long_plate, hotpot_large_round_plate, hotpot_soup_spoon, hotpot_slotted_spoon, hotpot_skewer, hotpot_spice_pack and hotpot_paper_bowl. All ten have an item model, a lang key and a crafting_shaped recipe, so all ten are in the chain and there is nothing left over to pad with. Because the item list is that short, the spine is carried by the SOUP BASES, which are not items: data/everyxhotpot/recipes holds four everyxhotpot:hotpot_soup_base_recipe files, five everyxhotpot:hotpot_soup_recharge_recipe files and three everyxhotpot:hotpot_soup_ingredient_recipe files, and each names the vanilla item that fills or seasons the pot - water_bucket or a potion for Clear, milk_bucket or forge:milk/milk_bottle for Cheese, lava_bucket for Lava, minecraft:diamond for the Shimmer demo, and blaze_powder plus gunpowder plus redstone to turn Clear into Spicy. Those vanilla ids are used as steps, which matches the 253 cross-namespace ids already present across chains_research. Two further special recipe types, everyxhotpot:crafting_special_hotpot_skewer and crafting_special_hotpot_spice_pack, are the code-driven fill recipes for the skewer and the spice pack; they take arbitrary food and are why both items exist in an empty and a loaded form. VERSION CONFLICT WITH moddb.json, recorded as required and material to this mod: the consensus row lists everyxhotpot:hotpot_placement_rack, hotpot_elegant_placement_rack, hotpot_strainer_basket and hotpot_napkin_holder. NONE of those four ids exist in any 1.20.1 Forge build. CurseForge project 1130390 ships everyxhotpot-2.0.0-pre1-1.20.1-TeaCon2023.jar as its ONLY 1.20.1 Forge file; every later 2.0.x release (2.0.0 through 2.0.5) is 1.21 NeoForge, and that is where those four items were added. The older project, CurseForge 1032719, only offers everyxhotpot-1.1.2BF2-1.20.1.jar, which is smaller still - seven item models, six recipes, and no large_round_plate, paper_bowl, skewer, slotted_spoon or soup_spoon at all. The 2.0.0-pre1 build was chosen because it is the most complete 1.20.1 Forge build that exists, and the four consensus ids were dropped because they are unobtainable on this loader and version. WIDENING AND ITS PROOF: everyxhotpot:hotpot is named by block.everyxhotpot.hotpot with no item lang key, the usual trap, and is confirmed by its item model, its blockstate, data/everyxhotpot/loot_tables/blocks/hotpot.json and its crafting recipe. DROPPED AS UNOBTAINABLE: everyxhotpot:hotpot_chopstick_model, hotpot_paper_bowl_model, hotpot_skewer_model and hotpot_spice_pack_model are in-hand render stems with no lang key and no recipe; everyxhotpot:test is a debug model; everyxhotpot:hotpot_placement is an internal placement block with no lang key. The item.*.hotpot_paper_bowl.hotpot / .drained / .skewer and hotpot_skewer.hotpot keys are NBT state names on existing items, not separate ids. FOREIGN-MOD DEPENDENCY, checked: hotpot_spicy_soup_recipe_sinofeast.json ingredients are sinofeast taste tags and hotpot_tomato_soup.json wants forge:crops/tomato and forge:crops/onion. Neither is a forge:conditional wrapper, so with those mods absent the recipes simply fail to load. That matters for tomato soup, which has NO vanilla-only variant and is therefore uncompletable standalone - it is deliberately left out of the chain. Spicy soup does have a vanilla-only variant (hotpot_spicy_soup_recipe_vanilla.json) and is safe to chain."
+}

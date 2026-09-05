@@ -1,0 +1,156 @@
+{
+ "mod": "immersive_melodies",
+ "jar": "immersive_melodies-0.6.1+1.20.1-forge.jar (installed in CREATE FEMBY)",
+ "ids_in_jar": 22,
+ "videos": [
+  {
+   "id": "5s0SLCi_f-w",
+   "title": "Minecraft Mod Showcase | Immersive Melodies",
+   "channel": "Piccolini1",
+   "views": 13733,
+   "duration": 766,
+   "chars": 6956
+  },
+  {
+   "id": "XWbhauOl1kw",
+   "title": "Immersive Melodies (Frazier's Mod Showcase)",
+   "channel": "Frazier0912",
+   "views": 142,
+   "duration": 477,
+   "chars": 3226
+  },
+  {
+   "id": "ySOiVDRgIdA",
+   "title": "Hytale Immersive melodies tutorial - Using custom music/Install guide",
+   "channel": "BlayneYT",
+   "views": 2929,
+   "duration": 477,
+   "chars": 2419
+  },
+  {
+   "id": "ZoyQrM93ypc",
+   "title": "Hytale Immersive Melodies Import custom music Guide",
+   "channel": "FadingTime",
+   "views": 4706,
+   "duration": 225,
+   "chars": 3116
+  }
+ ],
+ "not_transcribed": [
+  {
+   "id": "2IVMXoFn1fI",
+   "title": "Mini Mod Showcase: Immersive Melodies #minecraftmods",
+   "why": "44-second short, transcribed to 3 chars - it is music over gameplay with no narration"
+  }
+ ],
+ "items": {
+  "immersive_melodies:piano": {
+   "mentions": 4,
+   "videos": 3,
+   "first_at": 0.4699,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "immersive_melodies:trumpet": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.6421,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersive_melodies:bagpipe": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.3366,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersive_melodies:flute": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.3497,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersive_melodies:didgeridoo": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.4723,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersive_melodies:triangle": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.5154,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersive_melodies:ender_bass": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2762,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersive_melodies:tiny_drum": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6539,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "_source": "guide (4 transcribed videos: 2 showcases that walk every instrument, 2 tutorials devoted entirely to importing custom music) + installed jar. All ids verified against immersive_melodies-0.6.1+1.20.1-forge.jar.",
+  "entry": [
+   "NO entry ritual, machine, or gate. Every instrument is a direct crafting-table recipe from overworld basics, and a showcase host summed the mod up as easy to get into on a multiplayer server. The flute (a bone and two sticks) is the cheapest first craft, and holding any instrument and right-clicking opens the song browser immediately - the mod is fully usable from the first item.",
+   "The two instruments with any resource gate at all: the Ender Bass wants two jukeboxes plus an ender pearl (so diamonds and a pearl), and the Piano wants three note blocks (so redstone). Everything else is sticks, bones, planks, string, leather, copper, or a piece of lapis."
+  ],
+  "order": [
+   "There is NO progression order. The two showcases teach the instruments in completely different sequences (one literally starts with the bagpipe, which is built FROM three flutes it had not shown yet) and nothing unlocks anything. A quest chain here should order by recipe cost, not by any taught dependency - cheapest (flute, lute, tiny drum) to priciest (piano, ender bass), with the bagpipe after the flute since it consumes three of them.",
+   "Frazier's showcase covers all 11 instruments in one sitting (ender bass, lute, piano, flute, bagpipe, handpan, triangle, tiny drum, vielle, didgeridoo, trumpet) - the whole mod is a flat collection, and a completionist 'craft them all' capstone matches how guides actually present it."
+  ],
+  "gates": [
+   "Nothing in the mod gates anything else. The only intra-mod dependency is bagpipe = three flutes + five leather."
+  ],
+  "custom_music": [
+   "This is what guides actually spend their time on - two of the four videos are ENTIRELY about importing songs, which the jar says nothing about. The in-game song browser has an upload option that takes a URL, but it must be a DIRECT file link; paste a normal webpage link and it silently fails, which is explicitly why both tutorials exist.",
+   "The taught workflow: a community GitHub repository of already-tested MIDI files is the preferred source (open the file, take the Raw link, paste that); for anything not there, convert the audio to MIDI online, upload the file to MediaFire, and use MediaFire's direct link. Tutorials warn that auto-converted MIDIs often sound bad, and that the community repo takes pull requests / has a Discord for song submissions.",
+   "Local files also work - the chains_research note (jar-side) confirms .midi/.abc files can be dropped in; the videos teach the URL route because it needs no file access."
+  ],
+  "traps": [
+   "The URL upload failing on non-direct links is the mod's one real stumbling block - a showcase host hit it and made a whole tutorial in response. Any quest text pointing at custom music should say 'direct file link (e.g. a GitHub raw link)'.",
+   "An instrument keeps playing until you open the menu and pause it - a host was confused that music continued after putting the instrument away."
+  ],
+  "signature": [
+   "immersive_melodies:flute",
+   "immersive_melodies:lute",
+   "immersive_melodies:bagpipe",
+   "immersive_melodies:piano",
+   "immersive_melodies:ender_bass"
+  ],
+  "taught": [
+   "Band play is the payoff both showcases build to: several players (or MOBS - you can hand instruments to zombies and skeletons and they play them) select the same song on different instruments and it plays in sync as an ensemble. Praise in the transcripts clusters on this, not on any single item.",
+   "All instruments share the same song list and are freely interchangeable mid-song; instruments can also be played live from the keyboard, piano-style.",
+   "The bagpipe (praise 6) and flute (praise 5) draw the most enthusiasm; the bagpipe is singled out as the loud one you give whoever wants to be heard.",
+   "Branding note a narrator makes: this is part of the same 'Immersive' family as Immersive Aircraft and Immersive Armors."
+  ]
+ }
+}

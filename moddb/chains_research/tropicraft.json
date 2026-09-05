@@ -1,0 +1,215 @@
+{
+ "mod": "tropicraft",
+ "verified_against": "Tropicraft-9.6.3.jar",
+ "item_count_in_jar": 361,
+ "chain": [
+  {
+   "id": "tropicraft:bamboo_stick",
+   "title": "Two Lengths Of Bamboo",
+   "desc": "Stack two vanilla bamboo in the grid. Every chair, umbrella, torch and tool handle in this mod is built on this stick, so it is the true first step and not a sapling."
+  },
+  {
+   "id": "tropicraft:bamboo_mug",
+   "title": "A Cup Cut From Bamboo",
+   "desc": "SEVEN vanilla bamboo in a U shape. Add the twelve more that the chair's six bamboo sticks cost and the whole ritual runs to about twenty bamboo, so clear a jungle patch before you start."
+  },
+  {
+   "id": "tropicraft:coconut",
+   "title": "Palms On Your Own Beach",
+   "desc": "Tropicraft plants palm trees in the vanilla Overworld beach biome, and the coconut is the fruit hanging off them. You do not need the dimension to start; you need a coastline."
+  },
+  {
+   "id": "tropicraft:coconut_chunk",
+   "title": "Open It With A Blade",
+   "desc": "A coconut broken by hand gives you a whole coconut. Broken with a sword it splits into one to four Coconut Chunks, and only chunks go into the drink. The loot table tests the tag minecraft:swords, so a modded sword that never registered itself into that tag will drop nothing at all - use a plain vanilla sword."
+  },
+  {
+   "id": "tropicraft:pineapple",
+   "title": "Pineapples In The Jungle",
+   "desc": "The other half of the recipe grows in jungle, sparse jungle and bamboo jungle. Two vanilla biomes hold everything the journey needs."
+  },
+  {
+   "id": "tropicraft:pineapple_cubes",
+   "title": "Cubed, Also With A Blade",
+   "desc": "Cut the UPPER half of a pineapple with a vanilla sword for one to four Pineapple Cubes. Same tag test as the coconut, same trap: hands get you fruit, a tagged blade gets you ingredients, an untagged modded blade gets you nothing."
+  },
+  {
+   "id": "tropicraft:pina_colada",
+   "title": "Mix The Pina Colada",
+   "desc": "Bamboo mug, coconut chunk and pineapple cubes, shapeless, in an ordinary crafting grid. No machine needed. This mug is the key to the island."
+  },
+  {
+   "id": "tropicraft:white_chair",
+   "title": "Set Out A Beach Chair",
+   "desc": "Wool between six bamboo sticks makes a Beach Chair in any of the sixteen colours. It is not decoration here, it is the second half of the ritual."
+  },
+  {
+   "id": "dim:tropicraft:tropics",
+   "title": "Drink It Sitting Down, At Sunset",
+   "desc": "There is no portal to build and no item that represents arriving. Place the chair, SIT IN IT, hold the Pina Colada, and drink it while the day timer is between 12200 and 14000 ticks - the sunset window. Those are the only two conditions the code checks besides being on the server side; the biome does not matter, so a chair in your base works exactly as well as a chair on sand."
+  },
+  {
+   "id": "tropicraft:chunk",
+   "title": "Chunk O' Head",
+   "desc": "The island's own stone, mined once you are standing on it. It is the mineral half of the drink mixer, the dagger and the air compressor."
+  },
+  {
+   "id": "tropicraft:drink_mixer",
+   "title": "Build The Drink Mixer",
+   "desc": "A bamboo mug over Chunk O' Head. Load two ingredients, drop an empty mug on the base, and every other drink in the mod pours out of it."
+  },
+  {
+   "id": "tropicraft:azurite_gem",
+   "title": "Blue Stone Underfoot",
+   "desc": "Azurite generates in the Tropics and smelts out of its ore. It is the gate on the scuba harness, the water wand and the air compressor."
+  },
+  {
+   "id": "tropicraft:zircon_gem",
+   "title": "The Clear Gem",
+   "desc": "Zircon is the second island gem and carries the goggles, the flippers and the blow gun."
+  },
+  {
+   "id": "tropicraft:zirconium_gem",
+   "title": "Two Gems Fused",
+   "desc": "Two azurite and two zircon, shapeless. Zirconium is the island's top tool material and has no ore of its own."
+  },
+  {
+   "id": "tropicraft:yellow_scuba_harness",
+   "title": "Strap On The Tank",
+   "desc": "Leather, dye and azurite. The harness is the piece that actually holds air, and diving the Tropics ocean is where the rest of the mod lives."
+  },
+  {
+   "id": "tropicraft:air_compressor",
+   "title": "Refill Between Dives",
+   "desc": "Azurite over Chunk O' Head. Drop a spent harness in and it fills back up, which is what turns one dive into a diving career."
+  },
+  {
+   "id": "tropicraft:sifter",
+   "title": "Build The Sifter",
+   "desc": "Glass and planks. Feed it any tropics or ordinary sand and it slowly shakes treasure loose - this is the mod's one genuine loot loop."
+  },
+  {
+   "id": "tropicraft:white_pearl",
+   "title": "Something Rare In The Sand",
+   "desc": "Most sifts give a shell. Occasionally the sifter rolls its rare table instead and a White Pearl falls out."
+  },
+  {
+   "id": "tropicraft:iguana_leather",
+   "title": "Skin An Iguana",
+   "desc": "Iguanas roam the island and drop leather. It is the drum head for all three bongos."
+  },
+  {
+   "id": "tropicraft:scale_chestplate",
+   "title": "Armour Made Of Lizard",
+   "desc": "Eight scales off the same iguanas that gave you the leather. It is the only armour material the island produces without mining, and what you wear while the place is still trying to kill you."
+  },
+  {
+   "id": "tropicraft:seared_marlin",
+   "title": "Land A Marlin",
+   "desc": "Marlin are the big fish of the Tropics ocean; searing one over a campfire is the best meal the dimension makes."
+  },
+  {
+   "id": "structure:tropicraft:home_tree",
+   "title": "Find The Koa Home Tree",
+   "desc": "Koa villages grow around a Home Tree, and its chest is the only place Ashen masks exist anywhere in the mod - the Ashen themselves have an empty loot table and drop nothing when killed. Finding the tree IS the quest; the masks are what you carry out of it."
+  },
+  {
+   "id": "tropicraft:ashen_mask_bat_boy",
+   "title": "Take A Mask Off The Wall",
+   "desc": "Eight of the thirteen Ashen masks sit in the Home Tree chest alongside Nigel's Moustache, a scale, azurite and two music discs. The other five masks are registered but reachable by no means at all."
+  },
+  {
+   "id": "tropicraft:love_tropics_shell",
+   "title": "The Shell That Almost Never Comes",
+   "desc": "The rarest thing the sifter can produce. Sifting for it is the endgame of a mod that has no boss."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "tropicraft:drink_mixer",
+   "members": [
+    "tropicraft:lemonade",
+    "tropicraft:limeade",
+    "tropicraft:orangeade",
+    "tropicraft:caipirinha",
+    "tropicraft:black_coffee",
+    "tropicraft:coconut_water",
+    "tropicraft:mai_tai",
+    "tropicraft:cocktail",
+    "tropicraft:pina_colada"
+   ]
+  },
+  {
+   "hub": "tropicraft:sifter",
+   "members": [
+    "tropicraft:solonox_shell",
+    "tropicraft:frox_conch",
+    "tropicraft:pab_shell",
+    "tropicraft:rube_nautilus",
+    "tropicraft:starfish",
+    "tropicraft:turtle_shell",
+    "tropicraft:white_pearl",
+    "tropicraft:black_pearl",
+    "tropicraft:love_tropics_shell"
+   ]
+  },
+  {
+   "hub": "tropicraft:ashen_mask_bat_boy",
+   "members": [
+    "tropicraft:ashen_mask_headinator",
+    "tropicraft:ashen_mask_horn_monkey",
+    "tropicraft:ashen_mask_oblongatron",
+    "tropicraft:ashen_mask_screw_attack",
+    "tropicraft:ashen_mask_square_horn",
+    "tropicraft:ashen_mask_square_zord",
+    "tropicraft:ashen_mask_the_brain",
+    "tropicraft:nigel_stache"
+   ]
+  },
+  {
+   "hub": "tropicraft:seared_marlin",
+   "members": [
+    "tropicraft:cooked_fish",
+    "tropicraft:cooked_ray",
+    "tropicraft:cooked_frog_leg",
+    "tropicraft:toasted_nori",
+    "tropicraft:sea_urchin_roe",
+    "tropicraft:roasted_coffee_bean",
+    "tropicraft:lemon",
+    "tropicraft:lime",
+    "tropicraft:orange",
+    "tropicraft:grapefruit",
+    "tropicraft:papaya",
+    "tropicraft:magic_mushroom"
+   ]
+  },
+  {
+   "hub": "tropicraft:yellow_scuba_harness",
+   "members": [
+    "tropicraft:yellow_scuba_goggles",
+    "tropicraft:yellow_scuba_flippers",
+    "tropicraft:yellow_pony_bottle",
+    "tropicraft:air_compressor",
+    "tropicraft:scale",
+    "tropicraft:scale_helmet",
+    "tropicraft:scale_chestplate"
+   ]
+  },
+  {
+   "hub": "tropicraft:white_chair",
+   "members": [
+    "tropicraft:white_umbrella",
+    "tropicraft:white_beach_float",
+    "tropicraft:red_chair",
+    "tropicraft:blue_chair",
+    "tropicraft:yellow_chair",
+    "tropicraft:green_chair",
+    "tropicraft:pink_chair",
+    "tropicraft:tiki_torch",
+    "tropicraft:large_bongo_drum",
+    "tropicraft:bamboo_chest"
+   ]
+  }
+ ],
+ "notes": "DIMENSION ENTRY, the defect this file exists to fix. Tropicraft's dimension id is tropicraft:tropics (data/tropicraft/dimension/tropics.json + dimension_type/tropics.json). There is NO portal frame and NO portal item: assets/tropicraft/blockstates/portal_water.json exists but nothing in the jar ever places it except net/tropicraft/core/common/dimension/TropicsTeleporter, which builds the RETURN portal after you have already arrived. The real entry is a drink ritual, read out of the bytecode. In Drink.<clinit>, at code offset 202 the constant 'pina_colada' is loaded, the Drink is constructed, and at offset 226 a `new Drink$1` is passed to Drink.addAction before `putstatic Drink.PINA_COLADA` at offset 240 - so Drink$1 is the action bound to the Pina Colada and to nothing else. Drink$1.onDrink then does exactly three checks in order: !level.isClientSide, isSunset(level), and player.getVehicle() instanceof net.tropicraft.core.common.entity.placeable.ChairEntity, and only then calls TropicraftDimension.teleportPlayerWithPortal(player, TropicraftDimension.WORLD). Drink$1.isSunset reads level.getDayTime() and compares it against the long constants 24000, 12200 and 14000 in the class constant pool, i.e. dayTime % 24000 must fall in [12200, 14000]. The mod's own mods.toml description says the same thing in prose: craft a pina colada, sit in a beach chair, sip at sunset. Reaching the island is therefore a milestone with no item, which is why it is a dim: step. GUIDE TRANSCRIPT RECONCILIATION, three claims checked against the jar and one of them corrected. (1) 'Harvest the pineapple with a VANILLA sword, modded swords drop nothing' - CONFIRMED and now explained: blocks/pineapple.json and blocks/coconut.json both gate the cut drop on a minecraft:match_tool condition whose predicate is the item TAG minecraft:swords. It is a tag test, not a vanilla-only test, so the accurate rule is that the blade must be registered into minecraft:swords; vanilla swords always are, and a modded sword that never datagens itself into that tag silently yields the whole fruit instead of the cut form. (2) '~20 bamboo' - CONFIRMED by arithmetic: bamboo_mug.json is the pattern ['X X','X X','XXX'] = 7 bamboo, white_chair.json is ['BWB','BWB','BWB'] = 6 bamboo sticks and 3 wool, and stick_from_bamboo_item.json is ['X','X'] = 2 bamboo per stick, so the chair costs 12 and mug plus chair costs 19 bamboo. The guide's round number is the pair, not the mug alone. (3) 'seated in a chair ON A BEACH' - NOT SUPPORTED BY THE CODE, and this is the one place the transcript overstates. An exhaustive constant-pool listing of Drink$1 shows its ONLY method and field references are Player.getVehicle, Player.level, Level.isClientSide, Level.getDayTime, Drink$1.isSunset, DrinkAction.<init>, TropicraftDimension.WORLD and teleportPlayerWithPortal. There is no call to Level.getBiome, no Holder, no biome ResourceKey and no block-below check anywhere in the class. The biome is irrelevant: a chair indoors at sunset teleports you exactly as well as a chair on sand. The beach detail almost certainly leaked backwards from the mods.toml flavour text. Quests built on this must not require a beach or players will stand on sand wondering why nothing happens. GETTING THE INGREDIENTS WITHOUT THE DIMENSION, the other half of the missing explanation: data/tropicraft/forge/biome_modifier/overworld_palm_trees.json adds tropicraft:trees_palm_overworld to minecraft:beach, and overworld_pineapples.json adds tropicraft:pineapple to minecraft:jungle, bamboo_jungle and sparse_jungle - so coconuts and pineapples are Overworld-obtainable from the start. Both loot tables (blocks/coconut.json, blocks/pineapple.json) are minecraft:alternatives keyed on a match_tool predicate of tag minecraft:swords: with a sword you get 1-4 tropicraft:coconut_chunk / tropicraft:pineapple_cubes, without one you get the whole fruit, and only the cut form is accepted by data/tropicraft/recipes/pina_colada.json. The Pina Colada is a plain crafting_shapeless recipe (bamboo_mug + coconut_chunk + pineapple_cubes) and needs no Drink Mixer. tropicraft:bamboo_stick comes from data/minecraft/recipes/stick_from_bamboo_item.json (two vanilla bamboo), and every chair is six bamboo sticks around three wool. WIDENING AND ITS PROOF: the strict model-and-item-lang intersection yields only 191 of 445 item models, because most Tropicraft blocks are named by BLOCK lang keys - block.tropicraft.coconut, block.tropicraft.pineapple, block.tropicraft.chunk, block.tropicraft.drink_mixer and block.tropicraft.sifter have no item.* key at all, and a strict intersection would have deleted the coconut, the pineapple, the stone, the mixer and the sifter, i.e. the entire entry ritual. The widened universe used here is model AND (item lang OR block lang) = 361 ids, and every widened id in this file also carries a blockstate at assets/tropicraft/blockstates/<id>.json as independent registration proof. OTHER CODE-DRIVEN SOURCES verified from bytecode rather than datapacks: the nine mixer drinks come from MixerRecipes.addMixerRecipes (limeade = lime + sugar + water bucket, pina_colada = pineapple/cubes + coconut/chunk, mai_tai = orange + lime + water bucket, and so on), and the sifter's output comes from SifterBlockEntity.getCommonItem, which rolls a random member of the tropicraft:shells item tag, and getRareItem, which rolls WHITE_PEARL, BLACK_PEARL or RUBE_NAUTILUS. DROPPED AS UNOBTAINABLE, with reasons: tropicraft:fire_helmet, fire_chestplate, fire_leggings and fire_boots are registered items with no recipe, no loot table and no code path that grants them in 9.6.3 - creative only. tropicraft:ashen_mask_enigma, ashen_mask_invader, ashen_mask_mojo, ashen_mask_warthog and ashen_mask_the_heart are registered but appear in no loot table; data/tropicraft/loot_tables/entities/ashen.json has no pools at all, so Ashen drop nothing and only the eight masks listed in loot_tables/home_tree.json can be got. tropicraft:spear is an ENTITY (entity.tropicraft.spear), not an item - the item is bamboo_spear. tropicraft:tall_machine and spear_throwing are model stems with no lang key. The 100-plus bamboo_potted_* and potted_* ids are blockstate-only pot variants with no obtainable item. All *_trim_* ids are armour trim model overrides, not items. tropicraft:coffee_berry has no recipe and no loot table and is dropped by the CoffeeBushBlock in code; it is left out of the ordered chain and only its downstream roasted_coffee_bean, which does have a smelting recipe, appears in a wheel. STRUCTURE STEP: data/tropicraft/worldgen/structure holds four structures - home_tree, koa_village, land_volcano and ocean_volcano - placed by the structure sets home_trees, koa_village and volcanoes. structure:tropicraft:home_tree is used as a chain step because data/tropicraft/loot_tables/home_tree.json is a chest table rather than a block or entity table, so the eight obtainable Ashen masks, Nigel's Moustache, a scale, an azurite gem, cooked frog legs and the music_disc_eastern_isles and music_disc_trade_winds records have no source other than physically finding that structure. The other three structures are reachable but carry no loot table of their own and are not chained. CROSS-CHECK: moddb.json has no tropicraft consensus row, so ordering here is entirely recipe-graph and loot-table derived, with no conflict to record."
+}

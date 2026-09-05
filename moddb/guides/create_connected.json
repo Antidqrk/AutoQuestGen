@@ -1,0 +1,343 @@
+{
+ "mod": "create_connected",
+ "ids_in_jar": 84,
+ "videos": [
+  {
+   "id": "DdLEVfZSXHM",
+   "title": "These Features Should Be Added to Create Mod! - Create Connected",
+   "channel": "Kwizzle Hazzizle",
+   "views": 59703,
+   "duration": 1452,
+   "chars": 26589,
+   "src": "vetted_search"
+  }
+ ],
+ "items": {
+  "create_connected:copycat_block": {
+   "mentions": 9,
+   "videos": 1,
+   "first_at": 0.5641,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:parallel_gearbox": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.2008,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:centrifugal_clutch": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.7432,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:inverted_gearshift": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.1148,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:crank_wheel": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.0321,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "create_connected:six_way_gearbox": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.2377,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:item_silo": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3245,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:shear_pin": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2897,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:linked_transmitter": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5065,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:encased_chain_cogwheel": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8946,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:inverted_clutch": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0942,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:large_crank_wheel": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0417,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:brass_gearbox": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2696,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:vertical_six_way_gearbox": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2482,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:freewheel_clutch": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.81,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:vertical_parallel_gearbox": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2337,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:empty_fan_catalyst": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3886,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:fan_freezing_catalyst": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3982,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create_connected:fluid_vessel": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.355,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "ids": [
+     "create_connected:crank_wheel",
+     "create_connected:large_crank_wheel"
+    ],
+    "note": "FIRST thing the guide demonstrates, and correctly so - the crank wheel is a hand crank with a cogwheel built in, so it is relevant from the player's very first manual power setup. Identical stress and speed to a vanilla hand crank, but half the footprint.",
+    "video": "DdLEVfZSXHM"
+   },
+   {
+    "ids": [
+     "create_connected:inverted_clutch",
+     "create_connected:inverted_gearshift"
+    ],
+    "note": "Second tier: the inverted clutch and inverted gearshift. Both exist to delete a multi-block redstone workaround players otherwise build by hand.",
+    "video": "DdLEVfZSXHM"
+   },
+   {
+    "ids": [
+     "create_connected:parallel_gearbox",
+     "create_connected:vertical_parallel_gearbox",
+     "create_connected:six_way_gearbox",
+     "create_connected:vertical_six_way_gearbox"
+    ],
+    "note": "Third: the gearbox family. Base Create's gearbox flips rotation direction every 90 degrees; the parallel gearbox makes every output turn the same way. The six-way adds two more shafts.",
+    "video": "DdLEVfZSXHM"
+   },
+   {
+    "ids": [
+     "create_connected:brass_gearbox",
+     "create_connected:vertical_brass_gearbox"
+    ],
+    "note": "TOP TIER, explicitly called a tier step up by the guide: the brass gearbox gives per-face control of rotation direction, right-click to flip each face.",
+    "video": "DdLEVfZSXHM"
+   }
+  ],
+  "gates": [
+   {
+    "ids": [
+     "create_connected:linked_transmitter"
+    ],
+    "note": "HARD GATE that will stump players: the linked transmitter CANNOT be placed on the ground. It must be right-clicked onto a lever, and it only transmits - it needs a normal Create redstone link on the receiving end.",
+    "video": "DdLEVfZSXHM"
+   },
+   {
+    "ids": [
+     "create_connected:six_way_gearbox",
+     "create_connected:vertical_six_way_gearbox"
+    ],
+    "note": "GOTCHA: the six-way gearbox runs its two extra shafts at HALF speed, and the horizontal and vertical versions put the half-speed outputs on different shafts. This is the one thing the guide warns about explicitly.",
+    "video": "DdLEVfZSXHM"
+   },
+   {
+    "ids": [
+     "create_connected:brass_gearbox",
+     "create_connected:vertical_brass_gearbox"
+    ],
+    "note": "Limitation: the brass gearbox exists only as four-sided horizontal and vertical variants. There is no six-way brass gearbox, so full directional control and six outputs are mutually exclusive.",
+    "video": "DdLEVfZSXHM"
+   },
+   {
+    "ids": [
+     "create_connected:copycat_block",
+     "create_connected:copycat_slab",
+     "create_connected:copycat_stairs",
+     "create_connected:copycat_beam",
+     "create_connected:copycat_catwalk"
+    ],
+    "note": "PACK-LEVEL CONFLICT, critical if both mods ship together: Create Connected has its own copycat blocks that silently MIGRATE into Create Copycats+ blocks when Copycats+ is installed. Never write a quest that requires a create_connected:copycat_* item to be held or submitted while Copycats+ is present - the item will turn into the copycats: version. Migration is controlled by config checkboxes that are ON by default.",
+    "video": "DdLEVfZSXHM"
+   },
+   {
+    "ids": [
+     "create_connected:centrifugal_clutch"
+    ],
+    "note": "The centrifugal clutch only passes rotation above a set RPM. Its intended use is the classic steam engine bootstrap problem - a hand crank that would otherwise overstress the network the moment you attach the rest of the build.",
+    "video": "DdLEVfZSXHM"
+   }
+  ],
+  "traps": [
+   {
+    "ids": [
+     "create_connected:brake"
+    ],
+    "note": "TRAP: the brake is a whole-network kill switch, not a local one, and it works by dumping enormous stress - two brakes are needed to stall a creative motor. The guide tests pairing a brake with a clutch to stop vehicle wheels faster and finds it does nothing.",
+    "video": "DdLEVfZSXHM"
+   },
+   {
+    "ids": [
+     "create_connected:copycat_block"
+    ],
+    "note": "Minor trap: Create Connected's plain copycat block has no clear purpose since a copycat already needs a block to copy. Even the guide cannot name a use for it.",
+    "video": "DdLEVfZSXHM"
+   },
+   {
+    "ids": [
+     "create_connected:fan_freezing_catalyst"
+    ],
+    "note": "Low-confidence item: the guide cannot explain what the fan freezing catalyst does. Not a good quest target without independent verification.",
+    "video": "DdLEVfZSXHM"
+   }
+  ],
+  "signature": [
+   {
+    "ids": [
+     "create_connected:brass_gearbox",
+     "create_connected:parallel_gearbox",
+     "create_connected:inverted_clutch",
+     "create_connected:inverted_gearshift"
+    ],
+    "note": "The mod's stated whole point: control over rotation. Gearboxes, clutches and gearshifts are named in the opening sentence as the core focus, and they take the largest share of runtime by far.",
+    "video": "DdLEVfZSXHM"
+   },
+   {
+    "ids": [
+     "create_connected:overstress_clutch",
+     "create_connected:shear_pin"
+    ],
+    "note": "Stress-management pair with no equivalent in base Create. The overstress clutch uncouples an overloaded branch so you can prioritise which half of a network survives; the shear pin sacrifices itself to protect the rest.",
+    "video": "DdLEVfZSXHM"
+   },
+   {
+    "ids": [
+     "create_connected:item_silo",
+     "create_connected:fluid_vessel"
+    ],
+    "note": "Both exist purely to fix an orientation limitation in base Create - item vaults cannot stack vertically and fluid tanks cannot lie horizontally. Heavily explained, clearly valued.",
+    "video": "DdLEVfZSXHM"
+   },
+   {
+    "ids": [
+     "create_connected:sequenced_pulse_generator"
+    ],
+    "note": "Given a very long dedicated segment - a sequenced gearshift for redstone signals, with timed outputs, counted loops, infinite loops, wait-for-edge and conditional loops. Length of explanation marks it as a flagship block.",
+    "video": "DdLEVfZSXHM"
+   },
+   {
+    "ids": [
+     "create_connected:empty_fan_catalyst"
+    ],
+    "note": "Neatly encases the campfire, soul campfire, water or lava behind a bulk-processing fan so the hazard and mess disappear. A quality-of-life fix players immediately understand.",
+    "video": "DdLEVfZSXHM"
+   },
+   {
+    "ids": [
+     "create_connected:encased_chain_cogwheel",
+     "create_connected:centrifugal_clutch",
+     "create_connected:freewheel_clutch"
+    ],
+    "note": "Compactness blocks. The encased chain cogwheel merges the encased chain drive and encased cogwheel; the freewheel clutch is a one-way rotation valve.",
+    "video": "DdLEVfZSXHM"
+   }
+  ]
+ }
+}

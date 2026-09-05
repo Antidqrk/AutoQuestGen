@@ -1,0 +1,348 @@
+{
+ "mod": "sophisticatedbackpacks",
+ "ids_in_jar": 78,
+ "videos": [
+  {
+   "id": "eBdFzI8-Qcc",
+   "title": "Sophisticated Backpacks Mod Tutorial",
+   "channel": "JaviHerobrine",
+   "views": 5259,
+   "duration": 703,
+   "chars": 12662,
+   "legacy_vocab_prompt": true
+  }
+ ],
+ "items": {
+  "sophisticatedbackpacks:backpack": {
+   "mentions": 40,
+   "videos": 1,
+   "first_at": 0.0061,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "sophisticatedbackpacks:tank_upgrade": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.3575,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "sophisticatedbackpacks:pickup_upgrade": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4937,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "sophisticatedbackpacks:jukebox_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8658,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "sophisticatedbackpacks:feeding_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.602,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "sophisticatedbackpacks:advanced_pickup_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4985,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "sophisticatedbackpacks:smoking_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8126,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "sophisticatedbackpacks:pump_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9059,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "sophisticatedbackpacks:upgrade_base": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.112,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "sophisticatedbackpacks:advanced_compacting_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6699,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "sophisticatedbackpacks:compacting_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6707,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "sophisticatedbackpacks:infinity_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9368,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "sophisticatedbackpacks:iron_backpack": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0134,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "sophisticatedbackpacks:inception_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7445,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "sophisticatedbackpacks:crafting_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8263,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "Basic backpack first and it is genuinely cheap - chest, leather, string. Guides open here and never treat it as a milestone, just the entry ticket.",
+    "ids": [
+     "sophisticatedbackpacks:backpack"
+    ]
+   },
+   {
+    "note": "The upgrade base is the second thing you make and the one most players under-rate. Iron + leather + string, and almost every upgrade in the mod is built on top of one.",
+    "ids": [
+     "sophisticatedbackpacks:upgrade_base"
+    ]
+   },
+   {
+    "note": "Only then tier the backpack up. The guide's framing is that tiers buy UPGRADE SLOTS, not just rows - the basic bag has a single upgrade slot, netherite has many - so upgrades and tiers are climbed together.",
+    "ids": [
+     "sophisticatedbackpacks:iron_backpack"
+    ]
+   },
+   {
+    "note": "First upgrades reached for are the ones that change moment-to-moment play: pickup, then magnet, then filter.",
+    "ids": [
+     "sophisticatedbackpacks:pickup_upgrade",
+     "sophisticatedbackpacks:magnet_upgrade",
+     "sophisticatedbackpacks:filter_upgrade"
+    ]
+   }
+  ],
+  "ladder": [
+   {
+    "note": "Backpack tier ladder. Copper is an OPTIONAL side step, not a required rung - the jar carries both backpack->iron and copper->iron recipes, matching the guide's 'there's also a copper variant, if you'd rather'. Netherite is the one break in the pattern: it is a smithing-table recipe, not a crafting one.",
+    "ids": [
+     "sophisticatedbackpacks:backpack",
+     "sophisticatedbackpacks:copper_backpack",
+     "sophisticatedbackpacks:iron_backpack",
+     "sophisticatedbackpacks:gold_backpack",
+     "sophisticatedbackpacks:diamond_backpack",
+     "sophisticatedbackpacks:netherite_backpack"
+    ]
+   },
+   {
+    "note": "Stack-multiplier ladder, each rung a metal STORAGE BLOCK: copper block, iron block, gold block, diamond block, netherite block. The guide quotes 1.5x/2x/4x/8x/16x and flags tier 4 as 'blocks of netherite, which is obviously crazy'. An omega tier exists above tier 4 that the guide never mentions.",
+    "ids": [
+     "sophisticatedbackpacks:stack_upgrade_starter_tier",
+     "sophisticatedbackpacks:stack_upgrade_tier_1",
+     "sophisticatedbackpacks:stack_upgrade_tier_2",
+     "sophisticatedbackpacks:stack_upgrade_tier_3",
+     "sophisticatedbackpacks:stack_upgrade_tier_4",
+     "sophisticatedbackpacks:stack_upgrade_omega_tier"
+    ]
+   },
+   {
+    "note": "Every functional upgrade has a basic and an 'advanced' rung, and the advanced one is crafted FROM the basic (redstone + gold + diamond). So the upgrade tree is two-deep everywhere, not flat.",
+    "ids": [
+     "sophisticatedbackpacks:pickup_upgrade",
+     "sophisticatedbackpacks:advanced_pickup_upgrade",
+     "sophisticatedbackpacks:feeding_upgrade",
+     "sophisticatedbackpacks:advanced_feeding_upgrade",
+     "sophisticatedbackpacks:void_upgrade",
+     "sophisticatedbackpacks:advanced_void_upgrade"
+    ]
+   },
+   {
+    "note": "Hidden rung the guide glosses over: the magnet upgrade is not built from an upgrade base at all, it is built FROM the pickup upgrade. Pickup is a hard prerequisite for magnet, and advanced pickup for advanced magnet.",
+    "ids": [
+     "sophisticatedbackpacks:pickup_upgrade",
+     "sophisticatedbackpacks:magnet_upgrade",
+     "sophisticatedbackpacks:advanced_pickup_upgrade",
+     "sophisticatedbackpacks:advanced_magnet_upgrade"
+    ]
+   },
+   {
+    "note": "Cooking upgrades chain sideways rather than up: smelting converts into smoking or blasting, and each auto- variant is the next tier of its base with a hopper.",
+    "ids": [
+     "sophisticatedbackpacks:smelting_upgrade",
+     "sophisticatedbackpacks:smoking_upgrade",
+     "sophisticatedbackpacks:blasting_upgrade",
+     "sophisticatedbackpacks:auto_smelting_upgrade"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "The upgrade base gates nearly the whole mod - every upgrade except the backpack tiers and the pickup-derived magnet needs one in its recipe. This is the mod's true tech gate.",
+    "ids": [
+     "sophisticatedbackpacks:upgrade_base"
+    ]
+   },
+   {
+    "note": "Upgrade SLOTS gate how many upgrades can actually be worn at once, so a low-tier backpack caps the build regardless of which upgrades are crafted. The guide demonstrates this by switching to a netherite bag to show the upgrades at all.",
+    "ids": [
+     "sophisticatedbackpacks:netherite_backpack",
+     "sophisticatedbackpacks:diamond_backpack"
+    ]
+   },
+   {
+    "note": "Netherite backpack needs a smithing table, a smithing template and a netherite ingot - it cannot be crafted on a bench like the other tiers.",
+    "ids": [
+     "sophisticatedbackpacks:netherite_backpack"
+    ]
+   },
+   {
+    "note": "The chipped/* workstation upgrades each need the matching Chipped mod block, so they are gated behind another mod entirely. Chipped IS present in this pack, so these are legitimately reachable here.",
+    "ids": [
+     "sophisticatedbackpacks:chipped/botanist_workbench_upgrade",
+     "sophisticatedbackpacks:chipped/carpenters_table_upgrade"
+    ]
+   }
+  ],
+  "payoff": [
+   {
+    "note": "The pickup/magnet pair is where the mod clicks for most players - loot walks into the bag and mining stops being an inventory-management game.",
+    "ids": [
+     "sophisticatedbackpacks:pickup_upgrade",
+     "sophisticatedbackpacks:magnet_upgrade",
+     "sophisticatedbackpacks:advanced_magnet_upgrade"
+    ]
+   },
+   {
+    "note": "The everlasting upgrade is called out as 'very useful' - indestructible, cannot despawn, cannot fall into the void. It removes the one real fear of carrying everything in one bag.",
+    "ids": [
+     "sophisticatedbackpacks:everlasting_upgrade"
+    ]
+   },
+   {
+    "note": "Inception - backpacks inside backpacks - is described as a 'crazy amount of storage'. A natural late milestone.",
+    "ids": [
+     "sophisticatedbackpacks:inception_upgrade"
+    ]
+   },
+   {
+    "note": "The crafting and auto-smelting upgrades turn the bag into a portable workshop, which is the other 'why would I ever put this down' moment.",
+    "ids": [
+     "sophisticatedbackpacks:crafting_upgrade",
+     "sophisticatedbackpacks:auto_smelting_upgrade"
+    ]
+   },
+   {
+    "note": "Feeding upgrade is praised for its precision - it can be told to only eat when no hunger would be wasted, and to skip foods whose buffs you are saving.",
+    "ids": [
+     "sophisticatedbackpacks:advanced_feeding_upgrade"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "The infinity upgrade has NO recipe in the jar - it is an admin/creative item. The guide notices this live ('there's no recipe for it in the pack I'm playing'). Never make it a quest reward or task.",
+    "ids": [
+     "sophisticatedbackpacks:infinity_upgrade",
+     "sophisticatedbackpacks:survival_infinity_upgrade"
+    ]
+   },
+   {
+    "note": "Tool swapper is the one upgrade the guide openly dismisses: 'I don't see a massive use for that one.'",
+    "ids": [
+     "sophisticatedbackpacks:tool_swapper_upgrade",
+     "sophisticatedbackpacks:advanced_tool_swapper_upgrade"
+    ]
+   },
+   {
+    "note": "Stack downgrades read like a mistake but are deliberate - they DIVIDE a slot's capacity, and exist only to make filtered slots hold less. Not a progression item; do not place them on an upgrade ladder.",
+    "ids": [
+     "sophisticatedbackpacks:stack_downgrade_tier_1",
+     "sophisticatedbackpacks:stack_downgrade_tier_2",
+     "sophisticatedbackpacks:stack_downgrade_tier_3"
+    ]
+   },
+   {
+    "note": "Everlasting and inception are gated behind nether stars (and an end crystal), so despite sounding like quality-of-life they are post-Wither items, not mid-game ones.",
+    "ids": [
+     "sophisticatedbackpacks:everlasting_upgrade",
+     "sophisticatedbackpacks:inception_upgrade"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "The bag itself and the universal upgrade component - the two items the whole mod hangs off.",
+    "ids": [
+     "sophisticatedbackpacks:backpack",
+     "sophisticatedbackpacks:upgrade_base"
+    ]
+   },
+   {
+    "note": "The upgrades that define the mod's identity versus every other backpack mod: it is a programmable container, not a bigger bag.",
+    "ids": [
+     "sophisticatedbackpacks:pickup_upgrade",
+     "sophisticatedbackpacks:magnet_upgrade",
+     "sophisticatedbackpacks:crafting_upgrade",
+     "sophisticatedbackpacks:feeding_upgrade",
+     "sophisticatedbackpacks:tank_upgrade"
+    ]
+   }
+  ]
+ }
+}

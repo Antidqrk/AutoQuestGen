@@ -1,0 +1,258 @@
+{
+ "mod": "eidolon",
+ "verified_against": "eidolon_repraised-1.20.1-0.3.13.jar",
+ "item_count_in_jar": 186,
+ "chain": [
+  {
+   "id": "eidolon:codex",
+   "title": "Ars Ecclesia",
+   "desc": "A book and a piece of rotten flesh. The mod's guide, and the interface you actually cast chants through."
+  },
+  {
+   "id": "eidolon:silver_ingot",
+   "title": "Silver From the Overworld",
+   "desc": "Silver Ore generates worldwide via a biome modifier. Half of Pewter, and the metal the Bone Paladin's armour needs."
+  },
+  {
+   "id": "eidolon:lead_ingot",
+   "title": "The Heavier Half",
+   "desc": "Lead Ore, or the drop from a Zombie Brute. Alloyed with silver it becomes the mod's working metal."
+  },
+  {
+   "id": "eidolon:pewter_ingot",
+   "title": "Pewter",
+   "desc": "Smelt a Pewter Blend of silver and lead. The Crucible, the Censer and every inlay are made of it."
+  },
+  {
+   "id": "eidolon:pewter_inlay",
+   "title": "An Inlay of Base Metal",
+   "desc": "Pewter beaten flat around a stone. It is the Magic Workbench's frame and the blank an Unholy Symbol is chanted from."
+  },
+  {
+   "id": "eidolon:worktable",
+   "title": "The Magic Workbench",
+   "desc": "Purple carpet, planks and a Pewter Inlay. It crafts by pattern AND by four reagent slots, which is where the mod's real recipes live."
+  },
+  {
+   "id": "eidolon:enchanted_ash",
+   "title": "Bones, Burned",
+   "desc": "Smelt a bone. Sprinkled on the floor it draws the working circles, and it is the base of Parchment and Sulfur."
+  },
+  {
+   "id": "eidolon:crucible",
+   "title": "Set the Crucible Boiling",
+   "desc": "Pewter over a fire. Ingredients go in as ordered steps with stirs between them; get the order wrong and you get nothing."
+  },
+  {
+   "id": "eidolon:tallow",
+   "title": "Rendered Fat",
+   "desc": "Blasted from raw meat, and the wax under every candle the altars need."
+  },
+  {
+   "id": "eidolon:magic_candle",
+   "title": "Light for the Altar",
+   "desc": "Magician's Wax. Altar lighting is one of the four things that decide how much power a Wooden Altar holds."
+  },
+  {
+   "id": "eidolon:straw_effigy",
+   "title": "A Figure Made of Straw",
+   "desc": "Hay and sticks. Chanting at an Effigy is how the mod first hears you at all."
+  },
+  {
+   "id": "eidolon:wooden_altar",
+   "title": "The Wooden Altar",
+   "desc": "Slabs and planks. Its power is set by its lighting, the skulls on it and the herbs around it, and it pays for every chant."
+  },
+  {
+   "id": "eidolon:goblet",
+   "title": "For the Blood",
+   "desc": "The Goblet sits at the altar and takes the animal sacrifice; it is the crude way to buy devotion."
+  },
+  {
+   "id": "eidolon:censer",
+   "title": "For the Smoke",
+   "desc": "Pewter and a chain. The Censer burns incense as an offering, and it is the clean way to buy the same devotion."
+  },
+  {
+   "id": "eidolon:unholy_symbol",
+   "title": "Devotion, Earned",
+   "desc": "Chant a Pewter Inlay into a symbol of the Dark Deity. The recipe demands 10.0 devotion, and nothing before it will do."
+  },
+  {
+   "id": "eidolon:soul_shard",
+   "title": "Splinters of the Dead",
+   "desc": "Torn out of what you kill once you know the right chants; the universal currency of every later recipe."
+  },
+  {
+   "id": "eidolon:arcane_gold_ingot",
+   "title": "Gold, Made Arcane",
+   "desc": "Redstone and a Soul Shard, then gold, in that exact order in the Crucible."
+  },
+  {
+   "id": "eidolon:athame",
+   "title": "The Ritual Knife",
+   "desc": "Pewter, an Inlay and an ender pearl at the Workbench. It forages Avennian Sprigs and Merammer Root out of ordinary flowers."
+  },
+  {
+   "id": "eidolon:stone_altar",
+   "title": "The Altar in Stone",
+   "desc": "A Workbench recipe taking a Pewter Inlay and a Soul Shard. It holds far more power than wood, which is what the late chants cost."
+  },
+  {
+   "id": "eidolon:unholy_effigy",
+   "title": "The Elder Statue",
+   "desc": "A Gold Inlay and your patron symbol. With the Stone Altar it opens villager sacrifice and the deeper half of the Dark path."
+  },
+  {
+   "id": "eidolon:zombie_heart",
+   "title": "Cut From a Brute",
+   "desc": "Zombie Brutes drop it, and Eidolon's LivingDropsEvent puts it on ordinary zombies too. It renders down into Essence of Death."
+  },
+  {
+   "id": "eidolon:death_essence",
+   "title": "Essence of Death",
+   "desc": "A heart cooked in the Crucible. Either a Zombie Heart or a Withered Heart from a Wither Skeleton will do."
+  },
+  {
+   "id": "eidolon:shadow_gem",
+   "title": "A Stone of Solid Dark",
+   "desc": "Essence of Death and Soul Shards in the Crucible. The gem behind the Soulfire Wand, the Soulbone Amulet and Archangel's Sight."
+  },
+  {
+   "id": "eidolon:lesser_soul_gem",
+   "title": "A Soul, Contained",
+   "desc": "Soul Shards fused in the Crucible. It powers the wands, the Reversal Pick and the Gravity Belt."
+  },
+  {
+   "id": "kill:eidolon:wraith",
+   "title": "Something Cold Over the Water",
+   "desc": "Wraiths spawn in the dark Overworld by biome modifier and hover over any fluid. Only they drop Tattered Cloth and Wraith Hearts."
+  },
+  {
+   "id": "eidolon:tattered_cloth",
+   "title": "Grave Wrappings",
+   "desc": "A Wraith's leavings, and the cloth of the Reaper's Scythe, the Raven Cloak and the Bone Paladin's helm."
+  },
+  {
+   "id": "eidolon:brazier",
+   "title": "Light the Brazier",
+   "desc": "The ritual apparatus proper. Surround it with Plinths holding the pedestal items, drop in the reagent, and it summons, crafts or locates."
+  },
+  {
+   "id": "eidolon:reaper_scythe",
+   "title": "The Reaper's Scythe",
+   "desc": "Tattered Cloth, Soul Shards and your patron symbol at the Workbench. It reaps souls from what it kills."
+  },
+  {
+   "id": "eidolon:soul_enchanter",
+   "title": "Enchanting With Souls",
+   "desc": "A Gold Inlay Workbench recipe. It buys enchantment levels with Soul Shards instead of experience."
+  },
+  {
+   "id": "eidolon:scriptorium",
+   "title": "Write the Chants Down",
+   "desc": "Magic Ink and a desk. It presses a known sign sequence into a Chant Scroll so you can cast without opening the codex."
+  },
+  {
+   "id": "kill:eidolon:necromancer",
+   "title": "The Last Wave",
+   "desc": "Necromancers appear in the final waves of a village raid and are the only source of the Summoning Staff."
+  },
+  {
+   "id": "kill:eidolon:giant_skeleton",
+   "title": "What Sleeps in the Catacombs",
+   "desc": "Giant Skeletons rest in the Catacombs, which the Ritual of Locating will find for you. They alone drop Imbued Bones."
+  },
+  {
+   "id": "eidolon:bonelord_helm",
+   "title": "Vestige of the Bone Paladin",
+   "desc": "Imbued Bones, silver, Tattered Cloth and a Holy Symbol. The Light path's answer to the Warlock's black robes."
+  },
+  {
+   "id": "eidolon:angels_sight",
+   "title": "Archangel's Sight",
+   "desc": "A Basic Ring, a Shadow Gem, pewter, a wither skull and an arrow, sealed with your patron symbol."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "eidolon:bloodlust_incense",
+   "members": [
+    "eidolon:deathbane_incense",
+    "eidolon:frail_incense",
+    "eidolon:frostbind_incense",
+    "eidolon:gloom_incense",
+    "eidolon:offering_incense",
+    "eidolon:purity_incense",
+    "eidolon:quicken_incense",
+    "eidolon:restoration_incense",
+    "eidolon:soul_harvest_incense",
+    "eidolon:tether_incense",
+    "eidolon:tough_incense",
+    "eidolon:undeath_incense"
+   ]
+  },
+  {
+   "hub": "eidolon:void_amulet",
+   "members": [
+    "eidolon:sanguine_amulet",
+    "eidolon:soulbone_amulet",
+    "eidolon:glass_hand",
+    "eidolon:prestigious_palm",
+    "eidolon:gravity_belt",
+    "eidolon:resolute_belt",
+    "eidolon:mind_shielding_plate",
+    "eidolon:enervating_ring",
+    "eidolon:raven_cloak",
+    "eidolon:warded_mail"
+   ]
+  },
+  {
+   "hub": "eidolon:silver_sword",
+   "members": [
+    "eidolon:silver_axe",
+    "eidolon:silver_pickaxe",
+    "eidolon:silver_shovel",
+    "eidolon:silver_hoe",
+    "eidolon:silver_helmet",
+    "eidolon:silver_chestplate",
+    "eidolon:silver_leggings",
+    "eidolon:silver_boots"
+   ]
+  },
+  {
+   "hub": "eidolon:elder_bricks",
+   "members": [
+    "eidolon:elder_masonry",
+    "eidolon:elder_pillar",
+    "eidolon:elder_bricks_eye",
+    "eidolon:smooth_stone_bricks",
+    "eidolon:smooth_stone_masonry",
+    "eidolon:smooth_stone_tiles",
+    "eidolon:smooth_stone_arch",
+    "eidolon:mossy_smooth_stone_bricks",
+    "eidolon:bone_pile",
+    "eidolon:polished_planks",
+    "eidolon:illwood_planks",
+    "eidolon:polished_wood_pillar"
+   ]
+  },
+  {
+   "hub": "eidolon:soulfire_wand",
+   "members": [
+    "eidolon:bonechill_wand",
+    "eidolon:deathbringer_scythe",
+    "eidolon:cleaving_axe",
+    "eidolon:reversal_pick",
+    "eidolon:sapping_sword",
+    "eidolon:summoning_staff",
+    "eidolon:warlock_hat",
+    "eidolon:warlock_cloak",
+    "eidolon:warlock_boots",
+    "eidolon:bonelord_chestplate",
+    "eidolon:bonelord_greaves"
+   ]
+  }
+ ],
+ "notes": "VERIFICATION: 197 stems pass item-model INTERSECT (lang key OR recipe result OR loot entry OR tag OR advancement); 186 survive the obtainability audit. All 34 chain ids, 5 wheel hubs and 53 wheel members (92 ids total) were re-checked, fully namespaced, against the surviving set on a second pass whose derivation is deliberately independent of the first: exact item-model path existence plus the literal \"<ns>:<path>\" string appearing in the jar data trees. 0 failures. DROPS, all registered-but-unreachable or not registered at all: eidolon:alchemists_tongs has a model and an item.eidolon.alchemists_tongs key reading 'Alchemist's Tongs' but the string appears in NO class file in the jar, not even elucent/eidolon/registries/Registry.class - it is a leftover asset, not an item. The six spawn eggs (spawn_giant_skeleton, spawn_necromancer, spawn_raven, spawn_slimy_slug, spawn_wraith, spawn_zombie_brute) are the same shape: model plus lang key, zero class references, zero recipes; a byte scan of Registry.class finds no 'spawn_' string at all. Four more are registered in Registry.class but have no acquisition path anywhere in the jar - no recipe, no loot table, no structure, no LivingDropsEvent reference: grape_candy and red_candy (both display as 'Soul Candy'), terminus_mirror (present only in data/curios/tags/items/necklace.json), and warding_incense, which is registered in IncenseRegistry.class as an effect but is the ONE incense of thirteen with no eidolon:crucible recipe. KEPT DESPITE HAVING NO RECIPE, with proof: eidolon:withered_heart appears in no loot table, but WITHERED_HEART is referenced from elucent/eidolon/event/Events.class, whose constant pool also holds LivingDropsEvent and net/minecraft/world/entity/monster/WitherSkeleton - the heart is a coded Wither Skeleton drop, and it is a declared input of data/eidolon/recipes/death_essence_withered.json. eidolon:chant_scroll, eidolon:research_notes and eidolon:completed_research are likewise recipe-less but real: the codex states the Scriptorium presses parchment into Chant Scrolls, and the Research Table page says notes are started with Note-taking Tools and finished with an Arcane Seal, adding 'still wip, only work for Stray/Wraith and Blaze researches' - partial, but reachable, and research_notes has its own advancement. TIER GATE: the analogue of Bewitchment's chalk tier is ALTAR TIER CROSSED WITH DEITY DEVOTION, and it is explicit in the data. The Wooden Altar's strength is set by its lighting, skulls and herbs (codex chapters altar_lights, altar_skulls, altar_herbs); praying at it with a Goblet or a Censer accrues devotion to one of two deities. The gate is the eidolon:chant_conversion recipe type: convert_inlay_unholy declares deity eidolon:dark with min_devotion 10.0, convert_inlay_holy declares eidolon:light with the same, and they are the only way to make an Unholy or Holy Symbol. Those two ids are the whole of data/eidolon/tags/items/patron_symbol.json, and that tag is a required key in the Magic Workbench recipes for unholy_effigy, reaper_scythe, angels_sight, cleaving_axe and bonelord_helm. So devotion 10 is a hard wall across the mod's back half. Above it sits the second tier: eidolon:stone_altar is itself a Workbench recipe (Pewter Inlay plus Soul Shard) and the codex orders it after the touch chants and before unholy_effigy, villager_sacrifice and lay_on_hands. Note also that the 29 eidolon:worktable recipes each carry a 4-character 'reagents' string alongside the 3x3 pattern - a second axis of cost that a quest pack should not mistake for a plain crafting recipe. ENTITIES: 6 kill targets are verifiable, all with loot tables under data/eidolon/loot_tables/entities/ - wraith (tattered_cloth, wraith_heart), zombie_brute (zombie_heart, lead_ingot), giant_skeleton (imbued_bones), necromancer (summoning_staff, emerald), raven (raven_feather) and slimy_slug (slime_ball). Spawning is confirmed for raven, slimy_slug and wraith by forge:add_spawns biome modifiers in data/eidolon/forge/biome_modifier/; giant_skeleton is placed by the catacomb_spawner piece of the eidolon:catacombs structure, which the mod's own eidolon:ritual_brazier_location recipe will find for you. Three are used in the chain; raven and slimy_slug are left out as trivial. The seventh entity key, entity.eidolon.chant_caster, is the invisible caster used by chants and is not a mob. CONSENSUS: moddb.json and harvested_order.json have no eidolon entry, so there is no consensus ordering to cross-check and no conflict to record."
+}

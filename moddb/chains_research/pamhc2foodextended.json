@@ -1,0 +1,253 @@
+{
+  "mod": "pamhc2foodextended",
+  "verified_against": "pamhc2foodextended-1.20.4-1.0.1.jar",
+  "item_count_in_jar": 871,
+  "chain": [
+    {
+      "id": "pamhc2foodextended:ketchupitem",
+      "title": "Ketchup First",
+      "desc": "A tomato in the Food Core juicer. Extended's burgers, hot dogs and sandwiches ask for 'a condiment' - ketchup is the cheapest answer and unlocks that entire tag the moment your tomato farm exists."
+    },
+    {
+      "id": "pamhc2foodextended:blackpepperitem",
+      "title": "Grind Black Pepper",
+      "desc": "Peppercorns from the fruit-tree mod go through the grinder. Salt and pepper together form the saltandpepper spice tag that gourmet patties and steak dishes demand - stock both shakers."
+    },
+    {
+      "id": "pamhc2foodextended:groundcinnamonitem",
+      "title": "Ground Cinnamon",
+      "desc": "Cinnamon bark through the grinder. It sweetens rolls, toast and oatmeal, but its load-bearing job is curry powder later in this chain - grind extra."
+    },
+    {
+      "id": "pamhc2foodextended:peanutbutteritem",
+      "title": "Peanut Butter",
+      "desc": "Peanuts through the grinder. The nut-butter of choice for cookies, PB&J and peanut butter cups - and the same grinder pattern also does almond, cashew and chestnut butter when you find those nuts."
+    },
+    {
+      "id": "pamhc2foodextended:cornmealitem",
+      "title": "Mill Cornmeal",
+      "desc": "Corn through the grinder. Cornmeal is the gate into the entire Tex-Mex line: tortillas, chips, cornbread and corn dogs all start at this yellow powder."
+    },
+    {
+      "id": "pamhc2foodextended:tortillaitem",
+      "title": "Press Tortillas",
+      "desc": "Cornmeal and water on the skillet. Tacos, burritos, chimichangas, quesadillas and tortilla chips all wrap in this - one of the highest fan-out intermediates in the mod."
+    },
+    {
+      "id": "pamhc2foodextended:salsaitem",
+      "title": "Fresh Salsa",
+      "desc": "Tomato, onion, spiceleaf, lime and garlic in the mixing bowl - five farms in one bowl. Eat it with chips or fold it into the burrito line; it proves your crop spread is complete."
+    },
+    {
+      "id": "pamhc2foodextended:tacoitem",
+      "title": "Taco Night",
+      "desc": "Cutting board, raw beef, lettuce, cheese, tortilla. The first full Tex-Mex plate - and the pattern for the fish taco, burrito and chimichanga variants beside it."
+    },
+    {
+      "id": "pamhc2foodextended:biscuititem",
+      "title": "Bake Biscuits",
+      "desc": "Dough and butter in the bakeware. A humble bake with an outsized future: chicken biscuits, BBQ chicken biscuits and the biscuits-and-gravy plate all stack on it."
+    },
+    {
+      "id": "pamhc2foodextended:gravyitem",
+      "title": "Make Gravy",
+      "desc": "Stock and flour in the pot - the Food Core stock line pays off here. Gravy completes biscuits and gravy, bangers and mash, and poutine-grade comfort food."
+    },
+    {
+      "id": "pamhc2foodextended:pancakesitem",
+      "title": "Pancakes",
+      "desc": "Skillet, oil, batter, butter. The breakfast tier begins: bacon pancakes, chocolate chip pancakes and maple syrup pancakes are each one ingredient past this stack."
+    },
+    {
+      "id": "pamhc2foodextended:wafflesitem",
+      "title": "Waffles",
+      "desc": "Pancakes plus an egg, mechanically. Waffles feed the legendary chicken-and-waffles plate and the maple syrup waffle - your maple orchard finally meets breakfast."
+    },
+    {
+      "id": "pamhc2foodextended:omeletitem",
+      "title": "Omelet",
+      "desc": "Egg, bellpepper and onion in the skillet. Rounds out the breakfast board and slots into the breakfast burrito - eggs stop being a boring food the moment this exists."
+    },
+    {
+      "id": "pamhc2foodextended:sausageitem",
+      "title": "Stuff Sausages",
+      "desc": "Any raw meat, salt and spiceleaf on the cutting board. Sausage is a meat-processing hub: bratwurst, sausage rolls, bangers and mash, and breakfast plates all draw from it."
+    },
+    {
+      "id": "pamhc2foodextended:pepperoniitem",
+      "title": "Cure Pepperoni",
+      "desc": "Raw pork and spiceleaf through the grinder. Exists almost entirely to top pizza - which is exactly where this chain goes next."
+    },
+    {
+      "id": "pamhc2foodextended:pepperonipizzaitem",
+      "title": "First Pizza",
+      "desc": "Bakeware, dough, tomato, cheese, pepperoni: the whole Italian supply chain on one stone. Any pizza crafts into 5-8 slices, making it one of the most efficient bulk foods in the pack."
+    },
+    {
+      "id": "pamhc2foodextended:supremepizzaitem",
+      "title": "The Supreme",
+      "desc": "Pepperoni pizza plus bellpepper, onion and spiceleaf - eight ingredients, the biggest pizza in the mod. The pizza collection (BBQ chicken, ham and pineapple, meat feast, anchovy) branches from here."
+    },
+    {
+      "id": "pamhc2foodextended:soymilkitem",
+      "title": "Soy Milk",
+      "desc": "Soybeans in the pot. Opens the soy branch - the mod's alternative protein economy - and substitutes for milk if cows are scarce in your world."
+    },
+    {
+      "id": "pamhc2foodextended:silkentofuitem",
+      "title": "Silken Tofu",
+      "desc": "Soybeans in the saucepan. Soft tofu for soups and desserts, and the direct precursor of firm tofu - the block the whole meatless line is carved from."
+    },
+    {
+      "id": "pamhc2foodextended:firmtofuitem",
+      "title": "Press Firm Tofu",
+      "desc": "Silken tofu under the roller. Firm tofu shapes into tofu 'chicken', 'bacon', 'steak', 'fish', 'mutton' and 'rabbit' - a complete parallel meat supply grown from beans."
+    },
+    {
+      "id": "pamhc2foodextended:soysauceitem",
+      "title": "Brew Soy Sauce",
+      "desc": "Soybeans in the juicer. The east-Asian recipe line runs on this condiment - teriyaki, stir fry and the tofu meats all require it. Third soybean product, third different tool."
+    },
+    {
+      "id": "pamhc2foodextended:sushiitem",
+      "title": "Roll Sushi",
+      "desc": "Raw fish, kelp and rice on the cutting board. Rice from soggy gardens meets the ocean - and sushi is a required component of the Bento Box a few steps ahead."
+    },
+    {
+      "id": "pamhc2foodextended:teriyakichickenitem",
+      "title": "Teriyaki Chicken",
+      "desc": "Chicken, rice, your soy sauce, honey, scallion and oil in the skillet - six systems converging. Also a Bento Box component; you are building toward a boxed masterpiece."
+    },
+    {
+      "id": "pamhc2foodextended:bamboosteamedriceitem",
+      "title": "Bamboo Steamed Rice",
+      "desc": "Rice and bamboo through the grinder. The third Bento component - jungle bamboo finally has a culinary use."
+    },
+    {
+      "id": "pamhc2foodextended:bentoboxitem",
+      "title": "The Bento Box",
+      "desc": "Steamed rice, pickled beets from Food Core, teriyaki chicken and sushi assembled on the cutting board. A four-recipe-deep boxed lunch that touches gardens, oceans, bees and both Pam food mods."
+    },
+    {
+      "id": "pamhc2foodextended:currypowderitem",
+      "title": "Blend Curry Powder",
+      "desc": "Spiceleaf, mustard seeds and your ground cinnamon in the grinder. This spice blend is the sole gate into the curry tier - the deepest recipe ladder in the mod."
+    },
+    {
+      "id": "pamhc2foodextended:naanitem",
+      "title": "Naan",
+      "desc": "Dough, yogurt and oil on the skillet. Flatbread worth making on its own, but it is also a required side for the deluxe curry - bake a few ahead."
+    },
+    {
+      "id": "pamhc2foodextended:mangochutneyitem",
+      "title": "Mango Chutney",
+      "desc": "Mango, spiceleaf, mustard seeds and oil in the pot - your fruit-tree orchard reports for duty. The final side dish standing between you and the deluxe curry."
+    },
+    {
+      "id": "pamhc2foodextended:chickencurryitem",
+      "title": "Chicken Curry",
+      "desc": "Coconut, yogurt, chicken, curry powder, chilipepper and rice in the pot. Six ingredients from four different mods in one dish - the curry itself is already a trophy."
+    },
+    {
+      "id": "pamhc2foodextended:deluxechickencurryitem",
+      "title": "The Deluxe Curry",
+      "desc": "Chicken curry, rice, naan and mango chutney plated on the cutting board. Five recipes deep, spanning gardens, orchards, dairy and spice trade - the true capstone of the HarvestCraft kitchen."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "pamhc2foodextended:epicbltitem",
+      "members": [
+        "pamhc2foodextended:beefwellingtonitem",
+        "pamhc2foodextended:bakedalaskaitem",
+        "pamhc2foodextended:bibimbapitem",
+        "pamhc2foodextended:chocovoxelsitem",
+        "pamhc2foodextended:rainbowcurryitem",
+        "pamhc2foodextended:chickencordonbleuitem",
+        "pamhc2foodextended:gourmetbeefburgeritem",
+        "pamhc2foodextended:briochebunitem",
+        "pamhc2foodextended:gourmetbeefpattyitem"
+      ]
+    },
+    {
+      "hub": "pamhc2foodextended:pepperonipizzaitem",
+      "members": [
+        "pamhc2foodextended:anchovypepperonipizzaitem",
+        "pamhc2foodextended:bbqchickenpizzaitem",
+        "pamhc2foodextended:hamandpineapplepizzaitem",
+        "pamhc2foodextended:meatfeastpizzaitem",
+        "pamhc2foodextended:pizzasliceitem"
+      ]
+    },
+    {
+      "hub": "pamhc2foodextended:deluxecheeseburgeritem",
+      "members": [
+        "pamhc2foodextended:baconmushroomburgeritem",
+        "pamhc2foodextended:beetburgeritem",
+        "pamhc2foodextended:coleslawburgeritem",
+        "pamhc2foodextended:gourmetmuttonburgeritem",
+        "pamhc2foodextended:gourmetporkburgeritem",
+        "pamhc2foodextended:jalapenoburgeritem",
+        "pamhc2foodextended:onionhamburgeritem",
+        "pamhc2foodextended:paradiseburgeritem"
+      ]
+    },
+    {
+      "hub": "pamhc2foodextended:firmtofuitem",
+      "members": [
+        "pamhc2foodextended:rawtofickenitem",
+        "pamhc2foodextended:rawtofaconitem",
+        "pamhc2foodextended:rawtofeakitem",
+        "pamhc2foodextended:rawtofishitem",
+        "pamhc2foodextended:rawtofabbititem",
+        "pamhc2foodextended:rawtofuttonitem",
+        "pamhc2foodextended:cookedtofickenitem",
+        "pamhc2foodextended:cookedtofaconitem",
+        "pamhc2foodextended:cookedtofeakitem",
+        "pamhc2foodextended:cookedtofishitem",
+        "pamhc2foodextended:cookedtofabbititem",
+        "pamhc2foodextended:cookedtofuttonitem"
+      ]
+    },
+    {
+      "hub": "pamhc2foodextended:cherryjellyitem",
+      "members": [
+        "pamhc2foodextended:apricotjellyitem",
+        "pamhc2foodextended:bananajellyitem",
+        "pamhc2foodextended:blackberryjellyitem",
+        "pamhc2foodextended:blueberryjellyitem",
+        "pamhc2foodextended:breadfruitjellyitem",
+        "pamhc2foodextended:cactusfruitjellyitem",
+        "pamhc2foodextended:candleberryjellyitem",
+        "pamhc2foodextended:cantaloupejellyitem"
+      ]
+    },
+    {
+      "hub": "pamhc2foodextended:colasodaitem",
+      "members": [
+        "pamhc2foodextended:cherrysodaitem",
+        "pamhc2foodextended:applecideritem",
+        "pamhc2foodextended:chaiteaitem",
+        "pamhc2foodextended:coffeeconlecheitem",
+        "pamhc2foodextended:chocolatemilkshakeitem",
+        "pamhc2foodextended:chocolatemilkitem"
+      ]
+    },
+    {
+      "hub": "pamhc2foodextended:ramenitem",
+      "members": [
+        "pamhc2foodextended:friedriceitem",
+        "pamhc2foodextended:springrollitem",
+        "pamhc2foodextended:bulgogiitem",
+        "pamhc2foodextended:californiarollitem",
+        "pamhc2foodextended:musubiitem",
+        "pamhc2foodextended:hummusitem",
+        "pamhc2foodextended:chiliitem",
+        "pamhc2foodextended:chilidogitem",
+        "pamhc2foodextended:chimichangaitem",
+        "pamhc2foodextended:breakfastburritoitem"
+      ]
+    }
+  ],
+  "notes": "Verified against pamhc2foodextended-1.20.4-1.0.1.jar found in the GayChaseyPacxk instance: 871 item lang keys, 887 recipe files; every chain/collection id checked against the lang file and its recipe read directly. This mod is pure recipes - zero blocks, zero worldgen - and consumes the forge:tool_* tags from pamhc2foodcore plus crop/fruit tags fed by pamhc2crops and pamhc2trees, so its chain should be ordered AFTER those three mods' early steps in any pack. The chain is built as converging ladders: condiments/spices (ketchup, black pepper, ground cinnamon - all one-step grinder/juicer recipes on farmed goods), Tex-Mex (cornmeal -> tortilla -> salsa -> taco), comfort/breakfast (biscuit, gravy, pancakes, waffles, omelet), Italian (sausage -> pepperoni -> pepperoni pizza -> supreme; pizzas slice 5-8x), the soybean tree (soymilk/silken tofu/soy sauce are pot/saucepan/juicer on the same bean; firm tofu shapes into six imitation meats), the Japanese ladder (sushi + teriyaki + bamboo rice -> bentoboxitem, which literally requires pamhc2foodcore:pickledbeetsitem), and the curry ladder ending at deluxechickencurryitem (chickencurry + naan + mangochutney), the deepest craft in the suite. Showpiece collection hubs on epicbltitem, which requires pamhc2foodcore:epicbaconitem. Jelly/juice/smoothie/pie/yogurt exist for ~40 fruits each following one pattern - only the cherry-through-cantaloupe jelly slice is listed to represent them."
+}

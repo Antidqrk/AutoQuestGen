@@ -1,0 +1,181 @@
+{
+ "mod": "soulsweapons",
+ "verified_against": "soulslike-weaponry-1.4.8-1.20.1-forge.jar",
+ "item_count_in_jar": 168,
+ "chain": [
+  {
+   "id": "soulsweapons:lost_soul",
+   "title": "The Currency of the Dead",
+   "desc": "Smelted, dropped by Soulmasses and Dark Sorcerers, and stocked in the Cathedral of Resurrection chests."
+  },
+  {
+   "id": "soulsweapons:soul_ingot",
+   "title": "Iron Bound With Souls",
+   "desc": "Iron ingots ringed with Lost Souls; the base metal for soul armour, robes and most translucent weapons."
+  },
+  {
+   "id": "soulsweapons:moonstone",
+   "title": "Shinier Than Diamond",
+   "desc": "Mined from Moonstone Ore and its deepslate variant, or dropped by the Fallen Icon."
+  },
+  {
+   "id": "soulsweapons:verglas",
+   "title": "False Water, Frozen Solid",
+   "desc": "Cut from Verglas Ore; a cold, smooth material with a liquid trapped inside it."
+  },
+  {
+   "id": "soulsweapons:bluemoon_greatsword",
+   "title": "A Convincing Fake",
+   "desc": "Moonstone and sticks make a greatsword that looks the part but still lacks any real power."
+  },
+  {
+   "id": "soulsweapons:iron_skull",
+   "title": "A Skull With Iron Teeth",
+   "desc": "Bone, iron and a Lost Soul; the keystone of the Old Moon Altar."
+  },
+  {
+   "id": "soulsweapons:altar_block",
+   "title": "The Old Moon Altar",
+   "desc": "Iron Skulls, Moonstone and Obsidian; right-clicking it with a Lost Soul calls something back from the grave."
+  },
+  {
+   "id": "kill:soulsweapons:returning_knight",
+   "title": "Last Arrival",
+   "desc": "The Returning Knight answers a Lost Soul offered at the Old Moon Altar and drops an Arkenstone, Nightfall, a Lord Soul and Soul Ingots."
+  },
+  {
+   "id": "soulsweapons:arkenstone",
+   "title": "A Vessel for Infinite Soul",
+   "desc": "Dropped by the Returning Knight; its lore claims the stored energy could fuel a golem for centuries."
+  },
+  {
+   "id": "soulsweapons:nightfall",
+   "title": "Command Your Own Undead",
+   "desc": "The Returning Knight's greatsword drop, and the third-time-lucky reward of that fight."
+  },
+  {
+   "id": "kill:soulsweapons:night_shade",
+   "title": "The Frenzied Shade",
+   "desc": "Its loot table yields the Essence of Eventide and the dark Lord Soul carrying the old champion's last will."
+  },
+  {
+   "id": "soulsweapons:essence_of_eventide",
+   "title": "It Wants to Go Home",
+   "desc": "A shard that longs to return to something; the tooltip points it at the Old Moon Altar."
+  },
+  {
+   "id": "kill:soulsweapons:moonknight",
+   "title": "Blue Steel",
+   "desc": "Returning the Essence of Eventide to the altar summons the Fallen Icon, whose second phase is the Harbinger of Moonlight."
+  },
+  {
+   "id": "soulsweapons:essence_of_luminescence",
+   "title": "All He Could Do Was Listen",
+   "desc": "A Fallen Icon drop, alongside a white Lord Soul, a Moonlight Greatsword and Moonstone."
+  },
+  {
+   "id": "soulsweapons:moonlight_greatsword",
+   "title": "From the Software Itself",
+   "desc": "Smithing a Bluemoon Greatsword with any Lord Soul turns the fake into the real thing."
+  },
+  {
+   "id": "soulsweapons:pure_moonlight_greatsword",
+   "title": "Moonlight Without Compromise",
+   "desc": "The Essence of Luminescence smithed onto a Moonlight sword; the final tier of the moon line."
+  },
+  {
+   "id": "soulsweapons:demon_chunk",
+   "title": "Four Hearts, One Slab",
+   "desc": "Four Molten Demon Hearts, each smelted from a Demon Heart dropped by Withered Demons."
+  },
+  {
+   "id": "soulsweapons:blackstone_pedestal",
+   "title": "A Stand for Something Old",
+   "desc": "Moonstone, Ender Pearls, Obsidian and Polished Blackstone Bricks; using a Demon Chunk on it summons a long-lost king."
+  },
+  {
+   "id": "kill:soulsweapons:accursed_lord_boss",
+   "title": "End the Decaying King's Suffering",
+   "desc": "The Decaying King drops the red Lord Soul, a Withered Demon Heart and the Darkin Blade itself."
+  },
+  {
+   "id": "soulsweapons:darkin_blade",
+   "title": "Bloodthirster, Corrupted",
+   "desc": "Smithing a Lord Soul onto a Bloodthirster; the Bloodthirster itself is forged from Crimson Ingots and a demon heart."
+  },
+  {
+   "id": "soulsweapons:chaos_orb",
+   "title": "Contained Nebula",
+   "desc": "Essence of Luminescence, a Withered Demon Heart, an Arkenstone and the Crown of Chaos; thrown skyward it calls two deities."
+  },
+  {
+   "id": "kill:soulsweapons:day_stalker",
+   "title": "Deity of the Daylight",
+   "desc": "One half of the duo the Chaos Orb summons; she drops Dawnbreaker and her own Lord Soul."
+  },
+  {
+   "id": "kill:soulsweapons:night_prowler",
+   "title": "She Promised Godhood",
+   "desc": "The other half, dropping the Forlorn Scythe, the Soul Reaper and the night Lord Soul."
+  },
+  {
+   "id": "soulsweapons:frostmourne",
+   "title": "Both Sisters in One Blade",
+   "desc": "Soul Ingots and Verglas around both the Day Stalker and Night Prowler Lord Souls; the only recipe in the mod that demands them together."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "soulsweapons:boss_compass",
+   "members": [
+    "soulsweapons:lord_soul_red",
+    "soulsweapons:lord_soul_rose",
+    "soulsweapons:lord_soul_white",
+    "soulsweapons:lord_soul_dark",
+    "soulsweapons:lord_soul_void",
+    "soulsweapons:lord_soul_purple",
+    "soulsweapons:lord_soul_day_stalker",
+    "soulsweapons:lord_soul_night_prowler"
+   ]
+  },
+  {
+   "hub": "soulsweapons:soul_reaper",
+   "members": [
+    "soulsweapons:excalibur",
+    "soulsweapons:dragonslayer_swordspear",
+    "soulsweapons:moonveil",
+    "soulsweapons:leviathan_axe",
+    "soulsweapons:mjolnir",
+    "soulsweapons:galeforce",
+    "soulsweapons:comet_spear",
+    "soulsweapons:whirligig_sawblade",
+    "soulsweapons:glaive_of_hodir",
+    "soulsweapons:rageblade",
+    "soulsweapons:draupnir_spear",
+    "soulsweapons:forlorn_scythe",
+    "soulsweapons:master_sword",
+    "soulsweapons:skofnung"
+   ]
+  },
+  {
+   "hub": "soulsweapons:arkenplate",
+   "members": [
+    "soulsweapons:soul_ingot_helmet",
+    "soulsweapons:soul_ingot_chestplate",
+    "soulsweapons:soul_ingot_leggings",
+    "soulsweapons:soul_ingot_boots",
+    "soulsweapons:soul_robes_helmet",
+    "soulsweapons:soul_robes_chestplate",
+    "soulsweapons:soul_robes_leggings",
+    "soulsweapons:soul_robes_boots",
+    "soulsweapons:forlorn_helmet",
+    "soulsweapons:forlorn_chestplate",
+    "soulsweapons:forlorn_leggings",
+    "soulsweapons:forlorn_boots",
+    "soulsweapons:enhanced_arkenplate",
+    "soulsweapons:withered_chest"
+   ]
+  }
+ ],
+ "notes": "Item set = 255 stems of assets/soulsweapons/models/item/*.json intersected with item./block. keys across every assets/*/lang/en_us.json (168 ids); entity ids for the kill: steps come from the 64 entity.soulsweapons.* keys in the same lang file, so returning_knight (Returning Knight), night_shade (Frenzied Shade), moonknight (Fallen Icon, phase two Harbinger of Moonlight), accursed_lord_boss (The Decaying King), day_stalker and night_prowler are all verified registered entity names. Crafting read from data/soulsweapons/recipes/** (131 files): soul_ingot from iron plus #forge:lost_soul, bluemoon_greatsword from moonstone, altar_block from iron_skull/moonstone/obsidian, blackstone_pedestal from moonstone/blackstone/ender pearl/obsidian, moonlight_greatsword smithed from bluemoon_greatsword plus #soulsweapons:lord_soul, pure_moonlight_greatsword smithed from #soulsweapons:upgradable_moonlight_swords plus essence_of_luminescence, darkin_blade smithed from bloodthirster plus a lord soul, chaos_orb shapeless from essence_of_luminescence + withered_demon_heart + arkenstone + chaos_crown, demon_chunk from four molten_demon_heart, and frostmourne requiring lord_soul_day_stalker AND lord_soul_night_prowler together. Boss drops confirmed in data/soulsweapons/loot_tables/entities/: returning_knight -> arkenstone, lord_soul_rose, nightfall, soul_ingot; night_shade -> essence_of_eventide, lord_soul_dark; moonknight -> essence_of_luminescence, lord_soul_white, moonlight_greatsword, moonstone; accursed_lord_boss -> darkin_blade, lord_soul_red, withered_demon_heart; day_stalker -> dawnbreaker, lord_soul_day_stalker; night_prowler -> forlorn_scythe, lord_soul_night_prowler, soul_reaper; chaos_monarch -> chaos_crown, chaos_robes, lord_soul_void, withered_wabbajack, blood_vial_recipe_page; withered_demon -> demon_heart. Summoning conditions come from the item tooltips in lang (demon_chunk 'Use on the Blackstone Pedestal to summon a long, lost king', essence_of_eventide 'Perhaps bringing it to the Old Moon Altar may do something', chaos_orb 'Throw it into the sky to summon deities of night and day', shard_of_uncertainty 'It seems to perfectly fit in a certain pedestal') and from the advancement tree in data/soulsweapons/advancements/ (root -> draugr_boss -> moonknight; root -> returning_knight -> arkenplate -> infused_arkenplate; demon_heart -> bloodthirsty -> end_of_reigns -> chaos_orb -> kill_day_night_boss; uncertainty -> ender_of_world_ender). Collection 1 is the full soulsweapons:lord_soul item tag plus lord_soul_purple, which is registered and named but has no loot table or recipe anywhere in the jar - it is kept because it is a member of the lord_soul tag and every lord-soul recipe accepts it. Collection 2 is weapons whose recipe ingredient list contains #soulsweapons:lord_soul. Collection 3 is the mod's armour sets. Nothing dropped. moddb agreement: 25 of moddb's 26 ids are inside the verified set and the broad shape matches (moonstone, lord souls and soul_ingot early; boss_compass, mjolnir, gatling_gun, sting late). Conflict: moddb ranks soulsweapons:chungus_emerald at pos 0.000, the very first entry, but it is a joke item from the Moderately Sized Chungus and the cathedral loot table and gates nothing, so it is excluded here; moddb also puts lord_soul_purple at 0.039 near the start although no source for it exists in the jar."
+}

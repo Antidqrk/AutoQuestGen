@@ -1,0 +1,173 @@
+{
+ "mod": "mythicupgrades",
+ "verified_against": "mythicupgrades-forge-1.20.1-5.1.0.jar",
+ "item_count_in_jar": 316,
+ "chain": [
+  {
+   "id": "mythicupgrades:raw_necoium",
+   "title": "The Metal Behind Every Gem",
+   "desc": "Necoium ore and its deepslate variant are added to every overworld biome by add_necoium_ores.json; nothing else in the mod can be upgraded until you have this."
+  },
+  {
+   "id": "mythicupgrades:necoium_ingot",
+   "title": "Necoium Drawn Out",
+   "desc": "Smelted or blasted from the raw lump, or straight from the ore block; it is the binder that turns every raw gem into a workable ingot."
+  },
+  {
+   "id": "mythicupgrades:necoium_block",
+   "title": "Nine Into One",
+   "desc": "Storage form, and the bulk half of the smithing template recipe."
+  },
+  {
+   "id": "mythicupgrades:mythic_upgrade_smithing_template",
+   "title": "The Only Template That Matters",
+   "desc": "A vanilla Netherite Upgrade Smithing Template ringed with necoium blocks and ingots; every single gem tool and armour piece in the mod is smithed with this template and nothing else."
+  },
+  {
+   "id": "mythicupgrades:aquamarine",
+   "title": "Blue Stone of the Cold Caves",
+   "desc": "Aquamarine ore seeds the mod's Cold Mythic Caves biome, and aquamarine geodes are injected into the overworld; the ore drops the gem directly."
+  },
+  {
+   "id": "mythicupgrades:aquamarine_ingot",
+   "title": "A Gem Made Workable",
+   "desc": "One gem plus one necoium ingot, shapeless; this pattern is identical for all eight gem families."
+  },
+  {
+   "id": "mythicupgrades:aquamarine_sword",
+   "title": "Smithed Onto Netherite",
+   "desc": "There is no crafting-table recipe for any gem tool. A Netherite Sword goes on the smithing table under the mythic template with an aquamarine ingot, and comes off as this."
+  },
+  {
+   "id": "mythicupgrades:aquamarine_helmet",
+   "title": "Crowned in Aquamarine",
+   "desc": "The same smithing step performed on a Netherite Helmet; the rest of the set follows the identical shape."
+  },
+  {
+   "id": "mythicupgrades:topaz",
+   "title": "Warm Caves, Warmer Stone",
+   "desc": "Topaz ore and topaz crystal buds are placed in the Warm Mythic Caves biome, with topaz geodes also injected across the overworld."
+  },
+  {
+   "id": "mythicupgrades:topaz_ingot",
+   "title": "Topaz Made Workable",
+   "desc": "Topaz plus necoium; the second of the four overworld gem families."
+  },
+  {
+   "id": "mythicupgrades:topaz_pickaxe",
+   "title": "A Pick Worth Swinging",
+   "desc": "Smithed from a Netherite Pickaxe, and the fastest way to keep feeding the rest of this ladder."
+  },
+  {
+   "id": "mythicupgrades:topaz_crystal_shard",
+   "title": "Chipped From a Geode",
+   "desc": "Breaking a mature crystal cluster inside a mythic geode yields shards; unlike the gem, shards go into building blocks rather than gear."
+  },
+  {
+   "id": "mythicupgrades:ruby",
+   "title": "Red Stone of the Rifts",
+   "desc": "Ruby ore only generates in the Mythic Rifts, the mod's Nether cave biome, with ruby geodes injected into other Nether biomes."
+  },
+  {
+   "id": "mythicupgrades:ruby_ingot",
+   "title": "Ruby Made Workable",
+   "desc": "Ruby plus necoium; the Nether pair is ruby and sapphire."
+  },
+  {
+   "id": "mythicupgrades:ruby_sword",
+   "title": "Nether-Forged Edge",
+   "desc": "Gem gear is freely interconvertible, so this can equally be smithed from an existing aquamarine sword instead of a fresh netherite one."
+  },
+  {
+   "id": "mythicupgrades:ruby_helmet",
+   "title": "Helm of the Rifts",
+   "desc": "The Nether-tier helmet; the other three pieces are the same smithing step on the matching netherite part."
+  },
+  {
+   "id": "mythicupgrades:ametrine",
+   "title": "The Barrens Answer",
+   "desc": "Ametrine ore is confined to Mythic Barrens, the mod's End biome, with ametrine geodes injected into other End biomes; it is the deepest gem in the mod."
+  },
+  {
+   "id": "mythicupgrades:ametrine_ingot",
+   "title": "Ametrine Made Workable",
+   "desc": "Ametrine plus necoium; the End pair is ametrine and jade."
+  },
+  {
+   "id": "mythicupgrades:ametrine_helmet",
+   "title": "The Last Crown",
+   "desc": "The End-tier helmet, the terminal armour smith in the mod's ladder."
+  },
+  {
+   "id": "mythicupgrades:necoium_carrot",
+   "title": "Gilded, Then Some",
+   "desc": "A carrot or golden carrot wrapped in a necoium block; the mod's single food item and its one non-gear recipe."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mythicupgrades:aquamarine",
+   "members": [
+    "mythicupgrades:citrine",
+    "mythicupgrades:peridot",
+    "mythicupgrades:topaz",
+    "mythicupgrades:ruby",
+    "mythicupgrades:sapphire",
+    "mythicupgrades:ametrine",
+    "mythicupgrades:jade"
+   ]
+  },
+  {
+   "hub": "mythicupgrades:aquamarine_ingot",
+   "members": [
+    "mythicupgrades:citrine_ingot",
+    "mythicupgrades:peridot_ingot",
+    "mythicupgrades:topaz_ingot",
+    "mythicupgrades:ruby_ingot",
+    "mythicupgrades:sapphire_ingot",
+    "mythicupgrades:ametrine_ingot",
+    "mythicupgrades:jade_ingot",
+    "mythicupgrades:necoium_ingot"
+   ]
+  },
+  {
+   "hub": "mythicupgrades:aquamarine_helmet",
+   "members": [
+    "mythicupgrades:aquamarine_chestplate",
+    "mythicupgrades:aquamarine_leggings",
+    "mythicupgrades:aquamarine_boots",
+    "mythicupgrades:aquamarine_axe",
+    "mythicupgrades:aquamarine_pickaxe",
+    "mythicupgrades:aquamarine_shovel",
+    "mythicupgrades:aquamarine_hoe"
+   ]
+  },
+  {
+   "hub": "mythicupgrades:aquamarine_crystal_shard",
+   "members": [
+    "mythicupgrades:citrine_crystal_shard",
+    "mythicupgrades:peridot_crystal_shard",
+    "mythicupgrades:topaz_crystal_shard",
+    "mythicupgrades:ruby_crystal_shard",
+    "mythicupgrades:sapphire_crystal_shard",
+    "mythicupgrades:ametrine_crystal_shard",
+    "mythicupgrades:jade_crystal_shard"
+   ]
+  },
+  {
+   "hub": "mythicupgrades:necoium_ore",
+   "members": [
+    "mythicupgrades:aquamarine_ore",
+    "mythicupgrades:citrine_ore",
+    "mythicupgrades:peridot_ore",
+    "mythicupgrades:topaz_ore",
+    "mythicupgrades:ruby_ore",
+    "mythicupgrades:sapphire_ore",
+    "mythicupgrades:ametrine_ore",
+    "mythicupgrades:jade_ore",
+    "mythicupgrades:deepslate_necoium_ore"
+   ]
+  }
+ ],
+ "notes": "Forge, 1.20.1, confirmed from META-INF/mods.toml (modId \"mythicupgrades\", loaderVersion [47,), minecraft \"1.20.1\", mandatory dependency on cloth_config; no fabric.mod.json in this artefact). The project publishes separate fabric and forge jars per version and the forge one was taken. ID SET AND THE OVERLAY TRAP. assets/mythicupgrades/models/item/*.json contains 932 stems; the strict 3-segment intersection with item.mythicupgrades.<name> lang keys reduces that to 100 real items. The 832 discarded stems are almost entirely armour trim overlays - every one of the 32 gem armour pieces ships nineteen <piece>_<material>_trim models, including trims for the mod's own gem materials, which is exactly the inflation pattern seen in mekanismtools. Blocks were taken separately: 216 ids each proved by BOTH a blockstate file and a block.mythicupgrades.<name> lang key. Verified set = 316. Widening beyond the strict intersection was not needed and was not used. NBT-VARIANT CHECK: not applicable. Every gem tool and armour piece is a distinct registered item id with its own model and lang key, so plain-id wheels are correct here; there is no shared item id carrying a variant tag anywhere in this mod. THE LADDER IS FLAT, NOT STEPPED - RECORD THIS. Extracting every minecraft:smithing_transform in data/mythicupgrades/recipes gives 64 family pairs, and they form a complete graph, not a chain: netherite upgrades into all eight gems, and each of the eight gems upgrades into each of the other seven. There is NO gem-to-gem tier ordering in the recipe graph. There is also NOT ONE crafting_shaped recipe for any gem tool or armour piece anywhere in the jar - smithing is the only route in. The ordering used above therefore comes from worldgen reach rather than from recipes, which is the only real gate the mod has: data/mythicupgrades/worldgen/biome/*.json puts aquamarine and peridot in cold_mythic_caves and citrine and topaz in warm_mythic_caves (overworld), ruby and sapphire in mythic_rifts (Nether), ametrine and jade in mythic_barrens (End); and the forge biome modifiers confirm the split by injecting aquamarine/citrine/peridot/topaz geodes into #minecraft:is_overworld, ruby/sapphire geodes into #minecraft:is_nether and ametrine/jade geodes into #minecraft:is_end. Any moddb consensus that presents the gems as a strict tier ladder is contradicted by the recipe graph; the dimensional split above is the defensible ordering and is what was used. The mythic cave biomes reach the world through MixinOverworldBiomeBuilder rather than a datapack biome modifier, with TerraBlenderCompat.class handling the case where TerraBlender is installed, so no extra mod is required for them to generate. OBTAINABILITY. Only 8 of the 316 registered ids have no source: the eight budding_<gem>_crystal blocks, whose loot tables are deliberately empty exactly as vanilla budding_amethyst is. They generate inside geodes, cannot be collected, and are excluded. Everything else is covered by a recipe result or a block loot table; the eight <gem>_ore tables drop the gem directly and the four deepslate ore variants exist only for the overworld gems, which matches the biome split. ARMOUR AND ORE RULES APPLIED. Only helmets are quested in the chain (aquamarine, ruby, ametrine); the remaining three pieces of the aquamarine set sit in a wheel with that family's four tools, and no lone chestplate, leggings or boots quest appears anywhere. Ores are kept out of the chain entirely and confined to one nine-member wheel; the chain quests the gem and the ingot instead. Every _slab, _stairs, _wall and polished_ block - a large majority of the 216 blocks - is excluded from both the chain and the wheels. Five wheels, sized 7, 8, 7, 7 and 9."
+}

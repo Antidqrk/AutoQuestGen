@@ -1,0 +1,85 @@
+{
+ "mod": "functionalstorage",
+ "verified_against": "functionalstorage-1.20.1-1.2.14.jar",
+ "item_count_in_jar": 60,
+ "chain": [
+  {"id": "functionalstorage:oak_1", "title": "One Big Compartment", "desc": "Oak planks ringing a wooden chest; the Oak Drawer (1x1) holds a single item type but thirty-two stacks of it."},
+  {"id": "functionalstorage:oak_2", "title": "Cut in Half", "desc": "The same planks-and-chest recipe in the 1x2 arrangement, giving two independent compartments in one block."},
+  {"id": "functionalstorage:oak_4", "title": "Four to a Face", "desc": "The 2x2 arrangement, the densest plain drawer and the one most walls are built from."},
+  {"id": "functionalstorage:fluid_1", "title": "A Drawer That Holds Liquid", "desc": "A bucket surrounded by planks; the Fluid Drawer stores fluids the way the wooden ones store items."},
+  {"id": "functionalstorage:framed_1", "title": "Ready to Be Disguised", "desc": "A wooden chest and iron nuggets make the Framed Drawer, which takes on the texture of any block you apply to it."},
+  {"id": "functionalstorage:iron_downgrade", "title": "The Upgrade That Isn't", "desc": "Iron ingots on a drawer make the Iron Downgrade, which CUTS each slot back to a maximum of 64 items instead of raising it."},
+  {"id": "functionalstorage:copper_upgrade", "title": "Capacity, First Rung", "desc": "A copper block, copper ingots, a wooden chest and a drawer; the bottom of the real capacity ladder, which starts at copper and not iron."},
+  {"id": "functionalstorage:simple_compacting_drawer", "title": "Ingots and Blocks Together", "desc": "Iron, stone, a piston and a drawer; it pools an item and its compressed block form as one quantity."},
+  {"id": "functionalstorage:compacting_drawer", "title": "All Three Sizes", "desc": "The fuller version of the same recipe, handling nugget, ingot and block in one block instead of two tiers."},
+  {"id": "functionalstorage:void_upgrade", "title": "Overflow Goes Nowhere", "desc": "Obsidian applied to a drawer; once the compartment is full, anything more that goes in is deleted rather than rejected."},
+  {"id": "functionalstorage:puller_upgrade", "title": "Taking It Out", "desc": "A hopper, redstone and stone worked onto a drawer; slotted in, it pulls items out of the drawer into whatever it faces."},
+  {"id": "functionalstorage:pusher_upgrade", "title": "Putting It In", "desc": "The mirror of the puller, built from the same hopper and redstone frame, feeding the drawer from an adjacent inventory."},
+  {"id": "functionalstorage:collector_upgrade", "title": "Sweeping the Ground", "desc": "The third of the hopper-frame upgrades; it vacuums loose item entities off the floor in front of the drawer."},
+  {"id": "functionalstorage:redstone_upgrade", "title": "Reading the Fill Level", "desc": "A comparator, redstone and a redstone block on a drawer, so the block emits a signal that tracks how full it is."},
+  {"id": "functionalstorage:gold_upgrade", "title": "Capacity, Second Rung", "desc": "Gold ingots and a gold block worked into the copper upgrade; each rung of this ladder is built from the one below it."},
+  {"id": "functionalstorage:storage_controller", "title": "One Address for the Wall", "desc": "A quartz block, a comparator, stone and a drawer; every drawer it can reach becomes a single inventory."},
+  {"id": "functionalstorage:controller_extension", "title": "A Second Doorway", "desc": "A quartz block, a repeater, stone and a drawer make the Controller Access Point, giving pipes another way onto the same network."},
+  {"id": "functionalstorage:linking_tool", "title": "Wiring by Hand", "desc": "Gold, a diamond, paper and a drawer; it binds drawers to a controller that they do not physically touch."},
+  {"id": "functionalstorage:configuration_tool", "title": "Setting the Rules", "desc": "Gold, an emerald, paper and a drawer; it toggles per-drawer settings like locking, voiding and rendering."},
+  {"id": "functionalstorage:ender_drawer", "title": "The Same Drawer Everywhere", "desc": "An ender chest, planks and a drawer; drawers sharing a frequency share their contents across any distance."},
+  {"id": "functionalstorage:diamond_upgrade", "title": "Capacity, Third Rung", "desc": "Diamonds and a diamond block worked into the gold upgrade."},
+  {"id": "functionalstorage:armory_cabinet", "title": "A Wall for the Gear", "desc": "Netherite, stone, a comparator and a drawer; unlike every other block here it takes tools and armour rather than one stacking item."},
+  {"id": "functionalstorage:netherite_upgrade", "title": "Capacity, Last Rung", "desc": "Made in a smithing table from the diamond upgrade, a netherite upgrade template and a netherite ingot."}
+ ],
+ "collections": [
+  {
+   "hub": "functionalstorage:oak_1",
+   "members": [
+    "functionalstorage:spruce_1",
+    "functionalstorage:birch_1",
+    "functionalstorage:jungle_1",
+    "functionalstorage:acacia_1",
+    "functionalstorage:dark_oak_1",
+    "functionalstorage:mangrove_1",
+    "functionalstorage:cherry_1",
+    "functionalstorage:crimson_1",
+    "functionalstorage:warped_1"
+   ]
+  },
+  {
+   "hub": "functionalstorage:copper_upgrade",
+   "members": [
+    "functionalstorage:gold_upgrade",
+    "functionalstorage:diamond_upgrade",
+    "functionalstorage:netherite_upgrade",
+    "functionalstorage:iron_downgrade",
+    "functionalstorage:void_upgrade",
+    "functionalstorage:redstone_upgrade",
+    "functionalstorage:puller_upgrade",
+    "functionalstorage:pusher_upgrade",
+    "functionalstorage:collector_upgrade"
+   ]
+  },
+  {
+   "hub": "functionalstorage:framed_1",
+   "members": [
+    "functionalstorage:framed_2",
+    "functionalstorage:framed_4",
+    "functionalstorage:framed_storage_controller",
+    "functionalstorage:framed_controller_extension",
+    "functionalstorage:framed_simple_compacting_drawer",
+    "functionalstorage:compacting_framed_drawer"
+   ]
+  },
+  {
+   "hub": "functionalstorage:compacting_drawer",
+   "members": [
+    "functionalstorage:simple_compacting_drawer",
+    "functionalstorage:ender_drawer",
+    "functionalstorage:armory_cabinet",
+    "functionalstorage:fluid_1",
+    "functionalstorage:fluid_2",
+    "functionalstorage:fluid_4",
+    "functionalstorage:oak_2",
+    "functionalstorage:oak_4"
+   ]
+  }
+ ],
+ "notes": "60 ids verified: 60 assets/functionalstorage/models/item/*.json stems, all 60 carrying a block.functionalstorage.X or item.functionalstorage.X lang key, with 46 of them additionally confirmed by a blockstate AND a block loot table. The naive intersection rule finds 60 of 60 here - this mod names everything plainly, and unlike Storage Drawers it does NOT compose wood names, it writes them out one per key (block.functionalstorage.acacia_4 = 'Acacia Drawer (2x2)').\n\nRECIPE-PARSING TRAP - 60 of the 69 recipe files are type forge:conditional, which means the real recipe (type, ingredients and result) is nested at recipes[0].recipe. A parser that reads the top-level 'result' finds NOTHING for 60 of 69 files and concludes the mod has almost no craftable content. The conditions themselves are trivial (forge:item_exists on the recipe's own output), so every one of them actually loads. Results below are read from the unwrapped inner recipe.\n\nUPGRADE LADDER - counter-intuitive in the same way Storage Drawers is, and worth gating on. The tier enum in com/buuz135/functionalstorage/item/StorageUpgradeItem$StorageTier.class is COPPER, GOLD, DIAMOND, NETHERITE, IRON, MAX_STORAGE. IRON IS NOT ON THE LADDER: it is registered as functionalstorage:iron_downgrade, and the lang line item.utility.downgrade says 'Downgrades the slots to a max of 64 items'. Anyone assuming iron sits between copper and gold has it exactly backwards. The real capacity chain is copper -> gold -> diamond -> netherite, and each rung is crafted FROM the rung below (netherite via smithing_transform), so the order is a hard recipe dependency, not a guess.\n\nDROPPED - functionalstorage:max_storage_upgrade and functionalstorage:creative_vending_upgrade. Both are genuinely registered (item model, item.functionalstorage.X lang key, and MAX_STORAGE is a StorageTier enum constant) but NEITHER has a recipe file, a loot table or a trade anywhere in the jar. moddb lists max_storage_upgrade at pos 1.000 in 3 packs, which is a good example of consensus recording something a pack added itself rather than something the mod ships. Questing either one from the base mod is uncompletable.\n\nCONSENSUS CONFLICT, recipe graph preferred: moddb puts functionalstorage:storage_controller at pos 0.000, tied for first with oak_1. The controller recipe requires the functionalstorage:drawer item tag in two slots, and that tag lists only the 33 drawer blocks - a drawer has to exist before a controller can be crafted. It also costs a quartz block and a comparator against the drawer's chest and planks. The controller is placed at step 16 here. This is the same failure moddb made with storagedrawers, where it put controller before upgrade_template.\nSECOND CONFLICT: moddb orders copper_upgrade (0.295) -> gold_upgrade (0.424) -> diamond_upgrade (0.735) -> netherite_upgrade (0.955) correctly, but never mentions iron_downgrade at all, so a generator following consensus alone would silently present iron as absent rather than as a deliberate downgrade.\n\nWOOD VARIANTS ARE A WHEEL, NOT CHAIN STEPS. Ten woods (oak, spruce, birch, jungle, acacia, dark_oak, mangrove, cherry, crimson, warped) times three sizes is 30 blocks that are one idea in thirty planks; there is no bamboo drawer. The mod itself treats them as interchangeable - data/functionalstorage/recipes/oak_drawer_alternate_x*.json uses a custom ingredient of type functionalstorage:woodless which accepts any plank not matched by a dedicated recipe and still outputs oak_1, so modded woods work without new blocks. The framed family (6 blocks) is a second such wheel.\n\nSCOPE NOTE - the seven data/functionalstorage/recipes/custom_compacting/*.json files (amethyst, clay, glowstone, ice, melon, packed_ice, quartz) are not items. They declare which non-ingot materials the compacting drawers know how to compress, and are why the compacting drawer is worth a chain slot at all."
+}

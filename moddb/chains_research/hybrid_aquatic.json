@@ -1,0 +1,307 @@
+{
+ "mod": "hybrid_aquatic",
+ "verified_against": "[1.20.1-Forge] Hybrid Aquatic 1.6.9.jar",
+ "item_count_in_jar": 524,
+ "chain": [
+  {
+   "id": "hybrid_aquatic:fishing_net",
+   "title": "Two Sticks And String",
+   "desc": "The fishing net is the first child of the mod's root advancement and the cheapest thing it adds. It scoops small fish straight out of the water without a rod."
+  },
+  {
+   "id": "hybrid_aquatic:crab_pot",
+   "title": "Set A Trap And Leave It",
+   "desc": "Crab pots sit on the seabed and fill themselves from their own treasure table. They also appear in the mod's fishing loot, so you can catch one before you craft one."
+  },
+  {
+   "id": "hybrid_aquatic:clam",
+   "title": "Prise One Off The Rock",
+   "desc": "Clam beds generate as the block hybrid_aquatic:clams; breaking one drops the item hybrid_aquatic:clam. The mod gives it its own advancement, get_clam, hanging straight off the root."
+  },
+  {
+   "id": "hybrid_aquatic:cooked_clam",
+   "title": "Cook It Three Ways",
+   "desc": "Furnace, smoker or campfire. The whole seafood line works this way and it is the mod's answer to starving on a long dive."
+  },
+  {
+   "id": "hybrid_aquatic:barbed_hook",
+   "title": "The First Hook",
+   "desc": "Five iron nuggets. Hooks slot into a fishing rod and change what you pull up; barbed is the plain one everything else upgrades from."
+  },
+  {
+   "id": "hybrid_aquatic:magnetic_hook",
+   "title": "Iron On A Line",
+   "desc": "Iron ingot and iron nuggets. The magnetic hook drags in loot rather than fish and is the branch point for the creeper variant."
+  },
+  {
+   "id": "hybrid_aquatic:glowslime",
+   "title": "Light You Can Carry Underwater",
+   "desc": "A glow ink sac and a slimeball, or a drop from barreleye and crown jellyfish. Glowslime is the single most-used reagent in the mod."
+  },
+  {
+   "id": "hybrid_aquatic:glowstick",
+   "title": "Snap And Drop",
+   "desc": "Glowslime on a stick. Glowsticks are throwable light for a dark ocean floor and their advancement is a root child in its own right."
+  },
+  {
+   "id": "hybrid_aquatic:glowing_hook",
+   "title": "A Hook That Glows",
+   "desc": "Barbed hook plus glowslime. It attracts the deep-water fish that will not come near an ordinary line."
+  },
+  {
+   "id": "hybrid_aquatic:creepermagnet_hook",
+   "title": "The Joke Hook",
+   "desc": "Magnetic hook plus gunpowder. It has its own advancement, creeper_hook, and it does exactly what the name says."
+  },
+  {
+   "id": "hybrid_aquatic:diving_helmet",
+   "title": "Copper And A Window",
+   "desc": "Copper ingots around a glass pane. The diving set is the mod's real progression and this is where it starts - copper, not iron, which puts it early."
+  },
+  {
+   "id": "hybrid_aquatic:diving_weight",
+   "title": "Sink Faster",
+   "desc": "An iron block and iron ingots. The weight is a separate advancement from the suit and it is what lets you reach the vents at all."
+  },
+  {
+   "id": "hybrid_aquatic:diving_armor_upgrade_template",
+   "title": "Prismarine On Paper",
+   "desc": "Prismarine shards and crystals, and the template copies itself. It is also brushed out of beach archaeology sites, so you can find one before you can afford one."
+  },
+  {
+   "id": "hybrid_aquatic:glowing_diving_helmet",
+   "title": "Upgrade With Slime",
+   "desc": "Template, diving helmet and glowslime on a smithing table. The glowing set lights its own way down."
+  },
+  {
+   "id": "hybrid_aquatic:pearl",
+   "title": "Out Of An Oyster",
+   "desc": "Oyster beds generate on the seabed through the oyster_bed feature and give up pearls. The mod hangs the pearl advancement directly off its root, so this is meant to be an early find."
+  },
+  {
+   "id": "hybrid_aquatic:black_pearl",
+   "title": "The Rare One",
+   "desc": "Black pearls are the pearl advancement's only child and the reagent the reinforced diving set is smithed with. They are the mod's scarcest ordinary drop."
+  },
+  {
+   "id": "hybrid_aquatic:reinforced_diving_helmet",
+   "title": "The Deep Set",
+   "desc": "Template, diving helmet and a black pearl. Reinforced is the endgame diving armour and the reason black pearls are worth hunting."
+  },
+  {
+   "id": "hybrid_aquatic:shark_tooth",
+   "title": "Brush The Beach",
+   "desc": "Shark teeth come out of hybrid_aquatic's beach_archaeology table, brushed from suspicious sand alongside crab claws, crates and coral chunks."
+  },
+  {
+   "id": "hybrid_aquatic:prismarine_rod",
+   "title": "A Shaft Of Prismarine",
+   "desc": "The rod exists for exactly one reason, and the recipe file next to it names it: prismarine rod plus shark tooth makes a vanilla trident."
+  },
+  {
+   "id": "hybrid_aquatic:seashell_spear",
+   "title": "Nautilus On A Stick",
+   "desc": "A nautilus shell and sticks. Seashell tools are a whole material tier made from shells, and the spear is the one worth carrying."
+  },
+  {
+   "id": "hybrid_aquatic:sulfur",
+   "title": "Yellow On The Vent",
+   "desc": "Sulfur grows around hydrothermal vents as crystalline sulfur and breaks down into the powder. It also crafts into vanilla gunpowder with bone meal and coal."
+  },
+  {
+   "id": "hybrid_aquatic:hydrothermal_vent",
+   "title": "The Black Smoker",
+   "desc": "Hydrothermal vent shafts generate on the deep floor and drop the vent itself. Its own vent_drops table is what makes the deep ocean worth visiting."
+  },
+  {
+   "id": "hybrid_aquatic:depth_charge",
+   "title": "Sulfur And Iron",
+   "desc": "The depth charge is an underwater explosive and its advancement hangs off sulfur. It is the fastest way to clear a vent field."
+  },
+  {
+   "id": "hybrid_aquatic:brine_bucket",
+   "title": "Bucket The Brine",
+   "desc": "Brine is a real fluid with its own blockstate, pooling near the vents. A bucket of it plus terracotta is the only way to make brinestone."
+  },
+  {
+   "id": "hybrid_aquatic:orange_brinestone",
+   "title": "Stone From Salt",
+   "desc": "Brine bucket and orange terracotta. Three colours exist and each one opens a full polished, brick, slab, stair and wall family."
+  },
+  {
+   "id": "kill:hybrid_aquatic:coconut_crab",
+   "title": "The Biggest Crab",
+   "desc": "Coconut crabs drop a claw. Nine different crabs each drop their own claw and the mod's crab_claw advancement is a root child, so this branch runs the whole game."
+  },
+  {
+   "id": "hybrid_aquatic:coconut_crab_claw",
+   "title": "One Of Nine",
+   "desc": "Coconut, dungeness, fiddler, flower, ghost, lightfoot, spider, vampire and yeti. You need every single one and they live in nine different places."
+  },
+  {
+   "id": "hybrid_aquatic:ominous_hook",
+   "title": "All Nine Claws",
+   "desc": "One shapeless recipe consuming all nine crab claws at once. It is the single most demanding craft in the mod and its advancement is the parent of the Karkinos fight."
+  },
+  {
+   "id": "kill:hybrid_aquatic:karkinos",
+   "title": "The Crab That Fights Back",
+   "desc": "Karkinos is the mod's crab boss and the kill_karkinos advancement sits directly under ominous_hook, which is how you are meant to find it."
+  },
+  {
+   "id": "hybrid_aquatic:karkinos_claw",
+   "title": "Take Its Claw Too",
+   "desc": "Karkinos drops its own claw on top of raw crab. It is the only claw in the mod that is not part of the ominous hook recipe."
+  },
+  {
+   "id": "kill:hybrid_aquatic:shell_beast",
+   "title": "Whatever Lives In The Shell",
+   "desc": "The shell_beast advancement is a hidden challenge and its parent is ominous_conch, so the beast is summoned rather than found."
+  },
+  {
+   "id": "hybrid_aquatic:comically_large_nautilus_shell",
+   "title": "It Is Exactly What It Sounds Like",
+   "desc": "The shell beast's only unique drop, and the mod named it honestly."
+  },
+  {
+   "id": "hybrid_aquatic:argonaut",
+   "title": "A Boat Made Of Shell",
+   "desc": "Comically large nautilus shell, glowslime, a barrel, a chest, a furnace, iron and wool. The argonaut is the mod's endgame vehicle and its advancement is the last node in the tree."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "hybrid_aquatic:coconut_crab_claw",
+   "members": [
+    "hybrid_aquatic:dungeness_crab_claw",
+    "hybrid_aquatic:fiddler_crab_claw",
+    "hybrid_aquatic:flower_crab_claw",
+    "hybrid_aquatic:ghost_crab_claw",
+    "hybrid_aquatic:lightfoot_crab_claw",
+    "hybrid_aquatic:spider_crab_claw",
+    "hybrid_aquatic:vampire_crab_claw",
+    "hybrid_aquatic:yeti_crab_claw",
+    "hybrid_aquatic:lobster_claw",
+    "hybrid_aquatic:karkinos_claw"
+   ]
+  },
+  {
+   "hub": "hybrid_aquatic:cooked_clam",
+   "members": [
+    "hybrid_aquatic:cooked_mussel",
+    "hybrid_aquatic:cooked_crab",
+    "hybrid_aquatic:cooked_crayfish",
+    "hybrid_aquatic:cooked_lobster",
+    "hybrid_aquatic:cooked_lobster_tail",
+    "hybrid_aquatic:cooked_shrimp",
+    "hybrid_aquatic:cooked_tentacle",
+    "hybrid_aquatic:cooked_fish_meat",
+    "hybrid_aquatic:cooked_fish_steak",
+    "hybrid_aquatic:sirenian_steak",
+    "hybrid_aquatic:uni"
+   ]
+  },
+  {
+   "hub": "hybrid_aquatic:diving_helmet",
+   "members": [
+    "hybrid_aquatic:diving_suit",
+    "hybrid_aquatic:diving_leggings",
+    "hybrid_aquatic:diving_boots",
+    "hybrid_aquatic:glowing_diving_suit",
+    "hybrid_aquatic:glowing_diving_leggings",
+    "hybrid_aquatic:glowing_diving_boots",
+    "hybrid_aquatic:reinforced_diving_suit",
+    "hybrid_aquatic:reinforced_diving_leggings",
+    "hybrid_aquatic:reinforced_diving_boots",
+    "hybrid_aquatic:nautilus_helmet",
+    "hybrid_aquatic:nautilus_pauldrons"
+   ]
+  },
+  {
+   "hub": "hybrid_aquatic:seashell_spear",
+   "members": [
+    "hybrid_aquatic:seashell_axe",
+    "hybrid_aquatic:seashell_pickaxe",
+    "hybrid_aquatic:seashell_shovel",
+    "hybrid_aquatic:seashell_hoe",
+    "hybrid_aquatic:barbed_hook",
+    "hybrid_aquatic:magnetic_hook",
+    "hybrid_aquatic:glowing_hook",
+    "hybrid_aquatic:creepermagnet_hook",
+    "hybrid_aquatic:ominous_hook",
+    "hybrid_aquatic:fish_food",
+    "hybrid_aquatic:diving_weight"
+   ]
+  },
+  {
+   "hub": "hybrid_aquatic:oak_crate",
+   "members": [
+    "hybrid_aquatic:spruce_crate",
+    "hybrid_aquatic:birch_crate",
+    "hybrid_aquatic:jungle_crate",
+    "hybrid_aquatic:acacia_crate",
+    "hybrid_aquatic:dark_oak_crate",
+    "hybrid_aquatic:mangrove_crate",
+    "hybrid_aquatic:cherry_crate",
+    "hybrid_aquatic:bamboo_crate",
+    "hybrid_aquatic:hybrid_crate"
+   ]
+  },
+  {
+   "hub": "hybrid_aquatic:anemone",
+   "members": [
+    "hybrid_aquatic:giant_green_anemone",
+    "hybrid_aquatic:strawberry_anemone",
+    "hybrid_aquatic:tube_sponge",
+    "hybrid_aquatic:glass_sponge",
+    "hybrid_aquatic:harp_sponge",
+    "hybrid_aquatic:ping_pong_sponge",
+    "hybrid_aquatic:oyster_block",
+    "hybrid_aquatic:giant_clam",
+    "hybrid_aquatic:tube_worm",
+    "hybrid_aquatic:bone_worms",
+    "hybrid_aquatic:marine_snow",
+    "hybrid_aquatic:message_in_a_bottle"
+   ]
+  },
+  {
+   "hub": "hybrid_aquatic:great_white_shark_plushie",
+   "members": [
+    "hybrid_aquatic:basking_shark_plushie",
+    "hybrid_aquatic:bull_shark_plushie",
+    "hybrid_aquatic:frilled_shark_plushie",
+    "hybrid_aquatic:hammerhead_shark_plushie",
+    "hybrid_aquatic:thresher_shark_plushie",
+    "hybrid_aquatic:tiger_shark_plushie",
+    "hybrid_aquatic:whale_shark_plushie",
+    "hybrid_aquatic:blue_hatxolotl",
+    "hybrid_aquatic:brown_hatxolotl",
+    "hybrid_aquatic:cyan_hatxolotl",
+    "hybrid_aquatic:gold_hatxolotl",
+    "hybrid_aquatic:pink_hatxolotl",
+    "hybrid_aquatic:moon_jellyfish_hat",
+    "hybrid_aquatic:eel_scarf"
+   ]
+  },
+  {
+   "hub": "hybrid_aquatic:orange_brinestone",
+   "members": [
+    "hybrid_aquatic:red_brinestone",
+    "hybrid_aquatic:yellow_brinestone",
+    "hybrid_aquatic:polished_orange_brinestone",
+    "hybrid_aquatic:orange_brinestone_bricks",
+    "hybrid_aquatic:chiseled_orange_brinestone",
+    "hybrid_aquatic:chimneystone",
+    "hybrid_aquatic:polished_chimneystone",
+    "hybrid_aquatic:schist",
+    "hybrid_aquatic:polished_schist",
+    "hybrid_aquatic:shorestone",
+    "hybrid_aquatic:barnacle_shorestone",
+    "hybrid_aquatic:white_sand",
+    "hybrid_aquatic:aerated_sand",
+    "hybrid_aquatic:grassy_sand"
+   ]
+  }
+ ],
+ "notes": "NAMESPACE - READ THIS FIRST. The mod's modId is hybrid_aquatic with an UNDERSCORE (META-INF/mods.toml: modId = \"hybrid_aquatic\"), and every asset and data path in the jar is assets/hybrid_aquatic/ and data/hybrid_aquatic/. moddb.json records this mod's ids with a HYPHEN, as hybrid-aquatic:clownfish, hybrid-aquatic:shark_tooth and so on - those ids are WRONG and would resolve to nothing in game. This file is therefore named hybrid_aquatic.json, for the modid as read from mods.toml, because that is what a jar scan matches against. The Modrinth SLUG is hybrid-aquatic with a hyphen, and moddb.json is keyed on that slug - so a consumer looking this mod up by its moddb key must map hybrid-aquatic -> hybrid_aquatic. Every id in this file uses hybrid_aquatic:. That is the single most important correction in this file. The Modrinth slug is hybrid-aquatic (hyphen), which is where the confusion comes from. LOADER: modLoader = \"kotlinforforge\", forge [47.4.10,), minecraft [1.20.1,1.22) - a genuine 1.20.1 Forge build, but note it needs Kotlin for Forge, geckolib, biolith, curios and lithostitched as mandatory dependencies. VERIFICATION, TWO PASSES: pass A took the 531 assets/hybrid_aquatic/models/item stems INTERSECT the item./block. lang keys and gave 521. Pass B independently rebuilt from recipe results, loot-table entry names, blockstates and lang keys and gave 596. All 75 differences were inspected. WIDENING ACCEPTED, 3 ids, each with the same proof shape: hybrid_aquatic:clam, hybrid_aquatic:mussel and hybrid_aquatic:hydrothermal_vent each have an item model and are each named as the drop inside a block loot table, but have no lang key of their own - because the BLOCK is named differently from the ITEM. data/hybrid_aquatic/loot_tables/blocks/clams.json drops hybrid_aquatic:clam, blocks/mussels.json drops hybrid_aquatic:mussel, and blocks/hydrothermal_vent_shaft.json drops hybrid_aquatic:hydrothermal_vent. The plural block has the lang key; the singular item does not. All three are confirmed independently by cooking recipes (cooked_clam and cooked_mussel each have three) and by moddb, which lists hybrid-aquatic:hydrothermal_vent as a quested item. Final count 524. WIDENING REJECTED: 25 *_coral_wall_fan blockstates are the wall-mounted placement state of the corresponding coral fan item, not separate items; chimney_base, chimney_middle, template_anemone, template_crab_pot, template_message_in_a_bottle, template_plushie and ominous_conch_tooting are parent/template/animation models; bull_kelp_plant, delesseria_plant, sargassum_plant, tall_red_algae and tall_sea_lettuce are the second-half blockstates of two-tall plants; small_fish, medium_fish and large_fish are item TAGS used as recipe ingredients, not items; gameplay/*_crate_treasure and gameplay/vent_drops are nested loot tables; and six *_spawn_egg lang keys (argonaut, cavitation_bubble, depth_charge, small_tnt, starfish_projectile, beakling) have lang entries but no item model at all. THE HONEST NUMBER IS 393, NOT 524. 131 of the ids are spawn eggs and every one has zero references anywhere in data/ - no recipe, no loot table, no trade. They are creative-tab only and none appears in this file. ENTITIES: 133 entity.hybrid_aquatic.* lang keys exist, and 108 of them have real entity loot tables under data/hybrid_aquatic/loot_tables/entities/, which is definitive. The kill: steps here use only mobs from that 108: coconut_crab (drops coconut_crab_claw), karkinos (karkinos_claw and raw_crab) and shell_beast (comically_large_nautilus_shell and raw_tentacle). Deliberately NOT used as kill targets: cavitation_bubble, depth_charge, small_tnt and starfish_projectile, which are projectiles and explosives with entity lang keys, and barracuda, comb_jelly, corydora, cosmic_jellyfish, firework_jellyfish, garden_eel, giant_isopod, hermit_crab, karcinogen, karcinoma, manta_ray, orca, otter, pupfish, sea_angel, seadragon, slickhead, tripod_fish and umbrella_octopus, which have lang keys and spawn eggs but NO loot table, so killing them yields nothing. DROPPED AS UNCOMPLETABLE: hybrid_aquatic:ominous_conch. It has a model, a lang key, an OminousConchItem class, an instrument tag and TWO advancements (ominous_conch as a goal, and shell_beast as its hidden child), but it has no recipe, no loot table, no chest entry and no structure placement anywhere in the jar. The only other reference is inside HermitCrabEntityModel.class, which strongly suggests hermit crabs carry it - but hermit_crab has no loot table either, so there is no verifiable survival source and a quest for it would be a dead end. The shell_beast kill step is kept, because the advancement itself is the verification, and the conch is described in prose rather than asked for as an id. OBTAINABILITY, the cases that needed chasing: hybrid_aquatic:brine_bucket has no recipe and no loot table but brine is a real fluid with its own blockstate (assets/hybrid_aquatic/blockstates/brine.json) and the bucket is consumed by all three brinestone recipes - it is a standard fluid bucket. hybrid_aquatic:pearl and hybrid_aquatic:black_pearl appear in NO loot table at all; their only recipes are the circular pearl<->pearl_block and black_pearl<->black_pearl_block pairs, so neither recipe is a source. They are obtained from oyster beds (worldgen/configured_feature/oyster_bed.json places oyster_block) through code, and the mod's own advancement tree - root -> pearl -> black_pearl - plus the four reinforced_diving_*_upgrade smithing recipes that consume black_pearl are the evidence that they are meant to be gettable. A mod does not gate its best armour behind an item it never gives you. hybrid_aquatic:shark_tooth, all the crab claws, the ten crates, coral_chunk, cuttlebone, sea_urchin_spine and diving_armor_upgrade_template all come out of loot_tables/gameplay/beach_archaeology.json, which is brushing suspicious sand on beaches. GRAPH: the chain follows the mod's own 33-node advancement tree exactly - root branches into fishing_net (-> diving_suit -> diving_upgrade -> glowing/reinforced, and -> hook -> creeper_hook, and -> diving_weight), glowstick (-> buoy, -> sulfur -> depth_charge), pearl (-> black_pearl), nautilus_shell (-> seashell_tools, -> conduit, -> ominous_conch -> shell_beast -> argonaut), crab_claw (-> ominous_hook -> kill_karkinos), get_clam (-> plant_clam, -> kill_sirenian), coral_chunk (-> coral_tools), turtle_scute (-> turtle_set) and bigger_boat (-> trident). CONSENSUS CONFLICT, resolved in favour of the jar: moddb.json lists 9 ids for this mod, all with the hyphen namespace. Rewritten with the underscore, all 9 stems (clownfish, shark_tooth, coconut_crab_claw, glow_slime, fishing_net, pearl, coral_axe, hydrothermal_vent, ominous_hook) resolve - EXCEPT hybrid-aquatic:glow_slime, which does not exist under either namespace; the real id is hybrid_aquatic:glowslime, one word. DESIRABILITY: 17 *_slab, 17 *_stairs and 11 *_wall ids plus the polished and brick variants of five stone families are all real, and all are kept out of the spine; the stone wheel carries the base and polished forms only. 94 coral ids (live, dead and bleached variants of thirteen coral types, each as block, fan and wall fan) are the single largest family in the mod and are deliberately NOT given a wheel - at 94 members it would be four wheels of nothing but coral, and the coral_chunk/coral_tools advancement branch is better served by the tool wheel."
+}

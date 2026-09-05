@@ -1,0 +1,495 @@
+{
+ "mod": "occultism",
+ "ids_in_jar": 141,
+ "videos": [
+  {
+   "title": "Occultism Mod Basics: All The Mods 7 Tutorial",
+   "channel": "StonemanCraft",
+   "views": 63968,
+   "duration": 343,
+   "id": "6NMeXwkD4lY",
+   "chars": 4898
+  }
+ ],
+ "items": {
+  "occultism:otherstone": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.319,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "occultism:spirit_fire": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.1465,
+   "praise": 3,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "occultism:dictionary_of_spirits": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.0423,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "occultism:sacrificial_bowl": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3595,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "occultism:obsidian_dust": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8887,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "occultism:purified_ink": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7493,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "occultism:otherworld_sapling": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2112,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "occultism:burnt_otherstone": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4045,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "occultism:chalk_white": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.47,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "occultism:tallow": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5381,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "occultism:otherworld_ashes": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4503,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "occultism:datura_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0547,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "occultism:otherworld_sapling_natural": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2091,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "occultism:raw_silver": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7288,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "occultism:chalk_white_impure": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4684,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "items_by_display_name": {
+  "occultism:otherstone": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.319,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Otherstone"
+  },
+  "occultism:spirit_fire": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.1465,
+   "praise": 3,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Spiritfire"
+  },
+  "occultism:datura": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0547,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Demon's Dream"
+  },
+  "occultism:sacrificial_bowl": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3595,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Sacrificial Bowl"
+  },
+  "occultism:obsidian_dust": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8887,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Obsidian Dust"
+  },
+  "occultism:purified_ink": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7493,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Purified Ink"
+  },
+  "occultism:otherworld_sapling": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2112,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Otherworld Sapling"
+  },
+  "occultism:burnt_otherstone": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4045,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Burnt Otherstone"
+  },
+  "occultism:chalk_white": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.47,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "White Chalk"
+  },
+  "occultism:chalk_white_impure": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4684,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Impure White Chalk"
+  },
+  "occultism:datura_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0547,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Demon's Dream Seeds"
+  },
+  "occultism:otherworld_ashes": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4503,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Otherworld Ashes"
+  },
+  "occultism:otherworld_sapling_natural": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2091,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Unstable Otherworld Sapling"
+  },
+  "occultism:raw_silver": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7288,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Raw Silver"
+  }
+ },
+ "human_notes": {
+  "_confidence": "GOOD for the opening chain. 6NMeXwkD4lY (StonemanCraft, 'Occultism Mod Basics') is native English and transcribed cleanly; it walks the entire path from nothing to a first bound demon, which is exactly the part quest ordering needs. It is an All The Mods video, so its closing minutes drift into Mekanism ore processing -- ignore those. Occultism's own advancements are a FLAT list of craft/summon triggers all parented to one root, so they give no ordering at all; this video is the ordering source.",
+  "order": [
+   {
+    "claim": "It all starts with Demon's Dream Seeds, and you get them by breaking grass. Plant them on farmland, bonemeal them, and harvest Demon's Dream fruit -- everything else in the mod is downstream of this crop.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:datura_seeds",
+     "occultism:datura"
+    ],
+    "note": "Demon Dream seeds drop from breaking grass, and bone meal loops multiply both seeds and fruit quickly."
+   },
+   {
+    "claim": "The Dictionary of Spirits is the guidebook and you want it immediately -- it is also the tool that previews ritual circles in the world before you build them.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:dictionary_of_spirits"
+    ],
+    "note": "The Dictionary of Spirits crafts from demon dream seeds plus a book."
+   },
+   {
+    "claim": "Spiritfire is the mod's furnace and it comes second. Drop Demon's Dream fruit on the ground, set it alight, and you get a purple fire that never goes out. You do NOT need netherrack under it. Almost every early material is made by throwing something into this fire.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:spirit_fire",
+     "occultism:datura"
+    ],
+    "note": "Spirit fire: drop a demon dream fruit on the ground and light it. The purple flame never goes out and needs no netherrack."
+   },
+   {
+    "claim": "Otherworld materials are next: oak saplings thrown into Spiritfire become Unstable Otherworld Saplings, and andesite thrown in becomes Otherstone. Otherstone and Otherworld Wood are the two building materials the whole ritual setup is made from.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:otherworld_sapling_natural",
+     "occultism:otherstone",
+     "occultism:otherworld_log",
+     "occultism:spirit_fire"
+    ],
+    "note": "Throw oak saplings into spirit fire for unstable otherworld saplings, and andesite for otherstone."
+   },
+   {
+    "claim": "From Otherstone you make the Sacrificial Bowls. You need four plain ones and one Golden Sacrificial Bowl -- the golden one is the one the ritual actually keys off.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:sacrificial_bowl",
+     "occultism:golden_sacrificial_bowl",
+     "occultism:otherstone"
+    ],
+    "note": "Otherstone crafts sacrificial bowls; the golden sacrificial bowl is the one rituals centre on."
+   },
+   {
+    "claim": "Chalk is the other half of a ritual circle. Burn Otherworld Wood in Spiritfire for Otherworld Ashes, three ashes give Impure White Chalk, and throwing that back into Spiritfire gives usable White Chalk.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:otherworld_ashes",
+     "occultism:chalk_white_impure",
+     "occultism:chalk_white",
+     "occultism:otherworld_log",
+     "occultism:spirit_fire"
+    ],
+    "note": "Otherworld wood burned in spirit fire yields otherworld ashes; three ashes make impure white chalk, which spirit fire refines to usable chalk."
+   },
+   {
+    "claim": "Candles come from Tallow, and Tallow comes from killing animals with the Butcher Knife. Every ritual circle needs four candles, so make the knife before you plan a ritual.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:tallow",
+     "occultism:candle_white",
+     "occultism:butcher_knife"
+    ],
+    "note": "Tallow for candles comes from butchering pigs, cows, horses, sheep or llamas with the butcher knife."
+   },
+   {
+    "claim": "The first ritual is summoning a Foliot, and its cost is a Book of Binding plus raw ores. Purified Ink is black dye thrown into Spiritfire.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:book_of_binding_foliot",
+     "occultism:purified_ink",
+     "occultism:book_of_binding_empty"
+    ],
+    "note": "The Book of Binding (Foliot) needs purified ink - black dye thrown into spirit fire - and its ritual consumes raw gold, copper, silver and iron."
+   }
+  ],
+  "gates": [
+   {
+    "claim": "YOU CANNOT SEE OTHERWORLD TREES WITH NORMAL EYES. Eat a Demon's Dream fruit first -- only while you are in that hallucinating state do the saplings and logs become visible and harvestable. If a tree looks like plain oak and gives plain oak, you are not under the effect. Otherworld Goggles are the permanent replacement for eating fruit.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:datura",
+     "occultism:otherworld_log",
+     "occultism:otherworld_sapling_natural",
+     "occultism:otherworld_goggles"
+    ],
+    "note": "Otherworld logs disguise themselves as oak; they are only visible and harvestable during the dream fruit's dizzying Third Eye state."
+   },
+   {
+    "claim": "Unstable Otherworld Saplings will not grow if anything is next to them. Leave a gap of at least one block on every side or they simply never sprout.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:otherworld_sapling_natural",
+     "occultism:otherworld_sapling"
+    ],
+    "note": "Otherworld saplings refuse to grow with blocks adjacent - leave a block of clearance and they behave."
+   },
+   {
+    "claim": "A Book of Binding does nothing until you bind it to your Dictionary of Spirits. If your ritual refuses to start even though the circle is complete and the book is in the bowl, this is why.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:book_of_binding_foliot",
+     "occultism:book_of_binding_bound_foliot",
+     "occultism:dictionary_of_spirits"
+    ],
+    "note": "A fresh Book of Binding does nothing until it has been bound to the Dictionary of Spirits."
+   },
+   {
+    "claim": "Use the Dictionary of Spirits to place the circle preview before you draw anything. Looking up or down moves the preview up or down, and right-clicking pins it where you want it -- then build to the outline.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:dictionary_of_spirits",
+     "occultism:chalk_white",
+     "occultism:candle_white"
+    ],
+    "note": "Ritual circles place from the book's preview, which follows the player's gaze up and down; right-click fixes the circle where wanted."
+   },
+   {
+    "claim": "Rituals are slow. The circle consumes its sacrifices over a long stretch of real time, so start one and go do something else rather than standing there.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:golden_sacrificial_bowl",
+     "occultism:sacrificial_bowl"
+    ],
+    "note": "Ritual offerings take a while to be consumed from the bowls - slow is normal, not broken."
+   }
+  ],
+  "bosses": [],
+  "traps": [
+   {
+    "claim": "Make a lot of chalk, and enchant it. Chalk is consumed constantly once you start doing rituals, and it takes Mending and Unbreaking -- a guide's explicit recommendation.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:chalk_white",
+     "occultism:brush"
+    ],
+    "note": "Chalk wears out with use - keep spares for sustained ritual work, and enchant it (Mending and Unbreaking apply)."
+   },
+   {
+    "claim": "Eating the fruit does not always take effect on the first try. If the trees still look ordinary, eat another one rather than assuming your setup is wrong.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:datura"
+    ],
+    "note": "The dream fruit's effect does not always take on the first try - eat another if the Third Eye fails to trigger."
+   }
+  ],
+  "signature": [
+   {
+    "claim": "Bound demons doing your work for you is the point of the mod. The first one you summon is a Foliot Crusher for ore doubling; you talk to it, and you can right-click it to open its inventory like a machine.",
+    "video": "6NMeXwkD4lY",
+    "ids": [
+     "occultism:book_of_binding_foliot",
+     "occultism:golden_sacrificial_bowl"
+    ],
+    "note": "A summoned Foliot is a real entity: it can be approached, spoken to, and right-clicked to open its inventory."
+   },
+   {
+    "claim": "The demon tiers are the mod's progression ladder and each needs its own Book of Binding: Foliot, then Djinni, then Afrit, then Marid. Later tiers unlock the Dimensional Storage system and the ore-mining demons.",
+    "video": null,
+    "ids": [
+     "occultism:book_of_binding_foliot",
+     "occultism:book_of_binding_djinni",
+     "occultism:book_of_binding_afrit",
+     "occultism:book_of_binding_marid",
+     "occultism:miner_djinni_ores",
+     "occultism:miner_afrit_deeps"
+    ],
+    "note": "(mod structure, corroborated by the jar's advancement list: craft_miner_foliot_unspecialized, craft_miner_djinni_ores, craft_miner_afrit_deeps, craft_miner_marid_master, and the storage stabilizer tiers)"
+   },
+   {
+    "claim": "Dimensional Storage is Occultism's headline late system -- a storage actuator backed by stabilizer tiers and remotely accessible through Stable Wormholes, all of it powered by bound spirits rather than by energy.",
+    "video": null,
+    "ids": [
+     "occultism:storage_controller",
+     "occultism:storage_controller_base",
+     "occultism:storage_stabilizer_tier1",
+     "occultism:storage_stabilizer_tier2",
+     "occultism:storage_stabilizer_tier3",
+     "occultism:stable_wormhole"
+    ],
+    "note": "(mod structure, from the jar's advancement list: craft_storage_controller_base, craft_dimensional_matrix, craft_stabilizer_tier1..4, craft_stable_wormhole, craft_storage_remote)"
+   },
+   {
+    "claim": "Familiars are a whole parallel collection -- the jar carries a dedicated familiar advancement tree with bats, beavers, beholders, deer, devils, dragons, fairies, chimeras and more, each with its own ritual.",
+    "video": null,
+    "ids": [
+     "occultism:soul_gem",
+     "occultism:soul_gem_empty",
+     "occultism:satchel"
+    ],
+    "note": "(jar advancement tree occultism:occultism/familiar/root)"
+   }
+  ]
+ }
+}

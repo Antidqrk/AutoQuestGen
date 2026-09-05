@@ -1,0 +1,124 @@
+{
+ "mod": "mcwdoors",
+ "verified_against": "mcw-doors-1.1.5-mc1.20.1forge.jar",
+ "item_count_in_jar": 259,
+ "chain": [
+  {
+   "id": "mcwdoors:print_oak",
+   "title": "A Paper Pattern",
+   "desc": "A vanilla oak door and four sheets of paper give four Classic Door Prints. Prints are this mod's real progression: twelve of the door styles cannot be crafted at all until you have made the print for that style, and each print is made from the matching vanilla door."
+  },
+  {
+   "id": "mcwdoors:acacia_classic_door",
+   "title": "The Print, Spent",
+   "desc": "A Classic Door Print between two planks. One print plus planks gives one door in that wood, which is why the print families run ten or eleven wide with the print itself sitting upstream of all of them."
+  },
+  {
+   "id": "mcwdoors:print_mystic",
+   "title": "Eleven More Patterns",
+   "desc": "The other prints follow the same shape from their own vanilla door: mystic, nether, swamp, waffle, whispering, and the woods used as pattern names - spruce for cottage, birch for paper, jungle for beach, dark oak for four panel, acacia for tropical, bamboo for mesh."
+  },
+  {
+   "id": "mcwdoors:oak_barn_door",
+   "title": "No Print Needed",
+   "desc": "Two sticks over four planks give two Barn Doors. Roughly half the door styles skip the print system entirely and are crafted straight from planks, glass panes, iron bars or paper."
+  },
+  {
+   "id": "mcwdoors:oak_glass_door",
+   "title": "Glass in the Frame",
+   "desc": "Planks and glass panes, three at a time. Glass, barn glass and bark glass doors are three separate eleven-wide families that all take panes."
+  },
+  {
+   "id": "mcwdoors:oak_japanese_door",
+   "title": "Shoji",
+   "desc": "Paper over planks, three at a time. The Shoji Door and the Shoji Whole Door slide rather than swing, and the jar ships a dedicated open-shoji sound for them."
+  },
+  {
+   "id": "mcwdoors:oak_stable_door",
+   "title": "The Top Half Opens",
+   "desc": "Iron bars over planks, three at a time. Stable and Stable Horse doors split into upper and lower leaves."
+  },
+  {
+   "id": "mcwdoors:oak_western_door",
+   "title": "Swinging Saloon Doors",
+   "desc": "Planks and a slab in an offset pattern, three at a time - the only door in the mod that is waist-high."
+  },
+  {
+   "id": "mcwdoors:metal_door",
+   "title": "Redstone Only",
+   "desc": "Iron ingots around a nugget, two at a time. The mod's own hint is explicit: metal doors 'Require Redstone Power to open'. Hospital, reinforced, warning and windowed are four more of them."
+  },
+  {
+   "id": "mcwdoors:jail_door",
+   "title": "Six Iron Bars",
+   "desc": "Six iron bars in a door shape. The Iron and Wooden Portcullis are the same idea at three-wide, and none of the three opens by hand."
+  },
+  {
+   "id": "mcwdoors:sliding_glass_door",
+   "title": "It Slides Aside",
+   "desc": "Iron ingots and glass panes in a column, two at a time. The Store Door is the same recipe one pane wider."
+  },
+  {
+   "id": "mcwdoors:garage_white_door",
+   "title": "Roll It Down",
+   "desc": "The mod's own hint says it all: 'Place only one on the ceiling and when opened it will roll down'. Dyeing the white one gives black, gray and silver, eight at a time."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mcwdoors:print_spruce",
+   "members": [
+    "mcwdoors:print_birch",
+    "mcwdoors:print_jungle",
+    "mcwdoors:print_acacia",
+    "mcwdoors:print_dark_oak",
+    "mcwdoors:print_bamboo",
+    "mcwdoors:print_nether",
+    "mcwdoors:print_swamp",
+    "mcwdoors:metal_windowed_door",
+    "mcwdoors:print_waffle",
+    "mcwdoors:print_whispering",
+    "mcwdoors:metal_hospital_door",
+    "mcwdoors:metal_reinforced_door",
+    "mcwdoors:metal_warning_door"
+   ]
+  },
+  {
+   "hub": "mcwdoors:spruce_classic_door",
+   "members": [
+    "mcwdoors:birch_classic_door",
+    "mcwdoors:jungle_classic_door",
+    "mcwdoors:dark_oak_classic_door",
+    "mcwdoors:mangrove_classic_door",
+    "mcwdoors:cherry_classic_door",
+    "mcwdoors:bamboo_classic_door",
+    "mcwdoors:crimson_classic_door",
+    "mcwdoors:warped_classic_door",
+    "mcwdoors:oak_mystic_door",
+    "mcwdoors:oak_nether_door",
+    "mcwdoors:oak_swamp_door",
+    "mcwdoors:oak_waffle_door",
+    "mcwdoors:oak_whispering_door"
+   ]
+  },
+  {
+   "hub": "mcwdoors:spruce_barn_door",
+   "members": [
+    "mcwdoors:birch_barn_door",
+    "mcwdoors:jungle_barn_door",
+    "mcwdoors:acacia_barn_door",
+    "mcwdoors:dark_oak_barn_door",
+    "mcwdoors:mangrove_barn_door",
+    "mcwdoors:cherry_barn_door",
+    "mcwdoors:bamboo_barn_door",
+    "mcwdoors:crimson_barn_door",
+    "mcwdoors:warped_barn_door",
+    "mcwdoors:oak_barn_glass_door",
+    "mcwdoors:oak_bark_glass_door",
+    "mcwdoors:oak_japanese2_door",
+    "mcwdoors:oak_stable_head_door"
+   ]
+  }
+ ],
+ "notes": "MACAW'S MODS SHARE ONE STRUCTURE: A SMALL NUMBER OF DISTINCT BLOCK TYPES CROSSED WITH A LARGE MATERIAL TABLE. The chain below is one step per distinct RECIPE SHAPE, not one per id, and the material tables go to wheels. MODDB: no consensus signal - moddb.json contains no key for any Macaw's mod - so every ordering here is the recipe graph alone and there is no conflict to record. Verified against mcw-doors-1.1.5-mc1.20.1forge.jar (Modrinth version 1.1.5, loaders=[forge], game_versions=[1.20.1]). ID DETECTION: 260 item models, 246 blockstates, 282 lang block./item. keys; models INTERSECT lang = 259, the count used. THIS JAR CARRIES THE MOST LANG NOISE IN THE SLICE - 23 lang keys with no model, no blockstate, no recipe and no loot table - AND IT IS TWO SEPARATE PROBLEMS. Twenty-two of them are pale_oak_* (bamboo, bark_glass, barn, barn_glass, beach, classic, cottage, four_panel, glass, japanese, japanese2, modern, mystic, nether, paper, stable, stable_head, swamp, tropical, waffle, western doors) - 1.21 wood shipped early against blocks this 1.20.1 build does not register - plus dark_oak_four_panel_door, which is missing for the same reason the trapdoor mod omits its same-wood variants: print_dark_oak IS the Four Panel Door Print and is made from a vanilla dark oak door, so the dark oak four-panel door would be redundant. The twenty-third extra key is garage_remote, a planned item with a name and nothing else - no model, no recipe, no class-side registration reachable from data. NARROWED for the one model-only stem, mcwdoors:cherry_waffle_door, which has an item model but no lang key, no blockstate and no recipe - an orphan asset. THE PRINT SYSTEM IS THIS MOD'S REAL PROGRESSION and it is why this file has a chain at all: twelve print items, each crafted from four paper plus the matching VANILLA door, and each one gating a whole ten- or eleven-wide wood family that cannot otherwise be made. print_oak is Classic, print_spruce is Cottage, print_birch is Paper, print_jungle is Beach, print_dark_oak is Four Panel, print_acacia is Tropical, print_bamboo is Mesh, and mystic, nether, swamp, waffle and whispering are named for their styles. The eleven other door styles - barn, barn glass, bark glass, glass, japanese, japanese2, modern, stable, stable head, western and the metal and garage families - need no print. TWO IDS ARE VERIFIED BUT HAVE NO RECIPE: mcwdoors:crimson_nether_door and mcwdoors:warped_mystic_door. Both have an item model, a lang key, a blockstate and a loot table but no recipe file, while every other wood in both families does. They are gaps in the mod's recipe generation, not intentional omissions like the print-name doors, and they should not be quest targets. DISTINCT RECIPE SHAPES: 49 name-stems collapse to about 12 - print, print-gated door, barn, glass, bark glass, japanese, stable, western, modern, the metal family, the portcullis pair and the garage dye chain. Verified yields: print 4, print-gated door 1, barn 2, glass 3, bark glass 3, japanese 3, stable 3, western 3, metal_door 2, jail_door 1, portcullis 3, sliding_glass_door 2, store_door 2, garage dye 8. MECHANICS: mcwdoors.metaldoor.desc = 'Requires Redstone Power to open' and mcwdoors.garage.desc = 'Place only one on the ceiling and when opened it will roll down'; the jar also ships subtitle.mcwdoors.garage and subtitle.mcwdoors.shoji. DROPS: the 22 pale_oak keys, dark_oak_four_panel_door, garage_remote, the cherry_waffle_door orphan model, and crimson_nether_door and warped_mystic_door as recipeless."
+}

@@ -1,0 +1,359 @@
+[
+ {
+  "mod": "jei",
+  "verified_against": "jei-1.20.1-forge-15.20.0.112.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Zero item models, zero blockstates, zero item or block lang keys, zero recipes, zero loot tables. The jar has one asset namespace (jei) holding only GUI textures and lang strings, and NO data/ directory at all. JEI is a recipe browser and registers nothing into the game. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "jade",
+  "verified_against": "Jade-1.20.1-Forge-11.13.2.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Zero item models, zero blockstates, zero lang item or block keys, zero recipes, zero loot tables, no data/ directory. Jade is a look-at HUD that reads other mods' blocks; it adds nothing obtainable. Note it is NOT the same mod as the Botania addon 'mana-jade' and must not be conflated with it. Exclude entirely."
+ },
+ {
+  "mod": "theoneprobe",
+  "verified_against": "theoneprobe-1.20.1-10.0.3.jar",
+  "items_in_jar": 7,
+  "questable": true,
+  "reason": "THE ONE EXCEPTION IN THIS AUDIT. 7 registered items with item.theoneprobe.* lang keys and 6 recipes in data/theoneprobe/recipes. Five are genuinely obtainable and are chained in chains_research/theoneprobe.json: probenote (paper + redstone), probe (comparator + gold nugget + redstone), and iron/gold/diamond_helmet_probe via the mod's own theoneprobe:probe_helmet recipe type. Two are NOT obtainable and were dropped: creativeprobe has an item model and lang key but no recipe and no loot table anywhere, and probe_goggles is gated on \"conditions\": [{\"type\": \"forge:mod_loaded\", \"modid\": \"baubles\"}] - Baubles does not exist on 1.20.1 - and is additionally written with the dead 1.12-era forge:ore_shaped serialiser and a forge:ore_dict key, so the recipe cannot parse on this version even with Baubles present. probe_goggles registers regardless, which is exactly the kind of permanently uncompletable quest a registry-only scan would generate."
+ },
+ {
+  "mod": "journeymap",
+  "verified_against": "journeymap-forge-1.20.1-6.0.2.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Zero item models, zero blockstates, zero lang item or block keys, zero recipes, zero loot tables, no data/ directory. The jar carries three asset namespaces (journeymap, minecraft, quark) but they hold only map icons, GUI textures and a Quark compat resource - no registered content. JourneyMap's waypoints are save data, not items. Confirms the brief's expectation that JourneyMap has none. Exclude entirely."
+ },
+ {
+  "mod": "xaerominimap",
+  "verified_against": "xaerominimap-forge-1.20.1-26.4.2.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Zero item models, zero blockstates, zero lang item or block keys, zero recipes, zero loot tables, no data/ directory. Asset namespaces are xaerominimap and xaerobetterpvp, both GUI and icon assets only. THE WAYSTONE-ISH ITEM WAS SPECIFICALLY LOOKED FOR AND DOES NOT EXIST HERE: Xaero's waypoints are client-side entries in the mod's own save folder, created from the waypoint GUI, with no item form and no in-world block on this build. Exclude entirely."
+ },
+ {
+  "mod": "xaeroworldmap",
+  "verified_against": "xaeroworldmap-forge-1.20.1-1.45.0.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Zero item models, zero blockstates, zero lang item or block keys, zero recipes, zero loot tables, no data/ directory. Single asset namespace xaeroworldmap, GUI only. This is the mod the brief called 'xaerms'. Same finding as the minimap: waypoints are client save data, not items. Exclude entirely."
+ },
+ {
+  "mod": "ftbchunks",
+  "verified_against": "ftb-chunks-forge-2001.3.8.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Zero item models, zero blockstates, zero lang item or block keys, zero recipes, zero loot tables. There IS a data/ftbchunks directory but it holds only map-colour and biome-tint configuration. The jar carries sixteen asset namespaces (abundance, ars_nouveau, autumnity, betterendforge, biomesoplenty, byg, environmental, ftbchunks, integrateddynamics, minecraft, mininggadgets, myrtrees, pneumaticcraft, projectred-exploration, psi, traverse) which are map-rendering colour overrides for other mods' blocks, NOT registered content - a namespace count is not an item count and must not be read as one. Claims are chunk data. Exclude entirely."
+ },
+ {
+  "mod": "ftblibrary",
+  "verified_against": "ftb-library-forge-2001.2.13.jar",
+  "items_in_jar": 1,
+  "questable": false,
+  "reason": "One item model, assets/ftblibrary/models/item/fluid_container.json, with lang keys item.ftblibrary.fluid_container ('Fluid Container') and item.ftblibrary.fluid_container.use ('Right-click on a tank to empty the container'). It is registered but NOT obtainable: the jar has NO data/ directory at all, so there is no recipe and no loot table, and a constant-pool scan of every class in the jar finds no reference to 'fluid_container' that grants it. It exists to back the Select Fluid GUI that FTB Quests and other FTB mods use. One incidental unobtainable item is not questable content - this is exactly the case the brief warns about, where a generator would manufacture a filler quest from a GUI helper. Exclude entirely."
+ },
+ {
+  "mod": "kubejs",
+  "verified_against": "kubejs-forge-2001.6.5-build.26.jar",
+  "items_in_jar": 1,
+  "questable": false,
+  "reason": "One item model, assets/kubejs/models/item/generated_bucket.json, with NO lang key, NO recipe and NO loot table. It is a parent model template that script-generated fluid buckets inherit from, not a registered item. data/kubejs contains only example_item_texture.png and example_block_texture.png, two documentation images. KubeJS is a scripting platform: everything it can add is defined by pack scripts at runtime and is therefore invisible to a jar scan by design. Exclude entirely, and note that any kubejs: namespaced item seen in a pack belongs to that pack's scripts and must be read from the pack, never from this jar."
+ },
+ {
+  "mod": "crafttweaker",
+  "verified_against": "CraftTweaker-forge-1.20.1-14.0.60.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Zero item models, zero blockstates, zero lang item or block keys, zero recipes, zero loot tables. data/crafttweaker exists but holds only tag and script-loading scaffolding. Like KubeJS this is a scripting layer that modifies other mods' recipes at runtime and registers nothing itself. Exclude entirely."
+ },
+ {
+  "mod": "configured",
+  "verified_against": "configured-forge-1.20.1-2.2.3.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Zero item models, zero blockstates, zero lang item or block keys, zero recipes, zero loot tables, no data/ directory. Single asset namespace configured, GUI textures and lang only. It is an in-game config editor screen. Note for the fetcher: Configured has NO 1.20.1 Forge build on Modrinth and had to be taken from CurseForge project 457570. Exclude entirely."
+ },
+ {
+  "mod": "clumps",
+  "verified_against": "Clumps-forge-1.20.1-12.0.0.4.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "The most absolute result in the audit: the jar has NO assets/ directory and NO data/ directory whatsoever - zero asset namespaces, zero data namespaces. Clumps is a pure behaviour patch that groups experience orbs to cut entity count. There is nothing in it to quest. Exclude entirely."
+ },
+ {
+  "mod": "appleskin",
+  "verified_against": "appleskin-forge-mc1.20.1-2.5.1.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Zero item models, zero blockstates, zero lang item or block keys, zero recipes, zero loot tables, no data/ directory. Single asset namespace appleskin holding HUD textures and lang. It draws saturation and hunger overlays on the vanilla food bar and registers nothing. Exclude entirely."
+ },
+ {
+  "mod": "architectury",
+  "verified_against": "architectury-9.2.14-forge.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Cross-loader abstraction layer used by the FTB and Let's Do mods. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "athena",
+  "verified_against": "athena-forge-1.20.1-3.1.2.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Connected-textures rendering library. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "attributeslib",
+  "verified_against": "ApothicAttributes-1.20.1-1.3.7.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. ApothicAttributes - adds attribute types and a tooltip UI, no content. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "badoptimizations",
+  "verified_against": "BadOptimizations-2.4.1-1.20.1.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Client performance patch. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "blockui",
+  "verified_against": "blockui-1.20.1-1.0.193.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. UI toolkit for the MineColonies family. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "carryon",
+  "verified_against": "carryon-forge-1.20.1-2.1.2.7.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Behaviour patch letting you pick up blocks and mobs; adds no item of its own. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "cosmeticarmorreworked",
+  "verified_against": "cosmeticarmorreworked-1.20.1-v1a.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Adds cosmetic armour SLOTS, not armour items. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "elysium_api",
+  "verified_against": "ElysiumAPI-1.20.1-1.1.3.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Registration helper library. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "embeddium",
+  "verified_against": "embeddium-0.3.31+mc1.20.1.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Rendering engine replacement. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "ending_library",
+  "verified_against": "EndingLibrary-1.20.1-2.1.19fix-all.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Registration helper library. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "fabric_api",
+  "verified_against": "fabric-api-0.92.6+1.11.14+1.20.1.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Forgified Fabric API - a compatibility shim so Fabric-targeting mods load on Forge. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "ferritecore",
+  "verified_against": "ferritecore-6.0.1-forge.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Memory-usage optimisation patch. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "framework",
+  "verified_against": "framework-forge-1.20.1-0.8.0.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Config and networking library. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "ftbteams",
+  "verified_against": "ftb-teams-forge-2001.3.2.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Team and party management; all state is save data. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "lionfishapi",
+  "verified_against": "lionfishapi-3.0.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Registration helper library. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "management_wanted_fixes",
+  "verified_against": "management_wanted_fixes-1.0.2.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Bugfix patch for management_wanted. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "modernfix",
+  "verified_against": "modernfix-forge-5.27.66+mc1.20.1.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Startup and memory optimisation patch. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "oculus",
+  "verified_against": "oculus-mc1.20.1-1.8.0.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Shader loader. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "placebo",
+  "verified_against": "Placebo-1.20.1-8.6.3.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Apotheosis support library. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "platform",
+  "verified_against": "Platform-forge-1.20.1-1.3.4.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Cross-loader abstraction layer. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "puzzleslib",
+  "verified_against": "PuzzlesLib-v8.1.33-1.20.1-Forge.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Registration and config library. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "resourcefullib",
+  "verified_against": "resourcefullib-forge-1.20.1-2.1.29.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Registration and codec library. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "runiclib",
+  "verified_against": "forge-runiclib-1.20.1-4.3.11.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Registration helper library. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "skinlayers3d",
+  "verified_against": "skinlayers3d-forge-1.11.2-mc1.20.1.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Client-side player skin renderer. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "supermartijn642configlib",
+  "verified_against": "supermartijn642configlib-1.1.8-forge-mc1.20.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Config library. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "supermartijn642corelib",
+  "verified_against": "supermartijn642corelib-1.1.21-forge-mc1.20.1.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Registration and GUI library. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "terrablender",
+  "verified_against": "TerraBlender-forge-1.20.1-3.0.1.10.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Biome injection framework; the biomes it places belong to other mods. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "towntalk",
+  "verified_against": "towntalk-1.20.1-1.1.0.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Villager dialogue flavour; no registered content. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "zeta",
+  "verified_against": "Zeta-1.0-31.jar",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Every one of those six counts is zero, so the mod registers nothing a player could ever hold. Quark's registration and module framework. Exclude from chapter generation entirely."
+ },
+ {
+  "mod": "blueprint",
+  "items_in_jar": 1,
+  "questable": false,
+  "reason": "Measured from the jar: 1 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Team Abnormals core library. The single item model is a parent template with no lang key, no recipe and no loot table - not a registered item. Exclude entirely.",
+  "verified_against": "blueprint-1.20.1-7.1.4.jar"
+ },
+ {
+  "mod": "citadel",
+  "items_in_jar": 5,
+  "questable": false,
+  "reason": "Measured from the jar: 5 item models, 1 blockstates, 5 item lang keys, 1 block lang keys, 0 recipes, 1 loot tables under its own namespace. Alex's Mobs support library. It registers five items (citadel_book, debug, effect_item, fancy_item, icon_item) and a lectern block, all with lang keys, but ships zero recipes. debug is the Citadel Debugger; effect_item, fancy_item and icon_item are render helpers used to draw entries inside other mods' guide books. None is obtainable. Exclude entirely.",
+  "verified_against": "citadel-2.6.3-1.20.1.jar"
+ },
+ {
+  "mod": "doapi",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 2 blockstates, 0 item lang keys, 2 block lang keys, 0 recipes, 0 loot tables under its own namespace. The shared library behind the whole Let's Do suite (Bakery, Vinery, Brewery, Meadow, Candlelight, Farm and Charm, HerbalBrews, Furniture). Zero item models and zero recipes; the only registered things are two blockstates for the Completionist Banner and Completionist Wall Banner, which are advancement rewards handed out by the individual Let's Do mods rather than anything craftable here. Exclude entirely.",
+  "verified_against": "letsdo-API-forge-1.2.15-forge.jar"
+ },
+ {
+  "mod": "geckolib",
+  "items_in_jar": 20,
+  "questable": false,
+  "reason": "Measured from the jar: 20 item models, 2 blockstates, 18 item lang keys, 3 block lang keys, 0 recipes, 0 loot tables under its own namespace. This is the filler trap in its purest form and the reason a registry-only scan is not safe. GeckoLib is an ANIMATION library, but it ships twenty item models and eighteen item lang keys for its own built-in demo content - Cool Kid, Gremlin, Race Car, Bike, Mutant Zombie and Parasite spawn eggs, a Jack-in-the-Box, a Gecko Habitat, a Fertilizer block, and full Gecko Armor and Wolf Armor sets. Every one of them has a name and an icon, so they look exactly like real content. There is NOT A SINGLE recipe or loot table anywhere in the jar - zero files under data/geckolib/ recipes and zero under loot_tables - so none of them is obtainable in survival by any means. They exist to exercise the animation engine. Exclude entirely.",
+  "verified_against": "geckolib-forge-1.20.1-4.8.4.jar"
+ },
+ {
+  "mod": "kiwi",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 0 item models, 0 blockstates, 7 item lang keys, 2 block lang keys, 0 recipes, 0 loot tables under its own namespace. Registration framework. Zero item models and zero recipes; the seven item and two block lang keys are naming stubs the library provides for its dependents, with no backing models, so they cannot be rendered let alone obtained. Exclude entirely.",
+  "verified_against": "Kiwi-1.20.1-Forge-11.10.3.jar"
+ },
+ {
+  "mod": "moonlight",
+  "items_in_jar": 1,
+  "questable": false,
+  "reason": "Measured from the jar: 1 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Moonlight Lib, the registration and dynamic-asset layer behind Supplementaries and friends. The single item model is a parent template with no lang key, no recipe and no loot table. Exclude entirely.",
+  "verified_against": "moonlight-1.20-2.16.34-forge.jar"
+ },
+ {
+  "mod": "patchouli",
+  "items_in_jar": 9,
+  "questable": false,
+  "reason": "Measured from the jar: 9 item models, 0 blockstates, 5 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. Guide-book ENGINE. It registers patchouli:guide_book plus eight book-colour model stems, and ships zero recipes of its own - the remaining lang keys are the author's own test books (Test Book 1, Test Pamphlet, Comprehensive Test Book). No Patchouli CHAPTER should be generated. IMPORTANT CAVEAT, do not over-apply this verdict: patchouli:guide_book is a real, obtainable item whenever a content mod supplies the recipe, and it is legitimately used as a cross-namespace step in chains_research/caupona.json, whose data/caupona/recipes/crafting/book.json crafts it from caupona:fig, caupona:walnut, caupona:water, caupona:wolfberries and a book. questable:false here means 'no chapter for this mod', NOT 'this id is invalid'.",
+  "verified_against": "Patchouli-1.20.1-85-FORGE.jar"
+ },
+ {
+  "mod": "vanillabackport",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "Measured from the jar: 96 item models, 0 blockstates, 0 item lang keys, 0 block lang keys, 0 recipes, 0 loot tables under its own namespace. READ THIS ONE BEFORE ACTING ON IT - the false verdict is correct but the usual reason is WRONG, and there is real content at stake. VanillaBackport is NOT a library. It registers roughly ninety-six items and seventy-odd blocks, and ships 229 recipe and advancement files - but it registers ALL of them into the minecraft: NAMESPACE, not its own. Its lang file is full of block.minecraft.* and item.minecraft.* keys: Pale Oak (full wood set, boat, chest boat), Resin (block, bricks, clump, resin_brick), Sulfur and Cinnabar (full stone families, spike, potent_sulfur, sulfur_cube_bucket), Bundles in all sixteen colours, Harnesses in all sixteen colours, Wolf Armor, Armadillo Scute, blue and brown eggs, the Creaking Heart, eyeblossoms, firefly bush, leaf litter, dry grass, wildflowers, the Armadillo / Creaking / Happy Ghast / Sulfur Cube spawn eggs, and the music_disc_bounce, music_disc_lava_chicken and music_disc_tears records. questable is false ONLY because a chapter keyed on the vanillabackport: namespace would find zero items and emit pure filler. The content itself is real, substantial and obtainable, and it belongs in chains_research/minecraft.json. Whoever owns that file should fold these ids in; a namespace-keyed scan will never see them on its own.",
+  "verified_against": "VanillaBackport-forge-1.20.1-1.1.7.10.jar"
+ },
+ {
+  "mod": "cacao",
+  "verified_against": "NO JAR EXISTS FOR THIS LOADER AND VERSION",
+  "items_in_jar": 0,
+  "questable": false,
+  "reason": "UNOBTAINABLE MOD, not a library - recorded here so no chapter is ever generated for this namespace. A 1.20.1 Forge build of a mod with the modid 'cacao' could not be found and is not installed. Searches performed: Modrinth full-text search for 'cacao' returns no project of that name; CurseForge mod search for 'cacao' returns only Roots Delight, whose modid is roots_delight; the entire CurseForge Food category filtered to 1.20.1 Forge (400 mods) contains no mod with that modid, and the only chocolate-adjacent hits are ChocoCraft, Crazy Chocobos, Create Confectionery, Create: More Chocolate and Create: Sweets and Treats, none of which uses the cacao namespace; 55 Modrinth 1.20.1 mods matching chocolate, candy, sweets, dessert and confectionery were downloaded and their asset namespaces inspected, with no match; and all 114 jars in the pack's own mods folder were scanned for an assets/cacao or data/cacao namespace, with zero hits. No installed mod provides this namespace, so any cacao: id would be an uncompletable quest."
+ }
+]

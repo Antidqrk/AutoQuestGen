@@ -1,0 +1,195 @@
+{
+  "mod": "wtf_item_lucky_block",
+  "verified_against": "WTF_Lucky_block_1.1.0.jar",
+  "item_count_in_jar": 68,
+  "chain": [
+    {
+      "id": "wtf_item_lucky_block:lucky_gem",
+      "title": "Mine Lucky Gems",
+      "desc": "Lucky Gem Ore generates in stone and deepslate all through the Overworld and drops the gem straight from the block - no smelting step. Gems are the currency of the whole mod, so expect to want stacks before you start opening lucky blocks."
+    },
+    {
+      "id": "wtf_item_lucky_block:wtf_luckyblock",
+      "title": "Craft the WTF Lucky Block",
+      "desc": "The point of the mod. Right-click it and it rolls one of roughly forty outcomes at a rarity tier - Useless, Common, Rare, Epic, Super Rare, Legendary or Mythic - each with its own sound and particle burst. Outcomes include TNT, lightning and a wither egg, so open them well away from your base."
+    },
+    {
+      "id": "wtf_item_lucky_block:luckygemblock",
+      "title": "Pack Gems into a Block",
+      "desc": "Nine gems in, nine gems back out. Pure storage for the mining stage; it is not an ingredient in anything."
+    },
+    {
+      "id": "wtf_item_lucky_block:medkit",
+      "title": "Open Blocks for a Medkit",
+      "desc": "A lucky block reward, never craftable. Right-click it in the air for instant health, regeneration and a health boost - the one outcome worth saving for the next time a block explodes in your face."
+    },
+    {
+      "id": "wtf_item_lucky_block:slime_sword",
+      "title": "Mould Slime Gear",
+      "desc": "A slime ball and a stick. The sword bounces what it hits and the full tool set exists; cheap enough to make while you are still hunting for gem ore."
+    },
+    {
+      "id": "wtf_item_lucky_block:icegloves",
+      "title": "Stitch Ice Gloves",
+      "desc": "Snow, a snowball and leather. Hitting a mob with them freezes it. One pair is all you will ever need."
+    },
+    {
+      "id": "wtf_item_lucky_block:amethyst_armor_chestplate",
+      "title": "Cut Amethyst Armour",
+      "desc": "Plain amethyst shards, no lucky gems required. A mid-tier set you can build before the lucky block economy gets going."
+    },
+    {
+      "id": "wtf_item_lucky_block:lucky_armor_armor_chestplate",
+      "title": "Wear Lucky Armour",
+      "desc": "Straight lucky gems. The chestplate runs its own tick effect while worn, and it is the main reason to keep mining ore rather than spending every gem on blocks."
+    },
+    {
+      "id": "wtf_item_lucky_block:bug",
+      "title": "Collect Bug Fragments",
+      "desc": "A lucky block drop, not craftable. Bugs are the mod's rarest material and the only way to get the Bugged tools and armour, so save every one you pull."
+    },
+    {
+      "id": "wtf_item_lucky_block:bug_tools_sword",
+      "title": "Assemble the Bugged Sword",
+      "desc": "Bug fragments on a stick. Right-clicking it in the air runs a glitch effect, and the Bugged Pickaxe does something odd to whatever block it breaks. The full five-tool set uses the same fragments."
+    },
+    {
+      "id": "wtf_item_lucky_block:bug_armor_armor_chestplate",
+      "title": "Suit Up in Bugged Armour",
+      "desc": "The best armour in the mod. Every one of the four pieces runs its own tick effect while worn, and the whole set costs bug fragments you can only get from lucky blocks."
+    },
+    {
+      "id": "wtf_item_lucky_block:cloudinabottle",
+      "title": "Catch a Cloud in a Bottle",
+      "desc": "A lucky block drop. On its own it launches you upward; it is also the ingredient for the cloud helmet and boots."
+    },
+    {
+      "id": "wtf_item_lucky_block:cloudarmor_boots",
+      "title": "Lace On Cloud Boots",
+      "desc": "Made from a Cloud in a Bottle. The boots and the helmet both run movement effects while worn - this is the mod's mobility gear."
+    },
+    {
+      "id": "wtf_item_lucky_block:susblock",
+      "title": "Turn Up a Dirt SUS",
+      "desc": "A joke block from the lucky block pool that is genuinely worth something: one Dirt SUS crafts straight into a vanilla diamond."
+    },
+    {
+      "id": "wtf_item_lucky_block:multiorepickaxe",
+      "title": "Fuse the Multiore Pickaxe",
+      "desc": "Costs one pickaxe of every vanilla tier at once - wood, stone, iron, gold, diamond and netherite. It changes what blocks broken with it drop, and it is the single most expensive craft in the jar."
+    },
+    {
+      "id": "wtf_item_lucky_block:magicwand",
+      "title": "Pull the Magic Wand",
+      "desc": "A lucky block reward, uncraftable. It shoots a projectile that lands a Luck effect on whatever it hits - the only ranged weapon in the mod, so keep opening blocks if you want one."
+    },
+    {
+      "id": "wtf_item_lucky_block:bedrockeraser",
+      "title": "Win the Bedrock Eraser",
+      "desc": "One of the rarest lucky block outcomes. Right-click bedrock with it and the bedrock goes away. Treat it as a one-of-a-kind."
+    },
+    {
+      "id": "wtf_item_lucky_block:nuclearbutton",
+      "title": "Do Not Press the Nuclear Button",
+      "desc": "The top-rarity lucky block prize. Right-clicking it in the air does exactly what the name says. A trophy, not a tool."
+    }
+  ],
+  "collections": [
+    {
+      "name": "Lucky armour set",
+      "ids": [
+        "wtf_item_lucky_block:lucky_armor_armor_helmet",
+        "wtf_item_lucky_block:lucky_armor_armor_chestplate",
+        "wtf_item_lucky_block:lucky_armor_armor_leggings",
+        "wtf_item_lucky_block:lucky_armor_armor_boots"
+      ]
+    },
+    {
+      "name": "Bugged set",
+      "note": "All from wtf_item_lucky_block:bug, which is a lucky block drop only.",
+      "ids": [
+        "wtf_item_lucky_block:bug_armor_armor_helmet",
+        "wtf_item_lucky_block:bug_armor_armor_chestplate",
+        "wtf_item_lucky_block:bug_armor_armor_leggings",
+        "wtf_item_lucky_block:bug_armor_armor_boots",
+        "wtf_item_lucky_block:bug_tools_sword",
+        "wtf_item_lucky_block:bug_tools_pickaxe",
+        "wtf_item_lucky_block:bug_tools_axe",
+        "wtf_item_lucky_block:bug_tools_shovel",
+        "wtf_item_lucky_block:bug_tools_hoe"
+      ]
+    },
+    {
+      "name": "Amethyst armour set",
+      "ids": [
+        "wtf_item_lucky_block:amethyst_armor_helmet",
+        "wtf_item_lucky_block:amethyst_armor_chestplate",
+        "wtf_item_lucky_block:amethyst_armor_leggings",
+        "wtf_item_lucky_block:amethyst_armor_boots"
+      ]
+    },
+    {
+      "name": "Wood armour set (joke tier)",
+      "ids": [
+        "wtf_item_lucky_block:wood_armor_helmet",
+        "wtf_item_lucky_block:wood_armor_chestplate",
+        "wtf_item_lucky_block:wood_armor_leggings",
+        "wtf_item_lucky_block:wood_armor_boots"
+      ]
+    },
+    {
+      "name": "Slime tool set",
+      "ids": [
+        "wtf_item_lucky_block:slime_sword",
+        "wtf_item_lucky_block:slime_pickaxe",
+        "wtf_item_lucky_block:slime_axe",
+        "wtf_item_lucky_block:slime_shovel",
+        "wtf_item_lucky_block:slime_hoe",
+        "wtf_item_lucky_block:slimearmor_boots"
+      ]
+    },
+    {
+      "name": "Cosmetic headwear",
+      "note": "Lucky block drops, worn in the helmet slot.",
+      "ids": [
+        "wtf_item_lucky_block:mustache_helmet",
+        "wtf_item_lucky_block:sunglasses_helmet"
+      ]
+    },
+    {
+      "name": "Novelty lucky block drops",
+      "note": "All uncraftable; each has its own Event procedure that hands it out when a lucky block is opened. Never write craft quests for these.",
+      "ids": [
+        "wtf_item_lucky_block:money",
+        "wtf_item_lucky_block:moneygun",
+        "wtf_item_lucky_block:medkit",
+        "wtf_item_lucky_block:candies",
+        "wtf_item_lucky_block:susmilk",
+        "wtf_item_lucky_block:luckymilk",
+        "wtf_item_lucky_block:lucky_potato",
+        "wtf_item_lucky_block:pepper",
+        "wtf_item_lucky_block:d_rpepper",
+        "wtf_item_lucky_block:molecule",
+        "wtf_item_lucky_block:eye",
+        "wtf_item_lucky_block:mouse",
+        "wtf_item_lucky_block:pencil",
+        "wtf_item_lucky_block:gluestick",
+        "wtf_item_lucky_block:lototicket",
+        "wtf_item_lucky_block:watermelonsword",
+        "wtf_item_lucky_block:sonicboots_boots",
+        "wtf_item_lucky_block:witheregg"
+      ]
+    },
+    {
+      "name": "Gag blocks from the lucky block pool",
+      "note": "Susblock is handed to you as an item; the other three are placed in the world by their Event procedure and then drop themselves when broken.",
+      "ids": [
+        "wtf_item_lucky_block:susblock",
+        "wtf_item_lucky_block:soapblock",
+        "wtf_item_lucky_block:glueblock",
+        "wtf_item_lucky_block:buggedblock"
+      ]
+    }
+  ],
+  "notes": "Small MCreator mod. The whole thing is one mechanic: WTFLuckyblockBlock rolls an event procedure at a rarity tier - the sound and particle classes name the tiers Useless, Common, Rare, Epic, Superrare, Legendary and Mythique. Two naming families give items out: Event<thing>Procedure (EventbuggemProcedure, EventmagicwandProcedure, EventnuclearbuttonProcedure, EventwitherspawneggProcedure) and <Thing>eventProcedure (SusblockeventProcedure, MedkiteventProcedure, CloudinabottleeventProcedure, MultiorepickaxeeventProcedure); check BOTH before deciding an item is unobtainable. UNOBTAINABLE IDS - do not put these in a quest: the jar ships ZERO loot tables, so a block only drops what its own getDrops override returns. wtf_item_lucky_block:lucky_gem_ore is registered but Lucky_gemOreBlock.getDrops returns LUCKY_GEM, so the ore ITEM never drops and the lucky_gem_ore_smelting recipe is dead content - a player mines the ore and receives gems directly. wtf_item_lucky_block:chanceflower is worse: ChanceflowerBlock has no getDrops at all and ChanceflowerQuandLaPlanteEstDetruiteParUnJoueurProcedure (breaking the plant) either explodes or drops a vanilla diamond, so the flower item is uncollectable; the world-generated flower is a free random-event trigger, never an item task. wtf_item_lucky_block:cloudblock, :enchantedblock and :wing are registered but no procedure ever places or grants them, so they are unobtainable too. Every other block drops itself. Only 37 recipes exist and almost everything else is drop-only, so verbs must be OPEN or FIND, not CRAFT: the ONLY craftable things are the lucky block, the lucky gem block, lucky armour, bug tools and bug armour, amethyst armour, wood armour, slime tools, ice gloves, cloud helmet and boots, Dr. Pepper, the multiore pickaxe, and the susblock-to-diamond trade. wtf_item_lucky_block:bug and wtf_item_lucky_block:cloudinabottle have no recipe of their own and are lucky block drops, which makes the Bugged and Cloud sets gated behind luck rather than behind materials. Worldgen adds exactly two features via forge biome modifiers: lucky_gem_ore in underground_ores and chanceflower in vegetal_decoration, both to #is_overworld. There is one advancement and it is a joke ('Useless advancement', trigger minecraft:impossible) - do not derive order from it. A brewing recipe adds a Potion of flying. The jar also contains a Pub1Screen/Pub1Menu advertisement GUI."
+}

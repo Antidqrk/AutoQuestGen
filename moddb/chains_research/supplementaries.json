@@ -1,0 +1,149 @@
+{
+ "mod": "supplementaries",
+ "verified_against": "supplementaries-1.20-3.1.43-forge.jar",
+ "item_count_in_jar": 247,
+ "chain": [
+  {"id": "supplementaries:rope", "title": "Something to Climb", "desc": "String, or the mod's own flax; ropes hang downward, can be climbed, and carry lanterns, buntings and pulleys."},
+  {"id": "supplementaries:sconce", "title": "Torches on the Wall, Properly", "desc": "A torch with iron nuggets; a wall light that sits flush instead of jutting out."},
+  {"id": "supplementaries:item_shelf", "title": "One Slab, One Shelf", "desc": "Wooden slabs alone; anything placed on it stays displayed at full size."},
+  {"id": "supplementaries:flower_box", "title": "The Window Box", "desc": "Dirt in wooden slabs; holds several small plants side by side against a wall."},
+  {"id": "supplementaries:notice_board", "title": "Pinning It Up", "desc": "Planks and paper; put a written book or map in it and anyone can read it without taking it."},
+  {"id": "supplementaries:sign_post_oak", "title": "Which Way to Town", "desc": "One oak sign, shapeless. Note the id shape: there is no supplementaries:sign_post item, only sign_post_<wood>, and those nine ids appear in no lang file."},
+  {"id": "supplementaries:jar", "title": "Glass and Slats", "desc": "Glass in wooden slabs; it holds fluids, cookies, or a small mob caught in a cage."},
+  {"id": "supplementaries:sack", "title": "A Bag You Can Set Down", "desc": "Flax or wheat with string; a portable container that keeps its contents when broken."},
+  {"id": "supplementaries:pedestal", "title": "Putting It On Show", "desc": "Chiseled stone bricks over stone bricks and a slab; it displays an item and spins it."},
+  {"id": "supplementaries:crank", "title": "Turning It By Hand", "desc": "Wooden rods on stone; a hand-cranked redstone source that stays on while you turn it."},
+  {"id": "supplementaries:bellows", "title": "Blowing on the Coals", "desc": "Leather between wooden slabs; driven by redstone it speeds up the furnace beside it."},
+  {"id": "supplementaries:planter", "title": "Growing Indoors", "desc": "Dirt, bricks and bone meal; a raised bed that grows crops one block off the ground."},
+  {"id": "supplementaries:hat_stand", "title": "Somewhere for the Helmet", "desc": "Planks on a smooth stone slab; displays a worn head slot item."},
+  {"id": "supplementaries:cage", "title": "Catching Something Small", "desc": "Iron bars, an iron ingot and wooden slabs; right-click a small mob to carry it."},
+  {"id": "supplementaries:faucet", "title": "Pouring It Out", "desc": "A wooden rod and an iron ingot; pulls fluid from the block behind it into whatever is below."},
+  {"id": "supplementaries:iron_gate", "title": "The Metal Gate", "desc": "Iron ingots and iron nuggets; a fence gate that mobs cannot open."},
+  {"id": "supplementaries:key", "title": "One Key, Many Doors", "desc": "A gold ingot and a gold nugget; name it and it opens any lock block with the same name."},
+  {"id": "supplementaries:lock_block", "title": "Locking It Down", "desc": "Iron, planks and redstone; emits redstone only when the matching key is used on it."},
+  {"id": "supplementaries:altimeter", "title": "Reading Your Height", "desc": "Copper and redstone; a handheld that reports your Y level, and the ingredient the map slicer needs."},
+  {"id": "supplementaries:slice_map", "title": "One Page of the Map", "desc": "A vanilla map with an item from the supplementaries:altimeters tag, giving a single map section you can frame."},
+  {"id": "supplementaries:cog_block", "title": "Redstone That Turns", "desc": "Copper ingots around a redstone block; passes a signal through and drives adjacent mechanisms."},
+  {"id": "supplementaries:relayer", "title": "Redstone Through the Floor", "desc": "Cobblestone, iron and redstone; carries a signal vertically the way a repeater carries it flat."},
+  {"id": "supplementaries:turn_table", "title": "Spinning Whatever Sits On It", "desc": "Cobblestone, copper, planks and redstone; a redstone pulse rotates the block on top."},
+  {"id": "supplementaries:hourglass", "title": "Counting the Sand", "desc": "Glass and gold; fill it with a material and it emits a comparator signal as it drains."},
+  {"id": "supplementaries:blackboard", "title": "Drawing on the Wall", "desc": "Blackstone and wooden slabs; you draw on it pixel by pixel with dyes, and soap wipes it clean."},
+  {"id": "supplementaries:crystal_display", "title": "Amethyst Under Glass", "desc": "Amethyst shards on deepslate; a display case that lights what it holds."},
+  {"id": "supplementaries:statue", "title": "Carved in Clay", "desc": "Clay on a smooth stone slab."},
+  {"id": "supplementaries:speaker_block", "title": "Saying It Out Loud", "desc": "An emerald in planks; on a redstone pulse it speaks its message into chat or aloud."},
+  {"id": "supplementaries:bomb", "title": "Throwable TNT", "desc": "TNT with iron and string; thrown by hand, and the parent of the whole demolition line."},
+  {"id": "supplementaries:cannon", "title": "Pointing It Downrange", "desc": "A dispenser, iron and planks, or a slingshot with iron, planks and redstone; aimed and fired at range."},
+  {"id": "supplementaries:spring_launcher", "title": "Straight Up", "desc": "Gunpowder, iron, a slime block and a sticky piston; launches whatever stands on it."},
+  {"id": "supplementaries:safe", "title": "Locked and Netherite-Lined", "desc": "Netherite and a shulker box through the mod's own supplementaries:safe recipe type; the only container here that other players cannot open."}
+ ],
+ "collections": [
+  {
+   "hub": "supplementaries:candle_holder",
+   "members": [
+    "supplementaries:candle_holder_white",
+    "supplementaries:candle_holder_black",
+    "supplementaries:candle_holder_blue",
+    "supplementaries:candle_holder_red",
+    "supplementaries:candle_holder_green",
+    "supplementaries:candle_holder_yellow",
+    "supplementaries:candle_holder_orange",
+    "supplementaries:candle_holder_purple",
+    "supplementaries:candle_holder_cyan",
+    "supplementaries:candle_holder_pink",
+    "supplementaries:candle_holder_lime",
+    "supplementaries:candle_holder_gray"
+   ]
+  },
+  {
+   "hub": "supplementaries:awning",
+   "members": [
+    "supplementaries:awning_white",
+    "supplementaries:awning_black",
+    "supplementaries:awning_blue",
+    "supplementaries:awning_red",
+    "supplementaries:awning_green",
+    "supplementaries:awning_yellow",
+    "supplementaries:awning_orange",
+    "supplementaries:awning_purple",
+    "supplementaries:awning_cyan",
+    "supplementaries:awning_pink",
+    "supplementaries:awning_lime",
+    "supplementaries:awning_gray"
+   ]
+  },
+  {
+   "hub": "supplementaries:flag_white",
+   "members": [
+    "supplementaries:flag_black",
+    "supplementaries:flag_blue",
+    "supplementaries:flag_red",
+    "supplementaries:flag_green",
+    "supplementaries:flag_yellow",
+    "supplementaries:flag_orange",
+    "supplementaries:flag_purple",
+    "supplementaries:flag_cyan",
+    "supplementaries:flag_pink",
+    "supplementaries:flag_lime",
+    "supplementaries:flag_gray",
+    "supplementaries:flag_brown"
+   ]
+  },
+  {
+   "hub": "supplementaries:sign_post_oak",
+   "members": [
+    "supplementaries:sign_post_spruce",
+    "supplementaries:sign_post_birch",
+    "supplementaries:sign_post_jungle",
+    "supplementaries:sign_post_acacia",
+    "supplementaries:sign_post_dark_oak",
+    "supplementaries:sign_post_mangrove",
+    "supplementaries:sign_post_crimson",
+    "supplementaries:sign_post_warped"
+   ]
+  },
+  {
+   "hub": "supplementaries:stone_lamp",
+   "members": [
+    "supplementaries:blackstone_lamp",
+    "supplementaries:deepslate_lamp",
+    "supplementaries:end_stone_lamp",
+    "supplementaries:redstone_illuminator",
+    "supplementaries:sconce",
+    "supplementaries:sconce_soul",
+    "supplementaries:sconce_lever",
+    "supplementaries:candle_holder"
+   ]
+  },
+  {
+   "hub": "supplementaries:timber_frame",
+   "members": [
+    "supplementaries:timber_brace",
+    "supplementaries:timber_cross_brace",
+    "supplementaries:daub",
+    "supplementaries:daub_frame",
+    "supplementaries:daub_brace",
+    "supplementaries:daub_cross_brace",
+    "supplementaries:wicker_fence",
+    "supplementaries:fine_wood",
+    "supplementaries:gravel_bricks",
+    "supplementaries:stone_tile",
+    "supplementaries:blackstone_tile",
+    "supplementaries:lapis_bricks",
+    "supplementaries:ash_bricks"
+   ]
+  },
+  {
+   "hub": "supplementaries:bomb",
+   "members": [
+    "supplementaries:bomb_spiky",
+    "supplementaries:cannon",
+    "supplementaries:cannonball",
+    "supplementaries:spring_launcher",
+    "supplementaries:slingshot",
+    "supplementaries:confetti_popper",
+    "supplementaries:dispenser_minecart"
+   ]
+  }
+ ],
+ "notes": "COUNTS. 284 item-model stems and 282 lang-named ids, but only 238 stems have BOTH - that is what the naive rule verifies. Widening on RECIPE RESULTS raises it to 247. Every id in this file comes from that widened set, and every id in it is additionally recipe-backed or loot-backed.\n\nTRAP 1, THE NINE SIGN POSTS (the widening that matters). supplementaries:sign_post_oak through sign_post_warped are the ONLY ids in the mod that the naive rule misses and that a quest genuinely needs. There is one lang key, block.supplementaries.sign_post, composed with the wood name at runtime, and seven of the nine have no item model in the jar either. Proof of registration is the recipe: data/supplementaries/recipes/sign_post_acacia.json is a shapeless recipe whose result item is 'supplementaries:sign_post_acacia'. There is NO supplementaries:sign_post item - writing that id gives an unresolvable quest.\n\nTRAP 2, NBT VARIANTS THAT LOOK LIKE REGISTRY IDS. supplementaries:bunting_black through bunting_yellow have BOTH an item model and an item.supplementaries.bunting_<colour> lang key, so the naive rule accepts all 16 - and all 16 are wrong. All 32 bunting recipes output 'supplementaries:bunting' with an NBT tag {Color:\"black\"}; there is no per-colour blockstate and no per-colour loot table, and BuntingBlockTile.class carries the single description id item.supplementaries.bunting. Quest supplementaries:bunting only. Contrast the awnings, candle holders, flags and presents, which look identical in the lang file but ARE separate registrations - each has its own blockstate, its own block loot table and its own recipe result. Model-plus-lang cannot tell these two cases apart; only the recipe result and the blockstate can.\n\nTRAP 3, 46 MODEL STEMS THAT ARE NOT ITEMS. quiver_gui, quiver_in_hand, slingshot_pulling_0/1/2, speedometer_1 through speedometer_9, bubble_blower_using, flute_in_hand, hourglass_3d, lunch_basket_gui, altimeter_overlay, cage_full, placeable_item, handheld and friends are held-item and GUI model overrides. Also dropped as orphans: awning_dark_gray (there is no dark_gray dye in Minecraft - the sixteen real awnings are gray and light_gray), plus flint_shard, tiny_potato, magma_cream_block, laser_block, diode_block and cracked_bell, none of which has a lang key, a blockstate, a recipe or a loot table.\n\nTRAP 4, BLOCKS WITH NO ITEM. 24 blockstates have neither a lang key nor an item model: sconce_wall_*, sign_post_wall, enderman_wall_head, moving_slidy_block, rope_chandelier and its four coloured siblings, rope_buntings, rope_tomatoes, stick_tomatoes, mob_jar, soul_jar, label, drawers, block_generator, propelplant_cane. These are attached or in-world block states of items that already exist, or structure furniture. Registered blocks, not quest targets - the same distinction chipped's wall torches force. Note in particular that supplementaries:stick, supplementaries:blaze_rod, supplementaries:gunpowder and supplementaries:prismarine_rod are BLOCKSTATES for placing the VANILLA items on the ground; the item you would quest is minecraft:stick.\n\nEVERY RECIPE IN THIS MOD IS CONFIG-GATED. Nearly all 306 recipe files carry a condition of custom type supplementaries:flag with a feature name (\"safe\", \"antique_ink\", \"bunting\", \"rope\", \"flax\"), backed by CommonConfigs. A pack that disables a feature removes its recipes entirely. Nothing here is disabled by default, but any single quest can be switched off by config in a way no other mod in this slice allows.\n\nCOMPAT-ONLY IDS, deliberately kept out of the chain: sconce_ender needs endergetic:ender_torch, sconce_glow needs infernalexp:glow_torch, sconce_green needs caverns_and_chasms:cupric_torch, sconce_nether_brass needs architects_palette items, and bomb_spiky's two recipes need either oreganized:shrapnel_bomb or a non-empty forge:ingots/lead. None of those mods is in this pack. Likewise the lang file names lead_door, silver_door, lead_trapdoor, silver_trapdoor, silver_lantern, lead_lantern, brass_lantern, candelabra_silver and the vertical slabs (ash_bricks_vertical_slab and friends), all of which are registered at runtime through Moonlight's dynamic registration only when the supplying mod is present - the jar itself contains a lang key and nothing else for them.\n\nNON-CRAFTED BUT OBTAINABLE, verified from data/supplementaries/loot_modifiers/**: antique_ink comes from fishing junk at 20 percent (fishing_antique_ink.json); ash drops from mobs killed by fire (ash_from_burning_mobs.json); straw drops from fully grown supplementaries:flax cut with a farmersdelight:straw_harvesters tool; flax_seeds and wild_flax are worldgen. quiver, urn, safe and raked_gravel have block loot tables. bamboo_spikes_tipped, present_<colour>, trapped_present, blackboard duplicates, rope_arrow and weathered_map all come from the mod's OWN custom recipe types (supplementaries:present_dye, supplementaries:rope_arrow_create, supplementaries:bamboo_spikes_tipped, supplementaries:blackboard_duplicate, supplementaries:trapped_present), which have no readable result field - a results-only scan reports them as unobtainable and it is wrong.\n\nCONSENSUS. moddb's 26 entries are all real ids and its ordering is broadly sane; no override was needed. Its first six (flower_box, pedestal, bubble_blower, feather_block, key, bellows) are genuinely cheap and are kept early. Two notes: it lists supplementaries:rope_arrow at 0.146, which is fine as an item but is produced only by the custom rope_arrow_create recipe rather than a normal one; and it never mentions rope, sconce, sign posts, bombs, the cannon or the safe, which between them are most of what players actually build with this mod.\n\nCROSS-NAMESPACE ASSETS, not registrations: the jar ships assets under amendments, dynamictrees and vslab_compat, and three assets/minecraft/models/item overrides (antique_map, crossbow_rope_arrow, written_book_tattered). Those are model overrides for vanilla and other mods' items, so no registers_into entry applies - but a namespace-blind asset scan will attribute them to this mod."
+}

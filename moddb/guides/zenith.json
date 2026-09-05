@@ -1,0 +1,344 @@
+{
+ "mod": "zenith",
+ "ids_in_jar": 83,
+ "videos": [
+  {
+   "id": "0afcuGwjqpA",
+   "title": "🟨 COMPLETE GUIDE to the APOTHEOSIS MOD in MINECRAFT",
+   "channel": "Edlux Tutorials",
+   "views": 24540,
+   "duration": 2070,
+   "chars": 41256
+  },
+  {
+   "id": "DeDH6kKnwoo",
+   "title": "Everything You Need To Know About Apotheosis (Full Guide - 1.21+)",
+   "channel": "Westoro",
+   "views": 14860,
+   "duration": 1381,
+   "chars": 17310
+  }
+ ],
+ "items": {
+  "zenith:gem_dust": {
+   "mentions": 21,
+   "videos": 2,
+   "first_at": 0.2167,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:salvaging_table": {
+   "mentions": 7,
+   "videos": 2,
+   "first_at": 0.2237,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:reforging_table": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.2704,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:deepshelf": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.2662,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "zenith:warden_tendril": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.4319,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:uncommon_material": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1402,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:melonshelf": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.4649,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:ender_lead": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.7652,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:library": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.2678,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "zenith:simple_reforging_table": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1074,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:common_material": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1437,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:infused_breath": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4836,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:lucky_foot": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.606,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "zenith:dormant_deepshelf": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.2623,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "zenith:gem_cutting_table": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.4104,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:rare_material": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1336,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:ender_library": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5973,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:diamond_mining_arrow": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7333,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:sigil_of_withdrawal": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.194,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:sigil_of_socketing": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1641,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:sightshelf": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3883,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:echoing_deepshelf": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4256,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "zenith:draconic_endshelf": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2726,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:sigil_of_unnaming": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2398,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:sigil_of_rebirth": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1163,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:mythic_material": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1039,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:broadhead_arrow": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7273,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:obsidian_arrow": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7187,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:stoneshelf": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4879,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "zenith:sigil_of_enhancement": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8345,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "_shape": "NOT an item ladder. Zenith is the Fabric port of Apotheosis and is the same affix/loot/enchanting SYSTEM: rarity tiers, affixes on dropped gear, gem sockets, reforging, an enchanting rework. Quests should describe mechanics, not a crafting chain.",
+  "_source_honesty": "Dedicated Zenith teaching content barely exists. Every high-view guide the search returned for 'zenith' was an Apotheosis video, and the two videos analysed here ARE Apotheosis guides, reused from that mod's transcripts rather than transcribed twice. That reuse is defensible because the item sets are identical (see mechanics), but it means the mention counts in this file are Apotheosis mention counts. The corpus does hold two genuinely Zenith-titled videos (_IVAh_2o-gE, 5jp12Xxx1p0) that were not reached.",
+  "order": [
+   "Same order as Apotheosis: the enchanting rework first, because bookshelves around a vanilla enchanting table are what the player meets first.",
+   "Base shelves: zenith:stoneshelf / zenith:seashelf / zenith:hellshelf / zenith:deepshelf / zenith:endshelf / zenith:melonshelf / zenith:beeshelf, each feeding a different enchanting stat.",
+   "Infuse them at the enchanting table against minimum stat requirements: zenith:infused_seashelf, zenith:infused_hellshelf, zenith:infused_deepshelf, zenith:infused_endshelf.",
+   "Upgraded shelves are the arc's goal: zenith:glowing_hellshelf, zenith:blazing_hellshelf, zenith:crystal_seashelf, zenith:heart_seashelf, zenith:pearl_endshelf, zenith:draconic_endshelf, zenith:echoing_deepshelf, zenith:soul_touched_deepshelf, then zenith:library and zenith:ender_library.",
+   "zenith:gem_dust as soon as affix loot starts dropping.",
+   "zenith:simple_reforging_table then zenith:reforging_table, with zenith:salvaging_table feeding them.",
+   "zenith:augmenting_table and boss content (zenith:boss_summoner, zenith:prismatic_altar) last."
+  ],
+  "gates": [
+   "Three enchanting stats gate enchanting: Eterna, Quanta and Arcana, supplied by shelves. Infusions have explicit numeric minimums.",
+   "zenith:rectifier, zenith:rectifier_t2, zenith:rectifier_t3 shape Quanta's randomness - the gate between 'can enchant' and 'can enchant reliably'.",
+   "Reforging and augmenting each consume their own fuel, which is what stops the player spamming rerolls.",
+   "Reforging is gated by rarity-matched materials: zenith:common_material, zenith:uncommon_material, zenith:rare_material, zenith:epic_material, zenith:mythic_material, zenith:ancient_material.",
+   "Gems do nothing without a socket - zenith:sigil_of_socketing is the gate."
+  ],
+  "mechanics": [
+   "Zenith's item set is byte-for-byte the same shape as Apotheosis's: both jars expose exactly 83 item ids and every single name matches, from zenith:ancient_material through to zenith:weapon_tome. Anything true of one is true of the other with the namespace swapped. That is the strongest single fact about this mod.",
+   "Rarity ladder: common -> uncommon -> rare -> epic -> mythic -> ancient, a numeric multiplier on the same gem/affix effect rather than six separate items.",
+   "Affix items are dropped, never crafted; rarity decides both strength and which affixes may roll.",
+   "zenith:gem is one item whose identity lives in NBT - the individual gem variants are datapack registry entries under a gems/... subpath, NOT item ids, and must never become quest targets.",
+   "zenith:gem_cutting_table plus zenith:gem_dust raise a gem's rarity; zenith:gem_fused_slate and zenith:star_cube are higher-tier inputs.",
+   "Sigils are the item-editing verbs: zenith:sigil_of_socketing, zenith:sigil_of_rebirth, zenith:sigil_of_enhancement, zenith:sigil_of_unnaming, zenith:sigil_of_withdrawal.",
+   "Tomes move enchantments rather than adding them: zenith:scrap_tome -> zenith:improved_scrap_tome, plus the per-slot tomes and zenith:extraction_tome."
+  ],
+  "traps": [
+   "Do not build a crafting-chain quest line - there is no chain, the good items are random drops.",
+   "Do not write gem variants as item ids.",
+   "Do not ship Apotheosis AND Zenith together as if they were two mods' worth of content; they are the same content on two loaders."
+  ],
+  "signature": [
+   "zenith:gem",
+   "zenith:gem_dust",
+   "zenith:gem_cutting_table",
+   "zenith:reforging_table",
+   "zenith:salvaging_table",
+   "zenith:augmenting_table",
+   "zenith:sigil_of_socketing",
+   "zenith:sigil_of_rebirth",
+   "zenith:library",
+   "zenith:ender_library",
+   "zenith:echoing_deepshelf",
+   "zenith:boss_summoner",
+   "zenith:prismatic_altar"
+  ],
+  "pack_status": "NOT INSTALLED, and NOT INSTALLABLE in this pack. CREATE FEMBY is 1.20.1 Forge; Zenith publishes only a Fabric build for 1.20.1 (zenith-1.2.5-1.20.1.jar, loaders: ['fabric']). Analysed from that Fabric jar in scratch purely to obtain real ids. Apotheosis is the Forge equivalent and is also not installed."
+ }
+}

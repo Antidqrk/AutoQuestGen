@@ -1,0 +1,219 @@
+{
+ "mod": "prehistoricfauna",
+ "verified_against": "Prehistoric_Fauna-2.3.3.jar",
+ "item_count_in_jar": 1257,
+ "chain": [
+  {
+   "id": "prehistoricfauna:triassic_fossil",
+   "title": "Digger Man",
+   "desc": "Fossil-bearing chalk, siltstone and sandstone are seeded into every overworld biome by the mod's own forge:add_features modifier; breaking the sandstone kind gives the Triassic fossil."
+  },
+  {
+   "id": "prehistoricfauna:paleontology_table",
+   "title": "Somewhere to Put the Bones",
+   "desc": "The mod's own workstation, with its own recipe type; it is where fossils turn into the skulls and skeletal mounts the collection advancement wants."
+  },
+  {
+   "id": "structure:prehistoricfauna:geologist_camp",
+   "title": "Somebody Dug Here First",
+   "desc": "A surface camp in badlands, plains, meadows, forests, hills and jungles; its chest carries all three fossil types and its templates place a Paleontology Table."
+  },
+  {
+   "id": "structure:prehistoricfauna:time_temple",
+   "title": "What Man Wasn't Meant to Know",
+   "desc": "A single Henostone chamber above ground, found with the map a villager sells; it holds diamonds, horse armour and Henostone, and its template builds in a Time Machine Frame and a guardian."
+  },
+  {
+   "id": "structure:prehistoricfauna:portal_chamber",
+   "title": "Buried Machine",
+   "desc": "The same Henostone architecture forty blocks down, with a suspicious-gravel dig site and another ready-built Time Machine Frame; it generates in the same biomes as the temple."
+  },
+  {
+   "id": "kill:prehistoricfauna:henos",
+   "title": "Return to Monke",
+   "desc": "The Henos is placed inside the temple structure itself; it fires a time laser at you and it is the only thing in the game that drops a Time Totem."
+  },
+  {
+   "id": "prehistoricfauna:henostone",
+   "title": "Stone From Before Stone",
+   "desc": "Dropped by the Henos and by Land Sentinels, mined from its own block, and stacked in the temple chest; the whole time machine is built out of it."
+  },
+  {
+   "id": "prehistoricfauna:time_totem",
+   "title": "The Guardian's Key",
+   "desc": "The Henos's other drop. Alone it does nothing - it has to be bound to a specific age with a fossil from that age."
+  },
+  {
+   "id": "prehistoricfauna:portal_frame",
+   "title": "The Time Masheen",
+   "desc": "A clock ringed by Henostone. Frames already stand inside both the Time Temple and the buried Portal Chamber, so you can use one before you can build one."
+  },
+  {
+   "id": "prehistoricfauna:triassic_time_totem",
+   "title": "Totem of the Triassic",
+   "desc": "A Time Totem plus a Triassic Fossil, shapeless. This is what tells the machine which age to open."
+  },
+  {
+   "id": "dim:prehistoricfauna:triassic",
+   "title": "Crocodile Party",
+   "desc": "The first age. Chinle Formation flats, rivers, swamps and wooded mountains, plus the Ischigualasto clearings and hills - all pseudo-suchians and no dinosaurs worth the name."
+  },
+  {
+   "id": "kill:prehistoricfauna:postosuchus",
+   "title": "Before the Dinosaurs Won",
+   "desc": "Postosuchus rules the Chinle flats, swamp and wooded mountains; in the Triassic it is the apex predator, not a theropod."
+  },
+  {
+   "id": "kill:prehistoricfauna:land_sentinel",
+   "title": "Someone Call Pest Control?",
+   "desc": "The Henos left machines behind. Land Sentinels patrol the Chinle biomes and the Djadochta plains, and they drop Henostone."
+  },
+  {
+   "id": "prehistoricfauna:jurassic_time_totem",
+   "title": "Totem of the Jurassic",
+   "desc": "A Time Totem plus a Jurassic Fossil, the kind that comes out of siltstone."
+  },
+  {
+   "id": "dim:prehistoricfauna:jurassic",
+   "title": "Time of the Titans",
+   "desc": "The Morrison hills and savanna and the Kayenta buttes, desert and dry forest - Allosaurus, Camarasaurus, Ceratosaurus and the animal the next step is about."
+  },
+  {
+   "id": "kill:prehistoricfauna:stegosaurus",
+   "title": "Revenge for Thag Simmons",
+   "desc": "Stegosaurus grazes the Morrison hills and savanna and drops the only Thagomizer in the game."
+  },
+  {
+   "id": "prehistoricfauna:thagomizer",
+   "title": "Named for the Late Thag Simmons",
+   "desc": "Four spikes off a Stegosaurus tail. It is one of the mod's seven banner patterns as well as a tool head."
+  },
+  {
+   "id": "prehistoricfauna:thagomizer_pickaxe",
+   "title": "The Tail as a Tool",
+   "desc": "A Thagomizer on a stick. The mod's own advancement asks you to take it back to a Stegosaurus."
+  },
+  {
+   "id": "prehistoricfauna:cretaceous_time_totem",
+   "title": "Totem of the Cretaceous",
+   "desc": "A Time Totem plus a Cretaceous Fossil, the kind that comes out of chalk. The last age the machine will open."
+  },
+  {
+   "id": "dim:prehistoricfauna:cretaceous",
+   "title": "There's Always a T-Rex",
+   "desc": "Three formations at once - Hell Creek's redwoods, bluffs and swamps, the Djadochta dunes and arroyos, and the Yixian forests, lakes and snowy mountains."
+  },
+  {
+   "id": "kill:prehistoricfauna:triceratops",
+   "title": "Three Horns, One Problem",
+   "desc": "Triceratops holds the Hell Creek clearings, hardwood forest, redwoods, river and swamp, and it is the only source of a Ceratopsian Horn."
+  },
+  {
+   "id": "prehistoricfauna:ceratopsian_horn",
+   "title": "Taken Off the Frill",
+   "desc": "A Triceratops horn. It is a banner pattern and half of the mod's best helmet."
+  },
+  {
+   "id": "kill:prehistoricfauna:ankylosaurus",
+   "title": "Armour That Fights Back",
+   "desc": "Ankylosaurus wanders the Hell Creek bluffs, clearings, hardwood forest and redwoods, and drops the scutes off its own back."
+  },
+  {
+   "id": "prehistoricfauna:ankylosaurus_scute",
+   "title": "Plates Off a Living Tank",
+   "desc": "Ankylosaurus Scutes plus a Ceratopsian Horn make the Ankylosaurus Helmet - which is why the advancement for it is called Frankenstein."
+  },
+  {
+   "id": "kill:prehistoricfauna:dakotaraptor",
+   "title": "Reap What You Sow",
+   "desc": "Dakotaraptor hunts across every Hell Creek biome; it, Velociraptor and Zhenyuanlong are the three animals that drop a Dromaeosaur Claw."
+  },
+  {
+   "id": "prehistoricfauna:dromaeosaur_claw",
+   "title": "The Sickle Toe",
+   "desc": "Mounted on a haft it becomes the Dromaeosaur Claw Scythe, and the mod wants you to use that scythe on another raptor."
+  },
+  {
+   "id": "kill:prehistoricfauna:tyrannosaurus",
+   "title": "Stromer's Nightmare",
+   "desc": "Tyrannosaurus spawns across all five Hell Creek biomes. It and Yutyrannus are the only two animals that drop a Tyrannosaur Tooth."
+  },
+  {
+   "id": "prehistoricfauna:tyrannosaur_tooth",
+   "title": "Sore Tooth",
+   "desc": "The last drop on the spine. Set in a sword it closes the mod's own kill-a-Tyrannosaurus-with-its-own-tooth advancement."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "prehistoricfauna:stegosaurus_skeleton",
+   "members": [
+    "prehistoricfauna:tyrannosaurus_skeleton",
+    "prehistoricfauna:triceratops_skeleton",
+    "prehistoricfauna:allosaurus_skeleton",
+    "prehistoricfauna:ankylosaurus_skeleton",
+    "prehistoricfauna:anzu_skeleton",
+    "prehistoricfauna:ceratosaurus_skeleton",
+    "prehistoricfauna:coelophysis_skeleton",
+    "prehistoricfauna:desmatosuchus_skeleton",
+    "prehistoricfauna:dilophosaurus_skeleton",
+    "prehistoricfauna:herrerasaurus_skeleton",
+    "prehistoricfauna:ischigualastia_skeleton",
+    "prehistoricfauna:plesiohadros_skeleton",
+    "prehistoricfauna:postosuchus_skeleton"
+   ]
+  },
+  {
+   "hub": "prehistoricfauna:gar_bucket",
+   "members": [
+    "prehistoricfauna:acipenser_bucket",
+    "prehistoricfauna:arganodus_bucket",
+    "prehistoricfauna:ceratodus_bucket",
+    "prehistoricfauna:chinlea_bucket",
+    "prehistoricfauna:cyclurus_bucket",
+    "prehistoricfauna:harenaichthys_bucket",
+    "prehistoricfauna:lonchidion_bucket",
+    "prehistoricfauna:melvius_bucket",
+    "prehistoricfauna:mooreodontus_bucket",
+    "prehistoricfauna:myledaphus_bucket",
+    "prehistoricfauna:parapsephurus_bucket",
+    "prehistoricfauna:potamoceratodus_bucket",
+    "prehistoricfauna:saurichthys_bucket"
+   ]
+  },
+  {
+   "hub": "prehistoricfauna:ginkgo_log",
+   "members": [
+    "prehistoricfauna:agathoxylon_log",
+    "prehistoricfauna:araucaria_log",
+    "prehistoricfauna:brachyphyllum_log",
+    "prehistoricfauna:czekanowskia_log",
+    "prehistoricfauna:dryophyllum_log",
+    "prehistoricfauna:heidiphyllum_log",
+    "prehistoricfauna:liriodendrites_log",
+    "prehistoricfauna:metasequoia_log"
+   ]
+  },
+  {
+   "hub": "prehistoricfauna:tyrannosaur_tooth_sword",
+   "members": [
+    "prehistoricfauna:thagomizer_pickaxe",
+    "prehistoricfauna:dromaeosaur_claw_scythe",
+    "prehistoricfauna:ankylosaurus_helmet",
+    "prehistoricfauna:desmatosuchus_chestplate"
+   ]
+  },
+  {
+   "hub": "prehistoricfauna:time_totem",
+   "members": [
+    "prehistoricfauna:triassic_time_totem",
+    "prehistoricfauna:jurassic_time_totem",
+    "prehistoricfauna:cretaceous_time_totem",
+    "prehistoricfauna:triassic_fossil",
+    "prehistoricfauna:jurassic_fossil",
+    "prehistoricfauna:cretaceous_fossil"
+   ]
+  }
+ ],
+ "notes": "Item set = 1358 stems of assets/prehistoricfauna/models/item/*.json intersected with item.prehistoricfauna.* / block.prehistoricfauna.* lang keys = 1257, and NO widening survived scrutiny. THE WIDENING I ALMOST MADE, AND WHY IT WAS WRONG, IS THE MOST IMPORTANT NOTE IN THIS FILE: item.prehistoricfauna.time_temple_map ('Time Temple Map') is a lang key with no models/item file, which looks exactly like a filled-map item that a naive scan under-counts, and the jar does carry superlord/prehistoricfauna/common/events/VillagerTimeTempleMapTrade.class. It was written into the chain on the first pass and REMOVED on the second. Reading that class's constant pool shows the only string it holds is the literal 'item.prehistoricfauna.time_temple_map' - the LANG KEY, used to setHoverName on a vanilla minecraft:filled_map. PFItems.class contains no time_temple string at all, so there is NO item registered under the id prehistoricfauna:time_temple_map and a task asking for one would be permanently uncompletable. The map is real in game; the id is not. structure:prehistoricfauna:time_temple carries that step instead and the map is described in its text. Two other item.lang keys with no model were checked and REJECTED: prehistoricfauna:cooked_mooreodontus (no model, no recipe, no loot table - a stale key; the raw form raw_mooreodontus is a real item) and prehistoricfauna:stegosaursus_skeleton (a MISSPELLING of stegosaurus_skeleton, which is itself a real item with a model). Also checked and correctly excluded: 88 block.prehistoricfauna.* keys with a blockstate but no models/item - every one is a *_wall_sign, *_hanging_wall_sign, *_crate, *_wall_fan, *_time_block or *_portal, i.e. a block with no item, which is the *_wall_torch case. Note the mod's model filenames sometimes INVERT its lang names (models/item/henostone_bricks_dark.json vs block.prehistoricfauna.dark_henostone_bricks, henostone_carved vs carved_henostone), which is why 101 models have no matching lang key; none of those inverted pairs was used as an id. ENTITY VERIFICATION - 155 entity.prehistoricfauna.* lang keys, and the majority are NOT mobs. entity.prehistoricfauna.fullHunger ('This animal's hunger is full') is a MESSAGE STRING with an entity key, exactly the trap shape; boat, chest_boat and paleopainting are vehicle/decoration types; and roughly sixty keys are the *_skeleton and *_skull SKELETAL MOUNT display entities (allosaurus_skeleton, tyrannosaurus_skull and so on) - those are the built fossil displays, they share their display name with an ITEM of the same id, and they are quested here as items, never as kill: targets. THE PROOF USED FOR MOBS IS THE BIOME SPAWNER LIST: 48 files under data/prehistoricfauna/worldgen/biome/ carry 'spawners' blocks naming 92 distinct prehistoricfauna entity types, and every kill: step above is in that 92 except the Henos. Per step: postosuchus (chinle_flats, chinle_swamp, chinle_wooded_mountains), land_sentinel (chinle_flats, chinle_river, chinle_swamp, chinle_wooded_mountains, djadochta_alluvial_plains), stegosaurus (morrison_hills, morrison_savanna), triceratops (hell_creek_clearing, hardwood_forest, redwoods, river, swamp), ankylosaurus (hell_creek_bluffs, clearing, hardwood_forest, redwoods), dakotaraptor (all five hell_creek biomes), tyrannosaurus (all five hell_creek biomes) - each also has an entity loot table and a spawn egg. prehistoricfauna:henos has NO biome spawner and is still safe by a stronger proof: gunzipping data/prehistoricfauna/structures/time_temple.nbt shows the literal string prehistoricfauna:henos placed inside the temple template, its loot table drops henostone and time_totem, and data/prehistoricfauna/advancements/prehistoricfauna/general/return_to_monke.json ('Battle a Henos') targets it. ITS SPAWN EGG IS AN ID-DETECTION TRAP: the egg is registered as item.prehistoricfauna.time_guardian_spawn_egg but its DISPLAY NAME is 'Henos Spawn Egg' - a naive <entity>_spawn_egg lookup finds nothing and would wrongly conclude the Henos is unspawnable. EXCLUDED, no spawn proof: prehistoricfauna:corrupted_theropod - it has an entity loot table, a spawn egg and its own advancement (pyrrhic_scapegoat, 'Kill a Corrupted Theropod'), but its id appears in NO biome spawner, NO biome modifier and NO structure NBT anywhere in the jar; its renderers sit under client/render/henos/, so it is a Henos-corrupted phase produced by code that data cannot confirm. A kill: step on it was NOT written. prehistoricfauna:cave_sentinel is spawnable (chinle biomes and cretaceous_dripstone_cave) but has no loot table, so land_sentinel was used instead. THE DIMENSION ENTRY PATH, which is the point of this mod: three dimensions exist - data/prehistoricfauna/dimension/{triassic,jurassic,cretaceous}.json, all natural:true, has_skylight:true, bed_works:true, min_y -64, height 384, each driven by a code-registered biome source (prehistoricfauna:triassic_biome_source and friends), which is why the biome-to-age mapping is not in the json and has to be read off the formation names: Chinle and Ischigualasto are Triassic, Morrison and Kayenta are Jurassic, Hell Creek, Djadochta and Yixian are Cretaceous. The route is: buy a Time Temple Map from a villager (VillagerTimeTempleMapTrade, targeting the structure tag data/prehistoricfauna/tags/worldgen/structure/on_time_temple_maps.json) -> find the surface time_temple structure (biome tag #prehistoricfauna:has_structure/time_temple = badlands, plains, meadow, forests, hills, jungles) or the buried portal_chamber at start_height -40 in the same biome list -> fight the Henos placed inside -> take its Time Totem and Henostone -> a Time Machine Frame (clock + Henostone; gunzipping time_temple.nbt and portal_chamber.nbt shows prehistoricfauna:portal_frame already built into BOTH structures, so a player can use one before being able to craft one) -> bind the totem to an age with that age's fossil -> travel. The mod's advancement tree states the same order explicitly: root -> time_temple -> return_to_monke -> time_machine -> {triassic_time_travel, jurassic_time_travel, cretaceous_time_travel, warpaholic} and separately root -> digger_man -> {master_paleontologist, written_in_stone, stromers_nightmare}. NOT USED: prehistoricfauna:portal_projector ('Time Machine Projector'). It is a real item with a model and a lang key, and data/minecraft/advancements/recipes/misc/portal_projector.json grants a recipe called prehistoricfauna:portal_projector on picking up Henostone - but NO SUCH RECIPE FILE EXISTS anywhere in the jar's 1105 recipe jsons, it is in no loot table, and it is not placed by either structure NBT. The recipe advancement is shipped without its recipe, so obtainability could not be proved and it was left out; portal_frame, which does have data/prehistoricfauna/recipes/portal_frame.json (clock + henostone), carries the step instead. CONSENSUS CONFLICT (moddb): moddb lists five ids at 3 packs each - thagomizer (0.0), dromaeosaur_claw (0.25), ceratopsian_horn (0.5), ankylosaurus_scute (0.75), tyrannosaur_tooth (1.0). All five are real and all five are on this spine, and their relative order is preserved. The one disagreement is that consensus opens the mod at thagomizer, which is a JURASSIC drop reachable only after two dimension hops; the recipe and advancement graph puts fossils, the map, the temple and the Henos before any of it, so the graph was preferred and the five consensus items were pushed to steps 17-28. Wheel membership is taken from the mod's own collection advancements: anti_lorax names the prehistoric logs, cool_river_monsters names the fish buckets, master_paleontologist names the skulls and skeletal mounts. ALSO DROPPED: every *_spawn_egg (creative-only) and every *_slab/_stairs/_wall/_vertical_slab variant of the henostone, chalk, siltstone and sandstone families."
+}

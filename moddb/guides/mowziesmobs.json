@@ -1,0 +1,327 @@
+{
+ "mod": "mowziesmobs",
+ "jar": "mowziesmobs-1.8.2.jar",
+ "ids_in_jar": 56,
+ "entities_in_jar": 14,
+ "videos": [
+  {
+   "id": "6yryjEkmYrU",
+   "title": "Mowzie's Mobs (1.20.1) | (Full Showcase)",
+   "channel": "Noxus",
+   "views": 417094,
+   "duration": 754,
+   "chars": 12033,
+   "secs": 0
+  }
+ ],
+ "items": {},
+ "entities": {},
+ "human_notes": {
+  "_source": "guide (1 transcribed showcase, heavily auto-translated - mechanics trusted, names re-derived from the jar) + jar loot tables",
+  "how_to_fight": [
+   "entity:mowziesmobs:foliaath only strikes at close range, so the guide's advice is to kill it with a RANGED weapon and never walk into it",
+   "entity:mowziesmobs:ferrous_wroughtnaut has a recovery window: block or dodge its axe swing, then attack while the axe is still travelling. It cannot be out-traded head-on",
+   "entity:mowziesmobs:frostmaw is asleep until approached, and the guide's key trick is that you can STEAL the mowziesmobs:ice_crystal from the sleeping boss first — without its crystal it loses its ice attacks and the fight becomes much easier",
+   "entity:mowziesmobs:umvuthi heals itself by summoning Umvuthana followers every time it loses about 40 HP; you must clear the summons before damaging the boss again or the fight never ends",
+   "entity:mowziesmobs:grottol flees instantly and is best taken with a bow, or captured (mowziesmobs:captured_grottol) rather than fought"
+  ],
+  "diplomacy": [
+   "Wearing an Umvuthana mask makes the Umvuthana village NON-hostile — a peaceful route the quest book can use instead of a kill task",
+   "The masks are mowziesmobs:umvuthana_mask_bliss, :umvuthana_mask_faith, :umvuthana_mask_fear, :umvuthana_mask_fury, :umvuthana_mask_misery, :umvuthana_mask_rage; each grants 1 armour plus a different buff",
+   "The truce breaks if you attack an Umvuthana, break blocks, or loot inside their village"
+  ],
+  "boss_order": [
+   "entity:mowziesmobs:foliaath — jungle ambush mob, earliest threat",
+   "entity:mowziesmobs:ferrous_wroughtnaut — first true boss, in its own underground chamber",
+   "entity:mowziesmobs:frostmaw — snowy boss, must be woken",
+   "entity:mowziesmobs:umvuthi — Sunbird, endgame boss of the Umvuthana camp",
+   "entity:mowziesmobs:sculptor — 'Tongbi, the Sculptor', the 1.8.x addition"
+  ],
+  "prep": [
+   "Ferrous Wroughtnaut is a fixed-arena fight — it does not roam, so it is safe to gate a quest on finding the chamber",
+   "Frostmaw is asleep until provoked, which makes it the one boss a player can choose the timing of"
+  ],
+  "order": [
+   "entity:mowziesmobs:grottol drops plain diamonds and is the low-risk early target",
+   "Wroughtnaut -> its axe and helm -> Frostmaw -> Umvuthi"
+  ],
+  "key_drops": [
+   "mowziesmobs:wrought_axe and mowziesmobs:wrought_helmet — Ferrous Wroughtnaut",
+   "mowziesmobs:ice_crystal — Frostmaw",
+   "mowziesmobs:sol_visage — Umvuthi",
+   "mowziesmobs:sculptor_staff (Geomancer Staff) plus the geomancer set (mowziesmobs:geomancer_robe, :geomancer_belt, :geomancer_beads, :geomancer_sandals) — Sculptor",
+   "mowziesmobs:naga_fang — Naga; feeds mowziesmobs:naga_fang_dagger and the mowziesmobs:blowgun / mowziesmobs:dart line",
+   "mowziesmobs:foliaath_seed — Foliaath; the guide grows a tame Foliaath by feeding it meat",
+   "mowziesmobs:sol_visage is the real prize of the mod: 2 armour plus the Sun's Blessing ability set (Sun Strike, Solar Flare, Solar Beam, Supernova), recharged for free back at the Umvuthana temple",
+   "mowziesmobs:wrought_helmet gives 2 armour and 1 knockback resistance; mowziesmobs:wrought_axe is 'Axe of a Thousand Metals'"
+  ],
+  "traps": [
+   "mowziesmobs:umvuthana_follower_player and mowziesmobs:umvuthana_crane_player are registered and named but are player-summoned allies — no spawn egg, no loot table, no kill advancement. A kill task on them is uncompletable",
+   "The spawn egg is called wroughtnaut_spawn_egg but the ENTITY is mowziesmobs:ferrous_wroughtnaut — do not derive the entity id from the egg name",
+   "mowziesmobs:umvuthana_fury/_rage/_bliss/_faith/_fear/_misery are loot-table variants, not entity types"
+  ],
+  "signature": [
+   "entity:mowziesmobs:ferrous_wroughtnaut",
+   "entity:mowziesmobs:frostmaw",
+   "entity:mowziesmobs:umvuthi",
+   "mowziesmobs:wrought_axe",
+   "mowziesmobs:ice_crystal",
+   "mowziesmobs:sol_visage"
+  ]
+ },
+ "verified_entities": {
+  "mowziesmobs:bluff": {
+   "name": "Bluff",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "mowziesmobs:elokosa": {
+   "name": "",
+   "evidence": [
+    "egg",
+    "loot"
+   ]
+  },
+  "mowziesmobs:elokosa_howler": {
+   "name": "Elokosa Howler",
+   "evidence": [
+    "egg",
+    "lang"
+   ]
+  },
+  "mowziesmobs:ferrous_wroughtnaut": {
+   "name": "Ferrous Wroughtnaut",
+   "evidence": [
+    "boss",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "mowziesmobs:foliaath": {
+   "name": "Foliaath",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "mowziesmobs:frostmaw": {
+   "name": "Frostmaw",
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "mowziesmobs:grottol": {
+   "name": "Grottol",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "mowziesmobs:lantern": {
+   "name": "Lantern",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "mowziesmobs:naga": {
+   "name": "Naga",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "mowziesmobs:sculptor": {
+   "name": "Tongbi, the Sculptor",
+   "evidence": [
+    "boss",
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "mowziesmobs:umvuthana": {
+   "name": "Umvuthana",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "mowziesmobs:umvuthana_crane": {
+   "name": "Umvuthana Crane",
+   "evidence": [
+    "egg",
+    "lang",
+    "tag"
+   ]
+  },
+  "mowziesmobs:umvuthana_raptor": {
+   "name": "Umvuthana Raptor",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "tag"
+   ]
+  },
+  "mowziesmobs:umvuthi": {
+   "name": "Umvuthi, the Sunbird",
+   "evidence": [
+    "boss",
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  }
+ },
+ "unusable_entities": {
+  "mowziesmobs:baby_foliaath": {
+   "name": "Baby Foliaath",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "mowziesmobs:boulder": {
+   "name": "Boulder",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "mowziesmobs:elokosa_follower_howler": {
+   "name": "Elokosa",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "mowziesmobs:umvuthana_crane_player": {
+   "name": "Umvuthana Crane",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "mowziesmobs:umvuthana_follower_player": {
+   "name": "Umvuthana",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "mowziesmobs:umvuthana_follower_raptor": {
+   "name": "Umvuthana",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  }
+ },
+ "verified_items": [
+  "mowziesmobs:blowgun",
+  "mowziesmobs:bluff_rod",
+  "mowziesmobs:bluff_spawn_egg",
+  "mowziesmobs:captured_grottol",
+  "mowziesmobs:clawed_log",
+  "mowziesmobs:dart",
+  "mowziesmobs:earthrend_gauntlet",
+  "mowziesmobs:elokosa_howler_spawn_egg",
+  "mowziesmobs:elokosa_paw_crescent",
+  "mowziesmobs:elokosa_paw_full",
+  "mowziesmobs:elokosa_paw_gibbous",
+  "mowziesmobs:elokosa_paw_half",
+  "mowziesmobs:elokosa_paw_new",
+  "mowziesmobs:elokosa_spawn_egg",
+  "mowziesmobs:foliaath_seed",
+  "mowziesmobs:foliaath_spawn_egg",
+  "mowziesmobs:frostmaw_spawn_egg",
+  "mowziesmobs:geomancer_beads",
+  "mowziesmobs:geomancer_belt",
+  "mowziesmobs:geomancer_robe",
+  "mowziesmobs:geomancer_sandals",
+  "mowziesmobs:glowing_jelly",
+  "mowziesmobs:gong",
+  "mowziesmobs:grant_suns_blessing",
+  "mowziesmobs:grottol_spawn_egg",
+  "mowziesmobs:ice_crystal",
+  "mowziesmobs:lantern_spawn_egg",
+  "mowziesmobs:logo",
+  "mowziesmobs:mob_remover",
+  "mowziesmobs:music_disc_petiole",
+  "mowziesmobs:naga_fang",
+  "mowziesmobs:naga_fang_dagger",
+  "mowziesmobs:naga_spawn_egg",
+  "mowziesmobs:painted_acacia",
+  "mowziesmobs:painted_acacia_slab",
+  "mowziesmobs:raked_sand",
+  "mowziesmobs:red_raked_sand",
+  "mowziesmobs:sand_rake",
+  "mowziesmobs:sculptor_spawn_egg",
+  "mowziesmobs:sculptor_staff",
+  "mowziesmobs:sol_visage",
+  "mowziesmobs:spear",
+  "mowziesmobs:thatch_block",
+  "mowziesmobs:umvuthana_crane_spawn_egg",
+  "mowziesmobs:umvuthana_mask_bliss",
+  "mowziesmobs:umvuthana_mask_faith",
+  "mowziesmobs:umvuthana_mask_fear",
+  "mowziesmobs:umvuthana_mask_fury",
+  "mowziesmobs:umvuthana_mask_misery",
+  "mowziesmobs:umvuthana_mask_rage",
+  "mowziesmobs:umvuthana_raptor_spawn_egg",
+  "mowziesmobs:umvuthana_spawn_egg",
+  "mowziesmobs:umvuthi_spawn_egg",
+  "mowziesmobs:wrought_axe",
+  "mowziesmobs:wrought_helmet",
+  "mowziesmobs:wroughtnaut_spawn_egg"
+ ],
+ "fake_item_ids": [
+  "mowziesmobs:blowgun_using",
+  "mowziesmobs:earthrend_gauntlet_in_hand",
+  "mowziesmobs:elokosa_paw",
+  "mowziesmobs:elokosa_paw_closed",
+  "mowziesmobs:elokosa_paw_new_closed",
+  "mowziesmobs:frostmaw_plushie",
+  "mowziesmobs:sculptor_staff_in_hand",
+  "mowziesmobs:sol_visage_frame",
+  "mowziesmobs:spear_in_hand",
+  "mowziesmobs:sunblock_staff",
+  "mowziesmobs:umvuthana_mask",
+  "mowziesmobs:umvuthana_mask_bliss_frame",
+  "mowziesmobs:umvuthana_mask_faith_frame",
+  "mowziesmobs:umvuthana_mask_fear_frame",
+  "mowziesmobs:umvuthana_mask_frame",
+  "mowziesmobs:umvuthana_mask_fury_frame",
+  "mowziesmobs:umvuthana_mask_misery_frame",
+  "mowziesmobs:umvuthana_mask_rage_frame",
+  "mowziesmobs:wrought_axe_in_hand"
+ ]
+}

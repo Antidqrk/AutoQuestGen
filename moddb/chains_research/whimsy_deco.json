@@ -1,0 +1,216 @@
+{
+  "mod": "whimsy_deco",
+  "verified_against": "whimsy_deco-1.1.jar",
+  "item_count_in_jar": 89,
+  "chain": [
+    {
+      "id": "whimsy_deco:paper_lantern",
+      "title": "Fold a Paper Lantern",
+      "desc": "Paper, a torch, an iron nugget and a wooden slab - the cheapest thing in the set and a light source. Everything else in the lantern family is this one lantern plus a dye, a stick, bamboo or a sapling."
+    },
+    {
+      "id": "whimsy_deco:froggy_chair",
+      "title": "Build the Froggy Chair",
+      "desc": "A bamboo block and lime dye. You can actually sit on it, and four more dye colours exist. One per seat you want at a table."
+    },
+    {
+      "id": "whimsy_deco:moroccan_sofa",
+      "title": "Upholster a Moroccan Sofa",
+      "desc": "Red and green wool over a dark oak log. Wider than the chairs and also sittable, so it is the piece for a living room."
+    },
+    {
+      "id": "whimsy_deco:oak_desk_mirror",
+      "title": "Set a Desk Mirror",
+      "desc": "A glass pane on a wooden slab. Oak, spruce and dark oak versions exist so it matches whatever the rest of the room is built from."
+    },
+    {
+      "id": "whimsy_deco:shower",
+      "title": "Plumb a Shower",
+      "desc": "Iron, a chain and a stone button. Pairs with the Bathroom Rack and the Washing Machine to finish a bathroom; none of the three do anything mechanical."
+    },
+    {
+      "id": "whimsy_deco:cast_iron_trapdoor",
+      "title": "Forge a Cast Iron Trapdoor",
+      "desc": "Pure iron and thinner than the vanilla trapdoor. Along with the Cast Iron Ledge it is the only structural piece the mod adds, meant for balconies and stairwells."
+    },
+    {
+      "id": "whimsy_deco:classic_tile",
+      "title": "Lay Monochrome Tiles",
+      "desc": "Blackstone and quartz. Black Monochrome Bricks and the pale Monochrome Bricks checkerboard against each other, which is what makes this mod's cafes and bathrooms read as tiled floors - make both, in quantity."
+    },
+    {
+      "id": "whimsy_deco:cash_register",
+      "title": "Install a Cash Register",
+      "desc": "Paper, iron, redstone and stone. Clicking it plays a ka-ching - it is shop dressing, not a working till. Dye it black or gray if the counter needs it."
+    },
+    {
+      "id": "whimsy_deco:black_atm",
+      "title": "Wall-Mount an ATM",
+      "desc": "Iron, redstone and a stone button, two blocks tall. Craft the black one first; green, yellow, red and blue are just that one dyed."
+    },
+    {
+      "id": "whimsy_deco:gatcha_machine",
+      "title": "Build the Gacha Machine",
+      "desc": "Iron, redstone, glass, an egg and a button. This is the only block in the mod that actually does something, and it is the sole source of two dozen items - build one before you go collecting."
+    },
+    {
+      "id": "whimsy_deco:gatcha_capsule",
+      "title": "Feed the Machine a Diamond",
+      "desc": "Right-click the Gacha Machine holding a diamond and it spits out a capsule. Diamonds are the only accepted currency, so budget one diamond per pull."
+    },
+    {
+      "id": "whimsy_deco:lucky_cat",
+      "title": "Crack Open Capsules",
+      "desc": "Right-click a capsule for one random item from the gacha pool - plushies, gnomes, lawn mowers, toy planes, globes, the waving Lucky Cat. None of these 24 blocks has a crafting recipe, so pulling capsules is the only way to get any of them, and which one you get is pure luck: budget several diamonds if you are after a specific piece."
+    },
+    {
+      "id": "whimsy_deco:black_curio_cash_register",
+      "title": "Mount the Netherite Curio Register",
+      "desc": "A netherite block, a netherite ingot and a lever. Iron, copper and gold versions cost far less and look nearly the same, so make this one last, when you are decorating for show."
+    }
+  ],
+  "collections": [
+    {
+      "name": "Gacha-exclusive blocks",
+      "note": "Exactly the 24 values of the whimsy_deco:gatcha_drops item tag. NONE of these have a crafting recipe - the Gacha Machine is the only source. Never generate a craft quest for any of them. whimsy_deco:lantern_gnome is deliberately NOT in this list: it has no recipe AND is absent from the tag, so it cannot be obtained at all.",
+      "ids": [
+        "whimsy_deco:gnome",
+        "whimsy_deco:red_lawn_mower",
+        "whimsy_deco:orange_lawn_mower",
+        "whimsy_deco:blue_lawn_mower",
+        "whimsy_deco:yellow_lawn_mower",
+        "whimsy_deco:matryoshka_doll",
+        "whimsy_deco:blue_toy_plane",
+        "whimsy_deco:red_toy_plane",
+        "whimsy_deco:yellow_toy_plane",
+        "whimsy_deco:fufu_plushie",
+        "whimsy_deco:rubber_duck",
+        "whimsy_deco:flower_pig_plushie",
+        "whimsy_deco:golden_pig_plushie",
+        "whimsy_deco:big_panda_plushie",
+        "whimsy_deco:vocal_doll",
+        "whimsy_deco:red_vocal_doll",
+        "whimsy_deco:flamingo_swimming_ring",
+        "whimsy_deco:swan_swimming_ring",
+        "whimsy_deco:black_swan_swimming_ring",
+        "whimsy_deco:lucky_cat",
+        "whimsy_deco:gold_lucky_cat",
+        "whimsy_deco:singing_frog",
+        "whimsy_deco:vintage_globe",
+        "whimsy_deco:antique_vintage_globe"
+      ]
+    },
+    {
+      "name": "Paper lantern variants",
+      "note": "All are the base paper_lantern plus one extra ingredient.",
+      "ids": [
+        "whimsy_deco:paper_lantern",
+        "whimsy_deco:red_paper_lantern",
+        "whimsy_deco:blue_paper_lantern",
+        "whimsy_deco:wood_framed_paper_lantern",
+        "whimsy_deco:bamboo_framed_paper_lantern",
+        "whimsy_deco:tree_paper_lantern"
+      ]
+    },
+    {
+      "name": "ATM colours",
+      "note": "black_atm dyed.",
+      "ids": [
+        "whimsy_deco:black_atm",
+        "whimsy_deco:green_atm",
+        "whimsy_deco:yellow_atm",
+        "whimsy_deco:red_atm",
+        "whimsy_deco:blue_atm"
+      ]
+    },
+    {
+      "name": "Cash registers",
+      "note": "The plain register dyes into black and gray; the four Curio registers are a separate vanilla-metal tier ladder.",
+      "ids": [
+        "whimsy_deco:cash_register",
+        "whimsy_deco:black_cash_register",
+        "whimsy_deco:gray_cash_register",
+        "whimsy_deco:iron_curio_cash_register",
+        "whimsy_deco:copper_curio_cash_register",
+        "whimsy_deco:gold_curio_cash_register",
+        "whimsy_deco:black_curio_cash_register"
+      ]
+    },
+    {
+      "name": "Seating",
+      "ids": [
+        "whimsy_deco:froggy_chair",
+        "whimsy_deco:yellow_froggy_chair",
+        "whimsy_deco:pink_froggy_chair",
+        "whimsy_deco:orange_froggy_chair",
+        "whimsy_deco:blue_froggy_chair",
+        "whimsy_deco:vine_rattan_chair",
+        "whimsy_deco:warped_rattan_chair",
+        "whimsy_deco:rattan_stool",
+        "whimsy_deco:moroccan_sofa"
+      ]
+    },
+    {
+      "name": "Christmas stockings",
+      "ids": [
+        "whimsy_deco:red_stocking",
+        "whimsy_deco:green_stocking",
+        "whimsy_deco:orange_stocking",
+        "whimsy_deco:blue_stocking"
+      ]
+    },
+    {
+      "name": "Life preserver rings",
+      "ids": [
+        "whimsy_deco:yellow_life_preserver_ring",
+        "whimsy_deco:red_life_preserver_ring",
+        "whimsy_deco:orange_life_preserver_ring",
+        "whimsy_deco:blue_life_preserver_ring"
+      ]
+    },
+    {
+      "name": "Phones",
+      "note": "phone dyed black, red or blue.",
+      "ids": [
+        "whimsy_deco:phone",
+        "whimsy_deco:black_phone",
+        "whimsy_deco:red_phone",
+        "whimsy_deco:blue_phone"
+      ]
+    },
+    {
+      "name": "Desk mirrors",
+      "ids": [
+        "whimsy_deco:oak_desk_mirror",
+        "whimsy_deco:spruce_desk_mirror",
+        "whimsy_deco:dark_oak_desk_mirror"
+      ]
+    },
+    {
+      "name": "Odds and ends",
+      "note": "Flat one-step crafts from vanilla materials with no dependencies between them.",
+      "ids": [
+        "whimsy_deco:bamboo_candle",
+        "whimsy_deco:bathroom_rack",
+        "whimsy_deco:washing_machine",
+        "whimsy_deco:horseshoe",
+        "whimsy_deco:golden_horseshoe",
+        "whimsy_deco:dartboard",
+        "whimsy_deco:caution_floor_sign",
+        "whimsy_deco:traffic_cone",
+        "whimsy_deco:cowbell",
+        "whimsy_deco:bronze_cowbell",
+        "whimsy_deco:fan",
+        "whimsy_deco:ship_helm",
+        "whimsy_deco:broom",
+        "whimsy_deco:push_broom",
+        "whimsy_deco:recorder",
+        "whimsy_deco:cast_iron_ledge",
+        "whimsy_deco:cast_iron_trapdoor",
+        "whimsy_deco:classic_tile",
+        "whimsy_deco:light_tile"
+      ]
+    }
+  ],
+  "notes": "THIS IS A DECORATION MOD, not a tech mod. 88 blocks plus one item (the Gacha Capsule), 64 recipes, no advancements, no loot tables beyond block self-drops, no worldgen, no structures. There is exactly ONE mechanic in the whole jar: GachaponMachineBlock takes an item from the whimsy_deco:gatcha_machine_accepts tag (which contains only minecraft:diamond) and returns a whimsy_deco:gatcha_capsule; GatchaCapsuleItem then rolls one random entry from the whimsy_deco:gatcha_drops tag. The 24 ids listed in the Gacha-exclusive collection have NO crafting recipe anywhere in the jar - the machine is their only source, so a craft quest for any of them is uncompletable. whimsy_deco:lantern_gnome is a trap: it looks like one of the gnome variants but it has neither a recipe nor a place in the gatcha_drops tag, so it is unobtainable in survival and must never appear in a quest. Every one of the 89 blocks does have a self-drop loot table, so anything craftable is also re-collectable. The ATMs and cash registers are cosmetic despite the 'Purchasing' JEI category: ATMBlock has no interaction logic and CashRegisterBlock only plays a sound, so do not write quests implying you can buy or store anything with them. The chain above is therefore a suggested BUILD ORDER by vanilla material cost (paper/wood -> iron -> diamond -> netherite), not a tech tree; the only genuine dependency edges in the jar are paper_lantern -> its five variants, cash_register -> its two dyes, black_atm -> its four dyes, and gatcha_machine -> gatcha_capsule -> the gacha pool. Several blocks are two blocks tall (ATM, Gacha Machine, Shower) via MultiblockHandler."
+}

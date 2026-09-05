@@ -1,0 +1,349 @@
+{
+ "mod": "createdieselgenerators",
+ "ids_in_jar": 113,
+ "videos": [
+  {
+   "id": "1vFVgecUy-Y",
+   "title": "A Complete Guide - Diesel Generators Create Add On Mod",
+   "channel": "TubeAndKnuckle",
+   "views": 49500,
+   "duration": 843,
+   "chars": 11766,
+   "src": "vetted_search"
+  },
+  {
+   "id": "womIX5mLMrw",
+   "title": "Create Diesel Generators mod. Pump jack. Engines. Tutorial 1.18.2-1.20.1 (minecraft java)",
+   "channel": "Minecraft Easy gaming",
+   "views": 45299,
+   "duration": 1228,
+   "chars": 17260,
+   "src": "vetted_search"
+  },
+  {
+   "id": "WkIWK0bWqJY",
+   "title": "This Minecraft Create Addon Adds Cool New Power Sources, Oil Based Fuels and More!-Diesel Generators",
+   "channel": "Kwizzle Hazzizle",
+   "views": 151052,
+   "duration": 682,
+   "chars": 12533,
+   "src": "vetted_search"
+  },
+  {
+   "id": "_9pss-l4CXw",
+   "title": "Create : Diesel Generators Mod : Pumpjacks, Diesel Engines, Distillation Towers & More",
+   "channel": "Savage Vegeta",
+   "views": 30932,
+   "duration": 600,
+   "chars": 8902,
+   "src": "vetted_search"
+  }
+ ],
+ "items": {
+  "createdieselgenerators:diesel_engine": {
+   "mentions": 40,
+   "videos": 4,
+   "first_at": 0.3231,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 4
+  },
+  "createdieselgenerators:pumpjack_hole": {
+   "mentions": 14,
+   "videos": 2,
+   "first_at": 0.3317,
+   "praise": 11,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "createdieselgenerators:pumpjack_bearing": {
+   "mentions": 10,
+   "videos": 2,
+   "first_at": 0.3129,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createdieselgenerators:huge_diesel_engine": {
+   "mentions": 9,
+   "videos": 4,
+   "first_at": 0.3942,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "createdieselgenerators:burner": {
+   "mentions": 8,
+   "videos": 3,
+   "first_at": 0.3743,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createdieselgenerators:pumpjack_crank": {
+   "mentions": 8,
+   "videos": 2,
+   "first_at": 0.3136,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "createdieselgenerators:pumpjack_head": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.3492,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createdieselgenerators:chemical_sprayer": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.853,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createdieselgenerators:diesel_bucket": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.2822,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createdieselgenerators:distillation_controller": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.6472,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createdieselgenerators:engine_silencer": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.9429,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createdieselgenerators:asphalt_block": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.9593,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createdieselgenerators:canister": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3122,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createdieselgenerators:basin_lid": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7708,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createdieselgenerators:engine_turbocharger": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9461,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createdieselgenerators:biodiesel_bucket": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.863,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createdieselgenerators:hammer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.297,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "ids": [
+     "createdieselgenerators:oil_scanner"
+    ],
+    "note": "The oil scanner is step one. Nothing else in the mod can start until a chunk with oil is found, and the guides open on it every time.",
+    "video": "1vFVgecUy-Y"
+   },
+   {
+    "ids": [
+     "createdieselgenerators:pumpjack_hole",
+     "createdieselgenerators:pumpjack_bearing",
+     "createdieselgenerators:pumpjack_head",
+     "createdieselgenerators:pumpjack_crank"
+    ],
+    "note": "Second: the four special pumpjack blocks. Both guides build them in this exact sequence - hole first (it must sit in the oil chunk), then bearing, then head directly above the hole, then crank. Two bearings are required, not one.",
+    "video": "WkIWK0bWqJY"
+   },
+   {
+    "ids": [
+     "createdieselgenerators:crude_oil_bucket",
+     "createdieselgenerators:distillation_controller"
+    ],
+    "note": "Third: crude oil is useless raw. It goes into a Create fluid tank multiblock converted by the distillation controller, which splits it into diesel and gasoline.",
+    "video": "WkIWK0bWqJY"
+   },
+   {
+    "ids": [
+     "createdieselgenerators:diesel_engine",
+     "createdieselgenerators:large_diesel_engine",
+     "createdieselgenerators:huge_diesel_engine"
+    ],
+    "note": "Fourth: the engine tier ladder, always taught in this order - basic diesel engine, then modular (large) diesel engine, then huge diesel engine as the endgame power source.",
+    "video": "WkIWK0bWqJY"
+   }
+  ],
+  "gates": [
+   {
+    "ids": [
+     "createdieselgenerators:pumpjack_hole"
+    ],
+    "note": "HARD GATE: a pipe column from the pumpjack hole all the way down to bedrock, one per hole. The pumpjack shows an explicit error and produces nothing without it. Both guides stop and dig for this.",
+    "video": "WkIWK0bWqJY"
+   },
+   {
+    "ids": [
+     "createdieselgenerators:distillation_controller"
+    ],
+    "note": "HARD GATE ON COST: in survival you need one distillation controller per fluid tank in the multiblock. A full 3x3x3 tower costs 27 of them. This is the real price of the mod's midgame and a jar scan shows it as a single cheap item.",
+    "video": "1vFVgecUy-Y"
+   },
+   {
+    "ids": [
+     "createdieselgenerators:distillation_controller",
+     "createdieselgenerators:crude_oil_bucket"
+    ],
+    "note": "Distillation needs a lit Create blaze burner underneath and fuel fed to it, otherwise the crude oil just sits there.",
+    "video": "1vFVgecUy-Y"
+   },
+   {
+    "ids": [
+     "createdieselgenerators:basin_lid",
+     "createdieselgenerators:ethanol_bucket"
+    ],
+    "note": "GATE: ethanol will not ferment in an open basin. The basin lid is mandatory, and it is the kind of one-block requirement players miss entirely.",
+    "video": "WkIWK0bWqJY"
+   },
+   {
+    "ids": [
+     "createdieselgenerators:huge_diesel_engine"
+    ],
+    "note": "GATE: huge diesel engines must have a shaft attached or they do not run at all, and unlike modular engines every single one needs its own fuel feed.",
+    "video": "WkIWK0bWqJY"
+   },
+   {
+    "ids": [
+     "createdieselgenerators:large_diesel_engine"
+    ],
+    "note": "Modular (large) diesel engines chain their fuel - only the first needs a supply pipe. Standard diesel engines each need their own.",
+    "video": "WkIWK0bWqJY"
+   }
+  ],
+  "traps": [
+   {
+    "ids": [
+     "createdieselgenerators:pumpjack_hole"
+    ],
+    "note": "MAJOR TRAP, invisible to any jar or recipe scan: the pumpjack hole recipe does not show up in JEI/REI. A player following JEI will conclude the item is uncraftable. Recipe is 2 Create fluid pipes (top and bottom), 2 vanilla chains, copper casing in the centre. A quest for this mod should spell the recipe out.",
+    "video": "1vFVgecUy-Y"
+   },
+   {
+    "ids": [
+     "createdieselgenerators:pumpjack_head",
+     "createdieselgenerators:pumpjack_bearing"
+    ],
+    "note": "TRAP: the short 3-high pumpjack produces measurably less oil for identical stress cost. Build the 4-high one only. Conversely a longer arm is wasted effort - it looks better and yields nothing extra.",
+    "video": "1vFVgecUy-Y"
+   },
+   {
+    "ids": [
+     "createdieselgenerators:diesel_engine"
+    ],
+    "note": "TRAP: the plain diesel engine is treated as a throwaway stepping stone by the deeper guide, which literally skips it.",
+    "video": "1vFVgecUy-Y"
+   },
+   {
+    "ids": [
+     "createdieselgenerators:ethanol_bucket"
+    ],
+    "note": "TRAP: ethanol is the worst fuel in the mod at 1024 SU, a third of diesel. Fine as a biodiesel ingredient, bad as an end fuel.",
+    "video": "WkIWK0bWqJY"
+   },
+   {
+    "ids": [
+     "createdieselgenerators:engine_turbocharger",
+     "createdieselgenerators:engine_silencer"
+    ],
+    "note": "CONTRADICTION BETWEEN GUIDES - resolve in favour of the deeper one. The complete-guide video guesses these do nothing; the dedicated mod-review video demonstrates the turbocharger doubling engine speed and the silencer muting it. The turbocharger also cannot be fitted to modular/large engines, and the silencer must be removed before a turbocharger can be added.",
+    "video": "WkIWK0bWqJY"
+   }
+  ],
+  "signature": [
+   {
+    "ids": [
+     "createdieselgenerators:huge_diesel_engine"
+    ],
+    "note": "The whole point of the mod. A bank of 40 huge engines is shown producing 368,000 SU at 128 RPM - stress on a scale base Create cannot reach. This is what the mod is remembered for.",
+    "video": "1vFVgecUy-Y"
+   },
+   {
+    "ids": [
+     "createdieselgenerators:pumpjack_head",
+     "createdieselgenerators:pumpjack_crank",
+     "createdieselgenerators:crude_oil_bucket"
+    ],
+    "note": "The working pumpjack is the mod's identity - a moving multiblock that drills real located oil. Both guides spend the largest single block of runtime building it step by step.",
+    "video": "WkIWK0bWqJY"
+   },
+   {
+    "ids": [
+     "createdieselgenerators:diesel_bucket",
+     "createdieselgenerators:gasoline_bucket",
+     "createdieselgenerators:biodiesel_bucket",
+     "createdieselgenerators:plant_oil_bucket",
+     "createdieselgenerators:ethanol_bucket"
+    ],
+    "note": "Measured fuel ladder, ideal as a quest progression: diesel 3072 SU @96rpm > biodiesel 2048 > gasoline 2048 > plant oil 2048 @74rpm > ethanol 1024 @96rpm. Plant oil is the only fuel that changes RPM.",
+    "video": "WkIWK0bWqJY"
+   }
+  ]
+ }
+}

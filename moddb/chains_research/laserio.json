@@ -1,0 +1,138 @@
+{
+ "mod": "laserio",
+ "verified_against": "laserio-1.6.8.jar",
+ "item_count_in_jar": 19,
+ "chain": [
+  {
+   "id": "laserio:logic_chip_raw",
+   "title": "Raw Logic Chip",
+   "desc": "A block of quartz, gold nuggets, redstone and a clay ball; the single component every other item in the mod is built from."
+  },
+  {
+   "id": "laserio:logic_chip",
+   "title": "Logic Chip",
+   "desc": "Smelt the raw chip. Set up a stack of these before you go further - a working LaserIO network eats them by the dozen."
+  },
+  {
+   "id": "laserio:laser_connector",
+   "title": "Laser Connector",
+   "desc": "Iron, glass, redstone and a Logic Chip. Place one on any inventory, machine or energy block; it is the socket the whole network plugs into."
+  },
+  {
+   "id": "laserio:laser_node",
+   "title": "Laser Node",
+   "desc": "Iron and glass panes around a Laser Connector. Nodes hold the cards and link to connectors by line of sight, so there is no cable to route."
+  },
+  {
+   "id": "laserio:card_item",
+   "title": "Item Card",
+   "desc": "Gold nuggets, lapis, quartz and redstone around a Logic Chip. Slot it into a node's face and set it to Extract, Insert, Stock or Sensor - one card does all four jobs."
+  },
+  {
+   "id": "laserio:laser_wrench",
+   "title": "Laser Wrench",
+   "desc": "Iron around a Logic Chip; it rotates nodes, copies a node's whole card layout and shows you where the beams are actually going."
+  },
+  {
+   "id": "laserio:filter_basic",
+   "title": "Basic Filter",
+   "desc": "Iron bars and glass panes around a Logic Chip; drop it into a card to whitelist or blacklist up to fifteen exact items."
+  },
+  {
+   "id": "laserio:card_holder",
+   "title": "Card Holder",
+   "desc": "A chest and iron around a Logic Chip; it carries a stack of configured cards so you can build out a network without walking back to storage."
+  },
+  {
+   "id": "laserio:overclocker_card",
+   "title": "Overclocker Card",
+   "desc": "Gold and redstone around a Logic Chip. Stack these into a card to raise how much it moves per tick, at the cost of more energy per operation."
+  },
+  {
+   "id": "laserio:card_energy",
+   "title": "Energy Card",
+   "desc": "A redstone block, quartz, gold nuggets and redstone around a Logic Chip; it moves FE between connectors exactly the way the item card moves items."
+  },
+  {
+   "id": "laserio:card_fluid",
+   "title": "Fluid Card",
+   "desc": "The same shape with a bucket in it; fluids follow the same Extract/Insert/Stock/Sensor modes as everything else."
+  },
+  {
+   "id": "laserio:card_redstone",
+   "title": "Redstone Card",
+   "desc": "Quartz, gold nuggets and redstone around a Logic Chip; it reads and emits redstone across the network, turning the laser mesh into a signal bus."
+  },
+  {
+   "id": "laserio:filter_count",
+   "title": "Count Filter",
+   "desc": "An observer plus a Basic Filter. It filters by exact stack counts, which is what makes a Stock card actually hold a target number in a machine."
+  },
+  {
+   "id": "laserio:filter_tag",
+   "title": "Tag Filter",
+   "desc": "Paper plus a Basic Filter; match by item tag instead of by item, so one card handles every ingot or every log at once."
+  },
+  {
+   "id": "laserio:filter_mod",
+   "title": "Mod Filter",
+   "desc": "A book plus a Basic Filter; match everything from a given mod, the fastest way to sort a mixed output stream by namespace."
+  },
+  {
+   "id": "laserio:filter_nbt",
+   "title": "NBT Filter",
+   "desc": "White wool plus a Basic Filter; match on NBT so enchanted books, charged cells and damaged tools stop sharing a slot."
+  },
+  {
+   "id": "laserio:overclocker_node",
+   "title": "Node Overclocker",
+   "desc": "Diamonds and redstone around a Logic Chip; where the card overclocker speeds one card, this speeds the whole node."
+  },
+  {
+   "id": "laserio:laser_connector_advanced",
+   "title": "Advanced Connector",
+   "desc": "Ender pearls, diamonds, gold and redstone around a basic Connector; it reaches much further and connects across chunk lines that stop the basic one."
+  },
+  {
+   "id": "laserio:card_cloner",
+   "title": "Card Cloner",
+   "desc": "Paper and iron around a Logic Chip; stamp one configured card and print copies of it, which is the only sane way to wire a large base."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "laserio:card_item",
+   "members": [
+    "laserio:card_fluid",
+    "laserio:card_energy",
+    "laserio:card_redstone",
+    "laserio:card_holder",
+    "laserio:card_cloner",
+    "laserio:overclocker_card"
+   ]
+  },
+  {
+   "hub": "laserio:filter_basic",
+   "members": [
+    "laserio:filter_count",
+    "laserio:filter_mod",
+    "laserio:filter_nbt",
+    "laserio:filter_tag",
+    "laserio:card_holder",
+    "laserio:card_cloner"
+   ]
+  },
+  {
+   "hub": "laserio:laser_connector_advanced",
+   "members": [
+    "laserio:laser_connector",
+    "laserio:laser_node",
+    "laserio:laser_wrench",
+    "laserio:overclocker_node",
+    "laserio:logic_chip",
+    "laserio:logic_chip_raw"
+   ]
+  }
+ ],
+ "notes": "THE CARDS ARE THE CONTENT. LaserIO ships 19 items and 4 of them are infrastructure (raw chip, chip, connector, node); the other 15 are cards, filters and overclockers, and the mod's actual depth is in card CONFIGURATION - each card has four modes (Extract, Insert, Stock, Sensor), a channel colour, a priority, a round-robin toggle and a filter slot - none of which is a separate registered item. A quest chain therefore has to quest the cards and describe the modes, because there is no deeper item tier to reach for. All 19 items are quested here: 19 in the chain, all 19 across the three wheels. Nothing dropped - every id has a crafting or smelting recipe in data/laserio/recipes. VERIFICATION AND A CORRECTED OVERCOUNT: the naive models INTERSECT lang pass finds 29 item models but only 19 lang keys. The 10 extras (card_item_extract, card_item_stock, card_item_sensor and the same three each for fluid, energy plus card_redstone_extract) are NOT items - assets/laserio/models/item/card_item.json declares them as predicate overrides on 'laserio:mode', and each extra file is a one-line child model that only swaps layer1 to a different mode texture. Confirmed by reading the parent model. Pass 2 re-derived the id set independently from .class constant-pool strings, item textures, blockstates, recipe results and loot tables: all 19 corroborated, nothing missed. The mod also declares a hard dependency on patchouli and ships a guide book, but the book is a patchouli:guide_book with NBT rather than a laserio-namespaced item, so no manual id appears here. JAR SOURCE: LaserIO is not published on Modrinth - the only 1.20.1 Forge builds are on CurseForge (project 626839), and 1.6.8 (file 5074767, 2024-02-01) is the newest. CurseForge tags that file for both Forge and NeoForge on 1.20.1; META-INF/mods.toml is present and there is no fabric.mod.json, Java 17 class files, so it is a valid Forge jar. Its declared minecraft versionRange is the loose [1.18.2,) and pack_format is 9, which is normal for this multi-version single-jar mod and is not evidence of a wrong-version build - the CurseForge 1.20.1+Forge filter and the class-file version are what confirm it. NO CONSENSUS DATA: moddb.json has no laserio entry, so the ordering here is the recipe dependency graph alone (raw chip -> chip -> connector -> node -> cards, filters branching off filter_basic, advanced connector off basic)."
+}

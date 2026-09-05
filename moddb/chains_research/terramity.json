@@ -1,0 +1,216 @@
+{
+ "mod": "terramity",
+ "verified_against": "terramity-0.9.8-forge-1.20.1.jar",
+ "item_count_in_jar": 569,
+ "chain": [
+  {
+   "id": "terramity:cardboard_necklace",
+   "title": "First Step",
+   "desc": "Two cardboard and a cardboard block make the mod's official starter accessory - it is literally Terramity's first advancement, and it teaches you the accessory slots every later boss fight leans on."
+  },
+  {
+   "id": "terramity:fairy_dust",
+   "title": "Villain Arc",
+   "desc": "Fairies flit around almost every overworld biome; bottling or bonking one drops fairy dust, the magic binder in the lightning sceptre and staff you will need to summon your second boss."
+  },
+  {
+   "id": "terramity:daemonium",
+   "title": "Ceiling Shopping",
+   "desc": "Daemonium ore hangs from the roof of the Nether. Every gun part, circuit board, and dimlite/virentium/cosmilite smithing template in the mod wants this gem, so mine a stack while you are up there."
+  },
+  {
+   "id": "terramity:prismatic_jewel",
+   "title": "Colorful Crystal",
+   "desc": "Shapeless-craft ruby, sapphire, topaz, onyx, an iridescent shard, emerald, diamond, amethyst and quartz into one jewel. It is the key to the Ocarina of Power now and the multiplier for antiprisms at endgame."
+  },
+  {
+   "id": "structure:terramity:court_of_gnomes",
+   "title": "The Court of Gnomes",
+   "desc": "Hidden in dark forests and swamps stands a golden gnome statue ringed by gnomes. Take a Red Gnome Hat from its residents - right-clicking the statue while carrying one wakes the first boss."
+  },
+  {
+   "id": "kill:terramity:gob",
+   "title": "Regicide, But Small",
+   "desc": "Gob, King of Gnomes is boss one of four; netherite gear is the recommended floor. He drops the dimlite upgrade smithing template - the gate into Terramity's first metal tier."
+  },
+  {
+   "id": "terramity:dimlite_ingot",
+   "title": "Power of the Deep Dark",
+   "desc": "Smelt deepslate dimlite ore (Y-44 to Y-64) into untapped dimlite, then craft four of it with echo shards. Gob's template smiths your netherite gear into dimlite, the tier that can finally break iridium ore."
+  },
+  {
+   "id": "terramity:virentium_alloy_ingot",
+   "title": "Power of the Lush Caves",
+   "desc": "Netherite scrap fused with gaianite clusters from lush-cave ore makes virentium, dimlite's sidegrade tier - samurai armor with its own template. Pick either ladder; both can mine what comes next."
+  },
+  {
+   "id": "terramity:lightning_staff",
+   "title": "Playing God with Weather",
+   "desc": "Upgrade a lightning sceptre (fairy dust, topaz, copper) with daemonium and a topaz block. It calls real lightning - and striking the ground NEXT to a sniffer is how you summon boss number two."
+  },
+  {
+   "id": "kill:terramity:super_sniffer",
+   "title": "The Legendary Super Sniffer",
+   "desc": "Fight it in an arena with obsidian cover; its spirit bomb erases lesser builds. The Super Sniffer drops the cosmilite upgrade smithing template, unlocking the End-metal tier."
+  },
+  {
+   "id": "terramity:cosmilite_ingot",
+   "title": "Power of the Cosmos",
+   "desc": "Stellar remnants seed the End between Y=50 and Y=0; four cosmic scrap plus four gold ingots make cosmilite. Sorcerer's robes and tools of this tier carry you through the Trial Guardian."
+  },
+  {
+   "id": "terramity:iridium",
+   "title": "Base of All Alloys",
+   "desc": "Iridium ore lurks deep in every dimension and only yields to a dimlite, virentium or cosmilite pickaxe. Stockpile it - hellspec, void alloy and conductite each eat four ingots per craft."
+  },
+  {
+   "id": "terramity:spire_key",
+   "title": "Keys to the Spire",
+   "desc": "Trial Spires rise out of the ocean; loot spire keys from their chambers on the climb. The keyhole at the top takes one and wakes the third boss."
+  },
+  {
+   "id": "kill:terramity:trial_guardian",
+   "title": "No Guns Allowed",
+   "desc": "The Trial Guardian is immune to ALL projectile damage - this is a melee exam. It drops the perish staff plus the hellspec and conductite smithing templates, and behind it waits black matter."
+  },
+  {
+   "id": "terramity:black_matter",
+   "title": "Blacker Than Black",
+   "desc": "With the Trial Guardian's perish staff you can finally harvest bedrock black matter ore off the Nether's surface. This is the catalyst in every tier-three alloy, so mine plenty."
+  },
+  {
+   "id": "terramity:hellspec_alloy",
+   "title": "Power of Hell",
+   "desc": "Four iridium, black matter, and four chthonic crystals (mined from Nether brimslag) alloy into hellspec. Its pickaxe is one of the three that can break profaned ore - your route to the top of the metal graph."
+  },
+  {
+   "id": "terramity:empty_essence",
+   "title": "Something from Nothing",
+   "desc": "Toss black matter into a pool of stygian blood - the Trial Spire has some - and it comes back as empty essence. Void alloy wants four per ingot, and a black hole will want the rest later."
+  },
+  {
+   "id": "terramity:void_alloy",
+   "title": "Power of the Void",
+   "desc": "Four iridium, black matter, and four empty essence make void alloy, hellspec's sibling tier and a component of the black hole bomb you will need for exodium."
+  },
+  {
+   "id": "terramity:conductite",
+   "title": "Power of Electricity",
+   "desc": "Four iridium, black matter, and four circuit boards make conductite - the electric third of tier three, feeding the laser rifle, the railgun, and the Moondrill Cannon that mines the moon itself."
+  },
+  {
+   "id": "terramity:profanum",
+   "title": "Frenzied Flame",
+   "desc": "Profaned ore (Y-10 to Y-64) needs a hellspec, void or conductite pickaxe, and the refined ingot burns so hot it ignites you through your inventory. Every top-tier metal is built on it - handle with care."
+  },
+  {
+   "id": "terramity:occult_fabric",
+   "title": "Cloth of the Cult",
+   "desc": "Dive beneath the Nether's lava lakes to raid a Chthonic Dungeon for occult fabric. Laying it on the pedestal of a Chthonic Cathedral on the Nether roof summons the final bosses."
+  },
+  {
+   "id": "kill:terramity:gundalf",
+   "title": "The Shadow Wizards",
+   "desc": "Archmage Gundalf and his fellow Shadow Wizards are the fourth and final progression bosses - fight them inside the cathedral arena in void, hellspec or conductite gear. Their fall unlocks antiprisms."
+  },
+  {
+   "id": "terramity:antiprism",
+   "title": "Light's Opposite",
+   "desc": "The wizards drop your seed antiprisms; craft one with prismatic jewels to multiply it into six. Antiprism plus profanum plus one exotic ingredient is the formula for all three ultimate metals."
+  },
+  {
+   "id": "terramity:angel_feather",
+   "title": "Third Impact",
+   "desc": "Forge an Unholy Lance from hellspec and profanum, hurl it into the overworld sky, and heaven answers with Virtue. Slay the angel for the feathers Reverium demands."
+  },
+  {
+   "id": "terramity:reverium",
+   "title": "Power of the Heavens",
+   "desc": "Angel feather, antiprism and profanum craft two reverium - the holy endgame metal behind Paladin armor and the Stairway to Heaven gun."
+  },
+  {
+   "id": "terramity:opaline_moonstone",
+   "title": "They Need the Moon!",
+   "desc": "Build a Moondrill Cannon from circuit boards, conductite and profanum, then fire it to blast valuable chunks straight off the moon. Each moonstone feeds a nyxium craft."
+  },
+  {
+   "id": "terramity:nyxium",
+   "title": "Power of the Moon",
+   "desc": "Opaline moonstone, antiprism and profanum make two nyxium ingots - Knight's armor and the greatsword line for pure melee endgame."
+  },
+  {
+   "id": "terramity:cracked_microcosm",
+   "title": "Dangerous Endeavor",
+   "desc": "Detonate a black hole bomb (void alloy, profanum, decayed bedrock dust, TNT), then throw empty essence into the singularity it leaves. What comes back is a cracked pocket universe."
+  },
+  {
+   "id": "terramity:exodium_superalloy",
+   "title": "Power of ???",
+   "desc": "Cracked microcosm, antiprism and profanum craft exodium, the reality-bending third ultimate metal - Warlock armor, the war axe, and the macro black hole bomb all start here."
+  },
+  {
+   "id": "kill:terramity:ultra_sniffer",
+   "title": "The Omnipotent Ultra Sniffer",
+   "desc": "Strike the Super Sniffer with lightning in phase two below 10% health and the true superboss emerges. It sits outside normal progression, is nigh-unkillable, and pays out the best gear in the mod - including the Kamehameha."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "terramity:ruby",
+   "members": [
+    "terramity:sapphire",
+    "terramity:topaz",
+    "terramity:onyx",
+    "terramity:iridescent_shard"
+   ]
+  },
+  {
+   "hub": "terramity:gunsmith_station",
+   "members": [
+    "terramity:flintlock_pistol",
+    "terramity:blunderbuss",
+    "terramity:basic_pistol",
+    "terramity:basic_rifle",
+    "terramity:elite_rifle",
+    "terramity:railgun",
+    "terramity:stairway_to_heaven"
+   ]
+  },
+  {
+   "hub": "terramity:ocarina_of_power",
+   "members": [
+    "terramity:music_sheet_of_power",
+    "terramity:music_sheet_of_defense",
+    "terramity:music_sheet_of_life",
+    "terramity:music_sheet_of_storms",
+    "terramity:music_sheet_of_time",
+    "terramity:music_sheet_of_the_gnome_king",
+    "terramity:music_sheet_of_the_legendary_super_sniffer",
+    "terramity:music_sheet_of_the_trial_guardian",
+    "terramity:music_sheet_of_the_shadow_wizards"
+   ]
+  },
+  {
+   "hub": "terramity:gobs_claymore",
+   "members": [
+    "terramity:belt_of_the_gnome_king",
+    "terramity:gobs_gilded_hat_helmet",
+    "terramity:super_sniffers_pelt",
+    "terramity:guardians_hand",
+    "terramity:gundalfs_hat_helmet",
+    "terramity:kamehameha"
+   ]
+  },
+  {
+   "hub": "terramity:agility_ring",
+   "members": [
+    "terramity:all_seeing_scarf",
+    "terramity:ancient_stone_mask",
+    "terramity:archangel_halo",
+    "terramity:excalibur",
+    "terramity:warden_soul"
+   ]
+  }
+ ],
+ "notes": "Terraria-style boss-ladder mod. Order comes from the mod's own Patchouli guidebook (overview/progession_guide.json: metal graph + 'bosses are ordered first to last') and boss entries: Gob (1st), Super Sniffer (2nd), Trial Guardian (3rd), Shadow Wizards (4th/final), Ultra Sniffer (superboss, outside progression). Metal tiers verified from recipes: T1 dimlite (untapped_dimlite+echo shards, smithing template from Gob, transforms NETHERITE gear) = virentium (netherite scrap+gaianite) = cosmilite (raw_cosmilite+gold, template from Super Sniffer); T2 iridium (needs T1 pick); T3 hellspec/void_alloy/conductite (4 iridium + black_matter + chthonic_crystal/empty_essence/circuit_board, black matter gated on Trial Guardian's perish_staff); profanum ore needs a T3 pick; T4 nyxium/reverium/exodium = profanum + antiprism (Shadow Wizards drop) + moonstone/angel feather/cracked microcosm. Shadow Wizards kill target uses entity id 'gundalf' (Archmage Gundalf, drops the antiprisms); 'circe' and 'merlin' entities exist but have no loot tables. Excalibur is pulled from the Sword Shrine structure at 13+ hearts, not crafted. Slot-machine/casino advancements exist but are pure gambling flavor - left out. Item count = item.terramity.* lang keys."
+}

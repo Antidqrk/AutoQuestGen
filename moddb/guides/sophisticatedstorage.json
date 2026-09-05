@@ -1,0 +1,192 @@
+{
+ "mod": "sophisticatedstorage",
+ "ids_in_jar": 146,
+ "videos": [],
+ "items": {},
+ "human_notes": {
+  "order": [
+   {
+    "note": "The entry point is NOT crafting a new container - it is the basic tier upgrade, a wooden rod and a lever, applied to a vanilla chest or barrel to convert it in place. Cheapest possible start and the thing new players miss.",
+    "ids": [
+     "sophisticatedstorage:basic_tier_upgrade"
+    ]
+   },
+   {
+    "note": "The upgrade base second - iron plus planks, and it gates the entire upgrade column exactly as its sibling does in Sophisticated Backpacks.",
+    "ids": [
+     "sophisticatedstorage:upgrade_base"
+    ]
+   },
+   {
+    "note": "Then tier the container up for capacity and, more importantly, upgrade slots.",
+    "ids": [
+     "sophisticatedstorage:iron_barrel",
+     "sophisticatedstorage:barrel"
+    ]
+   },
+   {
+    "note": "The controller last - it needs a comparator and an existing wooden-tier storage block.",
+    "ids": [
+     "sophisticatedstorage:controller"
+    ]
+   }
+  ],
+  "ladder": [
+   {
+    "note": "CONTAINER TIER LADDER, each crafted from the previous. Copper and iron both branch directly off the base barrel; from iron it is a single line up to netherite. The same ladder exists for chests and shulker boxes.",
+    "ids": [
+     "sophisticatedstorage:barrel",
+     "sophisticatedstorage:copper_barrel",
+     "sophisticatedstorage:iron_barrel",
+     "sophisticatedstorage:gold_barrel",
+     "sophisticatedstorage:diamond_barrel",
+     "sophisticatedstorage:netherite_barrel"
+    ]
+   },
+   {
+    "note": "PARALLEL in-place upgrade items, every one of them a metal plus a LEVER. These convert a placed, full container without emptying it - the reason the mod is pleasant to use. Skip-tier variants exist too (basic straight to diamond).",
+    "ids": [
+     "sophisticatedstorage:basic_tier_upgrade",
+     "sophisticatedstorage:basic_to_copper_tier_upgrade",
+     "sophisticatedstorage:copper_to_iron_tier_upgrade",
+     "sophisticatedstorage:iron_to_gold_tier_upgrade",
+     "sophisticatedstorage:gold_to_diamond_tier_upgrade",
+     "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
+    ]
+   },
+   {
+    "note": "Network ladder: a controller aggregates storage, links extend it to blocks that do not touch, and the io/input/output blocks give automation a defined entry and exit.",
+    "ids": [
+     "sophisticatedstorage:controller",
+     "sophisticatedstorage:storage_link",
+     "sophisticatedstorage:storage_io",
+     "sophisticatedstorage:storage_input",
+     "sophisticatedstorage:storage_output"
+    ]
+   },
+   {
+    "note": "Stack upgrades climb separately. Note the difference from the backpack version: tier 1 here is built from LOGS, not a metal block, so it is far cheaper than the backpack equivalent of the same name.",
+    "ids": [
+     "sophisticatedstorage:stack_upgrade_tier_1",
+     "sophisticatedstorage:stack_upgrade_tier_2",
+     "sophisticatedstorage:stack_upgrade_tier_3",
+     "sophisticatedstorage:stack_upgrade_tier_4",
+     "sophisticatedstorage:stack_upgrade_omega_tier"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "The upgrade base gates every functional upgrade, and the decoration table needs one too.",
+    "ids": [
+     "sophisticatedstorage:upgrade_base",
+     "sophisticatedstorage:decoration_table"
+    ]
+   },
+   {
+    "note": "Controller, io, input and output all require an existing base-tier WOODEN storage block in the recipe - you cannot build the network out of raw materials alone.",
+    "ids": [
+     "sophisticatedstorage:controller",
+     "sophisticatedstorage:storage_io"
+    ]
+   },
+   {
+    "note": "Storage links and the storage tool need ender pearls, so the network half of the mod is Nether-gated even though the containers are not.",
+    "ids": [
+     "sophisticatedstorage:storage_link",
+     "sophisticatedstorage:storage_tool"
+    ]
+   },
+   {
+    "note": "Shulker boxes need an actual shulker shell, so that branch is End-gated regardless of tier.",
+    "ids": [
+     "sophisticatedstorage:shulker_box"
+    ]
+   }
+  ],
+  "payoff": [
+   {
+    "note": "Upgrading a placed, full chest in-world with a lever-based tier upgrade is the standout convenience - no other storage mod in this pack does that.",
+    "ids": [
+     "sophisticatedstorage:basic_tier_upgrade",
+     "sophisticatedstorage:iron_to_gold_tier_upgrade"
+    ]
+   },
+   {
+    "note": "Packing tape is the quiet favourite - it lets a full storage block be picked up and moved with its contents intact.",
+    "ids": [
+     "sophisticatedstorage:packing_tape",
+     "sophisticatedstorage:super_packing_tape"
+    ]
+   },
+   {
+    "note": "The controller turning a wall of barrels into one inventory is the structural payoff, same shape as the drawer mods.",
+    "ids": [
+     "sophisticatedstorage:controller"
+    ]
+   },
+   {
+    "note": "Limited barrels are the display-friendly variant - fewer item types but much larger stacks, and they show contents on the block face.",
+    "ids": [
+     "sophisticatedstorage:limited_barrel_1",
+     "sophisticatedstorage:limited_barrel_4"
+    ]
+   },
+   {
+    "note": "Auto-smelting and crafting upgrades make a chest do work, which is the feature that distinguishes this from plain capacity mods.",
+    "ids": [
+     "sophisticatedstorage:auto_smelting_upgrade",
+     "sophisticatedstorage:crafting_upgrade",
+     "sophisticatedstorage:compacting_upgrade"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "Infinity upgrades are creative/admin items with no survival recipe - never use as quest tasks or rewards.",
+    "ids": [
+     "sophisticatedstorage:infinity_upgrade",
+     "sophisticatedstorage:survival_infinity_upgrade"
+    ]
+   },
+   {
+    "note": "Stack DOWNGRADES reduce capacity deliberately; they are filtering tools, not ladder rungs.",
+    "ids": [
+     "sophisticatedstorage:stack_downgrade_tier_1",
+     "sophisticatedstorage:stack_downgrade_tier_2",
+     "sophisticatedstorage:stack_downgrade_tier_3"
+    ]
+   },
+   {
+    "note": "The debug tool and the inaccessible-slot filler are internal items that render as normal items in a naive scan. Neither belongs in a quest book.",
+    "ids": [
+     "sophisticatedstorage:debug_tool",
+     "sophisticatedstorage:inaccessible_slot"
+    ]
+   },
+   {
+    "note": "The chipped/* upgrades duplicate the Sophisticated Backpacks ones and need Chipped blocks; they are reachable in this pack but easy to double-count across the two mods.",
+    "ids": [
+     "sophisticatedstorage:chipped/mason_table_upgrade"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "Tiered containers plus in-place lever upgrades - the mod's identity is that storage improves without ever being emptied.",
+    "ids": [
+     "sophisticatedstorage:barrel",
+     "sophisticatedstorage:netherite_barrel",
+     "sophisticatedstorage:basic_tier_upgrade"
+    ]
+   },
+   {
+    "note": "The decoration table and paintbrush are its other signature: storage that can be styled to match a build.",
+    "ids": [
+     "sophisticatedstorage:decoration_table",
+     "sophisticatedstorage:paintbrush"
+    ]
+   }
+  ]
+ }
+}

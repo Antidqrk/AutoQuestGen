@@ -1,0 +1,137 @@
+{
+ "mod": "create_new_age",
+ "verified_against": "create-new-age-1.2.0+forge-mc1.20.1.jar",
+ "item_count_in_jar": 54,
+ "parent_mod": "create",
+ "chain": [
+  {
+   "id": "create_new_age:magnetite_block",
+   "title": "The Rock That Pulls",
+   "desc": "An ore that generates in stone between Y -20 and Y 60, fifteen veins a chunk. Every motor in the mod starts as one of these blocks."
+  },
+  {
+   "id": "create_new_age:basic_motor",
+   "title": "Electricity Learns to Turn",
+   "desc": "A magnetite block and a shaft either side of an andesite casing, wrapped in iron nuggets. Feed it Forge Energy and it produces rotation."
+  },
+  {
+   "id": "create_new_age:basic_energiser",
+   "title": "Rotation Learns to Flow",
+   "desc": "An andesite casing and a lightning rod, shapeless. The energiser runs the other direction, turning kinetic stress into Forge Energy."
+  },
+  {
+   "id": "create_new_age:generator_coil",
+   "title": "Copper Wound Tight",
+   "desc": "Eight copper ingots around a block of andesite alloy. Coils placed around an energiser are how its output is raised."
+  },
+  {
+   "id": "create_new_age:redstone_magnet",
+   "title": "The First Magnet",
+   "desc": "A block of redstone caged in eight iron nuggets. Magnets sit opposite the coils and set the ceiling on what an energiser can produce."
+  },
+  {
+   "id": "create_new_age:copper_wire",
+   "title": "Drawing the Wire",
+   "desc": "Run a copper plate past a mechanical saw to cut it into wire, or break a Copper Wire Block back down into four."
+  },
+  {
+   "id": "create_new_age:blank_circuit",
+   "title": "Silicon in a Basin",
+   "desc": "Compacting stone, redstone dust, an iron ingot and a quartz gives an unprinted circuit board."
+  },
+  {
+   "id": "create_new_age:copper_circuit",
+   "title": "Printing the Traces",
+   "desc": "A deployer lays copper wire onto a blank circuit. Copper circuits are the control component in every motor extension the mod adds."
+  },
+  {
+   "id": "create_new_age:heat_pipe",
+   "title": "Moving the Heat",
+   "desc": "Six copper plates in two rows, or a cheaper mix of copper plate, terracotta and zinc nuggets. Heat pipes carry warmth into engines and reactors."
+  },
+  {
+   "id": "create_new_age:stirling_engine",
+   "title": "Warmth Becomes Motion",
+   "desc": "A shaft over a block of copper, flanked by heat pipes and iron nuggets. Give it a heat source and it turns without burning fuel directly."
+  },
+  {
+   "id": "create_new_age:heater",
+   "title": "A Burner That Feeds Pipes",
+   "desc": "An empty blaze burner ringed by iron nuggets, sitting on heat pipes and a block of coal. It is the dedicated heat source for the engine above."
+  },
+  {
+   "id": "create_new_age:overcharged_iron",
+   "title": "Iron Under Voltage",
+   "desc": "Energising an iron ingot in the mod's electric process. Overcharged metals are the tier gate for everything past the basic machines."
+  },
+  {
+   "id": "create_new_age:overcharged_gold",
+   "title": "Gold, Held at Potential",
+   "desc": "Energising a gold ingot. It carries current far better than the iron grade and shows up in every advanced energiser."
+  },
+  {
+   "id": "create_new_age:overcharged_diamond",
+   "title": "A Gem Full of Charge",
+   "desc": "Energising a diamond. The most expensive overcharged material and the one the reinforced tier is built on."
+  },
+  {
+   "id": "create_new_age:advanced_motor",
+   "title": "The Second Motor",
+   "desc": "Overcharged iron and a shaft either side of a brass casing, wrapped in gold nuggets. It handles more energy and more stress than the basic build."
+  },
+  {
+   "id": "create_new_age:advanced_energiser",
+   "title": "Catching More of the Spin",
+   "desc": "A basic energiser between two lots of overcharged gold, mounted on a column of lightning rods."
+  },
+  {
+   "id": "create_new_age:reinforced_motor",
+   "title": "Built on the Crafter",
+   "desc": "A mechanical crafting recipe: overcharged diamonds, iron plates, a redstone block, a brass casing and two shafts. The top motor in the line."
+  },
+  {
+   "id": "create_new_age:thorium",
+   "title": "The Radioactive Seam",
+   "desc": "Thorium ore generates in stone between Y 20 and Y 120, only two veins a chunk. Mixing thorium with stone, clay and water in a basin multiplies what you have."
+  },
+  {
+   "id": "create_new_age:nuclear_fuel",
+   "title": "Feeding the Pile",
+   "desc": "Crush thorium into Radioactive Thorium, then run it through a sequenced assembly to finish the fuel a reactor rod will hold."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "create_new_age:reactor_casing",
+   "members": [
+    "create_new_age:reactor_glass",
+    "create_new_age:reactor_heat_vent",
+    "create_new_age:reactor_fuel_acceptor",
+    "create_new_age:reactor_rod",
+    "create_new_age:heat_pump",
+    "create_new_age:thorium_ore",
+    "create_new_age:radioactive_thorium",
+    "create_new_age:corium",
+    "create_new_age:solid_corium"
+   ]
+  },
+  {
+   "hub": "create_new_age:electrical_connector",
+   "members": [
+    "create_new_age:street_light",
+    "create_new_age:lamp_post",
+    "create_new_age:basic_solar_heating_plate",
+    "create_new_age:advanced_solar_heating_plate",
+    "create_new_age:basic_motor_extension",
+    "create_new_age:advanced_motor_extension",
+    "create_new_age:carbon_brushes",
+    "create_new_age:reinforced_energiser",
+    "create_new_age:layered_magnet",
+    "create_new_age:netherite_magnet",
+    "create_new_age:fluxuated_magnetite",
+    "create_new_age:copper_wire_block"
+   ]
+  }
+ ],
+ "notes": "Verified against create-new-age-1.2.0+forge-mc1.20.1.jar (Forge, MC 1.20.1). All 54 ids come from assets/create_new_age/models/item/*.json intersected with block./item. keys in assets/create_new_age/lang/en_us.json. PARENT ASSUMPTIONS: the chain starts after Create has supplied andesite alloy and andesite alloy blocks, andesite casing, brass casing, shafts, copper and iron plates from the mechanical press, the mechanical saw, the deployer, the basin for compacting and mixing, the crushing wheels, the empty blaze burner, andesite and brass funnels, and a mechanical crafter for the top-tier recipes. Recipe sources read: data/create_new_age/recipes/{shaped,shapeless,mechanical_crafting,compacting,mixing,crushing,cutting,pressing,deploying,energising,sequenced_assembly}/*. Worldgen confirmed in data/create_new_age/worldgen/placed_feature/: magnetite_block is a size-4 ore, count 15 per chunk, uniform Y -20 to 60; thorium_ore is a size-16 ore, count 2 per chunk, uniform Y 20 to 120; both target minecraft:stone_ore_replaceables with a 0.4 discard chance on air exposure. create_new_age:magnetite_block has no crafting recipe and is obtained only by mining that ore. The mod's own create:energising recipe type converts iron ingots, gold ingots, diamonds, iron plates and gold plates into their overcharged grades and glass bottles into bottles of enchanting. Several recipes ship in two variants, one using overcharged materials and a fallback using vanilla equivalents. DROPPED by the desirability rule or for room: the overcharged sheet and wire family (overcharged_iron_sheet, overcharged_iron_wire, overcharged_iron_wire_block, overcharged_golden_sheet, overcharged_golden_wire, overcharged_golden_wire_block, overcharged_diamond_wire, overcharged_diamond_wire_block) and the incomplete_* sequenced-assembly intermediates (incomplete_wire, incomplete_fuel, incomplete_reactor_casing, incomplete_enchanted_golden_apple). Nothing was dropped for being unverifiable; every id above is present in the jar."
+}

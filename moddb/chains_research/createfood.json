@@ -1,0 +1,201 @@
+{
+ "mod": "createfood",
+ "verified_against": "createfood-forge-1.20.1-2.6.0.jar",
+ "item_count_in_jar": 2716,
+ "parent_mod": "create",
+ "chain": [
+  {
+   "id": "createfood:salt",
+   "title": "Boiling the Sea Down",
+   "desc": "Mixing plain water in a heated basin leaves salt behind. It is the first thing this mod makes and it turns up in the butter, the cheese, the cream cheese and the cotton candy, so build the evaporator before anything else."
+  },
+  {
+   "id": "createfood:cloth_filter",
+   "title": "A Square of Cloth",
+   "desc": "A stick and any wool. On its own it is nothing; filled at a spout it becomes the mod's separation step, which is how one fluid is split into two."
+  },
+  {
+   "id": "createfood:cacao_nibs",
+   "title": "Roasting the Bean",
+   "desc": "Cocoa beans in a furnace, a smoker or on a campfire. The start of a five-stage chocolate line that is by far the best-designed thing in the mod."
+  },
+  {
+   "id": "createfood:cacao_mass_bucket",
+   "title": "Grinding to a Liquid",
+   "desc": "Nibs and a bucket in a heated basin. The nibs melt into a thick mass that is neither cocoa powder nor cocoa butter yet - both are still trapped in it."
+  },
+  {
+   "id": "createfood:cloth_filter_cacao_mass",
+   "title": "Charging the Filter",
+   "desc": "Spouting cacao mass into an empty cloth filter. This is the intermediate that makes the split possible; a filled filter is a batch waiting to be separated."
+  },
+  {
+   "id": "createfood:pressed_cocoa",
+   "title": "The Solid Half",
+   "desc": "Mixing or compacting the filled filter gives the pressed cake and releases cacao butter as a fluid at the same time. One machine cycle, two products, which is the moment the chocolate line clicks."
+  },
+  {
+   "id": "createfood:cocoa_powder",
+   "title": "Milling the Cake",
+   "desc": "Pressed cocoa through a millstone or the press. Bitter, unsweetened, and the flavour base for everything chocolate that does not want the fat."
+  },
+  {
+   "id": "createfood:cacao_butter",
+   "title": "The Fat Half",
+   "desc": "Compacting the cacao butter fluid the filter released. Recombined with cocoa powder and sugar it becomes real chocolate rather than Create's chocolate fluid."
+  },
+  {
+   "id": "createfood:bar_of_dark_chocolate",
+   "title": "Bar of Dark",
+   "desc": "Compacting the dark chocolate fluid. The white variant runs alongside it, and both are separate from Create's own bar_of_chocolate, which this mod treats as a third kind."
+  },
+  {
+   "id": "createfood:chocolate_chips",
+   "title": "Chips Off the Bar",
+   "desc": "Any bar of chocolate under the mechanical press. Chips are what the cookies, the fudge and the milkshakes all actually consume, so this is the chocolate line's real output."
+  },
+  {
+   "id": "createfood:milk_powder",
+   "title": "Milk Without the Water",
+   "desc": "Milk mixed hot until only powder is left. It is the entire contents of the forge:milks tag in this mod, so every recipe that asks for milk is really asking for this."
+  },
+  {
+   "id": "createfood:egg_powder",
+   "title": "Eggs, Shelf Stable",
+   "desc": "Cooked eggs milled, pressed or cut. Same trick as the milk: it is the only member of forge:eggs, so it is what every batter and dough means by egg."
+  },
+  {
+   "id": "createfood:butter",
+   "title": "Churning",
+   "desc": "Salt mixed hot into milk, or into heavy cream. The first dairy product and an ingredient in the frosting, the graham cracker, the fudge and every butter dough."
+  },
+  {
+   "id": "createfood:heavy_cream_bucket",
+   "title": "Skimming the Top",
+   "desc": "A bucket, milk and butter, shapeless, or milk through a Farmer's Delight cooking pot. Richer than milk and the shortcut to butter once you have some."
+  },
+  {
+   "id": "createfood:cheese_block",
+   "title": "A Wheel of Cheese",
+   "desc": "Compacting milk and salt in a heated basin. It places as a block, which is the mod's way of saying a cheese is something you cut from, not something you carry."
+  },
+  {
+   "id": "createfood:cheese_slice",
+   "title": "Cutting the Wheel",
+   "desc": "A knife on the cheese block over a Farmer's Delight cutting board. Slices are what every burger, sandwich and pizza in the mod is actually built from."
+  },
+  {
+   "id": "createfood:vinegar_bottle",
+   "title": "Souring It",
+   "desc": "Spouting vinegar into a glass bottle. A single sour reagent that exists almost entirely so that milk can be curdled on purpose."
+  },
+  {
+   "id": "createfood:cream_cheese_bucket",
+   "title": "Curdled Deliberately",
+   "desc": "Vinegar, milk and salt in a cooking pot. The second cheese, soft instead of hard, and the base of the frosting rather than of the sandwiches."
+  },
+  {
+   "id": "createfood:cream_frosting_bucket",
+   "title": "Frosting by the Bucket",
+   "desc": "A bucket, sugar and anything in the frosting ingredients tag - cream cheese or butter. It is a fluid, which is the whole reason the mod can pipe it."
+  },
+  {
+   "id": "createfood:piping_bag",
+   "title": "The Empty Bag",
+   "desc": "Paper, string and a copper nugget, shapeless. Cheap, reusable, and the only tool in the mod that turns a fluid into decoration."
+  },
+  {
+   "id": "createfood:cream_frosting_piping_bag",
+   "title": "Loaded and Ready",
+   "desc": "Spouting frosting into the bag. Applied to a cake base it makes the finished cake, and emptied again it hands the frosting back - a genuine two-way tool."
+  },
+  {
+   "id": "createfood:gelatin",
+   "title": "Boiling Bones",
+   "desc": "A bone and water, in a basin or a cooking pot. Unappetising, and the gate on marshmallows and every gelatin dessert in the mod."
+  },
+  {
+   "id": "createfood:marshmallow",
+   "title": "Sugar and Air",
+   "desc": "Gelatin, sugar and water compacted hot. Toast one on a stick, or feed them into the s'more line."
+  },
+  {
+   "id": "createfood:caramel",
+   "title": "Sugar, Taken Too Far",
+   "desc": "Sugar mixed in a heated basin until it turns. Compacting the fluid gives the solid, and the same recipe run on the solid gives the fluid back."
+  },
+  {
+   "id": "createfood:molasses_bottle",
+   "title": "What's Left Behind",
+   "desc": "Spouting molasses into a glass bottle. The dark syrup that turns ordinary sugar brown, with a blackstrap variant for the darker one."
+  },
+  {
+   "id": "createfood:brown_sugar",
+   "title": "Sugar With Molasses In It",
+   "desc": "Sugar filled or mixed with molasses. Only one thing needs it and that thing is worth it."
+  },
+  {
+   "id": "createfood:butterscotch",
+   "title": "Caramel's Better Half",
+   "desc": "Brown sugar mixed hot instead of white. The third confectionery fluid, and the one with the longest list of downstream desserts."
+  },
+  {
+   "id": "createfood:chocolate_fudge",
+   "title": "Where the Lines Meet",
+   "desc": "Butter, chocolate chips and condensed milk. It needs the dairy line and the chocolate line running at once, which makes it the honest end of this chapter."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "createfood:chocolate_bottle",
+   "members": [
+    "createfood:condensed_milk_bottle",
+    "createfood:heavy_cream_bottle",
+    "createfood:blackstrap_molasses_bottle",
+    "createfood:cane_syrup_bottle",
+    "createfood:chocolate_custard_bottle",
+    "createfood:hot_chocolate_bottle",
+    "createfood:chocolate_milk_bottle"
+   ]
+  },
+  {
+   "hub": "createfood:cacao_butter_bucket",
+   "members": [
+    "createfood:condensed_milk_bucket",
+    "createfood:molasses_bucket",
+    "createfood:vinegar_bucket",
+    "createfood:vegetable_oil_bucket",
+    "createfood:egg_whites_bucket",
+    "createfood:cheesecake_filling_bucket",
+    "createfood:cream_pie_filling_bucket"
+   ]
+  },
+  {
+   "hub": "createfood:bar_of_white_chocolate",
+   "members": [
+    "createfood:butterscotch_chips",
+    "createfood:butterscotch_chocolate",
+    "createfood:caramel_chocolate",
+    "createfood:cream_chocolate",
+    "createfood:butterscotch_fudge",
+    "createfood:caramel_fudge",
+    "createfood:coffee_toffee"
+   ]
+  },
+  {
+   "hub": "createfood:cloth_filter_egg",
+   "members": [
+    "createfood:cloth_sack",
+    "createfood:powdered_sugar",
+    "createfood:cotton_candy_stick",
+    "createfood:marshmallow_stick",
+    "createfood:chocolate_apple",
+    "createfood:chocolate_apple_slice",
+    "createfood:butterscotch_apple",
+    "createfood:butterscotch_berries",
+    "createfood:chocolate_pretzel_stick"
+   ]
+  }
+ ],
+ "notes": "Verified against createfood-forge-1.20.1-2.6.0.jar (Forge 47+, minecraft [1.20.1,1.20.2), create [6.0.0,), farmersdelight [1.0,) and cloth_config [11,) - Farmer's Delight is a MANDATORY dependency of this mod, which matters for everything below). Modrinth slug create-food, project 4HnO3el1; modid createfood. Note that Modrinth's newest 1.20.1 Forge file is named createfood-forge-1.20.1-2.6.0.jar while older ones are create-food-1.20.1-x.y.z-forge.jar; the naming changed at 2.6.0. THIS IS THE LARGEST MOD IN THIS BATCH BY AN ORDER OF MAGNITUDE: 2140 item models, 1599 blockstates, 1169 item lang keys, 704 block lang keys, 4405 recipe files and 903 loot tables. The verified id set - (item models with no subdirectory) UNION (blockstates INTERSECT lang) - is 2716. The chain is deliberately 28 steps for a mod that could support 300; a food mod is a wheel-shaped mod and the spine is the only part worth walking. THE SINGLE BIGGEST FINDING, AND A HARD WARNING FOR ANY PACK BUILDING THIS CHAPTER - THE FLOUR GATE. data/forge/tags/items/flour.json in this jar contains exactly ONE entry: {\"id\": \"farm_and_charm:flour\", \"required\": false}. createfood does not register a flour item of its own (the only flour-named id in the jar is createfood:corn_flour, which is not in the tag). Forty-eight recipes take {\"tag\": \"forge:flour\"}, and WITHOUT FARM AND CHARM INSTALLED that tag is empty and all forty-eight are dead. What dies with it: createfood:salt_dough, createfood:sugar_dough, createfood:butter_dough, createfood:chocolate_sugar_dough, createfood:pumpernickel_dough, createfood:raw_pie_crust, createfood:tater_tots and raw_tater_tots, and the fluids cake_batter, chocolate_cake_batter, ube_cake_batter, muffin_batter, waffle_batter, cream_pie_filling and slime along with all four of their bucket items. And because createfood:cake_base is create:mixing of eggs plus {\"tag\": \"forge:sweet_dough\"}, and forge:sweet_dough is only createfood:sugar_dough or bakery:sweet_dough, THE ENTIRE CAKE, CUPCAKE, DONUT, PASTRY, WAFFLE, PIE AND MUFFIN TREE - several hundred ids - is unreachable in a pack that has createfood but neither Farm and Charm nor Let's Do Bakery. THE CHAIN IN THIS FILE DELIBERATELY AVOIDS EVERY FLOUR-GATED ITEM; each of the 28 spine ids and all 30 wheel members was re-checked against that rule after the chain was written. If the pack does ship Farm and Charm or Bakery, the dough line slots in after createfood:butter and the cake line after createfood:cream_frosting_piping_bag. CONDITION CENSUS - the mod is wrapped far more heavily than any other mod in this batch. Of 4349 parsed recipe files the forge:conditional counts are: mod_loaded create 1461 (satisfied - hard dependency), mod_loaded farmersdelight 443 (satisfied - hard dependency), mod_loaded farm_and_charm 259 (NOT satisfied standalone), mod_loaded jmc 56, mod_loaded beachparty 19, mod_loaded frightsdelight 16, mod_loaded expandeddelight 14, mod_loaded create_central_kitchen 12, mod_loaded ubesdelight 10, mod_loaded culturaldelights 10, mod_loaded ends_delight 8, mod_loaded create_bic_bit 3, mod_loaded delightfulcreators 1, mod_loaded farmersrespite 4. On top of that there are three not(tag_empty) gates that behave exactly like the flour gate: forge:cooked_eggplant (48 recipes), forge:peanut_butter (37) and forge:vegetables/ube (13) are all empty without a third mod, so every eggplant, peanut-butter and ube item in the jar is unobtainable standalone - that is the whole ube family (ube_sugar_dough, ube_cake_base, ube_cupcake_base, ube_cream_frosting_*) and createfood:espresso_powder, which is gated on not(tag_empty:forge:coffee_beans). Counting properly: 1203 of 2716 ids have at least one recipe whose conditions are satisfiable with only Create and Farmer's Delight, 815 have recipes but only behind a third mod, and 698 have no recipe or loot source at all. RECIPES OUTSIDE recipes/**: no - everything is under data/createfood/recipes/ - but the SUBFOLDERS are the real map and a crafting-only scan finds a third of the mod. The breakdown is minecraft crafting 1388 (shapeless 1428 counting nested), create:deploying 404, create:filling 335, create:mixing 294, farmersdelight:cutting 191, farmersdelight:cooking 161, create:compacting 151, minecraft campfire/smelting/smoking 122 each, create:item_application 92, farm_and_charm:pot_cooking 91, create:emptying 85, farm_and_charm:stove 82, farm_and_charm:mincer 42, create:pressing 29, farm_and_charm:crafting_bowl 22, farm_and_charm:roaster 20, create:milling 15, beachparty mini_fridge and tiki_bar 19, farmersrespite:brewing 4, create_bic_bit:deep_frying 3, farm_and_charm:drying 2. THE 698 SOURCELESS IDS ARE MOSTLY IN-WORLD STATES, not bugs: roughly 400 are *_candle cake variants (place a candle on a cake), most of the rest are *_block fluid blocks and *_plate_block / *_small_plate_block placed-food blocks whose item form is the food itself. None of them belongs in a quest. DROPPED specifically after checking twice: createfood:cloth_filter_egg_yolk and createfood:cloth_filter_pressed_cocoa are registered ids with models and lang keys but NO producing recipe - they are display states of a filter mid-separation, unlike createfood:cloth_filter_egg and createfood:cloth_filter_cacao_mass which are both genuinely produced by create:filling and are used. ORDERING CONFLICTS vs moddb consensus (26 entries, all 26 id-verified, none renamed): the consensus is dominated by FINISHED FOODS and barely mentions the processing spine - it opens with apple_cream_cupcake at 0.0 and lists apple_cream_donut, apple_cream_pastry, apple_cream_sweet_roll, apple_cream_cake and six beef_bun variants, while createfood:cacao_nibs sits at 0.2, createfood:cloth_filter_cacao_mass at 0.5 and createfood:pressed_cocoa at 0.525. On the recipe graph that is backwards end to end: cacao_nibs -> cacao_mass_bucket -> cloth_filter_cacao_mass -> pressed_cocoa -> cocoa_powder / cacao_butter -> bar_of_*_chocolate -> chocolate_chips is a strict five-deep dependency chain and every chocolate dessert the consensus front-loads sits below all of it. Worse, MOST OF THE CONSENSUS SPINE IS FLOUR-GATED - chocolate_sugar_dough 0.025, salt_dough 0.1, cake_base 0.125 and every apple_cream_* cake and pastry above them are exactly the items that die when forge:flour is empty. The consensus ordering was rejected outright and the chain rebuilt from the recipe graph, restricted to the flour-free subgraph. Of the 26 consensus entries only cacao_nibs, pressed_cocoa, cloth_filter_cacao_mass and salt_dough are processing steps at all, and one of those four is gated. PARENT ASSUMPTIONS: a mixer and a basin with a blaze burner (a great many recipes are heatRequirement heated), a mechanical press, a millstone or crushing wheels, a spout, a deployer on a belt (404 deploying recipes - this is how every sandwich and burger is assembled), item application, plus Farmer's Delight's cutting board, knives and cooking pot, which are not optional."
+}

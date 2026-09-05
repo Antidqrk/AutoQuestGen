@@ -1,0 +1,181 @@
+{
+ "mod": "apotheosis",
+ "verified_against": "Apotheosis-1.20.1-7.4.8.jar",
+ "item_count_in_jar": 77,
+ "chain": [
+  {
+   "id": "apotheosis:seashelf",
+   "title": "Shelves From the Shallows",
+   "desc": "A prismarine bookshelf worth 1.5 eterna and 2 arcana per shelf; the ocean route to a level 45 enchanting table."
+  },
+  {
+   "id": "apotheosis:hellshelf",
+   "title": "Bookcases Cast in Fire",
+   "desc": "The Nether counterpart to the Seashelf, worth 1.5 eterna and 3 quanta, and the other route to level 45."
+  },
+  {
+   "id": "apotheosis:infused_seashelf",
+   "title": "Steeped in Sea Magic",
+   "desc": "Made by infusion enchanting a Seashelf at a level 45 table; raises max eterna from 22.5 to 27."
+  },
+  {
+   "id": "apotheosis:infused_hellshelf",
+   "title": "Steeped in Hellfire",
+   "desc": "The infusion-enchanted Hellshelf; together with its Sea twin it carries a table from level 45 to level 60."
+  },
+  {
+   "id": "apotheosis:sightshelf",
+   "title": "A Spyglass on the Enchantment",
+   "desc": "Built from a Gold Block, a Spyglass, a Night Vision potion and an Infused Hellshelf; grants one extra enchantment clue."
+  },
+  {
+   "id": "apotheosis:rectifier",
+   "title": "Bending Chance Toward You",
+   "desc": "An Amethyst Block, Honeycomb Block and Infused Seashelf press ten points of rectification onto the table's quanta rolls."
+  },
+  {
+   "id": "apotheosis:library",
+   "title": "Ledger of Every Enchantment",
+   "desc": "An Ender Chest, an Enchanting Table and infused shelves become a store that banks enchantment levels up to sixteen."
+  },
+  {
+   "id": "apotheosis:gem",
+   "title": "Not Merely a Diamond",
+   "desc": "Apothic Gems drop from chest loot and, rarely, from mobs slain by a real player, with bosses the richest source."
+  },
+  {
+   "id": "apotheosis:gem_dust",
+   "title": "Crushed Under the Anvil",
+   "desc": "Made by dropping any Apothic Gem in the world and letting a falling Anvil land on it."
+  },
+  {
+   "id": "apotheosis:salvaging_table",
+   "title": "Breaking Down the Spoils",
+   "desc": "Copper, Gem Dust, a Smithing Table, a Lava Bucket and a piston reduce affix gear back into Rarity Materials."
+  },
+  {
+   "id": "apotheosis:gem_fused_slate",
+   "title": "Slate Threaded With Dust",
+   "desc": "Deepslate ringed with Gem Dust; the plate every Sigil is stamped from."
+  },
+  {
+   "id": "apotheosis:gem_cutting_table",
+   "title": "The Lapidary's Bench",
+   "desc": "Smooth Stone, Shears, planks and Gem Dust build the bench that upgrades a Gem using dust, a twin Gem and Rarity Materials."
+  },
+  {
+   "id": "apotheosis:simple_reforging_table",
+   "title": "Rolling the Dice Again",
+   "desc": "Iron, Gem Dust, an Enchanting Table and Smooth Stone reforge any item with fresh affixes up to Rare rarity."
+  },
+  {
+   "id": "apotheosis:dormant_deepshelf",
+   "title": "Deepslate That Has Not Woken",
+   "desc": "Deepslate around a Book, craftable once you hold a level 60 table; it is only the unfinished shell of a Deepshelf."
+  },
+  {
+   "id": "apotheosis:deepshelf",
+   "title": "Roused From the Deepslate",
+   "desc": "Infusion enchanting the Dormant Deepshelf yields 2.5 eterna, 5 quanta and 5 arcana, carrying the table to level 70."
+  },
+  {
+   "id": "apotheosis:treasure_shelf",
+   "title": "Where the Cursed Books Live",
+   "desc": "A Deepshelf variant that makes treasure enchantments, curses included, appear in the enchanting table."
+  },
+  {
+   "id": "apotheosis:warden_tendril",
+   "title": "Torn From the Silence",
+   "desc": "A global loot modifier attaches this tendril to the Warden's death drop; nothing else yields it."
+  },
+  {
+   "id": "apotheosis:echoing_sculkshelf",
+   "title": "Sculk That Answers Back",
+   "desc": "Warden Tendril, Sculk, a Sculk Catalyst and an Echoing Deepshelf make a 5 eterna, 15 arcana shelf for level 80."
+  },
+  {
+   "id": "apotheosis:infused_breath",
+   "title": "Distilled Dragon's Breath",
+   "desc": "Infusion enchanting at a level 80 table condenses Dragon's Breath into the core reagent of every Endshelf."
+  },
+  {
+   "id": "apotheosis:endshelf",
+   "title": "End Stone and Pearl",
+   "desc": "End Stone Bricks, an Ender Pearl, a bookshelf and Infused Breath; max eterna climbs to 45."
+  },
+  {
+   "id": "apotheosis:pearl_endshelf",
+   "title": "Pearlescent Archive",
+   "desc": "The upgraded Endshelf, worth 5 eterna with 7.5 quanta and arcana apiece, and the backbone of a level 90 table."
+  },
+  {
+   "id": "apotheosis:draconic_endshelf",
+   "title": "One Shelf, Ten Levels",
+   "desc": "Built around a Dragon Head from the outer End; a single shelf supplies 10 eterna and takes a table from 90 to 100."
+  },
+  {
+   "id": "apotheosis:reforging_table",
+   "title": "Reforging Without Limit",
+   "desc": "Netherite, Arcane Sands and Nether Bricks upgrade the Simple Reforging Table so it can reroll Epic gear and above."
+  },
+  {
+   "id": "apotheosis:augmenting_table",
+   "title": "Focusing a Nether Star",
+   "desc": "A Nether Star focused through two Godforged Pearls onto an Enchanting Table; the endgame bench that upgrades or rerolls one affix at a time."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "apotheosis:salvaging_table",
+   "members": [
+    "apotheosis:common_material",
+    "apotheosis:uncommon_material",
+    "apotheosis:rare_material",
+    "apotheosis:epic_material",
+    "apotheosis:mythic_material",
+    "apotheosis:ancient_material",
+    "apotheosis:sigil_of_rebirth",
+    "apotheosis:sigil_of_enhancement",
+    "apotheosis:sigil_of_socketing",
+    "apotheosis:sigil_of_withdrawal",
+    "apotheosis:sigil_of_unnaming"
+   ]
+  },
+  {
+   "hub": "apotheosis:other_tome",
+   "members": [
+    "apotheosis:helmet_tome",
+    "apotheosis:chestplate_tome",
+    "apotheosis:leggings_tome",
+    "apotheosis:boots_tome",
+    "apotheosis:weapon_tome",
+    "apotheosis:pickaxe_tome",
+    "apotheosis:fishing_tome",
+    "apotheosis:bow_tome",
+    "apotheosis:scrap_tome",
+    "apotheosis:improved_scrap_tome",
+    "apotheosis:extraction_tome"
+   ]
+  },
+  {
+   "hub": "apotheosis:infused_seashelf",
+   "members": [
+    "apotheosis:crystal_seashelf",
+    "apotheosis:heart_seashelf",
+    "apotheosis:filtering_shelf",
+    "apotheosis:glowing_hellshelf",
+    "apotheosis:blazing_hellshelf",
+    "apotheosis:sightshelf_t2",
+    "apotheosis:rectifier_t2",
+    "apotheosis:rectifier_t3",
+    "apotheosis:melonshelf",
+    "apotheosis:beeshelf",
+    "apotheosis:stoneshelf",
+    "apotheosis:echoing_deepshelf",
+    "apotheosis:soul_touched_deepshelf",
+    "apotheosis:soul_touched_sculkshelf"
+   ]
+  }
+ ],
+ "notes": "Item set = 104 stems of assets/apotheosis/models/item/*.json intersected with item./block. keys across every assets/*/lang/en_us.json in the jar (76 ids), plus apotheosis:gem, which has models/item/gem.json and is named through item.apotheosis.gem.<gemid> subkeys rather than a bare key. Ladder derived from data/apotheosis/enchanting_stats/*.json (eterna/maxEterna per shelf: seashelf and hellshelf 1.5/22.5, infused 1.75/27, deepshelf 2.5/35, endshelf 2.5/45, pearl_endshelf and sculkshelves 5, draconic_endshelf 10/50), data/apotheosis/recipes/** and the in-jar Patchouli book assets/apotheosis/patchouli_books/apoth_chronicle/en_us (progression/levels1_30 through levels80_100 confirm the 45 / 60 / 70 / 75 / 80 / 90 / 100 breakpoints and that level 80 requires slaying the Warden). Rarity materials and their salvage sources come from data/apotheosis/recipes/salvaging/*.json and data/apotheosis/rarities/*.json (common, uncommon, rare, epic, mythic, ancient). apotheosis:warden_tendril is confirmed as a Warden-only drop by data/apotheosis/loot_modifiers/warden_tendril.json registered in data/forge/loot_modifiers/global_loot_modifiers.json. Nothing dropped. moddb agreement: seashelf, hellshelf, gem, gem_dust, gem_fused_slate, infused_seashelf, infused_hellshelf, dormant_deepshelf, salvaging_table, library, gem_cutting_table and the rarity materials all appear in moddb's 26-entry ordering and the relative order matches. Conflict: moddb puts apotheosis:gem first at pos 0.033, ahead of the shelves, while the recipe/enchanting graph has no gem prerequisite at all - gems are pure loot, so the moddb position is a UI placement rather than a gate; this chain places gem at step 8 where the Gem Dust / Gem Cutting Table branch begins. moddb also ranks apotheosis:mythic_material at 0.313, far ahead of rare_material (0.420) and epic_material (0.455), which contradicts the salvaging rarity ladder; the collection uses the rarity order from data/apotheosis/rarities/."
+}

@@ -1,0 +1,390 @@
+{
+ "mod": "createbigcannons",
+ "ids_in_jar": 213,
+ "videos": [
+  {
+   "id": "0klw2HtICcU",
+   "title": "Create: Big Cannons For Dummies",
+   "channel": "qarsan",
+   "views": 501523,
+   "duration": 706,
+   "chars": 13407,
+   "src": "vetted_search"
+  }
+ ],
+ "items": {
+  "createbigcannons:he_shell": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.1243,
+   "praise": 3,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "createbigcannons:machine_gun_round": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.9304,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createbigcannons:cannon_mount": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.0498,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "createbigcannons:powder_charge": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2049,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createbigcannons:mortar_stone": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.619,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createbigcannons:solid_shot": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5961,
+   "praise": 2,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createbigcannons:cannon_loader": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4965,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createbigcannons:drop_mortar_shell": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7966,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "createbigcannons:ap_shell": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7296,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "createbigcannons:ram_rod": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.435,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createbigcannons:big_cartridge": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5562,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createbigcannons:ram_head": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5019,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createbigcannons:recoil_spring": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8591,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createbigcannons:autocannon_ammo_container": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.898,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createbigcannons:fluid_shell": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7643,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createbigcannons:shrapnel_shell": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7516,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createbigcannons:yaw_controller": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1702,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createbigcannons:steel_sliding_breech": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3917,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createbigcannons:smoke_shell": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7854,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "ids": [
+     "createbigcannons:cannon_mount"
+    ],
+    "note": "STEP 1 and the foundation of everything. The cannon mount is the block every cannon is built on. Redstone on the HAMMER side assembles the cannon; redstone on the CONTROLLER side fires it. Two shaft inputs on the sides control pitch, and the cannon itself is built on a shaft two blocks above the mount.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:cast_iron_cannon_barrel",
+     "createbigcannons:cast_iron_cannon_chamber",
+     "createbigcannons:cast_iron_cannon_end",
+     "createbigcannons:cast_iron_ingot",
+     "createbigcannons:molten_cast_iron_bucket"
+    ],
+    "note": "STEP 2, the real starting tier. Cast iron is the first cannon material a player can actually make and sustain - it handles 2 powder charges and supports the sliding breech, quickfiring breech and plain cannon end.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:powder_charge",
+     "createbigcannons:solid_shot",
+     "createbigcannons:ram_rod"
+    ],
+    "note": "STEP 3: the minimum viable shot. Load the shell first, then the powder charges behind it, using the ram rod to push each one in by hand. Solid shot plus powder charge is the basic ammunition pair.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:cannon_loader",
+     "createbigcannons:ram_head"
+    ],
+    "note": "STEP 4: automation. The cannon loader with a ram head and piston extension poles replaces manual ramming, working like a mechanical piston from base Create.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:bronze_cannon_barrel",
+     "createbigcannons:steel_cannon_barrel",
+     "createbigcannons:nethersteel_cannon_barrel",
+     "createbigcannons:nethersteel_screw_breech"
+    ],
+    "note": "STEP 5, the material ladder in strict order by powder charge capacity: raw iron 1, cast iron 2, bronze 4, steel 6, nethersteel 8. Nethersteel is the mod's own top tier and accepts ONLY the screw breech.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:cast_iron_autocannon_breech",
+     "createbigcannons:bronze_autocannon_breech",
+     "createbigcannons:steel_autocannon_breech",
+     "createbigcannons:autocannon_ammo_container"
+    ],
+    "note": "SEPARATE BRANCH, taught last: autocannons work completely differently from big cannons and only come in cast iron, bronze and steel. Three parts - recoil spring (optional), breech (required), barrel.",
+    "video": "0klw2HtICcU"
+   }
+  ],
+  "gates": [
+   {
+    "ids": [
+     "createbigcannons:steel_ingot",
+     "createbigcannons:steel_cannon_barrel"
+    ],
+    "note": "CRITICAL CROSS-MOD GATE, invisible to a jar scan of this mod alone: Create Big Cannons does NOT add steel. The steel cannon tier is unreachable unless another mod in the pack provides steel recipes. In this Create ecosystem that means TFMG's blast furnace chain. Any quest tree must therefore place steel cannons AFTER TFMG steel.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:steel_sliding_breech",
+     "createbigcannons:bronze_sliding_breech",
+     "createbigcannons:cast_iron_sliding_breech"
+    ],
+    "note": "HARD GATE ON POWER: the sliding breech caps the charges the cannon can take, regardless of the barrel material. A steel cannon rated for 6 charges is limited to 4 with a sliding breech. You trade maximum power for loading speed.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:steel_quickfiring_breech",
+     "createbigcannons:bronze_quickfiring_breech",
+     "createbigcannons:cast_iron_quickfiring_breech"
+    ],
+    "note": "GATE: the quickfiring breech CANNOT be loaded while the cannon is disassembled - the cannon must be assembled first, then opened and closed by right-click. Opposite workflow to every other breech.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:yaw_controller"
+    ],
+    "note": "GATE on aiming: the two shafts on the mount only give pitch. Traversing left and right needs a yaw controller placed UNDER the cannon mount - its top face is a special output, not a shaft, and its bottom takes normal kinetic input.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:cast_iron_sliding_breech",
+     "createbigcannons:ram_rod"
+    ],
+    "note": "LOADING GOTCHA specific to sliding breeches: after ramming the last charge it still sits in the breech opening and the breech will not close. You must push it one more block before closing.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:flak_autocannon_round"
+    ],
+    "note": "GATE: flak autocannon rounds explode and therefore must be fused by crafting a fuze together with the round, exactly like a big shell. Unfused they will not detonate.",
+    "video": "0klw2HtICcU"
+   }
+  ],
+  "traps": [
+   {
+    "ids": [
+     "createbigcannons:log_cannon_chamber",
+     "createbigcannons:log_cannon_end"
+    ],
+    "note": "EXPLICIT TRAP, stated as strongly as anything in the sample: wooden/log cannons are a joke tier. They take one powder charge and blow themselves up even at that. The guide says never to use them. Do not put a log cannon in a quest as a legitimate first step.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:big_cartridge",
+     "createbigcannons:steel_quickfiring_breech"
+    ],
+    "note": "TRAP: the big cartridge packs four powder charges into one item, but ONLY use it with a quickfiring breech. In a screw or sliding breech you are left with an empty cartridge stuck inside the cannon that must be manually extracted - described as an absolute pain and not worth it.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:machine_gun_round"
+    ],
+    "note": "TRAP if you expect demolition: the machine gun round does entity damage ONLY and will not break a single block. It is an anti-personnel round, not a siege round.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:autocannon_ammo_container"
+    ],
+    "note": "TRAP in autocannon feeding: a single hopper cannot keep up with an autocannon's rate of fire. Use a Create chute instead, or the ammo container which holds 16 autocannon cartridges or 64 machine gun rounds and has a tracer-spacing slider.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:mortar_stone"
+    ],
+    "note": "Counterintuitive but positive: the mortar stone breaks if propelled by more than two powder charges, yet on those two charges it out-ranges every other shell and explodes on contact. Low tier by cost, high value by effect - a jar scan would rank it as junk.",
+    "video": "0klw2HtICcU"
+   }
+  ],
+  "signature": [
+   {
+    "ids": [
+     "createbigcannons:cannon_mount",
+     "createbigcannons:powder_charge",
+     "createbigcannons:solid_shot"
+    ],
+    "note": "The whole point of the mod: multiblock artillery you build, aim, load and fire. The guide's framing is that a cannon is an assembly of breech, chamber and barrel, and every material and breech choice is a real tradeoff.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:he_shell",
+     "createbigcannons:ap_shell",
+     "createbigcannons:ap_shot",
+     "createbigcannons:shrapnel_shell",
+     "createbigcannons:fluid_shell",
+     "createbigcannons:smoke_shell",
+     "createbigcannons:drop_mortar_shell",
+     "createbigcannons:bag_of_grapeshot"
+    ],
+    "note": "The shell catalogue is the mod's depth and gets the largest single share of runtime. Solid and AP shot for blocks, grapeshot and shrapnel for entities, HE and APHE for both, fluid shells that release whatever fluid you fill them with (lava, water, potions), smoke shells for concealment. APHE penetrates less than pure AP - a real tradeoff.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:impact_fuze",
+     "createbigcannons:delayed_impact_fuze",
+     "createbigcannons:proximity_fuze",
+     "createbigcannons:inertia_fuze",
+     "createbigcannons:delayed_inertia_fuze"
+    ],
+    "note": "The fuze system is what turns shells into a tactical choice - impact, timed, proximity and delayed impact. Every explosive shell needs one, so fuzes are a natural mid-tree quest cluster.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:nethersteel_ingot",
+     "createbigcannons:nethersteel_cannon_barrel",
+     "createbigcannons:nethersteel_screw_breech"
+    ],
+    "note": "Nethersteel is the mod's own signature endgame material and the only one it adds itself - 8 powder charges, screw breech only. The natural capstone of a cannon quest line.",
+    "video": "0klw2HtICcU"
+   },
+   {
+    "ids": [
+     "createbigcannons:cannon_drill",
+     "createbigcannons:cannon_builder",
+     "createbigcannons:worm"
+    ],
+    "note": "Casting and boring are the mod's manufacturing identity - cannons are cast from molten metal and then bored out with a cannon drill. The guide skips it only because the in-game ponders already cover it, which is itself a signal that this step is well taught and quest-worthy.",
+    "video": "0klw2HtICcU"
+   }
+  ]
+ }
+}

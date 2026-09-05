@@ -1,0 +1,32 @@
+{
+ "mod": "inmis",
+ "verified_against": "inmis-2.7.2-2.9.3-1.20.1.jar",
+ "item_count_in_jar": 9,
+ "chain": [
+  {"id": "inmis:baby_backpack", "title": "A Very Small Sack", "desc": "A wooden chest with four pieces of leather in a plus shape; the smallest bag the mod makes and the cheapest way to carry a little more."},
+  {"id": "inmis:frayed_backpack", "title": "Stitched From Scraps", "desc": "A wooden chest ringed with eight leather, and the root of every backpack tier that follows."},
+  {"id": "inmis:plated_backpack", "title": "Iron on the Straps", "desc": "The frayed backpack ringed with iron ingots, the first real jump in how much you can carry."},
+  {"id": "inmis:gilded_backpack", "title": "Shiny Enough to Notice", "desc": "The plated backpack ringed with gold ingots for the next size up."},
+  {"id": "inmis:bejeweled_backpack", "title": "Diamonds at the Corners", "desc": "The gilded backpack with diamonds at the corners and emeralds on the edges; the last tier that ordinary mining can reach."},
+  {"id": "inmis:ender_pouch", "title": "Your Ender Chest, Carried", "desc": "An ender chest ringed with eight leather; reaching into it opens the same shared inventory wherever you are."},
+  {"id": "inmis:blazing_backpack", "title": "Fireproof and Furious", "desc": "The bejeweled backpack with netherite ingots at the corners and magma blocks between; it survives fire and lava."},
+  {"id": "inmis:withered_backpack", "title": "Paid for With a Star", "desc": "The bejeweled backpack set on soul sand with a nether star above it, so the Wither has to die before this one exists."},
+  {"id": "inmis:endless_backpack", "title": "The Last Bag", "desc": "The withered backpack packed in end stone with a dragon head; the largest inventory the mod ships."}
+ ],
+ "collections": [
+  {
+   "hub": "inmis:frayed_backpack",
+   "members": [
+    "inmis:baby_backpack",
+    "inmis:plated_backpack",
+    "inmis:gilded_backpack",
+    "inmis:bejeweled_backpack",
+    "inmis:blazing_backpack",
+    "inmis:withered_backpack",
+    "inmis:endless_backpack",
+    "inmis:ender_pouch"
+   ]
+  }
+ ],
+ "notes": "SHORT CHAIN, DECLARED SHORT. Inmis registers exactly nine items and nothing else - no blocks, no blockstates, no loot tables of its own. The chain is nine steps because the mod is nine items; there is nothing here to pad with.\n\nAll 9 ids verified three ways: assets/inmis/models/item/*.json stems, item.inmis.X lang keys, and data/inmis/recipes/*.json results. All three sets are identical, so the naive item.<mod>.X intersection would also have found 9 of 9 - no under-count in this mod. A fourth independent confirmation exists for every one of them: inmis.advancement.<id>.title / .description in the lang file names all nine by registry id.\n\nJAR CHOICE. Inmis proper (CurseForge 369254, Modrinth 'inmis') is FABRIC ONLY on 1.20.1 - there is no Forge build of the original. The Forge/NeoForge port is a separate CurseForge project, 'Inmis (Forge/NeoForge)' (id 1420260, slug inmis-forge-port), and its latest 1.20.1 Forge file inmis-2.7.2-2.9.3-1.20.1.jar is what was read here. It declares modId inmis and registers into the inmis namespace, so quest ids are identical either way. Its mods.toml also declares a curios dependency and it ships data/curios/tags - the backpack occupies a Curios 'back' slot, which the pack already has (curios-forge-5.14.1+1.20.1.jar).\n\nRECIPE GRAPH. One clean ladder plus two side items. frayed -> plated (iron) -> gilded (gold) -> bejeweled (diamond + emerald), then bejeweled branches three ways: blazing (netherite + magma block), withered (nether star + soul sand), and withered -> endless (dragon head + end stone). baby_backpack and ender_pouch hang off vanilla chests and are not on the ladder at all.\n\nCONSENSUS CONFLICT, recipe graph preferred: moddb puts inmis:ender_pouch FIRST, at pos 0.000, ahead of even frayed_backpack. Its recipe is an ENDER CHEST ringed with leather, and an ender chest costs eight obsidian plus an eye of ender (blaze powder from a nether fortress, plus an ender pearl). frayed_backpack is a wooden chest and eight leather. Placing ender_pouch first would gate the mod's opening quest behind the Nether. It is moved to position six here, after the diamond-tier backpack, which is roughly where its true ingredient depth sits. moddb's ordering of the other eight matches the recipe graph exactly.\n\nNothing dropped: there are no orphaned models, no unnamed stems, and no unobtainable registrations. Every item has exactly one shaped recipe. Only one wheel is emitted because the mod has only one family."
+}

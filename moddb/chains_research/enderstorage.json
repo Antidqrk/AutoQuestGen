@@ -1,0 +1,24 @@
+{
+ "mod": "enderstorage",
+ "verified_against": "EnderStorage-1.20.1-2.11.0.188-universal.jar",
+ "item_count_in_jar": 3,
+ "chain": [
+  {
+   "id": "enderstorage:ender_chest",
+   "title": "Ender Chest",
+   "desc": "A wooden chest ringed by obsidian, wool, blaze rods and an ender pearl; unlike vanilla's, this one has 27 slots and a three-dye frequency dial on its lid."
+  },
+  {
+   "id": "enderstorage:ender_tank",
+   "title": "Ender Tank",
+   "desc": "The same frame with a cauldron in the middle instead of a chest; it holds 16 buckets and shares them across every tank set to the same colour code."
+  },
+  {
+   "id": "enderstorage:ender_pouch",
+   "title": "Ender Pouch",
+   "desc": "Leather, wool, blaze powder and an ender pearl; carry it and you can open any Ender Chest frequency from your inventory, anywhere in any dimension."
+  }
+ ],
+ "collections": [],
+ "notes": "DELIBERATELY SHORT - THREE STEPS, THREE ITEMS, NO PADDING. The jar registers exactly three obtainable things and this chain quests all three. The 55 item models in assets/enderstorage/models/item are NOT 55 items: 52 of them are ender_pouch_button_left/middle/right_<colour> overlay models (16 dyes x 3 dial positions) plus ender_pouch_closed/open/owned_closed/owned_open state models, all driven by item-model overrides on the single ender_pouch item. Strict models INTERSECT lang gives 3, and all 3 have recipes, so no widening was needed and nothing was dropped. THE REAL CONTENT IS NOT THE ITEM COUNT. EnderStorage's mechanic is the frequency system: each chest, tank and pouch carries a three-slot colour code, giving 16^3 = 4096 independent shared inventories, and right-clicking a block with a diamond flips it from the public channel to a per-player private channel on the same code. All three items are recoloured in a crafting grid by the enderstorage:recolour_recipe serializer (block + dye), and all three are BUILT by the custom enderstorage:create_recipe serializer rather than minecraft:crafting_shaped, which is why the shapes are listed here from the pattern in data/enderstorage/recipes rather than assumed. A quest chain for this mod should lean on the frequency/private-channel mechanic in its descriptions, because there is no tech ladder to climb - the Ender Chest is the whole mod and the tank and pouch are siblings, not upgrades. VERIFICATION: pass 1 = models INTERSECT lang (3); pass 2 re-derived the set independently from .class constant-pool strings, item textures, blockstates, recipe results and loot tables, and found nothing unsupported and nothing missed. Jar confirmed 1.20.1 Forge: META-INF/mods.toml present (modIds enderstorage + bundled codechickenlib), minecraft versionRange [1.20.1], Java 17 class files, no fabric.mod.json."
+}

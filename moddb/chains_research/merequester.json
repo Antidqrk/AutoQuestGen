@@ -1,0 +1,20 @@
+{
+ "mod": "merequester",
+ "verified_against": "merequester-forge-1.20.1-1.2.1.jar",
+ "item_count_in_jar": 2,
+ "parent_mod": "ae2",
+ "chain": [
+  {
+   "id": "merequester:requester",
+   "title": "Standing Orders",
+   "desc": "Craft from iron, an ME Interface, a Crafting Co-Processing Unit, an Engineering Processor, copper and an amethyst shard; it holds a shopping list and keeps every line item stocked by autocrafting."
+  },
+  {
+   "id": "merequester:requester_terminal",
+   "title": "The Requests Desk",
+   "desc": "Craft shapelessly from an illuminated panel, a Logic Processor and an ME Requester; the terminal edits every Requester on the network from one screen."
+  }
+ ],
+ "collections": [],
+ "notes": "Genuinely a two-item mod: the jar registers only merequester:requester and merequester:requester_terminal, so this is the complete honest chain and nothing was padded. Its 1.58M downloads reflect popularity as a single quality-of-life block, not breadth. ASSUMES FROM PARENT (ae2): ME Interface, Crafting Co-Processing Unit, Engineering Processor, Logic Processor, an illuminated panel (ae2:illuminated_panel tag), and a working autocrafting setup - the Requester does nothing without patterns for it to pull on. VERIFICATION: strict model/lang intersection, 2/2 matched, no widening needed, no drops."
+}

@@ -1,0 +1,183 @@
+{
+ "mod": "simplyswords",
+ "verified_against": "simplyswords-forge-neoforge-1.70.2-1.20.1.jar",
+ "item_count_in_jar": 141,
+ "chain": [
+  {
+   "id": "simplyswords:runic_tablet",
+   "title": "The Stone That Starts Everything",
+   "desc": "Has no recipe anywhere in the jar; it is injected chest loot, and the mod's root advancement fires the moment one enters your inventory."
+  },
+  {
+   "id": "simplyswords:iron_longsword",
+   "title": "Longer Than a Sword Should Be",
+   "desc": "One of fifteen weapon families, each with its own rolled implicit; the Longsword line can deflect incoming damage."
+  },
+  {
+   "id": "simplyswords:diamond_longsword",
+   "title": "Diamond, Drawn Out",
+   "desc": "The diamond tier of the same family and the required base for the netherite smithing upgrade."
+  },
+  {
+   "id": "simplyswords:netherite_longsword",
+   "title": "Netherite Answers the Template",
+   "desc": "A Netherite Upgrade Smithing Template plus a Netherite Ingot on the diamond weapon, exactly as vanilla."
+  },
+  {
+   "id": "simplyswords:runic_longsword",
+   "title": "Runes Etched Into Netherite",
+   "desc": "Smithing with a Runic Tablet as template and a plain Diamond as addition; the weapon keeps its type and implicit and gains a Runic Power."
+  },
+  {
+   "id": "simplyswords:runic_forge",
+   "title": "The Only Bench That Matters",
+   "desc": "Obsidian, Amethyst Shards, a Smithing Table and a Runic Tablet; the sole place tablets and gems can be added to or pulled from a Unique."
+  },
+  {
+   "id": "simplyswords:empowered_remnant",
+   "title": "What a Unique Leaves Behind",
+   "desc": "Smelting any weapon in the simplyswords:uniques tag returns this remnant along with 35 experience."
+  },
+  {
+   "id": "simplyswords:runefused_gem",
+   "title": "Obsidian That Wept",
+   "desc": "Smithed from a Runic Tablet template, an Empowered Remnant base and Crying Obsidian; it rolls one power from the Runic pool."
+  },
+  {
+   "id": "simplyswords:netherfused_gem",
+   "title": "A Second Socket, A Second Power",
+   "desc": "The same smithing shape with a Netherite Ingot instead, rolling from the Nether power pool."
+  },
+  {
+   "id": "simplyswords:contained_remnant",
+   "title": "Remnant Behind Glass",
+   "desc": "Iron, Glass and an Empowered Remnant; held in hand it hints at nearby blocks that will turn it into a specific Unique."
+  },
+  {
+   "id": "simplyswords:mjolnir",
+   "title": "Struck on an Iron Block",
+   "desc": "The deterministic Contained Remnant target for an Iron Block, per the mod's own guidebook."
+  },
+  {
+   "id": "simplyswords:caelestis",
+   "title": "Opened at the End Portal",
+   "desc": "Using a Contained Remnant on an End Portal Frame; its ability tears a breach that summons corrupted allies for 45 seconds."
+  },
+  {
+   "id": "simplyswords:slumbering_lichblade",
+   "title": "Woken Over Soul Fire",
+   "desc": "The Contained Remnant target for Soul Fire, and the first of three persistent Lichblade forms."
+  },
+  {
+   "id": "simplyswords:waking_lichblade",
+   "title": "Half Awake",
+   "desc": "The Lichblade's form at Runic Forge awakening levels 4 through 7, carrying Soul Anguish II."
+  },
+  {
+   "id": "simplyswords:awakened_lichblade",
+   "title": "Soul Anguish, Fully Voiced",
+   "desc": "Awakening level 8 in the Runic Forge; the returning-soul absorption effect unlocks only at this stage."
+  },
+  {
+   "id": "simplyswords:dormant_relic",
+   "title": "A Faint Power Within",
+   "desc": "A lootable Unique whose form branches instead of simply strengthening; feed it tablets to find out which way."
+  },
+  {
+   "id": "simplyswords:righteous_relic",
+   "title": "Chosen by Daylight",
+   "desc": "The Dormant Relic taken to awakening level 4 in the Runic Forge during Overworld daytime."
+  },
+  {
+   "id": "simplyswords:sunfire",
+   "title": "Standard of the Sun",
+   "desc": "Righteous Relic carried to level 8; it plants a Righteous Battle Standard that burns foes and buffs nearby players."
+  },
+  {
+   "id": "simplyswords:tainted_relic",
+   "title": "Chosen by Night",
+   "desc": "The same level 4 transformation performed after dark, taking the abyssal branch instead."
+  },
+  {
+   "id": "simplyswords:harbinger",
+   "title": "Standard of the Abyss",
+   "desc": "Tainted Relic at level 8; its standard drags enemies inward and grants haste to allies."
+  },
+  {
+   "id": "simplyswords:decaying_relic",
+   "title": "Something Stirs in the Dark",
+   "desc": "An Unformed Relic with no implicit at all until the Deep Dark changes it; keep it in your pack while you explore."
+  },
+  {
+   "id": "simplyswords:magiscythe",
+   "title": "Answered by a Sonic Boom",
+   "desc": "Taking a Warden's sonic boom while carrying the Decaying Relic converts it, preserving its components and awakening level."
+  },
+  {
+   "id": "simplyswords:watcher_claymore",
+   "title": "Five Stacks of Dread",
+   "desc": "A lootable Unique whose hits build Dread on a target, summoning a bat per stack and executing anything left under a quarter health."
+  },
+  {
+   "id": "simplyswords:the_devourer",
+   "title": "Reforged Where the Sculk Grows",
+   "desc": "The Watcher at awakening level 4 or higher, reforged at a Runic Forge standing in the Deep Dark; reforging it below level 4 reverts it."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "simplyswords:runic_claymore",
+   "members": [
+    "simplyswords:runic_katana",
+    "simplyswords:runic_scythe",
+    "simplyswords:runic_spear",
+    "simplyswords:runic_glaive",
+    "simplyswords:runic_greataxe",
+    "simplyswords:runic_greathammer",
+    "simplyswords:runic_halberd",
+    "simplyswords:runic_rapier",
+    "simplyswords:runic_sai",
+    "simplyswords:runic_twinblade",
+    "simplyswords:runic_warglaive",
+    "simplyswords:runic_cutlass",
+    "simplyswords:runic_chakram"
+   ]
+  },
+  {
+   "hub": "simplyswords:thunderbrand",
+   "members": [
+    "simplyswords:arcanethyst",
+    "simplyswords:hearthflame",
+    "simplyswords:molten_edge",
+    "simplyswords:twisted_blade",
+    "simplyswords:soulrender",
+    "simplyswords:soulkeeper",
+    "simplyswords:soulstealer",
+    "simplyswords:frostfall",
+    "simplyswords:emberblade",
+    "simplyswords:icewhisper",
+    "simplyswords:livyatan",
+    "simplyswords:watching_warglaive",
+    "simplyswords:bramblethorn",
+    "simplyswords:brimstone_claymore"
+   ]
+  },
+  {
+   "hub": "simplyswords:wickpiercer",
+   "members": [
+    "simplyswords:gloampiercer",
+    "simplyswords:wraithfang",
+    "simplyswords:wraithmaw",
+    "simplyswords:soulstalker",
+    "simplyswords:stormscale",
+    "simplyswords:ionbound_stormscale",
+    "simplyswords:whisperwind",
+    "simplyswords:dreadwhisper",
+    "simplyswords:magiblade",
+    "simplyswords:magispear",
+    "simplyswords:enigma"
+   ]
+  }
+ ],
+ "notes": "Item set = 472 stems of assets/simplyswords/models/item/*.json intersected with item./block. keys across every assets/*/lang/en_us.json (141 ids); the excluded stems are the mythicmetals and gobber compat model folders and tooltip-only lang keys. Progression read from data/simplyswords/recipes/** (iron/gold/diamond crafting_shaped, netherite_* smithing_transform off the diamond weapon, runic_* smithing_transform off the netherite weapon using simplyswords:runic_tablet as template and minecraft:diamond as addition, runic2_* re-roll recipes, runefused_gem and netherfused_gem from Empowered Remnant, unique_melting smelting the whole simplyswords:uniques tag into an Empowered Remnant, and runic_forge from obsidian, amethyst, a smithing table and a tablet), from data/simplyswords/advancements/** (root fires on holding a runic_tablet, runic_weapon is its child, and every Unique hangs off runic_weapon except awakened_lichblade<-slumbering_lichblade, sunfire and harbinger<-dormant_relic, magiblade/magiscythe/magispear<-decaying_relic, the_devourer<-the_watcher, soulstalker<-soulrender, gloampiercer<-wickpiercer, wraithmaw<-wraithfang, dreadwhisper<-whisperwind, ionbound_stormscale<-stormscale), and from the in-jar guidebook assets/oracle_index/books/simplyswords/ (awakening.mdx, runic_forge.mdx, gem_socketing.mdx, unique-weapons/*.mdx). The guidebook supplies the transformation conditions quoted above: Decaying Relic reacts to a Warden sonic boom, a Sculk Sensor or Darkness; Dormant Relic splits at level 4 on Overworld day/night and finishes at level 8; The Watcher becomes The Devourer when reforged in the Deep Dark at level 4+; and Contained Remnant targets include Iron Block -> Mjolnir, Copper Bulb -> Storm's Edge, End Portal Frame -> Caelestis, Soul Fire -> Slumbering Lichblade. Collection 1 is the thirteen runic weapon types other than the hub; collection 2 is drawn from data/simplyswords/tags/items/lootable_uniques.json; collection 3 is every transformation-gated Unique. Nothing dropped. moddb agreement: 24 of moddb's 26 ids are inside the verified set and the late half matches well (runic_tablet, watching_warglaive, arcanethyst, empowered_remnant, dormant_relic, hearthflame, runefused_gem, netherfused_gem, molten_edge, soulrender, soulkeeper, thunderbrand, mjolnir, soulstealer, twisted_blade, watcher_claymore all rise in roughly the order used here). Conflict: moddb ranks decaying_relic 0.000, magiscythe 0.020, magispear 0.041, magiblade 0.061, enigma 0.102 and contained_remnant 0.122 as the earliest entries in the mod, but the jar makes all six strictly downstream - the Decaying Relic is a lootable Unique that only becomes a Magi weapon through Deep Dark events, and the Contained Remnant needs an Empowered Remnant, which needs a Unique to smelt. Those moddb positions come from packs listing the relic family as one early quest page, not from a gate, so this chain follows the recipe and advancement graph instead."
+}

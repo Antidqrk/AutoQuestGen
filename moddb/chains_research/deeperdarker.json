@@ -1,0 +1,161 @@
+{
+  "mod": "deeperdarker",
+  "verified_against": "deeperdarker-forge-1.20.1-1.3.3.jar",
+  "item_count_in_jar": 173,
+  "chain": [
+    {
+      "id": "kill:minecraft:warden",
+      "title": "The Thing That Hears You",
+      "desc": "The mod's kill_warden advancement and its two global loot modifiers both key off minecraft:entities/warden, making this the gate for everything that follows."
+    },
+    {
+      "id": "deeperdarker:warden_carapace",
+      "title": "Peeled From the Guardian",
+      "desc": "Added to the Warden's drops one to three at a time by a global loot modifier, and it also appears in twenty percent of Ancient City chests."
+    },
+    {
+      "id": "deeperdarker:heart_of_the_deep",
+      "title": "It Still Beats",
+      "desc": "A guaranteed extra Warden drop; right-clicking a reinforced deepslate frame with it spawns the Otherside Portal, and the heart is not consumed."
+    },
+    {
+      "id": "dim:deeperdarker:otherside",
+      "title": "Below the Bedrock",
+      "desc": "Entered through the ignited Ancient City portal frame; the dimension file defines four biomes - deeplands, echoing forest, blooming caverns and overcast columns."
+    },
+    {
+      "id": "deeperdarker:sculk_stone",
+      "title": "Ground of the Other Place",
+      "desc": "The bulk stone of the Otherside, mined like deepslate and cuttable into polished, cobbled, tiled and brick variants."
+    },
+    {
+      "id": "deeperdarker:gloomslate",
+      "title": "Darker Than Deepslate",
+      "desc": "The deep layer stone of the Otherside, host to its coal, copper, iron, gold, lapis, redstone, emerald and diamond ores."
+    },
+    {
+      "id": "deeperdarker:echo_log",
+      "title": "Timber That Remembers",
+      "desc": "Harvested from the pale echo trees of the Echoing Forest biome and crafted into echo planks and the whole echo wood family."
+    },
+    {
+      "id": "deeperdarker:soul_dust",
+      "title": "Powdered Whispers",
+      "desc": "Dropped by Sculk Snappers and Sculk Leeches; it is the reagent for soundproof glass and part of the Soul Elytra recipe."
+    },
+    {
+      "id": "deeperdarker:resonarium",
+      "title": "Shed by the Sludge",
+      "desc": "Dropped by Sludges, the slime-like Otherside mob found in the Blooming Caverns."
+    },
+    {
+      "id": "deeperdarker:resonarium_plate",
+      "title": "Beaten Into Shape",
+      "desc": "A shapeless craft of resonarium with a turtle scute, and it is the smithing upgrade material for the whole resonarium tier."
+    },
+    {
+      "id": "deeperdarker:resonarium_chestplate",
+      "title": "Humming Armour",
+      "desc": "Made at a smithing table by transforming an iron chestplate with a Resonarium Plate; every resonarium tool and armour piece upgrades from its iron counterpart the same way."
+    },
+    {
+      "id": "kill:deeperdarker:stalker",
+      "title": "It Was Behind You",
+      "desc": "A hostile Otherside mob and the only source of Soul Crystals."
+    },
+    {
+      "id": "deeperdarker:soul_crystal",
+      "title": "Caged Light",
+      "desc": "Dropped by Stalkers and also found in the Ancient Temple fountain chests; required for both the Sonorous Staff and the Soul Elytra."
+    },
+    {
+      "id": "kill:deeperdarker:shattered",
+      "title": "Broken and Still Walking",
+      "desc": "A skeletal Otherside mob spawning in the Deeplands and Echoing Forest, and the only mob that drops Sculk Bone."
+    },
+    {
+      "id": "deeperdarker:sculk_bone",
+      "title": "Marrow of the Deep",
+      "desc": "Dropped by the Shattered and stocked in Ancient Temple chests; it is the shaft material for the Sonorous Staff and the Soul Elytra."
+    },
+    {
+      "id": "deeperdarker:crystallized_amber",
+      "title": "Trapped in Gold Glass",
+      "desc": "A translucent Otherside block that encases buried loot chests and also appears as loot inside the Ancient Temple."
+    },
+    {
+      "id": "deeperdarker:sculk_transmitter",
+      "title": "Storage at a Distance",
+      "desc": "Found only in the Ancient Temple's hidden chest; it links to a container and opens that container's inventory from anywhere."
+    },
+    {
+      "id": "deeperdarker:reinforced_echo_shard",
+      "title": "Shard Wrapped in Shell",
+      "desc": "Crafted from Warden Carapace, a vanilla echo shard and phantom membrane, and it is the addition material for every Warden smithing recipe."
+    },
+    {
+      "id": "deeperdarker:warden_chestplate",
+      "title": "Wearing the Guardian",
+      "desc": "Smithed from a netherite chestplate with a Reinforced Echo Shard and the Warden Upgrade template looted from Ancient City chests."
+    },
+    {
+      "id": "deeperdarker:sonorous_staff",
+      "title": "A Shriek You Command",
+      "desc": "Crafted from a Sculk Bone, a Soul Crystal and the Heart of the Deep, the mod's endgame weapon."
+    },
+    {
+      "id": "deeperdarker:soul_elytra",
+      "title": "Gliding on Borrowed Souls",
+      "desc": "Crafted from a vanilla elytra with a Sculk Bone, a Soul Crystal and Soul Dust."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "deeperdarker:resonarium",
+      "members": [
+        "deeperdarker:resonarium_plate",
+        "deeperdarker:resonarium_sword",
+        "deeperdarker:resonarium_pickaxe",
+        "deeperdarker:resonarium_axe",
+        "deeperdarker:resonarium_shovel",
+        "deeperdarker:resonarium_hoe",
+        "deeperdarker:resonarium_helmet",
+        "deeperdarker:resonarium_chestplate",
+        "deeperdarker:resonarium_leggings",
+        "deeperdarker:resonarium_boots"
+      ]
+    },
+    {
+      "hub": "deeperdarker:reinforced_echo_shard",
+      "members": [
+        "deeperdarker:warden_sword",
+        "deeperdarker:warden_pickaxe",
+        "deeperdarker:warden_axe",
+        "deeperdarker:warden_shovel",
+        "deeperdarker:warden_hoe",
+        "deeperdarker:warden_helmet",
+        "deeperdarker:warden_chestplate",
+        "deeperdarker:warden_leggings",
+        "deeperdarker:warden_boots"
+      ]
+    },
+    {
+      "hub": "deeperdarker:blooming_sculk_stone",
+      "members": [
+        "deeperdarker:gloomy_sculk",
+        "deeperdarker:sculk_grime",
+        "deeperdarker:echo_soil",
+        "deeperdarker:blooming_stem",
+        "deeperdarker:glowing_roots",
+        "deeperdarker:bloom_berries",
+        "deeperdarker:ice_lily",
+        "deeperdarker:gloomy_geyser",
+        "deeperdarker:gloomy_grass",
+        "deeperdarker:glowing_flowers",
+        "deeperdarker:lily_flower",
+        "deeperdarker:sculk_vines"
+      ]
+    }
+  ],
+  "notes": "Item set = 173 stems of assets/deeperdarker/models/item/*.json intersected with item./block. keys across every assets/*/lang/en_us.json in the jar; every deeperdarker: id above is a member of that set. Only one dimension file exists (data/deeperdarker/dimension/otherside.json), so dim:deeperdarker:otherside is confirmed and is the sole dimension milestone; its biome source lists deeperdarker:deeplands, echoing_forest, blooming_caverns and overcast_columns. Portal mechanic verified from the class constant pool: WardenHeartItem holds a UseOnContext handler referencing DDBlocks.OTHERSIDE_PORTAL, and OthersidePortalBlock$OthersidePortalShape validates against a single vanilla Blocks frame field; cross-checked against the mod's own wiki, which states the frame is the reinforced deepslate structure already built in Ancient Cities and that the Heart is not consumed. Mob sources verified from loot tables: entities/sludge.json drops resonarium, entities/stalker.json drops soul_crystal, entities/shattered.json drops sculk_bone, entities/sculk_snapper.json and entities/sculk_leech.json drop soul_dust. Warden drops verified from data/deeperdarker/loot_modifiers/warden_carapace_from_warden.json and warden_heart_from_warden.json, both registered in data/forge/loot_modifiers/global_loot_modifiers.json. kill: entity ids stalker and shattered both exist as entity.deeperdarker.* lang keys; minecraft:warden is verified through the mod's own kill_warden advancement and loot modifier targets. DROPPED: deeperdarker:warden_upgrade_smithing_template - it has an item model and is a real, obtainable item (crafted from diamonds, sculk and an existing template, and added to Ancient City chests at 45 percent by a global loot modifier), but its lang key is item.deeperdarker.smithing_template.warden_upgrade.* rather than item.deeperdarker.warden_upgrade_smithing_template, so it fails the model-stem-times-lang-key membership test and is excluded from the chain; it is described in prose in the warden_chestplate entry instead. Also dropped: deeperdarker:otherside_portal, sculk_tendrils_plant, sculk_vines_plant, glowing_vines, glowing_vines_plant, glowing_roots_plant, potted_echo_sapling and potted_blooming_stem, which have lang entries but no item model and so are not items. No Deep Dark or Overworld block additions are claimed: the mod ships no biome modifiers and no datapack changes to minecraft:deep_dark, so every block milestone above is placed after the Otherside entry. Only one mod structure exists: deeperdarker:ancient_temple, which supplies the sculk_transmitter, crystallized_amber and warden_carapace chest loot referenced above."
+}

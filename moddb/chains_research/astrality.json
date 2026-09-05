@@ -1,0 +1,189 @@
+{
+ "mod": "astrality",
+ "verified_against": "astrality-0.1.4-forge-1.20.1.jar",
+ "item_count_in_jar": 225,
+ "chain": [
+  {
+   "id": "astrality:jaspergem",
+   "title": "A Vein of Jasper",
+   "desc": "Jasper Ore seams run from deep stone all the way up into the hills. The gems cut into a full early tool and armor set, and snap into a Terramity Empty Ring as your first accessory."
+  },
+  {
+   "id": "astrality:mimictite",
+   "title": "The Ore That Isn't",
+   "desc": "Mimic Ore is everywhere below sea level - break it for Mimictite, the strange mineral that lets plain iron come alive."
+  },
+  {
+   "id": "astrality:liviniron",
+   "title": "Iron, But Livelier",
+   "desc": "Press Mimictite into a raw iron block to wake Livin' Iron - a self-willed metal with a full gear set a clear step above what jasper gave you."
+  },
+  {
+   "id": "astrality:aquillone_ore",
+   "title": "Drowned Metal",
+   "desc": "Aquillone Ore hides in the deep. Smelt it into Oceanic Debris - the sea-soaked scrap behind the mod's first netherite-level upgrade."
+  },
+  {
+   "id": "astrality:aquillone_ingot",
+   "title": "Aquillone",
+   "desc": "Fuse Oceanic Debris with a Terramity Sapphire into Aquillone, the ocean alloy. It also plusses the Ocean Explorer's Ring for serious underwater mobility."
+  },
+  {
+   "id": "astrality:aquilonupgrade",
+   "title": "Template of the Tides",
+   "desc": "Craft the Aquillone Smithing Template from Oceanic Debris, Daemonium and a sapphire block - copies duplicate cheaply once you own one."
+  },
+  {
+   "id": "astrality:aquillone_armor_chestplate",
+   "title": "Netherite Learns to Swim",
+   "desc": "Run your netherite armor and tools through the smithing table with the template and Aquillone - the whole ladder upgrades piece by piece into the Aquillone set."
+  },
+  {
+   "id": "astrality:amethystgem",
+   "title": "Gem of Focus",
+   "desc": "Ring a diamond with amethyst shards to condense an Amethyst Gem - one half of the Arcanum formula."
+  },
+  {
+   "id": "astrality:rose_quartz",
+   "title": "The Pink Half",
+   "desc": "Temper quartz with an Iridium Chunk into Rose Quartz. With the Amethyst Gem and gold it completes the Arcanum recipe."
+  },
+  {
+   "id": "astrality:arcanum_alloy",
+   "title": "Arcanum",
+   "desc": "Alloy Amethyst Gem, Rose Quartz and gold into Arcanum - a magic-flavored gear set, and with a Prismatic Ring it becomes the Arcane Ring."
+  },
+  {
+   "id": "astrality:rawluminix",
+   "title": "Light in the Deepslate",
+   "desc": "Deepslate Luminix Ore only spawns in the lowest layers. Smelt the raw chunks into Luminix ingots, the glowing base of the Iceltek alloy."
+  },
+  {
+   "id": "astrality:iceltekalloy",
+   "title": "Cold Fusion",
+   "desc": "Combine Luminix with netherite scrap to make Iceltekalloy. It forges frost gear, the Reach Ring and Reach Bracelets - but the armor also wants fabric from a certain gnome."
+  },
+  {
+   "id": "astrality:gobs_fabric",
+   "title": "Shredding the Gilded Hat",
+   "desc": "Unravel Gob's Gilded Hat - the trophy from Terramity's first boss - into Gobs Fabric, the lining every Iceltek tool and armor piece is stitched with."
+  },
+  {
+   "id": "astrality:iceltek_chestplate",
+   "title": "Dressed for the Blizzard",
+   "desc": "Stitch Gobs Fabric over Iceltekalloy plating for the Iceltek set, a full armor and tool tier with an ability of its own on the armor keybind."
+  },
+  {
+   "id": "astrality:netherstarpiece",
+   "title": "Shattered Star",
+   "desc": "Split a nether star into pieces - and with a Prismatic Jewel, pieces reassemble into whole stars, so the Wither only has to die so many times."
+  },
+  {
+   "id": "astrality:witheritealloy",
+   "title": "Witherite",
+   "desc": "Bond a Nether Star Piece to netherite scrap for Witherite Alloy, the boss-grade metal of the next smithing tier."
+  },
+  {
+   "id": "astrality:withertemplate",
+   "title": "The Wither's Blueprint",
+   "desc": "Craft the Witherite Smithing Template from a star piece, Witherite and Daemonium; like the tide template, one copy breeds more."
+  },
+  {
+   "id": "astrality:witherite_chestplate",
+   "title": "Armor of the Three Skulls",
+   "desc": "Smith your netherite gear up into the Witherite set - a straight power step past Aquillone, paid for in nether stars."
+  },
+  {
+   "id": "astrality:insomniacrystal",
+   "title": "Crystallized Sleeplessness",
+   "desc": "Insomnia Crystals are the price of refusing your bed - claim them from the sleepless nights. They carry Somnic power no other material has."
+  },
+  {
+   "id": "astrality:insomniac_ingot",
+   "title": "Insomniac",
+   "desc": "Forge Insomnia Crystals with Iridium and Black Matter into Insomniac ingots - the metal that upgrades Terramity's iridium armor itself."
+  },
+  {
+   "id": "astrality:insomniactemplate",
+   "title": "Pattern of the Wakeful",
+   "desc": "Shape a template from Insomnia Crystal, Iridium Chunks and a Spectral Soul. It converts iridium armor and netherite tools to the Insomniac tier at the smithing table."
+  },
+  {
+   "id": "astrality:insomniac_armor_chestplate",
+   "title": "Never Sleep Again",
+   "desc": "Upgrade your Terramity Iridium Chestplate with Insomniac metal - the wakeful set that turns sleep deprivation into a fighting style."
+  },
+  {
+   "id": "astrality:worlderror",
+   "title": "Mining the Anomaly",
+   "desc": "Rare Anomaly blocks glitch into the world at any height. Break them for World Errors, reality's corrupted leftovers - also a fine building block for cursed bases."
+  },
+  {
+   "id": "astrality:glitch_steel",
+   "title": "Compiled from Errors",
+   "desc": "Forge World Errors with Black Matter and Iridium into Glitch Steel, and craft the Glitch Rider set - gear stitched together from broken code."
+  },
+  {
+   "id": "astrality:nucleateingot",
+   "title": "Do Not Lick the Ingot",
+   "desc": "Refine Nuclear Remnants with an Antiprism and Profanum into Nucleate - the Gas suit set is your only defense against the Radiation its own weapons spread."
+  },
+  {
+   "id": "astrality:seraphim",
+   "title": "Seraphim's Ring",
+   "desc": "Weave an Angel Feather, Reverium and iridescent shards around a Prismatic Ring - the holy endgame accessory of the addon."
+  },
+  {
+   "id": "astrality:fragile_domination",
+   "title": "Fragile Domination",
+   "desc": "Bind Exodium Superalloy, Nyxium, Reverium and a Shadowflame relic into Fragile Domination - the capstone trinket that demands trophies from the entire Terramity endgame."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "astrality:critnecklase_iridium",
+   "members": [
+    "astrality:critnecklasedaemonium",
+    "astrality:critnecklasedimlite",
+    "astrality:critnecklase_cosmilite",
+    "astrality:critnecklasevirentium",
+    "astrality:crit_necklace_conductite",
+    "astrality:critnecklasehellspec",
+    "astrality:crit_necklace_void",
+    "astrality:crit_necklace_profanum",
+    "astrality:critnecklace_nyxium",
+    "astrality:crit_necklace_exodium",
+    "astrality:crit_necklacereverium"
+   ]
+  },
+  {
+   "hub": "astrality:stonering",
+   "members": [
+    "astrality:jasper_ring",
+    "astrality:turtle_ring",
+    "astrality:eye_ring",
+    "astrality:ocean_ring",
+    "astrality:ocean_ring_plus",
+    "astrality:reach_ring",
+    "astrality:reach_ring_plus",
+    "astrality:resistance_ring",
+    "astrality:resistance_ringplus",
+    "astrality:arcanering",
+    "astrality:wardens_heart",
+    "astrality:unholy_necklace",
+    "astrality:nasty_choker"
+   ]
+  },
+  {
+   "hub": "astrality:bandage",
+   "members": [
+    "astrality:occult_bandage",
+    "astrality:super_ration",
+    "astrality:forest_wreath",
+    "astrality:ragebait_ball",
+    "astrality:nightmare_dart"
+   ]
+  }
+ ],
+ "notes": "Terramity addon (nearly every recipe pulls terramity: ingredients - daemonium, sapphire, iridium, black_matter, profanum, reverium, exodium) - gate this chain alongside/after the terramity chain (same pack, GayChaseyPacxk). No advancements or guidebook in the jar; order derived from recipe dependency depth against terramity's own tier ladder (daemonium/sapphire early -> iridium T2 -> black matter/profanum/antiprism -> reverium/nyxium/exodium endgame) plus worldgen: jasperore (y-40..200, count 3) and mimicore (count 24, deepslate) are the abundant starters, aquillone_ore smelts to oceanic_debris, deepslate_luminix_ore drops rawluminix, glitch_ore ('Anomaly', any height, count 1) drops worlderror. All 27 chain + 29 collection ids verified against the 225 item/block lang stems and recipe results. Aquillone/Witherite are netherite smithing upgrades; Insomniac uniquely upgrades terramity iridium armor (verified smithing base terramity:iridium_armor_*). insomniacrystal and nuclearremnant sources are code-side (MCreator mod; effects Somnic Crystal/Sleep Paralysis and Radiation hint at phantom-night and nuclear mechanics) - descs kept source-vague deliberately. Skipped as unobtainable/joke: impossible_ring, slatsyr_ckcatt_a, goo, debug/error deco duplicates, train_engine, accursed_soul_block (needs terramity:accursed_soul), bee/beeck joke blocks."
+}

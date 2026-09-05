@@ -1,0 +1,90 @@
+{
+ "mod": "oceansdelight",
+ "verified_against": "oceansdelight-1.0.2-1.20.jar",
+ "item_count_in_jar": 22,
+ "parent_mod": "farmersdelight",
+ "chain": [
+  {
+   "id": "oceansdelight:tentacles",
+   "title": "What The Squid Leaves Behind",
+   "desc": "Squid drop tentacles through data/oceansdelight/loot_modifiers/cut_tentacles_squid.json. Vanilla squid give ink and nothing else; now they give dinner."
+  },
+  {
+   "id": "oceansdelight:cut_tentacles",
+   "title": "Portioned On The Board",
+   "desc": "Knife tentacles on a cutting board. Cut tentacles are the base of the fried recipes."
+  },
+  {
+   "id": "oceansdelight:tentacle_on_a_stick",
+   "title": "Skewered",
+   "desc": "A tentacle and a stick. The simplest thing this mod makes and the fastest food on a boat."
+  },
+  {
+   "id": "oceansdelight:seagrass_salad",
+   "title": "Greens From The Seabed",
+   "desc": "Seagrass and a bowl. The only recipe here that needs no mob at all."
+  },
+  {
+   "id": "oceansdelight:stuffed_cod",
+   "title": "Filled And Tied",
+   "desc": "A cod stuffed with onion, tomato, kelp and mushroom, bound with Farmer's Delight rope. The rope is what makes this a Farmer's Delight recipe rather than a vanilla one."
+  },
+  {
+   "id": "oceansdelight:fugu_slice",
+   "title": "Cutting A Pufferfish Carefully",
+   "desc": "Knife a pufferfish on a cutting board with bone meal alongside. Done properly it stops being poison."
+  },
+  {
+   "id": "oceansdelight:guardian",
+   "title": "The Guardian, Whole",
+   "desc": "Guardians drop themselves as an ingredient through guardian_drop.json. Ocean monuments become a fishing ground."
+  },
+  {
+   "id": "oceansdelight:guardian_tail",
+   "title": "Taking The Tail",
+   "desc": "Knife a guardian on a cutting board with bone meal. The tail is the cut worth cooking."
+  },
+  {
+   "id": "oceansdelight:cooked_guardian_tail",
+   "title": "Tail Over Fire",
+   "desc": "Campfire, furnace or smoker. Proof you cleared enough of a monument to farm it."
+  },
+  {
+   "id": "oceansdelight:elder_guardian_slab",
+   "title": "The Elder, Butchered",
+   "desc": "Elder Guardians drop a slab of themselves through cut_elder_guardian.json. There are only three per monument, which makes this the mod's rarest ingredient."
+  },
+  {
+   "id": "oceansdelight:elder_guardian_slice",
+   "title": "Sliced Down",
+   "desc": "Knife the slab with bone meal. Each elder yields a handful of slices and no more."
+  },
+  {
+   "id": "oceansdelight:cooked_elder_guardian_slice",
+   "title": "Seared",
+   "desc": "The slice cooked. The single most valuable piece of food in the ocean."
+  },
+  {
+   "id": "oceansdelight:elder_guardian_roll",
+   "title": "The Monument, Rolled",
+   "desc": "Elder guardian slices with Farmer's Delight cooked rice. This mod's endgame dish."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "oceansdelight:elder_guardian_roll",
+   "members": [
+    "oceansdelight:fugu_roll",
+    "oceansdelight:cabbage_wrapped_elder_guardian",
+    "oceansdelight:cooked_stuffed_cod",
+    "oceansdelight:bowl_of_guardian_soup",
+    "oceansdelight:baked_tentacle_on_a_stick",
+    "oceansdelight:squid_rings",
+    "oceansdelight:braised_sea_pickle",
+    "oceansdelight:honey_fried_kelp",
+    "oceansdelight:guardian_soup"
+   ]
+  }
+ ],
+ "notes": "All 22 ids resolve as assets/oceansdelight/models/item/<id>.json intersected with item./block. lang keys - zero models_only and zero lang_only. Small mod, so ONE wheel rather than three, said plainly. Three loot modifiers supply every animal ingredient: cut_tentacles_squid.json (squid -> tentacles), guardian_drop.json (guardian -> a whole guardian item) and cut_elder_guardian.json (elder guardian -> slab). The chain's gating is the ocean monument itself: everything up to stuffed_cod is craftable from open water, everything from oceansdelight:guardian onward requires you to fight into a monument, and the elder guardian line is capped at three kills per structure. A quirk worth recording for a quest generator: the cutting recipes for guardian_tail, elder_guardian_slice and fugu_slice all list minecraft:bone_meal as a second input beside forge:tools/knives. Most recipes are wrapped in forge:conditional, but scanning the conditions shows no forge:mod_loaded gate on any of them beyond farmersdelight itself, so nothing here needs a third mod. Parent items this addon assumes you already have: farmersdelight:cutting_board, farmersdelight:cooking_pot, farmersdelight:cooked_rice, farmersdelight:rope, farmersdelight:tomato, onion and cabbage crops, any forge:tools/knives knife."
+}

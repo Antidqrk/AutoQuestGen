@@ -1,0 +1,181 @@
+{
+  "mod": "irons_spellbooks",
+  "verified_against": "irons_spellbooks-1.20.1-3.16.3.jar",
+  "item_count_in_jar": 240,
+  "chain": [
+    {
+      "id": "irons_spellbooks:arcane_essence",
+      "title": "Dust of Old Magic",
+      "desc": "Found in library, generic, good, nether, end city and ancient city chest loot; it is the mod's base reagent."
+    },
+    {
+      "id": "irons_spellbooks:iron_spell_book",
+      "title": "Your First Grimoire",
+      "desc": "Chains, leather and paper folded into the starter spell book."
+    },
+    {
+      "id": "irons_spellbooks:inscription_table",
+      "title": "Where Spells Are Written",
+      "desc": "A book above wooden slabs on wooden fence legs; spell scrolls are inscribed into books here."
+    },
+    {
+      "id": "irons_spellbooks:scroll",
+      "title": "A Spell on Paper",
+      "desc": "Looted from library, generic, nether, end city and ancient city chests; each scroll holds one spell."
+    },
+    {
+      "id": "irons_spellbooks:magic_cloth",
+      "title": "Woven With Essence",
+      "desc": "Eight arcane essence pressed around a block of wool."
+    },
+    {
+      "id": "irons_spellbooks:wizard_chestplate",
+      "title": "Robes of the Apprentice",
+      "desc": "Magic cloth folded into the wizard robe chestplate, the first mana-boosting armour."
+    },
+    {
+      "id": "irons_spellbooks:copper_spell_book",
+      "title": "Copper Binding",
+      "desc": "Copper ingots and string bound around paper."
+    },
+    {
+      "id": "irons_spellbooks:hogskin",
+      "title": "Nether Leather",
+      "desc": "Dropped by hoglins in the nether; it backs the mid-tier spell books."
+    },
+    {
+      "id": "irons_spellbooks:gold_spell_book",
+      "title": "Gilded Tome",
+      "desc": "Gold ingots and arcane essence stitched to hogskin."
+    },
+    {
+      "id": "irons_spellbooks:alchemist_cauldron",
+      "title": "The Brewing Vat",
+      "desc": "Iron ingots and a vanilla cauldron set over arcane essence and cinder essence; it brews inks and elixirs."
+    },
+    {
+      "id": "irons_spellbooks:scroll_forge",
+      "title": "Ink Made Permanent",
+      "desc": "Polished deepslate resting on crying obsidian; it presses brewed ink into blank scrolls."
+    },
+    {
+      "id": "irons_spellbooks:arcane_ingot",
+      "title": "Essence Made Solid",
+      "desc": "Eight arcane essence compressed around a base ingot."
+    },
+    {
+      "id": "irons_spellbooks:diamond_spell_book",
+      "title": "Crystal Bound",
+      "desc": "Diamonds, magic cloth and hogskin wrapped around an enchanted book."
+    },
+    {
+      "id": "irons_spellbooks:blank_rune",
+      "title": "An Unwritten Rune",
+      "desc": "Chest loot from libraries, ancient cities, the nether and the End; every school rune starts here."
+    },
+    {
+      "id": "irons_spellbooks:raw_mithril",
+      "title": "Silver of the Deep",
+      "desc": "Mined from mithril ore and deepslate mithril ore in the world's lower layers."
+    },
+    {
+      "id": "irons_spellbooks:mithril_ingot",
+      "title": "Mithril Drawn Out",
+      "desc": "Four mithril scrap, blasted from raw mithril, folded together in a two-by-two."
+    },
+    {
+      "id": "irons_spellbooks:arcane_anvil",
+      "title": "The Upgrade Bench",
+      "desc": "Amethyst blocks and a diamond over polished deepslate and a vanilla anvil; upgrade orbs are applied here."
+    },
+    {
+      "id": "irons_spellbooks:upgrade_orb",
+      "title": "A Blank Enhancement",
+      "desc": "Arcane ingots and cinder essence ringed around a mithril ingot."
+    },
+    {
+      "id": "irons_spellbooks:ruined_book",
+      "title": "Charred Pages",
+      "desc": "Recovered from ancient city chests and the Citadel's bookshelves."
+    },
+    {
+      "id": "irons_spellbooks:netherite_spell_book",
+      "title": "Bound in Netherite",
+      "desc": "Netherite and magic cloth with a blood vial and a lightning bottle pressed onto a ruined book."
+    },
+    {
+      "id": "irons_spellbooks:cinder_essence",
+      "title": "Ash of the Fire Boss",
+      "desc": "Dropped by the Citadel keeper and the fire boss, and found in battleground burial chests."
+    },
+    {
+      "id": "irons_spellbooks:pyrium_ingot",
+      "title": "Vault Metal",
+      "desc": "Looted from the Citadel vault; blasting one yields five ancient debris."
+    },
+    {
+      "id": "irons_spellbooks:eldritch_manuscript",
+      "title": "Whispers From the Deep Dark",
+      "desc": "Eight ancient knowledge fragments from ancient cities and catacombs pressed around an echo shard."
+    },
+    {
+      "id": "irons_spellbooks:dragonskin_spell_book",
+      "title": "Skin of the Ender Dragon",
+      "desc": "Dragonskin dropped by the Ender Dragon, laid with obsidian around a ruined book."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "irons_spellbooks:blank_rune",
+      "members": [
+        "irons_spellbooks:fire_rune",
+        "irons_spellbooks:ice_rune",
+        "irons_spellbooks:lightning_rune",
+        "irons_spellbooks:holy_rune",
+        "irons_spellbooks:ender_rune",
+        "irons_spellbooks:blood_rune",
+        "irons_spellbooks:evocation_rune",
+        "irons_spellbooks:nature_rune",
+        "irons_spellbooks:arcane_rune",
+        "irons_spellbooks:protection_rune",
+        "irons_spellbooks:cooldown_rune"
+      ]
+    },
+    {
+      "hub": "irons_spellbooks:upgrade_orb",
+      "members": [
+        "irons_spellbooks:fire_upgrade_orb",
+        "irons_spellbooks:ice_upgrade_orb",
+        "irons_spellbooks:lightning_upgrade_orb",
+        "irons_spellbooks:holy_upgrade_orb",
+        "irons_spellbooks:ender_upgrade_orb",
+        "irons_spellbooks:blood_upgrade_orb",
+        "irons_spellbooks:evocation_upgrade_orb",
+        "irons_spellbooks:nature_upgrade_orb",
+        "irons_spellbooks:mana_upgrade_orb",
+        "irons_spellbooks:protection_upgrade_orb",
+        "irons_spellbooks:cooldown_upgrade_orb"
+      ]
+    },
+    {
+      "hub": "irons_spellbooks:iron_spell_book",
+      "members": [
+        "irons_spellbooks:copper_spell_book",
+        "irons_spellbooks:gold_spell_book",
+        "irons_spellbooks:diamond_spell_book",
+        "irons_spellbooks:netherite_spell_book",
+        "irons_spellbooks:dragonskin_spell_book",
+        "irons_spellbooks:druidic_spell_book",
+        "irons_spellbooks:ice_spell_book",
+        "irons_spellbooks:cursed_doll_spell_book",
+        "irons_spellbooks:evoker_spell_book",
+        "irons_spellbooks:blaze_spell_book",
+        "irons_spellbooks:necronomicon_spell_book",
+        "irons_spellbooks:villager_spell_book",
+        "irons_spellbooks:wimpy_spell_book",
+        "irons_spellbooks:rotten_spell_book"
+      ]
+    }
+  ],
+  "notes": "Verified against the Forge/NeoForge build irons_spellbooks-1.20.1-3.16.3.jar. Ids come from assets/irons_spellbooks/models/item/*.json intersected with item./block. keys in assets/irons_spellbooks/lang/en_us.json, widened by ids referenced in data/irons_spellbooks/**. Crafting steps were read from data/irons_spellbooks/recipes/** and drop/chest sources from data/irons_spellbooks/loot_tables/**. The mod defines ten spell schools in lang (fire, ice, lightning, holy, ender, blood, evocation, void, nature, eldritch) but ships runes and upgrade orbs for only seven of them plus arcane, protection and cooldown - there are NO void or eldritch runes or orbs, so those two schools are absent from the rune and orb wheels. Legendary spells themselves are NBT on scrolls and books, not separate item ids, so the chain ends on the eldritch manuscript and the dragonskin book instead. Nothing was dropped: every id passed the membership check."
+}

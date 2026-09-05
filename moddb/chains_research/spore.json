@@ -1,0 +1,180 @@
+{
+ "mod": "spore",
+ "verified_against": "spore_1.20.1_2.2.0j.jar",
+ "item_count_in_jar": 354,
+ "chain": [
+  {
+   "id": "kill:spore:inf_human",
+   "title": "First Contact",
+   "desc": "The baseline Infected Human is everywhere the fungus has spread. Kills drop the body parts - claws, organs, fibres - that literally every recipe in this mod is built from, so start harvesting."
+  },
+  {
+   "id": "spore:biomass",
+   "title": "Render the Flesh",
+   "desc": "Any meat plus any harvested body part crafts into Biomass, the mod's base stock: it compresses into tumors and building blocks and feeds most flesh recipes, so it never goes to waste."
+  },
+  {
+   "id": "spore:compound",
+   "title": "Pre-Collapse Chemistry",
+   "desc": "Crush an amethyst shard into Amethyst Dust and mix it with sugar. Compound is the recovered synthetic the old-world scientists built all their gear from."
+  },
+  {
+   "id": "spore:compound_plate",
+   "title": "Lost Technology",
+   "desc": "Smelt Compound into a Compound Plate - the casing for the Scanner, Surgery Table, C.D.U. and every other survivor machine. Ruined labs and hospitals also stock them in equipment chests."
+  },
+  {
+   "id": "spore:circuit_board",
+   "title": "Salvaged Electronics",
+   "desc": "A Compound Plate wired with a comparator, repeater and redstone. This is the brain that the Scanner, Zoaholic and Incubator all need."
+  },
+  {
+   "id": "spore:scanner",
+   "title": "Scanning Time",
+   "desc": "Circuit board, plate, observer and a lever. Scan infected mobs and organs to fill out your anatomy log - and heed it when it flashes RUN: that means a Calamity-class horror is close."
+  },
+  {
+   "id": "spore:knife",
+   "title": "Field Dissection",
+   "desc": "A Claw (crafted from a Claw Fragment), a Mutated Heart, Mutated Fibre and a bone. The Infected Knife can be thrown and harvests extra materials from mobs - it pays for itself immediately."
+  },
+  {
+   "id": "structure:spore:hospital",
+   "title": "Ruins of the Old World",
+   "desc": "Overrun hospitals, labs, prisons and military camps dot the world. Their organ and equipment chests hold spare organs, Compound Plates, gas masks and even free Scanners - plus Documents recording what happened."
+  },
+  {
+   "id": "spore:surgery_table",
+   "title": "Anesthesia Not Required",
+   "desc": "A crafting table, iron sword, iron axe, glass bottle and a Compound Plate. Surgery recipes assemble harvested organs into infected weapons and armor - this bench is the heart of the whole mod."
+  },
+  {
+   "id": "spore:living_core",
+   "title": "Still Beating",
+   "desc": "Stitched at the Surgery Table from Armor Fragments, Mutated Fibre and a Mutated Heart. A Living Core powers the better infected weapons, so expect to make several."
+  },
+  {
+   "id": "spore:saber",
+   "title": "Blade of Bone and Sinew",
+   "desc": "Your first surgery weapon: claws, fleshy bones and a Living Core. Right-click to dash - every infected weapon has a unique active like this, so the arsenal is worth collecting."
+  },
+  {
+   "id": "spore:plated_chest",
+   "title": "Plate Over Flesh",
+   "desc": "Surgery-craft armor from Armor Plates, Armor Fragments and Spines (spine segments bound with nerves). Plated armor is the mid tier - tough salvage from armored infected like Knights."
+  },
+  {
+   "id": "spore:sharpening_agent",
+   "title": "Refining Agent",
+   "desc": "A Claw Fragment, iron nugget and glass bottle. Refining Agents hone infected weapons; the matching Hardening Agent (Armor Fragment) toughens infected armor. Keep both stocked to maintain living gear."
+  },
+  {
+   "id": "spore:syringe",
+   "title": "Phlebotomy Kit",
+   "desc": "Iron nuggets and glass bottles craft four Syringes. Jab an evolved infected to draw its blood sample - each mutated strain carries a different one."
+  },
+  {
+   "id": "spore:vampiric_syringe",
+   "title": "Bad Blood",
+   "desc": "Inject a Syringe into a Volatile to draw a Vampiric Blood Sample. Samples from each evolved strain - berserk, toxic, calcified and more - fuel the mutation system, so start a collection."
+  },
+  {
+   "id": "spore:cdu",
+   "title": "Local Ice Age",
+   "desc": "The Cryogenic Dispensing Unit: a dispenser, Compound Plates and iron. It flash-freezes the infection around it, purging mycelium and biomass - your main tool for actually reclaiming infested land."
+  },
+  {
+   "id": "spore:container",
+   "title": "Biocontainment",
+   "desc": "Compound Plates, glass and a water bucket make two B.C.U. containment tanks - the chassis for both the Incubator and the Zoaholic."
+  },
+  {
+   "id": "spore:incubator",
+   "title": "Grow Your Own Horror",
+   "desc": "A B.C.U. wired with a Circuit Board and redstone. The Incubator cultivates infected tissue for you, turning your blood-sample and organ stockpile into a renewable supply line."
+  },
+  {
+   "id": "spore:zoaholic",
+   "title": "Discount Radar",
+   "desc": "B.C.U., Brain Remnants and a Circuit Board. Feed the Zoaholic the organs it demands and it triangulates the Anomaly - the source signal of the local infestation. It will notice you noticing it."
+  },
+  {
+   "id": "kill:spore:vigil",
+   "title": "I Spy With My Little Eye",
+   "desc": "The Vigil is the hive's floating watcher. Its Eye is a surgery ingredient you cannot skip - the Respirator and several endgame recipes demand one."
+  },
+  {
+   "id": "spore:respirator",
+   "title": "Breathe Easy",
+   "desc": "Surgery-grown from tendons, Alveolic Sacks, nerves and a Vigil Eye: a living rebreather that outclasses the scavenged gas mask for pushing deep into spore-choked ground."
+  },
+  {
+   "id": "spore:symbiotic_reagent",
+   "title": "Grafted Symbiosis",
+   "desc": "Mutated Fibre, a Living Core, nerves and a Mutated Heart. Reagents are grafted onto infected gear at the Surgery Table like enchants - this one mends your weapon as the symbiosis feeds."
+  },
+  {
+   "id": "spore:cryogenic_reagent",
+   "title": "Cold Fusion of Flesh",
+   "desc": "Upgrade a Symbiotic Reagent with Freezerburned Biomass and an Ice Canister. Grafts Cryogenic Aspect: strikes chill victims to the core. Five other reagents cover bile, acid, thorns and hunger."
+  },
+  {
+   "id": "spore:inf_chest",
+   "title": "Living Chestplate",
+   "desc": "Graft a Plated Chestplate and a Flesh Chestplate together with an Integrating Agent. Living armor is the top tier - armor that is, in every sense, alive."
+  },
+  {
+   "id": "kill:spore:proto",
+   "title": "Something Once Great",
+   "desc": "The Proto Hivemind broods inside the great biomass towers. Killing it strikes at the infection's command structure and opens the path to the true endgame horrors."
+  },
+  {
+   "id": "spore:mistmaker",
+   "title": "Mycelial MistMaker",
+   "desc": "The endgame surgery build: an Amalgamated Heart, all three Reforged Biomasses, spines and innards form a shotgun-chainsaw hybrid that reloads itself on the flesh of your enemies."
+  }
+ ],
+ "collections": [
+  {
+   "name": "Anatomy Log",
+   "desc": "Scan every advanced organ with the Scanner - the mod's own 15-part anatomy achievement line.",
+   "items": ["spore:claw_fragment", "spore:armor_fragment", "spore:mutated_heart", "spore:mutated_fiber", "spore:wing_membrane", "spore:cerebrum", "spore:alveolic_sack", "spore:altered_spleen", "spore:corrosive_sack", "spore:organoid_membrane", "spore:amalgamated_heart", "spore:acidic_gland", "spore:ligaments", "spore:fins", "spore:hyperbolized_liver"]
+  },
+  {
+   "name": "Blood Bank",
+   "desc": "Draw a blood sample from every evolved infected strain with a syringe.",
+   "items": ["spore:vampiric_syringe", "spore:calcified_syringe", "spore:bezerk_syringe", "spore:toxic_syringe", "spore:rotten_syringe", "spore:reinforced_syringe", "spore:skeletal_syringe", "spore:drowned_syringe", "spore:charred_syringe"]
+  },
+  {
+   "name": "Infected Arsenal",
+   "desc": "Every surgery-built infected weapon has a unique active ability - dash, spin, throw, grapple, stun.",
+   "items": ["spore:saber", "spore:infected_bow", "spore:greatsword", "spore:cleaver", "spore:halberd", "spore:boomerang", "spore:armads", "spore:maul", "spore:scythe", "spore:mace", "spore:combat_shovel", "spore:infected_spear", "spore:infected_crossbow", "spore:sickle", "spore:knife", "spore:rapier", "spore:combat_pickaxe", "spore:shield"]
+  },
+  {
+   "name": "Living Guns",
+   "desc": "Endgame flesh-firearms fed with concentrated acid, bile and toxin vials.",
+   "items": ["spore:acidic_assassin", "spore:bile_blaster", "spore:mistmaker", "spore:terroriser"]
+  },
+  {
+   "name": "Grafting Reagents",
+   "desc": "Reagents grafted onto living gear at the Surgery Table, each carrying a unique enchant-like effect.",
+   "items": ["spore:symbiotic_reagent", "spore:cryogenic_reagent", "spore:gastric_reagent", "spore:corrosive_reagent", "spore:serrated_reagent", "spore:voracious_reagent"]
+  },
+  {
+   "name": "Survivor Rations",
+   "desc": "Apocalypse cuisine - if it stopped moving, it's an ingredient.",
+   "items": ["spore:sausage", "spore:fungal_burger", "spore:heart_kebab", "spore:fiber_stew", "spore:brain_noodles", "spore:organoid_soup", "spore:eldritch_sushi", "spore:stuffed_abomination", "spore:meaty_icecream", "spore:biomass_bacon"]
+  },
+  {
+   "name": "Overrun Ruins",
+   "desc": "Visit the old world's carcasses - each structure type carries its own loot chests and horrors.",
+   "items": ["structure:spore:hospital", "structure:spore:lab", "structure:spore:cathedral", "structure:spore:church", "structure:spore:prison", "structure:spore:military_camp", "structure:spore:biomass_tower", "structure:spore:iceberg_mines", "structure:spore:mines", "structure:spore:celltower", "structure:spore:lodge", "structure:spore:mass_grave"]
+  },
+  {
+   "name": "Apex Infected",
+   "desc": "The Leviathan-class and hive-command horrors at the top of the food chain.",
+   "items": ["kill:spore:vigil", "kill:spore:usurper", "kill:spore:proto", "kill:spore:hivetumor", "kill:spore:leviathan", "kill:spore:kraken", "kill:spore:stahl", "kill:spore:verfall"]
+  }
+ ],
+ "notes": "Fungal Infection: Spore 2.2. Order source: the jar's own advancements (spore -> lost_technology/scanning_world -> surgery/cdu/zoaholic branches, anatomy_act_1..15 scan line) plus recipe dependency (compound -> compound_plate -> circuit_board -> machines; surgery type spore:surgery; grafting type spore:grafting; blood samples via spore:injection recipes, e.g. syringe on a Volatile yields vampiric_syringe; living_chest grafting = plated_chest + integrating_agent + living_chest -> inf_chest). CDU name 'Cryogenic Dispensing Unit' and Zoaholic organ-feeding/anomaly-tracking confirmed from lang strings. Structures verified in data/spore/worldgen/structure. Entity ids verified against entity.spore.* lang keys (inf_human, vigil, proto, leviathan...). integrating_agent and armor_plate have no crafting recipe in the jar - they are drop/loot items, so they appear only inside descs, not as steps."
+}

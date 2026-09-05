@@ -1,0 +1,302 @@
+{
+ "mod": "endrem",
+ "ids_in_jar": 19,
+ "videos": [
+  {
+   "id": "VXwXhKnjgx0",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 10178
+  },
+  {
+   "id": "7N4kqPnvaXs",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 784,
+   "note": "under the 1500-char analysis threshold; facts hand-read"
+  },
+  {
+   "id": "hY642vWK3OM",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 603,
+   "note": "under the 1500-char analysis threshold; facts hand-read"
+  }
+ ],
+ "items": {
+  "endrem:undead_soul": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.7729,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "endrem:corrupted_eye": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3424,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "endrem:magical_eye": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3058,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "endrem:witch_eye": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5331,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "endrem:black_eye": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2672,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "endrem:lost_eye": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5104,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "endrem:evil_eye": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7036,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "endrem:cold_eye": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1574,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "endrem:guardian_eye": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4495,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "endrem:cryptic_eye": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8402,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "endrem:wither_eye": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3792,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "endrem:undead_eye": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.762,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "endrem:nether_eye": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0873,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "endrem:exotic_eye": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6645,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "endrem:old_eye": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0538,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "_confidence": "MODERATE. The banked corpus mostly transcribed to near-silence: 5 of 8 videos are music-only showcases or installation walkthroughs (cbsh9Nos4pA 8 chars, WSCYVUQsOwo 291, YK0lzn3FJA4 237, zdGYzVxBb3U 354, uQpfDwWvBhs 513 - all install/dupe content). The signal comes from VXwXhKnjgx0, a full per-eye walkthrough (dubbed to English, item names occasionally mangled: 'rogue AI' = Rogue Eye, 'endive' = ender eye), corroborated on the portal rule by 7N4kqPnvaXs (a mini-review) and on the Evil Eye by hY642vWK3OM. Every id below is verified against endrem_forge-5.3.3-R-1.20.1 via chains_research/endrem.json - the guides confirm the chain's loot sources rather than replacing them.",
+  "entry": [
+   {
+    "note": "The mod has no portal of its own - it REPLACES how you enter the vanilla End. The stronghold portal demands twelve eyes that are ALL DIFFERENT from each other; you cannot double up on any kind. With sixteen eye types in the jar, the player picks any twelve, which is the whole progression: the mod is a world-tour scavenger hunt across desert pyramids, igloos, jungle temples, mineshafts, outposts, mansions, fortresses, bastions, monuments and two boss kills.",
+    "ids": [
+     "endrem:ancient_portal_frame"
+    ],
+    "video": "VXwXhKnjgx0"
+   },
+   {
+    "note": "The vanilla eye of ender is REFUSED by the portal frames - the narrator tries it live on several frames expecting it to work (tutorials had convinced the narrator it would) and it does not go in. A questbook must not tell players to bring vanilla eyes.",
+    "ids": [
+     "endrem:ancient_portal_frame"
+    ],
+    "video": "VXwXhKnjgx0"
+   },
+   {
+    "note": "Both reviews stress the count: at least twelve different eyes to light the portal, out of sixteen kinds. Locating the stronghold still works the vanilla way, so eye-throwing to navigate is unchanged.",
+    "ids": [],
+    "video": "7N4kqPnvaXs"
+   }
+  ],
+  "order": [
+   {
+    "note": "The guide teaches structure-loot eyes first (cheap, overworld), then nether eyes, then boss eyes - matching the chain's order. The Cold Eye is presented as the easiest pickup: check the igloo for a basement level, the chest is down there.",
+    "ids": [
+     "endrem:cold_eye"
+    ],
+    "video": "VXwXhKnjgx0"
+   },
+   {
+    "note": "Old Eye: the desert pyramid's loot is UNDER the floor - dig down, break the pressure plate first, then loot. The guide demonstrates disarming before looting.",
+    "ids": [
+     "endrem:old_eye"
+    ],
+    "video": "VXwXhKnjgx0"
+   },
+   {
+    "note": "Witch Eye is a two-step: hunt witches for the pupil drop, then combine the pupil with a vanilla ender eye. The guide treats it as one of the easier renewable eyes since witches respawn.",
+    "ids": [
+     "endrem:witch_pupil",
+     "endrem:witch_eye"
+    ],
+    "video": "VXwXhKnjgx0"
+   },
+   {
+    "note": "Undead Eye is taught last of the craftables because its catalyst is the bottleneck: the Undead Soul only drops from skeleton horses. Recipe ring around the soul: phantom membrane, rotten flesh, bone, ghast tear.",
+    "ids": [
+     "endrem:undead_soul",
+     "endrem:undead_eye"
+    ],
+    "video": "VXwXhKnjgx0"
+   },
+   {
+    "note": "Boss eyes close the sequence: Guardian Eye from elder guardians (a chance drop, not guaranteed - the narrator misses one on camera), Wither Eye from the wither itself.",
+    "ids": [
+     "endrem:guardian_eye",
+     "endrem:wither_eye"
+    ],
+    "video": "VXwXhKnjgx0"
+   }
+  ],
+  "gates": [
+   {
+    "note": "HARD GATE on the End dimension itself: twelve distinct End Remastered eyes. Everything the pack does in the End - dragon, elytra, shulkers, every End-gated mod - now sits behind this scavenger hunt, which makes endrem a chokepoint mod for pack pacing.",
+    "ids": [
+     "endrem:ancient_portal_frame"
+    ],
+    "video": "VXwXhKnjgx0"
+   },
+   {
+    "note": "Wither Eye gates one portal slot behind an actual wither kill; the guide interrupts itself to warn how to summon safely - soul sand T, three skulls, never at your base, it destroys everything nearby.",
+    "ids": [
+     "endrem:wither_eye"
+    ],
+    "video": "VXwXhKnjgx0"
+   },
+   {
+    "note": "Exotic Eye gates behind ocean exploration twice over: two conduits ('the tricky part') plus four coral types plus a vanilla ender eye. Conduits themselves need treasure-chest loot, so this eye is effectively a full ocean questline.",
+    "ids": [
+     "endrem:exotic_eye"
+    ],
+    "video": "VXwXhKnjgx0"
+   }
+  ],
+  "traps": [
+   {
+    "note": "The Evil Eye trade costs 'lots of emeralds' - the guide sets up a cleric with bed and brewing stand and still fails the roll on camera; it is a CHANCE trade at cleric level, not a guaranteed listing. Budget emeralds or treat it as optional (only 12 of 16 eyes are needed).",
+    "ids": [
+     "endrem:evil_eye"
+    ],
+    "video": "hY642vWK3OM"
+   },
+   {
+    "note": "Undead Soul is a patience trap in a fresh world: skeleton horses are rare, and the guide's honest advice is to wait for thunderstorm trap horses or AFK. In an old world they accumulate. A quest should not require it early.",
+    "ids": [
+     "endrem:undead_soul"
+    ],
+    "video": "VXwXhKnjgx0"
+   },
+   {
+    "note": "Cryptic Eye is pure RNG: a tiny chance (the narrator says it twice, once as 0.88% and once as 0.08%) of appearing while enchanting any item. The jar's bytecode confirms the enchant-time roll. Never make it a required quest target; it is a lottery ticket.",
+    "ids": [
+     "endrem:cryptic_eye"
+    ],
+    "video": "VXwXhKnjgx0"
+   },
+   {
+    "note": "Nether Eye looks simple but fortress chests are sparse - the guide opens several on camera and finds nothing, warning that fortresses are a poor place to hunt this kind of loot. Expect multiple fortresses.",
+    "ids": [
+     "endrem:nether_eye"
+    ],
+    "video": "VXwXhKnjgx0"
+   },
+   {
+    "note": "Rogue Eye's jungle temple is trapped - tripwires and arrow dispensers. The guide's route: break the tripwire blocks rather than walking the corridor.",
+    "ids": [
+     "endrem:rogue_eye"
+    ],
+    "video": "VXwXhKnjgx0"
+   }
+  ],
+  "signature": [
+   {
+    "note": "The twelve-different-eyes portal IS the mod - both videos open with it and close with lighting the portal on camera. Past the portal the End is untouched (the narrator points out the remaster stops at the entrance), so quest content should end at portal lighting, not continue into custom End content.",
+    "ids": [
+     "endrem:ancient_portal_frame"
+    ],
+    "video": "7N4kqPnvaXs"
+   }
+  ]
+ }
+}

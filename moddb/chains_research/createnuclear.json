@@ -1,0 +1,224 @@
+{
+ "mod": "createnuclear",
+ "verified_against": "createnuclear-1.20.1-2.0.0-forge.jar",
+ "item_count_in_jar": 99,
+ "parent_mod": "create",
+ "chain": [
+  {
+   "id": "createnuclear:coal_dust",
+   "title": "Coal, Broken Down",
+   "desc": "Crushing wheels on anything in the coals tag, half the time. It looks like a throwaway by-product and it is actually the gate on the entire mod - both steel and graphene start here."
+  },
+  {
+   "id": "createnuclear:steel_ingot",
+   "title": "Iron With Carbon In It",
+   "desc": "Coal dust and iron mixed in a basin. Every reactor block, the blueprint and the graphite rods are built on steel, so this is the first thing you automate."
+  },
+  {
+   "id": "createnuclear:graphene",
+   "title": "One Atom Thick",
+   "desc": "Coal dust under the mechanical press. A second use for the same dust, and the only ingredient the control rods take besides steel."
+  },
+  {
+   "id": "createnuclear:graphite_rod",
+   "title": "Slowing the Reaction Down",
+   "desc": "Mechanical crafting four graphene between eight steel ingots. Its tooltip explains the job: dropped into the core it absorbs neutrons, so this is the brake, not the fuel."
+  },
+  {
+   "id": "createnuclear:lead_ingot",
+   "title": "The Heavy Shield",
+   "desc": "Smelt or blast lead ore, raw lead, or Create's crushed raw lead. It also falls out of crushing raw copper and raw zinc as nuggets, so you have some before you ever look for the ore."
+  },
+  {
+   "id": "createnuclear:reinforced_glass",
+   "title": "Seeing In Safely",
+   "desc": "Glass and lead ingots woven in a checker. The window material for the reactor frame and cooler, and the visor of the anti-radiation helmet."
+  },
+  {
+   "id": "createnuclear:default_anti_radiation_helmet",
+   "title": "Before You Open the Core",
+   "desc": "Lead and brass around a pane of reinforced glass. The full suit is the only thing standing between you and the mod's three custom damage types, and every piece can be smithed into any of sixteen colours later."
+  },
+  {
+   "id": "createnuclear:uranium_powder",
+   "title": "Yellow in the Granite",
+   "desc": "Crushing plain granite gives it half the time, alongside red sand - so the fuel cycle can start without ever finding a uranium vein. Crushing Create's crushed raw uranium gives nine at once when you do."
+  },
+  {
+   "id": "createnuclear:yellowcake",
+   "title": "Compacted Fuel",
+   "desc": "Mix the powder into liquid uranium, then compact 100 mB of it back into a solid. Two machines and a fluid stage to turn dust into something you can stack."
+  },
+  {
+   "id": "createnuclear:enriched_soul_soil",
+   "title": "Charged Ground",
+   "desc": "Soul soil and obsidian around a nether star. A single expensive block, and the only reason to go and kill a wither before building a reactor."
+  },
+  {
+   "id": "createnuclear:enriching_campfire",
+   "title": "The Enrichment Step",
+   "desc": "Sticks and logs around the enriched soul soil, or feed a plain campfire through the same process. It burns with Enriching Fire, and it is the only thing in the mod that can enrich anything."
+  },
+  {
+   "id": "createnuclear:enriched_yellowcake",
+   "title": "Weapons Grade, Nearly",
+   "desc": "Yellowcake over the enriching campfire. The mod's real fuel, and the item that makes the whole nether-star detour worth it."
+  },
+  {
+   "id": "createnuclear:uranium_rod",
+   "title": "Fuel in a Rod",
+   "desc": "Mechanical crafting five enriched yellowcake on a diagonal. This is what the reactor eats; its tooltip describes the heat it puts out and the proximity rules between rods."
+  },
+  {
+   "id": "createnuclear:reactor_casing",
+   "title": "The Wall",
+   "desc": "Item application - a steel ingot onto a brass casing. Twenty-plus of these go into every reactor block that follows, so build a casing line before you build anything else."
+  },
+  {
+   "id": "createnuclear:reactor_frame",
+   "title": "Boxing It In",
+   "desc": "Mechanical crafting: sixteen casings around reinforced glass, steel and a bucket. The inert wall of the multiblock, and the piece you need most of."
+  },
+  {
+   "id": "createnuclear:reactor_core",
+   "title": "Where It Happens",
+   "desc": "Casings around precision mechanisms, steel and a bucket of liquid uranium. The block the rods sit in, and the one that decides how hot the whole structure runs."
+  },
+  {
+   "id": "createnuclear:reactor_rod_input",
+   "title": "Feeding the Rods",
+   "desc": "Deploying a hopper onto a reactor casing. Uranium and thorium rods go in here; without one, the reactor is a very expensive box."
+  },
+  {
+   "id": "createnuclear:reactor_fluid_input",
+   "title": "Coolant In",
+   "desc": "Deploying a fluid pipe onto a casing. The reactor's own datapack rates water at efficiency 1000 with a 2048 heat ceiling and nitrogen at efficiency 100 with a ceiling of 8196 - so what you pipe in here sets your power band."
+  },
+  {
+   "id": "createnuclear:reactor_output",
+   "title": "Taking the Power Out",
+   "desc": "Deploying a shaft onto a casing. The reactor pays out as rotation, which is the whole point of a nuclear mod for Create rather than for an energy mod."
+  },
+  {
+   "id": "createnuclear:reactor_controller",
+   "title": "The Hand on the Rods",
+   "desc": "Mechanical crafting casings around netherite, a content observer, electron tubes, an item vault and a nether star. The most expensive block in the mod and the one that actually starts and stops the reaction."
+  },
+  {
+   "id": "createnuclear:reactor_cooler",
+   "title": "Dumping the Heat",
+   "desc": "Casings around steel, reinforced glass and blue ice. Bolt it to the structure and the ceiling on how hard you can run rises."
+  },
+  {
+   "id": "createnuclear:reactor_blueprint_item",
+   "title": "Reading the Plans",
+   "desc": "Steel around a display board, a precision mechanism and an empty schematic. Hold it and it shows you what the multiblock still needs; craft it against itself to clear it and start over."
+  },
+  {
+   "id": "createnuclear:reactor_alarm",
+   "title": "When It Goes Wrong",
+   "desc": "Mechanical crafting casings around note blocks, repeaters and a clock. A siren for the moment the core passes the heat its coolant can carry."
+  },
+  {
+   "id": "createnuclear:nitrate",
+   "title": "Salt From Limestone",
+   "desc": "Crushing Create's limestone gives nitrate six times in ten, and a lead nugget four times in ten. The start of the better coolant."
+  },
+  {
+   "id": "createnuclear:cooled_nitrogen_concentrate",
+   "title": "Chilled Down",
+   "desc": "Smelt nitrate into concentrate, then run it through the mod's snow powder process. Mixed with ice it becomes liquid nitrogen, which quadruples the heat ceiling the reactor can survive."
+  },
+  {
+   "id": "createnuclear:thorium_ingot",
+   "title": "The Other Fuel",
+   "desc": "Crush raw thorium to dust, mix it hot into liquid thorium, compact 200 mB back into an ingot. A longer route than uranium for a rod that behaves differently in the core."
+  },
+  {
+   "id": "createnuclear:thorium_rod",
+   "title": "Thorium in the Core",
+   "desc": "Mechanical crafting five thorium ingots on a diagonal. Slower and cooler than uranium, and the reason the rod input accepts more than one fuel."
+  },
+  {
+   "id": "createnuclear:biome_irradiation_extractor",
+   "title": "Pulling the Radiation Out",
+   "desc": "Eight reinforced glass bottles around a nether star, eight at a time. Its tooltip describes the job - it draws the lingering irradiation out of a biome your reactor has already ruined."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "createnuclear:autunite",
+   "members": [
+    "createnuclear:autunite_pillar",
+    "createnuclear:layered_autunite",
+    "createnuclear:cut_autunite",
+    "createnuclear:cut_autunite_bricks",
+    "createnuclear:polished_cut_autunite",
+    "createnuclear:small_autunite_brick",
+    "createnuclear:cut_autunite_slab",
+    "createnuclear:cut_autunite_stairs",
+    "createnuclear:cut_autunite_wall"
+   ]
+  },
+  {
+   "hub": "createnuclear:white_cloth",
+   "members": [
+    "createnuclear:black_cloth",
+    "createnuclear:blue_cloth",
+    "createnuclear:brown_cloth",
+    "createnuclear:cyan_cloth",
+    "createnuclear:gray_cloth",
+    "createnuclear:green_cloth",
+    "createnuclear:light_blue_cloth",
+    "createnuclear:light_gray_cloth",
+    "createnuclear:lime_cloth",
+    "createnuclear:magenta_cloth",
+    "createnuclear:orange_cloth",
+    "createnuclear:pink_cloth",
+    "createnuclear:purple_cloth"
+   ]
+  },
+  {
+   "hub": "createnuclear:uranium_ore",
+   "members": [
+    "createnuclear:deepslate_uranium_ore",
+    "createnuclear:thorium_ore",
+    "createnuclear:deepslate_thorium_ore",
+    "createnuclear:lead_ore",
+    "createnuclear:deepslate_lead_ore",
+    "createnuclear:nitrate_ore",
+    "createnuclear:deepslate_nitrate_ore",
+    "createnuclear:raw_uranium",
+    "createnuclear:raw_thorium",
+    "createnuclear:raw_lead"
+   ]
+  },
+  {
+   "hub": "createnuclear:lead_block",
+   "members": [
+    "createnuclear:steel_block",
+    "createnuclear:thorium_block",
+    "createnuclear:raw_lead_block",
+    "createnuclear:raw_uranium_block",
+    "createnuclear:raw_thorium_block",
+    "createnuclear:lead_nugget",
+    "createnuclear:steel_nugget",
+    "createnuclear:thorium_nugget"
+   ]
+  },
+  {
+   "hub": "createnuclear:default_anti_radiation_chestplate",
+   "members": [
+    "createnuclear:default_anti_radiation_leggings",
+    "createnuclear:default_anti_radiation_boots",
+    "createnuclear:reinforced_glass_bottle",
+    "createnuclear:thorium_dust",
+    "createnuclear:nitrogen_concentrate",
+    "createnuclear:nitrogen_bucket",
+    "createnuclear:uranium_bucket",
+    "createnuclear:thorium_bucket"
+   ]
+  }
+ ],
+ "notes": "Verified against createnuclear-1.20.1-2.0.0-forge.jar (Forge 47+, minecraft [1.20.1,1.21), create [6.0.7,)). Modrinth slug is createnuclear, project id z611fdf7 - slug and modid agree. ID DETECTION: assets/createnuclear/models/item/*.json lists 167 paths, but 72 of them are SUBDIRECTORY models that are not registered items - colored/<16 colours>_anti_radiation_{helmet,chestplate,leggings,boots} (64 files, the dyed armour overlays which are NBT colour variants of the four default_* items, not separate ids), default_anti_radiation_*/item (4 files, the inventory model for each armour piece), and biome_irradiation_extractor/{full,half,quarter,three_quarters} (4 files, fill-level models). Filtering any model path containing a slash leaves 95 real item models. Widening with (blockstates INTERSECT lang) adds four more: enriching_fire, nitrogen, thorium and uranium have blockstates and block.createnuclear.* lang keys but no item model - they are the fluid blocks and the campfire's fire block. 95 + 4 = 99, which is the count reported here. THE COLOURED ARMOUR IS NOT 64 EXTRA IDS: data/createnuclear/recipes/smithing/ holds 64 minecraft:smithing_transform recipes whose RESULT is the same default_anti_radiation_* id with a colour applied, which is why each of the four armour ids shows 17 producing recipes (1 crafting + 16 smithing). Do not quest colour variants; there are none. DROPPED as uncompletable: createnuclear:enriching_fire (fire block, no item form, only a loot table), createnuclear:nitrogen / createnuclear:thorium / createnuclear:uranium (fluid blocks - the fluid itself is real and has a bucket, but the block has no item), and the three spawn eggs createnuclear:cat_irradiated_spawn_egg, chicken_irradiated_spawn_egg and wolf_irradiated_spawn_egg (no recipe, no loot table, no trade; spawn eggs are creative-only, though the four irradiated mobs are real and have loot tables under loot_tables/entities/). The three fluid BUCKETS - uranium_bucket, thorium_bucket, nitrogen_bucket - have no recipe file either, but they are obtainable: Create fills a bucket from any registered fluid at an item drain or spout, and createnuclear:uranium_bucket is a hard ingredient of the reactor core recipe, which proves the game expects you to have one. They are wheeled rather than chained. RECIPES OUTSIDE recipes/**: yes, and it matters. data/createnuclear/createnuclear/ holds nine datapack files that are not recipes but are the reactor's tuning tables - fluids/type/{water,nitrogen,fallback}.json give each coolant an efficiency and a maxHeat (water 1000/2048, nitrogen 100/8196, fallback -1/-1) and rods/type/ does the same for fuel. Inside recipes/ there are also two custom Create-style types that a crafting-only scan would miss entirely: createnuclear:enriched (the Enriching Campfire process, which is the only route to enriched_yellowcake) and createnuclear:snow_powder (the only route to cooled_nitrogen_concentrate). ORDERING CONFLICTS vs moddb consensus (13 entries): TWO CONSENSUS IDS DO NOT EXIST IN THIS JAR and must be flagged upstream - createnuclear:reactor_input (consensus 0.833) is not registered; version 2.0.0 splits it into createnuclear:reactor_rod_input and createnuclear:reactor_fluid_input, both deployed onto a reactor casing. A book built on the moddb id would ship a dead task. The other eleven consensus ids verify. Ordering conflicts, all resolved for the recipe graph: (1) consensus opens with steel_ingot 0.0, but data/createnuclear/recipes/mixing/steel.json takes {\"tag\": \"forge:dusts/coal\"}, and the only thing in that tag is createnuclear:coal_dust from crushing coal - so coal_dust must be step 1 and steel step 2. Consensus never lists coal_dust at all. (2) consensus puts uranium_powder at 0.167 and uranium_rod at 0.917 with nothing between them, hiding a four-step fluid-and-enrichment chain: powder to liquid uranium by mixing, liquid uranium to yellowcake by compacting, yellowcake to enriched yellowcake over the Enriching Campfire, and only then five enriched yellowcake into a rod. The campfire in turn needs enriched_soul_soil, which needs a NETHER STAR - a wither kill is a hard prerequisite of the fuel cycle and the consensus does not hint at it anywhere. (3) consensus puts reactor_blueprint_item at 0.25, ahead of reactor_casing 0.333 - legal on ingredients (it only needs steel, a display board, a precision mechanism and an empty schematic) but useless in play, since the blueprint exists to show you which reactor blocks are missing; it was moved after the reactor blocks it describes. (4) consensus puts reinforced_glass at 0.417 after reactor_casing 0.333, but the frame, the cooler and the helmet all consume glass, so it was moved ahead of them. Recipe graph preferred in all four cases. WORLDGEN AND ALTERNATIVES: uranium, thorium, lead and nitrate all have ore blocks with deepslate variants and 24 worldgen files, but the chain deliberately does not depend on finding any of them - uranium_powder drops from crushing plain GRANITE at 50 percent, nitrate from crushing Create's LIMESTONE at 60 percent, and lead nuggets from crushing raw copper (15 percent) and raw zinc (25 percent). Thorium is the exception: raw_thorium has no non-ore source, so the thorium branch really does require finding thorium ore. PARENT ASSUMPTIONS: crushing wheels, a mechanical press, a mixer with a blaze burner (heated for the thorium fluid), a basin, a mechanical crafter array up to 5x5, a deployer, item application, brass casing, precision mechanism, electron tube, content observer, item vault, display board, empty schematic, fluid pipe and shaft. The jar also ships 222 advancements and two structures, so the mod has its own progression track that a quest book can mirror."
+}

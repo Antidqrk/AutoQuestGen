@@ -1,0 +1,128 @@
+{
+  "mod": "occultism",
+  "verified_against": "occultism-1.20.1-1.158.0.jar",
+  "item_count_in_jar": 112,
+  "chain": [
+    {
+      "id": "occultism:datura_seeds",
+      "title": "Demon's Dream Seeds",
+      "desc": "Dropped when breaking grass; plant them to grow the Demon's Dream herb, the first step into the Otherworld."
+    },
+    {
+      "id": "occultism:datura",
+      "title": "Demon's Dream Fruit",
+      "desc": "Harvested from the grown crop; eating it has a chance to grant the Third Eye effect that reveals Otherworld materials."
+    },
+    {
+      "id": "occultism:spirit_fire",
+      "title": "Spiritfire",
+      "desc": "Throw a Demon's Dream Fruit on the ground and light it with flint and steel; items tossed into the purple flame are converted without the fire going out."
+    },
+    {
+      "id": "occultism:otherstone",
+      "title": "Otherstone",
+      "desc": "Made by throwing andesite into Spiritfire; the base stone for sacrificial bowls, pedestals and other ritual furniture."
+    },
+    {
+      "id": "occultism:divination_rod",
+      "title": "Divination Rod",
+      "desc": "Crafted from a wooden rod and a Spirit Attuned Gem (a diamond converted in Spiritfire); attune it to a sample block to locate hidden Otherworld trees and ores."
+    },
+    {
+      "id": "occultism:otherworld_log",
+      "title": "Otherworld Wood",
+      "desc": "Chopped from Otherworld trees, grown from a sapling obtained by burning an oak sapling in Spiritfire or found by divination; burning the log in Spiritfire yields Otherworld Ashes for chalk."
+    },
+    {
+      "id": "occultism:chalk_white",
+      "title": "White Chalk",
+      "desc": "Craft impure white chalk from Burnt Otherstone and Otherworld Ashes, then purify it in Spiritfire; draws the basic Foliot-tier pentacles."
+    },
+    {
+      "id": "occultism:sacrificial_bowl",
+      "title": "Sacrificial Bowl",
+      "desc": "Crafted from Otherstone; bowls around the pentacle hold ritual ingredients while a Golden Sacrificial Bowl at the center receives the activation item."
+    },
+    {
+      "id": "occultism:book_of_binding_bound_foliot",
+      "title": "Bound Book of Binding: Foliot",
+      "desc": "Craft a Book of Binding from a Taboo Book, Purified Ink and an Awakened Feather (all Spiritfire conversions) plus white dye, then inscribe a Foliot's true name from the Dictionary of Spirits."
+    },
+    {
+      "id": "occultism:iron_dust",
+      "title": "First Ritual: the Crusher",
+      "desc": "Summon a Foliot Crusher on Aviar's Circle using raw iron, gold, copper and silver; the spirit crushes raw ores into doubled dusts like this one."
+    },
+    {
+      "id": "occultism:chalk_gold",
+      "title": "Golden Chalk",
+      "desc": "Combine impure white chalk with gold dust and glowstone dust, then purify in Spiritfire; required for Djinni-tier pentacles."
+    },
+    {
+      "id": "occultism:book_of_binding_bound_djinni",
+      "title": "Bound Book of Binding: Djinni",
+      "desc": "A Djinni-grade Book of Binding inscribed with a Djinni's true name; the activation item for all Djinni summoning and crafting rituals."
+    },
+    {
+      "id": "occultism:otherworld_goggles",
+      "title": "Otherworld Goggles",
+      "desc": "Infused Lenses from a Djinni crafting ritual, framed with leather and a silver-and-otherstone Lens Frame; grants permanent Third Eye while worn."
+    },
+    {
+      "id": "occultism:infused_pickaxe",
+      "title": "Infused Pickaxe",
+      "desc": "Djinni crafting ritual over a Spirit Attuned Pickaxe Head with silver ingots and wooden rods; one of the only tools that can break Iesnium ore."
+    },
+    {
+      "id": "occultism:iesnium_ingot",
+      "title": "Iesnium",
+      "desc": "Mine Iesnium ore in the Nether, visible only with the Third Eye or goggles and breakable only by infused tools, then smelt or blast it into ingots."
+    },
+    {
+      "id": "occultism:iesnium_pickaxe",
+      "title": "Iesnium Pickaxe",
+      "desc": "Crafted normally from three Iesnium ingots and sticks; a durable spirit pickaxe consumed as an ingredient by every miner-spirit ritual."
+    },
+    {
+      "id": "occultism:storage_controller",
+      "title": "Dimensional Storage Actuator",
+      "desc": "Combine a Storage Controller Base (Foliot craft ritual on an Otherstone Pedestal with gold) with a Dimensional Matrix (Djinni craft ritual on quartz blocks and an ender pearl) for spirit-run mass storage."
+    },
+    {
+      "id": "occultism:dimensional_mineshaft",
+      "title": "Dimensional Mineshaft",
+      "desc": "Djinni crafting ritual using Otherstone, gold, a Spirit Attuned Crystal and an Iesnium block; a spirit-only portal block that lets lamp-bound miners work for you."
+    },
+    {
+      "id": "occultism:miner_foliot_unspecialized",
+      "title": "Foliot Miner",
+      "desc": "Foliot crafting ritual that binds a miner spirit into an empty Magic Lamp (silver and Iesnium) alongside an Iesnium Pickaxe, raw iron and gravel; produces assorted blocks in the mineshaft."
+    },
+    {
+      "id": "occultism:chalk_purple",
+      "title": "Purple Chalk",
+      "desc": "Combine impure white chalk with crushed end stone and obsidian dust, then purify in Spiritfire; draws Afrit-tier pentacles."
+    },
+    {
+      "id": "kill:occultism:afrit_wild",
+      "title": "Slay an Unbound Afrit",
+      "desc": "Summon an uncontrolled Afrit with a bound Afrit book on the purple-chalk Abras' Conjure pentacle, then kill it to claim its Afrit Essence."
+    },
+    {
+      "id": "occultism:chalk_red",
+      "title": "Red Chalk",
+      "desc": "Combine impure white chalk with Afrit Essence and blaze powder, then purify in Spiritfire; the final chalk tier, needed for Marid rituals."
+    },
+    {
+      "id": "occultism:miner_djinni_ores",
+      "title": "Djinni Ore Miner",
+      "desc": "Djinni crafting ritual upgrading the Foliot Miner with an Iesnium Pickaxe, raw gold, a lapis block and a Spirit Attuned Crystal; mines only ores, including Iesnium."
+    },
+    {
+      "id": "occultism:miner_marid_master",
+      "title": "Marid Master Miner",
+      "desc": "Red-chalk Marid crafting ritual that upgrades the Afrit Deep-Ore Miner with a netherite pickaxe, dragon's breath, a totem of undying and a nether star; the endgame miner spirit."
+    }
+  ],
+  "notes": "All 23 item ids and the kill entity verified against occultism-1.20.1-1.158.0.jar (112 items = models/item stems intersected with item./block.occultism lang keys; entity.occultism.afrit_wild confirmed in en_us.json). No ids dropped. Facts sourced from the in-jar modonomicon book (data/occultism/modonomicon/books/dictionary_of_spirits, getting_started category) and data/occultism/recipes (spirit_fire, crafting, ritual). No dim: entries: this version registers no dimension - the 'mining dimension' is the dimensional_mineshaft block, not a real dimension. Intermediate afrit-tier miner (miner_afrit_deeps: Djinni miner + echo shard + crying obsidian + afrit essence) omitted to stay within milestone budget; mentioned via the Marid entry. Side content intentionally omitted: familiars (14 rituals + familiar_ring/soul_gem), possession rituals (possessed skeleton/enderman/ghast etc.), storage stabilizers tiers 1-4, wormholes/storage_remote, satchel, lumberjack/transporter/janitor helper spirits, Wild Hunt (wither skull farm), demonic partners, time/weather magic."
+}

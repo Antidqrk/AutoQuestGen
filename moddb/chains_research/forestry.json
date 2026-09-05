@@ -1,0 +1,234 @@
+{
+  "mod": "forestry",
+  "verified_against": "forestry-1.20.1-2.11.0.jar",
+  "item_count_in_jar": 1833,
+  "chain": [
+    {
+      "id": "forestry:apatite",
+      "title": "Apatite",
+      "desc": "A blue-green ore that generates in ordinary stone and deepslate; smelt or blast the ore for the gem. It is the phosphorus in every fertilizer this mod makes, and there is no substitute."
+    },
+    {
+      "id": "forestry:ingot_tin",
+      "title": "Tin Ingot",
+      "desc": "Smelt tin ore, or raw tin. Forestry brings its own second metal, and the fluid containers - cans, capsules, refractories - are all made of it."
+    },
+    {
+      "id": "forestry:ingot_bronze",
+      "title": "Bronze Ingot",
+      "desc": "Three copper and one tin. Bronze is Forestry's working metal: gears, tools, machine casings and the Survivalist's tool set all start here."
+    },
+    {
+      "id": "forestry:scoop",
+      "title": "Scoop",
+      "desc": "Sticks and wool. Wild bee hives shatter into nothing if you punch them - break one with a Scoop and it hands you the princess and drones living inside instead."
+    },
+    {
+      "id": "forestry:bee_house",
+      "title": "Bee House",
+      "desc": "Wooden slabs and planks around a single honey comb. It works any princess without frames, upgrades or fuss - the cheapest way into apiculture, and deliberately the worst."
+    },
+    {
+      "id": "forestry:bee_princess_ge",
+      "title": "Princess",
+      "desc": "Scoop a wild hive. One princess per hive, and she is the only half of a bee pair that survives a breeding cycle - lose her and that bloodline is gone."
+    },
+    {
+      "id": "forestry:bee_comb_honey",
+      "title": "Honey Comb",
+      "desc": "What a Forest or Meadows bee makes in a Bee House. Every comb in the mod is a species' signature product, and this is the one every starting bee gives you."
+    },
+    {
+      "id": "forestry:beeswax",
+      "title": "Beeswax",
+      "desc": "Centrifuge a honey comb. Wax makes capsules, candles and the Impregnated Casing, which means the whole machine tier is downstream of it."
+    },
+    {
+      "id": "forestry:carpenter",
+      "title": "Carpenter",
+      "desc": "A crafting table framed in copper and glass. It crafts with a fluid in the recipe, which is the only way to make impregnated wood, circuit boards and woven silk."
+    },
+    {
+      "id": "forestry:impregnated_stick",
+      "title": "Impregnated Stick",
+      "desc": "Logs soaked in seed oil in the Carpenter. Ordinary wood rots in a hive; impregnated wood does not, so every serious bee block is built from these."
+    },
+    {
+      "id": "forestry:impregnated_casing",
+      "title": "Impregnated Casing",
+      "desc": "Impregnated sticks squared in the Carpenter. The Apiary, the Alveary and half the mod's blocks list it as the single centre ingredient."
+    },
+    {
+      "id": "forestry:apiary",
+      "title": "Apiary",
+      "desc": "Slabs and planks around an Impregnated Casing. Unlike the Bee House it takes frames, so production and lifespan become things you control instead of things you accept."
+    },
+    {
+      "id": "forestry:bee_queen_ge",
+      "title": "Queen",
+      "desc": "Put a Princess and a Drone in an Apiary and they mate into a Queen. She works one full lifecycle, then dies and leaves a new princess and a handful of drones carrying both parents' genes."
+    },
+    {
+      "id": "forestry:frame_impregnated",
+      "title": "Impregnated Frame",
+      "desc": "Impregnated sticks and string. Slotted into an Apiary it speeds the queen up; three of them and a lifecycle that took a day takes an afternoon."
+    },
+    {
+      "id": "forestry:sturdy_machine",
+      "title": "Sturdy Casing",
+      "desc": "Eight bronze ingots around a bronze gear. Nearly every machine in the mod is this casing with two materials bolted on, so making the first one is the real gate."
+    },
+    {
+      "id": "forestry:centrifuge",
+      "title": "Centrifuge",
+      "desc": "A Sturdy Casing with bronze and glass. It spins combs apart into wax, honeydew and propolis - without it a comb is a pretty block and nothing more."
+    },
+    {
+      "id": "forestry:propolis_normal",
+      "title": "Propolis",
+      "desc": "Centrifuged out of the darker combs. It squeezes into honey, bonds into bituminous peat, and the exotic strains are how you tell a rare bee has been working."
+    },
+    {
+      "id": "forestry:squeezer",
+      "title": "Squeezer",
+      "desc": "A Sturdy Casing with tin and glass. It presses seeds into the seed oil the Carpenter drinks, and fruit into juice - the fluid half of the whole production line."
+    },
+    {
+      "id": "forestry:portable_alyzer",
+      "title": "Portable Analyzer",
+      "desc": "Made in the Carpenter. Feed it honeydew and it reads a bee's genome in the field, which is the difference between breeding and guessing."
+    },
+    {
+      "id": "forestry:analyzer",
+      "title": "Analyzer",
+      "desc": "A Sturdy Casing, an iron gear, tin and a Portable Analyzer. The stationary version - it analyses everything you feed through it and never runs out of charges."
+    },
+    {
+      "id": "forestry:fabricator",
+      "title": "Thermionic Fabricator",
+      "desc": "A Sturdy Casing with gold, glass and a chest. It melts glass into a liquid and casts it around materials, and it is the only machine that makes electron tubes."
+    },
+    {
+      "id": "forestry:electron_tube_bronze",
+      "title": "Bronze Electron Tube",
+      "desc": "Cast in the Fabricator from bronze and redstone in molten glass. Tubes are the chips that go into circuit boards, which is how you program a Farm or a Bottler."
+    },
+    {
+      "id": "forestry:apiarist_helmet",
+      "title": "Apiarist's Hat",
+      "desc": "Woven silk, made in the Carpenter from the silk wisps your bees throw off. The full suit stops angry bees hurting you, which matters the moment you breed something unstable."
+    },
+    {
+      "id": "forestry:alveary_plain",
+      "title": "Alveary",
+      "desc": "Scented Paneling around an Impregnated Casing, twenty-seven blocks to a cube with slabs on top. It works a queen far faster than any apiary and takes climate parts - the endgame hive."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "forestry:sturdy_machine",
+      "members": [
+        "forestry:carpenter",
+        "forestry:centrifuge",
+        "forestry:squeezer",
+        "forestry:fermenter",
+        "forestry:still",
+        "forestry:moistener",
+        "forestry:bottler",
+        "forestry:fabricator",
+        "forestry:analyzer",
+        "forestry:rainmaker"
+      ]
+    },
+    {
+      "hub": "forestry:bee_comb_honey",
+      "members": [
+        "forestry:bee_comb_cocoa",
+        "forestry:bee_comb_dripping",
+        "forestry:bee_comb_frozen",
+        "forestry:bee_comb_mossy",
+        "forestry:bee_comb_parched",
+        "forestry:bee_comb_powdery",
+        "forestry:bee_comb_silky",
+        "forestry:bee_comb_simmering",
+        "forestry:bee_comb_stringy",
+        "forestry:bee_comb_wheaten",
+        "forestry:bee_comb_mysterious",
+        "forestry:bee_comb_mellow"
+      ]
+    },
+    {
+      "hub": "forestry:alveary_plain",
+      "members": [
+        "forestry:alveary_heater",
+        "forestry:alveary_fan",
+        "forestry:alveary_swarmer",
+        "forestry:alveary_sieve",
+        "forestry:alveary_stabiliser",
+        "forestry:alveary_hygro"
+      ]
+    },
+    {
+      "hub": "forestry:engine_peat",
+      "members": [
+        "forestry:engine_biogas",
+        "forestry:engine_clockwork",
+        "forestry:engine_solar",
+        "forestry:engine_combustion",
+        "forestry:bituminous_peat"
+      ]
+    },
+    {
+      "hub": "forestry:apiarist_helmet",
+      "members": [
+        "forestry:apiarist_chest",
+        "forestry:apiarist_legs",
+        "forestry:apiarist_boots",
+        "forestry:apiarist_bag",
+        "forestry:naturalist_helmet",
+        "forestry:woven_silk"
+      ]
+    },
+    {
+      "hub": "forestry:electron_tube_bronze",
+      "members": [
+        "forestry:electron_tube_copper",
+        "forestry:electron_tube_tin",
+        "forestry:electron_tube_iron",
+        "forestry:electron_tube_gold",
+        "forestry:electron_tube_diamond",
+        "forestry:electron_tube_obsidian",
+        "forestry:electron_tube_blaze",
+        "forestry:electron_tube_emerald",
+        "forestry:electron_tube_apatite",
+        "forestry:electron_tube_lapis",
+        "forestry:electron_tube_ender"
+      ]
+    },
+    {
+      "hub": "forestry:fertilizer_compound",
+      "members": [
+        "forestry:humus",
+        "forestry:bog_earth",
+        "forestry:peat",
+        "forestry:mulch",
+        "forestry:fertilizer_bio",
+        "forestry:phosphor",
+        "forestry:crate"
+      ]
+    },
+    {
+      "hub": "forestry:propolis_normal",
+      "members": [
+        "forestry:propolis_pulsating",
+        "forestry:propolis_silky",
+        "forestry:honeydew",
+        "forestry:royal_jelly",
+        "forestry:pollen_cluster_normal",
+        "forestry:beeswax",
+        "forestry:silk_wisp"
+      ]
+    }
+  ],
+  "notes": "WHICH FORESTRY THIS IS: the only 1.20.1 build in existence is Forestry: Community Edition, Modrinth slug forestry-community-edition. The original 'forestry' project on Modrinth stops at 1.12.2 and has no 1.20.1 file on any loader; CE picked the mod up and kept the modId 'forestry', so the ids here are unchanged and no registers_into entry is needed. Verified against forestry-1.20.1-2.11.0.jar: META-INF/mods.toml modId=forestry, version 2.11.0, modLoader=javafml, forge [47.3.5,), dependencies patchouli and jei; no fabric.mod.json, all sampled class files at major version 61 (Java 17 = 1.20.1). ITEM COUNT: 1833 is the count that is actually PROVED - assets/forestry/models/item/ holds 2075 files, the lang file yields 1939 item./block. stems, and their intersection is 1833. Both differences were examined rather than assumed, and neither moves the number. models-minus-lang is 242 and is entirely non-items: 107 render helpers of the bee/butterfly item renderer (bee_drone_cube, bee_princess_default, bee_queen_cube and so on), 43 *_button_inventory inventory variants, 43 *_sapling species render variants of ONE item, 8 backpack state overlays (backpack/normal_locked, normal_neutral, normal_receive, normal_resupply and the woven set - the mode a backpack is switched to, not four backpacks), 6 lepidopterology sub-models, and 34 bare parent models with names like 'door', 'slab', 'stairs', 'fence', 'glass', 'log', 'planks', 'stick'. lang-minus-model is 106 and is entirely tooltips (grafter.tooltip, farm.tooltip), fluid names (fluid.honey, fluid_honey - both spellings for the same eleven fluids), grammar helpers (can.grammar, refractory.empty) and dead legacy keys (biome_finder, engine_electrical, arboretum). THE 43 SAPLING MODELS ARE THE INTERESTING CASE and were settled with evidence, not a guess: forestry:balsa_sapling, forestry:baobab_sapling and the rest have models but no lang key and NO data reference anywhere in the jar, while forestry:sapling_ge - which has the lang key - owns data/forestry/loot_tables/blocks/sapling_ge.json. There is ONE genetic sapling item whose species lives in NBT, and the 43 models are how it renders. Counting them would have inflated the total and produced 43 uncompletable quests. RECIPE-FORMAT TRAPS, and this jar has the worst set encountered so far. A first scan of this jar found 1,650 produced ids and MISSED the core of the mod, because Forestry's two most important machine types NEST AN ENTIRE VANILLA RECIPE inside themselves: forestry:carpenter (216 recipes) and forestry:fabricator (289 recipes) are shaped {\"type\":\"forestry:carpenter\", \"liquid\":{...}, \"recipe\":{ a complete minecraft:crafting_shaped object with its own \"result\" }}. A scanner that reads the top-level \"result\" key finds nothing in 505 files. What it silently loses is not decoration - forestry:impregnated_stick, forestry:impregnated_casing, forestry:portable_alyzer, forestry:woven_silk, forestry:scented_paneling, every circuit board and every electron tube read as unobtainable, and impregnated_casing is the single centre ingredient of the Apiary and the Alveary. Four more custom shapes had to be handled: forestry:centrifuge uses a \"products\" ARRAY of {chance, item, tag}; forestry:moistener uses \"product\" singular with an \"id\" field rather than \"item\"; forestry:squeezer uses \"remnant\", and forestry:squeezer_container uses \"remnants\"; and forestry:smelter puts its output under output.ingredient as a TAG (forge:ingots/bronze), not an item id. Ten smelter recipes are additionally wrapped in forge:conditional. OBTAIN PATHS THAT ARE NOT DATA AT ALL, verified in bytecode and recorded because a data-only scan calls them impossible: forestry:bee_queen_ge is registered in forestry/apiculture/features/ApicultureItems.class and has NO recipe and NO loot table - a queen only exists when a Princess and a Drone are put together in a hive, which is the central mechanic of the mod and unquestionably completable. The combs are the same story in reverse: their only data recipes are the Carpenter crate pack/unpack pair, which is storage, not production; combs come out of a working hive, keyed to the bee's species allele (the lang file carries 493 allele.forestry.* keys for those species). forestry:bee_princess_ge and forestry:bee_drone_ge do at least appear in data/forestry/loot_tables/chests/, and are also scooped from wild hives. forestry:sapling_ge's loot table is an empty stub for the same reason - the sapling drops itself with its genome in NBT. UNOBTAINABLE, DROPPED, with the search that proved it: forestry:habitat_locator, forestry:habitat_screen, forestry:habitat_former, forestry:database, forestry:frame_proven, forestry:propolis_sticky, forestry:propolis_volcanic, forestry:compost and forestry:engine_generator all have model and lang key and no recipe, no loot table, and no in-world mechanic. For habitat_screen, habitat_former, habitat_locator and database the string does not appear in a single class constant pool in the jar either, which is as close to proof of a dead registration as this method gets. All are excluded from chain and wheels. ORDERING is a recipe graph and it is unusually well-signposted. The metal spine is forced: apatite from its own ore, tin from its own ore, then forestry:smelter alloys 3 copper + 1 tin into bronze, and forestry:sturdy_machine is eight bronze ingots around a bronze gear. From there ten machines are the SAME casing plus two materials - carpenter is the odd one out at copper and glass with no casing at all, which is why it comes first of the machines. The bee spine is equally forced and is the reason this chain does not simply follow the metals: forestry:bee_house keys on the tag forestry:combs plus planks and slabs and needs NO forestry material, so it is reachable the moment you have scooped a hive; forestry:apiary is the same pattern but keys on {\"item\":\"forestry:impregnated_casing\"}, and impregnated_casing is a Carpenter recipe taking impregnated sticks, which are logs soaked in seed oil, which comes from the Squeezer. So the Apiary sits strictly behind two machines while the Bee House sits ahead of all of them. forestry:alveary_plain takes scented_paneling (Carpenter) around impregnated_casing, placing it last. forestry:analyzer explicitly lists forestry:portable_alyzer as an ingredient, so the portable version comes first - the reverse of what its name suggests. CONSENSUS CONFLICT, RECORDED AND OVERRIDDEN: moddb.json orders bee_house 0.0, squeezer 0.25, analyzer 0.5, carpenter 0.75, apiary 1.0. Two real problems. First, analyzer at 0.5 is ahead of carpenter at 0.75, but data/forestry/recipes/analyzer.json requires forestry:portable_alyzer and the portable analyzer's ONLY recipe is a forestry:carpenter recipe - the machine ranked ahead of the machine that makes its own part. Second, consensus omits forestry:sturdy_machine, forestry:impregnated_casing and forestry:ingot_bronze entirely; the casing is a literal key ingredient of the apiary it ranks last, and the sturdy casing is a key ingredient of both the squeezer and the analyzer it ranks in the middle. The graph is preferred throughout. Consensus agrees with the graph that bee_house is first and apiary is late, which the recipes confirm exactly. DESIRABILITY AND SCOPE: this mod is far too large for one chain - the 1833 items are dominated by 57 tree species each carrying a full wood family (planks, slabs, stairs, fences, gates, doors, trapdoors, buttons, pressure plates, signs, boats, chest boats and fireproof variants), ~230 crated_* storage items, ~120 candle colours and ~1670 blockstates. Every one of those is skipped: slabs, stairs and walls by the naming rule, ores and nuggets by the lift rule, and the crates and candles as variant families with no progression. The chain keeps the apiculture spine and the machine tier, which is what the mod is actually about, and the eight wheels cover the combs, the machines, the alveary parts, the engines, the electron tubes, the apiarist armour, the soil/fertilizer line and the bee products. ARMOUR: only forestry:apiarist_helmet is quested; chest, legs, boots, the backpack and the naturalist Spectacles are wheeled with it."
+}

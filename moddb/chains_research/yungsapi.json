@@ -1,0 +1,8 @@
+{
+  "mod": "yungsapi",
+  "verified_against": "YungsApi-1.20-Forge-4.0.6.jar",
+  "item_count_in_jar": 0,
+  "chain": [],
+  "collections": [],
+  "notes": "YUNG'S API IS A LIBRARY AND HAS NO QUESTABLE CONTENT OF ANY KIND. The jar contains 203 class files under com/yungnickyoung/minecraft, a mixins config, a refmap, four META-INF/services entries and five images - and NOTHING ELSE. There is NO assets/ directory and NO data/ directory at all: zero items, zero blockstates, zero lang keys, zero structures, zero biomes, zero loot tables, zero recipes, zero advancements. item_count_in_jar is 0, the chain is EMPTY and collections is EMPTY. This file exists so the finding is on record rather than looking like a gap in the slice. What it actually provides is the yungsapi:yung_jigsaw structure type and the yungsapi:structure_location advancement trigger that every other YUNG mod in this slice depends on - betterdungeons, betterstrongholds, betterdeserttemples, betterjungletemples, betterfortresses, betteroceanmonuments and betterwitchhuts all declare their structures with type yungsapi:yung_jigsaw, and betterdeserttemples' temple_entry advancement fires on yungsapi:structure_location. A quest book should never point at this mod; it should point at the mods that use it. autoquestgen.py's _load_researched_chains requires 4+ rows, so an empty chain here is simply skipped, which is the correct outcome. LOADER: META-INF/mods.toml, modId yungsapi, version 1.20-Forge-4.0.6, minecraft [1.20,1.21), forge [46.0.2,), no fabric.mod.json - a genuine 1.20.1 Forge build. This is the one mod id in the task brief's YUNG list that was already correct."
+}

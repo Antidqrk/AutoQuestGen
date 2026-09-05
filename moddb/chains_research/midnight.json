@@ -1,0 +1,188 @@
+{
+ "mod": "midnight",
+ "verified_against": "midnight-1.20.1-0.6.7.jar",
+ "item_count_in_jar": 411,
+ "chain": [
+  {
+   "id": "kill:midnight:nightshade",
+   "title": "Something Is Already Here",
+   "desc": "The Midnight reaches you first: Nightshades spawn in EVERY overworld biome except mushroom fields, one at a time, and they are the only mob in the mod you meet before travelling."
+  },
+  {
+   "id": "midnight:corrupted_pearl",
+   "title": "Malign Magnetism",
+   "desc": "The Nightshade's only drop. Thrown, it does not teleport you - it points at the nearest Rift, which is the mod's own stated way of finding one."
+  },
+  {
+   "id": "kill:midnight:rifter",
+   "title": "An Otherworldly Encounter",
+   "desc": "Rifters climb out of an open Rift, grab you and try to drag you through it. Meeting one is the direct parent of the travel advancement."
+  },
+  {
+   "id": "dim:midnight:the_midnight",
+   "title": "Lights Out",
+   "desc": "There is no portal to build. A Rift tears itself open near you around midnight in any overworld biome - or when midnight lightning strikes - and you step into it."
+  },
+  {
+   "id": "midnight:shadowroot_log",
+   "title": "The Only Tree Worth Cutting",
+   "desc": "Shadowroot is the Midnight's true wood, as opposed to the fungal stems; its planks are the base of the first tool tier here."
+  },
+  {
+   "id": "midnight:dark_stick",
+   "title": "Every Handle in the Dark",
+   "desc": "The Midnight's stick, made from any of its nine plank types. Not one tool or weapon in the mod is craftable without it."
+  },
+  {
+   "id": "midnight:shadowroot_sword",
+   "title": "Wood, After a Fashion",
+   "desc": "Shadowroot planks and a Dark Stick; the starter blade, and one of the five swords the mod ships."
+  },
+  {
+   "id": "midnight:nightstone",
+   "title": "The Stone Underfoot",
+   "desc": "The Midnight's cobblestone. It cuts into bricks, tiles and a furnace, and it is the second tool tier."
+  },
+  {
+   "id": "midnight:nightstone_sword",
+   "title": "Sharper Than Nothing",
+   "desc": "Nightstone and a Dark Stick. From here the tool ladder leaves the surface and goes underground."
+  },
+  {
+   "id": "midnight:rockshroom_clump",
+   "title": "A Sturdy Shroom",
+   "desc": "Mined out of a Rockshroom heap; the mod's own advancement calls this the start of the armour tree."
+  },
+  {
+   "id": "midnight:rockshroom_helmet",
+   "title": "Rock Solid",
+   "desc": "Rockshroom Clumps beaten into plate. The first armour set in the Midnight and the only one before Tenebrum."
+  },
+  {
+   "id": "midnight:suavis",
+   "title": "Inebriated",
+   "desc": "A bulbous fungus that bursts when broken; it yields Raw Suavis, and eating it is what the Violeaf is for."
+  },
+  {
+   "id": "kill:midnight:nightstag",
+   "title": "Your Excellency",
+   "desc": "The Midnight's stag, spawning two to four at a time in the fungi forest, malevolent forest and runebush grove; it drops Raw Stag Flank, and it can be made to bow."
+  },
+  {
+   "id": "structure:midnight:forgotten_library",
+   "title": "Somebody Wrote This Down",
+   "desc": "The mod's one structure, buried forty blocks above the floor of the Caverns and Fungal Caverns, generated at the underground_structures step with its own chest and barrel tables."
+  },
+  {
+   "id": "kill:midnight:stinger",
+   "title": "Cracked Up",
+   "desc": "Stingers own the Caverns and Greater Caverns outright at spawn weight 100, two to five at a time, and they lay the egg clusters you keep standing on."
+  },
+  {
+   "id": "midnight:ebonite",
+   "title": "Iron Plus Plus",
+   "desc": "Smelted or blasted from Ebonite Ore, and also found in the wetland ruin chests; the Midnight's iron."
+  },
+  {
+   "id": "midnight:ebonite_pickaxe",
+   "title": "Ebony Excavator",
+   "desc": "Ebonite and Dark Sticks. It is the tier gate: the mod's advancement tree hangs BOTH Nagrilite and Tenebrum off this pickaxe."
+  },
+  {
+   "id": "midnight:ebonite_sword",
+   "title": "Ebony Warrior",
+   "desc": "The matching blade. Its advancement fires the moment you swing it at something."
+  },
+  {
+   "id": "midnight:nagrilite_ingot",
+   "title": "Hidden in the Shadows",
+   "desc": "Smelted from Nagrilite Ore or Raw Nagrilite; the deeper of the two metals you can reach with an Ebonite pickaxe."
+  },
+  {
+   "id": "midnight:nagrilite_sword",
+   "title": "Cut From the Dark",
+   "desc": "Nagrilite and a Dark Stick - the sharper of the two late blades, where Tenebrum is the heavier one."
+  },
+  {
+   "id": "midnight:nagrilite_bladeloop",
+   "title": "You Spin Me Right Round",
+   "desc": "A ring of Nagrilite you throw; it is one of the mod's four thrown entity types and the only one that is a real weapon."
+  },
+  {
+   "id": "kill:midnight:nova",
+   "title": "Rouxe Caverns Belong to It",
+   "desc": "Novas hold the Rouxe Caverns at spawn weight 100, one or two at a time, and they fire the spikes that make that biome nearly unwalkable."
+  },
+  {
+   "id": "midnight:tenebrum_ingot",
+   "title": "Heavy Metal",
+   "desc": "Smelted from Raw Tenebrum. The mod's netherite equivalent and the top of its ladder."
+  },
+  {
+   "id": "midnight:tenebrum_helmet",
+   "title": "Absolute Unit",
+   "desc": "Tenebrum plate. The full suit is the mod's best armour and the goal its own story tree points at."
+  },
+  {
+   "id": "midnight:tenebrum_smithing_table",
+   "title": "Heavy Duty",
+   "desc": "The Midnight's own smithing table, built from Tenebrum ingots; crafting it and smithing something with it closes the story branch."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "midnight:ebonite_sword",
+   "members": [
+    "midnight:shadowroot_sword",
+    "midnight:nightstone_sword",
+    "midnight:nagrilite_sword",
+    "midnight:tenebrum_sword"
+   ]
+  },
+  {
+   "hub": "midnight:ebonite_pickaxe",
+   "members": [
+    "midnight:shadowroot_pickaxe",
+    "midnight:nightstone_pickaxe",
+    "midnight:nagrilite_pickaxe",
+    "midnight:tenebrum_pickaxe"
+   ]
+  },
+  {
+   "hub": "midnight:shadowroot_planks",
+   "members": [
+    "midnight:bogshroom_planks",
+    "midnight:dewshroom_planks",
+    "midnight:moonshroom_planks",
+    "midnight:nightshroom_planks",
+    "midnight:viridshroom_planks",
+    "midnight:dark_willow_planks",
+    "midnight:decayed_planks",
+    "midnight:manglewood_planks"
+   ]
+  },
+  {
+   "hub": "midnight:shadowroot_crafting_table",
+   "members": [
+    "midnight:bogshroom_crafting_table",
+    "midnight:dewshroom_crafting_table",
+    "midnight:moonshroom_crafting_table",
+    "midnight:nightshroom_crafting_table",
+    "midnight:viridshroom_crafting_table",
+    "midnight:dark_willow_crafting_table",
+    "midnight:decayed_wood_crafting_table"
+   ]
+  },
+  {
+   "hub": "midnight:rockshroom_helmet",
+   "members": [
+    "midnight:rockshroom_chestplate",
+    "midnight:rockshroom_leggings",
+    "midnight:rockshroom_boots",
+    "midnight:rockshroom_shield",
+    "midnight:tenebrum_shield"
+   ]
+  }
+ ],
+ "notes": "Item set = 417 stems of assets/midnight/models/item/*.json intersected with item.midnight.* / block.midnight.* lang keys = 411; every midnight: id above is a member of that set. THE ENTRY PATH IS THE HEADLINE FACT AND IT IS FULLY VERIFIED. There is no portal block and no portal item in this jar. data/midnight/dimension/the_midnight.json and dimension_type/the_midnight.json are the only dimension files (fixed_time 18000 - permanent midnight - natural false, bed_works false, min_y -64, height 384, effects midnight:midnight). You get there through a Rift, and every link in that path is in the jar: (1) data/midnight/forge/biome_modifier/add_nightshades.json is a forge:add_spawns that puts midnight:nightshade in a forge:and of #minecraft:is_overworld and NOT #midnight:no_nightshade_spawning, and data/midnight/tags/worldgen/biome/no_nightshade_spawning.json contains only minecraft:mushroom_fields - so Nightshades are an overworld mob and are the first Midnight creature a player meets; (2) data/midnight/loot_tables/entities/nightshade.json drops exactly one thing, midnight:corrupted_pearl, and advancements.midnight.story.use_corrupted_pearl.description reads 'Use the Corrupted Pearl of a Nightshade to locate a Rift'; (3) data/midnight/tags/worldgen/biome/spawns_rifts.json is #minecraft:is_overworld, and the config strings midnight.configgui.client.averageOverworldRiftSpawnTicks.tooltip ('the number of ticks it takes, on average, for a Rift to spawn around a player at the time of midnight in the overworld') and chanceMidnightLightningCreatesRift.tooltip ('the chance for a midnight lightning bolt to create a rift') give the two spawn routes; (4) advancements.midnight.story.enter_midnight.description reads 'Travel to the Midnight by entering a rift' and its parent is story/hurt_by_rifter. That is why the first four steps are nightshade -> corrupted_pearl -> rifter -> dim:, and why no item stands in for the dimension. ENTITY VERIFICATION - 23 entity.midnight.* lang keys and THIRTEEN OF THEM ARE NOT MOBS: area_effect_cloud, boat and chest_boat are vanilla-shaped vehicle/effect types; bladeshroom_cap, corrupted_pearl, ebonite_arrow, nagrilite_bladeloop, nova_spike, spore_bomb, thrown_geode, thrown_stinger_egg and umbra_lightning_bolt are projectiles (their entity classes all sit under common/entity/projectile/); and midnight:rift is the portal itself. None of the thirteen has a loot table or a spawn egg and none is a kill: step here. Of the ten remaining, the five used as kill: steps each have a spawn egg, an entity loot table, AND a named spawner entry inside data/midnight/worldgen/biome/*.json or a forge biome modifier: nightshade (weight 5 in black_ridge, caverns, dead_forest, deceitful_marsh, deceitful_swamp, fungi_forest and more, PLUS the overworld add_nightshades modifier), rifter (weight 50, 2-4, across seven Midnight biomes), nightstag (creature, weight 10, 2-4 in malevolent_forest and runebush_grove, weight 8 in fungi_forest), stinger (monster, weight 100, 2-3 in caverns and 2-5 in greater_caverns), nova (monster, weight 100, 1-2 in rouxe_caverns). THREE ENTITIES WERE DELIBERATELY EXCLUDED as unspawnable in this build: midnight:hunter, midnight:tenevixen and midnight:deceitful_snapper each have an entity class, a spawn egg and an (empty) loot table, but their ids appear in NO biome spawner, NO biome modifier and NO structure spawn override anywhere in the jar - they are registered but never placed in 0.6.7, and a kill: step on any of them would be permanently uncompletable. midnight:crystal_bug and midnight:slink ARE spawnable (crystal_bug ambient weight 10 in crystal_spires; slink creature weight 5-8 across six biomes) and were simply cut for length, not for doubt. Ordering is the mod's own story tree, which is a real parent chain: root -> hurt_by_rifter -> enter_midnight -> {obtain_rockshroom -> obtain_rockshroom_armour -> deflect_with_rockshroom_shield; destroy_suavis -> violeaf_cure_nausea; any_nightstag_bow -> every_nightstag_bow; throw_bladeshroom; visit_underground_biome -> {obtain_ebonite -> {attack_using_ebonite_sword, obtain_ebonite_pickaxe -> {obtain_nagrilite_ingot -> throw_bladeloop, obtain_tenebrum_ingot -> {obtain_tenebrum_armour, obtain_tenebrum_shield, get_tenebrum_smithing_table}}}, break_geode, break_stinger_eggs}; visit_corrupted_biome -> visit_every_biome}. Recipe graph cross-checked from the 398 files in data/midnight/recipes/: ebonite <- smelting/blasting ebonite_ore; ebonite_pickaxe and ebonite_sword <- ebonite + dark_stick; nagrilite_ingot <- smelting nagrilite_ore; tenebrum_ingot <- smelting raw_tenebrum; every sword <- dark_stick plus its tier material. Structures: exactly ONE, data/midnight/worldgen/structure/forgotten_library.json, type midnight:generic_structure, start_height above_bottom 40, terrain_adaptation bury, biomes #midnight:has_structure/forgotten_library = midnight:caverns + midnight:fungal_caverns, with its own loot_tables/chests/forgotten_library.json. The other two chest tables in the jar (wetland_ruin_chest, wetland_ruin_barrel) belong to a worldgen FEATURE, not a structure file, so no structure: step names them. CONSENSUS CONFLICT (moddb): moddb lists seven midnight ids at 3 packs each - nagrilite_sword (0.0), nightstone_sword (0.167), tenebrum_helmet (0.333), shadowroot_sword (0.5), rockshroom_helmet (0.667), tenebrum_sword (0.833), ebonite_sword (1.0). All seven are real ids in this jar, but the consensus ORDER is wrong in three places and the recipe graph was preferred throughout: shadowroot_sword is the cheapest sword in the mod (planks + dark_stick) yet consensus puts it at 0.5 behind nagrilite_sword at 0.0; nightstone_sword is tier two, not tier six; and ebonite_sword sits at 1.0 in consensus although the mod's own advancement tree makes obtain_ebonite the PARENT of both obtain_nagrilite_ingot and obtain_tenebrum_ingot. The spine therefore runs shadowroot -> nightstone -> rockshroom -> ebonite -> nagrilite -> tenebrum, which is the order the smelting and crafting recipes force. tenebrum_sword is moved into the sword wheel rather than the spine. DROPPED, no obtainability proof: midnight:rift_placer - a real item with a model and the lang name 'Rift Placer', but NO recipe and NO loot table anywhere, so it is a creative/debug tool; midnight:bladeshroom_cap and midnight:stinger_egg - both have models and lang keys, but blocks/bladeshroom.json drops bladeshroom_spores rather than the cap and blocks/stinger_eggs.json has an empty pool, so neither has a data-side source. ALSO DROPPED: the ten *_spawn_egg items, all creative-only."
+}

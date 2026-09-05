@@ -1,0 +1,127 @@
+{
+ "mod": "thermal_foundation",
+ "verified_against": "thermal_foundation-1.20.1-11.0.6.70.jar (embeds thermal_core-1.20.1-11.0.6.24.jar)",
+ "item_count_in_jar": 113,
+ "registers_into": ["thermal"],
+ "parent_mod": "thermal",
+ "chain": [
+  {
+   "id": "thermal:tin_ingot",
+   "title": "First Smelt",
+   "desc": "Smelt raw tin from Tin Ore (y 60 down to -20, common in any cave) in a plain furnace. Tin goes into gears, plates, ducts and the machine frame - it never stops being asked for."
+  },
+  {
+   "id": "thermal:raw_lead",
+   "title": "Dig Deeper for Lead",
+   "desc": "Lead Ore lives from y 40 down to bedrock, so bring a deep mine. Lead is Thermal's wiring metal - energy ducts, flux capacitors and cells all drink it."
+  },
+  {
+   "id": "thermal:lead_ingot",
+   "title": "Heavy Metal",
+   "desc": "Smelt the raw lead. Anything in Thermal that moves or stores Redstone Flux has lead somewhere in its recipe, so this is the metal you will run out of first."
+  },
+  {
+   "id": "thermal:raw_nickel",
+   "title": "Nickel at Any Depth",
+   "desc": "Nickel Ore generates across almost the whole world height (-40 to 120) but in small pockets. You barely use nickel raw - it exists to become invar and constantan."
+  },
+  {
+   "id": "thermal:nickel_ingot",
+   "title": "The Alloy Feedstock",
+   "desc": "Smelt raw nickel and hold onto it. Two of the four Thermal alloys - invar and constantan - are impossible without it."
+  },
+  {
+   "id": "thermal:raw_silver",
+   "title": "Silver in the Deep",
+   "desc": "Silver Ore shares lead's depths (y 40 down to -60) and is rarer. Silver becomes electrum, silver gears for the potion tools, and the best coin fuel."
+  },
+  {
+   "id": "thermal:silver_ingot",
+   "title": "Sterling Stock",
+   "desc": "Smelt raw silver. You need it for electrum, for the silver gears in the Potion Infuser and Quiver, and later for lumium - worth a dedicated branch mine."
+  },
+  {
+   "id": "thermal:bronze_ingot",
+   "title": "Alloys Without Machines",
+   "desc": "Craft 3 copper and 1 tin (ingots or dusts) with a Fire Charge for 4 bronze - no Induction Smelter needed. Bronze is what fluid ducts are drawn from."
+  },
+  {
+   "id": "thermal:invar_dust",
+   "title": "Invar Without the Smelter",
+   "desc": "Mix 2 iron dust with 1 nickel dust for 3 Invar Blend, then smelt it in any furnace. Invar is the workhorse mid-tier metal in machine, augment and turbo servo recipes."
+  },
+  {
+   "id": "thermal:electrum_ingot",
+   "title": "Gold, Sharpened",
+   "desc": "Gold plus silver with a Fire Charge gives 2 electrum. Electrum is the conductor in energy limiters and augments, and the base that signalum is alloyed from."
+  },
+  {
+   "id": "thermal:constantan_ingot",
+   "title": "Constantan Completes the Set",
+   "desc": "Copper plus nickel with a Fire Charge gives 2 constantan. The fourth alloy rounds out the augment and dynamo recipes, and lumium needs it down the line."
+  },
+  {
+   "id": "thermal:invar_gear",
+   "title": "Gearing Up",
+   "desc": "Four invar ingots around an iron nugget, or one ingot in the Multiservo Press with a Gear Die. Each metal has its own gear, and recipes name them specifically - invar's marks the mid tier."
+  },
+  {
+   "id": "thermal:apatite",
+   "title": "Fertilizer Rock",
+   "desc": "Apatite Ore is scattered from y -16 up to 96 and drops heaps of gems. Two apatite, sand and niter craft into 8 Phyto-Gro - the fertilizer the whole farming side runs on."
+  },
+  {
+   "id": "thermal:niter",
+   "title": "Niter for the Powder Mill",
+   "desc": "Niter Ore peaks around y 24. Niter is the oxidizer in both Phyto-Gro and gunpowder, so it feeds your farms and your rockets at the same time."
+  },
+  {
+   "id": "thermal:sulfur",
+   "title": "Gunpowder Without Creepers",
+   "desc": "Sulfur Ore sits low, around y -16 to 32. Charcoal, two niter and one sulfur craft 4 gunpowder - from here on, TNT and rockets no longer require creeper hunting."
+  },
+  {
+   "id": "thermal:cinnabar",
+   "title": "The Ore Multiplier Mineral",
+   "desc": "Cinnabar Ore generates from y -16 to 48. Feed cinnabar into the Pulverizer's catalyst slot to squeeze bonus secondary drops out of every ore you grind."
+  },
+  {
+   "id": "thermal:rubberwood_log",
+   "title": "Find the Rubber Tree",
+   "desc": "Rubberwood trees grow in flower forests, sparse jungles and bamboo jungles. Tap a trunk with an Arboreal Extractor for Latex - the rubber for cells, ducts and reservoirs."
+  },
+  {
+   "id": "thermal:oil_sand",
+   "title": "Strike Oil",
+   "desc": "Oil Sand hides in deserts and badlands between y 40 and 80 - grab it with any shovel. Squeeze it for crude oil, the fuel line that ends in the Compression Dynamo."
+  },
+  {
+   "id": "thermal:silver_coin",
+   "title": "Minted Power",
+   "desc": "Press a silver ingot with a Coin Die for 3 coins; each silver coin burns for 48,000 RF in a Numismatic Dynamo. Literal money-to-power - the flashiest fuel in the pack."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "thermal:invar_gear",
+   "members": ["thermal:lead_gear", "thermal:silver_gear", "thermal:nickel_gear", "thermal:bronze_gear", "thermal:electrum_gear", "thermal:constantan_gear"],
+   "note": "Every metal has a gear: four ingots around an iron nugget by hand, or one ingot in the Multiservo Press with a Gear Die. Recipes across Thermal name specific gears, so the set fills in naturally."
+  },
+  {
+   "hub": "thermal:tin_plate",
+   "members": ["thermal:lead_plate", "thermal:silver_plate", "thermal:nickel_plate", "thermal:bronze_plate", "thermal:invar_plate", "thermal:electrum_plate", "thermal:constantan_plate"],
+   "note": "Plates come off the Multiservo Press one ingot at a time and are the flat stock other mods' recipes request."
+  },
+  {
+   "hub": "thermal:silver_coin",
+   "members": ["thermal:tin_coin", "thermal:lead_coin", "thermal:nickel_coin", "thermal:bronze_coin", "thermal:invar_coin", "thermal:electrum_coin", "thermal:constantan_coin"],
+   "note": "All eight metals mint into Numismatic Dynamo fuel via the Press Coin Die; richer metals burn hotter."
+  },
+  {
+   "hub": "thermal:rubberwood_planks",
+   "members": ["thermal:rubberwood_stairs", "thermal:rubberwood_slab", "thermal:rubberwood_door", "thermal:rubberwood_fence", "thermal:rubberwood_trapdoor", "thermal:rubberwood_boat"],
+   "note": "Full vanilla-style wood set from rubberwood, for builders who tapped the trees anyway."
+  }
+ ],
+ "notes": "Foundation is the resource layer of the Thermal series: ores + oil sand + rubberwood worldgen, 8 metals with full dust/ingot/nugget/gear/plate/coin/block sets. All ids verified against lang keys (assets/thermal_foundation/lang plus the embedded thermal_core's assets/thermal/lang) and recipes in data/thermal/recipes/ of this jar and the embedded core. Ore heights and biomes read from data/thermal/worldgen/placed_feature and forge/biome_modifier in the jar. Fire Charge grid-alloying recipes (bronze_ingot_4, invar_ingot_3, electrum_ingot_2, constantan_ingot_2) are in this jar, so all four alloys are reachable pre-machine. Silver coin fuel value 48000 RF read from fuels/numismatic/numismatic_silver_coin.json. Deliberately does NOT reuse ids already in thermal.json's chain (raw_tin, tin_gear, invar_ingot, etc.); invar is anchored via invar_dust/invar_gear instead. Ruby and sapphire items/ores exist with loot tables but have NO placed_feature or biome_modifier - they do not generate by default, so they are excluded. apatite/niter/sulfur/cinnabar items and the phytogro/gunpowder recipes live in the embedded thermal_core jar-in-jar."
+}

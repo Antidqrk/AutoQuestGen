@@ -1,0 +1,281 @@
+{
+ "mod": "createaddition",
+ "ids_in_jar": 55,
+ "videos": [
+  {
+   "id": "9j3ZtHa5pE8",
+   "title": "This mod makes Minecraft's Create Mod Better with Electricity and More! - Create: Crafts & Additions",
+   "channel": "Kwizzle Hazzizle",
+   "views": 64982,
+   "duration": 961,
+   "chars": 16403,
+   "src": "vetted_search"
+  }
+ ],
+ "items": {
+  "createaddition:accumulator": {
+   "mentions": 12,
+   "videos": 1,
+   "first_at": 0.6529,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "createaddition:electric_motor": {
+   "mentions": 8,
+   "videos": 1,
+   "first_at": 0.023,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "createaddition:straw": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.6385,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "createaddition:connector": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.0847,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createaddition:spool": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.7942,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createaddition:alternator": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.052,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "createaddition:redstone_relay": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4533,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createaddition:portable_energy_interface": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7156,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createaddition:honey_cake": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4973,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "createaddition:chocolate_cake": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4986,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "ids": [
+     "createaddition:alternator"
+    ],
+    "note": "STEP 1 and the gateway to the entire mod. The alternator is the single block that converts Create rotation into Forge Energy. Nothing else in the electricity system matters until one is spinning.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:connector",
+     "createaddition:copper_wire",
+     "createaddition:copper_spool"
+    ],
+    "note": "STEP 2: connectors and cable. A connector is placed on the face of a block and auto-configures to pull from a generator or push into a consumer. Small connectors plus copper wire are the starter tier.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:electric_motor"
+    ],
+    "note": "STEP 3: the electric motor turns Forge Energy back into rotation at 75% efficiency, and its speed is configurable. This closes the loop and is the reason to build the system at all - power transmitted as cable rather than as shafts.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:accumulator",
+     "createaddition:modular_accumulator"
+    ],
+    "note": "STEP 4: storage. Accumulators stack like fluid tanks into a multiblock, 2 million FE per block, up to 90 million FE at maximum size - enough to run a motor at full speed for over two and a half hours.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:large_connector",
+     "createaddition:electrum_wire",
+     "createaddition:electrum_spool",
+     "createaddition:electrum_ingot"
+    ],
+    "note": "STEP 5: the electrum tier. Large connectors and electrum (high-power) cable are the upgrade that extends a grid from 15 to 30 blocks and from 4 to 6 connections per node.",
+    "video": "9j3ZtHa5pE8"
+   }
+  ],
+  "gates": [
+   {
+    "ids": [
+     "createaddition:alternator"
+    ],
+    "note": "HARD GATE: the alternator does nothing below 32 RPM. A player wiring one to a plain water wheel at 8-16 RPM will get zero output and no explanation. Gear ratio up first.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:alternator",
+     "createaddition:electric_motor"
+    ],
+    "note": "THE COUNTERINTUITIVE RULE OF THE MOD, and the thing a jar scan can never tell you: FE output depends ONLY on rotation SPEED, not on stress units. A creative motor producing vastly more stress gives the exact same 45 FE/t at the same RPM. The cap is 360 FE/t per alternator at 256 RPM. To convert surplus stress into power you must add MORE alternators, not a bigger generator.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:large_connector",
+     "createaddition:electrum_wire",
+     "createaddition:copper_wire"
+    ],
+    "note": "GATE: two LARGE connectors can only be joined by high-power (electrum) cable. Copper wire is refused between them. Critically, cable type governs RANGE and connector compatibility only - it does NOT limit throughput, which is the opposite of what most tech mods teach.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:connector",
+     "createaddition:large_connector"
+    ],
+    "note": "GATE on layout: small connector to small connector maxes out at 15 blocks and 4 connections; large connector to large connector at 30 blocks and 6 connections. Exceeding either gives a 'cable too long' or 'cord is full' refusal.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:straw"
+    ],
+    "note": "GATE for automation: a Create blaze burner cannot drink liquid fuel from a pipe UNLESS it is given a straw. Without the straw the pipe simply will not flow into it. This one cheap item unlocks fully automated blaze burner fuelling.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:portable_energy_interface"
+    ],
+    "note": "The portable energy interface is how power crosses onto contraptions and TRAINS - glue it to an accumulator, assemble, and it charges from a stationary interface. Demonstrated moving 201,000 FE onto a train battery.",
+    "video": "9j3ZtHa5pE8"
+   }
+  ],
+  "traps": [
+   {
+    "ids": [
+     "createaddition:electrum_amulet"
+    ],
+    "note": "MAJOR BALANCE TRAP - the guide explicitly refuses to use it. The electrum amulet makes you effectively invincible (stand in lava indefinitely, plus two extra hearts) and is cheap: electrum wire, electrum bars and emeralds, where electrum comes from ordinary silver-ish nuggets found while mining. Any pack that wants difficulty should disable or heavily re-gate this item. A jar scan would rank it as an ordinary curio.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:electric_motor",
+     "createaddition:connector"
+    ],
+    "note": "TRAP that silently breaks grids: when demand exceeds supply the energy is NOT shared evenly. The motor connected FIRST keeps its full draw and later ones starve, flickering on and off. Debugging this without knowing the priority rule is near impossible.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:tesla_coil"
+    ],
+    "note": "The tesla coil is mostly a dead end as an item charger unless other FE-item mods are present - the guide tests it against a diamond and nothing happens. Its reliable use is as a WEAPON: fed FE and a redstone signal it damages players and mobs within 3 blocks.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:straw",
+     "createaddition:seed_oil_bucket",
+     "createaddition:bioethanol_bucket"
+    ],
+    "note": "CROSS-MOD TRAP worth recording: TFMG's gasoline and diesel do NOT work as blaze burner fuel through the straw. You are limited to lava or this mod's own seed oil / bioethanol. Do not design a quest that assumes Create-ecosystem fuels are interchangeable.",
+    "video": "9j3ZtHa5pE8"
+   }
+  ],
+  "signature": [
+   {
+    "ids": [
+     "createaddition:alternator",
+     "createaddition:electric_motor",
+     "createaddition:connector"
+    ],
+    "note": "The alternator-cable-motor triangle IS the mod. The guide states in its first sentence that electricity is the most interesting aspect and spends the overwhelming majority of runtime on it - length of explanation makes this unambiguous.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:redstone_relay"
+    ],
+    "note": "Called out as a personal favourite - a hard-wired push/pull pair that acts as a redstone-controlled switch for an FE line, letting you turn a whole electric subsystem on and off.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:alternator",
+     "createaddition:electric_motor"
+    ],
+    "note": "ECOSYSTEM FACT: Create Crafts & Additions shares plain Forge Energy with Create New Age and other FE mods - a New Age generator will drive this mod's motor and vice versa. It is the bridge between Create rotation and the wider FE ecosystem, which matters when planning a cross-mod quest tree.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:diamond_grit_sandpaper",
+     "createaddition:diamond_grit"
+    ],
+    "note": "Small but genuinely valued quality-of-life item: diamond grit sandpaper works exactly like Create's sandpaper but loses durability far more slowly.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:rolling_mill"
+    ],
+    "note": "The rolling mill is the mod's own processing machine, turning ingots into the rods that feed most of its recipes - a required stop on the way to the electrical components.",
+    "video": "9j3ZtHa5pE8"
+   },
+   {
+    "ids": [
+     "createaddition:barbed_wire"
+    ],
+    "note": "Barbed wire is a cactus-like defensive block that deals more damage than cactus but only while the entity is moving - a mob-farm and base-defence staple.",
+    "video": "9j3ZtHa5pE8"
+   }
+  ]
+ }
+}

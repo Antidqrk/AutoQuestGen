@@ -1,0 +1,229 @@
+{
+ "mod": "hexalia",
+ "verified_against": "hexalia-1.3.6-1.20.1+forge.jar",
+ "item_count_in_jar": 158,
+ "chain": [
+  {
+   "id": "hexalia:athame",
+   "title": "A Knife Made of Flint",
+   "desc": "Flint on a stick, and the single most load-bearing item in the mod. It strips logs for Tree Resin and it carves plank blocks into Ritual Braziers - crouch and right-click a plank and one appears."
+  },
+  {
+   "id": "hexalia:hex_focus",
+   "title": "The Thing That Starts Rituals",
+   "desc": "An amethyst shard, a leaf and a stick. The mod's root advancement fires the moment you hold one, and every ritual in the mod is activated by pointing it at the setup."
+  },
+  {
+   "id": "hexalia:mortar_and_pestle",
+   "title": "Crush Course",
+   "desc": "A bowl and a plain stone. Twelve recipes run through it, including the mod's own salt, and the advancement tree branches off it immediately."
+  },
+  {
+   "id": "structure:hexalia:herbalist_hut",
+   "title": "Find the Herbalist's Hut",
+   "desc": "Search Swamp and Mangrove Swamp for a small weathered cabin half-swallowed by vegetation - roughly every 20 chunks. The mod's own guide calls it a natural introduction to its systems, and it comes pre-stocked with a Mortar and Pestle, a Small Cauldron, a Ritual Brazier and beds of infused soil growing the herbs you cannot craft."
+  },
+  {
+   "id": "hexalia:saltsprout",
+   "title": "The Plant That Makes Salt",
+   "desc": "A wild growth, and a staple of the hut's chests; the guidebook says salt is primarily obtained by grinding it."
+  },
+  {
+   "id": "hexalia:salt",
+   "title": "Salt of the Craft",
+   "desc": "Ground from Saltsprout in the Mortar and Pestle. It is the offering layer of Nature's Ritual - the braziers must be covered with it - so nothing later happens without it."
+  },
+  {
+   "id": "hexalia:tree_resin",
+   "title": "Bleed a Tree",
+   "desc": "Not a recipe. Strip a log with the Athame and the resin comes out; the mod's knife_to_tree_you advancement is exactly this. It is the binder in brews, salves and Mutavis."
+  },
+  {
+   "id": "hexalia:ritual_brazier",
+   "title": "Carve Four of These",
+   "desc": "There is NO crafting recipe. The brazier is shaped in the world - crouch-right-click any plank block with the Athame - and Nature's Ritual needs four of them around the table in the cardinal directions."
+  },
+  {
+   "id": "hexalia:ritual_table",
+   "title": "Table Manners",
+   "desc": "Deepslate with a moss carpet on top. The centre of Nature's Ritual: braziers loaded and salted, a base item on the table, then the Hex Focus."
+  },
+  {
+   "id": "hexalia:earth_node",
+   "title": "The Four Elements, Made",
+   "desc": "The first ritual output. An amethyst shard transmuted at the Ritual Table with earth-aligned materials; the Water, Air and Fire Nodes are the same recipe with different offerings."
+  },
+  {
+   "id": "hexalia:small_cauldron",
+   "title": "Small Beginnings",
+   "desc": "Cobbled deepslate over logs with a coal in the middle. The mod's brewing station, and the parent of the entire brew branch of the advancement tree."
+  },
+  {
+   "id": "hexalia:rustic_bottle",
+   "title": "Something to Brew Into",
+   "desc": "The Brewbie Award advancement is simply holding one. Brews come out of the Small Cauldron in these, not in glass bottles."
+  },
+  {
+   "id": "hexalia:brew_of_daybloom",
+   "title": "Brewed Awakening",
+   "desc": "One of eight Small Cauldron brews, and the one the mod picked as the icon of its brewing milestone."
+  },
+  {
+   "id": "hexalia:mutavis",
+   "title": "The Powder That Rewrites Blocks",
+   "desc": "Ground from Tree Resin, a slimeball and any crushed herb. Applied straight to a block it mutates it - twenty-one mutation recipes exist, and it works from a dispenser."
+  },
+  {
+   "id": "hexalia:morphora",
+   "title": "Mutate a Whole Field",
+   "desc": "A ritual flower. Hit one with Mutavis and the mutation spreads outward instead of affecting a single block, which is the mod's answer to large-scale terraforming."
+  },
+  {
+   "id": "hexalia:spirit_bloom",
+   "title": "Herb Nerd",
+   "desc": "One of the mutation-only herbs - it cannot be found or crafted, only mutated into existence, along with Witchweed, Ghost Fern and the Celestial Bloom."
+  },
+  {
+   "id": "hexalia:celestial_bloom",
+   "title": "Flowers That Hold Starlight",
+   "desc": "A mutation product, and the fuel of Celestial Infusion: three of them near a Ritual Brazier under open sky. They wither into dead remnants as they are spent."
+  },
+  {
+   "id": "hexalia:celestial_crystal",
+   "title": "Star Power",
+   "desc": "An amethyst shard dropped into a brazier and infused under open sky. The mod's premium material and the gate on its late equipment."
+  },
+  {
+   "id": "hexalia:silkworm",
+   "title": "Silken Beginnings",
+   "desc": "Broken out of a Silkworm Cocoon, which forms naturally on certain trees - or place a silkworm on a log yourself and let it spin one."
+  },
+  {
+   "id": "hexalia:silk_fiber",
+   "title": "Silk Fiber",
+   "desc": "A silkworm and a handful of leaves gives two. It is the base of every Silkweave garment and of the mod's whole idol line."
+  },
+  {
+   "id": "hexalia:silkweave_mantle",
+   "title": "Silkweave",
+   "desc": "The mod's craftable armour set, woven from Silk Fiber; each piece is the base the brazier upgrades."
+  },
+  {
+   "id": "hexalia:moonweave_mantle",
+   "title": "Moonweave",
+   "desc": "A Silkweave piece put through the Ritual Brazier. There is no other recipe for the set - the infusion IS the upgrade."
+  },
+  {
+   "id": "hexalia:silk_idol",
+   "title": "The Blank Idol",
+   "desc": "The guidebook is explicit: all idols are formed from a Silk Idol and refined herbal materials, so this is the branch point for all four."
+  },
+  {
+   "id": "hexalia:tempest_idol",
+   "title": "Master or Not",
+   "desc": "Hold it a moment and a thunderstorm arrives. The Rainfall and Clarity Idols are its opposites, and the Purity Idol strips Binding and Vanishing curses instead."
+  },
+  {
+   "id": "hexalia:sage_pendant",
+   "title": "Wise Investment",
+   "desc": "A Ritual Table output and the mod's endgame trinket, sitting on the same branch as the elemental nodes."
+  },
+  {
+   "id": "hexalia:kelpweave_blade",
+   "title": "Kelp Yourself",
+   "desc": "A Ritual Table weapon built out of Siren Kelp; the milestone the mod hangs off its table branch."
+  },
+  {
+   "id": "hexalia:ancient_seed",
+   "title": "Dormant Life in a Jungle Temple",
+   "desc": "Not craftable and not farmable - a global loot modifier injects it into minecraft:chests/jungle_temple at a thirty-five percent chance. The Ritual Table turns it into the mod's rarest outcomes."
+  },
+  {
+   "id": "hexalia:verdant_grimoire",
+   "title": "Read the Whole Thing",
+   "desc": "A book plus any herb, and the Patchouli guide that documents every ritual above. Its recipe is wrapped in a forge:mod_loaded condition on patchouli."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "hexalia:brew_of_homestead",
+   "members": [
+    "hexalia:brew_of_daybloom",
+    "hexalia:brew_of_spikeskin",
+    "hexalia:brew_of_bloodlust",
+    "hexalia:brew_of_siphon",
+    "hexalia:brew_of_slimewalker",
+    "hexalia:brew_of_arachnid_grace",
+    "hexalia:brew_of_hollow_silence",
+    "hexalia:rustic_bottle"
+   ]
+  },
+  {
+   "hub": "hexalia:foul_sac",
+   "members": [
+    "hexalia:frost_sac",
+    "hexalia:purifying_sac",
+    "hexalia:searing_sac",
+    "hexalia:brambleguard_salve",
+    "hexalia:menders_salve",
+    "hexalia:dream_paste",
+    "hexalia:siren_paste",
+    "hexalia:ghost_powder",
+    "hexalia:spirit_powder",
+    "hexalia:fragrant_nectar"
+   ]
+  },
+  {
+   "hub": "hexalia:mandrake",
+   "members": [
+    "hexalia:rabbage",
+    "hexalia:sunfire_tomato",
+    "hexalia:galeberries",
+    "hexalia:chillberries",
+    "hexalia:saltsprout",
+    "hexalia:siren_kelp",
+    "hexalia:dreamshroom",
+    "hexalia:witchweed",
+    "hexalia:ghost_fern",
+    "hexalia:nightshade_bush",
+    "hexalia:lotus_flower",
+    "hexalia:infused_dirt",
+    "hexalia:infused_farmland"
+   ]
+  },
+  {
+   "hub": "hexalia:silk_idol",
+   "members": [
+    "hexalia:rainfall_idol",
+    "hexalia:clarity_idol",
+    "hexalia:tempest_idol",
+    "hexalia:purity_idol",
+    "hexalia:sage_pendant",
+    "hexalia:spiritroot_tether",
+    "hexalia:dreamcatcher",
+    "hexalia:ghostveil",
+    "hexalia:earplugs",
+    "hexalia:grimshade"
+   ]
+  },
+  {
+   "hub": "hexalia:bloomwrap_robes",
+   "members": [
+    "hexalia:bloomwrap_hat",
+    "hexalia:bloomwrap_leggings",
+    "hexalia:bloomwrap_boots",
+    "hexalia:silkweave_hood",
+    "hexalia:silkweave_bindings",
+    "hexalia:silkweave_footwraps",
+    "hexalia:moonweave_hood",
+    "hexalia:moonweave_mantle",
+    "hexalia:moonweave_bindings",
+    "hexalia:moonweave_footwraps",
+    "hexalia:bogshade_boots",
+    "hexalia:briar_sickle",
+    "hexalia:thornbow"
+   ]
+  }
+ ],
+ "notes": "LOADER VERIFIED: META-INF/mods.toml present, no fabric.mod.json, modIds hexalia + forge + minecraft + geckolib + patchouli; Modrinth version 1.3.6-1.20.1+forge lists loaders [forge] only and game version 1.20.1. Note the mods.toml version string reads 1.3.5-1.20.1+forge while the file and Modrinth version are 1.3.6 - a stale version field, not a different build. Item set = the 158 stems of assets/hexalia/models/item/*.json intersected with item./block. keys in assets/hexalia/lang/en_us.json; every id above is a member of that set. No widening needed; the eight models without lang keys are state overrides (bottled_moth_black/blue/pink, rootshaper_shovel, spiritroot_tether_bound, thornbow_pulling_0/1/2). NO DIMENSION: no data/hexalia/dimension/ and no worldgen/biome/, so there is no dim: step - this is a progression mod inside the Overworld and the chain opens on the Athame instead of on a plant. ORDERING is taken from data/hexalia/advancements/, which is a clean tree with a real root: root (criterion: hold a hex_focus) -> {crush_course (mortar_and_pestle) -> {herb_nerd, seasoned_farmer, change_of_plans (mutavis) -> ring_of_change (morphora)}, knife_to_tree_you (athame), small_beginnings (small_cauldron) -> brewbie_award (rustic_bottle) -> {brewed_awakening (brew_of_daybloom), powder_and_pouch (foul_sac)}, salt_of_the_craft (salt) -> {table_manners (ritual_table) -> {essence_collector (water_node), star_power (celestial_crystal), kelp_yourself (kelpweave_blade), wise_investment (sage_pendant)}, silken_beginnings (silk_idol) -> {master_or_not (tempest_idol), pure_intentions (purity_idol)}}}. TWO MECHANICS THAT HAVE NO RECIPE FILE and would be missed by a recipe-graph-only pass, both taken from the mod's own Patchouli book (assets/hexalia/patchouli_books/verdant_grimoire/): (1) hexalia:ritual_brazier has a block loot table and NO recipe anywhere in the jar - the entry blocks/ritual_brazier.json says 'A Ritual Brazier is shaped directly in the world. Crouch and right-click any plank block with an Athame to carve it into a brazier.' It is also placed inside the Herbalist Hut structure, which is the other way to get one. (2) hexalia:tree_resin has no recipe and no loot table at all and appears only as an INGREDIENT in six recipes; resources/natural_resources.json says it 'is a sticky substance harvested from certain trees using an Athame. Extracting it will strip the log in the process.' Both are therefore obtainable and both are in the chain, but a naive obtainability scan would have dropped them. CUSTOM RECIPE TYPES, counted from data/hexalia/recipes/: hexalia:ritual_table 19, hexalia:mutation 21, hexalia:mortar_and_pestle 12, hexalia:small_cauldron 8, hexalia:ritual_brazier 7, plus 87 vanilla crafting recipes. Nature's Ritual needs the Ritual Table surrounded by FOUR braziers in the cardinal directions, each loaded and covered with salt, activated with the Hex Focus, and it consumes nearby mature crops. Celestial Infusion needs one brazier with open sky and three Celestial Blooms within a short radius. ENTITY VERIFICATION. net/astralya/hexalia/entity/ModEntities.class registers ten types: mod_chest_boat, mod_boat, thorn_arrow, searing_sac, frost_sac, foul_sac, purifying_sac, rabbage, cacofey, silk_moth. NO kill: step is used in this chain, deliberately: the only two real creatures are hexalia:cacofey and hexalia:silk_moth, and NEITHER has an entity loot table - the Cacofey is a tameable jungle farm-helper (tamed with a Galeberries Cookie, anchored with the Hex Focus) and the Silk Moth is a bred, bottled livestock animal whose whole point is the Egg Cluster / Silkworm / Cocoon lifecycle. Killing either yields nothing and contradicts the mod. LANG-KEY TRAP AVOIDED: the lang file contains BOTH entity.hexalia.cacofey and entity.hexalia.cacofey_entity, and both entity.hexalia.silk_moth and entity.hexalia.silk_moth_entity. The registry names are cacofey and silk_moth; the *_entity keys are aliases with no registered type behind them, so kill:hexalia:cacofey_entity would be permanently uncompletable. The four *_sac types are thrown consumables, thorn_arrow is the Thornbow's projectile, rabbage's entity form is a thrown crop with no entity lang key or spawn egg, and the two boats are vehicles - all excluded. STRUCTURE: one, hexalia:herbalist_hut, and it is used as the chain's structure: step. data/hexalia/worldgen/structure/herbalist_hut.json is a minecraft:jigsaw of size 2, max_distance_from_center 80, on biomes '#hexalia:has_structure/herbalist_hut_biomes' at surface_structures, with structure_set random_spread spacing 20 / separation 6 - common enough to be a realistic early goal. The mod's own guide entry content/structures.json places it in Swamp and Mangrove Swamp and calls it 'a secluded workshop... an early source of herbs, crops, and farming materials'. Its chest table holds ghost_powder, lotus_flower, rustic_bottle, saltsprout, silk_fiber, siren_kelp, spirit_powder and amethyst shards, and the hut NBT itself places a Mortar and Pestle, a Small Cauldron, a Ritual Brazier, Infused Dirt and wild crops - which makes it the second route to the recipe-less Ritual Brazier alongside carving one with the Athame. GLOBAL LOOT MODIFIER: data/hexalia/loot_modifiers/ancient_seed_from_jungle_temples.json injects hexalia:ancient_seed into minecraft:chests/jungle_temple at chance 0.35 - the seed's only source in the game. CONSENSUS: all 23 moddb entries are real ids in this jar and every one appears here or in the wheels. moddb's order is upside down for a chapter - it opens on galeberries_cookie at 0.000 and puts hex_focus at 0.818, mortar_and_pestle at 0.727 and ritual_brazier at 0.864, i.e. it starts on a cookie and ends on the mod's first three tools. The advancement tree was preferred, which puts the Athame and the Hex Focus first."
+}

@@ -1,0 +1,123 @@
+{
+ "mod": "ars_nouveau",
+ "verified_against": "ars_nouveau-1.20.1-4.12.7-all.jar",
+ "item_count_in_jar": 327,
+ "chain": [
+  {
+   "id": "ars_nouveau:worn_notebook",
+   "title": "Worn Notebook",
+   "desc": "Craft a Book with one Lapis Lazuli; this is the mod's in-game guide and documents every recipe and mechanic that follows."
+  },
+  {
+   "id": "ars_nouveau:novice_spell_book",
+   "title": "Novice Spell Book",
+   "desc": "Craft shapelessly from a Book plus an iron sword, pickaxe, axe, and shovel; lets you build and cast Tier 1 spells using mana."
+  },
+  {
+   "id": "ars_nouveau:scribes_table",
+   "title": "Scribe's Table",
+   "desc": "Craft from 2 Archwood Logs, 3 Archwood Slabs, and 2 Gold Nuggets; combine it with experience and the listed items to learn new glyphs for your book."
+  },
+  {
+   "id": "ars_nouveau:imbuement_chamber",
+   "title": "Imbuement Chamber",
+   "desc": "Craft from 6 Archwood Planks and 2 Gold Ingots; it slowly infuses items placed inside with Source to transmute them."
+  },
+  {
+   "id": "ars_nouveau:source_gem",
+   "title": "Source Gem",
+   "desc": "Place an Amethyst Shard or Lapis Lazuli in the Imbuement Chamber (500 Source each); the core crafting gem for nearly all Ars devices."
+  },
+  {
+   "id": "ars_nouveau:source_jar",
+   "title": "Source Jar",
+   "desc": "Craft from 6 Archwood Slabs and 2 Glass; stores the Source that the Imbuement Chamber and Enchanting Apparatus draw from."
+  },
+  {
+   "id": "ars_nouveau:agronomic_sourcelink",
+   "title": "Agronomic Sourcelink",
+   "desc": "Craft from 2 Source Gems, 2 Gold Ingots, and Wheat; generates Source from crops growing nearby and pipes it into adjacent Source Jars."
+  },
+  {
+   "id": "ars_nouveau:arcane_pedestal",
+   "title": "Arcane Pedestal",
+   "desc": "Craft from 4 Sourcestone, 4 Gold Nuggets, and a Source Gem; up to eight of these hold the ingredients for apparatus crafting."
+  },
+  {
+   "id": "ars_nouveau:arcane_core",
+   "title": "Arcane Core",
+   "desc": "Craft from 6 Sourcestone, 2 Gold Ingots, and a Source Gem; sits directly under the Enchanting Apparatus to complete the multiblock."
+  },
+  {
+   "id": "ars_nouveau:enchanting_apparatus",
+   "title": "Enchanting Apparatus",
+   "desc": "Craft from 2 Sourcestone, 4 Gold Nuggets, 2 Gold Ingots, and a Diamond; placed on an Arcane Core with pedestals around it, it crafts the mod's advanced gear."
+  },
+  {
+   "id": "ars_nouveau:magebloom_crop",
+   "title": "Magebloom Seed",
+   "desc": "Your first apparatus craft: any seed as the reagent with 4 Source Gems on pedestals; grow it into Magebloom flowers."
+  },
+  {
+   "id": "ars_nouveau:magebloom_fiber",
+   "title": "Magebloom Fiber",
+   "desc": "Craft a harvested Magebloom flower into fiber; the textile every piece of mage armor is made from."
+  },
+  {
+   "id": "ars_nouveau:sorcerer_robes",
+   "title": "Sorceror's Wrap",
+   "desc": "Apparatus craft: a Golden Chestplate surrounded by 4 Magebloom Fiber; mage armor self-repairs from your mana pool and boosts mana regen (Arcanist and Battlemage sets use iron and diamond armor)."
+  },
+  {
+   "id": "ars_nouveau:dominion_wand",
+   "title": "Dominion Wand",
+   "desc": "Apparatus craft: a Stick with 2 Source Gems and a Gold Ingot on pedestals; binds summons like Starbuncles to the inventories they should serve."
+  },
+  {
+   "id": "ars_nouveau:starbuncle_charm",
+   "title": "Starbuncle Charm",
+   "desc": "Hand a wild Starbuncle a Gold Nugget to receive its Token, then apparatus-craft the token with 4 Gold Ingots; the summoned Starbuncle moves items between inventories."
+  },
+  {
+   "id": "ars_nouveau:apprentice_spell_book",
+   "title": "Apprentice Spell Book",
+   "desc": "Upgrade the Novice book at the Enchanting Apparatus with Obsidian, 3 Diamonds, 2 Quartz Blocks, and 2 Blaze Rods; unlocks Tier 2 glyphs and more spell slots."
+  },
+  {
+   "id": "ars_nouveau:ritual_brazier",
+   "title": "Ritual Brazier",
+   "desc": "Craft shapelessly from an Arcane Pedestal, a Source Gem Block, and 3 Gold Ingots; place ritual tablets in it to perform the mod's rituals."
+  },
+  {
+   "id": "ars_nouveau:ritual_wilden_summon",
+   "title": "Ritual of Summon Wilden",
+   "desc": "Craft the tablet from a Purple Archwood Log, 3 Wilden drops (horn, spike, or wing), and a Lapis Block; run it in the brazier augmented with a Wilden Spike, Horn, and Wing to call the Chimera."
+  },
+  {
+   "id": "kill:ars_nouveau:wilden_boss",
+   "title": "Wilden Chimera",
+   "desc": "Defeat the boss summoned by the augmented Summon Wilden ritual; it resists cold damage and warrants Tier 2 spells and mage armor."
+  },
+  {
+   "id": "ars_nouveau:wilden_tribute",
+   "title": "Wilden Tribute",
+   "desc": "Dropped by the Wilden Chimera; the gating ingredient for the final spell book upgrade."
+  },
+  {
+   "id": "ars_nouveau:archmage_spell_book",
+   "title": "Archmage Spell Book",
+   "desc": "Upgrade the Apprentice book at the apparatus with a Nether Star, Wilden Tribute, 2 Emeralds, 3 Ender Pearls, and a Totem of Undying; unlocks Tier 3 glyphs."
+  },
+  {
+   "id": "ars_nouveau:alteration_table",
+   "title": "Alteration Table",
+   "desc": "Craft from a Scribe's Table and 4 Magebloom Fiber; inscribes Threads (perks) onto your mage armor's thread slots."
+  },
+  {
+   "id": "ars_nouveau:ritual_flight",
+   "title": "Ritual of Flight",
+   "desc": "Craft the tablet from a Purple Archwood Log, 3 Wilden Wings, 2 Diamonds, and an Ender Pearl; the running ritual grants nearby players renewable creative flight, paid for in Source."
+  }
+ ],
+ "notes": "All item ids set-checked against models/item stems intersected with item./block. lang keys (327 ids). Descriptions derived from data/ars_nouveau/recipes/*.json and the bundled Worn Notebook Patchouli book. wilden_boss entity verified in en_us.json (entity.ars_nouveau.wilden_boss = Wilden Chimera). This 1.20.1 version (4.12.x) uses the newer armor system: Sorceror/Arcanist/Battlemage sets replace the old Novice/Apprentice/Archmage robes, tiered up via apparatus upgrade recipes (upgrade_1/upgrade_2). apprentice/archmage books are ars_nouveau:book_upgrade apparatus recipes, not crafting-table recipes. magebloom_crop is the item id of the Magebloom Seed. No ids were dropped."
+}

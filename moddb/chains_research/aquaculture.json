@@ -1,0 +1,242 @@
+{
+ "mod": "aquaculture",
+ "verified_against": "Aquaculture-1.20.1-2.5.7.jar",
+ "item_count_in_jar": 129,
+ "chain": [
+  {
+   "id": "aquaculture:worm",
+   "title": "Turn Up Some Bait",
+   "desc": "Worms go in your rod's bait slot and make fish bite sooner. They are consumed as you fish, so you want a running supply rather than a single one."
+  },
+  {
+   "id": "aquaculture:worm_farm",
+   "title": "Stop Digging For Worms",
+   "desc": "Feed it compostable scraps and it breeds worms for you. Build one early; it ends the tedious part of the mod permanently."
+  },
+  {
+   "id": "aquaculture:iron_fishing_rod",
+   "title": "A Rod That Takes Attachments",
+   "desc": "The mod's own rod, and the thing every other item plugs into: it has slots for a hook, bait, a fishing line and a bobber, which a vanilla rod does not."
+  },
+  {
+   "id": "aquaculture:iron_hook",
+   "title": "The First Hook",
+   "desc": "Fitted to your rod it gives a 20% chance a cast costs no durability. It is also the blank that every fancier hook is crafted on top of, so make several."
+  },
+  {
+   "id": "aquaculture:wooden_fillet_knife",
+   "title": "Start Filleting",
+   "desc": "Put a fish and a knife together in the crafting grid to cut the fish into fillets. Without a knife the mod's thirty-odd fish species are mostly dead weight."
+  },
+  {
+   "id": "aquaculture:fish_fillet_raw",
+   "title": "Meat From The Catch",
+   "desc": "The universal output of filleting: every species becomes the same raw fillet, so one food chain covers your whole catch."
+  },
+  {
+   "id": "aquaculture:fish_fillet_cooked",
+   "title": "Cook The Fillets",
+   "desc": "Furnace, smoker or campfire turns raw fillets into a proper meal. This is the food you will actually live on while fishing."
+  },
+  {
+   "id": "aquaculture:iron_fillet_knife",
+   "title": "A Knife That Survives The Day",
+   "desc": "The wooden knife dies after a handful of fish. Iron lasts long enough to process a full trip's catch in one sitting."
+  },
+  {
+   "id": "aquaculture:sushi",
+   "title": "Sushi",
+   "desc": "A raw fillet wrapped in seagrass. Worth knowing because it needs no fuel, so you can eat on a boat far from any furnace."
+  },
+  {
+   "id": "aquaculture:tackle_box",
+   "title": "Somewhere To Keep The Tackle",
+   "desc": "A block that stores whole rods together with spare hooks, bait, lines and bobbers, and is where you fit attachments onto a rod. One is enough."
+  },
+  {
+   "id": "aquaculture:fishing_line",
+   "title": "Dress The Line",
+   "desc": "A dyeable attachment for the rod's line slot. It is cosmetic, so one is plenty unless you want a second colour."
+  },
+  {
+   "id": "aquaculture:bobber",
+   "title": "A Bobber Of Your Own",
+   "desc": "The other dyeable attachment, sitting in the bobber slot. Like the line it changes how your cast looks, not how it fishes."
+  },
+  {
+   "id": "aquaculture:gold_hook",
+   "title": "Lucky Hook",
+   "desc": "Carries a luck modifier that biases what you reel in toward treasure. This is the hook to wear when you are hunting for boxes rather than food."
+  },
+  {
+   "id": "aquaculture:double_hook",
+   "title": "Two At A Time",
+   "desc": "Two iron hooks welded together give a chance to land two catches from one cast. The best throughput hook before diamond."
+  },
+  {
+   "id": "aquaculture:treasure_chest",
+   "title": "Something Heavy On The Line",
+   "desc": "The rarest thing in the junk pool - one weight against a Box's six and a Lockbox's four. Open it for an iron ingot, gold, a diamond or an emerald, so it is the richest of the three containers you can fish up."
+  },
+  {
+   "id": "aquaculture:diamond_fishing_rod",
+   "title": "The Rod That Lasts",
+   "desc": "The best craftable rod short of neptunium, and the one worth putting Luck of the Sea and Lure on since you will keep it for good."
+  },
+  {
+   "id": "aquaculture:diamond_hook",
+   "title": "Super Durable",
+   "desc": "Halves your rod's wear: 50% of casts cost no durability. Pair it with the diamond rod and you can fish for hours without repairs."
+  },
+  {
+   "id": "aquaculture:neptunes_bounty",
+   "title": "The Sea's Rarest Catch",
+   "desc": "A very rare fishing treasure. Place it and open it: alongside kelp and driftwood it holds neptunium ingots or a finished neptunium tool. Everything below depends on farming these."
+  },
+  {
+   "id": "aquaculture:neptunium_ingot",
+   "title": "Metal From The Deep",
+   "desc": "There is no neptunium ore and nothing smelts into it. It comes out of Neptune's Bounty, or as single Neptunium Nuggets straight off the line - nine nuggets to an ingot. Expect a long grind for a full set."
+  },
+  {
+   "id": "aquaculture:neptunium_fishing_rod",
+   "title": "Neptune's Song",
+   "desc": "Fish are more likely to bite while you hold it, which also means faster hunting for more Bounties. The first neptunium item worth making."
+  },
+  {
+   "id": "aquaculture:neptunium_fillet_knife",
+   "title": "Neptune's Feast",
+   "desc": "Cuts more fillets out of each fish than any other knife. If you are feeding a base from the water, this is the piece that pays for itself."
+  },
+  {
+   "id": "aquaculture:neptunium_chestplate",
+   "title": "Breathe Down There",
+   "desc": "Lets you breathe underwater with no air bar at all. With the helmet, leggings and boots you also get clear vision, weightlessness and swim speed."
+  },
+  {
+   "id": "aquaculture:nether_star_hook",
+   "title": "The Last Hook",
+   "desc": "A nether star fused onto a diamond hook: 50% durability saving plus a luck bonus. The endgame hook, and the reason to keep a beacon's worth of stars."
+  },
+  {
+   "id": "aquaculture:oak_fish_mount",
+   "title": "Mount The Big One",
+   "desc": "A wall plaque that displays a single caught fish. Pure trophy, but it is the only place a fish's weight is worth showing off."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "aquaculture:iron_hook",
+   "note": "The remaining craftable hooks, each a different modifier fitted into the same rod slot. Heavy casts shorter, Light casts further, Redstone widens the reel-in window, Note plays an alert when a fish approaches.",
+   "members": [
+    "aquaculture:heavy_hook",
+    "aquaculture:light_hook",
+    "aquaculture:redstone_hook",
+    "aquaculture:note_hook"
+   ]
+  },
+  {
+   "hub": "aquaculture:iron_fishing_rod",
+   "note": "Fish species. Which ones bite depends on biome; all of them fillet into the same raw fillet.",
+   "members": [
+    "aquaculture:perch",
+    "aquaculture:bluegill",
+    "aquaculture:minnow",
+    "aquaculture:carp",
+    "aquaculture:catfish",
+    "aquaculture:brown_trout",
+    "aquaculture:rainbow_trout",
+    "aquaculture:smallmouth_bass",
+    "aquaculture:muskellunge",
+    "aquaculture:gar",
+    "aquaculture:blackfish",
+    "aquaculture:pollock",
+    "aquaculture:atlantic_cod",
+    "aquaculture:atlantic_herring",
+    "aquaculture:pacific_halibut",
+    "aquaculture:atlantic_halibut",
+    "aquaculture:pink_salmon",
+    "aquaculture:bayad",
+    "aquaculture:boulti",
+    "aquaculture:capitaine",
+    "aquaculture:synodontis",
+    "aquaculture:arapaima",
+    "aquaculture:piranha",
+    "aquaculture:tambaqui",
+    "aquaculture:red_grouper",
+    "aquaculture:tuna",
+    "aquaculture:jellyfish",
+    "aquaculture:brown_shrooma",
+    "aquaculture:red_shrooma",
+    "aquaculture:goldfish",
+    "aquaculture:leech",
+    "aquaculture:box_turtle",
+    "aquaculture:arrau_turtle",
+    "aquaculture:starshell_turtle"
+   ]
+  },
+  {
+   "hub": "aquaculture:neptunium_ingot",
+   "note": "The rest of the neptunium set, all crafted from ingots pulled out of Neptune's Bounty.",
+   "members": [
+    "aquaculture:neptunium_helmet",
+    "aquaculture:neptunium_leggings",
+    "aquaculture:neptunium_boots",
+    "aquaculture:neptunium_pickaxe",
+    "aquaculture:neptunium_axe",
+    "aquaculture:neptunium_shovel",
+    "aquaculture:neptunium_hoe",
+    "aquaculture:neptunium_sword",
+    "aquaculture:neptunium_bow",
+    "aquaculture:neptunium_block"
+   ]
+  },
+  {
+   "hub": "aquaculture:oak_fish_mount",
+   "note": "Wood variants of the fish mount. Decoration only.",
+   "members": [
+    "aquaculture:spruce_fish_mount",
+    "aquaculture:birch_fish_mount",
+    "aquaculture:jungle_fish_mount",
+    "aquaculture:acacia_fish_mount",
+    "aquaculture:dark_oak_fish_mount"
+   ]
+  },
+  {
+   "hub": "aquaculture:iron_fishing_rod",
+   "note": "Fish buckets. One per water-dwelling species, made by using a bucket on a live fish.",
+   "members": [
+    "aquaculture:atlantic_cod_bucket",
+    "aquaculture:blackfish_bucket",
+    "aquaculture:pacific_halibut_bucket",
+    "aquaculture:atlantic_halibut_bucket",
+    "aquaculture:atlantic_herring_bucket",
+    "aquaculture:pink_salmon_bucket",
+    "aquaculture:pollock_bucket",
+    "aquaculture:rainbow_trout_bucket",
+    "aquaculture:bayad_bucket",
+    "aquaculture:boulti_bucket",
+    "aquaculture:capitaine_bucket",
+    "aquaculture:synodontis_bucket",
+    "aquaculture:smallmouth_bass_bucket",
+    "aquaculture:bluegill_bucket",
+    "aquaculture:brown_trout_bucket",
+    "aquaculture:carp_bucket",
+    "aquaculture:catfish_bucket",
+    "aquaculture:gar_bucket",
+    "aquaculture:minnow_bucket",
+    "aquaculture:muskellunge_bucket",
+    "aquaculture:perch_bucket",
+    "aquaculture:arapaima_bucket",
+    "aquaculture:piranha_bucket",
+    "aquaculture:tambaqui_bucket",
+    "aquaculture:brown_shrooma_bucket",
+    "aquaculture:red_shrooma_bucket",
+    "aquaculture:jellyfish_bucket",
+    "aquaculture:red_grouper_bucket",
+    "aquaculture:tuna_bucket"
+   ]
+  }
+ ],
+ "notes": "VERIFIED against the jar named above. Every id here is a key in assets/aquaculture/lang/en_us.json AND has a model in assets/aquaculture/models/item/.\n\nORDER SOURCE: data/aquaculture/recipes/ plus data/aquaculture/loot_tables/. The mod ships only recipe-unlock advancements (data/aquaculture/advancements/recipes/, 68 of them), so there is no author-authored progression tree to copy; recipes and loot are the whole evidence base.\n\nNEPTUNIUM IS LOOT, NOT A CRAFT. The recipes folder contains neptunium_ingot_from_nuggets, neptunium_ingot_from_neptunium_block and neptunium_nugget only - all re-packing recipes, plus neptunes_bounty.json which crafts eight ingots BACK into a Bounty (a sink, never a source). There are exactly two generative sources, both in data/aquaculture/loot_tables/gameplay/fishing/neptunium.json, whose single pool has three equally weighted entries: a Neptune's Bounty pre-filled from box/neptunes_bounty.json, a straight aquaculture:neptunium_nugget, and a fallthrough to minecraft:gameplay/fishing/treasure (the file's own comments call these '33% chance' each). box/neptunes_bounty.json then rolls one junk entry plus either 1-4 neptunium ingots or one finished neptunium tool/armour/rod/knife. So the nugget route is real: nine nuggets make an ingot. Never write a quest implying neptunium is mined or smelted, and never say the Bounty is the only source.\n\nTREASURE CHEST IS THE RARE ONE. data/aquaculture/loot_tables/gameplay/fishing/junk.json weights: driftwood 10, tin_can 10, seagrass 10, kelp 9, box 6, message_in_a_bottle 5, fish_bones 4, lockbox 4, goldfish 4, treasure_chest 1. An earlier draft called the Treasure Chest 'the common tier' - it is the rarest entry in the pool and the richest of the three containers (box/treasure_chest.json is pure iron/gold/diamond/emerald, weights 40/30/15/15).\n\nFISHING LINE AND BOBBER ARE COSMETIC. com/teammetallurgy/aquaculture/item/DyeableItem.class exists, TackleBoxBlockEntity references DyeableLeatherItem and holds FISHING_LINE and BOBBER slots. A previous version of this chain claimed the fishing line 'adds durability to your cast' - it does not. Durability savings come from hooks only (Hook.durabilityChance in the api/fishing package).\n\nROD TIERS USE VANILLA Tiers - iron, gold and diamond differ in durability alone, and gold is WORSE than iron. The gold rod is deliberately absent from the chain; an earlier draft claimed it granted a luck bonus, which is wrong. Only the neptunium rod has a special property, and en_us.json states it plainly: 'Fish are more likely to bite'.\n\nHOOK AND NEPTUNIUM EFFECTS in the descs are taken verbatim from the tooltip block of en_us.json (aquaculture.<item>.tooltip.title / .desc), which spells out every effect. Hook.class confirms the backing fields: luckModifier, durabilityChance, doubleCatchChance, weight, fluids.\n\nSIX HOOKS ARE UNOBTAINABLE FROM THIS JAR ALONE: obsidian_hook, double_obsidian_hook, obsidian_note_hook, glowstone_hook, quartz_hook and soul_sand_hook have lang keys, item models and entity textures but NO recipe in data/aquaculture/recipes/, and the nether and lava fishing tables that would supply them (gameplay/fishing/nether/*, gameplay/fishing/lava/*) ship EMPTY. They are excluded from both the chain and the hook collection. Do not generate quests for them unless the pack adds a datapack that fills those tables.\n\nWORMS have no recipe. They come from working grass and dirt, and from the Worm Farm, which eats compostables - the config line 'Should fish be added as compostables for the composter/worm farm?' confirms the farm's input.\n\nFILLETING is data/aquaculture/recipes/fish_fillet.json, type aquaculture:crafting_special_fish_fillet: a fish plus a fillet knife in the crafting grid, not a shaped pattern. Verbs matter here - it is 'cut', not 'craft'.\n\nDELIBERATELY LEFT OUT OF THE CHAIN: turtle_soup and the three turtles (fine but marginal), neptunium_block (storage), gold and diamond fillet knives (the ladder reads better as wooden -> iron -> neptunium), message_in_a_bottle, algae, driftwood, tin_can and fish_bones (all junk-pool filler), and aquaculture:farmland, which is a technical block that drops plain dirt."
+}

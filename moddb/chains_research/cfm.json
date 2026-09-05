@@ -1,0 +1,319 @@
+{
+ "mod": "cfm",
+ "verified_against": "cfm-forge-1.20.1-7.0.0-pre36.jar",
+ "item_count_in_jar": 452,
+ "chain": [
+  {
+   "id": "cfm:oak_chair",
+   "title": "Something To Sit On",
+   "desc": "One log and three planks. The chair is the mod's own catalogue icon and the first thing anyone builds, because it is the first furniture in Minecraft you can actually sit in."
+  },
+  {
+   "id": "cfm:oak_table",
+   "title": "Something To Sit At",
+   "desc": "Log and planks again. Tables connect to their neighbours, so the recipe is trivial but the block is the one that makes a room read as a room."
+  },
+  {
+   "id": "cfm:oak_crate",
+   "title": "Storage That Stacks",
+   "desc": "Crates are the mod's storage block and stack visually into a wall of cargo. Same log-and-planks shape as the rest of the wood tier."
+  },
+  {
+   "id": "cfm:oak_cabinet",
+   "title": "Doors That Open",
+   "desc": "The cabinet is a wall-mounted container with a working door animation. It is where the mod stops being decoration and starts being furniture."
+  },
+  {
+   "id": "cfm:oak_desk",
+   "title": "A Desk To Work At",
+   "desc": "Desks connect end to end and take a desk cabinet underneath. Two blocks that only make sense together."
+  },
+  {
+   "id": "cfm:oak_desk_cabinet",
+   "title": "Drawers Under The Desk",
+   "desc": "The other half of the desk. Storage that slides out, and the reason the desk is worth placing at all."
+  },
+  {
+   "id": "cfm:oak_bedside_cabinet",
+   "title": "Beside The Bed",
+   "desc": "A small container to stand next to a vanilla bed. The mod is at its best filling gaps vanilla left, and this is the clearest example."
+  },
+  {
+   "id": "cfm:oak_coffee_table",
+   "title": "Low And Flat",
+   "desc": "Coffee tables sit lower than tables and are meant to go in front of a sofa. Log and planks."
+  },
+  {
+   "id": "cfm:oak_park_bench",
+   "title": "Outside Seating",
+   "desc": "Benches connect along their length like sofas do. This is the outdoor half of the seating set."
+  },
+  {
+   "id": "cfm:oak_blinds",
+   "title": "Cover The Windows",
+   "desc": "Wooden rods over a log. Blinds open and close and hang above a window frame, which is a thing vanilla has never had a block for."
+  },
+  {
+   "id": "cfm:oak_upgraded_fence",
+   "title": "A Better Fence",
+   "desc": "Wooden rods and a log. The upgraded fence is a full-height fence rather than vanilla's waist-high one, and the mail box is built on top of it."
+  },
+  {
+   "id": "cfm:oak_upgraded_gate",
+   "title": "A Gate To Match",
+   "desc": "A vanilla fence gate rebuilt around a log. Pairs with the upgraded fence so the fence line does not step down at the gate."
+  },
+  {
+   "id": "cfm:oak_mail_box",
+   "title": "Post To Your Door",
+   "desc": "An upgraded fence with a wooden chest on it. The mail box is a real container and the receiving half of the mod's postal system."
+  },
+  {
+   "id": "cfm:post_box",
+   "title": "Post From Your Door",
+   "desc": "Iron and a blue shulker box. The post box is the sending half, and the shulker shell requirement makes it the one genuinely late-game furniture block in the mod."
+  },
+  {
+   "id": "cfm:white_sofa",
+   "title": "The Sofa",
+   "desc": "Logs and wool. Sofas connect and corner automatically, and one of the sixteen colours is the whole reason people install furniture mods."
+  },
+  {
+   "id": "cfm:oak_kitchen_counter",
+   "title": "Building A Kitchen",
+   "desc": "Log and planks. Counters connect flush along a wall and are the base every other kitchen block sits between."
+  },
+  {
+   "id": "cfm:oak_kitchen_drawer",
+   "title": "Counters That Hold Things",
+   "desc": "A counter with a wooden chest built in. The drawer is the working container in the kitchen row."
+  },
+  {
+   "id": "cfm:oak_kitchen_sink_light",
+   "title": "Running Water",
+   "desc": "Iron, a bucket, white concrete and planks. The sink holds and dispenses water, which makes it one of the few CFM blocks with a mechanic rather than a shape."
+  },
+  {
+   "id": "cfm:white_cooler",
+   "title": "Cold Storage, Portable",
+   "desc": "A wooden chest, concrete and terracotta. The cooler is a small container that keeps drinks and comes in all sixteen dye colours."
+  },
+  {
+   "id": "cfm:fridge_light",
+   "title": "Cold Storage, Fixed",
+   "desc": "A wooden chest, iron and white concrete. The fridge is two blocks tall with a freezer compartment above and is the largest container the mod adds."
+  },
+  {
+   "id": "cfm:white_grill",
+   "title": "Cooking Outside",
+   "desc": "Iron, iron bars and terracotta. The grill cooks food from a charcoal fuel slot, so it is a functional furnace in a garden shape."
+  },
+  {
+   "id": "cfm:spatula",
+   "title": "Turn The Meat",
+   "desc": "Iron, iron bars and black wool. The spatula is the mod's only tool and exists purely to flip food on the grill."
+  },
+  {
+   "id": "cfm:white_picket_fence",
+   "title": "The White Picket Fence",
+   "desc": "Wooden rods and white concrete. Every other colour is this fence plus a dye, which is why white is the one the recipe graph puts first."
+  },
+  {
+   "id": "cfm:white_picket_gate",
+   "title": "And The Gate",
+   "desc": "A vanilla fence gate and white concrete. Same dye-from-white rule as the fence itself."
+  },
+  {
+   "id": "cfm:oak_hedge",
+   "title": "Green Walls",
+   "desc": "Oak leaves alone. Hedges are leaf blocks that connect like fences, and there is an azalea and a flowering azalea version as well."
+  },
+  {
+   "id": "cfm:door_mat",
+   "title": "Wipe Your Feet",
+   "desc": "Four wheat. The cheapest block in the mod and the one that finishes a doorway."
+  },
+  {
+   "id": "cfm:rock_path",
+   "title": "A Path To The Door",
+   "desc": "Andesite and stone. A flat path block that sits below full height so it does not read as a floor."
+  },
+  {
+   "id": "cfm:trampoline",
+   "title": "One Item, Sixteen Colours",
+   "desc": "Iron, a slimeball and any wool. Sixteen separate recipes all produce the single id cfm:trampoline - the colour is stored on the block, not in a separate item."
+  },
+  {
+   "id": "cfm:diving_board",
+   "title": "Off The Deep End",
+   "desc": "A slimeball and two shades of concrete. The diving board launches you and is the last thing you build once the house is finished."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "cfm:oak_chair",
+   "members": [
+    "cfm:spruce_chair",
+    "cfm:birch_chair",
+    "cfm:jungle_chair",
+    "cfm:acacia_chair",
+    "cfm:dark_oak_chair",
+    "cfm:mangrove_chair",
+    "cfm:crimson_chair",
+    "cfm:warped_chair",
+    "cfm:stripped_oak_chair",
+    "cfm:stripped_spruce_chair",
+    "cfm:stripped_birch_chair"
+   ]
+  },
+  {
+   "hub": "cfm:white_sofa",
+   "members": [
+    "cfm:orange_sofa",
+    "cfm:magenta_sofa",
+    "cfm:light_blue_sofa",
+    "cfm:yellow_sofa",
+    "cfm:lime_sofa",
+    "cfm:pink_sofa",
+    "cfm:gray_sofa",
+    "cfm:light_gray_sofa",
+    "cfm:cyan_sofa",
+    "cfm:purple_sofa",
+    "cfm:blue_sofa",
+    "cfm:brown_sofa",
+    "cfm:green_sofa",
+    "cfm:black_sofa"
+   ]
+  },
+  {
+   "hub": "cfm:oak_table",
+   "members": [
+    "cfm:spruce_table",
+    "cfm:birch_table",
+    "cfm:jungle_table",
+    "cfm:acacia_table",
+    "cfm:dark_oak_table",
+    "cfm:mangrove_table",
+    "cfm:crimson_table",
+    "cfm:warped_table",
+    "cfm:stripped_oak_table",
+    "cfm:stripped_dark_oak_table"
+   ]
+  },
+  {
+   "hub": "cfm:white_cooler",
+   "members": [
+    "cfm:orange_cooler",
+    "cfm:magenta_cooler",
+    "cfm:light_blue_cooler",
+    "cfm:yellow_cooler",
+    "cfm:lime_cooler",
+    "cfm:pink_cooler",
+    "cfm:gray_cooler",
+    "cfm:cyan_cooler",
+    "cfm:purple_cooler",
+    "cfm:blue_cooler",
+    "cfm:green_cooler",
+    "cfm:red_cooler",
+    "cfm:black_cooler"
+   ]
+  },
+  {
+   "hub": "cfm:white_grill",
+   "members": [
+    "cfm:orange_grill",
+    "cfm:magenta_grill",
+    "cfm:light_blue_grill",
+    "cfm:yellow_grill",
+    "cfm:lime_grill",
+    "cfm:pink_grill",
+    "cfm:gray_grill",
+    "cfm:cyan_grill",
+    "cfm:purple_grill",
+    "cfm:blue_grill",
+    "cfm:green_grill",
+    "cfm:red_grill",
+    "cfm:black_grill"
+   ]
+  },
+  {
+   "hub": "cfm:oak_kitchen_counter",
+   "members": [
+    "cfm:spruce_kitchen_counter",
+    "cfm:birch_kitchen_counter",
+    "cfm:jungle_kitchen_counter",
+    "cfm:acacia_kitchen_counter",
+    "cfm:dark_oak_kitchen_counter",
+    "cfm:mangrove_kitchen_counter",
+    "cfm:crimson_kitchen_counter",
+    "cfm:warped_kitchen_counter",
+    "cfm:white_kitchen_counter",
+    "cfm:black_kitchen_counter",
+    "cfm:red_kitchen_counter",
+    "cfm:blue_kitchen_counter"
+   ]
+  },
+  {
+   "hub": "cfm:oak_mail_box",
+   "members": [
+    "cfm:spruce_mail_box",
+    "cfm:birch_mail_box",
+    "cfm:jungle_mail_box",
+    "cfm:acacia_mail_box",
+    "cfm:dark_oak_mail_box",
+    "cfm:mangrove_mail_box",
+    "cfm:crimson_mail_box",
+    "cfm:warped_mail_box",
+    "cfm:stripped_oak_mail_box",
+    "cfm:stripped_birch_mail_box"
+   ]
+  },
+  {
+   "hub": "cfm:white_picket_fence",
+   "members": [
+    "cfm:orange_picket_fence",
+    "cfm:magenta_picket_fence",
+    "cfm:light_blue_picket_fence",
+    "cfm:yellow_picket_fence",
+    "cfm:lime_picket_fence",
+    "cfm:pink_picket_fence",
+    "cfm:gray_picket_fence",
+    "cfm:cyan_picket_fence",
+    "cfm:purple_picket_fence",
+    "cfm:blue_picket_fence",
+    "cfm:green_picket_fence",
+    "cfm:red_picket_fence",
+    "cfm:black_picket_fence"
+   ]
+  },
+  {
+   "hub": "cfm:oak_blinds",
+   "members": [
+    "cfm:spruce_blinds",
+    "cfm:birch_blinds",
+    "cfm:jungle_blinds",
+    "cfm:acacia_blinds",
+    "cfm:dark_oak_blinds",
+    "cfm:mangrove_blinds",
+    "cfm:crimson_blinds",
+    "cfm:warped_blinds",
+    "cfm:stripped_oak_blinds",
+    "cfm:stripped_spruce_blinds"
+   ]
+  },
+  {
+   "hub": "cfm:oak_hedge",
+   "members": [
+    "cfm:spruce_hedge",
+    "cfm:birch_hedge",
+    "cfm:jungle_hedge",
+    "cfm:acacia_hedge",
+    "cfm:dark_oak_hedge",
+    "cfm:mangrove_hedge",
+    "cfm:azalea_hedge",
+    "cfm:flowering_azalea_hedge"
+   ]
+  }
+ ],
+ "notes": "LOADER: META-INF/mods.toml declares modId cfm, version 7.0.0-pre36, minecraft [1.20.1,1.21) and forge [47.0.14,) - a real 1.20.1 Forge build, and the ONLY 1.20.1 Forge file CurseForge lists for this project. cfm is NOT on Modrinth under any slug; the project is curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod (id 55438, listed as 'MrCrayfish's Furniture Mod (Legacy)', 120.4M downloads), and the file had to be pulled through the CurseForge API. Do not confuse it with 'MrCrayfish's Furniture Mod: Refurbished', which is a different project under the modid refurbished_furniture. VERIFICATION, TWO PASSES: pass A took the 456 assets/cfm/models/item stems INTERSECT the item./block. lang keys and gave 451. Pass B rebuilt the universe independently from recipe results, loot-table entry names, blockstates and lang keys and gave 474. Every one of the 23 differences was resolved. WIDENING ACCEPTED, 1 id with hard proof: cfm:trampoline. It has an item model, a blockstate, a block loot table and SIXTEEN separate crafting_shaped recipes (iron + slimeball + each of the sixteen wools) that all produce the same result id cfm:trampoline - but it has no block.cfm.trampoline lang key. Instead the lang file carries sixteen keys block.cfm.white_trampoline through block.cfm.black_trampoline. This is the runtime-composed-name case: ONE registered block whose display name is built from the dye colour stored on it. A sixteen-member trampoline colour wheel would therefore be sixteen copies of the same id and is not written. Final id count 452. WIDENING REJECTED: hedge, upgraded_fence, upgraded_gate and stripped_upgraded_gate are model-only with zero references anywhere in data/ - they are the parent templates the per-wood variants inherit from, not items. freezer_dark and freezer_light have blockstates and block. lang keys but no item model and no recipe; they are the upper half of the two-tall fridge, placed by the fridge item, not obtainable separately. OBTAINABILITY: 451 of the 451 pass-A ids are the result of at least one datapack recipe, with EXACTLY ONE exception - cfm:rainbow_sofa. It has an item model, a blockstate, six block models and a block loot table that drops itself, but no recipe anywhere in the jar and no loot table that yields it. It is the mod's creative-only easter egg. DROPPED, and it is not in the chain or any wheel. SHAPE OF THE MOD, said plainly: 451 ids collapse to 34 distinct furniture concepts. Twelve of them exist once per wood (18 variants each - oak, spruce, birch, jungle, acacia, dark_oak, mangrove, crimson and warped, plus a stripped_ version of every one of those nine; there is NO cherry and NO bamboo in this build, which is worth knowing because assuming the full 1.20 wood set produces ten dead ids), six exist once per dye colour (16 each), kitchen_counter and kitchen_drawer exist in BOTH the 18 wood and the 16 colour sets, and only ten items - azalea_hedge, flowering_azalea_hedge, diving_board, door_mat, fridge_dark, fridge_light, post_box, rainbow_sofa, rock_path, spatula - are one-of-a-kind. That is why the chain is 29 steps and not longer: there are only about thirty genuinely different things here, and the rest is variant families, which is exactly what the wheels are for. RECIPE GRAPH, and the only real internal dependencies in the whole mod: cfm:oak_mail_box requires cfm:oak_upgraded_fence (so the fence must precede the mail box, and it does); every coloured picket fence and picket gate is cfm:white_picket_fence or cfm:white_picket_gate plus a forge:dyes/<colour> tag, which is why white leads that family; and cfm:post_box needs a minecraft:blue_shulker_box, making it the only block in the mod gated behind the End. Everything else is a flat log-plus-planks or concrete-plus-terracotta craft with no cross-dependency, so the chain order is by build sequence (seating, then storage, then the kitchen row, then the garden) rather than by tech tier. CONSENSUS: moddb.json lists 10 cfm ids from 3 packs - cyan_kitchen_drawer, oak_kitchen_sink_light, oak_cabinet, cyan_cooler, spatula, oak_mail_box, trampoline, post_box, cyan_grill, fridge_light. All ten resolve in this jar. The pack ordering puts kitchen_drawer first and fridge_light last, which agrees with this chain's kitchen-then-appliance progression; the only difference is that packs happened to quest the cyan variant where this file uses the base white or oak variant that the recipe graph actually roots the family on. No conflict. DESIRABILITY: nothing was dropped for shape - cfm has no slabs, stairs, walls, ores or nuggets at all."
+}

@@ -1,0 +1,182 @@
+{
+ "mod": "toughasnails",
+ "jar": "ToughAsNails-forge-1.20.1-9.2.0.171.jar",
+ "ids_in_jar": 70,
+ "videos": [
+  {
+   "id": "9HvX0BvCFnQ",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 3888
+  },
+  {
+   "id": "Hr9RcwJuMkU",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 4171
+  },
+  {
+   "id": "cs-ZepEcn1g",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 4844
+  },
+  {
+   "id": "POIxeimdB78",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 9688
+  },
+  {
+   "id": "fsVvrv4_n_0",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 2799
+  },
+  {
+   "id": "HvyVtHrHQcs",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 2896
+  }
+ ],
+ "items": {
+  "toughasnails:rain_collector": {
+   "mentions": 6,
+   "videos": 4,
+   "first_at": 0.4442,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toughasnails:purified_water_bottle": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.2965,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toughasnails:thermometer": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.1044,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toughasnails:temperature_gauge": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8159,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toughasnails:thermoregulator": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7441,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toughasnails:glow_berry_juice": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2212,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toughasnails:water_purifier": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.594,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toughasnails:cactus_juice": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2142,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toughasnails:apple_juice": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2109,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "note": "Banked corpus: 6 of 8 videos transcribed over 1500 chars, but fsVvrv4_n_0 is incoherent (non-native rambling, no usable facts) - facts below come from 9HvX0BvCFnQ (1.20.1 walkthrough), Hr9RcwJuMkU, HvyVtHrHQcs, cs-ZepEcn1g (2020, 1.12-1.15 era - mechanics kept, old item names flagged), POIxeimdB78 (mostly install steps). 4ZU2wqnvBEE and GLnBGOFHY-M were shorts, dropped. Jar is ToughAsNails-forge-1.20.1-9.2.0.171.",
+ "human_notes": {
+  "entry": [
+   "NO entry ritual - thirst and temperature are live from the first tick. A droplet bar sits above the hunger bar and an orb between the bars shows body temperature; both can kill (thirst starves you in hard mode, hypo/hyperthermia deals steady damage anywhere).",
+   "The actual first action every guide shows: shift-right-click any water source to drink - and every guide immediately warns that untreated water applies the Thirst debuff, which drains the bar FASTER. Purification, not drinking, is the mod's first real step.",
+   "Cheapest purification first: put a filled water bottle in a FURNACE to boil it into toughasnails:purified_water_bottle. The block route (toughasnails:water_purifier + charcoal) comes second.",
+   "Requires GlitchCore as a library on 1.20.1 - pack-level fact, not a player step."
+  ],
+  "boss_order": [
+   "No bosses, no mobs at all - this is a pure survival-mechanics mod."
+  ],
+  "order": [
+   "1. Drink (and regret it): learn the Thirst debuff from natural water.",
+   "2. Boil bottles in a furnace -> toughasnails:purified_water_bottle. Purified restores ~2.5 droplets vs 1.5 for untreated, and unlike juices it does not stack.",
+   "3. toughasnails:rain_collector (planks + string) - fills during rain, right-click for purified water straight out; guides call a stack of purified water from it 'pretty overpowered' and note it automates trivially.",
+   "4. Canteens for travel: six tiers (leather/copper/iron/gold/diamond/netherite, e.g. toughasnails:empty_leather_canteen -> toughasnails:leather_water_canteen), each holding multiple drinks; purify canteen water with a charcoal filter or the purifier.",
+   "5. toughasnails:water_purifier - runs on WOOD CHARCOAL specifically (guides stress regular coal does not work); dirty water may need two passes.",
+   "6. Juices from purified water: apple/cactus/chorus fruit/glow berry/melon/pumpkin/sweet berry (toughasnails:apple_juice etc.) - restore more thirst than water and stack to 16.",
+   "7. Temperature gear: toughasnails:wool_chestplate set to stay warm in cold biomes, toughasnails:leaf_chestplate set to stay cool in hot ones (older guides name 'jellied slime armor' - that is the pre-1.16 cooling set; on 1.20.1 it is leaf armor).",
+   "8. Base climate: toughasnails:thermoregulator with ice and lava fed into its sides regulates an enclosed area (this replaces the heating/cooling coils older guides demonstrate); toughasnails:temperature_gauge reads out the local temperature power, and toughasnails:thermometer is the handheld readout.",
+   "9. Nether prep: the Nether steadily overheats you - cooling armor (or config) is effectively required."
+  ],
+  "gates": [
+   "SOFT GATE on all sustained travel: drinking without purification is a debuff spiral, so furnace-boiling or the purifier gates comfortable play from the first hour.",
+   "toughasnails:water_purifier accepts only wood charcoal as its filter - coal is not a substitute.",
+   "The thermoregulator wants ice AND lava piped/placed on its sides - one hot and one cold reservoir - before it will hold a room neutral.",
+   "Hot-biome settling (desert, Nether) is gated on the cooling armor set or thermoregulator; cold-biome settling on wool armor / heat sources."
+  ],
+  "traps": [
+   "Drinking straight from rivers or oceans is the mod's built-in newbie trap: it works, but the Thirst effect makes the bar drain faster than not drinking at all.",
+   "Purified water bottles do NOT stack, juices stack to 16 - carrying bottles on an expedition is strictly worse than carrying juice or a canteen.",
+   "Guides from 1.12-1.15 (RLCraft era) show campfires-as-mod-content, heating/cooling coils, jellied slime armor and ice cubes/magma shards - none of those ids exist in the 1.20.1 jar; do not emit them as quest targets.",
+   "Milk and potions also restore thirst - a quest chain that assumes water is the only source will confuse players who never dip below full."
+  ],
+  "signature": [
+   "toughasnails:purified_water_bottle - the mod in one item: treat before you drink.",
+   "toughasnails:rain_collector - the passive water farm every guide builds.",
+   "The canteen ladder (leather -> netherite) - the mod's only real progression of tiers.",
+   "toughasnails:water_purifier with wood charcoal - the dedicated machine.",
+   "toughasnails:thermoregulator + toughasnails:temperature_gauge - base climate control and its sensor.",
+   "toughasnails:wool_chestplate / toughasnails:leaf_chestplate sets - dress for the biome.",
+   "toughasnails:charc_os and toughasnails:ice_cream - joke-tier signature foods unique to TAN."
+  ]
+ }
+}

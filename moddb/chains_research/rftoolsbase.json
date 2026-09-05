@@ -1,0 +1,93 @@
+{
+ "mod": "rftoolsbase",
+ "verified_against": "rftoolsbase-1.20-5.0.7.jar",
+ "item_count_in_jar": 17,
+ "chain": [
+  {
+   "id": "rftoolsbase:manual",
+   "title": "The RFTools Manual",
+   "desc": "A book and iron nuggets. Every RFTools module hangs its documentation off this one item, so it is the honest first step even though it does nothing on its own."
+  },
+  {
+   "id": "rftoolsbase:machine_base",
+   "title": "Machine Base",
+   "desc": "Stone with a gold nugget; the plate that sits under almost every RFTools machine in every module of the suite."
+  },
+  {
+   "id": "rftoolsbase:machine_frame",
+   "title": "Machine Frame",
+   "desc": "Iron ingots, gold nuggets and blue dye. This is the shared chassis - Builder, Crafter, Storage Scanner and the rest are all a frame plus a filling."
+  },
+  {
+   "id": "rftoolsbase:smartwrench",
+   "title": "Smart Wrench",
+   "desc": "Iron ingots and blue dye. It rotates and dismantles RFTools machines, and in select mode it links a machine to a remote block."
+  },
+  {
+   "id": "rftoolsbase:dimensionalshard",
+   "title": "Dimensional Shard",
+   "desc": "Mine Dimensional Shard Ore, which generates in the Overworld, the Nether and the End as three separate ore blocks. There is also a crafting fallback from diamond, emerald, prismarine, quartz, glowstone and redstone if your world has none nearby."
+  },
+  {
+   "id": "rftoolsbase:machine_infuser",
+   "title": "Machine Infuser",
+   "desc": "A Machine Frame, Dimensional Shards, diamonds and redstone. It burns shards to permanently upgrade a machine's speed and RF efficiency."
+  },
+  {
+   "id": "rftoolsbase:infused_diamond",
+   "title": "Infused Diamond",
+   "desc": "A diamond ringed with Dimensional Shards. The infused materials are what the rest of the RFTools suite spends on its high-tier recipes."
+  },
+  {
+   "id": "rftoolsbase:infused_enderpearl",
+   "title": "Infused Ender Pearl",
+   "desc": "The same treatment for an ender pearl; this is the reagent behind teleportation and dimension-touching machines in the other modules."
+  },
+  {
+   "id": "rftoolsbase:filter_module",
+   "title": "Filter Module",
+   "desc": "Iron, paper, redstone and a hopper. Slot it into an RFTools machine to whitelist or blacklist what that machine will touch."
+  },
+  {
+   "id": "rftoolsbase:crafting_card",
+   "title": "Crafting Card",
+   "desc": "A crafting table, paper and redstone. Encode a recipe onto it and a Storage Scanner or Crafter will make the item on demand instead of only moving it."
+  },
+  {
+   "id": "rftoolsbase:information_screen",
+   "title": "Information Screen",
+   "desc": "A Machine Base, glass panes and redstone; the display panel that RFTools modules paint their machine readouts onto."
+  },
+  {
+   "id": "rftoolsbase:tablet",
+   "title": "Tablet",
+   "desc": "A quartz block, emerald, redstone block and gold nuggets. Drop a compatible module in and it becomes a handheld version of that machine's GUI."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "rftoolsbase:machine_infuser",
+   "members": [
+    "rftoolsbase:dimensionalshard",
+    "rftoolsbase:dimensionalshard_overworld",
+    "rftoolsbase:dimensionalshard_nether",
+    "rftoolsbase:dimensionalshard_end",
+    "rftoolsbase:infused_diamond",
+    "rftoolsbase:infused_enderpearl"
+   ]
+  },
+  {
+   "hub": "rftoolsbase:tablet",
+   "members": [
+    "rftoolsbase:manual",
+    "rftoolsbase:smartwrench",
+    "rftoolsbase:crafting_card",
+    "rftoolsbase:filter_module",
+    "rftoolsbase:information_screen",
+    "rftoolsbase:machine_base",
+    "rftoolsbase:machine_frame"
+   ]
+  }
+ ],
+ "notes": "SHORT AND DECLARED SHORT. RFToolsBase is a shared-library mod, not a content mod - 17 registered items, 12 of them craftable. It exists so RFTools Utility, Storage, Builder, Power and Control can all pull from one chassis, one ore and one wrench. A twelve-step chain is the honest length; there is nothing to pad with, and every remaining id is either an ore block or unobtainable (see drops). VERIFICATION: pass 1 strict models INTERSECT lang gave 17/17 with zero model-only and zero blockstate-only. Pass 2 re-derived the set independently from .class constant-pool strings, textures, blockstates, recipe results and loot tables: all 17 corroborated, nothing missed. A NAIVE LANG PASS OVERCOUNTS THIS MOD. assets/rftoolsbase/lang/en_us.json carries 7 item.rftoolsbase.* keys with NO item model, NO blockstate, NO recipe and NO class anywhere in the jar: network_monitor, security_card, security_manager, shard_wand, teleport_probe, orphaning_card and developers_delight. These are stale/shared keys for items that live in the sibling modules (rftoolsutility, rftoolsstorage) - the lang file is shared across the suite. Anything trusting item.<modid>.* alone would emit seven uncompletable quests. Confirmed absent by scanning every class name in the jar. DROPPED AS UNOBTAINABLE: rftoolsbase:smartwrench_select - registered, modelled and named, but it is the Smart Wrench's select-mode form produced by SmartWrenchItem toggling in the hand; there is no recipe, no loot table and no other source, so a quest for it is a mode-switch trick rather than a goal. rftoolsbase:tablet_filled - registered but produced only by inserting a module into a Tablet, and every compatible module ships in a DIFFERENT jar (rftoolsutility / rftoolsstorage), so nothing in this jar alone can create it. ORES KEPT OUT OF THE CHAIN: dimensionalshard_overworld, dimensionalshard_nether and dimensionalshard_end are real, worldgen-placed ore blocks with placed_feature and configured_feature JSON and block loot tables, so they are obtainable and they sit in the infuser wheel - but per the desirability rule ores stay out of the chain proper and the smelted/dropped result (rftoolsbase:dimensionalshard) carries the step instead. NO CONSENSUS DATA: moddb.json has no rftoolsbase entry, so ordering is the recipe dependency graph alone. Jar confirmed 1.20.1 Forge: META-INF/mods.toml with modIds rftoolsbase + mcjtylib, pack_format 15, Java 17 class files, no fabric.mod.json; Modrinth lists this file under game_versions ['1.20.1'] and loaders ['forge']. The toml declares no explicit minecraft dependency range, which is why the Modrinth version filter, pack_format and class-file version were used to confirm the target."
+}

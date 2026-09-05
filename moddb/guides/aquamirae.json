@@ -1,0 +1,463 @@
+{
+ "mod": "aquamirae",
+ "jar": "aquamirae__aquamirae-forge-1.20.1-7.1.13.jar",
+ "ids_in_jar": 74,
+ "entities_in_jar": 11,
+ "videos": [
+  {
+   "id": "l2P5w9AkEiQ",
+   "title": "Aquamirae (1.20.1) | (Full Showcase)",
+   "channel": "Noxus",
+   "views": 725563,
+   "duration": 889,
+   "chars": 13932,
+   "secs": 624
+  },
+  {
+   "id": "CC98LgMp7uE",
+   "title": "Aquamirae 1.20.1 Review Completa",
+   "channel": "Wero Lovernite",
+   "views": 84465,
+   "duration": 742,
+   "chars": 9456,
+   "secs": 1058
+  }
+ ],
+ "items": {
+  "aquamirae:sharp_bones": {
+   "kind": "item",
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.186,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "aquamirae:frozen_chest": {
+   "kind": "item",
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.4594,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "aquamirae:frozen_key": {
+   "kind": "item",
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.411,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "aquamirae:logbook": {
+   "kind": "item",
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.2001,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aquamirae:treasure_pouch": {
+   "kind": "item",
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.4052,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "aquamirae:rune_of_the_storm": {
+   "kind": "item",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4454,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "aquamirae:shell_horn": {
+   "kind": "item",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2681,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aquamirae:dagger_of_greed": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7495,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aquamirae:pirate_pouch": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1681,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aquamirae:remnant_saber": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6537,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aquamirae:sea_stew": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8705,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "entities": {
+  "aquamirae:captain_cornelia": {
+   "kind": "entity",
+   "mentions": 9,
+   "videos": 2,
+   "first_at": 0.3365,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "aquamirae:tortured_soul": {
+   "kind": "entity",
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.2697,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "tag"
+   ]
+  },
+  "aquamirae:golden_moth": {
+   "kind": "entity",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4183,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "aquamirae:spinefish": {
+   "kind": "entity",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2386,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "aquamirae:anglerfish": {
+   "kind": "entity",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0937,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  }
+ },
+ "human_notes": {
+  "_source": "guide (2 transcribed showcases) + jar loot tables",
+  "measured_emphasis": [
+   "entity:aquamirae:captain_cornelia is mentioned 9 times across both videos — more than every other mob in the mod combined. She is unambiguously the thing this mod is about",
+   "The items both guides keep naming are aquamirae:frozen_key, aquamirae:frozen_chest and aquamirae:sharp_bones — a gate, a reward and a grind material",
+   "aquamirae:shell_horn is named in only one video despite being the hard boss gate: a quest book should make it explicit, because guides do not"
+  ],
+  "boss_order": [
+   "entity:aquamirae:maze_mother — mid-boss met while crossing the ice maze; announces itself with 'you feel the vibrations under the ice'",
+   "entity:aquamirae:captain_cornelia — the mod's only real boss, summoned deliberately, not found wandering"
+  ],
+  "prep": [
+   "Reach the Ship Graveyard (deep frozen ocean); everything in this mod is gated on that biome, nothing spawns outside it",
+   "Underwater breathing before diving: aquamirae:salvager_suit is the mod's own answer (crafted around aquamirae:oxyhelium)",
+   "Cornelia CANNOT be finished off without a debuff — the guide is explicit that she heals back up at low health. Bring a Weakness potion, or aquamirae:terrible_blade for its crit",
+   "A bow is useless on Cornelia — the guide states she cannot be damaged with one"
+  ],
+  "order": [
+   "Farm the common maze mobs first for aquamirae:ship_graveyard_echo — it is the mod's repair-and-craft currency and drops from almost everything",
+   "Clear a pillager fleet ship and kill the captain for aquamirae:shell_horn (jar-verified: the shell horn is in the maze_captain loot table)",
+   "Right-click aquamirae:shell_horn near water to summon Cornelia — she does not spawn on her own",
+   "Cornelia drops aquamirae:frozen_key, which is the only way into the aquamirae:frozen_chest in the underground illager shelter"
+  ],
+  "key_drops": [
+   "aquamirae:ship_graveyard_echo — called out repeatedly; crafting AND repairs most of the mod's gear",
+   "aquamirae:frozen_key — hard gate, opens the final chest",
+   "aquamirae:shell_horn — hard gate, the boss summon",
+   "aquamirae:salvager_helmet — jar-verified Cornelia drop (the guide's mangled 'three bolt helmet')",
+   "aquamirae:abyssal_amethyst — Maze Mother drop, feeds the top Abyssal armour",
+   "aquamirae:poseidon_breakfast — guide calls it immensely strong: +100% ability power, -50% cooldown"
+  ],
+  "traps": [
+   "entity:aquamirae:maze_mother breaks the ice under your feet and drops you into the water — the guide names this as the reason it is dangerous",
+   "Cornelia regenerates to a floor and cannot be killed by damage alone — an unprepared player simply cannot finish the fight",
+   "aquamirae:dagger_of_greed gives bad omen when used on villagers and cannot be repaired"
+  ],
+  "signature": [
+   "entity:aquamirae:captain_cornelia",
+   "aquamirae:shell_horn",
+   "aquamirae:frozen_key",
+   "aquamirae:ship_graveyard_echo",
+   "aquamirae:terrible_blade",
+   "aquamirae:poseidon_breakfast"
+  ]
+ },
+ "verified_entities": {
+  "aquamirae:abyssal_scyphoid": {
+   "name": "Abyssal Scyphoid",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "aquamirae:anglerfish": {
+   "name": "Anglerfish",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "aquamirae:captain_cornelia": {
+   "name": "Ghost of Captain Cornelia",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "aquamirae:eel": {
+   "name": "Eel",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "aquamirae:golden_moth": {
+   "name": "Golden Moth",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "aquamirae:maw": {
+   "name": "Maw",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "aquamirae:maze_mother": {
+   "name": "Maze Mother",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "aquamirae:scuttler": {
+   "name": "Scuttler",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "aquamirae:shellback": {
+   "name": "Shellback",
+   "evidence": [
+    "egg",
+    "lang",
+    "tag"
+   ]
+  },
+  "aquamirae:spinefish": {
+   "name": "Spinefish",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "aquamirae:tortured_soul": {
+   "name": "Tortured Soul",
+   "evidence": [
+    "egg",
+    "lang",
+    "tag"
+   ]
+  }
+ },
+ "unusable_entities": {
+  "aquamirae:maze_rose": {
+   "name": "Maze Rose",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "aquamirae:shipbreaker": {
+   "name": "Shipbreaker",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "aquamirae:terrible_chakram": {
+   "name": "Terrible Chakram",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  }
+ },
+ "verified_items": [
+  "aquamirae:abyssal_amethyst",
+  "aquamirae:abyssal_boots",
+  "aquamirae:abyssal_brigandine",
+  "aquamirae:abyssal_heaume",
+  "aquamirae:abyssal_leggings",
+  "aquamirae:abyssal_scyphoid_spawn_egg",
+  "aquamirae:abyssal_tiara",
+  "aquamirae:abyssal_upgrade_smithing_template",
+  "aquamirae:angler_fang",
+  "aquamirae:anglerfish_spawn_egg",
+  "aquamirae:captain_cornelia_spawn_egg",
+  "aquamirae:cooked_spinefish",
+  "aquamirae:cracked_record",
+  "aquamirae:dagger_of_greed",
+  "aquamirae:dead_sea_scroll",
+  "aquamirae:echo_compass",
+  "aquamirae:eel_spawn_egg",
+  "aquamirae:esca",
+  "aquamirae:esca_skewer",
+  "aquamirae:fin",
+  "aquamirae:frozen_chest",
+  "aquamirae:frozen_key",
+  "aquamirae:golden_moth_jar",
+  "aquamirae:golden_moth_spawn_egg",
+  "aquamirae:jawbreaker",
+  "aquamirae:jellyfish_jelly",
+  "aquamirae:logbook",
+  "aquamirae:luminescent_bubble",
+  "aquamirae:luminescent_lamp",
+  "aquamirae:maw_spawn_egg",
+  "aquamirae:maze_mother_spawn_egg",
+  "aquamirae:maze_rose",
+  "aquamirae:music_disc_forsaken_drownage",
+  "aquamirae:music_disc_horizon",
+  "aquamirae:niveis_tear",
+  "aquamirae:oxyhelium",
+  "aquamirae:painting_anglerfish",
+  "aquamirae:painting_aurora",
+  "aquamirae:painting_oxyhelium",
+  "aquamirae:painting_tortured_soul",
+  "aquamirae:pirate_pouch",
+  "aquamirae:poseidon_breakfast",
+  "aquamirae:remnant_saber",
+  "aquamirae:rune_of_the_storm",
+  "aquamirae:salvager_boots",
+  "aquamirae:salvager_helmet",
+  "aquamirae:salvager_suit",
+  "aquamirae:salvager_waders",
+  "aquamirae:scuttler_spawn_egg",
+  "aquamirae:sea_casserole",
+  "aquamirae:sea_stew",
+  "aquamirae:sharp_bones",
+  "aquamirae:shatterblade",
+  "aquamirae:shatterspike",
+  "aquamirae:shell_horn",
+  "aquamirae:shellback_spawn_egg",
+  "aquamirae:ship_graveyard_echo",
+  "aquamirae:spinefish",
+  "aquamirae:spinefish_spawn_egg",
+  "aquamirae:tempest_trident",
+  "aquamirae:terrible_blade",
+  "aquamirae:terrible_boots",
+  "aquamirae:terrible_chakram",
+  "aquamirae:terrible_chestplate",
+  "aquamirae:terrible_cleaver",
+  "aquamirae:terrible_fang",
+  "aquamirae:terrible_helmet",
+  "aquamirae:terrible_leggings",
+  "aquamirae:terrible_upgrade_smithing_template",
+  "aquamirae:tidepiercer",
+  "aquamirae:tortured_soul_spawn_egg",
+  "aquamirae:treasure_pouch",
+  "aquamirae:void_squid",
+  "aquamirae:wisteria_niveis"
+ ],
+ "fake_item_ids": [
+  "aquamirae:handheld_2x"
+ ]
+}

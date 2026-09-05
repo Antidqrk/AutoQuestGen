@@ -1,0 +1,88 @@
+{
+ "mod": "enigmaticlegacy",
+ "ids_in_jar": 192,
+ "videos": [
+  {
+   "id": "5d0w9qr08KY",
+   "title": "HOW the RING of SEVEN CURSES works in Enigmatic Legacy MINECRAFT",
+   "channel": "Edlux Tutorials",
+   "views": 17966,
+   "duration": 189,
+   "chars": 3081
+  }
+ ],
+ "items": {
+  "enigmaticlegacy:soul_crystal": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2344,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "enigmaticlegacy:ender_ring": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9613,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "_source_honesty": "Thinnest video coverage of the ten. Only two English guides exist at all for this mod, both ~63 minutes, and neither finished transcribing before the harvest window closed. What was captured is the short 'HOW the RING of SEVEN CURSES works' clip (3.1k chars, 2 matched ids). The structure below therefore comes from EnigmaticLegacy-2.30.1.jar's 93 recipes and its lang file. Reported thin rather than padded.",
+  "_shape": "Half loot mod, half curse-gated crafting mod - NOT a linear ladder. A large share of its best items have no recipe at all in the jar (enigmaticlegacy:cursed_ring, enigmaticlegacy:astral_dust, enigmaticlegacy:forbidden_fruit, enigmaticlegacy:eye_of_nebula, enigmaticlegacy:ascension_amulet, enigmaticlegacy:enigmatic_amulet, enigmaticlegacy:darkest_scroll, enigmaticlegacy:void_stone, enigmaticlegacy:soul_crystal, enigmaticlegacy:unholy_grail, enigmaticlegacy:eldritch_amulet, enigmaticlegacy:the_judgement, enigmaticlegacy:abyssal_heart, enigmaticlegacy:earth_heart, enigmaticlegacy:golem_heart, enigmaticlegacy:guardian_heart, enigmaticlegacy:angel_blessing, enigmaticlegacy:crying_ingot) - they are dropped, found in structures, or given by mechanics.",
+  "order": [
+   "enigmaticlegacy:the_acknowledgment is step one and is deliberately trivial: a book plus a lantern, shapeless. It is the mod's guide item and the thing that explains everything else.",
+   "The ring line is the cheap early utility and is a genuine small ladder: enigmaticlegacy:iron_ring (iron ingot + nuggets) -> enigmaticlegacy:golden_ring / enigmaticlegacy:ender_ring (iron ring + ender chest + gold).",
+   "enigmaticlegacy:magnet_ring (diamond + gold + redstone + iron) -> enigmaticlegacy:super_magnet_ring is the other early quality-of-life pair and the one players actually keep.",
+   "Charms next, each a standalone shaped craft: enigmaticlegacy:mining_charm, enigmaticlegacy:monster_charm, enigmaticlegacy:berserk_charm.",
+   "Transposers are the mid-game utility: enigmaticlegacy:enchantment_transposer (book + blaze powder + lapis) then enigmaticlegacy:curse_transposer, which additionally needs enigmaticlegacy:evil_essence.",
+   "Scrolls branch from two bases: enigmaticlegacy:thicc_scroll -> enigmaticlegacy:xp_scroll / enigmaticlegacy:escape_scroll / enigmaticlegacy:heaven_scroll, and the loot-only enigmaticlegacy:darkest_scroll -> enigmaticlegacy:avarice_scroll.",
+   "Late crafting is netherite-plus: enigmaticlegacy:evil_ingot (netherite ingot + enigmaticlegacy:evil_essence + ghast tear), enigmaticlegacy:astral_breaker (ender eye + dragon breath + enigmaticlegacy:astral_dust), enigmaticlegacy:cosmic_heart (heart of the sea + astral dust + ender eye).",
+   "The endgame item is enigmaticlegacy:the_infinitum, built from enigmaticlegacy:the_twist plus enigmaticlegacy:cosmic_heart and evil essence. enigmaticlegacy:the_twist itself needs netherite and evil essence."
+  ],
+  "gates": [
+   "enigmaticlegacy:cursed_ring - 'Ring of the Seven Curses' - is the mod's defining gate and it is a RECIPE-TYPE gate, not an ingredient. The jar has a bespoke recipe serializer, crafting_shaped_cursed, and enigmaticlegacy:twisted_heart uses it: the craft simply does not work unless the player is wearing the cursed ring. Taking the ring is a deliberate, punishing choice the player opts into.",
+   "enigmaticlegacy:evil_essence gates the whole late tier - enigmaticlegacy:evil_ingot, enigmaticlegacy:the_twist, enigmaticlegacy:the_infinitum and enigmaticlegacy:curse_transposer all need it.",
+   "enigmaticlegacy:astral_dust has no recipe, so enigmaticlegacy:astral_breaker and enigmaticlegacy:cosmic_heart are gated behind finding it - which puts the endgame behind exploration, not crafting.",
+   "Several items are bound to one player by a dedicated bind_to_player recipe type - they cannot be traded or shared, which gates them per-player rather than per-world.",
+   "enigmaticlegacy:etherium_ingot is smelted from ore/scraps, so the etherium gear line (enigmaticlegacy:etherium_pickaxe, enigmaticlegacy:etherium_sword, enigmaticlegacy:etherium_scythe, enigmaticlegacy:astral_breaker) is mining-gated.",
+   "enigmaticlegacy:void_stone has its own void_stone_combine recipe type for merging stones - a separate, non-obvious mechanic."
+  ],
+  "mechanics": [
+   "CURSES ARE THE POINT. The mod's identity is trading permanent drawbacks for large power: the Ring of the Seven Curses, enigmaticlegacy:cursed_scroll, enigmaticlegacy:corrupted_tome, enigmaticlegacy:withered_tome, and enigmaticlegacy:curse_transposer for moving curses between items.",
+   "Six bespoke recipe serializers do things ordinary recipes cannot, and a plain recipe scan will mis-read all of them: bind_to_player, crafting_shaped_cursed, crafting_shaped_hidden, enchantment_transposing, mending_mixture_repair, shapeless_no_return_craft and void_stone_combine. Only 84 of 93 recipes are vanilla-shaped.",
+   "shapeless_no_return_craft means ingredients are consumed with no container return - enigmaticlegacy:mending_mixture is made this way and then repairs gear via its own mending_mixture_repair recipe.",
+   "Curios-slot items carry the mod: rings, amulets (enigmaticlegacy:enigmatic_amulet, enigmaticlegacy:eldritch_amulet, enigmaticlegacy:ascension_amulet, enigmaticlegacy:deception_amulet, enigmaticlegacy:unwitnessed_amulet), charms, scrolls and belts. It is a Curios content mod first and a crafting mod second.",
+   "'Hearts' are permanent player upgrades rather than gear: enigmaticlegacy:cosmic_heart, enigmaticlegacy:abyssal_heart, enigmaticlegacy:earth_heart, enigmaticlegacy:golem_heart, enigmaticlegacy:guardian_heart, enigmaticlegacy:twisted_heart.",
+   "enigmaticlegacy:lore_inscriber and enigmaticlegacy:lore_fragment support a written-lore layer that is flavour, not progression."
+  ],
+  "traps": [
+   "Do not generate a 'craft it' quest for any of the ~18 no-recipe items listed in _shape - they are loot. A crafting task for enigmaticlegacy:cursed_ring or enigmaticlegacy:astral_dust would be unsatisfiable.",
+   "Do not build quests on the 32 numbered compass ids (enigmaticlegacy:compass_00 through enigmaticlegacy:compass_31) - they are animation frames of enigmaticlegacy:soul_compass. The 3d/ and gui/ model paths are not ids at all and the fixed jar_ids() already drops them.",
+   "enigmaticlegacy:the_cube and enigmaticlegacy:the_infinitum have numbered display states (enigmaticlegacy:the_infinitum_0, enigmaticlegacy:the_infinitum_1, enigmaticlegacy:the_infinitum_2) that are variants of one item, not separate items.",
+   "The cursed-ring gate means a generated quest chain can hard-stall: enigmaticlegacy:twisted_heart looks like a normal shaped recipe in a scan but silently fails without the ring equipped."
+  ],
+  "signature": [
+   "enigmaticlegacy:cursed_ring",
+   "enigmaticlegacy:the_acknowledgment",
+   "enigmaticlegacy:the_infinitum",
+   "enigmaticlegacy:the_twist",
+   "enigmaticlegacy:forbidden_fruit",
+   "enigmaticlegacy:eye_of_nebula",
+   "enigmaticlegacy:ascension_amulet",
+   "enigmaticlegacy:astral_breaker",
+   "enigmaticlegacy:etherium_ingot",
+   "enigmaticlegacy:evil_ingot",
+   "enigmaticlegacy:super_magnet_ring",
+   "enigmaticlegacy:curse_transposer",
+   "enigmaticlegacy:cosmic_heart",
+   "enigmaticlegacy:xp_scroll",
+   "enigmaticlegacy:unholy_grail"
+  ],
+  "pack_status": "NOT INSTALLED in CREATE FEMBY. Analysed against EnigmaticLegacy-2.30.1.jar fetched to scratch from Modrinth. It depends on Curios, which IS present (curios-forge-5.14.1+1.20.1.jar)."
+ }
+}

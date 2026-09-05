@@ -1,0 +1,165 @@
+{
+  "mod": "bookofdragons",
+  "verified_against": "bookofdragons-1.31-1.20.1.jar",
+  "item_count_in_jar": 37,
+  "chain": [
+    {
+      "id": "bookofdragons:viking_anvil",
+      "title": "Build a Viking Anvil",
+      "desc": "Place it in a village and an unemployed villager claims it as a workstation, becoming a Hooligan - the only trader who deals in anything dragon-related, and the sole source of the book and every roost map. One anvil is all you will ever need."
+    },
+    {
+      "id": "bookofdragons:book_of_dragons",
+      "title": "Trade for the Book of Dragons",
+      "desc": "The Hooligan's first trade. It is the mod's living registry: shift-click a tamed dragon with it to read that dragon's health, hunger, affection, food and equipment. One copy, kept forever."
+    },
+    {
+      "id": "bookofdragons:glade_roost_map",
+      "title": "Buy a Glade Roost Map",
+      "desc": "Another Hooligan trade. Right-click it to point at the nearest Glade Roost, where Deadly Nadders and Hideous Zipplebacks live - the gentlest pair to meet first. Buy one map per roost you want to find; each is consumed on use."
+    },
+    {
+      "id": "structure:bookofdragons:roost_glade",
+      "title": "Find the Glade Roost",
+      "desc": "Follow the map. Roosts are the only place wild dragons spawn, so this is where taming, riding and scale-hunting all start. Nothing here is looted - the value is the dragons standing in it."
+    },
+    {
+      "id": "bookofdragons:deadlynadder_scales",
+      "title": "Slay a Deadly Nadder for Scales",
+      "desc": "Scales drop only when a dragon dies - three to five per Nadder. They are the mod's one crafting material, and any eight of any mix become Fireproof Scalemail, so keep every one you take."
+    },
+    {
+      "id": "bookofdragons:dragon_whistle",
+      "title": "Craft a Dragon Whistle",
+      "desc": "Right-click a tamed dragon to bind the whistle to it, then blow it outdoors in the Overworld to summon that dragon to you from anywhere. It binds to one dragon at a time, so make one per dragon you would hate to lose."
+    },
+    {
+      "id": "bookofdragons:deadly_nadder_egg",
+      "title": "Breed a Deadly Nadder Egg",
+      "desc": "Feed two tamed Nadders chicken until they bond and they will leave an egg. Place it down and it incubates in the open; the hatchling is yours from birth instead of needing the taming ritual all over again."
+    },
+    {
+      "id": "bookofdragons:cave_roost_map",
+      "title": "Buy a Cave Roost Map",
+      "desc": "Points at a Cave Roost, split evenly between Gronckles and Whispering Deaths. Worth the trip for the Gronckle alone - it is the only dragon that produces anything."
+    },
+    {
+      "id": "bookofdragons:gronckle_scales",
+      "title": "Slay a Gronckle for Scales",
+      "desc": "Gronckles are slow and the least aggressive dragon here, which makes theirs the easiest scales to farm in bulk. Good filler when you need eight for scalemail - but leave one alive, because you want a tame one."
+    },
+    {
+      "id": "bookofdragons:gronckle_iron",
+      "title": "Feed a Gronckle for Iron",
+      "desc": "A tamed Gronckle swallows iron ore, dripstone, a magma block and sandstone, then coughs up a few Gronckle Iron once its digestion timer runs out. This is the mod's only production mechanic, so keep one Gronckle permanently."
+    },
+    {
+      "id": "bookofdragons:whisperingdeath_scales",
+      "title": "Slay a Whispering Death for Scales",
+      "desc": "The other cave dweller, and far less forgiving - it burrows and surfaces underneath you. Its scales are one of the seven the Scale Collector advancement wants."
+    },
+    {
+      "id": "bookofdragons:barrens_roost_map",
+      "title": "Buy a Barrens Roost Map",
+      "desc": "Leads to a Barrens Roost, where Monstrous Nightmares nest alongside more Gronckles. Nightmares set themselves alight, so bring fire resistance before you fight one."
+    },
+    {
+      "id": "bookofdragons:monstrousnightmare_scales",
+      "title": "Slay a Monstrous Nightmare for Scales",
+      "desc": "Taken off the burning dragon itself. These are the ones worth spending on scalemail, since not burning is the whole point of the material."
+    },
+    {
+      "id": "bookofdragons:fireproof_scalemail",
+      "title": "Weave Fireproof Scalemail",
+      "desc": "Immune to fire and lava damage, and built to be a high-tier ingredient for other recipes rather than worn on its own. Make a couple once your scale pile can spare eight at a time."
+    },
+    {
+      "id": "bookofdragons:rattlestaff",
+      "title": "Craft a Rattle-Staff",
+      "desc": "Shift-use it on each dragon to bind them, then one click orders the whole bound flock to follow, sit, move or attack a target. A single staff handles every dragon you own, so you only need one."
+    },
+    {
+      "id": "bookofdragons:wetland_roost_map",
+      "title": "Buy a Wetland Roost Map",
+      "desc": "The Wetland Roost spawns Hideous Zipplebacks and nothing else - one head lays gas, the other sparks it. This is the only reliable place to find them."
+    },
+    {
+      "id": "bookofdragons:hiddeouszippleback_scales",
+      "title": "Slay a Hideous Zippleback for Scales",
+      "desc": "Four to seven per kill, the joint-largest scale drop in the mod. Fourth of the seven species the Scale Collector advancement asks for."
+    },
+    {
+      "id": "bookofdragons:cliff_roost_map",
+      "title": "Buy a Cliff Roost Map",
+      "desc": "The last map. Cliff Roosts hold Skrills and Night Furies - the fastest fliers here and the two mounts worth the long walk."
+    },
+    {
+      "id": "bookofdragons:skrill_scales",
+      "title": "Slay a Skrill for Scales",
+      "desc": "The Skrill rides lightning and shields itself with it, making these the hardest scales in the mod to take. Sixth of seven."
+    },
+    {
+      "id": "bookofdragons:nightfury_scales",
+      "title": "Slay a Night Fury for Scales",
+      "desc": "The seventh and last scale, and the one that completes the Scale Collector set. Take these from a wild Night Fury and tame a different one - a dragon you kill is a dragon you cannot ride."
+    },
+    {
+      "id": "bookofdragons:nightfury_egg",
+      "title": "Breed a Night Fury Egg",
+      "desc": "Tame two Night Furies, feed them salmon until they bond, and they will leave an egg. Hatching it is the payoff for the whole chain: a Night Fury raised from the egg is the best mount in the mod and is yours from birth."
+    }
+  ],
+  "collections": [
+    {
+      "name": "Dragon Scales",
+      "desc": "One scale type per species, all seven dropped only on the dragon's death. The Scale Collector advancement wants every one, and any eight make Fireproof Scalemail.",
+      "items": [
+        "bookofdragons:deadlynadder_scales",
+        "bookofdragons:gronckle_scales",
+        "bookofdragons:hiddeouszippleback_scales",
+        "bookofdragons:monstrousnightmare_scales",
+        "bookofdragons:nightfury_scales",
+        "bookofdragons:skrill_scales",
+        "bookofdragons:whisperingdeath_scales"
+      ]
+    },
+    {
+      "name": "Dragon Eggs",
+      "desc": "One per species, produced only by breeding two tamed and bonded adults. No chest or drop gives an egg in this version.",
+      "items": [
+        "bookofdragons:deadly_nadder_egg",
+        "bookofdragons:gronckle_egg",
+        "bookofdragons:hiddeous_zippleback_egg",
+        "bookofdragons:monstrous_nightmare_egg",
+        "bookofdragons:nightfury_egg",
+        "bookofdragons:skrill_egg",
+        "bookofdragons:whispering_death_egg"
+      ]
+    },
+    {
+      "name": "Roost Maps",
+      "desc": "All five sold by the Hooligan; each points at one roost archetype with its own dragon pair.",
+      "items": [
+        "bookofdragons:glade_roost_map",
+        "bookofdragons:cave_roost_map",
+        "bookofdragons:barrens_roost_map",
+        "bookofdragons:wetland_roost_map",
+        "bookofdragons:cliff_roost_map"
+      ]
+    },
+    {
+      "name": "Placeable Scales",
+      "desc": "Decoration only - right-click a scale item to lay it on the ground as a block. Note that placeable_skrill_scales and placeable_whisperingdeath_scales have no block loot table, so breaking those two drops nothing.",
+      "items": [
+        "bookofdragons:placeable_nadder_scales",
+        "bookofdragons:placeable_gronckle_scales",
+        "bookofdragons:placeable_zippleback_scales",
+        "bookofdragons:placeable_nightmare_scales",
+        "bookofdragons:placeable_nightfury_scales",
+        "bookofdragons:placeable_skrill_scales",
+        "bookofdragons:placeable_whisperingdeath_scales"
+      ]
+    }
+  ],
+  "notes": "Order follows the mod's own 12-advancement tree: root (obtain book_of_dragons) -> meet_hooligan -> dragon_hunter; root -> roost_discoverer; root -> dragon_tamer -> dragon_rider -> dragon_breeder / true_bond; root -> trail_tracker -> scale_collector; dragon_tamer -> class_collector -> dragon_master. The Viking Anvil is placed ahead of the book because it is the villager workstation POI that creates a Hooligan (ModVillagers: viking_poi -> VIKING_ANVIL), and HooliganDrifterEntity's constant pool is exactly BOOK_OF_DRAGONS, VIKING_ANVIL, GLADE_ROOST_MAP, CAVE_ROOST_MAP, BARRENS_ROOST_MAP, WETLAND_ROOST_MAP and CLIFF_ROOST_MAP - nothing else in the mod is reachable until an anvil exists.\n\nTHE ROOST CHESTS DO NOT EXIST - VERIFIED. data/bookofdragons/loot_tables/chests/ holds five tables (sharp_nest, strike_roost, boulder_roost, stoker_den, mystery_burrow) listing scales, eggs, gronckle_iron and food. They are DEAD DATA in this version. All 21 roost .nbt templates were decompressed and checked: not one contains a minecraft:chest block or a LootTable tag, and no class in the jar references a chests/ path. An earlier draft of this chain described a 'nest chest' in the Glade and Cliff roosts and sourced nightfury_egg and gronckle_egg from it; that was wrong and has been removed. Never write a quest that expects loot from a roost.\n\nSCALES COME ONLY FROM KILLING. The seven data/bookofdragons/loot_tables/entities/*.json tables are the sole source: deadlynadder 3-5, gronckle 3-6, hiddeouzippleback (note the missing s in the filename) 4-7, monstrousnightmare 3-5, nightfury 4-7, skrill 3-6, whispering_death 3-6, each with a looting bonus of 0-1. There are no shed scales lying on the ground - the placeable_*_scales blocks appear in zero worldgen templates and exist only because PlaceableFireproofScalesItem lets a player right-click a scale item down as decoration. Titles must say Slay, not Find or Gather.\n\nID TRAPS IN THIS JAR - three separate mismatches, verified against ModItems.class:\n1. data/bookofdragons/advancements/dragon_hunter.json asks for bookofdragons:strike_roost_map, tracker_roost_map, boulder_roost_map, stoker_roost_map and mystery_roost_map. Only strike_roost_map is registered at all, and it has NO lang key and NO item model, so it renders as a purple-and-black 'item.bookofdragons.strike_roost_map'. The other four do not exist, and none of the five is sold by the Hooligan, so that advancement cannot be completed. The five REAL maps are cliff/cave/glade/wetland/barrens_roost_map.\n2. Egg ids are inconsistent between data and registry. Registered (safe): deadly_nadder_egg, gronckle_egg, hiddeous_zippleback_egg, monstrous_nightmare_egg, nightfury_egg, skrill_egg, whispering_death_egg. The dead chest tables instead write deadlynadder_egg, monstrousnightmare_egg and hiddeouszippleback_egg, which are not registered. Note the asymmetry: eggs use underscored species names while SCALES use squashed ones (deadlynadder_scales, monstrousnightmare_scales, hiddeouszippleback_scales, whisperingdeath_scales).\n3. lang declares item.bookofdragons.nightfury_scale_helmet / chestplate / leggings / boots and item.bookofdragons.fireproof_scales.*, but none of those items is registered in ModItems and none has an item model. Nightfury Scale armour does not exist in this version. Only fireproof_scalemail is real.\n\nOnly 4 recipes in the jar: viking_anvil (iron block + iron ingot + 3 #minecraft:logs), dragon_whistle (2 bones + iron nugget), rattlestaff (iron ingot + iron nugget + 3 bones + 3 sticks), fireproof_scalemail (8 #bookofdragons:dragon_scales around a slime ball). Everything else is traded, dropped by a dragon, bred, or produced by a mechanic with no recipe json - Gronckle Iron per GronckleIronRecipe.class needs REQUIRED_IRON_ORE, REQUIRED_DRIPSTONE, REQUIRED_MAGMA_BLOCK and REQUIRED_SANDSTONE fed to a tamed Gronckle, then an IRON_CREATION_COOLDOWN_TICKS wait for a MIN_OUTPUT..MAX_OUTPUT batch.\n\nStructures: five roosts, one per archetype - structure:bookofdragons:roost_cliff, roost_cave, roost_glade, roost_wetland, roost_barrens, each a jigsaw keyed to a biome tag. Their template pools use the older archetype names: roost_glade -> tracker_nest1-4, roost_cliff -> strike_roost1-4, roost_cave -> boulder_roost2-3, roost_barrens -> stoker_den1-5, roost_wetland -> mystery_burrow1-4. data/bookofdragons/roost_config.json fixes which dragons spawn where: cliff = nightfury 30 / skrill 70; cave = gronckle 50 / whispering_death 50; glade = deadly_nadder 60 / hideous_zippleback 40; wetland = hideous_zippleback 100; barrens = monstrous_nightmare 50 / gronckle 50. Spawning is driven by a hidden roost_controller block (registered in ModBlocks, no lang key, no item model - never quest for it) placed by DragonSpawnProcessor. A viking_smithy template pool injects the Hooligan's building into plains, desert, savanna, snowy and taiga villages.\n\nTAMING HAS NO ITEM AND NO KILL TARGET. A dragon is tamed by feeding it its favourite food until it enters a ritual state, then crouch-interacting. From data/bookofdragons/species_stats/*.json the favourite foods are: deadly_nadder chicken, gronckle mutton, nightfury salmon, skrill mutton, whispering_death mutton, monstrous_nightmare beef, hideous_zippleback salmon; every species also takes cod as general food. Riding additionally needs a vanilla minecraft:saddle. Express taming as an advancement or custom task, never as an item or a kill.\n\nEntity ids for kill: targets, note the spelling - bookofdragons:deadlynadder, gronckle, hiddeous_zippleback, monstrousnightmare, nightfury, skrill, whispering_death, hooligan_drifter, dragon_egg.\n\nFilter out before ranking: pathfinding_debug_stick, digging_debug_stick, mood_debug_stick and debug_tame_stick are developer tools (the first is labelled '[DEBUG]' in lang), and roost_controller is an internal block with no name or model. Requires geckolib."
+}

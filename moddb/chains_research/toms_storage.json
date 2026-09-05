@@ -1,0 +1,64 @@
+{
+ "mod": "toms_storage",
+ "verified_against": "toms_storage-1.20-1.7.1.jar",
+ "item_count_in_jar": 20,
+ "chain": [
+  {"id": "toms_storage:ts.inventory_connector", "title": "One Block to Bind Them", "desc": "Crafted from planks, a wooden chest, diamonds, ender pearls and a comparator, and links every inventory it touches into a single network."},
+  {"id": "toms_storage:ts.storage_terminal", "title": "A Window Into Every Chest", "desc": "Crafted from planks, a wooden chest, glass, glowstone and a comparator, then placed directly on the inventory connector."},
+  {"id": "toms_storage:ts.trim", "title": "Hiding the Machinery", "desc": "Crafted from planks, sticks and a wooden chest as a decorative cover for connector faces."},
+  {"id": "toms_storage:ts.inventory_cable", "title": "Running the Line", "desc": "Crafted from planks, sticks, a trapdoor and a wooden chest to carry the network away from the connector."},
+  {"id": "toms_storage:ts.inventory_cable_connector", "title": "Tapping a Distant Chest", "desc": "Crafted from an inventory cable, planks, a wooden chest, quartz, diamonds and ender pearls to attach remote inventories to the network."},
+  {"id": "toms_storage:ts.item_filter", "title": "The Bouncer", "desc": "Crafted from sticks, wool and redstone dust, then loaded with item stacks to control what a connector accepts."},
+  {"id": "toms_storage:ts.inventory_cable_connector_filtered", "title": "Selective Intake", "desc": "Crafted from an inventory cable connector, paper and quartz to add a built-in filter to the connection."},
+  {"id": "toms_storage:ts.inventory_hopper_basic", "title": "Feeding the Network", "desc": "Crafted from an inventory cable, planks and a hopper to push items from a chest into the system."},
+  {"id": "toms_storage:ts.open_crate", "title": "Spitting It Back Out", "desc": "Crafted from planks, sticks, a trapdoor and a wooden chest, and drops network items into the world in front of it."},
+  {"id": "toms_storage:ts.inventory_proxy", "title": "Standing In For Another", "desc": "Crafted from planks, a trapdoor and a wooden chest to expose a distant inventory as if it were adjacent."},
+  {"id": "toms_storage:ts.level_emitter", "title": "The Watchman", "desc": "Crafted from an inventory cable, planks, a comparator and a redstone torch to emit redstone when a chosen item passes a threshold."},
+  {"id": "toms_storage:ts.crafting_terminal", "title": "Crafting Straight From the Vault", "desc": "Crafted from a storage terminal, a crafting table and diamonds, and pulls ingredients from the whole network."},
+  {"id": "toms_storage:ts.tag_item_filter", "title": "Filter by Family", "desc": "Crafted shapelessly from an item filter, a comparator and a name tag to match entire item tags instead of single items."},
+  {"id": "toms_storage:ts.polymorphic_item_filter", "title": "The Shapeshifting Sieve", "desc": "Crafted shapelessly from an item filter, a comparator and a diamond to match items by recipe compatibility."},
+  {"id": "toms_storage:ts.paint_kit", "title": "Brush and Bucket", "desc": "Crafted from sticks, wool, a bucket, a water bucket and black, blue, green and red dye."},
+  {"id": "toms_storage:ts.painted_trim", "title": "Blending Into the Wall", "desc": "Obtained by using the paint kit on a placed trim to copy any block's texture onto it, and reverted with a water bucket."},
+  {"id": "toms_storage:ts.inventory_cable_framed", "title": "Cable in Disguise", "desc": "Crafted from an inventory cable and sticks so it can be painted to match surrounding blocks."},
+  {"id": "toms_storage:ts.inventory_cable_connector_framed", "title": "The Invisible Junction", "desc": "Crafted from an inventory cable connector and sticks for a paintable version of the remote connector."},
+  {"id": "toms_storage:ts.wireless_terminal", "title": "Cutting the Cord", "desc": "Crafted from planks, glass, glowstone, a comparator, ender pearls and a spyglass, then bound by shift-right-clicking a terminal or inventory connector."},
+  {"id": "toms_storage:ts.adv_wireless_terminal", "title": "Across the Dimensions", "desc": "Made in a smithing table from a wireless terminal, a netherite upgrade template and a netherite ingot for long-range and cross-dimension access."}
+ ],
+ "collections": [
+  {
+   "hub": "toms_storage:ts.inventory_cable",
+   "members": [
+    "toms_storage:ts.inventory_cable_connector",
+    "toms_storage:ts.inventory_cable_connector_filtered",
+    "toms_storage:ts.inventory_cable_connector_framed",
+    "toms_storage:ts.inventory_cable_framed",
+    "toms_storage:ts.inventory_hopper_basic",
+    "toms_storage:ts.level_emitter",
+    "toms_storage:ts.open_crate",
+    "toms_storage:ts.inventory_proxy"
+   ]
+  },
+  {
+   "hub": "toms_storage:ts.storage_terminal",
+   "members": [
+    "toms_storage:ts.crafting_terminal",
+    "toms_storage:ts.wireless_terminal",
+    "toms_storage:ts.adv_wireless_terminal",
+    "toms_storage:ts.trim",
+    "toms_storage:ts.painted_trim",
+    "toms_storage:ts.paint_kit"
+   ]
+  },
+  {
+   "hub": "toms_storage:ts.item_filter",
+   "members": [
+    "toms_storage:ts.tag_item_filter",
+    "toms_storage:ts.polymorphic_item_filter",
+    "toms_storage:ts.inventory_cable_connector_filtered",
+    "toms_storage:ts.level_emitter",
+    "toms_storage:ts.inventory_proxy"
+   ]
+  }
+ ],
+ "notes": "All 20 ids verified against assets/toms_storage/models/item/*.json intersected with item./block. lang keys - the model stems and lang keys matched exactly, so nothing was dropped. Note the mandatory 'ts.' prefix on every registry name (toms_storage:ts.storage_terminal, not toms_storage:storage_terminal). Progression derived from the 21 recipe files in data/toms_storage/recipes/**, cross-checked against the mod's own docs: the minimum viable network is inventory_connector + storage_terminal placed on it, cables extend reach, filters gate intake, crafting_terminal upgrades the storage_terminal with a crafting table and diamonds, and the endgame is wireless_terminal -> adv_wireless_terminal via smithing_transform. Nothing in the mod uses energy. Only ts.painted_trim has no crafting recipe of its own - it is produced in-world by applying ts.paint_kit to a placed ts.trim, and trim_clean.json converts it back with a water bucket, which confirms it as a legitimate obtainable item. No unverifiable ids were written."
+}

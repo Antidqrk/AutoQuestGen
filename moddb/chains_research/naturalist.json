@@ -1,0 +1,169 @@
+{
+ "mod": "naturalist",
+ "verified_against": "naturalist-5.0pre4+forge-1.20.1.jar",
+ "item_count_in_jar": 81,
+ "chain": [
+  {
+   "id": "naturalist:bug_net",
+   "title": "Catch and Release",
+   "desc": "Bamboo and string. The Bug Net is the only tool Naturalist adds and the only way to pick up a butterfly, caterpillar or snail intact."
+  },
+  {
+   "id": "kill:naturalist:firefly",
+   "title": "Lights in the Long Grass",
+   "desc": "Fireflies drift over grass and dirt at night in warm biomes. Their loot table drops Glow Goop."
+  },
+  {
+   "id": "naturalist:glow_goop",
+   "title": "Bottled Dusk",
+   "desc": "Glow Goop comes off fireflies, or from smelting, smoking or campfiring glow berries. Four of them and an arrow make a spectral arrow."
+  },
+  {
+   "id": "kill:naturalist:snail",
+   "title": "Slow Loot",
+   "desc": "Snails come in seventeen shell colours and drop a slime ball plus a Snail Shell. Boars and snakes hunt them, so find one first."
+  },
+  {
+   "id": "naturalist:snail_shell",
+   "title": "Empty House",
+   "desc": "The Snail Shell is the mod's only crafting reagent, and the whole Shellstone building set is built from it."
+  },
+  {
+   "id": "naturalist:shellstone",
+   "title": "Calcite and Calcium",
+   "desc": "Four calcite around four Snail Shells. Shellstone is the base of a full vanilla-style stone family: bricks, smooth, cut, and their slabs, stairs and walls."
+  },
+  {
+   "id": "kill:naturalist:deer",
+   "title": "Venison Season",
+   "desc": "Deer graze the forests in herds and flee on sight. They drop leather and Venison, and bears hunt them too - #naturalist:deer_predators says so."
+  },
+  {
+   "id": "naturalist:venison",
+   "title": "Raw Cut",
+   "desc": "Venison is the deer's meat drop and the first food this mod gives you that beats vanilla porkchop."
+  },
+  {
+   "id": "naturalist:cooked_venison",
+   "title": "Over the Coals",
+   "desc": "Furnace, smoker or campfire. Cooked Venison is also a tempt item for bears, which is a worse idea than it sounds."
+  },
+  {
+   "id": "kill:naturalist:bear",
+   "title": "Do Not Feed the Bears",
+   "desc": "Bears sleep in the day, wake angry, and hunt salmon and deer. They drop Fur - though shears take it without the fight."
+  },
+  {
+   "id": "naturalist:fur",
+   "title": "Shorn, Not Skinned",
+   "desc": "Fur comes off bears and lions. It sits in #naturalist:bear_furs alongside Alex's Mobs bear fur, so recipes that want one take either."
+  },
+  {
+   "id": "naturalist:teddy_bear",
+   "title": "Stuffed and Mounted",
+   "desc": "Four string around one wool. A placeable Teddy Bear - the mod's one purely decorative craft, and the reward for having survived the real thing."
+  },
+  {
+   "id": "kill:naturalist:duck",
+   "title": "Sitting Duck",
+   "desc": "Ducks paddle on water and nest on the shore. They drop feathers and raw Duck, and they are tempted by anything in #forge:raw_fishes."
+  },
+  {
+   "id": "naturalist:duck_egg",
+   "title": "Better Than the Chicken's",
+   "desc": "Ducks lay these on their own. Naturalist rewrites the vanilla cake and pumpkin pie recipes to accept a Duck Egg in place of a chicken egg."
+  },
+  {
+   "id": "naturalist:cooked_egg",
+   "title": "Breakfast, Finally",
+   "desc": "Smelt anything in #naturalist:eggs - duck, tortoise, alligator or a plain chicken egg - and you get a Cooked Egg."
+  },
+  {
+   "id": "kill:naturalist:dragonfly",
+   "title": "Wings Over the Marsh",
+   "desc": "Dragonflies hover over swamp water and are frog food. Their loot table is the only source of Froglass, in azure, crimson or verdant."
+  },
+  {
+   "id": "naturalist:verdant_froglass",
+   "title": "Glass From a Frog's Eye",
+   "desc": "Verdant Froglass and its two siblings come only off dragonflies, and each cuts into six panes the way vanilla glass does."
+  },
+  {
+   "id": "kill:naturalist:vulture",
+   "title": "Circling Overhead",
+   "desc": "Vultures spawn over badlands and deserts and attack the undead on sight - #naturalist:vulture_hostiles lists zombies, husks, zoglins and the rest."
+  },
+  {
+   "id": "kill:naturalist:elephant",
+   "title": "Room-Sized Problem",
+   "desc": "Elephants roam the savanna, can be saddled with a chest and ridden, and drop leather and Bushmeat when they finally go down."
+  },
+  {
+   "id": "naturalist:bushmeat",
+   "title": "The Big Game Cut",
+   "desc": "Bushmeat is what elephants, giraffes and rhinos drop, and it is the mod's heaviest raw food."
+  },
+  {
+   "id": "naturalist:cooked_bushmeat",
+   "title": "Feast of the Savanna",
+   "desc": "Furnace, smoker or campfire again. Cooked Bushmeat is the top of Naturalist's food ladder."
+  },
+  {
+   "id": "kill:naturalist:alligator",
+   "title": "Death Roll",
+   "desc": "Alligators lurk in swamp water, drag deer, snakes and frogs under, and lay Alligator Eggs on the bank. They have no loot table - the kill is the point."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "naturalist:shellstone_bricks",
+   "members": [
+    "naturalist:shellstone_slab",
+    "naturalist:shellstone_stairs",
+    "naturalist:shellstone_wall",
+    "naturalist:smooth_shellstone",
+    "naturalist:cut_shellstone",
+    "naturalist:shellstone_brick_slab",
+    "naturalist:shellstone_brick_stairs",
+    "naturalist:shellstone_brick_wall",
+    "naturalist:smooth_shellstone_slab",
+    "naturalist:smooth_shellstone_stairs",
+    "naturalist:smooth_shellstone_wall",
+    "naturalist:cut_shellstone_slab",
+    "naturalist:cut_shellstone_stairs",
+    "naturalist:cut_shellstone_wall"
+   ]
+  },
+  {
+   "hub": "naturalist:bass",
+   "members": [
+    "naturalist:catfish",
+    "naturalist:duck",
+    "naturalist:lizard_tail",
+    "naturalist:cooked_bass",
+    "naturalist:cooked_catfish",
+    "naturalist:cooked_duck",
+    "naturalist:cooked_lizard_tail",
+    "naturalist:bass_bucket",
+    "naturalist:catfish_bucket",
+    "naturalist:snail_bucket"
+   ]
+  },
+  {
+   "hub": "naturalist:azure_froglass",
+   "members": [
+    "naturalist:crimson_froglass",
+    "naturalist:azure_froglass_pane",
+    "naturalist:crimson_froglass_pane",
+    "naturalist:verdant_froglass_pane",
+    "naturalist:snail_eggs",
+    "naturalist:chrysalis",
+    "naturalist:alligator_egg",
+    "naturalist:tortoise_egg",
+    "naturalist:butterfly",
+    "naturalist:caterpillar"
+   ]
+  }
+ ],
+ "notes": "JAR CHOICE: naturalist-5.0pre4+forge-1.20.1.jar is the newest 1.20.1 Forge build on Modrinth (mods.toml modId=\"naturalist\", version 5.0pre4, forge \"[41.0.98,)\", minecraft \"[1.20.1,)\", mandatory geckolib \"[4.0.0,)\"; no fabric.mod.json). It is flagged beta, so 4.0.3 - the last stable - was downloaded and diffed as a control. 5.0pre4 turned out to be the CLEANER target: 4.0.3 ships item lang keys for hyena_spawn_egg, moth_spawn_egg, ostrich_spawn_egg and termite_spawn_egg whose entities are not registered at all, which is four uncompletable quests waiting to happen; 5.0pre4 has removed those item keys and kept only the models. Both jars register the same 30 mobs. ID DETECTION AND WIDENING: naive models/item counting is badly wrong here - there are 119 item models against 86 strictly-matched 3-segment lang keys, because the seventeen snail-bucket dye colours, the five butterfly wings and the three dragonfly colours all have their own models. The count used, 81, is the 86 lang-named item./block. ids MINUS five that are referenced nowhere in the jar. NO widening was needed: every id that survives has both a lang key and either a model or a blockstate. FIVE LANG-ONLY IDS DROPPED: naturalist:cattail, naturalist:cattail_fluff, naturalist:duckweed, naturalist:ostrich_egg and naturalist:cooked_fish_fillet all have en_us entries but appear in ZERO class files and ZERO data files - cattail and duckweed even keep blockstates and models, but the block itself is not registered in this build. A sixth id, naturalist:animal_crate, has a blockstate (proving block registration) but NO lang key at all, so it would render as a raw translation key in a quest; excluded. SEVENTH DROP, FOR OBTAINABILITY: naturalist:antler IS registered - the string is in NaturalistRegistry.class - but it has no recipe, no loot table, and does not appear in a single data file; deer drop leather and venison only. It is creative-tab-only in this build and is the one verified id this file deliberately leaves unused. Also dropped, as pure render leftovers with no lang key: drumstick, cooked_drumstick, fish_fillet, grub, grub_on_a_stick, worm, reptile_hide, hyena_spawn_egg, moth_spawn_egg, ostrich_spawn_egg, termite_spawn_egg. ENTITY VERIFICATION - THIRTY MOBS, EACH PROVEN THREE WAYS. Proof 1: the registry name appears in com/starfish_studios/naturalist/core/registry/NaturalistEntityTypes.class. Proof 2: a matching item.naturalist.<name>_spawn_egg lang key exists - there are exactly 30 spawn eggs. Proof 3: membership in data/naturalist/tags/entity_types/naturalist_entities.json, which lists exactly 30 values. The three sets agree perfectly: alligator, bass, bear, bluejay, boar, butterfly, canary, cardinal, caterpillar, catfish, coral_snake, deer, dragonfly, duck, elephant, finch, firefly, giraffe, hippo, lion, lizard, rattlesnake, rhino, robin, snail, snake, sparrow, tortoise, vulture, zebra. Twenty-five of them additionally have entity loot tables; alligator, coral_snake, lizard, rattlesnake, snake and zebra do not, which is why the Alligator step is written as a kill for its own sake. Spawning itself is code-driven - data/naturalist/forge/biome_modifier/add_animals.json is a custom naturalist:add_animals codec with no readable spawn list - so the spawn egg plus tag plus registry triple is the proof used, not a biome modifier. THREE ENTITY KEYS EXCLUDED AS TRAPS: entity.naturalist.ostrich has a lang key and even a matching ostrich_egg block and three egg textures, but the string 'ostrich' does not occur in NaturalistEntityTypes.class, there is no spawn egg, and it is absent from naturalist_entities.json - the mob was cut and the strings were left behind, so kill:naturalist:ostrich would never complete. entity.naturalist.lizard_tail IS registered and even has its own loot table, but it is the shed tail a lizard drops and then leaves twitching on the ground - a body part, not a mob; the ITEM naturalist:lizard_tail is questable and is wheeled, the entity is not. naturalist:duck_egg is registered as a thrown projectile entity with no entity lang key - same name collision, item questable, entity not. A fourth string, 'moose', appears in NaturalistEntityTypes.class with a moose.png texture but has no lang key, no spawn egg and no tag membership; excluded (the moose that Naturalist actually references in #naturalist:bear_hostiles and #naturalist:deer_predators is alexsmobs:moose, marked required:false). SEVEN IDS USED HERE ARE OBTAINED BY CODE, NOT BY RECIPE OR LOOT TABLE, and each was traced before being used: naturalist:duck_egg is laid by ducks on a timer (the same way vanilla chickens lay); naturalist:bass_bucket, naturalist:catfish_bucket and naturalist:snail_bucket come from right-clicking the live mob with a water bucket, via the Bucketable path in the entity classes; naturalist:snail_eggs is laid by bred snails; naturalist:butterfly and naturalist:caterpillar are the caught-mob item forms produced by the Bug Net, which is why the net is step one - the proof is com/starfish_studios/naturalist/item/forge/CaughtMobItem.class together with Butterfly.class and Caterpillar.class, and the fifteen butterfly/caterpillar sub-models are NBT variants of those two ids rather than separate items. Note that in this build the data-driven naturalist:net recipe type ships exactly ONE example (catch_bee.json, bee -> dirt), so bug-netting is code-side for the mod's own mobs and datapack-side for anything else. ORDERING is the recipe graph plus mob accessibility, since there is no metal tier to sort by: bug_net first because it is the only crafted tool and the gate on butterfly, caterpillar and snail items; then the two forageable drops that feed crafts (glow_goop, snail_shell -> shellstone); then the forest food loop (deer -> venison -> cooked_venison, bear -> fur -> teddy_bear); then the water-and-egg loop (duck -> duck_egg -> cooked_egg); then swamp (dragonfly -> froglass); then the late-game savanna megafauna (vulture, elephant -> bushmeat -> cooked_bushmeat) and the alligator. Slabs, stairs, walls and the smooth/cut variants are kept out of the chain per the desirability rule and wheeled instead, which is exactly what the fourteen-member Shellstone wheel is for. NO SPAWN-EGG WHEEL: thirty eggs is more than double the 14-member cap and splitting them would produce two wheels of pure creative-tab items, so they are left out entirely - unlike Creeper Overhaul, this mod has enough real items that padding is unnecessary. ACCOUNTING: 13 chain items + 37 wheel ids + 30 spawn eggs + antler = 81, the full verified set. CONSENSUS: naturalist is absent from moddb.json, so there is no pack ordering to cross-check and no conflict to record."
+}

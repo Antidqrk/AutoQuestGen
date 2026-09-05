@@ -1,0 +1,139 @@
+{
+ "mod": "crittersandcompanions",
+ "verified_against": "crittersandcompanions-forge-1.20.1-2.7.1.jar",
+ "item_count_in_jar": 39,
+ "chain": [
+  {
+   "id": "crittersandcompanions:acorn",
+   "title": "Shake The Oak",
+   "desc": "Acorns fall from oak leaves through data/crittersandcompanions/loot_modifiers/inject_oak_leaves_acorn.json, at 5 percent and scaling with Fortune. The very first thing this mod gives you and it costs nothing."
+  },
+  {
+   "id": "crittersandcompanions:acorn_hat",
+   "title": "Wear It",
+   "desc": "Acorns alone. The acorn hat is armour in the helmet slot and is the mod stating its intentions up front: this is a cosy mod."
+  },
+  {
+   "id": "crittersandcompanions:silk_cocoon",
+   "title": "Something Hanging In The Trees",
+   "desc": "Silk cocoons are placed by four worldgen features, two in ordinary forests and two in lush caves. Break one and it rolls silk, a dragonfly wing, an ender pearl or a name tag."
+  },
+  {
+   "id": "kill:crittersandcompanions:jumping_spider",
+   "title": "The Small One With Big Eyes",
+   "desc": "Jumping spiders are the mod's only genuinely hostile critter and its loot table is silk plus spider eyes."
+  },
+  {
+   "id": "crittersandcompanions:silk",
+   "title": "Better Than String",
+   "desc": "Silk crafts back into vanilla string, but that is not the point. Silk is the reagent for the lead and the grappling hook."
+  },
+  {
+   "id": "crittersandcompanions:silk_lead",
+   "title": "A Lead For Small Things",
+   "desc": "Silk and a slimeball. The silk lead exists because the animals in this mod are too small for a vanilla lead to look right on."
+  },
+  {
+   "id": "crittersandcompanions:grappling_hook",
+   "title": "Silk And Iron",
+   "desc": "Iron ingots and silk. The grappling hook is the one item in the mod that changes how you move, and it is the reason the jumping spider is worth hunting."
+  },
+  {
+   "id": "kill:crittersandcompanions:dragonfly",
+   "title": "Catch A Dragonfly",
+   "desc": "Dragonflies hover over water and drop a wing. They are also the only critter here you can ride, once you have the armour for one."
+  },
+  {
+   "id": "crittersandcompanions:dragonfly_wing",
+   "title": "One Wing",
+   "desc": "Dragonfly wings drop from the dragonfly itself and roll out of silk cocoons. They are what the armour hangs off."
+  },
+  {
+   "id": "crittersandcompanions:iron_dragonfly_armor",
+   "title": "Barding For A Bug",
+   "desc": "Six iron ingots in the barding shape. Dragonfly armour is real horse-armour-style equipment for a mount the size of your hand."
+  },
+  {
+   "id": "crittersandcompanions:diamond_dragonfly_armor",
+   "title": "Diamond On A Dragonfly",
+   "desc": "The same six-slot shape in diamond. It is absurd and that is exactly why people install this mod."
+  },
+  {
+   "id": "crittersandcompanions:netherite_dragonfly_armor",
+   "title": "The Last Barding",
+   "desc": "Netherite upgrade template, the diamond armour and a netherite ingot. A smithing_transform, so it needs a real smithing table and a real trip to a bastion."
+  },
+  {
+   "id": "crittersandcompanions:clam",
+   "title": "Found On The Sea Floor",
+   "desc": "Clams are injected at 10 percent into shipwreck treasure and both sizes of underwater ruin chest, and a second loot modifier puts them on the fishing table. They are also otter food."
+  },
+  {
+   "id": "crittersandcompanions:pearl",
+   "title": "Let The Otter Open It",
+   "desc": "You cannot open a clam yourself. Give it to an otter - OtterEntity carries a standing_eat_clam animation and the pearl constant right next to it - and the otter cracks it for you. That is the only source of pearls in the mod."
+  },
+  {
+   "id": "crittersandcompanions:pearl_necklace_1",
+   "title": "One Pearl",
+   "desc": "A single pearl on a string. The necklaces are Curios-slot cosmetics and they stack upward."
+  },
+  {
+   "id": "crittersandcompanions:pearl_necklace_3",
+   "title": "Three Pearls",
+   "desc": "Necklace two plus another pearl, having been necklace one plus a pearl before that. Three otter-cracked clams for the full strand."
+  },
+  {
+   "id": "crittersandcompanions:koi_fish",
+   "title": "The Pond Fish",
+   "desc": "Koi drop themselves as an item when killed, alongside bone meal. They are the ornamental half of the mod's water content."
+  },
+  {
+   "id": "crittersandcompanions:koi_fish_bucket",
+   "title": "Take It Home Instead",
+   "desc": "A bucket on a live koi. Every aquatic critter here has a bucket form, which is how you move a pond rather than farm it."
+  },
+  {
+   "id": "crittersandcompanions:snail_slime_bottle",
+   "title": "Bottled Off A Snail",
+   "desc": "A glass bottle used on a snail. It crafts straight back into a vanilla slimeball, which makes snails a slime farm that does not need a slime chunk."
+  },
+  {
+   "id": "crittersandcompanions:sea_bunny_slime_bottle",
+   "title": "Bottled Off A Sea Bunny",
+   "desc": "The saltwater equivalent. Sea bunnies are the nudibranchs on the reef and they are the mod's most-screenshotted mob."
+  },
+  {
+   "id": "crittersandcompanions:sea_bunny_slime_block",
+   "title": "A Block Of It",
+   "desc": "Nine sea bunny slime bottles. The block is the only building block the whole mod adds."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "crittersandcompanions:koi_fish_bucket",
+   "members": [
+    "crittersandcompanions:sea_bunny_bucket",
+    "crittersandcompanions:dumbo_octopus_bucket",
+    "crittersandcompanions:snail_slime_bottle",
+    "crittersandcompanions:sea_bunny_slime_bottle",
+    "crittersandcompanions:sea_bunny_slime_block"
+   ]
+  },
+  {
+   "hub": "crittersandcompanions:iron_dragonfly_armor",
+   "members": [
+    "crittersandcompanions:gold_dragonfly_armor",
+    "crittersandcompanions:diamond_dragonfly_armor",
+    "crittersandcompanions:netherite_dragonfly_armor",
+    "crittersandcompanions:pearl_necklace_1",
+    "crittersandcompanions:pearl_necklace_2",
+    "crittersandcompanions:pearl_necklace_3",
+    "crittersandcompanions:acorn_hat",
+    "crittersandcompanions:silk_lead",
+    "crittersandcompanions:grappling_hook"
+   ]
+  }
+ ],
+ "notes": "LOADER: META-INF/mods.toml, modId crittersandcompanions, 1.20.1 Forge. Modrinth slug is critters-and-companions. VERIFICATION, TWO PASSES: pass A took the 44 assets/crittersandcompanions/models/item stems INTERSECT the item./block. lang keys and gave 39. Pass B independently rebuilt from recipe results, loot-table entry names, blockstates and lang keys and gave 47. All 8 differences resolved and none is an item: dumbo_octopus_bucket_1/_2/_3 and sea_bunny_bucket_1/_2 are per-variant model overrides for the SINGLE bucket item (the octopus and the sea bunny have colour variants stored on the entity, and the bucket picks its model from that), and gameplay/digging/common, /trash and /treasure are nested loot tables. Final count stays 39. THE HONEST NUMBER IS 23, NOT 39. Sixteen of the 39 ids are spawn eggs - dragonfly, dumbo_octopus, ferret, jumping_spider, koi_fish, ladybug, leaf_insect, otter, red_panda, roly_poly, sea_bunny, shima_enaga, snail, stag_beetle, stick_bug and weevil - and every one of them has zero references anywhere in data/: no recipe, no loot table, no trade. They are creative-tab only. A sixteen-member spawn-egg wheel would be sixteen uncompletable quests, so no spawn egg appears anywhere in this file. That leaves 23 obtainable ids. The chain is 21 steps and deliberately not padded - and because 23 is the whole mod, the two wheels are necessarily made mostly of ids the spine already touched. Treat them as completionist hubs (the full bucket-and-bottle set, the full wearables set), not as new content. Only gold_dragonfly_armor, sea_bunny_bucket, dumbo_octopus_bucket and pearl_necklace_2 are wheel-only. ENTITIES: 17 entity.crittersandcompanions.* lang keys exist but one of them, grappling_hook, is the thrown hook projectile and is NOT a mob - it is excluded, exactly as a projectile should be. The other 16 are real entity types, each confirmed twice over by a spawn egg item and by the lang key, and three of them appear in minecraft:entity_types/axolotl_hunt_targets (dumbo_octopus, koi_fish, sea_bunny) which is definitive registration. Only FOUR have loot tables - dragonfly, jumping_spider, koi_fish and shima_enaga - so those are the only mobs a kill: step can honestly target, and this file uses two of them (jumping_spider for silk, dragonfly for the wing). The other twelve are companions with no drops; killing an otter or a red panda gives you nothing and would make a dead-end task. OBTAINABILITY, the interesting cases: crittersandcompanions:acorn has no recipe and no loot table, but data/crittersandcompanions/loot_modifiers/inject_oak_leaves_acorn.json adds it to minecraft:blocks/oak_leaves at a 5 percent base rate with a Fortune table bonus. crittersandcompanions:clam likewise comes from three loot modifiers - inject_clams.json (10 percent into shipwreck_treasure, underwater_ruin_small and underwater_ruin_big), inject_fishing.json and replace_drowned_flesh.json. crittersandcompanions:pearl was the hard one: it appears in six places in data/ and every one is as a recipe INGREDIENT, never as a result or a drop. The proof of its source is a class constant - io/github/bonsaistudi0s/crittersandcompanions/common/entity/OtterEntity.class contains the strings 'pearl' and 'standing_eat_clam' together, which is the otter-cracks-a-clam mechanic. Pearls are obtainable, but only through an otter, and a quest for one should say so. The five bucket and bottle items (koi_fish_bucket, sea_bunny_bucket, dumbo_octopus_bucket, snail_slime_bottle, sea_bunny_slime_bottle) have no recipes either and are obtained by using an empty bucket or bottle on the live mob, which is standard and verified by their presence in CACItems.class. crittersandcompanions:silk_cocoon is placed by four worldgen features (silk_cocoon, silk_cocoon_lush, hanging_silk_cocoon, hanging_silk_cocoon_lush) and drops itself. GRAPH: the only real internal dependencies are silk -> silk_lead and silk -> grappling_hook; dragonfly_wing -> nothing (the armours are pure metal, the wing is a trophy); pearl -> pearl_necklace_1 -> _2 -> _3, a genuine three-step ladder; sea_bunny_slime_bottle -> sea_bunny_slime_block; and diamond_dragonfly_armor -> netherite_dragonfly_armor via smithing_transform. Everything else is flat. CONSENSUS: moddb.json lists 16 crittersandcompanions ids and all 16 resolve in this jar - dragonfly_wing, pearl, the three pearl necklaces, silk_cocoon, sea_bunny_slime_block, silk, the four dragonfly armours, koi_fish, sea_bunny_slime_bottle, silk_lead, clam and grappling_hook. Notably moddb contains ZERO spawn eggs, which independently confirms that published packs do not quest them either. No conflict with the recipe graph. DESIRABILITY: nothing dropped for shape; this mod has no ores, nuggets, slabs or stairs at all."
+}

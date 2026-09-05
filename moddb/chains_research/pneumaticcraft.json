@@ -1,0 +1,118 @@
+{
+  "mod": "pneumaticcraft",
+  "verified_against": "pneumaticcraft-repressurized-6.0.23+mc1.20.1.jar",
+  "item_count_in_jar": 309,
+  "chain": [
+    {
+      "id": "pneumaticcraft:ingot_iron_compressed",
+      "title": "Compressed Iron",
+      "desc": "Blow up iron ingots or blocks with TNT; about 20% is lost to the blast, and a Pressure Chamber later does the same job losslessly."
+    },
+    {
+      "id": "pneumaticcraft:pressure_tube",
+      "title": "Pressure Tube",
+      "desc": "Craft two compressed iron ingots around glass to make the tubes that carry compressed air between every machine."
+    },
+    {
+      "id": "pneumaticcraft:air_compressor",
+      "title": "Air Compressor",
+      "desc": "Craft it from reinforced stone bricks around a furnace and a pressure tube; it burns solid fuel like coal to build your first air pressure."
+    },
+    {
+      "id": "pneumaticcraft:pressure_chamber_wall",
+      "title": "Pressure Chamber",
+      "desc": "Craft walls from reinforced bricks plus a valve and interface, then build a hollow cube where high pressure crafts compressed iron, PCBs and more without loss."
+    },
+    {
+      "id": "pneumaticcraft:charging_station",
+      "title": "Charging Station",
+      "desc": "Craft it from bricks, a reinforced stone slab and a pressure tube; piped air charges air canisters, pneumatic tools and armor placed on it."
+    },
+    {
+      "id": "pneumaticcraft:pneumatic_wrench",
+      "title": "Pneumatic Wrench",
+      "desc": "Craft compressed iron around an air canister and a lever; the charged wrench rotates and safely dismantles PneumaticCraft machines."
+    },
+    {
+      "id": "pneumaticcraft:liquid_compressor",
+      "title": "Liquid Compressor",
+      "desc": "Upgrade the Air Compressor with a small tank and leather so it burns liquid fuels, which yield far more air than coal."
+    },
+    {
+      "id": "pneumaticcraft:seismic_sensor",
+      "title": "Seismic Sensor",
+      "desc": "Place it over bedrock-level terrain and drop TNT nearby; the shockwave readout reveals crude oil lakes hidden underground to pump for fuel."
+    },
+    {
+      "id": "pneumaticcraft:refinery",
+      "title": "Oil Refinery",
+      "desc": "Stack a refinery base with output towers, heat it past 100C, and crude oil distills into fractions like diesel, kerosene, gasoline and LPG."
+    },
+    {
+      "id": "pneumaticcraft:thermopneumatic_processing_plant",
+      "title": "Thermopneumatic Processing Plant",
+      "desc": "Craft it from reinforced stone slabs, a small tank and a pressure tube; heated and pressurized it converts LPG or biodiesel plus coal or charcoal into molten plastic."
+    },
+    {
+      "id": "pneumaticcraft:plastic",
+      "title": "Plastic Sheet",
+      "desc": "Cool molten plastic below 0C, classically with a Heat Frame chilled by a Vortex Tube, to solidify it into plastic sheets."
+    },
+    {
+      "id": "pneumaticcraft:empty_pcb",
+      "title": "Empty PCB",
+      "desc": "Pressure-chamber a plastic sheet with two redstone torches and three wires at 1.5 bar to produce three empty circuit boards."
+    },
+    {
+      "id": "pneumaticcraft:uv_light_box",
+      "title": "UV Light Box",
+      "desc": "Craft redstone lamps, compressed iron, a pressure tube and a PCB blueprint into the box that exposes empty PCBs; longer exposure means higher etching success."
+    },
+    {
+      "id": "pneumaticcraft:etching_tank",
+      "title": "Etching Tank",
+      "desc": "Fill this obsidian-and-glass tank with etching acid (made in the Pressure Chamber) to etch exposed PCBs, with failures recyclable back to empty boards."
+    },
+    {
+      "id": "pneumaticcraft:unassembled_pcb",
+      "title": "Unassembled PCB",
+      "desc": "The successful product of etching an exposed PCB; an Assembly Laser can alternatively make these straight from empty PCBs."
+    },
+    {
+      "id": "pneumaticcraft:printed_circuit_board",
+      "title": "Printed Circuit Board",
+      "desc": "Craft an unassembled PCB with two capacitors and two transistors, both pressure-chambered from plastic, wires, slime and redstone."
+    },
+    {
+      "id": "pneumaticcraft:assembly_controller",
+      "title": "Assembly Line",
+      "desc": "Craft the controller from PCBs, compressed iron and a pressure tube, then add a platform, IO units, drill and laser plus a program to automate PCB and tube production."
+    },
+    {
+      "id": "pneumaticcraft:drone",
+      "title": "Drone",
+      "desc": "Craft four turbine rotors around a printed circuit board to build a programmable flying robot."
+    },
+    {
+      "id": "pneumaticcraft:programmer",
+      "title": "Programmer",
+      "desc": "Craft it from a PCB, turbine rotors, plastic sheets and black glass panes; puzzle-piece programs written here tell drones to dig, farm, guard or haul."
+    },
+    {
+      "id": "pneumaticcraft:amadron_tablet",
+      "title": "Amadron Tablet",
+      "desc": "Craft plastic sheets around a GPS Tool and air canister, charge it, and trade with the airborne Amadron delivery network from anywhere."
+    },
+    {
+      "id": "pneumaticcraft:flux_compressor",
+      "title": "Flux Compressor",
+      "desc": "Craft it from a PCB, compressed iron gear, turbine rotor, advanced pressure tube, redstone and a blast furnace; it turns Forge Energy directly into high-pressure air."
+    },
+    {
+      "id": "pneumaticcraft:aerial_interface",
+      "title": "Aerial Interface",
+      "desc": "The endgame block, crafted around a nether star with ender pearls and pressure chamber walls, links directly to your inventory and feeds your pneumatic armor air remotely."
+    }
+  ],
+  "notes": "All 22 ids set-checked against assets/pneumaticcraft/models/item + en_us lang keys of 6.0.23 (309 verified items). Facts confirmed from data/pneumaticcraft/recipes in the jar: explosion_crafting/compressed_iron_ingot.json (20% loss_rate), pressure_chamber/empty_pcb.json (1.5 bar), refinery/oil recipes (373K min temp, diesel/LPG outputs), thermo_plant/plastic_from_biodiesel.json, heat_frame_cooling/plastic.json (max_temp 273K), assembly/unassembled_pcb.json, printed_circuit_board.json, drone.json, flux_compressor.json, aerial_interface.json. Transistor and capacitor exist as items but were folded into the PCB entry to keep the chain milestone-only. No kill: or dim: entries needed. Nothing dropped."
+}

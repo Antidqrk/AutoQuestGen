@@ -1,0 +1,107 @@
+{
+ "mod": "artifacts",
+ "jar": "artifacts__artifacts-forge-9.5.19.jar",
+ "ids_in_jar": 45,
+ "entities_in_jar": 1,
+ "videos": [],
+ "items": {},
+ "entities": {},
+ "note": "no transcript reached; human_notes are jar-derived",
+ "human_notes": {
+  "_source": "jar (loot tables incl. the shared artifact pool, mimic entity).",
+  "boss_order": [],
+  "prep": [
+   "Artifacts are found, never crafted — there is a single shared pool of 42 artifacts rolled with a rarity-adjusted chance",
+   "The mod adds its own campsite structure (chest and barrel loot tables) as the intended source"
+  ],
+  "order": [
+   "Explore for campsite chests; kill entity:artifacts:mimic (its own loot table and kill advancement) for a guaranteed roll",
+   "There is no tier ladder — any artifact can appear at any point, so quests should reward exploration breadth rather than sequence"
+  ],
+  "key_drops": [
+   "artifacts:umbrella, artifacts:cloud_in_a_bottle, artifacts:helium_flamingo — mobility",
+   "artifacts:antidote_vessel, artifacts:obsidian_skull, artifacts:cross_necklace, artifacts:panic_necklace — survivability",
+   "artifacts:digging_claws, artifacts:pickaxe_heater, artifacts:universal_attractor — utility",
+   "artifacts:everlasting_beef and artifacts:eternal_steak — infinite food"
+  ],
+  "traps": [
+   "artifacts:umbrella_blocking, :umbrella_gui, :umbrella_idle, :umbrella_held_idle, :umbrella_held_blocking are RENDER STATES with no translation key, not obtainable items. Only artifacts:umbrella is real",
+   "entity:artifacts:mimic is the mod's only entity — everything else here is an item"
+  ],
+  "signature": [
+   "entity:artifacts:mimic",
+   "artifacts:umbrella",
+   "artifacts:cloud_in_a_bottle",
+   "artifacts:feral_claws",
+   "artifacts:crystal_heart",
+   "artifacts:power_glove"
+  ]
+ },
+ "verified_entities": {
+  "artifacts:mimic": {
+   "name": "Mimic",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  }
+ },
+ "unusable_entities": {},
+ "fake_item_ids": [
+  "artifacts:umbrella_blocking",
+  "artifacts:umbrella_gui",
+  "artifacts:umbrella_held_blocking",
+  "artifacts:umbrella_held_idle",
+  "artifacts:umbrella_idle"
+ ],
+ "verified_items": [
+  "artifacts:anglers_hat",
+  "artifacts:antidote_vessel",
+  "artifacts:aqua_dashers",
+  "artifacts:bunny_hoppers",
+  "artifacts:charm_of_sinking",
+  "artifacts:chorus_totem",
+  "artifacts:cloud_in_a_bottle",
+  "artifacts:cowboy_hat",
+  "artifacts:cross_necklace",
+  "artifacts:crystal_heart",
+  "artifacts:digging_claws",
+  "artifacts:eternal_steak",
+  "artifacts:everlasting_beef",
+  "artifacts:feral_claws",
+  "artifacts:fire_gauntlet",
+  "artifacts:flame_pendant",
+  "artifacts:flippers",
+  "artifacts:golden_hook",
+  "artifacts:helium_flamingo",
+  "artifacts:kitty_slippers",
+  "artifacts:lucky_scarf",
+  "artifacts:mimic_spawn_egg",
+  "artifacts:night_vision_goggles",
+  "artifacts:novelty_drinking_hat",
+  "artifacts:obsidian_skull",
+  "artifacts:onion_ring",
+  "artifacts:panic_necklace",
+  "artifacts:pickaxe_heater",
+  "artifacts:plastic_drinking_hat",
+  "artifacts:pocket_piston",
+  "artifacts:power_glove",
+  "artifacts:rooted_boots",
+  "artifacts:running_shoes",
+  "artifacts:scarf_of_invisibility",
+  "artifacts:shock_pendant",
+  "artifacts:snorkel",
+  "artifacts:snowshoes",
+  "artifacts:steadfast_spikes",
+  "artifacts:superstitious_hat",
+  "artifacts:thorn_pendant",
+  "artifacts:umbrella",
+  "artifacts:universal_attractor",
+  "artifacts:vampiric_glove",
+  "artifacts:villager_hat",
+  "artifacts:whoopee_cushion"
+ ]
+}

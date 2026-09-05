@@ -1,0 +1,146 @@
+{
+ "mod": "goety_cataclysm",
+ "verified_against": "goety_cataclysm-1.20-1.8.2.jar",
+ "item_count_in_jar": 74,
+ "chain": [
+  {
+   "id": "goety_cataclysm:mechanized_iron_block",
+   "title": "Reverse Engineering",
+   "desc": "Craft a Mechanized Iron Block from iron ingots and redstone - your first replica of the Ancient Factory's machinery."
+  },
+  {
+   "id": "goety_cataclysm:water_spear_focus",
+   "title": "Spear of the Tides",
+   "desc": "Frame a Bouncy Bubble Focus with pointed dripstone and four Lacrima (from Cataclysm's Hippocamtus) to craft the Water Spear Focus."
+  },
+  {
+   "id": "goety_cataclysm:abyss_essence",
+   "title": "Authority over the Abyss",
+   "desc": "Slay Cataclysm's Leviathan to claim Abyss Essence - proof of victory that grants command over her Deepling subjects - then duplicate it with crying obsidian and obsidian."
+  },
+  {
+   "id": "goety_cataclysm:sunken_swell_focus",
+   "title": "Calling the Deeplings",
+   "desc": "Perform a Deep ritual on a Hunting Focus with a fishing rod, Coral Spear, ender pearl and two Abyss Essences to craft the Sunken Swell Focus and summon Deepling Servants."
+  },
+  {
+   "id": "goety_cataclysm:sunken_tribune_focus",
+   "title": "Court of the Sunken City",
+   "desc": "Elevate the Sunken Swell Focus with an Athame and two Abyss Essences; Deepling Priests and Warlocks can be converted from your servants with Athames on the altar."
+  },
+  {
+   "id": "goety_cataclysm:abyssal_beam_focus",
+   "title": "Light of the Trench",
+   "desc": "Deep-ritual a Prisma Beam Focus with an Athame, Abyss Essence, phantom membrane, Ectoplasm and an amethyst block into the Abyssal Beam Focus, the Leviathan's own ray."
+  },
+  {
+   "id": "goety_cataclysm:kyria_focus",
+   "title": "Crown Jellyfish",
+   "desc": "Bind two Lacrima and an Essence of the Storm to a Water Spear Focus over an Animation Core to craft the Kyria Focus and call Cindaria servants."
+  },
+  {
+   "id": "goety_cataclysm:ashen_breath_focus",
+   "title": "Breath of the Ashes",
+   "desc": "Pack a Fire Breath Focus in blackstone and magma blocks to craft the Ashen Breath Focus, the Ignis-style cone of cinders."
+  },
+  {
+   "id": "goety_cataclysm:extinct_flame_focus",
+   "title": "Fire That Forgot to Die",
+   "desc": "Expert-Nether-ritual a Lavaball Focus with an Ignitium Ingot, Ectoplasm, ender pearl and blaze rod into the Extinct Flame Focus."
+  },
+  {
+   "id": "goety_cataclysm:ignited_helm",
+   "title": "Helm of the Revenant",
+   "desc": "Claim an Ignited Helm from a fallen Ignited Revenant - place it on a Wildfire servant to raise the revenant from the dead again."
+  },
+  {
+   "id": "goety_cataclysm:sandstorm_focus",
+   "title": "Bottled Desert",
+   "desc": "Sky-ritual a Cyclone Focus with Cataclysm's Sandstorm in a Bottle, an Ancient Metal Ingot and sand to craft the Sandstorm Focus."
+  },
+  {
+   "id": "goety_cataclysm:netherite_plating",
+   "title": "Monstrosity-Grade Armor",
+   "desc": "Craft Netherite Plating from netherite ingots, blaze rods and obsidian - the shell material for a monstrosity of your own."
+  },
+  {
+   "id": "goety_cataclysm:ancient_plating",
+   "title": "Plates of the Monarch",
+   "desc": "Reinforce Netherite Plating with an Ancient Metal Block and Koboleton Bones into Ancient Plating, used to rebuild the Ancient Remnant."
+  },
+  {
+   "id": "goety_cataclysm:void_mold_block",
+   "title": "Mold of the Void",
+   "desc": "Surround a Void Crystal with diamonds and obsidian to cast four Void Mold Blocks, the frame for an Ender Golem's body."
+  },
+  {
+   "id": "goety_cataclysm:ender_golem_skull",
+   "title": "Endforged",
+   "desc": "Build the golem mold from Void Stone and obsidian and right-click the center Void Stone with an Animation Core; when your Ender Golem falls it drops this skull, which revives it cheaply."
+  },
+  {
+   "id": "goety_cataclysm:fabricator",
+   "title": "We Have Technology",
+   "desc": "Forge-ritual a Fireball Focus with a Cursed Cage, Witherite Ingot, two Mechanized Iron Blocks and an anvil into the Mechanical Fabricator, which churns out Watcher servants when fed Mechanized Iron Blocks."
+  },
+  {
+   "id": "goety_cataclysm:death_laser_focus",
+   "title": "Harbinger's Eye",
+   "desc": "Storm-ritual a Thunderbolt Focus with the Harbinger's Laser Gatling, a Mech Eye, a Discharge Focus and two Mechanized Iron Blocks into the Death Laser Focus."
+  },
+  {
+   "id": "goety_cataclysm:mechanized_core",
+   "title": "Circuitry of the Prowler",
+   "desc": "Summon The Prowler via a Forge ritual on a Mech Eye, then salvage its Mechanized Core when destroyed - right-click a Mechanized Iron Block with it to rebuild the machine."
+  },
+  {
+   "id": "goety_cataclysm:netherite_monstrosity_head",
+   "title": "Playing with Firepower",
+   "desc": "Build a blackstone-and-Netherite-Plating mold and right-click the center Reinforced Redstone Block with Cataclysm's Infernal Forge to raise a Netherite Monstrosity; its head revives the fallen colossus."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "goety_cataclysm:abyss_essence",
+   "members": [
+    "goety_cataclysm:water_spear_focus",
+    "goety_cataclysm:sunken_swell_focus",
+    "goety_cataclysm:sunken_current_focus",
+    "goety_cataclysm:sunken_tribune_focus",
+    "goety_cataclysm:abyssal_beam_focus",
+    "goety_cataclysm:abyssal_mine_focus",
+    "goety_cataclysm:abyssal_orb_focus",
+    "goety_cataclysm:kyria_focus",
+    "goety_cataclysm:kakourgos_focus",
+    "goety_cataclysm:polemistis_focus"
+   ]
+  },
+  {
+   "hub": "goety_cataclysm:sandstorm_focus",
+   "members": [
+    "goety_cataclysm:desert_crush_focus",
+    "goety_cataclysm:desert_raid_focus",
+    "goety_cataclysm:earth_shake_focus",
+    "goety_cataclysm:battlefield_focus",
+    "goety_cataclysm:cursed_cairn_focus",
+    "goety_cataclysm:cursed_grave_focus",
+    "goety_cataclysm:cursed_tomb_focus",
+    "goety_cataclysm:amethyst_cluster_focus"
+   ]
+  },
+  {
+   "hub": "goety_cataclysm:fabricator",
+   "members": [
+    "goety_cataclysm:mechanized_iron_block",
+    "goety_cataclysm:mechanized_core",
+    "goety_cataclysm:netherite_plating",
+    "goety_cataclysm:ancient_plating",
+    "goety_cataclysm:death_laser_focus",
+    "goety_cataclysm:thunder_rage_focus",
+    "goety_cataclysm:lightning_spear_focus",
+    "goety_cataclysm:storm_serpent_focus"
+   ]
+  }
+ ],
+ "notes": "Goety Cataclysm bridges Goety's ritual system into L_Ender's Cataclysm (both installed): it adds 35+ focuses, Deepling/Draugr/Koboleton servant summons, undead revivals of Cataclysm bosses (Ancient Remnant, Kobolediator, Wadjet, Aptrgangr, Netherite Monstrosity, Ender Golem, Coralssus, The Prowler) and the Mechanical Fabricator. Entry gate is double: full Goety altar progression (Dark Altar, Animation Core, ritual research) plus Cataclysm boss drops (Lacrima, Athame, Ignitium, Witherite, Mech Eye, Infernal Forge). Facts come from the jar's ritual recipe JSONs, its injected loot tables (the_leviathan -> abyss_essence, ender_golem -> ender_golem_skull) and its Patchouli pages in assets/goety/patchouli_books (Coralssus/Ender Golem summoning shapes, Fabricator behavior, revenant helm and spirit revival mechanics). All 19 chain ids and 26 collection ids set-membership-verified against the 74 model+lang item stems. remnant_skull, soul_jar_draugr, ignited_soul, warrior_spirit, arcane_spirit are verified items too (revival tokens dropped by fallen Ancient Remnant / Draugr Necromancer / Ignited Berserker / Kobolediator / Wadjet servants) if more quests are wanted. No kill: milestones used - this mod's entities are the player's own servants; the real kills (Leviathan etc.) belong to modid cataclysm, outside these jars. | normalised: 19 ids namespaced, 0 dropped as not present in goety_cataclysm-1.20-1.8.2.jar"
+}

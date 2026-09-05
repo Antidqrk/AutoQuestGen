@@ -1,0 +1,518 @@
+{
+ "mod": "pneumaticcraft",
+ "ids_in_jar": 317,
+ "videos": [
+  {
+   "id": "XzctkaWmTy4",
+   "title": "PneumaticCraft Repressurized Part 1  -Minecraft- THE Setup",
+   "channel": "JugMonkey",
+   "views": 78087,
+   "duration": 604,
+   "chars": 9991
+  },
+  {
+   "id": "GgX79LlgJZs",
+   "title": "PneumaticCraft Repressurized Part 2  -Minecraft- Making Plastics",
+   "channel": "JugMonkey",
+   "views": 46603,
+   "duration": 651,
+   "chars": 11619
+  },
+  {
+   "id": "sxWsXKxUzVg",
+   "title": "EVERYTHING You Have To Know About PnuematicCraft in All The Mods 10 (ATM10)",
+   "channel": "John Hall",
+   "views": 31380,
+   "duration": 715,
+   "chars": 12126
+  },
+  {
+   "id": "D0D10xsEOSA",
+   "title": "Pneumatic craft. Part 1. Basics. Tutorial / guide 1.20.1 (minecraft java edition)",
+   "channel": "Minecraft Easy gaming",
+   "views": 66233,
+   "duration": 1436,
+   "chars": 25405
+  },
+  {
+   "id": "kWiXnNvoJNY",
+   "title": "The Ultimate Guide to PneumaticCraft",
+   "channel": "JaviHerobrine",
+   "views": 108710,
+   "duration": 3904,
+   "chars": 55175
+  }
+ ],
+ "not_transcribed": [],
+ "items": {
+  "pneumaticcraft:pressure_tube": {
+   "mentions": 25,
+   "videos": 4,
+   "first_at": 0.2253,
+   "praise": 16,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "pneumaticcraft:air_compressor": {
+   "mentions": 22,
+   "videos": 4,
+   "first_at": 0.439,
+   "praise": 9,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 4
+  },
+  "pneumaticcraft:plastic": {
+   "mentions": 52,
+   "videos": 3,
+   "first_at": 0.1414,
+   "praise": 17,
+   "warn": 0,
+   "early_cue": 4,
+   "late_cue": 0
+  },
+  "pneumaticcraft:vortex_tube": {
+   "mentions": 14,
+   "videos": 2,
+   "first_at": 0.425,
+   "praise": 9,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:refinery": {
+   "mentions": 12,
+   "videos": 2,
+   "first_at": 0.3773,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:charging_station": {
+   "mentions": 10,
+   "videos": 2,
+   "first_at": 0.21,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:pressure_chamber_wall": {
+   "mentions": 9,
+   "videos": 2,
+   "first_at": 0.2017,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "pneumaticcraft:ingot_iron_compressed": {
+   "mentions": 8,
+   "videos": 2,
+   "first_at": 0.4561,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:pressure_chamber_interface": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.2356,
+   "praise": 4,
+   "warn": 1,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "pneumaticcraft:seismic_sensor": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.4434,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:drone": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.6984,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:manometer": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.5362,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "pneumaticcraft:manual": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.3445,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "pneumaticcraft:pressure_chamber_glass": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.2525,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 0
+  },
+  "pneumaticcraft:pressure_chamber_valve": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.213,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:compressed_iron_block": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.571,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:heat_sink": {
+   "mentions": 7,
+   "videos": 1,
+   "first_at": 0.6031,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:reinforced_stone": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.1317,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "pneumaticcraft:liquid_hopper": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.0175,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:assembly_controller": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.3836,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:assembly_platform": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3929,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:assembly_laser": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3873,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:solar_cell": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.6568,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "pneumaticcraft:gps_tool": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5101,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:advanced_pressure_tube": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3382,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:reinforced_bricks": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2083,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:creative_compressor": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8096,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:liquid_compressor": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6104,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:flux_compressor": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.588,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:safety_tube_module": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6115,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:transistor": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3222,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:capacitor": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3211,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:assembly_program_laser": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4896,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:compressed_bricks": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0415,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "pneumaticcraft:compressed_iron_gear": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1573,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "pneumaticcraft:reinforced_pressure_tube": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9863,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:manual_compressor": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1973,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pneumaticcraft:advanced_air_compressor": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2065,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "Pressure chamber first, and guides give exact shopping lists before any other machine - about 25 walls, at least one valve, two interfaces.",
+    "ids": [
+     "pneumaticcraft:pressure_chamber_wall",
+     "pneumaticcraft:pressure_chamber_valve",
+     "pneumaticcraft:pressure_chamber_interface",
+     "pneumaticcraft:pressure_chamber_glass"
+    ]
+   },
+   {
+    "note": "Air compressors next, and guides give a specific number - about four to start, many more later.",
+    "ids": [
+     "pneumaticcraft:air_compressor",
+     "pneumaticcraft:pressure_tube"
+    ]
+   },
+   {
+    "note": "Plastic is the first real product and comes from refining oil into LPG, not from a crafting recipe.",
+    "ids": [
+     "pneumaticcraft:refinery",
+     "pneumaticcraft:plastic"
+    ]
+   },
+   {
+    "note": "Drones and the programmer come last; they are the mod's destination, not its entry point.",
+    "ids": [
+     "pneumaticcraft:programmer",
+     "pneumaticcraft:drone",
+     "pneumaticcraft:programming_puzzle"
+    ]
+   }
+  ],
+  "tiers": [
+   {
+    "note": "Progression is by PRESSURE and heat rather than by material tiers: basic compressor -> advanced compressor, with vortex tubes and heat sinks managing temperature.",
+    "ids": [
+     "pneumaticcraft:air_compressor",
+     "pneumaticcraft:advanced_air_compressor",
+     "pneumaticcraft:vortex_tube",
+     "pneumaticcraft:heat_sink"
+    ]
+   },
+   {
+    "note": "Drone ladder by role: plain drone then specialised collector, harvesting, logistics and guard variants.",
+    "ids": [
+     "pneumaticcraft:drone",
+     "pneumaticcraft:collector_drone",
+     "pneumaticcraft:harvesting_drone",
+     "pneumaticcraft:logistics_drone",
+     "pneumaticcraft:guard_drone"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "HEAT is a hidden prerequisite for most mid-game machines, and the vortex tube is how you get it. Guides call it one of the most essential items in the mod - a recipe scan shows no dependency at all.",
+    "ids": [
+     "pneumaticcraft:vortex_tube",
+     "pneumaticcraft:heat_sink"
+    ]
+   },
+   {
+    "note": "Assembly line is a multi-machine gate: controller plus platform plus drill/laser plus IO units, all needed together.",
+    "ids": [
+     "pneumaticcraft:assembly_controller",
+     "pneumaticcraft:assembly_platform",
+     "pneumaticcraft:assembly_drill",
+     "pneumaticcraft:assembly_laser",
+     "pneumaticcraft:assembly_io_unit_import",
+     "pneumaticcraft:assembly_io_unit_export"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "PneumaticCraft machines EXPLODE if over-pressurised. This is the mod's defining hazard and guides warn about it constantly - the safety tube module is presented as mandatory, not optional.",
+    "ids": [
+     "pneumaticcraft:safety_tube_module",
+     "pneumaticcraft:pressure_tube",
+     "pneumaticcraft:air_compressor"
+    ]
+   },
+   {
+    "note": "Chaining too many compressors onto one line is called out as a specific way to blow up your base.",
+    "ids": [
+     "pneumaticcraft:air_compressor"
+    ]
+   },
+   {
+    "note": "Refining is lossy and guides warn to plan for it rather than expect 1:1 conversion.",
+    "ids": [
+     "pneumaticcraft:refinery",
+     "pneumaticcraft:refinery_output"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "Programmable drones are unambiguously the point of the mod - every guide's payoff shot.",
+    "ids": [
+     "pneumaticcraft:drone",
+     "pneumaticcraft:programmer",
+     "pneumaticcraft:programmable_controller",
+     "pneumaticcraft:drone_interface"
+    ]
+   },
+   {
+    "note": "The pressure chamber is the mod's identity machine and its first build.",
+    "ids": [
+     "pneumaticcraft:pressure_chamber_valve",
+     "pneumaticcraft:pressure_chamber_wall"
+    ]
+   },
+   {
+    "note": "Pneumatic armour and the elevator are the quality-of-life items guides show off.",
+    "ids": [
+     "pneumaticcraft:pneumatic_helmet",
+     "pneumaticcraft:elevator_base",
+     "pneumaticcraft:elevator_frame",
+     "pneumaticcraft:elevator_caller"
+    ]
+   }
+  ]
+ },
+ "transcript_profile": "whisper small, vad, beam 1, WITH the legacy Minecraft-vocabulary initial_prompt that was later removed from ytgrab as biasing. Counts may be slightly inflated toward mod-name-like words; human_notes quotes were read directly and are unaffected."
+}

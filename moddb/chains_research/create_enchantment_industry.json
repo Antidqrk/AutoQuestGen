@@ -1,0 +1,116 @@
+{
+ "mod": "create_enchantment_industry",
+ "verified_against": "create-enchantment-industry-2.5.2.jar",
+ "item_count_in_jar": 34,
+ "parent_mod": "create",
+ "chain": [
+  {
+   "id": "create_enchantment_industry:mechanical_grindstone",
+   "title": "The Wheel That Unlearns",
+   "desc": "Eight andesite alloy ringing a shaft. Turned by rotation it strips enchantments off whatever passes it and leaves the experience behind as fluid."
+  },
+  {
+   "id": "create_enchantment_industry:blaze_enchanter",
+   "title": "A Burner Reads a Book",
+   "desc": "On a smithing table: the Blaze Upgrade Smithing Template, a Create blaze burner as the base, and a vanilla enchanting table as the addition."
+  },
+  {
+   "id": "create_enchantment_industry:experience_bucket",
+   "title": "Experience You Can Pour",
+   "desc": "Fill an empty bucket from a tank of liquid experience. The mod turns levels into a fluid, so pipes and pumps can carry them anywhere."
+  },
+  {
+   "id": "create_enchantment_industry:printer",
+   "title": "The Press That Writes",
+   "desc": "A brass plate above a Create spout above a block of iron. It copies written books and stamps enchantments onto blank templates."
+  },
+  {
+   "id": "create_enchantment_industry:enchanting_template",
+   "title": "Blank Paper for Magic",
+   "desc": "Press one of Create's experience blocks. The blank template is the carrier the printer writes an enchantment onto."
+  },
+  {
+   "id": "create_enchantment_industry:blaze_forger",
+   "title": "An Anvil With a Pulse",
+   "desc": "Smithing again: the Blaze Upgrade Smithing Template, a blaze burner base and a vanilla anvil, for automated repair and combination of gear."
+  },
+  {
+   "id": "create_enchantment_industry:experience_lantern",
+   "title": "Light That Feeds You Levels",
+   "desc": "A Create experience block over a sponge over a copper casing, stacked in a column. It holds liquid experience and hands it back on demand."
+  },
+  {
+   "id": "create_enchantment_industry:experience_hatch",
+   "title": "A Drain for Levels",
+   "desc": "Item application: hold a Create experience block and apply it to a Fluid Hatch. The hatch lets a player pour their own levels straight into the network."
+  },
+  {
+   "id": "create_enchantment_industry:experience_cake_base",
+   "title": "Batter With Lapis In It",
+   "desc": "Compacting an egg, sugar and lapis lazuli in a basin gives the unfilled cake base, waiting on a spout."
+  },
+  {
+   "id": "create_enchantment_industry:experience_cake",
+   "title": "Levels, Served Whole",
+   "desc": "A spout fills the cake base with liquid experience. Eating from the finished cake returns the levels that went into it."
+  },
+  {
+   "id": "create_enchantment_industry:experience_cake_slice",
+   "title": "A Slice of Somebody's Grind",
+   "desc": "Run the cake past a mechanical saw. Slices stack and travel, so a level bank can be shipped down a belt."
+  },
+  {
+   "id": "create_enchantment_industry:blazes_enchanting_handbook",
+   "title": "Notes From a Burning Tutor",
+   "desc": "Shapeless: the Blaze Upgrade Smithing Template, two sturdy sheets, two bottles of enchanting and a magma block."
+  },
+  {
+   "id": "create_enchantment_industry:classic_blaze_enchanter",
+   "title": "The Old Way of Burning",
+   "desc": "Smithing a blaze burner with the handbook gives the mod's earlier enchanter, the variant that reads its own book instead of a table."
+  },
+  {
+   "id": "create_enchantment_industry:gem_cutter",
+   "title": "Facets Under the Wheel",
+   "desc": "Six amethyst shards around two brass ingots and a pinch of gem dust. Requires Apotheosis; it cuts and reshapes gems mechanically."
+  },
+  {
+   "id": "create_enchantment_industry:infuser",
+   "title": "Pouring Power Into Steel",
+   "desc": "A brass sheet over a Create spout over three nixie tubes. Requires Apotheosis; it applies infusions to gear from a fluid feed."
+  },
+  {
+   "id": "create_enchantment_industry:affix_augmentor",
+   "title": "Rewriting What a Weapon Is",
+   "desc": "Two brass sheets and an amethyst shard above a nether star, above two mythic materials and a nixie tube. Requires Apotheosis."
+  },
+  {
+   "id": "create_enchantment_industry:blaze_composer",
+   "title": "The Burner That Composes",
+   "desc": "Smithing a blaze burner with the affix augmentor as the addition. Requires Apotheosis; the top tier of the mod's three blaze machines."
+  },
+  {
+   "id": "create_enchantment_industry:ender_woven_bag",
+   "title": "Stitched From Elsewhere",
+   "desc": "Ender leads around a rose quartz lamp, a precision mechanism and a brass casing. Requires Apotheosis."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "create_enchantment_industry:brass_affix_template",
+   "members": [
+    "create_enchantment_industry:crystal_affix_template",
+    "create_enchantment_industry:apotheotic_affix_template",
+    "create_enchantment_industry:incomplete_brass_affix_template",
+    "create_enchantment_industry:incomplete_crystal_affix_template",
+    "create_enchantment_industry:incomplete_apotheotic_affix_template",
+    "create_enchantment_industry:crystal_essence_bucket",
+    "create_enchantment_industry:apotheotic_essence_bucket",
+    "create_enchantment_industry:infused_dragon_breath_bucket",
+    "create_enchantment_industry:brass_bookshelf",
+    "create_enchantment_industry:incomplete_brass_bookshelf"
+   ]
+  }
+ ],
+ "notes": "Verified against create-enchantment-industry-2.5.2.jar (Forge, MC 1.20.1). All 34 ids come from assets/create_enchantment_industry/models/item/*.json intersected with block./item. keys in the mod's en_us.json. PARENT ASSUMPTIONS: the chain starts after Create has supplied andesite alloy, shafts, the blaze burner, the spout, the mechanical saw, brass plates, sturdy sheets, copper casing, brass casing, precision mechanism, nixie tubes, rose quartz lamp, a block of iron, and create:experience_block / create:experience_nugget. HARD DEPENDENCY beyond Create: META-INF/mods.toml lists create_dragons_plus [1.11.5,1.12.0) as mandatory. All three smithing recipes consume create_dragons_plus:blaze_upgrade_smithing_template, and create_enchantment_industry:experience_hatch is a create:item_application onto create_dragons_plus:fluid_hatch. Apotheosis [7.4.8,8.0.0) is an optional dependency: the last five chain entries and the whole collection are wrapped in forge:conditional with forge:mod_loaded apotheosis plus a create_enchantment_industry:apotheosis_module check (module 'adventure' for gem_cutter, affix_augmentor, blaze_composer and the affix templates; module 'enchantment' for infuser and ender_woven_bag), so they vanish in a pack without Apotheosis. classic_blaze_enchanter and blazes_enchanting_handbook sit behind a create_dragons_plus:config_feature toggle. Liquid experience is a real fluid: create:experience_block compacts out of it and grinds back into it, experience nuggets and bottles of enchanting grind into it, and the jar also ships grinding routes from ars_nouveau, mysticalagriculture and create_sa experience items. DROPPED: create_enchantment_industry:grindstone_drain has models and a loot table but no recipe anywhere in the jar, so it is not craftable and is not quested; create_enchantment_industry:creative_bookshelf is creative-only; create_enchantment_industry:super_experience_nugget, super_experience_block and super_enchanting_template are registered ids whose only recipes are circular (nugget to block and back, block pressed into the template) with no primary source in the jar, so they were left out of both the chain and the collection rather than quested as unreachable."
+}

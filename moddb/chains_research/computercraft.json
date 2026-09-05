@@ -1,0 +1,96 @@
+{
+ "mod": "computercraft",
+ "verified_against": "cc-tweaked-1.20.1-forge-1.120.2.jar",
+ "item_count_in_jar": 31,
+ "chain": [
+  {
+   "id": "computercraft:computer_normal",
+   "title": "A Computer Made Of Rocks",
+   "desc": "Seven stone, a redstone dust and a glass pane. It boots to a Lua prompt with a real filesystem behind it, and everything else in the mod is an accessory to this block."
+  },
+  {
+   "id": "computercraft:disk_drive",
+   "title": "Somewhere To Put Programs",
+   "desc": "Stone around two redstone. Place it next to a computer and it mounts as /disk, which is how code and music move between machines."
+  },
+  {
+   "id": "computercraft:disk",
+   "title": "Floppy Disk",
+   "desc": "Redstone, paper and a dye. The dye picks the label colour, so colour-coding your libraries costs nothing but a flower."
+  },
+  {
+   "id": "computercraft:monitor_normal",
+   "title": "A Screen Worth Looking At",
+   "desc": "Stone around a glass pane. Place several in a rectangle and they fuse into one large display that any computer can drive with term.redirect."
+  },
+  {
+   "id": "computercraft:printer",
+   "title": "Output On Paper",
+   "desc": "Stone, redstone and dye. Feeds on paper and ink to print pages you can actually hold, which is the only way a program's output leaves the screen."
+  },
+  {
+   "id": "computercraft:printed_book",
+   "title": "Bound Output",
+   "desc": "Printed pages plus leather and string. The printer's pages collated into a book that stays readable long after the computer that wrote it is gone."
+  },
+  {
+   "id": "computercraft:wired_modem",
+   "title": "Peripherals Over Distance",
+   "desc": "Stone, redstone and a gold ingot. Attach one to a peripheral, run cable to the computer, and the far block behaves as though it were bolted to the case."
+  },
+  {
+   "id": "computercraft:wireless_modem_normal",
+   "title": "Talking Without Wire",
+   "desc": "Stone around an ender pearl. Lets computers exchange messages by rednet inside a limited radius, and the radius grows with altitude."
+  },
+  {
+   "id": "computercraft:turtle_normal",
+   "title": "A Computer That Walks",
+   "desc": "A computer, seven iron ingots and a chest. Same Lua environment, but with a body, an inventory and a move API, and an upgrade slot on each side."
+  },
+  {
+   "id": "computercraft:pocket_computer_normal",
+   "title": "A Computer In Your Pocket",
+   "desc": "A computer, gold and a redstone dust. The full terminal held in one hand, which makes a wireless modem upgrade rather more useful than it sounds."
+  },
+  {
+   "id": "computercraft:computer_advanced",
+   "title": "The Gold Tier",
+   "desc": "The whole ladder rebuilt in gold instead of stone. Colour output and a working mouse, and every advanced peripheral below assumes you have one."
+  },
+  {
+   "id": "computercraft:monitor_advanced",
+   "title": "Colour On The Wall",
+   "desc": "Gold around a glass pane. Sixteen colours and mouse events, so a monitor array stops being a readout and starts being an interface."
+  },
+  {
+   "id": "computercraft:turtle_advanced",
+   "title": "Gold Body",
+   "desc": "An advanced computer, gold and a chest. Identical mechanics to the normal turtle, but it inherits the colour terminal and takes the same upgrades."
+  },
+  {
+   "id": "computercraft:pocket_computer_advanced",
+   "title": "Gold In Your Pocket",
+   "desc": "An advanced computer folded into a handheld. The top of the tier ladder, and the usual endpoint of a CC: Tweaked questline."
+  },
+  {
+   "id": "computercraft:wireless_modem_advanced",
+   "title": "Ender Modem",
+   "desc": "Gold around an eye of ender. Ignores the range limit entirely and reaches across dimensions, which is what makes remote turtle fleets practical."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "computercraft:wired_modem",
+   "members": [
+    "computercraft:cable",
+    "computercraft:wired_modem_full",
+    "computercraft:redstone_relay",
+    "computercraft:speaker",
+    "computercraft:printed_page",
+    "computercraft:printed_pages"
+   ]
+  }
+ ],
+ "notes": "Verified against cc-tweaked-1.20.1-forge-1.120.2.jar. META-INF/mods.toml: modLoader='javafml', modId='computercraft', version='1.120.2', minecraft dependency implied by loaderVersion='[47,48)' and the forge dependency versionRange='[47.1.0,48)' - a native 1.20.1 Forge build, downloaded from Modrinth project 'cc-tweaked' (40 of its 81 1.20.1 versions carry loaders=['forge']). ID COUNT: the naive models-INTERSECT-lang rule badly under- and over-counts here in opposite directions, so the number above is the union of item models and blockstates, which is 31. Raw figures: 30 item models, 16 blockstates, 9 item.computercraft.* and 20 block.computercraft.* lang keys. MODEL-VARIANT INFLATION (the documented failure mode, present here): pocket_computer_normal_on, pocket_computer_normal_blinking, pocket_computer_advanced_on, pocket_computer_advanced_blinking, pocket_computer_colour, pocket_computer_colour_on and pocket_computer_colour_blinking are seven item models with NO lang key and NO recipe - they are screen-state overrides for the two real pocket computer items, not items. All seven dropped. LANG-ONLY PHANTOMS (names composed at runtime from two keys): the lang file carries turtle_normal.upgraded, turtle_normal.upgraded_twice, turtle_advanced.upgraded, turtle_advanced.upgraded_twice, pocket_computer_normal.upgraded and pocket_computer_advanced.upgraded. These are format-string fragments that CC combines with an 'upgrade.<ns>.<name>.adjective' key to build a display name at runtime - the jar ships upgrade.computercraft.speaker.adjective, upgrade.computercraft.wireless_modem_normal.adjective, upgrade.computercraft.wireless_modem_advanced.adjective and six upgrade.minecraft.* ones (crafting_table, diamond_axe, diamond_hoe, diamond_pickaxe, diamond_shovel, diamond_sword). THIS MEANS THERE IS NO 'computercraft:mining_turtle' AND NO 'computercraft:melee_turtle' ID. A Mining Turtle is computercraft:turtle_normal carrying a diamond-pickaxe upgrade in NBT; any quest that names a mining turtle must target turtle_normal, not an invented id. DROPPED, with reasons: 'computercraft:computer_command' - it has a model, a lang key ('Command Computer') and a real crafting_shaped recipe, so every automated check passes it, but the recipe's centre ingredient is minecraft:command_block, which cannot be obtained in survival. Uncompletable, dropped. 'computercraft:treasure_disk' - real item model, real lang key ('Floppy Disk'), but zero recipes and no loot table; treasure disks are injected by other mods' program bundles or by operator command, so it is not obtainable in a plain pack. 'computercraft:lectern' - a blockstate with no item model, no lang key and no recipe; it is CC's re-render of the vanilla lectern for holding printed books, not a separate obtainable block. TIER LADDER (the backbone): the mod is a clean two-rung ladder where the normal tier is built on stone plus redstone and the advanced tier is the same shapes rebuilt in gold - computer_normal/computer_advanced, monitor_normal/monitor_advanced, turtle_normal/turtle_advanced, pocket_computer_normal/pocket_computer_advanced, wireless_modem_normal/wireless_modem_advanced. The chain walks the normal rung first and then repeats it in gold, which is how the recipe graph actually gates. ORDERING vs moddb consensus (10 entries, all 10 id-verified): CONFLICT, and a serious one - consensus puts computercraft:computer_advanced at pos 0.0 and computer_normal at 0.037, i.e. the gold tier ranked ahead of the stone tier it is a straight upgrade of. It also ranks turtle_advanced 0.074 ahead of monitor_normal 0.111, disk_drive 0.148 and pocket_computer_normal 0.259. The recipe graph was preferred throughout: turtle_advanced consumes computer_advanced, which is a peer of computer_normal, and no advanced item is craftable before its stone counterpart is understood. Consensus is almost certainly reflecting which items packs QUEST most prominently rather than build order. The remaining consensus entries (monitor_advanced 0.222, wired_modem, disk_drive, pocket_computer_advanced) sit fine. PRINTED PAGE NOTE: computercraft:printed_page shows no crafting recipe because pages come out of the printer block in-world; computercraft:printed_pages and computercraft:printed_book do have real recipes that consume pages. All three are obtainable and the two paper-side ones sit in the wheel. The jar also ships data/create/ (4 files) for Create compat and a large data/computercraft/lua/rom/ tree (the in-game program library), neither of which registers any id."
+}

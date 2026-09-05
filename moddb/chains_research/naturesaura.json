@@ -1,0 +1,214 @@
+{
+ "mod": "naturesaura",
+ "verified_against": "naturesaura-39.4.jar",
+ "item_count_in_jar": 141,
+ "chain": [
+  {
+   "id": "naturesaura:gold_fiber",
+   "title": "Threads of Brilliance",
+   "desc": "Gold nuggets, leaves and a tuft of grass. Placed in the crown of a tree it slowly turns the canopy to Golden Leaves."
+  },
+  {
+   "id": "naturesaura:gold_leaf",
+   "title": "Harvest the Brilliant Tree",
+   "desc": "Break fully grown Golden Leaves for a 75% chance of Gold Leaf. Every first step in the mod is paid for in these."
+  },
+  {
+   "id": "naturesaura:gold_powder",
+   "title": "Crushed to Dust",
+   "desc": "Gold Leaf ground down. Sprinkled on the ground it draws the ring that the Ritual of the Forest is performed inside."
+  },
+  {
+   "id": "naturesaura:wood_stand",
+   "title": "Stands Around the Circle",
+   "desc": "A log topped with Gold Leaf. Each stand holds one ingredient for the Ritual of the Forest; you never need all of them."
+  },
+  {
+   "id": "naturesaura:token_joy",
+   "title": "Carved From Gladness",
+   "desc": "The first Ritual of the Forest. An Aura Bottle and Gold Leaf grown through an oak sapling into a figurine of joy."
+  },
+  {
+   "id": "naturesaura:nature_altar",
+   "title": "Where Nature Is Infused",
+   "desc": "Stone, gold and a Token of Joy fed to an oak sapling. The altar draws ambient Aura and infuses whatever sits on it."
+  },
+  {
+   "id": "naturesaura:bottle_two_the_rebottling",
+   "title": "Bottle and Cork",
+   "desc": "A glass bottle and a plank. Right-click the open air with it to catch Aura; a dispenser will do the job for you."
+  },
+  {
+   "id": "naturesaura:aura_bottle",
+   "title": "Sunlight, Ghosts and Darkness",
+   "desc": "One item with three faces: Overworld Aura is bottled sunlight, Nether Aura is ghosts, End Aura is an excess of dark."
+  },
+  {
+   "id": "naturesaura:infused_iron",
+   "title": "Iron That Drank the Air",
+   "desc": "An iron ingot left on the Natural Altar until the surrounding Aura soaks into it. The mod's working metal."
+  },
+  {
+   "id": "naturesaura:infused_stone",
+   "title": "Rock, Similarly Treated",
+   "desc": "Stone infused on the altar. It builds the catalysts, the Aura Cache and most of the mod's machinery."
+  },
+  {
+   "id": "naturesaura:aura_cache",
+   "title": "A Pocket Full of Aura",
+   "desc": "Infused Iron around Infused Rock. Carried in your inventory it stores Aura and quietly pays for your trinkets."
+  },
+  {
+   "id": "naturesaura:eye",
+   "title": "See What Is Not There",
+   "desc": "A Ritual of the Forest around Gold Leaf. Held in the offhand the Environmental Eye shows the Aura level of the chunk you stand in."
+  },
+  {
+   "id": "naturesaura:tainted_gold",
+   "title": "Gold, Spoiled",
+   "desc": "A gold ingot infused on the altar in a low-Aura area. Where Infused Iron is nature's metal, this one is its imbalance."
+  },
+  {
+   "id": "naturesaura:gold_brick",
+   "title": "Bricks Shot Through With Gold",
+   "desc": "Stone bricks and Brilliant Fiber. Both catalysts are built on a frame of these."
+  },
+  {
+   "id": "naturesaura:crushing_catalyst",
+   "title": "The Altar Learns to Grind",
+   "desc": "Golden Stone Bricks, Infused Rock and a Token of Anger, grown by ritual. Set beneath the altar it unlocks the crushing recipes."
+  },
+  {
+   "id": "naturesaura:conversion_catalyst",
+   "title": "The Altar Learns to Transmute",
+   "desc": "The second catalyst, needing an Ingot of the Skies. It turns the altar's infusions into outright transmutations."
+  },
+  {
+   "id": "naturesaura:calling_spirit",
+   "title": "A Voice That Reaches Up",
+   "desc": "Infused Iron, Tainted Gold and two Aura Bottles - one Overworld, one Nether. The recipe itself forces the trip below."
+  },
+  {
+   "id": "naturesaura:offering_table",
+   "title": "Offering to the Gods",
+   "desc": "Infused Iron with a Token of Fear and a Token of Sorrow. Ring it with flowers, fill the bowl, and throw down a Spirit of Calling."
+  },
+  {
+   "id": "naturesaura:sky_ingot",
+   "title": "What the Sky Sends Back",
+   "desc": "Offer Infused Iron, or Tainted Gold for a better yield, and the Ingots of the Skies rain down on the table."
+  },
+  {
+   "id": "naturesaura:token_euphoria",
+   "title": "Joy, Made Greater",
+   "desc": "Offer a Token of Joy and the gods return its stronger form. Each of the four base tokens has such an exchange."
+  },
+  {
+   "id": "naturesaura:ancient_sapling",
+   "title": "Seed of an Older Forest",
+   "desc": "A ritual on a dark oak sapling with Gold Leaf. Ancient wood is the only wood the mod's rods and finders will accept."
+  },
+  {
+   "id": "naturesaura:ancient_stick",
+   "title": "A Stick With History",
+   "desc": "Split from Ancient Slabs. Every finder, the Staff of Baldur and the Ender Ocular are built around one."
+  },
+  {
+   "id": "naturesaura:depth_ingot",
+   "title": "Pressed Into the Deep",
+   "desc": "Two Ingots of the Skies, two Tainted Gold and a netherite scrap. The strongest metal Nature's Aura will make."
+  },
+  {
+   "id": "naturesaura:end_flower",
+   "title": "Rose of Oblivion",
+   "desc": "Sprouts across the End island once the Ender Dragon is dead. Feed it an Ender Eye and it floods the area with Aura."
+  },
+  {
+   "id": "naturesaura:eye_improved",
+   "title": "The Ocular",
+   "desc": "The Environmental Eye rebuilt by ritual with a Rose of Oblivion and an Ingot of the Skies; it reads far more than Aura level."
+  },
+  {
+   "id": "naturesaura:birth_spirit",
+   "title": "Something Left Over From a Birth",
+   "desc": "Breed two passive animals where Aura runs high and Spirits of Birthing sometimes fall out of the process."
+  },
+  {
+   "id": "naturesaura:animal_spawner",
+   "title": "Altar of Birthing",
+   "desc": "Ingots of the Skies and a Token of Euphoria. Throw down a Spirit of Birthing with the right offerings and it grows a living creature."
+  },
+  {
+   "id": "naturesaura:death_ring",
+   "title": "Ring of Last Chance",
+   "desc": "End Aura, an Ingot of the Skies and the Tokens of Euphoria and Terror. It spends Aura instead of your life."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "naturesaura:eye",
+   "members": [
+    "naturesaura:cave_finder",
+    "naturesaura:end_city_finder",
+    "naturesaura:fortress_finder",
+    "naturesaura:loot_finder",
+    "naturesaura:netherite_finder",
+    "naturesaura:outpost_finder",
+    "naturesaura:ender_access",
+    "naturesaura:chunk_loader"
+   ]
+  },
+  {
+   "hub": "naturesaura:oak_generator",
+   "members": [
+    "naturesaura:animal_generator",
+    "naturesaura:chorus_generator",
+    "naturesaura:firework_generator",
+    "naturesaura:flower_generator",
+    "naturesaura:moss_generator",
+    "naturesaura:potion_generator",
+    "naturesaura:projectile_generator",
+    "naturesaura:slime_split_generator"
+   ]
+  },
+  {
+   "hub": "naturesaura:token_joy",
+   "members": [
+    "naturesaura:token_anger",
+    "naturesaura:token_fear",
+    "naturesaura:token_sorrow",
+    "naturesaura:token_euphoria",
+    "naturesaura:token_grief",
+    "naturesaura:token_rage",
+    "naturesaura:token_terror"
+   ]
+  },
+  {
+   "hub": "naturesaura:sky_pickaxe",
+   "members": [
+    "naturesaura:sky_axe",
+    "naturesaura:sky_hoe",
+    "naturesaura:sky_shovel",
+    "naturesaura:sky_sword",
+    "naturesaura:sky_chest",
+    "naturesaura:sky_helmet",
+    "naturesaura:sky_pants",
+    "naturesaura:sky_shoes"
+   ]
+  },
+  {
+   "hub": "naturesaura:depth_pickaxe",
+   "members": [
+    "naturesaura:depth_axe",
+    "naturesaura:depth_hoe",
+    "naturesaura:depth_shovel",
+    "naturesaura:depth_sword",
+    "naturesaura:depth_chest",
+    "naturesaura:depth_helmet",
+    "naturesaura:depth_pants",
+    "naturesaura:depth_shoes"
+   ]
+  }
+ ],
+ "notes": "VERIFICATION: 148 stems pass (item model OR blockstate) INTERSECT (lang key OR recipe result OR loot entry OR tag OR advancement); 141 survive the obtainability audit. All 28 chain ids, 5 wheel hubs and 39 wheel members (72 ids total) were re-checked, fully namespaced, against the surviving set on a second pass whose derivation is deliberately independent of the first: exact item-model path existence plus the literal \"<ns>:<path>\" string appearing in the jar data trees. 0 failures. DROPS: naturesaura:book is NOT an item - data/naturesaura/recipes/book.json is a shapeless recipe whose result is patchouli:guide_book with the NBT tag {\"patchouli:book\":\"naturesaura:book\"}, exactly the Zenith pattern, so the guide book has no naturesaura-namespaced id and must not be quested as one. Also dropped: the five potted_* blocks (potted_aura_bloom, potted_aura_cactus, potted_aura_mushroom, potted_crimson_aura_mushroom, potted_warped_aura_mushroom), whose loot tables hand back minecraft:flower_pot and which have no item form; and multiblock_maker, which has a model and a lang key but appears in no recipe, loot table, tag, advancement or book page - a creative/debug structure tool with no acquisition path. COMPOSED NAMES: naturesaura:aura_bottle and naturesaura:effect_powder have item models but no item.naturesaura.<stem> key, because their names are assembled at runtime from item.naturesaura.aura_bottle.naturesaura:overworld / .nether / .end / .other and item.naturesaura.effect_powder.naturesaura:plant_boost and four siblings. Both are proven real: aura_bottle is the icon of the practices/aura_bottle book entry written as naturesaura:aura_bottle{stored_type:'naturesaura:overworld'}, is the named result of three advancements, and appears as a forge:nbt ingredient in calling_spirit.json; effect_powder is the declared result of five tree_ritual recipes. Critically these are ONE id each with NBT variants, not 4 and 5 separate ids, so neither can become a wheel. TIER GATE: the analogue of Bewitchment's chalk tier is RITUAL TIER crossed with AURA TYPE. Three ritual tiers exist as distinct recipe types - naturesaura:tree_ritual (17 recipes, gold powder ring plus wood stands, needs only Gold Leaf), naturesaura:altar (36 recipes, the Natural Altar, split into a base set and sets gated behind crushing_catalyst and conversion_catalyst placed under it), and naturesaura:offering (7 recipes, the Offering Table, every one of them requiring a Spirit of Calling). The Spirit of Calling is the hard gate: its recipe demands aura_bottle with stored_type naturesaura:overworld AND stored_type naturesaura:nether in the same grid, so the Nether trip is a recipe-level requirement, not a suggestion. End Aura gates ender_access, end_city_finder, chunk_loader and death_ring the same way. Everything past sky_ingot therefore sits behind two dimensions. ENTITIES: no kill step is offered. The mod registers no hostile mobs of its own; the 60 naturesaura:animal_spawner recipes spawn vanilla passive animals, and killing them would be a vanilla task, not a mod one. OTHER ACQUISITION: birth_spirit and vacuum_bottle have no recipe and are correctly kept - the book states Spirits of Birthing drop when passive animals breed in high Aura, and the Bottled Vacuum is what a Bottle and Cork becomes when used in an area of severe negative Aura imbalance (advancement naturesaura:vacuum_bottle, parented to naturesaura:negative_imbalance, confirms it is reachable). gold_leaf likewise has no recipe: it comes from data/naturesaura/loot_tables/blocks/golden_leaves.json at 75% when the leaves reach stage 3. CONSENSUS: moddb.json has no naturesaura entry, so there is no 6-pack consensus to cross-check. harvested_order.json does carry 12 naturesaura ids - ancient_sapling, conversion_catalyst, nature_altar, furnace_heater, crushing_catalyst, spring, offering_table, death_ring, sky_ingot, generator_limit_remover, oak_generator, depth_ingot - and all 12 exist in the jar. One ordering conflict: it places ancient_sapling and conversion_catalyst before nature_altar, but conversion_catalyst's tree_ritual recipe requires infused_stone and sky_ingot, both of which require the altar, and sky_ingot additionally requires the Offering Table. The recipe graph is preferred and both are moved after the altar and the offering here."
+}

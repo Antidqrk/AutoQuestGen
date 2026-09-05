@@ -1,0 +1,131 @@
+{
+ "mod": "endrem",
+ "verified_against": "endrem_forge-5.3.3-R-1.20.1.jar",
+ "item_count_in_jar": 19,
+ "chain": [
+  {
+   "id": "endrem:evil_eye",
+   "title": "Bought, Not Found",
+   "desc": "The Evil Eye is the one eye you can trade for: a Cleric villager sells it for emeralds and an ender eye."
+  },
+  {
+   "id": "endrem:old_eye",
+   "title": "Sand Over the Sandworm",
+   "desc": "The Old Eye hides in desert pyramid chests and, far more rarely, in plain dungeon chests."
+  },
+  {
+   "id": "endrem:lost_eye",
+   "title": "Forged Before Memory",
+   "desc": "The Lost Eye turns up in abandoned mineshaft chests and occasionally in dungeon chests."
+  },
+  {
+   "id": "endrem:cold_eye",
+   "title": "Left by the Iceologers",
+   "desc": "The Cold Eye is the most generous of the sixteen, appearing in most igloo basement chests."
+  },
+  {
+   "id": "endrem:rogue_eye",
+   "title": "Welcome to the Jungle",
+   "desc": "The Rogue Eye waits behind the tripwires and dispensers of a jungle temple."
+  },
+  {
+   "id": "endrem:black_eye",
+   "title": "Arr, Where Be Me Ship",
+   "desc": "The Black Eye comes from buried treasure, and much more rarely from shipwreck treasure chests."
+  },
+  {
+   "id": "endrem:corrupted_eye",
+   "title": "A Greedy King's Fortune",
+   "desc": "The Corrupted Eye sits in pillager outpost chests, high above the raiders."
+  },
+  {
+   "id": "endrem:magical_eye",
+   "title": "No Power Without It",
+   "desc": "The Magical Eye drops from Evokers and is also stashed in woodland mansion chests."
+  },
+  {
+   "id": "endrem:undead_soul",
+   "title": "Riderless in the Storm",
+   "desc": "The Undead Soul drops from Skeleton Horses, the ones that spawn out of lightning traps."
+  },
+  {
+   "id": "endrem:undead_eye",
+   "title": "The Mirror of the Soul",
+   "desc": "Bone, rotten flesh, phantom membrane and a ghast tear ring an Undead Soul to make the Undead Eye."
+  },
+  {
+   "id": "endrem:witch_pupil",
+   "title": "Plucked From the Brewer",
+   "desc": "The Witch Pupil drops from Witches and is the raw form of the Witch Eye."
+  },
+  {
+   "id": "endrem:witch_eye",
+   "title": "Recipes Lost in Time",
+   "desc": "A Witch Pupil and a vanilla ender eye combine, shapeless, into the Witch Eye."
+  },
+  {
+   "id": "endrem:nether_eye",
+   "title": "Lost in a War of Realms",
+   "desc": "The Nether Eye is a nether fortress chest drop, deep in the corridors above the lava."
+  },
+  {
+   "id": "endrem:cursed_eye",
+   "title": "The Piglins Swore to Protect It",
+   "desc": "The Cursed Eye is in bastion treasure chests, at the best odds of any structure eye in the mod."
+  },
+  {
+   "id": "endrem:guardian_eye",
+   "title": "Watching Warriors Drown",
+   "desc": "The Guardian Eye drops from Elder Guardians at the heart of an ocean monument."
+  },
+  {
+   "id": "endrem:exotic_eye",
+   "title": "Where's Atlantis",
+   "desc": "The only fully crafted eye: two conduits, four corals, two glow ink sacs and a vanilla ender eye."
+  },
+  {
+   "id": "endrem:wither_eye",
+   "title": "It Has Witnessed Destruction",
+   "desc": "The Wither Eye is the surest drop in End Remastered, rolled twice off a slain Wither."
+  },
+  {
+   "id": "endrem:cryptic_eye",
+   "title": "Patience Is the Road to Wisdom",
+   "desc": "The Cryptic Eye has no recipe and no chest: it appears in your inventory, at random, while enchanting."
+  },
+  {
+   "id": "endrem:ancient_portal_frame",
+   "title": "Sixteen Sockets, One Door",
+   "desc": "End Remastered swaps the vanilla end portal for frames that accept only its own eyes."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "endrem:ancient_portal_frame",
+   "members": [
+    "endrem:old_eye",
+    "endrem:lost_eye",
+    "endrem:cold_eye",
+    "endrem:rogue_eye",
+    "endrem:black_eye",
+    "endrem:corrupted_eye",
+    "endrem:magical_eye",
+    "endrem:evil_eye"
+   ]
+  },
+  {
+   "hub": "endrem:undead_soul",
+   "members": [
+    "endrem:undead_eye",
+    "endrem:witch_eye",
+    "endrem:nether_eye",
+    "endrem:cursed_eye",
+    "endrem:guardian_eye",
+    "endrem:exotic_eye",
+    "endrem:wither_eye",
+    "endrem:cryptic_eye"
+   ]
+  }
+ ],
+ "notes": "Verified against endrem_forge-5.3.3-R-1.20.1 (Modrinth slug 'endrem', NOT 'end-remastered' - that 404s). CORRECTION to the brief: this version has SIXTEEN eyes, not twelve - black, cold, corrupted, cryptic, cursed, evil, exotic, guardian, lost, magical, nether, old, rogue, undead, witch, wither - plus two catalysts (undead_soul, witch_pupil) and the ancient_portal_frame block. moddb lists all sixteen too. Every source was read out of the jar rather than guessed: eleven chest loot tables under data/endrem/loot_tables/minecraft/chests, five entity loot tables under .../entities, three recipes (exotic_eye, undead_eye, witch_eye), and two behaviours only present as bytecode - CrypticEyeDistribution.rollForCrypticEye adds the Cryptic Eye straight to the player inventory while enchanting (config is_cryptic_eye_obtainable) and ModEvents$EREyeTrade appends an Evil Eye listing to VillagerProfession CLERIC (config is_evil_eye_obtainable). Sixteen eyes exceeds the 14-member wheel cap, so they are split into a structure-and-trade wheel and a mob-and-craft wheel, hubbed on the two non-eye items so no member is duplicated. Chain order broadly follows moddb consensus with one deliberate conflict: moddb ranks exotic_eye second (pos 0.346) but its recipe consumes two Conduits, so it is placed near the end here; the two catalysts are likewise pulled ahead of the eyes they craft. The mod registers no entities of its own, so there are no kill: steps - every eye-dropping mob (Wither, Elder Guardian, Evoker, Witch, Skeleton Horse) is vanilla and is named in the descriptions instead. Item model 'lost_frame' has no lang key and was dropped."
+}

@@ -1,0 +1,170 @@
+{
+ "mod": "handcrafted",
+ "verified_against": "handcrafted-forge-1.20.1-3.0.6.jar",
+ "item_count_in_jar": 285,
+ "chain": [
+  {"id": "handcrafted:hammer", "title": "The Tool the Mod Is Named For", "desc": "Iron ingots and sticks; right-clicking placed furniture with it cycles that block's look, and shift-right-clicking cycles its shape. Almost every block in the mod has several appearances only this reaches."},
+  {"id": "handcrafted:oak_table", "title": "Somewhere to Put Things", "desc": "Oak planks over sticks; tables join up edge to edge into a single continuous surface."},
+  {"id": "handcrafted:oak_chair", "title": "Somewhere to Sit", "desc": "Oak planks, an oak slab and a stick; right-clicking it actually seats you, using the mod's own Seat entity."},
+  {"id": "handcrafted:oak_bench", "title": "Seating for Two", "desc": "Oak planks over an oak slab, for the long version of the chair."},
+  {"id": "handcrafted:white_cushion", "title": "Wool and a Feather", "desc": "Wool around a feather; on its own it is a floor cushion, and it is also the gating ingredient for every couch and fancy bed."},
+  {"id": "handcrafted:oak_couch", "title": "The Long Sit", "desc": "Oak planks, wool and a cushion from the handcrafted:cushions tag; the cushion's colour carries into the finished couch."},
+  {"id": "handcrafted:white_sheet", "title": "Linen, Shapelessly", "desc": "One wool block, shapeless; sheets set bedding colour and can be right-clicked onto a placed bed to change it later."},
+  {"id": "handcrafted:oak_fancy_bed", "title": "A Bed Worth Making", "desc": "Oak planks and wool with both a cushion and a sheet; the only recipe in the mod that needs two of its own tag families at once."},
+  {"id": "handcrafted:oak_nightstand", "title": "Beside the Bed", "desc": "Oak planks around a chest from the handcrafted:chests tag; the first of the seven storage furnishings, all of which need a chest."},
+  {"id": "handcrafted:oak_drawer", "title": "Three Deep", "desc": "A chest, oak planks and an oak slab; a chest with a front you would actually put in a bedroom."},
+  {"id": "handcrafted:oak_shelf", "title": "Open Storage", "desc": "A chest, oak planks and an oak slab arranged into a wall shelf."},
+  {"id": "handcrafted:oak_cupboard", "title": "Behind Doors", "desc": "Oak planks around a chest; the tall cabinet form."},
+  {"id": "handcrafted:oak_desk", "title": "Somewhere to Work", "desc": "A chest, oak planks and an oak slab; pair it with a chair and the seat lines up."},
+  {"id": "handcrafted:oak_counter", "title": "The Kitchen Run", "desc": "A chest, oak planks and CALCITE for the worktop; right-click the placed counter with any wood or stone to change that surface."},
+  {"id": "handcrafted:wood_cup", "title": "Something to Drink From", "desc": "Wooden slabs; cups, plates and bowls can be set down on top of tables and counters."},
+  {"id": "handcrafted:wood_plate", "title": "Something to Eat From", "desc": "Wooden slabs in a shallow arrangement."},
+  {"id": "handcrafted:wood_crockery_combo", "title": "A Place Setting", "desc": "A wooden cup and a wooden plate together; right-click the placed combo with any item to serve it."},
+  {"id": "handcrafted:terracotta_bowl", "title": "Fired, Not Carved", "desc": "Terracotta instead of wood; the terracotta crockery is the parent that every dyed colour is made from."},
+  {"id": "handcrafted:terracotta_thin_pot", "title": "Throwing a Pot", "desc": "Terracotta in a tall narrow shape; four pot silhouettes exist and each can be glazed or gilded afterwards."},
+  {"id": "handcrafted:berry_jam_jar", "title": "Preserves", "desc": "Sweet berries in a glass bottle, shapeless; pure decoration, and the only food-shaped thing the mod makes."},
+  {"id": "handcrafted:stackable_book", "title": "Books That Pile Up", "desc": "One vanilla book, shapeless; place several and they stack into a leaning heap."},
+  {"id": "handcrafted:fancy_painting", "title": "Framed in Gold", "desc": "A vanilla painting and a gold ingot; it hangs as the mod's own Fancy Painting entity rather than a vanilla one."},
+  {"id": "handcrafted:kitchen_hood_pipe", "title": "Ducting", "desc": "Iron bars; the flue section that the extractor hood sits under."},
+  {"id": "handcrafted:kitchen_hood", "title": "Over the Stove", "desc": "A kitchen hood pipe with more iron bars, completing the extractor."},
+  {"id": "handcrafted:oven", "title": "The Range", "desc": "Bricks and iron bars around a SMOKER, so it is a working cooker rather than a prop."},
+  {"id": "handcrafted:bench", "title": "The Iron Bench", "desc": "Iron bars and an iron ingot. Note the bare id: handcrafted:bench is the park bench, a different block from handcrafted:oak_bench and the ten other wooden ones."},
+  {"id": "handcrafted:wolf_trophy", "title": "First Trophy on the Shelf", "desc": "A bone and planks; the trophies are the mod's collection line, each keyed to something you had to obtain."},
+  {"id": "handcrafted:wither_skeleton_trophy", "title": "The Trophy That Costs a Nether Fortress", "desc": "Planks around a wither skeleton skull; the most expensive of the nineteen trophies and a fair endpoint for a decoration chapter."}
+ ],
+ "collections": [
+  {
+   "hub": "handcrafted:oak_table",
+   "members": [
+    "handcrafted:spruce_table",
+    "handcrafted:birch_table",
+    "handcrafted:jungle_table",
+    "handcrafted:acacia_table",
+    "handcrafted:dark_oak_table",
+    "handcrafted:mangrove_table",
+    "handcrafted:cherry_table",
+    "handcrafted:bamboo_table",
+    "handcrafted:crimson_table",
+    "handcrafted:warped_table"
+   ]
+  },
+  {
+   "hub": "handcrafted:white_cushion",
+   "members": [
+    "handcrafted:black_cushion",
+    "handcrafted:blue_cushion",
+    "handcrafted:brown_cushion",
+    "handcrafted:cyan_cushion",
+    "handcrafted:gray_cushion",
+    "handcrafted:green_cushion",
+    "handcrafted:light_blue_cushion",
+    "handcrafted:light_gray_cushion",
+    "handcrafted:lime_cushion",
+    "handcrafted:magenta_cushion",
+    "handcrafted:orange_cushion",
+    "handcrafted:pink_cushion",
+    "handcrafted:purple_cushion"
+   ]
+  },
+  {
+   "hub": "handcrafted:white_sheet",
+   "members": [
+    "handcrafted:black_sheet",
+    "handcrafted:blue_sheet",
+    "handcrafted:brown_sheet",
+    "handcrafted:cyan_sheet",
+    "handcrafted:gray_sheet",
+    "handcrafted:green_sheet",
+    "handcrafted:light_blue_sheet",
+    "handcrafted:light_gray_sheet",
+    "handcrafted:lime_sheet",
+    "handcrafted:magenta_sheet",
+    "handcrafted:orange_sheet",
+    "handcrafted:pink_sheet",
+    "handcrafted:purple_sheet"
+   ]
+  },
+  {
+   "hub": "handcrafted:wolf_trophy",
+   "members": [
+    "handcrafted:bear_trophy",
+    "handcrafted:blaze_trophy",
+    "handcrafted:creeper_trophy",
+    "handcrafted:evoker_trophy",
+    "handcrafted:fox_trophy",
+    "handcrafted:goat_trophy",
+    "handcrafted:phantom_trophy",
+    "handcrafted:pillager_trophy",
+    "handcrafted:pufferfish_trophy",
+    "handcrafted:salmon_trophy",
+    "handcrafted:silverfish_trophy",
+    "handcrafted:skeleton_trophy",
+    "handcrafted:spider_trophy"
+   ]
+  },
+  {
+   "hub": "handcrafted:oak_nightstand",
+   "members": [
+    "handcrafted:oak_cupboard",
+    "handcrafted:oak_drawer",
+    "handcrafted:oak_shelf",
+    "handcrafted:oak_side_table",
+    "handcrafted:oak_desk",
+    "handcrafted:oak_counter",
+    "handcrafted:oak_couch",
+    "handcrafted:oak_fancy_bed",
+    "handcrafted:oak_dining_bench",
+    "handcrafted:oak_chair"
+   ]
+  },
+  {
+   "hub": "handcrafted:terracotta_bowl",
+   "members": [
+    "handcrafted:terracotta_cup",
+    "handcrafted:terracotta_plate",
+    "handcrafted:terracotta_crockery_combo",
+    "handcrafted:wood_bowl",
+    "handcrafted:wood_cup",
+    "handcrafted:wood_plate",
+    "handcrafted:wood_crockery_combo",
+    "handcrafted:blue_bowl",
+    "handcrafted:white_bowl",
+    "handcrafted:yellow_bowl"
+   ]
+  },
+  {
+   "hub": "handcrafted:terracotta_thin_pot",
+   "members": [
+    "handcrafted:terracotta_medium_pot",
+    "handcrafted:terracotta_thick_pot",
+    "handcrafted:terracotta_wide_pot",
+    "handcrafted:blue_glazed_thin_pot",
+    "handcrafted:white_glazed_thin_pot",
+    "handcrafted:golden_thin_pot",
+    "handcrafted:golden_medium_pot",
+    "handcrafted:golden_thick_pot",
+    "handcrafted:golden_wide_pot"
+   ]
+  },
+  {
+   "hub": "handcrafted:oak_corner_trim",
+   "members": [
+    "handcrafted:spruce_corner_trim",
+    "handcrafted:birch_corner_trim",
+    "handcrafted:acacia_corner_trim",
+    "handcrafted:bamboo_corner_trim",
+    "handcrafted:stone_corner_trim",
+    "handcrafted:andesite_corner_trim",
+    "handcrafted:diorite_corner_trim",
+    "handcrafted:granite_corner_trim",
+    "handcrafted:deepslate_corner_trim",
+    "handcrafted:blackstone_corner_trim",
+    "handcrafted:calcite_corner_trim",
+    "handcrafted:quartz_corner_trim",
+    "handcrafted:sandstone_corner_trim",
+    "handcrafted:bricks_corner_trim"
+   ]
+  }
+ ],
+ "notes": "285 ids verified and the mod is unusually well behaved: 285 item-model stems, 285 matching item.handcrafted.X / block.handcrafted.X lang keys, 267 blockstates with a block loot table each, and 317 recipe files. THE NAIVE RULE FINDS 285 OF 285 - no under-count, no composed names, no orphans, no dropped ids. EVERY SINGLE REGISTERED ITEM HAS A CRAFTING RECIPE: I checked all 285 stems against the result field of every recipe in the jar and the miss list is empty. There is nothing unobtainable in Handcrafted.\n\nThe 18 stems with no blockstate are the 16 dyed sheets, the hammer and the fancy painting - sheets and paintings are applied to other things rather than placed, and fancy_painting spawns entity.handcrafted.fancy_painting.\n\nNAMING NOTE WORTH FLAGGING - handcrafted:bench is a REAL id and it is NOT a wood variant. There are twelve bench blocks: eleven <wood>_bench and one bare 'bench', the iron park bench made from iron bars and an iron ingot, plus handcrafted:frozen_bench which is that bench plus a snowball. Anyone stripping a wood prefix to normalise ids will collapse handcrafted:bench into the wood family and lose it. The same shape appears in the crockery, where the uncoloured parents are handcrafted:wood_bowl and handcrafted:terracotta_bowl rather than a bare 'bowl'.\n\nWHAT ACTUALLY GATES WHAT, since a furniture mod looks flat until you read the recipes:\n  - handcrafted:chests (an item tag) is required by seven blocks per wood: nightstand, cupboard, drawer, shelf, side_table, desk and counter. Those seven are the only furniture in the mod behind any real cost.\n  - handcrafted:cushions gates every couch; handcrafted:cushions AND handcrafted:sheets together gate every fancy bed. That makes white_cushion and white_sheet genuine prerequisites rather than decoration, which is why both are chain steps.\n  - oak_counter additionally wants calcite for its worktop.\n  - The dyed crockery is always terracotta crockery plus a dye, the glazed pots are always terracotta pots plus glazed terracotta, and the golden pots are terracotta pots plus a gold BLOCK.\n  - The hammer is the mod's real mechanic: tooltip.handcrafted.hammer_use_look and hammer_use_shape confirm that most placed blocks carry several looks and shapes that exist only through it. It is not an ingredient for anything, so a recipe-graph pass ranks it as a leaf and a naive chain drops it.\n\nCONSENSUS CONFLICTS:\n1. moddb DOES NOT LIST handcrafted:hammer AT ALL - none of its 26 entries mention it - even though it is the tool the entire mod is built around. Put first here.\n2. moddb puts handcrafted:skeleton_horse_trophy at pos 0.000, the very first quest. Its recipe needs a SADDLE, which has no crafting recipe in vanilla and comes only from chest loot, fishing or a leatherworker trade. That is a poor opening step and a real gate; the trophies are moved late and modelled as a wheel, with wolf_trophy (a bone) as the cheap entry point and wither_skeleton_trophy as the expensive capstone.\n3. moddb spends 13 of its 26 slots on trophies and 2 more on oak_corner_trim / oak_pillar_trim. Trims are excluded from the chain by the trim rule and appear only as a wheel; there are 46 of them (22 corner, 22 pillar, plus bricks) and they are the single largest family in the mod.\n\nVARIANT MATH, for scale: 11 woods x 16 furniture forms is the bulk of the 267 blocks, and each wood's recipe is identical but for the plank. Only the oak line appears in the chain; the other ten woods are one wheel. The 16 cushion colours and 16 sheet colours are two more wheels, and the 19 trophies a fifth."
+}

@@ -1,0 +1,52 @@
+{
+ "mod": "structurize",
+ "verified_against": "structurize-1.20.1-1.0.816.jar",
+ "item_count_in_jar": 12,
+ "parent_mod": "minecolonies",
+ "chain": [
+  {
+   "id": "structurize:sceptergold",
+   "title": "The Wand Every Colony Starts With",
+   "desc": "Sticks around stone crafting materials. MineColonies keys every hut placement on this Build Tool - without it a Town Hall cannot be sited at all."
+  },
+  {
+   "id": "structurize:sceptersteel",
+   "title": "Capturing A Building",
+   "desc": "Sticks and iron. The Scan Tool saves any structure you mark as a schematic you can re-place, share, or hand to builders."
+  },
+  {
+   "id": "structurize:caliper",
+   "title": "Measuring Before Building",
+   "desc": "Iron ingot, nugget, coal and a stick. Click two blocks and it reports the line, square or cube between them, which is how you check a hut fits before you commit."
+  },
+  {
+   "id": "structurize:blocksubstitution",
+   "title": "Leave This Space Empty",
+   "desc": "The Placeholder Block marks a spot a builder must leave alone. In a scanned schematic it becomes air rather than a block to place."
+  },
+  {
+   "id": "structurize:blocksolidsubstitution",
+   "title": "Whatever Is Already There",
+   "desc": "The Solid Placeholder tells a builder to fill with whatever solid block surrounds the site, which is how one schematic adapts across biomes."
+  },
+  {
+   "id": "structurize:blockfluidsubstitution",
+   "title": "Water Goes Here",
+   "desc": "The Fluid Placeholder does the same job for liquids, so a scanned dock or well keeps its water without hardcoding a source block."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "structurize:sceptergold",
+   "members": [
+    "structurize:sceptersteel",
+    "structurize:caliper",
+    "structurize:blocksubstitution",
+    "structurize:blocksolidsubstitution",
+    "structurize:blockfluidsubstitution"
+   ]
+  }
+ ],
+ "notes": "SHORT CHAIN BY DESIGN, SAID PLAINLY. Structurize is a build-tool library, not a content mod: data/structurize/recipes holds exactly six files and they are the six steps above. Everything else in the jar is GUI, schematic and placement code. Six craftable items and one wheel is the honest ceiling - padding it would mean inventing quests for blocks with no obtain path. Excluded because they have NO recipe and NO loot table anywhere in the jar: structurize:sceptertag (Tag Tool) and structurize:shapetool (Shape Tool), both handed out through the Build Tool GUI or creative only, and structurize:blocktagsubstitution. The two blockbarreldeco_* blocks exist in both this mod and domum_ornamentum but only Domum Ornamentum ships their crafting recipes, so they are quested there instead. Prior research confirmed: MineColonies hut recipes key on structurize:sceptergold, so a MineColonies player genuinely needs this mod and this chain is the true first chapter of a colony questline. The single wheel deliberately repeats the whole chain: with six craftable items there is nothing outside the spine to put in it, and a Build-Tool hub with its five companions is more useful to a pack author than no wheel at all. Parent items this addon assumes you already have: nothing - Structurize sits at the bottom of the MineColonies dependency stack and assumes only vanilla wood, stone and iron.",
+ "verified_note": "re-stamped to the jar actually installed; every id in this chain was re-checked against it. Previously named structurize-1.20.1-1.0.818.jar, a build not present here."
+}

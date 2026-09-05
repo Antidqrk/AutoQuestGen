@@ -1,0 +1,153 @@
+{
+  "mod": "cagedmobs",
+  "verified_against": "cagedmobs-1.20.1-forge-2.0.5.jar",
+  "item_count_in_jar": 26,
+  "chain": [
+    {
+      "id": "cagedmobs:mob_cage",
+      "title": "Mob Cage",
+      "desc": "A chain over iron bars over three iron blocks. Put a mob in it and it grows and drops on a timer without ever spawning an entity - the whole mod is this block plus what you feed it."
+    },
+    {
+      "id": "cagedmobs:dna_sampler",
+      "title": "DNA Sampler",
+      "desc": "An iron ingot, white glass and an iron block on a diagonal. Right-click a living mob to store its species, then right-click a cage to plant it. Tier one, so it only takes the easy mobs."
+    },
+    {
+      "id": "cagedmobs:cooking_upgrade",
+      "title": "Cooking Upgrade",
+      "desc": "A campfire over a block of coal, framed in blackstone and quartz. Slot it into a cage and everything comes out cooked - the first upgrade worth making."
+    },
+    {
+      "id": "cagedmobs:hopping_mob_cage",
+      "title": "Hopping Mob Cage",
+      "desc": "A Mob Cage with a hopper under it and redstone either side. It pushes its own harvest into whatever is beneath, which is the difference between a farm and a chore."
+    },
+    {
+      "id": "cagedmobs:milk_drop",
+      "title": "Milk Drop",
+      "desc": "Cage a cow with a tier-one sampler. It yields these instead of nothing; one drop plus a bucket is a bucket of milk, so a cow farm needs no cow."
+    },
+    {
+      "id": "cagedmobs:honey_drop",
+      "title": "Honey Drop",
+      "desc": "A caged bee needs a tier-two sampler and a farm environment. It gives honeycomb and these, and a drop plus a glass bottle is a honey bottle."
+    },
+    {
+      "id": "cagedmobs:arrow_upgrade",
+      "title": "Arrow Upgrade",
+      "desc": "A dispenser and a skeleton skull under an arrow, on the blackstone-and-quartz frame. The cage kills by arrow, so drops count as player kills and rare tables open up."
+    },
+    {
+      "id": "cagedmobs:looting_upgrade",
+      "title": "Looting Upgrade",
+      "desc": "An enchanting table over a block of emerald. Applies looting to the cage's harvest, and stacks with the Arrow Upgrade for the drops that only a looting-III kill will give."
+    },
+    {
+      "id": "cagedmobs:experience_upgrade",
+      "title": "Experience Upgrade",
+      "desc": "A glass bottle and lime glass over an emerald block and a coal block. The cage starts paying out experience as a solid item instead of losing it."
+    },
+    {
+      "id": "cagedmobs:crystallized_experience",
+      "title": "Crystallized Experience",
+      "desc": "What a cage with the Experience Upgrade actually drops. Nine of them ring a glass bottle for a Bottle o' Enchanting, so a mob farm becomes an enchanting economy."
+    },
+    {
+      "id": "cagedmobs:crystallized_experience_block",
+      "title": "Block of Crystallized Experience",
+      "desc": "Nine crystals compressed, and nine back out. Storage for the one currency this mod prints faster than you can spend it."
+    },
+    {
+      "id": "cagedmobs:diamond_dna_sampler",
+      "title": "Diamond DNA Sampler",
+      "desc": "A diamond, light blue glass and a block of diamonds. Tier two: it takes the mobs the iron sampler refuses, bees and blazes and the rest."
+    },
+    {
+      "id": "cagedmobs:sponge_fragment",
+      "title": "Sponge Fragment",
+      "desc": "Caged elder guardians drop these at tier three. Nine make a sponge, which is the only renewable sponge most worlds will ever see."
+    },
+    {
+      "id": "cagedmobs:lightning_upgrade",
+      "title": "Lightning Upgrade",
+      "desc": "An end rod over a shulker shell, framed in phantom membrane and quartz. The cage strikes its occupant with lightning, which is how charged creepers and witches arrive on a timer."
+    },
+    {
+      "id": "cagedmobs:speed_i_upgrade",
+      "title": "Speed I Upgrade",
+      "desc": "Two netherite ingots on the blackstone-and-quartz frame. Cuts the growth timer, and it is the base every faster tier is built on top of."
+    },
+    {
+      "id": "cagedmobs:star_infused_netherite_ingot",
+      "title": "Star Infused Netherite",
+      "desc": "Four nether stars around a netherite ingot. The mod's own endgame metal, and the only route to a tier-three sampler."
+    },
+    {
+      "id": "cagedmobs:netherite_dna_sampler",
+      "title": "Netherite DNA Sampler",
+      "desc": "Smith a Diamond DNA Sampler with Star Infused Netherite and a netherite upgrade template. Tier three - withers, wardens and the dragon are finally samplable."
+    },
+    {
+      "id": "cagedmobs:nether_star_fragment",
+      "title": "Nether Star Fragment",
+      "desc": "A caged wither, tier three, in a cave environment. Four fragments make a whole nether star, so the wither farm you could never build safely now runs in a box."
+    },
+    {
+      "id": "cagedmobs:speed_ii_upgrade",
+      "title": "Speed II Upgrade",
+      "desc": "A Speed I Upgrade with a whole nether star and two star fragments. This is where the wither cage starts paying for itself."
+    },
+    {
+      "id": "cagedmobs:dragon_scale",
+      "title": "Dragon Scale",
+      "desc": "Cage the ender dragon itself with a tier-three sampler in an End environment. Nine scales craft a new dragon egg, and one plus a bottle is dragon's breath on tap."
+    },
+    {
+      "id": "cagedmobs:warden_receptor",
+      "title": "Warden Receptor",
+      "desc": "A caged warden on sculk drops these one time in five. Nothing else in the mod needs one, except the last upgrade."
+    },
+    {
+      "id": "cagedmobs:speed_iii_upgrade",
+      "title": "Speed III Upgrade",
+      "desc": "Two Warden Receptors and Star Infused Netherite around a Speed II Upgrade. The fastest a cage will ever run, and it costs a caged warden to get there."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "cagedmobs:cooking_upgrade",
+      "members": [
+        "cagedmobs:arrow_upgrade",
+        "cagedmobs:looting_upgrade",
+        "cagedmobs:experience_upgrade",
+        "cagedmobs:lightning_upgrade",
+        "cagedmobs:speed_i_upgrade",
+        "cagedmobs:speed_ii_upgrade",
+        "cagedmobs:speed_iii_upgrade"
+      ]
+    },
+    {
+      "hub": "cagedmobs:milk_drop",
+      "members": [
+        "cagedmobs:honey_drop",
+        "cagedmobs:sponge_fragment",
+        "cagedmobs:dragon_scale",
+        "cagedmobs:nether_star_fragment",
+        "cagedmobs:warden_receptor",
+        "cagedmobs:crystallized_experience"
+      ]
+    },
+    {
+      "hub": "cagedmobs:star_infused_netherite_ingot",
+      "members": [
+        "cagedmobs:star_infused_netherite_nugget",
+        "cagedmobs:star_infused_netherite_block",
+        "cagedmobs:crystallized_experience",
+        "cagedmobs:crystallized_experience_block",
+        "cagedmobs:nether_star_fragment"
+      ]
+    }
+  ],
+  "notes": "Verified against cagedmobs-1.20.1-forge-2.0.5.jar: META-INF/mods.toml modId=cagedmobs, modLoader=javafml, minecraft versionRange [1.20.1,1.21), forge [47,), no fabric.mod.json, all 72 sampled class files at major version 61 (Java 17 = 1.20.1). ID DERIVATION, two independent passes, and the naive rule OVERCOUNTS by three. Pass 1 (assets): assets/cagedmobs/models/item/ holds 29 json files. assets/cagedmobs/lang/en_us.json holds 47 keys beginning item.cagedmobs. and 19 beginning block.cagedmobs., but most of those are SUFFIXED tooltip keys on a real item - mob_cage alone owns fourteen (mob_cage.envInfo, mob_cage.upgrading, mob_cage.rightClickHarvest and so on) and dna_sampler owns ten. Stripping suffixes leaves 26 real stems, and models INTERSECT stems = 26. Pass 2 (bytecode, derived without touching assets at all): the CONSTANT_Utf8 pool of com/corgam/cagedmobs/registers/CagedItems.class lists exactly 26 registry names, and com/corgam/cagedmobs/registers/CagedBlocks.class lists the 4 that are also blocks. The two passes agree on the same 26 names. THREE FALSE IDS CAUGHT AND EXCLUDED, all proved rather than assumed: cagedmobs:dna_sampler_full, cagedmobs:diamond_dna_sampler_full and cagedmobs:netherite_dna_sampler_full each have a models/item file and NOTHING else - no lang key, no recipe, and none of the three strings appears in any class constant pool in the jar. They are the loaded-state model overrides the three real samplers switch to once they hold an entity. Blockstates number 4 and match the 4 block lang keys exactly. UNOBTAINABLE, DROPPED, 2 of the 26: (a) cagedmobs:creative_upgrade is registered and has a lang key and a model, but no recipe and no loot table anywhere in the jar - com/corgam/cagedmobs/items/upgrades/CreativeUpgradeItem.class is the class, and it is exactly what its name says, a creative-only cage upgrade. (b) cagedmobs:empty_spawn_egg likewise has model, lang key and registration but NO recipe and NO loot table. Its only in-code reference outside registration is in MobCageBlock, and ServerConfig carries a disableSpawnEggs option whose comment reads 'Disables the ability to use spawn eggs on mob cages', i.e. spawn eggs are an INPUT to the cage, not an output. There is no path in the jar that hands the player one, so it is dropped as uncompletable. The remaining 24 are all obtainable and all appear in the chain or the wheels. OBTAIN PATHS THAT ARE NOT ORDINARY RECIPES, all verified: six ids are cage harvest only, produced by data/cagedmobs/recipes/{entities,bosses}/*.json of custom type cagedmobs:entity_data - milk_drop from minecraft:cow at samplerTier 1, honey_drop from minecraft:bee at tier 2, and at tier 3 sponge_fragment from minecraft:elder_guardian, nether_star_fragment from minecraft:wither, dragon_scale from minecraft:ender_dragon and warden_receptor from minecraft:warden. A seventh, crystallized_experience, has no producing recipe at all - the string CRYSTALLIZED_EXPERIENCE appears in com/corgam/cagedmobs/blocks/mob_cage/MobCageBlockEntity.class, i.e. a cage fitted with the Experience Upgrade emits it in code. The two shapeless recipes touching it only convert it to and from its storage block, so a scanner that stops at recipes would wrongly read it as a closed loop with no entry. CONDITIONAL-WRAPPER TRAP, IMPORTANT HERE: this jar ships data for 22 OTHER namespaces (alexsmobs, twilightforest, iceandfire, quark, tconstruct, thermal, greekfantasy, botania and more), 300-plus entity_data files in total, and every single one carries a forge:mod_loaded condition naming that third mod. Those recipes produce that mod's items, not cagedmobs' - none of the 24 ids above depends on a third mod being installed. The mod's own files are conditioned on modid 'cagedmobs', which is always satisfied. Also note the Create-family plural-results shape appears here too: entity_data uses a 'results' ARRAY of {chance, output:{item}, minAmount, maxAmount}, so a scanner reading only 'result' finds none of the six cage drops. RECIPE-FILE QUIRK worth recording because it looks like a bug: data/cagedmobs/recipes/crafting/star_infused_netherite_block.json actually produces the INGOT (from 9 nuggets) and star_infused_netherite_ingot_from_nuggets.json actually produces the BLOCK (from 9 ingots). The filenames are swapped; the recipes themselves are correct and all three forms are obtainable. ORDERING is a recipe graph with two spines that meet at the top. Cage spine: mob_cage (chain + iron bars + iron blocks, no mod ingredient) -> hopping_mob_cage (takes cagedmobs:mob_cage). Sampler spine: dna_sampler (iron) -> diamond_dna_sampler (diamond) -> netherite_dna_sampler, which is a minecraft:smithing_transform taking base cagedmobs:diamond_dna_sampler plus addition tag cagedmobs:ingots/star_infused_netherite plus a netherite_upgrade_smithing_template, so star_infused_netherite_ingot (4 nether stars around a netherite ingot) is forced ahead of it. Sampler tier then gates which mobs are cageable at all - the samplerTier field on each entity_data file is a hard number, tier 1 for cow, 2 for bee, 3 for wither, warden and ender dragon - so the six cage drops slot into the chain behind the sampler that unlocks them. The speed upgrades are a strict line: speed_i (netherite ingots) -> speed_ii (takes cagedmobs:speed_i_upgrade plus a nether star) -> speed_iii (takes cagedmobs:speed_ii_upgrade plus cagedmobs:warden_receptor plus star-infused netherite), which puts speed_iii last in the whole mod, behind a caged warden. The five non-speed upgrades take no cagedmobs ingredient and are ordered by vanilla cost: cooking (campfire, coal block) < arrow (dispenser, skeleton skull) < looting (enchanting table, emerald block) < experience (emerald block, lime glass) < lightning (end rod, shulker shell, phantom membrane). CONSENSUS: moddb.json lists 5 ids ordered mob_cage 0.0, dna_sampler 0.25, hopping_mob_cage 0.5, diamond_dna_sampler 0.75, netherite_dna_sampler 1.0. That agrees with the recipe graph on every edge - no conflict. Consensus covers only the cage-and-sampler spine and omits all eight upgrades, all six cage drops and the whole star-infused netherite line; those 19 ids are recovered here. DESIRABILITY: cagedmobs:star_infused_netherite_nugget is kept out of the chain per the nugget rule and wheeled instead."
+}

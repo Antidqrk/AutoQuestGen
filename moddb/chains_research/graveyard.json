@@ -1,0 +1,222 @@
+{
+ "mod": "graveyard",
+ "verified_against": "The_Graveyard_3.1_(FORGE)_for_1.20.1.jar",
+ "item_count_in_jar": 128,
+ "chain": [
+  {
+   "id": "structure:graveyard:small_grave",
+   "title": "Gravedigger",
+   "desc": "One headstone in a forest or plains clearing. The mod's root advancement fires on any of the four small graves - forest, desert, savanna or mountain."
+  },
+  {
+   "id": "graveyard:leaning_skeleton",
+   "title": "Pseudo Archaeologist",
+   "desc": "A posed skeleton you can pick up and re-place; eleven of these decorative bodies exist and holding any one completes the mod's own find_skeleton advancement."
+  },
+  {
+   "id": "kill:graveyard:ghoul",
+   "title": "Stay Dead",
+   "desc": "Ghouls spawn two to five at a time at weight 25 in forest, taiga, swamp and dark forest, and they are the mod's horde backbone."
+  },
+  {
+   "id": "graveyard:corruption",
+   "title": "Source of Evil",
+   "desc": "Every graveyard mob drops it and crypt urns are full of it; nothing else in the mod unlocks without it."
+  },
+  {
+   "id": "graveyard:dark_iron_ingot",
+   "title": "Iron, But Dark",
+   "desc": "One Corruption plus one iron ingot, shapeless. It is the hinge of every coffin and the bars, doors and trapdoors of the crypts."
+  },
+  {
+   "id": "graveyard:oak_coffin",
+   "title": "Well Prepared",
+   "desc": "Eight planks around a Dark Iron Ingot. Twelve wood types exist and a Ghouling can be made to carry one - which is what makes it worth crafting."
+  },
+  {
+   "id": "structure:graveyard:medium_graveyard",
+   "title": "Disturbing the Dead I",
+   "desc": "The walled cemetery of forest, flower forest and windswept forest, spawn-overriding Skeleton Creepers, Revenants and Ghouls inside its own bounding pieces."
+  },
+  {
+   "id": "kill:graveyard:revenant",
+   "title": "Three at a Time",
+   "desc": "Weight 45 inside graveyards and weight 25 across snowy plains, ice spikes and snowy taiga; it comes in groups of three to five."
+  },
+  {
+   "id": "kill:graveyard:skeleton_creeper",
+   "title": "Half Bone, Half Bang",
+   "desc": "The only graveyard mob that spawns in every overworld biome, and the only one whose loot table can drop a music disc."
+  },
+  {
+   "id": "structure:graveyard:large_graveyard",
+   "title": "Disturbing the Dead II",
+   "desc": "A jigsaw town of the dead in taiga and snowy taiga, with a wither skeleton mill, walled streets and chests holding Dark Iron."
+  },
+  {
+   "id": "kill:graveyard:reaper",
+   "title": "The One That Charges",
+   "desc": "The Reaper takes no biomes of its own - it arrives with the night hordes the mod spawns around graveyards, and it leaves soul sand behind."
+  },
+  {
+   "id": "structure:graveyard:crypt",
+   "title": "Into Darkness",
+   "desc": "The underground crypt, keyed to cave biomes; its own spawn override stocks it with Acolytes and both Corrupted Illagers, and its chests are the main Dark Iron source."
+  },
+  {
+   "id": "kill:graveyard:corrupted_vindicator",
+   "title": "Corrupted, Then Buried",
+   "desc": "Weight 35 inside the crypt, one to three at a time; the illagers down here have been dead a while."
+  },
+  {
+   "id": "kill:graveyard:wraith",
+   "title": "Taking From the Dead",
+   "desc": "A Wraith is not spawned by any biome - it is released when you desecrate a coffin or sarcophagus, and it puts out every light near it."
+  },
+  {
+   "id": "structure:graveyard:haunted_house",
+   "title": "Invitation to the Tea Party",
+   "desc": "The house in the dark forest, swamp and old-growth taiga, with a downstairs full of Acolytes."
+  },
+  {
+   "id": "graveyard:bone_dagger",
+   "title": "Three Bones in a Line",
+   "desc": "The mod's one crafted weapon, and the only tool that draws blood from a villager or earns the Turning the Tables advancement against an Acolyte."
+  },
+  {
+   "id": "kill:graveyard:acolyte",
+   "title": "Turning the Tables",
+   "desc": "The robed cultists placed inside the haunted house, the crypt corridors and the large graveyard's streets; the advancement wants one killed with its own dagger."
+  },
+  {
+   "id": "graveyard:vial_of_blood",
+   "title": "Blood \"Donation\"",
+   "desc": "Taken from a living villager with an empty glass bottle and the Bone Dagger, exactly as the mod's own advancement describes; there is no recipe for it."
+  },
+  {
+   "id": "structure:graveyard:dead_tree",
+   "title": "Hanging Tree",
+   "desc": "A dark forest and swamp gallows whose structure file places the Nameless Hanged - the mod's one trading NPC - and one of the three bone staff fragments."
+  },
+  {
+   "id": "structure:graveyard:ruins",
+   "title": "What Is Left Standing",
+   "desc": "Forest ruins with graveyard spawn overrides; this is the only structure in the jar that carries all three bone staff fragments in its templates."
+  },
+  {
+   "id": "graveyard:lower_bone_staff",
+   "title": "Broken Parts I",
+   "desc": "The bottom of the Ominous Bone Staff, found as a placed block in the ruins and broken free."
+  },
+  {
+   "id": "graveyard:middle_bone_staff",
+   "title": "Broken Parts II",
+   "desc": "The middle fragment, in the ruins and again under the dead tree."
+  },
+  {
+   "id": "graveyard:upper_bone_staff",
+   "title": "Broken Parts III",
+   "desc": "The last fragment. Three pieces plus a full Vial of Blood is the price of an audience with the Lich."
+  },
+  {
+   "id": "structure:graveyard:lich_prison",
+   "title": "Cursed Island",
+   "desc": "An island in deep, frozen or deep-frozen ocean holding the altar block; the advancement calls finding it 'the altar of the lich'."
+  },
+  {
+   "id": "kill:graveyard:lich",
+   "title": "Wrath of the Lich",
+   "desc": "Summoned at the altar at night with the blood and all three staff fragments. The Corrupted Champion is the mod's only boss and its only source of finished staves."
+  },
+  {
+   "id": "graveyard:white_bone_staff",
+   "title": "Staff of Zatraq'gul",
+   "desc": "One of five coloured staves the Lich drops; this is the one that raises a Ghouling to serve you."
+  },
+  {
+   "id": "kill:graveyard:nightmare",
+   "title": "Peekaboo, I (Still) See You",
+   "desc": "The Nightmare blinds you and then hunts you; the mod's advancement asks you to kill one while blinded."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "graveyard:leaning_skeleton",
+   "members": [
+    "graveyard:leaning_wither_skeleton",
+    "graveyard:lying_skeleton",
+    "graveyard:lying_wither_skeleton",
+    "graveyard:laterally_lying_skeleton",
+    "graveyard:laterally_lying_wither_skeleton",
+    "graveyard:skull_with_rib_cage",
+    "graveyard:wither_skull_with_rib_cage",
+    "graveyard:skeleton_hand",
+    "graveyard:wither_skeleton_hand",
+    "graveyard:skull_pile",
+    "graveyard:wither_skull_pile",
+    "graveyard:creeper_skeleton"
+   ]
+  },
+  {
+   "hub": "graveyard:oak_coffin",
+   "members": [
+    "graveyard:dark_oak_coffin",
+    "graveyard:spruce_coffin",
+    "graveyard:birch_coffin",
+    "graveyard:jungle_coffin",
+    "graveyard:acacia_coffin",
+    "graveyard:mangrove_coffin",
+    "graveyard:cherry_coffin",
+    "graveyard:bamboo_coffin",
+    "graveyard:crimson_coffin",
+    "graveyard:warped_coffin",
+    "graveyard:sarcophagus"
+   ]
+  },
+  {
+   "hub": "graveyard:white_bone_staff",
+   "members": [
+    "graveyard:black_bone_staff",
+    "graveyard:cyan_bone_staff",
+    "graveyard:purple_bone_staff",
+    "graveyard:red_bone_staff"
+   ]
+  },
+  {
+   "hub": "graveyard:gravestone",
+   "members": [
+    "graveyard:cobblestone_gravestone",
+    "graveyard:mossy_cobblestone_gravestone",
+    "graveyard:stone_bricks_gravestone",
+    "graveyard:mossy_stone_bricks_gravestone",
+    "graveyard:deepslate_gravestone",
+    "graveyard:blackstone_gravestone",
+    "graveyard:cracked_blackstone_gravestone",
+    "graveyard:gilded_blackstone_gravestone",
+    "graveyard:sandstone_gravestone",
+    "graveyard:red_sandstone_gravestone",
+    "graveyard:bricks_gravestone",
+    "graveyard:quartz_bricks_gravestone"
+   ]
+  },
+  {
+   "hub": "graveyard:white_urn",
+   "members": [
+    "graveyard:black_urn",
+    "graveyard:blue_urn",
+    "graveyard:brown_urn",
+    "graveyard:cyan_urn",
+    "graveyard:gray_urn",
+    "graveyard:green_urn",
+    "graveyard:light_blue_urn",
+    "graveyard:light_gray_urn",
+    "graveyard:lime_urn",
+    "graveyard:magenta_urn",
+    "graveyard:orange_urn",
+    "graveyard:pink_urn",
+    "graveyard:purple_urn"
+   ]
+  }
+ ],
+ "notes": "Item set = 170 stems of assets/graveyard/models/item/*.json intersected with item.graveyard.* / block.graveyard.* lang keys = 128; the 42 models with no lang key are coffin, urn and skeleton render variants. ENTITY VERIFICATION - 19 entity.graveyard.* lang keys but only 11 are EntityTypes: SEVEN OF THEM ARE DIALOGUE LINES WEARING ENTITY KEYS, and they are the exact trap the brief describes. entity.graveyard.ghouling.kill ('Me make it stop moving'), .nowait ('I follow.'), .obey, .respawn ('Death... is a mere inconvenience'), .spawn ('I hear and obey...'), .wait, and entity.graveyard.nameless_hanged.wait are the things a Ghouling and the Nameless Hanged SAY; none has a loot table, a spawn egg or any data reference, and a kill: step on one is impossible. Of the eleven real ones, nine are used or considered here and each has at least two proofs. FIVE have a forge:add_spawns biome modifier in data/graveyard/forge/biome_modifiers/: ghoul (weight 25, 2-5, #graveyard:ghoul_spawns = forest/taiga/swamp/dark_forest), revenant (25, 3-5, snowy_plains/ice_spikes/snowy_taiga), skeleton_creeper (20, 1-4, every overworld biome), nightmare (7, 1-1), and reaper - BUT #graveyard:reaper_spawns SHIPS EMPTY, so the Reaper never spawns from the biome path. The Reaper is still kept as a kill: step because it has its own loot table (corruption, bone, soul_sand), its own spawn egg, its own name is a string inside GraveyardConfig.class next to hordeConfigEntries/getHorde/horde_spawn, the jar carries GraveyardHordeSpawner and a forge HordeSpawner, and data/graveyard/advancements/graveyard/kill_graveyard_mob.json names graveyard:reaper as one of its four kill criteria - it arrives with the night hordes, not with the biome spawner, and the config header text confirms only ghoul, revenant, nightmare and skeleton creeper are biome-configurable. FOUR more are structure-placed rather than biome-spawned: graveyard:acolyte, graveyard:corrupted_vindicator and graveyard:corrupted_pillager are all three listed in the spawn_overrides of data/graveyard/worldgen/structure/crypt.json (weights 25/35/35), and acolyte is additionally placed by name inside haunted_house_01.nbt, haunted_house_downstairs.nbt, crypt/corridor_pool/room_04.nbt, large_graveyard/crossroad_02.nbt and walled_street_01.nbt. graveyard:wraith has NO loot table and NO biome modifier and is still safe, because SarcophagusBlock.class carries the WRAITH constant and data/graveyard/advancements/graveyard/kill_wraith.json fires on the mod's own graveyard:spawn_wraith trigger with the description 'Summon a wraith by desecrating its coffin' - breaking a coffin releases one. graveyard:lich has a loot table carrying all five coloured staves and its advancement graveyard/summon_lich is a minecraft:summoned_entity trigger on predicate type graveyard:lich, summoned at the altar. EXCLUDED entities: graveyard:ghouling (class-constant only, no egg, no loot - it is the servant you raise with a staff, not a target) and graveyard:nameless_hanged (a TRADER - NamelessHangedTradeOffers.class - placed by data/graveyard/structures/dead_tree/dead_tree.nbt; the dead_tree structure: step covers it instead of a kill). THE DIMENSION IS A TRAP AND IS DELIBERATELY NOT USED. data/graveyard/dimension/past.json and data/graveyard/dimension_type/past.json exist (a mushroom-fields and frozen-ocean multi-noise world, min_y -192, height 384, natural false), but the string 'graveyard:past' appears in NO class file, there is no portal block, no portal item, no lang key for it, and the jar contains no class with Portal or Dimension in its name. There is no way for a player to reach it, so NO dim: step is emitted - a dim:graveyard:past quest would be permanently uncompletable. Structures verified from the 17 files in data/graveyard/worldgen/structure/, each with its own #graveyard:has_structure/* biome tag: small_grave (forest/plains), medium_graveyard (forest/flower_forest/windswept_forest), large_graveyard (taiga/snowy_taiga), crypt (#c:caves + #forge:is_underground), haunted_house (dark_forest/swamp/old-growth taigas), dead_tree (dark_forest/swamp), ruins (forest), lich_prison (deep_ocean/frozen_ocean/deep_frozen_ocean), altar (snowy_plains/ice_spikes), giant_mushroom and mushroom_grave (#c:mushroom, #c:swamp). BONE STAFF PLACEMENT was resolved by gunzipping the structure NBT: lower_bone_staff and upper_bone_staff appear ONLY in data/graveyard/structures/ruins/*, middle_bone_staff in ruins and dead_tree - which is why both structures are steps and why they sit immediately before the three fragments. Ordering is the mod's own 30-advancement tree, which is a genuine parent chain: root -> {corruption -> {dark_iron -> craft_coffin, dead_tree}, crypt -> {kill_wraith, wraith_dim_light}, medium_graveyard -> large_graveyard, haunted_house -> kill_acolyte_bone_dagger, kill_graveyard_mob -> kill_horde, vial_of_blood -> {lower,middle,upper}_bone_staff -> lich_prison -> summon_lich -> the five coloured staves -> equip_ghouling_coffin}. CONSENSUS CONFLICT (moddb): moddb lists four graveyard ids at 6 packs each - leaning_skeleton (0.0), leaning_wither_skeleton (0.333), dark_iron_ingot (0.667), upper_bone_staff (1.0). All four are real ids here and all four are honoured: leaning_skeleton opens the chain and leaning_wither_skeleton heads its wheel, dark_iron_ingot sits at step 5, upper_bone_staff at step 23. No conflict found. DROPPED, no obtainability proof: graveyard:altar, graveyard:altar_center, graveyard:altar_corner and graveyard:altar_side (models and lang keys, no recipe and no loot table - the altar block is placed only by data/graveyard/structures/lich_prison/lich_prison.nbt), and the twelve tg_* blocks (tg_stone, tg_deepslate, tg_dirt, tg_grass_block and so on) which are structure-only copies of vanilla blocks with no recipe and no loot table. ALSO DROPPED: the nine *_spawn_egg items, all creative-only. Requires geckolib."
+}

@@ -1,0 +1,156 @@
+{
+ "mod": "chococraft",
+ "jar": "chococraft-1.20.1-forge-0.9.12.jar",
+ "ids_in_jar": 32,
+ "videos": [
+  {
+   "id": "Pi5aNpMfBM0",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 11655
+  },
+  {
+   "id": "mzyQsdKQthI",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 16092
+  },
+  {
+   "id": "BmxaZniQZDs",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 8008
+  },
+  {
+   "id": "Xq8g2ZmQynM",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 1799
+  },
+  {
+   "id": "7DMyf4Zy7LU",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 7234
+  },
+  {
+   "id": "sF9h0Bj_48M",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 11859
+  }
+ ],
+ "items": {
+  "chococraft:chocobo_feather": {
+   "mentions": 25,
+   "videos": 6,
+   "first_at": 0.22,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 3
+  },
+  "chococraft:straw": {
+   "mentions": 16,
+   "videos": 4,
+   "first_at": 0.2917,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "chococraft:chocopedia": {
+   "mentions": 12,
+   "videos": 5,
+   "first_at": 0.3512,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "chococraft:chocobo_saddle": {
+   "mentions": 10,
+   "videos": 4,
+   "first_at": 0.3592,
+   "praise": 8,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "chococraft:chocobo_saddle_bags": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.3878,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "chococraft:chocobo_whistle": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.6202,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  }
+ },
+ "note": "Banked corpus: 6 of 8 usable. sF9h0Bj_48M is the key source - a review that explicitly covers the 1.20.1 revival ('now available for 1.20.1'); Pi5aNpMfBM0 (1.4.6/1.4.7), mzyQsdKQthI + BmxaZniQZDs (1.7.10) and 7DMyf4Zy7LU (jar-era) teach the same mechanics on old versions - facts cross-checked against the 1.20.1 jar ids. jqTg_FZyYdk and wGQMoz12cHA failed to transcribe (0 chars). Jar chococraft-1.20.1-forge-0.9.12.",
+ "human_notes": {
+  "entry": [
+   "Entry is a PLANT, not a machine: find wild chococraft:gysahl_green - carrot-like plants scattered everywhere in clusters. Every guide starts here because the green both tames chocobos and seeds a farm (one green crafts into chococraft:gysahl_green_seeds; harvesting gives greens back plus mutation chances).",
+   "First tame: feed gysahl greens to a wild yellow chocobo until hearts and a neck band appear (may take several greens). Then chococraft:chocobo_saddle (2 string + 1 leather + 1 chocobo_feather) to ride.",
+   "chococraft:chocobo_feather is the mod's universal crafting currency and drops FREE - chocobos molt them on the ground constantly, no killing needed. They also substitute for vanilla feathers in recipes.",
+   "chococraft:chocopedia (book + 4 feathers + 2 ink sacs + lapis + gold nugget) is the in-game manual and the pet UI: rename, stay/follow/wander, drop gear."
+  ],
+  "boss_order": [
+   "No bosses. The ladder is a BREEDING tree, not a fight ladder."
+  ],
+  "order": [
+   "1. Gysahl farm first: planted greens yield ~15% chococraft:loverly_gysahl_green and ~5% chococraft:gold_gysahl mutations on harvest - both are gates further up the tree, so the farm precedes everything.",
+   "2. Tame two yellows (wild chocobos are always yellow) and saddle one.",
+   "3. Breed with chococraft:loverly_gysahl_green (the breeding food - one to each parent): yellow+yellow can give GREEN (climbs without jumping) or BLUE (swims fast, floats on water).",
+   "4. green+blue -> WHITE (both abilities, faster). white+yellow -> BLACK (faster still, jumps higher; one guide adds night vision while ridden).",
+   "5. white+black -> GOLD, and this cross requires chococraft:gold_gysahl - the 5% farm mutation is the hard currency of the endgame. Gold chocobos FLY (hold jump to rise) and take no fall damage.",
+   "6. Two golds fed gold gysahls breed true. Optional: right-click a gold with chococraft:red_gysahl / chococraft:pink_gysahl (gysahl + red/pink dye) to recolor it - same abilities.",
+   "7. The Nether shortcut: purple chocobos spawn only in the Nether, fly, walk lava and shrug off fire - tamed the same way, an alternative to breeding all the way to gold (guides note gold still flies better).",
+   "8. Cargo upgrades along the way: chococraft:chocobo_saddle (no inventory) -> chococraft:chocobo_saddle_bags (small chest, rideable) -> chococraft:chocobo_saddle_pack (big inventory but NOT rideable - a pack animal you lead).",
+   "9. Support kit: chococraft:straw (2 wheat) floor around a water-filled cauldron makes a pen that passively HEALS chocobos; chococraft:gysahl_cake instantly grows a chick (tame it first); chococraft:chocobo_whistle (gold ingot + feather) cycles/clears commands."
+  ],
+  "gates": [
+   "HARD GATE on gold chocobos: the white+black cross only works with chococraft:gold_gysahl, and gold gysahls only appear as a ~5% harvest mutation from a player-planted farm - flight is gated on farming patience.",
+   "Breeding at all is gated on chococraft:loverly_gysahl_green (~15% mutation) - regular greens tame but do not breed.",
+   "Purple (Nether) chocobos are gated on a Nether trip and on carrying greens in, since no gysahls grow there.",
+   "The mid colors cannot be skipped: yellow -> green+blue -> white -> black -> gold is a fixed tree; one guide tried to jump straight to white and the book says no."
+  ],
+  "traps": [
+   "Wild chocobos flee when approached; the chococraft:choco_disguise_helmet set (armor from feathers, roughly iron/diamond-class) exists exactly for this - guides call it hunting gear. Without it early taming is a chase.",
+   "The gysahl cake is skippable - guides call growth fast enough to wait out; do not build a quest around the cake as if it were mandatory.",
+   "The saddle PACK looks like the upgrade but removes ridability - players who apply it to their mount just lost their mount.",
+   "Old guides (1.2.5-1.7.10) show the whistle as an UNTAME tool - on modern builds it manages commands; either way it is not a summon despite the name.",
+   "Killing chocobos for chococraft:chocobo_drumstick_raw works but is a trap for tamers - feathers molt for free and dead birds breed nothing."
+  ],
+  "signature": [
+   "chococraft:gysahl_green - the taming plant the whole mod stands on.",
+   "chococraft:gold_gysahl and chococraft:loverly_gysahl_green - the two farm mutations that gate breeding and flight.",
+   "chococraft:chocobo_saddle / _saddle_bags / _saddle_pack - the mount-and-cargo ladder.",
+   "chococraft:chocopedia - manual plus pet control UI.",
+   "chococraft:straw pen around a water cauldron - the healing stable.",
+   "chococraft:choco_disguise_chestplate - dress as a chocobo to walk among them.",
+   "chococraft:flame_chocobo_spawn_egg exists in the 1.20.1 jar but NO guide covers the flame variant - jar-only knowledge, do not invent behavior for it."
+  ]
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "mod": "gravitygun",
+ "verified_against": "GravityGunRevival-1.20.1-1.1.0.jar (CurseForge project 1452616, 'iChun Gravity Gun Mod Revival' by DalterDile81; file 8602200, stable - the mod left beta with 1.0.0)",
+ "item_count_in_jar": 19,
+ "note": "A faithful 1.20.1 Forge port of iChun's 1.12.2 Gravity Gun. Namespace is gravitygun, same as the original. The alternative on CurseForge is Cloro's Gravity Gun (project 895998, namespace physics_gun_mod, Garry's-Mod-flavoured: physics gun, tool gun, portal thrower); it is a different mod, record it separately if ever wanted. The colored gun recipes in this jar consume paintball:*_paintbrush items from the same author's Paintball Mod Revival - without that mod installed the colored variants are unobtainable, so only the three ids in the chain below are safe quest targets on their own.",
+ "chain": [
+  {
+   "id": "gravitygun:gravity_gun",
+   "title": "Zero-Point Energy",
+   "desc": "Shaped recipe from a diamond, four ender pearls, two iron ingots, glowstone and obsidian. Left click punts whatever you are looking at; right click picks up a block or a mob and carries it in front of you until you drop or launch it."
+  },
+  {
+   "id": "gravitygun:gravity_book",
+   "title": "Read the Manual",
+   "desc": "The mod's in-game guidebook. Its recipe is a custom code-defined type (gravitygun:gravity_book), so the ingredients are not readable from the data json - verify in-game or with JEI before questing a craft task on it; a plain 'have the item' task is safe."
+  },
+  {
+   "id": "gravitygun:gravity_gun_supercharged",
+   "title": "Supercharged",
+   "desc": "Shapeless: the Gravity Gun plus a Nether Star, so the upgrade is gated behind a Wither kill. The blue supercharged gun grabs and launches far heavier targets, mirroring the Citadel sequence of Half-Life 2."
+  }
+ ],
+ "collections": [
+  {
+   "name": "painted guns (require the Paintball Mod Revival's paintbrushes)",
+   "members": [
+    "gravitygun:red_gravity_gun",
+    "gravitygun:blue_gravity_gun",
+    "gravitygun:green_gravity_gun",
+    "gravitygun:orange_gravity_gun",
+    "gravitygun:yellow_gravity_gun",
+    "gravitygun:purple_gravity_gun",
+    "gravitygun:white_gravity_gun",
+    "gravitygun:cyan_gravity_gun",
+    "gravitygun:red_supercharged_gravity_gun",
+    "gravitygun:blue_supercharged_gravity_gun",
+    "gravitygun:green_supercharged_gravity_gun",
+    "gravitygun:orange_supercharged_gravity_gun",
+    "gravitygun:yellow_supercharged_gravity_gun",
+    "gravitygun:purple_supercharged_gravity_gun",
+    "gravitygun:white_supercharged_gravity_gun",
+    "gravitygun:cyan_supercharged_gravity_gun"
+   ]
+  }
+ ]
+}

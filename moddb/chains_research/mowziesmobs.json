@@ -1,0 +1,156 @@
+{
+  "mod": "mowziesmobs",
+  "verified_against": "mowziesmobs-1.8.2.jar",
+  "item_count_in_jar": 55,
+  "chain": [
+    {
+      "id": "kill:mowziesmobs:foliaath",
+      "title": "Jennifer Dumped Me",
+      "desc": "Foliaaths ambush from jungle undergrowth and drop a Foliaath Seed."
+    },
+    {
+      "id": "mowziesmobs:foliaath_seed",
+      "title": "Raise Your Own Man-Eater",
+      "desc": "Planted in grass and fed meat every half-day, the seed grows into a tame Foliaath over two days."
+    },
+    {
+      "id": "kill:mowziesmobs:grottol",
+      "title": "You Monster",
+      "desc": "Grottols are shy living-ore mobs that drop diamonds, and more if killed with Fortune."
+    },
+    {
+      "id": "mowziesmobs:captured_grottol",
+      "title": "Taken Alive",
+      "desc": "Killing a Grottol with a Silk Touch pickaxe yields a Captured Grottol instead of loose diamonds."
+    },
+    {
+      "id": "kill:mowziesmobs:ferrous_wroughtnaut",
+      "title": "Just a Flesh Wound",
+      "desc": "The Ferrous Wroughtnaut sleeps behind a sealed door in its underground chamber and never leaves the room."
+    },
+    {
+      "id": "mowziesmobs:wrought_axe",
+      "title": "Axe of a Thousand Metals",
+      "desc": "The Wroughtnaut's axe never breaks, sweeps a wide arc on right-click, and shockwaves the ground on sneak-right-click."
+    },
+    {
+      "id": "mowziesmobs:wrought_helmet",
+      "title": "The Iron Face",
+      "desc": "The Wrought Helm is the Wroughtnaut's second drop and is likewise unbreakable."
+    },
+    {
+      "id": "kill:mowziesmobs:umvuthana",
+      "title": "Masks in the Savanna",
+      "desc": "Umvuthana guard the savanna groves and each drops the ceremonial mask it wears."
+    },
+    {
+      "id": "mowziesmobs:umvuthana_mask_fury",
+      "title": "Borrowed Rage",
+      "desc": "The Mask of Fury grants Strength while worn, one of six Umvuthana masks."
+    },
+    {
+      "id": "kill:mowziesmobs:umvuthana_raptor",
+      "title": "Masquerade",
+      "desc": "Umvuthana Raptors ride into battle mounted and are the aggressive half of the grove's warband."
+    },
+    {
+      "id": "kill:mowziesmobs:umvuthi",
+      "title": "Praise the Sun",
+      "desc": "Umvuthi, the Sunbird, presides over the grove from a raised throne and calls down solar attacks."
+    },
+    {
+      "id": "mowziesmobs:sol_visage",
+      "title": "The Sunbird's Face",
+      "desc": "Umvuthi's unbreakable mask summons a masked minion when you right-click while holding another Umvuthana mask."
+    },
+    {
+      "id": "mowziesmobs:grant_suns_blessing",
+      "title": "Heliomancer",
+      "desc": "Traded by Umvuthi, this grants the Sun's Blessing: Sunstrike, Solar Flare, Solar Beam and Supernova."
+    },
+    {
+      "id": "kill:mowziesmobs:naga",
+      "title": "Wingin' It",
+      "desc": "Nagas swoop from cliffside nests and drop a Naga Fang."
+    },
+    {
+      "id": "mowziesmobs:naga_fang_dagger",
+      "title": "Venom in the Back",
+      "desc": "A Naga Fang, iron and a stick make a dagger that poisons and deals double damage from behind."
+    },
+    {
+      "id": "mowziesmobs:blowgun",
+      "title": "Quiet Death at Range",
+      "desc": "Bamboo and string make a fast-charging short-range blowgun that fires only Naga Fang darts."
+    },
+    {
+      "id": "kill:mowziesmobs:frostmaw",
+      "title": "Rude Awakening",
+      "desc": "The Frostmaw hibernates in snowy peaks until its Ice Crystal is stolen or it is struck awake."
+    },
+    {
+      "id": "mowziesmobs:ice_crystal",
+      "title": "The Stolen Shard",
+      "desc": "Hold right-click to channel an icy whirlwind; the crystal recharges while it sits in your inventory."
+    },
+    {
+      "id": "kill:mowziesmobs:bluff",
+      "title": "Called Your Bluff",
+      "desc": "Bluffs are stone tricksters that drop a Bluff Rod on death."
+    },
+    {
+      "id": "mowziesmobs:bluff_rod",
+      "title": "The Sculptor's Toll",
+      "desc": "The Bluff Rod repairs Geomancy gear and is the price of admission for Tongbi's challenge."
+    },
+    {
+      "id": "mowziesmobs:earthrend_gauntlet",
+      "title": "You Must Believe",
+      "desc": "Completing the Sculptor's climbing test awards the gauntlet: lift boulders, tunnel through earth, ride pillars upward."
+    },
+    {
+      "id": "kill:mowziesmobs:sculptor",
+      "title": "Breaking the Master",
+      "desc": "Tongbi, the Sculptor, drops his staff and the full Geomancer outfit if you fight him instead of taking his test."
+    },
+    {
+      "id": "mowziesmobs:sculptor_staff",
+      "title": "Three Stones in Waiting",
+      "desc": "The Geomancer Staff spawns three small rocks that fire as projectiles after a short delay."
+    },
+    {
+      "id": "kill:mowziesmobs:elokosa_howler",
+      "title": "Gibbous Gibbons",
+      "desc": "Elokosa Howlers lead their troop and drop the five lunar-phase paws."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "mowziesmobs:gong",
+      "members": [
+        "mowziesmobs:umvuthana_mask_fear",
+        "mowziesmobs:umvuthana_mask_rage",
+        "mowziesmobs:umvuthana_mask_misery",
+        "mowziesmobs:umvuthana_mask_bliss",
+        "mowziesmobs:umvuthana_mask_fury",
+        "mowziesmobs:umvuthana_mask_faith",
+        "mowziesmobs:sol_visage"
+      ]
+    },
+    {
+      "hub": "mowziesmobs:geomancer_robe",
+      "members": [
+        "mowziesmobs:geomancer_beads",
+        "mowziesmobs:geomancer_belt",
+        "mowziesmobs:geomancer_sandals",
+        "mowziesmobs:sculptor_staff",
+        "mowziesmobs:earthrend_gauntlet",
+        "mowziesmobs:bluff_rod",
+        "mowziesmobs:sand_rake",
+        "mowziesmobs:raked_sand",
+        "mowziesmobs:red_raked_sand"
+      ]
+    }
+  ],
+  "notes": "Verified against mowziesmobs-1.8.2.jar: only 55 ids appear both as assets/mowziesmobs/models/item/*.json and as item./block. lang keys, so the chain leans on kill steps. Drop claims come from data/mowziesmobs/loot_tables/entities/*.json (ferrous_wroughtnaut -> wrought_axe + wrought_helmet; sculptor -> sculptor_staff + the four geomancer pieces; sculptor_test -> earthrend_gauntlet; umvuthi -> sol_visage; the six umvuthana_<emotion> tables -> the matching mask; frostmaw -> ice_crystal; naga -> naga_fang; bluff -> bluff_rod; elokosa -> the five elokosa_paw_* items). IMPORTANT VERSION NOTE: this jar has no Barako and no Sunblocker. Barako was renamed and is present only as entity mowziesmobs:umvuthi ('Umvuthi, the Sunbird'), and the task brief's 'Sunblocker' item does not exist here - mowziesmobs:sunblock_staff is a leftover model with no lang key, so it was DROPPED and replaced by mowziesmobs:sol_visage, which is what umvuthi actually drops. OTHER IDS DROPPED (models with no lang key, so they fail set-membership): mowziesmobs:sunblock_staff, mowziesmobs:frostmaw_plushie, mowziesmobs:umvuthana_mask, mowziesmobs:elokosa_paw, mowziesmobs:elokosa_paw_closed, mowziesmobs:elokosa_paw_new_closed, mowziesmobs:logo, and the *_in_hand / *_frame / *_using render variants. mowziesmobs:barako and mowziesmobs:barakoa were dropped as entities - the jar registers umvuthana / umvuthi instead."
+}

@@ -1,0 +1,512 @@
+{
+ "mod": "industrialforegoing",
+ "ids_in_jar": 218,
+ "videos": [
+  {
+   "id": "d4XVnLaHgrc",
+   "title": "Industrial Foregoing - Complete Guide in All The Mods 10",
+   "channel": "BucketSt",
+   "views": 190686,
+   "duration": 1042,
+   "chars": 22724
+  },
+  {
+   "id": "XxWWDAu0jBI",
+   "title": "How to: Industrial Foregoing | Basics (Minecraft 1.20.1)",
+   "channel": "Mondays",
+   "views": 89495,
+   "duration": 1365,
+   "chars": 23021
+  },
+  {
+   "id": "Bc2yp4dQcxM",
+   "title": "Industrial Foregoing Progression - Minecraft 1.16 - 1.20 - Modded Minecraft Tutorial",
+   "channel": "Ard",
+   "views": 612,
+   "duration": 468,
+   "chars": 8066
+  },
+  {
+   "id": "i0ThW1zgWuQ",
+   "title": "How to: Industrial Foregoing | Mob Farming (Minecraft 1.20.1)",
+   "channel": "Mondays",
+   "views": 56781,
+   "duration": 994,
+   "chars": 18603
+  },
+  {
+   "id": "4w5rF-Bf5KQ",
+   "title": "The Ultimate Guide to Industrial Foregoing",
+   "channel": "JaviHerobrine",
+   "views": 47267,
+   "duration": 4390,
+   "chars": 59446
+  }
+ ],
+ "not_transcribed": [],
+ "items": {
+  "industrialforegoing:pink_slime": {
+   "mentions": 51,
+   "videos": 5,
+   "first_at": 0.3339,
+   "praise": 12,
+   "warn": 3,
+   "early_cue": 2,
+   "late_cue": 2
+  },
+  "industrialforegoing:plastic": {
+   "mentions": 42,
+   "videos": 5,
+   "first_at": 0.1558,
+   "praise": 27,
+   "warn": 0,
+   "early_cue": 4,
+   "late_cue": 2
+  },
+  "industrialforegoing:mob_slaughter_factory": {
+   "mentions": 17,
+   "videos": 4,
+   "first_at": 0.3953,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 2
+  },
+  "industrialforegoing:machine_frame_simple": {
+   "mentions": 15,
+   "videos": 4,
+   "first_at": 0.4452,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 2
+  },
+  "industrialforegoing:laser_drill": {
+   "mentions": 13,
+   "videos": 4,
+   "first_at": 0.6488,
+   "praise": 8,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "industrialforegoing:mob_duplicator": {
+   "mentions": 10,
+   "videos": 4,
+   "first_at": 0.6057,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:dryrubber": {
+   "mentions": 16,
+   "videos": 3,
+   "first_at": 0.2976,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:latex_processing_unit": {
+   "mentions": 7,
+   "videos": 3,
+   "first_at": 0.09,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "industrialforegoing:stasis_chamber": {
+   "mentions": 18,
+   "videos": 2,
+   "first_at": 0.5338,
+   "praise": 9,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:mob_crusher": {
+   "mentions": 9,
+   "videos": 2,
+   "first_at": 0.5719,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "industrialforegoing:block_breaker": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.4956,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:straw": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.9762,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "industrialforegoing:conveyor": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.8874,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:item_transporter_type": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.8281,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:machine_frame_pity": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.2116,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "industrialforegoing:diamond_gear": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.4259,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "industrialforegoing:tinydryrubber": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.2155,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:machine_frame_advanced": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.2245,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:gold_gear": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.4277,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:fluid_extractor": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.0694,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "industrialforegoing:machine_frame_supreme": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.7408,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:mob_detector": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.63,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "industrialforegoing:mechanical_dirt": {
+   "mentions": 8,
+   "videos": 1,
+   "first_at": 0.3928,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:bioreactor": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.4396,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:fertilizer": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3665,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "industrialforegoing:iron_gear": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4831,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "industrialforegoing:dissolution_chamber": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3999,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:mob_imprisonment_tool": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5246,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:sewer": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.13,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:resourceful_furnace": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8446,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "industrialforegoing:meat_feeder": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.9166,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:washing_factory": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8093,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "industrialforegoing:fermentation_station": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8193,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "industrialforegoing:animal_rancher": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3569,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "industrialforegoing:common_black_hole_tank": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0336,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:fluid_laser_base": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7687,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:pitiful_generator": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4641,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:marine_fisher": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9243,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:infinity_nuke": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6308,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:animal_feeder": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2682,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "industrialforegoing:plant_fertilizer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3682,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "Latex is the true step one. Fluid extractors on logs produce it, and everything else waits on that.",
+    "ids": [
+     "industrialforegoing:fluid_extractor",
+     "industrialforegoing:latex_bucket",
+     "industrialforegoing:latex_block"
+    ]
+   },
+   {
+    "note": "Latex plus water in the latex processing unit makes the plastic that gates every machine frame.",
+    "ids": [
+     "industrialforegoing:latex_processing_unit",
+     "industrialforegoing:plastic"
+    ]
+   },
+   {
+    "note": "Guides advise skipping straight past the lowest frame tier where the modpack allows it, rather than building one of each.",
+    "ids": [
+     "industrialforegoing:machine_frame_pity",
+     "industrialforegoing:machine_frame_simple"
+    ]
+   }
+  ],
+  "tiers": [
+   {
+    "note": "MACHINE FRAME ladder is the mod's spine: pity -> simple -> advanced -> supreme. Each machine demands a specific frame tier, so the frame is the real progression currency.",
+    "ids": [
+     "industrialforegoing:machine_frame_pity",
+     "industrialforegoing:machine_frame_simple",
+     "industrialforegoing:machine_frame_advanced",
+     "industrialforegoing:machine_frame_supreme"
+    ]
+   },
+   {
+    "note": "Black hole storage ladder mirrors the frame ladder, for items and fluids.",
+    "ids": [
+     "industrialforegoing:pity_black_hole_unit",
+     "industrialforegoing:simple_black_hole_unit",
+     "industrialforegoing:advanced_black_hole_unit",
+     "industrialforegoing:supreme_black_hole_unit",
+     "industrialforegoing:pity_black_hole_tank",
+     "industrialforegoing:simple_black_hole_tank",
+     "industrialforegoing:advanced_black_hole_tank",
+     "industrialforegoing:supreme_black_hole_tank"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "Plastic gates literally everything - it is the mod's hard bottleneck and the reason a latex farm comes before any interesting machine.",
+    "ids": [
+     "industrialforegoing:plastic",
+     "industrialforegoing:latex_processing_unit"
+    ]
+   },
+   {
+    "note": "Laser drill needs a fluid laser base AND a coloured lens matched to the target ore; without the lens it produces nothing useful.",
+    "ids": [
+     "industrialforegoing:laser_drill",
+     "industrialforegoing:fluid_laser_base",
+     "industrialforegoing:laser_lens0",
+     "industrialforegoing:laser_lens11"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "Guides warn the lowest frame tier is largely a formality that packs often let you skip; building the full ladder wastes plastic.",
+    "ids": [
+     "industrialforegoing:machine_frame_pity"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "Mob crusher and the black hole units are what guides treat as the reason to install the mod.",
+    "ids": [
+     "industrialforegoing:mob_crusher",
+     "industrialforegoing:supreme_black_hole_unit",
+     "industrialforegoing:black_hole_controller"
+    ]
+   },
+   {
+    "note": "Laser drill is the showpiece late-game ore source.",
+    "ids": [
+     "industrialforegoing:laser_drill",
+     "industrialforegoing:fluid_laser_base"
+    ]
+   }
+  ]
+ },
+ "transcript_profile": "whisper small, vad, beam 1, WITH the legacy Minecraft-vocabulary initial_prompt that was later removed from ytgrab as biasing. Counts may be slightly inflated toward mod-name-like words; human_notes quotes were read directly and are unaffected."
+}

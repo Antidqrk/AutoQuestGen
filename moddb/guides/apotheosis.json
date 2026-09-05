@@ -1,0 +1,345 @@
+{
+ "mod": "apotheosis",
+ "ids_in_jar": 83,
+ "videos": [
+  {
+   "id": "0afcuGwjqpA",
+   "title": "🟨 COMPLETE GUIDE to the APOTHEOSIS MOD in MINECRAFT",
+   "channel": "Edlux Tutorials",
+   "views": 24540,
+   "duration": 2070,
+   "chars": 41256
+  },
+  {
+   "id": "DeDH6kKnwoo",
+   "title": "Everything You Need To Know About Apotheosis (Full Guide - 1.21+)",
+   "channel": "Westoro",
+   "views": 14860,
+   "duration": 1381,
+   "chars": 17310
+  }
+ ],
+ "items": {
+  "apotheosis:gem_dust": {
+   "mentions": 21,
+   "videos": 2,
+   "first_at": 0.2167,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:salvaging_table": {
+   "mentions": 7,
+   "videos": 2,
+   "first_at": 0.2237,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:reforging_table": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.2704,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:deepshelf": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.2662,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "apotheosis:warden_tendril": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.4319,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:uncommon_material": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1402,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:melonshelf": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.4649,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:ender_lead": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.7652,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:library": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.2678,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "apotheosis:simple_reforging_table": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1074,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:common_material": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1437,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:infused_breath": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4836,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:lucky_foot": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.606,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "apotheosis:dormant_deepshelf": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.2623,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "apotheosis:gem_cutting_table": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.4104,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:rare_material": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1336,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:ender_library": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5973,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:diamond_mining_arrow": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7333,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:sigil_of_withdrawal": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.194,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:sigil_of_socketing": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1641,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:sightshelf": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3883,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:echoing_deepshelf": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4256,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "apotheosis:draconic_endshelf": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2726,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:sigil_of_unnaming": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2398,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:sigil_of_rebirth": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1163,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:mythic_material": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1039,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:broadhead_arrow": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7273,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:obsidian_arrow": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7187,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:stoneshelf": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4879,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "apotheosis:sigil_of_enhancement": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8345,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "_shape": "NOT an item ladder. Apotheosis is an affix/loot/enchanting SYSTEM: rarity tiers, affixes on dropped gear, gem sockets, reforging and an enchanting rework. Guides spend their time on how the system works, not on a crafting chain, and quests should follow that. The item ids below are the system's tools, not a progression sequence.",
+  "order": [
+   "The enchanting rework comes first, because it is what the player meets first. Guide: 'the first thing we will do is complete the enchanting system.' That means bookshelves around a vanilla enchanting table, not any Apotheosis machine.",
+   "Bookshelves before anything else: apotheosis:stoneshelf / apotheosis:seashelf / apotheosis:hellshelf / apotheosis:deepshelf / apotheosis:endshelf / apotheosis:melonshelf / apotheosis:beeshelf are the base tier, and each raises a different stat.",
+   "Then INFUSE those shelves, which is done at the enchanting table itself with minimum stat requirements: apotheosis:infused_seashelf, apotheosis:infused_hellshelf, apotheosis:infused_deepshelf, apotheosis:infused_endshelf. Guide: 'we'd enchant them on an infusion table which requires certain minimums... Why do we want them infused? This allows us to upgrade to Glowing and Crystalline.'",
+   "Upgraded shelves are the real goal of the enchanting arc: apotheosis:glowing_hellshelf, apotheosis:blazing_hellshelf, apotheosis:crystal_seashelf, apotheosis:heart_seashelf, apotheosis:pearl_endshelf, apotheosis:draconic_endshelf, apotheosis:echoing_deepshelf, apotheosis:soul_touched_deepshelf, and the endgame apotheosis:library / apotheosis:ender_library.",
+   "Gem handling starts as soon as loot starts dropping: apotheosis:gem_dust is the single most-repeated item in the guides (12 mentions, 9 in praising context). Guide: 'the first time we get gem dust, it has to be this way.'",
+   "Reforging comes after there is loot worth improving: apotheosis:simple_reforging_table then apotheosis:reforging_table, plus apotheosis:salvaging_table to feed it.",
+   "apotheosis:augmenting_table and the boss content (apotheosis:boss_summoner, apotheosis:prismatic_altar) are late."
+  ],
+  "gates": [
+   "Enchanting is gated on three stats, not on level alone: Eterna, Quanta and Arcana, each supplied by shelves. Guide names them as the basics of the whole mod. An infusion has explicit minimums - guide: 'An echoing shelf requires an Echo Shard and a Deep Shelf... It requires 30 Eterna, 40% Quanta and 40% Arcana.'",
+   "apotheosis:rectifier, apotheosis:rectifier_t2, apotheosis:rectifier_t3 exist purely to bend Quanta's randomness - they are the stat-shaping gate between 'can enchant' and 'can enchant reliably'.",
+   "Both the reforging table and the augmenting table need consumable FUEL, which blocks spamming them. Guide: 'first of all it requires fuel. The fuel is essentially the sigil of rebirth' and 'the Augmentation table requires its own fuel, just like the reforging table does.'",
+   "Reforging is gated by rarity-matched materials: apotheosis:common_material, apotheosis:uncommon_material, apotheosis:rare_material, apotheosis:epic_material, apotheosis:mythic_material, apotheosis:ancient_material. You cannot reforge above the material you can supply.",
+   "Sockets are gated by apotheosis:sigil_of_socketing - gems do nothing without a socket to sit in."
+  ],
+  "mechanics": [
+   "Rarity ladder, verified in the jar rather than taken from a video: common -> uncommon -> rare -> epic -> mythic -> ancient. Every gem file in data/apotheosis/gems carries a bonus value for exactly those six keys, so rarity is a numeric multiplier on the same effect (e.g. the ballast gem gives +1 attack damage at common and +10 at ancient).",
+   "Affix items are dropped, not crafted. Rarity determines both how strong the item is and which affixes it may roll - that is the whole loot loop, and no recipe scan will ever surface it.",
+   "Gems: apotheosis:gem is a single item whose identity lives in NBT; the ~50 gem variants are datapack registry entries under data/apotheosis/gems/... (core/ballast, the_nether/inferno, twilight/queen and so on), NOT separate item ids. A gem variant written in resource-location form (the apotheosis namespace followed by a gems/... subpath) is a model/registry path, not an item, and must never become a quest target.",
+   "apotheosis:gem_cutting_table plus apotheosis:gem_dust upgrade a gem's rarity; apotheosis:gem_fused_slate and apotheosis:star_cube are the higher-tier socket/gem inputs.",
+   "Sigils are the item-editing verbs: apotheosis:sigil_of_socketing (add socket), apotheosis:sigil_of_rebirth (reforge fuel), apotheosis:sigil_of_enhancement, apotheosis:sigil_of_unnaming, apotheosis:sigil_of_withdrawal (pull a gem back out).",
+   "Enchantment tomes move enchantments around rather than adding them: apotheosis:scrap_tome -> apotheosis:improved_scrap_tome, plus slot-specific apotheosis:weapon_tome / apotheosis:helmet_tome / apotheosis:chestplate_tome / apotheosis:leggings_tome / apotheosis:boots_tome / apotheosis:bow_tome / apotheosis:pickaxe_tome / apotheosis:fishing_tome / apotheosis:other_tome, and apotheosis:extraction_tome. Guide: 'Superior Scrapping comes from infusing a Tomb of Scrapping.'",
+   "Apotheosis also raises vanilla enchantment max levels - the guide demonstrates converting Sharpness 1 into Sharpness 3 once level 8 is unlocked, which is a mechanic, not an item.",
+   "Guides also talk about 'world tier' progression and affix-mob farms as the main way to actually obtain good gear."
+  ],
+  "traps": [
+   "Low-rarity affix gear is disposable. Guide: 'I am going to break it, because it is useless' - salvage it at apotheosis:salvaging_table rather than reforging it.",
+   "Do not build a crafting-chain quest line for this mod. There is no chain: the interesting items are dropped with random affixes, and a quest that says 'craft an epic sword' cannot be satisfied.",
+   "Do not treat gem variants as items (see mechanics) - this is the exact mistake the fixed jar_ids() was emitting."
+  ],
+  "signature": [
+   "apotheosis:gem",
+   "apotheosis:gem_dust",
+   "apotheosis:gem_cutting_table",
+   "apotheosis:reforging_table",
+   "apotheosis:salvaging_table",
+   "apotheosis:augmenting_table",
+   "apotheosis:sigil_of_socketing",
+   "apotheosis:sigil_of_rebirth",
+   "apotheosis:library",
+   "apotheosis:ender_library",
+   "apotheosis:echoing_deepshelf",
+   "apotheosis:boss_summoner",
+   "apotheosis:prismatic_altar",
+   "apotheosis:potion_charm"
+  ],
+  "pack_status": "NOT INSTALLED in CREATE FEMBY. The instance has ApothicAttributes-1.20.1-1.3.7.jar and Placebo (Apotheosis's split-off attribute library and its dependency) but no Apotheosis jar, so every id above is currently uncraftable in this pack. Analysed against Apotheosis-1.20.1-7.4.8.jar fetched to scratch."
+ }
+}

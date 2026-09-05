@@ -1,0 +1,896 @@
+{
+ "mod": "alexscaves",
+ "ids_in_jar": 594,
+ "videos": [
+  {
+   "id": "rvUDlgjl2lk",
+   "title": null,
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 37423
+  }
+ ],
+ "items": {
+  "alexscaves:uranium": {
+   "mentions": 10,
+   "videos": 1,
+   "first_at": 0.5782,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 3
+  },
+  "alexscaves:pearl": {
+   "mentions": 10,
+   "videos": 1,
+   "first_at": 0.7852,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:guano": {
+   "mentions": 9,
+   "videos": 1,
+   "first_at": 0.414,
+   "praise": 12,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:galena": {
+   "mentions": 8,
+   "videos": 1,
+   "first_at": 0.2349,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:submarine": {
+   "mentions": 8,
+   "videos": 1,
+   "first_at": 0.9578,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 3
+  },
+  "alexscaves:quarry": {
+   "mentions": 7,
+   "videos": 1,
+   "first_at": 0.3625,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 5
+  },
+  "alexscaves:amber": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.0511,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:nuclear_furnace": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.583,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:waste_drum": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.594,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "alexscaves:unrefined_waste": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.5841,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "alexscaves:limestone": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.0416,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:radrock": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.5571,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:serene_salad": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.0737,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:uranium_rod": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.5815,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 3
+  },
+  "alexscaves:floater": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.78,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:occult_gem": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.5071,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 3
+  },
+  "alexscaves:shadow_silk": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.469,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 2
+  },
+  "alexscaves:charred_remnant": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.6439,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:holocoder": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3094,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:heart_of_iron": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3737,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 3
+  },
+  "alexscaves:dinosaur_chop": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1833,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:beholder": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.5084,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 3
+  },
+  "alexscaves:raygun": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.7258,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 6
+  },
+  "alexscaves:polymer_plate": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.6865,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:vesper_wing": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.4547,
+   "praise": 3,
+   "warn": 3,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:fissile_core": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.7238,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "alexscaves:sulfur": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.5737,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:metal_swarf": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.2503,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:enigmatic_engine": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.9562,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:cave_codex": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0134,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:ink_bomb": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.921,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "alexscaves:acidic_radrock": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5595,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:guanostone": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4187,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:primitive_club": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0886,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:magnetic_light": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3157,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "alexscaves:abyssmarine": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.759,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "alexscaves:nuclear_siren": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6487,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:pure_darkness": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5271,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 2
+  },
+  "alexscaves:metal_barrel": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2552,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:curly_fern": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0648,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:drain": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8616,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:scrap_metal": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2525,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:quarry_smasher": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3625,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "alexscaves:telecore": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3244,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:magnetic_activator": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2561,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:fertilizer": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.432,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:dark_tatters": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4649,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:tough_hide": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1828,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:smooth_limestone": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0424,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:nuclear_bomb": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7352,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 4
+  },
+  "alexscaves:cinder_block": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6055,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:magic_conch": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.924,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:lanternfish": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8012,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:moth_ball": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.445,
+   "praise": 2,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:radgill": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6946,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:bioluminescent_torch": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.839,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:packed_galena": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2374,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:hood_of_darkness": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5323,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "alexscaves:thin_bone": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1922,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:notor_gizmo": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3079,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:galena_gauntlet": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.331,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:amber_curiosity": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0548,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:darkened_apple": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.541,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:cloak_of_darkness": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5316,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "alexscaves:fiddlehead": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.072,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:archaic_vine": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1153,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:deep_sea_sushi_roll": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8321,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:heavy_bone": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2284,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:cooked_dinosaur_chop": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1927,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:siren_light": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6272,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:hazmat_block": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6932,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:pine_nuts": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1079,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:guano_block": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4316,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:resistor_shield": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3751,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "alexscaves:tripodfish": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8277,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:glow_ink_bomb": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9375,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "alexscaves:galena_iron_ore": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2485,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:carmine_froglight": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2078,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "alexscaves:block_of_uranium": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5804,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:sulfur_cluster": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.574,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:moth_dust": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4442,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:tube_worm": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7746,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:limestone_spear": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0464,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:cinder_brick": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6084,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:gazing_pearl": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9125,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:sea_staff": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9438,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "alexscaves:remote_detonator": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7356,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "alexscaves:tesla_bulb": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3256,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:nuclear_furnace_component": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6549,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:seeking_arrow": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2772,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:hologram_projector": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3098,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:dreadbow": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5431,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexscaves:heavyweight": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3611,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  }
+ },
+ "human_notes": {
+  "entry": [
+   "There is NO dimension and NO portal. Alex's Caves adds five underground biomes to the Overworld, and the whole mod is gated behind FINDING them. Source rvUDlgjl2lk.",
+   "The real entry step is a surface structure: small cabins that generate anywhere in the world. They contain alexscaves:cave_tablet (one per cave type), an alexscaves:cave_book, and most importantly an alexscaves:spelunkery_table.",
+   "The Spelunkery Table is a WORD PUZZLE, not a crafting bench. You get five attempts to guess a word written in the Standard Galactic Alphabet; the first guess is always random, and a lens reveals which letter maps to which symbol. Solve it three times and you get an alexscaves:cave_codex for the cave you were searching.",
+   "The codex updates your alexscaves:cave_book and produces an alexscaves:cave_map, which then searches your world and points you at an actual cave. Without this you are just digging at random.",
+   "A quest chain for this mod should therefore start: find a cabin -> get alexscaves:spelunkery_table and an alexscaves:cave_tablet -> solve the puzzle -> alexscaves:cave_codex -> alexscaves:cave_map -> the biome."
+  ],
+  "boss_order": [
+   "No linear boss ladder. The five biomes are independent and can be tackled in any order; difficulty, not a lock chain, is what separates them.",
+   "The transcript names large threats per biome rather than gate bosses: alexscaves:tremorsaurus and alexscaves:tremorzilla in the Primordial Caves, alexscaves:magnetron and alexscaves:teletor in the Magnetic Caves, alexscaves:forsaken and alexscaves:vesper in the Forlorn Hollows, alexscaves:gammaroach and alexscaves:nucleeper in the Toxic Caves, alexscaves:deep_one with its knight and mage variants plus alexscaves:hullbreaker in the Abyssal Chasm.",
+   "The alexscaves:abyssal_altar and alexscaves:pearl offerings to the deep ones are the closest thing to a ritual progression, and the transcript does not lay out its steps in order - do NOT invent them."
+  ],
+  "order": [
+   "The five biomes are: Primordial Caves (dinosaurs), Magnetic Caves (galena and magnets), Forlorn Hollows (darkness), Toxic Caves (acid and radiation), Abyssal Chasm (deep underwater).",
+   "Each has a hard prerequisite BEFORE you can usefully explore it, and that is the ordering that matters for a questbook:",
+   "Forlorn Hollows: 'extremely dark and gloomy... shrouded by darkness' - the guide immediately puts on night vision. Bring it.",
+   "Toxic Caves: bring a hazmat suit (alexscaves:hazmat_mask, alexscaves:hazmat_chestplate) before going, not after. It reduces the Irradiated effect AND the armour degradation from acid.",
+   "Abyssal Chasm: you need the Deep Sight effect to see at all. The potion's only ingredient is alexscaves:lanternfish. Lanternfish rise to the surface at night, which is also how you FIND the Abyssal Chasm from above.",
+   "Toxic Caves material chain: kill alexscaves:gammaroach for alexscaves:toxic_paste -> alexscaves:polymer_plate -> the hazmat set."
+  ],
+  "gates": [
+   "HARD GATE on the whole mod: no alexscaves:cave_map means no reliable way to find any of the five biomes.",
+   "Abyssal Chasm is unusable without Deep Sight; the guide treats it as mandatory equipment.",
+   "alexscaves:diving_helmet and the rest of the diving set CANNOT BE CRAFTED. They only drop from a drone mob that spawns in the Abyssal Chasm, and are repaired with a copper ingot. Do not write a crafting quest for them."
+  ],
+  "traps": [
+   "Merely HOLDING alexscaves:waste_drum or alexscaves:unrefined_waste in your inventory irradiates you - no contact needed. The guide calls this out as a surprise.",
+   "Irradiated turns your hearts yellow and PREVENTS ALL NATURAL HEALING while it lasts.",
+   "Destroying a alexscaves:waste_drum in lava explodes and irradiates you.",
+   "alexscaves:acid burns dropped items like lava and degrades armour, though it deals slightly less damage.",
+   "alexscaves:nucleeper explodes like a creeper and 'nothing can really stop that' once it starts - except a alexscaves:raycat, which reverses the explosion. A raycat also drains Irradiated out of you within 28 blocks.",
+   "The guide flags alexscaves:radgill HP as buggy at time of filming - treat exact combat numbers as unreliable."
+  ],
+  "signature": [
+   "alexscaves:spelunkery_table and alexscaves:cave_codex - the mod's defining mechanic, and the thing a generated questbook will otherwise miss entirely.",
+   "alexscaves:nuclear_bomb and alexscaves:nuclear_furnace - the Toxic Caves endgame.",
+   "alexscaves:hazmat_chestplate and alexscaves:polymer_plate - the survival kit that makes the Toxic Caves playable.",
+   "alexscaves:dreadbow - Forlorn Hollows signature weapon, fires a volley from the sky.",
+   "alexscaves:abyssal_altar and alexscaves:pearl - the Abyssal Chasm's deep-one offering mechanic.",
+   "alexscaves:raycat - the counter to both radiation and nucleepers."
+  ]
+ }
+}

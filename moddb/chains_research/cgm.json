@@ -1,0 +1,136 @@
+{
+  "mod": "cgm",
+  "verified_against": "CGM-Unofficial-1.4.19+Forge+1.20.1.jar",
+  "item_count_in_jar": 26,
+  "chain": [
+    {
+      "id": "cgm:workbench",
+      "title": "Build the Workbench",
+      "desc": "The only thing in this mod you can make at a normal crafting table, and the gate on everything else - every gun, every bullet and every attachment is assembled here. It wants light gray concrete, so make the powder and dunk it in water first. Build one and keep it; you will come back to it for the whole mod."
+    },
+    {
+      "id": "cgm:basic_bullet",
+      "title": "Stamp Basic Bullets",
+      "desc": "The standard round for the pistol, machine pistol, assault rifle and minigun. Four copper and one gunpowder makes 64 at a time, so make them in batches - an empty gun is a club."
+    },
+    {
+      "id": "cgm:pistol",
+      "title": "Assemble the Pistol",
+      "desc": "Your first firearm and the cheapest at 14 iron. One-handed, 16 rounds, 9 damage a shot - it leaves your off hand free for a shield or torch, which no other gun here does."
+    },
+    {
+      "id": "cgm:short_scope",
+      "title": "Fit a Short Scope",
+      "desc": "The cheapest optic and the first attachment worth having. Slots into the scope mount of any gun that has one and tightens your aim; press the Modify Attachments key on a held gun to install it."
+    },
+    {
+      "id": "cgm:light_stock",
+      "title": "Add a Light Stock",
+      "desc": "Stock-slot attachment that steadies the weapon and speeds up aiming down sight. One per gun you actually carry - it stays installed until you pull it back out."
+    },
+    {
+      "id": "cgm:machine_pistol",
+      "title": "Assemble the Machine Pistol",
+      "desc": "A one-handed automatic with an 80-round magazine, 20 iron. Low damage per bullet and wide spread - this is a close-range panic weapon, not a marksman's gun."
+    },
+    {
+      "id": "cgm:shell",
+      "title": "Press Shotgun Shells",
+      "desc": "Shotgun-only ammunition; the shotgun will not accept bullets and no other gun accepts these. One batch is 48 shells and each trigger pull spends one to throw five pellets, so a fight eats them fast."
+    },
+    {
+      "id": "cgm:shotgun",
+      "title": "Assemble the Shotgun",
+      "desc": "24 iron for the best close-range damage in the mod - five pellets at 18 damage each, but with 20 degrees of spread. Hold the line with this when things get inside melee range."
+    },
+    {
+      "id": "cgm:advanced_bullet",
+      "title": "Machine Advanced Bullets",
+      "desc": "The heavier round the rifle and heavy rifle fire; the same copper and gunpowder as basic bullets but only 32 per batch. Neither rifle will chamber a basic bullet, so stock these before you build one."
+    },
+    {
+      "id": "cgm:rifle",
+      "title": "Assemble the Rifle",
+      "desc": "24 iron for a 15-damage bolt-action with a 10-round magazine and fast, flat projectiles. This is the workhorse for fighting at range and the first gun that outreaches a bow."
+    },
+    {
+      "id": "cgm:specialised_grip",
+      "title": "Mount an Under-Barrel Grip",
+      "desc": "The rifle is the first gun with an under-barrel slot, so this is the first step where a grip does anything. Grips cut recoil, which is what makes automatic fire land on target instead of climbing off it - the assault rifle and heavy rifle take one too."
+    },
+    {
+      "id": "cgm:long_scope",
+      "title": "Build the Long Scope",
+      "desc": "The strongest optic, costing amethyst and black dye. Pair it with the rifle or heavy rifle - the long guns fire fast enough projectiles to actually use the extra zoom."
+    },
+    {
+      "id": "cgm:assault_rifle",
+      "title": "Assemble the Assault Rifle",
+      "desc": "28 iron buys full-auto fire, a 40-round magazine and all four attachment slots. The most flexible gun in the mod and the one most worth kitting out."
+    },
+    {
+      "id": "cgm:silencer",
+      "title": "Machine the Silencer",
+      "desc": "A barrel attachment that muffles the shot and shrinks the radius in which mobs hear you - the difference between clearing a room and aggravating the whole cave. Costs a SPONGE, so you need an ocean monument first."
+    },
+    {
+      "id": "cgm:grenade",
+      "title": "Pack Grenades",
+      "desc": "A thrown explosive that needs no gun - iron nuggets and gunpowder for two at a time. Also the ammunition the grenade launcher fires, so keep a stack once you build one."
+    },
+    {
+      "id": "cgm:stun_grenade",
+      "title": "Pack Stun Grenades",
+      "desc": "Non-lethal crowd control: the blast blinds and deafens everything nearby instead of blowing up your build. Needs glowstone dust, so this one waits on a trip to the Nether."
+    },
+    {
+      "id": "cgm:grenade_launcher",
+      "title": "Assemble the Grenade Launcher",
+      "desc": "32 iron to lob grenades much further and more accurately than your arm can. Single shot with a slow reload - it is a siege tool for opening up a base, not a fight-winner on its own."
+    },
+    {
+      "id": "cgm:heavy_rifle",
+      "title": "Assemble the Heavy Rifle",
+      "desc": "36 iron for the hardest-hitting bullet weapon: 18 damage a round at the highest projectile speed in the mod, but only four in the magazine and brutal recoil. The sniping option - fit the long scope."
+    },
+    {
+      "id": "cgm:mini_gun",
+      "title": "Assemble the Minigun",
+      "desc": "38 iron for a 100-round belt of continuous automatic fire. It takes NO attachments at all and it spreads badly, so it is about volume - bring several stacks of basic bullets."
+    },
+    {
+      "id": "cgm:missile",
+      "title": "Build Missiles",
+      "desc": "The bazooka's ammunition, and made one at a time from iron nuggets and gunpowder. Build a supply before the launcher itself or you will be holding an empty tube."
+    },
+    {
+      "id": "cgm:bazooka",
+      "title": "Assemble the Bazooka",
+      "desc": "The end of the line: 44 iron plus redstone and red dye for a single-shot rocket launcher doing 25 damage in an explosion. Slowest reload in the mod and it takes no attachments - one shot, make it count."
+    }
+  ],
+  "collections": [
+    {
+      "name": "Gun Attachments",
+      "desc": "Everything that slots into a gun: three scope-slot optics (all needing amethyst), three stock-slot stocks at 6/8/12 iron nuggets plus gray wool, two under-barrel grips for the rifle, assault rifle and heavy rifle only, and the sponge-gated barrel silencer. Not one of them is a gun; they are all installed with the Modify Attachments key.",
+      "hub": "cgm:short_scope",
+      "members": [
+        "cgm:medium_scope",
+        "cgm:long_scope",
+        "cgm:light_stock",
+        "cgm:tactical_stock",
+        "cgm:weighted_stock",
+        "cgm:light_grip",
+        "cgm:specialised_grip",
+        "cgm:silencer"
+      ]
+    },
+    {
+      "name": "Ammunition",
+      "desc": "Each gun accepts exactly one of these and refuses the others.",
+      "hub": "cgm:basic_bullet",
+      "members": ["cgm:advanced_bullet", "cgm:shell", "cgm:grenade", "cgm:missile"]
+    }
+  ],
+  "notes": "ORDER IS DERIVED FROM THE WORKBENCH RECIPES' LITERAL IRON COSTS, not from vibes. data/cgm/recipes/*.json are type cgm:workbench with a 'materials' array carrying counts: pistol 14 iron, machine_pistol 20, rifle 24, shotgun 24, assault_rifle 28, grenade_launcher 32, heavy_rifle 36, mini_gun 38, bazooka 44 + 4 redstone + 1 #forge:dyes/red. That is a clean monotonic ladder and it is the mod's real progression. THE WORKBENCH IS THE ONLY VANILLA-CRAFTABLE RECIPE IN THE JAR: data/cgm/recipes/workbench.json is the single minecraft:crafting_shaped file ('CCC/III/I I', C=minecraft:light_gray_concrete, I=#forge:ingots/iron). Every other recipe is type cgm:workbench and cannot be made at a crafting table, so cgm:workbench MUST be step 1 or the whole book is unobtainable. DO NOT EMIT cgm:sniper_rifle. item.cgm.sniper_rifle is present in assets/cgm/lang/en_us.json but there is NO data/cgm/guns/sniper_rifle.json, NO data/cgm/recipes/sniper_rifle.json and NO assets/cgm/models/item/sniper_rifle.json anywhere in the jar - it is a leftover lang key in this unofficial 1.4.19 build and asking for it would be exactly the unobtainable-quest failure. Nine guns are real, and the nine data/cgm/guns/*.json files are the authority: assault_rifle, bazooka, grenade_launcher, heavy_rifle, machine_pistol, mini_gun, pistol, rifle, shotgun. AMMO PAIRING, read from each gun json's 'projectile.item' - basic_bullet: pistol, machine_pistol, assault_rifle, mini_gun. advanced_bullet: rifle, heavy_rifle. shell: shotgun (projectileAmount 5). grenade: grenade_launcher. missile: bazooka. Guns do NOT share ammo, which is why the ammo steps are interleaved ahead of the guns that need them. ATTACHMENT SLOTS, read from each gun json's modules.attachments: pistol/machine_pistol/shotgun take barrel+scope+stock; rifle/assault_rifle take all four including underBarrel; heavy_rifle takes barrel+scope+underBarrel (no stock); grenade_launcher takes scope+stock only; BAZOOKA AND MINIGUN TAKE NOTHING - their modules block is empty, so never write a quest implying you can scope a minigun. MATERIAL GATES BEYOND IRON: silencer needs minecraft:sponge (ocean monument), stun_grenade needs #forge:dusts/glowstone (Nether), all three scopes need #forge:gems/amethyst (amethyst geode), bullets and shells need minecraft:copper_ingot specifically (not the tag). These are the only non-overworld-starter gates in the mod and they set where those four steps sit. NO LOOT AND NO STRUCTURES: data/cgm/loot_tables holds one file, blocks/workbench.json, and there is no worldgen directory - nothing in this mod is found, everything is assembled, so every title uses Assemble/Build/Pack rather than Find. data/cgm/advancements holds 28 files and all of them live under advancements/recipes/ as auto-generated unlocks with no display block - they are NOT an authored progression and were not used for ordering; the iron counts were. ALSO IN THE JAR BUT NOT ITEMS: eight gun enchantments (Accelerator, Collateral, Fire Starter, Lightweight, Over Capacity, Puncturing, Quick Hands, Reclaimed, Trigger Finger) usable on guns at an enchanting table, two mob effects (cgm:blinded, cgm:deafened, delivered by the stun grenade and also available as Potion/Lingering Potion of Blinding and Deafening), and a random per-gun 'Perks' tooltip system. None of those have item ids of their own. item_count_in_jar 26 = 25 items + 1 block (cgm:workbench), counting the dead sniper_rifle key; 25 are actually obtainable. Appears in 2 of the 6 measured packs. VERIFIER PASS: all 21 chain ids and all 12 collection ids re-read out of assets/cgm/lang/en_us.json and assets/cgm/models/item/ in CGM-Unofficial-1.4.19+Forge+1.20.1.jar - every one present, sniper_rifle correctly absent. Every material claim in every desc was re-derived from the 'materials' arrays in data/cgm/recipes/*.json and matches. Two changes were made: cgm:specialised_grip moved from step 6 to immediately after cgm:rifle, because the under-barrel slot exists only on rifle/assault_rifle/heavy_rifle and none of those had been built by step 6 - it was craftable there but useless; and 'Load Shotgun Shells' became 'Press Shotgun Shells' because the step crafts shells at the workbench and does not load a gun. The collections were rewritten into the {hub, members} shape the loader actually reads (_load_researched_collections wants hub/members and drops any wheel under 4 members), which meant merging the old 3/3/2-member Scopes, Stocks and Grips into one 9-member Gun Attachments wheel."
+}

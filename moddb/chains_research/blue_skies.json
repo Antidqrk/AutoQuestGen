@@ -1,0 +1,166 @@
+{
+ "mod": "blue_skies",
+ "verified_against": "blue_skies-1.20.1-1.3.31.jar",
+ "item_count_in_jar": 700,
+ "chain": [
+  {
+   "id": "blue_skies:blue_journal",
+   "title": "An Adventurer's Ledger",
+   "desc": "Sold by the Gatekeeper, the villager who lives in the overworld house that generates with both unlit Blue Skies portals; using it once unlocks the journal tab."
+  },
+  {
+   "id": "blue_skies:zeal_lighter",
+   "title": "Spark for Two Skies",
+   "desc": "Also sold by the Gatekeeper, and craftable from a Charoite and a Moonstone Shard once you have them; it is the only thing that ignites either portal."
+  },
+  {
+   "id": "dim:blue_skies:everbright",
+   "title": "The Endless Noon",
+   "desc": "Entered through a Turquoise Stone Brick frame lit with a Zeal Lighter; the dimension is locked to daytime and permanently cold."
+  },
+  {
+   "id": "blue_skies:ventium_ingot",
+   "title": "Red Metal of the Cold World",
+   "desc": "Smelted from Ventium Ore or Raw Ventium; the Everbright's iron equivalent and the metal behind buckets, shears and the Tool Box."
+  },
+  {
+   "id": "blue_skies:tool_box",
+   "title": "The Bench That Rebuilds",
+   "desc": "Crafted from Ventium ingots and planks; it upgrades tool durability and swaps the stick on any Blue Skies tool for a different wood."
+  },
+  {
+   "id": "blue_skies:soul_fragment",
+   "title": "Chip of a Wicked Soul",
+   "desc": "Dropped by the Everbright's Frost Spirits and Polargeists and found in village temple chests; it is also a piglin repellent."
+  },
+  {
+   "id": "blue_skies:falsite_ingot",
+   "title": "The Lying Ore",
+   "desc": "Smelted from Falsite Ore, and the Tool Box reagent that adds durability to almost any Everbright or Everdawn tool."
+  },
+  {
+   "id": "blue_skies:warding_pearl",
+   "title": "Nothing Spawns Here",
+   "desc": "Crafted from a Seclam's Pearl, a Soul Fragment and Falsite nuggets; placed, it suppresses hostile spawns over a wide radius."
+  },
+  {
+   "id": "blue_skies:snowcap_oven",
+   "title": "Cooking by Cold",
+   "desc": "Built from a Snowcap Mushroom Block, Turquoise Cobblestone and a furnace; it cooks by draining heat and leaves a frozen byproduct."
+  },
+  {
+   "id": "dim:blue_skies:everdawn",
+   "title": "Forever at Sunrise",
+   "desc": "Entered through a Lunar Stone Brick frame lit with the same Zeal Lighter; hot, humid, locked at sunrise and crawling with oversized insects."
+  },
+  {
+   "id": "blue_skies:horizonite_ingot",
+   "title": "Metal That Refuses to Cool",
+   "desc": "Smelted from Horizonite Ore in the Crystal Dunes; tools made from it auto-smelt the ores they break."
+  },
+  {
+   "id": "blue_skies:horizonite_forge",
+   "title": "A Furnace With No Fire",
+   "desc": "Crafted from Horizonite ingots, Lunar Cobblestone and a furnace; it smelts without fuel, recharging from Horizonite items or Sunstone Crystals."
+  },
+  {
+   "id": "blue_skies:moonstone_shard",
+   "title": "Light Under Both Skies",
+   "desc": "Mined from the Moonstone Ore of either dimension; the mod's own advancement tree treats holding one as the gate to the whole gemstone ladder."
+  },
+  {
+   "id": "blue_skies:pyrope_gem",
+   "title": "Fast, Fragile, First",
+   "desc": "The lowest gem tier of both worlds - tools swing very quickly but wear out fast and cannot mine Diopside or Charoite."
+  },
+  {
+   "id": "blue_skies:aquite",
+   "title": "The Aqua Standard",
+   "desc": "The iron-equivalent gem of the Blue Skies, notably more enchantable than the tiers around it."
+  },
+  {
+   "id": "blue_skies:diopside_gem",
+   "title": "Green and Merciless",
+   "desc": "A deep-underground gem whose gear is the most durable in either dimension; the tools hit hardest but swing slowest."
+  },
+  {
+   "id": "blue_skies:charoite",
+   "title": "The Violet Answer",
+   "desc": "The diamond-equivalent gem and the top of the harvest ladder - only Charoite tools can mine everything found in these worlds."
+  },
+  {
+   "id": "blue_skies:blinding_key",
+   "title": "Four to Open the Tower",
+   "desc": "Looted from the library, study and prison chests of either Blinding Dungeon; four of them at the top-floor Keystone open the boss room."
+  },
+  {
+   "id": "kill:blue_skies:summoner",
+   "title": "The Illager Who Calls",
+   "desc": "The Everbright Blinding Dungeon boss; his loot bags carry the Ethereal Arc, the Summoning Tome and the Soulbound Spear."
+  },
+  {
+   "id": "kill:blue_skies:alchemist",
+   "title": "Transmuter of Two Worlds",
+   "desc": "The Everdawn Blinding Dungeon boss; his loot bags carry the Dusk Arc, the Alchemy Table and the Alchemy Scroll."
+  },
+  {
+   "id": "blue_skies:nature_key",
+   "title": "Key to the Green Pyramid",
+   "desc": "Found on each floor of the Nature Dungeon, the stone pyramid that only becomes relevant after the Summoner falls."
+  },
+  {
+   "id": "kill:blue_skies:starlit_crusher",
+   "title": "Held Together by Vines",
+   "desc": "The Nature Dungeon boss, a golem of dungeon stone and Starlit vine; it drops the Nature Arc and the Crushing Hammer."
+  },
+  {
+   "id": "blue_skies:poison_key",
+   "title": "Key to the Webbed Tree",
+   "desc": "Found on each floor of the Poison Dungeon, the spider nest hidden inside a webbed tree in the Sunset Maple Forest."
+  },
+  {
+   "id": "kill:blue_skies:arachnarch",
+   "title": "Mother of the Nest",
+   "desc": "The Poison Dungeon boss and the mod's final fight; it drops the Poison Arc, the Venom Sac and the Different Sword."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "blue_skies:bluebright_log",
+   "members": [
+    "blue_skies:frostbright_log",
+    "blue_skies:starlit_log",
+    "blue_skies:dusk_log",
+    "blue_skies:lunar_log",
+    "blue_skies:maple_log",
+    "blue_skies:comet_log",
+    "blue_skies:crystallized_log"
+   ]
+  },
+  {
+   "hub": "blue_skies:pyrope_helmet",
+   "members": [
+    "blue_skies:aquite_helmet",
+    "blue_skies:diopside_helmet",
+    "blue_skies:charoite_helmet",
+    "blue_skies:horizonite_helmet",
+    "blue_skies:shadow_helmet"
+   ]
+  },
+  {
+   "hub": "blue_skies:ethereal_arc",
+   "members": [
+    "blue_skies:dusk_arc",
+    "blue_skies:nature_arc",
+    "blue_skies:poison_arc",
+    "blue_skies:summoning_tome",
+    "blue_skies:alchemy_scroll",
+    "blue_skies:crushing_hammer",
+    "blue_skies:venom_sac",
+    "blue_skies:soulbound_spear",
+    "blue_skies:different_sword"
+   ]
+  }
+ ],
+ "notes": "Item set = the 700 stems of assets/blue_skies/models/item/*.json intersected with item.blue_skies.* / block.blue_skies.* keys across every assets/*/lang/en_us.json in the jar (the jar ships three en_us files: assets/blue_skies/lang, assets/blue_skies/blue_skies/journal_lang and a legacy_pack copy); every blue_skies: id above is a member of that set. Ordering is taken straight from data/blue_skies/advancements: root -> everbright/enter and everdawn/enter -> get_wood -> {get_ventium -> use_tool_box -> use_falsite_in_tool_box, get_falsite, craft_snowcap_oven, kill_summoner -> enter_nature_dungeon -> kill_starlit_crusher} and {get_horizonite -> craft_horizonite_forge, kill_alchemist -> use_alchemy_table / enter_poison_dungeon -> kill_arachnarch}; the shared gem ladder is get_moonstone_shard -> get_pyrope -> get_aquite -> {get_diopside, get_charoite}. Both dimensions confirmed from data/blue_skies/dimension/everbright.json and everdawn.json (the only two dimension files). Portal frames and the Gatekeeper are confirmed by the mod's own JEI info strings: gui.blue_skies.jei.info.turquoise_stonebrick / lunar_stonebrick name the two frame blocks, gui.blue_skies.jei.info.portal says the portal generates in The Gatekeeper's house and is lit with a Zeal Lighter, and gui.blue_skies.jei.info.blue_journal / zeal_lighter say both are sold by The Gatekeeper. All four bosses are verified twice over - each has a loot table in data/blue_skies/loot_tables/entities/ and its own loot_bags/<boss>/{common,uncommon,rare}.json - so the four kill: steps cannot be dead ends. CONSENSUS CONFLICT (moddb): moddb lists blue_skies:raw_charoite at pos 0.341, but data/blue_skies/advancements/get_charoite.json gates on blue_skies:charoite, the smelted gem, and the whole gem ladder (pyrope/aquite/diopside) is expressed in cut gems. Graph preferred: raw_charoite dropped in favour of charoite. moddb also lists blue_skies:lunar_stonebrick and blue_skies:bluebright_pickaxe (2 packs each) and blue_skies:food_prep_table (5 packs); all three are real ids in the jar but sit off the advancement spine, so they were left out of the 24-step chain rather than displacing a gate. Dropped, unverifiable: blue_skies:arc_furnace (no model, no lang key - not in this version). Entities present in lang but with no loot table are all projectiles or props (decaying_spike, ent_leaf, ent_root, ent_wall, fluctuant_sphere, seed_bomb, strange_lightning, venom_bomb, venom_spit) plus the jelly_drifter.color.* subkeys; none were used as kill targets. Wheel 3 collects the four dungeon Arcs and the boss loot-bag treasures - every member is verified in loot_tables/loot_bags/<boss>/*.json except different_sword, which is in the arachnarch bags."
+}

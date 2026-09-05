@@ -1,0 +1,180 @@
+{
+ "mod": "createbigcannons",
+ "verified_against": "createbigcannons-5.11.4-mc.1.20.1-forge.jar",
+ "item_count_in_jar": 194,
+ "chain": [
+  {
+   "id": "createbigcannons:gunpowder_pinch",
+   "title": "Splitting the Grain",
+   "desc": "One gunpowder shaken apart into pinches, and nine pinches pressed back into one. The mod's smallest unit of propellant and the start of every charge."
+  },
+  {
+   "id": "createbigcannons:log_cannon_chamber",
+   "title": "A Cannon Made of Tree",
+   "desc": "Logs packed around gunpowder. Weak, short-lived and liable to burst, but it fires today rather than after a foundry."
+  },
+  {
+   "id": "createbigcannons:cannon_builder",
+   "title": "Bolting It Together",
+   "desc": "Andesite casing, a piston extension pole, iron plates and nuggets. Right-click a stack of cannon blocks and it welds them into one working gun."
+  },
+  {
+   "id": "createbigcannons:ram_head",
+   "title": "Shoving It Home",
+   "desc": "A piston extension pole through planks. Mounted on a contraption or hafted onto a stick, it drives shot and charge down to the breech."
+  },
+  {
+   "id": "createbigcannons:empty_powder_charge",
+   "title": "The Cloth Bag",
+   "desc": "String and wool. Cannons do not take loose powder; propellant travels in sewn bags, and this is the bag before it is filled."
+  },
+  {
+   "id": "createbigcannons:powder_charge",
+   "title": "Measured Fury",
+   "desc": "An empty charge stuffed with packed gunpowder, itself compacted from loose grain. Stack charges behind a shot to trade barrel life for range."
+  },
+  {
+   "id": "createbigcannons:wrought_iron_cannon_chamber",
+   "title": "Iron Beats Timber",
+   "desc": "Iron plates hammered around gunpowder. The first metal cannon block, holding far more pressure than any log ever will."
+  },
+  {
+   "id": "createbigcannons:wrought_iron_cannon_end",
+   "title": "Capping the Muzzle",
+   "desc": "Iron plates, an iron ingot and gunpowder. Seals the far end of a barrel so the pressure has only one way out, and only one direction to throw."
+  },
+  {
+   "id": "createbigcannons:fixed_cannon_mount",
+   "title": "Pointed and Left There",
+   "desc": "Andesite casing, iron plates and gunpowder. Holds a cannon rigidly on one bearing so it can be fired by redstone but never aimed."
+  },
+  {
+   "id": "createbigcannons:cannon_mount",
+   "title": "Traverse and Elevate",
+   "desc": "Andesite casing, a shaft, iron plates and gunpowder. Takes rotation on two axes so a controller or a rider can swing the gun onto a target."
+  },
+  {
+   "id": "createbigcannons:cannon_carriage",
+   "title": "Dragging the Gun",
+   "desc": "A shaft, planks and a pair of cannon wheels cut from logs and iron plate. Turns a static emplacement into something a horse or a player can move."
+  },
+  {
+   "id": "createbigcannons:cast_iron_ingot",
+   "title": "Iron and Charcoal",
+   "desc": "Iron compacted with coal in a basin. Brittle under repeated fire but cheap, and the only metal you can pour before the foundry gets serious."
+  },
+  {
+   "id": "createbigcannons:casting_sand",
+   "title": "Sand That Remembers",
+   "desc": "Clay, dirt and sand mixed by hand. Packed under a mould it holds the shape while molten metal is poured on top of it."
+  },
+  {
+   "id": "createbigcannons:basin_foundry_lid",
+   "title": "Turning a Basin into a Foundry",
+   "desc": "Plain andesite alloy. Set it over a heated Create basin and the basin will melt ingots into molten metal instead of mixing them."
+  },
+  {
+   "id": "createbigcannons:small_cast_mould",
+   "title": "The Shape of a Bore",
+   "desc": "A log cut on a mechanical saw. Stack moulds on casting sand, pour molten metal in and the cast hardens into an unbored cannon block."
+  },
+  {
+   "id": "createbigcannons:unbored_cast_iron_cannon_barrel",
+   "title": "Solid Through",
+   "desc": "Molten cast iron poured into a very small mould. It looks like a barrel but there is no hole in it yet, so it will not chamber anything."
+  },
+  {
+   "id": "createbigcannons:cannon_drill",
+   "title": "Cutting the Hole",
+   "desc": "Andesite casing, a fluid pipe, a piston extension pole and iron. Driven along a contraption it bores solid castings out into working barrels."
+  },
+  {
+   "id": "createbigcannons:cast_iron_cannon_barrel",
+   "title": "It Has a Throat Now",
+   "desc": "The unbored casting after the drill has passed through it. Stack these end to end and every extra block adds range and muzzle velocity."
+  },
+  {
+   "id": "createbigcannons:cast_iron_sliding_breechblock",
+   "title": "The Wedge",
+   "desc": "A cogwheel and cast iron. Slides across the back of a breech to seal it, letting the gun be loaded from behind instead of down the muzzle."
+  },
+  {
+   "id": "createbigcannons:quickfiring_mechanism",
+   "title": "Faster Than the Ramrod",
+   "desc": "A cogwheel, a large cogwheel and a lever. Converts a sliding breech into a quick-firing one that cycles on rotation instead of on patience."
+  },
+  {
+   "id": "createbigcannons:cannon_loader",
+   "title": "Nobody Rams By Hand",
+   "desc": "Andesite casing, a piston extension pole and gunpowder. Feeds charge and shell into a breech automatically so the gun keeps its rhythm."
+  },
+  {
+   "id": "createbigcannons:steel_ingot",
+   "title": "The Better Alloy",
+   "desc": "Iron mixed with coal in a heated basin. Steel holds pressures that split cast iron, and it is the first metal worth building a big gun from."
+  },
+  {
+   "id": "createbigcannons:cannon_welder",
+   "title": "Shrinking Steel On",
+   "desc": "A blaze burner, a valve handle and brass and iron plates. Heats stacked cannon layers until they fuse into a single built-up barrel."
+  },
+  {
+   "id": "createbigcannons:he_shell",
+   "title": "It Goes Off On Arrival",
+   "desc": "Mechanical crafting from iron, wooden slabs and high explosive filler. Fitted with a fuze it detonates on contact instead of merely punching through."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "createbigcannons:small_cast_mould",
+   "members": [
+    "createbigcannons:very_small_cast_mould",
+    "createbigcannons:medium_cast_mould",
+    "createbigcannons:large_cast_mould",
+    "createbigcannons:very_large_cast_mould",
+    "createbigcannons:cannon_end_cast_mould",
+    "createbigcannons:sliding_breech_cast_mould",
+    "createbigcannons:screw_breech_cast_mould",
+    "createbigcannons:autocannon_barrel_cast_mould",
+    "createbigcannons:autocannon_breech_cast_mould",
+    "createbigcannons:autocannon_recoil_spring_cast_mould"
+   ]
+  },
+  {
+   "hub": "createbigcannons:cast_iron_cannon_barrel",
+   "members": [
+    "createbigcannons:bronze_cannon_barrel",
+    "createbigcannons:steel_cannon_barrel",
+    "createbigcannons:nethersteel_cannon_barrel",
+    "createbigcannons:built_up_steel_cannon_barrel",
+    "createbigcannons:built_up_nethersteel_cannon_barrel",
+    "createbigcannons:cast_iron_cannon_chamber",
+    "createbigcannons:bronze_cannon_chamber",
+    "createbigcannons:thick_steel_cannon_chamber",
+    "createbigcannons:thick_nethersteel_cannon_chamber",
+    "createbigcannons:cast_iron_cannon_end",
+    "createbigcannons:bronze_cannon_end"
+   ]
+  },
+  {
+   "hub": "createbigcannons:he_shell",
+   "members": [
+    "createbigcannons:ap_shell",
+    "createbigcannons:shrapnel_shell",
+    "createbigcannons:smoke_shell",
+    "createbigcannons:fluid_shell",
+    "createbigcannons:solid_shot",
+    "createbigcannons:ap_shot",
+    "createbigcannons:bag_of_grapeshot",
+    "createbigcannons:drop_mortar_shell",
+    "createbigcannons:shot_balls",
+    "createbigcannons:impact_fuze",
+    "createbigcannons:inertia_fuze",
+    "createbigcannons:timed_fuze",
+    "createbigcannons:proximity_fuze",
+    "createbigcannons:wired_fuze"
+   ]
+  }
+ ],
+ "notes": "Create: Big Cannons assumes base Create is finished. Derived base-Create dependencies: create:andesite_alloy, create:andesite_casing, create:shaft, create:cogwheel, create:large_cogwheel, create:piston_extension_pole, create:fluid_pipe, create:precision_mechanism, create:blaze_burner and create:valve_handles, plus a heated Create basin (for melting and for the steel/bronze alloy mixes), a mechanical saw (all eight cast moulds are create:cutting from logs), a mechanical press for forge:plates/iron and forge:plates/brass, and Create sequenced assembly for the recoil spring, the autocannon cartridge and the autocannon breech extractors. CRITICAL SOURCING NOTE: 100 of the 194 valid ids have no recipe file under data/createbigcannons/recipes/**. They are NOT unobtainable - they come from a second registry, data/createbigcannons/block_recipes/** (69 files), which this research parsed separately: 30 createbigcannons:cannon_casting entries (molten metal poured into a cast_shape on casting sand -> unbored_* block), 28 createbigcannons:drill_boring entries (unbored_* + cannon drill -> bored block), and 10 createbigcannons:built_up_heating entries (stacked *_cannon_layer blocks + cannon welder -> built_up_* barrel). Every wheel-2 barrel and chamber id was verified against those three registries, not guessed. Chain ordering follows cast_iron (compacting iron+coal) -> bronze (mixing copper+zinc+cinder flour, or copper+tin) -> steel (mixing iron+coal) -> nethersteel (mixing steel or cast iron + netherite scrap), which is the melting/alloy graph exactly. ORDERING CONFLICT vs moddb consensus (22 entries, ALL 22 id-verified, none renamed or impossible): the consensus is mould-saturated - 8 of its 22 entries are cast moulds (small 0.281, screw_breech 0.384, autocannon_recoil_spring 0.410, medium 0.468, cannon_end 0.521, autocannon_breech 0.570, autocannon_barrel 0.604, sliding_breech 0.688, very_large 0.708, very_small 0.747, large 0.748), spread across the whole book as if each were a separate progression beat. They are not: all eight are one create:cutting recipe from a log, differing only in cast_shape, so they were collapsed into a single wheel behind small_cast_mould. This is exactly the wheel-not-chain case the brief calls out. Second conflict: consensus contains no cannon barrel, no chamber, no breech, no ingot and no shell - the entire casting and boring payoff of the mod is absent from it, presumably because those items are produced by block_recipes rather than by JSON crafting recipes and so are invisible to recipe-graph scrapers. The recipe graph was preferred and the barrel/chamber/breech line put on the spine. Consensus positions that survive: cannon_builder 0.234, ram_head 0.272, casting_sand 0.414, cannon_drill 0.491, cannon_mount 0.627, fixed_cannon_mount 0.819 - all consistent with the recipe graph and kept near those points. DROPPED - valid ids with no obtainment route in any of the four registries: createbigcannons:traffic_cone (a projectile block with a munition_properties entry and a loot table but no recipe anywhere), createbigcannons:yaw_controller (cannon mount part, no recipe), createbigcannons:cannon_crafting_wand and createbigcannons:creative_autocannon_ammo_container (creative-only). Intermediates deliberately excluded from the spine because they are transitional items inside a sequenced assembly or a boring step and would read as busywork: all 11 incomplete_*, all 4 partial_*/partially_* and all 21 unbored_* ids except unbored_cast_iron_cannon_barrel, which is kept as one step precisely to teach the cast-then-bore loop. createbigcannons:molten_*_bucket ids are valid but are fluid containers with no recipe file. Nuggets and scrap (cast_iron_nugget, bronze_scrap, steel_scrap, nethersteel_nugget) excluded per desirability - authors quest the ingot, never the nugget. Also valid and craftable but cut for length: worm, worm_head, ram_rod, mortar_stone, wrought_iron_drop_mortar_end, log_cannon_end, pair_of_cannon_wheels, packed_gunpowder, packed_guncotton, guncotton, nitropowder, congealed_nitro, hardened_nitro, gas_mask, block_armor_inspection_tool, machine_gun_round, big_cartridge, filled_autocannon_cartridge, autocannon_ammo_container, tracer_tip, delayed_impact_fuze, delayed_inertia_fuze, and the bronze/steel/nethersteel ingot and block ids."
+}

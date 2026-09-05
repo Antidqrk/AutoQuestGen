@@ -1,0 +1,172 @@
+{
+ "mod": "netherdepthsupgrade",
+ "verified_against": "netherdepthsupgrade-3.1.5-1.20.jar",
+ "item_count_in_jar": 85,
+ "chain": [
+  {
+   "id": "dim:minecraft:the_nether",
+   "title": "The Lava Is Full of Fish",
+   "desc": "Nether Depths Upgrade adds no dimension - it stocks the Nether's lava seas with eleven fish and plants kelp in them. The mod's own root advancement triggers on entering the Nether and nothing else."
+  },
+  {
+   "id": "netherdepthsupgrade:warped_kelp",
+   "title": "Kelp That Grows in Lava",
+   "desc": "Planted in every biome tagged #minecraft:is_nether at the vegetal_decoration step, and common enough in Warped Forest to have its own dedicated feature."
+  },
+  {
+   "id": "netherdepthsupgrade:crimson_kelp",
+   "title": "The Red Half",
+   "desc": "The Crimson Forest's counterpart, on the same placement rules. Together with the two seagrasses these four make up the mod's abyssal_flora_expert advancement."
+  },
+  {
+   "id": "netherdepthsupgrade:lava_fishing_rod",
+   "title": "A Rod That Survives the Lava",
+   "desc": "Two netherite scrap, three blaze rods and two chains. It is the single most important item in the mod - almost everything else is caught with it, and the mod's advancement tree hangs a whole branch off crafting it."
+  },
+  {
+   "id": "netherdepthsupgrade:searing_cod",
+   "title": "First Thing on the Line",
+   "desc": "Weight 10 in every Nether biome, three to six at a time; the plain cod of the lava sea and the fish you will pull up first."
+  },
+  {
+   "id": "netherdepthsupgrade:lava_pufferfish",
+   "title": "The Pufferfish, But Worse",
+   "desc": "Weight 15 in its own biome tag, and the icon the mod chose for its lava_fishing_master advancement - catch six named species to earn it."
+  },
+  {
+   "id": "netherdepthsupgrade:eyeball_fish",
+   "title": "It Is Looking At You",
+   "desc": "The eyeball_fish spawn is gated behind its own biome tag and only comes two to four at a time. The mod gives it a dedicated advancement because everything downstream needs its eye."
+  },
+  {
+   "id": "netherdepthsupgrade:eyeball",
+   "title": "Shear the Eye Out",
+   "desc": "Shears plus an Eyeball Fish. Four of them ring the Lava Glass recipe, so this is the gate on the mod's one building block."
+  },
+  {
+   "id": "structure:netherdepthsupgrade:nether_fortress_piece",
+   "title": "The Extra Fortress Wing",
+   "desc": "The mod bolts its own jigsaw piece onto the Nether's fortresses, roughly every 25 chunks, so that the Fortress Grouper has somewhere to live. Fish the lava inside it rather than the open sea."
+  },
+  {
+   "id": "netherdepthsupgrade:fortress_grouper",
+   "title": "The Fish in the Fortress",
+   "desc": "Spawns only in the fortress_grouper biome tag, one or two at a time at weight 3 - the rarest of the catches, and half of what Lava Glass costs."
+  },
+  {
+   "id": "netherdepthsupgrade:fortress_grouper_plate",
+   "title": "Plate Off the Grouper",
+   "desc": "Shears plus a Fortress Grouper gives four plates; four of them make the frame of the Lava Glass recipe and they also turn up in lava-fishing treasure."
+  },
+  {
+   "id": "netherdepthsupgrade:lava_glass",
+   "title": "Glass You Can See Lava Through",
+   "desc": "Four Eyeballs and four Fortress Grouper Plates around one glass, for thirty-two. The mod's only real block reward, and placing one is its own advancement."
+  },
+  {
+   "id": "netherdepthsupgrade:soulsucker",
+   "title": "The One in the Soul Sand",
+   "desc": "The mod's own root advancement uses this fish as its icon. It spawns only in the soulsucker biome tag, one or two at a time."
+  },
+  {
+   "id": "netherdepthsupgrade:soul_sucker_leather",
+   "title": "Skinned With Shears",
+   "desc": "Shears plus a Soul Sucker gives three leathers; there is no other source of the material in the jar."
+  },
+  {
+   "id": "netherdepthsupgrade:soul_sucker_boots",
+   "title": "Boots Made From a Fish",
+   "desc": "Five Soul Sucker Leathers and two string. The mod's only wearable, and the only reason to farm the hardest fish to find."
+  },
+  {
+   "id": "netherdepthsupgrade:soulsucker_bucket",
+   "title": "Bucket the Soul Sucker",
+   "desc": "Made by using an empty bucket on a live Soul Sucker rather than by any recipe; the mod ships an advancement that fires on holding a filled one."
+  },
+  {
+   "id": "netherdepthsupgrade:lava_sponge",
+   "title": "A Sponge for Lava",
+   "desc": "Grown by the lava_sponge_feature in every Nether biome. Place it next to lava and it drinks the lava instead of water."
+  },
+  {
+   "id": "netherdepthsupgrade:wet_lava_sponge",
+   "title": "Now Wring It Out",
+   "desc": "What a Lava Sponge becomes once it has absorbed. Smelting it back to dry is its own advancement, and the pair is the closest thing this mod has to a machine."
+  },
+  {
+   "id": "netherdepthsupgrade:blazefish",
+   "title": "The Rarest Line",
+   "desc": "The only species with no biome-modifier spawn entry at all - its placement lives in NDUEntityPlacement code and it is in the lava-fishing catch table, so the rod is how you meet it."
+  },
+  {
+   "id": "netherdepthsupgrade:wither_bonefish",
+   "title": "Bones That Wither",
+   "desc": "Weight 3 in its own biome tag; the darker cousin of the Bonefish and the last of the eleven species."
+  },
+  {
+   "id": "netherdepthsupgrade:grilled_searing_cod",
+   "title": "Cook What You Caught",
+   "desc": "Every species has a grilled form, a slice, a roll and a baked stew - the mod ships thirty-one food recipes across four directories, and this is the entry point."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "netherdepthsupgrade:searing_cod",
+   "members": [
+    "netherdepthsupgrade:lava_pufferfish",
+    "netherdepthsupgrade:magmacubefish",
+    "netherdepthsupgrade:obsidianfish",
+    "netherdepthsupgrade:glowdine",
+    "netherdepthsupgrade:bonefish",
+    "netherdepthsupgrade:wither_bonefish",
+    "netherdepthsupgrade:blazefish",
+    "netherdepthsupgrade:eyeball_fish",
+    "netherdepthsupgrade:fortress_grouper",
+    "netherdepthsupgrade:soulsucker"
+   ]
+  },
+  {
+   "hub": "netherdepthsupgrade:searing_cod_bucket",
+   "members": [
+    "netherdepthsupgrade:lava_pufferfish_bucket",
+    "netherdepthsupgrade:magmacubefish_bucket",
+    "netherdepthsupgrade:obsidianfish_bucket",
+    "netherdepthsupgrade:glowdine_bucket",
+    "netherdepthsupgrade:bonefish_bucket",
+    "netherdepthsupgrade:wither_bonefish_bucket",
+    "netherdepthsupgrade:blazefish_bucket",
+    "netherdepthsupgrade:eyeball_fish_bucket",
+    "netherdepthsupgrade:fortress_grouper_bucket",
+    "netherdepthsupgrade:soulsucker_bucket"
+   ]
+  },
+  {
+   "hub": "netherdepthsupgrade:grilled_glowdine",
+   "members": [
+    "netherdepthsupgrade:grilled_blazefish",
+    "netherdepthsupgrade:grilled_lava_pufferfish",
+    "netherdepthsupgrade:grilled_magmacubefish",
+    "netherdepthsupgrade:grilled_obsidianfish",
+    "netherdepthsupgrade:grilled_soulsucker",
+    "netherdepthsupgrade:baked_glowdine_stew",
+    "netherdepthsupgrade:baked_searing_cod_stew",
+    "netherdepthsupgrade:glowdine_roll",
+    "netherdepthsupgrade:searing_cod_roll",
+    "netherdepthsupgrade:warped_kelp_roll",
+    "netherdepthsupgrade:nether_rice_roll_medley_block"
+   ]
+  },
+  {
+   "hub": "netherdepthsupgrade:warped_kelp_block",
+   "members": [
+    "netherdepthsupgrade:crimson_kelp_block",
+    "netherdepthsupgrade:warped_kelp_carpet_block",
+    "netherdepthsupgrade:crimson_kelp_carpet_block",
+    "netherdepthsupgrade:warped_seagrass",
+    "netherdepthsupgrade:crimson_seagrass",
+    "netherdepthsupgrade:lava_glass"
+   ]
+  }
+ ],
+ "notes": "LOADER VERIFIED: META-INF/mods.toml present, no fabric.mod.json, modIds netherdepthsupgrade + geckolib; Modrinth version 3.1.5-1.20 lists loaders [forge] only and game versions 1.20 / 1.20.1. Item set = the 85 stems of assets/netherdepthsupgrade/models/item/*.json intersected with item./block. keys in assets/netherdepthsupgrade/lang/en_us.json; every id above is a member of that set. No widening needed - the only model without a lang key is lava_fishing_rod_cast, a cast-state override of the rod. Note the lang file also carries 37 <item>.flavor_text keys that have no model, which is why a lang-only count reads 122 and the true item count is 85. NO DIMENSION AND NO BIOME: there is no data/netherdepthsupgrade/dimension/ or worldgen/biome/ directory. The mod's own root advancement (data/netherdepthsupgrade/advancements/main/root.json) has no parent and its single criterion is 'entered_nether', which is why dim:minecraft:the_nether is the correct and honest opening step. ORDERING is taken straight from that advancement tree: root -> {craft_lava_fishing_rod -> lava_fishing_master, get_eyeball_fish -> {get_wet_lava_sponge -> turn_wet_lava_sponge, abyssal_flora_expert}, place_lava_glass -> filled_soulsucker_bucket}. The recipe graph agrees: eyeball_fish -> eyeball and fortress_grouper -> fortress_grouper_plate are both mandatory inputs to lava_glass, and soulsucker -> soul_sucker_leather -> soul_sucker_boots is the only equipment line in the mod. ENTITY VERIFICATION - this mod is unusually clean. Twelve entity.netherdepthsupgrade.* lang keys exist; eleven of them are fish and every one has BOTH data/netherdepthsupgrade/loot_tables/entities/<id>.json and an entry in data/netherdepthsupgrade/loot_tables/gameplay/nether_fishing/fish.json. Ten of the eleven also have an explicit forge:add_spawns biome modifier in data/netherdepthsupgrade/forge/biome_modifier/ (bonefish and searing_cod on #minecraft:is_nether, the other eight on the mod's own is_<species>_biome tags). The eleventh, blazefish, has NO biome modifier - its placement is registered in com/scouter/netherdepthsupgrade/entity/NDUEntityPlacement.class instead - but it has a loot table, a spawn egg, an animation, and an entry in the lava-fishing catch table, so it is verified by three independent routes. EXCLUDED: netherdepthsupgrade:lava_fishing_bobber, which is the rod's projectile. WATCH THE ENTITY ID: the Fortress Grouper's ITEM is netherdepthsupgrade:fortress_grouper but its ENTITY is netherdepthsupgrade:fortressgrouper with no underscore, and its loot table file is entities/fortressgrouper.json. A kill task written from the item name would be permanently uncompletable. That is why no kill: step is used in this chain at all - every fish is caught and held rather than hunted, and the item form is the safe target. STRUCTURE: the mod adds one, and it is used as the chain's structure: step - but MIND THE SPELLING. The structure file is data/netherdepthsupgrade/worldgen/structure/nether_fortress_piece.json (correct spelling), while its structure_set file is data/netherdepthsupgrade/worldgen/structure_set/nether_fotress_piece.json - 'fotress', missing the second r. That is a typo in the mod, not in this file. The structure: step must use the STRUCTURE id netherdepthsupgrade:nether_fortress_piece, since that is what lives under worldgen/structure/ and what the loader verifies against; a step built from the structure_set filename would be uncompletable. It is a jigsaw with its own custom codec (the json is heavily commented, so it must be parsed with a JSON5-tolerant reader or by stripping // comments) placed at spacing 25, and it exists to give the Fortress Grouper somewhere to live. CONDITIONAL RECIPE: nether_rice_roll_medley_block is a forge:conditional recipe requiring farmersdelight to be loaded and several roll items to exist; it is a real registered item and is safe in a Farmer's Delight pack, but it is in a wheel rather than the chain because it cannot be made without that mod. CONSENSUS: all 24 moddb entries are real ids in this jar and every one appears here or in the wheels. moddb's order interleaves the eleven fish with their buckets and blocks with no regard for the eyeball/plate -> lava_glass dependency or the rod, so the advancement tree was preferred; the two claims moddb misses entirely are that the Lava Fishing Rod costs netherite scrap (so this is a late-Nether mod, not an early one) and that Lava Glass is gated behind two of the rarest fish."
+}

@@ -1,0 +1,399 @@
+{
+ "mod": "ad_astra",
+ "ids_in_jar": 418,
+ "videos": [
+  {
+   "id": "JDHe8vDiMYo",
+   "title": null,
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 15109
+  }
+ ],
+ "items": {
+  "ad_astra:oxygen": {
+   "mentions": 38,
+   "videos": 1,
+   "first_at": 0.1699,
+   "praise": 21,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "ad_astra:space_suit": {
+   "mentions": 11,
+   "videos": 1,
+   "first_at": 0.0137,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 0
+  },
+  "ad_astra:oxygen_distributor": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.3968,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:launch_pad": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.1266,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 2
+  },
+  "ad_astra:energizer": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.6853,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:netherite_space_suit": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.8037,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "ad_astra:wrench": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.319,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:tier_2_rocket": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3099,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:cryo_fuel": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.7378,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:solar_panel": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3288,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:tier_3_rocket": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8277,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "ad_astra:steel_plate": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.079,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 1
+  },
+  "ad_astra:tier_1_rocket": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0823,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:ice_shard": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5774,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:oxygen_loader": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.193,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:cheese": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3483,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:water_pump": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4121,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:fuel_refinery": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.145,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:tier_4_rocket": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9497,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:oxygen_gear": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1867,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:compressor": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0751,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:steel_cable": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0893,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "ad_astra:iron_plate": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0554,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:steel_tank": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1143,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 1
+  },
+  "ad_astra:moon_globe": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5856,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:steel_ingot": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0778,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:space_painting": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5942,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:permafrost": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9692,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:space_pants": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.178,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:oxygen_sensor": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7187,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:space_boots": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1788,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:wheel": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3708,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:steel_block": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1124,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 1
+  },
+  "ad_astra:jet_suit": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8905,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ad_astra:nasa_workbench": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0972,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 1
+  },
+  "ad_astra:rocket_fin": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1134,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 1
+  },
+  "ad_astra:space_helmet": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1771,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "entry": [
+   "No portal. You BUILD A ROCKET and fly. Source JDHe8vDiMYo, a full progression walkthrough.",
+   "The machine chain before any rocket exists: ad_astra:coal_generator (burns wood/coal into energy and powers everything) -> hammer iron ingots in a crafting grid into ad_astra:iron_plate -> smelt iron ingots in a BLAST FURNACE for ad_astra:steel_ingot -> ad_astra:compressor turns those into ad_astra:steel_plate. ad_astra:steel_cable moves power so machines need not touch the generator.",
+   "Then ad_astra:nasa_workbench, which is the block that actually assembles rockets.",
+   "Tier 1 rocket recipe as given: ad_astra:rocket_nose_cone on top, 6 steel blocks, 4x ad_astra:rocket_fin, 2x ad_astra:steel_tank, and ad_astra:steel_engine (ad_astra:steel_plate + ad_astra:engine_frame + ad_astra:fan).",
+   "To fly you also need ad_astra:launch_pad placed on the ground with the rocket in its centre, and fuel: find ad_astra:oil in oceans, run it through ad_astra:fuel_refinery for ad_astra:fuel, and put 3 buckets in the rocket.",
+   "And you need to breathe: craft ad_astra:space_helmet, ad_astra:space_suit (the chestplate needs 2 oxygen tanks plus ad_astra:oxygen_gear), ad_astra:space_pants and ad_astra:space_boots, then fill them from ad_astra:oxygen_loader, which converts water into oxygen."
+  ],
+  "boss_order": [
+   "No bosses. The ladder is ROCKET TIERS, and each tier is unlocked by a metal found on the planet the previous tier reached. This is the progression a questbook must follow:",
+   "TIER 1 (steel) -> the Moon. The Moon yields ad_astra:desh_ingot.",
+   "TIER 2 (ad_astra:desh_ingot, 'the same process as before but with desh instead of steel') -> Mars. Mars yields ad_astra:ostrum_ingot.",
+   "TIER 3 (ad_astra:ostrum_ingot) -> Venus and Mercury. Venus yields ad_astra:calorite_ingot, called 'the most powerful ore in this mod'.",
+   "TIER 4 (ad_astra:calorite_ingot) -> leaves the solar system to Glacio in Proxima Centauri.",
+   "The guide ends by noting the developers intend to refactor the whole progression, so treat this ladder as version-specific to the 1.20.1 build."
+  ],
+  "order": [
+   "FIRST on the Moon: mine ad_astra:desh_ingot. It gates tier 2, space stations and all better machinery. ad_astra:desh_plate makes higher-throughput ad_astra:desh_cable and the ad_astra:wrench, which rotates and disconnects cables.",
+   "Build a base with breathable air rather than living in the suit: seal a room, then ad_astra:oxygen_distributor fed by ad_astra:water_pump over an infinite water source. One distributor covers up to 2000 blocks. Its GUI shows bubbles when the room is sealed and warns you when there is a hole.",
+   "Leave a one-block ventilation gap between walls, or closed doors will block oxygen flow.",
+   "On Mars: ad_astra:ostrum_ingot unlocks ad_astra:energizer (stores 2 million energy, charges items, and KEEPS its charge when broken so it can be carried as a battery) and ad_astra:oxygen_sensor (redstone output when oxygen is present).",
+   "Also on Mars, upgrade fuel: ad_astra:cryo_freezer turns ad_astra:ice_shard into ad_astra:cryo_fuel, which launches on ONE bucket instead of three. Ice shards drop from ad_astra:corrupted_lunarian, so a Moon mob farm gives an infinite supply. Converting plain ice instead is possible but the guide explicitly does not recommend it.",
+   "ad_astra:solar_panel output scales with closeness to the sun - best on Mercury, worst on distant or foggy planets.",
+   "Trade rather than grind: ad_astra:lunarian villagers live in underground Moon villages and sell space armour and oxygen; ad_astra:lunarian_wandering_trader appears on every planet selling launch pads, oxygen, fuel and water. Both take emeralds only."
+  ],
+  "gates": [
+   "HARD GATE: you MUST equip ad_astra:netherite_space_suit before Venus or Mercury or 'you will burn to death'. It adds fire resistance and smoke protection over the basic suit.",
+   "HARD GATE: each rocket tier needs the previous planet's metal. There is no shortcut to tier 4 without Venus calorite.",
+   "Glacio is the exception to the oxygen rule - it has breathable air, so no space suit is needed there despite being tier 4.",
+   "A space station is created from the destination-select screen and only if you are carrying the materials; it spawns at the coordinates you launched from, so note them or you lose it."
+  ],
+  "traps": [
+   "STRANDING IS THE BIG ONE. To get home you need a second ad_astra:launch_pad AND 3 more buckets of ad_astra:fuel IN THE ROCKET'S INVENTORY before you leave. The guide: 'follow these steps very carefully or you might end up stranded on the moon or worse.'",
+   "PRESS SPACE during descent to slow the ad_astra:lander. Otherwise it 'will crash into the moon and explode with you and your rocket inside'.",
+   "Normal torches and lanterns EXTINGUISH without oxygen. Bring soul torches or glowstone.",
+   "ad_astra:sulfur_creeper on Venus is faster than an Overworld creeper and its blast consumes part of your oxygen supply - a hit can leave you suffocating rather than merely hurt.",
+   "ad_astra:cryo_fuel damages anything standing in it like lava when placed, though it also freezes water into an infinite ice source.",
+   "To remove a spent lander, punch it."
+  ],
+  "signature": [
+   "ad_astra:tier_1_rocket through ad_astra:tier_4_rocket and ad_astra:nasa_workbench - the spine of the whole mod.",
+   "ad_astra:steel_ingot -> ad_astra:desh_ingot -> ad_astra:ostrum_ingot -> ad_astra:calorite_ingot - the metal ladder that mirrors the tier ladder exactly.",
+   "ad_astra:oxygen_distributor - the block that turns a space trip into a space base.",
+   "ad_astra:jet_suit - the endgame upgrade over the netherite suit, with flight (space to ascend, space+sprint to boost) powered by charging it in the ad_astra:energizer.",
+   "ad_astra:tier_1_rover - two-seat driveable ground vehicle with storage, fuelled by shift-right-clicking it.",
+   "ad_astra:cheese from ad_astra:moon_cheese_ore and ad_astra:star_crawler - the mod's running joke.",
+   "ad_astra:moon_globe - dungeon trophy that spins forever when powered with redstone."
+  ]
+ }
+}

@@ -1,0 +1,203 @@
+{
+ "mod": "pamhc2foodcore",
+ "ids_in_jar": 188,
+ "videos": [
+  {
+   "id": "EGFcZu9hgB4",
+   "title": "Minecraft Mod Spotlight ~ Pams Harvestcraft 2 - Food Core 1.15.2 Mod Tutorial",
+   "channel": "Lava Temptress",
+   "views": 3991,
+   "duration": 493,
+   "chars": 6035,
+   "legacy_vocab_prompt": true
+  }
+ ],
+ "items": {
+  "pamhc2foodcore:butteritem": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.8285,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pamhc2foodcore:cookingoilitem": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7659,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pamhc2foodcore:mashedpotatoesitem": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7887,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "pamhc2foodcore:doughitem": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4448,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "Tools before food, and copper before anything. The cheap pair comes first - bakeware and juicer are just terracotta.",
+    "ids": [
+     "pamhc2foodcore:bakewareitem",
+     "pamhc2foodcore:juiceritem"
+    ]
+   },
+   {
+    "note": "Then the copper tools, which are the bulk of the set: pot, saucepan, skillet, cutting board.",
+    "ids": [
+     "pamhc2foodcore:potitem",
+     "pamhc2foodcore:saucepanitem",
+     "pamhc2foodcore:skilletitem",
+     "pamhc2foodcore:cuttingboarditem"
+    ]
+   },
+   {
+    "note": "Base ingredients next - dough, batter, butter, flour and salt are the intermediates almost every dish routes through.",
+    "ids": [
+     "pamhc2foodcore:doughitem",
+     "pamhc2foodcore:batteritem",
+     "pamhc2foodcore:butteritem",
+     "pamhc2foodcore:flouritem",
+     "pamhc2foodcore:saltitem"
+    ]
+   },
+   {
+    "note": "Split the liquids early. One water bottle becomes eight fresh waters and one milk bucket becomes eight fresh milks, and a large share of recipes call for those rather than the vanilla container - a cheap step players skip and then stall on.",
+    "ids": [
+     "pamhc2foodcore:freshwateritem",
+     "pamhc2foodcore:freshmilkitem"
+    ]
+   }
+  ],
+  "ladder": [
+   {
+    "note": "No tier ladder - like Croptopia this is a breadth mod whose progression is tool coverage. NINE tools, each unlocking a recipe family: pot, saucepan, skillet, bakeware, juicer, cutting board, grinder, mixing bowl and roller.",
+    "ids": [
+     "pamhc2foodcore:potitem",
+     "pamhc2foodcore:saucepanitem",
+     "pamhc2foodcore:skilletitem",
+     "pamhc2foodcore:bakewareitem",
+     "pamhc2foodcore:juiceritem",
+     "pamhc2foodcore:cuttingboarditem",
+     "pamhc2foodcore:grinderitem",
+     "pamhc2foodcore:mixingbowlitem",
+     "pamhc2foodcore:rolleritem"
+    ]
+   },
+   {
+    "note": "Ingredient chain is the real progression: raw crop into flour or butter, those into dough or batter, and only then into finished dishes.",
+    "ids": [
+     "pamhc2foodcore:flouritem",
+     "pamhc2foodcore:butteritem",
+     "pamhc2foodcore:doughitem",
+     "pamhc2foodcore:batteritem",
+     "pamhc2foodcore:applepieitem"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "COPPER is this mod's signature gate - pot, saucepan, skillet and cutting board all need copper ingots. That sets it apart from Croptopia (iron) and Farmer's Delight (iron) and makes it the earliest-available of the three cooking mods in this pack.",
+    "ids": [
+     "pamhc2foodcore:potitem",
+     "pamhc2foodcore:skilletitem",
+     "pamhc2foodcore:saucepanitem",
+     "pamhc2foodcore:cuttingboarditem"
+    ]
+   },
+   {
+    "note": "Recipes reference tools through forge TAGS (forge:tool_pot, forge:tool_skillet and so on), not item ids. Each tag currently resolves to exactly one Pam's item, but the tag indirection means a compatible tool from another mod could satisfy it - so a quest should require the tag's real member, which is the pamhc2foodcore item.",
+    "ids": [
+     "pamhc2foodcore:potitem",
+     "pamhc2foodcore:skilletitem"
+    ]
+   },
+   {
+    "note": "Tools are used as grid ingredients and returned, like Croptopia's - they are never placed as blocks. This mod has no blocks at all (188 items, zero blockstates).",
+    "ids": [
+     "pamhc2foodcore:bakewareitem",
+     "pamhc2foodcore:applepieitem"
+    ]
+   }
+  ],
+  "payoff": [
+   {
+    "note": "Completing the nine-tool set is the milestone - it opens essentially the entire 188-item food list at once.",
+    "ids": [
+     "pamhc2foodcore:potitem",
+     "pamhc2foodcore:mixingbowlitem",
+     "pamhc2foodcore:rolleritem"
+    ]
+   },
+   {
+    "note": "Juices and smoothies off the juicer are the quickest visible reward from a single cheap terracotta tool.",
+    "ids": [
+     "pamhc2foodcore:juiceritem",
+     "pamhc2foodcore:applejuiceitem"
+    ]
+   },
+   {
+    "note": "Staple intermediates are the practical payoff - butter, cheese and dough feed dozens of downstream recipes.",
+    "ids": [
+     "pamhc2foodcore:butteritem",
+     "pamhc2foodcore:cheeseitem",
+     "pamhc2foodcore:doughitem"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "CRITICAL NAMING TRAP: every id in this mod is lowercase, has NO underscores, and ends in a bare 'item' suffix - pamhc2foodcore:applepieitem, pamhc2foodcore:cuttingboarditem, pamhc2foodcore:skilletitem. The natural guess (pamhc2foodcore:apple_pie) does not exist. All 188 ids follow this pattern with no exceptions.",
+    "ids": [
+     "pamhc2foodcore:applepieitem",
+     "pamhc2foodcore:cuttingboarditem",
+     "pamhc2foodcore:skilletitem"
+    ]
+   },
+   {
+    "note": "Name collisions with the pack's other cooking mods are severe: skillet and cutting board exist in Farmer's Delight, and pot/knife-style tools exist in Croptopia. Three near-identical 'skillet' items coexist here, so quest text must name the mod explicitly or players will craft the wrong one.",
+    "ids": [
+     "pamhc2foodcore:skilletitem",
+     "farmersdelight:skillet",
+     "pamhc2foodcore:cuttingboarditem",
+     "farmersdelight:cutting_board"
+    ]
+   },
+   {
+    "note": "Food Core ships the FOODS but not the crops, confirmed by the guide in as many words: HarvestCraft 2 was split into four parts and Food Core 'does not add any crop or material or additional trees, it only adds the dishes and the tools to prepare them'. Many recipes reference crop tags that only the Crops/Trees companion mods populate, so a pack running Food Core alone will have dishes it can never craft. Check each dish's ingredients against what this pack actually grows before making it a quest.",
+    "ids": [
+     "pamhc2foodcore:applepieitem"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "The nine-tool kitchen is the mod's identity - it is the original 'cooking needs equipment' mod that Croptopia and Farmer's Delight both descend from.",
+    "ids": [
+     "pamhc2foodcore:potitem",
+     "pamhc2foodcore:skilletitem",
+     "pamhc2foodcore:saucepanitem",
+     "pamhc2foodcore:bakewareitem",
+     "pamhc2foodcore:juiceritem"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,235 @@
+{
+ "mod": "mna",
+ "verified_against": "mna-forge-1.20.1-3.1.11-all.jar",
+ "item_count_in_jar": 474,
+ "chain": [
+  {
+   "id": "mna:raw_vinteum",
+   "title": "A Strange Ore",
+   "desc": "Mine the blue-pulsing vinteum ore found underground; every wand, altar, and spell in Mana and Artifice traces back to this one mineral."
+  },
+  {
+   "id": "mna:vinteum_dust",
+   "title": "A Blue Powder",
+   "desc": "Smelt raw vinteum into dust and notice it clings to iron; this powder is the universal magical reagent you will be sprinkling into recipes for the rest of the mod."
+  },
+  {
+   "id": "mna:vinteum_coated_iron",
+   "title": "Magnetic Metal",
+   "desc": "Combine vinteum dust with an iron ingot; the dust fuses into the metal, and one more trip through the furnace finishes the job."
+  },
+  {
+   "id": "mna:vinteum_ingot",
+   "title": "Tracking Down Magic",
+   "desc": "Smelt the coated iron into a true vinteum ingot; villagers recognize this metal, and trading it is how you find your way into the arcane."
+  },
+  {
+   "id": "mna:guide_book",
+   "title": "The Codex Arcana",
+   "desc": "Trade a vinteum ingot to a villager for this book; reading it starts your magic XP bar, and everything from rituals to factions is documented inside it."
+  },
+  {
+   "id": "mna:inscription_table",
+   "title": "Scribe",
+   "desc": "Build a Basic Table, an Animated Quill, and Vellum into this desk; here you design custom spells from a shape, components, and modifiers instead of learning fixed ones."
+  },
+  {
+   "id": "mna:wizard_chalk",
+   "title": "Chalk the Circle",
+   "desc": "Craft chalk and drag it across the ground to draw ritual runes; rituals are how spells get created, tiers get ascended, and factions get joined, so keep a stick on you always."
+  },
+  {
+   "id": "mna:spell",
+   "title": "Your First Spell",
+   "desc": "Draw the Ritual of Arcana around your inscribed recipe to bind it into a castable spell, then cast it; casting anything is a Tier 1 Occulus task and levels your magic XP."
+  },
+  {
+   "id": "mna:improvised_manaweaver_wand",
+   "title": "Manamancer",
+   "desc": "A stick and a cap make a crude wand that traces manaweave patterns in the air; patterns are the second half of the mod's crafting language, so practice a few now."
+  },
+  {
+   "id": "mna:manaweaving_altar",
+   "title": "Manaweaver",
+   "desc": "Build this basin from arcane sandstone and a water bucket; drop items in and weave the right patterns above it to craft nearly every magical device from here on."
+  },
+  {
+   "id": "mna:occulus",
+   "title": "Eyes on Ascension",
+   "desc": "Vinteum dust, glass, and an ornate table build your progression tracker; it lists the tasks for your current tier, and completing enough lets you perform the ascension ritual to Tier 2."
+  },
+  {
+   "id": "mna:mote_arcane",
+   "title": "Elementalist",
+   "desc": "Perform the Ritual of Forgotten Lore to condense an arcane mote, the heart of every mana crystal; its five elemental siblings (Searing Inferno, Deep Ocean, Endless Void, Untamed Wind, Ancient Stone) yield the fire, water, ender, air, and earth motes that faction rituals and Tier 2 tasks demand."
+  },
+  {
+   "id": "mna:mana_crystal",
+   "title": "Mana, Fused",
+   "desc": "Weave chimerite gems and purified vinteum dust into fragments, then eight fragments and an arcane mote into a full crystal; this is the battery block your casting economy runs on."
+  },
+  {
+   "id": "mna:transmuted_silver",
+   "title": "Quicksilver",
+   "desc": "Weave a single square pattern over a copper ingot to transmute it; quicksilver is the metal of rune-working and gates the Runeforge, Runic Anvil, and Runescribing Table."
+  },
+  {
+   "id": "mna:runeforge",
+   "title": "The Runeforge",
+   "desc": "Assemble quicksilver, arcane stone, and stone glyphs into a forge; it heats metal for rune smithing, and later upgrades into a Brimstone Forge for level-III enchants."
+  },
+  {
+   "id": "mna:runic_anvil",
+   "title": "Runesmith",
+   "desc": "An anvil dressed with chimerite, quicksilver, and vinteum dust; hammer runes out of patterns here, repair broken mage armor, and eventually enchant gear directly with runes."
+  },
+  {
+   "id": "mna:runescribing_table",
+   "title": "Runecarver",
+   "desc": "Chisel rune patterns onto clay plates at this table; patterns are the templates the Runic Anvil forges from, and scribing your first rune checks off another Tier 2 task."
+  },
+  {
+   "id": "mna:spell_book",
+   "title": "A Reference System",
+   "desc": "Bind leather, paper, and string into a book that holds and hot-swaps your growing spell list; it is also a reagent for the Altar of Arcana and the Council's faction ritual."
+  },
+  {
+   "id": "mna:study_desk",
+   "title": "Student of Rote",
+   "desc": "Weave this desk and feed it Torn Journal Pages looted from wizard structures; rote practice lets you cast well-drilled spells for reduced mana, so it pays off on every fight after."
+  },
+  {
+   "id": "mna:altar_of_arcana",
+   "title": "Arcana Without the Chalk",
+   "desc": "Weave a spell book, chalk, animus dust, and a marking rune into this altar; it replaces the Ritual of Arcana entirely, letting you craft higher-complexity spells with no floor art."
+  },
+  {
+   "id": "mna:mark_of_the_council",
+   "title": "Pick a Patron",
+   "desc": "At Tier 3, perform a faction ritual: the Ancient Council, Faerie Courts, Demons of the Nether, or the Undead. Marks like this one drop from each faction's champions; allegiance unlocks faction spells, gear, and wellsprings."
+  },
+  {
+   "id": "mna:eldritch_orb",
+   "title": "Kind of Like a Familiar",
+   "desc": "Weave this floating orb companion at Tier 3; it hovers at your shoulder and assists your casting, and crafting one is an Occulus task on the road to Tier 4."
+  },
+  {
+   "id": "mna:spell_infusion",
+   "title": "Transcriptionist",
+   "desc": "Woven at Tier 3: lay Manaweave patterns over a Basic Table with Wizard Chalk, two Bowls, Animus Dust and an Armor Stand. Once built, it scribes a rote-mastered spell onto glyphs, staves or construct arms, so allies and automatons cast your spells without you."
+  },
+  {
+   "id": "mna:circle_of_power",
+   "title": "Sanctum Invocation",
+   "desc": "Perform the Sanctum Invocation ritual and complete the structure it seeds; your sanctum is home turf that empowers your magic and is required progression at Tier 3."
+  },
+  {
+   "id": "mna:wellspring_pillar",
+   "title": "Claim a Wellspring",
+   "desc": "Brew a sight unguent or dowsing rod to find an eldrin wellspring, then capture it for your faction; pillars and conduits route its raw eldrin power to your workshop."
+  },
+  {
+   "id": "mna:eldrin_altar",
+   "title": "The Eldrin Altar",
+   "desc": "Weave the Tier 4 altar that burns channeled wellspring power instead of items alone; greater motes, faction armor, horns, and every endgame recipe happen here."
+  },
+  {
+   "id": "mna:greater_mote_arcane",
+   "title": "Eldrin Imbuement",
+   "desc": "Condense a greater mote at the Eldrin Altar using stored arcane power; greater motes are the currency of Tier 5 recipes and the Ritual of Odin's Call."
+  },
+  {
+   "id": "kill:mna:odin",
+   "title": "The Allfather",
+   "desc": "At Tier 5, perform the Ritual of Odin's Call with witherbone and greater motes to summon Odin himself; survive his trial and he yields the Allfather's Axe."
+  },
+  {
+   "id": "mna:arcane_crown",
+   "title": "Arcane Crown",
+   "desc": "Weave the Tier 5 crown as proof you have mastered every system in the mod; wear it as the capstone of your ascent from a strange blue ore to archmage."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mna:fall_charm",
+   "members": [
+    "mna:burn_charm",
+    "mna:drown_charm",
+    "mna:bed_charm"
+   ]
+  },
+  {
+   "hub": "mna:mage_robes",
+   "members": [
+    "mna:mage_hood",
+    "mna:mage_leggings",
+    "mna:mage_boots",
+    "mna:infused_silk",
+    "mna:vinteum_needle",
+    "mna:sorcerous_sewing_set"
+   ]
+  },
+  {
+   "hub": "mna:construct_workbench",
+   "members": [
+    "mna:bell_of_bidding",
+    "mna:delegation_station",
+    "mna:construct_repair_kit",
+    "mna:lodestar"
+   ]
+  },
+  {
+   "hub": "mna:practitioners_pouch",
+   "members": [
+    "mna:patch_speed",
+    "mna:patch_collection",
+    "mna:patch_conveyance",
+    "mna:patch_mote"
+   ]
+  },
+  {
+   "hub": "mna:silk_touch_ring",
+   "members": [
+    "mna:fortune_ring",
+    "mna:warding_amulet",
+    "mna:battlemage_amulet",
+    "mna:eldrin_bracelet",
+    "mna:witherguard_amulet"
+   ]
+  },
+  {
+   "hub": "mna:magic_broom",
+   "members": [
+    "mna:vortex_broom",
+    "mna:transitory_tunnel",
+    "mna:slipstream_generator"
+   ]
+  },
+  {
+   "hub": "mna:faction_horn_council",
+   "members": [
+    "mna:faction_horn_fey",
+    "mna:faction_horn_demons",
+    "mna:faction_horn_undead"
+   ]
+  },
+  {
+   "hub": "mna:council_armor_chest",
+   "members": [
+    "mna:fey_armor_chest",
+    "mna:demon_armor_chest",
+    "mna:bone_armor_chest"
+   ]
+  },
+  {
+   "hub": "kill:mna:pumpkin_king",
+   "members": [
+    "kill:mna:wither_lich",
+    "kill:mna:demon_lord",
+    "kill:mna:faerie_queen",
+    "kill:mna:council_warden"
+   ]
+  }
+ ],
+ "notes": "Order taken from the mod's own data/mna/recipes/progression/tier_1..tier_4 gate recipes and data/mna/advancements/tier_0..tier_4 (author-authored tier ladder), cross-checked against recipe tier fields (manaweaving/eldrin_altar/runeforging recipes all carry explicit tier 1-5). Tier 0: vinteum ore -> dust -> coated iron -> ingot -> Codex via villager trade. Tier 1: inscription/ritual spellcraft + manaweaving. Tier 2: motes, mana crystals, rune-working, Altar of Arcana. Tier 3: faction join (mark items drop from faction champions: witch_hunter/spell_breaker/council_warden carry mark_of_the_council), sanctum, transcription. Tier 4: wellspring capture + Eldrin Altar + greater motes. Tier 5: Odin's Call ritual boss and faction endgame gear (collections). mark_of_the_council/mark_of_the_fey/mark_of_the_nether/mark_of_the_undead have no recipes - loot only. brimstone_charm (runeforge upgrade), modifier_book (Ritual of Alteration), and disenchanter were left to keep length at 29; all verified present if depth is later expanded."
+}

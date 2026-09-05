@@ -1,0 +1,168 @@
+{
+ "mod": "tombstone",
+ "verified_against": "tombstone-1.20.1-9.1.4.jar",
+ "item_count_in_jar": 83,
+ "chain": [
+  {
+   "id": "tombstone:grave_key",
+   "title": "The Key You Never Asked For",
+   "desc": "Handed to you automatically when you respawn; locates your grave at range and recovers its contents when you reach it."
+  },
+  {
+   "id": "tombstone:grave_dust",
+   "title": "Ash of the Restless",
+   "desc": "Dropped by undead creatures and left behind when lost tablets crumble; the reagent in nearly every recipe the mod has."
+  },
+  {
+   "id": "tombstone:strange_scroll",
+   "title": "Blank Parchment, Odd Weight",
+   "desc": "Paper and wooden rods bound with grave dust, and the base every magic scroll is written onto."
+  },
+  {
+   "id": "tombstone:scroll_of_knowledge",
+   "title": "Banking Your Experience",
+   "desc": "Glowstone dust combined with a strange scroll; drains your experience on contact with a grave soul and gives it back on demand."
+  },
+  {
+   "id": "tombstone:dark_marble",
+   "title": "Stone That Remembers",
+   "desc": "Grave dust worked into plain stone, the cheapest of the five grave marbles and the base for tablets and graves."
+  },
+  {
+   "id": "tombstone:essence_of_undeath",
+   "title": "What the Dead Leave Behind",
+   "desc": "A rare drop from undead creatures, also pulled up by fishing deep water; the binding ingredient of every decorative grave."
+  },
+  {
+   "id": "tombstone:decorative_grave_simple",
+   "title": "A Place to Kneel",
+   "desc": "Grave marble bound with essence of undeath; graves are sometimes haunted by souls, and are what the Ankh is prayed at."
+  },
+  {
+   "id": "tombstone:ankh_of_prayer",
+   "title": "Currency of the Devout",
+   "desc": "Gold, wooden rods and grave dust; praying at a decorative grave with it earns Knowledge of Death, on a cooldown."
+  },
+  {
+   "id": "tombstone:grave_plate",
+   "title": "Carving the Name",
+   "desc": "Stone and grave dust make the Memorial Plaque, engraved on an anvil with an iron ingot to title a decorative grave."
+  },
+  {
+   "id": "tombstone:strange_tablet",
+   "title": "Slab Without an Inscription",
+   "desc": "Grave dust pressed into grave marble; combined in your inventory with one more ingredient to become any magic tablet."
+  },
+  {
+   "id": "tombstone:tablet_of_recall",
+   "title": "Called Back to the Stone",
+   "desc": "Bone meal combined with a strange tablet, teleporting you to a decorative grave."
+  },
+  {
+   "id": "tombstone:tablet_of_home",
+   "title": "The Road Back",
+   "desc": "A red mushroom combined with a strange tablet, returning you to your respawn point."
+  },
+  {
+   "id": "tombstone:book_of_repairing",
+   "title": "Undoing the Wear",
+   "desc": "Prismarine, quartz and grave dust bound into a book; repairs items and erases damage left by ordinary use."
+  },
+  {
+   "id": "tombstone:book_of_soulbound",
+   "title": "What Death Cannot Take",
+   "desc": "Diamond, lapis and grave dust in a book, granting the Soulbound enchantment so an item stays with you through death."
+  },
+  {
+   "id": "tombstone:voodoo_poppet",
+   "title": "A Death Spent for You",
+   "desc": "Clay, dead bush, leather and string bound with grave dust; once enchanted at a grave soul it absorbs your next death."
+  },
+  {
+   "id": "tombstone:book_of_disenchantment",
+   "title": "Pulling the Magic Back Out",
+   "desc": "Lapis and grave dust in a book; held against a grave soul it strips enchantments off the item in your other hand."
+  },
+  {
+   "id": "tombstone:book_of_magic_impregnation",
+   "title": "Deepening the Enchantment",
+   "desc": "Diamond, lapis and grave dust in a book, used to enchant or strengthen magic items and arrows."
+  },
+  {
+   "id": "tombstone:impregnated_diamond",
+   "title": "A Gem Full of Dust",
+   "desc": "A diamond saturated with grave dust; its only purpose is the Receptacle of Familiar."
+  },
+  {
+   "id": "tombstone:bone_needle",
+   "title": "Drawing Out the Essence",
+   "desc": "Bone and grave dust; pricks a creature to capture part of its essence and sets which species a receptacle may hold."
+  },
+  {
+   "id": "tombstone:receptacle_of_familiar",
+   "title": "A Jar for a Friend",
+   "desc": "An impregnated diamond with iron and a ghast tear; captures a dead familiar's soul and possessions to be revived later."
+  },
+  {
+   "id": "tombstone:receptacle_of_soul",
+   "title": "Freeing the Imprisoned",
+   "desc": "Found on undead bosses; returning the trapped soul to a decorative grave grants ten Knowledge of Death points."
+  },
+  {
+   "id": "tombstone:gemstone_of_familiar",
+   "title": "Calling the Pet Back",
+   "desc": "A rare magic gemstone, found rather than crafted, that brings your last dead familiar back to life."
+  },
+  {
+   "id": "tombstone:lost_tablet",
+   "title": "A Map With No Ink",
+   "desc": "Pulled up by unlucky fishermen; once its magic has awoken over time it points to a distant village, structure or treasure."
+  },
+  {
+   "id": "tombstone:book_of_oblivion",
+   "title": "Wiping the Slate",
+   "desc": "Amethyst, emerald and grave dust in a book, resetting every perk you have spent Knowledge of Death on."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "tombstone:strange_scroll",
+   "members": [
+    "tombstone:scroll_of_knowledge",
+    "tombstone:scroll_of_aquatic_life",
+    "tombstone:scroll_of_feather_fall",
+    "tombstone:scroll_of_frost_resistance",
+    "tombstone:scroll_of_lightning_resistance",
+    "tombstone:scroll_of_mercy",
+    "tombstone:scroll_of_preservation",
+    "tombstone:scroll_of_purification",
+    "tombstone:scroll_of_reach",
+    "tombstone:scroll_of_true_sight",
+    "tombstone:scroll_of_unstable_intangibility"
+   ]
+  },
+  {
+   "hub": "tombstone:grave_dust",
+   "members": [
+    "tombstone:book_of_repairing",
+    "tombstone:book_of_soulbound",
+    "tombstone:book_of_disenchantment",
+    "tombstone:book_of_magic_impregnation",
+    "tombstone:book_of_recycling",
+    "tombstone:book_of_scribe",
+    "tombstone:book_of_oblivion"
+   ]
+  },
+  {
+   "hub": "tombstone:strange_tablet",
+   "members": [
+    "tombstone:tablet_of_recall",
+    "tombstone:tablet_of_home",
+    "tombstone:tablet_of_assistance",
+    "tombstone:tablet_of_cupidity",
+    "tombstone:tablet_of_guard"
+   ]
+  }
+ ],
+ "notes": "83 ids verified. Corail Tombstone uses THREE naming conventions and the standard rule catches only the smallest of them. Plain item.tombstone.X / block.tombstone.X yields just 16 ids (the marble slabs, stairs and walls). The mod's real convention is INVERTED - tombstone.item.X and tombstone.block.X - which adds 61 more. A third form names the six decorative graves through tombstone.grave.<style>: the block registered as decorative_grave_simple takes its name from tombstone.grave.grave_simple = 'Simple Grave'. Missing that third rule would have dropped decorative_grave_simple, which moddb records in 9 packs. All 63 recipe results resolve to modelled items.\n\nDROPPED - 56 model stems with no display name under any of the three conventions. These are overwhelmingly NBT-driven model overrides rather than registered items: the 19 advancement_N icons, the 12 ancient_scroll_* and 10 enchanted_scroll_* variants, the 5 ancient_tablet_* variants, ancient_magic_scroll, fishing_rod_of_misadventure_cast, bone_needle_filled, engraved_grave_plate, and the three lost_tablet_<type> states. A quest must ask for the BASE item (tombstone:scroll_of_reach), never the ancient or enchanted skin of it - those are the same item stack with different NBT and are not separately obtainable.\nDROPPED - tombstone:abandoned_grave: it has a lang name but no item model. It is worldgen structure furniture, not an item.\n\nNo consensus conflicts. All 26 moddb entries appear in the verified set and its ordering agrees with the recipe graph everywhere it can be checked - grave_key and grave_dust early, ankh_of_prayer and voodoo_poppet mid, receptacle_of_familiar late. moddb's ordering of the scroll and tablet families is arbitrary, which is expected: they are siblings off one hub, not a ladder, and they are modelled as wheels here.\n\nStructure: grave_dust is the true spine root - almost everything is 'X plus grave dust'. The three wheels are the mod's three families (11 scrolls off strange_scroll, 7 books off grave_dust, 5 tablets off strange_tablet). The 5 marble colours and the other 5 decorative grave styles are pure cosmetics - same recipe, different dye or silhouette - and are deliberately given no quests at all; only decorative_grave_simple appears, because the Ankh needs a grave to pray at. The Knowledge of Death perk tree itself is not an item and cannot be a task target; ankh_of_prayer and receptacle_of_soul are the two obtainable objects that feed it, and both are in the chain."
+}

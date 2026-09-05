@@ -1,0 +1,214 @@
+{
+ "mod": "ricksportalgun",
+ "ids_in_jar": 32,
+ "videos": [
+  {
+   "id": "vUK9WtRLYeU",
+   "title": "*NEW* Rick's Portal Gun Mod - Minecraft 1.21.1 (Mod Showcase)",
+   "channel": "UltraUnit17",
+   "views": 8423,
+   "duration": 301,
+   "chars": 5619
+  },
+  {
+   "id": "d22-0F9kilU",
+   "title": "Rick and Morty Portal Gun! | Minecraft Mod Review",
+   "channel": "BiglyShronk",
+   "views": 21887,
+   "duration": 394,
+   "chars": 5518,
+   "note": "older mod version - brewing-stand fluid path and netherite gun recipes; 1.4.10 moved all of it to the workbench"
+  },
+  {
+   "id": "_SsoOZwJ-RE",
+   "title": "Portal Gun 1.19.2 (Forge) Tutorial + Showcase",
+   "channel": "E-Tlib",
+   "views": 5222,
+   "duration": 181,
+   "chars": 2045,
+   "note": "DIFFERENT MOD: the Immersive Portal Gun Forge port (Portal-game style, depends on immersive_portals). Kept for the related-mod notes only."
+  },
+  {
+   "id": "wgByH2Bw3-Q",
+   "title": "This Portal Gun mod lets you see through portals.",
+   "channel": "Rocketstar",
+   "views": 2995,
+   "duration": 734,
+   "chars": 8506,
+   "note": "DIFFERENT MOD: Immersive Portal Gun gameplay. Kept for the related-mod notes only."
+  }
+ ],
+ "items": {
+  "ricksportalgun:portal_gun": {
+   "mentions": 19,
+   "videos": 2,
+   "first_at": 0.0264,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 4,
+   "late_cue": 0
+  },
+  "ricksportalgun:portal_fluid": {
+   "mentions": 11,
+   "videos": 2,
+   "first_at": 0.2384,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 5,
+   "late_cue": 0
+  },
+  "ricksportalgun:bootleg_portal_fluid": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.3236,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ricksportalgun:quantum_leap_elixir": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.2884,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "ricksportalgun:circuitboard": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.2924,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ricksportalgun:prime_portal_gun": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1326,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ricksportalgun:portal_gun_workbench": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1945,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "ricksportalgun:golden_portal_gun": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1372,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "_confidence": "GOOD for the mod's core loop; item stats above use ONLY the two on-target videos. This is Rick's Portal Gun (Modrinth ricks-portal-gun, jar ricksportalgun-forge-1.20.1-1.4.10, verified Forge 1.20.1 before GPU was spent - CurseForge portalgun-1.20.1-1.1.0 is an earlier build of the same mod). The showcase vUK9WtRLYeU covers the mod's current workbench-based crafting, which matches the 1.4.10 jar's recipe files exactly; d22-0F9kilU documents an older brewing-stand version and is used only for behaviour facts that survived the rework. iChun's original Portal Gun is 1.12.2-only and is already recorded as portalgun_ichun in _unavailable.json.",
+  "entry": [
+   {
+    "note": "Entry ritual: craft the Portal Gun Workbench FIRST - the mod's own crafting station, made on a vanilla crafting table. Every other recipe in the mod (guns, fluids, circuit boards, upgrades) happens inside it, so it is the unavoidable first quest.",
+    "ids": [
+     "ricksportalgun:portal_gun_workbench"
+    ],
+    "video": "vUK9WtRLYeU"
+   },
+   {
+    "note": "The taught path to the first gun: workbench, then three Circuit Boards, then the two half-fluids - Bootleg Portal Fluid and Quantum Leap Elixir - combined into Portal Fluid, then the gun itself (which also wants an end crystal). The guide's summary: you will 'need to go and get a lot of things' around the world first - blaze powder, amethyst, honey, ender pearl, an end crystal - so this is a post-Nether mid-game mod, not an early toy.",
+    "ids": [
+     "ricksportalgun:circuitboard",
+     "ricksportalgun:bootleg_portal_fluid",
+     "ricksportalgun:quantum_leap_elixir",
+     "ricksportalgun:portal_fluid",
+     "ricksportalgun:portal_gun"
+    ],
+    "video": "vUK9WtRLYeU"
+   }
+  ],
+  "order": [
+   {
+    "note": "After the first gun, guides go straight to usage, not more crafting: open the destination GUI with the keybind (default V), set or randomize coordinates, fire, walk through. Destinations can be saved per gun and upgrades are installed from the same screen.",
+    "ids": [
+     "ricksportalgun:portal_gun"
+    ],
+    "video": "vUK9WtRLYeU"
+   },
+   {
+    "note": "Refuelling is the recurring cost: the gun holds a fuel reserve and runs dry; holding Portal Fluid in the off-hand and right-clicking refills it. Portal Fluid is therefore a consumable to keep crafting, and the fuel upgrade exists for exactly this pain.",
+    "ids": [
+     "ricksportalgun:portal_fluid",
+     "ricksportalgun:upgrade_fuel"
+    ],
+    "video": "vUK9WtRLYeU"
+   },
+   {
+    "note": "The gun variants (Prime, Evil/golden, and the rest in the jar) are cosmetic gameplay-wise - same functions, different skins, pick one and customize it at the workbench.",
+    "ids": [
+     "ricksportalgun:prime_portal_gun",
+     "ricksportalgun:golden_portal_gun"
+    ],
+    "video": "d22-0F9kilU"
+   }
+  ],
+  "gates": [
+   {
+    "note": "The whole mod is one gate: everything sits behind the workbench and the Portal Fluid chain, and cross-dimension travel from the GUI trivializes distance once owned. For pack pacing, the ingredient list itself is the gate - blaze powder and an end crystal mean the Nether has been visited before anyone owns a portal gun.",
+    "ids": [
+     "ricksportalgun:portal_gun_workbench",
+     "ricksportalgun:portal_gun"
+    ],
+    "video": "vUK9WtRLYeU"
+   }
+  ],
+  "traps": [
+   {
+    "note": "Firing with NO destination locked dumps you at world spawn coordinates 0,0,0 - the reviewer does it on camera and calls it out as the first thing to warn people about. Set a destination before the first shot.",
+    "ids": [
+     "ricksportalgun:portal_gun"
+    ],
+    "video": "d22-0F9kilU"
+   },
+   {
+    "note": "The return portal deletes itself after a short window. The showcaser lingers and gets stranded somewhere remote; get back through before it closes, or carry fuel for a second shot.",
+    "ids": [
+     "ricksportalgun:portal_gun"
+    ],
+    "video": "vUK9WtRLYeU"
+   },
+   {
+    "note": "The gun sits IN the workbench while being edited - walk away and you have left your portal gun behind. Both fluids are also drinkable by accident (they stack saturation but the narrator advises against ingesting them).",
+    "ids": [
+     "ricksportalgun:portal_gun_workbench",
+     "ricksportalgun:bootleg_portal_fluid",
+     "ricksportalgun:quantum_leap_elixir"
+    ],
+    "video": "vUK9WtRLYeU"
+   }
+  ],
+  "signature": [
+   {
+    "note": "The portal gun IS the mod - the one item every video is about, taught in the first minute. Quest structure should be: workbench, boards, fluids, gun, then one 'use it' quest; the upgrades are the optional long tail.",
+    "ids": [
+     "ricksportalgun:portal_gun"
+    ],
+    "video": "vUK9WtRLYeU"
+   }
+  ],
+  "related_mod_notes": [
+   {
+    "note": "The ALTERNATIVE 'Immersive Portal Gun for Forge' (Modrinth immersive-portal-gun-for-forge, ~71K DL, hard-depends on immersive_portals) is the Portal-game-style gun: right-click blue portal, left-click orange, O to clear, see-through portals. Player-observed limits: momentum is eaten going through, portals cannot be placed diagonally, dropped items and arrows do not pass through (entities pushed in do), it is heavy on performance, and the port was a one-off commission unlikely to get fixes. If the pack wants a portal gun WITH immersive_portals synergy this is the one; for a standalone progression chain Rick's is the safer pick.",
+    "ids": [],
+    "video": "_SsoOZwJ-RE"
+   }
+  ]
+ }
+}

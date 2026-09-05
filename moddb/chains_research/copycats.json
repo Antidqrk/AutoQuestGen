@@ -1,0 +1,104 @@
+{
+ "mod": "copycats",
+ "verified_against": "copycats-3.0.8+mc.1.20.1-forge.jar",
+ "item_count_in_jar": 45,
+ "parent_mod": "create",
+ "chain": [
+  {
+   "id": "copycats:copycat_block",
+   "title": "Zinc Learns to Lie",
+   "desc": "One zinc ingot on a stonecutter becomes one Copycat Block; right-click it with any material to assign and rotate that block's appearance, and a wrench pulls the material back out."
+  },
+  {
+   "id": "copycats:copycat_board",
+   "title": "Eight Boards, One Ingot",
+   "desc": "The stonecutter splits a single zinc ingot into eight thin boards, the cheapest copycat in the set and the crafting base for boxes and catwalks."
+  },
+  {
+   "id": "copycats:copycat_box",
+   "title": "A Crate Made of Anything",
+   "desc": "Six copycat boards laid in an open ring. The finished box wears whatever material you hand it, so storage can vanish into a wall."
+  },
+  {
+   "id": "copycats:copycat_catwalk",
+   "title": "Gangway in Costume",
+   "desc": "Three copycat boards in a shallow bridge. It behaves like its non-copycat counterpart while showing the texture of any block you assign."
+  },
+  {
+   "id": "copycats:copycat_byte",
+   "title": "Cut Into Eighths",
+   "desc": "Stonecutting one zinc ingot yields eight bytes, the smallest piece in the mod; several can share one block space, each holding its own material."
+  },
+  {
+   "id": "copycats:copycat_half_panel",
+   "title": "Half a Face",
+   "desc": "Stonecut straight from zinc. Two half panels crafted side by side rebuild one of Create's own copycat panels, so the two mods feed each other."
+  },
+  {
+   "id": "copycats:copycat_layer",
+   "title": "A Coat of Paint",
+   "desc": "Eight per zinc ingot on the stonecutter, or craft two Copycat Half Layers together; the layer skims a surface without eating the block behind it."
+  },
+  {
+   "id": "copycats:copycat_slice",
+   "title": "Sixteen From One",
+   "desc": "The most generous cut in the mod: a single zinc ingot leaves the stonecutter as sixteen slices."
+  },
+  {
+   "id": "copycats:copycat_ladder",
+   "title": "Climbing the Facade",
+   "desc": "Six ladders per zinc ingot. It climbs exactly like a vanilla ladder while wearing whatever material you assign, so shafts stop looking like shafts."
+  },
+  {
+   "id": "copycats:copycat_trapdoor",
+   "title": "Four Hinges of Zinc",
+   "desc": "Four per zinc ingot on the stonecutter, and one of Create's copycat panels converts straight across into one."
+  },
+  {
+   "id": "copycats:copycat_sliding_door",
+   "title": "Doors That Slip Aside",
+   "desc": "Stonecut one per zinc ingot. It converts back and forth with the Copycat Folding Door, so you can change the motion without spending more metal."
+  },
+  {
+   "id": "copycats:copycat_iron_door",
+   "title": "Redstone Under the Mask",
+   "desc": "An iron door plus a zinc ingot, shapeless. It keeps the iron door's redstone-only opening while disguised as any block you like."
+  },
+  {
+   "id": "copycats:copycat_ghost_block",
+   "title": "Solid Only to the Eye",
+   "desc": "Stonecut one per zinc ingot. Ghost copycats have no collision with entities, so a finished wall can be walked straight through."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "copycats:copycat_cogwheel",
+   "members": [
+    "copycats:copycat_large_cogwheel",
+    "copycats:copycat_shaft",
+    "copycats:copycat_fluid_pipe",
+    "copycats:copycat_door",
+    "copycats:copycat_folding_door",
+    "copycats:copycat_iron_trapdoor"
+   ]
+  },
+  {
+   "hub": "copycats:copycat_beam",
+   "members": [
+    "copycats:copycat_slope",
+    "copycats:copycat_slope_layer",
+    "copycats:copycat_corner_slice",
+    "copycats:copycat_vertical_slice",
+    "copycats:copycat_vertical_slope",
+    "copycats:copycat_vertical_step",
+    "copycats:copycat_half_layer",
+    "copycats:copycat_stacked_half_layer",
+    "copycats:copycat_vertical_half_layer",
+    "copycats:copycat_flat_pane",
+    "copycats:copycat_pane",
+    "copycats:copycat_byte_panel"
+   ]
+  }
+ ],
+ "notes": "Verified against copycats-3.0.8+mc.1.20.1-forge.jar (Forge/NeoForge, MC 1.20.1). All 45 ids come from assets/copycats/models/item/*.json intersected with block./item. keys in assets/copycats/lang/en_us.json. PARENT ASSUMPTIONS: the chain starts after Create has given the player zinc ingots, a stonecutter, a wrench, cogwheels, large cogwheels and fluid pipes; create:copycat_panel and create:copycat_step belong to Create itself and are never quested here. Almost every copycat is a plain minecraft:stonecutting recipe from #forge:ingots/zinc, with verified yields: block 1, slope 2, trapdoor 4, ladder 6, board 8, byte 8, layer 8, pane 8, flat_pane 8, slice 16. Copycat cogwheel, large cogwheel and fluid pipe are shapeless: four of the Create original plus one zinc ingot yields four. Copycat iron door is shapeless from a vanilla iron door plus a zinc ingot. Mechanics confirmed from tooltip.copycats.characteristics.* in en_us.json: right-click with material to assign and rotate, wrench to remove material, shift-right-click empty-handed to toggle connected textures, ghost blocks have no entity collision, functional copycats have the same usage as their non-copycat counterparts, multi-state copycats allow several materials in one block space, stackable copycats enlarge when right-clicked with the same copycat. Every recipe in the jar is wrapped in forge:conditional with a copycats:feature_enabled check, so a pack that disables a feature in config removes that recipe. DROPPED by the desirability rule (present in the jar, deliberately unquested): copycat_slab, copycat_stairs, copycat_vertical_stairs, copycat_wall, copycat_fence, copycat_fence_gate, copycat_stone_button, copycat_wooden_button, copycat_stone_pressure_plate, copycat_wooden_pressure_plate, copycat_light_weighted_pressure_plate, copycat_heavy_weighted_pressure_plate. Nothing was dropped for being unverifiable."
+}

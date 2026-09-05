@@ -1,0 +1,34 @@
+{
+ "mod": "createdeco",
+ "ids_in_jar": 412,
+ "videos": [
+  {
+   "id": "d75bB6eHIcU",
+   "title": "Compact your machines with these Create Mod Building Tips!",
+   "channel": "Dejojotheawsome",
+   "views": 733360,
+   "duration": 1098,
+   "chars": 19477,
+   "src": "vetted_search"
+  }
+ ],
+ "items": {},
+ "human_notes": {
+  "order": [],
+  "gates": [],
+  "traps": [],
+  "signature": [],
+  "coverage": [
+   {
+    "ids": [],
+    "note": "NULL RESULT, recorded deliberately so this mod is not re-mined at cost. Create Deco has no usable YouTube guide source. Evidence: (1) two independent search passes with four query phrasings each returned only generic 'best decoration mods' listicles and unrelated content - the only nominally dedicated hit was a 1,896-view install video; (2) the banked guide_corpus entry for createdeco is mislabelled - its six ids are a Create steam engine guide, a train tutorial, a diamond farm build and similar, none about Create Deco; (3) THREE separate candidate videos were downloaded and put through Whisper and none yielded usable prose - loGQWP64Qlg 'Create Deco Mod 1.18.1 & How To Install' transcribed to ZERO characters, FM01STC2YJ4 to ZERO characters, and CS_2mtyUyTg to only 740 characters (below the 1500-character usability floor). Audio downloads succeeded in every case; these videos simply have no narration, only music over footage; (4) decisive test - analysing all 412 verified createdeco jar ids against every one of the 21 Create-ecosystem transcripts collected for this task, roughly 250KB of guide prose including a dedicated Create building-tips video, produced exactly 0 mentions.",
+    "video": ""
+   },
+   {
+    "ids": [],
+    "note": "WHY the null result is structural, not a search failure: Create Deco is a pure block-palette mod (andesite/brass/copper/industrial iron bars, catwalks, doors, supports, sheet metal, facades). Guide authors demonstrate these blocks visually while building and simply never say their names, and where they do the names collide with base Create vocabulary. Guide mining is the wrong instrument for this mod. Any quest content for createdeco should be generated from jar structure and recipe graph, with a builder's eye, not from teaching signal - and should not be blocked waiting for video evidence that does not exist.",
+    "video": ""
+   }
+  ]
+ }
+}

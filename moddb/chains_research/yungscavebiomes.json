@@ -1,0 +1,103 @@
+{
+  "mod": "yungscavebiomes",
+  "verified_against": "YungsCaveBiomes-1.20.1-Forge-2.0.5.jar",
+  "item_count_in_jar": 32,
+  "chain": [
+    {
+      "id": "yungscavebiomes:icicle",
+      "title": "Break Off an Icicle",
+      "desc": "Grows from the ceilings and floors of the Frosted Caves, the mod's cold cave biome - finding one means you have found the biome. Watch the ceiling while you mine: knock out the block an icicle hangs from and it drops and skewers whatever is underneath, you included."
+    },
+    {
+      "id": "yungscavebiomes:frost_lily",
+      "title": "Pick a Frost Lily",
+      "desc": "The pale flower growing on Frosted Caves ice, and the mod's one brewing ingredient. Dropped into an Awkward Potion it makes a Potion of Frost, which slows and damages whatever it hits - bring a few back, not one."
+    },
+    {
+      "id": "kill:yungscavebiomes:ice_cube",
+      "title": "Shatter an Ice Cube",
+      "desc": "A slime-like hostile that leaps at you and only spawns in the Frosted Caves. It drops nothing, so kill it because it is in your way, not for loot - the biome is worth clearing, the mob is not worth farming."
+    },
+    {
+      "id": "yungscavebiomes:rare_ice",
+      "title": "Silk-Touch the Enchanted Ice",
+      "desc": "Glowing ice blocks scattered through the Frosted Caves. Break one with a normal pickaxe and you get a burst of experience but no block; SILK TOUCH is the only way to keep it, so bring an enchanted pick if you want it for building."
+    },
+    {
+      "id": "yungscavebiomes:ancient_sand",
+      "title": "Dig Ancient Sand",
+      "desc": "The floor of the Lost Caves, the hot desert cave biome where sandstorms blow through and choke your vision. It smelts to glass and makes TNT the same way normal sand does, but the important thing is that Sand Snappers bury their loot in it."
+    },
+    {
+      "id": "yungscavebiomes:ancient_sandstone",
+      "title": "Press Ancient Sandstone",
+      "desc": "Four ancient sand for one block, the base of the whole ancient building set and the material the trim template is duplicated with. Bring back a stack of sand rather than a stack of blocks - it compresses four to one."
+    },
+    {
+      "id": "yungscavebiomes:brittle_ancient_sandstone",
+      "title": "Make Brittle Sandstone",
+      "desc": "A trap block, not decoration: it crumbles away when something stands on it. Useful for mob pits and for the floors of a build you want to look unsafe. The vanilla sandstone and red sandstone versions craft the same way."
+    },
+    {
+      "id": "yungscavebiomes:prickly_vines",
+      "title": "Shear Down Prickly Vines",
+      "desc": "Thorned vines hanging from Lost Caves ceilings that hurt anything falling or climbing through them - the death message is its own damage type. Bring SHEARS: a bare hand only sometimes drops the vine, shears or silk touch always do. Worth a stack as a replantable hazard to line a mob drop with."
+    },
+    {
+      "id": "yungscavebiomes:prickly_peach_cactus",
+      "title": "Uproot a Peach Cactus",
+      "desc": "The Lost Caves cactus. Take the whole block home and replant it somewhere safe - it regrows fruit on its own and bonemeal speeds it up, so one plant is a permanent supply. Poking a fruitless one just hurts you."
+    },
+    {
+      "id": "yungscavebiomes:prickly_peach",
+      "title": "Pluck a Prickly Peach",
+      "desc": "RIGHT-CLICK a cactus that is showing fruit and the peach pops off - mining the cactus does not give you one. It is food, and much more importantly it is the ONLY thing a Sand Snapper will come to, so keep several in hand."
+    },
+    {
+      "id": "yungscavebiomes:hourglass_pottery_sherd",
+      "title": "Brush Out an Hourglass Sherd",
+      "desc": "Hold a Prickly Peach and a shy Sand Snapper will come to eat instead of fleeing; a fed one buries loot in the ancient sand as Suspicious Ancient Sand, and a Brush gets it out. This sherd is one of six equally likely results, and you need four sherds for one decorated pot. DO NOT KILL THE SNAPPERS - they drop nothing dead and this is the only way to get any of it."
+    },
+    {
+      "id": "yungscavebiomes:clock_pottery_sherd",
+      "title": "Brush Out the Clock Sherd",
+      "desc": "The mod's second decorated pot sherd, from the same buried-loot table as the hourglass. Same one-in-six odds, so expect to feed a snapper and sweep the sand several times over before both sherds turn up."
+    },
+    {
+      "id": "yungscavebiomes:ancient_armor_trim_smithing_template",
+      "title": "Unearth the Ancient Trim",
+      "desc": "The prize at the end of the Sand Snapper loop, and the only armour trim pattern this mod adds. It is one of six equally weighted results from brushing buried sand, so it takes patience - once you have one, duplicate it with seven diamonds and an Ancient Sandstone rather than digging for a second."
+    }
+  ],
+  "collections": [
+    {
+      "name": "Ancient Sandstone Building Set",
+      "desc": "Cut, chiselled, smooth, layered and the usual slabs, stairs and wall - all from Ancient Sandstone, all by crafting table or stonecutter.",
+      "hub": "yungscavebiomes:ancient_sandstone",
+      "members": [
+        "yungscavebiomes:ancient_sandstone_slab",
+        "yungscavebiomes:ancient_sandstone_stairs",
+        "yungscavebiomes:ancient_sandstone_wall",
+        "yungscavebiomes:cut_ancient_sandstone",
+        "yungscavebiomes:cut_ancient_sandstone_slab",
+        "yungscavebiomes:chiseled_ancient_sandstone",
+        "yungscavebiomes:smooth_ancient_sandstone",
+        "yungscavebiomes:smooth_ancient_sandstone_slab",
+        "yungscavebiomes:smooth_ancient_sandstone_stairs",
+        "yungscavebiomes:layered_ancient_sandstone"
+      ]
+    },
+    {
+      "name": "Vanilla Sandstone Retrofits",
+      "desc": "Layered and brittle versions of ordinary and red sandstone - craftable with no trip underground at all.",
+      "hub": "yungscavebiomes:layered_sandstone",
+      "members": [
+        "yungscavebiomes:layered_red_sandstone",
+        "yungscavebiomes:brittle_sandstone",
+        "yungscavebiomes:brittle_red_sandstone",
+        "yungscavebiomes:brittle_ancient_sandstone"
+      ]
+    }
+  ],
+  "notes": "ORDER COMES FROM THE AUTHOR'S OWN ADVANCEMENT TREE. data/yungscavebiomes/advancements holds 9 authored files (the other 33 are auto-generated recipe unlocks under advancements/recipes/): root -> frosted_caves ('Cool, Cool Cave') -> {mine_enchanted_ice 'Breaking the Ice', frost_potion 'Brain Freeze'}, and root -> lost_caves ('A Howling Discovery') -> {poke_the_cactus, the_snack_that_bites_back 'Eat a Prickly Peach', sandstorm_end 'Survive a Sandstorm'}. The chain runs the frosted branch then the lost branch so a player is not bounced between two biomes. THE SAND SNAPPER IS PASSIVE - NEVER EMIT kill:yungscavebiomes:sand_snapper. It spawns in the AMBIENT group in lost_caves.json (weight 50, 1-2), extends PathfinderMob not Monster, and its goal list decompiles as RunFromPlayerGoal, SnapperTemptGoal (tempt item PRICKLY_PEACH_ITEM), EatPeachGoal, EatPricklyPeachCactusGoal, BuryLootGoal and GiftLootGoal. BuryLootGoal converts ANCIENT_SAND into SUSPICIOUS_ANCIENT_SAND with a SuspiciousAncientSandBlockEntity; GiftLootGoal rolls LootTableModule.SAND_SNAPPER_LOOT directly. That table, data/yungscavebiomes/loot_tables/archaeology/sand_snapper_loot.json, is type minecraft:archaeology with six equal-weight entries: hourglass_pottery_sherd, clock_pottery_sherd, ancient_armor_trim_smithing_template, minecraft:brick, minecraft:emerald, minecraft:stick. It is the ONLY source of all three mod items - there is no recipe for the sherds and the template's only recipe is the vanilla-style duplication (7 diamonds + 1 ancient_sandstone around an existing template). IDS DELIBERATELY EXCLUDED, ALL VERIFIED UNOBTAINABLE OR DEAD IN 2.0.5: (1) yungscavebiomes:marble and yungscavebiomes:travertine have blockstates and item models but NO loot table and NO recipe, and the Marble Caves biome they belong to DOES NOT EXIST in this build - there is no data/yungscavebiomes/worldgen/biome/marble_caves.json, the yungscavebiomes:cave_biomes tag lists only frosted_caves and lost_caves, and the constant pool of BiomeModule.class contains exactly the two strings 'frosted_caves' and 'lost_caves'. The biome.yungscavebiomes.marble_caves lang key is vestigial. A quest for marble would be unobtainable. (2) yungscavebiomes:ice_sheet ('Creeping Ice') also has no loot table, so it drops nothing when broken; its mechanic is worth knowing though - data/yungscavebiomes/tags/blocks/creeping_ice_glows_on.json makes it light up where it lies over any ore tag, which turns Frosted Caves ice into an ore finder. (3) yungscavebiomes:suspicious_ancient_sand's loot table has NO pools at all, so it is brush-only and never drops as an item. (4) ice_cube_spawn_egg and sand_snapper_spawn_egg are creative-only. ENCHANTED ICE IS SILK-TOUCH GATED: RareIceBlock.m_213646_ checks Enchantments SILK_TOUCH on the tool and otherwise calls popExperience, so without silk touch you get XP and no block - the mine_enchanted_ice advancement fires either way. FROST POTION BREWING, read from PotionModule and the JEI plugin's recipe ids: frost_potion_from_frost_lily (awkward base), frost_potion_from_fire_resistance_potion and fire_resistance_potion_from_frost_potion (frost lily flips the two), strong_frost_potion_from_frost_potion, plus splash and lingering variants. The potions are minecraft:potion stacks with NBT, NOT separate item ids - do not write a yungscavebiomes potion id. THE MOD ADDS NO STRUCTURES: there is no data/yungscavebiomes/worldgen/structure/ directory, only 16 configured and 20 placed features, so no structure: id is valid here. It DOES add both biomes to minecraft:has_structure/mineshaft and /stronghold, so vanilla structures still generate in them. TWO MOB EFFECTS with no item ids: yungscavebiomes:frost (slow + damage over time) and yungscavebiomes:buffeted (slow + narrowed field of view, applied by the Lost Caves sandstorm). SANDSTORMS are a timed weather event inside the Lost Caves with its own /sandstorm start|stop command and an authored advancement, but there is no id form for surviving one, so it lives in prose. item_count_in_jar 32 = the 32 files in assets/yungscavebiomes/models/item/. Requires yungsapi and TerraBlender (TerraBlenderModuleForge.class). Appears in 1 of the 6 measured packs. VERIFIER PASS: all 13 chain ids and all 14 collection ids re-read against YungsCaveBiomes-1.20.1-Forge-2.0.5.jar and all present. ONE ID DESERVES A FOOTNOTE: yungscavebiomes:ancient_armor_trim_smithing_template has NO item.yungscavebiomes.* lang key - the only lang entry for it is trim_pattern.yungscavebiomes.ancient = 'Ancient Armor Trim'. It is nonetheless a real registered item: assets/yungscavebiomes/models/item/ancient_armor_trim_smithing_template.json exists, it is one of the six entries in loot_tables/archaeology/sand_snapper_loot.json, and data/yungscavebiomes/recipes/ancient_armor_trim_smithing_template.json is a shaped recipe of 7 diamonds + 1 ancient_sandstone + 1 template -> 2 templates. A verifier that only reads lang keys will wrongly flag this id as fake; it is not. Three changes were made: 'Befriend a Sand Snapper' was retitled 'Brush Out an Hourglass Sherd' because the task id is the sherd and the verb has to name what the player actually ends up holding, with the snapper loop moved into the desc; 'Cut Down Prickly Vines' became 'Shear Down Prickly Vines' after reading loot_tables/blocks/prickly_vines.json, which drops the vine outright only for shears or silk touch and otherwise falls through to a 0.33/0.55/0.77/1.0 chance table; and the collections were rewritten into the {hub, members} shape the loader reads, with brittle_ancient_sandstone added to the retrofit wheel to bring it to the 4-member minimum. Both the mob and the falling-icicle projectile are registered entities (entity.yungscavebiomes.ice_cube, .sand_snapper, .icicle) but data/yungscavebiomes/loot_tables/entities/ does not exist at all, which independently confirms that NOTHING in this mod drops from a kill."
+}

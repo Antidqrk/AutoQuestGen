@@ -1,0 +1,128 @@
+{
+  "mod": "bloodmagic",
+  "verified_against": "BloodMagic-1.18-1.20.1-3.3.8-50.jar",
+  "item_count_in_jar": 513,
+  "chain": [
+    {
+      "id": "bloodmagic:altar",
+      "title": "Blood Altar",
+      "desc": "Craft it from 5 stone, a furnace and 3 gold ingots; it stores Life Essence (LP) and transmutes items dropped into it, and everything else in the mod hangs off it."
+    },
+    {
+      "id": "bloodmagic:sacrificialdagger",
+      "title": "Sacrificial Knife",
+      "desc": "The starter LP source: right-click air near the altar to trade one heart of health for 200 LP."
+    },
+    {
+      "id": "bloodmagic:weakbloodorb",
+      "title": "Weak Blood Orb",
+      "desc": "Transmute a diamond in a Tier 1 altar for 2,000 LP; binding it opens your personal Soul Network, capped at 5,000 LP."
+    },
+    {
+      "id": "bloodmagic:blankslate",
+      "title": "Blank Slate",
+      "desc": "Any stone transmuted in the altar for 1,000 LP - the base crafting component for sigils, runes and most machines."
+    },
+    {
+      "id": "bloodmagic:alchemytable",
+      "title": "Alchemy Table",
+      "desc": "Built from stone, planks, iron, gold and a Blank Slate; it spends LP from the Blood Orb slotted into it to make Arcane Ashes, sigil reagents and anointments."
+    },
+    {
+      "id": "bloodmagic:divinationsigil",
+      "title": "Divination Sigil",
+      "desc": "Draw an Alchemy Array with Arcane Ashes, feed it redstone then a Blank Slate; it reads your Soul Network LP and an altar's tier, fill and capacity."
+    },
+    {
+      "id": "bloodmagic:soulsnare",
+      "title": "Soul Snare",
+      "desc": "String transmuted in the altar for 500 LP; thrown at a hostile mob it marks the mob with white particles so that killing it drops Demon Will."
+    },
+    {
+      "id": "bloodmagic:soulforge",
+      "title": "Hellfire Forge",
+      "desc": "Crafted from stone, iron and a Blank Slate; it burns Demon Will instead of LP and is the only way to make Tartaric Gems, Sentient tools and explosive charges."
+    },
+    {
+      "id": "bloodmagic:soulgempetty",
+      "title": "Petty Tartaric Gem",
+      "desc": "First Hellfire Forge recipe; stores 64 Demon Will and vacuums up loose Will dropped on the ground."
+    },
+    {
+      "id": "bloodmagic:soulsword",
+      "title": "Sentient Sword",
+      "desc": "Forged with Demon Will, it harvests Will from every hostile kill and scales its damage with the Will you are carrying, replacing Soul Snares entirely."
+    },
+    {
+      "id": "bloodmagic:blankrune",
+      "title": "Blank Rune",
+      "desc": "Stone, a Blank Slate and a bound Weak Blood Orb; ring the altar with 8 of them to reach Tier 2, and swap in speciality runes later for capacity, speed and sacrifice bonuses."
+    },
+    {
+      "id": "bloodmagic:apprenticebloodorb",
+      "title": "Apprentice Blood Orb",
+      "desc": "A redstone block transmuted for 5,000 LP in a Tier 2 altar; raises the Soul Network cap to 25,000 LP and unlocks Tier 2 recipes."
+    },
+    {
+      "id": "bloodmagic:daggerofsacrifice",
+      "title": "Dagger of Sacrifice",
+      "desc": "An iron sword transmuted for 3,000 LP; it instantly kills any mob within 2 blocks of the altar and dumps a large LP payout in, ending reliance on your own health."
+    },
+    {
+      "id": "bloodmagic:magicianbloodorb",
+      "title": "Magician's Blood Orb",
+      "desc": "A gold block transmuted for 25,000 LP in a Tier 3 altar; 150,000 LP capacity and the gate for Binding Reagent, Master Ritual Stones and the ARC."
+    },
+    {
+      "id": "bloodmagic:masterritualstone",
+      "title": "Master Ritual Stone",
+      "desc": "Obsidian, Ritual Stones and a Magician's Blood Orb; it sits at the centre of every ritual, laid out with a Ritual Diviner and lit with a Weak Activation Crystal."
+    },
+    {
+      "id": "bloodmagic:livingplate",
+      "title": "Living Chestplate",
+      "desc": "Feed an Arcane Ash array Binding Reagent then an iron chestplate; the resulting armour earns Upgrade Points from how you play, up to a 100 point budget."
+    },
+    {
+      "id": "dim:bloodmagic:dungeon",
+      "title": "Demon Realm",
+      "desc": "Run the Edge of the Hidden Realm ritual to raise an Inversion Pillar into the dungeon dimension's Antechamber; the Pathway to the Endless Realm ritual reaches the deeper, more dangerous floors."
+    },
+    {
+      "id": "bloodmagic:weak_tau",
+      "title": "Tau Fruit",
+      "desc": "Looted from Demon Realm dungeon chests and then farmable; if a mob is standing on the plant when it matures it drains that mob and becomes Saturated Tau instead."
+    },
+    {
+      "id": "bloodmagic:alchemicalreactionchamber",
+      "title": "Alchemical Reaction Chamber",
+      "desc": "Stone, Imbued Slates, an iron block, a furnace and a Magician's Blood Orb; it triples ores, reverts crafted items and is the only machine that produces Weak Blood Shards."
+    },
+    {
+      "id": "bloodmagic:weakbloodshard",
+      "title": "Weak Blood Shard",
+      "desc": "Process Saturated Tau in the ARC with a Sanguine Reverter tool; it is the bottleneck resource for the Tier 4 altar, the Master Blood Orb and Greater Tartaric Gems."
+    },
+    {
+      "id": "bloodmagic:masterbloodorb",
+      "title": "Master Blood Orb",
+      "desc": "A Weak Blood Shard transmuted for 40,000 LP in a Tier 4 altar, giving a 1,000,000 LP Soul Network."
+    },
+    {
+      "id": "bloodmagic:ritualdivinerdusk",
+      "title": "Ritual Diviner [Dusk]",
+      "desc": "Upgrade the basic Diviner with Demonic Slates and two Dusk Inscription Tools (2,000 LP each at a Tier 4 altar) to build the advanced rituals - Well of Suffering, Living Evolution, the meteor ritual and the deep-realm gateway."
+    },
+    {
+      "id": "bloodmagic:archmagebloodorb",
+      "title": "Archmage's Blood Orb",
+      "desc": "A Hellforged Block transmuted for 80,000 LP in a Tier 4 altar; the block is nine Hellforged Ingots smelted from Demonite ore mined in the Mines, reached with the uncraftable Foreman's Key."
+    },
+    {
+      "id": "bloodmagic:hellforgedparts",
+      "title": "Intricate Hellforged Parts",
+      "desc": "Rare uncraftable loot from deep Demon Realm dungeons; combined with netherite scrap it converts each Blood Rune into its Reinforced version, doubling that rune's effect."
+    }
+  ],
+  "notes": "All 24 ids were checked against the item ids in BloodMagic-1.18-1.20.1-3.3.8-50.jar (union of assets/bloodmagic/models/item/*.json and the item./block. lang keys). Ordering follows the mod's own Patchouli entry 'Tiers & Getting Started' plus the recipe data (altar recipes carry an 'upgradeLevel' field that is tier-1, e.g. weakbloodorb=0 means Tier 1 altar; alchemytable/array recipes carry the required Blood Orb tier). Notable items deliberately left out to stay inside 24 entries, all of which do exist in the jar if the integrator wants extra steps: bloodmagic:arcaneashes (Alchemy Table, needed before any array), bloodmagic:reinforcedslate and bloodmagic:infusedslate (Tier 2 slate rungs), bloodmagic:incensealtar (self-sacrifice multiplier), bloodmagic:ritualdiviner (the pre-Dusk diviner), bloodmagic:activationcrystalweak, bloodmagic:demoncrystallizer / bloodmagic:demoncrucible and the aspected Will crystals (vengefulcrystal, corrosivecrystal, steadfastcrystal, destructivecrystal), bloodmagic:soulgemcommon / soulgemgreater, bloodmagic:simplekey and bloodmagic:mineentrancekey, bloodmagic:dungeon_ore, bloodmagic:ingot_hellforged, bloodmagic:dungeon_metal, bloodmagic:teleposer. Nothing had to be dropped for being unverifiable. The Demon Realm dimension id is bloodmagic:dungeon (data/bloodmagic/dimension/dungeon.json) - the same dimension serves both the shallow Antechamber and the deep realm, so there is only one dim: step. Blood Magic registers no entities of its own (no entity.bloodmagic.* lang keys), so there are no kill: steps; the Sentient Sword and Soul Snare steps stand in for the Demon Will farming loop. Warning for quest checks: many ids in the jar's model list are render-only variants and are NOT obtainable items - anything ending in _activated, _deactivated, _pulling_N, or the per-aspect suffixes _corrosive/_destructive/_steadfast/_vengeful on soulsword/soulaxe/soulgem*; the aspect of a Tartaric Gem or Sentient tool is NBT, not a separate item id."
+}

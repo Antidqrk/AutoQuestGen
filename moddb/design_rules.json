@@ -1,0 +1,255 @@
+{
+  "_about": "Machine-readable quest-book design rules reverse-engineered from measured data, not opinion. Two evidence tiers: (A) 568 chapter shape records harvested from real published 1.20.x modpack quest books (shapes.json) - answers size/depth/width/roots; (B) 1 pack (Prominence II Hasturian Era, 30 non-empty chapters / 1754 quests) parsed quest-by-quest from SNBT - answers openers, branching, wheels, cross-chapter gating and reward scaling, because those need per-quest data the harvester never stored. Every field carries a _src tag naming which tier it came from. Fields whose evidence is single-pack are marked confidence low/medium and MUST NOT be treated as cross-pack norms.",
+
+  "chapter_size": {
+    "min": 8,
+    "typical": 26,
+    "max": 60,
+    "_src": "A: 568 chapters, shapes.json",
+    "distribution": {
+      "p5": 6, "p10": 9, "p25": 14, "p50": 26, "p75": 51, "p90": 84, "p95": 118, "max_observed": 248,
+      "mean": 39.0
+    },
+    "histogram_share": {
+      "1-5": 0.025, "6-10": 0.129, "11-15": 0.130, "16-20": 0.102,
+      "21-30": 0.185, "31-50": 0.178, "51-80": 0.141, "80+": 0.111
+    },
+    "exceedance": {
+      "gt_20": 0.614, "gt_30": 0.430, "gt_40": 0.335, "gt_50": 0.252, "gt_60": 0.192, "gt_80": 0.111, "gt_100": 0.070
+    },
+    "by_mod_item_count": [
+      {"items_lt": 20, "quests": 13, "_n_mods": 65},
+      {"items_lt": 40, "quests": 24, "_n_mods": 40},
+      {"items_lt": 80, "quests": 40, "_n_mods": 27},
+      {"items_lt": 150, "quests": 54, "_n_mods": 30},
+      {"items_lt": 999999, "quests": 40, "_n_mods": 27}
+    ],
+    "by_mod_item_count_note": "Per-mod median chapter size vs the number of DISTINCT item ids that mod's chapters reference across all harvested packs (counts.json). Monotone rise up to ~150 items, then it FLATTENS and falls back to ~35-40. Pearson r = 0.343 raw, 0.485 against log10(items). The plateau is the real rule: past ~120-150 quest-worthy items real packs SPLIT the mod into several chapters instead of growing one chapter past ~55 quests.",
+    "rules": [
+      "Target 20-35 quests for a normal mod chapter; that band is the median and 48.6% of all real chapters sit in 8-30.",
+      "Never ship a chapter under 6 quests unless it is a deliberate stub - only 2.5% of real chapters are 1-5 quests.",
+      "Treat 60 quests as a soft ceiling (81% of real chapters are at or below it). Above ~55, split by theme/tier into a second chapter rather than extending.",
+      "Chapter size scales with the mod's item surface roughly as quests ~ 13 * log-ish of item count, saturating near 55."
+    ]
+  },
+
+  "shape": {
+    "depth_typical": 5,
+    "width_typical": 10,
+    "roots_per_chapter": 1,
+    "optional_fraction": 0.03,
+    "branch_len_typical": 1,
+    "_src": "depth/width/roots/optional_fraction from A (568 chapters); branch_len_typical and all branch stats from B (30 chapters, 1754 quests)",
+    "depth": {"p25": 2, "p50": 4, "p75": 7, "p90": 12, "max_observed": 44,
+      "_note": "median over the 509 chapters that actually have dependencies (max_depth>=1)"},
+    "width": {"p25": 6, "p50": 11, "p75": 22, "p90": 42, "max_observed": 247},
+    "depth_over_width_ratio_median": 0.36,
+    "depth_width_by_chapter_size": [
+      {"size": "1-8",    "depth": 3, "width": 3,  "roots": 1, "_n": 46},
+      {"size": "9-15",   "depth": 3, "width": 5,  "roots": 1, "_n": 91},
+      {"size": "16-25",  "depth": 4, "width": 8,  "roots": 2, "_n": 102},
+      {"size": "26-40",  "depth": 4, "width": 12, "roots": 3, "_n": 94},
+      {"size": "41-80",  "depth": 5, "width": 20, "roots": 4, "_n": 116},
+      {"size": "81+",    "depth": 7, "width": 39, "roots": 7, "_n": 60}
+    ],
+    "roots": {
+      "exactly_1": 0.403, "le_2": 0.484, "le_3": 0.549,
+      "median": 3, "mean": 14.0,
+      "_note": "Bimodal, not normal. 40% of real chapters have exactly ONE entry point; a separate 10.4% are fully FLAT grids (max_depth==0, every quest is a root - checklist/collection chapters with no progression at all). Generators should pick 1 root for a progression chapter, or go fully flat for a collection chapter, and avoid the incoherent middle."
+    },
+    "flat_chapter_fraction": 0.104,
+    "optional_flag": {
+      "fraction_of_quests": 0.020,
+      "chapters_with_zero_optional": 0.820,
+      "_src_b_crosscheck": 0.027,
+      "_note": "The explicit FTBQ optional:true flag is RARE. 82% of chapters never use it."
+    },
+    "off_critical_path_fraction": 0.60,
+    "off_critical_path_note": "This is the honest answer to 'how much is side content'. Structurally (B, 30 chapters): only 40% of a chapter's quests are ancestors of its deepest quest (median 0.401, p25 0.284, p75 0.601). The other ~60% are leaves/branches that nothing depends on - they are side content in practice even though only 2-3% carry the optional flag. 53% of all quests are leaves (nothing depends on them).",
+    "spine_fraction_of_chapter": {"median": 0.149, "mean": 0.282,
+      "_note": "The single longest path is only ~15% of a chapter's quests. A chapter is NOT one long spine - it is a short trunk with heavy foliage."},
+    "in_degree": {
+      "one_parent": 0.927, "gt_one_parent": 0.051, "no_parent": 0.022, "max_observed": 63,
+      "_note": "Convergent AND-gates (a quest requiring 2+ prerequisites) are used sparingly: ~5% of quests."
+    },
+    "rules": [
+      "One root per progression chapter. 40% of real chapters have exactly one; 55% have <=3.",
+      "Depth grows only logarithmically with size: 15 quests -> depth 3, 25 -> 4, 40 -> 4, 80 -> 5, 150 -> 7. Do NOT build a 30-quest chapter as a 30-deep chain.",
+      "Width grows roughly linearly with size (width ~ 0.25-0.5 * quest count). Median depth/width ratio is 0.36, i.e. chapters are ~3x wider than deep.",
+      "Keep ~5% of edges as convergent AND-gates and the rest single-parent.",
+      "Expect and design for ~60% of quests to be off the critical path; do not try to make every quest a prerequisite for something."
+    ]
+  },
+
+  "openers": {
+    "rules": [
+      "Chapter 1 quest is USUALLY NOT a gather. In the fully-parsed pack, the single most common opener is a free 'checkmark' quest (an intro/read-me/acknowledge node that costs nothing): 12/30 by board position, 11/23 by the chapter's own autofocus_id.",
+      "Second most common is a cheap single-item task: 10/30. It is a MOD item, not a vanilla one - only 2 of 30 opener task items were minecraft: namespaced. There is no 'craft the guide book' convention in this data.",
+      "For dimension/exploration chapters the opener is a dimension-entry task: 4/30.",
+      "Openers are single-task: median 1 task.",
+      "The opener carries prose: 18/30 openers have a description, versus 39.7% of quests overall.",
+      "Chapters declare their intended entry point explicitly: 23/30 chapters set autofocus_id, and 13 of those 23 point at an actual root.",
+      "The LAST quest (deepest node) is almost always an item craft: 23/30 finale primary tasks are item tasks; the rest are checkmark (6), kill (3), advancement (2), structure/custom/observation (1 each). Finales are also single-task (median 1).",
+      "Reward KIND escalates at the finale: xp_levels appears in 10 of 36 finale reward entries versus 13.9% of reward entries overall (small n=36, treat as directional)."
+    ],
+    "typical_first_quest_kinds": ["checkmark", "item", "dimension", "advancement"],
+    "first_quest_kind_shares": {"checkmark": 0.40, "item": 0.33, "dimension": 0.13, "advancement": 0.07, "stat": 0.03, "kill": 0.03},
+    "last_quest_kind_shares": {"item": 0.77, "checkmark": 0.20, "kill": 0.10, "advancement": 0.07},
+    "_src": "B only - 30 chapters, 1 pack. shapes.json never stored per-quest ordering, so this could NOT be measured cross-pack.",
+    "_confidence": "low-medium (single pack, n=30 openers)"
+  },
+
+  "chapter_gating": {
+    "fraction_gated_on_previous": 0.17,
+    "rules": [
+      "Chapters are overwhelmingly INDEPENDENTLY unlocked. 23 of 30 chapters (77%) have no external dependency whatsoever. Only 5/30 (17%) have a root gated on a quest in another chapter.",
+      "Cross-chapter dependency edges are 14 out of 1955 total dependency edges = 0.7%. Chapter-to-chapter gating via the dependency graph is the exception, not the mechanism.",
+      "When a cross-chapter edge IS used it does NOT point at the previous chapter's final quest: only 21% of cross edges target a terminal quest, 7% target a root, and the median target sits at relative depth 0.33 of its source chapter - i.e. packs gate on an EARLY-MID milestone of the other chapter, so the player is never blocked behind a full completion.",
+      "The real ordering mechanism is presentational, not structural: thematic chapter GROUPS plus order_index. The reference pack uses 7 groups (Tutorials, Campaign, Exploration, Combat & Gear, Magic, Tech, and a capstone group) with 3-8 chapters each.",
+      "The pack-level progression_mode is 'flexible', which lets a player make progress on a quest before its dependencies are complete. Combined with the near-absence of cross-chapter edges, the design intent is clearly 'open the whole book, let the player choose', not 'unlock chapter B by finishing chapter A'.",
+      "hide_quest_until_deps_complete is set on only 5/30 chapters - visible-but-locked is the default, so the player can see what is ahead."
+    ],
+    "group_layout_observed": {
+      "groups": 7,
+      "chapters_per_group": {"min": 1, "median": 4, "max": 8},
+      "group_themes": ["tutorial/onboarding", "story/campaign", "exploration/dimensions", "combat & gear", "magic", "tech", "endgame capstone"]
+    },
+    "_src": "B only - cross-chapter edges require resolving quest ids across files, which shapes.json does not contain. NOT measurable from the harvested cross-pack data.",
+    "_confidence": "low-medium (single pack)"
+  },
+
+  "wheels": {
+    "when": "Use a hub-and-satellite wheel when a set of items are siblings with no ordering between them - a variant/tier set (all the wands, all the backpack tiers, all the trophies), a collection checklist, or the 'pick your flavour' fan-out right after a gateway craft. 47 pure collection wheels (a hub whose children are ALL leaves) exist in the 1754-quest reference, i.e. roughly 1.5 per chapter.",
+    "typical_members": 6,
+    "max_per_chapter": 6,
+    "_detail": {
+      "hub_definition": "quest with >=4 direct dependents",
+      "hubs_share_of_quests": {"ge_3_children": 0.111, "ge_4": 0.073, "ge_5": 0.054, "ge_6": 0.040, "ge_8": 0.022, "ge_10": 0.018},
+      "wheel_size": {"p50": 6, "p75": 9, "p90": 16, "max_observed": 35},
+      "wheels_per_chapter": {"p50": 3, "p75": 6, "max_observed": 14},
+      "out_degree_overall": {"median": 0, "mean": 1.11, "share_zero_children": 0.566, "share_one_child": 0.253}
+    },
+    "rules": [
+      "Cap a wheel at ~9 satellites (p75); 16+ is p90 territory and reads as a chore list.",
+      "Aim for ~3 wheels in a normal chapter, up to 6 in a large one.",
+      "More than half of all quests (56.6%) are terminal - a wheel's satellites should be leaves, not chains."
+    ],
+    "_src": "B only (needs per-quest edges).",
+    "_confidence": "low-medium (single pack)"
+  },
+
+  "task_mix": {
+    "item": 0.85,
+    "kill": 0.031,
+    "advancement": 0.007,
+    "dimension": 0.008,
+    "checkmark": 0.053,
+    "_other": {"structure": 0.024, "biome": 0.010, "custom": 0.007, "stat": 0.006, "observation": 0.002},
+    "_src": "B, per-TASK over 2455 tasks in 1754 quests. Full type coverage.",
+    "_crosspack_validation": {
+      "note": "The harvested cross-pack task_kinds.json only ever recorded item/kill/dimension (the harvester's classifier ignores checkmark/advancement/structure/biome/stat), so it cannot give a full mix. But restricted to those three types the two sources agree closely, which is why the single-pack full mix above is treated as representative.",
+      "crosspack_49053_tasks_250_mods": {"item": 0.9607, "kill": 0.0326, "dimension": 0.0067},
+      "reference_pack_same_three_types": {"item": 0.9565, "kill": 0.0347, "dimension": 0.0087}
+    },
+    "per_quest_primary_type": {
+      "item": 0.808, "checkmark": 0.071, "kill": 0.037, "structure": 0.034, "biome": 0.013,
+      "advancement": 0.010, "custom": 0.009, "stat": 0.008, "dimension": 0.007, "observation": 0.002
+    },
+    "tasks_per_quest": {"median": 1, "mean": 1.40, "share_multi_task": 0.12, "max_observed": 58},
+    "item_task_counts": {
+      "share_count_1": 0.913,
+      "common_nonunit_counts": [16, 2, 4, 5, 6, 8, 32, 3, 64],
+      "_note": "Over 90% of item tasks ask for exactly ONE of the item. Bulk quantities (16/32/64) are the rare exception, not the norm."
+    },
+    "rules": [
+      "~85% of tasks are item tasks. Anything else is seasoning.",
+      "Ask for 1 of the item unless the item is genuinely a bulk resource.",
+      "One task per quest (88% of quests are single-task).",
+      "Reserve checkmark for intro/lore/acknowledge nodes - it is the 2nd most common type (5.3%) and the most common chapter opener.",
+      "kill+structure+biome+dimension together are only ~7% of tasks; use them to mark exploration beats, not as filler."
+    ]
+  },
+
+  "rewards": {
+    "item": 0.54,
+    "xp": 0.31,
+    "table": 0.065,
+    "_full_crosspack_mix": {
+      "item": 0.5442, "xp": 0.3060, "xp_levels": 0.0751, "random": 0.0396, "loot": 0.0171,
+      "choice": 0.0081, "custom": 0.0038, "command": 0.0014, "advancement": 0.0004,
+      "_src": "23600 reward entries across 189 mods, rewards.json (cross-pack, tier A)",
+      "_table_definition": "table = random + loot + choice + all_table = 0.065"
+    },
+    "_reference_pack_mix": {
+      "xp": 0.5118, "item": 0.3227, "xp_levels": 0.1389, "custom": 0.0218, "choice": 0.0024,
+      "_note": "The reference pack is XP-heavy and loot-table-free, unlike the cross-pack average. Cross-pack numbers above are the ones to follow; this row shows the spread between packs is large."
+    },
+    "per_quest": {
+      "quests_with_no_reward": 0.105,
+      "rewards_per_quest": {"median": 1, "mean": 1.20, "max_observed": 5},
+      "share_of_quests_containing": {"xp": 0.614, "item": 0.281, "xp_levels": 0.167, "custom": 0.025},
+      "_src": "B"
+    },
+    "scaling_rule": "Reward MAGNITUDE does not scale with depth; reward KIND does. Measured over 1754 quests: xp payout is flat at a median of ~100 across every relative-depth band (0.0-0.2:100, 0.2-0.4:100, 0.4-0.6:50, 0.6-0.8:100, 0.8-1.0:100) and flat across absolute tiers 0-11 (tier medians 40,100,100,50,50,100,40,100,100,65,80,100). Rewards-per-quest is flat at 1.1-1.3. Median item-reward stack size is flat at 2-4. What rises monotonically with depth is the PROBABILITY of an xp_levels reward: 0.081 -> 0.117 -> 0.124 -> 0.181 -> 0.307 across the five relative-depth bands (a 3.8x rise). So: keep xp constant, keep stack sizes small, and escalate by switching deeper quests from raw xp to xp_levels / loot tables / choice rewards, and by making the reward ITEM itself a higher tier of the chapter's own material chain.",
+    "rules": [
+      "Give ~90% of quests a reward; 10.5% having none is normal and acceptable for pure-lore nodes.",
+      "One reward entry per quest (median 1, mean 1.2).",
+      "Cross-pack default split: roughly half the reward entries are items, a third is xp, and ~6.5% are loot/random/choice tables.",
+      "Do not inflate xp with depth. Escalate the reward TYPE instead.",
+      "Reserve loot/random/choice tables for chapter finales and wheel hubs - they are only 6.5% of all reward entries."
+    ]
+  },
+
+  "presentation": {
+    "_src": "B (30 chapters, 1754 quests) unless noted",
+    "quests_with_title": 0.411,
+    "quests_with_description": 0.397,
+    "quests_with_subtitle": 0.595,
+    "quests_with_explicit_icon": 0.195,
+    "_crosspack_description_rate": {
+      "median_share_of_quests_with_description": 0.097,
+      "mean": 0.363,
+      "chapters_where_every_quest_has_a_description": 0.201,
+      "_src": "A, 568 chapters",
+      "_note": "Bimodal: most chapters barely write prose (median 10% of quests), but 20% of chapters write it for everything. Pick a lane per chapter rather than sprinkling."
+    },
+    "quest_shape_usage": {
+      "default": 0.837, "diamond": 0.044, "hexagon": 0.039, "pentagon": 0.021, "circle": 0.016,
+      "none": 0.014, "octagon": 0.009, "square": 0.009, "heart": 0.004, "gear": 0.004, "rsquare": 0.003,
+      "_note": "Shape is used as emphasis on ~16% of quests - milestones and finales - not as a taxonomy."
+    },
+    "chapters_with_icon": 0.90,
+    "chapter_icon_namespace_matches_chapter_mod": 0.634,
+    "_chapter_icon_src": "A, 568 chapters (85.7% of chapters set an explicit icon)",
+    "chapters_with_banner_images": 0.633,
+    "board_geometry": {
+      "grid_scale": 0.5,
+      "x_span_median": 16.0, "x_span_max": 36.5,
+      "y_span_median": 19.6, "y_span_max": 64.5,
+      "most_common_column_step": 0.5,
+      "_note": "Quests sit on a 0.5 grid; chapters are wider than one screen and are meant to be panned."
+    }
+  },
+
+  "item_ordering": {
+    "_src": "A, gating.json - 20186 (earlier,later) item-pair observations over 181 mods, 8880 distinct ordered pairs",
+    "pairs_confirmed_by_2plus_packs": 0.718,
+    "pairs_confirmed_by_3plus_packs": 0.185,
+    "contradicted_pairs": 0.014,
+    "rule": "Real packs agree very strongly on prerequisite ORDER: only 1.4% of ordered item pairs are ever seen reversed in another pack. Harvested (earlier,later) pairs can be trusted as a hard ordering constraint; a pair confirmed by 2+ packs (72% of pairs) is safe to treat as authoritative."
+  },
+
+  "cannot_answer_from_local_data": [
+    "Cross-pack opener/finale conventions. shapes.json stores only aggregate per-chapter counts, so questions 3 (openers), 4 (chapter gating), 5 (branch lengths), 6 (wheels) and the reward-vs-depth half of question 8 were measurable on ONE pack only (Prominence II, 30 chapters, 1754 quests). Treat those fields as a strong single-pack prior, not a measured cross-pack norm.",
+    "Full cross-pack task-type mix. task_kinds.json's harvester only ever classified item/kill/dimension targets and only for chapters it could attribute to a mod, so checkmark/advancement/structure/biome/stat shares are unmeasurable cross-pack. The three types it does cover match the reference pack to within 0.5 percentage points, which is the only reason the single-pack full mix is offered as representative.",
+    "Per-chapter reward data cross-pack. rewards.json aggregates per MOD, not per chapter or per quest, so reward-value-versus-depth could not be measured outside the reference pack.",
+    "A true 'mod item count' input variable. moddb.json caps each mod's item list at 26 entries, so the by_mod_item_count table uses distinct-item-ids-referenced (counts.json) as the size proxy instead. It is an outcome-flavoured proxy, and the correlation is only r=0.485 on a log scale - use the table as a coarse bucket, not a formula.",
+    "Published design guidance with numbers. Web search over FTB Quests documentation, the FTB developer docs, DeepWiki and modpack community discussion produced mechanism documentation (progression_mode linear/flexible, dependency modes all_completed/one_completed/all_started/one_started, hide_until_deps_visible, 0.5 grid scale, 16-char uppercase hex ids) but NO quantitative norms for chapter size, depth, branching or reward pacing. No number in this file comes from a web source."
+  ],
+
+  "evidence": {
+    "chapters_analysed": 598,
+    "packs": 54,
+    "notes": "Tier A: 568 chapter shape records in shapes.json covering 189 mods, harvested from published 1.20.x modpacks; the packs.json snapshot taken at analysis time listed 336 modpacks scanned of which 53 shipped an FTB Quests book (492 chapters at that instant). The harvest was still running and being rewritten during this analysis, so the true number of packs behind shapes.json is between 53 and 64 - counts.json and chains.json were both caught mid-write and were unparseable/re-snapshotted. Tier A supplied every number under chapter_size, shape.depth/width/roots/optional_flag, presentation.chapter_icon and the cross-pack description rate, plus item_ordering (gating.json, 20186 pair observations, 181 mods) and rewards._full_crosspack_mix (rewards.json, 23600 reward entries, 189 mods) and task_mix._crosspack_validation (task_kinds.json, 49053 tasks, 250 mods). Tier B: all 31 chapter SNBT files of Prominence II Hasturian Era parsed quest-by-quest with a purpose-written SNBT parser - 30 chapters contain quests, 1754 quests, 2455 tasks, 2110 reward entries, 1955 dependency edges. Tier B supplied openers, chapter_gating, branch/spine stats, wheels, the full task_mix, per-quest reward stats and the reward scaling rule. 598 = 568 + 30. 54 = 53 harvested packs + the 1 locally parsed pack. Three findings ran against expectation: (1) reward value does NOT scale with depth - xp is flat at ~100 from tier 0 to tier 11 - only the reward TYPE escalates, with xp_levels probability rising 3.8x from shallow to deep; (2) chapters are NOT chained - 77% of chapters have zero external dependencies and cross-chapter edges are 0.7% of all edges, so ordering is carried by thematic groups plus order_index plus flexible progression, not by the graph; (3) the most common chapter opener is a zero-cost checkmark quest, not a gather or a guide book, and 60% of a chapter's quests sit off the critical path while the longest single path is only ~15% of the chapter. No quest title, subtitle or description text was copied from any source."
+  }
+}

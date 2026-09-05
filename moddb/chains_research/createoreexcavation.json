@@ -1,0 +1,65 @@
+{
+ "mod": "createoreexcavation",
+ "verified_against": "createoreexcavation-1.20-1.6.5.jar",
+ "item_count_in_jar": 14,
+ "parent_mod": "create",
+ "chain": [
+  {
+   "id": "createoreexcavation:vein_finder",
+   "title": "Listening for Ore",
+   "desc": "An ender eye and an amethyst shard over redstone ore and two sticks. Right-click it to sweep the chunks around you and it names whatever vein is buried under them."
+  },
+  {
+   "id": "createoreexcavation:vein_atlas",
+   "title": "Writing the Veins Down",
+   "desc": "A chest and an amethyst shard over a map and a writable book. Every vein a Sample Drill confirms gets recorded here, so you never have to re-survey the same chunk."
+  },
+  {
+   "id": "createoreexcavation:sample_drill",
+   "title": "Proving the Claim",
+   "desc": "Mechanical crafting: brass plates and electron tubes around a brass casing, a precision mechanism, sturdy sheets and Create's mechanical drill. Put a Copper Backtank on top, let it finish one cycle, then click it with the atlas."
+  },
+  {
+   "id": "createoreexcavation:drill",
+   "title": "The Bit That Does the Work",
+   "desc": "Iron blocks and ingots in a diagonal. Nothing this mod builds mines anything without a drill sitting in it, so this is the real gate on the whole chain."
+  },
+  {
+   "id": "createoreexcavation:drilling_machine",
+   "title": "Tapping the Vein",
+   "desc": "Mechanical crafting from a brass tunnel, a copper casing, a brass casing, a spout, sturdy sheets, a precision mechanism and a mechanical drill. Feed it rotation and a drill and it pulls ore out of the vein below forever."
+  },
+  {
+   "id": "createoreexcavation:raw_redstone",
+   "title": "Ore Nobody Mined",
+   "desc": "The redstone vein's output. Crush or mill it back into ordinary redstone dust; it exists so that vein output is a distinct item you can meter and route."
+  },
+  {
+   "id": "createoreexcavation:extractor",
+   "title": "Pumping the Aquifer",
+   "desc": "Mechanical crafting with a hose pulley and a mechanical pump instead of the tunnel and spout. It drains fluid veins the same way the drilling machine drains ore veins."
+  },
+  {
+   "id": "createoreexcavation:diamond_drill",
+   "title": "Harder Than Iron",
+   "desc": "An iron drill re-wrapped in diamonds and a diamond block. Faster, longer-lived, and the only route to the drill that can survive a lava-fed vein."
+  },
+  {
+   "id": "createoreexcavation:raw_diamond",
+   "title": "Diamond in the Rough",
+   "desc": "What a diamond vein actually gives you. Cut it on Create's saw for the finished gem, so diamonds become a throughput problem rather than a caving problem."
+  },
+  {
+   "id": "createoreexcavation:raw_emerald",
+   "title": "Green Without Trading",
+   "desc": "The emerald vein's output, cut into emeralds the same way. Extremely slow at 1200 ticks a cycle, which is why an emerald vein is worth chunk-loading."
+  },
+  {
+   "id": "createoreexcavation:netherite_drill",
+   "title": "The Drill That Drinks Lava",
+   "desc": "Smithing a diamond drill with a netherite ingot. Only this drill can run the hardened diamond and netherite veins, and both of those demand 500 to 1000 mB of lava per cycle on top of the rotation."
+  }
+ ],
+ "collections": [],
+ "notes": "Verified against createoreexcavation-1.20-1.6.5.jar (Forge, MC 1.20-1.20.1 per mods.toml, create [6.0.2,)). Modrinth slug is create-ore-excavation, project id ResbpANg; the modid is createoreexcavation, so slug and modid disagree. ID DETECTION WIDENED: the naive models/item/* INTERSECT item.createoreexcavation.* rule finds only 8 ids because five of the mod's blocks are lang-keyed as block.* not item.*. Widening to (item models) UNION (blockstates INTERSECT lang) gives 14: the 11 with item models plus three blockstate-only ids. PROOF of the widening: drilling_machine, extractor and sample_drill each have BOTH assets/createoreexcavation/models/item/<id>.json AND assets/createoreexcavation/blockstates/<id>.json AND a block.createoreexcavation.<id> lang key AND a loot table, so they are unambiguously registered and obtainable; io_block, kinetic_input and multiblock have a blockstate and a lang key but NO item model at all. DROPPED as uncompletable: createoreexcavation:io_block (Multiblock IO), createoreexcavation:kinetic_input (Multiblock Rotational Input) and createoreexcavation:multiblock (Multiblock) - blockstate plus lang key but no item model, no recipe and no loot table anywhere in the jar. They are the internal placeholder blocks the drilling machine and extractor place around themselves when they form their multiblock, so they can never enter an inventory and would be dead quest targets. No collections: after the 11 questable ids go on the spine and the 3 internal blocks are dropped, nothing is left to wheel - this mod has no variant families. RECIPES ARE NOT ALL UNDER recipes/**: the jar carries three custom recipe types that are Create-style processing rather than crafting - createoreexcavation:vein (18 files under recipes/ore_vein_type/, one per vein, declaring what a vein is made of), createoreexcavation:drilling (13 files under recipes/drilling/, the actual ore output per drill and per vein) and createoreexcavation:extracting (recipes/extractor/water.json). There is also data/createoreexcavation/computercraft/turtle_upgrades/vein_finder.json, which registers the Vein Finder as a CC:Tweaked turtle upgrade and produces no item; it is the only ComputerCraft surface in the jar and it is additive, so nothing here is gated on CC. ORDERING CONFLICT vs moddb consensus (11 entries, all 11 id-verified, none renamed): the consensus is wrong twice on the recipe graph. (1) It puts createoreexcavation:drill at 0.507, AFTER drilling_machine 0.336 and extractor 0.464 and after raw_redstone 0.2 - but every one of the 11 createoreexcavation:drilling recipes takes {\"tag\": \"createoreexcavation:drills\"} or an explicit drill item, so no machine produces anything at all until an Iron Drill exists, and raw_redstone is a drilling output. The drill was moved ahead of both machines and ahead of raw_redstone. (2) It puts sample_drill at 0.143 and raw_redstone at 0.2, both BEFORE vein_finder 0.271 and vein_atlas 0.3 - but the mod's own ponder text spells out the intended order (find_ores: 'Use an Ore Vein Finder to locate ores', then sample_drill: 'Place the Sample Drill... then click it again with the atlas, once it's finished'), and chat.coe.sampleDrill.noAtlas is 'Ore Vein Atlas not found', so the sample drill is useless without the atlas. Finder and atlas were moved ahead of the sample drill. Recipe graph plus in-jar ponder text preferred in both cases. PARENT ASSUMPTIONS: the chain starts after Create has supplied brass plates, brass casing, copper casing, brass tunnel, electron tube, sturdy sheet, precision mechanism, spout, hose pulley, mechanical pump, mechanical drill, a mechanical crafter array, crushing wheels or a millstone, a mechanical saw and a Copper Backtank. Vein contents worth knowing when writing rewards: the 13 drilling veins yield minecraft coal, raw_copper, raw_iron, raw_gold, lapis_lazuli, quartz, glowstone_dust, gold_nugget, create:raw_zinc, and this mod's own raw_diamond, raw_emerald and raw_redstone; the netherite vein is netherite_drill plus 1000 mB lava for a 0.2 chance of ancient_debris over 4000 ticks. Stress costs scale with the vein: 256 for coal/copper/iron, 512 for diamond/emerald, 1024 for hardened diamond, 2048 for netherite."
+}

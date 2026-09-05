@@ -1,0 +1,171 @@
+{
+ "mod": "ends_delight",
+ "verified_against": "ends_delight-2.6.1+forge.1.20.1.jar",
+ "item_count_in_jar": 63,
+ "parent_mod": "farmersdelight",
+ "chain": [
+  {
+   "id": "ends_delight:end_stone_knife",
+   "title": "An Edge Made Of End Stone",
+   "desc": "End stone and popped chorus fruit. Farmer's Delight cutting boards need a knife and the End has no iron; this is the local answer."
+  },
+  {
+   "id": "ends_delight:chorus_fruit_grain",
+   "title": "Milling The Chorus",
+   "desc": "Knife a chorus fruit on a cutting board. Grain is the flour of the End and it appears in almost every recipe here."
+  },
+  {
+   "id": "ends_delight:ender_pearl_grain",
+   "title": "Grinding A Pearl",
+   "desc": "Knife an ender pearl. It turns the End's currency into an ingredient, which is the joke the whole mod is built on."
+  },
+  {
+   "id": "ends_delight:dried_chorus_flower",
+   "title": "Drying The Flower",
+   "desc": "Smelt or campfire a chorus flower. Dried, it stops propagating and starts being food."
+  },
+  {
+   "id": "ends_delight:end_stove",
+   "title": "A Stove Built On End Stone",
+   "desc": "Campfire, end stone bricks and popped chorus fruit. Farmer's Delight's stove rebuilt from materials the End actually has."
+  },
+  {
+   "id": "ends_delight:chorus_sauce",
+   "title": "The Sauce Of The Outer Islands",
+   "desc": "Cooking Pot: chorus grain, chorus succulent and chorus fruit. It binds the sausage, noodle and dragon-steak lines together."
+  },
+  {
+   "id": "ends_delight:enderman_gristle",
+   "title": "Butchering An Enderman",
+   "desc": "Endermen drop gristle through data/ends_delight/loot_modifiers/add_enderman_gristle.json. The first meat the End will give you."
+  },
+  {
+   "id": "ends_delight:raw_ender_mite_meat",
+   "title": "Very Small Cuts",
+   "desc": "Endermites drop meat through their own loot modifier. Tiny, plentiful, and the base of the congee."
+  },
+  {
+   "id": "ends_delight:dried_endermite_meat",
+   "title": "Cured In The Void",
+   "desc": "Smoked, smelted or campfired. Drying is what makes endermite meat worth carrying."
+  },
+  {
+   "id": "ends_delight:shulker_meat",
+   "title": "Prising Open A Shulker",
+   "desc": "Shulkers drop meat through add_shulker_meat.json. End cities become a food source as well as a loot source."
+  },
+  {
+   "id": "ends_delight:roasted_shulker_meat",
+   "title": "Shulker, Roasted",
+   "desc": "Campfire, furnace or smoker. The best sustained food in the End before the dragon dies."
+  },
+  {
+   "id": "ends_delight:grilled_shulker_block",
+   "title": "A Shulker Feast",
+   "desc": "Roasted shulker with chorus succulent, onion, tomato and a shell. A block-sized meal that serves a table."
+  },
+  {
+   "id": "ends_delight:raw_dragon_meat",
+   "title": "The Dragon Is Also Meat",
+   "desc": "The Ender Dragon drops raw meat through add_dragon_meat.json and add_extra_dragon_meat.json. Killing the dragon is now a cooking prerequisite."
+  },
+  {
+   "id": "ends_delight:dragon_leg",
+   "title": "An Entire Leg",
+   "desc": "The dragon's own loot modifier drops a single leg. It is the biggest joint of meat in the game."
+  },
+  {
+   "id": "ends_delight:smoked_dragon_leg",
+   "title": "Smoked Over Days",
+   "desc": "The leg cured rather than seared, which is what the sauced plate recipe needs."
+  },
+  {
+   "id": "ends_delight:dragon_tooth",
+   "title": "A Tooth Worth Keeping",
+   "desc": "Also a dragon drop. It is the reagent for the fake egg and the smithing template for the mod's best knife."
+  },
+  {
+   "id": "ends_delight:non_hatchable_dragon_egg",
+   "title": "An Egg That Will Never Open",
+   "desc": "Dragon tooth, an end crystal and obsidian. Vanilla gives you one dragon egg ever; this makes as many as you can afford."
+  },
+  {
+   "id": "ends_delight:half_dragon_egg_shell",
+   "title": "Cracked With A Nether Star",
+   "desc": "Cutting a non-hatchable egg on a board needs a nether star as the tool. The single most expensive cutting recipe in the ecosystem."
+  },
+  {
+   "id": "ends_delight:liquid_dragon_egg",
+   "title": "What Was Inside",
+   "desc": "The other half of the cracked egg. Fry it and it becomes the mod's rarest breakfast."
+  },
+  {
+   "id": "ends_delight:dragon_egg_shell_knife",
+   "title": "A Knife Made Of Shell",
+   "desc": "Half an egg shell and popped chorus fruit. Sharper than end stone, and the base of the final upgrade."
+  },
+  {
+   "id": "ends_delight:dragon_tooth_knife",
+   "title": "The Last Knife",
+   "desc": "Smithing a dragon tooth onto the shell knife with a netherite template. The end of the End's cutlery."
+  },
+  {
+   "id": "ends_delight:dragon_meat_stew_block",
+   "title": "Dragon, Stewed",
+   "desc": "Cooking Pot: raw dragon meat, chorus grain, chorus succulent, an egg shell, tomato, carrot and potato. Seven ingredients, all of them End-gated."
+  },
+  {
+   "id": "ends_delight:ender_noodle",
+   "title": "Noodles Of The Outer Islands",
+   "desc": "Cooking Pot: chorus sauce, dried endermite meat, pasta, shulker meat and three mushrooms. The mod's most demanding assembly."
+  },
+  {
+   "id": "ends_delight:dragon_breath_and_chorus_soup",
+   "title": "Drinking The Dragon's Breath",
+   "desc": "Cooking Pot: dragon breath, dried chorus flower, chorus fruit and suspicious stew. It uses the one vanilla item nobody has a use for."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "ends_delight:chorus_fruit_pie",
+   "members": [
+    "ends_delight:chorus_fruit_pie_slice",
+    "ends_delight:chorus_flower_pie",
+    "ends_delight:chorus_cookie",
+    "ends_delight:chorus_fruit_popsicle",
+    "ends_delight:chorus_fruit_wine",
+    "ends_delight:chorus_fruit_milk_tea",
+    "ends_delight:bubble_tea",
+    "ends_delight:chorus_flower_tea",
+    "ends_delight:dragon_breath_soda",
+    "ends_delight:stuffed_rice_cake",
+    "ends_delight:chorus_fruit_crate"
+   ]
+  },
+  {
+   "hub": "ends_delight:dragon_leg_with_sauce_block",
+   "members": [
+    "ends_delight:roasted_dragon_steak",
+    "ends_delight:steamed_dragon_egg_block",
+    "ends_delight:fried_dragon_egg",
+    "ends_delight:shulker_omelette",
+    "ends_delight:shulker_soup",
+    "ends_delight:stir_fried_shulker_meat",
+    "ends_delight:roasted_dragon_meat_cuts"
+   ]
+  },
+  {
+   "hub": "ends_delight:end_mixed_salad",
+   "members": [
+    "ends_delight:assorted_salad",
+    "ends_delight:ender_congee",
+    "ends_delight:ender_bamboo_rice",
+    "ends_delight:enderman_gristle_stew",
+    "ends_delight:end_barbecue_stick",
+    "ends_delight:ender_sausage",
+    "ends_delight:chorus_succulent"
+   ]
+  }
+ ],
+ "notes": "63 ids resolve as assets/ends_delight/models/item/<id>.json intersected with item./block. lang keys. Every mob-drop claim is checked against data/ends_delight/loot_modifiers/: add_dragon_leg, add_dragon_meat, add_extra_dragon_meat, add_dragon_tooth, add_shulker_meat, add_enderman_gristle, add_endermite_meat and add_dried_endermite_meat. The chain is deliberately gated the way the recipes are: everything before enderman_gristle only needs chorus fruit and end stone, everything from raw_dragon_meat onward requires the Ender Dragon to be dead. The standout mechanic, read from data/ends_delight/recipes/crack_non_hatchable_dragon_egg.json, is that cracking the crafted dragon egg on a cutting board takes minecraft:nether_star as the TOOL rather than a knife - the most expensive cutting-board recipe in the whole Farmer's Delight ecosystem, and the gate on the final knife. ends_delight registers no entities and no dimensions of its own. Parent items this addon assumes you already have: farmersdelight:cutting_board, farmersdelight:cooking_pot, farmersdelight:pie_crust, farmersdelight:tomato and onion crops, farmersdelight:rice, a killed Ender Dragon, End City access for shulkers."
+}

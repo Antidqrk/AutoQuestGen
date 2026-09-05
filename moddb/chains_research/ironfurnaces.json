@@ -1,0 +1,81 @@
+{
+ "mod": "ironfurnaces",
+ "verified_against": "ironfurnaces-1.20.1-4.1.8.jar",
+ "item_count_in_jar": 43,
+ "chain": [
+  {"id": "ironfurnaces:copper_furnace", "title": "Copper Around the Fire", "desc": "Copper ingots ringing a vanilla furnace; the cheapest rung of the ladder, faster than stone and with room for an augment."},
+  {"id": "ironfurnaces:iron_furnace", "title": "The Workhorse", "desc": "Iron ingots ringing a vanilla furnace, or glass and iron applied to a copper one; the tier everything else in the mod is measured against."},
+  {"id": "ironfurnaces:upgrade_iron", "title": "Changing It Where It Stands", "desc": "Iron ingots and stone make the Stone to Iron Furnace Upgrade, which converts a furnace already placed in the world instead of asking you to craft a new one."},
+  {"id": "ironfurnaces:item_copy", "title": "Copying the Settings", "desc": "A furnace and paper give the Furnace Settings Linker, which stamps one furnace's whole configuration onto another."},
+  {"id": "ironfurnaces:augment_speed", "title": "Sugar in the Firebox", "desc": "Paper, stone, redstone dust and sugar; halves cook time at the cost of burning twice the fuel. Right-click a furnace to slot it in."},
+  {"id": "ironfurnaces:augment_fuel", "title": "Stretching the Coal", "desc": "The same paper-and-redstone frame around a lump of coal; fuel heats twice as far but every recipe runs a quarter slower."},
+  {"id": "ironfurnaces:augment_smoking", "title": "Kitchen Only", "desc": "A smoker in the augment frame, restricting the furnace to food recipes and running them at smoker speed."},
+  {"id": "ironfurnaces:augment_blasting", "title": "Ore Only", "desc": "A blast furnace in the augment frame, restricting the furnace to blasting recipes."},
+  {"id": "ironfurnaces:gold_furnace", "title": "Gold-Lined Chamber", "desc": "Gold ingots and a gold block worked onto an iron furnace; the mod calls it the Golden Furnace."},
+  {"id": "ironfurnaces:diamond_furnace", "title": "Behind Glass and Diamond", "desc": "Diamonds and glass on a golden furnace, and the branch point where the ladder splits two ways."},
+  {"id": "ironfurnaces:crystal_furnace", "title": "An Eye in the Glass", "desc": "Glass and an eye of ender on a diamond furnace; one of the two parallel routes up to obsidian."},
+  {"id": "ironfurnaces:emerald_furnace", "title": "The Other Road", "desc": "Emeralds on a diamond furnace; the second of the two parallel routes, and cheaper than crystal if you trade."},
+  {"id": "ironfurnaces:obsidian_furnace", "title": "Where the Roads Rejoin", "desc": "Obsidian and blaze rods applied to either an emerald or a crystal furnace, which merges the split back into one line."},
+  {"id": "ironfurnaces:augment_factory", "title": "Fed by Wire", "desc": "A piston in the augment frame; the furnace stops eating fuel and runs on Forge Energy instead."},
+  {"id": "ironfurnaces:augment_generator", "title": "Burning for Power", "desc": "A repeater in the augment frame; the furnace stops smelting entirely and turns its heat into Forge Energy."},
+  {"id": "ironfurnaces:heater", "title": "Heat Without a Cable", "desc": "Stone, a comparator, a furnace and a redstone block make the Wireless Heat Transmitter, which broadcasts energy to bound receivers."},
+  {"id": "ironfurnaces:item_heater", "title": "Fuel That Never Burns", "desc": "Stone, redstone and a comparator give the Wireless Heat Receiver; drop it in a furnace's fuel slot and it draws from the transmitter forever."},
+  {"id": "ironfurnaces:netherite_furnace", "title": "Soul Fire and Netherite", "desc": "A netherite ingot, magma cream and a soul fire base block on an obsidian furnace; the top of the ordinary ladder."},
+  {"id": "ironfurnaces:rainbow_plating", "title": "One of Everything, Melted Down", "desc": "A shapeless recipe eating one furnace of every tier you have built so far, which is why the ladder has to be climbed twice."},
+  {"id": "ironfurnaces:rainbow_core", "title": "Seven Colours and Two Furnaces", "desc": "Two netherite furnaces set between the seven stained-glass colours of the spectrum."},
+  {"id": "ironfurnaces:million_furnace", "title": "The Rainbow Furnace", "desc": "The rainbow core ringed with eight rainbow platings; only one may exist, and it generates power from every other furnace that is generating."},
+  {"id": "ironfurnaces:rainbow_coal", "title": "Blow It Up to Get It", "desc": "The only way to hold Rainbow Coal is to destroy a placed Rainbow Furnace with an explosion; the mod's event handler spawns the coal where the block stood."}
+ ],
+ "collections": [
+  {
+   "hub": "ironfurnaces:iron_furnace",
+   "members": [
+    "ironfurnaces:copper_furnace",
+    "ironfurnaces:gold_furnace",
+    "ironfurnaces:diamond_furnace",
+    "ironfurnaces:crystal_furnace",
+    "ironfurnaces:emerald_furnace",
+    "ironfurnaces:obsidian_furnace",
+    "ironfurnaces:netherite_furnace",
+    "ironfurnaces:million_furnace"
+   ]
+  },
+  {
+   "hub": "ironfurnaces:augment_speed",
+   "members": [
+    "ironfurnaces:augment_fuel",
+    "ironfurnaces:augment_smoking",
+    "ironfurnaces:augment_blasting",
+    "ironfurnaces:augment_factory",
+    "ironfurnaces:augment_generator"
+   ]
+  },
+  {
+   "hub": "ironfurnaces:upgrade_iron",
+   "members": [
+    "ironfurnaces:upgrade_copper",
+    "ironfurnaces:upgrade_iron2",
+    "ironfurnaces:upgrade_gold",
+    "ironfurnaces:upgrade_gold2",
+    "ironfurnaces:upgrade_diamond",
+    "ironfurnaces:upgrade_crystal",
+    "ironfurnaces:upgrade_emerald",
+    "ironfurnaces:upgrade_obsidian",
+    "ironfurnaces:upgrade_obsidian2",
+    "ironfurnaces:upgrade_netherite"
+   ]
+  },
+  {
+   "hub": "ironfurnaces:heater",
+   "members": [
+    "ironfurnaces:item_heater",
+    "ironfurnaces:item_copy",
+    "ironfurnaces:item_spooky",
+    "ironfurnaces:item_xmas",
+    "ironfurnaces:rainbow_plating",
+    "ironfurnaces:rainbow_core"
+   ]
+  }
+ ],
+ "notes": "43 ids verified THREE independent ways, all three sets agreeing exactly: 43 assets/ironfurnaces/models/item/*.json stems, 43 item.ironfurnaces.X / block.ironfurnaces.X lang keys, and the 43 registry-name string constants in the constant pool of ironfurnaces/init/Registration.class. The 14 blocks additionally each have a blockstate and a block loot table. The naive intersection rule would also have found 43 of 43 here - this mod is well behaved about names, and its traps are obtainability traps instead.\n\nORPHANED LANG KEY - item.ironfurnaces.gui = 'Augment: Inventory Config'. There is NO model stem 'gui' and NO 'gui' constant in Registration.class, so no such item is registered. Exactly the storagedrawers:controller_io failure mode: a name that reads like an item but is only a leftover lang line. Never write ironfurnaces:gui into a quest.\n\nUPGRADE LADDER - the lang file states the whole ladder explicitly, edge by edge, in the names of the 16 upgrade items: stone->copper, stone->iron, copper->iron, copper->silver, iron->silver, iron->gold, silver->gold, gold->diamond, diamond->crystal, diamond->emerald, emerald->obsidian, crystal->obsidian, obsidian->netherite, netherite->allthemodium, allthemodium->vibranium, vibranium->unobtainium. This is a DIAMOND-SHAPED ladder, not a line: it forks twice (copper/iron near the bottom, crystal/emerald near the top) and rejoins at obsidian, so 'crystal' and 'emerald' are siblings at the same rung rather than consecutive tiers. The chain follows that shape. Note also that crystal_furnace, despite the gem name, is a DIAMOND-tier upgrade (eye of ender + glass), not above emerald.\n\nDROPPED, CONDITIONAL ON MODS NOT PRESENT: ironfurnaces:allthemodium_furnace, ironfurnaces:vibranium_furnace, ironfurnaces:unobtainium_furnace and their three upgrade items all carry a forge:mod_loaded condition on modid 'allthemodium'; without All The Modium/All The Ores installed the recipes never load and the blocks cannot be obtained at all. ironfurnaces:silver_furnace, ironfurnaces:upgrade_silver and ironfurnaces:upgrade_silver2 carry forge:not(forge:tag_empty forge:ingots/silver) - they exist only if some other mod contributes silver, and this pack contributes none. The mod itself anticipates this: it ships rainbow_plating_no_silver.json, a second Rainbow Plating recipe that omits the silver furnace. All nine are registered and named but are left out of the chain and the wheels.\n\nOBTAINABILITY PROVED FROM CODE - ironfurnaces:rainbow_coal has no recipe, no loot table and no trade, so a data-only pass calls it unobtainable and drops it. It is NOT unobtainable. ironfurnaces/util/EventHandler.class holds an explosionEvent handler whose constant pool references BlockMillionFurnaceTile, Registration.RAINBOW_COAL and Level.addFreshEntity: when an explosion destroys a placed Rainbow Furnace, the block is removed and a rainbow_coal stack is spawned in its place. That is the item's only obtain method and it is the chain's final step. moddb independently puts rainbow_coal last at pos 1.000, which agrees.\n\nRAINBOW CONTENT is gated by a custom recipe condition, type 'ironfurnaces:rainbow', backed by the Config field enableRainbowContent. rainbow_plating, rainbow_core and million_furnace all carry it. It is on by default, so the four rainbow steps are kept, but a pack that disables that config kills the last four quests together.\n\nCONSENSUS: no ordering conflict worth overriding. moddb's furnace order (copper 0.388 -> iron 0.540 -> crystal 0.588 -> emerald 0.647 -> gold 0.690 -> obsidian 0.706 -> diamond 0.765 -> netherite 0.824) does put crystal and emerald ahead of gold and diamond, which the recipe graph forbids - both are made FROM a forge:furnaces/diamond furnace, which is made from a gold one. Recipe graph preferred and the ladder is placed in dependency order. moddb also lists silver_furnace (0.818) and rainbow_plating (0.765), both of which need the silver tag; see the drop note above.\n\nThe 16 upgrade items are a wheel rather than chain steps: they are the same ladder a second time, as apply-in-place items instead of craft-a-new-block items. One (upgrade_iron) is kept in the chain to teach the mechanic. item_spooky and item_xmas are cosmetic furnace skins (carved pumpkin, or paper and dye) and sit in the utility wheel."
+}

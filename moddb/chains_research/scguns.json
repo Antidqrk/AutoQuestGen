@@ -1,0 +1,288 @@
+{
+ "mod": "scguns",
+ "verified_against": "ScorchedGuns-0.5.5-1.20.1.jar",
+ "item_count_in_jar": 621,
+ "chain": [
+  {
+   "id": "scguns:pebbles",
+   "title": "Rocks Worth Shooting",
+   "desc": "The mod's opening material and the shot half of its first cartridge; the Antique tier costs nothing but stone and flint."
+  },
+  {
+   "id": "scguns:powder_and_ball",
+   "title": "Load From the Muzzle",
+   "desc": "Gunpowder, two pebbles and paper make six; the only ammunition the black-powder guns will take."
+  },
+  {
+   "id": "scguns:stone_gun_barrel",
+   "title": "A Barrel Bored From Stone",
+   "desc": "The single part every Antique firearm is built around."
+  },
+  {
+   "id": "scguns:musket",
+   "title": "First Shot Fired",
+   "desc": "Flint, cobblestone, planks and a stone barrel on a Create Mechanical Crafter; it is also injected into mineshaft chests if you find one first."
+  },
+  {
+   "id": "scguns:antique_blueprint",
+   "title": "The Cheapest Secret",
+   "desc": "Flint and paper. Blueprints are the mod's real gate - each one is a book of gun bench recipes for exactly one tier, and this is the only tier you can simply craft."
+  },
+  {
+   "id": "scguns:gun_bench",
+   "title": "Where Guns Get Made",
+   "desc": "Iron or treated iron, flint and planks. 146 firearms in this mod are gun bench recipes and every one of them passes through this block."
+  },
+  {
+   "id": "scguns:frontier_blueprint",
+   "title": "Leather and Paper",
+   "desc": "The second and last freely craftable blueprint; from here on the tiers must be found, traded for or looted."
+  },
+  {
+   "id": "scguns:sulfur_chunk",
+   "title": "Yellow Rock",
+   "desc": "Sulfur ore generates in stone, deepslate and the Nether; sulfur and niter are the mod's two chemical feedstocks."
+  },
+  {
+   "id": "scguns:bullet_mold",
+   "title": "Cast, Don't Carve",
+   "desc": "Bullets, casings and gun parts are all pressed against a reusable mold rather than crafted in a grid."
+  },
+  {
+   "id": "scguns:mechanical_press",
+   "title": "The Press",
+   "desc": "Cobblestone, an iron block, a furnace and iron or treated iron; this is the block the mod's own mechanical_pressing recipes run in."
+  },
+  {
+   "id": "scguns:macerator",
+   "title": "The Macerator",
+   "desc": "Cobblestone, smooth stone slabs and a furnace; it grinds ores and chunks into the dusts the mid tiers need."
+  },
+  {
+   "id": "scguns:standard_bullet",
+   "title": "A Proper Cartridge",
+   "desc": "Twelve at a time from the bullet mold; this is where the mod leaves black powder behind."
+  },
+  {
+   "id": "scguns:small_copper_casing",
+   "title": "Brass, Or Near Enough",
+   "desc": "Casings come in three sizes across four metals and decide which calibres a tier can load."
+  },
+  {
+   "id": "scguns:standard_copper_round",
+   "title": "Copper Loaded",
+   "desc": "The first metallic cartridge, matched to the Copper tier's guns."
+  },
+  {
+   "id": "scguns:copper_blueprint",
+   "title": "Rust Ridge Secrets",
+   "desc": "Bought from Gunsmith Villagers; the first blueprint that cannot be crafted at all."
+  },
+  {
+   "id": "scguns:iron_gun_frame",
+   "title": "A Frame in Iron",
+   "desc": "Five iron ingots in an arch; frames are the chassis every mid-tier gun bench recipe starts from."
+  },
+  {
+   "id": "scguns:iron_blueprint",
+   "title": "Federal Armaments",
+   "desc": "From Gunsmith Villagers or dungeon chests; it unlocks the Iron tier at the gun bench."
+  },
+  {
+   "id": "scguns:treated_iron_nugget",
+   "title": "Iron, Treated",
+   "desc": "The nugget form the mod's own processing chain produces before it can be pressed into an ingot."
+  },
+  {
+   "id": "scguns:treated_iron_ingot",
+   "title": "The First Real Alloy",
+   "desc": "Nine treated nuggets. Treated iron is the entry to the mod's four-step metal ladder."
+  },
+  {
+   "id": "scguns:flare_pistol",
+   "title": "Call Them Down",
+   "desc": "Held with a flare in the offhand it fires a raid signal into the sky; ten raid factions each have their own flare and their own named boss."
+  },
+  {
+   "id": "scguns:wrecker_flare",
+   "title": "Summon the Wreckers",
+   "desc": "Fired from the flare pistol it starts the Wrecker Raid, whose boss is The Stalker; raid flares are looted, not crafted."
+  },
+  {
+   "id": "scguns:wrecker_blueprint",
+   "title": "Bought From a Stranger",
+   "desc": "The mod's own JEI note says it comes from a strange merchant - the_merchant entity, which also drops the Ribs of Glory."
+  },
+  {
+   "id": "scguns:ocean_blueprint",
+   "title": "Whaler's Plans",
+   "desc": "Buried treasure only; the Ocean tier and its Leviathan Syndicate raid hang off this one find."
+  },
+  {
+   "id": "scguns:treated_brass_ingot",
+   "title": "Brass, Treated",
+   "desc": "The second rung of the metal ladder and the material behind the COG Battalion's weapons."
+  },
+  {
+   "id": "scguns:treated_brass_blueprint",
+   "title": "The COG Plans",
+   "desc": "Wandering Traders, Osgood dungeons or bastions; the Osgood lab chests also stock treated brass armour outright."
+  },
+  {
+   "id": "scguns:diamond_steel_ingot",
+   "title": "Diamond Steel",
+   "desc": "Third rung; blended and fired rather than simply smelted, and the Asgharian Dominion's metal."
+  },
+  {
+   "id": "scguns:diamond_steel_blueprint",
+   "title": "Asgharian Methods",
+   "desc": "Wandering Traders, Asgharian dungeons or ancient cities."
+  },
+  {
+   "id": "scguns:raw_anthralite",
+   "title": "The Deep Ore",
+   "desc": "Anthralite ore and its deepslate variant; the mod ships Create crushing, Mekanism enriching and Immersive Engineering crusher routes for processing it."
+  },
+  {
+   "id": "scguns:anthralite_ingot",
+   "title": "Anthralite",
+   "desc": "Fourth rung, and the material of the mod's own tool and armour set as well as its heavier frames."
+  },
+  {
+   "id": "scguns:piglin_blueprint",
+   "title": "Taken From a Bastion",
+   "desc": "Nether bastions only; General Goldtooth's Piglin Raid answers this tier."
+  },
+  {
+   "id": "scguns:deep_dark_blueprint",
+   "title": "Out of the Ancient City",
+   "desc": "The Sculk tier, whose raid is led by the Warden Commander."
+  },
+  {
+   "id": "scguns:end_blueprint",
+   "title": "Out of an End City",
+   "desc": "The last found blueprint, and the Ender Overlord's tier."
+  },
+  {
+   "id": "scguns:scorched_ingot",
+   "title": "Scorched",
+   "desc": "Blasted from scorched blend; the final metal and the mod's namesake."
+  },
+  {
+   "id": "scguns:scorched_blueprint",
+   "title": "Every Secret at Once",
+   "desc": "The mod's own advancement text says it is created by combining all the blueprints - the terminal unlock, and the only one that requires having found every other tier first."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "scguns:antique_blueprint",
+   "members": [
+    "scguns:frontier_blueprint",
+    "scguns:copper_blueprint",
+    "scguns:iron_blueprint",
+    "scguns:wrecker_blueprint",
+    "scguns:ocean_blueprint",
+    "scguns:treated_brass_blueprint",
+    "scguns:diamond_steel_blueprint",
+    "scguns:piglin_blueprint",
+    "scguns:deep_dark_blueprint",
+    "scguns:end_blueprint",
+    "scguns:scorched_blueprint",
+    "scguns:exo_suit_blueprint"
+   ]
+  },
+  {
+   "hub": "scguns:flare_pistol",
+   "members": [
+    "scguns:antique_flare",
+    "scguns:frontier_flare",
+    "scguns:copper_flare",
+    "scguns:iron_flare",
+    "scguns:wrecker_flare",
+    "scguns:gold_flare",
+    "scguns:ocean_flare",
+    "scguns:treated_brass_flare",
+    "scguns:diamond_steel_flare",
+    "scguns:sculk_flare"
+   ]
+  },
+  {
+   "hub": "scguns:treated_iron_ingot",
+   "members": [
+    "scguns:treated_brass_ingot",
+    "scguns:diamond_steel_ingot",
+    "scguns:anthralite_ingot",
+    "scguns:scorched_ingot",
+    "scguns:ancient_brass",
+    "scguns:treated_iron_nugget",
+    "scguns:anthralite_nugget",
+    "scguns:plasma_nugget"
+   ]
+  },
+  {
+   "hub": "scguns:small_copper_casing",
+   "members": [
+    "scguns:medium_copper_casing",
+    "scguns:small_iron_casing",
+    "scguns:large_iron_casing",
+    "scguns:small_brass_casing",
+    "scguns:medium_brass_casing",
+    "scguns:large_brass_casing",
+    "scguns:small_diamond_steel_casing",
+    "scguns:medium_diamond_steel_casing"
+   ]
+  },
+  {
+   "hub": "scguns:standard_bullet",
+   "members": [
+    "scguns:standard_copper_round",
+    "scguns:compact_copper_round",
+    "scguns:advanced_round",
+    "scguns:compact_advanced_round",
+    "scguns:shotgun_shell",
+    "scguns:buckshot",
+    "scguns:grapeshot",
+    "scguns:gibbs_round",
+    "scguns:krahg_round",
+    "scguns:hog_round",
+    "scguns:beowulf_round",
+    "scguns:osborne_slug",
+    "scguns:shatter_round"
+   ]
+  },
+  {
+   "hub": "scguns:reflex_sight",
+   "members": [
+    "scguns:laser_sight",
+    "scguns:medium_scope",
+    "scguns:long_scope",
+    "scguns:silencer",
+    "scguns:advanced_silencer",
+    "scguns:extended_barrel",
+    "scguns:extended_mag",
+    "scguns:speed_mag",
+    "scguns:muzzle_brake",
+    "scguns:light_grip",
+    "scguns:vertical_grip",
+    "scguns:light_stock",
+    "scguns:weighted_stock"
+   ]
+  },
+  {
+   "hub": "scguns:musket",
+   "members": [
+    "scguns:flintlock_pistol",
+    "scguns:blunderbuss",
+    "scguns:boomstick",
+    "scguns:longarm",
+    "scguns:repeating_musket",
+    "scguns:callwell",
+    "scguns:marlin",
+    "scguns:winnie",
+    "scguns:brawler"
+   ]
+  }
+ ],
+ "notes": "This mod is Scorched Guns; modid scguns is confirmed in META-INF/mods.toml along with displayName \"Scorched Guns\", forge [46,48), minecraft [1.20,1.20.2), mandatory framework and curios, optional controllable and backpacked. No fabric.mod.json. It is not on Modrinth under the name scguns - the project slug is scorched-guns-2. ID SET. 813 model/item stems reduce to 473 real items under the strict 3-segment item.scguns.<name> intersection, and 155 blockstates reduce to 148 blocks that also carry a block.scguns.<name> key. Verified set = 621. The 340 discarded model stems are overwhelmingly per-gun animation and attachment display models, which is the same class of inflation as dye overlays. No widening was needed. NBT-VARIANT CHECK - THIS IS NOT TACZ, AND THAT MATTERS. The TACZ trap does not apply here. Extracting every recipe of type scguns:gun_bench gives 146 distinct result item ids - arc_worker, astella, auvtomag, basker, blunderbuss, combat_shotgun, gauss_rifle, musket, raygun, sequoia, thunderhead and 135 more - each a separately registered item with its own model and its own item.scguns.<name> lang key. There is no shared gun item id and no GunId-style tag anywhere in this mod, so plain namespaced id wheels are correct and were used. Attachments are likewise real separate ids (reflex_sight, long_scope, silencer and so on), not a tagged single item. OBTAINABILITY - 47 UNSOURCED, ALMOST ALL BENIGN. 22 are <mob>_spawn_egg, 2 are creative-only (creative_ammo_box, creative_air_canister), and fake_soul_fire, vicious_acid_block and vicious_acid_cauldron are placed-by-code technical blocks. The genuinely orphaned registrations are anthralite_sheet, aureous_slag, hardened_pebbles, phosphor_layer, depleted_energy_core, shulker_core, plus_p_mag, kiln_gun, cog_mace, war_axe, blasphemy and the redcoat and scrap armour pieces other than scrap_helmet - none appear as a recipe result or a loot entry. None of them is quested. blasphemy is worth flagging separately: empty_blasphemy IS a gun bench result, so the filled form is almost certainly produced in code by using the empty one, but since no data file proves it the filled id was left out. unfinished_blaze_fuel is the last remaining unfinished_ id without a producer; the other twenty are create:sequenced_assembly transitional items and are correctly sourced. LOOT AND ENTITY SOURCES VERIFIED. 21 chest tables and 20 entity tables were read. Named sources used above: village_gunsmith (blueprint_scrap, powder_and_ball, anthralite_ingot), scguns_mineshaft and scguns_dungeon (musket, flintlock_pistol, longarm, powder_and_ball), scguns_buried_treasure (ocean_flare), scguns_ancient_city (sculk_cell, sculk_flare, greaser_smg), scguns_end_city_treasure (energy_cell), scguns_bastion_treasure (super_shotgun, gold_flare), osgood_lab_supply and osgood_lab_treasure, asgharian_supply and asgharian_treasure, cog_chamber_* and trench_supply. Every entity named as a source has a real loot table: the_merchant drops ribs_glory, viventrum drops a diamond steel ingot and a night vision module, cog_knight and cog_minion drop ancient_brass and anthralite_nugget, supply_scamp drops treated_iron_blend and blueprint scrap. No projectile was used as a kill target - the 59 entity lang keys include 20-odd *_projectile entries and these were excluded by name. ORDERING is the mod's own, not inferred. assets/scguns/lang/en_us.json declares thirteen gun_tier keys in order: none, antique, frontier, copper, iron, wrecker, ocean, diamond_steel, treated_brass, piglin, deep_dark, end, scorched. Each tier has a matching blueprint, a matching raid faction with a named boss, and matching flare. The chain follows that ladder and cross-checks it against the blueprint sources the mod states in its own JEI info strings. One deviation was made deliberately: lang lists diamond_steel before treated_brass, but the blueprint sources put treated brass at wandering traders and bastions and diamond steel at ancient cities, and the metal ladder is treated_iron -> treated_brass -> diamond_steel -> anthralite -> scorched, so treated brass is placed first here. That is a recorded conflict, resolved toward the material graph as instructed. CREATE INTEGRATION, RELEVANT TO THIS PACK. 1172 recipes span 33 types; create:mechanical_crafting (138), create:crushing (150) and create:sequenced_assembly (26) are core paths, not optional compat - the musket and flintlock pistol are Mechanical Crafter recipes guarded only by forge:mod_loaded create. Mekanism, Immersive Engineering and Energized Power routes are alternates. Seven wheels sized 12, 10, 8, 8, 13, 13 and 9. Ores are kept out of the chain and reached through raw_anthralite and sulfur_chunk; every _slab, _stairs, _wall and cut_/polished_ block among the 148 is excluded."
+}

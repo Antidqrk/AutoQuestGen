@@ -1,0 +1,167 @@
+{
+ "mod": "dye_depot",
+ "verified_against": "dye_depot-forge-1.20.1-1.3.0.jar",
+ "item_count_in_jar": 240,
+ "chain": [
+  {
+   "id": "dye_depot:amber_dye",
+   "title": "Bottled Sunlight",
+   "desc": "Glow berries or a honeycomb each yield Amber Dye outright, and yellow plus orange gets there too."
+  },
+  {
+   "id": "dye_depot:olive_dye",
+   "title": "Waste Not",
+   "desc": "A poisonous potato is worth something at last: one gives Olive Dye, as does yellow plus black."
+  },
+  {
+   "id": "dye_depot:maroon_dye",
+   "title": "Eye for Colour",
+   "desc": "A single spider eye grinds into Maroon Dye; red plus black is the workshop route."
+  },
+  {
+   "id": "dye_depot:rose_dye",
+   "title": "Bush League",
+   "desc": "A rose bush makes Rose Dye, the pink-red the vanilla palette never had, or mix red with magenta."
+  },
+  {
+   "id": "dye_depot:coral_dye",
+   "title": "Shell Game",
+   "desc": "A nautilus shell gives Coral Dye, easily the most expensive natural source in the mod."
+  },
+  {
+   "id": "dye_depot:aqua_dye",
+   "title": "Ink That Glows",
+   "desc": "A glow ink sac becomes Aqua Dye; cyan plus white is the cheap substitute."
+  },
+  {
+   "id": "dye_depot:beige_dye",
+   "title": "Petal Pale",
+   "desc": "An oxeye daisy yields Beige Dye, or lighten amber with white."
+  },
+  {
+   "id": "dye_depot:tan_dye",
+   "title": "Dust to Dye",
+   "desc": "Glowstone dust converts straight into Tan Dye, the one glowstone use that is not a light source."
+  },
+  {
+   "id": "dye_depot:forest_dye",
+   "title": "Deeper Than Green",
+   "desc": "Bamboo gives Forest Dye directly, or blend green with yellow."
+  },
+  {
+   "id": "dye_depot:mint_dye",
+   "title": "Cool and Pale",
+   "desc": "Cyan and green together make Mint Dye; there is no natural source for this one."
+  },
+  {
+   "id": "dye_depot:slate_dye",
+   "title": "Stormfront",
+   "desc": "Blue and cyan make Slate Dye, the desaturated blue-grey the vanilla sixteen were missing."
+  },
+  {
+   "id": "dye_depot:indigo_dye",
+   "title": "Between Blue and Violet",
+   "desc": "Purple darkened with black gives Indigo Dye, also reachable from magenta or double-blacked pink."
+  },
+  {
+   "id": "dye_depot:ginger_dye",
+   "title": "Warm Rust",
+   "desc": "Orange and red make Ginger Dye, the mod's answer to terracotta orange."
+  },
+  {
+   "id": "dye_depot:verdant_dye",
+   "title": "Darken the Woods",
+   "desc": "Forest Dye plus black gives Verdant, one of the four shades that can only be reached through another Dye Depot dye."
+  },
+  {
+   "id": "dye_depot:teal_dye",
+   "title": "Down From Mint",
+   "desc": "Mint or aqua darkened with black gives Teal Dye, or take the shortcut from cyan and black."
+  },
+  {
+   "id": "dye_depot:navy_dye",
+   "title": "Deepest Water",
+   "desc": "Slate plus black gives Navy Dye, the darkest blue in the extended palette."
+  },
+  {
+   "id": "dye_depot:olive_wool",
+   "title": "First Bolt of Cloth",
+   "desc": "Any wool plus one of the new dyes recolours it, and the dyed wool is the doorway to that colour's bed, carpet, banner and flag."
+  },
+  {
+   "id": "dye_depot:olive_dye_basket",
+   "title": "Nine to One",
+   "desc": "Nine dyes of one colour press into a Dye Basket, a storage block that gives all nine back - the one genuinely new mechanic in the mod."
+  },
+  {
+   "id": "dye_depot:olive_terracotta",
+   "title": "Fired Earth",
+   "desc": "Eight terracotta around a new dye recolours the block, and smelting that gives the glazed pattern."
+  },
+  {
+   "id": "dye_depot:olive_concrete_powder",
+   "title": "Mix and Pour",
+   "desc": "Four sand, four gravel and one dye make eight concrete powder, which hardens on contact with water like any vanilla colour."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "dye_depot:olive_wool",
+   "members": [
+    "dye_depot:verdant_wool",
+    "dye_depot:indigo_wool",
+    "dye_depot:aqua_wool",
+    "dye_depot:mint_wool",
+    "dye_depot:navy_wool",
+    "dye_depot:slate_wool",
+    "dye_depot:beige_wool",
+    "dye_depot:ginger_wool",
+    "dye_depot:teal_wool",
+    "dye_depot:tan_wool",
+    "dye_depot:rose_wool",
+    "dye_depot:maroon_wool",
+    "dye_depot:coral_wool",
+    "dye_depot:amber_wool"
+   ]
+  },
+  {
+   "hub": "dye_depot:olive_terracotta",
+   "members": [
+    "dye_depot:verdant_terracotta",
+    "dye_depot:indigo_terracotta",
+    "dye_depot:aqua_terracotta",
+    "dye_depot:mint_terracotta",
+    "dye_depot:navy_terracotta",
+    "dye_depot:slate_terracotta",
+    "dye_depot:beige_terracotta",
+    "dye_depot:ginger_terracotta",
+    "dye_depot:teal_terracotta",
+    "dye_depot:tan_terracotta",
+    "dye_depot:rose_terracotta",
+    "dye_depot:maroon_terracotta",
+    "dye_depot:coral_terracotta",
+    "dye_depot:amber_terracotta"
+   ]
+  },
+  {
+   "hub": "dye_depot:white_dye_basket",
+   "members": [
+    "dye_depot:light_gray_dye_basket",
+    "dye_depot:gray_dye_basket",
+    "dye_depot:black_dye_basket",
+    "dye_depot:brown_dye_basket",
+    "dye_depot:red_dye_basket",
+    "dye_depot:orange_dye_basket",
+    "dye_depot:yellow_dye_basket",
+    "dye_depot:lime_dye_basket",
+    "dye_depot:green_dye_basket",
+    "dye_depot:cyan_dye_basket",
+    "dye_depot:light_blue_dye_basket",
+    "dye_depot:blue_dye_basket",
+    "dye_depot:purple_dye_basket",
+    "dye_depot:magenta_dye_basket"
+   ]
+  }
+ ],
+ "notes": "MOSTLY-COSMETIC MOD, BUT THE DYES ARE REAL CONTENT. 240 verified ids = 16 new colours x 14 vanilla block families (wool, carpet, bed, banner, candle, concrete, concrete_powder, terracotta, glazed_terracotta, stained_glass, stained_glass_pane, shulker_box, dye, dye_basket) plus 16 dye_baskets for the vanilla colours. Thirteen of those fourteen families are pure recolours of blocks that already exist and belong in wheels, exactly as the desirability data says. The dyes themselves are NOT variants of each other though - each of the sixteen is a distinct recipe from distinct ingredients, and nine of them have a unique natural source that appears nowhere else in the mod. That is why the chain is 16 dyes plus 4 mechanic steps rather than the 5-step cosmetic-mod answer given to Nightlights. CHAIN ORDER IS THE DYE DEPENDENCY LATTICE, verified across all 487 recipes. Steps 1-9 are the dyes with a one-item natural source and no Dye Depot input: amber (glow_berries OR honeycomb), olive (poisonous_potato), maroon (spider_eye), rose (rose_bush), coral (nautilus_shell), aqua (glow_ink_sac), beige (oxeye_daisy), tan (glowstone_dust), forest (bamboo). Steps 10-13 are reachable only by mixing vanilla dyes: mint (cyan+green), slate (blue+cyan), indigo (purple+black), ginger (orange+red). Steps 14-16 are the ones whose cheapest or defining route consumes another Dye Depot dye: verdant (forest+black - forest is its ONLY route, no vanilla pair reaches it), teal (mint+black or aqua+2 black, with cyan+black as a vanilla shortcut), navy (slate+black, with blue+black as a shortcut). Every dye also has a dye_from_basket recipe returning 9. MODDB CONFLICT - RECIPE GRAPH PREFERRED AS INSTRUCTED. moddb's 16 dye_depot entries are ALL _wool ids (olive_wool 0.00 through forest_wool 1.00, 6 packs each) and contain no dye at all. That ordering is upside-down against the recipe graph: dye_<C>_wool.json requires dye_depot:<C>_dye as an ingredient, so no wool can precede its dye. The dyes lead the chain here and the wools are demoted to a wheel. moddb's internal wool ordering was still used to order that wheel's members. MECHANICS: dye_basket (9 dyes -> 1 block -> 9 dyes back) is the only new mechanic and is the only reason the vanilla-colour half of the mod exists, which is why wheel 3 is the sixteen vanilla-colour baskets rather than a fourth recolour set. NO-RECIPE IDS (expected, not drops): the 16 <C>_concrete ids have no recipe because concrete forms from powder meeting water, and the 16 <C>_shulker_box ids have no recipe file because shulker dyeing is a code-side special recipe. Both are real, obtainable and in the verified set. COMPAT NOTE: 48 of the 487 recipes target other mods (32 supplementaries candle_holder_<C> and flag_<C>, 16 suppsquared gold_candle_holder_<C>), all behind forge:mod_loaded conditions. Those produce supplementaries:/suppsquared: ids, not dye_depot ids, and are not quested here. DROPS: none - every chain and wheel id is in the 240-id verified set. Correctly excluded by the membership rule: 16 <C>_wall_banner and 16 flag_<C> model stems with no lang key (wall banners reuse the banner's key; the flags are supplementaries art), and 16 <C>_candle_cake lang keys with no item model (candle cakes are placed block states, never items). Wheels are capped at 14 so each 16-colour wheel is one short: forest_wool and forest_terracotta are the hubs' missing siblings, and pink_dye_basket is missing from wheel 3."
+}

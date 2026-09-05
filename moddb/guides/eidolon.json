@@ -1,0 +1,266 @@
+{
+ "mod": "eidolon",
+ "ids_in_jar": 206,
+ "videos": [
+  {
+   "title": "Eidolon Developer Spotlight (Part 1 - Getting Started)",
+   "channel": "elucent",
+   "views": 70367,
+   "duration": 1137,
+   "id": "B7SGqZYfnJk",
+   "chars": 16156
+  }
+ ],
+ "items": {
+  "eidolon:archive": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0438,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "eidolon:enchanted_ash": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.607,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "eidolon:wooden_altar": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7082,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "eidolon:basic_amulet": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5104,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "eidolon:straw_effigy": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7141,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "items_by_display_name": {
+  "eidolon:basic_amulet": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5104,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Basic Amulet"
+  },
+  "eidolon:enchanted_ash": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.607,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Enchanted Ash"
+  },
+  "eidolon:wooden_altar": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7082,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Wooden Altar"
+  },
+  "eidolon:straw_effigy": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7141,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Straw Effigy"
+  }
+ },
+ "human_notes": {
+  "_confidence": "MIXED, and jar-weighted. B7SGqZYfnJk is by elucent, the MOD AUTHOR, which makes it authoritative in principle -- but it is a 1.16 launch spotlight, it is dubbed (Eidolon becomes 'Leelon'/'Idolom', the codex becomes 'Elysia'), and it deliberately covers world flavour rather than progression, saying the mechanics get their own later videos. The two things it does state about progression are recorded below and are valuable. The ORDER section is taken from eidolon_repraised-1.20.1-0.3.13's own advancement DAG, which is clean and unambiguous. Note the installed mod is Eidolon: Repraised, a continuation of the original the author is presenting here.",
+  "order": [
+   {
+    "claim": "Craft the codex first -- a book plus rotten flesh, deliberately cheap. It is the mod's guide and its chapter list is the intended reading order.",
+    "video": "B7SGqZYfnJk",
+    "ids": [
+     "eidolon:codex"
+    ],
+    "note": "The Codex is cheap - a book plus rotten flesh - and documents the entire mod."
+   },
+   {
+    "claim": "Pewter is the first material and the root of the entire tech tree -- everything else in the mod hangs off it in the advancement graph. Pewter Blend smelts into Pewter Ingots.",
+    "video": null,
+    "ids": [
+     "eidolon:pewter_blend",
+     "eidolon:pewter_ingot",
+     "eidolon:lead_ingot",
+     "eidolon:raw_silver"
+    ],
+    "note": "(jar advancement DAG, eidolon_repraised-1.20.1-0.3.13: root(codex) -> pewter_ingot -> {brazier, crucible, worktable})"
+   },
+   {
+    "claim": "Three stations branch off Pewter and you want all three: the Magic Workbench for crafting, the Crucible for alchemy, and the Brazier for rituals.",
+    "video": null,
+    "ids": [
+     "eidolon:worktable",
+     "eidolon:crucible",
+     "eidolon:brazier",
+     "eidolon:pewter_ingot"
+    ],
+    "note": "(jar advancement DAG: pewter_ingot -> worktable, pewter_ingot -> crucible, pewter_ingot -> brazier)"
+   },
+   {
+    "claim": "The Brazier leads to Soul Shards, and the Crucible leads to Research Notes and the wooden brewing stand. Research Notes are what unlock the spell line -- flame and frost spells both sit behind them.",
+    "video": null,
+    "ids": [
+     "eidolon:soul_shard",
+     "eidolon:research_notes",
+     "eidolon:research_table",
+     "eidolon:completed_research",
+     "eidolon:crucible",
+     "eidolon:brazier"
+    ],
+    "note": "(jar advancement DAG: brazier -> soul_shard; crucible -> research_notes -> {flame_spell, frost_spell}; crucible -> wooden_brewing_stand)"
+   },
+   {
+    "claim": "A Wooden Altar with an effigy on top is what makes prayer possible. The altar blocks tile together, so build it as wide as you like from wood.",
+    "video": "B7SGqZYfnJk",
+    "ids": [
+     "eidolon:wooden_altar",
+     "eidolon:stone_altar",
+     "eidolon:straw_effigy",
+     "eidolon:unholy_effigy"
+    ],
+    "note": "The wooden altar is freeform: altar blocks connect to each other in whatever arrangement, with an effigy placed on top to complete it."
+   }
+  ],
+  "gates": [
+   {
+    "claim": "BUILD YOUR ALTAR AS EARLY AS YOU POSSIBLY CAN. You may only gain a deity's favour ONCE PER DAY, so favour is limited by real calendar days rather than by resources -- every day you delay the altar is a day of progress you can never get back.",
+    "video": "B7SGqZYfnJk",
+    "ids": [
+     "eidolon:wooden_altar",
+     "eidolon:straw_effigy",
+     "eidolon:holy_symbol",
+     "eidolon:unholy_symbol"
+    ],
+    "note": "Deity favor is day-gated - one prayer or offering per day - so the altar is worth building as early as possible."
+   },
+   {
+    "claim": "Prayer needs signs drawn in front of the altar -- three of the matching kind -- and the deity you can reach depends on which signs you use.",
+    "video": "B7SGqZYfnJk",
+    "ids": [
+     "eidolon:wooden_altar",
+     "eidolon:enchanted_ash",
+     "eidolon:unholy_symbol",
+     "eidolon:holy_symbol"
+    ],
+    "note": "Three unholy symbols set before the altar allow prayer to the dark deity for favor."
+   },
+   {
+    "claim": "Upgrade the altar and the offerings you place on it as soon as you find better ones. Better altars and better offerings make each day's favour worth more, and since you only get one a day that multiplier is the whole game.",
+    "video": "B7SGqZYfnJk",
+    "ids": [
+     "eidolon:stone_altar",
+     "eidolon:wooden_altar",
+     "eidolon:unholy_effigy"
+    ],
+    "note": "Altar upgrades and better offerings both speed favor gain; always offer the best material available."
+   }
+  ],
+  "bosses": [],
+  "traps": [
+   {
+    "claim": "Enchanted Ash is a barrier, not just a crafting item. A line of it on the ground stops Spectres dead -- they cannot cross it even while attacking you. It is cheap, two per craft, so lay it around anywhere you are working at night.",
+    "video": "B7SGqZYfnJk",
+    "ids": [
+     "eidolon:enchanted_ash"
+    ],
+    "note": "Enchanted Ash is cheap (two per craft) and spectres cannot cross a drawn line of it - it behaves like a wall to them."
+   },
+   {
+    "claim": "Do not underestimate Spectres. They cut your healing in a fight, which makes them far more dangerous than their damage suggests -- but their drops feed later mod items, so learn to kill them rather than avoiding them.",
+    "video": "B7SGqZYfnJk",
+    "ids": [
+     "eidolon:enchanted_ash",
+     "eidolon:soul_shard"
+    ],
+    "note": "Spectres suppress healing in a fight and deserve respect; their drops also feed recipes later in the mod."
+   }
+  ],
+  "signature": [
+   {
+    "claim": "Eidolon is a black-magic grab bag rather than a single-mechanic mod -- necromancy, alchemy and ritual all sit side by side, and the author says it is deliberately hard to give one theme.",
+    "video": "B7SGqZYfnJk",
+    "ids": [
+     "eidolon:codex",
+     "eidolon:crucible",
+     "eidolon:brazier",
+     "eidolon:worktable"
+    ],
+    "note": "Eidolon reads as a black-magic sampler - necromancy, alchemy and theurgy under one roof rather than a single theme."
+   },
+   {
+    "claim": "The deity favour system is the mod's spine and the thing quests should be built around, because it is the one mechanic gated on real time rather than materials.",
+    "video": "B7SGqZYfnJk",
+    "ids": [
+     "eidolon:wooden_altar",
+     "eidolon:holy_symbol",
+     "eidolon:unholy_symbol",
+     "eidolon:straw_effigy",
+     "eidolon:unholy_effigy"
+    ],
+    "note": "The one-prayer-per-day favor cap is the mod's defining constraint."
+   },
+   {
+    "claim": "The mod adds its own night mobs -- the Zombie Brute, the Spectre and the Wraith -- and their drops are mod ingredients rather than just loot.",
+    "video": "B7SGqZYfnJk",
+    "ids": [
+     "eidolon:zombie_heart",
+     "eidolon:wraith_heart",
+     "eidolon:soul_shard",
+     "eidolon:lesser_soul_gem"
+    ],
+    "note": "Eidolon adds its own night spawns - the Zombie Brute and the Spectre - with the Wraith beyond them."
+   },
+   {
+    "claim": "Research is the gate on the interesting half of the mod: Research Notes worked at a Research Table into Completed Research, which is what opens spells and the deeper recipes.",
+    "video": null,
+    "ids": [
+     "eidolon:research_notes",
+     "eidolon:research_table",
+     "eidolon:completed_research",
+     "eidolon:shadow_gem",
+     "eidolon:arcane_gold_ingot",
+     "eidolon:athame",
+     "eidolon:wicked_weave"
+    ],
+    "note": "(jar advancement DAG: crucible -> research_notes -> flame_spell / frost_spell)"
+   }
+  ]
+ }
+}

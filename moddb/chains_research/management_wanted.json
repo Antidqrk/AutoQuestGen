@@ -1,0 +1,176 @@
+{
+  "mod": "management_wanted",
+  "verified_against": "management_wanted-1.3.3-forge-1.20.1.jar",
+  "item_count_in_jar": 2040,
+  "chain": [
+    {
+      "id": "management_wanted:copper_wire",
+      "title": "Strip Copper into Wire",
+      "desc": "One copper ingot makes two wire at a crafting table. Wire is the shared component in every electronic this mod adds, so pull a stack of copper before you start."
+    },
+    {
+      "id": "management_wanted:flashlight",
+      "title": "Assemble a Flashlight",
+      "desc": "Glass, a redstone torch and a wire. Right-click to switch the beam on and off - you will be walking dark hallways at 3AM and the vanilla torch is not going to help you see down them."
+    },
+    {
+      "id": "management_wanted:laptop",
+      "title": "Craft a Laptop",
+      "desc": "The single most important block in the mod. Right-clicking it opens the management hub: clock in for a night shift, check your star level and salary, use the Fazbank, and buy blocks, supplies and animatronics. Place one where you will be sleeping."
+    },
+    {
+      "id": "management_wanted:faz_buck",
+      "title": "Clock In and Get Paid",
+      "desc": "Clock in on the laptop, survive until morning, then clock out - quitting early earns you nothing. Your pay lands in your wallet; the Fazbank page turns it into physical Faz-Bux and Faz-Coins you can carry or hand to another player."
+    },
+    {
+      "id": "management_wanted:flare",
+      "title": "Redeem a Faz-ply Drop Flare",
+      "desc": "Nothing you buy on the laptop lands in your inventory. Checkout hands you this instead: right-click it on open ground and a supply drop arrives carrying the cart you paid for. Keep a clear patch outside the building, because every shop order from here on comes down this way."
+    },
+    {
+      "id": "management_wanted:freddy_mask",
+      "title": "Buy a Freddy Mask",
+      "desc": "The first thing worth ordering from the blocks and supplies shop. Hold it up and the animatronics stop recognising you - it is the difference between a survivable night and a jumpscare. One is enough; it does not wear out."
+    },
+    {
+      "id": "management_wanted:blastdoor",
+      "title": "Buy a Blast Door",
+      "desc": "The office door you slam when something is standing in the hallway. It closes hard enough to crush whatever is under it, so watch your own feet. Add Door Buttons to the same order - the door does not open itself, and you want one on each side so you can shut yourself in without stepping into the corridor."
+    },
+    {
+      "id": "management_wanted:vent",
+      "title": "Buy Vent Sections",
+      "desc": "Crawlable ducting for the walls of your building. Animatronics with the vent-crawler behaviour route through these, which is what makes a pizzeria dangerous instead of decorative."
+    },
+    {
+      "id": "management_wanted:vent_trigger",
+      "title": "Place a Vent Trigger",
+      "desc": "The marker block that tells an animatronic where to enter and exit a vent run. Each one has its own settings screen for disable time and height offset, and you can make them invisible once the layout works."
+    },
+    {
+      "id": "management_wanted:monitor",
+      "title": "Buy a Monitor",
+      "desc": "Screen for the security desk. Buy several with a modular desk and you have the office half of the build finished."
+    },
+    {
+      "id": "management_wanted:locker",
+      "title": "Buy a Locker",
+      "desc": "Staff-room storage you can lock to a specific player's username - leave the name blank to unlock it again. Useful on a server where the night guard is not the only one with a key."
+    },
+    {
+      "id": "management_wanted:hand_crank",
+      "title": "Craft the Hand Crank",
+      "desc": "An iron ingot over a copper ingot. Left-click an animatronic with it and it collapses back into its own spawn egg, so you can pick up whatever wandered in and re-place it on your stage."
+    },
+    {
+      "id": "management_wanted:freddy_spawn_egg",
+      "title": "Buy Freddy Fazbear",
+      "desc": "The laptop's animatronics shop stocks the whole cast for cash. Buying one and placing it on a stage is how a building becomes a pizzeria - and how it becomes a problem after midnight."
+    },
+    {
+      "id": "management_wanted:fazwrench",
+      "title": "Forge the Faz-Wrench",
+      "desc": "Copper, a glass pane and iron nuggets. It is the tool that actually kills an animatronic rather than just moving it - the mod calls doing so being a Professional Engineer."
+    },
+    {
+      "id": "management_wanted:terminal",
+      "title": "Build a Terminal",
+      "desc": "Expensive - an iron block and a diamond on top of wire. It runs the same management hub as the laptop, but it is also the Franchisee's job site: place one next to an unemployed villager and one of them takes the job."
+    },
+    {
+      "id": "management_wanted:faz_coin",
+      "title": "Collect Faz-Coins",
+      "desc": "Helpy hands them out, Rockstar Freddy demands them, and the claw machines and gumball machines eat them. The Franchisee also deals in them, so bank a pile before you go shopping for property."
+    },
+    {
+      "id": "management_wanted:fredbears_family_diner_deed",
+      "title": "Buy the Fredbear's Diner Deed",
+      "desc": "Trade a Franchisee for it. Right-click the deed on flat ground, confirm, and the entire diner is built for you - it overwrites anything in the way, so pick an empty field."
+    },
+    {
+      "id": "management_wanted:freddy_fazbears_pizza_deed",
+      "title": "Buy the Freddy Fazbear's Pizza Deed",
+      "desc": "The next property on the Franchisee's list. Bigger floor plan, more rooms to wire with doors and vents, more animatronics you can justify buying."
+    },
+    {
+      "id": "management_wanted:grand_reopening_deed",
+      "title": "Buy the Grand Reopening Deed",
+      "desc": "The last of the five deeds and the biggest building. Every deed shows in-game as just 'Title Deed', so keep them named or in separate slots - you cannot tell them apart in the hotbar."
+    },
+    {
+      "id": "management_wanted:blacklight_dye",
+      "title": "Mix Blacklight Dye",
+      "desc": "Light gray dye, a glow ink sac and black dye stacked vertically. Use it on the animatronics that accept it and they repaint into their blacklight variants - purely a look, but it is the only way to get those skins."
+    },
+    {
+      "id": "management_wanted:item_ufo",
+      "title": "Buy a UFO Byte from Lolbit",
+      "desc": "Lolbit runs a shop that generates in each of the mod's five biomes and sells Bytes for cash. Right-click a Byte on an entity to set it loose as a little floating companion."
+    },
+    {
+      "id": "management_wanted:icecicle",
+      "title": "Craft the Suspicious Icecicle",
+      "desc": "A snow block, a pointed dripstone and a Freddy spawn egg. It starts the Frostbear boss fight - a one-off encounter, so bring gear and do not craft it inside your finished restaurant."
+    }
+  ],
+  "collections": [
+    {
+      "name": "Masks",
+      "desc": "Freddy, Bonnie, Chica, Foxy, Mangle, Balloon Boy and Withered Bonnie masks, all in the mw:masks tag. They work the same way - hold one up so an animatronic loses track of you. Giving Withered Bonnie his own mask back is its own achievement.",
+      "example_ids": [
+        "management_wanted:bonnie_mask",
+        "management_wanted:chica_mask",
+        "management_wanted:foxy_mask",
+        "management_wanted:w_bonnie_mask",
+        "management_wanted:bb_mask",
+        "management_wanted:mangle_mask"
+      ]
+    },
+    {
+      "name": "Suits and Costume Armour",
+      "desc": "Full four-piece armour sets styled as Freddy, Bonnie, Chica, Foxy, Fixed Foxy, Fredbear, Golden Freddy, Sparky, Spring Bonnie and the Yellow Rabbit. Combining the four Spring Bonnie or Yellow Rabbit pieces at a crafting table makes a placeable suit block. Wearing the Spring Bonnie set near water triggers the springlocks.",
+      "example_ids": [
+        "management_wanted:spring_armor_helmet",
+        "management_wanted:spring_bonne_suit_block",
+        "management_wanted:rabbit_armor_helmet",
+        "management_wanted:yellow_rabbit_suit_block",
+        "management_wanted:fredbear_armor_helmet"
+      ]
+    },
+    {
+      "name": "Faz Woods",
+      "desc": "Two wood sets from the mod's own biomes - Fazwood from FazHills logs, Dusting logs and Lilygear trunks, and Blackwood from Blacktomb logs - each with planks, stairs, slabs, fences, doors, trapdoors and boats. The logs also smelt to charcoal.",
+      "example_ids": [
+        "management_wanted:faz_hills_stem",
+        "management_wanted:fazwood_planks",
+        "management_wanted:black_tomb_log",
+        "management_wanted:blackwood_planks",
+        "management_wanted:dusting_log",
+        "management_wanted:lilygear_trunk"
+      ]
+    },
+    {
+      "name": "Pizzeria Building Blocks",
+      "desc": "Hundreds of tiles, facade bricks, ceiling tiles, arcade carpets, curtains, movie walls and stage blocks, most with matching slab and stair recipes made on a crafting table from the base block. Pure decoration - build the restaurant the deeds do not cover.",
+      "example_ids": [
+        "management_wanted:stage_bricks",
+        "management_wanted:checkered_stage",
+        "management_wanted:arcade_carpet_mixed",
+        "management_wanted:wall_tiles"
+      ]
+    },
+    {
+      "name": "Plushies and Arcades",
+      "desc": "Squeezable plushes of most of the cast plus playable arcade cabinets, claw machines and gumball machines that take Faz-Coins. Honking a plush a hundred times is an achievement in itself.",
+      "example_ids": [
+        "management_wanted:freddy_plush",
+        "management_wanted:bonnie_plush",
+        "management_wanted:benny_plush",
+        "management_wanted:arcade_bottom",
+        "management_wanted:clawmachine_light_blue"
+      ]
+    }
+  ],
+  "notes": "Very large FNAF mod (2040 lang-registered items/blocks, ~600 entities, 9408 classes) with a genuine management loop underneath the decoration. The 22 hand-written advancements all use the 'minecraft:impossible' trigger and fire from code, so they name what matters but give no ordering; order here comes from recipes plus the code. Core loop confirmed from class strings: the Laptop and Terminal both open ComputerMainHub, whose buttons run ClockInProcedure, StarLevelHub (level / guests / salary / next star level), the Fazbank pages (deposit, withdraw, custom amount), ComputerShopBlocks and ComputerShopAnimatronics. BlocksSuppliesNameReturnItemProcedure lists exactly what the blocks-and-supplies shop stocks - blast doors, deluxe blast doors, door buttons, door frames, vents, vent doors, vent triggers, monitors, retro monitors, lockers, office chairs, desks, lights, toilets, windows and the FREDDY_MASK - so those must be quested as 'buy', never 'craft'. ManagementWantedModTrades registers the FRANCHISEE villager (job site POI = the Terminal block) trading emeralds for FAZ_COIN, FAZ_BUCK and all five deeds: FREDBEARS_FAMILY_DINER_DEED, FREDDY_FAZBEARS_PIZZA_DEED, JEFFS_PIZZA_DEED, DISCOUNT_DINER_DEED, GRAND_REOPENING_DEED. All five display as 'Title Deed' in-game. HandCrankItem tooltip reads \"Left Click to get an animatronic's spawn egg\". Helpy/BuffHelpy/Helpi/Paulbear entities emit FAZ_COIN on tick. Lolbit sells ITEM_UFO / ITEM_MINIFO / ITEM_XFO, which are right-clicked onto entities. IMPORTANT DELIVERY MECHANIC, added on verification: shop purchases are never handed over directly. CheckoutButtonClickedProcedure runs BlockShopTotalProcedure and BlockShopRemoveCartProcedure, sets the player's flareUsage variable and gives management_wanted:flare; FlareRightclickProcedure then reads that variable and calls the matching FlareReturnCharacterEgg Procedure (BudgetTech, DumpsterDiver, FamilyDiner, RetroWarehouse, SmilesServos, VintageCatalog), which is where the 32 purchasable animatronic spawn eggs live - plain FREDDY_SPAWN_EGG among them, confirmed as an exact match and not just the UNWITHERED_ prefix. The Flare therefore has a verified survival source and is a required chain step: without it a player checks out and never sees the goods. There is a dimension management_wanted:itp_pizzeria that places the fnaf85 structure and forces adventure mode on entry - no portal item was found in the jar, so it is likely command- or event-entered and is deliberately not in the chain. Also deliberately excluded: the costume armour pieces (no shop, recipe or loot source found - only the four-piece-to-suit-block combine recipes exist), and the fire_axe, knife, laser_item and hand_unit, which have no recipe or verified source in this jar. management_wanted:door_button was a chain step and was folded into the blastdoor step instead: the item is entirely real (lang 'Door Button', assets/management_wanted/models/item/door_button.json, a block loot table that drops itself, and DOOR_BUTTON in the shop's stock list), but autoquestgen's own scan_mods drops it from the item pool - as it also drops light_button, the other id in this jar with an _on twin - so a step naming it could not be built. If that scanner filter ever changes, restoring it as its own step after blastdoor is correct. management_wanted:watch (Faz-Watch) is excluded for a different reason - TooltipsSystemProcedure gives it a real use, \"Use the Faz-Watch to call Freddy and enter his chest cavity!\", but no recipe or shop entry for it was found in this jar."
+}

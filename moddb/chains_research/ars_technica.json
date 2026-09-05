@@ -1,0 +1,152 @@
+{
+  "mod": "ars_technica",
+  "parent_mod": "ars_nouveau",
+  "verified_against": "ars_technica-1.20.1-1.4.2.jar",
+  "item_count_in_jar": 25,
+  "chain": [
+    {
+      "id": "ars_technica:amethyst_dust",
+      "title": "Amethyst Dust",
+      "desc": "Put an amethyst shard through Crushing Wheels for four dust. It is Create machinery paying an Ars Nouveau bill - the dust makes Source liquid at a quarter of the cost."
+    },
+    {
+      "id": "ars_technica:quartz_dust",
+      "title": "Nether Quartz Dust",
+      "desc": "Crush nether quartz for three. The other half of this mod's crushing output, and the reason a Crushing Wheel earns its keep in a mage's basement."
+    },
+    {
+      "id": "ars_technica:glyph_insert",
+      "title": "Insert",
+      "desc": "Two chests on the Scribes Table, no essence needed. The cheapest glyph in the mod: it sweeps loose items into nearby containers, which is what a spell does instead of a hopper."
+    },
+    {
+      "id": "ars_technica:calibrated_precision_mechanism",
+      "title": "Calibrated Precision Mechanism",
+      "desc": "Amethyst on the pedestals of an Enchanting Apparatus around a Create Precision Mechanism. This is the join between the two mods, and everything else in the chain needs one."
+    },
+    {
+      "id": "ars_technica:runic_spanner",
+      "title": "Runic Spanner",
+      "desc": "Gold and a Calibrated Precision Mechanism on the Apparatus. A Create wrench that also works on Ars blocks - it encases spell turrets and turns Source Relays into Precise Relays in place."
+    },
+    {
+      "id": "ars_technica:source_engine",
+      "title": "Source Motor",
+      "desc": "Brass, cogwheels, an electron tube and a Calibrated Precision Mechanism. It burns Source from a nearby jar and gives back rotational force at an RPM you set on the block face."
+    },
+    {
+      "id": "ars_technica:glyph_carve",
+      "title": "Carve",
+      "desc": "Manipulation essence with a crafting table, cobblestone stairs, a slab and a wall. Cast it on a pile of identical blocks and they become stairs; augment for walls, dampen for slabs."
+    },
+    {
+      "id": "ars_technica:glyph_pack",
+      "title": "Pack",
+      "desc": "Manipulation essence with a crafting table, a chest and an iron block. Condenses identical items into their 2x2 recipe - or 3x3 with an augment, 1x1 dampened."
+    },
+    {
+      "id": "ars_technica:glyph_press",
+      "title": "Press",
+      "desc": "Manipulation essence and an entire Mechanical Press on the Scribes Table. The Press's whole recipe book, cast as a spell, with no belt and no kinetics."
+    },
+    {
+      "id": "ars_technica:glyph_polish",
+      "title": "Polish",
+      "desc": "Manipulation essence with a sheet of Create sandpaper. Refines items into their polished variants in mid-air - the cheapest of the three processing glyphs."
+    },
+    {
+      "id": "ars_technica:glyph_whirl",
+      "title": "Whirl",
+      "desc": "Manipulation essence and three air essence. Spins a whirlwind that centrifuges items in the area, and combining it with Water, Flare or Smelt washes, smokes or blasts them instead."
+    },
+    {
+      "id": "ars_technica:glyph_fuse",
+      "title": "Fuse",
+      "desc": "Manipulation and fire essence with three blaze rods. Slams items together at speed to mix them; add Smelt for heated mixing, which is the Mechanical Mixer without the mixer."
+    },
+    {
+      "id": "ars_technica:glyph_telefeast",
+      "title": "Telefeast",
+      "desc": "Manipulation essence with a golden apple, a bucket, a bottle and an ender pearl. Eats or drinks the contents of a distant container - the only glyph here that feeds you rather than an item."
+    },
+    {
+      "id": "ars_technica:spy_monocle",
+      "title": "Spy Monocle",
+      "desc": "A spyglass on the Apparatus with a Calibrated Precision Mechanism. A curio that zooms, and doubles as Create's Engineer's Goggles for reading machines across a room."
+    },
+    {
+      "id": "ars_technica:transmutation_focus",
+      "title": "Focus of Transmutation",
+      "desc": "Brass, a rabbit's foot and Source on the Apparatus. Held in a focus slot it doubles the throughput of Press, Polish and Whirl and the damage of Obliterate."
+    },
+    {
+      "id": "ars_technica:thread_pressure",
+      "title": "Thread of Pressure",
+      "desc": "Air essence on the Apparatus. Sewn into your Ars armour it grants ultra-high-pressure air that refills over time - higher thread levels mean more capacity and a faster refill."
+    },
+    {
+      "id": "ars_technica:giant_experience_gem",
+      "title": "Giant Experience Gem",
+      "desc": "Four of Ars Nouveau's Greater Experience Gems, and four back out again. A denser way to carry levels, and Create's disenchanter will melt one into forty-eight millibuckets of liquid experience."
+    },
+    {
+      "id": "ars_technica:glyph_superheat",
+      "title": "Superheat",
+      "desc": "Three fire essence, a blaze rod and a Blaze Cake. Not a spell on its own - pair it with Fuse for super-heated mixing, the recipes a plain fire will not do."
+    },
+    {
+      "id": "ars_technica:glyph_obliterate",
+      "title": "Obliterate",
+      "desc": "Manipulation essence with an anvil and a block of diamonds. An arcane hammer that flattens whatever it hits; add Sensitive and it crushes items instead of killing things."
+    },
+    {
+      "id": "ars_technica:gargantuan_experience_gem",
+      "title": "Gargantuan Experience Gem",
+      "desc": "Four Giant gems, so sixteen Greater ones. The densest experience storage in the ecosystem, and a hundred and ninety-two millibuckets if you disenchant it."
+    },
+    {
+      "id": "ars_technica:technomancer_helmet",
+      "title": "Technomancer's Hat",
+      "desc": "Upgrade an Ars Nouveau hood on the Apparatus with a Mark of Mastery, netherite, brass and a pair of Create Goggles. The set resists damage from machinery and speeds up nearby schematic cannons."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "ars_technica:glyph_insert",
+      "members": [
+        "ars_technica:glyph_carve",
+        "ars_technica:glyph_pack",
+        "ars_technica:glyph_press",
+        "ars_technica:glyph_polish",
+        "ars_technica:glyph_whirl",
+        "ars_technica:glyph_fuse",
+        "ars_technica:glyph_telefeast",
+        "ars_technica:glyph_superheat",
+        "ars_technica:glyph_obliterate"
+      ]
+    },
+    {
+      "hub": "ars_technica:technomancer_helmet",
+      "members": [
+        "ars_technica:technomancer_chestplate",
+        "ars_technica:technomancer_leggings",
+        "ars_technica:technomancer_boots",
+        "ars_technica:thread_pressure",
+        "ars_technica:spy_monocle",
+        "ars_technica:transmutation_focus"
+      ]
+    },
+    {
+      "hub": "ars_technica:calibrated_precision_mechanism",
+      "members": [
+        "ars_technica:runic_spanner",
+        "ars_technica:source_engine",
+        "ars_technica:amethyst_dust",
+        "ars_technica:quartz_dust",
+        "ars_technica:giant_experience_gem",
+        "ars_technica:gargantuan_experience_gem"
+      ]
+    }
+  ],
+  "notes": "Verified against ars_technica-1.20.1-1.4.2.jar: META-INF/mods.toml modId=ars_technica, modLoader=javafml, minecraft versionRange [1.20.1] exactly, mandatory dependencies on ars_nouveau [1.20.1-4.12,), ars_elemental [0.6.7.8,), create [6.0.4,6.1.0) and starbunclemania; no fabric.mod.json, all 165 sampled class files at major version 61 (Java 17 = 1.20.1). ID DERIVATION: the naive rule gives 15 and the true count is 25, so this mod UNDERCOUNTS BY TEN and every widening below is proved, not assumed. Baseline: assets/ars_technica/models/item/ holds 26 files; models INTERSECT (item.ars_technica.* UNION block.ars_technica.*) is 15. WIDENING 1, INVERTED LANG CONVENTION, +10: the ten glyphs (carve, fuse, insert, obliterate, pack, polish, press, superheat, telefeast, whirl) each have a models/item file but NO item.ars_technica.<name> key. Their names live under the inverted key ars_technica.glyph_name.glyph_carve, with a matching ars_technica.glyph_desc.glyph_carve - namespace first, category second, id last. Proof they are real items and not decoration: each has a data/ars_technica/recipes/glyph_<name>.json of type ars_nouveau:glyph whose \"output\" field is the bare id string ars_technica:glyph_<name>, and each has a Patchouli page under assets/ars_nouveau/patchouli_books/worn_notebook/en_us/entries/glyphs_1..3/. This is the same shape recorded for ars_additions: Ars Nouveau glyphs never get an item. lang key. WIDENING 2, ITEM REGISTERED OUTSIDE THE ITEM REGISTRY, +0 net but worth recording: ars_technica:thread_pressure does have both a model and an item. lang key so the naive rule caught it, but it is NOT in ItemsRegistry - it is registered through Ars Nouveau's thread/perk system from net/mcreator/ars_technica/common/items/threads/PressurePerk.class, and its displayed name is COMPOSED AT RUNTIME from two keys, 'ars_technica.thread_of = Thread of %s' plus 'item.ars_technica.thread_pressure = Pressure'. A lang dump alone would have read it as an item called simply 'Pressure'. SECOND PASS, independent of assets: the CONSTANT_Utf8 pool of net/mcreator/ars_technica/setup/ItemsRegistry.class lists exactly 14 registry names - amethyst_dust, calibrated_precision_mechanism, gargantuan_experience_gem, giant_experience_gem, pocket_factory_disc, quartz_dust, runic_spanner, source_engine, spy_monocle, technomancer_boots, technomancer_chestplate, technomancer_helmet, technomancer_leggings, transmutation_focus. Fourteen plus thread_pressure plus the ten glyphs is 25, matching the widened asset pass. FALSE IDS CAUGHT AND EXCLUDED, three, each disproved a different way. (a) ars_technica:arcane_gear has a models/item file and NOTHING else - no lang key in any convention, no recipe, no texture of its own, and the string appears in no class constant pool. Opening the model settles it: its parent is 'ars_technica:item/runic_spanner' and its only element is named 'Cog' - it is a sub-model of the spanner's gear, not an item. (b) ars_technica:encased_turret_block IS registered in BlockRegistry AND has a blockstate, and is still not an item: no lang key, no models/item, and absent from ItemsRegistry. It is created in-world by using the Runic Spanner on an Ars Nouveau spell turret. This is exactly the counter-example the brief warns about - a blockstate proves a BLOCK, not an ITEM. (c) ars_technica:precise_relay is the inverse: it HAS a lang key (block.ars_technica.precise_relay) and IS in BlockRegistry, but has no blockstate, no item model and no ItemsRegistry entry. net/mcreator/ars_technica/mixin/Relay/RelayBlockMixin.class and PreciseRelay.class show it is an in-place conversion of an Ars Nouveau Source Relay done with the spanner. Neither block can be held, so neither is quested. GECKOLIB: assets/ars_technica/geo/ holds seven .geo.json files - arcane_fusion, arcane_hammer, arcane_polish, arcane_press, encased_basic_spell_turret, technomancer_medium_armor and whirl. All were checked and none hides an item: five are spell-effect ENTITIES (EntityRegistry registers arcane_fusion_entity, arcane_hammer_entity, arcane_polish_entity, arcane_press_entity and whirl_entity), one is the encased turret block above, and technomancer_medium_armor is the render for the four armour pieces, which all have ordinary models/item files anyway. UNOBTAINABLE, DROPPED, 1 of 25: ars_technica:pocket_factory_disc is registered, modelled and named ('§bMusic Disc', with ars_technica.pocket_factory_disc.desc = 'zeroregard - pocket factory'), and has NO recipe and NO loot table anywhere in the jar. The only data entry touching it is data/minecraft/tags/items/music_discs.json - and crucially it is NOT added to minecraft:creeper_drop_music_discs, which is the tag that makes a disc drop from a creeper killed by a skeleton. There is therefore no path to one in survival; it is a credits disc for the creative tab. Dropped as an uncompletable quest. The other 24 all have a verified obtain path. RECIPE-FORMAT TRAPS handled here: recipes for this mod's own items are spread across FIVE namespaces' folders - data/ars_technica/, data/create_enchantment_industry/ (two disenchanting recipes that consume the experience gems), data/starbunclemania/ (two create:mixing recipes that consume ars_technica:amethyst_dust via the forge:dusts/amethyst tag this jar defines), plus tags under data/ars_nouveau/, data/curios/, data/forge/, data/hexcasting/ and data/minecraft/. Create-family plural 'results' arrays are used by the create:crushing, create:mixing and create_enchantment_industry:disenchanting recipes, so the two dusts are invisible to a scanner reading only 'result'. A NEW CONDITION TYPE, not forge:conditional: six recipes - calibrated_precision_mechanism, runic_spanner, spy_monocle, thread_pressure, transmutation_focus and the focus - carry {\"type\":\"ars_technica:config_enabled\", \"config_option\":\"recipe<Name>Enabled\", \"value\":true}, a mod-defined recipe condition gating each on its own config flag rather than on a third mod. All default to enabled, so all six are counted, but a condition-aware scanner that only knows forge:mod_loaded should be told this shape exists. ORDERING is a recipe graph with one hard hub. ars_technica:calibrated_precision_mechanism is that hub: runic_spanner, spy_monocle and source_engine all list it explicitly as a pedestal or key ingredient, and it is itself the first thing craftable that needs Create output (a Precision Mechanism) on an Ars altar. The two crushing dusts sit ahead of everything because they need only a Crushing Wheel and no ars_technica item. Glyph order is not a guess either - the ars_nouveau:glyph recipes carry an explicit \"exp\" cost, which is the tier: insert 27 with no essence at all, carve and pack 27, polish, press, fuse, whirl and telefeast at 55, and obliterate and superheat at 160, which is why those two sit late. The experience gems are a strict line, 4 ars_nouveau:greater_experience_gem -> giant -> 4 giant -> gargantuan, with shapeless recipes running both directions. The armour is last: ars_technica:armor_upgrade recipes take an Ars Nouveau hood/robe/legs/boots as reagent plus ars_elemental:mark_of_mastery and netherite, and the helmet additionally demands create:goggles. CONSENSUS CONFLICT, RECORDED AND OVERRIDDEN: moddb.json orders source_engine 0.0, runic_spanner 0.2, technomancer_chestplate 0.4, technomancer_leggings 0.6, technomancer_helmet 0.8, technomancer_boots 1.0. Two problems. First, it omits ars_technica:calibrated_precision_mechanism entirely and puts source_engine first, but data/ars_technica/recipes/source_engine.json lists {\"item\":\"ars_technica:calibrated_precision_mechanism\"} as key S - the machine ranked ahead of the part it is built from, again. Second, it spreads the four armour pieces across four separate ranks; the measured rule is helmet only, so only technomancer_helmet is quested and the other three are wheeled with it. Consensus also omits all ten glyphs, which are the actual reason to install this mod."
+}

@@ -1,0 +1,92 @@
+{
+ "mod": "nightlights",
+ "verified_against": "nightlights-1.20.1-1.1.jar",
+ "item_count_in_jar": 82,
+ "chain": [
+  {
+   "id": "nightlights:fairy_lights_default",
+   "title": "String Up the Glow",
+   "desc": "Three string over three glowstone dust yields six Fairy Lights, the cheapest light source the mod adds."
+  },
+  {
+   "id": "nightlights:hanging_lights_default",
+   "title": "Heavier Hang",
+   "desc": "Six string over three glowstone dust gives six Hanging Lights, the chunkier bulb-string variant."
+  },
+  {
+   "id": "nightlights:frog_green",
+   "title": "A Friend by the Bed",
+   "desc": "A lily pad and a button over glass, glowstone dust, redstone and green dye make the Green Frog Night Light."
+  },
+  {
+   "id": "nightlights:mushroom_red",
+   "title": "Cap Lamp",
+   "desc": "The same frame built around a red mushroom and red dye gives the Red Mushroom Night Light."
+  },
+  {
+   "id": "nightlights:octopus_brown",
+   "title": "Eight Arms, One Bulb",
+   "desc": "Swap in an ink sac and the frame becomes an Octopus Night Light, the third and last creature shape."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "nightlights:fairy_lights_default",
+   "members": [
+    "nightlights:fairy_lights_white",
+    "nightlights:fairy_lights_light_gray",
+    "nightlights:fairy_lights_gray",
+    "nightlights:fairy_lights_black",
+    "nightlights:fairy_lights_brown",
+    "nightlights:fairy_lights_red",
+    "nightlights:fairy_lights_orange",
+    "nightlights:fairy_lights_yellow",
+    "nightlights:fairy_lights_lime",
+    "nightlights:fairy_lights_green",
+    "nightlights:fairy_lights_cyan",
+    "nightlights:fairy_lights_light_blue",
+    "nightlights:fairy_lights_blue",
+    "nightlights:fairy_lights_purple"
+   ]
+  },
+  {
+   "hub": "nightlights:frog_green",
+   "members": [
+    "nightlights:frog_yellow",
+    "nightlights:frog_lime",
+    "nightlights:frog_red",
+    "nightlights:frog_light_gray",
+    "nightlights:frog_gray",
+    "nightlights:frog_cyan",
+    "nightlights:frog_pink",
+    "nightlights:frog_orange",
+    "nightlights:frog_brown",
+    "nightlights:frog_white",
+    "nightlights:frog_black",
+    "nightlights:frog_blue",
+    "nightlights:frog_purple",
+    "nightlights:frog_magenta"
+   ]
+  },
+  {
+   "hub": "nightlights:mushroom_red",
+   "members": [
+    "nightlights:mushroom_yellow",
+    "nightlights:mushroom_brown",
+    "nightlights:mushroom_white",
+    "nightlights:mushroom_gray",
+    "nightlights:mushroom_purple",
+    "nightlights:mushroom_green",
+    "nightlights:mushroom_black",
+    "nightlights:mushroom_cyan",
+    "nightlights:mushroom_orange",
+    "nightlights:mushroom_pink",
+    "nightlights:mushroom_lime",
+    "nightlights:mushroom_blue",
+    "nightlights:mushroom_light_blue",
+    "nightlights:mushroom_light_gray"
+   ]
+  }
+ ],
+ "notes": "THINNEST MOD OF THE FIVE - THERE IS NO PROGRESSION TO CHAIN. All 82 verified ids are five flat colour families: fairy_lights (17), hanging_lights (17), frog (16), mushroom (16), octopus (16). There is not one non-cosmetic item, not one tool, not one tier and not one dependency between any two nightlights ids. A 10-24 step chain would be pure padding, so the chain above is 5 steps: one per distinct RECIPE, which is genuinely all the mod has. PROOF FROM THE RECIPE GRAPH: 132 recipes, and they collapse to four shapes. fairy_lights.json (string+glowstone) and hanging_lights.json make the two default strings; then 16 identical shapeless recipes per string family are just #nightlights:fairy_lights + one vanilla dye, so every colour is one step from the default and none is downstream of another. The three creature families are 16 colours x 2 mirrored patterns (_left/_right, same group) of one fixed frame - glass, glowstone dust, redstone, a button and one dye - differing ONLY in the signature item (lily_pad for frog, red_mushroom for mushroom, ink_sac for octopus) and the dye. Green frog and red frog cost exactly the same and neither gates the other. MODDB AGREEMENT: no conflict, because moddb carries no ordering signal here either - its 26 nightlights entries are all individual colours and its pos values are effectively arbitrary (frog_green 0.073 vs frog_pink 0.481 for identical recipes). moddb was used only to pick which colour heads each family: frog_green and mushroom_red top their families at 11 packs, octopus_brown tops its at 6 packs and the lowest pos, which is why those three are the chain's creature steps. WHEELS: capped at 14 members, so with the hub each wheel covers 15 ids and no family is complete - fairy_lights (17 ids) is missing magenta and pink, frog (16) is missing light_blue, mushroom (16) is missing magenta. TWO MORE IDENTICAL WHEELS EXIST and were left out only by the three-wheel limit: hanging_lights_* (17 ids, hub hanging_lights_default) and octopus_* (16 ids, hub octopus_brown). They are structurally identical to the emitted ones and the generator can clone them safely. DROPS: none - every chain and wheel id is in the 82-id verified set. The 3 model stems with no lang key (night_light_frog, night_light_mushroom, night_light_octopus) are shared base models, not items, and are correctly excluded."
+}

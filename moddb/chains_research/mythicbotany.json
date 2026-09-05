@@ -1,0 +1,167 @@
+{
+ "mod": "mythicbotany",
+ "verified_against": "MythicBotany-1.20.1-4.0.4.jar",
+ "item_count_in_jar": 62,
+ "parent_mod": "botania",
+ "chain": [
+  {
+   "id": "mythicbotany:rune_holder",
+   "title": "A Socket for a Sign",
+   "desc": "Mana dust around an iron ingot. Rune holders sit around a Runic Altar and hold the runes a ritual consumes, which is how every Norse recipe in this mod is assembled."
+  },
+  {
+   "id": "mythicbotany:midgard_rune",
+   "title": "The Rune of Men",
+   "desc": "Runic Altar: manasteel, a grass block, and the runes of Earth, Greed and Spring. The first of nine realm runes and the cheapest by a wide margin."
+  },
+  {
+   "id": "mythicbotany:alfheim_rune",
+   "title": "Leaves From Four Forests",
+   "desc": "Runic Altar: elementium plus acacia, birch, dark oak and jungle leaves bound with Air, Lust and Summer. It keys the portal that leads out of Botania's flat Alfheim tease."
+  },
+  {
+   "id": "dim:mythicbotany:alfheim",
+   "title": "Where The Elves Actually Live",
+   "desc": "MythicBotany turns Botania's Alfheim Portal into a real dimension rather than a trade window. Step through and the elf-forest becomes a place with terrain, ore and weather."
+  },
+  {
+   "id": "mythicbotany:dreamwood_leaves",
+   "title": "Foliage Worth Trading For",
+   "desc": "An elven trade recipe swaps plain leaves for Dreamwood Leaves. They are the first thing Alfheim will sell you and the only leaf that grows dreamwood."
+  },
+  {
+   "id": "mythicbotany:raw_elementium",
+   "title": "Ore That Skips The Pool",
+   "desc": "Elementium ore only generates in Alfheim. Mining it hands you raw elementium, breaking Botania's rule that elementium must come out of an Alfheim portal trade."
+  },
+  {
+   "id": "mythicbotany:dragonstone_ore",
+   "title": "Red Glass Underfoot",
+   "desc": "Dragonstone ore, also Alfheim-only. Smelt or blast it straight into botania:dragonstone instead of infusing mana pearls in an alchemy catalyst."
+  },
+  {
+   "id": "mythicbotany:alfsteel_template",
+   "title": "The Pattern For Better Steel",
+   "desc": "Elementium and gold laid around an Explosive Lens. It is the smithing template every alfsteel upgrade consumes, so make several."
+  },
+  {
+   "id": "mythicbotany:alfsteel_ingot",
+   "title": "Beyond Terrasteel",
+   "desc": "Infused in the Mana Infuser from dragonstone, elementium and pixie dust. Alfsteel is the tier that starts where Botania's terrasteel ends."
+  },
+  {
+   "id": "mythicbotany:mana_infuser",
+   "title": "The Multiblock That Feeds On Runes",
+   "desc": "Asgard rune, glimmering dreamwood, elementium and all four season runes. It drinks mana from surrounding pools and performs the infusions a Terrestrial Agglomeration Plate cannot."
+  },
+  {
+   "id": "mythicbotany:alfsteel_helmet",
+   "title": "Crowned In Elven Steel",
+   "desc": "Smithing table: terrasteel helmet, alfsteel ingot, alfsteel template. The set carries terrasteel's bonus forward at far higher durability."
+  },
+  {
+   "id": "mythicbotany:alfsteel_pick",
+   "title": "The Shatterer",
+   "desc": "Upgrades a Terra Shatterer in the same smithing pattern. It keeps the Terra Shatterer's levelling and its mana drain, and adds reach."
+  },
+  {
+   "id": "mythicbotany:alfsteel_pylon",
+   "title": "A Third Pylon",
+   "desc": "Natura Pylon, ghast tear, alfsteel nuggets. Botania's pylon ladder stops at natura; this adds a rung above it and is itself the ingredient for a Gaia Pylon."
+  },
+  {
+   "id": "mythicbotany:vanaheim_rune",
+   "title": "The Rune That Eats A Portal",
+   "desc": "Runic Altar: terrasteel, an entire Alfheim Portal block, and the runes of Earth, Pride and Spring. Expensive on purpose."
+  },
+  {
+   "id": "mythicbotany:mana_collector",
+   "title": "Gathering Without Sparks",
+   "desc": "Gaia ingot, glimmering dreamwood, pixie dust and the Vanaheim rune. It pulls mana from flowers in range without a spark network strung between them."
+  },
+  {
+   "id": "mythicbotany:fimbultyr_tablet",
+   "title": "The Tablet That Names The Ritual",
+   "desc": "The Rune Tablet of Fimbultyr sits at the centre of a rune ritual and decides which ritual the surrounding runes perform. Nothing in the Norse half of the mod happens without it."
+  },
+  {
+   "id": "mythicbotany:gjallar_horn_empty",
+   "title": "Heimdall's Empty Horn",
+   "desc": "Mana infusion on horn grass. Empty it is only a horn; carry it to the Well of Mimir in Andwari's Cave to fill it."
+  },
+  {
+   "id": "mythicbotany:gjallar_horn_full",
+   "title": "Drawn From Mimir's Well",
+   "desc": "The filled Gjallarhorn. Its water is the reagent for Petrunia and proof you found the cave structure hidden in Alfheim."
+  },
+  {
+   "id": "mythicbotany:kvasir_blood",
+   "title": "Blood From The Wisest Man",
+   "desc": "A rune ritual on the Helheim rune consuming an Ender Dagger, a vial and alfsteel. The ritual kills Kvasir in myth and bottles him here."
+  },
+  {
+   "id": "mythicbotany:kvasir_mead",
+   "title": "Poetry, Bottled",
+   "desc": "Kvasir's blood shaken with a honey bottle. Drinking it is the only way this mod hands out its strongest buff."
+  },
+  {
+   "id": "mythicbotany:mjoellnir",
+   "title": "The Hammer Comes Back",
+   "desc": "A rune ritual around Air, Earth, Pride and Wrath with a Tiny Planet and red string. Thrown it returns; held it calls lightning."
+  },
+  {
+   "id": "mythicbotany:andwari_ring",
+   "title": "The Dwarf's Greed",
+   "desc": "A rune ritual on the Alfheim rune with manaweave cloth and the runes of Greed and Mana. It multiplies dropped loot, and a cursed twin exists for players who read the myth."
+  },
+  {
+   "id": "mythicbotany:yggdrasil_branch",
+   "title": "A Cutting From The World Tree",
+   "desc": "Livingwood logs cornered with terrasteel nuggets. Right-clicked it carries you home at no mana cost."
+  },
+  {
+   "id": "kill:mythicbotany:alf_pixie",
+   "title": "Something Native And Unfriendly",
+   "desc": "Alfheim Pixies spawn in the elf dimension and are the only mob MythicBotany registers with a loot table of its own."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mythicbotany:midgard_rune",
+   "members": [
+    "mythicbotany:asgard_rune",
+    "mythicbotany:helheim_rune",
+    "mythicbotany:joetunheim_rune",
+    "mythicbotany:muspelheim_rune",
+    "mythicbotany:nidavellir_rune",
+    "mythicbotany:niflheim_rune"
+   ]
+  },
+  {
+   "hub": "mythicbotany:aquapanthus",
+   "members": [
+    "mythicbotany:exoblaze",
+    "mythicbotany:hellebore",
+    "mythicbotany:petrunia",
+    "mythicbotany:raindeletia",
+    "mythicbotany:wither_aconite",
+    "mythicbotany:feysythia",
+    "mythicbotany:aquapanthus_floating",
+    "mythicbotany:exoblaze_floating"
+   ]
+  },
+  {
+   "hub": "mythicbotany:alfsteel_ingot",
+   "members": [
+    "mythicbotany:alfsteel_block",
+    "mythicbotany:alfsteel_nugget",
+    "mythicbotany:alfsteel_sword",
+    "mythicbotany:alfsteel_axe",
+    "mythicbotany:mana_ring_greatest",
+    "mythicbotany:fire_ring",
+    "mythicbotany:ice_ring"
+   ]
+  }
+ ],
+ "notes": "Every id resolves to assets/mythicbotany/models/item/<id>.json intersected with item./block. lang keys. Ordering and every description fact come from data/mythicbotany/recipes/*.json - recipe types read are runic_altar, rune_ritual, infuser (the Mana Infuser multiblock), petal_apothecary, elven_trade, mana_infusion and smithing_transform. The nine realm runes are all runic_altar recipes and form the natural wheel. alf_pixie is the only entity with a loot table (data/mythicbotany/loot_tables/entities/alf_pixie.json) plus a spawn egg; mjoellnir is an entity lang key for the thrown hammer projectile, not a mob, so it is quested as an item only. The Alfheim dimension is data/mythicbotany/dimension/alfheim.json; andwari_cave and elven_house are its two structures. feysythia's petal recipe is forge:conditional on the Feywild mod and will be absent without it. Armour: helmet only, per the measured 52% helmet-only convention. Parent items this addon assumes you already have: botania:terrasteel_ingot, botania:elementium_ingot, botania:alfheim_portal, botania:runic_altar, botania:petal_apothecary, botania:pixie_dust, botania:gaia_ingot, botania:natura_pylon, botania:terrasteel_helmet, botania:terra_pick, botania:aura_ring_greater, botania:ender_dagger, the sixteen botania:rune_* runes."
+}

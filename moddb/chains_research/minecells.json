@@ -1,0 +1,222 @@
+{
+ "mod": "minecells",
+ "verified_against": "minecells-1.9.2.jar",
+ "item_count_in_jar": 229,
+ "chain": [
+  {
+   "id": "structure:minecells:overworld_portal",
+   "title": "Find the Kingdom Portal",
+   "desc": "A ruin on the surface with a lit portal already standing in it. It generates at spacing 20 with 0.75 frequency, which is common enough that you will walk into one - and the mod's root advancement fires simply for standing inside. There is nothing to craft first."
+  },
+  {
+   "id": "minecells:kings_crest_flag",
+   "title": "The Crest Over the Gate",
+   "desc": "The flag flying over the Kingdom Portal, and the icon the mod chose for its own root advancement. Also the first thing worth taking off the ruin."
+  },
+  {
+   "id": "dim:minecells:prison",
+   "title": "The Prison of the Condemned",
+   "desc": "Walk into the Kingdom Portal. No key, no lighter, no ritual - the portal is already lit when the structure generates, and the Prison is the first of five dimensions."
+  },
+  {
+   "id": "minecells:prison_dimensional_rune",
+   "title": "The Rune the Prison Gives You",
+   "desc": "Not craftable and not looted - data/minecells/advancements/prison.json GRANTS it as an advancement reward the moment you arrive. Runes are what let a Doorway you build yourself point at a dimension."
+  },
+  {
+   "id": "minecells:monster_cell",
+   "title": "Cells Off Everything You Kill",
+   "desc": "Dropped by thirteen different mobs and both bosses. It is the mod's universal currency - the Cell Crafter, the steel and half the weapon list are priced in it."
+  },
+  {
+   "id": "minecells:cell_crafter",
+   "title": "The Bench That Spends Cells",
+   "desc": "A writable book, a crafting table, two Monster Cells and three copper. Eighty-five of the mod's recipes are minecells:cell_forge_recipe and none of them work without it."
+  },
+  {
+   "id": "minecells:cell_infused_steel",
+   "title": "Cell-Infused Steel",
+   "desc": "Four Monster Cells around one iron ingot. Every real weapon in the mod is priced in this, from the Crowbar at four up to the Cursed Sword at twenty-four."
+  },
+  {
+   "id": "minecells:crowbar",
+   "title": "The First Real Tool",
+   "desc": "Six copper and four Cell-Infused Steel at the Cell Crafter; the cheapest thing on the forge's gear list and the sensible first purchase."
+  },
+  {
+   "id": "minecells:health_flask",
+   "title": "Something to Drink Mid-Run",
+   "desc": "Found in Prison and Promenade chests and in the general junk tables. In a mod this lethal it is the difference between a run and a death."
+  },
+  {
+   "id": "minecells:hattoris_katana",
+   "title": "Hattori's Katana",
+   "desc": "Six Cell-Infused Steel, six gold and two string. moddb's pack consensus puts this at position zero across three packs - it is the weapon people actually build first."
+  },
+  {
+   "id": "dim:minecells:promenade",
+   "title": "Promenade of the Condemned",
+   "desc": "Reached onward from the Prison. Wilted grass, putrid wood and the first Elites - the mod's own promenade advancement hangs off the prison one."
+  },
+  {
+   "id": "minecells:vine_rune",
+   "title": "Kill an Elite for the Vine Rune",
+   "desc": "Two sources only: the Promenade's rune chest, and data/minecells/loot_tables/entities/elite/vine_rune.json - the Elite that guards it. It is a permanent traversal ability, not a trinket."
+  },
+  {
+   "id": "minecells:assassins_dagger",
+   "title": "Assassin's Dagger",
+   "desc": "One stick, two Metal Shards and four Monster Cells. Cheap, fast, and the reason to farm Runners and Shieldbearers in the Promenade."
+  },
+  {
+   "id": "minecells:elevator_assembler",
+   "title": "Build a Working Elevator",
+   "desc": "Chains, planks and two Elevator Mechanisms. The mod's one piece of infrastructure, and it has its own advancement off the root."
+  },
+  {
+   "id": "dim:minecells:insufferable_crypt",
+   "title": "The Insufferable Crypt",
+   "desc": "A flat dimension of nothing but minecells:hardstone, hanging off the Prison in the advancement tree. It exists for one reason: the thing at the bottom of it."
+  },
+  {
+   "id": "kill:minecells:conjunctivius",
+   "title": "Conjunctivius",
+   "desc": "The Crypt boss. It drops Guts, Monster's Eye, Sewer Calamari, diamonds and emeralds, and - through MineCellsBossEntity - the Boss Stem Cell."
+  },
+  {
+   "id": "minecells:boss_stem_cell",
+   "title": "Boss Stem Cell",
+   "desc": "No recipe and no loot table anywhere in data/. It is dropped in code by MineCellsBossEntity, so any boss gives one, and it is the required component of the Tentacle, the Heavy Crossbow, Flint and the Cursed Sword."
+  },
+  {
+   "id": "minecells:tentacle",
+   "title": "The Tentacle",
+   "desc": "Four Sewer Calamari, sixteen Infected Flesh, twenty-four Monster Cells and a Boss Stem Cell. Conjunctivius drops three of those four ingredients itself."
+  },
+  {
+   "id": "minecells:conjunctivius_respawn_rune",
+   "title": "Fight It Again",
+   "desc": "Sixteen Big Chains, four Monster's Eyes, sixteen Infected Flesh, twelve Guts and thirty-two Monster Cells. Bosses do not come back on their own; this is how you farm one."
+  },
+  {
+   "id": "dim:minecells:ramparts",
+   "title": "The Ramparts",
+   "desc": "Onward from the Promenade, and the mod has an achievement specifically for falling off them. Its chest tables are the mid-tier gear pool."
+  },
+  {
+   "id": "minecells:blood_sword",
+   "title": "Blood Sword",
+   "desc": "Five Blood Bottles and four Cell-Infused Steel. Blood Bottles have no recipe - SpikesBlock fills them, so you harvest them from the mod's own spike traps."
+  },
+  {
+   "id": "minecells:nutcracker",
+   "title": "Nutcracker",
+   "desc": "Two sticks, six obsidian, eight Cell-Infused Steel and three Metal Shards; the heavy end of the melee list."
+  },
+  {
+   "id": "dim:minecells:black_bridge",
+   "title": "The Black Bridge",
+   "desc": "The last dimension, reached from the Ramparts. Prison brick and purple banners, and one very large thing standing on it."
+  },
+  {
+   "id": "kill:minecells:concierge",
+   "title": "The Concierge",
+   "desc": "The Black Bridge boss and the end of the mod's ladder. It drops Monster Cells, diamonds, emeralds and gold, plus the Boss Stem Cell in code."
+  },
+  {
+   "id": "minecells:broadsword",
+   "title": "Broadsword",
+   "desc": "Two sticks, two diamonds, eight lapis, eight Cell-Infused Steel and four obsidian - the most expensive non-boss weapon on the forge."
+  },
+  {
+   "id": "minecells:cursed_sword",
+   "title": "The Cursed Sword",
+   "desc": "A diamond sword, a Monster's Eye, twenty-four Cell-Infused Steel, sixteen Arcane Goo and a Boss Stem Cell. The single most expensive recipe in the jar and the honest last step."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "minecells:monster_cell",
+   "members": [
+    "minecells:cell_infused_steel",
+    "minecells:metal_shards",
+    "minecells:infected_flesh",
+    "minecells:guts",
+    "minecells:monsters_eye",
+    "minecells:arcane_goo",
+    "minecells:sewer_calamari",
+    "minecells:transposition_core",
+    "minecells:buzzcutter_fang",
+    "minecells:blood_bottle",
+    "minecells:boss_stem_cell"
+   ]
+  },
+  {
+   "hub": "minecells:hattoris_katana",
+   "members": [
+    "minecells:balanced_blade",
+    "minecells:assassins_dagger",
+    "minecells:nutcracker",
+    "minecells:blood_sword",
+    "minecells:broadsword",
+    "minecells:cursed_sword",
+    "minecells:spite_sword",
+    "minecells:cudgel",
+    "minecells:crowbar",
+    "minecells:tentacle",
+    "minecells:electric_whip",
+    "minecells:throwing_knife"
+   ]
+  },
+  {
+   "hub": "minecells:infantry_bow",
+   "members": [
+    "minecells:marksmans_bow",
+    "minecells:quick_bow",
+    "minecells:multiple_nocks_bow",
+    "minecells:ice_bow",
+    "minecells:bow_and_endless_quiver",
+    "minecells:heavy_crossbow",
+    "minecells:explosive_crossbow",
+    "minecells:explosive_bolt",
+    "minecells:ice_arrow",
+    "minecells:frost_blast",
+    "minecells:lightning_bolt",
+    "minecells:phaser"
+   ]
+  },
+  {
+   "hub": "minecells:assault_shield",
+   "members": [
+    "minecells:bloodthirsty_shield",
+    "minecells:greed_shield",
+    "minecells:ice_shield",
+    "minecells:nerves_of_steel",
+    "minecells:health_flask",
+    "minecells:vine_rune",
+    "minecells:conjunctivius_respawn_rune",
+    "minecells:concierge_respawn_rune",
+    "minecells:reset_rune",
+    "minecells:flint"
+   ]
+  },
+  {
+   "hub": "minecells:prison_dimensional_rune",
+   "members": [
+    "minecells:promenade_dimensional_rune",
+    "minecells:insufferable_crypt_dimensional_rune",
+    "minecells:ramparts_dimensional_rune",
+    "minecells:black_bridge_dimensional_rune",
+    "minecells:prison_doorway",
+    "minecells:promenade_doorway",
+    "minecells:insufferable_crypt_doorway",
+    "minecells:ramparts_doorway",
+    "minecells:black_bridge_doorway",
+    "minecells:elevator_assembler",
+    "minecells:elevator_mechanism",
+    "minecells:cell_crafter"
+   ]
+  }
+ ],
+ "notes": "LOADER WARNING - READ FIRST. THERE IS NO 1.20.1 FORGE BUILD OF MINE CELLS. Modrinth project 'minecells' lists no forge or neoforge file for any version, and CurseForge project 618790 has 20+ files for 1.20.1 and EVERY one is tagged Fabric only (modLoaderType=1 returns an empty list). The jar verified here, minecells-1.9.2.jar, is the newest 1.20.1 build and it ships fabric.mod.json with id 'minecells' and NO META-INF/mods.toml - it is unambiguously Fabric. Item and entity ids are loader-independent, so this file is accurate, but the mod can only run in a Forge pack through Sinytra Connector. If Connector is not installed, do not generate this chapter. Item set = the 229 stems of assets/minecells/models/item/*.json intersected with item./block. keys in assets/minecells/lang/en_us.json; every id above is a member of that set. The models without lang keys are all bow/crossbow pull states plus base_bow, base_crossbow, dimensional_rune, doorway, cell_holder/1-3 and guidebook, which are template models rather than items. FIVE DIMENSIONS, all confirmed from data/minecells/dimension/: prison, promenade, ramparts, black_bridge and insufferable_crypt. Note insufferable_crypt has NO dimension_type file of its own - its dimension json sets 'type':'minecells:prison', reusing the Prison's type, so a dimension_type-derived list would report only four and miss the Crypt entirely. DIMENSION ENTRY - and this mod does it better than most: there is no portal to craft. data/minecells/worldgen/structure/overworld_portal.json is a jigsaw structure placed in the #minecells:valid_portal_biomes tag at surface_structures, with structure_set spacing 20 / separation 8 / frequency 0.75 - i.e. extremely common. The mod's root advancement triggers on standing inside that structure, and the portal inside it is already active. You walk in. That structure is the chain's structure: step and is the correct opener for the chapter. STRUCTURES: eight exist - black_bridge, insufferable_crypt, overworld_portal, prison, promenade, promenade_wall_x, promenade_wall_z and ramparts. Only overworld_portal is used as a structure: step; the other seven are the terrain of the five dimensions themselves and are already covered by the dim: steps, so adding them would double up on the same milestone. promenade_wall_x and promenade_wall_z in particular are interior wall pieces, not destinations. RUNES AS ADVANCEMENT REWARDS: this is the mechanic a recipe-graph scan would miss completely. minecells:prison_dimensional_rune, promenade_dimensional_rune, insufferable_crypt_dimensional_rune, ramparts_dimensional_rune and black_bridge_dimensional_rune have NO recipe and NO loot table - each is the 'rewards.items' payload of the matching advancement (data/minecells/advancements/{prison,promenade,insufferable_crypt,ramparts,black_bridge}.json), granted the instant you first enter that dimension. Combined with the craftable Doorway blocks, they let a player build a private portal home to any level already visited. DIMENSION LADDER, straight from the advancement parents: root (overworld_portal structure) -> prison -> {promenade -> ramparts -> black_bridge, insufferable_crypt, cell_crafter}; vine_rune hangs off promenade, concierge off black_bridge, conjunctivius off insufferable_crypt. BOSS LADDER: Conjunctivius in the Insufferable Crypt (drops guts, monsters_eye, sewer_calamari, monster_cell, diamond, emerald, gold_ingot) and the Concierge on the Black Bridge (drops monster_cell, diamond, emerald, gold_ingot). BOTH also drop minecells:boss_stem_cell, which has NO recipe and NO loot table - com/github/mim1q/minecells/entity/boss/MineCellsBossEntity.class is the only place BOSS_STEM_CELL appears outside the item registry, so it is a hard-coded boss drop. Four recipes consume it: tentacle, cursed_sword, heavy_crossbow and flint. Both bosses can be re-fought via the two respawn runes, which are Cell Forge recipes. ENTITY VERIFICATION. 31 entity.minecells.* lang keys. Verified as real spawnable mobs by loot table AND spawn egg AND biome spawn data: buzzcutter, grenadier, inquisitor, leaping_zombie, mutated_bat, protector, runner, shieldbearer, sweeper, undead_archer. Verified by loot table plus spawn data (bosses have no spawn egg by design): concierge, conjunctivius. sewers_tentacle has a loot table and a spawn egg. EXCLUDED as projectiles or props: big_grenade, grenade, conjunctivius_projectile, magic_orb, scorpion_spit, disgusting_worm_egg, tentacle_weapon, elevator, spawner_rune, and the three obelisks (concierge_obelisk, conjunctivius_obelisk, elite_obelisk) which are boss-summoning blocks with entity forms. minecells:elite is registered and named 'ELITE' but has no loot table, no spawn egg and no spawn data - it is spawned only by an Elite Obelisk, so it was left out of the chain and the Vine Rune is represented by its item instead, which is safe because entities/elite/vine_rune.json is a real loot table. disgusting_worm, kamikaze, rancid_rat, scorpion and shocker have spawn eggs but no loot tables and no biome spawn entries in 1.9.2 - they are Fabric-side content that is not placed anywhere yet, so no kill: step uses them. OTHER CODE-ONLY SOURCES: minecells:blood_bottle has no recipe and no loot table; BLOOD_BOTTLE appears in com/github/mim1q/minecells/block/SpikesBlock.class, i.e. spikes fill bottles with blood. It is required by blood_sword, bloodthirsty_shield and throwing_knife. DROPPED, NO ACQUISITION PATH: minecells:overworld_doorway, minecells:kingdom_portal_core and minecells:return_stone are registered blocks with models and lang keys but no recipe and no block loot table - they are the structure's own portal machinery and cannot be picked up. minecells:ram_rune does not exist in 1.9.2 at all. CONSENSUS: all fourteen moddb entries are real ids in this jar and every one appears here or in the wheels. moddb's order is broadly compatible with the crafting graph (hattoris_katana and crowbar early, boss_stem_cell at 0.800, cursed_sword at 1.000) and the two agree that the Cursed Sword is the terminal item; the ordering above follows the Cell Forge ingredient counts, which put crowbar (4 steel) before katana (6) before nutcracker (8) before broadsword (8 + diamonds) before cursed_sword (24 + a boss cell). The one thing moddb misses entirely is that this is a five-dimension mod - it lists not a single dimension, portal or boss."
+}

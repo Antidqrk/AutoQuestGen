@@ -1,0 +1,150 @@
+{
+ "mod": "storagenetwork",
+ "verified_against": "SimpleStorageNetwork-1.20.1-1.13.2.jar",
+ "item_count_in_jar": 25,
+ "chain": [
+  {
+   "id": "storagenetwork:kabel",
+   "title": "First Length of Wire",
+   "desc": "Iron ingots around a stone slab; the plain cable every other network part is built from or attached to."
+  },
+  {
+   "id": "storagenetwork:master",
+   "title": "The Root of It All",
+   "desc": "A diamond and quartz on a cable make the Storage Network Root, the single block a network is organised around."
+  },
+  {
+   "id": "storagenetwork:storage_kabel",
+   "title": "Annexing the Chest",
+   "desc": "A wooden chest on a cable produces the Link Cable, which pulls an adjacent inventory into the network."
+  },
+  {
+   "id": "storagenetwork:inventory",
+   "title": "A Face for the Network",
+   "desc": "A dropper and iron nuggets on a cable give the Storage Inventory, the first block that shows you what the network holds."
+  },
+  {
+   "id": "storagenetwork:request",
+   "title": "Ordering From the Vault",
+   "desc": "Gold and a crafting table added to a storage inventory; the Request Table both browses and crafts from network contents."
+  },
+  {
+   "id": "storagenetwork:import_kabel",
+   "title": "One Way In",
+   "desc": "A hopper on a cable, pulling items out of an attached inventory and into the network."
+  },
+  {
+   "id": "storagenetwork:export_kabel",
+   "title": "One Way Out",
+   "desc": "A piston on a cable, pushing chosen items from the network into whatever it faces."
+  },
+  {
+   "id": "storagenetwork:filter_kabel",
+   "title": "The Gatekeeper",
+   "desc": "An observer on a cable makes the Filtered Link Cable, restricting which items a linked inventory contributes."
+  },
+  {
+   "id": "storagenetwork:import_filter_kabel",
+   "title": "Choosy Intake",
+   "desc": "A barrel on an import cable, so only the items you name are drawn into the network."
+  },
+  {
+   "id": "storagenetwork:speed_upgrade",
+   "title": "Faster Ticks",
+   "desc": "Gold and redstone on a cable; slotted into a cable to raise how often it moves items."
+  },
+  {
+   "id": "storagenetwork:stack_upgrade",
+   "title": "Whole Stacks at Once",
+   "desc": "Blaze powder and redstone on a cable, raising the number of items each operation carries."
+  },
+  {
+   "id": "storagenetwork:stock_upgrade",
+   "title": "Keeping the Shelf Full",
+   "desc": "A chest and redstone on a cable, making an export cable maintain a target quantity instead of pushing endlessly."
+  },
+  {
+   "id": "storagenetwork:operation_upgrade",
+   "title": "More Work per Pass",
+   "desc": "A comparator and redstone on a cable, increasing the number of separate operations a cable performs."
+  },
+  {
+   "id": "storagenetwork:collector",
+   "title": "Sweeping the Floor",
+   "desc": "A storage inventory with a speed upgrade and iron nuggets; the Collection Interface vacuums dropped items into the network."
+  },
+  {
+   "id": "storagenetwork:exchange",
+   "title": "The Trade Window",
+   "desc": "A storage inventory with a stack upgrade and iron nuggets, giving a compact deposit-and-withdraw panel."
+  },
+  {
+   "id": "storagenetwork:request_expanded",
+   "title": "The Bigger Counter",
+   "desc": "A copper block, an eye of ender and one each of the operation, speed and stack upgrades; a request table with far more room."
+  },
+  {
+   "id": "storagenetwork:inventory_remote",
+   "title": "The Vault in Your Pocket",
+   "desc": "Glowstone, gold and a slimeball around the network root, giving handheld access to everything the network holds."
+  },
+  {
+   "id": "storagenetwork:picker_remote",
+   "title": "Reach and Grab",
+   "desc": "A cable added to the storage remote, letting you pull a specific item without opening the full list."
+  },
+  {
+   "id": "storagenetwork:collector_remote",
+   "title": "A Magnet on Your Belt",
+   "desc": "An import cable added to the storage remote, sending items you walk over straight into the network."
+  },
+  {
+   "id": "storagenetwork:builder_remote",
+   "title": "Placing From Storage",
+   "desc": "A request table added to the storage remote, feeding blocks to your hand as you build."
+  },
+  {
+   "id": "storagenetwork:expanded_remote",
+   "title": "The Wide View, Carried",
+   "desc": "A filtered import cable added to an expanded request table for the roomier interface in handheld form."
+  },
+  {
+   "id": "storagenetwork:crafting_remote",
+   "title": "Assembly Without a Bench",
+   "desc": "A gold block, an ender chest and a sea lantern around the network root; crafts from network contents anywhere."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "storagenetwork:kabel",
+   "members": [
+    "storagenetwork:storage_kabel",
+    "storagenetwork:import_kabel",
+    "storagenetwork:export_kabel",
+    "storagenetwork:filter_kabel",
+    "storagenetwork:import_filter_kabel"
+   ]
+  },
+  {
+   "hub": "storagenetwork:speed_upgrade",
+   "members": [
+    "storagenetwork:stack_upgrade",
+    "storagenetwork:stock_upgrade",
+    "storagenetwork:operation_upgrade",
+    "storagenetwork:single_upgrade",
+    "storagenetwork:slow_upgrade"
+   ]
+  },
+  {
+   "hub": "storagenetwork:inventory_remote",
+   "members": [
+    "storagenetwork:picker_remote",
+    "storagenetwork:collector_remote",
+    "storagenetwork:builder_remote",
+    "storagenetwork:expanded_remote",
+    "storagenetwork:crafting_remote"
+   ]
+  }
+ ],
+ "notes": "25 of 26 item-model stems verified against item.storagenetwork.X / block.storagenetwork.X lang keys. All 24 recipe results resolve to modelled, named items. Note the German-derived registry spelling: every cable is 'kabel', never 'cable' (storagenetwork:storage_kabel, not storage_cable), while the DISPLAY names are English ('Link Cable'). Getting this backwards is the easy way to write a broken task.\n\nDROPPED - storagenetwork:process_kabel. It has an item model but no lang key of any form and no recipe; it is the only model stem in the jar without a name. Left out as unobtainable/unfinished.\n\nCAVEAT - storagenetwork:network_book is a registered, named item, but data/storagenetwork/recipes/network_book.json outputs patchouli:guide_book, not the mod's own item. With Patchouli installed a player following the recipe never receives storagenetwork:network_book, so it is deliberately kept out of both the chain and the wheels. Quest it only as a reward, never as a task.\n\nCONSENSUS CONFLICTS:\n1. moddb ends the mod on collector_remote (pos 1.000) with crafting_remote just before it at 0.893. The recipe graph reverses this: collector_remote is inventory_remote + import_kabel, while crafting_remote is the network root plus a gold BLOCK, an ender chest and a sea lantern - by far the most expensive item in the mod. Recipe graph preferred, so crafting_remote is the terminal step.\n2. moddb orders storage_kabel (0.132), export_kabel (0.200) and import_kabel (0.300) all BEFORE master (0.314). The recipe graph is neutral here - all four are children of kabel - but nothing on a network functions until the root block exists, so master is placed second, immediately after the plain cable. This is a functional-dependency call, not a recipe-graph contradiction, and is flagged as a deviation.\n\nThe three wheels follow the mod's own three families: cables off kabel, the slot-in upgrades off speed_upgrade, and the handheld remotes off inventory_remote. crafting_remote appears both as the chain's final step and as a remote-wheel member, which is intentional - it is the capstone of that family."
+}

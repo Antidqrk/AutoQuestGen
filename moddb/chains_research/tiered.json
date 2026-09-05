@@ -1,0 +1,24 @@
+{
+ "mod": "tiered",
+ "verified_against": "Tiered-1.20.1-6.0.8-Forge.jar",
+ "item_count_in_jar": 3,
+ "chain": [
+  {
+   "id": "tiered:toolsmiths_hammer",
+   "title": "Rerolling the Pick",
+   "desc": "Used at an anvil to re-roll the random tier on a tool, trading the modifier it has for another from the tool pool."
+  },
+  {
+   "id": "tiered:weaponsmiths_hammer",
+   "title": "Second Opinion on a Blade",
+   "desc": "The anvil re-roll for weapons, drawing a fresh prefix from the melee and bow modifier pools."
+  },
+  {
+   "id": "tiered:armorers_hammer",
+   "title": "Reforging the Plate",
+   "desc": "The anvil re-roll for armour and shields, replacing a Dented or Heavy roll with another from the armour pool."
+  }
+ ],
+ "collections": [],
+ "notes": "HONEST SHORT CHAIN - this mod has almost nothing questable, exactly 3 items, so no wheels and a 3-step chain.\n\nTiered ships precisely three registered items and they are all verified: assets/tiered/models/item/ contains armorers_hammer.json, toolsmiths_hammer.json and weaponsmiths_hammer.json and nothing else, all three carry item.tiered.X lang keys, and Tiered$ItemRegistries.class confirms ARMORERS_HAMMER, TOOLSMITHS_HAMMER and WEAPONSMITHS_HAMMER as the complete registry. Padding this to ten steps would mean inventing items.\n\nThe mod's actual content is not items at all. It is 45 data-driven modifiers under data/tiered/tiered_modifiers/ - tiers such as Keen, Berserk, Dented, Fortified, Hasteful, Lucky and Legendary, organised into pools for armors, bows, fishing_rods, melee_weapons, shields and tools - that get rolled onto ordinary vanilla and modded gear when it is created. There is no tiered:keen_sword; a Keen sword is minecraft:iron_sword carrying a tiered NBT tag. Nothing in that system is addressable as an item id, so none of it can be an item-collection task.\n\nIMPORTANT PACKAGING NOTE for whoever builds against this: the Modrinth project 'tiered' was RENAMED to 'Reforged' partway through 1.20.1. Versions 6.0.0 to 6.0.8 ship as Tiered-*.jar with the assets/tiered namespace, which is what this file is verified against and what the tiered:* ids require. From 1.0.6 onward the jar is Reforged-*.jar and the asset namespace becomes 'reforged' while mods.toml still declares modId=\"tiered\". If a pack ships a Reforged jar, these three ids are reforged:*_hammer instead and every task here must be renamespaced. Check which jar the pack actually contains before using this file.\n\nThe jar contains ZERO recipe files, so the hammers have no crafting recipe of their own - packs are expected to supply one or to distribute them as loot. Quest them as rewards or as loot-acquisition goals, not as 'craft this'. Chain order is by breadth of what each hammer covers and is a soft ordering only; the three are siblings with no dependency between them. Not present in moddb.json, so there is no published-pack consensus to compare against."
+}

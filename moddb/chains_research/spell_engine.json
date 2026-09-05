@@ -1,0 +1,14 @@
+{
+ "mod": "spell_engine",
+ "verified_against": "spell_engine-0.15.12+1.20.1.jar",
+ "item_count_in_jar": 1,
+ "chain": [
+  {
+   "id": "spell_engine:spell_binding",
+   "title": "The Only Bench in the Building",
+   "desc": "A book, two amethyst shards, a gold ingot and polished diorite. The Spell Binding Table creates and fills Spell Books and binds spells onto eligible weapons; it is the only block or item Spell Engine registers."
+  }
+ ],
+ "collections": [],
+ "notes": "SHORT CHAIN BY NECESSITY, NOT BY OMISSION. Spell Engine 0.15.12+1.20.1 is a framework, not a content mod, and it registers exactly ONE item: spell_engine:spell_binding (models/item/spell_binding.json, lang key block.spell_engine.spell_binding = 'Spell Binding Table', and a crafting_shaped recipe at data/spell_engine/recipes/spell_binding_table.json whose result is spell_engine:spell_binding). The whole jar holds 1 recipe, 3 loot table files, 2 blockstates and 5 models. THE BRIEF'S EXPECTATION DOES NOT HOLD: there are no spell books, no tomes and no school ladder in this namespace. data/spell_engine/spells contains only two spells, use_item and use_offhand_item, both of which are plumbing rather than castable content. The actual spell books, schools and tomes are shipped by separate content mods that depend on Spell Engine (the bundled advancements live under the foreign 'rpg_series' namespace and reference a Rune Crafting Altar that this jar does not contain), so any school-ladder questing has to target those mods' namespaces instead of spell_engine. DROPS: 2 entity.spell_engine.* lang keys, spell_projectile and spell_area_effect, are the invisible carriers for cast spells and cannot be killed - both excluded. There is no zero-lang or lang-only item discrepancy to report; models and lang agree exactly on the single item. CONSENSUS: spell_engine is ABSENT from moddb.json entirely. That is consistent with this finding rather than a gap in the data - with one craftable block there is almost nothing for a pack author to quest, so no ordering consensus could form. No wheel is possible: a hub needs 5-14 sibling ids and this namespace has one id in total."
+}

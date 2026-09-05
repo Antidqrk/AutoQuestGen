@@ -1,0 +1,107 @@
+{
+ "mod": "bellsandwhistles",
+ "verified_against": "bellsandwhistles-0.4.5-1.20.x-Create6.0+.jar",
+ "item_count_in_jar": 36,
+ "parent_mod": "create",
+ "chain": [
+  {
+   "id": "bellsandwhistles:metro_casing",
+   "title": "Green as a Subway Car",
+   "desc": "One of Create's iron sheets and a green dye, shapeless. The metro casing is the base block the whole underground-railway set is built from."
+  },
+  {
+   "id": "bellsandwhistles:metro_panel",
+   "title": "Panelling the Carriage",
+   "desc": "Three metro casings in a row give the flat panel; it converts freely back and forth with its corrugated twin."
+  },
+  {
+   "id": "bellsandwhistles:corrugated_metro_casing",
+   "title": "Ribbed for Strength",
+   "desc": "A metro casing crafted alone flips to the corrugated finish, and crafting it again flips it back."
+  },
+  {
+   "id": "bellsandwhistles:metro_window",
+   "title": "A View From the Tunnel",
+   "desc": "A metro casing and any glass, shapeless. Rolling stock stops looking like a box the moment it has windows."
+  },
+  {
+   "id": "bellsandwhistles:metro_trapdoor",
+   "title": "Hatches in the Floor",
+   "desc": "Two metro casings stacked. The trapdoor matches the casing texture, so a carriage floor stays continuous."
+  },
+  {
+   "id": "bellsandwhistles:headlight",
+   "title": "Cutting Through the Dark",
+   "desc": "A torch tucked into a column of three iron nuggets. Mounted on the nose of a train it throws light down the track ahead."
+  },
+  {
+   "id": "bellsandwhistles:station_platform",
+   "title": "Somewhere to Wait",
+   "desc": "Smooth stone and a smooth stone slab, shapeless, or one cut of smooth stone on a stonecutter. The edging that turns a station into a platform."
+  },
+  {
+   "id": "bellsandwhistles:andesite_bogie_steps",
+   "title": "Mind the Gap",
+   "desc": "Five andesite alloy in a stepped shape. Steps hang off the side of a bogie so a passenger can actually climb aboard."
+  },
+  {
+   "id": "bellsandwhistles:andesite_grab_rails",
+   "title": "Something to Hold",
+   "desc": "Six andesite alloy in two columns. Grab bars line a carriage interior and read as handholds rather than fence posts."
+  },
+  {
+   "id": "bellsandwhistles:andesite_door_step",
+   "title": "The Last Step Down",
+   "desc": "Three andesite alloy in a row, or one alloy on the stonecutter. It sits under a doorway where the carriage meets the platform."
+  },
+  {
+   "id": "bellsandwhistles:metal_pilot",
+   "title": "The Cowcatcher",
+   "desc": "Create iron sheets and iron nuggets in a wedge. Pilots bolt onto the front of a locomotive and are the mod's signature piece."
+  },
+  {
+   "id": "bellsandwhistles:brass_pilot",
+   "title": "A Pilot in Brass",
+   "desc": "The same wedge built from Create brass sheets and brass nuggets, for engines that want gold trim instead of grey."
+  },
+  {
+   "id": "bellsandwhistles:ornate_iron_trapdoor",
+   "title": "Two Windows Make a Hatch",
+   "desc": "Two of Create's ornate iron windows crafted together. It finishes the ornate iron family Create left without a trapdoor."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "bellsandwhistles:polished_andesite_pilot",
+   "members": [
+    "bellsandwhistles:polished_asurine_pilot",
+    "bellsandwhistles:polished_calcite_pilot",
+    "bellsandwhistles:polished_crimsite_pilot",
+    "bellsandwhistles:polished_deepslate_pilot",
+    "bellsandwhistles:polished_diorite_pilot",
+    "bellsandwhistles:polished_dripstone_pilot",
+    "bellsandwhistles:polished_granite_pilot",
+    "bellsandwhistles:polished_limestone_pilot",
+    "bellsandwhistles:polished_ochrum_pilot",
+    "bellsandwhistles:polished_scorchia_pilot",
+    "bellsandwhistles:polished_scoria_pilot",
+    "bellsandwhistles:polished_tuff_pilot",
+    "bellsandwhistles:polished_veridium_pilot"
+   ]
+  },
+  {
+   "hub": "bellsandwhistles:copper_bogie_steps",
+   "members": [
+    "bellsandwhistles:brass_bogie_steps",
+    "bellsandwhistles:copper_grab_rails",
+    "bellsandwhistles:brass_grab_rails",
+    "bellsandwhistles:copper_door_step",
+    "bellsandwhistles:brass_door_step",
+    "bellsandwhistles:andesite_pilot",
+    "bellsandwhistles:copper_pilot",
+    "bellsandwhistles:corrugated_metro_panel"
+   ]
+  }
+ ],
+ "notes": "Verified against bellsandwhistles-0.4.5-1.20.x-Create6.0+.jar (Forge/NeoForge, MC 1.20.1). All 36 ids come from assets/bellsandwhistles/models/item/*.json intersected with block./item. keys in assets/bellsandwhistles/lang/en_us.json. PARENT ASSUMPTIONS: the chain starts after Create has supplied andesite alloy, create:iron_sheet, create:brass_sheet, create:copper_sheet, brass and copper nuggets, create:ornate_iron_window, and the whole polished_cut_* family of Create decorative stones (asurine, calcite, crimsite, deepslate, diorite, dripstone, granite, limestone, ochrum, scorchia, scoria, tuff, veridium) along with their stairs, since every stone pilot is built from a polished cut block plus its matching stairs. This is a decoration addon for trains, so the spine is casings and mountable parts rather than machines. Recipe sources read: data/bellsandwhistles/recipes/*.json. Confirmed conversions: metro_casing comes only from create:iron_sheet plus minecraft:green_dye, corrugated_metro_casing is a one-item shapeless flip of the metro casing, and metro_panel and corrugated_metro_panel each convert into the other. Metal parts (bogie steps, grab rails, door steps) exist in andesite, brass and copper and each has both a crafting recipe and a stonecutting shortcut from the ingot; the andesite versions use create:andesite_alloy directly. bellsandwhistles:polished_andesite_pilot and polished_deepslate_pilot, polished_diorite_pilot and polished_granite_pilot each have two recipes, one from vanilla polished stone and one from Create's polished cut version. No id was dropped for being unverifiable. Deliberately unquested: nothing in this jar trips the slab/stairs/wall rule, and every remaining item appears either in the chain or in a collection."
+}

@@ -1,0 +1,128 @@
+{
+ "mod": "bosses_of_mass_destruction",
+ "verified_against": "BOMD-Forge-1.20.1-1.1.1.jar",
+ "item_count_in_jar": 21,
+ "chain": [
+  {
+   "id": "bosses_of_mass_destruction:void_lily",
+   "title": "Follow The Pollen",
+   "desc": "A lily of the valley bound with an amethyst shard. Hold it and its pollen drifts toward the nearest Void Blossom lair - it is the mod's compass, not a weapon, and it is reusable."
+  },
+  {
+   "id": "structure:bosses_of_mass_destruction:void_blossom",
+   "title": "The Lair Underground",
+   "desc": "A bramble-walled cavern deep below the surface, holding the boss spawner. Clear a fighting space before you wake anything up."
+  },
+  {
+   "id": "kill:bosses_of_mass_destruction:void_blossom",
+   "title": "Extreme Weeding",
+   "desc": "350 health, spike waves from the floor and petal blades on the air. The first of the four bosses and the gate to every craftable item in the mod."
+  },
+  {
+   "id": "bosses_of_mass_destruction:void_thorn",
+   "title": "Torn From The Bloom",
+   "desc": "Two drop per kill, and only if you land the killing blow yourself. That is exactly enough for the two recipes that want one - the Earthdive Spear and the Charged Ender Pearl - so a single Blossom covers you unless you want spares."
+  },
+  {
+   "id": "bosses_of_mass_destruction:crystal_fruit",
+   "title": "Sweet Thing From A Killer",
+   "desc": "Two or three per kill. Eat one for a short burst of regeneration and resistance - keep a few for the fights further down this list."
+  },
+  {
+   "id": "bosses_of_mass_destruction:soul_star",
+   "title": "Fifty Undead Later",
+   "desc": "Kill fifty undead - zombies, skeletons, husks, drowned, phantoms and their kin - and a Soul Star drops. Hold it and it points you at the Night Lich's tower."
+  },
+  {
+   "id": "structure:bosses_of_mass_destruction:lich_tower",
+   "title": "The Tower In The Cold",
+   "desc": "A tall spire in cold biomes with chests worth looting on the way up. The Lich waits at the top; the Soul Star gets you there."
+  },
+  {
+   "id": "kill:bosses_of_mass_destruction:lich",
+   "title": "Night Vanquisher",
+   "desc": "300 health, heals itself whenever you break off, and rains comets and homing missiles. Bring a bow and something to break line of sight."
+  },
+  {
+   "id": "bosses_of_mass_destruction:ancient_anima",
+   "title": "What The Lich Was Made Of",
+   "desc": "Two per kill. It is the magic half of the mod's crafting: the Staff of Suppression, the Table of Elevation and the Charged Ender Pearl all need it."
+  },
+  {
+   "id": "structure:bosses_of_mass_destruction:gauntlet_arena",
+   "title": "The Blackstone Arena",
+   "desc": "A sealed blackstone hall in the Nether. Nothing points you to it, so ride the roof or use a locator - it is the one boss with no finding item."
+  },
+  {
+   "id": "kill:bosses_of_mass_destruction:gauntlet",
+   "title": "Through The Gauntlet",
+   "desc": "A floating stone hand: 250 health, heavy armour, spin punches that blast holes in the arena, and a charged laser. It leaves ancient debris where it dies."
+  },
+  {
+   "id": "bosses_of_mass_destruction:blazing_eye",
+   "title": "Prize Of The Blackstone Arena",
+   "desc": "Comes out of the chest the Gauntlet leaves behind. Needed for the Blast Amplifier and the Table of Elevation, so two kills is the realistic target."
+  },
+  {
+   "id": "structure:bosses_of_mass_destruction:obsidilith_arena",
+   "title": "The Altar In The End",
+   "desc": "Out past the main island, on the End's outer stone. The mod's own advancement hangs this one off killing the dragon, so treat it as post-dragon content."
+  },
+  {
+   "id": "kill:bosses_of_mass_destruction:obsidilith",
+   "title": "Obsidian Obliterator",
+   "desc": "300 health, 14 armour and telegraphed pillar, wave, spike and anvil attacks. Read the ground markers - every attack shows you where it lands first."
+  },
+  {
+   "id": "bosses_of_mass_destruction:obsidian_heart",
+   "title": "The Pillar's Core",
+   "desc": "From the Obsidilith's loot chest, along with End City treasure and a stack each of purpur and obsidian. Three separate recipes want one - the Earthdive Spear, the Staff of Suppression and the Blast Amplifier - and only one drops per fight."
+  },
+  {
+   "id": "bosses_of_mass_destruction:earthdive_spear",
+   "title": "Through Solid Stone",
+   "desc": "Throw it and you teleport to where it lands, straight through walls and floors. The fastest way into a cave system you have not dug into yet."
+  },
+  {
+   "id": "bosses_of_mass_destruction:charged_ender_pearl",
+   "title": "The Pearl That Comes Back",
+   "desc": "A reusable ender pearl that leaves you with brief resistance after the teleport, so the landing damage stops mattering. You only ever need one."
+  },
+  {
+   "id": "bosses_of_mass_destruction:mob_ward",
+   "title": "Nothing Dares Approach",
+   "desc": "The Staff of Suppression. Placed, it stops mob spawning for 64 blocks in every direction - one of them will light-proof an entire base."
+  },
+  {
+   "id": "bosses_of_mass_destruction:monolith_block",
+   "title": "Louder Detonations",
+   "desc": "The Blast Amplifier raises explosion power by 30% within 64 blocks. It does not stack, so one placed near your quarry is the whole benefit."
+  },
+  {
+   "id": "bosses_of_mass_destruction:levitation_block",
+   "title": "A Column Of Flight",
+   "desc": "The Table of Elevation gives creative-style flight inside a 7x7 column above it. Build it at the bottom of a shaft and the climb disappears."
+  },
+  {
+   "id": "bosses_of_mass_destruction:brimstone_nectar",
+   "title": "Wind The Arenas Back",
+   "desc": "Netherite scrap, dragon breath and a ghast tear. Using it resets nearby boss structures so a cleared arena spawns its boss again - this is how you farm the drops above."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "structure:bosses_of_mass_destruction:obsidilith_arena",
+   "note": "Arena building blocks. They generate in the boss structures and are decoration, not progression.",
+   "members": [
+    "bosses_of_mass_destruction:obsidilith_end_frame",
+    "bosses_of_mass_destruction:obsidilith_rune",
+    "bosses_of_mass_destruction:sealed_blackstone",
+    "bosses_of_mass_destruction:gauntlet_blackstone",
+    "bosses_of_mass_destruction:chiseled_stone_altar",
+    "bosses_of_mass_destruction:vine_wall",
+    "bosses_of_mass_destruction:void_blossom_block"
+   ]
+  }
+ ],
+ "notes": "VERIFIED against BOMD-Forge-1.20.1-1.1.1.jar (an earlier pass of this file checked 1.1.2; the item set and data are identical between them). The registered item set is the 21 real stems of assets/bosses_of_mass_destruction/models/item/*.json - the 24 files there include three model helpers (spear, throwing, earthdive_spear_throwing) that are not items. Every id above is in that set, and in assets/bosses_of_mass_destruction/lang/en_us.json.\n\nALL FOUR BOSSES verified as entity.bosses_of_mass_destruction.* lang keys: lich (Night Lich), obsidilith (Obsidilith), gauntlet (Nether Gauntlet), void_blossom (Void Blossom). Non-boss entities that must NOT be used as kill targets: comet, blue_fireball, soul_star, spore_ball, petal_blade - those are projectiles.\n\nORDER SOURCE: the author's four boss advancements in data/bosses_of_mass_destruction/advancements/, whose parents encode the intended tier. void_blossom_defeat and night_lich_defeat both hang off minecraft:adventure/kill_a_mob (early, overworld); gauntlet_defeat hangs off minecraft:nether/root; obsidilith_defeat hangs off minecraft:end/kill_dragon, which is the explicit statement that the Obsidilith is post-dragon. Crafting order after that is forced by data/bosses_of_mass_destruction/recipes/: earthdive_spear = void_thorn + obsidian_heart; charged_ender_pearl = void_thorn + ancient_anima + ender pearl; mob_ward = ancient_anima + obsidian_heart + obsidian; blast_amplifier (result monolith_block) = blazing_eye + obsidian_heart + obsidian; levitation_block = ancient_anima + blazing_eye + gold + obsidian. Every device needs two different bosses' drops, which is why all four kills sit above all five crafts.\n\nSOUL STAR IS A KILL COUNTER, NOT LOOT OR A CRAFT. It has no recipe and no loot table. The mechanic lives in the config: lichConfig.summonMechanic.numEntitiesKilledToDropSoulStar = 50, with entitiesThatCountToSummonCounter listing skeleton, giant, phantom, zoglin, zombified_piglin, wither_skeleton, husk, skeleton_horse, stray, zombie_horse, zombie, drowned, wither and zombie_villager. Telling the player 'kill fifty undead' is the single most useful line in this chain - without it the Lich is unfindable.\n\nFINDING ITEMS point at structures through structure tags: data/bosses_of_mass_destruction/tags/worldgen/structure/soul_star_target.json contains only lich_tower, and void_lily_target.json contains only void_blossom. Their lang tooltips are literally 'Where does it lead?' and 'Where does the pollen lead?'. There is NO finding item for the Gauntlet or the Obsidilith - the chain says so rather than inventing one.\n\nBOSS DROPS split between entity tables and reward chests. data/.../loot_tables/entities/void_blossom.json drops 2 void_thorn plus 2-3 crystal_fruit, and entities/lich.json drops 2 ancient_anima plus bones and diamonds - both gated on minecraft:killed_by_player, so the player must land the kill. blazing_eye and obsidian_heart are NOT entity drops: they come from loot_tables/chests/gauntlet.json and loot_tables/chests/obsidilith.json, the chests the bosses leave behind. The obsidilith chest also rolls minecraft:chests/end_city_treasure plus 64 purpur and 64 obsidian.\n\nSTRUCTURES verified in data/bosses_of_mass_destruction/worldgen/structure/: gauntlet_arena, lich_tower, obsidilith_arena, void_blossom. Biome placement from tags/worldgen/biome/collections/: lich_tower in 'cold', gauntlet_arena in 'in_nether', obsidilith_arena in 'in_end'. There is no custom dimension in this mod, so no dim: steps exist.\n\nSTAT NUMBERS in the descs come from the mod's own config json5: lich 300 hp, obsidilith 300 hp / 14 armour / spawnPillarOnDeath, gauntlet 250 hp / 8 armour / spawnAncientDebrisOnDeath, void_blossom 350 hp. Device effects are quoted from the item tooltips in en_us.json (64-block radii for mob_ward and monolith_block, 7x7 column for levitation_block, 'Resets nearby boss structures on use' for brimstone_nectar); generalConfig.tableOfElevationRadius = 3 gives the 7x7.\n\nBRIMSTONE NECTAR is the one item craftable without a boss kill (netherite scrap + dragon breath + ghast tear), but it is listed last because its whole purpose is re-fighting bosses you have already beaten."
+}

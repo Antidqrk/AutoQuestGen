@@ -1,0 +1,151 @@
+{
+ "mod": "mcwroofs",
+ "verified_against": "mcw-roofs-2.3.2-mc1.20.1forge.jar",
+ "item_count_in_jar": 607,
+ "chain": [
+  {
+   "id": "mcwroofs:oak_roof",
+   "title": "The Basic Pitch",
+   "desc": "A log over a log and a stick, two at a time. The plain Roof is the 45-degree pitch every other roof piece is a variation of, and it exists in twenty-eight materials."
+  },
+  {
+   "id": "mcwroofs:oak_top_roof",
+   "title": "Cap the Ridge",
+   "desc": "Two logs with a stick between them, two at a time. The Top Roof is the ridge piece that closes the peak where two pitches meet."
+  },
+  {
+   "id": "mcwroofs:oak_attic_roof",
+   "title": "A Window in the Slope",
+   "desc": "A log and glass in an L, two at a time. The attic roof is the only piece that carries glazing, which makes it the dormer of the set."
+  },
+  {
+   "id": "mcwroofs:oak_steep_roof",
+   "title": "A Sharper Angle",
+   "desc": "Three logs stacked with a stick, four at a time. Steep roofs climb two blocks for every one across, and Upper Steep is the matching top half."
+  },
+  {
+   "id": "mcwroofs:oak_lower_roof",
+   "title": "A Shallower Angle",
+   "desc": "Two logs and a stick laid flat, four at a time. Lower roofs climb one for every two, and Upper Lower is their top half - which is why every material ships seven roof pieces, not one."
+  },
+  {
+   "id": "mcwroofs:roofing_hammer",
+   "title": "Toggle the Piece",
+   "desc": "An iron ingot, nuggets and a stick. The mod's own hint says it plainly: 'Right click on the top roof to toggle between states'. It is the only tool in the mod and the only non-block item."
+  },
+  {
+   "id": "mcwroofs:oak_planks_roof",
+   "title": "The Same Roof in Planks",
+   "desc": "Planks and a stick instead of logs. Every wood ships both a log-textured and a planks-textured roof set, which is why the wood half of this mod is 28 log materials and 11 planks materials."
+  },
+  {
+   "id": "mcwroofs:black_terracotta_roof",
+   "title": "Roofs by Stonecutter",
+   "desc": "One stonecut of black terracotta. The sixteen terracotta and sixteen concrete colours each give all seven roof shapes straight off the stonecutter, with no crafting grid involved."
+  },
+  {
+   "id": "mcwroofs:bricks_roof",
+   "title": "Stone Roofs, Cut Not Crafted",
+   "desc": "Also a stonecut. Bricks, nether bricks, blackstone, deepslate, andesite, diorite, granite, sandstone, prismarine, mud brick, stone and cobblestone all cut into roof pieces the same way."
+  },
+  {
+   "id": "mcwroofs:thatch_roof",
+   "title": "Straw Overhead",
+   "desc": "A hay block and a stick, two at a time. Thatch is the one roof material that is neither wood, stone nor a dyed block."
+  },
+  {
+   "id": "mcwroofs:bamboo_mosaic_roof",
+   "title": "Mosaic",
+   "desc": "Bamboo mosaic and a stick. The mosaic set is separate from the plain bamboo one and is the only roof made from a vanilla decorative variant."
+  },
+  {
+   "id": "mcwroofs:base_roof",
+   "title": "The Blank",
+   "desc": "One stonecut of plain terracotta. The Base set is the undyed neutral, and it is the only roof family that also ships a Roof Block and a Roof Slab."
+  },
+  {
+   "id": "mcwroofs:black_roof_block",
+   "title": "Solid, Not Sloped",
+   "desc": "Cut from black terracotta. Roof blocks and roof slabs exist only in base, white, light gray, gray and black - five greys and nothing else, which is a deliberately small set."
+  },
+  {
+   "id": "mcwroofs:rain_gutter",
+   "title": "Iron Nuggets in a U",
+   "desc": "Three iron nuggets. The Base Rain Gutter is not a placeable gutter itself - it is the ingredient for both of the pieces that are."
+  },
+  {
+   "id": "mcwroofs:gutter_base",
+   "title": "The Run",
+   "desc": "Three base rain gutters in a row. This is the horizontal length that runs along the eaves."
+  },
+  {
+   "id": "mcwroofs:gutter_middle",
+   "title": "The Downspout",
+   "desc": "Three base rain gutters in a column. Both gutter pieces then dye eight at a time into all sixteen colours."
+  },
+  {
+   "id": "mcwroofs:black_striped_awning",
+   "title": "Cloth Over the Window",
+   "desc": "A coloured carpet between two white carpets. Awnings come in fifteen colours - there is no white one, because white is the stripe."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mcwroofs:white_terracotta_roof",
+   "members": [
+    "mcwroofs:light_gray_terracotta_roof",
+    "mcwroofs:gray_terracotta_roof",
+    "mcwroofs:brown_terracotta_roof",
+    "mcwroofs:red_terracotta_roof",
+    "mcwroofs:orange_terracotta_roof",
+    "mcwroofs:yellow_terracotta_roof",
+    "mcwroofs:lime_terracotta_roof",
+    "mcwroofs:green_terracotta_roof",
+    "mcwroofs:cyan_terracotta_roof",
+    "mcwroofs:light_blue_terracotta_roof",
+    "mcwroofs:blue_terracotta_roof",
+    "mcwroofs:purple_terracotta_roof",
+    "mcwroofs:magenta_terracotta_roof",
+    "mcwroofs:pink_terracotta_roof"
+   ]
+  },
+  {
+   "hub": "mcwroofs:gutter_base_white",
+   "members": [
+    "mcwroofs:gutter_base_light_gray",
+    "mcwroofs:gutter_base_gray",
+    "mcwroofs:gutter_base_black",
+    "mcwroofs:gutter_base_brown",
+    "mcwroofs:gutter_base_red",
+    "mcwroofs:gutter_base_orange",
+    "mcwroofs:gutter_base_yellow",
+    "mcwroofs:gutter_base_lime",
+    "mcwroofs:gutter_base_green",
+    "mcwroofs:gutter_base_cyan",
+    "mcwroofs:gutter_base_light_blue",
+    "mcwroofs:gutter_base_blue",
+    "mcwroofs:gutter_base_purple",
+    "mcwroofs:gutter_base_magenta"
+   ]
+  },
+  {
+   "hub": "mcwroofs:spruce_roof",
+   "members": [
+    "mcwroofs:birch_roof",
+    "mcwroofs:jungle_roof",
+    "mcwroofs:acacia_roof",
+    "mcwroofs:dark_oak_roof",
+    "mcwroofs:mangrove_roof",
+    "mcwroofs:cherry_roof",
+    "mcwroofs:bamboo_roof",
+    "mcwroofs:crimson_roof",
+    "mcwroofs:warped_roof",
+    "mcwroofs:stone_roof",
+    "mcwroofs:cobblestone_roof",
+    "mcwroofs:deepslate_roof",
+    "mcwroofs:blackstone_roof"
+   ]
+  }
+ ],
+ "notes": "MACAW'S MODS SHARE ONE STRUCTURE: A SMALL NUMBER OF DISTINCT BLOCK TYPES CROSSED WITH A LARGE MATERIAL TABLE. The chain below is one step per distinct RECIPE SHAPE, not one per id, and the material tables go to wheels. MODDB: no consensus signal - moddb.json contains no key for any Macaw's mod - so every ordering here is the recipe graph alone and there is no conflict to record. THE LARGEST MACAW'S MOD IN THIS SLICE AT 607 IDS, AND IT IS SEVEN SHAPES TIMES FORTY MATERIALS PLUS THREE SMALL EXTRAS. Verified against mcw-roofs-2.3.2-mc1.20.1forge.jar (Modrinth version 2.3.2, loaders=[forge], game_versions=[1.20.1]). ID DETECTION - ANOTHER PERFECTLY CLEAN JAR: 607 item models, 605 blockstates, 607 lang block./item. keys; models INTERSECT lang = 607 and every one has a recipe and a loot table. Nothing to widen, nothing to narrow, no stale lang keys, no orphan models - which is notable given that its sibling Macaw's Doors and Bridges both ship pale_oak noise. THE SEVEN ROOF SHAPES, and this is the whole structure: roof, top_roof, attic_roof, steep_roof, upper_steep_roof, lower_roof and upper_lower_roof. Every material ships all seven. The material table runs 28 log-textured woods and stones for the crafted sets, 11 planks sets, 16 terracotta colours, 16 concrete colours, 2 brick types, 2 nether brick types, thatch, bamboo mosaic and base - which is 104 name-stems and 574 of the 607 ids. The remaining 33 are the rain gutters (17 base colours plus 17 downspout colours plus the base ingredient), the 15 striped awnings, the 5 roof blocks, the 5 roof slabs and the roofing hammer. DISTINCT RECIPE SHAPES: 8 - the seven crafted roof patterns (all logs or planks plus a stick) and one stonecutting shape, because every terracotta, concrete, brick and stone roof is a one-for-one stonecut from its base block. Verified yields: roof 2, top_roof 2, attic_roof 2, steep_roof 4, lower_roof 4, upper_steep 3, upper_lower 3, stonecut roofs 1, rain_gutter 1, gutter_base 1, gutter_middle 1, dyed gutters 8, awning 1, roofing_hammer 1. THE ONE MECHANIC: mcwroofs.hammer.desc = 'Right click on the top roof to toggle between states'. mcwroofs.roofitem.desc = 'Crafting Ingredient' is the rain gutter's tooltip. TWO ASYMMETRIES A GENERATOR WILL GET WRONG: there is NO white_striped_awning (white carpet is the stripe itself, so the family is 15 colours, not 16), and roof blocks and roof slabs exist in only five shades - base, white, light gray, gray and black - not the full sixteen. Both were caught by set membership against the verified list. DROPS: none. Everything in this jar is obtainable."
+}

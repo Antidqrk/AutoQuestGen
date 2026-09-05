@@ -1,0 +1,92 @@
+{
+ "mod": "splendid_slimes",
+ "verified_against": "splendid_slimes-0.20.5.jar",
+ "item_count_in_jar": 16,
+ "chain": [
+  {
+   "id": "kill:splendid_slimes:splendid_slime",
+   "title": "Meet the Locals",
+   "desc": "Splendid Slimes spawn wild in their own structures; the mod's root advancement triggers on your first encounter."
+  },
+  {
+   "id": "splendid_slimes:plort",
+   "title": "The Thing They Leave Behind",
+   "desc": "Dropped by a slime that has been fed the food its breed wants. Every machine in the mod is built with one."
+  },
+  {
+   "id": "splendid_slimes:slime_inspector",
+   "title": "Ask Why It Is Sulking",
+   "desc": "Iron and a Plort. It reports whether a slime is suffocating, overcrowded, stranded on land or short of neighbours."
+  },
+  {
+   "id": "splendid_slimes:slime_vac",
+   "title": "Suction With a Lever On It",
+   "desc": "Iron, a lever, phantom membrane and a Plort. Shift-right-click inhales slimes and items; right-click fires them back out."
+  },
+  {
+   "id": "splendid_slimes:slime_item",
+   "title": "A Slime in Your Pocket",
+   "desc": "The carried form of a live slime, produced by vacuuming one up, with its breed and traits held in the stack."
+  },
+  {
+   "id": "splendid_slimes:slime_feeder",
+   "title": "Let the Machine Do the Feeding",
+   "desc": "Amethyst, iron and a Plort; it feeds a penned slime the diet its breed demands so the Plorts keep coming."
+  },
+  {
+   "id": "splendid_slimes:corral_block",
+   "title": "Fences That Slimes Respect",
+   "desc": "Glass, phantom membrane, redstone and a Plort. Ordinary walls do not hold a slime that can bounce."
+  },
+  {
+   "id": "splendid_slimes:corral_pane",
+   "title": "See Through the Pen",
+   "desc": "A Corral Block cut down into panes, for walls you can actually watch the herd through."
+  },
+  {
+   "id": "splendid_slimes:rocket_pod",
+   "title": "Launch the Herd",
+   "desc": "Gunpowder and phantom membrane, for moving slimes the fast and undignified way."
+  },
+  {
+   "id": "splendid_slimes:plort_press",
+   "title": "Squeeze the Goods",
+   "desc": "Amethyst, an iron block, iron, a piston and a redstone lamp. It presses Plorts into Slime Hearts."
+  },
+  {
+   "id": "splendid_slimes:slime_heart",
+   "title": "The Blueprint of a Breed",
+   "desc": "Pressed from Plorts. Each carries one breed, and a fusion press recipe combines two into a Largo."
+  },
+  {
+   "id": "splendid_slimes:slime_incubator",
+   "title": "Grow One From Scratch",
+   "desc": "Amethyst, a ghast tear, glass, an iron block and a redstone lamp. Drop in a Slime Heart and a new slime grows."
+  },
+  {
+   "id": "splendid_slimes:plort_rippit",
+   "title": "Harvest Without Asking",
+   "desc": "An ender eye, an iron block, iron, a slime ball and a Plort; it strips Plorts off nearby slimes automatically."
+  },
+  {
+   "id": "kill:splendid_slimes:tarr",
+   "title": "What Happens When They Eat Too Much",
+   "desc": "The Tarr is the hostile slime the mod punishes careless feeding with, and the only enemy in the namespace."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "splendid_slimes:plort_press",
+   "members": [
+    "splendid_slimes:corral_block",
+    "splendid_slimes:corral_pane",
+    "splendid_slimes:plort_rippit",
+    "splendid_slimes:slime_feeder",
+    "splendid_slimes:slime_incubator",
+    "splendid_slimes:slime_inspector",
+    "splendid_slimes:slime_vac"
+   ]
+  }
+ ],
+ "notes": "VERIFICATION: only 16 ids pass models/item INTERSECT lang, and 3 of those are creative-only, leaving 13 obtainable items. THE BRIEF'S EXPECTED WHEEL DOES NOT EXIST AS IDS - this is the main finding. The 19 slime breeds (all_seeing, bitwise, blazing, bony, boomcat, ender, gold, luminous, minty, orby, phantom, prisma, puddle, rotting, shulking, slimy, sweet, webby, weeping) are DATA, defined in data/splendid_slimes/slimes/*.json, and they are NOT separate items or entities. There is one plort item, one slime_heart item and one slime_item, each formatted at runtime as '%s Plort' / '%s Slime Heart' / '%s Slime' from the breed held in NBT; the 38 hat/* and plort/* model stems are per-breed model overrides for those single items, not ids. A per-breed collecting wheel therefore cannot be written as namespaced ids and would need NBT-matching item tasks. The wheel supplied instead is the machine set, which is real ids; note that all 7 of its members are also chain steps, which is unavoidable when the whole mod has 13 obtainable items - treat it as a completionist 'build the whole ranch' hub rather than as new content. DROPS: slime_spawner, slime_candy and the two spawn eggs (spawn_egg_splendid_slime, spawn_egg_tarr) pass the id test but have NO recipe and NO loot table anywhere in the jar, so they are creative-only and would make uncompletable tasks - all four are excluded from the chain. tarrtar has an item model but no lang key and no registry reference at all; dropped. ENTITIES: 12 entity.splendid_slimes.* lang keys reduce to 2 real entity types. splendid_slimes:splendid_slime and splendid_slimes:tarr are both verified - they are the two values of the vanilla entity_type tags fall_damage_immune and frog_food, which is definitive registration. The other 10 keys are HUD and tooltip strings (diet, hunger, owner, sad, furious, happy, neutral, wild, largo_diet) plus largo_splendid_slime, which is the display-name format for a fused slime rather than its own entity type; all dropped. GRAPH: the mod's own advancement tree confirms the order used here - root -> obtain_plort -> {obtain_corral, obtain_feeder, obtain_rippit}, and root -> obtain_press -> obtain_incubator. Plort is the true root because it is an ingredient in the vac, inspector, feeder, corral and rippit. CONSENSUS: splendid_slimes is ABSENT from moddb.json, so there was no published ordering to check against or contradict. The chain is 14 steps and deliberately not padded - 13 obtainable items plus two verified kill targets is the whole mod."
+}

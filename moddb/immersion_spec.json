@@ -1,0 +1,1026 @@
+{
+ "meta": {
+  "purpose": "Machine-checkable spec for making generated FTB Quests books read as authored rather than enumerated. Companion to style_guide.json (wording) and design_rules.json (per-mod gating). Where they overlap, style_guide.json wins on wording and this file wins on structure, text budget and reward semantics.",
+  "scope": "The unit of authorship is the chapter; the unit of enforcement is the BOOK AS WRITTEN. See meta.artifact_boundary - checks must run on the artifact the player opens, not on the intermediate doc.",
+  "version": 2,
+  "created": "2026-08-28",
+  "revised": "2026-08-29",
+  "supersedes": "immersion_spec.json v1 (backup: scratchpad/immersion_spec.v1.backup.json)",
+  "revision_reason": "v1 was written from a single pack (Prominence II) plus mod-keyed harvest aggregates, and autoquestgen.py referenced it ZERO times. Six of its load-bearing rules were put through independent verification against freshly harvested per-pack corpora (27, 41, 86 and 25 packs from Modrinth, CurseForge and GitHub). NONE of the six survived exactly as written: one was measuring an artifact that does not exist (optional flag), two had thresholds calibrated on chapters far larger than ours, one inverted its own corpus in its second clause, one was passable by DELETING text, and one was half right. v2 keeps only what reproduced, states every check as a function returning a number, records the confidence grade and the gaming exploit for each, and lists in `removed` everything that was cut so nobody re-adds it.",
+  "core_thesis": "A checklist is a flat list of things you do not have yet. A questline is a route someone walked first and then marked. Three measurable things carry that difference, and all three are absent from our output: (1) the map FANS - authored chapters average 3.4-5.0 quests per screen row, ours average 2.0 on every chapter of 24; (2) the book PAYS FOR WHAT YOU DID - authored rewards beat a within-chapter shuffle null by +8.9 points, ours by +0.0; (3) chapter one ORIENTS instead of shopping - 49.6% of authored chapter-one quests carry a checkmark task, ours carry zero in the entire book.",
+  "front_loading_fact": "Quest-book engagement is sharply front-loaded and this is the single most important weighting fact in the file. 42.1% of 266 position-tagged player reactions (playthrough_uncovered.json + playthrough_x33n.json) fall in the first fifth of a playthrough, against 11.3-17.3% in each later quintile. Re-derived independently by two lanes (42.1% n=266, 42.3% n=267) and it survives a coverage control: episodes were mined evenly across fifths (13/9/12/11/10) yet quintile 1 still draws 8.92 reactions/episode against 2.7-4.9 later. Engagement runs 5.2-6.7 reactions/hour in the opening fifth against 0.45-2.95/hour afterwards over 97.53 transcribed hours. CAVEAT: three series only, and one (Biohazard: Project Genesis) supplies 1,071 of 1,542 raw reaction records. Treat the rate as directional and the verbatim quotes as evidence. CONSEQUENCE: a rule that only touches chapter one is worth roughly 5x a rule that touches an average later chapter, per quest it changes.",
+  "artifact_boundary": "CRITICAL AND PREVIOUSLY GOT WRONG. autoquestgen has two representations. local_quest_doc + clean_doc produce the DOC; build_chapters (autoquestgen.py:1218) converts the doc into the CHAPTERS that write_snbt puts on disk. `size` and `shape` are added ONLY in build_chapters, by _size_hierarchy (line 1338, gated on opts['style_chapters']) and _quest_shape. Measured on the doc: 0 of 381 quests carry a size key. Measured on the written book from the same doc: 128 of 381 (33.6%) carry size>1 and 13 of 24 chapters (54.2%) enlarge a root. A v1-era finding of '0% visual hierarchy, the generator never emits a size key' was measuring the doc and is FALSE of the book a player opens. Everything else - tasks, rewards, descriptions, subtitles, optional, dependencies - passes through build_chapters unchanged (verified: identical counters on both sides). RULE: any check touching size or shape MUST run on build_chapters output.",
+  "confidence_grades": {
+   "A": "Reproduced by a second lane using an independently harvested corpus, and survives adversarial tests (dedup of copied books, display-order vs zip-order, gaming).",
+   "B": "One lane, its own multi-pack corpus (>=15 packs), both sides measured by one code path. Not independently re-derived.",
+   "C": "Single authored pack (n=1, Prominence II) or a threshold that could not be calibrated against the corpus. Directional only - the DEFECT may be real while the NUMBER is not corpus-backed. Never ship a hard gate on a C threshold.",
+   "D": "Measured and rejected. Listed in `removed`, not in `checks`."
+  },
+  "how_to_use": "Import moddb/immersion_spec.json, read spec['checks'], and run each check's `function` against the written book. Each returns (number, pass_bool). Report the failing ids. spec['generator_checklist'] is the same set in one-line form for prompt injection. Do NOT hand a check to an optimiser without reading its `gameable_by` field.",
+  "originality": "Every example sentence, title and quest name in this file was invented for this file. Nothing is copied or paraphrased from any modpack, wiki or article. Player quotations are verbatim transcript fragments from moddb/playthrough_*.json and are marked as such."
+ },
+ "checks": [
+  {
+   "id": "CHK-01",
+   "name": "free_task_primitive_exists",
+   "tier": 1,
+   "priority": "critical",
+   "confidence": "A",
+   "statement": "The book must use the checkmark task. At least 4% of all tasks are checkmark, and the first quest a player can see in chapter one is a checkmark quest.",
+   "function": "checkmark_task_share(book) -> float ; ch1_opens_free(book) -> bool",
+   "measure": "share = |{t : t.type == 'checkmark'}| / |all tasks|. ch1_opens_free = the first-shown quest of the display-ordered first chapter has a checkmark task. Chapter order = implicit ungrouped group, then chapter_groups.snbt list order, then order_index (NOT zip order - see corpora.cf86.caveats).",
+   "target": "share >= 0.04 ; ch1_opens_free == True",
+   "ours": "share = 0.000 (0 of 381 tasks). ch1_opens_free = False. Full mix: item 336, structure 23, kill 20, dimension 2, checkmark 0. Re-measured 2026-08-29.",
+   "authored": "cf86 (86 packs, 2,083 chapters): the first-shown chapter-one quest is a checkmark in 67.4% of books vs 25.6% for later chapters, z=6.71 on distinct designs - the largest first-chapter separation found anywhere in this study. arc27 (472 chapters): 49.6% of chapter-one quests carry a checkmark task vs 4.5% across the other 445 chapters (15,223 quests). prom1: checkmark is 5.3% of tasks and the most common chapter opener at 40%.",
+   "corpus": [
+    "cf86",
+    "arc27",
+    "prom1"
+   ],
+   "matters_because": "Two independently harvested corpora agree, and this is the only zero-cost primitive FTB Quests offers. Without it the book can never say anything without charging for it: every one of our 381 quests requires acquiring, killing or travelling. It is also the enabling primitive for CHK-02, CHK-08 and the breather guard - none of them are reachable while the generator emits zero checkmarks. autoquestgen.py:368 already lists 'checkmark' in TASK_TYPES; no generation path ever produces one.",
+   "player_evidence": "Players notice when a quest's verb does not match its task - a 'find' framed as an item or kill task reads wrong to them.",
+   "gameable_by": "Emitting empty untitled checkmark quests. Blocked by CHK-02, which requires the free quests to carry text. Never ship CHK-01 without CHK-02.",
+   "wire_point": "autoquestgen.py:7133 region (local_quest_doc chapter loop) - insert 1-2 checkmark rows per chapter before shape_as_trunk assigns dependencies.",
+   "effort": "low"
+  },
+  {
+   "id": "CHK-02",
+   "name": "ch1_oriented_frac",
+   "tier": 1,
+   "priority": "critical",
+   "confidence": "A",
+   "statement": "Chapter one orients rather than shops: at least 25% of its quests have NO item task AND carry a non-empty title or description.",
+   "function": "ch1_oriented_frac(book) -> float",
+   "measure": "q is oriented if (no task of type 'item') and (title.strip() or joined(description).strip()). Return count/len over the display-ordered first chapter.",
+   "target": ">= 0.25",
+   "ours": "0.000 (0 of 9 in 'Overworld Beginnings'; all 9 are item fetches: Punch Some Wood x16, x12, x32, x8, x5). Book-wide free-task fraction 0.066.",
+   "authored": "arc27, restricted to the 18 packs whose text is measurable inline: mean 0.692, median 0.639, 16 of 18 pass (89%). Raw free-task fraction (no text requirement) is mean 0.679 / median 0.667 with 24 of 27 passing 0.40.",
+   "corpus": [
+    "arc27"
+   ],
+   "matters_because": "42.1% of positioned player reactions land in the first fifth of a playthrough, so chapter one is most of the book a player ever experiences. An authored first chapter asks the player to notice what they are already doing; ours asks them to go shopping before anything happens.",
+   "player_evidence": "Players describe gathering 'for the quest' when an ask goes unpaid - the audible sign of a cost with no acknowledgement.",
+   "gameable_by": "Nothing cheap. The text clause blocks blank checkboxes (demonstrated: appending 6 empty checkmark quests moves the naive free_frac from 0.000 to 0.400 and PASSES the v1 form of this rule, while ch1_oriented_frac stays at 0.000).",
+   "wire_point": "Same insertion point as CHK-01, plus fill_blank_descriptions (autoquestgen.py:3967) must not skip zero-task quests.",
+   "effort": "low",
+   "supersedes": "v1 arc.opening rule 1-2 and the two-clause 'free_frac >= 0.40 AND kinds >= 2' form. The kinds>=2 clause is REMOVED - see removed.R-07."
+  },
+  {
+   "id": "CHK-03",
+   "name": "chapter_rows_are_wide",
+   "tier": 1,
+   "priority": "critical",
+   "confidence": "B (defect) / C (threshold)",
+   "statement": "Chapters must fan, not comb. Per chapter of >=5 quests, at most 60% of dependency rows may hold <=2 quests, and the median row must hold >=3. At least 70% of chapters pass.",
+   "function": "narrow_row_fraction(chapter) -> float ; median_row_width(chapter) -> float",
+   "measure": "rank(q) = longest path from a root over IN-CHAPTER dependency edges only (cross-chapter deps dropped). w[r] = |{q : rank(q) == r}|. narrow_row_fraction = |{r : w[r] <= 2}| / |rows|. median_row_width = median(w). This is the on-screen map: layout_positions sets y = 2.2 * _dep_levels(rank) (autoquestgen.py:784,790,731), so rows ARE screen rows.",
+   "target": "per chapter: narrow_row_fraction <= 0.60 AND median_row_width >= 3. Book: >= 70% of chapters of >=5 quests pass.",
+   "ours": "0 of 24 chapters pass. narrow_row_fraction median 0.889, MINIMUM 0.833 - not one chapter is close. median_row_width is exactly 2.0 on every single chapter. The median chapter has 89% of its rows at width <=2. Re-measured 2026-08-29.",
+   "authored": "shapes.json (729 deduped chapters of >=5 quests) stores only max_width, so mean row width must be derived as 1/cpf: 3.4 at 10-19 quests, 5.0 at 20-34 quests. That supports the median_row_width >= 3 floor directly. THE 0.60 THRESHOLD IS NOT CORPUS-CALIBRATED - shapes.json discards the width Counter (harvest.py:~175 builds `widths = Counter(depth.values())` and keeps only the max). Persisting that Counter is a one-line harvest change that would make the threshold derivable. Until then treat 0.60 as a design choice, not a measurement.",
+   "corpus": [
+    "arc27",
+    "shapes.json"
+   ],
+   "matters_because": "This is what the map looks like, and the map is read before any text. Ours averages 1.8 quests per screen row against 3.4-5.0 authored at matched size. A comb removes all agency - the player has exactly one thing they could do next - and makes the chapter's pace hostage to its slowest link. MECHANISM IS KNOWN AND LOCAL: shape_as_trunk (autoquestgen.py:1074) sets spine_len = 2.9 * n**0.36 (10 spine nodes for a 29-quest chapter) and hangs each non-spine quest on the nearest EARLIER trunk node. That produces a long corridor with 1-2 buds per rung. One function is the whole defect.",
+   "player_evidence": "Players backtrack hunting for whichever quest gated them - the 100%-complete-but-still-locked complaint.",
+   "gameable_by": "cpf-style ratios are gameable by growing n at constant depth; row-width is not, but median_row_width alone is gameable by one anomalous wide row - which is exactly why the v1 max_width clause was dropped (removed.R-03). Both clauses must be kept together.",
+   "wire_point": "autoquestgen.py:1074 shape_as_trunk. Reduce spine_len and let more quests share each rank: target spine_len ~ n/4 capped at 6-8, and hang leaves on the SAME anchor rather than the nearest earlier one.",
+   "effort": "medium",
+   "note": "Fixing shape_as_trunk also fixes CHK-15 and CHK-16 - same function, three checks.",
+   "supersedes": "v1 agency rule 1 and anti_patterns[1]. The critical-path-fraction form is REMOVED - see removed.R-03."
+  },
+  {
+   "id": "CHK-04",
+   "name": "reward_task_lift",
+   "tier": 1,
+   "priority": "critical",
+   "confidence": "B",
+   "statement": "The reward must be statistically related to the task. Namespace-match lift over a within-chapter shuffle null must be at least +4.0 percentage points.",
+   "function": "reward_task_lift(book) -> float (percentage points)",
+   "measure": "Per chapter, take quests having BOTH an item task and an item reward. observed = share where some reward item shares a mod namespace with some task item. null = mean of the same statistic over 200 shuffles of the reward lists among those same quests. lift = observed - null, pooled quest-weighted. The shuffle null is mandatory: in a single-mod chapter the raw match rate is near 1.0 by construction and means nothing.",
+   "target": ">= +4.0",
+   "ours": "+0.0 (observed 9.6% vs null 9.6% over 146 qualifying quests). Statistically indistinguishable from dealing the chapter's rewards out at random.",
+   "authored": "rw17: +8.9 pooled, 10 of 15 measurable packs pass. Society: Sunlit Valley +24.1, Fear Nightfall +20.5, Better MC FORGE +17.1, Medieval MC +11.5, Prominence II +9.1. Every authored pack is positive; none is zero.",
+   "corpus": [
+    "rw17"
+   ],
+   "matters_because": "This is the cleanest single separator between our book and every authored one, and our score is not merely low but degenerate. A reward with no relationship to the task cannot be read as payment for it, so the player files it as loot that fell out of a menu. PROVEN SATISFIABLE: a 30-line repair drawing rewards from the task's own namespace moves this to +13.5, above the authored average.",
+   "player_evidence": "Players call out reward choices that feel arbitrary for the quest they just finished.",
+   "gameable_by": "Always paying the task item back. Guard with CHK-05 (non-bulk share) so the namespace match cannot be satisfied purely with more of the same ingot.",
+   "wire_point": "autoquestgen.py:7150-7190 (the reward branch inside local_quest_doc). Currently draws `src` from rpool by global progression index, which is namespace-blind.",
+   "effort": "low"
+  },
+  {
+   "id": "CHK-05",
+   "name": "non_bulk_reward_share",
+   "tier": 1,
+   "priority": "critical",
+   "confidence": "B",
+   "statement": "At least 25% of item rewards must be NON-BULK - something other than a raw crafting input. Non-bulk = capability (tool/weapon/armour/wearable/machine/container/transport), food, currency, consumable, trophy or lootbox.",
+   "function": "non_bulk_reward_share(book) -> float",
+   "measure": "classify every item reward with taxo.category(); share = |{c in {capability, currency, lootbox, food, consumable, trophy}}| / |item rewards|.",
+   "target": ">= 0.25",
+   "ours": "0.006 (1 of 158 item rewards - and that one is twilightforest:armor_shard, a false positive on the substring 'armor'; TRUE count is 0). 93.7% of our item rewards are ingots, nuggets, gems, shards and dust.",
+   "authored": "rw17: median 37%, pooled 41% (4,257 item rewards). Range 17-79% for every pack except one outlier. Passes 13 of 16 packs that issue items. ROBUSTNESS: survives removing every vanilla reward - authored stays 33% pooled modded-only, ours stays ~1%. So it is not an emeralds-and-bread artifact.",
+   "corpus": [
+    "rw17"
+   ],
+   "matters_because": "This is the direct answer to the front-loading collapse. After chapter one the book reads as a reward dispenser, and ours dispenses ingots into an inventory that already has them - so the dispensing registers as nothing. NOT AN AVAILABILITY PROBLEM: the pack scan exposes 1,421 capability items, 296 trophies, 270 foods and 149 lootboxes that the generator never reaches for.",
+   "gameable_by": "Handing out one cosmetic per chapter. CHK-06 and CHK-07 constrain placement.",
+   "wire_point": "autoquestgen.py:4464 reward_pool + 4483 _pool_order. reward_pool is materials-biased; add a capability/food/trophy lane and interleave.",
+   "effort": "low"
+  },
+  {
+   "id": "CHK-06",
+   "name": "capability_reward_chapter_share",
+   "tier": 1,
+   "priority": "high",
+   "confidence": "B",
+   "statement": "At least 45% of chapters of >=6 quests must contain at least one CAPABILITY reward - an item that does something the player could not do before.",
+   "function": "capability_reward_chapter_share(book) -> float",
+   "measure": "per chapter of >=6 quests, does any quest reward an item with taxo.category() == 'capability'? Return share of chapters.",
+   "target": ">= 0.45",
+   "ours": "0.043 nominal (1 of 23); TRUE value 0.000 - the single hit is the armor_shard false positive.",
+   "authored": "rw17: median 56%, pooled 58% (135 of 231 chapters). Passes 12 of 17. Medieval MC FORGE 83%, Homestead 81%, Better MC 78%, Prominence II 69%.",
+   "corpus": [
+    "rw17"
+   ],
+   "matters_because": "A chapter that never hands over a thing that ACTS is a chapter with no reason to be read twice - it has taught the player its rewards are inventory filler. Strictly enforceable: 1,421 capability items are in the scan.",
+   "gameable_by": "Low risk. The classifier's 67.9% recall means a generator gaming this must actually ship handheld-model items.",
+   "wire_point": "Same as CHK-05.",
+   "effort": "low"
+  },
+  {
+   "id": "CHK-07",
+   "name": "no_unpaid_chapter_tail",
+   "tier": 1,
+   "priority": "high",
+   "confidence": "A (defect) / C (threshold)",
+   "statement": "No chapter may end in a run of more than one consecutive zero-reward quest, and no more than 12% of the book's quests may carry no reward at all.",
+   "function": "trailing_unpaid_run(chapter) -> int ; unpaid_share(book) -> float",
+   "measure": "sort each chapter by dependency depth then id; walk backwards counting quests with an empty or missing rewards list. Separately unpaid_share = |{q : not q.rewards}| / |quests|, and report the mean normalised position of the unpaid quests.",
+   "target": "max trailing run <= 1 for every chapter ; unpaid_share <= 0.12",
+   "ours": "unpaid_share 0.171 (65 of 381), mean normalised position 0.722. NINE of 25 chapters end in an unbroken unpaid block: Create last 9 of 29, Cataclysm last 9 of 29, Goety 7 of 22, Tropicraft 7 of 22, Botania 6 of 19, Twilight Forest 5 of 17, Alex's Mobs 5 of 17, Re:Deco 5 of 16, Dusty Decorations 4 of 25. Re-measured 2026-08-29 (earlier lane report said 19.8%/8 chapters on a 404-quest build).",
+   "authored": "prom1: 10.5% of quests carry no reward, and those are lore/acknowledge nodes rather than chapter tails. HONEST GAP: cross-pack per-quest reward POSITION is not in the corpus - rewards.json aggregates per mod only. The 12% ceiling is grade C. The trailing-run defect is grade A because it is our own direct measurement and the mechanism is visible in code.",
+   "corpus": [
+    "prom1",
+    "ours"
+   ],
+   "matters_because": "The tail of a chapter holds its most expensive asks and is where the player arrives after the most work. In 7 of the 9 affected chapters EVERY unpaid quest is in that unbroken tail - the signature of an allocator that pays the first N quests and stops. This is not a distributional wobble, it is a bug with a shape.",
+   "player_evidence": "An unpaid expensive ask reads to the player as busywork done only because the book demanded it.",
+   "gameable_by": "Paying 1 XP everywhere. Guard with CHK-05 and CHK-13.",
+   "wire_point": "autoquestgen.py:7150-7190. The `rews` fallbacks are per-branch; some path is leaving rews empty. Add a post-pass over each chapter's tail.",
+   "effort": "low"
+  },
+  {
+   "id": "CHK-08",
+   "name": "ch1_carries_the_prose",
+   "tier": 2,
+   "priority": "high",
+   "confidence": "A",
+   "statement": "Chapter one is front matter and carries the writing budget: at least 50% of its quests have no item task, its mean description (where present) is at least 200 characters, and it holds at least 2x its per-quest share of the book's description characters.",
+   "function": "ch1_is_front_matter(book) -> float ; ch1_mean_desc_chars(book) -> float ; ch1_prose_concentration(book) -> float",
+   "measure": "front_matter = share of chapter-one quests with no item task (>= 0.50). mean_desc = mean joined-description length in chars over chapter-one quests that HAVE one (>= 200). concentration = (ch1 desc chars / all desc chars) / (|ch1 quests| / |all quests|) (>= 2.0).",
+   "target": "front_matter >= 0.50 AND mean_desc >= 200 AND concentration >= 2.0",
+   "ours": "front_matter 0.000, mean_desc 51.1 chars at 9/9 coverage (the SHORTEST descriptions anywhere in our book), concentration 0.58. Later chapters: 84% coverage at ~106 chars. Our ch1/rest length ratio is 0.48; we have the budget exactly inverted.",
+   "authored": "arc27, corrected to the 16 genuinely non-localised packs: 16 of 16 write chapter-one descriptions; per-pack mean is median 456 chars (p25 239, p75 650); 13 of 16 pass the 200 bar. Chapter one is median 8 quests with median 56% of its quests free of item tasks (7 of 16 are 100% free-task), and carries median 8.46x its per-quest share of description characters (12 of 16 exceed 2.0x). CORRECTION TO v1: this is a CHAPTER-level effect, not a quest-level one. Root vs non-root description length within the same chapter is flat (ch1 roots 386.1 chars vs ch1 non-roots 384.3; later roots 194.6 vs 185.1). v1's 'the entry quest carries the chapter's longest description' is not observed - see removed.R-05.",
+   "corpus": [
+    "arc27"
+   ],
+   "matters_because": "42% of reactions land in the first fifth and we spend our thinnest writing exactly there. Enforcing mean_desc alone would be satisfiable by padding one gameplay quest, which is why the front_matter clause is bundled: on a gameplay chapter one, long descriptions are just ornament.",
+   "gameable_by": "mean_desc is a mean over quests that HAVE a description, so deleting the short ones raises it. The concentration clause (a share of total chars) blocks that.",
+   "wire_point": "autoquestgen.py:5263 _VANILLA_CHAPTERS (chapter one is hardcoded) plus auto_description:4025 / style_desc:4155.",
+   "effort": "medium",
+   "supersedes": "v1 arc.opening rule 3. The paired coverage ceiling is REMOVED - see removed.R-04."
+  },
+  {
+   "id": "CHK-09",
+   "name": "book_text_floor",
+   "tier": 2,
+   "priority": "medium",
+   "confidence": "A",
+   "statement": "At least 25% of quests carry text in SOME channel (description or subtitle). There is no upper bound.",
+   "function": "any_text_coverage(book) -> float",
+   "measure": "|{q : joined(description).strip() or subtitle.strip()}| / |quests|.",
+   "target": ">= 0.25 (floor only)",
+   "ours": "0.845 - PASSES. Recorded so nobody re-derives a coverage ceiling: our coverage is inside the authored range, below 7 of 16 authored packs.",
+   "authored": "arc27 (16 non-localised packs): median description coverage 0.103, median subtitle coverage 0.271, median ANY-TEXT coverage 0.715; 10 of 16 exceed 0.45 and 7 exceed 0.80; minimum 0.26, maximum 1.00. The highest-download book in the corpus (Better MC BMC2, 3.26M downloads) has description coverage 0.09 and SUBTITLE coverage 1.00 at 113 chars mean.",
+   "corpus": [
+    "arc27"
+   ],
+   "matters_because": "Included as a floor and as a standing correction. A v1-era proposal to cap coverage at 45% would have deleted the only text from 151 of our 381 quests - and deleting shortest-first, those 151 are the mod-specific operational hints ('Ender Golems patrol the Ruined Citadel and drop a Void Core on death') while the nine it wanted inflated are jokes about vanilla steps.",
+   "player_evidence": "Of 371 book-scoped player quotes, 26 reference description text, and every one complains it failed to state the operational fact - constraints, conditions, what actually completes it.",
+   "gameable_by": "n/a - floor only.",
+   "wire_point": "n/a - currently passing. Regression guard.",
+   "effort": "none"
+  },
+  {
+   "id": "CHK-10",
+   "name": "subtitle_channel_used",
+   "tier": 2,
+   "priority": "high",
+   "confidence": "B",
+   "statement": "Use the subtitle as a second text channel: 40-60% of quests carry a non-empty subtitle.",
+   "function": "subtitle_coverage(book) -> float",
+   "measure": "|{q : subtitle.strip()}| / |quests|.",
+   "target": "0.40 <= x <= 0.60",
+   "ours": "0.000 (0 of 381). autoquestgen can round-trip an imported subtitle (lines 613-614 and 1700-1701) but NO generation path ever writes one.",
+   "authored": "prom1: 1,044 of 1,754 (59.5%), median 9 words, p90 27 words; 398 quests carry both channels; combined coverage 74.5% against bare-description 37.6% - more than half the pack's short guidance lives in the subtitle. arc27 cross-pack: median subtitle coverage 0.271, and Better MC BMC2 runs 1.00.",
+   "corpus": [
+    "prom1",
+    "arc27"
+   ],
+   "matters_because": "The subtitle renders under the title in the quest list and is read at a glance without opening the quest; the description is read only after clicking in. One channel instead of two forces every line to be both glance-hint and explanation, which is a direct cause of our book of identical 16-word paragraphs (CHK-12). It also gives the short material somewhere to go when descriptions get longer.",
+   "gameable_by": "Duplicating the title into the subtitle. Add a guard: subtitle != title and subtitle is not a substring of the title.",
+   "wire_point": "autoquestgen.py:601 _quest already accepts `subtitle`; the generation side (local_quest_doc row builder + style_desc:4155) must emit it.",
+   "effort": "medium"
+  },
+  {
+   "id": "CHK-11",
+   "name": "no_generator_tail",
+   "tier": 2,
+   "priority": "high",
+   "confidence": "A (self-reference) / C (rate)",
+   "statement": "No description may end in a fixed generator tail, and no description may name the item its own task already names.",
+   "function": "generator_tail_share(book) -> float ; self_referential_desc_count(book) -> int",
+   "measure": "regex census for tail skeletons: /asks? for/, /(crafted|made|built|assembled|forged|smelted) from/, /goes into/, /out in the world/, /drops? from/. For each 'Asks for X' / 'Goes into X' match, tokenise X and intersect with the tokens of the quest's own task item id.",
+   "target": "generator_tail_share == 0.0 ; self_referential_desc_count == 0 (hard fail)",
+   "ours": "0.312 (107 of 343 described quests): 'Asks for X' 48, 'Crafted/Made from X' 34, 'find X out in the world' 23, 'Goes into X' 11, 'drops from' 3. Of the 48 'Asks for X' lines, 41 (85.4%) name the quest's OWN task item; 5 of 11 'Goes into X' lines do too. Worst case: 'Open the Way - Ten blocks and a flint and steel. Asks for Obsidian. Goes into the Obsidian.' One-sentence pure recipe restatement: 17.8% (37 of 208).",
+   "authored": "prom1: 4 of 660 descriptions match any skeleton (0.6%); one-sentence pure recipe restatement 0.5% (1 of 220), i.e. we are 36x the authored rate. n=1 pack, so the RATE is grade C - but the self-reference clause needs no corpus: 'Asks for Oak Log' printed above a task widget already showing an oak log and a counter is a correctness bug, not a style preference.",
+   "corpus": [
+    "prom1"
+   ],
+   "matters_because": "The most literally spreadsheet-like construct in the book, on one in seven descriptions, costing a line of reading and returning zero bits.",
+   "gameable_by": "Rephrasing the same restatement. The self-reference token-intersection clause catches rephrasings; the skeleton list catches templates. Keep both.",
+   "wire_point": "autoquestgen.py:4025 auto_description and 3906 why_want - these emit the tails.",
+   "effort": "low"
+  },
+  {
+   "id": "CHK-12",
+   "name": "description_length_by_role",
+   "tier": 2,
+   "priority": "medium",
+   "confidence": "C",
+   "statement": "Description length must vary by structural role: a chapter's root quests get at least 2x the median description length of its terminal leaves.",
+   "function": "root_leaf_desc_ratio(book) -> float",
+   "measure": "classify ROOT (no in-chapter dependency) / LEAF (nothing in-chapter depends on it) / MIDDLE. Compare median word count of described ROOTs to described LEAFs, book-wide.",
+   "target": ">= 2.0",
+   "ours": "1.00. ROOT median 16.0 words (max 34), LEAF median 16.0 (max 37), MIDDLE median 16.0 (max 35) - the three roles are indistinguishable to three significant figures. The generator's longest description in 381 quests is 37 words; zero descriptions reach 50 words. Coefficient of variation 0.557.",
+   "authored": "prom1: ROOT n=39 median 49 words, LEAF n=984 median 21, MIDDLE n=731 median 28. Ratio 2.33. CV 1.129. n=1 PACK - grade C.",
+   "corpus": [
+    "prom1"
+   ],
+   "matters_because": "The root is what a player reads while deciding whether this chapter is worth their evening; the leaf is read after committing. Identical text on both is the mechanical tell that nobody chose. This is the surviving form of the 'unequal not better' thesis; its sibling (max >= 3x chapter median) was REMOVED because it is passed by deleting mid-length text - see removed.R-06.",
+   "gameable_by": "Partly - shortening leaves raises the ratio as effectively as lengthening roots. Pair with CHK-09's floor and an absolute root_median >= 30 words. Do NOT hand this to an optimiser alone.",
+   "wire_point": "autoquestgen.py:4155 style_desc - branch on the quest's role, which shape_as_trunk already knows.",
+   "effort": "medium"
+  },
+  {
+   "id": "CHK-13",
+   "name": "reward_kind_is_saved_for_the_end",
+   "tier": 2,
+   "priority": "medium",
+   "confidence": "B (share) / C (position)",
+   "statement": "Table and choice rewards are scarce and late: at most 5% of reward entries, with a mean normalised within-chapter position of at least 0.75.",
+   "function": "choice_reward_share(book) -> float ; choice_reward_mean_position(book) -> float",
+   "measure": "share = |{r : r.type in ('choice','random','loot')}| / |reward entries|. position = mean over those entries of (index in dependency order) / (len(chapter)-1).",
+   "target": "share <= 0.05 AND mean position >= 0.75",
+   "ours": "share 0.142 (57 of 402), mean position 0.508. Every reward type sits at mid-chapter: choice 0.508, xp_levels 0.409, item 0.441, xp 0.447. Only 10 of 18 eligible chapters put their largest XP on their last quest.",
+   "authored": "rw17: pooled 1.9%, per-pack median 0.7%. rewards.json: table rewards are 6.5% of 23,600 reward entries across 189 mods. design_rules.rewards states they are reserved for chapter finales and wheel hubs. The 0.75 POSITION bar is grade C - rewards.json carries no position data.",
+   "corpus": [
+    "rw17",
+    "rewards.json",
+    "design_rules.json"
+   ],
+   "matters_because": "Reward kind is the only lever that says 'this one was the finale' without a number. Spending choice tables mid-chapter spends the signal, and then the actual finale is one of the nine chapters that ends on nothing (CHK-07).",
+   "gameable_by": "Low.",
+   "wire_point": "autoquestgen.py:7185 (`elif pool_ids and rng.random() < 0.05`) - the 0.05 gate is per-quest, so it fires ~5% of 381 = 19 times, plus more from other branches. Make it positional instead of probabilistic.",
+   "effort": "low"
+  },
+  {
+   "id": "CHK-14",
+   "name": "bulk_ask_per_chapter",
+   "tier": 2,
+   "priority": "medium",
+   "confidence": "B",
+   "statement": "Every chapter of >=15 item tasks contains at least one bulk ask (count > 1). Book-wide share of item tasks with count>1 stays in 4-12%.",
+   "function": "chapters_without_bulk(book) -> int ; bulk_share(book) -> float",
+   "measure": "bulk = int(task.count or 1) > 1, over item tasks only, per chapter and book-wide.",
+   "target": "no chapter of >=15 item tasks has zero bulk ; 0.04 <= bulk_share <= 0.12",
+   "ours": "CORRECTED. bulk_share = 0.068 (23 of 336) - INSIDE the band, so the book-wide form of this rule already passes and an earlier lane report of 1.80% was measuring only the 22 generated mod chapters. The real defect is distribution: 17 of 25 chapters have EXACTLY zero bulk, and 13 of the 23 bulk asks live in the 3 hardcoded vanilla chapters (Overworld Beginnings 5/9, Into the Nether 5/6, The End 3/5). Our Create chapter is 0 bulk in 29 item tasks. Re-measured 2026-08-29.",
+   "authored": "counts.json: 7.46% of 34,296 item-task observations ask for more than 1. Heavy-tailed by mod - 43.0% of the 151 buckets with 30+ observations use zero bulk, but 19.2% are at or above 10% and 10.6% at or above 20%: createtea 99.2%, immersiveengineering 53.6%, zenith 51.9%, mekanism 32.0%, thermal 23.1%, farmersdelight 16.0%. Create itself is 7.1% over 2,637 observations. 'Exactly 64 of something' is 0.91% of all item tasks (311 of 34,296).",
+   "corpus": [
+    "counts.json"
+   ],
+   "matters_because": "A bulk ask is the only quest kind in the book that takes ten minutes instead of one. Without any, every quest in a mod chapter is the same size of task - which is what makes 29 consecutive Create quests read as a list. The generator has no concept of 'this is a bulk-resource mod', so it misses the authored heavy tail rather than merely the mean.",
+   "gameable_by": "Sprinkling count=2 everywhere. The per-mod tail (counts.json) should drive the count, not a uniform bump.",
+   "wire_point": "autoquestgen.py task row builder inside local_quest_doc; counts.json already holds the per-mod bulk rate.",
+   "effort": "low"
+  },
+  {
+   "id": "CHK-15",
+   "name": "required_subgraph_branches",
+   "tier": 3,
+   "priority": "medium",
+   "confidence": "B",
+   "statement": "Strip the optional quests and the remaining required graph must still branch: required_leaf_fraction >= 0.35.",
+   "function": "required_leaf_fraction(book) -> float",
+   "measure": "req = quests with optional falsy. leaf = no other REQUIRED quest depends on it. Return median over chapters (or pooled).",
+   "target": ">= 0.35",
+   "ours": "0.143 median per chapter (0.139 pooled) - 86% of required quests have exactly one child. Our chapters are a comb: a 7-deep corridor with buds glued on.",
+   "authored": "opt25 (512 chapters, 21,268 quests): required subgraphs are as branchy as the whole book - required_leaf_fraction 0.570 against overall leaf fraction 0.586. Median authored chapter: depth 5, width 11, size 32. Ours: depth 7, width 5, size 16.",
+   "corpus": [
+    "opt25"
+   ],
+   "matters_because": "The book-wide leaf fraction LOOKS correct (ours 0.525, authored 0.586, both inside v1's 45-55% band) only because the buds are counted. The required content on its own is a rail. This is the check that survives the optional-flag debate.",
+   "gameable_by": "Flagging more quests optional raises it. Pair with CHK-16.",
+   "wire_point": "autoquestgen.py:1074 shape_as_trunk - same fix as CHK-03.",
+   "effort": "medium (free if CHK-03 is done)"
+  },
+  {
+   "id": "CHK-16",
+   "name": "optional_is_a_chapter_decision",
+   "tier": 3,
+   "priority": "medium",
+   "confidence": "B",
+   "statement": "Authors decide `optional` per chapter, not per quest. At most 25% of chapters may sit in the 15-75% optional band.",
+   "function": "optional_middle_band_share(book) -> float",
+   "measure": "per chapter opt = |{q : q.optional}| / |quests|; share = |{c : 0.15 < opt < 0.75}| / |chapters|.",
+   "target": "<= 0.25",
+   "ours": "0.875. Pooled optional 0.535 (204 of 381). We have ZERO chapters at either pole. MECHANISM: autoquestgen.py:7133 sets optional=True on every trunk leaf, so optional is a synonym for leaf - they coincide on 365 of 381 quests (95.8%).",
+   "authored": "opt25 (494 chapters): bimodal. 57.5% of chapters sit at EXACTLY 0% optional, 87.0% at <=15%, 1.2% at >=75% (the catalogue chapters - 'here is every pickaxe in the pack'). Only 11.7% fall in the 15-75% middle band. We put 87.5% there - 7.5x.",
+   "corpus": [
+    "opt25"
+   ],
+   "matters_because": "The bimodality IS the authorial signature: a chapter is either a designed path (nothing optional) or a catalogue (almost everything optional). A uniform 50% across every chapter is what a per-quest rule looks like when it is pretending to be authorship. NOTE: the flag itself changes no pixel - per FTB docs it sits under Misc, not Appearance, and its only documented effect is exclusion from chapter-completion accounting. Do not expect a visual change; expect CHK-17.",
+   "gameable_by": "Setting every chapter to 0%. Acceptable - that is one of the two authored poles.",
+   "wire_point": "autoquestgen.py:7133. Decide optional per chapter (catalogue vs path) rather than per leaf.",
+   "effort": "low",
+   "supersedes": "v1 variety.optional_fraction = 0.18 and checklist[3]. The pooled-fraction form is REMOVED - see removed.R-01."
+  },
+  {
+   "id": "CHK-17",
+   "name": "chapter_completion_honesty",
+   "tier": 3,
+   "priority": "medium",
+   "confidence": "B",
+   "statement": "A chapter must not report itself complete while the page is visibly unfinished: at most 15% of chapters may fire completion below 75% of their quests done.",
+   "function": "chapters_completing_below_75pct(book) -> float",
+   "measure": "per chapter required_share = |required quests| / |quests| (FTBQ counts only non-optional quests toward chapter completion). share = |{c : required_share < 0.75}| / |chapters|. Also report median undone-quests-still-on-screen.",
+   "target": "<= 0.15",
+   "ours": "0.875. Median required_share 0.500, i.e. a median of 8 undone quests still on screen when the chapter says complete.",
+   "authored": "opt25: median required_share 1.000 (median 0 undone quests left on the page); 8.5% of chapters fire below 75%.",
+   "corpus": [
+    "opt25"
+   ],
+   "matters_because": "This is the optional flag's ONE real consequence and it maps onto a ground-truth complaint, plus three celebrated 'Chapter complete' reactions in the corpus.",
+   "player_evidence": "Players are confused when a quest reports complete before its stated condition has actually been met.",
+   "gameable_by": "Same fix as CHK-16.",
+   "wire_point": "autoquestgen.py:7133.",
+   "effort": "low (free if CHK-16 is done)"
+  },
+  {
+   "id": "CHK-18",
+   "name": "size_marks_the_entrance",
+   "tier": 3,
+   "priority": "medium",
+   "confidence": "B",
+   "statement": "Quest size marks the chapter ENTRANCE, not the finale, and stays scarce: at least 25% of chapters enlarge a root, the unique largest quest is a root in at least 50% of size-using chapters, and at most 20% of quests book-wide carry size > 1.",
+   "function": "entry_quest_enlarged(book) -> float ; largest_is_root(book) -> float ; enlarged_share(book) -> float",
+   "measure": "MUST RUN ON build_chapters OUTPUT, not the doc (see meta.artifact_boundary).",
+   "target": "entry_quest_enlarged >= 0.25 AND largest_is_root >= 0.50 AND enlarged_share <= 0.20",
+   "ours": "CORRECTED - two of three already pass. entry_quest_enlarged 0.542 (13 of 24) PASSES. largest_is_root 0.000 (0 of 24) FAILS - _size_hierarchy (autoquestgen.py:1127) enlarges fanout>=3 hubs and the LAST terminal quest, never the entrance. enlarged_share 0.336 (128 of 381: 85 at 1.25 and 43 at 1.5) FAILS - three times the authored scarcity, so every third node is a landmark and therefore none is. Shape: 22 of 25 chapters use exactly ONE shape for all their quests, so shape varies between chapters and never within one. Measured 2026-08-29 on build_chapters output; a prior report of '0.000, the generator never emits a size key' measured the doc and is wrong.",
+   "authored": "arc27 (472 chapters): 68.0% use more than one distinct size (321 chapters); 56.1% enlarge a root, rising to 70.4% for first chapters. Of the 321 size-using chapters the largest quest is a ROOT in 75.2% and a terminal leaf in only 46.2%, mean depth-fraction 0.232. 45.6% of chapters also vary shape internally.",
+   "corpus": [
+    "arc27"
+   ],
+   "matters_because": "The eye should find where a chapter STARTS without reading anything. v1 treated maximum size as the climax; measured, size marks the entrance. Our code implements exactly v1's mistake.",
+   "gameable_by": "Low.",
+   "wire_point": "autoquestgen.py:1127 _size_hierarchy - invert the priority (root first), and raise the fanout threshold so fewer nodes qualify.",
+   "effort": "low",
+   "supersedes": "v1 arc.opening rule 5 and checklist[7] - see removed.R-05."
+  },
+  {
+   "id": "CHK-19",
+   "name": "chapter_size_variance",
+   "tier": 3,
+   "priority": "low",
+   "confidence": "B",
+   "statement": "Chapter sizes must vary: p75/p25 of chapter quest counts >= 2.5, and at least one chapter exceeds 40 quests.",
+   "function": "chapter_size_iqr_ratio(book) -> float ; max_chapter_size(book) -> int",
+   "measure": "sort chapter quest counts; ratio = p75/p25.",
+   "target": ">= 2.5 and max > 40",
+   "ours": "IQR ratio 1.83 (p25 12, p50 18, p75 22, max 29). 0% of chapters exceed 40. Chapter one is 9 quests, 2.4% of the book, and ranks 19th of 25 by size.",
+   "authored": "shapes.json (826 chapters): p25 14, p50 26, p75 48, p90 83, mean 38.7, max 248. IQR ratio 3.43. 31.6% exceed 40 quests, 17.8% exceed 60. CAVEAT: shapes.json is mod-keyed, so this is 'chapters attributed to a mod', not 'chapters of a pack'. The spread is large enough that the direction survives, but do not quote the percentiles as pack-level facts.",
+   "corpus": [
+    "shapes.json"
+   ],
+   "matters_because": "Uniform chapter size means nothing in the book signals 'this one is a big deal', which is part of why the book reads as a reward dispenser after chapter one.",
+   "gameable_by": "Merging chapters. Low value to game.",
+   "wire_point": "The chapter planner (_plan_mods:3539 / spec builder) caps chapter size.",
+   "effort": "medium"
+  },
+  {
+   "id": "CHK-20",
+   "name": "second_person_address",
+   "tier": 3,
+   "priority": "medium",
+   "confidence": "C",
+   "statement": "At least 45% of descriptions address the player in second person.",
+   "function": "second_person_share(book) -> float",
+   "measure": "share of non-empty descriptions matching /\\byou\\b|\\byour\\b|\\byourself\\b/i on code-stripped text.",
+   "target": ">= 0.45",
+   "ours": "0.146 (50 of 343); 0.164 on the matched 10-30 word band (n=213) - 2.9x fewer at the same length.",
+   "authored": "prom1: 51.5% (340 of 660). Robust: 51.0% after removing the three imported-documentation chapters, 48.3% restricted to 10-30 word descriptions. n=1 PACK - grade C.",
+   "corpus": [
+    "prom1"
+   ],
+   "matters_because": "Second person is what makes a line an instruction to a person rather than a catalogue entry about an object. Our chapter one reads 'An upgrade from bare knuckles.' and 'Ancient debris, refined.' - museum placards.",
+   "gameable_by": "Prefixing 'You need' to everything. Cap at 0.70 if that appears.",
+   "wire_point": "autoquestgen.py:4155 style_desc.",
+   "effort": "low"
+  },
+  {
+   "id": "CHK-21",
+   "name": "descriptions_answer_something",
+   "tier": 3,
+   "priority": "medium",
+   "confidence": "C (rate) / A (direction)",
+   "statement": "At least 35% of descriptions answer a concrete question - a number, a place, a stated downstream consequence, a hazard, or a how-to gesture.",
+   "function": "concrete_answer_share(book) -> float",
+   "measure": "share matching at least one of: number /\\d/; place /nether|the end|overworld|biome|structure|dungeon|temple|village|cave|ocean|y=|underground|spawns? in|found in|generates? in/; consequence /so (you|that)|lets you|allows|used (to|for|in)|unlock|needed for|required|gives you|without it|means you|opens/; hazard /careful|danger|deadly|kill you|beware|will die|risk/; how-to /press |hold |right.?click|shift|sneak|place it|point it|orientation/.",
+   "target": ">= 0.35",
+   "ours": "0.195 (67 of 343). Components: number 2.6% (8.2x below authored), how-to 7.0% (our only lead), place 6.4%, consequence 4.7%, hazard 0.0% (0 of 343). Within our longest quartile (>=24 words, n=87): number 6.9%, place 6.9%, consequence 4.6%, hazard 0.0% - our long descriptions are not more informative, just longer.",
+   "authored": "prom1: 38.3% (253 of 660). number 21.4%, consequence 13.0%, place 8.0%, how-to 2.7%, hazard 2.3%. Within its >=50-word descriptions (n=123): number 43.1%, place 26.0%, consequence 17.9%, hazard 17.1%. n=1 PACK for the rate.",
+   "corpus": [
+    "prom1",
+    "players"
+   ],
+   "matters_because": "The DIRECTION is grade A even though the rate is grade C, because it is the only text metric with direct player evidence on both sides: across 1,542 reaction records, how/confused 4.2% + why-what-for 1.2% + where 1.6% = 108 records, and wall-of-text complaints = 0.",
+   "player_evidence": "Players ask aloud what a landmark is for and expect the book to answer - which is exactly what a consequence clause is for.",
+   "gameable_by": "Injecting a number into every line. Score the components separately and require at least two distinct component kinds book-wide.",
+   "wire_point": "autoquestgen.py:4025 auto_description, 4113 guide_tip, 3906 why_want. The material exists - guide_signal_2.json and the mod guide corpus carry the operational facts; the templates do not ask for them.",
+   "effort": "medium"
+  },
+  {
+   "id": "CHK-22",
+   "name": "ch1_first_cost_is_small",
+   "tier": 3,
+   "priority": "low",
+   "confidence": "A",
+   "statement": "The first item quest reachable in chapter one asks for at most 2 items.",
+   "function": "ch1_first_item_cost(book) -> int",
+   "measure": "walk the display-ordered first chapter in dependency order; return the count of the first item task encountered (count defaults to 1 when the field is absent).",
+   "target": "<= 2",
+   "ours": "16 ('Punch Some Wood', 16 oak logs) - the top 6% of the authored distribution.",
+   "authored": "cf86: the first item quest reachable in chapter one asks a MEDIAN of 1; 80.4% ask exactly 1; 5.9% ask >=8.",
+   "corpus": [
+    "cf86"
+   ],
+   "matters_because": "Small, cheap, and it is the first number a player ever sees. Kept at low priority and grade-A-but-minor because the broader claim it came from ('the entry quest costs nothing') did NOT survive: ch1 0.849 vs later 0.724, z=1.86, p=0.063 - not a first-chapter discipline, and our book already passes that broader form on 22 of 25 chapters. Only the 3 hardcoded vanilla chapters fail. See removed.R-02.",
+   "gameable_by": "Setting the count to 1, which produces 'gather 1 oak log' and trips the verb-task-mismatch failure in moddb/book_failures.json. Fix the OPENER (CHK-01/CHK-02), do not just lower the number.",
+   "wire_point": "autoquestgen.py:5263 _VANILLA_CHAPTERS - three hardcoded rows.",
+   "effort": "trivial"
+  }
+ ],
+ "guards": [
+  {
+   "id": "GRD-01",
+   "name": "cost_drop_guard",
+   "statement": "Keep a loose guard only: cost-drop fraction >= 0.30 along the dependency order, and longest non-decreasing run <= 6. Do NOT target a sawtooth.",
+   "why_only_a_guard": "MEASURED AND FINE. Using a leave-one-out corpus tier (mean normalised position of an item across all deduped authored chapter chains EXCEPT the one being scored), authored chapters drop cost on 45.5% of consecutive steps (n=358 chapters from 619 deduped chains; p25 0.364, p50 0.455, p75 0.512) and ours drops on 46.7% (p25 0.429, p75 0.533). Statistically indistinguishable. Longest non-decreasing run: authored p90 = 5, our maximum = 5. v1's 25-30% target is BELOW both - enforcing it would make the book MORE monotonically expensive than real packs.",
+   "coverage_caveat": "The corpus tier reaches only 122 of our 353 item quests, so our side is 6 chapters, not 25 - half our pack's mods (abyssal_decor, dustydecorations, goety) barely appear in the harvested corpus.",
+   "confidence": "B"
+  },
+  {
+   "id": "GRD-02",
+   "name": "root_count_guard",
+   "statement": "Do not enforce 'exactly one root per chapter'. Accept 1-3 roots.",
+   "why_only_a_guard": "v1 checklist[0] mandates exactly one root. The corpus disagrees: authored chapters have a MEDIAN of 2 roots and 57.2% have >=2 (arc27 root counts are in-chapter only, so cross-chapter dependencies inflate this by an amount the local data cannot bound - which is why this is a guard, not a check). Separately, 44.1% of 472 authored chapters do have exactly one root and our generator already puts exactly one on 25 of 25 chapters, so this is not where our gap is either way. Deprioritise.",
+   "confidence": "B"
+  },
+  {
+   "id": "GRD-03",
+   "name": "reward_size_and_spread_guard",
+   "statement": "Do not add rules for reward size vs quest cost, within-chapter reward-value spread, or runs of identical consecutive rewards. Already fine.",
+   "why_only_a_guard": "Measured on rw17 with both sides through one code path: reward-size vs quest-cost Spearman ours 0.39 vs authored median 0.33; within-chapter reward-value CV ours 0.89 vs authored median ~0.86; longest run of identical consecutive rewards ours median 2 / max 4 vs Prominence median 3 / max 89. v1 anti_patterns[7] ('every quest pays the same reward') does not describe our output.",
+   "confidence": "B"
+  },
+  {
+   "id": "GRD-04",
+   "name": "xp_ramp_guard",
+   "statement": "Soft guard: per-chapter Spearman(dependency position, XP) <= +0.85, at least one XP decrease per chapter of >=8 XP rewards, and distinct-XP-values / XP-rewards <= 0.40.",
+   "why_only_a_guard": "The DEFECT is real and ours is extreme - median rho +0.925 across 14 chapters, 7 of 14 at exactly +1.000 with zero decreases anywhere, chapter one a literal arithmetic ramp 19, 25, 31, 43, 55, 134, and 94 distinct XP values across 148 rewards (0.635 unique). At book scale rho(chapter index, chapter mean XP) = +0.818, so the leftovers chapter 'Utility Miscellany' pays 221 mean XP while the pack's signature Create chapter pays 98. BUT the authored target is NOT cross-pack measurable - design_rules.json records explicitly that rewards.json aggregates per mod, so reward-value-versus-depth exists for one pack only. The authored direction is stated as authorial intent ('Do not inflate xp with depth. Escalate the reward TYPE instead') rather than measured, so the thresholds here are loosened from the originally proposed +0.6 / 0.25 and shipped as a guard.",
+   "confidence": "C"
+  }
+ ],
+ "pacing": {
+  "_status": "Largely REMOVED. See removed.R-10 and R-11.",
+  "what_survives": "Cost pacing along the dependency order is measured and FINE - ours drops on 46.7% of consecutive steps against 45.5% authored (n=358 deduped authored chapters). The pacing defect is not cost, it is PAYMENT: 17.1% of our quests are unpaid and they cluster at mean normalised position 0.722, with nine chapters ending in unbroken unpaid runs of up to 9 quests.",
+  "checks": [
+   "CHK-07",
+   "CHK-13",
+   "CHK-14"
+  ],
+  "guards": [
+   "GRD-01",
+   "GRD-04"
+  ],
+  "rules": [
+   "A chapter's most expensive asks are at its end. Pay there. An allocator that walks quests in order and stops when a budget runs out produces exactly our failure and must not be used.",
+   "Escalate the reward KIND, not the XP number. Reuse a small round-number XP vocabulary; a player who never sees the same number twice is reading a computed column.",
+   "One bulk ask per substantial chapter is the only thing in the book that takes ten minutes instead of one. Drive its frequency from the mod's own authored bulk rate in counts.json, not from a uniform rate - the authored distribution is heavy-tailed (createtea 99.2%, immersiveengineering 53.6%, create 7.1%, 43% of mods zero)."
+  ]
+ },
+ "arc": {
+  "_status": "Rewritten. The opening survives and strengthens; the finale is demoted to a chapter-one convention. See removed.R-02, R-05, R-07.",
+  "opening": {
+   "checks": [
+    "CHK-01",
+    "CHK-02",
+    "CHK-08",
+    "CHK-18",
+    "CHK-22"
+   ],
+   "rules": [
+    "Chapter one is a different GENRE from the rest of the book, not a smaller version of it. 49.6% of authored chapter-one quests carry a checkmark task against 4.5% later; 36.0% carry an item task against 80.9% later. Build it as front matter.",
+    "The first quest a player sees is a checkmark quest that carries text. Authored: 67.4% of books, against 25.6% for later chapters (z=6.71) - the largest first-chapter separation in the study.",
+    "Spend the writing budget here. Authored chapter one carries a median 8.46x its per-quest share of the book's description characters at a median 456 characters per described quest. 42% of all player reactions happen in the first fifth of a playthrough.",
+    "Mark the entrance with size, not the finale. Of chapters that vary size, the largest quest is a root 75.2% of the time and a terminal leaf 46.2%.",
+    "If the chapter follows another, name it in the opening's first clause. Retained from v1 as craft, not measurement - it was never measured and is cheap."
+   ]
+  },
+  "middle": {
+   "checks": [
+    "CHK-03",
+    "CHK-15"
+   ],
+   "rules": [
+    "The map is read before any text. Authored chapters average 3.4 quests per screen row at 10-19 quests and 5.0 at 20-34; ours averages 2.0 on every chapter.",
+    "Branch by making several quests share a dependency rank, not by hanging single buds off a long corridor. A trunk of 10 rungs with two buds each is a comb, and it scores as 'branchy' on leaf fraction while reading as a rope.",
+    "The required subgraph must branch on its own. Authored required_leaf_fraction is 0.570, essentially the same as their overall 0.586; ours is 0.143."
+   ]
+  },
+  "finale": {
+   "_demoted": "v1 treated the two-part climax+epilogue ending as a book-wide law. Measured, it is a FIRST-CHAPTER convention: authored first chapters 59.3% have both, later chapters 16.4%. And the reward-scarcity justification is contradicted - only 17% of authored chapters give the final quest a chapter-unique reward kind, while our generator already does it on 35%.",
+   "checks": [
+    "CHK-07",
+    "CHK-13"
+   ],
+   "rules": [
+    "Whatever else the last quest is, it must be PAID. Nine of our chapters currently end in an unbroken run of unpaid quests.",
+    "Save the choice/table reward for the end. Ours sit at mean normalised position 0.508.",
+    "A climax+epilogue pair is worth building for chapter one only. Direct player evidence for it is thin - across 364 mined reactions only one mentions finishing a chapter - so it rests on authored practice plus the front-loading fact, not on observed reaction."
+   ]
+  }
+ },
+ "voice": {
+  "_status": "Retained but every number is grade C (n=1 authored pack, Prominence II). The coverage claims are the exception and are cross-pack.",
+  "person": "Second person, present tense, addressed to a competent adult. Measured 51.5% of Prominence descriptions against 14.6% of ours - and 48.3% vs 16.4% within the matched 10-30 word band, so it is not an artifact of long passages.",
+  "two_channels": "The subtitle is read at a glance in the quest list; the description is read only after clicking in. Prominence puts 59.5% subtitle coverage against 37.6% description coverage - more than half its short guidance lives in the subtitle. Better MC BMC2 (3.26M downloads) runs 100% subtitle coverage at 113 chars and 9% descriptions. We emit ZERO subtitles and force everything through one channel, which is a direct cause of our uniform 16-word paragraphs.",
+  "checks": [
+   "CHK-10",
+   "CHK-11",
+   "CHK-12",
+   "CHK-20",
+   "CHK-21"
+  ],
+  "failed_metrics_do_not_re_derive": [
+   "Template collapse measured at the description OPENING does not separate the corpora - distinct opening-trigram ratio is 0.956 ours vs 0.864 Prominence, i.e. our openings are MORE varied. The templating lives entirely in fixed sentence TAILS (CHK-11).",
+   "Type-token ratio per 1k (292 authored vs 453 ours) is a pure corpus-size artifact - 13,172 vs 3,533 tokens. Never use it as a richness measure.",
+   "Median repeated-4gram share is 0.0 on both sides. Useless at this corpus size."
+  ],
+  "rules": [
+   "Facts first, flavour last, one flavour clause per quest maximum.",
+   "Say the one thing the recipe cannot: the orientation everyone gets wrong, where it spawns, what it unlocks, what kills you. Authored descriptions contain a number 21.4% of the time; ours 2.6%. Authored contain a hazard 2.3% of the time; ours 0.0% of 343.",
+   "Never restate the task. 'Asks for Oak Log' above a task widget showing an oak log and a counter costs a line of reading and returns zero bits."
+  ]
+ },
+ "variety": {
+  "_status": "task_mix_targets rewritten (see removed.R-12); optional_fraction removed (see removed.R-01); random-reward target removed (see removed.R-08).",
+  "task_mix_floor": {
+   "checkmark_share_min": 0.04,
+   "_basis": "prom1 5.3% of 2,455 tasks; arc27 chapter-one 49.6% vs later 4.5%. A book-wide 4% floor is deliberately modest - the concentration belongs in chapter one.",
+   "_hard_floor": "No chapter may be 100% item tasks. Ours: 336 item, 23 structure, 20 kill, 2 dimension, 0 checkmark across 381 quests.",
+   "_do_not_use": "The v1 cross-pack shares derived from task_kinds.json. See removed.R-12."
+  },
+  "reward_mix": {
+   "non_bulk_item_reward_min": 0.25,
+   "table_or_choice_max": 0.05,
+   "_basis": "rw17, 4,257 item rewards, 17 packs. Non-bulk authored median 37% / pooled 41%; choice pooled 1.9% / per-pack median 0.7%; rewards.json table share 6.5% of 23,600 entries.",
+   "_confirmed_from_v1": "Prominence's reward mix (xp 51%, item 32%, xp_levels 14%) reproduces exactly in an independent parse."
+  },
+  "checks": [
+   "CHK-01",
+   "CHK-05",
+   "CHK-06",
+   "CHK-13",
+   "CHK-14",
+   "CHK-18"
+  ]
+ },
+ "agency": {
+  "_status": "The 'one root, 45-55% leaves' formulation is retired. Leaf fraction does not discriminate (ours 0.525, authored 0.586, both inside the old band while the shapes differ completely) and 'exactly one root' contradicts the corpus (authored median 2 roots, 57.2% have >=2).",
+  "checks": [
+   "CHK-03",
+   "CHK-15",
+   "CHK-16",
+   "CHK-17"
+  ],
+  "guards": [
+   "GRD-02"
+  ],
+  "rules": [
+   "Agency is measured on the screen row, not the leaf count. If the median dependency rank holds two quests, the player has two things they could do next regardless of how many leaves exist.",
+   "Where the mod permits two orders, build two branches into one later node. FTBQ's min_required_dependencies ('any 2 of 3 parents') is the strongest agency tool in the format and we emit it zero times. Retained from v1 as craft - it was never measured cross-pack.",
+   "Do not use the optional flag to manufacture agency. It changes no pixel and its only effect is to make the chapter claim completion while half the page is undone (CHK-17)."
+  ]
+ },
+ "teaching": {
+  "_status": "Retained essentially intact. It was the least data-dependent section of v1 and nothing in the audit contradicts it. Its central mechanism - the checkmark teaching node - is now CHK-01 and is our single largest absence.",
+  "checks": [
+   "CHK-01",
+   "CHK-02",
+   "CHK-21"
+  ],
+  "rules": [
+   "One concept, one quest. A stat, a resource type, a hazard, a keybind, a ritual step, a mode toggle - each gets its own node.",
+   "A teaching quest with no craftable subject uses a checkmark task. It costs nothing, can be clicked in any order, and puts one idea on the map where the player can find it again. This is the cheapest immersion win available to the generator and we currently emit it zero times in 381 quests.",
+   "Teach immediately before use, never in bulk up front. The quest that explains rotation is the PARENT of the first quest that needs rotation.",
+   "Point at the in-game tool instead of reproducing it. Name the exact gesture that opens the ponder / guidebook / REI preview and stop.",
+   "Say the one thing the recipe cannot. Every machine description should contain at least one fact not visible in the crafting grid or the tooltip (CHK-21)."
+  ],
+  "player_evidence": "how/confused 4.2% + why-what-for 1.2% + where 1.6% = 108 of 1,542 reaction records. Wall-of-text complaints: 0. Players are stuck on operation, not drowning in prose."
+ },
+ "anti_patterns": [
+  {
+   "smell": "Every quest is one item task with a count. The whole chapter is a shopping list with dependencies.",
+   "fix": "Emit checkmark tasks. Book-wide floor 4%, concentrated in chapter one.",
+   "check": "CHK-01",
+   "ours": "0 checkmark tasks in 381 quests"
+  },
+  {
+   "smell": "Chapter one opens on 'collect 16 oak logs'.",
+   "fix": "Chapter one is front matter: >=25% of its quests have no item task and carry text.",
+   "check": "CHK-02",
+   "ours": "0.000 - all 9 chapter-one quests are item fetches"
+  },
+  {
+   "smell": "The map is a comb - a long corridor with one or two buds per rung. It scores as branchy on leaf fraction and reads as a rope.",
+   "fix": "Widen the dependency ranks. Median row >=3 quests, at most 60% of rows at <=2.",
+   "check": "CHK-03",
+   "ours": "median row width 2.0 on 24 of 24 chapters"
+  },
+  {
+   "smell": "The reward has no relationship to the task, so it reads as loot that fell out of a menu rather than payment.",
+   "fix": "Draw the reward from the task's own namespace. Verify with a within-chapter shuffle null - a raw match rate proves nothing in a single-mod chapter.",
+   "check": "CHK-04",
+   "ours": "+0.0 points of lift over the null"
+  },
+  {
+   "smell": "Every payout is more raw stock - ingots, nuggets, shards, dust - into an inventory that already has them.",
+   "fix": ">=25% of item rewards non-bulk; >=45% of chapters contain a capability reward.",
+   "check": "CHK-05, CHK-06",
+   "ours": "0.6% non-bulk; 0 true capability rewards in the book"
+  },
+  {
+   "smell": "The chapter runs out of rewards before it runs out of quests, so the most expensive asks are the unpaid ones.",
+   "fix": "No trailing run of unpaid quests. Allocate backwards from the finale, not forwards from quest one.",
+   "check": "CHK-07",
+   "ours": "9 chapters end in unbroken unpaid runs of up to 9 quests"
+  },
+  {
+   "smell": "The writing budget is spread uniformly, so no line tells the reader which step matters and the reader stops reading.",
+   "fix": "Concentrate prose in chapter one (>=2x its per-quest share) and vary length by role (root >=2x leaf). Do NOT cap coverage.",
+   "check": "CHK-08, CHK-12",
+   "ours": "ch1 concentration 0.58x; root/leaf length ratio 1.00"
+  },
+  {
+   "smell": "Descriptions restate the task. 'Asks for Obsidian' above a task widget showing obsidian and a counter.",
+   "fix": "Ban the tail skeletons; hard-fail any description naming its own task item.",
+   "check": "CHK-11",
+   "ours": "31.2% of descriptions carry a tail; 41 name their own task item"
+  },
+  {
+   "smell": "The book has one text channel, so every line must be both glance-hint and explanation, and they all land at the same middling length.",
+   "fix": "Emit subtitles on 40-60% of quests.",
+   "check": "CHK-10",
+   "ours": "0 subtitles in 381 quests"
+  },
+  {
+   "smell": "Every third node is enlarged, so nothing reads as a landmark; and the enlarged one is the last quest rather than the entrance.",
+   "fix": "Enlarge the entrance. Keep <=20% of quests above default size.",
+   "check": "CHK-18",
+   "ours": "33.6% enlarged; the unique largest quest is a root in 0 of 24 chapters"
+  },
+  {
+   "smell": "Half the book is flagged optional at a uniform rate, so the flag carries no authorial information and the chapter claims completion while the page is half undone.",
+   "fix": "Decide optional per CHAPTER - path (0%) or catalogue (>=75%) - not per leaf.",
+   "check": "CHK-16, CHK-17",
+   "ours": "87.5% of chapters in the 15-75% band; 87.5% complete below 75% done"
+  },
+  {
+   "smell": "Every quest in a mod chapter is the same size of task, so 29 consecutive Create quests read as a list.",
+   "fix": "At least one bulk ask per chapter of >=15 item tasks, driven by the mod's own authored bulk rate.",
+   "check": "CHK-14",
+   "ours": "17 of 25 chapters have exactly zero bulk asks"
+  },
+  {
+   "smell": "XP rises in lockstep with position and never repeats a value - a computed column, not a payment.",
+   "fix": "Reuse a small round-number vocabulary; let XP go down.",
+   "check": "GRD-04",
+   "ours": "median chapter Spearman +0.925; 7 of 14 chapters at exactly +1.000"
+  },
+  {
+   "smell": "Quests were written independently, so the chapter has no memory - rotation is explained four times and the player is greeted as a newcomer at quest twenty.",
+   "fix": "Pass the ancestor set into the description generator.",
+   "check": null,
+   "ours": "unmeasured - retained from v1 as craft"
+  },
+  {
+   "smell": "The chapter is 90 quests because the mod has 90 items.",
+   "fix": "Split at tier boundaries. Note the authored corpus tolerates far larger chapters than we build (31.6% exceed 40 quests) - the defect is uniformity, not size.",
+   "check": "CHK-19",
+   "ours": "IQR ratio 1.83; no chapter exceeds 29 quests"
+  }
+ ],
+ "prompt_snippets": {
+  "chapter_opening": "Write the chapter's first quest as a doorway, not a task. Cost the player nothing — a checkmark, or a step they can already take. In four sentences: what this chapter covers, what it demands, what they walk away with, what to do first. Name the previous chapter. Attach one small gift. Example title: The Workshop Opens.",
+  "chapter_finale": "Close the chapter with two quests. The climax is its heaviest step and must use a mechanic this chapter taught — not a purchase, not a drop. Then an epilogue asking for nothing: name what the player now has, one thing permanently easier, and the next chapter. Give it a reward found nowhere else.",
+  "hard_step": "This step is expensive. State the real cost in the first sentence — quantity, minutes, or risk. Name the cheapest route and one fallback for bad luck. Put any hazard on its own line in the danger colour. No jokes, and never the word simply. Assume the player is standing at the block, book open.",
+  "optional_side": "This quest hangs off the spine; nothing depends on it. Open by marking it skippable in the hint colour. Sell it with one concrete promise — a shortcut, a stat, a look, a scrap of story — never the word useful. Two sentences, one task, a reward the main line does not offer. Example: Spare Key to the Cellar.",
+  "teaching_quest": "One idea only. Say what the mechanic does in one plain sentence, then the fact players get wrong — orientation, throughput, the input side, what it silently destroys. If the mod ships a ponder or guide page, name the exact key that opens it and stop. Never re-explain what an earlier quest already required.",
+  "breather": "The step before this one was hard. Keep this one small, quick, and quiet: one cheap task, one sentence, no warnings. Give a reward the player will actually use in the next few quests, so the pause reads as a gift rather than filler. No pun, no lore, no forward-reference to the next hard thing.",
+  "boss_quest": "Say where the fight lives and exactly how it starts. One danger line in the danger colour naming the attack that kills unprepared players. One line on what it drops and what that opens. Do not spoil phases or twists, and do not joke — the title carries menace or gravity, never a gag. Four sentences maximum.",
+  "_status": "Carried forward unchanged from v1. These are LLM prompt fragments, not empirical claims, so nothing in the audit touches them. They should be updated to ask for a checkmark opener and a subtitle once CHK-01 and CHK-10 are wired."
+ },
+ "generator_checklist": [
+  "CHK-01 free_task_primitive_exists [tier 1, critical, conf A] The book must use the checkmark task. At least 4% of all tasks are checkmark, and the first quest a player can see in chapter one is a checkmark quest. | TARGET share >= 0.04 ; ch1_opens_free == True | OURS share = 0",
+  "CHK-02 ch1_oriented_frac [tier 1, critical, conf A] Chapter one orients rather than shops: at least 25% of its quests have NO item task AND carry a non-empty title or description. | TARGET >= 0.25 | OURS 0",
+  "CHK-03 chapter_rows_are_wide [tier 1, critical, conf B (defect) / C (threshold)] Chapters must fan, not comb. Per chapter of >=5 quests, at most 60% of dependency rows may hold <=2 quests, and the median row must hold >=3. At least 70% of chapters pass. | TARGET per chapter: narrow_row_fraction <= 0.60 AND median_row_width >= 3. Book: >= 70% of chapters of >=5 quests pass. | OURS 0 of 24 chapters pass",
+  "CHK-04 reward_task_lift [tier 1, critical, conf B] The reward must be statistically related to the task. Namespace-match lift over a within-chapter shuffle null must be at least +4.0 percentage points. | TARGET >= +4.0 | OURS +0",
+  "CHK-05 non_bulk_reward_share [tier 1, critical, conf B] At least 25% of item rewards must be NON-BULK - something other than a raw crafting input. Non-bulk = capability (tool/weapon/armour/wearable/machine/container/transport), food, currency, consumable, trophy or lootbox. | TARGET >= 0.25 | OURS 0",
+  "CHK-06 capability_reward_chapter_share [tier 1, high, conf B] At least 45% of chapters of >=6 quests must contain at least one CAPABILITY reward - an item that does something the player could not do before. | TARGET >= 0.45 | OURS 0",
+  "CHK-07 no_unpaid_chapter_tail [tier 1, high, conf A (defect) / C (threshold)] No chapter may end in a run of more than one consecutive zero-reward quest, and no more than 12% of the book's quests may carry no reward at all. | TARGET max trailing run <= 1 for every chapter ; unpaid_share <= 0.12 | OURS unpaid_share 0",
+  "CHK-08 ch1_carries_the_prose [tier 2, high, conf A] Chapter one is front matter and carries the writing budget: at least 50% of its quests have no item task, its mean description (where present) is at least 200 characters, and it holds at least 2x its per-quest share of the book's description characters. | TARGET front_matter >= 0.50 AND mean_desc >= 200 AND concentration >= 2.0 | OURS front_matter 0",
+  "CHK-09 book_text_floor [tier 2, medium, conf A] At least 25% of quests carry text in SOME channel (description or subtitle). There is no upper bound. | TARGET >= 0.25 (floor only) | OURS 0",
+  "CHK-10 subtitle_channel_used [tier 2, high, conf B] Use the subtitle as a second text channel: 40-60% of quests carry a non-empty subtitle. | TARGET 0.40 <= x <= 0.60 | OURS 0",
+  "CHK-11 no_generator_tail [tier 2, high, conf A (self-reference) / C (rate)] No description may end in a fixed generator tail, and no description may name the item its own task already names. | TARGET generator_tail_share == 0.0 ; self_referential_desc_count == 0 (hard fail) | OURS 0",
+  "CHK-12 description_length_by_role [tier 2, medium, conf C] Description length must vary by structural role: a chapter's root quests get at least 2x the median description length of its terminal leaves. | TARGET >= 2.0 | OURS 1",
+  "CHK-13 reward_kind_is_saved_for_the_end [tier 2, medium, conf B (share) / C (position)] Table and choice rewards are scarce and late: at most 5% of reward entries, with a mean normalised within-chapter position of at least 0.75. | TARGET share <= 0.05 AND mean position >= 0.75 | OURS share 0",
+  "CHK-14 bulk_ask_per_chapter [tier 2, medium, conf B] Every chapter of >=15 item tasks contains at least one bulk ask (count > 1). Book-wide share of item tasks with count>1 stays in 4-12%. | TARGET no chapter of >=15 item tasks has zero bulk ; 0.04 <= bulk_share <= 0.12 | OURS CORRECTED",
+  "CHK-15 required_subgraph_branches [tier 3, medium, conf B] Strip the optional quests and the remaining required graph must still branch: required_leaf_fraction >= 0.35. | TARGET >= 0.35 | OURS 0",
+  "CHK-16 optional_is_a_chapter_decision [tier 3, medium, conf B] Authors decide `optional` per chapter, not per quest. At most 25% of chapters may sit in the 15-75% optional band. | TARGET <= 0.25 | OURS 0",
+  "CHK-17 chapter_completion_honesty [tier 3, medium, conf B] A chapter must not report itself complete while the page is visibly unfinished: at most 15% of chapters may fire completion below 75% of their quests done. | TARGET <= 0.15 | OURS 0",
+  "CHK-18 size_marks_the_entrance [tier 3, medium, conf B] Quest size marks the chapter ENTRANCE, not the finale, and stays scarce: at least 25% of chapters enlarge a root, the unique largest quest is a root in at least 50% of size-using chapters, and at most 20% of quests book-wide carry size > 1. | TARGET entry_quest_enlarged >= 0.25 AND largest_is_root >= 0.50 AND enlarged_share <= 0.20 | OURS CORRECTED - two of three already pass",
+  "CHK-19 chapter_size_variance [tier 3, low, conf B] Chapter sizes must vary: p75/p25 of chapter quest counts >= 2.5, and at least one chapter exceeds 40 quests. | TARGET >= 2.5 and max > 40 | OURS IQR ratio 1",
+  "CHK-20 second_person_address [tier 3, medium, conf C] At least 45% of descriptions address the player in second person. | TARGET >= 0.45 | OURS 0",
+  "CHK-21 descriptions_answer_something [tier 3, medium, conf C (rate) / A (direction)] At least 35% of descriptions answer a concrete question - a number, a place, a stated downstream consequence, a hazard, or a how-to gesture. | TARGET >= 0.35 | OURS 0",
+  "CHK-22 ch1_first_cost_is_small [tier 3, low, conf A] The first item quest reachable in chapter one asks for at most 2 items. | TARGET <= 2 | OURS 16 ('Punch Some Wood', 16 oak logs) - the top 6% of the authored distribution",
+  "GRD-01 cost_drop_guard [GUARD] Keep a loose guard only: cost-drop fraction >= 0.30 along the dependency order, and longest non-decreasing run <= 6. Do NOT target a sawtooth.",
+  "GRD-02 root_count_guard [GUARD] Do not enforce 'exactly one root per chapter'. Accept 1-3 roots.",
+  "GRD-03 reward_size_and_spread_guard [GUARD] Do not add rules for reward size vs quest cost, within-chapter reward-value spread, or runs of identical consecutive rewards. Already fine.",
+  "GRD-04 xp_ramp_guard [GUARD] Soft guard: per-chapter Spearman(dependency position, XP) <= +0.85, at least one XP decrease per chapter of >=8 XP rewards, and distinct-XP-values / XP-rewards <= 0.40."
+ ],
+ "removed": {
+  "_why_this_section_exists": "Every entry below was in immersion_spec.json v1 and was MEASURED AND REJECTED. They are recorded with the disconfirming number so nobody re-derives them from the same flawed source. If you want to re-add one, you must first explain the number here.",
+  "R-01": {
+   "removed": "variety.optional_fraction = 0.18; checklist[3] 'flagged optional 15-22%'; and its proposed replacement 'at most 10% book-wide, no chapter above 25%'.",
+   "why": "BOTH directions are wrong and the metric is measuring an artifact. (a) The 18% target is 13x the Modrinth-only rate. (b) The 1.39% figure that motivated the 10% cap does not reproduce and comes from a corpus that excludes the two biggest questbook families in modded Minecraft: measured per-quest over 25 packs including All the Mods 8/9/10 and Enigmatica 6/8/9/10, pooled optional is 8.50% (21,268 quests), and the proposed rule FAILS 5 of 25 authored packs on the pooled clause and 9 of 25 on the per-chapter clause (ATM 9 basic_tools.snbt: 87 quests, 92.0% optional; Enigmatica 8: 74.4%). (c) The supporting 'top-third-by-downloads = 2.4%' is an artifact - every GitHub-sourced pack carries downloads=None, so ATM and Enigmatica file into the BOTTOM tercile. (d) The flag changes no pixel: per FTB docs it sits under Misc, not Appearance, and its only documented effect is exclusion from chapter-completion accounting. (e) In our generator optional is a synonym for leaf (coincide on 365 of 381 quests, 95.8%), so the metric is leaf_fraction - which already passes - re-reported as a 5.4x failure. (f) Enforcing the 10% cap by removal would delete 185 of 204 quests: 381 -> 196 (-49%), leaf fraction 0.525 -> 0.077. An optimiser handed this WILL take that path. (g) Of 375 player reactions, ZERO mention 'optional' or 'side quest'.",
+   "replaced_by": [
+    "CHK-16",
+    "CHK-17",
+    "CHK-15"
+   ]
+  },
+  "R-02": {
+   "removed": "arc.opening rule 2 'the entry quest costs nothing', in its book-wide form.",
+   "why": "Reproduces (authored first chapters 0.849 vs the claimed 0.852 over 86 packs) but does NOT discriminate: ch1 0.849 vs later chapters 0.724 is z=1.86, p=0.063 on distinct designs, and z=1.37 in the top-download third. The supporting 'roots asking >=8 items' pair is a null result: ch1 5.8% vs later 9.7%, z=-1.19, p=0.31 - authored packs avoid big roots EVERYWHERE, not specifically in chapter one. Our book already passes the broad form on 22 of 25 chapters (0.880, above the corpus all-chapter 0.729); only the 3 hardcoded vanilla chapters fail. Worse, the rule cannot tell a good fix from a bad one: setting 'Punch Some Wood' to 1 oak log passes while producing a wood-gathering quest that asks for one log - a verb-task mismatch, which IS a player-evidenced failure. And across 1,508 unique reaction texts and the 15 failure classes in moddb/book_failures.json, ZERO concern entry cost.",
+   "replaced_by": [
+    "CHK-01",
+    "CHK-22"
+   ],
+   "note": "The narrow survivor (CHK-22) is kept at low priority. The real separation is the first-shown quest's TASK KIND (z=6.71), not its cost."
+  },
+  "R-03": {
+   "removed": "The critical-path-fraction form of 'chapters must fan': cpf <= 0.35 median and rope_fraction <= 0.30 where rope = (cpf >= 0.50 or max_width <= 1).",
+   "why": "The phenomenon is real; this metric is not enforceable. (a) cpf = (depth+1)/n is mechanically size-sensitive and the authored median chapter is 26 quests against our 16. Size-matched to our range (5-29 quests), authored median cpf is 0.290 not 0.183 - a 1.94x gap, not 3.1x - and only 61.6% of authored chapters pass 0.35, not 74.8%. The headline pass rate is carried by the 60+ quest bucket where 99.3% pass. 48.9% of authored 5-9 quest chapters would be classified as ropes. (b) The 0.30 rope threshold rests on a per-pack figure that cannot be reproduced: shapes.json is keyed by MOD, not pack (harvest.py:305), and no per-pack shape table exists on disk. (c) max_width is a max over ONE row and rescues the worst-reading chapters - 'Dusty Decorations' passes at cpf 0.360 while having 89% of its rows at width <=2, because a single width-10 row carries the whole statistic. (d) The pass side is reachable by growing n at constant depth, with an identical-looking map. (e) The claim that leaf fraction misses this is a like-for-unlike comparison: applied PER CHAPTER as v1 itself specifies, the 45-55% leaf band already flags 19 of our 24 chapters including all three pure ropes. Net novelty is 5 chapters, not 15.",
+   "replaced_by": [
+    "CHK-03"
+   ]
+  },
+  "R-04": {
+   "removed": "'Book-wide description coverage stays at or below 45%.'",
+   "why": "Fails 5 of 16 authored packs on the field it names and 10 of 16 on any-text coverage (median 0.715, max 1.00). It is PASSED by 6 books that contain no inline text at all - the corpus stored lengths only, so a fully lang-localised book is indistinguishable from a terse one; 7 of the 23 'non-localised' packs have title=None on every quest. Enforcing it on our book means stripping the only text from 151 of 381 quests, and deleting shortest-first those 151 are precisely the mod-specific operational hints ('Gusters spawn during desert storms and drop a Guster Eye when the sand column collapses') while the nine it wants inflated are jokes about vanilla steps. Zero of 371 book-scoped player quotes complain about too much text; 26 complain the description failed to say the operational thing.",
+   "replaced_by": [
+    "CHK-09"
+   ]
+  },
+  "R-05": {
+   "removed": "arc.opening rule 3 'the entry quest carries the chapter's longest description (326 chars vs 183-225)'; arc.opening rule 5 '15.3% of opening-band quests are enlarged versus 2.6-5.1% elsewhere'; arc.finale's treatment of the maximum-size quest as the CLIMAX; checklist[7] 'exactly one quest at maximum size and it is the climax'.",
+   "why": "(a) Root vs non-root description length within the same chapter is FLAT: chapter-one roots 386.1 chars vs chapter-one non-roots 384.3; later-chapter roots 194.6 vs 185.1 (10,941 non-localised quests). The real effect is chapter-level (ch1 384.9 at 49.0% coverage vs later 187.8 at 24.2%), which is now CHK-08. (b) By depth band, enlargement is roots 8.9% (496/5600), early 6.2%, mid 7.0%, late 6.5% - a 1.3-1.4x lift, not 3-6x. (c) Size marks the ENTRANCE, not the finale: of the 321 chapters that use size at all, the unique largest quest is a ROOT in 75.2% and a terminal leaf in only 46.2%, mean depth-fraction 0.232. Our _size_hierarchy implements v1's mistake exactly. (d) The climax+epilogue pairing is a first-chapter convention that fades: authored first chapters 59.3% have both, later chapters 16.4%. Keep it as an option for chapter one only; do not justify it as book-wide observed practice.",
+   "replaced_by": [
+    "CHK-18",
+    "CHK-08"
+   ]
+  },
+  "R-06": {
+   "removed": "'Within each chapter of >=5 described quests, the longest description must be at least 3x the chapter's median.'",
+   "why": "The numbers reproduce exactly (Prominence median ratio 4.026, 12 of 18 chapters pass; ours 1.59, 3 of 22) and the underlying observation - authored descriptions are UNEQUAL, not better written - is real and is retained as CHK-12. But the ratio is a max over a median, so it is maximised by DELETING mid-length descriptions. It is anti-correlated with the text volume the player evidence asks for, and it was proposed alongside a coverage ceiling that pushes the same way. Two gates that are both jointly maximised by writing less must not both ship.",
+   "replaced_by": [
+    "CHK-12"
+   ]
+  },
+  "R-07": {
+   "removed": "The 'and it uses at least 2 distinct task kinds' clause of the chapter-one orientation rule.",
+   "why": "It inverts its own corpus. Clause A (free fraction >= 0.40) alone passes 24 of 27; clause B alone 20 of 27; the CONJUNCTION actually proposed passes only 17 of 27 - and all 7 packs failing clause B have free_frac = 1.000. Clause B rejects exactly the seven purest orientation chapters in the corpus. Pearson r(free_frac, kinds) = -0.633: a clean 'welcome, read this, click to continue' chapter is the archetype the rule exists to produce, and the clause fails it.",
+   "replaced_by": [
+    "CHK-02"
+   ]
+  },
+  "R-08": {
+   "removed": "generator_checklist[9] and variety rule '10-15% of quests carry a random or loot-table reward'.",
+   "why": "Per-pack random-reward share across 17 packs: 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.8 5.4 7.0 11.6 15.9 51.8 53.3 85.8. MEDIAN 0.1%. Eight of 17 packs use random on exactly 0% of quests; only 5 reach 10%, three of those being gimmick outliers. The mean (13.6%) lands inside the recommended band only because those three outliers drag it there. v1's own evidence.judgement already flagged this as extrapolated from variable-ratio reinforcement literature rather than observed. Our 14.2% choice share is already DOUBLE authored practice.",
+   "replaced_by": [
+    "CHK-13"
+   ]
+  },
+  "R-09": {
+   "removed": "generator_checklist[8] 'at least one reward kind appears only on the climax and epilogue'; variety rule 'reserve one reward kind for the chapter's climax and use it nowhere else'; arc.finale 'the EPILOGUE reward must be unique to it'.",
+   "why": "Across 241 authored chapters of >=6 quests the final quest carries a reward kind or category unique within its chapter in only 17% of chapters (40/241), per-pack median 12%. Our generator already does it on 35% of chapters (8 of 23) - roughly double authored practice. Enforcing it would move us AWAY from the corpus while consuming the reward-design budget CHK-04/05/06 need.",
+   "replaced_by": []
+  },
+  "R-10": {
+   "removed": "pacing.difficulty_curve's 28.8% cost-drop measurement, pacing.breather_frequency's 25-30% target, and checklist[5].",
+   "why": "The 28.8% was single-pack. Cross-pack over 358 deduped authored chapters with a leave-one-out corpus tier, the median drop fraction is 0.455 and the mean 0.416 - and our current book is already at 0.467. The 25-30% target is BELOW both the corpus and our output; enforcing it would push the generator to make chapters MORE monotonically expensive than real packs. The 'never more than 5 consecutive non-decreasing steps' clause is already satisfied (authored p90 = 5, our max = 5).",
+   "replaced_by": [
+    "GRD-01"
+   ]
+  },
+  "R-11": {
+   "removed": "pacing.rules light/medium/heavy 55/33/12 target and the Prominence 74/16/10 baseline; checklist[6].",
+   "why": "The baseline was derived from a raw item-count proxy, and 92.5% of authored item tasks ask for exactly 1 of the item (31,737 of 34,296 observations). The proxy assigns the identical weight to 92.5% of all quests, so 74/16/10 is measuring almost nothing. Without a validated cost model there is no basis for a mix target.",
+   "replaced_by": [
+    "CHK-14"
+   ]
+  },
+  "R-12": {
+   "removed": "variety.task_mix_targets' cross-pack figures ('across 250 harvested packs: item 95.9%, kill 3.4%, dimension 0.7%').",
+   "why": "task_kinds.json is not a task list. harvest.py records at most ONE primary target per quest and only for item/kill/dimension targets, so every other kind is invisible by construction and the shares are guaranteed to sum to those three. Its 58,042 entries also over-count shapes.json's 31,929 quests by 1.82x from repeated harvest runs. The per-task shares in v1 are not derivable. The per-pack chapter-one figures in CHK-01 come from full re-parses and are safe.",
+   "replaced_by": [
+    "CHK-01"
+   ]
+  },
+  "R-13": {
+   "removed": "checklist[0]'s 'exactly one root quest' clause.",
+   "why": "Authored chapters have a median of 2 roots and 57.2% have >=2. Separately, our generator already emits exactly one root on 25 of 25 chapters, so this is not our gap in either direction. Downgraded to GRD-02.",
+   "replaced_by": [
+    "GRD-02"
+   ]
+  },
+  "R-14": {
+   "removed": "voice.rules' description-length percentiles (median 138 chars, p75 250) as targets.",
+   "why": "Retained as prom1 description STATISTICS but not as targets: n=1 pack, and any absolute length target interacts badly with CHK-12's role-based variance. The enforceable form is the ratio plus CHK-08's absolute chapter-one floor.",
+   "replaced_by": [
+    "CHK-08",
+    "CHK-12"
+   ]
+  },
+  "R-15": {
+   "removed": "Any recommendation to add a chapter-level `description` field.",
+   "why": "0 of 472 authored chapters carry one. The chapter's introduction lives in its entry quest. Note our generator currently DOES emit chapter descriptions (autoquestgen.py ~7225, `**({'description': [_intro]} if _intro else {})`) - harmless, but not an immersion lever and not authored practice.",
+   "replaced_by": [
+    "CHK-08"
+   ]
+  }
+ },
+ "evidence": {
+  "corpora": {
+   "arc27": {
+    "what": "27 published books from Modrinth .mrpack (MC 1.19-1.21, 2.9k-3.3M downloads)",
+    "size": "472 chapters of >=5 quests, 15,576 quests, parsed in full",
+    "used_for": "chapter-one task mix, graph shape, size usage, description lengths",
+    "caveats": [
+     "Text-length claims use only the 23 packs without lang-key titles (10,941 quests).",
+     "VERIFIED CORRECTION: 7 of those 23 store ALL text in lang files and record title=None/description=None. They are not terse, they are unmeasurable. Correct N for any text claim is 16, not 23.",
+     "8 of the 27 first chapters are one Luna Pixel Studios template (Better MC x3, Medieval MC x3, bfm, rl-craft all ship welcome_to_bmc_*). Collapse to 19-20 independent votes before quoting a pass-rate."
+    ]
+   },
+   "cf86": {
+    "what": "86 published books harvested 2026-08-29 from Modrinth + CurseForge",
+    "size": "2,083 chapters, 80,061 quests, deduplicated by chapter-ID fingerprint",
+    "used_for": "chapter-one entry cost, first-shown-quest task kind, root cost distribution",
+    "caveats": [
+     "FTBQ display order must be reconstructed: implicit ungrouped group first, then chapter_groups.snbt LIST order, then order_index. Group order_index is never written (0 of 18 grouped books have one), so sorting by it ties every group at 0 and picks the wrong chapter one for ~90% of grouped books.",
+     "62.0% of the 84,779 item tasks omit `count` entirely; it must default to 1."
+    ]
+   },
+   "rw17": {
+    "what": "17 packs of >=100 quests re-harvested per-quest (task+reward+dependency kept)",
+    "size": "8,185 quests, 282 chapters, 8,753 reward entries, 4,257 item rewards",
+    "used_for": "everything about rewards; no pre-existing moddb file pairs a reward with its task",
+    "caveats": [
+     "rewards.json aggregates per MOD namespace and discards quest structure, so no reward<->task or reward<->position question is answerable from it. That is why this corpus exists.",
+     "Item classification (capability vs material) is scored against A_handheld.json, derived from real item MODEL data: recall 67.9% on 4,427 ground-truth tools, false-material rate 1.4%. Low recall undercounts capability on BOTH sides equally, so it biases against the thesis - conservative in the safe direction.",
+     "Parse validated: Prominence II returns exactly 1,754 quests and reward mix xp 51% / item 32% / xp_levels 14%, matching v1 independently."
+    ]
+   },
+   "opt25": {
+    "what": "25 packs parsed per-quest: 18 Modrinth + 8 GitHub (ATM 8/9/10, Enigmatica 6/8/9/10)",
+    "size": "512 chapters, 21,268 quests",
+    "used_for": "the optional flag, chapter-completion honesty, required-subgraph shape",
+    "caveats": [
+     "This corpus exists because every Modrinth-only corpus excludes the two biggest questbook families in modded Minecraft. All the Mods and Enigmatica come from git and carry downloads=None, so ANY download-tercile slice files them into 'bottom'. Never slice this corpus by downloads."
+    ]
+   },
+   "prom1": {
+    "what": "Prominence II Hasturian Era, the only pack available locally as full text",
+    "size": "31 chapters, 1,754 quests, 660 descriptions, 1,044 subtitles, 13,172 tokens",
+    "used_for": "description voice, second person, subtitle channel, XP vocabulary",
+    "caveats": [
+     "n=1 PACK. Every text-voice number in this file that is not coverage-only is grade C. The v1 path (curseforge/...) no longer exists; the copy used is scratchpad/corpus/Prominence__II__Hasturian_Era/quests/chapters/*.snbt (CF 466901, v4.0.3, 12.4M downloads).",
+     "3 of its chapters are imported mod documentation and must be excluded or reported separately for any length statistic.",
+     "10 of its 29 chapters sit at <=10% description coverage and they are exactly the big catalogue chapters (create 122q/0 desc, botania 111/1, tech_reborn 127/1, powah 114/2, collectibles_2 131/0). Treat as authored laziness, not craft; do not copy."
+    ]
+   },
+   "players": {
+    "what": "Mined playthrough reactions, moddb/playthrough_*.json",
+    "size": "1,542 raw reaction records; 371 scoped to the quest book; 266-267 position-tagged",
+    "used_for": "which defects a player actually notices",
+    "caveats": [
+     "One series (Biohazard: Project Genesis) supplies 1,071 of 1,542 records. Rates are directional; the verbatim quotes are the evidence.",
+     "A v1-era claim of '26 reward quotes vs 1 chapter-completion quote' does not reproduce: on the 371 book-scoped quotes the keyword counts are 39 reward and 39 chapter-or-questline. Do not reuse that ratio."
+    ]
+   },
+   "ours": {
+    "what": "CREATE FEMBY book generated from scan.pkl with the standard opts, then written through build_chapters",
+    "size": "25 chapters (24 of >=5 quests), 381 quests, 381 tasks, 402 reward entries",
+    "used_for": "every 'ours' number in this file",
+    "caveats": [
+     "Generation is deterministic - repeated runs give byte-identical docs.",
+     "Numbers here were re-measured on 2026-08-29 and differ slightly from earlier lane reports that used a 377- or 404-quest build. Where they differ, THIS file's numbers are the ones re-derived directly and should be trusted.",
+     "3 of the 25 chapters are hardcoded vanilla (autoquestgen.py:5263 _VANILLA_CHAPTERS). They behave differently from the 22 generated mod chapters on almost every metric; always report both."
+    ]
+   },
+   "traps": [
+    "task_kinds.json is NOT a task list. harvest.py records at most ONE primary target per quest, and only for item/kill/dimension targets. Its 58,042 entries also over-count shapes.json's 31,929 quests by 1.82x because it accumulated over more harvest runs. Never divide task_kinds.json by shapes.json.",
+    "shapes.json is keyed by MOD, not by pack (harvest.py:305). It cannot answer any per-pack question and cannot answer 'chapter one' at all - its first record per key is 'the first chapter attributed to that mod by zip-namelist order'.",
+    "counts.json IS aligned with shapes.json (median 0.99 observations per quest per bucket) and is safe, but it caps observations at 4 per item per chapter.",
+    "chains.json holds 2,058 chapter chains but only 619 unique ones - packs copy each other's books wholesale. Any statistic over the raw list is weighted 3.3x toward the copied books. Dedupe on (mod, tuple(sequence)) first.",
+    "Item COUNT is not a cost proxy: 92.5% of authored item tasks ask for exactly 1 (31,737 of 34,296 observations). A count-based light/medium/heavy classifier assigns the same weight to 92.5% of all quests and measures nothing.",
+    "Do not compare a per-chapter metric against a book-aggregate one. A leaf fraction computed book-wide and a critical-path fraction computed per chapter are not comparable, and v1 drew a false 'this catches what leaf fraction misses' conclusion from exactly that mismatch.",
+    "cpf = (depth+1)/n is mechanically size-sensitive. Authored median chapter is 26 quests, ours is 16. Any depth-over-size ratio must be size-matched before comparison."
+   ]
+  },
+  "totals": {
+   "authored_packs_parsed_per_quest": "86 (cf86) + 27 (arc27) + 25 (opt25) + 17 (rw17), overlapping; the largest single corpus is 2,083 chapters / 80,061 quests",
+   "authored_quests_read": "80,061 (cf86) with 21,268 (opt25) and 15,576 (arc27) parsed independently; 8,185 re-harvested with rewards paired to tasks (rw17)",
+   "single_pack_full_text": "1,754 quests, 660 descriptions, 1,044 subtitles (Prominence II)",
+   "player_reactions": "1,542 records; 371 quest-book-scoped; 266-267 position-tagged; 97.53 transcribed hours",
+   "our_book": "25 chapters, 381 quests, re-measured 2026-08-29 on build_chapters output"
+  },
+  "verification": {
+   "method": "Six of v1's load-bearing rules were handed to independent verifiers who built their own corpora and were asked three questions: do both numbers reproduce, is the rule stated precisely enough to implement, and would enforcing it change how the book reads or only move a statistic.",
+   "result": "NONE of the six survived exactly as written. One (optional fraction) was rejected outright as measuring an artifact that changes no pixel. Two had thresholds calibrated on chapters far larger than ours. One inverted its own corpus in its second clause. One was passable by deleting text. One was half right. Five of the six named a real defect that survives in a corrected form.",
+   "recurring_error_classes_found": [
+    "Measuring the intermediate doc instead of the written book (size/shape).",
+    "Comparing a per-chapter metric against a book-aggregate one.",
+    "Treating a mod-keyed harvest file as pack-keyed.",
+    "Slicing by downloads a corpus in which some packs carry downloads=None.",
+    "Reading chapters in zip order instead of FTBQ display order (disagrees for 85% of packs).",
+    "Reporting two clauses' pass rates separately and never scoring the conjunction proposed.",
+    "Counting lang-key-localised books as terse books.",
+    "Not deduplicating books that packs copy from each other wholesale."
+   ]
+  },
+  "cannot_answer_from_local_data": [
+   "Cross-pack reward VALUE versus depth or position: rewards.json aggregates per mod and discards quest structure. rw17 fixes this for reward KIND and identity but not for a cross-pack XP curve.",
+   "Cross-pack per-quest checkmark share: the general harvester classified only item/kill/dimension targets. The chapter-one checkmark figures come from full re-parses (arc27, cf86) and are safe; a book-wide cross-pack figure is not available.",
+   "The row-width distribution of authored chapters: shapes.json builds a width Counter and keeps only its max (harvest.py ~line 175). Persisting that Counter is a one-line change that would make CHK-03's 0.60 threshold derivable instead of chosen.",
+   "Per-pack chapter shape tables: shapes.json is mod-keyed."
+  ],
+  "judgement_not_measurement": [
+   "CHK-03's 0.60 narrow-row ceiling (the >=3 median-row floor IS derived).",
+   "CHK-07's 12% unpaid ceiling (the trailing-run defect is directly measured).",
+   "CHK-13's 0.75 position bar.",
+   "GRD-04's thresholds in full.",
+   "Every grade-C rate in the voice section (n=1 authored pack)."
+  ],
+  "sources": [
+   "Prominence_ II Hasturian Era/config/ftbquests/quests/chapters/*.snbt — 31 files, 1,754 quests, parsed and analysed in full",
+   "moddb/shapes.json — 726 chapters, 226 packs",
+   "moddb/task_kinds.json — 250 packs, 54,536 tasks",
+   "moddb/rewards.json — 226 packs, 30,000 rewards",
+   "moddb/counts.json — item stack-size distributions",
+   "moddb/style_guide.json — companion micro-style spec, extended not duplicated here",
+   "https://mmorpg.com/moonrise/developer-journals/quest-pacing-the-long-and-short-of-quest-design-1000009220 — short/medium/long quest mix targets",
+   "https://gamedesignskills.com/game-design/quest-design/ — quest hook, flow, and reward structure",
+   "https://book.leveldesignbook.com/process/preproduction/pacing — pacing and beat rhythm",
+   "https://bugnet.io/blog/how-to-design-a-puzzle-games-difficulty-curve — breather beats after hard steps",
+   "https://ui-patterns.com/patterns/Variable-rewards — variable-ratio reward schedules",
+   "https://learning-theories.com/game-reward-systems.html — reward schedules and intrinsic motivation",
+   "https://www.wayline.io/blog/tutorial-ux-indie-game-onboarding — one-concept-at-a-time onboarding, wall-of-text failure",
+   "https://acagamic.com/newsletter/2023/04/04/dont-spook-the-newbies-unveiling-5-proven-game-onboarding-techniques/ — teach through action rather than instruction"
+  ]
+ }
+}

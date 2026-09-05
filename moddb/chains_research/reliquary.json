@@ -1,0 +1,270 @@
+{
+ "mod": "reliquary",
+ "verified_against": "reliquary-2.0.65.1565.jar",
+ "item_count_in_jar": 124,
+ "chain": [
+  {
+   "id": "reliquary:rib_bone",
+   "title": "Bones Worth Keeping",
+   "desc": "Injected into skeleton drops and into mineshaft, pyramid and stronghold chests. The first of the mod's twenty mob essences."
+  },
+  {
+   "id": "reliquary:zombie_heart",
+   "title": "Still in the Chest",
+   "desc": "Zombies and husks drop it through a loot modifier. It builds the Mercy Cross and both zombie Mob Charms."
+  },
+  {
+   "id": "reliquary:slime_pearl",
+   "title": "A Pearl From the Ooze",
+   "desc": "Slimes give it up. It appears in the Void Tear, the Handgun and both Infernal Claws."
+  },
+  {
+   "id": "reliquary:nebulous_heart",
+   "title": "The Enderman's Core",
+   "desc": "The single most demanded essence in the mod - Magicbane, Void Tear, Fortune Coin, Interdiction Torch, Wraith Node and the Altar all need it."
+  },
+  {
+   "id": "reliquary:void_tear",
+   "title": "A Tear That Swallows",
+   "desc": "A Nebulous Heart and a Slime Pearl. It holds one item type in effectively unlimited quantity and gates half the mod's tools."
+  },
+  {
+   "id": "reliquary:molten_core",
+   "title": "Pulled From the Magma",
+   "desc": "Magma cubes and blazes drop it. Everything that burns in this mod is built on one."
+  },
+  {
+   "id": "reliquary:catalyzing_gland",
+   "title": "The Creeper's Gland",
+   "desc": "Creepers and ghasts drop it. It is the reagent in the Apothecary Mortar and the Holy Hand Grenade."
+  },
+  {
+   "id": "reliquary:apothecary_mortar",
+   "title": "Grind the Reagents",
+   "desc": "A Catalyzing Gland and stone. It grinds ingredients into Potion Essence, which is the mod's own potion system."
+  },
+  {
+   "id": "reliquary:apothecary_cauldron",
+   "title": "The Apothecary Cauldron",
+   "desc": "Molten Core, Nebulous Heart, Catalyzing Gland and an Infernal Claw. It brews Potion Essence into Condensed Potions."
+  },
+  {
+   "id": "reliquary:empty_potion_vial",
+   "title": "Vials to Fill",
+   "desc": "Glass panes. The cauldron fills them, and Glowing Water is the first thing worth putting in one."
+  },
+  {
+   "id": "reliquary:glowing_water",
+   "title": "Water That Shines",
+   "desc": "Glowstone dust in a vial. Thrown, it burns the undead; it is also the charge in the Holy Hand Grenade."
+  },
+  {
+   "id": "reliquary:witch_hat",
+   "title": "Taken Off a Witch",
+   "desc": "Witches drop it. The Alkahestry Tome, the Hero's Medallion and the Infernal Tear all demand one."
+  },
+  {
+   "id": "reliquary:bat_wing",
+   "title": "Wings From the Dark",
+   "desc": "Bats drop it. It carries the Angelic Feather, the Ender Staff, the Fortune Coin and the Rending Gale."
+  },
+  {
+   "id": "reliquary:fertile_essence",
+   "title": "Essence of Growing",
+   "desc": "The Witherless Rose, the Fertile Lily Pad and the Harvest Rod all start here."
+  },
+  {
+   "id": "reliquary:fortune_coin",
+   "title": "The Coin That Fetches",
+   "desc": "Bat Wing, Nebulous Heart and Slime Pearl. Held in a curio slot it pulls drops and experience to you."
+  },
+  {
+   "id": "reliquary:harvest_rod",
+   "title": "The Harvest Rod",
+   "desc": "Fertile Essence and a Void Tear. It bonemeals, plants and harvests across a whole field at range."
+  },
+  {
+   "id": "reliquary:emperor_chalice",
+   "title": "Drink Without Drinking",
+   "desc": "A Void Tear and gold. It feeds you water endlessly and voids the drinking animation."
+  },
+  {
+   "id": "reliquary:infernal_claw",
+   "title": "One Claw",
+   "desc": "Molten Core, Rib Bone and Slime Pearl. Note that both reliquary:infernal_claw and reliquary:infernal_claws exist and are different items."
+  },
+  {
+   "id": "reliquary:infernal_tear",
+   "title": "A Tear of Fire",
+   "desc": "Infernal Claw, Molten Core, Witch Hat and a Void Tear. Thirty-two reliquary:infernal_tear_value recipes set what each item is worth to it."
+  },
+  {
+   "id": "reliquary:infernal_chalice",
+   "title": "The Lava Chalice",
+   "desc": "The Emperor Chalice with Infernal Claws, an Infernal Tear and a Molten Core - a bottomless lava reservoir you can walk into."
+  },
+  {
+   "id": "reliquary:mob_charm_fragment",
+   "title": "Fragments of a Charm",
+   "desc": "Sixteen separate recipes, one per mob type, each consuming that mob's own essence. Fragments are the raw material of the charm system."
+  },
+  {
+   "id": "reliquary:mob_charm",
+   "title": "The Mob Charm",
+   "desc": "One item, not sixteen: reliquary:mob_charm carries its mob type as NBT and is built by the reliquary:mob_charm recipe type from fragments."
+  },
+  {
+   "id": "reliquary:mob_charm_belt",
+   "title": "Wear Them All",
+   "desc": "Leather and Mob Charm Fragments. The belt holds your charms so their mobs stop targeting you."
+  },
+  {
+   "id": "reliquary:alkahestry_tome",
+   "title": "The Alkahestry Tome",
+   "desc": "Molten Core, Witch Hat, Eye of the Storm, Catalyzing Gland, Chelicerae, Slime Pearl and Nebulous Heart - seven essences in one recipe."
+  },
+  {
+   "id": "reliquary:alkahestry_altar",
+   "title": "The Altar of Light",
+   "desc": "Nebulous Hearts and a Catalyzing Gland. Feed it redstone and it grows glowstone; that glowstone is how the Tome recharges."
+  },
+  {
+   "id": "reliquary:barrel_assembly",
+   "title": "Machine a Barrel",
+   "desc": "The first third of the Handgun. All three assemblies are gated behind the handgun_enabled config condition."
+  },
+  {
+   "id": "reliquary:handgun",
+   "title": "The Handgun",
+   "desc": "Barrel, grip and hammer assemblies with a Slime Pearl. It fires magazines and leaves Empty Casings behind."
+  },
+  {
+   "id": "reliquary:magicbane",
+   "title": "Magicbane",
+   "desc": "A Nebulous Heart on a gold blade. It grows stronger the more magical the thing it kills."
+  },
+  {
+   "id": "reliquary:mercy_cross",
+   "title": "The Mercy Cross",
+   "desc": "Rib Bone, Withered Rib and a Zombie Heart. Purpose-built for undead, and the counterpart to Magicbane."
+  },
+  {
+   "id": "reliquary:kraken_shell",
+   "title": "Shell of the Kraken",
+   "desc": "Kraken Shell Fragments and a Nebulous Heart. Worn, it makes water stop mattering entirely."
+  },
+  {
+   "id": "reliquary:rending_gale",
+   "title": "The Rending Gale",
+   "desc": "Bat Wing, Eye of the Storm and a Void Tear. It stores lightning and flings entities, and it is the storm half of the staff set."
+  },
+  {
+   "id": "reliquary:phoenix_down",
+   "title": "Phoenix Down",
+   "desc": "An Angelheart Vial and an Angelic Feather. It saves you from death and then keeps working - the last thing the mod makes."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "reliquary:nebulous_heart",
+   "members": [
+    "reliquary:molten_core",
+    "reliquary:slime_pearl",
+    "reliquary:catalyzing_gland",
+    "reliquary:chelicerae",
+    "reliquary:rib_bone",
+    "reliquary:withered_rib",
+    "reliquary:zombie_heart",
+    "reliquary:bat_wing",
+    "reliquary:frozen_core",
+    "reliquary:eye_of_the_storm",
+    "reliquary:guardian_spike",
+    "reliquary:squid_beak",
+    "reliquary:kraken_shell_fragment",
+    "reliquary:witch_hat"
+   ]
+  },
+  {
+   "hub": "reliquary:sojourner_staff",
+   "members": [
+    "reliquary:pyromancer_staff",
+    "reliquary:glacial_staff",
+    "reliquary:ice_magus_rod",
+    "reliquary:serpent_staff",
+    "reliquary:ender_staff",
+    "reliquary:rod_of_lyssa",
+    "reliquary:shears_of_winter",
+    "reliquary:destruction_catalyst",
+    "reliquary:midas_touchstone",
+    "reliquary:holy_hand_grenade"
+   ]
+  },
+  {
+   "hub": "reliquary:bullets/neutral_bullet",
+   "members": [
+    "reliquary:bullets/blaze_bullet",
+    "reliquary:bullets/buster_bullet",
+    "reliquary:bullets/concussive_bullet",
+    "reliquary:bullets/ender_bullet",
+    "reliquary:bullets/exorcism_bullet",
+    "reliquary:bullets/sand_bullet",
+    "reliquary:bullets/seeker_bullet",
+    "reliquary:bullets/storm_bullet",
+    "reliquary:bullets/empty_bullet"
+   ]
+  },
+  {
+   "hub": "reliquary:magazines/neutral_magazine",
+   "members": [
+    "reliquary:magazines/blaze_magazine",
+    "reliquary:magazines/buster_magazine",
+    "reliquary:magazines/concussive_magazine",
+    "reliquary:magazines/ender_magazine",
+    "reliquary:magazines/exorcism_magazine",
+    "reliquary:magazines/sand_magazine",
+    "reliquary:magazines/seeker_magazine",
+    "reliquary:magazines/storm_magazine",
+    "reliquary:magazines/empty_magazine"
+   ]
+  },
+  {
+   "hub": "reliquary:pedestals/white_pedestal",
+   "members": [
+    "reliquary:pedestals/black_pedestal",
+    "reliquary:pedestals/red_pedestal",
+    "reliquary:pedestals/blue_pedestal",
+    "reliquary:pedestals/green_pedestal",
+    "reliquary:pedestals/yellow_pedestal",
+    "reliquary:pedestals/purple_pedestal",
+    "reliquary:pedestals/orange_pedestal",
+    "reliquary:pedestals/cyan_pedestal",
+    "reliquary:pedestals/pink_pedestal",
+    "reliquary:pedestals/lime_pedestal",
+    "reliquary:pedestals/brown_pedestal",
+    "reliquary:pedestals/gray_pedestal",
+    "reliquary:pedestals/light_blue_pedestal",
+    "reliquary:pedestals/magenta_pedestal"
+   ]
+  },
+  {
+   "hub": "reliquary:pedestals/passive/white_passive_pedestal",
+   "members": [
+    "reliquary:pedestals/passive/black_passive_pedestal",
+    "reliquary:pedestals/passive/red_passive_pedestal",
+    "reliquary:pedestals/passive/blue_passive_pedestal",
+    "reliquary:pedestals/passive/green_passive_pedestal",
+    "reliquary:pedestals/passive/yellow_passive_pedestal",
+    "reliquary:pedestals/passive/purple_passive_pedestal",
+    "reliquary:pedestals/passive/orange_passive_pedestal",
+    "reliquary:pedestals/passive/cyan_passive_pedestal",
+    "reliquary:pedestals/passive/pink_passive_pedestal",
+    "reliquary:pedestals/passive/lime_passive_pedestal",
+    "reliquary:pedestals/passive/brown_passive_pedestal",
+    "reliquary:pedestals/passive/gray_passive_pedestal",
+    "reliquary:pedestals/passive/light_blue_passive_pedestal",
+    "reliquary:pedestals/passive/magenta_passive_pedestal"
+   ]
+  }
+ ],
+ "notes": "VERIFICATION: 125 stems pass item-model INTERSECT (lang key OR recipe result OR loot entry OR tag OR advancement) once slash-pathed ids are handled; 124 survive the obtainability audit. All 32 chain ids, 6 wheel hubs and 70 wheel members (108 ids total) were re-checked, fully namespaced, against the surviving set on a second pass whose derivation is deliberately independent of the first: exact item-model path existence plus the literal \"<ns>:<path>\" string appearing in the jar data trees. 0 failures. The recipe scanner unwraps forge:conditional, without which 128 of Reliquary's 226 recipe files - more than half the mod - report no result at all. SLASH-PATHED IDS: like Hex Casting, Reliquary registers whole families under a path. The bullets are reliquary:bullets/blaze_bullet, the magazines reliquary:magazines/blaze_magazine, the pedestals reliquary:pedestals/black_pedestal and reliquary:pedestals/passive/black_passive_pedestal - proven by the result fields inside data/reliquary/recipes/bullets/blaze_bullet.json and data/reliquary/recipes/pedestals/black_pedestal.json, and by data/minecraft/tags/blocks/mineable/pickaxe.json which lists all 32 pedestals in that exact form. Their lang keys replace the slash with a dot (item.reliquary.bullets.blaze_bullet), and the 32 pedestals have NO per-id lang key at all - the game composes their names from block.reliquary.pedestal and block.reliquary.passive_pedestal plus the dye colour, exactly the Bewitchment chalk-and-sigil pattern. They are included on recipe-result and tag evidence, which is stronger than a lang key. DROPS: reliquary:pedestal is the one id removed, and it is precisely the trap that composed naming creates - block.reliquary.pedestal exists and so does assets/reliquary/models/item/pedestal.json, but reliquary/init/ModBlocks.class only ever uses 'pedestal' as a suffix while building 'pedestals/<colour>_pedestal', and no recipe, loot table or tag references a bare reliquary:pedestal. It is a shared display name, not an item. KEPT DESPITE NO RECIPE, with proof: reliquary:potion, reliquary:splash_potion, reliquary:lingering_potion, reliquary:potion_essence and reliquary:tipped_arrow are all registered in reliquary/init/ModItems.class and are produced in code by the Apothecary Mortar and Apothecary Cauldron (the 19 reliquary:potion_effects recipes define what effects an ingredient contributes, not the items themselves), so they carry their contents as NBT rather than as separate ids; and reliquary:bullets/empty_bullet is what the Handgun ejects after firing - it has no crafting recipe but data/reliquary/recipes/gold_nugget.json consumes four of them, which only makes sense for an item the game hands you. TIER GATE: the analogue of Bewitchment's chalk tier is ALKAHESTRY CHARGE, and it is an explicit integer. reliquary:alkahestry_charging (4 recipes) puts charge INTO the Alkahestry Tome - redstone 1, glowstone dust 1, glowstone 4, redstone block 9 - and reliquary:alkahestry_crafting (22 recipes) spends it, on a ladder that runs charge 4 for dirt, sand, gravel, clay, charcoal and lapis, charge 8 for copper, flint, obsidian, gunpowder, end stone and soul sand, charge 32 for iron, gold, silver, tin, steel and emerald, charge 64 for diamond and charge 256 for a nether star. The Tome itself costs seven different mob essences, and the Altar of Light that recharges it costs Nebulous Hearts, so alkahestry sits behind a full sweep of the mob-drop economy. Underneath that runs a second, softer gate: nearly every item in the mod is built from named mob essences injected by forge global loot modifiers, so 'which mobs have you killed' orders the mod at least as strongly as any recipe depth. A THIRD gate is unusual and worth flagging to a pack author - Reliquary's recipes are wrapped in CONFIG conditions, not mod conditions: reliquary:handgun_enabled (33 recipes), reliquary:alkahestry_enabled (28), reliquary:potions_enabled (24), reliquary:charm_enabled (17), reliquary:pedestal_enabled (16), reliquary:passive_pedestal_enabled (16), reliquary:mob_drops_craftable (13) and reliquary:spawn_egg_enabled (1). All default to on, but a pack that disables any of them makes those quests uncompletable, so the handgun, alkahestry, potion, charm and pedestal branches should be checked against the pack's reliquary config before shipping. ENTITIES: no kill step is offered as a reliquary: id. The mod registers no mobs of its own - all 24 loot injections in data/reliquary/loot_modifiers/entities/ target vanilla mobs (bat, blaze, cave_spider, creeper, enderman, ghast, guardian, husk, magma_cube and so on), so a kill task here would be a vanilla task wearing a Reliquary label. The mob-essence quests above cover the same ground honestly. NEAR-MISS worth recording: reliquary:infernal_claw and reliquary:infernal_claws are two DIFFERENT registered items with separate recipes - the plural is crafted from the singular plus a Slime Pearl - so a generator that de-pluralises will silently merge them. CONSENSUS: moddb.json and harvested_order.json have no reliquary entry, so there is no consensus ordering to cross-check and no conflict to record."
+}

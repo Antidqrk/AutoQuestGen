@@ -1,0 +1,328 @@
+{
+ "mod": "mahoutsukai",
+ "ids_in_jar": 119,
+ "videos": [
+  {
+   "id": "Uu8-8nC9lOU",
+   "title": "🟨 COMPLETE GUIDE to the MAHOU TSUKAI MOD in MINECRAFT",
+   "channel": "Edlux Tutorials",
+   "views": 121670,
+   "duration": 1781,
+   "chars": 34373
+  }
+ ],
+ "items": {
+  "mahoutsukai:dagger": {
+   "mentions": 11,
+   "videos": 1,
+   "first_at": 0.0232,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "mahoutsukai:mystic_code": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.0359,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:kodoku": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.79,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:mortar_and_pestle": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.0462,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:rule_breaker": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.9352,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:spell_cloth": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.1307,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "mahoutsukai:caliburn": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.8435,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:hammer": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.0541,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:fog_projector": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.2479,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:mystic_staff": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.531,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:black_fire": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.6232,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:scroll_projection": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.41,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:replica": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.9293,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:pestle": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0416,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:mortar": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.042,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:morgan": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8529,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "mahoutsukai:treasury_projection_gauntlet": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4917,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "mahoutsukai:scroll_weapon_shooter": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4352,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:scroll_borrowed_authority": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5551,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:scroll_probability_alter": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9403,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:scroll_immunity_exchange": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7398,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:scroll_damage_exchange": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6981,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:scroll_strengthening": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.875,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:scroll_possess_entity": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6622,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:scroll_retribution": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7481,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:mana_circuit_magitech": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2109,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:powdered_diamond": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1783,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mahoutsukai:powdered_eye": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6145,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "_shape": "A RITUAL mod with almost no crafting tree. The jar holds 119 item ids but only 32 recipes, and 20 of those 32 are just 'ingot + grinder = powder'. Every scroll, every legendary weapon and every projector effect is produced by drawing a magic circle in the world, not by a recipe. Quests must target rituals and scrolls, not a crafting ladder.",
+  "order": [
+   "mahoutsukai:guidebook (leather + paper + red dye) first - it is the in-game teaching tool and the guide opens on it.",
+   "mahoutsukai:dagger (iron + stick + purple dye) is THE tool and everything routes through it. Guide: 'Take the dagger, right click, press M and there's our ritual circle.'",
+   "A grinder next, and the guide is explicit about which one: mahoutsukai:hammer (string + cobble + stick) works, but 'I suggest the mortar and pestle, as you'll need lots of powder, making it cost effective' -> mahoutsukai:mortar (brick + diamond) + mahoutsukai:pestle (diamond + stick) -> mahoutsukai:mortar_and_pestle.",
+   "Grind the seven powders, which are the mod's real currency: mahoutsukai:powdered_gold, mahoutsukai:powdered_iron, mahoutsukai:powdered_diamond, mahoutsukai:powdered_emerald, mahoutsukai:powdered_ender, mahoutsukai:powdered_eye, mahoutsukai:powdered_quartz. Guide: 'These powders are used with the dagger for different rituals.'",
+   "mahoutsukai:spell_cloth (white wool + dagger, makes 4) is the blank that becomes every scroll.",
+   "Learn ONE ritual and the rest follow. Guide: 'By teaching this first ritual I'll assume you'll know how to do any other ritual.' The loop is: right-click spell cloth with the dagger, press M to place the circle, then drop the required powders in.",
+   "First scrolls are cheap 3-powder recipes - the guide starts with the Mystic Eyes of Fay Sight (mahoutsukai:scroll_fay_sight, mahoutsukai:scroll_mystic_eyes).",
+   "mahoutsukai:mystic_code (powdered gold) is the mana vessel and should come early. Guide notes the starting pools: 'when you craft it, you'll start with 0/10000 and 0/5000.' Upgrade to mahoutsukai:mystic_code_first_sorcery (fae essence + powdered diamond).",
+   "mahoutsukai:mana_circuit (8x mahoutsukai:fae_essence + mahoutsukai:powdered_emerald) and mahoutsukai:mana_circuit_magitech are the mana infrastructure once spells get expensive.",
+   "Projectors are the mid-game utility blocks: mahoutsukai:mahoujin_projector (powdered gold + spell cloth) and mahoutsukai:fog_projector (powdered eye + spell cloth).",
+   "Endgame is the legendary weapons, all ritual-only: mahoutsukai:rule_breaker ('This ritual uses diamond, gold and quartz'), then mahoutsukai:morgan, mahoutsukai:caliburn, mahoutsukai:clarent, mahoutsukai:rhongomyniad, mahoutsukai:replica, mahoutsukai:theripper, mahoutsukai:nobu, mahoutsukai:staff_emrys."
+  ],
+  "gates": [
+   "mahoutsukai:dagger gates literally everything. No dagger, no ritual circle, no scroll, no weapon.",
+   "Powder economy is the real gate: rituals are priced in combinations of powders, and the guide quotes exact ones - 2 emerald + 1 diamond for the intro ritual, 2 diamond + 1 gold for mahoutsukai:scroll_weapon_shooter, 2 diamond + 1 ender for the black keys, 2 diamond + 1 emerald for the lake, 2 emerald + 1 quartz for the chronal/damage exchange, diamond + gold + quartz for mahoutsukai:rule_breaker. Diamonds and emeralds are consumed in bulk, so this mod is gated on mining, not on magic.",
+   "mahoutsukai:spell_cloth gates every scroll - and it needs the dagger to make, so the dagger gates it twice over.",
+   "MANA is a per-player pool held by mahoutsukai:mystic_code, not an item. Big spells are gated on having enough, which is why mahoutsukai:mana_circuit exists.",
+   "mahoutsukai:fae_essence gates the mana tier (mahoutsukai:mana_circuit, mahoutsukai:mystic_code_first_sorcery, mahoutsukai:faecake) and has no recipe - it is obtained in world.",
+   "Several effects gate on player state rather than items - the guide notes 'You'll need to be a bit creative in how you harm yourself' and 'You'll need to have a sword in your inventory' for specific rituals.",
+   "mahoutsukai:attuner (gold + lapis) gates mahoutsukai:attuned_diamond / mahoutsukai:attuned_emerald, which are the persistent-effect variants."
+  ],
+  "mechanics": [
+   "Rituals are drawn, not crafted. You right-click a surface with the dagger, press M to pick a mahoujin (magic circle), and feed it powders. There is no altar block and no multiblock - the circle IS the machine.",
+   "Scrolls are the spell system: ~55 of the 119 ids are scroll items in the mahoutsukai namespace (mahoutsukai:scroll_projection, mahoutsukai:scroll_gandr, mahoutsukai:scroll_geas and so on). They are consumed or held to grant an effect rather than slotted into a wand.",
+   "Two grinders exist for the same seven powders (hammer and mortar-and-pestle) purely as a cost/efficiency choice - the jar carries duplicate _2 recipes for exactly this.",
+   "Area rituals compose geometrically. Guide on the Cup of Heaven: 'You create a polygon forming different areas with these rituals surrounding them repeatedly. All rituals inside count as points and based on the total you'll apply negative effects to those outside.' That is a spatial mechanic no recipe scan can see.",
+   "Displacement/exchange is the mod's signature idea - mahoutsukai:scroll_damage_exchange 'swaps the damage dealt', mahoutsukai:scroll_damage_replication, mahoutsukai:scroll_immunity_exchange, mahoutsukai:scroll_selective_displacement, mahoutsukai:scroll_projectile_displacement, mahoutsukai:scroll_boundary_displacement.",
+   "Linked-pair rituals: 'You create two rituals and can teleport between them' - mahoutsukai:scroll_mental_displacement and the proximity keys (mahoutsukai:proximity_projection_key).",
+   "mahoutsukai:kodoku is a standalone curse mechanic: 'you have a wolf, put a kodoku on it, and when the wolf attacks and kills another entity, the kodoku will gain more.'",
+   "Fate/Stay Night is the whole flavour - the legendary weapons, mahoutsukai:scroll_reality_marble, mahoutsukai:scroll_treasury_projection and mahoutsukai:treasury_projection_gauntlet are direct references, which is why players seek them by name."
+  ],
+  "traps": [
+   "Do not use mahoutsukai:hammer for bulk powder. The guide explicitly steers players to the mortar and pestle for cost-effectiveness; a quest chain that stops at the hammer teaches the wrong habit.",
+   "Do not generate crafting quests for scrolls or legendary weapons. NONE of mahoutsukai:morgan, mahoutsukai:caliburn, mahoutsukai:clarent, mahoutsukai:rule_breaker, mahoutsukai:rhongomyniad or any scroll item has a recipe in the jar - they are ritual outputs and a crafting task would be unsatisfiable.",
+   "Balance warning worth recording: the guide calls mahoutsukai:scroll_selective_displacement broken and says of mahoutsukai:scroll_rho_aias 'This shield is quite overpowered, as it repels all mobs in a blast wave and protects from all damage.' If the pack wants pacing, these are the two to place late.",
+   "The *_model ids (mahoutsukai:morgan_model, mahoutsukai:clarent_model, mahoutsukai:mystic_code_model and friends) are render-only entries, never quest targets."
+  ],
+  "signature": [
+   "mahoutsukai:dagger",
+   "mahoutsukai:spell_cloth",
+   "mahoutsukai:mortar_and_pestle",
+   "mahoutsukai:powdered_gold",
+   "mahoutsukai:powdered_diamond",
+   "mahoutsukai:mystic_code",
+   "mahoutsukai:mana_circuit",
+   "mahoutsukai:mahoujin_projector",
+   "mahoutsukai:rule_breaker",
+   "mahoutsukai:morgan",
+   "mahoutsukai:caliburn",
+   "mahoutsukai:rhongomyniad",
+   "mahoutsukai:scroll_rho_aias",
+   "mahoutsukai:scroll_reality_marble",
+   "mahoutsukai:scroll_projection",
+   "mahoutsukai:treasury_projection_gauntlet"
+  ],
+  "pack_status": "NOT INSTALLED in CREATE FEMBY. Analysed against mahoutsukai-1.20.1-v1.34.74.jar fetched to scratch from Modrinth."
+ }
+}

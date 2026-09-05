@@ -1,0 +1,113 @@
+{
+ "mod": "immersive_aircraft",
+ "verified_against": "immersive_aircraft-1.4.1+1.20.1-forge.jar",
+ "item_count_in_jar": 27,
+ "chain": [
+  {
+   "id": "immersive_aircraft:hull",
+   "title": "Something to Sit In",
+   "desc": "Iron ingots wrapped around logs. Every aircraft in the mod is a hull plus whatever you bolt to it, so this is the first thing you make and the thing you make most of."
+  },
+  {
+   "id": "immersive_aircraft:sail",
+   "title": "Cloth to Catch the Air",
+   "desc": "White carpet stitched with string. Slow lift rather than thrust, which is why the sail belongs to airships and gyrodynes and never to the biplane."
+  },
+  {
+   "id": "immersive_aircraft:propeller",
+   "title": "Blades on a Hub",
+   "desc": "Iron ingots alone, arranged as a cross. Thrust instead of lift, and the piece that separates the aircraft that fly from the aircraft that drift."
+  },
+  {
+   "id": "immersive_aircraft:boiler",
+   "title": "Heat Under Pressure",
+   "desc": "A furnace wrapped in copper. On its own it does nothing; it is the pressure vessel every engine is built around."
+  },
+  {
+   "id": "immersive_aircraft:engine",
+   "title": "The First Real Powerplant",
+   "desc": "A boiler, a blast furnace, a piston and cobblestone. It burns ordinary furnace fuel, and its output decides how much aircraft you can afford to lift."
+  },
+  {
+   "id": "immersive_aircraft:airship",
+   "title": "Slow, Forgiving, Yours",
+   "desc": "Engine, hull and sail. The mod's own description calls it slow but easy to manoeuvre, which makes it the right first aircraft even though it is not the cheapest."
+  },
+  {
+   "id": "immersive_aircraft:quadrocopter",
+   "title": "Four Blades and a Stick of Bamboo",
+   "desc": "An engine, a propeller and bamboo. The cheapest thing in the mod that genuinely flies, and the one you crash while learning the controls."
+  },
+  {
+   "id": "immersive_aircraft:gyrodyne",
+   "title": "Autorotation",
+   "desc": "Hull, propeller and sail with no engine at all. It climbs on rotor lift alone, and the mod gives it its own target-altitude readout because you fly it by height, not throttle."
+  },
+  {
+   "id": "immersive_aircraft:biplane",
+   "title": "Fast, and Unforgiving",
+   "desc": "Engine, hull and propeller. Fast and rather reliable in the mod's own words, with the caveat that you had better make sure your runway is long enough."
+  },
+  {
+   "id": "immersive_aircraft:bamboo_hopper",
+   "title": "The Ultralight",
+   "desc": "A biplane rebuilt around a bamboo block with a second engine and hull. A stripped, lighter airframe for people who found the biplane too heavy."
+  },
+  {
+   "id": "immersive_aircraft:industrial_gears",
+   "title": "Gearing Up",
+   "desc": "Copper, iron and a lever. A component rather than a vehicle: the rotary cannon needs it, and so does the warship."
+  },
+  {
+   "id": "immersive_aircraft:cargo_airship",
+   "title": "Freight in the Sky",
+   "desc": "An airship, another hull and a chest. Slow and fuel hungry but it carries an entire storage, which turns flying from transport into logistics."
+  },
+  {
+   "id": "immersive_aircraft:warship",
+   "title": "A Flying Fortress",
+   "desc": "A cargo airship, an engine, a hull, industrial gears and a sail. Slow and heavily armed, and the only airframe in the mod worth hanging every weapon off."
+  },
+  {
+   "id": "immersive_aircraft:telescope",
+   "title": "Seeing the Landing Strip",
+   "desc": "A spyglass in a copper housing. A bulkier version of the spyglass, mounted rather than held, so you can pick a landing site before you commit."
+  },
+  {
+   "id": "immersive_aircraft:heavy_crossbow",
+   "title": "One Heavy Bolt",
+   "desc": "A crossbow, a tripwire hook and logs. A powerful punch that still requires arrows, which makes it the cheap armament for an airframe you cannot yet afford to lose."
+  },
+  {
+   "id": "immersive_aircraft:rotary_cannon",
+   "title": "Gunpowder by the Belt",
+   "desc": "Industrial gears, copper and a dispenser. Fast-firing and fed on gunpowder, so arming a warship becomes a supply problem."
+  },
+  {
+   "id": "immersive_aircraft:bomb_bay",
+   "title": "Dropping It Instead",
+   "desc": "TNT in an iron cradle. It drops TNT that does not destroy blocks but deals heavy damage, which is the only reason it is safe to fly over your own base."
+  },
+  {
+   "id": "immersive_aircraft:steel_boiler",
+   "title": "More Pressure, Less Coal",
+   "desc": "A boiler rebuilt with a second blast furnace and iron. The first real efficiency upgrade, and the one that makes long flights practical."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "immersive_aircraft:gyroscope",
+   "members": [
+    "immersive_aircraft:gyroscope_dials",
+    "immersive_aircraft:gyroscope_hud",
+    "immersive_aircraft:hull_reinforcement",
+    "immersive_aircraft:improved_landing_gear",
+    "immersive_aircraft:sturdy_pipes",
+    "immersive_aircraft:enhanced_propeller",
+    "immersive_aircraft:eco_engine",
+    "immersive_aircraft:nether_engine"
+   ]
+  }
+ ],
+ "notes": "Verified against immersive_aircraft-1.4.1+1.20.1-forge.jar (Forge 47+, minecraft [1.20.1,)). Modrinth slug immersive-aircraft, project id x3HZvrj6; modid is immersive_aircraft, so slug and modid differ only by the separator. This is an architectury mod - the Forge jar contains an architectury_inject_immersiveaircraft_common_* shaded blob at the jar root, which is why the jar is 2.4 MB for 27 items. THE ID SET IS EXACTLY 27 AND NEEDED NO WIDENING: assets/immersive_aircraft/models/item/*.json gives 27 names and every one has an item.immersive_aircraft.<id> lang key. The jar ships ZERO blockstates, so the models-intersect-lang rule is complete here; the extra lang keys (item.immersive_aircraft.item.upgrade, .item.weapon, and the seven <id>.description strings) are tooltip categories, not items. NOTHING WAS DROPPED - all 27 ids have a plain minecraft:crafting_shaped recipe under data/immersive_aircraft/recipes/, with no forge:conditional wrapper anywhere in the jar and no mod_loaded gate on anything. That is unusual for this survey and worth stating plainly: every item is craftable in a vanilla-plus pack with no second mod installed. RECIPES OUTSIDE recipes/**: yes, but they produce nothing. data/immersive_aircraft/aircraft/ (8 files) and data/immersive_aircraft/aircraft_upgrades/ (12 files) are datapack-driven STAT tables - they define each airframe's handling and what each upgrade multiplies - not recipes. They are why the mod's balance is datapack-configurable, and they confirm that nether_engine is a real registered upgrade even though moddb has never seen it in a pack. The ad_astra entry in mods.toml is an optional compat dependency (aircraft behaviour in Ad Astra's low-gravity dimensions), not a hard requirement; immersive_aircraft.invalid_dimension in the lang file is the refusal message. ORDERING vs moddb consensus (26 entries, all 26 id-verified, none renamed) - the consensus is unusually good here and the graph agrees with it almost everywhere: hull 0.112 first, engine 0.344 before the airframes, quadrocopter 0.427 / gyrodyne 0.456 / biplane 0.555 before airship 0.7, cargo_airship 0.833 and warship 0.91 last. TWO SMALL CONFLICTS, both resolved for the graph. (1) Consensus puts airship at 0.7, AFTER quadrocopter 0.427, gyrodyne 0.456 and biplane 0.555, but cargo_airship 0.833 consumes an airship and warship 0.91 consumes a cargo_airship, so the airship must precede both; it was placed immediately after the engine, where its ingredient list (engine + hull + sail) actually sits, and the three cheaper airframes follow. (2) Consensus puts bamboo_hopper at 0.537 before biplane 0.555, but data/immersive_aircraft/recipes/bamboo_hopper.json takes an immersive_aircraft:biplane as an ingredient, so the biplane must come first. The consensus omits nether_engine entirely (0 packs); it is in the upgrade wheel because it is a real, craftable, top-tier engine (engine + netherite ingot + blaze rod + magma cream + nether brick). MECHANICS FROM THE JAR'S OWN LANG FILE, useful for quest text: aircraft are flown with a dedicated keybind set (multi_control_* and fallback_control_* for left/right/forward/backward/up/down/pull/push, plus boost and dismount), the gyrodyne is flown to a target altitude (immersive_aircraft.gyrodyne_target / gyrodyne_target_reached), weapons announce immersive_aircraft.out_of_ammo, and some dimensions are refused outright."
+}

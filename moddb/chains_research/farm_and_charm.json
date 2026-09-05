@@ -1,0 +1,152 @@
+{
+ "mod": "farm_and_charm",
+ "verified_against": "letsdo-farm_and_charm-forge-1.0.14.jar",
+ "item_count_in_jar": 109,
+ "chain": [
+  {
+   "id": "farm_and_charm:wild_emmer",
+   "title": "Wild at Heart",
+   "desc": "Wild Emmer and its sibling wild crops generate across the world and seed the whole farm."
+  },
+  {
+   "id": "farm_and_charm:barley",
+   "title": "Barley There",
+   "desc": "Barley grows from seeds cut off a harvested stalk and feeds the soups and patties."
+  },
+  {
+   "id": "farm_and_charm:oat",
+   "title": "Feeling Your Oats",
+   "desc": "Oat grows from seeds made with wheat seeds and bone meal, and bales for storage."
+  },
+  {
+   "id": "farm_and_charm:corn",
+   "title": "Ear We Go",
+   "desc": "Corn is grown from kernels and roasts, grits or sides out from there."
+  },
+  {
+   "id": "farm_and_charm:onion",
+   "title": "Layers of Meaning",
+   "desc": "Onions underpin the soups, the goulash and the pasta sauce."
+  },
+  {
+   "id": "farm_and_charm:tomato",
+   "title": "Well Rounded",
+   "desc": "Tomatoes come from wild tomato patches and make the farm's base tomato soup."
+  },
+  {
+   "id": "farm_and_charm:strawberry",
+   "title": "Berry Good Year",
+   "desc": "Strawberries sweeten the oatmeal, the tea and Grandma's cake."
+  },
+  {
+   "id": "farm_and_charm:plow",
+   "title": "Plow and Then",
+   "desc": "The Plow tills a wide swathe of farmland in one swing."
+  },
+  {
+   "id": "farm_and_charm:crafting_bowl",
+   "title": "Bowl Movement",
+   "desc": "The Crafting Bowl mixes butter, dough, salads and the pet foods."
+  },
+  {
+   "id": "farm_and_charm:mincer",
+   "title": "Grind Time",
+   "desc": "The Mincer turns wheat into flour, meat into mince, and dough into pasta."
+  },
+  {
+   "id": "farm_and_charm:flour",
+   "title": "Flour Power",
+   "desc": "Wheat run through the Mincer becomes Flour, the base of all baking here."
+  },
+  {
+   "id": "farm_and_charm:yeast",
+   "title": "Yeast We Can Do",
+   "desc": "Sugar, water and wheat cook in the pot into Yeast."
+  },
+  {
+   "id": "farm_and_charm:cooking_pot",
+   "title": "Pot Committed",
+   "desc": "The Cooking Pot, iron and a wooden shovel, handles the soups and the teas."
+  },
+  {
+   "id": "farm_and_charm:dough",
+   "title": "Dough Re Mi",
+   "desc": "Flour, yeast and a water bottle come together in the crafting bowl as Dough."
+  },
+  {
+   "id": "farm_and_charm:stove",
+   "title": "Stove It Up",
+   "desc": "The Stove is bricks, a campfire and iron, and it bakes and roasts the farm's big plates."
+  },
+  {
+   "id": "farm_and_charm:farmers_bread",
+   "title": "Rise and Grind",
+   "desc": "Dough and water baked on the stove make a hearty Farmers Bread."
+  },
+  {
+   "id": "farm_and_charm:roaster",
+   "title": "Roast With the Most",
+   "desc": "The Roaster plates the mod's most involved multi-ingredient dinners."
+  },
+  {
+   "id": "farm_and_charm:butter",
+   "title": "Better With Butter",
+   "desc": "A milk bucket worked in the crafting bowl gives Butter, required by nearly every roaster recipe."
+  },
+  {
+   "id": "farm_and_charm:grandmothers_strawberry_cake",
+   "title": "Grandma Knows Best",
+   "desc": "Dough, strawberries and sugar baked on the stove make Grandma's Strawberry Cake."
+  },
+  {
+   "id": "farm_and_charm:farmers_breakfast",
+   "title": "The Most Important Meal",
+   "desc": "Bread, bacon with eggs and roasted corn assemble into the Farmers Breakfast, the full spread this farm was built for."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "farm_and_charm:cooking_pot",
+   "members": [
+    "farm_and_charm:barley_soup",
+    "farm_and_charm:corn_grits",
+    "farm_and_charm:goulash",
+    "farm_and_charm:onion_soup",
+    "farm_and_charm:potato_soup",
+    "farm_and_charm:simple_tomato_soup",
+    "farm_and_charm:nettle_tea",
+    "farm_and_charm:ribwort_tea",
+    "farm_and_charm:strawberry_tea"
+   ]
+  },
+  {
+   "hub": "farm_and_charm:roaster",
+   "members": [
+    "farm_and_charm:bacon_with_eggs",
+    "farm_and_charm:barley_patties_with_potatoes",
+    "farm_and_charm:beef_patty_with_vegetables",
+    "farm_and_charm:chicken_wrapped_in_bacon",
+    "farm_and_charm:cooked_cod",
+    "farm_and_charm:cooked_salmon",
+    "farm_and_charm:lamb_with_corn",
+    "farm_and_charm:oat_pancake",
+    "farm_and_charm:sausage_with_oat_patty"
+   ]
+  },
+  {
+   "hub": "farm_and_charm:stove",
+   "members": [
+    "farm_and_charm:baked_lamb_ham",
+    "farm_and_charm:farmers_bread",
+    "farm_and_charm:grandmothers_strawberry_cake",
+    "farm_and_charm:pasta_with_onion_sauce",
+    "farm_and_charm:potato_with_roast_meat",
+    "farm_and_charm:roasted_chicken",
+    "farm_and_charm:roasted_corn",
+    "farm_and_charm:stuffed_chicken",
+    "farm_and_charm:stuffed_rabbit"
+   ]
+  }
+ ],
+ "notes": "Modid confirmed as farm_and_charm from assets/farm_and_charm/. Five custom recipe types map to five stations: farm_and_charm:mincer (flour, minced_beef, bacon, lamb_ham, chicken_parts, raw_pasta), :crafting_bowl (butter, dough, salads, pet food), :pot_cooking (soups and teas), :roaster (bowl dinners) and :stove (baked and roasted plates), plus :drying for fertilizer and bone meal. Butter is the real mid-game gate because every roaster recipe requires it. Note farm_and_charm:cooked_cod and farm_and_charm:cooked_salmon are the mod's own plated dishes, distinct from the vanilla ids of the same name. Dropped as unverifiable: cooking_saucepan, oat_bag, recipe_unlocker (model stems with no lang key and no recipe output; the jar's lang instead carries cooking_pan)."
+}

@@ -1,0 +1,119 @@
+{
+ "mod": "sushigocrafting",
+ "verified_against": "sushigocrafting-1.20.1-0.5.3.jar",
+ "item_count_in_jar": 71,
+ "chain": [
+  {"id": "sushigocrafting:rice_seeds", "title": "Seeds Out of the Grass", "desc": "Break tall grass and ferns; the mod's grass_seeds loot modifier drops all five of its crop seeds, so the whole farm starts with a sword and a field."},
+  {"id": "sushigocrafting:rice", "title": "The Staple", "desc": "Harvest the rice crop. Rice is the base of nearly every dish the mod makes and the only ingredient the rice cooker will take."},
+  {"id": "sushigocrafting:cutting_board", "title": "Somewhere to Chop", "desc": "Logs and slabs; place it, put an ingredient on it, and hit it with a knife. Six cutting-board recipes ship as data - avocado, cucumber, wasabi, cod, salmon and tuna."},
+  {"id": "sushigocrafting:cleaver_knife", "title": "The Knife", "desc": "Iron ingots and a stick. It fills the forge:tools/knife tag, so any other mod's knife works on the board too."},
+  {"id": "sushigocrafting:cucumber", "title": "First Vegetable", "desc": "Harvest the cucumber crop; it is the filler in half the california rolls."},
+  {"id": "sushigocrafting:cucumber_slices", "title": "Chopping It Down", "desc": "Cucumber on the cutting board. Slices, not whole vegetables, are what the roller accepts."},
+  {"id": "sushigocrafting:rice_cooker", "title": "Cooking It Properly", "desc": "Iron, a furnace, a light weighted pressure plate and redstone. It takes rice, water and fuel; the book's own words are 'to Uncle Roger standards'."},
+  {"id": "sushigocrafting:cooked_rice", "title": "Cooked Rice", "desc": "Out of the rice cooker. There is NO recipe file for this - the rice cooker's conversion lives in code, so a data-only scan calls it unobtainable."},
+  {"id": "sushigocrafting:seaweed_on_a_stick", "title": "Seaweed on a Stick", "desc": "A fishing rod with kelp, shapeless; one of only nine ordinary crafting recipes in the entire mod."},
+  {"id": "sushigocrafting:nori_sheets", "title": "Crushed, Not Crafted", "desc": "Dry kelp into a Dried Kelp Block, drop it as an ITEM, then squash it between an iron block and a piston. The mod's guide book states this and there is no recipe file anywhere - it is a world interaction."},
+  {"id": "sushigocrafting:roller", "title": "The Bamboo Mat", "desc": "Bamboo and string. Every finished piece of sushi in this mod is made here, by picking a type, loading ingredients and left-clicking until the weight is right."},
+  {"id": "sushigocrafting:onigiri", "title": "First Roll", "desc": "Rice and nori in the roller. The tooltip tells you how far off the perfect weight you were, and a perfect roll gives better food values and effects."},
+  {"id": "sushigocrafting:salmon_fillet", "title": "Filleting a Salmon", "desc": "Raw salmon on the cutting board; the recipe takes the forge:raw_fishes/salmon tag, so any mod's salmon works."},
+  {"id": "sushigocrafting:salmon_maki", "title": "Salmon Maki", "desc": "Rice, nori and salmon fillet rolled together."},
+  {"id": "sushigocrafting:salmon_nigiri", "title": "Salmon Nigiri", "desc": "Fillet pressed onto rice with no nori; a different roller type from the maki."},
+  {"id": "sushigocrafting:avocado", "title": "Picking Avocados", "desc": "Avocado trees generate in plains through the mod's own biome modifier; right-click the leaves when the fruit is fully grown. No recipe, no loot table - the harvest is an interaction."},
+  {"id": "sushigocrafting:avocado_slices", "title": "Sliced Avocado", "desc": "Avocado on the cutting board, via the forge:fruits/avocado tag."},
+  {"id": "sushigocrafting:avocado_maki", "title": "Avocado Maki", "desc": "The vegetarian roll, and the one that needs a tree rather than a fishing rod."},
+  {"id": "sushigocrafting:raw_tuna", "title": "Catching a Tuna", "desc": "Tuna are a mob this mod spawns into oceans by biome modifier; raw tuna is their loot drop. The guide book suggests bringing a saddle."},
+  {"id": "sushigocrafting:tuna_fillet", "title": "Filleting a Tuna", "desc": "Raw tuna on the cutting board."},
+  {"id": "sushigocrafting:tuna_maki", "title": "Tuna Maki", "desc": "The second fish line, identical in shape to salmon and worth more."},
+  {"id": "sushigocrafting:imitation_crab", "title": "Crab That Isn't", "desc": "Ordinary cod on the cutting board becomes Imitation Crab, which is exactly what surimi is."},
+  {"id": "sushigocrafting:crab_california", "title": "The California Roll", "desc": "Rice, nori, imitation crab and cucumber, rolled inside out. This is the base of the mod's largest family."},
+  {"id": "sushigocrafting:soy_bean", "title": "Soy", "desc": "Harvest the soy crop, from the same handful of grass seeds as the rice."},
+  {"id": "sushigocrafting:fermentation_barrel", "title": "Leaving It to Ferment", "desc": "A furnace, planks and wooden pressure plates. It has exactly two data recipes: soy sauce and cheese."},
+  {"id": "sushigocrafting:soy_sauce", "title": "Soy Sauce", "desc": "Soy beans fermented in the barrel; the seasoning half of the mod."},
+  {"id": "sushigocrafting:cheese", "title": "Cheese", "desc": "The barrel's other output, and the ingredient that doubles the size of the california roll family."},
+  {"id": "sushigocrafting:wasabi_root", "title": "Wasabi", "desc": "Harvest the wasabi crop; the fifth and rarest of the grass seeds."},
+  {"id": "sushigocrafting:wasabi_paste", "title": "Wasabi Paste", "desc": "Wasabi root worked down on the cutting board."},
+  {"id": "sushigocrafting:cooler_box", "title": "Keeping It Fresh", "desc": "A chest, an iron trapdoor and a snow block; it keeps prepared sushi from spoiling."},
+  {"id": "sushigocrafting:tobiko", "title": "Roe", "desc": "Dropped by killing fish. Flying fish roe is the garnish that upgrades any california roll into its tobiko version."},
+  {"id": "sushigocrafting:tobiko_salmon_cheese_california", "title": "The Full Set", "desc": "Rice, nori, salmon, cheese, cucumber and tobiko in one roll - the deepest single item in the mod and the end of the ingredient tree."}
+ ],
+ "collections": [
+  {
+   "hub": "sushigocrafting:roller",
+   "members": [
+    "sushigocrafting:onigiri",
+    "sushigocrafting:salmon_maki",
+    "sushigocrafting:tuna_maki",
+    "sushigocrafting:crab_maki",
+    "sushigocrafting:cucumber_maki",
+    "sushigocrafting:avocado_maki",
+    "sushigocrafting:salmon_temaki",
+    "sushigocrafting:tuna_temaki",
+    "sushigocrafting:shrimp_temaki",
+    "sushigocrafting:chicken_temaki"
+   ]
+  },
+  {
+   "hub": "sushigocrafting:salmon_nigiri",
+   "members": [
+    "sushigocrafting:tuna_nigiri",
+    "sushigocrafting:shrimp_nigiri",
+    "sushigocrafting:salmon_gunkan",
+    "sushigocrafting:tuna_gunkan",
+    "sushigocrafting:wakame_gunkan"
+   ]
+  },
+  {
+   "hub": "sushigocrafting:salmon_california",
+   "members": [
+    "sushigocrafting:tuna_california",
+    "sushigocrafting:crab_california",
+    "sushigocrafting:salmon_cheese_california",
+    "sushigocrafting:salmon_cucumber_california",
+    "sushigocrafting:tuna_cheese_california",
+    "sushigocrafting:tuna_cucumber_california",
+    "sushigocrafting:crab_cheese_california",
+    "sushigocrafting:crab_cucumber_california"
+   ]
+  },
+  {
+   "hub": "sushigocrafting:tobiko",
+   "members": [
+    "sushigocrafting:tobiko_salmon_california",
+    "sushigocrafting:tobiko_tuna_california",
+    "sushigocrafting:tobiko_crab_california",
+    "sushigocrafting:tobiko_salmon_cheese_california",
+    "sushigocrafting:tobiko_salmon_cucumber_california",
+    "sushigocrafting:tobiko_tuna_cheese_california",
+    "sushigocrafting:tobiko_tuna_cucumber_california",
+    "sushigocrafting:tobiko_crab_cheese_california",
+    "sushigocrafting:tobiko_crab_cucumber_california"
+   ]
+  },
+  {
+   "hub": "sushigocrafting:cutting_board",
+   "members": [
+    "sushigocrafting:cleaver_knife",
+    "sushigocrafting:roller",
+    "sushigocrafting:rice_cooker",
+    "sushigocrafting:fermentation_barrel",
+    "sushigocrafting:cooler_box"
+   ]
+  },
+  {
+   "hub": "sushigocrafting:rice_seeds",
+   "members": [
+    "sushigocrafting:cucumber_seeds",
+    "sushigocrafting:soy_seeds",
+    "sushigocrafting:sesame_seeds",
+    "sushigocrafting:wasabi_seeds",
+    "sushigocrafting:rice",
+    "sushigocrafting:cucumber",
+    "sushigocrafting:soy_bean",
+    "sushigocrafting:sesame_seed",
+    "sushigocrafting:wasabi_root",
+    "sushigocrafting:avocado"
+   ]
+  }
+ ],
+ "notes": "NAIVE 66 OF 72 MODEL STEMS; TRUE COUNT 71. Two separate failures account for the gap.\n\nTRAP 1, THE FIVE SEED ITEMS (the widening that matters). sushigocrafting:rice_seeds, cucumber_seeds, soy_seeds, sesame_seeds and wasabi_seeds each have an item model and NO item.sushigocrafting.<id> lang key. Their names live on the CROP BLOCK instead - block.sushigocrafting.rice_crop = 'Rice Seeds', block.sushigocrafting.cucumber_crop = 'Cucumber Seeds', and so on. That is standard BlockItem behaviour (the item inherits its block's descriptionId) but it means the item id and the lang id DISAGREE: the item is <x>_seeds, the block is <x>_crop, and the display name sits on the block. A rule that reconstructs ids from lang keys produces sushigocrafting:rice_crop, which is a BLOCK and not the thing a player can hold or a quest can require. Independent proof of the five item ids: the constant pool of com/buuz135/sushigocrafting/proxy/SushiContent$Items.class contains cucumber_seeds, rice_seeds, sesame_seeds, soy_seeds and wasabi_seeds as literal registry names, alongside every other base ingredient. The five crop blocks have blockstates and loot tables; the five seed items do not, because they are items.\n\nTRAP 2, THE PATCHOULI BOOK. sushigocrafting:guide_book has an item model, no lang key, and data/sushigocrafting/recipes/book.json is a shapeless recipe whose result is patchouli:guide_book, not an id in this namespace. Dropped. This is the FOURTH mod in this slice with the identical trap - extended_drawers:guide_book, caupona:vade_mecum_for_innkeepers and storagenetwork:network_book are the others. It is worth handling as a general rule: an item model with no lang key whose only recipe outputs patchouli:guide_book is never a real item.\n\nOBTAINABILITY IS ALMOST ENTIRELY OUTSIDE THE RECIPE FILES, and this is the single most important fact about the mod. There are 17 recipe files. Nine are ordinary crafting recipes (five of them forge:conditional wrappers around the machines), six are cutting-board recipes, two are fermenting-barrel recipes, one is an internal amount-combine recipe. That leaves FORTY of the mod's 71 items - every maki, nigiri, temaki, gunkan, onigiri and california roll - with no recipe of any kind. They are not unobtainable. They are made in the ROLLER, whose recipes are defined in code (com/buuz135/sushigocrafting/tile/machinery/RollerTile with a WeightTracker inner class): you pick a sushi type, load ingredients, choose an amount, and left-click until you hit a weight, with a perfect weight giving better food values and effects. A data-only obtainability pass reports 56 percent of this mod as uncompletable and is wrong about every one of them.\nFour more items are obtained by world interaction, each confirmed from the mod's own Patchouli entries rather than guessed:\n  - nori_sheets: dry kelp into a Dried Kelp Block, drop it as an item, and crush it between an iron block and a piston.\n  - avocado: avocado trees generate in plains via data/sushigocrafting/forge/biome_modifier/avocado.json; right-click fully grown leaves.\n  - tobiko: dropped by killing fish.\n  - cooked_rice: rice cooker only, in code.\nThe five seeds come from a custom loot modifier of type sushigocrafting:grass_seeds attached to grass, fern, tall grass and large fern. raw_tuna and shrimp are entity loot from two mobs the mod spawns by biome modifier.\n\nCONSENSUS. moddb's 23 entries are all real ids and no ordering override was needed - its sequence (avocado, shrimp, rice, tobiko, soy_bean, cucumber, wasabi_root, sesame_seed, then the machines, then slices and fillets, then the finished dishes) matches the ingredient graph well. Two gaps worth noting: it lists no seeds at all, which is where the mod actually starts, and it lists none of the forty roller dishes, which is what the mod is for. Both follow directly from consensus being harvested from quest files that were themselves written off recipe data.\n\nWHEELS. The california rolls are a genuine combinatorial family - three proteins (salmon, tuna, crab) times three fillings (plain, cheese, cucumber) times two garnishes (plain, tobiko) is 18 items, and they are one idea repeated. They are split across three wheels by garnish rather than enumerated in the chain, with one representative of each shape kept as a chain step."
+}

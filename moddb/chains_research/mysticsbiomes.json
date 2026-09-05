@@ -1,0 +1,175 @@
+{
+  "mod": "mysticsbiomes",
+  "verified_against": "mysticsbiomes-1.20.1-3.5.jar",
+  "item_count_in_jar": 426,
+  "chain": [
+    {
+      "id": "mysticsbiomes:lavender",
+      "title": "Pick Lavender",
+      "desc": "Grows in fields across the Lavender Meadow. A stack goes a long way - it crafts straight into purple dye and is the only source of the buds every butterfly nest needs."
+    },
+    {
+      "id": "mysticsbiomes:lavender_buds",
+      "title": "Dry Lavender into Buds",
+      "desc": "Smelt lavender in a furnace. Buds exist for one reason: they are the core of a butterfly nest. Two or three is plenty unless you want a garden full of nests."
+    },
+    {
+      "id": "mysticsbiomes:butterfly_nest",
+      "title": "Craft a Butterfly Nest",
+      "desc": "Eight leaves around a lavender bud. Hang it on a tree and butterflies will claim it, sleep in it at night, breed there, and plant new flowers around the area as they carry nectar home. Nests also generate naturally on trees - silk touch takes those down with the butterflies still inside."
+    },
+    {
+      "id": "mysticsbiomes:milkweed",
+      "title": "Gather Milkweed",
+      "desc": "A tall flower butterflies are drawn to - hold it to lead them where you want, or plant a patch near your nest so they stay. It also crafts into pink dye."
+    },
+    {
+      "id": "mysticsbiomes:chrysalis",
+      "title": "Collect a Chrysalis",
+      "desc": "Caterpillars crawl around eating crops, then attach a chrysalis to a nearby block when they are ready to grow up. A butterfly hatches out of it, so leave one alone if you want more butterflies."
+    },
+    {
+      "id": "mysticsbiomes:strawberry",
+      "title": "Harvest Strawberries",
+      "desc": "Strawberry bushes cover the Strawberry Fields biome. Pick them by hand and replant - you will want a steady supply for cake, and they are what tempts a strawberry cow into a fenced pen."
+    },
+    {
+      "id": "mysticsbiomes:sweet_strawberry",
+      "title": "Find a Sweet Strawberry",
+      "desc": "The rare berry a strawberry bush occasionally gives instead of the ordinary one. Strawberry cows will follow and breed on it, so save the few you find rather than eating them."
+    },
+    {
+      "id": "mysticsbiomes:strawberry_milk_bucket",
+      "title": "Milk a Strawberry Cow",
+      "desc": "Empty bucket on a pink cow. This is the only way to get strawberry milk, and it takes three buckets of it to make one strawberry cake - so breed a small herd first."
+    },
+    {
+      "id": "mysticsbiomes:strawberry_cake",
+      "title": "Bake a Strawberry Cake",
+      "desc": "Three strawberry milk, sugar, an egg, a strawberry and wheat. Place it and eat slices like a vanilla cake; a candle on top turns it into a birthday cake."
+    },
+    {
+      "id": "mysticsbiomes:vanilla_beans",
+      "title": "Harvest Vanilla Beans",
+      "desc": "Vanilla orchids climb trees in the Tropics. The beans are the tempt item for vanilla cows and one of the two things standing between you and a vanilla cake."
+    },
+    {
+      "id": "mysticsbiomes:vanilla_milk_bucket",
+      "title": "Milk a Vanilla Cow",
+      "desc": "Same trick, cream-coloured cow. Lead one home with vanilla beans first - they do not spawn near most starting biomes."
+    },
+    {
+      "id": "mysticsbiomes:vanilla_cake",
+      "title": "Bake a Vanilla Cake",
+      "desc": "Vanilla milk, sugar, egg, vanilla beans and wheat. The second of the three cakes the mod's own achievement asks you to collect."
+    },
+    {
+      "id": "mysticsbiomes:chocolate_milk_bucket",
+      "title": "Milk a Chocolate Cow",
+      "desc": "The brown cow of the set. Cocoa beans from the jungle keep it interested and let you breed more."
+    },
+    {
+      "id": "mysticsbiomes:chocolate_cake",
+      "title": "Bake a Chocolate Cake",
+      "desc": "Chocolate milk, sugar, egg, cocoa beans and wheat. Craft this alongside the strawberry and vanilla ones and you have the full neapolitan set."
+    },
+    {
+      "id": "mysticsbiomes:pink_egg",
+      "title": "Collect a Pink Egg",
+      "desc": "Rainbow chickens come in six colours and each lays an egg to match. Coop a pink one and let it lay - the coloured eggs are only useful for the frosted cakes."
+    },
+    {
+      "id": "mysticsbiomes:pink_frosted_cake",
+      "title": "Bake a Pink Frosted Cake",
+      "desc": "Ordinary milk, sugar and wheat around a pink egg. There are six frosted cakes, one per chicken colour, and breeding chickens of two colours is how you get the ones you are missing."
+    },
+    {
+      "id": "mysticsbiomes:cherries",
+      "title": "Pick Cherries",
+      "desc": "Cherry plants hang under black cherry trees in the blossom forests. Cherries are food on their own and the base of cherry pie."
+    },
+    {
+      "id": "mysticsbiomes:cherry_pie",
+      "title": "Bake a Cherry Pie",
+      "desc": "Cherries, sugar and an egg - the cheapest real meal in the mod and worth keeping a stack of once you have a cherry grove."
+    },
+    {
+      "id": "mysticsbiomes:peach",
+      "title": "Pick a Peach",
+      "desc": "Peach plants grow beneath peach trees the same way cherries do. Eat them raw or turn them into pie."
+    },
+    {
+      "id": "mysticsbiomes:peach_pie",
+      "title": "Bake a Peach Pie",
+      "desc": "Peach, sugar, egg. Pies stack, cakes do not, so these are what you actually carry."
+    },
+    {
+      "id": "mysticsbiomes:spring_bamboo",
+      "title": "Cut Spring Bamboo",
+      "desc": "The pink bamboo that fills the Bamboo Blossom Forest. It crafts into a full wood set and into sticks, and it is the only thing red pandas will follow - which you need if you want to breed them, or to get your stolen item back."
+    },
+    {
+      "id": "mysticsbiomes:lush_sand",
+      "title": "Dig Lush Sand",
+      "desc": "The pale sand of the Lush Oasis. Four of it makes lush sandstone, which cuts down into the usual stairs, slabs, walls and chiselled forms for building."
+    },
+    {
+      "id": "mysticsbiomes:maple_leaf_pile",
+      "title": "Shear a Maple Leaf Pile",
+      "desc": "Carpet-thin autumn cover that generates under the maple trees of the Autumnal Grove. Bring shears - break a pile with anything else and it drops nothing. Two maple leaves also craft into three piles if you would rather make your own, and smelting the leaves gives leaf litter, the darker fallen version."
+    }
+  ],
+  "collections": [
+    {
+      "name": "Wood Sets",
+      "desc": "Nine wood types - strawberry, black cherry, lavender, peach, maple, spring bamboo, sea foam, tropical and vanilla - each with the full vanilla range of planks, stairs, slabs, fences, gates, doors, trapdoors, buttons, pressure plates, signs, hanging signs and boats.",
+      "example_ids": [
+        "mysticsbiomes:strawberry_planks",
+        "mysticsbiomes:maple_stairs",
+        "mysticsbiomes:lavender_door",
+        "mysticsbiomes:tropical_boat"
+      ]
+    },
+    {
+      "name": "Wildflowers and Dyes",
+      "desc": "Aster, wildflower, sea thrift, saguaro blossom, desert lily, sea oats, beach and desert grasses, peony and hydrangea bushes. Most of them craft or smelt into a vanilla dye, and all of them go in flower pots.",
+      "example_ids": [
+        "mysticsbiomes:aster",
+        "mysticsbiomes:wildflower",
+        "mysticsbiomes:desert_lily",
+        "mysticsbiomes:saguaro_cactus"
+      ]
+    },
+    {
+      "name": "Lush Sandstone",
+      "desc": "Lush sand, sandstone, stairs, slabs, wall, cut, smooth and chiselled forms - a full building set for the Lush Oasis, all cut on a stonecutter.",
+      "example_ids": [
+        "mysticsbiomes:lush_sandstone",
+        "mysticsbiomes:cut_lush_sandstone",
+        "mysticsbiomes:smooth_lush_sandstone",
+        "mysticsbiomes:chiseled_lush_sandstone"
+      ]
+    },
+    {
+      "name": "Cake Variants",
+      "desc": "Three flavoured cakes and six frosted cakes, plus a with-candle placed variant of every one of them in all sixteen candle colours. Only the nine base cakes are craftable; the candle versions come from putting a candle on a placed cake.",
+      "example_ids": [
+        "mysticsbiomes:orange_frosted_cake",
+        "mysticsbiomes:yellow_frosted_cake",
+        "mysticsbiomes:lime_frosted_cake",
+        "mysticsbiomes:cyan_frosted_cake",
+        "mysticsbiomes:purple_frosted_cake"
+      ]
+    },
+    {
+      "name": "Autumn Leaves",
+      "desc": "Maple, orange maple and yellow maple leaves, each with a thin pile and a smelted leaf litter version for ground cover in the Autumnal Grove.",
+      "example_ids": [
+        "mysticsbiomes:orange_maple_leaf_pile",
+        "mysticsbiomes:yellow_maple_leaf_litter",
+        "mysticsbiomes:maple_leaf_litter"
+      ]
+    }
+  ],
+  "notes": "Order is taken from the mod's own hand-written advancement tree at data/mysticsbiomes/advancements/mysticsbiomes/. Exact shape, re-checked on verification: root is 'visit any of the seven biomes' (seven criteria, one per biome); obtain_sweet_strawberry, obtain_cherries, obtain_peach, mischievous_thief and craft_rainbow_cakes are all direct children of root, so the fruit advancements are siblings of the cake line rather than prerequisites for it; craft_neapolitan_cakes (strawberry + vanilla + chocolate) is the only grandchild, hanging off craft_rainbow_cakes (all six frosted). This chain deliberately inverts that last pair - it runs the three flavoured cakes first, then the coloured eggs and frosted cakes - because the advancement parenting is display order only and gates nothing: a frosted cake needs just an ordinary milk bucket, sugar, wheat and one coloured egg, so it is craftable at any point, while grouping each flavoured cake with the cow that supplies it keeps every step reachable from the ones before it. Every entry is dependency-valid in the order given. The seven biomes are strawberry_fields, bamboo_blossom_forest, lavender_meadow, autumnal_grove, lush_oasis, lagoon and tropics; there are no structures in the jar, so biome exploration is represented by the plant a player picks up there. Fruit items (strawberry, sweet_strawberry, cherries, peach, vanilla_beans) and the coloured eggs and flavoured milk buckets have NO data recipes - they come from the plant blocks and animals in code, so quest verbs must be harvest/milk/collect and never craft. Confirmed from class strings: StrawberryCow temptItems are STRAWBERRY and SWEET_STRAWBERRY, VanillaCow uses VANILLA_BEANS, RedPanda uses SPRING_BAMBOO and has a StealItemOffPlayerGoal (the THIEF! advancement), Caterpillar has EatGardenCropsGoal and CreateChrysalisGoal, Butterfly has PollinateGoal / PlantFlowerGoal / nest goals and is tempted by MILKWEED. DELIBERATELY EXCLUDED: mysticsbiomes:glass_jar (and the code-only glass_jar_monarch_butterfly / glass_jar_morpho_butterfly / glass_jar_luna_moth / glass_jar_caterpillar variants used to catch bugs) - the item is registered in MysticItems and has a block loot table but there is NO crafting recipe anywhere in the jar, so survival obtainability could not be verified. Also excluded: rainbow_egg, which appears in lang but has no recipe or loot source in this jar."
+}

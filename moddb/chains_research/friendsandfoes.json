@@ -1,0 +1,157 @@
+{
+ "mod": "friendsandfoes",
+ "verified_against": "friendsandfoes-forge-mc1.20.1-3.0.9.jar",
+ "item_count_in_jar": 42,
+ "chain": [
+  {
+   "id": "friendsandfoes:buttercup",
+   "title": "The Flower That Follows Cows",
+   "desc": "A small yellow flower that generates in flower forests; it crafts into yellow dye and is the only thing a Moobloom will eat."
+  },
+  {
+   "id": "kill:friendsandfoes:moobloom",
+   "title": "Bovine, Blooming",
+   "desc": "The Moobloom is a flower-covered cow of the flower forest, cherry grove, meadow and sunflower plains; shearing one gives buttercups, killing one gives leather and beef."
+  },
+  {
+   "id": "friendsandfoes:acacia_beehive",
+   "title": "Nine More Ways to Keep Bees",
+   "desc": "Every wood type finally gets its own beehive, built the vanilla way from planks and three honeycomb, and all of them count as beekeeper job sites."
+  },
+  {
+   "id": "kill:friendsandfoes:crab",
+   "title": "Sideways in the Mangroves",
+   "desc": "Crabs scuttle across beaches and mangrove swamps, burrow into mud and sand, and are tempted by kelp."
+  },
+  {
+   "id": "friendsandfoes:crab_claw",
+   "title": "The Pinch",
+   "desc": "The Crab's only drop; held in the offhand it lets you reach considerably further than your arms should allow."
+  },
+  {
+   "id": "friendsandfoes:crab_egg",
+   "title": "Clutch of the Shore",
+   "desc": "Crabs lay these in mud and sand; only a Silk Touch pickaxe recovers the block intact."
+  },
+  {
+   "id": "kill:friendsandfoes:glare",
+   "title": "Grumpy and Cute",
+   "desc": "Glares live in lush caves, sulk in dark places to warn you where mobs will spawn, and are tamed with glow berries."
+  },
+  {
+   "id": "kill:friendsandfoes:mauler",
+   "title": "It Bites",
+   "desc": "The Mauler is a burrowing armoured predator of deserts, badlands and savannas that ambushes chickens, rabbits, frogs, slimes and zombies from under the sand."
+  },
+  {
+   "id": "friendsandfoes:copper_button",
+   "title": "A Button With a Patina",
+   "desc": "Crafted from a single copper ingot, it stays pressed for longer the more oxidised it becomes - and like all copper it can be waxed."
+  },
+  {
+   "id": "friendsandfoes:exposed_lightning_rod",
+   "title": "Rust Runs Down the Rod",
+   "desc": "The vanilla lightning rod finally oxidises through four stages; each stage can be scraped back or waxed with honeycomb."
+  },
+  {
+   "id": "kill:friendsandfoes:copper_golem",
+   "title": "Off You Go",
+   "desc": "Built by placing a carved pumpkin on a copper block, the Copper Golem wanders about pressing copper buttons until it oxidises solid; broken up it returns copper ingots."
+  },
+  {
+   "id": "kill:friendsandfoes:tuff_golem",
+   "title": "The Statue That Holds Your Things",
+   "desc": "Found dormant in strongholds, the Tuff Golem wakes when you take the item it is holding, and it drops tuff."
+  },
+  {
+   "id": "kill:friendsandfoes:rascal",
+   "title": "Hide and Seek",
+   "desc": "A cloaked little pest that hides in mineshafts and demands you find it three times; win the game and it hands over an enchanted iron pickaxe or a pile of raw ore."
+  },
+  {
+   "id": "structure:friendsandfoes:illusioner_shack",
+   "title": "The Shack in the Pines",
+   "desc": "A taiga cabin whose attic and basement barrels hide enchanted bows and treasure, and which spawns the vanilla Illusioner that otherwise never appears in a world."
+  },
+  {
+   "id": "structure:friendsandfoes:illusioner_training_grounds",
+   "title": "Where Illagers Learn the Trick",
+   "desc": "The second taiga site, garrisoned by an Illusioner and a pair of Pillagers; clearing it is half of The Magicians."
+  },
+  {
+   "id": "structure:friendsandfoes:iceologer_cabin",
+   "title": "Cold Comfort",
+   "desc": "A snowy-biome cabin holding a bundle, blue ice and spruce, guarded by the Iceologer who lives there."
+  },
+  {
+   "id": "kill:friendsandfoes:iceologer",
+   "title": "I Was Here, I Lived, I..",
+   "desc": "The third illager magician - it drops ice blocks on your head from above, joins raids, and walks on powder snow."
+  },
+  {
+   "id": "friendsandfoes:totem_of_freezing",
+   "title": "Frozen at the Brink",
+   "desc": "The Iceologer's totem; like the Totem of Undying it saves you from death, and it freezes everything around you as it fires."
+  },
+  {
+   "id": "structure:friendsandfoes:citadel",
+   "title": "A Fortress? No, a Citadel!",
+   "desc": "The Nether's second great structure, generated at stronghold depth between y34 and y54, with barrels of diamonds and gold and blazes patrolling the halls."
+  },
+  {
+   "id": "kill:friendsandfoes:wildfire",
+   "title": "Drop It Like It's Hot",
+   "desc": "The Citadel's shielded blaze-king, immune to fall damage and hurt badly by freezing; it calls blazes and wither skeletons to its side."
+  },
+  {
+   "id": "friendsandfoes:wildfire_crown_fragment",
+   "title": "Shards of a Burning Crown",
+   "desc": "Three to five fall from every Wildfire, and they are the only reason to fight one."
+  },
+  {
+   "id": "friendsandfoes:wildfire_crown",
+   "title": "Who's Da New King of Nether?",
+   "desc": "Five fragments in a horseshoe make the crown; worn, it lets you shrug off a burst of damage the way the Wildfire's own shield does."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "friendsandfoes:acacia_beehive",
+   "members": [
+    "friendsandfoes:bamboo_beehive",
+    "friendsandfoes:birch_beehive",
+    "friendsandfoes:cherry_beehive",
+    "friendsandfoes:crimson_beehive",
+    "friendsandfoes:dark_oak_beehive",
+    "friendsandfoes:jungle_beehive",
+    "friendsandfoes:mangrove_beehive",
+    "friendsandfoes:spruce_beehive",
+    "friendsandfoes:warped_beehive"
+   ]
+  },
+  {
+   "hub": "friendsandfoes:copper_button",
+   "members": [
+    "friendsandfoes:exposed_copper_button",
+    "friendsandfoes:weathered_copper_button",
+    "friendsandfoes:oxidized_copper_button",
+    "friendsandfoes:waxed_copper_button",
+    "friendsandfoes:waxed_exposed_copper_button",
+    "friendsandfoes:waxed_weathered_copper_button",
+    "friendsandfoes:waxed_oxidized_copper_button"
+   ]
+  },
+  {
+   "hub": "friendsandfoes:exposed_lightning_rod",
+   "members": [
+    "friendsandfoes:weathered_lightning_rod",
+    "friendsandfoes:oxidized_lightning_rod",
+    "friendsandfoes:waxed_lightning_rod",
+    "friendsandfoes:waxed_exposed_lightning_rod",
+    "friendsandfoes:waxed_weathered_lightning_rod",
+    "friendsandfoes:waxed_oxidized_lightning_rod"
+   ]
+  }
+ ],
+ "notes": "Item set = 43 stems of assets/friendsandfoes/models/item/*.json intersected with item.friendsandfoes.* / block.friendsandfoes.* keys in assets/friendsandfoes/lang/en_us.json = 42; the single model with no lang key is copper_golem_head, an entity render part, and it is excluded. Every friendsandfoes: id above is a member of that 42. ENTITY VERIFICATION - 10 entity.friendsandfoes.* lang keys, and the 9 real ones each carry at least two independent proofs. Eight have a loot table under data/friendsandfoes/loot_tables/entities/ (copper_golem->copper_ingot, crab->crab_claw, glare->glow_berries, iceologer->totem_of_freezing+emerald+blue_ice, moobloom->leather+beef, rascal->empty pool, tuff_golem->tuff, wildfire->3-5 wildfire_crown_fragment) AND a spawn egg item. friendsandfoes:mauler is the one entity with NO loot table (it drops nothing), so it was verified three other ways instead: item.friendsandfoes.mauler_spawn_egg is a real item whose registry string sits in FriendsAndFoesItems.class; data/friendsandfoes/tags/worldgen/biome/has_desert_mauler.json, has_badlands_mauler.json and has_savanna_mauler.json plus data/friendsandfoes/tags/blocks/maulers_spawnable_on.json define where it spawns; and data/friendsandfoes/advancements/adventure/it_bites.json is a minecraft:player_killed_entity trigger on predicate type friendsandfoes:mauler, which the mod would not ship for an unspawnable mob. TRAP AVOIDED: entity.friendsandfoes.player_illusion ('Player Illusion') has NO loot table, NO spawn egg, NO tag membership and NO reference anywhere in data/ - it is the clone the Illusioner casts, and a kill: step on it would be uncompletable. It is excluded. Also note friendsandfoes:illusioner_spawn_egg is a friendsandfoes ITEM but the mob it spawns is minecraft:illusioner, not a friendsandfoes entity, so no kill: step names it; the mod's own kill_illusioner advancement targets minecraft:illusioner. Structures verified from data/friendsandfoes/worldgen/structure/ (exactly four files: citadel, iceologer_cabin, illusioner_shack, illusioner_training_grounds), each with a matching structure_set and a has_structure/* biome tag; citadel is #minecraft:is_nether at step 'strongholds', the other three are #friendsandfoes:collections/snowy or /taigas at surface_structures. Structure loot read from loot_tables/chests/{iceologer_cabin,illusioner_shack}.json and loot_tables/barrels/{citadel,iceologer_cabin,illusioner_shack_attic,illusioner_shack_basement}.json. Ordering follows the mod's own 15 advancements: husbandry (buttercup/beehive/moobloom/glare) and adventure (rascal, mauler, copper golem, the three magicians) sit at overworld depth, and nether/find_citadel -> nether/kill_wildfire -> nether/obtain_wildfire_crown is an explicit three-link parent chain, which is why the Nether block closes the spine. wildfire_crown recipe confirmed at data/friendsandfoes/recipes/wildfire_crown.json: five wildfire_crown_fragment in a 'ccc'/'c c' pattern. DROPPED, no obtainability proof: friendsandfoes:totem_of_illusion - it is a registered item (string in FriendsAndFoesItems.class, member of data/friendsandfoes/tags/items/totems.json and the curios charm tag) but it has NO recipe and appears in NO loot table in the jar; the only code that touches it is IllusionerEntityMixin and PlayerEntityMixin, so its drop is code-side and unverifiable from data. CONSENSUS CONFLICT (moddb): moddb lists only four friendsandfoes ids across 3 packs each - crab_claw (0.0), wildfire_crown (0.333), totem_of_freezing (0.667) and totem_of_illusion (1.0). Three of the four are on this spine and in the same relative order. The fourth, totem_of_illusion, is the one id I could not prove obtainable from the jar, so the recipe/loot graph was preferred and it is omitted. ALSO DROPPED: the ten *_spawn_egg items (copper_golem, crab, glare, iceologer, illusioner, mauler, moobloom, rascal, tuff_golem, wildfire) - all are real items but none has a recipe or a loot table, so they are creative-only and fail obtainability. No dimensions: data/friendsandfoes/dimension/ does not exist."
+}

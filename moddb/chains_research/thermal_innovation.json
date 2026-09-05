@@ -1,0 +1,42 @@
+{
+ "mod": "thermal_innovation",
+ "verified_against": "thermal_innovation-1.20.1-11.0.1.23.jar",
+ "item_count_in_jar": 7,
+ "registers_into": ["thermal"],
+ "parent_mod": "thermal",
+ "chain": [
+  {
+   "id": "thermal:flux_magnet",
+   "title": "Reach Out and Grab",
+   "desc": "An RF Coil, iron, lead and redstone. The Flux Magnet vacuums dropped items to you while it holds charge - mining and mob farming stop meaning walking in circles."
+  },
+  {
+   "id": "thermal:flux_saw",
+   "title": "The Powered Saw",
+   "desc": "A Saw Blade (iron and copper), an RF Coil, tin and gold gears. Chews through wood on Redstone Flux instead of durability - recharge it in a Flux Capacitor or energy cell and it never breaks."
+  },
+  {
+   "id": "thermal:fluid_reservoir",
+   "title": "Bucket, Evolved",
+   "desc": "A Redstone Servo, Cured Rubber, copper, glass and a bucket. Holds a deep tank of fluid, places and picks up sources, and auto-refills fluid-using gear you carry."
+  },
+  {
+   "id": "thermal:potion_infuser",
+   "title": "Potions on Tap",
+   "desc": "Silver gears, copper, rubber and a glass bottle. Fill it with many doses of one potion and drink from it repeatedly - brewing stops being a per-bottle chore."
+  },
+  {
+   "id": "thermal:potion_quiver",
+   "title": "The Alchemical Quiver",
+   "desc": "The Potion Infuser's stringed sibling. Stores arrows and a potion together, and every arrow you draw comes out tipped - lingering effects without crafting tipped arrows one by one."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "thermal:flux_magnet",
+   "members": ["thermal:flux_capacitor", "thermal:flux_drill", "thermal:flux_saw", "thermal:fluid_reservoir", "thermal:potion_infuser", "thermal:potion_quiver"],
+   "note": "The complete Innovation toolbelt - every item in the module. Flux Capacitor and Flux Drill are anchored in thermal.json's main chain; the capacitor is the pocket charger that keeps the rest of these running."
+  }
+ ],
+ "notes": "Innovation is a genuinely tiny module: exactly 7 items (fluid_reservoir, flux_capacitor, flux_drill, flux_magnet, flux_saw, potion_infuser, potion_quiver), verified as the complete set of recipes in data/thermal/recipes/ of this jar; item.thermal.flux_pump exists as a lang key in thermal_core but has no recipe or model here, so it is unimplemented and excluded. flux_capacitor and flux_drill are deliberately NOT chain steps because thermal.json's spine already quests both; the chain covers the remaining five in dependency order (magnet needs only an RF Coil plus base metals; saw needs the Saw Blade tool component from thermal_core; reservoir needs Redstone Servo and Cured Rubber; the potion pair needs silver gears). All ingredient claims read from the recipe JSONs."
+}

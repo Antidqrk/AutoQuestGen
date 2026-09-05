@@ -1,0 +1,672 @@
+{
+ "mod": "refinedstorage",
+ "ids_in_jar": 339,
+ "videos": [
+  {
+   "id": "0odVZlNaAuE",
+   "title": "Refined Storage Beginner's Guide",
+   "channel": "JaviHerobrine",
+   "views": 11708,
+   "duration": 755,
+   "chars": 11572
+  },
+  {
+   "id": "5hpmTMWAUIY",
+   "title": "How to: Refined Storage | Autocrafting(Minecraft 1.19.2)",
+   "channel": "Mondays",
+   "views": 168982,
+   "duration": 980,
+   "chars": 19132
+  },
+  {
+   "id": "tMOR_qacjTk",
+   "title": "Guide to Refined Storage | Modded Minecraft Tutorial",
+   "channel": "ChosenArchitect",
+   "views": 501632,
+   "duration": 2043,
+   "chars": 34933
+  },
+  {
+   "id": "dTfYl61L5QE",
+   "title": "The Ultimate Guide to Refined Storage",
+   "channel": "JaviHerobrine",
+   "views": 49977,
+   "duration": 2088,
+   "chars": 29492
+  },
+  {
+   "id": "4M6LMhyZu68",
+   "title": "The ULTIMATE ATM 10 Storage Progression Guide (From Early Game to Late Game)",
+   "channel": "Big Jim",
+   "views": 399810,
+   "duration": 2807,
+   "chars": 62321
+  }
+ ],
+ "not_transcribed": [],
+ "items": {
+  "refinedstorage:upgrade": {
+   "mentions": 132,
+   "videos": 5,
+   "first_at": 0.1203,
+   "praise": 31,
+   "warn": 7,
+   "early_cue": 3,
+   "late_cue": 3
+  },
+  "refinedstorage:controller": {
+   "mentions": 64,
+   "videos": 5,
+   "first_at": 0.1354,
+   "praise": 28,
+   "warn": 3,
+   "early_cue": 8,
+   "late_cue": 1
+  },
+  "refinedstorage:interface": {
+   "mentions": 20,
+   "videos": 5,
+   "first_at": 0.3688,
+   "praise": 9,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:cable": {
+   "mentions": 29,
+   "videos": 4,
+   "first_at": 0.2186,
+   "praise": 20,
+   "warn": 2,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "refinedstorage:filter": {
+   "mentions": 25,
+   "videos": 4,
+   "first_at": 0.2779,
+   "praise": 12,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:storage_monitor": {
+   "mentions": 23,
+   "videos": 4,
+   "first_at": 0.2782,
+   "praise": 8,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:external_storage": {
+   "mentions": 17,
+   "videos": 4,
+   "first_at": 0.5821,
+   "praise": 3,
+   "warn": 2,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "refinedstorage:speed_upgrade": {
+   "mentions": 13,
+   "videos": 4,
+   "first_at": 0.4743,
+   "praise": 4,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:stack_upgrade": {
+   "mentions": 10,
+   "videos": 4,
+   "first_at": 0.4707,
+   "praise": 4,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:crafting_grid": {
+   "mentions": 6,
+   "videos": 4,
+   "first_at": 0.4617,
+   "praise": 4,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:pattern": {
+   "mentions": 85,
+   "videos": 3,
+   "first_at": 0.3834,
+   "praise": 29,
+   "warn": 1,
+   "early_cue": 4,
+   "late_cue": 3
+  },
+  "refinedstorage:crafter": {
+   "mentions": 51,
+   "videos": 3,
+   "first_at": 0.3757,
+   "praise": 15,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 3
+  },
+  "refinedstorage:exporter": {
+   "mentions": 32,
+   "videos": 3,
+   "first_at": 0.5112,
+   "praise": 13,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "refinedstorage:importer": {
+   "mentions": 30,
+   "videos": 3,
+   "first_at": 0.3711,
+   "praise": 11,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 2
+  },
+  "refinedstorage:pattern_grid": {
+   "mentions": 13,
+   "videos": 3,
+   "first_at": 0.3834,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:constructor": {
+   "mentions": 15,
+   "videos": 2,
+   "first_at": 0.3145,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:destructor": {
+   "mentions": 14,
+   "videos": 2,
+   "first_at": 0.6159,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:disk_drive": {
+   "mentions": 12,
+   "videos": 2,
+   "first_at": 0.4429,
+   "praise": 8,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:crafting_monitor": {
+   "mentions": 9,
+   "videos": 2,
+   "first_at": 0.3353,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:regulator_upgrade": {
+   "mentions": 8,
+   "videos": 2,
+   "first_at": 0.8117,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:network_card": {
+   "mentions": 7,
+   "videos": 2,
+   "first_at": 0.7103,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:network_transmitter": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.7086,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:advanced_processor": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.0896,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:fluid_interface": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.6177,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:fluid_grid": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.3866,
+   "praise": 3,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:network_receiver": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.7089,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:wireless_grid": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.734,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "refinedstorage:64k_storage_disk": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.415,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:4k_storage_disk": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.4151,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:disk_manipulator": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.8113,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:portable_grid": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.5519,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:64k_storage_block": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.3376,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:4k_storage_block": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.3377,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:quartz_enriched_iron": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.1408,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:security_card": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.9269,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:machine_casing": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.0157,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:wrench": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.2147,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:detector": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.4588,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:1k_storage_block": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.8117,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:4k_storage_part": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.0898,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:construction_core": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0166,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:silicon": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0626,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:range_upgrade": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5799,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:processor_binding": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0509,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:crafting_upgrade": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8317,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:security_manager": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.9239,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:improved_processor": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2128,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:creative_controller": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0902,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:wireless_crafting_monitor": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6007,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:wireless_transmitter": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.574,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:silk_touch_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3659,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:1k_storage_part": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0955,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:16k_storage_part": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0921,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:64k_storage_part": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0898,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "refinedstorage:storage_housing": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8745,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "Controller first, always. It is described as the thing that both defines the network and powers it.",
+    "ids": [
+     "refinedstorage:controller",
+     "refinedstorage:cable"
+    ]
+   },
+   {
+    "note": "A nether trip is an unavoidable early step: nether quartz smelts into silicon, and silicon plus iron becomes the quartz enriched iron that every recipe needs.",
+    "ids": [
+     "refinedstorage:silicon",
+     "refinedstorage:quartz_enriched_iron",
+     "refinedstorage:basic_processor"
+    ]
+   },
+   {
+    "note": "Then disk drive plus a disk for capacity, then a grid for access. Guides stress the grid is the human interface, distinct from storage.",
+    "ids": [
+     "refinedstorage:disk_drive",
+     "refinedstorage:1k_storage_disk",
+     "refinedstorage:grid"
+    ]
+   },
+   {
+    "note": "IO parts are taught as one group - guides literally call it 'Refined Storage's I/O'.",
+    "ids": [
+     "refinedstorage:importer",
+     "refinedstorage:exporter",
+     "refinedstorage:constructor",
+     "refinedstorage:destructor",
+     "refinedstorage:external_storage"
+    ]
+   },
+   {
+    "note": "Autocrafting last: pattern grid to write patterns, crafter to execute them.",
+    "ids": [
+     "refinedstorage:pattern_grid",
+     "refinedstorage:crafter",
+     "refinedstorage:crafter_manager",
+     "refinedstorage:crafting_grid"
+    ]
+   }
+  ],
+  "tiers": [
+   {
+    "note": "Processor ladder basic -> improved -> advanced, each with a raw form that must be smelted. This is RS's equivalent of AE2's processor line.",
+    "ids": [
+     "refinedstorage:raw_basic_processor",
+     "refinedstorage:basic_processor",
+     "refinedstorage:raw_improved_processor",
+     "refinedstorage:improved_processor",
+     "refinedstorage:raw_advanced_processor",
+     "refinedstorage:advanced_processor"
+    ]
+   },
+   {
+    "note": "Storage disk ladder 1k -> 4k -> 16k -> 64k, with a parallel fluid line.",
+    "ids": [
+     "refinedstorage:1k_storage_disk",
+     "refinedstorage:4k_storage_disk",
+     "refinedstorage:16k_storage_disk",
+     "refinedstorage:64k_storage_disk",
+     "refinedstorage:64k_fluid_storage_disk",
+     "refinedstorage:256k_fluid_storage_disk",
+     "refinedstorage:1024k_fluid_storage_disk"
+    ]
+   },
+   {
+    "note": "Grid ladder by function rather than power: grid -> crafting grid -> pattern grid -> fluid grid.",
+    "ids": [
+     "refinedstorage:grid",
+     "refinedstorage:crafting_grid",
+     "refinedstorage:pattern_grid",
+     "refinedstorage:fluid_grid"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "Wireless is a three-item gate, not one block: transmitter plus receiver plus a network card to pair them.",
+    "ids": [
+     "refinedstorage:network_transmitter",
+     "refinedstorage:network_receiver",
+     "refinedstorage:network_card",
+     "refinedstorage:wireless_transmitter"
+    ]
+   },
+   {
+    "note": "Constructor and destructor need cores to do anything, which is an easily-missed second craft.",
+    "ids": [
+     "refinedstorage:construction_core",
+     "refinedstorage:destruction_core",
+     "refinedstorage:constructor",
+     "refinedstorage:destructor"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "Guides warn that the wireless crafting grid is an ADD-ON, not base Refined Storage, so players hunt for a recipe that does not exist in the base mod.",
+    "ids": [
+     "refinedstorage:wireless_grid",
+     "refinedstorage:crafting_grid"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "RS is pitched explicitly as the no-channel alternative to AE2 - the selling point is that the network just works without an infrastructure puzzle.",
+    "ids": [
+     "refinedstorage:controller",
+     "refinedstorage:grid",
+     "refinedstorage:disk_drive"
+    ]
+   },
+   {
+    "note": "Autocrafting via crafter is the payoff every RS guide builds toward.",
+    "ids": [
+     "refinedstorage:crafter",
+     "refinedstorage:pattern_grid",
+     "refinedstorage:crafter_manager"
+    ]
+   }
+  ]
+ },
+ "transcript_profile": "whisper small, vad, beam 1, WITH the legacy Minecraft-vocabulary initial_prompt that was later removed from ytgrab as biasing. Counts may be slightly inflated toward mod-name-like words; human_notes quotes were read directly and are unaffected."
+}

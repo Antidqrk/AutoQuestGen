@@ -1,0 +1,59 @@
+{
+ "mod": "sliceanddice",
+ "verified_against": "sliceanddice-forge-3.6.0.jar",
+ "item_count_in_jar": 3,
+ "chain": [
+  {
+   "id": "create:andesite_casing",
+   "title": "Case Some Andesite",
+   "desc": "The body of the Slicer, and the point at which this mod becomes usable at all - none of it works without Create running first. One casing per Slicer."
+  },
+  {
+   "id": "create:turntable",
+   "title": "Build a Turntable",
+   "desc": "The last part the Slicer needs, and the only one you are unlikely to already have lying around. One per Slicer - the third ingredient is a plain cogwheel, which by this point costs you nothing."
+  },
+  {
+   "id": "sliceanddice:slicer",
+   "title": "Assemble a Slicer",
+   "desc": "Right click it with a knife or any axe and it will chop that item's cutting-board recipes automatically, on a depot or a belt. This is the whole point of the mod - build one early and stop cutting by hand."
+  },
+  {
+   "id": "minecraft:iron_axe",
+   "title": "Feed the Slicer a Blade",
+   "desc": "A placed Slicer does nothing until you right click a tool into it - any axe works, and a Farmer's Delight knife works too. It grinds down that tool's durability as it cuts, so expect to replace the blade rather than fit it once."
+  },
+  {
+   "id": "create:fluid_pipe",
+   "title": "Run a Fluid Pipe",
+   "desc": "Sprinklers only work bolted underneath a pipe, so plumbing comes before watering. One pipe is also part of the Sprinkler recipe itself."
+  },
+  {
+   "id": "sliceanddice:sprinkler",
+   "title": "Mount a Sprinkler",
+   "desc": "Hang it below a fluid pipe and it mists whatever you pump through it over the crops beneath. The recipe gives three at a time, which is roughly what one field needs."
+  },
+  {
+   "id": "create:tree_fertilizer",
+   "title": "Craft Tree Fertilizer",
+   "desc": "Not for saplings here - mixing it with water in a Basin is the universal way to make Liquid Fertilizer. Each one yields 500mb, so make them in batches."
+  },
+  {
+   "id": "sliceanddice:fertilizer_bucket",
+   "title": "Scoop Up Liquid Fertilizer",
+   "desc": "There is no recipe for this - fill an empty bucket straight from the Basin or a tank of fertilizer. It is only for hauling the fluid to where it is needed or priming a tank; piped fertilizer is what actually runs the farm."
+  },
+  {
+   "id": "farmersdelight:organic_compost",
+   "title": "Pile Up Organic Compost",
+   "desc": "A second, cheaper route to Liquid Fertilizer if you have Farmer's Delight - mix one with water for 250mb. It is also the base for Rich Soil below."
+  },
+  {
+   "id": "farmersdelight:rich_soil",
+   "title": "Fill Compost into Rich Soil",
+   "desc": "Slice and Dice adds the Create Spout recipe that turns compost into Rich Soil with 500mb of Liquid Fertilizer, so your soil upgrade becomes automatable instead of hand-crafted."
+  }
+ ],
+ "collections": [],
+ "notes": "A tiny Create addon: it registers only THREE items - sliceanddice:slicer, sliceanddice:sprinkler and sliceanddice:fertilizer_bucket - plus the sliceanddice:fertilizer fluid and two blocks with no item form (the fluid block and sliceanddice:wet_air, a technical block the Sprinkler places; never write a quest for wet_air). Because of that the chain deliberately includes six foreign ids, every one of which was read out of THIS jar's own recipe files (check_chains.py warns on all six; the warning is correct and expected, not a defect to suppress - do NOT add a registers_into field to silence it, because this mod does not register into those namespaces): create:cogwheel, create:andesite_casing and create:turntable from data/sliceanddice/recipes/slicer.json; create:fluid_pipe (plus iron bars and a forge:plates/copper tag) from sprinkler.json; create:tree_fertilizer from recipes/mixing/fertilizer/from_tree_fertilizer.json; farmersdelight:organic_compost and farmersdelight:rich_soil from the mixing and filling recipes. If the generator already emits Create's own chain, drop the create: steps here rather than duplicating them. CONDITIONAL RECIPES: the organic_compost and rich_soil steps carry forge:mod_loaded conditions on farmersdelight, and there is a third fertilizer route (thermal:phytogro + 1000mb water) gated on thermal_foundation - omit those steps in packs without those mods. THE SLICER'S REAL VALUE IS NOT IN THE JAR: RecipeInjection and FarmersDelightCompat convert Farmer's Delight cutting-board recipes into automatable Create processing recipes at load time, and optionally convert cooking-pot recipes into heated Basin recipes (basin_cooking.enabled, heat_condition defaults to HEATED). So the Slicer's recipe list is generated at runtime and a data scan of this jar will find none of it. The Slicer needs a tool inserted by right-clicking - anything in the sliceanddice:allowed_tools tag, which is #forge:tools/axes plus #farmersdelight:tools/knives (the knife tag is marked required:false, so the tag resolves fine without Farmer's Delight) - and consumes its durability unless slicer.consume_tool_durability is off. That tool step is IN the chain as minecraft:iron_axe: a Slicer without one is inert, so it is a real prerequisite rather than a flavour note, and an axe is the version of it that needs no other mod. sliceanddice:fertilizer_bucket has NO recipe anywhere in the jar - it is the Forge bucket auto-registered for the fluid, obtained by filling an empty bucket, so never give it a craft verb. It also cares which way it is rotated (slicer.ignore_rotation) and can work over a Basin. Sprinkler fluid behaviour is tag-driven: sliceanddice:fertilizer grows crops, minecraft:water (tag moisturizing) hydrates farmland, minecraft:lava (tag burning) sets things on fire, and range/capacity/usage are in the sprinkler.* config block. The mod also patches Create's Mechanical Harvester to cut with a knife (harvester.uses_knife, default true), which is a behaviour change with no item to quest for. The five recipe advancements in the jar are auto-generated unlocks and encode no authored progression."
+}

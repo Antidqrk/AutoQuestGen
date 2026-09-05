@@ -1,0 +1,195 @@
+{
+ "mod": "architects_palette",
+ "verified_against": "Architects-Palette-1.20.1-1.3.6.1.jar",
+ "item_count_in_jar": 513,
+ "chain": [
+  {
+   "id": "architects_palette:sunmetal_blend",
+   "title": "Gold Dust in Soul Sand",
+   "desc": "Two gold nuggets and two soul sand, shapeless, give four Sunmetal Blend. Smelting or blasting a blend gives a Sunmetal Brick, and the blend-then-fire pattern repeats for nether brass and wardstone."
+  },
+  {
+   "id": "architects_palette:sunmetal_block",
+   "title": "The First Nether Metal",
+   "desc": "Four sunmetal bricks in a square. Sixteen Sunmetal Bars come off a single brick, and the block stonecuts into pillars and nubs."
+  },
+  {
+   "id": "architects_palette:nether_brass_blend",
+   "title": "Copper, Iron and Soul Sand",
+   "desc": "A copper ingot, iron nuggets and soul sand, shapeless, for four blend. Fired in a furnace or blast furnace it becomes a Nether Brass Ingot - and Nether Brass burns with a green flame when lit."
+  },
+  {
+   "id": "architects_palette:nether_brass_ingot",
+   "title": "Green-Burning Metal",
+   "desc": "Smelt or blast the blend. Nine nuggets rebuild an ingot, four ingots make a block, and the block smelts again into Smooth Nether Brass."
+  },
+  {
+   "id": "architects_palette:ancient_plating",
+   "title": "Sixty-Four From One Scrap",
+   "desc": "Nether brass ingots and nuggets around a single netherite scrap yield sixty-four Ancient Plating - by far the best return on a scrap anywhere in the mod."
+  },
+  {
+   "id": "architects_palette:wardstone_blend",
+   "title": "Lapis and Nether Wart",
+   "desc": "Lapis and nether wart, shapeless, give four blend; smelting gives a Wardstone Brick and four of those make the block. Wardstone deflects projectiles that hit it."
+  },
+  {
+   "id": "architects_palette:warpstone",
+   "title": "Throw Clay Through a Portal",
+   "desc": "The mod's headline mechanic and not a crafting recipe at all: drop a block of clay through a nether portal and it comes out the other side as Warpstone. The mod calls this Warping, and the tooltip tells you which portal each recipe wants."
+  },
+  {
+   "id": "architects_palette:moonshale",
+   "title": "Stone That Went Through",
+   "desc": "Warp plain stone for Moonshale, or smelt Craterstone. Stone bricks warp straight into Moonshale Bricks, and a moonshale brick slab crafts into Moonshale Flagstone."
+  },
+  {
+   "id": "architects_palette:onyx",
+   "title": "Granite, Warped",
+   "desc": "Granite thrown through a portal returns as Onyx. Diorite gives Nebulite, andesite gives Esoterrack and cobblestone gives Craterstone - four vanilla stones, four warped answers."
+  },
+  {
+   "id": "architects_palette:abyssaline",
+   "title": "Obsidian and Prismarine",
+   "desc": "Four obsidian and four prismarine shards around a gap give twelve Abyssaline. It is the mod's chargeable stone: put a Heart of the Sea into a chiseled abyssaline block and every connected abyssaline lights up."
+  },
+  {
+   "id": "architects_palette:hadaline",
+   "title": "The Warped Half of the Sea",
+   "desc": "Warp any abyssaline block and you get its Hadaline counterpart - bricks, tiles, plating, pillar and lamp all convert one for one, which is twenty-one of the mod's warping recipes on their own."
+  },
+  {
+   "id": "architects_palette:twisted_log",
+   "title": "Warp a Log, Grow a Tree",
+   "desc": "Warping any vanilla log gives a Twisted Log, and warping a sapling gives a Twisted Sapling that grows into the mod's only tree. Planks, boards, a door, a trapdoor and a railing all follow from it."
+  },
+  {
+   "id": "architects_palette:unobtanium",
+   "title": "The Joke With a Recipe",
+   "desc": "Warp a netherite ingot. Five Unobtanium craft into a block and the block gives five back, so the material is genuinely conserved and genuinely useless - which is the point."
+  },
+  {
+   "id": "architects_palette:entwine_rod",
+   "title": "Ender Pearls Into Rods",
+   "desc": "An ender pearl between iron nuggets gives four Entwine Rods. Four rods make an Entwine block, and one rod alone gives sixteen Entwine Bars."
+  },
+  {
+   "id": "architects_palette:oracle_jelly",
+   "title": "Amethyst, Chorus and Sugar",
+   "desc": "Shapeless, for four Oracle Jelly. Eight jelly make an Oracle Block, and one jelly with an end rod makes the Oracle Lamp - the End's answer to the Nether's sunmetal line."
+  },
+  {
+   "id": "architects_palette:osseous_bricks",
+   "title": "Bones, Bricked",
+   "desc": "Four bone blocks in a square, or one on a stonecutter. Cutting an osseous brick slab gives an Osseous Skull, and a torch turns that skull into a lit one."
+  },
+  {
+   "id": "architects_palette:withered_bone",
+   "title": "What the Wither Skeletons Drop",
+   "desc": "Withered Bones come from wither skeletons through the mod's own loot modifier - there is no recipe for the bone itself. Three make a block, the block bricks up into Withered Osseous Bricks, and a soul torch lights the withered skull."
+  },
+  {
+   "id": "architects_palette:heliodor_rod",
+   "title": "Crystals in the Ground",
+   "desc": "Heliodor, Ekanite and Monazite Rods generate as crystal clusters in worldgen and are mined with a pickaxe. They have no recipes at all and are the only things in the mod you must go and find."
+  },
+  {
+   "id": "architects_palette:grinning_acacia_totem",
+   "title": "Carve a Face",
+   "desc": "A stripped acacia log between sticks gives two Grinning Acacia Totems. Use an AXE on a placed totem to cycle its expression through blank, placid and shocked - four faces, one recipe."
+  },
+  {
+   "id": "architects_palette:acacia_totem_wing",
+   "title": "Wings for the Pole",
+   "desc": "Acacia leaves and a wooden rod give two Totem Wings, the sideways piece that turns a stack of totems into a proper carved pole."
+  },
+  {
+   "id": "architects_palette:copper_nub",
+   "title": "Two Nubs Per Ingot",
+   "desc": "Stonecutting a copper block or cut copper gives two Copper Nubs. Nubs exist for eighteen materials, and the copper ones oxidise through exposed, weathered and oxidized on their own - which is why those three have no recipe."
+  },
+  {
+   "id": "architects_palette:sheet_metal_block",
+   "title": "Thirty-Six From an Iron Block",
+   "desc": "The most generous stonecut in the mod: one iron block leaves the stonecutter as thirty-six Sheet Metal, or four per plain ingot."
+  },
+  {
+   "id": "architects_palette:algal_blend",
+   "title": "Kelp and Clay",
+   "desc": "Kelp and a clay ball, shapeless, for two blend; smelting gives an Algal Brick. One brick with glowstone dust makes the Algal Lantern, and with a glass pane too, the caged version."
+  },
+  {
+   "id": "architects_palette:bread_block",
+   "title": "Nine Loaves of Hay",
+   "desc": "A hay block gives nine Bread Blocks. Hit a placed one with an axe and it becomes a Crustless Bread Block, which is the only way to get one."
+  },
+  {
+   "id": "architects_palette:hazard_block",
+   "title": "Stripes That Mean Stop",
+   "desc": "Black and yellow concrete crossed give four Hazard Blocks; the Hazard Sign is iron and nuggets, and Pipe and Tread Plate come off the Plating Block."
+  },
+  {
+   "id": "architects_palette:coarse_snow",
+   "title": "Gravel in the Drift",
+   "desc": "Gravel and a snow block, shapeless, give four Coarse Snow - the trodden, dirty snow vanilla never added."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "architects_palette:oak_boards",
+   "members": [
+    "architects_palette:spruce_boards",
+    "architects_palette:birch_boards",
+    "architects_palette:jungle_boards",
+    "architects_palette:acacia_boards",
+    "architects_palette:dark_oak_boards",
+    "architects_palette:mangrove_boards",
+    "architects_palette:crimson_boards",
+    "architects_palette:warped_boards",
+    "architects_palette:twisted_boards",
+    "architects_palette:oak_railing",
+    "architects_palette:spruce_railing",
+    "architects_palette:birch_railing",
+    "architects_palette:jungle_railing",
+    "architects_palette:acacia_railing"
+   ]
+  },
+  {
+   "hub": "architects_palette:iron_ore_bricks",
+   "members": [
+    "architects_palette:gold_ore_bricks",
+    "architects_palette:coal_ore_bricks",
+    "architects_palette:lapis_ore_bricks",
+    "architects_palette:redstone_ore_bricks",
+    "architects_palette:emerald_ore_bricks",
+    "architects_palette:diamond_ore_bricks",
+    "architects_palette:cracked_iron_ore_bricks",
+    "architects_palette:cracked_gold_ore_bricks",
+    "architects_palette:cracked_coal_ore_bricks",
+    "architects_palette:cracked_lapis_ore_bricks",
+    "architects_palette:cracked_redstone_ore_bricks",
+    "architects_palette:cracked_emerald_ore_bricks",
+    "architects_palette:cracked_diamond_ore_bricks"
+   ]
+  },
+  {
+   "hub": "architects_palette:iron_nub",
+   "members": [
+    "architects_palette:gold_nub",
+    "architects_palette:diamond_nub",
+    "architects_palette:emerald_nub",
+    "architects_palette:netherite_nub",
+    "architects_palette:stone_nub",
+    "architects_palette:smooth_stone_nub",
+    "architects_palette:andesite_nub",
+    "architects_palette:diorite_nub",
+    "architects_palette:granite_nub",
+    "architects_palette:deepslate_nub",
+    "architects_palette:blackstone_nub",
+    "architects_palette:sandstone_nub",
+    "architects_palette:bone_nub"
+   ]
+  }
+ ],
+ "notes": "513 IDS, 224 OF THEM NON-VARIANT, AND ONE GENUINELY UNUSUAL MECHANIC THAT SHAPES THE WHOLE CHAIN. Verified against Architects-Palette-1.20.1-1.3.6.1.jar (Modrinth version 1.3.6.1, loaders=[forge], game_versions=[1.20.1]). ID DETECTION AND WIDENING: 514 item models, 503 blockstates, 515 lang block./item. keys; models INTERSECT lang = 513, the count used. WIDENING REJECTED for the three blockstate-only stems - nether_brass_fire (the green flame the mod's own tooltip describes, a fire block), nether_brass_wall_torch (the wall state of architects_palette:nether_brass_torch) and potted_twisted_sapling (a flower-pot state). NARROWED for the one model-only stem, architects_palette:sunmetal, which has an item model and texture but no lang key, no recipe result and no loot table - the registered ids are sunmetal_brick, sunmetal_block, sunmetal_bars, sunmetal_pillar and sunmetal_nub. THE MECHANIC: architects_palette:warping is a custom recipe type with 21 recipes in data/architects_palette/recipes/warping/, and it is NOT a workbench operation. The mod's own strings give it away - architects_palette.info.warping_toss_description reads 'Toss into a portal that leads to %s', with dimension names supplied for the Overworld, the Nether, the End and (if installed) the Aether, and the advancement find_warpstone says 'Throw a Clay block through a Nether portal and find something else on the other side'. Warping is the sole route to warpstone, craterstone, esoterrack, nebulite, onyx, moonstone, unobtanium, entrails, the entire hadaline family and the twisted tree, so it sits in the middle of the chain and everything End-flavoured sits behind it. OTHER MECHANICS, all from lang/en_us.json: celestial stones (sunstone and moonstone) change state and light level with the time of day in every dimension; cage lanterns toggle on redstone and can have their sensitivity inverted by right-click; chargeable abyssaline and hadaline take a Heart of the Sea in their chiseled brick and light every connected block; flint blocks add 25% fall damage to mobs standing on them; heavy bricks connect in 2x2 to form oversized vanilla bricks; wardstone deflects projectiles; totems cycle their expression when hit with an axe. NON-RECIPE OBTAINABLE, ALL CHECKED: architects_palette:heliodor_rod, ekanite_rod and monazite_rod have loot tables and worldgen configured features (heliodor_cluster, ekanite_cluster, monazite_cluster and hanging_monazite_cluster) and are mined, never crafted. blank_acacia_totem, placid_acacia_totem and shocked_acacia_totem have loot tables and sit in minecraft:mineable/axe with no recipe - they are the axe-carved faces of grinning_acacia_totem, exactly as the totem_carving advancement describes. crustless_bread_block is the same story for bread_block. exposed_copper_nub, weathered_copper_nub and oxidized_copper_nub have loot tables and only waxed_* recipes - they arrive by natural oxidation. withered_bone comes from data/architects_palette/loot_modifiers/wither_skeleton_bones.json. stripped_twisted_log comes from an axe. Villager trades supply entrails, cod_log, salmon_log, pipe, plating_block, spool, sunstone and moonstone according to the mod's advancement text, so several mid-chain items have a second, trade-based route. DROPPED AS UNOBTAINABLE - THREE ORPHAN REGISTRATIONS: architects_palette:abyssaline_brick_stairs, architects_palette:abyssaline_brick_wall and architects_palette:abyssaline_tile_stairs each have an item model AND a lang key, so they pass the naive membership test, but a full scan of data/ found ZERO references to them anywhere - no recipe, no loot table, no tag, no advancement. They cannot be crafted and cannot even be broken and picked up. Their hadaline counterparts and every other abyssaline shape are fine; these three specifically are not. CONFIG GATE - THIS IS THE BIG ONE FOR THIS MOD: 90 of the 900 recipe files are forge:conditional wrappers guarding a single condition type, architects_palette:enable_vertical_slabs, and the jar carries the message architects_palette.misc.vertical_config = 'Vertical Slabs are Disabled in the Config' alongside architects_palette.misc.no_quark = 'Requires the Quark Mod installed'. Every *_vertical_slab id in this mod is therefore doubly gated - on the mod's own config flag and on Quark being present - and none is used in the chain or the wheels. Separately, architects_palette:myonite_vertical_slab has a loot table but no recipe file at all, so it is missing even when the flag is on. DISTINCT RECIPE SHAPES: 60 by pattern; 284 of the 900 files are one- or two-for-one stonecutting and another 200-odd are the slab, stairs and wall triplets. MODDB: no consensus signal - moddb.json has no architects_palette key - so ordering is the recipe graph, with the warping mechanic used as the mid-chain hinge. DROPS BY THE DESIRABILITY RULE (present, obtainable, deliberately unquested): 135 _slab, 63 _stairs, 57 _wall, 22 chiseled_* and every _vertical_slab."
+}

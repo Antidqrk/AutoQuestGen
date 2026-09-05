@@ -1,0 +1,123 @@
+{
+ "mod": "create_sa",
+ "ids_in_jar": 80,
+ "videos": [
+  {
+   "id": "uR20-AXihN8",
+   "title": "Create Stuff & Additions Brass Drone Guide | All Modules and How They Work!",
+   "channel": "CtrlAltDyleted",
+   "views": 19256,
+   "duration": 323,
+   "chars": 4493,
+   "src": "vetted_search"
+  }
+ ],
+ "items": {
+  "create_sa:copper_magnet": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2633,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "ids": [
+     "create_sa:brass_drone_item",
+     "create_sa:drone_controller"
+    ],
+    "note": "COVERAGE CAVEAT: the only dedicated guide reached for this mod covers the brass drone branch only. The jetpack/exoskeleton, armour and tool branches of Create Stuff & Additions are NOT covered by this source and should not be ordered from this file. Within the drone branch: the drone and its controller are built together and are useless apart - the drone cannot be commanded without the controller in hand.",
+    "video": "uR20-AXihN8"
+   },
+   {
+    "ids": [
+     "create_sa:copper_magnet"
+    ],
+    "note": "First module taught, and the most generally useful - the copper magnet. Notably it is a working item on its own, held in hand, with a 4-block item pickup radius, before it is ever attached to a drone.",
+    "video": "uR20-AXihN8"
+   },
+   {
+    "ids": [
+     "create_sa:brass_drill_head",
+     "create_sa:fan_component",
+     "create_sa:vault_component"
+    ],
+    "note": "Remaining drone modules in the order the guide teaches them: drill head for remote mining, fan component for pushing mobs away, vault component for storage. Modules are swapped by right-clicking the grounded drone, and removed by looking down and left-clicking.",
+    "video": "uR20-AXihN8"
+   }
+  ],
+  "gates": [
+   {
+    "ids": [
+     "create_sa:brass_drone_item"
+    ],
+    "note": "GATE: the brass drone is a MECHANICAL CRAFTER recipe, not a crafting table recipe. A player without a mechanical crafter array cannot make one, which places the whole drone branch after Create's brass age.",
+    "video": "uR20-AXihN8"
+   },
+   {
+    "ids": [
+     "create_sa:drone_controller",
+     "create_sa:brass_drone_item"
+    ],
+    "note": "GATE on use: the drone must first be placed on the ground and right-clicked to activate before it will fly and follow you. It is then steered with the drone controller held in hand.",
+    "video": "uR20-AXihN8"
+   },
+   {
+    "ids": [
+     "create_sa:vault_component"
+    ],
+    "note": "The vault component is crafted from a Create item vault, and it raises the drone's carrying capacity from 3 slots to 9. Breaking the drone drops everything it is carrying.",
+    "video": "uR20-AXihN8"
+   }
+  ],
+  "traps": [
+   {
+    "ids": [
+     "create_sa:copper_magnet",
+     "create_sa:brass_drone_item"
+    ],
+    "note": "SAFETY TRAP: the magnet-equipped drone can pick the PLAYER up and fly them around, but switching the controller off mid-air drops you. The guide explicitly warns about fall damage - a genuine death trap for a player experimenting with it.",
+    "video": "uR20-AXihN8"
+   },
+   {
+    "ids": [
+     "create_sa:fan_component"
+    ],
+    "note": "Minor trap: the drone can catch fire while using the fan component near lava. Not fatal to the drone in the demo, but worth knowing before flying one over a lava lake.",
+    "video": "uR20-AXihN8"
+   }
+  ],
+  "signature": [
+   {
+    "ids": [
+     "create_sa:brass_drone_item",
+     "create_sa:drone_controller",
+     "create_sa:copper_magnet",
+     "create_sa:brass_drill_head",
+     "create_sa:fan_component",
+     "create_sa:vault_component"
+    ],
+    "note": "The modular brass drone is the standout system in this mod - a remote-controlled flying helper whose behaviour is entirely defined by which module you socket into it. The whole dedicated guide exists for this one item family, which is itself the importance signal.",
+    "video": "uR20-AXihN8"
+   },
+   {
+    "ids": [
+     "create_sa:copper_magnet"
+    ],
+    "note": "The copper magnet is the module with the widest use - it collects items, and it can also pick up blocks and MOBS, then release them on command. Doubles as a standalone handheld item collector.",
+    "video": "uR20-AXihN8"
+   },
+   {
+    "ids": [
+     "create_sa:brass_drill_head"
+    ],
+    "note": "The drill head turns the drone into a remote mining tool - fly it to an ore vein, break the block, and bring the drops back without exposing the player. The guide demonstrates it on diamonds guarded by mobs.",
+    "video": "uR20-AXihN8"
+   }
+  ]
+ }
+}

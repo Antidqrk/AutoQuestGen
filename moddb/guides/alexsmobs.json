@@ -1,0 +1,1592 @@
+{
+ "mod": "alexsmobs",
+ "jar": "alexsmobs-1.22.9.jar",
+ "ids_in_jar": 290,
+ "entities_in_jar": 90,
+ "videos": [
+  {
+   "id": "QmOv30we4oQ",
+   "title": "All Tameable Mobs In Alex's Mobs | Mod Review |",
+   "channel": "Samic",
+   "views": 71163,
+   "duration": 505,
+   "chars": 2515,
+   "secs": 0
+  }
+ ],
+ "items": {
+  "alexsmobs:lobster_tail": {
+   "kind": "item",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6909,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "alexsmobs:banana": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2097,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "alexsmobs:fish_oil": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3096,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "entities": {
+  "alexsmobs:raccoon": {
+   "kind": "entity",
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3689,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:bald_eagle": {
+   "kind": "entity",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2885,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:crocodile": {
+   "kind": "entity",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7975,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2,
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:elephant": {
+   "kind": "entity",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8053,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:grizzly_bear": {
+   "kind": "entity",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1262,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:lobster": {
+   "kind": "entity",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6909,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:capuchin_monkey": {
+   "kind": "entity",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1978,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:kangaroo": {
+   "kind": "entity",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.254,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:komodo_dragon": {
+   "kind": "entity",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7342,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:mudskipper": {
+   "kind": "entity",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6996,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:sugar_glider": {
+   "kind": "entity",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.593,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:tarantula_hawk": {
+   "kind": "entity",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0675,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0,
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  }
+ },
+ "human_notes": {
+  "_source": "jar (loot tables, spawn eggs, kill advancements) + 1 transcribed guide, which turned out to be about TAMING rather than fighting.",
+  "measured_emphasis": [
+   "The one guide that fit the time budget was 'All Tameable Mobs In Alex's Mobs', and its top mentions are entity:alexsmobs:raccoon, entity:alexsmobs:bald_eagle, entity:alexsmobs:crocodile, entity:alexsmobs:elephant, entity:alexsmobs:grizzly_bear, entity:alexsmobs:lobster",
+   "That is the real lesson for this mod: the community frames Alex's Mobs as a taming/collection mod, so quests should lean on befriending and breeding rather than kill counts",
+   "Thin evidence — one short video. The ordering below is structural, not something a teacher said"
+  ],
+  "boss_order": [
+   "entity:alexsmobs:void_worm — the mod's one true boss, End-tier, drops alexsmobs:void_worm_eye and alexsmobs:void_worm_mandible",
+   "entity:alexsmobs:warped_mosco — nether mini-boss (alexsmobs:hemolymph_sac, alexsmobs:warped_muscle)",
+   "entity:alexsmobs:cachalot_whale and entity:alexsmobs:laviathan — large set-piece mobs rather than gated bosses"
+  ],
+  "prep": [
+   "Alex's Mobs is a breadth mod, not a boss ladder: most content is one mob -> one drop -> one craftable, so quests should fan out rather than chain",
+   "entity:alexsmobs:void_worm lives in the End and is the only fight that assumes endgame gear"
+  ],
+  "order": [
+   "Overworld animals first (alexsmobs:bear_fur, alexsmobs:crocodile_scute, alexsmobs:moose_antler) — all obtainable pre-nether",
+   "Nether tier: entity:alexsmobs:crimson_mosquito, entity:alexsmobs:warped_mosco, entity:alexsmobs:bone_serpent, entity:alexsmobs:straddler",
+   "End tier: entity:alexsmobs:enderiophage, entity:alexsmobs:farseer, entity:alexsmobs:void_worm"
+  ],
+  "key_drops": [
+   "alexsmobs:void_worm_eye, alexsmobs:void_worm_mandible — Void Worm",
+   "alexsmobs:skreecher_soul — entity:alexsmobs:skreecher; alexsmobs:farseer_arm — entity:alexsmobs:farseer",
+   "alexsmobs:mimicream — entity:alexsmobs:mimicube, a widely used crafting ingredient",
+   "alexsmobs:dropbear_claw, alexsmobs:guster_eye, alexsmobs:rocky_shell, alexsmobs:capsid, alexsmobs:straddlite",
+   "alexsmobs:mosquito_proboscis — entity:alexsmobs:crimson_mosquito"
+  ],
+  "traps": [
+   "alexsmobs:centipede_body and alexsmobs:centipede_tail have loot tables but are SEGMENTS. The killable Cave Centipede is entity:alexsmobs:centipede_head — the one case where the '_head' id is the real mob",
+   "alexsmobs:murmur_head duplicates the display name of entity:alexsmobs:murmur but is the detachable head, with no spawn egg and no loot table. Target alexsmobs:murmur",
+   "alexsmobs:anaconda_part, :cachalot_part, :giant_squid_part, :void_worm_part are hitbox multiparts",
+   "alexsmobs:void_worm_shot, :enderiophage_rocket, :mosquito_spit, :sand_shot, :squid_grapple are projectiles"
+  ],
+  "signature": [
+   "entity:alexsmobs:void_worm",
+   "entity:alexsmobs:mimicube",
+   "entity:alexsmobs:crimson_mosquito",
+   "entity:alexsmobs:cachalot_whale",
+   "alexsmobs:mimicream",
+   "alexsmobs:animal_dictionary"
+  ]
+ },
+ "verified_entities": {
+  "alexsmobs:alligator_snapping_turtle": {
+   "name": "Alligator Snapping Turtle",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang"
+   ]
+  },
+  "alexsmobs:anaconda": {
+   "name": "Anaconda",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:anteater": {
+   "name": "Anteater",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:bald_eagle": {
+   "name": "Bald Eagle",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:banana_slug": {
+   "name": "Banana Slug",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:bison": {
+   "name": "Bison",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:blobfish": {
+   "name": "Blobfish",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:blue_jay": {
+   "name": "Blue Jay",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:bone_serpent": {
+   "name": "Bone Serpent",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:bunfungus": {
+   "name": "Bunfungus",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:cachalot_whale": {
+   "name": "Cachalot Whale",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:caiman": {
+   "name": "Caiman",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:capuchin_monkey": {
+   "name": "Capuchin Monkey",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:catfish": {
+   "name": "Catfish",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:centipede_head": {
+   "name": "Cave Centipede",
+   "evidence": [
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:cockroach": {
+   "name": "Cockroach",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:comb_jelly": {
+   "name": "Comb Jelly",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:cosmaw": {
+   "name": "Cosmaw",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:cosmic_cod": {
+   "name": "Cosmic Cod",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:crimson_mosquito": {
+   "name": "Crimson Mosquito",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:crocodile": {
+   "name": "Crocodile",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:crow": {
+   "name": "Crow",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:devils_hole_pupfish": {
+   "name": "Devil's Hole Pupfish",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:dropbear": {
+   "name": "Dropbear",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:elephant": {
+   "name": "Elephant",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:emu": {
+   "name": "Emu",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:endergrade": {
+   "name": "Endergrade",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:enderiophage": {
+   "name": "Enderiophage",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:farseer": {
+   "name": "Farseer",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:flutter": {
+   "name": "Flutter",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:fly": {
+   "name": "Fly",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:flying_fish": {
+   "name": "Flying Fish",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:frilled_shark": {
+   "name": "Frilled Shark",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:froststalker": {
+   "name": "Froststalker",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:gazelle": {
+   "name": "Gazelle",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:gelada_monkey": {
+   "name": "Gelada Monkey",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:giant_squid": {
+   "name": "Giant Squid",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:gorilla": {
+   "name": "Gorilla",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:grizzly_bear": {
+   "name": "Grizzly Bear",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:guster": {
+   "name": "Guster",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:hammerhead_shark": {
+   "name": "Hammerhead Shark",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:hummingbird": {
+   "name": "Hummingbird",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:jerboa": {
+   "name": "Jerboa",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:kangaroo": {
+   "name": "Kangaroo",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:komodo_dragon": {
+   "name": "Komodo Dragon",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:laviathan": {
+   "name": "Laviathan",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:leafcutter_ant": {
+   "name": "Leafcutter Ant",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:lobster": {
+   "name": "Lobster",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:maned_wolf": {
+   "name": "Maned Wolf",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:mantis_shrimp": {
+   "name": "Mantis Shrimp",
+   "evidence": [
+    "egg",
+    "lang",
+    "tag"
+   ]
+  },
+  "alexsmobs:mimic_octopus": {
+   "name": "Mimic Octopus",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:mimicube": {
+   "name": "Mimicube",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:moose": {
+   "name": "Moose",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:mudskipper": {
+   "name": "Mudskipper",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:mungus": {
+   "name": "Mungus",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:murmur": {
+   "name": "Murmur",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:orca": {
+   "name": "Orca",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:platypus": {
+   "name": "Platypus",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:potoo": {
+   "name": "Potoo",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:raccoon": {
+   "name": "Raccoon",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:rain_frog": {
+   "name": "Rain Frog",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:rattlesnake": {
+   "name": "Rattlesnake",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:rhinoceros": {
+   "name": "Rhinoceros",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:roadrunner": {
+   "name": "Roadrunner",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:rocky_roller": {
+   "name": "Rocky Roller",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:sea_bear": {
+   "name": "Sea Bear",
+   "evidence": [
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:seagull": {
+   "name": "Seagull",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:seal": {
+   "name": "Seal",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:shoebill": {
+   "name": "Shoebill",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:skelewag": {
+   "name": "Skelewag",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:skreecher": {
+   "name": "Skreecher",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:skunk": {
+   "name": "Skunk",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:snow_leopard": {
+   "name": "Snow Leopard",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:soul_vulture": {
+   "name": "Soul Vulture",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:spectre": {
+   "name": "Spectre",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:straddler": {
+   "name": "Straddler",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:stradpole": {
+   "name": "Stradpole",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:sugar_glider": {
+   "name": "Sugar Glider",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:sunbird": {
+   "name": "Sunbird",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:tarantula_hawk": {
+   "name": "Tarantula Hawk",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:tasmanian_devil": {
+   "name": "Tasmanian Devil",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:terrapin": {
+   "name": "Terrapin",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:tiger": {
+   "name": "Tiger",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:toucan": {
+   "name": "Toucan",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:triops": {
+   "name": "Triops",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:tusklin": {
+   "name": "Tusklin",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:underminer": {
+   "name": "Underminer",
+   "evidence": [
+    "egg",
+    "lang"
+   ]
+  },
+  "alexsmobs:void_worm": {
+   "name": "Void Worm",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  },
+  "alexsmobs:warped_mosco": {
+   "name": "Warped Mosco",
+   "evidence": [
+    "egg",
+    "kill",
+    "lang",
+    "loot",
+    "tag"
+   ]
+  },
+  "alexsmobs:warped_toad": {
+   "name": "Warped Toad",
+   "evidence": [
+    "egg",
+    "lang",
+    "loot"
+   ]
+  }
+ },
+ "unusable_entities": {
+  "alexsmobs:anaconda_part": {
+   "name": "Anaconda",
+   "evidence": [
+    "lang"
+   ],
+   "why": "body part / segment of a larger mob"
+  },
+  "alexsmobs:bone_serpent_part": {
+   "name": "Bone Serpent Bones",
+   "evidence": [
+    "lang"
+   ],
+   "why": "body part / segment of a larger mob"
+  },
+  "alexsmobs:cachalot_echo": {
+   "name": "Whale Echo",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:cachalot_part": {
+   "name": "Cachalot Whale",
+   "evidence": [
+    "lang"
+   ],
+   "why": "body part / segment of a larger mob"
+  },
+  "alexsmobs:centipede_body": {
+   "name": "Cave Centipede Body",
+   "evidence": [
+    "lang",
+    "loot"
+   ],
+   "why": "body part / segment of a larger mob"
+  },
+  "alexsmobs:centipede_tail": {
+   "name": "Cave Centipede Tail",
+   "evidence": [
+    "lang",
+    "loot"
+   ],
+   "why": "body part / segment of a larger mob"
+  },
+  "alexsmobs:cockroach_egg": {
+   "name": "Cockroach Ootheca",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:crocodile_egg": {
+   "name": "Crocodile Egg",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:enderiophage_rocket": {
+   "name": "Enderiophage Rocket",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:fart": {
+   "name": "Fart Cloud",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:giant_squid_part": {
+   "name": "Giant Squid",
+   "evidence": [
+    "lang"
+   ],
+   "why": "body part / segment of a larger mob"
+  },
+  "alexsmobs:gust": {
+   "name": "Gust",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:hemolymph": {
+   "name": "Hemolymph",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:mosquito_spit": {
+   "name": "Mosquito Blood",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:mud_ball": {
+   "name": "Mud Ball",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:murmur_head": {
+   "name": "Murmur",
+   "evidence": [
+    "kill",
+    "lang",
+    "tag"
+   ],
+   "why": "body part / segment of a larger mob"
+  },
+  "alexsmobs:pollen_ball": {
+   "name": "Pollen Ball",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:sand_shot": {
+   "name": "Thrown Sand",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:shark_tooth_arrow": {
+   "name": "Shark Tooth Arrow",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:squid_grapple": {
+   "name": "Tentacle",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:straddleboard": {
+   "name": "Straddleboard",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:tendon_segment": {
+   "name": "Tendon",
+   "evidence": [
+    "lang"
+   ],
+   "why": "body part / segment of a larger mob"
+  },
+  "alexsmobs:tossed_item": {
+   "name": "Tossed Item",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:vine_lasso": {
+   "name": "Vine Lasso",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:void_portal": {
+   "name": "Void Portal",
+   "evidence": [
+    "lang",
+    "tag"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "alexsmobs:void_worm_part": {
+   "name": "Void Worm",
+   "evidence": [
+    "lang"
+   ],
+   "why": "body part / segment of a larger mob"
+  },
+  "alexsmobs:void_worm_shot": {
+   "name": "Void Crystal",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  }
+ },
+ "verified_items": [
+  "alexsmobs:acacia_blossom",
+  "alexsmobs:ambergris",
+  "alexsmobs:ancient_dart",
+  "alexsmobs:animal_dictionary",
+  "alexsmobs:banana",
+  "alexsmobs:banana_peel",
+  "alexsmobs:banana_slug_slime",
+  "alexsmobs:banana_slug_slime_block",
+  "alexsmobs:banner_pattern_australia_0",
+  "alexsmobs:banner_pattern_australia_1",
+  "alexsmobs:banner_pattern_bear",
+  "alexsmobs:banner_pattern_brazil",
+  "alexsmobs:banner_pattern_new_mexico",
+  "alexsmobs:bear_dust",
+  "alexsmobs:bear_fur",
+  "alexsmobs:bison_carpet",
+  "alexsmobs:bison_fur",
+  "alexsmobs:bison_fur_block",
+  "alexsmobs:blobfish",
+  "alexsmobs:blobfish_bucket",
+  "alexsmobs:blood_sac",
+  "alexsmobs:blood_sprayer",
+  "alexsmobs:boiled_emu_egg",
+  "alexsmobs:bone_serpent_tooth",
+  "alexsmobs:cachalot_whale_tooth",
+  "alexsmobs:caiman_egg",
+  "alexsmobs:capsid",
+  "alexsmobs:centipede_leg",
+  "alexsmobs:centipede_leggings",
+  "alexsmobs:chorus_on_a_stick",
+  "alexsmobs:cockroach_ootheca",
+  "alexsmobs:cockroach_wing",
+  "alexsmobs:cockroach_wing_fragment",
+  "alexsmobs:comb_jelly_bucket",
+  "alexsmobs:cooked_catfish",
+  "alexsmobs:cooked_kangaroo_meat",
+  "alexsmobs:cooked_lobster_tail",
+  "alexsmobs:cooked_moose_ribs",
+  "alexsmobs:cosmic_cod",
+  "alexsmobs:cosmic_cod_bucket",
+  "alexsmobs:crocodile_chestplate",
+  "alexsmobs:crocodile_egg",
+  "alexsmobs:crocodile_scute",
+  "alexsmobs:crystalized_banana_slug_mucus",
+  "alexsmobs:devils_hole_pupfish_bucket",
+  "alexsmobs:dimensional_carver",
+  "alexsmobs:dimensional_carver_shard_0",
+  "alexsmobs:dimensional_carver_shard_1",
+  "alexsmobs:dimensional_carver_shard_10",
+  "alexsmobs:dimensional_carver_shard_2",
+  "alexsmobs:dimensional_carver_shard_3",
+  "alexsmobs:dimensional_carver_shard_4",
+  "alexsmobs:dimensional_carver_shard_5",
+  "alexsmobs:dimensional_carver_shard_6",
+  "alexsmobs:dimensional_carver_shard_7",
+  "alexsmobs:dimensional_carver_shard_8",
+  "alexsmobs:dimensional_carver_shard_9",
+  "alexsmobs:dropbear_claw",
+  "alexsmobs:echolocator",
+  "alexsmobs:elastic_tendon",
+  "alexsmobs:emu_egg",
+  "alexsmobs:emu_feather",
+  "alexsmobs:emu_leggings",
+  "alexsmobs:end_pirate_anchor",
+  "alexsmobs:end_pirate_anchor_winch",
+  "alexsmobs:end_pirate_door",
+  "alexsmobs:end_pirate_flag",
+  "alexsmobs:end_pirate_ship_wheel",
+  "alexsmobs:end_pirate_trapdoor",
+  "alexsmobs:ender_residue",
+  "alexsmobs:enderiophage_rocket",
+  "alexsmobs:endolocator",
+  "alexsmobs:falconry_glove",
+  "alexsmobs:falconry_glove_hand",
+  "alexsmobs:falconry_glove_inventory",
+  "alexsmobs:falconry_hood",
+  "alexsmobs:farseer_arm",
+  "alexsmobs:fedora",
+  "alexsmobs:fish_bones",
+  "alexsmobs:fish_oil",
+  "alexsmobs:flying_fish",
+  "alexsmobs:flying_fish_boots",
+  "alexsmobs:flying_fish_bucket",
+  "alexsmobs:frilled_shark_bucket",
+  "alexsmobs:frontier_cap",
+  "alexsmobs:froststalker_helmet",
+  "alexsmobs:froststalker_horn",
+  "alexsmobs:gazelle_horn",
+  "alexsmobs:ghostly_pickaxe",
+  "alexsmobs:gongylidia",
+  "alexsmobs:guster_eye",
+  "alexsmobs:gustmaker",
+  "alexsmobs:halo",
+  "alexsmobs:hemolymph_blaster",
+  "alexsmobs:hemolymph_sac",
+  "alexsmobs:hummingbird_feeder",
+  "alexsmobs:kangaroo_burger",
+  "alexsmobs:kangaroo_hide",
+  "alexsmobs:kangaroo_meat",
+  "alexsmobs:komodo_spit",
+  "alexsmobs:komodo_spit_bottle",
+  "alexsmobs:large_catfish_bucket",
+  "alexsmobs:lava_bottle",
+  "alexsmobs:leafcutter_ant_chamber",
+  "alexsmobs:leafcutter_ant_pupa",
+  "alexsmobs:leafcutter_anthill",
+  "alexsmobs:lobster_bucket",
+  "alexsmobs:lobster_tail",
+  "alexsmobs:lost_tentacle",
+  "alexsmobs:maggot",
+  "alexsmobs:maraca",
+  "alexsmobs:medium_catfish_bucket",
+  "alexsmobs:mimic_octopus_bucket",
+  "alexsmobs:mimicream",
+  "alexsmobs:moose_antler",
+  "alexsmobs:moose_headgear",
+  "alexsmobs:moose_ribs",
+  "alexsmobs:mosquito_larva",
+  "alexsmobs:mosquito_proboscis",
+  "alexsmobs:mosquito_repellent_stew",
+  "alexsmobs:mudskipper_bucket",
+  "alexsmobs:mungal_spores",
+  "alexsmobs:music_disc_daze",
+  "alexsmobs:music_disc_thime",
+  "alexsmobs:mysterious_worm",
+  "alexsmobs:novelty_hat",
+  "alexsmobs:phantom_sail",
+  "alexsmobs:pigshoes",
+  "alexsmobs:platypus_bucket",
+  "alexsmobs:platypus_egg",
+  "alexsmobs:pocket_sand",
+  "alexsmobs:poison_bottle",
+  "alexsmobs:potted_flutter",
+  "alexsmobs:pupfish_locator",
+  "alexsmobs:purpur_planks",
+  "alexsmobs:purpur_planks_slab",
+  "alexsmobs:purpur_planks_stairs",
+  "alexsmobs:purpur_planks_wall",
+  "alexsmobs:raccoon_tail",
+  "alexsmobs:rainbow_glass",
+  "alexsmobs:rainbow_jelly",
+  "alexsmobs:rattlesnake_rattle",
+  "alexsmobs:raw_catfish",
+  "alexsmobs:red_sand_circle",
+  "alexsmobs:roadrunner_boots",
+  "alexsmobs:roadrunner_feather",
+  "alexsmobs:rocky_chestplate",
+  "alexsmobs:rocky_shell",
+  "alexsmobs:sand_circle",
+  "alexsmobs:sculk_boomer",
+  "alexsmobs:serrated_shark_tooth",
+  "alexsmobs:shark_tooth",
+  "alexsmobs:shark_tooth_arrow",
+  "alexsmobs:shattered_dimensional_carver",
+  "alexsmobs:shed_snake_skin",
+  "alexsmobs:shield_of_the_deep",
+  "alexsmobs:shrimp_fried_rice",
+  "alexsmobs:skelewag_sword",
+  "alexsmobs:skelewag_sword_hand",
+  "alexsmobs:skelewag_sword_inventory",
+  "alexsmobs:skreecher_soul",
+  "alexsmobs:skunk_spray",
+  "alexsmobs:small_catfish_bucket",
+  "alexsmobs:sombrero",
+  "alexsmobs:sopa_de_macaco",
+  "alexsmobs:soul_heart",
+  "alexsmobs:spawn_egg_alligator_snapping_turtle",
+  "alexsmobs:spawn_egg_anaconda",
+  "alexsmobs:spawn_egg_anteater",
+  "alexsmobs:spawn_egg_bald_eagle",
+  "alexsmobs:spawn_egg_banana_slug",
+  "alexsmobs:spawn_egg_bison",
+  "alexsmobs:spawn_egg_blobfish",
+  "alexsmobs:spawn_egg_blue_jay",
+  "alexsmobs:spawn_egg_bone_serpent",
+  "alexsmobs:spawn_egg_bunfungus",
+  "alexsmobs:spawn_egg_cachalot_whale",
+  "alexsmobs:spawn_egg_caiman",
+  "alexsmobs:spawn_egg_capuchin_monkey",
+  "alexsmobs:spawn_egg_catfish",
+  "alexsmobs:spawn_egg_centipede",
+  "alexsmobs:spawn_egg_cockroach",
+  "alexsmobs:spawn_egg_comb_jelly",
+  "alexsmobs:spawn_egg_cosmaw",
+  "alexsmobs:spawn_egg_cosmic_cod",
+  "alexsmobs:spawn_egg_crimson_mosquito",
+  "alexsmobs:spawn_egg_crocodile",
+  "alexsmobs:spawn_egg_crow",
+  "alexsmobs:spawn_egg_devils_hole_pupfish",
+  "alexsmobs:spawn_egg_dropbear",
+  "alexsmobs:spawn_egg_elephant",
+  "alexsmobs:spawn_egg_emu",
+  "alexsmobs:spawn_egg_endergrade",
+  "alexsmobs:spawn_egg_enderiophage",
+  "alexsmobs:spawn_egg_farseer",
+  "alexsmobs:spawn_egg_flutter",
+  "alexsmobs:spawn_egg_fly",
+  "alexsmobs:spawn_egg_flying_fish",
+  "alexsmobs:spawn_egg_frilled_shark",
+  "alexsmobs:spawn_egg_froststalker",
+  "alexsmobs:spawn_egg_gazelle",
+  "alexsmobs:spawn_egg_gelada_monkey",
+  "alexsmobs:spawn_egg_giant_squid",
+  "alexsmobs:spawn_egg_gorilla",
+  "alexsmobs:spawn_egg_grizzly_bear",
+  "alexsmobs:spawn_egg_guster",
+  "alexsmobs:spawn_egg_hammerhead_shark",
+  "alexsmobs:spawn_egg_hummingbird",
+  "alexsmobs:spawn_egg_jerboa",
+  "alexsmobs:spawn_egg_kangaroo",
+  "alexsmobs:spawn_egg_komodo_dragon",
+  "alexsmobs:spawn_egg_laviathan",
+  "alexsmobs:spawn_egg_leafcutter_ant",
+  "alexsmobs:spawn_egg_lobster",
+  "alexsmobs:spawn_egg_maned_wolf",
+  "alexsmobs:spawn_egg_mantis_shrimp",
+  "alexsmobs:spawn_egg_mimic_octopus",
+  "alexsmobs:spawn_egg_mimicube",
+  "alexsmobs:spawn_egg_moose",
+  "alexsmobs:spawn_egg_mudskipper",
+  "alexsmobs:spawn_egg_mungus",
+  "alexsmobs:spawn_egg_murmur",
+  "alexsmobs:spawn_egg_orca",
+  "alexsmobs:spawn_egg_platypus",
+  "alexsmobs:spawn_egg_potoo",
+  "alexsmobs:spawn_egg_raccoon",
+  "alexsmobs:spawn_egg_rain_frog",
+  "alexsmobs:spawn_egg_rattlesnake",
+  "alexsmobs:spawn_egg_rhinoceros",
+  "alexsmobs:spawn_egg_roadrunner",
+  "alexsmobs:spawn_egg_rocky_roller",
+  "alexsmobs:spawn_egg_seagull",
+  "alexsmobs:spawn_egg_seal",
+  "alexsmobs:spawn_egg_shoebill",
+  "alexsmobs:spawn_egg_skelewag",
+  "alexsmobs:spawn_egg_skreecher",
+  "alexsmobs:spawn_egg_skunk",
+  "alexsmobs:spawn_egg_snow_leopard",
+  "alexsmobs:spawn_egg_soul_vulture",
+  "alexsmobs:spawn_egg_spectre",
+  "alexsmobs:spawn_egg_straddler",
+  "alexsmobs:spawn_egg_stradpole",
+  "alexsmobs:spawn_egg_sugar_glider",
+  "alexsmobs:spawn_egg_sunbird",
+  "alexsmobs:spawn_egg_tarantula_hawk",
+  "alexsmobs:spawn_egg_tasmanian_devil",
+  "alexsmobs:spawn_egg_terrapin",
+  "alexsmobs:spawn_egg_tiger",
+  "alexsmobs:spawn_egg_toucan",
+  "alexsmobs:spawn_egg_triops",
+  "alexsmobs:spawn_egg_tusklin",
+  "alexsmobs:spawn_egg_underminer",
+  "alexsmobs:spawn_egg_void_worm",
+  "alexsmobs:spawn_egg_warped_mosco",
+  "alexsmobs:spawn_egg_warped_toad",
+  "alexsmobs:spectre_sail",
+  "alexsmobs:spiked_scute",
+  "alexsmobs:spiked_turtle_shell",
+  "alexsmobs:squid_grapple",
+  "alexsmobs:stink_bottle",
+  "alexsmobs:stink_ray",
+  "alexsmobs:stink_ray_empty_hand",
+  "alexsmobs:stink_ray_hand",
+  "alexsmobs:stink_ray_inventory",
+  "alexsmobs:straddle_helmet",
+  "alexsmobs:straddle_saddle",
+  "alexsmobs:straddleboard",
+  "alexsmobs:straddlite",
+  "alexsmobs:straddlite_block",
+  "alexsmobs:stradpole_bucket",
+  "alexsmobs:tab_icon",
+  "alexsmobs:tarantula_hawk_elytra",
+  "alexsmobs:tarantula_hawk_wing",
+  "alexsmobs:tarantula_hawk_wing_fragment",
+  "alexsmobs:tendon_whip",
+  "alexsmobs:terrapin_bucket",
+  "alexsmobs:terrapin_egg",
+  "alexsmobs:transmutation_table",
+  "alexsmobs:triops_bucket",
+  "alexsmobs:triops_eggs",
+  "alexsmobs:unsettling_kimono",
+  "alexsmobs:vine_lasso",
+  "alexsmobs:vine_lasso_hand",
+  "alexsmobs:vine_lasso_inventory",
+  "alexsmobs:void_worm_beak",
+  "alexsmobs:void_worm_effigy",
+  "alexsmobs:void_worm_eye",
+  "alexsmobs:void_worm_mandible",
+  "alexsmobs:warped_mixture",
+  "alexsmobs:warped_muscle"
+ ],
+ "fake_item_ids": [
+  "alexsmobs:blood_gun_empty",
+  "alexsmobs:blood_sprayer_empty",
+  "alexsmobs:hemolymph_blaster_empty",
+  "alexsmobs:pupfish_locator_in_chunk",
+  "alexsmobs:shield_of_the_deep_blocking",
+  "alexsmobs:skelewag_sword_blocking",
+  "alexsmobs:sombrero_upside_down",
+  "alexsmobs:stink_ray_empty_inventory",
+  "alexsmobs:stink_ray_hand_base",
+  "alexsmobs:tarantula_hawk_elytra_broken",
+  "alexsmobs:tendon_whip_active"
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "mod": "handcrafted",
+ "ids_in_jar": 285,
+ "installed_in_pack": true,
+ "videos": [],
+ "items": {},
+ "no_video_evidence": "transcription did not complete for this mod; human_notes below are jar-derived only",
+ "human_notes": {
+  "order": [
+   "[jar] Flat decoration mod, no progression. The one functional item is handcrafted:hammer, which is the tool used to adjust placed furniture - it is the only thing in the mod that behaves like a tool and is the natural first quest.",
+   "[jar] the furniture families, each repeated across every wood type: chair, bench, dining_bench, table, side_table, desk, couch, counter, cupboard, drawer, nightstand, shelf, fancy_bed. Use handcrafted:oak_chair, handcrafted:oak_table, handcrafted:oak_couch and friends as representatives.",
+   "[jar] the non-wood extras worth calling out: handcrafted:oven and handcrafted:kitchen_hood (kitchens), handcrafted:berry_jam_jar, handcrafted:fancy_painting, and the pottery line (golden_thin_pot, golden_wide_pot, medium_pot, thick_pot).",
+   "[jar] handcrafted:*_trophy - 19 mob trophies (bear, blaze, creeper, evoker, fox, goat, phantom, pillager, pufferfish, salmon...). These are the one genuinely 'earned' item family in the mod and make far better quest rewards than another chair."
+  ],
+  "gates": [
+   "[jar] None."
+  ],
+  "structures": [],
+  "traps": [
+   "[jar] 285 ids of which 46 are corner/pillar trim and most of the rest are the same 13 furniture shapes times every wood. Pick one representative per shape rather than per wood.",
+   "NOT VERIFIED BY VIDEO: transcription did not reach this mod."
+  ],
+  "signature": [
+   "handcrafted:hammer",
+   "handcrafted:oak_chair",
+   "handcrafted:oak_table",
+   "handcrafted:oak_couch",
+   "handcrafted:oven",
+   "handcrafted:creeper_trophy"
+  ]
+ }
+}

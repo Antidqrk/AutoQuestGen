@@ -1,0 +1,136 @@
+{
+ "mod": "chipped",
+ "verified_against": "chipped-forge-1.20.1-3.0.7.jar",
+ "item_count_in_jar": 6987,
+ "chain": [
+  {"id": "chipped:loom_table", "title": "The Shepherd's Workbench", "desc": "A crafting table, logs, sticks and wool; feed it any wool or carpet and it offers every weave and pattern the mod knows for that colour."},
+  {"id": "chipped:botanist_workbench", "title": "The Botanist's Workbench", "desc": "A crafting table, a flower pot, sticks and wooden slabs; it restyles the living things - leaves, mushrooms, sand, dirt, ice, froglights and pumpkins."},
+  {"id": "chipped:carpenters_table", "title": "The Carpenter's Workbench", "desc": "A crafting table, logs, planks, an iron ingot and a wooden axe; it covers 57 wood families, from planks and logs to doors, ladders, barrels and bookshelves."},
+  {"id": "chipped:mason_table", "title": "The Mason's Workbench", "desc": "A crafting table, logs, an iron ingot, a brick and a clay ball; the widest bench in the mod at 84 stone families, so it needs a kiln before a quarry."},
+  {"id": "chipped:glassblower", "title": "The Glassblower's Workbench", "desc": "A crafting table, logs, an iron ingot, bricks, glass and a BLAST FURNACE; that last ingredient is what makes this bench mid-game rather than early."},
+  {"id": "chipped:tinkering_table", "title": "The Tinkering Table", "desc": "Logs, wooden slabs, a piston, a redstone torch and TNT; the smallest bench at nine families, and the only one that restyles lanterns, lamps and iron bars."},
+  {"id": "chipped:alchemy_bench", "title": "The Alchemy Bench", "desc": "Wooden slabs, a crafting table, a brewing stand and an ENCHANTING TABLE, so diamonds, obsidian and a book gate it; it restyles the ore and metal blocks."}
+ ],
+ "collections": [
+  {
+   "hub": "chipped:carpenters_table",
+   "members": [
+    "chipped:oak_planks_mosaic",
+    "chipped:oak_planks_shavings",
+    "chipped:basket_woven_oak_planks",
+    "chipped:boxed_oak_planks",
+    "chipped:brick_bond_oak_planks",
+    "chipped:bricky_oak_planks",
+    "chipped:cross_laced_oak_planks",
+    "chipped:crossed_oak_planks",
+    "chipped:detailed_oak_planks",
+    "chipped:diagonal_oak_planks",
+    "chipped:diamond_oak_planks",
+    "chipped:double_herringbone_oak_planks"
+   ]
+  },
+  {
+   "hub": "chipped:mason_table",
+   "members": [
+    "chipped:stone_mini_tiles",
+    "chipped:stone_pillar",
+    "chipped:stone_scales",
+    "chipped:angry_stone",
+    "chipped:blank_stone_carving",
+    "chipped:carved_stone",
+    "chipped:checkered_stone_tiles",
+    "chipped:cobbled_stone",
+    "chipped:cracked_disordered_stone_bricks",
+    "chipped:creeper_stone_carving",
+    "chipped:crying_stone",
+    "chipped:cut_blank_stone"
+   ]
+  },
+  {
+   "hub": "chipped:glassblower",
+   "members": [
+    "chipped:circle_oak_glass",
+    "chipped:fancy_leaded_glass",
+    "chipped:large_diamond_leaded_glass",
+    "chipped:lead_woven_glass",
+    "chipped:oak_snowflake_glass",
+    "chipped:square_leaded_glass",
+    "chipped:vertical_leaded_glass",
+    "chipped:clear_leaded_glass",
+    "chipped:oak_bared_glass",
+    "chipped:oak_bordered_glass",
+    "chipped:oak_diamond_bordered_glass",
+    "chipped:oak_large_diamond_glass"
+   ]
+  },
+  {
+   "hub": "chipped:loom_table",
+   "members": [
+    "chipped:barky_white_wool",
+    "chipped:blocky_white_wool",
+    "chipped:bundled_white_wool",
+    "chipped:cross_haired_white_wool",
+    "chipped:cubed_white_wool",
+    "chipped:knitted_white_wool",
+    "chipped:patched_white_wool",
+    "chipped:rectangle_white_wool",
+    "chipped:ribbled_white_wool",
+    "chipped:scaled_white_wool",
+    "chipped:soft_white_wool",
+    "chipped:stringed_white_wool"
+   ]
+  },
+  {
+   "hub": "chipped:botanist_workbench",
+   "members": [
+    "chipped:apple_oak_leaves",
+    "chipped:cherry_oak_leaves",
+    "chipped:dead_oak_leaves",
+    "chipped:frosted_oak_leaves",
+    "chipped:golden_oak_leaves",
+    "chipped:golden_apple_oak_leaves",
+    "chipped:magenta_flower_oak_leaves",
+    "chipped:orange_oak_leaves",
+    "chipped:red_oak_leaves",
+    "chipped:white_flower_oak_leaves",
+    "chipped:coarse_sand",
+    "chipped:white_sand"
+   ]
+  },
+  {
+   "hub": "chipped:tinkering_table",
+   "members": [
+    "chipped:blue_paper_lantern",
+    "chipped:burning_coal_lantern",
+    "chipped:checkered_iron_lantern",
+    "chipped:ender_lantern",
+    "chipped:green_paper_lantern",
+    "chipped:iron_bowl_lantern",
+    "chipped:red_paper_lantern",
+    "chipped:white_paper_lantern",
+    "chipped:wooden_cage_lantern",
+    "chipped:wrought_iron_lantern",
+    "chipped:yellow_tube_lantern",
+    "chipped:small_green_lantern"
+   ]
+  },
+  {
+   "hub": "chipped:alchemy_bench",
+   "members": [
+    "chipped:ancient_diamond_block",
+    "chipped:chipped_diamond_block",
+    "chipped:embossed_diamond_block",
+    "chipped:engraved_diamond_block",
+    "chipped:layered_diamond_block",
+    "chipped:plated_diamond_block",
+    "chipped:pressed_diamond_block",
+    "chipped:reinforced_diamond_block",
+    "chipped:sheet_diamond_block",
+    "chipped:shuttered_diamond_block",
+    "chipped:stacked_diamond_block",
+    "chipped:diamond_block_panels"
+   ]
+  }
+ ],
+ "notes": "SHORT CHAIN, DECLARED SHORT, AND DELIBERATELY SO. Chipped registers 6987 blocks and there are exactly SEVEN progression steps in the whole mod: the seven workbenches. The other 6960 blocks are siblings, not rungs - none of them is an ingredient for anything, none gates anything, and each is reachable the moment its bench exists. Padding this chain would mean putting cosmetic variants in a progression they have no place in. The variety lives in the wheels.\n\nCOUNTS. 6987 item-model stems, 6981 blockstates, 6967 block.chipped.X lang keys. The naive intersection verifies 6967 of 6987 - and for once THE NAIVE RULE IS RIGHT AND WIDENING WOULD BE WRONG. This is the counter-example to the storagedrawers rule that a blockstate proves a quest target:\n  - 14 stems named *_wall_torch (acacia_wall_torch, iron_wall_torch, glow_wall_torch, blue_redstone_wall_torch, ...) HAVE a blockstate but no lang key and appear in no item tag and no recipe. They are the wall-mounted forms of the standing torches, exactly as vanilla does it: the block is registered, the ITEM is the standing torch. A blockstate proves a BLOCK exists; it does not prove an ITEM exists, and a quest needs an item.\n  - 6 stems (carved_pumpkin_20/21/22, jack_o_lantern_20/21/22) have an item model but NO blockstate, no lang key and no tag membership. Orphaned generated assets for variants that were cut - the same failure mode as storagedrawers:keybutton_personal.\nAll 6967 named blocks are obtainable and I verified it exhaustively: 6960 of them appear by id in one of the 277 files under data/chipped/tags/items/**, and those tags are precisely what the seven bench recipes consume; the remaining 7 are the benches themselves, which have ordinary crafting_shaped recipes and block loot tables. Zero chipped ids appear in a tag without a model. Nothing in this mod is unobtainable.\n\nHOW THE MOD WORKS, and why it has no recipe graph. data/chipped/recipes/<bench>.json is a single file of a custom type (chipped:mason_table and so on) whose only field is a list of item tags - 84 for the mason table, 57 for the carpenter's, 45 botanist, 34 glassblower, 32 loom, 16 alchemy, 9 tinkering. Put a block from one of those tags into the bench and it shows you every variant registered under that tag. There are no per-variant recipe files at all, so a recipe-graph pass finds only 7 craftable things and a loot-table pass finds only 7 drops. Obtainability for the other 6960 has to be read from the tags.\n\nCONSENSUS IS BADLY OUT OF DATE HERE. moddb lists 13 chipped entries, and SIX OF THEM DO NOT EXIST in 3.0.7: chipped:chisel (pos 1.000), chipped:saw (0.833), chipped:needles (0.083), chipped:multimeter (0.250), chipped:watering_can (0.417) and chipped:alchemy_book (0.500). None has a model, a lang key, a blockstate, a recipe or a tag entry in this jar. They are 1.16/1.18-era Chipped items - the mod dropped its hand tools when it moved to the workbench-only design - and every one of them would be an uncompletable quest. Notably all six are the 3-pack entries while the seven that DO exist are all 6-pack entries, so pack count was the usable signal and the position value was not.\nORDERING CONFLICT, ingredient depth preferred: moddb puts chipped:loom_table and chipped:needles first at 0.083 and chipped:glassblower at 0.875, next to last. Loom first is right - crafting table, logs, sticks, wool. But it also puts alchemy_bench at 0.333, third, when its recipe contains an ENCHANTING TABLE (2 diamonds, 4 obsidian, a book), which makes it the most expensive bench in the mod by a wide margin. The chain below is ordered by real ingredient depth: loom -> botanist -> carpenter (iron) -> mason (bricks) -> glassblower (blast furnace) -> tinkering (TNT + piston) -> alchemy (enchanting table).\n\nWHEELS. One per bench, each drawn from a single verified tag so the family is real rather than assembled: oak plank weaves (carpenter, 38 in tag), stone carvings (mason, 62), leaded glass (glassblower, 21), white wool weaves (loom, 20), oak leaves and sand (botanist, 11 and 12), lanterns (tinkering, 32), diamond block finishes (alchemy, 12). Every colour, wood and stone in the mod repeats the same treatment list, so one representative family per bench is the whole pattern; enumerating the other several thousand would be the same wheel a hundred times over."
+}

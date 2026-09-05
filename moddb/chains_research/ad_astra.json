@@ -1,0 +1,175 @@
+{
+  "mod": "ad_astra",
+  "verified_against": "ad_astra-forge-1.20.1-1.15.20.jar",
+  "item_count_in_jar": 411,
+  "chain": [
+    {
+      "id": "ad_astra:compressor",
+      "title": "Pressure Enters the Workshop",
+      "desc": "Crafted in a crafting table from iron ingots around a piston, and it is the machine that presses ingots and blocks into plates."
+    },
+    {
+      "id": "ad_astra:iron_plate",
+      "title": "Flattened Beginnings",
+      "desc": "Produced by running an iron ingot or an iron block through a powered Compressor."
+    },
+    {
+      "id": "ad_astra:etrionic_blast_furnace",
+      "title": "The Alloy Hearth",
+      "desc": "Crafted from iron plates, redstone and a vanilla blast furnace, and it is the only machine that alloys metals in this mod."
+    },
+    {
+      "id": "ad_astra:steel_ingot",
+      "title": "Iron, Only Angrier",
+      "desc": "Alloyed in the Etrionic Blast Furnace from an iron ingot plus coal or charcoal."
+    },
+    {
+      "id": "ad_astra:steel_plate",
+      "title": "Hull Stock",
+      "desc": "Compressed from steel ingots or steel blocks, and it is the base part for almost every rocket component."
+    },
+    {
+      "id": "ad_astra:oxygen_gear",
+      "title": "Something to Breathe Through",
+      "desc": "Crafted from steel plates and a steel rod, and it is the piece that connects a gas tank to a space suit."
+    },
+    {
+      "id": "ad_astra:space_suit",
+      "title": "First Skin for Vacuum",
+      "desc": "Crafted from steel plates, wool, a gas tank and the Oxygen Gear, and the full four-piece set is required to survive any airless world."
+    },
+    {
+      "id": "ad_astra:fuel_refinery",
+      "title": "Cracking the Black Ooze",
+      "desc": "Crafted from steel plates, a bucket and a furnace, and it refines crude oil pumped from ocean Oil Well structures into rocket fuel."
+    },
+    {
+      "id": "ad_astra:nasa_workbench",
+      "title": "Where Rockets Are Born",
+      "desc": "Crafted from steel plates, steel blocks, iron rods, a redstone torch and a crafting table, and every rocket tier is assembled in its dedicated grid."
+    },
+    {
+      "id": "ad_astra:tier_1_rocket",
+      "title": "Ignition on the Home World",
+      "desc": "Assembled in the NASA Workbench from a rocket nose cone, steel blocks, rocket fins, a steel tank and a steel engine, then placed on a Launch Pad and fuelled."
+    },
+    {
+      "id": "dim:ad_astra:moon",
+      "title": "Grey Dust Underfoot",
+      "desc": "The Moon is the tier 1 destination in the mod's planet data and has no breathable atmosphere, so a full oxygen-fed suit is mandatory."
+    },
+    {
+      "id": "ad_astra:desh_ingot",
+      "title": "The Lunar Alloy",
+      "desc": "Smelted or blasted from Moon Desh Ore or raw desh, both of which only generate below the Moon's surface."
+    },
+    {
+      "id": "ad_astra:oxygen_distributor",
+      "title": "A Bubble of Home",
+      "desc": "Crafted from desh plates, a fan, a large gas tank, an Oxygen Loader and Oxygen Gear, and it floods a sealed room with breathable air."
+    },
+    {
+      "id": "ad_astra:tier_2_rocket",
+      "title": "Desh-Clad Ascent",
+      "desc": "Assembled in the NASA Workbench using desh blocks, a desh tank and a desh engine in place of the tier 1 steel parts."
+    },
+    {
+      "id": "dim:ad_astra:mars",
+      "title": "Rust-Coloured Wastes",
+      "desc": "Mars is flagged tier 2 in the planet data, runs at roughly minus sixty-five degrees and is patrolled by Martian Raptors."
+    },
+    {
+      "id": "ad_astra:ostrum_ingot",
+      "title": "Red Planet Metal",
+      "desc": "Smelted or blasted from Mars Ostrum Ore or raw ostrum, which generate in Martian stone."
+    },
+    {
+      "id": "ad_astra:netherite_space_suit",
+      "title": "Armour That Holds Air",
+      "desc": "Crafted from ostrum plates, a netherite chestplate, Oxygen Gear and a large gas tank, giving a far deeper oxygen reserve than the basic suit."
+    },
+    {
+      "id": "ad_astra:tier_3_rocket",
+      "title": "Ostrum Bound for the Inner System",
+      "desc": "Assembled in the NASA Workbench from ostrum blocks, an ostrum tank and an ostrum engine."
+    },
+    {
+      "id": "dim:ad_astra:venus",
+      "title": "Furnace Beneath the Clouds",
+      "desc": "Venus sits at tier 3 with an ambient temperature of roughly 464 degrees, and its wastes spawn Moglers, Zombified Pygros and Sulfur Creepers."
+    },
+    {
+      "id": "ad_astra:calorite_ingot",
+      "title": "Forged in the Hot Place",
+      "desc": "Smelted or blasted from Venus Calorite Ore or raw calorite, the highest-tier metal in the mod."
+    },
+    {
+      "id": "dim:ad_astra:mercury",
+      "title": "The Scorched Grey Deltas",
+      "desc": "Mercury is the other tier 3 world in the planet data, a mob-free expanse of stone deltas holding Mercury Iron Ore."
+    },
+    {
+      "id": "ad_astra:tier_4_rocket",
+      "title": "Reaching Another Star",
+      "desc": "Assembled in the NASA Workbench from calorite blocks, a calorite tank and a calorite engine, the only rocket that leaves the Solar System."
+    },
+    {
+      "id": "dim:ad_astra:glacio",
+      "title": "Snowfall Around Proxima",
+      "desc": "Glacio is the tier 4 world in the Proxima Centauri system, breathable but freezing, and home to Glacian Rams and Ice Shard Ore."
+    },
+    {
+      "id": "ad_astra:jet_suit",
+      "title": "Wings of Molten Calorite",
+      "desc": "Crafted from calorite plates, a calorite engine, a calorite tank, an Etrionic Capacitor and the Netherite Space Suit, and it grants powered flight."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "ad_astra:nasa_workbench",
+      "members": [
+        "ad_astra:rocket_nose_cone",
+        "ad_astra:rocket_fin",
+        "ad_astra:engine_frame",
+        "ad_astra:fan",
+        "ad_astra:steel_engine",
+        "ad_astra:steel_tank",
+        "ad_astra:gas_tank",
+        "ad_astra:large_gas_tank",
+        "ad_astra:launch_pad"
+      ]
+    },
+    {
+      "hub": "ad_astra:etrionic_blast_furnace",
+      "members": [
+        "ad_astra:compressor",
+        "ad_astra:fuel_refinery",
+        "ad_astra:cryo_freezer",
+        "ad_astra:coal_generator",
+        "ad_astra:solar_panel",
+        "ad_astra:energizer",
+        "ad_astra:water_pump",
+        "ad_astra:oxygen_loader",
+        "ad_astra:oxygen_sensor",
+        "ad_astra:gravity_normalizer",
+        "ad_astra:etrionic_capacitor"
+      ]
+    },
+    {
+      "hub": "ad_astra:sky_stone",
+      "members": [
+        "ad_astra:moon_stone",
+        "ad_astra:mars_stone",
+        "ad_astra:venus_stone",
+        "ad_astra:mercury_stone",
+        "ad_astra:glacio_stone",
+        "ad_astra:permafrost",
+        "ad_astra:conglomerate",
+        "ad_astra:moon_sand",
+        "ad_astra:mars_sand",
+        "ad_astra:venus_sand"
+      ]
+    }
+  ],
+  "notes": "Item set = 411 stems of assets/ad_astra/models/item/*.json intersected with item./block. keys across every assets/*/lang/en_us.json in the jar; every id above is a member of that set. Planet tiers and dimension ids read from data/ad_astra/planets/*.json: moon tier 1, mars tier 2, venus and mercury tier 3, glacio tier 4 (Proxima Centauri system); earth is minecraft:overworld so it is not used as a dim: step. Verified dimensions in data/ad_astra/dimension/: earth_orbit, glacio, glacio_orbit, mars, mars_orbit, mercury, mercury_orbit, moon, moon_orbit, venus, venus_orbit. Orbit dimensions were deliberately left out of the chain because they are transit-only. DROPPED as unverifiable or unobtainable: ad_astra:etrium_ingot, ad_astra:etrium_block, ad_astra:etrium_plate, ad_astra:etrium_rod, ad_astra:etrium_nugget, ad_astra:etrium_panel, ad_astra:etrium_plateblock, ad_astra:etrium_factory_block, ad_astra:encased_etrium_block and ad_astra:photovoltaic_vesnium_cell - these exist as items and block models but have no recipe, loot table, or worldgen source anywhere in the jar (only the vesnium/etrium block drop-self loot tables), so there is no in-game way to obtain them in 1.15.20. Also dropped: the fluid names cryo_fuel, fuel, hydrogen, oil and oxygen, which have lang entries but no item model - only their *_bucket items are real items. ad_astra:rendered_item and ad_astra:etrionic_capacitor_off have models but no lang key and are internal. No kill: steps were used: none of the 20 verified entities (lunarian, corrupted_lunarian, martian_raptor, mogler, zombified_mogler, pygro, pygro_brute, zombified_pygro, sulfur_creeper, star_crawler, glacian_ram, air_vortex, ice_spit, lander and the four rocket/rover entities) gate any recipe or dimension, so they belong in optional side quests rather than the spine. Oil is confirmed to come from the ad_astra:oil_well jigsaw structure, whose biome tag targets #minecraft:is_ocean and #minecraft:has_structure/ocean_monument, i.e. Overworld oceans. Structures present: lunar_tower, lunarian_village, mars_temple, moon_dungeon, oil_well, pygro_tower, pygro_village, venus_bullet."
+}

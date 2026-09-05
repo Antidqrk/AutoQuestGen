@@ -1,0 +1,14 @@
+{
+  "mod": "betterfortresses",
+  "verified_against": "YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar",
+  "item_count_in_jar": 0,
+  "chain": [
+    {
+      "id": "structure:betterfortresses:fortress",
+      "title": "Find the Fortress",
+      "desc": "The mod's whole content: one rebuilt nether fortress on #minecraft:is_nether, spawning blaze, magma cube, skeleton, wither skeleton and zombified piglin. Nine chest tables; the obsidian chest holds crying obsidian and diamonds, the puzzle chest blaze rods."
+    }
+  ],
+  "collections": [],
+  "notes": "SHORT ON PURPOSE - ONE STRUCTURE, NO ITEMS, so one entry and no padding. THE MOD ID IS betterfortresses, NOT yungsbetternetherfortresses - this is the biggest id mismatch in the task brief, and it was read straight from META-INF/mods.toml (modId betterfortresses, version 1.20-Forge-2.0.6, minecraft [1.20,1.21), forge [46.0.2,), no fabric.mod.json). assets/betterfortresses/ has no models/item, no blockstates and no item./block. keys, so item_count_in_jar is 0 and collections is empty. CONTENT: one structure, data/betterfortresses/worldgen/structure/fortress.json, type yungsapi:yung_jigsaw, step surface_structures, biomes #minecraft:is_nether plus optional #c:in_nether, with five spawn overrides: minecraft:blaze, magma_cube, skeleton, wither_skeleton and zombified_piglin. LOOT: 9 tables at data/betterfortresses/loot_tables/chests/ - beacon, extra, hall, keep, obsidian, puzzle, quarters, storage and worship. The nbt walk reached keep, quarters and storage directly out of the raw NBT; the other six exist as files in the same folder and belong to the same single structure, since it is the only structure the jar defines. Contents read from the json: chests/obsidian lists crying_obsidian, obsidian, diamond and flint_and_steel; chests/puzzle lists blaze_rod, diamond and nether_wart; chests/keep is a full gold, chainmail and horse-armour kit; chests/worship and chests/quarters both list diamond and nether_wart. IMPORTANT FOR CHAIN PLACEMENT: the mod ships data/betterfortresses/advancements/find_fortress.json, which OVERRIDES vanilla's nether/find_fortress - so this structure sits exactly where the vanilla fortress beat sits in a progression, gating blaze rods, and should not be moved later. NOTE THE LOADER THRESHOLD: _load_researched_chains keeps curated chains of 4+ rows, so this one-row file will be skipped by that path; the generator's structure_quests() still reads betterfortresses:fortress from the jar scan and this file is the loot record behind it. No kill: entries - the jar has no entity lang keys and every mob above is vanilla. No dim: entries. ID FORM: 'structure:' + fully namespaced. Requires yungsapi. The jar also ships data/morevillagers/tags and structures/mod_integration, which are compat, not content."
+}

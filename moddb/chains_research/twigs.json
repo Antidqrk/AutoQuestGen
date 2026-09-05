@@ -1,0 +1,207 @@
+{
+ "mod": "twigs",
+ "verified_against": "Twigs-1.20.1-3.1.1.jar",
+ "item_count_in_jar": 258,
+ "chain": [
+  {
+   "id": "twigs:twig",
+   "title": "Pick It Up Off the Floor",
+   "desc": "Twigs scatter across the ground in most overworld biomes and break into one Twig. Two twigs craft into a vanilla stick, which is the mod's opening move and its cheapest."
+  },
+  {
+   "id": "twigs:pebble",
+   "title": "The Stone Underfoot",
+   "desc": "Pebbles generate on the surface the same way twigs do. They throw like snowballs, four of them craft back into one cobblestone, and they are the second ingredient in Rocky Dirt."
+  },
+  {
+   "id": "twigs:rocky_dirt",
+   "title": "Stone Showing Through",
+   "desc": "Two dirt and two pebbles on a diagonal give four Rocky Dirt - the transitional block between a path and bare stone."
+  },
+  {
+   "id": "twigs:cobblestone_bricks",
+   "title": "Cobble, Squared Off",
+   "desc": "Four cobblestone in a square give four Cobblestone Bricks, or stonecut one for one. Moss or mossy cobblestone gives the mossy version and a furnace gives the cracked one."
+  },
+  {
+   "id": "twigs:gravel_bricks",
+   "title": "Bricks From Loose Stone",
+   "desc": "Four gravel in a square give four Gravel Bricks - the only way in the game to make gravel hold a shape."
+  },
+  {
+   "id": "twigs:silt",
+   "title": "Clay and Sand, Mixed",
+   "desc": "Two clay and two sand crossed give four Silt. It also generates in strips through the Nether, and breaking it without silk touch drops Silt Balls."
+  },
+  {
+   "id": "twigs:packed_silt",
+   "title": "Bound With Wheat",
+   "desc": "Silt and wheat, shapeless. Packed Silt is the base for the whole coloured half of the mod, and the sixteen dyed versions come off it."
+  },
+  {
+   "id": "twigs:silt_brick",
+   "title": "Fire the Ball",
+   "desc": "Smelting one Silt Ball gives one Silt Brick, and four of those make Silt Bricks - the same relationship vanilla clay has with terracotta."
+  },
+  {
+   "id": "twigs:silt_pot",
+   "title": "A Pot to Plant In",
+   "desc": "Six silt bricks in a U make one Silt Pot, and a shapeless craft with any vanilla dye gives that colour's pot, which is the mod's only sixteen-colour item that is not a building block."
+  },
+  {
+   "id": "twigs:silt_shingles",
+   "title": "Roofing From Mud",
+   "desc": "Four Packed Silt in a square give four Silt Shingles, or stonecut one for one. Add a dye to get any of the sixteen colours, and dyed Packed Silt stonecuts straight into matching shingles."
+  },
+  {
+   "id": "twigs:rhyolite",
+   "title": "Quartz Fired Into Sand",
+   "desc": "Quartz crossed with red sand gives two Rhyolite. It also generates as an ore-style blob in the overworld, so you can mine it instead of crafting it."
+  },
+  {
+   "id": "twigs:schist",
+   "title": "The Grey Stone",
+   "desc": "Quartz crossed with clay balls gives two Schist, and it generates in two separate underground bands of its own."
+  },
+  {
+   "id": "twigs:bloodstone",
+   "title": "Iron in the Quartz",
+   "desc": "Quartz crossed with iron nuggets gives two Bloodstone. Like rhyolite and schist it also generates underground, gated to the biomes in the mod's own bloodstone tag."
+  },
+  {
+   "id": "twigs:polished_bloodstone",
+   "title": "The Polish Step",
+   "desc": "Four bloodstone in a square, or one on a stonecutter. Every one of the mod's three new stones plus calcite, tuff and basalt runs the same polished then bricks then cracked ladder."
+  },
+  {
+   "id": "twigs:polished_bloodstone_bricks",
+   "title": "And Then Bricks",
+   "desc": "Four polished bloodstone in a square. Smelting the bricks cracks them, which is the third and last rung of that ladder."
+  },
+  {
+   "id": "twigs:polished_amethyst",
+   "title": "Amethyst, Flattened",
+   "desc": "Four amethyst blocks give four Polished Amethyst, and crafting or cutting that again gives Cut Amethyst - the two amethyst finishes vanilla stops short of."
+  },
+  {
+   "id": "twigs:compacted_dripstone",
+   "title": "Squeeze the Spikes",
+   "desc": "Four pointed dripstone in a square give two Compacted Dripstone, the only use for the pointed variant that is not a farm."
+  },
+  {
+   "id": "twigs:copper_pillar",
+   "title": "Copper That Ages",
+   "desc": "Four from a copper block on the stonecutter, or one from a cut copper slab. The pillar oxidises through exposed, weathered and oxidized exactly like every other copper block."
+  },
+  {
+   "id": "twigs:stone_column",
+   "title": "A Column, Not a Pillar",
+   "desc": "Three stone in a T give four Stone Columns, or stonecut one for one. Blackstone, deepslate and quartz each have their own."
+  },
+  {
+   "id": "twigs:paper_lantern",
+   "title": "Torch Inside Paper",
+   "desc": "Eight paper around a torch. Adding any one of five flowers or plants - allium, blue orchid, dandelion, torchflower or crimson roots - gives that variant's lantern, shapeless."
+  },
+  {
+   "id": "twigs:lamp",
+   "title": "Iron, Coal and a Torch",
+   "desc": "A torch over coal, ringed in iron ingots. The Soul Lamp is the same frame built with a soul torch and soul sand, and both are proper standing floor lamps rather than wall fittings."
+  },
+  {
+   "id": "twigs:crimson_shroomlamp",
+   "title": "Light From the Nether Fungus",
+   "desc": "Shroomlight sandwiched between crimson planks gives two Crimson Shroomlamps; warped planks give the warped one."
+  },
+  {
+   "id": "twigs:bamboo_leaves",
+   "title": "Leaves Worth Keeping",
+   "desc": "Bamboo Leaves generate on bamboo and drop from it in layers. Two rows of them craft into two Bamboo Thatch, which is the mod's soft roofing block."
+  },
+  {
+   "id": "twigs:bamboo_mat",
+   "title": "A Floor to Kneel On",
+   "desc": "Three bamboo along the bottom row give two Bamboo Mats, the thin ground covering that pairs with the thatch."
+  },
+  {
+   "id": "twigs:oak_table",
+   "title": "A Table From a Fence",
+   "desc": "A fence under a slab of the same wood makes one Table, in all eleven vanilla woods - the mod's only furniture."
+  },
+  {
+   "id": "twigs:azalea_flowers",
+   "title": "Strip the Azalea",
+   "desc": "A flowering azalea or its leaves crafts down into six Azalea Flowers, a small flower that also generates on its own in azalea biomes."
+  },
+  {
+   "id": "twigs:bronzed_seashell",
+   "title": "Listen to It",
+   "desc": "Seashells generate on beaches and shallow water in four colours - bronzed, opaline, roseate and tangerine. Right-click one and it plays; craft any of them for bone meal."
+  },
+  {
+   "id": "twigs:petrified_lichen",
+   "title": "Stone That Was Alive",
+   "desc": "Petrified Lichen generates underground as a multiface growth and needs a pickaxe. It has no recipe and no other source, which makes it the hardest thing in the mod to find."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "twigs:white_silt_shingles",
+   "members": [
+    "twigs:light_gray_silt_shingles",
+    "twigs:gray_silt_shingles",
+    "twigs:brown_silt_shingles",
+    "twigs:red_silt_shingles",
+    "twigs:orange_silt_shingles",
+    "twigs:yellow_silt_shingles",
+    "twigs:lime_silt_shingles",
+    "twigs:green_silt_shingles",
+    "twigs:cyan_silt_shingles",
+    "twigs:light_blue_silt_shingles",
+    "twigs:blue_silt_shingles",
+    "twigs:purple_silt_shingles",
+    "twigs:magenta_silt_shingles",
+    "twigs:pink_silt_shingles"
+   ]
+  },
+  {
+   "hub": "twigs:white_silt_pot",
+   "members": [
+    "twigs:light_gray_silt_pot",
+    "twigs:gray_silt_pot",
+    "twigs:black_silt_pot",
+    "twigs:brown_silt_pot",
+    "twigs:red_silt_pot",
+    "twigs:orange_silt_pot",
+    "twigs:yellow_silt_pot",
+    "twigs:lime_silt_pot",
+    "twigs:green_silt_pot",
+    "twigs:cyan_silt_pot",
+    "twigs:light_blue_silt_pot",
+    "twigs:blue_silt_pot",
+    "twigs:purple_silt_pot",
+    "twigs:magenta_silt_pot"
+   ]
+  },
+  {
+   "hub": "twigs:spruce_table",
+   "members": [
+    "twigs:birch_table",
+    "twigs:jungle_table",
+    "twigs:acacia_table",
+    "twigs:dark_oak_table",
+    "twigs:mangrove_table",
+    "twigs:cherry_table",
+    "twigs:bamboo_table",
+    "twigs:crimson_table",
+    "twigs:warped_table",
+    "twigs:allium_paper_lantern",
+    "twigs:blue_orchid_paper_lantern",
+    "twigs:dandelion_paper_lantern",
+    "twigs:torchflower_paper_lantern",
+    "twigs:crimson_roots_paper_lantern"
+   ]
+  }
+ ],
+ "notes": "258 IDS BUT 132 OF THEM ARE NOT SLAB, STAIR OR WALL VARIANTS, AND THE CHAIN IS BUILT ONLY FROM THOSE. Verified against Twigs-1.20.1-3.1.1.jar (Forge 1.20.1, Modrinth version 1.20.1-3.1.1, loaders=[forge]). ID DETECTION AND WIDENING: 259 item models, 256 blockstates, 260 lang block./item. keys; models INTERSECT lang = 258, the count used. WIDENING REJECTED for the one blockstate-only stem, twigs:potted_azalea_flowers, which is the flower-pot placed state of twigs:azalea_flowers and never an item. NARROWED for the one model-only stem, twigs:playing_bronzed_seashell, which is the predicate model shown while a bronzed seashell is making its sound, not a separate id. NARROWED for the one lang-only key, block.twigs.bamboo_thatch_stairs, which has no item model and no blockstate - a stale lang entry for stairs the jar does not register. RECIPE GRAPH: 549 recipe files, 30 distinct shapes, but 199 of those files are one-for-one stonecutting and 275 more are the slab, stairs and wall triplets - so the shapes that actually matter number about a dozen. Verified yields: silt 4, packed_silt 1, silt_brick 1 (smelting), silt_bricks 1, silt_pot 1, silt_shingles 4, dyed packed_silt 8, dyed shingles 8, cobblestone_bricks 4, gravel_bricks 4, rocky_dirt 4, rhyolite 2, schist 2, bloodstone 2, polished_* 4, compacted_dripstone 2, copper_pillar 4 from a copper block by stonecutter, stone_column 4, paper_lantern 1, lamp 1, shroomlamp 1, bamboo_thatch 2, bamboo_mat 2, table 1, azalea_flowers 6. WORLDGEN IS HALF THE MOD: data/twigs/forge/biome_modifier/ adds nine features - patch_twig, patch_pebble, patch_seashell (land and water), azalea_flowers, silt_strip in the Nether, and underground ore blobs for bloodstone, rhyolite and schist. That is why twig, pebble, the four seashells, azalea_flowers and the three stones lead the chain: they are found, not crafted, and several have both routes. A SHIPPING BUG WORTH RECORDING: twigs:black_packed_silt has NO RECIPE FILE. The other fifteen colours all have data/twigs/recipes/<colour>_packed_silt.json, and the advancement files data/twigs/advancements/recipes/silt/black_packed_silt_from_packed_silt.json and black_packed_silt_from_silt.json both exist and reward a recipe that is not in the jar. Black Packed Silt has a loot table and is used as an input by black_silt_shingles_from_black_packed_silt_stonecutting, but there is no way to obtain it in survival. It is therefore excluded from the shingles wheel, which is why that wheel runs white through pink and skips black while the silt-pot wheel (whose black_silt_pot recipe DOES exist) includes it. DROPPED AS UNOBTAINABLE: twigs:twigs - note the plural. It has its own item model, its own texture item/twigs.png and the lang key item.twigs.twigs = 'Twigs', and com/ninni/twigs/registry/TwigsItems.class registers both TWIG and TWIGS, but a full scan of data/ found ZERO references to twigs:twigs in any recipe, loot table, tag, advancement or worldgen file. TwigsCreativeModeTabs.class uses TWIGS as the creative tab icon; it is creative-only and cannot be earned. Also dropped: twigs:black_packed_silt, for the reason above. DROPPED BY THE DESIRABILITY RULE (present and obtainable, deliberately unquested): every _slab, _stairs and _wall (126 ids between them), every chiseled_* and the fifteen non-black <colour>_packed_silt blocks, which are one dye step off the chain's Packed Silt. MODDB: no consensus signal - moddb.json has no twigs key - so ordering is the recipe graph plus worldgen availability, and there is no conflict to record."
+}

@@ -1,0 +1,170 @@
+{
+ "mod": "galosphere",
+ "verified_against": "Galosphere-1.20.1-1.5.2-Forge.jar",
+ "item_count_in_jar": 159,
+ "chain": [
+  {
+   "id": "galosphere:lichen_moss",
+   "title": "Walk Where It Glows",
+   "desc": "The soft floor of the mod's crystal caverns; the light_the_way advancement fires the moment you set foot on it, and Spectres will only spawn on it."
+  },
+  {
+   "id": "galosphere:allurite_shard",
+   "title": "Blue Light in the Rock",
+   "desc": "Broken from Allurite Clusters; it fuels the Echo Bell, tempts Spectres and ties off the Rope Dart."
+  },
+  {
+   "id": "galosphere:lumiere_shard",
+   "title": "The Warmer Crystal",
+   "desc": "Broken from Lumiere Clusters; it composts into glowstone dust and is the only accepted Monstrometer fuel."
+  },
+  {
+   "id": "galosphere:glow_flare",
+   "title": "Throw Some Light",
+   "desc": "A copper ingot, a glow ink sac and a stick; fired from a crossbow it lights a stretch of cave at once."
+  },
+  {
+   "id": "galosphere:palladium_ingot",
+   "title": "The Cavern Metal",
+   "desc": "Smelted from Palladium Ore, Deepslate Palladium Ore or Raw Palladium; in 1.5 it replaced Silver as the mod's backbone metal."
+  },
+  {
+   "id": "galosphere:combustion_table",
+   "title": "Bench for Volatile Work",
+   "desc": "Palladium ingots on planks; the workstation the mod's explosive and flare recipes are built around."
+  },
+  {
+   "id": "galosphere:sterling_helmet",
+   "title": "Fly Your Colours",
+   "desc": "Palladium and leather; it is the only helmet in the mod and the only one that will hold a banner, per its attached_sterling advancement."
+  },
+  {
+   "id": "galosphere:palladium_bomb",
+   "title": "It Bounces First",
+   "desc": "Palladium and gunpowder; its own tooltips advertise a bounce, a fuse duration and an explosion radius."
+  },
+  {
+   "id": "galosphere:monstrometer",
+   "title": "Counting What Lurks",
+   "desc": "Lumiere Shards on palladium; fed a Lumiere Shard it reads how many hostiles are near you."
+  },
+  {
+   "id": "galosphere:bottle_of_spectre",
+   "title": "A Ghost in Glass",
+   "desc": "Not crafted - the watchfly advancement calls it catching a Spectre in a bottle, and the interaction lives in the Spectre entity class."
+  },
+  {
+   "id": "galosphere:spectre_flare",
+   "title": "A Scout You Can Fire",
+   "desc": "Palladium around a Bottle of Spectre; launched, the freed Spectre marks what it finds for you."
+  },
+  {
+   "id": "galosphere:spectre_bound_spyglass",
+   "title": "Seeing Through Its Eyes",
+   "desc": "Made by using a spyglass on an allurite-bound Spectre, exactly as the eye_for_eye advancement describes; the interaction is in the Spectre class."
+  },
+  {
+   "id": "galosphere:burrow_anchor",
+   "title": "A Fixed Point Underground",
+   "desc": "A palladium ingot, an echo shard and a sculk shrieker; the mod's teleport anchor, and the 1.5 replacement for the old Warped Anchor."
+  },
+  {
+   "id": "galosphere:mining_pouch",
+   "title": "The Mole Wants a Deal",
+   "desc": "Inserted into a Mole Burrow to open the mining-quest trade loop, per the questful advancement and the mod's MiningPouchManager."
+  },
+  {
+   "id": "galosphere:opal_flakes",
+   "title": "Paid in Flakes",
+   "desc": "A rare and epic reward from the Mole's mining quests; used on any sapling it turns the tree opal."
+  },
+  {
+   "id": "galosphere:opal",
+   "title": "Wood Turned to Gem",
+   "desc": "Cut from an Opal Log, the trunk of a tree grown from an opalised sapling; it blocks up and bricks up into its own building set."
+  },
+  {
+   "id": "galosphere:broken_echo_bell",
+   "title": "Cracked but Not Silent",
+   "desc": "Another rare and epic Mole reward; it is the ruined core the working bell is rebuilt around."
+  },
+  {
+   "id": "galosphere:echo_bell",
+   "title": "Ring It and Listen",
+   "desc": "The Broken Echo Bell with an echo shard, an Allurite Shard and a stick; feeding it Allurite Shards keeps it sounding."
+  },
+  {
+   "id": "galosphere:pink_salt_shard",
+   "title": "Salt of the Rose Caverns",
+   "desc": "Broken from Pink Salt Clusters; it composts coarse dirt, becomes gunpowder and cures phantom membrane."
+  },
+  {
+   "id": "galosphere:pink_salt",
+   "title": "The Rose Bed",
+   "desc": "Pressed from Pink Salt Straw; the base block of the pastel, rose, polished and brick salt families."
+  },
+  {
+   "id": "galosphere:cured_membrane",
+   "title": "Preserved in Salt",
+   "desc": "Phantom membrane packed with Pink Salt Shards; the salt-cured leather of the pink salt caverns."
+  },
+  {
+   "id": "kill:galosphere:berserker",
+   "title": "Reign of Terror",
+   "desc": "The mod's only boss, placed by its own BerserkerFeature inside the Pink Salt Shrine; it slams, roars and summons."
+  },
+  {
+   "id": "galosphere:preserved_template",
+   "title": "Wrenched From the Berserker",
+   "desc": "One of the Berserker's two drops and the smithing template of the preserved transform recipe, which salts items with Pink Salt Shards."
+  },
+  {
+   "id": "galosphere:saltbound_tablet",
+   "title": "Salt Made Into a Weapon",
+   "desc": "Pink Salt Shards around Preserved Flesh and a Preserved Template; the mod's endgame item, with its own advancement for killing an Evoker with it."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "galosphere:allurite_block",
+   "members": [
+    "galosphere:lumiere_block",
+    "galosphere:amethyst_bricks",
+    "galosphere:allurite_lamp",
+    "galosphere:lumiere_lamp",
+    "galosphere:amethyst_lamp",
+    "galosphere:chiseled_allurite",
+    "galosphere:chiseled_lumiere",
+    "galosphere:smooth_allurite",
+    "galosphere:smooth_lumiere"
+   ]
+  },
+  {
+   "hub": "galosphere:sterling_helmet",
+   "members": [
+    "galosphere:sterling_chestplate",
+    "galosphere:sterling_leggings",
+    "galosphere:sterling_boots",
+    "galosphere:sterling_horse_armor",
+    "galosphere:palladium_block",
+    "galosphere:palladium_lattice",
+    "galosphere:palladium_panel",
+    "galosphere:palladium_tiles"
+   ]
+  },
+  {
+   "hub": "galosphere:pink_salt",
+   "members": [
+    "galosphere:pastel_pink_salt",
+    "galosphere:rose_pink_salt",
+    "galosphere:pink_salt_bricks",
+    "galosphere:polished_pink_salt",
+    "galosphere:pink_salt_lamp",
+    "galosphere:pink_salt_straw",
+    "galosphere:chiseled_pink_salt",
+    "galosphere:salted_jerky"
+   ]
+  }
+ ],
+ "notes": "Item set = the 159 stems of assets/galosphere/models/item/*.json intersected with item.galosphere.* / block.galosphere.* keys in assets/galosphere/lang/en_us.json; every id above is in that set except the one allow-listed id below. The mod adds no dimension - it is overworld cave content - so there are no dim: steps. MAJOR CONSENSUS CONFLICT - SILVER WAS RENAMED TO PALLADIUM. moddb's Galosphere list is built on 1.3.x/1.4.x packs and leads with galosphere:silver_ingot (0.000), galosphere:silver_bomb (0.514), galosphere:silver_ore (1.000) and galosphere:warped_anchor (0.157). None of those ids exist in 1.5.2. Diffing the 1.4.1 Forge jar against 1.5.2 gives the exact rename set: removed were silver_ingot, silver_ore, deepslate_silver_ore, raw_silver, raw_silver_block, silver_block, silver_nugget, silver_bomb, silver_lattice, silver_panel(+slab,stairs), silver_tiles(+slab,stairs), silver_balance, warped_anchor, barometer, charged_lumiere_block and pink_salt_chamber; added were palladium_ingot, palladium_ore, deepslate_palladium_ore, raw_palladium, raw_palladium_block, palladium_block, palladium_nugget, palladium_dust, palladium_bomb, palladium_lattice, palladium_panel(+slab,stairs), palladium_tiles(+slab,stairs), burrow_anchor and the whole opal, echo bell, mole and mining-pouch layer. Read silver_* -> palladium_*, warped_anchor -> burrow_anchor. galosphere:barometer (moddb pos 0.822) and galosphere:charged_lumiere_block are gone with no replacement id; the Monstrometer survives and is the surviving detector. Only leftover silver textures, sounds and two dead smithing_template.silver_upgrade lang keys remain in 1.5.2. If the pack pins Galosphere 1.4.1 instead, invert the mapping above. ALLOW-LISTED ID: galosphere:preserved_template (moddb pos 0.683) has an item model, is an entry in data/galosphere/loot_tables/entities/berserker.json, and is the template of both preserved_transform_recipe.json and saltbound_tablet.json - but its display name lives under upgrade.galosphere.preserved_upgrade rather than item.galosphere.<id>, so it fails a naive model-intersect-lang test. It is real and it is the gate for the endgame item. DROPPED, UNVERIFIABLE: galosphere:shrine_key is registered in GItems, has a lang key and a texture and is the sole entry in loot_tables/spawners/pink_salt_shrine/key.json, but it has no item model json at all in 1.5.2, so it fails set membership and was left out. ENTITY CHECK: 14 entity.galosphere.* lang keys, of which 6 have loot tables (berserker, mole, preserved, sparkle, specterpillar, spectre). The other 8 are projectiles and props (glow_flare, spectre_flare, palladium_bomb, rope_dart, pink_salt_pillar, pink_salt_shard, spectator_vision, weapon_rack). Only kill:galosphere:berserker is used; it is the one true boss, its loot table is the only source of preserved_template and preserved_flesh, and net/orcinus/galosphere/world/gen/features/BerserkerFeature.class places it inside the Pink Salt Shrine structure, so it is reachable without a summon item. Structures verified from worldgen/structure/: forgotten_ruins (archaeology, thirst and wave pottery sherds) and pink_salt_shrine (chest loot plus the Berserker). Mole trading verified from loot_tables/gameplay/mining_quests/{requests,gifts}/{common,rare,epic}.json - epic requests ask for lumiere_shard, pink_salt_shard and raw_palladium and pay out opal_flakes, broken_echo_bell, palladium_bomb and the faith armour trim template."
+}

@@ -1,0 +1,82 @@
+{
+  "mod": "dimdungeons",
+  "verified_against": "dimdungeons-194-forge-1.20.1.jar",
+  "item_count_in_jar": 24,
+  "chain": [
+    {
+      "id": "dimdungeons:block_gilded_portal",
+      "title": "Gold Around the Stone",
+      "desc": "Craft the Gilded Portal Block: eight gold ingots (forge:ingots/gold) around one chiseled stone brick. Everything this mod does starts here."
+    },
+    {
+      "id": "dimdungeons:block_portal_keyhole",
+      "title": "The Keystone",
+      "desc": "Combine the gilded portal block with an ender eye and any trapped chest to get the Portal Keystone. Crafting it is the mod's root advancement."
+    },
+    {
+      "id": "dimdungeons:item_portal_key",
+      "title": "A Nametag and a Blaze Rod",
+      "desc": "The Blank Portal Key is a two-ingredient shapeless craft. Activate it at an end portal frame to turn it into a Basic Portal Key - the mod's own Seek The First Adventure advancement."
+    },
+    {
+      "id": "dim:dimdungeons:dungeon_dimension",
+      "title": "Into The Dungeon",
+      "desc": "Set the activated key in the keystone and walk through. The whole dungeon is a separate dimension built to order, not a structure in your world."
+    },
+    {
+      "id": "dimdungeons:block_portal_crown",
+      "title": "King Me",
+      "desc": "The Portal Crown Block appears in dungeon chests (chestloot_2). The mod's own advancement wants two of them."
+    },
+    {
+      "id": "dimdungeons:block_key_charger",
+      "title": "The Inscribing Station",
+      "desc": "The Key Inscribing Station is found, not crafted - it drops from chestloot_2 and chestloot_4 and has its own block loot table so you can take it home."
+    },
+    {
+      "id": "dimdungeons:item_secret_bell",
+      "title": "Bell of Secrets",
+      "desc": "A rare pull from chestloot_2 and chestloot_4. The mod ships a find_bell_1 advancement for it - and a find_bell_2 whose own description admits you cannot get the second one legitimately."
+    },
+    {
+      "id": "dimdungeons:item_homeward_pearl",
+      "title": "The Way Back",
+      "desc": "Craft a Homeward Pearl from a Portal Key, an ender pearl and a bottle o' enchanting. It is also the centre ingredient of the personal dimension key."
+    },
+    {
+      "id": "dimdungeons:item_blank_build_key",
+      "title": "Blank Personal Dimension Key",
+      "desc": "Craft it from the Homeward Pearl, an echo shard, a grass block and ender pearls - the mod's most expensive recipe and its gate on a private world."
+    },
+    {
+      "id": "dim:dimdungeons:build_dimension",
+      "title": "Home Space Home",
+      "desc": "The second dimension in the jar: a flat personal build space reached with the charged Personal Dimension Key."
+    },
+    {
+      "id": "dimdungeons:item_blank_teleporter_key",
+      "title": "Crossworld Crossroads",
+      "desc": "A Blank Teleporter Key comes only from chestloot_4, the advanced dungeon table. Its crafting recipe file ships disabled in this build, so the dungeon is the only source."
+    },
+    {
+      "id": "dimdungeons:item_trophy_1",
+      "title": "Collectionist",
+      "desc": "The 1UP Mushroom is one of eight unique trophies rolled from the trophy_1 chest table, each stamped with the finder's name. The mod's all_trophies advancement wants the full set."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "dimdungeons:item_trophy_1",
+      "members": [
+        "dimdungeons:item_trophy_2",
+        "dimdungeons:item_trophy_3",
+        "dimdungeons:item_trophy_4",
+        "dimdungeons:item_trophy_5",
+        "dimdungeons:item_trophy_6",
+        "dimdungeons:item_trophy_7",
+        "dimdungeons:item_trophy_8"
+      ]
+    }
+  ],
+  "notes": "DIMENSIONAL DUNGEONS ADDS NO WORLDGEN STRUCTURES. data/dimdungeons/worldgen/ contains only two biome files - there is NO worldgen/structure folder and no structure_set, so this file carries no structure: entries even though the mod is a dungeon mod. Its 350+ .nbt room templates under data/dimdungeons/structures/ are assembled in code inside the mod's own dimension, not placed by a jigsaw structure, so there is no structure id a structure task could point at. The honest equivalents are the two dimensions, and both are used. DIMENSIONS VERIFIED: data/dimdungeons/dimension/dungeon_dimension.json and data/dimdungeons/dimension/build_dimension.json, each with a matching dimension_type. THE LANG FILE IN THIS JAR IS NOT STRICT JSON and that matters for detection. assets/dimdungeons/lang/en_us.json contains three JavaScript-style // comments (line 7 '// JEI', line 156 '// THIS IS UNUSED!', line 201 '// guidebook text is not used'). Minecraft's Gson reader is lenient and loads it fine, but json.loads raises - and autoquestgen.py's scanner at the 'for lf in ... /lang/en_us.json' loop swallows the exception and continues, so this mod contributes ZERO lang names to the scan. Detection therefore falls through to the model branch (real = set(model_items)), which still works but means no display names and no lang cross-check. Every id in this file was resolved with a lenient parse (strip // comments, strip trailing commas), which recovers 313 keys. ITEM SET: 36 stems under assets/dimdungeons/models/item/, 44 item./block. keys after the lenient parse, 24 in the intersection - that is item_count_in_jar. Blockstate widening adds NOTHING here: all 10 blockstates are already in the intersection. DROPPED, MODEL BUT NO LANG (12): item_key_build, item_key_level1, item_key_level2, item_key_teleporter, item_secret_bell_1, item_secret_bell_2, item_theme_active_01/02/03 and item_theme_blank_01/02/03. These are not separate items - they are the alternate models a single registered key item swaps to as its NBT changes, which is also why item_portal_key_basic, item_portal_key_advanced, item_build_key and item_teleporter_key appear as LANG KEYS WITH NO MODEL: they are NBT states of dimdungeons:item_portal_key and friends, not registrable ids. Asking for dimdungeons:item_portal_key_advanced would be asking for an id that does not exist, so the advanced key beat is carried by chestloot_4 prose instead. DROPPED FOR OBTAINABILITY (no recipe, no loot table, no dungeon source anywhere in data/): dimdungeons:block_gold_portal (the portal block the dungeon generates - it has a model and a lang key but no block loot table and no recipe, so it cannot be collected), dimdungeons:block_local_teleporter (same - not among the six block loot tables), dimdungeons:item_blank_advanced_key and dimdungeons:item_blank_theme_key (model and lang exist, but no recipe and no loot entry in any of the 24 chest tables), and dimdungeons:item_guidebook (the only guidebook recipe in the jar produces patchouli:guide_book with nbt, gated on forge:mod_loaded patchouli, not this item). block_key_charger_used and block_key_charger_damaged are obtainable - they do have block loot tables - but they are spent states of the same station and are not worth a quest. OBTAINABILITY EVIDENCE for everything kept: recipes at data/dimdungeons/recipes/ (recipe_block_gilded_portal, recipe_block_portal_keyhole, recipe_item_blank_key, recipe_homeward_pearl, recipe_item_blank_build_key) and loot at data/dimdungeons/loot_tables/chests/ (chestloot_2 names block_key_charger, block_portal_crown and item_secret_bell; chestloot_4 names those plus item_blank_teleporter_key; trophy_1 names item_trophy_1 through item_trophy_8 with per-trophy set_lore). NOTE recipe_item_blank_teleporter_key ships with a .removed extension, so it is disabled and the teleporter key is loot-only in this build - the chain says so. ORDER follows the mod's own advancement tree under data/dimdungeons/advancements/dungeons/: root (craft keystone) -> activate_basic_key -> enter_basic_dungeon -> find_crown / find_key_charger / find_advanced_key -> enter_advanced_dungeon -> find_teleporter_key, with enter_personal_space hanging off root. The chain is SHORT AT 12 ENTRIES and that is correct - the mod has 24 items, half of which are the eight trophies (moved to the wheel) and the spent charger states. No kill: entries - the jar has no entity lang keys and no entity loot tables. LOADER: META-INF/mods.toml, modId dimdungeons, version 194, minecraft [1.20,1.20.2) which covers 1.20.1, forge [46,), no fabric.mod.json. Modrinth's newest 1.20.1 file is named dimdungeons-207-neoforge-1.20.1.jar; version 194 was used instead because it is the build whose filename and mods.toml both say Forge."
+}

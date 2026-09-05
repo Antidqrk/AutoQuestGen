@@ -1,0 +1,486 @@
+{
+ "mod": "ars_nouveau",
+ "ids_in_jar": 426,
+ "videos": [
+  {
+   "title": "Ars Nouveau Beginner Guide - How To Start Ars Nouveau In 8 Minutes!",
+   "channel": "leno",
+   "views": 11232,
+   "duration": 483,
+   "id": "4vX0YAKZ35I",
+   "chars": 7964
+  },
+  {
+   "title": "Ars Nouveau Basics Tutorial: All The Mods 7",
+   "channel": "StonemanCraft",
+   "views": 58968,
+   "duration": 335,
+   "id": "MLzDiF1nQjE",
+   "chars": 4311
+  }
+ ],
+ "items": {
+  "ars_nouveau:glyph": {
+   "mentions": 16,
+   "videos": 1,
+   "first_at": 0.0399,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "ars_nouveau:source_gem": {
+   "mentions": 10,
+   "videos": 1,
+   "first_at": 0.1003,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 4
+  },
+  "ars_nouveau:relay": {
+   "mentions": 8,
+   "videos": 1,
+   "first_at": 0.5758,
+   "praise": 11,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 0
+  },
+  "ars_nouveau:arcane_core": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.5318,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ars_nouveau:agronomic_sourcelink": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.0364,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ars_nouveau:source_jar": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.1904,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "ars_nouveau:enchanting_apparatus": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.0424,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ars_nouveau:arcane_pedestal": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.7631,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ars_nouveau:magebloom": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8893,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ars_nouveau:light_block": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7047,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ars_nouveau:magebloom_fiber": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8925,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ars_nouveau:magebloom_crop": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8893,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ars_nouveau:glyph_snare": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5962,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "ars_nouveau:novice_spell_book": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3538,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  }
+ },
+ "items_by_display_name": {
+  "ars_nouveau:source_gem": {
+   "mentions": 10,
+   "videos": 1,
+   "first_at": 0.1003,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 4,
+   "display": "Source Gem"
+  },
+  "ars_nouveau:arcane_core": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.5318,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Arcane Core"
+  },
+  "ars_nouveau:agronomic_sourcelink": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.0364,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Agronomic Sourcelink"
+  },
+  "ars_nouveau:enchanting_apparatus": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.0424,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Enchanting Apparatus"
+  },
+  "ars_nouveau:source_jar": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.1904,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2,
+   "display": "Source Jar"
+  },
+  "ars_nouveau:arcane_pedestal": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.7631,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Arcane Pedestal"
+  },
+  "ars_nouveau:magebloom": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8893,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Magebloom"
+  },
+  "ars_nouveau:light_block": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7047,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Magelight"
+  },
+  "ars_nouveau:magebloom_crop": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8893,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Magebloom Seed"
+  },
+  "ars_nouveau:magebloom_fiber": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8925,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Magebloom Fiber"
+  },
+  "ars_nouveau:novice_spell_book": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3538,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1,
+   "display": "Novice Spell Book"
+  },
+  "ars_nouveau:relay": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7824,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Source Relay"
+  }
+ },
+ "human_notes": {
+  "_confidence": "THIN AND PARTLY JAR-DERIVED. Both transcribed videos came out badly degraded (see the mod report): kk5rB6iyh_E is machine-dubbed from Spanish, and MLzDiF1nQjE renders Worn Notebook as 'Wornout's book', Source Jar as 'source topless' and Arcane Stone as 'batumistis'. The SEQUENCE below is legible through that noise and matches the mod's own advancement DAG exactly, so the ordering is trustworthy; individual recipe amounts from these transcripts are NOT and were left out.",
+  "order": [
+   {
+    "claim": "The Worn Notebook is the first craft and the mod's guidebook -- one book plus lapis. Everything else in Ars Nouveau is documented inside it, so it comes before any machine.",
+    "video": "MLzDiF1nQjE",
+    "ids": [
+     "ars_nouveau:worn_notebook"
+    ],
+    "note": "Worn Notebook: lapis plus a book, a plain crafting recipe. It is the mod's in-game guide and documents everything that follows."
+   },
+   {
+    "claim": "The Imbuement Chamber is the first machine, built from Archwood. It is the root of the whole tech tree -- the Source Jar and the Enchanting Apparatus both hang off it, so nothing progresses until it is placed.",
+    "video": "MLzDiF1nQjE",
+    "ids": [
+     "ars_nouveau:imbuement_chamber",
+     "ars_nouveau:blue_archwood_log",
+     "ars_nouveau:green_archwood_log"
+    ],
+    "note": "The Imbuement Chamber is the next station; archwood comes from archwood trees found in the world."
+   },
+   {
+    "claim": "The Enchanting Apparatus is the second multiblock and the mod's main crafting station: an Arcane Core on the ground with eight Arcane Pedestals around it. Place the pedestals and their items first, then the item in the middle, and it crafts on its own.",
+    "video": "MLzDiF1nQjE",
+    "ids": [
+     "ars_nouveau:enchanting_apparatus",
+     "ars_nouveau:arcane_core",
+     "ars_nouveau:arcane_pedestal",
+     "ars_nouveau:imbuement_chamber"
+    ],
+    "note": "Enchanting Apparatus setup: place the Arcane Core on the ground, the apparatus on top of it, and eight pedestals around it. Load the pedestals and the centre item and the craft runs on its own."
+   },
+   {
+    "claim": "Source Gems are the universal currency -- almost every recipe in the mod wants them. You can mine Source Gem ore, but the reliable route is producing them from Source.",
+    "video": "4vX0YAKZ35I",
+    "ids": [
+     "ars_nouveau:source_gem",
+     "ars_nouveau:source_gem_block",
+     "ars_nouveau:imbuement_chamber"
+    ],
+    "note": "Source Gems are used in almost everything in Ars Nouveau; mine Source Gem ore whenever a mining trip passes it."
+   },
+   {
+    "claim": "Source Jars come next -- they are the mod's batteries. You need a way to MAKE Source and a place to PUT it before any machine will run, and a Sourcelink with no jar next to it is wasted.",
+    "video": "4vX0YAKZ35I",
+    "ids": [
+     "ars_nouveau:source_jar",
+     "ars_nouveau:agronomic_sourcelink"
+    ],
+    "note": "Source jars store the source that the sourcelinks generate - production and storage are separate blocks."
+   },
+   {
+    "claim": "A spell is a FORM plus an EFFECT, in that order. At the start you have three forms -- Touch, Self and Projectile -- and two effects, Harm and Craft. Pick the form first, then the effect; Projectile plus Harm is everyone's first spell.",
+    "video": "4vX0YAKZ35I",
+    "ids": [
+     "ars_nouveau:glyph_touch",
+     "ars_nouveau:glyph_self",
+     "ars_nouveau:glyph_projectile",
+     "ars_nouveau:glyph_harm",
+     "ars_nouveau:glyph_craft",
+     "ars_nouveau:novice_spell_book"
+    ],
+    "note": "A first spell is a form plus an effect: the starting forms are touch, self and projectile, and a projectile-with-harm combination makes a working damage spell immediately."
+   },
+   {
+    "claim": "Glyphs are what expand your spell vocabulary, and the Worn Notebook lists every tier-1 glyph together with the item each one needs. Leap, Snare, Ignite, Light and Amplify are the ones guides single out as immediately useful.",
+    "video": "4vX0YAKZ35I",
+    "ids": [
+     "ars_nouveau:glyph_leap",
+     "ars_nouveau:glyph_snare",
+     "ars_nouveau:glyph_ignite",
+     "ars_nouveau:glyph_light",
+     "ars_nouveau:glyph_amplify",
+     "ars_nouveau:worn_notebook",
+     "ars_nouveau:spell_parchment",
+     "ars_nouveau:scribes_table"
+    ],
+    "note": "Glyphs are the forms, effects and boosts spells are assembled from. The notebook lists every tier-1 glyph with the items its craft needs; Leap, Snare, Ignite, Light and Amplify are useful early picks."
+   },
+   {
+    "claim": "Sourcelinks are how Source is actually generated, and the Agronomic Sourcelink (crops growing nearby) is the one guides recommend starting with. Place it near a farm and let it feed jars.",
+    "video": "MLzDiF1nQjE",
+    "ids": [
+     "ars_nouveau:agronomic_sourcelink",
+     "ars_nouveau:alchemical_sourcelink",
+     "ars_nouveau:volcanic_sourcelink",
+     "ars_nouveau:mycelial_sourcelink",
+     "ars_nouveau:source_jar"
+    ],
+    "note": "The Agronomic Sourcelink is the usual first source generator - it sits flat next to farmland, takes little setup, and produces plenty of source."
+   },
+   {
+    "claim": "Spell books tier up rather than being crafted once: Novice, then Mage's, then Archmage. Jar-verified progression -- the Archmage book is gated behind the Wilden Tribute, so it is a post-boss item, not a craft.",
+    "video": null,
+    "ids": [
+     "ars_nouveau:novice_spell_book",
+     "ars_nouveau:apprentice_spell_book",
+     "ars_nouveau:archmage_spell_book",
+     "ars_nouveau:wilden_tribute"
+    ],
+    "note": "(jar advancement DAG, ars_nouveau-1.20.1-4.12.7: root -> novice_spell_book -> apprentice_spell_book -> wilden_tribute -> archmage_spell_book)"
+   }
+  ],
+  "gates": [
+   {
+    "claim": "Get the Dominion Wand before you try to build any automation. It is what links machines to each other -- right-click the source, then right-click the destination. Sourcelinks, relays and jars will not talk to one another until you have it, and there is a distance limit on each link.",
+    "video": "MLzDiF1nQjE",
+    "ids": [
+     "ars_nouveau:dominion_wand",
+     "ars_nouveau:source_jar",
+     "ars_nouveau:agronomic_sourcelink"
+    ],
+    "note": "The Dominion Wand links jars and machines: click the source jar, then the target, and mind the distance cap between linked blocks."
+   },
+   {
+    "claim": "The Enchanting Apparatus is gated behind the Imbuement Chamber, and almost everything else is gated behind the Apparatus -- spell turrets, the Alteration Table, Warp Scrolls, potion machines and the Scryer's Oculus all sit downstream of it in the mod's own advancement tree.",
+    "video": null,
+    "ids": [
+     "ars_nouveau:enchanting_apparatus",
+     "ars_nouveau:imbuement_chamber",
+     "ars_nouveau:basic_spell_turret",
+     "ars_nouveau:magebloom_crop",
+     "ars_nouveau:alteration_table",
+     "ars_nouveau:warp_scroll",
+     "ars_nouveau:potion_jar",
+     "ars_nouveau:scryers_oculus"
+    ],
+    "note": "(jar advancement DAG: imbuement_chamber -> enchanting_apparatus -> {basic_spell_turret, magebloom_crop, potion_jar, scryers_oculus}; magebloom_crop -> {alteration_table, warp_scroll})"
+   },
+   {
+    "claim": "Familiars are gated behind the Ritual Brazier, not behind spellcasting. If you want a Starbuncle, Drygmy, Whirlisprig or Wixie working for you, the brazier and its ritual tablets come first.",
+    "video": null,
+    "ids": [
+     "ars_nouveau:ritual_brazier",
+     "ars_nouveau:drygmy_charm",
+     "ars_nouveau:starbuncle_charm",
+     "ars_nouveau:whirlisprig_charm",
+     "ars_nouveau:wixie_charm",
+     "ars_nouveau:mob_jar"
+    ],
+    "note": "(jar advancement DAG: root -> ritual_brazier -> {familiar, amethyst_golem_charm, mob_jar, ritual_gravity})"
+   }
+  ],
+  "bosses": [
+   {
+    "claim": "The Wilden Chimera is the mod's boss and the Wilden Tribute is its gate. The Tribute is what upgrades you to the Archmage Spell Book and unlocks the Summon Focus, so the fight sits between mid and late game rather than at the end.",
+    "video": null,
+    "ids": [
+     "ars_nouveau:wilden_tribute",
+     "ars_nouveau:archmage_spell_book",
+     "ars_nouveau:summon_focus"
+    ],
+    "note": "(jar advancement DAG: apprentice_spell_book -> wilden_tribute -> {archmage_spell_book, summon_focus, wilden_explosion})"
+   }
+  ],
+  "traps": [
+   {
+    "claim": "DO NOT BONEMEAL CROPS UNDER AN AGRONOMIC SOURCELINK. It only harvests the energy of natural growth -- bonemealed crops produce no Source at all, so the fastest-looking farm is the one that generates nothing.",
+    "video": "4vX0YAKZ35I",
+    "ids": [
+     "ars_nouveau:agronomic_sourcelink",
+     "ars_nouveau:source_jar"
+    ],
+    "note": "Bone meal does not count for source generation - crops must grow naturally or the sourcelink yields nothing."
+   },
+   {
+    "claim": "Plant Sourceberries or Archwood under an Agronomic Sourcelink rather than wheat -- the mod's own crops pay a bonus over vanilla ones.",
+    "video": "4vX0YAKZ35I",
+    "ids": [
+     "ars_nouveau:sourceberry_bush",
+     "ars_nouveau:agronomic_sourcelink",
+     "ars_nouveau:blue_archwood_log",
+     "ars_nouveau:magebloom_crop"
+    ],
+    "note": "Sourceberry bushes, archwood trees and the mod's own crops give bonus source over vanilla plants."
+   },
+   {
+    "claim": "VERSION WARNING FOR ANYONE WRITING QUESTS FROM OLDER ARS NOUVEAU GUIDES. Most tutorials on YouTube teach a Glyph Press, Magic Clay, Marvelous Clay, Arcane Stone and a Crystallizer. NONE of those ids exist in ars_nouveau-1.20.1-4.12.7 -- they were removed. Glyphs are now made with Spell Parchment at a Scribe's Table, and Source Gems come from the Imbuement Chamber. Any quest built from a pre-1.20 guide's recipes will reference items that are not in the pack.",
+    "video": null,
+    "ids": [
+     "ars_nouveau:scribes_table",
+     "ars_nouveau:spell_parchment",
+     "ars_nouveau:imbuement_chamber",
+     "ars_nouveau:source_gem"
+    ],
+    "note": "(id check against ars_nouveau-1.20.1-4.12.7: glyph_press, magic_clay, marvelous_clay, arcane_stone and crystallizer all absent)"
+   }
+  ],
+  "signature": [
+   {
+    "claim": "Writing your own spells is the whole point of the mod. Glyphs go on Spell Parchment at a Scribe's Table and are then inscribed into a spell book; the book tiers are just how many glyphs you can fit in a spell.",
+    "video": null,
+    "ids": [
+     "ars_nouveau:spell_parchment",
+     "ars_nouveau:scribes_table",
+     "ars_nouveau:novice_spell_book",
+     "ars_nouveau:apprentice_spell_book",
+     "ars_nouveau:archmage_spell_book"
+    ],
+    "note": "(mod structure; the transcribed guides were too degraded to quote reliably on spellcrafting)"
+   },
+   {
+    "claim": "The Patchouli book ships its own designed teaching order, which is worth mirroring in quests: Getting Started, Resources, tier 1/2/3 spells, Source, Machines, Automation, Enchanting and Equipment, then Rituals, Familiars and Armor.",
+    "video": null,
+    "ids": [
+     "ars_nouveau:worn_notebook",
+     "ars_nouveau:imbuement_chamber",
+     "ars_nouveau:enchanting_apparatus",
+     "ars_nouveau:ritual_brazier"
+    ],
+    "note": "(jar patchouli category sortnums, ars_nouveau-1.20.1-4.12.7: getting_started 0, resources 1, glyphs_1 2, glyphs_2 3, glyphs_3 4, source 5, machines 6, automation 7, enchantments/equipment 8, rituals 10, familiars 11, armor 12)"
+   }
+  ]
+ }
+}

@@ -1,0 +1,140 @@
+{
+ "mod": "farmersrespite",
+ "verified_against": "farmersrespite-1.20.1-2.1.2.jar",
+ "item_count_in_jar": 75,
+ "parent_mod": "farmersdelight",
+ "chain": [
+  {
+   "id": "farmersrespite:wild_tea_bush",
+   "title": "Tea, Growing Untended",
+   "desc": "Wild tea bushes generate in the world. Farmer's Respite follows Farmer's Delight's wild-patch pattern exactly, and this is where the whole mod starts."
+  },
+  {
+   "id": "farmersrespite:tea_seeds",
+   "title": "Taking A Cutting",
+   "desc": "Seeds from a wild bush. Tea bushes oxidise as they age, so planting them starts a clock you have to read."
+  },
+  {
+   "id": "farmersrespite:green_tea_leaves",
+   "title": "Picked Young",
+   "desc": "Harvest a tea bush early and the leaves are green. Timing the harvest is the mod's one real mechanic."
+  },
+  {
+   "id": "farmersrespite:kettle",
+   "title": "The Second Cooking Block",
+   "desc": "The Kettle is to drinks what Farmer's Delight's Cooking Pot is to stews. Every tea, coffee and cider in the mod is poured out of it into a glass bottle."
+  },
+  {
+   "id": "farmersrespite:green_tea",
+   "title": "The First Brew",
+   "desc": "Kettle-poured from green leaves. Green tea gives a mining-speed effect, which is what makes this mod worth installing rather than merely pleasant."
+  },
+  {
+   "id": "farmersrespite:yellow_tea_leaves",
+   "title": "Left A Little Longer",
+   "desc": "Let a bush oxidise one stage past green. Same plant, different harvest window, different drink."
+  },
+  {
+   "id": "farmersrespite:black_tea_leaves",
+   "title": "Fully Oxidised",
+   "desc": "The last harvest stage. Black leaves are the strongest and the slowest to come round."
+  },
+  {
+   "id": "farmersrespite:coffee_beans",
+   "title": "An Invasive Crop",
+   "desc": "Coffee does not grow well in the Overworld. Plant it next to other crops and it feeds on them to grow - the mod's own advancement says so outright."
+  },
+  {
+   "id": "farmersrespite:coffee_berries",
+   "title": "Picking The Cherries",
+   "desc": "Harvested off a coffee bush. Knife them on a cutting board and they give the beans back."
+  },
+  {
+   "id": "farmersrespite:strong_coffee",
+   "title": "Left On The Heat",
+   "desc": "Every drink in this mod has three strengths - normal, long and strong - decided by how long the Kettle brews and how much you load in."
+  },
+  {
+   "id": "farmersrespite:coffee_cake",
+   "title": "Baked With Beans",
+   "desc": "Coffee beans, milk, egg, sugar and wheat. It cuts into slices and takes candles, like a vanilla cake."
+  },
+  {
+   "id": "farmersrespite:rose_hips",
+   "title": "Fruit Off The Rose",
+   "desc": "Rose hips are the mod's foraged ingredient rather than a planted one, and they carry the pie and the tea that need no bush at all."
+  },
+  {
+   "id": "farmersrespite:rose_hip_pie",
+   "title": "Pie From The Hedgerow",
+   "desc": "The rose hip line's bake, and one of only two pies in the mod."
+  },
+  {
+   "id": "farmersrespite:green_tea_cookie",
+   "title": "Matcha, Baked",
+   "desc": "Green tea leaves folded into wheat. It is the only baked good the tea line produces on its own."
+  },
+  {
+   "id": "farmersrespite:tea_curry",
+   "title": "Cooked With Leaves",
+   "desc": "Tea used as a savoury ingredient rather than a drink. The mod's most surprising recipe."
+  },
+  {
+   "id": "farmersrespite:black_cod",
+   "title": "Cured In Black Tea",
+   "desc": "Cooked cod, black tea leaves, cooked rice and cabbage. It needs the full oxidation ladder plus a Farmer's Delight rice paddy."
+  },
+  {
+   "id": "farmersrespite:blazing_chili",
+   "title": "Chili With Coffee In It",
+   "desc": "Cooking Pot: coffee beans, raw beef, blaze powder and nether wart. A Nether trip for a bowl of chili."
+  },
+  {
+   "id": "farmersrespite:nether_wart_sourdough",
+   "title": "Proved On Nether Wart",
+   "desc": "Sourdough started with nether wart instead of yeast. The strangest bread in the ecosystem."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "farmersrespite:green_tea",
+   "members": [
+    "farmersrespite:yellow_tea",
+    "farmersrespite:black_tea",
+    "farmersrespite:dandelion_tea",
+    "farmersrespite:rose_hip_tea",
+    "farmersrespite:gamblers_tea",
+    "farmersrespite:purulent_tea",
+    "farmersrespite:coffee"
+   ]
+  },
+  {
+   "hub": "farmersrespite:strong_green_tea",
+   "members": [
+    "farmersrespite:strong_black_tea",
+    "farmersrespite:strong_yellow_tea",
+    "farmersrespite:strong_rose_hip_tea",
+    "farmersrespite:strong_gamblers_tea",
+    "farmersrespite:strong_purulent_tea",
+    "farmersrespite:strong_apple_cider",
+    "farmersrespite:strong_hot_cocoa",
+    "farmersrespite:strong_melon_juice",
+    "farmersrespite:long_green_tea",
+    "farmersrespite:long_black_tea",
+    "farmersrespite:long_coffee",
+    "farmersrespite:long_apple_cider"
+   ]
+  },
+  {
+   "hub": "farmersrespite:green_tea_leaves_sack",
+   "members": [
+    "farmersrespite:black_tea_leaves_sack",
+    "farmersrespite:yellow_tea_leaves_sack",
+    "farmersrespite:coffee_beans_sack",
+    "farmersrespite:coffee_cake_slice",
+    "farmersrespite:rose_hip_pie_slice"
+   ]
+  }
+ ],
+ "notes": "48 ids come from the plain model-and-lang intersection; two more - farmersrespite:coffee_beans and farmersrespite:tea_seeds - are the crop seed items and needed extra proof, because their display names come from the BLOCK lang keys (block.farmersrespite.coffee_bush = 'Coffee Beans', block.farmersrespite.small_tea_bush = 'Tea Seeds') rather than item keys. They were confirmed three ways: an item model, a namespaced reference inside data/farmersrespite/*.json, and a class-constant match. Both are real ids and are the only way to plant either crop. The mod's defining mechanic, read straight from its own advancement descriptions in the lang file: tea bushes OXIDISE as they age, so green, yellow and black tea leaves are three harvest windows on the same plant rather than three plants - which is why the chain climbs green -> yellow -> black. Stunting a bush with an axe freezes it for decoration. Coffee is described as invasive and must be planted beside other crops to feed on them. Every drink exists in three strengths: base, long_* and strong_*, all produced by farmersrespite:kettle_pouring into a glass bottle, which is why the strength variants form their own wheel rather than cluttering the spine. The Kettle also re-pours three vanilla Farmer's Delight drinks (apple_cider, hot_cocoa, melon_juice) at strong and long strengths. The 30 lang-only entries are candle-cake and potted-bush block states and crop growth stages, correctly excluded. Parent items this addon assumes you already have: farmersdelight:cooking_pot, farmersdelight:cutting_board, farmersdelight:cooked_rice, farmersdelight:cabbage, farmersdelight:apple_cider / hot_cocoa / melon_juice, any forge:tools/knives knife."
+}

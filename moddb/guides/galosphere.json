@@ -1,0 +1,105 @@
+{
+ "mod": "galosphere",
+ "ids_in_jar": 181,
+ "videos": [
+  {
+   "id": "GgsFnDhMBc0",
+   "title": null,
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 4263
+  }
+ ],
+ "items": {
+  "galosphere:warped_anchor": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.5285,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "galosphere:sterling_horse_armor": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.224,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "galosphere:combustion_table": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3303,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "galosphere:sterling_helmet": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.254,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "galosphere:lumiere_block": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8288,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "galosphere:lumiere_shard": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7804,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  }
+ },
+ "human_notes": {
+  "entry": [
+   "No dimension and no portal. Galosphere is an Overworld underground-generation mod, so 'entry' means finding the Crystal Canyons, not lighting anything.",
+   "Crystal Canyons generate all around the Overworld but the guide says they are COMMONEST IN COLD BIOMES (GgsFnDhMBc0). That is the practical 'how do I get there' fact for a questbook.",
+   "The metal ore generates deep - the guide gives Y -63 to 8.",
+   "VERSION WARNING - the guide is for 1.19 and says SILVER throughout. In the 1.20.1 jar (Galosphere 1.5.2) there is NO silver item at all: the ore, ingot, nugget, block and bomb are all PALLADIUM. galosphere:palladium_ore, galosphere:palladium_ingot, galosphere:raw_palladium, galosphere:palladium_bomb. Every 'silver' statement below has been remapped to palladium against the jar."
+  ],
+  "boss_order": [
+   "NO bosses. This mod has no boss ladder at all - it is materials, mobs and utility blocks. A generated questline must not invent one."
+  ],
+  "order": [
+   "FIRST: find a Crystal Canyon (cold biomes) and mine galosphere:palladium_ore, smelting to galosphere:palladium_ingot.",
+   "THEN the armour: sterling gear is NOT crafted from scratch. You add one ingot to an existing LEATHER armour piece in a SMITHING TABLE. That gives galosphere:sterling_helmet, galosphere:sterling_chestplate, galosphere:sterling_leggings, galosphere:sterling_boots, and the same trick makes galosphere:sterling_horse_armor.",
+   "Its selling point is EXPLOSION RESISTANCE, which is the reason to make it over iron.",
+   "Crystal shards come from galosphere:sparkle, crystallised lizards living in the canyons, in Allurite, Lumiere and plain variants. Right-click a sparkle's tail with a pickaxe to extract galosphere:allurite_shard or galosphere:lumiere_shard; it regrows in 5-10 minutes, and feeding it glow lichen speeds that up. Silk Touch yields a whole cluster instead of shards. They breed with glow lichen.",
+   "A sparkle regrows a DIFFERENT crystal type after each extraction, so it is a renewable farm rather than a one-off."
+  ],
+  "gates": [
+   "No hard progression gates were described. The only real prerequisite is finding a Crystal Canyon, since the sparkles and the crystal blocks exist nowhere else."
+  ],
+  "traps": [
+   "galosphere:palladium_bomb only destroys LOW blast-resistance blocks - it is not a mining tool for stone, and a quest promising excavation with it would mislead.",
+   "The 'elusive' status effect from the aura block obfuscates your health, hunger and inventory bars - the health bar stays visually constant while you are actually taking damage. Genuinely dangerous to stand near without knowing.",
+   "Everything below the guide's 1.19 coverage is UNVERIFIED for 1.20.1. The jar contains a whole later feature set the video never mentions: galosphere:opal, galosphere:pink_salt, galosphere:monstrometer, galosphere:mining_pouch, galosphere:saltbound_tablet, galosphere:rope_dart, galosphere:preserved_flesh, galosphere:spectre_bound_spyglass, galosphere:bottle_of_spectre, galosphere:echo_bell. None of these are sourced from any guide I captured."
+  ],
+  "signature": [
+   "galosphere:palladium_ingot and the galosphere:sterling_chestplate set - the smithing-table-on-leather recipe is the mod's most distinctive craft.",
+   "galosphere:sparkle - a renewable, milkable crystal mob; the mod's best idea.",
+   "galosphere:allurite_shard and galosphere:lumiere_shard, plus galosphere:allurite_block and galosphere:lumiere_block.",
+   "galosphere:warped_anchor - charge it with an allurite block for 4 uses; an ender pearl landing nearby teleports you to the anchor instead.",
+   "galosphere:combustion_table - upgrades a galosphere:palladium_bomb with slimeballs (bouncier), string (longer fuse) or gunpowder (bigger blast), each to a max of level 3.",
+   "galosphere:lumiere_composter - right-click a part-filled composter with galosphere:lumiere_shard and it yields glowstone dust when full.",
+   "galosphere:charged_lumiere_block - what a galosphere:lumiere_block becomes when lightning strikes it."
+  ]
+ }
+}

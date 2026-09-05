@@ -1,0 +1,134 @@
+{
+  "mod": "repurposed_structures",
+  "verified_against": "repurposed_structures-7.1.25+1.20.1-forge.jar",
+  "item_count_in_jar": 0,
+  "chain": [
+    {
+      "id": "structure:repurposed_structures:igloo_mushroom",
+      "title": "An Igloo Where It Never Snows",
+      "desc": "A vanilla igloo rebuilt for Mushroom Fields. Its chest table gives shears, a stone pickaxe, a golden apple, emeralds and sugar cane."
+    },
+    {
+      "id": "structure:repurposed_structures:village_cherry",
+      "title": "The Village in Bloom",
+      "desc": "A cherry-wood village placed in floral biomes. The house chest carries cherry saplings, pink petals and pink tulips alongside the usual village staples."
+    },
+    {
+      "id": "structure:repurposed_structures:pyramid_badlands",
+      "title": "Pyramid of Red Sand",
+      "desc": "A desert pyramid rebuilt for badlands. Note the loot is a TRAPPED chest table - it can hold a diamond, an enchanted golden apple and the Dune armour trim template."
+    },
+    {
+      "id": "structure:repurposed_structures:village_ocean",
+      "title": "The Village Under the Waves",
+      "desc": "A village that generates on deep ocean floors, with its own house and cartographer chests holding coral fans, glow ink sacs, buckets and a chest boat."
+    },
+    {
+      "id": "structure:repurposed_structures:mansion_jungle",
+      "title": "The Mansion in the Canopy",
+      "desc": "A woodland mansion rebuilt in jungle wood, with both a main and a storage chest table; the main one can drop a diamond chestplate and an enchanted golden apple."
+    },
+    {
+      "id": "structure:repurposed_structures:fortress_jungle",
+      "title": "A Fortress of Vines",
+      "desc": "A nether fortress rebuilt in the jungle, with center, hallway and shrine chest tables and spawn overrides for creeper, enderman, skeleton, spider, witch, wither skeleton and zombie."
+    },
+    {
+      "id": "structure:repurposed_structures:monument_icy",
+      "title": "The Frozen Monument",
+      "desc": "An ocean monument moved onto ice, spawning strays and vexes. Its chest can drop a sponge, an enchanted golden apple and the Tide armour trim template."
+    },
+    {
+      "id": "structure:repurposed_structures:bastion_underground",
+      "title": "The Bastion Below",
+      "desc": "A bastion buried in the Overworld with four chest tables. The treasure one is the prize: diamond armour, a skeleton skull and a netherite upgrade smithing template."
+    },
+    {
+      "id": "structure:repurposed_structures:city_overworld",
+      "title": "The City in the Giant Trees",
+      "desc": "A full Overworld city, placed only in the mod's giant_trees biome collection. Its chest table runs to diamonds, diamond horse armour and a compass."
+    },
+    {
+      "id": "structure:repurposed_structures:ancient_city_ocean",
+      "title": "The Deep City Is Wet",
+      "desc": "An ancient city rebuilt on the deep ocean floor. Its chest can hold a heart of the sea, diamond leggings, music discs and a disc fragment."
+    },
+    {
+      "id": "structure:repurposed_structures:temple_nether_basalt",
+      "title": "Temple in the Basalt Deltas",
+      "desc": "A desert temple rebuilt for basalt deltas, with both a chest and a dispenser table. The chest yields gilded blackstone, netherite scrap and the Wild armour trim template."
+    },
+    {
+      "id": "structure:repurposed_structures:temple_nether_soul",
+      "title": "Temple of Soul Sand",
+      "desc": "The soul sand valley temple. Its chest table gives soul torches, bone blocks, a gold block, netherite scrap and the Wild armour trim template."
+    },
+    {
+      "id": "structure:repurposed_structures:village_crimson",
+      "title": "Piglins Keep a Village",
+      "desc": "A full village in the crimson forest with five chest tables - house, fisher, tannery, cartographer and weaponsmith. The weaponsmith stocks diamonds and gold gear."
+    },
+    {
+      "id": "structure:repurposed_structures:village_warped",
+      "title": "The Village That Glows Blue",
+      "desc": "The warped forest counterpart, also five chest tables. Its cartographer chest holds maps, compasses and nether wart."
+    },
+    {
+      "id": "structure:repurposed_structures:shipwreck_nether_bricks",
+      "title": "A Wreck in the Lava Sea",
+      "desc": "A shipwreck built from nether brick. Its single treasure chest is the strongest wreck table in the mod: ancient debris, netherite scrap, a netherite ingot, an elytra and the Coast trim template."
+    },
+    {
+      "id": "structure:repurposed_structures:monument_nether",
+      "title": "The Monument in the Nether",
+      "desc": "An ocean monument rebuilt in the Nether, spawning ghasts, magma cubes and wither skeletons. Its chest can drop ancient debris, netherite scrap, a ghast tear and a sponge."
+    },
+    {
+      "id": "structure:repurposed_structures:stronghold_nether",
+      "title": "A Stronghold Under the Nether",
+      "desc": "A stronghold with hallway, library and storage room chest tables. The library holds ender eyes, a lodestone, a respawn anchor and the Eye armour trim template."
+    },
+    {
+      "id": "structure:repurposed_structures:city_nether",
+      "title": "The Gold City",
+      "desc": "An end city rebuilt in the Nether. Its chest table is almost entirely gold - blocks, ingots, a full gold kit and horse armour - plus blaze rods and an enchanted golden apple."
+    },
+    {
+      "id": "structure:repurposed_structures:ancient_city_nether",
+      "title": "The City That Burned",
+      "desc": "An ancient city in the Nether, spawning ghasts and wither skeletons. Its chest drops ancient debris, a ghast tear and the Pigstep, Blocks and Otherside discs."
+    },
+    {
+      "id": "structure:repurposed_structures:outpost_end",
+      "title": "An Outpost on the Islands",
+      "desc": "A pillager outpost rebuilt in the End, with phantom spawns. Its loot is stored in SHULKER BOXES rather than chests, holding diamond gear and the Sentry trim template."
+    },
+    {
+      "id": "structure:repurposed_structures:mineshaft_end",
+      "title": "Rails Through the Void",
+      "desc": "A mineshaft threaded through the End islands, spawning endermen and endermites. Its chest table carries full diamond gear, end rods, dragon breath and chorus fruit."
+    },
+    {
+      "id": "structure:repurposed_structures:pyramid_end",
+      "title": "The Purpur Pyramid",
+      "desc": "A desert pyramid rebuilt in purpur, with both a chest and a trapped chest table. It can drop an elytra, a shulker shell, an end crystal and the Dune trim template."
+    },
+    {
+      "id": "structure:repurposed_structures:shipwreck_end",
+      "title": "The Wreck Among the Islands",
+      "desc": "An End shipwreck with map, supply and treasure tables. The treasure chest can yield an elytra, dragon breath and the Coast armour trim template."
+    },
+    {
+      "id": "structure:repurposed_structures:stronghold_end",
+      "title": "The Stronghold at the Edge",
+      "desc": "An End stronghold whose hallway, library and storage room loot all sits in shulker boxes. The library holds a respawn anchor, a lodestone and the Eye trim template."
+    },
+    {
+      "id": "structure:repurposed_structures:ancient_city_end",
+      "title": "The Last City",
+      "desc": "The End ancient city, spawning endermites and phantoms. Its chest drops end crystals, end rods, an ender chest, dragon breath and the Mellohi disc."
+    }
+  ],
+  "collections": [],
+  "notes": "REPURPOSED STRUCTURES ADDS NO ITEMS. assets/repurposed_structures/ contains only lang files (11 locales) and two logo pngs - there are ZERO models/item entries, ZERO blockstates and ZERO item./block. lang keys. item_count_in_jar is 0 and collections is empty because there is nothing to put in a wheel. This is a pure worldgen mod: it re-skins vanilla structures for biomes that never had them. CONTENT: 101 structures at data/repurposed_structures/worldgen/structure/*.json and 173 loot tables at data/repurposed_structures/loot_tables/. Every id in the chain above is one of those 101 files, fully namespaced, checked by an independent second pass. LOOT EVIDENCE: 95 of the 101 structures resolve to at least one loot table. Resolution used two methods that agree: (a) following each structure json's resource ids through worldgen/template_pool and gunzipping the referenced data/repurposed_structures/structures/*.nbt to read the LootTable strings out of the raw NBT, and (b) the mod's own strict path convention, structure <family>_<variant> -> loot_tables/{chests|trapped_chests|shulker_boxes|dispensers}/<family plural>/<variant>. Method (b) is needed because the mansion and monument structures are code-assembled (nbt=0 in the walk) yet still ship chests/mansions/* and chests/monuments/* tables. THE ONLY 6 STRUCTURES WITH NO LOOT TABLE AT ALL are the six witch huts - witch_hut_birch, witch_hut_dark_forest, witch_hut_giant_tree_taiga, witch_hut_mangrove, witch_hut_oak and witch_hut_taiga. They carry witch and cat spawn overrides but no chest, matching vanilla's chestless swamp hut, and none of them is used in the chain. Loot contents quoted in the descriptions were read out of the loot table json: bastions/underground/treasure lists minecraft:netherite_upgrade_smithing_template; shipwrecks/nether_bricks/treasure lists netherite_ingot, ancient_debris and elytra; pyramids/end and shipwrecks/end/treasure both list elytra; ancient_cities/ocean lists heart_of_the_sea; ancient_cities/nether lists music_disc_pigstep. Note the two loot forms that are easy to get wrong and are called out in the entries: pyramid_badlands and pyramid_nether/ocean use trapped_chests/ tables, and outpost_end plus stronghold_end use shulker_boxes/ tables rather than chests. Most tables also roll TABLE repurposed_structures:chests/lucky_pool, which is banners plus experience bottles. PLACEMENT: every biomes field is a #repurposed_structures:has_structure/<family>/<variant> tag that resolves to one of the mod's own #repurposed_structures:collections/* biome collections (nether, end, deep_oceans, jungles, badlands, mushrooms, giant_trees, nether_crimson_forests, nether_warped_forests, nether_souls, nether_basalts, icy, floral), which is what the descriptions above name. SELECTION: 25 of 101 were kept. The rest are near-duplicates - the mod ships 13 mineshaft variants, 12 outposts, 14 villages, 10 pyramids and 8 mansions that differ only in wood and biome, and questing more than one of each would be filler. Distinctiveness plus loot strength decided the cut. NOT USED AS CHAIN IDS: the mod's dungeon and well content (chests/dungeons/*, archaeology/well_*) is real loot but belongs to configured_features, not to any file under worldgen/structure/, so there is no structure id to point a structure task at. No template_pool, structure_set or processor names appear as ids. ID FORM: 'structure:' + a fully namespaced id; the prefix mirrors the existing kill: and dim: prefixes and maps to the generator's {\"type\":\"structure\",\"structure\":\"<id>\"} task. autoquestgen.py's chain loader currently strips only kill:/dim:, so it needs the same branch for structure:. LOADER: META-INF/mods.toml, modId repurposed_structures, version 7.1.25+1.20.1-forge, minecraft [1.20.1,1.21), forge [46.0.1,), no fabric.mod.json - a genuine 1.20.1 Forge build."
+}

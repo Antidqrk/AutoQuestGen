@@ -1,0 +1,49 @@
+{
+ "mod": "dreadsteel",
+ "verified_against": "dreadsteel-1.20.1-1.2.0.jar",
+ "item_count_in_jar": 11,
+ "chain": [
+  {
+   "id": "dreadsteel:dreadsteel_ingot",
+   "title": "You Hear Whispers Coming From the Flames",
+   "desc": "Six Ice and Fire Dread Shards around one Dragonsteel Fire, one Dragonsteel Ice and one Dragonsteel Lightning ingot, for three Dreadsteel. It is the only recipe in the mod with an outside ingredient."
+  },
+  {
+   "id": "dreadsteel:dreadsteel_helmet",
+   "title": "Immune to Fire, Spikes and Lightning",
+   "desc": "Five ingots. The helmet alone does little - the mod's set bonus needs all four pieces, and only then does the immunity apply."
+  },
+  {
+   "id": "dreadsteel:dreadsteel_shield",
+   "title": "Incinerates All Projectiles",
+   "desc": "Four ingots around an Ice and Fire Witherbone. Held up it burns arrows out of the air and sets melee attackers alight."
+  },
+  {
+   "id": "dreadsteel:dreadsteel_scythe",
+   "title": "A Magical Spinning Blade",
+   "desc": "Two ingots, a Witherbone, a wither skeleton skull and a NETHER STAR - the most expensive thing in the mod. Swinging it throws a blade that pierces armour."
+  },
+  {
+   "id": "dreadsteel:kit_default",
+   "title": "Consume to Recolour",
+   "desc": "A book and a purple dye. Using one dyes every Dreadsteel item you are holding or wearing at once; black, bronze and white kits exist too."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "dreadsteel:dreadsteel_helmet",
+   "members": [
+    "dreadsteel:dreadsteel_chestplate",
+    "dreadsteel:dreadsteel_leggings",
+    "dreadsteel:dreadsteel_boots",
+    "dreadsteel:dreadsteel_shield",
+    "dreadsteel:dreadsteel_scythe",
+    "dreadsteel:kit_default",
+    "dreadsteel:kit_black",
+    "dreadsteel:kit_bronze",
+    "dreadsteel:kit_white"
+   ]
+  }
+ ],
+ "notes": "THE CHAIN IS FIVE STEPS AND THAT IS DELIBERATE - this is a small Ice and Fire addon, not a truncated write-up. The entire jar is 90 files: one lang file, 37 item models, 40 textures, 11 recipes and 26 classes. Item set = 37 stems of assets/dreadsteel/models/item/*.json intersected with item.dreadsteel.* lang keys = 11, and there are ZERO block.dreadsteel.* keys, zero blockstates, zero loot tables, zero advancements, zero structures and zero dimensions. The 26 models with no lang key are ALL render states, which is why they are excluded and named here so nobody re-adds them: dreadsteel_{helmet,chestplate,leggings,boots,scythe,shield}_{black,bronze,white} are the recoloured variants the cosmetic kits switch between, dreadsteel_shield_blocking plus its three colours are the raised-shield poses, and dreadsteel_scythe_projectile_{default,black,bronze,white} are the thrown blade. NO ENTITIES ARE QUESTABLE. net/mindoth/dreadsteel/registries/DreadsteelEntities.class registers four EntityScytheProjectile classes (Default, Black, Bronze, White) with matching renderers, but assets/dreadsteel/lang/en_us.json contains NOT ONE entity.dreadsteel.* key, no spawn egg and no loot table - they are the scythe's thrown blade in four colours, exactly the projectile trap the brief describes, and no kill: step exists in this file or could. THE CRITICAL DEPENDENCY FACT: META-INF/mods.toml declares only three mandatory dependencies - forge [47,), minecraft [1.20,) and shadowizardlib [1.2.0,) - and does NOT list iceandfire. It nevertheless has a hard content dependency on it, because data/dreadsteel/recipes/dreadsteel_ingot.json is the sole source of dreadsteel:dreadsteel_ingot and its four ingredients are iceandfire:dread_shard, iceandfire:dragonsteel_fire_ingot, iceandfire:dragonsteel_ice_ingot and iceandfire:dragonsteel_lightning_ingot, while dreadsteel_shield and dreadsteel_scythe additionally need iceandfire:witherbone. WITHOUT ICE AND FIRE INSTALLED, TEN OF THE ELEVEN ITEMS ARE UNOBTAINABLE and only the four cosmetic kits (book + dye) can be made. Anyone placing this chain must gate it behind Ice and Fire's three Dragonsteel tiers, which is its true position: all three dragon types have to be killed for their dragonsteel before the first Dreadsteel ingot exists. Note that iceandfire was NOT found in the target pack's mods folder at the time of writing, so this chain may currently be dead content - that is a pack-assembly question, not a jar question, and the jar itself is a correct 1.20.1 Forge build. Recipe graph read from all eleven recipe files: dreadsteel_ingot <- 6 dread_shard + the three dragonsteel ingots (yields 3); helmet <- 5 ingots; chestplate <- 8; leggings <- 7; boots <- 4; shield <- 4 ingots + witherbone; scythe <- 2 ingots + witherbone + wither_skeleton_skull + nether_star; kit_{default,black,bronze,white} <- book + {purple,black,brown,white} dye. Item behaviour quoted from the mod's own tooltip strings: tooltip.dreadsteel.dreadsteel_setbonus ('Full Set: Immunity to damage from Fire, Spikes and Lightning'), tooltip.dreadsteel.dreadsteel_shield ('While Blocking: Incinerates all projectiles and burns melee attackers'), tooltip.dreadsteel.dreadsteel_scythe ('While Attacking: Summon a magical spinning blade, piercing all enemies and armor on hit'), tooltip.dreadsteel.cosmetic_kit ('Consume to dye all currently equipped and held Dreadsteel items') and tooltip.dreadsteel.dreadsteel_ingot ('You hear whispers coming from the flames'). ARMOUR RULE APPLIED: only dreadsteel_helmet is a chain step; chestplate, leggings and boots are wheel members. CONSENSUS CONFLICT (moddb): moddb lists eight ids at 3 packs each - dreadsteel_ingot (0.0), dreadsteel_boots (0.143), dreadsteel_chestplate (0.286), dreadsteel_scythe (0.429), dreadsteel_helmet (0.571), kit_default (0.714), dreadsteel_leggings (0.857), dreadsteel_shield (1.0). All eight are real ids in this jar and only three ids in the mod are missing from that list (the other three kits). No ordering conflict is possible beyond the armour: every item except the ingot is one crafting step from the ingot and nothing gates anything else, so consensus and the recipe graph agree that dreadsteel_ingot comes first and everything else is flat. The consensus habit of listing the four armour pieces as four separate progression positions was NOT followed; they are one wheel."
+}

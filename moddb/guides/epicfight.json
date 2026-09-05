@@ -1,0 +1,103 @@
+{
+ "mod": "epicfight",
+ "jar": "epicfight__epic-fight-20.14.17-mc1.20.1-forge.jar",
+ "ids_in_jar": 42,
+ "entities_in_jar": 0,
+ "videos": [],
+ "items": {},
+ "entities": {},
+ "note": "no transcript reached; human_notes are jar-derived",
+ "human_notes": {
+  "_source": "jar only. NOT COVERED by guide video: guide_corpus.json has no banked ids for this mod and fleet-wide search was disabled, so no transcript was attempted. Everything here is structural.",
+  "boss_order": [],
+  "prep": [
+   "Epic Fight is a combat-SYSTEM mod, not a content mod: it replaces the melee system with combos, stances and a skill bar. It adds almost nothing to kill or collect",
+   "Its 42 items are mostly weapons that plug into the new movesets plus the skill-book items; there are no mobs and no bosses"
+  ],
+  "order": [
+   "No progression to mine — the mod's 'progression' is the player learning the combat system, which a quest book can only gesture at"
+  ],
+  "key_drops": [],
+  "traps": [
+   "epicfight registers 3 entities, none of which is a spawnable mob — do not write a kill task for this namespace",
+   "Because it rewires vanilla combat, advice from other mods' guides about blocking, shields and critical hits may not hold while Epic Fight is installed. Worth flagging when writing combat prep text for cataclysm, iceandfire and mowziesmobs quests"
+  ],
+  "signature": []
+ },
+ "verified_entities": {},
+ "unusable_entities": {
+  "epicfight:area_effect_breath": {
+   "name": "Dragon Breath",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "epicfight:wither_ghost": {
+   "name": "Wither Ghost",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "epicfight:wither_skeleton_minion": {
+   "name": "Wither's Minion",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  }
+ },
+ "fake_item_ids": [
+  "epicfight:skillbook_dodge",
+  "epicfight:skillbook_guard",
+  "epicfight:skillbook_identity",
+  "epicfight:skillbook_mover",
+  "epicfight:skillbook_passive",
+  "epicfight:uchigatana_sheath"
+ ],
+ "verified_items": [
+  "epicfight:bokken",
+  "epicfight:dagger",
+  "epicfight:diamond_dagger",
+  "epicfight:diamond_greatsword",
+  "epicfight:diamond_longsword",
+  "epicfight:diamond_spear",
+  "epicfight:diamond_tachi",
+  "epicfight:glove",
+  "epicfight:golden_dagger",
+  "epicfight:golden_greatsword",
+  "epicfight:golden_longsword",
+  "epicfight:golden_spear",
+  "epicfight:golden_tachi",
+  "epicfight:greatsword",
+  "epicfight:iron_dagger",
+  "epicfight:iron_greatsword",
+  "epicfight:iron_longsword",
+  "epicfight:iron_spear",
+  "epicfight:iron_tachi",
+  "epicfight:longsword",
+  "epicfight:netherite_dagger",
+  "epicfight:netherite_greatsword",
+  "epicfight:netherite_longsword",
+  "epicfight:netherite_spear",
+  "epicfight:netherite_tachi",
+  "epicfight:skillbook",
+  "epicfight:spear",
+  "epicfight:stone_dagger",
+  "epicfight:stone_greatsword",
+  "epicfight:stone_longsword",
+  "epicfight:stone_spear",
+  "epicfight:stone_tachi",
+  "epicfight:stray_hat",
+  "epicfight:stray_pants",
+  "epicfight:stray_robe",
+  "epicfight:tachi",
+  "epicfight:uchigatana",
+  "epicfight:wooden_dagger",
+  "epicfight:wooden_greatsword",
+  "epicfight:wooden_longsword",
+  "epicfight:wooden_spear",
+  "epicfight:wooden_tachi"
+ ]
+}

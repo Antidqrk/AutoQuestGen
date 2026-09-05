@@ -1,0 +1,64 @@
+{
+ "mod": "create_central_kitchen",
+ "verified_against": "create_central_kitchen-1.20.1-for-create-6.0.8-1.5.0.jar",
+ "item_count_in_jar": 34,
+ "parent_mod": "create",
+ "chain": [
+  {
+   "id": "create_central_kitchen:cooking_guide",
+   "title": "Teaching the Pot to Read",
+   "desc": "An obsidian plate, a canvas and a carrot, shapeless. Sneak and right-click a blaze burner with it to convert the burner into a Blaze Stove."
+  },
+  {
+   "id": "create_central_kitchen:miners_cooking_guide",
+   "title": "The Same Trick Underground",
+   "desc": "An obsidian plate, a canvas and a cave carrot. A second guide variant for the cookware Miner's Delight adds."
+  },
+  {
+   "id": "create_central_kitchen:tomato_sauce_bucket",
+   "title": "Sauce by the Bucket",
+   "desc": "A bucket and four bowls of tomato sauce, shapeless, and it unpacks into four bowls again. The mod turns sauce into a pumpable fluid."
+  },
+  {
+   "id": "create_central_kitchen:incomplete_hamburger",
+   "title": "Halfway to a Burger",
+   "desc": "The in-progress stage of a sequenced assembly that starts from bread and takes a patty, then lettuce and cheese, from deployers along a belt."
+  },
+  {
+   "id": "create_central_kitchen:incomplete_bacon_sandwich",
+   "title": "Bacon on the Line",
+   "desc": "The assembly intermediate for the bacon sandwich: bread on the belt, cooked bacon deployed onto it, then the greens."
+  },
+  {
+   "id": "create_central_kitchen:incomplete_chicken_sandwich",
+   "title": "Poultry, Partly Assembled",
+   "desc": "Bread carried past deployers holding cooked chicken and its trimmings; the sandwich only exists once the last step lands."
+  },
+  {
+   "id": "create_central_kitchen:incomplete_egg_sandwich",
+   "title": "Breakfast Mid-Build",
+   "desc": "The intermediate item of the egg sandwich assembly, one of five bread-based lines the Farmer's Delight datapack adds."
+  },
+  {
+   "id": "create_central_kitchen:incomplete_mutton_wrap",
+   "title": "Rolling the Wrap",
+   "desc": "The assembly stage between plain bread and a finished mutton wrap, deployed one ingredient at a time."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "create_central_kitchen:pumpkin_pie_slice",
+   "members": [
+    "create_central_kitchen:chocolate_cake_slice",
+    "create_central_kitchen:honey_cake_slice",
+    "create_central_kitchen:aloe_cake_slice",
+    "create_central_kitchen:passion_fruit_cake_slice",
+    "create_central_kitchen:yucca_cake_slice",
+    "create_central_kitchen:mulberry_pie_slice",
+    "create_central_kitchen:sweet_berry_cake_slice",
+    "create_central_kitchen:pumpkin_cake_slice"
+   ]
+  }
+ ],
+ "notes": "Verified against create_central_kitchen-1.20.1-for-create-6.0.8-1.5.0.jar (Forge/NeoForge, MC 1.20.1). All 34 ids come from assets/create_central_kitchen/models/item/*.json intersected with block./item. keys in the mod's en_us.json. SHORT HONEST CHAIN ON PURPOSE: this is a compatibility mod, not a content mod. The overwhelming majority of its data is cross-mod recipes that produce OTHER mods' items (Farmer's Delight, Neapolitan, Peculiars, Seasonals, Upgrade Aquatic, Miner's Delight, Autumnity, Atmospheric, Buzzier Bees, Collector's Reap, Corn Delight, End's Delight, Overweight Farming, Respiteful, Abnormals Delight), all shipped as fifteen bundled datapacks under datapacks/. PARENT ASSUMPTIONS: the chain starts after Create has supplied the blaze burner, belts, deployers, mechanical arms, the mechanical saw, the spout, basins for mixing and compacting, and pipes for the mod's fluids. Farmer's Delight is effectively required: the cooking guide recipe is gated on forge:mod_loaded farmersdelight and consumes farmersdelight:canvas, and all five sandwich/wrap sequenced assemblies live in datapacks/farmersdelight/. The real mechanic, confirmed from the mod's ponder text: sneak-right-click a Blaze Burner holding a Cooking Guide to turn it into a Blaze Stove; right-click the stove to open the guide menu and assign a recipe; the Cooking Pot above then becomes interactive with Mechanical Arms for both input and output, and a wrench while sneaking retrieves the guide. DROPPED as unobtainable in this jar (registered ids with no recipe anywhere in it, including all bundled datapacks): sap_bucket, syrup_bucket, aloe_gel_bucket, mulberry_jam_bucket, incomplete_apple_pie, incomplete_pumpkin_pie, incomplete_chorus_fruit_pie, incomplete_chorus_flower_pie, incomplete_lime_pie, incomplete_mulberry_pie, incomplete_sweet_berry_cheesecake, incomplete_portobello_burger, incomplete_portobello_quiche, incomplete_portobello_wrap. Also dropped: creative_tab_icon (a creative-tab placeholder), and incomplete_neapolitan_ice_cream_chocolate / incomplete_neapolitan_ice_cream_strawberry (real assemblies but gated entirely on Neapolitan). block.create_central_kitchen.blaze_stove exists as a lang key but has no item model, because the stove is a converted Create blaze burner and never exists as an item, so it cannot be a quest target. Every collection member is gated on a companion mod except pumpkin_pie_slice, which is cut from vanilla pumpkin pie: chocolate and honey cake slices need Create Crafts & Additions, aloe/passion fruit/yucca need Peculiars, mulberry needs Upgrade Aquatic, and sweet berry/pumpkin cake need Seasonals."
+}

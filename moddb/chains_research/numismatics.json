@@ -1,0 +1,130 @@
+{
+ "mod": "numismatics",
+ "verified_against": "CreateNumismatics-1.1.0+forge-mc1.20.1.jar",
+ "item_count_in_jar": 62,
+ "chain": [
+  {
+   "id": "numismatics:spur",
+   "title": "The Smallest Coin",
+   "desc": "The base denomination every other coin is valued against; carries no crafting recipe and enters play through vendors and bank accounts."
+  },
+  {
+   "id": "numismatics:bevel",
+   "title": "One Step Up the Purse",
+   "desc": "The second denomination in the coins tag, exchanged upward from spurs at a bank or terminal."
+  },
+  {
+   "id": "numismatics:sprocket",
+   "title": "Toothed and Traded",
+   "desc": "The third denomination; the coin ladder is defined in data/numismatics/tags/items/coins.json, not by any recipe."
+  },
+  {
+   "id": "numismatics:cog",
+   "title": "Middle of the Purse",
+   "desc": "The fourth denomination, and the one the Banking Guide is bought with."
+  },
+  {
+   "id": "numismatics:crown",
+   "title": "Heavy in the Hand",
+   "desc": "The fifth denomination, worth a large stack of spurs and rarely handled loose."
+  },
+  {
+   "id": "numismatics:sun",
+   "title": "The Largest Mint",
+   "desc": "The top denomination in the coins tag; the whole ladder converts down to spurs for any transaction."
+  },
+  {
+   "id": "numismatics:banking_guide",
+   "title": "Instructions for the Blaze",
+   "desc": "A sturdy sheet, paper and a cog; its only use is being applied to a Create Blaze Burner."
+  },
+  {
+   "id": "numismatics:blaze_banker",
+   "title": "A Teller Made of Fire",
+   "desc": "Made by using the Banking Guide on a Blaze Burner; holds an account in its own name so several players can share it."
+  },
+  {
+   "id": "numismatics:bank_terminal",
+   "title": "The Branch Office",
+   "desc": "An electron tube, industrial iron block and precision mechanism; opens your own account or any you are trusted with."
+  },
+  {
+   "id": "numismatics:white_id_card",
+   "title": "Papers, Please",
+   "desc": "Paper, a brass nugget, an iron plate and dye; identifies a player without granting any spending power."
+  },
+  {
+   "id": "numismatics:white_card",
+   "title": "Plastic Over Coin",
+   "desc": "A precision mechanism, an iron plate and dye; bound to a bank account so you can pay without carrying metal."
+  },
+  {
+   "id": "numismatics:white_authorized_card",
+   "title": "Signing for Someone Else",
+   "desc": "The same build on a GOLD plate rather than iron, granting spending rights on an account that is not yours."
+  },
+  {
+   "id": "numismatics:andesite_depositor",
+   "title": "The Coin Slot",
+   "desc": "An andesite casing and iron plates; charges a set price on right click and emits a redstone pulse once paid."
+  },
+  {
+   "id": "numismatics:brass_depositor",
+   "title": "Taking Payment Properly",
+   "desc": "A brass casing, electron tube and sturdy sheet; the upgraded depositor, which can draw from coins anywhere in your inventory."
+  },
+  {
+   "id": "numismatics:vendor",
+   "title": "Opening the Shop",
+   "desc": "A brass casing, electron tube and framed glass; a player-run stall that trades stocked items for coins."
+  },
+  {
+   "id": "numismatics:salepoint",
+   "title": "The Automated Counter",
+   "desc": "A vendor rebuilt with a placard, electron tube and precision mechanism for hands-off selling."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "numismatics:spur",
+   "members": [
+    "numismatics:bevel",
+    "numismatics:sprocket",
+    "numismatics:cog",
+    "numismatics:crown",
+    "numismatics:sun"
+   ]
+  },
+  {
+   "hub": "numismatics:vendor",
+   "members": [
+    "numismatics:salepoint",
+    "numismatics:andesite_depositor",
+    "numismatics:brass_depositor",
+    "numismatics:bank_terminal",
+    "numismatics:blaze_banker",
+    "numismatics:banking_guide"
+   ]
+  },
+  {
+   "hub": "numismatics:white_card",
+   "members": [
+    "numismatics:black_card",
+    "numismatics:blue_card",
+    "numismatics:brown_card",
+    "numismatics:cyan_card",
+    "numismatics:gray_card",
+    "numismatics:green_card",
+    "numismatics:light_blue_card",
+    "numismatics:light_gray_card",
+    "numismatics:lime_card",
+    "numismatics:magenta_card",
+    "numismatics:orange_card",
+    "numismatics:pink_card",
+    "numismatics:purple_card",
+    "numismatics:red_card"
+   ]
+  }
+ ],
+ "notes": "All 62 item-model stems verified against item.numismatics.X / block.numismatics.X keys - a clean 62/62, nothing dropped, and all 54 recipe results resolve to modelled items.\n\nCOIN LADDER, straight from the jar: data/numismatics/tags/items/coins.json lists spur, bevel, sprocket, cog, crown, sun in that order, and Coin.class confirms the same enum order plus toSpurs / getCoinsFromSpurAmount conversion helpers. That tag is the authoritative ordering. NONE of the six coins has a crafting recipe - there are no coin recipes anywhere in the jar and no coin loot tables. Coins enter the world through vendor trades (the mod's own hidden advancement is 'Money Laundering - Buy coins in a vendor') and through bank accounts. Write coin steps as acquisition or reward tasks, never as 'craft this'. Exact spur values are held in Coin.class bytecode constants and were not extracted, so no numeric values are asserted here.\n\nblaze_banker also has NO crafting recipe. It is made in-world by using numismatics:banking_guide on a Create Blaze Burner, confirmed by its tooltip ('Use on a _Blaze Burner_ to convert it into a _Blaze Banker_') and the mod's ponder text. Legitimate and obtainable, but it is a use-item-on-block transform, so the chain places banking_guide immediately before it.\n\nDELIBERATELY EXCLUDED - numismatics:creative_vendor. It is a verified id but is the creative-mode vendor that never runs out of stock, has no recipe, and should never be a task target.\n\nThis mod is a hard Create dependency: every single recipe pulls Create parts (brass_casing, electron_tube, precision_mechanism, sturdy_sheet, industrial_iron_block, framed_glass, placard) or numismatics internal plate and nugget tags. Nothing here is reachable before a working brass-age Create setup, which should gate the whole book section.\n\nPer-colour handling: there are 48 card items - 16 bank cards, 16 ID cards and 16 authorized cards, one per dye colour, all mechanically identical within their type. One representative of each of the three types sits in the chain (white_id_card, white_card, white_authorized_card) to teach the three tiers of access, and a single wheel off white_card carries 14 further colours. The remaining bank colour (yellow_card) and all 32 id_card and authorized_card colours are intentionally unquested - they are pure dye variants, and the wheel cap is 14 members. All of those ids are valid if a pack wants them.\n\nNot present in moddb.json, so there is no published-pack consensus to compare against; ordering here is taken entirely from the recipe graph and the coins tag."
+}

@@ -1,0 +1,152 @@
+{
+ "mod": "mcwwindows",
+ "verified_against": "mcw-mcwwindows-2.4.2-mc1.20.1forge.jar",
+ "item_count_in_jar": 315,
+ "chain": [
+  {
+   "id": "mcwwindows:window_base",
+   "title": "Glass and Sticks First",
+   "desc": "Eight glass around a stick, four at a time. The Window Base is the gate for this entire mod - almost every window in it takes a base as an ingredient, so nothing else can be built until you have one."
+  },
+  {
+   "id": "mcwwindows:window_half_bar_base",
+   "title": "Half the Bar",
+   "desc": "Shapeless from a Window Centre Bar Base, and back again. The two barred bases and the plain base are the three frames every window style is built on."
+  },
+  {
+   "id": "mcwwindows:window_centre_bar_base",
+   "title": "The Cross Bar",
+   "desc": "Shapeless, two from a half bar base. It is the frame the four-pane windows use."
+  },
+  {
+   "id": "mcwwindows:oak_window",
+   "title": "A Window That Resizes",
+   "desc": "A window base ringed by logs, four at a time. The Resizeable Window is the mod's default; the Rectangle version uses the half bar base and the Four Pane version the centre bar base."
+  },
+  {
+   "id": "mcwwindows:hammer",
+   "title": "Change Its Shape",
+   "desc": "An iron ingot, nuggets and a stick. The mod's hint is exact: 'Right click on a window, to change their shape'. It is the tool that makes one window id cover several silhouettes."
+  },
+  {
+   "id": "mcwwindows:key",
+   "title": "Lock It Shut",
+   "desc": "A window base and iron nuggets on a diagonal. 'Right click on a window, to lock them' - the second tool, and the reason the jar ships an iron-bars-toggle sound."
+  },
+  {
+   "id": "mcwwindows:oak_pane_window",
+   "title": "Thin, Not Deep",
+   "desc": "A window base ringed by logs, eight at a time. Pane windows are the flattest of the four window silhouettes and the widest family in the mod at 31 materials."
+  },
+  {
+   "id": "mcwwindows:oak_shutter",
+   "title": "Boards Over the Glass",
+   "desc": "Three trapdoors of the same wood in a column give three Shutters. The Louvered Shutter is the same column built from slabs instead, and it reaches into stone materials too."
+  },
+  {
+   "id": "mcwwindows:oak_blinds",
+   "title": "Slats You Can Close",
+   "desc": "Sticks over two rows of slabs, three at a time. The jar ships open and close sounds for them, so blinds are interactive rather than static."
+  },
+  {
+   "id": "mcwwindows:oak_curtain_rod",
+   "title": "Something to Hang It From",
+   "desc": "A stick between two logs, five at a time. Golden and metal rods use ingots and nuggets instead."
+  },
+  {
+   "id": "mcwwindows:white_curtain",
+   "title": "Cloth on the Rod",
+   "desc": "Two wool of one colour, three at a time. Curtains come in all sixteen colours and need a rod to hang on."
+  },
+  {
+   "id": "mcwwindows:white_mosaic_glass",
+   "title": "Patterned Panes",
+   "desc": "Eight stained glass of one colour around a dye of the same colour, eight at a time. Mosaic glass and its panes are sixteen colours each and are the only glass this mod adds that is not a window."
+  },
+  {
+   "id": "mcwwindows:one_way_glass",
+   "title": "See Out, Not In",
+   "desc": "Six glass and three black dye, six at a time. One-way glass and its pane are the mod's only functional glass and have no colour variants."
+  },
+  {
+   "id": "mcwwindows:andesite_parapet",
+   "title": "A Low Wall for the Ledge",
+   "desc": "Stone over stone and a stick, five at a time. Parapets run stone, log and plank versions and are the balcony rail rather than a window."
+  },
+  {
+   "id": "mcwwindows:cobblestone_arrow_slit",
+   "title": "A Slot to Shoot Through",
+   "desc": "Stone and slabs in a narrow column, three at a time. Eight arrow slits, all stone, all castle."
+  },
+  {
+   "id": "mcwwindows:mud_brick_gothic",
+   "title": "The Pointed Arch",
+   "desc": "Glass panes in a diamond of stone, four at a time. Seven Gothic Windows, one per brick type."
+  },
+  {
+   "id": "mcwwindows:metal_window",
+   "title": "Iron Instead of Wood",
+   "desc": "A window base ringed by iron blocks. The metal window, its rectangle, four-pane and pane versions are the only windows in the mod built from a metal block."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mcwwindows:red_curtain",
+   "members": [
+    "mcwwindows:orange_curtain",
+    "mcwwindows:yellow_curtain",
+    "mcwwindows:lime_curtain",
+    "mcwwindows:green_curtain",
+    "mcwwindows:cyan_curtain",
+    "mcwwindows:light_blue_curtain",
+    "mcwwindows:blue_curtain",
+    "mcwwindows:purple_curtain",
+    "mcwwindows:magenta_curtain",
+    "mcwwindows:pink_curtain",
+    "mcwwindows:brown_curtain",
+    "mcwwindows:gray_curtain",
+    "mcwwindows:light_gray_curtain",
+    "mcwwindows:black_curtain"
+   ]
+  },
+  {
+   "hub": "mcwwindows:red_mosaic_glass",
+   "members": [
+    "mcwwindows:orange_mosaic_glass",
+    "mcwwindows:yellow_mosaic_glass",
+    "mcwwindows:lime_mosaic_glass",
+    "mcwwindows:green_mosaic_glass",
+    "mcwwindows:cyan_mosaic_glass",
+    "mcwwindows:light_blue_mosaic_glass",
+    "mcwwindows:blue_mosaic_glass",
+    "mcwwindows:purple_mosaic_glass",
+    "mcwwindows:magenta_mosaic_glass",
+    "mcwwindows:pink_mosaic_glass",
+    "mcwwindows:brown_mosaic_glass",
+    "mcwwindows:gray_mosaic_glass",
+    "mcwwindows:light_gray_mosaic_glass",
+    "mcwwindows:black_mosaic_glass"
+   ]
+  },
+  {
+   "hub": "mcwwindows:spruce_window",
+   "members": [
+    "mcwwindows:birch_window",
+    "mcwwindows:jungle_window",
+    "mcwwindows:acacia_window",
+    "mcwwindows:dark_oak_window",
+    "mcwwindows:mangrove_window",
+    "mcwwindows:cherry_window",
+    "mcwwindows:spruce_window2",
+    "mcwwindows:birch_window2",
+    "mcwwindows:acacia_window2",
+    "mcwwindows:spruce_four_window",
+    "mcwwindows:birch_four_window",
+    "mcwwindows:acacia_four_window",
+    "mcwwindows:spruce_pane_window",
+    "mcwwindows:birch_pane_window"
+   ]
+  }
+ ],
+ "notes": "MACAW'S MODS SHARE ONE STRUCTURE: A SMALL NUMBER OF DISTINCT BLOCK TYPES CROSSED WITH A LARGE MATERIAL TABLE. The chain below is one step per distinct RECIPE SHAPE, not one per id, and the material tables go to wheels. MODDB: no consensus signal - moddb.json contains no key for any Macaw's mod - so every ordering here is the recipe graph alone and there is no conflict to record. Verified against mcw-mcwwindows-2.4.2-mc1.20.1forge.jar as shipped in this pack. ID DETECTION AND WIDENING - THIS IS THE INVERTED-NAMING JAR OF THE MACAW'S SET: 326 item models, 328 blockstates, 315 lang block./item. keys; models INTERSECT lang = 315, the count used, and all 315 have a recipe. NARROWED for 11 model-only stems, and the reason is a naming mismatch worth recording: the registered log windows are spelled stripped_<wood>_LOG_window, but the jar ALSO ships item models named stripped_<wood>_window with the _log_ dropped, for acacia, birch, cherry, crimson, dark oak, jungle, mangrove, oak, spruce and warped. Those ten have no lang key, no blockstate, no recipe and no loot table; the real ids are the _log_ spellings, which do have all four. The eleventh, window_bar, is a shared model part. WIDENING REJECTED for 18 blockstate-only stems: crimson_window, crimson_window2, crimson_four_window, crimson_plank_window, crimson_plank_window2, crimson_plank_four_window, stripped_crimson_log_window / _window2 / _four_window and the nine matching warped entries. Each has a blockstate pointing at a model under models/block/window_barred/ but no item model, no lang key, no recipe and no loot table, while the registered crimson and warped windows are spelled crimson_STEM_window and warped_STEM_window and do have all four. These are leftovers from the pre-1.16 stem naming. Between the two directions, 29 plausible-looking stems are excluded and the intersection is exactly right. THE GATE THAT MAKES THIS MOD A CHAIN: mcwwindows:window_base is an ingredient in nearly every window recipe in the jar, and window_half_bar_base and window_centre_bar_base convert into each other shapelessly and gate the Rectangle and Four Pane silhouettes respectively. No window can be made before the base, which is a genuine prerequisite rather than a flat table. TWO TOOLS: mcwwindows.hammer.desc = 'Right click on a window, to change their shape' and mcwwindows.key.desc = 'Right click on a window, to lock them'. The jar also ships open/close subtitles for windows, blinds and iron bars, so this mod's blocks are the most interactive of the Macaw's set after the fences. DISTINCT BLOCK TYPES: 51 name-stems, about 15 real shapes. Verified yields: window_base 4, window 4, window2 8, four_window 8, pane_window 8, shutter 3, louvered_shutter 3, blinds 3, curtain_rod 5, curtain 3, mosaic_glass 8, one_way_glass 6, parapet 5, arrow_slit 3, gothic 4, hammer 1, key 1. DROPS: the 10 stripped_<wood>_window orphan models, window_bar, and the 18 crimson/warped blockstate leftovers."
+}

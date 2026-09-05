@@ -1,0 +1,178 @@
+{
+ "mod": "unusualprehistory",
+ "verified_against": "unusualprehistory-1.5.0.3.jar",
+ "item_count_in_jar": 316,
+ "chain": [
+  {
+   "id": "unusualprehistory:mezo_fossil",
+   "title": "Bones in the Bedrock",
+   "desc": "Dropped by Stone and Deepslate Fossil ore; the Mesozoic Fossil is the raw feedstock of the whole extraction line."
+  },
+  {
+   "id": "unusualprehistory:encyclopedia",
+   "title": "Field Notes on the Dead",
+   "desc": "Any fossil plus a book. The Encyclopedia of Prehistory indexes 31 creatures and 14 plants with their diets and habitats."
+  },
+  {
+   "id": "unusualprehistory:flask",
+   "title": "Empty Glass, Waiting",
+   "desc": "Five glass in a U shape yields three Flasks; the Analyzer cannot be built without one."
+  },
+  {
+   "id": "unusualprehistory:analyzer",
+   "title": "Read What the Stone Remembers",
+   "desc": "Iron, copper, a Redstone Block and a Flask. It breaks fossils down into DNA Flasks on a weighted random table."
+  },
+  {
+   "id": "unusualprehistory:paleo_fossil",
+   "title": "Older Than the Dinosaurs",
+   "desc": "The Paleozoic Fossil from Deepslate Fossil ore, holding the mod's oldest and strangest genomes."
+  },
+  {
+   "id": "unusualprehistory:rex_flask",
+   "title": "The Tyrant, Bottled",
+   "desc": "One of 45 DNA Flasks the Analyzer can produce; this one carries Tyrannosaurus Rex."
+  },
+  {
+   "id": "unusualprehistory:organic_ooze",
+   "title": "Primordial Sludge",
+   "desc": "The growth medium the Cultivator runs on, and the part of the machine you cannot buy with metal."
+  },
+  {
+   "id": "unusualprehistory:cultivator",
+   "title": "Coax the Cells to Divide",
+   "desc": "Iron, copper, glass, a Redstone Block and Organic Ooze. It turns a DNA Flask into an egg, a sapling or an embryo."
+  },
+  {
+   "id": "unusualprehistory:dna_fridge",
+   "title": "Keep the Samples Cold",
+   "desc": "Copper, iron, blue ice and an Encrusted Organ; bulk storage for a growing flask collection."
+  },
+  {
+   "id": "unusualprehistory:rex_eggs",
+   "title": "The Clutch You Should Not Have Made",
+   "desc": "The Cultivator's output for Rex DNA; one of 22 egg items that hatch into live prehistoric animals."
+  },
+  {
+   "id": "unusualprehistory:amber_fossil",
+   "title": "Trapped in Golden Resin",
+   "desc": "Mined from Amber Ore; feeding it to the Analyzer yields the insect-borne genomes."
+  },
+  {
+   "id": "unusualprehistory:amber_shard",
+   "title": "A Chunk of Frozen Sunlight",
+   "desc": "The Amber Chunk dropped alongside the fossil, and the base of the mod's amber blocks and glass."
+  },
+  {
+   "id": "unusualprehistory:opal_fossil",
+   "title": "Bone Turned to Rainbow",
+   "desc": "From Opal Ore. Opalised remains carry genomes the ordinary rock never preserved."
+  },
+  {
+   "id": "unusualprehistory:frozen_fossil_item",
+   "title": "Locked in the Permafrost",
+   "desc": "Broken out of Permafrost Fossil Ore; it must be thawed by cooking before the Analyzer will read it."
+  },
+  {
+   "id": "unusualprehistory:encrusted_sack",
+   "title": "Something Is Moving Inside",
+   "desc": "Grown in the Cultivator from Encrusted DNA, and the only way to get an Encrusted Organ."
+  },
+  {
+   "id": "unusualprehistory:encrusted_organ",
+   "title": "Still-Living Tissue",
+   "desc": "Harvested from the Encrusted; both the Incubator and the DNA Fridge are built around one."
+  },
+  {
+   "id": "unusualprehistory:smilo_fur",
+   "title": "Pelt of the Sabre-Tooth",
+   "desc": "Taken from Smilodon and spun with magma cream and wool into the Insulator."
+  },
+  {
+   "id": "unusualprehistory:insulator",
+   "title": "Hold the Warmth In",
+   "desc": "Smilodon Fur, magma cream and light blue wool; the Incubator needs two and the Dino Pouch needs two more."
+  },
+  {
+   "id": "unusualprehistory:incubator",
+   "title": "A Womb Built From Copper",
+   "desc": "Insulators, copper, an Encrusted Organ, Organic Ooze and lime glass. Mammal embryos will only grow inside it."
+  },
+  {
+   "id": "unusualprehistory:mammoth_embryo",
+   "title": "The Tundra, Reassembled",
+   "desc": "The Cultivator's output for Mammoth DNA; one of six embryos that the Incubator hatches directly into a live calf."
+  },
+  {
+   "id": "unusualprehistory:dino_pouch",
+   "title": "Carry the Beast Home",
+   "desc": "Leather, string and two Insulators, for moving a creature without herding it."
+  },
+  {
+   "id": "kill:unusualprehistory:rex",
+   "title": "Stand Before the Tyrant",
+   "desc": "Tyrannosaurus Rex is the mod's apex predator and spawns naturally as well as hatching from a Rex Egg."
+  },
+  {
+   "id": "unusualprehistory:tyrants_crown",
+   "title": "Wear What You Killed",
+   "desc": "Crafted from the Rex's remains; the trophy at the top of the mod's gear tree."
+  },
+  {
+   "id": "unusualprehistory:shedscale_helmet",
+   "title": "Armour of Cast-Off Scales",
+   "desc": "The Shedscale Wraps, built from scales the mod's reptiles shed as they grow."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "unusualprehistory:rex_flask",
+   "members": [
+    "unusualprehistory:brachi_flask",
+    "unusualprehistory:trike_flask",
+    "unusualprehistory:raptor_flask",
+    "unusualprehistory:kentro_flask",
+    "unusualprehistory:pachy_flask",
+    "unusualprehistory:majunga_flask",
+    "unusualprehistory:austro_flask",
+    "unusualprehistory:hwacha_flask",
+    "unusualprehistory:ulugh_flask",
+    "unusualprehistory:antarcto_flask",
+    "unusualprehistory:dunk_flask",
+    "unusualprehistory:beelz_flask",
+    "unusualprehistory:coty_flask",
+    "unusualprehistory:megala_flask"
+   ]
+  },
+  {
+   "hub": "unusualprehistory:rex_eggs",
+   "members": [
+    "unusualprehistory:brachi_egg",
+    "unusualprehistory:trike_eggs",
+    "unusualprehistory:raptor_eggs",
+    "unusualprehistory:kentro_eggs",
+    "unusualprehistory:pachy_eggs",
+    "unusualprehistory:majunga_eggs",
+    "unusualprehistory:austro_eggs",
+    "unusualprehistory:hwacha_eggs",
+    "unusualprehistory:ulugh_eggs",
+    "unusualprehistory:antarcto_eggs",
+    "unusualprehistory:dunk_eggs",
+    "unusualprehistory:beelze_eggs",
+    "unusualprehistory:coty_eggs",
+    "unusualprehistory:megala_eggs"
+   ]
+  },
+  {
+   "hub": "unusualprehistory:mammoth_embryo",
+   "members": [
+    "unusualprehistory:giganto_embryo",
+    "unusualprehistory:megath_embryo",
+    "unusualprehistory:palaeo_embryo",
+    "unusualprehistory:paracer_embryo",
+    "unusualprehistory:smilodon_embryo"
+   ]
+  }
+ ],
+ "notes": "VERIFICATION: 316 ids pass models/item INTERSECT lang, the cleanest of the five jars - only 10 model stems fell outside it and every one is a render-only variant (ammonite_shell_icon, fruit_loot_box, *_in_hand held models, *_blocking shield poses, clathrodictyon_wall_fan and its dead twin), none registry-referenced. ENTITIES: this is the jar the warning was about. 53 entity.unusualprehistory.* lang keys reduce to 50 real candidates after removing the three all.command_* tooltip keys, and only 31 are verified against a registry source - data/unusualprehistory/loot_tables/entities/, the 48 Forge biome_modifier spawn entries, and the 40 mod advancements. DROPPED 19 that would have produced uncompletable or nonsensical kill tasks: 4 projectiles/parts (amber_shot, hwacha_spike, opalescent_pearl, opalescent_shuriken, palaeophis_part), iceberg_mammoth and iceberg_smilodon (frozen structure props whose loot tables live at the different paths iceberg/mammoth and iceberg/smilodon), brachi_teen, and the 12 baby_* forms. IMPORTANT CORRECTION on the babies: 6 of them ARE registered and are provable - the unusualprehistory:incubating recipes output them as bare entity id strings (giganto_embryo -> unusualprehistory:baby_giganto, and the same for baby_mammoth, baby_megatherium, baby_palaophis, baby_paracer, baby_smilodon). They are left out of the chain deliberately, because they grow into the adults and a kill task on a hatchling you just incubated is bad questing, not because they are unverifiable. GRAPH: the spine is fossil -> Analyzer (unusualprehistory:analyzing, 14 recipes) -> DNA Flask -> Cultivator (unusualprehistory:cultivator, 45 recipes) -> egg / sapling / embryo, and for the six mammals a further Incubator step (unusualprehistory:incubating, 6 recipes) -> live baby. Analyzer recipes declare only an input; the flask you get is rolled in code, so no specific fossil maps to a specific flask. 45 flasks but only 22 eggs and 6 embryos, because the plant genomes produce saplings instead. CONSENSUS CONFLICT (graph preferred): all 26 moddb ids exist, but moddb places 11 egg and embryo items at pos 0.0-0.16 (megala_eggs and palaeo_flask at 0.0, kentro_eggs 0.032, talpanas_egg 0.065, scau_eggs 0.097, trike_eggs 0.129, paracer_embryo 0.161) while ranking cultivator at 0.200 - yet the recipe graph is unambiguous that every egg and embryo is an OUTPUT of the Cultivator and therefore cannot precede it. The graph ordering is used: flask -> analyzer -> DNA -> cultivator -> eggs. moddb's placement of palaeo_flask at 0.0 is consistent with the graph and is kept, since flasks come from the Analyzer, one machine earlier."
+}

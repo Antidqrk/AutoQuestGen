@@ -1,0 +1,180 @@
+{
+ "mod": "storagedrawers",
+ "ids_in_jar": 165,
+ "videos": [
+  {
+   "id": "u902i-0O2e8",
+   "title": "How to use BOTH Refined Storage and Storage Drawers - Tutorial (Minecraft 1.16.5)",
+   "channel": "Lewkah",
+   "views": 35852,
+   "duration": 472,
+   "chars": 6053,
+   "legacy_vocab_prompt": true
+  }
+ ],
+ "items": {
+  "storagedrawers:controller": {
+   "mentions": 11,
+   "videos": 1,
+   "first_at": 0.0395,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "storagedrawers:oak_trim": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.5747,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "A plain wooden drawer first - 1x1 for bulk, 2x1 or 2x2 when you want more item types per block. Guides pick the 2x2 as the default workhorse.",
+    "ids": [
+     "storagedrawers:oak_full_drawers_1",
+     "storagedrawers:oak_full_drawers_2",
+     "storagedrawers:oak_full_drawers_4"
+    ]
+   },
+   {
+    "note": "The upgrade template is the second craft and the thing that unlocks the mod's whole upgrade column. It is made from a drawer plus a wooden rod, so the first drawer is literally consumed to open the tree.",
+    "ids": [
+     "storagedrawers:upgrade_template"
+    ]
+   },
+   {
+    "note": "A drawer key early - it is what lets you lock a drawer to an item so an empty drawer keeps its assignment.",
+    "ids": [
+     "storagedrawers:drawer_key"
+    ]
+   },
+   {
+    "note": "The controller is the late structural piece, not an early one: it needs a comparator, a diamond, stone and a drawer.",
+    "ids": [
+     "storagedrawers:controller"
+    ]
+   }
+  ],
+  "ladder": [
+   {
+    "note": "CAPACITY LADDER, VERIFIED FROM THE JAR'S OWN LANG FILE - the roman numerals are authoritative and material order is NOT the tier order. Obsidian is tier I (the cheapest, earliest rung) and emerald sits above gold. Ranking these by material value would put the first rung last.",
+    "ids": [
+     "storagedrawers:obsidian_storage_upgrade",
+     "storagedrawers:copper_storage_upgrade",
+     "storagedrawers:iron_storage_upgrade",
+     "storagedrawers:gold_storage_upgrade",
+     "storagedrawers:emerald_storage_upgrade",
+     "storagedrawers:diamond_storage_upgrade",
+     "storagedrawers:netherite_storage_upgrade"
+    ]
+   },
+   {
+    "note": "Structural ladder: loose drawers -> a controller that presents the whole bank as one inventory -> slaves to extend its reach -> remote upgrades so a drawer group can join a controller without touching it.",
+    "ids": [
+     "storagedrawers:controller",
+     "storagedrawers:controller_slave",
+     "storagedrawers:remote_upgrade",
+     "storagedrawers:remote_group_upgrade"
+    ]
+   },
+   {
+    "note": "Magnet upgrade has its own three-rung tier line, separate from capacity.",
+    "ids": [
+     "storagedrawers:magnet_upgrade",
+     "storagedrawers:magnet_upgrade_2",
+     "storagedrawers:magnet_upgrade_3"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "Every single storage upgrade AND the drawer key are gated on the upgrade template, which is itself gated on already owning a drawer. Nothing in the upgrade column is reachable before a drawer exists.",
+    "ids": [
+     "storagedrawers:upgrade_template",
+     "storagedrawers:drawer_key",
+     "storagedrawers:copper_storage_upgrade"
+    ]
+   },
+   {
+    "note": "The controller needs a comparator and a diamond, so the mod's payoff moment sits behind nether quartz and diamonds - later than its cheap wooden drawers suggest.",
+    "ids": [
+     "storagedrawers:controller"
+    ]
+   },
+   {
+    "note": "Compacting drawers convert between ingot/block forms and only accept items that have such a recipe - they are not general-purpose drawers.",
+    "ids": [
+     "storagedrawers:compacting_drawers_2",
+     "storagedrawers:compacting_drawers_3"
+    ]
+   }
+  ],
+  "payoff": [
+   {
+    "note": "The controller is unambiguously the moment the mod clicks: a wall of drawers stops being furniture and becomes one searchable inventory you can pull from and push to.",
+    "ids": [
+     "storagedrawers:controller"
+    ]
+   },
+   {
+    "note": "Quantify and fill-level readouts are the quiet win - you can read stock levels off the wall without opening anything.",
+    "ids": [
+     "storagedrawers:quantify_key",
+     "storagedrawers:fill_level_upgrade"
+    ]
+   },
+   {
+    "note": "Void upgrade plus a locked drawer is the classic cobblestone answer - overflow is destroyed instead of clogging the system.",
+    "ids": [
+     "storagedrawers:void_upgrade",
+     "storagedrawers:drawer_key"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "Two upgrades are config-disabled by default and the jar ships explicit 'Has no effect with current mod configuration' warning strings for them. Verify the pack config before making either a quest target.",
+    "ids": [
+     "storagedrawers:portability_upgrade",
+     "storagedrawers:balance_fill_upgrade"
+    ]
+   },
+   {
+    "note": "The one-stack upgrade is a DOWNGRADE despite the name - the lang string calls it 'Storage Downgrade' and it cuts a drawer to a single stack. Do not place it on a progression ladder.",
+    "ids": [
+     "storagedrawers:one_stack_upgrade"
+    ]
+   },
+   {
+    "note": "Creative upgrades are creative-only and must never appear as quest tasks or rewards.",
+    "ids": [
+     "storagedrawers:creative_storage_upgrade",
+     "storagedrawers:creative_vending_upgrade"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "The drawer itself plus the controller - the mod is those two ideas and everything else is a modifier.",
+    "ids": [
+     "storagedrawers:oak_full_drawers_4",
+     "storagedrawers:controller"
+    ]
+   },
+   {
+    "note": "The key family is what makes drawers behave like a managed system rather than shelves.",
+    "ids": [
+     "storagedrawers:drawer_key",
+     "storagedrawers:quantify_key",
+     "storagedrawers:personal_key"
+    ]
+   }
+  ]
+ }
+}

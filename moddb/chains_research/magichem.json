@@ -1,0 +1,208 @@
+{
+ "mod": "magichem",
+ "verified_against": "magichem-0.5.1.jar",
+ "item_count_in_jar": 392,
+ "chain": [
+  {
+   "id": "magichem:verdigris",
+   "title": "Green Rust",
+   "desc": "Scrape the green patina off weathered, exposed or oxidized copper with an axe - Verdigris is the humble reagent your first alchemical recipes call for."
+  },
+  {
+   "id": "magichem:alembic",
+   "title": "Toil and Trouble",
+   "desc": "Craft the Alembic, the manual still that boils items down into materia - the essences and admixtures every machine in this mod runs on."
+  },
+  {
+   "id": "magichem:cleaning_brush",
+   "title": "A Clean Workshop is a Safe Workshop",
+   "desc": "Distilling leaves Alchemical Waste caked in the Alembic. Craft a Cleaning Brush and scrub it out - the waste itself becomes an ingredient later, so keep it."
+  },
+  {
+   "id": "magichem:materia_jar",
+   "title": "Gloopy Sauce Jars",
+   "desc": "Craft Materia Jars to bottle your distilled substances. Machines pull materia straight from jars placed nearby, so a wall of them is your first storage system."
+  },
+  {
+   "id": "magichem:codex_materia",
+   "title": "The Reference Section",
+   "desc": "Offer a Codex Arcana to the Wandering Wizard and receive the Codex Materia - the in-game encyclopedia of every materia and how to distill it."
+  },
+  {
+   "id": "magichem:circle_fabrication",
+   "title": "Thy Brush, The Circle",
+   "desc": "Craft the Circle of Fabrication, which slowly paints items into existence from materia - alchemical crafting without touching a crafting table."
+  },
+  {
+   "id": "magichem:circle_toil",
+   "title": "Join the Rotary Club",
+   "desc": "The Circle of Fabrication needs power. Craft a Circle of Toil and set a Wickerwood Construct walking it to crank out Eldrin power the slow, honest way."
+  },
+  {
+   "id": "magichem:sublimation_primer",
+   "title": "Reference Material",
+   "desc": "Create the Sublimation Primer, your guide to the Ritual of the Balanced Scales - the manaweaving ritual behind every tier-gating material in the mod."
+  },
+  {
+   "id": "magichem:iris_argenti",
+   "title": "Metal Without, Prism Within",
+   "desc": "Perform the Ritual of the Balanced Scales to make Iris Argenti, the prismatic silver that unlocks the Circle of Power and the next rank of devices."
+  },
+  {
+   "id": "magichem:perfected_electrum",
+   "title": "The Ideal Alloy",
+   "desc": "Balance gold against silver in the Ritual of the Balanced Scales to create Perfected Electrum - the alloy the Nexus, the Skywrath Altar and all master-tier gear are built from."
+  },
+  {
+   "id": "magichem:magichemical_mechanism",
+   "title": "Progress is Rarely Easy",
+   "desc": "Combine the Balanced Scales ritual with a Runic Anvil to forge the Magichemical Mechanism, the clockwork heart of the Alchemical Nexus."
+  },
+  {
+   "id": "magichem:alchemical_nexus",
+   "title": "A Philosopher's Machine",
+   "desc": "Build the Alchemical Nexus, the multiblock centerpiece that crafts catalysts, relics and everything the lesser circles cannot - your lab now has an endgame bench."
+  },
+  {
+   "id": "magichem:conjurer",
+   "title": "Ex Nihilo",
+   "desc": "Craft the Conjurer for an unlimited trickle of simple raw materials - stone, sand and the like conjured from nothing, feeding your automation forever."
+  },
+  {
+   "id": "magichem:distillery",
+   "title": "No More Furnace Loading",
+   "desc": "Replace the hand-fed Alembic with the Distillery, an Eldrin-powered machine that distills continuously and accepts actuator upgrades."
+  },
+  {
+   "id": "magichem:actuator_neutral",
+   "title": "We Should Improve Devices Somewhat",
+   "desc": "Craft the Proto Actuator, the blank upgrade module. Refined into elemental forms - Deluge, Gale, Inferno, Quake - it makes your devices faster, cheaper or cleaner."
+  },
+  {
+   "id": "magichem:centrifuge",
+   "title": "Machine Revolution",
+   "desc": "Craft the Centrifuge to spin admixtures apart into their component essentia - the separation half of the alchemical loop."
+  },
+  {
+   "id": "magichem:fusery",
+   "title": "The Freedom to Combine",
+   "desc": "Craft the Fusery to fuse essentia back into admixtures of your choosing - with Centrifuge and Fusery together, materia becomes fully convertible currency."
+  },
+  {
+   "id": "magichem:circle_power",
+   "title": "Wondrous Magical Voltage",
+   "desc": "Craft the Circle of Power, an Iris Argenti ring that generates serious Eldrin power from Grains of Quicksilver - the Circle of Toil's retirement party."
+  },
+  {
+   "id": "magichem:power_spike",
+   "title": "Wireless Extension Cords",
+   "desc": "Craft Power Spikes to beam energy from your Circle of Power to distant devices - lay out the lab however you like."
+  },
+  {
+   "id": "magichem:grand_circle_fabrication",
+   "title": "Next Best Thing to Creative Mode",
+   "desc": "Upgrade to the Grand Circle of Fabrication, which drinks Circle of Power voltage to fabricate items at scale. Feed the Circle a Focusing Catalyst, Amplifying Prism and Auxiliary Circle Array to push it further."
+  },
+  {
+   "id": "magichem:acid_basin",
+   "title": "The Sizzling Means It's Working",
+   "desc": "Craft the Acid Basin, an open vat for soaking items in Aqua Vitae and worse - the entry point to crystal perfection, wine-mulling and acid-etched recipes."
+  },
+  {
+   "id": "magichem:immaculate_vinteum_crystal",
+   "title": "Prismatic Perfection",
+   "desc": "Perform the eight-step refinement - basin baths, sublimation and all - to perfect a Vinteum Crystal shard. The Immaculate crystal is the lens the Astral Observer demands."
+  },
+  {
+   "id": "magichem:astral_observer",
+   "title": "Lightborne Secrets of the Cosmos",
+   "desc": "Build the Astral Observer to read the sky and press starlight into Horoscopes - solar and lunar charms of fortune you can even corrupt into foreboding curses."
+  },
+  {
+   "id": "magichem:celestial_mechanism",
+   "title": "To Transcend the Work of Atlas",
+   "desc": "Forge a Solar, Lunar and Sidereal Orb and unite them into the Celestial Mechanism - a captive model of the heavens and the core of the Orrery."
+  },
+  {
+   "id": "magichem:eldrin_orrery",
+   "title": "A God Am I",
+   "desc": "Create the Eldrin Orrery and harvest Eldrin power from its false planet - a top-tier generator that spins a private cosmos for you."
+  },
+  {
+   "id": "magichem:skywrath_altar",
+   "title": "Power Unbound",
+   "desc": "Raise the Skywrath Altar from Perfected Electrum and call lightning down on demand - Fulmination turns enchanted books into Scorched Theorems and charges Thunderstones."
+  },
+  {
+   "id": "magichem:inert_wisdom_stone",
+   "title": "Slumbering Potential",
+   "desc": "Create the Inert Wisdom Stone at the altar, then walk it through the great work - Nigredo, Albedo, Citrinitas, Rubedo - each stage a stronger philosopher's charm."
+  },
+  {
+   "id": "magichem:grand_distillery",
+   "title": "A River of Many Colors",
+   "desc": "Build the Grand Distillery multiblock, the master-tier still that processes whole stacks into rivers of materia and unlocks the Grand Centrifuge and Grand Fusery."
+  },
+  {
+   "id": "magichem:laboratory_charm",
+   "title": "Full-Scale Automated Production",
+   "desc": "Craft the Laboratory Charm to open six actuator ports on a Grand device - the final word in automated alchemy."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "magichem:actuator_neutral",
+   "members": [
+    "magichem:actuator_water",
+    "magichem:actuator_air",
+    "magichem:actuator_fire",
+    "magichem:actuator_earth",
+    "magichem:actuator_arcane",
+    "magichem:actuator_ender"
+   ]
+  },
+  {
+   "hub": "magichem:materia_jar",
+   "members": [
+    "magichem:materia_vessel",
+    "magichem:materia_manifest",
+    "magichem:mirror_labyrinth",
+    "magichem:coloring_cauldron",
+    "magichem:variegator",
+    "magichem:experience_exchanger",
+    "magichem:slumbering_idol",
+    "magichem:gnostic_orb",
+    "magichem:grand_centrifuge",
+    "magichem:grand_fusery"
+   ]
+  },
+  {
+   "hub": "magichem:skywrath_altar",
+   "members": [
+    "magichem:scorched_theorem",
+    "magichem:scorched_profundity",
+    "magichem:thunderstone",
+    "magichem:abjuration",
+    "magichem:radiant_rose",
+    "magichem:wisdom_stone_nigredo",
+    "magichem:wisdom_stone_albedo",
+    "magichem:wisdom_stone_citrinitas",
+    "magichem:wisdom_stone_rubedo"
+   ]
+  },
+  {
+   "hub": "magichem:astral_observer",
+   "members": [
+    "magichem:horoscope_solar",
+    "magichem:horoscope_lunar",
+    "magichem:selenolabe",
+    "magichem:harmoniscope",
+    "magichem:travellers_compass",
+    "magichem:solar_orb",
+    "magichem:lunar_orb",
+    "magichem:sidereal_orb"
+   ]
+  }
+ ],
+ "notes": "Alchemy-machine mod tightly integrated with Mana and Artifice (jar ships data/mna manaweaving patterns and rituals; Ritual of the Balanced Scales, Runic Anvil, Wickerwood Constructs and the Wandering Wizard are all mna mechanics - gate this chain after early mna). Order taken verbatim from the jar's 80-file advancement tree (data/magichem/advancements: root->alembic->cleaning->materia_jar; sublimation_primer->iris_argenti->circle_power->power_spike->grand_circle_fabrication; sublimation_primer->perfected_electrum->magichemical_mechanism->alchemical_nexus->distillery->centrifuge/fusery->grand_distillery->laboratory_charm; acid_basin->immaculate_vinteum_crystal->astral_observer->celestial_mechanism->eldrin_orrery; skywrath_altar->wisdom stones), with the composite _t1-_t4 lab advancements confirming the intended lab tiers. All 29 chain + 33 collection ids verified against the 391 item/block lang stems. Advancement titles reused where they were already good. Note traveler's compass id is travellers_compass (double L). craft_a_relic (one-per-world relic on the Nexus) left out of the chain since the choice is personal; horoscope_solar_foreboding/lunar_foreboding exist if a corruption quest is wanted."
+}

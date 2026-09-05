@@ -1,0 +1,186 @@
+{
+  "mod": "pamhc2crops",
+  "verified_against": "pamhc2crops-1.20-1.0.3.jar",
+  "item_count_in_jar": 319,
+  "chain": [
+    {
+      "id": "pamhc2crops:windygarden",
+      "title": "Raid a Windy Garden",
+      "desc": "Small garden bushes generate in plains and savannas. Break one for a random crop - corn, onion, strawberry, lettuce, barley and more. Gardens are the ONLY natural source of this mod's 100 crops, so learn to spot them."
+    },
+    {
+      "id": "pamhc2crops:shadedgarden",
+      "title": "Comb the Forest Floor",
+      "desc": "Shaded Gardens hide in forests and drop the kitchen-garden staples: tomato, garlic, leek, radish, sweet potato, tea leaves - and rarely a truffle. Fortune multiplies garden drops, so bring a good pick."
+    },
+    {
+      "id": "pamhc2crops:frostgarden",
+      "title": "Harvest the Cold",
+      "desc": "Frost Gardens grow in taiga and coniferous biomes: cabbage, cauliflower, peas, oats, rye, spinach and cotton. Cold biomes stop feeling barren once you know these are scattered through them."
+    },
+    {
+      "id": "pamhc2crops:soggygarden",
+      "title": "Wade the Swamp",
+      "desc": "Soggy Gardens sit in swamps and carry the water crops: rice, cattail, lotus, okra, cranberry, water chestnut. Rice alone makes this trip worth it - half the Extended cookbook wants it."
+    },
+    {
+      "id": "pamhc2crops:aridgarden",
+      "title": "Scour the Desert",
+      "desc": "Arid Gardens spawn in dry biomes with the survival crops: agave, cactus fruit, cassava, chickpea, lentil, papyrus and barrel cactus. Deserts quietly hold the mod's sugar and paper supply."
+    },
+    {
+      "id": "pamhc2crops:tropicalgarden",
+      "title": "Jungle and Sea Bounty",
+      "desc": "Tropical Gardens generate in jungles AND on the ocean floor: pineapple, coffee, ginger, soybean, kiwi, taro, sesame. Soybean and coffee are pack-wide favorites - grab every one you see."
+    },
+    {
+      "id": "pamhc2crops:cornitem",
+      "title": "Corn in Hand",
+      "desc": "A typical windy-garden pull. Every crop item doubles as food and as crafting material - corn grinds into cornmeal for tortillas and cornbread in the Extended pack."
+    },
+    {
+      "id": "pamhc2crops:cornseeditem",
+      "title": "Crop Becomes Seed",
+      "desc": "Any crop item crafts 1:1 into its seed - that is the whole domestication loop. One lucky garden find becomes an infinite farm; the seed replants like wheat on farmland."
+    },
+    {
+      "id": "pamhc2crops:spiceleafitem",
+      "title": "Farm Spiceleaf",
+      "desc": "From shaded and soggy gardens. Spiceleaf is the most-demanded seasoning in the Extended pack - sausage, chili, pizza, curry powder and dozens more call for it. Plant a full row early."
+    },
+    {
+      "id": "pamhc2crops:agaveitem",
+      "title": "Sugar Without Cane",
+      "desc": "Two agave craft into two sugar. A desert-garden agave farm out-produces sugarcane and feeds every candy, soda and dessert recipe across all the Pam mods."
+    },
+    {
+      "id": "pamhc2crops:cottonitem",
+      "title": "String from the Field",
+      "desc": "Two of any fiber crop - cotton, sisal, jute, flax - craft into string. No more spider hunting: wool, bows and scaffolding now come from your frost-garden cotton patch."
+    },
+    {
+      "id": "pamhc2crops:cattailitem",
+      "title": "Cattails Are Sticks",
+      "desc": "Two cattails give four sticks, and one cattail plus cooking oil makes a torch. A swamp-side cattail farm covers basic utility supplies without touching a tree."
+    },
+    {
+      "id": "pamhc2crops:papyrusitem",
+      "title": "Grow Your Paper",
+      "desc": "Two papyrus (or kenaf) craft into two paper - books, maps and rockets without a sugarcane farm. Papyrus comes out of arid gardens."
+    },
+    {
+      "id": "pamhc2crops:barrelcactusitem",
+      "title": "Water in the Waste",
+      "desc": "A barrel cactus plus an empty bucket yields a full water bucket. Farm a few in the desert and you carry emergency water, mud-making and potion supply as a crop."
+    },
+    {
+      "id": "pamhc2crops:aloeitem",
+      "title": "Slime from Aloe",
+      "desc": "Three aloe craft into a slimeball. Sticky pistons, leads and magma cream stop depending on swamp slimes the moment your tropical-garden aloe takes root."
+    },
+    {
+      "id": "pamhc2crops:calabashitem",
+      "title": "Gourds into Glass",
+      "desc": "Two calabash gourds craft into two glass bottles - a renewable, sand-free bottle supply for potions and the honey farm."
+    },
+    {
+      "id": "pamhc2crops:canolaitem",
+      "title": "The Oil Crop",
+      "desc": "Two canola on a roller press out FOUR cooking oil - double any other source. If you cook seriously from Food Core or Extended, a canola field is infrastructure."
+    },
+    {
+      "id": "pamhc2crops:bakedsweetpotatoitem",
+      "title": "Roots in the Furnace",
+      "desc": "Sweet potato, taro, cassava, parsnip and six other root crops all smelt, smoke or campfire-cook into solid baked food. The lazy way to eat your garden surplus - no kitchen tools needed."
+    },
+    {
+      "id": "pamhc2crops:hotteaitem",
+      "title": "Brew Hot Tea",
+      "desc": "Tea leaves from a shaded garden cook directly into hot tea in any furnace, smoker or campfire. A gentle reminder that this mod's drinks skip the kitchen entirely."
+    },
+    {
+      "id": "pamhc2crops:hotcoffeeitem",
+      "title": "Morning Coffee",
+      "desc": "Coffee beans from tropical gardens smelt into hot coffee. Farm the beans (bean crafts to seed like everything else) and breakfast is permanently solved."
+    },
+    {
+      "id": "pamhc2crops:truffleitem",
+      "title": "The Truffle",
+      "desc": "The rarest garden pull - one entry among seventeen in the shaded garden's loot table. It seeds like any crop, so a single find becomes a truffle farm. Consider it the mod's trophy."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "pamhc2crops:roastedpeanutitem",
+      "members": [
+        "pamhc2crops:roastedgarlicitem",
+        "pamhc2crops:roastedkohlrabiitem",
+        "pamhc2crops:roastedleekitem",
+        "pamhc2crops:roastedmushroomitem",
+        "pamhc2crops:roastedonionitem",
+        "pamhc2crops:roastedradishitem",
+        "pamhc2crops:roastedrhubarbitem",
+        "pamhc2crops:roastedscallionitem"
+      ]
+    },
+    {
+      "hub": "pamhc2crops:bakedcassavaitem",
+      "members": [
+        "pamhc2crops:bakedarrowrootitem",
+        "pamhc2crops:bakedjicamaitem",
+        "pamhc2crops:bakedparsnipitem",
+        "pamhc2crops:bakedrutabagaitem",
+        "pamhc2crops:bakedsunchokeitem",
+        "pamhc2crops:bakedtaroitem",
+        "pamhc2crops:bakedturnipitem",
+        "pamhc2crops:bakedwaterchestnutitem"
+      ]
+    },
+    {
+      "hub": "pamhc2crops:strawberryitem",
+      "members": [
+        "pamhc2crops:blackberryitem",
+        "pamhc2crops:blueberryitem",
+        "pamhc2crops:raspberryitem",
+        "pamhc2crops:cranberryitem",
+        "pamhc2crops:elderberryitem",
+        "pamhc2crops:huckleberryitem",
+        "pamhc2crops:mulberryitem",
+        "pamhc2crops:wolfberryitem",
+        "pamhc2crops:juniperberryitem",
+        "pamhc2crops:cloudberryitem",
+        "pamhc2crops:candleberryitem"
+      ]
+    },
+    {
+      "hub": "pamhc2crops:barleyitem",
+      "members": [
+        "pamhc2crops:oatsitem",
+        "pamhc2crops:ryeitem",
+        "pamhc2crops:milletitem",
+        "pamhc2crops:sorghumitem",
+        "pamhc2crops:amaranthitem",
+        "pamhc2crops:quinoaitem",
+        "pamhc2crops:riceitem",
+        "pamhc2crops:chiaitem"
+      ]
+    },
+    {
+      "hub": "pamhc2crops:lettuceitem",
+      "members": [
+        "pamhc2crops:tomatoitem",
+        "pamhc2crops:cucumberitem",
+        "pamhc2crops:onionitem",
+        "pamhc2crops:celeryitem",
+        "pamhc2crops:spinachitem",
+        "pamhc2crops:kaleitem",
+        "pamhc2crops:radishitem",
+        "pamhc2crops:bellpepperitem",
+        "pamhc2crops:broccoliitem",
+        "pamhc2crops:caulifloweritem",
+        "pamhc2crops:cabbageitem"
+      ]
+    }
+  ],
+  "notes": "Verified against pamhc2crops-1.20-1.0.3.jar found in the GayChaseyPacxk instance: 319 item/block lang keys; garden loot tables, worldgen features, forge biome_modifiers and all 177 recipes read directly. Six garden blocks are the sole natural entry point - biome_modifiers place windy in forge:is_plains/is_savanna, shaded in minecraft:is_forest, frost in forge:is_coniferous, soggy in forge:is_swamp, arid in forge:is_dry/overworld, tropical in minecraft:is_jungle AND minecraft:is_ocean. Each garden's block loot table rolls one random crop from its 12-19 entry pool (fortune adds bonus rolls). Every crop item crafts 1:1 into its <name>seeditem (97 seed items). Grains 3x craft into vanilla bread; utility conversions verified: 2 agave->2 sugar, 2 fiber->string, 2 paper_plants->2 paper, 3 aloe->slimeball, 2 calabash->2 bottles, barrelcactus+bucket->water bucket, cattail->sticks/torch, 2 canola+roller->4 pamhc2foodcore:cookingoilitem (the mod cross-registers recipes producing minecraft: and pamhc2foodcore: outputs). Baked roots and hot drinks are furnace/smoker/campfire recipes needing no kitchen tools. Truffle is a normal weight-1 entry in the shadedgarden pool - rare only by dilution."
+}

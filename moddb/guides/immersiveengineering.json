@@ -1,0 +1,1050 @@
+{
+ "mod": "immersiveengineering",
+ "ids_in_jar": 536,
+ "videos": [
+  {
+   "id": "l7rdpoSLSo0",
+   "title": "How to: Immersive Engineering | Getting Started (Minecraft 1.16.5)",
+   "channel": "Mondays",
+   "views": 234466,
+   "duration": 782,
+   "chars": 15382
+  },
+  {
+   "id": "BFJF9U7nHmE",
+   "title": "Complete Beginners Guide to Immersive Engineering",
+   "channel": "JaviHerobrine",
+   "views": 78015,
+   "duration": 1125,
+   "chars": 17864
+  },
+  {
+   "id": "X_8BwxczeZY",
+   "title": "How to: Immersive Engineering | Power Generation (Minecraft 1.16.5)",
+   "channel": "Mondays",
+   "views": 319417,
+   "duration": 1624,
+   "chars": 27785
+  },
+  {
+   "id": "qykwwJm1zQ0",
+   "title": "Immersive Engineering: Basics (Power Generation, Wiring, Machines) | Modded Minecraft Tutorial",
+   "channel": "ZennsWorld",
+   "views": 18887,
+   "duration": 1984,
+   "chars": 31214
+  },
+  {
+   "id": "A21ar_pPMLM",
+   "title": "The Ultimate Immersive Engineering Guide",
+   "channel": "JaviHerobrine",
+   "views": 89436,
+   "duration": 3066,
+   "chars": 50224
+  }
+ ],
+ "not_transcribed": [],
+ "items": {
+  "immersiveengineering:storage_aluminum": {
+   "mentions": 9,
+   "videos": 5,
+   "first_at": 0.4697,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "immersiveengineering:hammer": {
+   "mentions": 55,
+   "videos": 4,
+   "first_at": 0.1038,
+   "praise": 17,
+   "warn": 4,
+   "early_cue": 5,
+   "late_cue": 3
+  },
+  "immersiveengineering:windmill": {
+   "mentions": 27,
+   "videos": 4,
+   "first_at": 0.6214,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:manual": {
+   "mentions": 17,
+   "videos": 4,
+   "first_at": 0.0278,
+   "praise": 6,
+   "warn": 1,
+   "early_cue": 7,
+   "late_cue": 0
+  },
+  "immersiveengineering:plate_iron": {
+   "mentions": 13,
+   "videos": 4,
+   "first_at": 0.2419,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:storage_uranium": {
+   "mentions": 6,
+   "videos": 4,
+   "first_at": 0.1935,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "immersiveengineering:transformer": {
+   "mentions": 20,
+   "videos": 3,
+   "first_at": 0.5277,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "immersiveengineering:generator": {
+   "mentions": 19,
+   "videos": 3,
+   "first_at": 0.5109,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 1
+  },
+  "immersiveengineering:dynamo": {
+   "mentions": 14,
+   "videos": 3,
+   "first_at": 0.2848,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "immersiveengineering:silver": {
+   "mentions": 12,
+   "videos": 3,
+   "first_at": 0.0457,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 1
+  },
+  "immersiveengineering:storage_silver": {
+   "mentions": 12,
+   "videos": 3,
+   "first_at": 0.0457,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 1
+  },
+  "immersiveengineering:storage_nickel": {
+   "mentions": 11,
+   "videos": 3,
+   "first_at": 0.0457,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 0
+  },
+  "immersiveengineering:workbench": {
+   "mentions": 10,
+   "videos": 3,
+   "first_at": 0.4078,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:fertilizer": {
+   "mentions": 9,
+   "videos": 3,
+   "first_at": 0.6036,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:diesel_generator": {
+   "mentions": 8,
+   "videos": 3,
+   "first_at": 0.7872,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 1
+  },
+  "immersiveengineering:ingot_steel": {
+   "mentions": 10,
+   "videos": 2,
+   "first_at": 0.2577,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:plate_steel": {
+   "mentions": 9,
+   "videos": 2,
+   "first_at": 0.255,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:fermenter": {
+   "mentions": 8,
+   "videos": 2,
+   "first_at": 0.7759,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "immersiveengineering:storage_electrum": {
+   "mentions": 7,
+   "videos": 2,
+   "first_at": 0.4839,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "immersiveengineering:coke_oven": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.2615,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "immersiveengineering:wirecutter": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.0433,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:furnace_heater": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.2838,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:wirecoil_copper": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.2378,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:lantern": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.6137,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:alloy_smelter": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.2491,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:tank": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.5016,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 4
+  },
+  "immersiveengineering:hemp": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.1661,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:thermoelectric_generator": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.2809,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:cokebrick": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.265,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "immersiveengineering:craftingtable": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.4251,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:watermill": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.8154,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "immersiveengineering:insulating_glass": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.2023,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:duroplast": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.583,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:capacitor_creative": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.4615,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:plate_nickel": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.5926,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:conveyor_basic": {
+   "mentions": 14,
+   "videos": 1,
+   "first_at": 0.5268,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:light_engineering": {
+   "mentions": 10,
+   "videos": 1,
+   "first_at": 0.593,
+   "praise": 7,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "immersiveengineering:blast_furnace": {
+   "mentions": 8,
+   "videos": 1,
+   "first_at": 0.3155,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:blueprint": {
+   "mentions": 8,
+   "videos": 1,
+   "first_at": 0.8023,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:refinery": {
+   "mentions": 7,
+   "videos": 1,
+   "first_at": 0.7149,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:blastbrick": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.333,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:heavy_engineering": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.6248,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:crate": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.1067,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:voltmeter": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.593,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:excavator": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.9134,
+   "praise": 0,
+   "warn": 3,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "immersiveengineering:conveyor_extract": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.5261,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:current_transformer": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.6973,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:concrete": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.7785,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:silo": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.7466,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "immersiveengineering:graphite_electrode": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.8796,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:mixer": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8053,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:wooden_barrel": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1073,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:blastbrick_reinforced": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3807,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:sorter": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6767,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:connector_lv": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4618,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:conveyor_dropper": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5805,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:ingot_electrum": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0809,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:dust_gold": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0753,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:wire_copper": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.433,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:electron_tube": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.878,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:stick_iron": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2819,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:radiator": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.972,
+   "praise": 0,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:plate_silver": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3166,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:creosote_bucket": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5749,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:crusher": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9902,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:lightning_rod": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.982,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:slag_glass": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5219,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:screwdriver": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1162,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:arc_furnace": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8895,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:blastfurnace_preheater": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4191,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:empty_casing": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8345,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:metal_press": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9893,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:coal_coke": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2351,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:alloybrick": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.607,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:advanced_blast_furnace": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3753,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:treated_fence": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7636,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:sheetmetal_iron": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.425,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:conveyor_redstone": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.639,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:conveyor_vertical": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5969,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:dust_electrum": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0785,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:plate_copper": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8647,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:hemp_fabric": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.16,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "immersiveengineering:component_iron": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8459,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:circuit_board": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8679,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:wirecoil_structure_rope": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1513,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:feedthrough": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8677,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:stick_treated": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1528,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:sawdust": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9953,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:balloon": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.443,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:assembler": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6689,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:storage_steel": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8314,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:rs_engineering": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7517,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:ingot_nickel": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.101,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:dust_wood": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9953,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersiveengineering:wirecoil_electrum": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5876,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "The engineer's hammer is the single hard prerequisite for the entire mod - every multiblock is FORMED with it, so nothing exists before it.",
+    "ids": [
+     "immersiveengineering:hammer",
+     "immersiveengineering:wirecutter"
+    ]
+   },
+   {
+    "note": "Coke oven is the first multiblock, and it is the gateway to both fuels and treated wood.",
+    "ids": [
+     "immersiveengineering:coke_oven",
+     "immersiveengineering:cokebrick",
+     "immersiveengineering:coal_coke",
+     "immersiveengineering:creosote_bucket"
+    ]
+   },
+   {
+    "note": "Treated wood is the universal early component; guides make it immediately after creosote and before any machine.",
+    "ids": [
+     "immersiveengineering:treated_wood_horizontal",
+     "immersiveengineering:stick_treated"
+    ]
+   },
+   {
+    "note": "Blast furnace second, purely to unlock steel.",
+    "ids": [
+     "immersiveengineering:blast_furnace",
+     "immersiveengineering:blastbrick",
+     "immersiveengineering:blastfurnace_preheater"
+    ]
+   },
+   {
+    "note": "Only after steel does power begin - water wheel and windmill are the intended first generators, then wiring.",
+    "ids": [
+     "immersiveengineering:waterwheel_segment",
+     "immersiveengineering:watermill",
+     "immersiveengineering:windmill",
+     "immersiveengineering:windmill_blade",
+     "immersiveengineering:windmill_sail"
+    ]
+   }
+  ],
+  "tiers": [
+   {
+    "note": "IE's tier system is VOLTAGE, not material: LV -> MV -> HV, and it runs across connectors, relays, wire coils and capacitors alike. Mixing a voltage tier is the classic beginner mistake.",
+    "ids": [
+     "immersiveengineering:connector_lv",
+     "immersiveengineering:connector_mv",
+     "immersiveengineering:connector_hv",
+     "immersiveengineering:connector_lv_relay",
+     "immersiveengineering:connector_mv_relay",
+     "immersiveengineering:connector_hv_relay",
+     "immersiveengineering:capacitor_lv",
+     "immersiveengineering:capacitor_mv",
+     "immersiveengineering:capacitor_hv"
+    ]
+   },
+   {
+    "note": "Wire ladder by metal: copper (LV) -> electrum (MV) -> steel/aluminum (HV).",
+    "ids": [
+     "immersiveengineering:wire_copper",
+     "immersiveengineering:wire_electrum",
+     "immersiveengineering:wire_steel",
+     "immersiveengineering:wire_aluminum",
+     "immersiveengineering:wire_lead"
+    ]
+   },
+   {
+    "note": "Blast furnace tiers up: crude blast furnace then advanced, with a preheater to speed it.",
+    "ids": [
+     "immersiveengineering:blast_furnace",
+     "immersiveengineering:advanced_blast_furnace",
+     "immersiveengineering:blastbrick_reinforced"
+    ]
+   },
+   {
+    "note": "Machine progression after power: metal press and crusher first, arc furnace and excavator as the late-game pair.",
+    "ids": [
+     "immersiveengineering:metal_press",
+     "immersiveengineering:crusher",
+     "immersiveengineering:alloy_smelter",
+     "immersiveengineering:arc_furnace",
+     "immersiveengineering:excavator"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "The alloy kiln refuses raw ore - a specific, repeated warning that costs players materials.",
+    "ids": [
+     "immersiveengineering:alloy_smelter",
+     "immersiveengineering:alloybrick"
+    ]
+   },
+   {
+    "note": "The metal press does nothing without the right mold, which is a separate craft players miss.",
+    "ids": [
+     "immersiveengineering:metal_press",
+     "immersiveengineering:mold_plate",
+     "immersiveengineering:mold_rod",
+     "immersiveengineering:mold_wire",
+     "immersiveengineering:mold_gear"
+    ]
+   },
+   {
+    "note": "Arc furnace electrodes are gated behind a blueprint that CANNOT be crafted - it must be traded for or looted. A recipe scan would show a craftable path and be wrong about how you get it.",
+    "ids": [
+     "immersiveengineering:blueprint",
+     "immersiveengineering:arc_furnace"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "Guides repeatedly warn that wiring the wrong voltage tier into a machine wastes the build; wire cutters are needed to undo it.",
+    "ids": [
+     "immersiveengineering:wirecutter",
+     "immersiveengineering:connector_lv",
+     "immersiveengineering:connector_hv"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "The multiblock industrial aesthetic IS the mod - coke oven, blast furnace, crusher and excavator are what guides sell it on.",
+    "ids": [
+     "immersiveengineering:coke_oven",
+     "immersiveengineering:blast_furnace",
+     "immersiveengineering:crusher",
+     "immersiveengineering:excavator",
+     "immersiveengineering:metal_press"
+    ]
+   },
+   {
+    "note": "Hand-strung wiring between connectors is the visual signature no other tech mod has.",
+    "ids": [
+     "immersiveengineering:wire_copper",
+     "immersiveengineering:connector_lv",
+     "immersiveengineering:capacitor_lv"
+    ]
+   }
+  ]
+ },
+ "transcript_profile": "whisper small, vad, beam 1, WITH the legacy Minecraft-vocabulary initial_prompt that was later removed from ytgrab as biasing. Counts may be slightly inflated toward mod-name-like words; human_notes quotes were read directly and are unaffected."
+}

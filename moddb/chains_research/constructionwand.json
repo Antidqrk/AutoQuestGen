@@ -1,0 +1,39 @@
+{
+ "mod": "constructionwand",
+ "verified_against": "constructionwand-1.20.1-2.11.jar",
+ "item_count_in_jar": 6,
+ "chain": [
+  {
+   "id": "constructionwand:stone_wand",
+   "title": "A Stick and a Stone",
+   "desc": "Two wooden rods on a diagonal with any stone tool material at the tip. Look at a wall, right-click, and the wand repeats that block across the face you are facing until it runs out of blocks or durability."
+  },
+  {
+   "id": "constructionwand:iron_wand",
+   "title": "Iron in the Diagonal",
+   "desc": "The same diagonal with an iron ingot at the tip. Every tier raises both the block limit and the durability, and both are server-config values the pack can retune per wand."
+  },
+  {
+   "id": "constructionwand:diamond_wand",
+   "title": "Diamond Reach",
+   "desc": "A diamond at the tip of the rods. Hold the modifier key and scroll to lock placement to horizontal, vertical, north/south, east/west or nothing at all."
+  },
+  {
+   "id": "constructionwand:infinity_wand",
+   "title": "Never Wears Out",
+   "desc": "A nether star at the tip. The Infinity Wand is the only tier that lasts forever, and in creative its block limit becomes its own separate config value."
+  },
+  {
+   "id": "constructionwand:core_angel",
+   "title": "Building on Nothing",
+   "desc": "Gold, feathers and glass panes in a pinwheel. Craft the core together with a wand to install it: the Angel Core places blocks on the far side of what you face, and right-clicking empty air places from your offhand into midair."
+  },
+  {
+   "id": "constructionwand:core_destruction",
+   "title": "Undoing, in Bulk",
+   "desc": "A diamond block and a diamond pickaxe ringed with glass panes. The Destruction Core strips the face you are looking at instead of extending it, and the wand's undo history can put every one of those blocks back."
+  }
+ ],
+ "collections": [],
+ "notes": "SIX-ITEM MOD - THE ENTIRE REGISTRY IS THE CHAIN, SO THERE ARE NO WHEELS. Verified against constructionwand-1.20.1-2.11.jar; META-INF/mods.toml declares modLoader=javafml, modId=constructionwand, minecraft [1.20,1.21), forge [46,). The Modrinth version 1.20.1-2.11 lists loaders=[forge] and game_versions=[1.20, 1.20.1]. ID DETECTION AND WIDENING: assets/constructionwand/models/item/ holds 10 stems but assets/constructionwand/lang/en_us.json carries only 6 item.constructionwand.* keys, so here the naive model set OVER-counts rather than under-counting. The four extra stems - stone_wand_core, iron_wand_core, diamond_wand_core, infinity_wand_core - are predicate overlay models for a wand that has a core installed, not registered items: no lang key, no recipe result, no loot table, and thetadev/constructionwand/items/ModItems.class registers only WAND_STONE, WAND_IRON, WAND_DIAMOND, WAND_INFINITY plus the two cores. The jar contains no blockstates at all because the mod registers no blocks, so blockstate widening adds nothing. Verified id count is therefore 6 = models INTERSECT lang, cross-checked against the registry class. RECIPE GRAPH: 7 recipe files. The four wands share one identical shaped pattern ('  X', ' # ', '#  ') over #forge:rods/wooden and differ only in the tip - #minecraft:stone_tool_materials, #forge:ingots/iron, #forge:gems/diamond, #forge:nether_stars - which is a clean four-step material tier and is the spine of this chain. Both cores share a second pattern (' #X', '#O#', 'X# ') over #forge:glass_panes: angel = #forge:ingots/gold + #forge:feathers, destruction = minecraft:diamond_pickaxe + #forge:storage_blocks/diamond, so destruction is strictly the more expensive of the two and is ordered last. The seventh recipe, wand_upgrade.json, is a custom recipe type constructionwand:wand_upgrade handled by crafting/RecipeWandUpgrade.class - it is the shapeless install of a core into a wand and produces no new id, so it is folded into the core descriptions as a mechanic rather than made a quest target. DISTINCT RECIPE SHAPES: 3 (wand, core, upgrade). CONFIG: basics/ConfigServer.class defines a per-wand WandProperties block plus LIMIT_CREATIVE, MAX_RANGE, UNDO_HISTORY, ANGEL_FALLING, SIMILAR_BLOCKS and a tile-entity allow/deny list, all in the world-specific serverconfig, so exact block counts and durabilities are pack-tunable and are deliberately not quoted as fixed numbers above. Nothing is gated out of existence: no recipe in this jar carries a forge:conditional wrapper. MODDB: no consensus signal - moddb.json has no constructionwand key - so ordering here is the recipe graph alone and there is no conflict to record. DROPS: the four *_wand_core overlay models, for the reason above. Nothing was dropped for being unobtainable; all six ids have a crafting recipe."
+}

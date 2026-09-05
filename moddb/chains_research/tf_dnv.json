@@ -1,0 +1,78 @@
+{
+ "mod": "tf_dnv",
+ "verified_against": "tf_dnv-1.2.3.jar",
+ "item_count_in_jar": 20,
+ "parent_mod": "twilightforest",
+ "chain": [
+  {
+   "id": "tf_dnv:mushgloom_torch",
+   "title": "Light That Grew There",
+   "desc": "A Twilight Forest mushgloom on a stick. It is also the only tf_dnv item seeded into the hedge-dungeon chest tables, so you may find one before you can craft one."
+  },
+  {
+   "id": "tf_dnv:trader_token",
+   "title": "Currency For A Forest That Has None",
+   "desc": "Found in hedge-dungeon barrels. The Twilight Trader wanders the forest and the token is what it wants from you."
+  },
+  {
+   "id": "tf_dnv:butcher_table",
+   "title": "The Hunter's Bench",
+   "desc": "Twilight oak logs and sticks. Each of the four job blocks makes one villager profession appear in a twilight village, and this one summons the Hunter."
+  },
+  {
+   "id": "tf_dnv:lumber_table",
+   "title": "The Lumberjack's Bench",
+   "desc": "Twilight oak log, planks and an axe. Place it and a Lumberjack takes the job."
+  },
+  {
+   "id": "tf_dnv:mycologist_table",
+   "title": "The Mushroom Farmer's Bench",
+   "desc": "Red mushroom block, mushroom stem and glass. The Mycologist is the profession unique to the twilight biomes."
+  },
+  {
+   "id": "tf_dnv:alchemy_table",
+   "title": "The Alchemist's Bench",
+   "desc": "Birch planks, glass, a glass bottle and a smooth stone slab. The fourth job block, and the one whose trades are worth the most."
+  },
+  {
+   "id": "tf_dnv:composter",
+   "title": "Composting With Steeleaf",
+   "desc": "A Twilight Composter framed in steeleaf ingots. It is the only recipe in the mod that costs a Labyrinth material, and the Farmer villager needs it."
+  },
+  {
+   "id": "tf_dnv:miner_helmet",
+   "title": "A Torch You Never Have To Place",
+   "desc": "Sold in the twilight village. Crouch while wearing it and it sets a free torch at your feet - the single most useful thing this mod adds to a Labyrinth run."
+  },
+  {
+   "id": "tf_dnv:moss_pickaxe",
+   "title": "The Pick From The Village",
+   "desc": "A village-traded pickaxe. It exists because the Twilight Forest gives you nowhere to buy tools before the Naga."
+  },
+  {
+   "id": "tf_dnv:shroombrella",
+   "title": "Shelter From The Canopy",
+   "desc": "A mushroom cap carried as an umbrella. Village stock, and the mod's signature novelty."
+  },
+  {
+   "id": "tf_dnv:twilight_trader_spawn_egg",
+   "title": "Calling The Wanderer",
+   "desc": "The Twilight Trader is a wandering merchant native to the forest, with its own texture, model, spawn handler and egg."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "tf_dnv:wood_table",
+   "members": [
+    "tf_dnv:wood_chair",
+    "tf_dnv:leather_couch",
+    "tf_dnv:bonsai",
+    "tf_dnv:flower",
+    "tf_dnv:mushroom_bed",
+    "tf_dnv:shroom_lantern",
+    "tf_dnv:steeleaf_lantern"
+   ]
+  }
+ ],
+ "notes": "SHORT CHAIN, AND SAID PLAINLY: Twilight Forest - Dungeons & Villages is a worldgen mod. Its content is two structures (data/tf_dnv/worldgen/structure/twilight_village.json and dungeon_hedge.json) with twelve loot tables between them, five villager professions, and nineteen items that are mostly village furniture. Only six of those nineteen have crafting recipes - alchemy_table, butcher_table, lumber_table, mycologist_table, composter and mushgloom_torch - and those six are the mechanical spine above. Only two ids appear in chest loot: tf_dnv:trader_token (dungeon_barrel.json) and tf_dnv:mushgloom_torch (dungeon_shroom.json). The rest - miner_helmet, moss_pickaxe, shroombrella and the furniture - are obtained from the village traders, whose offers are registered in Java (VillagerTradesMixin, AlchemyVillager, ButcherVillager, FarmerVillager, LumberVillager, MycologistVillager) rather than in data files, so the jar cannot tell you which villager sells which item. They are all registered items with models and lang keys, so the tasks resolve, but a pack author should confirm the trade tables in game before gating anything important behind them. ENTITY: entity.tf_dnv.twilight_trader is the only entity lang key and it verifies three ways - a spawn egg item, an entity texture folder and a class constant - but it is a merchant, so it is quested through its spawn egg rather than as a kill task. The five other entity keys are minecraft:villager profession names, not new mobs. The mod's mechanical hook worth building a chapter around: each job block placed in a village creates one of the five professions, so the four craftable tables plus the composter are effectively a 'staff your village' quest line. Parent items this addon assumes you already have: twilightforest:twilight_oak_log, twilightforest:twilight_oak_planks, twilightforest:mushgloom, twilightforest:steeleaf_ingot, access to the Twilight Forest dimension."
+}

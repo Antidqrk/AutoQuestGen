@@ -1,0 +1,150 @@
+{
+ "mod": "meadow",
+ "verified_against": "letsdo-meadow-forge-1.3.25.jar",
+ "item_count_in_jar": 166,
+ "chain": [
+  {
+   "id": "meadow:pine_log",
+   "title": "Pine For It",
+   "desc": "Pine Logs come from the alpine pines that define the Meadow biome."
+  },
+  {
+   "id": "meadow:pine_planks",
+   "title": "Board Meeting",
+   "desc": "Pine Planks build the cheese rack and most of the chalet furniture."
+  },
+  {
+   "id": "meadow:limestone",
+   "title": "Rock Solid Start",
+   "desc": "Limestone is the meadow's stone, smelted from cobbled limestone and cut into a full building set."
+  },
+  {
+   "id": "meadow:alpine_salt",
+   "title": "Worth Your Salt",
+   "desc": "Alpine Salt comes from salt ore or from cooking limestone or calcite, and nearly every cooked dish here needs it."
+  },
+  {
+   "id": "meadow:wooden_bucket",
+   "title": "Pail in Comparison",
+   "desc": "The Wooden Bucket is planks and slabs, and it is the only thing that holds Meadow's specialty milks."
+  },
+  {
+   "id": "meadow:cooking_cauldron",
+   "title": "Cauldron Me Maybe",
+   "desc": "The Cooking Cauldron, copper and iron, runs every meadow:cooking recipe."
+  },
+  {
+   "id": "meadow:wooden_milk_bucket",
+   "title": "Milking It",
+   "desc": "Filling a wooden bucket from a cow gives the Wooden Milk Bucket the cheese press wants."
+  },
+  {
+   "id": "meadow:rennet",
+   "title": "The Culture Club",
+   "desc": "Egg, salt and a glass bottle cook in the cauldron into Rennet, the curdling agent for all cheese."
+  },
+  {
+   "id": "meadow:cheese_form",
+   "title": "Press Your Luck",
+   "desc": "The Cheese Press is slabs and a stick, and it turns a milk bucket plus rennet into a wheel."
+  },
+  {
+   "id": "meadow:cheese_block",
+   "title": "The Wheel Deal",
+   "desc": "Milk and rennet pressed together form a full Cheese Wheel."
+  },
+  {
+   "id": "meadow:piece_of_cheese",
+   "title": "Cut Above",
+   "desc": "Breaking a wheel down gives Pieces of Cheese, the edible unit and cooking ingredient."
+  },
+  {
+   "id": "meadow:cheese_rack",
+   "title": "Rack Focus",
+   "desc": "The Cheese Rack stores and displays your wheels while they age."
+  },
+  {
+   "id": "meadow:cheese_sandwich",
+   "title": "Between Two Slices",
+   "desc": "Bread and cheese make the simplest thing on the menu, and still one of the best."
+  },
+  {
+   "id": "meadow:raw_buffalo_meat",
+   "title": "Buffalo Soldier",
+   "desc": "Raw Buffalo Meat comes from the Water Buffalo that roam the meadow."
+  },
+  {
+   "id": "meadow:cooked_buffalo_meat",
+   "title": "Well Done",
+   "desc": "Buffalo meat cooked in the cauldron with salt becomes a proper meal."
+  },
+  {
+   "id": "meadow:sausage_with_cheese",
+   "title": "Wurst Case Scenario",
+   "desc": "Buffalo meat, salt and cheese cook into Buffalo Sausage with Cheese."
+  },
+  {
+   "id": "meadow:roasted_ham",
+   "title": "Ham It Up",
+   "desc": "Buffalo meat with salt, potato and carrot roasts into a Roasted Buffalo Ham."
+  },
+  {
+   "id": "meadow:cheesecake",
+   "title": "Piece of Cake",
+   "desc": "Cheese, egg and wheat bake into a Cheesecake you can slice and share."
+  },
+  {
+   "id": "meadow:amethyst_cheese_block",
+   "title": "Crystal Clear Flavour",
+   "desc": "Amethyst milk, made in the cauldron from an amethyst cluster, salt and milk, presses into the rarest wheel in the mod."
+  },
+  {
+   "id": "meadow:fondue",
+   "title": "Fon-Do or Fon-Don't",
+   "desc": "Fondue is built from a cooking cauldron and iron, and melting cheese in it is the alpine kitchen's grand finale."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "meadow:cheese_form",
+   "members": [
+    "meadow:cheese_block",
+    "meadow:goat_cheese_block",
+    "meadow:sheep_cheese_block",
+    "meadow:buffalo_cheese_block",
+    "meadow:grain_cheese_block",
+    "meadow:warped_cheese_block",
+    "meadow:amethyst_cheese_block"
+   ]
+  },
+  {
+   "hub": "meadow:cooking_cauldron",
+   "members": [
+    "meadow:piece_of_cheese",
+    "meadow:cheese_roll",
+    "meadow:cheese_sandwich",
+    "meadow:cheese_stick",
+    "meadow:cheese_tart",
+    "meadow:cheesecake",
+    "meadow:fondue",
+    "meadow:sausage_with_cheese",
+    "meadow:roasted_ham",
+    "meadow:cooked_buffalo_meat"
+   ]
+  },
+  {
+   "hub": "meadow:wooden_bucket",
+   "members": [
+    "meadow:wooden_milk_bucket",
+    "meadow:wooden_goat_milk_bucket",
+    "meadow:wooden_sheep_milk_bucket",
+    "meadow:wooden_buffalo_milk_bucket",
+    "meadow:wooden_grain_milk_bucket",
+    "meadow:wooden_warped_milk_bucket",
+    "meadow:wooden_amethyst_milk_bucket",
+    "meadow:wooden_water_bucket"
+   ]
+  }
+ ],
+ "notes": "Two custom recipe types drive the chain: meadow:cooking on the Cooking Cauldron (salt, rennet, cooked meats, specialty milks) and meadow:cheese on the Cheese Press (milk bucket + rennet -> wheel). Alpine Salt is the true early gate, since almost every meadow:cooking recipe takes a #meadow:salt ingredient. The 273 meadow:conditional and 115 meadow:woodcutting recipes are compat and variant duplicates and were not used for ordering. Most specialty milk buckets are filled from the matching mob rather than crafted, but all are confirmed items. Dropped as unverifiable: alpine_oak_log, bed, big_flower_pot, furnace_cobblestone, horned_sheep_spawn_egg, wooden_flower_pot (model stems with no lang key and no recipe output). Also note meadow:limestone_bricks_stairs appears as a stonecutting output but has no item model, so it was not used."
+}

@@ -1,0 +1,127 @@
+{
+ "mod": "thermal_cultivation",
+ "verified_against": "thermal_cultivation-1.20.1-11.0.1.24.jar (thermal:phytogro item + its phytogro_8 recipe live in thermal_core-1.20.1-11.0.6.24.jar embedded in thermal_foundation)",
+ "item_count_in_jar": 89,
+ "registers_into": ["thermal"],
+ "parent_mod": "thermal",
+ "chain": [
+  {
+   "id": "thermal:tomato_seeds",
+   "title": "Seeds from the Weeds",
+   "desc": "Break grass and ferns - fifteen kinds of Thermal crop seeds drop from them. Tomatoes are the one to plant first: they feed straight into the sauce every good dish wants."
+  },
+  {
+   "id": "thermal:tomato",
+   "title": "First Harvest",
+   "desc": "Plant the seeds on farmland and pick the tomatoes. Every Thermal crop drops extra seeds when mature, so one lucky grass drop becomes a whole field."
+  },
+  {
+   "id": "thermal:jar",
+   "title": "Jars Before Jam",
+   "desc": "Two planks over four glass makes 8 Glass Jars. Sauces, jams and butters all come packed in jars, so this cheap craft gates the entire pantry."
+  },
+  {
+   "id": "thermal:tomato_sauce",
+   "title": "Sauce It",
+   "desc": "Six tomatoes into a jar. Tomato sauce is the shared ingredient behind Hearty Stew, Stuffed Pumpkin and Stuffed Pepper - make more than one."
+  },
+  {
+   "id": "thermal:watering_can",
+   "title": "Rain on Demand",
+   "desc": "Four copper ingots around a bucket. Fill it at any water and sprinkle your fields - crops visibly grow faster, and it costs nothing but a moment of standing there."
+  },
+  {
+   "id": "thermal:strawberry",
+   "title": "Strawberry Fields",
+   "desc": "Grow strawberries from grass-dropped seeds. Beyond snacking, six of them fill a jar with jelly - one half of the sandwich this mod is building toward."
+  },
+  {
+   "id": "thermal:jelly",
+   "title": "Jar of Jelly",
+   "desc": "Six strawberries into a jar. Sweet half of the PBJ, and Spice and Chocolate Cake bakers will want strawberries on hand too."
+  },
+  {
+   "id": "thermal:peanut",
+   "title": "Go Nuts",
+   "desc": "Peanut seeds also fall from grass. Grow a row - six peanuts to a jar of peanut butter, and the surplus compresses into blocks that fuel the Gourmand Dynamo."
+  },
+  {
+   "id": "thermal:peanut_butter",
+   "title": "Jar of Peanut Butter",
+   "desc": "Six peanuts into a jar (or press five with a jar in the Multiservo Press). The savory half of the sandwich."
+  },
+  {
+   "id": "thermal:pbj_sandwich",
+   "title": "The PBJ",
+   "desc": "Bread plus peanut butter plus jelly makes two sandwiches. Cheap, stackable, farm-renewable food that ends your rotten-flesh era for good."
+  },
+  {
+   "id": "thermal:sadiroot",
+   "title": "The Saddest Root",
+   "desc": "Grow Sadiroot from grass-dropped seeds. It looks like nothing, but it is the curdling agent for cheese and the spice in Spice Cake - no other crop substitutes."
+  },
+  {
+   "id": "thermal:cheese_wheel",
+   "title": "Wheel of Cheese",
+   "desc": "A milk bucket plus one sadiroot. Place it as a decorative wheel or cut it up - either way, this is renewable milk-to-food conversion."
+  },
+  {
+   "id": "thermal:cheese_wedge",
+   "title": "Cut the Cheese",
+   "desc": "One wheel cuts into four wedges. Wedges are eaten straight or folded into Stuffed Peppers - the fancy end of the kitchen."
+  },
+  {
+   "id": "thermal:hearty_stew",
+   "title": "Hearty Stew",
+   "desc": "Carrot, potato, barley, onion, radish and a jar of tomato sauce in a bowl. One of the biggest food bars in the mod - the meal you take caving."
+  },
+  {
+   "id": "thermal:xp_stew",
+   "title": "Perspicacious Stew",
+   "desc": "Barley, eggplant, spinach and a Bottle o' Enchanting in a bowl. This stew feeds you experience - farmed XP without a mob grinder."
+  },
+  {
+   "id": "thermal:phytogro",
+   "title": "Phyto-Gro",
+   "desc": "Sand, niter and two apatite craft 8 Phyto-Gro - bone meal's industrial cousin. It powers the Phytogenic Insolator and is an ingredient in the soil and spores ahead."
+  },
+  {
+   "id": "thermal:phytosoil",
+   "title": "Phyto-Soil",
+   "desc": "Ring dirt with Phyto-Gro and charcoal. Phyto-Soil accelerates anything planted in it around the clock - the endgame flowerbed for your most valuable crops."
+  },
+  {
+   "id": "thermal:glowstone_mushroom_spores",
+   "title": "Glimmercap Spores",
+   "desc": "A red mushroom, glowstone dust, Phyto-Gro and a Bottle o' Enchanting. Plant the spores, harvest Glimmercaps, and smelt spores back into glowstone dust - renewable glowstone from a farm."
+  },
+  {
+   "id": "thermal:potion_cake",
+   "title": "Witch's Food Cake",
+   "desc": "Milk, sugar, amaranth, an egg and any potion baked together. Each slice eaten applies the potion - a placeable, seven-serving buff dispenser for your whole team."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "thermal:tomato_seeds",
+   "members": ["thermal:amaranth_seeds", "thermal:barley_seeds", "thermal:bell_pepper_seeds", "thermal:corn_seeds", "thermal:eggplant_seeds", "thermal:flax_seeds", "thermal:green_bean_seeds", "thermal:onion_seeds", "thermal:peanut_seeds", "thermal:radish_seeds", "thermal:rice_seeds", "thermal:sadiroot_seeds", "thermal:spinach_seeds", "thermal:strawberry_seeds"],
+   "note": "All fifteen wild seed types drop from breaking grass, tall grass and ferns (data/thermal/loot_modifiers/seeds_from_grass.json)."
+  },
+  {
+   "hub": "thermal:watering_can",
+   "members": ["thermal:amaranth", "thermal:barley", "thermal:bell_pepper", "thermal:corn", "thermal:eggplant", "thermal:flax", "thermal:green_bean", "thermal:onion", "thermal:radish", "thermal:rice", "thermal:spinach"],
+   "note": "The rest of the harvest. Flax centrifuges into string, corn and eggplant cook into meals, and every crop has an Insolator recipe for automation."
+  },
+  {
+   "hub": "thermal:glowstone_mushroom_spores",
+   "members": ["thermal:gunpowder_mushroom_spores", "thermal:redstone_mushroom_spores", "thermal:slime_mushroom_spores"],
+   "note": "Four resource mushrooms, each crafted from a mushroom, the matching resource, Phyto-Gro and a Bottle o' Enchanting; smelting spores returns the resource, making gunpowder, redstone and slime farmable."
+  },
+  {
+   "hub": "thermal:tomato_sauce",
+   "members": ["thermal:green_bean_pie", "thermal:spring_salad", "thermal:stuffed_pepper", "thermal:stuffed_pumpkin", "thermal:sushi_maki", "thermal:spice_cake", "thermal:chocolate_cake", "thermal:carrot_cake"],
+   "note": "The full cookbook - each dish pulls from several crop lines, so this is the natural completionist branch once the fields exist."
+  }
+ ],
+ "notes": "All ids verified against the cultivation jar's recipes (data/thermal/recipes/), loot tables, tags and the seeds_from_grass loot modifier; display names confirmed in thermal_core's assets/thermal/lang/en_us.json (cultivation ships no lang file of its own - names live in the core jar embedded in thermal_foundation). Exact recipe contents (tomato_sauce = 6 tomato + jar, cheese_wheel = milk + sadiroot, xp_stew, potion_cake, phytosoil, glimmercap spores, watering_can, jar_4) all read from recipe JSONs. phytogro's recipe lives in thermal_core but is anchored here because the whole cultivation late game consumes it. Excluded from the chain: frost melon (frost_melon_seeds craft only from a slice and no worldgen/loot source for the first slice exists in data - source is code/trade-side, so it cannot honestly be a step), and coffee/tea/hops (seeds have no grass-loot or worldgen source in data and no Insolator recipes - trade-gated, unverifiable from the jar). The Phytogenic Insolator, Centrifugal Separator and Gourmand Dynamo referenced in descs are thermal_expansion machines this module feeds recipes into."
+}

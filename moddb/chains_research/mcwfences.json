@@ -1,0 +1,129 @@
+{
+ "mod": "mcwfences",
+ "verified_against": "mcw-mcwfences-1.2.1-mc1.20.1forge.jar",
+ "item_count_in_jar": 180,
+ "chain": [
+  {
+   "id": "mcwfences:oak_stockade_fence",
+   "title": "A Solid Wooden Wall",
+   "desc": "Logs and planks in two rows give three Stockade Fences. It is the tallest of the four wooden fence styles and the only one with no gaps to see through."
+  },
+  {
+   "id": "mcwfences:oak_picket_fence",
+   "title": "The Garden Fence",
+   "desc": "Sticks and planks between logs, three at a time. Picket fences are the low white-fence silhouette, in eleven woods."
+  },
+  {
+   "id": "mcwfences:oak_horse_fence",
+   "title": "Rails for a Paddock",
+   "desc": "Logs and sticks alternating, three at a time. Two horizontal rails and no vertical infill."
+  },
+  {
+   "id": "mcwfences:oak_wired_fence",
+   "title": "It Actually Hurts",
+   "desc": "Logs, sticks and iron bars, three at a time. This is the one fence in the mod with real behaviour: the jar ships the death messages 'was trying to cross a wired fence' and a version for dying while escaping a mob, so wired fence damages whatever touches it."
+  },
+  {
+   "id": "mcwfences:oak_highley_gate",
+   "title": "A Gate to Match",
+   "desc": "Logs and sticks in two rows. Highley, curved and pyramid gates are three gate silhouettes across the same eleven woods."
+  },
+  {
+   "id": "mcwfences:andesite_pillar_wall",
+   "title": "Stone With Posts",
+   "desc": "Stone over polished stone with a gap, five at a time. Pillar walls run fourteen stone types and are the base of the mod's stone half."
+  },
+  {
+   "id": "mcwfences:andesite_grass_topped_wall",
+   "title": "Turf on Top",
+   "desc": "Stone and polished stone with dirt in the middle, six at a time - a wall with a strip of grass growing along the coping."
+  },
+  {
+   "id": "mcwfences:modern_andesite_wall",
+   "title": "Flat and Plain",
+   "desc": "Stone and polished stone, six at a time. Modern walls have no crenellation at all; the Railing walls are the same recipe with iron bars in the middle."
+  },
+  {
+   "id": "mcwfences:andesite_railing_gate",
+   "title": "Iron in the Gate",
+   "desc": "Iron bars between polished stone. Railing gates are the stone half's answer to the wooden gates, in fifteen materials."
+  },
+  {
+   "id": "mcwfences:mesh_metal_fence",
+   "title": "Cut From Iron Bars",
+   "desc": "One stonecut of iron bars. Eleven metal fence styles and five metal gates all come off the stonecutter this way, which makes them the cheapest fences in the mod by a wide margin."
+  },
+  {
+   "id": "mcwfences:iron_cheval_de_frise",
+   "title": "Anti-Cavalry",
+   "desc": "Iron ingots and nuggets in a frame. The wooden version takes logs and sticks; both are the crossed-stake barricade rather than a fence."
+  },
+  {
+   "id": "mcwfences:oak_hedge",
+   "title": "A Wall of Leaves",
+   "desc": "Four leaves in a square give four Hedges. Azalea and flowering azalea have their own, which is why the hedge family is ten wide rather than eleven."
+  },
+  {
+   "id": "mcwfences:bamboo_fence",
+   "title": "The Fence Vanilla Forgot",
+   "desc": "Bamboo in a bracket shape, two at a time - a plain bamboo fence with no style prefix at all."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mcwfences:spruce_picket_fence",
+   "members": [
+    "mcwfences:birch_picket_fence",
+    "mcwfences:jungle_picket_fence",
+    "mcwfences:acacia_picket_fence",
+    "mcwfences:dark_oak_picket_fence",
+    "mcwfences:mangrove_picket_fence",
+    "mcwfences:cherry_picket_fence",
+    "mcwfences:bamboo_picket_fence",
+    "mcwfences:crimson_picket_fence",
+    "mcwfences:warped_picket_fence",
+    "mcwfences:spruce_stockade_fence",
+    "mcwfences:birch_stockade_fence",
+    "mcwfences:acacia_stockade_fence",
+    "mcwfences:spruce_horse_fence"
+   ]
+  },
+  {
+   "hub": "mcwfences:stone_pillar_wall",
+   "members": [
+    "mcwfences:blackstone_pillar_wall",
+    "mcwfences:deepslate_pillar_wall",
+    "mcwfences:deepslate_brick_pillar_wall",
+    "mcwfences:diorite_pillar_wall",
+    "mcwfences:granite_pillar_wall",
+    "mcwfences:end_brick_pillar_wall",
+    "mcwfences:mud_brick_pillar_wall",
+    "mcwfences:nether_brick_pillar_wall",
+    "mcwfences:prismarine_pillar_wall",
+    "mcwfences:quartz_pillar_wall",
+    "mcwfences:red_sandstone_pillar_wall",
+    "mcwfences:sandstone_pillar_wall",
+    "mcwfences:stone_grass_topped_wall"
+   ]
+  },
+  {
+   "hub": "mcwfences:ornate_metal_fence",
+   "members": [
+    "mcwfences:gothic_metal_fence",
+    "mcwfences:bastion_metal_fence",
+    "mcwfences:cathedral_metal_fence",
+    "mcwfences:curved_metal_fence",
+    "mcwfences:double_curved_metal_fence",
+    "mcwfences:fortress_metal_fence",
+    "mcwfences:guardian_metal_fence",
+    "mcwfences:twilight_metal_fence",
+    "mcwfences:vintage_metal_fence",
+    "mcwfences:panelled_metal_fence",
+    "mcwfences:expanded_mesh_metal_fence",
+    "mcwfences:acorn_metal_fence",
+    "mcwfences:majestic_metal_fence_gate"
+   ]
+  }
+ ],
+ "notes": "MACAW'S MODS SHARE ONE STRUCTURE: A SMALL NUMBER OF DISTINCT BLOCK TYPES CROSSED WITH A LARGE MATERIAL TABLE. The chain below is one step per distinct RECIPE SHAPE, not one per id, and the material tables go to wheels. MODDB: no consensus signal - moddb.json contains no key for any Macaw's mod - so every ordering here is the recipe graph alone and there is no conflict to record. Verified against mcw-mcwfences-1.2.1-mc1.20.1forge.jar as shipped in this pack. ID DETECTION - A PERFECTLY CLEAN JAR: 180 item models, 180 blockstates, 180 lang block.mcwfences.* keys, 180 loot tables, and all four sets are the same 180 stems. There is nothing to widen and nothing to narrow, and every id is produced by at least one of the 222 recipe files. DISTINCT BLOCK TYPES: 69 name-stems, about 13 real shapes. Verified yields: stockade 3, picket 3, horse 3, wired 3, highley 1, curved 4, pyramid 1, pillar_wall 5, grass_topped_wall 6, modern wall 6, railing wall 6, railing_gate 1, hedge 4, bamboo_fence 2, cheval_de_frise 1 (iron) and 4 (wooden), metal fences 1 by stonecutter. THE ONE REAL MECHANIC, and it is a damage source rather than decoration: the jar ships death.attack.wired_fence = '%1$s was trying to cross a wired fence' and death.attack.wired_fence.player for dying to it while fleeing a mob. mcwfences:oak_wired_fence and its ten siblings hurt entities that touch them, which is the only Macaw's block in this whole slice that can kill a player. The second mechanic string, mcwfences.stackable.desc = 'Can be stacked upwards to be taller', applies to the fence blocks generally. THE MATERIAL TABLES DIFFER BETWEEN HALVES and both differ from the other Macaw's mods: the four wooden fence styles and the three wooden gates each run 11 woods; pillar walls, grass-topped walls, modern walls and railing walls run 14 stones; railing gates run 15; hedges run only 10 because azalea and flowering azalea take two of the slots and oak is present but crimson and warped are not. THE METAL FENCES ARE STONECUT, NOT CRAFTED - eleven styles and five gates all come from one iron bars input on a stonecutter, which is worth knowing because it makes them dramatically cheaper than every other fence here. DROPS: none. Nothing in this jar is unobtainable and nothing is orphaned."
+}

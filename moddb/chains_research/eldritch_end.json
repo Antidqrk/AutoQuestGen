@@ -1,0 +1,136 @@
+{
+ "mod": "eldritch_end",
+ "verified_against": "Eldritch_End-FORGE-MC1.20.1-0.3.4.jar",
+ "item_count_in_jar": 95,
+ "chain": [
+  {
+   "id": "eldritch_end:spire_stone",
+   "title": "Ground of the Wrong End",
+   "desc": "The bedrock stone of the mod's two End biomes, the Primordial Abyss and the Hasturian Wastes; it polishes into the whole spire building family."
+  },
+  {
+   "id": "eldritch_end:abysmal_fronds",
+   "title": "Fronds in the Dark Below",
+   "desc": "The surface growth of the Primordial Abyss, placed by that biome's own surface configured feature."
+  },
+  {
+   "id": "eldritch_end:hasturian_moss",
+   "title": "Where the Wastes Creep",
+   "desc": "The living cover of the Hasturian Wastes, the drier and stranger of the mod's two End biomes."
+  },
+  {
+   "id": "eldritch_end:primordial_log",
+   "title": "Timber From Before",
+   "desc": "Cut from the primordial trees that generate through the mod's primordial_tree_big and primordial_tree_small structures."
+  },
+  {
+   "id": "eldritch_end:etyr_ingot",
+   "title": "Metal of the Outer Dark",
+   "desc": "Smelted or blasted from Etyr Ore or Raw Etyr; it is also Etyr Infusion I, the mod's first weapon and armour infusion material."
+  },
+  {
+   "id": "eldritch_end:etyr_block",
+   "title": "Stacked and Sealed",
+   "desc": "Nine ingots pressed together, and the base of the etyr building set that the corrupted, perturbed and decadent variants branch from."
+  },
+  {
+   "id": "kill:eldritch_end:ominous_eye",
+   "title": "Something Is Watching",
+   "desc": "A floating End horror that haunts players who have accumulated corruption; its loot table is the only source of the Ominous Eye item."
+  },
+  {
+   "id": "eldritch_end:ominous_eye",
+   "title": "Pried From Its Socket",
+   "desc": "A fifteen percent drop from the Ominous Eye entity, and four of them ring the Eldritch Pedestal recipe."
+  },
+  {
+   "id": "kill:eldritch_end:dendler",
+   "title": "The Thing That Skitters",
+   "desc": "A registered End hostile of the mod; killing things while corrupted is what draws the Ominous Eyes to you."
+  },
+  {
+   "id": "kill:eldritch_end:aberration",
+   "title": "It Should Not Have Limbs",
+   "desc": "The mod's heavy End hostile; its loot table is the only source of Aberration's Limb and Aberration's Heart."
+  },
+  {
+   "id": "eldritch_end:aberration_limb",
+   "title": "Corruption Infusion I",
+   "desc": "The Aberration's common drop, used both as the first corruption infusion material and as the eight-limb frame of the Abysmal Pedestal."
+  },
+  {
+   "id": "eldritch_end:abysmal_pedestal",
+   "title": "A Ring of Limbs",
+   "desc": "Eight Aberration's Limbs in a ring; on its own it is only the lesser altar, the blank half of the summoning ritual."
+  },
+  {
+   "id": "eldritch_end:eldritch_pedestal",
+   "title": "The Summoning Altar",
+   "desc": "The Abysmal Pedestal bound with chains and four Ominous Eyes; its own tooltip type line reads Summoning Altar."
+  },
+  {
+   "id": "eldritch_end:aberration_heart",
+   "title": "Corruption Infusion II",
+   "desc": "The Aberration's rare drop, and the only class in the jar that extends the mod's SummonPartItem - it is the ritual component the altar consumes."
+  },
+  {
+   "id": "kill:eldritch_end:the_faceless",
+   "title": "It Has No Face",
+   "desc": "The mod's boss, brought into the world through the pedestal ritual rather than found; it has its own FacelessConfig health and damage block."
+  },
+  {
+   "id": "eldritch_end:etyr_upgrade_pattern",
+   "title": "The Etyr Pattern",
+   "desc": "Injected into a vanilla chest loot table at runtime by the mod's LootRegistry; once you hold one it duplicates with end stone and an Etyr Ingot."
+  },
+  {
+   "id": "eldritch_end:etyrite_helmet",
+   "title": "Beyond Netherite",
+   "desc": "A smithing_transform of a netherite helmet with an Etyr Ingot and the Etyr pattern; the mod's only armour tier."
+  },
+  {
+   "id": "eldritch_end:corruption_upgrade_pattern",
+   "title": "The Corrupted Pattern",
+   "desc": "The second runtime-injected template, duplicated with end stone and an Aberration's Limb; it drives the corruption infusion smithing recipes."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "eldritch_end:etyr_tiles",
+   "members": [
+    "eldritch_end:etyr_pillar",
+    "eldritch_end:etyr_bars",
+    "eldritch_end:etyr_door",
+    "eldritch_end:etyr_trapdoor",
+    "eldritch_end:corrupted_etyr_block",
+    "eldritch_end:perturbed_etyr_block",
+    "eldritch_end:decadent_etyr_block"
+   ]
+  },
+  {
+   "hub": "eldritch_end:polished_spire_stone",
+   "members": [
+    "eldritch_end:polished_spire_stone_bricks",
+    "eldritch_end:polished_spire_stone_tiles",
+    "eldritch_end:chiseled_polished_spire_stone",
+    "eldritch_end:polished_spire_stone_pillar",
+    "eldritch_end:cracked_polished_spire_stone_bricks",
+    "eldritch_end:cracked_polished_spire_stone_tiles"
+   ]
+  },
+  {
+   "hub": "eldritch_end:primordial_planks",
+   "members": [
+    "eldritch_end:stripped_primordial_log",
+    "eldritch_end:primordial_wood",
+    "eldritch_end:primordial_leaves",
+    "eldritch_end:primordial_door",
+    "eldritch_end:primordial_fence",
+    "eldritch_end:primordial_boat",
+    "eldritch_end:abysmal_roots",
+    "eldritch_end:suspicious_fronds"
+   ]
+  }
+ ],
+ "notes": "Item set = the 95 stems of assets/eldritch_end/models/item/*.json intersected with item.eldritch_end.* / block.eldritch_end.* keys in assets/eldritch_end/lang/en_us.json; every id above is in that set except the two allow-listed patterns below. The mod adds no dimension - it adds two End biomes, data/eldritch_end/worldgen/biome/primordial_abyss.json and hasturian_wastes.json, both in data/minecraft/tags/worldgen/biome/is_end.json - so there are no dim: steps and the chain opens on the biome materials instead. ENTITY TRAP FOUND AND AVOIDED. Nine entity.eldritch_end.* lang keys exist, but elocindev/eldritch_end/registry/EntityRegistry.class registers exactly six: ominous_eye, aberration, tentacle, undead_tentacle, dendler and the_faceless. eldritch_end:hastur (Hastur's Image) is NOT registered anywhere in the jar - HasturEntity.class and item/spawneggs/HastursCrown.class exist but nothing references them, so a kill:eldritch_end:hastur task would be permanently uncompletable. eldritch_end:eye (The Eldritch Eye) and eldritch_end:crystal (Resonating Crystal) are registered ONLY inside elocindev/eldritch_end/compat/SpellEngineCompat.class, i.e. conditionally, when Spell Engine is installed - and eldritch_end:eye_spawn_egg is registered in that same compat class rather than in ItemRegistry. All three were excluded. eldritch_end:chorb_spawn_egg is a real registered item but there is no Chorb entity class in the jar at all. kill:eldritch_end:tentacle and kill:eldritch_end:undead_tentacle are registered but are corruption hazards that erupt from the ground rather than mobs you hunt, so they were left out of the chain. ALLOW-LISTED IDS: etyr_upgrade_pattern and corruption_upgrade_pattern have item models, are registered in ItemRegistry, and are the templates of every etyrite_*_smithing and corruption smithing recipe, but like vanilla smithing templates they carry no item.eldritch_end.<id> lang key, so they fail a naive model-intersect-lang test. Their survival source is elocindev/eldritch_end/registry/LootRegistry.class, which hooks LootTableEvents.MODIFY and adds CORRUPTION_INFUSION_TEMPLATE and ETYR_INFUSION_TEMPLATE to a vanilla loot table; the etyr_pattern.json and corrupted_pattern.json recipes are duplication recipes that require an existing pattern, so the loot injection is the only entry point. DROPPED, NO SURVIVAL SOURCE: eldritch_end:silver_key, eldritch_end:xal and eldritch_end:necronomicon are registered in ItemRegistry with models and lang keys, but a full-jar scan finds them in no recipe, no loot table and no structure - they have no acquisition path in 0.3.4. abysmal_pedestal and eldritch_pedestal have no block loot tables and cannot be recovered once placed, but both are craftable, so their quests remain completable. CONSENSUS: all five moddb entries are covered and the order matches - etyr_ingot first (0.000), aberration_heart at 0.167, ominous_eye at 0.273, abysmal_pedestal at 0.333, eldritch_pedestal last at 1.000. No conflicts. LOADER NOTE: Modrinth lists separate FABRIC and FORGE files for 0.3.4, but the FORGE artifact ships fabric.mod.json, Fabric intermediary mappings (class_1299 / method_10230), a bundled fabric particles jar and Fabric API loot events; it declares a dependency on the Necronomicon multiloader library and carries a necronomicon.json marked loader: forge. 0.3.2's FORGE artifact is built the same way. Item and entity ids are unaffected, but loader compatibility should be confirmed before this goes into a Forge pack."
+}

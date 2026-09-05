@@ -1,0 +1,328 @@
+{
+ "mod": "integrateddynamics",
+ "ids_in_jar": 80,
+ "videos": [
+  {
+   "id": "ZwF-LwTR_WE",
+   "title": "Integrated Dynamics Basics: Mod Spotlight and Omnifactory Supershorts (#27: Part 1)",
+   "channel": "minecraftinchocolate",
+   "views": 7238,
+   "duration": 503,
+   "chars": 9129
+  },
+  {
+   "id": "uB7XYCbDWLU",
+   "title": "Guide to Integrated Dynamics, Tunnels, and Terminals Mod | Modded Minecraft Tutorial",
+   "channel": "ChosenArchitect",
+   "views": 148610,
+   "duration": 1565,
+   "chars": 26613
+  },
+  {
+   "id": "r-1sING1M_E",
+   "title": "Modded Early Storage Choices and Integrated Dynamics Storage Tutorial",
+   "channel": "Nonsanity",
+   "views": 10901,
+   "duration": 1524,
+   "chars": 16908
+  },
+  {
+   "id": "b9nk-uBr_4w",
+   "title": "Mod Spotlight   Integrated Dynamics",
+   "channel": "direwolf20",
+   "views": 252501,
+   "duration": 2222,
+   "chars": 39048
+  }
+ ],
+ "not_transcribed": [],
+ "items": {
+  "integrateddynamics:variable": {
+   "mentions": 160,
+   "videos": 4,
+   "first_at": 0.1968,
+   "praise": 28,
+   "warn": 0,
+   "early_cue": 6,
+   "late_cue": 7
+  },
+  "integrateddynamics:cable": {
+   "mentions": 27,
+   "videos": 4,
+   "first_at": 0.3265,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "integrateddynamics:squeezer": {
+   "mentions": 16,
+   "videos": 4,
+   "first_at": 0.1527,
+   "praise": 10,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "integrateddynamics:drying_basin": {
+   "mentions": 9,
+   "videos": 4,
+   "first_at": 0.1626,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "integrateddynamics:logic_programmer": {
+   "mentions": 16,
+   "videos": 3,
+   "first_at": 0.3433,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "integrateddynamics:variablestore": {
+   "mentions": 13,
+   "videos": 3,
+   "first_at": 0.3707,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 2
+  },
+  "integrateddynamics:coal_generator": {
+   "mentions": 5,
+   "videos": 3,
+   "first_at": 0.5265,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "integrateddynamics:delay": {
+   "mentions": 7,
+   "videos": 2,
+   "first_at": 0.8368,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "integrateddynamics:portable_logic_programmer": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.4371,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "integrateddynamics:proxy": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.8983,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "integrateddynamics:materializer": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.7001,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "integrateddynamics:wrench": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.9277,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "integrateddynamics:proto_chorus": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.57,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "integrateddynamics:energy_battery": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5581,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "integrateddynamics:variable_transformer_output": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6043,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "integrateddynamics:mechanical_squeezer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1192,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "integrateddynamics:mechanical_drying_basin": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1203,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "integrateddynamics:logic_director": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6067,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "integrateddynamics:block_liquid_chorus": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5962,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "integrateddynamics:crystalized_chorus_chunk": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6012,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "integrateddynamics:on_the_dynamics_of_integration": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0683,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "Menril is the entry material and it comes from worldgen trees, so the mod starts with finding a biome, not a bench.",
+    "ids": [
+     "integrateddynamics:menril_log",
+     "integrateddynamics:block_menril_resin",
+     "integrateddynamics:crystalized_menril_chunk"
+    ]
+   },
+   {
+    "note": "Squeezer and drying basin are the explicit first two crafts, and guides stress the drying basin placement matters.",
+    "ids": [
+     "integrateddynamics:squeezer",
+     "integrateddynamics:drying_basin"
+    ]
+   },
+   {
+    "note": "Then the network itself: cable, a reader part, a writer part.",
+    "ids": [
+     "integrateddynamics:cable",
+     "integrateddynamics:part_block_reader",
+     "integrateddynamics:part_redstone_writer"
+    ]
+   },
+   {
+    "note": "The logic programmer and variable cards come last - they are where the mod's actual programming happens.",
+    "ids": [
+     "integrateddynamics:logic_programmer",
+     "integrateddynamics:variable",
+     "integrateddynamics:variablestore"
+    ]
+   }
+  ],
+  "tiers": [
+   {
+    "note": "Progression is by part VARIETY, not power tiers: each reader/writer pair opens a new data domain (inventory, machine, fluid, entity, redstone).",
+    "ids": [
+     "integrateddynamics:part_inventory_reader",
+     "integrateddynamics:part_machine_reader",
+     "integrateddynamics:part_fluid_reader",
+     "integrateddynamics:part_entity_reader",
+     "integrateddynamics:part_redstone_reader",
+     "integrateddynamics:part_inventory_writer",
+     "integrateddynamics:part_machine_writer",
+     "integrateddynamics:part_redstone_writer"
+    ]
+   },
+   {
+    "note": "Mechanical variants are the throughput upgrade over the hand-cranked originals.",
+    "ids": [
+     "integrateddynamics:squeezer",
+     "integrateddynamics:mechanical_squeezer",
+     "integrateddynamics:drying_basin",
+     "integrateddynamics:mechanical_drying_basin"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "Nothing in the network works without crystalized menril chunks, which require the squeezer/basin pair first.",
+    "ids": [
+     "integrateddynamics:crystalized_menril_chunk",
+     "integrateddynamics:squeezer",
+     "integrateddynamics:drying_basin"
+    ]
+   },
+   {
+    "note": "Readers produce values that are useless until a logic programmer writes them onto a variable card.",
+    "ids": [
+     "integrateddynamics:logic_programmer",
+     "integrateddynamics:variable",
+     "integrateddynamics:part_display_panel"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "Guides openly concede the mod is conceptually hard and easy to bounce off; they recommend starting with a single trivial reader-to-writer example rather than a real build.",
+    "ids": [
+     "integrateddynamics:part_block_reader",
+     "integrateddynamics:part_redstone_writer"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "The logic programmer and variable system ARE the mod - it is a visual programming language wearing a tech mod's clothes.",
+    "ids": [
+     "integrateddynamics:logic_programmer",
+     "integrateddynamics:variable",
+     "integrateddynamics:variablestore",
+     "integrateddynamics:part_display_panel"
+    ]
+   }
+  ]
+ },
+ "transcript_profile": "whisper small, vad, beam 1, WITH the legacy Minecraft-vocabulary initial_prompt that was later removed from ytgrab as biasing. Counts may be slightly inflated toward mod-name-like words; human_notes quotes were read directly and are unaffected."
+}

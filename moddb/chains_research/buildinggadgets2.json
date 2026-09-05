@@ -1,0 +1,44 @@
+{
+ "mod": "buildinggadgets2",
+ "verified_against": "buildinggadgets2-1.0.8.jar",
+ "item_count_in_jar": 9,
+ "chain": [
+  {
+   "id": "buildinggadgets2:gadget_building",
+   "title": "Place Nine at Once",
+   "desc": "Iron, lapis and redstone around a pair of diamonds. The Building Gadget copies the block you look at and stamps it across a mode-shaped area - rows, walls, grids, stairs, surfaces or build-to-me - out of your own inventory."
+  },
+  {
+   "id": "buildinggadgets2:gadget_exchanging",
+   "title": "Swap Without Breaking",
+   "desc": "The same frame with the diamonds and lapis transposed. The Exchanging Gadget replaces blocks that are already in the world with the one you have bound, instead of adding new ones."
+  },
+  {
+   "id": "buildinggadgets2:gadget_destruction",
+   "title": "Ender Pearls Take It Away",
+   "desc": "Ender pearls where the diamonds were. The Destruction Gadget clears a whole volume at once and voids the drops, which is exactly why the warning is baked into its tooltip."
+  },
+  {
+   "id": "buildinggadgets2:gadget_copy_paste",
+   "title": "Blueprint by Emerald",
+   "desc": "Emeralds in the middle row. Anchor two corners, copy the volume, then paste it anywhere - the materials list tells you what the paste will cost before you commit to it."
+  },
+  {
+   "id": "buildinggadgets2:gadget_cut_paste",
+   "title": "Move the Whole Building",
+   "desc": "Shears flanking the redstone. Cut lifts a structure out of the world and holds it, block entities included, until you paste it back down somewhere else."
+  },
+  {
+   "id": "buildinggadgets2:template_manager",
+   "title": "A Desk for the Plans",
+   "desc": "Iron, lapis, redstone and two sheets of paper. The Template Manager is the block that turns a gadget's stored copy into something you can carry, name and hand to another player."
+  },
+  {
+   "id": "buildinggadgets2:template",
+   "title": "Paper Into Structure",
+   "desc": "Not a crafting recipe: put a Copy Paste Gadget in the manager's top slot and a piece of paper in the bottom, then press Save. The paper becomes a Template holding the whole structure."
+  }
+ ],
+ "collections": [],
+ "notes": "NINE REGISTERED IDS - SIX GADGETS, A WORKBENCH AND TWO CARRIERS - SO THERE IS NOTHING LEFT OVER TO PUT IN A WHEEL. NAME WARNING: the assignment listed this mod as 'buildinggadgets', but there is no 1.20.1 Forge build of the original Building Gadgets (a Modrinth search under facets [categories:forge][versions:1.20.1] returns only the unrelated addon bg2-cut-all), and the jar actually installed in this pack declares modId=\"buildinggadgets2\" in META-INF/mods.toml. Every id below is therefore namespaced buildinggadgets2: and this file is named for that modid. Verified against buildinggadgets2-1.0.8.jar (javafml, forge [43,), minecraft [1.19.2,)). ID DETECTION - THIS JAR IS THE ORPHANED-ASSET CASE. assets/buildinggadgets2/models/item/ holds 30 stems but lang/en_us.json has only 7 item.* and 2 block.* keys, so models INTERSECT lang is 8; widening by blockstate adds render_block (blockstate + lang, no item model) for a verified total of 9. The other 22 item models - construction_block, construction_block_dense, construction_block_powder, construction_chunk_dense, construction_paste, construction_paste_container_t1/t2/t3 in five fill states each plus a creative one, effect_block, blank_const_block and constructionblock_dense - are DEAD ASSETS CARRIED OVER FROM BUILDING GADGETS 1. Proof: none of those names appears in ANY class file in the jar (every com/direwolf20/buildinggadgets2/**.class was searched), while setup/Registration.class contains exactly render_block, template_manager, gadget_building, gadget_exchanging, gadget_copy_paste, gadget_cut_paste, gadget_destruction, template and redprint. Construction paste as a mechanic does not exist in BG2 at all. RECIPE GRAPH: 7 recipe files, 6 of which produce a buildinggadgets2 id. All five gadgets and the template manager share one shaped frame - iron corners, lapis bottom-centre, redstone top-centre - and differ only in the two cells of the middle row, so relative cost is the only ordering signal available: diamond (building, exchanging), ender pearl (destruction), emerald (copy paste), shears (cut paste), paper (template manager). DISTINCT RECIPE SHAPES: 2 (the gadget frame, and patchouli's shapeless book recipe). The seventh recipe, my_book_recipe_shapeless.json, is a patchouli:shapeless_book_recipe producing a patchouli guide book, not a buildinggadgets2 id. NON-RECIPE OBTAINABLE - THE ONE CHAIN STEP THAT IS NOT A CRAFT: buildinggadgets2:template has no recipe file. Its source is stated verbatim in the mod's own book at assets/buildinggadgets2/patchouli_books/buildinggadgets2book/en_us/entries/template_manager.json - 'place a copy paste gadget in the top slot, and a piece of paper in the bottom... Click Save to convert the paper into a template' - and TemplateManagerContainer.class confirms the two slots (slot_copy_paste_gadget and slot_template). That is why it is the last chain step and why it sits downstream of both the copy paste gadget and the manager. DROPPED AS UNOBTAINABLE: buildinggadgets2:redprint - no recipe, no loot table, no trade, and the only code path that hands one out is RedprintCommand.class ('list', 'remove', 'give <name> <targets>'), an operator command, which the lang confirms with 'Failed to give redprint %s to %s'. buildinggadgets2:render_block - block.buildinggadgets2.render_block is literally 'Render Block (DO NOT USE)', an internal preview block. POWER: the book's own Basics entry states that all gadgets run on Forge Energy and that the mod ships no charger of its own, so a pack with no FE charging block leaves every gadget stuck on its starting charge. That is a pack-level gate worth knowing before questing the whole set. MODDB: no consensus signal - moddb.json has neither a buildinggadgets nor a buildinggadgets2 key - so the ordering above is recipe graph and cost alone, with no conflict to record."
+}

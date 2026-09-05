@@ -1,0 +1,319 @@
+{
+ "mod": "cyclic",
+ "verified_against": "Cyclic-1.20.1-1.13.7.jar",
+ "item_count_in_jar": 324,
+ "chain": [
+  {
+   "id": "cyclic:workbench",
+   "title": "Cyclic Workbench",
+   "desc": "Shapeless from a crafting table and any stone tool material. It keeps its grid contents when you close it - the first small quality-of-life fix, and a fair introduction to what this mod is for."
+  },
+  {
+   "id": "cyclic:flint_block",
+   "title": "Flint Block",
+   "desc": "Nine flint. A storage block that turns out to be a real ingredient - the Crusher, the Miner and the Item User all want one."
+  },
+  {
+   "id": "cyclic:obsidian_pressure_plate",
+   "title": "Obsidian Pressure Plate",
+   "desc": "Obsidian around a stone pressure plate. Unremarkable on its own, and a hard prerequisite for both the Solidifier and the Harvester."
+  },
+  {
+   "id": "cyclic:solidifier",
+   "title": "Solidifier",
+   "desc": "A cobblestone block, a lapis block, quartz, glass and an Obsidian Pressure Plate. It fuses items together into new ones - and it is the ONLY source of the mod's two gemstones, so build it before anything else you want."
+  },
+  {
+   "id": "cyclic:melter",
+   "title": "Melter",
+   "desc": "A furnace, a redstone block, obsidian, quartz and glass. The Solidifier's opposite number: it renders items down into fluids, including the liquid experience the powered machines run on."
+  },
+  {
+   "id": "cyclic:gem_amber",
+   "title": "Amber",
+   "desc": "Solidified from a fire charge with redstone and a magma block, or with gold and a redstone block. The mid-tier gem, and the gate on the Forester, the Structure Builder and the whole wireless line."
+  },
+  {
+   "id": "cyclic:gem_obsidian",
+   "title": "Obsidian Gem",
+   "desc": "Solidified from Amber with emerald and obsidian, amethyst or chorus fruit. The top gem - the Uncrafter, the Disenchanter, the Laser Cannon and the Heart Container all need it."
+  },
+  {
+   "id": "cyclic:battery",
+   "title": "Battery",
+   "desc": "A redstone block, copper nuggets and a heavy weighted pressure plate. Cyclic runs on FE, and almost nothing automated works until you have somewhere to keep it."
+  },
+  {
+   "id": "cyclic:generator_fuel",
+   "title": "Fuel Generator",
+   "desc": "A coal block, a piston, a repeater and copper nuggets. The simplest of five generators; the others burn food, items, fluid or sunlight instead."
+  },
+  {
+   "id": "cyclic:cable_wrench",
+   "title": "Cable Wrench",
+   "desc": "A heavy weighted pressure plate, redstone and a stick. It sets pipe direction and extraction faces - without it the pipe network is guesswork."
+  },
+  {
+   "id": "cyclic:item_pipe",
+   "title": "Item Pipe",
+   "desc": "Brick stairs and copper nuggets. Cyclic's pipes move on a tick timer with no power draw, and the fluid and energy pipes are the same shape in different materials."
+  },
+  {
+   "id": "cyclic:biomass",
+   "title": "Biomass",
+   "desc": "Leaves, saplings and small flowers, or leaves and coal in the Solidifier. The mod's organic feedstock and the base of the peat fuel line."
+  },
+  {
+   "id": "cyclic:harvester",
+   "title": "Harvester",
+   "desc": "A cobblestone block, an emerald, copper nuggets, Biomass and an Obsidian Pressure Plate. It reaps a configurable radius of mature crops on FE."
+  },
+  {
+   "id": "cyclic:forester",
+   "title": "Forester",
+   "desc": "Copper, logs, an observer and Amber. It fells trees in range and, paired with a Placer holding saplings, runs a tree farm with no player in it."
+  },
+  {
+   "id": "cyclic:miner",
+   "title": "Miner",
+   "desc": "A flint block, a lapis block, a diamond, an iron pickaxe and copper nuggets. It quarries a defined area block by block; slow, cheap and completely hands-off."
+  },
+  {
+   "id": "cyclic:collector",
+   "title": "Item Collector",
+   "desc": "A dropper, a hopper, iron, lapis and a Flint Block. It vacuums loose drops in a radius into whatever inventory it is pointed at - the piece that makes every other machine tidy."
+  },
+  {
+   "id": "cyclic:user",
+   "title": "Item User",
+   "desc": "A dispenser, a cobblestone block, a Flint Block, gold and a tripwire hook. It right-clicks the block in front of it with whatever you give it - shears, buckets, bonemeal, hoes."
+  },
+  {
+   "id": "cyclic:crafter",
+   "title": "Auto Crafter",
+   "desc": "A crafting table, an amethyst block, a sticky piston and Amber. It repeats one stored 3x3 recipe from a feed inventory."
+  },
+  {
+   "id": "cyclic:packager",
+   "title": "Packager",
+   "desc": "A dropper, a piston, light blue dye and an Auto Crafter. It compresses and decompresses nine-to-one automatically, which is what makes a Miner's output manageable."
+  },
+  {
+   "id": "cyclic:uncrafter",
+   "title": "Uncrafting Grinder",
+   "desc": "A diamond, calcite, netherite nuggets and an Obsidian Gem. It reverses a crafting recipe and gives the ingredients back, at an FE cost."
+  },
+  {
+   "id": "cyclic:disenchanter",
+   "title": "Disenchanter",
+   "desc": "An enchanting table, yellow terracotta, an Obsidian Pressure Plate and an Obsidian Gem. It strips an enchantment off an item onto a book instead of destroying it."
+  },
+  {
+   "id": "cyclic:experience_pylon",
+   "title": "Experience Pylon",
+   "desc": "A hopper, nether brick, vines, lime dye, a Fireball and Amber. It stores your levels as liquid experience and hands them back on demand - the safest XP bank in the pack."
+  },
+  {
+   "id": "cyclic:ender_controller",
+   "title": "Ender Controller",
+   "desc": "An Ender Shelf, obsidian, an ender pearl and a purpur block. It links a whole wall of book shelves into one searchable enchanted-book library."
+  },
+  {
+   "id": "cyclic:structure",
+   "title": "Structure Builder",
+   "desc": "A dropper, an observer, a redstone block, quartz and Amber. Give it a shape and a stack of blocks and it builds walls, spheres and cubes on FE."
+  },
+  {
+   "id": "cyclic:laser_cannon",
+   "title": "Laser Cannon",
+   "desc": "A diamond block, dark prismarine, an amethyst shard and an Obsidian Gem. A turret that fires on hostile mobs in range for FE."
+  },
+  {
+   "id": "cyclic:soulstone",
+   "title": "Soul Stone",
+   "desc": "A totem of undying, netherite nuggets and a nether star. It stores a respawn point that survives death and works across dimensions."
+  },
+  {
+   "id": "cyclic:heart",
+   "title": "Heart Container",
+   "desc": "An Obsidian Gem, an enchanted golden apple, an emerald block, a diamond, netherite nuggets, cake, rabbit stew, a lily pad and a poisonous potato. Eat it for a permanent extra heart - the most expensive single craft in the mod."
+  },
+  {
+   "id": "cyclic:charm_ultimate",
+   "title": "Ultimate Charm",
+   "desc": "Gray concrete, an Obsidian Gem and the Antidote, Fire, Void and Wither charms combined. One curio that carries four immunities at once."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "cyclic:charm_ultimate",
+   "members": [
+    "cyclic:charm_antidote",
+    "cyclic:charm_fire",
+    "cyclic:charm_void",
+    "cyclic:charm_wither",
+    "cyclic:charm_speed",
+    "cyclic:charm_luck",
+    "cyclic:charm_wing",
+    "cyclic:charm_water",
+    "cyclic:charm_stone",
+    "cyclic:charm_torch",
+    "cyclic:charm_xp_speed",
+    "cyclic:charm_home",
+    "cyclic:charm_invisible",
+    "cyclic:charm_venom"
+   ]
+  },
+  {
+   "hub": "cyclic:build_scepter",
+   "members": [
+    "cyclic:elevation_wand",
+    "cyclic:teleport_wand",
+    "cyclic:rotation_wand",
+    "cyclic:antimatter_wand",
+    "cyclic:offset_scepter",
+    "cyclic:replace_scepter",
+    "cyclic:randomize_scepter",
+    "cyclic:fire_scepter",
+    "cyclic:ice_scepter",
+    "cyclic:lightning_scepter",
+    "cyclic:wand_hypno",
+    "cyclic:wand_missile"
+   ]
+  },
+  {
+   "hub": "cyclic:uncrafter",
+   "members": [
+    "cyclic:harvester",
+    "cyclic:forester",
+    "cyclic:miner",
+    "cyclic:placer",
+    "cyclic:breaker",
+    "cyclic:collector",
+    "cyclic:user",
+    "cyclic:dropper",
+    "cyclic:fisher",
+    "cyclic:packager",
+    "cyclic:crafter",
+    "cyclic:disenchanter",
+    "cyclic:structure"
+   ]
+  },
+  {
+   "hub": "cyclic:generator_solar",
+   "members": [
+    "cyclic:battery",
+    "cyclic:battery_clay",
+    "cyclic:generator_fuel",
+    "cyclic:generator_item",
+    "cyclic:generator_food",
+    "cyclic:generator_fluid",
+    "cyclic:energy_pipe",
+    "cyclic:wireless_energy",
+    "cyclic:laser",
+    "cyclic:laser_cannon",
+    "cyclic:peat_farm",
+    "cyclic:peat_fuel"
+   ]
+  },
+  {
+   "hub": "cyclic:apple_lofty_stature",
+   "members": [
+    "cyclic:apple_bone",
+    "cyclic:apple_chocolate",
+    "cyclic:apple_chorus",
+    "cyclic:apple_ender",
+    "cyclic:apple_honey",
+    "cyclic:apple_iron",
+    "cyclic:apple_lapis",
+    "cyclic:apple_prismarine",
+    "cyclic:experience_food",
+    "cyclic:inventory_cake",
+    "cyclic:lunchbox",
+    "cyclic:milk_bottle",
+    "cyclic:terra_preta"
+   ]
+  },
+  {
+   "hub": "cyclic:crystal_pickaxe",
+   "members": [
+    "cyclic:crystal_sword",
+    "cyclic:crystal_axe",
+    "cyclic:emerald_pickaxe",
+    "cyclic:emerald_sword",
+    "cyclic:amethyst_pickaxe",
+    "cyclic:amethyst_sword",
+    "cyclic:amethyst_axe",
+    "cyclic:sandstone_pickaxe",
+    "cyclic:netherbrick_pickaxe",
+    "cyclic:mattock",
+    "cyclic:mattock_stone",
+    "cyclic:mattock_nether"
+   ]
+  },
+  {
+   "hub": "cyclic:crystal_chestplate",
+   "members": [
+    "cyclic:crystal_helmet",
+    "cyclic:crystal_leggings",
+    "cyclic:crystal_boots",
+    "cyclic:emerald_helmet",
+    "cyclic:emerald_chestplate",
+    "cyclic:emerald_leggings",
+    "cyclic:emerald_boots",
+    "cyclic:glowing_helmet",
+    "cyclic:flippers",
+    "cyclic:glove_climb"
+   ]
+  },
+  {
+   "hub": "cyclic:cable_wrench",
+   "members": [
+    "cyclic:item_pipe",
+    "cyclic:fluid_pipe",
+    "cyclic:hopper",
+    "cyclic:hopper_fluid",
+    "cyclic:hopper_gold",
+    "cyclic:conveyor",
+    "cyclic:magnet_block",
+    "cyclic:collector_fluid",
+    "cyclic:placer_fluid",
+    "cyclic:wireless_item",
+    "cyclic:wireless_fluid",
+    "cyclic:wireless_transmitter",
+    "cyclic:wireless_receiver",
+    "cyclic:ender_shelf"
+   ]
+  },
+  {
+   "hub": "cyclic:shield_obsidian",
+   "members": [
+    "cyclic:shield_wood",
+    "cyclic:shield_leather",
+    "cyclic:shield_flint",
+    "cyclic:shield_bone",
+    "cyclic:boomerang_carry",
+    "cyclic:boomerang_damage",
+    "cyclic:boomerang_stun",
+    "cyclic:quiver_damage",
+    "cyclic:quiver_lightning",
+    "cyclic:slingshot",
+    "cyclic:magic_net"
+   ]
+  },
+  {
+   "hub": "cyclic:shape_data",
+   "members": [
+    "cyclic:blockstate_data",
+    "cyclic:entity_data",
+    "cyclic:filter_data",
+    "cyclic:location_data",
+    "cyclic:settings_data",
+    "cyclic:sound_data",
+    "cyclic:carbon_paper",
+    "cyclic:computer_shape"
+   ]
+  }
+ ],
+ "notes": "THE BIGGEST MOD IN THIS BATCH AND THE FLATTEST. 324 registered items, 305 of them with a recipe, but there is almost no vertical tech tree - Cyclic is a wide box of independent quality-of-life machines, tools, charms and building blocks. There IS exactly one real gate and the chain is built on it: cyclic:solidifier is the ONLY source of cyclic:gem_amber, gem_amber is the only source of cyclic:gem_obsidian, and between them those two gems gate the Forester, Structure Builder, Auto Crafter, Experience Pylon, Wireless Item Transfer, Uncrafter, Disenchanter, Laser Cannon, Heart Container and the Ultimate Charm. The Solidifier in turn needs cyclic:obsidian_pressure_plate, which is why an unglamorous pressure plate is step 3. Everything downstream of the gems is genuinely lateral, which is why the wheels carry so much of the mod: ten wheels covering charms, wands, machines, power, food, tools, armour, logistics, combat and data cards. VERIFICATION: pass 1 strict models INTERSECT lang gave 324. Pass 2 re-derived the set independently from .class constant-pool strings, item textures, blockstates, recipe results and loot tables and corroborated 323 of 324. THE ONE ID PASS 2 COULD NOT SUPPORT IS A REAL FIND: cyclic:enchanter ('Powered Enchanter') has an item model, a block model, a block texture and full lang entries including a tooltip and a guide page - but NO blockstate, NO recipe and no other source anywhere in the jar. A block with no blockstate cannot even render. It is dead content in 1.13.7 and is DROPPED as uncompletable. ALSO DROPPED: cyclic:battery_infinite ('Creative energy source') and cyclic:item_infinite ('Duplicate items for pack testing') are explicitly creative/dev blocks with no recipe; cyclic:planter has blockstate, models and lang but no recipe and no loot source, so it is unobtainable in this build. NOT ITEMS, correctly excluded: cyclic:pedestal (blockstate and models but no lang key and no recipe), cyclic:magnet (a blockstate; the lang key enchantment.cyclic.magnet shows the name belongs to an enchantment, and the real item is cyclic:magnet_block), and cyclic:slime_block, biomass_block, honey_block, magma_block, wax_block and xpjuice_block - all FLUID blocks with blockstates and no item form, whose held form is the matching bucket. A NAIVE LANG PASS OVERCOUNTS BADLY HERE: 56 item./block. keys have no item model at all, including a whole family of removed pressure plates (plate_push, plate_push_fast, plate_push_slow and their angle and corner variants, twelve keys in total), removed blocks (library, library_ctrl, password_block, trade, randomize, rotate, shift, push, poison, screen_target, stone_minecart, mount_inverse, sword_ender, sword_slowness, sword_weakness, ender_tnt_1 through _6) and fluid-type keys. All are stale; none is registered. THE MODEL SIDE ALSO OVERCOUNTS, in the predicted way: shield_wood_blocking, shield_leather_blocking, shield_flint_blocking, shield_bone_blocking and shield_obsidian_blocking are blocking-pose override models on the five shields, not five extra items, and ender_lightning_charge_1/_2 are state models. NO-RECIPE BUT STILL OBTAINABLE, kept: cyclic:peat_baked ('Saturated Peat Deposit') forms in world from Dry Peat Bog beside water and has a block loot table; apple_diamond, apple_emerald and the four cyclic flowers (absalon_tulip, cyan, lime_carnation, purple_tulip) have loot tables; the six fluid buckets (biomass, honey, magma, slime, wax, xpjuice) are filled from the Melter; cyclic:tile_transporter is the filled Sack of Holding and cyclic:mob_container the filled Monster Ball, both produced by using the craftable empty version, so the chain and wheels use tile_transporter_empty and magic_net instead. DESIRABILITY: copper_nugget, netherite_nugget, all the bars, chains, lanterns, buttons, connected glass and compressed cobblestone variants are held out of the chain per the skip rule. NO CONSENSUS DATA: moddb.json has no cyclic entry, so ordering is the recipe dependency graph alone. Jar confirmed 1.20.1 Forge: META-INF/mods.toml with modIds cyclic + bundled flib, minecraft versionRange [1.20.1,), pack_format 15, Java 17 class files, no fabric.mod.json; Modrinth lists this file under game_versions ['1.20.1'] with loaders ['forge','neoforge']. The data/curios entries are slot tag files only - Cyclic registers no items into the curios namespace, so no registers_into declaration is needed, but the charms DO occupy curios slots and will be far less useful without Curios installed."
+}

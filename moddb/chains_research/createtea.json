@@ -1,0 +1,192 @@
+{
+ "mod": "createtea",
+ "verified_against": "createteas-1.0.jar",
+ "item_count_in_jar": 77,
+ "parent_mod": "create",
+ "registers_into": ["createteas"],
+ "chain": [
+  {
+   "id": "createteas:green_tea",
+   "title": "Leaves in the Basin",
+   "desc": "Oak leaves and a glass bottle in a heated basin of Create's own Builder's Tea. The cheapest thing in the mod and the one that teaches you the pattern every other recipe repeats."
+  },
+  {
+   "id": "createteas:mint_tea",
+   "title": "Grass, Improbably",
+   "desc": "A tuft of grass steeped in tea. Absurd on paper, and the base every dairy variant in the mod builds on."
+  },
+  {
+   "id": "createteas:black_tea",
+   "title": "Ink for Colour",
+   "desc": "An ink sac in the basin. It is a joke about how black tea is made and it is also the darkest drink here."
+  },
+  {
+   "id": "createteas:milky_mint_tea",
+   "title": "Adding the Milk",
+   "desc": "A finished mint tea plus a milk bucket, back into the basin. The mod's first two-stage drink, and proof that its own outputs feed back in."
+  },
+  {
+   "id": "createteas:carrot_tea",
+   "title": "Vegetable in a Cup",
+   "desc": "A plain carrot. Farmable, stackable, and the first recipe you can run without leaving the base."
+  },
+  {
+   "id": "createteas:tarragon_lemonade",
+   "title": "Lemonade From a Cactus",
+   "desc": "A cactus in the basin. It is not tea, it is not lemonade, and it is exactly the sort of thing this mod does."
+  },
+  {
+   "id": "createteas:andesite_tea",
+   "title": "Drinking the Alloy",
+   "desc": "An andesite alloy steeped in tea. The first drink that costs you a Create machine cycle rather than a farm, and the start of the metal line."
+  },
+  {
+   "id": "createteas:molten_copper",
+   "title": "Copper, Served Warm",
+   "desc": "One copper ingot in a heated basin. Cheapest of the molten drinks, and the one you make while working out that this line goes all the way to netherite."
+  },
+  {
+   "id": "createteas:molten_iron",
+   "title": "Iron in a Bottle",
+   "desc": "An iron ingot. The mid-tier metal drink, and a reasonable thing to ask a player to automate rather than hand-craft."
+  },
+  {
+   "id": "createteas:molten_brass",
+   "title": "The Alloy Course",
+   "desc": "A brass ingot, so the recipe implies a working zinc chain behind it. It is also an ingredient in the two drinks that follow, which is unusual for this mod."
+  },
+  {
+   "id": "createteas:molten_spring_alloy",
+   "title": "Springy",
+   "desc": "Brass and a slimeball together. Not a real Create alloy, which is the joke, and the point where the metal line stops being a straight ladder."
+  },
+  {
+   "id": "createteas:molten_netherite",
+   "title": "The Expensive Cup",
+   "desc": "A molten brass tea plus a netherite scrap. The top of the metal line and the only drink here that costs you a Nether trip."
+  },
+  {
+   "id": "createteas:electronic_teode",
+   "title": "Drinking an Electron Tube",
+   "desc": "One of Create's electron tubes in the basin. The pun is the whole item, and it means a rose quartz chain has to be running first."
+  },
+  {
+   "id": "createteas:rose_quartz_tea",
+   "title": "Pink and Polished",
+   "desc": "Rose quartz steeped in tea. Costs you the polishing step that everyone in a Create pack already dreads automating."
+  },
+  {
+   "id": "createteas:experienced_tea",
+   "title": "Levels in Liquid",
+   "desc": "One of Create's experience nuggets. It reads as an XP drink and it needs an XP farm behind it, so it belongs late."
+  },
+  {
+   "id": "createteas:breazing_tea",
+   "title": "Iced, Sort Of",
+   "desc": "A snowball in a heated basin, which should not work. The base of the only weather-themed drink in the mod."
+  },
+  {
+   "id": "createteas:winter_wind_tea",
+   "title": "Wind Off the Propeller",
+   "desc": "A breazing tea plus one of Create's propellers. Two-stage, machine-gated, and the coldest thing you can drink here."
+  },
+  {
+   "id": "createteas:absolute_teanima",
+   "title": "Tea Made of Tea",
+   "desc": "Create's own Builder's Tea plus grey dye. It is the only recipe in the mod that consumes the vanilla Create drink, and it feeds the one below."
+  },
+  {
+   "id": "createteas:actual_builder_s_tea",
+   "title": "What It Should Have Been",
+   "desc": "An absolute teanima with bricks. The mod's opinion of Create's Builder's Tea, delivered as a two-step recipe."
+  },
+  {
+   "id": "createteas:roteator",
+   "title": "Drinking a Bearing",
+   "desc": "One of Create's mechanical bearings in the basin. The single most expensive non-metal drink, and a fair capstone for a decorative chapter."
+  },
+  {
+   "id": "createteas:smart_tea_with_goggles_schematics_download",
+   "title": "Goggles, Steeped",
+   "desc": "Create's engineer's goggles dropped into the tea. The id really is that long, and there are two sibling recipes using a glass pane and a content observer."
+  },
+  {
+   "id": "createteas:doomed_tea",
+   "title": "A Bucket of Lava In It",
+   "desc": "A lava bucket in a heated basin of tea. There is no sensible reason to make this and it is the natural last quest in the chapter."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "createteas:orange_tea",
+   "members": [
+    "createteas:buble_gum_tea",
+    "createteas:communist_tea",
+    "createteas:suspicious_tea",
+    "createteas:space_teaveler",
+    "createteas:pistachio_tea",
+    "createteas:cat_s_not_simi_tea",
+    "createteas:tomato_tea",
+    "createteas:anonymous_tea",
+    "createteas:cardboard_tea",
+    "createteas:sticer_s_tea"
+   ]
+  },
+  {
+   "hub": "createteas:peach_tea",
+   "members": [
+    "createteas:melon_tea",
+    "createteas:pineaple_tea",
+    "createteas:sweet_berries_tea",
+    "createteas:lavender_tea",
+    "createteas:cocoa",
+    "createteas:three_layer_tea_latte",
+    "createteas:chocolate_tea",
+    "createteas:tiramisu",
+    "createteas:rich_tea",
+    "createteas:tea_richard",
+    "createteas:strong_tea"
+   ]
+  },
+  {
+   "hub": "createteas:puddle_slime_in_a_cup",
+   "members": [
+    "createteas:pink_slime_in_a_cup",
+    "createteas:honey_slime_in_a_cup",
+    "createteas:crystal_slime_in_a_cup",
+    "createteas:magma_in_a_cup",
+    "createteas:blood",
+    "createteas:literally_fish",
+    "createteas:molten_fish",
+    "createteas:beer_in_a_cup"
+   ]
+  },
+  {
+   "hub": "createteas:blaze_tea",
+   "members": [
+    "createteas:nuclear_tea",
+    "createteas:oxidized_tea",
+    "createteas:molten_obsidian",
+    "createteas:molten_nether_portal",
+    "createteas:warped_tea",
+    "createteas:portal_s_tea",
+    "createteas:cyber_tea",
+    "createteas:dumpling_tea",
+    "createteas:bee_swarm_teamulator",
+    "createteas:antifreeze",
+    "createteas:water_reference"
+   ]
+  },
+  {
+   "hub": "createteas:smart_tea_with_monocle_schematics_download",
+   "members": [
+    "createteas:smart_tea_without_goggles_schematics_download",
+    "createteas:tasty_air",
+    "createteas:aet",
+    "createteas:teadh",
+    "createteas:gambler_s_tea"
+   ]
+  }
+ ],
+ "notes": "NAMESPACE CORRECTION - THE MOST IMPORTANT LINE IN THIS FILE. moddb's consensus records this mod under createtea:*, and that namespace is WRONG for 1.20.1. The 1.20.1 Forge build is createteas-1.0.jar, whose META-INF/mods.toml says modId=\"createteas\" and whose assets and data folders are assets/createteas/ and data/createteas/. Every id in this file is therefore namespaced createteas:, and registers_into records that. The confusion has a clean explanation: the same project ships a SECOND jar for 1.21.x named createtea1.21.1-neo_forge-1.0.jar - that later NeoForge build is where the createtea namespace comes from, and moddb evidently harvested it. A book built on the moddb ids would ship 26 dead tasks. SLUG: the mod is 'Create: delicious teas', Modrinth slug create-delicious-teas (project Ps5RAuX2), CurseForge slug create-delicious-teas (project 1328556), source github.com/Urtalita/create-tea. Three different names for one mod - slug, modid and repo all disagree, and none of them is 'createtea'. A NEAR MISS WORTH RECORDING: 'Create: Tea mania' (Modrinth create-tea-mania, jar create_tm-1.0.0-forge-1.20.1.jar) is a different 1.20.1 Forge tea mod with modid create_tm and 62 items - real tea crops, kettles, kombucha, matcha, puer. It is NOT this mod and none of the moddb consensus ids match it. Do not conflate them. VERIFIED CONTENT: the jar is tiny and completely uniform. assets/createteas/models/item/ holds 77 item models plus one directory entry, every one of the 77 has an item.createteas.* lang key, there are ZERO blockstates and ZERO loot tables, so no widening was needed. data/createteas/recipes/ holds 78 files and 76 of them are create:mixing with heatRequirement 'heated'. THE UNIVERSAL GATE: every single drink takes create:tea (Create's own Builder's Tea fluid) plus a minecraft:glass_bottle in a HEATED basin. No basin, no mod - and Builder's Tea itself is a base-Create recipe, so the whole chapter sits behind one Create milestone. The only exception is createteas:tasty_air, which takes the glass bottle and the heat and nothing else. DROPPED, FIVE ITEMS, AND FOUR OF THEM FOR CIRCULARITY - this is the trap this mod actually contains: createteas:quantum_slime_in_a_cup lists ITSELF as an ingredient of its own only recipe (create:mixing of tea + glass bottle + createteas:quantum_slime_in_a_cup), so it has no primary source anywhere in the jar and can never be made. createteas:time_in_a_tea has exactly the same self-referential recipe. createteas:tea_not_found requires a quantum_slime_in_a_cup and is therefore dead by inheritance, and createteas:teaman requires a tea_not_found and is dead two levels down. None of those four appears in the chain or in any wheel. The fifth drop is createteas:schematic_of_cup, which has an item model and an item.createteas.schematic_of_cup lang key but no recipe of any kind. That leaves 72 of 77 obtainable. NO CONDITIONS AT ALL: not one forge:conditional wrapper and not one mod_loaded gate appears in the jar, so nothing here is hidden behind a third mod. ORDERING vs moddb consensus (26 entries): the namespace makes a literal comparison impossible, but stripping it the 26 names all exist in this jar EXCEPT that consensus positions are effectively random - it lists milky_mint_tea at 0.0 while milky_mint_tea consumes a finished createteas:mint_tea (0.257), and molten_netherite at 0.186 while molten_netherite consumes a finished createteas:molten_brass (0.014, so that one happens to be legal). The chain here is ordered by the recipe graph first (mint before milky mint, brass before netherite and spring alloy, breazing before winter wind, absolute teanima before actual builder's tea) and then by ingredient cost - leaves and grass, then farm crops, then Create intermediates, then rose quartz and experience, then the deliberate absurdities. Consensus ordering rejected as unusable. PARENT ASSUMPTIONS: a mixer over a blaze burner on a basin, plus Create's tea fluid, andesite alloy, brass ingot, cardboard, bar of chocolate, powdered obsidian, rose quartz, electron tube, experience nugget, propeller, mechanical bearing, goggles and content observer. Ten of the drinks reference Create items directly, so this is a genuine addon and not a standalone food mod. Note the misspellings in the ids, which must be copied exactly: buble_gum_tea (one B), pineaple_tea (one P), cat_s_not_simi_tea, gambler_s_tea, sticer_s_tea and portal_s_tea all use _s_ where an apostrophe would go, and the three 'smart tea' ids end in _schematics_download."
+}

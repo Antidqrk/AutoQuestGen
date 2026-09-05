@@ -1,0 +1,104 @@
+{
+ "mod": "mcwtrpdoors",
+ "verified_against": "mcw-trapdoors-1.1.5-mc1.20.1forge.jar",
+ "item_count_in_jar": 191,
+ "chain": [
+  {
+   "id": "mcwtrpdoors:print_classic",
+   "title": "The Same Print System",
+   "desc": "A vanilla oak trapdoor and four paper give four Classic Trapdoor Prints. Twelve of the seventeen trapdoor styles are print-gated exactly as the doors are, and the print is always made from the matching vanilla trapdoor."
+  },
+  {
+   "id": "mcwtrpdoors:acacia_classic_trapdoor",
+   "title": "One Print, One Trapdoor",
+   "desc": "A Classic Trapdoor Print between two planks gives one trapdoor in that wood. Ten woods per print family, and the oak version is missing on purpose because vanilla already has it."
+  },
+  {
+   "id": "mcwtrpdoors:oak_glass_trapdoor",
+   "title": "Two Panes and Four Planks",
+   "desc": "Planks around glass panes, two at a time. The glass trapdoor is not print-gated and it is the parent of the barn trapdoor above it."
+  },
+  {
+   "id": "mcwtrpdoors:oak_barn_trapdoor",
+   "title": "Boards Over the Glass",
+   "desc": "A glass trapdoor with planks on top. It is the only trapdoor in the mod crafted from another trapdoor of the same mod, which makes it the one two-step recipe here."
+  },
+  {
+   "id": "mcwtrpdoors:oak_bark_trapdoor",
+   "title": "Logs, Not Planks",
+   "desc": "Logs around glass panes, two at a time - the bark-textured cousin of the glass trapdoor, in eleven woods."
+  },
+  {
+   "id": "mcwtrpdoors:oak_barrel_trapdoor",
+   "title": "A Barrel Lid",
+   "desc": "A barrel ringed by four planks gives four Barrel Trapdoors, the only recipe in the mod that consumes a functional vanilla block."
+  },
+  {
+   "id": "mcwtrpdoors:bamboo_trapdoor",
+   "title": "Bamboo Straight Through",
+   "desc": "Six bamboo in two rows. It is the only trapdoor here made from a raw material rather than planks, logs or a print."
+  },
+  {
+   "id": "mcwtrpdoors:metal_trapdoor",
+   "title": "Iron and Glass",
+   "desc": "Iron ingots around glass panes, two at a time. Adding another iron ingot gives the Metal Trapdoor with no window, and black and yellow dye give the Warning Trapdoor."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mcwtrpdoors:print_bamboo",
+   "members": [
+    "mcwtrpdoors:print_barred",
+    "mcwtrpdoors:print_beach",
+    "mcwtrpdoors:print_blossom",
+    "mcwtrpdoors:print_cottage",
+    "mcwtrpdoors:print_four_panel",
+    "mcwtrpdoors:print_mystic",
+    "mcwtrpdoors:print_paper",
+    "mcwtrpdoors:print_swamp",
+    "mcwtrpdoors:print_tropical",
+    "mcwtrpdoors:print_whispering",
+    "mcwtrpdoors:metal_full_trapdoor",
+    "mcwtrpdoors:metal_warning_trapdoor",
+    "mcwtrpdoors:bamboo_bark_trapdoor"
+   ]
+  },
+  {
+   "hub": "mcwtrpdoors:oak_whispering_trapdoor",
+   "members": [
+    "mcwtrpdoors:spruce_whispering_trapdoor",
+    "mcwtrpdoors:birch_whispering_trapdoor",
+    "mcwtrpdoors:jungle_whispering_trapdoor",
+    "mcwtrpdoors:acacia_whispering_trapdoor",
+    "mcwtrpdoors:dark_oak_whispering_trapdoor",
+    "mcwtrpdoors:mangrove_whispering_trapdoor",
+    "mcwtrpdoors:cherry_whispering_trapdoor",
+    "mcwtrpdoors:bamboo_whispering_trapdoor",
+    "mcwtrpdoors:crimson_whispering_trapdoor",
+    "mcwtrpdoors:warped_whispering_trapdoor",
+    "mcwtrpdoors:spruce_classic_trapdoor",
+    "mcwtrpdoors:birch_classic_trapdoor",
+    "mcwtrpdoors:jungle_classic_trapdoor"
+   ]
+  },
+  {
+   "hub": "mcwtrpdoors:spruce_glass_trapdoor",
+   "members": [
+    "mcwtrpdoors:birch_glass_trapdoor",
+    "mcwtrpdoors:jungle_glass_trapdoor",
+    "mcwtrpdoors:acacia_glass_trapdoor",
+    "mcwtrpdoors:dark_oak_glass_trapdoor",
+    "mcwtrpdoors:mangrove_glass_trapdoor",
+    "mcwtrpdoors:cherry_glass_trapdoor",
+    "mcwtrpdoors:bamboo_glass_trapdoor",
+    "mcwtrpdoors:crimson_glass_trapdoor",
+    "mcwtrpdoors:warped_glass_trapdoor",
+    "mcwtrpdoors:spruce_barn_trapdoor",
+    "mcwtrpdoors:birch_barn_trapdoor",
+    "mcwtrpdoors:acacia_barn_trapdoor",
+    "mcwtrpdoors:spruce_barrel_trapdoor"
+   ]
+  }
+ ],
+ "notes": "MACAW'S MODS SHARE ONE STRUCTURE: A SMALL NUMBER OF DISTINCT BLOCK TYPES CROSSED WITH A LARGE MATERIAL TABLE. The chain below is one step per distinct RECIPE SHAPE, not one per id, and the material tables go to wheels. MODDB: no consensus signal - moddb.json contains no key for any Macaw's mod - so every ordering here is the recipe graph alone and there is no conflict to record. Verified against mcw-trapdoors-1.1.5-mc1.20.1forge.jar (Modrinth version 1.1.5, loaders=[forge], game_versions=[1.20.1]). ID DETECTION: 191 item models, 179 blockstates, 199 lang block./item. keys; models INTERSECT lang = 191, the count used, and every one of those 191 has a recipe. THE EIGHT EXTRA LANG KEYS ARE STALE STRINGS, not missing content, and they are the trap in this jar: acacia_tropical_trapdoor, birch_paper_trapdoor, crimson_barred_trapdoor, dark_oak_four_panel_trapdoor, jungle_beach_trapdoor, oak_classic_trapdoor, spruce_cottage_trapdoor and warped_mystic_trapdoor have display names but NO item model, NO blockstate, NO recipe and NO loot table. They are exactly the wood-plus-style combinations where the STYLE IS NAMED AFTER THAT WOOD - the Classic print is made from an oak trapdoor, the Paper print from birch, the Beach print from jungle, and so on - so the mod deliberately does not register the redundant same-wood variant. Every print family is therefore ten wide, not eleven, and a generator that assumes a full 11x17 grid emits eight uncompletable quests. DISTINCT RECIPE SHAPES: 33 name-stems collapse to 8 real shapes - print, print-gated trapdoor, glass, barn (from glass), bark, barrel, raw bamboo and the three metal ones. Verified yields: print 4, print-gated trapdoor 1, glass 2, bark 2, barn 1, barrel 4, bamboo 1, metal 2, metal_full 1, metal_warning 1. WHY THE PRINTS MATTER FOR ORDERING: twelve prints exist and each one gates a whole ten-wide wood family, so mcwtrpdoors:print_classic and its siblings are genuine prerequisites and not decoration. The mod's only other lang string is mcwtrpdoors.crafting.desc = 'Crafting Ingredient', which is the prints' tooltip. DROPS: the eight stale lang keys above. Nothing was dropped as unobtainable."
+}

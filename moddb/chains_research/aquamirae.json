@@ -1,0 +1,168 @@
+{
+ "mod": "aquamirae",
+ "verified_against": "aquamirae-forge-1.20.1-7.1.13.jar",
+ "item_count_in_jar": 74,
+ "chain": [
+  {
+   "id": "aquamirae:wisteria_niveis",
+   "title": "Flowers Under the Ice",
+   "desc": "Wisteria Niveis grows in the Deep Frozen Ocean and is the plant every Aquamirae recipe starts from."
+  },
+  {
+   "id": "aquamirae:oxyhelium",
+   "title": "Bubbles You Can Mine",
+   "desc": "Oxyhelium blocks release breathable gas and are the mod's answer to drowning inside the Ice Maze."
+  },
+  {
+   "id": "kill:aquamirae:anglerfish",
+   "title": "The Lure Goes Dark",
+   "desc": "Anglerfish hunt the deep Ice Maze by their glowing esca and hit hard where you cannot see."
+  },
+  {
+   "id": "aquamirae:esca",
+   "title": "A Light Ripped Loose",
+   "desc": "The esca drops from anglerfish and crafts luminescent bubbles, lamps and skewers."
+  },
+  {
+   "id": "aquamirae:luminescent_bubble",
+   "title": "Lanterns for Drowned Halls",
+   "desc": "Esca and oxyhelium yield twelve luminescent bubbles, the light source for exploring underwater."
+  },
+  {
+   "id": "kill:aquamirae:maw",
+   "title": "Teeth With No Face",
+   "desc": "The Maw patrols the deepest Ice Maze water and drops the fin that every Terrible recipe needs."
+  },
+  {
+   "id": "aquamirae:fin",
+   "title": "Cut From the Swimmer",
+   "desc": "The Fin is the smithing addition that turns plain iron armor into Terrible armor."
+  },
+  {
+   "id": "aquamirae:angler_fang",
+   "title": "A Tooth Worth Keeping",
+   "desc": "Angler Fang is the second Terrible reagent, used for the chakram, the fang blade and the template."
+  },
+  {
+   "id": "aquamirae:shell_horn",
+   "title": "A Note Across the Floes",
+   "desc": "The Shell Horn is found aboard frozen pirate ships and is the classic first Aquamirae discovery."
+  },
+  {
+   "id": "aquamirae:pirate_pouch",
+   "title": "Someone Dropped This Running",
+   "desc": "Pirate Pouches lie abandoned around the Ice Maze, holding the loot of sailors who did not make it."
+  },
+  {
+   "id": "aquamirae:remnant_saber",
+   "title": "The Sailor's Last Blade",
+   "desc": "Stick, string and sharp bones make the Remnant Saber, the mod's starting weapon."
+  },
+  {
+   "id": "kill:aquamirae:tortured_soul",
+   "title": "Still Aboard, Still Screaming",
+   "desc": "Tortured Souls haunt the sunken ships and stand between you and Cornelia's quarters."
+  },
+  {
+   "id": "kill:aquamirae:captain_cornelia",
+   "title": "The Captain Does Not Rest",
+   "desc": "The Ghost of Captain Cornelia is Aquamirae's first boss, waiting aboard her own frozen ship."
+  },
+  {
+   "id": "aquamirae:frozen_key",
+   "title": "Prised From a Ghost's Hand",
+   "desc": "The Frozen Key drops from Captain Cornelia and opens the Frozen Chests she died guarding."
+  },
+  {
+   "id": "aquamirae:tidepiercer",
+   "title": "Cornelia's Legacy",
+   "desc": "The Tidepiercer is Cornelia's own weapon, looted from her corpse."
+  },
+  {
+   "id": "aquamirae:ship_graveyard_echo",
+   "title": "Trace of the Leviathan",
+   "desc": "The Ship Graveyard Echo is the residue the Shipbreaker leaves behind, and the currency of every late recipe."
+  },
+  {
+   "id": "aquamirae:salvager_helmet",
+   "title": "Dressed for the Deep",
+   "desc": "Salvager armor is crafted from iron, leather and echoes and keeps you alive in the open Ice Maze."
+  },
+  {
+   "id": "aquamirae:terrible_helmet",
+   "title": "Iron Turned Monstrous",
+   "desc": "Smithing a Fin onto iron armor produces Terrible armor, the mid-game set of the frozen ocean."
+  },
+  {
+   "id": "aquamirae:rune_of_the_storm",
+   "title": "Buried Beneath the Maze",
+   "desc": "The Rune of the Storm is an ancient relic hidden under the deepest floors of the Ice Maze."
+  },
+  {
+   "id": "aquamirae:abyssal_amethyst",
+   "title": "Purple Light, No Sun",
+   "desc": "Abyssal Amethyst is the deep-tier gem that upgrades diamond gear into Abyssal gear."
+  },
+  {
+   "id": "aquamirae:abyssal_heaume",
+   "title": "One With the Abyss",
+   "desc": "Smithing Abyssal Amethyst onto diamond armor forges the Abyssal set, Aquamirae's endgame protection."
+  },
+  {
+   "id": "kill:aquamirae:maze_mother",
+   "title": "Whatever Built the Maze",
+   "desc": "The Maze Mother is the deep boss of the Ice Maze and the hardest fight the mod holds."
+  },
+  {
+   "id": "aquamirae:niveis_tear",
+   "title": "Call of the Maelstrom",
+   "desc": "Wisteria Niveis distilled with a snowball and a glass bottle becomes the tear that summons the Maelstrom."
+  },
+  {
+   "id": "dim:aquamirae:the_maelstrom",
+   "title": "Let the Blizzard Take You",
+   "desc": "The Maelstrom is Aquamirae's own dimension, reached once the Niveis Tear calls the storm down on you."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "aquamirae:terrible_upgrade_smithing_template",
+   "members": [
+    "aquamirae:terrible_helmet",
+    "aquamirae:terrible_chestplate",
+    "aquamirae:terrible_leggings",
+    "aquamirae:terrible_boots",
+    "aquamirae:terrible_blade",
+    "aquamirae:terrible_cleaver",
+    "aquamirae:terrible_fang",
+    "aquamirae:terrible_chakram"
+   ]
+  },
+  {
+   "hub": "aquamirae:abyssal_upgrade_smithing_template",
+   "members": [
+    "aquamirae:abyssal_heaume",
+    "aquamirae:abyssal_brigandine",
+    "aquamirae:abyssal_leggings",
+    "aquamirae:abyssal_boots",
+    "aquamirae:abyssal_tiara",
+    "aquamirae:shatterblade",
+    "aquamirae:shatterspike"
+   ]
+  },
+  {
+   "hub": "aquamirae:echo_compass",
+   "members": [
+    "aquamirae:sea_stew",
+    "aquamirae:sea_casserole",
+    "aquamirae:poseidon_breakfast",
+    "aquamirae:esca_skewer",
+    "aquamirae:jellyfish_jelly",
+    "aquamirae:void_squid",
+    "aquamirae:cooked_spinefish",
+    "aquamirae:dead_sea_scroll"
+   ]
+  }
+ ],
+ "notes": "Verified against aquamirae-forge-1.20.1-7.1.13. WARNING: version 7 renamed a large part of the mod, and the moddb ordering was harvested from packs running the older ids. RegistryRemapper inside the jar spells the migration out: abyssal_brigantine->abyssal_brigandine, anglers_fang->angler_fang, oxygelium->oxyhelium, poisoned_blade->terrible_blade, poisoned_chakra->terrible_chakram, remnants_saber->remnant_saber, three_bolt_helmet/suit/leggings/boots->salvager_helmet/suit/waders/boots, golden_moth_in_a_jar->golden_moth_jar, poseidons_breakfast->poseidon_breakfast; divider, whisper_of_the_abyss, coral_lance, sweet_lance, fin_cutter and terrible_sword are legacy ids now covered by shatterspike, shatterblade, tidepiercer and jawbreaker. Every id in this file is the current 7.1.13 name. moddb ids that no longer exist and were therefore dropped: aquamirae:whisper_of_the_abyss (9 packs), aquamirae:three_bolt_helmet (13 packs), aquamirae:divider (4), aquamirae:remnants_saber, aquamirae:anglers_fang, aquamirae:oxygelium, aquamirae:abyssal_brigantine, aquamirae:poisoned_blade, aquamirae:poisoned_chakra, aquamirae:painting_oxygelium. Chain order follows the mod's own advancement tree (root, ice maze, shell horn, Cornelia and the frozen key, salvager, terrible, abyssal, maelstrom), which agrees with moddb's relative ordering of shell_horn < frozen_key < terrible_helmet < abyssal_tiara. Entity ids come from AquamiraeEntityTypes: lang defines entity.aquamirae.shipbreaker and a death.attack.shipbreaker message, but no EntityType is registered under that name, so no kill: step uses it - the Shipbreaker is represented by its drop, ship_graveyard_echo, exactly as the mod's own advancement does. Legacy loot tables for maze_captain, maze_pillager and maze_vindicator are dead files and were ignored. aquamirae:the_maelstrom is confirmed as a real dimension json (data/aquamirae/dimension/the_maelstrom.json)."
+}

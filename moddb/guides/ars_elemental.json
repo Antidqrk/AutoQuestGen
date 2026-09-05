@@ -1,0 +1,131 @@
+{
+ "mod": "ars_elemental",
+ "ids_in_jar": 110,
+ "videos": [
+  {
+   "id": "2p3XIUfxnsk",
+   "title": "Minecraft in a Hurry - Ars Elemental Mod Semi-quick Overview - ATM8",
+   "channel": "FleetingImmersion",
+   "views": 33107,
+   "duration": 343,
+   "chars": 4415
+  },
+  {
+   "id": "7YMN4NpZqhM",
+   "title": "How to: Ars Nouveau | Ars Elemental (Minecraft 1.19.2)",
+   "channel": "Mondays",
+   "views": 87664,
+   "duration": 1921,
+   "chars": 34334
+  }
+ ],
+ "items": {
+  "ars_elemental:air_focus": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.6394,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ars_elemental:water_focus": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.2259,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ars_elemental:thread_summon": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.2582,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ars_elemental:fire_focus": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7086,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ars_elemental:anima_essence": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.766,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "ars_elemental:thread_spore": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1176,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "_source_honesty": "Weakest guide signal of the ten. Ars Elemental has almost no dedicated teaching content - searches return Ars Nouveau videos, and the one genuinely Ars-Elemental video analysed here (Mondays, 'How to: Ars Nouveau | Ars Elemental') is a dubbed translation that renders 'glyph' as 'mantra' and matched only 6 real ids. The order/gates below are therefore taken primarily from ars_elemental-1.20.1-0.6.8.0.jar's own recipe graph, which is unambiguous, and the guide is used only to corroborate. Reported thin rather than padded.",
+  "order": [
+   "Ars Nouveau comes first, and this is not a soft preference - it is structural. Of 123 typed recipes in the Ars Elemental jar, 24 are ars_nouveau:enchanting_apparatus, 17 are ars_nouveau:imbuement, 27 are ars_nouveau:glyph and 6 are ars_nouveau:caster_tome. There is no Ars Elemental crafting station at all; the addon has no independent early game.",
+   "Lesser foci are the genuine first craft and they are cheap: an imbuement-chamber recipe on a plain amethyst shard with elemental essences. ars_elemental:lesser_fire_focus, ars_elemental:lesser_water_focus, ars_elemental:lesser_earth_focus, ars_elemental:lesser_air_focus.",
+   "Kill the Wilden Chimera. Its ars_nouveau:wilden_tribute is the reagent for ars_elemental:mark_of_mastery, and nothing meaningful in the addon comes before that fight.",
+   "ars_elemental:mark_of_mastery is the hinge of the whole mod - wilden tribute plus ALL SIX Ars Nouveau essences (earth, fire, water, air, abjuration, conjuration) on the enchanting apparatus. It is produced 5 at a time because everything downstream eats one.",
+   "Upgrade lesser foci to full foci, each consuming a mark: ars_elemental:fire_focus, ars_elemental:water_focus, ars_elemental:earth_focus, ars_elemental:air_focus. These are the mod's headline items and the only ids the guide actually dwelt on.",
+   "Elemental armour last: 16 armour-upgrade recipes (recipe type 'armor_upgrade' in the ars_elemental namespace - a RECIPE TYPE, not an item) convert an existing Ars Nouveau hood/robe/leggings/boots into ars_elemental:fire_hat / ars_elemental:fire_robes / ars_elemental:aqua_hat / ars_elemental:air_robes / ars_elemental:earth_leggings and the rest, each costing a mark of mastery, a netherite ingot and 2 elemental essences.",
+   "Side content once the core exists: ars_elemental:base_bangle -> ars_elemental:air_bangle / ars_elemental:fire_bangle / ars_elemental:water_bangle / ars_elemental:earth_bangle / ars_elemental:anima_bangle / ars_elemental:summon_bangle, plus familiars (ars_elemental:siren_charm -> ars_elemental:siren_familiar, ars_elemental:firenando_charm -> ars_elemental:firenando_familiar)."
+  ],
+  "gates": [
+   "HARD dependency on Ars Nouveau. Without it there is no enchanting apparatus and no imbuement chamber, so literally nothing in this mod is craftable. Any quest chapter must sit downstream of an Ars Nouveau chapter.",
+   "ars_elemental:mark_of_mastery gates every full focus and every piece of elemental armour. It is a boss gate wearing an item's clothing, because its reagent is the Wilden Chimera drop.",
+   "The mark also demands all six Ars Nouveau essence types at once, so it gates on having completed the base mod's elemental AND utility schools, not just one.",
+   "Elemental armour additionally gates on netherite - one ingot per piece, on top of the mark.",
+   "ars_elemental:necrotic_focus is gated behind wither roses; ars_elemental:anima_essence is imbued from a source gem with a wither skeleton skull, so the necromantic branch sits behind Nether progress.",
+   "ars_elemental:spell_horn needs ars_nouveau:wilden_horn - a second Wilden drop gate."
+  ],
+  "mechanics": [
+   "This is an ADDON that widens Ars Nouveau's spell system into explicit elements (fire, water, earth, air) plus an anima/necrotic branch. It adds 27 new glyphs - ars_elemental:glyph_charm, ars_elemental:glyph_spark, ars_elemental:glyph_discharge, ars_elemental:glyph_watery_grave, ars_elemental:glyph_phantom_grasp, ars_elemental:glyph_bubble_shield, ars_elemental:glyph_life_link and the filter family - so most of its content is spell components, not gear.",
+   "Foci are damage-type specialisation: holding an element's focus converts and boosts that element's spells. That is the mod's actual point and it is a modifier system, not a ladder.",
+   "A large glyph subset is FILTERS (ars_elemental:glyph_aerial_filter, ars_elemental:glyph_aquatic_filter, ars_elemental:glyph_undead_filter, ars_elemental:glyph_insect_filter, ars_elemental:glyph_summon_filter and their not_ negations). These are targeting logic and are what make automated spells precise.",
+   "Turrets and prisms extend Ars Nouveau's automation: ars_elemental:air_turret, ars_elemental:fire_turret, ars_elemental:water_turret, ars_elemental:earth_turret, ars_elemental:manipulation_turret, ars_elemental:advanced_prism and the lens family (ars_elemental:homing_prism_lens, ars_elemental:arc_prism_lens, ars_elemental:piercing_prism_lens, ars_elemental:acceleration_prism_lens, ars_elemental:deceleration_prism_lens, ars_elemental:rainbow_prism_lens).",
+   "Caster tomes (ars_elemental:fire_caster_tome, ars_elemental:water_caster_tome, ars_elemental:earth_caster_tome, ars_elemental:air_caster_tome, ars_elemental:anima_caster_tome, ars_elemental:manipulation_caster_tome) are pre-baked single-use spell holders.",
+   "It also adds worldgen and its own tree: ars_elemental:yellow_archwood_sapling / ars_elemental:yellow_archwood_log, ars_elemental:mermaid_rock, ars_elemental:flashpine_pod, ars_elemental:siren_shards.",
+   "ars_elemental:everfull_urn and ars_elemental:caster_bag / ars_elemental:curio_bag are the quality-of-life items most likely to actually be used every session."
+  ],
+  "traps": [
+   "Do not write an Ars Elemental quest line that can be started before Ars Nouveau's enchanting apparatus exists - every recipe would be uncraftable.",
+   "Do not treat lesser foci and full foci as two collectible sets; the lesser one is consumed as the reagent for the full one.",
+   "Do not build quests on the 27 glyph ids individually - glyphs are unlocked by spell research in the base mod and are a menu, not a sequence.",
+   "Recipe-type names are not items. ars_nouveau:enchanting_apparatus, ars_nouveau:imbuement, ars_nouveau:glyph and ars_nouveau:caster_tome appear throughout this file as RECIPE TYPES describing which station a craft happens at. Do not emit them as quest task items."
+  ],
+  "signature": [
+   "ars_elemental:mark_of_mastery",
+   "ars_elemental:fire_focus",
+   "ars_elemental:water_focus",
+   "ars_elemental:earth_focus",
+   "ars_elemental:air_focus",
+   "ars_elemental:lesser_fire_focus",
+   "ars_elemental:necrotic_focus",
+   "ars_elemental:fire_robes",
+   "ars_elemental:aqua_robes",
+   "ars_elemental:siren_familiar",
+   "ars_elemental:firenando_familiar",
+   "ars_elemental:everfull_urn",
+   "ars_elemental:caster_bag",
+   "ars_elemental:spell_horn",
+   "ars_elemental:anima_essence"
+  ],
+  "pack_status": "NOT INSTALLED, and its dependency is not installed either - there is no ars_nouveau jar in CREATE FEMBY. Analysed against ars_elemental-1.20.1-0.6.8.0.jar fetched to scratch from CurseForge (not on Modrinth). Adding this mod would require adding Ars Nouveau first."
+ }
+}

@@ -1,0 +1,270 @@
+{
+ "mod": "toms_storage",
+ "ids_in_jar": 20,
+ "videos": [
+  {
+   "id": "MnnfY6sQwS4",
+   "title": "COMPLETE GUIDE TOM'S SIMPLE STORAGE MOD FOR MINECRAFT",
+   "channel": "Edlux Tutorials",
+   "views": 12523,
+   "duration": 705,
+   "chars": 12489,
+   "legacy_vocab_prompt": true
+  }
+ ],
+ "items": {
+  "toms_storage:ts.inventory_connector": {
+   "mentions": 11,
+   "videos": 1,
+   "first_at": 0.0591,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toms_storage:ts.wireless_terminal": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.7418,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toms_storage:ts.item_filter": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.8907,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 3
+  },
+  "toms_storage:ts.crafting_terminal": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1777,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toms_storage:ts.paint_kit": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.4939,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toms_storage:ts.inventory_cable": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3639,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toms_storage:ts.storage_terminal": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1986,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toms_storage:ts.polymorphic_item_filter": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.9139,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "toms_storage:ts.level_emitter": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2452,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toms_storage:ts.inventory_proxy": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6909,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "toms_storage:ts.inventory_cable_connector": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3639,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "The inventory connector is the first and most important craft - it is the block that aggregates adjacent chests into one network. Chest, planks, comparator, diamond and an ender pearl.",
+    "ids": [
+     "toms_storage:ts.inventory_connector"
+    ]
+   },
+   {
+    "note": "The storage terminal second - the screen you actually interact with. Without it the connector does nothing visible.",
+    "ids": [
+     "toms_storage:ts.storage_terminal"
+    ]
+   },
+   {
+    "note": "Trims third: they are the cheap filler that lets the connector reach chests that are not physically touching it.",
+    "ids": [
+     "toms_storage:ts.trim"
+    ]
+   },
+   {
+    "note": "Cables and cable connectors only once the build outgrows one cluster.",
+    "ids": [
+     "toms_storage:ts.inventory_cable",
+     "toms_storage:ts.inventory_cable_connector"
+    ]
+   }
+  ],
+  "ladder": [
+   {
+    "note": "Terminal ladder - each rung a real recipe step: the plain terminal, then the crafting terminal built FROM it with a crafting table and a diamond, then a wireless terminal (spyglass + ender pearl), then the advanced wireless via a smithing table.",
+    "ids": [
+     "toms_storage:ts.storage_terminal",
+     "toms_storage:ts.crafting_terminal",
+     "toms_storage:ts.wireless_terminal",
+     "toms_storage:ts.adv_wireless_terminal"
+    ]
+   },
+   {
+    "note": "Reach ladder: connector alone -> trims to extend the touching cluster -> cables to span distance -> cable connectors to attach a remote inventory -> filtered cable connectors to control what that inventory contributes.",
+    "ids": [
+     "toms_storage:ts.inventory_connector",
+     "toms_storage:ts.trim",
+     "toms_storage:ts.inventory_cable",
+     "toms_storage:ts.inventory_cable_connector",
+     "toms_storage:ts.inventory_cable_connector_filtered"
+    ]
+   },
+   {
+    "note": "Filter ladder for automation: a plain item filter, a tag filter, then the polymorphic filter.",
+    "ids": [
+     "toms_storage:ts.item_filter",
+     "toms_storage:ts.tag_item_filter",
+     "toms_storage:ts.polymorphic_item_filter"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "Both core blocks need a comparator, and the connector additionally needs a diamond and an ender pearl - so this mod cannot start before the Nether or a decent mining run, despite being marketed as the simple storage option.",
+    "ids": [
+     "toms_storage:ts.inventory_connector",
+     "toms_storage:ts.storage_terminal"
+    ]
+   },
+   {
+    "note": "The crafting terminal is built from a finished storage terminal - it is an upgrade of it, not an alternative to it.",
+    "ids": [
+     "toms_storage:ts.crafting_terminal",
+     "toms_storage:ts.storage_terminal"
+    ]
+   },
+   {
+    "note": "The advanced wireless terminal is a smithing-table transform, so it is gated behind netherite-era progression.",
+    "ids": [
+     "toms_storage:ts.adv_wireless_terminal"
+    ]
+   },
+   {
+    "note": "Cables are inert unless the chain reaches the inventory connector - 'if the cable isn't connected to the inventory connector it won't work'. The connector is the root of everything, not just one component among several.",
+    "ids": [
+     "toms_storage:ts.inventory_cable",
+     "toms_storage:ts.inventory_connector"
+    ]
+   },
+   {
+    "note": "A wireless terminal must be ASSIGNED to a connector before use (right-click it at the block), and its range is finite. The guide shows a beacon in the same chunk as the terminal extending that range - an unusual, undocumented-looking gate worth surfacing.",
+    "ids": [
+     "toms_storage:ts.wireless_terminal",
+     "toms_storage:ts.adv_wireless_terminal"
+    ]
+   }
+  ],
+  "payoff": [
+   {
+    "note": "One terminal reading every attached chest is the whole point - the mod's appeal is reaching that state with vanilla-ish materials and no power, cables or channels.",
+    "ids": [
+     "toms_storage:ts.inventory_connector",
+     "toms_storage:ts.storage_terminal"
+    ]
+   },
+   {
+    "note": "The crafting terminal is the second click moment: recipes pull straight from network stock.",
+    "ids": [
+     "toms_storage:ts.crafting_terminal"
+    ]
+   },
+   {
+    "note": "Going wireless is the final quality-of-life step - the terminal stops being a place you walk to.",
+    "ids": [
+     "toms_storage:ts.wireless_terminal",
+     "toms_storage:ts.adv_wireless_terminal"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "EVERY id in this mod carries a literal 'ts.' prefix in its registry path (confirmed in the jar's lang keys, e.g. block.toms_storage.ts.inventory_connector). A quest task written as toms_storage:inventory_connector will silently fail to match. The recipe FILE names omit the prefix, which makes this easy to get wrong.",
+    "ids": [
+     "toms_storage:ts.inventory_connector",
+     "toms_storage:ts.storage_terminal"
+    ]
+   },
+   {
+    "note": "The open crate is explicitly dismissed by the guide - 'it's not really that useful honestly, many tutorials don't even mention it'. The inventory proxy is similarly niche (it re-exposes the face of the block it points at). Neither is needed for a working terminal and neither belongs on a main quest line.",
+    "ids": [
+     "toms_storage:ts.open_crate",
+     "toms_storage:ts.inventory_proxy"
+    ]
+   },
+   {
+    "note": "The crafting terminal's cost is criticised - 'four diamonds just to add a crafting table' on top of a terminal you already built. Worth pacing as a deliberate upgrade rather than an early expectation.",
+    "ids": [
+     "toms_storage:ts.crafting_terminal"
+    ]
+   },
+   {
+    "note": "The level emitter has no 'equal to' comparison, only greater/less than; the guide's workaround is to set the threshold one above the target. A quest that asks for an exact-count signal needs that caveat.",
+    "ids": [
+     "toms_storage:ts.level_emitter"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "The connector and terminal pair - this mod's identity is being the no-power, no-channel alternative to AE2 and Refined Storage.",
+    "ids": [
+     "toms_storage:ts.inventory_connector",
+     "toms_storage:ts.storage_terminal",
+     "toms_storage:ts.crafting_terminal"
+    ]
+   }
+  ]
+ }
+}

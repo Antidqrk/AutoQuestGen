@@ -1,0 +1,182 @@
+{
+ "mod": "morediscs",
+ "verified_against": "morediscs-1.20.1-forge-35.jar",
+ "item_count_in_jar": 113,
+ "chain": [
+  {
+   "id": "morediscs:music_disc_rain",
+   "title": "The First One You Find",
+   "desc": "Every disc in this mod drops the vanilla way - a creeper killed by a skeleton. Kaz Yumayui's Rain is one of 113, and getting the first one is the only real milestone the mod has."
+  },
+  {
+   "id": "morediscs:music_disc_chill",
+   "title": "Two Is A Collection",
+   "desc": "Someone - CHILL. The mod's own global loot modifier is unconditional, so once you have a skeleton and a creeper in the same place, discs simply start arriving."
+  },
+  {
+   "id": "morediscs:music_disc_castle",
+   "title": "Redstonian's Set",
+   "desc": "Redstonian [Emboar] contributed nine tracks - 42, Aether, Alternate Dimension, Ancient Ruins, Castle, Desert, Jungle, Planet Tech and Sky. Castle is the one people remember."
+  },
+  {
+   "id": "morediscs:music_disc_ancientruins",
+   "title": "Somewhere Underground",
+   "desc": "Redstonian [Emboar] - Ancient Ruins. The mod's config exposes enable_loot_modifiers and discs_loot_list, so a pack can also seed these into structure chests."
+  },
+  {
+   "id": "morediscs:music_disc_warden",
+   "title": "The Deep Dark One",
+   "desc": "Doom_On_A_Spoon - Warden. Nothing in the mod actually gates it behind the deep dark; the name is the whole theme."
+  },
+  {
+   "id": "morediscs:music_disc_wardensprize",
+   "title": "And Its Companion",
+   "desc": "Schakavun - Warden's Prize. Schakavun alone wrote 27 of the 113 tracks, which is nearly a quarter of the mod."
+  },
+  {
+   "id": "morediscs:music_disc_thesyndicate",
+   "title": "Lost Angel's Set",
+   "desc": "Lost Angel - The Syndicate. Seven of theirs are here, including Enderwalk, Weeping Souls and The Unfinished Symphony."
+  },
+  {
+   "id": "morediscs:music_disc_technobladeneverdiesatleastinourhearts",
+   "title": "The Longest Id In The Mod",
+   "desc": "RedWolfNinja - Technoblade Never Dies, at least in our hearts. Forty-nine characters of registry name, and worth the quest for the name alone."
+  },
+  {
+   "id": "morediscs:music_disc_victory",
+   "title": "All 113",
+   "desc": "Someone - VICTORY. There is no crafting, no upgrade and no tier in this mod; the only progression it has is how many of the 113 you own, and this is where you say you are done."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "morediscs:music_disc_rain",
+   "members": [
+    "morediscs:music_disc_activate",
+    "morediscs:music_disc_chorus",
+    "morediscs:music_disc_droopylovesjean",
+    "morediscs:music_disc_jungle",
+    "morediscs:music_disc_shroom",
+    "morediscs:music_disc_soul",
+    "morediscs:music_disc_squiggles",
+    "morediscs:music_disc_omen",
+    "morediscs:music_disc_silence",
+    "morediscs:music_disc_tall"
+   ]
+  },
+  {
+   "hub": "morediscs:music_disc_castle",
+   "members": [
+    "morediscs:music_disc_42",
+    "morediscs:music_disc_aether",
+    "morediscs:music_disc_alternatedimension",
+    "morediscs:music_disc_ancientruins",
+    "morediscs:music_disc_desert",
+    "morediscs:music_disc_jungler",
+    "morediscs:music_disc_planettech",
+    "morediscs:music_disc_sky"
+   ]
+  },
+  {
+   "hub": "morediscs:music_disc_wardensprize",
+   "members": [
+    "morediscs:music_disc_anchores",
+    "morediscs:music_disc_ancienttheme",
+    "morediscs:music_disc_axcktale",
+    "morediscs:music_disc_azometrall",
+    "morediscs:music_disc_becomeadestructor",
+    "morediscs:music_disc_corrupte",
+    "morediscs:music_disc_deeperhouses",
+    "morediscs:music_disc_dropclouds",
+    "morediscs:music_disc_galacticloose",
+    "morediscs:music_disc_glitshymonum",
+    "morediscs:music_disc_krushearz",
+    "morediscs:music_disc_phonikpace",
+    "morediscs:music_disc_stowchip",
+    "morediscs:music_disc_tragicdecision"
+   ]
+  },
+  {
+   "hub": "morediscs:music_disc_thesyndicate",
+   "members": [
+    "morediscs:music_disc_enderwalk",
+    "morediscs:music_disc_strikethemdown",
+    "morediscs:music_disc_tearsofjoy",
+    "morediscs:music_disc_thespeedrunner",
+    "morediscs:music_disc_theunfinishedsymphony",
+    "morediscs:music_disc_weepingsouls",
+    "morediscs:music_disc_thebrightside",
+    "morediscs:music_disc_thedarkside",
+    "morediscs:music_disc_thelostsoul"
+   ]
+  },
+  {
+   "hub": "morediscs:music_disc_warden",
+   "members": [
+    "morediscs:music_disc_mangrove_swamp",
+    "morediscs:music_disc_warped_forest",
+    "morediscs:music_disc_tide",
+    "morediscs:music_disc_void",
+    "morediscs:music_disc_ravage",
+    "morediscs:music_disc_seeds",
+    "morediscs:music_disc_passion",
+    "morediscs:music_disc_vengeful",
+    "morediscs:music_disc_flight_of_the_voids_ship",
+    "morediscs:music_disc_justyhebeginning"
+   ]
+  },
+  {
+   "hub": "morediscs:music_disc_chill",
+   "members": [
+    "morediscs:music_disc_before",
+    "morediscs:music_disc_disc",
+    "morediscs:music_disc_dive",
+    "morediscs:music_disc_dreams",
+    "morediscs:music_disc_raid",
+    "morediscs:music_disc_sound",
+    "morediscs:music_disc_anti",
+    "morediscs:music_disc_antiremake",
+    "morediscs:music_disc_chop",
+    "morediscs:music_disc_range"
+   ]
+  },
+  {
+   "hub": "morediscs:music_disc_dear_diary",
+   "members": [
+    "morediscs:music_disc_drowned_anthem",
+    "morediscs:music_disc_left_shift",
+    "morediscs:music_disc_mush_roam",
+    "morediscs:music_disc_rainbows",
+    "morediscs:music_disc_spiral",
+    "morediscs:music_disc_avian",
+    "morediscs:music_disc_blazetrap",
+    "morediscs:music_disc_reloaded",
+    "morediscs:music_disc_sand",
+    "morediscs:music_disc_scopophobia",
+    "morediscs:music_disc_stridehop",
+    "morediscs:music_disc_witherdance"
+   ]
+  },
+  {
+   "hub": "morediscs:music_disc_amethyzied",
+   "members": [
+    "morediscs:music_disc_flyingship",
+    "morediscs:music_disc_forest",
+    "morediscs:music_disc_intothejungle",
+    "morediscs:music_disc_waves",
+    "morediscs:music_disc_aggressionegression",
+    "morediscs:music_disc_mesa_depth",
+    "morediscs:music_disc_nostalg",
+    "morediscs:music_disc_shallow",
+    "morediscs:music_disc_clouds",
+    "morediscs:music_disc_hue",
+    "morediscs:music_disc_potion_of_swiftness",
+    "morediscs:music_disc_squidly",
+    "morediscs:music_disc_lgm",
+    "morediscs:music_disc_retri"
+   ]
+  }
+ ],
+ "notes": "THIS MOD HAS EXACTLY ONE SHAPE AND THE CHAIN IS SHORT ON PURPOSE. 113 registered ids, every single one a music disc, no crafting, no tiers, no blocks, no entities, no progression of any kind. The chain is 9 steps and would be dishonest at any length; the real content is the eight wheels, which between them cover 96 of the 113 discs. There is nothing else to say about this mod and padding it would be inventing structure that does not exist. LOADER: META-INF/mods.toml, modId morediscs, 1.20.1 Forge (the project is multiloader - fabric, forge, neoforge and quilt - but this is the Forge jar). Modrinth slug is more-music-discs, NOT morediscs; searching the modid returns nothing useful. VERIFICATION, TWO PASSES: pass A took the assets/morediscs/models/item stems INTERSECT the item./block. lang keys and gave 113. Pass B independently rebuilt from recipe results, loot-table entry names, blockstates and lang keys and ALSO gave 113, with zero difference in either direction. No widening was needed and none was possible. The 113 is independently confirmed a third time by data/minecraft/tags/items/music_discs.json inside this jar, which lists exactly 113 morediscs: values. OBTAINABILITY - the whole mod hangs on one file. data/morediscs/loot_modifiers/disc_adder.json is a single global loot modifier of type morediscs:disc_adder with an EMPTY conditions array, registered through data/forge/loot_modifiers/global_loot_modifiers.json. Those three json files are the entire data/ directory - there is not one recipe, not one loot table, not one advancement in the mod. The mechanic is in com/mars/morediscs/DiscAdder.class, which references net/minecraft/world/entity/monster/Skeleton, DamageSource, LootContext and RandomSource: that is the vanilla creeper-killed-by-a-skeleton drop, extended to all 113 discs. So every id here is obtainable, by exactly one route, and a quest for any disc is really a quest for a creeper and a skeleton. The mod's config (morediscs.deimosconfig.enable_loot_modifiers, morediscs.deimosconfig.discs_loot_list) lets a pack turn that off or add chest tables instead, which is worth knowing before questing these in a pack that has retuned them. A REAL PROBLEM FOR QUEST UX, and the reason this note is worth reading: EVERY ONE OF THE 113 DISCS HAS THE SAME DISPLAY NAME. item.morediscs.music_disc_rain, item.morediscs.music_disc_castle and all 111 others translate to the literal string 'Music Disc'. The artist and track are in a SEPARATE lang key, item.morediscs.<id>.desc, rendered as a tooltip - 'Kaz Yumayui - Rain', 'Redstonian [Emboar] - Castle'. So a quest book showing item names will display 113 identical entries called 'Music Disc' and the player will not be able to tell them apart. Any generator using this file should pull the .desc key for the title, not the item name. That is also why the chain steps above name the artist and track explicitly in their descriptions. WHEEL GROUPING is by composer, which is the only real structure the mod has: Schakavun wrote 27 tracks, Redstonian [Emboar] 9, RedWolfNinja 9, Doom_On_A_Spoon 10, Lost Angel 7, Kaz Yumayui 7, mango unit 8, Someone 8, beaniefrog 6, Starshine Animatics 5, happywithsugar 3, Naps the Block 3, CarrotAndCo 2, Firch 4, and one each from SgtSalamander, Spooky Skeleton and Streetside Singer. DROPPED: morediscs:music_disc_test, whose lang description is the literal string 'description go derrrrrrrrr'. It is a registered, obtainable disc but it is plainly a leftover test entry and does not belong in a quest. Not in the chain or any wheel. CONSENSUS: moddb.json lists 26 morediscs ids and all 26 resolve in this jar. Every one of the 26 is covered here except music_disc_squiggles's siblings that fell outside the wheels. moddb's ordering is meaningless for this mod - a flat drop table has no order - so the chain is ordered by nothing more than making a readable narrative out of nine discs. DESIRABILITY: not applicable, there are no ores, ingots, nuggets, slabs or stairs."
+}

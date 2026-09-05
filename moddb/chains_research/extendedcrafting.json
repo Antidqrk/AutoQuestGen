@@ -1,0 +1,238 @@
+{
+ "mod": "extendedcrafting",
+ "verified_against": "ExtendedCrafting-1.20.1-6.0.10.jar",
+ "item_count_in_jar": 71,
+ "chain": [
+  {
+   "id": "extendedcrafting:black_iron_ingot",
+   "title": "Black Iron Ingot",
+   "desc": "Shapeless from iron and black dye. The structural metal of the entire mod - every table, catalyst and frame has it somewhere in the recipe."
+  },
+  {
+   "id": "extendedcrafting:black_iron_slate",
+   "title": "Black Iron Slate",
+   "desc": "Black Iron Ingots pressed into a flat plate; the base of every component and every table shell."
+  },
+  {
+   "id": "extendedcrafting:luminessence",
+   "title": "Luminessence",
+   "desc": "Shapeless from glowstone dust, redstone dust and gunpowder. The reactive half of every component - slate is the body, this is the charge."
+  },
+  {
+   "id": "extendedcrafting:handheld_table",
+   "title": "Handheld Crafting Table",
+   "desc": "A crafting table on a wooden rod. A 3x3 grid you carry in your hand; a small mercy before the real tables arrive."
+  },
+  {
+   "id": "extendedcrafting:basic_component",
+   "title": "Basic Component",
+   "desc": "Shapeless from a Black Iron Slate, Luminessence and an iron ingot. The first rung of the component ladder - each tier swaps the metal for a better one."
+  },
+  {
+   "id": "extendedcrafting:basic_catalyst",
+   "title": "Basic Catalyst",
+   "desc": "Black Iron Ingots around a Basic Component. Catalysts are the fuel the Crafting Core burns; components are what the tables are built from."
+  },
+  {
+   "id": "extendedcrafting:basic_table",
+   "title": "Basic Crafting Table",
+   "desc": "A crafting table, an iron block, slates, a Basic Catalyst and a Basic Component. A 3x3 grid that reads the mod's own table recipes."
+  },
+  {
+   "id": "extendedcrafting:frame",
+   "title": "Frame",
+   "desc": "Black Iron Ingots, slates and colourless glass. The housing that the Crafting Core and the Compressor are both built into."
+  },
+  {
+   "id": "extendedcrafting:redstone_ingot",
+   "title": "Redstone Ingot",
+   "desc": "Shapeless from iron and redstone dust. The first of the four exotic metals, and the one the Flux line runs on."
+  },
+  {
+   "id": "extendedcrafting:redstone_component",
+   "title": "Redstone Component",
+   "desc": "A slate, Luminessence and a Redstone Ingot. Every automatic table needs these, so this is where the auto-crafting branch actually begins."
+  },
+  {
+   "id": "extendedcrafting:advanced_component",
+   "title": "Advanced Component",
+   "desc": "The same shapeless recipe with a gold ingot instead of iron; second rung of the ladder."
+  },
+  {
+   "id": "extendedcrafting:advanced_table",
+   "title": "Advanced Crafting Table",
+   "desc": "A gold block, slates, an Advanced Catalyst and Component consuming a Basic Table and a Basic Auto Table. A 5x5 grid - the first genuinely new capability."
+  },
+  {
+   "id": "extendedcrafting:basic_auto_table",
+   "title": "Basic Auto Crafting Table",
+   "desc": "Black Iron, Crystaltine and Redstone Components around a Basic Table. It runs a stored recipe on RF instead of your clicks."
+  },
+  {
+   "id": "extendedcrafting:elite_component",
+   "title": "Elite Component",
+   "desc": "Slate, Luminessence and a diamond. Third rung, and the gate on the Crafting Core and the Compressor."
+  },
+  {
+   "id": "extendedcrafting:elite_table",
+   "title": "Elite Crafting Table",
+   "desc": "A diamond block, slates, an Elite Catalyst and Component consuming an Advanced Table and an Advanced Auto Table. A 7x7 grid."
+  },
+  {
+   "id": "extendedcrafting:crafting_core",
+   "title": "Crafting Core",
+   "desc": "A Frame, slates, Black Iron and Elite parts. Ring it with Pedestals, feed it a catalyst, and it runs the mod's multiblock combination recipes."
+  },
+  {
+   "id": "extendedcrafting:pedestal",
+   "title": "Pedestal",
+   "desc": "A Black Iron block and ingots. Each pedestal holds one ingredient for the Crafting Core; the recipes want a lot of them."
+  },
+  {
+   "id": "extendedcrafting:compressor",
+   "title": "Compressor",
+   "desc": "A Frame, slates, Black Iron and Elite parts. Feed it a stack of one material and a catalyst and it grinds thousands of them into a single Singularity."
+  },
+  {
+   "id": "extendedcrafting:singularity",
+   "title": "Singularity",
+   "desc": "The Compressor's output. One item id holding nineteen different singularities - coal, iron, gold, diamond, emerald and the common modded alloys - distinguished by NBT rather than by separate registrations."
+  },
+  {
+   "id": "extendedcrafting:crystaltine_ingot",
+   "title": "Crystaltine Ingot",
+   "desc": "A Basic Table recipe: iron, gold, diamonds, lapis and a nether star. The metal every auto table and every high catalyst wants."
+  },
+  {
+   "id": "extendedcrafting:ender_ingot",
+   "title": "Ender Ingot",
+   "desc": "Shapeless from iron and ender pearls. The Ender branch, which crafts slowly in the world instead of instantly in a grid."
+  },
+  {
+   "id": "extendedcrafting:ender_crafter",
+   "title": "Ender Crafter",
+   "desc": "Ender Ingots, eyes of ender and a crafting table. Ring it with Ender Alternators; its recipes take real time to finish, and the alternators speed them up."
+  },
+  {
+   "id": "extendedcrafting:ender_star",
+   "title": "Ender Star",
+   "desc": "A nether star and eyes of ender in the Ender Crafter. The reagent for Enhanced Ender Ingots and the top of that branch."
+  },
+  {
+   "id": "extendedcrafting:flux_crafter",
+   "title": "Flux Crafter",
+   "desc": "Redstone Ingots, gold and a crafting table. The RF-hungry twin of the Ender Crafter, ringed with Flux Alternators instead."
+  },
+  {
+   "id": "extendedcrafting:flux_star",
+   "title": "Flux Star",
+   "desc": "A nether star and gold in the Flux Crafter; it feeds the Enhanced Redstone Ingot the same way the Ender Star feeds its branch."
+  },
+  {
+   "id": "extendedcrafting:ultimate_component",
+   "title": "Ultimate Component",
+   "desc": "A slate, Luminessence and an emerald. Top rung of the component ladder that the mod actually ships a full path to."
+  },
+  {
+   "id": "extendedcrafting:ultimate_table",
+   "title": "Ultimate Crafting Table",
+   "desc": "An emerald block, slates, an Ultimate Catalyst and Component consuming an Elite Table and an Elite Auto Table. A 9x9 grid - the largest in the mod."
+  },
+  {
+   "id": "extendedcrafting:ultimate_singularity",
+   "title": "Ultimate Singularity",
+   "desc": "Made in the Ultimate Crafting Table from every singularity you own, through a dedicated recipe serializer that reads the whole singularity registry. The real endgame of this jar."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "extendedcrafting:ultimate_table",
+   "members": [
+    "extendedcrafting:handheld_table",
+    "extendedcrafting:basic_table",
+    "extendedcrafting:advanced_table",
+    "extendedcrafting:elite_table",
+    "extendedcrafting:basic_auto_table",
+    "extendedcrafting:advanced_auto_table",
+    "extendedcrafting:elite_auto_table",
+    "extendedcrafting:ultimate_auto_table",
+    "extendedcrafting:crafting_core",
+    "extendedcrafting:pedestal",
+    "extendedcrafting:frame",
+    "extendedcrafting:compressor"
+   ]
+  },
+  {
+   "hub": "extendedcrafting:ultimate_catalyst",
+   "members": [
+    "extendedcrafting:basic_catalyst",
+    "extendedcrafting:advanced_catalyst",
+    "extendedcrafting:elite_catalyst",
+    "extendedcrafting:crystaltine_catalyst",
+    "extendedcrafting:redstone_catalyst",
+    "extendedcrafting:ender_catalyst",
+    "extendedcrafting:enhanced_ender_catalyst",
+    "extendedcrafting:enhanced_redstone_catalyst"
+   ]
+  },
+  {
+   "hub": "extendedcrafting:ultimate_component",
+   "members": [
+    "extendedcrafting:basic_component",
+    "extendedcrafting:advanced_component",
+    "extendedcrafting:elite_component",
+    "extendedcrafting:crystaltine_component",
+    "extendedcrafting:redstone_component",
+    "extendedcrafting:ender_component",
+    "extendedcrafting:enhanced_ender_component",
+    "extendedcrafting:enhanced_redstone_component",
+    "extendedcrafting:luminessence",
+    "extendedcrafting:black_iron_slate"
+   ]
+  },
+  {
+   "hub": "extendedcrafting:crystaltine_ingot",
+   "members": [
+    "extendedcrafting:black_iron_ingot",
+    "extendedcrafting:black_iron_block",
+    "extendedcrafting:redstone_ingot",
+    "extendedcrafting:redstone_ingot_block",
+    "extendedcrafting:ender_ingot",
+    "extendedcrafting:ender_ingot_block",
+    "extendedcrafting:enhanced_ender_ingot",
+    "extendedcrafting:enhanced_ender_ingot_block",
+    "extendedcrafting:enhanced_redstone_ingot",
+    "extendedcrafting:enhanced_redstone_ingot_block",
+    "extendedcrafting:crystaltine_block",
+    "extendedcrafting:luminessence_block"
+   ]
+  },
+  {
+   "hub": "extendedcrafting:flux_star",
+   "members": [
+    "extendedcrafting:ender_star",
+    "extendedcrafting:ender_star_block",
+    "extendedcrafting:flux_star_block",
+    "extendedcrafting:nether_star_block",
+    "extendedcrafting:ender_crafter",
+    "extendedcrafting:auto_ender_crafter",
+    "extendedcrafting:flux_crafter",
+    "extendedcrafting:auto_flux_crafter",
+    "extendedcrafting:ender_alternator",
+    "extendedcrafting:flux_alternator"
+   ]
+  },
+  {
+   "hub": "extendedcrafting:ultimate_singularity",
+   "members": [
+    "extendedcrafting:singularity",
+    "extendedcrafting:compressor",
+    "extendedcrafting:ultimate_table",
+    "extendedcrafting:crystaltine_ingot",
+    "extendedcrafting:ender_star",
+    "extendedcrafting:flux_star"
+   ]
+  }
+ ],
+ "notes": "A GENUINE UNOBTAINABLE FAMILY - FIVE ITEMS DROPPED, WITH PROOF. extendedcrafting:the_ultimate_ingot has NO primary recipe anywhere in the jar. Every file in the jar that mentions it is one of: the lang files, its item model, ModItems.class, the forge:ingots/the_ultimate tag, and four recipes that form a closed loop - the_ultimate_block (9 ingots -> block), the_ultimate_block_uncraft (block -> 9 ingots), the_ultimate_ingot_recraft (9 nuggets -> ingot) and the_ultimate_ingot_uncraft (ingot -> 9 nuggets). There is no entry point into that loop, and no cucumber:feature_flag recipe gates one. The Ultimate Ingot is deliberately left for packs to define. Consequently the_ultimate_ingot, the_ultimate_nugget, the_ultimate_block, the_ultimate_component and the_ultimate_catalyst are ALL uncompletable with this jar alone and are dropped from chain and wheels. NOTE THE NAMING TRAP: 'ultimate_component', 'ultimate_catalyst', 'ultimate_table' and 'ultimate_auto_table' (no 'the_') are the emerald tier and ARE fully obtainable - only the five 'the_ultimate_*' ids are dead. ALSO DROPPED: extendedcrafting:recipe_maker, a pack-developer tool (RecipeMakerItem.class with a TableType enum) with no recipe of any kind. TWO RECIPES REGISTERED IN CODE. extendedcrafting:singularity has no recipe JSON at all - the nineteen singularity definitions live in ModSingularities.class and are handed to SingularityRegistry, which writes them out as a datapack on first run; the Compressor consumes them. The item's own lang key is 'item.extendedcrafting.singularity = %s Singularity', i.e. the display NAME IS COMPOSED AT RUNTIME from singularity.extendedcrafting.<type> keys (coal, copper, iron, lapis_lazuli, redstone, glowstone, gold, diamond, emerald, aluminum, tin, bronze, silver, lead, steel, nickel, electrum, invar, platinum) and the type is carried in NBT, so all nineteen share ONE item id. extendedcrafting:ultimate_singularity's recipe JSON contains only a type and a feature-flag condition; the recipe is in UltimateSingularityRecipe$Serializer.class. Both are obtainable and both are quested; a result-key scan alone would have marked them dead. VERIFICATION: pass 1 strict models INTERSECT lang gave 71, with exactly one model-only id (guide_book, a patchouli book gated behind a forge:item_exists condition on patchouli:guide_book, so not an extendedcrafting item) and zero lang-only and zero blockstate-only. Pass 2 re-derived the set independently from .class constant-pool strings, item textures, blockstates, recipe results and loot tables: all 71 corroborated, nothing missed. 65 obtainable, 60 quested across chain and wheels; the balance is the black_iron/crystaltine/ender/redstone/the_ultimate nugget tier, held out of the chain per the desirability rule. NO CONSENSUS DATA: moddb.json has no extendedcrafting entry, so ordering is the recipe dependency graph alone - and the graph is unusually strict here, because each table tier literally CONSUMES the previous table and the previous auto table, so the tiers cannot be reordered. Jar confirmed 1.20.1 Forge: META-INF/mods.toml with modIds extendedcrafting + bundled cucumber, minecraft versionRange [1.20.1], pack_format 15, Java 17 class files, no fabric.mod.json."
+}

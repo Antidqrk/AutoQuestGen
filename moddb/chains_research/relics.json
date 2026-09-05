@@ -1,0 +1,153 @@
+{
+ "mod": "relics",
+ "verified_against": "relics-1.20.1-0.8.0.13.jar",
+ "item_count_in_jar": 31,
+ "chain": [
+  {
+   "id": "relics:researching_table",
+   "title": "Bench of Small Discoveries",
+   "desc": "The mod's only workstation: it shows a relic's level, quality and ability tree and spends leveling points to upgrade abilities."
+  },
+  {
+   "id": "relics:leather_belt",
+   "title": "A Strap With Ambitions",
+   "desc": "A belt-slot relic seeded into village-tagged chest loot, including the fletcher house table."
+  },
+  {
+   "id": "relics:hunter_belt",
+   "title": "The Tracker's Cinch",
+   "desc": "Another belt-slot relic drawn from the same village loot pool as the Leather Belt."
+  },
+  {
+   "id": "relics:arrow_quiver",
+   "title": "Ammunition Worn on the Back",
+   "desc": "A back-slot relic from village loot; its model has four fill stages plus a broken state."
+  },
+  {
+   "id": "relics:horse_flute",
+   "title": "A Whistle the Stable Answers",
+   "desc": "Pulled from both the village pool and the anthropogenic pool of mineshaft, city and stronghold chests."
+  },
+  {
+   "id": "relics:infinity_ham",
+   "title": "The Joint That Never Runs Out",
+   "desc": "A village-loot relic with ten carved-away model stages; it regenerates charges and can be infused with a potion effect."
+  },
+  {
+   "id": "relics:roller_skates",
+   "title": "Wheels Under the Boots",
+   "desc": "A feet-slot relic sitting in the village and anthropogenic loot pools."
+  },
+  {
+   "id": "relics:magic_mirror",
+   "title": "A Door Home in Your Palm",
+   "desc": "From the anthropogenic pool of mineshaft, city and stronghold chests; its Wormhole ability returns the bearer to their respawn point."
+  },
+  {
+   "id": "relics:midnight_robe",
+   "title": "Cloth Cut From Night",
+   "desc": "A back-slot relic found in the same abandoned-mineshaft, city and stronghold loot family."
+  },
+  {
+   "id": "relics:spatial_sign",
+   "title": "A Signpost Between Places",
+   "desc": "Anthropogenic loot again; the last of the relics seeded into human-made underground structures."
+  },
+  {
+   "id": "relics:relic_experience_bottle",
+   "title": "Bottled Progress",
+   "desc": "Throwable experience that feeds relic levels directly instead of the player's own bar."
+  },
+  {
+   "id": "relics:aqua_walker",
+   "title": "Steps That Do Not Sink",
+   "desc": "The aquatic pool covers any chest table matching water, ocean, river, ship or aqua, plus Buried Treasure."
+  },
+  {
+   "id": "relics:jellyfish_necklace",
+   "title": "Sting Worn as Jewellery",
+   "desc": "A necklace-slot relic from the same shipwreck, ocean ruin and buried treasure pool."
+  },
+  {
+   "id": "relics:wool_mitten",
+   "title": "Warmth for the Fist",
+   "desc": "The cold pool: taiga, snowy and glacial chest tables plus the Igloo chest."
+  },
+  {
+   "id": "relics:ice_skates",
+   "title": "Blades for a Frozen Floor",
+   "desc": "A feet-slot relic from the same cold-biome loot family as the Wool Mitten."
+  },
+  {
+   "id": "relics:spore_sack",
+   "title": "A Pouch of Living Dust",
+   "desc": "The jungle pool, covering jungle and temple chest tables; it occupies the charm slot."
+  },
+  {
+   "id": "relics:holy_locket",
+   "title": "Sanctity and Its Opposite",
+   "desc": "The desert pool of pyramid and sand-structure chests; its Belief ability toggles between healing allies and burning the undead."
+  },
+  {
+   "id": "relics:blazing_flask",
+   "title": "Fire Kept in Glass",
+   "desc": "The Nether pool, matching fortress, lava, magma and burn chest tables plus the Ruined Portal chest."
+  },
+  {
+   "id": "relics:bastion_ring",
+   "title": "Signet of the Piglin Halls",
+   "desc": "A ring-slot relic restricted to bastion and piglin chest tables."
+  },
+  {
+   "id": "relics:elytra_booster",
+   "title": "A Kick Between Wings",
+   "desc": "The End pool: End City and End Ship chests, plus Stronghold tables through the same 'end' match."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "relics:aqua_walker",
+   "members": [
+    "relics:magma_walker",
+    "relics:ice_skates",
+    "relics:ice_breaker",
+    "relics:roller_skates",
+    "relics:amphibian_boot"
+   ]
+  },
+  {
+   "hub": "relics:leather_belt",
+   "members": [
+    "relics:midnight_robe",
+    "relics:elytra_booster",
+    "relics:arrow_quiver",
+    "relics:drowned_belt",
+    "relics:hunter_belt",
+    "relics:reflection_necklace",
+    "relics:jellyfish_necklace",
+    "relics:holy_locket",
+    "relics:rage_glove",
+    "relics:enders_hand",
+    "relics:wool_mitten",
+    "relics:chorus_inhibitor",
+    "relics:bastion_ring",
+    "relics:spore_sack"
+   ]
+  },
+  {
+   "hub": "relics:magic_mirror",
+   "members": [
+    "relics:shadow_glaive",
+    "relics:space_dissector",
+    "relics:solid_snowball",
+    "relics:horse_flute",
+    "relics:blazing_flask",
+    "relics:infinity_ham",
+    "relics:spatial_sign",
+    "relics:relic_experience_bottle",
+    "relics:researching_table"
+   ]
+  }
+ ],
+ "notes": "Item set = 119 stems of assets/relics/models/item/*.json intersected with item./block. keys across every assets/*/lang/en_us.json (31 ids). The other 88 model stems are per-relic level and broken-state variants (aqua_walker_0, shadow_glaive_3, *_broken) and a group of models with no lang entry at all in 0.8.0.13 - camouflage_ring, delay_ring, fragrant_flower, ghost_skin_talisman, lucky_horseshoe, old_boot, scarab_talisman, slime_heart, soul_devourer, spider_necklace, stellar_catalyst and blank_rune. Those twelve were DROPPED as unverifiable: no item.relics.* key exists for any of them in this jar, so they are either unregistered or registered without a translation, and a quest referencing them could not resolve a name. Relics ships no recipe files; acquisition is a single global loot modifier (data/relics/loot_modifiers/relic_loot.json registered through data/forge/loot_modifiers/global_loot_modifiers.json). The per-relic loot pool was read out of it/hurts/sskirillss/relics/items/relics/base/data/loot/misc/LootCollections.class, whose regexes define eleven pools: VILLAGE (chests/*village*), BASTION (*bastion|piglin*), NETHER (*nether|hell|lava|magma|fire|burn|fortress* plus minecraft:chests/ruined_portal), JUNGLE (*jungle|temple*), DESERT (*desert|sand|pyramid*), AQUATIC (*water|ocean|river|ship|aqua* plus buried_treasure), PILLAGE (*pillag|outpost* plus woodland_mansion), COLD (*taiga|cold|winter|snow|ice|glac* plus igloo_chest), SCULK (*warden|sculk|echo* plus ancient_city and ancient_city_ice_box), ANTHROPOGENIC (*mineshaft|city|stronghold*) and END (*end|warp*). Each relic class names its pools: blazing_flask/space_dissector/magma_walker/rage_glove/reflection_necklace NETHER, bastion_ring BASTION, elytra_booster/enders_hand/chorus_inhibitor END, shadow_glaive SCULK+END, aqua_walker/amphibian_boot/drowned_belt/jellyfish_necklace AQUATIC, wool_mitten/ice_skates/ice_breaker COLD, spore_sack JUNGLE, holy_locket DESERT, horse_flute/roller_skates VILLAGE+ANTHROPOGENIC, magic_mirror/midnight_robe/spatial_sign ANTHROPOGENIC, infinity_ham/arrow_quiver/hunter_belt/leather_belt VILLAGE. The first two collections are taken verbatim from data/curios/tags/items/*.json: collection 1 is the six-relic feet tag, collection 2 is every relic in the back, belt, necklace, hands, ring and charm tags; collection 3 is the remainder, which carry no Relics-supplied curio slot tag. moddb agreement: all 26 moddb entries are inside the verified 31, and the broad early-to-late shape matches (elytra_booster is the one clash - moddb puts it first at pos 0.146 while its loot pool is End City and End Ship chests, so this chain places it last; moddb's ordering there reflects quest-page layout, not gating)."
+}

@@ -1,0 +1,176 @@
+{
+  "mod": "modern_industrialization",
+  "verified_against": "Modern-Industrialization-1.8.6.jar",
+  "item_count_in_jar": 926,
+  "chain": [
+    {
+      "id": "modern_industrialization:forge_hammer",
+      "title": "Muscle Before Machines",
+      "desc": "A heavy weighted pressure plate over iron ingots; it beats ingots into plates, rods and dust with no power at all."
+    },
+    {
+      "id": "modern_industrialization:bronze_ingot",
+      "title": "Three Copper, One Tin",
+      "desc": "Smelt bronze dust, itself a shapeless mix of three copper dust and one tin dust hammered out on the forge hammer."
+    },
+    {
+      "id": "modern_industrialization:bronze_machine_casing",
+      "title": "The Bronze Age Begins",
+      "desc": "Eight bronze plates ringed around a single bronze gear."
+    },
+    {
+      "id": "modern_industrialization:bronze_boiler",
+      "title": "Kettle Under Pressure",
+      "desc": "Bronze plates and a bronze tank over a furnace and three fire clay bricks; it burns fuel into steam."
+    },
+    {
+      "id": "modern_industrialization:bronze_macerator",
+      "title": "Steam-Driven Teeth",
+      "desc": "Two diamonds, copper gears and fluid pipes bolted to a bronze machine casing to double ore into dust."
+    },
+    {
+      "id": "modern_industrialization:coke_oven",
+      "title": "Baking the Black Rock",
+      "desc": "A furnace ringed with eight vanilla bricks; it bakes coal into coke and creosote."
+    },
+    {
+      "id": "modern_industrialization:steam_blast_furnace",
+      "title": "Fire Clay Crucible",
+      "desc": "A vanilla blast furnace ringed with eight fire clay bricks."
+    },
+    {
+      "id": "modern_industrialization:steel_ingot",
+      "title": "Seven Iron, Two Coke",
+      "desc": "Mix seven iron dust with two coke dust into uncooked steel dust, then fire it down to steel."
+    },
+    {
+      "id": "modern_industrialization:steel_upgrade",
+      "title": "Tier Two by Hand",
+      "desc": "Bronze rods, bronze gears, a bronze rotor and fire clay bricks around a steel machine casing; right-click it onto a bronze machine."
+    },
+    {
+      "id": "modern_industrialization:analog_circuit",
+      "title": "First Circuit Board",
+      "desc": "A resistor, an inductor, capacitors and copper wire pressed onto an analog circuit board."
+    },
+    {
+      "id": "modern_industrialization:basic_machine_hull",
+      "title": "LV Hull",
+      "desc": "An analog circuit over redstone batteries, a steel machine casing and tin cables."
+    },
+    {
+      "id": "modern_industrialization:lv_steam_turbine",
+      "title": "Steam Becomes Current",
+      "desc": "Fluid pipes, tin rotors and motors with an analog circuit on a basic machine hull; it turns steam into EU."
+    },
+    {
+      "id": "modern_industrialization:electric_blast_furnace",
+      "title": "The Furnace That Never Cools",
+      "desc": "A vanilla blast furnace and a basic machine hull wrapped in cupronickel magnetic wire."
+    },
+    {
+      "id": "modern_industrialization:assembler",
+      "title": "Hands That Never Tire",
+      "desc": "Robot arms and conveyors with analog circuits fitted to a basic machine hull."
+    },
+    {
+      "id": "modern_industrialization:electronic_circuit",
+      "title": "MV Logic",
+      "desc": "Diodes and transistors laid over analog circuits on an electronic circuit board."
+    },
+    {
+      "id": "modern_industrialization:advanced_machine_hull",
+      "title": "MV Hull",
+      "desc": "An electronic circuit over silicon batteries and an advanced machine casing."
+    },
+    {
+      "id": "modern_industrialization:digital_circuit",
+      "title": "HV Logic",
+      "desc": "OR, NOT and AND gates set among electronic circuits on a digital circuit board."
+    },
+    {
+      "id": "modern_industrialization:turbo_machine_hull",
+      "title": "HV Hull",
+      "desc": "A digital circuit over sodium batteries and a turbo machine casing."
+    },
+    {
+      "id": "modern_industrialization:processing_unit",
+      "title": "EV Logic",
+      "desc": "Digital circuits, random access memory and a memory management unit on a processing unit board."
+    },
+    {
+      "id": "modern_industrialization:highly_advanced_machine_hull",
+      "title": "EV Hull",
+      "desc": "A processing unit over cadmium batteries and a highly advanced machine casing."
+    },
+    {
+      "id": "modern_industrialization:nuclear_reactor",
+      "title": "Controlled Chain Reaction",
+      "desc": "Nuclear alloy large plates, processing units and cadmium control rods around a highly advanced machine hull."
+    },
+    {
+      "id": "modern_industrialization:quantum_machine_hull",
+      "title": "Quantum Hull",
+      "desc": "A quantum circuit over plutonium batteries and a quantum machine casing."
+    },
+    {
+      "id": "modern_industrialization:fusion_reactor",
+      "title": "Ignition",
+      "desc": "Eight fusion chambers and quantum circuits assembled around a quantum machine hull."
+    },
+    {
+      "id": "modern_industrialization:singularity",
+      "title": "Everything, Compressed",
+      "desc": "Implosion-compressed from an ultradense metal ball and sixty-four nukes; electrolyzing it yields UU matter."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "modern_industrialization:basic_machine_hull",
+      "members": [
+        "modern_industrialization:lv_steam_turbine",
+        "modern_industrialization:electric_blast_furnace",
+        "modern_industrialization:assembler",
+        "modern_industrialization:electrolyzer",
+        "modern_industrialization:centrifuge",
+        "modern_industrialization:distillery",
+        "modern_industrialization:electric_macerator",
+        "modern_industrialization:electric_compressor",
+        "modern_industrialization:electric_furnace",
+        "modern_industrialization:electric_mixer",
+        "modern_industrialization:electric_cutting_machine",
+        "modern_industrialization:electric_water_pump"
+      ]
+    },
+    {
+      "hub": "modern_industrialization:analog_circuit",
+      "members": [
+        "modern_industrialization:electronic_circuit",
+        "modern_industrialization:digital_circuit",
+        "modern_industrialization:processing_unit",
+        "modern_industrialization:quantum_circuit",
+        "modern_industrialization:analog_circuit_board",
+        "modern_industrialization:electronic_circuit_board",
+        "modern_industrialization:digital_circuit_board",
+        "modern_industrialization:processing_unit_board",
+        "modern_industrialization:quantum_circuit_board"
+      ]
+    },
+    {
+      "hub": "modern_industrialization:nuclear_reactor",
+      "members": [
+        "modern_industrialization:uranium_fuel_rod",
+        "modern_industrialization:le_uranium_fuel_rod",
+        "modern_industrialization:he_uranium_fuel_rod",
+        "modern_industrialization:le_mox_fuel_rod",
+        "modern_industrialization:he_mox_fuel_rod",
+        "modern_industrialization:nuclear_casing",
+        "modern_industrialization:cadmium_control_rod",
+        "modern_industrialization:uranium_235_ingot",
+        "modern_industrialization:uranium_238_ingot",
+        "modern_industrialization:plutonium_ingot"
+      ]
+    }
+  ],
+  "notes": "Verified against the Fabric build of Modern Industrialization 1.8.6 for 1.20.1 (the only 1.20.1 build published on Modrinth; ids are loader-independent). IMPORTANT: MI's machine block items have NO assets/modern_industrialization/models/item/*.json file - their models are generated at runtime - so a strict models-and-lang intersection drops every machine. Verification therefore used (models AND lang) OR (lang AND referenced inside data/modern_industrialization/**); every machine id listed here was additionally confirmed to appear as a recipe RESULT in data/modern_industrialization/recipes/**. Tiering is strict and was read from the recipe folder names themselves: steam_age/bronze -> steam_age/steel -> electric_age (hull LV/MV/HV/EV/quantum) -> nuclear and fusion. Note 'quarry' does not exist as an id; the machines are steam_quarry and electric_quarry. Nothing was dropped: every id listed passed the membership check."
+}

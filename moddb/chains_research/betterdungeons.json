@@ -1,0 +1,34 @@
+{
+  "mod": "betterdungeons",
+  "verified_against": "YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+  "item_count_in_jar": 0,
+  "chain": [
+    {
+      "id": "structure:betterdungeons:small_dungeon",
+      "title": "Quite the Renovation",
+      "desc": "The rebuilt vanilla monster room, at the underground_structures step in mountains, badlands, hills, taiga and jungle. Its loot_piles table is only cobblestone, cobweb and dirt - this is the cheap one."
+    },
+    {
+      "id": "structure:betterdungeons:spider_dungeon",
+      "title": "Cobweb Entanglement",
+      "desc": "A spider cave with cave spider and spider spawn overrides. Its egg_room chest holds an enchanted golden apple, a diamond, a saddle, a name tag and potions."
+    },
+    {
+      "id": "structure:betterdungeons:zombie_dungeon",
+      "title": "When in Rome",
+      "desc": "The catacombs, with a zombie spawn override and three tables - common, special and a tombstone chest that pays diamonds, a diamond sword and emeralds."
+    },
+    {
+      "id": "structure:betterdungeons:skeleton_dungeon",
+      "title": "A Bone to Pick",
+      "desc": "The Fortress of the Undead, with a skeleton spawn override. Its common chest carries tipped arrows, a bow, a name tag and an enchanted golden apple."
+    },
+    {
+      "id": "structure:betterdungeons:small_nether_dungeon",
+      "title": "A Special Addition",
+      "desc": "The only one of the five in the Nether (#minecraft:is_nether). Its common chest is a full gold and chainmail kit plus an enchanted golden apple and the 13 music disc."
+    }
+  ],
+  "collections": [],
+  "notes": "YUNG'S BETTER DUNGEONS ADDS NO ITEMS. assets/betterdungeons/ has no models/item, no blockstates and no item./block. lang keys; item_count_in_jar is 0 and collections is empty. THE MOD ID IS betterdungeons, NOT yungsbetterdungeons - read from META-INF/mods.toml (modId betterdungeons, version 1.20-Forge-4.0.4, minecraft [1.20,1.21), forge [46.0.2,), no fabric.mod.json). The task brief's id was wrong and this file is named for the real one, because that is the string the generator matches a mod's scan against. CONTENT: exactly 5 structures at data/betterdungeons/worldgen/structure/*.json and 8 loot tables - and ALL FIVE STRUCTURES HAVE LOOT, so the whole set is chained and nothing was cut. Structure-to-loot used the mod's own one-folder-per-structure convention (loot_tables/<structure>/chests/*), cross-checked by gunzipping the referenced nbt: zombie_dungeon resolved through NBT directly, and the other four resolve by folder. The jar carries 168 nbt pieces behind a yungsapi:yung_jigsaw structure type, which is why a plain vanilla template_pool walk finds fewer of them. The mod's own advancements confirm the framing - root, skeleton_dungeon, small_dungeon, small_nether_dungeon, spider_dungeon, zombie_dungeon and all_dungeons ('Professional Dungeoneer - Explore all of the Better Dungeons!') - and the chain titles above are those advancement titles. Loot contents quoted were read from the loot table json: zombie_dungeon/chests/tombstone lists diamond, diamond_sword and emerald; spider_dungeon/chests/egg_room lists saddle, name_tag and enchanted_golden_apple; small_dungeon/chests/loot_piles genuinely contains nothing but cobblestone, cobweb and dirt, which the entry says plainly. Placement comes from each structure's biomes field; the four Overworld ones share one large biome list (is_mountain, is_badlands, is_hill, is_taiga, is_jungle and optional modded tags) and small_nether_dungeon is the sole #minecraft:is_nether entry. THE CHAIN IS FIVE ENTRIES AND THAT IS THE WHOLE MOD - it is not padded, and note that autoquestgen.py's _load_researched_chains only keeps a curated chain of 4 or more rows, so this one is right at the edge. No kill: entries: no entity lang keys in the jar. No dim: entries: no dimension files. ID FORM: 'structure:' + fully namespaced, mirroring kill:/dim:; every id is a real file under data/betterdungeons/worldgen/structure/. Requires yungsapi."
+}

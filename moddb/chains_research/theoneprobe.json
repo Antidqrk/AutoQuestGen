@@ -1,0 +1,33 @@
+{
+ "mod": "theoneprobe",
+ "verified_against": "theoneprobe-1.20.1-10.0.3.jar",
+ "item_count_in_jar": 7,
+ "chain": [
+  {
+   "id": "theoneprobe:probenote",
+   "title": "The Read Me",
+   "desc": "Paper and redstone. The One Probe ships its own instruction note as a craftable item, which is the only documentation the mod gives you in game."
+  },
+  {
+   "id": "theoneprobe:probe",
+   "title": "Build The Probe",
+   "desc": "A comparator, a gold nugget and redstone on the diagonal. Hold the probe and every block and mob you look at reports its name, contents, energy, growth stage and health."
+  },
+  {
+   "id": "theoneprobe:iron_helmet_probe",
+   "title": "Wear It, Iron",
+   "desc": "An iron helmet and a probe on the mod's own theoneprobe:probe_helmet recipe type. It frees your hand: the readout works while the probe is on your head."
+  },
+  {
+   "id": "theoneprobe:gold_helmet_probe",
+   "title": "Wear It, Gold",
+   "desc": "The same one-step upgrade applied to a golden helmet. The probe transfers to whichever helmet you actually want to wear."
+  },
+  {
+   "id": "theoneprobe:diamond_helmet_probe",
+   "title": "Wear It, Diamond",
+   "desc": "The last of the three. From here the probe costs you nothing - no slot, no durability, no toggle - which is the state the mod is designed to end in."
+  }
+ ],
+ "notes": "WHY THIS UTILITY MOD GOT A CHAIN AND THE OTHER TWELVE DID NOT: The One Probe is the single exception in the utility audit. It registers 7 items and ships 6 recipes in data/theoneprobe/recipes, so it has a real, short, craftable progression rather than being pure HUD. Every id here is confirmed by an item model at assets/theoneprobe/models/item/<id>.json, an item.theoneprobe.<id> lang key, and a recipe whose result is that id. No widening was needed - this mod names its items with item.* keys, so the strict intersection is correct and gives all 7. OBTAINABILITY, and the reason only 5 of the 7 are chained. theoneprobe:creativeprobe has an item model and a lang key ('The Creative Probe') but NO recipe and NO loot table anywhere in the jar - it is a creative-mode tool and is dropped. theoneprobe:probe_goggles is the important one and it is exactly the conditional trap: data/theoneprobe/recipes/probegoggles.json carries \"conditions\": [{\"type\": \"forge:mod_loaded\", \"modid\": \"baubles\"}]. Baubles does not exist on 1.20.1 - Curios replaced it - so that condition can never be satisfied in this pack. The recipe is also written as \"type\": \"forge:ore_shaped\" with a \"forge:ore_dict\" key of \"nuggetGold\", which are 1.12-era serialisers that no longer exist in 1.20.1, so the recipe would fail to parse even if Baubles were somehow present. The item registers regardless, which is precisely why a generator scanning the item registry would offer it as a quest that can never be completed. It is dropped, and this is the only forge-condition-gated item found across all thirteen mods in the utility audit. The remaining five are unconditional: probe.json and probenote.json are plain minecraft:crafting_shaped, and the three helmet probes use the mod's own theoneprobe:probe_helmet recipe type, which takes a vanilla helmet plus theoneprobe:probe. NO COLLECTIONS: five obtainable items is not enough to fill a wheel of five without simply repeating the spine, and the three helmet probes are a variant family of three, below the minimum wheel size. The collections key is therefore omitted, as it is in twelve other files in this directory. See moddb/chains_research/_utility_audit.json for the other twelve mods, all of which are correctly excluded from chapter generation."
+}

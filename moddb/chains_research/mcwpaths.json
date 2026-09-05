@@ -1,0 +1,124 @@
+{
+ "mod": "mcwpaths",
+ "verified_against": "mcw-mcwpaths-1.1.1-mc1.20.1forge.jar",
+ "item_count_in_jar": 315,
+ "chain": [
+  {
+   "id": "mcwpaths:andesite_flagstone",
+   "title": "Irregular Slabs",
+   "desc": "One stonecut of andesite. Flagstone is the mod's most-used pattern and the only one that ships in a full four-piece set - block, path, slab and stairs - across twelve stones."
+  },
+  {
+   "id": "mcwpaths:andesite_flagstone_path",
+   "title": "Sunk Into the Ground",
+   "desc": "The path version sits one pixel below full height, so it reads as a trodden trail rather than a floor. Four patterns - flagstone, running bond, windmill weave and crystal floor - have one."
+  },
+  {
+   "id": "mcwpaths:andesite_running_bond",
+   "title": "Offset Rows",
+   "desc": "The classic brick-laying pattern, and the second of the four full sets."
+  },
+  {
+   "id": "mcwpaths:andesite_windmill_weave",
+   "title": "Pinwheel Tiles",
+   "desc": "Four tiles rotating around a centre. Third of the four full sets."
+  },
+  {
+   "id": "mcwpaths:andesite_crystal_floor",
+   "title": "Facets Underfoot",
+   "desc": "The sharpest of the four full sets, with the same block, path, slab and stairs."
+  },
+  {
+   "id": "mcwpaths:andesite_basket_weave_paving",
+   "title": "Woven Stone",
+   "desc": "Basket weave is the first of six paving patterns that ship as a single block with no slab or stair - thirteen materials each and nothing else."
+  },
+  {
+   "id": "mcwpaths:andesite_clover_paving",
+   "title": "Four-Leaf",
+   "desc": "The second paving pattern. Clover, diamond, dumble, honeycomb and square are the other five, and every one of them is one stonecut from its base stone."
+  },
+  {
+   "id": "mcwpaths:andesite_honeycomb_paving",
+   "title": "Hexagons",
+   "desc": "The honeycomb paving is the only pattern in the mod whose tiles are not rectangular."
+  },
+  {
+   "id": "mcwpaths:andesite_strewn_rocky_path",
+   "title": "Scattered Stones",
+   "desc": "A loose path with gaps between the stones - the roughest of the twelve patterns and the one closest to a natural trail."
+  },
+  {
+   "id": "mcwpaths:oak_planks_path",
+   "title": "A Wooden Boardwalk",
+   "desc": "Three per slab, and the only shapeless recipe in the mod. Planks paths are the eleven-wood family and the only non-stone surface here."
+  },
+  {
+   "id": "mcwpaths:dirt_path_block",
+   "title": "A Path You Can Craft",
+   "desc": "One stonecut of dirt. Podzol and both sands have their own, which makes these four the only path blocks the mod adds that are not stone patterns."
+  },
+  {
+   "id": "mcwpaths:mossy_stone_flagstone",
+   "title": "Overgrown",
+   "desc": "Cut from mossy stone bricks. Mossy stone is a thirteenth material that appears only in the four full sets and the strewn rocky path, never in the six paving patterns."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mcwpaths:stone_flagstone",
+   "members": [
+    "mcwpaths:blackstone_flagstone",
+    "mcwpaths:brick_flagstone",
+    "mcwpaths:cobbled_deepslate_flagstone",
+    "mcwpaths:dark_prismarine_flagstone",
+    "mcwpaths:deepslate_flagstone",
+    "mcwpaths:diorite_flagstone",
+    "mcwpaths:granite_flagstone",
+    "mcwpaths:mud_brick_flagstone",
+    "mcwpaths:red_sandstone_flagstone",
+    "mcwpaths:sandstone_flagstone",
+    "mcwpaths:stone_running_bond",
+    "mcwpaths:stone_windmill_weave",
+    "mcwpaths:stone_crystal_floor"
+   ]
+  },
+  {
+   "hub": "mcwpaths:cobblestone_diamond_paving",
+   "members": [
+    "mcwpaths:mossy_cobblestone_diamond_paving",
+    "mcwpaths:blackstone_diamond_paving",
+    "mcwpaths:brick_diamond_paving",
+    "mcwpaths:cobbled_deepslate_diamond_paving",
+    "mcwpaths:dark_prismarine_diamond_paving",
+    "mcwpaths:deepslate_diamond_paving",
+    "mcwpaths:diorite_diamond_paving",
+    "mcwpaths:granite_diamond_paving",
+    "mcwpaths:mud_brick_diamond_paving",
+    "mcwpaths:red_sandstone_diamond_paving",
+    "mcwpaths:sandstone_diamond_paving",
+    "mcwpaths:andesite_square_paving",
+    "mcwpaths:andesite_dumble_paving"
+   ]
+  },
+  {
+   "hub": "mcwpaths:acacia_planks_path",
+   "members": [
+    "mcwpaths:spruce_planks_path",
+    "mcwpaths:birch_planks_path",
+    "mcwpaths:jungle_planks_path",
+    "mcwpaths:dark_oak_planks_path",
+    "mcwpaths:mangrove_planks_path",
+    "mcwpaths:cherry_planks_path",
+    "mcwpaths:bamboo_planks_path",
+    "mcwpaths:crimson_planks_path",
+    "mcwpaths:warped_planks_path",
+    "mcwpaths:podzol_path_block",
+    "mcwpaths:sand_path_block",
+    "mcwpaths:red_sand_path_block",
+    "mcwpaths:mossy_stone_strewn_rocky_path"
+   ]
+  }
+ ],
+ "notes": "MACAW'S MODS SHARE ONE STRUCTURE: A SMALL NUMBER OF DISTINCT BLOCK TYPES CROSSED WITH A LARGE MATERIAL TABLE. The chain below is one step per distinct RECIPE SHAPE, not one per id, and the material tables go to wheels. MODDB: no consensus signal - moddb.json contains no key for any Macaw's mod - so every ordering here is the recipe graph alone and there is no conflict to record. THE THINNEST MOD IN THE MACAW'S SET: 315 IDS AND ESSENTIALLY ONE RECIPE. Verified against mcw-mcwpaths-1.1.1-mc1.20.1forge.jar (Modrinth version 1.1.1, loaders=[forge], game_versions=[1.20.1]). ID DETECTION: 315 item models, 315 blockstates, 315 lang block.mcwpaths.* keys, 315 recipes, 315 loot tables - all four sets identical, exactly as with Macaw's Lights. Nothing to widen, nothing to narrow, nothing unobtainable. DISTINCT RECIPE SHAPES: TWO. 314 of the 315 recipes are minecraft:stonecutting yielding 1, straight from the base block (andesite gives andesite anything, mud bricks give mud brick anything) with no intermediate step and no dependency between any two mcwpaths ids. The 315th shape is the wooden planks path, a shapeless craft giving 3 from a slab. There is no tier, no gate and no progression anywhere in this mod - which is why the chain above is 12 steps, one per distinct PATTERN, and not one per material. THE PATTERN TABLE, which is the honest structure: four patterns ship a full four-piece set (flagstone, running bond, windmill weave, crystal floor - block, path, slab, stairs, 12 stones each = 208 ids), six ship a single block (basket weave, clover, diamond, dumble, honeycomb, square paving - 13 stones each = 78 ids), one ships a path only (strewn rocky, 12 stones + mossy stone), planks paths cover 11 woods, and four path blocks (dirt, podzol, sand, red sand) round it out. MECHANICS: the jar carries exactly two behaviour strings, mcwpaths.engraved.desc = 'Engrave by Right Clicking w/Pickaxe' and mcwpaths.flattened.desc = 'Flatten by Right Clicking w/Shovel'. Both are in-world state toggles on an already-placed path, not new ids, so they belong in descriptions rather than as quest steps. WHY THE MOSSY STONE ASYMMETRY MATTERS: THE TWO MATERIAL TABLES ARE NOT THE SAME TABLE. The four full sets and the strewn rocky path use stone and mossy_stone; the six paving patterns use cobblestone and mossy_cobblestone INSTEAD and have no stone or mossy_stone entry at all. Both tables are 13 wide (andesite, blackstone, brick, cobbled_deepslate, dark_prismarine, deepslate, diorite, granite, mud_brick, red_sandstone, sandstone plus the swapped pair), and there is no cobblestone_flagstone and no stone_diamond_paving. A generator that assumes one shared 13-material grid emits a dozen ids that do not exist - this was caught by set-membership on the verified list, not by pattern. The verified set is the only safe source. DROPS: none."
+}

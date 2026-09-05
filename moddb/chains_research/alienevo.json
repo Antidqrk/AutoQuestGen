@@ -1,0 +1,186 @@
+{
+ "mod": "alienevo",
+ "verified_against": "AlienEvo-1.1.3-forge.jar",
+ "item_count_in_jar": 52,
+ "chain": [
+  {
+   "id": "structure:alienevo:crash_site",
+   "title": "Something Fell Out Of The Sky",
+   "desc": "The crash site is the mod's opening move and its advancement discover_ship hangs straight off the root. Everything Galvan you will ever use starts as wreckage here."
+  },
+  {
+   "id": "alienevo:galvan_scrap",
+   "title": "Pick Through The Wreck",
+   "desc": "Galvan scrap is placed in the crash site, drops from machine husks and fills the galvan capsule loot table. It is the base material for the metal, the pod and the workbench."
+  },
+  {
+   "id": "alienevo:galvan_metal",
+   "title": "Refine It",
+   "desc": "Galvan scrap and palladium:raw_titanium. Note the ingredient - this mod is a Palladium addon and its recipes reach into that mod's materials, so Palladium must be installed."
+  },
+  {
+   "id": "structure:alienevo:pod",
+   "title": "The Escape Pod",
+   "desc": "Pods generate on their own and hold a galvan capsule. discover_pod is one of four structure advancements branching off the root."
+  },
+  {
+   "id": "alienevo:upgrade_shards",
+   "title": "Shards In The Capsule",
+   "desc": "Upgrade shards come out of galvan capsules and off machine husks. Seventeen colours exist and the colour is what decides which crystal you get."
+  },
+  {
+   "id": "alienevo:upgrade_crystal",
+   "title": "Nine Shards, One Crystal",
+   "desc": "Each colour of shard presses into its own crystal, seventeen recipes in total. Crystals also turn up directly in the archaeology codes_common table."
+  },
+  {
+   "id": "alienevo:omnitrix_workbench",
+   "title": "The Bench That Builds It",
+   "desc": "Galvan scrap, upgrade crystals, a crafting table and an iron block. Everything after this point is assembled or recoloured at this bench."
+  },
+  {
+   "id": "alienevo:upgrade_chip",
+   "title": "The Chip",
+   "desc": "Galvan metal, upgrade crystals, redstone and raw titanium. One of the three parts the Omnitrix needs."
+  },
+  {
+   "id": "structure:alienevo:galvan_mine",
+   "title": "Where They Dug",
+   "desc": "The galvan mine is one of eight structures the mod generates, alongside the priory, the tower, the well, the blast chamber and the stronghold."
+  },
+  {
+   "id": "alienevo:smithing_template_galvan",
+   "title": "A Template That Copies Itself",
+   "desc": "Its own recipe consumes a copy of itself plus cobbled deepslate and raw titanium, the vanilla smithing-template duplication pattern. The first one has to be found."
+  },
+  {
+   "id": "alienevo:galvan_pickaxe",
+   "title": "Smithed, But Not In Any Recipe File",
+   "desc": "Galvan template, an iron pickaxe and galvan metal. This recipe exists ONLY inside data/alienevo/kubejs_scripts/recipes.js - there is no json for it anywhere in the jar."
+  },
+  {
+   "id": "alienevo:galvan_sword",
+   "title": "The Rest Of The Set",
+   "desc": "Sword, axe, shovel and hoe follow the same KubeJS smithing pattern from their iron counterparts. Five tools, zero json recipes."
+  },
+  {
+   "id": "structure:alienevo:galvan_priory",
+   "title": "The Priory",
+   "desc": "discover_priory is the parent of obtain_scroll, so the priory is where the machine branch of the mod actually opens up."
+  },
+  {
+   "id": "alienevo:machine_key",
+   "title": "A Key In The Ruins",
+   "desc": "Machine keys are placed as blocks inside the structure files and have no recipe. The key and the urn together make the scroll."
+  },
+  {
+   "id": "alienevo:machine_urn",
+   "title": "And An Urn",
+   "desc": "Also placed, also uncraftable. One urn appears across the mod's structure set, which makes it the scarcer half."
+  },
+  {
+   "id": "alienevo:machine_scroll",
+   "title": "The Scroll",
+   "desc": "Key plus urn, the mod's only two-mod-item recipe. obtain_scroll is the advancement and it gates the stronghold."
+  },
+  {
+   "id": "structure:alienevo:machine_stronghold",
+   "title": "The Stronghold",
+   "desc": "Four quadrant pieces - ne, nw, se, sw - assembled from a jigsaw pool. discover_stronghold is the child of obtain_scroll and the parent of the master control code."
+  },
+  {
+   "id": "alienevo:machined_metal",
+   "title": "Machined",
+   "desc": "Upgrade shards and stone. Eight machined metal blocks are built into the stronghold, so you will see it before you can make it."
+  },
+  {
+   "id": "alienevo:machined_panel",
+   "title": "Panelled",
+   "desc": "Brown upgrade shards and a dripstone block. The panel is the stronghold's other building material and the pair are pure decoration."
+  },
+  {
+   "id": "alienevo:code_tablet",
+   "title": "Master Control",
+   "desc": "The code tablet is the ONLY entry in the archaeology codes_rare table - brushed, not crafted, not dropped. code_mastercontrol is the advancement it unlocks."
+  },
+  {
+   "id": "structure:alienevo:machine_blast_chamber",
+   "title": "The Blast Chamber",
+   "desc": "A separate root branch from the stronghold, and the only place the self-destruct code exists."
+  },
+  {
+   "id": "alienevo:code_tablet_selfdestruct",
+   "title": "The Other Code",
+   "desc": "Placed exactly once, inside machine_blast_chamber.nbt. There is no other source in the jar."
+  },
+  {
+   "id": "alienevo:prototype_core",
+   "title": "The Core",
+   "desc": "The core is placed inside the crash site and nowhere else - obtain_core is the child of discover_ship. It has no recipe and no loot table; finding it is the quest."
+  },
+  {
+   "id": "alienevo:prototype_omnitrix",
+   "title": "The Omnitrix",
+   "desc": "Galvan metal, the prototype core and an upgrade chip. This is the item the entire mod exists for, and it is the icon of the root advancement."
+  },
+  {
+   "id": "alienevo:prototype_omnitrix_10k",
+   "title": "Ten Thousand",
+   "desc": "Upgraded from the prototype at the workbench across tracked phases - data/alienevo/kubejs_scripts/workbench.js reads scoreboard objectives AlienEvo.10kPhase and AlienEvo.10kStage. Entirely script-driven, and the end of the mod."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "alienevo:upgrade_crystal",
+   "members": [
+    "alienevo:upgrade_crystal_red",
+    "alienevo:upgrade_crystal_blue",
+    "alienevo:upgrade_crystal_green",
+    "alienevo:upgrade_crystal_yellow",
+    "alienevo:upgrade_crystal_black",
+    "alienevo:upgrade_crystal_white",
+    "alienevo:upgrade_crystal_orange",
+    "alienevo:upgrade_crystal_purple",
+    "alienevo:upgrade_crystal_cyan",
+    "alienevo:upgrade_crystal_magenta",
+    "alienevo:upgrade_crystal_pink",
+    "alienevo:upgrade_crystal_brown",
+    "alienevo:upgrade_crystal_gray",
+    "alienevo:upgrade_crystal_light_blue"
+   ]
+  },
+  {
+   "hub": "alienevo:upgrade_shards",
+   "members": [
+    "alienevo:upgrade_shards_red",
+    "alienevo:upgrade_shards_blue",
+    "alienevo:upgrade_shards_green",
+    "alienevo:upgrade_shards_yellow",
+    "alienevo:upgrade_shards_black",
+    "alienevo:upgrade_shards_white",
+    "alienevo:upgrade_shards_orange",
+    "alienevo:upgrade_shards_purple",
+    "alienevo:upgrade_shards_cyan",
+    "alienevo:upgrade_shards_magenta",
+    "alienevo:upgrade_shards_pink",
+    "alienevo:upgrade_shards_brown",
+    "alienevo:upgrade_shards_gray",
+    "alienevo:upgrade_shards_light_gray"
+   ]
+  },
+  {
+   "hub": "alienevo:galvan_pickaxe",
+   "members": [
+    "alienevo:galvan_axe",
+    "alienevo:galvan_shovel",
+    "alienevo:galvan_hoe",
+    "alienevo:galvan_sword",
+    "alienevo:galvan_metal",
+    "alienevo:smithing_template_galvan",
+    "alienevo:galvan_pod",
+    "alienevo:ancient_staff"
+   ]
+  }
+ ],
+ "notes": "TWO TRAPS IN ONE MOD, and both are generalizable. FIRST: GECKOLIB ITEMS HAVE NO VANILLA ITEM MODEL. alienevo:prototype_omnitrix is the single most important item in this mod - it is the icon of the root advancement, it is the result of a real json recipe, and it is referenced 27 times across data/ - and it has NO file under assets/alienevo/models/item/. Its model is assets/alienevo/geo/prototype_omnitrix.geo.json, a GeckoLib geo model. A strict models/item INTERSECT lang rule returns 48 ids and SILENTLY DROPS THE OMNITRIX. Widening the model side to models/item UNION geo UNION blockstates, still intersected with lang, gives 51 and recovers prototype_omnitrix, prototype_core and recal_omnitrix. Any mod that depends on geckolib (this one, hybrid_aquatic, arphex, cobblemon) can hide items this way, and the fix is to treat assets/<ns>/geo/*.geo.json stems as model evidence. SECOND: RECIPES SHIPPED AS KUBEJS SCRIPTS. data/alienevo/recipes/ contains 25 json recipes and NONE of them makes a tool. All five galvan tools are smithed by data/alienevo/kubejs_scripts/recipes.js, which calls event.smithing('alienevo:galvan_pickaxe', 'alienevo:smithing_template_galvan', 'minecraft:iron_pickaxe', 'alienevo:galvan_metal') and four more like it. A json-only obtainability scan concludes the tools are uncraftable, which is wrong. The jar ships 121 .js files in total, including data/alienevo/kubejs_scripts/workbench.js (44KB), workbench_items.js, pod_loot.js and code_hints.js - so recipes, loot AND the endgame upgrade path all live partly in script. NAMESPACES: mods.toml declares exactly one modId, alienevo. The jar also carries assets/afomni (204 files) and data/afomni (251 files) plus data/alienevo_aliens (38 files), which look like separate mods but are NOT - neither has a single item model, and both contain only palladium/ ability and power definitions, animations, geo and sounds. They are Palladium content namespaces for the alien transformations, not item namespaces. Nothing in this file uses them. DEPENDENCY: mods.toml lists palladium as a mandatory dependency and the recipes consume palladium:raw_titanium and palladium:lead_ingot directly, so every quest here presumes Palladium is in the pack. VERIFICATION, TWO PASSES: pass A (models/item INTERSECT lang) = 48. Pass B, independently rebuilt from recipe results, loot-table entry names, blockstates, geo stems and lang keys = 85. All 37 differences were resolved. WIDENING ACCEPTED, 4 ids: prototype_omnitrix, prototype_core and recal_omnitrix on geo-model evidence; galvan_pod, machined_metal, machined_panel and smithing_template_galvan on recipe-result evidence (all four are named as the result of a json recipe, which is definitive); and prototype_omnitrix_10k on the strength of appearing in the mod's creative tab json AND in workbench.js as a tracked upgrade target. Final count 52. WIDENING REJECTED: the sixteen color_module_* stems are model-only with one reference each and are the workbench's colour swatches, not items; decouple_module, diamond_shard, diamond_spike, quills and ruby_block are model-only with zero references (they are alien-ability visuals - Diamondhead's spikes, Wildmutt's quills); crystal_block, smooth_crystal_block, permanent_taydenite_block and permanent_smooth_taydenite_block are lang-only blocks created at runtime by the crystal_pillar.js and diamond_creation.js ability scripts rather than items you can hold. DROPPED AS UNCOMPLETABLE: alienevo:plumber_badge (appears ONLY in addon/alienevo/creative_mode_tabs/alien_evolution.json - a creative tab entry and nothing else), alienevo:recal_omnitrix and alienevo:recal_core (registered in items.js with an animation script but with no recipe, no loot, no structure placement and not even a creative tab entry - unreleased content), and alienevo:machine_stronghold_map (zero references anywhere in the jar, including the .js files and the .nbt structures). That leaves 50 obtainable ids. STRUCTURE STEPS: the mod ships 8 real worldgen structures - crash_site, pod, galvan_mine, galvan_priory, machine_tower, machine_well, machine_blast_chamber and machine_stronghold - each with a worldgen/structure json, a structure_set and .nbt templates, and five of them have their own discover_* advancement. Five are used as structure: steps because in each case the structure is the ONLY source of the item the next step needs. A gzip-decompress-and-scan of the .nbt files proves the placements: machined_metal 8, galvan_pod 6, machined_panel 6, color_modules 5, galvan_scrap 3, machine_key 2, omnitrix_workbench 2, obtain_core 2, machine_urn 1, code_tablet_selfdestruct 1, plus 191 archaeology markers. ENTITIES: only two entity loot tables exist, machine_husk and machine_husk_staff, both dropping galvan_scrap and upgrade_shards (the staff variant adds ancient_staff). There are no spawn eggs and no other mobs, so no kill: step is written - the husks are a loot source the structure steps already cover. GRAPH: the mod's advancement tree is the chain's spine exactly - alien_evolution is the root, branching to discover_ship -> obtain_core -> craft_omnitrix, discover_priory -> obtain_scroll -> discover_stronghold -> code_mastercontrol, discover_blast_chamber -> code_selfdestruct, and discover_pod. CONSENSUS: moddb.json lists 8 alienevo ids and all 8 resolve in this jar - galvan_scrap, upgrade_shards, upgrade_crystal, galvan_metal, upgrade_chip, omnitrix_workbench, prototype_core and prototype_omnitrix. That ordering is precisely the scrap-to-metal-to-chip-to-omnitrix spine used here, so moddb and the recipe graph agree completely. DESIRABILITY: no ores, nuggets, slabs, stairs or walls exist in this mod, so nothing was dropped for shape."
+}

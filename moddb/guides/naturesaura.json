@@ -1,0 +1,91 @@
+{
+ "mod": "naturesaura",
+ "ids_in_jar": 148,
+ "videos": [
+  {
+   "id": "APE0UWPGBDM",
+   "title": "Nature's Aura: Getting Started! Bit-by-Bit by Mischief of Mice!",
+   "channel": "Mischief of Mice",
+   "views": 210378,
+   "duration": 1703,
+   "chars": 24735
+  }
+ ],
+ "items": {
+  "naturesaura:nature_altar": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3787,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "naturesaura:placer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7683,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   "Step one is finding, not crafting. naturesaura:gold_leaf has NO recipe in the jar - it comes from naturesaura:golden_leaves, which generate in world trees. Nothing in the mod starts until the player has leaves.",
+   "naturesaura:wood_stand (a log + a gold leaf) is the first craft, and it exists only to hold ingredients for the tree ritual.",
+   "The TREE RITUAL is the mod's opening mechanic and its first real gate: gold powder ringed around a sapling with wood stands holding ingredients, then you activate it on the tree. Guide: 'After you make the tree [stand], in the middle of the tree, you can click on the tree... then you will use all the ingredients and start changing the young tree in the middle to be the thing you want.' 17 of the jar's 229 recipes are tree rituals, and they are how the altar itself is obtained.",
+   "naturesaura:nature_altar is a tree-ritual output (stone x3 + gold leaf + gold ingot ...), not a crafting-table recipe. This is the single most important ordering fact in the mod: you cannot craft the altar, you must ritual it.",
+   "naturesaura:gold_powder comes from the altar, crushing naturesaura:gold_leaf with naturesaura:crushing_catalyst - so leaves feed both the ritual circle and the altar.",
+   "First metal: naturesaura:infused_iron, an altar recipe costing 15000 aura on a plain iron ingot. Alongside it naturesaura:infused_stone (from stone) is the mod's building material.",
+   "naturesaura:bottle_two_the_rebottling (glass bottle + planks) is the tool for capturing aura into naturesaura:aura_bottle - needed before any dimension-typed recipe.",
+   "naturesaura:offering_table (needs naturesaura:infused_iron + naturesaura:token_fear) is the second station and the mid-game gate.",
+   "Second metal: naturesaura:sky_ingot, an OFFERING recipe converting naturesaura:infused_iron, started with naturesaura:calling_spirit. Then naturesaura:depth_ingot for the third tier.",
+   "Tools and armour come off those metals with naturesaura:ancient_stick: naturesaura:infused_iron_pickaxe -> naturesaura:sky_pickaxe -> naturesaura:depth_pickaxe.",
+   "Automation and utility last: naturesaura:animal_spawner, naturesaura:chunk_loader, naturesaura:ender_access, naturesaura:field_creator, naturesaura:auto_crafter."
+  ],
+  "gates": [
+   "AURA ITSELF is the gate and it is a per-chunk resource, not an item. Altar recipes carry an explicit aura cost (naturesaura:infused_iron is 15000, naturesaura:tainted_gold is 3000 over 300 ticks) drawn from the surrounding chunk. Drain a chunk and crafting stops until it recovers.",
+   "Because aura is chunk-local, the generators are a hard requirement rather than a convenience. The guide makes this the reason to build them at all: 'you will want to make several basic ingredients for the aura production, so if you start using aura, the aura will not be reduced or broken.' naturesaura:flower_generator, naturesaura:oak_generator, naturesaura:potion_generator, naturesaura:animal_generator, naturesaura:firework_generator, naturesaura:slime_split_generator, naturesaura:moss_generator and naturesaura:chorus_generator all push aura back in.",
+   "naturesaura:nature_altar gates all 36 altar recipes, and it is itself gated behind the tree ritual.",
+   "naturesaura:offering_table gates the sky/depth metal tiers and the upgraded tokens, and its own recipe already needs naturesaura:token_fear - so a Nether trip precedes it.",
+   "DIMENSION gate hidden in NBT: token recipes require an naturesaura:aura_bottle whose stored_type is a specific dimension. naturesaura:token_fear and naturesaura:token_anger need NETHER aura; naturesaura:token_joy and naturesaura:token_sorrow need OVERWORLD aura. A plain recipe scan will not reveal this - it is encoded as forge:nbt on the bottle - but the guide states it outright: 'You have to make it by entering the Nether, get some bottles of [spirit aura] with one empty bottle... and you will get one of them.'",
+   "Token upgrade path is a second offering gate: naturesaura:token_fear -> naturesaura:token_terror, naturesaura:token_joy -> naturesaura:token_euphoria, naturesaura:token_anger -> naturesaura:token_rage, naturesaura:token_sorrow -> naturesaura:token_grief.",
+   "naturesaura:eye is a tree ritual and gates the utility line (naturesaura:chunk_loader needs one); naturesaura:eye_improved needs sky ingots on top."
+  ],
+  "mechanics": [
+   "Nature's Aura is an ENVIRONMENTAL mod: the world holds ambient aura, you spend it, and overdrawing it visibly damages the area. That loop - spend, replenish, watch the chunk - is the whole identity and no item chain expresses it.",
+   "Four recipe verbs, all custom RECIPE TYPES in the naturesaura namespace (types, not items): tree-ritual (17 recipes), altar (36), offering (7) and animal-spawner (60). Only 105 of 229 recipes are ordinary crafting, so a scan that understands vanilla recipes alone sees less than half this mod.",
+   "The 60 animal-spawner recipes are a system in themselves - naturesaura:animal_spawner plus naturesaura:animal_container spawn mobs from aura, which is the mod's answer to mob farms.",
+   "Emotion tokens are the flavour spine: fear/joy/anger/sorrow, upgraded to terror/euphoria/rage/grief, and they gate machines like naturesaura:spawn_lamp and naturesaura:death_ring.",
+   "Aura storage tiers: naturesaura:aura_bottle -> naturesaura:aura_cache -> naturesaura:aura_trove.",
+   "Detection tooling matters because aura is invisible: naturesaura:aura_detector, naturesaura:aura_timer, naturesaura:range_visualizer, naturesaura:eye.",
+   "naturesaura:tainted_gold is the deliberate 'bad' counterpart to infused metals and is used for the darker devices - it is an alternative, not an upgrade."
+  ],
+  "traps": [
+   "Do not write 'craft a Nature Altar' as a shaped-crafting task - naturesaura:nature_altar is produced by a tree ritual, and the quest would be unsatisfiable as a normal recipe.",
+   "Do not ignore aura replenishment when ordering quests. A quest chain that asks for several 15000-aura altar crafts in a row will stall a player who has not built a generator.",
+   "The dimension-typed aura bottle requirement is invisible to a naive recipe scan - a generated quest for naturesaura:token_fear that just asks for 'an aura bottle' would be wrong."
+  ],
+  "signature": [
+   "naturesaura:gold_leaf",
+   "naturesaura:gold_powder",
+   "naturesaura:wood_stand",
+   "naturesaura:nature_altar",
+   "naturesaura:offering_table",
+   "naturesaura:infused_iron",
+   "naturesaura:sky_ingot",
+   "naturesaura:depth_ingot",
+   "naturesaura:aura_bottle",
+   "naturesaura:aura_trove",
+   "naturesaura:eye",
+   "naturesaura:token_fear",
+   "naturesaura:ancient_sapling",
+   "naturesaura:animal_spawner",
+   "naturesaura:chunk_loader"
+  ],
+  "pack_status": "NOT INSTALLED in CREATE FEMBY. Analysed against NaturesAura-39.4.jar fetched to scratch from Modrinth. Note this mod is also absent from the coordinator's guide_corpus.json, so its video ids came from this agent's own pre-throttle search.",
+  "_source_honesty": "One guide transcribed: Mischief of Mice, \"Nature's Aura: Getting Started! Bit-by-Bit\" (24.7k chars). It is a dubbed translation and mangles proper nouns, so it matched only 2 ids automatically - but its TEACHING is intact and it independently confirms two gates that were derived from the jar (aura depletion, and the Nether-bottle requirement). Structure below is jar-derived; the guide corroborates rather than drives it."
+ }
+}

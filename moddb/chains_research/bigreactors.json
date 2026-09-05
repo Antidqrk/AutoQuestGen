@@ -1,0 +1,275 @@
+{
+ "mod": "bigreactors",
+ "verified_against": "ExtremeReactors2-1.20.1-2.0.84.jar",
+ "item_count_in_jar": 136,
+ "chain": [
+  {
+   "id": "bigreactors:yellorite_ore",
+   "title": "Yellow Rock",
+   "desc": "Generates in stone the way iron does, and in deepslate below that. Everything the mod can do is downstream of finding a vein of it."
+  },
+  {
+   "id": "bigreactors:raw_yellorium",
+   "title": "Raw Yellorium",
+   "desc": "What the ore drops when you break it. Fortune multiplies it, and you will want the fortune, because a reactor eats fuel faster than you expect."
+  },
+  {
+   "id": "bigreactors:yellorium_ingot",
+   "title": "Yellorium",
+   "desc": "Raw yellorium smelted down. This is reactor fuel, and it is also the frame metal for the fluidizer, so early ore goes two ways at once."
+  },
+  {
+   "id": "bigreactors:graphite_ingot",
+   "title": "Graphite Bar",
+   "desc": "Coal or charcoal in a furnace. Cheap, unglamorous and required in every single piece of reactor casing you will ever build."
+  },
+  {
+   "id": "bigreactors:wrench",
+   "title": "Extreme Wrench",
+   "desc": "Iron, wool and green dye. Multiblocks are fiddly to reconfigure by hand and this is the tool that makes them not be."
+  },
+  {
+   "id": "bigreactors:basic_reactorcasing",
+   "title": "Reactor Casing",
+   "desc": "Iron, graphite, sand and reactor glass. The wall of the machine; a reactor is a hollow box of these with the working parts set into the faces."
+  },
+  {
+   "id": "bigreactors:basic_reactorcontroller",
+   "title": "Reactor Controller",
+   "desc": "One per reactor, and the block that decides whether your box of casing is a valid multiblock or just a box. It holds the on switch and the readout."
+  },
+  {
+   "id": "bigreactors:basic_reactorfuelrod",
+   "title": "Fuel Rod",
+   "desc": "The vertical columns that run floor to ceiling inside the casing. Yellorium goes in here; more rods means more heat and more of everything."
+  },
+  {
+   "id": "bigreactors:cyanite_ingot",
+   "title": "Cyanite",
+   "desc": "Not crafted. Burn yellorium in a running reactor and cyanite is what comes out of the access port as waste. Your first reactor pays for the second."
+  },
+  {
+   "id": "bigreactors:basic_turbinecasing",
+   "title": "Turbine Housing",
+   "desc": "The second multiblock. A reactor set to produce steam instead of power feeds this, and the pair together beat a reactor alone by a wide margin."
+  },
+  {
+   "id": "bigreactors:basic_turbinerotorshaft",
+   "title": "Rotor Shaft",
+   "desc": "The spine the blades bolt onto, running the length of the housing. Get the length wrong and the multiblock refuses to form."
+  },
+  {
+   "id": "bigreactors:basic_turbinecontroller",
+   "title": "Turbine Controller",
+   "desc": "The turbine's brain and governor. It sets the flow rate, which is the single number that decides whether the rotor sits at a useful RPM."
+  },
+  {
+   "id": "bigreactors:reprocessorcasing",
+   "title": "Reprocessor Casing",
+   "desc": "Cyanite, iron and a water bucket. The third multiblock, and the one that turns the reactor's waste stream back into something worth having."
+  },
+  {
+   "id": "bigreactors:reprocessorcontroller",
+   "title": "Reprocessor Controller",
+   "desc": "Emerald, prismarine dust, a comparator and cyanite on the casing. Switch it on and cyanite stops being rubbish."
+  },
+  {
+   "id": "bigreactors:blutonium_ingot",
+   "title": "Blutonium",
+   "desc": "Two cyanite and a bucket of water through the reprocessor. A far hotter fuel than yellorium, and the gateway to the whole upper ladder."
+  },
+  {
+   "id": "bigreactors:reinforced_reactorcasing",
+   "title": "Reinforced Casing",
+   "desc": "Basic casing rebuilt with steel, graphite and iron blocks. The tier-two wall, and the prerequisite for every reinforced part below."
+  },
+  {
+   "id": "bigreactors:reinforced_reactorcontroller",
+   "title": "Reinforced Controller",
+   "desc": "The tier-two brain. Reinforced reactors take fluid fuel, run hotter and can be actively cooled, which is where the real output lives."
+  },
+  {
+   "id": "bigreactors:magentite_ingot",
+   "title": "Magentite",
+   "desc": "Burn blutonium instead of yellorium and magentite is the waste. Same trick as cyanite, one rung up; there is no crafting recipe for it at all."
+  },
+  {
+   "id": "bigreactors:ludicrite_ingot",
+   "title": "Ludicrite",
+   "desc": "Blutonium waste reprocessed under a flow of liquid cyanite. Named honestly, and the point where the metal ladder stops pretending to be sensible."
+  },
+  {
+   "id": "bigreactors:fluidizercasing",
+   "title": "Fluidizer Casing",
+   "desc": "Yellorium, iron and a water bucket. The fourth multiblock; it melts ingots into the fluid reactants the upper reprocessor steps demand."
+  },
+  {
+   "id": "bigreactors:fluidizercontroller",
+   "title": "Fluidizer Controller",
+   "desc": "Emerald, glowstone dust and yellorium on the casing. It also mixes two fluids into a third, which is the only way to make verderium."
+  },
+  {
+   "id": "bigreactors:reinforced_turbinecasing",
+   "title": "Reinforced Housing",
+   "desc": "The tier-two turbine wall. Higher steam throughput and higher rotor speeds, which a reinforced reactor will happily saturate."
+  },
+  {
+   "id": "bigreactors:reinforced_turbinecontroller",
+   "title": "Reinforced Turbine Controller",
+   "desc": "Tier-two governor. Paired with a reinforced reactor running fluid fuel, this is the mod's practical power endgame."
+  },
+  {
+   "id": "bigreactors:ridiculite_ingot",
+   "title": "Ridiculite",
+   "desc": "Ludicrite waste reprocessed under molten magentite. Two multiblocks now have to run in sequence to advance the ladder by one rung."
+  },
+  {
+   "id": "bigreactors:anglesite_crystal",
+   "title": "Anglesite",
+   "desc": "A lead sulphate crystal that generates only in the Nether. No recipe makes it; you go and dig for it, and the energizer will not exist without it."
+  },
+  {
+   "id": "bigreactors:benitoite_crystal",
+   "title": "Benitoite",
+   "desc": "The End's counterpart to anglesite. Both crystals gate the energizer, so the last multiblock costs you a trip to both other dimensions."
+  },
+  {
+   "id": "bigreactors:energycore",
+   "title": "Energy Core",
+   "desc": "Anglesite, an eye of ender, redstone blocks and a block of magentite. The dense storage element the energizer is built around."
+  },
+  {
+   "id": "bigreactors:energizercontroller",
+   "title": "Energizer Controller",
+   "desc": "Gold, glowstone, a comparator and a redstone torch on energizer casing. Runs the fifth multiblock, which charges powered items in bulk."
+  },
+  {
+   "id": "bigreactors:inanite_ingot",
+   "title": "Inanite",
+   "desc": "Ridiculite waste reprocessed under rossinite, the waste of burning verderium. Three fluids and two multiblocks deep into the tree."
+  },
+  {
+   "id": "bigreactors:insanite_ingot",
+   "title": "Insanite",
+   "desc": "Sixteen units of waste under two buckets of rossinite. The top of the ladder, worth building purely because it is the top of the ladder."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "bigreactors:basic_reactorcasing",
+   "members": [
+    "bigreactors:basic_reactorglass",
+    "bigreactors:basic_reactorredstoneport",
+    "bigreactors:basic_reactorsolidaccessport",
+    "bigreactors:basic_reactorpowertapfe_active",
+    "bigreactors:basic_reactorpowertapfe_passive",
+    "bigreactors:basic_reactorchargingportfe",
+    "bigreactors:basic_reactorcontrolrod"
+   ]
+  },
+  {
+   "hub": "bigreactors:reinforced_reactorcasing",
+   "members": [
+    "bigreactors:reinforced_reactorglass",
+    "bigreactors:reinforced_reactorredstoneport",
+    "bigreactors:reinforced_reactorsolidaccessport",
+    "bigreactors:reinforced_reactorfluidaccessport",
+    "bigreactors:reinforced_reactorcomputerport",
+    "bigreactors:reinforced_reactorpowertapfe_active",
+    "bigreactors:reinforced_reactorpowertapfe_passive",
+    "bigreactors:reinforced_reactorfuelrod",
+    "bigreactors:reinforced_reactorcontrolrod",
+    "bigreactors:reinforced_reactorchargingportfe",
+    "bigreactors:reinforced_reactorfluidport_forge_active",
+    "bigreactors:reinforced_reactorfluidport_forge_passive"
+   ]
+  },
+  {
+   "hub": "bigreactors:basic_turbinecasing",
+   "members": [
+    "bigreactors:basic_turbineglass",
+    "bigreactors:basic_turbineredstoneport",
+    "bigreactors:basic_turbinepowertapfe_active",
+    "bigreactors:basic_turbinepowertapfe_passive",
+    "bigreactors:basic_turbinechargingportfe",
+    "bigreactors:basic_turbinefluidport_forge_active",
+    "bigreactors:basic_turbinefluidport_forge_passive",
+    "bigreactors:basic_turbinerotorbearing",
+    "bigreactors:basic_turbinerotorblade"
+   ]
+  },
+  {
+   "hub": "bigreactors:reinforced_turbinecasing",
+   "members": [
+    "bigreactors:reinforced_turbineglass",
+    "bigreactors:reinforced_turbineredstoneport",
+    "bigreactors:reinforced_turbinepowertapfe_active",
+    "bigreactors:reinforced_turbinepowertapfe_passive",
+    "bigreactors:reinforced_turbinechargingportfe",
+    "bigreactors:reinforced_turbinefluidport_forge_active",
+    "bigreactors:reinforced_turbinefluidport_forge_passive",
+    "bigreactors:reinforced_turbinerotorbearing",
+    "bigreactors:reinforced_turbinerotorblade",
+    "bigreactors:reinforced_turbinerotorshaft",
+    "bigreactors:reinforced_turbinecomputerport"
+   ]
+  },
+  {
+   "hub": "bigreactors:reprocessorcontroller",
+   "members": [
+    "bigreactors:reprocessorglass",
+    "bigreactors:reprocessorcollector",
+    "bigreactors:reprocessorfluidinjector",
+    "bigreactors:reprocessoroutputport",
+    "bigreactors:reprocessorpowerport",
+    "bigreactors:reprocessorwasteinjector"
+   ]
+  },
+  {
+   "hub": "bigreactors:fluidizercontroller",
+   "members": [
+    "bigreactors:fluidizerglass",
+    "bigreactors:fluidizerfluidinjector",
+    "bigreactors:fluidizersolidinjector",
+    "bigreactors:fluidizeroutputport",
+    "bigreactors:fluidizerpowerport"
+   ]
+  },
+  {
+   "hub": "bigreactors:energizercontroller",
+   "members": [
+    "bigreactors:energizercasing",
+    "bigreactors:energizercomputerport",
+    "bigreactors:energizerchargingport_fe",
+    "bigreactors:energizerpowerport_fe",
+    "bigreactors:energizercell"
+   ]
+  },
+  {
+   "hub": "bigreactors:yellorium_block",
+   "members": [
+    "bigreactors:cyanite_block",
+    "bigreactors:blutonium_block",
+    "bigreactors:graphite_block",
+    "bigreactors:ludicrite_block",
+    "bigreactors:magentite_block",
+    "bigreactors:ridiculite_block",
+    "bigreactors:inanite_block",
+    "bigreactors:insanite_block",
+    "bigreactors:yellorium_nugget",
+    "bigreactors:blutonium_nugget"
+   ]
+  },
+  {
+   "hub": "bigreactors:yellorite_ore",
+   "members": [
+    "bigreactors:deepslate_yellorite_ore",
+    "bigreactors:anglesite_ore",
+    "bigreactors:benitoite_ore",
+    "bigreactors:erguide",
+    "bigreactors:raw_yellorium_block"
+   ]
+  }
+ ],
+ "notes": "Extreme Reactors registers under the namespace 'bigreactors', which is why this file is named for the modid and not the mod. Verified against ExtremeReactors2-1.20.1-2.0.84.jar from Modrinth project 'extreme-reactors'; META-INF/mods.toml gives modLoader='javafml', modId='bigreactors', minecraft versionRange='[1.20.1,1.21)', forge versionRange='[47.1.1,49)' - a native 1.20.1 Forge build. HARD DEPENDENCY: mods.toml also requires modId='zerocore' versionRange='[1.20.1-2.1.45,1.21-2.2.0)'. Extreme Reactors will not load without ZeroCore 2. ID COUNT: 124 item models, 98 blockstates, 35 item.bigreactors.* and 89 block.bigreactors.* lang keys. Union of models and blockstates is 136 and that is the number used; the union including lang keys is 137, the extra being 'energizerstatus' which is a GUI string, not an item. THE ONE ID TRAP IN THIS JAR - BLOCK AND ITEM REGISTRY NAMES DIFFER. assets/bigreactors/blockstates/ contains energizerchargingportfe.json and energizerpowerportfe.json (no underscore) while assets/bigreactors/models/item/ contains energizerchargingport_fe.json and energizerpowerport_fe.json (with underscore), and the lang keys are block.bigreactors.energizerchargingportfe / block.bigreactors.energizerpowerportfe. Bytecode settles it: the strings 'energizerchargingportfe' and 'energizerpowerportfe' appear only in Content$Blocks.class and EnergizerPartType.class, while 'energizerchargingport_fe' and 'energizerpowerport_fe' appear in Content$Items.class and Content$TileEntityTypes.class. The BLOCK really is registered without the underscore and the ITEM really is registered with it. The recipes agree with the item form. Since quests reference ITEMS, the wheel above uses bigreactors:energizerchargingport_fe and bigreactors:energizerpowerport_fe. Any consensus entry using the no-underscore form is naming the block, not the item, and would produce an uncompletable quest. Note the reactor and turbine charging ports do NOT have this split - they are plain basic_reactorchargingportfe / basic_turbinechargingportfe in both places. CODE-REGISTERED PROGRESSION - the reason this mod cannot be understood from recipe JSON alone. Four of the ingots on the ladder (cyanite, magentite, and by extension ridiculite and inanite) have NO json recipe that produces them from anything but their own block or dust. Their real source is the reactor itself: it/zerono/mods/extremereactors/gamecontent/multiblock/reactor/Reactants.class holds six code constants - Yellorium, Cyanite, Blutonium, Magentite, Verderium, Rossinite - and ReactantMappingsRegistry.class registers the fuel-to-waste mappings at runtime (the mod ships JEI categories jei_reactantsmappings_solid and jei_reactantsmappings_fluid purely to display them). Burn yellorium, get cyanite waste. Burn blutonium, get magentite waste. Burn verderium (made in the fluidizer from 2 yellorium + 1 blutonium, data/bigreactors/recipes/fluidizer/solidmixing/verderium_1.json), get rossinite waste. The reprocessor then converts waste plus a fluid into the next ingot: cyanite+water to blutonium, blutonium waste + liquid cyanite to ludicrite, ludicrite waste + liquid magentite to ridiculite, ridiculite waste + rossinite to inanite, and 16 waste + 2000mB rossinite to insanite. The chain above follows that real sequence, which no amount of recipe-JSON reading alone would have produced. DROPPED - ALL NINE DUSTS, uncompletable in this jar: bigreactors:yellorium_dust, cyanite_dust, blutonium_dust, graphite_dust, magentite_dust, ludicrite_dust, inanite_dust, insanite_dust and ridiculite_dust each have an item model and a lang key but ZERO bigreactors recipes produce any of them. The only dust recipes in the jar live under data/thermal/recipes/machine/ - pulverizer_cyanite_ingot_to_dust, pulverizer_graphite_ingot_to_dust, pulverizer_yellorite_ore_to_dust and pulverizer_yellorium_ingot_to_dust - which need Thermal Series installed to have a thermal:pulverizer recipe type at all, and which do not even cover six of the nine dusts. Every dust is therefore unobtainable without Thermal and four of them are unobtainable regardless. Their smelting/blasting recipes back into ingots are consequently dead too, which is why magentite_ingot's only live source is reactor waste. DROPPED - CREATIVE ONLY: bigreactors:basic_turbinecreativesteamgenerator, bigreactors:reinforced_turbinecreativesteamgenerator and bigreactors:reinforced_reactorcreativewatergenerator appear only in their own block loot tables and have no crafting recipe. DROPPED - FLUIDS AND BUCKETS: the *_fluid ids (yellorium_fluid, cyanite_fluid, blutonium_fluid, magentite_fluid, rossinite_fluid, verderium_fluid, cryomisi_fluid, redfrigium_fluid, tangerium_fluid, steam) are fluid registrations with no lang key of the item form, and the matching *_bucket items have no recipe - they are filled by scooping from a fluidizer or fluid port in-world. Left off the spine as unsafe quest targets, though they are reachable. KEPT DESPITE NO RECIPE: bigreactors:yellorite_ore, deepslate_yellorite_ore, anglesite_ore and benitoite_ore are worldgen and verified via their block loot tables; anglesite_crystal and benitoite_crystal drop from those ores. bigreactors:erguide has two real recipes (data/bigreactors/recipes/misc/book/erguide.json and erguide_alt.json). ORDERING vs moddb consensus (14 entries, all 14 id-verified): CONFLICT at the very front - consensus ranks bigreactors:reinforced_reactorcontroller at pos 0.0 and basic_reactorcontroller at 0.062, putting the tier-two controller ahead of the tier-one controller whose casing it is built on top of. The recipe graph was preferred; reinforced_reactorcasing consumes basic_reactorcasing directly. Consensus also ranks fluidizercontroller 0.188 and reprocessorcontroller 0.25 ahead of blutonium_ingot 0.375, which is right for the reprocessor (it makes blutonium) but wrong for the fluidizer, whose only purpose in the progression is producing the liquid cyanite and liquid magentite that the LATER reprocessor steps need - it was moved after ludicrite. cyanite_ingot at 0.125 correctly precedes blutonium; magentite_ingot 0.5 and ludicrite_ingot after it also match. The rest of the consensus set is broadly consistent with the graph."
+}

@@ -1,0 +1,180 @@
+{
+ "mod": "dungeons_and_combat",
+ "verified_against": "dungeons_and_combat-1.2.4-forge-1.20.1.jar",
+ "item_count_in_jar": 847,
+ "chain": [
+  {
+   "id": "dungeons_and_combat:iron_dagger",
+   "title": "Choose Your Origin",
+   "desc": "An iron ingot on a stick - your first of the mod's new weapon shapes. The mod also asks you to pick an Origin class (Rogue, Titan, Exiled, Oni Slayer and more), each with its own look and story."
+  },
+  {
+   "id": "structure:dungeons_and_combat:tavern",
+   "title": "A Warm Hearth",
+   "desc": "Taverns dot the world as safe stops: mead, Divine Stew, spare daggers and even Estus Flasks in the cellar. Stock up here before you go underground."
+  },
+  {
+   "id": "dungeons_and_combat:estus_flask",
+   "title": "Golden Draught",
+   "desc": "The healing flask of choice, found in nearly every dungeon chest this mod generates. Grab every one you see - dungeons here hit much harder than vanilla."
+  },
+  {
+   "id": "structure:dungeons_and_combat:the_catacumbs_lugubrious",
+   "title": "Lugubrious Catacombs",
+   "desc": "The mod's first true dungeon. Skulls and their mimics haunt the halls; the chests hold steel weapons, Silver Ingots and smithing templates. Block a Skull's strike to earn the mod's own advancement."
+  },
+  {
+   "id": "kill:dungeons_and_combat:skull",
+   "title": "Spooky Scary Skeletons",
+   "desc": "The catacombs' standard soldier. Skulls drop Steel Ingots and, rarely, Cursed Souls - both currencies you will spend for the rest of the mod."
+  },
+  {
+   "id": "dungeons_and_combat:steel_ingot",
+   "title": "Grave Steel",
+   "desc": "Looted from catacomb chests and Skulls (Armor Plates also smelt into steel nuggets). Steel makes a full weapon and armor line - wear the whole set for the Man of Steel advancement."
+  },
+  {
+   "id": "dungeons_and_combat:cursed_soul",
+   "title": "The Cursed Soul",
+   "desc": "Dropped by Skulls, Ghouls and the GraveWatcher. Cursed Souls smith onto Blazing gear for cursed variants, compress into Imposing Souls, and build the Forging of Essences."
+  },
+  {
+   "id": "dungeons_and_combat:forging_of_essences",
+   "title": "Forge of Essences",
+   "desc": "Blackstone, a furnace and a Cursed Soul build the essence forge - the station where the essences torn from this mod's bosses are worked into their signature gear."
+  },
+  {
+   "id": "kill:dungeons_and_combat:kamath",
+   "title": "Now You Can Rest",
+   "desc": "Kamath, the fallen champion, waits in his ruins. He drops the Essence of Kamath, the Oath greatsword and the Champion Belt - beating him is the catacomb line's crowning fight."
+  },
+  {
+   "id": "dungeons_and_combat:the_gravedigger_greataxe",
+   "title": "The New Gravedigger",
+   "desc": "A relic greataxe tied to the Field of the Fallen and its GraveWatcher. Swinging The Gravedigger summons the Palehand - win that fight to claim the title."
+  },
+  {
+   "id": "structure:dungeons_and_combat:the_cathedral",
+   "title": "The Bloody Cult",
+   "desc": "A crimson-brick temple of the Blood God, guarded by Bloody Cultists and High Priests. Its chests hold Blood Vials, Ebony Raw, Chalices and the Totem of Sacrifice."
+  },
+  {
+   "id": "dungeons_and_combat:chalice",
+   "title": "Dark Purposes",
+   "desc": "A cult Chalice looted from their shrines. Empty for now - the cult's whole progression revolves around filling it with blood."
+  },
+  {
+   "id": "dungeons_and_combat:ceremonial_dagger",
+   "title": "Let the Ceremony Begin",
+   "desc": "The cult's sacrificial blade. Kills made with it feed the Chalice, and a blood-filled Chalice is the key to the Bloodborn rites and the Crimson metal to come."
+  },
+  {
+   "id": "dungeons_and_combat:ebony_scrap",
+   "title": "Hidden in the Dark",
+   "desc": "Ebony Raw drops from The Aberrator and hides in cult chests. With iron and a Fractured Soul it crafts four Ebony Ingots at once."
+  },
+  {
+   "id": "dungeons_and_combat:ebony_ingot",
+   "title": "Ebony Works",
+   "desc": "A full black-metal tool and armor tier - and more importantly the base gear that Crimson equipment is smithed onto later. Make the armor now; you will upgrade it, not replace it."
+  },
+  {
+   "id": "kill:dungeons_and_combat:high_priest",
+   "title": "Silence the Sermon",
+   "desc": "The cult's High Priest drops Blood Vials, Ritual Bones, the Crimson Smithing Template and sometimes the Blood Orb itself. You need his template before Crimson gear is possible."
+  },
+  {
+   "id": "structure:dungeons_and_combat:the_forgotten_sands",
+   "title": "Forgotten Sands",
+   "desc": "A desert ruin patrolled by Centinels, Sandstone Golems and Horuso. Fighting a monster here starts the sun-blessed line; the treasure rooms hold Solar Emblems and the Blessed Smithing Template."
+  },
+  {
+   "id": "dungeons_and_combat:ammit_fang",
+   "title": "I Don't Think You Need It",
+   "desc": "Torn from the crocodilian Ammit. The fang makes a necklace, grinds into Ammit powder, and is one quarter of the Blessed Beetle - so hunt more than one."
+  },
+  {
+   "id": "dungeons_and_combat:sandstone_ingot",
+   "title": "Desert Alloy",
+   "desc": "Sandstone fused with Blessed Dust (from Centinels and Sandstone Golems) and gold. Sandstone gear is the desert tier and the smithing base for Blessed Gold."
+  },
+  {
+   "id": "dungeons_and_combat:blessed_gold_ingot",
+   "title": "Metal of the Sun",
+   "desc": "A diamond, a Sandstone Ingot and a Solar Emblem. Smith it onto sandstone armor with the Blessed Template - wear the full set in daylight to become The New God of the Sun."
+  },
+  {
+   "id": "dungeons_and_combat:blessed_beetle",
+   "title": "Old Friends",
+   "desc": "Ammit Fang, Blessed Gold, a Solar Emblem and Blessed Dust form the scarab that energizes Sunleia's Light at her pantheon - the invitation to the sun goddess's own fight."
+  },
+  {
+   "id": "kill:dungeons_and_combat:sunleia",
+   "title": "Daybreak",
+   "desc": "Sunleia drops the Hand of Sunleia, the Sunrise blade, her Essence and the Divine Blood Vial - the one ingredient the Crimson metal recipe cannot do without."
+  },
+  {
+   "id": "structure:dungeons_and_combat:blazing_fortress",
+   "title": "A Infernal Fortress",
+   "desc": "The Blazing Fortress in the Nether hides Igneous, Molten Bones, Blazing Cores and the Molten Smithing Template - guarded by Infernus, Pyro Knights and the Blazing Lady."
+  },
+  {
+   "id": "dungeons_and_combat:blazing_ingot",
+   "title": "Fortress Alloy",
+   "desc": "Steel, Igneous and a Blazing Core smelt down to four Blazing Ingots. This is the fire tier's working metal for the whole Molten Blazing arsenal."
+  },
+  {
+   "id": "dungeons_and_combat:molten_blazing_sword",
+   "title": "Molten Blazing Blade",
+   "desc": "Blazing Ingots on a Molten Bone hilt. The Molten Blazing set is a platform: smith on Bottled Acid Fire for Acid variants or a Cursed Soul for Cursed variants via the Tohi template."
+  },
+  {
+   "id": "dungeons_and_combat:crimson_ingot",
+   "title": "Blood-Forged Metal",
+   "desc": "Raw Crimson is packed from Blood Vials, Ebony Raw, raw iron and Sunleia's Divine Blood Vial, then blasted into ingots. Every dungeon line converges on this metal."
+  },
+  {
+   "id": "dungeons_and_combat:crimson_chestplate",
+   "title": "Blood Is Fuel",
+   "desc": "Smith Crimson Ingots onto your Ebony armor with the High Priest's template. Crimson armor feeds on blood - keep it fed and it keeps you standing."
+  },
+  {
+   "id": "dungeons_and_combat:blood_orb",
+   "title": "The Bloodymancer",
+   "desc": "The Blood God's orb, pried from High Priests. Claiming it completes the cult storyline and crowns you the Bloodymancer - the final advancement of the blood branch."
+  }
+ ],
+ "collections": [
+  {
+   "name": "Dungeon Atlas",
+   "desc": "Every generated site the mod adds - each with its own garrison and loot table.",
+   "items": ["structure:dungeons_and_combat:tavern", "structure:dungeons_and_combat:the_blacksmith_house", "structure:dungeons_and_combat:the_catacumbs_lugubrious", "structure:dungeons_and_combat:the_cathedral", "structure:dungeons_and_combat:the_church", "structure:dungeons_and_combat:the_forgotten_sands", "structure:dungeons_and_combat:blazing_fortress", "structure:dungeons_and_combat:the_pantheon_of_sunleia", "structure:dungeons_and_combat:the_ruins_of_kamath", "structure:dungeons_and_combat:the_field_of_the_fallen", "structure:dungeons_and_combat:the_tower_of_eldrich", "structure:dungeons_and_combat:ernos_cave", "structure:dungeons_and_combat:witch_hermit_house", "structure:dungeons_and_combat:remanent_camp", "structure:dungeons_and_combat:echoing_ruins"]
+  },
+  {
+   "name": "Trophy Hunt",
+   "desc": "The named horrors and bosses of every branch.",
+   "items": ["kill:dungeons_and_combat:skull", "kill:dungeons_and_combat:the_grave_watcher", "kill:dungeons_and_combat:palehand", "kill:dungeons_and_combat:kamath", "kill:dungeons_and_combat:high_priest", "kill:dungeons_and_combat:the_aberrator", "kill:dungeons_and_combat:ammit", "kill:dungeons_and_combat:gigant_scorpion", "kill:dungeons_and_combat:ernos", "kill:dungeons_and_combat:infernus", "kill:dungeons_and_combat:lady_blaze", "kill:dungeons_and_combat:sunleia", "kill:dungeons_and_combat:hermit_witch"]
+  },
+  {
+   "name": "Smithing Templates",
+   "desc": "Each dungeon branch guards its own template; all of them duplicate like vanilla ones.",
+   "items": ["dungeons_and_combat:light_smithing_template", "dungeons_and_combat:tohi_smithing_template", "dungeons_and_combat:crimson_smithing_template", "dungeons_and_combat:blessed_smithing_template", "dungeons_and_combat:molten_smithing_template"]
+  },
+  {
+   "name": "Boss Relics",
+   "desc": "The unique arms and tokens only the great fights surrender.",
+   "items": ["dungeons_and_combat:oath_sword", "dungeons_and_combat:champion_belt", "dungeons_and_combat:essence_of_kamath", "dungeons_and_combat:the_gravedigger_greataxe", "dungeons_and_combat:sunrise_sword", "dungeons_and_combat:sunleia_hand", "dungeons_and_combat:horus_klauen", "dungeons_and_combat:essence_of_sunleia", "dungeons_and_combat:divine_blood_vial", "dungeons_and_combat:blood_orb"]
+  },
+  {
+   "name": "Alchemist's Grind",
+   "desc": "Mortar and Pestle coatings - grind reagents into the mortar to poison, burn or wither your strikes.",
+   "items": ["dungeons_and_combat:mortar_and_pestle", "dungeons_and_combat:mortar_and_pestle_of_blood", "dungeons_and_combat:mortar_and_pestle_of_poison", "dungeons_and_combat:mortar_and_pestle_of_toxin", "dungeons_and_combat:mortar_and_pestle_of_wither", "dungeons_and_combat:mortar_and_pestle_of_blaze_powder", "dungeons_and_combat:mortar_and_pestle_of_ammit_powder", "dungeons_and_combat:mortar_and_pestle_of_acid_fire"]
+  },
+  {
+   "name": "Origin Wardrobe",
+   "desc": "The armor of each Origin class the mod lets you claim.",
+   "items": ["dungeons_and_combat:rogue_helmet", "dungeons_and_combat:exiled_helmet", "dungeons_and_combat:forgotten_knight_helmet", "dungeons_and_combat:oni_slayer_helmet", "dungeons_and_combat:titan_helmet", "dungeons_and_combat:vagabond_chestplate", "dungeons_and_combat:bounty_hunter_helmet"]
+  }
+ ],
+ "notes": "Dungeons and Combat 1.2.4 (ArcanumLand instance). Order source: the jar's own advancement tree (origin/class root; dungeons_and_combat root -> catacumbs_lugubrious -> man_of_steel -> cursed_soul -> kamath; the_bloody_cult -> chalice -> ceremonial_dagger -> ebony_scrap -> born_of_blood -> crimson armor -> blood_orb; forgotten_sands -> ammit_fang -> scorpion_claw -> blessed_gold -> blessed_beetle/sunleia; a_infernal_fortress) cross-checked against recipes and loot tables. Key verified recipes: ebony_ingot = iron + ebony_scrap + fractured_soul; blessed_gold_ingot = diamond + sandstone_ingot + solar_emblem; blazing_ingot = steel + igneous + blazing_core; raw_crimson = blood_vials + ebony_scrap + raw_iron + divine_blood_vial (Sunleia drop), blasted to crimson_ingot; crimson armor = smithing_transform on ebony armor with crimson_smithing_template (High Priest drop); forging_of_essences = blackstone + furnace + cursed_soul. estus_flask, chalice, ceremonial_dagger, the_gravedigger_greataxe and igneous have no crafting recipes - they are loot/drops (verified in chests/entities loot tables where applicable). Structure ids verified in worldgen/structure. Steel has no ore - it is dungeon loot plus armor_plate smelting."
+}

@@ -1,0 +1,3 @@
+# The offline quest builder runs on the standard library alone.
+# requests is used by the optional AI path and instance-metadata lookups.
+requests>=2.31

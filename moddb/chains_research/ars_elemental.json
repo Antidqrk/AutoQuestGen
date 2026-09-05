@@ -1,0 +1,174 @@
+{
+ "mod": "ars_elemental",
+ "verified_against": "ars_elemental-1.20.1-0.6.8.0.jar",
+ "item_count_in_jar": 113,
+ "parent_mod": "ars_nouveau",
+ "chain": [
+  {
+   "id": "ars_elemental:yellow_archwood_sapling",
+   "title": "The Fifth Archwood",
+   "desc": "Ars Nouveau ships four archwoods. Flashing Archwood is the fifth, generating in its own biome set through data/ars_elemental/forge/biome_modifier, and its wood is a reagent the base mod has no equivalent for."
+  },
+  {
+   "id": "ars_elemental:flashpine_pod",
+   "title": "Fruit That Holds A Charge",
+   "desc": "The Flashpine pod is Ars Elemental's magic fruit, sitting beside Ars Nouveau's mendosteen, bastion, frostaya and bombegranate. It is the reagent for every lightning glyph here."
+  },
+  {
+   "id": "ars_elemental:lesser_fire_focus",
+   "title": "An Element, Narrowed",
+   "desc": "Imbuement Chamber: fire essence, an amethyst shard and gold. The lesser foci give a flat damage bonus to one element and are the cheap half of the mod's central mechanic."
+  },
+  {
+   "id": "ars_elemental:glyph_spark",
+   "title": "Static, Weaponised",
+   "desc": "Glyph recipe: air essence, iron bars and wool. Spark shocks the target and hits wet enemies harder - Ars Elemental's whole lightning school starts here."
+  },
+  {
+   "id": "ars_elemental:glyph_discharge",
+   "title": "Cashing In The Charge",
+   "desc": "Glyph recipe: flashpine pod, air essence and a lightning rod. Discharge detonates a shocked target and chains outward, empowered if the shock came from static build-up."
+  },
+  {
+   "id": "ars_elemental:anima_essence",
+   "title": "Essence Of The Not-Quite-Dead",
+   "desc": "Imbuement Chamber: source gem, bone meal, a golden apple and a wither skeleton skull. Anima is a sixth school Ars Nouveau does not have, and it gates the necromancy line."
+  },
+  {
+   "id": "ars_elemental:mark_of_mastery",
+   "title": "Proof You Learned All Six",
+   "desc": "The Enchanting Apparatus consumes one essence of every school at once - air, water, earth, fire, manipulation, abjuration, conjuration and anima. It is the mod's single hardest gate and every greater focus and elemental robe needs one."
+  },
+  {
+   "id": "ars_elemental:fire_focus",
+   "title": "The Element, Mastered",
+   "desc": "Enchanting Apparatus: a lesser focus plus the Mark of Mastery. Greater foci convert your spell damage wholesale to that element instead of merely adding to it."
+  },
+  {
+   "id": "ars_elemental:fire_hat",
+   "title": "The Pyromancer's Crown",
+   "desc": "An armour upgrade on an Ars Nouveau hood using fire essence, netherite and the Mark of Mastery. Four elemental sets exist; each biases mana discount toward its own school."
+  },
+  {
+   "id": "ars_elemental:base_bangle",
+   "title": "A Ring Worth Attuning",
+   "desc": "Enchanting Apparatus: Ring of Potential, a source block, an end crystal and gold. The blank bangle is the base every elemental bangle is imbued from."
+  },
+  {
+   "id": "ars_elemental:fire_bangle",
+   "title": "Wearing The Element",
+   "desc": "Base bangle, fire essence and a fire charge. Bangles are Curios-slot passives, one per element, and stack with the matching focus."
+  },
+  {
+   "id": "ars_elemental:spell_mirror",
+   "title": "Bouncing The Beam",
+   "desc": "Enchanting Apparatus: quartz, archwood logs, a source block and gold. Placed on a wall, floor or ceiling it reflects an incoming spell projectile at a mirrored angle."
+  },
+  {
+   "id": "ars_elemental:advanced_prism",
+   "title": "A Prism With Lenses",
+   "desc": "Ars Nouveau's Spell Prism with quartz and a source gem. The advanced version accepts prism lenses, which is what turns a projectile relay into a programmable one."
+  },
+  {
+   "id": "ars_elemental:homing_prism_lens",
+   "title": "Teaching The Beam To Follow",
+   "desc": "Imbuement: the Homing Projectile glyph, manipulation essence and quartz. Slotted into an advanced prism it makes every projectile passing through it seek a target."
+  },
+  {
+   "id": "ars_elemental:fire_turret",
+   "title": "A Turret With An Element",
+   "desc": "Imbuement: fire focus, fire essence and an Ars Nouveau Spell Turret. Infused turrets bake the focus into the turret so it does not need one equipped."
+  },
+  {
+   "id": "ars_elemental:spell_horn",
+   "title": "Casting On Everyone At Once",
+   "desc": "Enchanting Apparatus: air essence, a wilden horn, a source gem and gold. Hold to charge; it casts an inscribed spell on yourself and everything nearby, with a spell-damage buff at full charge."
+  },
+  {
+   "id": "ars_elemental:necrotic_focus",
+   "title": "The Summoner Who Raises",
+   "desc": "Enchanting Apparatus: anima essence, a Summon Focus, a wither rose and a wither skeleton skull. It turns Ars Nouveau's summoning into necromancy."
+  },
+  {
+   "id": "ars_elemental:summon_bangle",
+   "title": "More Things At Once",
+   "desc": "Base bangle, conjuration essence, a wilden horn and bone. It raises your summon cap, which is the only way to run a full necrotic build."
+  },
+  {
+   "id": "ars_elemental:everfull_urn",
+   "title": "A Pot That Never Empties",
+   "desc": "Enchanting Apparatus: water essence, source gem, a flower pot and a prismarine shard. An infinite water source for automation that does not need a two-by-two pool."
+  },
+  {
+   "id": "kill:ars_elemental:siren_entity",
+   "title": "The Song In The Reef",
+   "desc": "Sirens spawn in their own biome tag through data/ars_elemental/forge/biome_modifier/siren_spawns.json. They are the wild form of the familiar and the source of Siren Tokens."
+  },
+  {
+   "id": "ars_elemental:siren_shards",
+   "title": "A Token From The Water",
+   "desc": "Siren Tokens drop from wild sirens and are the reagent the Siren Charm needs."
+  },
+  {
+   "id": "ars_elemental:siren_charm",
+   "title": "Binding The Song",
+   "desc": "Enchanting Apparatus: siren tokens, a source gem, fish and a prismarine shard. The charm binds a Siren familiar that buffs you underwater."
+  },
+  {
+   "id": "ars_elemental:firenando_charm",
+   "title": "Binding The Cannon",
+   "desc": "Enchanting Apparatus: fire essence, a magma block, nether brick and netherite scrap. The Flarecannon familiar is the fire counterpart to the Siren and fires on your targets."
+  },
+  {
+   "id": "ars_elemental:thread_summon",
+   "title": "Sewing Summoning Into Cloth",
+   "desc": "Enchanting Apparatus: blank thread, conjuration essence, a wilden drop and an echo shard. Armour threads are Ars Nouveau's upgrade slot; this one boosts the summoning school."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "ars_elemental:lesser_fire_focus",
+   "members": [
+    "ars_elemental:lesser_air_focus",
+    "ars_elemental:lesser_earth_focus",
+    "ars_elemental:lesser_water_focus",
+    "ars_elemental:air_focus",
+    "ars_elemental:earth_focus",
+    "ars_elemental:water_focus"
+   ]
+  },
+  {
+   "hub": "ars_elemental:glyph_spark",
+   "members": [
+    "ars_elemental:glyph_spike",
+    "ars_elemental:glyph_envenom",
+    "ars_elemental:glyph_poison_spores",
+    "ars_elemental:glyph_watery_grave",
+    "ars_elemental:glyph_bubble_shield",
+    "ars_elemental:glyph_phantom_grasp",
+    "ars_elemental:glyph_conjure_terrain",
+    "ars_elemental:glyph_charm",
+    "ars_elemental:glyph_life_link",
+    "ars_elemental:glyph_arc_projectile",
+    "ars_elemental:glyph_homing_projectile",
+    "ars_elemental:glyph_propagator_arc",
+    "ars_elemental:glyph_propagator_homing"
+   ]
+  },
+  {
+   "hub": "ars_elemental:fire_bangle",
+   "members": [
+    "ars_elemental:air_bangle",
+    "ars_elemental:water_bangle",
+    "ars_elemental:earth_bangle",
+    "ars_elemental:anima_bangle",
+    "ars_elemental:caster_bag",
+    "ars_elemental:curio_bag",
+    "ars_elemental:magma_upstream",
+    "ars_elemental:air_upstream",
+    "ars_elemental:water_upstream"
+   ]
+  }
+ ],
+ "notes": "83 ids resolve as assets/ars_elemental/models/item/<id>.json intersected with item./block. lang keys. The 27 glyphs need a THIRD proof because Ars Nouveau glyphs carry no item./block. lang key: each one here has (a) an item model, (b) an ars_elemental.glyph_name.<stem> lang entry, and (c) a data/ars_elemental/recipes entry of type ars_nouveau:glyph. All three had to match before the id was accepted. Recipe types used for ordering: ars_nouveau:imbuement (Imbuement Chamber), ars_nouveau:enchanting_apparatus, ars_nouveau:armor_upgrade, ars_nouveau:glyph and ars_nouveau:caster_tome. mark_of_mastery is the real spine of this mod: it needs one essence of all eight Ars Nouveau schools plus this mod's own anima_essence, and it gates all four greater foci and all sixteen elemental armour pieces. ENTITY AUDIT: all 21 entity.ars_elemental.* lang keys are registered class constants, but only siren_entity, firenando_entity and the four rogue mages are actual mobs - the other fifteen are summon-projectile and spell-effect entities (homing_projectile, lerp, ice_spike, dripstone_spike, linger_magnet, the seven summon_* familiar bodies) and would make uncompletable kill tasks. Only siren_entity is quested, because data/ars_elemental/forge/biome_modifier/siren_spawns.json proves it spawns naturally; the rogue mages have no spawn data in the jar and are left out. stripped_yellow_archwood, stripped_yellow_archwood_log and the sourcestone slab/stair/wall variants are excluded per the measured stripped_/_slab/_stairs/_wall rule. Parent items this addon assumes you already have: ars_nouveau:worn_notebook, an Enchanting Apparatus with arcane pedestals, ars_nouveau:imbuement_chamber, ars_nouveau:source_gem and a source jar network, all eight ars_nouveau:*_essence types, ars_nouveau:spell_book, ars_nouveau:hood / robe / legs / boot (the Sorceror armour set), ars_nouveau:ring_of_potential, ars_nouveau:spell_turret, ars_nouveau:spell_prism, ars_nouveau:wilden_horn, ars_nouveau:blank_thread, ars_nouveau:summon_focus, ars_nouveau:shapers_focus."
+}

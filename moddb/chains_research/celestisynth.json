@@ -1,0 +1,155 @@
+{
+ "mod": "celestisynth",
+ "verified_against": "celestisynth-1.20.1-1.3.4-all.jar",
+ "item_count_in_jar": 37,
+ "chain": [
+  {
+   "id": "celestisynth:celestial_core",
+   "title": "A Core From Something Rare",
+   "desc": "Eight amethyst shards around any one of a Heart of the Sea, a Nether Star or an End Crystal - the three members of the celestial_core_bases tag."
+  },
+  {
+   "id": "celestisynth:celestial_core_heated",
+   "title": "Held in the Furnace",
+   "desc": "Smelting or blasting the core; the heated form is what the spell book and the ingot line actually consume."
+  },
+  {
+   "id": "celestisynth:supernal_netherite_ingot",
+   "title": "Netherite, Elevated",
+   "desc": "Smithing a Netherite Ingot under a vanilla Netherite Upgrade Template with either a Ghast Tear or a Celestial Core as the addition."
+  },
+  {
+   "id": "celestisynth:celestial_netherite_ingot",
+   "title": "Supernal, Refined",
+   "desc": "Smelting the supernal ingot again; the deeper of the two metals and the one the two hardest weapons demand."
+  },
+  {
+   "id": "celestisynth:starlit_factory",
+   "title": "The Forge Under the Stars",
+   "desc": "A crafting table, smithing table and blast furnace bound with obsidian, an iron block and a celestial netherite ingot; every weapon in the mod is forged here and nowhere else."
+  },
+  {
+   "id": "celestisynth:lunar_stone",
+   "title": "Fallen Where the Moon Struck",
+   "desc": "Mined from the lunar_crater worldgen feature and also injected into underground dungeon chests."
+  },
+  {
+   "id": "celestisynth:lunar_scrap",
+   "title": "Moonstone, Rendered",
+   "desc": "Smelted or blasted from lunar stone; it is the core material of the Crescentia."
+  },
+  {
+   "id": "celestisynth:lunar_stone_helmet",
+   "title": "Helm of Lunar Stone",
+   "desc": "Lunar stone over gold blocks; the mod ships two four-piece armour sets and this is the lighter one."
+  },
+  {
+   "id": "celestisynth:crescentia",
+   "title": "Forged on Moonlight",
+   "desc": "Lunar scrap in both core slots with a supernal ingot, iron and a 500-tick forge cycle."
+  },
+  {
+   "id": "celestisynth:solar_crystal",
+   "title": "Fallen Where the Sun Struck",
+   "desc": "Mined from the solar_crater feature and injected into vanilla Nether structure chests, the sun-side counterpart to lunar stone."
+  },
+  {
+   "id": "celestisynth:solar_crystal_helmet",
+   "title": "Helm of Solar Crystal",
+   "desc": "The heavier of the two sets, built the same way over gold blocks."
+  },
+  {
+   "id": "celestisynth:solaris",
+   "title": "Forged on Sunlight",
+   "desc": "Solar crystal in both core slots with a supernal ingot and a blaze rod beneath."
+  },
+  {
+   "id": "celestisynth:wintereis_shard",
+   "title": "Split From the Spikes",
+   "desc": "Breaking a wintereis block from the wintereis_spikes feature yields these shards."
+  },
+  {
+   "id": "celestisynth:frostbound",
+   "title": "Forged on Ice",
+   "desc": "A wintereis shard core over a diamond hoe and packed ice; the shortest forge cycle in the mod at 400 ticks."
+  },
+  {
+   "id": "celestisynth:zephyr_deposit",
+   "title": "Wind Made Solid",
+   "desc": "A block placed by the zephyr_deposit worldgen feature; it is both the block and the item the forge consumes."
+  },
+  {
+   "id": "celestisynth:breezebreaker",
+   "title": "Forged on Wind",
+   "desc": "Two zephyr deposits and a supernal ingot over iron, at 700 ticks."
+  },
+  {
+   "id": "celestisynth:eyebomination",
+   "title": "An Eye That Should Not Blink",
+   "desc": "An Ender Eye rubbed with blaze powder; the mod's one shapeless craft and the core of the Poltergeist."
+  },
+  {
+   "id": "celestisynth:poltergeist",
+   "title": "Forged on Dread",
+   "desc": "Two eyebominations, a supernal ingot and an iron axe, at 700 ticks."
+  },
+  {
+   "id": "celestisynth:aquaflora",
+   "title": "Forged on Bloom",
+   "desc": "Any flower as the core with a lily pad and a verdant froglight; the only weapon whose core slot takes a tag rather than a specific item."
+  },
+  {
+   "id": "celestisynth:crimson_piece",
+   "title": "Torn From a Traverser",
+   "desc": "The Traverser is the mod's one killable mob - it has a spawn egg and a loot table - and this is what it drops."
+  },
+  {
+   "id": "celestisynth:keres",
+   "title": "Forged on Blood",
+   "desc": "Two crimson pieces with a celestial netherite ingot and netherite beneath, at 800 ticks; the deepest completable weapon in the mod."
+  },
+  {
+   "id": "celestisynth:celestial_spell_book",
+   "title": "Bound With Iron's Spellbooks",
+   "desc": "A heated core, a celestial netherite ingot and paper pressed onto an irons_spellbooks:ruined_book - the mod's one cross-mod recipe, and it needs Iron's Spells n Spellbooks installed."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "celestisynth:solaris",
+   "members": [
+    "celestisynth:crescentia",
+    "celestisynth:frostbound",
+    "celestisynth:breezebreaker",
+    "celestisynth:poltergeist",
+    "celestisynth:aquaflora",
+    "celestisynth:keres"
+   ]
+  },
+  {
+   "hub": "celestisynth:solar_crystal_helmet",
+   "members": [
+    "celestisynth:solar_crystal_chestplate",
+    "celestisynth:solar_crystal_leggings",
+    "celestisynth:solar_crystal_boots",
+    "celestisynth:lunar_stone_chestplate",
+    "celestisynth:lunar_stone_leggings",
+    "celestisynth:lunar_stone_boots",
+    "celestisynth:lunar_stone_helmet"
+   ]
+  },
+  {
+   "hub": "celestisynth:celestial_core",
+   "members": [
+    "celestisynth:celestial_core_heated",
+    "celestisynth:supernal_netherite_ingot",
+    "celestisynth:celestial_netherite_ingot",
+    "celestisynth:lunar_scrap",
+    "celestisynth:wintereis_shard",
+    "celestisynth:crimson_piece",
+    "celestisynth:eyebomination"
+   ]
+  }
+ ],
+ "notes": "Forge, 1.20.1, confirmed from META-INF/mods.toml (modId \"celestisynth\", forge dependency [47,), mandatory geckolib and playeranimator; no fabric.mod.json). The -all classifier is a shaded fat jar, not a multi-loader jar. ID SET. 42 model/item stems intersected with item.celestisynth.<name> gives 31 items; 6 blocks each carry a blockstate and a block.celestisynth.<name> key. Verified set = 37. One lang block key has no blockstate (celestial_crafting_table, the pre-1.3 forge block, kept only so the update-fix recipe can convert it) and it is not quested. NBT-VARIANT CHECK: not applicable - each of the eight weapons is its own registered item id with its own model, lang key and starlit_factory recipe file. OBTAINABILITY - THREE DROPS, ONE OF THEM SIGNIFICANT. celestisynth:starstruck_scrap and celestisynth:starstruck_feather are registered in CSItems.class but have no recipe, no loot table and no worldgen; a scan of every class in the jar finds them referenced only by CSItems, CSCommonSetupEvents and CSRecipeProvider, never by a drop or grant. Because data/celestisynth/recipes/rainfall_serenity.json takes starstruck_scrap as its core material AND its bottom supporting material, celestisynth:rainfall_serenity is uncompletable and was dropped from the chain and from the weapon wheel - the wheel therefore holds seven of the mod's eight weapons, not all eight. Also dropped: celestial_debugger (a developer tool), traverser_spawn_egg (creative only), and star_monolith and star_monolith_blood, which are the Nether monolith structure entity's blocks and have no obtainable form. ENTITY CHECK. Three entities carry lang names (traverser, star_monolith, rainfall_turret) and four have loot tables (traverser, star_monolith, tempest, veilguard). Only traverser is both named and drops something - crimson_piece - so it is the only mob referenced as a kill source. star_monolith's table is empty; tempest and veilguard have empty tables and no lang keys at all; and rainfall_turret is the summon produced by Rainfall Serenity, i.e. exactly the kind of summon body the entity rule forbids using. ORDERING. Read from data/celestisynth/recipes/**: the celestial_core -> heated -> supernal -> celestial ingot spine is forced by smelting and smithing, starlit_factory needs the celestial ingot so it must follow, and each weapon then hangs off its own core material. Weapon order within the eight is set by the forging_time field and by which ingot the recipe demands - the six supernal-ingot weapons at 400-700 ticks precede Keres, which is the only completable weapon requiring the deeper celestial netherite ingot and the longest cycle at 800. Material sources verified from data/celestisynth/worldgen (lunar_crater, solar_crater, wintereis_spikes, zephyr_deposit configured and placed features, all four enabled by matching forge biome modifiers) and from the two chest injections (underground_dungeons -> lunar_stone, vanilla_nether_structures -> solar_crystal). ARMOUR RULE APPLIED: only the two helmets are quested; the remaining six set pieces are in one wheel and no lone chestplate, leggings or boots quest was emitted. CROSS-MOD NOTE for pack assembly: celestial_spell_book hard-requires irons_spellbooks:ruined_book, and irons_spellbooks is an optional dependency in mods.toml - if that mod is absent, drop the final chain step. Three wheels of 6, 7 and 7."
+}

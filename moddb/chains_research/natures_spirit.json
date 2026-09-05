@@ -1,0 +1,235 @@
+{
+ "mod": "natures_spirit",
+ "verified_against": "natures_spirit-2.2.5-1.20.1.jar",
+ "item_count_in_jar": 709,
+ "chain": [
+  {
+   "id": "natures_spirit:sandy_soil",
+   "title": "Dirt, But Drier",
+   "desc": "Dirt and sand, shapeless. It is the farmland of the arid biomes and the only ground a Desert Turnip will take root in."
+  },
+  {
+   "id": "natures_spirit:desert_turnip",
+   "title": "Sandy Forage",
+   "desc": "The mod's own advancement tells you how: follow the roots of a turnip through the sand until they reach the block they came from."
+  },
+  {
+   "id": "natures_spirit:desert_turnip_block",
+   "title": "The Thing at the End of the Roots",
+   "desc": "Nine turnips pressed together, and the block those root trails lead you to in the first place."
+  },
+  {
+   "id": "natures_spirit:kaolin",
+   "title": "You're Kaolin This!",
+   "desc": "Clay and sand, shapeless. It comes in all sixteen dyed colours, and the mod thinks so highly of it that it ships an advancement for killing a zombie while holding a block of it."
+  },
+  {
+   "id": "natures_spirit:kaolin_bricks",
+   "title": "Fired White Clay",
+   "desc": "Kaolin cut into bricks - the start of a full sixteen-colour building set with slabs, stairs and walls in every shade."
+  },
+  {
+   "id": "natures_spirit:chalk_powder",
+   "title": "Sweep, Don't Dig",
+   "desc": "Chalk does not give its powder to a pickaxe. The mod mixes into the vanilla brush so that brushing a chalk block is what yields it."
+  },
+  {
+   "id": "natures_spirit:white_chalk",
+   "title": "Pressed Back Into Stone",
+   "desc": "Chalk Powder reformed into blocks, and like Kaolin it exists in all sixteen dye colours with slabs and stairs to match."
+  },
+  {
+   "id": "natures_spirit:chert",
+   "title": "The Other Stone",
+   "desc": "A sedimentary stone that generates with its own coal, copper, iron, gold, lapis, redstone, emerald and diamond ore variants - a second full ore ladder."
+  },
+  {
+   "id": "natures_spirit:polished_chert",
+   "title": "Smoothed Flint",
+   "desc": "Chert taken through the stonecutter; bricks, tiles, chiselled and cracked forms all branch from here."
+  },
+  {
+   "id": "natures_spirit:travertine",
+   "title": "Stone Laid Down by Water",
+   "desc": "The mod's third stone, found where hot springs deposit it; it takes moss the way cobblestone does."
+  },
+  {
+   "id": "natures_spirit:paper_lantern",
+   "title": "Paper and a Torch",
+   "desc": "Four paper around a torch. Seventeen colours exist, and the mod's own villages hang them everywhere."
+  },
+  {
+   "id": "structure:natures_spirit:village_wisteria",
+   "title": "Village Under the Blossom",
+   "desc": "A seven-piece village keyed to natures_spirit:wisteria_forest alone; the wisteria biome is the only place it will generate."
+  },
+  {
+   "id": "natures_spirit:wisteria_log",
+   "title": "Wood That Was Never Vanilla",
+   "desc": "One of seventeen new logs in the mod, each with its own planks, boat, mosaic and full building set."
+  },
+  {
+   "id": "natures_spirit:purple_wisteria_vines",
+   "title": "Hanging Colour",
+   "desc": "Wisteria drips in purple, pink, blue and white; all four count toward the mod's Flower Power advancement."
+  },
+  {
+   "id": "structure:natures_spirit:village_coconut",
+   "title": "Village on the Tropical Shore",
+   "desc": "Pinned to the single biome natures_spirit:tropical_shores at start height 1; its chests are the one place a Coconut appears outside a tree."
+  },
+  {
+   "id": "natures_spirit:coconut",
+   "title": "Tropical Blast!",
+   "desc": "Coconuts hang out of reach on the palms. The mod ships a coconut_hit trigger, so the intended answer is to shoot one down."
+  },
+  {
+   "id": "natures_spirit:coconut_half",
+   "title": "Split It Open",
+   "desc": "One coconut, shapeless, becomes two halves - the edible part."
+  },
+  {
+   "id": "natures_spirit:coconut_shell",
+   "title": "What's Left Over",
+   "desc": "The husk you keep after eating a half; it crafts straight into a bowl, which is the only recipe in the jar that consumes it."
+  },
+  {
+   "id": "structure:natures_spirit:village_cypress",
+   "title": "Village in the Swamp Cypress",
+   "desc": "A six-piece village on the #natures_spirit:is_cypress biome tag, built out of the mod's own cypress wood."
+  },
+  {
+   "id": "structure:natures_spirit:village_adobe",
+   "title": "Village of Baked Earth",
+   "desc": "The largest of the four at size 7, on the #natures_spirit:is_adobe tag; the desert village, built out of kaolin and chalk."
+  },
+  {
+   "id": "natures_spirit:olive_branch",
+   "title": "Shears, Not an Axe",
+   "desc": "The only tool the olive branch block will drop for is a pair of shears - its loot table has exactly one pool and one condition."
+  },
+  {
+   "id": "natures_spirit:olives",
+   "title": "Off the Branch by Hand",
+   "desc": "Olives have no recipe and no loot table; the OliveBranchBlock hands them over when you pick a ripe branch, and they are one of the mod's pizza toppings."
+  },
+  {
+   "id": "natures_spirit:cheese_bucket",
+   "title": "A Bucket of Cheese",
+   "desc": "Filled from the mod's own cheese cauldron rather than crafted; it is the base of both the pizza and the strangest arrow in the mod."
+  },
+  {
+   "id": "natures_spirit:whole_pizza",
+   "title": "Wheat, Beetroot and Cheese",
+   "desc": "Placed down it becomes a block you eat a slice at a time - whole, three quarters, half, quarter."
+  },
+  {
+   "id": "natures_spirit:cheese_arrow",
+   "title": "Fired in Anger",
+   "desc": "An arrow and a Cheese Bucket. There is no explanation for this item anywhere in the jar and none is needed."
+  },
+  {
+   "id": "natures_spirit:calcite_shard",
+   "title": "Broken Off a Bud",
+   "desc": "Calcite grows in clusters like amethyst here, through small and large buds, and shatters into shards."
+  },
+  {
+   "id": "natures_spirit:lotus_flower",
+   "title": "Flower Power",
+   "desc": "The last of the twenty-seven flowers the mod's collect-them-all advancement names, and the only one that floats."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "natures_spirit:paper_lantern",
+   "members": [
+    "natures_spirit:white_paper_lantern",
+    "natures_spirit:light_gray_paper_lantern",
+    "natures_spirit:gray_paper_lantern",
+    "natures_spirit:black_paper_lantern",
+    "natures_spirit:brown_paper_lantern",
+    "natures_spirit:red_paper_lantern",
+    "natures_spirit:orange_paper_lantern",
+    "natures_spirit:yellow_paper_lantern",
+    "natures_spirit:lime_paper_lantern",
+    "natures_spirit:green_paper_lantern",
+    "natures_spirit:cyan_paper_lantern",
+    "natures_spirit:blue_paper_lantern",
+    "natures_spirit:purple_paper_lantern"
+   ]
+  },
+  {
+   "hub": "natures_spirit:wisteria_log",
+   "members": [
+    "natures_spirit:coconut_log",
+    "natures_spirit:cypress_log",
+    "natures_spirit:redwood_log",
+    "natures_spirit:mahogany_log",
+    "natures_spirit:willow_log",
+    "natures_spirit:sugi_log",
+    "natures_spirit:maple_log",
+    "natures_spirit:olive_log",
+    "natures_spirit:joshua_log",
+    "natures_spirit:ghaf_log",
+    "natures_spirit:saxaul_log",
+    "natures_spirit:palo_verde_log",
+    "natures_spirit:aspen_log"
+   ]
+  },
+  {
+   "hub": "natures_spirit:lotus_flower",
+   "members": [
+    "natures_spirit:marigold",
+    "natures_spirit:lavender",
+    "natures_spirit:bluebell",
+    "natures_spirit:hibiscus",
+    "natures_spirit:protea",
+    "natures_spirit:snapdragon",
+    "natures_spirit:tiger_lily",
+    "natures_spirit:anemone",
+    "natures_spirit:carnation",
+    "natures_spirit:foxglove",
+    "natures_spirit:gardenia",
+    "natures_spirit:bleeding_heart",
+    "natures_spirit:black_iris"
+   ]
+  },
+  {
+   "hub": "natures_spirit:kaolin_bricks",
+   "members": [
+    "natures_spirit:white_kaolin",
+    "natures_spirit:black_kaolin",
+    "natures_spirit:blue_kaolin",
+    "natures_spirit:brown_kaolin",
+    "natures_spirit:cyan_kaolin",
+    "natures_spirit:gray_kaolin",
+    "natures_spirit:green_kaolin",
+    "natures_spirit:light_blue_kaolin",
+    "natures_spirit:light_gray_kaolin",
+    "natures_spirit:lime_kaolin",
+    "natures_spirit:magenta_kaolin",
+    "natures_spirit:orange_kaolin",
+    "natures_spirit:pink_kaolin"
+   ]
+  },
+  {
+   "hub": "natures_spirit:chert_bricks",
+   "members": [
+    "natures_spirit:polished_chert",
+    "natures_spirit:chert_tiles",
+    "natures_spirit:chiseled_chert",
+    "natures_spirit:cracked_chert_bricks",
+    "natures_spirit:cracked_chert_tiles",
+    "natures_spirit:chert_coal_ore",
+    "natures_spirit:chert_copper_ore",
+    "natures_spirit:chert_iron_ore",
+    "natures_spirit:chert_gold_ore",
+    "natures_spirit:chert_lapis_ore",
+    "natures_spirit:chert_redstone_ore",
+    "natures_spirit:chert_emerald_ore",
+    "natures_spirit:chert_diamond_ore"
+   ]
+  }
+ ],
+ "notes": "Item set = 712 stems of assets/natures_spirit/models/item/*.json intersected with item.natures_spirit.* / block.natures_spirit.* lang keys = 709; only three models have no lang key. Note the shape of this mod: 47 item.* keys against 692 block.* keys - almost everything here is a placeable block, and the 47 real items are boats, chest boats and a handful of foods. THIS MOD HAS NO ENTITIES AT ALL. There are zero entity.natures_spirit.* lang keys in assets/natures_spirit/lang/en_us.json, so there is not one kill: step in this file and there could not be. It also has no dimension: data/natures_spirit/dimension/ does not exist. Structures verified from the four files in data/natures_spirit/worldgen/structure/, all of them villages and all of them biome-locked to the mod's own biomes: village_wisteria (natures_spirit:wisteria_forest, size 7), village_coconut (natures_spirit:tropical_shores, size 6, start_height 1), village_cypress (#natures_spirit:is_cypress, size 6), village_adobe (#natures_spirit:is_adobe, size 7). Every one has its own loot_tables/chests/village/*.json. FOUR NON-RECIPE ADVANCEMENTS EXIST and all four are used as chain beats: adventure/sandy_forage ('Follow the Roots of a Turnip to a Turnip block', triggers on natures_spirit:desert_turnip), adventure/kaolin_kill ('Kill a Zombie with a Kaolin block' - a player_killed_entity trigger requiring natures_spirit:kaolin in mainhand), adventure/shoot_coconut ('Hit a Coconut with a projectile', the mod's own natures_spirit:coconut_hit trigger), and adventure/collect_all_flowers ('Collect all flowers'), which names exactly 27 flower ids and is the source of wheel 3. The other 499 advancements are recipe unlocks. FOUR ITEMS WITH NO RECIPE AND NO LOOT TABLE WERE CHASED DOWN RATHER THAN ASSUMED, because all four are reachable and three of them are chain steps: natures_spirit:chalk_powder appears only in the white_chalk recipe as an ingredient, and its source is net/hibiscus/naturespirit/mixin/BrushItemMixin.class - the mod hooks the vanilla brush so that BRUSHING chalk yields the powder, which is why no loot table lists it; natures_spirit:olives appears only in data/natures_spirit/tags/items/pizza_toppings.json, and its source is OliveBranchBlock.class (picking a ripe olive branch); natures_spirit:cheese_bucket appears only as an ingredient of cheese_arrow and pizza, and its sources are CheeseBlock.class and NSCauldronBehavior.class - a cauldron behaviour, i.e. you fill a bucket from cheese; natures_spirit:coconut_shell appears only in the bowl_from_coconut_shell recipe and the coconut_items tag, and is registered in NSBlocks/NatureSpirit with no other reference - it is the container left after eating a Coconut Half, which is the weakest of the four proofs and is stated as such in its chain entry. Ordering is the recipe graph, since there is no progression tree to read: sandy_soil (dirt+sand) precedes desert_turnip because it is the only soil the turnip grows in; kaolin (clay+sand) precedes kaolin_bricks; chalk_powder precedes white_chalk because it is its only ingredient; chert precedes polished_chert precedes the bricks and tiles through data/natures_spirit/recipes/*_from_*_stonecutting.json; coconut precedes coconut_half precedes coconut_shell; cheese_bucket precedes both whole_pizza and cheese_arrow. CONSENSUS CONFLICT (moddb): moddb lists five ids at 3 packs each and ALL FIVE ARE PAPER LANTERNS - brown_paper_lantern (0.0), paper_lantern (0.25), light_gray_paper_lantern (0.5), gray_paper_lantern (0.75), white_paper_lantern (1.0). They are real ids and they are all in wheel 1, but treating a colour set as a five-step progression is exactly the failure mode wheels exist to prevent, so the graph was preferred: one paper_lantern step sits on the spine at the point its paper-and-torch recipe becomes available, and the other sixteen colours are the wheel. DESIRABILITY: the mod is overwhelmingly *_slab / *_stairs / *_wall / stripped_* / *_mosaic / *_sign / *_button / *_pressure_plate / *_fence variants across seventeen wood types, sixteen kaolin colours, sixteen chalk colours and four stones; none of those is a chain step. Wheel 5 does include the eight natures_spirit:chert_*_ore ids, which the desirability rule would normally cut - they are kept together in that one wheel because a whole parallel ore ladder in a second stone type is the single most interesting thing about Chert, and no chert ore is used as a chain step. Requires terrablender; the create and cobblemon data directories in the jar are optional compat tags only."
+}

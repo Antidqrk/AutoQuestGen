@@ -1,0 +1,156 @@
+{
+ "mod": "bakery",
+ "verified_against": "letsdo-bakery-forge-1.1.15.jar",
+ "item_count_in_jar": 97,
+ "chain": [
+  {
+   "id": "bakery:wild_strawberries",
+   "title": "Berry First Steps",
+   "desc": "Wild Strawberries spawn in grassy biomes and are the only starting source of the strawberry line."
+  },
+  {
+   "id": "bakery:strawberry",
+   "title": "Pick of the Patch",
+   "desc": "Strawberries harvested from the crop feed jams, cakes and the Linzer Tart."
+  },
+  {
+   "id": "bakery:oat",
+   "title": "Sowing Your Wild Oats",
+   "desc": "Oat grows from oat seeds made with wheat seeds and bone meal, and bales up for storage."
+  },
+  {
+   "id": "bakery:yeast",
+   "title": "The Rise Guy",
+   "desc": "Brown mushroom, sugar and water make Yeast, the leavening in every proper loaf."
+  },
+  {
+   "id": "bakery:crafting_bowl",
+   "title": "Bowled Over",
+   "desc": "The Crafting Bowl is the mixing station where all three doughs come together."
+  },
+  {
+   "id": "bakery:small_cooking_pot",
+   "title": "A Small Pot With Big Plans",
+   "desc": "The Small Cooking Pot simmers jams, truffles and pudding."
+  },
+  {
+   "id": "bakery:brick_stove",
+   "title": "Fired Up",
+   "desc": "A Brick Oven built from bricks, a campfire, logs and iron is the bakery's baking heat."
+  },
+  {
+   "id": "bakery:dough",
+   "title": "Knead for Speed",
+   "desc": "Wheat, yeast, sugar and water beaten in the crafting bowl produce plain Dough."
+  },
+  {
+   "id": "bakery:bread",
+   "title": "Bread Winner",
+   "desc": "Dough baked in a stove with sugar and water yields Bakers Bread, three loaves at a time."
+  },
+  {
+   "id": "bakery:jar",
+   "title": "Jarring Discovery",
+   "desc": "Glass panes and wooden slabs make the Jar every preserve is sealed in."
+  },
+  {
+   "id": "bakery:strawberry_jam",
+   "title": "Jam Session",
+   "desc": "Strawberries, sugar and a jar cook down in the pot into Strawberry Jam."
+  },
+  {
+   "id": "bakery:sweet_dough",
+   "title": "Sweet Talk",
+   "desc": "Wheat, egg, sugar and water make Sweet Dough, the pastry-grade base."
+  },
+  {
+   "id": "bakery:croissant",
+   "title": "Crescent Roll Call",
+   "desc": "Sweet dough, yeast and sugar bake into flaky Croissants."
+  },
+  {
+   "id": "bakery:bread_knife",
+   "title": "Cut of the Crop",
+   "desc": "The Bread Knife slices placed cakes and loaves into servings."
+  },
+  {
+   "id": "bakery:baker_station",
+   "title": "Caking Under Pressure",
+   "desc": "The Caking Station is where cake dough and a filling become a finished cake."
+  },
+  {
+   "id": "bakery:cake_dough",
+   "title": "Batter Up",
+   "desc": "Wheat, egg, milk and sugar whisk into Cake Dough at the crafting bowl."
+  },
+  {
+   "id": "bakery:chocolate_truffle",
+   "title": "Truffle Shuffle",
+   "desc": "Cocoa beans, milk and wheat cook in the pot into Chocolate Truffles."
+  },
+  {
+   "id": "bakery:strawberry_cake",
+   "title": "Have Your Cake",
+   "desc": "Cake dough and strawberry jam combine at the Caking Station into a full Strawberry Cake."
+  },
+  {
+   "id": "bakery:chocolate_tart",
+   "title": "Tart of Darkness",
+   "desc": "Sweet dough, chocolate and yeast bake in the stove into a Chocolate Tart."
+  },
+  {
+   "id": "bakery:chocolate_gateau",
+   "title": "Gateau Crashers",
+   "desc": "Cake dough and a chocolate truffle at the Caking Station make the Chocolate Gateau, the bakery's finest showpiece."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "bakery:brick_stove",
+   "members": [
+    "bakery:bread",
+    "bakery:baguette",
+    "bakery:bun",
+    "bakery:braided_bread",
+    "bakery:crusty_bread",
+    "bakery:toast",
+    "bakery:croissant",
+    "bakery:waffle",
+    "bakery:apple_pie",
+    "bakery:chocolate_tart",
+    "bakery:glowberry_tart",
+    "bakery:linzer_tart",
+    "bakery:bundt_cake",
+    "bakery:cornet"
+   ]
+  },
+  {
+   "hub": "bakery:baker_station",
+   "members": [
+    "bakery:strawberry_cake",
+    "bakery:sweetberry_cake",
+    "bakery:chocolate_cake",
+    "bakery:chocolate_gateau",
+    "bakery:apple_cupcake",
+    "bakery:strawberry_cupcake",
+    "bakery:sweetberry_cupcake",
+    "bakery:chocolate_glazed_cookie",
+    "bakery:strawberry_glazed_cookie",
+    "bakery:sweetberry_glazed_cookie"
+   ]
+  },
+  {
+   "hub": "bakery:small_cooking_pot",
+   "members": [
+    "bakery:apple_jam",
+    "bakery:strawberry_jam",
+    "bakery:sweetberry_jam",
+    "bakery:glowberry_jam",
+    "bakery:chocolate_jam",
+    "bakery:chocolate_truffle",
+    "bakery:pudding"
+   ]
+  }
+ ],
+ "notes": "Three-station spine read from data/bakery/recipes: crafting_bowl makes the doughs, pot_cooking makes jams and truffles, stove bakes breads and tarts, baking_station makes cakes and cookies. Note the jar registers several bakery items under a lang key with a _block suffix (bakery:bread is block.bakery.bread_block, likewise baguette, bun, braided_bread, crusty_bread, toast, waffle); these were kept because the jar's own stove recipes output those exact item ids. Every stove other than brick_stove is a cosmetic variant of the same station. Dropped as unverifiable: cake_tower, faucet, milk_bread, pancake, shelf (item models with no lang key and no recipe output in this jar)."
+}

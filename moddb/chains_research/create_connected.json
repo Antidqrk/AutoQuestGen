@@ -1,0 +1,141 @@
+{
+ "mod": "create_connected",
+ "verified_against": "create_connected-1.2.3-mc1.20.1-all.jar",
+ "item_count_in_jar": 84,
+ "chain": [
+  {
+   "id": "create_connected:crank_wheel",
+   "title": "Turning by Hand, Faster",
+   "desc": "A hand crank and a cogwheel. Same idea as Create's crank but geared, so a few turns move considerably more than the vanilla version does."
+  },
+  {
+   "id": "create_connected:large_crank_wheel",
+   "title": "Leaning Into It",
+   "desc": "A hand crank and a large cogwheel. Slower per turn but far more torque, which is what a stubborn piston contraption actually needs."
+  },
+  {
+   "id": "create_connected:brass_gearbox",
+   "title": "Routing on Demand",
+   "desc": "Four cogwheels around a rotation speed controller. Unlike the plain gearbox it can be told which faces to drive, so one shaft feeds many machines."
+  },
+  {
+   "id": "create_connected:item_silo",
+   "title": "Barrels That Talk",
+   "desc": "A wooden barrel between two iron sheets. Stack silos vertically and they merge into a single tall inventory, no multiblock controller required."
+  },
+  {
+   "id": "create_connected:copycat_block",
+   "title": "Wearing Any Texture",
+   "desc": "One zinc ingot on a stonecutter. Right-click it with any block and it adopts that block's look while staying a plain full cube underneath."
+  },
+  {
+   "id": "create_connected:kinetic_battery",
+   "title": "Storing a Spin",
+   "desc": "A precision mechanism, brass casing, iron sheets and redstone give eight. Empty as crafted, it exists to be wound up and carried elsewhere."
+  },
+  {
+   "id": "create_connected:charged_kinetic_battery",
+   "title": "Wound Tight",
+   "desc": "The same battery after a shaft has spun energy into it. Carry it to a remote build and it releases stored rotation with no drivetrain at all."
+  },
+  {
+   "id": "create_connected:empty_fan_catalyst",
+   "title": "A Cage for Processing",
+   "desc": "Brass ingots and iron bars in a hollow frame. On its own it does nothing; filled or applied with the right thing it replaces a whole fan setup."
+  },
+  {
+   "id": "create_connected:fan_splashing_catalyst",
+   "title": "Washing Without a Stream",
+   "desc": "An empty catalyst filled with a bucket of water at a spout. Put it behind an encased fan and the airflow washes without any flowing source block."
+  },
+  {
+   "id": "create_connected:fan_smoking_catalyst",
+   "title": "Smoke in a Box",
+   "desc": "Netherrack applied to an empty catalyst by a deployer. Gives a fan the smoking effect with no fire block to spread or extinguish."
+  },
+  {
+   "id": "create_connected:fan_blasting_catalyst",
+   "title": "Bottled Furnace",
+   "desc": "An empty catalyst filled with a bucket of lava. Blasting airflow without a lava pool underfoot, which makes compact smelting arrays practical."
+  },
+  {
+   "id": "create_connected:fan_haunting_catalyst",
+   "title": "The Cold Draught",
+   "desc": "Soul sand applied to an empty catalyst. Haunting on demand, and far tidier than maintaining a bed of soul fire beside a working fan."
+  },
+  {
+   "id": "create_connected:redstone_link_wildcard",
+   "title": "Listening to Everything",
+   "desc": "A transmitter and a crafter slot cover. Placed in a link's frequency slot it matches any item, turning one receiver into a broadcast catcher."
+  },
+  {
+   "id": "create_connected:linked_transmitter",
+   "title": "Send Only",
+   "desc": "A plain redstone link reworked into a transmit-only unit. Cheaper logic when a channel is one-way and you never want it answering back."
+  },
+  {
+   "id": "create_connected:control_chip",
+   "title": "Three Passes Over Gold",
+   "desc": "A golden sheet through three loops of sequenced assembly. The mod's own precision component, and the gate on its cleverest redstone block."
+  },
+  {
+   "id": "create_connected:sequenced_pulse_generator",
+   "title": "Timing Written Down",
+   "desc": "A control chip, electron tubes, a brass sheet, a redstone torch and stone. Emits a programmed series of pulses instead of one flat signal."
+  },
+  {
+   "id": "create_connected:dashboard",
+   "title": "One Screen for All of It",
+   "desc": "A display board on a brass casing. Reads several sources at once and lays them out as a panel, rather than one line per board."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "create_connected:brass_gearbox",
+   "members": [
+    "create_connected:parallel_gearbox",
+    "create_connected:six_way_gearbox",
+    "create_connected:vertical_brass_gearbox",
+    "create_connected:vertical_parallel_gearbox",
+    "create_connected:vertical_six_way_gearbox",
+    "create_connected:centrifugal_clutch",
+    "create_connected:freewheel_clutch",
+    "create_connected:inverted_clutch",
+    "create_connected:overstress_clutch",
+    "create_connected:inverted_gearshift",
+    "create_connected:brake",
+    "create_connected:shear_pin"
+   ]
+  },
+  {
+   "hub": "create_connected:copycat_block",
+   "members": [
+    "create_connected:copycat_beam",
+    "create_connected:copycat_board",
+    "create_connected:copycat_box",
+    "create_connected:copycat_catwalk",
+    "create_connected:copycat_fence",
+    "create_connected:copycat_fence_gate",
+    "create_connected:copycat_slab",
+    "create_connected:copycat_stairs",
+    "create_connected:copycat_vertical_step",
+    "create_connected:copycat_wall"
+   ]
+  },
+  {
+   "hub": "create_connected:item_silo",
+   "members": [
+    "create_connected:fluid_vessel",
+    "create_connected:brass_chute",
+    "create_connected:inventory_access_port",
+    "create_connected:inventory_bridge",
+    "create_connected:kinetic_bridge",
+    "create_connected:cross_connector",
+    "create_connected:encased_chain_cogwheel",
+    "create_connected:andesite_encased_cross_connector",
+    "create_connected:brass_encased_cross_connector"
+   ]
+  }
+ ],
+ "notes": "Create Connected is a quality-of-life extension to Create and re-teaches nothing. Base-Create dependencies derived from the recipes: create:hand_crank, create:cogwheel, create:large_cogwheel, create:shaft, create:gearbox, create:clutch, create:rotation_speed_controller, create:andesite_casing, create:brass_casing, create:iron_sheet, create:brass_sheet, create:copper_sheet, create:golden_sheet, create:brass_ingot, create:chute, create:electron_tube, create:precision_mechanism, create:speedometer, create:display_board, create:redstone_link, create:transmitter, create:crafter_slot_cover, create:encased_chain_drive, create:hand_crank, plus a spout, a deployer and a sequenced-assembly line. RECIPE FORMAT WARNING for anyone re-deriving this: 99 of the 187 recipe files are forge:conditional wrappers, so a naive scraper reading the top-level type sees only forge:conditional/item_application/filling and finds no crafting recipes at all. Unwrapped, the real distribution is 72 crafting_shapeless, 49 item_application, 37 filling, 18 crafting_shaped, 9 stonecutting, 1 cutting and 1 sequenced_assembly. GATING ANALYSIS: 207 conditions are create_connected:feature_enabled, the mod own per-feature config toggles, which are on by default and were treated as available. 76 conditions are forge:mod_loaded on THIRD-PARTY mods, and those were treated as unavailable. That distinction removes 29 ids from consideration: all 16 *_fan_dyeing_catalyst ids plus fan_chocolate_coating_catalyst, fan_honey_coating_catalyst, fan_enriched_catalyst, fan_exploding_catalyst, fan_freezing_catalyst, fan_purifying_catalyst, fan_resonance_catalyst, fan_sanding_catalyst, fan_sculking_catalyst, fan_seething_catalyst, fan_withering_catalyst, fan_ending_catalyst_dragon_head and fan_ending_catalyst_dragons_breath - every one of them is reachable ONLY through a recipe gated on create_dragons_plus, create_henry or garnished being installed. Only four fan catalysts have a path that needs nothing but Create Connected itself (splashing from water, blasting from lava, smoking from netherrack, haunting from soul sand) and those four are the ones on the spine. DROPPED - valid ids with no recipe in any form: create_connected:fan_glooming_catalyst, :fan_soul_stripping_catalyst, :fan_transmutation_catalyst (registered but nothing produces them in this build), :incomplete_control_chip (a sequenced-assembly transitional item), :creative_fluid_vessel (creative-only), and :music_disc_elevator and :music_disc_interlude (no recipe; discs, so presumably loot or creative). ORDERING CONFLICT vs moddb consensus (26 entries, ALL 26 id-verified): consensus opens the book with create_connected:music_disc_elevator at pos 0.000 and places :music_disc_interlude at 0.275, but neither disc has any recipe, any loot table entry in this jar, or any other derivable obtainment route - questing them as craft-or-acquire tasks would soft-lock a book. Both were dropped. Second conflict: consensus scatters create_connected:copycat_stairs 0.250, :copycat_slab 0.350 and :copycat_wall 0.450 across the book as separate beats, and likewise spreads :brake 0.184, :inverted_gearshift 0.305, :inverted_clutch 0.437, :shear_pin 0.440 and :centrifugal_clutch 0.452. On the recipe graph the copycats are one stonecutting family off a zinc ingot and the clutches are one shapeless family off andesite casing plus shaft plus iron sheet, differing by a single fourth ingredient. Both were collapsed into wheels. Consensus positions retained: control_chip 0.100, linked_transmitter 0.111, copycat_block 0.175, empty_fan_catalyst 0.198, large_crank_wheel 0.263, kinetic_battery 0.327, item_silo 0.355, sequenced_pulse_generator 0.369, crank_wheel 0.476 - all consistent with the recipe graph. NOTE on two chain steps that are correct but not JSON-derived: create_connected:charged_kinetic_battery has no recipe file because it is the in-world charged state of the crafted kinetic_battery, reached by spinning a shaft into it; and the two encased cross connectors in wheel 3 (andesite_encased_cross_connector, brass_encased_cross_connector) have no recipe file because they use Create in-world encasing, right-clicking a casing onto a placed cross_connector. Both routes are survival-legal, unlike the discs above. The copycat wheel deliberately includes _slab/_stairs/_wall/_fence ids that the desirability data says are effectively never quested. For copycats the shape IS the content - a copycat wall is a distinct tool, not a decorative offcut - and they sit in a wheel rather than on the spine, which is the shape the data actually penalises."
+}

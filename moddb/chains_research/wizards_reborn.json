@@ -1,0 +1,240 @@
+{
+  "mod": "wizards_reborn",
+  "verified_against": "wizards_reborn-1.20.1-0.2.9.jar",
+  "item_count_in_jar": 579,
+  "chain": [
+    {
+      "id": "wizards_reborn:arcanum",
+      "title": "Mine Arcanum",
+      "desc": "Blue crystal shards dug out of Arcanum Ore in normal caves. Everything in this mod runs on the magical energy stored inside it, so keep mining whenever you pass a vein."
+    },
+    {
+      "id": "wizards_reborn:arcanemicon",
+      "title": "Bind the Arcanemicon",
+      "desc": "A book and one arcanum make the mod's own guide. It tracks your progression and unlocks new chapters as you build things, so keep it on you."
+    },
+    {
+      "id": "wizards_reborn:arcanum_dust",
+      "title": "Crush Arcanum to Dust",
+      "desc": "Dust is the transmutation reagent: thrown at a block it rewrites what the block is. You will burn through a lot of it, so plan on a steady arcanum supply."
+    },
+    {
+      "id": "wizards_reborn:arcane_wood_sapling",
+      "title": "Transmute a Sapling",
+      "desc": "Transmute an ordinary sapling with arcanum dust and plant it. Arcane wood is the structural material for almost every early machine in the mod, so grow a small farm rather than one tree."
+    },
+    {
+      "id": "wizards_reborn:arcane_gold_ingot",
+      "title": "Transmute Gold Ore",
+      "desc": "Arcane Gold Ore does not generate anywhere. Throw arcanum dust at a vanilla gold ore block to convert it, then smelt what you mine. Arcane gold conducts and stores wissen, which is why every machine wants it."
+    },
+    {
+      "id": "wizards_reborn:wissen_altar",
+      "title": "Raise the Wissen Altar",
+      "desc": "Burns arcanum and arcanum dust to release wissen, the power every mechanism here runs on. Build it on an Arcane Pedestal; it is also the block you charge wands and trinkets at."
+    },
+    {
+      "id": "wizards_reborn:wissen_wand",
+      "title": "Craft the Wissen Wand",
+      "desc": "The configuration tool, not a weapon. Its five modes activate mechanisms, wire translators together, and reset anything you misconfigured. You need exactly one."
+    },
+    {
+      "id": "wizards_reborn:wissen_translator",
+      "title": "Wire a Wissen Translator",
+      "desc": "Sends and receives wissen between machines, so your altar can power blocks that are not touching it. Link it with the wissen wand's connect modes."
+    },
+    {
+      "id": "wizards_reborn:wissen_crystallizer",
+      "title": "Build the Wissen Crystallizer",
+      "desc": "Solidifies wissen into items. It is the only way to make crystal seeds, arcane linen seeds and arcane lumos, so it is the gate to the whole crystal branch."
+    },
+    {
+      "id": "wizards_reborn:arcane_workbench",
+      "title": "Build the Arcane Workbench",
+      "desc": "A crafting table with an extra row that spends wissen per craft. Most of the mod's real blocks and gear are only craftable here."
+    },
+    {
+      "id": "wizards_reborn:earth_crystal_seed",
+      "title": "Crystallize a Crystal Seed",
+      "desc": "Crystallize arcanum with an elemental ingredient to get a seed. Plant it, transmute it with dust to start it growing, and it becomes a harvestable crystal. There is one seed per element."
+    },
+    {
+      "id": "wizards_reborn:earth_crystal",
+      "title": "Harvest a Grown Crystal",
+      "desc": "Break a mature crystal to collect it. Each one rolls its own Focus, Balance, Absorption and Resonance stats, so grow plenty and keep the good ones for wands and rituals."
+    },
+    {
+      "id": "wizards_reborn:arcane_wand",
+      "title": "Craft the Arcane Wand",
+      "desc": "The wizard's actual weapon, built at the arcane workbench from a branch and arcane gold. Slot a grown crystal into it as a lens and it casts that element's spells; the crystal's Focus, Balance and Absorption decide damage, cost and cooldown."
+    },
+    {
+      "id": "wizards_reborn:wisestone",
+      "title": "Make Wisestone",
+      "desc": "Artificial dark stone pressed at the arcane workbench. Polished wisestone is the body of every alchemy machine and pipe, so make it in bulk from the start."
+    },
+    {
+      "id": "wizards_reborn:arcane_linen",
+      "title": "Farm Arcane Linen",
+      "desc": "Crystallize arcane linen seeds and grow the crop. Linen is the alchemy catalyst: pressed with petals it becomes alchemy oil, which nearly every alchemy recipe consumes."
+    },
+    {
+      "id": "wizards_reborn:arcane_wood_mortar",
+      "title": "Carve a Mortar",
+      "desc": "Hold it in one hand and flowers or mushrooms in the other to grind them. Petals and ground mushrooms from here feed the alchemy machine and the calx recipes."
+    },
+    {
+      "id": "wizards_reborn:alchemy_furnace",
+      "title": "Fire the Alchemy Furnace",
+      "desc": "Boils water into steam and pipes it out. Steam is the second power type in this mod and the alchemy machine will not run a single recipe without it."
+    },
+    {
+      "id": "wizards_reborn:alchemy_machine",
+      "title": "Assemble the Alchemy Machine",
+      "desc": "The core of the alchemy branch. Fed steam, wissen and fluids it transmutes items and brews fluids. Put an Alchemy Boiler on top of it or it will not operate."
+    },
+    {
+      "id": "wizards_reborn:alchemy_calx",
+      "title": "Cook Alchemy Calx",
+      "desc": "The base reagent of alchemy, produced from quartz, calcite and linen in alchemy oil. Refine it into natural, scorched, distant and enchanted calx, all of which later recipes ask for by name."
+    },
+    {
+      "id": "wizards_reborn:arcacite",
+      "title": "Synthesize Arcacite",
+      "desc": "Arcanum restructured with quartz and scorched calx. It is tougher than arcanum but no longer refracts wissen, so it is used for durable gear, plates and the iterator rather than for spellcasting."
+    },
+    {
+      "id": "wizards_reborn:arcane_iterator",
+      "title": "Construct the Arcane Iterator",
+      "desc": "Hang it two blocks above an arcane pedestal and it consumes items from surrounding pedestals plus your wissen, experience and sometimes health. It is the only source of arcane enchantments, arcanum lenses and ritual plates."
+    },
+    {
+      "id": "wizards_reborn:runic_pedestal",
+      "title": "Build the Runic Pedestal",
+      "desc": "Put a crystal on it and aim a Light Emitter's ray at it through arcanum lenses to run a crystal ritual. Which ritual it runs is set by the Runic Wisestone Plate you engrave on the iterator, one plate per ritual."
+    },
+    {
+      "id": "wizards_reborn:jeweler_table",
+      "title": "Set Up the Jeweler Table",
+      "desc": "Polishes a grown crystal into a faceted crystal, which is strictly better in a wand. Needs arcacite polishing mixture from the alchemy machine as the abrasive."
+    },
+    {
+      "id": "wizards_reborn:innocent_wood_sapling",
+      "title": "Infuse an Innocent Sapling",
+      "desc": "A cherry sapling run through the Crystal Infusion ritual. Innocent wood is the late-game material: its tools release helper sparks and its planks gate the last few recipes."
+    }
+  ],
+  "collections": [
+    {
+      "name": "Elemental crystal seeds",
+      "note": "One per element, all made in the wissen crystallizer, all grow the same way.",
+      "ids": [
+        "wizards_reborn:earth_crystal_seed",
+        "wizards_reborn:water_crystal_seed",
+        "wizards_reborn:air_crystal_seed",
+        "wizards_reborn:fire_crystal_seed",
+        "wizards_reborn:void_crystal_seed"
+      ]
+    },
+    {
+      "name": "Grown crystals",
+      "ids": [
+        "wizards_reborn:earth_crystal",
+        "wizards_reborn:water_crystal",
+        "wizards_reborn:air_crystal",
+        "wizards_reborn:fire_crystal",
+        "wizards_reborn:void_crystal"
+      ]
+    },
+    {
+      "name": "Faceted crystals (jeweler table)",
+      "ids": [
+        "wizards_reborn:faceted_earth_crystal",
+        "wizards_reborn:faceted_water_crystal",
+        "wizards_reborn:faceted_air_crystal",
+        "wizards_reborn:faceted_fire_crystal",
+        "wizards_reborn:faceted_void_crystal"
+      ]
+    },
+    {
+      "name": "Alchemy calx variants",
+      "ids": [
+        "wizards_reborn:alchemy_calx",
+        "wizards_reborn:natural_calx",
+        "wizards_reborn:scorched_calx",
+        "wizards_reborn:distant_calx",
+        "wizards_reborn:enchanted_calx"
+      ]
+    },
+    {
+      "name": "Arcane Fortress armour set",
+      "ids": [
+        "wizards_reborn:arcane_fortress_helmet",
+        "wizards_reborn:arcane_fortress_chestplate",
+        "wizards_reborn:arcane_fortress_leggings",
+        "wizards_reborn:arcane_fortress_boots",
+        "wizards_reborn:arcane_fortress_belt"
+      ]
+    },
+    {
+      "name": "Inventor Wizard armour set",
+      "ids": [
+        "wizards_reborn:inventor_wizard_hat",
+        "wizards_reborn:inventor_wizard_costume",
+        "wizards_reborn:inventor_wizard_trousers",
+        "wizards_reborn:inventor_wizard_boots",
+        "wizards_reborn:inventor_wizard_belt"
+      ]
+    },
+    {
+      "name": "Wissen trinkets (Curios)",
+      "ids": [
+        "wizards_reborn:arcanum_amulet",
+        "wizards_reborn:arcanum_ring",
+        "wizards_reborn:arcacite_amulet",
+        "wizards_reborn:arcacite_ring",
+        "wizards_reborn:wissen_keychain",
+        "wizards_reborn:wissen_ring",
+        "wizards_reborn:crystal_bag",
+        "wizards_reborn:alchemy_bag"
+      ]
+    },
+    {
+      "name": "Sensors and automation blocks",
+      "ids": [
+        "wizards_reborn:arcane_lever",
+        "wizards_reborn:arcane_hopper",
+        "wizards_reborn:redstone_sensor",
+        "wizards_reborn:wissen_sensor",
+        "wizards_reborn:cooldown_sensor",
+        "wizards_reborn:experience_sensor",
+        "wizards_reborn:light_sensor",
+        "wizards_reborn:heat_sensor",
+        "wizards_reborn:fluid_sensor",
+        "wizards_reborn:steam_sensor",
+        "wizards_reborn:wissen_activator",
+        "wizards_reborn:item_sorter"
+      ]
+    },
+    {
+      "name": "Dyed Arcane Lumos (decoration)",
+      "note": "17 colour variants plus cosmic; all crystallized from arcanum and glowstone then dyed.",
+      "ids": [
+        "wizards_reborn:white_arcane_lumos",
+        "wizards_reborn:rainbow_arcane_lumos",
+        "wizards_reborn:cosmic_arcane_lumos"
+      ]
+    },
+    {
+      "name": "Alcohol bottles (Fluffy Fur drinks branch)",
+      "note": "About 30 bottle items brewed in the alchemy machine; flavour content, not progression.",
+      "ids": [
+        "wizards_reborn:vodka_bottle",
+        "wizards_reborn:mead_bottle",
+        "wizards_reborn:innocent_wine_bottle",
+        "wizards_reborn:wissen_beer_bottle"
+      ]
+    }
+  ],
+  "notes": "Order derived from data/wizards_reborn/recipes (arcane_workbench, wissen_crystallizer, alchemy_machine, arcane_iterator, crystal_infusion, jeweler_table types) and from the mod's own in-book text under the wizards_reborn.arcanemicon.* lang keys, which is organised as Arcane Nature -> Crystal Rituals -> Alchemy. Advancements in this jar are recipe-unlock stubs only and carry no progression. Two power currencies: wissen (from the Wissen Altar burning arcanum) and steam (from the Alchemy Furnace); the alchemy branch needs both. Arcane Gold Ore, Deepslate Arcane Gold Ore and Nether Arcane Gold Ore have NO worldgen - they exist only via arcanum_dust_transmutation of the vanilla gold ores, so never write a quest that asks a player to find them. Arcanum Ore and Nether Salt Ore do generate (data/wizards_reborn/worldgen/placed_feature). Mor and Elder Mor are swamp-generated mushrooms, not craftable. Shiny Clover Seed comes only from sniffer digging and Pitcher Turnip only from fully grown pitcher crops (global loot modifiers), so both are find/farm quests, never craft quests. The mod also ships Create, Farmer's Delight, Curios and Malum integration recipes that are conditional on those mods being present."
+}

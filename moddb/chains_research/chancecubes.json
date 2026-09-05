@@ -1,0 +1,70 @@
+{
+  "mod": "chancecubes",
+  "verified_against": "ChanceCubes-1.20.1-5.0.2.489.jar",
+  "item_count_in_jar": 13,
+  "chain": [
+    {
+      "id": "chancecubes:chance_cube",
+      "title": "Find or Craft a Chance Cube",
+      "desc": "Cubes generate underground like ore, sixteen attempts per chunk anywhere in the Overworld, and you can also fold nine lapis into one if you are impatient. Break one and it rolls a random result - anything from a set of enchanted diamond gear to a Wither. Stockpile them; the rest of the mod is spent opening them."
+    },
+    {
+      "id": "chancecubes:chance_pendant_tier1",
+      "title": "Craft a Tier 1 Chance Pendant",
+      "desc": "Simply carrying it shifts every cube roll toward the good end of the scale, and it wears down as it soaks up bad luck. This is the single most important item in the mod - do not open cubes without one. It is also consumed by three later recipes, so plan on building it more than once."
+    },
+    {
+      "id": "chancecubes:scanner",
+      "title": "Craft a Chance Cube Scanner",
+      "desc": "Right-click a placed cube and it reports the chance value that cube has already rolled, so you can walk away from the bad ones instead of finding out the hard way. One is enough forever, but it eats a Tier 1 Pendant to make."
+    },
+    {
+      "id": "chancecubes:silk_touch_pendant",
+      "title": "Craft a Silk Touch Chance Pendant",
+      "desc": "While you hold it, mining a Chance Cube drops the cube as an item instead of setting it off. This is how you relocate a cube somewhere safe and how you bank a stack of them for the Giant Cube later. Costs another Tier 1 Pendant."
+    },
+    {
+      "id": "chancecubes:chance_pendant_tier2",
+      "title": "Craft a Tier 2 Chance Pendant",
+      "desc": "A bigger push on every roll and more durability before it breaks. It consumes a Tier 1 Pendant, so build the Tier 1 again before you upgrade if you still want the Scanner and the Silk Touch pendant."
+    },
+    {
+      "id": "chancecubes:chance_pendant_tier3",
+      "title": "Craft a Tier 3 Chance Pendant",
+      "desc": "The top of the pendant line and the end of the mod's real progression. With this on you, the rewards that sit at chance 95 - the Divine armour and sword, enchanted to level 10 - become genuinely reachable. Consumes the Tier 2."
+    },
+    {
+      "id": "chancecubes:chance_icosahedron",
+      "title": "Win the Chance Icosahedron",
+      "desc": "A twenty-sided die that only ever arrives as a Chance Cube reward - there is no recipe and it does not generate in the world. It sits at chance 0, so any cube can produce it at any point; treat this as a lucky milestone rather than something to farm."
+    },
+    {
+      "id": "chancecubes:giant_chance_cube",
+      "title": "Form a Giant Chance Cube",
+      "desc": "Stack twenty-seven Chance Cubes into a solid 3x3x3 and they fuse into one Giant Chance Cube. Breaking it rolls from a separate, much larger reward table - the mod's finale, and the reason to bank cubes with the Silk Touch Pendant."
+    }
+  ],
+  "collections": [
+    {
+      "name": "Chance Pendants",
+      "desc": "The three-tier luck ladder. Each tier consumes the one below, so count on crafting the Tier 1 several times over.",
+      "items": [
+        "chancecubes:chance_pendant_tier1",
+        "chancecubes:chance_pendant_tier2",
+        "chancecubes:chance_pendant_tier3"
+      ]
+    },
+    {
+      "name": "Creative-Only Items",
+      "desc": "Registered and visible in the creative tab, but with no recipe, no loot table and no reward that grants them. NEVER put these in a quest.",
+      "items": [
+        "chancecubes:creative_pendant",
+        "chancecubes:reward_selector_pendant",
+        "chancecubes:single_use_reward_selector_pendant",
+        "chancecubes:cube_dispenser",
+        "chancecubes:compact_giant_chance_cube"
+      ]
+    }
+  ],
+  "notes": "SHORT BY NATURE. This mod has 13 registered ids total (8 items + 5 blocks, matching 13 lang keys and 13 item models) and exactly 6 recipes in data/chancecubes/recipes: chance_cube_crafting, tier_1/2/3_pendant_crafting, cube_scanner_crafting, silk_pendant_crafting. The 8 steps above are literally everything a survival player can obtain. Do not pad this chain - there is nothing else to reach for.\n\nRECIPE CHAIN, verified: chance_cube = 8 #forge:gems/lapis around 1 #forge:storage_blocks/lapis. chance_pendant_tier1 = 4 gold blocks + 4 lapis blocks + 1 diamond block. scanner = 4 iron + 4 glass around a TIER 1 PENDANT. silk_touch_pendant = 4 string + 2 lapis blocks around a TIER 1 PENDANT. tier2 = gold + lapis blocks around a TIER 1 PENDANT. tier3 = gold + lapis blocks around a TIER 2 PENDANT. Three separate recipes eat a Tier 1, which is why the chain says so out loud - a player who builds one Tier 1 and upgrades it has locked themselves out of the Scanner and the Silk Touch pendant.\n\nHOW THE MOD ACTUALLY WORKS, since it is not obvious from the item list: every reward in data/chancecubes/rewards (81 files, 89 named rewards) carries a 'chance' integer from -100 to +100. Negative is a punishment (bad_omen -90, actual_invisible_ghast -80, guardians -35, giant_chance_cube -45, chance_cube_cube -10, explosion 0), positive is a prize (divine_boots/helmet/chestplate/leggings/sword all 95, enchanting 80, roosevelts_stick and giga_breaker 70, bookshelves and dark_o_the_wise 60). Breaking a cube rolls on that scale. The Chance Pendant's ONLY job is to bias that roll upward, which is why the pendant tiers are the progression and everything else is flavour. The Divine rewards are vanilla diamond gear with level-10 enchantments and custom names, not mod items.\n\nCREATIVE-ONLY - VERIFIED, DO NOT QUEST FOR THESE: chancecubes:creative_pendant, reward_selector_pendant, single_use_reward_selector_pendant, cube_dispenser and compact_giant_chance_cube are all registered in CCubesItems/CCubesBlocks and all have lang keys and item models, so a naive jar scan will happily rank them. None has a recipe, none appears in the one loot table, and none is granted by any reward json. They are creative-tab items only.\n\nCAVEAT ON THE LAST STEP: chancecubes:giant_chance_cube is a registered block with an item model, and the mod's own advancement is 'Break a Giant Chance Cube'. The structure is formed in-world by GiantCubeUtil when 27 chance_cube blocks sit in a 3x3x3 (BlockGiantCube, TileGiantCube, DefaultGiantRewards); the chancecubes:giant_chance_cube reward at chance -45 spawns one via '/chancecubes spawnGiantCube ~ ~1 ~'. Whether breaking it ever drops the giant cube ITEM is not settled by any data file - there is no loot table for it. If the generator would turn this step into a have-this-item task, prefer an advancement or observation task instead, or drop the step. It is the one id here with real obtainability risk.\n\nchancecubes:chance_icosahedron is safe despite having no recipe: data/chancecubes/rewards/icosahedron.json grants the item directly at chance 0, so any cube can produce one.\n\nWorldgen: data/chancecubes/worldgen/placed_feature/chance_cube_oregen.json places chance_cube as a minecraft:ore feature of size 4, count 16, trapezoid height -64 to 192, replacing #minecraft:stone_ore_replaceables and #minecraft:deepslate_ore_replaceables. A forge biome_modifier adds a second chancecubes:chance_cube_worldgen surface feature to every #minecraft:is_overworld biome at top_layer_modification. No structures and no dimensions. Only one loot table (blocks/chance_cube_chest) which rolls 10 times at 25% for a chance_cube - that is a reward chest spawned by the mod, not a naturally generated one.\n\nThe six advancements beyond root (chance_icosahedron, giant_chance_cube, lonely_dirt, wither, herobrine, its_a_lie) all use trigger minecraft:impossible and fire from code when a specific reward happens. They are easter-egg markers, not progression, and only two of them - the icosahedron and the giant cube - correspond to anything a quest can ask for. Note their files live under assets/chancecubes/advancements, not data/, so an advancement scan that only looks in data/ will miss them entirely.\n\nNo dependencies beyond Forge."
+}

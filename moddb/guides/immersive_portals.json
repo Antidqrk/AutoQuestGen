@@ -1,0 +1,166 @@
+{
+ "mod": "immersive_portals",
+ "ids_in_jar": 3,
+ "videos": [
+  {
+   "id": "EroGVajadtg",
+   "title": "Immersive Portals Mod Tutorial",
+   "channel": "Monty",
+   "views": 691109,
+   "duration": 716,
+   "chars": 13659
+  },
+  {
+   "id": "tv0Ib18jfUA",
+   "title": "Ep1 - The Portal Wand - S2 Immersive Portals Tutorial",
+   "channel": "Repsack2",
+   "views": 3640,
+   "duration": 990,
+   "chars": 10995
+  },
+  {
+   "id": "JtDQPbmdk2I",
+   "title": "Ep1 - The Portal Helper Block - Immersive Portals Tutorial",
+   "channel": "Repsack2",
+   "views": 51114,
+   "duration": 386,
+   "chars": 4585
+  },
+  {
+   "id": "aJQnJhpwfNc",
+   "title": "Ep2 - The 8 parts of a portal - Immersive Portals Tutorial",
+   "channel": "Repsack2",
+   "views": 8981,
+   "duration": 377,
+   "chars": 4455
+  },
+  {
+   "id": "eYCRqbYUGQM",
+   "title": "IMMERSIVE PORTALS Mod is Incredible! (Mod Showcase and Review)",
+   "channel": "Perry Pines",
+   "views": 18867,
+   "duration": 523,
+   "chars": 9040
+  }
+ ],
+ "items": {
+  "immersive_portals:portal_helper": {
+   "mentions": 11,
+   "videos": 5,
+   "first_at": 0.3183,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersive_portals:command_stick": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1754,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "immersive_portals:portal_wand": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1347,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "_confidence": "STRONG on mechanics, with one big caveat for questgen. Five narrated videos including a dedicated multi-part tutorial series (Repsack2 runs a 20+ episode season 1 plus a season 2; the two Ep1s and Ep2 were transcribed). Ids verified against immersive-portals-3.0.7-all.jar (Modrinth project immersive-portals-neoforge, loader forge, 1.20.1) - the jar registers only THREE items: portal_helper, portal_wand, command_stick. The videos are Fabric-side but the Forge port is the same qouteall codebase; the port was verified to exist before any GPU was spent.",
+  "entry": [
+   {
+    "note": "There is NO entry ritual and NO progression. The mod's survival-facing feature is passive: vanilla nether portals become see-through and walk-through with no purple fade, and the end portal drops you seamlessly into the End. A player 'enters' this mod the moment they light their first nether portal.",
+    "ids": [],
+    "video": "eYCRqbYUGQM"
+   },
+   {
+    "note": "The first hands-on item every guide teaches is the Portal Helper block: outline a doorway of any size with helpers, light the inside with flint and steel like a nether portal, and it links to another similarly-shaped helper doorway. Frame blocks appear to vanish on lighting - guides pre-empt the panic: that is the sign it worked.",
+    "ids": [
+     "immersive_portals:portal_helper"
+    ],
+    "video": "JtDQPbmdk2I"
+   },
+   {
+    "note": "Mirrors are made with nothing but a glass wall lit with flint and steel - one of the mod's coolest features per the top tutorial, and the cheapest quest-sized task the mod offers.",
+    "ids": [],
+    "video": "EroGVajadtg"
+   }
+  ],
+  "order": [
+   {
+    "note": "Taught sequence across the corpus: 1) walk through a seamless nether portal, 2) portal helper doorways, 3) mirrors, 4) the portal wand (create / drag / copy modes, crouch-right-click to switch shape and mode), 5) command sticks and /portal commands for one-way conversion and deletion, 6) global portals, wrapping zones and dimension stacking, 7) config. Steps 4 onward are creative-inventory and command territory, not survival play.",
+    "ids": [
+     "immersive_portals:portal_helper",
+     "immersive_portals:portal_wand",
+     "immersive_portals:command_stick"
+    ],
+    "video": "tv0Ib18jfUA"
+   },
+   {
+    "note": "The season-2 tutor states the wand supersedes the portal helper for portal creation, but the sticks stay necessary: the wand cannot make a portal one-way or delete connected portals. Wand-made portals are 'bi-way bi-faced' - four linked portals (eight parts) every time.",
+    "ids": [
+     "immersive_portals:portal_wand",
+     "immersive_portals:command_stick"
+    ],
+    "video": "tv0Ib18jfUA"
+   },
+   {
+    "note": "Dimension stacking is a world-creation toggle (more world options > dimension stack): the Nether generates directly under the Overworld with an obsidian seam you can dig through in survival; the End can sit overhead. This is the one command-free feature with real survival impact.",
+    "ids": [],
+    "video": "EroGVajadtg"
+   }
+  ],
+  "gates": [
+   {
+    "note": "FOR THE GENERATOR: nothing in this mod gates anything. All three items are effectively creative/operator tools (wand and sticks live in the creative inventory; custom portals are managed by /portal commands). Quest content should treat immersive_portals as a flavour layer on OTHER mods' portals - e.g. 'walk through your nether portal' - not as a questline of its own.",
+    "ids": [],
+    "video": "EroGVajadtg"
+   }
+  ],
+  "traps": [
+   {
+    "note": "Portals cannot be mined away. Breaking blocks leaves the portal floating; removal needs /portal delete_portal aimed at it, run on BOTH sides, because a linked pair renders as two portals.",
+    "ids": [],
+    "video": "EroGVajadtg"
+   },
+   {
+    "note": "A frameless portal viewed edge-on is a near-invisible sliver - guides warn you can genuinely lose your own portal. Keep at least a marker frame.",
+    "ids": [
+     "immersive_portals:portal_helper"
+    ],
+    "video": "JtDQPbmdk2I"
+   },
+   {
+    "note": "An outward wrapping zone locks space off so well you cannot get in to delete it: removal requires /portal global view_wrapping_zones and then four manual deletions, one per portal part.",
+    "ids": [],
+    "video": "EroGVajadtg"
+   },
+   {
+    "note": "The drag-portal stick can crash the game mid-drag, and the reviewer hit repeated failed portal links on camera; the mod is openly not finalized. Config warnings: the advanced client and server options can stop portals working or badly corrupt a game - the guide's advice is to leave them.",
+    "ids": [
+     "immersive_portals:command_stick"
+    ],
+    "video": "eYCRqbYUGQM"
+   },
+   {
+    "note": "With Pehkui installed, walking through a portal pair of mismatched sizes RESIZES the player - seamless and easy to trigger by accident once someone builds scale portals.",
+    "ids": [],
+    "video": "tv0Ib18jfUA"
+   }
+  ],
+  "signature": [
+   {
+    "note": "The see-through, animation-free nether portal is the mod to every reviewer - it is the first thing shown in all five videos. Mirrors and dimension stacking are the two runner-up features people actually build with.",
+    "ids": [],
+    "video": "eYCRqbYUGQM"
+   }
+  ]
+ }
+}

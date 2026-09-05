@@ -1,0 +1,242 @@
+{
+  "mod": "biomeswevegone",
+  "verified_against": "Oh-The-Biomes-Weve-Gone-Forge-1.8.0.jar",
+  "item_count_in_jar": 887,
+  "chain": [
+    {
+      "id": "biomeswevegone:clover_patch",
+      "title": "Clover Underfoot",
+      "desc": "Break the clover patches that carpet the Sakura Grove, Pumpkin Valley, Crimson Tundra and Orchard biomes - all four list the clover_patch feature."
+    },
+    {
+      "id": "biomeswevegone:blueberries",
+      "title": "Berries in the Cold",
+      "desc": "Harvest a blueberry bush. The blue_berry_bush feature is placed in Cika Woods, Maple Taiga, Zelkova Forest, Coniferous Forest, Rose Fields and Eroded Borealis."
+    },
+    {
+      "id": "biomeswevegone:blueberry_pie",
+      "title": "Something Warm",
+      "desc": "Bake the blueberries into a pie - one of the mod's five cooked-food recipes, all under data/biomeswevegone/recipes/."
+    },
+    {
+      "id": "biomeswevegone:aspen_log",
+      "title": "Pale Trunks of the Boreal",
+      "desc": "Fell an aspen in the Aspen Boreal, the biome whose feature list carries aspen_trees. Aspen shrubs also scatter through Maple Taiga and Weeping Witch Forest."
+    },
+    {
+      "id": "biomeswevegone:cika_log",
+      "title": "Cika Woods",
+      "desc": "Chop a cika tree - the cika_trees feature appears in exactly one biome, Cika Woods, which is also where the blue rose bushes grow."
+    },
+    {
+      "id": "biomeswevegone:ebony_log",
+      "title": "Black Wood",
+      "desc": "Fell an ebony in the Ebony Woods, the only biome placing the ebony_trees feature."
+    },
+    {
+      "id": "biomeswevegone:baobab_log",
+      "title": "The Tree That Holds Water",
+      "desc": "Cut a baobab in the Baobab Savanna, the only biome with the baobab_trees feature."
+    },
+    {
+      "id": "biomeswevegone:baobab_fruit",
+      "title": "Fruit of the Savanna",
+      "desc": "Baobab fruit hangs from ripe_baobab_leaves; both that leaf block and the fruit block drop it."
+    },
+    {
+      "id": "biomeswevegone:green_apple",
+      "title": "The Orchard in the Vale",
+      "desc": "Green apples drop from green_apple_skyris_leaves and the green_apple_fruit block, and turn up in Skyris village house chests. The jar also ships golden_apple_from_green_apple."
+    },
+    {
+      "id": "biomeswevegone:aloe_vera",
+      "title": "Green in the Dry Places",
+      "desc": "Cut aloe vera in the Mojave Desert, Atacama Outback, Windswept Desert, Rugged Badlands and both Red Rock biomes - the six that place the aloe feature."
+    },
+    {
+      "id": "biomeswevegone:aloe_vera_juice",
+      "title": "Something to Drink",
+      "desc": "The aloe crafts into juice. Its recipe advancement lives under advancements/recipes/brewing/, not food."
+    },
+    {
+      "id": "biomeswevegone:yucca_fruit",
+      "title": "Desert Harvest",
+      "desc": "Yucca fruit drops from ripe_yucca_leaves and from the fruit block itself, on the palo verde and yucca growth of the dry biomes."
+    },
+    {
+      "id": "biomeswevegone:quicksand",
+      "title": "Don't Stand Still",
+      "desc": "Quicksand and red quicksand both have their own block loot tables, so they can be dug and carried. The mod ships an inside_quicksand advancement for falling into one."
+    },
+    {
+      "id": "biomeswevegone:red_rock",
+      "title": "The Red Rock",
+      "desc": "Mine the stone the Red Rock Valley and Red Rock Peaks are named for. Red rock, its bricks and its chiseled form all turn up in the Red Rock village mason chest."
+    },
+    {
+      "id": "biomeswevegone:dacite",
+      "title": "Grey Stone, New Name",
+      "desc": "Dacite is BWG's own stone type, with cobblestone, overgrown, podzol and polished forms and a white variant. Its block loot drops dacite_cobblestone unless you use Silk Touch."
+    },
+    {
+      "id": "biomeswevegone:rocky_stone",
+      "title": "Stones on the Ridge",
+      "desc": "Rocky stone and mossy stone both generate as surface rock in Black Forest, Dacite Ridges, Fragment Jungle, Redwood Thicket, Howling Peaks and Skyris Vale."
+    },
+    {
+      "id": "biomeswevegone:borealis_ice",
+      "title": "The Ice That Glows",
+      "desc": "Break borealis ice in the Eroded Borealis, the biome that places borealis_glint and borealis_ice_sharpened_spike. Black ice is the other ice type, with its own packed form."
+    },
+    {
+      "id": "biomeswevegone:water_silk",
+      "title": "Green Water",
+      "desc": "Shear water silk from the surface of the Bayou, Crag Gardens, Cypress Swamplands and Cypress Wetlands."
+    },
+    {
+      "id": "biomeswevegone:white_puffball_cap",
+      "title": "The Puffball",
+      "desc": "The white_puffball block drops its cap, which also appears in Swamp village house chests. It cooks in a smoker or campfire and crafts into white puffball stew."
+    },
+    {
+      "id": "kill:biomeswevegone:oddion",
+      "title": "The Onion That Runs",
+      "desc": "The oddion is one of only three real mobs in the jar. data/biomeswevegone/loot_tables/entities/oddion.json drops biomeswevegone:oddion_bulb and nothing else."
+    },
+    {
+      "id": "biomeswevegone:oddion_bulb",
+      "title": "Oddion Bulb",
+      "desc": "The oddion's only drop. It also appears in Forgotten village house chests and on the oddion_crop block, and it smelts or campfires into cooked_oddion_bulb."
+    },
+    {
+      "id": "biomeswevegone:allium_oddion_soup",
+      "title": "Soup of Allium and Oddion",
+      "desc": "Cook the bulb together with allium into the mod's signature soup."
+    },
+    {
+      "id": "kill:biomeswevegone:man_o_war",
+      "title": "The Drifting Sting",
+      "desc": "A floating jellyfish mob. Its entity loot table gives phantom membrane and string, which is the only non-vanilla source of membrane outside the End."
+    },
+    {
+      "id": "kill:biomeswevegone:pumpkin_warden",
+      "title": "The Warden of the Patch",
+      "desc": "The third and rarest of the mod's mobs, tied to the pumpkin biomes. It has a spawn egg and an entity lang key but NO entity loot table in this jar - killing it is the goal, not looting it."
+    },
+    {
+      "id": "structure:biomeswevegone:village/skyris",
+      "title": "The Village in Skyris Vale",
+      "desc": "One of six BWG villages, restricted to Skyris Vale. Two chest tables; the library one carries a skyris_bookshelf, books, maps and emeralds."
+    },
+    {
+      "id": "structure:biomeswevegone:village/red_rock",
+      "title": "The Village in the Red Rock",
+      "desc": "Restricted to Red Rock Valley, with four tables - house, market, cleric and mason. The mason chest is where the red rock brick forms come from."
+    },
+    {
+      "id": "structure:biomeswevegone:village/salem",
+      "title": "The Village in the Witch Forest",
+      "desc": "Restricted to Weeping Witch Forest, with house, forager, animal_pen and temple chests. Its house chest is a source of witch_hazel_blossom."
+    },
+    {
+      "id": "structure:biomeswevegone:village/swamp",
+      "title": "The Village in the Cypress",
+      "desc": "Generates in Cypress Swamplands and Cypress Wetlands, with house and forager chests; the house chest carries white puffball caps."
+    },
+    {
+      "id": "structure:biomeswevegone:village/pumpkin_patch",
+      "title": "The Village in the Pumpkin Patch",
+      "desc": "Generates in Cika Woods and Pumpkin Valley. It has only one chest table, the house one - the thinnest of the six villages."
+    },
+    {
+      "id": "structure:biomeswevegone:village/forgotten",
+      "title": "The Forgotten Village",
+      "desc": "Restricted to the Forgotten Forest and the loot-densest of the six: armorer, cartographer, house and temple chests. The temple chest holds sculk, the Wild armour trim template and the Pixie Club music disc."
+    },
+    {
+      "id": "biomeswevegone:music_disc_better_days",
+      "title": "True Traveler",
+      "desc": "The mod's completion reward. data/biomeswevegone/advancements/biomeswevegone/adventure/true_traveler.json requires standing inside all six BWG villages, and its loot table hands out this disc."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "biomeswevegone:sakura_log",
+      "members": [
+        "biomeswevegone:maple_log",
+        "biomeswevegone:willow_log",
+        "biomeswevegone:holly_log",
+        "biomeswevegone:fir_log",
+        "biomeswevegone:pine_log",
+        "biomeswevegone:cypress_log",
+        "biomeswevegone:mahogany_log",
+        "biomeswevegone:palm_log",
+        "biomeswevegone:jacaranda_log",
+        "biomeswevegone:redwood_log",
+        "biomeswevegone:zelkova_log",
+        "biomeswevegone:witch_hazel_log",
+        "biomeswevegone:ironwood_log",
+        "biomeswevegone:skyris_log"
+      ]
+    },
+    {
+      "hub": "biomeswevegone:black_sand",
+      "members": [
+        "biomeswevegone:blue_sand",
+        "biomeswevegone:pink_sand",
+        "biomeswevegone:purple_sand",
+        "biomeswevegone:white_sand",
+        "biomeswevegone:windswept_sand",
+        "biomeswevegone:black_sandstone",
+        "biomeswevegone:blue_sandstone",
+        "biomeswevegone:pink_sandstone",
+        "biomeswevegone:purple_sandstone",
+        "biomeswevegone:white_sandstone",
+        "biomeswevegone:windswept_sandstone"
+      ]
+    },
+    {
+      "hub": "biomeswevegone:osiria_rose",
+      "members": [
+        "biomeswevegone:protea_flower",
+        "biomeswevegone:kovan_flower",
+        "biomeswevegone:lazarus_bellflower",
+        "biomeswevegone:fairy_slipper",
+        "biomeswevegone:incan_lily",
+        "biomeswevegone:richea",
+        "biomeswevegone:guzmania",
+        "biomeswevegone:silver_vase_flower",
+        "biomeswevegone:japanese_orchid",
+        "biomeswevegone:alpine_bellflower",
+        "biomeswevegone:california_poppy",
+        "biomeswevegone:foxglove",
+        "biomeswevegone:delphinium"
+      ]
+    },
+    {
+      "hub": "biomeswevegone:wreath",
+      "members": [
+        "biomeswevegone:holly_wreath",
+        "biomeswevegone:petal_wreath",
+        "biomeswevegone:oddion_wreath",
+        "biomeswevegone:rosy_wreath",
+        "biomeswevegone:mushroom_wreath",
+        "biomeswevegone:winter_rosy_wreath"
+      ]
+    },
+    {
+      "hub": "biomeswevegone:wood_blewit",
+      "members": [
+        "biomeswevegone:weeping_milkcap",
+        "biomeswevegone:green_mushroom",
+        "biomeswevegone:shelf_fungi",
+        "biomeswevegone:brown_mushroom_stem",
+        "biomeswevegone:white_mushroom_stem",
+        "biomeswevegone:green_mushroom_block",
+        "biomeswevegone:weeping_milkcap_mushroom_block",
+        "biomeswevegone:wood_blewit_mushroom_block"
+      ]
+    }
+  ],
+  "notes": "THIS FILE IS THE 1.20.1 STAND-IN FOR 'byg'. THERE IS NO 1.20.1 BUILD OF BYG. Oh The Biomes You'll Go (mod id byg, CurseForge project 247560) was checked file by file: its 194 published files span 1.12.2, 1.15.2, 1.16.1-1.16.5, 1.18-1.18.2, 1.19, 1.19.2, 1.19.3 and 1.19.4 - NO 1.20 OF ANY KIND - and its newest release is Oh_The_Biomes_You'll_Go-forge-1.19.4-4.0.1.3.jar from Nov 2024. It is not on Modrinth at all (the slugs byg, oh-the-biomes-youll-go and biomesyoullgo all 404). The successor is this jar, and its META-INF/mods.toml declares MOD ID biomeswevegone, NOT byg - so a byg: prefixed id would be wrong in any pack. LOADER: modId biomeswevegone, version 1.8.0, forge [47.4,), loaderVersion [47,), no fabric.mod.json, and the Modrinth 1.20.1 Forge listing resolves to this exact file. It depends on terrablender, corgilib, ohthetreesyoullgrow and geckolib. ITEM SET AND WIDENING: 890 stems under assets/biomeswevegone/models/item/, 999 item./block. lang keys, 887 in the intersection - that is item_count_in_jar. Blockstate widening was CONSIDERED AND REJECTED: models UNION blockstates INTERSECT lang gives 997, and the 110 it adds are overwhelmingly potted_* variants plus apple_fruit, green_apple_fruit, blueberry_bush, cattail and oddion_crop - blocks with a blockstate but NO item model, i.e. no BlockItem, so they cannot be held. Their DROPS are what a player gets and those drops (blueberries, green_apple, oddion_bulb) are already in the 887 and are what the chain asks for. Only 3 model stems lack a lang key - bwg_logo (a creative tab icon), white_sakura_foliage and yellow_sakura_foliage - and none is used. DROPPED FOR OBTAINABILITY: biomeswevegone:man_o_war_bucket has a model and a lang key but appears in NO loot table and NO recipe anywhere in data/ (capture is a code-side bucket interaction), so it fails the rule and is left out; the man o' war is quested by kill: instead. Spawn eggs (man_o_war_spawn_egg, oddion_spawn_egg, pumpkin_warden_spawn_egg) are creative items and are excluded on principle. STRUCTURES: 17 files at data/biomeswevegone/worldgen/structure/, and ONLY THE SIX VILLAGES HAVE MOD LOOT. Structure-to-loot was resolved by gunzipping every referenced nbt and matching the id strings against the jar's real loot tables, then cross-checked against the mod's own chests/village/<name>/ folder convention: forgotten has 4 tables, red_rock 4, salem 4, skyris 2, swamp 2, pumpkin_patch 1. THE OTHER ELEVEN ARE EXCLUDED AND HERE IS WHY: dripstone_arch, lush_arch, red_rock_arch, sharpened_rock, ironwood_gour_plateau and large_cold_lake are terrain shapes at the raw_generation step with no chest and no mob - textbook decorative scenery; rugged_fossil is a bone-block fossil with no chest; and prairie_house, abandoned_prairie_house, aspen_manor_1 and aspen_manor_2 do have chests, but the NBT scan shows they hold VANILLA tables (minecraft:chests/village/village_plains_house for the two prairie houses, minecraft:chests/pillager_outpost for both manors, which also spawn vindicators) - the mod adds no loot of its own there, so they are weaker than the villages and were cut rather than padded in. MOBS: exactly three real ones. entity.biomeswevegone.man_o_war, oddion and pumpkin_warden are the only non-vehicle entity lang keys (boat and chest_boat are vehicles). entities/man_o_war.json drops phantom_membrane and string; entities/oddion.json drops oddion_bulb; PUMPKIN_WARDEN HAS NO ENTITY LOOT TABLE IN THIS JAR, which its chain entry states rather than inventing a drop. FINALE: data/biomeswevegone/loot_tables/chests/advancement/true_traveler/better_days_music_disc.json contains exactly one entry, biomeswevegone:music_disc_better_days, and the true_traveler advancement it is named for requires a location trigger inside all six villages. music_disc_pixie_club is the other disc, from the Forgotten village chests. DESIRABILITY: the mod registers full slab/stairs/wall/fence/gate/door/trapdoor/button/pressure_plate/sign/hanging_sign/boat/bookshelf/crafting_table families for 25 woods and several stone lines - roughly 640 of the 887 ids. NOT ONE of those shapes is in the chain; only one representative log per wood line is used and the rest go in the wheel. The wreath wheel is a genuine crafted set (all seven have their own recipe file). No dim: entries - the jar has no data/biomeswevegone/dimension/ files; BWG adds 54 Overworld biomes, not dimensions. ID FORM: item ids bare-namespaced, mobs as 'kill:' + namespaced, structures as 'structure:' + namespaced - note the six village ids KEEP THEIR FOLDER (biomeswevegone:village/forgotten, not biomeswevegone:forgotten), because that is the actual file path under worldgen/structure/. autoquestgen.py's chain loader strips only kill:/dim: today and needs the same branch for structure:."
+}

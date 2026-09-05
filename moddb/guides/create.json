@@ -1,0 +1,563 @@
+{
+ "mod": "create",
+ "ids_in_jar": 775,
+ "videos": [
+  {
+   "id": "NQIAvYO_Ras",
+   "title": "Learn Minecraft's Best Mod! Create Mod Beginners Guide",
+   "channel": "Dejojotheawsome",
+   "views": 2205426,
+   "duration": 1649,
+   "chars": 29237,
+   "src": "vetted_search"
+  },
+  {
+   "id": "QOW0W7d6nzM",
+   "title": "Ultimate Guide to Trains | Create .5",
+   "channel": "polartt",
+   "views": 2302675,
+   "duration": 3168,
+   "chars": 52150,
+   "src": "vetted_search"
+  }
+ ],
+ "items": {
+  "create:track": {
+   "mentions": 131,
+   "videos": 2,
+   "first_at": 0.1256,
+   "praise": 40,
+   "warn": 4,
+   "early_cue": 0,
+   "late_cue": 12
+  },
+  "create:shaft": {
+   "mentions": 23,
+   "videos": 1,
+   "first_at": 0.0717,
+   "praise": 2,
+   "warn": 3,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:water_wheel": {
+   "mentions": 17,
+   "videos": 1,
+   "first_at": 0.1644,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 3,
+   "late_cue": 0
+  },
+  "create:cogwheel": {
+   "mentions": 13,
+   "videos": 1,
+   "first_at": 0.342,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:gearbox": {
+   "mentions": 11,
+   "videos": 1,
+   "first_at": 0.3424,
+   "praise": 3,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:large_cogwheel": {
+   "mentions": 8,
+   "videos": 1,
+   "first_at": 0.3716,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:wrench": {
+   "mentions": 7,
+   "videos": 1,
+   "first_at": 0.0649,
+   "praise": 6,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:goggles": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.0645,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:millstone": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.3546,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "create:mechanical_press": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.0696,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:clutch": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.6371,
+   "praise": 5,
+   "warn": 5,
+   "early_cue": 4,
+   "late_cue": 0
+  },
+  "create:vertical_gearbox": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.3965,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:filter": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.0261,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "create:andesite_casing": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.072,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:encased_fan": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.7669,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:steam_engine": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1694,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "create:andesite_alloy": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.0792,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:large_water_wheel": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.165,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:sticker": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3045,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:train_door": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.0114,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "create:golden_sheet": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0669,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:stressometer": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2406,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:speedometer": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5097,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:hand_crank": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1293,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:gearshift": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6301,
+   "praise": 1,
+   "warn": 2,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "create:schedule": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.9195,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:encased_chain_drive": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4366,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:mechanical_mixer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9395,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "create:mechanical_pump": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6004,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:deployer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0864,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:basin": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9405,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "create:nixie_tube": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5618,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:framed_glass_door": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4229,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:track_station": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6163,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "create:framed_glass": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4229,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "ids": [
+     "create:goggles",
+     "create:wrench"
+    ],
+    "note": "STEP 0, stated before any machine: the guide tells you to get engineer's goggles and a wrench BEFORE starting properly. Goggles are not cosmetic - without them the game shows you no stress or speed information at all, so a player without goggles is debugging blind.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:andesite_alloy",
+     "create:andesite_casing"
+    ],
+    "note": "Andesite alloy is named as the universal base of the whole early game and beyond. Andesite casing is made by MANUAL ITEM APPLICATION - place a stripped log and right-click it with andesite alloy - which the guide singles out as the single most confusing thing for beginners reading JEI.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:mechanical_press",
+     "create:golden_sheet"
+    ],
+    "note": "STEP 1 machine. The mechanical press is explicitly 'your first machine' because goggles and wrench both need a golden sheet, and only the press makes sheets. Press = shaft + andesite casing + block of iron.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:hand_crank"
+    ],
+    "note": "STEP 2: the hand crank, named as your first source of rotational power at 256 SU. It is the bootstrap for the press before any automatic generator exists.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:water_wheel",
+     "create:large_water_wheel",
+     "create:windmill_bearing",
+     "create:white_sail",
+     "create:sail_frame"
+    ],
+    "note": "STEP 3: automatic generation. Three early options - small water wheel, large water wheel, windmill. The guide ranks the windmill as the best early-game generator and defers steam engines to a later video, telling you to learn Create first.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:shaft",
+     "create:cogwheel",
+     "create:large_cogwheel",
+     "create:gearbox",
+     "create:vertical_gearbox",
+     "create:belt_connector",
+     "create:encased_chain_drive"
+    ],
+    "note": "STEP 4: transmission, taught as a single block of content. Shafts, cogwheels, gearboxes, belts and encased chain drives are the five ways to move rotation, and everything connected becomes one shared stress network.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:gearshift",
+     "create:clutch"
+    ],
+    "note": "STEP 5: control. Gearshift inverts rotation on a redstone signal, clutch stops it. The guide gives a concrete early-game reason to want the clutch: a stopped machine consumes no stress.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:belt_connector",
+     "create:chute",
+     "create:andesite_funnel",
+     "create:brass_funnel"
+    ],
+    "note": "STEP 6: item logistics - belts, chutes and funnels, in that order.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:encased_fan",
+     "create:millstone",
+     "create:mechanical_mixer",
+     "create:basin"
+    ],
+    "note": "STEP 7, the finish line of a beginner's arc: the encased fan for bulk processing plus the millstone and the mixer-over-basin pair. The guide names these three plus the press as 'the basics of create'.",
+    "video": "NQIAvYO_Ras"
+   }
+  ],
+  "gates": [
+   {
+    "ids": [
+     "create:goggles"
+    ],
+    "note": "SOFT BUT REAL GATE: stress, speed and machine-state readouts only exist while wearing the goggles. Any quest that asks a player to diagnose or balance a stress network should require goggles first.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:windmill_bearing",
+     "create:white_sail"
+    ],
+    "note": "GATE: a windmill needs a MINIMUM of 8 sails and then must be right-clicked to start - it does nothing until you activate it. Maximum is 128 sails for 8192 SU. The bearing's sticky side does not need slime.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:water_wheel",
+     "create:large_water_wheel"
+    ],
+    "note": "GATE: water must flow past the wheel in ONE direction only. Two opposing flows cancel out and the wheel produces nothing. The large wheel gives double the stress at half the speed - it is not simply better.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:shaft"
+    ],
+    "note": "GATE: two sub-networks can only be joined if they rotate in the same direction, otherwise the shafts pop off. Also, joining a slow network to a fast one speeds the slow one up to the faster RPM while still adding its stress.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:large_cogwheel",
+     "create:cogwheel"
+    ],
+    "note": "GATE: large cogwheels cannot connect to each other at all - not adjacent, not diagonal. Their job is converting horizontal rotation to vertical, and driving a small cog diagonally for a 2x gear ratio.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:large_cogwheel",
+     "create:andesite_casing"
+    ],
+    "note": "NON-OBVIOUS GATE that breaks gear ratio chains: to chain ratios you must right-click the large cogwheel with a casing to block off its face. Without the casing the chain forms a feedback loop and simply fails. Speed is hard-capped at 256 RPM.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:mechanical_mixer",
+     "create:millstone"
+    ],
+    "note": "GATE that confuses beginners: some machines are COG powered, not shaft powered, and they fail on insufficient SPEED rather than insufficient stress. A mixer, millstone or mechanical pump counts as a small cogwheel, so driving it diagonally from a large cogwheel doubles its speed and fixes the error.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:belt_connector",
+     "create:encased_fan",
+     "create:chute"
+    ],
+    "note": "GATE: belts cannot move items vertically at all. The only early answer is an upward-facing encased fan with a column of chutes, which lifts items an unlimited distance.",
+    "video": "NQIAvYO_Ras"
+   }
+  ],
+  "traps": [
+   {
+    "ids": [
+     "create:water_wheel"
+    ],
+    "note": "TRAP: outdated water wheel 'overclock' setups are all over old tutorials and screenshots. They no longer work. A player copying a 320 SU water wheel design from an old guide will get nothing.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:wrench"
+    ],
+    "note": "Handling trap worth teaching early: right-click with a wrench rotates a block, SHIFT right-click destroys and picks it up. Players lose builds to this. It works on any Create block including casings.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:belt_connector"
+    ],
+    "note": "Belt trap: to shorten a belt use a PLAIN right-click with the wrench, not shift right-click, or you pick the whole thing up. Also one belt item spans many blocks and extending it does not consume a second belt.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:encased_fan"
+    ],
+    "note": "SAFETY trap: fan blasting and haunting beams are actively dangerous - they set players and mobs on fire and pass straight through iron bars. Bulk processing setups need to be walled off from walkways.",
+    "video": "NQIAvYO_Ras"
+   }
+  ],
+  "signature": [
+   {
+    "ids": [
+     "create:encased_fan"
+    ],
+    "note": "The encased fan is treated as Create's most interesting single block - the guide says it deserves its own tutorial. Four bulk operations: smoking (food), blasting/smelting, haunting (magic conversion) and washing (item multiplication). Free and infinite as long as it has rotation.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:mechanical_mixer",
+     "create:basin"
+    ],
+    "note": "The mixer gets the most enthusiastic language in the whole guide - it automates potions and all shapeless recipes. Mixer and basin must be built as a pair.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:andesite_alloy",
+     "create:andesite_casing"
+    ],
+    "note": "The 'andesite age' is how the guide frames the entire beginner tier, and it stays there for the whole video. A quest book should treat andesite alloy as the trunk of the early tree.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:stressometer",
+     "create:speedometer"
+    ],
+    "note": "The stressometer and speedometer are the teaching instruments of the mod - the guide uses them constantly to make the invisible stress/speed distinction concrete. Cheap, and worth an early quest.",
+    "video": "NQIAvYO_Ras"
+   },
+   {
+    "ids": [
+     "create:steam_engine"
+    ],
+    "note": "Explicitly DEFERRED. The guide refuses to cover steam engines in the beginner arc and tells the viewer to learn the basics first, even though steam beats the 8192 SU windmill cap. Good evidence that steam belongs in a second quest chapter, not the first.",
+    "video": "NQIAvYO_Ras"
+   }
+  ]
+ }
+}

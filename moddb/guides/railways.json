@@ -1,0 +1,297 @@
+{
+ "mod": "railways",
+ "ids_in_jar": 1929,
+ "videos": [
+  {
+   "id": "eo0WehrpXNw",
+   "title": "The Best Create Mod Train Addon",
+   "channel": "Shalz",
+   "views": 1975230,
+   "duration": 502,
+   "chars": 9573,
+   "src": "vetted_search"
+  },
+  {
+   "id": "O7Wsjn4v6rE",
+   "title": "The Best Create Mod Train Addon",
+   "channel": "Shalz",
+   "views": 742708,
+   "duration": 695,
+   "chars": 12757,
+   "src": "vetted_search"
+  },
+  {
+   "id": "kXKFEHSgjFQ",
+   "title": "The Coolest Create Mod Train Addon!",
+   "channel": "Shalz",
+   "views": 514862,
+   "duration": 483,
+   "chars": 9316,
+   "src": "vetted_search"
+  },
+  {
+   "id": "2lWmkRE4gMo",
+   "title": "Insane Update to Create Mod Trains!",
+   "channel": "Shalz",
+   "views": 287572,
+   "duration": 537,
+   "chars": 8925,
+   "src": "vetted_search"
+  },
+  {
+   "id": "3qnb-8VXaGE",
+   "title": "Floating Trains and more | Create Steam n Rails",
+   "channel": "polartt",
+   "views": 70959,
+   "duration": 942,
+   "chars": 14996,
+   "src": "vetted_search"
+  },
+  {
+   "id": "wbMuvvfxB7I",
+   "title": "Create: steam 'n rails tutorial / guide 1.18.2 - 1.19.2 (minecraft java edition)",
+   "channel": "Minecraft Easy gaming",
+   "views": 83242,
+   "duration": 417,
+   "chars": 6166,
+   "src": "vetted_search"
+  }
+ ],
+ "items": {
+  "railways:buffer": {
+   "mentions": 9,
+   "videos": 1,
+   "first_at": 0.1468,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "railways:fuel_tank": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.6484,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "railways:paint_brush": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.0379,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "railways:handcar": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8814,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "railways:remote_lens": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.449,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "railways:sandy_paint_pitcher": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7854,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "railways:brass_wrapped_locometal": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1135,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "railways:small_buffer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1984,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "railways:portable_fuel_interface": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6513,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "railways:track_phantom": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0395,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "railways:lime_paint_pitcher": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5481,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "railways:red_paint_pitcher": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.731,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "ids": [
+     "railways:track_oak",
+     "railways:track_bamboo",
+     "railways:track_cherry"
+    ],
+    "note": "Guides always open on tracks. Steam n Rails' first-contact feature is simply that every wood type gets its own track, so the mod is visible from the very first rail you place, long before any machinery.",
+    "video": "wbMuvvfxB7I"
+   },
+   {
+    "ids": [
+     "railways:track_oak_wide",
+     "railways:track_oak_narrow"
+    ],
+    "note": "Gauges come after plain tracks and are crafted FROM a finished standard track via a Create sequenced assembly - cut, deploy, press. You cannot make a wide or narrow track directly, so standard track is a hard prerequisite.",
+    "video": "3qnb-8VXaGE"
+   },
+   {
+    "ids": [
+     "railways:handcar"
+    ],
+    "note": "The handcar is presented as the thing you build BEFORE committing to a real train - it replaces the throwaway station-plus-casing-plus-seat contraption players used to assemble just to travel their own line.",
+    "video": "O7Wsjn4v6rE"
+   },
+   {
+    "ids": [
+     "railways:track_coupler",
+     "railways:knuckle_coupler",
+     "railways:screwlink_coupler"
+    ],
+    "note": "Couplers are the mid-tier goal: splitting and joining trains automatically is what turns a decorative railway into logistics.",
+    "video": "wbMuvvfxB7I"
+   }
+  ],
+  "gates": [
+   {
+    "ids": [
+     "railways:remote_lens"
+    ],
+    "note": "HARD GATE, stated in two separate videos: the remote lens only binds to a conductor that is WEARING GOGGLES. Without the goggles the item does nothing, and nothing in the item's own recipe hints at this.",
+    "video": "3qnb-8VXaGE"
+   },
+   {
+    "ids": [
+     "railways:remote_lens"
+    ],
+    "note": "Remote control of a train goes through a redstone link placed on the conductor, not on the train.",
+    "video": "kXKFEHSgjFQ"
+   },
+   {
+    "ids": [
+     "railways:fuel_tank",
+     "railways:portable_fuel_interface"
+    ],
+    "note": "IMPORTANT NON-GATE - do not build progression on this. The liquid fuel system exists but trains do NOT require fuel unless a config flag is switched on. With it off, a fuelled and an unfuelled train race at identical speed. Treat fuel tanks as optional flavour, not a power requirement.",
+    "video": "O7Wsjn4v6rE"
+   },
+   {
+    "ids": [
+     "railways:big_buffer",
+     "railways:buffer",
+     "railways:small_buffer"
+    ],
+    "note": "Track buffers placed directly against a station will trap a train - it cannot be driven off. Leave a gap. Observed live as a bug in the update video.",
+    "video": "O7Wsjn4v6rE"
+   }
+  ],
+  "traps": [
+   {
+    "ids": [
+     "railways:track_monorail"
+    ],
+    "note": "TRAP: bogies can be placed on the top and the bottom of a monorail track, but bogies that touch each other's sticky faces merge into a single carriage and the train refuses to assemble. Monorail builds need deliberate spacing between bogies.",
+    "video": "eo0WehrpXNw"
+   },
+   {
+    "ids": [
+     "railways:track_oak_wide",
+     "railways:track_oak_narrow"
+    ],
+    "note": "Minor trap/annoyance flagged by the guide: there is no quick way to switch a placed track between standard, wide and narrow. Each gauge is a separate crafted item, so committing a long line to the wrong gauge is expensive to undo.",
+    "video": "3qnb-8VXaGE"
+   }
+  ],
+  "signature": [
+   {
+    "ids": [
+     "railways:track_coupler"
+    ],
+    "note": "THE headline feature and the one thing guides call a must-have. A deployer holding a wrench can assemble and disassemble a train automatically, which base Create cannot do at all - in base Create you must walk to a station and do it by hand, and nothing on an assembled train can be interacted with.",
+    "video": "eo0WehrpXNw"
+   },
+   {
+    "ids": [
+     "railways:track_switch_andesite",
+     "railways:track_switch_brass"
+    ],
+    "note": "Track switches are the feature the audience explicitly asked base Create for and did not get. The andesite and brass switches are treated as the mod justifying itself.",
+    "video": "kXKFEHSgjFQ"
+   },
+   {
+    "ids": [
+     "railways:track_phantom"
+    ],
+    "note": "The phantom track is called the most beautiful addition in the mod - a fully functional track that turns invisible unless you are holding track, enabling floating trains and boats on invisible rails. Pure spectacle, very high desirability.",
+    "video": "3qnb-8VXaGE"
+   },
+   {
+    "ids": [
+     "railways:smokestack_coalburner",
+     "railways:smokestack_long"
+    ],
+    "note": "Smokestacks plus the locometal palette are what make a Steam n Rails train look like a real locomotive; they are dyeable and cycle through variants, and the guide dwells on them at length. Cosmetic, but it is a large share of why people install the mod.",
+    "video": "O7Wsjn4v6rE"
+   },
+   {
+    "ids": [
+     "railways:conductor_whistle",
+     "railways:semaphore"
+    ],
+    "note": "Signalling and conductor kit round out the mod's identity as 'real railway operations' rather than Create's minimal train system.",
+    "video": "kXKFEHSgjFQ"
+   }
+  ]
+ }
+}

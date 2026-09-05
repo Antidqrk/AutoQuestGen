@@ -1,0 +1,89 @@
+{
+ "mod": "copycats",
+ "ids_in_jar": 45,
+ "videos": [
+  {
+   "id": "jrC30auMZls",
+   "title": "Infinite Decoration! | Create Copycats+",
+   "channel": "polartt",
+   "views": 58772,
+   "duration": 545,
+   "chars": 9334,
+   "src": "vetted_search"
+  }
+ ],
+ "items": {},
+ "human_notes": {
+  "order": [
+   {
+    "ids": [
+     "copycats:copycat_block",
+     "copycats:copycat_slab",
+     "copycats:copycat_stairs"
+    ],
+    "note": "There is no progression to teach here and the guide teaches none. Copycats+ is a flat expansion of Create's own two copycat blocks - if the player has Create's copycat panel and step, every block in this mod is immediately meaningful. Order for quests should follow shape complexity, not tech tier: plain block, then slab/stairs/wall, then the exotic shapes.",
+    "video": "jrC30auMZls"
+   }
+  ],
+  "gates": [
+   {
+    "ids": [
+     "copycats:copycat_block"
+    ],
+    "note": "The only real prerequisite is understanding Create's copycat mechanic itself - you apply a material to the block and it keeps that material's properties. A quest line should teach the base Create copycat panel/step first; Copycats+ is meaningless before that.",
+    "video": "jrC30auMZls"
+   }
+  ],
+  "traps": [],
+  "signature": [
+   {
+    "ids": [
+     "copycats:copycat_block",
+     "copycats:copycat_slab",
+     "copycats:copycat_stairs",
+     "copycats:copycat_wall"
+    ],
+    "note": "THE POINT OF THE MOD, and it is not decoration - it is inventory compression. The guide's closing argument is that a whole building that needed a full hotbar of logs, stairs, slabs, bricks, brick stairs, walls and their variants collapses into one base block plus four copycat shapes.",
+    "video": "jrC30auMZls"
+   },
+   {
+    "ids": [
+     "copycats:copycat_ghost_block"
+    ],
+    "note": "Standout item. The ghost block keeps the texture but has no hitbox, which players immediately use for hidden doors and secret bases. The guide devotes a whole segment to a hidden base built from these.",
+    "video": "jrC30auMZls"
+   },
+   {
+    "ids": [
+     "copycats:copycat_byte",
+     "copycats:copycat_byte_panel"
+    ],
+    "note": "The bytes are the most-praised shape because multiple bytes stack inside a single block space, letting a player author a custom block face by face - the deepest expression of the mod.",
+    "video": "jrC30auMZls"
+   },
+   {
+    "ids": [
+     "copycats:copycat_box"
+    ],
+    "note": "The box takes a different material on every face; the guide calls out that it and the step are really stacks of separate parts sharing a block.",
+    "video": "jrC30auMZls"
+   },
+   {
+    "ids": [
+     "copycats:copycat_layer",
+     "copycats:copycat_half_layer",
+     "copycats:copycat_half_panel"
+    ],
+    "note": "Layers stack like snow and can be placed vertically, giving arbitrary thickness; the half panel is a one-pixel panel versus Create's three-pixel one. Both are used heavily in the guide's wall-texturing demo.",
+    "video": "jrC30auMZls"
+   },
+   {
+    "ids": [
+     "copycats:copycat_block"
+    ],
+    "note": "Origin note worth carrying into quest text: the copycat family exists because of TRAINS - thin walls that do not eat carriage space. Decoration use came second.",
+    "video": "jrC30auMZls"
+   }
+  ]
+ }
+}

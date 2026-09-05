@@ -1,0 +1,115 @@
+{
+ "mod": "jalnyrsweaponary",
+ "verified_against": "jalnyrsweaponary-1.1.4.jar",
+ "item_count_in_jar": 54,
+ "chain": [
+  {
+   "id": "jalnyrsweaponary:raw_froststeel",
+   "title": "Cold Metal in the Stone",
+   "desc": "Froststeel ore is seeded across the overworld by the mod's own biome modifier, and a lump also turns up in village weaponsmith chests via a global loot modifier."
+  },
+  {
+   "id": "jalnyrsweaponary:froststeel_ingot",
+   "title": "Froststeel Drawn Out",
+   "desc": "A furnace turns the raw lump into the ingot that every froststeel weapon is built from."
+  },
+  {
+   "id": "jalnyrsweaponary:frozen_log",
+   "title": "The Tree That Never Thawed",
+   "desc": "Frozen trees are added to the world by the mod's tree biome modifier; their logs feed the whole frozen wood family."
+  },
+  {
+   "id": "jalnyrsweaponary:frozen_planks",
+   "title": "Planks Cut Cold",
+   "desc": "Any frozen log, wood or stripped variant breaks down into these planks."
+  },
+  {
+   "id": "jalnyrsweaponary:frozen_stick",
+   "title": "A Handle That Bites",
+   "desc": "Every froststeel weapon is hafted on a frozen stick rather than a vanilla one; the same loot modifier also drops one into village weaponsmith chests."
+  },
+  {
+   "id": "jalnyrsweaponary:froststeel_sword",
+   "title": "First Blade of Frost",
+   "desc": "Two froststeel ingots over a frozen stick: the baseline weapon of the froststeel line."
+  },
+  {
+   "id": "jalnyrsweaponary:froststeel_block",
+   "title": "Froststeel, Compressed",
+   "desc": "Nine ingots pressed into a block; it is both storage and the required core of the dual sword."
+  },
+  {
+   "id": "jalnyrsweaponary:dual_froststeel_sword",
+   "title": "Two Blades, One Grip",
+   "desc": "The only froststeel weapon that demands a whole block rather than loose ingots."
+  },
+  {
+   "id": "jalnyrsweaponary:raw_flamemetal",
+   "title": "Ore That Runs Hot",
+   "desc": "Flamemetal ore is placed by its own biome modifier and drops this raw form when broken."
+  },
+  {
+   "id": "jalnyrsweaponary:flamemetal_ingot",
+   "title": "Flamemetal Drawn Out",
+   "desc": "Smelted from the raw lump; the counterpart tier to froststeel."
+  },
+  {
+   "id": "jalnyrsweaponary:flamemetal_sword",
+   "title": "Blade of the Hot Vein",
+   "desc": "Flamemetal ingots on a plain vanilla stick, unlike the froststeel line which insists on a frozen one."
+  },
+  {
+   "id": "jalnyrsweaponary:ancient_stone_bricks",
+   "title": "Walls of a Fallen Kingdom",
+   "desc": "The signature block of the castle structure; it has a loot table and drops itself when mined, so it can only be carried home from the ruin."
+  },
+  {
+   "id": "jalnyrsweaponary:knight_fragment",
+   "title": "What the Knight Leaves",
+   "desc": "The Knight is the mod's real mob, spawned from a mob spawner built into the castle structure, and its loot table drops these fragments."
+  },
+  {
+   "id": "jalnyrsweaponary:knight_ingot",
+   "title": "Fragments Reforged",
+   "desc": "Nine fragments make one knight ingot, the mod's third and highest metal."
+  },
+  {
+   "id": "jalnyrsweaponary:simple_knight_sword",
+   "title": "The Knight's Own Blade",
+   "desc": "Craftable from knight ingots, and also carried by every Knight as equipment and stocked in the castle chest."
+  },
+  {
+   "id": "jalnyrsweaponary:bloody_gemstone",
+   "title": "One Stone Survived the War",
+   "desc": "Placed by hand in the castle's chest inside castle1.nbt; it is the only one of the four gemstones that exists anywhere in the jar."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "jalnyrsweaponary:froststeel_ingot",
+   "members": [
+    "jalnyrsweaponary:froststeel_katana",
+    "jalnyrsweaponary:froststeel_knife",
+    "jalnyrsweaponary:froststeel_spear",
+    "jalnyrsweaponary:froststeel_greatsword",
+    "jalnyrsweaponary:dual_froststeel_sword",
+    "jalnyrsweaponary:flamemetal_katana",
+    "jalnyrsweaponary:flamemetal_knife",
+    "jalnyrsweaponary:froststeel_sword",
+    "jalnyrsweaponary:flamemetal_sword"
+   ]
+  },
+  {
+   "hub": "jalnyrsweaponary:frozen_log",
+   "members": [
+    "jalnyrsweaponary:frozen_wood",
+    "jalnyrsweaponary:frozen_planks",
+    "jalnyrsweaponary:frozen_leaves",
+    "jalnyrsweaponary:frozen_sapling",
+    "jalnyrsweaponary:stripped_frozen_log",
+    "jalnyrsweaponary:stripped_frozen_wood"
+   ]
+  }
+ ],
+ "notes": "Forge, 1.20.1, confirmed from META-INF/mods.toml (modId \"jalnyrsweaponary\", loaderVersion [47,), minecraft dependency 1.20.1; no fabric.mod.json present). ID SET. assets/jalnyrsweaponary/models/item/*.json holds 154 stems but the true item registry is 43: the strict 3-segment intersection against item.jalnyrsweaponary.<name> lang keys removes 90 armour trim overlay models (ten dye/material trims each for the four simple_knight and four triassic_scale pieces) plus 21 paired _2d/_3d weapon display models. Blocks add 11 more, each proved by a blockstate AND a block.jalnyrsweaponary.<name> lang key, giving the verified set of 54 used above. Every id in this file was re-checked against that set on write. NBT-VARIANT CHECK: none needed. Unlike TACZ, this mod registers each weapon as its own item id; the _2d/_3d suffixes are model files referenced from the parent item model's overrides, not registered items, and no item here carries a variant tag. OBTAINABILITY - 15 REGISTERED IDS DROPPED AS UNCOMPLETABLE. jalnyrsweaponary:knight_smithing_template, jurassic_smithing_template, jurassic_leaf, triassic_scale, fiery_gemstone, frosty_gemstone, speedy_gemstone, elite_knight_sword, simple_knight_helmet, simple_knight_chestplate, simple_knight_leggings, simple_knight_boots, flamemetal_spear, knight_spawn_egg and elite_knight_spawn_egg all exist in ModItems.class and ModCreativeModeTabs.class but appear in NO recipe, NO loot table, NO loot modifier and NO structure NBT - a class-by-class scan shows each is referenced only by the registration, creative-tab and datagen classes. Knock-on drops: the four gemstone smithing recipes (bloody_knight_sword, fiery_knight_sword, frosty_knight_sword, speedy_knight_sword) all consume knight_smithing_template as the template slot, so all four are uncompletable even though bloody_gemstone itself is obtainable; triassic_blade needs triassic_scale; jurassic_blade needs both the jurassic template and jurassic_leaf; and the four triassic_scale armour pieces need triassic_scale. That is why the chain stops at the raw bloody_gemstone rather than at a knight sword. VERIFIED SOURCES. Ores: data/jalnyrsweaponary/forge/biome_modifier/{add_froststeel_ore,add_flamemetal_ore,add_tree_frozen}.json place the two ores and the frozen tree. Chest injection: data/forge/loot_modifiers/global_loot_modifiers.json enables froststeel_from_plains and froststeel_wood_from_plains, both conditioned on minecraft:chests/village/village_weaponsmith, adding raw_froststeel and frozen_stick. Mob: data/jalnyrsweaponary/loot_tables/entities/knight.json drops knight_fragment, and KnightEntity.class calls setItemSlot with ModItems.SIMPLE_KNIGHT_SWORD, so the Knight both drops fragments and can drop its blade. Structure: data/jalnyrsweaponary/worldgen/structure/castle1.json plus castle1.nbt, whose raw NBT contains a chest with hard-coded Items entries for jalnyrsweaponary:bloody_gemstone and jalnyrsweaponary:simple_knight_sword and a mob_spawner holding jalnyrsweaponary:knight - there is no LootTable tag anywhere in any of the four structure NBTs, so those chest contents are fixed, not rolled. ENTITY CHECK: three entities are registered (knight, elite_knight, old_man). Only knight has a loot table and only knight has a confirmed world source (the castle spawner), so it is the only safe kill target; elite_knight has no loot table and no spawner placement, and old_man is a passive lore NPC placed in cabin.nbt. No kill step was emitted for either. Ore rule applied: froststeel_ore and flamemetal_ore are quested through their raw drop and smelted ingot rather than as ore blocks, and the stripped_ frozen wood variants are kept out of the chain and confined to the wood wheel. Both wheels are 9 and 6 members. Honest length: this is a small mod and roughly a quarter of its registry is unfinished content, so the chain is 16 steps and is not padded."
+}

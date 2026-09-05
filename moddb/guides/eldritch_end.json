@@ -1,0 +1,64 @@
+{
+ "mod": "eldritch_end",
+ "jar": "Eldritch_End-FORGE-MC1.20.1-0.3.4.jar (ids verified in chains_research/eldritch_end.json; not installed in CREATE FEMBY)",
+ "ids_in_jar": 95,
+ "videos": [
+  {
+   "id": "G7_rhN9V-pU",
+   "title": "8 Mods that finally give us an End Update!",
+   "channel": "KaupenLabs",
+   "views": 26635,
+   "duration": 398,
+   "chars": 6932,
+   "note": "multi-mod roundup; the Eldritch End segment is ~30 seconds of atmosphere"
+  }
+ ],
+ "not_transcribed": [
+  {
+   "id": "efeLLJwFpW0",
+   "title": "Minecraft Eldritch End: The Faceless, Herald of the Void Boss Fight (1.20.x)",
+   "channel": "Dread The Boss Hunter",
+   "why": "transcribed to 0 chars - boss-fight montage with music, no narration. Do not re-spend GPU on it."
+  },
+  {
+   "id": "7nUdvg9HOn0",
+   "title": "I Fought THE FACELESS... (Fear Nightfall)",
+   "channel": "StreetRules",
+   "why": "transcribed to 0 chars - same pattern, music-only short."
+  },
+  {
+   "id": "cuYZtWy_p3w",
+   "title": "What if Minecraft's END Dimension Was GOOD",
+   "channel": "NexusBliss",
+   "why": "transcribed fine (9274 chars) but never mentions Eldritch End at all - it covers a different set of End mods. Banked by an earlier generic-'End' search mismatch."
+  }
+ ],
+ "items": {},
+ "coverage_null": "MEASURED NULL, not an oversight: as of 2026-08 NO narrated English guide to Eldritch End exists on YouTube. The mod is young (0.3.x) and its video landscape is boss-fight montages set to music (two transcribed to 0 characters) plus roundup blurbs. The one usable segment names no item ids, so the items table is legitimately empty. Re-check for guides after the mod's 1.0; until then the chain must come from chains_research/eldritch_end.json, which is unusually deep (loot-table, registry, and compat-class analysis).",
+ "human_notes": {
+  "_source": "one 30-second roundup segment (G7_rhN9V-pU) + jar research in chains_research/eldritch_end.json. Everything tagged [jar] is from the jar work, not video.",
+  "entry": [
+   "None stated by any video. [jar] The real entry is geographic: the mod adds no dimension and no starter machine - you enter it by finding its two End biomes, the Primordial Abyss and the Hasturian Wastes, after the dragon. First quests should be 'stand in the biome / collect its surface blocks' (spire_stone, abysmal_fronds, hasturian_moss), then Etyr ore.",
+   "The roundup's one mechanical claim matches the jar's corruption system: the aberrations do not wait to be hunted, they come to stalk YOU - corruption accrues to the player and draws the mod's horrors out. Quest text should frame the mod as something that happens to the player, not a checklist they walk up to."
+  ],
+  "gates": [
+   "[jar] Corruption gates the mid-game: Ominous Eyes only haunt players who have accumulated corruption, and their 15% drop rings the Eldritch Pedestal. You cannot speedrun the summoning altar without engaging the corruption mechanic.",
+   "[jar] The Faceless (the boss) is summon-only, via the pedestal ritual (Abysmal Pedestal from eight Aberration's Limbs, bound with chains and four Ominous Eyes, consuming an Aberration's Heart) - it is never found wild.",
+   "[jar] The armour tier (etyrite, beyond netherite) is gated on a netherite base plus the runtime-loot-injected etyr_upgrade_pattern."
+  ],
+  "traps": [
+   "NOT VERIFIED BY VIDEO - no narrated guide exists to warn about anything. The jar-side traps from chains_research remain the authority: eldritch_end:hastur is unregistered (a kill:hastur task can never complete), eye/crystal exist only under Spell Engine compat, and the chorb spawn egg has no entity. The 6-second official teaser titles Hastur 'the King in Yellow' - he is marketing, not obtainable content in 0.3.4.",
+   "The mod's showcase videos are pure atmosphere; a player following YouTube will know the boss's look but not the summoning recipe. Quest descriptions must carry the ritual steps themselves rather than assume outside knowledge."
+  ],
+  "signature": [
+   "eldritch_end:etyr_ingot",
+   "eldritch_end:ominous_eye",
+   "eldritch_end:eldritch_pedestal",
+   "kill:eldritch_end:aberration",
+   "kill:eldritch_end:the_faceless"
+  ],
+  "taught": [
+   "The only thing video evidence teaches: the mod's identity and draw. It is pitched as the Lovecraftian nightmare option among End overhauls - the segment's whole thesis is that corruption of everything is the destination - with aberrations stalking the player and bosses standing between them and eldritch powers. Horror-toned quest chapter framing is faithful to how the mod is sold."
+  ]
+ }
+}

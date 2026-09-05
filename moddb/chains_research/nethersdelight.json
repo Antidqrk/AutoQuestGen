@@ -1,0 +1,132 @@
+{
+ "mod": "nethersdelight",
+ "verified_against": "nethersdelight-1.20.1-4.0.jar",
+ "item_count_in_jar": 38,
+ "parent_mod": "farmersdelight",
+ "chain": [
+  {
+   "id": "nethersdelight:iron_machete",
+   "title": "A Blade For Clearing",
+   "desc": "Iron and a stick. Machetes are this mod's own tool class - they sweep through fungus and vines the way a sword never could, and they are the only way to harvest propelplant safely."
+  },
+  {
+   "id": "nethersdelight:blackstone_furnace",
+   "title": "Smelting On Blackstone",
+   "desc": "Eight blackstone. The Nether has no cobblestone, so the first furnace a Nether-native build can make is this one."
+  },
+  {
+   "id": "nethersdelight:hoglin_loin",
+   "title": "The Cut Off A Hoglin",
+   "desc": "Hoglins drop loin through data/nethersdelight/loot_modifiers/hoglin.json. The Nether's only farmable large animal finally yields a proper cut."
+  },
+  {
+   "id": "nethersdelight:hoglin_sirloin",
+   "title": "Loin, Seared",
+   "desc": "Campfire, furnace or smoker. It feeds far better than the vanilla cooked porkchop a hoglin normally drops."
+  },
+  {
+   "id": "nethersdelight:hoglin_hide",
+   "title": "Skinning The Herd",
+   "desc": "Cut from a hoglin with a knife, or scavenged through scavenging_hide_from_hoglin.json. It also cuts down into plain leather."
+  },
+  {
+   "id": "nethersdelight:hoglin_trophy",
+   "title": "Mounted On The Wall",
+   "desc": "Hoglin hide with planks, wool and gold nuggets. Nether's Delight's only decorative trophy, and the mod's completion marker for the hoglin line."
+  },
+  {
+   "id": "nethersdelight:raw_stuffed_hoglin",
+   "title": "Stuffed Whole",
+   "desc": "Hoglin hide and loin packed with ham, nether salad, crimson fungus and both root types. The largest single assembly in the mod."
+  },
+  {
+   "id": "nethersdelight:stuffed_hoglin",
+   "title": "The Feast Block",
+   "desc": "The stuffed hoglin cooked. It serves several players from one block, which is what Farmer's Delight feasts are for."
+  },
+  {
+   "id": "nethersdelight:strider_slice",
+   "title": "Carving A Strider",
+   "desc": "Striders drop slices through strider.json, and ground strider cuts into more. Nobody expected the lava taxi to be edible."
+  },
+  {
+   "id": "nethersdelight:grilled_strider",
+   "title": "Strider Over Coals",
+   "desc": "Cooking Pot: raw strider with crimson and warped fungus and roots. It needs both Nether forests, which forces you to travel."
+  },
+  {
+   "id": "nethersdelight:strider_moss_stew",
+   "title": "Stewed With Moss",
+   "desc": "The other strider dish, built from the same four fungal ingredients."
+  },
+  {
+   "id": "nethersdelight:propelplant_cane",
+   "title": "The Cane That Wants To Explode",
+   "desc": "Cut propelplant on a board and it also yields gunpowder. It grows on soul soil and is the mod's one genuinely novel crop."
+  },
+  {
+   "id": "nethersdelight:propelpearl",
+   "title": "The Seed Of The Blast",
+   "desc": "Propelpearls are the propelplant's fruit and the reagent for the torch, the skewer and the magma gelatin."
+  },
+  {
+   "id": "nethersdelight:propelplant_torch",
+   "title": "A Torch That Launches",
+   "desc": "Propelpearl and propelplant cane. Thrown, it plants light at range - the most useful thing in the mod for exploring a Nether ceiling."
+  },
+  {
+   "id": "nethersdelight:rich_soul_soil",
+   "title": "Soil Worth Planting",
+   "desc": "Rich soul soil is what propelplant needs to grow well, and the Nether's answer to Farmer's Delight's rich soil."
+  },
+  {
+   "id": "nethersdelight:soul_compost",
+   "title": "Composting Without Grass",
+   "desc": "Bone meal, soul soil, twisting vines and warped roots - or hoglin hide instead of the roots. The Nether has no compostable greenery, so this is the substitute."
+  },
+  {
+   "id": "nethersdelight:nether_skewer",
+   "title": "On A Blaze Rod",
+   "desc": "Blaze rod, propelpearl and raw strider. A skewer that needs a Fortress kill to assemble."
+  },
+  {
+   "id": "nethersdelight:magma_gelatin",
+   "title": "Set With Lava",
+   "desc": "Cooking Pot: a lava bucket, magma cream and a propelpearl. The strangest dessert in the Farmer's Delight ecosystem."
+  },
+  {
+   "id": "nethersdelight:crimson_fungus_colony",
+   "title": "Farming The Crimson",
+   "desc": "Knife a crimson fungus into a colony block. Colonies regrow, which turns a one-shot fungus into a renewable farm."
+  },
+  {
+   "id": "nethersdelight:mimicarnation",
+   "title": "The Flower That Is Not A Flower",
+   "desc": "Mimicarnation is Nether's Delight's decorative plant, and the only flower the Nether grows on its own terms."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "nethersdelight:iron_machete",
+   "members": [
+    "nethersdelight:golden_machete",
+    "nethersdelight:diamond_machete",
+    "nethersdelight:netherite_machete",
+    "nethersdelight:blackstone_blast_furnace",
+    "nethersdelight:nether_brick_smoker",
+    "nethersdelight:blackstone_stove"
+   ]
+  },
+  {
+   "hub": "nethersdelight:stuffed_hoglin",
+   "members": [
+    "nethersdelight:plate_of_stuffed_hoglin_ham",
+    "nethersdelight:plate_of_stuffed_hoglin_roast",
+    "nethersdelight:plate_of_stuffed_hoglin_snout",
+    "nethersdelight:hoglin_ear",
+    "nethersdelight:warped_moldy_meat"
+   ]
+  }
+ ],
+ "notes": "34 ids resolve as assets/nethersdelight/models/item/<id>.json intersected with item./block. lang keys. Mob drops verified in data/nethersdelight/loot_modifiers/: hoglin.json (hoglin_loin), strider.json (strider_slice), scavenging_hide_from_hoglin.json (hoglin_hide), plus chopping modifiers that make hoglins and pigs give farmersdelight:ham and smoked_ham on the cutting board. The machete is this mod's own tool type and is what the propelplant and fungus harvesting is balanced around; iron/gold/diamond/netherite versions all exist and the iron and gold ones can be smelted back to nuggets. One id used as an ingredient in several recipes - nethersdelight:raw_strider - has no item model in this jar version and so failed the set check; strider_slice, ground_strider and grilled_strider are used instead. The three potted/berry lang-only entries (potted_mimicarnation, propelplant_berry_cane, propelplant_berry_stem) are block states rather than obtainable items and are excluded. Parent items this addon assumes you already have: farmersdelight:cutting_board, farmersdelight:cooking_pot, farmersdelight:ham, farmersdelight:nether_salad, farmersdelight:rich_soil, any forge:tools/knives knife, Nether access with crimson and warped forests."
+}

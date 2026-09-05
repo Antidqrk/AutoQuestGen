@@ -1,0 +1,216 @@
+{
+ "mod": "valoria",
+ "verified_against": "Valoria-1.20.1-1.0.2.10.jar",
+ "item_count_in_jar": 456,
+ "chain": [
+  {
+   "id": "valoria:aloe_piece",
+   "title": "Herbal Healing",
+   "desc": "Aloe grows wild in warm biomes; break it for pieces. It is the mod's first advancement and the base of bandages - Valoria's bosses punish anyone who fights without a healing plan."
+  },
+  {
+   "id": "valoria:aloe_bandage",
+   "title": "First Help",
+   "desc": "An aloe piece wrapped in string gives slow, long regeneration you can use mid-fight. Upgrade it with redstone for the improved version the Basic Medicine advancement asks for."
+  },
+  {
+   "id": "valoria:alchemy_station_tier_1",
+   "title": "The Alchemist's Corner",
+   "desc": "Planks, a book, candles and a bottle build the first Alchemy Station - healing and cleansing vials start here, and cleansing is what keeps the Void's nihility sickness off you later."
+  },
+  {
+   "id": "valoria:cobalt_ingot",
+   "title": "Blue Metal, Big Plans",
+   "desc": "Cobalt ore generates through the overworld; smelt it like iron. On its own it makes decent gear - fused with gold it becomes the alloy this whole mod's smithing runs on."
+  },
+  {
+   "id": "valoria:black_gold_ingot",
+   "title": "Anomalous Alloy",
+   "desc": "One gold ingot plus one cobalt ingot, shapeless. Black gold armor is the blank canvas: every elemental armor set is infused from black gold pieces, so make a full set plus spares."
+  },
+  {
+   "id": "valoria:heavy_workbench",
+   "title": "The Tinkerer's Bench",
+   "desc": "Paper, iron and planks make the Heavy Workbench - the crafting bench for jade tools, relic-gold trinkets, ancient ingots and every blueprint-grade weapon that a normal table refuses."
+  },
+  {
+   "id": "valoria:stone_crusher",
+   "title": "Crack It Open",
+   "desc": "Stone, iron and logs build the Stone Crusher: set a geode or gem on it and right-click with a pickaxe. Dirt and stone geodes from digging hide the amber, ruby, sapphire and amethyst that jewelry needs."
+  },
+  {
+   "id": "valoria:elemental_crystal",
+   "title": "Colorful Crystal",
+   "desc": "Elementals roam the world - Ents and nature golems in forests, king crabs on beaches, river golems, devils in the Nether - and all can drop an elemental crystal, the seed of the infusion system."
+  },
+  {
+   "id": "valoria:elemental_manipulator",
+   "title": "Elemental Fusion",
+   "desc": "Black gold ingots around an elemental crystal build the Elemental Manipulator. This machine performs infusion: black gold gear plus an elemental catalyst in, elemental gear out."
+  },
+  {
+   "id": "valoria:harmony_heart",
+   "title": "Heart of Harmony",
+   "desc": "Ents in forests drop harmony hearts. One craft turns a heart into a Nature Gift - the catalyst for nature infusion, and later an ingredient of the crown that summons a boss."
+  },
+  {
+   "id": "valoria:nature_ingot",
+   "title": "Power of the Forest",
+   "desc": "Infuse a black gold ingot with a Nature Gift in the Manipulator. Nature ingots make the nature smithing template, turning black gold armor into the Harmony set - your first elemental tier."
+  },
+  {
+   "id": "valoria:devil_heart",
+   "title": "Heart of Flames",
+   "desc": "Devils - the fire elementals - stalk the Nether and drop devil hearts. Craft one into Infernal Stone, the catalyst for infernal infusion."
+  },
+  {
+   "id": "valoria:infernal_ingot",
+   "title": "Power of the Underworld",
+   "desc": "Black gold plus Infernal Stone in the Manipulator makes infernal ingots. Its template builds on the NETHERITE upgrade template, and infernal armor is the piece the final Void set upgrades from."
+  },
+  {
+   "id": "valoria:oceanic_shell",
+   "title": "Spoils of the Deep",
+   "desc": "King crabs on beaches, river golems, and the swamp's scourges drop oceanic shells - the deep elementals' catalyst. The King Crab hides in its shell below 30% health, so keep hitting it."
+  },
+  {
+   "id": "valoria:aquarius_ingot",
+   "title": "Power of the Bottomless Sea",
+   "desc": "Black gold infused with an oceanic shell yields aquarius ingots for the Depth armor set and the Aquarius bow line - the third elemental tier, sitting beside nature and infernal."
+  },
+  {
+   "id": "valoria:necromancer_grimoire",
+   "title": "A Book Best Left Closed",
+   "desc": "Draugrs and Sorcerers haunting the surface crypts drop this ash-covered tome. The codex is explicit: it is a vessel for the will of one who once ruled death."
+  },
+  {
+   "id": "kill:valoria:necromancer",
+   "title": "The Last Rite",
+   "desc": "Find a buried Necromancer Crypt and lay the grimoire on its ancient altar - the master rises. His treasure bag holds ethereal weapons, the Beast, and a fragment of the Muramasa."
+  },
+  {
+   "id": "valoria:harmony_crown",
+   "title": "Crown of the Ent King",
+   "desc": "Harmony heart, gaib roots and a Nature Gift weave the crown of the last Ent king. Wearing the forests' will, you can awaken Dryador - the guardian spirit the enraged forests answer to."
+  },
+  {
+   "id": "kill:valoria:dryador",
+   "title": "The Fallen Emperor",
+   "desc": "Dryador, Emperor of Nature, attacks without a word - something has driven the most peaceable Emperor berserk. His treasure bag carries the nature smithing template and Valoria portal frame shards."
+  },
+  {
+   "id": "valoria:valoria_portal_frame_shard",
+   "title": "Shard of a Forgotten World",
+   "desc": "Dryador's treasure bag holds 2-8 shards, and four of them craft into twelve portal frame blocks. Build the frame, light it, and the way to the forgotten lands opens."
+  },
+  {
+   "id": "dim:valoria:the_valoria",
+   "title": "The Forgotten Lands",
+   "desc": "Valoria is a world half-eaten by the Void - shade forests, barrens and flesh biomes under rising nihility levels that damage you over time. Bring cleansing vials and watch the Nihility Monitor."
+  },
+  {
+   "id": "valoria:jade",
+   "title": "Shiny!",
+   "desc": "Jade ore is native to the Valoria dimension. At the Heavy Workbench it becomes katanas, scythes, spears and a multi-tool - fast, sharp gear for a hostile world."
+  },
+  {
+   "id": "valoria:pyratite",
+   "title": "Explosive One",
+   "desc": "Pyratite is Valoria's volatile mineral - armor, spears, arrows and charges that trade safety for blast power. Mine it before the locals introduce themselves."
+  },
+  {
+   "id": "structure:valoria:fortress",
+   "title": "The Void Fortress",
+   "desc": "A ruined bastion that once sealed evil beyond the edge of the world, found anywhere in Valoria. Its halls hold nihility shards, void keys, and the altar the final boss sleeps under."
+  },
+  {
+   "id": "valoria:nihility_shard",
+   "title": "Essence of Nothing",
+   "desc": "Corrupted trolls, scavengers and wicked scorpions drop nihility shards; fortress and dungeon chests hold more. They are the Void catalyst for infusion and the void smithing template."
+  },
+  {
+   "id": "valoria:void_ingot",
+   "title": "Power of Nothingness",
+   "desc": "Black gold infused with a nihility shard makes void ingots. With a netherite upgrade template they craft the void smithing template - the doorway to the strongest armor in the mod."
+  },
+  {
+   "id": "valoria:awakened_void_chestplate",
+   "title": "Awakened by the Void",
+   "desc": "Run black gold or infernal armor through the Manipulator with a void template for the Awakened Void set - top-tier protection and the nihility resistance the deep fortress demands."
+  },
+  {
+   "id": "valoria:suspicious_gem",
+   "title": "Fragment of the Erased",
+   "desc": "An uncharged shard block, a wicked amethyst block and a soul shard block craft the gem of an entity whose name was erased. It exists for one ritual, deep within the fortress."
+  },
+  {
+   "id": "kill:valoria:wicked_crystal",
+   "title": "Heart of the Fortress",
+   "desc": "Offer the suspicious gem at the wicked altar and the fortress's twisted guardian wakes. Its treasure bag pays out void weapons, the crystal summon book, and fragments of legendary blades."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "valoria:amber_gem",
+   "members": [
+    "valoria:ruby_gem",
+    "valoria:sapphire_gem",
+    "valoria:amethyst_gem",
+    "valoria:dirt_geode",
+    "valoria:stone_geode"
+   ]
+  },
+  {
+   "hub": "valoria:jeweler_table",
+   "members": [
+    "valoria:golden_chain",
+    "valoria:golden_necklace_amber",
+    "valoria:golden_ring_ruby",
+    "valoria:iron_necklace_sapphire",
+    "valoria:iron_ring_amber"
+   ]
+  },
+  {
+   "hub": "valoria:relic_gold",
+   "members": [
+    "valoria:empty_totem",
+    "valoria:empty_gazer",
+    "valoria:empty_winglet"
+   ]
+  },
+  {
+   "hub": "valoria:iron_katana",
+   "members": [
+    "valoria:diamond_katana",
+    "valoria:netherite_katana",
+    "valoria:jade_katana",
+    "valoria:diamond_scythe",
+    "valoria:nature_scythe",
+    "valoria:infernal_scythe",
+    "valoria:aquarius_scythe",
+    "valoria:void_scythe"
+   ]
+  },
+  {
+   "hub": "valoria:keg",
+   "members": [
+    "valoria:beer_cup",
+    "valoria:mead_bottle",
+    "valoria:wine_bottle",
+    "valoria:kvass_bottle",
+    "valoria:rum_bottle"
+   ]
+  },
+  {
+   "hub": "valoria:prospectors_pick",
+   "members": [
+    "valoria:soul_collector",
+    "valoria:void_key",
+    "valoria:ancient_ingot",
+    "valoria:crimtane_ingot",
+    "valoria:pearlium_ingot"
+   ]
+  }
+ ],
+ "notes": "Order follows the mod's own advancement tree (data/valoria/advancements/valoria/) and its in-game codex text (codex.valoria.* lang keys), which spell out the intended route: aloe medicine -> elemental crystal -> Elemental Manipulator -> the four core infusions -> Necromancer (grimoire from Draugrs/Sorcerers, placed on the cryptic altar in a Necromancer Crypt) -> Dryador (summoned with the Harmony Crown) -> Valoria dimension (portal frame shards ONLY drop from Dryador's treasure bag, 2-8 per bag; 4 shards = 12 frame blocks) -> Void Fortress -> Wicked Crystal (suspicious gem offered at the wicked altar). Infusion verified from recipes: manipulator recipes turn black_gold_ingot/armor + catalyst (nature_gift from harmony_heart, infernal_stone from devil_heart, oceanic_shell from king crabs, nihility_shard from Valoria mobs) into nature/infernal/aquarius/void ingots and armor; awakened void armor upgrades from black gold or infernal pieces. Cobalt ore generates in the overworld (forge/biome_modifier/dimension_overworld_ores.json), so black gold is pre-boss. Jade and pyratite are advancement-gated behind visiting the dimension. Nihility is a dimension-wide damage mechanic (attributes + cleansing vials + nihility_monitor). Boss kill targets use entity ids necromancer, dryador, wicked_crystal (each drops its treasure bag item). Keg brewery, jewelry and relic-gold trinkets are side content, kept in collections. Item count = item.valoria.* lang keys (456; blocks add 427 more)."
+}

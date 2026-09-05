@@ -1,0 +1,167 @@
+{
+ "mod": "betterarcheology",
+ "verified_against": "betterarcheology-1.2.1-1.20.1.jar",
+ "item_count_in_jar": 56,
+ "chain": [
+  {
+   "id": "betterarcheology:iron_brush",
+   "title": "A Brush That Lasts",
+   "desc": "Vanilla's brush crumbles after a few dozen blocks and you are about to brush hundreds. Make one iron brush before you go looking for a dig site."
+  },
+  {
+   "id": "betterarcheology:artifact_shards",
+   "title": "Shards In The Dirt",
+   "desc": "Brushed out of the suspicious sand, dirt and gravel that the mod seeds through its ruins, and shaken out of smashed Ancient Vases. You need nine for one artifact, so hoard them."
+  },
+  {
+   "id": "betterarcheology:unidentified_artifact",
+   "title": "Nine Shards, One Lump",
+   "desc": "Nine shards press into a single unidentified lump. It is useless on its own - it exists to be fed into the Archeology Table."
+  },
+  {
+   "id": "betterarcheology:archeology_table",
+   "title": "Where Digs Get Read",
+   "desc": "Identifies artifacts, and doubles as a villager job site: put one next to an unemployed villager and you get an Archeologist. Build one and the mod's real loop opens up."
+  },
+  {
+   "id": "minecraft:enchanted_book",
+   "title": "Read The Artifact",
+   "desc": "The table turns an Unidentified Artifact into an Identified Artifact - an enchanted book holding Tunneling, Soaring Winds or Penetrating Strike. Which one is random, so plan on identifying several."
+  },
+  {
+   "id": "betterarcheology:bomb",
+   "title": "Faster Than A Shovel",
+   "desc": "A Rusty Bomb strips the overburden off a dig site in one go. Cheap enough to spam once you have gunpowder, and it also turns up in ruin chests."
+  },
+  {
+   "id": "betterarcheology:vase",
+   "title": "Take The Vase Whole",
+   "desc": "Break an Ancient Vase normally and it shatters into shards and supplies. Break it with Silk Touch and you keep the vase itself, which is the only way to move one home."
+  },
+  {
+   "id": "betterarcheology:cracked_mud_bricks",
+   "title": "Smelt The Ruin Brick",
+   "desc": "Smelt vanilla mud bricks into the cracked brick the mod's desert ruins are built from. There are slab and stair recipes too, so this is your matching build set."
+  },
+  {
+   "id": "structure:betterarcheology:catacombs",
+   "title": "Into The Catacombs",
+   "desc": "The mod's big underground dungeon, and the densest source of vases, chests and rotten timber. Bring the bombs; the corridors are long."
+  },
+  {
+   "id": "betterarcheology:rotten_log",
+   "title": "Silk Touch The Timber",
+   "desc": "Rotten Logs only drop themselves under Silk Touch - hit one with a plain axe and you get sticks. Grab a stack while you are down there."
+  },
+  {
+   "id": "betterarcheology:rotten_planks",
+   "title": "A Whole Wood Set From A Ruin",
+   "desc": "Rotten logs crush into planks, and from there the usual slabs, stairs, fences, doors and trapdoors. The only decayed wood palette in the pack."
+  },
+  {
+   "id": "betterarcheology:radiance_totem",
+   "title": "Standing In The Catacombs",
+   "desc": "A placed block in one of the catacomb's deep rooms - break it and carry it out. Set down at home it outlines nearby entities through walls and steadily damages hostile mobs within ten blocks, so one guards a whole base."
+  },
+  {
+   "id": "betterarcheology:chicken_fossil_head",
+   "title": "Brush Out A Skull",
+   "desc": "Fossiliferous Dirt is the grey bone-flecked block inside the mod's fossil sites; brushing it yields a skull or a body, never both at once."
+  },
+  {
+   "id": "betterarcheology:chicken_fossil",
+   "title": "Two Halves Make A Fossil",
+   "desc": "Skull plus body assembles the display block. Standing near a placed Chicken-Fossil gives you slow falling, so it earns a spot by a drop shaft."
+  },
+  {
+   "id": "betterarcheology:wolf_fossil",
+   "title": "The Taiga Dig",
+   "desc": "Assembled from parts brushed out of the taiga fossil site. Placed, it makes skeletons keep their distance - about twenty blocks of it."
+  },
+  {
+   "id": "betterarcheology:guardian_fossil",
+   "title": "The Underwater Dig",
+   "desc": "The parts are buried in the ocean-floor ruins, which is the hard dig of the set. Placed, it grants water breathing - useful right where you found it."
+  },
+  {
+   "id": "betterarcheology:diamond_brush",
+   "title": "Diamond Bristles",
+   "desc": "Brushes far longer than iron. Worth it once you are working a whole catacomb rather than a single sand patch, and it shows up in jungle temple chests."
+  },
+  {
+   "id": "betterarcheology:netherite_brush",
+   "title": "Insane Investment",
+   "desc": "A netherite ingot spent on a brush. The mod's own advancement calls this a questionable choice; it is also the last brush you will ever need."
+  },
+  {
+   "id": "betterarcheology:torrent_totem",
+   "title": "Prize Of The Sunken Ruins",
+   "desc": "Found in the underwater ruin chests. Held and used on land it launches you forward in a torrent dash - the mod's mobility item."
+  },
+  {
+   "id": "betterarcheology:soul_totem",
+   "title": "Prize Of The Mesa",
+   "desc": "Chest loot from the mesa ruins. Using it damages the target and heals you for it, which makes it a real combat option rather than a trophy."
+  },
+  {
+   "id": "betterarcheology:growth_totem",
+   "title": "The Bloom In The Light Temple",
+   "desc": "Grown in the Light Temple's flower room, and nowhere else in the world. Placed above a farm it randomly bone-meals crops within five blocks, for free and forever, so one is all you ever need."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "betterarcheology:chicken_fossil",
+   "note": "The remaining fossil parts and species. Each fossil is a head plus a body brushed out of Fossiliferous Dirt, then crafted together. Effects: chicken = slow falling, wolf = skeletons flee, ocelot = creepers flee, guardian = water breathing; sheep, creeper and villager are display pieces (the villager fossil holds an item on its arms).",
+   "members": [
+    "betterarcheology:chicken_fossil_body",
+    "betterarcheology:wolf_fossil_head",
+    "betterarcheology:wolf_fossil_body",
+    "betterarcheology:ocelot_fossil",
+    "betterarcheology:ocelot_fossil_head",
+    "betterarcheology:ocelot_fossil_body",
+    "betterarcheology:sheep_fossil",
+    "betterarcheology:sheep_fossil_head",
+    "betterarcheology:sheep_fossil_body",
+    "betterarcheology:creeper_fossil",
+    "betterarcheology:creeper_fossil_head",
+    "betterarcheology:creeper_fossil_body",
+    "betterarcheology:guardian_fossil_head",
+    "betterarcheology:guardian_fossil_body",
+    "betterarcheology:villager_fossil",
+    "betterarcheology:villager_fossil_head",
+    "betterarcheology:villager_fossil_body"
+   ]
+  },
+  {
+   "hub": "betterarcheology:rotten_planks",
+   "note": "The full rotten wood set, all crafted down from Silk Touched rotten logs.",
+   "members": [
+    "betterarcheology:rotten_slab",
+    "betterarcheology:rotten_stairs",
+    "betterarcheology:rotten_fence",
+    "betterarcheology:rotten_fence_gate",
+    "betterarcheology:rotten_door",
+    "betterarcheology:rotten_trapdoor",
+    "betterarcheology:rotten_pressure_plate"
+   ]
+  },
+  {
+   "hub": "betterarcheology:cracked_mud_bricks",
+   "note": "Cracked mud brick shapes, from crafting or the stonecutter.",
+   "members": [
+    "betterarcheology:cracked_mud_brick_slab",
+    "betterarcheology:cracked_mud_brick_stairs"
+   ]
+  },
+  {
+   "hub": "betterarcheology:vase",
+   "note": "Vase colour variants. All are named 'Ancient Vase' in game and all need Silk Touch to collect intact.",
+   "members": [
+    "betterarcheology:vase_creeper",
+    "betterarcheology:vase_green"
+   ]
+  }
+ ],
+ "notes": "LOADER: META-INF/mods.toml, modId betterarcheology, 1.20.1 Forge. The mod spells it 'archeology' with one A everywhere, including in every id; the Modrinth slug is better-archeology. 'Even Better Archeology' is a different, Fabric-only project - do not mix their ids.\n\nORDER SOURCE: the author's own advancement tree in data/betterarcheology/advancements/, which is the strongest evidence available. Two branches hang off vanilla adventure/root: loot_vase_broken ('Smashing Success') -> artifact_shards ('Shattered Knowledge') -> unidentified_artifact ('It's all coming together: Craft an Unidentified Artifact from Shards. Now the identifying begins!'), and fossil_found ('Ancient Treasure') -> all_fossils_found ('Paleontologist's Pride'). insane_investment sits on its own for the netherite brush. Crafting order was cross-checked against data/betterarcheology/recipes/.\n\nCRITICAL - fossiliferous_dirt IS NOT OBTAINABLE. data/betterarcheology/loot_tables/blocks/fossiliferous_dirt.json has exactly one pool that drops minecraft:bone, with no Silk Touch alternative. A previous version of this chain asked the player to obtain betterarcheology:fossiliferous_dirt, which is an impossible quest. Same trap for suspicious_dirt and suspicious_red_sand: both loot tables drop minecraft:air. Never emit an item quest for any of those three - they are brush targets, not collectibles.\n\nCRITICAL - identified_artifact IS NOT AN ITEM. item.betterarcheology.identified_artifact is a lang key used by minecraft:set_name inside data/betterarcheology/loot_tables/identifying_loot.json; the actual result of identifying is a minecraft:enchanted_book with a custom name and one of three custom enchantments. There is no models/item/identified_artifact.json. Never write 'betterarcheology:identified_artifact' as an id.\n\nSILK TOUCH GATES: every rotten wood block and the three loot vases only drop themselves under Silk Touch (checked against each file in loot_tables/blocks/). chiseled_bone_block and infested_mud_bricks are the same. Quests for those items must say Silk Touch or players will file a bug.\n\nTHE IDENTIFYING LOOP is the mod's actual payoff. data/betterarcheology/recipes/*_from_identifying.json define three recipes of type betterarcheology:identifying, all with input unidentified_artifact, producing books for betterarcheology:penetrating_strike ('Partially ignores effects of Protection Enchantments'), betterarcheology:soaring_winds ('startup-boost when using an Elytra') and betterarcheology:tunneling ('Also breaks the Block below the mined block'). The outcome is random across the three, which is why the chain says to expect several.\n\nFOSSIL EFFECTS are confirmed by the mod's own config file (betterarcheology-common.toml, [Fossils] section): chickenFossilEffectsEnabled = slow falling, ocelotFossilEffectsEnabled = creepers flee, wolfFossilEffectsEnabled = skeletons flee, guardianFossilEffectsEnabled = water breathing, fossilFleeRange = 20 blocks. Totem numbers likewise come from the [Totems] section: growthTotemGrowRadius = 5, radianceTotemRadius = 10, radianceTotemDamage = 4 half-hearts.\n\nTOTEM SOURCES. Two of the four are chest loot and two are placed blocks, and an earlier draft had the two placed ones swapped - it put the Growth Totem in the catacombs and the Radiance Totem in the light temple. Both are wrong. The truth, from decompressing every file in data/betterarcheology/structures/ and searching the block palettes:\n  - torrent_totem: chest loot, archeology/chest_underwater.json and chest_loot_prototype.json.\n  - soul_totem: chest loot, archeology/chest_mesa_ruins.json and chest_sculk_sword.json.\n  - radiance_totem: a PLACED BLOCK in catacombs/catacombs_room_5.nbt, and in no other structure. It appears in NO loot table except blocks/radiance_totem.json (its own break drop). Note the trap: archeology/chest_radiance_totem.json exists and does NOT contain the totem - it is the ordinary chest that sits in that room (rotten flesh, spider eye, bone, compass, music disc, raw iron).\n  - growth_totem: a PLACED BLOCK in light_temple/flower_room.nbt, and in no other structure. Its own break drop is blocks/growth_totem.json. Matched by the unlisted advancement 'Where you least expect it - Find the life that grew among the dead'.\nBoth placed totems must be broken and carried home, so a quest for either is an explore-and-take, never a craft and never a chest roll.\n\nSTRUCTURES verified in data/betterarcheology/worldgen/structure/: archeologist_camp_grassy, archeologist_camp_redsand, archeologist_camp_sand, buried_ruins_sand, catacombs, desert_obelisk, fossil_chicken, fossil_chicken_birch, fossil_creeper, fossil_jungle_0, fossil_jungle_1, fossil_sheep_0, fossil_wolf, light_temple, mesa_ruins, mott, ruins_sand, stonehenge_grassy, temple_jungle, tumulus_grassy, underwater_0..3, villager_grave. Only 'catacombs' is used as a step id; the rest are safe to reference if a pack wants more location quests. Two exploration maps exist (filled_map.catacombs, filled_map.light) built on structure tags on_catacombs_explorer_map and on_light_explorer_map - they are minecraft:map items with an exploration_map function, NOT mod items, so they cannot be used as quest ids.\n\nARCHEOLOGIST VILLAGER: ModVillagers.class registers profession 'archeologist' with POI 'archeology_table_poi', and data/minecraft/tags/point_of_interest_type/ points that POI at the Archeology Table. That is why the table is described as a job site.\n\nDELIBERATELY LEFT OUT: evoker_trap (a worldgen trap block), chiseled_bone_block and infested_mud_bricks (decor, Silk Touch only), the loot_vase* block forms (the vase* items are the collectible forms), and the recipe-only advancement files."
+}

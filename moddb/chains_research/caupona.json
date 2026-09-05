@@ -1,0 +1,203 @@
+{
+ "mod": "caupona",
+ "verified_against": "caupona-1.20.1-0.4.14.jar",
+ "item_count_in_jar": 250,
+ "chain": [
+  {
+   "id": "caupona:mud_kitchen_stove",
+   "title": "Mud And Drystone",
+   "desc": "Cobblestone and dirt. The Roman kitchen starts with the cheapest stove in the game, and every pot in the mod has to stand on a stove to do anything."
+  },
+  {
+   "id": "caupona:clay_cistern",
+   "title": "Throw A Clay Pot",
+   "desc": "Clay balls around a stick. Unfired, it is only a shape; it will not hold heat yet."
+  },
+  {
+   "id": "caupona:stew_pot",
+   "title": "Fire The Stew Pot",
+   "desc": "Smelt the clay pot into an Earthen Stew Pot. This is the vessel every soup in Caupona is cooked in, and it works by fluid, not by slots."
+  },
+  {
+   "id": "caupona:water",
+   "title": "Plain Water In A Bowl",
+   "desc": "Caupona's bowl recipes turn a fluid in a pot into a held item. minecraft:water becomes caupona:water, and that conversion is the pattern behind all thirty-nine dishes."
+  },
+  {
+   "id": "caupona:nail_soup",
+   "title": "Boil It Two Hundred Ticks",
+   "desc": "Water left boiling on the stove for 200 ticks becomes Nail Soup - soup made from nothing, named after the folk tale. It is the mod's first joke and its first real dish."
+  },
+  {
+   "id": "caupona:stock",
+   "title": "Draw A Stock",
+   "desc": "Stock is the fluid nearly every other soup is built on top of, and it is what the dolium wants when it makes an aspic."
+  },
+  {
+   "id": "caupona:bamboo_skimmer",
+   "title": "Skim The Pot",
+   "desc": "Bamboo and a stick. The skimmer lifts solids out of a boiling pot, which is how you separate what you cooked from what you cooked it in."
+  },
+  {
+   "id": "caupona:mud_counter_with_dolium",
+   "title": "Sink A Dolium",
+   "desc": "A stew pot, terracotta, cobblestone and dirt. The dolium is a buried fermenting jar and the second machine of the mod; thirty-three of its recipes are things no pot can make."
+  },
+  {
+   "id": "caupona:walnut_sapling",
+   "title": "A Sapling From The Jar",
+   "desc": "Saplings for walnut, fig and wolfberry come out of the dolium rather than off a tree. The orchard is a thing you brew."
+  },
+  {
+   "id": "caupona:walnut",
+   "title": "Walnuts",
+   "desc": "Walnut fruit blocks at ages one to four drop ordinary Walnuts. They are food, they are dye, and they are the base of the gravy boat."
+  },
+  {
+   "id": "patchouli:guide_book",
+   "title": "Vade Mecum For Innkeepers",
+   "desc": "A fig, a walnut, wolfberries and a bowl of plain water crafted onto a book. The mod ships its own manual and makes you grow the whole orchard before it will hand it over."
+  },
+  {
+   "id": "caupona:copper_frying_pan",
+   "title": "The Copper Pan",
+   "desc": "Copper and a stick. Frying is a separate recipe type from boiling, with its own eleven outputs, and the pan is the only way in."
+  },
+  {
+   "id": "caupona:leaden_walnut",
+   "title": "Leave One On The Tree",
+   "desc": "A walnut fruit left to reach age FIVE stops dropping walnuts and drops a Leaden Walnut instead. It is the only source of lead in the mod, and you get it by being patient rather than by mining."
+  },
+  {
+   "id": "caupona:litharge_cake",
+   "title": "Crush It Under An Anvil",
+   "desc": "Dolium: one leaden walnut with an anvil above it, no fluid at all. The result is a Litharge Cake, litharge being the lead oxide the Romans actually cooked with."
+  },
+  {
+   "id": "caupona:lead_nugget",
+   "title": "Smelt Out The Lead",
+   "desc": "Furnace or blast furnace on the litharge cake. Lead in Caupona is a cooking by-product, which is a genuinely unusual place for a metal to come from."
+  },
+  {
+   "id": "caupona:lead_ingot",
+   "title": "Nine Nuggets Make An Ingot",
+   "desc": "The ingot registers into forge:ingots/lead, so anything else in the pack that wants lead can be fed from a walnut tree."
+  },
+  {
+   "id": "caupona:lead_stew_pot",
+   "title": "The Lead Stew Pot",
+   "desc": "Lead ingots and sticks. Lead cookware unlocks the sweeter, historically alarming half of the recipe book - the Romans boiled must in lead and called the result delicious."
+  },
+  {
+   "id": "caupona:situla",
+   "title": "The Situla",
+   "desc": "Lead nuggets around an iron ingot. A Roman bucket, and the vessel that moves soup between pots."
+  },
+  {
+   "id": "caupona:brick_kitchen_stove",
+   "title": "Build In Brick",
+   "desc": "Brick slabs over bricks and clay. The brick stove is the permanent kitchen, and it is what a caupona actually looked like."
+  },
+  {
+   "id": "caupona:snail_bait",
+   "title": "Bait For Snails",
+   "desc": "Dolium: bread, two walnuts and sugar or honeycomb steeped in 500 of bone gelatin. Nothing else in the mod is made this way."
+  },
+  {
+   "id": "caupona:plump_snail",
+   "title": "Fatten The Snails",
+   "desc": "Bait laid down grows Snail Roes, and breaking those gives Snails and Plump Snails. A plump one heals five and saturates 0.8, nearly double the ordinary snail."
+  },
+  {
+   "id": "caupona:garum_spice_jar",
+   "title": "Ferment The Garum",
+   "desc": "Dolium: four fish from the caupona:garum_fish tag in a flower pot, no fluid. Garum is fermented fish sauce and it was on every Roman table; here it is a damage-tracked jar you season pots with."
+  },
+  {
+   "id": "caupona:stock_aspic",
+   "title": "Set It Into Aspic",
+   "desc": "Dolium: 250 of stock at density 0.25. An aspic is a soup you can carry in a stack and melt back into a pot later, which is the mod's whole answer to storage."
+  },
+  {
+   "id": "caupona:gravy_boat",
+   "title": "The Gravy Boat",
+   "desc": "Dolium: eight walnuts pressed under an anvil into a gravy boat. It is durability-tracked like the spice jars, and it is the last thing a finished Roman kitchen puts on the counter."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "caupona:stew_pot",
+   "members": [
+    "caupona:stock",
+    "caupona:dilute_soup",
+    "caupona:meat_soup",
+    "caupona:vegetable_soup",
+    "caupona:mushroom_soup",
+    "caupona:fish_soup",
+    "caupona:poultry_soup",
+    "caupona:egg_drop_soup",
+    "caupona:borscht",
+    "caupona:goulash",
+    "caupona:okroshka",
+    "caupona:ukha",
+    "caupona:congee",
+    "caupona:hodgepodge"
+   ]
+  },
+  {
+   "hub": "caupona:mud_counter_with_dolium",
+   "members": [
+    "caupona:stock_aspic",
+    "caupona:dilute_soup_aspic",
+    "caupona:meat_soup_aspic",
+    "caupona:vegetable_soup_aspic",
+    "caupona:mushroom_soup_aspic",
+    "caupona:fish_soup_aspic",
+    "caupona:poultry_soup_aspic",
+    "caupona:egg_drop_soup_aspic",
+    "caupona:borscht_aspic",
+    "caupona:goulash_aspic",
+    "caupona:bisque_aspic",
+    "caupona:hodgepodge_aspic"
+   ]
+  },
+  {
+   "hub": "caupona:garum_spice_jar",
+   "members": [
+    "caupona:vinegar_spice_jar",
+    "caupona:chives_spice_jar",
+    "caupona:sugar_spice_jar",
+    "caupona:asafoetida_spice_jar",
+    "caupona:iron_skimmer",
+    "caupona:bamboo_skimmer",
+    "caupona:gravy_boat",
+    "caupona:redstone_ladle"
+   ]
+  },
+  {
+   "hub": "caupona:copper_frying_pan",
+   "members": [
+    "caupona:iron_frying_pan",
+    "caupona:lead_frying_pan",
+    "caupona:lead_stew_pot",
+    "caupona:brick_kitchen_stove",
+    "caupona:stone_brick_kitchen_stove",
+    "caupona:portable_brazier",
+    "caupona:situla"
+   ]
+  },
+  {
+   "hub": "caupona:walnut",
+   "members": [
+    "caupona:fig",
+    "caupona:wolfberries",
+    "caupona:leaden_walnut",
+    "caupona:walnut_sapling",
+    "caupona:fig_sapling",
+    "caupona:wolfberry_sapling",
+    "caupona:fresh_wolfberry_leaves"
+   ]
+  }
+ ],
+ "notes": "WHY THIS MOD NEEDED A HAND-READ: Caupona does almost nothing through vanilla recipe types. Of 341 recipes only 94 are crafting_shaped, 13 crafting_shapeless and 67 stonecutting; the rest are seven custom types - 39 caupona:bowl, 35 caupona:cooking, 33 caupona:dolium, 16 caupona:aspic_melt, 13 caupona:food, 11 caupona:frying, 6 caupona:spice, 2 caupona:boiling and 2 caupona:fluid_food. Crucially, caupona:cooking and caupona:frying recipes output a FLUID, not an item ('output': 'caupona:okroshka'), and caupona:bowl is the separate step that turns that fluid into the held item of the same name. A naive result-key scan sees no item output for any dish and would report the entire food catalogue as unobtainable. All 39 bowl recipes were read individually; every soup id in the wheels here is the 'item' field of a real bowl recipe. caupona:nail_soup in particular scans as an orphan and is not - data/caupona/recipes/boil/water.json turns minecraft:water into the caupona:nail_soup fluid after 200 ticks, and bowl/nail_soup.json bowls it. WIDENING AND ITS PROOF: 259 item models against only 114 item.caupona.* lang keys. Blocks are named by block.caupona.<id> (mud_kitchen_stove, brick_kitchen_stove, mud_counter_with_dolium, stew_pot and the whole walnut wood set), so the universe used is item model AND (item lang OR block lang) = 250 ids, with 164 matching blockstates and 150 loot tables as corroboration. THE MOD'S BEST MECHANIC, and the one worth building a chapter around: lead comes from a tree. data/caupona/loot_tables/blocks/walnut_fruits.json is age-gated - at ages 1 to 4 the fruit drops caupona:walnut, at age 5 it drops caupona:leaden_walnut instead (with a fortune binomial bonus). data/caupona/recipes/dolium/litharge_cake.json then takes one leaden walnut with an item from the minecraft:anvil tag and no fluid at all, producing caupona:litharge_cake, which smelts or blasts into caupona:lead_nugget. Nine nuggets make caupona:lead_ingot, which registers into forge:ingots/lead. So the entire lead economy of this mod is grown, ripened and crushed rather than mined, and that is the ordering backbone from step 9 to step 17. The gravy boat and the garum jar use the same dolium-with-container pattern (eight walnuts under an anvil; four caupona:garum_fish in a flower pot), and both outputs are NBT-damage-tracked rather than plain items. CONDITIONAL RECIPES, checked as instructed: the jar contains exactly 5 forge:conditional recipes - water_level/nail_soup, water_level/dilute_soup, water_level/plain_water, water_level/wooden_cup_nail_soup and thirst/bowl_water. Every one of them is gated on forge:mod_loaded 'watersource' and every one of them only adds a thirst or water-level BEHAVIOUR to an item that already exists and is already obtainable by other means. No caupona item is registered conditionally and nothing in this chain becomes uncompletable if watersource is absent. All five are safe. DROPPED AS UNOBTAINABLE, with reasons: caupona:sapa_spice_jar (Spice Jar of Defrutum) appears only in recipes/spice/sapa_spice_jar.json, which declares the effect it grants but is not a creation recipe - there is no dolium, crafting or loot source for it anywhere in the jar. caupona:pot_ash, caupona:scraps, caupona:walnut_oil (and walnut_oil_1 through _4), caupona:oil_bottle, caupona:ukha_aspic, caupona:vade_mecum_for_innkeepers, caupona:spice_jar, caupona:chronoconis and caupona:basalt/pumice/terracotta_opus_regulatum have no recipe, no loot table and no reference in any other data file - unfinished or removed content. caupona:any_based, milk_based, stock_based, water_or_stock_based and culinary_heat_haze are JEI category labels and an advancement title, not items. DESIRABILITY: the walnut wood set (_slab, _stairs, _fence, _door, _trapdoor, _button, _pressure_plate, _sign, _wood, stripped_) and the large opus regulatum / brick / tile decorative families reached through the 67 stonecutting recipes are excluded from both spine and wheels per the desirability rule. CROSS-CHECK against moddb.json: the consensus row orders mud_kitchen_stove, leaden_walnut, snail_bait, mud_counter_with_dolium, brick_kitchen_stove, stew_pot, snail, lead_ingot, copper_frying_pan, stock_aspic, lead_stew_pot, wolf_statue, bamboo_skimmer, lead_frying_pan, plump_snail, portable_brazier, walnut, situla, then the five spice jars, gravy_boat and iron_skimmer. It agrees with the recipe graph on the first item and on the general lead-and-snail arc, but it puts leaden_walnut second and stew_pot sixth, which the graph contradicts outright: the dolium that crushes a leaden walnut is itself crafted FROM a stew_pot (crafting/mud_counter_with_dolium.json lists caupona:stew_pot as an ingredient), so stew_pot must precede both. The graph was preferred, as instructed, and the conflict is recorded here. patchouli:guide_book is a cross-namespace step, matching the 253 cross-namespace ids already used across chains_research; its recipe is data/caupona/recipes/crafting/book.json, taking caupona:fig, caupona:walnut, caupona:water, caupona:wolfberries and minecraft:book."
+}

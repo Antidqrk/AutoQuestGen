@@ -1,0 +1,25 @@
+{
+ "mod": "industrialforegoingsouls",
+ "verified_against": "industrial-foregoing-souls-1.20.1-1.0.9.jar",
+ "item_count_in_jar": 3,
+ "parent_mod": "industrialforegoing",
+ "chain": [
+  {
+   "id": "industrialforegoingsouls:soul_laser_base",
+   "title": "Drilling for Souls",
+   "desc": "Craft from plastic, a sculk shrieker, iron bars, an Advanced Machine Frame, diamond gears and a sculk catalyst; place it under a Laser Drill and the drill mines souls instead of ore."
+  },
+  {
+   "id": "industrialforegoingsouls:soul_network_pipe",
+   "title": "Soul Pipe",
+   "desc": "Craft eight at a time from stone, plastic and an echo shard; the pipes carry harvested souls from the laser base out to whatever you want them spent on."
+  },
+  {
+   "id": "industrialforegoingsouls:soul_surge",
+   "title": "Soul Surge",
+   "desc": "Craft from stone, plastic, echo shards and a piston; feed it souls through the pipe network and it accelerates the Industrial Foregoing machine it is attached to."
+  }
+ ],
+ "collections": [],
+ "notes": "Thin addon - the jar registers exactly 3 blocks and all 3 are quested; nothing padded. It is one mechanic bolted onto the endgame Laser Drill, not a content pack, which is why the chain is 3 steps rather than 10. ASSUMES FROM PARENT (industrialforegoing): Advanced Machine Frame, Plastic (forge:plastic), diamond gears, and a working, powered Laser Drill with Laser Lens 11. The addon injects an industrialforegoing:laser_drill_ore recipe yielding minecraft:echo_shard from lens 11 below Y=20 in a Deep Dark biome - that is the intended farm for the echo shards its own recipes need. VERIFICATION: strict model/lang intersection, 3/3 matched, no widening, no drops. All three crafting recipes sit inside forge:conditional wrappers gated on forge:item_exists for the item itself, so they are always active in a normal install; the descs describe the inner minecraft:crafting_shaped patterns."
+}

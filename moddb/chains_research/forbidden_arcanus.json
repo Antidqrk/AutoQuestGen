@@ -1,0 +1,231 @@
+{
+ "mod": "forbidden_arcanus",
+ "verified_against": "forbidden_arcanus-1.20.1-2.2.6.jar",
+ "item_count_in_jar": 282,
+ "chain": [
+  {
+   "id": "forbidden_arcanus:darkstone",
+   "title": "Darkstone",
+   "desc": "A black stone that generates in ore-sized blobs underground. It is the base rock of the whole mod and the first thing to go looking for."
+  },
+  {
+   "id": "forbidden_arcanus:arcane_crystal",
+   "title": "Arcane Crystal",
+   "desc": "Mined from Arcane Crystal Ore in stone and deepslate. Nearly every recipe below traces back to it."
+  },
+  {
+   "id": "forbidden_arcanus:arcane_crystal_dust",
+   "title": "Arcane Crystal Dust",
+   "desc": "Smelt or blast an Arcane Crystal, or run it through the Clibano. The mod's universal reagent: it is in the soap, the bottles, the dusts and the deorum."
+  },
+  {
+   "id": "forbidden_arcanus:clibano_core",
+   "title": "Clibano Core",
+   "desc": "Darkstone around a Blast Furnace. The core is the heart of the Clibano multiblock, a faster furnace that burns Souls as fuel and doubles some outputs."
+  },
+  {
+   "id": "forbidden_arcanus:edelwood_log",
+   "title": "Edelwood",
+   "desc": "Cut from the twisted Edelwood trees that grow in dark biomes. Its planks make buckets, jars and the mod's early machinery."
+  },
+  {
+   "id": "forbidden_arcanus:utrem_jar",
+   "title": "Utrem Jar",
+   "desc": "Edelwood Planks around colourless glass. A jar that stores a single item type in bulk, and the vessel the Soul Extractor is built from."
+  },
+  {
+   "id": "forbidden_arcanus:soul_extractor",
+   "title": "Soul Extractor",
+   "desc": "An Utrem Jar with Nether Bricks, Quartz and a Quartz Block. It pulls Souls out of the dead, and Souls are one of the four essences the Hephaestus Forge runs on."
+  },
+  {
+   "id": "forbidden_arcanus:obsidian_with_iron",
+   "title": "Obsidian With Iron",
+   "desc": "Obsidian ringed with Iron Nuggets. An intermediate block that exists purely to be smelted."
+  },
+  {
+   "id": "forbidden_arcanus:obsidian_ingot",
+   "title": "Obsidian Ingot",
+   "desc": "Smelt or blast Obsidian With Iron. The metal behind the Obsidian Skull, the Dark Nether Star and the Draco Arcanus line."
+  },
+  {
+   "id": "forbidden_arcanus:mundabitur_dust",
+   "title": "Mundabitur Dust",
+   "desc": "A shapeless mix of Arcane Crystal Dust, Blaze Powder, Bone Meal, Gunpowder, Phantom Membrane and Redstone. It is consumed only to make Deorum."
+  },
+  {
+   "id": "forbidden_arcanus:deorum_ingot",
+   "title": "Deorum",
+   "desc": "Gold, Charcoal, Arcane Crystal Dust and Mundabitur Dust. Deorum is the mod's magical gold and the material of its lanterns, glass and arcane darkstone."
+  },
+  {
+   "id": "forbidden_arcanus:rune",
+   "title": "Rune",
+   "desc": "Mined from Runic Stone, Runic Darkstone and Runic Deepslate, which generate as flecks through the underground. Runes carry the mod's enchant-like magic."
+  },
+  {
+   "id": "forbidden_arcanus:test_tube",
+   "title": "Test Tube",
+   "desc": "A Rune and a Glass Bottle. Filled at the forge it becomes a Blood Test Tube, which is how blood essence is fed into rituals."
+  },
+  {
+   "id": "forbidden_arcanus:sanity_meter",
+   "title": "Sanity Meter",
+   "desc": "Arcane Crystal Dust, Gold and an Ender Pearl. Held or in a curio slot it shows how corrupted your surroundings are."
+  },
+  {
+   "id": "forbidden_arcanus:spawner_scrap",
+   "title": "Spawner Scrap",
+   "desc": "Break a vanilla Monster Spawner and a global loot modifier makes it shed scrap. It is the only source, so plan spawner hunts before the two devices below."
+  },
+  {
+   "id": "forbidden_arcanus:lens_of_veritatis",
+   "title": "Lens of Veritatis",
+   "desc": "An Arcane Crystal, Spawner Scrap and a stick. Look through it to see the spawn ranges and hidden magic the naked eye misses."
+  },
+  {
+   "id": "forbidden_arcanus:quantum_catcher",
+   "title": "Quantum Catcher",
+   "desc": "An Arcane Crystal Block and Spawner Scrap. It captures a living mob into the item and releases it elsewhere, which makes moving farms trivial."
+  },
+  {
+   "id": "forbidden_arcanus:ender_pearl_fragment",
+   "title": "Ender Pearl Fragment",
+   "desc": "Endermen drop fragments alongside pearls through a loot modifier. Nine make a pearl, and they gate Corrupti Dust and the Draco Arcanus Staff."
+  },
+  {
+   "id": "forbidden_arcanus:corrupti_dust",
+   "title": "Corrupti Dust",
+   "desc": "Arcane Crystal Dust, an Ender Pearl Fragment, an Obsidian Ingot, Blaze Powder and Nether Wart. The corrupting agent that turns a Rune dark."
+  },
+  {
+   "id": "forbidden_arcanus:dark_rune",
+   "title": "Dark Rune",
+   "desc": "A Rune shaken with Corrupti Dust. Darker magic than the plain rune, and the blade component of the Mystical Dagger."
+  },
+  {
+   "id": "forbidden_arcanus:dark_matter",
+   "title": "Dark Matter",
+   "desc": "Smelt an Edelwood Log. The log burns down to a lump of pure dark, used as the dagger's grip and in the higher rituals."
+  },
+  {
+   "id": "forbidden_arcanus:mystical_dagger",
+   "title": "Mystical Dagger",
+   "desc": "Dark Matter, a Dark Rune, Deorum and an Edelwood Stick. It is not really a weapon: its job is to carve scales off a Dragon Head."
+  },
+  {
+   "id": "forbidden_arcanus:dragon_scale",
+   "title": "Dragon Scale",
+   "desc": "Shapelessly combine the Mystical Dagger with a Dragon Head. Scales also drop from the Ender Dragon itself and appear in End City treasure."
+  },
+  {
+   "id": "forbidden_arcanus:draco_arcanus_helmet",
+   "title": "Draco Arcanus Armour",
+   "desc": "Dragon Scale over Obsidian Ingots. The full set is the mod's endgame armour and the reason to farm scales."
+  },
+  {
+   "id": "forbidden_arcanus:obsidian_skull",
+   "title": "Obsidian Skull",
+   "desc": "An Obsidian Ingot, a Skeleton Skull and Obsidian. Worn as a curio it grants a damage-absorbing shield that recharges over time."
+  },
+  {
+   "id": "forbidden_arcanus:dark_nether_star",
+   "title": "Dark Nether Star",
+   "desc": "A Nether Star wrapped in Obsidian Ingots. One Wither, one star, one scepter."
+  },
+  {
+   "id": "forbidden_arcanus:draco_arcanus_staff",
+   "title": "Draco Arcanus Staff",
+   "desc": "Ender Pearl Fragments, an Obsidian Ingot and an Ender Pearl. It throws a homing arcane bolt and is the base of the scepter."
+  },
+  {
+   "id": "forbidden_arcanus:draco_arcanus_scepter",
+   "title": "Draco Arcanus Scepter",
+   "desc": "The Staff plus a Dark Nether Star, an Obsidian Ingot and a Diamond. The strongest craftable weapon left once the forge is off the table."
+  },
+  {
+   "id": "structure:forbidden_arcanus:nipa",
+   "title": "Find a Nipa",
+   "desc": "The mod's only registered structure, generated as a ground copy and as a floating island with a chest. It is the sole source of forbidden_arcanus:nipa, which has no recipe anywhere in the jar."
+  },
+  {
+   "id": "forbidden_arcanus:spectral_eye_amulet",
+   "title": "Spectral Eye Amulet",
+   "desc": "Deorum, an Eye of Ender, a Nether Star and String. The amulet the mod's own progression treats as its trophy piece."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "forbidden_arcanus:polished_darkstone",
+   "members": [
+    "forbidden_arcanus:polished_darkstone_bricks",
+    "forbidden_arcanus:chiseled_polished_darkstone",
+    "forbidden_arcanus:tiled_polished_darkstone_bricks",
+    "forbidden_arcanus:cracked_polished_darkstone_bricks",
+    "forbidden_arcanus:arcane_polished_darkstone",
+    "forbidden_arcanus:arcane_chiseled_darkstone",
+    "forbidden_arcanus:gilded_darkstone",
+    "forbidden_arcanus:runic_chiseled_polished_darkstone",
+    "forbidden_arcanus:darkstone_pedestal",
+    "forbidden_arcanus:arcane_polished_darkstone_pillar",
+    "forbidden_arcanus:arcane_polished_darkstone_rod",
+    "forbidden_arcanus:chiseled_arcane_polished_darkstone",
+    "forbidden_arcanus:arcane_chiseled_polished_darkstone"
+   ]
+  },
+  {
+   "hub": "forbidden_arcanus:deorum_ingot",
+   "members": [
+    "forbidden_arcanus:deorum_block",
+    "forbidden_arcanus:deorum_nugget",
+    "forbidden_arcanus:deorum_chain",
+    "forbidden_arcanus:deorum_door",
+    "forbidden_arcanus:deorum_trapdoor",
+    "forbidden_arcanus:deorum_glass",
+    "forbidden_arcanus:deorum_glass_pane",
+    "forbidden_arcanus:deorum_lantern",
+    "forbidden_arcanus:deorum_soul_lantern",
+    "forbidden_arcanus:deorum_pressure_plate",
+    "forbidden_arcanus:golden_feather",
+    "forbidden_arcanus:slimec_pickaxe"
+   ]
+  },
+  {
+   "hub": "forbidden_arcanus:edelwood_planks",
+   "members": [
+    "forbidden_arcanus:edelwood_door",
+    "forbidden_arcanus:edelwood_trapdoor",
+    "forbidden_arcanus:edelwood_fence",
+    "forbidden_arcanus:edelwood_fence_gate",
+    "forbidden_arcanus:edelwood_ladder",
+    "forbidden_arcanus:edelwood_button",
+    "forbidden_arcanus:edelwood_pressure_plate",
+    "forbidden_arcanus:edelwood_boat",
+    "forbidden_arcanus:edelwood_bucket",
+    "forbidden_arcanus:carved_edelwood_log",
+    "forbidden_arcanus:arcane_edelwood_planks",
+    "forbidden_arcanus:growing_edelwood",
+    "forbidden_arcanus:edelwood_branch"
+   ]
+  },
+  {
+   "hub": "forbidden_arcanus:draco_arcanus_helmet",
+   "members": [
+    "forbidden_arcanus:draco_arcanus_chestplate",
+    "forbidden_arcanus:draco_arcanus_leggings",
+    "forbidden_arcanus:draco_arcanus_boots",
+    "forbidden_arcanus:draco_arcanus_sword",
+    "forbidden_arcanus:draco_arcanus_axe",
+    "forbidden_arcanus:draco_arcanus_pickaxe",
+    "forbidden_arcanus:draco_arcanus_shovel",
+    "forbidden_arcanus:draco_arcanus_hoe",
+    "forbidden_arcanus:draco_arcanus_arrow",
+    "forbidden_arcanus:tyr_helmet",
+    "forbidden_arcanus:tyr_chestplate",
+    "forbidden_arcanus:tyr_leggings",
+    "forbidden_arcanus:tyr_boots"
+   ]
+  }
+ ],
+ "notes": "Verified twice. Pass 1: 296 assets/forbidden_arcanus/models/item stems intersected with item./block. lang keys = 282 ids, which is item_count_in_jar. Pass 2 re-derived 435 ids independently from blockstate paths, recipe results and ingredients across all 256 recipe jsons, loot-table drop names and item/block tag members; pass 1 is a subset. BIGGEST FINDING - THE HEPHAESTUS FORGE IS NOT OBTAINABLE IN THIS JAR. forbidden_arcanus:hephaestus_forge is registered (blockstate, model, lang key, its own block loot table, and it is listed in minecraft:mineable/pickaxe and needs_diamond_tool) but a full-text scan of every file under data/ finds the string hephaestus_forge in exactly four places: the seven enhancer definitions, its own loot table, and two vanilla mining tags. There is no crafting, smelting, blasting, stonecutting, clibano or smithing recipe producing it anywhere in the jar, and 2.2.6 is the newest 1.20.1 Forge build on Modrinth, so this is not a stale-jar artefact. It is therefore left out of the chain, and so is everything that can only be made in it: forbidden_arcanus:eternal_stella, sea_prism, smelter_prism, terrastomp_prism, whirlwind_prism and ferrognetic_mixture (the six data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual outputs), the five smithing modifiers that consume those prisms, forbidden_arcanus:eternal_obsidian_skull, the six reinforced_deorum tools, forbidden_arcanus:netherite_blacksmith_gavel and forbidden_arcanus:obsidian_skull_shield. If the pack adds its own Hephaestus Forge recipe, those become questable again; without one they are uncompletable. SECOND UNCRAFTABLE FOUND: data/forbidden_arcanus/recipes/corrupted_pixie.json lists forbidden_arcanus:dark_soul as an ingredient, and forbidden_arcanus:dark_soul does not exist in this jar - no item model, no lang key, no tag, nothing. The registered ids are soul, corrupt_soul and enchanted_soul. Corrupted Pixie is therefore permanently uncraftable and is dropped. ALSO DROPPED: forbidden_arcanus:wet_purifying_soap (no recipe; it is the wet state of Purifying Soap produced by code when the soap touches water), forbidden_arcanus:soul / corrupt_soul / enchanted_soul / pixie (Soul Extractor and Utrem Jar outputs, code-driven, no data source), and the whole forbidden_arcanus cherry wood set (cherry_log through carved_cherry_planks, 20 ids) which has models and lang keys but no recipe, no loot table, no worldgen feature and no tag membership - it was superseded by vanilla 1.20 cherry and is dead weight in this build. WIDENINGS: none were needed; every id emitted sits inside the strict model-times-lang intersection. SOURCING for the non-crafted steps, all read from loot tables: darkstone, arcane_crystal, rune and xpetrified_orb come from worldgen features in data/forbidden_arcanus/worldgen (ore_darkstone, ore_arcane_crystal, ore_rune, ore_xpetrified); spawner_scrap comes only from blocks/additions/spawner_additions, appended to vanilla spawner drops by data/forbidden_arcanus/loot_modifiers/spawner_additions.json; ender_pearl_fragment only from entities/additions/enderman_additions; dragon_scale from entities/additions/ender_dragon_additions and end_city_treasure_additions as well as the dagger recipe. ENTITIES: Forbidden Arcanus registers no mobs of its own in this build - the only entity lang key is not a spawnable creature and there is no data/forbidden_arcanus/loot_tables/entities directory except the five vanilla-append tables - so no kill step is emitted. CONSENSUS CONFLICT (recipe graph preferred, twice): moddb.json's 19 Forbidden Arcanus entries put forbidden_arcanus:spectral_eye_amulet at pos 0.0, first in the mod, but its recipe is Deorum plus an Eye of Ender plus a Nether Star plus String - Deorum needs Mundabitur Dust needs Arcane Crystal Dust, and a Nether Star needs the Wither, so it cannot be step one; it is placed last here. The same consensus puts dark_rune at 0.222 and mundabitur_dust at 0.333 ahead of obsidian_ingot at 0.444, which is impossible: dark_rune requires corrupti_dust and corrupti_dust requires an Obsidian Ingot. The consensus also ranks eternal_stella at 0.611 and eternal_obsidian_skull at 0.944, both of which this jar cannot produce at all for the reason above. Variant families kept in wheels rather than the chain: the darkstone masonry set, the deorum decorations, the edelwood woodset and the Draco Arcanus and Tyr equipment. Slabs, stairs and walls are excluded throughout."
+}

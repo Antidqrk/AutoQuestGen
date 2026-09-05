@@ -1,0 +1,174 @@
+{
+  "mod": "minecolonies",
+  "verified_against": "minecolonies-1.20.1-1.1.1231.jar",
+  "item_count_in_jar": 232,
+  "chain": [
+    {
+      "id": "minecolonies:supplychestdeployer",
+      "title": "Run Aground On Purpose",
+      "desc": "Crafted from five boats and nothing else, it places the Supply Ship whose chest holds the Town Hall block and the build tool."
+    },
+    {
+      "id": "minecolonies:blockhuttownhall",
+      "title": "Plant the Flag",
+      "desc": "Crafted from planks around a gold scepter build tool; placing it founds the colony and is the mod's root advancement step."
+    },
+    {
+      "id": "minecolonies:blockhutbuilder",
+      "title": "Someone Has To Lift the Stones",
+      "desc": "Planks plus a wooden door and the build tool; hiring a builder here is what turns every later hut into a real building."
+    },
+    {
+      "id": "minecolonies:clipboard",
+      "title": "The Endless To-Do List",
+      "desc": "Leather, sticks and the build tool make the clipboard that lists every open worker request in the colony."
+    },
+    {
+      "id": "minecolonies:resourcescroll",
+      "title": "Read the Shortfall",
+      "desc": "Leather, sticks and the build tool; bound to a Builder's Hut it shows the exact materials that build is still missing."
+    },
+    {
+      "id": "minecolonies:blockminecoloniesrack",
+      "title": "Shelves That Never Fill",
+      "desc": "Planks and iron nuggets; racks are the storage every hut uses instead of vanilla chests."
+    },
+    {
+      "id": "minecolonies:blockhutcitizen",
+      "title": "A Roof For Somebody",
+      "desc": "Planks around a torch; the residence hut is what raises the colony's population cap."
+    },
+    {
+      "id": "minecolonies:blockhuttavern",
+      "title": "Word Gets Around",
+      "desc": "Planks around a barrel; the tavern draws new citizens and wandering visitors to the colony."
+    },
+    {
+      "id": "minecolonies:blockhutlumberjack",
+      "title": "The Forest Answers",
+      "desc": "A production-branch hut whose worker fells and replants trees to keep the builder supplied with wood."
+    },
+    {
+      "id": "minecolonies:blockhutminer",
+      "title": "Down and Then Sideways",
+      "desc": "A production-branch hut; its miner digs a shaft and side tunnels, unlocking the mod's deep mine advancement."
+    },
+    {
+      "id": "minecolonies:blockhutfarmer",
+      "title": "Break the Sod",
+      "desc": "A production-branch hut; the farmer works the scarecrow-marked fields assigned to it."
+    },
+    {
+      "id": "minecolonies:blockhutfield",
+      "title": "Scarecrow Rights",
+      "desc": "The only hut craftable without the build tool: sticks, leather and a hay block or pumpkin mark a farmer's field."
+    },
+    {
+      "id": "minecolonies:blockhutcook",
+      "title": "Nobody Works Hungry",
+      "desc": "A production-branch hut; the cook feeds every citizen, which the citizen_eat_food advancement tracks."
+    },
+    {
+      "id": "minecolonies:blockhutwarehouse",
+      "title": "Everything In One Place",
+      "desc": "Planks around any chest; the warehouse is the central stock the whole colony draws from."
+    },
+    {
+      "id": "minecolonies:blockhutdeliveryman",
+      "title": "Legs of the Colony",
+      "desc": "Planks around leather or iron boots; couriers require the warehouse and haul goods between it and every workplace."
+    },
+    {
+      "id": "minecolonies:blockpostbox",
+      "title": "Order From Afar",
+      "desc": "Planks, a chest and the build tool; the postbox lets you request warehouse items directly, and pairs with the stash."
+    },
+    {
+      "id": "minecolonies:blockhutsawmill",
+      "title": "Planks By the Hundred",
+      "desc": "Planks around a wooden axe; the sawmill unlocks the whole crafting branch of huts and requires the courier first."
+    },
+    {
+      "id": "minecolonies:blockhutstonemason",
+      "title": "Cut, Chisel, Repeat",
+      "desc": "A sawmill-gated crafting hut whose mason turns raw stone into the bricks and shaped blocks builds demand."
+    },
+    {
+      "id": "minecolonies:blockhutguardtower",
+      "title": "Eyes on the Treeline",
+      "desc": "Planks around a bow; the guard tower is the root of the mod's entire military advancement branch."
+    },
+    {
+      "id": "kill:minecolonies:barbarian",
+      "title": "They Found You",
+      "desc": "Barbarians are raiders that assault the colony as it grows; every raider type drops the ancient tome."
+    },
+    {
+      "id": "minecolonies:blockhutbarracks",
+      "title": "Standing Army",
+      "desc": "Planks around an iron block; the barracks is the fortified core that guard towers attach to."
+    },
+    {
+      "id": "minecolonies:blockhutbarrackstower",
+      "title": "Man the Corners",
+      "desc": "The tower that slots into a barracks; filling every socket completes the all_barracks_towers advancement."
+    },
+    {
+      "id": "minecolonies:blockhutlibrary",
+      "title": "Pupils and Patience",
+      "desc": "Planks around a book; students here study from books and paper and generate the research points the university spends."
+    },
+    {
+      "id": "minecolonies:blockhutuniversity",
+      "title": "Unlock the Future",
+      "desc": "Planks around a book; the university opens the 311-node research tree covering civilian, combat, technology and unlockable branches."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "minecolonies:blockhutbaker",
+      "members": [
+        "minecolonies:blockhutblacksmith",
+        "minecolonies:blockhutsmeltery",
+        "minecolonies:blockhutstonesmeltery",
+        "minecolonies:blockhutcrusher",
+        "minecolonies:blockhutsifter",
+        "minecolonies:blockhutcomposter",
+        "minecolonies:blockhutflorist",
+        "minecolonies:blockhutfletcher",
+        "minecolonies:blockhutdyer",
+        "minecolonies:blockhutglassblower",
+        "minecolonies:blockhutconcretemixer",
+        "minecolonies:blockhutmechanic",
+        "minecolonies:blockhutalchemist"
+      ]
+    },
+    {
+      "hub": "minecolonies:blockhutshepherd",
+      "members": [
+        "minecolonies:blockhutcowboy",
+        "minecolonies:blockhutswineherder",
+        "minecolonies:blockhutchickenherder",
+        "minecolonies:blockhutrabbithutch",
+        "minecolonies:blockhutbeekeeper",
+        "minecolonies:blockhutstable",
+        "minecolonies:blockhutfisherman"
+      ]
+    },
+    {
+      "hub": "minecolonies:ancienttome",
+      "members": [
+        "minecolonies:chiefsword",
+        "minecolonies:iron_scimitar",
+        "minecolonies:pharaoscepter",
+        "minecolonies:firearrow",
+        "minecolonies:spear",
+        "minecolonies:pirate_hat",
+        "minecolonies:pirate_cap",
+        "minecolonies:pirate_chest",
+        "minecolonies:pirate_legs"
+      ]
+    }
+  ],
+  "notes": "Item set = 232 ids from assets/minecolonies/models/item/*.json intersected with item./block. keys in assets/*/lang/en_us.json; entity ids from entity.minecolonies.* (37 found). Every id above is set-membership verified. Build order was taken from the jar's own advancement tree in data/minecolonies/advancements/: minecolonies/root (supply_placed) -> place_townhall -> start_builder -> fulfill_request -> build_builder, which is also the parent of production/root; production/root -> {farmer, fisherman, lumberjack, miner, cook, library, warehouse} , warehouse -> deliveryman -> sawmill -> {blacksmith, crusher, sifter, smeltery, stonesmeltery, stonemason}, cook -> baker, farmer -> composter -> florist, library -> enchanter; military/root is guardtower -> {archery, combatacademy, barracks -> barrackstower -> all_barracks_towers}. Recipes were read from data/minecolonies/recipes/, and the raider drops from data/minecolonies/loot_tables/entities/ (ancienttome drops from all 18 raider types; chiefsword from chiefbarbarian, pharaoscepter and firearrow from pharao, iron_scimitar and the pirate gear from chiefpirate/drownedchiefpirate, spear from amazonspearman). WebSearch confirmed the supply chest contains the Town Hall block and build tool, and the warehouse+courier ordering. VERIFIED AS REQUESTED: minecolonies:supplychestdeployer, minecolonies:supplycampdeployer and minecolonies:resourcescroll all exist in the jar. DROPPED: the scan tool and the build tool are NOT minecolonies ids - every hut recipe in the jar keys on structurize:sceptergold, and the scan tool is structurize:scantool, so neither is set-membership verifiable against this jar; minecolonies:scan_analyzer does exist but its only jar reference is compatibility/itemnbtmatching.json, giving no acquisition source, so it was left out too. Also dropped: minecolonies:largequarry (zero references anywhere in the jar's data, unlike simplequarry and mediumquarry which have recipes). No dim: entries - the jar contains no minecolonies dimension. University research is expressed as the final chain step rather than as individual research nodes because researches are data ids, not item/entity ids."
+}

@@ -1,0 +1,187 @@
+{
+  "mod": "croptopia",
+  "verified_against": "croptopia-src-v3_1.20.zip",
+  "item_count_in_jar": 505,
+  "chain": [
+    {
+      "id": "croptopia:guide",
+      "title": "The Cook's Almanac",
+      "desc": "Three Croptopia crops shapelessly combined with a vanilla book to open the Patchouli field guide."
+    },
+    {
+      "id": "croptopia:tomato_seed",
+      "title": "First Seed in the Furrow",
+      "desc": "Crafted back from a single tomato; every Croptopia crop reduces to its own seed this way."
+    },
+    {
+      "id": "croptopia:tomato",
+      "title": "Red on the Vine",
+      "desc": "Harvested from a fully grown tomato crop planted on farmland."
+    },
+    {
+      "id": "croptopia:knife",
+      "title": "A Blade for the Kitchen",
+      "desc": "An iron ingot on a stick; it stays in the crafting grid as a reusable tool for prepared foods."
+    },
+    {
+      "id": "croptopia:mortar_and_pestle",
+      "title": "Ground by Hand",
+      "desc": "A stick set into a bowl; it grinds seasonings and simple ingredients."
+    },
+    {
+      "id": "croptopia:cooking_pot",
+      "title": "Everything Starts in the Pot",
+      "desc": "Five iron ingots folded into a pot that stays in the grid as a reusable station for doughs, cheeses and stews."
+    },
+    {
+      "id": "croptopia:frying_pan",
+      "title": "The Pan That Never Leaves",
+      "desc": "Iron ingots beaten into a pan; every fried, baked and grilled recipe needs it in the grid."
+    },
+    {
+      "id": "croptopia:food_press",
+      "title": "Squeeze the Harvest",
+      "desc": "A hopper clamped between two pistons; it presses juices, oils, milks and brews."
+    },
+    {
+      "id": "croptopia:salt",
+      "title": "White Crystal",
+      "desc": "Mined from salt ore in the world, or evaporated by smelting a Croptopia water bottle."
+    },
+    {
+      "id": "croptopia:flour",
+      "title": "Milled Fine",
+      "desc": "Any two grains from the flourable tag - wheat, barley, oats, corn or rice - combined shapelessly."
+    },
+    {
+      "id": "croptopia:dough",
+      "title": "Water Into Bread",
+      "desc": "A cooking pot with a water bottle and flour."
+    },
+    {
+      "id": "croptopia:cheese",
+      "title": "Curds and Salt",
+      "desc": "Milk and salt worked together in the cooking pot."
+    },
+    {
+      "id": "croptopia:butter",
+      "title": "Churned",
+      "desc": "Milk and salt run through both the cooking pot and the food press."
+    },
+    {
+      "id": "croptopia:olive_oil",
+      "title": "First Press",
+      "desc": "Two olives crushed in the food press."
+    },
+    {
+      "id": "croptopia:noodle",
+      "title": "Pulled Thin",
+      "desc": "A cooking pot with water, salt and flour."
+    },
+    {
+      "id": "croptopia:tortilla",
+      "title": "Flat on the Griddle",
+      "desc": "Flour and a water bottle cooked on the frying pan, two at a time."
+    },
+    {
+      "id": "croptopia:chocolate",
+      "title": "Melted Down",
+      "desc": "Cocoa beans and butter melted together in the cooking pot."
+    },
+    {
+      "id": "croptopia:pizza",
+      "title": "The Universal Pie",
+      "desc": "Dough, cheese and tomatoes baked on the frying pan."
+    },
+    {
+      "id": "croptopia:sushi",
+      "title": "Rolled in Seagrass",
+      "desc": "Seagrass, any Croptopia fish and rice rolled together by hand."
+    },
+    {
+      "id": "croptopia:whipping_cream",
+      "title": "Soft Peaks",
+      "desc": "Milk whipped with sugar and vanilla, four servings at a time."
+    },
+    {
+      "id": "croptopia:the_big_breakfast",
+      "title": "Everything on One Plate",
+      "desc": "Egg, bacon, hashed brown, baked beans, sausage and toast assembled over the frying pan."
+    },
+    {
+      "id": "croptopia:tres_leche_cake",
+      "title": "Three Milks",
+      "desc": "Egg, sugar, milk, flour, vanilla, rum and whipping cream folded into one cake."
+    },
+    {
+      "id": "croptopia:nether_star_cake",
+      "title": "Cake Worth a Wither",
+      "desc": "A nether star set over dough and sugar."
+    },
+    {
+      "id": "croptopia:transcendental_breakfast",
+      "title": "The Last Meal You Will Ever Need",
+      "desc": "Mountain salt, nether star cake, tuna sandwich, dragon egg omelette, cooked ravager meat and the big breakfast in one recipe."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "croptopia:tomato",
+      "members": [
+        "croptopia:corn",
+        "croptopia:rice",
+        "croptopia:lettuce",
+        "croptopia:onion",
+        "croptopia:garlic",
+        "croptopia:cucumber",
+        "croptopia:strawberry",
+        "croptopia:blueberry",
+        "croptopia:cabbage",
+        "croptopia:squash",
+        "croptopia:zucchini",
+        "croptopia:eggplant",
+        "croptopia:radish",
+        "croptopia:turnip"
+      ]
+    },
+    {
+      "hub": "croptopia:food_press",
+      "members": [
+        "croptopia:apple_juice",
+        "croptopia:orange_juice",
+        "croptopia:grape_juice",
+        "croptopia:lemonade",
+        "croptopia:limeade",
+        "croptopia:cranberry_juice",
+        "croptopia:melon_juice",
+        "croptopia:pineapple_juice",
+        "croptopia:tomato_juice",
+        "croptopia:saguaro_juice",
+        "croptopia:coffee",
+        "croptopia:beer",
+        "croptopia:wine",
+        "croptopia:mead"
+      ]
+    },
+    {
+      "hub": "croptopia:frying_pan",
+      "members": [
+        "croptopia:supreme_pizza",
+        "croptopia:anchovy_pizza",
+        "croptopia:hamburger",
+        "croptopia:cheeseburger",
+        "croptopia:burrito",
+        "croptopia:taco",
+        "croptopia:enchilada",
+        "croptopia:quesadilla",
+        "croptopia:shepherds_pie",
+        "croptopia:beef_wellington",
+        "croptopia:goulash",
+        "croptopia:ratatouille",
+        "croptopia:fish_and_chips",
+        "croptopia:chicken_and_dumplings"
+      ]
+    }
+  ],
+  "notes": "Croptopia is NOT published on Modrinth (CurseForge only, and its GitHub releases carry no jar assets), so verification used the official multi-loader source archive croptopia-src-v3_1.20.zip, which ships the generated assets and data folders verbatim: common/src/main/generated/assets/croptopia/models/item/*.json intersected with the item./block. keys in common/src/main/resources/assets/croptopia/lang/en_us.json. Recipes were read from common/src/main/generated/data/croptopia/recipes/**; the ${dependent} placeholders in those files are the loader namespace substituted at build time and do not affect item ids. Croptopia has roughly 250 near-identical crops and dishes, so the chain covers only the four stations (cooking pot, frying pan, mortar and pestle, food press) plus base ingredients and signature payoff dishes, and the breadth is expressed through the three collection wheels instead of one quest per fruit. Deliberately EXCLUDED as unverifiable: croptopia:mountain_salt and croptopia:roe have no recipe and no loot table anywhere in the archive, so no obtaining sentence could be written for them (mountain_salt is named only as an ingredient of transcendental_breakfast). Nothing else was dropped."
+}

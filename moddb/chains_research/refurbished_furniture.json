@@ -1,0 +1,178 @@
+{
+  "mod": "refurbished_furniture",
+  "verified_against": "refurbished_furniture-forge-1.20.1-1.0.20.jar",
+  "item_count_in_jar": 471,
+  "chain": [
+    {
+      "id": "refurbished_furniture:workbench",
+      "title": "Build the Workbench",
+      "desc": "Almost nothing in this mod is made at a crafting table - you pick recipes from the Workbench's own menu instead. It pulls materials out of your inventory, its own slots, and any container touching it, so park it next to a chest and leave it there."
+    },
+    {
+      "id": "refurbished_furniture:oak_chair",
+      "title": "Construct a Chair",
+      "desc": "Four planks at the Workbench, and you can actually sit on it. Make a few - chairs, tables and stools are the cheapest way to prove the Workbench is working before you spend iron on appliances."
+    },
+    {
+      "id": "refurbished_furniture:oak_crate",
+      "title": "Construct a Crate",
+      "desc": "A wooden storage container that stacks into walls neatly. The Workbench can pull materials straight out of a crate placed beside it, which is the point of making one early."
+    },
+    {
+      "id": "refurbished_furniture:knife",
+      "title": "Forge a Knife",
+      "desc": "One of the few things still made at a vanilla crafting table. You hold it to chop ingredients laid on a Cutting Board - without it the board does nothing. One knife lasts a long time."
+    },
+    {
+      "id": "refurbished_furniture:oak_cutting_board",
+      "title": "Construct a Cutting Board",
+      "desc": "The prep station for the whole kitchen. Chop things with the knife to slice them, or stack several ingredients on it to combine them into a new dish. It also slices flowers into dye and bone into meal."
+    },
+    {
+      "id": "refurbished_furniture:bread_slice",
+      "title": "Slice Some Bread",
+      "desc": "Chop a loaf on the Cutting Board and get six slices. Slices are the base of toast, jam toast and cheese sandwiches, so keep a stack around once the toaster is running."
+    },
+    {
+      "id": "refurbished_furniture:oak_kitchen_cabinetry",
+      "title": "Construct Kitchen Cabinetry",
+      "desc": "Counter units that auto-connect into corners and runs, and hold items inside. Build as many as your kitchen wall is long - the appliances that follow are designed to sit flush with them."
+    },
+    {
+      "id": "refurbished_furniture:oak_kitchen_sink",
+      "title": "Construct a Kitchen Sink",
+      "desc": "A working tap: fill buckets and bottles from it without walking to a river, and it converts a few fluids. Every water bucket the oven and dough recipes want can come from here."
+    },
+    {
+      "id": "refurbished_furniture:light_stove",
+      "title": "Construct a Stove",
+      "desc": "The oven half bakes; the hob on top is where you set the frying pan. It burns fuel like a furnace rather than needing electricity, so it is the appliance to build first. One is enough."
+    },
+    {
+      "id": "refurbished_furniture:sea_salt",
+      "title": "Bake Sea Salt",
+      "desc": "Put a water bucket in the oven and it slowly evaporates down to four salt. Salt is the gate on cheese and flour, so bake a batch early - it takes a while per bucket."
+    },
+    {
+      "id": "refurbished_furniture:cheese",
+      "title": "Curdle Cheese",
+      "desc": "Salt plus a milk bucket, two cheese per go. Cheese is the ingredient every good dish in the mod wants: sandwiches, grilled cheese, and both pizzas. Get a cow."
+    },
+    {
+      "id": "refurbished_furniture:wheat_flour",
+      "title": "Mill Wheat into Flour",
+      "desc": "Combine a bowl, three wheat and a salt on the Cutting Board. Flour plus a water bucket becomes dough, and dough is the base of every pizza - so this is the step that turns a wheat farm into meals."
+    },
+    {
+      "id": "refurbished_furniture:cooked_vegetable_pizza",
+      "title": "Bake a Vegetable Pizza",
+      "desc": "Lay dough, carrot, beetroot, potato and cheese on the Cutting Board, then bake the raw pizza in the oven. Chop the cooked pizza back on the board for slices - one pizza feeds you for a long while."
+    },
+    {
+      "id": "refurbished_furniture:frying_pan",
+      "title": "Construct a Frying Pan",
+      "desc": "Sits on the stove hob and cooks one item at a time in view. It is the only way to make berry jam, which spreads onto toast for a solid food source."
+    },
+    {
+      "id": "refurbished_furniture:light_electricity_generator",
+      "title": "Build the Electricity Generator",
+      "desc": "The mod's power source, and the point where the electronics half of it opens up. It burns furnace fuel and supports a limited number of connected devices, so plan on more than one for a big house."
+    },
+    {
+      "id": "refurbished_furniture:wrench",
+      "title": "Forge a Wrench",
+      "desc": "Electricity does not flow through blocks - you right-click the generator with the wrench and then click each device to link it. Nothing electric works until you have wired it up this way."
+    },
+    {
+      "id": "refurbished_furniture:light_ceiling_light",
+      "title": "Construct a Ceiling Light",
+      "desc": "The first device worth wiring: a flush ceiling lamp you switch on and off instead of spamming torches. Pair it with a Lightswitch on the wall so you are not clicking the light itself."
+    },
+    {
+      "id": "refurbished_furniture:light_fridge",
+      "title": "Construct a Fridge",
+      "desc": "Powered two-door storage: the fridge side holds food, the freezer side turns water into ice and ice into packed and blue ice on its own. Needs a wired generator to run."
+    },
+    {
+      "id": "refurbished_furniture:light_toaster",
+      "title": "Construct a Toaster",
+      "desc": "Drop in bread slices, push the lever, get toast that pops out. Also grills a cheese sandwich. Wants power, so build it after the generator is wired."
+    },
+    {
+      "id": "refurbished_furniture:television",
+      "title": "Construct a Television",
+      "desc": "A powered screen with several channels, changed by hand or with a Television Remote from across the room. Purely for the living room - it does not do anything mechanical."
+    },
+    {
+      "id": "refurbished_furniture:computer",
+      "title": "Construct a Computer",
+      "desc": "Runs small apps, including Smart Home, which lists every device on the generator's network and toggles them all from one screen. Rename devices in an anvil before placing them so the list is readable."
+    },
+    {
+      "id": "refurbished_furniture:oak_mail_box",
+      "title": "Construct a Mailbox",
+      "desc": "Place it and name it, and it becomes an address other players can post to. You are capped on how many you can own, so put it somewhere you will actually walk past."
+    },
+    {
+      "id": "refurbished_furniture:post_box",
+      "title": "Construct a Post Box",
+      "desc": "The sending end of the mail system: pick a mailbox by name or a player with @, load the package slots, add a message, hit send. It delivers across the world without you walking there."
+    },
+    {
+      "id": "refurbished_furniture:recycle_bin",
+      "title": "Construct a Recycle Bin",
+      "desc": "Feed it unwanted gear and it crushes items back down into some of their materials. Useful as a dump next to the Workbench so scrap becomes furniture again."
+    }
+  ],
+  "collections": [
+    {
+      "name": "Wood Variants",
+      "desc": "Tables, chairs, desks, drawers, crates, cutting boards, mailboxes, storage jars, storage cabinets, lattice fences and gates all come in the ten wood types (oak, spruce, birch, jungle, acacia, dark oak, mangrove, cherry, crimson, warped). Kitchen units, toilets, basins and baths add bamboo and the stone-ish variants for 26 each.",
+      "example_ids": [
+        "refurbished_furniture:oak_table",
+        "refurbished_furniture:spruce_chair",
+        "refurbished_furniture:birch_desk",
+        "refurbished_furniture:cherry_drawer"
+      ]
+    },
+    {
+      "name": "Dyed Variants",
+      "desc": "Sofas, stools, lamps, grills, coolers and trampolines exist in all sixteen dye colours, each craftable directly or re-dyed from another colour at a crafting table.",
+      "example_ids": [
+        "refurbished_furniture:white_sofa",
+        "refurbished_furniture:red_stool",
+        "refurbished_furniture:blue_lamp",
+        "refurbished_furniture:black_cooler"
+      ]
+    },
+    {
+      "name": "Bathroom Set",
+      "desc": "Toilet, basin and bath in 26 material variants - decoration plus a place to store things, no mechanic behind them. All cost quartz, iron and copper at the Workbench.",
+      "example_ids": [
+        "refurbished_furniture:oak_toilet",
+        "refurbished_furniture:oak_basin",
+        "refurbished_furniture:oak_bath"
+      ]
+    },
+    {
+      "name": "Outdoors",
+      "desc": "Hedges (eight leaf types plus azalea), lattice fences and gates, stepping stones in five stone types, and the door mat - garden dressing with no progression attached.",
+      "example_ids": [
+        "refurbished_furniture:oak_hedge",
+        "refurbished_furniture:azalea_hedge",
+        "refurbished_furniture:stone_stepping_stones",
+        "refurbished_furniture:door_mat"
+      ]
+    },
+    {
+      "name": "Dark Appliance Variants",
+      "desc": "Every white appliance has a black twin made by adding black dye to the light version at a crafting table: dark_fridge, dark_stove, dark_microwave, dark_toaster, dark_ceiling_light, dark_lightswitch, dark_range_hood, dark_electricity_generator, and dark ceiling fans in each wood.",
+      "example_ids": [
+        "refurbished_furniture:dark_fridge",
+        "refurbished_furniture:dark_stove",
+        "refurbished_furniture:dark_electricity_generator"
+      ]
+    }
+  ],
+  "notes": "Verified from data/refurbished_furniture/recipes (718 files) and assets/.../lang/en_us.json. The mod ships no hand-written advancements - all 714 are auto-generated recipe unlocks - so order here is derived from recipe cost and machine dependency. Two separate crafting systems: vanilla crafting table makes only the workbench, wrench, knife, spatula, television_remote, cheese, dough, jam toasts, and the dyed/dark recolour recipes; everything else is 'workbench_constructing' inside the Workbench GUI. Machine recipe types are workbench_constructing, cutting_board_slicing, cutting_board_combining, oven_baking (stove), microwave_heating, toaster_heating, frying_pan_cooking, freezer_solidifying (freezer half of the fridge), grill_cooking (inherits vanilla campfire recipes, no data files), recycle_bin_recycling and sink_fluid_transmuting. Electricity: items in the refurbished_furniture:electronics tag need a link to an electricity generator made with the wrench - fridge, toaster, microwave, ceiling light, lamps, ceiling fans, lightswitch, doorbell, television, computer. The stove is NOT in that tag - it burns fuel like a furnace. There is no freezer block; the freezer is the second door on the fridge. refurbished_furniture:package has no recipe - it is created when a player sends mail from a Post Box, so it can only be obtained by receiving a delivery. refurbished_furniture:milk is a block (Milk) with no data recipe in this jar."
+}

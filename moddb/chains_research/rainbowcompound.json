@@ -1,0 +1,263 @@
+{
+ "mod": "rainbowcompound",
+ "verified_against": "rainbowcompound-1.20.1-1.3.5.a.jar",
+ "item_count_in_jar": 88,
+ "chain": [
+  {
+   "id": "rainbowcompound:obsidianite_ingot",
+   "title": "Compacted Obsidian",
+   "desc": "A create:compacting recipe - andesite alloy, sturdy sheet, diamond and obsidian pressed together. This is a Create addon and its very first item already needs a mechanical press."
+  },
+  {
+   "id": "rainbowcompound:obsidianite_stick",
+   "title": "Cut Or Rolled",
+   "desc": "The ingot through a saw (create:cutting) or a rolling mill (createaddition:rolling). Two different machines, same result, and every obsidianite tool needs one."
+  },
+  {
+   "id": "rainbowcompound:obsidianite_pickaxe",
+   "title": "A Tier Above Diamond",
+   "desc": "Ingot and stick, or a smithing transform of a diamond pickaxe with a sturdy sheet and an upgrade kit. Obsidianite is the mod's first full tool and armour tier."
+  },
+  {
+   "id": "rainbowcompound:obsidianite_upgrade_kit",
+   "title": "The Kit",
+   "desc": "Sturdy sheet, diamond, obsidian, a trim template and an obsidianite ingot. The kit converts existing diamond gear rather than making you recraft it."
+  },
+  {
+   "id": "rainbowcompound:obsidianite_elytra",
+   "title": "Reinforced Wings",
+   "desc": "A vanilla elytra, a sturdy sheet and the upgrade kit, smithed. This is the base every dynamic elytra in the mod is built from."
+  },
+  {
+   "id": "rainbowcompound:haunted_membrane",
+   "title": "Haunt A Membrane",
+   "desc": "A create:haunting recipe - a phantom membrane in soul fire. It is referenced eleven times across the jar and gates almost every elytra variant."
+  },
+  {
+   "id": "rainbowcompound:lapis_sheet",
+   "title": "Pressed Lapis",
+   "desc": "A lapis block through the press. Sheets are Create's standard intermediate and this mod adds three of them."
+  },
+  {
+   "id": "rainbowcompound:refined_radiance_sheet",
+   "title": "Pressed Radiance",
+   "desc": "create:refined_radiance through the press. The radiance and shadow lines run in parallel from here on and you need both."
+  },
+  {
+   "id": "rainbowcompound:shadow_steel_sheet",
+   "title": "Pressed Shadow",
+   "desc": "create:shadow_steel through the press. Everything below this point wants one sheet of each."
+  },
+  {
+   "id": "rainbowcompound:incomplete_integrated_circuit",
+   "title": "Halfway Down The Belt",
+   "desc": "Sequenced assembly leaves an incomplete item on the belt between steps. Five of the mod's ids are these intermediates and they are real, holdable items."
+  },
+  {
+   "id": "rainbowcompound:integrated_circuit",
+   "title": "The Circuit",
+   "desc": "A create:sequenced_assembly on an andesite alloy with electron tubes, rose quartz, gold nuggets, redstone and lapis sheets. It is the reagent for every mechanism above it."
+  },
+  {
+   "id": "rainbowcompound:radiance_mechanism",
+   "title": "The Radiance Mechanism",
+   "desc": "Another sequenced assembly, consuming precision mechanisms, gold nuggets, redstone, radiance sheets and the integrated circuit."
+  },
+  {
+   "id": "rainbowcompound:shadow_mechanism",
+   "title": "The Shadow Mechanism",
+   "desc": "The mirror recipe on shadow steel sheets. Radiance and shadow are symmetric all the way up."
+  },
+  {
+   "id": "rainbowcompound:radiance_resonant_assembly",
+   "title": "Resonant, Radiance",
+   "desc": "Electron tubes, precision mechanisms, amethyst and the radiance mechanism. The assemblies are the last intermediate before the rings."
+  },
+  {
+   "id": "rainbowcompound:shadow_resonant_assembly",
+   "title": "Resonant, Shadow",
+   "desc": "The shadow half. Note that the mechanism and the assembly each appear in the other's recipe, so the two sequenced assemblies interlock."
+  },
+  {
+   "id": "rainbowcompound:radiance_ring",
+   "title": "The Radiance Ring",
+   "desc": "A mechanical crafter recipe: chromatic compound, polished rose quartz, radiance sheets and the resonant assembly. Rings are Curios-slot equipment."
+  },
+  {
+   "id": "rainbowcompound:shadow_ring",
+   "title": "The Shadow Ring",
+   "desc": "Its opposite number, and the second of the mod's two rings."
+  },
+  {
+   "id": "rainbowcompound:rainbow_compound",
+   "title": "The Thing The Mod Is Named After",
+   "desc": "A create:mixing recipe wanting refined radiance, shadow steel, netherite scrap, tinted glass, a haunted membrane AND an obsidianite ingot at once. Twenty-seven references across the jar - this is the hinge of the whole mod."
+  },
+  {
+   "id": "rainbowcompound:strange_colored_ingot",
+   "title": "Strange Colours",
+   "desc": "The other half of the rainbow upgrade kit, and the only item in the mod whose name admits nobody knows what it is."
+  },
+  {
+   "id": "rainbowcompound:rainbow_upgrade_kit",
+   "title": "The Rainbow Kit",
+   "desc": "Sturdy sheet, the obsidianite upgrade kit and a strange coloured ingot. The kit tier ladder mirrors the material one exactly."
+  },
+  {
+   "id": "rainbowcompound:rainbow_pickaxe",
+   "title": "Above Netherite",
+   "desc": "A smithing transform taking EITHER a netherite pickaxe OR an obsidianite one, plus rainbow compound and the rainbow kit. Two routes to the same top tier."
+  },
+  {
+   "id": "rainbowcompound:rainbow_chestplate",
+   "title": "The Best Armour Here",
+   "desc": "Same transform on netherite or obsidianite armour. Rainbow is the terminal tier of both the tool and the armour lines."
+  },
+  {
+   "id": "rainbowcompound:rainbow_apple",
+   "title": "A Golden Apple, Improved",
+   "desc": "Chromatic compound and rainbow compound smithed onto a golden apple. The food line is small but it is the only place rainbow compound goes that is not equipment."
+  },
+  {
+   "id": "rainbowcompound:overcharged_alloy",
+   "title": "Charged",
+   "desc": "A createaddition:charging recipe at 1024 FE - fed either create:chromatic_compound or the mod's own rainbow compound. This needs Create Crafts and Additions, not just Create."
+  },
+  {
+   "id": "rainbowcompound:overcharged_casing",
+   "title": "Overcharged Casing",
+   "desc": "Overcharged alloy, planks and colourless glass. The casing is the mod's own Create casing tier and it has encased shaft and cogwheel forms."
+  },
+  {
+   "id": "rainbowcompound:ender_quartz",
+   "title": "Quartz And A Pearl",
+   "desc": "Shapeless, the cheapest recipe in the mod, and the start of a small side branch."
+  },
+  {
+   "id": "rainbowcompound:polished_ender_quartz",
+   "title": "Sandpapered",
+   "desc": "A create:sandpaper_polishing recipe. Create has a polishing step and this mod uses it exactly once."
+  },
+  {
+   "id": "rainbowcompound:home_magic_mirror",
+   "title": "Go Home",
+   "desc": "Either a shapeless craft of polished ender quartz, or the full mechanical crafter version with enderite, radiance sheets and a shadow mechanism. A teleport home, and the mod's most useful non-combat item."
+  },
+  {
+   "id": "rainbowcompound:netherstar_ingot",
+   "title": "The Best Alloy",
+   "desc": "Mixing a nether star with experience nuggets, polished rose quartz, refined radiance, a lapis block and rainbow compound. Nine alloy ingots exist and this is the top one."
+  },
+  {
+   "id": "rainbowcompound:dynamic_elytra_rainbow",
+   "title": "Wings Worth Having",
+   "desc": "The obsidianite elytra smithed with rainbow compound and the rainbow kit. Nine dynamic elytras exist, each a different smithing transform, and the flandre variant is made from THIS one plus amethyst."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "rainbowcompound:obsidianite_pickaxe",
+   "members": [
+    "rainbowcompound:obsidianite_axe",
+    "rainbowcompound:obsidianite_shovel",
+    "rainbowcompound:obsidianite_hoe",
+    "rainbowcompound:obsidianite_sword",
+    "rainbowcompound:obsidianite_bow",
+    "rainbowcompound:obsidianite_knife",
+    "rainbowcompound:obsidianite_kitchen_knife",
+    "rainbowcompound:obsidianite_helmet",
+    "rainbowcompound:obsidianite_chestplate",
+    "rainbowcompound:obsidianite_leggings",
+    "rainbowcompound:obsidianite_boots",
+    "rainbowcompound:obsidianite_elytra"
+   ]
+  },
+  {
+   "hub": "rainbowcompound:rainbow_pickaxe",
+   "members": [
+    "rainbowcompound:rainbow_axe",
+    "rainbowcompound:rainbow_shovel",
+    "rainbowcompound:rainbow_hoe",
+    "rainbowcompound:rainbow_sword",
+    "rainbowcompound:rainbow_knife",
+    "rainbowcompound:rainbow_kitchen_knife",
+    "rainbowcompound:rainbow_helmet",
+    "rainbowcompound:rainbow_chestplate",
+    "rainbowcompound:rainbow_leggings",
+    "rainbowcompound:rainbow_boots"
+   ]
+  },
+  {
+   "hub": "rainbowcompound:dynamic_elytra_rainbow",
+   "members": [
+    "rainbowcompound:dynamic_elytra_ender",
+    "rainbowcompound:dynamic_elytra_fire",
+    "rainbowcompound:dynamic_elytra_ice",
+    "rainbowcompound:dynamic_elytra_slime",
+    "rainbowcompound:dynamic_elytra_feather",
+    "rainbowcompound:dynamic_elytra_radiance",
+    "rainbowcompound:dynamic_elytra_flandre",
+    "rainbowcompound:dynamic_elytra_66ccff"
+   ]
+  },
+  {
+   "hub": "rainbowcompound:netherstar_ingot",
+   "members": [
+    "rainbowcompound:blazeite_ingot",
+    "rainbowcompound:chorusite_ingot",
+    "rainbowcompound:enderite_ingot",
+    "rainbowcompound:frostite_ingot",
+    "rainbowcompound:glowstoneite_ingot",
+    "rainbowcompound:netherwartite_ingot",
+    "rainbowcompound:slimeite_ingot",
+    "rainbowcompound:warpedite_ingot",
+    "rainbowcompound:strange_colored_ingot"
+   ]
+  },
+  {
+   "hub": "rainbowcompound:integrated_circuit",
+   "members": [
+    "rainbowcompound:incomplete_integrated_circuit",
+    "rainbowcompound:incomplete_radiance_mechanism",
+    "rainbowcompound:incomplete_shadow_mechanism",
+    "rainbowcompound:incomplete_radiance_resonant_assembly",
+    "rainbowcompound:incomplete_shadow_resonant_assembly",
+    "rainbowcompound:radiance_mechanism",
+    "rainbowcompound:shadow_mechanism",
+    "rainbowcompound:radiance_resonant_assembly",
+    "rainbowcompound:shadow_resonant_assembly",
+    "rainbowcompound:lapis_sheet",
+    "rainbowcompound:refined_radiance_sheet",
+    "rainbowcompound:shadow_steel_sheet"
+   ]
+  },
+  {
+   "hub": "rainbowcompound:rainbow_apple",
+   "members": [
+    "rainbowcompound:rainbow_apple_stew",
+    "rainbowcompound:golden_apple_stew",
+    "rainbowcompound:enchanted_golden_apple_stew",
+    "rainbowcompound:honeyed_porkchop",
+    "rainbowcompound:refined_radiance_tea",
+    "rainbowcompound:shadow_steel_tea"
+   ]
+  },
+  {
+   "hub": "rainbowcompound:refined_radiance_knife",
+   "members": [
+    "rainbowcompound:refined_radiance_kitchen_knife",
+    "rainbowcompound:refined_radiance_scythes",
+    "rainbowcompound:refined_radiance_neon",
+    "rainbowcompound:shadow_steel_knife",
+    "rainbowcompound:shadow_steel_kitchen_knife",
+    "rainbowcompound:shadow_steel_axe",
+    "rainbowcompound:shadow_steel_pickaxe",
+    "rainbowcompound:shadow_steel_shovel",
+    "rainbowcompound:shadow_steel_sword",
+    "rainbowcompound:shadow_steel_mattock",
+    "rainbowcompound:zinc_rod"
+   ]
+  }
+ ],
+ "notes": "TWO SCANNER TRAPS FOUND HERE, and both cost real items. TRAP ONE: CREATE-FAMILY RECIPES USE \"results\" (PLURAL, AN ARRAY), NOT \"result\". A recipe scanner that only reads o['result'] finds 33 of this mod's 88 ids to have no recipe and concludes they are uncompletable. Rewriting the scanner to also read \"results\", \"output\" and \"transitionalItem\" drops that number from 33 to 5. The affected types in this jar are create:mixing (12 files), create:sequenced_assembly (5), create:pressing (3), create:compacting, create:cutting, create:filling, create:haunting, create:sandpaper_polishing, createaddition:charging (2) and createaddition:rolling - 27 of the 105 recipe files. create:mechanical_crafting (6 files) DOES use the singular \"result\", so the type list matters. This applies to every Create addon, not just this one. TRAP TWO: RECIPES SHIPPED UNDER ANOTHER MOD'S NAMESPACE. The remaining 5 - golden_apple_stew, enchanted_golden_apple_stew, rainbow_apple_stew, refined_radiance_tea and shadow_steel_tea - all have perfectly ordinary recipes with a singular \"result\", but they live at data/FARMERSDELIGHT/recipes/cooking/*.json, not under data/rainbowcompound/. A namespace-scoped scan (data/<modid>/recipes/) never sees them. Scanning data/*/recipes/ across ALL namespaces instead brings the count of items with no recipe to ZERO: every one of the 88 ids in this mod is obtainable. (The same pattern bit betterarcheology, whose netherite brush recipe is at data/minecraft/recipes/.) LOADER: META-INF/mods.toml, modId rainbowcompound, 1.20.1 Forge. Modrinth slug is rainbow-compound. DEPENDENCIES ARE HEAVY AND NOT ALL MANDATORY: the jar carries data for create, createaddition, farmersdelight, tetra and curios, and several recipes are wrapped in forge/neoforge mod_loaded conditions - so which of the 88 ids actually exist depends on what else is in the pack. Notably rainbow_kitchen_knife has one recipe route through kaleidoscope_cookery:netherite_kitchen_knife, a mod not otherwise referenced. Create itself is not optional: obsidianite_ingot, the first item in the chain, is a create:compacting recipe consuming create:sturdy_sheet. VERIFICATION, TWO PASSES: pass A took the 103 assets/rainbowcompound/models/item stems INTERSECT the item./block. lang keys and gave 88. Pass B independently rebuilt from recipe results (Create-aware), loot-table entry names, blockstates and lang keys and gave 103. All 15 differences resolved and none is an item: obsidianite_bow_0/_1/_2 are draw frames, obsidianite_shield and obsidianite_shield_blocking are an unreleased shield's two model states with zero data references, rainbow_blaze_cake is a model with no lang key and no recipe, and the nine *_encased_cogwheel / *_encased_large_cogwheel / *_encased_shaft models (overcharged, refined_radiance and shadow_steel) are Create's encased-block model overrides rather than separate items. Final count stays 88, no widening. GRAPH: the spine is obsidianite_ingot -> obsidianite_stick -> the twelve-piece obsidianite tool and armour tier -> obsidianite_upgrade_kit -> rainbow_upgrade_kit (with strange_colored_ingot) and, in parallel, rainbow_compound from mixing refined radiance, shadow steel, netherite scrap, tinted glass, a haunted membrane and an obsidianite ingot. Rainbow gear is then a smithing_transform taking EITHER vanilla netherite gear OR the obsidianite equivalent, plus rainbow compound and the rainbow kit - two routes to the same tier, which is worth telling a player. The sequenced-assembly branch is separate and interlocking: lapis/radiance/shadow sheets by pressing, then integrated_circuit, then the radiance and shadow mechanisms and resonant assemblies (each of which appears in the other's recipe), then the two rings. Nine alloy ingots come from create:mixing of nuggets plus a themed ingredient (blazeite from blaze powder, frostite from blue ice, chorusite from popped chorus fruit and dragon breath, enderite from ender pearls, and so on), and netherstar_ingot is the top of that family. THE INCOMPLETE ITEMS ARE REAL: incomplete_integrated_circuit, incomplete_radiance_mechanism, incomplete_shadow_mechanism, incomplete_radiance_resonant_assembly and incomplete_shadow_resonant_assembly are the transitionalItem of their sequenced assemblies - genuinely registered, holdable items that sit on the belt between steps. They are in the circuit wheel rather than the spine because asking a player to hold one is a slightly odd quest, but they are not fake. CONSENSUS: moddb.json lists 13 rainbowcompound ids and all 13 resolve in this jar - obsidianite_ingot, obsidianite_stick, rainbow_compound, haunted_membrane, lapis_sheet, integrated_circuit, refined_radiance_sheet, shadow_steel_sheet, obsidianite_upgrade_kit, rainbow_upgrade_kit, overcharged_alloy, home_magic_mirror and rainbow_apple. moddb leads with obsidianite_ingot and ends with rainbow gear, matching the graph exactly. No conflict. DESIRABILITY: no ores, nuggets, slabs, stairs or walls exist in this mod, so nothing was dropped for shape."
+}

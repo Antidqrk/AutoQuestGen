@@ -1,0 +1,200 @@
+{
+ "mod": "goetyawaken",
+ "verified_against": "goetyawaken-1.3.7.jar",
+ "item_count_in_jar": 215,
+ "registers_into": ["goety"],
+ "chain": [
+  {
+   "id": "goetyawaken:ancient_gong",
+   "title": "Echo of a Nameless Kingdom",
+   "desc": "Set a Weakening Focus onto copper and string to replicate the gong of a kingdom buried under the sands - its distorted ring still stirs the desert ruins."
+  },
+  {
+   "id": "kill:goetyawaken:parched",
+   "title": "Progeny of the Sands",
+   "desc": "The Parched are sun-scorched skeletons that haunt the desert and never burn in daylight; cutting them down is how you draw the buried kingdom's real mages out of hiding."
+  },
+  {
+   "id": "kill:goetyawaken:parched_necromancer",
+   "title": "Walk Like the Nameless",
+   "desc": "Sound the Ancient Gong in a desert to summon the Ruins Necromancer, the dead kingdom's reborn mage - it is your only source of Taboo Fragments."
+  },
+  {
+   "id": "goetyawaken:taboo_fragment",
+   "title": "Forbidden Masonry",
+   "desc": "Claim a Taboo Fragment from the Ruins Necromancer; this shard of the nameless kingdom's stonework is the gate ingredient for the Catacombs Reliquary, Champion gear and the Starless Night."
+  },
+  {
+   "id": "goetyawaken:catacombs_reliquary",
+   "title": "No More Burning Servants",
+   "desc": "Craft the Reliquary from a Taboo Fragment, Gale Fabric and steep planks - it grants your undead servants permanent immunity to sunlight, so your army finally marches at noon."
+  },
+  {
+   "id": "goetyawaken:iron_grimoire",
+   "title": "Remedial Schooling",
+   "desc": "Mix a book with iron, Ectoplasm, a Magic Emerald, a savage tooth and powder snow. Using a grimoire on a Sorcerer Servant raises its rank by one - iron is the first rung of the ladder."
+  },
+  {
+   "id": "goetyawaken:gold_grimoire",
+   "title": "Gilded Curriculum",
+   "desc": "Bind a Gold Grimoire with a Wind Core, redstone and gold to push sorcerers past iron rank - each grimoire tier caps how far a servant can be cultivated."
+  },
+  {
+   "id": "goetyawaken:emerald_grimoire",
+   "title": "The Green Degree",
+   "desc": "Ritual-craft the Emerald Grimoire from jade, a Magic Emerald and a Vexing Focus; it unlocks emerald-rank sorcery for your servants."
+  },
+  {
+   "id": "goetyawaken:diamond_grimoire",
+   "title": "Doctorate in Devilry",
+   "desc": "Ritual a diamond, budding amethyst, Resonance Crystal and a Frost Nova Focus into the Diamond Grimoire - the second-highest rank a Sorcerer Servant can reach."
+  },
+  {
+   "id": "goetyawaken:soul_sapphire",
+   "title": "Laundering the Evidence",
+   "desc": "Ritual-transmute the Vizier's bloody Soul Ruby with Ectoplasm, a Forbidden Piece and a Mystic Core into a Soul Sapphire - the signature gem this addon's endgame rituals all ask for."
+  },
+  {
+   "id": "goetyawaken:ruby_grimoire",
+   "title": "Or Goety Boss",
+   "desc": "Forge the ultimate grimoire from a Soul Ruby, Forbidden Fragment, Shadow Essence and an enchanted golden apple, then enlighten a diamond-level sorcerer to ruby level - a servant that fights like a boss."
+  },
+  {
+   "id": "goetyawaken:profound_echoing_shard",
+   "title": "Echoes Made Solid",
+   "desc": "Infuse an echo shard with a Hunger Core, Raging Matter and a Sonic Boom Focus; it also converts plain deepslate into reinforced deepslate, a lost ancient skill."
+  },
+  {
+   "id": "goetyawaken:shadow_shrieker",
+   "title": "A Warden of Your Own",
+   "desc": "Craft the Shadow Shrieker, set it on a charged Cursed Cage and feed it a Profound Echoing Shard to shape a loyal Warden Servant - hook up sculk sensors and it summons defenders automatically."
+  },
+  {
+   "id": "goetyawaken:nether_reactor_core",
+   "title": "Please Bring Your Own Diapers",
+   "desc": "Ritual a Soul Sapphire, Soul Jar, Mystic Core and diamond block into the Nether Reactor Core, then build the wither T with it at the center to raise a Wither Servant that obeys you."
+  },
+  {
+   "id": "goetyawaken:mirage_eye",
+   "title": "Chasing the Mirage",
+   "desc": "An eye of ender, iron and red sandstone make a Mirage Eye that tracks the Mirage - the badlands border fortress of the nameless kingdom, where its elite strength was buried."
+  },
+  {
+   "id": "structure:goetyawaken:mirage",
+   "title": "High and Dry",
+   "desc": "Follow the eye to the Mirage fortress in the badlands. Its garrison of Royal Guards and vanguards drops pale steel, and its vaults hold Dominance Scrolls."
+  },
+  {
+   "id": "kill:goetyawaken:nameless_one",
+   "title": "The King Below the Sand",
+   "desc": "Face the Nameless One, the forgotten king whose kingdom the desert swallowed. He is the only being that sheds Eschaton Platinum, the metal every piece of Champion gear demands."
+  },
+  {
+   "id": "goetyawaken:nameless_platinum",
+   "title": "Eschaton Platinum",
+   "desc": "Gather Eschaton Platinum from the fallen king. With Mucilage, Glowing Embers and Dark Alloy it forges the Champion arsenal and the Heaven Rift Focus."
+  },
+  {
+   "id": "goetyawaken:champion_chestplate",
+   "title": "Raiment of the Rearguard",
+   "desc": "Ritual Champion armor from Eschaton Platinum, Mucilage, Soul Sapphires and Dark Alloy - two pieces grant Shielding, the full set adds fall immunity, reach and a riptide dash."
+  },
+  {
+   "id": "goetyawaken:royal_scroll",
+   "title": "Divine Mandate",
+   "desc": "Loot a Dominance Scroll from the Mirage, the Ominous Castle or the Chaos Prison and study the badlands lords' secrets of rule - the research that opens the path to your own Monstrosity."
+  },
+  {
+   "id": "goetyawaken:prison_eye",
+   "title": "Moo?",
+   "desc": "Craft a Prison Eye to track the Chaos Prison, where the powers of Overworld, Nether and End intertwine around a colossal caged war machine."
+  },
+  {
+   "id": "kill:goetyawaken:hostile_mushroom_monstrosity",
+   "title": "Moo!",
+   "desc": "Break into the Chaos Prison and put down the out-of-control Mooshroom Monstrosity. Its remains yield the mycelial circuitry no ritual can create from scratch."
+  },
+  {
+   "id": "goetyawaken:superaggregated_mycelial_circuit",
+   "title": "Circuits of the Ancients",
+   "desc": "Duplicate the circuit stripped from the Prototype: a ritual over a Dark Alloy Ingot, mushroom blocks, an end crystal and a Soul Sapphire copies one circuit from another, keeping them renewable."
+  },
+  {
+   "id": "goetyawaken:mushroom_coated_alloy_block",
+   "title": "Prototype",
+   "desc": "Ritual netherite, crying obsidian, end stone and mushroom blocks into Mushroom-Coated Alloy, the body material for building your own Mooshroom Monstrosity - a war machine that answers to you."
+  },
+  {
+   "id": "goetyawaken:mooshroom_mace",
+   "title": "The Mallet of Spores",
+   "desc": "Fuse a Mushroom-Coated Alloy Block, mycelial circuit and Soul Sapphire into the Mooshroom Mallet, a crushing weapon wrenched from the Prototype's design."
+  },
+  {
+   "id": "goetyawaken:obsidian_claymore",
+   "title": "Unyielding Edge",
+   "desc": "Ritual obsidian, crying obsidian, a Void Block and Dark Metal into the Obsidian Claymore - a greatsword worthy of upgrade into something far darker."
+  },
+  {
+   "id": "goetyawaken:eye_of_overwatch",
+   "title": "Eye of Overwatch",
+   "desc": "Combine a Profound Echoing Shard, Philosopher's Stone, Stormlander and an end crystal into this relic - the last rare treasure the Starless Night ritual demands."
+  },
+  {
+   "id": "goetyawaken:starless_night",
+   "title": "The Starless Night",
+   "desc": "Upgrade the Obsidian Claymore with the Eye of Overwatch, Night Beacon, Blade of Ender and a Void Staff. The finished blade hurls void slashes, overkills into nearby foes, slots into staffs like a focus and drinks Soul Energy to repair itself."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "goetyawaken:agony_focus",
+   "members": [
+    "goetyawaken:blood_rain_focus",
+    "goetyawaken:creeper_focus",
+    "goetyawaken:desert_plagues_focus",
+    "goetyawaken:fairy_focus",
+    "goetyawaken:infestation_focus",
+    "goetyawaken:killer_focus",
+    "goetyawaken:mushroom_missile_focus",
+    "goetyawaken:shulker_missile_focus",
+    "goetyawaken:stare_focus",
+    "goetyawaken:torment_focus",
+    "goetyawaken:wololo_focus",
+    "goetyawaken:access_focus",
+    "goetyawaken:heaven_rift_focus"
+   ]
+  },
+  {
+   "hub": "goetyawaken:claymore",
+   "members": [
+    "goetyawaken:glaive",
+    "goetyawaken:mace",
+    "goetyawaken:moonlight_cut",
+    "goetyawaken:sun_grace",
+    "goetyawaken:frost_scythe",
+    "goetyawaken:grave_bane",
+    "goetyawaken:harp_crossbow",
+    "goetyawaken:dark_netherite_bow",
+    "goetyawaken:dark_ice_axe",
+    "goetyawaken:truth_seeker",
+    "goetyawaken:assassin_glove",
+    "goetyawaken:dauntless_gloves",
+    "goetyawaken:ripplewalk",
+    "goetyawaken:gatling_charm",
+    "goetyawaken:mushroom_hat"
+   ]
+  },
+  {
+   "hub": "goetyawaken:ender_access_lectern",
+   "members": [
+    "goetyawaken:ender_storage_book_iron",
+    "goetyawaken:ender_storage_book_gold",
+    "goetyawaken:ender_storage_book_emerald",
+    "goetyawaken:ender_storage_book_diamond",
+    "goetyawaken:ender_storage_book_sapphire",
+    "goetyawaken:echoing_ender_shelf"
+   ]
+  }
+ ],
+ "notes": "Goety endgame addon (Awakened Evil). Order sourced from the jar's own advancements (data/goetyawaken/advancements: root->walk_like_nameless, royal_research_completed->mushroom_monstrosity, chaos_prison->mushroom_monstrosity_kill->sporearm_race, upgrade_wizard, eternal_no_more, get_shadow_shrieker, high_and_dry) plus its Patchouli entries injected into goety's black_book (assets/goety/patchouli_books) and recipe JSON (data/goetyawaken/recipes, mostly goety:ritual type). Verified: all 28 chain + 34 collection item ids against the 215 lang item/block stems; kill targets parched, parched_necromancer, nameless_one, hostile_mushroom_monstrosity in entity lang; structure mirage in worldgen/structure (23 structures total). Taboo Fragment source = Ruins Necromancer per walk_like_nameless advancement (icon+desc). royal_scroll (Dominance Scroll) confirmed in chests/chaos_prison, mirage, ominous_castle loot. Eye trio tooltips confirm structure tracking (ominous_eye/prison_eye/mirage_eye). Requires mid-to-late Goety (magic emeralds, rituals, dark ingots) throughout - gate this mod's quests behind the goety chain. Extra verified bosses if wanted: kill:goetyawaken:wraith_necromancer (Glacial Ghost House, drops music disc + spirit fabric), kill:goetyawaken:arch_illusioner (drops delusive_fragment for the Illusion Robe), structure:goetyawaken:chaos_prison, structure:goetyawaken:ominous_castle."
+}

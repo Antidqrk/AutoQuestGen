@@ -1,0 +1,87 @@
+{
+ "mod": "travelersbackpack",
+ "verified_against": "travelersbackpack-forge-1.20.1-9.1.56.jar",
+ "item_count_in_jar": 80,
+ "chain": [
+  {"id": "travelersbackpack:blank_upgrade", "title": "An Empty Promise", "desc": "Crafted from leather and string, and is the base for every tier and ability upgrade."},
+  {"id": "travelersbackpack:backpack_tank", "title": "Glass and Iron Bladder", "desc": "Crafted from iron ingots and colorless glass, and can be built directly into a backpack or applied later."},
+  {"id": "travelersbackpack:white_sleeping_bag", "title": "Rolled and Ready", "desc": "Crafted from white wool, and can be shift-right-clicked onto a placed backpack to attach or swap it."},
+  {"id": "travelersbackpack:standard", "title": "Everything on Your Shoulders", "desc": "Crafted from leather, string, a wooden chest, two backpack tanks and a sleeping bag, and also generates rarely in dungeon, mineshaft and desert pyramid chests."},
+  {"id": "travelersbackpack:hose_nozzle", "title": "Brass Tip", "desc": "Crafted from iron and gold ingots as the head of the hose."},
+  {"id": "travelersbackpack:hose", "title": "Drink, Draw, Douse", "desc": "Crafted from a hose nozzle and green dye, and switches between suck, spill and drink modes while a backpack is equipped."},
+  {"id": "travelersbackpack:tanks_upgrade", "title": "Retrofitting the Reservoirs", "desc": "Crafted from a blank upgrade and a backpack tank to add fluid tanks to a backpack that was built without them."},
+  {"id": "travelersbackpack:crafting_upgrade", "title": "Bench on the Trail", "desc": "Crafted from a blank upgrade, a wooden chest and a crafting table."},
+  {"id": "travelersbackpack:pickup_upgrade", "title": "Nothing Left Behind", "desc": "Crafted from a blank upgrade, redstone dust and a hopper."},
+  {"id": "travelersbackpack:iron_tier_upgrade", "title": "Ironclad Interior", "desc": "Crafted from a blank upgrade ringed with iron ingots to expand the backpack's inventory to the iron tier."},
+  {"id": "travelersbackpack:furnace_upgrade", "title": "Embers in the Pack", "desc": "Crafted from a blank upgrade, a wooden chest and a furnace."},
+  {"id": "travelersbackpack:magnet_upgrade", "title": "Reach Without Walking", "desc": "Crafted from a blank upgrade, iron, lapis, redstone and an ender pearl."},
+  {"id": "travelersbackpack:void_upgrade", "title": "The Bottomless Slot", "desc": "Crafted from a blank upgrade, redstone dust and a lava bucket to delete unwanted items on pickup."},
+  {"id": "travelersbackpack:gold_tier_upgrade", "title": "Gold-Lined Pockets", "desc": "Crafted from a blank upgrade ringed with gold ingots to expand the backpack to the gold tier."},
+  {"id": "travelersbackpack:feeding_upgrade", "title": "It Feeds You Back", "desc": "Crafted from a blank upgrade, redstone, a golden apple and a golden carrot."},
+  {"id": "travelersbackpack:blast_furnace_upgrade", "title": "Ore Melts Faster Here", "desc": "Crafted from a blank upgrade, a wooden chest and a blast furnace."},
+  {"id": "travelersbackpack:diamond_tier_upgrade", "title": "Facets of Space", "desc": "Crafted from a blank upgrade ringed with diamonds to expand the backpack to the diamond tier."},
+  {"id": "travelersbackpack:refill_upgrade", "title": "The Stack Never Ends", "desc": "Crafted from a blank upgrade, redstone dust and a dropper to top up hotbar stacks from the backpack."},
+  {"id": "travelersbackpack:netherite_tier_upgrade", "title": "Last Expansion", "desc": "Made in a smithing table from a blank upgrade, a netherite upgrade template and a netherite ingot for the highest inventory tier."},
+  {"id": "travelersbackpack:netherite", "title": "Ash-Black Traveler", "desc": "Made in a smithing table from the diamond backpack, a netherite upgrade template and a netherite ingot."}
+ ],
+ "collections": [
+  {
+   "hub": "travelersbackpack:blank_upgrade",
+   "members": [
+    "travelersbackpack:tanks_upgrade",
+    "travelersbackpack:crafting_upgrade",
+    "travelersbackpack:pickup_upgrade",
+    "travelersbackpack:magnet_upgrade",
+    "travelersbackpack:void_upgrade",
+    "travelersbackpack:feeding_upgrade",
+    "travelersbackpack:refill_upgrade",
+    "travelersbackpack:jukebox_upgrade",
+    "travelersbackpack:furnace_upgrade",
+    "travelersbackpack:smoker_upgrade",
+    "travelersbackpack:blast_furnace_upgrade",
+    "travelersbackpack:iron_tier_upgrade",
+    "travelersbackpack:gold_tier_upgrade",
+    "travelersbackpack:diamond_tier_upgrade"
+   ]
+  },
+  {
+   "hub": "travelersbackpack:standard",
+   "members": [
+    "travelersbackpack:bee",
+    "travelersbackpack:blaze",
+    "travelersbackpack:chicken",
+    "travelersbackpack:cow",
+    "travelersbackpack:creeper",
+    "travelersbackpack:dragon",
+    "travelersbackpack:enderman",
+    "travelersbackpack:ghast",
+    "travelersbackpack:horse",
+    "travelersbackpack:ocelot",
+    "travelersbackpack:pig",
+    "travelersbackpack:sheep",
+    "travelersbackpack:skeleton",
+    "travelersbackpack:wolf"
+   ]
+  },
+  {
+   "hub": "travelersbackpack:diamond",
+   "members": [
+    "travelersbackpack:coal",
+    "travelersbackpack:iron",
+    "travelersbackpack:gold",
+    "travelersbackpack:emerald",
+    "travelersbackpack:lapis",
+    "travelersbackpack:redstone",
+    "travelersbackpack:quartz",
+    "travelersbackpack:sandstone",
+    "travelersbackpack:snow",
+    "travelersbackpack:sponge",
+    "travelersbackpack:hay",
+    "travelersbackpack:bookshelf",
+    "travelersbackpack:melon",
+    "travelersbackpack:cactus"
+   ]
+  }
+ ],
+ "notes": "All ids verified against assets/travelersbackpack/models/item/*.json intersected with item./block. lang keys (80 items). Progression derived from data/travelersbackpack/recipes/** (140 recipe files) plus data/travelersbackpack/loot_modifiers/**. Key structure: blank_upgrade (leather+string) is the root of every upgrade; inventory size is driven by the four *_tier_upgrade items (iron/gold/diamond ingots ringing a blank upgrade, netherite via smithing_transform), NOT by the themed backpacks. The ~60 themed backpacks (bee, blaze, cow, diamond, emerald, ...) are cosmetic variants crafted with the custom 'backpack_shaped' type from travelersbackpack:standard plus a theme ingredient; each also has a *_smithing recipe (type 'backpack_upgrade') that re-skins an existing backpack using the travelersbackpack:backpack_upgrades tag. Dropped ids: hose_drink, hose_spill, hose_suck and supporter_star (models exist but no matching item./block. lang key, so they failed set-membership). Excluded from the chain but real items: travelersbackpack:travelers_backpack (a generic block entry with no recipe), and the three loot-only themed backpacks bat (mineshaft/dungeon chests), iron_golem (armorer village chests) and villager (librarian trade only) - the jar states these obtain methods in its own obtain.travelersbackpack.* lang keys. The 16 *_sleeping_bag colours are all real and craftable from wool or by dyeing. No unverifiable ids were written."
+}

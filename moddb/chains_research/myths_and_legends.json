@@ -1,0 +1,210 @@
+{
+ "mod": "myths_and_legends",
+ "verified_against": "Myths_and_Legends-1.6.1-forge.jar",
+ "item_count_in_jar": 79,
+ "registers_into": [
+  "cobblemon"
+ ],
+ "collections": [
+  {
+   "hub": "myths_and_legends:adamant_orb",
+   "members": [
+    "myths_and_legends:lustrous_orb",
+    "myths_and_legends:griseous_orb",
+    "myths_and_legends:red_orb",
+    "myths_and_legends:blue_orb",
+    "myths_and_legends:jade_orb",
+    "myths_and_legends:azelf_fang",
+    "myths_and_legends:mesprit_plume",
+    "myths_and_legends:uxie_claw"
+   ]
+  },
+  {
+   "hub": "myths_and_legends:koko_totem",
+   "members": [
+    "myths_and_legends:lele_totem",
+    "myths_and_legends:bulu_totem",
+    "myths_and_legends:fini_totem",
+    "myths_and_legends:sun_flute",
+    "myths_and_legends:moon_flute",
+    "myths_and_legends:necro_prism",
+    "myths_and_legends:prismatic_shell",
+    "myths_and_legends:type_null_mask",
+    "myths_and_legends:lillies_bag",
+    "myths_and_legends:marshadow_hood"
+   ]
+  },
+  {
+   "hub": "myths_and_legends:ancient_tablet",
+   "members": [
+    "myths_and_legends:ice_tablet",
+    "myths_and_legends:plasma_tablet",
+    "myths_and_legends:scaly_tablet",
+    "myths_and_legends:steel_tablet",
+    "myths_and_legends:stone_tablet",
+    "myths_and_legends:steam_valve",
+    "myths_and_legends:cavern_shield"
+   ]
+  },
+  {
+   "hub": "myths_and_legends:aurora_ticket",
+   "members": [
+    "myths_and_legends:eon_ticket",
+    "myths_and_legends:liberty_pass",
+    "myths_and_legends:member_card",
+    "myths_and_legends:oaks_letter",
+    "myths_and_legends:old_sea_map",
+    "myths_and_legends:bonus_disk",
+    "myths_and_legends:mystery_box",
+    "myths_and_legends:gs_ball",
+    "myths_and_legends:antique_pokeball"
+   ]
+  },
+  {
+   "hub": "myths_and_legends:sacred_sword",
+   "members": [
+    "myths_and_legends:ironwill_sword",
+    "myths_and_legends:grassland_blade",
+    "myths_and_legends:rusted_sword",
+    "myths_and_legends:rusted_shield",
+    "myths_and_legends:kubfus_band",
+    "myths_and_legends:zarudes_cape",
+    "myths_and_legends:zeraoras_thunderclaw",
+    "myths_and_legends:diancies_crown",
+    "myths_and_legends:hoopa_ring",
+    "myths_and_legends:genesect_drive",
+    "myths_and_legends:meloetta_headset",
+    "myths_and_legends:soul_heart"
+   ]
+  }
+ ],
+ "notes": "NO QUESTABLE CONTENT. All 79 items are registered, but the jar has no data/ directory at all - no recipes, loot tables, worldgen, structures or advancements - so nothing is obtainable in survival and every quest built from it would be uncompletable. The researched order is preserved under the unobtainable_chain key in case a pack hands these out via KubeJS or a datapack; it must not be used as-is.\n\nNAMESPACE COLLISION, UNRESOLVED: this file is for modId . A different, unrelated adventure mod registers under  (no underscore) and DOES have real content. The two differ by one character and cannot coexist. Confirm which a pack ships before using either.\n\nREAD THIS BEFORE GENERATING ANY TASK FROM THIS FILE. This mod ships NO recipes, NO loot tables, NO worldgen, NO structures, NO entities and NO advancements - the jar contains 389 entries and not one of them is under data/. Every one of the 79 items is registered (one class each in com/github/d0ctorleon/mythsandlegends/items/) and has an item model, a texture and a lang key, and NONE of them has an in-game acquisition path. They are meant to be handed out by the pack: through a shop, a quest reward, a loot injection the pack author writes, or the mod's own /mythsandlegends command. An FTB Quests 'obtain item' task on any myths_and_legends: id is therefore UNCOMPLETABLE unless the quest itself, or something else in the pack, supplies the item. Treat this chapter as a reward/checklist chapter, not a gathering chapter. WHAT THE MOD ACTUALLY DOES: it is a Cobblemon sidemod. com/github/d0ctorleon/mythsandlegends/cobblemon/spawning/condition/keyitem/KeyItemConditions.class and the 22 PokemonInTeamConditions inner classes hook Cobblemon's spawn detail so that a legendary only becomes spawnable while the matching key item is in the player's inventory. ModConfigs exposes inventory_check_interval, consume_items_on_successful_spawn, ignore_key_items, inventory_check_shulker_boxes, enable_force_spawning and force_spawning_spawn_pool - so a pack can turn the whole gate off. LOADER VERIFIED: META-INF/mods.toml present, no fabric.mod.json, and it declares dependencies on forge, minecraft, cobblemon and architectury; the Modrinth file for 1.6.1 lists loaders [forge] and game version 1.20.1. HARD DEPENDENCY: cobblemon. Without Cobblemon installed this mod does not load at all, so if the pack has no Cobblemon this chapter should not be generated. NAMESPACE COLLISION - IMPORTANT. This jar's mods.toml modId is 'mythsandlegends' but its assets and item ids are all under the namespace 'myths_and_legends'. A completely unrelated 1.20.1 Forge mod, 'Myths & Legends' (Modrinth slug myths-and-legends, file mythsandlegends-0.0.8.8.jar), ALSO declares modId 'mythsandlegends' and registers its items under the namespace 'mythsandlegends' - it is a mythological-creature adventure mod with Amaroks, Gargoyles, Karakondjuls and an Abaddon, and it has real recipes, loot tables, structures and advancements. The two mods share a modId and CANNOT be installed together, and their item ids differ only by an underscore. If the pack's chapter is meant to be about mythological monsters rather than Pokemon key items, the right namespace is mythsandlegends: and this file is the wrong one. Item set = the 79 stems of assets/myths_and_legends/models/item/*.json intersected with item.myths_and_legends.* keys in assets/myths_and_legends/lang/en_us.json, and that set is exactly the 79 item classes in the items package - a perfect three-way match. DROPPED, NOT REGISTERED: myths_and_legends:eon_flute, myths_and_legends:red_chain and myths_and_legends:zygarde_cell_v2 have item models in the jar but no lang key and no item class - they are leftover art with no registered item behind them. NO ENTITIES AND NO STRUCTURES: there is no entity registry class and no entity.myths_and_legends.* lang key in the jar, so NO kill: step can ever be valid for this mod; and there is no data/ directory at all, hence no worldgen/structure/, so NO structure: step is valid either. The legendaries it gates are Cobblemon Pokemon and live in the cobblemon: namespace. NO DIMENSION and no biome, so no dim: step either. ORDERING: there is no recipe graph and no advancement tree to derive one from, so the chain is ordered by Pokemon generation - Kanto and Johto keys, then Hoenn, Sinnoh, Unova, Kalos, Alola, Galar and Paldea - which is the only ordering the source material supports. CONSENSUS: all 78 moddb entries are real ids in this jar. moddb's positions are effectively uniform noise (78 items spread evenly from 0.000 to 1.000 with three packs each), which is what you would expect from a mod with no crafting graph: the pack authors simply listed the whole item set. The one moddb signal worth keeping is reins_of_unity at 0.000, which is honoured above.",
+ "unobtainable_chain": [
+  {
+   "id": "myths_and_legends:antique_pokeball",
+   "title": "The Oldest Ball",
+   "desc": "A Cobblemon key item. Every item this mod adds works the same way: hold it and the legendary it is bound to becomes spawnable. Nothing here is crafted."
+  },
+  {
+   "id": "myths_and_legends:old_sea_map",
+   "title": "Chart to Faraway Island",
+   "desc": "Its own tooltip: a chart that can be used to navigate to Faraway Island, where Mew is said to reside."
+  },
+  {
+   "id": "myths_and_legends:dr_fujis_diary",
+   "title": "The Research That Made Mewtwo",
+   "desc": "Dr. Fuji's diary, filled with records of his research on Mew and the creation that followed."
+  },
+  {
+   "id": "myths_and_legends:gs_ball",
+   "title": "The Ball Nobody Explains",
+   "desc": "A mysterious Poke Ball. The mod's tooltip only says it has something to do with the Mythical Pokemon Celebi."
+  },
+  {
+   "id": "myths_and_legends:rainbow_wing",
+   "title": "A Feather in Rainbow Colours",
+   "desc": "The Ho-Oh key. Its counterpart, the Silver Feather, calls the other half of the pair."
+  },
+  {
+   "id": "myths_and_legends:tidal_bell",
+   "title": "Ring It Over the Whirl Islands",
+   "desc": "A bell capable of summoning Lugia from the depths of the Whirl Islands when rung; the Clear Bell is its Johto twin."
+  },
+  {
+   "id": "myths_and_legends:red_orb",
+   "title": "The Hoenn Orbs",
+   "desc": "A shiny red orb with a deep connection to the Hoenn region; the Blue Orb is its opposite number and the Jade Orb sits above both."
+  },
+  {
+   "id": "myths_and_legends:eon_ticket",
+   "title": "Passage to the Southern Island",
+   "desc": "A ticket required for sailing on a ferry to the Southern Island - the Latios and Latias key."
+  },
+  {
+   "id": "myths_and_legends:adamant_orb",
+   "title": "Dialga's Orb",
+   "desc": "A brightly gleaming orb to be held by Dialga; the Lustrous Orb and the Griseous Orb complete the Sinnoh trio."
+  },
+  {
+   "id": "myths_and_legends:azure_flute",
+   "title": "The Flute That Calls Arceus",
+   "desc": "A flute that emits a clear tone that summons Arceus. As high as this mod's ladder goes in the Sinnoh line."
+  },
+  {
+   "id": "myths_and_legends:member_card",
+   "title": "The Card for the Canalave Inn",
+   "desc": "An odd card needed to enter the Inn in Canalave City - the Darkrai key. Oak's Letter beside it is the Shaymin one."
+  },
+  {
+   "id": "myths_and_legends:magma_stone",
+   "title": "Heat in a Stone",
+   "desc": "A stone that holds intense heat, tied to Heatran; the Lunar Feather beside it is Cresselia's."
+  },
+  {
+   "id": "myths_and_legends:dark_stone",
+   "title": "The Unova Stones",
+   "desc": "A stone filled with dark energy, linked to Zekrom. The Light Stone is Reshiram's, and the DNA Splicer fuses either with Kyurem."
+  },
+  {
+   "id": "myths_and_legends:reveal_glass",
+   "title": "Show Their True Shape",
+   "desc": "A looking glass that reveals the true nature of the Therian Forces of Nature."
+  },
+  {
+   "id": "myths_and_legends:liberty_pass",
+   "title": "Board the Ship in Castelia City",
+   "desc": "A pass to go to Liberty Garden - the Victini key, and one of the few items in the mod whose tooltip names a real destination."
+  },
+  {
+   "id": "myths_and_legends:zygarde_cell",
+   "title": "Start Collecting Cells",
+   "desc": "A Zygarde cell. The mod ships three separate items for this one Pokemon - cell, core and cube - which makes it the only multi-step line it has."
+  },
+  {
+   "id": "myths_and_legends:zygarde_cube",
+   "title": "The Cube That Holds Them",
+   "desc": "An item in which Zygarde Cores and Cells are gathered."
+  },
+  {
+   "id": "myths_and_legends:sapling_of_life",
+   "title": "Life and Destruction",
+   "desc": "A magical sapling embodying the essence of life; the Cocoon of Destruction is its opposite, and together they are the Kalos pair."
+  },
+  {
+   "id": "myths_and_legends:prism_bottle",
+   "title": "The Alola Prism",
+   "desc": "Paired with the Sun Flute and the Moon Flute, which glow with the light of the sun and moon to summon Solgaleo and Lunala; the Necro Prism sits above them."
+  },
+  {
+   "id": "myths_and_legends:koko_totem",
+   "title": "The Island Guardians",
+   "desc": "A sacred totem representing the power of Tapu Koko; the Lele, Bulu and Fini Totems are the other three."
+  },
+  {
+   "id": "myths_and_legends:rusted_sword",
+   "title": "The Hero's Rusted Gear",
+   "desc": "A sword a hero used to halt a terrible disaster in ancient times, grown rusty and worn; the Rusted Shield is its pair."
+  },
+  {
+   "id": "myths_and_legends:eternatus_core",
+   "title": "The Core of the Galar Crisis",
+   "desc": "The Eternatus key, and as close as this mod gets to a final boss item."
+  },
+  {
+   "id": "myths_and_legends:reins_of_unity",
+   "title": "Reins of Unity",
+   "desc": "The Calyrex key. moddb's pack consensus puts this at position zero across three packs, which is why it appears here rather than being dropped."
+  },
+  {
+   "id": "myths_and_legends:scarlet_book",
+   "title": "Heath's Expedition Records",
+   "desc": "A record of the expedition Heath went on within the Great Crater of Paldea; the Violet Book is the same account under the other name."
+  },
+  {
+   "id": "myths_and_legends:teal_mask",
+   "title": "The Teal Mask",
+   "desc": "A mysterious mask associated with Ogerpon, radiating a soft teal glow - the newest key item in the jar."
+  }
+ ],
+ "chain": []
+}

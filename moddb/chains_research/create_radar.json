@@ -1,0 +1,115 @@
+{
+ "mod": "create_radar",
+ "verified_against": "create_radar-0.4.6+mc1.20.1.jar",
+ "item_count_in_jar": 23,
+ "parent_mod": "create",
+ "chain": [
+  {
+   "id": "create_radar:radar_dish_block",
+   "title": "Saw Out Radar Dishes",
+   "desc": "Iron bars cut on a Mechanical Saw. These are the collecting surface of a radar - every extra dish on the contraption pushes its detection range further out, so build a pile of them, not one."
+  },
+  {
+   "id": "create_radar:radar_plate_block",
+   "title": "Saw Out Radar Plates",
+   "desc": "Quartz slabs on the saw. Plates and dishes are interchangeable and both count toward range; the difference is purely how the array looks on your roof."
+  },
+  {
+   "id": "create_radar:radar_receiver_block",
+   "title": "Wire Up a Radar Receiver",
+   "desc": "The array is dead without one - the receiver is the part that turns a spinning heap of dishes into contacts you can actually see. One per radar is enough, but the guided fuze and the plane radar each eat another."
+  },
+  {
+   "id": "create_radar:radar_bearing",
+   "title": "Mount the Radar Bearing",
+   "desc": "The spinning base the whole array is built on. Place it, stack the receiver and dishes above it, then feed it rotation - it sweeps and starts reporting contacts."
+  },
+  {
+   "id": "create_radar:monitor",
+   "title": "Build the Radar Monitor",
+   "desc": "Where contacts appear and where you click to pick a target. One craft gives three, and several placed in a flat grid join into a single bigger screen - build at least four."
+  },
+  {
+   "id": "create_radar:data_link",
+   "title": "Craft Plenty of Data Links",
+   "desc": "Every connection in this mod is made by placing one of these and clicking the two ends - radar to monitor, controllers to a cannon mount, all of it to the network. Make a dozen; you will spend them constantly."
+  },
+  {
+   "id": "create_radar:network_filterer",
+   "title": "Install the Network Controller",
+   "desc": "The core of the whole system. It holds the filter items and joins your radar network to your weapon network - blue links go to radars, red links to guns, and everything meets here."
+  },
+  {
+   "id": "create_radar:radar_filter_item",
+   "title": "Slot in a Detection Filter",
+   "desc": "Drop it into the Network Controller to decide which categories - players, mobs, projectiles, contraptions, ships - even show up on the monitor. Anything filtered out is also invisible to autotargeting."
+  },
+  {
+   "id": "create_radar:target_filter_item",
+   "title": "Arm the Targeting Filter",
+   "desc": "This is the filter that actually switches autotargeting on and sets its behaviour, including line of sight. Without one in the Network Controller the network only ever tracks, never shoots."
+  },
+  {
+   "id": "create_radar:ident_filter_item",
+   "title": "Write an Identification Filter",
+   "desc": "A friend-or-foe list of player names and ship codes that autotargeting will refuse to fire on. Fill this in before you turn auto fire on, not after."
+  },
+  {
+   "id": "create_radar:auto_yaw_controller",
+   "title": "Seat an Auto Yaw Controller",
+   "desc": "It goes directly under the cannon mount and swings the gun left and right on command from the network. One per gun."
+  },
+  {
+   "id": "create_radar:auto_pitch_controller",
+   "title": "Add the Auto Pitch Controller",
+   "desc": "The elevation half of the pair, and a shapeless craft flips one into the other if you built the wrong one. Yaw plus pitch together give the network full control of where the barrel points."
+  },
+  {
+   "id": "create_radar:fire_controller",
+   "title": "Wire the Fire Controller",
+   "desc": "It emits a redstone signal the moment the linked cannon mount is actually lined up on the target - feed that straight into the gun's firing mechanism and the network shoots for you."
+  },
+  {
+   "id": "create_radar:binoculars",
+   "title": "Pair the Binoculars",
+   "desc": "Sneak-right-click a Network Controller to pair them, then zoom in and hold attack: every gun on that network slews to wherever you are looking. Manual override for when autotargeting will not do."
+  },
+  {
+   "id": "create_radar:radar_safe_zone_designator",
+   "title": "Mark a Safe Zone",
+   "desc": "Link it to a monitor and drag out a region the guns are forbidden to fire into - the difference between an air defence network and an accident. One is enough unless you want several protected zones."
+  },
+  {
+   "id": "create_radar:guided_fuze",
+   "title": "Fit a Guided Fuze",
+   "desc": "Slot one into a Create Big Cannons shell and the round steers itself toward whatever your network has locked instead of flying where the barrel happened to point. Four per craft, and every shot spends one."
+  },
+  {
+   "id": "create_radar:identification_transponder",
+   "title": "Fit a Transponder to Your Ship",
+   "desc": "Placed on a Valkyrien Skies ship it sets that ship's name and IFF code; if the code matches the Identification Filter in your Network Controller, your own guns stop shooting at you. One per ship you want to keep."
+  },
+  {
+   "id": "create_radar:plane_radar",
+   "title": "Fit a Plane Radar",
+   "desc": "A fixed, compact radar in a single block, for a moving ship or aircraft where there is no room to spin a bearing and a dish array. Shorter ranged than a real array, but it fits."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "create_radar:radar_filter_item",
+   "members": [
+    "create_radar:target_filter_item",
+    "create_radar:ident_filter_item"
+   ]
+  },
+  {
+   "hub": "create_radar:auto_yaw_controller",
+   "members": [
+    "create_radar:auto_pitch_controller",
+    "create_radar:fire_controller"
+   ]
+  }
+ ],
+ "notes": "Order is taken straight from the mod's own ponder scenes, which spell the build out: radar_contraption (bearing, then receiver, then dishes/plates, then power) -> radar_linking (place monitor, link with a Data Link) -> network_setup (the Network Controller is the core, filters limit what it sees and does) -> controller_linking and weapon_setup (yaw controller under the mount, then pitch, then the fire controller emits redstone when aligned; red Data Links = weapon network, blue = radar network). VERIFIER REMOVED A STEP - create_radar:radar_warning_receiver was in this chain and is now out. It has a lang key, a block model, an item model and data/create_radar/loot_tables/blocks/radar_warning_receiver.json (which only drops the block back), but there is NO recipe for it anywhere in the jar: the 21 recipe files under data/create_radar/recipes/ never name it as a result. It is therefore unobtainable in survival, exactly like create_radar:creative_radar_plate, and must never be quested. COMPAT GATING - the last three chain steps only exist if another mod is present, verified from the compat register classes: create_radar:guided_fuze is registered by CBCCompatRegister (Create Big Cannons); create_radar:identification_transponder and create_radar:plane_radar are registered by VS2CompatRegister (Valkyrien Skies 2), as is the unobtainable radar_warning_receiver. A pack without those mods will still ship the recipes but not the items, so a generator must drop those steps when the sibling mod is absent. CBCMWCompatRegister additionally registers a 'Radar Command Guidance' block whose registry name is radar_guidance_block (it has a loot table and an item model) but which has NO lang key in en_us.json and no recipe, so it is left out. THREE LANG ENTRIES ARE DEAD IN 0.4.6 - block.create_radar.jammer (Radar Jammer), block.create_radar.arad_guidance (Anti-Radar Guidance Unit) and block.create_radar.track_controller have translations but no recipe, no loot table, and no registry entry in ModBlocks; the jammer and ARAD guidance code exists under com/happysg/radar/block/arad/ but is not registered. Do NOT quest them. Note the pattern: in this jar a lang key proves nothing about obtainability, so check data/create_radar/recipes/ for a result naming the item before questing anything here. create_radar:creative_radar_plate is registered and drops itself but has no recipe - it is the creative infinite-range plate, so exclude it from survival questing. One more trap: data/create_radar/recipes/sequenced_assembly/network_filterer.json references create_radar:incomplete_network_controller, which appears in no class and no lang file in this jar - the grid recipe at recipes/crafting/network_filterer.json is the one that actually works, so describe the Network Controller as crafted, never as assembled. Only two recipes are machine-made: radar_dish_block from iron bars and radar_plate_block from quartz slabs, both create:cutting on a Mechanical Saw, so the verb there is 'saw', not 'craft'. There are no entities, structures, loot or advancements in this mod at all."
+}

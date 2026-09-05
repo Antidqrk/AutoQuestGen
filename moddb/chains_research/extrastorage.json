@@ -1,0 +1,155 @@
+{
+ "mod": "extrastorage",
+ "verified_against": "ExtraStorage-1.20.1-4.0.7.jar",
+ "item_count_in_jar": 32,
+ "parent_mod": "refinedstorage",
+ "chain": [
+  {
+   "id": "extrastorage:raw_neural_processor",
+   "title": "Raw Neural Processor",
+   "desc": "Craft from a crafting table, quartz, obsidian, a Processor Binding and Refined Storage's raw advanced and improved processors; the one new component the whole addon is built on."
+  },
+  {
+   "id": "extrastorage:neural_processor",
+   "title": "Fired in the Furnace",
+   "desc": "Smelt the raw neural processor; every crafter tier past iron needs these, so set up a steady supply before you go further."
+  },
+  {
+   "id": "extrastorage:storagepart_256k",
+   "title": "256k Storage Part",
+   "desc": "Craft from Advanced Processors, Quartz Enriched Iron, redstone and a 64k Storage Part; Refined Storage tops out at 64k, and this is the first rung past it."
+  },
+  {
+   "id": "extrastorage:disk_256k",
+   "title": "256k Storage Disk",
+   "desc": "Combine the 256k part with a Storage Housing, or craft it in the grid with glass, redstone and Quartz Enriched Iron."
+  },
+  {
+   "id": "extrastorage:storagepart_1024k",
+   "title": "1024k Storage Part",
+   "desc": "Craft from Advanced Processors, Quartz Enriched Iron, redstone and four 256k parts; each rung swallows the rung below it."
+  },
+  {
+   "id": "extrastorage:disk_1024k",
+   "title": "1024k Storage Disk",
+   "desc": "House the 1024k part; a single disk that will hold everything a mid-game base produces."
+  },
+  {
+   "id": "extrastorage:storagepart_4096k",
+   "title": "4096k Storage Part",
+   "desc": "Craft from Advanced Processors, Quartz Enriched Iron, redstone and 1024k parts."
+  },
+  {
+   "id": "extrastorage:storagepart_16384k",
+   "title": "16384k Storage Part",
+   "desc": "Craft from Advanced Processors, Quartz Enriched Iron, redstone and 4096k parts; the top item tier."
+  },
+  {
+   "id": "extrastorage:disk_16384k",
+   "title": "The Last Disk",
+   "desc": "House the 16384k part; the largest item disk the addon builds."
+  },
+  {
+   "id": "extrastorage:block_16384k",
+   "title": "Storage Block, Top Tier",
+   "desc": "Craft the 16384k part into a standing storage block with Quartz Enriched Iron, a Machine Casing and redstone; a drive bay's worth of storage in a single placed block."
+  },
+  {
+   "id": "extrastorage:storagepart_16384k_fluid",
+   "title": "16384k Fluid Part",
+   "desc": "Craft from Advanced Processors, Quartz Enriched Iron, redstone and Refined Storage's 4096k fluid part; the fluid ladder starts where the parent's ends."
+  },
+  {
+   "id": "extrastorage:disk_16384k_fluid",
+   "title": "16384k Fluid Disk",
+   "desc": "House the fluid part; enough to hold every fluid a Thermal or Mekanism chain will throw at it."
+  },
+  {
+   "id": "extrastorage:storagepart_1048576k_fluid",
+   "title": "1048576k Fluid Part",
+   "desc": "Craft up through 65536k and 262144k to the top fluid part; four rungs above anything Refined Storage ships."
+  },
+  {
+   "id": "extrastorage:disk_1048576k_fluid",
+   "title": "An Ocean in a Disk",
+   "desc": "House the 1048576k fluid part for the largest fluid disk in the addon."
+  },
+  {
+   "id": "extrastorage:iron_crafter",
+   "title": "Iron Crafter",
+   "desc": "Craft iron ingots and a wooden chest around a Refined Storage Crafter; the first rung of the pattern-capacity ladder."
+  },
+  {
+   "id": "extrastorage:gold_crafter",
+   "title": "Gold Crafter",
+   "desc": "Craft gold blocks, neural processors and a wooden chest around an Iron Crafter; more patterns per block means fewer crafters in the wall."
+  },
+  {
+   "id": "extrastorage:diamond_crafter",
+   "title": "Diamond Crafter",
+   "desc": "Craft diamond blocks, neural processors and a wooden chest around a Gold Crafter."
+  },
+  {
+   "id": "extrastorage:netherite_crafter",
+   "title": "Netherite Crafter",
+   "desc": "Craft netherite blocks, neural processors and a wooden chest around a Diamond Crafter; the deepest pattern store the addon offers."
+  },
+  {
+   "id": "extrastorage:advanced_importer",
+   "title": "Advanced Importer",
+   "desc": "Craft redstone torches and Improved Processors around an Importer; it pulls from every slot at once instead of one per tick."
+  },
+  {
+   "id": "extrastorage:advanced_exporter",
+   "title": "Advanced Exporter",
+   "desc": "Craft redstone torches and Improved Processors around an Exporter; the outbound half of the same upgrade."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "extrastorage:disk_16384k",
+   "members": [
+    "extrastorage:disk_256k",
+    "extrastorage:disk_1024k",
+    "extrastorage:disk_4096k",
+    "extrastorage:storagepart_256k",
+    "extrastorage:storagepart_1024k",
+    "extrastorage:storagepart_4096k",
+    "extrastorage:storagepart_16384k",
+    "extrastorage:block_256k",
+    "extrastorage:block_1024k",
+    "extrastorage:block_4096k",
+    "extrastorage:block_16384k"
+   ]
+  },
+  {
+   "hub": "extrastorage:disk_1048576k_fluid",
+   "members": [
+    "extrastorage:disk_16384k_fluid",
+    "extrastorage:disk_65536k_fluid",
+    "extrastorage:disk_262144k_fluid",
+    "extrastorage:storagepart_16384k_fluid",
+    "extrastorage:storagepart_65536k_fluid",
+    "extrastorage:storagepart_262144k_fluid",
+    "extrastorage:storagepart_1048576k_fluid",
+    "extrastorage:block_16384k_fluid",
+    "extrastorage:block_65536k_fluid",
+    "extrastorage:block_262144k_fluid",
+    "extrastorage:block_1048576k_fluid"
+   ]
+  },
+  {
+   "hub": "extrastorage:netherite_crafter",
+   "members": [
+    "extrastorage:iron_crafter",
+    "extrastorage:gold_crafter",
+    "extrastorage:diamond_crafter",
+    "extrastorage:neural_processor",
+    "extrastorage:raw_neural_processor",
+    "extrastorage:advanced_importer",
+    "extrastorage:advanced_exporter"
+   ]
+  }
+ ],
+ "notes": "Included for real Refined Storage coverage. The highest-download RS addon, refinedstorageaddons (1.06M), turned out to register only a single craftable item on 1.20.1, so ExtraStorage is the RS addon that actually carries a chain: two four-rung storage ladders that both start exactly where Refined Storage stops, plus a four-tier crafter line. ASSUMES FROM PARENT (refinedstorage): Quartz Enriched Iron, Machine Casing, Storage Housing, Improved and Advanced Processors, their raw forms, Processor Binding, the 64k item storage part, the 4096k fluid storage part, Crafter, Importer and Exporter. Nothing here is reachable before a controller and a working network exist. VERIFICATION: strict model/lang intersection, 32/32 matched, no widening needed, no drops - every id in the jar appears in the chain or in a wheel. The storage parts are referenced through refinedstorage:parts/items/<size> and parts/fluids/<size> tags in their own recipes, which is why each rung genuinely consumes the rung below it."
+}

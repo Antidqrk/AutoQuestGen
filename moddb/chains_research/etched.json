@@ -1,0 +1,59 @@
+{
+ "mod": "etched",
+ "verified_against": "etched-3.0.4.jar",
+ "item_count_in_jar": 11,
+ "chain": [
+  {
+   "id": "etched:music_label",
+   "title": "Fold a Music Label",
+   "desc": "Right-click it to type a title and author, and dye it if you want a colour. Nothing gets etched without one and each disc consumes its label, so keep a stack of blanks around."
+  },
+  {
+   "id": "etched:blank_music_disc",
+   "title": "Smelt a Disc Blank",
+   "desc": "Any vanilla music disc melted in a furnace comes out wiped and reusable. This is the physical media everything in this mod writes onto - stock up before you start etching."
+  },
+  {
+   "id": "etched:etching_table",
+   "title": "Build the Etching Table",
+   "desc": "It takes a blank disc, a music label and a music URL and burns the track onto the disc. One table serves an entire base - you never need a second."
+  },
+  {
+   "id": "etched:etched_music_disc",
+   "title": "Etch Your First Track",
+   "desc": "Made only at the Etching Table, never in a crafting grid. It plays in any vanilla jukebox, and you can duplicate it later by crafting it alongside spare blank discs."
+  },
+  {
+   "id": "etched:complex_music_label",
+   "title": "Combine Two Labels",
+   "desc": "Etch with one of these and the finished disc takes a patterned, two-colour face instead of the plain one - dye the two labels differently first. Purely how the disc looks; nothing about it plays differently."
+  },
+  {
+   "id": "etched:boombox",
+   "title": "Craft the Boombox",
+   "desc": "Slot a disc into it and it plays from your hand while you walk around; sneak plus use pauses it. This is how you take your music mining - one is plenty."
+  },
+  {
+   "id": "etched:jukebox_minecart",
+   "title": "Put a Jukebox on Rails",
+   "desc": "It plays whatever disc you load into it as it rolls, so a loop of track becomes a moving speaker for a build. Break it and you get the jukebox and the minecart back."
+  },
+  {
+   "id": "etched:album_cover",
+   "title": "Bind an Album Cover",
+   "desc": "It holds several discs as a single album that plays straight through instead of one track at a time, and it renders whatever cover art the album points at. One per album you want to assemble."
+  },
+  {
+   "id": "etched:album_jukebox",
+   "title": "Assemble the Album Jukebox",
+   "desc": "It holds a whole shelf of discs and albums and plays them in sequence instead of stopping after one track - the fix for having to re-poke a jukebox every three minutes."
+  },
+  {
+   "id": "etched:radio",
+   "title": "Tune the Radio",
+   "desc": "Give it a stream URL and it plays continuously to everyone in earshot, and a redstone signal switches it on and off. No disc, no label and no Etching Table involved - the endpoint of the whole mod."
+  }
+ ],
+ "collections": [],
+ "notes": "VERIFIER CORRECTION - the Music Label desc said 'five paper in a ring'; data/etched/recipes/music_label.json is pattern ' P '/'P P'/' P ' with P = #forge:paper, which is FOUR paper, so the line was wrong and has been rewritten. Small mod, 11 registered items, and every one of them is on the spine except etched:portal_radio - so no wheel is worth building. etched:portal_radio has NO recipe: data/etched/loot_tables/blocks/radio.json drops it only when the broken etched:radio has blockstate portal=true, and nothing in the datapack sets that state, so treat it as a special-case block and never quest it as a craft. etched:etched_music_disc and etched:complex_music_label likewise have no grid recipe you can show a player: the disc comes out of the Etching Table menu (EtchingMenu.class), and the complex label uses the custom serializer etched:complex_music_label, which merges two etched:music_label stacks and keeps both their colours (ComplexMusicLabelRecipe.class). data/etched/recipes/music_disc_cloning.json is the other custom serializer - an etched disc plus blank discs clones the track, with the original returned. The mod also adds a Bard villager profession (etched:bard, work site = note block) with bard houses injected into the plains, desert, savanna, snowy and taiga village pools via data/etched/structures/village/*/houses/*_bard_house_1.nbt; the Bard trades music labels, blank discs, etching tables, album jukeboxes and jukebox minecarts, which makes a village an alternative route to the first half of this chain. There is no entity or dimension to quest and no worldgen structure of its own beyond those village houses. Etching requires the client to fetch audio from a URL (SoundCloud/Bandcamp sources are built in), so on a server with downloads disabled the etched disc steps will not resolve - worth a warning line if the pack ships that config."
+}

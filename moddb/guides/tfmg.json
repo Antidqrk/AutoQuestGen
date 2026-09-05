@@ -1,0 +1,653 @@
+{
+ "mod": "tfmg",
+ "ids_in_jar": 594,
+ "videos": [
+  {
+   "id": "Ey1bLKge-Cw",
+   "title": "Cast Iron, Coal Coke, and Steel || Getting started with Create: The Factory Must Grow",
+   "channel": "McCastle Gaming",
+   "views": 32021,
+   "duration": 1726,
+   "chars": 25203,
+   "src": "vetted_search"
+  },
+  {
+   "id": "9_Hy6MyE0gA",
+   "title": "Create: TFMG 1.0 Update - Comprehensive Tutorial (1.0.1b)",
+   "channel": "BlueB1C2",
+   "views": 134156,
+   "duration": 1997,
+   "chars": 26442,
+   "src": "vetted_search"
+  }
+ ],
+ "items": {
+  "tfmg:generator": {
+   "mentions": 10,
+   "videos": 1,
+   "first_at": 0.4133,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "tfmg:fireproof_brick": {
+   "mentions": 8,
+   "videos": 1,
+   "first_at": 0.4733,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "tfmg:fireproof_bricks": {
+   "mentions": 7,
+   "videos": 1,
+   "first_at": 0.4733,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "tfmg:magnet": {
+   "mentions": 7,
+   "videos": 1,
+   "first_at": 0.4151,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 0
+  },
+  "tfmg:transformer": {
+   "mentions": 7,
+   "videos": 1,
+   "first_at": 0.4521,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:engine_cylinder": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.809,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 6
+  },
+  "tfmg:coke_oven": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.1859,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:fireclay": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.4566,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:potentiometer": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.5033,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:air_intake": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.57,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "tfmg:exhaust": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.3173,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:casting_basin": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.009,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:blast_furnace_hatch": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.5441,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "tfmg:oil_can": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.608,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "tfmg:blast_stove": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.4838,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "tfmg:cement": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.355,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:industrial_pipe": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.2981,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:concrete": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4318,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:blast_furnace_output": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4871,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "tfmg:limesand": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7621,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:cast_iron_ingot": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1924,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:cast_iron_fluid_tank": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3482,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:industrial_mixer": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3558,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "tfmg:centrifuge": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3781,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:light_bulb": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.394,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "tfmg:diesel_engine_cylinder": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8131,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "tfmg:steel_mechanism": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7874,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:polarizer": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4216,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "tfmg:rotor": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6795,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:electric_motor": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6652,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:machine_input": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1913,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:multimeter": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4776,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:turbo": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8643,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:fireclay_ball": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5188,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:cast_iron_pipe": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3036,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:lignite": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5076,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:fireproof_brick_reinforcement": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7186,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:coal_coke": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0019,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:creative_generator": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5284,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:transmission": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8939,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:oil_hammer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2859,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:graphite_electrode": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7165,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:sulfur": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3645,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:electrode_holder": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5145,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "tfmg:cooling_fluid_bottle": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9402,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "tfmg:copper_electrode": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3889,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "tfmg:aluminum_bars": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5857,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:segmented_display": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6934,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:simple_engine_cylinder": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8088,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "tfmg:winding_machine": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6228,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tfmg:electromagnetic_coil": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4483,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "ids": [
+     "tfmg:cast_iron_ingot"
+    ],
+    "note": "STEP 1, and the guide is emphatic that nothing precedes it. Cast iron is iron plus coal in a basin under a mechanical press over a heated blaze burner - i.e. it needs only a minimal base-Create setup. This is the mod's entry point.",
+    "video": "Ey1bLKge-Cw"
+   },
+   {
+    "ids": [
+     "tfmg:coke_oven",
+     "tfmg:coal_coke",
+     "tfmg:creosote_bucket"
+    ],
+    "note": "STEP 2, and the guide says to build it IMMEDIATELY after cast iron because the process is slow and gates everything downstream. The coke oven turns coal into coal coke plus creosote oil, with carbon dioxide as waste.",
+    "video": "Ey1bLKge-Cw"
+   },
+   {
+    "ids": [
+     "tfmg:fireclay",
+     "tfmg:fireclay_ball",
+     "tfmg:fireproof_brick",
+     "tfmg:fireproof_brick_reinforcement"
+    ],
+    "note": "STEP 3: fire clay is a worldgen block, mined and smelted into fireproof bricks. The blast furnace alone eats 18 fireproof bricks and 20 fireproof brick reinforcements, so this is a real gathering gate.",
+    "video": "Ey1bLKge-Cw"
+   },
+   {
+    "ids": [
+     "tfmg:blast_stove",
+     "tfmg:air_intake"
+    ],
+    "note": "STEP 4: the blast stove burns creosote and air from an air intake to make HOT air. Creosote in the bottom, raw air in the sides, hot air out the top. The blast furnace cannot run without this stage.",
+    "video": "Ey1bLKge-Cw"
+   },
+   {
+    "ids": [
+     "tfmg:blast_furnace_hatch",
+     "tfmg:blast_furnace_output",
+     "tfmg:blast_furnace_reinforcement",
+     "tfmg:coal_coke_dust",
+     "tfmg:limesand",
+     "tfmg:molten_steel_bucket",
+     "tfmg:molten_slag_bucket"
+    ],
+    "note": "STEP 5: the blast furnace multiblock. Inputs are hot air, coal coke dust, lime sand (crushed limestone) and crushed raw iron. Outputs molten steel and molten slag.",
+    "video": "Ey1bLKge-Cw"
+   },
+   {
+    "ids": [
+     "tfmg:casting_basin",
+     "tfmg:steel_ingot"
+    ],
+    "note": "STEP 6, the finish line: molten steel is poured into a casting basin to produce steel ingots. The guide's own one-sentence summary of the entire mod start is this chain, stated at both the beginning and the end of the video.",
+    "video": "Ey1bLKge-Cw"
+   }
+  ],
+  "gates": [
+   {
+    "ids": [
+     "tfmg:steel_ingot"
+    ],
+    "note": "THE MASTER GATE OF THE MOD, stated outright. Steel is the prerequisite for essentially all of TFMG's later content, and the entire getting-started guide exists only to reach it. Any quest tree for this mod should treat steel as the trunk node.",
+    "video": "Ey1bLKge-Cw"
+   },
+   {
+    "ids": [
+     "tfmg:coke_oven",
+     "tfmg:exhaust",
+     "tfmg:carbon_dioxide_bucket"
+    ],
+    "note": "HARD GATE: the coke oven HALTS once its internal carbon dioxide hits 800mB. You must pump CO2 out of the TOP with an exhaust or the machine simply stops. One pump plus one exhaust cannot keep up with more than two coke ovens.",
+    "video": "Ey1bLKge-Cw"
+   },
+   {
+    "ids": [
+     "tfmg:coke_oven"
+    ],
+    "note": "Coke oven I/O rules: coal goes in any side, carbon dioxide must be extracted from the top specifically, creosote oil can be pulled from anywhere.",
+    "video": "Ey1bLKge-Cw"
+   },
+   {
+    "ids": [
+     "tfmg:blast_furnace_hatch"
+    ],
+    "note": "GATE that cost the guide a run: the blast furnace will NOT accept iron ingots. It needs crushed raw iron, iron grit, or raw iron. Feeding ingots makes the multiblock reject the whole batch.",
+    "video": "Ey1bLKge-Cw"
+   },
+   {
+    "ids": [
+     "tfmg:blast_furnace_reinforcement",
+     "tfmg:fireproof_brick_reinforcement"
+    ],
+    "note": "Blast furnace structure: five blocks tall, with fireproof brick reinforcement in every corner. The guide confirms by experiment that the hatch height is NOT fixed, contradicting its own ponder.",
+    "video": "Ey1bLKge-Cw"
+   },
+   {
+    "ids": [
+     "tfmg:molten_steel_bucket",
+     "tfmg:molten_slag_bucket",
+     "tfmg:blast_furnace_output"
+    ],
+    "note": "GATE: molten steel and molten slag share ONE output. You must filter them apart or the output backs up and the furnace stalls. In survival this is painful because you cannot craft a fluid filter from a bucket you have not produced yet - use a list filter instead.",
+    "video": "Ey1bLKge-Cw"
+   }
+  ],
+  "traps": [
+   {
+    "ids": [
+     "tfmg:coke_oven"
+    ],
+    "note": "MAJOR TRAP, and a direct contradiction of what a jar or recipe scan implies. The coke oven is a multiblock, so players build a 2x2 or 3x3 - but a single coke oven produces coke and creosote at exactly the same rate as a 3x3. The larger builds buy only a door animation and extra input faces. Do not gate a quest on building a large coke oven; build MANY single ovens instead.",
+    "video": "Ey1bLKge-Cw"
+   },
+   {
+    "ids": [
+     "tfmg:coal_coke"
+    ],
+    "note": "Not a trap but an easily missed payoff: coal coke is double the fuel efficiency of coal, so it is worth burning as fuel and not only as blast furnace feedstock.",
+    "video": "Ey1bLKge-Cw"
+   },
+   {
+    "ids": [
+     "tfmg:lignite"
+    ],
+    "note": "Easily overlooked shortcut: lignite generates in large worldgen deposits like crimsite or asurine and crushes down into coal. It is the cheap way to feed a coke oven at scale, and a jar scan would rank it as a trivial ore block.",
+    "video": "Ey1bLKge-Cw"
+   }
+  ],
+  "signature": [
+   {
+    "ids": [
+     "tfmg:steel_ingot",
+     "tfmg:blast_furnace_hatch",
+     "tfmg:blast_stove",
+     "tfmg:coke_oven"
+    ],
+    "note": "The steel chain IS the mod. An entire dedicated getting-started episode is spent on nothing but reaching the first steel ingot, and the guide calls the journey long even for an experienced player. Length of explanation here is the strongest importance signal in the whole Create ecosystem sample.",
+    "video": "Ey1bLKge-Cw"
+   },
+   {
+    "ids": [
+     "tfmg:cast_iron_pipe",
+     "tfmg:steel_pipe",
+     "tfmg:aluminum_pipe",
+     "tfmg:brass_pipe",
+     "tfmg:plastic_pipe",
+     "tfmg:cast_iron_fluid_tank",
+     "tfmg:steel_fluid_tank",
+     "tfmg:aluminum_fluid_tank"
+    ],
+    "note": "TFMG's second identity is industrial aesthetics as a functional system - five pipe materials and matching fluid tanks. The guide picks cast iron purely for looks and notes the tanks have later mechanical uses beyond storage.",
+    "video": "Ey1bLKge-Cw"
+   },
+   {
+    "ids": [
+     "tfmg:brick_smokestack",
+     "tfmg:metal_smokestack",
+     "tfmg:concrete_smokestack",
+     "tfmg:furnace_gas_bucket",
+     "tfmg:slag"
+    ],
+    "note": "Byproduct capture is the mod's late-game texture: furnace gas can be fed back to fuel the blast stove, slag has its own uses, and smokestacks become a real multiblock that stores carbon dioxide once you have steel and concrete.",
+    "video": "Ey1bLKge-Cw"
+   }
+  ]
+ }
+}

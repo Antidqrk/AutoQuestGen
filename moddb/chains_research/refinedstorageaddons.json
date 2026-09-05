@@ -1,0 +1,15 @@
+{
+ "mod": "refinedstorageaddons",
+ "verified_against": "refinedstorageaddons-0.10.0.jar",
+ "item_count_in_jar": 2,
+ "parent_mod": "refinedstorage",
+ "chain": [
+  {
+   "id": "refinedstorageaddons:wireless_crafting_grid",
+   "title": "Crafting Grid, Untethered",
+   "desc": "Craft from Quartz Enriched Iron, an ender pearl, a Crafting Grid and an Advanced Processor; it is a Crafting Grid you carry, so you can craft out of network storage anywhere a Wireless Transmitter reaches."
+  }
+ ],
+ "collections": [],
+ "notes": "Effectively a one-quest addon on 1.20.1, and reported as such rather than padded. The jar registers only two items and the second, refinedstorageaddons:creative_wireless_crafting_grid, is a creative-mode item with no recipe, so it is DROPPED. Earlier Minecraft versions of this mod also shipped a wireless fluid grid and a wireless crafting monitor; neither exists in 0.10.0. ASSUMES FROM PARENT (refinedstorage): Quartz Enriched Iron, Crafting Grid, Advanced Processor, and a Wireless Transmitter already placed and powered on the network. VERIFICATION: strict model/lang intersection gave 2 ids. The 2 model-only stems (wireless_crafting_grid_connected / _disconnected) are held-item render states, not separate items, and were correctly excluded by the intersection."
+}

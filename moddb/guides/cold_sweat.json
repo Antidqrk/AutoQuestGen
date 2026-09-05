@@ -1,0 +1,211 @@
+{
+ "mod": "cold_sweat",
+ "jar": "ColdSweat-2.4.2.jar",
+ "ids_in_jar": 30,
+ "videos": [
+  {
+   "id": "rwI2YVrF71Y",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 12220
+  },
+  {
+   "id": "2PonXqUo8Xw",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 9811
+  },
+  {
+   "id": "K6TWgAR1ixU",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 8490
+  },
+  {
+   "id": "Jg4ZpCGTjOI",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 4725
+  }
+ ],
+ "items": {
+  "cold_sweat:waterskin": {
+   "mentions": 28,
+   "videos": 4,
+   "first_at": 0.2354,
+   "praise": 5,
+   "warn": 3,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cold_sweat:boiler": {
+   "mentions": 18,
+   "videos": 3,
+   "first_at": 0.2196,
+   "praise": 2,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cold_sweat:icebox": {
+   "mentions": 15,
+   "videos": 4,
+   "first_at": 0.2884,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cold_sweat:soul_sprout": {
+   "mentions": 12,
+   "videos": 4,
+   "first_at": 0.6517,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cold_sweat:thermometer": {
+   "mentions": 11,
+   "videos": 3,
+   "first_at": 0.0752,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cold_sweat:hearth": {
+   "mentions": 10,
+   "videos": 3,
+   "first_at": 0.5023,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cold_sweat:sewing_table": {
+   "mentions": 7,
+   "videos": 4,
+   "first_at": 0.5089,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cold_sweat:hoglin_hide": {
+   "mentions": 7,
+   "videos": 2,
+   "first_at": 0.5892,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cold_sweat:smokestack": {
+   "mentions": 5,
+   "videos": 3,
+   "first_at": 0.3591,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cold_sweat:goat_fur": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.604,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cold_sweat:minecart_insulation": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.8617,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cold_sweat:insulated_minecart": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.88,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cold_sweat:thermolith": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.6893,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "cold_sweat:soulspring_lamp": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.6298,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "note": "Banked corpus: rmH-attGhTY transcribed to 0 chars (no usable narration), mYHI_u0SBqk and _kh_GRMocqw under 1500 chars (shorts) - dropped. 4 of 7 banked videos usable, all Whisper, all corroborate each other.",
+ "human_notes": {
+  "entry": [
+   "NO portal, ritual or first machine - the mod is live from the first tick. Body temperature is a third survival stat beside health and hunger: the ambient readout sits between the health and hunger bars, body temperature above the XP bar.",
+   "The correct OPENING quest is cold_sweat:thermometer (2 gold ingots + 3 redstone). Held in the hotbar or offhand it shows body temperature plus ambient; placed in an item frame it reads that spot. Three of four guides open with it.",
+   "The survival band runs -150 to +150; past +/-100 in either direction the player takes damage and dies. Before that, cold cuts max health, knockback, movement and mining speed; heat blurs vision, adds heat fog and sways the camera.",
+   "With Curios installed the thermometer can be worn as an amulet - relevant in this pack, which ships Curios."
+  ],
+  "boss_order": [
+   "No bosses. The only added mob is the chameleon, passive and tameable."
+  ],
+  "order": [
+   "1. cold_sweat:thermometer first - see the numbers before anything else.",
+   "2. cold_sweat:waterskin (2 leather + 1 string makes two). A NEUTRAL waterskin does nothing - it must be heated or cooled before it is worth carrying. Filled and treated, it drips ~0.5 temperature per second from the hotbar and stacks across multiple waterskins.",
+   "3. The treatment pair: cold_sweat:boiler (cobblestone + planks tier; burns coal/charcoal/lava; heats up to 9 waterskins, 1 degree per 2s, max 120) and cold_sweat:icebox (burns snow/snowballs/clay/packed ice; cools at the same rate). Both hopper-automatable; a campfire heats and a soul campfire cools a waterskin with no machine at all.",
+   "4. cold_sweat:sewing_table - the mod's real answer to armor. Insulation items go onto ANY armor without losing enchantments: cold_sweat:goat_fur (cold), cold_sweat:hoglin_hide (hot), wool/leather (neutral, half strength), cold_sweat:chameleon_molt (adaptive, 75% strength, adjusts slowly). Shears pull insulation back off. Each piece has a fixed number of insulation slots shown in its tooltip.",
+   "5. The dedicated sets as an alternative: goat fur set (38 cold insulation, boots stop powder-snow sinking) and hoglin set (38 heat insulation, keeps piglins neutral, protects from magma blocks).",
+   "6. cold_sweat:hearth for the base - dual fuel (hot: coal/lava, cold: water/snow), redstone from the back emits warmth, from the sides chill, only works in an ENCLOSED roofed room, spreads ~96-block radius through non-solid blocks. Lava/water can be piped in; pair with cold_sweat:thermolith for a thermostat.",
+   "7. Nether kit: cold_sweat:soul_sprout (soul stalks on soul sand; farming it needs adjacent heat - the mod wants lava next to the soul sand) fuels cold_sweat:soulspring_lamp (heart of the sea + gold nugget + 2 iron ingots + chain), which holds the player just under the overheat threshold while in hand or offhand. Eating a sprout drops body temperature 20 for 45s.",
+   "8. Chameleon line: tame with a spider eye or raw fish (1-in-3 chance), it sheds cold_sweat:chameleon_molt once per day; molt makes chameleon scale armor and the thermolith. Fed biome-keyed food (dead bush/nether wart/cactus = hot, snowball/beetroot/sweet berries = cold, slime ball/ink sac/cocoa = humid) it points its tail at the nearest such biome for 5 minutes - a biome compass.",
+   "9. Late utility: cold_sweat:minecart_insulation (3 leather + 2 wool) -> cold_sweat:insulated_minecart, riders immune to temperature; ice resistance potions brewed from soul_sprout + awkward potion."
+  ],
+  "gates": [
+   "The Nether is the wall this mod builds: without the soulspring lamp the heat is lethal, and the lamp needs a minecraft:heart_of_the_sea - ocean/buried-treasure loot gates Nether comfort.",
+   "cold_sweat:hearth does NOTHING outdoors or under open sky - enclosed room with a solid roof only. A quest hint should say so.",
+   "cold_sweat:chameleon_molt only comes from a LIVING chameleon shedding daily; killing one drops nothing.",
+   "Soul sprout farming is gated on heat placement: it only grows on soul sand with lava (specifically lava, not other hot blocks) beside it."
+  ],
+  "traps": [
+   "The waterskin untreated is a no-op, and one guide flat-out calls the plain one 'a pretty useless item' next to a water bucket - quests should require the FILLED, heated/cooled use, not the bare craft.",
+   "Goat fur is a chicken-and-egg: goats live in exactly the icy biomes the fur armor is for, and they dodge shears constantly. Expect the trip to hurt.",
+   "Plain leather armor already insulates both ways (full set roughly triples endurance) - a cheap stopgap guides call out before any modded gear.",
+   "Neutral insulation is only 50% as strong as dedicated, adaptive 75% and slow to adjust - stacking wool is not equivalent to goat fur."
+  ],
+  "signature": [
+   "cold_sweat:thermometer - the mod's face; first craft.",
+   "cold_sweat:waterskin with the cold_sweat:boiler / cold_sweat:icebox pair - the drink-your-temperature loop.",
+   "cold_sweat:sewing_table - insulate any armor, the item most quests should orbit.",
+   "cold_sweat:hearth (+ cold_sweat:smokestack on boiler/icebox) - base climate control.",
+   "cold_sweat:soulspring_lamp + cold_sweat:soul_sprout - the Nether ticket.",
+   "cold_sweat:chameleon_molt - shed-only, adaptive insulation and the cold_sweat:thermolith (temperature -> redstone).",
+   "cold_sweat:insulated_minecart - the mod's one vehicle joke, riders exempt from weather."
+  ]
+ }
+}

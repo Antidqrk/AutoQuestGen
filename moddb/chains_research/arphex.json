@@ -1,0 +1,339 @@
+{
+ "mod": "arphex",
+ "verified_against": "ArPhEx-5.0.2-forge-1.20.1.jar",
+ "item_count_in_jar": 304,
+ "chain": [
+  {
+   "id": "arphex:bug_repellant",
+   "title": "Before Anything Else",
+   "desc": "An amethyst cluster, a glass bottle and lapis. This mod fills your caves with things that hunt you, and the repellant is the first thing anyone crafts, in self-defence."
+  },
+  {
+   "id": "arphex:bug_spray",
+   "title": "Point And Hold",
+   "desc": "Repellant, iron and a lever. The spray is the reusable version and it is what makes the early game survivable."
+  },
+  {
+   "id": "kill:arphex:spider_funnel",
+   "title": "Something With Fangs",
+   "desc": "Funnel spiders drop the necrotic fang. Forty-seven of this mod's entities have real loot tables, and the funnel is one of the earliest that gives you something useful."
+  },
+  {
+   "id": "arphex:necrotic_fang",
+   "title": "The Fang",
+   "desc": "Fangs drop from funnel spiders, centipede stalkers and giant hornet harbingers, and appear in the dungeon and spider cave chests. Everything in the mod's tool tree starts here."
+  },
+  {
+   "id": "arphex:chitin",
+   "title": "Shelled",
+   "desc": "One necrotic fang, shapeless. Chitin is the mod's base crafting material and its cheapest armour tier."
+  },
+  {
+   "id": "arphex:chitin_armour_helmet",
+   "title": "First Armour",
+   "desc": "Chitin over a vanilla turtle helmet. The chestplate additionally wants burning glands, which is the mod nudging you toward the ant arsonists."
+  },
+  {
+   "id": "arphex:chitin_armour_tier_2_helmet",
+   "title": "Smithed Once",
+   "desc": "A smithing_transform: the tier one piece plus more chitin. Chitin armour has three tiers before it even becomes something else."
+  },
+  {
+   "id": "arphex:chitin_armour_tier_3_helmet",
+   "title": "Smithed With Netherite",
+   "desc": "Tier two plus a netherite ingot. This is where arphex stops being an early-game mod."
+  },
+  {
+   "id": "kill:arphex:arthropleura_abomination",
+   "title": "The Enormous Millipede",
+   "desc": "The arthropleura abomination is the only source of heavy chitin, and it is one of the mod's genuine set-piece fights."
+  },
+  {
+   "id": "arphex:heavy_chitin",
+   "title": "Heavy Chitin",
+   "desc": "Heavy chitin gates the juggernaut armour, the entropy serum and the spacetime shard. Three separate branches wait on this one drop."
+  },
+  {
+   "id": "arphex:juggernaut_helmet",
+   "title": "Juggernaut",
+   "desc": "Tier three chitin plus heavy chitin, smithed. The juggernaut set is the top of the pure-chitin line."
+  },
+  {
+   "id": "arphex:antenna",
+   "title": "Reading The Swarm",
+   "desc": "Antennae drop from moth moontrackers and fill the basic, medium and spider-cave dungeon chests. They are the sensor part of everything the mod builds for navigation."
+  },
+  {
+   "id": "arphex:crawling_compass",
+   "title": "Find The Dungeon",
+   "desc": "Antenna, a vanilla compass and a netherite ingot. It points at arphex structures, and the four dungeon loot tiers are where the rest of this chain comes from."
+  },
+  {
+   "id": "arphex:fire_opal",
+   "title": "The First Gem",
+   "desc": "Nine fire opal shards. Shards come out of arphex:exquisite_ore, a real worldgen ore that drops ALL FIVE of the mod's gem shards, and separately from centipede evictors."
+  },
+  {
+   "id": "arphex:void_geode",
+   "title": "The Second Gem",
+   "desc": "Void geode shards drop from the same exquisite ore and from spider reapers. The geode is what the force and chaos gauntlets are built on."
+  },
+  {
+   "id": "arphex:time_prism",
+   "title": "The Third Gem",
+   "desc": "Time prism shards come from exquisite ore and from spider infestors. The prism is half of the spacetime line."
+  },
+  {
+   "id": "arphex:entropy_matrix",
+   "title": "The Fourth Gem",
+   "desc": "Entropy matrix shards drop from exquisite ore and from the spider matriarch. Each of the five gems has its own boss-tier spider as a second source."
+  },
+  {
+   "id": "arphex:abyssal_crystal",
+   "title": "The Fifth Gem",
+   "desc": "Abyssal shards come from exquisite ore and from spider prowlers. The abyssal crystal is the reagent for three of the four late ingots."
+  },
+  {
+   "id": "arphex:scorch_charge",
+   "title": "Loot From The Deep Dungeon",
+   "desc": "Scorch charges are not craftable. They fill the basic, strong and ultimate arphex dungeon chests and every top-tier weapon and armour recipe consumes them."
+  },
+  {
+   "id": "arphex:mantle_of_vitality",
+   "title": "The Ultimate Chest",
+   "desc": "The mantle appears in the arphex_dungeon_ultimate table and in one recipe of its own. It smiths gold armour into vitality armour and is required by every abyssal weapon."
+  },
+  {
+   "id": "arphex:vitality_armour_helmet",
+   "title": "Gold, Transformed",
+   "desc": "A smithing_transform of a plain golden helmet with the mantle. Vitality armour is the base the spacetime set is smithed onto, which is why gold matters here at all."
+  },
+  {
+   "id": "arphex:umbral_ingot",
+   "title": "Umbral",
+   "desc": "Chitin, fire opal, void geode and netherite make the shard; smelt it for the ingot. Umbral is the first of four netherite-tier metals and each uses a different pair of gems."
+  },
+  {
+   "id": "arphex:umbral_helmet",
+   "title": "Umbral Armour",
+   "desc": "Smithed onto vanilla netherite armour. Umbral, spectral and infernal are three parallel sets and you need all three."
+  },
+  {
+   "id": "arphex:spectral_ingot",
+   "title": "Spectral",
+   "desc": "Abyssal crystal, ectoplasm (from silverfish spectres), void geode and netherite. The spectral ingot is also what the vortex devastator and the venom typhoon need."
+  },
+  {
+   "id": "arphex:infernal_ingot",
+   "title": "Infernal",
+   "desc": "Abyssal crystal, fire opal, a scorch charge and netherite. Infernal is the only one of the four that consumes a scorch charge, which makes it the dungeon-gated one."
+  },
+  {
+   "id": "arphex:spacetime_ingot",
+   "title": "Spacetime",
+   "desc": "Entropy matrix, heavy chitin, time prism and netherite. Spacetime is the fourth metal and the only one smithed onto vitality armour rather than netherite."
+  },
+  {
+   "id": "arphex:eternal_helmet",
+   "title": "Three Sets Into One",
+   "desc": "A hedonic gem plus the infernal, spectral and umbral pieces all at once. The eternal chestplate additionally eats an elytra."
+  },
+  {
+   "id": "kill:arphex:tormentor",
+   "title": "The Tormentor",
+   "desc": "The tormentor is the mod's boss and the only source of the core of eternal suffering. It is summoned with a tormentor_summoner, which itself needs a core - so the first one has to be found."
+  },
+  {
+   "id": "arphex:core_of_eternal_suffering",
+   "title": "The Core",
+   "desc": "The core splits into hedonic gems, ascends into the ascended cube, brews the elixir of splintered sanity and is required by all four immortal pieces. It is the single most valuable drop in the mod."
+  },
+  {
+   "id": "arphex:immortal_helmet",
+   "title": "The Last Armour",
+   "desc": "A core, a scorch charge and the eternal, juggernaut and spacetime pieces together. Every armour branch in the mod converges on this recipe."
+  },
+  {
+   "id": "arphex:formic_fireblaster",
+   "title": "The First Gun",
+   "desc": "Chitin, a scorch charge, a blaze rod and netherite. The weapon tree is a straight line from here and every rung consumes the one before it."
+  },
+  {
+   "id": "arphex:hypnotic_hellblaster",
+   "title": "Fire Opal In The Barrel",
+   "desc": "Fireblaster plus a fire opal, shapeless. Two ingredients, and it is the mod's most-used mid-game weapon."
+  },
+  {
+   "id": "arphex:judgement_blaster",
+   "title": "Judgement",
+   "desc": "Hellblaster, an infernal ingot and a scorch charge. The third rung, and the one that needs the dungeon and the ore both."
+  },
+  {
+   "id": "arphex:genesis_rifle",
+   "title": "Genesis",
+   "desc": "Judgement blaster, oblivion ray, scorch charge and a spacetime ingot. The top of the gun line and one of the last things the mod has."
+  },
+  {
+   "id": "arphex:tormented_wrath",
+   "title": "Everything, At Once",
+   "desc": "Abyssal annihilator, core of eternal suffering and vengeful voidseeker. Three finished weapons consumed to make a fourth."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "arphex:necrotic_fang",
+   "members": [
+    "arphex:antenna",
+    "arphex:burning_glands",
+    "arphex:venomous_appendage",
+    "arphex:oversized_stinger",
+    "arphex:giant_spinneret",
+    "arphex:silk_slinger",
+    "arphex:ectoplasm",
+    "arphex:mangled_spider_flesh",
+    "arphex:mangled_fly_flesh",
+    "arphex:mangled_scorpion_flesh",
+    "arphex:crusher_claw",
+    "arphex:fly_appendage",
+    "arphex:heavy_chitin"
+   ]
+  },
+  {
+   "hub": "arphex:fire_opal",
+   "members": [
+    "arphex:fire_opal_shard",
+    "arphex:void_geode_shard",
+    "arphex:time_prism_shard",
+    "arphex:entropy_matrix_shard",
+    "arphex:abyssal_shard",
+    "arphex:block_of_fire_opal",
+    "arphex:block_of_void_geode",
+    "arphex:block_of_time_prism",
+    "arphex:block_of_entropy_matrix",
+    "arphex:block_of_abyssal_crystal"
+   ]
+  },
+  {
+   "hub": "arphex:chitin_armour_helmet",
+   "members": [
+    "arphex:chitin_armour_chestplate",
+    "arphex:chitin_armour_leggings",
+    "arphex:chitin_armour_boots",
+    "arphex:chitin_armour_tier_2_chestplate",
+    "arphex:chitin_armour_tier_2_leggings",
+    "arphex:chitin_armour_tier_2_boots",
+    "arphex:chitin_armour_tier_3_chestplate",
+    "arphex:chitin_armour_tier_3_leggings",
+    "arphex:chitin_armour_tier_3_boots",
+    "arphex:juggernaut_chestplate",
+    "arphex:juggernaut_leggings",
+    "arphex:juggernaut_boots",
+    "arphex:chitin_block"
+   ]
+  },
+  {
+   "hub": "arphex:umbral_helmet",
+   "members": [
+    "arphex:umbral_chestplate",
+    "arphex:umbral_leggings",
+    "arphex:umbral_boots",
+    "arphex:spectral_helmet",
+    "arphex:spectral_chestplate",
+    "arphex:spectral_leggings",
+    "arphex:spectral_boots",
+    "arphex:infernal_helmet",
+    "arphex:infernal_chestplate",
+    "arphex:infernal_leggings",
+    "arphex:infernal_boots"
+   ]
+  },
+  {
+   "hub": "arphex:eternal_helmet",
+   "members": [
+    "arphex:eternal_chestplate",
+    "arphex:eternal_leggings",
+    "arphex:eternal_boots",
+    "arphex:spacetime_helmet",
+    "arphex:spacetime_chestplate",
+    "arphex:spacetime_leggings",
+    "arphex:spacetime_boots",
+    "arphex:vitality_armour_chestplate",
+    "arphex:vitality_armour_leggings",
+    "arphex:vitality_armour_boots",
+    "arphex:immortal_chestplate",
+    "arphex:immortal_leggings",
+    "arphex:immortal_boots"
+   ]
+  },
+  {
+   "hub": "arphex:formic_fireblaster",
+   "members": [
+    "arphex:abyssal_annihilator",
+    "arphex:vengeful_voidseeker",
+    "arphex:oblivion_ray",
+    "arphex:chrono_cannon",
+    "arphex:vortex_devastator",
+    "arphex:hornet_hailstorm",
+    "arphex:venom_typhoon",
+    "arphex:black_widow_bow",
+    "arphex:spear_of_paralysis",
+    "arphex:visionary_spear",
+    "arphex:singularity_scythe",
+    "arphex:mantis_machete",
+    "arphex:dagger_of_dissolution"
+   ]
+  },
+  {
+   "hub": "arphex:abyssal_blade",
+   "members": [
+    "arphex:abyssal_axe",
+    "arphex:abyssal_pickaxe",
+    "arphex:abyssal_dagger",
+    "arphex:abyss_ascendant",
+    "arphex:abyss_atomiser",
+    "arphex:bane_of_the_darkness",
+    "arphex:tectonic_tunneler",
+    "arphex:force_gauntlet",
+    "arphex:chaos_gauntlet",
+    "arphex:tarantula_tether"
+   ]
+  },
+  {
+   "hub": "arphex:cooked_hemolymph",
+   "members": [
+    "arphex:raw_hemolymph",
+    "arphex:hemoplasm",
+    "arphex:abyssal_stew",
+    "arphex:scorched_soup",
+    "arphex:void_sherbet",
+    "arphex:entropy_serum",
+    "arphex:time_syrup",
+    "arphex:crawling_cake",
+    "arphex:spider_supplement",
+    "arphex:elixir_of_splintered_sanity",
+    "arphex:maggot_grub",
+    "arphex:roach_nymph",
+    "arphex:locust_larvae",
+    "arphex:bloodworm_grub"
+   ]
+  },
+  {
+   "hub": "arphex:warp_wayfinder",
+   "members": [
+    "arphex:warp_staff",
+    "arphex:warp_connector",
+    "arphex:tesseract_transporter",
+    "arphex:temporospatial_transmitter",
+    "arphex:vitality_viewfinder",
+    "arphex:arthropod_antenna",
+    "arphex:ascendant_staff",
+    "arphex:ethereal_staff",
+    "arphex:staff_of_vitality",
+    "arphex:ant_commander",
+    "arphex:prowler_parachute",
+    "arphex:prowler_pack"
+   ]
+  }
+ ],
+ "notes": "LOADER: META-INF/mods.toml, modId arphex, 1.20.1 Forge. Modrinth slug is arphex, but the project's DISPLAY name is 'Arthropod Phobia Expansions + Horror Bosses / Arachnophobia', which is why a title search finds the two addon projects (arphex-bop-integration, croparium-arphex) before the base mod - search the modid, not the title. VERIFICATION, TWO PASSES: pass A took the 346 assets/arphex/models/item stems INTERSECT the item./block. lang keys and gave 304. Pass B independently rebuilt from recipe results, loot-table entry names, blockstates and lang keys and gave 471. Every one of the 167 differences was checked and NOT ONE is a real item, which is unusual and worth stating. Two patterns account for all of them. First, NUMBERED MODEL VARIANTS: crawling_compass_0 through crawling_compass_15 (sixteen needle-direction models for the single item arphex:crawling_compass), abyss_ascendant_0/1/2, black_widow_bow_0/1/2, crusher_claw_0/1, genesis_rifle_0, chrono_cannon_0, ethereal_staff_0, hedonic_gem_0, infinite_torment_0, celestial_barrier_0 and core_of_eternal_suffering_0 - all animation or pull-state frames with ZERO references anywhere in data/. Treating those as ids would have invented sixteen fake compasses. Second, SPAWN-EGG LANG KEYS WITH NO MODEL: about 90 item.arphex.*_spawn_egg keys exist in the lang file with no corresponding item model and no data reference at all. Note the mod has its own separate egg mechanic - the 60-odd ids ending in plain _egg (spider_lurker_egg, tormentor_egg, ant_arsonist_worker_egg and so on) ARE real registered items that pass both tests; the _spawn_egg names are the creative-tab eggs and are a different, non-existent thing here. Final count stays 304, no widening. ENTITIES: 147 entity.arphex.* lang keys, of which 47 have real loot tables under data/arphex/loot_tables/entities/. The three kill: steps used here (spider_funnel for the necrotic fang, arthropleura_abomination for heavy chitin, tormentor for the core of eternal suffering) all come from that 47 and each is the SOLE or primary source of the item the next step asks for. Deliberately excluded as kill targets: hornet_projectile, arachnoid_shadow_clone, arachnoid_time_clone, diabolos_shadow_clone, diabolos_decimator_clone, draconic_clone, enormous_spider_hallucination, invisible_stalker, dweller_sleep_spawner, ai_controller, entropy_conduit, cave_web, giant_web and flytrap - projectiles, clones, hallucinations and controller entities with lang keys but no loot table. OBTAINABILITY: this mod is unusually complete - 162 datapack recipes plus 47 entity loot tables plus four tiers of dungeon chest loot (arphex_dungeon_basic, _medium, _strong, _ultimate) plus a spider_cave_loot table cover essentially everything. The two items in the chain that are NOT craftable are both dungeon loot and were verified as such: arphex:scorch_charge appears in the basic, strong and ultimate tables, and arphex:mantle_of_vitality appears in the ultimate table (and has one recipe of its own). arphex:exquisite_ore is a real worldgen ore (worldgen/configured_feature/ore_feature.json) whose block loot table drops ALL FIVE gem shards - fire_opal_shard, void_geode_shard, time_prism_shard, entropy_matrix_shard and abyssal_shard - and each shard has a second source in a specific boss spider's loot table (centipede_evictor, spider_reaper, spider_infestor, spider_matriarch, spider_prowler respectively). That five-shards-one-ore relationship is the backbone of the mod's mid-game and is why the ore itself is described in the fire_opal step rather than questioned directly. GRAPH: arphex has the deepest recipe DAG of anything in this batch and the chain follows it strictly. necrotic_fang -> chitin -> chitin armour t1 -> t2 (smithing) -> t3 (+netherite) -> juggernaut (+heavy_chitin). The four metals each take a distinct gem pair: umbral = chitin + fire_opal + void_geode + netherite; spectral = abyssal_crystal + ectoplasm + void_geode + netherite; infernal = abyssal_crystal + fire_opal + scorch_charge + netherite; spacetime = entropy_matrix + heavy_chitin + time_prism + netherite. Every shard smelts or blasts into its ingot. Then eternal = hedonic_gem + infernal + spectral + umbral (chestplate also eats an elytra), and immortal = core + scorch_charge + eternal + juggernaut + spacetime, so all four armour branches converge. The gun line is strictly linear: formic_fireblaster -> hypnotic_hellblaster -> judgement_blaster -> genesis_rifle, and separately formic_fireblaster -> vengeful_voidseeker and -> abyssal_annihilator, converging on tormented_wrath. CONSENSUS: moddb.json lists 26 arphex ids and all 26 resolve in this jar - chitin, chitin_block, chitin_armour_helmet/chestplate, bug_spray, bug_repellant, crawling_compass, crawling_container, the five block_of_* gem blocks, the shards, dagger_of_dissolution, abyssal_annihilator, tesseract_transporter, vitality_viewfinder, mantle_of_vitality, vitality_armour_boots, burning_glands, venomous_appendage, mangled_fly_flesh, crusher_claw and spectral_shard. No conflict with the recipe graph; moddb's ordering puts bug_spray and chitin early and abyssal_annihilator late, which is exactly the DAG's shape. DESIRABILITY: arphex:exquisite_ore is the only ore in the mod and is kept out of the spine per the ore rule; the five block_of_* gem blocks go in the gem wheel rather than the chain; there are no nuggets, slabs, stairs or walls to drop."
+}

@@ -1,0 +1,211 @@
+{
+ "mod": "tropicraft",
+ "ids_in_jar": 537,
+ "videos": [
+  {
+   "title": "Minecraft Tropicraft PORTAL (EASY) | Tropicraft how to get portal",
+   "channel": "Udisen",
+   "views": 3155,
+   "duration": 273,
+   "id": "E-kbN-E_8zU",
+   "chars": 3244
+  },
+  {
+   "title": "how to get into the tropicraft biome",
+   "channel": "diamondman 957",
+   "views": 637,
+   "duration": 281,
+   "id": "sTI29iFrMTY",
+   "chars": 1863
+  },
+  {
+   "title": "[SR-Mod] Tropicraft Tutorial - Farming and Plants",
+   "channel": "Metalmine",
+   "views": 3627,
+   "duration": 336,
+   "id": "zpL-0WntAHQ",
+   "chars": 4278
+  }
+ ],
+ "items": {
+  "tropicraft:pineapple": {
+   "mentions": 19,
+   "videos": 3,
+   "first_at": 0.254,
+   "praise": 7,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:coconut": {
+   "mentions": 9,
+   "videos": 2,
+   "first_at": 0.2192,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:chunk": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.3032,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:pineapple_cubes": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.273,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:cocktail": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1611,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:coconut_chunk": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.402,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:bamboo_mug": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.266,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:pina_colada": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.069,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:bamboo_stick": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5563,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:tiki_torch": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7168,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:fresh_marlin": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7273,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:magic_mushroom": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9157,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:croton": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9069,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:lemon": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4284,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:orange": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4311,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "tropicraft:grapefruit": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4339,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "entry": [
+   "THERE IS NO PORTAL FRAME. Entry is a sit-and-drink ritual on a beach at sunset. Three independent guides (E-kbN-E_8zU, sTI29iFrMTY, zpL-0WntAHQ) describe the same sequence.",
+   "1. Get tropicraft:pineapple_cubes by hitting an adult pineapple plant in a jungle/forest biome with a VANILLA sword. E-kbN-E_8zU is explicit: 'prepare any type of vanilla sword. Any type of sword from any other mods not work here.'",
+   "2. Get tropicraft:coconut from a palm tree, drop it on the ground and hit it to get tropicraft:coconut_chunk. zpL-0WntAHQ: 'grab a sword and you just go up to it and you have to whack a coconut up there... what you will get from this is damaged health.'",
+   "3. Collect ~20 minecraft:bamboo, craft tropicraft:bamboo_stick, then tropicraft:bamboo_mug. zpL-0WntAHQ: 'You put seven bamboos in a U shape.'",
+   "4. Craft a chair from 3 wool + bamboo, e.g. tropicraft:white_chair. E-kbN-E_8zU: 'This chair can have different colors depending on the color of wool.' A tropicraft:white_umbrella is optional decoration, not required.",
+   "5. Combine tropicraft:bamboo_mug + tropicraft:pineapple_cubes + tropicraft:coconut_chunk into tropicraft:pina_colada. tropicraft:cocktail also works (sTI29iFrMTY).",
+   "6. Place the chair ON A BEACH, sit in it, and hold-use the drink AT SUNSET. The portal opens and teleports you. E-kbN-E_8zU: 'Press and hold mug, watch on the sunset... you instantly arrive and appear in this portal.'",
+   "You arrive standing in a tropicraft:portal_water pool ringed with tropicraft:tiki_torch. Jumping back into that pool returns you to the Overworld."
+  ],
+  "boss_order": [
+   "No boss ladder was captured. None of the three transcripts covers Tropicraft combat progression, so the ordering of tropicraft:eih, the Ashen and their tropicraft:ashen_mask_mojo drops, and any dungeon content is UNKNOWN from guides and must not be invented."
+  ],
+  "order": [
+   "FIRST, before ever touching the dimension: assemble the drink. The mug, the pineapple and the coconut are entry prerequisites, not flavour crafts.",
+   "On arrival: the guides go straight to food security. tropicraft:pineapple can be replanted by right-clicking it on the ground to start a farm; minecraft:bamboo is 'the wood of this world' and plants like reeds with no water source needed (zpL-0WntAHQ).",
+   "tropicraft:lemon, tropicraft:lime, tropicraft:orange and tropicraft:grapefruit are picked bare-handed off fruit trees and each heal a small amount."
+  ],
+  "gates": [
+   "HARD GATE - time of day: it must be sunset. E-kbN-E_8zU visibly retries and says 'Sometimes nothing happening... Maybe it is not a sunset. Maybe it is something near sunset.'",
+   "HARD GATE - you must be seated in the chair, on a beach, while drinking. Standing and drinking does nothing.",
+   "HARD GATE - the pineapple must be harvested with a vanilla sword; modded swords do not drop tropicraft:pineapple_cubes."
+  ],
+  "traps": [
+   "If you do nothing after arriving, the portal teleports you straight back to the Overworld (E-kbN-E_8zU: 'if you not do anything, this portal automatically teleport you in the earth again'). Step off the portal pool immediately.",
+   "Whacking a coconut out of a palm tree damages you (zpL-0WntAHQ)."
+  ],
+  "signature": [
+   "tropicraft:pina_colada - the drink is both the entry key and the mod's emblem.",
+   "tropicraft:bamboo_mug, tropicraft:white_chair, tropicraft:white_umbrella - the beach-holiday furniture the mod is built around.",
+   "tropicraft:portal_water and tropicraft:tiki_torch - what the arrival pool is made of.",
+   "tropicraft:azurite_gem, tropicraft:eudialyte_gem, tropicraft:zircon_gem - the dimension's own gem tier (present in the jar; NOT covered by any transcript I captured)."
+  ]
+ }
+}

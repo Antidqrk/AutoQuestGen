@@ -1,0 +1,149 @@
+{
+ "mod": "beachparty",
+ "verified_against": "letsdo-beachparty-forge-2.0.3.jar",
+ "item_count_in_jar": 78,
+ "chain": [
+  {
+   "id": "beachparty:palm_sprout",
+   "title": "Sprout of the Blue",
+   "desc": "Palm Sprouts grow on beaches and are what a palm tree starts from."
+  },
+  {
+   "id": "beachparty:palm_log",
+   "title": "Out on a Limb",
+   "desc": "Palm Logs are the mod's own wood, cut from the palms you grow."
+  },
+  {
+   "id": "beachparty:palm_planks",
+   "title": "Plank You Very Much",
+   "desc": "Palm Planks are the material behind every piece of beach furniture."
+  },
+  {
+   "id": "beachparty:coconut",
+   "title": "Nuts About You",
+   "desc": "Coconuts come off palm trees and are the mod's signature ingredient."
+  },
+  {
+   "id": "beachparty:coconut_open",
+   "title": "Crack of Dawn",
+   "desc": "An Open Coconut is what a coconut becomes once split, and it is drinkable on its own."
+  },
+  {
+   "id": "beachparty:seashell",
+   "title": "She Sells Seashells",
+   "desc": "Seashells are found along beaches and decorate the shoreline."
+  },
+  {
+   "id": "beachparty:raw_mussel_meat",
+   "title": "Mussel Memory",
+   "desc": "Raw Mussel Meat comes from the mussels found in shallow water."
+  },
+  {
+   "id": "beachparty:cooked_mussel_meat",
+   "title": "Shell Yeah",
+   "desc": "Mussel meat cooked over a campfire, furnace or smoker becomes a proper snack."
+  },
+  {
+   "id": "beachparty:thatch",
+   "title": "Roof of Concept",
+   "desc": "Thatch, with its slab and stairs, roofs every beach hut."
+  },
+  {
+   "id": "beachparty:beach_towel",
+   "title": "Towel Recall",
+   "desc": "A Beach Towel is woven from wool and marks your patch of sand."
+  },
+  {
+   "id": "beachparty:beach_parasol",
+   "title": "Shade Thrower",
+   "desc": "The Beach Parasol is palm planks and wool, and it keeps the sun off."
+  },
+  {
+   "id": "beachparty:beach_chair",
+   "title": "Take a Load Off",
+   "desc": "The Beach Chair pairs sticks, wool and palm planks into somewhere to sit."
+  },
+  {
+   "id": "beachparty:mini_fridge",
+   "title": "Chill Out",
+   "desc": "The Mini Fridge is iron and redstone, and it freezes water into the ice every cocktail needs."
+  },
+  {
+   "id": "beachparty:palm_bar",
+   "title": "Raise the Bar",
+   "desc": "The Palm Bar is the mixing station where all six cocktails are made."
+  },
+  {
+   "id": "beachparty:palm_bar_stool",
+   "title": "Stool Pigeon",
+   "desc": "Palm Bar Stools seat the guests you are about to serve."
+  },
+  {
+   "id": "beachparty:melon_cocktail",
+   "title": "Melon Collie",
+   "desc": "Melon slice, ice and sugar mix at the bar into a Melon Cocktail."
+  },
+  {
+   "id": "beachparty:sweetberries_cocktail",
+   "title": "Berry Merry",
+   "desc": "Sweet berries, ice and sugar mix into a Sweetberry Cocktail."
+  },
+  {
+   "id": "beachparty:honey_cocktail",
+   "title": "Bee's Knees",
+   "desc": "Honeycomb, ice and milk mix into a creamy Honey Cocktail."
+  },
+  {
+   "id": "beachparty:radio",
+   "title": "Sound Investment",
+   "desc": "A note block and an Overgrown Disc build the Radio that soundtracks the party."
+  },
+  {
+   "id": "beachparty:coconut_cocktail",
+   "title": "Everything's Coming Up Coconuts",
+   "desc": "An open coconut, ice and a honey bottle mix into the Coconut Cocktail, the drink this whole beach was built for."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "beachparty:palm_bar",
+   "members": [
+    "beachparty:cocoa_cocktail",
+    "beachparty:coconut_cocktail",
+    "beachparty:honey_cocktail",
+    "beachparty:melon_cocktail",
+    "beachparty:pumpkin_cocktail",
+    "beachparty:sweetberries_cocktail"
+   ]
+  },
+  {
+   "hub": "beachparty:beach_parasol",
+   "members": [
+    "beachparty:beach_chair",
+    "beachparty:hooded_beach_chair",
+    "beachparty:beach_sun_lounger",
+    "beachparty:beach_towel",
+    "beachparty:beach_ball",
+    "beachparty:beach_goal",
+    "beachparty:pool_noodle",
+    "beachparty:sandwaves"
+   ]
+  },
+  {
+   "hub": "beachparty:beach_hat",
+   "members": [
+    "beachparty:bikini",
+    "beachparty:trunks",
+    "beachparty:sunglasses",
+    "beachparty:crocs",
+    "beachparty:swim_wings",
+    "beachparty:rubber_ring_blue",
+    "beachparty:rubber_ring_pink",
+    "beachparty:rubber_ring_axolotl",
+    "beachparty:rubber_ring_pelican",
+    "beachparty:rubber_ring_stripped"
+   ]
+  }
+ ],
+ "notes": "Beachparty has the thinnest recipe graph of the family: the only custom stations are beachparty:palm_bar (palm_bar_mixing, six cocktails) and beachparty:mini_fridge (mini_fridge_freezing, which makes the ice those cocktails require), so the chain is deliberately gather -> build the beach -> stock the bar. Coconut, seashell, raw_mussel_meat, palm_sprout, beach_ball, pool_noodle, sunglasses, crocs, swim_wings, bikini, trunks, beach_hat and the rubber rings have no crafting recipe in the jar (worldgen, drops or loot) but are all confirmed items via model stem plus lang key, so their descriptions claim no recipe. Dropped as unverifiable: coconut_hanging and sand_seastars (model stems with no matching lang key and no recipe output; the jar's lang instead carries hanging_coconut and sand_pile)."
+}

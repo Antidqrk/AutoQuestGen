@@ -1,0 +1,231 @@
+{
+  "mod": "regions_unexplored",
+  "verified_against": "RegionsUnexploredForge-0.5.6+1.20.1.jar",
+  "item_count_in_jar": 723,
+  "chain": [
+    {
+      "id": "regions_unexplored:clover",
+      "title": "Four Leaves in the Grass",
+      "desc": "Break the clover that carpets the Clover Plains biome; the biome json places the clover and clover_sparse features and nothing else does."
+    },
+    {
+      "id": "regions_unexplored:barley",
+      "title": "Wild Grain",
+      "desc": "Cut wild barley out of the Barley Fields and Prairie biomes. The jar ships two barley recipes, so the crop is worth more than decoration."
+    },
+    {
+      "id": "regions_unexplored:maple_log",
+      "title": "Red Canopy",
+      "desc": "Fell a maple in the Maple Forest, Autumnal Maple Forest, Cold Deciduous Forest, Temperate Grove or Pumpkin Fields. Maple also drops leaf piles in red and orange."
+    },
+    {
+      "id": "regions_unexplored:silver_birch_log",
+      "title": "The Pale Trunks",
+      "desc": "Chop the tall silver birches of the Silver Birch Forest, the only biome whose feature list carries silver_birch_tall and silver_birch_dense."
+    },
+    {
+      "id": "regions_unexplored:redwood_log",
+      "title": "Giants of the Coast",
+      "desc": "Fell a redwood in the Redwoods or Sparse Redwoods. These are RU's largest trees and the biome is also where its berry bush grows."
+    },
+    {
+      "id": "regions_unexplored:salmonberry",
+      "title": "Berries in the Redwoods",
+      "desc": "Harvest a salmonberry bush on the Redwoods floor. The bush block has no item form; picking it is the only way to get the berry."
+    },
+    {
+      "id": "regions_unexplored:willow_log",
+      "title": "Roots in the Bayou",
+      "desc": "Chop the vine-hung willows that stand in the Bayou and Willow Forest biomes."
+    },
+    {
+      "id": "regions_unexplored:elephant_ear",
+      "title": "Leaves the Size of Doors",
+      "desc": "Cut elephant ear from the Bayou, Old Growth Bayou, Rainforest, Sparse Rainforest, Tropics, Eucalyptus Forest and the underwater Rocky Reef."
+    },
+    {
+      "id": "regions_unexplored:baobab_log",
+      "title": "The Tree That Holds Water",
+      "desc": "Fell a baobab in the Baobab Savanna, the only biome that places the baobab tree features."
+    },
+    {
+      "id": "regions_unexplored:joshua_log",
+      "title": "Arms in the Sand",
+      "desc": "Cut a joshua tree in the Joshua Desert. Its joshua_beard growth also crafts into sticks."
+    },
+    {
+      "id": "regions_unexplored:saguaro_cactus",
+      "title": "The Tall Cactus",
+      "desc": "Break a saguaro in the Saguaro Desert. The jar carries a saguaro recipe, and the smaller barrel cactus grows alongside it."
+    },
+    {
+      "id": "regions_unexplored:socotra_log",
+      "title": "This Tree Bleeds Red",
+      "desc": "Chop a socotra in the Dry Bushland. The mod ships an advancement of this name whose only criterion is holding a socotra log."
+    },
+    {
+      "id": "regions_unexplored:kapok_log",
+      "title": "Above the Rainforest Floor",
+      "desc": "Fell a kapok in the Rainforest or Sparse Rainforest. Its hanging kapok vines are climbable - the From the Tree Tops advancement fires when you hang from them."
+    },
+    {
+      "id": "regions_unexplored:alpha_log",
+      "title": "The Grove That Forgot",
+      "desc": "Cut an alpha tree in the Alpha Grove, a biome built entirely from RU's alpha-textured wood, grass, dandelion and rose."
+    },
+    {
+      "id": "regions_unexplored:chalk",
+      "title": "White Stone",
+      "desc": "Mine chalk, RU's own pale stone. The jar carries twenty-eight chalk recipes covering bricks, pillars and polished forms, and a chalk_grass_block for its surface."
+    },
+    {
+      "id": "regions_unexplored:blue_bioshroom",
+      "title": "Mycologist",
+      "desc": "Pick a blue bioshroom in the Bioshroom Caves. The mod's Mycologist advancement wants all four colours - blue, green, pink and yellow."
+    },
+    {
+      "id": "regions_unexplored:prismarite_cluster",
+      "title": "The Chasm Glows",
+      "desc": "Break a prismarite cluster in the Prismachasm. Its loot table returns the cluster itself, and the biome also grows prismoss sprouts and cave hyssop."
+    },
+    {
+      "id": "regions_unexplored:redstone_bud",
+      "title": "Growth in the Redstone Caves",
+      "desc": "Mine a redstone bud in the Redstone Caves or the Nether's Redstone Abyss; its loot table drops both the bud and plain redstone."
+    },
+    {
+      "id": "regions_unexplored:volcanic_ash",
+      "title": "Ash Underfoot",
+      "desc": "Shovel volcanic ash out of the Scorching Caves, where ash vents and lava falls generate. The loot table can also return flint."
+    },
+    {
+      "id": "regions_unexplored:brimwood_log",
+      "title": "Wood That Burns Cold",
+      "desc": "Fell a brim willow in the Nether's Infernal Holt. The brimwood_log_magma variant found in the same trees breaks down to a normal brimwood log."
+    },
+    {
+      "id": "regions_unexplored:dorcel",
+      "title": "Downer",
+      "desc": "Collect a dorcel from the Infernal Holt. It is one of only two blocks in the jar with its own damage type, and walking into it fires the Downer advancement."
+    },
+    {
+      "id": "regions_unexplored:mycotoxic_moss",
+      "title": "The Spore Floor",
+      "desc": "Mine mycotoxic moss in the Nether's Mycotoxic Undergrowth; the block sits on netherrack and its loot table returns netherrack if you break it wrong."
+    },
+    {
+      "id": "regions_unexplored:glister_bulb",
+      "title": "Light in the Glistering Meadow",
+      "desc": "Break a glister bulb in the Nether's Glistering Meadow, which also grows glister spires, glistering ivy, fern, bloom and sprout."
+    },
+    {
+      "id": "regions_unexplored:hanging_earlight_fruit",
+      "title": "Light Snack",
+      "desc": "Harvest a hanging earlight in the Nether's Blackstone Basin. Eating the fruit it drops completes the mod's Light Snack advancement."
+    },
+    {
+      "id": "regions_unexplored:cobalt_log",
+      "title": "Blue Wood in the Basin",
+      "desc": "Fell a cobalt tree in the Blackstone Basin, alongside cobalt earlight, cobalt roots and the cobalt webbing that drops its sapling."
+    },
+    {
+      "id": "regions_unexplored:duskmelon_slice",
+      "title": "Blind as a Bat",
+      "desc": "Break a duskmelon in the Nether's Ancient Delta. The block has no item form, so the slice it drops is the only way to hold one; eating it fires Blind as a Bat."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "regions_unexplored:cypress_log",
+      "members": [
+        "regions_unexplored:eucalyptus_log",
+        "regions_unexplored:larch_log",
+        "regions_unexplored:pine_log",
+        "regions_unexplored:palm_log",
+        "regions_unexplored:mauve_log",
+        "regions_unexplored:magnolia_log",
+        "regions_unexplored:blackwood_log",
+        "regions_unexplored:dead_log",
+        "regions_unexplored:small_oak_log",
+        "regions_unexplored:bamboo_log",
+        "regions_unexplored:ashen_log"
+      ]
+    },
+    {
+      "hub": "regions_unexplored:blue_bioshroom",
+      "members": [
+        "regions_unexplored:green_bioshroom",
+        "regions_unexplored:pink_bioshroom",
+        "regions_unexplored:yellow_bioshroom",
+        "regions_unexplored:blue_bioshroom_block",
+        "regions_unexplored:green_bioshroom_block",
+        "regions_unexplored:pink_bioshroom_block",
+        "regions_unexplored:yellow_bioshroom_block",
+        "regions_unexplored:glowing_blue_bioshroom_block",
+        "regions_unexplored:glowing_green_bioshroom_block",
+        "regions_unexplored:glowing_pink_bioshroom_block",
+        "regions_unexplored:glowing_yellow_bioshroom_block",
+        "regions_unexplored:tall_blue_bioshroom",
+        "regions_unexplored:tall_green_bioshroom"
+      ]
+    },
+    {
+      "hub": "regions_unexplored:waratah",
+      "members": [
+        "regions_unexplored:tsubaki",
+        "regions_unexplored:hibiscus",
+        "regions_unexplored:aster",
+        "regions_unexplored:daisy",
+        "regions_unexplored:bleeding_heart",
+        "regions_unexplored:day_lily",
+        "regions_unexplored:meadow_sage",
+        "regions_unexplored:fireweed",
+        "regions_unexplored:hyssop",
+        "regions_unexplored:mallow",
+        "regions_unexplored:felicia_daisy",
+        "regions_unexplored:poppy_bush",
+        "regions_unexplored:salmon_poppy_bush",
+        "regions_unexplored:white_trillium"
+      ]
+    },
+    {
+      "hub": "regions_unexplored:white_snowbelle",
+      "members": [
+        "regions_unexplored:black_snowbelle",
+        "regions_unexplored:blue_snowbelle",
+        "regions_unexplored:brown_snowbelle",
+        "regions_unexplored:cyan_snowbelle",
+        "regions_unexplored:gray_snowbelle",
+        "regions_unexplored:green_snowbelle",
+        "regions_unexplored:light_blue_snowbelle",
+        "regions_unexplored:light_gray_snowbelle",
+        "regions_unexplored:lime_snowbelle",
+        "regions_unexplored:magenta_snowbelle",
+        "regions_unexplored:orange_snowbelle",
+        "regions_unexplored:pink_snowbelle",
+        "regions_unexplored:purple_snowbelle",
+        "regions_unexplored:red_snowbelle"
+      ]
+    },
+    {
+      "hub": "regions_unexplored:white_painted_planks",
+      "members": [
+        "regions_unexplored:black_painted_planks",
+        "regions_unexplored:blue_painted_planks",
+        "regions_unexplored:brown_painted_planks",
+        "regions_unexplored:cyan_painted_planks",
+        "regions_unexplored:gray_painted_planks",
+        "regions_unexplored:green_painted_planks",
+        "regions_unexplored:light_blue_painted_planks",
+        "regions_unexplored:light_gray_painted_planks",
+        "regions_unexplored:lime_painted_planks",
+        "regions_unexplored:magenta_painted_planks",
+        "regions_unexplored:orange_painted_planks",
+        "regions_unexplored:pink_painted_planks",
+        "regions_unexplored:purple_painted_planks",
+        "regions_unexplored:red_painted_planks"
+      ]
+    }
+  ],
+  "notes": "REGIONS UNEXPLORED ADDS NO STRUCTURES. data/regions_unexplored/worldgen/structure/ does not exist in this jar - there are zero structure files, zero structure_set files and zero dimension files. The mod's entire content is 71 biomes (data/regions_unexplored/worldgen/biome/*.json) plus the woods, plants and stones that fill them, so this chain is items-only and carries no structure: entries. That is the opposite of the Terralith and dungeon files in this slice and it is a verified finding, not an omission. ITEM SET AND WIDENING: 733 stems under assets/regions_unexplored/models/item/*.json; 720 of them also carry an item./block. key in assets/regions_unexplored/lang/en_us.json. Three more were ADDED on loot-table proof: regions_unexplored:duskmelon_slice, regions_unexplored:hanging_earlight_fruit and regions_unexplored:salmonberry each have an item model and are named as the output of a real data/regions_unexplored/loot_tables/blocks/*.json (duskmelon.json, hanging_earlight.json, salmonberry_bush.json respectively), which proves both registration and obtainability. Their display names live on the BLOCK key rather than an item key - block.regions_unexplored.duskmelon reads 'Duskmelon Slice', block.regions_unexplored.salmonberry_bush reads 'Salmonberry' and block.regions_unexplored.hanging_earlight reads 'Hanging Earlight Fruit', which is the proof that the drop, not the block, is what the string names. Final item_count_in_jar = 720 + 3 = 723. I deliberately did NOT use the blockstate widening here: models UNION blockstates INTERSECT lang adds 8 ids (dropleaf_plant, duskmelon, giant_lily_pad, glistering_ivy_plant, hanging_earlight, kapok_vines_plant, salmonberry_bush, spanish_moss_plant) that have a blockstate but NO item model, i.e. no BlockItem - they are the placed halves of two-part plants and cannot be held, so counting them would inflate the set with unobtainable ids. DROPPED (model but no lang, no loot, no recipe - cut or internal content): brimwood_log_transition, pine_log_transition, saguaro_cactus_corner, brown_wall_mushroom, yellow_wall_bioshroom, seeded_grass, seeded_tall_grass, cooked_meat, raw_meat and ruby. Ruby in particular has an item model and nothing else in the jar references it. BIOME ATTRIBUTION was resolved mechanically for every claim above except chalk: each biome json's placed_feature references were followed to configured_feature and the regions_unexplored: block ids inside were indexed back to the biome. Chalk is the one exception - RU places its chalk, argillite, peat and silt terrain through code surface rules rather than datapack features, so the chalk entry claims only what the jar shows (28 chalk recipes and a chalk_grass_block) and names no biome. DESIRABILITY: the mod registers full slab/stairs/fence/wall/door/trapdoor/button/pressure_plate/sign/boat families for 18 woods; not one of those shapes appears in the chain. Only one representative log per wood line is used and saplings, shrubs, branches and leaves are omitted entirely. The five wheels are the collections the mod itself treats as sets - its got_wood advancement enumerates every log, mycologist every bioshroom and every_bit_of_the_rainbow every snowbelle colour. No kill: entries: the only entity lang keys in the jar are entity.regions_unexplored.boat and entity.regions_unexplored.chest_boat, which are vehicles. No dim: entries: no data/regions_unexplored/dimension/ files exist. LOADER: META-INF/mods.toml, modId regions_unexplored, version 0.5.6, minecraft [1.20.1,1.21), forge [47,), no fabric.mod.json - a genuine 1.20.1 Forge build. Also depends on terrablender."
+}

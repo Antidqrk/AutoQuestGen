@@ -1,0 +1,153 @@
+{
+ "mod": "lost_aether_content",
+ "verified_against": "lost_aether_content-1.20.1-1.2.3.jar",
+ "item_count_in_jar": 39,
+ "registers_into": [
+  "aether"
+ ],
+ "chain": [
+  {
+   "id": "dim:aether:the_aether",
+   "title": "It All Lives in the Aether",
+   "desc": "Lost Aether Content adds no dimension and no biome - it adds one dungeon, one boss and the treasure inside. Pour water into a glowstone frame or none of this exists."
+  },
+  {
+   "id": "lost_aether_content:zanite_shield",
+   "title": "A Shield the Aether Understands",
+   "desc": "Crafted from Zanite Gemstones. Its own lore admits it has no special quirk, only more durability than a wooden shield - it is the honest starter."
+  },
+  {
+   "id": "lost_aether_content:pink_aercloud",
+   "title": "The Soft Pink Layer",
+   "desc": "Placed by the mod's add_pink_aerclouds biome modifier on any biome tagged has_pink_aerclouds; its lore says the healing is real but locked until it is enchanted."
+  },
+  {
+   "id": "lost_aether_content:enchanted_pink_aercloud",
+   "title": "Unlocking the Cloud",
+   "desc": "The Pink Aercloud run through an Aether Altar. Resting in it heals; it also appears in the Platinum Dungeon treasure chest."
+  },
+  {
+   "id": "lost_aether_content:crystal_sapling",
+   "title": "Sapling From a Crystal Leaf",
+   "desc": "There is no recipe - the mod hooks the Aether's own crystal_leaves and crystal_fruit_leaves loot with a global loot modifier and adds this drop when you break them with anything but shears."
+  },
+  {
+   "id": "lost_aether_content:gravitite_shield",
+   "title": "Gravitite Between You and It",
+   "desc": "Crafted from Enchanted Gravitite; it throws attackers back much harder than a normal shield and is the realistic block for the Platinum fight."
+  },
+  {
+   "id": "structure:lost_aether_content:platinum_dungeon",
+   "title": "Find the Platinum Dungeon",
+   "desc": "A surface structure on the Aether's islands, on a 40-chunk grid at 0.6 frequency, and never near world spawn. It is the entire mod - one dungeon, one boss, one treasure room. Walk the islands until you find blue stone that will not break."
+  },
+  {
+   "id": "lost_aether_content:gale_stone",
+   "title": "Stone You Cannot Break Yet",
+   "desc": "The blue stone the dungeon is built from. Its own lore states plainly that it cannot be destroyed until the Aerwhale King is defeated, so if your pickaxe bounces off it you are in the right place and simply too early."
+  },
+  {
+   "id": "lost_aether_content:songstone",
+   "title": "Ring the Stone and It Wakes",
+   "desc": "The boss trigger. Its lore: the sound keeps the Aerwhale King's mind tranquil, and if activated he will prepare for battle. The mod refuses it in Creative and on Peaceful, and says so in its own GUI strings."
+  },
+  {
+   "id": "kill:lost_aether_content:aerwhale_king",
+   "title": "Sovereign of the Skies",
+   "desc": "The Platinum Dungeon boss. The mod's platinum_dungeon advancement hangs off aether:gold_dungeon, so the Sun Spirit must already be dead when you ring the Songstone."
+  },
+  {
+   "id": "lost_aether_content:platinum_key",
+   "title": "A Super Shiny Key",
+   "desc": "The Aerwhale King's guaranteed drop. Its lore says it claims the treasure on the second floor of the dungeon; the boss also drops two to four Blue Aerclouds."
+  },
+  {
+   "id": "lost_aether_content:phoenix_sword",
+   "title": "Molten and Heavy",
+   "desc": "Platinum treasure. Twenty percent extra damage against anything already burning, and the same rule runs across the whole Phoenix tool set."
+  },
+  {
+   "id": "lost_aether_content:phoenix_pickaxe",
+   "title": "A Pickaxe That Smelts",
+   "desc": "Platinum treasure. The metal is molten enough to smelt ores as it breaks them, which is the single most useful thing in the chest."
+  },
+  {
+   "id": "lost_aether_content:power_gloves",
+   "title": "Punch Things Off the Island",
+   "desc": "Platinum treasure. Enormously increased punch knockback - on floating islands that is a kill, not a nuisance."
+  },
+  {
+   "id": "lost_aether_content:invincibility_gem",
+   "title": "Sometimes the Blow Misses",
+   "desc": "Platinum treasure. A chance to dodge an incoming hit outright and be briefly concealed."
+  },
+  {
+   "id": "lost_aether_content:agility_boots",
+   "title": "Light and Aerodynamic",
+   "desc": "Platinum treasure. Straight movement speed, described by the mod as very light boots found only in this dungeon."
+  },
+  {
+   "id": "lost_aether_content:phoenix_cape",
+   "title": "A Second Chance at the Void",
+   "desc": "Platinum treasure. A warm cloak that saves the wearer once when they get close to falling out of the world."
+  },
+  {
+   "id": "lost_aether_content:shield_of_emile",
+   "title": "The Shield That Answers",
+   "desc": "Platinum treasure, said to have been carried alongside the Hammer of Kingbdogz; blocked projectiles come back off it as yours."
+  },
+  {
+   "id": "lost_aether_content:sentry_shield",
+   "title": "Ancient Sentry Technology",
+   "desc": "Platinum treasure. Full explosion immunity for the wearer, and a chance to detonate when struck - both of which chew through its durability."
+  },
+  {
+   "id": "lost_aether_content:noble_armor_trim_smithing_template",
+   "title": "The Noble Trim",
+   "desc": "Platinum treasure, and the mod's only smithing template. Once you hold one it duplicates with the usual eight-block recipe."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "lost_aether_content:phoenix_sword",
+   "members": [
+    "lost_aether_content:phoenix_pickaxe",
+    "lost_aether_content:phoenix_axe",
+    "lost_aether_content:phoenix_shovel",
+    "lost_aether_content:phoenix_hoe",
+    "lost_aether_content:phoenix_cape",
+    "lost_aether_content:flaming_gemstone"
+   ]
+  },
+  {
+   "hub": "lost_aether_content:gale_stone",
+   "members": [
+    "lost_aether_content:light_gale_stone",
+    "lost_aether_content:gale_pillar",
+    "lost_aether_content:locked_gale_stone",
+    "lost_aether_content:trapped_gale_stone",
+    "lost_aether_content:boss_doorway_gale_stone",
+    "lost_aether_content:treasure_doorway_gale_stone",
+    "lost_aether_content:songstone"
+   ]
+  },
+  {
+   "hub": "lost_aether_content:swetty_mask",
+   "members": [
+    "lost_aether_content:invincibility_gem",
+    "lost_aether_content:power_gloves",
+    "lost_aether_content:agility_boots",
+    "lost_aether_content:sentry_shield",
+    "lost_aether_content:shield_of_emile",
+    "lost_aether_content:zanite_shield",
+    "lost_aether_content:gravitite_shield",
+    "lost_aether_content:music_disc_legacy",
+    "lost_aether_content:music_disc_sovereign_of_the_skies",
+    "lost_aether_content:crystal_sapling",
+    "lost_aether_content:holiday_sapling",
+    "lost_aether_content:brown_moa_egg"
+   ]
+  }
+ ],
+ "notes": "SHORT MOD, SHORT CHAIN - declared. 39 items total, one structure, one boss, and most of the mod is the contents of a single treasure chest. Nineteen steps is the honest length; nothing was padded to reach it. LOADER VERIFIED: META-INF/mods.toml present, no fabric.mod.json, modId=lost_aether_content, deps forge/minecraft/aether/structure_gel; Modrinth version 1.2.3 lists loaders [forge, neoforge] and game version 1.20.1. Item set = the 39 stems of assets/lost_aether_content/models/item/*.json intersected with item./block. keys in assets/lost_aether_content/lang/en_us.json; every id above is in that set EXCEPT the one allow-listed widening below. REGISTERS_INTO aether: 27 files under data/aether/, the advancement platinum_dungeon has parent aether:gold_dungeon, and both Moa types register into the Aether's moa type registry. No data/lost_aether_content/dimension/ and no worldgen/biome/ at all, so dim:aether:the_aether is the only correct entry step. ALLOW-LISTED ID (widening, with proof): lost_aether_content:noble_armor_trim_smithing_template has assets/lost_aether_content/models/item/noble_armor_trim_smithing_template.json and two recipes (data/lost_aether_content/recipes/noble_armor_trim_smithing_template.json crafting_shaped and ..._smithing_trim.json), but it carries NO item.lost_aether_content.* lang key - it is named by trim_pattern.lost_aether_content.noble = 'Noble Armor Trim', a naming form that defeats both a models-intersect-lang test and an upgrade.<modid>.* widening. Its survival source is data/lost_aether_content/loot_tables/chests/platinum_treasure_loot.json, since its craft recipe is a duplication recipe. ENTITY TRAP FOUND AND AVOIDED. Four entity.lost_aether_content.* lang keys exist, but com/legacy/lost_aether/registry/LCEntityTypes.class registers exactly THREE: aerwhale_king, falling_rock and cloud_shot. lost_aether_content:zephyroo is NOT registered anywhere - ZephyrooEntity.class, ZephyrooModel.class and ZephyrooRenderer.class all exist and it has a full entity lang key in fourteen languages, but nothing ever creates the EntityType, so kill:lost_aether_content:zephyroo would be permanently uncompletable. It was excluded. falling_rock and cloud_shot are the Aerwhale King's projectiles and were excluded too. That leaves kill:lost_aether_content:aerwhale_king as the mod's ONLY valid kill target, and it is verified twice: data/lost_aether_content/loot_tables/entities/aerwhale_king.json exists and drops platinum_key plus 2-4 aether:blue_aercloud, and data/lost_aether_content/advancements/platinum_dungeon.json triggers on minecraft:player_killed_entity with predicate type lost_aether_content:aerwhale_king. BOSS SUMMON: the boss is not wandering the dungeon. lore.block.lost_aether_content.songstone states the Songstone's sound keeps the Aerwhale King tranquil and 'if activated, he will prepare for battle', and the mod ships gui strings refusing the Songstone in Creative mode and on Peaceful difficulty. The Songstone step is therefore the real gate, not the kill. STRUCTURE: platinum_dungeon is the mod's single structure and is used as the chain's structure: step. data/lost_aether_content/worldgen/structure/platinum_dungeon.json places it on biomes tagged '#lost_aether_content:has_platinum_dungeon' at step surface_structures, and its structure_set uses structure_gel:grid_placement with spacing 40, offset 15, frequency 0.6, allowed_near_spawn false, and an exclusion_zone of radius 8 against a bad_neighbors tag - so it will never spawn on top of the world spawn or another dungeon. Every spawn category inside its bounding box is blanked out, so nothing wanders in. gale_stone and songstone exist only inside it. Gale Stone's own lore confirms the dungeon is unmineable until the boss dies, which makes it a genuine post-boss reward rather than a build material you can grab on the way in. TREASURE SPLIT verified from the two chest tables: platinum_treasure_loot holds agility_boots, enchanted_pink_aercloud, flaming_gemstone, invincibility_gem, music_disc_legacy, music_disc_sovereign_of_the_skies, noble_armor_trim_smithing_template, phoenix_cape, the #phoenix_tools tag (sword/pickaxe/axe/shovel/hoe), power_gloves, sentry_shield, shield_of_emile, swetty_mask, plus aether:life_shard and aether:cloud_staff; platinum_dungeon_loot is the weaker floor loot and holds brown_moa_egg, crystal_sapling, holiday_sapling and Aether staples. DROPPED, NO ACQUISITION PATH: lost_aether_content:orange_moa_egg is registered in LCItems and LCMoaTypes and is in data/aether/tags/items/moa_eggs.json, but the only file that mentions it besides the tag is data/lost_aether_content/recipes/orange_moa_incubation.json, which CONSUMES it - it is in no loot table and no chest, and its own lore describes it as laid by a wild Orange Moa, which is a runtime breeding outcome no quest task can check. brown_moa_egg was kept instead because it is a real entry in platinum_dungeon_loot. CONSENSUS: all seventeen moddb entries are real ids in this jar and every one is covered here or in the wheels. moddb's order is essentially random (power_gloves at 0.000, phoenix_sword at 1.000, platinum_key at 0.188) because every one of those items comes out of the same chest; the recipe/advancement graph was preferred, which puts the two craftable shields first, then the dungeon, then the boss, then the chest."
+}

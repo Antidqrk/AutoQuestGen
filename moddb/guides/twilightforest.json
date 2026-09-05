@@ -1,0 +1,163 @@
+{
+ "mod": "twilightforest",
+ "ids_in_jar": 995,
+ "videos": [
+  {
+   "id": "9T_CwlABpIY",
+   "title": null,
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 15684
+  },
+  {
+   "title": "Minecraft: How to make a Portal to the Twilight Forest - (Minecraft Portal to Twilight Forest)",
+   "channel": "AserGaming",
+   "views": 30383,
+   "duration": 628,
+   "id": "SHCPj68Hgpc",
+   "chars": 14257
+  },
+  {
+   "title": "Minecraft How To Make A Portal To The Twilight Forest - Portal To The Twilight Forest!!!",
+   "channel": "SmoothMarky",
+   "views": 756722,
+   "duration": 407,
+   "id": "bUyr3xp-_R4",
+   "chars": 6135
+  }
+ ],
+ "items": {
+  "twilightforest:trophy": {
+   "mentions": 8,
+   "videos": 1,
+   "first_at": 0.243,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "twilightforest:shield": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.292,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "twilightforest:ice_bomb": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.7077,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "twilightforest:zombie_scepter": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.319,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "twilightforest:naga_scale": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6082,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "twilightforest:dark_wood": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5167,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "twilightforest:fortification_scepter": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3623,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "twilightforest:aurora_block": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.783,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "twilightforest:maze_map": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4025,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 1
+  }
+ },
+ "human_notes": {
+  "entry": [
+   "Portal recipe, corroborated by THREE videos (9T_CwlABpIY, SHCPj68Hgpc, bUyr3xp-_R4): dig a 2x2 hole in grass/dirt, ring it with flowers, saplings or mushrooms, fill the hole with water, then THROW a minecraft:diamond into the pool. Lightning strikes and the portal forms. 9T_CwlABpIY: 'Start by digging a hole 2x2 with grass, soil... Then fill the water with flowers or mushrooms. Finally, put a diamond in the pool.'",
+   "The diamond must be THROWN in, not carried. SHCPj68Hgpc tries walking in holding it: 'Should I just jump inside with that freaking diamond? No, that did not work. Should I throw it inside? Holy shit! Yes, that was it!'",
+   "Stand clear - the portal forms with a lightning strike that can hurt you.",
+   "The generator MUST NOT open this questline on twilightforest:canopy_sapling. A canopy sapling has nothing to do with the portal. Note twilightforest:twilight_portal_miniature_structure exists in the jar but is a decorative miniature, NOT the portal."
+  ],
+  "boss_order": [
+   "THE LADDER IS A HARD LOCK CHAIN. 9T_CwlABpIY: 'you will find many new areas that you have to finish in a certain order... if you try to visit these areas and dungeons in the [wrong order], barriers or nefast effects will prevent you from doing it.'",
+   "1. NAGA (twilightforest:naga) in the Naga Courtyard - 'the first real boss'. Drops twilightforest:naga_trophy and twilightforest:naga_scale (which make twilightforest:naga_chestplate and twilightforest:naga_leggings). Defeating it drops the force field on the Lich Tower.",
+   "2. LICH (twilightforest:lich) at the top of the Lich Tower - THREE phases: shields reflected back with your own projectiles, then a summoning phase, then melee. GATED: the tower's force field only falls 'once you have defeated the Naga and obtained a trophy'. Drops twilightforest:lich_trophy and one scepter of twilightforest:zombie_scepter, twilightforest:twilight_scepter, twilightforest:fortification_scepter or twilightforest:lifedrain_scepter. Unlocks the Swamp, the Dark Forest and the Snowy Forest.",
+   "3. MINOSHROOM (twilightforest:minoshroom) at the bottom of the Labyrinth under the Swamp. Drops twilightforest:meef_stroganoff and twilightforest:diamond_minotaur_axe. Unlocks the Fire Swamp.",
+   "4. HYDRA (twilightforest:hydra) in its lair in the Fire Swamp - three heads, each destroyed head is replaced by two more; attack the open mouth. Drops twilightforest:hydra_trophy, twilightforest:hydra_chop and twilightforest:fiery_blood. This is 'the first step to unlock the Highlands'.",
+   "5. KNIGHT PHANTOM (twilightforest:knight_phantom) in the Goblin Knight Stronghold in the Dark Forest - six floating armours, only one holds the real body. Drops phantom armour (twilightforest:phantom_helmet, twilightforest:phantom_chestplate) and twilightforest:knightmetal_ingot gear.",
+   "6. UR-GHAST (twilightforest:ur_ghast) at the top of the Dark Tower - use the tower's ghast traps, charged by ghastling kills and fired with a redstone signal, for massive damage. Drops twilightforest:ur_ghast_trophy and twilightforest:carminite. This is 'the second step to unlock the Highlands'.",
+   "7. ALPHA YETI (twilightforest:alpha_yeti) in the Yeti lair in the Snowy Forest. EXPLICIT: 'You have to defeat the Ur-Ghast before fighting the Alpha Yeti.' Immune to arrows - melee only. Drops twilightforest:arctic_fur and twilightforest:ice_bomb. Unlocks the Glacier.",
+   "8. SNOW QUEEN (twilightforest:snow_queen) atop the Aurora Palace in the Glacier - rides an ice cloud that shields her; summons ice crystals. Drops twilightforest:snow_queen_trophy and twilightforest:triple_bow. Completes the path to the Highlands.",
+   "9. ENDGAME after the Highlands open: grow twilightforest:magic_beans into a beanstalk to reach the Highlands, kill giant miners for a twilightforest:giant_pickaxe, use it to break into the Troll Caves, obtain twilightforest:lamp_of_cinders, and burn the twilightforest:thorn_rose barrier around the Final Castle. The guide states the Final Castle is UNFINISHED content: 'The final castle is always finished [unfinished]... at a given moment you will have to get colored keys.' Do NOT build quests past this point."
+  ],
+  "order": [
+   "FIRST on arrival, before any boss: get iron and make armour and tools. 9T_CwlABpIY: 'The first thing to do is to get you iron to make you armor and tools.' The dimension is shallow so mining is quick.",
+   "While mining you find twilightforest:liveroot in the stone. Combine liveroot with iron and gold to get twilightforest:ironwood_ingot - 'this is how you get your first material'.",
+   "SECOND: make twilightforest:magic_map (from twilightforest:magic_map_focus, which needs glowstone dust) to navigate. Make twilightforest:maze_map from twilightforest:maze_map_focus found in labyrinth chests before attempting the Labyrinth.",
+   "There is no day/night cycle and hostile mobs do not spawn in the open, so the overworld-style 'survive the first night' framing is wrong for this dimension."
+  ],
+  "gates": [
+   "Lich Tower: a force field blocks it until the Naga is dead and its trophy taken.",
+   "Swamp/Labyrinth: entering before killing the Lich wraps you in a dark mist inflicting Hunger, and you cannot explore.",
+   "Fire Swamp: entering before killing the Minoshroom sets you on fire ('you will burn').",
+   "Dark Forest: entering before killing BOTH the Lich and the Hydra blinds you. A night-vision potion is the stated workaround.",
+   "Goblin Knight Stronghold: has several false entrances; the real one is found by placing a boss trophy on a twilightforest:trophy_pedestal in front of it. The trophy can be taken back afterwards.",
+   "Snowy Forest: entering before killing the Lich and the Ur-Ghast freezes you.",
+   "Glacier: entering before killing the Alpha Yeti freezes you.",
+   "Alpha Yeti is immune to arrow damage - 'don't even try'.",
+   "NOT GATED, safe to do at any time: the hedge maze, the Hollow Hills, the Quest Ram (twilightforest:quest_ram), the mushroom castles and the leaf dungeons."
+  ],
+  "traps": [
+   "Portals can generate inside a high-tier locked area, dropping a fresh player straight into danger: 'Be careful, portals can sometimes be formed in one of these areas, so you will be in danger.'",
+   "Do not try to arrow the Alpha Yeti; it is immune.",
+   "The Final Castle is unfinished content behind locked colour-coded doors - a questline should stop at the Snow Queen / Highlands, not promise a final boss.",
+   "Labyrinth chests are described as risky to open on the way in; make the maze map first."
+  ],
+  "signature": [
+   "The trophies ARE the progression tokens, not just decoration: twilightforest:naga_trophy, twilightforest:lich_trophy, twilightforest:minoshroom_trophy, twilightforest:hydra_trophy, twilightforest:knight_phantom_trophy, twilightforest:ur_ghast_trophy, twilightforest:alpha_yeti_trophy, twilightforest:snow_queen_trophy - and twilightforest:trophy_pedestal is what makes one mechanically load-bearing.",
+   "twilightforest:ironwood_ingot -> twilightforest:steeleaf_ingot -> twilightforest:knightmetal_ingot -> twilightforest:fiery_ingot is the armour material ladder that parallels the boss ladder.",
+   "twilightforest:magic_map and twilightforest:maze_map - navigation is a real mechanic here, not a nicety.",
+   "twilightforest:lamp_of_cinders and twilightforest:giant_pickaxe - the two endgame keys.",
+   "twilightforest:liveroot - the very first mod-specific material a player touches."
+  ]
+ }
+}

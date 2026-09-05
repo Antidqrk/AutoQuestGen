@@ -1,0 +1,221 @@
+{
+ "mod": "modulargolems",
+ "verified_against": "modulargolems-2.7.3.jar",
+ "item_count_in_jar": 219,
+ "chain": [
+  {
+   "id": "modulargolems:metal_golem_template",
+   "title": "Metal Golem Template",
+   "desc": "Clay Balls, Copper Ingots and a Stick. This blank is the root of the entire mod: every golem part, every wand and most of the weapons are cut or built from it."
+  },
+  {
+   "id": "modulargolems:metal_golem_body",
+   "title": "Metal Golem Body",
+   "desc": "Put the Template through a Stonecutter and pick the part you want - body, arm or legs. The blank part is then taken to an anvil and hammered with metal ingots, and whichever metal you use decides that part's stats."
+  },
+  {
+   "id": "modulargolems:metal_golem_holder",
+   "title": "Metal Golem",
+   "desc": "One body, one arm and one pair of legs combined in the crafting grid. You can mix materials freely, and the guide recommends a cheap body with expensive limbs because repairs are paid in the body's metal."
+  },
+  {
+   "id": "modulargolems:summon_wand",
+   "title": "Summon Wand",
+   "desc": "A Dispenser and the Template on a stick. Right-click a block with a golem holder to place it, or use the wand to place several at once."
+  },
+  {
+   "id": "modulargolems:retrieval_wand",
+   "title": "Retrieval Wand",
+   "desc": "An Ender Pearl and the Template. It picks a placed golem back up into item form without walking over and empty-hand-clicking it."
+  },
+  {
+   "id": "modulargolems:iron_golem_sword",
+   "title": "Iron Golem Sword",
+   "desc": "Iron and the Template. Golem weapons are oversized versions that only a golem can hold; the golem's damage comes from what you put in its hand."
+  },
+  {
+   "id": "modulargolems:empty_upgrade",
+   "title": "Empty Upgrade",
+   "desc": "Amethyst, Clay and Iron. Every upgrade in the mod is this blank plus one distinctive ingredient, and golems have a limited number of upgrade slots."
+  },
+  {
+   "id": "modulargolems:diamond",
+   "title": "Diamond Upgrade",
+   "desc": "An Empty Upgrade with a Diamond. The plain stat upgrades - diamond, emerald and quartz - are the first ones worth slotting."
+  },
+  {
+   "id": "modulargolems:speed",
+   "title": "Speed Upgrade",
+   "desc": "An Empty Upgrade shapelessly combined with a Rabbit's Foot. A slow golem is a useless golem."
+  },
+  {
+   "id": "modulargolems:command_wand",
+   "title": "Command Wand",
+   "desc": "Gold and the Template. It sets a golem's patrol point, guard post and behaviour, which is what turns a summoned statue into something that actually works for you."
+  },
+  {
+   "id": "modulargolems:white_config_card",
+   "title": "Config Card",
+   "desc": "Paper and the Template. A card stores a golem's whole configuration so you can stamp the same orders onto a squad, and the sixteen colours let you keep several presets apart."
+  },
+  {
+   "id": "modulargolems:humanoid_golem_holder",
+   "title": "Humanoid Golem",
+   "desc": "Cut a humanoid body, arms and legs from the Template and assemble them. Humanoids are faster and can use two hands, at the cost of the metal golem's bulk."
+  },
+  {
+   "id": "modulargolems:dog_golem_holder",
+   "title": "Dog Golem",
+   "desc": "A dog body and dog legs. The smallest chassis - quick, cheap, and the only one that takes dog armour instead of weapons."
+  },
+  {
+   "id": "modulargolems:iron_dog_golem_armor",
+   "title": "Dog Golem Armour",
+   "desc": "Iron, Leather and the Template. Gold, diamond and netherite versions follow the usual ladder."
+  },
+  {
+   "id": "modulargolems:rider_wand",
+   "title": "Rider Wand",
+   "desc": "A White Banner and the Template. With a Mount Upgrade slotted, this is what lets you ride your own golem."
+  },
+  {
+   "id": "modulargolems:squad_wand",
+   "title": "Squad Wand",
+   "desc": "The other Banner wand. It groups golems so orders land on the whole squad at once instead of one statue at a time."
+  },
+  {
+   "id": "modulargolems:patrol_path_recorder",
+   "title": "Patrol Path Recorder",
+   "desc": "A Map, an Ink Sac and the Template. Walk a route, record it, and hand the path to a golem to patrol."
+  },
+  {
+   "id": "modulargolems:iron_mecha_bow",
+   "title": "Iron Mecha Bow",
+   "desc": "Chains, Iron and the Template. A golem-scale bow turns a melee bodyguard into a ranged one."
+  },
+  {
+   "id": "modulargolems:flame_thrower",
+   "title": "Flame Thrower",
+   "desc": "A Blast Furnace, Blaze Rods, Iron and the Template. One of the special golem arms that replaces a weapon with a weapon system."
+  },
+  {
+   "id": "modulargolems:diamond_expansion_template",
+   "title": "Diamond Expansion Template",
+   "desc": "A Diamond, an Empty Upgrade and a Netherite Upgrade Smithing Template. Applied to a golem holder with an ingot it adds another upgrade slot, which is the real progression axis of the mod."
+  },
+  {
+   "id": "modulargolems:diamond_golem_sword",
+   "title": "Diamond Golem Sword",
+   "desc": "Diamonds and the Template. The middle rung of golem weaponry and the parent of the netherite versions."
+  },
+  {
+   "id": "modulargolems:diamond_golem_axe",
+   "title": "Diamond Golem Axe",
+   "desc": "The axe half of the diamond tier, and specifically the item the Slicing Axe is smithed from."
+  },
+  {
+   "id": "modulargolems:golem_slicing_axe",
+   "title": "Golem Slicing Axe",
+   "desc": "Smithing: a Diamond Golem Axe, a Netherite Upgrade Smithing Template and a Stonecutter. Give it to a metal golem and its kills start dropping golem parts - Iron Golems yield iron parts, the Warden yields sculk parts, and it strips other players' golems for their upgrades."
+  },
+  {
+   "id": "modulargolems:golem_workbench",
+   "title": "Golem Workbench",
+   "desc": "An Anvil, a Smithing Table, Amethyst, Echo Shards, Redstone and a Golem Slicing Axe. Note the ordering that implies: the workbench is a mid-game block, not a starting one, because it eats a netherite-tier smithing product."
+  },
+  {
+   "id": "modulargolems:netherite_expansion_template",
+   "title": "Netherite Expansion Template",
+   "desc": "A Nether Star, Netherite, an Empty Upgrade and a Netherite Upgrade Smithing Template. The second and last slot expansion, and the reason to fight a Wither."
+  },
+  {
+   "id": "modulargolems:netherite_golem_sword",
+   "title": "Netherite Golem Sword",
+   "desc": "Smith the diamond sword up. The top of the vanilla-only weapon ladder."
+  },
+  {
+   "id": "modulargolems:talented",
+   "title": "Meta Upgrade: Talented",
+   "desc": "A Nether Star, a Diamond, any mob head and an Empty Upgrade. Meta upgrades change what other upgrades a golem can hold rather than its stats directly."
+  },
+  {
+   "id": "modulargolems:omnipotent_wand_command",
+   "title": "Omnipotent Wand",
+   "desc": "The Command, Summon, Retrieval and Rider wands merged with Gold and a Redstone Block. One wand with every mode, and the natural end of the tool line."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "modulargolems:empty_upgrade",
+   "members": [
+    "modulargolems:emerald",
+    "modulargolems:quartz",
+    "modulargolems:netherite",
+    "modulargolems:swim",
+    "modulargolems:float",
+    "modulargolems:pickup",
+    "modulargolems:sponge",
+    "modulargolems:fire_immune",
+    "modulargolems:player",
+    "modulargolems:mount_upgrade",
+    "modulargolems:size_upgrade",
+    "modulargolems:recycle",
+    "modulargolems:cauldron",
+    "modulargolems:thunder_immune"
+   ]
+  },
+  {
+   "hub": "modulargolems:iron_golem_sword",
+   "members": [
+    "modulargolems:iron_golem_axe",
+    "modulargolems:iron_golem_spear",
+    "modulargolems:diamond_golem_spear",
+    "modulargolems:netherite_golem_axe",
+    "modulargolems:netherite_golem_spear",
+    "modulargolems:netherite_mecha_bow",
+    "modulargolems:gold_dog_golem_armor",
+    "modulargolems:diamond_dog_golem_armor",
+    "modulargolems:netherite_dog_golem_armor",
+    "modulargolems:beacon_cannon"
+   ]
+  },
+  {
+   "hub": "modulargolems:white_config_card",
+   "members": [
+    "modulargolems:black_config_card",
+    "modulargolems:blue_config_card",
+    "modulargolems:brown_config_card",
+    "modulargolems:cyan_config_card",
+    "modulargolems:gray_config_card",
+    "modulargolems:green_config_card",
+    "modulargolems:light_blue_config_card",
+    "modulargolems:light_gray_config_card",
+    "modulargolems:lime_config_card",
+    "modulargolems:magenta_config_card",
+    "modulargolems:orange_config_card",
+    "modulargolems:pink_config_card",
+    "modulargolems:purple_config_card",
+    "modulargolems:red_config_card"
+   ]
+  },
+  {
+   "hub": "modulargolems:metal_golem_body",
+   "members": [
+    "modulargolems:metal_golem_arm",
+    "modulargolems:metal_golem_legs",
+    "modulargolems:humanoid_golem_body",
+    "modulargolems:humanoid_golem_arms",
+    "modulargolems:humanoid_golem_legs",
+    "modulargolems:dog_golem_body",
+    "modulargolems:dog_golem_legs",
+    "modulargolems:target_filter_default",
+    "modulargolems:target_filter_type",
+    "modulargolems:target_filter_uuid",
+    "modulargolems:target_filter_name",
+    "modulargolems:bell",
+    "modulargolems:ender_sight"
+   ]
+  }
+ ],
+ "notes": "Verified twice against modulargolems-2.7.3.jar (mods.toml javafml, minecraft [1.20,1.21), loaderVersion [47,) = Forge 1.20.1, no neoforge.mods.toml). Pass 1: 361 item models intersected with item./block. lang keys = 219 ids (item_count_in_jar). Pass 2 rebuilt 638 ids from blockstates, every recipe json in EVERY namespace, loot tables and tags. SCANNER TRAP FOUND AND FIXED HERE - WORTH REUSING: Modular Golems does not keep all of its recipes under data/modulargolems/recipes. Three of them live under data/minecraft/recipes, and one of those three is data/minecraft/recipes/golem_slicing_axe.json. A per-mod-namespace recipe scan therefore reports modulargolems:golem_slicing_axe as having no recipe, and since the Golem Slicing Axe is a required ingredient of data/modulargolems/recipes/golem_workbench.json, the same scan then reports the mod's central workbench as uncraftable. Both are false. The axe is a minecraft:smithing_transform of a Diamond Golem Axe with a Netherite Upgrade Smithing Template and a Stonecutter. Always sweep data/*/recipes, not data/<modid>/recipes. THE JAR IS MOSTLY COMPAT CONTENT AND MOST OF IT IS UNREACHABLE ALONE. Of 784 recipes, 400 are create:sequenced_assembly, 80 are tconstruct:casting_basin, 47 are create:crushing, 19 are tconstruct:melting and 16 are tconstruct:casting_table - every one of these is an alternative production route that only exists if Create or Tinkers' Construct is installed, and the incomplete_ parts (incomplete_metal_golem_body, _arm, _legs and the humanoid and dog equivalents) are Create sequenced-assembly intermediates with no standalone recipe. The vanilla route to the same parts is minecraft:stonecutting from the Metal Golem Template, which is what this chain uses. Every id emitted here was additionally checked to have at least one recipe whose TYPE is in the minecraft or modulargolems namespace AND whose ingredients contain no foreign-namespace item - checking ingredients alone is not enough, because modulargolems:netherite and modulargolems:thunder_immune each have a Tinkers casting_table recipe listed before their plain crafting_shaped one. DROPPED as unreachable without other mods: everything keyed to twilightforest (ironwood, steeleaf, knightmetal, naga, carminite and their armour and weapons), cataclysm (wroughtnaut, monstrosity, ignis, harbinger, maledictus, scylla, ancient_remnant, azure_cube, void_cube), l2hostility (hostility_core and the seven hostility upgrades, hostile_wand), l2complements (teleport, attack_high, speed_high, sonic_cannon), goety (soul_collection), alexscaves (magnetic_alloy, candy_mixture, nuclear_construct, magnetic_construct), legendary_monsters (cloud_cube, storm_construct), create (push/Extendo) and goety_revelation (stellar_apocalypse). ALSO DROPPED, no recipe of any kind in the jar: modulargolems:golem_facade (the book's d2 entry says it is made on an ANVIL from an empty upgrade plus an ingot of the desired material, which is a code-side anvil handler with no datapack representation), and modulargolems:omnipotent_wand_retrieval, _rider, _squad and _summon - only omnipotent_wand_command has a recipe, and the other four are the same wand in a different mode. NON-RECIPE MECHANIC, stated in the guide entry golems/a1_craft and reflected in the chain: a stonecut part is blank until you hammer metal ingots onto it at an anvil, and the metal you choose sets that part's stats. That anvil step has no datapack recipe and no item of its own, so it is described inside the Metal Golem Body step rather than given a quest. ENTITIES: four entity lang keys, all of them the player's own summoned golems. No kill step is emitted - the only combat the mod defines is golems killing things for you, captured instead by the Slicing Axe step and its twelve modulargolems:slicing loot modifiers. CONSENSUS CONFLICT (recipe graph preferred): moddb.json's 26 entries put modulargolems:omnipotent_wand_command first at pos 0.0, then command_wand at 0.025, rider_wand at 0.050 and metal_golem_template at 0.075. The Omnipotent Wand's recipe consumes the Command, Summon, Retrieval and Rider wands together, and all four of those are crafted from the Metal Golem Template, so the consensus has the mod's capstone tool three steps ahead of its own components and four ahead of the item they are all made from. The same list ranks netherite_expansion_template at 0.200 - a Nether Star craft - ahead of modulargolems:diamond at 0.225, the plain diamond stat upgrade, and ahead of humanoid_golem_body at 0.250. The graph order is used throughout. Variant families kept in wheels: the upgrade family off the Empty Upgrade, the golem weapon and dog-armour ladder, the sixteen config cards, and the part and target-filter family."
+}

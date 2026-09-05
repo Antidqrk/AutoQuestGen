@@ -1,0 +1,36 @@
+name: Bug report
+description: Something went wrong while scanning a pack or building a book.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: input
+    id: pack
+    attributes:
+      label: Modpack
+      description: Pack name and roughly how many jars are in mods/.
+      placeholder: "All the Mods 9, ~380 jars"
+    validations:
+      required: true
+  - type: dropdown
+    id: how
+    attributes:
+      label: How are you running it
+      options:
+        - AutoQuestGen.exe from Releases
+        - python autoquestgen.py from source
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: >
+        Paste the relevant part of autoquestgen.log (next to the exe, or in
+        %LOCALAPPDATA%\AutoQuestGen). Remove your API key if the AI path was used.
+      render: text

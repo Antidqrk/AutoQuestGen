@@ -1,0 +1,31 @@
+{
+ "mod": "chipped",
+ "ids_in_jar": 6967,
+ "installed_in_pack": true,
+ "videos": [],
+ "items": {},
+ "no_video_evidence": "transcription did not complete for this mod; human_notes below are jar-derived only",
+ "human_notes": {
+  "order": [
+   "[jar] chipped has no progression whatsoever - it is one mechanic repeated seven times. You craft a workbench, put a vanilla block in it, and pick from hundreds of visual variants of that block.",
+   "[jar] the seven workbenches ARE the mod, and they are the only sensible quest targets: chipped:botanist_workbench, chipped:carpenters_table, chipped:loom_table, chipped:mason_table, chipped:alchemy_bench, chipped:glassblower, chipped:tinkering_table."
+  ],
+  "gates": [
+   "[jar] None. Each bench is cheap and independent; there is no order between them."
+  ],
+  "structures": [],
+  "traps": [
+   "[jar] chipped registers 6967 ids, every one a cosmetic variant with a unique display name. A generator that treats them as items will bury a questbook in 'Acacia Planks Mosaic'. Whitelist the seven workbenches and exclude the rest of the namespace.",
+   "NOT VERIFIED BY VIDEO: the first chipped video failed to transcribe (returned 0 characters during a transient full-disk moment on the machine)."
+  ],
+  "signature": [
+   "chipped:botanist_workbench",
+   "chipped:carpenters_table",
+   "chipped:loom_table",
+   "chipped:mason_table",
+   "chipped:alchemy_bench",
+   "chipped:glassblower",
+   "chipped:tinkering_table"
+  ]
+ }
+}

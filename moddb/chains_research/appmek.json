@@ -1,0 +1,71 @@
+{
+ "mod": "appmek",
+ "verified_against": "Applied-Mekanistics-1.4.3.jar",
+ "item_count_in_jar": 13,
+ "parent_mod": "ae2",
+ "chain": [
+  {
+   "id": "appmek:chemical_cell_housing",
+   "title": "A Housing for Gases",
+   "desc": "Craft from Quartz Glass, redstone dust and osmium ingots; it is the shell every ME chemical cell is built around and the whole bridge between AE2 storage and Mekanism chemistry."
+  },
+  {
+   "id": "appmek:chemical_storage_cell_1k",
+   "title": "First Gas on the Network",
+   "desc": "Combine the chemical cell housing with an AE2 1k Storage Component; your ME network can now hold gases, slurries, infusion types and pigments as first-class stored types."
+  },
+  {
+   "id": "appmek:chemical_storage_cell_4k",
+   "title": "Four Times the Vapour",
+   "desc": "Combine the housing with a 4k Storage Component; enough headroom to buffer the hydrogen and oxygen an Electrolytic Separator throws off."
+  },
+  {
+   "id": "appmek:chemical_storage_cell_16k",
+   "title": "Sixteen Thousand",
+   "desc": "Combine the housing with a 16k Storage Component; the working tier for a full five-times ore processing chain with all its intermediate slurries."
+  },
+  {
+   "id": "appmek:chemical_storage_cell_64k",
+   "title": "Acid by the Tank",
+   "desc": "Combine the housing with a 64k Storage Component; deep enough to stockpile sulfuric and hydrofluoric acid between production batches."
+  },
+  {
+   "id": "appmek:chemical_storage_cell_256k",
+   "title": "Top of the Chemical Ladder",
+   "desc": "Combine the housing with a 256k Storage Component for the largest chemical cell the addon offers."
+  },
+  {
+   "id": "appmek:chemical_p2p_tunnel",
+   "title": "Gas Down the Channel",
+   "desc": "Attune a plain ME P2P Tunnel with a Mekanism chemical item; it hauls gas across your network on the cable backbone instead of on a separate run of pressurized tubes."
+  },
+  {
+   "id": "appmek:portable_chemical_storage_cell_1k",
+   "title": "Gas in a Backpack",
+   "desc": "Craft shapelessly from an ME Chest, a 1k Storage Component, an Energy Cell and a chemical cell housing; a self-powered chemical cell you can carry."
+  },
+  {
+   "id": "appmek:portable_chemical_storage_cell_256k",
+   "title": "The Field Tank",
+   "desc": "Craft the portable cell around a 256k Storage Component; carry a reactor's worth of gas out to a build site and back."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "appmek:chemical_cell_housing",
+   "members": [
+    "appmek:chemical_storage_cell_1k",
+    "appmek:chemical_storage_cell_4k",
+    "appmek:chemical_storage_cell_16k",
+    "appmek:chemical_storage_cell_64k",
+    "appmek:chemical_storage_cell_256k",
+    "appmek:portable_chemical_storage_cell_1k",
+    "appmek:portable_chemical_storage_cell_4k",
+    "appmek:portable_chemical_storage_cell_16k",
+    "appmek:portable_chemical_storage_cell_64k",
+    "appmek:portable_chemical_storage_cell_256k"
+   ]
+  }
+ ],
+ "notes": "The official Mekanism bridge for AE2. It adds no machines at all, only a new ME storage type, so the honest chain is one five-step tier ladder plus its portable mirror and the P2P tunnel - 9 steps, not padded to 20. ASSUMES FROM PARENT (ae2): Quartz Glass, cell_component_1k through 256k, ME Chest, Energy Cell, ME P2P Tunnel. ALSO ASSUMES MEKANISM: osmium ingots, and any chemical worth storing (hydrogen, oxygen, Ethylene, sulfuric acid, the ore slurry chain). VERIFICATION: strict model/lang intersection, 13/13 matched, no widening needed. DROPPED: appmek:creative_chemical_cell (creative-only, no recipe). appmek:chemical_p2p_tunnel is KEPT despite having no recipe file - AE2 P2P tunnels are obtained by attuning a base tunnel with an item listed in data/appmek/tags/items/p2p_attunements/chemical_p2p_tunnel.json, which is a normal survival action, not a creative grant."
+}

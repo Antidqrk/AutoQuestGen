@@ -1,0 +1,119 @@
+{
+ "mod": "irons_spellbooks",
+ "ids_in_jar": 295,
+ "videos": [
+  {
+   "id": "9cS516QidIQ",
+   "title": "Iron's Spells and Spellbooks Mod Getting Started Guide Minecraft 1.20.1",
+   "channel": "Jangro",
+   "views": 89362,
+   "duration": 692,
+   "chars": 5515
+  }
+ ],
+ "items": {
+  "irons_spellbooks:spell_book": {
+   "mentions": 8,
+   "videos": 1,
+   "first_at": 0.0148,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 3,
+   "late_cue": 0
+  },
+  "irons_spellbooks:scroll": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.501,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "irons_spellbooks:arcane_essence": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2714,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "irons_spellbooks:inscription_table": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3174,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "irons_spellbooks:ice_rune": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6285,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "_source_honesty": "The one guide transcribed for this mod (Jangro, 'Getting Started Guide Minecraft 1.20.1') came back as a dubbed translation and yielded only ~5.5k usable characters and 5 matched ids - too thin to base ordering on. The order and gates below are therefore taken from irons_spellbooks-1.20.1-3.16.3.jar's 305 recipes and its own lang file, with the guide used only for the one thing it did say clearly: 'we will start with the books of Iron's Spells and Spell Books.'",
+  "order": [
+   "irons_spellbooks:inscription_table is first and it is deliberately trivial: a book, wooden slabs and wooden fences. Nothing about learning spells works without it, and it is craftable before the player has any metal.",
+   "A spell book is the other day-one item. Guides open on the books, and the jar's cheapest are irons_spellbooks:wimpy_spell_book and irons_spellbooks:iron_spell_book (chain + leather + paper) / irons_spellbooks:copper_spell_book (copper + string + paper).",
+   "irons_spellbooks:arcane_essence is the first real resource and the bottleneck for everything after the copper/iron tier. From it come irons_spellbooks:magic_cloth (essence + wool) and irons_spellbooks:arcane_ingot.",
+   "Cheap mage armour arrives immediately after essence and should come before better books: the whole irons_spellbooks:wandering_magician_helmet / _chestplate / _leggings / _boots set is just leather armour plus one arcane essence, shapeless.",
+   "irons_spellbooks:arcane_anvil (anvil + diamond + polished deepslate + amethyst block) is the second station and where gear actually gets improved.",
+   "Book ladder, in the jar's own ingredient order: irons_spellbooks:copper_spell_book / irons_spellbooks:iron_spell_book -> irons_spellbooks:gold_spell_book (gold + arcane essence + irons_spellbooks:hogskin) -> irons_spellbooks:diamond_spell_book (diamond + enchanted book + magic cloth + hogskin) -> irons_spellbooks:netherite_spell_book (netherite + irons_spellbooks:ruined_book + magic cloth + irons_spellbooks:blood_vial) -> irons_spellbooks:legendary_spell_book.",
+   "Mithril is the mid-game metal gate: irons_spellbooks:mithril_ore / irons_spellbooks:deepslate_mithril_ore -> irons_spellbooks:raw_mithril -> irons_spellbooks:mithril_ingot. irons_spellbooks:upgrade_orb needs arcane ingot + irons_spellbooks:cinder_essence + mithril.",
+   "Then the school-specific upgrade orbs and runes, which is where a player commits to a build: irons_spellbooks:fire_upgrade_orb, irons_spellbooks:ice_upgrade_orb, irons_spellbooks:blood_upgrade_orb, irons_spellbooks:ender_upgrade_orb, irons_spellbooks:holy_upgrade_orb, irons_spellbooks:lightning_upgrade_orb, irons_spellbooks:nature_upgrade_orb, irons_spellbooks:evocation_upgrade_orb, plus irons_spellbooks:mana_upgrade_orb, irons_spellbooks:cooldown_upgrade_orb, irons_spellbooks:protection_upgrade_orb.",
+   "Endgame is dungeon/boss gear rather than crafting: irons_spellbooks:dead_king_phylactery, irons_spellbooks:staff_of_the_nines, irons_spellbooks:netherite_mage_chestplate and the named weapons."
+  ],
+  "gates": [
+   "irons_spellbooks:inscription_table gates ALL spell learning. Scrolls are inscribed into books there; without it a spell book is an empty prop.",
+   "Spell book TIER gates how many and how high-level spells you can hold, so the book ladder is the real progression axis - not the spells themselves.",
+   "Spell slots are separately gated by irons_spellbooks:lesser_spell_slot_upgrade (magic cloth + hogskin) applied at the arcane anvil.",
+   "Ink rarity gates which spells can be inscribed: irons_spellbooks:common_ink -> irons_spellbooks:uncommon_ink -> irons_spellbooks:rare_ink -> irons_spellbooks:epic_ink -> irons_spellbooks:legendary_ink.",
+   "irons_spellbooks:arcane_essence is the early hard gate - gold books, magic cloth, arcane ingots and the entire wandering magician set all consume it.",
+   "irons_spellbooks:mithril_ingot gates every upgrade orb, which in turn gates end-tier gear. Mithril is ore-gated, so this is a mining gate on a magic mod.",
+   "Runes are gated on a matching focus: irons_spellbooks:blank_rune + a school focus -> irons_spellbooks:fire_rune / irons_spellbooks:ice_rune / irons_spellbooks:blood_rune / irons_spellbooks:ender_rune / irons_spellbooks:holy_rune / irons_spellbooks:lightning_rune / irons_spellbooks:nature_rune / irons_spellbooks:evocation_rune / irons_spellbooks:protection_rune.",
+   "irons_spellbooks:hogskin is a Nether mob drop and it appears in the gold book, the diamond book and the spell slot upgrade - a quiet Nether gate very early in the ladder."
+  ],
+  "mechanics": [
+   "TEN schools, taken from the jar's own lang file rather than any video: Blood, Eldritch, Ender, Evocation, Fire, Holy, Ice, Lightning, Nature, Void. Each has a scroll (irons_spellbooks:scroll_fire, irons_spellbooks:scroll_blood, irons_spellbooks:scroll_eldritch, irons_spellbooks:scroll_ender, irons_spellbooks:scroll_evocation, irons_spellbooks:scroll_holy, irons_spellbooks:scroll_ice, irons_spellbooks:scroll_lightning, irons_spellbooks:scroll_nature, irons_spellbooks:scroll_forge), an affinity ring (irons_spellbooks:affinity_ring_fire and friends) and an upgrade orb.",
+   "Scroll -> book is the core loop. irons_spellbooks:scroll items are found/bought, then inscribed at the inscription table into a spell book. irons_spellbooks:shriving_stone (raw iron + amethyst) wipes a book so the player can re-spec.",
+   "Mana, cast time and cooldown are the three tuning stats, exposed as gear: irons_spellbooks:mana_ring, irons_spellbooks:cast_time_ring, irons_spellbooks:cooldown_ring, irons_spellbooks:concentration_amulet.",
+   "Armour sets are school-flavoured rather than strictly tiered - irons_spellbooks:pyromancer_chestplate, irons_spellbooks:cryomancer_chestplate, irons_spellbooks:electromancer_chestplate, irons_spellbooks:shadowwalker_chestplate, irons_spellbooks:plagued_chestplate, irons_spellbooks:priest_chestplate, irons_spellbooks:cultist_chestplate, irons_spellbooks:archevoker_chestplate (each with matching helmet/leggings/boots), plus irons_spellbooks:wizard_hat. Each buffs its school.",
+   "38 smithing_transform recipes carry the late armour upgrades, so a smithing table matters more than it looks.",
+   "irons_spellbooks:alchemist_cauldron is a whole side system (47 of the 305 recipes are cauldron brew/fill/empty) producing irons_spellbooks:evasion_elixir, irons_spellbooks:oakskin_elixir, irons_spellbooks:invisibility_elixir and their greater variants.",
+   "The mod ships Create compat: 15 create:filling and 15 create:emptying recipes exist in the jar, which matters in a Create-centred pack."
+  ],
+  "traps": [
+   "irons_spellbooks:dev_staff is a developer/creative item - never a quest target.",
+   "Only irons_spellbooks:wayward_compass is a real item. The 32 numbered compass frames live in a compass/ SUBFOLDER of the model directory, so they are not item ids at all - the older jar_ids() emitted them and they would have become broken quest tasks.",
+   "Do not treat the ten schools as a sequence to complete. They are alternative builds - one school's ring, orb, rune and armour set is a build, and doing all ten is not how the mod is played.",
+   "Spell books are consumed/replaced up the ladder rather than collected."
+  ],
+  "signature": [
+   "irons_spellbooks:inscription_table",
+   "irons_spellbooks:arcane_anvil",
+   "irons_spellbooks:arcane_essence",
+   "irons_spellbooks:magic_cloth",
+   "irons_spellbooks:scroll",
+   "irons_spellbooks:iron_spell_book",
+   "irons_spellbooks:diamond_spell_book",
+   "irons_spellbooks:netherite_spell_book",
+   "irons_spellbooks:legendary_spell_book",
+   "irons_spellbooks:upgrade_orb",
+   "irons_spellbooks:mithril_ingot",
+   "irons_spellbooks:blank_rune",
+   "irons_spellbooks:wandering_magician_chestplate",
+   "irons_spellbooks:alchemist_cauldron",
+   "irons_spellbooks:staff_of_the_nines",
+   "irons_spellbooks:dead_king_phylactery"
+  ],
+  "pack_status": "NOT INSTALLED in CREATE FEMBY. Analysed against irons_spellbooks-1.20.1-3.16.3.jar fetched to scratch from Modrinth."
+ }
+}

@@ -1,0 +1,226 @@
+{
+ "mod": "hexerei",
+ "verified_against": "hexerei-0.4.2.3.jar",
+ "item_count_in_jar": 268,
+ "chain": [
+  {
+   "id": "hexerei:sage_seed",
+   "title": "Sage Seeds",
+   "desc": "Break grass and tall grass; a global loot modifier scatters sage seeds among the wheat seeds. The first Hexerei item anyone finds."
+  },
+  {
+   "id": "hexerei:sage",
+   "title": "Sage",
+   "desc": "Plant the seeds on farmland. Sage is the herb the whole mod is built on, from the book's cover to the smoke that clears curses."
+  },
+  {
+   "id": "hexerei:animal_fat",
+   "title": "Animal Fat",
+   "desc": "Cows, pigs and sheep drop fat through loot modifiers. Melted in the cauldron it becomes tallow, and tallow is what candles and the Book of Shadows are made with."
+  },
+  {
+   "id": "hexerei:book_of_shadows",
+   "title": "Book of Shadows",
+   "desc": "A Book, Leather, Sage Seeds and anything meltable into tallow. It is the mod's guide, and it can be dyed and placed on an Altar."
+  },
+  {
+   "id": "hexerei:mahogany_log",
+   "title": "Mahogany",
+   "desc": "Mahogany trees grow in dark, damp biomes alongside Willow and Witch Hazel. Mahogany is the witch's timber and every device below is framed in it."
+  },
+  {
+   "id": "hexerei:book_of_shadows_altar",
+   "title": "Altar",
+   "desc": "Mahogany Planks and a Mahogany Slab. Rest the Book of Shadows on it to read hands-free and to mark the corner of your workroom."
+  },
+  {
+   "id": "hexerei:mixing_cauldron",
+   "title": "Mixing Cauldron",
+   "desc": "A vanilla Cauldron, an Iron Ingot and a Torch. This is the mod's crafting core: fill it with water, blood or tallow, drop the ingredients in, and stir. Almost everything below is a cauldron recipe."
+  },
+  {
+   "id": "hexerei:herb_drying_rack",
+   "title": "Drying Rack",
+   "desc": "Sticks, String and any wooden slabs. Hang fresh herbs on it and they dry over time into the potent form the recipes want."
+  },
+  {
+   "id": "hexerei:dried_sage",
+   "title": "Dried Sage",
+   "desc": "Sage left on the Drying Rack. Dried herbs are the currency of the cauldron."
+  },
+  {
+   "id": "hexerei:dried_sage_bundle",
+   "title": "Dried Sage Bundle",
+   "desc": "Tie Sage with String, then dry the bundle. Lit, a sage bundle smoulders and cleanses the area around it."
+  },
+  {
+   "id": "hexerei:pestle_and_mortar",
+   "title": "Pestle and Mortar",
+   "desc": "Iron, Quartz and Stone in the cauldron. It grinds berries into dye and herbs into the blends the candles need."
+  },
+  {
+   "id": "hexerei:herb_jar",
+   "title": "Herb Jar",
+   "desc": "Sand in the cauldron. A jar that holds one herb in bulk and shows what is inside, so a wall of them is a working herb shelf."
+  },
+  {
+   "id": "hexerei:sage_burning_plate",
+   "title": "Sage Burning Plate",
+   "desc": "A single Gold Ingot in the cauldron. Set a sage bundle on it and it burns continuously, keeping the smoke going without your attention."
+  },
+  {
+   "id": "hexerei:infused_fabric",
+   "title": "Infused Fabric",
+   "desc": "Black Dye, Leather and String in the cauldron. The mod's cloth: it becomes the robes, the blocks, the carpets and the broom seat."
+  },
+  {
+   "id": "hexerei:witch_helmet",
+   "title": "Witch's Hat",
+   "desc": "Infused Fabric shaped into the pointed hat. The Robe, Boots and the rest of the set come from the same cloth."
+  },
+  {
+   "id": "hexerei:small_satchel",
+   "title": "Small Satchel",
+   "desc": "A Gold Nugget, Leather and String in the cauldron. Upgrade it into the medium and large satchels, then into the Ender Satchel."
+  },
+  {
+   "id": "hexerei:coffer",
+   "title": "Coffer",
+   "desc": "Mahogany Planks and Gold in the cauldron. A lockable strongbox, and the block the coven chests in worldgen are stocked from."
+  },
+  {
+   "id": "hexerei:candle_dipper",
+   "title": "Dipper",
+   "desc": "An Iron Ingot and an Iron Nugget in the cauldron. Fill the cauldron with tallow, hang string on the dipper, and dip repeatedly to build a candle layer by layer."
+  },
+  {
+   "id": "hexerei:blood_bottle",
+   "title": "Bottle of Blood",
+   "desc": "Bottle blood straight out of a filled Mixing Cauldron. Blood is the fuel of the darker half of the mod and every broom needs a bottle of it."
+  },
+  {
+   "id": "structure:hexerei:nature_coven",
+   "title": "Nature Coven",
+   "desc": "One of the four settlements the mod generates, alongside the Dark Coven, the Owl Post Office and the Witch Hut. Its herb store fills chests/nature_coven_herbs with Mandrake Root and every dried herb, and its crow room holds flutes and amulets."
+  },
+  {
+   "id": "hexerei:mandrake_root",
+   "title": "Mandrake Root",
+   "desc": "Pull a fully grown Mandrake Plant, or loot the herb chests of a Nature Coven. The root screams, and it is the binding agent in every broom and amulet."
+  },
+  {
+   "id": "hexerei:crow_flute",
+   "title": "Crow Flute",
+   "desc": "Mahogany Planks and any dye. Crows are tameable birds that gather, harvest and pickpocket for you; the flute selects them and assigns their orders."
+  },
+  {
+   "id": "hexerei:crow_ankh_amulet",
+   "title": "Crow Ankh Amulet",
+   "desc": "A Blank Amulet with dried Mugwort and Yellow Dock, Glow Berries and a Totem of Undying in the cauldron. Fitted to a crow it brings the bird back from death."
+  },
+  {
+   "id": "hexerei:mahogany_broom",
+   "title": "Mahogany Broom",
+   "desc": "A Mahogany Log, a Bottle of Blood, a Mandrake Root, Wheat and a Netherite Ingot in the cauldron. Brooms are ridable entities with their own fuel and upgrade slots; Willow and Witch Hazel are the cheaper gold and diamond variants."
+  },
+  {
+   "id": "hexerei:broom_brush",
+   "title": "Broom Brush",
+   "desc": "Cauldron a Wet Broom Brush from Mandrake Root, Mugwort and Yellow Dock leaves and Wheat, then dry it on the rack. The brush slot sets how fast the broom flies."
+  },
+  {
+   "id": "hexerei:broom_seat",
+   "title": "Broom Seat",
+   "desc": "An Infused Fabric Block, a Small Satchel, Leather and String. It adds a passenger seat and carries the satchel's storage into the air with you."
+  },
+  {
+   "id": "hexerei:broom_netherite_tip",
+   "title": "Broom Netherite Tip",
+   "desc": "A Selenite Shard, a Netherite Ingot and Netherite Scrap. The tip slot is the broom's durability and handling; the waterproof tip is the prismarine alternative."
+  },
+  {
+   "id": "structure:hexerei:dark_coven",
+   "title": "Dark Coven",
+   "desc": "The Nature Coven's opposite number. chests/dark_coven_basic is the only worldgen source of Animal Fat, Bottles of Blood and a ready-made Blood Sigil, and its coffer room is stocked with gold."
+  },
+  {
+   "id": "hexerei:blood_sigil",
+   "title": "Blood Sigil",
+   "desc": "Polished Blackstone and Redstone in the cauldron. Placed and fed, the sigil is the dark coven's marker and the entry point to the mod's blood work."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "hexerei:mahogany_planks",
+   "members": [
+    "hexerei:polished_mahogany_planks",
+    "hexerei:mahogany_connected",
+    "hexerei:polished_mahogany_connected",
+    "hexerei:polished_mahogany_layered",
+    "hexerei:polished_mahogany_pillar",
+    "hexerei:mahogany_window",
+    "hexerei:mahogany_window_pane",
+    "hexerei:mahogany_chest",
+    "hexerei:mahogany_drying_rack",
+    "hexerei:mahogany_broom_stand",
+    "hexerei:mahogany_courier_depot",
+    "hexerei:waxed_mahogany_connected",
+    "hexerei:waxed_mahogany_window"
+   ]
+  },
+  {
+   "hub": "hexerei:sage",
+   "members": [
+    "hexerei:belladonna_flowers",
+    "hexerei:belladonna_berries",
+    "hexerei:mandrake_flowers",
+    "hexerei:mugwort_flowers",
+    "hexerei:yellow_dock_flowers",
+    "hexerei:dried_belladonna_flowers",
+    "hexerei:dried_mandrake_flowers",
+    "hexerei:dried_mugwort_flowers",
+    "hexerei:dried_yellow_dock_flowers",
+    "hexerei:mugwort_leaves",
+    "hexerei:yellow_dock_leaves",
+    "hexerei:dried_mugwort_leaves",
+    "hexerei:dried_yellow_dock_leaves",
+    "hexerei:seed_mixture"
+   ]
+  },
+  {
+   "hub": "hexerei:small_satchel",
+   "members": [
+    "hexerei:medium_satchel",
+    "hexerei:large_satchel",
+    "hexerei:ender_satchel",
+    "hexerei:replacer_satchel",
+    "hexerei:broom_keychain",
+    "hexerei:broom_whistle",
+    "hexerei:gold_rings",
+    "hexerei:crystal_ball",
+    "hexerei:reading_glasses",
+    "hexerei:dowsing_rod",
+    "hexerei:warhammer",
+    "hexerei:moon_dust"
+   ]
+  },
+  {
+   "hub": "hexerei:willow_broom",
+   "members": [
+    "hexerei:witch_hazel_broom",
+    "hexerei:willow_broom_stand",
+    "hexerei:witch_hazel_broom_stand",
+    "hexerei:broom_waterproof_tip",
+    "hexerei:herb_enhanced_broom_brush",
+    "hexerei:wet_broom_brush",
+    "hexerei:wet_herb_enhanced_broom_brush",
+    "hexerei:moon_dust_brush",
+    "hexerei:wet_moon_dust_brush",
+    "hexerei:candelabra",
+    "hexerei:candle",
+    "hexerei:waxing_kit"
+   ]
+  }
+ ],
+ "notes": "Verified twice against hexerei-0.4.2.3.jar, whose META-INF/mods.toml declares minecraft [1.20.1,1.20.2] under javafml with no neoforge.mods.toml, and which Modrinth lists as version 1.20.1-0.4.2.3 for forge. Pass 1: 357 item models intersected with item./block. lang keys = 268 ids (item_count_in_jar). Pass 2 rebuilt 813 ids independently from blockstates, all 1271 recipe jsons, loot tables and tags; pass 1 is a subset. HEXEREI'S RECIPE SET IS UNUSUAL: 1066 of its 1271 recipes are hexerei:woodcutting entries, which are the three wood sets being cut into each other and carry no progression at all. The real progression is only 36 hexerei:mixingcauldron recipes, 13 hexerei:drying_rack, 15 hexerei:dipper, 4 hexerei:pestle_and_mortar and 97 crafting-table recipes, and the chain above is read from those. DROPPED AS UNOBTAINABLE (registered, but no recipe, no loot table, no tag and no worldgen source anywhere in the jar): hexerei:armor_scrap and hexerei:scrap_block; the four hexerei:druid_ armour pieces and the four hexerei:orc_ pieces; hexerei:fire_tablet; hexerei:quicksilver_bottle and hexerei:quicksilver_bucket; hexerei:tallow_bucket, hexerei:blood_bucket, hexerei:tallow_impurity and hexerei:milk_bottle (the bottle forms of these fluids DO have cauldron_emptying recipes and are used instead); hexerei:budding_selenite and the small, medium and large selenite buds; hexerei:broom_thruster_brush; hexerei:creative_waxing_kit. These read as work-in-progress content in a 0.4.x mod and would all be uncompletable quests. hexerei:selenite_shard is kept because blocks/selenite_cluster drops it. SOURCING for the non-crafted steps: sage_seed from data/hexerei/loot_modifiers/sage_seeds_from_grass.json and _from_tall_grass.json; animal_fat from animal_fat_from_cow/pig/sheep.json plus chests/dark_coven_basic; mandrake_root from chests/nature_coven_herbs and from harvesting a grown Mandrake Plant; mahogany_log from blocks/mahogany_log and worldgen. The mod ships four structures documented in its own book pages - Dark Coven, Nature Coven, Owl Post Office and Witch Hut - with loot tables chests/dark_coven_basic, dark_coven_coffer, nature_coven_coffer, nature_coven_crow, nature_coven_herbs and courier_package. ENTITIES: hexerei registers crow and owl (both with spawn eggs and real spawn rules) plus mahogany_broom, willow_broom and witch_hazel_broom, which are ridable vehicles rather than mobs, and boat and chest_boat. No kill step is emitted: the crow and owl are tameable helpers with no hostile behaviour and no loot table of their own - the only entity loot table in the jar, entities/crow_pickpocket_villager, is the table a tamed crow rolls when it steals from a villager, not a death drop. CONSENSUS CONFLICT (recipe graph preferred): moddb.json's 17 Hexerei entries put hexerei:blood_bottle dead last at pos 1.0 while putting hexerei:mahogany_broom at 0.438, but data/hexerei/recipes/mahogany_broom_from_mixing_cauldron.json lists hexerei:blood_bottle as an ingredient - the consensus ordering is impossible. The same list puts hexerei:broom_netherite_tip at 0.312, ahead of the broom it attaches to and ahead of both hexerei:infused_fabric at 0.5 and hexerei:pestle_and_mortar at 0.562, even though the tip costs a Netherite Ingot, Netherite Scrap and a Selenite Shard. Membership agreement with the consensus is otherwise good: 15 of its 17 items appear in this chain. Variant families kept in wheels: the mahogany building set (Willow and Witch Hazel are identical sets and are left out entirely), the herb and dried-herb family, the satchel and trinket family, and the broom accessories. Slabs, stairs, walls, fences, doors, signs, boats and the waxed and stripped variants of all three woods are excluded."
+}

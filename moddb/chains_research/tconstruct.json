@@ -1,0 +1,182 @@
+{
+ "mod": "tconstruct",
+ "verified_against": "TConstruct-1.20.1-3.11.2.166.jar",
+ "item_count_in_jar": 662,
+ "chain": [
+  {
+   "id": "tconstruct:pattern",
+   "title": "A Blank to Begin With",
+   "desc": "The reusable pattern; every tool part starts as one of these on the part builder."
+  },
+  {
+   "id": "tconstruct:crafting_station",
+   "title": "A Bench That Remembers",
+   "desc": "A crafting table that keeps its inventory and pulls from chests placed beside it."
+  },
+  {
+   "id": "tconstruct:part_builder",
+   "title": "Carving to Shape",
+   "desc": "Cuts tool parts from planks, stone and metal using a pattern."
+  },
+  {
+   "id": "tconstruct:tinker_station",
+   "title": "Where Parts Become Tools",
+   "desc": "Assembles loose parts into a finished tool and applies modifiers to it."
+  },
+  {
+   "id": "tconstruct:pickaxe",
+   "title": "Your Own Design",
+   "desc": "The first assembled Tinkers pickaxe; its stats come entirely from the materials you chose."
+  },
+  {
+   "id": "tconstruct:grout",
+   "title": "Clay, Sand, Gravel",
+   "desc": "The raw mix that bakes into seared brick, the smeltery's building block."
+  },
+  {
+   "id": "tconstruct:seared_brick",
+   "title": "Fired Clay, Heat-Proof",
+   "desc": "Grout smelted into a brick that can hold molten metal without failing."
+  },
+  {
+   "id": "tconstruct:seared_bricks",
+   "title": "Walls That Hold Lava",
+   "desc": "Four bricks to a block, forming the structural wall of every smeltery."
+  },
+  {
+   "id": "tconstruct:seared_melter",
+   "title": "A Small Crucible",
+   "desc": "A single-block melter for liquefying a trickle of metal before a smeltery exists."
+  },
+  {
+   "id": "tconstruct:seared_heater",
+   "title": "Feeding the Flame",
+   "desc": "Burns solid fuel beneath the melter to keep its contents molten."
+  },
+  {
+   "id": "tconstruct:seared_faucet",
+   "title": "Pour on Command",
+   "desc": "Releases molten metal from a melter or drain into whatever waits below."
+  },
+  {
+   "id": "tconstruct:seared_table",
+   "title": "Casting Small",
+   "desc": "The casting table pours metal into casts to produce parts and ingots."
+  },
+  {
+   "id": "tconstruct:seared_basin",
+   "title": "Casting Large",
+   "desc": "The casting basin handles full blocks and large plates the table cannot."
+  },
+  {
+   "id": "tconstruct:blank_sand_cast",
+   "title": "One-Shot Mould",
+   "desc": "A sand cast that takes the shape of a part once, then crumbles."
+  },
+  {
+   "id": "tconstruct:ingot_cast",
+   "title": "The Mould That Lasts",
+   "desc": "A gold cast that survives every pour, making ingots indefinitely."
+  },
+  {
+   "id": "tconstruct:smeltery_controller",
+   "title": "The Furnace Grows",
+   "desc": "Binds seared blocks into a multiblock smeltery with real capacity and alloying."
+  },
+  {
+   "id": "tconstruct:seared_drain",
+   "title": "A Way Out",
+   "desc": "Lets molten metal leave the smeltery wall into faucets and tanks."
+  },
+  {
+   "id": "tconstruct:seared_fuel_tank",
+   "title": "Lava as Fuel",
+   "desc": "Holds the lava that heats a full-size smeltery."
+  },
+  {
+   "id": "tconstruct:tinkers_anvil",
+   "title": "Heavier Work",
+   "desc": "Replaces the tinker station for large tools and the deeper modifier slots."
+  },
+  {
+   "id": "tconstruct:slimesteel_ingot",
+   "title": "Iron, With Slime In It",
+   "desc": "The smeltery's first true alloy, folding skyslime into molten iron."
+  },
+  {
+   "id": "tconstruct:cobalt_ingot",
+   "title": "Blue Metal, Deep Nether",
+   "desc": "Cobalt, mined below the Nether's surface and the gateway to the strongest alloys."
+  },
+  {
+   "id": "tconstruct:scorched_brick",
+   "title": "Fired in the Nether",
+   "desc": "The Nether counterpart to seared brick, baked from scorched stone."
+  },
+  {
+   "id": "tconstruct:foundry_controller",
+   "title": "The Nether Smeltery",
+   "desc": "A scorched multiblock foundry that melts what the seared smeltery cannot."
+  },
+  {
+   "id": "tconstruct:manyullyn_ingot",
+   "title": "Cobalt's Final Form",
+   "desc": "Manyullyn, the endgame alloy of cobalt and netherite debris."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "tconstruct:part_builder",
+   "members": [
+    "tconstruct:pick_head",
+    "tconstruct:small_axe_head",
+    "tconstruct:broad_axe_head",
+    "tconstruct:adze_head",
+    "tconstruct:hammer_head",
+    "tconstruct:small_blade",
+    "tconstruct:broad_blade",
+    "tconstruct:tool_handle",
+    "tconstruct:tough_handle",
+    "tconstruct:tool_binding",
+    "tconstruct:tough_binding",
+    "tconstruct:large_plate",
+    "tconstruct:bow_limb",
+    "tconstruct:bow_grip"
+   ]
+  },
+  {
+   "hub": "tconstruct:tinker_station",
+   "members": [
+    "tconstruct:sword",
+    "tconstruct:hand_axe",
+    "tconstruct:kama",
+    "tconstruct:dagger",
+    "tconstruct:mattock",
+    "tconstruct:excavator",
+    "tconstruct:sledge_hammer",
+    "tconstruct:vein_hammer",
+    "tconstruct:cleaver",
+    "tconstruct:broad_axe",
+    "tconstruct:scythe",
+    "tconstruct:war_pick",
+    "tconstruct:longbow",
+    "tconstruct:crossbow"
+   ]
+  },
+  {
+   "hub": "tconstruct:smeltery_controller",
+   "members": [
+    "tconstruct:amethyst_bronze_ingot",
+    "tconstruct:rose_gold_ingot",
+    "tconstruct:pig_iron_ingot",
+    "tconstruct:hepatizon_ingot",
+    "tconstruct:queens_slime_ingot",
+    "tconstruct:knightslime_ingot",
+    "tconstruct:cinderslime_ingot",
+    "tconstruct:soulsteel_ingot",
+    "tconstruct:steel_ingot"
+   ]
+  }
+ ],
+ "notes": "Verified against TConstruct-1.20.1-3.11.2.166.jar (Modrinth slug 'tinkers-construct', Forge/NeoForge). Item set = 662 ids from the strict intersection of assets/tconstruct/models/item/*.json stems with item./block. keys in assets/tconstruct/lang/en_us.json. NO WIDENING WAS NEEDED: the jar does ship 2950 recipe JSONs under data/tconstruct/recipes/**, yielding 657 recipe-result ids of which 186 fall outside the strict set, but every id in this chain and every wheel member already passed the strict intersection, so the stricter set was kept throughout. Tool parts in particular are fully covered by the strict set - the parts wheel was cross-checked against the mod's own gold-cast ids (each *_cast stem names the part it casts), which confirms the complete 1.20.1 part roster. DROPS / RENAMES FOUND: tool_forge and tinkers_forge do not exist in 1.20.1 - the Tool Forge was replaced by tinkers_anvil (Tinker's Anvil) and its Nether counterpart scorched_anvil, so the chain uses tinkers_anvil; broadsword does not exist and is now simply 'sword'; sword_blade is now small_blade; round_plate is now large_plate; there is no generic seared_tank, only seared_fuel_tank / seared_ingot_tank / seared_casting_tank. CONSENSUS: unlike GregTech, all 26 moddb entries for tconstruct verified as real ids, and the consensus ordering broadly agrees with the recipe graph - pattern (pos 0.04) then part_builder/grout/seared_brick/crafting_station/tinker_station in the 0.14-0.21 band, then seared_basin (0.283) and seared_melter (0.388) later, which matches the smeltery build order and was followed. TWO CONFLICTS RECORDED: (1) the consensus ranks seared_basin (pos 0.283) BEFORE seared_melter (pos 0.388), but the recipe graph makes the melter the earlier unlock - a melter plus heater is the pre-smeltery entry point while the basin is only useful once something can pour into it - so the recipe graph was preferred and the melter placed first. (2) The consensus contains six non-helmet armour pieces as standalone entries (plate_chestplate, plate_boots, plate_leggings, travelers_leggings, travelers_chestplate, travelers_boots), which directly contradicts the measured desirability finding that 52 percent of complete-set quests take the HELMET ONLY and that a lone chestplate/leggings/boots quest was never observed; the measured rule was followed and all six were excluded. The verified helmets plate_helmet, travelers_helmet (Traveler's Goggles) and slime_helmet (Slimeskull) are available if an armour node is wanted later. Also excluded as low-signal: blood_slime_sapling and bloodshroom_log (decorative Blood Slime tree, consensus 2 packs each) and the advancement-like ids puny_smelting / mighty_smelting, which are advancement rewards rather than progression gates. SPINE: pattern -> crafting station -> part builder -> tinker station -> first tool, then the smeltery build order grout -> seared brick -> seared bricks -> melter/heater -> faucet -> casting table -> basin -> casts -> smeltery controller -> drain -> fuel tank -> anvil, closing on the alloy ladder slimesteel -> cobalt -> scorched brick -> foundry -> manyullyn. Per the brief, tool PARTS are a wheel off the part builder rather than chain steps, finished TOOLS are a wheel off the tinker station, and the smeltery alloys are a wheel off the controller. Only ingots are quested, never ore or nuggets. A fourth natural wheel exists (the gold/sand casts off blank_sand_cast - ingot_cast, gear_cast, gem_cast, coin_cast, plate_cast and the per-part casts, all verified) but was omitted to stay within the three-wheel limit. No _slab/_stairs/_wall/stripped_/potted_ ids used."
+}

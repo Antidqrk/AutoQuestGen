@@ -1,0 +1,194 @@
+{
+ "mod": "minecraft",
+ "verified_against": "1.20.1.jar",
+ "item_count_in_jar": 1238,
+ "chain": [
+  {
+   "id": "minecraft:oak_log",
+   "title": "Bare Hands, First Bark",
+   "desc": "Punched from any oak tree without a tool; four planks per log, and every wooden tool, stick and crafting table in the game starts here."
+  },
+  {
+   "id": "minecraft:crafting_table",
+   "title": "Four Planks and a Purpose",
+   "desc": "Four planks in a square. The jar treats it as the literal beginning of progression: it is the sole criterion of the story/root advancement."
+  },
+  {
+   "id": "minecraft:wooden_pickaxe",
+   "title": "Something to Bite Stone",
+   "desc": "Three planks over two sticks. Wood is the only tier craftable before mining anything, so it exists purely to earn you cobblestone."
+  },
+  {
+   "id": "minecraft:cobblestone",
+   "title": "The Grey Beneath the Grass",
+   "desc": "Stone broken with any pickaxe drops cobblestone; only Silk Touch yields the stone block itself. It is the material behind the entire second tool tier."
+  },
+  {
+   "id": "minecraft:stone_pickaxe",
+   "title": "Harder Than the Hand That Made It",
+   "desc": "Cobblestone over sticks. This is the real second tier, satisfying story/upgrade_tools, and the first pickaxe that can harvest iron ore."
+  },
+  {
+   "id": "minecraft:furnace",
+   "title": "Eight Stones Around a Fire",
+   "desc": "Eight cobblestone in a ring. Nothing in the metal chain happens until you can smelt, so this is the true gate on the ore game."
+  },
+  {
+   "id": "minecraft:raw_iron",
+   "title": "Ore Still Wearing Its Dirt",
+   "desc": "Iron ore and deepslate iron ore drop raw iron, not the ore block, unless mined with Silk Touch; Fortune multiplies the drop."
+  },
+  {
+   "id": "minecraft:iron_ingot",
+   "title": "Grey Metal, Real Tools",
+   "desc": "Smelt or blast raw iron. This is story/smelt_iron, the hinge of the early game, and it feeds buckets, shears, anvils, armour and rails."
+  },
+  {
+   "id": "minecraft:iron_pickaxe",
+   "title": "The Key to the Deep",
+   "desc": "Iron ingots over sticks. Iron is the lowest tier that can mine diamond, gold, redstone and emerald, so the whole midgame waits on it."
+  },
+  {
+   "id": "minecraft:bucket",
+   "title": "Three Ingots That Hold a River",
+   "desc": "Three iron ingots in a V. Carrying lava and water is what turns obsidian from a lucky cave find into something you can manufacture."
+  },
+  {
+   "id": "minecraft:diamond",
+   "title": "Blue Fire in the Dark",
+   "desc": "Diamond ore drops the gem directly when mined with an iron pickaxe or better; Fortune multiplies it and only Silk Touch yields the ore block."
+  },
+  {
+   "id": "minecraft:diamond_pickaxe",
+   "title": "The Only Thing Obsidian Fears",
+   "desc": "Three diamonds over sticks. It is the sole tier below netherite that can mine obsidian and ancient debris."
+  },
+  {
+   "id": "minecraft:enchanting_table",
+   "title": "Books That Bite Back",
+   "desc": "Obsidian, diamonds and a book. Surrounding it with bookshelves raises the level cap, and it satisfies story/enchant_item."
+  },
+  {
+   "id": "minecraft:obsidian",
+   "title": "Where Water Answers Lava",
+   "desc": "Pour water onto a lava source and mine the result with a diamond pickaxe. Ten blocks frame a Nether portal, corners optional."
+  },
+  {
+   "id": "minecraft:flint_and_steel",
+   "title": "One Spark, One Doorway",
+   "desc": "An iron ingot plus flint from gravel. It is the ordinary way a portal frame is lit, and that portal is what the whole midgame has been building toward."
+  },
+  {
+   "id": "dim:minecraft:the_nether",
+   "title": "Through the Purple Haze",
+   "desc": "Step into a lit obsidian frame. Distance compresses eight to one here, and blaze rods, wither skulls and ancient debris exist nowhere else."
+  },
+  {
+   "id": "minecraft:blaze_rod",
+   "title": "Fire Pulled From a Spinning Thing",
+   "desc": "Dropped only by blazes, and only when a player lands the kill; blazes spawn from spawners inside Nether fortresses. Rods become blaze powder and brewing stands."
+  },
+  {
+   "id": "minecraft:ender_pearl",
+   "title": "A Held Breath That Teleports",
+   "desc": "Endermen drop nought to one on death. Piglin bartering and stronghold corridor chests also supply them, which matters if endermen are scarce."
+  },
+  {
+   "id": "minecraft:ender_eye",
+   "title": "The Compass That Chooses Its Own North",
+   "desc": "One ender pearl plus one blaze powder. Thrown eyes drift toward the nearest stronghold, and twelve of them fill the end portal frame in its portal room."
+  },
+  {
+   "id": "dim:minecraft:the_end",
+   "title": "A Floor Made of Sky",
+   "desc": "Enter through the completed stronghold portal. You arrive on the central island facing the dragon and its obsidian pillars."
+  },
+  {
+   "id": "kill:minecraft:ender_dragon",
+   "title": "The Long Fall of the First Boss",
+   "desc": "Destroy the end crystals atop the obsidian pillars, then fight the dragon. Its death opens the gateway and the exit portal, and drops the dragon egg."
+  },
+  {
+   "id": "minecraft:elytra",
+   "title": "Wings Nobody Crafted",
+   "desc": "Taken from the item frame aboard the ship of an End City, reached through an end gateway. It appears in no recipe and no loot table in the jar."
+  },
+  {
+   "id": "minecraft:shulker_shell",
+   "title": "Two Halves of a Box",
+   "desc": "Dropped by shulkers in End Cities at a 50 percent base rate. Two shells and a chest make a shulker box, the only container that keeps its contents when broken."
+  },
+  {
+   "id": "kill:minecraft:wither",
+   "title": "The Boss You Have to Build",
+   "desc": "Three wither skeleton skulls from a Nether fortress on four soul sand. Its nether star is the core of a beacon, the usual vanilla endgame."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "minecraft:stone_pickaxe",
+   "members": [
+    "minecraft:stone_axe",
+    "minecraft:stone_shovel",
+    "minecraft:stone_sword",
+    "minecraft:stone_hoe"
+   ]
+  },
+  {
+   "hub": "minecraft:iron_ingot",
+   "members": [
+    "minecraft:iron_axe",
+    "minecraft:iron_sword",
+    "minecraft:iron_shovel",
+    "minecraft:iron_helmet",
+    "minecraft:iron_chestplate",
+    "minecraft:iron_leggings",
+    "minecraft:iron_boots",
+    "minecraft:shears",
+    "minecraft:anvil"
+   ]
+  },
+  {
+   "hub": "minecraft:diamond",
+   "members": [
+    "minecraft:diamond_axe",
+    "minecraft:diamond_sword",
+    "minecraft:diamond_shovel",
+    "minecraft:diamond_helmet",
+    "minecraft:diamond_chestplate",
+    "minecraft:diamond_leggings",
+    "minecraft:diamond_boots"
+   ]
+  },
+  {
+   "hub": "minecraft:blaze_rod",
+   "members": [
+    "minecraft:blaze_powder",
+    "minecraft:brewing_stand",
+    "minecraft:nether_wart",
+    "minecraft:magma_cream",
+    "minecraft:glowstone_dust"
+   ]
+  },
+  {
+   "hub": "minecraft:shulker_shell",
+   "members": [
+    "minecraft:shulker_box",
+    "minecraft:chorus_fruit",
+    "minecraft:popped_chorus_fruit",
+    "minecraft:purpur_block",
+    "minecraft:end_rod"
+   ]
+  },
+  {
+   "hub": "minecraft:diamond_pickaxe",
+   "members": [
+    "minecraft:ancient_debris",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_ingot",
+    "minecraft:lodestone"
+   ]
+  }
+ ],
+ "notes": "Item set = 1238 stems of assets/minecraft/models/item/*.json intersected with the item./block. keys of assets/minecraft/lang/en_us.json; every non-kill/dim id above is a member of that set. Entity ids checked against the 126 entity.minecraft.* lang keys; dimension ids against data/minecraft/dimension_type/*.json (only overworld, overworld_caves, the_nether and the_end exist). Order follows Mojang's own advancement parent tree in data/minecraft/advancements/: story/root (criterion crafting_table) -> mine_stone -> upgrade_tools (stone_pickaxe) -> smelt_iron -> iron_tools (iron_pickaxe) -> mine_diamond -> enchant_item, with the parallel branch smelt_iron -> lava_bucket -> form_obsidian -> enter_the_nether -> follow_ender_eye (stronghold) -> enter_the_end; then nether/find_fortress -> obtain_blaze_rod, and end/kill_dragon -> enter_end_gateway -> find_end_city -> elytra. THERE IS NO COPPER TOOL OR ARMOUR TIER IN 1.20.1. Copper appears in no tool, weapon or armour recipe anywhere in data/minecraft/recipes/, and in no advancement in data/minecraft/advancements/. The tiers are wood, stone, iron, gold, diamond, netherite. Copper is a decorative, oxidation and lightning-rod material only, and must never be placed between stone and iron. The stronghold beat is carried by minecraft:ender_eye rather than its own id because no stronghold-only item is obtainable in survival (end_portal_frame has no recipe and no loot table) and the schema offers no structure id form; story/follow_ender_eye is a location trigger, not an item. Pacing cross-checked against moddb.json key 'minecraft', whose 26 entries all sit at pos 0.0-0.143, confirming that published books spend only the opening tenth of their length on vanilla and lead with logs (oak_log pos 0.015, 10 packs), crafting_table (0.071, 6 packs) and wooden_pickaxe (0.127, 6 packs), with flint_and_steel (0.143) closing the run-up to the portal. The wither is placed last rather than at its fortress prerequisite because the fight and its beacon payoff read as an endgame beat in published books, even though nether/get_wither_skull sits under find_fortress in the jar."
+}

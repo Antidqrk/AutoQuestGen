@@ -1,0 +1,132 @@
+{
+  "mod": "illageandspillage",
+  "verified_against": "illageandspillagerespillaged-1.2.8.jar",
+  "item_count_in_jar": 19,
+  "chain": [
+    {
+      "id": "kill:illageandspillage:igniter",
+      "title": "The Match That Lit the Raid",
+      "desc": "Igniters are raid illagers that hurl fire and are one of the ten mobs the Illage and Killage advancement tracks."
+    },
+    {
+      "id": "kill:illageandspillage:illashooter",
+      "title": "Crossbows With Opinions",
+      "desc": "The Illashooter is a ranged illager that pressures you from outside melee range."
+    },
+    {
+      "id": "kill:illageandspillage:engineer",
+      "title": "Hyuck, Hyuck, Hyuck",
+      "desc": "The Engineer builds and repairs machinery in the field instead of fighting you directly."
+    },
+    {
+      "id": "kill:illageandspillage:chagrin_sentry",
+      "title": "Kill the Turret First",
+      "desc": "Chagrin Sentries are the stationary emplacements an Engineer deploys and repairs."
+    },
+    {
+      "id": "kill:illageandspillage:crocofang",
+      "title": "Something With Teeth",
+      "desc": "The Crocofang is the illagers' beast of burden: it winds up, then charges and bites."
+    },
+    {
+      "id": "kill:illageandspillage:preserver",
+      "title": "Flop, Land, Repeat",
+      "desc": "The Preserver hops around the battlefield keeping the illager line intact."
+    },
+    {
+      "id": "kill:illageandspillage:absorber",
+      "title": "Soak It All Up",
+      "desc": "The Absorber eats incoming damage until it finally collapses."
+    },
+    {
+      "id": "kill:illageandspillage:twittollager",
+      "title": "Terminally Online",
+      "desc": "The Twittollager seethes, snaps and eventually detonates itself in your face."
+    },
+    {
+      "id": "kill:illageandspillage:devastator",
+      "title": "The Ravager That Kept Growing",
+      "desc": "The Devastator is a mutated Ravager that emerges with an explosion and smashes through walls."
+    },
+    {
+      "id": "kill:illageandspillage:freakager",
+      "title": "Oops, Did I Scare You?",
+      "desc": "The Freakager fights disguised as a villager, then reveals itself and throws pumpkin bombs and spinning scythes."
+    },
+    {
+      "id": "illageandspillage:bag_of_horrors",
+      "title": "The Trick, Not the Treat",
+      "desc": "The Bag of Horrors drops from both the Freakager and the Ragno."
+    },
+    {
+      "id": "kill:illageandspillage:eyesore",
+      "title": "Unblinking",
+      "desc": "Eyesores are the slithering minions the Freakager throws into the arena."
+    },
+    {
+      "id": "kill:illageandspillage:funnybone",
+      "title": "The Punchline",
+      "desc": "Funnybones are the Freakager's giggling skeletal throwers."
+    },
+    {
+      "id": "kill:illageandspillage:ragno",
+      "title": "Arachnophobia",
+      "desc": "The Ragno bursts out of a screaming villager, leaps, webs and slams until it tires itself out."
+    },
+    {
+      "id": "kill:illageandspillage:magispeller",
+      "title": "Who's Wheezing Now?",
+      "desc": "The Magispeller cycles Fakers, fang runs, vex summons, cannons and a forcefield across a long multi-stage fight."
+    },
+    {
+      "id": "illageandspillage:totem_of_banishment",
+      "title": "Cut the Vexes Loose",
+      "desc": "The Totem of Banishment is the Magispeller's drop and banishes Vexes when used."
+    },
+    {
+      "id": "kill:illageandspillage:crashager",
+      "title": "Its Pet, Not Its Equal",
+      "desc": "The Crashager is the roaring Ravager the Magispeller calls in mid-fight."
+    },
+    {
+      "id": "kill:illageandspillage:spiritcaller",
+      "title": "Sacrificial Satisfaction",
+      "desc": "The Spiritcaller drains Mob Spirits, raises Imps and Spirit Hands, and charges a soul laser."
+    },
+    {
+      "id": "illageandspillage:spellbound_book",
+      "title": "Borrowed Necromancy",
+      "desc": "The Spiritcaller's book runs the boss's own attacks from an empty hand, on a long cooldown that death does not reset."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "illageandspillage:spiritcaller_spawn_egg",
+      "members": [
+        "illageandspillage:igniter_spawn_egg",
+        "illageandspillage:engineer_spawn_egg",
+        "illageandspillage:illashooter_spawn_egg",
+        "illageandspillage:twittollager_spawn_egg",
+        "illageandspillage:crocofang_spawn_egg",
+        "illageandspillage:absorber_spawn_egg",
+        "illageandspillage:preserver_spawn_egg",
+        "illageandspillage:freakager_spawn_egg",
+        "illageandspillage:ragno_spawn_egg",
+        "illageandspillage:magispeller_spawn_egg",
+        "illageandspillage:eyesore_spawn_egg",
+        "illageandspillage:funnybone_spawn_egg"
+      ]
+    },
+    {
+      "hub": "illageandspillage:magi_disc",
+      "members": [
+        "illageandspillage:freaky_disc",
+        "illageandspillage:spiri_disc",
+        "illageandspillage:bag_of_horrors",
+        "illageandspillage:totem_of_banishment",
+        "illageandspillage:spellbound_book"
+      ]
+    }
+  ],
+  "notes": "Verified against illageandspillagerespillaged-1.2.8.jar. This mod is tiny on the item side: only 19 ids appear both as assets/illageandspillage/models/item/*.json and as item./block. lang keys, and 13 of those are spawn eggs. The only real loot in the jar is bag_of_horrors, totem_of_banishment, spellbound_book and the three boss music discs, confirmed by data/illageandspillage/loot_tables/entities/*.json (freakager + ragno -> bag_of_horrors, magispeller -> totem_of_banishment, spiritcaller -> spellbound_book). There are NO crafting recipes in this jar. The chain is therefore kill-heavy by necessity and is ordered mini-illagers -> summoned adds -> the three bosses the mod gives advancements for (Freakager/Ragno, Magispeller, Spiritcaller), ending on the Spellbound Book. IDS DROPPED: illageandspillage:devastator_spawn_egg (has an item.illageandspillage lang key but no item model in this jar); illageandspillage:greenbone, dark_drink, dark_splash, dark_linger, treat1-treat6, logo (models with no lang key). Entities not used because they are projectiles, props or config-only: boss_randomizer, factory, faker, dispenser, hinder, beeper, sniper, poker, kaboomer, trick_or_treat, imp, spirit_hand, mob_spirit, illager_soul, and the old_* legacy variants (old_freakager, old_ragno, old_magispeller)."
+}

@@ -1,0 +1,259 @@
+{
+ "mod": "evilcraft",
+ "verified_against": "EvilCraft-1.20.1-1.3.1.jar",
+ "item_count_in_jar": 119,
+ "chain": [
+  {
+   "id": "evilcraft:dark_gem",
+   "title": "Something Wrong in the Stone",
+   "desc": "Dark Ore generates throughout the Overworld and drops Dark Gems. Everything in the First Age is cut from these."
+  },
+  {
+   "id": "evilcraft:dark_block",
+   "title": "Darkness, Compressed",
+   "desc": "Nine gems packed. It is also the frame of the Large Dark Tank and the Dark Bricks."
+  },
+  {
+   "id": "evilcraft:dark_stick",
+   "title": "Sticks of Dark Wood",
+   "desc": "The handle under the Vein Sword, the Vengeance Pickaxe and most of the mod's weapons."
+  },
+  {
+   "id": "evilcraft:dark_spike",
+   "title": "Something to Bleed With",
+   "desc": "Dark Gems and sticks. Spikes are how you get blood out of anything, and the Blood Extractor is made of them."
+  },
+  {
+   "id": "evilcraft:darkened_apple",
+   "title": "An Apple Gone Bad",
+   "desc": "An apple soaked in Dark Gem. Feeding one to a mob tears open a brief anomaly."
+  },
+  {
+   "id": "evilcraft:origins_of_darkness",
+   "title": "Origins of Darkness",
+   "desc": "Not crafted: feed a Darkened Apple to a mob and throw a plain book into the anomaly it leaves. This is the mod's guide."
+  },
+  {
+   "id": "evilcraft:blood_extractor",
+   "title": "Draw the Blood",
+   "desc": "Spikes and a bucket. It fills from your kills while it sits in your inventory, and from blood stains with shift right-click."
+  },
+  {
+   "id": "evilcraft:dark_tank",
+   "title": "Somewhere to Store It",
+   "desc": "Dark Gems around glass. Every later machine measures its work in tanks of blood standing nearby."
+  },
+  {
+   "id": "evilcraft:environmental_accumulation_core",
+   "title": "Loot the Dark Temple",
+   "desc": "Dark Temples generate with an Environmental Accumulator inside. Break it and the Core is what you carry home."
+  },
+  {
+   "id": "evilcraft:weather_container",
+   "title": "Bottled Weather",
+   "desc": "Fed to an Environmental Accumulator it fills with clear, rain or lightning, and pours that weather back out on use."
+  },
+  {
+   "id": "evilcraft:biome_extract",
+   "title": "A Biome in a Bottle",
+   "desc": "The Accumulator's other product. Thrown, it overwrites the biome where it lands."
+  },
+  {
+   "id": "evilcraft:potentia_sphere",
+   "title": "Sphere of Potential",
+   "desc": "The battery the Accumulator drains, and the seed of the Inverted Potentia."
+  },
+  {
+   "id": "evilcraft:exalted_crafter",
+   "title": "The Crafter That Remembers",
+   "desc": "A portable crafting bench that keeps its grid; the empowered version is another Accumulator job."
+  },
+  {
+   "id": "kill:evilcraft:vengeance_spirit",
+   "title": "The Dark Aura Over the Dead",
+   "desc": "Vengeance Spirits rise from the mobs you kill. They are invisible without help, and they are the only source of Vengeance Essence."
+  },
+  {
+   "id": "evilcraft:burning_gem_stone",
+   "title": "Smelted for Sight",
+   "desc": "A Dark Gem in a furnace. It is what the Spectral Glasses need to show you the spirits already standing around you."
+  },
+  {
+   "id": "evilcraft:vengeance_essence",
+   "title": "What the Spirit Leaves",
+   "desc": "The spirits' drop, and the thing the Box of Eternal Closure and the Vengeance Ring are stocked with."
+  },
+  {
+   "id": "evilcraft:box_of_eternal_closure",
+   "title": "Shut Something In",
+   "desc": "Crushed Dark Gems, an ender chest and two potions of weakness. It traps a spirit permanently."
+  },
+  {
+   "id": "evilcraft:hardened_blood_shard",
+   "title": "Blood That Dried",
+   "desc": "Blood left in a dry place hardens. Break it with flint and steel, or cook it, for shards."
+  },
+  {
+   "id": "evilcraft:dark_power_gem",
+   "title": "Gem, Fed on Blood",
+   "desc": "Throw a Dark Gem into a pool of at least five source Blood blocks. You must do this by hand once before the machine can do it."
+  },
+  {
+   "id": "evilcraft:blood_infusion_core",
+   "title": "The Infusion Core",
+   "desc": "The heart of the Second Age. It is what upgrades the machine's tier, and tier is what gates every recipe past here."
+  },
+  {
+   "id": "evilcraft:blood_chest",
+   "title": "The Repairing Chest",
+   "desc": "It mends what you put inside using blood, at the price of a bad enchantment now and then."
+  },
+  {
+   "id": "evilcraft:blood_infuser",
+   "title": "The Blood Infuser",
+   "desc": "37 recipes across four tiers. Tier 0 makes Dark Power Gems; tier 3 makes Corrupted Tears and Garmonbozia."
+  },
+  {
+   "id": "evilcraft:undead_sapling",
+   "title": "Grow Something Dead",
+   "desc": "A tier 0 infusion. Undead wood is the only wood the Colossal Blood Chest will accept."
+  },
+  {
+   "id": "evilcraft:bowl_of_promises_empty",
+   "title": "The Bowl of Promises",
+   "desc": "Dust it, infuse it, and it becomes the tier ladder itself - tier 0 through tier 3, each unlocking the next band of infusions."
+  },
+  {
+   "id": "evilcraft:blood_orb_filled",
+   "title": "An Orb Full of Blood",
+   "desc": "A tier 1 infusion of the empty orb; a portable reservoir for the machines that will not run dry."
+  },
+  {
+   "id": "evilcraft:sanguinary_pedestal_0",
+   "title": "Blood From Nothing",
+   "desc": "The pedestal quietly generates blood on its own, which is what makes the later machines affordable."
+  },
+  {
+   "id": "evilcraft:purifier",
+   "title": "Strip the Curse",
+   "desc": "Fill it with blood and it pulls the Blood Chest's bad enchantments back off; add a Blook and it keeps the good ones."
+  },
+  {
+   "id": "evilcraft:corrupted_tear",
+   "title": "A Tear of the Corrupted",
+   "desc": "A tier 3 infusion, and the only route to the Entangled Chalice."
+  },
+  {
+   "id": "evilcraft:entangled_chalice",
+   "title": "One Tank in Two Places",
+   "desc": "Gold, Dark Gems and a Corrupted Tear. Copies of a chalice share a single reservoir wherever they are."
+  },
+  {
+   "id": "evilcraft:reinforced_undead_planks",
+   "title": "Planks That Hold",
+   "desc": "A tier 2 infusion of Undead Planks, and the wall of the Colossal Blood Chest."
+  },
+  {
+   "id": "evilcraft:colossal_blood_chest",
+   "title": "The Colossal Blood Chest",
+   "desc": "A multiblock repairing chest built from Reinforced Undead Planks - the Blood Chest at industrial scale."
+  },
+  {
+   "id": "evilcraft:sanguinary_environmental_accumulator",
+   "title": "Stop Going to Temples",
+   "desc": "The craftable Accumulator, run on blood from eight surrounding tanks and free of the original's bad effects."
+  },
+  {
+   "id": "evilcraft:spirit_furnace",
+   "title": "Render the Spirits",
+   "desc": "A Dark Blood Brick multiblock that cooks a caged Vengeance Spirit down into the drops of whatever it used to be."
+  },
+  {
+   "id": "evilcraft:garmonbozia",
+   "title": "Pain and Sorrow",
+   "desc": "The last tier 3 infusion, made from materialized Vengeance Essence. The end of the Origins of Darkness."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "evilcraft:blood_infuser",
+   "members": [
+    "evilcraft:blood_chest",
+    "evilcraft:colossal_blood_chest",
+    "evilcraft:purifier",
+    "evilcraft:spirit_furnace",
+    "evilcraft:spirit_reanimator",
+    "evilcraft:sanguinary_environmental_accumulator",
+    "evilcraft:sanguinary_pedestal_0",
+    "evilcraft:sanguinary_pedestal_1",
+    "evilcraft:dark_tank",
+    "evilcraft:entangled_chalice",
+    "evilcraft:display_stand"
+   ]
+  },
+  {
+   "hub": "evilcraft:bowl_of_promises_empty",
+   "members": [
+    "evilcraft:bowl_of_promises_dusted",
+    "evilcraft:bowl_of_promises_tier0",
+    "evilcraft:bowl_of_promises_tier1",
+    "evilcraft:bowl_of_promises_tier2",
+    "evilcraft:bowl_of_promises_tier3",
+    "evilcraft:promise_tier_1",
+    "evilcraft:promise_tier_2",
+    "evilcraft:promise_tier_3",
+    "evilcraft:promise_speed_0",
+    "evilcraft:promise_efficiency_0",
+    "evilcraft:promise_acceptor_iron",
+    "evilcraft:promise_acceptor_gold",
+    "evilcraft:promise_acceptor_diamond"
+   ]
+  },
+  {
+   "hub": "evilcraft:effortless_ring",
+   "members": [
+    "evilcraft:invigorating_pendant",
+    "evilcraft:primed_pendant",
+    "evilcraft:vengeance_ring",
+    "evilcraft:spectral_glasses",
+    "evilcraft:kineticator",
+    "evilcraft:kineticator_repelling",
+    "evilcraft:blood_pearl_of_teleportation",
+    "evilcraft:sceptre_of_thunder",
+    "evilcraft:spikey_claws",
+    "evilcraft:exalted_crafter_wooden",
+    "evilcraft:blood_orb_empty"
+   ]
+  },
+  {
+   "hub": "evilcraft:vein_sword",
+   "members": [
+    "evilcraft:vengeance_pickaxe",
+    "evilcraft:mace_of_destruction",
+    "evilcraft:mace_of_distortion",
+    "evilcraft:necromancer_staff",
+    "evilcraft:lightning_grenade",
+    "evilcraft:piercing_vengeance_focus",
+    "evilcraft:vengeance_focus",
+    "evilcraft:spiked_plate"
+   ]
+  },
+  {
+   "hub": "evilcraft:undead_planks",
+   "members": [
+    "evilcraft:undead_log",
+    "evilcraft:undead_wood",
+    "evilcraft:undead_slab",
+    "evilcraft:undead_planks_stairs",
+    "evilcraft:undead_fence",
+    "evilcraft:undead_fence_gate",
+    "evilcraft:undead_leaves",
+    "evilcraft:undead_sapling",
+    "evilcraft:undead_log_stripped",
+    "evilcraft:undead_wood_stripped",
+    "evilcraft:reinforced_undead_planks"
+   ]
+  }
+ ],
+ "notes": "VERIFICATION: 139 stems pass item-model INTERSECT (lang key OR recipe result OR loot entry OR tag OR advancement); 119 survive the obtainability audit. All 34 chain ids, 5 wheel hubs and 54 wheel members (93 ids total) were re-checked, fully namespaced, against the surviving set on a second pass whose derivation is deliberately independent of the first: exact item-model path existence plus the literal \"<ns>:<path>\" string appearing in the jar data trees. 0 failures. NAMESPACE: the jar also ships a second mod, evilcraftcompat (its own META-INF/mods.toml entry), but it registers NO items - assets/evilcraftcompat holds only JEI gui textures and data/evilcraftcompat only compat recipes for other mods' items. No registers_into is needed. DROPS: five spawn eggs (controlled_zombie, netherfish, poisonous_libelle, vengeance_spirit, werewolf) and creative_blood_drop, all model-plus-lang with no recipe or loot. blood_wand_cap, veined_scribing_tools, redstone_grenade and poison_bottle are registered but appear in no recipe, no loot table, no tag and not once in data/evilcraft/info/book.xml, which documents the entire mod - they have no acquisition path. condensed_blood is the borderline case and is dropped: its lang entry reads 'Insert into any machine for extra Blood' and it is listed as a chapter icon in book.xml, but it is the result of nothing, so it is uncompletable. Six blocks are dropped because they have no item form you can hold: blood and poison are fluid source blocks, blood_stain forms where an entity falls to death and has no loot table, excrement_pile 'will form below animals' and likewise has none, spirit_portal is created by the Spirit Reanimator, and the three infested_nether_* blocks have loot tables that hand back plain netherrack, nether bricks and soul sand. Finally evilcraft:environmental_accumulator is dropped even though it is central to the mod: its lang note says 'Found at Dark Temples, not craftable' and data/evilcraft/loot_tables/blocks/environmental_accumulator.json drops evilcraft:environmental_accumulation_core rather than the block, so the CORE is the questable id and the block is not. NEAR-MISS ID TRAP worth recording: data/evilcraft/loot_tables/entities/werewolf.json contains the string 'evilcraft:werewolf_flesh' - but that is a POOL NAME, not an item. The item is evilcraft:flesh_werewolf (assets/evilcraft/models/item/flesh_werewolf.json). A scanner that greps loot tables for evilcraft: strings will emit a non-existent id here. KEPT DESPITE NO PLAIN RECIPE, with proof: evilcraft:vein_sword and evilcraft:vengeance_pickaxe are real crafts under the custom types evilcraft:crafting_shaped_custom_output_vein_sword and _vengeance_pickaxe, which compute their NBT output in code, so a naive result-field scan reports them as sourceless; evilcraft:broom is assembled by evilcraft:crafting_special_broom_part_combination from a rod, a brush and a cap; evilcraft:origins_of_darkness is obtained by feeding a Darkened Apple to a mob and throwing a book at the resulting anomaly (its own lang .info line states this); evilcraft:ender_tear is documented as a rare Enderman drop; evilcraft:bucket_blood is the fluid bucket for evilcraft:blood, fillable from the source blocks the book instructs you to place; and evilcraft:flesh_humanoid comes from the Spirit Furnace. TIER GATE: the analogue of Bewitchment's chalk tier is BLOOD INFUSER TIER, and it is a literal integer field. The 37 evilcraft:blood_infuser recipes each carry \"tier\": 0, 1, 2 or 3 - 6 at tier 0 (dark_power_gem, bloody_cobblestone, undead_sapling, bowl_of_promises_tier0, promise_acceptor_iron), 13 at tier 1 (blood_orb_filled, blook, blood_potash, blood_waxed_coal), 10 at tier 2 (dark_blood_brick, reinforced_undead_planks, creeper heads) and 8 at tier 3 (corrupted_tear, garmonbozia, blaze rods, wither skeleton skulls). The machine's tier is raised by the Bowl of Promises line, which is itself tiered through the same machine, so the mod's whole back half is a strict four-step ladder and the Entangled Chalice, Garmonbozia and the Colossal Blood Chest sit at the top of it. Underneath that sits the mod's own two-act structure, First Age (Dark Gem, Dark Temples, vengeance spirits) and Second Age (everything blood-powered), which data/evilcraft/info/book.xml lays out explicitly and which the chain above follows. ENTITIES: 4 kill targets are verifiable with loot tables under data/evilcraft/loot_tables/entities/ - vengeance_spirit (vengeance_essence), werewolf (flesh_werewolf, werewolf_bone, werewolf_fur), poisonous_libelle (poison_sac) and netherfish (gunpowder). poisonous_libelle has a forge:add_spawns biome modifier; netherfish emerge from the infested nether blocks placed by add_feature_infested_nether in soul sand valleys; vengeance spirits rise from ordinary mob deaths in code; werewolves are transformed villagers. Only vengeance_spirit is used in the chain, since it gates the Vengeance Essence line. The sixth entity key, entity.evilcraft.broom_entity, is the ridden broom and is not a valid kill target. CONSENSUS: moddb.json has no evilcraft entry, but harvested_order.json carries 9 ids - necromancer_staff, hardened_blood_shard, blood_infusion_core, blood_chest, colossal_blood_chest, undead_sapling, vengeance_pickaxe, vein_sword, effortless_ring - and all 9 exist in the jar. One ordering conflict: it lists necromancer_staff first, ahead of hardened_blood_shard and blood_infusion_core, but the Necromancer Staff is a Second Age weapon in the mod's own book and its recipe sits downstream of the blood line. The recipe graph and book order are preferred and it is placed late here; the rest of that list agrees with the graph (hardened_blood_shard before blood_infusion_core before blood_chest before colossal_blood_chest)."
+}

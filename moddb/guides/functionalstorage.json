@@ -1,0 +1,343 @@
+{
+ "mod": "functionalstorage",
+ "ids_in_jar": 60,
+ "videos": [
+  {
+   "id": "BJP5KMTTb0w",
+   "title": "The ULTIMATE Functional Storage Tutorial! (Minecraft Mod Guide)",
+   "channel": "Debitor and 2 more",
+   "views": 6797,
+   "duration": 860,
+   "chars": 14901,
+   "legacy_vocab_prompt": true
+  }
+ ],
+ "items": {
+  "functionalstorage:storage_controller": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.7363,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:void_upgrade": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.2988,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:linking_tool": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1437,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:compacting_drawer": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.6228,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:netherite_upgrade": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1923,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:copper_upgrade": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1887,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:redstone_upgrade": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3463,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:collector_upgrade": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5919,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:ender_drawer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1262,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:puller_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5465,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:simple_compacting_drawer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6912,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:armory_cabinet": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6982,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:pusher_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5416,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:gold_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1901,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:configuration_tool": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9072,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:diamond_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1911,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "functionalstorage:iron_downgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1942,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "Drawers first, and they are deliberately cheap - a wooden chest plus planks of any wood. The 1/2/4 split is a choice of item types per block, not a tier: all three cost the same.",
+    "ids": [
+     "functionalstorage:oak_1",
+     "functionalstorage:oak_2",
+     "functionalstorage:oak_4"
+    ]
+   },
+   {
+    "note": "Then the storage controller, which is the mod's real objective. Quartz block, comparator, stone and a drawer.",
+    "ids": [
+     "functionalstorage:storage_controller"
+    ]
+   },
+   {
+    "note": "Movement upgrades after that - puller and pusher are what make a drawer wall part of an automation chain rather than a shelf.",
+    "ids": [
+     "functionalstorage:puller_upgrade",
+     "functionalstorage:pusher_upgrade"
+    ]
+   }
+  ],
+  "ladder": [
+   {
+    "note": "CAPACITY LADDER, each rung crafted FROM the previous one - copper into gold into diamond, then netherite via a smithing table with a netherite upgrade template. This is a true chain, so skipping a rung is impossible. The guide gives the real numbers: a base drawer holds 2,000 units, copper takes it to 16,400, gold 32,800, diamond 49,200, and four netherite upgrades reach roughly 537 million per slot. Item upgrades multiply by eight, fluid upgrades by four.",
+    "ids": [
+     "functionalstorage:copper_upgrade",
+     "functionalstorage:gold_upgrade",
+     "functionalstorage:diamond_upgrade",
+     "functionalstorage:netherite_upgrade"
+    ]
+   },
+   {
+    "note": "Controller ladder: a controller alone only sees drawers it touches; extensions grow its reach, and the linking tool is what binds distant drawers to it.",
+    "ids": [
+     "functionalstorage:storage_controller",
+     "functionalstorage:controller_extension",
+     "functionalstorage:linking_tool"
+    ]
+   },
+   {
+    "note": "Specialist drawers sit outside the capacity ladder: compacting for ingot/block conversion, fluid drawers for liquids, ender drawer for cross-dimensional access, armory cabinet as the netherite-gated end piece.",
+    "ids": [
+     "functionalstorage:simple_compacting_drawer",
+     "functionalstorage:compacting_drawer",
+     "functionalstorage:fluid_1",
+     "functionalstorage:ender_drawer",
+     "functionalstorage:armory_cabinet"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "Almost every upgrade and both controllers require an existing drawer in the recipe (the functionalstorage:drawer tag), so the drawer is the universal prerequisite.",
+    "ids": [
+     "functionalstorage:storage_controller",
+     "functionalstorage:puller_upgrade",
+     "functionalstorage:copper_upgrade"
+    ]
+   },
+   {
+    "note": "Netherite upgrade is a smithing-table transform on the diamond upgrade, not a crafting recipe - it needs the vanilla netherite smithing template.",
+    "ids": [
+     "functionalstorage:netherite_upgrade",
+     "functionalstorage:diamond_upgrade"
+    ]
+   },
+   {
+    "note": "Ender drawer needs an ender chest; armory cabinet needs netherite. Both are genuinely late despite the mod's cheap opening.",
+    "ids": [
+     "functionalstorage:ender_drawer",
+     "functionalstorage:armory_cabinet"
+    ]
+   },
+   {
+    "note": "HARD CAP the recipes do not reveal: a drawer accepts only FOUR storage upgrades total. Capacity quests must respect that ceiling rather than assuming upgrades stack indefinitely.",
+    "ids": [
+     "functionalstorage:copper_upgrade",
+     "functionalstorage:netherite_upgrade"
+    ]
+   },
+   {
+    "note": "Ender drawers are keyed by a randomly generated FREQUENCY shown on screen when built. Two ender drawers only share contents after the linking tool copies one frequency onto the other (shift-left-click the source, shift-right-click the target).",
+    "ids": [
+     "functionalstorage:ender_drawer",
+     "functionalstorage:linking_tool"
+    ]
+   }
+  ],
+  "payoff": [
+   {
+    "note": "The storage controller plus linked drawers is the click moment - the same 'one big inventory' payoff as Storage Drawers, reached slightly differently.",
+    "ids": [
+     "functionalstorage:storage_controller",
+     "functionalstorage:linking_tool"
+    ]
+   },
+   {
+    "note": "The void upgrade is the one the guide calls out as essential rather than optional: 'if you are running drawers in any kind of automatic farm, one thing is super important and that's the void upgrade'. Without it a full drawer spills overflow onto the floor exactly like a chest.",
+    "ids": [
+     "functionalstorage:void_upgrade"
+    ]
+   },
+   {
+    "note": "Puller and pusher upgrades turn drawers into inline automation with no pipes at all - the guide's worked example feeds a furnace with a pusher and pulls the output back with a puller, both configured per-face by right-click.",
+    "ids": [
+     "functionalstorage:puller_upgrade",
+     "functionalstorage:pusher_upgrade",
+     "functionalstorage:collector_upgrade"
+    ]
+   },
+   {
+    "note": "Ender drawers sending items 'all the way across the server' is the standout moment - cross-dimensional shared storage with no network to build.",
+    "ids": [
+     "functionalstorage:ender_drawer"
+    ]
+   },
+   {
+    "note": "The configuration tool's real use is LOCKING a drawer to its item, so an emptied drawer does not get claimed by whatever arrives next.",
+    "ids": [
+     "functionalstorage:configuration_tool"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "The iron DOWNGRADE is named like a rung on the ladder and is not one - it reduces capacity and exists for filtered setups. It also sits between copper and gold alphabetically, which makes naive ordering put it in the chain.",
+    "ids": [
+     "functionalstorage:iron_downgrade"
+    ]
+   },
+   {
+    "note": "Creative vending upgrade is creative-only.",
+    "ids": [
+     "functionalstorage:creative_vending_upgrade"
+    ]
+   },
+   {
+    "note": "The 1/2/4 drawer variants are a common ordering mistake: oak_1, oak_2 and oak_4 are not tiers and cost the same. The guide gives the numbers that prove it - the 1x1 holds 2,000 of one item, the 1x2 holds 1,000 each of two, the 2x2 holds 500 each of four. Identical total capacity, split differently. Never lay them out as a progression.",
+    "ids": [
+     "functionalstorage:oak_1",
+     "functionalstorage:oak_2",
+     "functionalstorage:oak_4"
+    ]
+   },
+   {
+    "note": "PACK-SPECIFIC: the guide rates the armory cabinet as 'not really useful in this form because it really makes sense to connect it to your ME system'. CREATE FEMBY has no AE2 or Refined Storage installed, so its main use case is absent here - a poor quest target despite being the mod's most expensive block.",
+    "ids": [
+     "functionalstorage:armory_cabinet"
+    ]
+   },
+   {
+    "note": "Two compacting drawers exist and they differ: the full compacting drawer handles three states (nugget, ingot, block) while the simple one handles only two (ingot, block). Easy to treat as duplicates.",
+    "ids": [
+     "functionalstorage:compacting_drawer",
+     "functionalstorage:simple_compacting_drawer"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "Drawer plus controller, same as its rival, but the framed variants are this mod's distinguishing feature - every block can be disguised as any other.",
+    "ids": [
+     "functionalstorage:oak_4",
+     "functionalstorage:storage_controller",
+     "functionalstorage:framed_1",
+     "functionalstorage:framed_storage_controller"
+    ]
+   }
+  ]
+ }
+}

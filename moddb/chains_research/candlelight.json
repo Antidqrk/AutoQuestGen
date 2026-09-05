@@ -1,0 +1,152 @@
+{
+ "mod": "candlelight",
+ "verified_against": "letsdo-candlelight-forge-1.2.13.jar",
+ "item_count_in_jar": 177,
+ "chain": [
+  {
+   "id": "candlelight:wild_tomatoes",
+   "title": "Ripe for the Picking",
+   "desc": "Wild Tomatoes generate in plains and forests; break them to start a tomato supply."
+  },
+  {
+   "id": "candlelight:tomato_seeds",
+   "title": "Seeds of a Bistro",
+   "desc": "Tomato Seeds are crafted from a single tomato and replanted on farmland."
+  },
+  {
+   "id": "candlelight:tomato",
+   "title": "Salad Days Begin",
+   "desc": "Tomatoes are the base crop behind Candlelight's soups, sauces and salads."
+  },
+  {
+   "id": "candlelight:lettuce",
+   "title": "Leaf It To Me",
+   "desc": "Lettuce grows from wild lettuce patches and anchors every green plate on the menu."
+  },
+  {
+   "id": "candlelight:cooking_pot",
+   "title": "Pot Luck",
+   "desc": "The Cooking Pot is built from copper ingots and a wooden shovel; it handles the mod's simmered dishes."
+  },
+  {
+   "id": "candlelight:cooking_pan",
+   "title": "Pan-demonium",
+   "desc": "The Cooking Pan is copper and sticks, and it sears everything the pot cannot."
+  },
+  {
+   "id": "candlelight:butter",
+   "title": "Churn of Events",
+   "desc": "A milk bucket worked in the crafting grid yields Butter, the fat behind most pan recipes."
+  },
+  {
+   "id": "candlelight:mozzarella",
+   "title": "Say Cheese",
+   "desc": "Milk plus a water bottle curdles into Mozzarella, the cheese used across Candlelight's salads and pastas."
+  },
+  {
+   "id": "candlelight:dough",
+   "title": "Knead to Know",
+   "desc": "Wheat and a water bottle press together into Dough, the start of the pasta line."
+  },
+  {
+   "id": "candlelight:pasta_raw",
+   "title": "Rolling in the Deep Pot",
+   "desc": "Dough cooked in the pot becomes Raw Pasta, ready for any sauce you can build."
+  },
+  {
+   "id": "candlelight:tomato_soup",
+   "title": "Souper Star",
+   "desc": "Tomatoes, sugar and a bowl simmer into Tomato Soup, itself an ingredient in richer dishes."
+  },
+  {
+   "id": "candlelight:veggie_plate",
+   "title": "Garden Variety",
+   "desc": "Carrot, potato and tomato on a bowl make the Plate full of Vegetables, the base for both chicken dinners."
+  },
+  {
+   "id": "candlelight:cooked_beef",
+   "title": "Steak Your Claim",
+   "desc": "Beef seared in the pan with butter becomes Candlelight's own Cooked Beef, a cut above the campfire version."
+  },
+  {
+   "id": "candlelight:bolognese",
+   "title": "Sauce Boss",
+   "desc": "Tomato soup and cooked beef reduce in the pan into Bolognese, the mod's workhorse sauce."
+  },
+  {
+   "id": "candlelight:mushroom_soup",
+   "title": "Fungi to Be With",
+   "desc": "Mushrooms, butter and milk cook down into a creamy Mushroom Soup."
+  },
+  {
+   "id": "candlelight:lasagne",
+   "title": "Layers of Ambition",
+   "desc": "Bolognese, pasta and cheese stack in the pot into a full Lasagna."
+  },
+  {
+   "id": "candlelight:pasta_bolognese",
+   "title": "Twirl of Approval",
+   "desc": "Pasta tossed with bolognese and cheese plates up as Pasta with Bolognese."
+  },
+  {
+   "id": "candlelight:chicken_alfredo",
+   "title": "Alfredo and Ready",
+   "desc": "Pasta, chicken and a full spread of effect ingredients make Chicken Alfredo in the pan."
+  },
+  {
+   "id": "candlelight:chefs_jacket",
+   "title": "Dressed to Grill",
+   "desc": "The Chefs Jacket is stitched from white and black wool; the rest of the whites finish the uniform."
+  },
+  {
+   "id": "candlelight:beef_wellington",
+   "title": "The Whole Shebang, En Croute",
+   "desc": "Beef Wellington wraps bolognese and mushroom soup in dough in the pan, and it is Candlelight's showpiece plate."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "candlelight:cooking_pot",
+   "members": [
+    "candlelight:pasta_raw",
+    "candlelight:tomato_soup",
+    "candlelight:mushroom_soup",
+    "candlelight:chocolate",
+    "candlelight:pork_ribs",
+    "candlelight:salmon_wine",
+    "candlelight:lasagne",
+    "candlelight:pasta",
+    "candlelight:chicken",
+    "candlelight:chicken_teriyaki"
+   ]
+  },
+  {
+   "hub": "candlelight:cooking_pan",
+   "members": [
+    "candlelight:cooked_beef",
+    "candlelight:bolognese",
+    "candlelight:pancake",
+    "candlelight:fricasse",
+    "candlelight:lettuce_beef",
+    "candlelight:roastbeef_carrots",
+    "candlelight:tropical_fish_supreme",
+    "candlelight:chicken_alfredo",
+    "candlelight:pasta_bolognese",
+    "candlelight:pasta_lettuce",
+    "candlelight:beef_wellington"
+   ]
+  },
+  {
+   "hub": "candlelight:mozzarella",
+   "members": [
+    "candlelight:beef_tartare",
+    "candlelight:beetroot_salad",
+    "candlelight:lettuce_salad",
+    "candlelight:lettuce_tomato",
+    "candlelight:tomato_mozzarella_salad",
+    "candlelight:veggie_plate"
+   ]
+  }
+ ],
+ "notes": "Chain derived from data/candlelight/recipes: the pot_cooking and pan_cooking recipe types are the whole progression spine, with dough/pasta and butter/mozzarella as the two intermediate branches that meet at Beef Wellington. Ids verified against assets/candlelight/models/item stems cross-checked with en_us.json keys and jar recipe outputs. Items whose lang key carries a _block suffix (beef_wellington, lasagne, pork_ribs, lettuce_tomato) and tomato_mozzarella_salad (lang key block.candlelight.tomato_mozzarella_block) were kept because the jar's own recipes emit those exact item ids. Partial-eaten model variants (*_1, *_2, *_3), plus faucet, toast, tomato_sauce and wine_glass, are model-only leftovers with no lang entry and no recipe output, so they were dropped."
+}

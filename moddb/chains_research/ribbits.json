@@ -1,0 +1,72 @@
+{
+ "mod": "ribbits",
+ "verified_against": "Ribbits-1.20.1-Forge-3.0.5.jar",
+ "item_count_in_jar": 20,
+ "chain": [
+  {
+   "id": "ribbits:toadstool",
+   "title": "Mushrooms In The Marsh",
+   "desc": "Toadstools are placed by the mod's toadstool_patch and veg_patch worldgen features in swamps, and five of them are also built into the ribbit village itself."
+  },
+  {
+   "id": "ribbits:toadstool_stem",
+   "title": "The Trunk Underneath",
+   "desc": "Toadstool stem is by far the most-placed block in the mod - 356 of them across the 29 village structure files. It is what the ribbit houses are built out of."
+  },
+  {
+   "id": "ribbits:swamp_daisy",
+   "title": "Something Flowering",
+   "desc": "Swamp daisies come from their own patch feature and from the shared veg_patch. They are the only flower the mod adds."
+  },
+  {
+   "id": "ribbits:umbrella_leaf",
+   "title": "Shelter For A Frog",
+   "desc": "Umbrella leaves generate in the swamp patches and are placed three times inside the village. The mod is named after frogs and this is the block that looks the part."
+  },
+  {
+   "id": "ribbits:swamp_lantern",
+   "title": "Light On The Path",
+   "desc": "Swamp lanterns are not craftable and not in any chest. Twenty-one of them are built into the village's lamp posts, so the only way to own one is to take it off a ribbit's street."
+  },
+  {
+   "id": "ribbits:giant_lilypad",
+   "title": "Big Enough To Stand On",
+   "desc": "The giant lilypad has its own worldgen patch and is the ONLY ribbits item that appears in the village chests - it is in the fisherman's main and storage chests, the gardener's and the nitwit's."
+  },
+  {
+   "id": "ribbits:mossy_oak_planks",
+   "title": "Moss On Oak",
+   "desc": "Oak planks with a moss block, or oak planks with a vine. Two shapeless recipes, and this is the mod's entire crafting content."
+  },
+  {
+   "id": "ribbits:mossy_oak_door",
+   "title": "A Ribbit's Front Door",
+   "desc": "Six mossy oak planks. Fifty-six of these are placed across the village, which makes the door the most recognisable thing the mod builds with."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "ribbits:mossy_oak_planks",
+   "members": [
+    "ribbits:mossy_oak_planks_slab",
+    "ribbits:mossy_oak_planks_stairs",
+    "ribbits:mossy_oak_planks_fence",
+    "ribbits:mossy_oak_planks_fence_gate",
+    "ribbits:mossy_oak_door"
+   ]
+  },
+  {
+   "hub": "ribbits:toadstool",
+   "members": [
+    "ribbits:red_toadstool",
+    "ribbits:brown_toadstool",
+    "ribbits:toadstool_stem",
+    "ribbits:swamp_daisy",
+    "ribbits:umbrella_leaf",
+    "ribbits:giant_lilypad",
+    "ribbits:swamp_lantern"
+   ]
+  }
+ ],
+ "notes": "THIS IS A SMALL MOD AND THE CHAIN IS SHORT ON PURPOSE. 20 registered ids, of which 5 are spawn eggs and 1 is uncompletable, leaving 14 obtainable things. The chain is 8 steps and is not padded; with 14 ids and two wheels, further steps would be repeats. LOADER: META-INF/mods.toml, modId ribbits, 1.20.1 Forge. Modrinth slug is ribbits. There are several near-name projects on Modrinth (ribbits-croaks, guard-ribbits, useful-ribbits, wandering-ribbit) and none of them is this mod. VERIFICATION, TWO PASSES: pass A took the 21 assets/ribbits/models/item stems INTERSECT the item./block. lang keys and gave 20. Pass B independently rebuilt from recipe results, loot-table entry names, blockstates and lang keys and gave 21. The single difference is maraca_in_hand, a model-only stem with zero data references - it is the third-person hand model the MaracaInHandRenderer and ItemInHandRendererMixin use, not an item. Final count stays 20. ENTITIES - THE FIVE-EGGS-ONE-MOB CASE: five spawn eggs exist (ribbit_fisherman, ribbit_gardener, ribbit_merchant, ribbit_nitwit, ribbit_sorcerer) but there is exactly ONE entity type. assets/ribbits/lang/en_us.json has a single entity.ribbits.* key, 'ribbit', and com/yungnickyoung/minecraft/ribbits/module/EntityTypeModule.class contains the single registry name 'ribbit'; RibbitEntity.class carries a 'profession' constant. The five professions are a data value on one mob, not five mobs. Confirmed from outside the mod too: data/alexsmobs/tags/entity_types/catfish_ignore_eating.json lists exactly one value, ribbits:ribbit. So a five-member ribbit-profession wheel cannot be written as entity ids, and NO kill: step appears anywhere in this file for a second reason as well - ribbits have no entity loot table at all, so killing one yields nothing. The five spawn eggs also have zero references anywhere in data/ (no recipe, no loot, no trade) and are creative-tab only, so they are excluded like any other creative item. DROPPED AS UNCOMPLETABLE, and this is a real consensus conflict: ribbits:maraca. It is a registered item with a model, a lang key, a MaracaItem class, a sound and three client render mixins, and it is what a ribbit holds - but it has NO recipe, NO loot table, NO chest entry and NO trade. I checked this against every 1.20.1 Forge build the project has (3.0.0, 3.0.1, 3.0.2, 3.0.4 and 3.0.5) and not one of them contains the string 'maraca' in any file under data/. moddb.json nevertheless lists ribbits:maraca as a quested item in published packs, so packs are either adding their own recipe, relying on the vanilla held-equipment death drop, or shipping a dead quest. Preferring the recipe graph as instructed: maraca is excluded from the chain and both wheels, and the conflict is recorded here. OBTAINABILITY of everything that IS included: all five mossy oak blocks plus the door are crafted (mossy_oak_planks has two recipes, oak planks + moss block and oak planks + vine, and everything else derives from the planks or from the corresponding vanilla oak block plus moss). The eight decorative blocks have no recipes and were each proven by a different route - a gzip-decompress-and-scan of the mod's 29 structure .nbt files counts toadstool_stem 356 times, red_toadstool 201, brown_toadstool 155, mossy_oak_door 56, swamp_lantern 21, swamp_daisy 7, toadstool 5 and umbrella_leaf 3, and every one of the eight has a block loot table that drops itself. On top of that, toadstool, swamp_daisy, umbrella_leaf and giant_lilypad have real worldgen: configured_feature/toadstool_patch, swamp_daisy_patch, umbrella_leaf_patch, giant_lilypad_patch and the shared veg_patch (which weights umbrella_leaf 1, toadstool 3, swamp_daisy 1). giant_lilypad is additionally the only ribbits id that appears in the mod's own chest loot, in fisherman_main, fisherman_storage, gardener and nitwit. CONSENSUS: moddb.json lists 12 ribbits ids. Eleven resolve in this jar and are used here; the twelfth is maraca, discussed above. moddb's ordering leads with the mossy oak family, which agrees with the recipe graph putting mossy_oak_planks at the root of everything craftable. DESIRABILITY: mossy_oak_planks_slab and mossy_oak_planks_stairs are kept out of the spine and appear only as wheel members."
+}

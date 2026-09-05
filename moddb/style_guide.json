@@ -1,0 +1,271 @@
+{
+  "meta": {
+    "purpose": "Original style library for generating FTB Quests titles and descriptions. Every example below was invented for this file. Nothing is copied from any modpack, wiki, or song.",
+    "register": "Playful, confident, short. Puns land once and move on. Facts before flavour. Second person, present tense.",
+    "created": "2026-08-28"
+  },
+  "title_patterns": [
+    {
+      "pattern": "pun_on_item",
+      "template_hint": "Wordplay built on the item's own name or function; the base word must stay recognisable.",
+      "examples_original": [
+        "Grind Over Matter — millstone or any grinding machine",
+        "Shaft Happens — kinetic shafts and gearboxes",
+        "Pipe Dreams — first fluid or item pipes",
+        "Tanks a Lot — fluid tank",
+        "Belt It Out — conveyor or mechanical belt",
+        "Alloy There! — first alloy ingot",
+        "Nugget About It — nugget-tier crafting",
+        "Chunk of the Action — chunk loader",
+        "A Boring Machine — tunnel bore or mining drill",
+        "Gear We Go — first cogwheels or gears",
+        "Casing the Joint — machine casings",
+        "Sear Pressure — searing or frying station"
+      ]
+    },
+    {
+      "pattern": "milestone_drama",
+      "template_hint": "Short declarative gravitas for a tier unlock or first-of-its-kind moment; no joke, let the moment carry it.",
+      "examples_original": [
+        "First Spark — first generator or battery",
+        "The Grid Goes Live — first connected energy network",
+        "Steel at Last — first steel ingot after a long chain",
+        "Ignition — first engine, boiler, or reactor start",
+        "The Sky Is Optional — first jetpack or flight item",
+        "Critical Mass — nuclear or max-tier reactor",
+        "Brass Tacks — mid-tier alloy age unlock",
+        "The Quarry Wakes — first automated miner",
+        "Endgame Knocks — final tier gate",
+        "Self-Sufficient at Last — first fully closed automation loop"
+      ]
+    },
+    {
+      "pattern": "collection_call",
+      "template_hint": "Frames a collect-the-set wheel as a curated exhibit or census; noun-phrase, sounds complete-able.",
+      "examples_original": [
+        "The Sapling Census — one of every sapling",
+        "A Rainbow in Wool — all sixteen wool colours",
+        "Every Egg, One Basket — spawn egg or poultry set",
+        "The Trophy Shelf — boss trophy wheel",
+        "Petal to the Metal — every mystical flower",
+        "Full Pantry — one of every crop",
+        "The Gem Cabinet — all gem types",
+        "Stamp the Atlas — visit every biome",
+        "One of Everything, Please — mixed grab-bag set",
+        "The Menagerie — capture or tame every mob"
+      ]
+    },
+    {
+      "pattern": "boss_gauntlet",
+      "template_hint": "Either a regal epithet ('Name, Title of Domain') or a short menace line that teases the fight without spoiling it.",
+      "examples_original": [
+        "Vexmara, Mother of Screams — invented epithet for a witch-type boss",
+        "The Hollow King — short epithet for an undead ruler",
+        "Ashen Tyrant of the Vault — epithet for a nether vault boss",
+        "Knock Before Entering — dungeon gatekeeper boss",
+        "No Second Chances — one-shot or hardcore arena fight",
+        "The Floor Is Lava, Officially — magma arena boss",
+        "Bring a Friend or Ten — raid-tier boss",
+        "It Was Never Sleeping — awakened ancient horror tease",
+        "Cut Off the Head — hydra or multi-phase boss",
+        "Last Door on the Left — final dungeon boss"
+      ]
+    },
+    {
+      "pattern": "cozy_cooking",
+      "template_hint": "Warm kitchen puns for food and farming quests; comfort over menace, never mock the player.",
+      "examples_original": [
+        "Knead to Know — first dough or bread",
+        "The Upper Crust — pies and pastries",
+        "Whisk It All — cake or batter step",
+        "Rise and Brine — pickled or fermented foods",
+        "Grill Seeker — smoker or grill",
+        "Butter Late Than Never — churn or butter",
+        "Soup's On — first cooking pot",
+        "Cream of the Crop — top-tier crop dish",
+        "A Full Stomach and Then Some — max-saturation feast item"
+      ]
+    },
+    {
+      "pattern": "idiom_twist",
+      "template_hint": "Take a common idiom and swap one word for the quest's noun; works when the idiom is universally known.",
+      "examples_original": [
+        "Strike While the Ingot's Hot — forge or anvil work",
+        "A Watched Pot Never Smelts — passive or slow smelter",
+        "Measure Twice, Quarry Once — quarry placement",
+        "The Early Bird Gets the Wyrm — dragon or wyrm hunt",
+        "Where There's Smoke, There's Dinner — campfire cooking",
+        "All Rails Lead Home — train or rail network",
+        "Don't Count Your Chickens — breeding automation",
+        "Waste Not, Watt Not — energy efficiency upgrade",
+        "Rome Wasn't Built in a Daycycle — large multiblock build"
+      ]
+    },
+    {
+      "pattern": "plain_utility",
+      "template_hint": "Bare item or system name for steps players will search for; clarity beats cleverness on required recipes.",
+      "examples_original": [
+        "Mechanical Press — required machine, tutorial step",
+        "Iron Tools — basic gear checkpoint",
+        "The Smeltery — multiblock introduction",
+        "Fluid Tanks — storage basics",
+        "Backpacks — literal, because players search this word",
+        "Getting Around — early travel overview",
+        "Storage 101 — first storage-mod quest",
+        "The Coke Oven — literal multiblock name",
+        "Power Basics — energy intro checkmark"
+      ]
+    },
+    {
+      "pattern": "escalation_series",
+      "template_hint": "Tiered upgrade chains; each title promises 'same thing, but more' with growing swagger.",
+      "examples_original": [
+        "Faster. — speed upgrade tier, one word and a full stop",
+        "The Furnace, but Angrier — upgraded furnace tier",
+        "The Bigger Boiler — boiler tier up",
+        "Overclocked — max-speed upgrade",
+        "Yes, You Need Another One — second machine of the same type",
+        "Mk. II — numbered machine tier",
+        "Past the Red Line — overdrive tier",
+        "Double or Nothing — ore doubling to tripling",
+        "The Same, but Bigger — scaled-up multiblock",
+        "Terminal Velocity — final speed tier"
+      ]
+    },
+    {
+      "pattern": "dimension_gate",
+      "template_hint": "Travel-poster or doorway framing for dimension access; half invitation, half warning.",
+      "examples_original": [
+        "Knock, Knock, Nether — first nether portal",
+        "Pack a Coat — frozen dimension",
+        "Through the Frame — first custom portal",
+        "Mind the Drop — void or sky dimension entry",
+        "Sunscreen Not Included — fire or desert dimension",
+        "The Door Downstairs — deep underground dimension",
+        "Customs and Immigration — ritual requirements before entry",
+        "Round Trip Not Guaranteed — one-way dimension warning",
+        "New Sky, Same You — mirror or alternate dimension"
+      ]
+    },
+    {
+      "pattern": "verb_first_command",
+      "template_hint": "Imperative punch for action quests: strong verb, concrete object, no filler.",
+      "examples_original": [
+        "Light the Forge — ignite a multiblock",
+        "Wake the Warden — deliberately trigger a boss",
+        "Chart the Depths — cave or ocean exploration",
+        "Ring the Dinner Bell — lure or feed mobs",
+        "Break the Cycle — end a curse mechanic",
+        "Seal the Rift — close a portal event",
+        "Raid the Bastion — structure loot run",
+        "Outrun the Storm — timed event",
+        "Feed the Furnace — fuel automation",
+        "Follow the Compass — structure-locating item"
+      ]
+    }
+  ],
+  "title_rules": [
+    "One to four words is the sweet spot; never exceed six words or about 28 characters, or the quest map truncates it.",
+    "Title Case everywhere; keep articles and short prepositions lowercase mid-title ('Chunk of the Action').",
+    "A bare item name beats a joke whenever the quest is a required crafting step players will Ctrl-F for.",
+    "One pun per screen-neighbourhood: two adjacent joke titles cancel each other out.",
+    "Never pun where the player arrives frustrated — death recovery, corruption cures, grief repair. Be plain and helpful there.",
+    "Bosses get either a regal epithet ('Name, Title of Domain') or a short menace line; never both, never a joke that deflates the fight.",
+    "Milestones get gravitas, not gags: short declarative, gold colour code.",
+    "Never spoil a boss twist or story beat in a title; tease, don't tell.",
+    "Ban 'Obtain X', 'Get X', 'Craft X' as titles — that is what the task icon already says.",
+    "Skip the pun when the item name itself is already a joke or too obscure; the reader must recognise the base word instantly.",
+    "Keep one naming motif per chapter: all-puns in cooking, all-epithets in the boss gauntlet. Consistency reads as intent.",
+    "Punctuation inside titles is a spice: at most one '?' or '!' or trailing '.' per chapter, used for effect ('Faster.').",
+    "Spell out numbers under ten unless it is a tier label ('Mk. II', 'Tier 3').",
+    "No real brands, songs, memes, or living people — they date the pack and invite takedowns.",
+    "A title is a permanent map label: it must still make sense after the quest is done."
+  ],
+  "desc_rules": [
+    "Lead with the how-to fact: the first sentence tells the player what to do or where to find it.",
+    "Second person, present tense, confident: 'You'll need rotation from above' — never 'the player should'.",
+    "One flavour clause maximum, and it comes after the facts, never before them.",
+    "If the quest gates progression, say what it unlocks next in one clause: 'This opens the brass line.'",
+    "One to three sentences for a normal quest; up to five only for chapter openers.",
+    "Colour usage: &e for item and block names, &6 for milestones and key nouns, &7 for optional hints and alternatives, &c for danger warnings, &8&o for a single whispered flavour line.",
+    "Return to the body colour immediately after a highlighted word; never let a colour bleed across a sentence.",
+    "Hazards get their own short &c sentence — explosion radius, curse effect, void drop — never buried mid-paragraph.",
+    "Name the exact interface: the keybind, the GUI tab, the JEI/REI trick. Specificity is the whole value of a questbook.",
+    "Never restate the task list ('Collect 3 iron') — write what the icons cannot show: where, why, and the gotcha.",
+    "Real numbers build trust: SU, FE/t, seconds, block ranges. Vague adjectives ('powerful', 'useful') build nothing.",
+    "Break idea groups with a blank line (\\n\\n); a wall of text is skipped, and a skipped description is a wasted quest.",
+    "Keep lore out of tech chapters; story chapters carry lore, tech chapters get at most one italic &8&o line.",
+    "Never say 'simply', 'just', or 'easy' about a step the player might struggle with; respect earns re-reads.",
+    "Mark optional or skippable content up front with &7 so completionists and speedrunners can both self-serve."
+  ],
+  "desc_templates": [
+    {
+      "kind": "machine",
+      "shape": "What it does in plain words, then the one setup fact everyone misses, then an optional &7 tip or what it unlocks.",
+      "examples_original": [
+        "Presses metal into &esheets&r. It needs rotation from directly above and squashes whatever sits on the belt below it.\n\n&7Sheets feed almost everything in the next row of this chapter.",
+        "The &eCrusher&r turns ores into dust at a 1-to-2 ratio — your first free ore doubling. Face the input toward your hopper line or it will spit items on the floor.",
+        "Burns any solid fuel into &e40 FE/t&r. It will not push power on its own: run a cable to it or slap a battery on top.\n\n&7Upgrade slots are hidden behind the side tab.",
+        "This is your autocrafter. Set the recipe with a &efilter ghost grid&r, feed it from any inventory, and it keeps a stock of whatever you pin.\n\n&8&oIt never sleeps. It never asks why."
+      ]
+    },
+    {
+      "kind": "boss",
+      "shape": "Where the fight lives, how to start it, one &c danger line, then the reward tease.",
+      "examples_original": [
+        "She spawns in the &etower ruin&r west of any swamp village. Place the &eskull idol&r on the altar to begin — the fight starts the moment it clicks in.\n\n&cShe silences potions in phase two. Drink before, not during.\n\n&7Her crown is the only key to the vault below.",
+        "Summon it by burning &e4 blighted roots&r in the ritual brazier at full moon. Bring a bow; it spends half the fight airborne.\n\n&cContact damage ignores armour. Do not hug the boss.",
+        "The arena is under the &edesert obelisk&r — drop through the false floor. It heals off nearby undead, so clear the room first.\n\n&7Drops the &6Sun Core&r, which starts the solar power line.",
+        "Ring the &ecracked bell&r three times and stand back. Phase one is a patience check; phase two is a geometry test.\n\n&cThe shockwave rings outward through walls. Height is safety."
+      ]
+    },
+    {
+      "kind": "material",
+      "shape": "Fastest current source first, one &7 alternate route, then what the material feeds next.",
+      "examples_original": [
+        "The fastest source right now is &esifting gravel&r — roughly one in four sifts. \n\n&7A fortune pick on deepslate veins works too, but slower.\n\nYou'll want a stack before the alloy furnace shows up.",
+        "Melt down &eraw ore&r in the smeltery for double output; each block yields two ingots' worth.\n\n&7The dwarven trader sells it at 3 emeralds if RNG hates you.\n\nThis is the backbone of every machine frame in this chapter.",
+        "Grows only on &esoul soil&r under a light level of 7 or lower. One farm plot of nine sustains everything this chapter asks for.\n\n&7Bonemeal works on it, but sparingly — it doubles the growth stages too.",
+        "Comes off the &eblaze-type mobs&r in the basalt deltas, one or two per kill. Looting helps a lot here.\n\nSix rods fund your first brewing setup and the fire-proofing line after it."
+      ]
+    },
+    {
+      "kind": "collection",
+      "shape": "Frame the set as an exhibit, say where the stragglers hide, promise the completion reward.",
+      "examples_original": [
+        "One of every &esapling&r in the pack — sixteen in all. The last two only drop in the &eflowering grove&r biome, so bring shears and patience.\n\n&6Finishing the set unlocks the arborist's crate.",
+        "Every &egem&r gets a slot here. Most come from mining; the odd ones hide in fishing loot and desert temple chests.\n\n&7Check the wandering trader on Tuesdays. Yes, really.",
+        "Sixteen colours of &ewool&r, no dye duplication tricks required — flowers cover fourteen of them.\n\n&6Complete the rainbow for a shepherd's bundle and a very smug feeling.",
+        "A trophy from each of the five &earena bosses&r. They drop every kill, so a lost trophy just means a rematch.\n\n&6The full shelf opens the champion's chapter."
+      ]
+    },
+    {
+      "kind": "dimension_access",
+      "shape": "Portal recipe or ritual first, short packing list, one &c hazard, one line on why to go.",
+      "examples_original": [
+        "Build a &e4x5 frame of polished basalt&r and light it with the ember lantern. The portal holds for ten minutes per charge.\n\nBring fire resistance and a stack of cobble.\n\n&cThe floor near spawn-in is unstable. Bridge, don't sprint.",
+        "The &evoid key&r drops from the final vault boss — one use, so mark your exit. \n\n&cNo beds work there. Set a respawn anchor before you jump.\n\n&7Everything that grows there grows nowhere else.",
+        "Throw a &eprism shard&r into any deep ocean ritual ring during a storm. The way back is the same ring on the far side.\n\nPack water breathing, a conduit if you have one, and empty inventory space — you'll want it.",
+        "Craft the &efrostgate sigil&r and right-click any intact ice spire. \n\n&cCold drains hunger twice as fast until you craft lined armour.\n\n&7The natives trade generously if you arrive unarmed."
+      ]
+    }
+  ],
+  "banned": [
+    "Title spam of the form 'Obtain X' / 'Get X' / 'Craft X' — the task icon already says it.",
+    "'Your first X. More to come.' — filler that promises nothing specific.",
+    "'Small step, big payoff' and any other empty aphorism that fits every quest equally.",
+    "'Time to...' as a repeated title or opener ('Time to Mine!', 'Time to Cook!').",
+    "'Congratulations! You have crafted...' — restating what the player just did.",
+    "'This is one of the most important items in the mod.' — says nothing; state the actual use.",
+    "'As you progress, you will find...' — vague forward reference with no fact.",
+    "'Simply craft...' or 'Just make...' with no location, source, or gotcha attached.",
+    "Multiple exclamation points, or an exclamation point on more than a couple of quests per chapter.",
+    "'Let's get started!' / 'Let's dive in!' chapter openers.",
+    "'Not just X, but Y' rhetorical constructions and chained em-dash asides.",
+    "'In this quest, you will...' — the questbook is not a syllabus.",
+    "Punning on every single title in a chapter — pun fatigue kills the good ones.",
+    "'Good luck!' endings pasted onto every description.",
+    "Adjective padding: 'powerful', 'amazing', 'useful', 'essential' with no number or fact behind them.",
+    "Copying or lightly rephrasing titles or sentences from existing packs, wikis, or songs."
+  ]
+}

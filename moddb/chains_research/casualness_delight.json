@@ -1,0 +1,85 @@
+{
+ "mod": "casualness_delight",
+ "verified_against": "casualness_delight-1.20.1-0.4n.jar",
+ "item_count_in_jar": 45,
+ "chain": [
+  {"id": "casualness_delight:deep_frying_pan", "title": "The Fryer", "desc": "Iron ingots, bricks, iron bars and a water bucket. It is the mod's only machine and it introduces a custom recipe type, casualness_delight:deep_frying, that nothing else in the pack uses."},
+  {"id": "casualness_delight:potato_slice", "title": "Slicing Potatoes", "desc": "A potato on a Farmer's Delight cutting board with any forge:tools/knives knife."},
+  {"id": "casualness_delight:potato_chip", "title": "Chips", "desc": "Potato slices in the deep frying pan; the simplest thing the fryer makes."},
+  {"id": "casualness_delight:tonkatsu", "title": "Tonkatsu", "desc": "A raw porkchop straight into the fryer. The lang file spells it 'Tonkasu'."},
+  {"id": "casualness_delight:raw_gluten", "title": "Washing the Dough", "desc": "Dough and a water bucket, shapeless; this is what seitan actually is."},
+  {"id": "casualness_delight:gluten", "title": "Cutting the Gluten", "desc": "Raw gluten on the cutting board with a knife."},
+  {"id": "casualness_delight:gluten_skewer", "title": "On a Stick", "desc": "Gluten threaded onto a stick."},
+  {"id": "casualness_delight:roast_gluten", "title": "Roast Gluten", "desc": "The skewer over a campfire; the end of the mod's vegetarian line."},
+  {"id": "casualness_delight:raw_potato_bobo_chicken", "title": "First Skewer", "desc": "Potato on a stick. Three raw skewers exist - potato, cabbage and chicken - and all three are needed at once for the feast."},
+  {"id": "casualness_delight:bobo_chicken", "title": "Bobo Chicken", "desc": "A cooking pot dish taking all three raw skewers together; it places as a feast block that serves cooked skewers back out."},
+  {"id": "casualness_delight:raw_donkey_meat", "title": "Kill a Donkey", "desc": "There is no recipe. The mod OVERRIDES minecraft's own donkey loot table so donkeys drop meat - the only way to obtain this item, and a change to vanilla the pack inherits whether or not it wants it."},
+  {"id": "casualness_delight:cooked_donkey_meat", "title": "Cooked Donkey", "desc": "Furnace or campfire on the raw meat."},
+  {"id": "casualness_delight:donkey_burger", "title": "Donkey Burger", "desc": "Cooked donkey meat, bread, onion and a salad ingredient, shapeless; the Hejian speciality this mod is named for."},
+  {"id": "casualness_delight:raw_fried_dumpling", "title": "Folding Dumplings", "desc": "Wheat dough, cabbage, onion and a porkchop."},
+  {"id": "casualness_delight:fried_dumpling", "title": "Frying Them", "desc": "Raw dumplings in the deep frying pan."},
+  {"id": "casualness_delight:plate_of_fried_dumpling", "title": "A Plate of Them", "desc": "Fried dumplings and a bowl; it places as a shared dish."},
+  {"id": "casualness_delight:raw_spring_roll", "title": "Rolling Spring Rolls", "desc": "A cabbage leaf, minced beef and dough - all three Farmer's Delight intermediates, so that mod is a hard prerequisite here."},
+  {"id": "casualness_delight:spring_roll", "title": "Fried Spring Roll", "desc": "Into the fryer."},
+  {"id": "casualness_delight:spring_roll_medley", "title": "Spring Roll Medley", "desc": "Spring rolls and a bowl."},
+  {"id": "casualness_delight:spicy_strips", "title": "Spicy Strips", "desc": "A cooking pot dish of dough, onion and ROTTEN FLESH; the mod turns the one food nobody wants into the one everybody does."},
+  {"id": "casualness_delight:sweet_rice", "title": "Sweet Rice", "desc": "Rice, apple, beetroot, honey and sugar in the cooking pot; it needs the forge:crops/rice tag, which Farmer's Delight does not supply on its own."},
+  {"id": "casualness_delight:beef_noodles", "title": "Beef Noodles", "desc": "Beef, cabbage, carrot, onion and forge:pasta in the cooking pot."},
+  {"id": "casualness_delight:paper_wrapped_fish", "title": "Paper Wrapped Fish", "desc": "Cod with cabbage, onion, tomato and potato; a feast block rather than a single serving."},
+  {"id": "casualness_delight:fish_and_chips", "title": "Fish and Chips", "desc": "A cod slice, dough and potato in the cooking pot."},
+  {"id": "casualness_delight:raw_cheese_wheel", "title": "Curdling It", "desc": "Milk and mushrooms in the cooking pot. Place the raw wheel and leave it."},
+  {"id": "casualness_delight:cheese_wheel", "title": "Aged Cheese", "desc": "The raw wheel matures in place; there is no recipe for the finished wheel, only a block loot table. It is obtained by waiting, which no recipe scan can see."},
+  {"id": "casualness_delight:phantom_puff", "title": "Phantom Puff", "desc": "A cheese wheel slice with milk and a phantom membrane; the cheese line's payoff."},
+  {"id": "casualness_delight:quiche_lorraine", "title": "Quiche Lorraine", "desc": "Pie crust, cooked bacon, smoked ham, eggs and milk - three Farmer's Delight items in one recipe."},
+  {"id": "casualness_delight:stargazy_pie", "title": "Stargazy Pie", "desc": "Pie crust, dough, eggs, milk and whole fish, heads out. The mod's own advancement text calls it eerie and says you won't want to eat it."}
+ ],
+ "collections": [
+  {
+   "hub": "casualness_delight:deep_frying_pan",
+   "members": [
+    "casualness_delight:potato_slice",
+    "casualness_delight:potato_chip",
+    "casualness_delight:tonkatsu",
+    "casualness_delight:fried_fish",
+    "casualness_delight:fried_dumpling",
+    "casualness_delight:spring_roll",
+    "casualness_delight:fried_chicken_chip"
+   ]
+  },
+  {
+   "hub": "casualness_delight:bobo_chicken",
+   "members": [
+    "casualness_delight:raw_cabbage_bobo_chicken",
+    "casualness_delight:raw_chicken_bobo_chicken",
+    "casualness_delight:raw_potato_bobo_chicken",
+    "casualness_delight:cabbage_bobo_chicken",
+    "casualness_delight:chicken_bobo_chicken",
+    "casualness_delight:potato_bobo_chicken"
+   ]
+  },
+  {
+   "hub": "casualness_delight:cheese_wheel",
+   "members": [
+    "casualness_delight:raw_cheese_wheel",
+    "casualness_delight:cheese_wheel_slice",
+    "casualness_delight:phantom_puff",
+    "casualness_delight:quiche_lorraine",
+    "casualness_delight:quiche_lorraine_slice",
+    "casualness_delight:stargazy_pie",
+    "casualness_delight:stargazy_pie_slice"
+   ]
+  },
+  {
+   "hub": "casualness_delight:beef_noodles",
+   "members": [
+    "casualness_delight:spicy_strips",
+    "casualness_delight:fish_and_chips",
+    "casualness_delight:phantom_dumplings",
+    "casualness_delight:sweet_rice",
+    "casualness_delight:paper_wrapped_fish",
+    "casualness_delight:green_tongue"
+   ]
+  }
+ ],
+ "notes": "NAIVE 45 OF 46 MODEL STEMS, AND THE NAIVE RULE IS CORRECT HERE. This mod is the control case for the slice: 46 item models, 45 item.casualness_delight.X / block.casualness_delight.X lang keys, 10 blockstates each with a matching loot table, and no composed names, no path separators, no NBT variants and no runtime registration anywhere. Worth recording precisely because it shows the naming problem is not universal - it is concentrated in mods that generate large variant families.\n\nDROPPED - casualness_delight:beef_bobo_chicken. The one model stem with no lang key. Its three siblings (cabbage_bobo_chicken, chicken_bobo_chicken, potato_bobo_chicken) all have lang keys AND raw_ counterparts; beef has neither a lang key, a raw_ counterpart, a recipe, a loot table nor any reference in any data file. A cut fourth skewer whose model was left behind.\nDROPPED - casualness_delight:yorkshire_pudding and the three bowl_of_* servings (bowl_of_sweet_rice, bowl_of_paper_wrapped_fish, bowl_of_fried_dumpling). All four are genuinely registered and named, but none appears as a recipe result, in a loot table, or anywhere else in the jar's data. The three bowls are almost certainly served by right-clicking the corresponding placed feast block, which is how Farmer's Delight feasts behave - but that is inference, not proof, so they are kept out of the chain and the wheels rather than guessed into a quest. yorkshire_pudding has no plausible source at all.\n\nOBTAINABILITY FOUND OUTSIDE RECIPES, and both cases would be missed by a recipe scan:\n  - casualness_delight:raw_donkey_meat. The mod ships data/minecraft/loot_tables/entities/donkey.json, REPLACING vanilla's donkey loot table so donkeys drop meat. That is a cross-namespace data override, not a registration, and it is the item's only source; the whole donkey burger line hangs off it. Any pack that loads another mod overriding the same vanilla table will silently break three quests.\n  - casualness_delight:cheese_wheel. Only raw_cheese_wheel has a recipe (milk plus mushrooms in a cooking pot). The finished wheel has a block loot table and no recipe: the placed raw wheel ages into it over time, handled by com/va11halla/casualness_delight/block/RawCheeseWheel.class. Obtained by waiting.\n\nHARD DEPENDENCY ON FARMER'S DELIGHT, stronger than the mod's name suggests. Nine of the 36 recipes are type farmersdelight:cooking and two are farmersdelight:cutting, so the cooking pot and cutting board are required tools, not conveniences. Recipes also consume farmersdelight:pie_crust, cabbage_leaf, minced_beef, chicken_cuts, cod_slice, cooked_bacon, smoked_ham and wheat_dough directly by id. Ingredient TAGS reach further still: forge:crops/rice, forge:crops/tomato, forge:pasta and forge:salad_ingredients are all needed and none of them is populated by Farmer's Delight alone - rice and tomato come from Farmer's Delight itself, but forge:pasta needs a pasta-adding mod. In a pack lacking one, casualness_delight:beef_noodles is uncraftable while every other dish still works. Worth checking per pack rather than assuming.\n\nCUSTOM RECIPE TYPE - casualness_delight:deep_frying, six recipes, all requiring the Deep Frying Pan block. It is the only gated machine in the mod, which is why it is step one; without it, potato_chip, tonkatsu, fried_fish, fried_dumpling, spring_roll and fried_chicken_chip are all unreachable, and those six are a seventh of the mod.\n\nCONSENSUS. moddb lists nine ids, all real, in the order spicy_strips, roast_gluten, plate_of_fried_dumpling, donkey_burger, sweet_rice, paper_wrapped_fish, spring_roll_medley, beef_noodles, bobo_chicken. No conflict with the recipe graph worth overriding - they are all late-ish finished dishes and their relative order is plausible. What consensus misses is the whole front of the mod: the deep frying pan, the cutting-board intermediates, the raw skewers, the gluten line and the donkey loot override, which between them are the only things in this mod that gate anything.\n\nMOD NAME TYPOS worth knowing before writing quest text: item.casualness_delight.fried_fish reads 'Fried Ship' and item.casualness_delight.tonkatsu reads 'Tonkasu'. Quest titles should use the correct spellings; the ids are fried_fish and tonkatsu regardless."
+}

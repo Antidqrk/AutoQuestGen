@@ -1,0 +1,215 @@
+{
+ "mod": "stalwart_dungeons",
+ "verified_against": "stalwart-dungeons-1.20.1-1.2.8.jar",
+ "item_count_in_jar": 98,
+ "chain": [
+  {
+   "id": "stalwart_dungeons:iron_hammer",
+   "title": "Swing Wide",
+   "desc": "Iron, smooth stone and two sticks. Hammers are the only part of this mod you can build before leaving home, and they break a whole block face at once."
+  },
+  {
+   "id": "stalwart_dungeons:diamond_hammer",
+   "title": "The Hammer Worth Upgrading",
+   "desc": "The diamond rung of the same ladder, and the only base the Netherite Hammer's smithing recipe will accept."
+  },
+  {
+   "id": "dim:minecraft:the_nether",
+   "title": "All Three Dungeons Are Down There",
+   "desc": "Stalwart Dungeons adds no dimension. Two of its three dungeons are Nether structures added by forge biome modifiers, so the Nether portal is the actual first gate."
+  },
+  {
+   "id": "stalwart_dungeons:spore_bottle",
+   "title": "Loot the Keeping Castle",
+   "desc": "The Keeping Castle generates in Crimson Forest and Nether Wastes. Spore Bottles sit in its chests - the structure NBT places them in stacks of three - and they are the only thing that upgrades Tungsten gear."
+  },
+  {
+   "id": "kill:stalwart_dungeons:giddy_blaze",
+   "title": "The Castle Guard",
+   "desc": "The Keeping Castle's resident blaze variant, standing around the Gibby Statues; it drops blaze rods and nether brick."
+  },
+  {
+   "id": "kill:stalwart_dungeons:nether_keeper",
+   "title": "Right-Click the Keeper's Altar",
+   "desc": "The Keeping Castle boss. He does not wander - the Nether Keeper Altar block inside the castle has an OnBlockRightClicked procedure that calls him."
+  },
+  {
+   "id": "stalwart_dungeons:ancient_fire",
+   "title": "Ancient Fire",
+   "desc": "The Nether Keeper's only unique drop. It is the reagent of the Igniter and the core of the Nether Hammer, so it gates everything after the first castle."
+  },
+  {
+   "id": "stalwart_dungeons:igniter",
+   "title": "A Key Made of Fire",
+   "desc": "Soul Bricks plus Ancient Fire. Igniters are placed all through the Awful Dungeon, which is how the mod tells you the second dungeon expects the first boss to be dead."
+  },
+  {
+   "id": "stalwart_dungeons:tungsten_ore",
+   "title": "Ore That Only Grows in a Dungeon",
+   "desc": "Tungsten Ore is in NO worldgen feature. It exists only inside the Awful Dungeon NBT, which generates in Warped Forest and Soul Sand Valley - you cannot mine your way to it."
+  },
+  {
+   "id": "stalwart_dungeons:tungsten_ingot",
+   "title": "Tungsten",
+   "desc": "Smelted or blasted from either Tungsten Ore or Raw Tungsten; the mod's mid metal and the base of every tool below Chorundum."
+  },
+  {
+   "id": "kill:stalwart_dungeons:reinforced_blaze",
+   "title": "Strip the Armoured Blaze",
+   "desc": "The Awful Dungeon's armoured blaze, and the sole source of Blaze Armor Scrap - which every single piece of Tungsten ARMOUR requires. The tools do not need it; the armour cannot be made without it."
+  },
+  {
+   "id": "stalwart_dungeons:blaze_armor_scrap",
+   "title": "Blaze Armor Scrap",
+   "desc": "Dropped only by the Reinforced Blaze. Helmet, chestplate, leggings, boots and the Tungsten Shield all list it in their recipes."
+  },
+  {
+   "id": "stalwart_dungeons:tungsten_chestplate",
+   "title": "Tungsten Plate",
+   "desc": "Tungsten Ingots welded with Blaze Armor Scrap; the first real armour tier the mod offers."
+  },
+  {
+   "id": "stalwart_dungeons:tungsten_hammer",
+   "title": "Tungsten Hammer",
+   "desc": "The tungsten rung of the hammer ladder, needing only ingots and sticks - no scrap."
+  },
+  {
+   "id": "kill:stalwart_dungeons:incomplete_wither",
+   "title": "Half a Wither",
+   "desc": "An Awful Dungeon hostile that drops a Wither Skeleton Skull outright, which makes clearing the dungeon worth doing twice."
+  },
+  {
+   "id": "kill:stalwart_dungeons:awful_ghast",
+   "title": "Right-Click the Ghast's Altar",
+   "desc": "The Awful Dungeon boss, summoned from the Awful Ghast Altar the same way the Keeper is. It drops ghast tears, the Awful Crystal and the Awful Gun."
+  },
+  {
+   "id": "stalwart_dungeons:awful_gun",
+   "title": "The Awful Gun",
+   "desc": "A direct Awful Ghast drop with no recipe anywhere in the jar - the only way to hold one is to kill the thing."
+  },
+  {
+   "id": "stalwart_dungeons:awful_dagger",
+   "title": "Crystal on a Stick",
+   "desc": "An Awful Crystal on a plain stick; the mod's fastest weapon and the other half of the ghast's drop table."
+  },
+  {
+   "id": "stalwart_dungeons:warted_tungsten_chestplate",
+   "title": "Warted",
+   "desc": "A Tungsten Chestplate and a Spore Bottle in a smithing table, with an EMPTY template slot - no smithing template exists in this mod, the bottle is the whole upgrade."
+  },
+  {
+   "id": "stalwart_dungeons:nether_hammer",
+   "title": "Nether Hammer",
+   "desc": "Eight nether bricks around a piece of Ancient Fire. The best hammer in the mod and the payoff for the Keeping Castle."
+  },
+  {
+   "id": "dim:minecraft:the_end",
+   "title": "The Third Dungeon Is in the End",
+   "desc": "The Ender Globe generates as a surface structure in End Midlands and End Highlands, so the dragon has to fall before the last third of the mod opens."
+  },
+  {
+   "id": "kill:stalwart_dungeons:propulk",
+   "title": "Things Inside the Globe",
+   "desc": "The Ender Globe's own hostile, placed throughout the sheltrerer_dungeons and shell_globe structures alongside the Shrusters and Obsidian Strikers."
+  },
+  {
+   "id": "kill:stalwart_dungeons:shelterer",
+   "title": "Right-Click the Shelterer's Altar",
+   "desc": "The End dungeon boss, third and last of the altar-summoned bosses. Its only drop is the Void Crystal."
+  },
+  {
+   "id": "stalwart_dungeons:void_crystal",
+   "title": "Void Crystal",
+   "desc": "The Shelterer's single drop, and the mod's final currency: Chorundum armour, the Chorundum Shield, the Teleporter Core and the Teleporter block all consume it."
+  },
+  {
+   "id": "stalwart_dungeons:chorundum_ore",
+   "title": "The Ore in the Globe",
+   "desc": "Like Tungsten, Chorundum Ore has no worldgen feature - it is placed only inside the two End dungeon NBTs, so the Ender Globe is its only source."
+  },
+  {
+   "id": "stalwart_dungeons:chorundum",
+   "title": "Chorundum",
+   "desc": "Smelted from Chorundum Ore; the mod's top material and the last tier of every tool and armour line."
+  },
+  {
+   "id": "stalwart_dungeons:chorundum_sword",
+   "title": "The Final Blade",
+   "desc": "Two Chorundum on a stick - the tools want nothing else, which makes the sword and pickaxe the first thing you can afford out of the End."
+  },
+  {
+   "id": "stalwart_dungeons:chorundum_armor_chestplate",
+   "title": "The Set That Needs the Boss",
+   "desc": "Chorundum with a Void Crystal set into it, so the full armour set costs one Shelterer kill per piece."
+  },
+  {
+   "id": "stalwart_dungeons:teleporter_pearl",
+   "title": "Teleporter Core",
+   "desc": "A Void Crystal shaken with an ender pearl; feed it into the Teleporter block for the mod's own warp network."
+  },
+  {
+   "id": "stalwart_dungeons:teleporter",
+   "title": "Purpur and a Crystal",
+   "desc": "Eight Purpur Bricks around a Void Crystal. It has its own screen and block entity - the endgame convenience the End dungeon pays out."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "stalwart_dungeons:wooden_hammer",
+   "members": [
+    "stalwart_dungeons:stone_hammer",
+    "stalwart_dungeons:golden_hammer",
+    "stalwart_dungeons:iron_hammer",
+    "stalwart_dungeons:diamond_hammer",
+    "stalwart_dungeons:netherite_hammer",
+    "stalwart_dungeons:tungsten_hammer",
+    "stalwart_dungeons:nether_hammer"
+   ]
+  },
+  {
+   "hub": "stalwart_dungeons:tungsten_helmet",
+   "members": [
+    "stalwart_dungeons:tungsten_chestplate",
+    "stalwart_dungeons:tungsten_leggings",
+    "stalwart_dungeons:tungsten_boots",
+    "stalwart_dungeons:tungsten_shield",
+    "stalwart_dungeons:warted_tungsten_helmet",
+    "stalwart_dungeons:warted_tungsten_chestplate",
+    "stalwart_dungeons:warted_tungsten_leggings",
+    "stalwart_dungeons:warted_tungsten_boots",
+    "stalwart_dungeons:warted_tungsten_shield"
+   ]
+  },
+  {
+   "hub": "stalwart_dungeons:chorundum_pickaxe",
+   "members": [
+    "stalwart_dungeons:chorundum_sword",
+    "stalwart_dungeons:chorundum_axe",
+    "stalwart_dungeons:chorundum_shovel",
+    "stalwart_dungeons:chorundum_hoe",
+    "stalwart_dungeons:chorundum_shield",
+    "stalwart_dungeons:chorundum_armor_helmet",
+    "stalwart_dungeons:chorundum_armor_chestplate",
+    "stalwart_dungeons:chorundum_armor_leggings",
+    "stalwart_dungeons:chorundum_armor_boots"
+   ]
+  },
+  {
+   "hub": "stalwart_dungeons:soul_bricks",
+   "members": [
+    "stalwart_dungeons:soul_tiles",
+    "stalwart_dungeons:soul_magma_bricks",
+    "stalwart_dungeons:nether_bricks_and_netherrack",
+    "stalwart_dungeons:nether_bricks_and_soul_sand",
+    "stalwart_dungeons:purpur_bricks",
+    "stalwart_dungeons:purpur_bricks_and_endstone",
+    "stalwart_dungeons:chiseled_end_stone_bricks",
+    "stalwart_dungeons:cracked_endstone_bricks",
+    "stalwart_dungeons:pusher",
+    "stalwart_dungeons:spore_vaporizer"
+   ]
+  }
+ ],
+ "notes": "LOADER VERIFIED: META-INF/mods.toml present, no fabric.mod.json, modId=stalwart_dungeons; Modrinth version 1.2.8 lists loaders [forge] only and game version 1.20.1. This is an MCreator mod (net/mcreator/stalwartdungeons/...). Item set = the 98 stems of assets/stalwart_dungeons/models/item/*.json intersected with item./block. keys in assets/stalwart_dungeons/lang/en_us.json; every id above is a member of that set - no widening needed, and the only model without a lang key is 'levitationprojectile', a projectile model. NO DIMENSION, AND NO structure: STEP IS POSSIBLE HERE. There is no data/stalwart_dungeons/dimension/ directory, no biome, and - critically - NO data/stalwart_dungeons/worldgen/structure/ directory and no structure_set at all. All three dungeons are raw .nbt files under data/stalwart_dungeons/structures/ placed by forge:add_features biome modifiers pointing at configured_feature and placed_feature jsons, NOT by the structure system. So although this mod is entirely about three dungeons, none of them is addressable as structure:stalwart_dungeons:<id> - such a step would be uncompletable. The dungeons are therefore represented by vanilla dim: steps plus the two ores and the boss loot that exist only inside them, which is the strongest handle the jar allows. STRUCTURE PLACEMENT, exact: data/stalwart_dungeons/forge/biome_modifier/keeping_castle_biome_modifier.json adds stalwart_dungeons:keeping_castle to crimson_forest and nether_wastes at step underground_structures; awful_dungeons_biome_modifier.json adds awful_dungeons to warped_forest and soul_sand_valley at underground_structures; end_dungeon_biome_modifier.json adds end_dungeon to end_midlands, end_highlands and the_void at surface_structures. BOSS LADDER, and it is a real ladder because two of the ores only exist inside the structures. Keeping Castle (Nether, common biomes) holds Giddy Blazes and the Nether Keeper Altar, and its chests hold spore_bottle (the structure NBT places stacks of 3 and 1 in chest Items lists) plus tungsten_ingot; the Nether Keeper drops stalwart_dungeons:ancient_fire, which is the only reagent of the Igniter and the Nether Hammer. Awful Dungeon (Nether, warped/soul sand) holds Reinforced Blazes, Incomplete Withers, the Awful Ghast Altar, Igniter blocks and the ONLY stalwart_dungeons:tungsten_ore in the game - the ore appears in no configured_feature or placed_feature, only in awful_dungeon.nbt and awful_dungeon_spawn.nbt. Ender Globe (End) holds Propulks, Shrusters, Obsidian Strikers, the Shelterer Altar and the ONLY stalwart_dungeons:chorundum_ore, again NBT-only. All three bosses are summoned rather than found: net/mcreator/stalwartdungeons/procedures/{NetherKeeperAltar,AwfulGhastAltar,SheltererAltar}OnBlockRightClickedProcedure.class. None of the three altar blocks has a block loot table, so they cannot be collected and carried home. ENTITY VERIFICATION. net/mcreator/stalwartdungeons/init/StalwartDungeonsModEntities.class registers seventeen types: projectile_spore_bottle, projectile_tungsten_shield, projectile_awful_gun, awful_ghast, nether_keeper, giddy_blaze, incomplete_wither, reinforced_blaze, projectile_chorundum_shield, projectile_end_dungeon_spawner, propulk, shelterer, spore_projectile, nether_wart_cocoon, shelterer_without_armor, shulker_cannon, projectile_cannon_pr. The six kill: targets used above each have BOTH data/stalwart_dungeons/loot_tables/entities/<id>.json and a <id>_spawn_egg item model, except propulk, which has a spawn egg and is placed by name inside shell_globe.nbt and sheltrerer_dungeons.nbt - verified by spawn egg plus structure placement rather than by loot table, and it therefore drops nothing. EXCLUDED: the six projectile_* types and spore_projectile (projectiles); shulker_cannon and nether_wart_cocoon, which are registered entity types with lang keys but no loot table, no spawn egg and no spawn data - shulker_cannon exists as a placed block in shell_globe.nbt with a matching shulker_cannon_item, i.e. it is a turret prop, not a mob; and stalwart_dungeons:shelterer_without_armor, which has a loot table but no spawn egg and shares the display name 'Shelterer' - it is the boss's stripped second phase, so a kill task naming it would be a trap. DROPPED, NO ACQUISITION PATH: stalwart_dungeons:awful_dungeon_spawner, keeping_castle_spawner and end_dungeon_spawner are registered items with models and lang keys but appear in no recipe, no loot table and no structure - they are creative structure-placement tools. Same for giddy_statue, shruster, obsidian_striker, shulker_cannon_item and cannon_pr: they have models and lang keys, and shruster and obsidian_striker are even in the vanilla pickaxe-mineable tag, but none has a block loot table or a recipe, so they cannot be recovered from the dungeons they decorate. logo_stalwart_dungeons and stalwart_dungeons_end_icon are UI textures. CONSENSUS: all fourteen moddb entries are real ids and every one appears here or in the wheels. moddb's order is unusable for a chapter opener - it starts on tungsten_leggings at 0.000 and finishes on nether_hammer at 1.000, with the three armour families interleaved and no mention of the Nether, the dungeons, the bosses or the two ores that gate them. The recipe-plus-structure graph was preferred throughout, and the one real ordering claim it makes that moddb misses is that Blaze Armor Scrap from the Reinforced Blaze is mandatory for every Tungsten armour piece."
+}

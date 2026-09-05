@@ -1,0 +1,173 @@
+{
+ "mod": "goetyhostility",
+ "verified_against": "goetyhostility-1.4.4.jar",
+ "item_count_in_jar": 145,
+ "chain": [
+  {
+   "id": "kill:goetyhostility:jungle_zombie",
+   "title": "Slay a Jungle Zombie",
+   "desc": "The gentlest of the mod's new mobs, spawning in place of ordinary zombies across jungles. Drops vines and rotten flesh - one kill is enough, it is the rest of the jungle you should worry about."
+  },
+  {
+   "id": "kill:goetyhostility:mossy_skeleton",
+   "title": "Slay a Mossy Skeleton",
+   "desc": "The jungle's overgrown archer, dropping bones and arrows like any skeleton. A safe first ranged fight before the plant mobs show up."
+  },
+  {
+   "id": "kill:goetyhostility:hostile_whisperer",
+   "title": "Slay a Whisperer",
+   "desc": "A jungle plant-horror that ambushes from the undergrowth. Beyond vines it drops Goety's Quick Growing Seed at 20% and Poison Quill Seed at 10%, so these are worth farming rather than avoiding."
+  },
+  {
+   "id": "kill:goetyhostility:hostile_leapleaf",
+   "title": "Slay a Leapleaf",
+   "desc": "A rare lone jungle prowler that lunges at you. It always drops a Corpse Blossom, a Goety reagent with no other source in this mod - hunt one specifically."
+  },
+  {
+   "id": "kill:goetyhostility:frozen_zombie",
+   "title": "Slay a Frozen Zombie",
+   "desc": "Snowy biomes get their own zombie, and it throws snowballs back at you. Drops snowballs and rotten flesh."
+  },
+  {
+   "id": "kill:goetyhostility:iceologer",
+   "title": "Slay an Iceologer",
+   "desc": "A snowy-biome illager that drops ice clouds on your head from range. Kill one for Blue Ice, which normally means a trip to an iceberg or a lot of packed ice."
+  },
+  {
+   "id": "kill:goetyhostility:vanguard",
+   "title": "Slay a Vanguard",
+   "desc": "Shield-carrying desert illagers who block anything coming at them head-on - flank them or break the guard first. Drops iron nuggets and bones."
+  },
+  {
+   "id": "kill:goetyhostility:geomancer",
+   "title": "Slay a Geomancer",
+   "desc": "A savanna illager that raises stone walls and spike traps to pin you in place. Drops amethyst shards, which is a useful shortcut long before you find a geode."
+  },
+  {
+   "id": "kill:goetyhostility:sunken_skeleton",
+   "title": "Slay a Sunken Skeleton",
+   "desc": "Skeletons that spawn underwater in oceans and shoot perfectly well down there. Ordinary bone and arrow drops - this one is about surviving the fight, not the loot."
+  },
+  {
+   "id": "kill:goetyhostility:hostile_wavewhisperer",
+   "title": "Slay a Wavewhisperer",
+   "desc": "The ocean cousin of the Whisperer, dropping kelp reliably and the same two Goety seeds at low odds. A second, safer source of Quick Growing and Poison Quill Seeds if the jungle is picked clean."
+  },
+  {
+   "id": "kill:goetyhostility:tropical_slime",
+   "title": "Slay a Tropical Slime",
+   "desc": "Only spawns around warm ocean ruins, so you have to go looking for it. Purely a bestiary entry - it carries no special drop."
+  },
+  {
+   "id": "kill:goetyhostility:vindicator_chef",
+   "title": "Slay a Vindicator Chef",
+   "desc": "Joins village raids from the third wave and hurls scalding soup. Drops emeralds, and is your first warning that this mod has rewritten what a raid contains."
+  },
+  {
+   "id": "kill:goetyhostility:mountaineer",
+   "title": "Slay a Mountaineer",
+   "desc": "An axe-throwing raider that arrives in raid wave five and later, up to three at once. Drops emeralds; expect Iceologers and Geomancers in the same waves."
+  },
+  {
+   "id": "kill:goetyhostility:hostile_squall_golem",
+   "title": "Slay a Squall Golem",
+   "desc": "A heavyweight construct that joins raids from wave six. Drops gold ingots and several pieces of Goety's Jade, which makes late raids the best Jade income in the pack."
+  },
+  {
+   "id": "kill:goetyhostility:wind_caller",
+   "title": "Slay a Wind Caller",
+   "desc": "The raid's summoner, one per wave from wave six, dropping emeralds and Jade. It also has a 1% chance at a Goety Wind Core - if that is what you want, plan on many raids, not one."
+  },
+  {
+   "id": "kill:goetyhostility:zombified_piglin_brute",
+   "title": "Zombify a Piglin Brute",
+   "desc": "This one never spawns naturally. Lure a Piglin Brute out of a bastion and through a portal, and the zombification turns it into this instead of killing it. A trophy fight - it carries no drop of its own."
+  },
+  {
+   "id": "structure:goetyhostility:raging_inferno",
+   "title": "Find the Raging Inferno",
+   "desc": "A gilded basalt fortress built over Nether lava pools, generating in all four main Nether biomes roughly every 96 chunks. Its towers hold spawners, nether fortress and bastion loot chests, and Goety pedestals, dark altars and a cursed cage."
+  },
+  {
+   "id": "kill:goetyhostility:inferno",
+   "title": "Slay an Inferno",
+   "desc": "The fortress garrison - a heavier, shielded blaze standing on every bridge and tower. Drops blaze rods, so clearing the Raging Inferno doubles as a blaze rod run and you will fight plenty of them."
+  },
+  {
+   "id": "kill:goetyhostility:wildfire",
+   "title": "Slay the Wildfire",
+   "desc": "The mod's mini-boss, waiting in the fortress main hall with its own theme music. It summons blazes and fires shockwaves, and always drops a Goety Treasure Pouch and netherite scrap, plus a Blazing Helm one time in five."
+  },
+  {
+   "id": "goetyhostility:music_disc_wildfire",
+   "title": "Claim the Wildfire's Disc",
+   "desc": "A 25% player-kill drop from the Wildfire, so expect to find several fortresses before it turns up. Put it in a jukebox to keep the boss theme after the fight."
+  },
+  {
+   "id": "goetyhostility:wildfire_statue",
+   "title": "Take the Wildfire Statue",
+   "desc": "The effigy standing over the boss arena. It has no recipe and each fortress has exactly one, so break it and carry it home - it is the only trophy of this fight you can put on a shelf."
+  },
+  {
+   "id": "goetyhostility:golden_bricks",
+   "title": "Craft Golden Bricks",
+   "desc": "The fortress's signature gilded blockwork - four gold blocks for sixteen bricks, with matching stairs, slabs and walls. This is how you rebuild the Raging Inferno's look at home."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "goetyhostility:gilded_basalt_tiles",
+   "members": [
+    "goetyhostility:basalt_tiles",
+    "goetyhostility:polished_basalt_tiles",
+    "goetyhostility:broken_basalt_tiles",
+    "goetyhostility:ruined_basalt_tiles",
+    "goetyhostility:ruined_gilded_basalt_tiles",
+    "goetyhostility:decayed_gilded_basalt_tiles"
+   ]
+  },
+  {
+   "hub": "goetyhostility:blackstone_tiles",
+   "members": [
+    "goetyhostility:broken_blackstone_tiles",
+    "goetyhostility:decayed_blackstone_tiles"
+   ]
+  },
+  {
+   "hub": "goetyhostility:nether_brick_tiles",
+   "members": [
+    "goetyhostility:broken_nether_brick_tiles",
+    "goetyhostility:bumpy_nether_brick_tiles",
+    "goetyhostility:damaged_nether_brick_tiles",
+    "goetyhostility:warted_nether_brick_tiles",
+    "goetyhostility:heavily_warted_nether_brick_tiles",
+    "goetyhostility:red_nether_brick_tiles",
+    "goetyhostility:broken_red_nether_brick_tiles",
+    "goetyhostility:cracked_red_nether_brick_tiles",
+    "goetyhostility:indented_red_nether_bricks",
+    "goetyhostility:cooled_magma_block"
+   ]
+  },
+  {
+   "hub": "goetyhostility:granite_bricks",
+   "members": [
+    "goetyhostility:cracked_granite_bricks",
+    "goetyhostility:sandy_granite_bricks",
+    "goetyhostility:granite_tiles",
+    "goetyhostility:sandy_granite_tiles",
+    "goetyhostility:grown_granite_tiles",
+    "goetyhostility:decayed_granite_tiles",
+    "goetyhostility:chiseled_granite"
+   ]
+  },
+  {
+   "hub": "goetyhostility:sandy_prismarine",
+   "members": [
+    "goetyhostility:heavy_sandy_prismarine",
+    "goetyhostility:sandy_prismarine_bricks",
+    "goetyhostility:grown_gravel"
+   ]
+  }
+ ],
+ "notes": "A Goety addon that ports Minecraft Dungeons mobs, so almost nothing here is crafted and the chain is deliberately kill- and place-driven. Of 145 registry entries only 20 are items (19 spawn eggs plus one music disc); the other 125 are decorative blocks, which is why they live in collections. The 19 spawn eggs are deliberately kept out of both chain and collections - they are creative-tab only and a quest asking for one is unfillable. WATCH THE ID MISMATCH: the entities are goetyhostility:hostile_leapleaf, hostile_whisperer, hostile_wavewhisperer and hostile_squall_golem, but their spawn eggs drop the prefix - leapleaf_spawn_egg, whisperer_spawn_egg, wavewhisperer_spawn_egg, squall_golem_spawn_egg. Biome spawns are from data/goetyhostility/forge/biome_modifier: jungle (jungle_zombie, mossy_skeleton, hostile_whisperer, hostile_leapleaf), #forge:is_snowy (frozen_zombie, iceologer), #forge:is_desert (vanguard), savanna (geomancer), ocean (sunken_skeleton, hostile_wavewhisperer), warm ocean ruins (tropical_slime). Mountaineer, Squall Golem, Wind Caller, Vindicator Chef, Iceologer and Geomancer are injected into village raid waves by GHRaidAdditions; the wave numbers quoted in the descs are the shipped defaults from config/goetyhostility/goetyhostility-common.toml and a pack can change them. BLACKGUARD IS UNREACHABLE IN SURVIVAL in 1.4.4 - a BLACKGUARD_SPAWNS registry key exists in code but no biome modifier ships for it and it does not appear in any raging_inferno structure piece, so it is spawn-egg only and is deliberately not in the chain despite having a loot table. Zombified Piglin Brute likewise has no spawn rule and no loot table; GHForgeEvents converts a vanilla Piglin Brute into one on zombification, so write it as a kill, never as a drop. Inferno and Wildfire have no biome spawns either - they are baked into the structure NBTs (Infernos across every bridge and tower piece, one Wildfire and one Wildfire Statue in raging_inferno_main_1). The structure is goetyhostility:raging_inferno, a jigsaw that only places over Nether lava pools at y=33 in nether_wastes, soul_sand_valley, crimson_forest and warped_forest, spacing 96 / separation 48. Wildfire is tagged goety:mini_bosses and drops goety:treasure_pouch and minecraft:netherite_scrap guaranteed, goety:blazing_helm at 20% and goetyhostility:music_disc_wildfire at 25%, all player-kill only. Many drops are Goety items (goety:jade, corpse_blossom, quick_growing_seed, poison_quill_seed, wind_core, treasure_pouch, blazing_helm), so this book reads best sitting beside Goety's. The 122 advancements in the jar are all auto-generated recipe unlocks and carry no authored progression. Decorative blocks are almost entirely stonecutter recipes from vanilla stone; the only crafting-table recipes worth surfacing are golden_bricks (4 gold blocks -> 16) and the kelp-combined grown_granite_tiles and grown_gravel."
+}

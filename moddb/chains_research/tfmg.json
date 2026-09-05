@@ -1,0 +1,183 @@
+{
+ "mod": "tfmg",
+ "verified_against": "tfmg-1.0.2f.jar",
+ "item_count_in_jar": 578,
+ "chain": [
+  {
+   "id": "tfmg:fireclay_ball",
+   "title": "Clay That Will Not Melt",
+   "desc": "Mined from the fireclay deposits the mod scatters underground; each block drops four. Nothing else in the mod substitutes for it, so find some before planning anything."
+  },
+  {
+   "id": "tfmg:fireproof_brick",
+   "title": "Lining the Furnace",
+   "desc": "One fireclay ball in a furnace. Every hot machine the mod builds, from the coke oven to the arc furnace vat, is lined with these."
+  },
+  {
+   "id": "tfmg:cast_iron_ingot",
+   "title": "Iron With Carbon In It",
+   "desc": "An iron ingot compacted with coal in a heated basin. Brittle, cheap, and the working metal for everything you build before real steel exists."
+  },
+  {
+   "id": "tfmg:coke_oven",
+   "title": "Baking the Coal",
+   "desc": "Cast iron around a Create industrial iron block, two at a time. Built into a multiblock it drives volatiles out of coal without burning it."
+  },
+  {
+   "id": "tfmg:coal_coke",
+   "title": "Hotter Than Coal",
+   "desc": "Coal cooked in the oven, which also yields creosote and carbon dioxide. Burns far hotter, and pressed into blocks it becomes graphite electrodes."
+  },
+  {
+   "id": "tfmg:hardened_planks",
+   "title": "Soaked in Tar",
+   "desc": "Planks filled with creosote at a spout. Rot-proof timber that becomes steel casing and, cut on a saw, the empty spools every coil is wound on."
+  },
+  {
+   "id": "tfmg:blast_furnace_hatch",
+   "title": "The Furnace Takes Shape",
+   "desc": "Fireproof bricks, cast iron plates, pipes and a tank. One face of the blast furnace multiblock, where charge goes in and hot blast is fed."
+  },
+  {
+   "id": "tfmg:steel_ingot",
+   "title": "Poured, Not Smelted",
+   "desc": "Molten steel from the blast furnace, cast in a casting basin. The whole second half of the mod is measured in these."
+  },
+  {
+   "id": "tfmg:heavy_plate",
+   "title": "Pressed Until It Gives",
+   "desc": "A steel ingot through repeated pressing in a sequenced assembly. Thicker than any Create sheet, and the base of mechanisms and machine frames alike."
+  },
+  {
+   "id": "tfmg:heavy_machinery_casing",
+   "title": "Housing for Real Machines",
+   "desc": "Steel plates applied onto steel casing, which is itself hardened planks clad in steel. Almost every industrial block sits inside one."
+  },
+  {
+   "id": "tfmg:steel_mechanism",
+   "title": "The Industrial Brain",
+   "desc": "Heavy plate through two loops of deploying with steel cogwheels. This mod's answer to the precision mechanism, and a gate on every machine ahead."
+  },
+  {
+   "id": "tfmg:surface_scanner",
+   "title": "Looking for the Reservoir",
+   "desc": "Electron tubes over a steel mechanism and heavy casing. Surveys the chunks around it and tells you whether oil is worth drilling for here."
+  },
+  {
+   "id": "tfmg:pumpjack_base",
+   "title": "Sinking the Well",
+   "desc": "Heavy casing, steel mechanisms, industrial and steel pipe, a tank and string. The foundation the whole nodding derrick is assembled on."
+  },
+  {
+   "id": "tfmg:crude_oil_bucket",
+   "title": "What the Ground Was Hiding",
+   "desc": "Drawn up by a working pumpjack from a mapped deposit. Worthless as it stands; every fuel and every plastic in the mod is refined out of it."
+  },
+  {
+   "id": "tfmg:steel_distillation_controller",
+   "title": "Splitting the Barrel",
+   "desc": "Heavy casing, steel mechanisms, industrial pipe, lead plates, electron tubes and a compass. Heads a tower that cracks crude into heavy oil, diesel, kerosene and naphtha."
+  },
+  {
+   "id": "tfmg:plastic_sheet",
+   "title": "Oil Made Solid",
+   "desc": "Naphtha cracked in a chemical vat to ethylene or propylene, polymerised to molten plastic, then cast into sheets. The gateway to every circuit board."
+  },
+  {
+   "id": "tfmg:aluminum_ingot",
+   "title": "Electricity Into Metal",
+   "desc": "Bauxite crushed to powder, then smelted in a vat between two electrodes. Light, and the only sensible metal for engine cylinders and pipework."
+  },
+  {
+   "id": "tfmg:silicon_ingot",
+   "title": "Sand Under Arc Light",
+   "desc": "Industrial blasting turns quartz sand into liquid silicon, which casts into ingots. Doped into P and N semiconductors it becomes every transistor you will need."
+  },
+  {
+   "id": "tfmg:circuit_board",
+   "title": "Etched, Coated, Populated",
+   "desc": "A plastic sheet becomes an empty board, gold-coated, acid-etched in a vat, then run through four loops of deploying with capacitors and transistors."
+  },
+  {
+   "id": "tfmg:winding_machine",
+   "title": "Turns, Counted",
+   "desc": "Heavy casing, a steel mechanism, heavy plate, steel and a shaft. Spins wire off a spool onto a core and records exactly how many turns went on."
+  },
+  {
+   "id": "tfmg:generator",
+   "title": "Rotation Sold as Voltage",
+   "desc": "A shaft through three loops of assembly with coils, casings and capacitors. The first block that turns your existing Create drivetrain into an electrical grid."
+  },
+  {
+   "id": "tfmg:electric_motor",
+   "title": "The Grid Pushes Back",
+   "desc": "A shaft wound with coils and finished with nickel sheet. Takes the current a generator makes and hands back rotation wherever a belt cannot reach."
+  },
+  {
+   "id": "tfmg:heavy_cable_hub",
+   "title": "Where the Lines Meet",
+   "desc": "Copper wire above and below a heavy machinery casing, two at a time. The high-throughput junction that ties generators, motors and storage together."
+  },
+  {
+   "id": "tfmg:regular_engine",
+   "title": "Internal Combustion",
+   "desc": "Heavy plate, steel and a heavy machinery casing give two. Burns refined fuel for rotation directly, and it is the smallest of a whole family of engines."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "tfmg:blast_furnace_hatch",
+   "members": [
+    "tfmg:blast_furnace_reinforcement",
+    "tfmg:blast_furnace_output",
+    "tfmg:blast_stove",
+    "tfmg:firebox",
+    "tfmg:casting_basin",
+    "tfmg:fireproof_bricks",
+    "tfmg:graphite_electrode",
+    "tfmg:electrode_holder",
+    "tfmg:cast_iron_fluid_tank",
+    "tfmg:cast_iron_pipe",
+    "tfmg:steel_casing"
+   ]
+  },
+  {
+   "hub": "tfmg:heavy_cable_hub",
+   "members": [
+    "tfmg:cable_tube",
+    "tfmg:cable_connector",
+    "tfmg:electric_post",
+    "tfmg:transformer",
+    "tfmg:converter",
+    "tfmg:accumulator",
+    "tfmg:voltmeter",
+    "tfmg:multimeter",
+    "tfmg:electrical_switch",
+    "tfmg:light_bulb",
+    "tfmg:capacitor_item",
+    "tfmg:copper_spool",
+    "tfmg:empty_spool",
+    "tfmg:electric_pump"
+   ]
+  },
+  {
+   "hub": "tfmg:regular_engine",
+   "members": [
+    "tfmg:simple_large_engine",
+    "tfmg:large_engine",
+    "tfmg:radial_engine",
+    "tfmg:turbine_engine",
+    "tfmg:diesel_engine_cylinder",
+    "tfmg:crankshaft",
+    "tfmg:transmission",
+    "tfmg:engine_gearbox",
+    "tfmg:turbo",
+    "tfmg:air_intake",
+    "tfmg:exhaust",
+    "tfmg:spark_plug",
+    "tfmg:engine_controller"
+   ]
+  }
+ ],
+ "notes": "Create: The Factory Must Grow (modid tfmg) is NOT on Modrinth under the slug create-factory-multiblocks or tfmg; the correct project slug is create-tfmg, found by search, and the jar used is tfmg-1.0.2f.jar (Forge 1.20.1, latest release for that game version). TFMG is the heaviest addon of the seven and still assumes base Create is finished. Base-Create dependencies derived from the recipes: create:andesite_alloy, create:shaft, create:cogwheel, create:propeller, create:electron_tube, create:industrial_iron_block, create:framed_glass, create:andesite_bars, create:limestone (crushed to tfmg:limesand for cement), create:crushed_raw_iron, plus a heated basin/mixer, crushing wheels, a mechanical press, a spout, a deployer, a mechanical saw, mechanical crafters and a full sequenced-assembly line. THE SPINE, straight off the recipe graph: fireclay (a WORLDGEN block, see below) gives fireproof bricks, which line the coke oven and the blast furnace. Cast iron (compacting iron plus coal, heated) builds those two multiblocks. The coke oven yields coal coke plus creosote plus carbon dioxide; creosote makes hardened planks, which make steel casing and empty spools. The blast furnace yields molten steel, cast in a casting basin to steel ingots. Steel gives heavy plate, heavy machinery casing and the steel mechanism, and the mechanism gates the surface scanner, the pumpjack, the distillation controller and the winding machine. Oil then splits into fuels and into naphtha, which polymerises to plastic, which becomes circuit boards; silicon and semiconductors join those, and the electrical tier (generator, motor, cable hubs, transformers) closes the loop back onto Create rotation. IMPORTANT SOURCING FINDING: tfmg:fireclay_ball has NO recipe anywhere in the 649 recipe files. It is a loot-table drop - data/tfmg/loot_tables/blocks/fireclay.json drops four fireclay_ball per tfmg:fireclay block, and tfmg:fireclay is placed by the mod worldgen (data/tfmg/worldgen/**). It is therefore a gather-from-the-world quest, not a craft, and it is a hard gate on the entire mod: no fireclay means no fireproof brick, no coke oven, no blast furnace and no steel. Any generator that only reads recipe files will miss this and produce an unstartable chain, which is why it is deliberately step 1. A second registry note: tfmg ships six custom recipe types that a Create-only scraper will not understand - tfmg:coking (2), tfmg:hot_blast (1), tfmg:industrial_blasting (4), tfmg:casting (5), tfmg:distillation (6), tfmg:vat_machine_recipe (10), tfmg:winding (2), tfmg:polarizing (1). Between them they are the ONLY source of tfmg:steel_ingot, :silicon_ingot, :aluminum_ingot, :plastic_sheet, :rubber_sheet, :coal_coke, :etched_circuit_board, :magnet, :electromagnetic_coil, :cinderblock and :slag_block, plus every refined fuel. All were parsed for this chain. ORDERING CONFLICTS vs moddb consensus (26 entries, ALL 26 id-verified against the jar, none renamed or impossible): the consensus positions are badly compressed and in several places inverted. (1) tfmg:silicon_ingot and tfmg:p_semiconductor and tfmg:nickel_ingot all sit at pos 0.000, but silicon requires tfmg:industrial_blasting in a vat, which requires steel, which requires the blast furnace, which requires fireclay and coke - four multiblocks deep. (2) tfmg:radial_engine at 0.024 and tfmg:regular_engine at 0.071 and tfmg:simple_large_engine at 0.143 are placed in the first seventh of the book, but all three consume tfmg:heavy_machinery_casing, which is steel casing plus steel plates. (3) tfmg:cast_iron_ingot at 0.083 correctly precedes tfmg:coke_oven at 0.194 and tfmg:fireproof_brick at 0.139, but tfmg:fireclay_ball at 0.056 should precede fireproof_brick and does - that ordering was kept. (4) tfmg:capacitor_item 0.190 and tfmg:constantan_spool 0.214 depend on steel plate and copper wire respectively and are likewise too early. The recipe graph was preferred throughout and the whole electrical tier moved behind steel. DESIRABILITY APPLIED: the ingot is quested and the nugget and raw form are not - tfmg:steel_ingot, :cast_iron_ingot, :aluminum_ingot and :silicon_ingot are on the spine while :steel_nugget, :cast_iron_nugget, :aluminum_nugget, :nickel_nugget, :lead_nugget, :lithium_nugget, :constantan_nugget, :raw_lead, :raw_nickel, :raw_lithium, :crushed_raw_lithium and every *_ore id were excluded. Excluded wholesale for the same reason: the 16 colours x 4 forms of concrete/rebar_concrete/caution_block/multimeter decorative sets (64 ids), the bauxite and galena and slag and fireproof brick stonecut palettes, and every _slab/_stairs/_wall/_fence/stripped_ variant - together these are most of the 578 valid ids and roughly 197 of the 649 recipes are plain stonecutting between them. VALID BUT UNUSED for length, all craftable and all reasonable additions if the book has room: tfmg:industrial_mixer, :mixer_blade, :centrifuge, :cast_iron_chemical_vat, :steel_chemical_vat, :fireproof_chemical_vat, :polarizer, :magnet, :magnetic_alloy_ingot, :pumpjack_crank, :pumpjack_hammer, :oil_hammer, :oil_can, :flarestack, :screw, :rebar, :cement, :concrete_mixture, :asphalt_mixture, :bitumen, :nitrate_dust, :sulfur_dust, :bauxite_powder, :lithium_ingot, :lithium_charge, :lead_ingot, :nickel_ingot, :constantan_ingot, :constantan_wire, :copper_wire, :coated_circuit_board, :etched_circuit_board, :transistor_item, :resistor, :potentiometer, :p_semiconductor, :n_semiconductor, :rubber_sheet, :electricians_wrench, :screwdriver, :fire_extinguisher, :flamethrower and the grenade and potato cannon line. DROPPED: tfmg:creative_generator (creative-only), tfmg:debug_cinderblock (a debug block), tfmg:deposit_item and tfmg:oil_deposit and tfmg:machine_input (internal marker items with no recipe), and the eleven unfinished_* and unprocessed_* sequenced-assembly transitional ids."
+}

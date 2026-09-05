@@ -1,0 +1,246 @@
+{
+ "mod": "botania",
+ "verified_against": "Botania-1.20.1-454-FORGE.jar",
+ "item_count_in_jar": 847,
+ "chain": [
+  {
+   "id": "botania:lexicon",
+   "title": "Lexica Botania",
+   "desc": "A Book shapelessly crafted with any sapling. Every recipe, flower and multiblock in the mod is documented here, and the book rewrites itself as you unlock things."
+  },
+  {
+   "id": "botania:white_mystical_flower",
+   "title": "Sixteen Colours In The Grass",
+   "desc": "Mystical Flowers generate worldwide in all sixteen dye colours and sparkle faintly. Pluck them for Mystical Petals, the currency every flower recipe is paid in."
+  },
+  {
+   "id": "botania:apothecary_default",
+   "title": "Petal Apothecary",
+   "desc": "Cobblestone around a petal. Fill it with water, throw in the petals a recipe calls for, then throw in any seeds to finish. Every functional and generating flower is made in this bowl."
+  },
+  {
+   "id": "botania:pure_daisy",
+   "title": "Pure Daisy",
+   "desc": "Four white petals and a seed in the Apothecary. Place it down and it slowly purifies the blocks around it into Botania's two structural materials."
+  },
+  {
+   "id": "botania:livingwood_log",
+   "title": "Livingwood",
+   "desc": "Stack any logs beside a Pure Daisy and wait. Livingwood is the wood every Botania machine is framed in."
+  },
+  {
+   "id": "botania:twig_wand",
+   "title": "Wand of the Forest",
+   "desc": "Two petals and three Livingwood Twigs. Craft this the moment you have Livingwood: it binds Mana Spreaders to their targets, reads the mana level of anything you point it at, and draws the multiblock outlines the lexicon describes."
+  },
+  {
+   "id": "botania:livingrock",
+   "title": "Livingrock",
+   "desc": "The Pure Daisy's other output, made from plain Stone. Pools, altars and the plate are all built from it."
+  },
+  {
+   "id": "botania:mana_spreader",
+   "title": "Mana Spreader",
+   "desc": "Livingwood logs around a copper ingot and a petal. It fires mana in a straight burst; bind it to a target with the Wand of the Forest."
+  },
+  {
+   "id": "botania:mana_pool",
+   "title": "Mana Pool",
+   "desc": "Livingrock in a U. This is the reservoir every spreader fires into, and the vessel every infusion recipe happens in."
+  },
+  {
+   "id": "botania:endoflame",
+   "title": "Endoflame",
+   "desc": "Brown, light gray and red petals. It eats any furnace fuel dropped near it and trickles mana into a spreader, which makes it the first generating flower worth automating, usually with an Open Crate on a timer."
+  },
+  {
+   "id": "botania:manasteel_ingot",
+   "title": "Manasteel",
+   "desc": "Throw an Iron Ingot into a filled Mana Pool. Manasteel is the first tier of Botania metal and the base of the tools, armour and runes below."
+  },
+  {
+   "id": "botania:mana_pearl",
+   "title": "Mana Pearl",
+   "desc": "An Ender Pearl infused in the pool. It costs far more mana than Manasteel and it is what gates the Runic Altar."
+  },
+  {
+   "id": "botania:runic_altar",
+   "title": "Runic Altar",
+   "desc": "Livingrock around a Mana Pearl. Throw ingredients onto it and feed it mana with a spreader to forge Runes, reusable catalysts that unlock the higher flowers and the plate."
+  },
+  {
+   "id": "botania:rune_mana",
+   "title": "Rune of Mana",
+   "desc": "Manasteel and a Mana Pearl on the Runic Altar. With the four elemental runes it is one of the five the Terrestrial Agglomeration Plate is built around."
+  },
+  {
+   "id": "botania:mana_diamond",
+   "title": "Mana Diamond",
+   "desc": "A Diamond infused in the pool. Needed for the Mana Pylon, for Dragonstone, and as one of the three things Terrasteel is fused from."
+  },
+  {
+   "id": "botania:terra_plate",
+   "title": "Terrestrial Agglomeration Plate",
+   "desc": "Three Lapis Blocks over a Manasteel Block, ringed by the Runes of Water, Fire, Earth, Air and Mana. The plate is a crafting device in its own right: it sits flush in the floor, absorbs mana from spreaders aimed at it, and fuses whatever you drop on top. Build it before you can make a single ingot of Terrasteel."
+  },
+  {
+   "id": "botania:terrasteel_ingot",
+   "title": "Terrasteel",
+   "desc": "Drop a Manasteel Ingot, a Mana Pearl and a Mana Diamond onto the Terrestrial Agglomeration Plate and pour mana in until the swirl completes. Terrasteel is the gate to everything elven."
+  },
+  {
+   "id": "botania:terra_sword",
+   "title": "Terra Blade",
+   "desc": "Terrasteel around a Livingwood Twig. At full health it fires a mana beam on every swing, and it is the standard weapon the lexicon recommends for the Gaia fight."
+  },
+  {
+   "id": "botania:mana_pylon",
+   "title": "Mana Pylon",
+   "desc": "Gold, Manasteel and a Mana Diamond. On its own a decorative mana lamp; it is also the blank that both ritual pylons are upgraded from."
+  },
+  {
+   "id": "botania:natura_pylon",
+   "title": "Natura Pylon",
+   "desc": "A Mana Pylon with Terrasteel nuggets and an Eye of Ender. Two of these flank the Elven Gateway and hold the link to Alfheim open."
+  },
+  {
+   "id": "botania:alfheim_portal",
+   "title": "Elven Gateway Core",
+   "desc": "Livingwood around Terrasteel nuggets. Frame the gateway in Glimmering Livingwood with two Natura Pylons, open it with the Wand of the Forest, and throw items through to trade with the elves."
+  },
+  {
+   "id": "botania:elementium_ingot",
+   "title": "Elementium",
+   "desc": "Throw Manasteel into an open Elven Gateway and the elves send back Elementium, the metal every pixie-tier device and the elven armour set are made of."
+  },
+  {
+   "id": "botania:pixie_dust",
+   "title": "Pixie Dust",
+   "desc": "Traded back for a Mana Pearl through the gateway. It is the reagent for the Gaia Pylon and for both Orechids."
+  },
+  {
+   "id": "botania:gaia_pylon",
+   "title": "Gaia Pylon",
+   "desc": "A Mana Pylon with Elementium and Pixie Dust. Four of them around an active Beacon form the altar for the Ritual of Gaia."
+  },
+  {
+   "id": "kill:botania:doppleganger",
+   "title": "Guardian of Gaia",
+   "desc": "Sneak-right-click the active Beacon with a Terrasteel Ingot to sacrifice it and summon the Guardian. The lexicon rates the fight harder than the Wither and asks for enchanted Elementium armour, a Terra Blade and brews. The Beacon's own effect is nullified for the duration."
+  },
+  {
+   "id": "botania:life_essence",
+   "title": "Gaia Spirit",
+   "desc": "The Guardian's drop. Spirits pay for the Flugel Tiara, the Shard of Laputa, the Gaia Spreader and the Spawner Mover."
+  },
+  {
+   "id": "botania:gaia_ingot",
+   "title": "Gaia Spirit Ingot",
+   "desc": "Terrasteel and Gaia Spirits crafted into an ingot that is deliberately useless as a material: the two energies cancel. Its only purpose is to be sacrificed to the Beacon for the Ritual of Gaia II."
+  },
+  {
+   "id": "botania:dice",
+   "title": "Dice of Fate",
+   "desc": "Dropped only by the empowered Guardian of the second ritual. Rolling it materialises one of the six Relics of the Aesir, and never awards the same person the same relic twice."
+  },
+  {
+   "id": "botania:king_key",
+   "title": "Key of the King's Law",
+   "desc": "One of the six faces of the Dice of Fate, so a second-Guardian reward. Hold right-click to summon up to twenty golden weapons, then release to fire them one at a time."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "botania:white_mystical_flower",
+   "members": [
+    "botania:orange_mystical_flower",
+    "botania:magenta_mystical_flower",
+    "botania:light_blue_mystical_flower",
+    "botania:yellow_mystical_flower",
+    "botania:lime_mystical_flower",
+    "botania:pink_mystical_flower",
+    "botania:gray_mystical_flower",
+    "botania:light_gray_mystical_flower",
+    "botania:cyan_mystical_flower",
+    "botania:purple_mystical_flower",
+    "botania:blue_mystical_flower",
+    "botania:green_mystical_flower",
+    "botania:red_mystical_flower",
+    "botania:black_mystical_flower"
+   ]
+  },
+  {
+   "hub": "botania:rune_water",
+   "members": [
+    "botania:rune_fire",
+    "botania:rune_earth",
+    "botania:rune_air",
+    "botania:rune_spring",
+    "botania:rune_summer",
+    "botania:rune_autumn",
+    "botania:rune_winter",
+    "botania:rune_lust",
+    "botania:rune_gluttony",
+    "botania:rune_greed",
+    "botania:rune_sloth",
+    "botania:rune_wrath",
+    "botania:rune_envy",
+    "botania:rune_pride"
+   ]
+  },
+  {
+   "hub": "botania:endoflame",
+   "members": [
+    "botania:hydroangeas",
+    "botania:thermalily",
+    "botania:rosa_arcana",
+    "botania:munchdew",
+    "botania:entropinnyum",
+    "botania:kekimurus",
+    "botania:gourmaryllis",
+    "botania:narslimmus",
+    "botania:spectrolus",
+    "botania:rafflowsia",
+    "botania:shulk_me_not",
+    "botania:dandelifeon"
+   ]
+  },
+  {
+   "hub": "botania:agricarnation",
+   "members": [
+    "botania:hopperhock",
+    "botania:rannuncarpus",
+    "botania:clayconia",
+    "botania:tigerseye",
+    "botania:jaded_amaranthus",
+    "botania:bellethorn",
+    "botania:solegnolia",
+    "botania:marimorphosis",
+    "botania:vinculotus",
+    "botania:spectranthemum",
+    "botania:loonium",
+    "botania:orechid",
+    "botania:orechid_ignem",
+    "botania:daffomill"
+   ]
+  },
+  {
+   "hub": "botania:dirt_rod",
+   "members": [
+    "botania:skydirt_rod",
+    "botania:water_rod",
+    "botania:cobble_rod",
+    "botania:tornado_rod",
+    "botania:fire_rod",
+    "botania:terraform_rod",
+    "botania:smelt_rod",
+    "botania:exchange_rod",
+    "botania:divining_rod",
+    "botania:gravity_rod",
+    "botania:missile_rod",
+    "botania:rainbow_rod"
+   ]
+  }
+ ],
+ "notes": "Verified twice against the jar. Pass 1: assets/botania/models/item/*.json stems (895) intersected with item.botania.* / block.botania.* lang keys (1060) = 847 ids, which is the item_count_in_jar figure. Pass 2 re-derived the registry independently from blockstate paths, every recipe result and ingredient in data/botania/recipes (1302 files), every loot-table entry name (827 tables) and every item/block tag member; that route yields 1777 ids and strictly contains pass 1, so nothing in pass 1 was a phantom and no widening was needed for anything used here. ID CORRECTIONS THAT MATTER: the Terrestrial Agglomeration Plate is registered as botania:terra_plate, NOT botania:terrestrial_agglomeration_plate - it now has its own step, and the Terrasteel step below it describes only the fusion, not the device. The Wand of the Forest is botania:twig_wand and is placed at step 6 of 29, immediately after Livingwood, because its recipe is two Mystical Petals and three Livingwood Twigs and nothing else - it is craftable before the first Mana Spreader and is required to bind one. There is no item called Key to the Heavens in this jar; the late relic is botania:king_key, Key of the King's Law. It is not a direct Guardian drop: data/botania/loot_tables/gaia_guardian_2.json drops botania:dice (Dice of Fate), and botania.page.relicInfo0 states the six Relics of the Aesir are materialised from rolls of that die, so the chain runs Guardian II -> dice -> king_key. GAIA RITUAL, read from botania.page.gaiaRitual3 and gaiaRitualHardmode1: four Gaia Pylons around an active Beacon, sneak-right-click the Beacon with a Terrasteel Ingot for the first Guardian, with a Gaia Spirit Ingot for the empowered one. ENTITY: kill:botania:doppleganger is the Guardian of Gaia (entity.botania.doppleganger in en_us.json); it is the only Botania entity that is a real fightable mob - the other 18 entity keys are projectiles and effects (mana_burst, magic_missile, babylon_weapon, thorn_chakram, falling_star, spark, corporea_spark, player_mover, thrown_item, vine_ball, flame_ring, magic_landmine, mana_storm, pool_minecart, ender_air, ender_air_bottle, pixie, pink_wither), so no other kill step is emitted. Botania ships no data/botania/loot_tables/entities directory at all; gaia_guardian.json and gaia_guardian_2.json sit at the loot-table root and are invoked from code. CONSENSUS CONFLICT (recipe graph preferred): moddb.json holds only 26 Botania entries and every one of them sits at pos <= 0.194, so the consensus sees only the opening of the mod and contains no manasteel, no runes, no terrasteel, no terra_plate, no Alfheim and no Gaia at all - it cannot order the back three quarters of this chain. Worse, it puts botania:enchanter and botania:fertilizer at pos 0.0, ahead of botania:lexicon at 0.008. The Mana Enchanter is an 11x7 multiblock that botania.page.manaEnchanting1 says needs 6 Mana Pylons, and a Mana Pylon is gold plus manasteel plus a Mana Diamond, so the enchanter cannot precede the Lexica Botania, the Petal Apothecary or Manasteel. The recipe graph was used throughout and the consensus positions were discarded for everything except the broad agreement that lexicon, apothecary and pure_daisy come first, which the graph confirms. NOTHING DROPPED for unobtainability: every id emitted has a recipe, a loot table or a tag source. Variant families kept out of the chain and put in wheels instead: the 16 Mystical Flowers, the 16 Runes, the 13 generating flowers, the functional flowers and the 13 Rods. Slabs, stairs, walls, fences, stripped and potted variants, the four wood sets (livingwood, dreamwood and their glimmering and stripped forms) and the mushroom and shiny-flower colour sets are all deliberately excluded."
+}

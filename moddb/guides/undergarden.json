@@ -1,0 +1,453 @@
+{
+ "mod": "undergarden",
+ "ids_in_jar": 331,
+ "videos": [
+  {
+   "id": "Uqwpvy25fMU",
+   "title": null,
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 14097
+  }
+ ],
+ "items": {
+  "undergarden:depthrock": {
+   "mentions": 9,
+   "videos": 1,
+   "first_at": 0.4131,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:gloomgourd": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.2434,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:underbeans": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.2128,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:slingshot": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.8171,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:ditchbulb": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.2596,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:blisterberry": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1459,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:gronglet": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.1193,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:goo_ball": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3834,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:depthrock_pebbles": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8332,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:blisterberry_bush": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1459,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:mogmoss": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4302,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:glitterkelp": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1856,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:indigo_mushroom": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2741,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:forgotten_nugget": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5671,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "undergarden:froststeel_ingot": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7228,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:twistytwig": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.813,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:raw_dweller_meat": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.359,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:blood_mushroom": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2969,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:depthrock_pebble": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8332,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:catalyst": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0373,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "undergarden:gloomper_leg": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.4005,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:inky_stew": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6982,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:depthrock_bed": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.796,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:raw_gloomper_leg": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6199,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:blue_mogmoss": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4299,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:dweller_steak": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6079,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:gloomgourd_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2484,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:brute_tusk": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.54,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:shimmerweed": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3249,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:indigo_stew": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6675,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:veiled_stew": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6775,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:underbean_on_a_stick": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8179,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:goo_block": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.812,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:mogmoss_rug": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7973,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:froststeel_nugget": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5058,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:gloomgourd_pie": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6556,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:raw_gwibling": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3746,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:carved_gloomgourd": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5649,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:smog_vent": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1442,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:deepsoil": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9652,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "undergarden:droopvine": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6376,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:bloody_stew": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6881,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:ink_mushroom": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2849,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "undergarden:roasted_underbeans": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5838,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "entry": [
+   "Build a frame in the SHAPE OF A NETHER PORTAL, but out of stone bricks or deepslate bricks. Source Uqwpvy25fMU: 'you must create the portal frame in the shape of a nether portal out of stone or deep slade bricks'.",
+   "Light it with undergarden:catalyst, NOT flint and steel. The catalyst is crafted from 4 gold + 4 iron + 1 diamond.",
+   "You light the BOTTOM of the frame, not the side. This becomes undergarden:undergarden_portal.",
+   "The Undergarden sits below the Overworld's bedrock, and like the Nether it is capped: bedrock forms the top and bottom four layers, so there is no digging out of the roof."
+  ],
+  "boss_order": [
+   "There is exactly ONE boss in this mod and it is a mini-boss: undergarden:forgotten_guardian. There is no ladder.",
+   "It spawns only in the Catacombs structure, has 80 health and 10 armour, and stays idle until a player comes into range.",
+   "Killing it drops 4-16 undergarden:forgotten_nugget, which is the ONLY source of undergarden:forgotten_ingot. That single fight is the gate on the whole endgame toolset."
+  ],
+  "order": [
+   "The metal ladder is the real progression, and it runs: undergarden:cloggrum_ingot -> undergarden:froststeel_ingot / undergarden:utherium_crystal -> undergarden:forgotten_ingot.",
+   "FIRST on arrival: cloggrum ore is common near the surface. undergarden:cloggrum_ingot gear is roughly diamond-tier and includes undergarden:cloggrum_shield. This is the correct opening quest, not a plant.",
+   "undergarden:froststeel_ingot gear slows targets on melee hits; its armour gives +4 toughness and knockback resistance but costs 5% movement speed per piece.",
+   "undergarden:utherium_crystal is found deep; its tools do 1.5x damage specifically to rotspawn mobs, and its armour is the highest raw protection at 10 bars.",
+   "undergarden:regalium_crystal is rare and deep, and is NOT primarily gear - it is 'the main currency for trading with stoneborn NPCs' (undergarden:stoneborn).",
+   "LAST: find the Catacombs, kill undergarden:forgotten_guardian, and use undergarden:forgotten_ingot with undergarden:forgotten_upgrade_smithing_template to upgrade cloggrum gear into forgotten gear - the strongest in the mod, 1.5x damage to non-boss Undergarden mobs and 1.5x mining speed.",
+   "Early utility worth questing: undergarden:slingshot, crafted from sticks and undergarden:twistytwig, firing undergarden:depthrock_pebble for 6 damage. It has three exclusive enchantments - Ricochet, Longevity, and one that launches the player instead of the projectile."
+  ],
+  "gates": [
+   "HARD GATE: no undergarden:catalyst, no dimension. Flint and steel does not light this portal.",
+   "HARD GATE on endgame gear: undergarden:forgotten_ingot exists only as a drop from undergarden:forgotten_guardian in the Catacombs.",
+   "The Catacombs generate at Y level 48 and ONLY in the Frost Fields and Forgotten Fields biomes, with the entrance found above ground. A quest that says 'find the catacombs' should name those two biomes."
+  ],
+  "traps": [
+   "The Mushroom Bog is called out as one of the most dangerous biomes: it is filled with undergarden:virulent_mix, a poisonous liquid, and packed with aggressive mobs.",
+   "Smog Spires combine smog vents with prickly blisterberry bushes - undergarden:blisterberry is harvested at a cost.",
+   "The Barren Abyss is 'void of nature and filled with enemies' - no food, no wood, all threat.",
+   "Catacombs corridors are full of spawners producing rotspawn and cave-spawn mobs plus undergarden:forgotten; it is a maze, not a quick smash-and-grab."
+  ],
+  "signature": [
+   "undergarden:catalyst - the one item that opens the dimension.",
+   "undergarden:cloggrum_ingot, undergarden:froststeel_ingot, undergarden:utherium_crystal, undergarden:forgotten_ingot - the four-metal ladder the mod is built on.",
+   "undergarden:regalium_crystal - currency rather than equipment, for undergarden:stoneborn trading.",
+   "undergarden:slingshot with undergarden:depthrock_pebble - the mod's distinctive early weapon.",
+   "undergarden:underbean_on_a_stick - steers a undergarden:dweller, the mod's ridden mob.",
+   "undergarden:goo_ball from undergarden:scintling - slows what it hits and crafts into leads."
+  ]
+ }
+}

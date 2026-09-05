@@ -1,0 +1,150 @@
+{
+ "mod": "brewery",
+ "verified_against": "letsdo-brewery-forge-1.1.9.jar",
+ "item_count_in_jar": 53,
+ "chain": [
+  {
+   "id": "brewery:hops_seeds",
+   "title": "Hop To It",
+   "desc": "Wild Hops grow in the world and drop these seeds when broken - there is no recipe for them. Grab a couple and plant them; the crop is the only source of hops, which every beer needs."
+  },
+  {
+   "id": "brewery:hops",
+   "title": "Hops and Dreams",
+   "desc": "Hops harvested from the crop are required in every beer the station brews."
+  },
+  {
+   "id": "brewery:barley",
+   "title": "Barley Legal",
+   "desc": "Barley is the mod's own grain, grown from seeds and used in beer, whiskey and rope."
+  },
+  {
+   "id": "brewery:corn",
+   "title": "Corn Again",
+   "desc": "Corn is the third grain and the backbone of the corn-mash whiskeys."
+  },
+  {
+   "id": "brewery:wooden_brewingstation",
+   "title": "Still Waters Run Deep",
+   "desc": "The Wooden Brewingstation, made from a furnace, cauldron, iron and planks, is where all brewing happens."
+  },
+  {
+   "id": "brewery:beer_mug",
+   "title": "Mug Shot",
+   "desc": "The Beer Mug is carved from planks and is what you actually drink out of."
+  },
+  {
+   "id": "brewery:dried_wheat",
+   "title": "Dry Humour",
+   "desc": "Wheat left to dry at the station becomes a Bag of dried Wheat."
+  },
+  {
+   "id": "brewery:beer_hops",
+   "title": "Bitter Beginnings",
+   "desc": "Hops alone brew into a plain Hops Beer, the first thing the station will make."
+  },
+  {
+   "id": "brewery:dried_barley",
+   "title": "Grain of Truth",
+   "desc": "Barley dried at the station becomes the malt the better beers need."
+  },
+  {
+   "id": "brewery:beer_barley",
+   "title": "Malt of the Earth",
+   "desc": "Hops and dried barley brew into Barley Beer."
+  },
+  {
+   "id": "brewery:beer_wheat",
+   "title": "Wheat Dreams Are Made of This",
+   "desc": "Hops and dried wheat brew into a paler Wheat Beer."
+  },
+  {
+   "id": "brewery:pretzel",
+   "title": "Pretzel Logic",
+   "desc": "Pretzels are twisted from wheat and are the classic thing to eat beside a mug."
+  },
+  {
+   "id": "brewery:sausage",
+   "title": "The Wurst Is Yet to Come",
+   "desc": "Cooked beef smoked a second time becomes Sausage."
+  },
+  {
+   "id": "brewery:pork_knuckle",
+   "title": "Knuckle Down",
+   "desc": "Cooked porkchop smoked again becomes a Pork Knuckle."
+  },
+  {
+   "id": "brewery:silo_wood",
+   "title": "Silo, Is It Me You're Looking For",
+   "desc": "The Wooden Silo bulk-stores your grain between harvests."
+  },
+  {
+   "id": "brewery:barrel_main",
+   "title": "Big Barrel Energy",
+   "desc": "The Big Barrel is the cellar's bulk vessel, built up from a vanilla barrel."
+  },
+  {
+   "id": "brewery:copper_brewingstation",
+   "title": "Copper Bottom Guarantee",
+   "desc": "Smithing copper onto the wooden station upgrades it to the Copper Brewingstation."
+  },
+  {
+   "id": "brewery:dried_corn",
+   "title": "Corn on the Job",
+   "desc": "Dried Corn unlocks the corn-mash whiskeys."
+  },
+  {
+   "id": "brewery:whiskey_cristelwalker",
+   "title": "Aged to Perfection",
+   "desc": "Dried corn and a brown mushroom brew into a bottle of CristelWalker Whiskey."
+  },
+  {
+   "id": "brewery:whiskey_lilitusinglemalt",
+   "title": "Single Malt, Double Trouble",
+   "desc": "Dried wheat, dried barley and a brown mushroom brew the Lilitu Single Malt, the finest bottle in the house."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "brewery:wooden_brewingstation",
+   "members": [
+    "brewery:beer_hops",
+    "brewery:beer_barley",
+    "brewery:beer_wheat",
+    "brewery:beer_haley",
+    "brewery:whiskey_jojannik",
+    "brewery:whiskey_maggoallan",
+    "brewery:whiskey_cristelwalker",
+    "brewery:whiskey_carrasconlabel",
+    "brewery:whiskey_lilitusinglemalt"
+   ]
+  },
+  {
+   "hub": "brewery:bar_counter",
+   "members": [
+    "brewery:pretzel",
+    "brewery:sausage",
+    "brewery:pork_knuckle",
+    "brewery:fried_chicken",
+    "brewery:dumplings",
+    "brewery:mashed_potatoes",
+    "brewery:potato_salad",
+    "brewery:gingerbread",
+    "brewery:half_chicken"
+   ]
+  },
+  {
+   "hub": "brewery:brewfest_regalia",
+   "members": [
+    "brewery:brewfest_hat",
+    "brewery:brewfest_hat_red",
+    "brewery:brewfest_blouse",
+    "brewery:brewfest_dress",
+    "brewery:brewfest_trousers",
+    "brewery:brewfest_boots",
+    "brewery:brewfest_shoes"
+   ]
+  }
+ ],
+ "notes": "Chain derived from data/brewery/recipes: brewery:drying turns raw grain into dried bags, brewery:brewing turns hops plus dried grain into the four beers and the five whiskeys, and the station itself upgrades wooden -> copper -> netherite via smithing_transform. brewery:mashed_potatoes and brewery:half_chicken are confirmed items (model stem plus lang key) but have no recipe inside this jar, so they appear only as collection members and no recipe is claimed for them. Dropped as unverifiable: barley_seeds, corn_seeds, hops_seeds, oven, small_barrel, steam_whistle, timer, water_basin and the breathalyzer/* model variants; these are models for block parts or seed textures with no matching item lang key and no recipe output. The Wild Hops block (block.brewery.wild_hops) has no registered item form - breaking it yields brewery:hops_seeds - so the chain starts from the seeds, not the plant."
+}

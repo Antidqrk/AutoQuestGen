@@ -1,0 +1,71 @@
+{
+ "mod": "tacz",
+ "verified_against": "tacz-1.20.1-1.1.8-hotfix.jar",
+ "item_count_in_jar": 11,
+ "chain": [
+  {
+   "id": "tacz:gun_smith_table",
+   "title": "Open for Business",
+   "desc": "Three logs over iron ingots around an iron block build the Gun Smith Table, the single gate every gun, cartridge and attachment in the mod passes through."
+  },
+  {
+   "id": "tacz:modern_kinetic_gun",
+   "title": "First Blood Sugar",
+   "desc": "Every firearm in TACZ is this one item id carrying a GunId tag; the cheapest sidearms cost 16 iron ingots at the table, an AK-47 costs 38 iron, 6 lapis and 10 logs."
+  },
+  {
+   "id": "tacz:ammo",
+   "title": "Feed the Beast",
+   "desc": "Every cartridge is this one item id carrying an AmmoId tag; 9mm runs 10 copper and 2 gunpowder for a batch of fifty."
+  },
+  {
+   "id": "tacz:ammo_box",
+   "title": "Ammunition Logistics",
+   "desc": "Eight planks around an iron ingot make the iron Ammo Box; gold and diamond versions of the same item id raise its Level tag and its capacity."
+  },
+  {
+   "id": "tacz:workbench_a",
+   "title": "The Reloading Bench",
+   "desc": "Copper, iron and an ammo box assemble the Ammo Workbench, a dedicated station for bulk cartridge work."
+  },
+  {
+   "id": "tacz:attachment",
+   "title": "Bolt-On Advantage",
+   "desc": "Sights, scopes, grips, stocks, muzzles and magazines all share this item id with an AttachmentId tag; a T1 red dot is 4 iron, redstone and glass."
+  },
+  {
+   "id": "tacz:workbench_c",
+   "title": "Fitting Room",
+   "desc": "Glass, a redstone torch, iron and a chest build the Attachment Workbench where optics and furniture are swapped onto a gun."
+  },
+  {
+   "id": "tacz:target",
+   "title": "Zero Your Sights",
+   "desc": "Iron, redstone and a plank make the Humanoid Target, which reports damage and distance on every hit."
+  },
+  {
+   "id": "tacz:target_minecart",
+   "title": "Moving Violation",
+   "desc": "A target on a minecart runs your range on rails so you can practise leading a shot."
+  },
+  {
+   "id": "tacz:statue",
+   "title": "Monument to Marksmanship",
+   "desc": "Quartz stairs, slab and a chiseled quartz block carve the Stone Statue, the mod's one purely decorative build."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "tacz:gun_smith_table",
+   "members": [
+    "tacz:modern_kinetic_gun",
+    "tacz:ammo",
+    "tacz:attachment",
+    "tacz:ammo_box",
+    "tacz:workbench_a",
+    "tacz:workbench_c"
+   ]
+  }
+ ],
+ "notes": "ITEM COUNT WARNING - READ BEFORE VALIDATING IDS. The prescribed set rule (assets/tacz/models/item/*.json stems INTERSECT item./block. lang keys) yields only FOUR ids for this mod: gun_smith_table, statue, target, target_minecart. That is an artefact, not the truth: TACZ resolves display names for guns, ammo, attachments and workbenches from gun-pack data at runtime, so those items ship a model but deliberately no static lang key. item_count_in_jar above is 11, the verified registry set, cross-checked three independent ways: (1) the literal registry names in com/tacz/guns/init/ModItems.class are exactly ammo, ammo_box, attachment, gun_smith_table, modern_kinetic_gun, statue, target, target_minecart, workbench_a, workbench_b, workbench_c; (2) recipe results in data/tacz/recipes/ name tacz:workbench_a, tacz:workbench_c, tacz:ammo_box, tacz:gun_smith_table, tacz:statue, tacz:target, tacz:target_minecart directly; (3) moddb independently shows published books already questing tacz:modern_kinetic_gun (12 packs), tacz:gun_smith_table (9), tacz:ammo_box (5), tacz:ammo (4), tacz:attachment (4) and tacz:workbench_a/b/c (3 each). If your generator validates against the strict intersection, seven of these ten chain ids will fail; validate against the 11-id registry set instead. WHY THERE ARE NO GUN OR AMMO WHEELS. TACZ has enormous content depth - the bundled default gun pack ships 54 guns, 24 ammo calibres and 99 attachments (assets/tacz/custom/tacz_default_gun/data/tacz/index/{guns,ammo,attachments}/) - but NONE of it is a separate item id. A gun is tacz:modern_kinetic_gun with NBT {GunId:\"tacz:ak47\"}; a cartridge is tacz:ammo with {AmmoId:\"tacz:9mm\"}; an optic is tacz:attachment with {AttachmentId:\"tacz:sight_t1\"} (NBT keys confirmed in GunItemDataAccessor/AmmoItemDataAccessor/AttachmentItemDataAccessor: GunId, GunDisplayId, AmmoId, AttachmentId, SkinId). A collection of plain namespaced ids would be the same id repeated 54 times, so it is not emitted. FTB Quests item tasks do store NBT, so the generator can build NBT-qualified wheels itself from those index directories - suggested wheels: pistols (glock_17, m1911, cz75, deagle, p320, hk_mk23, m9a4), rifles (ak47, m4a1, hk416d, scar_l, m16a4, aug, g36k, type_81, qbz_95), snipers (m700, kar98, ai_awp, m107, m95, mk14, lonetrail), shotguns (m870, spas_12, aa12, m1014, db_short, db_long), pistol-calibre ammo (9mm, 45acp, 762x25, 57x28, 46x30, 22wmr), rifle ammo (556x45, 762x39, 545x39, 308, 30_06, 58x42, 68x51fury), optics (sight_t1, sight_t2, sight_rmr_dot, sight_552, scope_acog_ta31, scope_elcan_4x, scope_standard_8x, scope_98k). RECIPE-GRAPH VS MODDB CONFLICTS (recipe graph preferred, as instructed): (a) moddb ranks tacz:target first at pos 0.00, but target costs iron and redstone and is a practice prop with no downstream use, while gun_smith_table gates literally everything (all 172 gun-pack recipes are type tacz:gun_smith_table_crafting); the table is placed first here. (b) moddb ranks tacz:attachment at pos 0.061, very near the start, but attachments are crafted at the gun smith table and fitted at workbench_c, both of which require the table first; attachment is placed sixth. (c) moddb places tacz:ammo at pos 0.576, after the workbenches, but ammo is craftable at the base gun smith table and a gun without cartridges is inert, so ammo is placed third. DROPPED ID: tacz:workbench_b. It is genuinely registered (ModItems.class, ModBlocks.class, data/tacz/loot_tables/blocks/workbench_b.json) and moddb shows 3 packs questing it, but the bundled default gun pack defines only three blocks - ammo_workbench (workbench_a), attachment_workbench (workbench_c) and gun_smith_table - so workbench_b has no BlockId, no recipe and no creative-tab entry in a default install. Those 3 packs must ship a custom gun pack. Excluded from the chain rather than quested. Also dropped: the model stem tacz:m67 (a grenade model) - it is absent from ModItems.class and from the gun index, so it is dead art. The gunpowder recipe in data/tacz/recipes/gunpowder.json produces vanilla minecraft:gunpowder from flint, sugar and charcoal and adds no tacz id."
+}

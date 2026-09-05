@@ -1,0 +1,30 @@
+{
+ "mod": "mcwfurnitures",
+ "ids_in_jar": 654,
+ "installed_in_pack": false,
+ "videos": [],
+ "items": {},
+ "id_source": "NOT in the CREATE FEMBY instance. Ids verified against a reference 1.20.1 Forge jar taken from another instance on this machine - correct for the mod, but they will not resolve in this pack until the mod is added.",
+ "no_video_evidence": "transcription did not complete for this mod; human_notes below are jar-derived only",
+ "human_notes": {
+  "order": [
+   "[jar] Flat decoration mod, no progression and no functional item at all - not even a hammer. 654 ids, all furniture.",
+   "[jar] the families: table, chair, stool, wardrobe, drawer, cabinet, counter, desk, bookshelf, shelf, box, covered_desk, glass_table, striped/modern/bookshelf variants, repeated across every wood type."
+  ],
+  "gates": [
+   "[jar] None."
+  ],
+  "structures": [],
+  "traps": [
+   "[jar] IMPORTANT NAMING: the modid is mcwfurnitures, NOT 'macawsfurniture'. Anything emitted under macawsfurniture: will not resolve.",
+   "NOT VERIFIED BY VIDEO: transcription did not reach this mod."
+  ],
+  "signature": [
+   "mcwfurnitures:oak_table",
+   "mcwfurnitures:oak_chair",
+   "mcwfurnitures:oak_wardrobe",
+   "mcwfurnitures:oak_drawer",
+   "mcwfurnitures:cabinet_door"
+  ]
+ }
+}

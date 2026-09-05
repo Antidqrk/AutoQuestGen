@@ -1,0 +1,164 @@
+{
+ "mod": "alexscaves",
+ "verified_against": "alexscaves-2.0.2.jar",
+ "item_count_in_jar": 525,
+ "chain": [
+  {
+   "id": "alexscaves:cave_tablet",
+   "title": "Something Older Than the Stone",
+   "desc": "Cave Tablets are found in Underground Cabins and are the first sign the caves hide more than ore."
+  },
+  {
+   "id": "alexscaves:spelunkery_table",
+   "title": "A Desk for Dead Languages",
+   "desc": "The Spelunkery Table translates Cave Tablets and is the crafting hub for everything the mod adds."
+  },
+  {
+   "id": "alexscaves:cave_codex",
+   "title": "Lorem Ipsum",
+   "desc": "Running a Cave Tablet through the Spelunkery Table yields a Cave Codex, one entry of translated lore."
+  },
+  {
+   "id": "alexscaves:cave_map",
+   "title": "The Journey Begins",
+   "desc": "A Cave Biome Map points at the nearest rare cave biome; without one you may never find them at all."
+  },
+  {
+   "id": "alexscaves:raw_azure_neodymium",
+   "title": "Two Poles, One Cavern",
+   "desc": "The Magnetic Caves grow azure and scarlet neodymium in nodes that attract and repel each other."
+  },
+  {
+   "id": "alexscaves:azure_neodymium_ingot",
+   "title": "An Alloy to Remember",
+   "desc": "Neodymium alloyed with iron becomes the ingot behind every magnetic machine in the mod."
+  },
+  {
+   "id": "alexscaves:azure_magnet",
+   "title": "Magnets, How Do They Work",
+   "desc": "A crafted Magnet drags whole rows of metal blocks toward you, or hurls them away."
+  },
+  {
+   "id": "kill:alexscaves:magnetron",
+   "title": "Magnetron No More",
+   "desc": "The Magnetron is the boss of the Magnetic Caves, a floating engine of iron and current."
+  },
+  {
+   "id": "alexscaves:heart_of_iron",
+   "title": "Torn From the Machine",
+   "desc": "The Heart of Iron is the Magnetron's drop and the key component of the Magnetic Quarry."
+  },
+  {
+   "id": "alexscaves:limestone",
+   "title": "Town of Bedrock",
+   "desc": "Limestone floors the Primordial Caves, and its smooth form is where cave paintings get carved."
+  },
+  {
+   "id": "alexscaves:serene_salad",
+   "title": "Strictly Medicinal Purposes",
+   "desc": "The Serene Salad calms the savage denizens of the Primordial Caves long enough to ride or tame them."
+  },
+  {
+   "id": "kill:alexscaves:tremorsaurus",
+   "title": "The Tyrant King",
+   "desc": "The Tremorsaurus is the apex predator of the Primordial Caves, tameable only once it has been stunned."
+  },
+  {
+   "id": "alexscaves:ominous_catalyst",
+   "title": "Suspicious Looking Item",
+   "desc": "Heavy Bones and an Amber Curiosity make the catalyst that must be thrown into an active volcano."
+  },
+  {
+   "id": "kill:alexscaves:luxtructosaurus",
+   "title": "The End of the Beginning",
+   "desc": "The Luxtructosaurus is the undead titan the Ominous Catalyst summons, and the mod's hardest dinosaur."
+  },
+  {
+   "id": "alexscaves:uranium",
+   "title": "Uranium Fever",
+   "desc": "Radrock uranium ore lines the Toxic Caves and irradiates anyone who mines it unprotected."
+  },
+  {
+   "id": "alexscaves:hazmat_mask",
+   "title": "The One Who Knocks",
+   "desc": "Hazmat armor is the only way to walk the Toxic Caves without accumulating radiation."
+  },
+  {
+   "id": "kill:alexscaves:nucleeper",
+   "title": "Crisis Averted",
+   "desc": "A Nucleeper detonates into an atomic fireball if you let it finish its approach."
+  },
+  {
+   "id": "alexscaves:pearl",
+   "title": "Diamonds of the Sea",
+   "desc": "Pearls come from breaking Mussels in the Abyssal Chasm and are the offering the Deep Ones want."
+  },
+  {
+   "id": "alexscaves:abyssal_altar",
+   "title": "Order of Dagon",
+   "desc": "Placing a Pearl on an Abyssal Altar opens trade with the Deep Ones of the sunken ruins."
+  },
+  {
+   "id": "alexscaves:diving_helmet",
+   "title": "The Cyclops",
+   "desc": "Diving armor is looted piece by piece from the Drowned that haunt the Abyssal Chasm."
+  },
+  {
+   "id": "kill:alexscaves:underzealot",
+   "title": "Hans Moleman",
+   "desc": "Underzealots are mole-like cultists who sacrifice living creatures to something waiting in the dark."
+  },
+  {
+   "id": "kill:alexscaves:forsaken",
+   "title": "Demonslayer",
+   "desc": "The Forsaken is a Vesper warped by dark magic, and the final boss of the Forlorn Hollows."
+  },
+  {
+   "id": "alexscaves:dreadbow",
+   "title": "Blot Out the Sun",
+   "desc": "The Dreadbow turns one arrow into a volley of dark magical shafts, the mod's last weapon."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "alexscaves:cave_book",
+   "members": [
+    "alexscaves:heart_of_iron",
+    "alexscaves:telecore",
+    "alexscaves:extinction_spear",
+    "alexscaves:toxic_paste",
+    "alexscaves:pearl",
+    "alexscaves:pure_darkness",
+    "alexscaves:desolate_dagger",
+    "alexscaves:corrodent_teeth"
+   ]
+  },
+  {
+   "hub": "alexscaves:polymer_plate",
+   "members": [
+    "alexscaves:hazmat_mask",
+    "alexscaves:hazmat_chestplate",
+    "alexscaves:hazmat_leggings",
+    "alexscaves:hazmat_boots",
+    "alexscaves:uranium_rod",
+    "alexscaves:radon_bottle",
+    "alexscaves:remote_detonator",
+    "alexscaves:nuclear_furnace_component"
+   ]
+  },
+  {
+   "hub": "alexscaves:bioluminesscence",
+   "members": [
+    "alexscaves:lanternfish_bucket",
+    "alexscaves:radgill_bucket",
+    "alexscaves:trilocaris_bucket",
+    "alexscaves:sea_pig_bucket",
+    "alexscaves:gossamer_worm_bucket",
+    "alexscaves:tripodfish_bucket",
+    "alexscaves:marine_snow",
+    "alexscaves:mussel"
+   ]
+  }
+ ],
+ "notes": "Verified against alexscaves-2.0.2 (Modrinth slug 'alexs-caves', NOT 'alexscaves' - that 404s). CORRECTION to the brief: 2.0.2 ships SIX cave biomes, not four. data/alexscaves/worldgen/biome contains magnetic_caves, primordial_caves, toxic_caves, abyssal_chasm, forlorn_hollows and candy_cavity. The chain runs Magnetic -> Primordial -> Toxic -> Abyssal -> Forlorn, the same order the mod's own advancement tree walks. Candy Cavity is deliberately excluded from the chain: it is a low-threat joke biome that would flatten the difficulty ramp, though all of its items verify (candy_cane, gingerbread_*, rock_candy_*, sweetish_fish_*, sugar_staff, sharpened_candy_cane) if a pack wants it as an optional side branch. Progression was derived from the 148 advancements plus the 471 recipes: cave_tablet -> spelunkery_table -> cave_codex -> cave_book -> cave_map is the mod's literal onboarding sequence. Both neodymium polarities exist; the chain uses azure and the scarlet mirrors (raw_scarlet_neodymium, scarlet_neodymium_ingot, scarlet_magnet) verify identically. Entity ids were cross-checked between entity.alexscaves.* lang keys and data/alexscaves/loot_tables/entities and both sets agree on all 43 mobs, so kill: steps are safe; non-mob lang entries under the same prefix (projectiles, falling blocks, vehicles such as submarine and floater) were excluded. All 26 moddb ids for this mod verify against the jar with no renames, and moddb's early placement of cave_tablet, spelunkery_table, cave_book, cave_codex and cave_map matches this chain exactly."
+}

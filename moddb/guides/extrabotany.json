@@ -1,0 +1,194 @@
+{
+ "mod": "extrabotany",
+ "ids_in_jar": 186,
+ "videos": [
+  {
+   "title": "Guide on ExtraBotany 1.12.2 #1 Basics and new flowers",
+   "channel": "KARTAFAN",
+   "views": 9849,
+   "duration": 603,
+   "id": "ERvfKqA2moM",
+   "chars": 6432
+  }
+ ],
+ "items": {
+  "extrabotany:mana_reader": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2201,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "items_by_display_name": {
+  "extrabotany:mana_reader": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2201,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "display": "Mana Reader"
+  }
+ },
+ "human_notes": {
+  "_confidence": "THIN. ExtraBotany has no native-English guide on YouTube at all -- the only tutorials are Russian (KARTAFAN, transcribed here) or dubbed. ERvfKqA2moM is machine-translated Russian and item names are approximate throughout. Worse, it covers ExtraBotany 1.12.2 and several items it demonstrates (a mana buffer, a position reader, a cocoon, a pomegranate) have NO matching id in extrabotany-forge-1.20.1-1.9.2, so they were deliberately left out rather than guessed. What survives is the UNLOCK RITUAL and the hammer/Gaia structure, both of which are corroborated by the jar's advancement DAG.",
+  "order": [
+   {
+    "claim": "EXTRABOTANY IS LOCKED UNTIL YOU DO AN UNLOCK RITUAL, and nothing in JEI hints at this. Make a Livingrock Pedestal, then make Nightmare Fuel by throwing coal into a Mana Pool. Put the Nightmare Fuel on the pedestal and right-click the pedestal with your Lexica Botania -- that adds the ExtraBotany chapters to the book and opens the rest of the mod.",
+    "video": "ERvfKqA2moM",
+    "ids": [
+     "extrabotany:pedestal_livingrock",
+     "extrabotany:nightmare_fuel"
+    ],
+    "note": "Further lexicon knowledge comes from a ritual: a livingrock pedestal plus Nightmare Fuel (coal thrown into a mana pool); set the fuel on the pedestal and right-click it with the book."
+   },
+   {
+    "claim": "You must EAT the Nightmare Fuel as part of the ritual, and it gives you a nasty status effect. Drink milk to clear it.",
+    "video": "ERvfKqA2moM",
+    "ids": [
+     "extrabotany:nightmare_fuel"
+    ],
+    "note": "Nightmare Fuel is eaten to offer it; the debuff it causes can be cleared with milk."
+   },
+   {
+    "claim": "Unlocking adds whole new sections to the Lexica -- mana management, generating flora, functional flora, natural devices, and baubles -- so treat the ritual as the mod's real starting quest.",
+    "video": "ERvfKqA2moM",
+    "ids": [
+     "extrabotany:nightmare_fuel",
+     "extrabotany:pedestal_livingrock",
+     "extrabotany:mana_reader"
+    ],
+    "note": "The ritual unlocks new entries across the lexicon - mana management, flora, natural devices, baubles and the Extra Botany section."
+   },
+   {
+    "claim": "The Manasteel Hammer is the first real tool and the gateway to pedestal crafting -- it doubles as a pickaxe with roughly diamond-level speed and repairs itself from mana. Jar-verified as the first step after the pedestal.",
+    "video": "ERvfKqA2moM",
+    "ids": [
+     "extrabotany:manasteel_hammer",
+     "extrabotany:pedestal_livingrock"
+    ],
+    "note": "The Manasteel Hammer is a pedestal crafting tool that also digs at roughly diamond-pickaxe speed and repairs itself with mana."
+   },
+   {
+    "claim": "Hammers are a full tier ladder, not one item: Manasteel, Elementium, Terra Smasher, Gaia, Shadowium, Aerialite, Orichalcos, Photonium, Rhein. The Terra Smasher can be upgraded and you pick one improvement from a list.",
+    "video": "ERvfKqA2moM",
+    "ids": [
+     "extrabotany:manasteel_hammer",
+     "extrabotany:elementium_hammer",
+     "extrabotany:terrasteel_hammer",
+     "extrabotany:gaia_hammer",
+     "extrabotany:shadowium_hammer",
+     "extrabotany:aerialite_hammer",
+     "extrabotany:orichalcos_hammer",
+     "extrabotany:photonium_hammer",
+     "extrabotany:rhein_hammer"
+    ],
+    "note": "Higher hammer tiers follow, and the terrasteel hammer accepts a chosen upgrade when improved."
+   }
+  ],
+  "gates": [
+   {
+    "claim": "Pedestal crafting is its own mechanic: put the ingredient on a pedestal, then HOLD right-click on it with a hammer. Several ExtraBotany recipes exist nowhere else.",
+    "video": "ERvfKqA2moM",
+    "ids": [
+     "extrabotany:pedestal_livingrock",
+     "extrabotany:pedestal_calcite",
+     "extrabotany:manasteel_hammer"
+    ],
+    "note": "Pedestal crafting: place the item on the pedestal and hold right-click with a hammer to strike the fragment loose."
+   },
+   {
+    "claim": "THE MOD'S LATE GAME IS GATED ON A THIRD GAIA GUARDIAN, ABOVE BOTANIA'S TWO. ExtraBotany adds a Challenge Ticket that starts the Gaia Trial, and beating it drops the Hero Medal and opens Pandora's Box, which in turn gates Orichalcos gear and the Rhein Hammer. Jar-verified from the advancement chain.",
+    "video": null,
+    "ids": [
+     "extrabotany:challenge_ticket",
+     "extrabotany:pandoras_box",
+     "extrabotany:shadowium_ingot",
+     "extrabotany:hero_medal",
+     "extrabotany:rhein_hammer",
+     "extrabotany:orichalcos_hammer"
+    ],
+    "note": "(jar advancement DAG, extrabotany-forge-1.20.1-1.9.2: craft_pedestal -> goodtek(manasteel_hammer) -> stygian_twins(shadowium_ingot) -> gaia_trial(challenge_ticket) -> the_source_of_honkai(pandoras_box) -> {one_punch, rhein_kraft, soulsteel(orichalcos_ingot), the_original_divine_key})"
+   },
+   {
+    "claim": "The Hero Medal is a drop from the third-tier Gaia fight and it is the key ingredient in the Infinite Wine. If a recipe wants it, you are past the Gaia Trial.",
+    "video": "ERvfKqA2moM",
+    "ids": [
+     "extrabotany:hero_medal",
+     "extrabotany:infinite_wine",
+     "extrabotany:challenge_ticket"
+    ],
+    "note": "Infinite Wine combines a special cocktail with a Hero Medal, which drops from the tier-3 Gaia."
+   },
+   {
+    "claim": "The Enchanted Orchid needs a Black Lotus as well as mana, and it is what produces Enchanted Soil -- which several other ExtraBotany flowers then require underneath them.",
+    "video": "ERvfKqA2moM",
+    "ids": [
+     "extrabotany:trade_orchid"
+    ],
+    "note": "The Trade Orchid consumes mana and black lotus (mineshaft loot) and slowly creates enchanted soil around itself."
+   }
+  ],
+  "bosses": [
+   {
+    "claim": "ExtraBotany's boss content is the Gaia Trial, entered with a Challenge Ticket. It sits ABOVE Botania's Gaia Guardian II, so in a pack running both mods the Gaia ladder has three rungs: Terrasteel Ingot summons Gaia I, Gaia Spirit Ingot summons Gaia II, and the ExtraBotany Challenge Ticket starts the third. Its rewards are the Hero Medal and Pandora's Box.",
+    "video": "ERvfKqA2moM",
+    "ids": [
+     "extrabotany:challenge_ticket",
+     "extrabotany:hero_medal",
+     "extrabotany:pandoras_box"
+    ],
+    "note": "The Hero Medal drops from the tier-3 Gaia fight."
+   }
+  ],
+  "traps": [
+   {
+    "claim": "Infinite Wine is only infinite if you pace yourself -- drink it more than three times in a day and it is destroyed.",
+    "video": "ERvfKqA2moM",
+    "ids": [
+     "extrabotany:infinite_wine"
+    ],
+    "note": "Infinite Wine is infinite with a catch: more than three drinks in a day destroys it."
+   }
+  ],
+  "signature": [
+   {
+    "claim": "The mod's bulk is extra generating flowers with unusual triggers, which is what a Botania player actually installs it for. Edelweiss consumes golems -- a Snow Golem is worth about 1,600 mana and an Iron Golem about 18,000, which makes it excellent if you have iron to spare. Others generate from lightning, wind, player movement and temperature difference.",
+    "video": "ERvfKqA2moM",
+    "ids": [
+     "extrabotany:edelweiss",
+     "extrabotany:bellflower",
+     "extrabotany:reikarlily",
+     "extrabotany:moonlight_lily",
+     "extrabotany:sunshine_lily",
+     "extrabotany:trade_orchid"
+    ],
+    "note": "Edelweiss generates mana from golems - about 1,600 per snow golem and 18,000 per iron golem - excellent for iron-rich players."
+   },
+   {
+    "claim": "The Mana Reader is a small but constantly useful tool -- point it at a pool or block and it tells you exactly how much mana is inside.",
+    "video": "ERvfKqA2moM",
+    "ids": [
+     "extrabotany:mana_reader"
+    ],
+    "note": "The Mana Reader shows exactly how much mana a pool is holding."
+   },
+   {
+    "claim": "The hammer line is ExtraBotany's signature gear progression, running well past Botania's own tools and ending at Rhein and Orichalcos tier behind the Gaia Trial.",
+    "video": null,
+    "ids": [
+     "extrabotany:terrasteel_hammer",
+     "extrabotany:gaia_hammer",
+     "extrabotany:rhein_hammer",
+     "extrabotany:orichalcos_hammer",
+     "extrabotany:pandoras_box"
+    ],
+    "note": "(see order/gates; jar advancement DAG confirms rhein_kraft and soulsteel sit behind the_source_of_honkai)"
+   }
+  ]
+ }
+}

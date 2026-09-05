@@ -1,0 +1,46 @@
+{
+ "mod": "extended_drawers",
+ "verified_against": "ExtendedDrawers-2.1.1+mc.1.20.1.jar",
+ "item_count_in_jar": 16,
+ "chain": [
+  {"id": "extended_drawers:single_drawer", "title": "One Slot, Many Stacks", "desc": "Logs at the corners, planks on the edges and a wooden chest in the middle; a single-compartment drawer that holds far more of one item than a chest."},
+  {"id": "extended_drawers:double_drawer", "title": "Two to a Block", "desc": "The same wood frame with two chests instead of one, splitting the block face into two independent compartments."},
+  {"id": "extended_drawers:quad_drawer", "title": "Four Faces", "desc": "Four chests in the wood frame, giving the densest of the plain drawers and the shape most walls are built from."},
+  {"id": "extended_drawers:upgrade_frame", "title": "The Blank Frame", "desc": "Sticks and cobblestone around an empty centre; on its own it does nothing, but every capacity upgrade is built on top of it."},
+  {"id": "extended_drawers:t1_upgrade", "title": "Capacity I", "desc": "A barrel between two upgrade frames, ringed with sticks; slotted into a drawer it multiplies what that drawer will hold."},
+  {"id": "extended_drawers:connector", "title": "Wood Without a Chest", "desc": "The drawer frame with no chest at all; placed between drawers it passes the network through so a wall reads as one system."},
+  {"id": "extended_drawers:access_point", "title": "A Door Onto the Wall", "desc": "Cobblestone corners, iron edges and any drawer in the middle; it exposes every connected drawer as a single inventory for pipes and hoppers."},
+  {"id": "extended_drawers:lock", "title": "Padlock and Nuggets", "desc": "Gold nuggets over three gold ingots; applied to a drawer it pins the drawer to its current item so it stays claimed when emptied."},
+  {"id": "extended_drawers:t2_upgrade", "title": "Capacity II", "desc": "An iron block worked into the tier one upgrade with sticks, for the second rung of the capacity ladder."},
+  {"id": "extended_drawers:compacting_drawer", "title": "Block, Ingot, Nugget", "desc": "Stone at the corners, pistons above and below, chests at the sides and an iron block in the middle; it stores a block and its smaller forms as one pooled amount."},
+  {"id": "extended_drawers:limiter", "title": "Telling It When to Stop", "desc": "Redstone corners and copper edges around an ender pearl; it caps a drawer at a chosen count instead of its full capacity."},
+  {"id": "extended_drawers:t3_upgrade", "title": "Capacity III", "desc": "A diamond block and blaze rods added to the tier two upgrade, which puts this rung behind both a nether fortress and a diamond seam."},
+  {"id": "extended_drawers:t4_upgrade", "title": "Capacity IV", "desc": "A shulker box and end rods worked into the tier three upgrade; the highest non-creative capacity tier the mod ships."},
+  {"id": "extended_drawers:shadow_drawer", "title": "A Drawer With No Bottom", "desc": "End stone bricks packed around an end crystal; it mirrors what the network already holds instead of storing anything itself."}
+ ],
+ "collections": [
+  {
+   "hub": "extended_drawers:single_drawer",
+   "members": [
+    "extended_drawers:double_drawer",
+    "extended_drawers:quad_drawer",
+    "extended_drawers:compacting_drawer",
+    "extended_drawers:shadow_drawer",
+    "extended_drawers:access_point",
+    "extended_drawers:connector"
+   ]
+  },
+  {
+   "hub": "extended_drawers:upgrade_frame",
+   "members": [
+    "extended_drawers:t1_upgrade",
+    "extended_drawers:t2_upgrade",
+    "extended_drawers:t3_upgrade",
+    "extended_drawers:t4_upgrade",
+    "extended_drawers:lock",
+    "extended_drawers:limiter"
+   ]
+  }
+ ],
+ "notes": "SHORT CHAIN, DECLARED SHORT. Extended Drawers registers 16 things total and only 14 of them are obtainable, so the chain is 14 steps and every obtainable id appears in it. Nothing is padded.\n\nPARSING TRAP - the lang file is INVALID JSON. assets/extended_drawers/lang/en_us.json contains literal unescaped newlines inside the config.extended_drawers.storage.stackSizeAffectsCapacity.description string. A standard json.loads() raises and returns nothing, which makes the mod look like it has ZERO lang keys and therefore zero verifiable ids - the naive rule would have verified 0 of 16 here, not a partial count. It parses correctly with a lenient decoder (Python's json.JSONDecoder(strict=False)). Once parsed there are 110 keys, of which 9 are item.extended_drawers.X and 7 are block.extended_drawers.X, and those 16 are exactly the registered set. Every one of the 7 blocks is independently confirmed by a blockstate file AND a block loot table.\n\nLOADER - THIS MOD HAS NO FORGE BUILD. Extended Drawers (MattiDragon) ships Fabric/Quilt only on 1.20.1, on both Modrinth and CurseForge; the jar read here is the newest 1.20.1 file, ExtendedDrawers-2.1.1+mc.1.20.1.jar (Fabric). It runs on this Forge pack through Sinytra Connector, and the pack does carry the Connector-side Forgified Fabric API (fabric-api-0.92.6+1.11.14+1.20.1.jar in mods/). Registry ids are unchanged by Connector, so the quest ids below are correct either way. The recipe files even carry fabric:load_conditions, which Connector honours.\n\nDROPPED - extended_drawers:guide_book. It has an item model but NO lang key of any form, and data/extended_drawers/recipes/guide_book.json is a patchouli:shapeless_book_recipe whose output is a patchouli:guide_book stack, not an item in this namespace. Same trap as storagenetwork:network_book. It is a model override for the Patchouli book, not a registered item.\nDROPPED - extended_drawers:creative_upgrade and extended_drawers:dupe_wand. Both ARE registered (item model plus item.extended_drawers.X lang key, and both appear in the mod's own item tags - creative_upgrade in extended_drawers:upgrade, dupe_wand in extended_drawers:toggle/duping). Neither has any recipe, loot table or trade. Registered but unobtainable, so they would be uncompletable quests; they are kept out of both the chain and the wheels.\n\nCONSENSUS CONFLICT, recipe graph preferred: moddb puts extended_drawers:access_point at 0.200, ahead of single_drawer at 0.300. The access_point recipe requires the extended_drawers:drawers item tag in its centre slot, and that tag contains only the five drawer blocks - a drawer must physically exist before an access point can be crafted. access_point is placed after the three plain drawers here. moddb's remaining order (upgrade_frame -> t1 -> t2 -> t3 -> t4, drawers ascending) matches the recipe graph and is kept. moddb has no entry at all for compacting_drawer, shadow_drawer or limiter; all three are real, recipe-backed blocks/items and are included.\n\nUPGRADE LADDER - unlike Storage Drawers, this ladder IS in the obvious order and the lang names it explicitly: t1_upgrade = 'Drawer Upgrade I' (barrel), t2 = 'II' (iron block), t3 = 'III' (diamond block + blaze rod), t4 = 'IV' (shulker box + end rod). The upgrade_frame gates all four. creative_upgrade would be the fifth rung but is creative-only.\n\nThere are no wood or colour variants in this mod at all - one single_drawer block with one blockstate and one recipe, which accepts the minecraft:logs and minecraft:planks TAGS rather than shipping a block per wood - so the wheels are the two real families (drawer blocks off single_drawer, upgrades and modifiers off upgrade_frame) rather than variant families."
+}

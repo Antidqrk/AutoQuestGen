@@ -1,0 +1,49 @@
+{
+  "mod": "easy_villagers",
+  "verified_against": "easy_villagers-1.20.1-1.1.39.jar",
+  "item_count_in_jar": 8,
+  "chain": [
+    {
+      "id": "easy_villagers:villager",
+      "title": "Villager In A Pocket",
+      "desc": "Right-click any villager with an empty hand, or hit the pick-up key, and it becomes an item you can carry. Every block this mod adds wants one of these fed into it."
+    },
+    {
+      "id": "easy_villagers:trader",
+      "title": "Trader",
+      "desc": "Eight iron ingots, three glass panes and redstone dust. Slot a captured villager in and trade with it through the block - no pathfinding, no wandering off, no doors."
+    },
+    {
+      "id": "easy_villagers:converter",
+      "title": "Converter",
+      "desc": "Rotten flesh and mossy cobblestone in the iron-and-glass frame. It zombifies a villager and cures it again on its own, which is how you grind trade prices down to one emerald."
+    },
+    {
+      "id": "easy_villagers:breeder",
+      "title": "Breeder",
+      "desc": "A bed and a plank instead of the redstone. Two villagers plus food go in, baby villagers come out - the block does the whole willingness dance for you."
+    },
+    {
+      "id": "easy_villagers:incubator",
+      "title": "Incubator",
+      "desc": "White wool in the frame, and the middle left empty. Drop a baby villager in and it grows to adult far faster than it would standing in a field."
+    },
+    {
+      "id": "easy_villagers:farmer",
+      "title": "Farmer",
+      "desc": "A water bucket and a block of dirt. Give it a farmer villager and a seed and it works a hands-free crop farm inside one block."
+    },
+    {
+      "id": "easy_villagers:iron_farm",
+      "title": "Iron Farm",
+      "desc": "A lava bucket and a stone block. Feed it a villager and it spawns iron golems on a timer - an entire iron farm compressed into a cube, no beds and no zombie."
+    },
+    {
+      "id": "easy_villagers:auto_trader",
+      "title": "Auto Trader",
+      "desc": "The Trader recipe with a netherite ingot under it. It runs a villager's trade over and over from an input chest and never needs you standing there, which is why netherite gates it."
+    }
+  ],
+  "collections": [],
+  "notes": "SHORT CHAIN, DECLARED SHORT: this mod registers exactly 8 items and all 8 are in the chain. Nothing is padded and there is no wheel, because 8 items with no variant family leaves nothing to wheel. Verified against easy_villagers-1.20.1-1.1.39.jar: META-INF/mods.toml modId=easy_villagers, modLoader=javafml, minecraft versionRange [1.20.1] exactly, no fabric.mod.json, all 191 sampled class files at major version 61 (Java 17 = 1.20.1). ID DERIVATION, two independent passes. Pass 1: assets/easy_villagers/models/item/ holds 8 json files (auto_trader, breeder, converter, farmer, incubator, iron_farm, trader, villager) and every one has a lang key - 7 under block.easy_villagers.* and one, villager, under item.easy_villagers.*. Pass 2 re-derived the set from the class files instead of assets: de/maxhenkel/easyvillagers/items/ModItems.class contains exactly the registry-name strings auto_trader, breeder, converter, farmer, incubator, iron_farm, trader, villager, and ModBlocks.class contains the same 7 minus villager. Both passes give 8. IMPORTANT WIDENING TRAP CAUGHT AND REJECTED: assets/easy_villagers/lang/en_us.json also carries 'item.easy_villagers.baby_villager = Baby Villager', which the lang-key rule would promote to a ninth id. It is NOT a registered item. There is no models/item/baby_villager.json, and the string baby_villager appears in no class file in the jar - it is a display name the single VillagerItem swaps in when the stored villager is a child. easy_villagers:baby_villager is therefore excluded; asking for it would be an uncompletable quest. Note also that blockstates number 7, not 8, which is the correct split - villager is a pure item with no block. OBTAINABILITY, all 8 confirmed in-jar: the 7 blocks each have a crafting_shaped recipe in data/easy_villagers/recipes/ and a block loot table in data/easy_villagers/loot_tables/blocks/. easy_villagers:villager has NO recipe and NO loot table and is still obtainable - de/maxhenkel/easyvillagers/events/VillagerEvents.class handles PlayerInteractEvent.EntityInteract with enableRightClickPickup and a PICKUP_KEY keybind, turning a live villager into the item. That is the mod's entry mechanic, so it opens the chain. ORDERING: the recipe graph is flat here - all 7 blocks are crafted from vanilla materials and none takes another as an ingredient, so there is no dependency edge to follow. Order is therefore by ingredient cost, which is unambiguous: every recipe shares the same forge:glass_panes/colorless + forge:ingots/iron frame and differs only in the two filler slots. trader (redstone dust) < converter (rotten flesh, mossy cobblestone) < breeder (bed, planks) < incubator (white wool) < farmer (water bucket, dirt) < iron_farm (lava bucket, stone) < auto_trader, which is the only recipe in the mod that demands forge:ingots/netherite and is unmistakably the endgame block. CONSENSUS CONFLICT, RECORDED: moddb.json lists 6 ids and puts easy_villagers:farmer at pos 0.0, ahead of easy_villagers:trader at 0.1. The graph is preferred and farmer is moved to sixth. The reason consensus is wrong here is visible in the recipes: farmer needs a minecraft:water_bucket while trader needs only redstone dust, and more decisively the whole mod is unusable until you have caught a villager and put it somewhere, which is what the Trader is for - the Farmer only accepts a villager that already has the farmer profession. Consensus also omits easy_villagers:iron_farm and easy_villagers:villager entirely; both are real, and villager is the prerequisite for all seven blocks."
+}

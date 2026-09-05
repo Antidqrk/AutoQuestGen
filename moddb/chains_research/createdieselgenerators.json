@@ -1,0 +1,170 @@
+{
+ "mod": "createdieselgenerators",
+ "verified_against": "createdieselgenerators-1.20.1-1.3.12.jar",
+ "item_count_in_jar": 59,
+ "chain": [
+  {
+   "id": "createdieselgenerators:hammer",
+   "title": "Beat It Flat",
+   "desc": "Andesite alloy, an iron ingot and a wooden rod. Held in hand it flattens ingots into plates without a press, and it is the gateway tool of the whole mod."
+  },
+  {
+   "id": "createdieselgenerators:wire_cutters",
+   "title": "Snipping Strands",
+   "desc": "Andesite alloy, an iron plate and a wooden rod. Cuts plates down into wire and ingots into rods, feeding every electrical addon in the pack."
+  },
+  {
+   "id": "createdieselgenerators:andesite_girder",
+   "title": "Bones of the Rig",
+   "desc": "Andesite alloy over shafts. A slim structural beam that also encases a shaft, so scaffolding and power transmission share the same block."
+  },
+  {
+   "id": "createdieselgenerators:canister",
+   "title": "Fluid in Your Pocket",
+   "desc": "Andesite alloy, a wooden barrel and iron plates. A hand-carried tank you can fill at a spout and empty into a machine anywhere."
+  },
+  {
+   "id": "createdieselgenerators:wood_chip",
+   "title": "Splinters Have Value",
+   "desc": "Crush or saw almost any wooden item down to chips. The feedstock for chip board, bowls, sticks and the fermenter's biomass line."
+  },
+  {
+   "id": "createdieselgenerators:mold",
+   "title": "Shape of Things",
+   "desc": "An iron plate cut on a saw becomes a mold, in bar, bowl, chain or lines pattern. Compression molding then stamps parts out of powder and plate."
+  },
+  {
+   "id": "createdieselgenerators:basin_lid",
+   "title": "Sealing the Bowl",
+   "desc": "Andesite alloy under a clock. Capped onto a Create basin it turns the open bowl into a closed fermenting vessel and keeps the contents in."
+  },
+  {
+   "id": "createdieselgenerators:lighter",
+   "title": "A Pocket Flame",
+   "desc": "Andesite alloy, brass plates, string and flint and steel. Its own item ignites the chemical sprayer's stream into a flamethrower."
+  },
+  {
+   "id": "createdieselgenerators:bulk_fermenter",
+   "title": "Rot at Scale",
+   "desc": "Andesite alloy around a wooden barrel. Bigger throughput than a lidded basin, converting plant matter and bone meal into ethanol by the bucket."
+  },
+  {
+   "id": "createdieselgenerators:burner",
+   "title": "Fire That Eats Fuel",
+   "desc": "An empty blaze burner, andesite alloy, a shaft, brass and flint and steel. Heats basins on liquid fuel instead of hunting blazes for a spirit."
+  },
+  {
+   "id": "createdieselgenerators:oil_scanner",
+   "title": "Reading the Ground",
+   "desc": "Andesite alloy, an iron ingot, iron plates and a clock. Held and used it reports whether the chunk beneath you hides a crude oil deposit."
+  },
+  {
+   "id": "createdieselgenerators:pumpjack_hole",
+   "title": "Punching Down",
+   "desc": "Copper casing, a fluid pipe and a chain. The wellhead that actually touches the deposit; everything above it is just the machinery to work it."
+  },
+  {
+   "id": "createdieselgenerators:pumpjack_bearing",
+   "title": "The Nodding Joint",
+   "desc": "A Create mechanical bearing wrapped in andesite alloy and zinc. It carries the pumpjack's rocking arm and takes rotation from your existing drivetrain."
+  },
+  {
+   "id": "createdieselgenerators:pumpjack_crank",
+   "title": "Turning Rock into Rhythm",
+   "desc": "Mechanical crafting: a tall lattice of andesite alloy, zinc ingots, iron plates and shafts. The crank converts steady spin into the pump's stroke."
+  },
+  {
+   "id": "createdieselgenerators:pumpjack_head",
+   "title": "The Horse's Head",
+   "desc": "Andesite alloy, zinc ingots and dried kelp. The counterweighted nose of the derrick, and the last piece before the well produces."
+  },
+  {
+   "id": "createdieselgenerators:crude_oil_bucket",
+   "title": "Black Blood",
+   "desc": "Bucketed straight from a working pumpjack. Useless as fuel until it is split, but the parent of diesel, gasoline and every asphalt slab you pour."
+  },
+  {
+   "id": "createdieselgenerators:oil_barrel",
+   "title": "Somewhere to Put It",
+   "desc": "A wooden barrel banded with iron plates. Bulk crude storage that stacks and pipes, so the derrick never stalls waiting for a tank."
+  },
+  {
+   "id": "createdieselgenerators:distillation_controller",
+   "title": "Cracking the Barrel",
+   "desc": "Andesite alloy, iron plates, a fluid pipe and a clock. Head of a heated distillation tower that splits crude oil into diesel and gasoline."
+  },
+  {
+   "id": "createdieselgenerators:asphalt_block",
+   "title": "Paving with Leftovers",
+   "desc": "Gravel and sand mixed with hot crude, four at a time. Walk on it and you move noticeably faster, which makes long hauls between rigs bearable."
+  },
+  {
+   "id": "createdieselgenerators:engine_piston",
+   "title": "The Moving Part",
+   "desc": "Andesite alloy, a shaft and zinc nuggets, or the same with iron rods. Every diesel engine in the mod is built around a stack of these."
+  },
+  {
+   "id": "createdieselgenerators:diesel_engine",
+   "title": "Ignition",
+   "desc": "A fluid tank, an engine piston, a block of brass, flint and steel and a blackstone slab. Burns liquid fuel directly into rotational force."
+  },
+  {
+   "id": "createdieselgenerators:chemical_sprayer",
+   "title": "Pressure and Spite",
+   "desc": "Mechanical crafting from a precision mechanism, a copper block, a fluid pipe, dried kelp and kelp handles. Sprays whatever fluid you load it with."
+  },
+  {
+   "id": "createdieselgenerators:chemical_turret",
+   "title": "It Aims Itself",
+   "desc": "A sprayer set in copper casing with a cogwheel, precision mechanism and copper plates. Tracks and drenches whatever wanders into its arc."
+  },
+  {
+   "id": "createdieselgenerators:white_cement_bucket",
+   "title": "Concrete That Pours",
+   "desc": "Mixed from concrete powder and water. As a fluid it can be pumped and spouted, so walls set themselves instead of being placed by hand."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "createdieselgenerators:crude_oil_bucket",
+   "members": [
+    "createdieselgenerators:diesel_bucket",
+    "createdieselgenerators:gasoline_bucket",
+    "createdieselgenerators:biodiesel_bucket",
+    "createdieselgenerators:ethanol_bucket",
+    "createdieselgenerators:plant_oil_bucket"
+   ]
+  },
+  {
+   "hub": "createdieselgenerators:diesel_engine",
+   "members": [
+    "createdieselgenerators:large_diesel_engine",
+    "createdieselgenerators:huge_diesel_engine",
+    "createdieselgenerators:engine_turbocharger",
+    "createdieselgenerators:engine_silencer",
+    "createdieselgenerators:sheet_metal_panel",
+    "createdieselgenerators:chip_wood_block"
+   ]
+  },
+  {
+   "hub": "createdieselgenerators:white_cement_bucket",
+   "members": [
+    "createdieselgenerators:black_cement_bucket",
+    "createdieselgenerators:blue_cement_bucket",
+    "createdieselgenerators:brown_cement_bucket",
+    "createdieselgenerators:cyan_cement_bucket",
+    "createdieselgenerators:gray_cement_bucket",
+    "createdieselgenerators:green_cement_bucket",
+    "createdieselgenerators:light_blue_cement_bucket",
+    "createdieselgenerators:lime_cement_bucket",
+    "createdieselgenerators:magenta_cement_bucket",
+    "createdieselgenerators:orange_cement_bucket",
+    "createdieselgenerators:pink_cement_bucket",
+    "createdieselgenerators:purple_cement_bucket",
+    "createdieselgenerators:red_cement_bucket",
+    "createdieselgenerators:yellow_cement_bucket"
+   ]
+  }
+ ],
+ "notes": "Create: Diesel Generators assumes base Create is already solved. Derived ingredients across the chain: create:andesite_alloy, create:shaft, create:cogwheel, create:copper_casing, create:fluid_pipe, create:fluid_tank, create:mechanical_bearing, create:precision_mechanism, create:propeller, create:empty_blaze_burner, create:steam_engine, create:basin plus a heat source, and Create crushing wheels / mechanical saw / mechanical press for the wood-chip and plate lines. Forge tags used heavily: forge:plates/iron, forge:plates/brass, forge:plates/copper, forge:ingots/brass, forge:ingots/zinc, forge:nuggets/zinc, forge:storage_blocks/brass, forge:storage_blocks/copper, forge:barrels/wooden, forge:rods/wooden. The mod also ships its own hammering/wire_cutting recipes that produce createaddition: and immersiveengineering: items when those mods are present (data/createdieselgenerators/recipes/compat/**); none of those outputs are createdieselgenerators ids, so none entered this chain. ORDERING vs moddb consensus (26 entries, ALL 26 id-verified against the jar, no renamed or impossible ids found): the consensus early half agrees closely with the recipe graph - canister 0.000, andesite_girder 0.022, wire_cutters 0.043, kelp_handle 0.087, lighter 0.109, engine_piston 0.122, wood_chip 0.130, oil_scanner 0.207, mold 0.217, pumpjack_hole 0.256, then distillation_controller 0.348 and crude_oil_bucket 0.476. One clear conflict: consensus places createdieselgenerators:purple_cement_bucket at 0.065, near the very start, but cement is a create:mixing product of dyed concrete powder and water and is not an early item; more importantly picking one arbitrary colour as a chain step is a packs artifact. All 16 cement buckets were moved into a wheel instead, hub white_cement_bucket. Second conflict: consensus omits every diesel engine (diesel_engine, large_diesel_engine, huge_diesel_engine) and the pumpjack crank and head, which are the actual payoff of the mod; the recipe graph puts them on the spine and they were added. The pumpjack ordering follows the recipe graph strictly: oil_scanner locates a deposit, pumpjack_hole is the wellhead, then bearing, crank and head complete the derrick, and only then can crude_oil_bucket be filled. NOTE ON IDS: createdieselgenerators:mold is a single item whose four patterns (bar, bowl, chain, lines) live in NBT, not in separate ids - createdieselgenerators:bar / :bowl / :chain / :lines are NOT items and were not used. The lighter and oil_scanner and wire_cutters and track_layers_bag each ship extra item models for state (lighter_open, lighter_ignited, oil_scanner_high/medium/none, wire_cutters_cut, track_layers_bag_filled, and 39 lighter skin models); these have models but no lang keys, so the model-cap-lang intersection correctly rejects all of them - item_count_in_jar 59 rather than the 113 raw item models. Cement wheel capped at 14 members per the wheel size limit: createdieselgenerators:light_gray_cement_bucket exists and is valid but was left out to fit. _slab/_stairs excluded per desirability, so createdieselgenerators:asphalt_slab, :asphalt_stairs, :chip_wood_slab and :chip_wood_stairs were skipped even though all four are valid ids. createdieselgenerators:entity_filter, :track_layers_bag, :kelp_handle, :chip_wood_beam and :chemical_sprayer_lighter are valid and craftable but were cut for length."
+}

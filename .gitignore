@@ -1,0 +1,17 @@
+# Local settings — the AI path stores an API key here. Never commit it.
+autoquestgen_config.json
+*key.txt
+
+# Runtime state and generated output
+*.log
+__pycache__/
+*.pyc
+scan_cache_*.pkl
+editor_snapshot.json
+backup_quests_*/
+chapters.backup-*/
+
+# Build output
+build/
+dist/
+*.spec

@@ -1,0 +1,458 @@
+{
+ "mod": "goety",
+ "ids_in_jar": 1318,
+ "videos": [
+  {
+   "id": "Ghh-gOQfEuU",
+   "title": "🟨 COMPLETE GUIDE to the GOETY MOD | MAGIC/RITUALS/ NEW STRUCTURES AND BOSSES in MINECRAFT",
+   "channel": "Edlux Tutorials",
+   "views": 19168,
+   "duration": 2223,
+   "chars": 41214
+  },
+  {
+   "id": "b8GeHjBf108",
+   "title": "Goety - The Dark Arts (1.20.1) | Full Showcase",
+   "channel": "Leonxkingx",
+   "views": 20958,
+   "duration": 553,
+   "chars": 7205
+  }
+ ],
+ "items": {
+  "goety:totem_of_roots": {
+   "mentions": 9,
+   "videos": 1,
+   "first_at": 0.0317,
+   "praise": 3,
+   "warn": 3,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "goety:dark_altar_stone": {
+   "mentions": 9,
+   "videos": 1,
+   "first_at": 0.1612,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "goety:cursed_cage": {
+   "mentions": 8,
+   "videos": 1,
+   "first_at": 0.1441,
+   "praise": 2,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:totem_of_souls": {
+   "mentions": 7,
+   "videos": 1,
+   "first_at": 0.0322,
+   "praise": 3,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:pedestal_stone": {
+   "mentions": 7,
+   "videos": 1,
+   "first_at": 0.1594,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "goety:shade_stone": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.1637,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:haunted_glass": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.4362,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:empty_focus": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.2902,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:ectoplasm": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.0385,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:corruption_focus": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.9027,
+   "praise": 12,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "goety:focus_bag": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.3935,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:dark_wand": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.3172,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:shade_stone_polished": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.4684,
+   "praise": 0,
+   "warn": 3,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:magic_emerald": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.0687,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "goety:warlock_sash": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.8841,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "goety:spider_egg": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.4869,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "goety:focus_pack": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3978,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:black_book": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.0174,
+   "praise": 1,
+   "warn": 1,
+   "early_cue": 3,
+   "late_cue": 0
+  },
+  "goety:witch_hat_hedge": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.8838,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:withered_manuscript": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7717,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:cursed_ingot": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1289,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "goety:flame_capture": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.294,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:bygone_scroll": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7748,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:wind_blower": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.7316,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:haunted_log": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3028,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:shade_stone_slab": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1771,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:bonehead_hammer": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5807,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:treasure_pouch": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5836,
+   "praise": 2,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:haunted_planks": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3032,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:shade_brazier": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4827,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:rupture_focus": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3364,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:night_beacon": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9035,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:magic_fabric": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3127,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:haunted_wood": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2994,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:blazing_horn": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7271,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:spider_nest": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.486,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:skull_focus": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3506,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:dark_helmet": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9846,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:dark_anvil": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5193,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:wind_core": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5058,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:frozen_blade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8427,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "goety:crystal_ball": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0748,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   "The book is genuinely step one. Guide: 'This item, when opened, gives us access to the first steps. Basically the first thing we'll discover is the dark arts.' -> goety:black_book. It is the mod's own progression UI and names its sections ('first steps', then 'magic', then 'rituals').",
+   "goety:cursed_infuser is the true first machine and the jar makes this unarguable: it is the ONLY source of the mod's four base materials. Recipe is lapis + cauldron + stone bricks + coal block, so it is reachable on day one.",
+   "Infuse the four basics: stone -> goety:shade_stone, iron -> goety:cursed_ingot, amethyst -> goety:empty_focus, emerald -> goety:magic_emerald. Everything downstream is built from these.",
+   "goety:magic_fabric (2 string + lapis + gold ingot) is the other early craft, and it plus goety:empty_focus is what makes the wand.",
+   "goety:dark_wand is the first real tool - 2 lapis + goety:empty_focus + goety:magic_fabric + planks. Guide: 'now you know how to craft a wand and how to make focus items'.",
+   "Then the altar, which is what unlocks the rest of the mod: goety:dark_altar = 2x goety:magic_emerald + shade stone + a pedestal. Guide heard it as 'awakened emeralds'; the jar says goety:magic_emerald.",
+   "Surround it with pedestals - goety:pedestal (and its stone/deepslate/blackstone/marble/end_stone/nether_brick/prismarine variants). Guide: 'once we've gathered enough Shade Stone and built a Dark Altar, typically I've seen at most 8 pedestals used, so that number should be plenty.'",
+   "Now rituals, which is where the mod actually lives. Start with a trivial summon to learn the loop - the guide picks the black wolf ritual, 'super simple: a dark altar and two bones'.",
+   "goety:soul_emerald (8x goety:magic_emerald around an goety:empty_focus) is the mid-game currency item that activates the higher necroturgy rituals such as goety:necro_crown.",
+   "Storage for foci comes early because you will have dozens: goety:focus_bag, then goety:focus_pack. Guide: 'if you craft the focus pack, you'll have space for 20'."
+  ],
+  "gates": [
+   "SOULS are the mod's currency and the hardest gate. Almost every ritual and brazier recipe in the jar carries a soulCost, and goety:dark_ingot alone costs 2000 souls at a brazier. Guide: 'you'll need a ton of energy and kill many mobs to start crafting with the totem of souls.' Collect them with goety:soul_absorber / goety:totem_of_souls into goety:soul_jar.",
+   "goety:dark_altar + pedestals gate EVERY ritual. Guide is explicit: 'To perform rituals, it's essential to have altars and pedestals, got it? It's crucial - without them you can't do any rituals.'",
+   "goety:empty_focus gates every single spell focus. Guide: 'each focus has its crafting recipe, but they all need the empty focus and rituals.' There are ~150 *_focus ids in the jar and all of them route through it.",
+   "Rituals are typed, and the type is its own gate. The jar defines 15 craftTypes - magic, necroturgy, forge, animation, sabbath, geoturgy, storm, frost, sky, deep, end, divination, overgrown, adept_nether, expert_nether - and a ritual will refuse until you can perform that type. Guide hits this live: 'it tells us this requires an animation ritual... you need the adept nether type of ritual and you need a hoglin inside the square.'",
+   "Rituals also gate on the ACTIVATION ITEM held, not just the ingredients: goety:dark_wand for necroturgy, goety:empty_focus for magic/sky/animation, goety:cursed_infuser for forge, goety:soul_emerald for the crown, a netherite ingot for the apostle summon.",
+   "Some rituals gate on world state, not items. Guide: 'some rituals need their own ecosystem requirements and a specific mob besides the usual items', plus a physical build area ('a square of 17x, you need to place 15 rails').",
+   "goety:cursed_cage needs 8 of the infused metal bars - guide: 'this bar is useless unless you get eight of them, which lets you craft a cursed cage.'"
+  ],
+  "mechanics": [
+   "Goety is a WAND + FOCUS system, not a spellbook system. goety:dark_wand is the single casting item; the ~150 foci (goety:fireball_focus, goety:blink_focus, goety:soul_bolt_focus, goety:meteor_shower_focus ...) are the spells, swapped in and out. Quests should chase foci, not wands.",
+   "Souls are spent, stored and transferred: goety:soul_jar and its variants, goety:soul_absorber, goety:soul_transfer, goety:soul_mender. Braziers (goety:stone_brazier, goety:blackstone_brazier, goety:necro_brazier and the soul_brazier variants) are the soul-powered crafting stations.",
+   "Necromancy is the identity: summon and command undead servants via foci and rituals (goety:troop_focus, goety:call_focus, goety:command_focus), with goety:necro_staff / goety:necro_crown / goety:necro_brazier as the dedicated line.",
+   "There are parallel elemental staff+crown+robe sets rather than one ladder: goety:storm_staff/goety:storm_crown/goety:storm_robe, goety:frost_staff/goety:frost_crown/goety:frost_robe, goety:wind_staff/goety:wind_crown/goety:wind_robe, goety:nether_staff/goety:nether_crown/goety:nether_robe, goety:void_staff/goety:void_crown/goety:void_robe, goety:wild_staff/goety:wild_crown/goety:wild_robe, goety:geo_staff, goety:abyss_staff, goety:nameless_staff, goety:ominous_staff. Pick a school, do not grind them all.",
+   "Cores are the ritual sub-ingredient tier that unlocks focus families: goety:wind_core, goety:mystic_core, goety:hunger_core, goety:animation_core.",
+   "Structures and bosses carry the late game (the guide tours a tomb and a wind shrine), ending at the Apostle - goety:apostle_spawn_egg exists and the summon ritual needs a netherite ingot as activation item."
+  ],
+  "traps": [
+   "goety:treasure_pouch is called out as bad. Guide: 'then we have this treasure pouch which gives us this useless loot.'",
+   "Do not quest every ritual. Guide, mid-demo: 'We could do another ritual, but it'd be repetitive, not worth it.' One ritual per craftType is the teaching unit.",
+   "Do not build a quest chain out of the ~150 *_focus ids - they are a menu, not a ladder. The same applies to the ~12 pedestal and ~14 brazier stone variants, which are cosmetic material swaps of one block.",
+   "Shielded mobs need an axe specifically - guide: 'You need to break their shields with an axe... to hit these mobs you'll need an axe.'"
+  ],
+  "signature": [
+   "goety:black_book",
+   "goety:cursed_infuser",
+   "goety:dark_wand",
+   "goety:empty_focus",
+   "goety:dark_altar",
+   "goety:pedestal",
+   "goety:magic_emerald",
+   "goety:soul_emerald",
+   "goety:shade_stone",
+   "goety:cursed_ingot",
+   "goety:soul_jar",
+   "goety:totem_of_souls",
+   "goety:focus_pack",
+   "goety:necro_staff",
+   "goety:dark_ingot",
+   "goety:philosophers_stone"
+  ],
+  "pack_status": "INSTALLED. goety-2.5.55.4.jar plus addons goety_cataclysm-1.20-1.8.2.jar, goety_spillage-1.20-1.4.8.jar and goetyhostility-1.4.4.jar are in CREATE FEMBY. All 1318 ids come from the live instance jar. Note the addon jars contribute 0 ids to the goety namespace - they register under their own namespaces."
+ }
+}

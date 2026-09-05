@@ -1,0 +1,20 @@
+{
+ "_comment": "Facts that only appear when two mods are installed TOGETHER, so no single-mod jar scan can find them. Each was verified by an agent reading guides or jars, not inferred.",
+ "shadowed": [
+  {
+   "when": [
+    "create_connected",
+    "copycats"
+   ],
+   "drop_prefix": "create_connected:copycat",
+   "why": "Create Connected ships its own copycat blocks that SILENTLY MIGRATE into Copycats+ blocks when both mods are present. A quest asking for a create_connected:copycat_* item can never complete, because the item turns into the copycats: version in the player's inventory."
+  }
+ ],
+ "cross_mod_gates": [
+  {
+   "needs": "tfmg",
+   "gates": "createbigcannons",
+   "why": "Create Big Cannons does not add steel - the guide says so outright. Steel cannons, its whole endgame, are unreachable until TFMG's blast furnace line runs: cast iron -> coke oven -> fire clay -> blast stove -> blast furnace. Neither mod's jar mentions the other, so this dependency is invisible to any per-mod scan."
+  }
+ ]
+}

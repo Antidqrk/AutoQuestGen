@@ -1,0 +1,169 @@
+{
+ "mod": "bewitchment",
+ "verified_against": "bewitchment-1.20-10.jar",
+ "item_count_in_jar": 255,
+ "chain": [
+  {
+   "id": "bewitchment:silver_ingot",
+   "title": "Moonlight Pulled From Stone",
+   "desc": "Smelted from Silver Ore or Raw Silver; nearly every witch's tool in the mod is forged from it."
+  },
+  {
+   "id": "bewitchment:athame",
+   "title": "The Blade That Cuts Spirit",
+   "desc": "Silver and flint. It strips bark from logs, fills taglocks, and shears heads from the mobs it kills."
+  },
+  {
+   "id": "bewitchment:mandrake_root",
+   "title": "It Screams When Pulled",
+   "desc": "Grown from Mandrake Seeds on tilled soil; the root binds the Book of Shadows and the Druid Band."
+  },
+  {
+   "id": "bewitchment:book_of_shadows",
+   "title": "Open the Grimoire",
+   "desc": "A plain book bound with Mandrake Root, opening chapters on brewing, rituals, curses, poppets, sigils and contracts."
+  },
+  {
+   "id": "bewitchment:stone_witch_altar",
+   "title": "Where the Power Pools",
+   "desc": "Stone, bark and silver. The altar gathers magical power from the nature around it and pays for every ritual you cast."
+  },
+  {
+   "id": "bewitchment:taglock",
+   "title": "A Name Sealed in Glass",
+   "desc": "Bone and a glass bottle, filled by striking a creature with an Athame; it aims a ritual at one specific target."
+  },
+  {
+   "id": "bewitchment:witch_cauldron",
+   "title": "Set the Brew Boiling",
+   "desc": "A vanilla Cauldron rebuilt with bark and silver; it brews the mod's forty-eight potions by colour."
+  },
+  {
+   "id": "bewitchment:wood_ash",
+   "title": "What the Fire Leaves Behind",
+   "desc": "Logs cooked on a campfire; the binding agent in every stick of chalk."
+  },
+  {
+   "id": "bewitchment:chalk",
+   "title": "Draw the First Circle",
+   "desc": "Cobblestone, Wood Ash and bark. It marks the Glyph rings that every ritual must be performed inside."
+  },
+  {
+   "id": "bewitchment:brazier",
+   "title": "The Circle's Beating Heart",
+   "desc": "Silver, iron bars and nether wart, set at the centre of the circle to consume the ritual's reagents."
+  },
+  {
+   "id": "bewitchment:earth_ichor",
+   "title": "Blood of the Ground",
+   "desc": "Distilled from Aconite, Spruce Bark and stone; the first of six oils that the advanced chalks demand."
+  },
+  {
+   "id": "bewitchment:golden_chalk",
+   "title": "The Gilded Ring",
+   "desc": "Chalk quenched in Cleansing Balm and Earth Ichor, drawing the golden circle most rituals require."
+  },
+  {
+   "id": "kill:bewitchment:hellhound",
+   "title": "Something Is Loose in the Nether",
+   "desc": "Hellhounds prowl the Nether and are the earliest reliable source of Demon Horn."
+  },
+  {
+   "id": "bewitchment:demon_horn",
+   "title": "Taken From a Burning Skull",
+   "desc": "Dropped by Hellhounds and by every greater demon; the summoning ritual will not run without one."
+  },
+  {
+   "id": "bewitchment:fiery_chalk",
+   "title": "A Circle Drawn in Embers",
+   "desc": "Chalk cut with Fiery Serum and Heaven Extract; the demon summoning needs it for both the inner and the outer ring."
+  },
+  {
+   "id": "kill:bewitchment:demon",
+   "title": "Answer the Summons",
+   "desc": "The Summon Demon ritual costs 666 altar power and burns a diamond, Snake Tongue, Demon Horn, Aconite and Belladonna."
+  },
+  {
+   "id": "bewitchment:demon_heart",
+   "title": "Still Warm, Still Beating",
+   "desc": "Dropped by Demons, Baphomet, Herne, Leonard and Lilith; it powers the familiar binding and the Voodoo Poppet."
+  },
+  {
+   "id": "kill:bewitchment:ghost",
+   "title": "A Cold Spot in the Room",
+   "desc": "Ghosts are the mod's only source of Ectoplasm."
+  },
+  {
+   "id": "bewitchment:ectoplasm",
+   "title": "Residue of the Restless",
+   "desc": "A ghost's leavings, used in the Specter Bangle, the Sentinel Sigil and the ritual that binds a familiar."
+  },
+  {
+   "id": "bewitchment:voodoo_poppet",
+   "title": "A Doll Wearing Your Enemy's Name",
+   "desc": "Aconite, a Demon Heart, dried kelp, a hay block and vine; paired with a Taglock it passes your wounds to another."
+  },
+  {
+   "id": "bewitchment:eldritch_chalk",
+   "title": "Lines That Should Not Meet",
+   "desc": "Chalk mixed with Aqua Cerate and Grim Elixir; the outer ring of the binding and divination rituals."
+  },
+  {
+   "id": "bewitchment:demonic_contract",
+   "title": "Sign, and Be Paid",
+   "desc": "A pact carrying one of fifteen named terms from Lust to Treachery, each granting a boon while its days run down."
+  },
+  {
+   "id": "kill:bewitchment:baphomet",
+   "title": "The Goat Upon the Throne",
+   "desc": "Baphomet is summoned by ritual and drops the Caduceus alongside Demon Hearts and Demon Horns."
+  },
+  {
+   "id": "bewitchment:caduceus",
+   "title": "The Serpent-Wound Rod",
+   "desc": "Baphomet's own staff, and the rarest thing the mod will let you carry out of a ritual circle."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "bewitchment:earth_ichor",
+   "members": [
+    "bewitchment:aqua_cerate",
+    "bewitchment:cleansing_balm",
+    "bewitchment:fiery_serum",
+    "bewitchment:grim_elixir",
+    "bewitchment:heaven_extract"
+   ]
+  },
+  {
+   "hub": "bewitchment:voodoo_poppet",
+   "members": [
+    "bewitchment:curse_poppet",
+    "bewitchment:death_protection_poppet",
+    "bewitchment:fatigue_poppet",
+    "bewitchment:judgment_poppet",
+    "bewitchment:mending_poppet",
+    "bewitchment:protection_poppet",
+    "bewitchment:vampiric_poppet",
+    "bewitchment:voodoo_protection_poppet"
+   ]
+  },
+  {
+   "hub": "bewitchment:ruin_sigil",
+   "members": [
+    "bewitchment:cleansing_sigil",
+    "bewitchment:decay_sigil",
+    "bewitchment:extending_sigil",
+    "bewitchment:heavy_sigil",
+    "bewitchment:judgment_sigil",
+    "bewitchment:mending_sigil",
+    "bewitchment:sentinel_sigil",
+    "bewitchment:shadows_sigil",
+    "bewitchment:shrieking_sigil",
+    "bewitchment:slippery_sigil",
+    "bewitchment:smelly_sigil"
+   ]
+  }
+ ],
+ "notes": "VERIFICATION: 239 ids pass the strict test (models/item stem INTERSECT item./block. lang key). Chalk and the 12 sigils fail that intersection because their display names are composed at runtime from block.bewitchment.glyph / block.bewitchment.sigil plus a variant key (chalk.bewitchment.*, sigil.bewitchment.*), but all 16 are registry-verified as crafting recipe RESULTS, which is stronger evidence than a lang key; including them gives the 255 usable ids reported. DROPS: the 6 *_variant model files (horned_spear_variant, nazar_variant, prickly_belt_variant, taglock_variant, waystone_variant, witch_hat_variant) are alternate model files with no registry reference, not items. Of the 197 lang-only keys, almost all are '<colour>_<material>_witch_altar' cloth blockstate variants of the nine real altar items, plus book_of_shadows.landing_text; only 'mandrake' had any registry reference (the crop block, whose item is mandrake_root). ENTITIES: 23 entity.bewitchment.* lang keys; 13 verified killable against data/bewitchment/loot_tables/entities/ (baphomet, demon, ghost, hellhound, herne, leonard, lilith, owl, raven, snake, toad, vampire, werewolf). Dropped 10 that would produce uncompletable kill tasks: horned_spear and silver_arrow (projectiles) and the 8 boat/broom vehicles. GRAPH: rituals are data-driven (25 bewitchment:ritual_recipe files); each declares an 'inner' and 'outer' chalk type plus an altar power 'cost', so chalk tier is the real gate - summon_demon requires fiery/fiery at cost 666 and bind_familiar requires fiery/eldritch at 850. The six oils come from bewitchment:oil_recipe and each needs a bark that only the Athame can strip, which is why the Athame is placed second. demonic_contract has no recipe and no loot table; it is granted through demon interaction in code and stores its named term (contract.bewitchment.*, 15 of them) as NBT rather than as 15 item ids, so it cannot be expanded into a wheel. CONSENSUS: all 26 moddb ids exist in the jar and no ordering contradiction was found - moddb's early cluster (garlic, saplings, book_of_shadows, athame, taglock at pos 0.10-0.20) and its late cluster (poppets, grim_elixir, aqua_cerate at pos 0.33-0.48) both agree with the recipe graph. One minor divergence: moddb ranks book_of_shadows at pos 0.123 but never ranks mandrake_root, which its recipe requires; the graph is preferred and mandrake_root precedes it here."
+}

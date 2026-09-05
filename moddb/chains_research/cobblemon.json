@@ -1,0 +1,319 @@
+{
+ "mod": "cobblemon",
+ "verified_against": "Cobblemon-forge-1.5.2+1.20.1.jar",
+ "item_count_in_jar": 494,
+ "chain": [
+  {
+   "id": "cobblemon:red_apricorn",
+   "title": "Pick The Red One",
+   "desc": "Apricorn trees generate in the overworld and their pods are the very first thing Cobblemon asks you for. The mod's own advancement tree makes harvest_apricorn a root node, one step from nothing."
+  },
+  {
+   "id": "cobblemon:poke_ball",
+   "title": "Copper Around A Pod",
+   "desc": "A red apricorn wrapped in the cobblemon:tier_1_poke_ball_materials tag, which resolves to plain copper ingots. Every other ball in the mod is a variation on this nine-slot pattern."
+  },
+  {
+   "id": "cobblemon:red_apricorn_seed",
+   "title": "Grow Your Own Supply",
+   "desc": "Apricorn pods yield seeds so you stop wandering for them. The apricorn sapling block drops the seed rather than itself, which is why the seed and not the sapling is the item you collect."
+  },
+  {
+   "id": "cobblemon:great_ball",
+   "title": "Iron Tier",
+   "desc": "Blue and red apricorn over iron ingots. The tag ladder is exact and worth learning once: copper, iron, gold, diamond for tiers one through four."
+  },
+  {
+   "id": "cobblemon:ultra_ball",
+   "title": "Gold Tier",
+   "desc": "Black and yellow apricorn over gold. Ultra Balls are where apricorn farming stops being a chore and starts being infrastructure."
+  },
+  {
+   "id": "cobblemon:pc",
+   "title": "Somewhere To Put Them",
+   "desc": "Copper, iron, glass and smooth stone. Six party slots fills fast and the PC is the only way past it."
+  },
+  {
+   "id": "cobblemon:pasture",
+   "title": "Let Them Out",
+   "desc": "A PC with a hopper, planks and wheat. The pasture block turns stored Pokemon back into visible ones standing around your base."
+  },
+  {
+   "id": "cobblemon:revival_herb",
+   "title": "The Herb In The Grass",
+   "desc": "Revival Herb generates as a wild plant and is the root of the entire medicine tree. Cobblemon's advancements hang obtain_revival_herb straight off any_plant."
+  },
+  {
+   "id": "cobblemon:heal_powder",
+   "title": "Ground To Powder",
+   "desc": "Smelt the revival herb. Heal Powder is the cheapest full heal in the mod and the ingredient the rest of the line needs."
+  },
+  {
+   "id": "cobblemon:revive",
+   "title": "Back On Its Feet",
+   "desc": "Heal Powder plus a honey bottle. Revive is the item the Healing Machine and the Restoration Tank are both built out of."
+  },
+  {
+   "id": "cobblemon:healing_machine",
+   "title": "The Pokemon Centre",
+   "desc": "Revive, a ghast tear, a diamond, copper and iron. This is the block that ends the walk-home-to-sleep loop and it is the real mid-game milestone."
+  },
+  {
+   "id": "cobblemon:medicinal_leek",
+   "title": "Leeks Grow Wild",
+   "desc": "Medicinal Leek is a wild crop and the start of the brewing branch. obtain_leek is its own advancement node."
+  },
+  {
+   "id": "cobblemon:medicinal_brew",
+   "title": "A Base To Brew From",
+   "desc": "The Medicinal Brew replaces awkward potion as the base for every Cobblemon medicine, and doubles as an ingredient in the vitamin crafts."
+  },
+  {
+   "id": "cobblemon:potion",
+   "title": "Twenty HP In A Bottle",
+   "desc": "Brewed, not crafted. Cobblemon registers its medicine line as brewing-stand recipes in code rather than as datapack json, which is why no recipe file names it."
+  },
+  {
+   "id": "cobblemon:big_root",
+   "title": "Pull It Out Of The Water",
+   "desc": "Big Root grows submerged and smelts into Remedy. It is also a held item that drains HP from the Pokemon you are fighting."
+  },
+  {
+   "id": "cobblemon:remedy",
+   "title": "Cooked Root",
+   "desc": "Smelt, smoke or campfire the Big Root. Remedy heals but lowers friendship, and it is the first rung of the remedy ladder."
+  },
+  {
+   "id": "cobblemon:vivichoke",
+   "title": "The Artichoke That Isn't",
+   "desc": "Vivichoke grows in lush caves and is the reagent that turns Revive into Max Revive and Fine Remedy into Superb Remedy."
+  },
+  {
+   "id": "cobblemon:tumblestone",
+   "title": "Stone That Grows",
+   "desc": "Tumblestone clusters grow out of stone like amethyst. obtain_tumblestone is a second root node in Cobblemon's advancement tree, entirely parallel to apricorns."
+  },
+  {
+   "id": "cobblemon:tumblestone_block",
+   "title": "Farm The Cluster",
+   "desc": "Nine tumblestone. Placing the block lets buds regrow on it, which is exactly what the grow_tumblestone advancement is checking for."
+  },
+  {
+   "id": "cobblemon:ancient_poke_ball",
+   "title": "The Hisui Pattern",
+   "desc": "Red apricorn, copper and tumblestone. Ancient balls are a whole second ball ladder built on tumblestone instead of raw metal tier."
+  },
+  {
+   "id": "cobblemon:sky_tumblestone",
+   "title": "The Blue Variant",
+   "desc": "Sky Tumblestone grows high and cold and gates the Feather, Wing and Jet balls, the ones that reach a fleeing Pokemon."
+  },
+  {
+   "id": "cobblemon:black_tumblestone",
+   "title": "The Heavy Variant",
+   "desc": "Black Tumblestone gates the Heavy, Leaden and Gigaton balls. Gigaton needs black apricorn, black tumblestone and gold at once."
+  },
+  {
+   "id": "cobblemon:fossil_analyzer",
+   "title": "Reading Old Bone",
+   "desc": "Amethyst, deepslate, glass, iron and redstone. The analyzer is half of the fossil rig and does nothing without the tank."
+  },
+  {
+   "id": "cobblemon:restoration_tank",
+   "title": "The Other Half",
+   "desc": "Revive, a composter, glass and iron. Analyzer plus tank plus monitor is the full machine, and it is the only way to get an extinct Pokemon."
+  },
+  {
+   "id": "cobblemon:helix_fossil",
+   "title": "Something Spiral",
+   "desc": "Fossils come out of suspicious sand and gravel in the mod's own archaeology injections. Fifteen fossil recipes exist in data/cobblemon/fossils, from Omanyte to Dracovish."
+  },
+  {
+   "id": "cobblemon:link_cable",
+   "title": "Evolution By Cable",
+   "desc": "Copper, iron and popped chorus fruit. The link cable is Cobblemon's stand-in for trade evolution and is the icon of the mod's root advancement."
+  },
+  {
+   "id": "cobblemon:fire_stone",
+   "title": "Smelt The Ore",
+   "desc": "Evolution stone ores generate as real ore blocks in stone, deepslate and the nether, and smelt into their stones. Ten stones exist and they gate most of the interesting evolutions."
+  },
+  {
+   "id": "cobblemon:relic_coin",
+   "title": "Loot From The Ruins",
+   "desc": "Relic coins come out of the gilded chests inside Cobblemon's ruin structures, alongside evolution stones and exp candy."
+  },
+  {
+   "id": "cobblemon:gilded_chest",
+   "title": "Build Your Own Vault",
+   "desc": "Red apricorn, dried kelp, gold and a chest. Seven coloured gilded chests exist, and they are the only Cobblemon block that is purely a flex."
+  },
+  {
+   "id": "cobblemon:beast_ball",
+   "title": "Diamond Tier",
+   "desc": "An echo shard, gold and the tier_4 tag, which is diamond. The Beast Ball is the last craftable ball before the nether star."
+  },
+  {
+   "id": "cobblemon:master_ball",
+   "title": "It Never Misses",
+   "desc": "Nether star, netherite ingot, shulker shell. The end of the ball ladder that started with one red apricorn and a copper ingot."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "cobblemon:poke_ball",
+   "members": [
+    "cobblemon:premier_ball",
+    "cobblemon:heal_ball",
+    "cobblemon:net_ball",
+    "cobblemon:nest_ball",
+    "cobblemon:dive_ball",
+    "cobblemon:dusk_ball",
+    "cobblemon:quick_ball",
+    "cobblemon:timer_ball",
+    "cobblemon:luxury_ball",
+    "cobblemon:repeat_ball",
+    "cobblemon:love_ball",
+    "cobblemon:safari_ball",
+    "cobblemon:park_ball",
+    "cobblemon:friend_ball"
+   ]
+  },
+  {
+   "hub": "cobblemon:azure_ball",
+   "members": [
+    "cobblemon:citrine_ball",
+    "cobblemon:verdant_ball",
+    "cobblemon:roseate_ball",
+    "cobblemon:slate_ball",
+    "cobblemon:moon_ball",
+    "cobblemon:level_ball",
+    "cobblemon:lure_ball",
+    "cobblemon:fast_ball",
+    "cobblemon:sport_ball",
+    "cobblemon:dream_ball",
+    "cobblemon:heavy_ball"
+   ]
+  },
+  {
+   "hub": "cobblemon:ancient_poke_ball",
+   "members": [
+    "cobblemon:ancient_great_ball",
+    "cobblemon:ancient_ultra_ball",
+    "cobblemon:ancient_heavy_ball",
+    "cobblemon:ancient_leaden_ball",
+    "cobblemon:ancient_gigaton_ball",
+    "cobblemon:ancient_feather_ball",
+    "cobblemon:ancient_wing_ball",
+    "cobblemon:ancient_jet_ball",
+    "cobblemon:ancient_azure_ball",
+    "cobblemon:ancient_citrine_ball",
+    "cobblemon:ancient_roseate_ball",
+    "cobblemon:ancient_verdant_ball",
+    "cobblemon:ancient_slate_ball",
+    "cobblemon:ancient_ivory_ball"
+   ]
+  },
+  {
+   "hub": "cobblemon:red_apricorn",
+   "members": [
+    "cobblemon:yellow_apricorn",
+    "cobblemon:green_apricorn",
+    "cobblemon:blue_apricorn",
+    "cobblemon:pink_apricorn",
+    "cobblemon:black_apricorn",
+    "cobblemon:white_apricorn"
+   ]
+  },
+  {
+   "hub": "cobblemon:fire_stone",
+   "members": [
+    "cobblemon:water_stone",
+    "cobblemon:thunder_stone",
+    "cobblemon:leaf_stone",
+    "cobblemon:moon_stone",
+    "cobblemon:sun_stone",
+    "cobblemon:shiny_stone",
+    "cobblemon:dusk_stone",
+    "cobblemon:dawn_stone",
+    "cobblemon:ice_stone"
+   ]
+  },
+  {
+   "hub": "cobblemon:helix_fossil",
+   "members": [
+    "cobblemon:dome_fossil",
+    "cobblemon:old_amber_fossil",
+    "cobblemon:root_fossil",
+    "cobblemon:claw_fossil",
+    "cobblemon:armor_fossil",
+    "cobblemon:skull_fossil",
+    "cobblemon:cover_fossil",
+    "cobblemon:plume_fossil",
+    "cobblemon:jaw_fossil",
+    "cobblemon:sail_fossil",
+    "cobblemon:fossilized_bird",
+    "cobblemon:fossilized_fish",
+    "cobblemon:fossilized_drake",
+    "cobblemon:fossilized_dino"
+   ]
+  },
+  {
+   "hub": "cobblemon:oran_berry",
+   "members": [
+    "cobblemon:sitrus_berry",
+    "cobblemon:leppa_berry",
+    "cobblemon:lum_berry",
+    "cobblemon:cheri_berry",
+    "cobblemon:chesto_berry",
+    "cobblemon:pecha_berry",
+    "cobblemon:rawst_berry",
+    "cobblemon:aspear_berry",
+    "cobblemon:persim_berry",
+    "cobblemon:figy_berry",
+    "cobblemon:starf_berry",
+    "cobblemon:enigma_berry"
+   ]
+  },
+  {
+   "hub": "cobblemon:red_mint_leaf",
+   "members": [
+    "cobblemon:blue_mint_leaf",
+    "cobblemon:cyan_mint_leaf",
+    "cobblemon:pink_mint_leaf",
+    "cobblemon:green_mint_leaf",
+    "cobblemon:white_mint_leaf",
+    "cobblemon:red_mint_seeds",
+    "cobblemon:blue_mint_seeds",
+    "cobblemon:cyan_mint_seeds",
+    "cobblemon:pink_mint_seeds",
+    "cobblemon:green_mint_seeds",
+    "cobblemon:white_mint_seeds"
+   ]
+  },
+  {
+   "hub": "cobblemon:hp_up",
+   "members": [
+    "cobblemon:protein",
+    "cobblemon:iron",
+    "cobblemon:calcium",
+    "cobblemon:zinc",
+    "cobblemon:carbos",
+    "cobblemon:pp_up",
+    "cobblemon:pp_max"
+   ]
+  },
+  {
+   "hub": "cobblemon:gilded_chest",
+   "members": [
+    "cobblemon:blue_gilded_chest",
+    "cobblemon:green_gilded_chest",
+    "cobblemon:pink_gilded_chest",
+    "cobblemon:white_gilded_chest",
+    "cobblemon:yellow_gilded_chest",
+    "cobblemon:black_gilded_chest"
+   ]
+  }
+ ],
+ "notes": "THE HEADLINE FINDING, and the reason this file has no Pokemon in it: COBBLEMON SPECIES ARE NOT REGISTERED ENTITIES. data/cobblemon/species holds 1035 species json files, and com/cobblemon/mod/common/CobblemonEntities.class contains exactly five registered entity type names - pokemon, empty_pokeball, generic_bedrock, boat, chest_boat. Every Bulbasaur through Miraidon is the single entity type cobblemon:pokemon with a species set in NBT. assets/cobblemon/lang/en_us.json backs this up: it has precisely one entity.cobblemon.* key (empty_pokeball) plus the standalone key cobblemon.entity.pokemon. A species wheel therefore CANNOT be written as namespaced ids - it would be N copies of cobblemon:pokemon - and no kill: step is emitted at all, since the only other entity types are a thrown projectile and a display entity. Same story for the 15 fossils in data/cobblemon/fossils and the 70 berry definitions in data/cobblemon/berries: those are data, but unlike species they each correspond to a real registered ITEM, which is why the fossil and berry wheels are legitimate. TMs: base Cobblemon 1.5.2 has NO TM or TR items - not one id matches tm_ or technical_machine. TMs come from the separate SimpleTMs mod. Do not write TM quests against this jar. VERIFICATION, TWO PASSES: pass A took assets/cobblemon/models/item stems (552, all flat - note they are at depth 4, and a naive depth-5 filter returns ZERO, which is how an earlier sweep could miss this mod entirely) INTERSECT the item./block. lang keys, giving 488. Pass B independently rebuilt the universe from recipe results, loot-table entry names, blockstates and lang keys and gave 574; the 86-id difference was inspected one by one. WIDENING ACCEPTED, 6 ids, proof recorded: red/blue/cyan/pink/green/white_mint_seeds each have an item model and are named in data/cobblemon/loot_tables/blocks/<colour>_mint.json as the block's own drop, but have no item.cobblemon.*_mint_seeds lang key - the lang key is block.cobblemon.blue_mint = 'Blue Mint Seeds'. That is the INVERTED LANG CONVENTION case: the block is named after the seed. Final count 494. WIDENING REJECTED: the 30 *_ball_model stems are the 3D thrown-ball models, not items (zero references anywhere in data/); apricorn, cobblemon, cobblemon_blue/green/purple/yellow, shiny_marker, pokemon_model and relic_coin_pouch_case are GUI and rendering models; the seven *_apricorn_sapling ids have blockstates and block. lang keys but no item at all - data/cobblemon/loot_tables/blocks/black_apricorn_sapling.json drops cobblemon:black_apricorn_seed, proving the seed is the item and the sapling is not; sets/* are nested loot tables, not items; light_orb is a lang key with no model, no recipe and no reference in data. OBTAINABILITY: 131 of the 488 pass-A ids have neither a datapack recipe nor a loot table. They were NOT all dropped, because Cobblemon has two obtainability sources that live outside those two files. First, brewing: potion, super_potion, hyper_potion, max_potion, full_heal, full_restore, antidote, awakening, burn_heal, ice_heal, paralyze_heal, elixir, ether, max_elixir, max_ether are registered as brewing-stand recipes in code, and the mod's own brew_potion / brew_full_restore / brew_all advancements check the player's inventory for exactly those items - that is proof of obtainability. Second, the 70 berry definitions in data/cobblemon/berries drive berry-tree growth, so every *_berry id is farmable even though none has a recipe. Third, 19 loot_tables/injection/chests files inject Cobblemon items into vanilla structure chests from spawn_bonus_chest to woodland_mansion, and loot_tables/ruins/gilded_chests pulls sets/any_evo_stone, sets/any_ancient_held_item and sets/any_exp_candy. GENUINELY DROPPED as uncompletable in survival: cobblemon:cherish_ball (one reference in the whole jar, no recipe, no loot, not in any ball tag) and cobblemon:clear_amulet and cobblemon:grip_claw (zero references in data/, no recipe, no loot). None of the three appears in the chain or the wheels. RECIPE GRAPH: the ball tag ladder is exact - cobblemon:tier_1_poke_ball_materials is minecraft:copper_ingot, tier_2 is iron_ingot, tier_3 is gold_ingot, tier_4 is diamond, and the ancient balls swap in tumblestone, sky_tumblestone or black_tumblestone on top of the same tier. CHAIN ORDER comes from the mod's own advancement tree, which is unusually explicit: root -> harvest_apricorn -> craft_poke_ball -> craft_base_balls -> craft_apricorn_balls -> craft_ancient_balls -> craft_all_balls, plus root -> obtain_tumblestone -> grow_tumblestone, craft_poke_ball -> obtain_fossil -> resurrect_pokemon, any_plant -> obtain_revival_herb -> use_revive -> healing_machine, and any_plant -> obtain_leek -> medicinal_brew -> brew_potion -> brew_full_restore -> brew_all. CONSENSUS: moddb.json lists 26 cobblemon ids and every one of them resolves in this jar - great_ball, poke_ball and ultra_ball rank highest by pack count (poke_ball at 6 packs), with apricorn seeds, mulches and berries filling the rest. No conflict with the recipe graph; moddb's mulch and berry cluster simply reflects that packs quest the farming side, which this file covers in the berry and mint wheels rather than the spine. DESIRABILITY DROPS: apricorn_slab, apricorn_stairs, stripped_apricorn_log, stripped_apricorn_wood, all ten *_stone_ore blocks and their deepslate/nether/dripstone/terracotta variants, and the budding tumblestone blocks are all real ids but are ore/slab/stair/stripped shapes and are excluded from the spine. LOADER: META-INF/mods.toml declares modLoader javafml, minecraft [1.20.1], modId cobblemon - a genuine 1.20.1 Forge build. Modrinth slug is cobblemon."
+}

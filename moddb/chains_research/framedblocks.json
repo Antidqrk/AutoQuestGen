@@ -1,0 +1,174 @@
+{
+ "mod": "framedblocks",
+ "verified_against": "FramedBlocks-9.4.3.jar",
+ "item_count_in_jar": 198,
+ "chain": [
+  {
+   "id": "framedblocks:framed_cube",
+   "title": "Sticks and Planks, Nothing Yet",
+   "desc": "Four sticks and four planks in a ring give four Framed Cubes. On its own it is a bare frame; right-click it with almost any full block and it takes on that block's texture, and every other item in the mod is cut from this one."
+  },
+  {
+   "id": "framedblocks:framed_hammer",
+   "title": "The Tool That Reshapes",
+   "desc": "A framed cube and two sticks on a diagonal. The hammer is used as a crafting ingredient - it is not consumed - to cut a plain shape into its sharper relatives, and in the world it toggles waterlogging, prism offsets and item-frame backgrounds."
+  },
+  {
+   "id": "framedblocks:framed_wrench",
+   "title": "Turning a Shape on Its Side",
+   "desc": "Two framed cubes over a stick handle. Every panel converts to its slab and every slab back to its panel by crafting it with the wrench, and in the world it sets a one-way window's see-through face and flips slope split-lines."
+  },
+  {
+   "id": "framedblocks:framed_screwdriver",
+   "title": "The Small Adjustment",
+   "desc": "A wooden rod and one framed cube, diagonally. The third tool in the set and the cheapest, it exists for the state tweaks the hammer and wrench do not cover."
+  },
+  {
+   "id": "framedblocks:framed_slab",
+   "title": "Half a Frame",
+   "desc": "Three framed cubes in a row yield six slabs. This and the panel are the two halves the whole geometry library is built from, and the wrench turns each into the other for free."
+  },
+  {
+   "id": "framedblocks:framed_panel",
+   "title": "The Slab Stood Upright",
+   "desc": "Six per three cubes on the vertical. A panel is a slab rotated onto its edge, which is why so many later shapes come in matching panel and slab spellings."
+  },
+  {
+   "id": "framedblocks:framed_stairs",
+   "title": "Steps in Disguise",
+   "desc": "Four stairs from six framed cubes. Add the wrench to convert them into Vertical Stairs, and the slope family below covers everything stairs cannot."
+  },
+  {
+   "id": "framedblocks:framed_slope",
+   "title": "The Diagonal",
+   "desc": "Three slopes from three cubes in an L. The slope is the root of the mod's largest family - prisms, corner slopes, slope panels and slope slabs all descend from this one block."
+  },
+  {
+   "id": "framedblocks:framed_pillar",
+   "title": "A Post to Build Around",
+   "desc": "Shapeless from a Framed Corner Pillar. Pillars, half pillars and corner pillars are the vertical trim that the slope family has no answer for."
+  },
+  {
+   "id": "framedblocks:framing_saw",
+   "title": "Stop Crafting One at a Time",
+   "desc": "Three framed cubes under an iron ingot. The saw is a workbench that converts any framed block into any other of equal material value in one operation, and it is the point where the mod stops being a crafting grid exercise."
+  },
+  {
+   "id": "framedblocks:powered_framing_saw",
+   "title": "The Saw That Runs Itself",
+   "desc": "Three framed cubes under an iron ingot flanked by redstone. The powered saw is the same conversion on Forge Energy, with a target slot you set by clicking it with any framed block."
+  },
+  {
+   "id": "framedblocks:framed_blueprint",
+   "title": "Copy the Whole Configuration",
+   "desc": "One sheet of paper ringed by four framed cubes. The blueprint records a framed block's shape, camo, illumination, intangibility and reinforcement together, and refuses only fluid camos."
+  },
+  {
+   "id": "framedblocks:framed_reinforcement",
+   "title": "Sixteen Per Ring of Obsidian",
+   "desc": "Four obsidian and four sticks around a framed cube give sixteen reinforcements. Applying one makes a framed block blast-resistant while it keeps whatever texture it is wearing."
+  },
+  {
+   "id": "framedblocks:framed_key",
+   "title": "Locking the Shape",
+   "desc": "Two wooden rods, a framed cube and two iron nuggets. The key locks a framed block's state so that neighbours can no longer make it change shape."
+  },
+  {
+   "id": "framedblocks:framed_chest",
+   "title": "Storage That Is Not There",
+   "desc": "Eight framed cubes in a ring. It stores like a chest and wears like a wall, which is the entire point."
+  },
+  {
+   "id": "framedblocks:framed_secret_storage",
+   "title": "The Chest With No Lid",
+   "desc": "A framed chest plus more framed cubes. Secret storage looks exactly like the block it is camouflaged as and gives no visual clue that it opens at all."
+  },
+  {
+   "id": "framedblocks:framed_one_way_window",
+   "title": "Seen From Only One Side",
+   "desc": "Four framed cubes around a block of tinted glass gives four windows. The wrench sets which single face you can see through, and crouching with the wrench clears it again."
+  },
+  {
+   "id": "framedblocks:framed_glowing_cube",
+   "title": "Light Without a Lamp",
+   "desc": "A framed cube and glowstone dust. Its light level is a server config value, so a pack can dim or brighten every glowing framed block at once."
+  },
+  {
+   "id": "framedblocks:framed_item_frame",
+   "title": "A Frame Made of Wall",
+   "desc": "A framed cube and leather. Hit it with the framed hammer to swap its backing between plain leather and whatever camo it is wearing, and a glow ink sac upgrades it to the glowing version."
+  },
+  {
+   "id": "framedblocks:framed_collapsible_block",
+   "title": "Pull the Face In",
+   "desc": "Four collapsible blocks from a ring of framed cubes. Each corner of a face can be dented independently, which is how the mod produces shapes no fixed geometry could cover."
+  },
+  {
+   "id": "framedblocks:framed_bouncy_cube",
+   "title": "Slime Under the Skin",
+   "desc": "A framed cube and four slimeballs. It bounces like a slime block while looking like stone, wood or anything else you feed it."
+  },
+  {
+   "id": "framedblocks:framed_target",
+   "title": "Redstone in Costume",
+   "desc": "A framed cube, a hay block and redstone. Every redstone component in the mod - lever, torch, buttons, pressure plates, target, redstone block - exists so a wiring run can vanish into the wall."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "framedblocks:framed_slope_panel",
+   "members": [
+    "framedblocks:framed_slope_slab",
+    "framedblocks:framed_slope_edge",
+    "framedblocks:framed_half_slope",
+    "framedblocks:framed_double_slope",
+    "framedblocks:framed_corner_slope",
+    "framedblocks:framed_inner_corner_slope",
+    "framedblocks:framed_elevated_slope_slab",
+    "framedblocks:framed_extended_slope_panel",
+    "framedblocks:framed_compound_slope_panel",
+    "framedblocks:framed_compound_slope_slab",
+    "framedblocks:framed_divided_slope",
+    "framedblocks:framed_stacked_slope_panel",
+    "framedblocks:framed_stacked_slope_slab"
+   ]
+  },
+  {
+   "hub": "framedblocks:framed_prism",
+   "members": [
+    "framedblocks:framed_inner_prism",
+    "framedblocks:framed_double_prism",
+    "framedblocks:framed_prism_corner",
+    "framedblocks:framed_inner_prism_corner",
+    "framedblocks:framed_double_prism_corner",
+    "framedblocks:framed_sloped_prism",
+    "framedblocks:framed_inner_sloped_prism",
+    "framedblocks:framed_double_sloped_prism",
+    "framedblocks:framed_pyramid",
+    "framedblocks:framed_pyramid_slab",
+    "framedblocks:framed_threeway_corner",
+    "framedblocks:framed_inner_threeway_corner",
+    "framedblocks:framed_double_threeway_corner"
+   ]
+  },
+  {
+   "hub": "framedblocks:framed_lever",
+   "members": [
+    "framedblocks:framed_redstone_torch",
+    "framedblocks:framed_redstone_block",
+    "framedblocks:framed_stone_button",
+    "framedblocks:framed_large_button",
+    "framedblocks:framed_pressure_plate",
+    "framedblocks:framed_stone_pressure_plate",
+    "framedblocks:framed_iron_pressure_plate",
+    "framedblocks:framed_gold_pressure_plate",
+    "framedblocks:framed_obsidian_pressure_plate",
+    "framedblocks:framed_iron_door",
+    "framedblocks:framed_iron_trapdoor",
+    "framedblocks:framed_iron_gate",
+    "framedblocks:framed_rail_slope"
+   ]
+  }
+ ],
+ "notes": "A BUILDING-TOOL MOD WITH A REAL TIER LADDER, NOT A COSMETIC ONE - THE CHAIN IS EARNED. Verified against FramedBlocks-9.4.3.jar; META-INF/mods.toml declares modId=framedblocks, version 9.4.3, modLoader=javafml, minecraft [1.20.1,), forge [47.1.3,). The Modrinth 9.4.3 file lists loaders=[forge, neoforge] and game_versions=[1.20.1]. ID DETECTION AND WIDENING: 200 item models, 206 blockstates, 209 lang block./item. keys; models INTERSECT lang = 198, and that is the count used. WIDENING CONSIDERED AND REJECTED for the 14 blockstate-only stems - framed_wall_sign, framed_wall_hanging_sign, framed_wall_torch, framed_redstone_wall_torch, framed_soul_wall_torch, the four framed_waterloggable_*_pressure_plate entries, framed_checkered_cube_segment, framed_checkered_panel_segment, framed_checkered_slab_segment and framed_masonry_corner_segment. These are placed-state blocks and internal segments, not item forms: wall variants reuse the standing sign or torch item, the waterloggable plates are the state the framed hammer toggles a normal plate into, and the *_segment blocks are the halves a checkered or masonry block splits into in-world. NARROWED for the 2 model-only stems: framed_blueprint_written is the filled-blueprint predicate model of framedblocks:framed_blueprint, and framed_fence_inventory is the inventory model of framedblocks:framed_wall - neither is a registered id. RECIPE GRAPH: 408 recipe files across 112 distinct shapes, but the structure is far simpler than that number suggests. 173 of them are the custom type framedblocks:frame - that is the Framing Saw recipe set, one per convertible block, which is why the saw is a chain step rather than a footnote. Of the remaining crafting recipes, everything traces to framedblocks:framed_cube (four sticks and four planks, yields 4). Verified yields: framed_slab 6, framed_panel 6, framed_pane 12, framed_slope 3, framed_stairs 4, framed_bars 16, framed_reinforcement 16, framed_ladder 3, framed_door 3, framed_torch 4, framed_one_way_window 4, framed_collapsible_block 4, framed_lattice_block 3, framed_gate 4 from a framed door. THE MECHANIC THAT MAKES THE GRAPH: framedblocks:framed_hammer and framedblocks:framed_wrench appear as INGREDIENTS in dozens of shaped and shapeless recipes without being consumed. The hammer cuts a shape into a sharper one (slope to prism, slab to floor board, slope panel to flat inner slope panel corner); the wrench rotates a shape between its slab and panel spellings and between horizontal and vertical stairs, and almost every one of those conversions is reversible. That is why both tools sit at steps 2 and 3 and why the wheels below are reachable only after them. DISTINCT RECIPE SHAPES: 112 by pattern, but functionally 5 - frame-cube crafting, hammer cutting, wrench rotation, framing-saw conversion, and a handful of one-off special blocks. CONFIG GATES (server config, from lang/en_us.json): allowBlockEntities decides whether blocks with block entities can be used as camo, consumeCamoItem decides whether applying a camo eats the item, enableIntangibleFeature and intangibleMarkerItem control intangibility entirely, glowstoneLightLevel sets what framed_glowing_cube emits, oneWayWindowOwnable restricts one-way windows to their owner, and fireproofBlocks is a common-config switch. None of these removes a recipe - no recipe in this jar carries a forge:conditional wrapper - but enableIntangibleFeature set to false makes the intangibility half of framed_blueprint's payload inert. MODDB: no consensus signal - moddb.json has no framedblocks key - so the ordering is the recipe graph alone; no conflict to record. DROPS BY THE DESIRABILITY RULE (present and obtainable, deliberately unquested): framed_wall, framed_fence_gate, framed_sign, framed_hanging_sign, framed_trapdoor, framed_button and the several dozen framed_flat_*_corner and framed_*_corner_slope_panel permutations, which are wheel material at best. NOTHING WAS DROPPED AS UNOBTAINABLE - every one of the 198 verified ids is produced by at least one crafting recipe or one framedblocks:frame saw recipe."
+}

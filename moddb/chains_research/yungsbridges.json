@@ -1,0 +1,8 @@
+{
+  "mod": "yungsbridges",
+  "verified_against": "YungsBridges-1.20-Forge-4.0.3.jar",
+  "item_count_in_jar": 0,
+  "chain": [],
+  "collections": [],
+  "notes": "NO ITEMS, NO STRUCTURE IDS AND NO LOOT - THE CHAIN IS DELIBERATELY EMPTY. This mod id was correct in the task brief (META-INF/mods.toml: modId yungsbridges, version 1.20-Forge-4.0.3, minecraft [1.20,1.21), forge [46.0.2,), no fabric.mod.json). WHAT THE JAR CONTAINS: 14 .nbt bridge templates and 30 jsons, all of which are configured_feature / placed_feature / biome tag / forge biome_modifier files - data/yungsbridges/worldgen/configured_feature/bridge/stone/*.json and bridge/wood/*.json, a bridge_list configured and placed feature, five biome collection tags and one bridge_addition biome modifier. There is NO data/yungsbridges/worldgen/structure/ directory, so there is no structure id to put in a structure task. THE BRIDGES ARE FEATURES, NOT STRUCTURES, and that distinction is exactly the one the brief warns about: configured_feature and placed_feature names are not destinations and must never be emitted as structure ids. There is also NO assets/ namespace at all (models/item, blockstates and lang are all absent), NO loot_tables folder and NO advancements - so item_count_in_jar is 0, collections is empty, and nothing in this jar rewards a trip. A bridge spanning a ravine is scenery: under the 'purely decorative scenery is weak content' rule it would be cut even if it did have an id. autoquestgen.py's _load_researched_chains requires 4+ rows so an empty chain is skipped, which is the right outcome. Requires yungsapi."
+}

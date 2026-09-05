@@ -1,0 +1,175 @@
+{
+ "mod": "zenith",
+ "verified_against": "zenith-1.2.5-1.20.1.jar",
+ "item_count_in_jar": 77,
+ "chain": [
+  {
+   "id": "zenith:common_material",
+   "title": "Scrap Worth Keeping",
+   "desc": "Mysterious Scrap Metal, salvaged from common affix gear; the bottom rung of a six-tier rarity ladder."
+  },
+  {
+   "id": "zenith:seashelf",
+   "title": "Shelves From the Shallows",
+   "desc": "Prismarine bricks, a pufferfish, a potion and a bookshelf. One of the two routes to a level 45 enchanting table."
+  },
+  {
+   "id": "zenith:hellshelf",
+   "title": "Bookcases Cast in Fire",
+   "desc": "Nether bricks, a blaze rod, a potion and a bookshelf; the Nether counterpart to the Seashelf."
+  },
+  {
+   "id": "zenith:infused_seashelf",
+   "title": "Steeped in Sea Magic",
+   "desc": "Made by infusion enchanting a Seashelf at a level 45 table, using the zenith:enchanting recipe type."
+  },
+  {
+   "id": "zenith:infused_hellshelf",
+   "title": "Steeped in Hellfire",
+   "desc": "The infusion-enchanted Hellshelf; with its Sea twin it carries a table from level 45 toward level 60."
+  },
+  {
+   "id": "zenith:sightshelf",
+   "title": "A Spyglass on the Enchantment",
+   "desc": "A gold block, a spyglass, an ender eye, a potion and an Infused Hellshelf; it buys extra enchantment clues."
+  },
+  {
+   "id": "zenith:rectifier",
+   "title": "Bending Chance Toward You",
+   "desc": "An amethyst block, a honeycomb block and an Infused Seashelf, pressing rectification onto the table's quanta rolls."
+  },
+  {
+   "id": "zenith:library",
+   "title": "Ledger of Every Enchantment",
+   "desc": "An ender chest, an enchanting table and infused shelves; it banks enchantment levels for later withdrawal."
+  },
+  {
+   "id": "zenith:ender_library",
+   "title": "The Ledger, Unbound",
+   "desc": "The Library run back through infusion enchanting with its NBT preserved, widening what it can store."
+  },
+  {
+   "id": "zenith:gem",
+   "title": "Not Merely a Diamond",
+   "desc": "Zenith Gems drop from affix loot and bosses; 24 gem definitions across core, overworld, nether, end and twilight sets."
+  },
+  {
+   "id": "zenith:gem_dust",
+   "title": "Crushed Under the Anvil",
+   "desc": "Made by dropping a Gem in the world and letting a falling anvil land on it. Four of the five sigils need it."
+  },
+  {
+   "id": "zenith:gem_cutting_table",
+   "title": "The Lapidary's Bench",
+   "desc": "Smooth stone, shears, planks and Gem Dust; it upgrades a Gem by consuming duplicates of the same cut."
+  },
+  {
+   "id": "zenith:gem_fused_slate",
+   "title": "Slate Threaded With Dust",
+   "desc": "Deepslate ringed with Gem Dust, and the plate that every sigil is stamped from."
+  },
+  {
+   "id": "zenith:sigil_of_socketing",
+   "title": "Make Room for the Stone",
+   "desc": "Amethyst, dragon's breath, Gem Dust and Gem-Fused Slate. It adds one socket to an item that had none free."
+  },
+  {
+   "id": "zenith:salvaging_table",
+   "title": "Breaking Down the Spoils",
+   "desc": "Copper, an iron axe and pickaxe, a lava bucket, a smithing table and Gem Dust; it renders affix gear back into materials."
+  },
+  {
+   "id": "zenith:simple_reforging_table",
+   "title": "Roll the Dice Again",
+   "desc": "Iron, smooth stone, an enchanting table and Gem Dust, for rerolling the affixes on a piece of gear."
+  },
+  {
+   "id": "zenith:epic_material",
+   "title": "Arcane Sands",
+   "desc": "The fourth rarity tier's material, and the gate on the full Reforging Table."
+  },
+  {
+   "id": "zenith:reforging_table",
+   "title": "The Serious Reroll",
+   "desc": "Netherite, nether bricks, Arcane Sands and the Simple Reforging Table, fuelled by Sigils of Rebirth."
+  },
+  {
+   "id": "zenith:infused_breath",
+   "title": "The Dragon's Last Exhalation",
+   "desc": "Dragon's breath run through infusion enchanting, and the one ingredient standing between you and the End shelves."
+  },
+  {
+   "id": "zenith:endshelf",
+   "title": "Shelving From the Void",
+   "desc": "End stone bricks, an ender pearl, a bookshelf and Infused Dragon's Breath; the parent of the Draconic and Pearl shelves."
+  },
+  {
+   "id": "zenith:warden_tendril",
+   "title": "Torn From the Deep Dark",
+   "desc": "The Warden's own drop, and the only route to either Sculkshelf."
+  },
+  {
+   "id": "zenith:echoing_sculkshelf",
+   "title": "Listening in the Dark",
+   "desc": "Sculk, a sculk catalyst, an Echoing Deepshelf and a Warden Tendril; among the strongest shelves in the mod."
+  },
+  {
+   "id": "zenith:mythic_material",
+   "title": "Godforged Pearl",
+   "desc": "The fifth rarity tier's material, dropped by the rarest affix gear and demanded by the Augmenting Table."
+  },
+  {
+   "id": "zenith:augmenting_table",
+   "title": "Where Gems Are Perfected",
+   "desc": "An enchanting table, a nether star, polished blackstone and a Godforged Pearl, fuelled by Sigils of Enhancement."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "zenith:seashelf",
+   "members": [
+    "zenith:beeshelf",
+    "zenith:blazing_hellshelf",
+    "zenith:crystal_seashelf",
+    "zenith:deepshelf",
+    "zenith:draconic_endshelf",
+    "zenith:echoing_deepshelf",
+    "zenith:filtering_shelf",
+    "zenith:glowing_hellshelf",
+    "zenith:heart_seashelf",
+    "zenith:melonshelf",
+    "zenith:pearl_endshelf",
+    "zenith:soul_touched_deepshelf",
+    "zenith:stoneshelf",
+    "zenith:treasure_shelf"
+   ]
+  },
+  {
+   "hub": "zenith:weapon_tome",
+   "members": [
+    "zenith:helmet_tome",
+    "zenith:chestplate_tome",
+    "zenith:leggings_tome",
+    "zenith:boots_tome",
+    "zenith:bow_tome",
+    "zenith:pickaxe_tome",
+    "zenith:fishing_tome",
+    "zenith:other_tome",
+    "zenith:scrap_tome",
+    "zenith:improved_scrap_tome",
+    "zenith:extraction_tome"
+   ]
+  },
+  {
+   "hub": "zenith:common_material",
+   "members": [
+    "zenith:uncommon_material",
+    "zenith:rare_material",
+    "zenith:epic_material",
+    "zenith:mythic_material",
+    "zenith:ancient_material"
+   ]
+  }
+ ],
+ "notes": "VERIFICATION: 76 ids pass models/item INTERSECT lang. zenith:gem is added as a 77th by exception and is the one judgement call in this file: it has an item model, 23 per-cut model overrides under models/item/gems/, 24 gem definitions in data/zenith/gems/, and 10 rarity-scoped lang entries of the form gem.zenith:core/ballast - but no static item.zenith.gem key, because the name is composed at runtime from the cut and the rarity. It is registry-verified because the mod's own Patchouli book uses it as an entry icon ('icon': 'zenith:gem'), which requires a real registered ItemStack. Individual cuts (ballast, brawlers, breach, lunar, tyrannical and so on) are NBT on that single item, NOT 23 ids, so no per-gem wheel is possible. DROPS: zenith:book is NOT an item - it is a loot table id (data/zenith/loot_tables/book.json) that hands out patchouli:guide_book with the NBT tag zenith:chronicle. The Zenith guide book therefore has no zenith-namespaced id and cannot be quested as one, which is worth knowing given how strongly guide books score. Also dropped: hammer and star_cube, which the class scan shows are model paths used by ReforgingTableTileRenderer and AugmentingTableTileRenderer for the props sitting on those blocks, not items; prismatic_altar and infused_deepshelf, which have models but no recipe, loot or tag reference; and potion_charm_glow, an overlay model. ENTITIES: 4 entity.zenith.* keys, all arrows (broadhead, explosive, obsidian, mining). Three are verified but all are projectiles, so no kill task is offered for this mod. GRAPH: 125 recipes map cleanly. The zenith:enchanting and zenith:keep_nbt_enchanting recipe types are infusion enchanting performed at a high-level table, which is what gates infused_seashelf, infused_hellshelf, deepshelf, infused_breath, ender_library and the two upgraded scrap tomes - these are not bench crafts and a pack should expect players to build the shelf array first. The sigil set has only 5 members so it was left in the chain rather than made a wheel, which needs 5-14. CONSENSUS: all 24 moddb ids exist in the jar and are ALL shelves, matching the recipe graph's ordering closely (seashelf and hellshelf earliest, draconic_endshelf and pearl_endshelf latest). No contradiction. The notable gap is what moddb does not contain: not one gem, sigil, rarity material or reforging/salvaging/augmenting station appears in the 6-pack consensus, even though those are the affix system this mod exists for. The likely reason is that gems and materials are loot-driven rather than crafted, so pack authors quest the craftable enchanting shelves and leave the affix loop unquested. The chain here deliberately covers both halves."
+}

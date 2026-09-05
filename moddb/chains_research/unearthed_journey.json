@@ -1,0 +1,266 @@
+{
+ "mod": "unearthed_journey",
+ "verified_against": "unearthed_journey-2.2.3.jar",
+ "item_count_in_jar": 403,
+ "chain": [
+  {
+   "id": "unearthed_journey:unrefined_chert",
+   "title": "Something Old in the Stone",
+   "desc": "The one thing this mod puts in your own world: its unrefined_chert biome modifier targets forge:any biome at the underground_ores step. Everything else it adds is on the far side of a portal."
+  },
+  {
+   "id": "structure:unearthed_journey:temple_to_methuselah",
+   "title": "Find the Buried Temple",
+   "desc": "Go to a Jungle or Sparse Jungle and dig. The Temple to Methuselah starts at y15-16 and is BURIED - you are looking for a stone roof under the dirt, not a building on the surface, and it only generates about every 200 chunks. Every single thing this mod adds is behind it."
+  },
+  {
+   "id": "unearthed_journey:archstone",
+   "title": "The Stone It Is Built From",
+   "desc": "Archstone is the temple's material and the first sign you dug into the right hole. Polished, bricked and stacked, it becomes the pillars of your portal frame."
+  },
+  {
+   "id": "unearthed_journey:paleogene_portal_corner",
+   "title": "The Next Step",
+   "desc": "Looted from the temple chest. The mod's own the_next_step advancement fires the moment you hold one, and the corner block you choose is what decides which era your portal opens onto."
+  },
+  {
+   "id": "unearthed_journey:indeterminate_chronology",
+   "title": "A Date Nobody Can Read",
+   "desc": "Temple-chest exclusive; it appears in no recipe and no other loot table in the jar, which makes it the mod's proof-of-discovery token."
+  },
+  {
+   "id": "unearthed_journey:methuselah_spawn_block",
+   "title": "Wake the Serpent",
+   "desc": "Placed at the heart of the temple NBT. Its BlockAdded procedure calls the Methuselah - the boss is summoned from this block, it does not wander the jungle."
+  },
+  {
+   "id": "kill:unearthed_journey:bulwark_brute",
+   "title": "The Guards It Calls",
+   "desc": "The Methuselah's IsHurt procedure spawns Bulwark Brutes and Lobbers as it takes damage; the Brute drops Archstone and the Lobber drops the Archstone item."
+  },
+  {
+   "id": "kill:unearthed_journey:methuselah_boss",
+   "title": "Serpent Slayer",
+   "desc": "The mod's only boss. MethuselahBossEntity.class is the sole class in the jar that references EYE_OF_METHUSELAH, so the drop is written into the entity rather than a loot table."
+  },
+  {
+   "id": "unearthed_journey:eye_of_methuselah",
+   "title": "The Eye Is the Igniter",
+   "desc": "No recipe, no loot table - it comes off the boss. EyeOfMethuselahRightclickedOnBlockProcedure is what turns an Archstone Pillar frame with a portal corner into a live portal."
+  },
+  {
+   "id": "unearthed_journey:archstone_pillar",
+   "title": "Build the Frame",
+   "desc": "Four Archstone Bricks make four pillars. All three PortalShape classes name ARCHSTONE_PILLAR as their FRAME block, so one recipe builds the gateway to all three eras."
+  },
+  {
+   "id": "dim:unearthed_journey:paleogene",
+   "title": "A Leap Through Time",
+   "desc": "Frame of Archstone Pillars, a Paleogene Portal Corner, then right-click with the Eye. Two biomes wait on the other side: the Messel Pit and the Cerrejon Formation, floored in sodden soil and peat."
+  },
+  {
+   "id": "unearthed_journey:peat",
+   "title": "Dig the Bog",
+   "desc": "Cut out of Peat Blocks, which are the ground layer of the Paleogene. Nine of them press into a Peat Pie, which dries into the mod's shelf-stable travel food."
+  },
+  {
+   "id": "unearthed_journey:bituminous_rock",
+   "title": "Tar in the Messel Pit",
+   "desc": "Its feature is bound to the messel_pit biome alone, so it exists in exactly one biome of one dimension. Polished it becomes the mod's decorative black stone; blasted it becomes powder."
+  },
+  {
+   "id": "unearthed_journey:bituminous_powder",
+   "title": "Handle With Care",
+   "desc": "Smelted or blasted from Bituminous Rock. It is the core of the Toxic Gas Bomb, and the mod named an advancement after being careful with it."
+  },
+  {
+   "id": "kill:unearthed_journey:gastornis",
+   "title": "The Terror Bird of the Paleogene",
+   "desc": "A verified Messel Pit spawn with its own loot table, dropping Down and Raw Meat; Down is the fletching of every blow dart."
+  },
+  {
+   "id": "unearthed_journey:down",
+   "title": "Down",
+   "desc": "Dropped by the Anhima, the Gastornis and the Titanis, harvested from Nests, and seeded into the Paleogene portal chest. Three of the mod's ranged weapons need it."
+  },
+  {
+   "id": "unearthed_journey:hide",
+   "title": "Skin the Big Ones",
+   "desc": "The Arctodus, the Megaloceros and the Embolotherium all drop it. It is the padding of the mod's armour and the closure of the Hide Satchel."
+  },
+  {
+   "id": "unearthed_journey:hide_satchel",
+   "title": "Somewhere to Put It",
+   "desc": "Eight Hides around a gold ingot. It is also the sail of the Canoe recipe, which is the only way to cross the Neogene's rivers quickly."
+  },
+  {
+   "id": "unearthed_journey:pouch_of_seeds",
+   "title": "Feed the Wildlife",
+   "desc": "Seeds in a Pelt. Prehistoric animals are tamed and bred with pouches rather than with vanilla foods, so this is the gate on every rideable in the mod."
+  },
+  {
+   "id": "dim:unearthed_journey:neogene",
+   "title": "The Rivers of the Neogene",
+   "desc": "Same frame, a Neogene Portal Corner instead. The Pebas and Pisco Formations - flooded, chert-floored, and holding the mod's only lead."
+  },
+  {
+   "id": "kill:unearthed_journey:purussaurus_brasiliensis",
+   "title": "The Caiman That Ate Everything",
+   "desc": "The Pebas Formation's apex crocodilian and the only source of the Purussaurus Fang."
+  },
+  {
+   "id": "unearthed_journey:fang_dagger",
+   "title": "Two Fangs and a Stick",
+   "desc": "The mod's own melee weapon, built from a pair of Purussaurus Fangs; there is no metal weapon in the jar to replace it."
+  },
+  {
+   "id": "unearthed_journey:raw_lead",
+   "title": "Lead Only Exists Back Here",
+   "desc": "All three lead ore features (chert_lead, palagonite_lead, slate_lead) are bound to Neogene and Paleogene biomes. There is no overworld lead - the portal is the only way to it."
+  },
+  {
+   "id": "unearthed_journey:lead_ingot",
+   "title": "Lead",
+   "desc": "Smelted or blasted from Raw Lead. Its nuggets are the tips of the blow darts and the shell of the Toxic Gas Bomb."
+  },
+  {
+   "id": "unearthed_journey:bamboo_blowgun",
+   "title": "Bamboo and String",
+   "desc": "The cheap ranged weapon, and the reason to farm Down. The Mangaris Blowgun is the same recipe in the mod's own wood."
+  },
+  {
+   "id": "unearthed_journey:blow_dart",
+   "title": "A Dart Worth Firing",
+   "desc": "A lead nugget, a stick and a piece of Down. The Tipped Blow Dart is the same dart carrying a potion effect."
+  },
+  {
+   "id": "kill:unearthed_journey:carbonemys",
+   "title": "The Turtle With the Shell Worth Taking",
+   "desc": "A verified spawn in the mod's own biomes and the only source of the Thick Scute."
+  },
+  {
+   "id": "unearthed_journey:scute_shield",
+   "title": "Shield of Scutes",
+   "desc": "Four Thick Scutes bolted onto a vanilla shield - the mod's defensive answer to everything with teeth."
+  },
+  {
+   "id": "dim:unearthed_journey:pleistocene",
+   "title": "The Ice Age",
+   "desc": "The third corner, the third era. One biome, the Santa Fe River Formation - permafrost, slate, and the only Manganese Ore in the game."
+  },
+  {
+   "id": "unearthed_journey:raw_manganese",
+   "title": "The Last Metal",
+   "desc": "Manganese Ore's feature is bound to santa_fe_river_formation alone, so the Pleistocene must be opened before the mod's top tier exists at all."
+  },
+  {
+   "id": "unearthed_journey:manganese_steel_ingot",
+   "title": "Manganese Steel",
+   "desc": "Smelted from Manganese Steel Blend. It is the only metal the Rock Pick and the Padded Armour will accept, which puts them squarely at the end of the mod."
+  },
+  {
+   "id": "unearthed_journey:rock_pick",
+   "title": "The Rock Pick",
+   "desc": "Two Manganese Steel Ingots on two sticks; the mod's own excavation tool and the last thing on its crafting ladder."
+  },
+  {
+   "id": "unearthed_journey:padded_armor_chestplate",
+   "title": "Insulated",
+   "desc": "Manganese Steel plated over Hide. The mod's only armour set, and its advancement sits at the very end of the tree."
+  },
+  {
+   "id": "kill:unearthed_journey:arctodus_pristinus",
+   "title": "The Short-Faced Bear",
+   "desc": "A Pleistocene spawn dropping Hide, Raw Meat and the Bear Claw; the Megaloceros beside it drops Antlers and a Large Bone."
+  },
+  {
+   "id": "unearthed_journey:ganoderma_tea",
+   "title": "Ancient Brew",
+   "desc": "A vanilla potion brewed over a Ganoderma bracket fungus. The mod hangs its whole post-portal advancement branch off drinking one."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "unearthed_journey:archstone",
+   "members": [
+    "unearthed_journey:archstone_item",
+    "unearthed_journey:archstone_bricks",
+    "unearthed_journey:polished_archstone",
+    "unearthed_journey:archstone_pillar",
+    "unearthed_journey:paleogene_portal_corner",
+    "unearthed_journey:neogene_portal_corner",
+    "unearthed_journey:pleistocene_portal_corner",
+    "unearthed_journey:indeterminate_chronology"
+   ]
+  },
+  {
+   "hub": "unearthed_journey:hide",
+   "members": [
+    "unearthed_journey:pelt",
+    "unearthed_journey:thick_scute",
+    "unearthed_journey:down",
+    "unearthed_journey:antlers",
+    "unearthed_journey:bear_claw",
+    "unearthed_journey:glyptodon_osteoderm",
+    "unearthed_journey:large_bone",
+    "unearthed_journey:purussaurus_fang",
+    "unearthed_journey:blubber",
+    "unearthed_journey:cycloid_scale",
+    "unearthed_journey:larvae"
+   ]
+  },
+  {
+   "hub": "unearthed_journey:raw_meat",
+   "members": [
+    "unearthed_journey:cooked_meat",
+    "unearthed_journey:raw_fillet",
+    "unearthed_journey:cooked_fillet",
+    "unearthed_journey:raw_darne",
+    "unearthed_journey:cooked_darne",
+    "unearthed_journey:peat_pie",
+    "unearthed_journey:dried_peat_pie",
+    "unearthed_journey:clam_chowder",
+    "unearthed_journey:fried_egg",
+    "unearthed_journey:coconut_milk",
+    "unearthed_journey:meat_n_peas",
+    "unearthed_journey:fillet_sandwich"
+   ]
+  },
+  {
+   "hub": "unearthed_journey:unrefined_chert",
+   "members": [
+    "unearthed_journey:chert",
+    "unearthed_journey:block_of_chert",
+    "unearthed_journey:palagonite",
+    "unearthed_journey:slate",
+    "unearthed_journey:breccia",
+    "unearthed_journey:laterite",
+    "unearthed_journey:permafrost",
+    "unearthed_journey:sodden_soil",
+    "unearthed_journey:peat_block",
+    "unearthed_journey:silt",
+    "unearthed_journey:pebbles",
+    "unearthed_journey:quartz_sand"
+   ]
+  },
+  {
+   "hub": "unearthed_journey:padded_armor_helmet",
+   "members": [
+    "unearthed_journey:padded_armor_chestplate",
+    "unearthed_journey:padded_armor_leggings",
+    "unearthed_journey:padded_armor_boots",
+    "unearthed_journey:scute_shield",
+    "unearthed_journey:fang_dagger",
+    "unearthed_journey:rock_pick",
+    "unearthed_journey:bamboo_blowgun",
+    "unearthed_journey:mangaris_blowgun",
+    "unearthed_journey:blow_dart",
+    "unearthed_journey:tipped_blow_dart",
+    "unearthed_journey:toxic_gas_bomb",
+    "unearthed_journey:hide_satchel",
+    "unearthed_journey:canoe_item"
+   ]
+  }
+ ],
+ "notes": "LOADER VERIFIED: META-INF/mods.toml present, no fabric.mod.json, modIds unearthed_journey + minecraft + geckolib; Modrinth version 2.2.3 lists loaders [forge] only and game version 1.20.1. This is an MCreator mod (net/mcreator/unearthedjourney/...). Item set = the 403 stems of assets/unearthed_journey/models/item/*.json intersected with item./block. keys in assets/unearthed_journey/lang/en_us.json; every id above is a member of that set. Only two models lack lang keys: scute_shield_0 (a state override) and dinornis_spawn_egg (an unregistered leftover - there is no dinornis entity in UnearthedJourneyModEntities.class). THREE DIMENSIONS: data/unearthed_journey/dimension/{paleogene,neogene,pleistocene}.json, each with its own dimension_type, all skylit and natural at coordinate_scale 1. Paleogene holds messel_pit and cerrejon_formation; Neogene holds pebas_formation and pisco_formation; Pleistocene holds santa_fe_river_formation alone. DIMENSION ENTRY PATH, derived from the class files and confirmed by the advancement tree - this is the whole point of the mod and no item alone represents it: (1) find the Temple to Methuselah, data/unearthed_journey/worldgen/structure/temple_to_methuselah.json, a minecraft:jigsaw structure placed in biomes ['jungle','sparse_jungle'] at spacing 200 / separation 100, step top_layer_modification, with start_height very_biased_to_bottom min 15 max 16 - it is BURIED, and it is the chain's structure: step; (2) its chest (data/unearthed_journey/loot_tables/chests/temple_loot.json) holds all three portal corner blocks plus archstone, archstone_item and indeterminate_chronology; (3) the temple NBT places unearthed_journey:methuselah_spawn_block, whose MethuselahSpawnBlockBlockAddedProcedure summons the boss; (4) MethuselahBossEntity.class is the only class in the jar referencing EYE_OF_METHUSELAH, so the Eye is a hard-coded boss drop with no loot table; (5) all three of NeogenePortalShape, PaleogenePortalShape and PleistocenePortalShape name ARCHSTONE_PILLAR as their FRAME constant; (6) EyeOfMethuselahRightclickedOnBlockProcedure checks for ARCHSTONE_PILLAR plus one of PALEOGENE_PORTAL_CORNER / NEOGENE_PORTAL_CORNER / PLEISTOCENE_PORTAL_CORNER and lights the matching portal. The corner block is what selects the era. The mod's own advancement chain says the same thing in order: unearthed_journey_ad -> the_next_step (hold a paleogene_portal_corner) -> serpent_slayer (icon eye_of_methuselah) -> a_leap_through_time (icon clock) -> ancient_brew -> {polished_to_perfection -> handle_with_care, escar_go -> insulated}. WHAT IS AND IS NOT REACHABLE BEFORE THE PORTAL: exactly ONE feature of this mod generates in the player's own world - data/unearthed_journey/forge/biome_modifier/unrefined_chert_biome_modifier.json targets {'type':'forge:any'} at underground_ores. Every lead ore variant (chert_lead -> pebas_formation, palagonite_lead -> messel_pit + cerrejon_formation, slate_lead -> santa_fe_river_formation), manganese_ore (santa_fe_river_formation only) and bituminous_rock (messel_pit only) is bound to the mod's own biomes, so lead, manganese steel, the Rock Pick and the Padded Armour set are all strictly post-portal, and the Pleistocene specifically is the only place the top tier exists. ENTITY VERIFICATION - this jar has three separate traps. net/mcreator/unearthedjourney/init/UnearthedJourneyModEntities.class registers 96 types. (1) BODY-PART TRAP: titanoboa_head, titanoboa_neck, titanoboa_neck_2, titanoboa_neck_3, titanoboa_body_1, titanoboa_body_2, titanoboa_tail_1..4 are ten separate registered EntityTypes that all share the display name 'Titanoboa'. Only titanoboa_head has a spawn entry; the other nine are segments of one snake. No Titanoboa kill step is used, because nine of the ten ids are guaranteed traps and the tenth is ambiguous. (2) LOOT TABLE WITHOUT AN ENTITY: data/unearthed_journey/loot_tables/entities/embolotherium.json and embolotherium_rideable.json exist, but neither embolotherium nor embolotherium_rideable is registered in ModEntities and neither has an entity.unearthed_journey.* lang key - a loot-table-derived entity list would produce two uncompletable kill tasks. The same applies to entities/arctodus.json, whose registered counterpart is arctodus_pristinus (display name 'Arctodus'); the chain uses arctodus_pristinus. (3) PROJECTILES AND PROPS excluded: methuselah_projectile, archstone_projectile, toxic_gas_bomb_projectile, blow_dart_projectile, tipped_blow_dart_projectile, anhima_egg_projectile, pelagornis_egg_projectile, canoe (vehicle), lungfish_target_burrow and methuselah_spawner (a marker entity, distinct from methuselah_boss). Every kill: step used above is verified twice: methuselah_boss has a spawn egg AND is summoned by methuselah_spawn_block AND drops the Eye in code; bulwark_brute has a loot table, a spawn egg, and is spawned by MethuselahBossEntityIsHurtProcedure during the boss fight; gastornis, purussaurus_brasiliensis, carbonemys and arctodus_pristinus each have a loot table, a spawn egg AND a forge:add_spawns biome modifier entry. STRUCTURES: exactly one, data/unearthed_journey/worldgen/structure/temple_to_methuselah.json, and it is used as a structure: step above. DROPPED, NO ACQUISITION PATH: unearthed_journey:journey_guide has a model and a lang key and drives eleven GUI screen classes, but appears in no recipe, no loot table and no structure - the book cannot be obtained in survival in 2.2.3. CONSENSUS: all thirteen moddb entries are real ids in this jar. moddb opens the chapter on unearthed_journey:anhima_egg and unearthed_journey:lead_ingot at 0.000, which is doubly wrong: lead is post-portal (see above), and anhima_egg has NO recipe and NO loot table - it is laid by the Anhima bird at runtime the way vanilla chickens lay eggs, which no quest task can gate on. Both were dropped from the opening in favour of the graph. The other moddb entries (peat, peat_pie, dried_peat_pie, thick_scute, hide_satchel, down, lead_bars, blow_dart, scute_shield, pouch_of_seeds, clams_block) are all correct items and appear here or in the wheels."
+}

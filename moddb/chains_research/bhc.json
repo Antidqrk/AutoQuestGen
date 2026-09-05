@@ -1,0 +1,123 @@
+{
+  "mod": "bhc",
+  "verified_against": "baubley-heart-canisters-1.20.1-1.2.0.jar",
+  "item_count_in_jar": 24,
+  "chain": [
+    {
+      "id": "bhc:red_heart",
+      "title": "Slay Mobs for Miniature Red Hearts",
+      "desc": "Hostile mobs drop these at roughly a 5% rate, and killing is the only way to get your first one - the crafting recipe for a heart needs melted hearts, which are made by smelting hearts. Every canister in this mod traces back to a pile of these, so gather far more than you think you need."
+    },
+    {
+      "id": "bhc:heart_amulet",
+      "title": "Craft the Heart Amulet",
+      "desc": "This is the piece that actually gives you the health - canisters only count while they sit inside an amulet worn in the Curios charm slot. Right click to open it. One is enough to play with, but do not stop at one: the Soul Amulet and the Vitality Blade each swallow a whole amulet, so you will build three before you are done."
+    },
+    {
+      "id": "bhc:canister",
+      "title": "Craft an Empty Canister",
+      "desc": "The iron-and-bone shell every heart gets sealed into. One is consumed per Red Heart Canister, and only the red tier needs one, so keep a few on hand."
+    },
+    {
+      "id": "bhc:relic_apple",
+      "title": "Craft a Relic Apple",
+      "desc": "A reagent that exists only to be spent on the Red Heart Canister - it is not food and there is nothing else to do with it. One is consumed per red canister, so budget diamonds for as many canisters as you plan to wear."
+    },
+    {
+      "id": "bhc:wither_bone",
+      "title": "Slay Wither Skeletons for Wither Bones",
+      "desc": "A 15% drop from wither skeletons in nether fortresses, and the last reagent gating your first canister. One bone per Red Heart Canister."
+    },
+    {
+      "id": "bhc:red_heart_canister",
+      "title": "Assemble Your First Heart Canister",
+      "desc": "Drop this into the Heart Amulet and your max health goes up permanently. You can stack up to ten canisters of each colour in the amulet, so this is a step you will repeat many times."
+    },
+    {
+      "id": "bhc:red_heart_patch",
+      "title": "Sew a Red Health Patch",
+      "desc": "A reusable healing item - right click to restore one heart on a five second cooldown. Cheap enough to be your everyday heal once red hearts start piling up."
+    },
+    {
+      "id": "bhc:red_heart_melted",
+      "title": "Smelt Hearts Down",
+      "desc": "Furnacing a Miniature Red Heart gives its melted form, the currency used to compress hearts into higher tiers. This is the start of the long grind toward yellow."
+    },
+    {
+      "id": "bhc:yellow_heart_melted",
+      "title": "Compress to Melted Yellow",
+      "desc": "Nine melted red hearts pack into one melted yellow. The recipe also runs in reverse if you overshoot, so nothing is ever wasted."
+    },
+    {
+      "id": "bhc:yellow_heart",
+      "title": "Forge a Miniature Yellow Heart",
+      "desc": "Eight melted yellow hearts wrapped around any one heart. Boss mobs also drop these outright, which is far faster than compressing if your pack has bosses to fight."
+    },
+    {
+      "id": "bhc:yellow_heart_canister",
+      "title": "Upgrade to a Yellow Heart Canister",
+      "desc": "This consumes a finished Red Heart Canister plus an enchanted golden apple - the mod adds a craftable recipe for those from eight gold blocks. Upgrading trades one red canister for one yellow, which grants more health per slot."
+    },
+    {
+      "id": "bhc:green_heart_melted",
+      "title": "Compress to Melted Green",
+      "desc": "Nine melted yellow hearts into one melted green. At this point you are 81 red hearts deep per unit, so set up a mob farm before going further."
+    },
+    {
+      "id": "bhc:green_heart",
+      "title": "Forge a Miniature Green Heart",
+      "desc": "Eight melted green hearts around any heart. The Ender Dragon drops one of these on death, which is the only shortcut to this tier."
+    },
+    {
+      "id": "bhc:green_heart_canister",
+      "title": "Upgrade to a Green Heart Canister",
+      "desc": "Costs your yellow canister, a nether star and a shulker shell - so a Wither and a trip to an End city stand between you and this tier."
+    },
+    {
+      "id": "bhc:blue_heart_melted",
+      "title": "Compress to Melted Blue",
+      "desc": "Nine melted green hearts into one melted blue, the densest form of heart material in the mod."
+    },
+    {
+      "id": "bhc:blue_heart",
+      "title": "Forge a Miniature Blue Heart",
+      "desc": "The top ordinary heart. The Warden drops one guaranteed, so killing one in a deep dark is usually cheaper than compressing your way up."
+    },
+    {
+      "id": "bhc:blue_heart_canister",
+      "title": "Upgrade to a Blue Heart Canister",
+      "desc": "Your green canister plus a netherite block and an emerald. Ten of these in the amulet is the ordinary health ceiling."
+    },
+    {
+      "id": "bhc:soul_heart_crystal",
+      "title": "Craft the Soul Heart Crystal",
+      "desc": "Needs one of every heart colour plus echo shards and amethyst - the Warden drops echo shards here too. It is the key to both endgame items below."
+    },
+    {
+      "id": "bhc:soul_heart_canister",
+      "title": "Smith a Soul Heart Canister",
+      "desc": "It saves you from one death, is consumed when it triggers, and by default hands the blue canister back afterwards. At the smithing table it needs a spare Miniature Heart of any colour in the template slot as well as the blue canister and the totem, which catches most people out."
+    },
+    {
+      "id": "bhc:soul_heart_amulet",
+      "title": "Upgrade to the Soul Amulet",
+      "desc": "The only amulet that will hold Soul Heart Canisters as well as ordinary ones, so it replaces your Heart Amulet outright. It eats both the crystal and the old amulet, and the Vitality Blade below wants one of each again - make a second crystal before you commit this one."
+    },
+    {
+      "id": "bhc:blade_of_vitality",
+      "title": "Forge the Vitality Blade",
+      "desc": "A sword with its own canister inventory - shift right click to open it - whose damage scales with the canisters you load inside, turning the health grind into raw damage. Be warned: it demands a red, yellow, green AND blue canister at once, and since each upgrade destroyed the tier below it, you have to run the whole ladder three extra times to have all four in hand."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "bhc:red_heart_patch",
+      "members": [
+        "bhc:yellow_heart_patch",
+        "bhc:green_heart_patch",
+        "bhc:blue_heart_patch"
+      ]
+    }
+  ],
+  "notes": "No loot tables in the jar - heart drops are handled in code (com/traverse/bhc/common/util/DropHandler.class) and driven by config/bhc/drops.json. The shipped defaults are: red 5% from any hostile mob, yellow 100% from anything tagged forge:bosses, green 100% from the Ender Dragon, blue 100% from the Warden. Wither bones are a 15% wither skeleton drop and the Warden also drops echo shards at 50%, both from config/bhc-common.toml. A pack that edits drops.json changes the whole entry point of this chain, so any generated quest should say 'slay', not 'craft', for the four Miniature Hearts. HealthModifier.class confirms extra health only applies from canisters stored inside a Heart Amulet or Soul Amulet worn in the Curios charm slot (curios tag data/curios/tags/items/heartamulet.json) - carrying canisters loose does nothing. heartStackSize (default 10) caps both stack size and how many full hearts each colour can grant. The mod also adds its own enchanted golden apple recipe (8 gold blocks + apple, data/bhc/recipes/god_apple.json), which is what makes the Yellow Heart Canister reachable. Canister upgrades consume the previous tier, so the health ladder itself is strictly linear - but the two endgame items break that and are the biggest gotcha in the mod, so do not let a generated quest present them as a simple next step. blade_of_vitality.json needs bhc:red_heart_canister, yellow_heart_canister, green_heart_canister AND blue_heart_canister simultaneously, plus a soul_heart_crystal, a heart_amulet and a stick; because every upgrade destroyed the tier beneath it, a player who followed the ladder holds exactly one blue canister and must rebuild red, yellow and green from scratch. soul_heart_amulet.json separately consumes a soul_heart_crystal and a heart_amulet, so a player who wants both the Soul Amulet and the Blade needs two crystals and two spare amulets on top of that. Note also that smithing/soul_heart_canister.json puts the forge:heart tag in the TEMPLATE slot - a spare Miniature Heart is a third ingredient there, not just the blue canister and the totem. The forge:heart tag (data/forge/tags/items/heart.json) is exactly the four Miniature Hearts, and forge:wither_bones contains only bhc:wither_bone, so nothing else in a pack can substitute for either unless another mod adds to those tags. Every Miniature Heart also HAS a crafting recipe (8 melted of that colour around any forge:heart), so 'no recipe' is false for all four - they are simply circular, which is why the drop is the only entry point. Health Patches are the one side branch: reusable right-click heals, one per heart colour, with heal amount and cooldown per colour set in bhc-common.toml (defaults 1/3/5/10 hearts at 5/10/20/30 second cooldowns)."
+}

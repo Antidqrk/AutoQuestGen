@@ -1,0 +1,168 @@
+{
+  "mod": "alexsmobs",
+  "verified_against": "alexsmobs-1.22.9.jar",
+  "item_count_in_jar": 290,
+  "chain": [
+    {
+      "id": "alexsmobs:animal_dictionary",
+      "title": "Professor Khaan's Field Notes",
+      "desc": "The Animal Dictionary is crafted from a book and green dye and catalogues every creature in the mod."
+    },
+    {
+      "id": "kill:alexsmobs:crimson_mosquito",
+      "title": "Nightmare Fuel of the Nether",
+      "desc": "A bloated Crimson Mosquito drops both a Mosquito Proboscis and a Blood Sac."
+    },
+    {
+      "id": "alexsmobs:blood_sprayer",
+      "title": "Spray 'n Pray",
+      "desc": "Crafted from a Blood Sac, a Mosquito Proboscis and nether brick, this is the mod's first ranged sidearm."
+    },
+    {
+      "id": "kill:alexsmobs:warped_mosco",
+      "title": "Destroyer of Chads",
+      "desc": "The Warped Mosco is a Crimson Mosquito fed a Mungus and drops a Hemolymph Sac and Warped Muscle."
+    },
+    {
+      "id": "alexsmobs:hemolymph_blaster",
+      "title": "Blast From the Future",
+      "desc": "The Hemolymph Blaster is the Blood Sprayer's direct upgrade and needs Hemolymph Sac, Warped Muscle and Mimicream."
+    },
+    {
+      "id": "kill:alexsmobs:guster",
+      "title": "Eye of the Storm",
+      "desc": "Gusters spawn during desert storms and drop a Guster Eye when the sand column collapses."
+    },
+    {
+      "id": "alexsmobs:gustmaker",
+      "title": "Weather On Demand",
+      "desc": "A Guster Eye, cut sandstone and redstone build a block that generates your own miniature sand cyclones."
+    },
+    {
+      "id": "kill:alexsmobs:soul_vulture",
+      "title": "Fetch Me Their Souls",
+      "desc": "A Soul Vulture bloated on stolen souls drops a Soul Heart, which lures Spectres in the End."
+    },
+    {
+      "id": "kill:alexsmobs:rocky_roller",
+      "title": "Keep Rollin'",
+      "desc": "Rocky Rollers charge through the dripstone caves and drop a Rocky Shell."
+    },
+    {
+      "id": "alexsmobs:rocky_chestplate",
+      "title": "You're Too Slow",
+      "desc": "Nine Rocky Shells make a chestplate that lets you curl into a rolling ball while sprinting."
+    },
+    {
+      "id": "kill:alexsmobs:centipede_head",
+      "title": "Sever the Head",
+      "desc": "Only the head segment of a Cave Centipede drops Centipede Legs."
+    },
+    {
+      "id": "alexsmobs:centipede_leggings",
+      "title": "Ceilings Are Floors Now",
+      "desc": "Cave Centipede Leggings are built from Centipede Legs and grant wall climbing."
+    },
+    {
+      "id": "kill:alexsmobs:skelewag",
+      "title": "We Just Want Our Hat Back",
+      "desc": "Skelewags haunt sunken ships and drop Fish Bones, a Novelty Hat and their sword-shaped skull."
+    },
+    {
+      "id": "alexsmobs:shield_of_the_deep",
+      "title": "Teeth Turned Outward",
+      "desc": "A Serrated Shark Tooth, a Shark Tooth, prismarine bricks and a Heart of the Sea make a shield that bites back."
+    },
+    {
+      "id": "kill:alexsmobs:underminer",
+      "title": "Who Undermines the Underminer",
+      "desc": "Underminers tunnel toward hidden ore; break the block one is mining and it turns on you."
+    },
+    {
+      "id": "alexsmobs:ghostly_pickaxe",
+      "title": "Ghost, Ghost, Toast",
+      "desc": "The Ghostly Pickaxe is taken directly from a slain Underminer rather than crafted."
+    },
+    {
+      "id": "kill:alexsmobs:straddler",
+      "title": "Stilts in the Basalt",
+      "desc": "Straddlers stalk the Basalt Deltas on long legs and drop Straddlite."
+    },
+    {
+      "id": "alexsmobs:straddleboard",
+      "title": "Surf Wax America",
+      "desc": "Straddlite plus netherite yields a board that lets you ride the Nether's lava seas."
+    },
+    {
+      "id": "kill:alexsmobs:enderiophage",
+      "title": "Ender Distancing",
+      "desc": "Enderiophages drift through the End Midlands, spread Ender Flu, and drop a Capsid."
+    },
+    {
+      "id": "alexsmobs:mysterious_worm",
+      "title": "Destroy the Child",
+      "desc": "Putting a Crimson Mosquito Larva inside a Capsid produces the Mysterious Worm."
+    },
+    {
+      "id": "kill:alexsmobs:void_worm",
+      "title": "Should've Gone For the Head",
+      "desc": "Throwing the Mysterious Worm into the End's void summons the Void Worm, which splits when struck on the body."
+    },
+    {
+      "id": "alexsmobs:dimensional_carver",
+      "title": "Break On Through",
+      "desc": "A Void Worm Eye, a Void Worm Mandible and netherite forge a tool that cuts a portal home from anywhere."
+    },
+    {
+      "id": "kill:alexsmobs:farseer",
+      "title": "Farland Security",
+      "desc": "The Farseer guards the world border and drops a Farseer Arm."
+    },
+    {
+      "id": "alexsmobs:transmutation_table",
+      "title": "Nonequivalent Exchange",
+      "desc": "A Farseer Arm, obsidian and a nether star build a table that converts materials into almost anything."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "alexsmobs:spiked_turtle_shell",
+      "members": [
+        "alexsmobs:crocodile_chestplate",
+        "alexsmobs:emu_leggings",
+        "alexsmobs:flying_fish_boots",
+        "alexsmobs:roadrunner_boots",
+        "alexsmobs:froststalker_helmet",
+        "alexsmobs:moose_headgear",
+        "alexsmobs:tarantula_hawk_elytra",
+        "alexsmobs:straddle_helmet",
+        "alexsmobs:unsettling_kimono",
+        "alexsmobs:frontier_cap",
+        "alexsmobs:novelty_hat",
+        "alexsmobs:fedora",
+        "alexsmobs:sombrero",
+        "alexsmobs:halo"
+      ]
+    },
+    {
+      "hub": "alexsmobs:echolocator",
+      "members": [
+        "alexsmobs:endolocator",
+        "alexsmobs:pupfish_locator",
+        "alexsmobs:squid_grapple",
+        "alexsmobs:tendon_whip",
+        "alexsmobs:vine_lasso",
+        "alexsmobs:stink_ray",
+        "alexsmobs:pocket_sand",
+        "alexsmobs:maraca",
+        "alexsmobs:falconry_glove",
+        "alexsmobs:falconry_hood",
+        "alexsmobs:enderiophage_rocket",
+        "alexsmobs:sculk_boomer",
+        "alexsmobs:shark_tooth_arrow",
+        "alexsmobs:skelewag_sword"
+      ]
+    }
+  ],
+  "notes": "Verified against alexsmobs-1.22.9.jar: 290 ids appear both as assets/alexsmobs/models/item/*.json and as item./block. lang keys; 140 entity.alexsmobs.* lang keys. Descriptions are drawn from the 106 advancement JSONs plus their advancements.alexsmobs.*.desc strings and from data/alexsmobs/loot_tables/entities/*.json. The spine deliberately runs Animal Dictionary -> Crimson Mosquito line (blood_sprayer -> hemolymph_blaster) -> overworld/cave gear -> Nether (straddler/straddleboard) -> End (enderiophage -> mysterious_worm -> void_worm -> dimensional_carver) -> Farseer/transmutation_table, matching the mod's own advancement dependency order. IDS DROPPED: alexsmobs:blood_gun_empty, alexsmobs:blood_sprayer_empty, alexsmobs:hemolymph_blaster_empty, alexsmobs:shield_of_the_deep_blocking, alexsmobs:skelewag_sword_blocking, alexsmobs:stink_ray_empty_inventory, alexsmobs:stink_ray_hand_base, alexsmobs:tarantula_hawk_elytra_broken, alexsmobs:tendon_whip_active, alexsmobs:sombrero_upside_down, alexsmobs:pupfish_locator_in_chunk - all are render-state models with no lang key. alexsmobs:mimicube and alexsmobs:mungus were considered for the mosquito line but cut to stay inside 24 steps; both are valid entities in this jar. alexsmobs:underminer has no entity loot table - the Ghostly Pickaxe drop is code-driven and is documented by advancements.alexsmobs.ghostly_pickaxe.desc instead."
+}

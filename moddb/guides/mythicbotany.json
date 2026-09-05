@@ -1,0 +1,141 @@
+{
+ "mod": "mythicbotany",
+ "ids_in_jar": 65,
+ "videos": [],
+ "items": {},
+ "items_by_display_name": {},
+ "human_notes": {
+  "_confidence": "JAR-ONLY. NO GUIDE TRANSCRIPT WAS OBTAINED FOR THIS MOD. The one video that finished under the mythicbotany query (CfZd7UHll7E, 'Surviving With Botania :: E03 - Portal to Alfheim') turned out to be pure Botania and was refiled under botania, where it is genuinely valuable. Everything below comes from MythicBotany-1.20.1-4.0.4's own advancement DAG and lang file, which are real jar data but carry no human emphasis. TREAT THIS FILE AS A STUB -- it wants a pass over pkFjElu71Kc (Sedesin, 'Mythic Botany Tutorial - Everything About The Mod') or brU9wihmAh8 (AA Gaming, 'Complete Mythic Botany Guide'), both of which are native English and were queued but not reached.",
+  "order": [
+   {
+    "claim": "MythicBotany starts where Botania's Alfheim chapter ends -- the mod's own advancement root uses the Wand of the Elven Forest as its icon, so a player needs the Botania portal working before any of this is reachable.",
+    "video": null,
+    "ids": [
+     "mythicbotany:alfheim_rune",
+     "mythicbotany:mana_infuser"
+    ],
+    "note": "(jar advancement root mythicbotany:mythicbotany/root, icon botania:dreamwood_wand)"
+   },
+   {
+    "claim": "The Mana-Infuser and the rune holders are the mod's first machinery, and the nine realm runes are its collectibles -- Alfheim, Asgard, Helheim, Jotunheim, Midgard, Muspelheim, Nidavellir, Niflheim and Vanaheim.",
+    "video": null,
+    "ids": [
+     "mythicbotany:mana_infuser",
+     "mythicbotany:rune_holder",
+     "mythicbotany:central_rune_holder",
+     "mythicbotany:alfheim_rune",
+     "mythicbotany:asgard_rune",
+     "mythicbotany:helheim_rune",
+     "mythicbotany:joetunheim_rune",
+     "mythicbotany:midgard_rune",
+     "mythicbotany:muspelheim_rune",
+     "mythicbotany:nidavellir_rune",
+     "mythicbotany:niflheim_rune",
+     "mythicbotany:vanaheim_rune"
+    ],
+    "note": "(jar advancement mythicbotany:all_runes, icon mythicbotany:joetunheim_rune; the runes and the Central Rune Holder are the mod's structural items)"
+   },
+   {
+    "claim": "Two chains run in parallel after the start. One goes Alfsteel: the Alfsteel Ingot, then its tools, armour and the Alfsteel Pylon. The other goes through Mimir: the Gjallarhorn, then Alfheim itself, then the Ring of Andwari, with Mjoellnir on its own branch.",
+    "video": null,
+    "ids": [
+     "mythicbotany:alfsteel_ingot",
+     "mythicbotany:alfsteel_pylon",
+     "mythicbotany:gjallar_horn_empty",
+     "mythicbotany:gjallar_horn_full",
+     "mythicbotany:dream_cherry",
+     "mythicbotany:andwari_ring",
+     "mythicbotany:mjoellnir"
+    ],
+    "note": "(jar advancement DAG: root -> alfsteel -> mending_repair(alfsteel_pylon); root -> mimir(gjallar_horn_full) -> alfheim(dream_cherry) -> andwari(andwari_ring); mimir -> mjoellnir -> kill_pixie)"
+   }
+  ],
+  "gates": [
+   {
+    "claim": "Filling the Gjallarhorn from the Well of Mimir is the gate on the Alfheim branch -- the empty horn and the full one are separate items, and the full one is what the advancement chain keys off.",
+    "video": null,
+    "ids": [
+     "mythicbotany:gjallar_horn_empty",
+     "mythicbotany:gjallar_horn_full"
+    ],
+    "note": "(jar advancement mythicbotany:mimir, icon mythicbotany:gjallar_horn_full 'Water from the Well of Mimir'; its children are alfheim and mjoellnir)"
+   },
+   {
+    "claim": "The Rune Tablet of Fimbultyr and the Branch of Yggdrasil are structural items for the mod's ritual sites rather than gear -- expect them to gate the realm-rune work.",
+    "video": null,
+    "ids": [
+     "mythicbotany:fimbultyr_tablet",
+     "mythicbotany:yggdrasil_branch",
+     "mythicbotany:central_rune_holder"
+    ],
+    "note": "(jar item set; not corroborated by any transcript)"
+   }
+  ],
+  "bosses": [
+   {
+    "claim": "There is a killable Alfheim Pixie tied to Mjoellnir in the advancement chain, which suggests a combat step behind the hammer rather than a pure craft.",
+    "video": null,
+    "ids": [
+     "mythicbotany:mjoellnir",
+     "mythicbotany:alf_pixie_spawn_egg"
+    ],
+    "note": "(jar advancement DAG: mjoellnir -> kill_pixie, icon mythicbotany:alf_pixie_spawn_egg)"
+   }
+  ],
+  "traps": [],
+  "signature": [
+   {
+    "claim": "Mjoellnir is the mod's headline item and the thing players install it for.",
+    "video": null,
+    "ids": [
+     "mythicbotany:mjoellnir"
+    ],
+    "note": "(jar advancement DAG and item set; the corpus's MythicBotany videos are titled around 'Alfheim and Mjollnir')"
+   },
+   {
+    "claim": "Alfsteel is the tier above Terrasteel -- a full armour set plus the Alf Shatterer, Alf Blade and Alf Truncator, which parallel Botania's Terra Shatterer line.",
+    "video": null,
+    "ids": [
+     "mythicbotany:alfsteel_ingot",
+     "mythicbotany:alfsteel_pick",
+     "mythicbotany:alfsteel_sword",
+     "mythicbotany:alfsteel_axe",
+     "mythicbotany:alfsteel_helmet",
+     "mythicbotany:alfsteel_chestplate",
+     "mythicbotany:alfsteel_leggings",
+     "mythicbotany:alfsteel_boots"
+    ],
+    "note": "(jar item set)"
+   },
+   {
+    "claim": "The mod extends Botania's flower roster with Norse-themed generating and functional flowers, and adds greatest-tier bands above Botania's greater ones.",
+    "video": null,
+    "ids": [
+     "mythicbotany:aquapanthus",
+     "mythicbotany:exoblaze",
+     "mythicbotany:feysythia",
+     "mythicbotany:hellebore",
+     "mythicbotany:petrunia",
+     "mythicbotany:raindeletia",
+     "mythicbotany:wither_aconite",
+     "mythicbotany:mana_ring_greatest",
+     "mythicbotany:aura_ring_greatest"
+    ],
+    "note": "(jar item set)"
+   },
+   {
+    "claim": "Mead of Kvasir and Blood of Kvasir are distinctive consumables worth their own quests, alongside the Ring of Muspelheim and Ring of Niflheim.",
+    "video": null,
+    "ids": [
+     "mythicbotany:kvasir_mead",
+     "mythicbotany:kvasir_blood",
+     "mythicbotany:fire_ring",
+     "mythicbotany:ice_ring",
+     "mythicbotany:andwari_ring",
+     "mythicbotany:cursed_andwari_ring"
+    ],
+    "note": "(jar item set)"
+   }
+  ]
+ }
+}

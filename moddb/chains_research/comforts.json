@@ -1,0 +1,69 @@
+{
+  "mod": "comforts",
+  "verified_against": "comforts-forge-6.4.0+1.20.1.jar",
+  "item_count_in_jar": 33,
+  "chain": [
+    {
+      "id": "comforts:sleeping_bag_white",
+      "title": "Sleep Anywhere",
+      "desc": "A bed you carry in your pack: crouch to place it, sleep, pick it back up. It does NOT move your spawn point, so a night out exploring will not cost you your base respawn. Carry a spare - packs can turn on a break chance, and 'The sleeping bag broke' at 3am is a long walk home."
+    },
+    {
+      "id": "comforts:rope_and_nail",
+      "title": "Nail Up the Anchors",
+      "desc": "Wall hardware, not furniture - you cannot sleep on one. A hammock refuses to hang unless there is a Rope and Nail at BOTH ends, so make them in pairs and put them on facing walls with a gap between."
+    },
+    {
+      "id": "comforts:hammock_white",
+      "title": "Hang a Hammock",
+      "desc": "Strung between two Rope and Nails on facing walls, a hammock lets you sleep through the DAY instead of the night - the fix for anyone who works nights and wants to skip the daylight. It will refuse to hang without a nail at both ends."
+    }
+  ],
+  "collections": [
+    {
+      "name": "Sleeping Bags",
+      "desc": "Sixteen dye colours, mechanically identical. Craft three wool of one colour, or re-dye a spare bag.",
+      "hub": "comforts:sleeping_bag_white",
+      "members": [
+        "comforts:sleeping_bag_orange",
+        "comforts:sleeping_bag_magenta",
+        "comforts:sleeping_bag_light_blue",
+        "comforts:sleeping_bag_yellow",
+        "comforts:sleeping_bag_lime",
+        "comforts:sleeping_bag_pink",
+        "comforts:sleeping_bag_gray",
+        "comforts:sleeping_bag_light_gray",
+        "comforts:sleeping_bag_cyan",
+        "comforts:sleeping_bag_purple",
+        "comforts:sleeping_bag_blue",
+        "comforts:sleeping_bag_brown",
+        "comforts:sleeping_bag_green",
+        "comforts:sleeping_bag_red",
+        "comforts:sleeping_bag_black"
+      ]
+    },
+    {
+      "name": "Hammock Cloths",
+      "desc": "Sixteen dye colours, mechanically identical. Each is wool ringed with string on wooden rods, or re-dye a spare hammock.",
+      "hub": "comforts:hammock_white",
+      "members": [
+        "comforts:hammock_orange",
+        "comforts:hammock_magenta",
+        "comforts:hammock_light_blue",
+        "comforts:hammock_yellow",
+        "comforts:hammock_lime",
+        "comforts:hammock_pink",
+        "comforts:hammock_gray",
+        "comforts:hammock_light_gray",
+        "comforts:hammock_cyan",
+        "comforts:hammock_purple",
+        "comforts:hammock_blue",
+        "comforts:hammock_brown",
+        "comforts:hammock_green",
+        "comforts:hammock_red",
+        "comforts:hammock_black"
+      ]
+    }
+  ],
+  "notes": "DELIBERATELY THREE STEPS - THE MOD ONLY HAS THREE FUNCTIONALLY DISTINCT BLOCKS. Full jar inventory: 433 entries, 33 registered blocks = 16 sleeping bags + 16 hammock cloths + 1 rope_and_nail, and ZERO plain items. The 30 colour variants are pure dye duplicates and are in collections, not the chain; padding the chain with them to reach the 8-step bar would produce a book that asks the player to craft the same object sixteen times. VERIFIED IDS: every id above was read out of assets/comforts/lang/en_us.json (block.comforts.sleeping_bag_<colour>, block.comforts.hammock_<colour>, block.comforts.rope_and_nail). Note the lang label for hammocks is 'White Hammock Cloth' etc., not 'Hammock'. RECIPES (data/comforts/recipes, 67 files): sleeping_bag_<c> = three matching wool in a row; hammock_<c> = 'sws/sas/sws' with a=wool, s=#forge:string, w=#forge:rods/wooden; rope_and_nail = 'aa /ax / a' with a=#forge:string, x=#forge:ingots/iron, plus a shapeless alternative of #forge:rope + iron ingot (data/forge/tags/items/rope.json declares quark:rope, supplementaries:rope and farmersdelight:rope as optional members, so that path only lights up in packs that ship one of those). Each colour also has a shapeless re-dye recipe. THERE IS NO TIERING AND NO GATE - all three steps are reachable on day one from wool, string and one iron ingot, which is why the chain is a spine of three rather than a ladder. ADVANCEMENTS ARE NOT A PROGRESSION SOURCE HERE: all 34 files under data/comforts/advancements are auto-generated recipe unlocks parented to minecraft:recipes/root with no display block, no title and no description. LOOT: 35 tables under data/comforts/loot_tables, all self-drop block tables - nothing is found rather than made. TAGS: comforts:hammocks and comforts:sleeping_bags exist as both block and item tags and hold exactly the sixteen colours each - a generator wanting one task for 'any hammock' should use #comforts:hammocks rather than listing colours. GAMEPLAY FACTS BEHIND THE DESCRIPTIONS, all taken from the mod's own strings: sleeping bags have a configurable break chance on use ('The sleeping bag broke'); hammocks are day-sleepers ('You can only sleep during the day') and refuse to place without a nail at both ends ('There must also be a rope and nail on the other end to hang the hammock'); both can be configured to stop phantom spawns; the mod also adds an optional sleepiness cooldown ('You may not rest now; you don't feel sleepy yet'). BELOW THE LOADER THRESHOLD: autoquestgen.py's _load_researched_chains keeps curated chains of 4+ rows, so this three-row chain will be skipped by that path and the generator will fall back to its jar scan. Appears in 2 of the 6 measured packs. VERIFIER PASS: all 3 chain ids and all 32 collection ids re-read out of assets/comforts/lang/en_us.json and assets/comforts/models/item/ in comforts-forge-6.4.0+1.20.1.jar - every one present, and the jar holds nothing else: 33 blockstates, 33 item models, zero item.comforts.* registry keys, zero entities, zero worldgen, 35 self-drop block loot tables. The three-step chain is CORRECT and was left at three on purpose; there is genuinely no fourth distinct thing to ask for, and the only way to reach the 8-step bar would be to ask a player to craft the same sleeping bag in sixteen colours. THE COLLECTIONS ARE WHAT MAKES THIS FILE EARN ITS PLACE and they were the real defect: they were written as {name, desc, ids}, which _load_researched_collections does not read - it wants {hub, members} and drops any wheel under 4 members. Rewritten into that shape, the two 16-colour wheels now load even though the chain does not, which is the difference between the generator emitting two hub quests and it emitting thirty-three flat item quests off its own jar scan. Sleeping-bag desc corrected while there: the crouch-to-place behaviour is in the mod's own tooltip string (item.comforts.sleeping_bag.auto_use.tooltip, 'To place, use while crouching')."
+}

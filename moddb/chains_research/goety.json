@@ -1,0 +1,181 @@
+{
+ "mod": "goety",
+ "verified_against": "goety-2.5.55.4.jar",
+ "item_count_in_jar": 1251,
+ "chain": [
+  {
+   "id": "goety:ectoplasm",
+   "title": "Leavings of the Restless",
+   "desc": "Hunt Wraiths at night or loot dungeon chests for Ectoplasm, the spectral residue that every dark craft begins with."
+  },
+  {
+   "id": "goety:totem_of_roots",
+   "title": "Roots of Power",
+   "desc": "Craft a Totem of Roots from an Ectoplasm, two lapis and three sticks, then carry it while killing mobs to charge it with Soul Energy."
+  },
+  {
+   "id": "goety:empty_focus",
+   "title": "A Vessel for Spells",
+   "desc": "Surround a charged Totem with four amethyst shards to craft four Empty Focuses, the blank cores every spell is built on."
+  },
+  {
+   "id": "goety:dark_wand",
+   "title": "The Pointing Begins",
+   "desc": "Combine an Empty Focus, two lapis, Magic Fabric and a plank into a Dark Wand; slot a Focus into it (default Z key) to cast spells with Soul Energy."
+  },
+  {
+   "id": "goety:soul_light_focus",
+   "title": "First Incantation",
+   "desc": "Craft a Soul Light Focus, a cheap starter spell that hurls a projectile leaving a glowing ball of light where it lands."
+  },
+  {
+   "id": "goety:cursed_infuser",
+   "title": "The Lapis Siphon",
+   "desc": "Craft a Cursed Infuser from lapis, a coal block, stone bricks and a cauldron; it siphons magical energy into items placed on top of it."
+  },
+  {
+   "id": "goety:magic_emerald",
+   "title": "Secrets of the Illagers",
+   "desc": "Infuse an ordinary emerald on the Cursed Infuser to awaken it into a Magic Emerald, the gem behind Illager artifice."
+  },
+  {
+   "id": "goety:totem_of_souls",
+   "title": "A Deeper Well",
+   "desc": "Craft a Totem of Souls from two Magic Emeralds, gold, lapis and a soul lantern; it holds far more Soul Energy than your root totem."
+  },
+  {
+   "id": "goety:cursed_ingot",
+   "title": "Profaned Metal",
+   "desc": "Fuse iron and gold with two mob remains (bones, string, gunpowder or rotten flesh) over a charged Totem to forge two Cursed Ingots, the spawner-metal."
+  },
+  {
+   "id": "goety:cursed_cage",
+   "title": "Caging Souls",
+   "desc": "Craft a Cursed Cage from eight Cursed Bars; insert a filled Totem so it can feed Soul Energy to the artifices around it."
+  },
+  {
+   "id": "goety:dark_altar",
+   "title": "The Altar Awakens",
+   "desc": "Craft a Dark Altar from Magic Emeralds, shade stone and a pedestal, and set it atop a powered Cursed Cage - rituals only need the right blocks and items within its 8-block radius."
+  },
+  {
+   "id": "goety:animation_core",
+   "title": "The Animated Series",
+   "desc": "Perform an Animation Ritual on an Empty Focus with a minecart, a boat, leather and a feather to create Animation Cores, then use them to raise Zombie and Skeleton Servants."
+  },
+  {
+   "id": "goety:dark_robe",
+   "title": "Dress Like an Evoker",
+   "desc": "Craft the Dark Robe and Hat: the hat cuts casting time while the robe cuts Soul Energy costs on every spell."
+  },
+  {
+   "id": "goety:arca",
+   "title": "Remote Connection",
+   "desc": "Forge-ritual a recovery compass, Soul Emerald, respawn anchor, ender pearl, dark prismarine, lodestone and obsidian into an Arca - a near-unbreakable block that stores and beams your Soul Energy so you can drop the totem."
+  },
+  {
+   "id": "goety:witch_cauldron",
+   "title": "Fire Burn and Cauldron Bubble",
+   "desc": "Weld seven Cursed Ingots into a Witch Cauldron and brew custom multi-effect Witch's Brews powered by Soul Energy."
+  },
+  {
+   "id": "goety:necro_brazier",
+   "title": "Green Fire Below",
+   "desc": "Ritual-infuse a Shade Brazier with a Cursed Infuser, Magic Emerald, sculk catalyst, candle, Ectoplasm and three mob skulls; the Necrotic Brazier only burns inside the Deep Dark, atop a powered Cursed Cage."
+  },
+  {
+   "id": "goety:dark_ingot",
+   "title": "Dark, Darker, Yet Darker",
+   "desc": "Feed the Necrotic Brazier a Cursed Ingot, sculk and a ghast tear (2000 Soul Energy) to smelt a Dark Alloy Ingot."
+  },
+  {
+   "id": "goety:dark_chestplate",
+   "title": "Forged in Darkness",
+   "desc": "Forge Dark armor from Dark Alloy Ingots through altar rituals - a full suit is the strongest garb a mortal necromancer can wear."
+  },
+  {
+   "id": "goety:necro_staff",
+   "title": "The Late Healer's Regalia",
+   "desc": "Craft the Necro Staff through a Necroturgy ritual; paired with the Necro Crown and Cape, non-boss undead turn neutral and your necromantic spells grow stronger."
+  },
+  {
+   "id": "kill:goety:crone",
+   "title": "The Witch of the Bog",
+   "desc": "Track down the Blighted Shack and slay the Crone, the ancient brewer within - her hat is one of the four relics of the Sabbath."
+  },
+  {
+   "id": "kill:goety:wither_necromancer",
+   "title": "Charred Overseer",
+   "desc": "Defeat a Wither Necromancer in the Nether fortress; its Withered Manuscript can be ritual-restored into the Bygone Scroll that unlocks Nether magic."
+  },
+  {
+   "id": "goety:infernal_tome",
+   "title": "Words That Burn",
+   "desc": "Ritual-bind a book with crying obsidian, Magic Emeralds, a blaze rod, a ghast tear and an Updraft Focus into the Infernal Tome, the last relic needed to call the Apostle."
+  },
+  {
+   "id": "kill:goety:apostle",
+   "title": "Judgement Day",
+   "desc": "Build the Sabbath circle (8 crying obsidian, 16 obsidian, 4 soul fires), offer the Crone Hat, Malefic Helm, Warlock Sash and Infernal Tome, activate with a netherite ingot - then kill the Apostle it summons. Never do this in the Nether, where it is strongest."
+  },
+  {
+   "id": "goety:undeath_potion",
+   "title": "King of the Dead",
+   "desc": "Restore the Forbidden Scroll, then perform the Master Necroturgy Ritual - Apostle's blood, a villager sacrifice and 1000 Soul Energy - to brew the Potion of Transformation; drink it under a full moon to become a Lich."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "goety:focus_bag",
+   "members": [
+    "goety:fireball_focus",
+    "goety:lightning_focus",
+    "goety:vexing_focus",
+    "goety:osseous_focus",
+    "goety:telekinesis_focus",
+    "goety:tunnel_focus",
+    "goety:banish_focus",
+    "goety:barricade_focus",
+    "goety:swarm_focus",
+    "goety:iceology_focus",
+    "goety:overgrowth_focus",
+    "goety:pulverize_focus",
+    "goety:fire_breath_focus",
+    "goety:frost_breath_focus"
+   ]
+  },
+  {
+   "hub": "goety:dark_robe",
+   "members": [
+    "goety:witch_robe",
+    "goety:warlock_robe",
+    "goety:nether_robe",
+    "goety:frost_robe",
+    "goety:wind_robe",
+    "goety:storm_robe",
+    "goety:wild_robe",
+    "goety:abyss_robe",
+    "goety:illusion_robe",
+    "goety:unholy_robe",
+    "goety:grand_robe",
+    "goety:void_robe"
+   ]
+  },
+  {
+   "hub": "goety:necro_staff",
+   "members": [
+    "goety:nameless_staff",
+    "goety:nether_staff",
+    "goety:frost_staff",
+    "goety:storm_staff",
+    "goety:wild_staff",
+    "goety:void_staff",
+    "goety:abyss_staff",
+    "goety:wind_staff",
+    "goety:geo_staff",
+    "goety:ominous_staff"
+   ]
+  }
+ ],
+ "notes": "Chain derived from the jar's own advancement tree (data/goety/advancements/goety/, 404 files: root -> totem_of_roots -> cursed_ingot -> cursed_cage -> dark_altar; empty_focus -> dark_wand -> focuses; crone -> summon_apostle -> apostle rewards; forbidden scroll -> become_lich), its recipes (ritual/brazier/infuser JSON) and the in-jar Patchouli 'black_book'. All 24 chain ids + 36 collection ids set-membership-verified against the 1251 model+lang intersected item stems; kill targets crone, wither_necromancer, apostle verified in entity lang keys. Dropped 'potion_of_transformation' (real id is undeath_potion). Other verified bosses available if more kills wanted: vizier, skull_lord, brood_mother, heresiarch, minister, endersent, ender_keeper, wight. The Sabbath relics crone_hat, malefic_helm, warlock_sash and night_beacon are also verified items if extra quests are needed. | normalised: 21 ids namespaced, 0 dropped as not present in goety-2.5.55.4.jar"
+}

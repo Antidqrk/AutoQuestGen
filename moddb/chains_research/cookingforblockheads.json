@@ -1,0 +1,164 @@
+{
+ "mod": "cookingforblockheads",
+ "verified_against": "cookingforblockheads-forge-1.20.1-16.0.15.jar",
+ "item_count_in_jar": 51,
+ "chain": [
+  {
+   "id": "cookingforblockheads:recipe_book",
+   "title": "Bake A Book",
+   "desc": "Put a plain book in a furnace. Cooking for Blockheads I is a smelting recipe, which is the only joke the mod tells and the entry point to everything else."
+  },
+  {
+   "id": "cookingforblockheads:crafting_book",
+   "title": "The Second Edition",
+   "desc": "Book one, a crafting table and diamonds. Volume II adds full crafting to the recipe browser, so the kitchen can build things and not only cook them."
+  },
+  {
+   "id": "cookingforblockheads:cooking_table",
+   "title": "The Heart Of The Kitchen",
+   "desc": "Volume II, terracotta and stone. The Cooking Table is what actually shows you every recipe your connected kitchen can make right now."
+  },
+  {
+   "id": "cookingforblockheads:counter",
+   "title": "Counter Space",
+   "desc": "Terracotta, stone and a wooden chest. Counters are the connective tissue: anything touching them joins the same kitchen network."
+  },
+  {
+   "id": "cookingforblockheads:cabinet",
+   "title": "Somewhere To Put It",
+   "desc": "A wooden chest under terracotta. Cabinets hang above the counters and hold the ingredients the Cooking Table will pull from."
+  },
+  {
+   "id": "cookingforblockheads:corner",
+   "title": "Turn The Corner",
+   "desc": "Terracotta and stone in an L. Without a corner block a kitchen can only be a straight line, so this is what makes it a room."
+  },
+  {
+   "id": "cookingforblockheads:sink",
+   "title": "Running Water",
+   "desc": "Terracotta, iron and a water bucket. The Sink is an infinite water source for recipes, so no dish ever costs you a bucket trip."
+  },
+  {
+   "id": "cookingforblockheads:oven",
+   "title": "Install The Oven",
+   "desc": "A furnace, iron and black stained glass. The Oven smelts food in bulk in the background while you do something else."
+  },
+  {
+   "id": "cookingforblockheads:fridge",
+   "title": "Cold Storage",
+   "desc": "A wooden chest and an iron door. The Fridge is the big storage node of the kitchen and takes the upgrade units."
+  },
+  {
+   "id": "cookingforblockheads:milk_jar",
+   "title": "A Jar Of Milk",
+   "desc": "Glass, planks and a milk bucket. It stores milk for recipes so you stop carrying buckets, and it is a prerequisite for the strangest block in the mod."
+  },
+  {
+   "id": "cookingforblockheads:cow_jar",
+   "title": "Cow In A Jar",
+   "desc": "Drop an anvil on a cow standing beside a Milk Jar. That is the whole recipe, and it is checked in code: the damage source must be an anvil, the victim must be a cow, and a Milk Jar must be nearby. The result produces milk forever."
+  },
+  {
+   "id": "cookingforblockheads:heating_unit",
+   "title": "Heat It Up",
+   "desc": "Iron, nuggets and a comparator. Slotted into a fridge or counter it becomes the kitchen's smelting power."
+  },
+  {
+   "id": "cookingforblockheads:ice_unit",
+   "title": "Chill It Down",
+   "desc": "Iron, a comparator and a snowball. The cold half of the upgrade pair, and what makes a fridge actually refrigerate."
+  },
+  {
+   "id": "cookingforblockheads:preservation_chamber",
+   "title": "Stop The Rot",
+   "desc": "Iron, redstone and a comparator. The third upgrade unit, and the one that keeps stored food from being wasted."
+  },
+  {
+   "id": "cookingforblockheads:toaster",
+   "title": "Toast",
+   "desc": "Iron, an iron trapdoor, a stone button and a bucket of lava. A lava-powered toaster is exactly as sensible as the rest of this kitchen."
+  },
+  {
+   "id": "cookingforblockheads:fruit_basket",
+   "title": "Fruit On The Side",
+   "desc": "Wooden slabs and a pressure plate. Small storage that keeps produce visible and inside the network."
+  },
+  {
+   "id": "cookingforblockheads:tool_rack",
+   "title": "Hang Up The Tools",
+   "desc": "Wooden slabs and iron nuggets. The rack holds the tools recipes ask for so the kitchen can satisfy them on its own."
+  },
+  {
+   "id": "cookingforblockheads:white_kitchen_floor",
+   "title": "Lay The Floor",
+   "desc": "The finishing touch, and the piece that makes a working multiblock look like somebody's kitchen."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "cookingforblockheads:oven",
+   "members": [
+    "cookingforblockheads:black_oven",
+    "cookingforblockheads:blue_oven",
+    "cookingforblockheads:brown_oven",
+    "cookingforblockheads:cyan_oven",
+    "cookingforblockheads:gray_oven",
+    "cookingforblockheads:green_oven",
+    "cookingforblockheads:light_blue_oven",
+    "cookingforblockheads:light_gray_oven",
+    "cookingforblockheads:lime_oven",
+    "cookingforblockheads:magenta_oven",
+    "cookingforblockheads:orange_oven",
+    "cookingforblockheads:pink_oven",
+    "cookingforblockheads:red_oven",
+    "cookingforblockheads:yellow_oven"
+   ]
+  },
+  {
+   "hub": "cookingforblockheads:white_kitchen_floor",
+   "members": [
+    "cookingforblockheads:black_kitchen_floor",
+    "cookingforblockheads:blue_kitchen_floor",
+    "cookingforblockheads:brown_kitchen_floor",
+    "cookingforblockheads:cyan_kitchen_floor",
+    "cookingforblockheads:gray_kitchen_floor",
+    "cookingforblockheads:green_kitchen_floor",
+    "cookingforblockheads:light_blue_kitchen_floor",
+    "cookingforblockheads:light_gray_kitchen_floor",
+    "cookingforblockheads:lime_kitchen_floor",
+    "cookingforblockheads:magenta_kitchen_floor",
+    "cookingforblockheads:orange_kitchen_floor",
+    "cookingforblockheads:pink_kitchen_floor",
+    "cookingforblockheads:red_kitchen_floor",
+    "cookingforblockheads:yellow_kitchen_floor"
+   ]
+  },
+  {
+   "hub": "cookingforblockheads:counter",
+   "members": [
+    "cookingforblockheads:cabinet",
+    "cookingforblockheads:corner",
+    "cookingforblockheads:hanging_corner",
+    "cookingforblockheads:spice_rack",
+    "cookingforblockheads:tool_rack",
+    "cookingforblockheads:fruit_basket",
+    "cookingforblockheads:cooking_table",
+    "cookingforblockheads:sink"
+   ]
+  },
+  {
+   "hub": "cookingforblockheads:fridge",
+   "members": [
+    "cookingforblockheads:heating_unit",
+    "cookingforblockheads:ice_unit",
+    "cookingforblockheads:preservation_chamber",
+    "cookingforblockheads:toaster",
+    "cookingforblockheads:milk_jar",
+    "cookingforblockheads:cow_jar",
+    "cookingforblockheads:no_filter_edition",
+    "cookingforblockheads:crafting_book"
+   ]
+  }
+ ],
+ "notes": "WIDENING AND ITS PROOF, this mod is the clearest case of the block-lang trap in the pack: assets/cookingforblockheads/lang/en_us.json contains only SIX item.* keys (no_filter_edition, recipe_book, crafting_book, heating_unit, ice_unit, preservation_chamber). Every kitchen block - oven, fridge, sink, counter, cabinet, corner, cooking_table, toaster, milk_jar, cow_jar, spice_rack, tool_rack, fruit_basket, all sixteen floors and all fifteen dyed ovens - is named only by block.cookingforblockheads.<id>, so a strict item-lang intersection would have kept six items and thrown the entire mod away. The universe used here is item model AND (item lang OR block lang) = 51 ids, and every widened id also has assets/cookingforblockheads/blockstates/<id>.json plus its own data/cookingforblockheads/loot_tables/blocks/<id>.json as independent registration and drop proof. ORDERING comes from the recipe graph, which is a strict ladder for the first three steps: recipe_book_smelting.json smelts minecraft:book into the recipe book, crafting_book.json needs recipe_book + balm:diamonds + a crafting table, and cooking_table.json needs crafting_book + balm:stones + terracotta. Everything after that hangs off terracotta, stone, iron and wooden chests and is not internally ordered, so the spine follows kitchen function (surfaces, then appliances, then upgrade units, then trim). The moddb.json consensus row for cookingforblockheads lists recipe_book, crafting_book, cooking_table, counter, sink, oven, cow_jar, cabinet, fridge, ice_unit, heating_unit in that order, which agrees with the recipe graph on the first three and is otherwise a superset with no conflict. The recipes lean on balm: tags (balm:stones, balm:diamonds, balm:iron_ingots, balm:iron_nuggets, balm:wooden_chests) - Balm is a hard dependency declared in mods.toml and ships alongside, so those are satisfiable, and no recipe in the jar carries a forge:conditional wrapper at all (the conditions sweep returned zero). THE ONE REAL MECHANIC, read from bytecode because it has no recipe: cookingforblockheads:cow_jar has a loot table but no crafting recipe. CowJarHandler.onLivingDamage checks CookingForBlockheadsConfigData.cowJarEnabled, then that the DamageSource message id equals the string 'anvil', then CowJarHandler.isCow on the victim, then CowJarHandler.findMilkJar around the cow's position - only if all four hold does a Milk Jar become a Cow in a Jar. That is why milk_jar is placed immediately before cow_jar in the chain. DROPPED AS UNOBTAINABLE: cookingforblockheads:cutting_board has no recipe and no loot table, and its own tooltip lang key says 'This item is deprecated. Pam's Cutting board can be placed directly now.' cookingforblockheads:dyed_oven, fridge_invisible and fridge_large are item-model stems with no lang key, no recipe and no loot table - they are render helpers for the dyed and double-height variants. WHEEL SPILLOVER, recorded honestly: the jar has fifteen dyed ovens (there is no white_oven; the plain cookingforblockheads:oven is the hub) and sixteen kitchen floors. Wheels cap at fourteen members, so exactly one colour of each family is left out rather than blowing the size rule: cookingforblockheads:purple_oven and cookingforblockheads:purple_kitchen_floor. Both are real, craftable ids and can be swapped in if a wheel slot frees up."
+}

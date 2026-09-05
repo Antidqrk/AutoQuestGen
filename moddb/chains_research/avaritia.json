@@ -1,0 +1,159 @@
+{
+ "mod": "avaritia",
+ "verified_against": "AvaritiaNeo-1.20.1-1.1.6.jar",
+ "item_count_in_jar": 52,
+ "chain": [
+  {
+   "id": "avaritia:diamond_lattice",
+   "title": "A Diamond, Rearranged",
+   "desc": "Four diamonds and four gold nuggets give one lattice. The cheapest thing in the mod and still expensive, which sets the tone for everything that follows."
+  },
+  {
+   "id": "avaritia:compressed_crafting_table",
+   "title": "Nine Benches In One",
+   "desc": "Nine crafting tables in a square. Not a better bench yet, just a denser one, and the first step of a bench ladder that ends three tiers up."
+  },
+  {
+   "id": "avaritia:double_compressed_crafting_table",
+   "title": "Eighty-One Benches",
+   "desc": "Nine compressed tables again. Still not usable as a workstation; it exists solely to be consumed by the thing that comes next."
+  },
+  {
+   "id": "avaritia:crystal_matrix_ingot",
+   "title": "Crystal Matrix",
+   "desc": "A nether star caged in eight diamond lattices. Two ingots per star, and every machine and weapon in the mod is priced in these."
+  },
+  {
+   "id": "avaritia:crystal_matrix_block",
+   "title": "Matrix In Bulk",
+   "desc": "Nine ingots stacked. Storage, but also a direct ingredient of the bow and most of the armour, so it is worth keeping a few whole."
+  },
+  {
+   "id": "avaritia:extreme_crafting_table",
+   "title": "The Nine-By-Nine",
+   "desc": "The double compressed table framed in crystal matrix ingots. A 9x9 grid, and from here on almost nothing fits in a vanilla bench."
+  },
+  {
+   "id": "avaritia:skullfire_sword",
+   "title": "Skullfire Sword",
+   "desc": "Bone, blaze powder, a nether star and crystal matrix on the big grid. The first thing you make on the extreme table and by far the cheapest weapon in the mod."
+  },
+  {
+   "id": "avaritia:neutron_collector",
+   "title": "Catching Neutrons",
+   "desc": "Iron, quartz and redstone blocks around crystal matrix. Needs no power and no input; placed under open sky it slowly precipitates neutron piles out of nothing."
+  },
+  {
+   "id": "avaritia:neutron_pile",
+   "title": "Neutron Pile",
+   "desc": "What the collector produces, one at a time, slowly. The real currency of the mod's midgame, and the reason people build collectors by the dozen."
+  },
+  {
+   "id": "avaritia:neutron_nugget",
+   "title": "Neutron Nugget",
+   "desc": "Nine piles pressed together. The first point at which the collector's trickle starts to feel like progress."
+  },
+  {
+   "id": "avaritia:neutronium_ingot",
+   "title": "Neutronium",
+   "desc": "Nine nuggets, so eighty-one piles. Densest matter the mod knows how to make by hand, and the frame of the compressor that makes everything denser still."
+  },
+  {
+   "id": "avaritia:neutronium_block",
+   "title": "Neutronium Block",
+   "desc": "Nine ingots, seven hundred and twenty-nine piles. Mostly a storage format, except that the compressor's own recipe demands one."
+  },
+  {
+   "id": "avaritia:compressor",
+   "title": "Neutronium Compressor",
+   "desc": "A neutronium block and crystal matrix over iron and redstone blocks. Feed it thousands of one item and it crushes them into a single singularity."
+  },
+  {
+   "id": "avaritia:iron_singularity",
+   "title": "Iron Singularity",
+   "desc": "Four hundred blocks of iron down the compressor's throat. The cheapest singularity, and the one that teaches you how long the rest will take."
+  },
+  {
+   "id": "avaritia:endest_pearl",
+   "title": "Endest Pearl",
+   "desc": "Ender pearls, end stone, a nether star and neutronium on the big grid. Throw it and it tears a hole that pulls everything nearby into the middle."
+  },
+  {
+   "id": "avaritia:record_fragment",
+   "title": "Record Fragment",
+   "desc": "A music disc broken down. A quiet joke of an ingredient that the infinity catalyst nevertheless insists on."
+  },
+  {
+   "id": "avaritia:ultimate_stew",
+   "title": "Ultimate Stew",
+   "desc": "Every vanilla crop and a neutron pile in one bowl. Food that exists to be an ingredient, which is very much this mod's sense of humour."
+  },
+  {
+   "id": "avaritia:cosmic_meatballs",
+   "title": "Cosmic Meatballs",
+   "desc": "Every meat in the game plus a neutron pile. The stew's carnivorous twin, and the catalyst wants one of each."
+  },
+  {
+   "id": "avaritia:infinity_singularity",
+   "title": "Infinity Singularity",
+   "desc": "A special recipe that swallows one of every singularity you have registered at once. This is the wall the whole mod is built around."
+  },
+  {
+   "id": "avaritia:infinity_catalyst",
+   "title": "Infinity Catalyst",
+   "desc": "The singularity, the pearl, the fragment, the stew, the meatballs, lattice, matrix, neutronium and neutron piles, all on the 9x9 at once."
+  },
+  {
+   "id": "avaritia:infinity_ingot",
+   "title": "Infinity",
+   "desc": "The catalyst surrounded by crystal matrix and neutronium. The last material in the mod, and the answer to the question the mod is asking."
+  },
+  {
+   "id": "avaritia:infinity_block",
+   "title": "Infinity Block",
+   "desc": "Nine infinity ingots. Purely a trophy, and priced like one, which is exactly why people build it."
+  },
+  {
+   "id": "avaritia:infinity_pickaxe",
+   "title": "World Breaker",
+   "desc": "Infinity and neutronium over a crystal matrix block. Mines instantly, in a radius, forever, and packs what it breaks into matter clusters."
+  },
+  {
+   "id": "avaritia:infinity_chest",
+   "title": "Infinity Chest",
+   "desc": "A chest wrapped in infinity, neutronium, catalyst and endest pearls. Effectively unbounded storage, and the last thing left to build."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "avaritia:iron_singularity",
+   "members": [
+    "avaritia:gold_singularity",
+    "avaritia:copper_singularity",
+    "avaritia:diamond_singularity",
+    "avaritia:emerald_singularity",
+    "avaritia:lapis_singularity",
+    "avaritia:redstone_singularity",
+    "avaritia:quartz_singularity",
+    "avaritia:amethyst_singularity",
+    "avaritia:netherite_singularity"
+   ]
+  },
+  {
+   "hub": "avaritia:infinity_pickaxe",
+   "members": [
+    "avaritia:infinity_sword",
+    "avaritia:infinity_axe",
+    "avaritia:infinity_shovel",
+    "avaritia:infinity_hoe",
+    "avaritia:infinity_bow",
+    "avaritia:infinity_helmet",
+    "avaritia:infinity_chestplate",
+    "avaritia:infinity_leggings",
+    "avaritia:infinity_boots",
+    "avaritia:matter_cluster"
+   ]
+  }
+ ],
+ "notes": "JAR CHOICE MATTERS HERE. There is no 1.20.1 Forge build of the original Avaritia. Modrinth's 1.20.1 Avaritia projects split three ways: 'avaritiareborn' (13 versions, all loaders=['fabric']), 'neo-avaritia' (1 version, loaders=['fabric','neoforge']) and 'avaritianeo' (16 versions, ALL loaders=['forge','neoforge']). Only AvaritiaNeo is a real Forge build, and its META-INF/mods.toml registers modId='avaritia' - the SAME namespace as the original - with minecraft versionRange='[1.20,1.21)' and loaderVersion='[46,)'. So no registers_into declaration is needed; every id below is genuinely avaritia:*. Verified against AvaritiaNeo-1.20.1-1.1.6.jar. ID COUNT: 52 item models, 9 blockstates, 36 item.avaritia.* and 9 block.avaritia.* lang keys; the union is exactly 52 and every member has a real asset, so 52 is the honest registered count. 43 of the 52 are produced by some recipe. RECIPE TYPES: avaritia:extreme_shaped (16), avaritia:compressor (12), minecraft:crafting_shaped (10), minecraft:crafting_shapeless (8), avaritia:extreme_shapeless (5). The extreme_* types require the 9x9 Extreme Crafting Table, which is the mod's real mid-chain gate and is why the table sits at step 6, before every weapon and before the catalyst. DROPPED - MODEL VARIANTS, not items (per-state override models inflating the model count): 'avaritia:infinity_bow_pull_0', 'avaritia:infinity_bow_pull_1', 'avaritia:infinity_bow_pull_2' (draw-stage overrides on the bow), 'avaritia:infinity_pickaxe_hammer' and 'avaritia:infinity_shovel_destroyer' (AoE-mode overrides on the pickaxe and shovel), and 'avaritia:matter_cluster_full' (the 'full' predicate override of matter_cluster - its own model file literally reads parent 'avaritia:item/matter_cluster' with an isMatterCluster cosmic loader). All six have no lang key and no recipe. DROPPED - NBT VARIANTS BEHIND A MOD GATE: 'avaritia:dark_matter_singularity' and 'avaritia:red_matter_singularity' have item models AND lang keys, so they survive a naive sweep, but reading their recipes shows the truth - data/avaritia/recipes/dark_matter_singularity.json has result {'item':'avaritia:json_singularity','nbt':{'singularity_id':'dark_matter_singularity'}} and a forge:mod_loaded condition on 'projecte'. The item that actually enters your inventory is avaritia:json_singularity with NBT, and only if ProjectE is installed. Both dropped. 'avaritia:json_singularity' itself is also dropped from the chain: it is the real registered item but it has NO lang key (its display name comes from the data/avaritia/singularities/ files) and its only two recipes are the ProjectE-gated ones above, so it is unobtainable in a pack without ProjectE. IMPORTANT CONSEQUENCE FOR THE INFINITY SINGULARITY: data/avaritia/recipes/infinity_singularity.json is an avaritia:extreme_shapeless recipe with an EMPTY ingredients array and the flag 'singularities': true. The flag means the recipe is filled in at runtime with one of every singularity currently registered. In a pack with ProjectE installed that set grows to include the dark/red matter singularities, so the infinity singularity gets strictly more expensive. Worth a warning line in the quest text. OBTAINABILITY CHECKS: avaritia:matter_cluster has no recipe and no loot table, but it is produced in-world by the infinity tools, which pack the blocks they break into clusters - that is why it sits in the infinity_pickaxe wheel rather than on the spine. avaritia:neutron_pile likewise has only the uncompress-from-nugget recipe in JSON; its real source is the Neutron Collector generating piles passively, which is why the collector is placed immediately before it. ORDERING vs moddb consensus (20 entries, all 20 id-verified against this jar): MAJOR CONFLICT - the consensus ordering is inverted end-to-end. It places infinity_chestplate at 0.0, infinity_totem 0.053, infinity_shovel 0.105, infinity_pickaxe 0.158, infinity_sword 0.211, infinity_ingot 0.263 and infinity_umbrella 0.368, i.e. the finished infinity equipment ranked at the very start and the ingot they are all made from ranked after four of them. The recipe graph was preferred and the entire infinity block moved to the end. CONSENSUS ALSO CONTAINS IDS THAT DO NOT EXIST IN THIS JAR: 'avaritia:infinity_totem', 'avaritia:infinity_umbrella', 'avaritia:infinity_elytra' and a bare 'avaritia:infinity' are all absent from the 52-id set - no model, no blockstate, no lang key. They belong to the 1.12 Avaritia or to the Fabric AvaritiaReborn fork, which is more evidence that the consensus corpus spans game versions and mod forks. None were used."
+}

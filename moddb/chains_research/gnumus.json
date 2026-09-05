@@ -1,0 +1,212 @@
+{
+ "mod": "gnumus",
+ "verified_against": "gnumus_settlement_[Forge]1.20.1_v1.0.jar",
+ "item_count_in_jar": 72,
+ "chain": [
+  {
+   "id": "kill:gnumus:gnumus_worker",
+   "title": "Kill A Gnumus",
+   "desc": "The mod's root advancement is literally named 'Fatty Demon' and its description is 'Kill Gnumus'. Workers are the common one and they drop a claw, doubloons and a pouch."
+  },
+  {
+   "id": "gnumus:gnumus_claw",
+   "title": "Take The Claw",
+   "desc": "Claws drop from workers, hunters and shamans alike and are the reagent for both of the mod's starting tools."
+  },
+  {
+   "id": "gnumus:gnumus_pickaxe",
+   "title": "A Pickaxe Made Of Claw",
+   "desc": "Claw, a gold nugget and a stick. The mod's own advancement calls this tier 'Fragile But Effective', which is a fair warning."
+  },
+  {
+   "id": "gnumus:gnumus_cutlass",
+   "title": "And A Cutlass",
+   "desc": "The same three ingredients in a blade shape. Gnumus are pirates and this is the weapon they leave behind."
+  },
+  {
+   "id": "gnumus:gnumus_doubloons",
+   "title": "Their Money",
+   "desc": "Doubloons drop from workers and out of broken jugs. They smelt into vanilla gold nuggets, but spending them is worth more."
+  },
+  {
+   "id": "gnumus:pileof_gnumus_doubloons",
+   "title": "Nine At A Time",
+   "desc": "The doubloon block. The 'Business Approach' advancement wants you to trade with a Gnumus Merchant using either form."
+  },
+  {
+   "id": "gnumus:gnumus_pouch",
+   "title": "The First Sack",
+   "desc": "Workers and hunters drop pouches. Three grades exist and the shaman carries the best one; the Pouch Collector advancement wants all three at once."
+  },
+  {
+   "id": "kill:gnumus:gnumus_shaman",
+   "title": "The One With The Good Pouch",
+   "desc": "Shamans drop gnumus_pouch_3, the only source of the third grade, along with the claw and the horn."
+  },
+  {
+   "id": "gnumus:gnumus_horn",
+   "title": "Horn Off A Gnumus",
+   "desc": "Horns come off hunters and shamans and are the reagent for both the totem and the helmet."
+  },
+  {
+   "id": "gnumus:gnumus_totem",
+   "title": "Horn And Metal",
+   "desc": "A horn and vintage metal, shapeless. The totem is a protection charm and its advancement is called Weight Loss Protection."
+  },
+  {
+   "id": "gnumus:vintage_parts",
+   "title": "Scrap In The Jugs",
+   "desc": "Fragile Gnumus Jugs are placed twelve times across the mod's settlement structures and shatter into their contents - food, doubloons, pouches and vintage parts."
+  },
+  {
+   "id": "gnumus:vintage_metal",
+   "title": "Smelt The Scrap",
+   "desc": "Smelt or blast vintage parts, or melt down a gnumus totem. The Antiquity Shard advancement fires here and everything technological in the mod hangs below it."
+  },
+  {
+   "id": "gnumus:vintage_alloy_ingot",
+   "title": "Alloyed With Copper",
+   "desc": "Vintage metal and a copper ingot. The Vintage Blacksmith advancement is exactly this craft and it is the mod's midpoint."
+  },
+  {
+   "id": "gnumus:hammer_vintage_universal_tool",
+   "title": "One Tool For Everything",
+   "desc": "Alloy ingot, vintage parts and a stick. The universal tool is the mod's answer to carrying four tools and its advancement is Vintage Technology."
+  },
+  {
+   "id": "gnumus:vintage_gnumus_pickaxe",
+   "title": "Upgrade The Claw Pickaxe",
+   "desc": "A smithing_transform: the claw pickaxe, an alloy ingot and vintage parts. This is the only smithing line in the mod and it needs a real smithing table."
+  },
+  {
+   "id": "gnumus:vintage_gnumus_cutlass",
+   "title": "Upgrade The Cutlass Too",
+   "desc": "The same transform on the blade. Vintage Improvement is the advancement and it is what the whole scrap economy exists for."
+  },
+  {
+   "id": "gnumus:vintage_charger",
+   "title": "A Magazine",
+   "desc": "Alloy ingot and copper. The charger is one of three parts the rifle needs and has no other use."
+  },
+  {
+   "id": "gnumus:vintage_bullet",
+   "title": "Something To Load It With",
+   "desc": "Vintage metal, copper and gunpowder. Ammunition, and the rifle is useless without a stack of it."
+  },
+  {
+   "id": "gnumus:vintage_rifle",
+   "title": "Vintage Rifleman",
+   "desc": "Alloy ingot, charger, vintage parts and a wood block. The rifle is the top of the mod's tech tree and the last item its advancement chain names."
+  },
+  {
+   "id": "kill:gnumus:marsupial_mousse",
+   "title": "The Mouse With The Pouch",
+   "desc": "Marsupial mice drop mouse skin, which crafts into vanilla leather. The Cheese Treat advancement wants you to feed one gnumus cheese instead."
+  },
+  {
+   "id": "gnumus:mouse_skin",
+   "title": "Skinned",
+   "desc": "Mouse skin is the leather half of the gnumus helmet and the only renewable hide the mod adds."
+  },
+  {
+   "id": "gnumus:gnumus_helmet_helmet",
+   "title": "Their Helmet, Rebuilt",
+   "desc": "A horn, mouse skin and a vintage alloy ingot. The Well-fed Warrior advancement is simply 'Get Gnumus Helmet', which puts it late."
+  },
+  {
+   "id": "gnumus:lucky_hat_helmet",
+   "title": "The Lucky Hat",
+   "desc": "A claw, a rabbit's foot and a mouse or rabbit hide. The one hat in the mod you can actually craft."
+  },
+  {
+   "id": "gnumus:business_hat_helmet",
+   "title": "Bought, Not Made",
+   "desc": "The Worthy Trader's Hat advancement is 'Get a Business Hat' and its parent is 'Trade with Gnumus Merchant using Gnumus Doubloons'. This hat has no recipe anywhere - the merchant sells it."
+  },
+  {
+   "id": "kill:gnumus:big_snout",
+   "title": "Plan Boar",
+   "desc": "Big Snouts drop juicy meat and the advancement named after killing one is called Plan 'Boar'. Small Snouts drop the same meat for less effort."
+  },
+  {
+   "id": "gnumus:grilled_juicy_meat",
+   "title": "Cook It",
+   "desc": "Furnace, smoker or campfire on juicy meat. This is the ingredient the mod's best food is built on."
+  },
+  {
+   "id": "gnumus:hearty_dinner",
+   "title": "Hearty Dish",
+   "desc": "Grilled meat, a bowl, carrot, dried kelp, egg and wheat. Six ingredients for one bowl, which makes it the most expensive craft in the mod that is not a rifle."
+  },
+  {
+   "id": "gnumus:gnumus_clay",
+   "title": "Clay And Mud",
+   "desc": "A clay ball and mud. Gnumus clay is the material their whole settlement is built out of and the only thing here you can make without killing anything."
+  },
+  {
+   "id": "gnumus:baked_gnumus_clay",
+   "title": "Fire It",
+   "desc": "Smelt a gnumus clay block. Twenty-seven baked clay stairs and thirty-eight brick walls are placed across the settlement structures, so this is what their architecture looks like."
+  },
+  {
+   "id": "gnumus:gnumus_jug",
+   "title": "Make Your Own Jug",
+   "desc": "Gnumus clay in a jug shape. Unlike the fragile jugs you smash in their settlements, this one is yours."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "gnumus:baked_gnumus_clay",
+   "members": [
+    "gnumus:gnumus_clay_block",
+    "gnumus:baked_patterned_gnumus_clay",
+    "gnumus:gnumus_clay_brick",
+    "gnumus:gnumus_clay_brick_slap",
+    "gnumus:gnumus_clay_brick_stairs",
+    "gnumus:gnumus_clay_brick_wall",
+    "gnumus:baked_gnumus_clay_slab",
+    "gnumus:baked_gnumus_clay_stairs",
+    "gnumus:baked_gnumus_clay_wall"
+   ]
+  },
+  {
+   "hub": "gnumus:gnumus_pouch",
+   "members": [
+    "gnumus:gnumus_pouch_2",
+    "gnumus:gnumus_pouch_3",
+    "gnumus:gnumus_doubloons",
+    "gnumus:pileof_gnumus_doubloons",
+    "gnumus:packaged_goods",
+    "gnumus:wrapper_with_goods",
+    "gnumus:gnumus_horn",
+    "gnumus:gnumus_claw"
+   ]
+  },
+  {
+   "hub": "gnumus:vintage_alloy_ingot",
+   "members": [
+    "gnumus:vintage_metal",
+    "gnumus:vintage_alloy_block",
+    "gnumus:vintage_parts",
+    "gnumus:vintage_charger",
+    "gnumus:vintage_bullet",
+    "gnumus:vintage_rifle",
+    "gnumus:hammer_vintage_universal_tool",
+    "gnumus:vintage_gnumus_pickaxe",
+    "gnumus:vintage_gnumus_cutlass"
+   ]
+  },
+  {
+   "hub": "gnumus:gnumus_hummus",
+   "members": [
+    "gnumus:gnumus_cheese",
+    "gnumus:gnumus_chickpeas",
+    "gnumus:juicy_meat",
+    "gnumus:grilled_juicy_meat",
+    "gnumus:hearty_dinner",
+    "gnumus:overripe_carrot"
+   ]
+  }
+ ],
+ "notes": "LOADER: META-INF/mods.toml, modId gnumus, 1.20.1 Forge. This mod is CurseForge only and does not exist on Modrinth under any slug - the project is curseforge.com/minecraft/mc-mods/gnumus-settlement (id 720397, 'Gnumus Settlement', 1.98M downloads) and the file had to be pulled through the CurseForge API. Note the project name and the modid differ: the project is 'Gnumus Settlement', the modid is plain gnumus. VERIFICATION, TWO PASSES: pass A took the 72 assets/gnumus/models/item stems INTERSECT the item./block. lang keys and gave 72. Pass B independently rebuilt from recipe results, loot-table entry names, blockstates and lang keys and ALSO gave 72, with zero difference in either direction - the cleanest agreement of any mod in this batch. No widening was needed. THE HONEST NUMBER IS 46, NOT 72. Twenty-six of the 72 ids are not obtainable in survival: 10 spawn eggs (big_snout, small_snout, marsupial_mousse, pitcher_mousse, pitcher_mouse_pac, gnumus_worker, gnumus_hunter, gnumus_hunter_not_dispawn, gnumus_merchant, gnumus_shaman) with zero references anywhere in data/, and 10 spawn_structures_* items (gnumus_bonfire, gnumus_camp, gnumus_farm, gnumus_ruins, gnumus_settlement, large_gnumus_settlement, small_gnumus_settlement, gnumus_statue, shamans_hut, traders_rest) which are creative structure-placer wands, also with zero data references. None of the twenty appears in this file. FIVE MORE ARE ADVANCEMENT ICONS, not items you can hold - and this is the finding worth recording. gnumus:bags, gnumus:gnumus_tools, gnumus:vintage_tools and gnumus:morda each appear in EXACTLY ONE place in the whole jar: as the display icon of an advancement (bags in sack_collector, gnumus_tools in fragile_but_effective, vintage_tools in vintage_improvement, morda in the root fatty_demon). They have no recipe, no loot table and no trade. Their lang names - 'Bags', 'Gnumus Tools', 'Vintage Tools', 'Morda' - are plural or abstract because they represent a category, not a thing. gnumus:gnumusstaff ('Gnumus Staff') is worse still: zero references anywhere in the jar, not even an icon. All five are dropped. gnumus:fragile_gnumus_jug is also dropped as an ITEM: it has a block loot table, but that table drops the jug's CONTENTS (cheese, chickpeas, claws, doubloons, pouches, juicy meat, overripe carrots, vintage parts and a dozen vanilla items) and never the jug itself, and there is no recipe - it is a structure prop you smash, placed twelve times across the settlement .nbt files. It is described in the vintage_parts step rather than asked for. KEPT DESPITE HAVING NO RECIPE, with proof: gnumus:business_hat_helmet. Its advancement worthy_traders_hat reads 'Get a Business Hat' and its PARENT advancement business_approach reads 'Trade with Gnumus Merchant using Gnumus Doubloons or Pile of Gnumus Doubloons'. That is an explicit, in-mod statement of a merchant trade source, which is exactly the kind of non-recipe obtainability the brief allows. moddb.json independently lists gnumus:business_hat_helmet as a quested item, which agrees. ENTITIES: 10 entity.gnumus.* lang keys and 10 spawn eggs, but only EIGHT have entity loot tables - big_snout, small_snout, marsupial_mousse, gnumus_worker, gnumus_hunter, gnumus_hunter_not_dispawn, gnumus_merchant and gnumus_shaman. pitcher_mousse and pitcher_mouse_pac have a lang key and a spawn egg but NO loot table, so killing them yields nothing and neither is used as a kill: target. The four kill: steps here all come from the eight with tables. Note gnumus_hunter_not_dispawn is a genuinely separate registered entity type (its own lang key, its own spawn egg, its own loot table) - it is the persistent version of the hunter that structures spawn, appearing 19 times across the .nbt files. STRUCTURE PROOF: a gzip-decompress-and-scan of the 12 settlement .nbt files counts gnumus_clay_brick_wall 38 times, overripe_carrot 31, baked_gnumus_clay_stairs 27, gnumus_clay_brick_stairs 22, gnumus_hunter_not_dispawn 19, gnumus_worker 14, scion_weed 12, fragile_gnumus_jug 12, and the rest of the clay family below that. gnumus:scion_weed additionally has a real worldgen chain - configured_feature, placed_feature and a forge biome_modifier - so it is world-generated, not just structure-placed; it is left out of the spine only because it is a plain decorative weed. GRAPH: the mod's own 16-node advancement tree drives the chain order exactly - fatty_demon (kill a gnumus) is the root, and below it sit antiquity_shard (get vintage metal) -> vintage_blacksmith (make vintage alloy ingot) -> {vintage_rifleman, vintage_technology, wellfed_warrior}, business_approach (trade) -> worthy_traders_hat, fragile_but_effective (claw tools) -> vintage_improvement (smithing upgrade), plan_boar (kill big snout) -> hearty_dish, plus sack_collector, vasebreaker, cheese_treat and weight_loss_protection. Fourteen of the sixteen use the minecraft:impossible trigger, meaning they are fired from code, so the descriptions rather than the criteria are what carry the information - which is why they are quoted above. CONSENSUS: moddb.json lists 25 gnumus ids and all 25 resolve in this jar. Every one of the 25 is in this file's chain or wheels. moddb leads with gnumus_cheese, gnumus_claw and lucky_hat_helmet and ends with vintage_rifle, which matches the graph's claw-tools-early, vintage-tech-late ordering. No conflict. DESIRABILITY: gnumus_clay_brick_slap (the mod's own spelling of slab), gnumus_clay_brick_stairs, gnumus_clay_brick_wall, baked_gnumus_clay_slab, baked_gnumus_clay_stairs and baked_gnumus_clay_wall are kept out of the spine and appear only in the clay wheel."
+}

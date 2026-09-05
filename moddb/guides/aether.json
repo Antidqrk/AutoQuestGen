@@ -1,0 +1,200 @@
+{
+ "mod": "aether",
+ "ids_in_jar": 621,
+ "videos": [
+  {
+   "id": "ae0hShtfkeY",
+   "title": null,
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 1578
+  },
+  {
+   "id": "piJ3Fm_xiNA",
+   "title": null,
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 17793
+  },
+  {
+   "title": "Create Mod Train through an Aether Portal?",
+   "channel": "Shalz",
+   "views": 361694,
+   "duration": 515,
+   "id": "sU7qsFUc0jw",
+   "chars": 10015
+  }
+ ],
+ "items": {
+  "aether:altar": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.7414,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "aether:holystone": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.0726,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "aether:iron_ring": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.8905,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aether:treasure_chest": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.417,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aether:icestone": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0735,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aether:golden_ring": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8913,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aether:golden_feather": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5916,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aether:ice_ring": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7362,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aether:present": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.9291,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aether:phoenix_bow": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4398,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aether:white_apple": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.0622,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aether:holy_sword": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.568,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aether:vampire_blade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6904,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "aether:lightning_sword": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1233,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  }
+ },
+ "human_notes": {
+  "entry": [
+   "Build a Nether-portal-shaped frame out of GLOWSTONE, then activate it with a minecraft:water_bucket instead of flint and steel. Corroborated by two videos.",
+   "sU7qsFUc0jw: 'I'd make this little glowstone portal here. I'd put down my bucket of water.' ae0hShtfkeY independently says the same - build the frame 'using a bright stone and a cloud of water instead of a stone of the obsidian' (a heavily accented transcription of glowstone + water replacing obsidian + flint and steel).",
+   "So the two swaps versus a Nether portal are: minecraft:glowstone for obsidian, and minecraft:water_bucket for the igniter. That is the fact a questbook needs.",
+   "Exact frame dimensions are NOT reliably captured - sU7qsFUc0jw only hedges that 'Aether portals can only be this size, like I remember back in the day'."
+  ],
+  "boss_order": [
+   "A THREE-DUNGEON LADDER, each boss dropping the key to the next tier. Source piJ3Fm_xiNA (a German showcase, transcribed roughly, so names are mangled but the structure is unambiguous).",
+   "1. BRONZE DUNGEON -> aether:slider. The guide's tactic: it is easy to dodge, and 'if you add damage to it, it increases its movement speed', so burst damage makes the fight harder, not easier. On death it drops aether:bronze_dungeon_key, which opens a treasure chest that appears directly UNDER the boss room.",
+   "Bronze loot named in the guide: aether:valkyrie_lance (very long reach), aether:lightning_knife (throwable, calls lightning where it lands), aether:flaming_sword, aether:phoenix_bow (ignites mobs), aether:hammer_of_kingbdogz (melee plus a ranged projectile) and aether:cloud_staff.",
+   "2. SILVER DUNGEON -> aether:valkyrie_queen. The dungeon floats in the sky and looks like an ancient Greek building, with mimic chests and passive-but-lethal aether:valkyrie mobs that only fight back if attacked.",
+   "GATE: the queen will not fight you until you collect TEN aether:victory_medal from killing ordinary valkyries and hand them over. On death she drops aether:silver_dungeon_key.",
+   "The guide explicitly advises doing the Bronze Dungeon FIRST and taking its loot in, because aether:valkyrie_lance's reach is a large advantage over vanilla gear for this fight - and to bring golden apples.",
+   "3. GOLD DUNGEON - aether:gold_dungeon_key exists in the jar and the silver key 'opens a more powerful gate with even stronger loot'. The guide does NOT describe the gold dungeon's boss fight, so aether:sun_spirit is present in the jar but its fight is NOT sourced here.",
+   "Silver loot named: aether:valkyrie_axe / aether:valkyrie_pickaxe and the rest of the valkyrie tools (greater reach), aether:holy_sword (extra damage to undead), and the valkyrie armour set."
+  ],
+  "order": [
+   "You arrive in the sky. Clouds are walkable and you take no fall damage landing on them, though you fall through the top block (sU7qsFUc0jw).",
+   "aether:ambrosium_shard is the basic resource and fuels the mod's altar; aether:ambrosium_torch is the local light source.",
+   "Ore progression runs through aether:ambrosium_ore and zanite up to gravitite: raw gravitite is ENCHANTED in the altar to make aether:enchanted_gravitite, which is what the aether:gravitite_chestplate tier is built from.",
+   "Do the Bronze Dungeon before the Silver Dungeon - the guide states this directly as a difficulty shortcut."
+  ],
+  "gates": [
+   "HARD GATE: aether:valkyrie_queen ignores you until you give her 10x aether:victory_medal farmed from ordinary aether:valkyrie mobs.",
+   "Each dungeon tier is locked behind the previous boss's key: aether:bronze_dungeon_key, then aether:silver_dungeon_key, then aether:gold_dungeon_key."
+  ],
+  "traps": [
+   "Falling off the edge of the Aether drops you back into the Overworld at your spawn point (sU7qsFUc0jw: 'if I jump down I end up in my spawn point').",
+   "Do NOT attack aether:valkyrie mobs casually - they are non-hostile but 'cause a lot of damage if you do not wear a strong armor'. The guide says it would not attack them without reason.",
+   "Silver Dungeon chests include mimics that imitate ordinary chests and attack.",
+   "Hitting aether:slider harder makes it FASTER - the one boss where more damage per hit is a downside."
+  ],
+  "signature": [
+   "aether:bronze_dungeon_key, aether:silver_dungeon_key, aether:gold_dungeon_key - the three keys ARE the progression.",
+   "aether:victory_medal - the ten-medal toll that gates the Valkyrie Queen.",
+   "aether:valkyrie_lance and the valkyrie tool set - the mod's signature long-reach weapons.",
+   "aether:enchanted_gravitite and the aether:gravitite_chestplate tier - the top armour material.",
+   "aether:phoenix_bow, aether:lightning_knife, aether:flaming_sword, aether:hammer_of_kingbdogz, aether:cloud_staff - the uncraftable dungeon-only weapons.",
+   "aether:ambrosium_shard - the first Aether resource a player picks up."
+  ]
+ }
+}

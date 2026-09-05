@@ -1,0 +1,128 @@
+{
+  "mod": "mysticalagriculture",
+  "verified_against": "MysticalAgriculture-1.20.1-7.0.24.jar",
+  "item_count_in_jar": 250,
+  "chain": [
+    {
+      "id": "mysticalagriculture:inferium_essence",
+      "title": "Inferium Essence",
+      "desc": "First base material: smelt Inferium Ore (spawns Y -32 to 64 in the overworld) or pick it up as a common mob drop."
+    },
+    {
+      "id": "mysticalagriculture:prosperity_shard",
+      "title": "Prosperity Shard",
+      "desc": "Second base material: smelt Prosperity Ore, which generates from Y 24 down to -60 in the overworld."
+    },
+    {
+      "id": "mysticalagriculture:inferium_seeds",
+      "title": "Inferium Seeds",
+      "desc": "Craft 8 Inferium Essence around Wheat Seeds; planting these makes Inferium fully renewable instead of mined."
+    },
+    {
+      "id": "mysticalagriculture:infusion_crystal",
+      "title": "Infusion Crystal",
+      "desc": "Craft 4 Prosperity Shards and 4 Inferium Essence around a diamond; a limited-durability catalyst for combining 4 essences into 1 of the next tier."
+    },
+    {
+      "id": "mysticalagriculture:infusion_altar",
+      "title": "Infusion Altar",
+      "desc": "Craft 2 gold ingots, 1 red wool and 4 stone; place it with 8 Infusion Pedestals (same materials) to form the multiblock that crafts resource seeds, activated by Wand or redstone."
+    },
+    {
+      "id": "mysticalagriculture:prosperity_seed_base",
+      "title": "Prosperity Seed Base",
+      "desc": "Craft 4 Prosperity Shards around Wheat Seeds; the center ingredient of every crafted resource seed."
+    },
+    {
+      "id": "mysticalagriculture:prudentium_essence",
+      "title": "Prudentium Essence",
+      "desc": "Tier 2 essence: craft 4 Inferium Essence around an Infusion Crystal."
+    },
+    {
+      "id": "mysticalagriculture:iron_seeds",
+      "title": "Iron Seeds",
+      "desc": "Representative resource seed: surround a Seed Base with iron ingots and the crop's tier essence (crafting grid or Infusion Altar) to grow iron for free."
+    },
+    {
+      "id": "mysticalagriculture:inferium_growth_accelerator",
+      "title": "Growth Accelerator",
+      "desc": "Craft 4 Inferium Essence, 4 stone and an Inferium Gemstone for 3 accelerators; stacked under farmland they add random growth ticks to the crop above."
+    },
+    {
+      "id": "mysticalagriculture:tertium_essence",
+      "title": "Tertium Essence",
+      "desc": "Tier 3 essence: craft 4 Prudentium Essence around an Infusion Crystal."
+    },
+    {
+      "id": "mysticalagriculture:imperium_essence",
+      "title": "Imperium Essence",
+      "desc": "Tier 4 essence: craft 4 Tertium Essence around an Infusion Crystal."
+    },
+    {
+      "id": "mysticalagriculture:supremium_essence",
+      "title": "Supremium Essence",
+      "desc": "Tier 5 essence: craft 4 Imperium Essence around an Infusion Crystal; unlocks the highest normal seed and gear tier."
+    },
+    {
+      "id": "mysticalagriculture:master_infusion_crystal",
+      "title": "Master Infusion Crystal",
+      "desc": "Craft 4 Prosperity Shards and 4 Supremium Essence around a Supremium Gemstone; an unbreakable Infusion Crystal for all future tier upgrades."
+    },
+    {
+      "id": "mysticalagriculture:soulstone",
+      "title": "Soulstone",
+      "desc": "Mine Soulstone veins in the Nether (Soulium Ore spawns inside them) and smelt the cobble; the stone of the mod's soul-tech branch."
+    },
+    {
+      "id": "mysticalagriculture:soulium_ingot",
+      "title": "Soulium Ingot",
+      "desc": "Craft a Prosperity Ingot (4 shards around an iron ingot) with 2 Soulium Dust smelted from Nether Soulium Ore."
+    },
+    {
+      "id": "mysticalagriculture:soulium_dagger",
+      "title": "Soulium Dagger",
+      "desc": "Craft a golden sword with 2 Soulium Ingots and 2 Soulium Dust; killing mobs with it fills Soul Jars with the souls needed for mob seeds."
+    },
+    {
+      "id": "mysticalagriculture:machine_frame",
+      "title": "Machine Frame",
+      "desc": "Craft 4 iron ingots, 4 redstone and stone; the base block of all Mystical Agriculture machines."
+    },
+    {
+      "id": "mysticalagriculture:harvester",
+      "title": "Harvester",
+      "desc": "Craft a Machine Frame with iron, 2 Soulium Ingots and 2 Diamond Scythes; a solid-fueled machine that auto-harvests and replants crops."
+    },
+    {
+      "id": "mysticalagriculture:tinkering_table",
+      "title": "Tinkering Table",
+      "desc": "Craft 2 Soulium Dust with 6 stone; used to socket Augments into essence tools and armor."
+    },
+    {
+      "id": "mysticalagriculture:supremium_ingot",
+      "title": "Supremium Ingot",
+      "desc": "Craft a Prosperity Ingot with 2 Supremium Essence; the material for tier 5 tools, armor and the upgrades fed into awakening."
+    },
+    {
+      "id": "mysticalagriculture:awakening_altar",
+      "title": "Awakening Altar",
+      "desc": "Craft 2 gold ingots, orange wool and 4 Soulstone; forms a multiblock with 4 Awakening Pedestals and 4 Essence Vessels that consumes Air, Earth, Water and Fire essences from elemental crops."
+    },
+    {
+      "id": "mysticalagriculture:cognizant_dust",
+      "title": "Cognizant Dust",
+      "desc": "Dropped by the Wither and Ender Dragon when killed with an essence weapon enchanted with Mystical Enlightenment; required for every awakening recipe."
+    },
+    {
+      "id": "mysticalagriculture:awakened_supremium_essence",
+      "title": "Awakened Supremium Essence",
+      "desc": "Awaken a Supremium Block on the altar with 4 Cognizant Dust and 10 of each elemental essence, then uncraft the block into 9 essence."
+    },
+    {
+      "id": "mysticalagriculture:awakened_supremium_ingot",
+      "title": "Awakened Supremium Ingot",
+      "desc": "Craft a Prosperity Ingot with 2 Awakened Supremium Essence; endgame material whose gear is finished on the Awakening Altar with 40 of each elemental essence per piece."
+    }
+  ],
+  "notes": "Verified against MysticalAgriculture-1.20.1-7.0.24.jar (Modrinth, latest 1.20.1). item_count_in_jar=250 is the intersection of item model stems with explicit item./block. lang keys; crop seeds and per-crop essences (410 seed recipe files, ~400 extra model stems) use dynamically generated names, so mysticalagriculture:inferium_seeds and mysticalagriculture:iron_seeds were instead verified via their item model files plus their recipe files (recipes/inferium_seeds.json, recipes/seed/crafting/iron.json) - both are real registered items. Deliberately omitted: all other per-resource seeds/essences, color/decor variants (soulstone brick set, witherproof blocks), per-tier duplicates of farmland/furnaces/watering cans/gear, and the soul-jar-hungry Soulium Spawner and Soul Extractor (optional side content); the Seed Reprocessor (iron + 2 Soulium Ingots + iron hoe around a Machine Frame, converts 1 spare seed into 2 of its essence) was trimmed to stay within the entry cap and could be swapped in for the Harvester. Elemental (air/earth/water/fire) crops are gated behind Agglomeratio materials (e.g. air_agglomeratio = glass bottle + gravel + dirt + clay) and feed the Awakening Altar via Essence Vessels. Recipe ingredient counts above are literal from the jar's recipe JSONs; seed recipes are conditional on config (seed_crafting_recipes_enabled / crop_enabled) but enabled by default. No custom dimensions and no kill-step entities registered by this mod (Wither/Ender Dragon are vanilla; kill:wither could be added by the integrator if desired, but cognizant_dust already covers that milestone as an item)."
+}

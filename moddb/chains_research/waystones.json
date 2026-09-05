@@ -1,0 +1,99 @@
+{
+ "mod": "waystones",
+ "verified_against": "waystones-forge-1.20.1-14.1.20.jar",
+ "item_count_in_jar": 32,
+ "chain": [
+  {
+   "id": "waystones:warp_dust",
+   "title": "Dust That Remembers Places",
+   "desc": "Grind an amethyst shard together with an ender pearl into warp dust, the raw reagent of every teleport in the mod."
+  },
+  {
+   "id": "waystones:warp_stone",
+   "title": "A Stone That Skips You Home",
+   "desc": "An emerald, amethyst shard and ender pearl make the reusable warp stone, which teleports you on a cooldown."
+  },
+  {
+   "id": "waystones:waystone",
+   "title": "Plant Your First Landmark",
+   "desc": "Stone bricks, obsidian and a warp stone build the waystone. Activate one and it joins your permanent travel list."
+  },
+  {
+   "id": "waystones:return_scroll",
+   "title": "The Way Back, On Paper",
+   "desc": "Paper, gold nuggets and purple dye make a reusable return scroll that always sends you to your bound waystone."
+  },
+  {
+   "id": "waystones:bound_scroll",
+   "title": "Tethered Parchment",
+   "desc": "Adding an ender pearl lets the bound scroll lock onto one chosen waystone and return there again and again."
+  },
+  {
+   "id": "waystones:warp_scroll",
+   "title": "One Leap, Then Ash",
+   "desc": "The warp scroll spends itself on a single trip to any waystone you have already discovered."
+  },
+  {
+   "id": "waystones:sharestone",
+   "title": "A Network Others Can Use",
+   "desc": "The sharestone links to every other colourless sharestone, letting a whole server hop between them."
+  },
+  {
+   "id": "waystones:red_sharestone",
+   "title": "Paint The Network Red",
+   "desc": "Dye a sharestone red and it will only connect to other red sharestones, carving a private line out of the shared network."
+  },
+  {
+   "id": "waystones:portstone",
+   "title": "The Public Directory",
+   "desc": "Polished andesite and a warp stone make the portstone: it lists every waystone you know but cannot be teleported to itself."
+  },
+  {
+   "id": "waystones:warp_plate",
+   "title": "Step On, Step Out",
+   "desc": "Warp dust, flint and stone bricks form a pressure-triggered plate that fires anything standing on it to a linked plate."
+  },
+  {
+   "id": "waystones:attuned_shard",
+   "title": "Tuning Fork For Two Plates",
+   "desc": "Flint and warp dust make the attuned shard; slot it into one warp plate, carry it to another, and the pair is linked."
+  },
+  {
+   "id": "waystones:crumbling_attuned_shard",
+   "title": "A Shard With One Trip Left",
+   "desc": "The cheap amethyst-and-pearl variant works exactly once before it is consumed on teleport."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "waystones:waystone",
+   "members": [
+    "waystones:mossy_waystone",
+    "waystones:sandy_waystone",
+    "waystones:deepslate_waystone",
+    "waystones:blackstone_waystone",
+    "waystones:end_stone_waystone"
+   ]
+  },
+  {
+   "hub": "waystones:sharestone",
+   "members": [
+    "waystones:white_sharestone",
+    "waystones:orange_sharestone",
+    "waystones:magenta_sharestone",
+    "waystones:light_blue_sharestone",
+    "waystones:yellow_sharestone",
+    "waystones:lime_sharestone",
+    "waystones:pink_sharestone",
+    "waystones:gray_sharestone",
+    "waystones:light_gray_sharestone",
+    "waystones:cyan_sharestone",
+    "waystones:purple_sharestone",
+    "waystones:blue_sharestone",
+    "waystones:brown_sharestone",
+    "waystones:green_sharestone"
+   ]
+  }
+ ],
+ "notes": "Small mod: the jar holds only 34 recipes and 32 lang-verified item ids, so a 12-step chain covers it end to end. Recipe spine verified from data/waystones/recipes/: warp_dust = amethyst_shard + ender_pearl; warp_stone = #balm:emeralds + amethyst_shard + ender_pearl; every waystone/sharestone/portstone variant consumes a warp_stone; warp_plate and attuned_shard consume warp_dust; crumbling_attuned_shard = amethyst_shard + ender_pearl (no warp_dust, hence the cheaper single-use tier). Scroll ladder verified: return_scroll (paper + gold nuggets + purple dye) -> bound_scroll and warp_scroll both add an ender_pearl. Note the jar's recipes reference #balm:* dye/emerald/gold_nugget tags, so Balm is a hard dependency for crafting anything here. MODDB CONFLICT: moddb puts waystones:red_sharestone at pos 0.0 and waystones:waystone at 0.205, ahead of warp_dust/warp_stone at 0.5. That reflects packs handing out found-in-world waystones as an opening quest; the crafting graph strictly requires warp_dust -> warp_stone first, and that order is used here. moddb otherwise agrees: sharestone 0.259 < portstone 0.554 < warp_plate 0.661 < warp_scroll 0.857. DROPPED: waystones:black_sharestone was cut only to keep the sharestone wheel at the 14-member cap; the id is valid. mossy_waystone also has a second recipe (vine + waystone) besides the warp_stone one. ID VERIFICATION: every id in this file was set-membership-checked against the jar; nothing was dropped."
+}

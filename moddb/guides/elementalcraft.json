@@ -1,0 +1,265 @@
+{
+ "mod": "elementalcraft",
+ "ids_in_jar": 211,
+ "videos": [
+  {
+   "id": "2TvXaqLBbSA",
+   "title": "Elemental Craft [Full Modshowcase] (1.16.3/1.16.4 Forge)",
+   "channel": "yorkmouse",
+   "views": 88308,
+   "duration": 563,
+   "chars": 8842
+  },
+  {
+   "id": "KYvbeZvik0Q",
+   "title": "The Ultimate Guide to Elemental Craft",
+   "channel": "JaviHerobrine",
+   "views": 7398,
+   "duration": 2133,
+   "chars": 28281
+  }
+ ],
+ "items": {
+  "elementalcraft:infuser": {
+   "mentions": 19,
+   "videos": 2,
+   "first_at": 0.1623,
+   "praise": 10,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "elementalcraft:source": {
+   "mentions": 14,
+   "videos": 2,
+   "first_at": 0.1045,
+   "praise": 10,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "elementalcraft:focus": {
+   "mentions": 9,
+   "videos": 2,
+   "first_at": 0.7668,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 3
+  },
+  "elementalcraft:container": {
+   "mentions": 7,
+   "videos": 2,
+   "first_at": 0.3665,
+   "praise": 10,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "elementalcraft:extractor": {
+   "mentions": 6,
+   "videos": 2,
+   "first_at": 0.1326,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "elementalcraft:scroll": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.8265,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "elementalcraft:aircrystal": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.3428,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "elementalcraft:firecrystal": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.4808,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "elementalcraft:fire_lens": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.4172,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "elementalcraft:diffuser": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3494,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "elementalcraft:sorter": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.3067,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "elementalcraft:small_container": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.3635,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "elementalcraft:whiterock": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.411,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "elementalcraft:inscriber": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.6755,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "elementalcraft:evaporator": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1142,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "elementalcraft:spell_desk": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.8192,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "elementalcraft:instrument_retriever": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.835,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "elementalcraft:fireblastfurnace": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8433,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "elementalcraft:purerock": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8698,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "elementalcraft:binder": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4538,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "elementalcraft:elementpipe": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.237,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   "Find the ore before anything else. Guide's literal opening instruction: 'The first thing you want to find is the inert crystal.' elementalcraft:inert_crystal_ore / elementalcraft:deepslate_inert_crystal_ore -> elementalcraft:inert_crystal. Guide calls it 'one of the first two things you need in the mod'.",
+   "The other of those first two things is a source of element. Elements are drawn from world sources (elementalcraft:source) via elementalcraft:elementpipe into a holder - nothing works without a live element supply.",
+   "First machine is the elementalcraft:infuser. Guide spends its whole early section on it: 'you've just clicked on the element infuser... the infuser will put the stone in with the earth element'.",
+   "Pipes are a three-step ladder the guide calls out explicitly: 'The book talks about three levels, broken, normal and improved' -> elementalcraft:elementpipe_impaired -> elementalcraft:elementpipe -> elementalcraft:elementpipe_improved.",
+   "Infusion produces the mod's basic materials: elementalcraft:drenched_iron_ingot (water infusion on iron) and elementalcraft:burnt_glass (fire infusion on glass) are the two first-tier outputs, confirmed in the jar's recipe files.",
+   "Then binding, which is the tier above infusion and needs far more element: elementalcraft:swift_alloy_ingot (air, 1250) then elementalcraft:fireite_ingot (fire, 30000).",
+   "The elementalcraft:pureinfuser is the mid/late gate and is a MULTIBLOCK. Guide: 'the pure infuser, which technically is a multiblock' - it needs all four elementalcraft:pedestal_fire, elementalcraft:pedestal_water, elementalcraft:pedestal_earth, elementalcraft:pedestal_air around it, and each pedestal is itself a 30000-element binding recipe.",
+   "elementalcraft:purecrystal comes out of the pure infuser and unlocks the last tier of machines: elementalcraft:purifier and elementalcraft:spell_book.",
+   "Shrines (elementalcraft:shrinebase + elementalcraft:groveshrine, elementalcraft:oreshrine, elementalcraft:lavashrine, elementalcraft:growthshrine ...) plus elementalcraft:shrine_upgrade_capacity and the rest of the upgrade family are the automation layer and come after the machine chain works."
+  ],
+  "gates": [
+   "The whole machine tree is gated by three crystal grades, and this is visible in the jar's own unlock conditions rather than in any video: elementalcraft:contained_crystal unlocks elementalcraft:infuser, elementalcraft:binder and elementalcraft:extractor; elementalcraft:strongly_contained_crystal unlocks elementalcraft:crystallizer and elementalcraft:pureinfuser; elementalcraft:purecrystal unlocks elementalcraft:purifier and elementalcraft:spell_book.",
+   "Every binding and infusion recipe carries an element_type AND an element_amount, so a recipe is gated on having the RIGHT element in sufficient quantity, not just the ingredients. elementalcraft:fireite_ingot needs 30000 fire; elementalcraft:groveshrine needs only 2500 water.",
+   "The pure infuser cannot run without all four elemental pedestals built, which makes it a four-element gate rather than a single-element one.",
+   "Gem quality is a three-step gate on tools and jewels: elementalcraft:crude_fire_gem -> elementalcraft:fine_fire_gem -> elementalcraft:pristine_fire_gem (and the same for earth, water, air). The guide mentions choosing 'fine, pristine, crude' when following a scroll recipe.",
+   "elementalcraft:spell_book and elementalcraft:staff sit behind purecrystal, so the mod's magic-facing content is late, not early."
+  ],
+  "mechanics": [
+   "Four elements - fire, water, earth, air - are a FLUID, not an item. They are gathered from world sources, piped, stored in elementalcraft:element_holder_fire / _water / _earth / _air and elementalcraft:reservoir_fire / elementalcraft:reservoir_water / elementalcraft:reservoir_earth / elementalcraft:reservoir_air, and spent by recipes. This is the mod's whole identity and no item-chain quest captures it.",
+   "Two recipe verbs: infusion (one input item + one element type, cheap) and binding (several inputs + one element type, expensive). elementalcraft:pureinfuser adds a third that consumes all four at once.",
+   "Sources can be farmed rather than found: elementalcraft:natural_air_source_seed / elementalcraft:artificial_air_source_seed (and the other three elements) plus elementalcraft:source_breeder mean element supply is a production problem.",
+   "elementalcraft:rune + elementalcraft:minor_rune_slate / elementalcraft:major_rune_slate are the global modifier system - runes buff the machines rather than the player.",
+   "elementalcraft:inscriber, elementalcraft:spell_desk, elementalcraft:scroll and elementalcraft:jewel / elementalcraft:unset_jewel form the gear-customisation side.",
+   "elementalcraft:purerock and elementalcraft:whiterock are the mod's building stone, produced by the same machines - a lot of jar ids are decorative variants and should not be mistaken for progression."
+  ],
+  "traps": [
+   "Do not treat the many *shrine_upgrade_* ids as progression steps - there are ~25 of them and they are sidegrades chosen per shrine.",
+   "Do not build quests around the ~40 whiterock/purerock slab/stair/wall ids; they are decoration and inflate the id count.",
+   "The guide is a dubbed translation and mangles nearly every proper noun ('Murni' for pure, 'eye' for gem). Item names taken from that audio alone are unreliable - everything in these notes was checked against elementalcraft-1.20.1-6.0.1.jar."
+  ],
+  "signature": [
+   "elementalcraft:inert_crystal",
+   "elementalcraft:infuser",
+   "elementalcraft:binder",
+   "elementalcraft:pureinfuser",
+   "elementalcraft:purecrystal",
+   "elementalcraft:elementpipe",
+   "elementalcraft:firecrystal",
+   "elementalcraft:watercrystal",
+   "elementalcraft:earthcrystal",
+   "elementalcraft:aircrystal",
+   "elementalcraft:drenched_iron_ingot",
+   "elementalcraft:swift_alloy_ingot",
+   "elementalcraft:fireite_ingot",
+   "elementalcraft:spell_book",
+   "elementalcraft:staff",
+   "elementalcraft:groveshrine"
+  ],
+  "pack_status": "NOT INSTALLED in CREATE FEMBY. Analysed against elementalcraft-1.20.1-6.0.1.jar (Forge/NeoForge) fetched to scratch from Modrinth."
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "mod": "farmersdelight",
+ "verified_against": "FarmersDelight-1.20.1-1.3.2.jar",
+ "item_count_in_jar": 237,
+ "chain": [
+  {
+   "id": "farmersdelight:flint_knife",
+   "title": "First Blade in the Kitchen",
+   "desc": "Flint over a stick. The starter knife: it cuts on the board, harvests wild crops whole, and slices meat into cuts that cook faster."
+  },
+  {
+   "id": "farmersdelight:iron_knife",
+   "title": "Steady Hands",
+   "desc": "An iron ingot over a stick. Durable enough to carry through the whole cutting-board and wild-crop loop without a resupply."
+  },
+  {
+   "id": "farmersdelight:cooking_pot",
+   "title": "The Pot That Simmers",
+   "desc": "Bricks, iron, a wooden shovel and a water bucket. Set it on any heat source and it turns raw ingredients into bowls of stew unattended."
+  },
+  {
+   "id": "farmersdelight:skillet",
+   "title": "Fast Fire",
+   "desc": "Iron ingots over a brick handle. It pan-fries on a heat block or, held in hand over a campfire, cooks a single item while you travel."
+  },
+  {
+   "id": "farmersdelight:cutting_board",
+   "title": "Where Everything Gets Split",
+   "desc": "Planks over a stick. Place an item on it, strike with a knife or axe, and it yields cuts, leaves, bark and slices vanilla crafting cannot."
+  },
+  {
+   "id": "farmersdelight:tree_bark",
+   "title": "Stripping the Trunk",
+   "desc": "Strike any log on the cutting board with an axe. It strips the log and drops bark, which also folds back into paper three at a time."
+  },
+  {
+   "id": "farmersdelight:stove",
+   "title": "The Hearth Proper",
+   "desc": "A campfire above bricks, wrapped in iron. It cooks six items at once and heats pots and skillets standing on top of it."
+  },
+  {
+   "id": "farmersdelight:straw",
+   "title": "Threshing the Harvest",
+   "desc": "Cut rice panicles or wild rice with a knife and straw falls out alongside the grain; bale it for storage or unbale it again."
+  },
+  {
+   "id": "farmersdelight:canvas",
+   "title": "Woven from Chaff",
+   "desc": "Four straw in a square. This is the mod's cloth, and it becomes baskets, rugs, tatami, signs, paintings and scaffolding."
+  },
+  {
+   "id": "farmersdelight:rope",
+   "title": "A Line of Twisted Straw",
+   "desc": "Three straw in a column. Climbable, extendable downward, and the trellis that tomato vines grow along."
+  },
+  {
+   "id": "farmersdelight:wooden_basket",
+   "title": "The Hopper That Isn't",
+   "desc": "Canvas walls on a stick frame. It pulls items in from above and pushes them out its facing side without any redstone at all."
+  },
+  {
+   "id": "farmersdelight:organic_compost",
+   "title": "Feeding the Ground",
+   "desc": "Dirt, straw and bone meal bound with tree bark or rotten flesh. Placed on the ground it slowly converts neighbouring dirt into rich soil."
+  },
+  {
+   "id": "farmersdelight:rich_soil",
+   "title": "Ground That Gives Back",
+   "desc": "Dark crumbling earth left behind by organic compost. Crops on it grow faster, sometimes skip a stage outright, and never need tilling to stay moist."
+  },
+  {
+   "id": "farmersdelight:rice",
+   "title": "Paddy Work",
+   "desc": "Plant rice in shallow water over farmland, then cut the grown panicles with a knife for grain and straw both."
+  },
+  {
+   "id": "farmersdelight:cabbage",
+   "title": "Leaf by Leaf",
+   "desc": "Knife the wild cabbages found in plains for seeds. A grown cabbage cuts into leaves, and two leaves press back into a whole head."
+  },
+  {
+   "id": "farmersdelight:onion",
+   "title": "Pulled from the Roots",
+   "desc": "Cut wild onions in forests to get an onion, which replants directly with no separate seed item in between."
+  },
+  {
+   "id": "farmersdelight:tomato",
+   "title": "Vines on the Line",
+   "desc": "Cut wild tomato shrubs for seeds, then grow the vines up a rope trellis for a second harvest layer above the farmland."
+  },
+  {
+   "id": "farmersdelight:tomato_sauce",
+   "title": "Reduced and Simmered",
+   "desc": "Two tomatoes in the cooking pot, no bowl consumed. It is the base of pasta, fish stew and every red dish in the book."
+  },
+  {
+   "id": "farmersdelight:wheat_dough",
+   "title": "Kneaded",
+   "desc": "Three wheat with an egg, or wheat and water. It fills the forge:dough tag shared with Create, so the two mods feed each other here."
+  },
+  {
+   "id": "farmersdelight:raw_pasta",
+   "title": "Cut into Ribbons",
+   "desc": "Strike wheat dough on the cutting board with a knife. Pasta is the backbone of noodle soup and both meatball dishes."
+  },
+  {
+   "id": "farmersdelight:pie_crust",
+   "title": "The Shell Before the Filling",
+   "desc": "Wheat around milk, or three wheat flour mixed with milk when Create is installed. Every pie in the mod starts here."
+  },
+  {
+   "id": "farmersdelight:pasta_with_meatballs",
+   "title": "Sunday Dinner",
+   "desc": "Minced beef, pasta and tomato sauce in the cooking pot; the beef comes from a knife on the cutting board, not the crafting grid."
+  },
+  {
+   "id": "farmersdelight:stuffed_pumpkin_block",
+   "title": "A Feast in a Gourd",
+   "desc": "Rice, onion, mushroom, potato, berries and vegetables cooked into a whole pumpkin. Placed down, it serves several players from one block."
+  },
+  {
+   "id": "farmersdelight:rice_roll_medley_block",
+   "title": "The Chef's Platter",
+   "desc": "Kelp roll slices, salmon rolls and cod rolls arranged in a bowl. The most ingredient-hungry dish in the mod and its natural capstone."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "farmersdelight:tomato_crate",
+   "members": [
+    "farmersdelight:cabbage_crate",
+    "farmersdelight:onion_crate",
+    "farmersdelight:carrot_crate",
+    "farmersdelight:potato_crate",
+    "farmersdelight:beetroot_crate",
+    "farmersdelight:rice_bag",
+    "farmersdelight:rice_bale",
+    "farmersdelight:straw_bale"
+   ]
+  },
+  {
+   "hub": "farmersdelight:roast_chicken_block",
+   "members": [
+    "farmersdelight:honey_glazed_ham_block",
+    "farmersdelight:shepherds_pie_block",
+    "farmersdelight:stuffed_pumpkin_block",
+    "farmersdelight:rice_roll_medley_block",
+    "farmersdelight:gleaming_salad_block"
+   ]
+  },
+  {
+   "hub": "farmersdelight:sweet_berry_cheesecake",
+   "members": [
+    "farmersdelight:apple_pie",
+    "farmersdelight:chocolate_pie",
+    "farmersdelight:honey_cookie",
+    "farmersdelight:sweet_berry_cookie",
+    "farmersdelight:melon_popsicle",
+    "farmersdelight:glow_berry_custard",
+    "farmersdelight:hot_cocoa",
+    "farmersdelight:apple_cider",
+    "farmersdelight:melon_juice"
+   ]
+  }
+ ],
+ "notes": "Verified against FarmersDelight-1.20.1-1.3.2.jar. Every chain and collection id resolves to assets/farmersdelight/models/item/<id>.json. Recipe sources read: data/farmersdelight/recipes/*.json plus recipes/cutting/*, recipes/cooking/*, recipes/food/* and recipes/integration/*. Mechanics confirmed from the data and used in the descriptions: tree_bark comes only from recipes/cutting/<wood>_log.json (axe on the cutting board, never a grid recipe); raw_pasta comes from recipes/cutting/tag_dough.json (knife on anything in forge:dough); cabbage, onion and tomato all start by knifing wild_cabbages / wild_onions / wild_tomatoes in the world; rich_soil has NO crafting recipe at all - only loot_tables/blocks/rich_soil.json and advancements/main/get_rich_soil.json exist, because it is produced in-world by placed organic_compost, so that chain entry must be treated as an in-world objective rather than a craft. PACK CONSENSUS CONFLICT: moddb lists farmersdelight:basket (12 packs, pos 0.257) but that id DOES NOT EXIST in 1.3.2. The item was split and renamed to farmersdelight:wooden_basket (display name is still 'Basket') and farmersdelight:bamboo_basket. The chain uses farmersdelight:wooden_basket; a generator copying the raw consensus id would emit a broken task. This is version drift in the harvested packs, not a design disagreement. Consensus ordering was otherwise followed: flint_knife (pos 0.000) then iron_knife (0.071) as the chain head, and the straw / canvas / organic_compost / rice cluster (0.226-0.234) as the mid-chain farming loop. The brief's requested order (knife, cooking pot, skillet, cutting board, stove) was kept even though the recipes make cutting_board the cheapest of the five (planks + stick) and moddb places it later at 0.222 with 27 packs - the single most common Farmer's Delight quest in the corpus. Consensus items left out of the spine but verified present and safe as side quests: honey_cookie, golden_knife, diamond_knife, melon_popsicle, brown_mushroom_colony, barbecue_stick, sweet_berry_cookie, kelp_roll, cod_roll, fried_egg, chocolate_pie_slice, canvas_rug, honey_glazed_ham, cabbage_seeds, beetroot_crate. DROPPED: none - every id in this file verified."
+}

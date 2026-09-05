@@ -1,0 +1,166 @@
+{
+ "mod": "create",
+ "verified_against": "create-1.20.1-6.0.8.jar",
+ "item_count_in_jar": 993,
+ "chain": [
+  {
+   "id": "create:andesite_alloy",
+   "title": "The First Alloy",
+   "desc": "Four andesite ringed around an iron or zinc nugget; every kinetic component in the mod traces back to this one slab."
+  },
+  {
+   "id": "create:shaft",
+   "title": "Turning Point",
+   "desc": "Two andesite alloy stacked in a column yield six shafts, the plain rods that carry rotation from block to block."
+  },
+  {
+   "id": "create:cogwheel",
+   "title": "Teeth That Bite",
+   "desc": "A shaft surrounded by planks. Cogs mesh side by side, or diagonally onto a large cogwheel to trade speed for reach."
+  },
+  {
+   "id": "create:water_wheel",
+   "title": "The River Pays Rent",
+   "desc": "A ring of planks around a shaft. Set it in flowing water and it turns forever with no fuel and a generous stress budget."
+  },
+  {
+   "id": "create:wrench",
+   "title": "The Engineer's Thumb",
+   "desc": "A cogwheel, a gold plate and a wooden rod. Rotates placed kinetics, dismantles them intact, and shows block orientation at a glance."
+  },
+  {
+   "id": "create:goggles",
+   "title": "Seeing the Stress",
+   "desc": "Glass, gold plates and string. Worn on the head they overlay stress and speed readouts on every kinetic block you look at."
+  },
+  {
+   "id": "create:andesite_casing",
+   "title": "Wrapped in Grey",
+   "desc": "Right-click any stripped log or stripped wood with andesite alloy; the block takes the casing instantly, no crafting grid needed."
+  },
+  {
+   "id": "create:millstone",
+   "title": "Stone That Chews",
+   "desc": "A cogwheel over stone over andesite casing. The cheapest grinder in the mod, fed by hand or hopper and turned by any rotation at all."
+  },
+  {
+   "id": "create:mechanical_press",
+   "title": "The Hammer Falls",
+   "desc": "Andesite casing, a block of iron and a shaft. It stamps ingots into sheets and compacts whatever sits in a basin below it."
+  },
+  {
+   "id": "create:belt_connector",
+   "title": "Kelp and Motion",
+   "desc": "Two dried kelp in a column make a belt. Click one shaft, then another in line, and the belt spans between them carrying items and rotation."
+  },
+  {
+   "id": "create:mechanical_drill",
+   "title": "Boring Through",
+   "desc": "Andesite alloy, andesite casing and iron. Bolted to a moving contraption it chews the stone ahead of the machine instead of stopping it."
+  },
+  {
+   "id": "create:mechanical_saw",
+   "title": "The Patient Blade",
+   "desc": "Iron plates, iron ingots and andesite casing. Upright it cuts logs into planks and strips; laid flat on a contraption it fells whole trees."
+  },
+  {
+   "id": "create:encased_fan",
+   "title": "Wind in a Box",
+   "desc": "Andesite casing, a propeller and a shaft. Aim it through fire, water, lava or ice and the airflow smelts, washes, smokes or freezes what passes."
+  },
+  {
+   "id": "create:blaze_burner",
+   "title": "A Captive Flame",
+   "desc": "Craft the empty burner from netherrack and iron plates, then trap a blaze inside. It heats basins above it, and blaze cake drives it to superheated."
+  },
+  {
+   "id": "create:mechanical_mixer",
+   "title": "Stirring the Pot",
+   "desc": "Andesite casing, a whisk and a cogwheel, hung one block above a basin. With heat underneath it runs every mixing recipe in the mod."
+  },
+  {
+   "id": "create:zinc_ingot",
+   "title": "The Second Metal",
+   "desc": "Zinc ore hides in shallow stone. Smelt the raw chunks, or crush them in a millstone first to double the yield."
+  },
+  {
+   "id": "create:brass_ingot",
+   "title": "Copper Weds Zinc",
+   "desc": "Mix one copper and one zinc ingot in a heated basin. Nothing in Create's second tier moves without it."
+  },
+  {
+   "id": "create:brass_casing",
+   "title": "Wrapped in Gold",
+   "desc": "Right-click stripped log or wood with a brass ingot. It is the shell of every smart, filtered, logic-bearing machine the mod ships."
+  },
+  {
+   "id": "create:polished_rose_quartz",
+   "title": "Red Glass, Patiently Rubbed",
+   "desc": "Craft rose quartz from nether quartz and eight redstone, then polish it with sand paper by hand or on a depot under a deployer."
+  },
+  {
+   "id": "create:electron_tube",
+   "title": "Thinking in Redstone",
+   "desc": "Polished rose quartz set between iron plates. This is the logic part gating deployers, brass tunnels, smart chutes and the mechanical crafter."
+  },
+  {
+   "id": "create:mechanical_crafter",
+   "title": "Automation Crafts Itself",
+   "desc": "Brass casing, a crafting table and an electron tube. Ring several together, point their arrows into a loop, and they assemble recipes unattended."
+  },
+  {
+   "id": "create:precision_mechanism",
+   "title": "The Sequenced Heart",
+   "desc": "A gold sheet on a depot, fed cogwheels, iron sheets and redstone across five deployer passes. The gate item for every advanced machine."
+  },
+  {
+   "id": "create:railway_casing",
+   "title": "Rails Get Serious",
+   "desc": "Brass casing right-clicked with an obsidian plate. Every station, signal, observer and control panel on the railway is built on this block."
+  },
+  {
+   "id": "create:track_station",
+   "title": "All Aboard",
+   "desc": "Train casing plus a compass. Place it beside laid track, name the stop, and assemble a carriage there to turn a contraption into a scheduled train."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "create:andesite_casing",
+   "members": [
+    "create:brass_casing",
+    "create:copper_casing",
+    "create:railway_casing",
+    "create:andesite_encased_shaft",
+    "create:brass_encased_shaft",
+    "create:encased_chain_drive",
+    "create:encased_fluid_pipe",
+    "create:metal_bracket"
+   ]
+  },
+  {
+   "hub": "create:copper_backtank",
+   "members": [
+    "create:copper_diving_helmet",
+    "create:copper_diving_boots",
+    "create:netherite_backtank",
+    "create:netherite_diving_helmet",
+    "create:netherite_diving_boots"
+   ]
+  },
+  {
+   "hub": "create:brass_sheet",
+   "members": [
+    "create:iron_sheet",
+    "create:golden_sheet",
+    "create:copper_sheet",
+    "create:sturdy_sheet",
+    "create:powdered_obsidian",
+    "create:wheat_flour",
+    "create:dough",
+    "create:cinder_flour"
+   ]
+  }
+ ],
+ "notes": "Verified against create-1.20.1-6.0.8.jar. Every chain and collection id is present as assets/create/models/item/<id>.json, except create:encased_fluid_pipe which is lang-only (block.create.encased_fluid_pipe) and is kept under the block-lang rule. Recipe sources read: data/create/recipes/crafting/{materials,kinetics,logistics,appliances}/*, item_application/* for all four casings (andesite/brass/copper/railway casings are right-click applications onto stripped logs or wood, NOT grid recipes), mixing/brass_ingot.json (copper + zinc in a heated basin - this is why blaze_burner and mechanical_mixer sit ahead of brass in the chain), sandpaper_polishing/rose_quartz.json, sequenced_assembly/precision_mechanism.json (gold sheet plus five deployer loops), and sequenced_assembly/track.json. Ponder: assets/create/ponder/ ships only bare .nbt scene layouts with no order index (scene registration lives in code), so no ponder-derived ordering was used; the sole ordering hint in assets is the single chapter texture 'basic_kinetics', which is consistent with shaft/cogwheel/water wheel being the first tier. PACK CONSENSUS vs RECIPES: moddb puts create:copper_diving_helmet at pos 0.092 and create:copper_backtank at pos 0.204 (19 packs each), i.e. the diving set as an early-game reward roughly level with andesite_casing (0.202, 36 packs), even though the backtank costs a full copper block plus andesite alloy and a shaft. Consensus was preferred over the recipe reading: the diving set is NOT pushed to the endgame, it is broken out as its own collection wheel so packs can gate it early. moddb also ranks create:shaft (0.098, 43 packs) and create:andesite_alloy (0.059, 39 packs) as the two most common Create quests overall, matching the chain head exactly. Consensus items left out of the 24-step spine because they are cosmetic or side branches (all verified present in the jar, safe as optional quests): white_table_cloth, red_table_cloth, red_sand_paper, andesite_door, brown_toolbox, item_hatch, white_postbox, builders_tea, crafting_blueprint, purple_seat, scorchia, sail_frame, bound_cardboard_block, cardboard_helmet, cardboard_sword, crushed_raw_iron, crushed_raw_gold. DROPPED: create:deforester - not in this jar (it is a Create: Above and Beyond item); no other candidate failed verification."
+}

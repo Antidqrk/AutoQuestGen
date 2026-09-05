@@ -1,0 +1,14 @@
+{
+  "mod": "betterstrongholds",
+  "verified_against": "YungsBetterStrongholds-1.20-Forge-4.0.3.jar",
+  "item_count_in_jar": 0,
+  "chain": [
+    {
+      "id": "structure:betterstrongholds:stronghold",
+      "title": "Follow the Eye",
+      "desc": "The mod's whole content: one rebuilt stronghold at the strongholds step, favouring mountains and badlands. Ten chest tables - armoury, common, crypt, grand_library, library_md, mess, prison_lg, trap, treasure and a joke cmd_yung chest that holds a single diamond sword."
+    }
+  ],
+  "collections": [],
+  "notes": "SHORT ON PURPOSE - THIS MOD HAS EXACTLY ONE STRUCTURE AND NO ITEMS, so the chain is one entry and is NOT padded. THE MOD ID IS betterstrongholds, NOT yungsbetterstrongholds (META-INF/mods.toml: modId betterstrongholds, version 1.20-Forge-4.0.3, minecraft [1.20,1.21), forge [46.0.2,), no fabric.mod.json). assets/betterstrongholds/ has no models/item, no blockstates and no item./block. lang keys, so item_count_in_jar is 0 and collections is empty. CONTENT: one structure, data/betterstrongholds/worldgen/structure/stronghold.json, type yungsapi:yung_jigsaw, assembled from 84 nbt pieces across structures/starts, hallways, hall_doorways, rooms, portal_rooms, stairs, statues, terminators and treasure. LOOT: 10 tables under data/betterstrongholds/loot_tables/chests/, and the nbt walk resolved 9 of them directly out of the raw NBT (only chests/library_md was not reached by the walk, though the file exists). Contents read from the json: chests/treasure is diamond, emerald, gold and lapis; chests/armoury carries full diamond armour and a diamond sword; chests/crypt and chests/trap both hold ender pearls; chests/prison_lg holds diamonds and emeralds behind iron bars; chests/cmd_yung contains exactly one entry, minecraft:diamond_sword, and is the author's signature chest. IMPORTANT FOR CHAIN PLACEMENT: the mod ships data/betterstrongholds/advancements/follow_ender_eye.json, which OVERRIDES vanilla's story/follow_ender_eye - so this structure sits exactly where the vanilla stronghold beat sits in a progression, not somewhere new. NOTE THE LOADER THRESHOLD: autoquestgen.py's _load_researched_chains only keeps a curated chain of 4 or more rows, so this one-row file will be skipped by that path. It is still correct to record - the generator's own structure_quests() reads betterstrongholds:stronghold straight out of the jar scan, and this file documents the loot evidence behind it. No kill: entries (no entity lang keys), no dim: entries (no dimension files). ID FORM: 'structure:' + fully namespaced. Requires yungsapi."
+}

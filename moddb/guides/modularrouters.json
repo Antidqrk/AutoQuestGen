@@ -1,0 +1,452 @@
+{
+ "mod": "modularrouters",
+ "ids_in_jar": 54,
+ "videos": [
+  {
+   "id": "M77Jk_Jgc4M",
+   "title": "Practical MODULAR ROUTERS Mod Guide Minecraft 1.20.1",
+   "channel": "Jangro",
+   "views": 42788,
+   "duration": 756,
+   "chars": 13589
+  },
+  {
+   "id": "4El8z0NR40A",
+   "title": "The Complete Modular Routers Guide!",
+   "channel": "Hellfirem4ge",
+   "views": 107066,
+   "duration": 2031,
+   "chars": 31114
+  },
+  {
+   "id": "bdfKiz6PN7s",
+   "title": "Intro to: Modular Routers",
+   "channel": "Flanks",
+   "views": 49650,
+   "duration": 1241,
+   "chars": 14585
+  },
+  {
+   "id": "ARoZPH0ETOA",
+   "title": "Modular Routers Guide",
+   "channel": "Pilpoh",
+   "views": 29475,
+   "duration": 1981,
+   "chars": 29130
+  },
+  {
+   "id": "fsjIEeHrdZg",
+   "title": "Modular Routers - A Comprehensive Guide",
+   "channel": "Hazel Joy Minecraft",
+   "views": 67300,
+   "duration": 3311,
+   "chars": 50717
+  }
+ ],
+ "not_transcribed": [],
+ "items": {
+  "modularrouters:modular_router": {
+   "mentions": 85,
+   "videos": 5,
+   "first_at": 0.1235,
+   "praise": 25,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 6
+  },
+  "modularrouters:vacuum_module": {
+   "mentions": 27,
+   "videos": 5,
+   "first_at": 0.3703,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 1
+  },
+  "modularrouters:stack_upgrade": {
+   "mentions": 8,
+   "videos": 4,
+   "first_at": 0.5098,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:dropper_module": {
+   "mentions": 6,
+   "videos": 4,
+   "first_at": 0.4923,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:detector_module": {
+   "mentions": 6,
+   "videos": 4,
+   "first_at": 0.6468,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "modularrouters:breaker_module": {
+   "mentions": 18,
+   "videos": 3,
+   "first_at": 0.6414,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 1
+  },
+  "modularrouters:speed_upgrade": {
+   "mentions": 10,
+   "videos": 3,
+   "first_at": 0.2755,
+   "praise": 6,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "modularrouters:void_module": {
+   "mentions": 7,
+   "videos": 3,
+   "first_at": 0.6302,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:energy_upgrade": {
+   "mentions": 6,
+   "videos": 3,
+   "first_at": 0.7356,
+   "praise": 0,
+   "warn": 1,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "modularrouters:flinger_module": {
+   "mentions": 6,
+   "videos": 3,
+   "first_at": 0.3658,
+   "praise": 3,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:fluid_module": {
+   "mentions": 7,
+   "videos": 2,
+   "first_at": 0.7156,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:activator_module": {
+   "mentions": 5,
+   "videos": 2,
+   "first_at": 0.5235,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:placer_module": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.7459,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:stack_augment": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.7841,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:camouflage_upgrade": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.7407,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:distributor_module": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.6734,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "modularrouters:player_module": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.5768,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:energy_output_module": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.5021,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:security_upgrade": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.7659,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:blast_upgrade": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.7642,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:bulk_item_filter": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.4358,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:manual": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.6326,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:muffler_upgrade": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.5164,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:inspection_filter": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.7563,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:redstone_augment": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.8482,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:mod_filter": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.4387,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:fluid_upgrade": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.8574,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:mimic_augment": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.2068,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:pushing_augment": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.2551,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:blank_module": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5062,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:sync_upgrade": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.712,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:regulator_augment": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6431,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:augment_core": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5119,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "modularrouters:xp_vacuum_augment": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.5239,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   {
+    "note": "The router alone does NOTHING. Guides open by stressing it is an empty shell until a module is inserted - a recipe scan would treat the router as the deliverable when it is really the socket.",
+    "ids": [
+     "modularrouters:modular_router",
+     "modularrouters:blank_module"
+    ]
+   },
+   {
+    "note": "The router UI has three parts and guides teach them in order: buffer, modules, upgrades.",
+    "ids": [
+     "modularrouters:modular_router",
+     "modularrouters:blank_module",
+     "modularrouters:blank_upgrade"
+    ]
+   },
+   {
+    "note": "First useful modules are the simple environment pair - breaker and placer - before any logistics work.",
+    "ids": [
+     "modularrouters:breaker_module",
+     "modularrouters:placer_module",
+     "modularrouters:vacuum_module"
+    ]
+   }
+  ],
+  "tiers": [
+   {
+    "note": "Range-tiered modules are numbered rather than named: sender 1/2/3 and extruder 1/2 step up reach.",
+    "ids": [
+     "modularrouters:sender_module_1",
+     "modularrouters:sender_module_2",
+     "modularrouters:sender_module_3",
+     "modularrouters:extruder_module_1",
+     "modularrouters:extruder_module_2"
+    ]
+   },
+   {
+    "note": "Upgrades are the real scaling axis: speed, stack, range and energy stack in the upgrade slots.",
+    "ids": [
+     "modularrouters:speed_upgrade",
+     "modularrouters:stack_upgrade",
+     "modularrouters:range_up_augment",
+     "modularrouters:energy_upgrade",
+     "modularrouters:blank_upgrade"
+    ]
+   },
+   {
+    "note": "Filters tier by expressiveness: bulk item filter -> tag filter -> mod filter -> regex filter.",
+    "ids": [
+     "modularrouters:bulk_item_filter",
+     "modularrouters:tag_filter",
+     "modularrouters:mod_filter",
+     "modularrouters:regex_filter",
+     "modularrouters:inspection_filter"
+    ]
+   }
+  ],
+  "gates": [
+   {
+    "note": "Modules and upgrades are all built on blank stock, so the blank module/upgrade is the true unlock.",
+    "ids": [
+     "modularrouters:blank_module",
+     "modularrouters:blank_upgrade",
+     "modularrouters:augment_core"
+    ]
+   }
+  ],
+  "traps": [
+   {
+    "note": "Guides warn the void module silently destroys items and should be paired with a filter and a delay upgrade before being switched on.",
+    "ids": [
+     "modularrouters:void_module",
+     "modularrouters:pickup_delay_augment"
+    ]
+   }
+  ],
+  "signature": [
+   {
+    "note": "The headline claim is that the whole mod works WIRELESSLY WITH NO POWER, which is why guides recommend it as an early-game logistics answer. Energy modules exist but are optional extras, so a recipe/jar scan implying an energy dependency would be misleading.",
+    "ids": [
+     "modularrouters:modular_router",
+     "modularrouters:sender_module_1",
+     "modularrouters:breaker_module"
+    ]
+   },
+   {
+    "note": "Extruder module building a line of blocks is the demo every guide uses to sell the mod.",
+    "ids": [
+     "modularrouters:extruder_module_1",
+     "modularrouters:extruder_module_2",
+     "modularrouters:placer_module"
+    ]
+   }
+  ]
+ },
+ "transcript_profile": "whisper small, vad, beam 1, WITH the legacy Minecraft-vocabulary initial_prompt that was later removed from ytgrab as biasing. Counts may be slightly inflated toward mod-name-like words; human_notes quotes were read directly and are unaffected."
+}

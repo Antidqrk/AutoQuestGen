@@ -1,0 +1,172 @@
+{
+ "mod": "expatternprovider",
+ "verified_against": "ExtendedAE-1.20-1.4.18-forge.jar",
+ "item_count_in_jar": 57,
+ "parent_mod": "ae2",
+ "chain": [
+  {
+   "id": "expatternprovider:crystal_fixer",
+   "title": "Mending the Budding Block",
+   "desc": "Craft from certus quartz, iron and a fluix crystal; place it against a degraded Budding Certus Quartz block and it walks the block back up its tiers instead of letting it crumble."
+  },
+  {
+   "id": "expatternprovider:ingredient_buffer",
+   "title": "Ingredient Buffer",
+   "desc": "Craft from iron, Quartz Glass and a 1k Storage Component; a nine-slot holding tank that keeps a machine's inputs staged instead of jamming its inventory."
+  },
+  {
+   "id": "expatternprovider:ex_interface",
+   "title": "Interface, Widened",
+   "desc": "Craft from an ME Interface, Capacity Cards and a Logic Processor; nine configurable stock slots where AE2 gave you a handful."
+  },
+  {
+   "id": "expatternprovider:ex_pattern_provider",
+   "title": "Provider, Widened",
+   "desc": "Craft from an ME Pattern Provider, Capacity Cards and an Engineering Processor; it holds far more patterns per block and can push to a specific face."
+  },
+  {
+   "id": "expatternprovider:ex_import_bus_part",
+   "title": "Import Bus, Widened",
+   "desc": "Craft from an ME Import Bus, Speed Cards and a Calculation Processor; a bus that already contains its own acceleration."
+  },
+  {
+   "id": "expatternprovider:ex_export_bus_part",
+   "title": "Export Bus, Widened",
+   "desc": "Craft from an ME Export Bus, Speed Cards and a Calculation Processor; the outbound half of the same upgrade."
+  },
+  {
+   "id": "expatternprovider:precise_storage_bus",
+   "title": "Precise Storage Bus",
+   "desc": "Craft a Storage Bus between two Calculation Processors; it exposes exactly one slot of the attached inventory to the network instead of all of them."
+  },
+  {
+   "id": "expatternprovider:threshold_level_emitter",
+   "title": "Threshold Level Emitter",
+   "desc": "Craft from redstone torches, an ME Level Emitter and a Calculation Processor; it fires on a band between two counts rather than a single trip point."
+  },
+  {
+   "id": "expatternprovider:threshold_export_bus",
+   "title": "Export on a Threshold",
+   "desc": "Craft from an ME Level Emitter, a Logic Processor and an ME Export Bus; the bus only pushes while the target is below your set level, so it stops overfilling machines."
+  },
+  {
+   "id": "expatternprovider:tag_storage_bus",
+   "title": "Storage by Tag",
+   "desc": "Craft from an ME Storage Bus, a Logic Processor, redstone and a book; filter a whole item tag in one slot instead of listing members by hand."
+  },
+  {
+   "id": "expatternprovider:mod_storage_bus",
+   "title": "Storage by Mod",
+   "desc": "Craft from an ME Storage Bus, a Calculation Processor, redstone and a book; partition an entire mod's items into one drive with a single filter."
+  },
+  {
+   "id": "expatternprovider:active_formation_plane",
+   "title": "Active Formation Plane",
+   "desc": "Craft shapelessly from a Formation Plane, an ME Export Bus and an Engineering Processor; it pushes blocks out on its own instead of waiting to be fed."
+  },
+  {
+   "id": "expatternprovider:ex_drive",
+   "title": "Ten Bays Instead of Six",
+   "desc": "Craft from glass cable, an ME Drive, fluix dust and a Capacity Card; more cell bays in the same block footprint."
+  },
+  {
+   "id": "expatternprovider:ex_io_port",
+   "title": "IO Port, Widened",
+   "desc": "Craft from an ME IO Port, Speed Cards, a Logic Processor and an Engineering Processor; loads and empties a whole rack of cells far faster."
+  },
+  {
+   "id": "expatternprovider:ex_pattern_access_part",
+   "title": "Pattern Access, Widened",
+   "desc": "Craft from a Pattern Access Terminal, Logic Processors and a redstone lamp; it shows and edits every provider on the network with room to actually read them."
+  },
+  {
+   "id": "expatternprovider:ex_crafting_terminal",
+   "title": "The Everything Terminal",
+   "desc": "Craft shapelessly from a Crafting Terminal with an anvil, a smithing table, a stonecutter and an Engineering Processor; anvil, smithing and stonecutting recipes all resolve at the terminal."
+  },
+  {
+   "id": "expatternprovider:ex_molecular_assembler",
+   "title": "Assembler, Widened",
+   "desc": "Craft fluix gems around an ME Molecular Assembler with an Engineering Processor; the faster assembler and the building block of the crafting matrix."
+  },
+  {
+   "id": "expatternprovider:ex_inscriber",
+   "title": "Inscriber, Widened",
+   "desc": "Craft an ME Inscriber ring around Storage Buses and an ME Interface; it batches inscriber work instead of stamping one plate at a time."
+  },
+  {
+   "id": "expatternprovider:ex_charger",
+   "title": "Charger, Widened",
+   "desc": "Craft ME Chargers around Storage Buses and an ME Interface; charges a full stack of crystals or tools in one pass."
+  },
+  {
+   "id": "expatternprovider:circuit_cutter",
+   "title": "Circuit Slicer",
+   "desc": "Craft from iron, Quartz Glass, a stonecutter, a Sky Stone Tank and all four AE2 presses; it slices printed circuits four to nine at a time and ends the inscriber bottleneck for good."
+  },
+  {
+   "id": "expatternprovider:assembler_matrix_frame",
+   "title": "Assembler Matrix Frame",
+   "desc": "Craft from lapis, iron and Quartz Glass; the corner and edge piece of the Assembler Matrix multiblock."
+  },
+  {
+   "id": "expatternprovider:assembler_matrix_wall",
+   "title": "Assembler Matrix Wall",
+   "desc": "Craft from smart cable, a Logic Processor and quartz; the wall panel the functional cores are built from."
+  },
+  {
+   "id": "expatternprovider:assembler_matrix_crafter",
+   "title": "Assembler Matrix Craft Core",
+   "desc": "Craft two at a time from purple lumen paint balls, an Assembler Matrix Wall and Extended Molecular Assemblers; each core adds raw crafting throughput to the matrix."
+  },
+  {
+   "id": "expatternprovider:wireless_hub",
+   "title": "Wireless Hub",
+   "desc": "Craft from smart cable, a Quantum Link Chip, Engineering Processors and an ME Wireless Connector; it links distant subnetworks without a single cable run between them."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "expatternprovider:assembler_matrix_frame",
+   "members": [
+    "expatternprovider:assembler_matrix_wall",
+    "expatternprovider:assembler_matrix_glass",
+    "expatternprovider:assembler_matrix_crafter",
+    "expatternprovider:assembler_matrix_pattern",
+    "expatternprovider:assembler_matrix_speed",
+    "expatternprovider:ex_molecular_assembler"
+   ]
+  },
+  {
+   "hub": "expatternprovider:ex_interface",
+   "members": [
+    "expatternprovider:ex_interface_part",
+    "expatternprovider:ex_pattern_provider",
+    "expatternprovider:ex_pattern_provider_part",
+    "expatternprovider:oversize_interface",
+    "expatternprovider:oversize_interface_part",
+    "expatternprovider:interface_upgrade",
+    "expatternprovider:pattern_provider_upgrade",
+    "expatternprovider:io_bus_upgrade",
+    "expatternprovider:drive_upgrade",
+    "expatternprovider:pattern_terminal_upgrade"
+   ]
+  },
+  {
+   "hub": "expatternprovider:ex_export_bus_part",
+   "members": [
+    "expatternprovider:ex_import_bus_part",
+    "expatternprovider:precise_export_bus",
+    "expatternprovider:precise_storage_bus",
+    "expatternprovider:threshold_export_bus",
+    "expatternprovider:threshold_level_emitter",
+    "expatternprovider:tag_export_bus",
+    "expatternprovider:tag_storage_bus",
+    "expatternprovider:mod_export_bus",
+    "expatternprovider:mod_storage_bus",
+    "expatternprovider:active_formation_plane"
+   ]
+  }
+ ],
+ "notes": "Note the modid is expatternprovider, not extendedae - the Modrinth slug and display name (Extended AE) do not match the namespace, which is a common source of broken quest ids. Purely a widening addon: almost every item is a bigger, faster or smarter version of an AE2 device, so the chain is organised as parallel upgrade lanes (interfaces/providers, buses, terminals, machines) converging on the Assembler Matrix and Wireless Hub rather than as one linear ladder. ASSUMES FROM PARENT (ae2): ME Interface, Pattern Provider, Import/Export/Storage Bus, Formation Plane, Level Emitter, ME Drive, IO Port, Molecular Assembler, Inscriber, Charger, Crafting Terminal, Pattern Access Terminal, Wireless Receiver, Quantum Link Chip, Sky Stone Tank, Sky Dust, Quartz Glass, fluix gems and dust, lumen paint balls, all four processor presses, Logic/Calculation/Engineering Processors, Speed and Capacity Cards, cell_component_1k/16k, smart and glass cable. VERIFICATION: strict model/lang intersection, 57/57 matched, no widening needed. The single lang-only key (infinity_cell_name) is a display-name string for the NBT-tagged Infinity Cell, not a separate item. DROPPED - ProjectE-gated, present as items but with forge:conditional recipes that never fire without appliede/ProjectE: ex_emc_interface, ex_emc_interface_part, ex_emc_import_bus_part, ex_emc_export_bus_part, emc_interface_upgrade, emc_io_bus_upgrade. ALSO LEFT OUT OF THE SPINE (verified and craftable, just not ladder rungs): infinity_cell (an NBT-variant cell with two fixed recipes, water and cobblestone), package and me_packing_tape, pattern_modifier, caner, silicon_block, wireless_tool, wireless_advanced_tool, wireless_connect, wireless_ex_ct, wireless_ex_pat, and fishbig - a joke item crafted from eight pufferfish."
+}

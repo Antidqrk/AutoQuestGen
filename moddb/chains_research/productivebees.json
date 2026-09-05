@@ -1,0 +1,274 @@
+{
+ "mod": "productivebees",
+ "verified_against": "productivebees-1.20.1-12.6.0.jar",
+ "item_count_in_jar": 357,
+ "chain": [
+  {
+   "id": "productivebees:bee_cage",
+   "title": "Something To Carry A Bee In",
+   "desc": "Planks, a log, a honey block and a honey bottle. Right-click a bee and it goes in the cage; right-click a hive and it comes back out. Nothing else works until you can move bees."
+  },
+  {
+   "id": "productivebees:nest_locator",
+   "title": "Finding The Wild Ones",
+   "desc": "A note block, iron bars and a gold nugget. Points at the nearest nest of a chosen type, which matters because the mod hides its species in specific biomes and blocks."
+  },
+  {
+   "id": "productivebees:honey_treat",
+   "title": "Honey Treat",
+   "desc": "Honey block, honey bottle, honeycomb and pollen. Bees will follow it, breed on it and be pacified by it; this is the mod's universal bribe."
+  },
+  {
+   "id": "productivebees:jar_oak",
+   "title": "Bee Jar",
+   "desc": "Glass panes around a button. A reusable, stackable alternative to the cage that also shows you what is inside without opening anything."
+  },
+  {
+   "id": "productivebees:catcher",
+   "title": "Catcher",
+   "desc": "A dispenser, dirt and iron. Automates the cage: place it facing a hive and it bottles bees as they leave, which is how you farm a species instead of chasing it."
+  },
+  {
+   "id": "productivebees:feeder",
+   "title": "Feeding Slab",
+   "desc": "A chest on a smooth stone slab. Stock it with flowers or treats and the hive beside it stops needing you to remember it exists."
+  },
+  {
+   "id": "productivebees:advanced_oak_beehive",
+   "title": "Advanced Beehive",
+   "desc": "The real hive. Holds more bees than a vanilla one, shows you its contents, and unlike the vanilla hive it will accept the mod's own species."
+  },
+  {
+   "id": "productivebees:expansion_box_oak",
+   "title": "Expansion Box",
+   "desc": "Stack these on an advanced hive and its capacity grows with the tower. The cheapest throughput upgrade in the mod and the one people forget."
+  },
+  {
+   "id": "productivebees:configurable_comb",
+   "title": "Comb Block",
+   "desc": "What a productive bee builds inside its hive. One block, hundreds of flavours, each carrying whatever its species was bred to concentrate."
+  },
+  {
+   "id": "productivebees:centrifuge",
+   "title": "Centrifuge",
+   "desc": "A cauldron, a grindstone and iron. Hand-cranked, unpowered, and the only way to get the material back out of a comb. This is the mod's furnace."
+  },
+  {
+   "id": "productivebees:configurable_honeycomb",
+   "title": "Honeycomb",
+   "desc": "The loose comb the centrifuge and the hive both hand you. Its name is written at runtime from the species that made it, so no two read alike."
+  },
+  {
+   "id": "productivebees:honey_bucket",
+   "title": "Honey By The Bucket",
+   "desc": "Honey bottles poured together. Fluid honey is what the bottler and the generator both run on, so it is worth making early."
+  },
+  {
+   "id": "productivebees:upgrade_base",
+   "title": "Upgrade Base",
+   "desc": "A diamond, an emerald, sticks and a honey treat. Inert on its own; every machine upgrade in the mod is this with one more ingredient."
+  },
+  {
+   "id": "productivebees:incubator",
+   "title": "BaBee Incubator",
+   "desc": "Iron, a hay block and a daylight detector. Speeds baby bees to adulthood, which turns breeding from a waiting game into a production line."
+  },
+  {
+   "id": "productivebees:breeding_chamber",
+   "title": "Breeding Chamber",
+   "desc": "Iron, a rose bush and a breeding upgrade. Put two species in and it works out whether they have a child, which is the entire discovery loop."
+  },
+  {
+   "id": "productivebees:bottler",
+   "title": "Bottler",
+   "desc": "Glass, iron and a smooth stone slab. Turns the honey a hive produces into bottles automatically instead of you right-clicking it forever."
+  },
+  {
+   "id": "productivebees:honey_generator",
+   "title": "Honey Generator",
+   "desc": "A furnace, iron and a bucket of honey. Burns honey for Forge Energy, which is what the powered machines further down this list want."
+  },
+  {
+   "id": "productivebees:powered_centrifuge",
+   "title": "Powered Centrifuge",
+   "desc": "The hand-cranked centrifuge rebuilt to run on energy. Its recipe changes shape depending on which tech mod you have installed, but there is always one."
+  },
+  {
+   "id": "productivebees:gene_indexer",
+   "title": "Gene Indexer",
+   "desc": "Iron, a comparator and a workbench. Stores the gene samples a sampler upgrade pulls out of bees, so you can graft traits deliberately."
+  },
+  {
+   "id": "productivebees:amber",
+   "title": "Amber",
+   "desc": "Dug out of the world, occasionally with something very old inside it. The mod's one piece of worldgen and the start of its strangest branch."
+  },
+  {
+   "id": "productivebees:petrified_honey",
+   "title": "Petrified Honey",
+   "desc": "Honey that sat too long. A building block in fifteen colours, and the only decorative family the mod bothers with."
+  },
+  {
+   "id": "productivebees:draconic_dust",
+   "title": "Draconic Dust",
+   "desc": "Produced by a Draconic bee and nothing else. The point where the mod stops being about agriculture and starts being about the End."
+  },
+  {
+   "id": "productivebees:draconic_chunk",
+   "title": "Draconic Chunk",
+   "desc": "Nine draconic dust. Slow, because the bee that makes the dust is slow, and that is deliberate."
+  },
+  {
+   "id": "productivebees:inactive_dragon_egg",
+   "title": "Inactive Dragon Egg",
+   "desc": "A draconic chunk and eggs. A dragon egg you can make more than one of, which quietly solves a problem vanilla never intended to solve."
+  },
+  {
+   "id": "productivebees:heated_centrifuge",
+   "title": "Heated Centrifuge",
+   "desc": "A powered centrifuge, copper blocks and an inactive dragon egg. Fastest processing in the mod and the reason the egg branch is worth walking."
+  },
+  {
+   "id": "productivebees:dragon_egg_hive",
+   "title": "Dragon Egg Hive",
+   "desc": "A beehive, a dragon egg and another of itself. The endgame hive, and the only home the mod's rarest species will tolerate."
+  },
+  {
+   "id": "productivebees:treat_on_a_stick",
+   "title": "Treat On A Stick",
+   "desc": "A fishing rod and a honey treat. Lead bees around like a pig on a carrot; unnecessary, and immediately the thing everyone tries first."
+  },
+  {
+   "id": "productivebees:bee_bomb",
+   "title": "Bee Bomb",
+   "desc": "A caged bee, gunpowder and a bottle. Throw it and the bees come out where it lands. There is an angrier variant, and you will build that one too."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "productivebees:upgrade_base",
+   "members": [
+    "productivebees:upgrade_productivity",
+    "productivebees:upgrade_productivity_2",
+    "productivebees:upgrade_productivity_3",
+    "productivebees:upgrade_productivity_4",
+    "productivebees:upgrade_time",
+    "productivebees:upgrade_range",
+    "productivebees:upgrade_filter",
+    "productivebees:upgrade_breeding",
+    "productivebees:upgrade_not_babee",
+    "productivebees:upgrade_comb_block",
+    "productivebees:upgrade_anti_teleport",
+    "productivebees:upgrade_bee_sampler",
+    "productivebees:upgrade_simulator"
+   ]
+  },
+  {
+   "hub": "productivebees:nether_quartz_nest",
+   "members": [
+    "productivebees:obsidian_nest",
+    "productivebees:glowstone_nest",
+    "productivebees:end_stone_nest",
+    "productivebees:sand_nest",
+    "productivebees:gravel_nest",
+    "productivebees:stone_nest",
+    "productivebees:snow_nest",
+    "productivebees:slimy_nest",
+    "productivebees:soul_sand_nest",
+    "productivebees:sugar_cane_nest",
+    "productivebees:coarse_dirt_nest",
+    "productivebees:nether_brick_nest",
+    "productivebees:nether_gold_nest"
+   ]
+  },
+  {
+   "hub": "productivebees:oak_wood_nest",
+   "members": [
+    "productivebees:birch_wood_nest",
+    "productivebees:spruce_wood_nest",
+    "productivebees:jungle_wood_nest",
+    "productivebees:acacia_wood_nest",
+    "productivebees:dark_oak_wood_nest",
+    "productivebees:mangrove_wood_nest",
+    "productivebees:cherry_wood_nest",
+    "productivebees:bumble_bee_nest",
+    "productivebees:crimson_bee_nest",
+    "productivebees:warped_bee_nest",
+    "productivebees:sugarbag_nest"
+   ]
+  },
+  {
+   "hub": "productivebees:advanced_oak_beehive",
+   "members": [
+    "productivebees:advanced_birch_beehive",
+    "productivebees:advanced_spruce_beehive",
+    "productivebees:advanced_jungle_beehive",
+    "productivebees:advanced_acacia_beehive",
+    "productivebees:advanced_dark_oak_beehive",
+    "productivebees:advanced_mangrove_beehive",
+    "productivebees:advanced_cherry_beehive",
+    "productivebees:advanced_bamboo_beehive",
+    "productivebees:advanced_crimson_beehive",
+    "productivebees:advanced_warped_beehive"
+   ]
+  },
+  {
+   "hub": "productivebees:expansion_box_oak",
+   "members": [
+    "productivebees:expansion_box_birch",
+    "productivebees:expansion_box_spruce",
+    "productivebees:expansion_box_jungle",
+    "productivebees:expansion_box_acacia",
+    "productivebees:expansion_box_dark_oak",
+    "productivebees:expansion_box_mangrove",
+    "productivebees:expansion_box_cherry",
+    "productivebees:expansion_box_bamboo",
+    "productivebees:expansion_box_crimson",
+    "productivebees:expansion_box_warped"
+   ]
+  },
+  {
+   "hub": "productivebees:petrified_honey",
+   "members": [
+    "productivebees:black_petrified_honey",
+    "productivebees:blue_petrified_honey",
+    "productivebees:brown_petrified_honey",
+    "productivebees:cyan_petrified_honey",
+    "productivebees:gray_petrified_honey",
+    "productivebees:green_petrified_honey",
+    "productivebees:light_blue_petrified_honey",
+    "productivebees:light_gray_petrified_honey",
+    "productivebees:lime_petrified_honey",
+    "productivebees:magenta_petrified_honey",
+    "productivebees:orange_petrified_honey",
+    "productivebees:pink_petrified_honey",
+    "productivebees:purple_petrified_honey",
+    "productivebees:red_petrified_honey"
+   ]
+  },
+  {
+   "hub": "productivebees:configurable_comb",
+   "members": [
+    "productivebees:comb_powdery",
+    "productivebees:comb_ghostly",
+    "productivebees:comb_milky",
+    "productivebees:honeycomb_powdery",
+    "productivebees:honeycomb_ghostly",
+    "productivebees:honeycomb_milky",
+    "productivebees:sugarbag_honeycomb"
+   ]
+  },
+  {
+   "hub": "productivebees:bee_cage",
+   "members": [
+    "productivebees:sturdy_bee_cage",
+    "productivebees:bee_bomb_angry",
+    "productivebees:milk_bottle",
+    "productivebees:quartz_netherrack",
+    "productivebees:bamboo_hive",
+    "productivebees:wax_block"
+   ]
+  }
+ ],
+ "notes": "Verified against productivebees-1.20.1-12.6.0.jar from Modrinth project 'productivebees'; META-INF/mods.toml gives modLoader='javafml', modId='productivebees', version='1.20.1-12.6.0', minecraft versionRange='[1.20,1.21)' and forge versionRange='[46,)' - a native 1.20.1 Forge build. It ships one JarInJar library, META-INF/jarjar/productivelib-1.20.1-0.0.4.jar, which registers nothing of its own. ID COUNT: 406 item models, 299 blockstates, 83 item.productivebees.* and 302 block.productivebees.* lang keys. Union of models and blockstates is 407, but 50 of those have no lang key at all, so the count above is the 357 ids that have BOTH a real asset and a name. THE HONEYCOMB TRAP - the single most important finding for this mod. The lang file contains 28 keys with no matching model or blockstate, and they are almost all of the form honeycomb_<something>: honeycomb_alfsteel, honeycomb_allthemodium, honeycomb_amber, honeycomb_apatite, honeycomb_basalz, honeycomb_bauxite, honeycomb_bismuth, honeycomb_blazing, honeycomb_blitz, honeycomb_blizz and so on. THESE ARE NOT ITEMS. They are name fragments that Productive Bees composes at runtime onto a single NBT-carrying item, 'productivebees:configurable_honeycomb', whose own lang key is plainly 'Honeycomb'. The same is true of 'comb_configurable' and of 'feeder_double'. Any quest naming productivebees:honeycomb_amber or productivebees:honeycomb_apatite would be uncompletable because no such id is registered. Only THREE honeycombs are hard-registered as their own items - honeycomb_powdery, honeycomb_ghostly and honeycomb_milky, each with a model, a lang key and a real recipe - plus their three block forms comb_powdery, comb_ghostly and comb_milky, and the separately-registered sugarbag_honeycomb. Those seven are what the comb wheel contains. The consensus corpus happens to list honeycomb_powdery and honeycomb_ghostly, which are both real; it also lists configurable_honeycomb, which is real. It does not list any of the phantom ones, so the corpus got lucky here rather than being wrong. OTHER MODEL-ONLY PHANTOMS DROPPED: thirty-two numeric item models named 00 through 31 (with 16 missing), plus 'behavior', 'endurance', 'productivity', 'temper' and 'tolerance' - these are gene-attribute and GUI numeral overlays, none with a lang key or a recipe. Also 'book', 'guide_book', 'honey', 'adv_breed_bee', 'adv_breed_all_bees' and 'invisible_redstone_block' (internal). Also dropped as NBT state variants rather than items: 'bee_cage_filled', 'sturdy_bee_cage_filled', 'bee_bomb_loaded', 'bee_bomb_loaded_angry' and 'honey_treat_genetic'. DROPPED FOR NO VERIFIED SOURCE: 'productivebees:stone_chip', 'productivebees:cryo_stasis', 'productivebees:gene' and 'productivebees:gene_bottle'. All four have models and lang keys but produce no recipe output and appear in no loot table, and unlike draconic_dust they are not named in any file under data/productivebees/productivebees/ (the bee-definition tree, 445 entries, which is where bee produce is declared). gene and gene_bottle are almost certainly created in-world by the Bee Sampler upgrade, but nothing in the data proves it, so they were left off rather than guessed. Spawn eggs (26 of them, including spawn_egg_configurable_bee which the consensus corpus lists) are dropped as creative-only. CONDITIONAL SURFACE - and a false alarm worth recording. 391 of the mod's own recipe outputs sit inside forge:conditional envelopes. Grouping by mod_loaded modid gives corail_woodcutter 66, byg 55, regions_unexplored 42, productivebees 24, biomesoplenty 20, atmospheric 12, elementalcraft 5, quark 4, upgrade_aquatic 4, forbidden_arcanus 2, gtceu 2, l2hostility 2. TWO CAVEATS. First, the 'productivebees' group is a self-check that is always true - data/productivebees/recipes/hives/advanced_oak_beehive.json is conditional on mod_loaded productivebees, which is trivially satisfied. That is why the vanilla-wood advanced hives and expansion boxes are safe and are used above; the byg, regions_unexplored, atmospheric and biomesoplenty wood hives are NOT used. Second, a naive per-item union of conditions marks an item conditional if ANY of its recipes is gated, which produces false negatives. productivebees:powered_centrifuge is the example: it has four recipe files, one each for mekanism, silents_mechanisms and thermal, plus a fourth named vanilla.json whose condition block names all three - a not/or guard meaning 'use this when none of those are installed'. So the powered centrifuge is always craftable and it is kept on the spine. It also gates heated_centrifuge, which would otherwise have had an unobtainable input. UNUSUAL SOURCES, verified and kept: 'productivebees:sturdy_bee_cage' has no survival crafting recipe - its only non-Patchouli source is data/productivebees/loot_tables/gameplay/hero_of_the_village/beekeeper_gifts, i.e. a Hero of the Village gift from a beekeeper villager. It is obtainable but the quest text must say so; it sits in a wheel rather than on the spine for that reason. 'productivebees:amber' and 'productivebees:configurable_comb' come only from their own block loot tables. 'productivebees:draconic_dust' is confirmed as bee produce in data/productivebees/productivebees/draconic.json. NOTE ON RECIPE OUTPUTS: scanning results in this jar yields many ids such as productivebees:agate, productivebees:ruby and productivebees:cyanite that are NOT items - they are bee entity types referenced by breeding and incubator recipes. Every id in this file was intersected against the model/blockstate/lang set, so none of them leaked in. ORDERING vs moddb consensus (15 entries, all 15 id-verified): consensus reads amber 0.0, sturdy_bee_cage 0.007, configurable_honeycomb 0.014, incubator 0.028, honeycomb_powdery 0.034, nether_quartz_nest 0.048, honeycomb_ghostly 0.097, obsidian_nest 0.11, spawn_egg_configurable_bee. CONFLICT: it opens on amber and sturdy_bee_cage, neither of which is craftable - amber is worldgen and the sturdy cage is a villager gift - so as a chain opening it is unplayable. The recipe graph was preferred and the chain opens on bee_cage, which is craftable from planks, a log and honey on day one; amber was moved to step 20 where the worldgen detour actually fits, and the sturdy cage moved to a wheel. Consensus also ranks incubator 0.028 ahead of the centrifuge and the advanced hive, which the graph contradicts only mildly (the incubator is cheap), but it was moved after the hive because incubating bees you have nowhere to house is pointless."
+}

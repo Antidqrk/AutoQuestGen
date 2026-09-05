@@ -1,0 +1,89 @@
+{
+ "mod": "gravitygun",
+ "jar": "GravityGunRevival-1.20.1-1.1.0.jar (CurseForge 1452616, 'iChun Gravity Gun Mod Revival'; NOT installed in CREATE FEMBY - jar fetched and verified for this research, ids in chains_research/gravitygun.json)",
+ "ids_in_jar": 19,
+ "videos": [
+  {
+   "id": "G85DE9rAHEg",
+   "title": "Minecraft GRAVITY GUN MOD Spotlight - The Perfect Tool!",
+   "channel": "ThnxCya",
+   "views": 385136,
+   "duration": 459,
+   "chars": 8536
+  },
+  {
+   "id": "XetXdbqxu1k",
+   "title": "Minecraft: GRAVITY GUN (PICK UP AND THROW MOBS AND BLOCKS!) Mod Showcase",
+   "channel": "PopularMMOs",
+   "views": 1761690,
+   "duration": 503,
+   "chars": 8846
+  },
+  {
+   "id": "HzGt20YQZvs",
+   "title": "Gravity Gun Mod: Minecraft Half Life Gravity Gun Mod Showcase!",
+   "channel": "TheAtlanticCraft",
+   "views": 65858,
+   "duration": 259,
+   "chars": 4035
+  },
+  {
+   "id": "JSJf83wborE",
+   "title": "Minecraft: Gravity Gun Mod (Gravity Gun from Half-Life 2 and More!) Mod Showcase",
+   "channel": "Danny Matias | MCFinest",
+   "views": 28630,
+   "duration": 464,
+   "chars": 5614
+  }
+ ],
+ "version_note": "All four videos cover iChun's ORIGINAL Gravity Gun (1.4-1.6 era; the original tops out at 1.12.2 and is in _unavailable.json as gravitygun_ichun). The 1.20.1 target is the Revival port, whose gravity_gun recipe is byte-for-byte the recipe these videos teach (diamond, four ender pearls, two iron, glowstone, obsidian - verified against the Revival jar), so the mechanics teaching carries over. Behaviors that live in code, not data (lightning upgrade, creeper handling), could not be verified against the port and are flagged below.",
+ "items": {
+  "gravitygun:gravity_gun": {
+   "mentions": 27,
+   "videos": 4,
+   "first_at": 0.0508,
+   "praise": 10,
+   "warn": 1,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gravitygun:gravity_gun_supercharged": {
+   "mentions": 18,
+   "videos": 4,
+   "first_at": 0.2335,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "_source": "guide (4 transcribed English showcases of the original mod) + Revival jar recipes. The mod is two real items plus a guidebook; every video's structure is identical - recipe, controls, then physical comedy - which is itself the signal: this is a toy/utility mod with a two-step progression and no tree.",
+  "entry": [
+   "Entry is a single crafting-table recipe, no ritual or machine: diamond, four ender pearls, two iron ingots, glowstone, obsidian. Every video opens with this craft. The ender pearls are the real cost, so the gun slots naturally right after a player's first Enderman hunting - same shopping list as eyes of ender.",
+   "Controls as every guide teaches them: right-click grabs the block or mob you are looking at and carries it floating in front of you; left-click punts whatever you are aiming at away, or launches what you are carrying; right-clicking again sets a carried block down gently instead of throwing it."
+  ],
+  "order": [
+   "The whole progression is two steps: gravity_gun, then gravity_gun_supercharged. The upgrade is taught with TWO routes in three of the four videos: craft it (nether star involved - in the original you swap the glowstone for a nether star; in the Revival jar it is shapeless gun + nether star), or simply hold the normal gun and get struck by lightning. The lightning route is the one narrators delight in, and it makes a great alternate quest completion if the port kept it - NOT VERIFIED for the Revival, it lives in code not data.",
+   "Either way the supercharged gun is gated behind a Wither kill (nether star) unless the lightning route works, which pins it late-game despite the base gun being early-game."
+  ],
+  "gates": [
+   "Base gun: ender pearls (Enderman farming). Supercharged: nether star (Wither), or a thunderstorm if the lightning upgrade survived the port.",
+   "The colored gun variants in the Revival jar all consume paintbrushes from the same author's Paintball Mod Revival - unobtainable without that mod installed; do not quest them."
+  ],
+  "traps": [
+   "Non-solid blocks cannot be grabbed - leaves, torches, sugarcane, grass. Two narrators hit this on camera. Chests CAN be picked up, contents and all, which genuinely surprised one host.",
+   "Creeper handling is contradictory across videos: one narrator states a held creeper is nullified and will not explode in survival, another had one blow up in his face while carrying it. Treat 'carry a creeper safely' as NOT reliable; the confirmed fun fact is that a creeper thrown by the SUPERCHARGED gun explodes on impact, making it a thrown bomb.",
+   "Throwing accuracy has a learning curve - the long flick throw (40+ blocks) took a narrator several on-camera attempts. Quest text should not require precision throws."
+  ],
+  "signature": [
+   "gravitygun:gravity_gun",
+   "gravitygun:gravity_gun_supercharged"
+  ],
+  "taught": [
+   "Uses the guides dwell on, in the order they reach for them: moving mobs without leads or wheat (pick the sheep up, drop it in the pen); safe obsidian mining over lava (lift the obsidian out instead of mining into the lake); fixing a misplaced block in a build without breaking it (placement is described as fiddly); using anything - blocks, cows, creepers - as ammunition against other mobs.",
+   "Supercharged differences as taught: throws roughly a third farther (~30 vs ~45 blocks with the flick), grabs from farther away (~10 blocks vs ~3), hits hard enough to one-shot most mobs, and detonates thrown creepers.",
+   "Half of the praise volume is pure toy-joy - 'so much fun' repeated - with mentions concentrated on gravity_gun (27) over supercharged (18). Every narrator name-drops that it is by the Portal Gun author and from Half-Life; quest flavor text leaning on Half-Life lands with the audience these videos prove exists."
+  ]
+ }
+}

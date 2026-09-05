@@ -1,0 +1,128 @@
+{
+  "mod": "ae2",
+  "verified_against": "appliedenergistics2-forge-15.4.10.jar",
+  "item_count_in_jar": 365,
+  "chain": [
+    {
+      "id": "ae2:certus_quartz_crystal",
+      "title": "Certus Quartz Crystal",
+      "desc": "Mined from the Certus Quartz Clusters growing on budding certus blocks inside a sky-stone meteorite; each cluster drops four crystals."
+    },
+    {
+      "id": "ae2:sky_stone_block",
+      "title": "Sky Stone",
+      "desc": "The dark rock that forms the body of every meteorite; dig it out of the crater, or smelt Sky Stone Dust back into it."
+    },
+    {
+      "id": "ae2:charger",
+      "title": "Charger",
+      "desc": "Built from iron and copper ingots; feed it power or slap a Wooden Crank on the side and turn it by hand."
+    },
+    {
+      "id": "ae2:charged_certus_quartz_crystal",
+      "title": "Charged Certus Quartz Crystal",
+      "desc": "Drop a Certus Quartz Crystal into a Charger and let it finish; this is the reagent for every in-world crafting recipe."
+    },
+    {
+      "id": "ae2:meteorite_compass",
+      "title": "Meteorite Compass",
+      "desc": "Charge a vanilla Compass in the Charger; its needle then points at the nearest Mysterious Cube instead of spawn."
+    },
+    {
+      "id": "ae2:silicon_press",
+      "title": "Inscriber Presses",
+      "desc": "Break the Mysterious Cube buried at a meteorite's core and it drops all four Inscriber presses at once, silicon press included."
+    },
+    {
+      "id": "ae2:inscriber",
+      "title": "Inscriber",
+      "desc": "Iron ingots, copper and a sticky piston; presses go in the top and bottom slots and stamp materials in the middle slot."
+    },
+    {
+      "id": "ae2:fluix_crystal",
+      "title": "Fluix Crystal",
+      "desc": "Throw a Charged Certus Quartz Crystal, redstone and nether quartz into a water source block and they fuse into two Fluix Crystals."
+    },
+    {
+      "id": "ae2:silicon",
+      "title": "Silicon",
+      "desc": "Smelt Certus Quartz Dust, which the Inscriber grinds out of any certus quartz crystal placed in its middle slot."
+    },
+    {
+      "id": "ae2:logic_processor",
+      "title": "Logic Processor",
+      "desc": "Press a gold-printed logic circuit onto Printed Silicon with redstone between them in the Inscriber."
+    },
+    {
+      "id": "ae2:calculation_processor",
+      "title": "Calculation Processor",
+      "desc": "The same Inscriber press, but with a printed circuit stamped from a Certus Quartz Crystal instead of gold."
+    },
+    {
+      "id": "ae2:engineering_processor",
+      "title": "Engineering Processor",
+      "desc": "Top processor tier: a diamond-printed circuit pressed onto Printed Silicon with redstone; gates drives, controllers and CPUs."
+    },
+    {
+      "id": "ae2:growth_accelerator",
+      "title": "Growth Accelerator",
+      "desc": "Iron, quartz glass, a fluix cable and a Fluix Block; powered and placed against budding certus it turns crystals into a renewable farm."
+    },
+    {
+      "id": "ae2:fluix_glass_cable",
+      "title": "ME Glass Cable",
+      "desc": "A Quartz Fiber plus two Fluix Crystals; the basic wire that carries channels between every ME device."
+    },
+    {
+      "id": "ae2:energy_acceptor",
+      "title": "Energy Acceptor",
+      "desc": "Iron, quartz glass and copper; it converts FE from your generators into the AE the network actually runs on."
+    },
+    {
+      "id": "ae2:item_storage_cell_1k",
+      "title": "1k ME Item Storage Cell",
+      "desc": "A 1k Storage Component (certus quartz, redstone and a Logic Processor) sealed in an iron and quartz-glass housing."
+    },
+    {
+      "id": "ae2:drive",
+      "title": "ME Drive",
+      "desc": "Iron, an Engineering Processor and two glass cables; holds ten storage cells and makes their contents part of the network."
+    },
+    {
+      "id": "ae2:terminal",
+      "title": "ME Terminal",
+      "desc": "Shapeless from a Formation Core, an Annihilation Core, a Logic Processor and an Illuminated Panel; your window into stored items."
+    },
+    {
+      "id": "ae2:controller",
+      "title": "ME Controller",
+      "desc": "Smooth Sky Stone, Fluix Crystals and an Engineering Processor; required once a network needs more than eight channels, and it hands them out."
+    },
+    {
+      "id": "ae2:molecular_assembler",
+      "title": "Molecular Assembler",
+      "desc": "A crafting table between an Annihilation and a Formation Core; it executes encoded patterns and is the engine of autocrafting."
+    },
+    {
+      "id": "ae2:pattern_provider",
+      "title": "ME Pattern Provider",
+      "desc": "A crafting table framed in iron with both cores; it pushes the ingredients of an encoded pattern into assemblers or machines."
+    },
+    {
+      "id": "ae2:1k_crafting_storage",
+      "title": "1k Crafting Storage",
+      "desc": "A Crafting Unit plus a 1k Storage Component; stack these with a Co-Processing Unit to form a Crafting CPU that runs autocraft jobs."
+    },
+    {
+      "id": "ae2:wireless_terminal",
+      "title": "Wireless Terminal",
+      "desc": "Wireless Receiver, ME Terminal and a Dense Energy Cell; reaches the network from anywhere inside a Wireless Access Point's radius."
+    },
+    {
+      "id": "ae2:quantum_ring",
+      "title": "ME Quantum Ring",
+      "desc": "Eight rings around a Quantum Link Chamber form the Quantum Network Bridge, linking two networks across any distance via paired Quantum Entangled Singularities."
+    }
+  ],
+  "notes": "Verified against appliedenergistics2-forge-15.4.10.jar (Forge, MC 1.20.1). Every id above was confirmed to have both an item model in assets/ae2/models/item/ and an item./block. lang key in assets/ae2/lang/en_us.json. Key facts for this version: there is NO certus quartz ore in world generation - certus quartz exists only in meteorites (budding certus blocks with buds and clusters), so the very first step is finding a meteorite, and the Meteorite Compass (vanilla compass charged in a Charger) is the intended locator. The Charger itself needs no AE2 materials (iron + copper) and can be hand-powered by a Wooden Crank (ae2:crank), so it is craftable before the player owns any AE2 resource. All four Inscriber presses drop together from the Mysterious Cube (ae2:mysterious_cube) at the centre of a meteorite - presses are NOT craftable from scratch, only duplicable (press + iron block in an Inscriber). ae2:silicon_press stands in for the whole press set in this chain. DROPPED ids: 'ae2:security_station' - the ME Security Station/Terminal was removed in AE2 15.x; a leftover item model exists in the jar but there is no lang key and no recipe, so it is not a real obtainable item. 'ae2:quartz_ore' / 'ae2:charged_quartz_ore' - named by older wikis, do not exist in this jar. No dim: entry was added: data/ae2/dimension/ does not exist in the jar (the Spatial Storage dimension is registered in code, only data/ae2/dimension_type/spatial_storage.json is shipped), so no dimension id could be verified. No kill: entry was added: the only AE2 entity lang key is entity.ae2.tiny_tnt_primed, which is a projectile, not a mob. Side branches deliberately left out to stay under the entry cap: Spatial Storage (ae2:spatial_pylon, ae2:spatial_io_port, ae2:spatial_storage_cell_2), Matter Condenser endgame (ae2:condenser -> ae2:matter_ball -> ae2:singularity -> ae2:quantum_entangled_singularity, which the Quantum Ring bridge actually needs to pair), P2P tunnels, and the higher cell tiers (4k/16k/64k/256k) which follow the same pattern as the 1k entries listed."
+}

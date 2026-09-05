@@ -1,0 +1,62 @@
+{
+ "mod": "gtceu",
+ "ids_in_jar": 55,
+ "videos": [
+  {
+   "id": "M9W6yttfv3Q",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 4643,
+   "secs": 511
+  },
+  {
+   "id": "W2TlGTokj4A",
+   "title": "",
+   "channel": null,
+   "views": null,
+   "duration": null,
+   "chars": 30412,
+   "secs": 1335
+  }
+ ],
+ "items": {
+  "gtceu:good_electronic_circuit": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1966,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gtceu:hv_machine_hull": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0533,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gtceu:lv_assembler": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4248,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "gtceu:assembly_line": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6898,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ }
+}

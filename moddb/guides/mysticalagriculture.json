@@ -1,0 +1,369 @@
+{
+ "mod": "mysticalagriculture",
+ "ids_in_jar": 667,
+ "videos": [
+  {
+   "id": "-PoexjBg-_4",
+   "title": "All The Guides - Mystical Agriculture in ATM 10",
+   "channel": "Gaming With Flame",
+   "views": 149840,
+   "duration": 846,
+   "chars": 17837
+  },
+  {
+   "id": "4jCrVe6UOog",
+   "title": "The Complete Guide to Mystical Agriculture!",
+   "channel": "Hellfirem4ge",
+   "views": 326584,
+   "duration": 1670,
+   "chars": 25386
+  }
+ ],
+ "items": {
+  "mysticalagriculture:inferium_essence": {
+   "mentions": 6,
+   "videos": 1,
+   "first_at": 0.0213,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 0
+  },
+  "mysticalagriculture:infusion_crystal": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.2607,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "mysticalagriculture:ice_essence": {
+   "mentions": 4,
+   "videos": 1,
+   "first_at": 0.2336,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:mystical_seeds": {
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.6371,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:diamond_seeds": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.419,
+   "praise": 3,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:infusion_altar": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.1819,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:prosperity_seed_base": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.9053,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:supremium_essence": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.3908,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:diamond_essence": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.006,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 1,
+   "late_cue": 0
+  },
+  "mysticalagriculture:inferium_seeds": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.0605,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:soulstone": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.7155,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:soul_glass": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.882,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:nether_quartz_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3931,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:infusion_pedestal": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1837,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:experience_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3638,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:netherite_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3886,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:glowstone_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3921,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:skeleton_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3348,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:fluorite_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3896,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:uranium_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3912,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:cyanite_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3943,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:nature_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3508,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:fluix_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3905,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:wood_seeds": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3482,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:harvester": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.4275,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:master_infusion_crystal": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3921,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:experience_essence": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8004,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:skeleton_essence": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8153,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:supremium_block": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7481,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:awakening_altar": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6949,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:soul_extractor": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.8742,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:nether_essence": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.2413,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "mysticalagriculture:water_essence": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7541,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "order": [
+   "Mine the ore first, with any pickaxe. Guide: 'To start with mystical agriculture, you need this inferium ore that you can just break with a stone [pickaxe]... as soon as you have broken it, you get this Inferium essence.' -> mysticalagriculture:inferium_ore / mysticalagriculture:deepslate_inferium_ore -> mysticalagriculture:inferium_essence. The jar agrees: inferium_essence_smelted.json smelts tag forge:ores/inferium.",
+   "Prosperity is the second ore and it is what makes seeds possible at all. Guide: 'You need prosperity shards to make the seeds look good later.' mysticalagriculture:prosperity_ore -> mysticalagriculture:prosperity_shard -> mysticalagriculture:prosperity_seed_base.",
+   "First craft is a seed, not a machine: guide combines the seed base 'with 8 inferium essence to create a few inferium seeds' -> mysticalagriculture:inferium_seeds. Farming essence beats mining it.",
+   "The first BUILD is the infusion altar. Guide: 'the first thing you probably want to do is to build this altar for the infusion, because here you will create all your seeds.' mysticalagriculture:infusion_altar surrounded by 8x mysticalagriculture:infusion_pedestal.",
+   "mysticalagriculture:infusion_crystal is the tool that drives the whole tier ladder. Guide: 'The key ... is an infusion crystal, with which you can simply combine four essences of a level with an essence of the next higher level.'",
+   "Tier ladder, confirmed against the jar recipes (each step is 4 of the lower essence + an infusion crystal in a plus shape): mysticalagriculture:inferium_essence -> mysticalagriculture:prudentium_essence -> mysticalagriculture:tertium_essence -> mysticalagriculture:imperium_essence -> mysticalagriculture:supremium_essence.",
+   "Once supremium exists, replace the consumable crystal: mysticalagriculture:master_infusion_crystal (prosperity shards + supremium essence + mysticalagriculture:supremium_gemstone). Guide: 'Later in the game you can use the Supremium Essence to create a master infusion crystal that can often be used unlimitedly.'",
+   "Endgame is a second altar, not a sixth essence tier: mysticalagriculture:awakening_altar with 4x mysticalagriculture:awakening_pedestal AND 4x mysticalagriculture:essence_vessel around it. Guide: 'You will need 4 essence containers placed around the altar, as well as 4 pedestals of the awakening. Keep in mind that to make them you need something with soulstone.' Output is mysticalagriculture:awakened_supremium_essence, then mysticalagriculture:awakened_supremium_ingot and the awakened gear.",
+   "Mob drops come last and need their own tool: mysticalagriculture:soulium_dagger (hostile and passive variants in the recipe set) to harvest mob essences, then mysticalagriculture:soul_extractor / mysticalagriculture:soul_jar."
+  ],
+  "gates": [
+   "Hard gate on every seed: the infusion altar plus its 8 pedestals. Nothing in the mod is craftable in a 3x3 beyond the essence ladder itself.",
+   "Tier gate on every crop: a crop's seed recipe consumes the essence of that crop's own tier, so tier-4/5 resources (mysticalagriculture:netherite_seeds, mysticalagriculture:draconium_seeds) are unreachable until imperium/supremium exist. The jar encodes this as crop_component 'essence' rather than a literal item, so a recipe scan alone will not show which tier a seed needs.",
+   "mysticalagriculture:awakening_altar gates all awakened supremium gear.",
+   "mysticalagriculture:soulium_dagger gates every mob essence (mysticalagriculture:skeleton_essence, mysticalagriculture:creeper_essence, etc.).",
+   "Armor tiers gate their own upgrades. Guide: 'if you want to have the health boost of level 4, you either need armor of level 4 or 5, because only then you can put it on' - mysticalagriculture:supremium_chestplate etc. accept higher-tier augments than mysticalagriculture:inferium_chestplate.",
+   "mysticalagriculture:soulstone is the build material for the awakening altar (jar: awakening_altar.json = soulstone + gold + orange wool)."
+  ],
+  "mechanics": [
+   "Essence is a currency, not a crop: every resource in the pack becomes a seed, and the seed yields that resource's essence, which is crafted back into the resource. 667 item ids in the jar are almost entirely <resource>_seeds / <resource>_essence pairs.",
+   "The 4:1 infusion step is deliberately lossy in reverse - each *_uncraft recipe gives 4 of the tier below, so tiers are a real sink.",
+   "mysticalagriculture:seed_reprocessor returns some seed cost, and tiered mysticalagriculture:inferium_farmland .. mysticalagriculture:supremium_farmland plus mysticalagriculture:inferium_growth_accelerator .. mysticalagriculture:supremium_growth_accelerator are the speed levers.",
+   "Watering cans (mysticalagriculture:watering_can up to mysticalagriculture:supremium_watering_can) are the cheap early speed-up; guide spends real time on farm layout, so throughput matters more than variety."
+  ],
+  "traps": [
+   "Do not keep mining essence ore. Guide: 'Of course you don't want to do this forever, but it is extremely useful in the early game.' Mining inferium is a bootstrap only.",
+   "Do not treat the guides' 'Insanium' tier as part of this mod. There is NO insanium id anywhere in MysticalAgriculture-1.20.1-7.0.24.jar - it is Mystical Agradditions, which is not installed. Both guides conflate the two: one opens with 'everything you need to know about Mystical Agriculture and its complementary mod, Mystical Agradditions' and then teaches them as one ladder. A quest ladder that ends at insanium would be uncompletable.",
+   "Enchanting/repairing tier gear is described as not worth the effort ('you don't have to make them unbreakable, don't repair, absolutely nothing') - the gear is replaced by the next tier rather than maintained."
+  ],
+  "signature": [
+   "mysticalagriculture:inferium_essence",
+   "mysticalagriculture:prudentium_essence",
+   "mysticalagriculture:tertium_essence",
+   "mysticalagriculture:imperium_essence",
+   "mysticalagriculture:supremium_essence",
+   "mysticalagriculture:awakened_supremium_essence",
+   "mysticalagriculture:infusion_altar",
+   "mysticalagriculture:infusion_crystal",
+   "mysticalagriculture:master_infusion_crystal",
+   "mysticalagriculture:awakening_altar",
+   "mysticalagriculture:prosperity_seed_base",
+   "mysticalagriculture:soulium_dagger",
+   "mysticalagriculture:supremium_sword"
+  ],
+  "pack_status": "NOT INSTALLED in CREATE FEMBY. Analysed against MysticalAgriculture-1.20.1-7.0.24.jar fetched to scratch from Modrinth. Its addon Mystical Agradditions (the Insanium tier) is also absent - see traps."
+ }
+}

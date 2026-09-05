@@ -1,0 +1,119 @@
+{
+ "mod": "mcwbridges",
+ "verified_against": "mcw-bridges-3.1.2-mc1.20.1forge.jar",
+ "item_count_in_jar": 146,
+ "chain": [
+  {
+   "id": "mcwbridges:oak_log_bridge_middle",
+   "title": "A Plank Across the Gap",
+   "desc": "Two fences over three slabs of the same wood give four Log Bridge sections - the flat wooden walkway that is the mod's default bridge and exists in ten woods."
+  },
+  {
+   "id": "mcwbridges:oak_log_bridge_stair",
+   "title": "Getting Onto It",
+   "desc": "Six stairs from a stepped arrangement of the bridge itself. Every bridge family has a matching stair piece so the deck can meet the ground."
+  },
+  {
+   "id": "mcwbridges:oak_bridge_pier",
+   "title": "Hold It Up",
+   "desc": "A fence between two logs gives three Bridge Supports. Piers are the only piece that reaches down to the water, and they exist for twenty-four materials - the widest table in the mod."
+  },
+  {
+   "id": "mcwbridges:pliers",
+   "title": "Cut a Way In",
+   "desc": "Iron ingots and nuggets in a Z. The Pliers are the mod's one tool: right-click a placed bridge to open an entrance in its railing, which only works on bridges two blocks wide or more. Shears do the same job."
+  },
+  {
+   "id": "mcwbridges:oak_rail_bridge",
+   "title": "Run a Minecart Over It",
+   "desc": "Two fences over a fence and a slab, four at a time. The rail bridge carries a track down its middle instead of a walkway."
+  },
+  {
+   "id": "mcwbridges:oak_rope_bridge_stair",
+   "title": "The Rope Version",
+   "desc": "The rope family starts at its stair piece; crafting that stair shapelessly gives the flat Rope Oak Bridge. Rope bridges sag and sway where the log bridges are rigid."
+  },
+  {
+   "id": "mcwbridges:andesite_bridge",
+   "title": "Stone Over Water",
+   "desc": "Two walls over three slabs of the same stone, four at a time. The stone bridges are a separate family from the wooden ones, with fourteen materials of their own."
+  },
+  {
+   "id": "mcwbridges:balustrade_andesite_bridge",
+   "title": "With a Railing",
+   "desc": "Three walls over three slabs, five at a time. Balustrade bridges are the stone bridges with a solid parapet instead of an open edge, in sixteen stone types."
+  },
+  {
+   "id": "mcwbridges:asian_red_bridge",
+   "title": "The One That Is Not a Material",
+   "desc": "Wooden fences and slabs with red dye in the middle. The Asian Red Bridge is one of only two bridges in the mod defined by a colour rather than a block, and it has its own pier and stair."
+  },
+  {
+   "id": "mcwbridges:dry_bamboo_bridge",
+   "title": "String and Sticks",
+   "desc": "Bamboo and sticks bound with string. The dry bamboo bridge is the cheapest bridge in the mod and the only one that needs no fences at all."
+  },
+  {
+   "id": "mcwbridges:bridge_lantern",
+   "title": "Light on the Handrail",
+   "desc": "Two lanterns side by side give two Bridge Lanterns. It is not a free-standing light - the mod's own hint says to use it on bridge and stair handrails, and Bridge Torch is the same idea for two torches."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mcwbridges:spruce_log_bridge_middle",
+   "members": [
+    "mcwbridges:birch_log_bridge_middle",
+    "mcwbridges:jungle_log_bridge_middle",
+    "mcwbridges:acacia_log_bridge_middle",
+    "mcwbridges:dark_oak_log_bridge_middle",
+    "mcwbridges:mangrove_log_bridge_middle",
+    "mcwbridges:cherry_log_bridge_middle",
+    "mcwbridges:crimson_log_bridge_middle",
+    "mcwbridges:warped_log_bridge_middle",
+    "mcwbridges:spruce_rail_bridge",
+    "mcwbridges:birch_rail_bridge",
+    "mcwbridges:jungle_rail_bridge",
+    "mcwbridges:acacia_rail_bridge",
+    "mcwbridges:dark_oak_rail_bridge"
+   ]
+  },
+  {
+   "hub": "mcwbridges:stone_brick_bridge",
+   "members": [
+    "mcwbridges:cobblestone_bridge",
+    "mcwbridges:mossy_cobblestone_bridge",
+    "mcwbridges:mossy_stone_brick_bridge",
+    "mcwbridges:blackstone_bridge",
+    "mcwbridges:diorite_bridge",
+    "mcwbridges:granite_bridge",
+    "mcwbridges:sandstone_bridge",
+    "mcwbridges:orange_sandstone_bridge",
+    "mcwbridges:prismarine_bricks_bridge",
+    "mcwbridges:nether_bricks_bridge",
+    "mcwbridges:deepslate_brick_bridge",
+    "mcwbridges:deepslate_tile_bridge",
+    "mcwbridges:end_stone_bricks_bridge"
+   ]
+  },
+  {
+   "hub": "mcwbridges:rope_oak_bridge",
+   "members": [
+    "mcwbridges:rope_spruce_bridge",
+    "mcwbridges:rope_birch_bridge",
+    "mcwbridges:rope_jungle_bridge",
+    "mcwbridges:rope_acacia_bridge",
+    "mcwbridges:rope_dark_oak_bridge",
+    "mcwbridges:rope_mangrove_bridge",
+    "mcwbridges:rope_cherry_bridge",
+    "mcwbridges:rope_crimson_bridge",
+    "mcwbridges:rope_warped_bridge",
+    "mcwbridges:jungle_bridge_pier",
+    "mcwbridges:spruce_bridge_pier",
+    "mcwbridges:birch_bridge_pier",
+    "mcwbridges:acacia_bridge_pier"
+   ]
+  }
+ ],
+ "notes": "MACAW'S MODS SHARE ONE STRUCTURE: A SMALL NUMBER OF DISTINCT BLOCK TYPES CROSSED WITH A LARGE MATERIAL TABLE. The chain below is one step per distinct RECIPE SHAPE, not one per id, and the material tables go to wheels. MODDB: no consensus signal - moddb.json contains no key for any Macaw's mod - so every ordering here is the recipe graph alone and there is no conflict to record. Verified against mcw-bridges-3.1.2-mc1.20.1forge.jar (Modrinth version 3.1.2, loaders=[forge], game_versions=[1.20.1]). ID DETECTION: 146 item models, 145 blockstates, 152 lang block./item. keys; models INTERSECT lang = 146, the count used. THE SIX EXTRA LANG KEYS ARE THE TRAP HERE and they are all the same trap: pale_oak_bridge_pier, pale_oak_log_bridge_middle, pale_oak_log_bridge_stair, pale_oak_rail_bridge, pale_oak_rope_bridge_stair and rope_pale_oak_bridge have display names in en_us.json but NO item model, NO blockstate, NO recipe and NO loot table. Pale oak is 1.21 wood; the strings ship early against a block set that does not exist in this 1.20.1 build. Any quest built from lang keys alone would emit six uncompletable steps. Widening on blockstate adds nothing (there are no blockstate-only stems) and narrowing removes nothing (there are no model-only stems), so the intersection is exactly right for this jar. RECIPE GRAPH: 256 recipe files, all 146 ids produced, nothing unobtainable. DISTINCT BLOCK TYPES: 58 by name-stem, but only about 11 distinct SHAPES - log bridge, log bridge stair, rail bridge, rope bridge, rope bridge stair, pier, stone bridge, stone bridge stair, balustrade bridge, the two named specials (asian red, dry bamboo) and the two handrail lights. Everything else is the material table: piers span 24 materials, stone bridges and their stairs 14 each, the wood families 10 each, balustrades 16. Verified yields: log_bridge_middle 4, log_bridge_stair 6, bridge_pier 3, rail_bridge 4, stone bridge 4, balustrade 5, asian_red 4, dry_bamboo 1, bridge_lantern 2, bridge_torch 2, pliers 1. THE ONE REAL MECHANIC: mcwbridges.pliers.desc reads 'Right click on a bridge to make an entrance, works only for 2+ wider bridges', and mcwbridges.bridges.desc confirms 'Use Pliers/Shears to adjust the entrance'. That is the whole of the mod's interactivity and it is why the Pliers earn a chain step in a mod that is otherwise pure decoration. NOTE ON THE ROPE FAMILY'S DIRECTION: rope_<wood>_bridge is crafted SHAPELESSLY FROM <wood>_rope_bridge_stair, so the stair is upstream of the flat piece - the reverse of every other family in the mod, where the stair is made from the deck. That is why the rope bridge stair is the chain step and the flat rope bridges are wheel members. DROPS: the six pale_oak lang keys above. Nothing else was excluded as unobtainable."
+}

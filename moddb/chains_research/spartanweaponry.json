@@ -1,0 +1,221 @@
+{
+ "mod": "spartanweaponry",
+ "verified_against": "SpartanWeaponry-1.20.1-forge-3.2.1-all.jar",
+ "item_count_in_jar": 516,
+ "chain": [
+  {
+   "id": "spartanweaponry:simple_handle",
+   "title": "A Stick and Some Grass",
+   "desc": "One wooden rod and anything in #forge:grass. The Simple Handle is the cheapest of the four components and the first thing anyone makes here."
+  },
+  {
+   "id": "spartanweaponry:handle",
+   "title": "Wrapped Properly",
+   "desc": "A wooden rod and string, shapeless - or four rods with leather or wool if string is short. Every dagger, sword and axe in the mod is built on one."
+  },
+  {
+   "id": "spartanweaponry:pole",
+   "title": "Long Enough to Matter",
+   "desc": "Three wooden rods bound with string, leather or wool. Poles are what the reach weapons - pike, lance, glaive, halberd - are hafted onto."
+  },
+  {
+   "id": "spartanweaponry:wooden_club",
+   "title": "Rock Bottom of the Ladder",
+   "desc": "Three logs and nothing else. No handle, no ingot, no forge - the Wooden Club is the one weapon you can make in your first minute."
+  },
+  {
+   "id": "spartanweaponry:studded_club",
+   "title": "Now With Nails",
+   "desc": "The club plus iron ingots. It is still the worst weapon in the mod and it is still the fastest upgrade you will ever make."
+  },
+  {
+   "id": "spartanweaponry:cestus",
+   "title": "Punching, Formalised",
+   "desc": "Leather and wool wrapped around your knuckles. The Cestus is the mod's unarmed weapon and it stacks with nothing."
+  },
+  {
+   "id": "spartanweaponry:studded_cestus",
+   "title": "Knuckles of Iron",
+   "desc": "The Cestus with iron worked into it. Together with the club it closes out the pre-metal tier."
+  },
+  {
+   "id": "spartanweaponry:stone_dagger",
+   "title": "Small Blade, Fast Hands",
+   "desc": "One #minecraft:stone_tool_materials over a Handle. Daggers are the mod's fastest class and the one that keeps swinging while you sprint."
+  },
+  {
+   "id": "spartanweaponry:copper_saber",
+   "title": "Green Around the Edges",
+   "desc": "Copper sits between stone and iron. The Saber is the light cavalry sword of the set - quick, curved, and cheap enough to lose."
+  },
+  {
+   "id": "spartanweaponry:iron_longsword",
+   "title": "The Middle of Everything",
+   "desc": "Two iron ingots over a Handle. The Longsword is the reference weapon Spartan Weaponry balances the other twenty-three classes against."
+  },
+  {
+   "id": "spartanweaponry:iron_katana",
+   "title": "One Clean Draw",
+   "desc": "Iron over a Handle in the katana pattern. Fast, high-reach and it is the sword found in village weaponsmith chests alongside the dagger and rapier."
+  },
+  {
+   "id": "spartanweaponry:iron_spear",
+   "title": "Throw It or Keep It",
+   "desc": "Iron on a Pole. Spears reach further than any sword and can be thrown - the mod's whole thrown-weapon entity family starts here."
+  },
+  {
+   "id": "spartanweaponry:iron_halberd",
+   "title": "Axe on the End of a Pole",
+   "desc": "The Halberd is the heaviest of the polearms and the reason the Pole component exists at all."
+  },
+  {
+   "id": "spartanweaponry:wooden_longbow",
+   "title": "Draw Slower, Hit Harder",
+   "desc": "The Longbow pulls slower than a vanilla bow and pays for it in damage and range. Every other longbow is this one 'strengthened' with a metal."
+  },
+  {
+   "id": "spartanweaponry:wooden_heavy_crossbow",
+   "title": "Reload Is a Commitment",
+   "desc": "The Heavy Crossbow fires Bolts rather than arrows, hits like a siege weapon and takes an age to wind back."
+  },
+  {
+   "id": "spartanweaponry:bolt",
+   "title": "Ammunition, Not Arrows",
+   "desc": "Iron ingot, iron nugget and a feather. Bolts are a separate ammunition family - the crossbows will not fire vanilla arrows."
+  },
+  {
+   "id": "spartanweaponry:quiver_compartment",
+   "title": "The Template, Not the Bag",
+   "desc": "Leather, string, leather in a row. This is the smithing 'template' every quiver upgrade consumes, which is why it comes before the quivers."
+  },
+  {
+   "id": "spartanweaponry:small_arrow_quiver",
+   "title": "Somewhere to Put Them",
+   "desc": "Iron, leather, string and a stack of arrows. The Small Arrow Quiver feeds your bow without occupying a hotbar slot."
+  },
+  {
+   "id": "spartanweaponry:medium_quiver_brace",
+   "title": "Gold Holds More",
+   "desc": "Gold ingots and string. The brace is the smithing 'addition' - gold for medium, diamond for large, netherite for huge."
+  },
+  {
+   "id": "spartanweaponry:medium_arrow_quiver",
+   "title": "Upgrade, Don't Rebuild",
+   "desc": "A custom spartanweaponry:quiver_upgrade_smithing recipe: Small Arrow Quiver as base, Medium Quiver Brace as addition, Quiver Compartment as template."
+  },
+  {
+   "id": "spartanweaponry:explosive_charge",
+   "title": "Gunpowder in a Tin",
+   "desc": "Gunpowder held together with iron nuggets. Everything that goes bang in this mod is made of these."
+  },
+  {
+   "id": "spartanweaponry:dynamite",
+   "title": "Light the Fuse, Then Run",
+   "desc": "Explosive Charges bound with string. Thrown, not placed, and it does not care what the creeper thinks."
+  },
+  {
+   "id": "spartanweaponry:grease_ball",
+   "title": "Raw Meat and Slime",
+   "desc": "Anything in #forge:foods/meat/raw wrapped in slimeballs. Unpleasant, and the only route to Weapon Oil."
+  },
+  {
+   "id": "spartanweaponry:weapon_oil",
+   "title": "Coat the Blade",
+   "desc": "One Grease Ball and three glass bottles gives the base oil, which brews into the mod's damage, potion and fire coating variants."
+  },
+  {
+   "id": "spartanweaponry:diamond_greatsword",
+   "title": "Two Hands, No Shield",
+   "desc": "Diamonds over a Handle. The Greatsword is the slowest and hardest-hitting of the sword classes and cannot be used one-handed."
+  },
+  {
+   "id": "spartanweaponry:netherite_katana",
+   "title": "Top of Every Ladder",
+   "desc": "Netherite is the last of the seven materials that work without another mod installed. Nothing in this namespace goes past it."
+  },
+  {
+   "id": "spartanweaponry:illager_head",
+   "title": "Take Their Head",
+   "desc": "Spartan Weaponry's decapitate loot modifiers give twenty-one vanilla mobs a chance to drop a head when a player kills them. The illagers share one."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "spartanweaponry:iron_dagger",
+   "members": [
+    "spartanweaponry:iron_throwing_knife",
+    "spartanweaponry:iron_tomahawk",
+    "spartanweaponry:iron_javelin",
+    "spartanweaponry:iron_boomerang",
+    "spartanweaponry:iron_parrying_dagger",
+    "spartanweaponry:iron_rapier",
+    "spartanweaponry:iron_saber",
+    "spartanweaponry:iron_scythe",
+    "spartanweaponry:iron_glaive",
+    "spartanweaponry:iron_pike",
+    "spartanweaponry:iron_lance",
+    "spartanweaponry:iron_quarterstaff",
+    "spartanweaponry:iron_warhammer",
+    "spartanweaponry:iron_battle_hammer"
+   ]
+  },
+  {
+   "hub": "spartanweaponry:netherite_longsword",
+   "members": [
+    "spartanweaponry:netherite_dagger",
+    "spartanweaponry:netherite_greatsword",
+    "spartanweaponry:netherite_spear",
+    "spartanweaponry:netherite_halberd",
+    "spartanweaponry:netherite_battleaxe",
+    "spartanweaponry:netherite_warhammer",
+    "spartanweaponry:netherite_flanged_mace",
+    "spartanweaponry:netherite_scythe",
+    "spartanweaponry:netherite_glaive",
+    "spartanweaponry:netherite_pike",
+    "spartanweaponry:netherite_lance",
+    "spartanweaponry:netherite_boomerang",
+    "spartanweaponry:netherite_rapier"
+   ]
+  },
+  {
+   "hub": "spartanweaponry:blaze_head",
+   "members": [
+    "spartanweaponry:cave_spider_head",
+    "spartanweaponry:drowned_head",
+    "spartanweaponry:enderman_head",
+    "spartanweaponry:husk_head",
+    "spartanweaponry:spider_head",
+    "spartanweaponry:stray_skull",
+    "spartanweaponry:witch_head",
+    "spartanweaponry:zombified_piglin_head"
+   ]
+  },
+  {
+   "hub": "spartanweaponry:large_arrow_quiver",
+   "members": [
+    "spartanweaponry:huge_arrow_quiver",
+    "spartanweaponry:small_bolt_quiver",
+    "spartanweaponry:medium_bolt_quiver",
+    "spartanweaponry:large_bolt_quiver",
+    "spartanweaponry:huge_bolt_quiver",
+    "spartanweaponry:large_quiver_brace",
+    "spartanweaponry:huge_quiver_brace"
+   ]
+  },
+  {
+   "hub": "spartanweaponry:iron_arrow",
+   "members": [
+    "spartanweaponry:wooden_arrow",
+    "spartanweaponry:copper_arrow",
+    "spartanweaponry:diamond_arrow",
+    "spartanweaponry:netherite_arrow",
+    "spartanweaponry:copper_bolt",
+    "spartanweaponry:diamond_bolt",
+    "spartanweaponry:netherite_bolt",
+    "spartanweaponry:spectral_bolt",
+    "spartanweaponry:explosive_arrow"
+   ]
+  }
+ ],
+ "notes": "THE BIG TRAP IN THIS MOD IS CONDITIONAL MATERIALS, AND MORE THAN HALF THE JAR IS AFFECTED. Verified against SpartanWeaponry-1.20.1-forge-3.2.1-all.jar (mods.toml modId=\"spartanweaponry\", version 3.2.1, forge \"[47,)\", minecraft \"[1.20.1]\", optional shouldersurfing; no fabric.mod.json). The strict 3-segment scan finds 505 item. and 11 block. keys = 516 lang-named ids across 1465 item models. Grouping the item keys by weapon-type suffix gives 24 weapon classes across 24 material prefixes. ONLY SEVEN MATERIALS WORK IN A VANILLA+FORGE PACK: wooden, stone, iron, golden, diamond, netherite and copper. Every weapon in the other eleven metal prefixes - aluminum, bronze, constantan, electrum, invar, lead, nickel, platinum, silver, steel, tin, 273 ids in total - is gated behind a forge:not / forge:tag_empty condition on that metal's ingot tag, e.g. aluminum_dagger.json requires #spartanweaponry:ingots/aluminum to be non-empty and bronze requires #forge:ingots/bronze. With no mod supplying those ingots the recipes never load and every one of those 273 quests is uncompletable. Copper survives the same gate only because Forge populates #forge:ingots/copper from the vanilla copper ingot, which is why copper is the one 'addon' material this chain uses. NONE of the 273 appears in the chain or in any wheel. THIRTY MORE IDS DROPPED, EACH FOR A DIFFERENT REASON: the 24 custom_* weapons and silent_gear_parrying_dagger are the Silent Gear compat set - their lang values are literally '%s Battleaxe' and '%s Parrying Dagger', they appear in NO data file anywhere in the jar, and a quest for one would render with an unresolved format specifier in its name; spartanweaponry:greaseball is a stale duplicate of grease_ball (identical display name 'Grease Ball', but only grease_ball has the recipe and the data references); spartanweaponry:proj_tipped is a lang FORMAT string, 'Tipped %s', not an item; spartanweaponry:parrying_dagger and spartanweaponry:parrying_dagger_blade have no recipe and no data reference - the real parrying daggers are all material-prefixed; and spartanweaponry:piglin_head is the cleanest catch of the lot - it has a lang key but NO item model, NO blockstate and NO block loot table, and the reason is visible in data/spartanweaponry/loot_modifiers/piglin_drop_head.json, whose \"skull\" field is minecraft:piglin_head. Vanilla 1.20 added the Piglin Head, the mod deferred to it, and only the lang line was left behind. That leaves 213 ids obtainable in a vanilla+Forge pack, and this file draws exclusively from them. THIS MOD HAS NO KILLABLE ENTITIES AT ALL. All nine entity.spartanweaponry.* keys - arrow, bolt, boomerang, explosive_arrow, javelin, spectral_bolt, throwing_knife, throwing_weapon, tomahawk - are flying projectile entities for the thrown and fired weapons. There is not one spawn egg, not one entity loot table, not one biome modifier in the jar. No kill: step appears in this chain and none should ever be generated for this namespace. HEADS - TEN VERIFIED, ALL BY THE SAME THREE-PART PROOF: item model + blockstate + block loot table. blaze_head, cave_spider_head, drowned_head, enderman_head, husk_head, illager_head, spider_head, stray_skull, witch_head, zombified_piglin_head. They come from 21 spartanweaponry:decapitate global loot modifiers under data/spartanweaponry/loot_modifiers/, each conditioned on spartanweaponry:new_heads_enabled and minecraft:killed_by_player - so if a pack turns that config off the whole wheel dies with it, which is worth knowing before generating. Ten more blockstates (blaze_wall_head and its siblings) carry no lang key of their own and are the wall-mounted states of the same blocks, not separate ids - this is the blockstate-inflation the brief warns about, in mirror image. ORDERING is the recipe graph, which in this mod is unusually explicit because every weapon names its component: simple_handle (rod + #forge:grass) and handle (rod + string) and pole (three rods + string/leather/wool) are literal ingredients of the weapons that follow, so they open the chain; wooden_club needs only #minecraft:logs and is the one weapon craftable before any component at all; then the material ladder stone -> copper -> iron -> diamond -> netherite, with netherite reached by smithing_transform. The ranged branch is ordered by its own dependency chain: bolt before the crossbow can be used, quiver_compartment before any quiver upgrade because it is the smithing template, medium_quiver_brace before medium_arrow_quiver because it is the addition. The explosive branch is rooted on explosive_charge (gunpowder + iron nuggets), which dynamite and explosive_arrow both consume, and the oil branch on grease_ball. NO ARMOUR EXISTS in this mod, so the 51.9% helmet-only rule does not apply; the equivalent move made here is to quest ONE weapon per role and wheel the rest of each material's twenty-four-strong family, which is what the iron and netherite wheels are for. CONSENSUS: spartanweaponry is absent from moddb.json, so the recipe graph and the conditional-recipe analysis above are the only ordering authority used, and there is no conflict to record."
+}

@@ -1,0 +1,132 @@
+{
+ "mod": "botanicadds",
+ "verified_against": "BotanicAdditions-1.20.1-20.1.3.jar",
+ "item_count_in_jar": 42,
+ "parent_mod": "botania",
+ "chain": [
+  {
+   "id": "botanicadds:mana_lapis",
+   "title": "Lapis That Holds Charge",
+   "desc": "Botania stops at mana diamond and mana pearl. Mana lapis is the fourth mana gem and the base of everything below."
+  },
+  {
+   "id": "botanicadds:mana_lapis_block",
+   "title": "Stacked Blue",
+   "desc": "Nine mana lapis. Storage, and a component of the tesseract line."
+  },
+  {
+   "id": "botanicadds:elven_lapis",
+   "title": "Traded Up",
+   "desc": "Mana lapis put through an Alfheim Portal trade comes back elven, the same way manasteel becomes elementium."
+  },
+  {
+   "id": "botanicadds:elvenwood_log",
+   "title": "A Fourth Magic Wood",
+   "desc": "Elvenwood sits above livingwood and dreamwood. It is the structural material for the elven machines this mod adds."
+  },
+  {
+   "id": "botanicadds:elven_altar",
+   "title": "A Petal Apothecary With Reach",
+   "desc": "The elven counterpart to Botania's Petal Apothecary, working recipes the stone bowl cannot."
+  },
+  {
+   "id": "botanicadds:elven_brewery",
+   "title": "Brewing Past The Brewery",
+   "desc": "The elven brewery extends Botania's brew system with recipes locked behind the Alfheim trade."
+  },
+  {
+   "id": "botanicadds:dreamrock",
+   "title": "Livingrock That Sleeps",
+   "desc": "Dreamrock is to livingrock what dreamwood is to livingwood, and it is what the Dreaming Mana Pool is built from."
+  },
+  {
+   "id": "botanicadds:dreaming_pool",
+   "title": "Two Pools, One Block",
+   "desc": "The Dreaming Mana Pool holds two independent mana pools in a single block, halving the footprint of any pool wall."
+  },
+  {
+   "id": "botanicadds:elven_fluxfield",
+   "title": "Mana Into Power, Faster",
+   "desc": "The elven Mana Fluxfield converts mana to Forge Energy at a rate the standard fluxfield cannot reach."
+  },
+  {
+   "id": "botanicadds:mana_tesseract",
+   "title": "Mana Without Sparks",
+   "desc": "A channel-named tesseract moves mana across arbitrary distance, replacing the spark and corporea plumbing entirely."
+  },
+  {
+   "id": "botanicadds:tesseract_attuner",
+   "title": "Naming The Channel",
+   "desc": "Rename the attuner in an anvil to create a channel, then craft it with a tesseract to bind it. Sneak-click toggles public and private."
+  },
+  {
+   "id": "botanicadds:gaia_shard",
+   "title": "Splinters Of The Guardian",
+   "desc": "Gaia shards are this mod's reward for the Guardian of Gaia ritual and the only path to gaiasteel."
+  },
+  {
+   "id": "botanicadds:gaia_plate",
+   "title": "An Agglomeration Plate That Goes Higher",
+   "desc": "The Gaia Agglomeration Plate is to the Terrestrial Agglomeration Plate what gaiasteel is to terrasteel."
+  },
+  {
+   "id": "botanicadds:gaiasteel_ingot",
+   "title": "Above Terrasteel",
+   "desc": "Dragonstone, Gaia ingot and pixie dust worked on the Gaia Plate. Gaiasteel is Botanic Additions' top metal."
+  },
+  {
+   "id": "botanicadds:gaiasteel_pylon",
+   "title": "The Pylon Above Gaia",
+   "desc": "Botania's pylon ladder runs mana, natura, gaia. Gaiasteel adds a fourth."
+  },
+  {
+   "id": "botanicadds:terra_catalyst",
+   "title": "A Catalyst For Living Recipes",
+   "desc": "The Terra Catalyst extends Botania's alchemy and conjuration catalyst pattern to terrasteel-tier recipes."
+  },
+  {
+   "id": "botanicadds:mana_ring_gaia",
+   "title": "The Last Band Of Mana",
+   "desc": "The Gaia Band of Mana continues Botania's ring ladder past Greater, with a matching Band of Aura beside it."
+  },
+  {
+   "id": "botanicadds:mana_stealer_sword",
+   "title": "Drinking From The Enemy",
+   "desc": "The Mana Stealing Blade fills your mana ring off the mobs it kills instead of off a pool."
+  },
+  {
+   "id": "botanicadds:terra_protector",
+   "title": "The Guard That Does Not Sleep",
+   "desc": "A terrasteel-tier bauble that intercepts damage the Ring of Loki cannot."
+  },
+  {
+   "id": "botanicadds:sculk_petal",
+   "title": "Shearing The Deep Dark",
+   "desc": "Shear a sculk block for a sculk petal - the only Botania-style petal harvested rather than dyed, and the reagent for the Reduced Sculk Sensor."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "botanicadds:flowers/necroidus",
+   "members": [
+    "botanicadds:flowers/rainute",
+    "botanicadds:flowers/glaciflora",
+    "botanicadds:flowers/tempestea",
+    "botanicadds:flowers/vibrantia",
+    "botanicadds:flowers/apicaria",
+    "botanicadds:flowers/energizera"
+   ]
+  },
+  {
+   "hub": "botanicadds:gaiasteel_ingot",
+   "members": [
+    "botanicadds:gaiasteel_block",
+    "botanicadds:gaiasteel_nugget",
+    "botanicadds:aura_ring_gaia",
+    "botanicadds:rune_energy",
+    "botanicadds:rune_tp"
+   ]
+  }
+ ],
+ "notes": "Botanic Additions ships NO data/botanicadds/recipes at all - every recipe is registered in code through HammerLib - so ordering here is read from the bundled Botania lexicon pages in assets/botanicadds/lang/en_us.lang, which is a legacy .lang file rather than JSON and has to be parsed line by line. The seven generator flowers are registered under a path prefix: the class constant pool holds the literal \"flowers/\" and the blockstate files live at assets/botanicadds/blockstates/flowers/<name>.json, and a blockstate path IS the block registry path, so the ids are botanicadds:flowers/<name> and NOT botanicadds:<name>. Their floating twins (botanicadds:flowers/floating/<name>) verify the same way but are left out as pure variants. Flower behaviour taken from the lexicon reference lines: necroidus builds withers from mana, rainute drinks rain, glaciflora wants cold, tempestea runs on lightning, vibrantia reads sculk echoes, apicaria calms bees, energizera harvests silently. Parent items this addon assumes you already have: botania:manasteel_ingot, botania:mana_diamond, botania:mana_pearl, botania:alfheim_portal, botania:livingrock, botania:livingwood, botania:dreamwood, botania:mana_pool, botania:terrestrial_agglomeration_plate, botania:gaia_ingot, botania:pixie_dust, botania:mana_ring_greater, a completed Guardian of Gaia ritual."
+}

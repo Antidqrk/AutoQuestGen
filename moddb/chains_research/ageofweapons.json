@@ -1,0 +1,235 @@
+{
+ "mod": "ageofweapons",
+ "verified_against": "AgeOfWeapons - Reforged v.1.3.2c.jar",
+ "item_count_in_jar": 570,
+ "chain": [
+  {
+   "id": "ageofweapons:shard_stone",
+   "title": "Knapped From a Rock",
+   "desc": "Nine stone shards from a handful of cobblestone; the Stone Age tier opens here and needs no tools at all."
+  },
+  {
+   "id": "ageofweapons:hand_ax",
+   "title": "The First Thing You Swing",
+   "desc": "Two stone shards in an L; the cheapest weapon in a mod of 561 items."
+  },
+  {
+   "id": "ageofweapons:bone_knife",
+   "title": "Sharpened Bone",
+   "desc": "Two bones set diagonally, the other half of the twelve-recipe Stone Age tier."
+  },
+  {
+   "id": "ageofweapons:caveman_helmet",
+   "title": "Hide Over the Head",
+   "desc": "The Stone Age headpiece; the rest of the caveman set is the same idea in three more shapes."
+  },
+  {
+   "id": "ageofweapons:hammer",
+   "title": "The Tool That Makes Tools",
+   "desc": "Stone tool material over a stick. Every metal blank in the mod is made by holding this hammer in the grid, so nothing past the Stone Age happens without it."
+  },
+  {
+   "id": "ageofweapons:blank_template",
+   "title": "Nine Stone, One Blank",
+   "desc": "A full grid of stone yields nine blank templates; these are stonecut into the shape templates and also act as the addition in every part-smithing recipe."
+  },
+  {
+   "id": "ageofweapons:sword_template",
+   "title": "Cut to a Shape",
+   "desc": "A stonecutter turns a blank template into a shape template - one of thirty-seven such cuts, one per weapon and tool family."
+  },
+  {
+   "id": "ageofweapons:tiny_iron_blank",
+   "title": "Iron, Beaten Small",
+   "desc": "An iron ingot worked with the hammer; the smallest of the five blank sizes that determine which weapons a metal can become."
+  },
+  {
+   "id": "ageofweapons:large_iron_blank",
+   "title": "Iron, Beaten Large",
+   "desc": "Blanks step up through small and medium to large and huge; a broadsword needs large, a claymore or cleaver needs huge."
+  },
+  {
+   "id": "ageofweapons:broadsword_iron_part",
+   "title": "Pressed Into a Blade",
+   "desc": "Smithing table: broadsword template, a large iron blank as the base, a blank template as the addition. Immersive Engineering and Energized Power metal presses are optional alternate routes to the same part."
+  },
+  {
+   "id": "ageofweapons:broadsword_iron",
+   "title": "A Blade on a Haft",
+   "desc": "The part over any wooden stick. Every one of the mod's twenty-nine metal weapon families is assembled exactly this way."
+  },
+  {
+   "id": "ageofweapons:katana_iron",
+   "title": "Edo Steel",
+   "desc": "The Edo Period tier: katana, wakizashi and ninjato, all from large or medium blanks through their own templates."
+  },
+  {
+   "id": "ageofweapons:boarding_axe_iron",
+   "title": "Over the Gunwale",
+   "desc": "The Piracy tier's signature tool, alongside the cutlass-adjacent saber and the harpoon."
+  },
+  {
+   "id": "ageofweapons:iron_stick",
+   "title": "A Haft That Won't Splinter",
+   "desc": "Two iron ingots stacked; the metal handle the batons, nunchucks and longsticks are built on."
+  },
+  {
+   "id": "ageofweapons:cloth",
+   "title": "Rabbit Hide and String",
+   "desc": "Four cloth per craft; it backs every piece of the mod's five armour sets."
+  },
+  {
+   "id": "ageofweapons:iron_armor_plate",
+   "title": "Plate for a Uniform",
+   "desc": "Pressed from a tiny iron blank, or hammered by hand; the armor_plates/iron tag it fills is what the soldier set actually reads."
+  },
+  {
+   "id": "ageofweapons:soldier_helmet",
+   "title": "The Early Modern Head",
+   "desc": "Three iron plates over two cloth. The Early Modern Age tier is where armour and firearms arrive together."
+  },
+  {
+   "id": "ageofweapons:recurve_bow",
+   "title": "Drawn Back Further",
+   "desc": "The mod's own bow line, and the required base for the compound bow that follows it."
+  },
+  {
+   "id": "ageofweapons:compound_bow",
+   "title": "Cams and Cable",
+   "desc": "Wooden sticks braced around a recurve bow; the deepest bow in the mod."
+  },
+  {
+   "id": "ageofweapons:grenade",
+   "title": "Modern Age Opens Loud",
+   "desc": "The base thrown explosive; frag, cluster, smoke and poison variants all branch off this tier."
+  },
+  {
+   "id": "ageofweapons:mech_suit_helmet",
+   "title": "Sealed Head",
+   "desc": "The heaviest armour the mod ships, and the last set before the Future tier stops using plate at all."
+  },
+  {
+   "id": "ageofweapons:energy_crystal",
+   "title": "Amethyst Under Blaze Powder",
+   "desc": "An amethyst cluster ringed with blaze powder; it fills the forge:gems/energy tag and gates the entire Future tier."
+  },
+  {
+   "id": "ageofweapons:lightsaber_blue",
+   "title": "Netherite Around a Crystal",
+   "desc": "Netherite ingots, a blue dye and an energy crystal; the four colours and their double-bladed forms are all the same shape."
+  },
+  {
+   "id": "ageofweapons:broadsword_netherite",
+   "title": "The Template, As Vanilla Intended",
+   "desc": "A vanilla Netherite Upgrade Smithing Template on the diamond weapon - the mod reuses vanilla's own netherite step rather than inventing one."
+  },
+  {
+   "id": "ageofweapons:excalibur",
+   "title": "Left in the Stronghold",
+   "desc": "No recipe exists for it anywhere. It is injected into stronghold corridor and crossing chests, alongside six other named blades."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "ageofweapons:broadsword_iron",
+   "members": [
+    "ageofweapons:katana_iron",
+    "ageofweapons:claymore_iron",
+    "ageofweapons:glaive_iron",
+    "ageofweapons:halbert_iron",
+    "ageofweapons:lance_iron",
+    "ageofweapons:machete_iron",
+    "ageofweapons:ninjato_iron",
+    "ageofweapons:saber_iron",
+    "ageofweapons:scythe_iron",
+    "ageofweapons:spear_iron",
+    "ageofweapons:trident_iron",
+    "ageofweapons:wakizashi_iron",
+    "ageofweapons:warhammer_iron"
+   ]
+  },
+  {
+   "hub": "ageofweapons:sword_template",
+   "members": [
+    "ageofweapons:broadsword_template",
+    "ageofweapons:katana_template",
+    "ageofweapons:claymore_template",
+    "ageofweapons:dagger_template",
+    "ageofweapons:glaive_template",
+    "ageofweapons:halbert_template",
+    "ageofweapons:lance_template",
+    "ageofweapons:scythe_template",
+    "ageofweapons:spear_template",
+    "ageofweapons:axe_template",
+    "ageofweapons:shovel_template",
+    "ageofweapons:pickaxe_template",
+    "ageofweapons:hoe_template"
+   ]
+  },
+  {
+   "hub": "ageofweapons:large_iron_blank",
+   "members": [
+    "ageofweapons:tiny_iron_blank",
+    "ageofweapons:small_iron_blank",
+    "ageofweapons:medium_iron_blank",
+    "ageofweapons:huge_iron_blank",
+    "ageofweapons:large_stone_blank",
+    "ageofweapons:large_gold_blank",
+    "ageofweapons:large_diamond_blank",
+    "ageofweapons:large_netherite_blank",
+    "ageofweapons:large_wood_blank"
+   ]
+  },
+  {
+   "hub": "ageofweapons:excalibur",
+   "members": [
+    "ageofweapons:master_sword",
+    "ageofweapons:buster_sword",
+    "ageofweapons:titan_sword",
+    "ageofweapons:sword_of_kings",
+    "ageofweapons:elucidator",
+    "ageofweapons:nightmare_scythe"
+   ]
+  },
+  {
+   "hub": "ageofweapons:soldier_helmet",
+   "members": [
+    "ageofweapons:soldier_chestplate",
+    "ageofweapons:soldier_leggings",
+    "ageofweapons:soldier_boots",
+    "ageofweapons:advanced_soldier_helmet",
+    "ageofweapons:assassin_helmet",
+    "ageofweapons:ninja_helmet",
+    "ageofweapons:mech_suit_helmet",
+    "ageofweapons:caveman_helmet"
+   ]
+  },
+  {
+   "hub": "ageofweapons:grenade",
+   "members": [
+    "ageofweapons:frag_grenade",
+    "ageofweapons:cluster_grenade",
+    "ageofweapons:smoke_grenade",
+    "ageofweapons:poison_grenade",
+    "ageofweapons:dynamite",
+    "ageofweapons:molotov_cocktail",
+    "ageofweapons:throwing_star",
+    "ageofweapons:kunai"
+   ]
+  },
+  {
+   "hub": "ageofweapons:energy_crystal",
+   "members": [
+    "ageofweapons:lightsaber_blue",
+    "ageofweapons:lightsaber_green",
+    "ageofweapons:lightsaber_red",
+    "ageofweapons:lightsaber_yellow",
+    "ageofweapons:double_lightsaber_blue",
+    "ageofweapons:electrostaff",
+    "ageofweapons:imploder",
+    "ageofweapons:flame_thrower"
+   ]
+  }
+ ],
+ "notes": "Forge, 1.20.1, confirmed from META-INF/mods.toml (modId \"ageofweapons\", loaderVersion [46,), minecraft [1.20,1.20.3), optional majruszsdifficulty; no fabric.mod.json). The Modrinth listing shows forge and neoforge on older files but this newest 1.20.1 build is forge-only. ID SET. 603 model/item stems intersect with 610 item.ageofweapons.<name> lang keys to give 561 items - unusually, lang is LARGER than models here because the mod also names items it renders from a shared parent. 9 blocks each carry both a blockstate and a block.ageofweapons.<name> key. Verified set = 570. No widening was needed. NBT-VARIANT CHECK - THE OPPOSITE OF TACZ. Every weapon is a separate registered item id. The mod's shape is family x material: 29 metal weapon families each ship six material variants and six matching _part items, giving roughly 350 of the 561 ids, and each one has its own model, lang key, recipe file and data/ageofweapons/capabilities/weapons/<id>.json stat file. Nothing is a shared id with a tag, so plain-id wheels are correct and were used. OBTAINABILITY - 9 DROPPED. ageofweapons:handle, shears_template, weapon_box_1, weapon_box_2, weapon_box_3, nexus_blue, nexus_green, nexus_red and nexus_yellow are registered but produced by no recipe and named in no loot table. The four nexus blocks and three weapon boxes belong to the mod's arena/minigame side (itemGroup lang confirms a minigame tab) and are placed by an operator, not earned. All nine are excluded. LOOT-ONLY ITEMS VERIFIED, NOT ASSUMED. The seven named blades - excalibur, master_sword, buster_sword, titan_sword, sword_of_kings, elucidator, nightmare_scythe - have no recipe of any type. Their source is data/ageofweapons/loot_tables/inject/stronghold_corridor.json and inject/stronghold_crossing.json, which list all seven. That is a real, verified source, so they are questable and form the fourth wheel. ORDERING comes from the mod's own recipe folder taxonomy, which is an explicit age ladder: weapons/stone_age (12 recipes), weapons/antiquity (29), weapons/middle_ages (105), weapons/edo_period (35), weapons/piracy (36), weapons/early_modern_age (30), weapons/modern_age (16), weapons/future (19), plus weapons/vanilla and weapons/fantasy as cross-cutting sets. The chain walks that ladder. The crafting spine underneath it is uniform and was read from parts/** and weapons/**: hammer -> <size>_<material>_blank -> smithing_transform with a shape template and a blank_template addition -> <weapon>_<material>_part -> crafting_shaped with a stick -> the weapon; netherite weapons are then a vanilla netherite_upgrade_smithing_template on the diamond weapon. COMPAT RECIPES ARE NOT REQUIRED. 426 of the 1172 recipe files sit under compat/energized_power and compat/immersive_engineering and are metal_press duplicates of the parts recipes, every one guarded by a forge:mod_loaded condition. The smithing route in parts/** is the vanilla-only path and is what the chain assumes, so no chain step depends on another mod being installed. ARMOUR RULE APPLIED. Only helmets are quested (caveman, soldier, mech suit); the soldier set's other three pieces plus the other four helmets sit in one wheel, and no lone chestplate, leggings or boots quest was emitted. Every _slab, _stairs, _wall, _trim and stripped_ id is excluded - this mod ships none of those anyway. Seven wheels sized 13, 13, 9, 6, 8, 8 and 8. The chain is 25 steps against 570 ids because the mod's real depth is width, not length: it repeats one crafting spine across eight ages, six materials and twenty-nine families, so the wheels carry the breadth and the chain carries the ladder."
+}

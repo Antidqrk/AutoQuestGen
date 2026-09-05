@@ -1,0 +1,257 @@
+{
+ "mod": "bosses_of_mass_destruction",
+ "jar": "bosses_of_mass_destruction__BOMD-Forge-1.20.1-1.1.2.jar",
+ "ids_in_jar": 21,
+ "entities_in_jar": 4,
+ "videos": [
+  {
+   "id": "vTWVm_hbMKE",
+   "title": "Bosses of Mass Destruction Mod (1.16.5) | Minecraft Mod Showcase",
+   "channel": "Crimson Gaming",
+   "views": 157395,
+   "duration": 318,
+   "chars": 4640,
+   "secs": 471
+  },
+  {
+   "id": "QW29P1WZT_M",
+   "title": "Bosses Of Mass Destruction (1.21) | (Minecraft Mod Showcase)",
+   "channel": "Eccentric Emerald",
+   "views": 141099,
+   "duration": 242,
+   "chars": 3408,
+   "secs": 156
+  }
+ ],
+ "items": {
+  "bosses_of_mass_destruction:soul_star": {
+   "kind": "item",
+   "mentions": 3,
+   "videos": 2,
+   "first_at": 0.1765,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "bosses_of_mass_destruction:crystal_fruit": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7015,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "bosses_of_mass_destruction:void_thorn": {
+   "kind": "item",
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.7074,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "entities": {
+  "bosses_of_mass_destruction:gauntlet": {
+   "kind": "entity",
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.3701,
+   "praise": 0,
+   "warn": 2,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "boss",
+    "kill",
+    "lang"
+   ]
+  },
+  "bosses_of_mass_destruction:void_blossom": {
+   "kind": "entity",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.571,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "boss",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "bosses_of_mass_destruction:lich": {
+   "kind": "entity",
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.2313,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0,
+   "evidence": [
+    "boss",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  }
+ },
+ "human_notes": {
+  "_source": "guide (2 transcribed showcases) + jar (kill advancements, c:bosses tag, loot tables, structures)",
+  "summoning": [
+   "None of these bosses is simply found and fought — each needs a summon step, which is the real quest content",
+   "bosses_of_mass_destruction:soul_star drops from UNDEAD mobs at a small chance, is thrown like an eye of ender to locate the Lich Tower, and is then placed in the bosses_of_mass_destruction:chiseled_stone_altar on the tower's upper floor to summon entity:bosses_of_mass_destruction:lich",
+   "bosses_of_mass_destruction:obsidilith_end_frame (Obsidian Altar) takes a vanilla ender eye to summon entity:bosses_of_mass_destruction:obsidilith, in a rare structure on the edge of the End islands",
+   "bosses_of_mass_destruction:void_blossom_block is literally named the Void Blossom Boss Spawner",
+   "The Nether Gauntlet is found in a rare nether structure and is already present — no summon item"
+  ],
+  "how_to_fight": [
+   "entity:bosses_of_mass_destruction:gauntlet is immune everywhere except its EYE: the guide says you must destroy one of the four eye blocks in the arena and that only the eye in the middle of its hand takes damage. A pure damage-race quest description would be wrong",
+   "The Gauntlet blinds you and the blindness cannot be prevented — the guide's advice is to carry MILK to clear it",
+   "entity:bosses_of_mass_destruction:lich spawns phantoms continuously; the guide warns the phantom load, not the boss, is what eventually kills you",
+   "entity:bosses_of_mass_destruction:obsidilith turns invincible at roughly a third health and spawns pillars you must break to restore its vulnerability, while its other attacks keep running"
+  ],
+  "boss_order": [
+   "entity:bosses_of_mass_destruction:lich — overworld, lich_tower structure; the usual first target",
+   "entity:bosses_of_mass_destruction:void_blossom — overworld, its own structure",
+   "entity:bosses_of_mass_destruction:gauntlet — nether, gauntlet_arena structure",
+   "entity:bosses_of_mass_destruction:obsidilith — END; its advancement's parent is minecraft:end/kill_dragon, so the mod itself places it after the Ender Dragon"
+  ],
+  "prep": [
+   "Obsidilith is explicitly post-Ender-Dragon by the mod's own advancement tree — do not gate anything before the dragon on it",
+   "Gauntlet is nether-tier; Lich and Void Blossom are overworld-tier"
+  ],
+  "order": [
+   "Overworld (Lich, Void Blossom) -> Nether (Gauntlet) -> End (Obsidilith)",
+   "Each boss has a dedicated arena structure with its own chest loot table, so finding the structure is the real gate, not the fight"
+  ],
+  "key_drops": [
+   "bosses_of_mass_destruction:ancient_anima — Night Lich drop",
+   "bosses_of_mass_destruction:crystal_fruit and bosses_of_mass_destruction:void_thorn — Void Blossom drops",
+   "bosses_of_mass_destruction:obsidilith_rune — Obsidilith (code drop, no loot table; it is the advancement icon). The guide adds that the kill leaves a monolith with a shulker box of loot on top",
+   "bosses_of_mass_destruction:gauntlet_blackstone — Gauntlet (code drop, no loot table; it is the advancement icon)",
+   "bosses_of_mass_destruction:soul_star — the Lich gate, and the one item worth an early collect-N quest since it comes from ordinary undead",
+   "Craftables worth rewarding: bosses_of_mass_destruction:earthdive_spear, :mob_ward (Staff of Suppression), :monolith_block (Blast Amplifier), :levitation_block (Table of Elevation), :charged_ender_pearl"
+  ],
+  "traps": [
+   "Gauntlet and Obsidilith ship NO loot table and NO spawn egg — a jar scan that only reads loot tables will wrongly conclude they are not real mobs. They are: both have minecraft:player_killed_entity advancements and both are in the c:bosses entity tag",
+   "Do not target bosses_of_mass_destruction:comet, :petal_blade, :soul_star, :spore_ball or :blue_fireball — projectiles",
+   "The nine 'downsparkle' ids in this namespace are NOT entities; they appear only inside structure data and a naive spawn-file scan mistakes them for mobs"
+  ],
+  "signature": [
+   "entity:bosses_of_mass_destruction:obsidilith",
+   "entity:bosses_of_mass_destruction:gauntlet",
+   "entity:bosses_of_mass_destruction:lich",
+   "entity:bosses_of_mass_destruction:void_blossom"
+  ]
+ },
+ "verified_entities": {
+  "bosses_of_mass_destruction:gauntlet": {
+   "name": "Nether Gauntlet",
+   "evidence": [
+    "boss",
+    "kill",
+    "lang"
+   ]
+  },
+  "bosses_of_mass_destruction:lich": {
+   "name": "Night Lich",
+   "evidence": [
+    "boss",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  },
+  "bosses_of_mass_destruction:obsidilith": {
+   "name": "Obsidilith",
+   "evidence": [
+    "boss",
+    "kill",
+    "lang"
+   ]
+  },
+  "bosses_of_mass_destruction:void_blossom": {
+   "name": "Void Blossom",
+   "evidence": [
+    "boss",
+    "kill",
+    "lang",
+    "loot"
+   ]
+  }
+ },
+ "unusable_entities": {
+  "bosses_of_mass_destruction:blue_fireball": {
+   "name": "Blue Fireball",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "bosses_of_mass_destruction:comet": {
+   "name": "Comet",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "bosses_of_mass_destruction:petal_blade": {
+   "name": "Petal Blade",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "bosses_of_mass_destruction:soul_star": {
+   "name": "Soul Star",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "bosses_of_mass_destruction:spore_ball": {
+   "name": "Spore",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  }
+ },
+ "fake_item_ids": [
+  "bosses_of_mass_destruction:earthdive_spear_throwing",
+  "bosses_of_mass_destruction:spear",
+  "bosses_of_mass_destruction:throwing"
+ ],
+ "verified_items": [
+  "bosses_of_mass_destruction:ancient_anima",
+  "bosses_of_mass_destruction:blazing_eye",
+  "bosses_of_mass_destruction:brimstone_nectar",
+  "bosses_of_mass_destruction:charged_ender_pearl",
+  "bosses_of_mass_destruction:chiseled_stone_altar",
+  "bosses_of_mass_destruction:crystal_fruit",
+  "bosses_of_mass_destruction:earthdive_spear",
+  "bosses_of_mass_destruction:gauntlet_blackstone",
+  "bosses_of_mass_destruction:levitation_block",
+  "bosses_of_mass_destruction:mob_ward",
+  "bosses_of_mass_destruction:monolith_block",
+  "bosses_of_mass_destruction:obsidian_heart",
+  "bosses_of_mass_destruction:obsidilith_end_frame",
+  "bosses_of_mass_destruction:obsidilith_rune",
+  "bosses_of_mass_destruction:sealed_blackstone",
+  "bosses_of_mass_destruction:soul_star",
+  "bosses_of_mass_destruction:vine_wall",
+  "bosses_of_mass_destruction:void_blossom",
+  "bosses_of_mass_destruction:void_blossom_block",
+  "bosses_of_mass_destruction:void_lily",
+  "bosses_of_mass_destruction:void_thorn"
+ ]
+}

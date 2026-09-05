@@ -1,0 +1,290 @@
+{
+ "mod": "projectexpansion",
+ "verified_against": "projectexpansion-1.20.1-1.1.3.jar",
+ "item_count_in_jar": 174,
+ "chain": [
+  {
+   "id": "projectexpansion:basic_collector",
+   "title": "The First Collector",
+   "desc": "Glass, a furnace, glowstone and a projecte:aeternalis_fuel_block - or just a shapeless conversion of ProjectE's own collector_mk1. This mod is a ProjectE addon and every recipe reaches into that mod."
+  },
+  {
+   "id": "projectexpansion:basic_relay",
+   "title": "The First Relay",
+   "desc": "Glass, obsidian and an aeternalis fuel block, or a straight conversion of projecte:relay_mk1. Relays feed collectors and the pair scale together forever."
+  },
+  {
+   "id": "projectexpansion:basic_emc_link",
+   "title": "The Link",
+   "desc": "A ProjectE condenser, all three covalence dusts and a transmutation tablet. The EMC link is what turns stored EMC back into items on demand."
+  },
+  {
+   "id": "projectexpansion:basic_compressed_collector",
+   "title": "Compressed",
+   "desc": "Nine collectors in a block. Every tier has a compressed form and it is the middle part of that tier's power flower."
+  },
+  {
+   "id": "projectexpansion:basic_power_flower",
+   "title": "The Power Flower",
+   "desc": "Compressed collector, EMC link and relay of the same tier. Power flowers are the whole point of the mod - a self-contained EMC generator - and there is one for each of the sixteen tiers."
+  },
+  {
+   "id": "projectexpansion:basic_alchemical_book",
+   "title": "Somewhere To Keep Knowledge",
+   "desc": "A book, an ender pearl, high covalence dust, a philosopher's stone and red matter. The book line is the mod's other progression and it runs in parallel to the flowers."
+  },
+  {
+   "id": "projectexpansion:dark_collector",
+   "title": "Tier Two",
+   "desc": "Dark matter and a basic collector. Every tier above basic is made by feeding the previous tier's collector its own matter, which is why the ladder is strictly sequential."
+  },
+  {
+   "id": "projectexpansion:red_collector",
+   "title": "Tier Three",
+   "desc": "Red matter and the dark collector. Basic, dark and red are ProjectE's own three matters; everything past this point is matter this mod invents."
+  },
+  {
+   "id": "projectexpansion:magenta_matter",
+   "title": "The First New Matter",
+   "desc": "Magenta is where Project Expansion's own tier ladder starts. From here the tier names are COLOURS IN A NON-OBVIOUS ORDER and guessing it wrong is the easiest mistake to make with this mod."
+  },
+  {
+   "id": "projectexpansion:magenta_power_flower",
+   "title": "Tier Four Flower",
+   "desc": "The fourth flower and the first that needs matter you made rather than matter ProjectE gave you."
+  },
+  {
+   "id": "projectexpansion:magnum_star_ein",
+   "title": "A Bigger Klein Star",
+   "desc": "Magnum stars are the first of three star families, each with ein, zwei, drei, vier, omega and sphere grades. They hold EMC and the alchemical books need them."
+  },
+  {
+   "id": "projectexpansion:advanced_alchemical_book",
+   "title": "The Second Book",
+   "desc": "Basic book plus a magnum star ein and a magnum star omega. The book tier and the star tier advance together."
+  },
+  {
+   "id": "projectexpansion:violet_power_flower",
+   "title": "Tier Seven",
+   "desc": "pink then purple then violet. Three more tiers of the same shape, and the EMC output roughly doubles at each one."
+  },
+  {
+   "id": "projectexpansion:colossal_star_ein",
+   "title": "Bigger Still",
+   "desc": "The colossal family sits above magnum. Six grades again, and drei is made shapelessly from zwei, which is how the whole star line works."
+  },
+  {
+   "id": "projectexpansion:blue_matter",
+   "title": "Tier Eight",
+   "desc": "Violet fuel and violet matter make blue matter. Note that fuel and matter are separate parallel ladders and each tier needs both."
+  },
+  {
+   "id": "projectexpansion:green_power_flower",
+   "title": "Tier Ten",
+   "desc": "cyan then green. By here a single flower out-produces most of a normal ProjectE setup."
+  },
+  {
+   "id": "projectexpansion:gargantuan_star_ein",
+   "title": "The Third Star Family",
+   "desc": "Gargantuan is the top star tier. Eighteen star ids exist in total across the three families."
+  },
+  {
+   "id": "projectexpansion:master_alchemical_book",
+   "title": "The Third Book",
+   "desc": "The book ladder is basic, advanced, master, arcane - four grades, each wanting stars from the family above."
+  },
+  {
+   "id": "projectexpansion:white_power_flower",
+   "title": "Tier Fourteen",
+   "desc": "lime, yellow, orange, white. White is the last ordinary colour before the ladder stops being colours at all."
+  },
+  {
+   "id": "projectexpansion:fading_matter",
+   "title": "Fading",
+   "desc": "Fading is tier fifteen and it is made from WHITE fuel - the name breaks the colour pattern entirely, which is exactly why the ladder has to be read out of the recipes."
+  },
+  {
+   "id": "projectexpansion:fading_power_flower",
+   "title": "The Penultimate Flower",
+   "desc": "Fading compressed collector, fading EMC link and fading relay. One tier left."
+  },
+  {
+   "id": "projectexpansion:final_star_shard",
+   "title": "A Shard Of The End",
+   "desc": "The final star shard is what the last book and the last star are built from."
+  },
+  {
+   "id": "projectexpansion:final_star",
+   "title": "The Final Star",
+   "desc": "The largest EMC store the mod has, and the ingredient the arcane book needs."
+  },
+  {
+   "id": "projectexpansion:arcane_alchemical_book",
+   "title": "The Last Book",
+   "desc": "Final star, final star shard and the master book. The top of the knowledge line."
+  },
+  {
+   "id": "projectexpansion:final_collector",
+   "title": "Tier Sixteen",
+   "desc": "The end of the collector ladder: basic, dark, red, magenta, pink, purple, violet, blue, cyan, green, lime, yellow, orange, white, fading, final."
+  },
+  {
+   "id": "projectexpansion:final_power_flower",
+   "title": "The Last Flower",
+   "desc": "Sixteen tiers of collector, relay and link, and this is what they were all for."
+  },
+  {
+   "id": "projectexpansion:compact_sun",
+   "title": "A Sun In A Block",
+   "desc": "The compact sun is the mod's showpiece block and sits outside the tier ladder entirely."
+  },
+  {
+   "id": "projectexpansion:infinite_fuel",
+   "title": "Fuel That Does Not Run Out",
+   "desc": "Infinite fuel and infinite steak are the mod's two joke-tier endgame items, and both are real craftable ids."
+  },
+  {
+   "id": "projectexpansion:matter_upgrader",
+   "title": "Skip The Ladder",
+   "desc": "The matter upgrader converts matter between tiers directly, which is the mod's concession that sixteen tiers is a lot."
+  },
+  {
+   "id": "projectexpansion:transmutation_interface",
+   "title": "Pipe It In",
+   "desc": "The transmutation interface exposes your transmutation table to automation. It is the last block in the mod and the reason people install it over plain ProjectE."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "projectexpansion:basic_collector",
+   "members": [
+    "projectexpansion:dark_collector",
+    "projectexpansion:red_collector",
+    "projectexpansion:magenta_collector",
+    "projectexpansion:pink_collector",
+    "projectexpansion:purple_collector",
+    "projectexpansion:violet_collector",
+    "projectexpansion:blue_collector",
+    "projectexpansion:cyan_collector",
+    "projectexpansion:green_collector",
+    "projectexpansion:lime_collector",
+    "projectexpansion:yellow_collector",
+    "projectexpansion:orange_collector",
+    "projectexpansion:white_collector",
+    "projectexpansion:fading_collector"
+   ]
+  },
+  {
+   "hub": "projectexpansion:basic_power_flower",
+   "members": [
+    "projectexpansion:dark_power_flower",
+    "projectexpansion:red_power_flower",
+    "projectexpansion:magenta_power_flower",
+    "projectexpansion:pink_power_flower",
+    "projectexpansion:purple_power_flower",
+    "projectexpansion:violet_power_flower",
+    "projectexpansion:blue_power_flower",
+    "projectexpansion:cyan_power_flower",
+    "projectexpansion:green_power_flower",
+    "projectexpansion:lime_power_flower",
+    "projectexpansion:yellow_power_flower",
+    "projectexpansion:orange_power_flower",
+    "projectexpansion:white_power_flower",
+    "projectexpansion:fading_power_flower"
+   ]
+  },
+  {
+   "hub": "projectexpansion:basic_relay",
+   "members": [
+    "projectexpansion:dark_relay",
+    "projectexpansion:red_relay",
+    "projectexpansion:magenta_relay",
+    "projectexpansion:violet_relay",
+    "projectexpansion:blue_relay",
+    "projectexpansion:cyan_relay",
+    "projectexpansion:green_relay",
+    "projectexpansion:lime_relay",
+    "projectexpansion:yellow_relay",
+    "projectexpansion:orange_relay",
+    "projectexpansion:white_relay",
+    "projectexpansion:fading_relay",
+    "projectexpansion:final_relay"
+   ]
+  },
+  {
+   "hub": "projectexpansion:basic_emc_link",
+   "members": [
+    "projectexpansion:dark_emc_link",
+    "projectexpansion:red_emc_link",
+    "projectexpansion:magenta_emc_link",
+    "projectexpansion:violet_emc_link",
+    "projectexpansion:blue_emc_link",
+    "projectexpansion:cyan_emc_link",
+    "projectexpansion:green_emc_link",
+    "projectexpansion:lime_emc_link",
+    "projectexpansion:yellow_emc_link",
+    "projectexpansion:orange_emc_link",
+    "projectexpansion:white_emc_link",
+    "projectexpansion:fading_emc_link",
+    "projectexpansion:final_emc_link"
+   ]
+  },
+  {
+   "hub": "projectexpansion:magnum_star_ein",
+   "members": [
+    "projectexpansion:magnum_star_zwei",
+    "projectexpansion:magnum_star_drei",
+    "projectexpansion:magnum_star_vier",
+    "projectexpansion:magnum_star_omega",
+    "projectexpansion:magnum_star_sphere",
+    "projectexpansion:colossal_star_ein",
+    "projectexpansion:colossal_star_zwei",
+    "projectexpansion:colossal_star_drei",
+    "projectexpansion:colossal_star_vier",
+    "projectexpansion:colossal_star_omega",
+    "projectexpansion:colossal_star_sphere",
+    "projectexpansion:gargantuan_star_ein",
+    "projectexpansion:gargantuan_star_omega"
+   ]
+  },
+  {
+   "hub": "projectexpansion:magenta_matter",
+   "members": [
+    "projectexpansion:pink_matter",
+    "projectexpansion:purple_matter",
+    "projectexpansion:violet_matter",
+    "projectexpansion:blue_matter",
+    "projectexpansion:cyan_matter",
+    "projectexpansion:green_matter",
+    "projectexpansion:lime_matter",
+    "projectexpansion:yellow_matter",
+    "projectexpansion:orange_matter",
+    "projectexpansion:white_matter",
+    "projectexpansion:fading_matter",
+    "projectexpansion:magenta_fuel",
+    "projectexpansion:violet_fuel",
+    "projectexpansion:white_fuel"
+   ]
+  },
+  {
+   "hub": "projectexpansion:white_advanced_alchemical_chest",
+   "members": [
+    "projectexpansion:orange_advanced_alchemical_chest",
+    "projectexpansion:magenta_advanced_alchemical_chest",
+    "projectexpansion:light_blue_advanced_alchemical_chest",
+    "projectexpansion:yellow_advanced_alchemical_chest",
+    "projectexpansion:lime_advanced_alchemical_chest",
+    "projectexpansion:pink_advanced_alchemical_chest",
+    "projectexpansion:gray_advanced_alchemical_chest",
+    "projectexpansion:light_gray_advanced_alchemical_chest",
+    "projectexpansion:cyan_advanced_alchemical_chest",
+    "projectexpansion:purple_advanced_alchemical_chest",
+    "projectexpansion:blue_advanced_alchemical_chest",
+    "projectexpansion:brown_advanced_alchemical_chest",
+    "projectexpansion:green_advanced_alchemical_chest",
+    "projectexpansion:black_advanced_alchemical_chest"
+   ]
+  }
+ ],
+ "notes": "THE HEADLINE FINDING IS THE TIER ORDER, and it cannot be guessed. Project Expansion's sixteen tiers are named after colours but NOT in rainbow order, spectrum order, or vanilla dye order. Walking the collector recipe graph (each X_collector is a shapeless craft of X_matter plus the PREVIOUS tier's collector) gives exactly one Hamiltonian path and it is: basic -> dark -> red -> magenta -> pink -> purple -> violet -> blue -> cyan -> green -> lime -> yellow -> orange -> white -> fading -> final. The matter and fuel ladders confirm it independently (blue_matter is crafted from violet_fuel + violet_matter, cyan from blue, green from cyan, lime from green, yellow from lime, orange from yellow, white from orange, fading from white). Note in particular that 'fading' sounds like a beginner tier and is in fact tier FIFTEEN, and that 'dark' and 'red' - ProjectE's own matters - sit at tiers two and three below every colour. Any quest chain that orders these tiers by intuition will be wrong. LOADER: META-INF/mods.toml, modId projectexpansion, 1.20.1 Forge. Modrinth slug is project-expansion. This is a ProjectE ADDON: data/projecte is present in the jar and essentially every recipe consumes projecte: items (aeternalis_fuel_block, philosophers_stone, transmutation_tablet, condenser_mk1, relay_mk1, collector_mk1, the three covalence dusts, dark_matter, red_matter and the sixteen alchemical bags), so ProjectE must be in the pack for a single quest here to be completable. VERIFICATION, TWO PASSES: pass A took the 178 assets/projectexpansion/models/item stems INTERSECT the item./block. lang keys and gave 174. Pass B independently rebuilt from recipe results, loot-table entry names, blockstates and lang keys and gave 180. All 6 differences resolved and none is an item. WIDENING REJECTED, with reasons: basic_matter, dark_matter, red_matter and final_matter are model-only stems with ZERO data references - they are the parent models the per-tier matter items inherit from, and the real dark_matter and red_matter items belong to projecte, not to this mod; block.projectexpansion.collector translates to the literal string 'Collector.' (with a trailing full stop) and has no model - it is the base block class's fallback name, while every real collector is <tier>_collector; item.projectexpansion.alchemical_book is likewise a base name with no model, the real ids being basic_/advanced_/master_/arcane_alchemical_book. There is also NO uncoloured projectexpansion:advanced_alchemical_chest item despite six lang keys mentioning it - those are the block's tooltip, colour-set message and GUI title. Only the sixteen coloured chests are registered. Final count stays 174, no widening. OBTAINABILITY: 172 of the 174 have a datapack recipe, which is the highest coverage of any mod in this batch. The two exceptions are projectexpansion:arcane_table and projectexpansion:arcane_tablet - both have an item model and a lang key ('Arcane Table', 'Arcane Tablet') but ZERO references anywhere in data/: no recipe, no loot table, no tag, no advancement. They are unreleased or creative-only and are DROPPED; neither appears in the chain or the wheels. That leaves 172 obtainable ids. GRAPH SHAPE: four device families each run the full sixteen tiers (collector, compressed_collector, relay, emc_link), a fifth runs fifteen (power_flower = that tier's compressed collector + emc link + relay), and matter and fuel run twelve each as parallel resource ladders. That accounts for about 130 of the 174 ids. On top sit three star families of six grades each (magnum, colossal, gargantuan - ein, zwei, drei, vier, omega, sphere, each grade a shapeless craft of the one below), four alchemical books, sixteen coloured advanced alchemical chests (each craftable either from the matching projecte alchemical bag or by dyeing another chest), and seven one-off blocks: compact_sun, infinite_fuel, infinite_steak, matter_upgrader, transmutation_interface, knowledge_sharing_book and final_star with its shard. CONSENSUS: moddb.json lists 25 projectexpansion ids and all 25 resolve in this jar. moddb's ordering leads with basic_collector and basic_power_flower and ends with final_star and the arcane book, which agrees with the ladder derived above. No conflict. DESIRABILITY: no ores, ingots, nuggets, slabs or stairs exist here; the *_matter_block and *_fuel_block ids are storage blocks and are represented in the matter wheel by their item forms only."
+}

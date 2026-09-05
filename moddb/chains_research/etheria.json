@@ -1,0 +1,207 @@
+{
+ "mod": "etheria",
+ "verified_against": "etheria-0.3.6.jar",
+ "item_count_in_jar": 113,
+ "chain": [
+  {
+   "id": "etheria:ether_shard",
+   "title": "Crack Open Ether Ore",
+   "desc": "Ether Ore seams generate in stone between y20 and y60; mining one drops Ether Shards, and Fortune multiplies the drop. Shards are the base currency of every recipe and ritual in the mod, so gather far more than the quest asks."
+  },
+  {
+   "id": "etheria:magemicon",
+   "title": "Bind the Codex of Ether",
+   "desc": "The mod's own manual, and the only place the ritual layouts are written down. It tracks your Kor-Lunar level and unlocks new chapters as you progress - you only ever need one, but you will open it constantly."
+  },
+  {
+   "id": "etheria:ether_ingot",
+   "title": "Press Shards into Ingots",
+   "desc": "The structural material for altars, pedestals, runes and the emblem, and every one of them costs four shards. Expect to make dozens over a playthrough, so keep the ore route open."
+  },
+  {
+   "id": "etheria:ether_crystal",
+   "title": "Cut an Ether Crystal",
+   "desc": "Your first Ether vessel. Vessels sitting in your inventory are what pays for spells and rituals - without one charged you cannot cast anything, so carry it at all times."
+  },
+  {
+   "id": "etheria:magic_stick",
+   "title": "Carve the Magic Stick",
+   "desc": "The casting focus. Hold the spell key while it is in hand to open the spell wheel; each cast drains Ether from the vessels you are carrying. One is enough for the whole game."
+  },
+  {
+   "id": "etheria:ether_pedestal",
+   "title": "Lay Out Ether Pedestals",
+   "desc": "Rituals read their ingredients off pedestals placed around the altar, one item per pedestal. Build at least four now and more later - complex rituals want a full ring."
+  },
+  {
+   "id": "etheria:ether_altar",
+   "title": "Raise the Ether Altar",
+   "desc": "The centre of the ritual circle and the gateway to almost everything else this mod makes. Place it with pedestals around it, load the ingredients, and start the rite from the altar."
+  },
+  {
+   "id": "etheria:ether_fragment",
+   "title": "Run Your First Ritual",
+   "desc": "Ether Fragments come off the altar, not a crafting table - this is the ritual that proves your circle works. Fragments feed the orb, the sender and the collector, so make a stack's worth."
+  },
+  {
+   "id": "etheria:ether_orb",
+   "title": "Charge an Ether Orb",
+   "desc": "A far larger Ether vessel than the crystal. Rituals drain Ether fast and the altar refuses to start when you are short, so upgrade your storage before attempting anything advanced."
+  },
+  {
+   "id": "etheria:elemental_emblem",
+   "title": "Forge the Elemental Emblem",
+   "desc": "A compass that points at the Seers' dungeons and at Kor-Lunar. Shift-right-click to change which of them it hunts - all of them are buried underground, so this is the only practical way to find any of them."
+  },
+  {
+   "id": "structure:etheria:cryo",
+   "title": "Descend into the Cryo Dungeon",
+   "desc": "Buried under snowy plains and snowy taiga. Inside are Ether Sources that refill your vessels for free, Ice Sources, sealed rooms behind puzzles, and the chests that hold Cryo materials."
+  },
+  {
+   "id": "etheria:ice_crystal",
+   "title": "Loot an Ice Crystal",
+   "desc": "Pulled out of Cryo dungeon chests, and makeable at the altar later once the Codex unlocks that rite. Right-clicking one snuffs the flame that seals part of the dungeon, and it is also the reagent that attunes a pedestal to Cryo - so bring back more than one."
+  },
+  {
+   "id": "etheria:cryo_pedestal",
+   "title": "Attune a Cryo Pedestal",
+   "desc": "An Ether Pedestal plus an Ice Crystal. Elemental rituals will not fire on plain pedestals - swap some of your ring over to Cryo before trying anything frost-flavoured."
+  },
+  {
+   "id": "structure:etheria:pyro",
+   "title": "Raid the Pyro Dungeon",
+   "desc": "The desert counterpart, also deep underground. It holds Pyro reagents, the archaeology sites that yield Pyro artifacts, and the room containing the Altar of Fate."
+  },
+  {
+   "id": "etheria:fire_seal",
+   "title": "Recover a Fire Seal",
+   "desc": "A Pyro chest drop. It melts the massive ice block that walls off part of the Seers' dungeon - keep one in reserve for whichever dungeon you have not finished yet."
+  },
+  {
+   "id": "etheria:essence_cryo",
+   "title": "Distill Elemental Essence",
+   "desc": "Essence is the upgrade currency: it rerolls artifact stats at Kor-Lunar and levels up spells. Rituals produce it a few at a time and you will never feel like you have enough."
+  },
+  {
+   "id": "etheria:scroll",
+   "title": "Roll a Blank Scroll",
+   "desc": "Blank and useless on its own - it exists to be fed into a ritual that imprints an element onto it. Make one per element you intend to learn."
+  },
+  {
+   "id": "etheria:scroll_cryo",
+   "title": "Learn an Element",
+   "desc": "Using an elemental scroll teaches your mage that element permanently; until then you cannot cast its spells at all. Learn as many as you can find - you switch between them at Kor-Lunar."
+  },
+  {
+   "id": "structure:etheria:ether_tree",
+   "title": "Reach Kor-Lunar",
+   "desc": "The world tree buried under forests, jungles and plains, and the hub of the whole mod. At its roots you swap your active element, socket artifacts into your character, and spend Essence on spell upgrades."
+  },
+  {
+   "id": "etheria:ether_anvil",
+   "title": "Build the Ether Anvil",
+   "desc": "Where artifacts get ascended, where a weapon eats an artifact to inherit its bonuses, and where shards and essences are burned to level a weapon up. Place it near your altar; you will use it constantly."
+  },
+  {
+   "id": "etheria:runic_pedestal",
+   "title": "Set a Runic Pedestal",
+   "desc": "A pedestal with a rune socketed into it. Runes bend a ritual's outcome - luck, speed, stability - so a rite that keeps failing usually just needs the right rune standing beside it."
+  },
+  {
+   "id": "etheria:spell_scroll",
+   "title": "Gamble at the Altar of Fate",
+   "desc": "The Altar of Fate found in the Pyro dungeon consumes a Wish item and rolls artifacts or spell scrolls out of it. Studying a spell scroll is the only way to add a new spell to your wheel."
+  },
+  {
+   "id": "kill:etheria:aerolith",
+   "title": "Slay the Aerolith",
+   "desc": "The Aero guardian, summoned from the Trial Altar in the floating ruins above the plains. Read the Aerolith chapter of the Codex first and bring a shield - deflecting its blades is the fight."
+  },
+  {
+   "id": "etheria:enigma_shard",
+   "title": "Recover an Enigma Shard",
+   "desc": "Pulled out of the corrupted ruins buried under forest, jungle and plains, and reproducible at the altar once you know the rite. They open the mod's endgame layer: Enigma vessels, the Rift anchor, and the Source tools that clean Enigma chains off blocks."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "etheria:rune_wisdom",
+   "members": [
+    "etheria:rune_nature",
+    "etheria:rune_knowledge",
+    "etheria:rune_frostbite",
+    "etheria:rune_shiver",
+    "etheria:rune_blaze",
+    "etheria:rune_ember",
+    "etheria:rune_flow",
+    "etheria:rune_tempest"
+   ]
+  },
+  {
+   "hub": "etheria:essence_ether",
+   "members": [
+    "etheria:essence_cryo",
+    "etheria:essence_pyro",
+    "etheria:essence_aero"
+   ]
+  },
+  {
+   "hub": "etheria:frostwind_mirror",
+   "members": [
+    "etheria:ice_mask",
+    "etheria:winter_pendant",
+    "etheria:frost_scroll",
+    "etheria:snow_rose_of_death",
+    "etheria:burning_heart",
+    "etheria:hellfire_star",
+    "etheria:flame_wings",
+    "etheria:flaming_rose",
+    "etheria:radiance_of_the_fire",
+    "etheria:zephyr_cloak",
+    "etheria:eye_of_the_storm",
+    "etheria:feathered_loop",
+    "etheria:whisper_fang",
+    "etheria:breeze_shell"
+   ]
+  },
+  {
+   "hub": "etheria:frostbound_wish",
+   "members": [
+    "etheria:blazing_wish",
+    "etheria:gale_wish"
+   ]
+  },
+  {
+   "hub": "etheria:grain_of_source",
+   "members": [
+    "etheria:tear_of_source",
+    "etheria:scroll_of_source",
+    "etheria:lens_of_source",
+    "etheria:ampoule_of_source",
+    "etheria:resonator_of_source",
+    "etheria:anchor_of_source"
+   ]
+  },
+  {
+   "hub": "etheria:enigma_orb",
+   "members": [
+    "etheria:enigma_anchor",
+    "etheria:enigma_lens",
+    "etheria:enigma_blackstone"
+   ]
+  },
+  {
+   "hub": "etheria:sandstone_bricks",
+   "members": [
+    "etheria:cracked_sandstone_bricks",
+    "etheria:polished_ice_bricks",
+    "etheria:cracked_ice_bricks",
+    "etheria:polished_diorite_bricks",
+    "etheria:cracked_diorite_bricks",
+    "etheria:brazier"
+   ]
+  }
+ ],
+ "notes": "VERIFIER NOTES - every chain and collection id was re-checked against assets/etheria/lang/en_us.json in etheria-0.3.6.jar and all 113 exist; the six structure ids and etheria:aerolith were re-checked against data/etheria/worldgen/structure/ and the entity lang keys. The crafted steps are in true dependency order: magemicon and ether_ingot need only ether_shard, ether_crystal needs shard+ingot, magic_stick needs ether_crystal, altar/anvil/emblem need ether_ingot, ether_orb needs ether_fragment (step 8), and cryo_pedestal needs ether_pedestal (step 6) plus ice_crystal (step 12). runic_pedestal takes #etheria:runes, and every rune is craftable from ether_shard + ether_ingot + a vanilla reagent, so it is reachable at its position. Ore placement is confirmed from data/etheria/worldgen/placed_feature/ether_ore.json - count 7, trapezoid height y20 to y60 - so the step 1 desc is accurate. The mod's own guide, it/mralxart/etheria/registry/MageMiconRegistry.class, encodes the author's intended order and broadly agrees with this chain: ether ore/shard/ingot, then Kor-Lunar and ether_fragment, then the elemental compass, bosses, runes, artifacts, spell fundamentals, elemental scrolls, ritual fundamentals, then the resource items and vessels and essences, then ether_anvil and the constructs. Only 38 vanilla-style recipes exist in the jar; the great majority of etheria items are produced by RITUALS at etheria:ether_altar (see it/mralxart/etheria/magic/rituals/RitualRegistry.class - it registers results for ETHER_CORE, ETHER_FRAGMENT, ETHER_PRISM, ETHER_COLLECTOR, ETHER_BLOCK, ENIGMA_ORB, ENIGMA_SHARD, ICE_CRYSTAL, ICE_SHARD, SNOW_STONE, FROZEN_STAR, FROST_HEART, EMBERITE, CHARRED_CRYSTAL, FIRE_SEAL, FLAME_FRAGMENT, THAWING_CRYSTAL, WIND_DUST, DRIFT_FEATHER, GLIDE_CRYSTAL, ZEPHYR_CORE, STORM_HEART, AERO_LENS, ESSENCE_AERO/CRYO/PYRO, ELEMENTARY_SCROLL + _AERO/_CRYO/_PYRO, the four elemental emblems, the three catalyst weapons GALE_DANCE/WHISPERING_CODEX/CRYSTAL_HYMN/EMBER_GRIMOIRE, and the whole Source set). That is why several chain steps are ritual outputs rather than grid crafts - the descs avoid claiming a crafting recipe where none exists. Ore drops are hardcoded, not loot tables: etheria:ether_ore drops etheria:ether_shard and etheria:source_ore drops etheria:grain_of_source, both Fortune-scaled (EtherOre.class / SourceOre.class). Elemental reagents and artifacts are injected into the dungeon chests at runtime by ItemsLootModifier and ArtifactsLootModifier keyed on the chest path (cryo/pyro/aero/ruins/enigma), which is why the shipped loot_tables under data/etheria/loot_tables/chests contain only vanilla items - do not conclude from those files that the mod's items are unobtainable. Real structure ids, all from data/etheria/worldgen/structure: cryo (snowy_taiga + snowy_plains, underground), pyro (desert, underground), aero (plains, surface at y75 - holds the Trial Altar and the Aerolith), ether_tree (Kor-Lunar, forest/jungle/plains, underground), enigma_ruins and ruins (same biome tag). Only entity worth killing is etheria:aerolith; every other registered entity is a spell projectile or effect. etheria:ether_loom (Altar of Fate) and etheria:kor_lunar have block items but no recipe - they are found in the pyro and ether_tree structures respectively, so never quest them as crafts. etheria:spell_scroll_empty is explicitly labelled [WIP] in lang and should be left out of any book."
+}

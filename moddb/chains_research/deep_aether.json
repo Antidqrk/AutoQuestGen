@@ -1,0 +1,216 @@
+{
+ "mod": "deep_aether",
+ "verified_against": "deep_aether-1.20.1-1.1.7.jar",
+ "item_count_in_jar": 349,
+ "registers_into": [
+  "aether"
+ ],
+ "chain": [
+  {
+   "id": "dim:aether:the_aether",
+   "title": "Everything Here Is Up There",
+   "desc": "Deep Aether adds NO dimension of its own - it adds nine biomes, an ore and a dungeon to the Aether itself. Pour a water bucket into a glowstone frame first or none of this exists."
+  },
+  {
+   "id": "deep_aether:roseroot_log",
+   "title": "New Wood on the Islands",
+   "desc": "Cut from the roseroot trees of the Aerglow Forest; the first of the mod's five new Aether woods and the one you will meet first."
+  },
+  {
+   "id": "deep_aether:aerglow_blossom",
+   "title": "The Glow in the Forest",
+   "desc": "The signature bloom of the Aerglow Forest biomes, and a common find in Brass Dungeon side chests."
+  },
+  {
+   "id": "deep_aether:skyjade_ore",
+   "title": "Green Seam in the Holystone",
+   "desc": "The mod's own ore. Its biome modifier adds it to every biome tagged #aether:is_aether in the underground_ores step, so it is everywhere the Aether is."
+  },
+  {
+   "id": "deep_aether:skyjade",
+   "title": "Skyjade",
+   "desc": "Smelted or blasted from Skyjade Ore, and also injected into the Aether's own Silver and Gold Dungeon reward chests; the tier that sits between zanite and gravitite."
+  },
+  {
+   "id": "deep_aether:skyjade_pickaxe",
+   "title": "Cutting With Jade",
+   "desc": "Crafted from Skyjade and skyroot sticks; the tool tier you want before the Brass Dungeon, and the base every Stormforged smithing recipe transforms."
+  },
+  {
+   "id": "deep_aether:skyjade_chestplate",
+   "title": "Green Plate",
+   "desc": "Crafted from Skyjade, and the mandatory base item for the Stormforged armour smithing recipes - there is no way to make Stormforged from scratch."
+  },
+  {
+   "id": "deep_aether:combiner",
+   "title": "The Bench That Merges",
+   "desc": "Skyroot planks, holystone, ambrosium and Skyjade. The mod's own workstation, and the reason to mine Skyjade before you have anything to smith."
+  },
+  {
+   "id": "deep_aether:chromatic_aercloud",
+   "title": "The Cloud That Shifts",
+   "desc": "A rare aercloud of the mod's new biomes; five of them are the bulk of the Stratus Ingot recipe, so start hoarding early."
+  },
+  {
+   "id": "deep_aether:slider_eye",
+   "title": "Beat the Slider Clean",
+   "desc": "A FLAWLESS boss drop - the mod's registerFlawlessBossDrops maps slider_flawless_boss_drop to this item, meaning you must kill the Aether's Slider without taking a single hit."
+  },
+  {
+   "id": "deep_aether:medal_of_honor",
+   "title": "Beat the Queen Clean",
+   "desc": "The Valkyrie Queen's flawless drop, on the same no-damage rule. Together with the Slider Eye it is the mod's real difficulty ladder."
+  },
+  {
+   "id": "structure:deep_aether:brass_dungeon",
+   "title": "Fly Up to the Brass Dungeon",
+   "desc": "Do not look for this on the ground. It generates at minY 184 with a range of only 5 blocks, in biomes tagged is_cloud - it hangs in the sky ABOVE the Aether's islands, roughly every 20 chunks. Bring something that lets you gain height and survive the fall."
+  },
+  {
+   "id": "kill:deep_aether:eots_controller",
+   "title": "Eye of the Storm",
+   "desc": "The Brass Dungeon boss, a segmented storm the mod builds out of an eots_controller and a ring of eots_segments. The mod's brass_dungeon advancement hangs off aether:bronze_dungeon, so fight the Slider first."
+  },
+  {
+   "id": "deep_aether:brass_dungeon_key",
+   "title": "The Brass Lock",
+   "desc": "The Eye of the Storm's guaranteed drop, alongside seven to nine Cold Aerclouds; it opens the Brass Dungeon's reward room."
+  },
+  {
+   "id": "deep_aether:stormforged_smithing_template",
+   "title": "The Storm Pattern",
+   "desc": "Injected into the Brass Dungeon reward chest by the stormforged_upgrade_treasure loot modifier. Its own recipe only duplicates a template you already hold, so the reward room is the only way in."
+  },
+  {
+   "id": "deep_aether:stormforged_chestplate",
+   "title": "Stormforged",
+   "desc": "Found as a set in the Brass Dungeon's stormforged chest, and smithable from a Skyjade Chestplate plus a Squall Plate with the Storm pattern."
+  },
+  {
+   "id": "deep_aether:squall_plate",
+   "title": "Melt the Armour Down",
+   "desc": "Smelted from any Stormforged piece. It is the addition slot of the storm weapon recipes, which means sacrificing armour to make the sword and bow."
+  },
+  {
+   "id": "deep_aether:storm_sword",
+   "title": "Sword Out of a Cyclone",
+   "desc": "A Skyjade Sword, a Squall Plate and the Stormforged pattern. The Storm Bow is the same recipe with a Skyjade equivalent base."
+  },
+  {
+   "id": "deep_aether:cloud_cape",
+   "title": "Wearing a Cloud",
+   "desc": "Brass Dungeon treasure, sitting in both the reward and the treasure chest tables alongside the Aercloud Necklace."
+  },
+  {
+   "id": "deep_aether:blade_of_luck",
+   "title": "Luck With an Edge",
+   "desc": "A Brass Dungeon reward-chest weapon whose model swaps through five states as it charges."
+  },
+  {
+   "id": "deep_aether:stratus_smithing_template",
+   "title": "The Pattern in the Gold Room",
+   "desc": "Injected by the gold_loot_stratus_upgrade modifier into the Aether's own gold_dungeon_reward chest, so the Sun Spirit must fall before the top tier opens."
+  },
+  {
+   "id": "deep_aether:stratus_ingot",
+   "title": "Stratus",
+   "desc": "Five Chromatic Aerclouds, gravitite, a zanite gemstone, an ambrosium shard and a Skyjade, all in one shapeless recipe. Also injected into the Silver and Gold Dungeon reward chests."
+  },
+  {
+   "id": "deep_aether:stratus_chestplate",
+   "title": "Above Gravitite",
+   "desc": "A Gravitite Chestplate, a Stratus Ingot and the Stratus pattern; the mod's final armour tier and the end of the Aether's whole material ladder."
+  },
+  {
+   "id": "deep_aether:sun_core",
+   "title": "Beat the Sun Spirit Clean",
+   "desc": "The Sun Spirit's flawless drop, per sun_spirit_flawless_boss_drop. Not a chest item, not a recipe - you have to fight a star without being touched."
+  },
+  {
+   "id": "deep_aether:afterburner",
+   "title": "What the Sun Core Is For",
+   "desc": "A Sun Core caged in obsidian; the only recipe in the jar that consumes the flawless Sun Spirit drop."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "deep_aether:skyjade_helmet",
+   "members": [
+    "deep_aether:skyjade_chestplate",
+    "deep_aether:skyjade_leggings",
+    "deep_aether:skyjade_boots",
+    "deep_aether:skyjade_gloves",
+    "deep_aether:skyjade_sword",
+    "deep_aether:skyjade_axe",
+    "deep_aether:skyjade_shovel",
+    "deep_aether:skyjade_hoe",
+    "deep_aether:skyjade_ring",
+    "deep_aether:skyjade_shield",
+    "deep_aether:skyjade_lantern",
+    "deep_aether:skyjade_moa_armor"
+   ]
+  },
+  {
+   "hub": "deep_aether:roseroot_log",
+   "members": [
+    "deep_aether:yagroot_log",
+    "deep_aether:cruderoot_log",
+    "deep_aether:conberry_log",
+    "deep_aether:sunroot_log",
+    "deep_aether:aseterite",
+    "deep_aether:clorite",
+    "deep_aether:raw_clorite",
+    "deep_aether:nimbus_stone",
+    "deep_aether:aether_mud"
+   ]
+  },
+  {
+   "hub": "deep_aether:stormforged_helmet",
+   "members": [
+    "deep_aether:stormforged_leggings",
+    "deep_aether:stormforged_boots",
+    "deep_aether:stormforged_gloves",
+    "deep_aether:storm_bow",
+    "deep_aether:wind_shield",
+    "deep_aether:aercloud_necklace",
+    "deep_aether:floaty_scarf",
+    "deep_aether:music_disc_cyclone"
+   ]
+  },
+  {
+   "hub": "deep_aether:stratus_helmet",
+   "members": [
+    "deep_aether:stratus_chestplate",
+    "deep_aether:stratus_leggings",
+    "deep_aether:stratus_boots",
+    "deep_aether:stratus_gloves",
+    "deep_aether:stratus_sword",
+    "deep_aether:stratus_pickaxe",
+    "deep_aether:stratus_axe",
+    "deep_aether:stratus_shovel",
+    "deep_aether:stratus_hoe",
+    "deep_aether:stratus_ring",
+    "deep_aether:stratus_shield",
+    "deep_aether:stratus_block"
+   ]
+  },
+  {
+   "hub": "deep_aether:goldenleaf_berries",
+   "members": [
+    "deep_aether:frozen_goldenleaf_berries",
+    "deep_aether:raw_quail",
+    "deep_aether:cooked_quail",
+    "deep_aether:raw_aerglow_fish",
+    "deep_aether:cooked_aerglow_fish",
+    "deep_aether:blue_squash",
+    "deep_aether:green_squash",
+    "deep_aether:purple_squash",
+    "deep_aether:squash_seeds",
+    "deep_aether:antidote",
+    "deep_aether:enchanted_antidote",
+    "deep_aether:golden_swet_ball"
+   ]
+  }
+ ],
+ "notes": "LOADER VERIFIED: META-INF/mods.toml present, no fabric.mod.json, modId=deep_aether, deps forge/minecraft/aether/aeroblender; Modrinth version 1.20.1-1.1.7 lists loaders [forge, neoforge] and game version 1.20.1. Item set = the 349 stems of assets/deep_aether/models/item/*.json intersected with item.deep_aether.* / block.deep_aether.* keys in assets/deep_aether/lang/en_us.json; every id above is a member of that set - NO widening was needed, because both smithing templates (stormforged_smithing_template, stratus_smithing_template) happen to carry BOTH an item.deep_aether.* key and a vanilla-style upgrade.deep_aether.stormforged_upgrade / stratus_upgrade key. The 260-odd skyjade/stratus *_<material>_trim model variants have models but no lang keys and were correctly excluded, as were bronze_compass / silver_compass / gold_compass, which are model overrides rather than items. REGISTERS_INTO aether: the jar ships 36 files under data/aether/ (tags, loot modifiers) and its advancements hang directly off aether: parents - explore_aether has parent aether:enter_aether, brass_dungeon has parent aether:bronze_dungeon, aether_champion has parent aether:gold_dungeon. There is NO data/deep_aether/dimension/ directory at all, so the only correct dimension step is dim:aether:the_aether. BOSS LADDER, taken from the advancement parents and the loot modifiers: aether Bronze Dungeon (Slider) -> deep_aether Brass Dungeon (Eye of the Storm) -> aether Silver Dungeon (Valkyrie Queen) -> aether Gold Dungeon (Sun Spirit), with the mod's own gear gated at each rung. Silver dungeon reward chests get skyjade and stratus_ingot injected (silver_loot_modifiers, silver_loot_reward_modifiers); the Gold dungeon reward chest gets stratus_smithing_template (gold_loot_stratus_upgrade, weight 100), skyjade and stratus_ingot (gold_loot_modifiers); the Bronze dungeon reward chest gets music_disc_atta; and the mod's OWN brass_dungeon_reward chest gets stormforged_smithing_template via a nitrogen_internals:add_dungeon_loot modifier. FLAWLESS BOSS DROPS are the most interesting mechanic in the mod and are verified from the constant table in teamrazor/deepaether/DeepAether.class: slider_flawless_boss_drop -> slider_eye, valkyrie_queen_flawless_boss_drop -> medal_of_honor, sun_spirit_flawless_boss_drop -> sun_core, eots_flawless_boss_drop -> floaty_scarf, aerwhale_king_flawless_boss_drop -> aerwhale_saddle. data/deep_aether/tags/items/flawless_items.json lists exactly those five plus afterburner. NOTE aerwhale_saddle's flawless source is lost_aether_content:aerwhale_king, and the jar ships packs/server/aether_lost_content_not_compat/ with an alternative sun_core-based aerwhale_saddle recipe used only when Lost Aether Content is ABSENT; with both mods installed the not_compat pack is disabled and the saddle is flawless-only. ENTITY VERIFICATION. teamrazor/deepaether/init/DAEntities.class registers fifteen types: storm_arrow, baby_zephyr, venomite_bubble, fire_projectile, wind_crystal, quail_egg, chest_boat, boat, aerglow_fish, quail, venomite, windfly, eots_controller, eots_segment, gentle_wind. Excluded as projectiles/vehicles: storm_arrow, venomite_bubble, fire_projectile, wind_crystal, quail_egg, boat, chest_boat, gentle_wind. Excluded as a boss body part: eots_segment - it shares the Eye of the Storm's lang key and only exists while the controller is alive, so a kill task on it is a trap. Confirmed spawnable: quail (data/deep_aether/forge/biome_modifier/add_quail_spawn.json + spawn egg + loot table), aerglow_fish (add_aerglow_fish_spawn.json + loot table), venomite (spawners block of data/deep_aether/worldgen/biome/yagroot_swamp.json + spawn egg). deep_aether:windfly is REGISTERED IN CODE BUT HAS NO entity.deep_aether.windfly LANG KEY, no loot table, no spawn egg and no spawn entry anywhere - it is unnamed and unspawnable in 1.1.7 and was excluded. deep_aether:baby_zephyr has a lang key but no loot table, no spawn egg and no spawn data; it is produced by the Aether's zephyr, not spawned. kill:deep_aether:eots_controller is the only kill: step and is verified three ways: it has data/deep_aether/loot_tables/entities/eots_controller.json, it is the trigger entity of data/deep_aether/advancements/brass_dungeon.json (minecraft:player_killed_entity), and it appears in the aether_champion flawless trigger. CONSENSUS: moddb's thirteen entries are all real ids and all appear here or in the wheels (brass_dungeon_key, stormforged_*, storm_sword, storm_bow, music_disc_cyclone, blade_of_luck, aercloud_necklace, cloud_cape, wind_shield). moddb's ORDER is unusable though - it puts brass_dungeon_key at 0.000 and everything else after it, i.e. it starts a Deep Aether chapter at the boss key with no path to it. Recipe graph preferred: skyjade ore comes first, the key comes after the boss, and the Stratus tier comes after the Gold Dungeon. STRUCTURE: brass_dungeon is the mod's single structure and is used as the chain's structure: step. data/deep_aether/worldgen/structure/brass_dungeon.json places it in biomes '#deep_aether:is_cloud' with minY 184 and rangeY 5, and its structure_set is random_spread at spacing 20 / separation 12. That minY is the important fact for a player: the Brass Dungeon is a SKY structure floating above the Aether's islands, not something you find by walking, which is why the chain spends a step on reaching it. Its spawn_overrides blank out every vanilla and Aether spawn category inside the bounding box, so the only things in it are what the structure itself places."
+}

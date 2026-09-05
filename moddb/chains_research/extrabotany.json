@@ -1,0 +1,179 @@
+{
+ "mod": "extrabotany",
+ "verified_against": "extrabotany-forge-1.20.1-1.9.2.jar",
+ "item_count_in_jar": 175,
+ "parent_mod": "botania",
+ "chain": [
+  {
+   "id": "extrabotany:manasteel_hammer",
+   "title": "Something To Smash With",
+   "desc": "Livingwood twig and manasteel. Hammers are Extrabotany's second crafting surface: you throw an item onto a pedestal and hit it, and nothing further in this mod works without one."
+  },
+  {
+   "id": "extrabotany:pedestal_livingrock",
+   "title": "The Anvil Underneath",
+   "desc": "A livingrock pedestal holds the item a hammer smashes. Calcite is the alternate material if you prefer the paler block."
+  },
+  {
+   "id": "extrabotany:spirit_fuel",
+   "title": "Fuel For The Grinder",
+   "desc": "Spirit fuel is what a hammer strikes on a pedestal to make spirit fragments. It is the throttle on this mod's entire mid game."
+  },
+  {
+   "id": "extrabotany:spirit_fragment",
+   "title": "Shards Of Something Willing",
+   "desc": "Smash spirit fuel on a pedestal. Fragments buy the three special metals and half the exotic flowers."
+  },
+  {
+   "id": "extrabotany:gilded_potato",
+   "title": "The Absurd Reagent",
+   "desc": "A gilded potato mashed under a hammer becomes the catalyst in every runic-altar metal recipe here. Extrabotany is entirely serious about this."
+  },
+  {
+   "id": "extrabotany:photonium_ingot",
+   "title": "Metal Made Of Light",
+   "desc": "Runic Altar: elementium, mashed gilded potato and a spirit fragment. Photonium is the light-aligned half of Extrabotany's metal pair."
+  },
+  {
+   "id": "extrabotany:nightmare_fuel",
+   "title": "Coal That Dreams Badly",
+   "desc": "Mana infusion on ordinary coal. It is the dark reagent photonium's opposite number needs."
+  },
+  {
+   "id": "extrabotany:shadowium_ingot",
+   "title": "Metal Made Of Absence",
+   "desc": "Runic Altar: elementium, mashed gilded potato and nightmare fuel. Shadowium and photonium are always made as a pair."
+  },
+  {
+   "id": "extrabotany:terrasteel_shield",
+   "title": "A Plate Of Living Earth",
+   "desc": "Terrasteel around a vanilla shield. Botania never made a shield; this is the first rung of a ladder ending in the Achilles Shield."
+  },
+  {
+   "id": "extrabotany:hero_medal",
+   "title": "Proof You Beat The Guardian",
+   "desc": "The Hero Medal has no crafting recipe - it comes off the Guardian of Gaia. Excalibur, the Gaia Hammer, orichalcos and the Achilles Shield all consume one."
+  },
+  {
+   "id": "extrabotany:orichalcos_ingot",
+   "title": "The Metal Of The Ancients",
+   "desc": "Runic Altar: a Gaia ingot, life essence, mashed gilded potato and a hero medal. The top metal, and the only one costing a Gaia kill twice over."
+  },
+  {
+   "id": "extrabotany:aerialite_ingot",
+   "title": "Ingot Of Thin Air",
+   "desc": "Terra Plate: dragonstone, an ender air bottle and phantom membrane. The lightest metal here and the base of the flight items."
+  },
+  {
+   "id": "extrabotany:the_origin",
+   "title": "Where It Began",
+   "desc": "Terrasteel, aerialite and a spirit fragment. First of three cosmic stones; a mana infusion on it also yields an Elytra."
+  },
+  {
+   "id": "extrabotany:the_chaos",
+   "title": "Light Against Shadow",
+   "desc": "Photonium, shadowium and a spirit fragment pressed together. The second stone, and the one that opens the Dimension Catalyst."
+  },
+  {
+   "id": "extrabotany:the_end",
+   "title": "Where It Stops",
+   "desc": "Gaia ingot, orichalcos and a spirit fragment. The third stone, and the most expensive single craft short of the Terra Plate recipes."
+  },
+  {
+   "id": "extrabotany:the_universe",
+   "title": "All Three At Once",
+   "desc": "A Terra Plate agglomeration of Origin, Chaos and End. Extrabotany's endgame token."
+  },
+  {
+   "id": "extrabotany:excalibur",
+   "title": "Drawn, Not Crafted",
+   "desc": "Smithing a hero medal and a dreamwood twig onto a Terra Blade. It hits harder the more health you are missing."
+  },
+  {
+   "id": "extrabotany:failnaught",
+   "title": "The Bow That Never Misses",
+   "desc": "Gaia ingot, mana string and orichalcos. Fires arrows that ignore the arc entirely."
+  },
+  {
+   "id": "extrabotany:gaia_hammer",
+   "title": "The Guardian's Own Weight",
+   "desc": "Smithing a Gaia ingot and a hero medal onto the Terra Smasher. Both a weapon and the pedestal hammer that unlocks the last recipes."
+  },
+  {
+   "id": "extrabotany:rhein_hammer",
+   "title": "Every Hammer, Melted Together",
+   "desc": "A Terra Plate recipe consuming all eight lesser hammers plus Das Rheingold. Extrabotany's completion trophy."
+  },
+  {
+   "id": "extrabotany:achilles_shield",
+   "title": "Invulnerable, Mostly",
+   "desc": "Smithing orichalcos and a hero medal onto the Terrasteel Shield. It blocks from every angle except the one that matters."
+  },
+  {
+   "id": "extrabotany:pleiades_combat_maid_headgear",
+   "title": "Overlord Of The Great Tomb",
+   "desc": "Gaia ingot and Das Rheingold worked onto a terrasteel helmet. The set is a straight upgrade over terrasteel armour."
+  },
+  {
+   "id": "extrabotany:challenge_ticket",
+   "title": "Calling The Third Guardian",
+   "desc": "Gaia ingot, life essence, photonium and shadowium. It summons Guardian of Gaia III, a tier above anything Botania spawns."
+  },
+  {
+   "id": "kill:extrabotany:gaia_3rd",
+   "title": "The Guardian, Third Time",
+   "desc": "Guardian of Gaia III has its own loot table and is the hardest fight in the Botania ecosystem."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "extrabotany:manasteel_hammer",
+   "members": [
+    "extrabotany:elementium_hammer",
+    "extrabotany:terrasteel_hammer",
+    "extrabotany:aerialite_hammer",
+    "extrabotany:photonium_hammer",
+    "extrabotany:shadowium_hammer",
+    "extrabotany:orichalcos_hammer"
+   ]
+  },
+  {
+   "hub": "extrabotany:sunshine_lily",
+   "members": [
+    "extrabotany:moonlight_lily",
+    "extrabotany:twinstar",
+    "extrabotany:stonesia",
+    "extrabotany:necrofleur",
+    "extrabotany:manalink",
+    "extrabotany:mirrowtunia",
+    "extrabotany:omniviolet",
+    "extrabotany:reikarlily",
+    "extrabotany:serenitian",
+    "extrabotany:trade_orchid",
+    "extrabotany:woodienia",
+    "extrabotany:edelweiss",
+    "extrabotany:blood_enchantress",
+    "extrabotany:bellflower"
+   ]
+  },
+  {
+   "hub": "extrabotany:lens_mana",
+   "members": [
+    "extrabotany:lens_potion",
+    "extrabotany:lens_push",
+    "extrabotany:lens_smelt",
+    "extrabotany:lens_trace",
+    "extrabotany:dispersive_ring",
+    "extrabotany:frost_ring",
+    "extrabotany:spider_ring",
+    "extrabotany:jackie_chan_ring",
+    "extrabotany:parkour_ring",
+    "extrabotany:curse_ring",
+    "extrabotany:void_archives",
+    "extrabotany:pandoras_box",
+    "extrabotany:dimension_catalyst"
+   ]
+  }
+ ],
+ "notes": "155 ids resolve as assets/extrabotany/models/item/<id>.json intersected with item./block. lang keys. Progression read from data/extrabotany/recipes/*.json: the mod's private recipe types are pedestal_smash (throw an item on a pedestal, hit it with a hammer), runic_altar, terra_plate, mana_infusion and mana_upgrade. spirit_fuel -> spirit_fragment and gilded_potato -> gilded_potato_mashed are both pedestal_smash, which is why a hammer is step one. hero_medal has no crafting recipe in the jar - it is a Guardian of Gaia drop - and it gates orichalcos_ingot, excalibur, gaia_hammer, achilles_shield, magic_finger and feather_of_jingwei. gaia_3rd and gaia_legacy are the only two entities with loot tables (data/extrabotany/loot_tables/entities/); the other seven entity lang keys (aura_fire, magic_landmine, skull_missile, the three skull_landmine colours, holy_water_grenade) are projectiles and traps and are NOT questable kills. The quartz slab/stair/pillar/smooth variants and the twenty potted_* blocks are deliberately excluded. Parent items this addon assumes you already have: botania:terrasteel_ingot, botania:elementium_ingot, botania:gaia_ingot, botania:life_essence, botania:runic_altar, botania:terra_plate, botania:alchemy_catalyst, botania:terra_sword, botania:manaweave_cloth, botania:livingwood_twig, botania:dreamwood_twig, botania:lens_normal, a completed Guardian of Gaia ritual."
+}

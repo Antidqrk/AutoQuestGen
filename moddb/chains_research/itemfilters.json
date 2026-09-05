@@ -1,0 +1,76 @@
+{
+  "mod": "itemfilters",
+  "verified_against": "item-filters-forge-2001.1.0-build.53.jar",
+  "item_count_in_jar": 15,
+  "chain": [
+    {
+      "id": "itemfilters:always_true",
+      "title": "Always True Filter",
+      "desc": "Eight paper around any wool, for eight of them. This is the only filter with a recipe made of ordinary materials - every other filter in the mod is crafted out of these."
+    },
+    {
+      "id": "itemfilters:tag",
+      "title": "Tag Filter",
+      "desc": "Six filters in two rows of three. Type a tag into it - forge:ingots, minecraft:wool - and it matches every item any mod put in that tag."
+    },
+    {
+      "id": "itemfilters:mod",
+      "title": "Mod Filter",
+      "desc": "Five filters in an X. Give it a mod id and it accepts everything that mod registers, which is how you sort an entire mod's output into one barrel."
+    },
+    {
+      "id": "itemfilters:not",
+      "title": "NOT Filter",
+      "desc": "Three filters stacked in a column, for three. Put another filter inside it and the answer flips - the piece that turns a whitelist into a blacklist."
+    },
+    {
+      "id": "itemfilters:or",
+      "title": "OR Filter",
+      "desc": "Six filters in two columns. Holds several filters and matches if any one of them does, so one slot can accept three unrelated things."
+    },
+    {
+      "id": "itemfilters:and",
+      "title": "AND Filter",
+      "desc": "Two filters, one above the other, for two. Every filter inside must agree before an item passes - this is how you say 'a damaged tool from this one mod'."
+    },
+    {
+      "id": "itemfilters:xor",
+      "title": "XOR Filter",
+      "desc": "Two filters side by side, for two. Matches when exactly one of its two children matches and not both - the cheapest filter in the mod and the hardest to need."
+    },
+    {
+      "id": "itemfilters:id_regex",
+      "title": "ID RegEx Filter",
+      "desc": "Seven filters in a ring with a bar through it. Matches the item id against a regular expression, so '^minecraft:' catches every vanilla item at once."
+    },
+    {
+      "id": "itemfilters:custom",
+      "title": "Custom Filter",
+      "desc": "Six filters in an S. It does nothing on its own - a script, usually KubeJS, has to define what it matches. The escape hatch for rules the other filters cannot express."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "itemfilters:always_true",
+      "members": [
+        "itemfilters:always_false",
+        "itemfilters:or",
+        "itemfilters:and",
+        "itemfilters:not",
+        "itemfilters:xor"
+      ]
+    },
+    {
+      "hub": "itemfilters:tag",
+      "members": [
+        "itemfilters:mod",
+        "itemfilters:id_regex",
+        "itemfilters:damage",
+        "itemfilters:block",
+        "itemfilters:max_count",
+        "itemfilters:custom"
+      ]
+    }
+  ],
+  "notes": "This mod is CATEGORISED AS A LIBRARY on Modrinth but it is NOT one for questing purposes - it registers 15 items and 13 of them have real, ordinary crafting-table recipes, so the chain is real and short rather than empty. Verified against item-filters-forge-2001.1.0-build.53.jar: META-INF/mods.toml modId=itemfilters, modLoader=javafml, minecraft versionRange [1.20.1,), forge [47,), no fabric.mod.json; 56 of 57 class files at major version 61 (Java 17 = 1.20.1), the one outlier being the architectury PlatformMethods stub at 52. ID DERIVATION, two independent passes, and the naive rule OVERCOUNTS here rather than undercounting. Pass 1 (assets): assets/itemfilters/models/item/ holds 16 json files and assets/itemfilters/lang/en_us.json holds 16 distinct item.itemfilters.<name> stems, but the two sets are NOT the same 16 - the intersection is 15. Pass 2 (bytecode, derived without looking at assets at all): the constant pool of dev/latvian/mods/itemfilters/api/ItemFiltersItems.class - parsed properly out of the CONSTANT_Utf8 entries, not regex-scraped - contains exactly the registry names always_true, always_false, or, and, not, xor, tag, mod, id_regex, damage, block, max_count, strong_nbt, weak_nbt, custom. Fifteen, matching pass 1 exactly. A third confirmation: data/itemfilters/tags/items/filters.json lists those same 15 ids and no others. TWO FALSE IDS CAUGHT AND EXCLUDED, both proved false rather than assumed. (a) itemfilters:item_group has a models/item file and a textures/item png but NO lang key, and the string item_group appears in the constant pool of no class in the jar - it is the creative-tab icon image only. (b) itemfilters:filter is the mirror-image trap: it HAS a lang key (item.itemfilters.filter = Item Filter) and a texture, but NO models/item file and no registration in ItemFiltersItems. Reading the model files explains both at once - every filter model is two layers, 'layer0: itemfilters:item/filter' as a shared blank-filter base plus 'layer1' as its own overlay, so filter.png is a shared base texture and not an item of its own. That is the per-overlay model trap in its inverted form, and it is why the model count and the lang count disagree. dev/latvian/mods/itemfilters/item/InventoryFilterItem.class does exist and is presumably what the dead lang key was for, but nothing in the jar registers an instance of it; the only inventory_filter string in the jar is in ItemFilters.class next to InventoryFilterMenu and InventoryFilterScreen, i.e. a MenuType, not an item. UNOBTAINABLE, DROPPED: itemfilters:strong_nbt and itemfilters:weak_nbt are genuinely registered and are in the filters tag, but a full sweep of every recipe json in the jar produces only 13 result ids and neither of those two is among them. There is no loot table, no trade and no structure in the jar either - this mod ships no data/ beyond two item tags and the recipes folder. Both are creative-only in this build and would be uncompletable quests, so they are dropped from the chain and from both wheels. ORDERING is a strict recipe graph with a single root. itemfilters:always_true is the only recipe whose ingredients are vanilla (eight minecraft:paper around one minecraft:wool, yielding 8); every other recipe keys entirely on the itemfilters:filters tag, meaning you must already hold filters to make more. always_true is therefore mandatory first, and everything else is one flat step behind it, differentiated only by how many filters the pattern costs: xor and and cost 2, not costs 3, always_false, block and damage cost 4, mod and max_count cost 5, or, tag and custom cost 6, id_regex costs 7. A shapeless always_true_from_others recipe converts any single filter back into an always_true, which is the mod's recycling loop and why no filter is ever a dead end. CONSENSUS CONFLICT, RECORDED AND OVERRIDDEN: moddb.json lists itemfilters:tag with packs=44 - i.e. present in 44 of the 45 mined packs, higher than almost any item in the database - and puts both itemfilters:mod and itemfilters:tag at pos 0.0, ahead of everything. That is an artefact, not a preference. FTB Quests stores the item-filter half of its own task definitions as itemfilters:tag itemstacks inside the quest file, so a pack that never quests this mod at all still shows itemfilters:tag all over its chapters. The recipe graph is preferred: always_true is first because nothing else can be crafted without it, and tag is second."
+}

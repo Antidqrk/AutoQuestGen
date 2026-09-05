@@ -1,0 +1,113 @@
+{
+ "mod": "ironchest",
+ "verified_against": "ironchest-1.20.1-14.4.4.jar",
+ "item_count_in_jar": 21,
+ "chain": [
+  {
+   "id": "ironchest:copper_chest",
+   "title": "Copper Chest",
+   "desc": "Copper ingots around a wooden chest; 45 slots, the first rung and the cheapest storage upgrade in the pack."
+  },
+  {
+   "id": "ironchest:iron_chest",
+   "title": "Iron Chest",
+   "desc": "Iron ingots around a wooden chest, or glass and iron around a Copper Chest; 54 slots and the tier everything else is measured against."
+  },
+  {
+   "id": "ironchest:gold_chest",
+   "title": "Gold Chest",
+   "desc": "Gold ingots around an Iron Chest; 81 slots in a nine-by-nine grid."
+  },
+  {
+   "id": "ironchest:diamond_chest",
+   "title": "Diamond Chest",
+   "desc": "Diamonds and glass around a Gold Chest; 108 slots, and the fork where the ladder splits two ways."
+  },
+  {
+   "id": "ironchest:obsidian_chest",
+   "title": "Obsidian Chest",
+   "desc": "Obsidian around a Diamond Chest; 108 slots like the diamond tier, but blast-proof - the branch you take for a base you expect to be attacked."
+  },
+  {
+   "id": "ironchest:crystal_chest",
+   "title": "Crystal Chest",
+   "desc": "Glass around a Diamond Chest; 108 slots and a transparent shell that renders its contents, so you can read a wall of them at a glance."
+  },
+  {
+   "id": "ironchest:wood_to_copper_chest_upgrade",
+   "title": "Wood to Copper Upgrade",
+   "desc": "Planks and copper ingots; right-click it onto a placed chest to convert it in the world, keeping every item already inside."
+  },
+  {
+   "id": "ironchest:copper_to_iron_chest_upgrade",
+   "title": "Copper to Iron Upgrade",
+   "desc": "Copper, iron and glass; the upgrade path exists so you never have to empty a chest to promote it."
+  },
+  {
+   "id": "ironchest:iron_to_gold_chest_upgrade",
+   "title": "Iron to Gold Upgrade",
+   "desc": "Iron and gold ingots in a frame; applied in place, it takes an Iron Chest to 81 slots without a single item moving."
+  },
+  {
+   "id": "ironchest:gold_to_diamond_chest_upgrade",
+   "title": "Gold to Diamond Upgrade",
+   "desc": "Gold, diamonds and glass; the most expensive rung of the upgrade line and the one that unlocks both endgame branches."
+  },
+  {
+   "id": "ironchest:diamond_to_obsidian_chest_upgrade",
+   "title": "Diamond to Obsidian Upgrade",
+   "desc": "Obsidian and glass; converts a placed Diamond Chest into the blast-proof variant on the spot."
+  },
+  {
+   "id": "ironchest:diamond_to_crystal_chest_upgrade",
+   "title": "Diamond to Crystal Upgrade",
+   "desc": "The same obsidian-and-glass frame in a different arrangement; the other half of the diamond fork."
+  },
+  {
+   "id": "ironchest:dirt_chest",
+   "title": "Dirt Chest",
+   "desc": "Dirt, coarse dirt and podzol around a wooden chest. It has exactly one slot. It is a joke, it is craftable, and it is the only chest in the mod that is worse than the one you started with."
+  },
+  {
+   "id": "ironchest:trapped_iron_chest",
+   "title": "Trapped Iron Chest",
+   "desc": "A tripwire hook plus any iron chest; every tier has a trapped twin that emits redstone when opened, and they upgrade along the same ladder."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "ironchest:crystal_chest",
+   "members": [
+    "ironchest:copper_chest",
+    "ironchest:iron_chest",
+    "ironchest:gold_chest",
+    "ironchest:diamond_chest",
+    "ironchest:obsidian_chest",
+    "ironchest:dirt_chest"
+   ]
+  },
+  {
+   "hub": "ironchest:gold_to_diamond_chest_upgrade",
+   "members": [
+    "ironchest:wood_to_copper_chest_upgrade",
+    "ironchest:wood_to_iron_chest_upgrade",
+    "ironchest:copper_to_iron_chest_upgrade",
+    "ironchest:iron_to_gold_chest_upgrade",
+    "ironchest:diamond_to_obsidian_chest_upgrade",
+    "ironchest:diamond_to_crystal_chest_upgrade"
+   ]
+  },
+  {
+   "hub": "ironchest:trapped_crystal_chest",
+   "members": [
+    "ironchest:trapped_copper_chest",
+    "ironchest:trapped_iron_chest",
+    "ironchest:trapped_gold_chest",
+    "ironchest:trapped_diamond_chest",
+    "ironchest:trapped_obsidian_chest",
+    "ironchest:trapped_dirt_chest"
+   ]
+  }
+ ],
+ "notes": "SHORT BY NATURE - this is a six-rung storage ladder with an upgrade item for each rung and a trapped twin for each chest, and that is the entire mod. 21 items, 21 quested across chain and wheels, nothing padded and nothing dropped. VERIFICATION: pass 1 strict models INTERSECT lang gave 21/21 with zero model-only, zero lang-only, zero blockstate-only ids - the cleanest jar in this batch. All 21 have crafting recipes, and all 14 chest blocks additionally have block loot tables so they survive being broken. Pass 2 re-derived the set independently from .class constant-pool strings, textures, blockstates, recipe results and loot tables: nothing unsupported, nothing missed. CONSENSUS CROSS-CHECK: moddb.json carries entries for this mod under BOTH 'ironchest' and 'ironchests' (two different mods share the chest-tier naming; only 'ironchest' is ProgWML6's Iron Chests, which is this jar). Its consensus order is copper -> iron -> gold -> diamond -> obsidian -> crystal. NO CONFLICT: the recipe graph gives exactly that order for the first four rungs, and obsidian and crystal are genuine siblings - both are crafted from a Diamond Chest, neither from the other - so consensus placing obsidian at 0.8 and crystal at 1.0 is consistent with the graph rather than contradicting it. The chain follows the graph and preserves the consensus tie-break. NOTE ON CAPACITY: obsidian and crystal hold the same 108 slots as diamond; they are lateral, not vertical, which is why the chain describes what each one buys you rather than pretending crystal is bigger. Jar confirmed 1.20.1 Forge: META-INF/mods.toml, modId ironchest, minecraft versionRange [1.20.1,1.21), pack_format 15, Java 17 class files, no fabric.mod.json."
+}

@@ -1,0 +1,224 @@
+{
+ "mod": "mahoutsukai",
+ "verified_against": "mahoutsukai-1.20.1-v1.34.74.jar",
+ "item_count_in_jar": 85,
+ "chain": [
+  {
+   "id": "mahoutsukai:guidebook",
+   "title": "Knowledge Compendium",
+   "desc": "Leather, Paper and Red Dye. Mahou Tsukai documents almost nothing in recipes and almost everything in this book, so read it first."
+  },
+  {
+   "id": "mahoutsukai:dagger",
+   "title": "Dagger",
+   "desc": "Iron, Gold, a Stick and Purple Dye. Magic here starts by bleeding: take damage, then hit the circle keybind to draw a blood circle on the floor. The dagger is the polite way to hurt yourself on demand."
+  },
+  {
+   "id": "mahoutsukai:hammer",
+   "title": "Hammer",
+   "desc": "Cobblestone, a Stick and String. It smashes gems and ingots into the powdered catalysts every spell is paid in."
+  },
+  {
+   "id": "mahoutsukai:powdered_gold",
+   "title": "Powdered Gold",
+   "desc": "Hammer a Gold Ingot. Gold is the Mystic catalyst; the seven catalysts are Iron for Boundaries, Ender Pearl for Displacement, Diamond for Projection, Emerald for Exchange, Gold for Mystic, Quartz for Intelligence and Ender Eye for Mystic Eyes."
+  },
+  {
+   "id": "mahoutsukai:mortar_and_pestle",
+   "title": "Mortar and Pestle",
+   "desc": "A Mortar of Brick and Diamond plus a Pestle of Diamond and a Stick. It grinds the same catalysts as the Hammer but does not wear out the way the hammer does."
+  },
+  {
+   "id": "mahoutsukai:spell_cloth",
+   "title": "Spell Cloth",
+   "desc": "The Dagger shapelessly combined with White Wool. Lay a cloth down and draw the blood circle on top of it: that is how a spell becomes a reusable scroll instead of a one-off circle."
+  },
+  {
+   "id": "mahoutsukai:scroll_boundary_alarm",
+   "title": "Scroll of the Alarm Boundary",
+   "desc": "Cloth, blood circle, three Powdered Iron. Boundaries are the cheapest school to start in - this one watches a radius and emits a comparator signal when anything enters it."
+  },
+  {
+   "id": "mahoutsukai:mystic_code",
+   "title": "Mystic Code",
+   "desc": "Powdered Gold and a Spell Cloth. It holds three stacks of scrolls and lets you switch between them with a keybind, which is the difference between owning scrolls and actually using them."
+  },
+  {
+   "id": "mahoutsukai:attuner",
+   "title": "Attuner",
+   "desc": "Gold and Lapis Lazuli. Attuned gems are bound to a location or a target and are what the longer-range circles anchor to."
+  },
+  {
+   "id": "mahoutsukai:attuned_diamond",
+   "title": "Attuned Diamond",
+   "desc": "The Attuner shapelessly combined with a Diamond. Attuned Emerald is the same trick on an Emerald."
+  },
+  {
+   "id": "mahoutsukai:scroll_fay_sight",
+   "title": "Mystic Eyes of Fay Sight",
+   "desc": "Cloth, circle, three Powdered Ender Eye. Fay Sight is the only way to see leylines and leypoints, and standing on one multiplies your mana regeneration."
+  },
+  {
+   "id": "mahoutsukai:fae_essence",
+   "title": "Fae Essence",
+   "desc": "Fae are invisible spirits that gather at leylines and are drawn to magic cast on a leypoint. Kill one for essence, or breed them with any Powdered Catalyst."
+  },
+  {
+   "id": "mahoutsukai:faecake",
+   "title": "Faecake",
+   "desc": "Fae Essence with Egg, Sugar and Wheat. The bait that keeps a Fae farm running."
+  },
+  {
+   "id": "mahoutsukai:mana_circuit",
+   "title": "Mana Circuit",
+   "desc": "Fae Essence and Powdered Emerald. Circuits carry mana between placed circles so a boundary does not have to sit on top of its caster."
+  },
+  {
+   "id": "mahoutsukai:mystic_code_first_sorcery",
+   "title": "Mystic Code - First Sorcery",
+   "desc": "Fae Essence, Powdered Diamond and a Spell Cloth. Unlike the plain Mystic Code it has durability but does not consume the scrolls it holds."
+  },
+  {
+   "id": "mahoutsukai:mahoujin_projector",
+   "title": "Mahoujin Projector",
+   "desc": "Powdered Gold, a Spell Cloth and Redstone. Purely decorative: it projects a configurable magic circle, and the Fog Projector is its Powdered Eye twin."
+  },
+  {
+   "id": "mahoutsukai:scroll_projection",
+   "title": "Scroll of Projection",
+   "desc": "Cloth, circle, three Powdered Diamond. Memorise a tool or weapon with the first use, then spend mana to conjure limited-durability copies of it."
+  },
+  {
+   "id": "mahoutsukai:replica",
+   "title": "Replica",
+   "desc": "The shield Projection produces. Its stats are copied from whatever it was traced off, which is why the mod's own advancement for it is about never getting hurt again."
+  },
+  {
+   "id": "mahoutsukai:scroll_treasury_projection",
+   "title": "Scroll of the Treasury Projection Gauntlet",
+   "desc": "Cloth, circle, Powdered Diamond. Using the scroll hands you the gauntlet itself rather than casting anything."
+  },
+  {
+   "id": "mahoutsukai:treasury_projection_gauntlet",
+   "title": "Treasury Projection Gauntlet",
+   "desc": "It fires the weapons and tools out of your inventory and Ender Chest at whatever you are looking at, with an AOE mode and a chains mode on sneak-right-click."
+  },
+  {
+   "id": "mahoutsukai:scroll_presence_concealment",
+   "title": "Scroll of Presence Concealment",
+   "desc": "Cloth, circle, Powdered Ender. Using it hands over both Rippers at once, in exchange for a large block of mana."
+  },
+  {
+   "id": "mahoutsukai:theripper",
+   "title": "The Ripper",
+   "desc": "Dual-wielded daggers. One in hand throws fog; one in each hand makes you and your gear genuinely invisible, and backstabs do bonus damage."
+  },
+  {
+   "id": "mahoutsukai:scroll_mystic_staff",
+   "title": "Scroll of Explosive Mana Condensation",
+   "desc": "Cloth, circle, Powdered Gold. The scroll that yields the mod's beam weapon."
+  },
+  {
+   "id": "mahoutsukai:mystic_staff",
+   "title": "Mystic Staff of Explosive Mana Condensation",
+   "desc": "Charge it and release a beam. The mod's own advancement for firing it is called BEEEEEEEEEEEEEAM."
+  },
+  {
+   "id": "mahoutsukai:staff_emrys",
+   "title": "Emrys",
+   "desc": "Not crafted and not a scroll: hold a Strengthened Stick and get struck by lightning. Held in the off-hand it feeds lightning into an empty right hand, melee weapons and some bows."
+  },
+  {
+   "id": "mahoutsukai:caliburn",
+   "title": "Caliburn",
+   "desc": "Cast Power Consolidation to grow a lake, then throw an enchanted sword into it. Caliburn carries the sword's damage plus a bonus from its enchantments, terrifies the undead, and can be re-enchanted and re-offered to push it further."
+  },
+  {
+   "id": "mahoutsukai:morgan",
+   "title": "Morgan",
+   "desc": "Caliburn corrupted: kill your own best and most loyal friend with the holy sword. Morgan feeds on villagers instead of a lake, healing itself and gaining damage from the killing."
+  },
+  {
+   "id": "mahoutsukai:clarent",
+   "title": "Clarent the Usurper",
+   "desc": "A Strengthened sword forged in dragon's breath. It has no damage value of its own; it deals whatever its opponent's weapon deals, and its Vengeance passive banks blocked attacks to return them."
+  },
+  {
+   "id": "mahoutsukai:scroll_probability_alter",
+   "title": "Scroll of Probability Alter",
+   "desc": "Cloth, circle, Powdered Quartz. The Intelligence school's headline spell and the only route to the dagger below."
+  },
+  {
+   "id": "mahoutsukai:rule_breaker",
+   "title": "Rule Breaker",
+   "desc": "Produced by Probability Alter. It fixes the random numbers the game asks for around your own modulus and dividend, which is as close to cheating as the mod gets."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mahoutsukai:powdered_gold",
+   "members": [
+    "mahoutsukai:powdered_iron",
+    "mahoutsukai:powdered_diamond",
+    "mahoutsukai:powdered_emerald",
+    "mahoutsukai:powdered_ender",
+    "mahoutsukai:powdered_eye",
+    "mahoutsukai:powdered_quartz",
+    "mahoutsukai:attuned_emerald",
+    "mahoutsukai:mortar",
+    "mahoutsukai:pestle",
+    "mahoutsukai:mana_circuit_magitech",
+    "mahoutsukai:fog_projector"
+   ]
+  },
+  {
+   "hub": "mahoutsukai:scroll_boundary_alarm",
+   "members": [
+    "mahoutsukai:scroll_boundary_gravity",
+    "mahoutsukai:scroll_boundary_drain_life",
+    "mahoutsukai:scroll_boundary_displacement",
+    "mahoutsukai:scroll_boundary_tangible",
+    "mahoutsukai:scroll_boundary_raise_enclosure",
+    "mahoutsukai:scroll_ascension",
+    "mahoutsukai:scroll_geas",
+    "mahoutsukai:scroll_retribution",
+    "mahoutsukai:scroll_damage_exchange",
+    "mahoutsukai:scroll_immunity_exchange",
+    "mahoutsukai:scroll_butterfly_effect",
+    "mahoutsukai:scroll_borrowed_authority"
+   ]
+  },
+  {
+   "hub": "mahoutsukai:scroll_fay_sight",
+   "members": [
+    "mahoutsukai:scroll_insight",
+    "mahoutsukai:scroll_death_collection",
+    "mahoutsukai:scroll_black_flame",
+    "mahoutsukai:scroll_mystic_eyes",
+    "mahoutsukai:scroll_prediction",
+    "mahoutsukai:scroll_reversion_eyes",
+    "mahoutsukai:scroll_gandr",
+    "mahoutsukai:scroll_rho_aias",
+    "mahoutsukai:scroll_reality_marble",
+    "mahoutsukai:scroll_strengthening",
+    "mahoutsukai:scroll_summon_familiar",
+    "mahoutsukai:scroll_familiars_garden",
+    "mahoutsukai:scroll_recall_familiar",
+    "mahoutsukai:scroll_swap_familiar"
+   ]
+  },
+  {
+   "hub": "mahoutsukai:treasury_projection_gauntlet",
+   "members": [
+    "mahoutsukai:proximity_projection_keys",
+    "mahoutsukai:scroll_proximity_projection",
+    "mahoutsukai:spatial_disorientation_staff",
+    "mahoutsukai:scroll_spatial_disorientation",
+    "mahoutsukai:weapon_projectile_bow",
+    "mahoutsukai:scroll_weapon_shooter",
+    "mahoutsukai:kodoku"
+   ]
+  }
+ ],
+ "notes": "Verified twice against mahoutsukai-1.20.1-v1.34.74.jar, fetched from Modrinth under an explicit game_versions=1.20.1 and loaders=forge filter. Pass 1: 119 item models intersected with item./block. lang keys = 85 ids (item_count_in_jar). Pass 2 re-derived 281 ids from blockstates, all 32 recipe jsons, the 5 loot tables and the tag set. THIS MOD IS ALMOST ENTIRELY CODE-DRIVEN AND THE NAIVE OBTAINABILITY TEST WOULD HAVE GUTTED IT. Mahou Tsukai ships only 32 recipes - the guidebook, dagger, hammer, mortar, pestle, the seven powdered catalysts, spell cloth, attuner, two attuned gems, mystic code, first sorcery, two mana circuits, two projectors, kodoku and faecake. Every scroll, every sword and every relic is produced by a world interaction with no datapack representation, so a plain 'has a recipe or loot table' filter marks about sixty real, reachable items as unobtainable. The route is documented in the mod's own guidebook lang, quoted from mahoutsukai.book.magic.desc: to perform magic you need mana, optionally a cloth, a blood circle and three powdered catalysts, and if the recipe is for a scroll you put the cloth down first and draw the blood circle on top, then right-click the circle to add the catalysts. Each such id in this file was checked to exist in the jar registry AND to have a named mahoutsukai.book.<name>.desc entry describing how it is acquired; the ids taking that route are carried in the file under an explicit allowance rather than silently. Specific non-recipe acquisitions read straight out of the book: Caliburn from throwing an enchanted sword into the lake grown by the Power Consolidation circle (book.power_consolidation.desc); Morgan from killing your own tamed best friend with Caliburn (book.morgan.desc); Clarent from a Strengthened sword forged in dragon's breath (book.clarent.desc); Emrys from being struck by lightning while holding a Strengthened stick (book.emrys.desc); The Ripper, two of them at once, from the Scroll of Presence Concealment (book.presence_concealment.desc); Rule Breaker from Probability Alter (book.rule_breaker.desc); Replica from Projection (book.projection.desc); the Treasury Projection Gauntlet from its own scroll (book.treasury_projection.desc); Fae Essence from killing a Fae, which requires the Mystic Eyes of Fay Sight to see them at all (book.fae.desc, plus the fae loot table in data/mahoutsukai/loot_tables/fae.json). DROPPED: mahoutsukai:rhongomyniad - book.rhongomyniad.desc says it is acquired by throwing a LANCE into the Power Consolidation lake, and this jar registers no lance of any kind; the item is reachable only if another mod supplies one, so it would be an uncompletable quest in a Mahou-only book. Also dropped: mahoutsukai:black_fire (an effect block spawned by the Mystic Eyes of the Black Flame, never held), mahoutsukai:murky_bucket (the bucket form of the mod's murky fluid, with no fill recipe), and the caliburn/morgan variant flags. ENTITIES: only four are registered - fae, butterfly, familiar_entity and kodoku_entity. No kill step is emitted even for the Fae, because they are invisible without the Mystic Eyes of Fay Sight and the essence step already covers the encounter; butterfly is a Butterfly Effect marker, familiar_entity is a summoned pet and kodoku_entity is a worm, none of which are legitimate kill targets. CONSENSUS CONFLICT (recipe graph and guidebook preferred): moddb.json's 23 Mahou entries, from only 2 packs, are ordered almost exactly backwards. They put mahoutsukai:staff_emrys first at pos 0.0, then morgan at 0.032, spatial_disorientation_staff at 0.065, weapon_projectile_bow at 0.097 and clarent at 0.129, and only then mahoutsukai:guidebook at 0.161 and mahoutsukai:attuner at 0.194, with the powdered catalysts trailing at 0.548 to 0.677. Every one of those five weapons is downstream of the catalysts: Emrys and Clarent both need a Strengthened item, which needs the Scroll of Strengthening, which needs a Spell Cloth and three catalysts; Morgan needs Caliburn first. Treating that consensus as an ordering would put the mod's endgame before its first hammer. The recipe graph plus the guidebook order is used instead, and the consensus is discarded for this mod. Variant families kept in wheels: the seven powdered catalysts and the grinding tools, the boundary and exchange scrolls, the mystic-eye and familiar scrolls, and the projection weapons. This mod has no blocks worth a decorative wheel - it registers 62 blockstates and most are magic-circle renderers."
+}

@@ -1,0 +1,58 @@
+{
+ "mod": "fluxnetworks",
+ "verified_against": "FluxNetworks-1.20.1-7.2.1.15.jar",
+ "item_count_in_jar": 11,
+ "chain": [
+  {
+   "id": "fluxnetworks:flux_dust",
+   "title": "Squeezing Redstone Until It Changes",
+   "desc": "Not crafted on a bench. Lay obsidian on bedrock, drop redstone onto it, and the pressure of the world's floor does the rest. Every wire in the mod starts as this powder."
+  },
+  {
+   "id": "fluxnetworks:flux_core",
+   "title": "The Core",
+   "desc": "Flux dust packed around an eye of ender in an obsidian frame. The eye is what lets one core find another across any distance, which is the whole trick of the mod."
+  },
+  {
+   "id": "fluxnetworks:flux_block",
+   "title": "Bulk Flux",
+   "desc": "A core wrapped in eight flux dust. It is storage, but mostly it is the building material every real device is cut from."
+  },
+  {
+   "id": "fluxnetworks:flux_configurator",
+   "title": "Reading the Network",
+   "desc": "Dust, an eye of ender and obsidian again, arranged differently. Right-click any flux device to see its network, its throughput and its priority without opening the block."
+  },
+  {
+   "id": "fluxnetworks:flux_plug",
+   "title": "Power Goes In",
+   "desc": "A flux block cored out and rebuilt as an intake. Stick it on a generator and the energy stops being local; it belongs to the network now."
+  },
+  {
+   "id": "fluxnetworks:flux_point",
+   "title": "Power Comes Out",
+   "desc": "A core on a block of redstone. The mirror of the plug: it pulls from the network and pushes into whatever it is touching, anywhere in the world."
+  },
+  {
+   "id": "fluxnetworks:basic_flux_storage",
+   "title": "The First Battery",
+   "desc": "A flux block behind glass panes. Wireless buffer for the network, and the bottom rung of a three-step capacity ladder."
+  },
+  {
+   "id": "fluxnetworks:flux_controller",
+   "title": "Charging Without Cables",
+   "desc": "Flux block, core and dust together. One per network, and while it runs it charges the powered items in every connected player's inventory."
+  },
+  {
+   "id": "fluxnetworks:herculean_flux_storage",
+   "title": "Second Rung",
+   "desc": "The basic storage rebuilt inside a larger glass shell. Same job, an order of magnitude more room, and the direct ingredient of the last tier."
+  },
+  {
+   "id": "fluxnetworks:gargantuan_flux_storage",
+   "title": "Last Rung",
+   "desc": "Herculean storage panelled up one final time. The largest buffer the mod offers and the natural end of a very short ladder."
+  }
+ ],
+ "notes": "SHORT CHAIN, DECLARED: Flux Networks is a genuinely tiny mod and the chain is not padded. The jar registers exactly 11 ids (11 item models, 7 blockstates, 4 item.fluxnetworks.* and 7 block.fluxnetworks.* lang keys - the union is 11 and every one has a real asset, so there are no lang-only phantoms here). 10 of those 11 are on the spine above; the entire mod is covered. JAR/VERSION: Modrinth carries only the FABRIC port of Flux Networks for 1.20.1 (project 'flux-network-fabric', all 10 of its 1.20.1 versions are loaders=['fabric']). The Forge build had to come from CurseForge instead - project 248020 'flux-networks', file FluxNetworks-1.20.1-7.2.1.15.jar, gameVersions ['Client','NeoForge','1.20.1','Forge','1.20','Server']. Its META-INF/mods.toml confirms modLoader='javafml', modId='fluxnetworks', minecraft versionRange='[1.20,1.21)', so this is a real native Forge build, not a Connector shim. FLUX DUST IS NOT CRAFTED - this is the one obtainability fact a quest author must get right. There is no recipe JSON with flux_dust as a result; the jar ships only 15 recipe files (7 crafting_shaped, 6 nbt_wipe_recipe, 2 flux_storage_recipe). The item's own tooltip is the proof: 'tooltip.fluxnetworks.flux_dust' = 'Obtained by compressing Redstone Dust with Bedrock and Obsidian'. sonar/fluxnetworks/register/EventHandler.class confirms the mechanic in code, referencing SRG fields f_50752_ (Blocks.BEDROCK), f_50080_ (Blocks.OBSIDIAN), f_50652_ (Blocks.REDSTONE_BLOCK) and f_42451_ (Items.REDSTONE) alongside ItemEntity, ParticleTypes and SoundEvents. So the quest for step 1 must be worded as an in-world action, never as a crafting task. DROPPED: 'fluxnetworks:admin_configurator' - it has a real item model AND a real lang key ('Admin Configurator'), so a naive model-INTERSECT-lang id sweep keeps it, but it has ZERO recipes and appears in no loot table. It is the creative/operator counterpart of the flux_configurator and is uncompletable in survival. That is the only drop; nothing else in the jar is unobtainable. NO COLLECTIONS EMITTED: with 10 obtainable ids all sitting on the critical path there is no variant family left over to build a wheel of 5-14 from without duplicating spine entries, so the optional 'collections' key is omitted rather than faked. ORDERING vs moddb consensus (10 entries, all 10 id-verified against this jar, no renames needed): the consensus order is compatible with the recipe graph almost everywhere - flux_dust 0.0, flux_core 0.111, flux_configurator 0.222, flux_block 0.333, basic_flux_storage 0.444, herculean_flux_storage 0.556, flux_plug 0.667, gargantuan_flux_storage 0.778, flux_point 0.889. ONE CONFLICT, minor: consensus ranks flux_point at 0.889, dead last except for the controller, but its recipe is only flux_core plus a block of redstone - it needs neither flux_block nor any storage tier, so it is craftable immediately after the core. The recipe graph was preferred and flux_point moved up to step 6, directly beside the plug it mirrors; pairing the two also reads better as a quest. Consensus also implies gargantuan storage before flux_point, which the graph contradicts for the same reason. DEPENDENCY NOTE for the pack author: mods.toml declares a mandatory dependency on 'modernui' (versionRange '[3.7.0,)') - Flux Networks will not load without Modern UI present. The storage tiers each consume '#forge:glass_panes', so any pane-providing mod satisfies them."
+}

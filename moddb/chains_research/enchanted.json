@@ -1,0 +1,289 @@
+{
+ "mod": "enchanted",
+ "verified_against": "enchanted-forge-1.20.1-3.1.14.jar",
+ "item_count_in_jar": 154,
+ "chain": [
+  {
+   "id": "kill:enchanted:mandrake",
+   "title": "Pull It Up And Run",
+   "desc": "Mandrakes are the mod's one real mob - a crop that gets up and screams. Their loot table gives mandrake_root and mandrake_seeds, and the root is in more recipes than anything else here."
+  },
+  {
+   "id": "enchanted:mandrake_root",
+   "title": "The Root",
+   "desc": "Mandrake root is the single most-used reagent in the mod. Brews, poppets, golden chalk and the drop of luck all want it."
+  },
+  {
+   "id": "enchanted:belladonna_seeds",
+   "title": "Plant The Nightshade",
+   "desc": "Belladonna, mandrake, snowbell, wolfsbane and water artichoke are the five crops. Note the ITEM is belladonna_flower - the id belladonna is only the crop BLOCK and has no item form."
+  },
+  {
+   "id": "enchanted:witch_oven",
+   "title": "The Oven",
+   "desc": "Smelting anything in the witch oven produces a byproduct as well as the normal output. That is a whole custom recipe type - enchanted:byproduct, nine of them - and it is how you get fume and ash."
+  },
+  {
+   "id": "enchanted:wood_ash",
+   "title": "Ash",
+   "desc": "The byproduct of burning logs in the oven. Ash is the base of the chalk line and the reason the oven comes first."
+  },
+  {
+   "id": "enchanted:foul_fume",
+   "title": "Fume",
+   "desc": "The byproduct of cooking meat. Foul fume feeds the distillery, and a fume funnel with a filter on the oven lets you collect it properly."
+  },
+  {
+   "id": "enchanted:soft_clay_jar",
+   "title": "Shape A Jar",
+   "desc": "Clay in a jar shape. It has to be fired before it holds anything."
+  },
+  {
+   "id": "enchanted:clay_jar",
+   "title": "Fire The Jar",
+   "desc": "Smelt the soft jar. Every distilling recipe in the mod consumes a clay jar, so this is a consumable you will make hundreds of."
+  },
+  {
+   "id": "enchanted:witch_cauldron",
+   "title": "The Cauldron",
+   "desc": "The witch cauldron runs its own recipe type - ten of them - and is where the first real potions come from. It also cooks ordinary food, which is a nice touch."
+  },
+  {
+   "id": "enchanted:altar",
+   "title": "The Altar",
+   "desc": "The altar stores magical power drawn from the blocks around it. data/enchanted/enchanted/altar/blocks defines what counts, and every machine in the mod draws on it."
+  },
+  {
+   "id": "enchanted:whiff_of_magic",
+   "title": "A Whiff Of Magic",
+   "desc": "The first distilled reagent. Distilling is another custom type and its recipes output through a plural results array rather than a singular result."
+  },
+  {
+   "id": "enchanted:attuned_stone",
+   "title": "The Attuned Stone",
+   "desc": "A whiff of magic, a diamond and a lava bucket. The attuned stone is the mod's central component - the chalice, candelabra, distillery, fume filter, circle talisman and infused poppet all need one."
+  },
+  {
+   "id": "enchanted:distillery",
+   "title": "The Distillery",
+   "desc": "Attuned stone, a clay jar, gold nuggets and iron. Eight distilling recipes exist and they are how the rarer reagents are made."
+  },
+  {
+   "id": "enchanted:kettle",
+   "title": "The Kettle",
+   "desc": "The kettle brews the mod's ten named brews, from the brew of love to the brew of the grotesque."
+  },
+  {
+   "id": "enchanted:fume_filter",
+   "title": "Filter The Fumes",
+   "desc": "Attuned stone, glass and iron. Combined with a fume funnel it captures oven byproducts instead of letting them escape."
+  },
+  {
+   "id": "enchanted:chalice",
+   "title": "The Chalice",
+   "desc": "Attuned stone and gold. The chalice holds blood and is one of two altar-adjacent blocks the rites care about."
+  },
+  {
+   "id": "enchanted:candelabra",
+   "title": "The Candelabra",
+   "desc": "Attuned stone, candles and iron. Altar upgrades are defined in data/enchanted/enchanted/altar/upgrades and this is one of them."
+  },
+  {
+   "id": "enchanted:spinning_wheel",
+   "title": "The Wheel",
+   "desc": "The spinning wheel runs the largest custom recipe type in the mod - THIRTY enchanted:wheel recipes - and every poppet is made on it."
+  },
+  {
+   "id": "enchanted:poppet",
+   "title": "The First Poppet",
+   "desc": "Poppets take a death for you. There are ten kinds, in three grades - plain, sturdy and infused - which is thirty ids, and it is the biggest single family here."
+  },
+  {
+   "id": "enchanted:infused_poppet",
+   "title": "Infused",
+   "desc": "Attuned stone, a poppet and an ender pearl on the wheel. Infused is the top grade and each of the ten types has one."
+  },
+  {
+   "id": "enchanted:bone_needle",
+   "title": "A Needle",
+   "desc": "A bone and a flint. The needle makes the taglock kit and the voodoo protection poppet."
+  },
+  {
+   "id": "enchanted:taglock_kit",
+   "title": "The Kit",
+   "desc": "The taglock kit is craftable; the TAGLOCK itself is not. You use the kit on a player or mob and it fills with their identity - which is why no recipe produces a taglock and why every curse rite consumes one."
+  },
+  {
+   "id": "enchanted:ritual_chalk",
+   "title": "Draw The Circle",
+   "desc": "Chalk marks the circles rites are cast in. Four chalks exist - ritual, golden, nether and otherwhere - and the shapes are defined in data/enchanted/enchanted/circle_magic/shape."
+  },
+  {
+   "id": "enchanted:golden_chalk",
+   "title": "The Second Chalk",
+   "desc": "Mandrake root, ritual chalk and a gold nugget in the witch cauldron. Bigger circles need better chalk."
+  },
+  {
+   "id": "enchanted:circle_talisman",
+   "title": "The Talisman",
+   "desc": "Attuned stone and gold. The talisman stores a drawn circle so you can carry it, and it has SIXTY-FOUR model states depending on which chalks are bound into it."
+  },
+  {
+   "id": "enchanted:waystone",
+   "title": "A Waystone",
+   "desc": "The plain waystone is the input to the rite that makes a bound one."
+  },
+  {
+   "id": "enchanted:bound_waystone",
+   "title": "Bound To A Place",
+   "desc": "Created by the 'waystone' rite through a location_bound_create_item factory - not by any recipe. A second rite duplicates it once you have one."
+  },
+  {
+   "id": "enchanted:attuned_stone_charged",
+   "title": "Charged",
+   "desc": "The charging_stone rite turns an attuned stone into a charged one. It is referenced sixteen times across the rite files and half the advanced rites demand it."
+  },
+  {
+   "id": "enchanted:broom",
+   "title": "A Broom",
+   "desc": "An ordinary broom, and the base of the only vehicle in the mod."
+  },
+  {
+   "id": "enchanted:flying_ointment",
+   "title": "Ointment",
+   "desc": "Belladonna flower, redstone soup, wool of bat, a diamond, a feather and a potion in the kettle. Six ingredients, and the broom needs it."
+  },
+  {
+   "id": "enchanted:enchanted_broomstick",
+   "title": "Fly It",
+   "desc": "The infusion_broom rite consumes a broom and flying ointment inside a small and a medium chalk circle at 3000 power, and creates the broomstick. No recipe file makes this - only the rite."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "enchanted:poppet",
+   "members": [
+    "enchanted:armour_poppet",
+    "enchanted:earth_poppet",
+    "enchanted:fire_poppet",
+    "enchanted:water_poppet",
+    "enchanted:hunger_poppet",
+    "enchanted:magic_poppet",
+    "enchanted:tool_poppet",
+    "enchanted:void_poppet",
+    "enchanted:voodoo_poppet",
+    "enchanted:voodoo_protection_poppet",
+    "enchanted:poppet_shelf"
+   ]
+  },
+  {
+   "hub": "enchanted:infused_poppet",
+   "members": [
+    "enchanted:infused_armour_poppet",
+    "enchanted:infused_earth_poppet",
+    "enchanted:infused_fire_poppet",
+    "enchanted:infused_water_poppet",
+    "enchanted:infused_hunger_poppet",
+    "enchanted:infused_magic_poppet",
+    "enchanted:infused_tool_poppet",
+    "enchanted:infused_void_poppet",
+    "enchanted:infused_voodoo_protection_poppet",
+    "enchanted:sturdy_poppet",
+    "enchanted:sturdy_armour_poppet",
+    "enchanted:sturdy_magic_poppet",
+    "enchanted:sturdy_void_poppet"
+   ]
+  },
+  {
+   "hub": "enchanted:whiff_of_magic",
+   "members": [
+    "enchanted:breath_of_the_goddess",
+    "enchanted:exhale_of_the_horned_one",
+    "enchanted:hint_of_rebirth",
+    "enchanted:tear_of_the_goddess",
+    "enchanted:foul_fume",
+    "enchanted:odour_of_purity",
+    "enchanted:reek_of_misfortune",
+    "enchanted:spirit_of_otherwhere",
+    "enchanted:diamond_vapour",
+    "enchanted:refined_evil",
+    "enchanted:soul_of_the_world",
+    "enchanted:demonic_blood",
+    "enchanted:ender_dew",
+    "enchanted:drop_of_luck"
+   ]
+  },
+  {
+   "hub": "enchanted:brew_of_love",
+   "members": [
+    "enchanted:brew_of_sprouting",
+    "enchanted:brew_of_the_depths",
+    "enchanted:brew_of_the_grotesque",
+    "enchanted:flying_ointment",
+    "enchanted:happenstance_oil",
+    "enchanted:mystic_unguent",
+    "enchanted:anointing_paste",
+    "enchanted:redstone_soup",
+    "enchanted:purified_milk",
+    "enchanted:mutandis",
+    "enchanted:mutandis_extremis",
+    "enchanted:oil_of_vitriol",
+    "enchanted:quicklime"
+   ]
+  },
+  {
+   "hub": "enchanted:mandrake_seeds",
+   "members": [
+    "enchanted:belladonna_seeds",
+    "enchanted:snowbell_seeds",
+    "enchanted:wolfsbane_seeds",
+    "enchanted:water_artichoke_seeds",
+    "enchanted:belladonna_flower",
+    "enchanted:wolfsbane_flower",
+    "enchanted:water_artichoke",
+    "enchanted:garlic",
+    "enchanted:ember_moss",
+    "enchanted:glint_weed",
+    "enchanted:spanish_moss",
+    "enchanted:blood_poppy",
+    "enchanted:rowan_berries"
+   ]
+  },
+  {
+   "hub": "enchanted:ritual_chalk",
+   "members": [
+    "enchanted:golden_chalk",
+    "enchanted:nether_chalk",
+    "enchanted:otherwhere_chalk",
+    "enchanted:circle_talisman",
+    "enchanted:waystone",
+    "enchanted:bound_waystone",
+    "enchanted:blooded_waystone",
+    "enchanted:attuned_stone",
+    "enchanted:attuned_stone_charged",
+    "enchanted:arthana",
+    "enchanted:taglock_kit",
+    "enchanted:bone_needle"
+   ]
+  },
+  {
+   "hub": "enchanted:rowan_log",
+   "members": [
+    "enchanted:rowan_planks",
+    "enchanted:rowan_sapling",
+    "enchanted:rowan_leaves",
+    "enchanted:stripped_rowan_log",
+    "enchanted:alder_log",
+    "enchanted:alder_planks",
+    "enchanted:alder_sapling",
+    "enchanted:hawthorn_log",
+    "enchanted:hawthorn_planks",
+    "enchanted:hawthorn_sapling",
+    "enchanted:rowan_slab",
+    "enchanted:rowan_stairs",
+    "enchanted:rowan_fence"
+   ]
+  }
+ ],
+ "notes": "THE TALISMAN TRAP - 63 FAKE IDS FROM ONE ITEM. assets/enchanted/models/item contains circle_talisman_0_0_1 through circle_talisman_3_3_3, a full 4x4x4 grid of model permutations minus the base, for the SINGLE item enchanted:circle_talisman. They encode which of the four chalk types is bound into each of the three circle sizes. Every one has zero references anywhere in data/. A model-stem-only id derivation invents 63 quest targets that do not exist; that is 41 percent of this mod's real item count. This is the same class of trap as arphex's sixteen crawling_compass models and cobblemon's thirty *_ball_model files, but far larger, and it is why model stems must always be intersected with lang keys. LOADER: META-INF/mods.toml, modId enchanted, 1.20.1 Forge. Modrinth slug is enchanted. FOUR CUSTOM RECIPE TYPES AND A FIFTH SYSTEM. Beyond 34 crafting_shaped, 13 crafting_shapeless and 2 smelting, this mod ships enchanted:wheel (30 recipes, the spinning wheel - every poppet), enchanted:kettle (10, the brews), enchanted:witch_cauldron (10), enchanted:byproduct (9 - the witch oven's second output when smelting) and enchanted:distilling (8). All of them use a singular \"result\" EXCEPT enchanted:distilling, which uses a plural \"results\" array like Create's recipes do - so a scanner reading only \"result\" loses the eight distilling outputs. On top of that sits an entirely separate system: data/enchanted/enchanted/circle_magic/rite holds 45 RITE definitions and circle_magic/shape holds 3 circle shapes. Rites are not recipes and live nowhere near data/enchanted/recipes/. Each has an items array (consumed), a shapes map (which chalk in which circle), a power cost, and a factory that does the work. Twenty-one distinct factory types exist and four of them create items: enchanted:create_item, enchanted:duplicate_item, enchanted:location_bound_create_item and enchanted:entity_bound_create_item. VERIFICATION, TWO PASSES: pass A took the 217 assets/enchanted/models/item stems INTERSECT the item./block. lang keys and gave 154. Pass B independently rebuilt from recipe results, loot-table entry names, blockstates and lang keys and gave 224. All 70 differences resolved: 63 are the circle_talisman model grid; belladonna, mandrake, snowbell and wolfsbane are the CROP BLOCKS (blockstate plus block. lang key, no item) whose item forms are belladonna_flower, mandrake_root/mandrake_seeds, snowbell_seeds and wolfsbane_flower - a clean case of the block and the item having different names; protection_barrier and protection_barrier_temporary are rite-placed barrier blocks with no item form and zero data references; demon_heart is a lang key with no model. Final count stays 154, no widening. OBTAINABILITY: after the distilling fix, twelve pass-A ids have no recipe and no loot table, and the rite files resolve five of them. enchanted:enchanted_broomstick is created by the infusion_broom rite (create_item factory, consuming a broom and flying ointment at 3000 power). enchanted:attuned_stone_charged is created by the charging_stone rite. enchanted:bound_waystone is created by the waystone and waystone_charged rites through a location_bound_create_item factory, and duplicated by two more. enchanted:blooded_waystone is created by waystone_blooded through entity_bound_create_item. enchanted:taglock has NO producer anywhere - but enchanted:taglock_kit does (bone needle, with its own recipe advancement), and every curse and remove-curse rite consumes a taglock; the kit is used on a living target to fill it, which is a code-level interaction and a real source. All five are kept, with the mechanism spelled out in their step text. DROPPED AS UNCOMPLETABLE, 6 ids: enchanted:condensed_fear, enchanted:focused_will, enchanted:ghost_of_the_light, enchanted:infernal_animus and enchanted:mellifluous_hunger each have an item model and a lang key and ZERO references anywhere in the jar - no recipe, no rite, no loot, no tag; they are unreleased spirit-type reagents. enchanted:infinity_egg appears only in data/enchanted/enchanted/altar/upgrades/infinity_egg.json with power 99999 and recharge 99999, which is a creative/debug altar upgrade rather than a survival item. enchanted:ent_twig is also dropped: the forest rite CONSUMES it and nothing anywhere produces it. None of the seven is in the chain or any wheel. That leaves 147 obtainable ids. ENTITIES: five entity.enchanted.* lang keys - broomstick, familiar_cat, mandrake, throwable_brew and voodoo_item - but only MANDRAKE has a loot table, so it is the only honest kill: target and it is the one used. broomstick is the ridden broom, throwable_brew and voodoo_item are projectiles, and familiar_cat is bound by the bind_familiar rite rather than killed. The mod also injects into three vanilla mobs through loot_tables/extensions/entities: bats drop wool_of_bat, creepers drop creeper_heart, wolves drop tongue_of_dog - three reagents that look uncraftable until you find that directory. CONSENSUS: moddb.json lists 24 enchanted ids and all 24 resolve in this jar. No conflict with the graph. DESIRABILITY: three full wood sets (rowan, alder, hawthorn) account for 33 of the 154 ids; their slabs, stairs, fences, buttons, pressure plates and stripped logs are kept out of the spine and only the logs, planks, saplings and leaves appear, in a single wood wheel."
+}

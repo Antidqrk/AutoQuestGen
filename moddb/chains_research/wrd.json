@@ -1,0 +1,275 @@
+{
+  "mod": "wrd",
+  "verified_against": "Wesley's Roguelike Dungeons 1.20.1-2.3.6.jar",
+  "item_count_in_jar": 1653,
+  "chain": [
+    {
+      "id": "wrd:magic_cauldron",
+      "title": "Craft a Vessel of Vision",
+      "desc": "Iron, blaze powder and an ender pearl. This is how you find the mod's dungeons at all - without one you will only ever stumble on them by accident. Biome-specific versions exist for desert, jungle, snow and the Nether."
+    },
+    {
+      "id": "wrd:magic_cauldron_active",
+      "title": "Sight a Dungeon",
+      "desc": "Use the vessel and it locks onto the nearest dungeon and holds its position. Follow it to a Dungeon Totempole standing over the entrance."
+    },
+    {
+      "id": "wrd:dungeon_locator_item",
+      "title": "Craft the Sentient Pathfinder",
+      "desc": "An ender eye, a soul lantern and iron. Unlike the vessel it keeps pointing, so it is the tool you want once you are hunting dungeons regularly."
+    },
+    {
+      "id": "wrd:keystrongholdchestnormal",
+      "title": "Loot a Stronghold Chest Key",
+      "desc": "Pulled out of junk piles, bone piles and puzzle rooms inside dungeons. Locked stronghold chests hold the good loot and each colour of chest wants its own key, so hoard every key you find."
+    },
+    {
+      "id": "wrd:key_bag",
+      "title": "Sew a Key Bag",
+      "desc": "Leather, a lead and iron. There are a dozen key types and they will eat your hotbar; the bag holds all of them in one slot. One is enough."
+    },
+    {
+      "id": "wrd:magic_spellbook_item",
+      "title": "Find an Unwritten Spellbook",
+      "desc": "Sits in ordinary locked stronghold chests. Blank on its own - it becomes a weapon only after you write tomes into it."
+    },
+    {
+      "id": "wrd:magic_spellbook_enchanter",
+      "title": "Build the Spellbook Enchanter",
+      "desc": "Gold, planks and an ender eye. This is the bench where the blank book and your tomes are combined; you only ever need one, at home."
+    },
+    {
+      "id": "wrd:spellbook_damage_tome_fire",
+      "title": "Recover a Damage Tome",
+      "desc": "Iron stronghold chests carry the five damage tomes (fire, ice, poison, water and raw) and diamond chests carry the casting tomes that change how the spell is delivered. You want one of each kind eventually."
+    },
+    {
+      "id": "wrd:magic_spellbook",
+      "title": "Write Your Spellbook",
+      "desc": "Combine the blank book with a damage tome and a casting tome at the enchanter. The pairing you choose is the spell you get, so it is worth collecting tomes before committing."
+    },
+    {
+      "id": "wrd:keystrongholdchest_bonechest",
+      "title": "Slay a Corrupted Zombie",
+      "desc": "Corrupted Zombies are the only thing that drops the Bone Chest Key, and it fits exactly one lock: the Ancient Bone Chest in a dungeon's treasure room. One key per chest, so keep killing them."
+    },
+    {
+      "id": "wrd:key_placeholder",
+      "title": "Slay a Dungeon Boss for the Key",
+      "desc": "The named bosses - the Giant King, the Undead Mage, the Overseer, the Ancient Golem - each drop a Boss Room Key on death. Put it in the golden keyhole to open the sealed room it guards; the key bag will hold it for you."
+    },
+    {
+      "id": "wrd:trial_stone",
+      "title": "Loot a Trialstone",
+      "desc": "One of the relics inside the Ancient Bone Chest. Right-clicking it moves you to the Infinite Dungeon dimension while you hold an Orb of Corruption, so it is a portable way back in once the endgame opens up."
+    },
+    {
+      "id": "wrd:corrupted_greatsword",
+      "title": "Claim Corrupted Greatknight Gear",
+      "desc": "The Bone Chest also holds the full Corrupted Greatknight set - sword, axe, tools, wand, scepter and four armour pieces. It is the best equipment the mod hands out, so run more dungeons until you have the pieces you want."
+    },
+    {
+      "id": "wrd:bleeding_corruption",
+      "title": "Gather Bleeding Corruption",
+      "desc": "The only crafting reagent in the mod, from the Bone Chest and from Corrupted Zombies, so it is renewable if you keep clearing dungeons. Eight go into the Heart of The Deceiver and two into every Orb of Corruption - bank it rather than spending it early."
+    },
+    {
+      "id": "wrd:orb_of_the_deep",
+      "title": "Recover the Orb of The Deep",
+      "desc": "A rare Bone Chest relic and a hard gate, not a trophy: you right-click one into each Stone Brick Orb socket around the portal frame, and the frame refuses to light until they are all filled. Expect to loot several chests for them."
+    },
+    {
+      "id": "wrd:all_seeing_eye",
+      "title": "Find the All Seeing Eye",
+      "desc": "Another Bone Chest drop. Right-clicking it is consumed to spawn the hidden End Palace in the End dimension - without one there is nothing there to find."
+    },
+    {
+      "id": "wrd:ender_heart",
+      "title": "Slay the Heart of Ender",
+      "desc": "The End Palace's boss. Killing it yields the Ender Heart, the core of the item that opens the dungeon dimension. Bring the Corrupted gear."
+    },
+    {
+      "id": "wrd:heart_of_the_deceiver",
+      "title": "Forge the Heart of The Deceiver",
+      "desc": "One Ender Heart ringed by eight Bleeding Corruption. Right-click the Portal Activator with it to light the way into the Infinite Dungeon - it will refuse until every Orb of The Deep socket on the frame is filled."
+    },
+    {
+      "id": "dim:wrd:wesleys_infinite_dungeons",
+      "title": "Enter the Infinite Dungeon",
+      "desc": "A whole dimension of timed, randomly built dungeon runs. This is the mod's real endgame; everything before it was preparation."
+    },
+    {
+      "id": "wrd:orb_of_corruption",
+      "title": "Craft an Orb of Corruption",
+      "desc": "Two Bleeding Corruption and an ender pearl. Orbs are what start a run at the dungeon altar, so you will craft these over and over - keep a supply."
+    },
+    {
+      "id": "wrd:small_time_dust",
+      "title": "Mine a Time Dust Pile",
+      "desc": "Runs are on a timer and the dungeon closes when it ends. Time Dust Piles are scattered through the run and give you dust to feed into the Time Rock for more minutes; small, medium and large all work, so grab every pile you pass."
+    },
+    {
+      "id": "wrd:blue_gems",
+      "title": "Grind Treasure into Gems",
+      "desc": "Gold piles, crowns, vases and scepters carried out of a run go into the Gold Grinder and come back as gems. Gems are the persistent currency between runs, so extract before the timer kills you."
+    },
+    {
+      "id": "wrd:golden_skull",
+      "title": "Recover a Golden Skull of Ancients",
+      "desc": "A rare pull from the gold piles you strip inside the Infinite Dungeon, and worth a run on its own. It is also an artefact you can sacrifice on the Artefact Pedestal to make the next run harder and richer."
+    },
+    {
+      "id": "wrd:trophy_fb",
+      "title": "Beat The Great Creator",
+      "desc": "The five-phase final boss at the bottom of the Infinite Dungeon. Its trophy is the last thing this mod has to give."
+    }
+  ],
+  "collections": [
+    {
+      "name": "Stronghold chest keys",
+      "note": "Each opens one colour of locked chest. All are dungeon loot, never craftable.",
+      "ids": [
+        "wrd:keystrongholdchestnormal",
+        "wrd:keystrongholdchest_iron",
+        "wrd:keystrongholdchest_gold",
+        "wrd:keystrongholdchest_diamond",
+        "wrd:keystrongholdchest_redstone",
+        "wrd:keystrongholdchest_library",
+        "wrd:keystrongholdchest_dungeon",
+        "wrd:keystrongholdchest_treasure",
+        "wrd:keystrongholdchest_bastion",
+        "wrd:keystrongholdchest_bonechest",
+        "wrd:pur_pur_key",
+        "wrd:secret_room_key",
+        "wrd:treasure_room_key",
+        "wrd:treasure_stronghold_chest_key"
+      ]
+    },
+    {
+      "name": "Corrupted Greatknight set",
+      "note": "All from the Ancient Bone Chest.",
+      "ids": [
+        "wrd:corrupted_greatsword",
+        "wrd:corrupted_greataxe",
+        "wrd:corrupted_pickaxe",
+        "wrd:corrupted_shovel",
+        "wrd:corrupted_hoe",
+        "wrd:corrupted_great_wand",
+        "wrd:corrupted_great_scepter",
+        "wrd:corrupted_greatarmor_helmet_helmet",
+        "wrd:corrupted_great_crown_helmet",
+        "wrd:corrupted_great_hood_helmet",
+        "wrd:corrupted_greatarmor_chestplate",
+        "wrd:corrupted_greatarmor_leggings",
+        "wrd:corrupted_greatarmor_boots"
+      ]
+    },
+    {
+      "name": "Spellbook tomes",
+      "note": "Damage tomes from iron chests, casting tomes from diamond chests, special tomes from the Bone Chest.",
+      "ids": [
+        "wrd:spellbook_damage_tome_fire",
+        "wrd:spellbook_damage_tome_ice",
+        "wrd:spellbook_damage_tome_poison",
+        "wrd:spellbook_damage_tome_water",
+        "wrd:spellbook_damage_tome_raw",
+        "wrd:spellbook_casting_tomeaoi",
+        "wrd:spellbook_casting_tomebounce",
+        "wrd:spellbook_casting_tomeinhabit",
+        "wrd:spellbook_casting_tomepuddle",
+        "wrd:spellbook_casting_tomespray",
+        "wrd:spellbook_special_tome_chaos",
+        "wrd:spellbook_special_tome_inferno",
+        "wrd:spellbook_special_tome_nuke",
+        "wrd:spellbook_special_tome_melting",
+        "wrd:spellbook_special_tome_flash_freeze"
+      ]
+    },
+    {
+      "name": "Dungeon-specific weapons",
+      "note": "One or two per dungeon type, from that dungeon's own loot table.",
+      "ids": [
+        "wrd:ancien_club",
+        "wrd:throwable_icicle",
+        "wrd:ice_sword",
+        "wrd:ice_spear",
+        "wrd:ice_wand",
+        "wrd:throwable_ice_bomb",
+        "wrd:coral_sword",
+        "wrd:bamboo_mace",
+        "wrd:blowdart",
+        "wrd:pharao_wand",
+        "wrd:ancient_cutlass",
+        "wrd:emerald_wand",
+        "wrd:blood_wand",
+        "wrd:bone_sword",
+        "wrd:bone_crusher",
+        "wrd:sharpened_pickaxe",
+        "wrd:weaponised_torch",
+        "wrd:stun_baton",
+        "wrd:throwable_bomb",
+        "wrd:throwable_firebomb",
+        "wrd:spear"
+      ]
+    },
+    {
+      "name": "Treasure to grind",
+      "note": "Carried out of a run and fed to the Gold Grinder.",
+      "ids": [
+        "wrd:small_coin_pile",
+        "wrd:medium_coin_pile",
+        "wrd:large_coin_pile",
+        "wrd:golden_ring",
+        "wrd:golden_necklace",
+        "wrd:golden_crown",
+        "wrd:golden_vase",
+        "wrd:golden_staff",
+        "wrd:blue_gems",
+        "wrd:green_gems",
+        "wrd:red_gems"
+      ]
+    },
+    {
+      "name": "Boss trophies",
+      "note": "One per named boss; the mod's advancement tree is built entirely around collecting these.",
+      "ids": [
+        "wrd:trophy_hoi",
+        "wrd:trophy_im",
+        "wrd:trophy_sk",
+        "wrd:trophy_tas",
+        "wrd:trophy_db",
+        "wrd:trophy_dp",
+        "wrd:trophy_am",
+        "wrd:trophy_kw",
+        "wrd:trophy_um",
+        "wrd:trophy_ne",
+        "wrd:trophy_agu",
+        "wrd:trophy_ag",
+        "wrd:trophy_aqg",
+        "wrd:trophy_tc",
+        "wrd:trophy_tf",
+        "wrd:trophy_cs",
+        "wrd:trophy_be",
+        "wrd:trophy_ks",
+        "wrd:trophy_gm",
+        "wrd:trophy_tm",
+        "wrd:trophy_fb"
+      ]
+    },
+    {
+      "name": "Music discs",
+      "note": "One per infinite-dungeon theme, from treasure chests.",
+      "ids": [
+        "wrd:aquatic_shrine_disc",
+        "wrd:arctic_cenotaph_disc",
+        "wrd:cityof_gold_disc",
+        "wrd:gemstone_grotto_disc",
+        "wrd:great_temple_disc",
+        "wrd:palaceof_the_dead_disc",
+        "wrd:temple_of_ra_disc",
+        "wrd:the_maw_disc"
+      ]
+    }
+  ],
+  "notes": "Order taken directly from data/wrd/advancements, which is a real authored tree, not recipe stubs: cauldron -> dungeon_found -> key_found -> ad_bone_chest -> ad_all_seeing_eye -> ad_hidden_palace -> ad_heart_of_ender -> ad_heart_of_the_deceiver -> ad_portal -> ad_corrupted_orb -> ad_start_run, with ad_select / ad_extend_time / ad_grind_gems / ad_use_artefact hanging off the run. This is an exploration mod: only 153 recipes exist and almost all of them are decorative brick variants. The only meaningful crafts are the Vessel of Vision variants, the Sentient Pathfinder, the Key Bag, the Spellbook Enchanter, the Heart of The Deceiver and the Orb of Corruption - everything else in the chain is loot or a boss drop, so quest verbs must say FIND or SLAY, never CRAFT. Overworld dungeon types (Glacier, Frosthold, Tomb of Ice, Illager Archives, Crypt, Cursed Sepulchres, Magma Chambers, Fiery Tomb, The Forge, Maze, Mines, Tomb, Prison, Catacombs, Necropolis, Temple, Labyrinth, Ruins) each have their own loot table and named boss and are parallel, not sequential; the Infinite Dungeon themes (Aquatic Shrine, Arctic Cenotaph, City of Gold, Gemstone Grotto, Palace of The Dead, Snake Temple, Temple of Ra, The Maw) are chosen at an activator block inside the dimension. Blocks such as bone_chest, dungeon_entrance_open, infinite_dungeon_time_statue, sacrificial_statue, dungeon_pedestal and infinite_dungeon_coin_deposit are structure furniture the player interacts with but generally cannot obtain, so do not write collect-quests against them. Structures ship as 4528 raw .nbt files with no data/wrd/worldgen/structure JSONs, so there are no structure: ids to target; the dimension id is wrd:wesleys_infinite_dungeons. WHERE THE UNCRAFTABLE CHAIN ITEMS ACTUALLY COME FROM - none of these are in a loot table or an .nbt, they are handed out by MCreator procedure classes, so do not conclude they are unobtainable just because data/ is silent: keystrongholdchest_bonechest and bleeding_corruption both drop from CorruptedZombieEntityDiesProcedure; key_placeholder drops from GiantKingDeathProcedure, UndeadMageDeathProcedure, TheOverseerDeathProcedure and AncientGolemStage3DeathProcedure (which also drop treasure_room_key, keystrongholdchest_diamond and that boss's trophy); ender_heart drops from HeartOfEnderEntity; trophy_fb drops from FinalBossPhase5EntityDiesProcedure; small/medium/large_time_dust come from SmallDungeonTimeDustPileProcedure; blue_gems and golden_skull come from SmallDungeonGoldPileOnBlockRightClickedProcedure and InfiniteDungeonCoinDepositRightClickProcedure; magic_spellbook is assembled in MagicSpellbookEnchanterBlockEntity's own GUI, not by a recipe. Item USES, likewise from code: all_seeing_eye is consumed to set the palaceSpawned variable (it spawns the End Palace); orb_of_the_deep is consumed by StonebrickorbOnBlockRightClickedProcedure to activate one socket of the portal frame, and PortalActivatorOffOnBlockRightClickedProcedure refuses with 'The portal needs more Orbs Of The Deep' until they are all lit, then takes the heart_of_the_deceiver; trial_stone teleports the holder to wrd:wesleys_infinite_dungeons and checks for an orb_of_corruption; DungeonEntranceOnBlockRightClickedProcedure consumes an orb_of_corruption and tells you to 'Select a dungeon near the Artefact Altar' and pick a difficulty. UnlockBoneChestProcedure and InsertKeyOpenProcedure both accept the key either loose or inside the key_bag, which is what makes the bag worth a quest. The mod's own advancement criteria confirm magic_cauldron_active, keystrongholdchest_bonechest, all_seeing_eye, golden_skull, heart_of_the_deceiver and orb_of_corruption are genuinely reachable inventory items."
+}

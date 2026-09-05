@@ -1,0 +1,178 @@
+{
+ "mod": "storagedrawers",
+ "verified_against": "StorageDrawers-forge-1.20.1-12.14.3.jar",
+ "item_count_in_jar": 144,
+ "chain": [
+  {
+   "id": "storagedrawers:detached_drawer",
+   "title": "A Drawer Off Its Hinges",
+   "desc": "A wooden chest, rods and slabs; a standalone drawer that keeps its contents when broken and carried."
+  },
+  {
+   "id": "storagedrawers:oak_full_drawers_1",
+   "title": "Two Planks and a Promise",
+   "desc": "Crafted from oak planks around a wooden chest; a single compartment that holds far more of one item than a chest ever could."
+  },
+  {
+   "id": "storagedrawers:oak_full_drawers_2",
+   "title": "Split Down the Middle",
+   "desc": "The same planks-and-chest recipe arranged to yield one block divided into two independent compartments."
+  },
+  {
+   "id": "storagedrawers:oak_full_drawers_4",
+   "title": "Four Doors, One Block",
+   "desc": "The 2x2 arrangement of the planks-and-chest recipe, and the densest of the plain drawer forms."
+  },
+  {
+   "id": "storagedrawers:oak_half_drawers_2",
+   "title": "Shallow but Wide",
+   "desc": "Built with an oak slab instead of planks, giving a half-depth block that still exposes two compartments."
+  },
+  {
+   "id": "storagedrawers:oak_trim",
+   "title": "Filling the Gaps",
+   "desc": "Oak planks and wooden rods form a blank facing block used to square off a wall of drawers."
+  },
+  {
+   "id": "storagedrawers:framing_table",
+   "title": "The Disguise Bench",
+   "desc": "Made from drawer trim, it lets a framed drawer take on the texture of any block you feed it."
+  },
+  {
+   "id": "storagedrawers:upgrade_template",
+   "title": "The Blank Slate",
+   "desc": "Wooden rods plus any drawer produce the blank template that every single upgrade in the mod is built on top of."
+  },
+  {
+   "id": "storagedrawers:obsidian_storage_upgrade",
+   "title": "Capacity, Tier One",
+   "desc": "Obsidian and a wooden rod on the upgrade template; the mod labels it Storage Upgrade (I), the lowest rung of the capacity ladder."
+  },
+  {
+   "id": "storagedrawers:copper_storage_upgrade",
+   "title": "Capacity, Tier Two",
+   "desc": "Copper ingots on the template give Storage Upgrade (II), the next step up in stacks held per compartment."
+  },
+  {
+   "id": "storagedrawers:iron_storage_upgrade",
+   "title": "Capacity, Tier Three",
+   "desc": "Iron ingots on the template give Storage Upgrade (III)."
+  },
+  {
+   "id": "storagedrawers:gold_storage_upgrade",
+   "title": "Capacity, Tier Four",
+   "desc": "Gold ingots on the template give Storage Upgrade (IV)."
+  },
+  {
+   "id": "storagedrawers:emerald_storage_upgrade",
+   "title": "Capacity, Tier Five",
+   "desc": "Emeralds on the template give Storage Upgrade (V)."
+  },
+  {
+   "id": "storagedrawers:diamond_storage_upgrade",
+   "title": "Capacity, Tier Six",
+   "desc": "Diamonds on the template give Storage Upgrade (VI)."
+  },
+  {
+   "id": "storagedrawers:netherite_storage_upgrade",
+   "title": "The Last Rung",
+   "desc": "Netherite ingots on the template give Storage Upgrade (VII), the highest capacity tier the mod ships."
+  },
+  {
+   "id": "storagedrawers:drawer_key",
+   "title": "Cut From Gold",
+   "desc": "A gold ingot and a gold nugget on an upgrade template; locks a drawer to its current item and is the parent of every other key."
+  },
+  {
+   "id": "storagedrawers:shroud_key",
+   "title": "Nothing to See Here",
+   "desc": "An eye of ender combined with the drawer key; hides a drawer's item icons and count from anyone looking at the wall."
+  },
+  {
+   "id": "storagedrawers:quantify_key",
+   "title": "Reading the Numbers",
+   "desc": "A writable book combined with the drawer key, toggling the printed item count on a drawer's face."
+  },
+  {
+   "id": "storagedrawers:hopper_upgrade",
+   "title": "Hands Off the Drawer",
+   "desc": "A hopper and wooden rods on the template, letting the drawer accept and emit items through automation."
+  },
+  {
+   "id": "storagedrawers:magnet_upgrade",
+   "title": "Pulling Things In",
+   "desc": "Copper and iron bars applied to a hopper upgrade so the drawer drags loose items toward itself."
+  },
+  {
+   "id": "storagedrawers:compacting_drawers_3",
+   "title": "One Ingot, Nine Nuggets",
+   "desc": "Iron, stone and a piston around a full drawer; stores a block, its ingot and its nugget as one pooled quantity."
+  },
+  {
+   "id": "storagedrawers:controller",
+   "title": "The Switchboard",
+   "desc": "Diamonds, a comparator and stone around a drawer, turning an entire adjacent wall of drawers into one addressable inventory."
+  },
+  {
+   "id": "storagedrawers:controller_slave",
+   "title": "An Extra Doorway",
+   "desc": "Gold, a comparator and stone around a drawer; displayed as Drawer Controller IO, it gives pipes a second access point onto the same network."
+  },
+  {
+   "id": "storagedrawers:remote_upgrade",
+   "title": "Cutting the Tether",
+   "desc": "Ender pearls, redstone and wooden rods on the template, letting a drawer join a controller without touching the wall."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "storagedrawers:upgrade_template",
+   "members": [
+    "storagedrawers:conversion_upgrade",
+    "storagedrawers:fill_level_upgrade",
+    "storagedrawers:illumination_upgrade",
+    "storagedrawers:redstone_upgrade",
+    "storagedrawers:min_redstone_upgrade",
+    "storagedrawers:max_redstone_upgrade",
+    "storagedrawers:balance_fill_upgrade",
+    "storagedrawers:one_stack_upgrade",
+    "storagedrawers:void_upgrade",
+    "storagedrawers:portability_upgrade",
+    "storagedrawers:drawer_puller",
+    "storagedrawers:magnet_upgrade_2",
+    "storagedrawers:magnet_upgrade_3"
+   ]
+  },
+  {
+   "hub": "storagedrawers:drawer_key",
+   "members": [
+    "storagedrawers:shroud_key",
+    "storagedrawers:personal_key",
+    "storagedrawers:priority_key",
+    "storagedrawers:quantify_key",
+    "storagedrawers:suspend_key",
+    "storagedrawers:keyring",
+    "storagedrawers:keybutton_drawer",
+    "storagedrawers:keybutton_quantify",
+    "storagedrawers:keybutton_concealment"
+   ]
+  },
+  {
+   "hub": "storagedrawers:oak_full_drawers_4",
+   "members": [
+    "storagedrawers:spruce_full_drawers_4",
+    "storagedrawers:birch_full_drawers_4",
+    "storagedrawers:jungle_full_drawers_4",
+    "storagedrawers:acacia_full_drawers_4",
+    "storagedrawers:dark_oak_full_drawers_4",
+    "storagedrawers:mangrove_full_drawers_4",
+    "storagedrawers:cherry_full_drawers_4",
+    "storagedrawers:bamboo_full_drawers_4",
+    "storagedrawers:crimson_full_drawers_4",
+    "storagedrawers:warped_full_drawers_4",
+    "storagedrawers:framed_full_drawers_4"
+   ]
+  }
+ ],
+ "notes": "143 ids verified as assets/storagedrawers/models/item/*.json stems carrying a display name. Storage Drawers uses TWO name conventions: plain keys (block.storagedrawers.controller) and a COMPOSED one for every wood variant - block.storagedrawers.mat.<wood> ('Oak') x block.storagedrawers.type.<form> ('%s Drawers 2x2'). A naive item.<mod>.X / block.<mod>.X intersection verifies only 60 ids and silently discards all 84 per-wood blocks, which are genuinely registered (each has a blockstate and its own recipe). All 120 recipe results resolve to modelled items; nothing in the recipe graph is unmodelled.\n\nKEY FINDING - the capacity ladder is NOT in material order. The lang file numbers them explicitly: obsidian=Storage Upgrade (I), copper=(II), iron=(III), gold=(IV), emerald=(V), diamond=(VI), netherite=(VII). Obsidian being tier one is counter-intuitive and worth gating on; the chain follows the lang numbering, not the material's usual tech position.\n\nDROPPED - storagedrawers:controller_io. moddb lists it (2 packs) but it is NOT a registry name: there is no blockstate for it and it is absent from ModBlocks.class. It exists only as the legacy lang key block.storagedrawers.controller_io = 'Drawer Controller IO', which names the block actually registered as controller_slave (blockstate present, in ModBlocks.class, and the result of recipes/controller_slave.json). Quests must use storagedrawers:controller_slave. moddb also lists controller_slave separately (8 packs), so its two entries are the same block counted twice under one wrong name.\nDROPPED - keybutton_personal: it has an item model and a lang key but appears in neither ModBlocks.class nor ModItems.class, and its blockstate file is misspelled 'keybutton_personel'. Orphaned asset, not obtainable.\nDROPPED - 21 model stems with no display name: detached_drawer_full (the filled state of detached_drawer), the 12 keyring_* variants (registered in ModItems but named from whichever key they hold), tape, and four legacy upgrade_* / meta stems.\n\nCONSENSUS CONFLICTS, recipe graph preferred in both cases:\n1. moddb puts controller at pos 0.101, BEFORE upgrade_template at 0.110. The recipe graph disagrees sharply - controller costs diamonds plus a comparator, while upgrade_template is wooden rods plus any drawer. upgrade_template is placed first here, and it also gates every upgrade in the mod.\n2. moddb puts magnet_upgrade at 0.208 but hopper_upgrade at 0.372. The recipe is a hard dependency - magnet_upgrade is crafted FROM a hopper_upgrade - so hopper_upgrade must come first. Chain order corrected.\n\nThe per-wood drawers are a wheel, never chain steps: 11 woods x 6 forms plus framed is 84 blocks that are the same item in a different plank. One wheel hangs off oak_full_drawers_4 with the other ten woods and the framed variant. Trims, slab-based half drawers in other woods, and the framed_* duplicates of controller and compacting drawers are deliberately left out entirely.\n\nTwo further moddb entries are covered only indirectly and this is deliberate: oak_half_drawers_1 and oak_half_drawers_4 (3 packs each) are the 1x1 and 2x2 forms of the half drawer, and the chain teaches that whole form once through oak_half_drawers_2 rather than spending three of its 24 slots on the same idea. magnet_upgrade_2 and magnet_upgrade_3 sit in the upgrade wheel instead of the chain for the same reason - they are more range, not a new mechanic."
+}

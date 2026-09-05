@@ -1,0 +1,261 @@
+{
+ "mod": "betterend",
+ "verified_against": "BetterEnd-20.0.11.jar",
+ "item_count_in_jar": 888,
+ "chain": [
+  {
+   "id": "dim:minecraft:the_end",
+   "title": "Everything Is Behind the Dragon",
+   "desc": "BetterEnd adds no dimension of its own - it replaces the End's worldgen with 27 biomes. Its enter_end advancement triggers on changed_dimension to minecraft:the_end, and nothing else in the mod exists until you are there."
+  },
+  {
+   "id": "betterend:mossy_glowshroom_log",
+   "title": "There Are Trees Out Here Now",
+   "desc": "Cut from the giant glowshrooms of the Foggy Mushroomland, one of the biomes you can actually land in past the main island. It is the first workbench material the mod offers."
+  },
+  {
+   "id": "betterend:thallasium_raw",
+   "title": "The End Has Ore Now",
+   "desc": "Mined from Thallasium Ore, which generates through the new biomes; it is also seeded into every biome chest table the mod ships."
+  },
+  {
+   "id": "betterend:thallasium_ingot",
+   "title": "Thallasium",
+   "desc": "Smelted from the raw ore, or alloyed two-for-three in an End Stone Smelter. The mod's iron equivalent and the base of its first tool tier."
+  },
+  {
+   "id": "betterend:end_stone_smelter",
+   "title": "The Alloy Furnace",
+   "desc": "End stone bricks, two furnaces and four Thallasium Ingots. Every bclib:alloying recipe in the mod - Thallasium, Terminite and Aeternium - runs through it and nowhere else."
+  },
+  {
+   "id": "betterend:iron_hammer",
+   "title": "You Need a Hammer, Not a Pickaxe",
+   "desc": "Four iron and two sticks. Hammers are not weapons here - they are the tool you swing at an anvil, and the mod's whole smithing system is locked behind owning one."
+  },
+  {
+   "id": "betterend:diamond_hammer",
+   "title": "Hammer",
+   "desc": "The mod's own 'hammer' advancement fires on a Diamond or Terminite Hammer. Every bclib:smithing recipe carries a toolLevel, and the hammer you hold is what satisfies it."
+  },
+  {
+   "id": "betterend:thallasium_anvil",
+   "title": "The First Anvil",
+   "desc": "Three Thallasium Blocks and four ingots. bclib:smithing recipes carry an anvilLevel as well as a toolLevel - Thallasium is level 2, and nothing above it will work here."
+  },
+  {
+   "id": "betterend:thallasium_forged_plate",
+   "title": "Beat It Into a Plate",
+   "desc": "One ingot worked on the anvil with a hammer. Plates are the armour currency of the whole mod - helmets, chestplates, leggings and boots are crafted from plates, never from ingots."
+  },
+  {
+   "id": "betterend:handle_attachment_smithing_template",
+   "title": "The Template That Fits Handles",
+   "desc": "Found in the mod's biome chests, the Chorus Forest chests and the End Village template chest. Every tool in the mod is a smithing_transform of a head plus a stick using this template - there is no crafting-grid pickaxe anywhere in the jar."
+  },
+  {
+   "id": "betterend:thallasium_pickaxe",
+   "title": "Head, Handle, Template",
+   "desc": "Three Thallasium Ingots hammered into a Pickaxe Head, then a stick attached at a smithing table with the Handle template. That three-step shape is how every BetterEnd tool is made."
+  },
+  {
+   "id": "betterend:ender_shard",
+   "title": "Ender Ore",
+   "desc": "Mined from Ender Ore across the new biomes and salted through every chest table; two of them hammer into Ender Dust."
+  },
+  {
+   "id": "betterend:ender_dust",
+   "title": "Ender Dust",
+   "desc": "An Ender Shard or an ender pearl worked on the anvil. It is one half of the Terminite alloy, which makes the anvil a hard requirement for the second tier."
+  },
+  {
+   "id": "betterend:terminite_ingot",
+   "title": "Terminite",
+   "desc": "Iron plus Ender Dust in the End Stone Smelter. The mod's diamond-equivalent, and the mandatory base of every Aeternium armour piece."
+  },
+  {
+   "id": "betterend:terminite_anvil",
+   "title": "Anvil Level Three",
+   "desc": "The Thallasium Anvil's successor, built from Terminite Blocks. Aeternium plates need anvilLevel 5, so this is a rung, not the end."
+  },
+  {
+   "id": "betterend:terminite_chestplate",
+   "title": "Terminite Plate",
+   "desc": "Eight Terminite Forged Plates. Keep it - the Aeternium chestplate is a smithing_transform ON this item, not a fresh craft."
+  },
+  {
+   "id": "betterend:infusion_pedestal",
+   "title": "The Infusion Ritual",
+   "desc": "An ender eye, two ender pearls and obsidian. Place one in the centre and eight around it: 46 betterend:infusion recipes exist, each reading a catalyst from all eight compass directions."
+  },
+  {
+   "id": "betterend:crystal_shards",
+   "title": "Fish for Crystal",
+   "desc": "Its only source in the entire jar is data/betterend/loot_tables/gameplay/fishing/junk.json - you fish it out of End water. Four of them ring the Eternal Crystal infusion."
+  },
+  {
+   "id": "betterend:eternal_crystal",
+   "title": "Eternal Crystal",
+   "desc": "An infusion of Crystal Shards and Ender Shards. It is what activates the Eternal Portal, and the mod's portal_on advancement fires the moment you use one."
+  },
+  {
+   "id": "structure:betterend:eternal_portal",
+   "title": "Find the Eternal Portal",
+   "desc": "A ring of pedestals standing dead in the End, roughly every 40 chunks. It generates at the raw_generation step, before terrain is even decorated, so it juts out of the landscape rather than hiding in it. Bring your Eternal Crystals - the portal is inert until you seat them."
+  },
+  {
+   "id": "betterend:eternal_pedestal",
+   "title": "Seat the Crystal",
+   "desc": "The pedestals themselves have a block loot table and no recipe, so this is the one piece of the portal you can carry home. Placing a crystal on one is the mod's portal_on milestone; stepping through is portal_travel."
+  },
+  {
+   "id": "betterend:aeternium_ingot",
+   "title": "Aeternium",
+   "desc": "Terminite plus a netherite ingot, 850 ticks in the End Stone Smelter. The Nether has to be finished before the End's top tier is even startable."
+  },
+  {
+   "id": "structure:betterend:end_village",
+   "title": "Loot an End Village",
+   "desc": "A six-piece jigsaw village on a 34-chunk grid, built out of the mod's own woods. Its template chest is the only place the Aeternium and Tool Assembly patterns exist, so the top tier is gated on finding one - no amount of mining substitutes."
+  },
+  {
+   "id": "betterend:aeternium_upgrade_smithing_template",
+   "title": "The Aeternium Pattern",
+   "desc": "Out of the End Village template chest. It upgrades the Terminite Anvil to Aeternium and turns a vanilla elytra into the Armored Elytra; its own recipe only duplicates a template you already hold."
+  },
+  {
+   "id": "betterend:aeternium_anvil",
+   "title": "Anvil Level Five",
+   "desc": "A Terminite Anvil plus an Aeternium Ingot with the Aeternium pattern. Aeternium plates and tool heads both require anvilLevel 5, so nothing final is possible before this."
+  },
+  {
+   "id": "betterend:aeternium_forged_plate",
+   "title": "The Last Plate",
+   "desc": "One Aeternium Ingot at anvilLevel 5 with a toolLevel 5 hammer. Six damage per strike - this is what the Aeternium Hammer is really for."
+  },
+  {
+   "id": "betterend:aeternium_chestplate",
+   "title": "Aeternium Armour",
+   "desc": "A Terminite Chestplate, an Aeternium Forged Plate and the Plate Upgrade template. The best armour in the mod, and it eats a full Terminite set to get there."
+  },
+  {
+   "id": "betterend:leather_wrapped_stick",
+   "title": "Wrap the Handle",
+   "desc": "A stick and a Leather Stripe. Aeternium tools refuse a bare stick - they use the Leather Handle Attachment template and this instead."
+  },
+  {
+   "id": "betterend:aeternium_pickaxe",
+   "title": "The Aeternium Set",
+   "desc": "An Aeternium Pickaxe Head plus a Leather Wrapped Stick under the Leather Handle template - the top of the mod's whole tool ladder."
+  },
+  {
+   "id": "betterend:aeternium_hammer",
+   "title": "Hammer of Last Resort",
+   "desc": "Built the same way from an Aeternium Hammer Head. It is both the mod's heaviest weapon and the only tool that can work Aeternium on the Aeternium Anvil."
+  },
+  {
+   "id": "betterend:enchanted_membrane",
+   "title": "Enchanted Membrane",
+   "desc": "An infusion-only item, and the wings of the Crystalite Elytra; there is no other way to make one."
+  },
+  {
+   "id": "betterend:elytra_crystalite",
+   "title": "Crystalite Elytra",
+   "desc": "An infusion of Enchanted Membranes, Amber Gems and Crystal Shards. One of only two elytras the mod adds and the reason the all_elytras advancement exists."
+  },
+  {
+   "id": "betterend:elytra_armored",
+   "title": "Armored Elytra",
+   "desc": "A vanilla elytra, an Aeternium Ingot and the Aeternium pattern at a smithing table - the honest last step of the mod."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "betterend:iron_hammer",
+   "members": [
+    "betterend:golden_hammer",
+    "betterend:diamond_hammer",
+    "betterend:netherite_hammer",
+    "betterend:thallasium_hammer",
+    "betterend:terminite_hammer",
+    "betterend:aeternium_hammer",
+    "betterend:thallasium_anvil",
+    "betterend:terminite_anvil",
+    "betterend:aeternium_anvil",
+    "betterend:end_stone_smelter"
+   ]
+  },
+  {
+   "hub": "betterend:aeternium_upgrade_smithing_template",
+   "members": [
+    "betterend:thallasium_upgrade_smithing_template",
+    "betterend:terminite_upgrade_smithing_template",
+    "betterend:netherite_upgrade_smithing_template",
+    "betterend:plate_upgrade_smithing_template",
+    "betterend:handle_attachment_smithing_template",
+    "betterend:leather_handle_attachment_smithing_template",
+    "betterend:tool_assembly_smithing_template"
+   ]
+  },
+  {
+   "hub": "betterend:mossy_glowshroom_log",
+   "members": [
+    "betterend:pythadendron_log",
+    "betterend:lacugrove_log",
+    "betterend:dragon_tree_log",
+    "betterend:tenanea_bark",
+    "betterend:helix_tree_log",
+    "betterend:umbrella_tree_bark",
+    "betterend:lucernia_log",
+    "betterend:jellyshroom_log"
+   ]
+  },
+  {
+   "hub": "betterend:amber_gem",
+   "members": [
+    "betterend:raw_amber",
+    "betterend:amber_ore",
+    "betterend:violecite",
+    "betterend:smaragdant_crystal",
+    "betterend:aurora_crystal",
+    "betterend:crystal_shards",
+    "betterend:crystalline_sulphur",
+    "betterend:ender_shard",
+    "betterend:ender_dust",
+    "betterend:thallasium_raw"
+   ]
+  },
+  {
+   "hub": "betterend:shadow_berry",
+   "members": [
+    "betterend:blossom_berry",
+    "betterend:shadow_berry_jelly",
+    "betterend:blossom_berry_jelly",
+    "betterend:sweet_berry_jelly",
+    "betterend:chorus_mushroom_raw",
+    "betterend:bolux_mushroom",
+    "betterend:amber_root_raw",
+    "betterend:end_fish_raw",
+    "betterend:end_lily_leaf",
+    "betterend:umbrella_cluster_juice"
+   ]
+  },
+  {
+   "hub": "betterend:crystalite_chestplate",
+   "members": [
+    "betterend:crystalite_helmet",
+    "betterend:crystalite_leggings",
+    "betterend:crystalite_boots",
+    "betterend:elytra_crystalite",
+    "betterend:elytra_armored",
+    "betterend:thallasium_helmet",
+    "betterend:terminite_chestplate",
+    "betterend:aeternium_helmet",
+    "betterend:aeternium_chestplate",
+    "betterend:aeternium_leggings",
+    "betterend:aeternium_boots"
+   ]
+  }
+ ],
+ "notes": "LOADER VERIFIED - AND THIS ONE IS A REAL FORGE PORT. Modrinth project 'betterend-forge' (BetterEnd Forge), version 20.0.11 for 1.20/1.20.1, ships META-INF/mods.toml with modIds [betterend, forge, minecraft, bclib, emi, jei, patchouli, elytraslot] and NO fabric.mod.json. A full-jar scan for 'net/fabricmc' finds nothing. This is genuinely Forge, unlike the Eldritch End case. It DOES hard-depend on BCLib - the alloying and anvil-smithing recipe types are bclib:alloying and bclib:smithing - so BCLib must be present or the entire progression above is dead. NOTE the jar also ships data/fabric/ and data/trinkets/ folders, which are inert leftovers from the upstream Fabric mod and are not evidence of loader. Item set = the 888 stems of assets/betterend/models/item/*.json intersected with item.betterend.* / block.betterend.* keys in assets/betterend/lang/en_us.json; every id above is a member of that set. NO WIDENING WAS NEEDED, which is itself worth recording: all eight of this mod's smithing templates carry BOTH an item.betterend.<id> lang key AND a vanilla-style upgrade.betterend.<name> key (aeternium_upgrade, handle_attachment, leather_handle_attachment, netherite_upgrade, plate_upgrade, terminite_upgrade, thallasium_upgrade, tool_assembly), so unlike Atlantis and Lost Aether Content they survive a naive models-intersect-lang test. NO DIMENSION OF ITS OWN: there is no data/betterend/dimension/ directory. What it adds is 27 biomes under data/betterend/worldgen/biome/ - amber_land, blossoming_spires, chorus_forest, crystal_mountains, dragon_graveyards, dry_shrubland, dust_wastelands, empty_aurora_cave, empty_end_cave, empty_smaragdant_cave, flower_islets, foggy_mushroomland, glowing_grasslands, ice_starfield, jade_cave, lantern_woods, lush_aurora_cave, lush_smaragdant_cave, megalake, megalake_grove, neon_oasis, painted_mountains, shadow_forest, sulphur_springs, umbra_valley, umbrella_jungle and waterfall_ponds - so dim:minecraft:the_end is the correct and only entry step. ORDERING comes straight from data/betterend/advancements/, which is an unusually clean tree: root -> enter_end -> {hammer -> thallasium_anvil -> {thallasium_plate -> thallasium_armor, thallasium_tool_head -> thallasium_tool} -> terminite_anvil -> {terminite_plate -> terminite_armor, terminite_tool_head -> terminite_tool} -> aeternium_anvil -> aeternium_hammer_head -> aeternium_hammer -> aeternium_plate -> aeternium_armor, portal -> portal_on -> portal_travel, infusion -> infusion_finished, all_the_templates, all_elytras, all_the_biomes -> village}. THE MECHANIC THAT MATTERS AND THAT A NAIVE PASS MISSES: BetterEnd does not craft tools in a grid. Ingots are hammered on an anvil (bclib:smithing, each recipe carrying an anvilLevel and a toolLevel) into either a Forged Plate or a Tool Head, and the Tool Head is then joined to a handle at a SMITHING table using one of the mod's own templates - handle_attachment_smithing_template for Thallasium and Terminite, leather_handle_attachment_smithing_template plus a Leather Wrapped Stick for Aeternium. Anvil levels are 2 for Thallasium, 3 for Terminite and 5 for Aeternium, and the Aeternium Anvil is itself a smithing_transform of the Terminite Anvil. So the hammer, the anvil and the templates are all hard gates, and the plain iron_hammer is the true first step of the chain after arriving. ALLOYING: 8 bclib:alloying recipes, all requiring betterend:end_stone_smelter. terminite_ingot = iron + ender_dust; aeternium_ingot = terminite_ingot + minecraft:netherite_ingot at 850 ticks, which means the Nether must be COMPLETE before the End's top tier can start. INFUSION: 46 betterend:infusion recipes, each naming a catalyst for all eight compass directions around a betterend:infusion_pedestal. eternal_crystal, enchanted_membrane and elytra_crystalite are infusion-only and have no other source. crystal_shards, which four infusions need, has exactly ONE source in the whole jar: data/betterend/loot_tables/gameplay/fishing/junk.json. You fish for it. STRUCTURES: nine files under data/betterend/worldgen/structure/ - end_bridge, end_village, eternal_portal, giant_ice_star, giant_mossy_glowshroom, megalake, megalake_small, mountain and painted_mountain. TWO are used as structure: steps because they are real destinations that gate progression. betterend:eternal_portal - biomes '#betterend:has_structure/eternal_portal', step raw_generation, random_spread spacing 40 / separation 12; it holds the betterend:eternal_pedestal blocks, which have a block loot table and NO recipe and exist nowhere else. betterend:end_village - a minecraft:jigsaw, biomes '#betterend:has_structure/end_village', size 6, max_distance_from_center 80, random_spread spacing 34 / separation 8; its data/betterend/loot_tables/chests/end_village_template_loot.json is the ONLY source of betterend:aeternium_upgrade_smithing_template and tool_assembly_smithing_template, so the Aeternium Anvil and the Armored Elytra are both village-gated. The other seven were deliberately NOT made steps: giant_ice_star, giant_mossy_glowshroom, megalake, megalake_small, mountain and painted_mountain are terrain features rather than places with loot, and end_bridge is spacing 6 / separation 2 - so common it is scenery, not an achievement. ENTITY VERIFICATION. Exactly six entity.betterend.* lang keys exist: cubozoa, dragonfly, end_fish, end_slime, shadow_walker and silk_moth. There are ZERO entity loot tables in the jar (data/betterend/loot_tables/entities/ does not exist), so every mob drop is code-driven and no drop can be verified from data alone. All six ARE registered and spawnable - each has a spawn egg and each appears by name in the spawners block of the mod's own biome jsons (end_slime in 5 biomes, glowing_sphere/dragonfly/firefly in 3, end_fish and cubozoa in 4, silk_moth and shadow_walker in 1). NO kill: step is used in this chain, deliberately: with no loot tables nothing can be promised as a drop, and five of the six are ambient fauna. WATCH THE SPAWN EGG NAMING: BetterEnd uses the PREFIX form spawn_egg_cubozoa / spawn_egg_end_fish / spawn_egg_shadow_walker, not the usual <mob>_spawn_egg suffix - a suffix-based egg scan finds zero eggs in this jar and would wrongly conclude that none of the six mobs is registered. INGREDIENT-ONLY IDS (real items, no data-side source, code-driven): betterend:silk_fiber and betterend:silk_moth_matrix appear only as inputs to fiber_string and silk_moth_hive - they come off the Silk Moth and its hive at runtime. They are left out of the chain because no task can gate on them safely. CONSENSUS: moddb's entries are all real ids in this jar, including all five smithing templates it lists, which is a good sign. moddb's ORDER, however, opens the chapter on betterend:diamond_hammer and betterend:pythadendron_sapling at 0.000 and fills the first third with saplings and logs - this is exactly the 'first quest is a random sapling' failure. The advancement tree was preferred: the diamond_hammer position is honoured (it really is near the front, at step 7), the saplings were demoted to a wheel, and the eight tree families were collapsed into one log wheel. moddb's thallasium_raw at 0.136 and thallasium_ingot at 0.273 both agree with the tree."
+}

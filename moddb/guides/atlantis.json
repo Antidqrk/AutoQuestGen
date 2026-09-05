@@ -1,0 +1,290 @@
+{
+ "mod": "atlantis",
+ "ids_in_jar": 58,
+ "videos": [
+  {
+   "id": "K2_FMl1lXng",
+   "title": "ATLANTIS - A DIMENSION COMPLETELY UNDER THE SEA (1.19.2) - [Minecraft Mod Showcase]",
+   "channel": "Wujooz Blazeman Gaming",
+   "views": 35180,
+   "duration": 1078,
+   "chars": 14076
+  },
+  {
+   "id": "rNPuYh-984Q",
+   "title": "How To Add The Atlantis Dimension to Minecraft 1.16.5 (Minecraft Atlantis Mod!)",
+   "channel": "The Breakdown",
+   "views": 3308,
+   "duration": 564,
+   "chars": 12928
+  },
+  {
+   "id": "Qqv_OcvqyTw",
+   "title": "Minecraft Mod Showcase: Atlantis Mod (1.16.5)",
+   "channel": "BengiDuck",
+   "views": 2378,
+   "duration": 695,
+   "chars": 7208
+  },
+  {
+   "id": "yeqAmSLFIi8",
+   "title": "Atlantis Mod Spotlight",
+   "channel": "Wozat",
+   "views": 451,
+   "duration": 1837,
+   "chars": 20846,
+   "note": "comedy spotlight; plays with the mod installed but never enters the dimension - little mechanical signal"
+  },
+  {
+   "id": "dwWjBQECk5U",
+   "title": "I Survived 100 Days in Atlantis On Minecraft Hardcore",
+   "channel": "DarkOfficial",
+   "views": 85171,
+   "duration": 677,
+   "chars": 12176,
+   "note": "mixed modpack (Ice and Fire mobs etc.); used only for the entry mechanic and dimension pacing"
+  }
+ ],
+ "items": {
+  "atlantis:atlantean_crystal": {
+   "mentions": 7,
+   "videos": 2,
+   "first_at": 0.3251,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "atlantis:ocean_stone": {
+   "mentions": 7,
+   "videos": 3,
+   "first_at": 0.254,
+   "praise": 5,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 1
+  },
+  "atlantis:coconut": {
+   "mentions": 7,
+   "videos": 2,
+   "first_at": 0.4041,
+   "praise": 1,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 2
+  },
+  "atlantis:orb_of_atlantis": {
+   "mentions": 6,
+   "videos": 3,
+   "first_at": 0.5202,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "atlantis:aquamarine_gem": {
+   "mentions": 5,
+   "videos": 1,
+   "first_at": 0.033,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "atlantis:aquamarine_ore": {
+   "mentions": 4,
+   "videos": 3,
+   "first_at": 0.3238,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "atlantis:shrimp": {
+   "mentions": 4,
+   "videos": 2,
+   "first_at": 0.375,
+   "praise": 4,
+   "warn": 0,
+   "early_cue": 2,
+   "late_cue": 2
+  },
+  "atlantis:submarine": {
+   "mentions": 3,
+   "videos": 1,
+   "first_at": 0.2637,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "atlantis:drop_of_atlantis": {
+   "mentions": 2,
+   "videos": 2,
+   "first_at": 0.2925,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "atlantis:ocean_lantern": {
+   "mentions": 2,
+   "videos": 1,
+   "first_at": 0.5549,
+   "praise": 2,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "atlantis:aquamarine_chestplate": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.1205,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "atlantis:atlantean_power_torch": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3888,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "atlantis:atlantean_power_lever": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3822,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "atlantis:atlantean_power_dust": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.3777,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  },
+  "atlantis:crab_legs": {
+   "mentions": 1,
+   "videos": 1,
+   "first_at": 0.6899,
+   "praise": 0,
+   "warn": 0,
+   "early_cue": 0,
+   "late_cue": 0
+  }
+ },
+ "human_notes": {
+  "_confidence": "MODERATE, and version drift is the story. The banked corpus was badly contaminated - of its 8 ids, one is a GTA5 tsunami tutorial (M9n8JbTbCUs), one is Subnautica PDA audio (MdMgvSW7zJY), one a vanilla server build tour (Ay2yMlseF00), and three transcribed to silence - so two banked videos plus three found by targeted search carry everything. The item stats above were recomputed from the five on-target videos only. Ids verified via chains_research/atlantis.json (atlantis-2024.6.11-1.20.1-6.2-forge). No guide covers 6.x itself: the deepest showcase is 1.19.2 and two are 1.16.5, so wherever a guide contradicts the 6.2 jar bytecode, the jar wins and the disagreement is recorded.",
+  "entry": [
+   {
+    "note": "THE ENTRY RITUAL CHANGED ACROSS VERSIONS - do not trust old guides. In 1.16.5 the portal SPAWNED at an ocean monument when you killed an elder guardian (two guides show it: the install guide claims all three elder guardians must die, but on camera one kill was enough, and the 100-days run got one portal per elder guardian killed). By 1.19.2 you crafted the frame yourself and could light it by pouring a WATER BUCKET on it. In the 6.2 jar the igniter is the Orb of Atlantis right-clicked on the frame, and nothing else works - so the questline must follow the chains_research recipe path, not any video's ignition method.",
+    "ids": [
+     "atlantis:atlantean_portal_frame",
+     "atlantis:orb_of_atlantis"
+    ],
+    "video": "Qqv_OcvqyTw"
+   },
+   {
+    "note": "The ocean-monument connection survives in the recipes: the Ocean Lantern needs two sea lanterns, so even in 6.2 you must have raided a monument (or drowned ruins) before Atlantis opens. Guides call the lantern 'quite pricey' - it is the portal's real cost anchor.",
+    "ids": [
+     "atlantis:ocean_lantern",
+     "atlantis:atlantean_core"
+    ],
+    "video": "K2_FMl1lXng"
+   },
+   {
+    "note": "You ENTER by right-clicking the lit portal, not by walking in (6.2 bytecode; the 1.19.2 guide also jumps in via interaction). The corners of the frame are needed to light it but can be removed afterwards without collapsing the portal.",
+    "ids": [
+     "atlantis:atlantean_portal_frame"
+    ],
+    "video": "K2_FMl1lXng"
+   }
+  ],
+  "order": [
+   {
+    "note": "Every guide starts at Aquamarine: the ore spawns in the OVERWORLD (and inside Atlantis 'very commonly' in deposits), smelts to gems, and gems fan out into armour, tools and the Drop of Atlantis. The aquamarine kit is taught as sitting between iron and diamond - the 100-days player crafted it as deliberate stopgap armour before the monument fight.",
+    "ids": [
+     "atlantis:aquamarine_ore",
+     "atlantis:aquamarine_gem",
+     "atlantis:aquamarine_chestplate"
+    ],
+    "video": "Qqv_OcvqyTw"
+   },
+   {
+    "note": "Brown Rot armour is the other pre-Atlantis option: roughly iron-strength with toughness on every piece, craftable in the overworld from leather, vines and paper - but two guides independently call it surprisingly expensive for what it is ('really freaking expensive', 'looks like dirt armor'). Fine as an optional quest, poor as a required one.",
+    "ids": [],
+    "video": "Qqv_OcvqyTw"
+   },
+   {
+    "note": "Orichalcum is the post-entry tier: blend (raw copper + gold + aquamarine), smelt, then a SMITHING TABLE upgrade onto existing gear; slightly under diamond. The submarine (glass + iron blocks + an Orb of Atlantis) is taught as the dimension's quality-of-life vehicle - boat controls, clear vision underwater, dislikes leaving water.",
+    "ids": [
+     "atlantis:orichalcum_blend",
+     "atlantis:orichalcum_ingot",
+     "atlantis:submarine"
+    ],
+    "video": "K2_FMl1lXng"
+   }
+  ],
+  "gates": [
+   {
+    "note": "Portal maths from the chain, confirmed by the guides' walkthroughs: 4 Drops of Atlantis in the frame plus 1 more in the orb means 5 diamonds and 20 aquamarine gems minimum, plus a monument raid for the sea lanterns. That is the whole gate - once inside there is no further progression lock.",
+    "ids": [
+     "atlantis:drop_of_atlantis",
+     "atlantis:orb_of_atlantis"
+    ],
+    "video": "K2_FMl1lXng"
+   }
+  ],
+  "traps": [
+   {
+    "note": "The Linguistic/glyph system is DEAD-END CONTENT: glyph blocks, scrolls and the linguistic block 'currently don't really do anything' - the showcaser tries them on camera and gets nothing. Do not generate quests that end on glyph items (the chain keeps linguistic_glyph_scroll only as a collectable).",
+    "ids": [
+     "atlantis:linguistic_glyph_scroll"
+    ],
+    "video": "K2_FMl1lXng"
+   },
+   {
+    "note": "The Sodium Bomb needs sodium nuggets and the showcaser could not find any legitimate source for them - treat sodium items as unverified availability before questing them.",
+    "ids": [],
+    "video": "K2_FMl1lXng"
+   },
+   {
+    "note": "The Leviathan is buggy on camera (despawns, surfaces constantly, loses fights to other mods' sea mobs) and drops nothing (no loot table in the jar). A kill quest works; a 'collect its drop' quest cannot.",
+    "ids": [],
+    "video": "K2_FMl1lXng"
+   },
+   {
+    "note": "Guides agree the dimension is scenery-first: once inside, the narrator finds little left to do beyond building, aquamarine deposits and ordinary ores. Pace the questline to END shortly after entry - entry IS the payoff. Atlantean weapons are also judged 'actually not that great' next to diamond.",
+    "ids": [],
+    "video": "Qqv_OcvqyTw"
+   }
+  ],
+  "signature": [
+   {
+    "note": "Underwater redstone is the mod's one genuinely unique system - Atlantean power dust, torch, lever, repeater and comparator all work submerged where vanilla redstone cannot. Reviewers single it out; a small quest branch on it showcases what nothing else in a pack does.",
+    "ids": [
+     "atlantis:atlantean_power_dust",
+     "atlantis:atlantean_power_torch",
+     "atlantis:atlantean_power_lever"
+    ],
+    "video": "K2_FMl1lXng"
+   },
+   {
+    "note": "The coconut crab is remembered as 'a hulking monstrosity' (a big hostile crab); crab legs are the dimension's food-drop novelty. Good flavour quests after entry.",
+    "ids": [
+     "atlantis:crab_legs"
+    ],
+    "video": "K2_FMl1lXng"
+   }
+  ]
+ }
+}

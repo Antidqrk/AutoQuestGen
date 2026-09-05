@@ -1,0 +1,91 @@
+{
+ "mod": "thermal_integration",
+ "verified_against": "thermal_integration-1.20.1-11.0.1.27.jar",
+ "item_count_in_jar": 14,
+ "parent_mod": "thermal",
+ "chain": [
+  {
+   "id": "thermal:steel_ingot",
+   "title": "Iron, Coked and Hardened",
+   "desc": "Alloy an iron ingot with coal coke in the Induction Smelter; Thermal's base modules never give you steel, and this module is where the whole steel line lives."
+  },
+  {
+   "id": "thermal:steel_plate",
+   "title": "Steel Plate",
+   "desc": "Press a steel ingot in the Multiservo Press; plates are the flat stock other mods' machines ask for."
+  },
+  {
+   "id": "thermal:steel_gear",
+   "title": "Steel Gear",
+   "desc": "Press four steel ingots with the Gear Die; the gear that sits one tier above invar in most crafting trees."
+  },
+  {
+   "id": "thermal:steel_block",
+   "title": "Block of Steel",
+   "desc": "Press nine steel ingots with the 3x3 Packing Die, or craft them by hand; compact storage and a building block in its own right."
+  },
+  {
+   "id": "thermal:steel_coin",
+   "title": "Steel Coin",
+   "desc": "Press a steel ingot with the Coin Die for three coins; coins are Numismatic Dynamo fuel, so this is steel turned directly into power."
+  },
+  {
+   "id": "thermal:steel_dust",
+   "title": "Steel Blend",
+   "desc": "Pulverize a steel ingot back to blend, or blend it from scratch; smelting the dust returns the ingot, which is how steel recycling closes."
+  },
+  {
+   "id": "thermal:rose_gold_ingot",
+   "title": "Copper and Gold, Married",
+   "desc": "Alloy gold with copper in the Induction Smelter; rose gold is the module's second metal and the better of the two for coinage."
+  },
+  {
+   "id": "thermal:rose_gold_plate",
+   "title": "Rose Gold Plate",
+   "desc": "Press a rose gold ingot in the Multiservo Press."
+  },
+  {
+   "id": "thermal:rose_gold_gear",
+   "title": "Rose Gold Gear",
+   "desc": "Press four rose gold ingots with the Gear Die."
+  },
+  {
+   "id": "thermal:rose_gold_block",
+   "title": "Block of Rose Gold",
+   "desc": "Press nine rose gold ingots with the 3x3 Packing Die for compact storage and a distinctly pink building block."
+  },
+  {
+   "id": "thermal:rose_gold_coin",
+   "title": "Rose Gold Coin",
+   "desc": "Press a rose gold ingot with the Coin Die for three coins; the highest-value Numismatic Dynamo fuel this module adds."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "thermal:steel_ingot",
+   "members": [
+    "thermal:steel_dust",
+    "thermal:steel_nugget",
+    "thermal:steel_plate",
+    "thermal:steel_gear",
+    "thermal:steel_coin",
+    "thermal:steel_block"
+   ]
+  },
+  {
+   "hub": "thermal:rose_gold_ingot",
+   "members": [
+    "thermal:rose_gold_dust",
+    "thermal:rose_gold_nugget",
+    "thermal:rose_gold_plate",
+    "thermal:rose_gold_gear",
+    "thermal:rose_gold_coin",
+    "thermal:rose_gold_block"
+   ]
+  }
+ ],
+ "notes": "CRITICAL ID NOTE: the modid is thermal_integration but every item it registers lives in the thermal: namespace, not thermal_integration:. Ids below are written as thermal:* on purpose and were set-membership-checked against this jar's own assets/thermal/models/item stems intersected with its assets/thermal/lang/en_us.json keys. Do not rewrite them to thermal_integration:*. Confirmed additive against the existing thermal.json in this directory: that file was verified against thermal_foundation, thermal_expansion, thermal_dynamics, thermal_innovation and thermal_cultivation and contains no steel or rose gold ids, so nothing here duplicates it. ASSUMES FROM PARENT (thermal): Induction Smelter, Multiservo Press and its Gear/Coin/3x3 Packing/Unpacking dies, Pulverizer, Numismatic Dynamo, and coal coke - steel is literally impossible without the parent's coking line. VERIFICATION: strict model/lang intersection gave 14 ids and all 14 are used across the chain and wheels. The 18 model-only stems (steel_coin_0 through _4, steel_plate_0 through _3 and the rose gold equivalents) are randomised texture variants of the coin and plate items, not separate items. WIDENING CONSIDERED AND REJECTED: recipe results in this jar also mention 22 other thermal: ids (tin_ingot, lead_ingot, silver_ingot, invar, constantan, bronze, electrum, sulfur, apatite, sawdust, rich_slag and friends) but every one of those is registered by thermal_foundation and already covered by thermal.json, so widening to them would duplicate the parent rather than extend it. DROPPED FROM THE SPINE: thermal:steel_nugget and thermal:rose_gold_nugget - nuggets measure as effectively never worth questing, so they appear only as wheel members. Also note this module ships large numbers of conditional cross-mod recipes (Tinkers' Construct chiller casts, Immersive Engineering plates and rods, Mystical Agriculture insolator seeds); none of those produce ids owned by this jar and none are quested.",
+ "registers_into": [
+  "thermal"
+ ]
+}

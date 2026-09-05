@@ -1,0 +1,222 @@
+{
+ "mod": "bloodmagic",
+ "ids_in_jar": 439,
+ "videos": [
+  {
+   "title": "Getting Started in Blood Magic (Minecraft 1.12.2 Mod Guide)",
+   "channel": "AA Gaming",
+   "views": 359783,
+   "duration": 433,
+   "id": "0C4piOWXW94",
+   "chars": 6664
+  }
+ ],
+ "items": {},
+ "items_by_display_name": {},
+ "human_notes": {
+  "_confidence": "MIXED. The one transcribed video (0C4piOWXW94) came out heavily degraded -- Tartaric Gem renders as 'Tartaric Jouhara', Sentient Sword as 'sword of the promise', Blood Altar as 'blood supply'. Mechanics that are unambiguous through that noise are quoted below; the top-level ORDER is taken from the mod's own Patchouli category sortnums in BloodMagic-1.18-1.20.1-3.3.8-50, which are unambiguous. Blood Magic ships NO non-recipe advancements, so the guidebook is the only jar-side ordering that exists for it.",
+  "order": [
+   {
+    "claim": "The mod's own teaching order, and the one to build quests around: Blood Altar first, then the Alchemy Table, then Alchemy Arrays, then Demon Will, then Rituals, and Dungeon Delving last.",
+    "video": null,
+    "ids": [
+     "bloodmagic:altar",
+     "bloodmagic:alchemytable",
+     "bloodmagic:arcaneashes",
+     "bloodmagic:soulforge",
+     "bloodmagic:masterritualstone"
+    ],
+    "note": "(jar patchouli category sortnums, BloodMagic-1.18-1.20.1-3.3.8-50: altar 0, alchemy_table 1, alchemy_array 2, demon_will 3, rituals 4, dungeons 7, utility 99)"
+   },
+   {
+    "claim": "Blood Altar and Sacrificial Knife are the first two crafts, and they are useless apart -- the altar has no way to fill itself. Stand next to the altar and use the knife on yourself; each use costs health and puts Life Essence in the altar.",
+    "video": "0C4piOWXW94",
+    "ids": [
+     "bloodmagic:altar",
+     "bloodmagic:sacrificialdagger"
+    ],
+    "note": "The Sacrificial Dagger fills the altar: used beside the Blood Altar it costs about a heart of damage and adds 200 LP per use."
+   },
+   {
+    "claim": "The Weak Blood Orb is the first real goal: put a diamond in a charged altar. It is what lets you store Life Essence in yourself rather than in the altar, and every later orb tier follows the same pattern.",
+    "video": "0C4piOWXW94",
+    "ids": [
+     "bloodmagic:weakbloodorb",
+     "bloodmagic:altar",
+     "bloodmagic:apprenticebloodorb",
+     "bloodmagic:magicianbloodorb",
+     "bloodmagic:masterbloodorb",
+     "bloodmagic:archmagebloodorb"
+    ],
+    "note": "The Weak Blood Orb is the first orb: with 2,000 mB of LP in the Blood Altar, place a diamond in it."
+   },
+   {
+    "claim": "Slates are the altar's throughput material and they tier with it -- Blank, Reinforced, Imbued, Demonic, Ethereal. Making slates is the routine that occupies the whole early and middle game, so guides treat automating them as a milestone in itself.",
+    "video": null,
+    "ids": [
+     "bloodmagic:blankslate",
+     "bloodmagic:reinforcedslate",
+     "bloodmagic:infusedslate",
+     "bloodmagic:demonslate",
+     "bloodmagic:etherealslate"
+    ],
+    "note": "(mod structure, corroborated by the guide corpus: 'Blood Magic Automating Slates in ANY Modpack' is one of the most-viewed Blood Magic videos)"
+   },
+   {
+    "claim": "Demon Will is a SECOND, PARALLEL currency introduced after the altar, not an upgrade to it. You get it by killing mobs with a Soul Snare thrown at them, and it is the input to the Hellfire Forge.",
+    "video": "0C4piOWXW94",
+    "ids": [
+     "bloodmagic:soulsnare",
+     "bloodmagic:basemonstersoul",
+     "bloodmagic:soulforge"
+    ],
+    "note": "Kills release demon will, and each mob carries a set amount - the resource that the whole demon-will branch runs on."
+   },
+   {
+    "claim": "The Hellfire Forge is the Demon Will workbench -- a furnace with gold and stone around it. Everything on the Demon Will side is crafted here.",
+    "video": "0C4piOWXW94",
+    "ids": [
+     "bloodmagic:soulforge",
+     "bloodmagic:basemonstersoul"
+    ],
+    "note": "The Hellfire Forge (the demon-will workstation) crafts from iron, stone and gold."
+   }
+  ],
+  "gates": [
+   {
+    "claim": "You need a Tartaric Gem before Demon Will is of any use. Raw Demon Will does not stack in your inventory, so without a gem to pour it into you fill your bag and lose the rest. Petty is the starter; Lesser, Common and Greater hold progressively more.",
+    "video": "0C4piOWXW94",
+    "ids": [
+     "bloodmagic:soulgempetty",
+     "bloodmagic:soulgemlesser",
+     "bloodmagic:soulgemcommon",
+     "bloodmagic:soulgemgreater",
+     "bloodmagic:basemonstersoul"
+    ],
+    "note": "Loose demon will does not accumulate usefully on its own; Tartaric gems exist to bank the will from each kill in one place."
+   },
+   {
+    "claim": "A plain weapon does not collect Demon Will. You need a Sentient weapon, made at the Hellfire Forge with a filled Tartaric Gem, and its damage scales with how much Will you are carrying.",
+    "video": "0C4piOWXW94",
+    "ids": [
+     "bloodmagic:soulsword",
+     "bloodmagic:soulforge",
+     "bloodmagic:soulgempetty",
+     "bloodmagic:soulaxe",
+     "bloodmagic:soulpickaxe",
+     "bloodmagic:soulscythe",
+     "bloodmagic:soulshovel"
+    ],
+    "note": "Demon will only drops from kills made with the Sentient Sword - ordinary weapons yield none for the gem to store."
+   },
+   {
+    "claim": "Altar tiers are gated on Blood Runes built into the structure around it -- Rune of Capacity, Rune of the Orb, Acceleration Rune and their Reinforced versions. Higher orbs and better slates are gated on altar tier, so runes are the spine of Blood Magic progression.",
+    "video": null,
+    "ids": [
+     "bloodmagic:altarcapacityrune",
+     "bloodmagic:altarcapacityrune2",
+     "bloodmagic:orbcapacityrune",
+     "bloodmagic:accelerationrune",
+     "bloodmagic:bettercapacityrune",
+     "bloodmagic:altar"
+    ],
+    "note": "(mod structure; the transcript was too degraded to quote on rune layouts. Note the corpus's most-viewed Blood Magic tutorial is titled 'Altar Tier 1 - 5 Building Tutorial', which is how central tiering is)"
+   },
+   {
+    "claim": "Craft the Divination Sigil early. Without it you cannot see how much Life Essence an altar actually holds, and every recipe is specified in LP.",
+    "video": null,
+    "ids": [
+     "bloodmagic:divinationsigil",
+     "bloodmagic:altar"
+    ],
+    "note": "(mod structure; Divination Sigil is the standard first sigil in every Blood Magic guide)"
+   },
+   {
+    "claim": "Rituals need a Master Ritual Stone surrounded by the right elemental ritual stones, and the Ritual Diviner is what places and identifies them. Do not try to lay ritual stones by hand.",
+    "video": null,
+    "ids": [
+     "bloodmagic:masterritualstone",
+     "bloodmagic:ritualdiviner",
+     "bloodmagic:airritualstone",
+     "bloodmagic:fireritualstone",
+     "bloodmagic:earthritualstone",
+     "bloodmagic:duskritualstone",
+     "bloodmagic:lightritualstone",
+     "bloodmagic:ritualtinkerer"
+    ],
+    "note": "(mod structure; rituals are patchouli category sortnum 4, after demon will)"
+   }
+  ],
+  "bosses": [],
+  "traps": [
+   {
+    "claim": "Blood Magic's Life Essence is its own fluid and has nothing to do with any other mod's blood. Do not try to feed the altar from another mod's blood tank -- guides call this out specifically because players keep trying it.",
+    "video": "0C4piOWXW94",
+    "ids": [
+     "bloodmagic:altar"
+    ],
+    "note": "Blood Magic's LP is its own system: it is not compatible with the blood or fluids of other mods (Tinkers' Construct included)."
+   },
+   {
+    "claim": "The Blood Altar has a hidden internal buffer separate from what the display shows, and breaking the altar empties it. If you pick your altar up mid-fill you start again from zero.",
+    "video": "0C4piOWXW94",
+    "ids": [
+     "bloodmagic:altar",
+     "bloodmagic:divinationsigil"
+    ],
+    "note": "The Blood Altar keeps an internal buffer besides its visible tank. Breaking and replacing the altar empties that buffer, and it must refill before crafting resumes."
+   },
+   {
+    "claim": "Self-sacrifice with the knife is the starter method, not the long-term one. It costs real health for a small amount of LP, so treat it as a bootstrap and move to a proper sacrifice setup as soon as the altar is tiered.",
+    "video": "0C4piOWXW94",
+    "ids": [
+     "bloodmagic:sacrificialdagger",
+     "bloodmagic:altar"
+    ],
+    "note": "Each dagger use costs roughly one heart and deposits 200 LP."
+   }
+  ],
+  "signature": [
+   {
+    "claim": "Sigils are the mod's everyday payoff -- Divination to read altars, Green Grove for crop growth, Fast Miner, Frozen Lake, Blood Lamp for light. They are what a Blood Magic player actually carries around.",
+    "video": null,
+    "ids": [
+     "bloodmagic:divinationsigil",
+     "bloodmagic:growthsigil",
+     "bloodmagic:miningsigil",
+     "bloodmagic:icesigil",
+     "bloodmagic:bloodlightsigil",
+     "bloodmagic:airsigil",
+     "bloodmagic:lavasigil"
+    ],
+    "note": "(mod structure; sigils are their own patchouli category under alchemy arrays)"
+   },
+   {
+    "claim": "Living Armour is Blood Magic's signature gear: it levels up from what you actually do while wearing it, and upgrade tomes and training bracelets let you steer which upgrades it learns.",
+    "video": null,
+    "ids": [
+     "bloodmagic:livinghelmet",
+     "bloodmagic:livingplate",
+     "bloodmagic:livingleggings",
+     "bloodmagic:livingboots",
+     "bloodmagic:upgradetome",
+     "bloodmagic:upgradetrainer",
+     "bloodmagic:upgradescraps"
+    ],
+    "note": "(mod structure; Living Equipment is its own patchouli category with dedicated Upgrades and Downgrades sub-categories)"
+   },
+   {
+    "claim": "The two-currency design is the thing to teach: Life Essence from the Blood Altar powers orbs, slates and sigils; Demon Will from mob kills powers the Hellfire Forge, Tartaric Gems and Sentient weapons. Quests should keep the two chains visibly separate.",
+    "video": "0C4piOWXW94",
+    "ids": [
+     "bloodmagic:altar",
+     "bloodmagic:weakbloodorb",
+     "bloodmagic:soulforge",
+     "bloodmagic:soulgempetty",
+     "bloodmagic:basemonstersoul"
+    ],
+    "note": "The mod's own joke: for a mod named after blood, most of the work is LP plumbing - altar, orbs and forges rather than gore."
+   }
+  ]
+ }
+}

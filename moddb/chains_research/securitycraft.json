@@ -1,0 +1,206 @@
+{
+ "mod": "securitycraft",
+ "verified_against": "[1.20.1] SecurityCraft v1.10.2.1.jar",
+ "item_count_in_jar": 636,
+ "chain": [
+  {
+   "id": "securitycraft:sc_manual",
+   "title": "Read the Manual First",
+   "desc": "A book and iron bars, shapeless. The SecurityCraft Manual carries a page for every block in the mod including the base reinforced materials that no crafting table can make."
+  },
+  {
+   "id": "securitycraft:laser_block",
+   "title": "The Beam Between Two Boxes",
+   "desc": "A block of redstone caged in glass panes and stone. Two laser blocks facing each other project a tripwire beam, and the block is also the core component of four of the mod's universal tools."
+  },
+  {
+   "id": "securitycraft:universal_block_reinforcer_lvl1",
+   "title": "The Tool That Makes Everything Else",
+   "desc": "A laser block, a diamond, glass, redstone and a wooden rod. This is the single most important item in the mod: the hundred-plus base reinforced materials - logs, concrete, basalt and their kin - have no crafting recipe. You place the vanilla block and break it with the reinforcer, or run it through the reinforcer's own slot GUI, and every crafted reinforced part builds up from those."
+  },
+  {
+   "id": "securitycraft:reinforced_cobblestone",
+   "title": "Cobble That Fights Back",
+   "desc": "Place cobblestone, break it with the reinforcer. Reinforced blocks resist explosions and can only be broken by their owner, and this one smelts into Reinforced Stone and is the base of the mod's crafted reinforced parts."
+  },
+  {
+   "id": "securitycraft:reinforced_glass",
+   "title": "See Through, Not Get Through",
+   "desc": "Smelt reinforced sand. Reinforced glass and its panes are the windows for every camera, monitor, display case and alarm below."
+  },
+  {
+   "id": "securitycraft:keypad_item",
+   "title": "The Key Panel",
+   "desc": "A heavy weighted pressure plate ringed by eight reinforced stone buttons. This is a tool, not a block: right-click a placed vanilla chest, barrel, furnace, smoker or blast furnace with it and that block becomes its passcode-protected twin."
+  },
+  {
+   "id": "securitycraft:keypad_chest",
+   "title": "A Chest Only You Can Open",
+   "desc": "Place a chest, right-click it with the Key Panel. Every passcode-protected container in the mod is made this way, and the chest is the prerequisite for the briefcase and the storage module."
+  },
+  {
+   "id": "securitycraft:keypad_frame",
+   "title": "A Frame to Hang a Code On",
+   "desc": "Iron and redstone in a shaped frame. Placed and hit with the Key Panel it becomes the Keypad proper; left as a Frame and given a linked camera monitor it displays a live camera feed instead."
+  },
+  {
+   "id": "securitycraft:door_indestructible_iron_item",
+   "title": "A Door That Cannot Be Broken",
+   "desc": "An iron door surrounded by iron ingots. It is the blank that both of the mod's secure doors are built from."
+  },
+  {
+   "id": "securitycraft:keypad_door_item",
+   "title": "Passcode on the Door",
+   "desc": "The reinforced iron door plus a keypad, shapeless. It opens on a code and stays shut for anyone who does not have one."
+  },
+  {
+   "id": "securitycraft:universal_block_modifier",
+   "title": "Owner, Options, Modules",
+   "desc": "Iron, redstone and an emerald. The modifier is how you open the settings screen of any SecurityCraft block and how you slot modules into it."
+  },
+  {
+   "id": "securitycraft:universal_key_changer",
+   "title": "Forgot the Code",
+   "desc": "A laser block with iron and redstone. It resets the passcode of anything you own - including a briefcase - without breaking it."
+  },
+  {
+   "id": "securitycraft:portable_radar",
+   "title": "Someone Is Nearby",
+   "desc": "A redstone torch, iron and redstone. The radar emits a signal when a player it does not recognise comes into range, and four later blocks are built on top of it."
+  },
+  {
+   "id": "securitycraft:username_logger",
+   "title": "Write Down Who Walked In",
+   "desc": "A portable radar over reinforced stone with redstone. It records the name of every player who passes, which the Block Change Detector then extends to recording what they touched."
+  },
+  {
+   "id": "securitycraft:retinal_scanner",
+   "title": "Look at the Wall",
+   "desc": "An eye of ender set in reinforced stone. It opens for whoever it is looking at, and it is the component that turns a reinforced door into a Scanner Door and a reinforced iron trapdoor into a Scanner Trapdoor."
+  },
+  {
+   "id": "securitycraft:keycard_reader",
+   "title": "Swipe to Enter",
+   "desc": "Reinforced hopper, reinforced slabs, redstone and reinforced stone. The reader is what links a blank keycard to you; the cheaper Keycard Lock then accepts any card the reader has linked."
+  },
+  {
+   "id": "securitycraft:keycard_lv1",
+   "title": "Level One, and Four More",
+   "desc": "Three iron over three gold. Levels two through five swap the bottom row for bricks, nether bricks, magenta dye and purple dye, and a Limited Use Keycard crafted from lapis restricts how many swipes a card gets."
+  },
+  {
+   "id": "securitycraft:security_camera",
+   "title": "Watch From Elsewhere",
+   "desc": "Reinforced glass and a reinforced redstone block on an iron frame. Mount it, then link it to a Camera Monitor to view the feed - and give the camera a Smart Module if you want to set a default facing."
+  },
+  {
+   "id": "securitycraft:camera_monitor",
+   "title": "The Screen",
+   "desc": "A reinforced glass pane in an iron frame. One monitor holds a whole bank of linked cameras, and those links can be transferred into a Frame to make a wall-mounted display."
+  },
+  {
+   "id": "securitycraft:mine",
+   "title": "Buried and Waiting",
+   "desc": "Iron and gunpowder in a T, for three Mines. Every vanilla and modded block in the mod's mine list has a disguised version crafted shapelessly from a mine plus that block."
+  },
+  {
+   "id": "securitycraft:bouncing_betty",
+   "title": "It Jumps Before It Goes Off",
+   "desc": "A heavy weighted pressure plate over gunpowder and iron. It leaps to head height first, and it is the component for both the Claymore and the IMS."
+  },
+  {
+   "id": "securitycraft:claymore",
+   "title": "Tripwire and Shrapnel",
+   "desc": "A bouncing betty and a tripwire hook with redstone, gunpowder and string. Directional, tripwire-triggered, and cut safely only with the mod's Wire Cutters."
+  },
+  {
+   "id": "securitycraft:ims",
+   "title": "Mines, Delivered",
+   "desc": "A bouncing betty, a portable radar and a reinforced iron block. The Intelligent Munitions System lays its own mines around itself when something hostile approaches."
+  },
+  {
+   "id": "securitycraft:sentry",
+   "title": "A Turret With Rules",
+   "desc": "A portable radar, a reinforced dispenser and a reinforced iron block. Its three modes and seven targeting descriptions cover attacking mobs, players, both or nothing, and the Trophy System built on top of it shoots incoming projectiles down."
+  },
+  {
+   "id": "securitycraft:sonic_security_system",
+   "title": "Locked by Sound",
+   "desc": "A portable radar and an iron block in a bowl. Link it to your SecurityCraft blocks and it locks all of them at once, up to a configured maximum number of links."
+  },
+  {
+   "id": "securitycraft:block_pocket_manager",
+   "title": "A Cube You Cannot Enter",
+   "desc": "Reinforced crystal quartz, reinforced iron and a reinforced redstone block. Build a hollow frame of Block Pocket Walls and the manager seals the volume inside it."
+  },
+  {
+   "id": "securitycraft:universal_block_reinforcer_lvl3",
+   "title": "The Last Reinforcer",
+   "desc": "A reinforced emerald block, a reinforced redstone block, reinforced pink stained glass and nether stars. Level two costs a reinforced diamond block; each tier reinforces more blocks before it wears out."
+  },
+  {
+   "id": "securitycraft:codebreaker",
+   "title": "Breaking In",
+   "desc": "A nether star, diamonds, emeralds, gold and redstone. It cracks another player's passcode - and it is the one item in the mod that a server can switch off outright, with the message 'The codebreaker has been disabled through the config file.'"
+  }
+ ],
+ "collections": [
+  {
+   "hub": "securitycraft:reinforced_stone",
+   "members": [
+    "securitycraft:reinforced_iron_block",
+    "securitycraft:reinforced_iron_bars",
+    "securitycraft:reinforced_obsidian",
+    "securitycraft:reinforced_glass_pane",
+    "securitycraft:reinforced_hopper",
+    "securitycraft:reinforced_dispenser",
+    "securitycraft:reinforced_piston",
+    "securitycraft:reinforced_iron_trapdoor",
+    "securitycraft:reinforced_redstone_block",
+    "securitycraft:reinforced_diamond_block",
+    "securitycraft:reinforced_emerald_block",
+    "securitycraft:reinforced_smooth_stone",
+    "securitycraft:reinforced_crystal_quartz_block",
+    "securitycraft:reinforced_stone_button"
+   ]
+  },
+  {
+   "hub": "securitycraft:keypad",
+   "members": [
+    "securitycraft:keypad_barrel",
+    "securitycraft:keypad_furnace",
+    "securitycraft:keypad_smoker",
+    "securitycraft:keypad_blast_furnace",
+    "securitycraft:keypad_trapdoor",
+    "securitycraft:scanner_door_item",
+    "securitycraft:scanner_trapdoor",
+    "securitycraft:keycard_lock",
+    "securitycraft:briefcase",
+    "securitycraft:keycard_holder",
+    "securitycraft:limited_use_keycard",
+    "securitycraft:keycard_lv2",
+    "securitycraft:keycard_lv3",
+    "securitycraft:keycard_lv4"
+   ]
+  },
+  {
+   "hub": "securitycraft:smart_module",
+   "members": [
+    "securitycraft:storage_module",
+    "securitycraft:disguise_module",
+    "securitycraft:harming_module",
+    "securitycraft:speed_module",
+    "securitycraft:redstone_module",
+    "securitycraft:whitelist_module",
+    "securitycraft:blacklist_module",
+    "securitycraft:alarm",
+    "securitycraft:protecto",
+    "securitycraft:inventory_scanner",
+    "securitycraft:floor_trap",
+    "securitycraft:cage_trap",
+    "securitycraft:motion_activated_light"
+   ]
+  }
+ ],
+ "notes": "A MECHANICS MOD WITH A LARGE COSMETIC TAIL: THE CHAIN IS THE MECHANICS, AND THE 400-PLUS REINFORCED BLOCKS GO TO A WHEEL. Verified against '[1.20.1] SecurityCraft v1.10.2.1.jar' as shipped in this pack (Forge, MC 1.20.1). ID DETECTION AND WIDENING: 665 item models, 632 blockstates, 662 lang block./item. keys; models INTERSECT lang = 635. ONE ID WAS ADDED BY WIDENING, and it is the inverted-naming case this jar is worth studying for: securitycraft:secret_sign_item has an item model (models/item/secret_sign_item.json) and IS the result of data/securitycraft/recipes/secret_sign_item.json (an oak sign plus a retinal scanner, yields 3), but its display name lives under the key item.securitycraft.secret_sign - stem without the _item suffix - so the naive model-INTERSECT-lang test throws it away. Recipe-result membership is the proof that rescues it, giving a verified count of 636. WIDENING REJECTED for the 50 blockstate-only stems: keypad_door, scanner_door, iron_door_reinforced, key_panel, laser, inventory_scanner_field, sentry_disguise, reinforced_moving_piston, reinforced_piston_head, the three reinforced_*_cauldron entries, fake_water_block, fake_lava_block and the 40-odd secret_*_sign_standing / _wall / wall_hanging entries are all placed states of blocks whose item form is registered under a different id (keypad_door_item, scanner_door_item, keypad_item, secret_sign_item and so on). NARROWED for the remaining 29 model-only stems, which are predicate models for a single item's states - camera_monitor_idle/linked/not_linked, remote_access_mine_* and remote_access_sentry_* triplets, codebreaker_decoding/failure/success, sonic_security_system_idle/linked/not_linked, keycard_holder_full, fake_water, fake_lava and template_block_mine. THE CENTRAL MECHANIC, AND WHY 124 VERIFIED IDS HAVE NO RECIPE: gui.securitycraft:scManual.recipe.reinforced states it exactly - 'Place down the vanilla equivalent (e.g. Reinforced Stone -> Stone) and break it with a Universal Block Reinforcer, or rightclick the Universal Block Reinforcer, put it into the slot and close the GUI.' Every reinforced_* block is obtained that way, not by crafting, which is why securitycraft:universal_block_reinforcer_lvl1 is step 3 of the chain and everything reinforced sits behind it. The same manual gives the second in-world conversion: 'Place down a Chest and rightclick it with a Key Panel' (and the identical line for Barrel, Furnace, Smoker, Blast Furnace, a Reinforced Iron Trapdoor and the mod's own Frame), which is how keypad_chest, keypad_barrel, keypad_furnace, keypad_smoker, keypad_blast_furnace, keypad_trapdoor and keypad itself are made. A THIRD NON-CRAFTING ROUTE, easily missed: securitycraft:bucket_f_water and securitycraft:bucket_f_lava are BREWING STAND recipes - 'putting any harming potion into the top slot, and up to three water buckets in the bottom slots' for fake water, and a healing potion with lava buckets for fake lava. They are real, obtainable and deliberately left out of the chain only because they are a gag rather than a mechanic. RECIPE GRAPH: 778 recipe files, 91 distinct shapes, 522 producing a securitycraft id. 183 of those files are stonecutting and another ~200 are the crystal quartz and reinforced slab/stairs/wall triplets. No recipe in this jar carries a forge:conditional wrapper - SecurityCraft gates at runtime, not at datapack level. RUNTIME CONFIG GATES worth flagging before questing: the Codebreaker can be disabled entirely ('messages.securitycraft:codebreakerDisabled'); the Universal Block Remover can be disabled with the fallback 'Disabled. Use vanilla tools to break reinforced blocks.'; the Admin Tool is creative-only AND config-gated per the manual; and viewing camera feeds inside a Frame can be turned off server-side. DROPPED AS UNOBTAINABLE: securitycraft:admin_tool - the manual states plainly that it 'is only available via the creative inventory, if it is enabled via the config file'. DROPPED AS NOT A REGISTERED ID: securitycraft:colored_lens. It has an item model and the lang key item.securitycraft.colored_lens = 'Colored Lens', so it passes the naive test, but all 17 colour recipes (black_lens.json and friends) produce securitycraft:lens with a forge:nbt display colour - not a distinct item - and no loot table or recipe anywhere yields securitycraft:colored_lens. It is the alternate display name of a tinted lens. STALE DOCUMENTATION NOTE: the manual entry for the Limited Use Keycard reads simply 'Disabled', yet data/securitycraft/recipes/limited_use_keycard.json exists and is unconditional (three iron over three lapis). The recipe works; the manual page is out of date. MODDB: no consensus signal - moddb.json has no securitycraft key - so ordering is the recipe graph plus the reinforcer and key-panel gates, and there is no conflict to record. DROPS BY THE DESIRABILITY RULE: 56 _slab, 53 _stairs, 23 _wall, 17 _carpet, 17 _pane, 14 _button, 13 _pressure_plate, 13 _fence, 12 _fence_gate and 11 _sign reinforced variants, the ~80 disguised block mines, the 9 security boats and rafts and the 11 secret wood signs."
+}

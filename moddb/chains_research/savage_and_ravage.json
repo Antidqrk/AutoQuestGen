@@ -1,0 +1,122 @@
+{
+ "mod": "savage_and_ravage",
+ "verified_against": "savage_and_ravage-1.20.1-6.0.1.jar",
+ "item_count_in_jar": 26,
+ "chain": [
+  {
+   "id": "kill:savage_and_ravage:skeleton_villager",
+   "title": "He Used to Have a Job",
+   "desc": "The Skeleton Villager is the one mob here that spawns on its own; three forge:add_spawns rules give it common, rare and 'weird' biome sets. It drops bone and arrows."
+  },
+  {
+   "id": "savage_and_ravage:creeper_spores",
+   "title": "What's Left of the Blast",
+   "desc": "The mod's base resource. A global loot modifier drops Creeper Spores from any creeper killed by an explosion, and the Griefer drops them too."
+  },
+  {
+   "id": "savage_and_ravage:spore_bomb",
+   "title": "Shake Well Before Throwing",
+   "desc": "Five Creeper Spores checkered with sand or red sand. Thrown or broken, it bursts into a spore cloud that seeds Creepies."
+  },
+  {
+   "id": "kill:savage_and_ravage:creepie",
+   "title": "They Grow Up So Fast",
+   "desc": "Creepies hatch out of spore clouds rather than spawning naturally. They are tiny, they swarm, and they grow into full creepers if you let them."
+  },
+  {
+   "id": "savage_and_ravage:mischief_arrow",
+   "title": "Arrows With Opinions",
+   "desc": "Four arrows ringed around one Creeper Spore makes four Mischief Arrows, which turn whatever they hit into a target the mob's own allies attack."
+  },
+  {
+   "id": "savage_and_ravage:blast_proof_plating",
+   "title": "Plating, Not Plate",
+   "desc": "Three Creeper Spores and two gold ingots, shapeless. Everything explosion-resistant in the mod is built out of this one plate."
+  },
+  {
+   "id": "savage_and_ravage:griefer_helmet",
+   "title": "Head First Into the Blast",
+   "desc": "Five Blast Proof Plating in the usual helmet shape. The full Griefer set blunts explosion damage; the helmet is the piece worth the quest."
+  },
+  {
+   "id": "kill:savage_and_ravage:griefer",
+   "title": "Bring Your Own Creeper",
+   "desc": "The Griefer is a raider that walks into battle carrying a creeper and throws it at you. It drops gunpowder and more Creeper Spores."
+  },
+  {
+   "id": "savage_and_ravage:blast_proof_plates",
+   "title": "Bunker Material",
+   "desc": "Nine Blast Proof Plating pressed into a block that shrugs off the explosions the rest of this chapter throws at you."
+  },
+  {
+   "id": "savage_and_ravage:gloomy_tiles",
+   "title": "Tiles From the Watchtower",
+   "desc": "Eight stone bricks around a phantom membrane yields eight Gloomy Tiles - the stone Savage & Ravage rebuilds the pillager outpost watchtower out of."
+  },
+  {
+   "id": "savage_and_ravage:runed_gloomy_tiles",
+   "title": "No Recipe, Only Ruins",
+   "desc": "Runed Gloomy Tiles cannot be crafted at all. They generate only in the overgrown watchtower variant of the pillager outpost, so you have to go and take them."
+  },
+  {
+   "id": "kill:savage_and_ravage:iceologer",
+   "title": "The Mob That Won the Vote",
+   "desc": "Iceologers replace witches in mountain biomes, drop ice chunks on your head from above, and are the only source of the Wand of Freezing."
+  },
+  {
+   "id": "savage_and_ravage:wand_of_freezing",
+   "title": "Ice Overhead",
+   "desc": "Taken from a slain Iceologer. It calls down the same hovering ice chunk the Iceologer uses, and it is one of the mod's four relics."
+  },
+  {
+   "id": "kill:savage_and_ravage:executioner",
+   "title": "Big Axe, Small Patience",
+   "desc": "The Executioner joins raids and pillager outposts swinging a Cleaver of Beheading; kill it before it swings twice."
+  },
+  {
+   "id": "savage_and_ravage:cleaver_of_beheading",
+   "title": "Take It From Him",
+   "desc": "The Cleaver has no recipe anywhere in the jar - the only source is the Executioner's own weapon, dropped when you cut him down."
+  },
+  {
+   "id": "kill:savage_and_ravage:trickster",
+   "title": "Now You See Him",
+   "desc": "The Trickster teleports, throws confusion bolts and locks you inside a rune prison. He is the richest raider in the mod."
+  },
+  {
+   "id": "savage_and_ravage:mask_of_dishonesty",
+   "title": "Wear Their Face",
+   "desc": "A Trickster drop and a helmet in #forge:armors/helmets. Worn, illagers stop treating you as an enemy."
+  },
+  {
+   "id": "savage_and_ravage:conch_of_conjuring",
+   "title": "Blow It and Run",
+   "desc": "A loot modifier gives Evokers a 5% chance to drop the Conch, which summons vexes of your own. It is the only relic that comes off a vanilla mob."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "savage_and_ravage:griefer_chestplate",
+   "members": [
+    "savage_and_ravage:griefer_leggings",
+    "savage_and_ravage:griefer_boots",
+    "savage_and_ravage:blast_proof_slab",
+    "savage_and_ravage:blast_proof_stairs",
+    "savage_and_ravage:chiseled_gloomy_tiles"
+   ]
+  },
+  {
+   "hub": "savage_and_ravage:iceologer_spawn_egg",
+   "members": [
+    "savage_and_ravage:executioner_spawn_egg",
+    "savage_and_ravage:griefer_spawn_egg",
+    "savage_and_ravage:trickster_spawn_egg",
+    "savage_and_ravage:skeleton_villager_spawn_egg",
+    "savage_and_ravage:gloomy_tile_slab",
+    "savage_and_ravage:gloomy_tile_stairs",
+    "savage_and_ravage:gloomy_tile_wall"
+   ]
+  }
+ ],
+ "notes": "NAMESPACE CORRECTION - READ THIS FIRST: the brief calls this mod 'savageandravage', but the jar's META-INF/mods.toml declares modId=\"savage_and_ravage\" and the only asset root is assets/savage_and_ravage/. EVERY id in this file is therefore namespaced savage_and_ravage:, and the \"mod\" field is set to savage_and_ravage so the loader keys it correctly; only the filename keeps the brief's spelling. Ids written as savageandravage:* would all be dead. VERIFIED AGAINST savage_and_ravage-1.20.1-6.0.1.jar (mods.toml: forge \"[47.1.3,)\", minecraft \"[1.20.1,1.20.2)\", mandatory blueprint \"[7.0.3,)\"; no fabric.mod.json). The strict 3-segment scan finds 16 item. and 13 block. keys = 29 lang-named ids, of which 26 survive verification. ENTITY VERIFICATION - SIX OF THIRTEEN ENTITY KEYS ARE REAL MOBS: skeleton_villager (proof: three forge:add_spawns biome modifiers under data/savage_and_ravage/forge/biome_modifier/add_spawn/ plus an entity loot table plus a spawn egg plus #minecraft:skeletons membership); iceologer (proof: its own add_spawns rule against #savage_and_ravage:has_monster/iceologer, a paired remove_spawns that deletes minecraft:witch from the same biomes, an entity loot table that is the sole Wand of Freezing source, a spawn egg, and membership in #minecraft:raiders and #minecraft:freeze_immune_entity_types); griefer, executioner and trickster (proof: all three in data/minecraft/tags/entity_types/raiders.json so they arrive with raid waves, each with an entity loot table and a spawn egg); creepie (proof: an entity loot table of its own plus the criteria modifiers data/savage_and_ravage/modifiers/advancements/adventure/kill_a_mob.json and kill_all_mobs.json, which splice savage_and_ravage:creepie into the vanilla kill-a-mob advancements - it is seeded by spore clouds rather than by a spawn rule). SEVEN ENTITY KEYS EXCLUDED AS TRAPS, exactly the class of thing the brief warned about: burning_banner (the ominous banner burning animation), ice_chunk and ice_cloud (the Iceologer's hovering block and its telegraph), mischief_arrow (a projectile that shares a name with a real ITEM - the item is questable, the entity is not), rune_prison (the cage the Trickster drops on you), spore_bomb (the thrown-entity form of the block, same name collision), spore_cloud (an area effect, listed in #minecraft:impact_projectiles alongside confusion_bolt, which has no lang key at all). None has a spawn egg, a spawn rule or a loot table; a kill task on any of them would be permanently uncompletable. THREE IDS DROPPED FOR OBTAINABILITY OR NON-REGISTRATION: savage_and_ravage:blast_proof_vertical_slab and savage_and_ravage:gloomy_tile_vertical_slab have lang keys but NO model, NO blockstate, and the substring 'vertical' does not occur in a single class file in the jar - they are leftovers from a Quark-compat feature that was removed, and they are why the block lang count (13) exceeds the blockstate count (12, the twelfth being potted_creeper_spores, a pot state with no item). savage_and_ravage:creeper_spore_sack IS registered and does have a block loot table, but its only two recipes sit under recipes/quark/ behind conditions [blueprint:and [forge:mod_loaded quark, quark:flag gunpowder_sack]] - with Quark absent, or with that Quark flag off, the sack is uncraftable, so it is out of both the chain and the wheels rather than being a silent trap. Also dropped: models/item/creepie_spawn_egg.json and models/item/poultry_farming_hat.json (no lang key, no registration, no data reference), plus the render-state models cleaver_of_beheading_gui, cleaver_of_beheading_handheld, crossbow_mischief_arrow and crossbow_spectral_arrow. ORDERING is the recipe graph, and it is unusually clean: creeper_spores is the single root (Griefer drop plus the modifiers/loot_tables/entities/creeper.json global modifier that fires on is_explosion deaths), and spore_bomb, mischief_arrow and blast_proof_plating all consume it directly, with blast_proof_plating feeding the whole Griefer armour set and blast_proof_plates. The four relics - wand_of_freezing, cleaver_of_beheading, mask_of_dishonesty, conch_of_conjuring - have no recipes at all and are ordered after their source mobs; data/savage_and_ravage/advancements/adventure/relic_collector.json names exactly those four together, which is the mod's own statement that they are one set. cleaver_of_beheading is the subtlest of the four: it appears in no loot table, and the proof that it is obtainable is that Executioner.class is the class that references it - it is his equipped weapon, dropped as equipment. runed_gloomy_tiles was traced further than the loot table: decompressing the shipped structure NBTs shows it in data/savage_and_ravage/structures/pillager_outpost/watchtower_overgrown.nbt only, so 'mine it at an outpost' is the literal and only route. SPAWN EGGS - REGISTERED, BUT CREATIVE-TAB ONLY: the five *_spawn_egg ids are built at runtime by Blueprint's helper from the entity name plus the suffix, so the composed string never appears literally in the constant pool; the proof used instead is that SRItems.class holds the five entity-name strings, each egg has its own item lang key, and each has an item model. They are wheeled rather than chained because they are not survival-obtainable - if the pack blocks spawn eggs, skip that wheel rather than rewriting it. A sixth egg model, creepie_spawn_egg.json, exists with NO lang key and 'creepie' is NOT among the SRItems strings, so that egg is not registered and is excluded. ARMOUR RULE APPLIED: griefer_helmet is the chain step and chestplate/leggings/boots are wheeled, per the measured 51.9% helmet-only pattern. CONSENSUS: savage_and_ravage is absent from moddb.json, so there is no pack ordering to conflict with; the recipe graph above is the sole authority used."
+}

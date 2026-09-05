@@ -1,0 +1,397 @@
+{
+ "mod": "simplyswords",
+ "jar": "simplyswords__simplyswords-forge-neoforge-1.70.2-1.20.1.jar",
+ "ids_in_jar": 141,
+ "entities_in_jar": 0,
+ "videos": [],
+ "items": {},
+ "entities": {},
+ "note": "no transcript reached; human_notes are jar-derived",
+ "human_notes": {
+  "_source": "jar (recipe graph). Gear mod: no entities, so no kill targets at all.",
+  "boss_order": [],
+  "prep": [
+   "simplyswords:runic_forge is the gate for everything interesting and is CHEAP — a smithing table plus obsidian, gold and an amethyst shard. It can be built long before netherite",
+   "Runic weapons consume a NETHERITE weapon of the same shape plus simplyswords:runic_tablet and diamonds, so full netherite is the real prerequisite, not the forge"
+  ],
+  "order": [
+   "15 weapon shapes (longsword, katana, claymore, rapier, sai, spear, glaive, halberd, scythe, twinblade, warglaive, chakram, cutlass, greataxe, greathammer) exist in each vanilla material tier — the material ladder is ordinary iron -> gold -> diamond -> netherite",
+   "Then simplyswords:runic_tablet + netherite weapon -> the runic tier at simplyswords:runic_forge",
+   "The named uniques (simplyswords:bloodwake, :mjolnir, :livyatan, :harbinger, :soulkeeper, :stormbringer) sit above the runic tier and come from loot/relic upgrades, not the normal crafting ladder"
+  ],
+  "key_drops": [
+   "simplyswords:runic_tablet — the one item gating the whole runic tier",
+   "simplyswords:runic_forge — the station",
+   "simplyswords:dormant_relic / :tainted_relic / :righteous_relic / :decaying_relic and simplyswords:empowered_remnant / :contained_remnant — the relic upgrade chain behind the unique weapons"
+  ],
+  "traps": [
+   "This mod ships item models under models/item/gobber_compat/... for the Gobber2 mod, which is NOT installed in this pack. Reading model paths as ids invents 317 fake ids such as a 'gobber_chakram'; only the 141 lang-backed ids are real",
+   "There are no simplyswords entities at all — do not write a kill task for this mod"
+  ],
+  "signature": [
+   "simplyswords:runic_forge",
+   "simplyswords:runic_tablet",
+   "simplyswords:runic_longsword",
+   "simplyswords:soulkeeper",
+   "simplyswords:mjolnir",
+   "simplyswords:bloodwake"
+  ]
+ },
+ "verified_entities": {},
+ "unusable_entities": {
+  "simplyswords:battlestandard": {
+   "name": "Battle Standard",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:blood_plague_spread_visual": {
+   "name": "Blood Plague Spread",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:blood_stain_visual": {
+   "name": "Blood-Stained Ground",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:bloodwake_blade_visual": {
+   "name": "Spectral Bloodwake",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:caelestis_breach_visual": {
+   "name": "Astral Breach",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:caelestis_dreadglare": {
+   "name": "Dreadglare",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:caelestis_hollow": {
+   "name": "Hollow",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:caelestis_riftling": {
+   "name": "Riftling",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:caelestis_tentacle": {
+   "name": "Breach Tentacle",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:dawnquiver_arrow": {
+   "name": "Shaft of Light",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:dawnquiver_bow_visual": {
+   "name": "Bow of Dawn",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:dawnquiver_impact_visual": {
+   "name": "Dawnquiver Impact",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:devourer_mass_visual": {
+   "name": "Devouring Mass",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:devourer_reprisal_visual": {
+   "name": "Ravenous Reprisal",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:devourer_tendril_visual": {
+   "name": "Devourer Tendril",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:dreadwhisper_visual": {
+   "name": "Shadow Rend",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:gloampiercer_clone_visual": {
+   "name": "Phantom Phalanx",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:gloampiercer_spear": {
+   "name": "Gloam Spear",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:ionbound_stormscale_visual": {
+   "name": "Ion Containment Field",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:riftmane_charger": {
+   "name": "Rift Charger",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:riftmane_rift_visual": {
+   "name": "Rift Tear",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:soulstalker_cleave": {
+   "name": "Shadow Cleave",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:soulstalker_stride": {
+   "name": "Stygian Strider",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:soulstalker_tentacle_visual": {
+   "name": "Stygian Tendril",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:stormscale_rod_visual": {
+   "name": "Stormscale Lightning Rod",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:thrown_sword": {
+   "name": "Throwing Weapon",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:watcher_bat": {
+   "name": "Watcher Bat",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  },
+  "simplyswords:wraithmaw_cutlass": {
+   "name": "Spectral Cutlass",
+   "evidence": [
+    "lang"
+   ],
+   "why": "registered and named but no loot table, spawn egg or kill advancement - projectile, summon or unfinished content"
+  }
+ },
+ "fake_item_ids": [
+  "simplyswords:big_handheld",
+  "simplyswords:long_handheld",
+  "simplyswords:template_chakram",
+  "simplyswords:template_claymore",
+  "simplyswords:template_claymore_flipped",
+  "simplyswords:template_greathammer",
+  "simplyswords:template_katana",
+  "simplyswords:template_longdagger",
+  "simplyswords:template_longsword",
+  "simplyswords:template_longsword_upsidedown",
+  "simplyswords:template_reworked_greathammer",
+  "simplyswords:template_twinblade",
+  "simplyswords:template_warglaive"
+ ],
+ "verified_items": [
+  "simplyswords:arcanethyst",
+  "simplyswords:awakened_lichblade",
+  "simplyswords:bloodwake",
+  "simplyswords:bramblethorn",
+  "simplyswords:brimstone_claymore",
+  "simplyswords:caelestis",
+  "simplyswords:chompolotl",
+  "simplyswords:contained_remnant",
+  "simplyswords:dawnquiver",
+  "simplyswords:decaying_relic",
+  "simplyswords:diamond_chakram",
+  "simplyswords:diamond_claymore",
+  "simplyswords:diamond_cutlass",
+  "simplyswords:diamond_glaive",
+  "simplyswords:diamond_greataxe",
+  "simplyswords:diamond_greathammer",
+  "simplyswords:diamond_halberd",
+  "simplyswords:diamond_katana",
+  "simplyswords:diamond_longsword",
+  "simplyswords:diamond_rapier",
+  "simplyswords:diamond_sai",
+  "simplyswords:diamond_scythe",
+  "simplyswords:diamond_spear",
+  "simplyswords:diamond_twinblade",
+  "simplyswords:diamond_warglaive",
+  "simplyswords:dormant_relic",
+  "simplyswords:dreadtide",
+  "simplyswords:dreadwhisper",
+  "simplyswords:emberblade",
+  "simplyswords:emberlash",
+  "simplyswords:empowered_remnant",
+  "simplyswords:enigma",
+  "simplyswords:flamewind",
+  "simplyswords:frostfall",
+  "simplyswords:gloampiercer",
+  "simplyswords:gold_chakram",
+  "simplyswords:gold_claymore",
+  "simplyswords:gold_cutlass",
+  "simplyswords:gold_glaive",
+  "simplyswords:gold_greataxe",
+  "simplyswords:gold_greathammer",
+  "simplyswords:gold_halberd",
+  "simplyswords:gold_katana",
+  "simplyswords:gold_longsword",
+  "simplyswords:gold_rapier",
+  "simplyswords:gold_sai",
+  "simplyswords:gold_scythe",
+  "simplyswords:gold_spear",
+  "simplyswords:gold_twinblade",
+  "simplyswords:gold_warglaive",
+  "simplyswords:harbinger",
+  "simplyswords:hearthflame",
+  "simplyswords:hiveheart",
+  "simplyswords:icewhisper",
+  "simplyswords:ionbound_stormscale",
+  "simplyswords:iron_chakram",
+  "simplyswords:iron_claymore",
+  "simplyswords:iron_cutlass",
+  "simplyswords:iron_glaive",
+  "simplyswords:iron_greataxe",
+  "simplyswords:iron_greathammer",
+  "simplyswords:iron_halberd",
+  "simplyswords:iron_katana",
+  "simplyswords:iron_longsword",
+  "simplyswords:iron_rapier",
+  "simplyswords:iron_sai",
+  "simplyswords:iron_scythe",
+  "simplyswords:iron_spear",
+  "simplyswords:iron_twinblade",
+  "simplyswords:iron_warglaive",
+  "simplyswords:livyatan",
+  "simplyswords:magiblade",
+  "simplyswords:magiscythe",
+  "simplyswords:magispear",
+  "simplyswords:mjolnir",
+  "simplyswords:molten_edge",
+  "simplyswords:netherfused_gem",
+  "simplyswords:netherite_chakram",
+  "simplyswords:netherite_claymore",
+  "simplyswords:netherite_cutlass",
+  "simplyswords:netherite_glaive",
+  "simplyswords:netherite_greataxe",
+  "simplyswords:netherite_greathammer",
+  "simplyswords:netherite_halberd",
+  "simplyswords:netherite_katana",
+  "simplyswords:netherite_longsword",
+  "simplyswords:netherite_rapier",
+  "simplyswords:netherite_sai",
+  "simplyswords:netherite_scythe",
+  "simplyswords:netherite_spear",
+  "simplyswords:netherite_twinblade",
+  "simplyswords:netherite_warglaive",
+  "simplyswords:ribboncleaver",
+  "simplyswords:riftmane",
+  "simplyswords:righteous_relic",
+  "simplyswords:runefused_gem",
+  "simplyswords:runic_chakram",
+  "simplyswords:runic_claymore",
+  "simplyswords:runic_cutlass",
+  "simplyswords:runic_forge",
+  "simplyswords:runic_glaive",
+  "simplyswords:runic_greataxe",
+  "simplyswords:runic_greathammer",
+  "simplyswords:runic_halberd",
+  "simplyswords:runic_katana",
+  "simplyswords:runic_longsword",
+  "simplyswords:runic_rapier",
+  "simplyswords:runic_sai",
+  "simplyswords:runic_scythe",
+  "simplyswords:runic_spear",
+  "simplyswords:runic_tablet",
+  "simplyswords:runic_twinblade",
+  "simplyswords:runic_warglaive",
+  "simplyswords:shadowsting",
+  "simplyswords:slumbering_lichblade",
+  "simplyswords:soulkeeper",
+  "simplyswords:soulpyre",
+  "simplyswords:soulrender",
+  "simplyswords:soulstalker",
+  "simplyswords:soulstealer",
+  "simplyswords:stars_edge",
+  "simplyswords:stormbringer",
+  "simplyswords:storms_edge",
+  "simplyswords:stormscale",
+  "simplyswords:sunfire",
+  "simplyswords:sword_on_a_stick",
+  "simplyswords:tainted_relic",
+  "simplyswords:tampered_remnant",
+  "simplyswords:tempest",
+  "simplyswords:the_devourer",
+  "simplyswords:thunderbrand",
+  "simplyswords:toxic_longsword",
+  "simplyswords:twisted_blade",
+  "simplyswords:waking_lichblade",
+  "simplyswords:watcher_claymore",
+  "simplyswords:watching_warglaive",
+  "simplyswords:waxweaver",
+  "simplyswords:whisperwind",
+  "simplyswords:wickpiercer",
+  "simplyswords:wraithfang",
+  "simplyswords:wraithmaw"
+ ]
+}

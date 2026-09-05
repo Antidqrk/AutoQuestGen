@@ -1,0 +1,14 @@
+{
+  "mod": "betteroceanmonuments",
+  "verified_against": "YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar",
+  "item_count_in_jar": 0,
+  "chain": [
+    {
+      "id": "structure:betteroceanmonuments:ocean_monument",
+      "title": "The Monument Rebuilt",
+      "desc": "The mod's whole content: one rebuilt ocean monument on #minecraft:is_deep_ocean with a guardian spawn override. Its single chest table, upper_side_chamber, holds nautilus shells, prismarine shards and prismarine crystals."
+    }
+  ],
+  "collections": [],
+  "notes": "SHORT ON PURPOSE - ONE STRUCTURE, NO ITEMS, so one entry and no padding. THE MOD ID IS betteroceanmonuments, NOT yungsbetteroceanmonuments (META-INF/mods.toml: modId betteroceanmonuments, version 1.20-Forge-3.0.4, minecraft [1.20,1.21), forge [46.0.2,), no fabric.mod.json). assets/betteroceanmonuments/ has no models/item, no blockstates and no item./block. keys, so item_count_in_jar is 0 and collections is empty. CONTENT: one structure, data/betteroceanmonuments/worldgen/structure/ocean_monument.json, type yungsapi:yung_jigsaw, step surface_structures, biomes #minecraft:is_deep_ocean plus optional #c:deep_ocean, spawn override minecraft:guardian. It is built from 47 nbt pieces across structures/parthenon, top_dome, lower_middle_chamber, side_lower_chamber, maze_chamber_battle_room, kelp and mobs. LOOT IS THIN AND THE ENTRY SAYS SO: exactly one chest table, data/betteroceanmonuments/loot_tables/chests/upper_side_chamber.json, whose only three entries are minecraft:nautilus_shell, minecraft:prismarine_shard and minecraft:prismarine_crystals. The nbt walk did not reach it (the chest is placed by a piece the walk resolved as a mob template), but the file exists and this is the only structure in the jar it can belong to. The real reward of a monument is still the elder guardians and the sponge room, which are vanilla behaviour this mod re-houses rather than adds - no claim is made about them here. NOTE THE LOADER THRESHOLD: _load_researched_chains keeps curated chains of 4+ rows, so this one-row file will be skipped by that path; structure_quests() still reads the id from the jar scan and this file is the loot record. No kill: entries - the jar has no entity lang keys and the guardian is vanilla. No dim: entries. ID FORM: 'structure:' + fully namespaced. Requires yungsapi."
+}

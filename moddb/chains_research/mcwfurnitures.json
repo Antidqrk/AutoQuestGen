@@ -1,0 +1,150 @@
+{
+ "mod": "mcwfurnitures",
+ "verified_against": "mcw-furniture-3.4.1-mc1.20.1forge.jar",
+ "item_count_in_jar": 654,
+ "chain": [
+  {
+   "id": "mcwfurnitures:cabinet_door",
+   "title": "A Hinge and a Handle",
+   "desc": "A wooden chest and iron nuggets on a stick frame. The Cabinet Door is a crafting ingredient, not a block, and fourteen of the mod's thirty-five furniture types cannot be made without one - it is the single biggest gate in any Macaw's mod."
+  },
+  {
+   "id": "mcwfurnitures:cabinet_drawer",
+   "title": "The Other Half of the Gate",
+   "desc": "The same chest and nuggets in a shorter frame. Every drawer in the mod - single, double, triple, large, lower triple and both bookshelf drawers - takes one of these."
+  },
+  {
+   "id": "mcwfurnitures:oak_coffee_table",
+   "title": "Start Low",
+   "desc": "A log over a fence. The furniture graph starts here: coffee table into table, table into end table, end table into glass table - four steps, each one built from the last."
+  },
+  {
+   "id": "mcwfurnitures:oak_table",
+   "title": "Raise It",
+   "desc": "A coffee table over a fence. This is the only Macaw's mod where a decoration is crafted from another decoration of the same mod as a matter of course."
+  },
+  {
+   "id": "mcwfurnitures:oak_end_table",
+   "title": "And Again",
+   "desc": "A table over a log. The End Table is the third rung and the parent of the glass table."
+  },
+  {
+   "id": "mcwfurnitures:oak_glass_table",
+   "title": "Glass on Top",
+   "desc": "An end table under a block of glass. Fourth and last rung of the table ladder."
+  },
+  {
+   "id": "mcwfurnitures:oak_chair",
+   "title": "Somewhere to Sit",
+   "desc": "A fence, a log and two slabs. Chair, modern chair, striped chair and stool are four silhouettes on the same three ingredients."
+  },
+  {
+   "id": "mcwfurnitures:oak_drawer",
+   "title": "Storage in the Furniture",
+   "desc": "A cabinet drawer set in a ring of logs, four at a time. Drawers and cabinets have real inventories - the jar carries a 'Furniture Inventory' container title and open/close sounds for both."
+  },
+  {
+   "id": "mcwfurnitures:oak_wardrobe",
+   "title": "A Door on the Front",
+   "desc": "A cabinet door in a ring of logs, four at a time. Wardrobe, modern wardrobe and double wardrobe are three arrangements of the same two ingredients."
+  },
+  {
+   "id": "mcwfurnitures:oak_kitchen_cabinet",
+   "title": "The Kitchen Line",
+   "desc": "Cabinet door and logs in a two-wide frame. Kitchen cabinet, glass kitchen cabinet and double kitchen cabinet are the wall units."
+  },
+  {
+   "id": "mcwfurnitures:oak_counter",
+   "title": "A Worktop",
+   "desc": "A slab over a log. Counters are the base unit, and the cupboard, drawer and double drawer counters are each a finished piece of furniture with a slab laid on it."
+  },
+  {
+   "id": "mcwfurnitures:oak_cupboard_counter",
+   "title": "Furniture Into Furniture",
+   "desc": "A wardrobe under a slab. The three counter upgrades are the clearest dependency in the mod: you must build the wardrobe or the drawer first, then top it."
+  },
+  {
+   "id": "mcwfurnitures:oak_kitchen_sink",
+   "title": "Plumbing",
+   "desc": "A cauldron and a water bucket over logs and slabs. The sink is the only recipe in the mod that consumes a bucket and the only one with a functional vanilla block in it."
+  },
+  {
+   "id": "mcwfurnitures:oak_desk",
+   "title": "Something to Work At",
+   "desc": "Three logs over two fences. Desk, covered desk and modern desk are three silhouettes, and the modern one adds a stick."
+  },
+  {
+   "id": "mcwfurnitures:oak_bookshelf",
+   "title": "Books on the Wall",
+   "desc": "Books between rows of logs, four at a time. Adding a cabinet door gives the Cupboard Bookshelf and a cabinet drawer gives the two Bookshelf Drawers."
+  },
+  {
+   "id": "mcwfurnitures:white_chaise",
+   "title": "Wool on a Frame",
+   "desc": "Three wool over two planks, four at a time. The chaise is the entry to the mod's sixteen-colour half."
+  },
+  {
+   "id": "mcwfurnitures:white_couch",
+   "title": "Add a Back",
+   "desc": "Wool over a chaise. Couch and chaise are sixteen colours each, and the couch is always downstream of the chaise of the same colour."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "mcwfurnitures:red_couch",
+   "members": [
+    "mcwfurnitures:orange_couch",
+    "mcwfurnitures:yellow_couch",
+    "mcwfurnitures:lime_couch",
+    "mcwfurnitures:green_couch",
+    "mcwfurnitures:cyan_couch",
+    "mcwfurnitures:light_blue_couch",
+    "mcwfurnitures:blue_couch",
+    "mcwfurnitures:purple_couch",
+    "mcwfurnitures:magenta_couch",
+    "mcwfurnitures:pink_couch",
+    "mcwfurnitures:brown_couch",
+    "mcwfurnitures:gray_couch",
+    "mcwfurnitures:light_gray_couch",
+    "mcwfurnitures:black_couch"
+   ]
+  },
+  {
+   "hub": "mcwfurnitures:spruce_table",
+   "members": [
+    "mcwfurnitures:birch_table",
+    "mcwfurnitures:jungle_table",
+    "mcwfurnitures:acacia_table",
+    "mcwfurnitures:dark_oak_table",
+    "mcwfurnitures:mangrove_table",
+    "mcwfurnitures:cherry_table",
+    "mcwfurnitures:crimson_table",
+    "mcwfurnitures:warped_table",
+    "mcwfurnitures:spruce_chair",
+    "mcwfurnitures:birch_chair",
+    "mcwfurnitures:acacia_chair",
+    "mcwfurnitures:spruce_stool_chair",
+    "mcwfurnitures:spruce_modern_chair"
+   ]
+  },
+  {
+   "hub": "mcwfurnitures:spruce_drawer",
+   "members": [
+    "mcwfurnitures:birch_drawer",
+    "mcwfurnitures:jungle_drawer",
+    "mcwfurnitures:acacia_drawer",
+    "mcwfurnitures:dark_oak_drawer",
+    "mcwfurnitures:mangrove_drawer",
+    "mcwfurnitures:cherry_drawer",
+    "mcwfurnitures:crimson_drawer",
+    "mcwfurnitures:warped_drawer",
+    "mcwfurnitures:spruce_double_drawer",
+    "mcwfurnitures:spruce_triple_drawer",
+    "mcwfurnitures:spruce_large_drawer",
+    "mcwfurnitures:spruce_wardrobe",
+    "mcwfurnitures:spruce_kitchen_cabinet"
+   ]
+  }
+ ],
+ "notes": "MACAW'S MODS SHARE ONE STRUCTURE: A SMALL NUMBER OF DISTINCT BLOCK TYPES CROSSED WITH A LARGE MATERIAL TABLE. The chain below is one step per distinct RECIPE SHAPE, not one per id, and the material tables go to wheels. MODDB: no consensus signal - moddb.json contains no key for any Macaw's mod - so every ordering here is the recipe graph alone and there is no conflict to record. 654 IDS AND THE ONLY MACAW'S MOD WITH A GENUINE INTERNAL DEPENDENCY GRAPH. Verified against mcw-furniture-3.4.1-mc1.20.1forge.jar (Modrinth version 3.4.1, loaders=[forge], game_versions=[1.20.1]). ID DETECTION - PERFECTLY CLEAN: 654 item models, 652 blockstates, 654 lang block./item. keys, 654 recipes, 652 loot tables; models INTERSECT lang = 654, every one produced by a recipe. No stale lang keys, no orphan models, nothing to widen or narrow. STRUCTURE: 35 name-stems. Thirty-three of them are furniture types crossed with a 20-material wood table (the ten overworld woods, crimson and warped, and eight stripped-log variants), two are the sixteen-colour upholstery types (couch and chaise), and two are the crafting ingredients. 33 x 20 = 660 minus the gaps, plus 32 upholstery, plus 2 ingredients. WHY THIS ONE EARNS A LONGER CHAIN THAN ITS SIBLINGS: unlike Bridges, Roofs, Paths or Fences, this mod's recipes reference each other. mcwfurnitures:cabinet_door is an ingredient in fourteen furniture types (all three wardrobes, all three kitchen cabinets, the cupboard bookshelf and more) and mcwfurnitures:cabinet_drawer in seven (every drawer and both bookshelf drawers) - so both are hard prerequisites for roughly half the mod. On top of that there are four genuine crafting ladders: coffee_table -> table -> end_table -> glass_table; wardrobe -> cupboard_counter; drawer -> drawer_counter and double_drawer -> double_drawer_counter; chaise -> couch. That is a real graph, not a flat material table, and it is what the chain above traces. DISTINCT RECIPE SHAPES: 35 by pattern but about 20 that are structurally distinct once the cabinet-door and cabinet-drawer families are collapsed. Verified yields: cabinet_door 1, cabinet_drawer 1, coffee_table 1, table 1, end_table 1, glass_table 1, chair 1, modern_chair 1, striped_chair 1, stool_chair 1, counter 1, cupboard_counter 1, drawer_counter 1, kitchen_sink 1, desk 2, covered_desk 2, modern_desk 2, bookshelf 4, bookshelf_cupboard 4, bookshelf_drawer 4, drawer 4, double_drawer 4, triple_drawer 4, large_drawer 4, lower_triple_drawer 4, wardrobe 4, modern_wardrobe 4, double_wardrobe 4, kitchen_cabinet 4, glass_kitchen_cabinet 4, double_kitchen_cabinet 4, chaise 4, couch 1. MECHANICS: the jar carries mcwfurnitures.container.threerows = 'Furniture Inventory' plus cabinet_open, cabinet_close, drawer_open and drawer_close subtitles, so the drawers and cabinets are working three-row containers, not props. mcwfurnitures.furnitureitem.desc = 'Crafting Ingredient' is the tooltip on the cabinet door and drawer. NOTE ON THE MATERIAL TABLE: it is 20 wide, not 11, because eight stripped logs are first-class materials here (stripped_oak_kitchen_sink and friends all exist). A generator sizing wheels from a wood list alone will under-count this mod by nearly half. DROPS: none."
+}

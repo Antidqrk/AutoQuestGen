@@ -1,0 +1,50 @@
+{
+ "mod": "thermal_dynamics",
+ "verified_against": "thermal_dynamics-1.20.1-11.0.1.23.jar",
+ "item_count_in_jar": 8,
+ "registers_into": ["thermal"],
+ "parent_mod": "thermal",
+ "chain": [
+  {
+   "id": "thermal:energy_duct",
+   "title": "Wire Up the Base",
+   "desc": "Lead, redstone and glass make 4 Fluxducts. Run them from your dynamos to your machines and stop hand-carrying charged cells - this is the moment your setup becomes a grid."
+  },
+  {
+   "id": "thermal:fluid_duct",
+   "title": "Plumbing",
+   "desc": "Bronze and lead make 4 Fluiducts. Pipe latex from Arboreal Extractors, crude oil to your dynamos, or water anywhere - fluids finally move without buckets."
+  },
+  {
+   "id": "thermal:servo_attachment",
+   "title": "Make It Pull",
+   "desc": "Ducts only push by default. Snap a Servo (iron, tin nugget, redstone, glass) onto a duct's connection to a tank or inventory and it actively extracts - the difference between decoration and automation."
+  },
+  {
+   "id": "thermal:filter_attachment",
+   "title": "Sort at the Source",
+   "desc": "Paper, iron, tin nugget and glass. A Filter on a connection whitelists or blacklists what passes through it, so one line can feed many machines without cross-contamination."
+  },
+  {
+   "id": "thermal:turbo_servo_attachment",
+   "title": "Turbocharged Extraction",
+   "desc": "Upgrade: a Redstone Servo wrapped in invar and lead nuggets. The Turbo Servo pulls far faster - fit these when tier-two machines start outrunning your plumbing."
+  },
+  {
+   "id": "thermal:energy_limiter_attachment",
+   "title": "Throttle the Flow",
+   "desc": "Electrum, lead nugget, redstone and glass. Caps how much RF passes through one connection - meter fragile machines or split one dynamo bank fairly across consumers."
+  },
+  {
+   "id": "thermal:fluid_duct_windowed",
+   "title": "Watch It Flow",
+   "desc": "Bronze around Hardened Glass makes the windowed Fluiduct - same pipe, but you can see the fluid inside. Equal parts diagnostics and base beautification."
+  },
+  {
+   "id": "thermal:item_buffer",
+   "title": "The Item Buffer",
+   "desc": "Signalum, tin, quartz and planks. A 9-slot pass-through that collects items and ejects them onward to an adjacent inventory - Dynamics' answer to item logistics, and a tidy hopper upgrade."
+  }
+ ],
+ "notes": "Dynamics in 1.20.1 is a small module: exactly 8 registered things - 4 blocks (energy_duct, fluid_duct, fluid_duct_windowed, item_buffer) and 4 attachments - verified as the complete set of recipes, blockstates and loot tables in this jar. The chain is every one of them in adoption order: power ducts first (lead + redstone only), fluid ducts next (needs bronze from Foundation's fire-charge alloying), then the attachment ladder (basic servo/filter on iron and tin, turbo servo on invar plus a Redstone Servo, limiter on electrum), and the two luxuries last (windowed duct needs Hardened Glass from the expansion side; item_buffer needs signalum, which is deep in thermal.json's spine). energy_distributor, fluid_distributor and ender_tunnel exist only as lang keys in assets/thermal_dynamics/lang - no recipe, blockstate or loot table - so they are unimplemented in this build and excluded. There are no dedicated itemducts in Thermal 1.20: item movement is the item_buffer plus machine push/pull, which is worth knowing before a player goes hunting for a pipe that does not exist."
+}

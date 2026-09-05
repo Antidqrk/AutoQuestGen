@@ -1,0 +1,178 @@
+{
+ "mod": "ars_additions",
+ "verified_against": "ars_additions-1.20.1-1.6.7.jar",
+ "item_count_in_jar": 65,
+ "parent_mod": "ars_nouveau",
+ "chain": [
+  {
+   "id": "ars_additions:wayfinder",
+   "title": "A Needle For Places",
+   "desc": "Amethyst shard and gold. The Wayfinder points at a location and reports the distance, and it is the reagent the Locate Structure ritual consumes."
+  },
+  {
+   "id": "ars_additions:ritual_locate_structure",
+   "title": "Asking The World Where Things Are",
+   "desc": "Wayfinder, purple archwood log, a source gem and a compass. This ritual finds any structure by id, which is how you reach an Arcane Library without wandering."
+  },
+  {
+   "id": "ars_additions:codex_entry",
+   "title": "A Page From Someone Else's Book",
+   "desc": "Found only in Arcane Library, Nexus Tower and ruined-portal chests. Reading one teaches a random glyph of its tier - the only glyph source in the ecosystem that is not a Scribes Table recipe."
+  },
+  {
+   "id": "ars_additions:magelight_lantern",
+   "title": "Light That Costs Source",
+   "desc": "Source gem, iron ingot and nuggets. Magelight lanterns glow without a flame and are the mod's signature decorative build."
+  },
+  {
+   "id": "ars_additions:sourcestone_lantern",
+   "title": "Lit From The Quarry",
+   "desc": "Ars Nouveau's sourcestone with a torch and iron nuggets. Ars Additions gives sourcestone the full block family the base mod never bothered with."
+  },
+  {
+   "id": "ars_additions:magebloom_carpet",
+   "title": "Walking On Magebloom",
+   "desc": "A magebloom block cut into carpet. Small, but it is the piece every Ars build wants and never had."
+  },
+  {
+   "id": "ars_additions:xp_jar",
+   "title": "Experience In A Bottle",
+   "desc": "Enchanting Apparatus: allow scroll, furnace, cobblestone, coal and lapis. It stores experience and pours it back, which makes an enchanting setup portable."
+  },
+  {
+   "id": "ars_additions:handy_haversack",
+   "title": "A Bag That Is Bigger Inside",
+   "desc": "Ender pearl, gold, purple wool and string. Ars Nouveau never shipped a backpack; this is it."
+  },
+  {
+   "id": "ars_additions:advanced_dominion_wand",
+   "title": "Linking At Range",
+   "desc": "Enchanting Apparatus: Dominion Wand, amethyst block and gold. It links automation blocks across a far greater distance than the base wand allows."
+  },
+  {
+   "id": "ars_additions:ender_source_jar",
+   "title": "Source Across Dimensions",
+   "desc": "Enchanting Apparatus: a Source Jar, an ender pearl and popped chorus fruit. Every ender source jar shares one pool, which is how you power a build in the Nether from an Overworld flower farm."
+  },
+  {
+   "id": "ars_additions:night_vision_charm",
+   "title": "Seeing In The Dark, Passively",
+   "desc": "Enchanting Apparatus: glass bottle, lantern and torch. Charms are Curios items that spend stored source to keep an effect running - fourteen exist and they are the mod's real content."
+  },
+  {
+   "id": "ars_additions:fall_prevention_charm",
+   "title": "The Fall That Does Not Land",
+   "desc": "Glass bottle, feather and phantom membrane. It consumes source on impact rather than health."
+  },
+  {
+   "id": "ars_additions:undying_charm",
+   "title": "One More Chance",
+   "desc": "Enchanting Apparatus: crying obsidian, glowstone and a Totem of Undying. A totem you do not have to hold in your hand."
+  },
+  {
+   "id": "ars_additions:enchanting_wixie_cauldron",
+   "title": "The Apparatus That Works Alone",
+   "desc": "Sneak-use a Wixie Charm on an Enchanting Apparatus. The wixie then runs apparatus recipes for you, which is the closest Ars Nouveau gets to autocrafting."
+  },
+  {
+   "id": "ars_additions:source_spawner",
+   "title": "A Spawner You Built",
+   "desc": "Enchanting Apparatus: conjuration essence, a Drygmy Charm and a Summon Focus. It spawns a captured mob on source, feeding a drygmy farm without a vanilla spawner."
+  },
+  {
+   "id": "ars_additions:unstable_reliquary",
+   "title": "Something Still Moving Inside",
+   "desc": "Enchanting Apparatus: conjuration essence, manipulation essence, a Mob Jar and an ender pearl. It holds a captured entity for the rituals below."
+  },
+  {
+   "id": "ars_additions:glyph_mark",
+   "title": "Marking A Spot",
+   "desc": "Glyph recipe: manipulation essence, a Mob Jar, the Containment ritual tablet and an ender pearl. Mark stores a position that Recall returns to."
+  },
+  {
+   "id": "ars_additions:glyph_recall",
+   "title": "Coming Back",
+   "desc": "Glyph recipe: conjuration essence, an Enchanter's Eye, a Scryer Scroll and an ender pearl. Recall is the return half of the Mark pair and the cheapest teleport in the ecosystem."
+  },
+  {
+   "id": "ars_additions:imbued_spell_parchment",
+   "title": "A Spell With Its Own Mana",
+   "desc": "Scribe a spell into a parchment and pour source into it. Holding use gathers the stored source - about half a second per hundred mana - and casts without touching your own pool."
+  },
+  {
+   "id": "ars_additions:warp_index",
+   "title": "Filing Your Destinations",
+   "desc": "Enchanting Apparatus: Bookwyrm Charm, Enchanter's Eye, Mundane Belt, Scryer's Crystal and a Starbuncle Charm. Five Ars Nouveau curios spent at once to build a warp directory."
+  },
+  {
+   "id": "ars_additions:stabilized_warp_index",
+   "title": "Warping Without Losing Anything",
+   "desc": "Warp Index, an ender chest, a nether star and netherite. The stabilized version survives dimension changes and is this mod's true endgame item."
+  },
+  {
+   "id": "ars_additions:warp_nexus",
+   "title": "The Waystone In The Tower",
+   "desc": "Warp Nexuses are placed inside Nexus Tower structures, standing on a source leyline so they teleport for free. Move one and it costs a thousand source per jump."
+  },
+  {
+   "id": "ars_additions:nexus_warp_scroll",
+   "title": "The Scroll Inside The Nexus",
+   "desc": "Every Nexus Tower's warp nexus is generated holding one, bound to that tower's location. Nine of them fit inside a single nexus."
+  },
+  {
+   "id": "ars_additions:ritual_chunk_loading",
+   "title": "Keeping The Lights On",
+   "desc": "Blue archwood log, earth essence, a source gem and a nether star. Arcane Permanence keeps a chunk ticking, which is what a source-powered farm needs to run while you are away."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "ars_additions:night_vision_charm",
+   "members": [
+    "ars_additions:fire_resistance_charm",
+    "ars_additions:water_breathing_charm",
+    "ars_additions:wither_protection_charm",
+    "ars_additions:void_protection_charm",
+    "ars_additions:ender_mask_charm",
+    "ars_additions:golden_charm",
+    "ars_additions:dispel_protection_charm",
+    "ars_additions:powdered_snow_walk_charm",
+    "ars_additions:sonic_boom_protection_charm"
+   ]
+  },
+  {
+   "hub": "ars_additions:magelight_lantern",
+   "members": [
+    "ars_additions:archwood_magelight_lantern",
+    "ars_additions:golden_magelight_lantern",
+    "ars_additions:soul_magelight_lantern",
+    "ars_additions:sourcestone_magelight_lantern",
+    "ars_additions:polished_sourcestone_magelight_lantern",
+    "ars_additions:archwood_lantern",
+    "ars_additions:golden_lantern",
+    "ars_additions:polished_sourcestone_lantern",
+    "ars_additions:archwood_chain",
+    "ars_additions:golden_chain",
+    "ars_additions:sourcestone_chain",
+    "ars_additions:polished_sourcestone_chain"
+   ]
+  },
+  {
+   "hub": "ars_additions:sourcestone_door",
+   "members": [
+    "ars_additions:sourcestone_trapdoor",
+    "ars_additions:sourcestone_button",
+    "ars_additions:polished_sourcestone_door",
+    "ars_additions:polished_sourcestone_trapdoor",
+    "ars_additions:polished_sourcestone_button",
+    "ars_additions:cracked_sourcestone",
+    "ars_additions:cracked_sourcestone_large_bricks",
+    "ars_additions:cracked_sourcestone_small_bricks",
+    "ars_additions:cracked_polished_sourcestone",
+    "ars_additions:cracked_polished_sourcestone_large_bricks",
+    "ars_additions:cracked_polished_sourcestone_small_bricks"
+   ]
+  }
+ ],
+ "notes": "62 ids resolve as assets/ars_additions/models/item/<id>.json intersected with item./block. lang keys; the three glyphs (mark, recall, retaliate) are verified the extra way - item model plus a data/ars_additions/recipes entry of type ars_nouveau:glyph - because Ars Nouveau glyphs have no item. lang key. Ordering read from data/ars_additions/recipes/apparatus/*.json (ars_nouveau:enchanting_apparatus) and the bundled Patchouli pages in the lang file. OBTAIN PATHS THAT ARE NOT RECIPES, all verified in the jar: codex_entry appears in data/ars_additions/loot_tables/chests/{arcane_library,nexus_tower,ruined_portal}.json; warp_nexus and nexus_warp_scroll are placed by data/ars_additions/worldgen/processor_list/{arcane_library,nexus_tower}.json; enchanting_wixie_cauldron is made by sneak-using a Wixie Charm on an Enchanting Apparatus (its block loot table drops a plain ars_nouveau:enchanting_apparatus back); imbued_spell_parchment is produced by a scribing action. DROPPED DELIBERATELY: ars_additions:ancient_codex_entry and ars_additions:lost_codex_entry are registered (they appear in data/minecraft/tags/items/bookshelf_books.json) but have NO recipe, NO loot-table entry and NO structure placement anywhere in the jar, so they would make uncompletable tasks. The four structures are arcane_library, nexus_tower, ruined_portal and ruined_portal_large. Parent items this addon assumes you already have: ars_nouveau:worn_notebook, an Enchanting Apparatus with arcane pedestals, ars_nouveau:source_jar, ars_nouveau:sourcestone, ars_nouveau:magebloom_block, ars_nouveau:dominion_wand, ars_nouveau:mob_jar, ars_nouveau:ritual_containment, ars_nouveau:scryer_scroll, ars_nouveau:enchanters_eye, ars_nouveau:bookwyrm_charm, ars_nouveau:starbuncle_charm, ars_nouveau:drygmy_charm, ars_nouveau:wixie_charm, ars_nouveau:mundane_belt, Curios."
+}

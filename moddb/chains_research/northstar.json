@@ -1,0 +1,313 @@
+{
+ "mod": "northstar",
+ "verified_against": "Northstar-0.6.4+1.20.1.jar (Northstar Redux) - also diffed against northstar-0.1cb-1.20.1.jar (original)",
+ "item_count_in_jar": 364,
+ "chain": [
+  {
+   "id": "northstar:telescope",
+   "title": "Look Up First",
+   "desc": "Brass, an amethyst shard and sticks. Northstar starts with astronomy rather than rocketry, and the telescope is the cheapest thing in the mod."
+  },
+  {
+   "id": "northstar:astronomy_table",
+   "title": "Write Down What You See",
+   "desc": "Stripped logs, iron, paper and wooden slabs. The table turns telescope observations into readings, which is how the mod gates its dimensions."
+  },
+  {
+   "id": "northstar:astronomical_reading",
+   "title": "A Reading",
+   "desc": "Readings are the mod's research currency and the rocket station will not target a planet you have not observed."
+  },
+  {
+   "id": "northstar:amethyst_crystal",
+   "title": "Grow Amethyst",
+   "desc": "The amethyst crystal and its polished form are the substrate every circuit is engraved on."
+  },
+  {
+   "id": "northstar:circuit",
+   "title": "The Circuit",
+   "desc": "A create:sequenced_assembly on copper, gold and iron plates with polished amethyst, leaving northstar:unfinished_circuit on the belt between steps. Nearly every machine in the mod needs one."
+  },
+  {
+   "id": "northstar:circuit_engraver",
+   "title": "The Engraver",
+   "desc": "A mechanical crafter recipe with polished rose quartz, a precision mechanism, a shaft, titanium plates and an amethyst crystal. This is the machine that makes circuits practical."
+  },
+  {
+   "id": "northstar:rutile_concentrate",
+   "title": "Crush Sand For Titanium",
+   "desc": "A create:crushing recipe on plain sand, on create:limestone, or on venus gravel. Titanium in Redux comes from crushing, not from mining - that is a whole production line the original mod did not have."
+  },
+  {
+   "id": "northstar:salt",
+   "title": "Salt",
+   "desc": "Salt is filled into a sodium catalyst and the catalyst drives the titanium reduction. The chemistry here is a real Kroll process in miniature."
+  },
+  {
+   "id": "northstar:sodium_catalyst",
+   "title": "The Catalyst",
+   "desc": "A create:filling recipe on salt dust. One of eighty-three filling recipes in the jar."
+  },
+  {
+   "id": "northstar:titanium_tetrachloride_bucket",
+   "title": "The Intermediate",
+   "desc": "Chlorine and rutile concentrate become titanium tetrachloride. Sixteen fluid buckets exist in this mod and this is the one that matters."
+  },
+  {
+   "id": "northstar:titanium_ingot",
+   "title": "Titanium",
+   "desc": "A sequenced assembly on a sturdy sheet leaving northstar:incomplete_titanium_ingot, or blasted from any of nine titanium ores across four planets. Titanium is Redux's structural metal and it replaced the original mod's iron entirely."
+  },
+  {
+   "id": "northstar:titanium_sheet",
+   "title": "Rolled Flat",
+   "desc": "Titanium plates are what the rocket, the oxygen gear and every machine above this point are built from."
+  },
+  {
+   "id": "northstar:durable_fabric",
+   "title": "Fabric",
+   "desc": "Durable fabric is the soft half of every space suit. Without it you have armour, not a suit."
+  },
+  {
+   "id": "northstar:oxygen_separator",
+   "title": "Split The Air",
+   "desc": "An electron tube, a fluid pipe and iron plates. The separator is the root of the whole life-support branch."
+  },
+  {
+   "id": "northstar:iron_space_suit_helmet",
+   "title": "A Helmet You Can Breathe In",
+   "desc": "Iron plates, an iron helmet and tinted glass. The chestpiece additionally wants a create:copper_backtank, which is the mod leaning on Create for its air supply."
+  },
+  {
+   "id": "northstar:iron_space_suit_chestpiece",
+   "title": "And The Backtank",
+   "desc": "Copper backtank, iron plates, an iron chestplate and durable fabric. Four pieces make the first suit, and a broken variant exists for each when it runs out of air."
+  },
+  {
+   "id": "northstar:hardened_precision_mechanism",
+   "title": "Hardened",
+   "desc": "A sequenced assembly on a Create precision mechanism with titanium nuggets and the mod's own iron cogwheels. Everything rocket-shaped needs one."
+  },
+  {
+   "id": "northstar:targeting_computer",
+   "title": "Where To Aim",
+   "desc": "Another sequenced assembly - iron plates, a circuit, a hardened precision mechanism and polished diamond. The rocket station will not work without it."
+  },
+  {
+   "id": "northstar:rocket_combustion_chamber",
+   "title": "The Chamber",
+   "desc": "A propeller, titanium plates, a hardened precision mechanism and an oxygen separator."
+  },
+  {
+   "id": "northstar:rocket_thruster",
+   "title": "The Thruster",
+   "desc": "A propeller, titanium plates and the combustion chamber. Rockets in Northstar are assembled from parts you place, not from a single craft."
+  },
+  {
+   "id": "northstar:rocket_controls",
+   "title": "The Controls",
+   "desc": "An industrial iron block, titanium plates, a lever and a circuit, on the mechanical crafter."
+  },
+  {
+   "id": "northstar:rocket_station",
+   "title": "The Launch Pad",
+   "desc": "Titanium ingots and plates, a circuit, a hardened precision mechanism, an iron cogwheel and the targeting computer. This is the block that actually takes you off Earth."
+  },
+  {
+   "id": "dim:northstar:earth_orbit",
+   "title": "Orbit",
+   "desc": "Earth orbit is the first of eight dimensions and the shortest hop. Northstar ships mars, mercury, moon and venus plus an orbit dimension for each of Earth, Mars, Mercury and Venus."
+  },
+  {
+   "id": "dim:northstar:moon",
+   "title": "The Moon",
+   "desc": "The moon is the first landing. Its stone, its ores and its sapphire are all found nowhere else."
+  },
+  {
+   "id": "structure:northstar:lunar_base",
+   "title": "Someone Was Here",
+   "desc": "The lunar base is one of only two structures the mod generates. It is the reward for the first successful landing."
+  },
+  {
+   "id": "northstar:lunar_sapphire_crystal",
+   "title": "Lunar Sapphire",
+   "desc": "Sapphire grows on the moon as a budding block with small, medium and large buds and a cluster, exactly like amethyst. Polished lunar sapphire is what separates an advanced circuit from an ordinary one."
+  },
+  {
+   "id": "northstar:advanced_circuit",
+   "title": "The Advanced Circuit",
+   "desc": "A sequenced assembly on gold plates with a circuit, a martian steel sheet and polished lunar sapphire. It needs material from two different planets, which is the point."
+  },
+  {
+   "id": "dim:northstar:mars",
+   "title": "Mars",
+   "desc": "Mars has its own stone, grass, saplings, a full seven-ore suite and the volcanic ash the steel needs."
+  },
+  {
+   "id": "structure:northstar:martian_base",
+   "title": "The Martian Base",
+   "desc": "The second and last structure. Between the lunar and martian bases, the mod's worldgen is deliberately sparse - the planets are the content."
+  },
+  {
+   "id": "northstar:martian_steel_ingot",
+   "title": "Martian Steel",
+   "desc": "A create:compacting recipe on titanium, raw martian iron ore and volcanic ash. Note the id: in Redux it is martian_steel_INGOT, where the original mod called it plain martian_steel."
+  },
+  {
+   "id": "northstar:electrolysis_machine",
+   "title": "Electrolysis",
+   "desc": "Fluid pipe, fluid tank, shaft, martian steel ingots and plates, an amethyst crystal and a circuit. This is the machine that turns water into breathable oxygen at scale."
+  },
+  {
+   "id": "northstar:martian_steel_space_suit_chestpiece",
+   "title": "The Better Suit",
+   "desc": "Copper backtank, martian steel plates, a martian steel chestplate and durable fabric. Two suit tiers exist and the second needs a second planet."
+  },
+  {
+   "id": "northstar:oxygen_sealer",
+   "title": "Seal A Room",
+   "desc": "Encased fan, fluid tank, shaft, titanium plates, a circuit and an oxygen separator. The sealer is what turns a base into somewhere you can take the helmet off."
+  },
+  {
+   "id": "northstar:atmospheric_concentrator",
+   "title": "Breathe The Local Air",
+   "desc": "Fluid tank, propeller, shaft, titanium plates, wool, a circuit and an oxygen separator. It pulls oxygen out of whatever thin atmosphere a planet has."
+  },
+  {
+   "id": "dim:northstar:venus",
+   "title": "Venus",
+   "desc": "Venus is the hostile one - its gravel crushes into rutile concentrate, which closes the titanium loop off-world."
+  },
+  {
+   "id": "dim:northstar:mercury",
+   "title": "Mercury",
+   "desc": "The fourth and last planet. Mercury carries the only enriched glowstone ore in the mod."
+  },
+  {
+   "id": "northstar:rocket_waypoint",
+   "title": "Mark The Spot",
+   "desc": "Titanium and tungsten ingots, titanium plates, a redstone lamp, a hardened precision mechanism, polished diamond and a targeting computer. Waypoints let a rocket land somewhere you chose."
+  },
+  {
+   "id": "northstar:auto_lander",
+   "title": "Land It Yourself",
+   "desc": "Titanium ingots and plates, a circuit, a lunar sapphire crystal, polished lunar sapphire and a rocket station. The last machine in the mod, and it needs the moon."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "northstar:iron_space_suit_helmet",
+   "members": [
+    "northstar:iron_space_suit_chestpiece",
+    "northstar:iron_space_suit_leggings",
+    "northstar:iron_space_suit_boots",
+    "northstar:martian_steel_space_suit_helmet",
+    "northstar:martian_steel_space_suit_chestpiece",
+    "northstar:martian_steel_space_suit_leggings",
+    "northstar:martian_steel_space_suit_boots",
+    "northstar:broken_iron_space_suit_helmet",
+    "northstar:broken_iron_space_suit_chestpiece",
+    "northstar:broken_iron_space_suit_leggings",
+    "northstar:broken_iron_space_suit_boots"
+   ]
+  },
+  {
+   "hub": "northstar:rocket_station",
+   "members": [
+    "northstar:rocket_controls",
+    "northstar:rocket_combustion_chamber",
+    "northstar:rocket_thruster",
+    "northstar:rocket_waypoint",
+    "northstar:auto_lander",
+    "northstar:targeting_computer",
+    "northstar:hardened_precision_mechanism",
+    "northstar:incomplete_hardened_precision_mechanism",
+    "northstar:space_atlas",
+    "northstar:astronomical_reading"
+   ]
+  },
+  {
+   "hub": "northstar:titanium_ingot",
+   "members": [
+    "northstar:titanium_nugget",
+    "northstar:titanium_block",
+    "northstar:titanium_sheet",
+    "northstar:incomplete_titanium_ingot",
+    "northstar:raw_titanium_ore",
+    "northstar:rutile_concentrate",
+    "northstar:sodium_catalyst",
+    "northstar:salt",
+    "northstar:martian_steel_ingot",
+    "northstar:martian_steel_block",
+    "northstar:martian_steel_sheet",
+    "northstar:volcanic_ash_item"
+   ]
+  },
+  {
+   "hub": "northstar:moon_titanium_ore",
+   "members": [
+    "northstar:moon_deep_titanium_ore",
+    "northstar:mars_titanium_ore",
+    "northstar:mars_deep_titanium_ore",
+    "northstar:venus_titanium_ore",
+    "northstar:venus_deep_titanium_ore",
+    "northstar:mercury_titanium_ore",
+    "northstar:mercury_deep_titanium_ore",
+    "northstar:mars_zinc_ore",
+    "northstar:venus_zinc_ore",
+    "northstar:enriched_glowstone_ore"
+   ]
+  },
+  {
+   "hub": "northstar:lunar_sapphire_crystal",
+   "members": [
+    "northstar:lunar_sapphire_shard",
+    "northstar:lunar_sapphire_block",
+    "northstar:lunar_sapphire_cluster",
+    "northstar:budding_lunar_sapphire_block",
+    "northstar:small_lunar_sapphire_bud",
+    "northstar:medium_lunar_sapphire_bud",
+    "northstar:large_lunar_sapphire_bud",
+    "northstar:polished_lunar_sapphire",
+    "northstar:polished_amethyst",
+    "northstar:polished_diamond",
+    "northstar:amethyst_crystal"
+   ]
+  },
+  {
+   "hub": "northstar:oxygen_bucket",
+   "members": [
+    "northstar:liquid_oxygen_bucket",
+    "northstar:hydrogen_bucket",
+    "northstar:liquid_hydrogen_bucket",
+    "northstar:chlorine_bucket",
+    "northstar:titanium_tetrachloride_bucket",
+    "northstar:sodium_bucket",
+    "northstar:brine_bucket",
+    "northstar:carbon_bucket",
+    "northstar:methane_bucket",
+    "northstar:hydrocarbon_bucket",
+    "northstar:sulfuric_acid_bucket",
+    "northstar:biofuel_bucket"
+   ]
+  },
+  {
+   "hub": "northstar:oxygen_separator",
+   "members": [
+    "northstar:oxygen_sealer",
+    "northstar:oxygen_filler",
+    "northstar:oxygen_detector",
+    "northstar:atmospheric_concentrator",
+    "northstar:electrolysis_machine",
+    "northstar:circuit_engraver",
+    "northstar:circuit",
+    "northstar:advanced_circuit",
+    "northstar:unfinished_circuit",
+    "northstar:unfinished_advanced_circuit",
+    "northstar:durable_fabric",
+    "northstar:dry_plant_fiber"
+   ]
+  }
+ ],
+ "notes": "TWO JARS, ONE MODID - RESOLVE THIS BEFORE USING THIS FILE. There are two live 1.20.1 Forge projects that BOTH declare modId \"northstar\" in mods.toml: the original 'Northstar' by lightning2401 (version 0.1cb, CurseForge slug create-northstar) and 'Northstar Redux' by Redstonneur1256 (version 0.6.4+1.20.1, Modrinth slug northstar-redux, credits line 'Original mod by lightning2401'). They are NOT interchangeable. Diffing the two id sets: the original has 324 ids, Redux has 364, and 304 are shared - but 20 ids exist only in the original and 60 only in Redux, and the difference is mostly a MATERIAL RENAME. Redux replaced the original's structural iron with titanium: iron_plating -> titanium_plating, iron_plating_slab -> titanium_plating_slab, iron_sheetmetal -> titanium_sheetmetal, iron_grate -> titanium_grate, iron_pillar -> titanium_pillar, iron_space_door -> titanium_space_door, and martian_steel -> martian_steel_INGOT. It also DELETED jet_engine, star_map, laser, laser_lense, oxygen_bubble_generator, oxygen_concentrator, oxygen_generator, vent_block and tungsten_large_plating, replacing the oxygen trio with oxygen_sealer, oxygen_separator, oxygen_filler, oxygen_detector and atmospheric_concentrator. Note iron_space_suit_* survives in BOTH - only the building blocks were renamed. THIS FILE IS WRITTEN AGAINST REDUX 0.6.4, because it is the maintained build and because moddb contains titanium_ingot and titanium_space_door, which exist ONLY in Redux. But moddb's 26 ids match NEITHER jar completely: 24 of 26 resolve against the original (missing titanium_ingot and titanium_space_door) and 23 of 26 against Redux (missing martian_steel, jet_engine and star_map). That is proof the moddb consensus is a UNION harvested across packs pinned to different Northstar versions, and it is why three of its ids are dead here. A consumer on the ORIGINAL jar must translate: titanium_* -> iron_* for plating, sheetmetal, grate, pillar and space_door, martian_steel_ingot -> martian_steel, and must drop the entire rutile/salt/sodium/tetrachloride titanium chain, which does not exist there. DEPENDENCY: mods.toml requires create [6.0,) and geckolib [4.7,5.0). Redux needs Create 6, not Create 0.5 - a pack on an older Create cannot load this jar at all, which is the other reason to check which build is installed. VERIFICATION, TWO PASSES: pass A took the assets/northstar/models/item stems INTERSECT the item./block. lang keys and gave 364. Pass B independently rebuilt from recipe results (Create-aware, see below), loot-table entry names, blockstates and lang keys and gave 378. The 14 differences are fluid blocks and wall-torch states - biofuel and brine are the FLUID blocks whose item forms are biofuel_bucket and brine_bucket, and extinguished_torch_wall and glowstone_torch_wall are wall-mounted placement states. No widening; final count stays 364. THE CREATE \"results\" TRAP APPLIES HERE TOO. This jar has 706 recipe files and the Create-family types among them - create:crushing (83), create:filling (52), create:compacting (14), create:mechanical_crafting (12), create:mixing (11), create:sequenced_assembly (8), createaddition:liquid_burning (5) and the mod's own northstar:freezing (9) - output through a plural \"results\" array or a transitionalItem rather than a singular \"result\". A scanner reading only \"result\" loses the entire titanium production line, the circuits and every rocket part. GRAPH: astronomy comes first (telescope -> astronomy_table -> astronomical_reading), then circuits (amethyst_crystal -> polished_amethyst -> unfinished_circuit -> circuit -> circuit_engraver), then the titanium chain, which in Redux is a genuine chemistry line rather than an ore: sand or limestone or venus_gravel crushed into rutile_concentrate, salt filled into sodium_catalyst, chlorine plus rutile into titanium_tetrachloride, reduced into titanium. Nine titanium ORES also exist, two per planet plus raw_titanium_ore, all blasting straight to the ingot. From titanium: hardened_precision_mechanism -> targeting_computer -> rocket_station, plus the rocket parts and the two space suit tiers. Off-world material closes the loop - advanced_circuit needs polished lunar sapphire from the moon AND a martian steel sheet from Mars. DIMENSIONS AND STRUCTURES: eight dimension jsons (earth_orbit, moon, mars, mars_orbit, mercury, mercury_orbit, venus, venus_orbit) with their own dimension_type files, and exactly two worldgen structures (lunar_base, martian_base). Five dim: steps and two structure: steps are used, all verified against those files. CONSENSUS: 23 of moddb's 26 ids resolve here; the three that do not (martian_steel, jet_engine, star_map) are original-jar ids and are recorded above rather than used. DESIRABILITY: this mod is very block-heavy - roughly 130 of the 364 ids are plating, sheetmetal, slabs, vertical slabs, stairs, pillars and grates in titanium, martian steel and tungsten, plus four planets' worth of stone, cobble, brick and polished variants. All of those are kept out of the spine; the ore wheel carries only titanium and the two other metal ores rather than all 40-odd planetary ores."
+}

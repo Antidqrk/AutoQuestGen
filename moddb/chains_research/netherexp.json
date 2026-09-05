@@ -1,0 +1,167 @@
+{
+  "mod": "netherexp",
+  "verified_against": "Jadens-Nether-Expansion-2.3.5.jar",
+  "item_count_in_jar": 286,
+  "chain": [
+    {
+      "id": "netherexp:quartz_crystal",
+      "title": "The Wastes Grow Teeth",
+      "desc": "Mine the quartz crystal growths added to the top layer of the Nether Wastes; broken without Silk Touch they yield vanilla quartz."
+    },
+    {
+      "id": "netherexp:hogham",
+      "title": "Cut of the Hoglin",
+      "desc": "Raw hogham drops from hoglins and is also brushed out of bastion remnant and crimson forest dig sites."
+    },
+    {
+      "id": "netherexp:suspicious_soul_sand",
+      "title": "Something Is Buried Here",
+      "desc": "Suspicious soul sand generates at excavation sites across the soul sand valley and is worked with a brush."
+    },
+    {
+      "id": "netherexp:stridite",
+      "title": "Brushed From the Dust",
+      "desc": "Stridite is a brushing reward from soul sand valley, mega fossil and black ice glacier dig sites, and is the alloy base for netherite plating."
+    },
+    {
+      "id": "netherexp:fossil_fuel_ore",
+      "title": "Seams in the Bone Beds",
+      "desc": "Fossil fuel ore is placed as underground decoration throughout the soul sand valley and the black ice glaciers."
+    },
+    {
+      "id": "netherexp:fossil_fuel",
+      "title": "Fuel of the Long Dead",
+      "desc": "Mining fossil fuel ore drops fossil fuel, which crafts torches, soul torches and ancient torches in place of coal."
+    },
+    {
+      "id": "kill:netherexp:vessel",
+      "title": "Hollow and Walking",
+      "desc": "Vessels are hostile spirits that spawn in the soul sand valley and the black ice glaciers, and they drop wraithing flesh."
+    },
+    {
+      "id": "netherexp:wraithing_flesh",
+      "title": "Meat That Remembers",
+      "desc": "Dropped by vessels, looted from sanctum supply chests, or crafted from banshee powder and rotten flesh."
+    },
+    {
+      "id": "kill:netherexp:banshee",
+      "title": "Answer the Screaming",
+      "desc": "The banshee is a hostile soul sand valley spirit whose loot table is the only source of the banshee rod."
+    },
+    {
+      "id": "netherexp:banshee_powder",
+      "title": "Grind the Wail",
+      "desc": "Crafted one-to-two from a banshee rod, the way blaze powder is made from a blaze rod."
+    },
+    {
+      "id": "netherexp:phasmo_shard",
+      "title": "Glass Made of Ghosts",
+      "desc": "Craft banshee powder with a slime ball for two phasmo shards, which then craft into soul glass and phasmo arrows."
+    },
+    {
+      "id": "netherexp:ectoplasm_bucket",
+      "title": "Bottled Haunting",
+      "desc": "Scoop a bucket from the ectoplasm lakes that generate in the soul sand valley and the black ice glaciers."
+    },
+    {
+      "id": "netherexp:wisp_bottle",
+      "title": "Catch a Wandering Light",
+      "desc": "Capture one of the passive wisps drifting through the soul sand valley; the mod calls this an exorcism."
+    },
+    {
+      "id": "netherexp:skull_on_a_stick",
+      "title": "Lead Them By the Bones",
+      "desc": "Craft a fishing rod with a skeleton skull to make the lure that tames a stampede."
+    },
+    {
+      "id": "netherexp:black_icicle",
+      "title": "The Cold That Should Not Be",
+      "desc": "Harvested in the black ice glaciers sub-biome; four icicles craft into two black ice blocks."
+    },
+    {
+      "id": "netherexp:sanctum_compass",
+      "title": "The Needle Points Down",
+      "desc": "A loot modifier injects the sanctum locator compass into nether fortress chests, and it also generates in chapel chests."
+    },
+    {
+      "id": "netherexp:soul_slate",
+      "title": "Halls Beneath the Waste",
+      "desc": "The stone the sanctum structure is built from, also stocked in its supply chests."
+    },
+    {
+      "id": "netherexp:warped_wart",
+      "title": "Roots in the Crypt",
+      "desc": "A rare wart that grows in the sanctum's underground crypts and can be replanted on soul sand."
+    },
+    {
+      "id": "netherexp:antidote",
+      "title": "Immune to the Air Itself",
+      "desc": "Brewed from warped wart into an awkward antidote, then refined into immunity against a specific status effect."
+    },
+    {
+      "id": "netherexp:treacherous_flame",
+      "title": "Win the Candle's Wager",
+      "desc": "Light a treacherous candle with flint and steel and survive its trial; harder trials pay out more flame."
+    },
+    {
+      "id": "netherexp:brazier_chest",
+      "title": "Only Fire Opens It",
+      "desc": "Brazier chests are scattered through the sanctum and will only open when a treacherous flame is used on them."
+    },
+    {
+      "id": "netherexp:shotgun_core",
+      "title": "The Artifact in the Ash",
+      "desc": "A rare brazier chest artifact, roughly a one-in-twenty pull, and the only source for shotgun crafting."
+    },
+    {
+      "id": "netherexp:shotgun_fist",
+      "title": "Fist Full of Thunder",
+      "desc": "Craft a shotgun core with two netherite ingots and a skeleton skull to build the mod's signature weapon."
+    },
+    {
+      "id": "netherexp:pump_charge_shotgun",
+      "title": "Rack It and Fire",
+      "desc": "Smith the shotgun-fist with a pump-charge upgrade template and a treacherous flame, both brazier chest loot."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "netherexp:ossified_gargoyle_statue",
+      "members": [
+        "netherexp:trample_gargoyle_statue",
+        "netherexp:phase_gargoyle_statue",
+        "netherexp:ghoul_gargoyle_statue",
+        "netherexp:wretched_gargoyle_statue",
+        "netherexp:sealed_gargoyle_statue",
+        "netherexp:obfuscated_gargoyle_statue",
+        "netherexp:occult_gargoyle_statue",
+        "netherexp:cirripedia_gargoyle_statue",
+        "netherexp:treacherous_gargoyle_statue"
+      ]
+    },
+    {
+      "hub": "netherexp:lightspores",
+      "members": [
+        "netherexp:nightspores",
+        "netherexp:brightspores",
+        "netherexp:frightspores",
+        "netherexp:blightspores",
+        "netherexp:shroombright",
+        "netherexp:shroomnight",
+        "netherexp:shroomblight"
+      ]
+    },
+    {
+      "hub": "netherexp:eldritch_pottery_sherd",
+      "members": [
+        "netherexp:botanical_pottery_sherd",
+        "netherexp:deception_pottery_sherd",
+        "netherexp:firearm_pottery_sherd",
+        "netherexp:marionette_pottery_sherd",
+        "netherexp:sealed_pottery_sherd",
+        "netherexp:spectre_pottery_sherd"
+      ]
+    }
+  ],
+  "notes": "Item set = 286 ids from assets/netherexp/models/item/*.json intersected with item./block. keys in assets/*/lang/en_us.json; entity ids from entity.netherexp.* keys (14 found). Every id above is set-membership verified. Ordering was derived from the jar's own advancement tree in data/netherexp/advancements/nether/ (root -> soul_sand_valley -> {rattling_remnants -> gravedigger, ghost_mucus -> exorcism -> rodeo_stampede, frightening_rush -> enter_soul_glass / blind_shot, ssv_sub_biomes, emf_raider -> occult_manor -> {the_caduceus -> plague_doctor, rekindled_betrayal -> eldritch_manipulation -> angel_with_a_shotgun -> the_nether_is_full -> ultra_overkill, hp_minecraftian -> lorekeeper}}), plus the jar's recipes, entity and archaeology loot tables, the sanctum_compass_in_fortress loot modifier and the forge biome modifiers (ectoplasm_lake, fossil_fuel_ore, fossil_ore, quartz_crystal, vessel/apparition spawns). WebSearch on netherexp.wiki.gg supplied three facts the jar does not encode: antidotes are brewed from warped wart found in the sanctum crypts, treacherous flame comes from beating a treacherous candle's trial, and brazier chests only open with a treacherous flame (shotgun core drop rate 4.60% exposed / 5.62% hidden). DROPPED: netherexp:jackhammer_fist (only appears in two item tags, no recipe or loot source in the jar and no wiki page content found), netherexp:soul_ruby_ore, netherexp:explosive_scoria and netherexp:blightwart (ids verify but have no block loot table or recipe in the jar, so no honest how-obtained sentence). No dim: entries - the jar contains no netherexp dimension; its three new biomes (black_ice_glaciers, exhaust_mire, sorrowsquash_pastures) are injected into minecraft:the_nether. Entities used for kill: entries were checked against entity.netherexp.* lang keys and against their loot tables (banshee -> banshee_rod, vessel -> wraithing_flesh)."
+}

@@ -1,0 +1,159 @@
+{
+  "mod": "dungeons_arise",
+  "verified_against": "DungeonsArise-1.20.x-2.1.58-release.jar",
+  "item_count_in_jar": 0,
+  "chain": [
+    {
+      "id": "structure:dungeons_arise:small_prairie_house",
+      "title": "The Good Place",
+      "desc": "A one-room house on plains, meadow or sunflower plains. Three chest tables - normal, barrels and a ruined variant - make it the gentlest thing the mod builds."
+    },
+    {
+      "id": "structure:dungeons_arise:fishing_hut",
+      "title": "Fishing In The Dark",
+      "desc": "A hut on any beach. Its single barrel table is small but can hold a trident alongside the fishing rod, cod and salmon."
+    },
+    {
+      "id": "structure:dungeons_arise:merchant_campsite",
+      "title": "Let's Groove",
+      "desc": "A trader's camp on plains. Three tables - tent, supply and a map chest that hands out an explorer map pointing at another Dungeons Arise structure."
+    },
+    {
+      "id": "structure:dungeons_arise:greenwood_pub",
+      "title": "Sgt. Peppers Lonely Hearts Club",
+      "desc": "A pub in dark forest, sunflower plains or any forest. Three tables full of brewing stock - potions, lingering and splash bottles, fermented spider eyes and glistering melon."
+    },
+    {
+      "id": "structure:dungeons_arise:illager_campsite",
+      "title": "People Are Strange",
+      "desc": "An illager camp on plains, meadow or hills. Tent, supply and map chests; the map chest is another explorer-map source."
+    },
+    {
+      "id": "structure:dungeons_arise:mushroom_house",
+      "title": "Over The Garden Wall",
+      "desc": "A house grown inside a mushroom, in any forest. Three tables; the treasure one carries an ender eye, ender pearls, chainmail and lily of the valley."
+    },
+    {
+      "id": "structure:dungeons_arise:jungle_tree_house",
+      "title": "The House in the Canopy",
+      "desc": "A treetop house in any jungle. Three tables; the treasure chest can give an ender eye, a golden apple and a diamond. This is the one structure the mod ships no advancement for."
+    },
+    {
+      "id": "structure:dungeons_arise:mushroom_village",
+      "title": "Sweet Dreams",
+      "desc": "A whole village of mushroom houses in any forest, with a barrels table and a treasure chest of diamonds, emeralds and rose bushes."
+    },
+    {
+      "id": "structure:dungeons_arise:mushroom_mines",
+      "title": "We All Lift Together",
+      "desc": "Mineshafts running under the mushroom village, with four tables - barrels, ores, tools and treasure. The treasure chest hands out a diamond pickaxe and full diamond armour."
+    },
+    {
+      "id": "structure:dungeons_arise:mining_system",
+      "title": "Stone Free",
+      "desc": "An underground_structures dig that generates under most Overworld biomes, with a barrels and a treasure table of diamond and iron picks and armour."
+    },
+    {
+      "id": "structure:dungeons_arise:abandoned_temple",
+      "title": "Lost for Words",
+      "desc": "A ruined temple in taiga, hills and mountains, with a stray spawn override. Entrance, top and map chest tables; the top one holds ender pearls and chainmail."
+    },
+    {
+      "id": "structure:dungeons_arise:monastery",
+      "title": "A Quiet Place",
+      "desc": "A cliffside monastery in taiga, hills and mountains. Barrels, bridges and map tables; the map chest is the one that drops a wither rose."
+    },
+    {
+      "id": "structure:dungeons_arise:illager_windmill",
+      "title": "All Along The Watchtower",
+      "desc": "An illager windmill on plains and meadow. Barrels plus a treasure chest holding a diamond sword, diamonds and emeralds."
+    },
+    {
+      "id": "structure:dungeons_arise:bandit_towers",
+      "title": "What Happens in Las Vegas...",
+      "desc": "A badlands tower cluster with six chest tables - barrels, gardens, normal, rooms, supply and treasure. The treasure chest carries full diamond armour."
+    },
+    {
+      "id": "structure:dungeons_arise:bandit_village",
+      "title": "Rusted Root",
+      "desc": "The badlands settlement the towers belong to, with four tables: barrels, normal, supply and tents."
+    },
+    {
+      "id": "structure:dungeons_arise:illager_corsair",
+      "title": "You Are A Pirate",
+      "desc": "An illager warship sailing any ocean, with barrels, supply and treasure tables. The treasure chest holds diamonds, emeralds and a skeleton skull. Its sister ship is illager_galley."
+    },
+    {
+      "id": "structure:dungeons_arise:undead_pirate_ship",
+      "title": "Smoke On The Water",
+      "desc": "A wreck crewed by the dead, in any ocean. Four tables including a dedicated enchants chest of books, ender eyes and ender pearls."
+    },
+    {
+      "id": "structure:dungeons_arise:ceryneian_hind",
+      "title": "Who Killed This Thing?",
+      "desc": "An enormous skeleton half-buried in the desert, near where pyramids generate. One treasure chest - a gold block, diamonds and iron gear."
+    },
+    {
+      "id": "structure:dungeons_arise:illager_fort",
+      "title": "Wild Tales",
+      "desc": "A fortified illager keep in snowy plains, snowy slopes and taiga. Barrels, normal and treasure tables; both the normal and treasure chests can drop full diamond armour."
+    },
+    {
+      "id": "structure:dungeons_arise:thornborn_towers",
+      "title": "Guns and Roses",
+      "desc": "Overgrown towers in any forest, with four tables. The top treasure chest carries phantom membranes, a skeleton skull and an explorer map."
+    },
+    {
+      "id": "structure:dungeons_arise:keep_kayra",
+      "title": "Distant Dreamer",
+      "desc": "A keep in swamp and mangrove swamp with six chest tables split between garden, library and main hall. The library treasure chest can hold a netherite helmet."
+    },
+    {
+      "id": "structure:dungeons_arise:plague_asylum",
+      "title": "Renai Circulation",
+      "desc": "An asylum placed at the strongholds step in any forest. Six tables - barrels, cells, normal, potions, storage and treasure; the treasure chest is gold blocks and diamond armour."
+    },
+    {
+      "id": "structure:dungeons_arise:infested_temple",
+      "title": "Super Creeps",
+      "desc": "A seven-table temple in taiga, hills and mountains, with bookshelf, forge, garden, supply and table rooms below the top treasure chest of diamond blocks and gold blocks."
+    },
+    {
+      "id": "structure:dungeons_arise:mechanical_nest",
+      "title": "Welcome To The Machine",
+      "desc": "The mod's largest build - 161 nbt pieces - in swamp, mangrove swamp and forest. Four tables; the treasure chest yields diamond, emerald and gold blocks plus netherite scrap."
+    },
+    {
+      "id": "structure:dungeons_arise:scorched_mines",
+      "title": "Katabasis",
+      "desc": "Burnt-out mineworks in the desert near pyramid country. Five tables; the treasure chest drops netherite scrap and a wither skeleton skull."
+    },
+    {
+      "id": "structure:dungeons_arise:foundry",
+      "title": "Iron Maiden",
+      "desc": "An underground_structures forge reachable from most Overworld biomes. Six tables including a lava pit chest of blaze rods and a treasure chest of diamond blocks, emerald blocks and netherite scrap."
+    },
+    {
+      "id": "structure:dungeons_arise:coliseum",
+      "title": "Remember Me For Centuries",
+      "desc": "An arena on plains with NO chest at all. Its reward is the fight: coliseum_spawner_0.nbt carries the gladiator, whose loot table pays 8-12 diamonds, 8-16 emeralds, 8-24 iron and 4-16 gold."
+    },
+    {
+      "id": "structure:dungeons_arise:shiraz_palace",
+      "title": "Enter Sandman",
+      "desc": "The desert palace, with eight chest tables - the most in the mod. The gardens chest can drop a netherite sword, the elite chest netherite boots, the treasure chest a player head."
+    },
+    {
+      "id": "structure:dungeons_arise:heavenly_challenger",
+      "title": "The Imperial March",
+      "desc": "A flying fortress over most Overworld biomes. Four tables; the treasure chest is the mod's best, holding netherite ingots, a netherite pickaxe, helmet and boots."
+    },
+    {
+      "id": "structure:dungeons_arise:aviary",
+      "title": "Three Little Birds",
+      "desc": "The only Dungeons Arise structure in the End, generating in end_midlands and end_highlands with a phantom spawn override. Its treasure chest holds a netherite ingot and full diamond gear."
+    }
+  ],
+  "collections": [],
+  "notes": "WHEN DUNGEONS ARISE ADDS NO ITEMS AND NO MOBS OF ITS OWN. assets/dungeons_arise/ holds five lang files and one background png - ZERO models/item entries, ZERO blockstates, ZERO item./block. lang keys and ZERO entity.dungeons_arise.* keys. item_count_in_jar is 0 and collections is empty. The 107 lang keys are 29 filled_map.dungeons_arise:<structure> names (explorer maps the mod's map chests hand out) plus its advancement titles. CONTENT: 39 structures at data/dungeons_arise/worldgen/structure/*.json, 214 template pools, 131 loot tables of which 128 are chests/. Every id above is one of those 39 files, fully namespaced, re-checked by an independent second pass. LOOT EVIDENCE: 37 of the 39 structures have a dedicated data/dungeons_arise/loot_tables/chests/<structure>/ folder. Structure-to-loot was resolved two ways that agree: following each structure json through worldgen/template_pool and gunzipping the referenced data/dungeons_arise/structures/**/*.nbt to read LootTable strings out of the raw NBT, and the mod's own one-folder-per-structure convention. THE ONLY TWO STRUCTURES WITH NO CHEST TABLE are dungeons_arise:coliseum and dungeons_arise:wishing_well. wishing_well is therefore excluded as decorative scenery. coliseum IS kept, and the reason is recorded: it is the only structure in the jar whose reward is a fight. data/dungeons_arise/loot_tables/entities/gladiator_loot.json is the mod's sole entity table (8-12 diamond, 8-16 emerald, 8-24 iron_ingot, 4-16 gold_ingot per roll, 1-3 rolls) and a byte scan of every nbt in the jar found exactly one file referencing it: data/dungeons_arise/structures/coliseum/coliseum_spawner_0.nbt. The gladiator is a spawner-placed vanilla mob with a custom death loot table, which is why it has no entity lang key and why no kill: entry is used for it. ADVANCEMENTS: 37 of the 39 structures have a data/dungeons_arise/advancements/find_*.json whose criterion is a minecraft:location trigger on that structure id - the mod itself treats 'go find this place' as the unit of progress, which is exactly what a structure task is. All 30 chain titles above are the mod's own advancement titles where one exists; jungle_tree_house is the one chain entry with no advancement and its title is written fresh. SELECTION: 30 of 39 kept, ordered small-and-common to large-and-rare. Cut for being near-duplicates or thin: wishing_well (no loot), giant_mushroom and bathhouse (2 tables, no treasure roll), lighthouse (1 table), small_blimp (3 tables but a two-room build), typhon (1 table, and undead_pirate_ship already carries the ocean-monster beat), illager_galley (same three tables as illager_corsair - it is named in the corsair entry instead) and heavenly_rider and heavenly_conqueror (same three-table shape as each other, both superseded by heavenly_challenger's four). All nine are real, verified structures and can be added if a longer chain is wanted. Loot contents quoted above were read out of the loot table json, not inferred: heavenly_challenger_treasure lists netherite_ingot, netherite_pickaxe, netherite_helmet and netherite_boots; shiraz_palace_gardens lists netherite_sword and shiraz_palace_treasure lists player_head; keep_kayra_library_treasure lists netherite_helmet; fishing_hut_barrels lists trident; scorched_mines_treasure lists wither_skeleton_skull; aviary_treasure lists netherite_ingot. Biome placement comes from each structure's biomes field resolved through data/dungeons_arise/tags/worldgen/biome/has_structure/*.json. ID FORM: 'structure:' + a fully namespaced id, mirroring the existing kill: and dim: prefixes, mapping to the generator's {\"type\":\"structure\",\"structure\":\"<id>\"} task; autoquestgen.py's chain loader strips only kill:/dim: today and needs the same branch for structure:. No template_pool, structure_set or processor_list names are used as ids - the jar has 214 pools and 3 structure sets and none of them appears above. LOADER: META-INF/mods.toml, modId dungeons_arise, version 2.1.58-1.20.x, minecraft [1.20, 1.21), forge [46,), no fabric.mod.json - a genuine 1.20.1 Forge build."
+}

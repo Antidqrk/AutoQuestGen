@@ -1,0 +1,94 @@
+{
+ "mod": "domum_ornamentum",
+ "verified_against": "domum_ornamentum-1.20.1-1.0.296-universal.jar",
+ "item_count_in_jar": 100,
+ "parent_mod": "minecolonies",
+ "chain": [
+  {
+   "id": "domum_ornamentum:architectscutter",
+   "title": "The Cutter That Names Its Material",
+   "desc": "Iron, logs and a stone slab. The Architect's Cutter is the only way to make Domum's shingles, timber frames, pillars and panels, and it takes two inputs so one shape can wear any material."
+  },
+  {
+   "id": "domum_ornamentum:brick_extra",
+   "title": "Bricks With The Mortar Showing",
+   "desc": "Four bricks in a square. Extra Bricks are the textured base the coloured brick family is dyed from."
+  },
+  {
+   "id": "domum_ornamentum:cobblestone_extra",
+   "title": "Cobble, Tidied",
+   "desc": "The same trick on cobblestone. Domum's whole philosophy is one recipe shape and many materials."
+  },
+  {
+   "id": "domum_ornamentum:beige_bricks",
+   "title": "Brick And Gravel",
+   "desc": "Bricks shaken with gravel. Beige is the first of the tinted brick sets and the standard wall of most MineColonies styles."
+  },
+  {
+   "id": "domum_ornamentum:brown_stone_bricks",
+   "title": "Stone Brick, Weathered",
+   "desc": "Stone bricks with terracotta. The stone-brick half of the tint family, used for the foundations builders lay first."
+  },
+  {
+   "id": "domum_ornamentum:cactus_extra",
+   "title": "Green Planks From The Desert",
+   "desc": "Cactus pressed into a plank-like block. Domum treats cactus as a building material rather than a hazard."
+  },
+  {
+   "id": "domum_ornamentum:paper_extra",
+   "title": "Walls You Can See Through",
+   "desc": "Paper worked into a panel. It feeds the paper wall and tiled paper wall the Architect's Cutter produces."
+  },
+  {
+   "id": "domum_ornamentum:blockbarreldeco_standing",
+   "title": "A Barrel That Is Only A Barrel",
+   "desc": "Planks and a stick. Purely decorative barrels, standing or laid on their side, that colony schematics scatter through storerooms."
+  },
+  {
+   "id": "domum_ornamentum:white_floating_carpet",
+   "title": "Carpet Off The Floor",
+   "desc": "Wool and string. A floating carpet hangs with no block beneath it, which is how colony builders drape banners and awnings."
+  },
+  {
+   "id": "domum_ornamentum:wheat_extra",
+   "title": "Thatch",
+   "desc": "Wheat compressed into a block. The roof of every farmhouse a builder will ever put up for you."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "domum_ornamentum:beige_bricks",
+   "members": [
+    "domum_ornamentum:brown_bricks",
+    "domum_ornamentum:cream_bricks",
+    "domum_ornamentum:roan_bricks",
+    "domum_ornamentum:sand_bricks",
+    "domum_ornamentum:beige_stone_bricks",
+    "domum_ornamentum:cream_stone_bricks",
+    "domum_ornamentum:roan_stone_bricks",
+    "domum_ornamentum:sand_stone_bricks"
+   ]
+  },
+  {
+   "hub": "domum_ornamentum:white_floating_carpet",
+   "members": [
+    "domum_ornamentum:black_floating_carpet",
+    "domum_ornamentum:blue_floating_carpet",
+    "domum_ornamentum:brown_floating_carpet",
+    "domum_ornamentum:cyan_floating_carpet",
+    "domum_ornamentum:gray_floating_carpet",
+    "domum_ornamentum:green_floating_carpet",
+    "domum_ornamentum:light_blue_floating_carpet",
+    "domum_ornamentum:light_gray_floating_carpet",
+    "domum_ornamentum:lime_floating_carpet",
+    "domum_ornamentum:magenta_floating_carpet",
+    "domum_ornamentum:orange_floating_carpet",
+    "domum_ornamentum:pink_floating_carpet",
+    "domum_ornamentum:purple_floating_carpet",
+    "domum_ornamentum:red_floating_carpet"
+   ]
+  }
+ ],
+ "notes": "SHORT CHAIN PLUS WHEELS BY DESIGN, AND SAID PLAINLY: Domum Ornamentum is a decorative variant set. It is the block library MineColonies builders draw from, and roughly a hundred of its blocks are 'materialized' - one registered block whose displayed name and texture come from the material baked into its NBT. Those have blockstates and models but NO static lang key, which is why item.domum_ornamentum.* / block.domum_ornamentum.* covers only 29 entries in a jar with 118 item models. Ids are verified two ways: the 29 with lang keys, plus blocks whose assets/domum_ornamentum/blockstates/<path>.json matches a data/domum_ornamentum/recipes result - a blockstate path IS the block registry path. The right shape here is a short spine ending at the Architect's Cutter plus two variant wheels (the tinted brick family, the fourteen floating carpets), not a padded 20-step ladder. The Cutter is the only genuinely mechanical quest in the mod: it is a two-input cutter, so every shingle, timber frame, pillar, panel, fancy door and light block is one recipe wearing a different material. Parent items this addon assumes you already have: nothing - Domum Ornamentum has no mandatory mod dependency and works from vanilla brick, stone, wool and wood.",
+ "verified_note": "re-stamped to the jar actually installed; every id in this chain was re-checked against it. Previously named domum_ornamentum-1.20.1-1.0.303-snapshot-universal.jar, a build not present here."
+}

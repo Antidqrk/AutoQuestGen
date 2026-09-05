@@ -1,0 +1,130 @@
+{
+ "mod": "decorative_blocks",
+ "verified_against": "decorative_blocks-forge-1.20.1-4.1.3.jar",
+ "item_count_in_jar": 52,
+ "chain": [
+  {
+   "id": "decorative_blocks:oak_beam",
+   "title": "Two Beams Per Stripped Log",
+   "desc": "Two stripped logs stacked vertically give two Oak Beams. Beams are the exposed timber frame the whole mod is built around, and they connect to each other across all six faces."
+  },
+  {
+   "id": "decorative_blocks:oak_support",
+   "title": "Bracing the Corner",
+   "desc": "Two planks in an L give six Oak Supports. Sneak-right-click in air to flip the item upside down before placing, use an axe on a placed one to swap a side between big and small, and sneak with the axe to hide a side entirely."
+  },
+  {
+   "id": "decorative_blocks:oak_palisade",
+   "title": "A Wall of Sharpened Logs",
+   "desc": "Two logs side by side yield six Palisades - the stake fence that reads as a stockade rather than a garden fence."
+  },
+  {
+   "id": "decorative_blocks:oak_seat",
+   "title": "Somewhere to Sit",
+   "desc": "A fence over a slab gives six Seats, and sneak-right-clicking in air switches the item between its two states before you place it."
+  },
+  {
+   "id": "decorative_blocks:bamboo_palisade",
+   "title": "The Wood With No Beam",
+   "desc": "Bamboo is the eleventh material for palisades, seats and supports but the only one with no beam - the palisade takes stripped bamboo blocks rather than logs."
+  },
+  {
+   "id": "decorative_blocks:lattice",
+   "title": "Sticks in a Cross",
+   "desc": "Four sticks in a diamond make one Lattice, the thin openwork panel for windows and vine trellises."
+  },
+  {
+   "id": "decorative_blocks:bar_panel",
+   "title": "Iron Bars, Flattened",
+   "desc": "Two iron bars side by side give two Bar Panels - a flat grille that sits against a surface instead of standing in the middle of the block."
+  },
+  {
+   "id": "decorative_blocks:chain",
+   "title": "The Chain That Reads at Range",
+   "desc": "Two iron ingots with two nuggets between them give four Big Chains, a heavier chain than vanilla's for hanging things off high ceilings."
+  },
+  {
+   "id": "decorative_blocks:chandelier",
+   "title": "Four Torches Become One",
+   "desc": "Four torches in a square make one Chandelier, and crafting the chandelier back gives four torches, so nothing is lost if you change your mind."
+  },
+  {
+   "id": "decorative_blocks:soul_chandelier",
+   "title": "Blue Flame Overhead",
+   "desc": "The same square built from soul torches. Both chandeliers are tagged together, and both convert back to their four torches."
+  },
+  {
+   "id": "decorative_blocks:brazier",
+   "title": "Fire in a Cage",
+   "desc": "Coal in a bowl of iron bars. The brazier is the mod's fire pit and the parent of its one genuinely interactive block."
+  },
+  {
+   "id": "decorative_blocks:soul_brazier",
+   "title": "Green Fire",
+   "desc": "The brazier recipe with a soul fire base block added. Soul braziers burn with the cold flame and share the brazier tag."
+  },
+  {
+   "id": "decorative_blocks:rocky_dirt",
+   "title": "Stone Through the Soil",
+   "desc": "Dirt in a shaped ring makes Rocky Dirt, and crafting one back gives four dirt - the only recipe in the mod that returns more than it took."
+  },
+  {
+   "id": "decorative_blocks:stone_pillar",
+   "title": "One Cut of Stone",
+   "desc": "The single stonecutting recipe in the mod: one stone becomes one Stone Pillar, the vertical column that pairs with the wooden beams."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "decorative_blocks:spruce_beam",
+   "members": [
+    "decorative_blocks:birch_beam",
+    "decorative_blocks:jungle_beam",
+    "decorative_blocks:acacia_beam",
+    "decorative_blocks:dark_oak_beam",
+    "decorative_blocks:mangrove_beam",
+    "decorative_blocks:cherry_beam",
+    "decorative_blocks:crimson_beam",
+    "decorative_blocks:warped_beam",
+    "decorative_blocks:spruce_palisade",
+    "decorative_blocks:birch_palisade",
+    "decorative_blocks:jungle_palisade",
+    "decorative_blocks:acacia_palisade",
+    "decorative_blocks:dark_oak_palisade"
+   ]
+  },
+  {
+   "hub": "decorative_blocks:spruce_seat",
+   "members": [
+    "decorative_blocks:birch_seat",
+    "decorative_blocks:jungle_seat",
+    "decorative_blocks:acacia_seat",
+    "decorative_blocks:dark_oak_seat",
+    "decorative_blocks:mangrove_seat",
+    "decorative_blocks:cherry_seat",
+    "decorative_blocks:crimson_seat",
+    "decorative_blocks:warped_seat",
+    "decorative_blocks:bamboo_seat",
+    "decorative_blocks:mangrove_palisade",
+    "decorative_blocks:cherry_palisade",
+    "decorative_blocks:crimson_palisade",
+    "decorative_blocks:warped_palisade"
+   ]
+  },
+  {
+   "hub": "decorative_blocks:spruce_support",
+   "members": [
+    "decorative_blocks:birch_support",
+    "decorative_blocks:jungle_support",
+    "decorative_blocks:acacia_support",
+    "decorative_blocks:dark_oak_support",
+    "decorative_blocks:mangrove_support",
+    "decorative_blocks:cherry_support",
+    "decorative_blocks:crimson_support",
+    "decorative_blocks:warped_support",
+    "decorative_blocks:bamboo_support"
+   ]
+  }
+ ],
+ "notes": "A SMALL, HONEST MOD: 52 IDS, 13 DISTINCT RECIPE SHAPES, AND FOUR OF THOSE SHAPES ARE THE WOOD FAMILIES. Verified against decorative_blocks-forge-1.20.1-4.1.3.jar (Forge, MC 1.20.1) as shipped in this pack. ID DETECTION AND WIDENING: 54 item models, 56 blockstates, 55 block.decorative_blocks.* lang keys; models INTERSECT lang = 52 and that is the verified count. WIDENING CONSIDERED AND REJECTED for all three blockstate-only stems, each for a different and checkable reason. decorative_blocks:thatch is a FLUID, not a block item - the jar carries fluid_type.decorative_blocks.thatch and data/decorative_blocks/tags/fluids/thatch.json listing decorative_blocks:thatch and decorative_blocks:flowing_thatch - and the mod's own hint, wiki.decorative_blocks.thatch, says to get it by cutting open a hay bale with shears. decorative_blocks:bonfire and decorative_blocks:soul_bonfire are the lit states of the two braziers, produced in-world by the items in data/decorative_blocks/tags/items/bonfire_activators.json (minecraft:blaze_powder); they have lang keys and a tag of their own but no item model and no recipe, so they are mechanics rather than quest targets and are described under the brazier steps instead. NARROWED for the two model-only stems: decorative_blocks:oak_seat_post is the second placement model of the oak seat (the state that wiki.decorative_blocks.seat says you switch to by sneak-using in air), and decorative_blocks:blockstate_copy_tool has an item model and the pair of hint strings wiki.decorative_blocks.copy1/copy2 ('Default usage pastes, sneak use to copy') but no lang name, no recipe, no loot table and no tag membership, so it is treated as a developer utility and dropped. RECIPE GRAPH: 55 recipe files, 52 producing a decorative_blocks id, collapsing to 13 distinct shapes. Four of those thirteen ARE the variant families and account for 43 of the 52 ids: beam (10 woods, 2 per stripped log), palisade (11 woods incl. bamboo, 6 per log), support (11 woods, 6 per planks) and seat (11 woods, 6 per fence+slab). The remaining nine ids each have their own shape and are the chain's non-family half. Verified yields: beam 2, palisade 6, support 6, seat 6, bar_panel 2, chain 4, chandelier 1, brazier 1, lattice 1, rocky_dirt 1, stone_pillar 1 (stonecutting). Two reversal recipes exist - torch_from_chandelier and soul_torch_from_soul_chandelier, each returning 4 torches - plus dirt_from_rocky_dirt returning 4 dirt; all three produce minecraft: ids and are named in descriptions only. BAMBOO IS THE ASYMMETRY WORTH KNOWING: it has a palisade, a seat and a support but NO beam, and its palisade uniquely takes minecraft:stripped_bamboo_block instead of a log. That is why decorative_blocks:bamboo_palisade earns a chain step of its own. MECHANICS from wiki.decorative_blocks.* in en_us.json, all confirmed present: seats switch state on sneak-use in air; supports flip upside down on sneak-use in air, toggle a side between big and small when right-clicked with an axe, and hide a side on sneak-axe; braziers become bonfires when hit with blaze powder. TAGS: the mod ships paired blocks/ and items/ tags for beams, palisades, seats, supports, chandeliers, braziers and bonfires, plus *_that_burn splits that exclude the crimson and warped variants - useful if the generator wants tag-based quest targets instead of id lists. MODDB: no consensus signal - moddb.json has no decorative_blocks key - so the ordering is the recipe graph alone and there is no conflict to record. DROPS: blockstate_copy_tool and oak_seat_post (above), and thatch, bonfire and soul_bonfire as non-items. Nothing else in the jar was excluded; the three wheels plus the chain cover all 52 verified ids exactly once - no id appears in both the chain and a wheel, and none appears in two wheels. The support wheel is 9 members rather than 13 because the four wood-family heads (oak_beam, oak_palisade, oak_seat, bamboo_palisade) are chain steps and are deliberately not repeated."
+}

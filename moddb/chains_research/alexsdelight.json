@@ -1,0 +1,98 @@
+{
+ "mod": "alexsdelight",
+ "verified_against": "alexsdelight-1.5.jar",
+ "item_count_in_jar": 23,
+ "parent_mod": "alexsmobs",
+ "chain": [
+  {
+   "id": "alexsdelight:raw_bison",
+   "title": "Bringing Down A Bison",
+   "desc": "Bison drop raw meat through data/alexsdelight/loot_modifiers/bison.json, alongside the fur Alex's Mobs already gives. The plains herd becomes livestock."
+  },
+  {
+   "id": "alexsdelight:bison_mince",
+   "title": "Minced On The Board",
+   "desc": "Knife raw bison on a Farmer's Delight cutting board. Mince is the branch point for the patty and the burger."
+  },
+  {
+   "id": "alexsdelight:bison_patty",
+   "title": "Pressed And Seared",
+   "desc": "Cook the mince rather than the cut. Patties exist only so the burger can."
+  },
+  {
+   "id": "alexsdelight:bison_burger",
+   "title": "The Best Thing In The Mod",
+   "desc": "Patty, bread, tomato, salad greens and beetroot. Alex's Delight's flagship dish and the reason people install it."
+  },
+  {
+   "id": "alexsdelight:kangaroo_shank",
+   "title": "Carving The Roo",
+   "desc": "Knife alexsmobs:kangaroo_meat on a cutting board. Kangaroos are one of the first Alex's Mobs animals a player meets and now they are dinner."
+  },
+  {
+   "id": "alexsdelight:kangaroo_stew",
+   "title": "Roo In A Bowl",
+   "desc": "Cooked kangaroo with carrot, beetroot and a bowl. The mod's first Cooking Pot dish."
+  },
+  {
+   "id": "alexsdelight:kangaroo_pasta",
+   "title": "Roo With Tomato Sauce",
+   "desc": "Cooking Pot: cooked kangaroo, raw pasta, tomato sauce and a bowl. It needs Farmer's Delight's full pasta chain to exist."
+  },
+  {
+   "id": "alexsdelight:loose_moose_rib",
+   "title": "One Rib At A Time",
+   "desc": "Knife alexsmobs:moose_ribs into single ribs. Alex's Mobs gives you the rack; this lets you portion it."
+  },
+  {
+   "id": "alexsdelight:raw_catfish_slice",
+   "title": "Filleting The Catfish",
+   "desc": "Knife alexsmobs:raw_catfish. The catfish is a river mob most players never do anything with; this is its use."
+  },
+  {
+   "id": "alexsdelight:lobster_pasta",
+   "title": "Lobster, Properly Handled",
+   "desc": "Cooking Pot: alexsmobs:lobster_tail, raw pasta, tomato sauce and a bowl. The most expensive ingredient in the mod goes into the best dish."
+  },
+  {
+   "id": "alexsdelight:maggot_salad",
+   "title": "You Really Do Not Have To",
+   "desc": "alexsmobs:maggot with tomato, onion, cabbage and beetroot, or dropped straight into a mixed salad. It exists because Alex's Mobs has maggots."
+  },
+  {
+   "id": "alexsdelight:gongylidia_bruschetta",
+   "title": "Farming The Leafcutter Fungus",
+   "desc": "alexsmobs:gongylidia with fish oil, bread, tomato and salad greens. Gongylidia comes from leafcutter anthills, which makes this a genuine mid-game craft."
+  },
+  {
+   "id": "alexsdelight:acacia_blossom_soup",
+   "title": "Soup From A Flowering Tree",
+   "desc": "Cooking Pot: alexsmobs:acacia_blossom, onion, raw pasta and a bowl. Acacia blossoms come off elephant-tended trees in the savanna."
+  },
+  {
+   "id": "alexsdelight:raw_bunfungus",
+   "title": "The Cave Rabbit-Mushroom",
+   "desc": "Bunfungus drop raw meat through data/alexsdelight/loot_modifiers/bunfungus.json. It is the only ingredient here sourced from Alex's Caves rather than Alex's Mobs."
+  },
+  {
+   "id": "alexsdelight:bunfungus_sandwich",
+   "title": "Fungus, Between Bread",
+   "desc": "Cooked bunfungus, bread and a Farmer's Delight red mushroom colony. The chain's last craft."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "alexsdelight:cooked_bison",
+   "members": [
+    "alexsdelight:cooked_kangaroo_shank",
+    "alexsdelight:cooked_loose_moose_rib",
+    "alexsdelight:cooked_catfish_slice",
+    "alexsdelight:cooked_centipede_leg",
+    "alexsdelight:cooked_bunfungus",
+    "alexsdelight:cooked_bunfungus_drumstick",
+    "alexsdelight:raw_bunfungus_drumstick"
+   ]
+  }
+ ],
+ "notes": "All 23 ids resolve as assets/alexsdelight/models/item/<id>.json intersected with item./block. lang keys - zero models_only and zero lang_only. This mod is on CurseForge only; it does not exist on Modrinth under any slug, which is why it had to be pulled through the CurseForge API. Its META-INF/mods.toml declares only minecraft and forge as mandatory, but every recipe in data/alexsdelight/recipes proves the real dependencies: alexsmobs:kangaroo_meat, alexsmobs:moose_ribs, alexsmobs:raw_catfish, alexsmobs:centipede_leg, alexsmobs:lobster_tail, alexsmobs:gongylidia, alexsmobs:maggot and alexsmobs:acacia_blossom, plus farmersdelight:raw_pasta, tomato_sauce, red_mushroom_colony and the forge:tools/knives tag. Two loot modifiers add the mod's own drops: bison.json and bunfungus.json. bunfungus is an Alex's Caves mob, so that one branch needs alexscaves as well as alexsmobs. The mod also injects alexsdelight:cooked_loose_moose_rib into farmersdelight:barbecue_stick. ONE wheel rather than three, said plainly: 23 items is a small mod and the spine already covers the interesting half, so the wheel collects only the cooked cuts that would otherwise be repeats. Parent items this addon assumes you already have: alexsmobs:kangaroo_meat, alexsmobs:moose_ribs, alexsmobs:raw_catfish, alexsmobs:centipede_leg, alexsmobs:lobster_tail, alexsmobs:gongylidia, alexsmobs:maggot, alexsmobs:acacia_blossom, farmersdelight:cutting_board, farmersdelight:cooking_pot, farmersdelight:raw_pasta, farmersdelight:tomato_sauce, farmersdelight:red_mushroom_colony."
+}

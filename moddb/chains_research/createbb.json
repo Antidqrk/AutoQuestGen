@@ -1,0 +1,146 @@
+{
+ "mod": "createbb",
+ "verified_against": "createbb-1.20.1-3.2.2.jar",
+ "item_count_in_jar": 36,
+ "parent_mod": "create",
+ "chain": [
+  {
+   "id": "createbb:tray",
+   "title": "Somewhere to Set It Down",
+   "desc": "Iron plates alone. Every solid product in this mod is a fluid poured into a tray and then pressed, so nothing crystallises until you have a stack of these."
+  },
+  {
+   "id": "createbb:white_phosphorus",
+   "title": "Crushing Limestone",
+   "desc": "Create's crushing wheels on limestone, matched by block or by the whole stone_types/limestone tag. Waxy, unstable, and the raw form of the mod's first reagent."
+  },
+  {
+   "id": "createbb:red_phosphorus",
+   "title": "Making It Behave",
+   "desc": "White phosphorus through a mixer. The stable allotrope, and the one the first synthesis actually consumes."
+  },
+  {
+   "id": "createbb:match",
+   "title": "A Single Strike",
+   "desc": "Mechanical crafting red phosphorus onto sticks. A single-use firestarter by its own tooltip, and it mills straight back into phosphorus if you change your mind."
+  },
+  {
+   "id": "createbb:ephedra",
+   "title": "Buy It From Farmers",
+   "desc": "The mod's own tooltip tells you where this comes from - villager trade, not a recipe. It is the plant everything downstream is extracted from, so the first bottleneck is a farmer, not a machine."
+  },
+  {
+   "id": "createbb:ephedra_seeds",
+   "title": "Growing Your Own",
+   "desc": "Crafted from ephedra, or milled out of it alongside the extract. Plant them and the supply stops depending on a villager's mood."
+  },
+  {
+   "id": "createbb:pseudophedrine",
+   "title": "The Extract",
+   "desc": "Milling ephedra gives seeds and this. Also recoverable by milling the boxed pharmacy version, which is the industrial route once you have a village to buy out."
+  },
+  {
+   "id": "createbb:aluminosilicate_bit",
+   "title": "Clay, Crushed",
+   "desc": "Crushing wheels on a clay ball or a whole clay block. The cheapest input in the mod and the start of its only reusable catalyst."
+  },
+  {
+   "id": "createbb:aluminosilicate_catalyst",
+   "title": "Not Consumed On Use",
+   "desc": "Bits packed into a chunk, chunks packed into the catalyst. Its tooltip is the important part - it comes back out of every reaction it drives, so you only ever make a handful."
+  },
+  {
+   "id": "createbb:brine",
+   "title": "Boiling Off the Water",
+   "desc": "Mixing water with the aluminosilicate catalyst. Salt concentrate, and the only source of the mod's halogen."
+  },
+  {
+   "id": "createbb:iodine",
+   "title": "Purple Vapour",
+   "desc": "Brine through the mixer. Together with red phosphorus it is one half of the reduction that makes the first product."
+  },
+  {
+   "id": "createbb:white_stuff_tray",
+   "title": "Poured and Cooling",
+   "desc": "Spouting Liquid White Stuff into an empty tray. The intermediate state between fluid and product - a tray full of something that has not set yet."
+  },
+  {
+   "id": "createbb:white_stuff",
+   "title": "The First Batch",
+   "desc": "Pressing a filled tray gives the product and hands the tray back. End of phase one: water, iodine, pseudophedrine and red phosphorus in, one crude solid out."
+  },
+  {
+   "id": "createbb:crushed_copper",
+   "title": "Metal to Powder",
+   "desc": "Crushing wheels on any copper ingot. Half of the mod's second catalyst, and the point where phase two starts needing a real ore chain."
+  },
+  {
+   "id": "createbb:copper_zinc_catalyst",
+   "title": "The Second Catalyst",
+   "desc": "Crushed copper and crushed zinc, shapeless. It survives both the electrolysis and the methanol synthesis, so one is enough to run the whole line."
+  },
+  {
+   "id": "createbb:hydrogen_bucket",
+   "title": "Splitting Water",
+   "desc": "Mixing water over the copper-zinc catalyst throws off hydrogen and oxygen at once, and returns the catalyst. Two gases from one basin, which is why this recipe sits at the centre of phase two."
+  },
+  {
+   "id": "createbb:methanol_bucket",
+   "title": "Wood Alcohol",
+   "desc": "Hydrogen, coal and the copper-zinc catalyst in a mixer. The first of the two feedstocks the amine needs."
+  },
+  {
+   "id": "createbb:nitrogen",
+   "title": "Fixed From Crops",
+   "desc": "Mechanical crafting potatoes, beetroot and beetroot seeds. An absurd way to get nitrogen and entirely in keeping with the rest of the mod."
+  },
+  {
+   "id": "createbb:methylamine_bucket",
+   "title": "Ammonia Meets Alcohol",
+   "desc": "Ammonia from nitrogen, methanol from hydrogen, and the aluminosilicate catalyst to push them together. The second half of the blue synthesis."
+  },
+  {
+   "id": "createbb:cyanide",
+   "title": "Out of an Apple",
+   "desc": "Crushing wheels on a plain apple. Mixed with water it becomes phenylacetic acid, which is the other feedstock."
+  },
+  {
+   "id": "createbb:phenylacetone_bucket",
+   "title": "Two Streams Converge",
+   "desc": "Phenylacetic acid from cyanide, acetic anhydride from oxygen and sugar, mixed together. Building it means both halves of the electrolysis are finally being used."
+  },
+  {
+   "id": "createbb:blue_stuff_tray",
+   "title": "The Blue Pour",
+   "desc": "Methylamine and phenylacetone mixed into Liquid Blue Stuff, then spouted into a tray. Four separate synthesis lines have to be running at once to keep this tray filling."
+  },
+  {
+   "id": "createbb:blue_stuff",
+   "title": "Ninety-Nine Point One",
+   "desc": "Pressing the blue tray. The end of the mod: everything it adds exists to reach this one item, and the tray comes back for the next batch."
+  }
+ ],
+ "collections": [
+  {
+   "hub": "createbb:liquid_blue_stuff_bucket",
+   "members": [
+    "createbb:liquid_white_stuff_bucket",
+    "createbb:ammonia_bucket",
+    "createbb:oxygen_bucket",
+    "createbb:acetic_anhydride_bucket",
+    "createbb:phenylacetic_acid_bucket"
+   ]
+  },
+  {
+   "hub": "createbb:brass_call_bell",
+   "members": [
+    "createbb:trapped_brass_call_bell",
+    "createbb:sudafed",
+    "createbb:sudafed_box",
+    "createbb:aluminosilicate_chunk",
+    "createbb:crushed_zinc"
+   ]
+  }
+ ],
+ "notes": "Verified against createbb-1.20.1-3.2.2.jar (Forge, minecraft [1.20.1, 1.21), create dependency declared). NOT ON MODRINTH - this is a CurseForge-only mod, project 635620, slug create-broken-bad, display name 'Create: Broken Bad'. Modrinth search for 'createbb' returns nothing and so does CurseForge's own search for that string; the mod was found only by matching the moddb consensus item list (cyanide, pseudophedrine, methylamine, blue_meth_tray) against a CurseForge search for 'broken bad'. Record the slug: create-broken-bad. ID SET IS 36 = 35 item models plus one blockstate-only id. All 35 item models have a lang key (30 item.createbb.*, 5 block.createbb.*), and createbb:ephedra_crop_block has a blockstate and a block.createbb.ephedra_crop_block key but NO item model - it is the planted crop, and its loot table is what gives the ephedra back, so it is counted as registered but is not questable. THE MOD IS ALL CREATE PROCESSING: of 48 recipe files, only 11 are vanilla crafting; the rest are create:mixing (12), create:crushing (6), create:filling (2), create:pressing (2), create:milling (4), create:compacting (1) and create:mechanical_crafting (2). No forge:conditional wrapper appears anywhere in the jar and there is no mod_loaded gate on anything, so every item here is reachable with only Create installed. TWO DEAD RECIPES FOUND: data/createbb/recipes/misc/smelt_copper_dust.json and smelt_zinc_dust.json smelt createbb:copper_dust and createbb:zinc_dust, but neither id exists in this jar - there is no model, no lang key and no texture for either. They are leftovers from an earlier version where the crushing outputs were called dusts rather than crushed_copper / crushed_zinc, and they will simply fail to load their ingredient. Nothing depends on them, so nothing is lost. DROPPED: createbb:ephedra_crop_block only, for the reason above. Nothing else was dropped - all 35 item-model ids are obtainable. TWO OBTAINABILITY POINTS THAT A RECIPE-ONLY SCAN GETS WRONG, both checked by reading the jar directly. (1) createbb:ephedra has NO recipe file at all. It is still obtainable, and I read data/createbb/loot_tables/blocks/ephedra_crop_block.json to prove it: the crop drops createbb:ephedra when its age property is 3 and createbb:ephedra_seeds otherwise. The first ephedra comes from a villager (its tooltip is literally 'Buy it from farmers'), after which the crop is self-sustaining. It is safe as a chain step. (2) TEN of the 36 ids have no recipe file either - acetic_anhydride_bucket, ammonia_bucket, hydrogen_bucket, liquid_blue_stuff_bucket, liquid_white_stuff_bucket, methanol_bucket, methylamine_bucket, oxygen_bucket, phenylacetic_acid_bucket and phenylacetone_bucket. All ten are the bucket items of the mod's ten registered fluids (fluid.createbb.acetic_anhydride, ammonia, hydrogen, liquid_blue_stuff, liquid_white_stuff, methanol, methylamine, oxygen, phenylacetic_acid, phenylacetone) and Create fills any of them at a spout or item drain from the basin that produced the fluid - the mixing recipes output the FLUID, and bucketing it is the intended way to hold it. Five of them (hydrogen, methanol, methylamine, phenylacetone and the two liquid_stuff ones) are used as chain or wheel entries because they are the only stackable, questable form of a synthesis step; if the pack prefers not to ask for buckets, swap those steps for the solid product that follows them. ORDERING CONFLICTS vs moddb consensus (26 entries, all 26 id-verified as far as they go, but see the renames below): the consensus positions are broadly plausible on the chemistry but wrong at both ends. (1) It opens with trapped_brass_call_bell 0.0 and tray 0.083 and only reaches aluminosilicate_catalyst at 0.283 - but brine 0.565 is create:mixing water OVER the aluminosilicate catalyst, and iodine 0.774 comes from brine, so the catalyst has to precede both by a wide margin; it was moved to step 9 and brine and iodine follow immediately. (2) It puts cyanide at 0.202 and phenylacetic_acid_bucket at 0.238, ahead of copper_zinc_catalyst 0.625 and methanol_bucket 0.524 - the acid does only need cyanide and water, so that is legal, but phenylacetone (0.81) needs acetic anhydride, which needs createbb:oxygen, which only exists as a by-product of the electrolysis that requires the copper-zinc catalyst. The catalyst was moved ahead of the whole phase-two block. (3) It puts white_stuff at 0.952 and blue_stuff at 1.0 adjacent to each other; the jar's own folder layout disagrees - recipes/phase1/ makes white stuff and recipes/phase2/ makes blue stuff, and phase 1 needs no metal at all while phase 2 needs copper, zinc and coal. The two products were separated so phase 1 finishes at step 13 and phase 2 runs 14 to 23. Recipe graph and the jar's phase1/phase2 folder split preferred over consensus in all three cases. CONSENSUS IDS THAT DO NOT EXIST IN THIS JAR - flag these upstream: createbb:blue_meth_tray and createbb:white_meth_tray appear in moddb at 0.917 and 1.0, but this jar registers them as createbb:blue_stuff_tray and createbb:white_stuff_tray. The mod was evidently renamed between the version moddb harvested and 3.2.2, and any book built on the moddb ids alone would ship two broken tasks. PARENT ASSUMPTIONS: crushing wheels, a mixer with a blaze burner, a mechanical press, a millstone, a spout, a mechanical crafter array, iron plates, brass plates and brass ingots, plus Create's limestone (the crushing recipe accepts either create:limestone or anything in create:stone_types/limestone). Non-chain curiosities worth a reward slot: createbb:match is a one-shot firestarter, createbb:white_phosphorus is in the createbb:tnt_powders tag and crafts vanilla TNT with sand, and the brass call bell has a trapped redstone variant."
+}

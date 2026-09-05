@@ -1,0 +1,33 @@
+{
+ "_comment": "Mods verified as having no usable 1.20.1 Forge build, or not existing at all. Recorded so no agent researches them twice. gofish is the exception: it has real content but no jar we can fetch, so it is blocked rather than impossible.",
+ "mods": {
+  "astralsorcery": "newest build is 1.16.5",
+  "oritech": "no 1.20.1 build on any loader; Fabric/NeoForge 1.21+",
+  "indrev": "1.20.1 is Fabric only, no Forge port exists",
+  "yttr": "listed as forge but is a Sinytra Connector shim over a Fabric jar",
+  "mythicmetals": "Fabric only, every version",
+  "spellbladenext": "all 1.20.1 files Fabric; NeoForge starts at 1.21",
+  "archers_expansion": "all 1.20.1 versions Fabric",
+  "death_knights": "all 1.20.1 versions Fabric",
+  "paladins": "Paladins & Priests RPG Series, 1.20.1 Fabric only",
+  "conjuring": "only Forge build ever was 1.16.x",
+  "wizards": "RPG Series, all 1.20.1 files Fabric",
+  "archon": "Fabric only across all 15 versions",
+  "aeronautics": "all builds are 1.21.1 NeoForge; no public 1.20.1 jar",
+  "cabricality": "a Quilt 1.18.2 MODPACK, not a mod",
+  "kibe": "1.20.1 Fabric only; NeoForge starts 1.21.1",
+  "byg": "no 1.20.1 build on any loader; successor is biomeswevegone",
+  "cacao": "no such mod found on Modrinth or CurseForge",
+  "towersoftheend": "no mod of this name found anywhere",
+  "gofish": "no Forge 1.20.1 jar obtainable; mod DOES have content, needs a manual jar",
+  "paradise_lost": "1.20.1 files are Fabric only (Modrinth paradise-lost / CF 418680: 2.2.2-beta+1.20, 2.2.3-beta+1.20, 2.2.4-beta+1.20, 2.2.6-beta+1.20.0, all loader=fabric). The only non-Fabric builds are 2.4.x-beta+1.21.1-SINYTRA, i.e. NeoForge 1.21.1 via Sinytra Connector, same case as yttr. The separate older CF project 434420 tops out at 1.16.5 Forge. No Forge 1.20.1 jar exists.",
+  "toastysmobs": "no 1.20.1 build of any kind. CF 1310902 (Toasty's Mobs) has 42 files and every one is neoforge-1.21.1 or neoforge-1.21.4; Modrinth toastys-mobs lists loaders=[neoforge] and game_versions without 1.20.1. Same for the companion Toasty's Mobs Delight (CF 1263197).",
+  "actuallyadditions": "no 1.20.1 build on any loader. Modrinth project actually-additions (id 4K7Q3nqd) has 35 versions and its game_versions jump straight from 1.12.2 to 1.20.4 and 1.21.1, with no 1.20.x in between; the 1.20.4 files (1.2.13, 1.2.14) are loaders=[neoforge]. CurseForge project 228404 latestFilesIndexes shows the identical gap: 1.7.10, 1.8.9, 1.9, 1.9.4, 1.10, 1.10.2, 1.11, 1.11.2, 1.12, 1.12.1, 1.12.2, then 1.20.4, then 1.21.1. A classId=6 CF search filtered to gameVersion=1.20.1 returns only unrelated mods (Actually Divisions, Actually Subtractions, Actually Forgotten Additions, Reinforced Crate). No 1.20.1 Forge jar exists to verify against.",
+  "ordinarycoins": "1.20.1 is Fabric only. CurseForge project 633546, 'Ordinary Coins [Forge/Fabric]', has exactly 12 files: the only ones carrying the 1.20.1 tag are ordinarycoins-1.0.4-fabric.jar (gameVersions ['Fabric','Client','1.20.1','1.20','Server']), and every Forge file stops earlier - OrdinaryCoins-1.0.2-Forge.jar at 1.19.4, ordinarycoins-1.0.2-forge.jar at 1.19.2, OrdinaryCoins-1.0.1/1.0.0-Forge.jar at 1.18.2. Modrinth slug ordinary-coins has a single version, 1.21.3 Fabric. Broad CF searches for 'coins' and 'Coin' filtered to gameVersion=1.20.1 + modLoaderType=1 (Forge) return 40 unrelated currency mods and no build of this modid. NOTE: moddb.json does carry a 6-pack consensus for ordinarycoins (emerald/copper/diamond/netherite/iron/gold _coin) - those packs were on 1.19 or on Fabric.",
+  "zenith": "Fabric-only on 1.20.1, so it cannot load in a Forge pack. Also byte-identical to apotheosis - same 83 ids, same names - so it is a fork, not extra content.",
+  "clutter": "Fabric/Quilt only. Modrinth project 'clutter' lists loaders [fabric, quilt] across all versions incl. 1.20.1; no Forge file exists. (Do not confuse with 'Cluttered', a different mod.) Verified 2026-08-29.",
+  "dehydration": "Fabric only. CF/Modrinth 'dehydration' (dehydration-1.3.5+1.20.1) is Fabric; author states no plans for a Forge version. Forge-side thirst alternatives exist as separate mods (toughasnails, thirst_was_taken, homeostatic). Verified 2026-08-29.",
+  "portalgun_ichun": "iChun's original PortalGun tops out at 1.12.2 (last CF file 2019); iChunUtil never passed 1.16.5. Usable 1.20.1 Forge REPLACEMENTS exist as separate projects: 'Rick's Portal Gun' (portalgun-1.20.1-1.1.0, Forge/NeoForge) and 'Immersive Portal Gun for Forge' (needs Immersive Portals). Verified 2026-08-29.",
+  "gravitygun_ichun": "iChun's original Gravity Gun tops out at 1.12.2. 1.20.1 Forge replacements exist as separate projects: 'Gravity Gun Mod Revival' (GravityGunRevival-1.20.1, beta) and 'Cloro's Gravity Gun'. Single-item mods, minimal progression. Verified 2026-08-29."
+ }
+}
