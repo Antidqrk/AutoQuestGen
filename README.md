@@ -50,13 +50,13 @@ research data.
 
 ## Install
 
-**Option A — the app.** Download `AutoQuestGen.exe` from the
-[Releases](../../releases) page and double-click it. Python is not required. Settings,
-logs and scan caches are written next to the exe, or to `%LOCALAPPDATA%\AutoQuestGen`
-if that folder is read-only. Windows SmartScreen may warn about an unsigned exe — this
-beta is not code-signed.
+**From source, today.** See [Run from source](#run-from-source) — clone, install
+`requests`, run one file.
 
-**Option B — from source.** See [Run from source](#run-from-source).
+**A packaged Windows build** is on the way to the [Releases](../../releases) page: a
+single `AutoQuestGen.exe` with no Python required, writing its settings, logs and scan
+caches next to itself (or to `%LOCALAPPDATA%\AutoQuestGen` if that folder is read-only).
+It will be unsigned for this beta, so Windows SmartScreen will warn about it.
 
 ## Quick start
 
