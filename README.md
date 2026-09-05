@@ -13,6 +13,7 @@ Point it at a `mods/` folder, press one button, play.
 [![FTB Quests](https://img.shields.io/badge/FTB%20Quests-2001.x-blue.svg)](#known-limits)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776ab.svg)](#run-from-source)
 [![Status: beta](https://img.shields.io/badge/status-beta-orange.svg)](#what-beta-means)
+[![Latest release](https://img.shields.io/github/v/release/Antidqrk/AutoQuestGen?include_prereleases&label=download)](../../releases/latest)
 [![Works offline](https://img.shields.io/badge/works-offline-success.svg)](#what-it-does)
 
 Created by **antidqrk** · Built with **Claude (Anthropic)** — engineering, QA, and the research pipeline.
@@ -50,13 +51,14 @@ research data.
 
 ## Install
 
-**From source, today.** See [Run from source](#run-from-source) — clone, install
-`requests`, run one file.
+**Option A — the app.** Download `AutoQuestGen.exe` from the
+[latest release](../../releases/latest) and double-click it. Python is not required.
+There is also a portable zip that starts faster and upsets antivirus less. Settings,
+logs and scan caches are written next to the app, or to `%LOCALAPPDATA%\AutoQuestGen`
+if that folder is read-only. The build is unsigned for this beta, so Windows SmartScreen
+will warn on first run; the release notes carry a SHA-256 you can check.
 
-**A packaged Windows build** is on the way to the [Releases](../../releases) page: a
-single `AutoQuestGen.exe` with no Python required, writing its settings, logs and scan
-caches next to itself (or to `%LOCALAPPDATA%\AutoQuestGen` if that folder is read-only).
-It will be unsigned for this beta, so Windows SmartScreen will warn about it.
+**Option B — from source.** See [Run from source](#run-from-source).
 
 ## Quick start
 
