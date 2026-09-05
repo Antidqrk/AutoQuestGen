@@ -126,6 +126,6 @@
    "ars_elemental:spell_horn",
    "ars_elemental:anima_essence"
   ],
-  "pack_status": "NOT INSTALLED, and its dependency is not installed either - there is no ars_nouveau jar in CREATE FEMBY. Analysed against ars_elemental-1.20.1-0.6.8.0.jar fetched to scratch from CurseForge (not on Modrinth). Adding this mod would require adding Ars Nouveau first."
+  "pack_status": "NOT INSTALLED, and its dependency is not installed either - there is no ars_nouveau jar in the reference pack. Analysed against ars_elemental-1.20.1-0.6.8.0.jar fetched to scratch from CurseForge (not on Modrinth). Adding this mod would require adding Ars Nouveau first."
  }
 }

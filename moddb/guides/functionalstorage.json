@@ -315,7 +315,7 @@
     ]
    },
    {
-    "note": "PACK-SPECIFIC: the guide rates the armory cabinet as 'not really useful in this form because it really makes sense to connect it to your ME system'. CREATE FEMBY has no AE2 or Refined Storage installed, so its main use case is absent here - a poor quest target despite being the mod's most expensive block.",
+    "note": "PACK-SPECIFIC: the guide rates the armory cabinet as 'not really useful in this form because it really makes sense to connect it to your ME system'. the reference pack has no AE2 or Refined Storage installed, so its main use case is absent here - a poor quest target despite being the mod's most expensive block.",
     "ids": [
      "functionalstorage:armory_cabinet"
     ]

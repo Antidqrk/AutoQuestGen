@@ -4,7 +4,7 @@
  "installed_in_pack": false,
  "videos": [],
  "items": {},
- "id_source": "NOT in the CREATE FEMBY instance. Ids verified against a reference 1.20.1 Forge jar taken from another instance on this machine - correct for the mod, but they will not resolve in this pack until the mod is added.",
+ "id_source": "NOT in the the reference pack instance. Ids verified against a reference 1.20.1 Forge jar taken from another instance on this machine - correct for the mod, but they will not resolve in this pack until the mod is added.",
  "no_video_evidence": "transcription did not complete for this mod; human_notes below are jar-derived only",
  "human_notes": {
   "order": [
@@ -12,7 +12,7 @@
   ],
   "gates": [],
   "structures": [
-   "[jar] YUNG's Api itself contributes NO structures. The structures people mean when they say 'YUNG's' live in separate mods - Better Dungeons, Better Strongholds, Better Mineshafts, Better Desert Temples, Better Ocean Monuments, Better Witch Huts, Better Nether Fortresses, Better Jungle Temples, Better End Island - and NONE of those are installed in CREATE FEMBY either.",
+   "[jar] YUNG's Api itself contributes NO structures. The structures people mean when they say 'YUNG's' live in separate mods - Better Dungeons, Better Strongholds, Better Mineshafts, Better Desert Temples, Better Ocean Monuments, Better Witch Huts, Better Nether Fortresses, Better Jungle Temples, Better End Island - and NONE of those are installed in the reference pack either.",
    "A structure-visit quest cannot be written against yungsapi. If the pack wants YUNG content, the Better* mods have to be added first; the api on its own changes nothing a player can see."
   ],
   "traps": [

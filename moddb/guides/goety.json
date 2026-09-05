@@ -453,6 +453,6 @@
    "goety:dark_ingot",
    "goety:philosophers_stone"
   ],
-  "pack_status": "INSTALLED. goety-2.5.55.4.jar plus addons goety_cataclysm-1.20-1.8.2.jar, goety_spillage-1.20-1.4.8.jar and goetyhostility-1.4.4.jar are in CREATE FEMBY. All 1318 ids come from the live instance jar. Note the addon jars contribute 0 ids to the goety namespace - they register under their own namespaces."
+  "pack_status": "INSTALLED. goety-2.5.55.4.jar plus addons goety_cataclysm-1.20-1.8.2.jar, goety_spillage-1.20-1.4.8.jar and goetyhostility-1.4.4.jar are in the reference pack. All 1318 ids come from the live instance jar. Note the addon jars contribute 0 ids to the goety namespace - they register under their own namespaces."
  }
 }

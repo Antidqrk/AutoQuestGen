@@ -4,7 +4,7 @@
  "installed_in_pack": false,
  "videos": [],
  "items": {},
- "id_source": "NOT in the CREATE FEMBY instance. Ids verified against a reference 1.20.1 Forge jar taken from another instance on this machine - correct for the mod, but they will not resolve in this pack until the mod is added.",
+ "id_source": "NOT in the the reference pack instance. Ids verified against a reference 1.20.1 Forge jar taken from another instance on this machine - correct for the mod, but they will not resolve in this pack until the mod is added.",
  "structures_in_jar": [
   "tconstruct:blood_island",
   "tconstruct:clay_island",

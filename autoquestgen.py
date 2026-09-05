@@ -1151,7 +1151,7 @@ def layout_positions(quests, style, jitter, seed):
 # one number. Splitting it is what makes the levels actually differ: with a
 # single `images` count the sourcing topped out at one backdrop per chapter, so
 # balanced / decorated / lavish came out byte-identical (md5 98d93acc7cc800f3 on
-# CREATE FEMBY, cb7896283662cde4 on ArcanumLand, 49d442eb1e0beb06 on THE
+# the reference pack, cb7896283662cde4 on ArcanumLand, 49d442eb1e0beb06 on THE
 # FORGOTTEN SMP) - three levels, one book. A budget the supply cannot spend is
 # not a budget.
 #
@@ -1497,7 +1497,7 @@ def _size_hierarchy(quests: list) -> None:
     Size is a landmark system, and a landmark only works if there is ONE of
     it. The previous rule ("any quest with fanout >= 3 is a hub -> 1.5") made
     every trunk node a landmark once shape_as_trunk widened the rows: measured
-    on the built CREATE FEMBY book (2026-08-29), 91 of 304 quests were
+    on the built the reference pack book (2026-08-29), 91 of 304 quests were
     enlarged (share 0.299 against the authored 0.20 cap) and 24 of 25
     size-using chapters had a TIE for largest, so "the big quest" pointed at
     nothing. Authored books enlarge the ENTRANCE - the quest a player reads
@@ -2448,7 +2448,7 @@ def quests_to_doc(quests_dir: Path) -> dict:
                     # dropping it. This whitelist knew five task types, so
                     # opening the Rewards & Tasks tab and saving silently
                     # deleted every OTHER kind - all 23 structure tasks in a
-                    # CREATE FEMBY book, and the same on every pack tested.
+                    # the reference pack book, and the same on every pack tested.
                     # The user is editing rewards; nothing about that should
                     # cost them a quest's objective.
                     #
@@ -4082,8 +4082,8 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
                 # aquamirae:surface/arch, and "aquamirae:arch" matches nothing
                 # the game will ever generate. The quest can then never
                 # complete, and it is not visible until someone plays it.
-                # 29 such ids in ArcanumLand, 10 in GayChaseyPacxk, 7 in THE
-                # FORGOTTEN SMP - and zero in CREATE FEMBY, which is why the
+                # 29 such ids in ArcanumLand, 10 in a large test pack, 7 in THE
+                # FORGOTTEN SMP - and zero in the reference pack, which is why the
                 # only pack this app was ever tested against could not show it.
                 sid = "%s:%s" % (parts[1], "/".join(parts[4:])[:-5])
                 structures.setdefault(parts[1], set()).add(sid)
@@ -4530,7 +4530,7 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
     # model or a blockstate anywhere in the pack? The core models-and-lang
     # path already guarantees that; only the rescues (recipes, advancements,
     # loot, tags) can add an id without one. Cost on a pack with no phantom
-    # namespaces is nil - CREATE FEMBY loses 12 of 17,998, all of them ids
+    # namespaces is nil - the reference pack loses 12 of 17,998, all of them ids
     # that would have rendered as a missing-model cube.
     _phantom = set()
     for _mid, _ids in items.items():
@@ -8201,7 +8201,7 @@ def bulk_ask_pass(chapters: list, scan: dict) -> None:
     chapter of >= 15 item tasks has zero of them. This generator leaves counts
     to _count_for, which is 88% "ask for one" by design - and the curated
     chain / harvested-order / progression paths that fill most mod chapters
-    hard-code count 1 besides. Measured on the built CREATE FEMBY book
+    hard-code count 1 besides. Measured on the built the reference pack book
     (2026-08-29): every one of the 22 mod chapters had ZERO bulk asks; the
     only bulk in the book was the vanilla specs' authored counts, and the
     17-item-task Create chapter tripped the check.
@@ -8770,7 +8770,7 @@ def structure_reward(sid: str, scan: dict, limit: int = 3) -> str:
     also claim a SECOND structure of this mod (lich_tower and mushroom_tower
     both absorb tower_room; all three hollow hills absorb hill1-3), saying it
     of either one would be a guess, and a wrong loot list is worse than the
-    generic line. Measured cost of the rejection (CREATE FEMBY, 141 eligible
+    generic line. Measured cost of the rejection (the reference pack, 141 eligible
     structures): 42% coverage -> 36%, every structure in the difference being
     one the loose match would have lied about.
     """
@@ -8966,9 +8966,9 @@ def _qualify_colliding_structure_titles(doc: dict, scan: dict) -> int:
     no way to tell which of the two he just completed - the same complaint as
     "let me see if I can figure out where that sleep quest was".
 
-    Measured over the pack scans on hand: CREATE FEMBY has no collision at
+    Measured over the pack scans on hand: the reference pack has no collision at
     all, Arcanum ships "Graveyard" twice (Ice and Fire, Alshanex Familiars)
-    and GayChasey ships "Labyrinth" twice. So this fires on the books that
+    and one test pack ships "Labyrinth" twice. So this fires on the books that
     have the problem and leaves the one that does not alone.
 
     That is also why it runs over the finished book rather than inside
@@ -10210,7 +10210,7 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
     # per group, split in two if a group is huge). NOT flattened any more:
     # wt() caps at 40 "so no mod hogs the budget", and feeding those capped
     # weights straight into the allocation made every chapter the same size -
-    # measured on the built CREATE FEMBY book (2026-08-29): 25 chapters, all
+    # measured on the built the reference pack book (2026-08-29): 25 chapters, all
     # of them 5-18 quests, p75/p25 = 1.50 against the authored 2.5+
     # (immersion_spec CHK-19: real books keep small side chapters AND give
     # the headline mod a big one - max chapter > 40 quests). So the
@@ -10253,7 +10253,7 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
     # harmless alone and ruinous in series on a small budget: with ~30 units
     # the floors alone allocate 180+ quests, so density=tiny shipped 148
     # against an advertised 40-70 and target=40 shipped 228 (measured on
-    # CREATE FEMBY, all mods, 2026-08-29 - and target=100 shipped the SAME
+    # the reference pack, all mods, 2026-08-29 - and target=100 shipped the SAME
     # 228, so small budgets were not merely over, they were ignored). The
     # floors stay - a 3-quest chapter is not a chapter - so the budget is
     # enforced the other way round: keep only as many units as the budget can

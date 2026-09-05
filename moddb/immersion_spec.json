@@ -953,7 +953,7 @@
     ]
    },
    "ours": {
-    "what": "CREATE FEMBY book generated from scan.pkl with the standard opts, then written through build_chapters",
+    "what": "the reference pack book generated from scan.pkl with the standard opts, then written through build_chapters",
     "size": "25 chapters (24 of >=5 quests), 381 quests, 381 tasks, 402 reward entries",
     "used_for": "every 'ours' number in this file",
     "caveats": [

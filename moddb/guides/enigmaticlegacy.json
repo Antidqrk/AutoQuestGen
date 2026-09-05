@@ -83,6 +83,6 @@
    "enigmaticlegacy:xp_scroll",
    "enigmaticlegacy:unholy_grail"
   ],
-  "pack_status": "NOT INSTALLED in CREATE FEMBY. Analysed against EnigmaticLegacy-2.30.1.jar fetched to scratch from Modrinth. It depends on Curios, which IS present (curios-forge-5.14.1+1.20.1.jar)."
+  "pack_status": "NOT INSTALLED in the reference pack. Analysed against EnigmaticLegacy-2.30.1.jar fetched to scratch from Modrinth. It depends on Curios, which IS present (curios-forge-5.14.1+1.20.1.jar)."
  }
 }

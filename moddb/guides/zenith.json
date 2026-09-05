@@ -339,6 +339,6 @@
    "zenith:boss_summoner",
    "zenith:prismatic_altar"
   ],
-  "pack_status": "NOT INSTALLED, and NOT INSTALLABLE in this pack. CREATE FEMBY is 1.20.1 Forge; Zenith publishes only a Fabric build for 1.20.1 (zenith-1.2.5-1.20.1.jar, loaders: ['fabric']). Analysed from that Fabric jar in scratch purely to obtain real ids. Apotheosis is the Forge equivalent and is also not installed."
+  "pack_status": "NOT INSTALLED, and NOT INSTALLABLE in this pack. the reference pack is 1.20.1 Forge; Zenith publishes only a Fabric build for 1.20.1 (zenith-1.2.5-1.20.1.jar, loaders: ['fabric']). Analysed from that Fabric jar in scratch purely to obtain real ids. Apotheosis is the Forge equivalent and is also not installed."
  }
 }

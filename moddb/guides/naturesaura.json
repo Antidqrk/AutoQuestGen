@@ -85,7 +85,7 @@
    "naturesaura:animal_spawner",
    "naturesaura:chunk_loader"
   ],
-  "pack_status": "NOT INSTALLED in CREATE FEMBY. Analysed against NaturesAura-39.4.jar fetched to scratch from Modrinth. Note this mod is also absent from the coordinator's guide_corpus.json, so its video ids came from this agent's own pre-throttle search.",
+  "pack_status": "NOT INSTALLED in the reference pack. Analysed against NaturesAura-39.4.jar fetched to scratch from Modrinth. Note this mod is also absent from the coordinator's guide_corpus.json, so its video ids came from this agent's own pre-throttle search.",
   "_source_honesty": "One guide transcribed: Mischief of Mice, \"Nature's Aura: Getting Started! Bit-by-Bit\" (24.7k chars). It is a dubbed translation and mangles proper nouns, so it matched only 2 ids automatically - but its TEACHING is intact and it independently confirms two gates that were derived from the jar (aura depletion, and the Nether-bottle requirement). Structure below is jar-derived; the guide corroborates rather than drives it."
  }
 }
