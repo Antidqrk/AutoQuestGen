@@ -1238,18 +1238,45 @@ VANILLA_BACKDROPS = {
 }
 
 # group keyword -> (title colour code, quest shape, emblem, vanilla backdrop key)
+# THE SHAPE VOCABULARY IS SPLIT THREE WAYS, AND THE SPLITS MUST NOT OVERLAP.
+# Measured on a book built for a 433-mod pack: 311 of 372 squares had a
+# prerequisite while the legend page promises a square needs nothing first.
+# The cause was that "square" was both the ENTRY role and the theme shape of
+# two groups, so the theme quietly overwrote the claim on every non-entry
+# quest in them. A shape that means two things means neither.
+#
+#   ROLE  (strongest, set by _role_shapes)  square entry, octagon capstone,
+#                                           circle optional
+#   TASK  (set by _quest_shape)             gear kill, diamond checkmark,
+#                                           hexagon three-plus tasks
+#   THEME (weakest, only when nothing else) rsquare, pentagon, heptagon
+#
+# A group is told apart by COLOUR - the legend says exactly that - so its
+# shape only ever has to be neutral.
+ROLE_SHAPES = ("square", "octagon", "circle")
+TASK_SHAPES = ("gear", "diamond", "hexagon")
+NEUTRAL_SHAPES = ("rsquare", "pentagon", "heptagon")
+
 GROUP_THEMES = [
-    (("vanilla", "overworld", "start", "basic"), "e", "square", "runes", "stone"),
-    (("tech", "create", "machine", "industr", "engineer"), "b", "hexagon", "gear", "stone"),
+    (("vanilla", "overworld", "start", "basic"), "e", "rsquare", "runes", "stone"),
+    (("tech", "create", "machine", "industr", "engineer"), "b", "heptagon", "gear", "stone"),
     (("magic", "arcane", "botania", "spell", "occult"), "d", "pentagon", "runes", "end"),
-    (("nature", "farm", "food", "garden", "animal"), "a", "circle", "leaf", "husbandry"),
-    (("adventure", "explore", "dungeon", "dimension", "boss", "combat"), "6", "gear", "sword", "adventure"),
-    (("nether", "hell", "fire", "blaze"), "c", "octagon", "sword", "nether"),
-    (("end", "dragon", "void", "chorus"), "5", "octagon", "sword", "end"),
-    (("decor", "furnitur", "aesthetic", "build", "paint"), "9", "diamond", "sparkle", "stone"),
-    (("farm", "food", "cook", "crop", "harvest"), "a", "circle", "leaf", "husbandry"),
-    (("support", "util", "storage", "expansion", "misc"), "7", "square", "sparkle", "stone"),
+    (("nature", "farm", "food", "garden", "animal"), "a", "rsquare", "leaf", "husbandry"),
+    (("adventure", "explore", "dungeon", "dimension", "boss", "combat"), "6", "heptagon", "sword", "adventure"),
+    (("nether", "hell", "fire", "blaze"), "c", "pentagon", "sword", "nether"),
+    (("end", "dragon", "void", "chorus"), "5", "heptagon", "sword", "end"),
+    (("decor", "furnitur", "aesthetic", "build", "paint"), "9", "rsquare", "sparkle", "stone"),
+    (("farm", "food", "cook", "crop", "harvest"), "a", "rsquare", "leaf", "husbandry"),
+    (("support", "util", "storage", "expansion", "misc"), "7", "pentagon", "sparkle", "stone"),
 ]
+
+
+def _neutral(shape: str, alt: str = "rsquare") -> str:
+    """A shape safe to use where no role or task is being claimed."""
+    s = (shape or "").strip().lower()
+    if s in ROLE_SHAPES or s in TASK_SHAPES or not s:
+        return alt
+    return s
 _PALETTE_CODES = ["e", "b", "d", "a", "6", "c", "9", "5", "2", "3"]
 _BACKDROP_CYCLE = ["stone", "adventure", "husbandry", "end", "stone", "nether"]
 
@@ -1263,7 +1290,8 @@ def _theme_for(group_or_title: str, idx: int):
         if any(k in g for k in keys):
             return code, shape, emblem, backdrop
     code = _PALETTE_CODES[idx % len(_PALETTE_CODES)]
-    return code, "square", "sparkle", _BACKDROP_CYCLE[idx % len(_BACKDROP_CYCLE)]
+    return (code, NEUTRAL_SHAPES[idx % len(NEUTRAL_SHAPES)], "sparkle",
+            _BACKDROP_CYCLE[idx % len(_BACKDROP_CYCLE)])
 
 
 def _role_shapes(quests, gshape: str) -> dict:
@@ -1322,7 +1350,7 @@ def _role_shapes(quests, gshape: str) -> dict:
             continue
         names = " ".join(str(t.get("item") or "") for t in (q.get("tasks") or []))
         if any(k in names for k in _ITEM_TIER0):
-            out[q["id"]] = gshape if gshape else "hexagon"
+            out[q["id"]] = _neutral(gshape, "pentagon")
         elif any(k in names for k in _BULK):
             out[q["id"]] = "rsquare"
 
@@ -1340,11 +1368,152 @@ def _role_shapes(quests, gshape: str) -> dict:
         rank = _dep_levels(quests, ids)
         top = max(rank.values()) if rank else 0
         if top:
-            band = [gshape or "circle", "hexagon", "octagon"]
+            # Neutral only: the bands say "how deep", not "what role".
+            band = ["rsquare", "pentagon", "heptagon"]
             for q in quests:
                 k = min(2, int(3 * rank[q["id"]] / (top + 1)))
                 out[q["id"]] = band[k]
     return out
+
+
+# Share of quests that should end up with two or more prerequisites, and the
+# furthest a join may reach. The share is the authored band measured over the
+# reference books read by moddb/refbook.py: 10.0% across ATM9's 4,034 quests,
+# 14.8% across Create Above and Beyond's 454. Ours was 0.0% - not one quest in
+# an entire book - which is the plainest generated-book tell in the structure.
+# The reach is in the same units the layout uses, and is deliberately under
+# the sandbox's long-link bar, because the first version of this joined the
+# right quests at any distance and pushed ATM9's longest line 6.5 -> 10.5.
+CONVERGE_SHARE = 0.12
+CONVERGE_REACH = 5.5
+
+
+def _converge(quests, seed: str = "") -> int:
+    """Give some quests a second prerequisite, chosen by distance. -> count
+
+    A tree where every quest has exactly one prerequisite never asks a player
+    to have finished two things before a third, so nothing in it can mean "now
+    you are ready" - the moment authored chapters are built around.
+
+    Positions must already be final: the join is only allowed between quests
+    that are near each other on the page, which is what keeps it from drawing
+    the long crossing lines the layout passes exist to remove. The new parent
+    is always on a strictly lower dependency level than the child, so the
+    graph stays acyclic without a reachability walk.
+    """
+    if len(quests) < 6:
+        return 0
+    ids = {q["id"] for q in quests}
+    by_id = {q["id"]: q for q in quests}
+    deps = {q["id"]: [d for d in (q.get("dependencies") or []) if d in ids]
+            for q in quests}
+    child = collections.Counter()
+    for ds in deps.values():
+        for d in ds:
+            child[d] += 1
+
+    memo: dict = {}
+
+    def level(qid, seen=()):
+        if qid in memo:
+            return memo[qid]
+        if qid in seen:
+            return 0
+        memo[qid] = 1 + max([level(p, seen + (qid,)) for p in deps[qid]],
+                            default=-1)
+        return memo[qid]
+
+    lv = {q["id"]: level(q["id"]) for q in quests}
+    pos = {q["id"]: (float(q.get("x") or 0), float(q.get("y") or 0))
+           for q in quests}
+
+    # Children first by level, so joins land later in a chapter where an
+    # author puts them, and deterministically within a level.
+    # round, not truncate: chapters are small, and int() cost a whole join on
+    # every chapter whose share landed between 1 and 2 (measured 8.9% against
+    # the 12% asked for).
+    want = int(round(len(quests) * CONVERGE_SHARE))
+    if want <= 0:
+        return 0
+    # Leaves count. Restricting joins to quests that already have a dependent
+    # left almost no pool in the small chapters most books are made of - a
+    # 10-quest fan has one internal node - and ATM9 came out at 3.3% against
+    # an authored 10-15%. Authored books converge onto leaves constantly: the
+    # last recipe in a line wants both halves of what came before it.
+    cand = [q for q in quests if len(deps[q["id"]]) == 1]
+    cand.sort(key=lambda q: (-lv[q["id"]], str(q.get("title", ""))))
+
+    made = 0
+    for q in cand:
+        if made >= want:
+            break
+        qid = q["id"]
+        cx, cy = pos[qid]
+        best, bestd = None, CONVERGE_REACH
+        for p in quests:
+            pid = p["id"]
+            if pid == qid or pid in deps[qid] or lv[pid] >= lv[qid]:
+                continue
+            if child[pid] and len(deps[pid]) > 1:
+                continue          # do not pile joins onto one quest
+            d = math.hypot(pos[pid][0] - cx, pos[pid][1] - cy)
+            if d < bestd:
+                best, bestd = pid, d
+        if best is None:
+            continue
+        q.setdefault("dependencies", [])
+        q["dependencies"].append(best)
+        deps[qid].append(best)
+        child[best] += 1
+        made += 1
+    return made
+
+
+def _mark_optional(quests, share: float = 0.15) -> int:
+    """Flag genuine side quests as optional. -> count marked
+
+    The legend page promises a circle "is optional and blocks nothing", and
+    _role_shapes draws a circle for exactly the quests carrying optional=True
+    - but nothing ever set the flag, so the book made a claim about itself
+    that no quest in it satisfied. Hand-authored books do set it: ATM9 marks
+    14.0% of its 4,034 quests optional, and 86% of those are leaves.
+
+    A quest qualifies when nothing depends on it (so skipping it cannot
+    strand anything) AND it is not the chapter's deepest line, which is the
+    capstone the chapter is built toward. Capped per chapter, shallowest
+    first, so the flag stays a statement about side content rather than a
+    way to make most of a chapter skippable.
+    """
+    ids = {q["id"] for q in quests}
+    deps = {q["id"]: [d for d in (q.get("dependencies") or []) if d in ids]
+            for q in quests}
+    child = set()
+    for ds in deps.values():
+        child.update(ds)
+
+    memo: dict = {}
+
+    def level(qid, seen=()):
+        if qid in memo:
+            return memo[qid]
+        if qid in seen:
+            return 0
+        memo[qid] = 1 + max([level(p, seen + (qid,)) for p in deps[qid]],
+                            default=-1)
+        return memo[qid]
+
+    lv = {q["id"]: level(q["id"]) for q in quests}
+    deepest = max(lv.values(), default=0)
+    side = [q for q in quests
+            if q["id"] not in child and lv[q["id"]] < deepest
+            and not q.get("optional")]
+    side.sort(key=lambda q: (lv[q["id"]], str(q.get("title", ""))))
+    cap = int(len(quests) * share)
+    marked = 0
+    for q in side[:cap]:
+        q["optional"] = True
+        marked += 1
+    return marked
 
 
 def _quest_shape(q: dict, group_shape: str) -> str:
@@ -1357,8 +1526,10 @@ def _quest_shape(q: dict, group_shape: str) -> str:
     if len(tasks) >= 3:
         return "hexagon"
     if "dimension" in types:
-        return "octagon"
-    return group_shape
+        # NOT octagon: that is the capstone role. A dimension quest is
+        # frequently mid-chapter, and the two claims collided.
+        return "heptagon"
+    return _neutral(group_shape)
 
 
 # The nine shapes FTB Quests 1.20.1 registers (QuestShape.java). "auto" keeps
@@ -2018,6 +2189,18 @@ def build_chapters(doc: dict, warn, opts: dict | None = None):
                 if q["id"] in pos:
                     q["x"] = _Double(round(pos[q["id"]][0], 3))
                     q["y"] = _Double(round(pos[q["id"]][1], 3))
+
+        # ---- convergence ----
+        # After the layout passes and before optional marking: joins are
+        # chosen by distance, and a quest that gains a dependent here must no
+        # longer be a candidate for the optional flag.
+        _converge(quests, cs)
+
+        # ---- optional side quests ----
+        # Semantic, not cosmetic, so this runs whether or not the chapter is
+        # styled: a leaf hanging off the side of the graph is skippable in a
+        # plain book too, and FTB Quests only knows that if the flag says so.
+        _mark_optional(quests)
 
         # ---- per-group theme (colour / shape / emblem) ----
         # index is STABLE per group so every chapter in a group looks the same
@@ -9913,13 +10096,21 @@ def _front_matter_rows(specs: list, scan: dict, opts: dict | None = None) -> lis
     if _o.get("style_chapters", True) and not _forced:
         pages.append((
             "What the Shapes Mean",
+            # Only claims that hold in the built book. An earlier version
+            # described an octagon capstone, which _role_shapes suppresses
+            # whenever endings are not a minority - on a 433-mod build that
+            # was every chapter, so the page described a shape the player
+            # would never see. It also said a square "needs nothing first",
+            # while a chapter gated behind an earlier one opens on a square
+            # that does. Both sentences are now what the data actually says.
             "The outline around each quest tells you what it is before you "
-            "read a word of it. A square starts a line and needs nothing "
-            "first. An octagon ends one - finish it and that thread is done. "
-            "A circle is optional and blocks nothing. The rest mark what you "
-            "are being asked for: a piece of gear or a machine you are "
-            "working toward, or the plain stock you build it out of. Colour "
-            "belongs to the chapter's group, not to the quest."))
+            "read a word of it. A square is where a chapter's line starts - "
+            "nothing inside that chapter comes before it. A circle is "
+            "optional: do it or skip it, nothing waits on it either way. The "
+            "rest mark what you are being asked for: a piece of gear or a "
+            "machine you are working toward, or the plain stock you build it "
+            "out of. Colour belongs to the chapter's group, not to the "
+            "quest."))
 
     # WHERE THE REWARDS COME FROM. Gated on the SAME predicate the crate
     # builder uses further down, so this page appears exactly when crates do.
