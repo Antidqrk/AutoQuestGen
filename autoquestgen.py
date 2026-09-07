@@ -4801,11 +4801,17 @@ DENSITY_TARGETS = {
     "large":    "450-650",
     "massive":  "750-1050",
     "colossal": "1200-1700",
+    # Sized from the reference books rather than by extending the ladder:
+    # All the Mods 9 is 4,034 quests over 67 chapters. Below this tier there
+    # was no setting that could produce a book the size the largest authored
+    # packs actually are - ours topped out at chapters of 12 against their 52.
+    "encyclopedic": "2200-3400",
 }
-DENSITY_ORDER = ["tiny", "small", "normal", "large", "massive", "colossal"]
+DENSITY_ORDER = ["tiny", "small", "normal", "large", "massive", "colossal",
+                 "encyclopedic"]
 # midpoint used by the offline builder (real packs: median ~29 quests/chapter)
 DENSITY_MID = {"tiny": 55, "small": 140, "normal": 310, "large": 550,
-               "massive": 900, "colossal": 1450}
+               "massive": 900, "colossal": 1450, "encyclopedic": 2800}
 
 # Derived, so the prose the AI is given and the numbers the offline builder acts
 # on can never drift apart. Same strings as before; every call site is unchanged.
@@ -9719,7 +9725,7 @@ def theme_chapters(scan: dict, selected_ids: list, themes: list, opts: dict) -> 
     """-> [(group, title, icon, rows)] — one chapter per requested theme."""
     density = opts.get("density", "normal")
     per = {"tiny": 6, "small": 9, "normal": 14, "large": 20,
-           "massive": 28, "colossal": 40}.get(density, 14)
+           "massive": 28, "colossal": 40, "encyclopedic": 58}.get(density, 14)
     sel = set(selected_ids)
     mod_ids = [m["mod_id"] for m in scan["mods"]
                if (m["mod_id"] in sel) or
@@ -10376,9 +10382,11 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
         merged = []
     else:
         max_own = {"tiny": 3, "small": 6, "normal": 11, "large": 16,
-                   "massive": 22, "colossal": 30}.get(density, 11)
+                   "massive": 22, "colossal": 30,
+                   "encyclopedic": 42}.get(density, 11)
         min_wt = {"tiny": 10, "small": 9, "normal": 8, "large": 7,
-                  "massive": 6, "colossal": 5}.get(density, 8)
+                  "massive": 6, "colossal": 5,
+                  "encyclopedic": 4}.get(density, 8)
         own = [m for m in sorted(mods, key=wt, reverse=True)[:max_own] if wt(m) >= min_wt]
         own_ids = {m["mod_id"] for m in own}
         own.sort(key=lambda m: (cat_order.get(m["category"], 9), -wt(m)))
@@ -10519,8 +10527,11 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
     overhead = ((len(vanilla_specs) + len(theme_specs) + len(units) - 1) + 3
                 if alevel["desc_lines"] > 0 else 0)
     want = max(0, want - overhead)
+    # The per-chapter cap is what decides whether a bigger book means bigger
+    # chapters or merely more of them. ATM9's largest chapter is 165.
     cap = {"tiny": 20, "small": 30, "normal": 46, "large": 65,
-           "massive": 90, "colossal": 130}.get(density, 46)
+           "massive": 90, "colossal": 130,
+           "encyclopedic": 180}.get(density, 46)
     # CHK-19, part 2: linear shares compress. With weights 20-90 and a dozen
     # units, want*w/usum lands every chapter within 2x of the mean, which is
     # exactly the p75/p25 = 1.50 wall measured above. Raising the shares to a
@@ -12840,7 +12851,8 @@ class GuidedWizard(tk.Toplevel):
                                 "main tabs.")
         for label, var, values in (
                 ("Book size", self.app.density,
-                 ["tiny", "small", "normal", "large", "massive", "colossal"]),
+                 ["tiny", "small", "normal", "large", "massive", "colossal",
+                  "encyclopedic"]),
                 ("Look", self.app.aesthetic,
                  ["minimal", "balanced", "decorated", "lavish"]),
                 ("Quest shape", self.app.quest_shape,
@@ -15115,7 +15127,9 @@ class App:
 
     def on_randomize(self):
         rng = random.Random()
-        self.density.set(rng.choice(DENSITY_ORDER[:5]))  # skip 'colossal' by default
+        # skip the two biggest tiers: a surprise 2,800-quest book is not a
+        # pleasant thing to be handed by a randomise button
+        self.density.set(rng.choice(DENSITY_ORDER[:5]))
         self.target_count.set("")
         self.layout.set(rng.choice([l for l in LAYOUTS if l != "ai"]))
         self.aesthetic.set(rng.choice(["minimal", "balanced", "decorated", "lavish"]))
