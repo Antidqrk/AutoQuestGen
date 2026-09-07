@@ -52,11 +52,11 @@ research data.
 ## Install
 
 **Option A — the app.** Download `AutoQuestGen.exe` from the
-[latest release](../../releases/latest) and double-click it. Python is not required.
-There is also a portable zip that starts faster and upsets antivirus less. Settings,
-logs and scan caches are written next to the app, or to `%LOCALAPPDATA%\AutoQuestGen`
-if that folder is read-only. The build is unsigned for this beta, so Windows SmartScreen
-will warn on first run; the release notes carry a SHA-256 you can check.
+[latest release](../../releases/latest) and double-click it. One file, no installer,
+no Python. Settings, logs and scan caches are written next to it, or to
+`%LOCALAPPDATA%\AutoQuestGen` if that folder is read-only. The build is unsigned for
+this beta, so Windows SmartScreen will warn on first run; the release notes carry a
+SHA-256 you can check.
 
 **Option B — from source.** See [Run from source](#run-from-source).
 
