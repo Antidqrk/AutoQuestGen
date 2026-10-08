@@ -1,0 +1,108 @@
+{
+  "mod": "rftoolsstorage",
+  "chain": [
+    {
+      "id": "rftoolsstorage:modular_storage",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "A searchable storage block",
+      "desc": "Place Modular Storage and open its interface. It needs a Storage Module to hold items; prepare the module before transferring a valuable collection."
+    },
+    {
+      "id": "rftoolsstorage:storage_module0",
+      "requires": [],
+      "title": "Add the first storage module",
+      "desc": "Insert a Tier 1 Storage Module into Modular Storage. Items are stored in the module, so handle a filled module as carefully as the chest contents it replaces."
+    },
+    {
+      "id": "rftoolsstorage:storage_module1",
+      "requires": [
+        "rftoolsstorage:storage_module0"
+      ],
+      "title": "Expand the module's capacity",
+      "desc": "Use the installed upgrade recipe for the next module tier. Verify that the recipe preserves contents, and move valuable items to a safe inventory first if you are unsure about pack changes."
+    },
+    {
+      "id": "rftoolsstorage:storage_module2",
+      "requires": [
+        "rftoolsstorage:storage_module1"
+      ],
+      "title": "Room for a growing collection",
+      "desc": "Upgrade the storage module when its stack capacity becomes the bottleneck. Extra capacity is useful without requiring a new network or remote-access system."
+    },
+    {
+      "id": "rftoolsstorage:storage_module3",
+      "requires": [
+        "rftoolsstorage:storage_module2"
+      ],
+      "title": "The largest normal module tier",
+      "desc": "Finish the normal storage-module ladder and reinstall the module. This guide excludes the legacy internal remote module and creative variants."
+    },
+    {
+      "id": "rftoolsstorage:storage_scanner",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "Search the chests you already own",
+      "desc": "Power a Storage Scanner, scan the intended area, and choose which inventories should be available. Test retrieval and insertion before reorganizing the whole storeroom."
+    },
+    {
+      "id": "rftoolsstorage:storage_control_module",
+      "requires": [
+        "rftoolsstorage:storage_scanner"
+      ],
+      "title": "Link a remote storage control",
+      "desc": "Bind a Storage Control Module to the intended scanner. Use it in the supported screen or tablet interface, keeping the scanner powered and available."
+    },
+    {
+      "id": "rftoolsstorage:dump_module",
+      "requires": [
+        "rftoolsstorage:storage_scanner"
+      ],
+      "title": "Put carried supplies away deliberately",
+      "desc": "Bind and configure a Dump Module for the scanner's storage. Set filters and test with expendable items before using it on a full personal inventory."
+    },
+    {
+      "id": "check:rftoolsstorage:remote_access",
+      "requires": [
+        "rftoolsstorage:storage_control_module",
+        "rftoolsbase:tablet"
+      ],
+      "title": "Test storage from your tablet",
+      "desc": "Install the linked Storage Control Module in a charged Tablet. Open the remote scanner and retrieve a test stack, then confirm this milestone when the connection works.",
+      "icon": "rftoolsstorage:storage_control_module"
+    }
+  ],
+  "sources": [
+    "https://github.com/McJtyMods/RFToolsStorage",
+    "https://www.curseforge.com/minecraft/mc-mods/rftools-storage",
+    "https://mcjty.eu/docs/mods/rftools"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Modular storage and four normal capacity tiers",
+      "Scanner for existing inventories",
+      "Remote control and filtered dumping"
+    ],
+    "limits": [
+      "Targets cached RFTools Storage 1.20-5.0.4.",
+      "storage_module6 is a legacy/internal module without a normal recipe; tablet_scanner is a configured tablet state, so neither is an acquisition objective.",
+      "The short guide reflects the actual small module, not an invented quota.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": false,
+    "cached_jar_versions": [
+      "1.20-5.0.4"
+    ]
+  },
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "verified_against": "rftools-storage.jar (cached Minecraft 1.20.1 research fixture)",
+  "item_count_in_jar": 10
+}

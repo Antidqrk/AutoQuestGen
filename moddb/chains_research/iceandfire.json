@@ -1,174 +1,178 @@
 {
- "mod": "iceandfire",
- "verified_against": "iceandfire-2.1.13-1.20.1-beta-5.jar",
- "item_count_in_jar": 435,
- "chain": [
-  {
-   "id": "iceandfire:manuscript",
-   "title": "Pages Torn From Nowhere",
-   "desc": "Manuscript pages drop from myrmex and appear in dungeon loot; three of them bind into the Bestiary."
+  "mod": "iceandfire",
+  "chain": [
+    {
+      "id": "iceandfire:manuscript",
+      "title": "Notes from Other Explorers",
+      "desc": "Gather manuscripts from your explorations. They are research material for unlocking pages in the Bestiary.",
+      "requires": []
+    },
+    {
+      "id": "iceandfire:bestiary",
+      "title": "Keep a Record of the Beasts",
+      "desc": "Make a Bestiary and study the creatures you intend to approach. Many encounters have unique counters, and some creatures can be tamed rather than killed.",
+      "requires": [
+        "iceandfire:manuscript"
+      ]
+    },
+    {
+      "id": "iceandfire:lectern",
+      "title": "A Place to Study",
+      "desc": "Place the Bestiary on a Lectern and use manuscripts to unlock more pages. Research the Dragonforge before committing to its large material cost.",
+      "requires": [
+        "iceandfire:bestiary"
+      ]
+    },
+    {
+      "id": "iceandfire:silver_ingot",
+      "title": "Equipment for the First Hunt",
+      "desc": "Gather silver and inspect the equipment recipes. Prepare armor, food and an escape route before visiting dangerous structures.",
+      "requires": [
+        "iceandfire:bestiary"
+      ]
+    },
+    {
+      "id": "kill:iceandfire:cyclops",
+      "title": "The One-Eyed Cave",
+      "desc": "Challenge a Cyclops when equipped for a heavy melee fight. Its cave is an independent expedition, not a gate to all dragon content.",
+      "requires": [
+        "iceandfire:bestiary"
+      ]
+    },
+    {
+      "id": "iceandfire:cyclops_eye",
+      "title": "A Trophy from the Cave",
+      "desc": "Recover the Cyclops Eye and inspect its use. Keep this reward separate from the fire-dragon crafting route.",
+      "requires": [
+        "kill:iceandfire:cyclops"
+      ]
+    },
+    {
+      "id": "kill:iceandfire:gorgon",
+      "title": "Never Meet Her Gaze",
+      "desc": "Research the Gorgon and prepare a blindfold before entering her temple. Her petrifying gaze makes an unprepared frontal approach dangerous.",
+      "requires": [
+        "iceandfire:bestiary"
+      ]
+    },
+    {
+      "id": "iceandfire:gorgon_head",
+      "title": "The Gorgon's Last Stare",
+      "desc": "Recover the Gorgon Head after the fight. Study its limited-use effect before spending this trophy.",
+      "requires": [
+        "kill:iceandfire:gorgon"
+      ]
+    },
+    {
+      "id": "kill:iceandfire:sea_serpent",
+      "title": "Hunt on Open Water",
+      "desc": "Prepare reliable underwater movement and breathing before challenging a Sea Serpent. Leave room to retreat from its attacks.",
+      "requires": [
+        "iceandfire:bestiary"
+      ]
+    },
+    {
+      "id": "iceandfire:sea_serpent_fang",
+      "title": "Materials of the Tide",
+      "desc": "Gather Sea Serpent Fangs and scales for aquatic equipment. This route supports ocean exploration without requiring a dragon kill.",
+      "requires": [
+        "kill:iceandfire:sea_serpent"
+      ]
+    },
+    {
+      "id": "kill:iceandfire:hydra",
+      "title": "A Many-Headed Challenge",
+      "desc": "Read the Hydra's Bestiary entry and prepare fire for the encounter. Manage the heads and regeneration rather than relying on raw damage alone.",
+      "requires": [
+        "iceandfire:bestiary"
+      ]
+    },
+    {
+      "id": "iceandfire:hydra_heart",
+      "title": "The Heart of the Marsh",
+      "desc": "Recover the Hydra Heart and study its effect. This is an optional legendary-hunt reward, separate from your Dragonforge project.",
+      "requires": [
+        "kill:iceandfire:hydra"
+      ]
+    },
+    {
+      "id": "iceandfire:dragonbone",
+      "title": "Remains of a Dragon",
+      "desc": "Recover dragon bones from skeletons or defeated dragons. Bones can start the equipment branch before you defeat a living dragon yourself.",
+      "requires": [
+        "iceandfire:bestiary"
+      ]
+    },
+    {
+      "id": "iceandfire:dragonbone_sword",
+      "title": "An Edge for the Hunt",
+      "desc": "Craft a Dragonbone Sword and prepare fire protection. Study dragon behavior before approaching a roost or underground den.",
+      "requires": [
+        "iceandfire:dragonbone"
+      ]
+    },
+    {
+      "id": "kill:iceandfire:fire_dragon",
+      "title": "Your First Fire Dragon",
+      "desc": "Defeat a Fire Dragon with a plan for its breath and flight. Afterward, choose carefully how to harvest its corpse.",
+      "requires": [
+        "iceandfire:dragonbone_sword"
+      ]
+    },
+    {
+      "id": "iceandfire:fire_dragon_blood",
+      "title": "Bottle the Dragon's Power",
+      "desc": "Use bottles on the dragon's corpse to collect blood before taking all its remains. Blood collection competes with the other harvests available from that corpse.",
+      "requires": [
+        "kill:iceandfire:fire_dragon"
+      ]
+    },
+    {
+      "id": "iceandfire:dragonforge_fire_core",
+      "title": "Build the Dragonforge",
+      "desc": "Craft the Fire Dragonforge Core and follow the Bestiary's complete multiblock diagram. A core alone does not make an operational forge.",
+      "requires": [
+        "iceandfire:lectern",
+        "iceandfire:fire_dragon_blood"
+      ]
+    },
+    {
+      "id": "iceandfire:dragonsteel_fire_ingot",
+      "title": "Breathe Life into the Forge",
+      "desc": "Operate a complete Fire Dragonforge with a suitable fire dragon and the displayed ingredients. Collect the finished ingot before starting your first dragonsteel weapon.",
+      "requires": [
+        "iceandfire:dragonforge_fire_core"
+      ]
+    },
+    {
+      "id": "iceandfire:dragonsteel_fire_sword",
+      "title": "The Dragon's Strength in Your Hand",
+      "desc": "Craft a Fire Dragonsteel Sword. Your research, dragon handling and multiblock construction now converge in a working endgame weapon.",
+      "requires": [
+        "iceandfire:dragonsteel_fire_ingot"
+      ]
+    }
+  ],
+  "collections": [],
+  "sources": [
+    "https://github.com/AlexModGuy/Ice_and_Fire"
+  ],
+  "content_revision": "2026-10-07: explicit branches, operational guidance, no collection filler",
+  "coverage": {
+    "status": "curated",
+    "scope": "Bestiary research, independent legendary hunts, and fire-dragon equipment through a working Dragonforge.",
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "verification": "installed_jar_data",
+    "checked_date": "2026-10-07",
+    "reference_version": "2.1.13-1.20.1",
+    "installed_pack_verified": true,
+    "gameplay_tested": false,
+    "limitations": "Recipe quantities, enabled content and progression settings may be changed by the installed pack.",
+    "verification_detail": "Item models, entity language identifiers, dimension data, recipes and bundled guide text where present were inspected; this is data verification, not a Minecraft playthrough."
   },
-  {
-   "id": "iceandfire:bestiary",
-   "title": "The Book That Names Monsters",
-   "desc": "The Bestiary is crafted from three manuscripts and reveals dragon den and mob knowledge in-world."
-  },
-  {
-   "id": "iceandfire:silver_ingot",
-   "title": "Pale Metal in Deep Stone",
-   "desc": "Silver ore and deepslate silver ore smelt into silver ingots, the base metal of the mod's early gear."
-  },
-  {
-   "id": "kill:iceandfire:hippogryph",
-   "title": "Talons on the Wind",
-   "desc": "Hippogryphs nest across plains and mountains and are the first real fight the mod puts in your way."
-  },
-  {
-   "id": "iceandfire:hippogryph_talon",
-   "title": "A Curved Trophy",
-   "desc": "Hippogryph talons drop on death and craft into the hippogryph sword."
-  },
-  {
-   "id": "kill:iceandfire:troll",
-   "title": "Rocks That Woke Up",
-   "desc": "Forest, frost and mountain trolls roam caves at night and hit far harder than anything vanilla at that depth."
-  },
-  {
-   "id": "iceandfire:troll_tusk",
-   "title": "Torn From the Jaw",
-   "desc": "Troll tusks drop from all three troll variants and feed the troll weapon recipes."
-  },
-  {
-   "id": "kill:iceandfire:cyclops",
-   "title": "One Eye, One Chance",
-   "desc": "Cyclopes guard beach caves stocked with stolen sheep and deal enormous melee damage."
-  },
-  {
-   "id": "iceandfire:cyclops_eye",
-   "title": "The Eye That Watched You",
-   "desc": "The cyclops eye drops on death and is a core ingredient of the dragon summoning crystals."
-  },
-  {
-   "id": "kill:iceandfire:gorgon",
-   "title": "Do Not Look Back",
-   "desc": "The gorgon lairs in her temple and petrifies anything that meets her gaze; a blindfold is the counter."
-  },
-  {
-   "id": "iceandfire:gorgon_head",
-   "title": "A Head Still Staring",
-   "desc": "The severed gorgon head can be wielded to turn other mobs to stone."
-  },
-  {
-   "id": "kill:iceandfire:sea_serpent",
-   "title": "Coils in the Cold Water",
-   "desc": "Sea serpents surface in deep oceans in seven colours and are the ocean tier of the mod."
-  },
-  {
-   "id": "iceandfire:sea_serpent_fang",
-   "title": "Salt-Bitten Ivory",
-   "desc": "Sea serpent fangs pair with serpent scales for tide armor and the tide trident."
-  },
-  {
-   "id": "kill:iceandfire:siren",
-   "title": "Wax in Your Ears",
-   "desc": "Sirens sing from ocean islands and drown anyone who listens; earplugs or a blindfold break the charm."
-  },
-  {
-   "id": "kill:iceandfire:myrmex_queen",
-   "title": "Regicide in the Hive",
-   "desc": "Desert and jungle myrmex hives are ruled by a queen whose death collapses the colony."
-  },
-  {
-   "id": "kill:iceandfire:hydra",
-   "title": "Cut One, Grow Two",
-   "desc": "The hydra lives in swamp caves and regrows every severed head unless the stumps are burned."
-  },
-  {
-   "id": "iceandfire:hydra_heart",
-   "title": "Still Beating",
-   "desc": "The hydra heart is the boss drop that grants regeneration when consumed."
-  },
-  {
-   "id": "iceandfire:dragonbone",
-   "title": "Ribs of the Fallen",
-   "desc": "Dragon bone drops from dragon skeletons and slain dragons and is the backbone of the dragon tech tree."
-  },
-  {
-   "id": "iceandfire:dragonbone_sword",
-   "title": "First Blade of Bone",
-   "desc": "Dragon bone crafts a sword above diamond, the stepping stone to the elemental blades."
-  },
-  {
-   "id": "kill:iceandfire:fire_dragon",
-   "title": "Down Comes the Red",
-   "desc": "An adult fire dragon is the mod's centrepiece kill and the only source of fire dragon blood and heart."
-  },
-  {
-   "id": "iceandfire:fire_dragon_blood",
-   "title": "Blood That Burns Cold",
-   "desc": "Fire dragon blood is the reagent that turns ordinary iron into dragonsteel."
-  },
-  {
-   "id": "iceandfire:dragonforge_fire_core",
-   "title": "A Forge That Eats Flame",
-   "desc": "Dragonforge bricks and the fire core build a forge that only a living dragon's breath can light."
-  },
-  {
-   "id": "iceandfire:dragonsteel_fire_ingot",
-   "title": "Iron Reborn in the Forge",
-   "desc": "The dragonforge cooks iron with fire dragon blood for a thousand ticks into dragonsteel fire ingots."
-  },
-  {
-   "id": "iceandfire:dragonsteel_fire_sword",
-   "title": "The Last Sword You Need",
-   "desc": "Two dragonsteel fire ingots on a witherbone haft make the strongest weapon Ice and Fire offers."
-  }
- ],
- "collections": [
-  {
-   "hub": "iceandfire:shiny_scales",
-   "members": [
-    "iceandfire:dragonscales_amythest",
-    "iceandfire:dragonscales_black",
-    "iceandfire:dragonscales_blue",
-    "iceandfire:dragonscales_bronze",
-    "iceandfire:dragonscales_copper",
-    "iceandfire:dragonscales_electric",
-    "iceandfire:dragonscales_gray",
-    "iceandfire:dragonscales_green",
-    "iceandfire:dragonscales_red",
-    "iceandfire:dragonscales_sapphire",
-    "iceandfire:dragonscales_silver",
-    "iceandfire:dragonscales_white"
-   ]
-  },
-  {
-   "hub": "iceandfire:lectern",
-   "members": [
-    "iceandfire:amphithere_skull",
-    "iceandfire:cockatrice_skull",
-    "iceandfire:cyclops_skull",
-    "iceandfire:dragon_skull_fire",
-    "iceandfire:dragon_skull_ice",
-    "iceandfire:dragon_skull_lightning",
-    "iceandfire:hippogryph_skull",
-    "iceandfire:hydra_skull",
-    "iceandfire:seaserpent_skull",
-    "iceandfire:stymphalian_skull",
-    "iceandfire:troll_skull"
-   ]
-  },
-  {
-   "hub": "iceandfire:dragon_horn",
-   "members": [
-    "iceandfire:dragonsteel_fire_ingot",
-    "iceandfire:dragonsteel_ice_ingot",
-    "iceandfire:dragonsteel_lightning_ingot",
-    "iceandfire:dragonforge_fire_core",
-    "iceandfire:dragonforge_ice_core",
-    "iceandfire:dragonforge_lightning_core"
-   ]
-  }
- ],
- "notes": "Verified against iceandfire 2.1.13-1.20.1-beta-5 (Modrinth slug 'ice-and-fire-dragons'). Item ids = assets/iceandfire/models/item stems intersected with item./block. lang keys, PLUS dragonegg_<colour> and dragonscales_<colour>, which share a single lang key each (item.iceandfire.dragonegg and .dragonscales) and so fail a naive intersection; both families were confirmed directly against IafItemRegistry. Note the block is dragonscale_<colour> (singular) while the item is dragonscales_<colour> (plural) - the scale wheel uses the item form. Entity ids come from IafEntityRegistry, not from lang: the lang file also carries variant subkeys (hippogryph.alex, pixie.type_0) and two names with no registry entry at all, dread_queen and black_frost_dragon, which were dropped. The ice and lightning branches mirror the fire branch exactly (dragonforge_<element>_core plus <element>_dragon_blood into dragonsteel_<element>_ingot, tag forge:bones/wither for the haft) and are folded into the dragonsteel wheel rather than repeated as chain steps. moddb agreement: manuscript (6 packs) and bestiary (8 packs) sit earliest, matching this chain; blindfold (6 packs, pos 0.215) is placed mid-run by moddb but is really the gorgon counter, so it is named in the gorgon step instead of getting its own. moddb entry iceandfire:dragon_seeker does not exist in this jar and was ignored."
+  "notes": "Each requires list is intentional. Empty lists are independent entry routes. Links describe guided progression or demonstrated recipe/boss gates, not an assertion that every dependency is a game-enforced lock. Runtime scanning still filters unavailable items and entities.",
+  "verified_against": "iceandfire-2.1.13-1.20.1-beta-5.jar (manifest 2.1.13-1.20.1)",
+  "item_count_in_jar": 567
 }

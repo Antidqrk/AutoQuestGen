@@ -1,207 +1,328 @@
 {
- "mod": "modularrouters",
- "verified_against": "modular-routers-12.1.1+mc1.20.1.jar",
- "item_count_in_jar": 52,
- "chain": [
-  {
-   "id": "modularrouters:blank_module",
-   "title": "Blank Module",
-   "desc": "Paper, redstone and gold nuggets, six at a time. Every module in the mod is this card plus one identifying ingredient."
-  },
-  {
-   "id": "modularrouters:modular_router",
-   "title": "Modular Router",
-   "desc": "Iron ingots and iron bars around a Blank Module. One block that holds nine modules, three upgrades, a buffer slot and a redstone mode."
-  },
-  {
-   "id": "modularrouters:blank_upgrade",
-   "title": "Blank Upgrade",
-   "desc": "Paper, lapis and gold nuggets. The second base card - modules define what a router does, upgrades define how well."
-  },
-  {
-   "id": "modularrouters:puller_module_1",
-   "title": "Puller Module Mk1",
-   "desc": "A sticky piston plus a Blank Module. It reaches into the inventory the router is facing and drags items into the buffer."
-  },
-  {
-   "id": "modularrouters:sender_module_1",
-   "title": "Sender Module Mk1",
-   "desc": "A piston plus a Blank Module. The outbound half: it pushes from the buffer into a target inventory a short distance away."
-  },
-  {
-   "id": "modularrouters:speed_upgrade",
-   "title": "Speed Upgrade",
-   "desc": "Blaze rods, gunpowder, gold and redstone around a Blank Upgrade. Routers tick slowly by default; this is the first thing you will want more of."
-  },
-  {
-   "id": "modularrouters:stack_upgrade",
-   "title": "Stack Upgrade",
-   "desc": "Bricks and stone bricks around a Blank Upgrade. Each one raises how many items a module moves per operation, from one toward a full stack."
-  },
-  {
-   "id": "modularrouters:augment_core",
-   "title": "Augment Core",
-   "desc": "One Blank Module plus one Blank Upgrade, four at a time. The third base card - augments slot into a single module instead of the router."
-  },
-  {
-   "id": "modularrouters:bulk_item_filter",
-   "title": "Bulk Item Filter",
-   "desc": "Diamonds, iron and glass around a Blank Module. Holds far more entries than a module's own filter slots and is the parent of every other filter."
-  },
-  {
-   "id": "modularrouters:detector_module",
-   "title": "Detector Module",
-   "desc": "A comparator plus a Blank Module; it makes the router emit a redstone signal based on what is in its buffer."
-  },
-  {
-   "id": "modularrouters:breaker_module",
-   "title": "Breaker Module",
-   "desc": "Break the block in front of the router and drop it into the buffer, respecting tool enchantments carried in the module's own slot."
-  },
-  {
-   "id": "modularrouters:placer_module",
-   "title": "Placer Module",
-   "desc": "A dispenser and dirt plus a Blank Module; the inverse of the breaker - it plants what is in the buffer into the world."
-  },
-  {
-   "id": "modularrouters:activator_module",
-   "title": "Activator Module",
-   "desc": "A dispenser, a lever, quartz and redstone around a Blank Module. It right-clicks for you: shearing, bonemealing, eating, firing bows."
-  },
-  {
-   "id": "modularrouters:vacuum_module",
-   "title": "Vacuum Module",
-   "desc": "A hopper and an eye of ender plus a Blank Module; it sucks loose item entities out of the air into the router."
-  },
-  {
-   "id": "modularrouters:dropper_module",
-   "title": "Dropper Module",
-   "desc": "A dropper plus a Blank Module; spit buffer contents into the world as item entities rather than into an inventory."
-  },
-  {
-   "id": "modularrouters:flinger_module",
-   "title": "Flinger Module",
-   "desc": "Gunpowder plus a Dropper Module; the same idea with force and an aim vector, which is how you shoot items across a base."
-  },
-  {
-   "id": "modularrouters:extruder_module_2",
-   "title": "Extruder Module Mk2",
-   "desc": "A wooden chest plus a Blank Module. It lays a line of blocks out from the router and can pull them back in, building and unbuilding bridges on a redstone pulse."
-  },
-  {
-   "id": "modularrouters:fluid_module",
-   "title": "Fluid Module Mk1",
-   "desc": "A cauldron and glass around a Blank Module; routers stop being item-only and start moving buckets' worth of fluid."
-  },
-  {
-   "id": "modularrouters:fluid_upgrade",
-   "title": "Fluid Upgrade",
-   "desc": "A bucket and glass around a Blank Upgrade; it raises the router's internal tank so fluid modules have somewhere to put what they pull."
-  },
-  {
-   "id": "modularrouters:energy_output_module",
-   "title": "Energy Output Module",
-   "desc": "A redstone block, gold and quartz around a Blank Module; it pushes FE out of the router into adjacent machines."
-  },
-  {
-   "id": "modularrouters:energy_upgrade",
-   "title": "Energy Upgrade",
-   "desc": "The same materials on a Blank Upgrade; it gives the router an FE buffer, which the energy modules need to have anything to push."
-  },
-  {
-   "id": "modularrouters:sender_module_2",
-   "title": "Sender Module Mk2",
-   "desc": "An ender pearl plus a Mk1 Sender. Mk2 drops the line-of-sight requirement and works to any block in range."
-  },
-  {
-   "id": "modularrouters:sender_module_3",
-   "title": "Sender Module Mk3",
-   "desc": "End stone and an ender chest plus a Mk2. Unlimited range within a dimension - this is where a router stops being a hopper and starts being a network."
-  },
-  {
-   "id": "modularrouters:distributor_module",
-   "title": "Distributor Module",
-   "desc": "A Blank Module and a Mk2 Sender; it splits one input across many targets instead of filling the first one it finds."
-  },
-  {
-   "id": "modularrouters:player_module",
-   "title": "Player Module",
-   "desc": "A wither skeleton skull, diamond helmet and chestplate with a Mk2 Puller and a Mk3 Sender. It reads and writes a named player's own inventory, ender chest or armour slots."
+  "mod": "modularrouters",
+  "verified_against": "modular-routers-12.1.1+mc1.20.1.jar",
+  "item_count_in_jar": 52,
+  "chain": [
+    {
+      "id": "modularrouters:blank_module",
+      "title": "The card behind each operation",
+      "desc": "Craft Blank Modules for the router's operations. Each specialized module performs a different job; choose the first pair around a simple transfer you can test.",
+      "requires": []
+    },
+    {
+      "id": "modularrouters:modular_router",
+      "title": "One buffer, a sequence of operations",
+      "desc": "Place a Modular Router and inspect its buffer and module slots. Modules run in their configured order, so plan how items enter the buffer and where they go next.",
+      "requires": [
+        "modularrouters:blank_module"
+      ]
+    },
+    {
+      "id": "modularrouters:puller_module_1",
+      "title": "Pull from a neighboring inventory",
+      "desc": "Configure the Puller Module's direction toward a neighboring inventory and install it. Filter the accepted items and leave enough buffer space for the transfer.",
+      "requires": [
+        "modularrouters:blank_module",
+        "modularrouters:modular_router"
+      ]
+    },
+    {
+      "id": "modularrouters:sender_module_1",
+      "title": "Send the buffered item onward",
+      "desc": "Configure a Sender Module for its intended target and install it after the pull operation. Test a small transfer before feeding the router a mixed inventory.",
+      "requires": [
+        "modularrouters:blank_module",
+        "modularrouters:modular_router"
+      ]
+    },
+    {
+      "id": "modularrouters:blank_upgrade",
+      "title": "Prepare router-wide upgrades",
+      "desc": "Craft Blank Upgrades for changes such as speed, stack transfer, or energy storage. These affect the router, while module augments affect one operation.",
+      "requires": []
+    },
+    {
+      "id": "modularrouters:speed_upgrade",
+      "title": "Increase the operation rate",
+      "desc": "Add Speed Upgrades after the basic route works. Watch the receiving inventory and module order so faster operation does not simply create a buffer jam.",
+      "requires": [
+        "modularrouters:blank_upgrade"
+      ]
+    },
+    {
+      "id": "modularrouters:stack_upgrade",
+      "title": "Move larger batches",
+      "desc": "Use Stack Upgrades to raise the amount transferred by supported item operations. Choose a batch size that fits the receiving machine's ingredient needs.",
+      "requires": [
+        "modularrouters:blank_upgrade"
+      ]
+    },
+    {
+      "id": "modularrouters:augment_core",
+      "title": "Tune one module at a time",
+      "desc": "Craft Augment Cores and choose an augment supported by the target module. Read its limits instead of assuming every augment can be installed in every operation.",
+      "requires": [
+        "modularrouters:blank_module",
+        "modularrouters:blank_upgrade"
+      ]
+    },
+    {
+      "id": "modularrouters:bulk_item_filter",
+      "title": "Filter a larger item set",
+      "desc": "Configure a Bulk Item Filter for a module that needs more filter entries. Test the allow or deny behavior before connecting it to valuable storage.",
+      "requires": [
+        "modularrouters:blank_module"
+      ]
+    },
+    {
+      "id": "modularrouters:detector_module",
+      "title": "Expose the buffer's state",
+      "desc": "Configure a Detector Module to emit the desired redstone response. Use it to signal a filled buffer or a matching item, then test both active and inactive states.",
+      "requires": [
+        "modularrouters:blank_module",
+        "modularrouters:modular_router"
+      ]
+    },
+    {
+      "id": "modularrouters:breaker_module",
+      "title": "Break a selected block",
+      "desc": "Configure the Breaker Module's direction and supported tool behavior. Test it in a small controlled space and provide a way to remove the collected item from the buffer.",
+      "requires": [
+        "modularrouters:blank_module",
+        "modularrouters:modular_router"
+      ]
+    },
+    {
+      "id": "modularrouters:placer_module",
+      "title": "Place a block from the buffer",
+      "desc": "Configure a Placer Module and supply the desired placeable item. Pair it with deliberate redstone control or filtering so it cannot consume unrelated building materials.",
+      "requires": [
+        "modularrouters:blank_module",
+        "modularrouters:modular_router"
+      ]
+    },
+    {
+      "id": "modularrouters:activator_module",
+      "title": "Perform a controlled interaction",
+      "desc": "Configure an Activator Module for the intended click, direction, and held item. Check permissions and any configured energy cost, then test one interaction before automating a farm.",
+      "requires": [
+        "modularrouters:blank_module",
+        "modularrouters:modular_router"
+      ]
+    },
+    {
+      "id": "modularrouters:vacuum_module",
+      "title": "Collect nearby dropped items",
+      "desc": "Set the Vacuum Module's range and filter. Route collected items out of the buffer so a single unwanted drop cannot block the collection system.",
+      "requires": [
+        "modularrouters:blank_module",
+        "modularrouters:modular_router"
+      ]
+    },
+    {
+      "id": "modularrouters:dropper_module",
+      "title": "Release an item into the world",
+      "desc": "Use a Dropper Module when the next process needs an item entity instead of inventory insertion. Control the destination area and pickup behavior.",
+      "requires": [
+        "modularrouters:blank_module",
+        "modularrouters:modular_router"
+      ]
+    },
+    {
+      "id": "modularrouters:flinger_module",
+      "title": "Aim a longer item throw",
+      "desc": "Configure the Flinger Module's direction and force, then test with expendable items. Provide a reliable receiving area before sending valuable resources across the room.",
+      "requires": [
+        "modularrouters:dropper_module"
+      ]
+    },
+    {
+      "id": "modularrouters:extruder_module_2",
+      "title": "A retractable virtual structure",
+      "desc": "Configure the Mk2 Extruder's template for a door, bridge, or similar structure. Its virtual blocks are temporary and drop no normal building material, so it is not a source of free blocks.",
+      "requires": [
+        "modularrouters:blank_module",
+        "modularrouters:modular_router"
+      ]
+    },
+    {
+      "id": "modularrouters:fluid_module",
+      "title": "A separate fluid-transfer route",
+      "desc": "Configure the Fluid Module and the supported fluid container in the router's buffer. Match source, destination, and transfer direction before joining a production line.",
+      "requires": [
+        "modularrouters:blank_module",
+        "modularrouters:modular_router"
+      ]
+    },
+    {
+      "id": "modularrouters:fluid_upgrade",
+      "title": "Increase fluid transfer throughput",
+      "desc": "Add Fluid Transfer Upgrades to improve supported fluid-module throughput. These upgrades increase transfer rate; they do not create an internal fluid tank.",
+      "requires": [
+        "modularrouters:blank_upgrade",
+        "modularrouters:fluid_module"
+      ]
+    },
+    {
+      "id": "modularrouters:energy_output_module",
+      "title": "Send energy to a neighboring machine",
+      "desc": "Configure the output direction and supply energy through a supported charged buffer item or the router's upgraded internal energy buffer. The module transfers energy rather than generating it.",
+      "requires": [
+        "modularrouters:blank_module",
+        "modularrouters:modular_router"
+      ]
+    },
+    {
+      "id": "modularrouters:energy_upgrade",
+      "title": "Add an internal energy buffer",
+      "desc": "Install an Energy Upgrade to give the router internal energy storage. Connect an actual energy source, then use compatible modules to distribute the stored energy.",
+      "requires": [
+        "modularrouters:blank_upgrade"
+      ]
+    },
+    {
+      "id": "modularrouters:sender_module_2",
+      "title": "Select a target beyond the first route",
+      "desc": "Bind a Mk2 Sender to the intended inventory within its supported range. It removes the Mk1 line-of-sight limitation, but the target and inventory side still need correct configuration.",
+      "requires": [
+        "modularrouters:sender_module_1"
+      ]
+    },
+    {
+      "id": "modularrouters:puller_module_2",
+      "requires": [
+        "modularrouters:puller_module_1"
+      ],
+      "title": "Pull from a selected remote inventory",
+      "desc": "Bind the Mk2 Puller and configure its side and filter. Test the requested items before connecting it to a large shared storage inventory."
+    },
+    {
+      "id": "modularrouters:sender_module_3",
+      "title": "A route across any distance",
+      "desc": "Bind the Mk3 Sender to the intended inventory, including another dimension if required. The destination must remain loaded; Modular Routers does not automatically load it for this module.",
+      "requires": [
+        "modularrouters:sender_module_2"
+      ]
+    },
+    {
+      "id": "modularrouters:distributor_module",
+      "title": "Share a supply between targets",
+      "desc": "Configure the Distributor's target list and distribution behavior. Test how it handles a full inventory before using it to feed parallel machines.",
+      "requires": [
+        "modularrouters:sender_module_2"
+      ]
+    },
+    {
+      "id": "modularrouters:player_module",
+      "title": "A deliberate player-inventory route",
+      "desc": "Configure the target player, inventory section, direction, and filters. Start with a harmless test item so automated restocking or deposit only moves the items you intended.",
+      "requires": [
+        "modularrouters:puller_module_2",
+        "modularrouters:sender_module_3"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "hub": "modularrouters:player_module",
+      "members": [
+        "modularrouters:activator_module",
+        "modularrouters:breaker_module",
+        "modularrouters:placer_module",
+        "modularrouters:dropper_module",
+        "modularrouters:flinger_module",
+        "modularrouters:vacuum_module",
+        "modularrouters:void_module",
+        "modularrouters:detector_module",
+        "modularrouters:extruder_module_1",
+        "modularrouters:extruder_module_2",
+        "modularrouters:distributor_module",
+        "modularrouters:energy_distributor_module",
+        "modularrouters:energy_output_module"
+      ]
+    },
+    {
+      "hub": "modularrouters:sender_module_3",
+      "members": [
+        "modularrouters:sender_module_1",
+        "modularrouters:sender_module_2",
+        "modularrouters:puller_module_1",
+        "modularrouters:puller_module_2",
+        "modularrouters:fluid_module",
+        "modularrouters:fluid_module_2",
+        "modularrouters:blank_module",
+        "modularrouters:modular_router"
+      ]
+    },
+    {
+      "hub": "modularrouters:speed_upgrade",
+      "members": [
+        "modularrouters:blank_upgrade",
+        "modularrouters:stack_upgrade",
+        "modularrouters:fluid_upgrade",
+        "modularrouters:energy_upgrade",
+        "modularrouters:security_upgrade",
+        "modularrouters:sync_upgrade",
+        "modularrouters:muffler_upgrade",
+        "modularrouters:blast_upgrade",
+        "modularrouters:camouflage_upgrade"
+      ]
+    },
+    {
+      "hub": "modularrouters:augment_core",
+      "members": [
+        "modularrouters:fast_pickup_augment",
+        "modularrouters:filter_round_robin_augment",
+        "modularrouters:mimic_augment",
+        "modularrouters:pickup_delay_augment",
+        "modularrouters:pushing_augment",
+        "modularrouters:range_up_augment",
+        "modularrouters:range_down_augment",
+        "modularrouters:redstone_augment",
+        "modularrouters:regulator_augment",
+        "modularrouters:stack_augment",
+        "modularrouters:xp_vacuum_augment"
+      ]
+    },
+    {
+      "hub": "modularrouters:bulk_item_filter",
+      "members": [
+        "modularrouters:inspection_filter",
+        "modularrouters:mod_filter",
+        "modularrouters:regex_filter",
+        "modularrouters:tag_filter",
+        "modularrouters:blank_module",
+        "modularrouters:detector_module"
+      ]
+    }
+  ],
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "sources": [
+    "https://github.com/desht/ModularRouters",
+    "https://github.com/desht/ModularRouters/wiki"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Buffer and module ordering",
+      "Parallel item, world, fluid, and energy operations",
+      "Targeted upgrades and filters",
+      "Remote routing and player inventory"
+    ],
+    "limits": [
+      "Targets cached Modular Routers 12.1.1+mc1.20.1.",
+      "Some packs change module energy costs and fake-player permissions.",
+      "Mk2 extruder blocks are virtual; the Fluid Upgrade changes transfer rate rather than adding a tank.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": false,
+    "cached_jar_versions": [
+      "12.1.1+mc1.20.1"
+    ]
   }
- ],
- "collections": [
-  {
-   "hub": "modularrouters:player_module",
-   "members": [
-    "modularrouters:activator_module",
-    "modularrouters:breaker_module",
-    "modularrouters:placer_module",
-    "modularrouters:dropper_module",
-    "modularrouters:flinger_module",
-    "modularrouters:vacuum_module",
-    "modularrouters:void_module",
-    "modularrouters:detector_module",
-    "modularrouters:extruder_module_1",
-    "modularrouters:extruder_module_2",
-    "modularrouters:distributor_module",
-    "modularrouters:energy_distributor_module",
-    "modularrouters:energy_output_module"
-   ]
-  },
-  {
-   "hub": "modularrouters:sender_module_3",
-   "members": [
-    "modularrouters:sender_module_1",
-    "modularrouters:sender_module_2",
-    "modularrouters:puller_module_1",
-    "modularrouters:puller_module_2",
-    "modularrouters:fluid_module",
-    "modularrouters:fluid_module_2",
-    "modularrouters:blank_module",
-    "modularrouters:modular_router"
-   ]
-  },
-  {
-   "hub": "modularrouters:speed_upgrade",
-   "members": [
-    "modularrouters:blank_upgrade",
-    "modularrouters:stack_upgrade",
-    "modularrouters:fluid_upgrade",
-    "modularrouters:energy_upgrade",
-    "modularrouters:security_upgrade",
-    "modularrouters:sync_upgrade",
-    "modularrouters:muffler_upgrade",
-    "modularrouters:blast_upgrade",
-    "modularrouters:camouflage_upgrade"
-   ]
-  },
-  {
-   "hub": "modularrouters:augment_core",
-   "members": [
-    "modularrouters:fast_pickup_augment",
-    "modularrouters:filter_round_robin_augment",
-    "modularrouters:mimic_augment",
-    "modularrouters:pickup_delay_augment",
-    "modularrouters:pushing_augment",
-    "modularrouters:range_up_augment",
-    "modularrouters:range_down_augment",
-    "modularrouters:redstone_augment",
-    "modularrouters:regulator_augment",
-    "modularrouters:stack_augment",
-    "modularrouters:xp_vacuum_augment"
-   ]
-  },
-  {
-   "hub": "modularrouters:bulk_item_filter",
-   "members": [
-    "modularrouters:inspection_filter",
-    "modularrouters:mod_filter",
-    "modularrouters:regex_filter",
-    "modularrouters:tag_filter",
-    "modularrouters:blank_module",
-    "modularrouters:detector_module"
-   ]
-  }
- ],
- "notes": "THE MODULES ARE THE CONTENT. There is exactly ONE block in this mod - modularrouters:modular_router - and 51 cards. A router does nothing until you put modules in it, so the whole progression is horizontal: three base cards (blank_module, blank_upgrade, augment_core) fan out into 20 modules, 10 upgrades, 12 augments and 5 filters. The chain quests the base cards and the modules that unlock genuinely new verbs; the wheels carry the families. 50 of 52 items are quested; the other 2 are dropped as unobtainable. TWO RECIPES ARE REGISTERED IN CODE AND WOULD BE MISSED BY A JSON-RESULT SCAN. data/modularrouters/recipes/breaker_module.json and extruder_module_1.json contain nothing but {\"type\": \"modularrouters:<item>\", \"category\": \"misc\"} - the ingredients and the result live in a custom recipe serializer named after the item, so a scanner looking for a 'result' key finds none and would wrongly mark both unobtainable. Both ARE craftable; the JSON file plus the matching serializer is the proof. extruder_module_1 is placed in the module wheel and breaker_module in the chain on that basis, and the breaker's description avoids naming a shape because the jar does not contain one. DROPPED AS UNOBTAINABLE: modularrouters:creative_module - modelled and named ('Creative Module', backed by CreativeModule.class) but there is no recipe anywhere in the jar; it is a creative-tab item. modularrouters:override_card - modelled and named 'Security Override Card' with no recipe, no loot table and no class of its own; it is an operator item handed out by command. NOT ITEMS, correctly excluded: modularrouters:manual has an item model and a texture but NO item.modularrouters.manual lang key - the only manual strings are modularrouters.patchouli.book.name / .landing, so the in-game manual is a patchouli:guide_book with NBT and the model is only its icon; questing 'modularrouters:manual' would be uncompletable. modularrouters:template_frame has a blockstate, a block model, a block lang key and TemplateFrameBlock.class but no item model and no recipe - it is the ghost block the Extruder Module places, not something you can hold. modularrouters:distributor_module_pull is a predicate override model on the distributor. A NAIVE LANG PASS ALSO OVERCOUNTS: item.modularrouters.range_upgrade and item.modularrouters.rangedown_upgrade are stale keys with no model, no class and no recipe - the live items are range_up_augment and range_down_augment. VERIFICATION: pass 1 strict models INTERSECT lang gave 52. Pass 2 re-derived the set independently from .class constant-pool strings, item textures, blockstates, recipe results and loot tables - all 52 corroborated; the only thing pass 2 surfaced that pass 1 had not claimed was template_frame, correctly excluded above. NO CONSENSUS DATA: moddb.json has no modularrouters entry, so ordering is the recipe dependency graph alone (blank_module -> router; the Mk1/Mk2/Mk3 sender and Mk1/Mk2 puller lines each consume the tier below; player_module genuinely consumes puller_module_2 AND sender_module_3, which is why it is last). Jar confirmed 1.20.1 Forge: META-INF/mods.toml, modId modularrouters, version 12.1.1+mc1.20.1, minecraft versionRange [1.20.1,), Java 17 class files, no fabric.mod.json."
 }

@@ -1,0 +1,122 @@
+{
+  "mod": "hostilenetworks",
+  "verified_against": "hostile-neural-networks.jar",
+  "chain": [
+    {
+      "id": "hostilenetworks:blank_data_model",
+      "title": "A Model Waiting for a Subject",
+      "desc": "Craft a Model Framework. Choose a creature that this pack supports before approaching it; not every entity has a data model.",
+      "requires": []
+    },
+    {
+      "id": "hostilenetworks:deep_learner",
+      "title": "Carry Your Field Laboratory",
+      "desc": "The Deep Learner holds the models you are training. Keep it with you during the matching encounters and inspect the model information before a hunt.",
+      "requires": []
+    },
+    {
+      "id": "check:hostilenetworks:attune_model",
+      "title": "Record Your First Specimen",
+      "desc": "Use the Model Framework on a supported creature to make its data model. If this pack disables attunement, follow its model recipe instead. Confirm once you have a real model.",
+      "requires": [
+        "hostilenetworks:blank_data_model"
+      ],
+      "icon": "hostilenetworks:blank_data_model"
+    },
+    {
+      "id": "check:hostilenetworks:train_basic",
+      "title": "A Model Ready for Simulation",
+      "desc": "Place the model in your Deep Learner and defeat matching creatures yourself. Watch its progress until it reaches Basic or better; a Faulty model cannot run simulations. Confirm after the tier changes.",
+      "requires": [
+        "hostilenetworks:deep_learner",
+        "check:hostilenetworks:attune_model"
+      ],
+      "icon": "hostilenetworks:deep_learner"
+    },
+    {
+      "id": "hostilenetworks:prediction_matrix",
+      "title": "A Supply of Blank Predictions",
+      "desc": "Craft Prediction Matrices for the Simulation Chamber. Set aside a supply for repeated cycles rather than treating the first matrix as the finished production line.",
+      "requires": []
+    },
+    {
+      "id": "hostilenetworks:sim_chamber",
+      "title": "A Battlefield in a Box",
+      "desc": "Build a Simulation Chamber and connect an energy supply. Its energy demand depends on the selected model, so inspect the displayed cost before choosing your generator.",
+      "requires": []
+    },
+    {
+      "id": "check:hostilenetworks:first_simulation",
+      "title": "Run the First Simulation",
+      "desc": "Insert your Basic-or-better model and Prediction Matrices into the powered chamber. Keep the output slots clear and wait for a completed cycle, then confirm this milestone.",
+      "requires": [
+        "hostilenetworks:sim_chamber",
+        "hostilenetworks:prediction_matrix",
+        "check:hostilenetworks:train_basic"
+      ],
+      "icon": "hostilenetworks:sim_chamber"
+    },
+    {
+      "id": "hostilenetworks:loot_fabricator",
+      "title": "Turn Predictions into Supplies",
+      "desc": "Build a Loot Fabricator and connect energy. It turns a creature-specific prediction into a selected supported reward; a generalized dimension prediction is a different material.",
+      "requires": [
+        "check:hostilenetworks:first_simulation"
+      ]
+    },
+    {
+      "id": "check:hostilenetworks:first_loot",
+      "title": "Choose What the Factory Makes",
+      "desc": "Run enough simulations to obtain a creature-specific prediction. Put it in the Loot Fabricator, choose an available output and collect the result. Confirm after producing the resource you chose.",
+      "requires": [
+        "hostilenetworks:loot_fabricator"
+      ],
+      "icon": "hostilenetworks:loot_fabricator"
+    },
+    {
+      "id": "check:hostilenetworks:automated_line",
+      "title": "A Reliable Loot Supply",
+      "desc": "Arrange matrix input, energy delivery and output collection so the chamber and fabricator can repeat without blocked slots. Confirm after several successful cycles with your chosen model.",
+      "requires": [
+        "check:hostilenetworks:first_loot"
+      ],
+      "icon": "hostilenetworks:sim_chamber"
+    },
+    {
+      "id": "check:hostilenetworks:self_aware",
+      "title": "Know the Enemy",
+      "desc": "Continue developing a supported model until its displayed tier reaches Self Aware. Follow the model progress shown by this pack; this milestone confirms the tier manually.",
+      "requires": [
+        "check:hostilenetworks:first_simulation"
+      ],
+      "icon": "hostilenetworks:deep_learner"
+    },
+    {
+      "id": "check:hostilenetworks:research_network",
+      "title": "A Network That Pays Off",
+      "desc": "Run a stable loot line with an advanced model and stocked matrices. Keep room for both simulation outputs and choose a resource your other projects need. Confirm when the line is working.",
+      "requires": [
+        "check:hostilenetworks:automated_line",
+        "check:hostilenetworks:self_aware"
+      ],
+      "icon": "hostilenetworks:loot_fabricator"
+    }
+  ],
+  "sources": [
+    "https://github.com/Shadows-of-Fire/Hostile-Neural-Networks"
+  ],
+  "notes": "Original operational guidance verified against local item models, recipes and English tooltips. No pack-authored prose copied.",
+  "content_revision": "2026-10-07: explicit branches and usable build milestones",
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored opening-to-advanced milestones with independent side branches.",
+    "limits": [
+      "Model type, tier and prediction variants use item data. Training and functioning production lines are explicit manual checks, not generic-item substitutes.",
+      "Available creature models and attunement rules depend on the installed pack. The guide does not require an absent boss model."
+    ],
+    "verification": "Local cached JAR data and primary project source. Not a new survival playthrough."
+  }
+}

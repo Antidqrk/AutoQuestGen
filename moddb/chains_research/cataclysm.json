@@ -1,162 +1,217 @@
 {
   "mod": "cataclysm",
-  "verified_against": "L_Enders_Cataclysm-3.31.jar",
-  "item_count_in_jar": 282,
   "chain": [
     {
       "id": "kill:cataclysm:ender_golem",
-      "title": "Palette Swap in the Citadel",
-      "desc": "Ender Golems patrol the Ruined Citadel and drop a Void Core on death."
+      "title": "A Guardian in the End",
+      "desc": "Explore a Ruined Citadel and defeat an Ender Golem. Recover its Void Core for a weapon project that will eventually join this route to the Nether.",
+      "requires": []
     },
     {
       "id": "cataclysm:void_core",
-      "title": "A Splinter of the Void",
-      "desc": "The Void Core is the Ender Golem's only drop and can be right-clicked to summon Void Runes."
-    },
-    {
-      "id": "kill:cataclysm:netherite_monstrosity",
-      "title": "The Nether's Broken Warmachine",
-      "desc": "The Netherite Monstrosity is summoned in the Soul Blacksmith and is the mod's entry-tier boss."
-    },
-    {
-      "id": "cataclysm:monstrous_horn",
-      "title": "Torn From the Colossus",
-      "desc": "The Monstrous Horn drops from the Netherite Monstrosity alongside the Infernal Forge."
-    },
-    {
-      "id": "cataclysm:monstrous_helm",
-      "title": "Wearing the Beast's Skull",
-      "desc": "Smithing a Monstrous Horn onto a netherite helmet knocks nearby entities back when you fall below half health."
-    },
-    {
-      "id": "cataclysm:infernal_forge",
-      "title": "The Hammer That Was a Pickaxe",
-      "desc": "The Infernal Forge is a Netherite Monstrosity drop that deals area damage on right-click and still mines like a pickaxe."
-    },
-    {
-      "id": "kill:cataclysm:the_harbinger",
-      "title": "Out-of-Place Machinery",
-      "desc": "The Harbinger sleeps in the Ancient Factory and fights with laser beams and a flight phase."
-    },
-    {
-      "id": "cataclysm:witherite_ingot",
-      "title": "Salvage From the Factory Floor",
-      "desc": "The Harbinger drops a Witherite Block, which unpacks into nine Witherite Ingots."
-    },
-    {
-      "id": "cataclysm:wither_assault_shoulder_weapon",
-      "title": "Shoulder-Mounted Artillery",
-      "desc": "Built from Witherite, gunpowder and a redstone block, it fires Wither Missiles and sneak-fires Wither Howitzers."
+      "title": "Recover the Void Core",
+      "desc": "Collect the Ender Golem's Void Core. Keep it for a later weapon-fusion project instead of treating it as an interchangeable crafting ingot.",
+      "requires": [
+        "kill:cataclysm:ender_golem"
+      ]
     },
     {
       "id": "kill:cataclysm:ender_guardian",
-      "title": "Wasn't That a Shulker?",
-      "desc": "The Ender Guardian seals the Ruined Citadel and answers gravity-pull grabs with a brutal second phase."
+      "title": "At the Citadel's Heart",
+      "desc": "Prepare for the Ender Guardian deeper in the Ruined Citadel. Read its attack openings and defeat it for the gauntlet branch.",
+      "requires": [
+        "kill:cataclysm:ender_golem"
+      ]
     },
     {
       "id": "cataclysm:gauntlet_of_guard",
-      "title": "The Hand That Pulls",
-      "desc": "The Gauntlet of Guard is the Ender Guardian's signature drop and yanks entities toward you on right-click."
+      "title": "The Guardian's Gauntlet",
+      "desc": "Recover the Gauntlet of Guard. This weapon will later combine with a desert boss reward at the Mechanical Fusion Anvil.",
+      "requires": [
+        "kill:cataclysm:ender_guardian"
+      ]
+    },
+    {
+      "id": "kill:cataclysm:netherite_monstrosity",
+      "title": "The Nether's Foundry",
+      "desc": "Find the Soul Blacksmith structure and challenge the Netherite Monstrosity. Bring protection against the furnace hazards and leave space to dodge its attacks.",
+      "requires": []
+    },
+    {
+      "id": "cataclysm:monstrous_horn",
+      "title": "A Horn from the Furnace",
+      "desc": "Collect the Monstrous Horn and inspect the Monstrous Helm recipe. This drop starts an armor upgrade alongside the Infernal Forge weapon route.",
+      "requires": [
+        "kill:cataclysm:netherite_monstrosity"
+      ]
+    },
+    {
+      "id": "cataclysm:monstrous_helm",
+      "title": "Armor from the Monstrosity",
+      "desc": "Craft the Monstrous Helm using the installed recipe. Try its protection before deciding which other bosses to tackle.",
+      "requires": [
+        "cataclysm:monstrous_horn"
+      ]
+    },
+    {
+      "id": "cataclysm:infernal_forge",
+      "title": "Bring the Forge Home",
+      "desc": "Recover the Infernal Forge from the Monstrosity. Keep it intact if you plan to fuse it with a Void Core later.",
+      "requires": [
+        "kill:cataclysm:netherite_monstrosity"
+      ]
+    },
+    {
+      "id": "kill:cataclysm:the_harbinger",
+      "title": "Wake the Ancient Machine",
+      "desc": "Explore an Ancient Factory and prepare the Harbinger encounter. Bring its activation item and combat supplies shown by the installed mod's guide and recipes.",
+      "requires": []
+    },
+    {
+      "id": "cataclysm:witherite_ingot",
+      "title": "Salvage the Harbinger",
+      "desc": "Recover Witherite Ingots from the Harbinger. They open an equipment branch and the workstation needed for weapon fusion.",
+      "requires": [
+        "kill:cataclysm:the_harbinger"
+      ]
+    },
+    {
+      "id": "cataclysm:mechanical_fusion_anvil",
+      "title": "A Place to Combine Victories",
+      "desc": "Craft a Mechanical Fusion Anvil with Witherite. Unlike an ordinary anvil, this workstation performs the mod's weapon-fusion recipes.",
+      "requires": [
+        "cataclysm:witherite_ingot"
+      ]
     },
     {
       "id": "cataclysm:void_forge",
-      "title": "Reforged in Nothing",
-      "desc": "Fusing a Void Core into the Infernal Forge produces a pickaxe that fires Void Runes in a fan."
+      "title": "Join End and Nether",
+      "desc": "Fuse the Infernal Forge with a Void Core at the Mechanical Fusion Anvil. Two independent boss routes now contribute to one weapon.",
+      "requires": [
+        "cataclysm:mechanical_fusion_anvil",
+        "cataclysm:infernal_forge",
+        "cataclysm:void_core"
+      ]
     },
     {
-      "id": "cataclysm:void_assault_shoulder_weapon",
-      "title": "Howitzers of the End",
-      "desc": "Fusing a Void Core into the Wither Assault Shoulder Weapon upgrades its payload to Void Howitzers."
+      "id": "cataclysm:desert_eye",
+      "title": "Search the Sands",
+      "desc": "Use a Desert Eye to locate the desert expedition. Prepare to explore the Cursed Pyramid rather than requiring another unrelated boss first.",
+      "requires": []
     },
     {
       "id": "kill:cataclysm:ancient_remnant",
-      "title": "Death Finds a Way",
-      "desc": "Digging the suspicious sand inside the Cursed Pyramid wakes the Ancient Remnant."
+      "title": "The Buried Sovereign",
+      "desc": "Explore the Cursed Pyramid, prepare its awakening requirements and defeat the Ancient Remnant. Recover the Sandstorm in a Bottle for the gauntlet branch.",
+      "requires": [
+        "cataclysm:desert_eye"
+      ]
     },
     {
       "id": "cataclysm:sandstorm_in_a_bottle",
-      "title": "Bottled Desert Fury",
-      "desc": "The Ancient Remnant drops this bottle, which summons two orbiting sandstorms around you."
+      "title": "A Captured Sandstorm",
+      "desc": "Claim the Sandstorm in a Bottle from the desert boss. This is the missing fusion component for the Gauntlet of Maelstrom.",
+      "requires": [
+        "kill:cataclysm:ancient_remnant"
+      ]
     },
     {
       "id": "cataclysm:gauntlet_of_maelstrom",
-      "title": "Vortex in the Fist",
-      "desc": "Fusing Sandstorm in a Bottle into the Gauntlet of Guard lets it summon a Void Vortex."
+      "title": "Citadel Meets Pyramid",
+      "desc": "Fuse the Gauntlet of Guard with the Sandstorm in a Bottle. This goal joins the End and desert routes through a real recipe.",
+      "requires": [
+        "cataclysm:mechanical_fusion_anvil",
+        "cataclysm:gauntlet_of_guard",
+        "cataclysm:sandstorm_in_a_bottle"
+      ]
+    },
+    {
+      "id": "cataclysm:burning_ashes",
+      "title": "Prepare the Burning Arena",
+      "desc": "Gather Dying Embers and make Burning Ashes. Use them at the Burning Altar when you are ready to summon Ignis.",
+      "requires": []
     },
     {
       "id": "kill:cataclysm:ignis",
-      "title": "The Extinguished Fire",
-      "desc": "Ignis must be summoned in the Burning Arena and is widely rated the mod's hardest fight."
+      "title": "The Burning Duel",
+      "desc": "Summon Ignis at the Burning Altar and defeat it. Prepare for a long close-range duel before spending the summoning material.",
+      "requires": [
+        "cataclysm:burning_ashes"
+      ]
     },
     {
       "id": "cataclysm:ignitium_ingot",
-      "title": "Metal From a Dead Sun",
-      "desc": "Ignitium Ingots drop only from Ignis and upgrade netherite armour through a smithing template."
+      "title": "Metal from Ignis",
+      "desc": "Recover Ignitium Ingots for the Ignitium armor branch. Keep enough material for the pieces you intend to upgrade.",
+      "requires": [
+        "kill:cataclysm:ignis"
+      ]
     },
     {
       "id": "cataclysm:ignitium_elytra_chestplate",
-      "title": "Wings of the Burning Arena",
-      "desc": "Fusing an Elytra into an Ignitium Chestplate merges flight and fire-tier armour into one slot."
+      "title": "Armor for the Final Flight",
+      "desc": "Use the installed upgrade recipe to combine endgame protection with flight. Gather the required armor and elytra before starting.",
+      "requires": [
+        "cataclysm:ignitium_ingot"
+      ]
+    },
+    {
+      "id": "cataclysm:abyssal_sacrifice",
+      "title": "An Offering to the Depths",
+      "desc": "Assemble an Abyssal Sacrifice and prepare underwater breathing and movement. Bring the offering to the Sunken City's altar.",
+      "requires": []
     },
     {
       "id": "kill:cataclysm:the_leviathan",
-      "title": "A Multidimensional Predator",
-      "desc": "The Leviathan is summoned in the Sunken City and is invincible outside of water."
+      "title": "Beneath the Sunken City",
+      "desc": "Use the sacrifice at the Altar of Abyss and defeat the Leviathan. This aquatic expedition is independent of the desert and Nether routes.",
+      "requires": [
+        "cataclysm:abyssal_sacrifice"
+      ]
     },
     {
       "id": "cataclysm:tidal_claws",
-      "title": "Grapple of the Deep",
-      "desc": "The Leviathan's drop fires a grappling hook on right-click and a damaging tentacle on left-click."
+      "title": "Claim the Tides",
+      "desc": "Recover the Tidal Claws after the Leviathan encounter. Test their movement and attack utility before your next expedition.",
+      "requires": [
+        "kill:cataclysm:the_leviathan"
+      ]
     },
     {
       "id": "kill:cataclysm:maledictus",
-      "title": "Crusade Against the Curse",
-      "desc": "Maledictus is summoned at the Cursed Tombstone inside the Frosted Prison."
+      "title": "The Cursed Arena",
+      "desc": "Find a Frosted Prison and prepare for Maledictus. Its attacks reward watching the arena rather than rushing straight into the boss.",
+      "requires": []
     },
     {
       "id": "cataclysm:cursium_chestplate",
-      "title": "Armour That Refuses the Blow",
-      "desc": "Cursium armour is smithed from Maledictus' ingots and can outright ignore incoming attacks."
-    },
-    {
-      "id": "kill:cataclysm:scylla",
-      "title": "The Calm After the Storm",
-      "desc": "Scylla the Storm Empress rules the sky-borne Acropolis and completes the Cataclysmfarer gauntlet."
-    }
-  ],
-  "collections": [
-    {
-      "hub": "cataclysm:music_disc_the_cataclysmfarer",
-      "members": [
-        "cataclysm:music_disc_netherite_monstrosity",
-        "cataclysm:music_disc_ender_guardian",
-        "cataclysm:music_disc_the_harbinger",
-        "cataclysm:music_disc_ancient_remnant",
-        "cataclysm:music_disc_ignis",
-        "cataclysm:music_disc_the_leviathan",
-        "cataclysm:music_disc_maledictus",
-        "cataclysm:music_disc_scylla"
-      ]
-    },
-    {
-      "hub": "cataclysm:mechanical_fusion_anvil",
-      "members": [
-        "cataclysm:the_annihilator",
-        "cataclysm:the_immolator",
-        "cataclysm:the_incinerator",
-        "cataclysm:soul_render",
-        "cataclysm:zweiender",
-        "cataclysm:khopesh",
-        "cataclysm:ancient_spear",
-        "cataclysm:coral_bardiche",
-        "cataclysm:laser_gatling",
-        "cataclysm:meat_shredder",
-        "cataclysm:cursed_bow",
-        "cataclysm:wrath_of_the_desert",
-        "cataclysm:astrape",
-        "cataclysm:ceraunus"
+      "title": "A Cursed Trophy Reforged",
+      "desc": "Gather the Maledictus encounter's materials and craft a Cursium Chestplate using the installed recipe. This finishes a separate high-level armor route.",
+      "requires": [
+        "kill:cataclysm:maledictus"
       ]
     }
   ],
-  "notes": "Verified against L_Enders_Cataclysm-3.31.jar: 282 ids appear both as assets/cataclysm/models/item/*.json and as item./block. lang keys. Boss roster confirmed from data/cataclysm/advancements/kill_all_bosses.json, which requires netherite_monstrosity, ender_guardian, the_harbinger, ancient_remnant, ignis, the_leviathan, maledictus and scylla - all eight exist in this jar and all are used. Every drop claim is taken from data/cataclysm/loot_tables/entities/*.json and every fusion claim from data/cataclysm/recipes/weapon_infusion/*.json. Ordering follows the advancement parent tree (find_<structure> -> kill_<boss>) plus community difficulty guides: Netherite Monstrosity is documented as the first boss, Ignis and Scylla as the last. IDS DROPPED: cataclysm:cursium_upgrade_smithing_template (referenced by the cursium smithing recipes but has no assets/cataclysm/models/item entry in this jar, so it fails the set-membership check); cataclysm:barako and cataclysm:the_cataclysmfarer as entities (no entity.cataclysm.* lang key - 'the_cataclysmfarer' exists only as a music disc). No boss listed in the task brief was missing: all seven named bosses plus Scylla are present."
+  "collections": [],
+  "sources": [
+    "https://www.curseforge.com/minecraft/mc-mods/lendercataclysm"
+  ],
+  "content_revision": "2026-10-07: explicit branches, operational guidance, no collection filler",
+  "coverage": {
+    "status": "curated",
+    "scope": "Independent boss expeditions, summon preparation, and genuine multi-boss weapon-fusion goals.",
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "verification": "installed_jar_data",
+    "checked_date": "2026-10-07",
+    "reference_version": "3.31",
+    "installed_pack_verified": true,
+    "gameplay_tested": false,
+    "limitations": "Boss availability and summon items vary by Cataclysm version. Data checked against 3.31; unsupported newer encounters are omitted. Named locations are guidance, not fabricated structure-detection tasks.",
+    "verification_detail": "Item models, entity language identifiers, dimension data, recipes and bundled guide text where present were inspected; this is data verification, not a Minecraft playthrough."
+  },
+  "notes": "Each requires list is intentional. Empty lists are independent entry routes. Links describe guided progression or demonstrated recipe/boss gates, not an assertion that every dependency is a game-enforced lock. Runtime scanning still filters unavailable items and entities.",
+  "verified_against": "L_Enders_Cataclysm-3.31.jar (manifest 3.31)",
+  "item_count_in_jar": 301
 }

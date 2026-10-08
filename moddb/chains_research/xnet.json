@@ -1,0 +1,173 @@
+{
+  "mod": "xnet",
+  "chain": [
+    {
+      "id": "xnet:netcable_blue",
+      "requires": [],
+      "title": "Choose a local cable network",
+      "desc": "Craft networking cable and keep each local network's cable color consistent. Different colors can help separate adjacent networks without changing what resources a channel carries."
+    },
+    {
+      "id": "xnet:connector_blue",
+      "requires": [
+        "xnet:netcable_blue"
+      ],
+      "title": "Attach a machine to the network",
+      "desc": "Place a connector against a compatible inventory, fluid tank, or energy block. Use matching cable to reach the controller and name important endpoints clearly."
+    },
+    {
+      "id": "xnet:controller",
+      "requires": [
+        "xnet:connector_blue"
+      ],
+      "title": "Program the first channels",
+      "desc": "Power the XNet Controller and inspect the detected connectors. Add a channel of the intended resource type, then configure its extraction and insertion endpoints."
+    },
+    {
+      "id": "check:xnet:first_item_route",
+      "requires": [
+        "xnet:controller",
+        "xnet:connector_blue"
+      ],
+      "title": "Move a test stack through XNet",
+      "desc": "Connect two inventories, create an item channel, and configure one endpoint to extract and the other to insert. Confirm after a test stack reaches the intended destination.",
+      "icon": "xnet:controller"
+    },
+    {
+      "id": "check:xnet:fluid_channel",
+      "requires": [
+        "xnet:controller"
+      ],
+      "title": "Give fluids their own channel",
+      "desc": "Connect suitable tanks or machines and configure a fluid channel with the correct extraction and insertion settings. Confirm after a test fluid reaches its destination without mixing unintended fluids.",
+      "icon": "xnet:connector_blue"
+    },
+    {
+      "id": "check:xnet:energy_channel",
+      "requires": [
+        "xnet:controller"
+      ],
+      "title": "Supply a machine through a channel",
+      "desc": "Configure an energy channel from an existing source to a compatible consumer. Keep the controller itself powered, then confirm after the target machine receives energy.",
+      "icon": "xnet:advanced_connector_blue"
+    },
+    {
+      "id": "xnet:connector_upgrade",
+      "requires": [
+        "xnet:connector_blue"
+      ],
+      "title": "Upgrade a chosen endpoint",
+      "desc": "Craft a Connector Upgrade for an endpoint that needs the advanced connector's capabilities. Upgrade the connection that limits the route rather than every idle endpoint."
+    },
+    {
+      "id": "xnet:advanced_connector_blue",
+      "requires": [
+        "xnet:connector_upgrade"
+      ],
+      "title": "Configure advanced transfer",
+      "desc": "Use an Advanced Connector where the setup needs its additional transfer or side-selection features. Recheck channel settings after replacing or upgrading a connector."
+    },
+    {
+      "id": "xnet:redstone_proxy",
+      "requires": [
+        "xnet:controller"
+      ],
+      "title": "Expose a redstone-controlled block",
+      "desc": "Use a Redstone Proxy where the network needs the supported redstone interaction with another block. Test the target behavior before letting it switch a larger machine system."
+    },
+    {
+      "id": "xnet:netcable_routing",
+      "requires": [],
+      "title": "Separate routing from local cables",
+      "desc": "Craft routing cable for a network that connects routers and published channels. Routing cable has a different job from the colored local network cable."
+    },
+    {
+      "id": "xnet:connector_routing",
+      "requires": [
+        "xnet:netcable_routing"
+      ],
+      "title": "Join a routing endpoint",
+      "desc": "Use Routing Connectors for the router network and keep local machine connections on their controller networks. Name the networks before publishing shared channels."
+    },
+    {
+      "id": "xnet:router",
+      "requires": [
+        "xnet:connector_routing",
+        "xnet:controller"
+      ],
+      "title": "Share selected channels between networks",
+      "desc": "Connect a Router to the routing network and publish or consume the intended channels. Start with one shared route and verify the endpoints before joining several factory networks."
+    },
+    {
+      "id": "xnet:antenna_base",
+      "requires": [],
+      "title": "Prepare the wireless structure",
+      "desc": "Build the antenna base components required by the supported wireless setup. Review the antenna arrangement before choosing a wireless router location."
+    },
+    {
+      "id": "xnet:antenna",
+      "requires": [
+        "xnet:antenna_base"
+      ],
+      "title": "Give the wireless router an antenna",
+      "desc": "Construct the supported antenna on the wireless router. Its tier and arrangement determine the available wireless reach; the router block alone is not the complete setup."
+    },
+    {
+      "id": "xnet:wireless_router",
+      "requires": [
+        "xnet:router",
+        "xnet:antenna"
+      ],
+      "title": "Link separate factory networks",
+      "desc": "Configure Wireless Routers and the required antennas to publish and consume intended channels. Verify network names, range, and loaded endpoints before relying on a remote supply line."
+    },
+    {
+      "id": "xnet:antenna_dish",
+      "requires": [
+        "xnet:antenna"
+      ],
+      "title": "Expand the wireless branch",
+      "desc": "Build the higher-tier antenna arrangement using the dish and required supporting blocks. Check the installed range and dimension behavior instead of assuming every antenna connects everywhere."
+    },
+    {
+      "id": "xnet:facade",
+      "requires": [
+        "xnet:connector_blue"
+      ],
+      "title": "Finish the cable route",
+      "desc": "Use facades on supported network blocks to fit the room's design. Confirm the underlying connections still work before covering the completed route."
+    }
+  ],
+  "sources": [
+    "https://github.com/McJtyMods/XNet",
+    "https://mcjty.eu/docs/mods/xnet"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Powered controller and local endpoints",
+      "Honest configured item/fluid/energy route checks",
+      "Advanced connectors",
+      "Routing between controller networks",
+      "Wireless antennas and finishing"
+    ],
+    "limits": [
+      "Targets cached XNet 1.20-6.1.7.",
+      "Different cable colors are alternatives, not separate progression tiers.",
+      "Channel configuration milestones use player confirmation; inventory detection cannot prove a configured route.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": false,
+    "cached_jar_versions": [
+      "1.20-6.1.7"
+    ]
+  },
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "verified_against": "xnet.jar (cached Minecraft 1.20.1 research fixture)",
+  "item_count_in_jar": 25
+}

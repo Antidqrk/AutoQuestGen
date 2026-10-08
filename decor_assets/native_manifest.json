@@ -1,0 +1,1146 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "id": "botanical_frame",
+      "theme": "botanical",
+      "kind": "frame",
+      "texture": "autoquestgen:textures/botanical/botanical_frame.png",
+      "title": "Vinebound Corners",
+      "keywords": [
+        "botania",
+        "nature",
+        "flowers",
+        "mana",
+        "garden",
+        "frame"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 205,
+      "sha256": "a3fe4d0a04ac29bdf3fb5c02c60c846d8d97ad1ca2d17784ecd8fcfb414fa23e"
+    },
+    {
+      "id": "botanical_ornament",
+      "theme": "botanical",
+      "kind": "ornament",
+      "texture": "autoquestgen:textures/botanical/botanical_ornament.png",
+      "title": "Unfurling Boughs",
+      "keywords": [
+        "botania",
+        "nature",
+        "flowers",
+        "mana",
+        "garden",
+        "ornament"
+      ],
+      "width": 512,
+      "height": 256,
+      "alpha": 205,
+      "sha256": "45d3165765a03081e1ab72d967d900e8cb3e200609977ac1581590dd24e4c41a"
+    },
+    {
+      "id": "botanical_emblem",
+      "theme": "botanical",
+      "kind": "emblem",
+      "texture": "autoquestgen:textures/botanical/botanical_emblem.png",
+      "title": "Seed of Mana",
+      "keywords": [
+        "botania",
+        "nature",
+        "flowers",
+        "mana",
+        "garden",
+        "emblem"
+      ],
+      "width": 256,
+      "height": 256,
+      "alpha": 225,
+      "sha256": "58134e1e9ee9a5612a97b77785215a9b41e25896e98d271551ff86bde5f8052c"
+    },
+    {
+      "id": "botanical_divider",
+      "theme": "botanical",
+      "kind": "divider",
+      "texture": "autoquestgen:textures/botanical/botanical_divider.png",
+      "title": "Trailing Leaves",
+      "keywords": [
+        "botania",
+        "nature",
+        "flowers",
+        "mana",
+        "garden",
+        "divider"
+      ],
+      "width": 512,
+      "height": 128,
+      "alpha": 205,
+      "sha256": "68cc1b4400cb2f2959a5e886dfa8d5ebe3b62b8968174bc9b9a67ad59d9a8aea"
+    },
+    {
+      "id": "botanical_panel",
+      "theme": "botanical",
+      "kind": "panel",
+      "texture": "autoquestgen:textures/botanical/botanical_panel.png",
+      "title": "Garden Trellis",
+      "keywords": [
+        "botania",
+        "nature",
+        "flowers",
+        "mana",
+        "garden",
+        "panel"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 160,
+      "sha256": "5498472b281f7db7de58c4b2e4d22d529e46a2be93cd306cfab005ac4b4f2955"
+    },
+    {
+      "id": "arcane_frame",
+      "theme": "arcane",
+      "kind": "frame",
+      "texture": "autoquestgen:textures/arcane/arcane_frame.png",
+      "title": "Celestial Wards",
+      "keywords": [
+        "magic",
+        "ritual",
+        "spell",
+        "arcane",
+        "occultism",
+        "frame"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 205,
+      "sha256": "083db1d1f9863df776112d799e0095c92a6bed114be02200627041b1eccadc47"
+    },
+    {
+      "id": "arcane_ornament",
+      "theme": "arcane",
+      "kind": "ornament",
+      "texture": "autoquestgen:textures/arcane/arcane_ornament.png",
+      "title": "Forked Incantation",
+      "keywords": [
+        "magic",
+        "ritual",
+        "spell",
+        "arcane",
+        "occultism",
+        "ornament"
+      ],
+      "width": 512,
+      "height": 256,
+      "alpha": 205,
+      "sha256": "ec0039df19ed3e45a98c1da3e1359ad2b9d1ea09e0236f1be8e3ec9d4a8ed4ce"
+    },
+    {
+      "id": "arcane_emblem",
+      "theme": "arcane",
+      "kind": "emblem",
+      "texture": "autoquestgen:textures/arcane/arcane_emblem.png",
+      "title": "Prism of Insight",
+      "keywords": [
+        "magic",
+        "ritual",
+        "spell",
+        "arcane",
+        "occultism",
+        "emblem"
+      ],
+      "width": 256,
+      "height": 256,
+      "alpha": 225,
+      "sha256": "0d2bee9c4805c2f9f1d313a10fb8c50c7e8cbf61c643afdd5b03442fec32c6b3"
+    },
+    {
+      "id": "arcane_divider",
+      "theme": "arcane",
+      "kind": "divider",
+      "texture": "autoquestgen:textures/arcane/arcane_divider.png",
+      "title": "Orbital Notation",
+      "keywords": [
+        "magic",
+        "ritual",
+        "spell",
+        "arcane",
+        "occultism",
+        "divider"
+      ],
+      "width": 512,
+      "height": 128,
+      "alpha": 205,
+      "sha256": "4fa9853f6af6a5f5f499ddf8b6a0730be52289378e1c810284e79343c2f2ec5d"
+    },
+    {
+      "id": "arcane_panel",
+      "theme": "arcane",
+      "kind": "panel",
+      "texture": "autoquestgen:textures/arcane/arcane_panel.png",
+      "title": "Constellation Lattice",
+      "keywords": [
+        "magic",
+        "ritual",
+        "spell",
+        "arcane",
+        "occultism",
+        "panel"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 160,
+      "sha256": "82494fbb0e402bf4450b60359075838db20b4a3e9d5c06a890f711bfe96cc7d3"
+    },
+    {
+      "id": "machinery_frame",
+      "theme": "machinery",
+      "kind": "frame",
+      "texture": "autoquestgen:textures/machinery/machinery_frame.png",
+      "title": "Riveted Housing",
+      "keywords": [
+        "create",
+        "machine",
+        "factory",
+        "engineering",
+        "gear",
+        "frame"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 205,
+      "sha256": "728eb59ce3818e609defdef305de20755c4d7f96413eaa133ca45f7789840c9c"
+    },
+    {
+      "id": "machinery_ornament",
+      "theme": "machinery",
+      "kind": "ornament",
+      "texture": "autoquestgen:textures/machinery/machinery_ornament.png",
+      "title": "Transmission Manifold",
+      "keywords": [
+        "create",
+        "machine",
+        "factory",
+        "engineering",
+        "gear",
+        "ornament"
+      ],
+      "width": 512,
+      "height": 256,
+      "alpha": 205,
+      "sha256": "6a0a0431d5528c354256c8ef85e8afc7af70a8079883a02559c6bacea1d4173a"
+    },
+    {
+      "id": "machinery_emblem",
+      "theme": "machinery",
+      "kind": "emblem",
+      "texture": "autoquestgen:textures/machinery/machinery_emblem.png",
+      "title": "Foundry Gear",
+      "keywords": [
+        "create",
+        "machine",
+        "factory",
+        "engineering",
+        "gear",
+        "emblem"
+      ],
+      "width": 256,
+      "height": 256,
+      "alpha": 225,
+      "sha256": "74c71fddb29b42bd34b75739465ff86e8ed1ef225038a98c1b8652d5b74bd19c"
+    },
+    {
+      "id": "machinery_divider",
+      "theme": "machinery",
+      "kind": "divider",
+      "texture": "autoquestgen:textures/machinery/machinery_divider.png",
+      "title": "Rack and Pinion",
+      "keywords": [
+        "create",
+        "machine",
+        "factory",
+        "engineering",
+        "gear",
+        "divider"
+      ],
+      "width": 512,
+      "height": 128,
+      "alpha": 205,
+      "sha256": "72dfea370cecfb17ceb2dc2d88cc0a6bba55d3a8e520b8f9931f9986e2777d35"
+    },
+    {
+      "id": "machinery_panel",
+      "theme": "machinery",
+      "kind": "panel",
+      "texture": "autoquestgen:textures/machinery/machinery_panel.png",
+      "title": "Workshop Grating",
+      "keywords": [
+        "create",
+        "machine",
+        "factory",
+        "engineering",
+        "gear",
+        "panel"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 160,
+      "sha256": "6d17b1abc2beb28b7e31bdaa21e75f5d8d6e84f83bd3d838f60a5d3a3a0f2798"
+    },
+    {
+      "id": "power_frame",
+      "theme": "power",
+      "kind": "frame",
+      "texture": "autoquestgen:textures/power/power_frame.png",
+      "title": "Circuit Terminals",
+      "keywords": [
+        "power",
+        "energy",
+        "mekanism",
+        "generator",
+        "electric",
+        "frame"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 205,
+      "sha256": "84ab6df4356e90020c8dae0e515d7252c455a9e186f509c288f3595c32bae34b"
+    },
+    {
+      "id": "power_ornament",
+      "theme": "power",
+      "kind": "ornament",
+      "texture": "autoquestgen:textures/power/power_ornament.png",
+      "title": "Branching Current",
+      "keywords": [
+        "power",
+        "energy",
+        "mekanism",
+        "generator",
+        "electric",
+        "ornament"
+      ],
+      "width": 512,
+      "height": 256,
+      "alpha": 205,
+      "sha256": "8d962f8ff0c6243c5744cb3f1d8e4db9093a6e81f0e8eb7db92e94a5f5be215a"
+    },
+    {
+      "id": "power_emblem",
+      "theme": "power",
+      "kind": "emblem",
+      "texture": "autoquestgen:textures/power/power_emblem.png",
+      "title": "Charged Cell",
+      "keywords": [
+        "power",
+        "energy",
+        "mekanism",
+        "generator",
+        "electric",
+        "emblem"
+      ],
+      "width": 256,
+      "height": 256,
+      "alpha": 225,
+      "sha256": "3204c2327f041f867ee08ff74cd42fd4851f1a8b29bde6eaccdf4cb93e4fc70d"
+    },
+    {
+      "id": "power_divider",
+      "theme": "power",
+      "kind": "divider",
+      "texture": "autoquestgen:textures/power/power_divider.png",
+      "title": "Pulse Conductor",
+      "keywords": [
+        "power",
+        "energy",
+        "mekanism",
+        "generator",
+        "electric",
+        "divider"
+      ],
+      "width": 512,
+      "height": 128,
+      "alpha": 205,
+      "sha256": "5e8acc73c63f0abcb74e5f8976c97eeeec2ce5462cb2a3e4fb887b3d9a1c9e8e"
+    },
+    {
+      "id": "power_panel",
+      "theme": "power",
+      "kind": "panel",
+      "texture": "autoquestgen:textures/power/power_panel.png",
+      "title": "Capacitor Matrix",
+      "keywords": [
+        "power",
+        "energy",
+        "mekanism",
+        "generator",
+        "electric",
+        "panel"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 160,
+      "sha256": "7dcdfbb4d47e2234a789ac012ef61a53d7f0a8d001d5f84c64bc5cac02467981"
+    },
+    {
+      "id": "space_frame",
+      "theme": "space",
+      "kind": "frame",
+      "texture": "autoquestgen:textures/space/space_frame.png",
+      "title": "Orbital Viewport",
+      "keywords": [
+        "space",
+        "rocket",
+        "planet",
+        "ad_astra",
+        "stars",
+        "frame"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 205,
+      "sha256": "a5e990978ade273d929185a1d230ad0ca1bcad77b9af0d679524508ce3433eb8"
+    },
+    {
+      "id": "space_ornament",
+      "theme": "space",
+      "kind": "ornament",
+      "texture": "autoquestgen:textures/space/space_ornament.png",
+      "title": "Asterism Drift",
+      "keywords": [
+        "space",
+        "rocket",
+        "planet",
+        "ad_astra",
+        "stars",
+        "ornament"
+      ],
+      "width": 512,
+      "height": 256,
+      "alpha": 205,
+      "sha256": "b7ef553322a688edefd9d374892fc96692506e77ffa18af78acafd0d40c256a6"
+    },
+    {
+      "id": "space_emblem",
+      "theme": "space",
+      "kind": "emblem",
+      "texture": "autoquestgen:textures/space/space_emblem.png",
+      "title": "Ringed World",
+      "keywords": [
+        "space",
+        "rocket",
+        "planet",
+        "ad_astra",
+        "stars",
+        "emblem"
+      ],
+      "width": 256,
+      "height": 256,
+      "alpha": 225,
+      "sha256": "ceac7e69ef2eb341d63041892379a810e04108dd3ea78bf6c87d130052d42b6a"
+    },
+    {
+      "id": "space_divider",
+      "theme": "space",
+      "kind": "divider",
+      "texture": "autoquestgen:textures/space/space_divider.png",
+      "title": "Comet Passage",
+      "keywords": [
+        "space",
+        "rocket",
+        "planet",
+        "ad_astra",
+        "stars",
+        "divider"
+      ],
+      "width": 512,
+      "height": 128,
+      "alpha": 205,
+      "sha256": "e7f52e41a2b193942387e1c37ef2b3e562551f9f13f594c2f6550ff809efd9c7"
+    },
+    {
+      "id": "space_panel",
+      "theme": "space",
+      "kind": "panel",
+      "texture": "autoquestgen:textures/space/space_panel.png",
+      "title": "Star Survey",
+      "keywords": [
+        "space",
+        "rocket",
+        "planet",
+        "ad_astra",
+        "stars",
+        "panel"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 160,
+      "sha256": "9a67606db445f64c7f6a5ec3a55cf287819e29d1555936a1b7b9985f7f167f2e"
+    },
+    {
+      "id": "exploration_frame",
+      "theme": "exploration",
+      "kind": "frame",
+      "texture": "autoquestgen:textures/exploration/exploration_frame.png",
+      "title": "Surveyor Corners",
+      "keywords": [
+        "explore",
+        "journey",
+        "adventure",
+        "travel",
+        "compass",
+        "frame"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 205,
+      "sha256": "933929e67f7bb1b0eb3f0c40f5b744e2064221f6e24d3b894f4e6d52f56d2a25"
+    },
+    {
+      "id": "exploration_ornament",
+      "theme": "exploration",
+      "kind": "ornament",
+      "texture": "autoquestgen:textures/exploration/exploration_ornament.png",
+      "title": "Forking Trail",
+      "keywords": [
+        "explore",
+        "journey",
+        "adventure",
+        "travel",
+        "compass",
+        "ornament"
+      ],
+      "width": 512,
+      "height": 256,
+      "alpha": 205,
+      "sha256": "50b859832f97b7352c4a2062f1d879a8192cda52b1f7701d66902906bbdada20"
+    },
+    {
+      "id": "exploration_emblem",
+      "theme": "exploration",
+      "kind": "emblem",
+      "texture": "autoquestgen:textures/exploration/exploration_emblem.png",
+      "title": "Compass Rose",
+      "keywords": [
+        "explore",
+        "journey",
+        "adventure",
+        "travel",
+        "compass",
+        "emblem"
+      ],
+      "width": 256,
+      "height": 256,
+      "alpha": 225,
+      "sha256": "87a34df34d72700613f5a55e4d668837f7595438d3e844660dee8242c5f881b6"
+    },
+    {
+      "id": "exploration_divider",
+      "theme": "exploration",
+      "kind": "divider",
+      "texture": "autoquestgen:textures/exploration/exploration_divider.png",
+      "title": "Mountain Horizon",
+      "keywords": [
+        "explore",
+        "journey",
+        "adventure",
+        "travel",
+        "compass",
+        "divider"
+      ],
+      "width": 512,
+      "height": 128,
+      "alpha": 205,
+      "sha256": "540ecfca4b1b581b0e22e6847ae9cc4c7d86ce8c45804f7c3f5969e93d9dba6c"
+    },
+    {
+      "id": "exploration_panel",
+      "theme": "exploration",
+      "kind": "panel",
+      "texture": "autoquestgen:textures/exploration/exploration_panel.png",
+      "title": "Contour Atlas",
+      "keywords": [
+        "explore",
+        "journey",
+        "adventure",
+        "travel",
+        "compass",
+        "panel"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 160,
+      "sha256": "18a095e2037903bc9cc989b97db5b8eba51ef1885983f8f5e1183fc408990781"
+    },
+    {
+      "id": "farming_frame",
+      "theme": "farming",
+      "kind": "frame",
+      "texture": "autoquestgen:textures/farming/farming_frame.png",
+      "title": "Wheatbound Border",
+      "keywords": [
+        "farm",
+        "crops",
+        "food",
+        "harvest",
+        "cooking",
+        "frame"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 205,
+      "sha256": "1256f845ac4a778d4954d4d939a0e3d5303c5ef7b2f1d031e9f6ba41454bf5ea"
+    },
+    {
+      "id": "farming_ornament",
+      "theme": "farming",
+      "kind": "ornament",
+      "texture": "autoquestgen:textures/farming/farming_ornament.png",
+      "title": "Harvest Fan",
+      "keywords": [
+        "farm",
+        "crops",
+        "food",
+        "harvest",
+        "cooking",
+        "ornament"
+      ],
+      "width": 512,
+      "height": 256,
+      "alpha": 205,
+      "sha256": "6683250c86b2d65152d514794d6fc5d23724417401c67afbd0290514860c5d98"
+    },
+    {
+      "id": "farming_emblem",
+      "theme": "farming",
+      "kind": "emblem",
+      "texture": "autoquestgen:textures/farming/farming_emblem.png",
+      "title": "The First Sheaf",
+      "keywords": [
+        "farm",
+        "crops",
+        "food",
+        "harvest",
+        "cooking",
+        "emblem"
+      ],
+      "width": 256,
+      "height": 256,
+      "alpha": 225,
+      "sha256": "a8fe0c02ca2b86cc431e663d6d7371d188f8e4c5d0844f5a6ffccf970b206d32"
+    },
+    {
+      "id": "farming_divider",
+      "theme": "farming",
+      "kind": "divider",
+      "texture": "autoquestgen:textures/farming/farming_divider.png",
+      "title": "Furrow Rhythm",
+      "keywords": [
+        "farm",
+        "crops",
+        "food",
+        "harvest",
+        "cooking",
+        "divider"
+      ],
+      "width": 512,
+      "height": 128,
+      "alpha": 205,
+      "sha256": "c0efb00f055436bdac56c5bd57156d210a51c63508b241f2254f91fcf5ae9d6b"
+    },
+    {
+      "id": "farming_panel",
+      "theme": "farming",
+      "kind": "panel",
+      "texture": "autoquestgen:textures/farming/farming_panel.png",
+      "title": "Field Quilt",
+      "keywords": [
+        "farm",
+        "crops",
+        "food",
+        "harvest",
+        "cooking",
+        "panel"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 160,
+      "sha256": "20350ca0a5215a3a4551fbc55ca4290448725f2d625545d569f09c6b123554cb"
+    },
+    {
+      "id": "ocean_frame",
+      "theme": "ocean",
+      "kind": "frame",
+      "texture": "autoquestgen:textures/ocean/ocean_frame.png",
+      "title": "Tidal Curves",
+      "keywords": [
+        "ocean",
+        "water",
+        "underwater",
+        "sea",
+        "aquatic",
+        "frame"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 205,
+      "sha256": "b403209e010a68d9ec6ced94b21de000a920b3873e11f791c82f716f3fc98949"
+    },
+    {
+      "id": "ocean_ornament",
+      "theme": "ocean",
+      "kind": "ornament",
+      "texture": "autoquestgen:textures/ocean/ocean_ornament.png",
+      "title": "Branching Coral",
+      "keywords": [
+        "ocean",
+        "water",
+        "underwater",
+        "sea",
+        "aquatic",
+        "ornament"
+      ],
+      "width": 512,
+      "height": 256,
+      "alpha": 205,
+      "sha256": "d01b77c0734d43981f5632193a6e98091c97a674dbbbf586030d1353451ec2b4"
+    },
+    {
+      "id": "ocean_emblem",
+      "theme": "ocean",
+      "kind": "emblem",
+      "texture": "autoquestgen:textures/ocean/ocean_emblem.png",
+      "title": "Pearl and Shell",
+      "keywords": [
+        "ocean",
+        "water",
+        "underwater",
+        "sea",
+        "aquatic",
+        "emblem"
+      ],
+      "width": 256,
+      "height": 256,
+      "alpha": 225,
+      "sha256": "67e51df01dd2e24d962d475cfacea09ca82c6c8f8b449723a1a579ac221d0eb0"
+    },
+    {
+      "id": "ocean_divider",
+      "theme": "ocean",
+      "kind": "divider",
+      "texture": "autoquestgen:textures/ocean/ocean_divider.png",
+      "title": "Rolling Swell",
+      "keywords": [
+        "ocean",
+        "water",
+        "underwater",
+        "sea",
+        "aquatic",
+        "divider"
+      ],
+      "width": 512,
+      "height": 128,
+      "alpha": 205,
+      "sha256": "71482859a9fd83d04221e37f157b3a2cee2d3c2b253727a4e597c56109f2bb53"
+    },
+    {
+      "id": "ocean_panel",
+      "theme": "ocean",
+      "kind": "panel",
+      "texture": "autoquestgen:textures/ocean/ocean_panel.png",
+      "title": "Reef Ripples",
+      "keywords": [
+        "ocean",
+        "water",
+        "underwater",
+        "sea",
+        "aquatic",
+        "panel"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 160,
+      "sha256": "0da27dc022ae244b2fa9836d76c007c6f3c7e41db8a01c099ab8d17cc5a6b8ac"
+    },
+    {
+      "id": "nether_frame",
+      "theme": "nether",
+      "kind": "frame",
+      "texture": "autoquestgen:textures/nether/nether_frame.png",
+      "title": "Basalt Fracture",
+      "keywords": [
+        "nether",
+        "lava",
+        "fire",
+        "blaze",
+        "infernal",
+        "frame"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 205,
+      "sha256": "5ecca63e015844414243754833f750d58aa413b769c9e712541c2c1cf8bef510"
+    },
+    {
+      "id": "nether_ornament",
+      "theme": "nether",
+      "kind": "ornament",
+      "texture": "autoquestgen:textures/nether/nether_ornament.png",
+      "title": "Lava Tributaries",
+      "keywords": [
+        "nether",
+        "lava",
+        "fire",
+        "blaze",
+        "infernal",
+        "ornament"
+      ],
+      "width": 512,
+      "height": 256,
+      "alpha": 205,
+      "sha256": "70300f926601064238f861bcd1090e3dcc6bff2a06169630e7a2987cc6ce1145"
+    },
+    {
+      "id": "nether_emblem",
+      "theme": "nether",
+      "kind": "emblem",
+      "texture": "autoquestgen:textures/nether/nether_emblem.png",
+      "title": "The Ember Crucible",
+      "keywords": [
+        "nether",
+        "lava",
+        "fire",
+        "blaze",
+        "infernal",
+        "emblem"
+      ],
+      "width": 256,
+      "height": 256,
+      "alpha": 225,
+      "sha256": "69e51652759e4713a016170bde14861d7fa1b72ab727c9bca87b40acfcd235eb"
+    },
+    {
+      "id": "nether_divider",
+      "theme": "nether",
+      "kind": "divider",
+      "texture": "autoquestgen:textures/nether/nether_divider.png",
+      "title": "Cinder Teeth",
+      "keywords": [
+        "nether",
+        "lava",
+        "fire",
+        "blaze",
+        "infernal",
+        "divider"
+      ],
+      "width": 512,
+      "height": 128,
+      "alpha": 205,
+      "sha256": "40064caa4241c795cfb291c00b1101446f3e0899bb574471df25e0f786a828f5"
+    },
+    {
+      "id": "nether_panel",
+      "theme": "nether",
+      "kind": "panel",
+      "texture": "autoquestgen:textures/nether/nether_panel.png",
+      "title": "Cooling Obsidian",
+      "keywords": [
+        "nether",
+        "lava",
+        "fire",
+        "blaze",
+        "infernal",
+        "panel"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 160,
+      "sha256": "1f3d3eec62b60473d5a30c41b8d529771a776291e07b25850774ec9f0d39ae93"
+    },
+    {
+      "id": "end_frame",
+      "theme": "end",
+      "kind": "frame",
+      "texture": "autoquestgen:textures/end/end_frame.png",
+      "title": "Suspended Ruins",
+      "keywords": [
+        "end",
+        "ender",
+        "dragon",
+        "void",
+        "portal",
+        "frame"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 205,
+      "sha256": "aa372e18aeade5533a5e21d72e9655f909ec2c62656243d3af5b4abea209d7f5"
+    },
+    {
+      "id": "end_ornament",
+      "theme": "end",
+      "kind": "ornament",
+      "texture": "autoquestgen:textures/end/end_ornament.png",
+      "title": "Splintered Passage",
+      "keywords": [
+        "end",
+        "ender",
+        "dragon",
+        "void",
+        "portal",
+        "ornament"
+      ],
+      "width": 512,
+      "height": 256,
+      "alpha": 205,
+      "sha256": "27c5fad0fdb864d07e941a1f3ff15aef641723034fff9259b7ef79dd77a2e309"
+    },
+    {
+      "id": "end_emblem",
+      "theme": "end",
+      "kind": "emblem",
+      "texture": "autoquestgen:textures/end/end_emblem.png",
+      "title": "Rift Crystal",
+      "keywords": [
+        "end",
+        "ender",
+        "dragon",
+        "void",
+        "portal",
+        "emblem"
+      ],
+      "width": 256,
+      "height": 256,
+      "alpha": 225,
+      "sha256": "5b339c2a9402d706d928052057cadd8ed28f54eb83939329b1b3f67e20624b56"
+    },
+    {
+      "id": "end_divider",
+      "theme": "end",
+      "kind": "divider",
+      "texture": "autoquestgen:textures/end/end_divider.png",
+      "title": "Broken Orbit",
+      "keywords": [
+        "end",
+        "ender",
+        "dragon",
+        "void",
+        "portal",
+        "divider"
+      ],
+      "width": 512,
+      "height": 128,
+      "alpha": 205,
+      "sha256": "01f8e3e2dbeef7df5fb7b1ce74e528b7070db0207d036b56ff88f9c8cb805561"
+    },
+    {
+      "id": "end_panel",
+      "theme": "end",
+      "kind": "panel",
+      "texture": "autoquestgen:textures/end/end_panel.png",
+      "title": "Void Mosaic",
+      "keywords": [
+        "end",
+        "ender",
+        "dragon",
+        "void",
+        "portal",
+        "panel"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 160,
+      "sha256": "8b7f79a8bf6249bd1a09b79240969c403e26dbdccf9120389ab31142ef85682a"
+    },
+    {
+      "id": "storage_frame",
+      "theme": "storage",
+      "kind": "frame",
+      "texture": "autoquestgen:textures/storage/storage_frame.png",
+      "title": "Archive Compartments",
+      "keywords": [
+        "storage",
+        "ae2",
+        "refinedstorage",
+        "inventory",
+        "network",
+        "frame"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 205,
+      "sha256": "c7d98351ffd194b83435cf432dfd734f1728a33bec3f4a610bf528bc2e721369"
+    },
+    {
+      "id": "storage_ornament",
+      "theme": "storage",
+      "kind": "ornament",
+      "texture": "autoquestgen:textures/storage/storage_ornament.png",
+      "title": "Linked Inventories",
+      "keywords": [
+        "storage",
+        "ae2",
+        "refinedstorage",
+        "inventory",
+        "network",
+        "ornament"
+      ],
+      "width": 512,
+      "height": 256,
+      "alpha": 205,
+      "sha256": "5e65955eeeef2b2537d94cc86b6b3ca6cd9504f7ca56dfe8173f96b9c6f32d57"
+    },
+    {
+      "id": "storage_emblem",
+      "theme": "storage",
+      "kind": "emblem",
+      "texture": "autoquestgen:textures/storage/storage_emblem.png",
+      "title": "The Index Vault",
+      "keywords": [
+        "storage",
+        "ae2",
+        "refinedstorage",
+        "inventory",
+        "network",
+        "emblem"
+      ],
+      "width": 256,
+      "height": 256,
+      "alpha": 225,
+      "sha256": "15b5870a4ae3d93b69e9791856115b3b5aeb482c567284f3a5a050a971e00bab"
+    },
+    {
+      "id": "storage_divider",
+      "theme": "storage",
+      "kind": "divider",
+      "texture": "autoquestgen:textures/storage/storage_divider.png",
+      "title": "Transfer Bus",
+      "keywords": [
+        "storage",
+        "ae2",
+        "refinedstorage",
+        "inventory",
+        "network",
+        "divider"
+      ],
+      "width": 512,
+      "height": 128,
+      "alpha": 205,
+      "sha256": "e33db3e94ab54de93476346d46b1670869b905999692988d34c913f1514ff0c6"
+    },
+    {
+      "id": "storage_panel",
+      "theme": "storage",
+      "kind": "panel",
+      "texture": "autoquestgen:textures/storage/storage_panel.png",
+      "title": "Repository Grid",
+      "keywords": [
+        "storage",
+        "ae2",
+        "refinedstorage",
+        "inventory",
+        "network",
+        "panel"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 160,
+      "sha256": "466b6b5954635a3b1504549d4d4641853d5accf6cb3632af2d7e2c56925571ac"
+    },
+    {
+      "id": "restoration_frame",
+      "theme": "restoration",
+      "kind": "frame",
+      "texture": "autoquestgen:textures/restoration/restoration_frame.png",
+      "title": "Root and Rain",
+      "keywords": [
+        "restore",
+        "restoration",
+        "regrowth",
+        "healing",
+        "life",
+        "frame"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 205,
+      "sha256": "8b482e7f899fbb8676a789708e79edb7046eafbe5bf489567d426bb06ff5a38b"
+    },
+    {
+      "id": "restoration_ornament",
+      "theme": "restoration",
+      "kind": "ornament",
+      "texture": "autoquestgen:textures/restoration/restoration_ornament.png",
+      "title": "Returning Roots",
+      "keywords": [
+        "restore",
+        "restoration",
+        "regrowth",
+        "healing",
+        "life",
+        "ornament"
+      ],
+      "width": 512,
+      "height": 256,
+      "alpha": 205,
+      "sha256": "e4f433c3a5f36d4e4f4c05329d905db3336edae667588814bb87a0d80f402973"
+    },
+    {
+      "id": "restoration_emblem",
+      "theme": "restoration",
+      "kind": "emblem",
+      "texture": "autoquestgen:textures/restoration/restoration_emblem.png",
+      "title": "A New Dawn",
+      "keywords": [
+        "restore",
+        "restoration",
+        "regrowth",
+        "healing",
+        "life",
+        "emblem"
+      ],
+      "width": 256,
+      "height": 256,
+      "alpha": 225,
+      "sha256": "809787f7d73d7c15ff9ec1f2cbb81ad8633ace8bebef96c624bccd264947bf4b"
+    },
+    {
+      "id": "restoration_divider",
+      "theme": "restoration",
+      "kind": "divider",
+      "texture": "autoquestgen:textures/restoration/restoration_divider.png",
+      "title": "Springwater Course",
+      "keywords": [
+        "restore",
+        "restoration",
+        "regrowth",
+        "healing",
+        "life",
+        "divider"
+      ],
+      "width": 512,
+      "height": 128,
+      "alpha": 205,
+      "sha256": "71b24dfdabd7c32d6f7c69820fd066b18f12d133ea66eee0d4bbd6b5244d9a1a"
+    },
+    {
+      "id": "restoration_panel",
+      "theme": "restoration",
+      "kind": "panel",
+      "texture": "autoquestgen:textures/restoration/restoration_panel.png",
+      "title": "Regrowth Rings",
+      "keywords": [
+        "restore",
+        "restoration",
+        "regrowth",
+        "healing",
+        "life",
+        "panel"
+      ],
+      "width": 512,
+      "height": 512,
+      "alpha": 160,
+      "sha256": "b86b042babc15e3fb34cf06140bb3c96622ca7eae7ff7987d69693539c9b2b48"
+    }
+  ],
+  "provenance": "Original native geometry drawn by tools/render_decor_assets.py; no external artwork or text in the PNGs."
+}

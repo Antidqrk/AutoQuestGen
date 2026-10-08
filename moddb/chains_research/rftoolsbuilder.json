@@ -1,0 +1,166 @@
+{
+  "mod": "rftoolsbuilder",
+  "chain": [
+    {
+      "id": "rftoolsbuilder:builder",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "A machine for a planned area",
+      "desc": "Build and power the Builder, then choose a job before configuring its work area. Start with a small expendable test region and inspect the preview before allowing world changes."
+    },
+    {
+      "id": "rftoolsbuilder:shape_card_def",
+      "requires": [],
+      "title": "Describe the shape",
+      "desc": "Configure a Shape Card with the intended shape, dimensions, and offset. A valid card describes the work area; the Builder still needs power and appropriate materials or output storage."
+    },
+    {
+      "id": "check:rftoolsbuilder:first_build",
+      "requires": [
+        "rftoolsbuilder:builder",
+        "rftoolsbuilder:shape_card_def"
+      ],
+      "title": "Build a small test structure",
+      "desc": "Insert the configured Shape Card, supply blocks and power, and use the supported preview to confirm placement. Run a small test build and confirm after the structure appears where intended.",
+      "icon": "rftoolsbuilder:builder"
+    },
+    {
+      "id": "rftoolsbuilder:shape_card_quarry",
+      "requires": [
+        "rftoolsbuilder:shape_card_def"
+      ],
+      "title": "Choose a quarry card",
+      "desc": "Use a Quarry Shape Card to define a small mining region. Check its replacement behavior, power demand, filters, and output storage before expanding to a large area."
+    },
+    {
+      "id": "rftoolsbuilder:shape_card_quarry_fortune",
+      "requires": [
+        "rftoolsbuilder:shape_card_quarry"
+      ],
+      "title": "An optional Fortune quarry",
+      "desc": "Upgrade to the Fortune quarry card when its harvest behavior suits the target blocks. Compare energy and output requirements before scaling the quarry."
+    },
+    {
+      "id": "rftoolsbuilder:shape_card_quarry_silk",
+      "requires": [
+        "rftoolsbuilder:shape_card_quarry"
+      ],
+      "title": "An optional Silk Touch quarry",
+      "desc": "Use the Silk Touch variant when you need blocks intact. This is an alternative to Fortune, so neither branch requires completing the other."
+    },
+    {
+      "id": "rftoolsbuilder:shape_card_pump",
+      "requires": [
+        "rftoolsbuilder:shape_card_def"
+      ],
+      "title": "Handle a fluid job",
+      "desc": "Configure the pump card and provide suitable fluid storage. Preview the region and test with a manageable volume before draining a large area."
+    },
+    {
+      "id": "rftoolsbuilder:scanner",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "Record an existing shape",
+      "desc": "Configure the Scanner's region and scan a small structure first. Inspect the resulting shape data before using it in a larger construction workflow."
+    },
+    {
+      "id": "rftoolsbuilder:composer",
+      "requires": [
+        "rftoolsbuilder:scanner"
+      ],
+      "title": "Combine recorded shapes",
+      "desc": "Use the Composer to combine or modify available shape data. Keep a copy of the original scan so the result can be compared before construction."
+    },
+    {
+      "id": "rftoolsbuilder:projector",
+      "requires": [
+        "rftoolsbuilder:scanner"
+      ],
+      "title": "Preview the planned shape",
+      "desc": "Use the Projector with the supported shape data to inspect orientation and placement. A projected shape is a planning aid; it does not place building materials by itself."
+    },
+    {
+      "id": "rftoolsbuilder:space_chamber",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "Mark a structure's bounds",
+      "desc": "Build the Space Chamber frame and controller in the documented arrangement. Define a small test structure before using a Builder operation that moves or copies blocks."
+    },
+    {
+      "id": "rftoolsbuilder:space_chamber_controller",
+      "requires": [
+        "rftoolsbuilder:space_chamber"
+      ],
+      "title": "Give the chamber its controller",
+      "desc": "Complete the Space Chamber and verify that its bounds are valid. The controller identifies the region for the card and Builder workflow."
+    },
+    {
+      "id": "rftoolsbuilder:space_chamber_card",
+      "requires": [
+        "rftoolsbuilder:space_chamber_controller"
+      ],
+      "title": "Link the selected chamber",
+      "desc": "Bind a Space Chamber Card to the correct chamber and configure the Builder job. Review destination and operation mode before running a move or copy."
+    },
+    {
+      "id": "rftoolsbuilder:shield_block1",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "A separate shield project",
+      "desc": "Build a Shield Projector and prepare template blocks. This defensive and building utility branch does not require completing a quarry or moving a structure."
+    },
+    {
+      "id": "rftoolsbuilder:blue_shield_template_block",
+      "requires": [
+        "rftoolsbuilder:shield_block1"
+      ],
+      "title": "Shape the shield boundary",
+      "desc": "Place connected shield template blocks in the desired shape, then configure the projector's filters and power supply. Test which entities may cross before using it in an occupied area."
+    },
+    {
+      "id": "rftoolsbuilder:shield_block2",
+      "requires": [
+        "rftoolsbuilder:shield_block1"
+      ],
+      "title": "Expand the projector's capacity",
+      "desc": "Upgrade the projector when the planned shield needs more supported blocks or features. Check the new energy demand rather than treating a larger shield as free protection."
+    }
+  ],
+  "sources": [
+    "https://github.com/McJtyMods/RFToolsBuilder",
+    "https://mcjty.eu/docs/mods/rftools"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Basic shape construction",
+      "Fortune/Silk quarry alternatives",
+      "Fluid pumping",
+      "Scanning and composition",
+      "Space-chamber workflow",
+      "Independent shields"
+    ],
+    "limits": [
+      "Targets cached RFTools Builder 1.20-6.0.10.",
+      "World operations require player preview and configuration; acquisition tasks cannot validate the selected area.",
+      "Mover and vehicle subsystems are not claimed as complete authored coverage.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": false,
+    "cached_jar_versions": [
+      "1.20-6.0.10"
+    ]
+  },
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "verified_against": "rftools-builder.jar (cached Minecraft 1.20.1 research fixture)",
+  "item_count_in_jar": 37
+}

@@ -1,0 +1,181 @@
+{
+  "mod": "rftoolspower",
+  "chain": [
+    {
+      "id": "rftoolspower:coalgenerator",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "A simple workshop power source",
+      "desc": "Feed the Coal Generator with supported solid fuel and connect a consumer or buffer. Begin with a small working circuit before adding advanced generators."
+    },
+    {
+      "id": "rftoolspower:power_core1",
+      "requires": [],
+      "title": "A component for energy storage",
+      "desc": "Craft a basic Power Core for the first Powercell. It is an ingredient, not a generator; plan where the stored energy will come from."
+    },
+    {
+      "id": "rftoolspower:cell1",
+      "requires": [
+        "rftoolspower:power_core1"
+      ],
+      "title": "Buffer a machine's energy supply",
+      "desc": "Build a Powercell and configure its sides with the supported wrench. Test charging and discharging before joining it to a larger storage arrangement."
+    },
+    {
+      "id": "rftoolspower:power_core2",
+      "requires": [
+        "rftoolspower:power_core1"
+      ],
+      "title": "Prepare a larger storage tier",
+      "desc": "Upgrade the Power Core using the installed recipe. Higher storage capacity helps with demand peaks but does not increase generation."
+    },
+    {
+      "id": "rftoolspower:cell2",
+      "requires": [
+        "rftoolspower:power_core2",
+        "rftoolspower:cell1"
+      ],
+      "title": "Grow the local power buffer",
+      "desc": "Upgrade or build the next Powercell tier and configure its faces. Check the stored energy and network connections after changing an existing setup."
+    },
+    {
+      "id": "rftoolspower:power_core3",
+      "requires": [
+        "rftoolspower:power_core2"
+      ],
+      "title": "Components for the largest local cells",
+      "desc": "Make the advanced Power Core when the workshop needs the larger storage tier. Build it for a measured energy requirement rather than as a prerequisite for every power system."
+    },
+    {
+      "id": "rftoolspower:cell3",
+      "requires": [
+        "rftoolspower:power_core3",
+        "rftoolspower:cell2"
+      ],
+      "title": "Finish the local storage ladder",
+      "desc": "Install the higher-capacity Powercell and verify transfer under load. The other generator and remote-storage branches remain independent of this full upgrade ladder."
+    },
+    {
+      "id": "rftoolspower:dimensionalcell_simple",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "Begin a remote-energy network",
+      "desc": "Place a Simple Dimensional Cell and configure its power sides. Prepare matching link cards before expecting separate cells to share energy."
+    },
+    {
+      "id": "rftoolspower:powercell_card",
+      "requires": [
+        "rftoolspower:dimensionalcell_simple"
+      ],
+      "title": "Link the intended cells",
+      "desc": "Initialize a Powercell Card and copy the intended link to the other cells. Verify the network identity before connecting a distant machine."
+    },
+    {
+      "id": "rftoolspower:dimensionalcell",
+      "requires": [
+        "rftoolspower:dimensionalcell_simple"
+      ],
+      "title": "Expand the dimensional-cell branch",
+      "desc": "Upgrade to the larger Dimensional Cell and preserve the intended link. Test remote energy transfer and account for the installed version's transfer behavior."
+    },
+    {
+      "id": "rftoolspower:dimensionalcell_advanced",
+      "requires": [
+        "rftoolspower:dimensionalcell"
+      ],
+      "title": "A larger remote reserve",
+      "desc": "Add an Advanced Dimensional Cell when the linked network needs its capacity. Keep the supplying generator and consuming machines within practical transfer limits."
+    },
+    {
+      "id": "rftoolspower:endergenic",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "A timing-based power project",
+      "desc": "Plan an Endergenic Generator loop with more than one generator and a Pearl Injector. Good timing produces energy; an idle generator is not a passive source."
+    },
+    {
+      "id": "rftoolspower:pearl_injector",
+      "requires": [
+        "rftoolspower:endergenic"
+      ],
+      "title": "Start the pearl cycle",
+      "desc": "Place and configure a Pearl Injector for the generator loop. Supply pearls and deliberate redstone timing, then verify that pearls are received and relaunched correctly."
+    },
+    {
+      "id": "rftoolspower:ender_monitor",
+      "requires": [
+        "rftoolspower:endergenic"
+      ],
+      "title": "Observe the timing state",
+      "desc": "Use an Ender Monitor to inspect generator state and support the control circuit. Tune the loop on a small setup before relying on it for the whole base."
+    },
+    {
+      "id": "rftoolspower:blazing_agitator",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "Prepare an alternative blaze-fuel route",
+      "desc": "Power a Blazing Agitator and supply blaze rods. Follow its rod-quality workflow before sending the output to the corresponding generator."
+    },
+    {
+      "id": "rftoolspower:blazing_rod",
+      "requires": [
+        "rftoolspower:blazing_agitator"
+      ],
+      "title": "Collect a prepared blazing rod",
+      "desc": "Produce a Blazing Rod and inspect its quality. Keep useful rods in the processing arrangement where the manual recommends rather than treating all rods as identical fuel."
+    },
+    {
+      "id": "rftoolspower:blazing_generator",
+      "requires": [
+        "rftoolspower:blazing_rod",
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "Use the prepared blaze fuel",
+      "desc": "Supply a Blazing Generator with prepared rods and connect the output. This is an alternative advanced power branch, independent of the Endergenic timing system."
+    },
+    {
+      "id": "rftoolspower:power_monitor",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "Read production and demand",
+      "desc": "Install a Power Monitor on the intended circuit and inspect its readings. Use observed consumption to decide whether the next upgrade should be generation, storage, or transport."
+    }
+  ],
+  "sources": [
+    "https://github.com/McJtyMods/RFToolsPower",
+    "https://mcjty.eu/docs/mods/rftools"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Simple generation",
+      "Local Powercell ladder",
+      "Linked dimensional cells",
+      "Independent Endergenic and blazing projects",
+      "Power monitoring"
+    ],
+    "limits": [
+      "Targets cached RFTools Power 1.20-6.0.3.",
+      "Creative cells are excluded. Endergenic timing and blazing-rod optimization are explained at milestone level, not supplied as a complete automation design.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": false,
+    "cached_jar_versions": [
+      "1.20-6.0.3"
+    ]
+  },
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "verified_against": "rftools-power.jar (cached Minecraft 1.20.1 research fixture)",
+  "item_count_in_jar": 21
+}

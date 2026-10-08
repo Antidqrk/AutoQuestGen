@@ -1,0 +1,65 @@
+{
+  "method": "Built-in image_gen; original scene illustrations. App runtime only reads local PNG files.",
+  "prompts": [
+    {
+      "id": "arcane_observatory",
+      "prompt": "Use case: stylized-concept. Asset type: original pixel-art illustrated backdrop for a Minecraft FTB Quests chapter map. Create ONE beautiful wide landscape in crisp handcrafted 16-bit pixel art, consistent high quality with a painterly pixel-art fantasy world. Scene: a forgotten arcane observatory with carved rune stones, violet crystal clusters, an eclipse-lit sky and narrow magical library silhouettes at the far edges. Palette: deep indigo, muted violet, antique gold. Keep the central 60 percent broad, dark, quiet, low contrast and low-detail so quest icons and connectors overlaid on the image are easily readable. Put interesting silhouette detail at outer edges and lower corners; no focal object in the center. Atmospheric depth, restrained luminosity, subtly textured pixels. Landscape 3:2 composition. No recognizable existing game assets, no screenshots, no characters, no written text, no UI, no logo, no watermark. Opaque dark background.",
+      "generator": "built-in image_gen"
+    },
+    {
+      "id": "celestial_frontier",
+      "prompt": "Use case: stylized-concept. Asset type: original pixel-art illustrated backdrop for a Minecraft FTB Quests chapter map. Create ONE beautiful wide landscape in crisp handcrafted 16-bit pixel art, consistent high quality with a painterly pixel-art fantasy world. Scene: a breathtaking alien lunar ridge beneath a sparse star field, a distant ringed planet near the top corner, small observatory silhouettes and crystalline rocks on the lower edges. Palette: deep navy, lavender, desaturated silver. Keep the central 60 percent broad, dark, quiet, low contrast and low-detail so quest icons and connectors overlaid on the image are easily readable. Put interesting silhouette detail at outer edges and lower corners; no focal object in the center. Atmospheric depth, restrained luminosity, subtly textured pixels. Landscape 3:2 composition. No recognizable existing game assets, no screenshots, no characters, no written text, no UI, no logo, no watermark. Opaque dark background.",
+      "generator": "built-in image_gen"
+    },
+    {
+      "id": "clockwork_foundry",
+      "prompt": "Use case: stylized-concept. Asset type: original pixel-art illustrated backdrop for a Minecraft FTB Quests chapter map. Create ONE beautiful wide landscape in crisp handcrafted 16-bit pixel art, consistent high quality with a painterly pixel-art fantasy world. Scene: an immense clockwork workshop with copper gears, brass pipes, belts and iron gantries at the outer edges, distant dim furnaces along the bottom, quiet mist in the middle. Palette: charcoal blue, aged copper, muted amber. Keep the central 60 percent broad, dark, quiet, low contrast and low-detail so quest icons and connectors overlaid on the image are easily readable. Put interesting silhouette detail at outer edges and lower corners; no focal object in the center. Atmospheric depth, restrained luminosity, subtly textured pixels. Landscape 3:2 composition. No recognizable existing game assets, no screenshots, no characters, no written text, no UI, no logo, no watermark. Opaque dark background.",
+      "generator": "built-in image_gen"
+    },
+    {
+      "id": "lost_frontier",
+      "prompt": "Use case: stylized-concept. Asset type: original pixel-art illustrated backdrop for a Minecraft FTB Quests chapter map. Create ONE beautiful wide landscape in crisp handcrafted 16-bit pixel art, consistent high quality with a painterly pixel-art fantasy world. Scene: a fantasy explorer's landscape with layered mountains, ancient overgrown arches, a distant airship silhouette tiny near the corner and branching trails at the lower edges. Palette: dark slate, misty teal, aged ochre. Keep the central 60 percent broad, dark, quiet, low contrast and low-detail so quest icons and connectors overlaid on the image are easily readable. Put interesting silhouette detail at outer edges and lower corners; no focal object in the center. Atmospheric depth, restrained luminosity, subtly textured pixels. Landscape 3:2 composition. No recognizable existing game assets, no screenshots, no characters, no written text, no UI, no logo, no watermark. Opaque dark background.",
+      "generator": "built-in image_gen"
+    },
+    {
+      "id": "harvest_homestead",
+      "prompt": "Use case: stylized-concept. Asset type: original pixel-art illustrated backdrop for a Minecraft FTB Quests chapter map. Create ONE beautiful wide landscape in crisp handcrafted 16-bit pixel art, consistent high quality with a painterly pixel-art fantasy world. Scene: an enchanting rural homestead at blue hour, wheat and orchards framing the edges, a wooden windmill and warm farmhouse windows in the far corners, distant peaceful hills. Palette: deep olive, dusky blue, muted amber. Keep the central 60 percent broad, dark, quiet, low contrast and low-detail so quest icons and connectors overlaid on the image are easily readable. Put interesting silhouette detail at outer edges and lower corners; no focal object in the center. Atmospheric depth, restrained luminosity, subtly textured pixels. Landscape 3:2 composition. No recognizable existing game assets, no screenshots, no characters, no written text, no UI, no logo, no watermark. Opaque dark background.",
+      "generator": "built-in image_gen"
+    },
+    {
+      "id": "energy_nexus",
+      "prompt": "Use case: stylized-concept. Asset type: original pixel-art illustrated backdrop for a Minecraft FTB Quests chapter map. Create ONE beautiful wide landscape in crisp handcrafted 16-bit pixel art, consistent high quality with a painterly pixel-art fantasy world. Scene: a futuristic energy reactor vault with tall pylons and restrained electric conduits at the edges, geometric architecture and a faint faraway teal reactor glow. Palette: midnight navy, cyan, muted steel. Keep the central 60 percent broad, dark, quiet, low contrast and low-detail so quest icons and connectors overlaid on the image are easily readable. Put interesting silhouette detail at outer edges and lower corners; no focal object in the center. Atmospheric depth, restrained luminosity, subtly textured pixels. Landscape 3:2 composition. No recognizable existing game assets, no screenshots, no characters, no written text, no UI, no logo, no watermark. Opaque dark background.",
+      "generator": "built-in image_gen"
+    },
+    {
+      "id": "void_archipelago",
+      "prompt": "Use case: stylized-concept. Asset type: original pixel-art illustrated backdrop for a Minecraft FTB Quests chapter map. Create ONE beautiful wide landscape in crisp handcrafted 16-bit pixel art, consistent high quality with a painterly pixel-art fantasy world. Scene: an ethereal void archipelago with pale fragmented floating stone islands at the lower edges, tall strange branching plants and violet crystal gates in the far corners, calm empty starless void center. Palette: deep plum, dusty violet, pale stone gold. Keep the central 60 percent broad, dark, quiet, low contrast and low-detail so quest icons and connectors overlaid on the image are easily readable. Put interesting silhouette detail at outer edges and lower corners; no focal object in the center. Atmospheric depth, restrained luminosity, subtly textured pixels. Landscape 3:2 composition. No recognizable existing game assets, no screenshots, no characters, no written text, no UI, no logo, no watermark. Opaque dark background.",
+      "generator": "built-in image_gen"
+    },
+    {
+      "id": "abyssal_sanctuary",
+      "prompt": "Use case: stylized-concept. Asset type: original pixel-art illustrated backdrop for a Minecraft FTB Quests chapter map. Create ONE beautiful wide landscape in crisp handcrafted 16-bit pixel art, consistent high quality with a painterly pixel-art fantasy world. Scene: a mysterious underwater sanctuary, coral and kelp framing the edges, a broken ancient stone arch, tiny bioluminescent creatures near the corners and hazy blue depths in the middle. Palette: midnight blue, turquoise, restrained coral pink. Keep the central 60 percent broad, dark, quiet, low contrast and low-detail so quest icons and connectors overlaid on the image are easily readable. Put interesting silhouette detail at outer edges and lower corners; no focal object in the center. Atmospheric depth, restrained luminosity, subtly textured pixels. Landscape 3:2 composition. No recognizable existing game assets, no screenshots, no characters, no written text, no UI, no logo, no watermark. Opaque dark background.",
+      "generator": "built-in image_gen"
+    },
+    {
+      "id": "ember_citadel",
+      "prompt": "Use case: stylized-concept. Asset type: original pixel-art illustrated backdrop for a Minecraft FTB Quests chapter map. Create ONE beautiful wide landscape in crisp handcrafted 16-bit pixel art, consistent high quality with a painterly pixel-art fantasy world. Scene: a dramatic basalt fortress in an otherworldly volcanic dimension, black rock towers and crimson fungi framing the edges, dim lava rivulets at the lower corners, smoky empty expanse in the center. Palette: near black, dark burgundy, restrained ember orange. Keep the central 60 percent broad, dark, quiet, low contrast and low-detail so quest icons and connectors overlaid on the image are easily readable. Put interesting silhouette detail at outer edges and lower corners; no focal object in the center. Atmospheric depth, restrained luminosity, subtly textured pixels. Landscape 3:2 composition. No recognizable existing game assets, no screenshots, no characters, no written text, no UI, no logo, no watermark. Opaque dark background.",
+      "generator": "built-in image_gen"
+    },
+    {
+      "id": "archive_vault",
+      "prompt": "Use case: stylized-concept. Asset type: original pixel-art illustrated backdrop for a Minecraft FTB Quests chapter map. Create ONE beautiful wide landscape in crisp handcrafted 16-bit pixel art, consistent high quality with a painterly pixel-art fantasy world. Scene: a vast fantasy storage archive with orderly shelves, mysterious drawers, copper-latched chests and blue memory-crystal terminals framing the edges, dim architectural depth in the middle. Palette: deep brown charcoal, antique bronze, muted cyan. Keep the central 60 percent broad, dark, quiet, low contrast and low-detail so quest icons and connectors overlaid on the image are easily readable. Put interesting silhouette detail at outer edges and lower corners; no focal object in the center. Atmospheric depth, restrained luminosity, subtly textured pixels. Landscape 3:2 composition. No recognizable existing game assets, no screenshots, no characters, no written text, no UI, no logo, no watermark. Opaque dark background.",
+      "generator": "built-in image_gen"
+    },
+    {
+      "id": "world_reborn",
+      "prompt": "Use case: stylized-concept. Asset type: original pixel-art illustrated backdrop for a Minecraft FTB Quests chapter map. Create ONE beautiful wide landscape in crisp handcrafted 16-bit pixel art, consistent high quality with a painterly pixel-art fantasy world. Scene: a hopeful fantasy world restoration scene at twilight, cracked barren earth and dark dead branches in the lower left gradually giving way to green saplings, flowing water and flourishing foliage on the right, distant terraced valley. Palette: dark umber, deep forest green, quiet teal, muted dawn gold. Keep the central 60 percent broad, dark, quiet, low contrast and low-detail so quest icons and connectors overlaid on the image are easily readable. Put interesting silhouette detail at outer edges and lower corners; no focal object in the center. Atmospheric depth, restrained luminosity, subtly textured pixels. Landscape 3:2 composition. No recognizable existing game assets, no screenshots, no characters, no written text, no UI, no logo, no watermark. Opaque dark background.",
+      "generator": "built-in image_gen"
+    },
+    {
+      "id": "botanical_sanctuary",
+      "prompt": "Original16-bitpixel-artquestchapterbackdrop: ancientbotanicalsanctuaryattwilight,mossystone terraces,luminousflowers,tangledroots,smalltealglowingpool,deepforestedgeframing. Central60percentdark,quiet,lowdetail; detailonouteredges/lowercorners. Midnightgreen,jade,mutedgold,atmosphericdepth. Nocharacters,text,logos,watermarks,UI,screenshots orcopiedgameassets. Opaque,3:2landscape.",
+      "generator": "built-in image_gen"
+    }
+  ]
+}

@@ -6,123 +6,282 @@
     {
       "id": "bloodmagic:altar",
       "title": "Blood Altar",
-      "desc": "Craft it from 5 stone, a furnace and 3 gold ingots; it stores Life Essence (LP) and transmutes items dropped into it, and everything else in the mod hangs off it."
+      "desc": "Place the Blood Altar with room for the larger tier structures around it. Its stored Life Essence powers altar recipes; your Soul Network is a separate reserve, so learn to check both.",
+      "requires": []
     },
     {
       "id": "bloodmagic:sacrificialdagger",
       "title": "Sacrificial Knife",
-      "desc": "The starter LP source: right-click air near the altar to trade one heart of health for 200 LP."
-    },
-    {
-      "id": "bloodmagic:weakbloodorb",
-      "title": "Weak Blood Orb",
-      "desc": "Transmute a diamond in a Tier 1 altar for 2,000 LP; binding it opens your personal Soul Network, capped at 5,000 LP."
-    },
-    {
-      "id": "bloodmagic:blankslate",
-      "title": "Blank Slate",
-      "desc": "Any stone transmuted in the altar for 1,000 LP - the base crafting component for sigils, runes and most machines."
-    },
-    {
-      "id": "bloodmagic:alchemytable",
-      "title": "Alchemy Table",
-      "desc": "Built from stone, planks, iron, gold and a Blank Slate; it spends LP from the Blood Orb slotted into it to make Arcane Ashes, sigil reagents and anointments."
-    },
-    {
-      "id": "bloodmagic:divinationsigil",
-      "title": "Divination Sigil",
-      "desc": "Draw an Alchemy Array with Arcane Ashes, feed it redstone then a Blank Slate; it reads your Soul Network LP and an altar's tier, fill and capacity."
-    },
-    {
-      "id": "bloodmagic:soulsnare",
-      "title": "Soul Snare",
-      "desc": "String transmuted in the altar for 500 LP; thrown at a hostile mob it marks the mob with white particles so that killing it drops Demon Will."
+      "desc": "Use the Sacrificial Knife near the altar to supply its first Life Essence. Keep food and healing ready, and stop before low health turns routine crafting into a death.",
+      "requires": []
     },
     {
       "id": "bloodmagic:soulforge",
       "title": "Hellfire Forge",
-      "desc": "Crafted from stone, iron and a Blank Slate; it burns Demon Will instead of LP and is the only way to make Tartaric Gems, Sentient tools and explosive charges."
+      "desc": "Build the Hellfire Forge for Demon Will crafting. Unlike the altar, it uses Will and Tartaric Gems; keep those resources separate from your LP equipment.",
+      "requires": []
     },
     {
-      "id": "bloodmagic:soulgempetty",
-      "title": "Petty Tartaric Gem",
-      "desc": "First Hellfire Forge recipe; stores 64 Demon Will and vacuums up loose Will dropped on the ground."
+      "id": "bloodmagic:weakbloodorb",
+      "title": "Weak Blood Orb",
+      "desc": "Transmute the first Blood Orb in the altar, bind it to yourself and read your Soul Network with the Divination Sigil once available. The orb is a reusable crafting and network tool, not fuel to replace after every recipe.",
+      "requires": [
+        "bloodmagic:altar",
+        "bloodmagic:sacrificialdagger"
+      ]
     },
     {
-      "id": "bloodmagic:soulsword",
-      "title": "Sentient Sword",
-      "desc": "Forged with Demon Will, it harvests Will from every hostile kill and scales its damage with the Will you are carrying, replacing Soul Snares entirely."
+      "id": "bloodmagic:blankslate",
+      "title": "Blank Slate",
+      "desc": "Keep the altar supplied while it turns stone into Blank Slates. Make a small reserve for runes, sigils and machines before moving on to higher slate tiers.",
+      "requires": [
+        "bloodmagic:altar",
+        "bloodmagic:sacrificialdagger"
+      ]
+    },
+    {
+      "id": "bloodmagic:soulsnare",
+      "title": "Soul Snare",
+      "desc": "Throw a Soul Snare at a hostile creature until it shows the effect, then defeat it to collect Demon Will. This starts the separate Hellfire Forge branch.",
+      "requires": [
+        "bloodmagic:altar"
+      ]
+    },
+    {
+      "id": "bloodmagic:alchemytable",
+      "title": "Alchemy Table",
+      "desc": "Supply the Alchemy Table with a bound Blood Orb and the recipe ingredients. This branch produces ashes and reagents for sigils and Living Armour while the altar develops in parallel.",
+      "requires": [
+        "bloodmagic:blankslate",
+        "bloodmagic:weakbloodorb"
+      ]
     },
     {
       "id": "bloodmagic:blankrune",
       "title": "Blank Rune",
-      "desc": "Stone, a Blank Slate and a bound Weak Blood Orb; ring the altar with 8 of them to reach Tier 2, and swap in speciality runes later for capacity, speed and sacrifice bonuses."
+      "desc": "Use Blood Runes to build the Tier 2 altar structure from the guide's diagram. Confirm the new tier with the Divination Sigil before attempting the next orb or slate.",
+      "requires": [
+        "bloodmagic:blankslate",
+        "bloodmagic:weakbloodorb"
+      ]
+    },
+    {
+      "id": "bloodmagic:basemonstersoul",
+      "title": "A Different Kind of Power",
+      "desc": "Collect Demon Will from a creature marked by a Soul Snare. Keep it for the first Tartaric Gem and forge recipes; it is separate from the altar's Life Essence.",
+      "requires": [
+        "bloodmagic:soulsnare"
+      ]
+    },
+    {
+      "id": "bloodmagic:divinationsigil",
+      "title": "Divination Sigil",
+      "desc": "Use the Divination Sigil to inspect an altar and your Soul Network. Check the displayed tier and available LP before an expensive infusion rather than guessing from the altar's appearance.",
+      "requires": [
+        "bloodmagic:alchemytable",
+        "bloodmagic:blankslate"
+      ]
+    },
+    {
+      "id": "bloodmagic:soulgempetty",
+      "title": "Petty Tartaric Gem",
+      "desc": "First Hellfire Forge recipe; stores 64 Demon Will and vacuums up loose Will dropped on the ground.",
+      "requires": [
+        "bloodmagic:soulforge",
+        "bloodmagic:basemonstersoul"
+      ]
     },
     {
       "id": "bloodmagic:apprenticebloodorb",
       "title": "Apprentice Blood Orb",
-      "desc": "A redstone block transmuted for 5,000 LP in a Tier 2 altar; raises the Soul Network cap to 25,000 LP and unlocks Tier 2 recipes."
+      "desc": "Complete the Tier 2 altar and prepare enough LP for the Apprentice Blood Orb. The larger network capacity supports the next range of alchemy and sigil recipes.",
+      "requires": [
+        "bloodmagic:blankrune"
+      ]
     },
     {
       "id": "bloodmagic:daggerofsacrifice",
       "title": "Dagger of Sacrifice",
-      "desc": "An iron sword transmuted for 3,000 LP; it instantly kills any mob within 2 blocks of the altar and dumps a large LP payout in, ending reliance on your own health."
+      "desc": "Use the Dagger of Sacrifice on suitable creatures close to the altar to supply LP. This is a separate altar-fuelling route; it does not replace Demon Will collection for the Hellfire Forge.",
+      "requires": [
+        "bloodmagic:blankrune"
+      ]
+    },
+    {
+      "id": "bloodmagic:reinforcedslate",
+      "title": "The Second Slate Tier",
+      "desc": "Upgrade Blank Slates in a Tier 2 altar. These slates support the next altar structure and a new set of sigil recipes.",
+      "requires": [
+        "bloodmagic:blankrune",
+        "bloodmagic:blankslate"
+      ]
+    },
+    {
+      "id": "bloodmagic:soulsword",
+      "title": "Sentient Sword",
+      "desc": "Forge a Sentient Sword and carry a Tartaric Gem while fighting. This replaces repeated Soul Snare use with a steadier way to gather the Will your forge recipes need.",
+      "requires": [
+        "bloodmagic:soulforge",
+        "bloodmagic:soulgempetty"
+      ]
     },
     {
       "id": "bloodmagic:magicianbloodorb",
       "title": "Magician's Blood Orb",
-      "desc": "A gold block transmuted for 25,000 LP in a Tier 3 altar; 150,000 LP capacity and the gate for Binding Reagent, Master Ritual Stones and the ARC."
+      "desc": "Build the guide's Tier 3 altar layout and verify its tier before making this orb. Prepare the altar's capacity and refill rate so the infusion does not stall halfway through.",
+      "requires": [
+        "bloodmagic:reinforcedslate",
+        "bloodmagic:apprenticebloodorb"
+      ]
     },
     {
       "id": "bloodmagic:masterritualstone",
       "title": "Master Ritual Stone",
-      "desc": "Obsidian, Ritual Stones and a Magician's Blood Orb; it sits at the centre of every ritual, laid out with a Ritual Diviner and lit with a Weak Activation Crystal."
+      "desc": "Choose a ritual in the guide, prepare its Ritual Stones and centre the layout on the Master Ritual Stone. The Ritual Diviner handles the arrangement; a bound Activation Crystal starts the finished ritual.",
+      "requires": [
+        "bloodmagic:magicianbloodorb"
+      ]
     },
     {
       "id": "bloodmagic:livingplate",
       "title": "Living Chestplate",
-      "desc": "Feed an Arcane Ash array Binding Reagent then an iron chestplate; the resulting armour earns Upgrade Points from how you play, up to a 100 point budget."
+      "desc": "Create Living Armour using the binding array described in the guide. Wear it while carrying out normal activities, then inspect the upgrades you earn and their shared upgrade-point budget.",
+      "requires": [
+        "bloodmagic:alchemytable",
+        "bloodmagic:magicianbloodorb"
+      ]
+    },
+    {
+      "id": "bloodmagic:infusedslate",
+      "title": "The Third Slate Tier",
+      "desc": "Upgrade Reinforced Slates in the Tier 3 altar. Reserve Imbued Slates for the ARC and the ritual equipment that connects your workshop to the Demon Realm.",
+      "requires": [
+        "bloodmagic:magicianbloodorb",
+        "bloodmagic:reinforcedslate"
+      ]
+    },
+    {
+      "id": "bloodmagic:ritualdiviner",
+      "title": "Plan the Ritual",
+      "desc": "Select the intended ritual with the Ritual Diviner and supply its required stones. Use the guide's layout and activation instructions before you spend LP on the ritual.",
+      "requires": [
+        "bloodmagic:magicianbloodorb"
+      ]
+    },
+    {
+      "id": "bloodmagic:activationcrystalweak",
+      "title": "Wake the Stones",
+      "desc": "Bind the Weak Activation Crystal and use it on a completed ritual's Master Ritual Stone. Check the ritual's startup and running LP costs first.",
+      "requires": [
+        "bloodmagic:magicianbloodorb"
+      ]
     },
     {
       "id": "dim:bloodmagic:dungeon",
       "title": "Demon Realm",
-      "desc": "Run the Edge of the Hidden Realm ritual to raise an Inversion Pillar into the dungeon dimension's Antechamber; the Pathway to the Endless Realm ritual reaches the deeper, more dangerous floors."
-    },
-    {
-      "id": "bloodmagic:weak_tau",
-      "title": "Tau Fruit",
-      "desc": "Looted from Demon Realm dungeon chests and then farmable; if a mob is standing on the plant when it matures it drains that mob and becomes Saturated Tau instead."
+      "desc": "Build and activate the Edge of the Hidden Realm ritual to reach the Demon Realm entrance. Bring supplies and a return plan; deeper dungeon routes provide resources needed by the later altar tiers.",
+      "requires": [
+        "bloodmagic:masterritualstone",
+        "bloodmagic:ritualdiviner",
+        "bloodmagic:activationcrystalweak"
+      ]
     },
     {
       "id": "bloodmagic:alchemicalreactionchamber",
       "title": "Alchemical Reaction Chamber",
-      "desc": "Stone, Imbued Slates, an iron block, a furnace and a Magician's Blood Orb; it triples ores, reverts crafted items and is the only machine that produces Weak Blood Shards."
+      "desc": "Set up the Alchemical Reaction Chamber with the correct tool and recipe ingredients. Its processing routes connect the dungeon crops to the materials for your next altar upgrade.",
+      "requires": [
+        "bloodmagic:infusedslate",
+        "bloodmagic:magicianbloodorb"
+      ]
     },
     {
-      "id": "bloodmagic:weakbloodshard",
-      "title": "Weak Blood Shard",
-      "desc": "Process Saturated Tau in the ARC with a Sanguine Reverter tool; it is the bottleneck resource for the Tier 4 altar, the Master Blood Orb and Greater Tartaric Gems."
-    },
-    {
-      "id": "bloodmagic:masterbloodorb",
-      "title": "Master Blood Orb",
-      "desc": "A Weak Blood Shard transmuted for 40,000 LP in a Tier 4 altar, giving a 1,000,000 LP Soul Network."
-    },
-    {
-      "id": "bloodmagic:ritualdivinerdusk",
-      "title": "Ritual Diviner [Dusk]",
-      "desc": "Upgrade the basic Diviner with Demonic Slates and two Dusk Inscription Tools (2,000 LP each at a Tier 4 altar) to build the advanced rituals - Well of Suffering, Living Evolution, the meteor ritual and the deep-realm gateway."
-    },
-    {
-      "id": "bloodmagic:archmagebloodorb",
-      "title": "Archmage's Blood Orb",
-      "desc": "A Hellforged Block transmuted for 80,000 LP in a Tier 4 altar; the block is nine Hellforged Ingots smelted from Demonite ore mined in the Mines, reached with the uncraftable Foreman's Key."
+      "id": "bloodmagic:weak_tau",
+      "title": "Tau Fruit",
+      "desc": "Bring Tau Fruit home from the Demon Realm and grow it in a controlled area. The saturated crop is part of the route to Weak Blood Shards, so follow its special growth instructions rather than harvesting every plant immediately.",
+      "requires": [
+        "dim:bloodmagic:dungeon"
+      ]
     },
     {
       "id": "bloodmagic:hellforgedparts",
       "title": "Intricate Hellforged Parts",
-      "desc": "Rare uncraftable loot from deep Demon Realm dungeons; combined with netherite scrap it converts each Blood Rune into its Reinforced version, doubling that rune's effect."
+      "desc": "Recover Intricate Hellforged Parts from the deeper Demon Realm. Use them in the listed rune upgrades to improve an altar you already rely on rather than rebuilding the entire structure at once.",
+      "requires": [
+        "dim:bloodmagic:dungeon"
+      ]
+    },
+    {
+      "id": "bloodmagic:weakbloodshard",
+      "title": "Weak Blood Shard",
+      "desc": "Process the required saturated Tau material in the ARC with its listed tool. Save Weak Blood Shards for the Tier 4 altar and Master Blood Orb before using the first supply on optional equipment.",
+      "requires": [
+        "bloodmagic:weak_tau",
+        "bloodmagic:alchemicalreactionchamber"
+      ]
+    },
+    {
+      "id": "bloodmagic:masterbloodorb",
+      "title": "Master Blood Orb",
+      "desc": "Complete the Tier 4 altar and infuse a Weak Blood Shard into the Master Blood Orb. Verify the structure and capacity first; the new network supports much larger ritual projects.",
+      "requires": [
+        "bloodmagic:weakbloodshard"
+      ]
+    },
+    {
+      "id": "bloodmagic:archmagebloodorb",
+      "title": "Archmage's Blood Orb",
+      "desc": "Explore the deeper Demon Realm routes for the Hellforged materials used by this orb. Prepare the altar recipe shown in the installed guide; dungeon progression and your LP workshop meet at this final network upgrade.",
+      "requires": [
+        "bloodmagic:masterbloodorb",
+        "dim:bloodmagic:dungeon"
+      ]
+    },
+    {
+      "id": "bloodmagic:demonslate",
+      "title": "The Fourth Slate Tier",
+      "desc": "Upgrade Imbued Slates in a Tier 4 altar. Demonic Slates open the next tier of ritual tools and advanced equipment.",
+      "requires": [
+        "bloodmagic:masterbloodorb",
+        "bloodmagic:infusedslate"
+      ]
+    },
+    {
+      "id": "bloodmagic:ritualdivinerdusk",
+      "title": "Ritual Diviner [Dusk]",
+      "desc": "Upgrade the basic Diviner with Demonic Slates and two Dusk Inscription Tools (2,000 LP each at a Tier 4 altar) to build the advanced rituals - Well of Suffering, Living Evolution, the meteor ritual and the deep-realm gateway.",
+      "requires": [
+        "bloodmagic:ritualdiviner",
+        "bloodmagic:demonslate"
+      ]
     }
   ],
-  "notes": "All 24 ids were checked against the item ids in BloodMagic-1.18-1.20.1-3.3.8-50.jar (union of assets/bloodmagic/models/item/*.json and the item./block. lang keys). Ordering follows the mod's own Patchouli entry 'Tiers & Getting Started' plus the recipe data (altar recipes carry an 'upgradeLevel' field that is tier-1, e.g. weakbloodorb=0 means Tier 1 altar; alchemytable/array recipes carry the required Blood Orb tier). Notable items deliberately left out to stay inside 24 entries, all of which do exist in the jar if the integrator wants extra steps: bloodmagic:arcaneashes (Alchemy Table, needed before any array), bloodmagic:reinforcedslate and bloodmagic:infusedslate (Tier 2 slate rungs), bloodmagic:incensealtar (self-sacrifice multiplier), bloodmagic:ritualdiviner (the pre-Dusk diviner), bloodmagic:activationcrystalweak, bloodmagic:demoncrystallizer / bloodmagic:demoncrucible and the aspected Will crystals (vengefulcrystal, corrosivecrystal, steadfastcrystal, destructivecrystal), bloodmagic:soulgemcommon / soulgemgreater, bloodmagic:simplekey and bloodmagic:mineentrancekey, bloodmagic:dungeon_ore, bloodmagic:ingot_hellforged, bloodmagic:dungeon_metal, bloodmagic:teleposer. Nothing had to be dropped for being unverifiable. The Demon Realm dimension id is bloodmagic:dungeon (data/bloodmagic/dimension/dungeon.json) - the same dimension serves both the shallow Antechamber and the deep realm, so there is only one dim: step. Blood Magic registers no entities of its own (no entity.bloodmagic.* lang keys), so there are no kill: steps; the Sentient Sword and Soul Snare steps stand in for the Demon Will farming loop. Warning for quest checks: many ids in the jar's model list are render-only variants and are NOT obtainable items - anything ending in _activated, _deactivated, _pulling_N, or the per-aspect suffixes _corrosive/_destructive/_steadfast/_vengeful on soulsword/soulaxe/soulgem*; the aspect of a Tartaric Gem or Sentient tool is NBT, not a separate item id."
+  "notes": "Reviewed against the primary sources listed above. Every chain row now declares its intended prerequisites; an empty list is an intentional independent starting point. The order is topological. Item and checkpoint-icon asset paths and typed objective identifiers were checked against the listed jar or source snapshot. Jar inspection verifies identifiers and selected mechanics, not that every route has been completed in game.",
+  "sources": [
+    {
+      "kind": "installed_mod_jar",
+      "file": "BloodMagic-1.18-1.20.1-3.3.8-50.jar",
+      "paths": [
+        "assets/bloodmagic/lang/en_us.json",
+        "data/bloodmagic/recipes/",
+        "assets/bloodmagic/lang/en_us.json",
+        "assets/bloodmagic/patchouli_books/guide/en_us/categories/alchemy_array.json",
+        "assets/bloodmagic/patchouli_books/guide/en_us/categories/alchemy_array/functional_array.json"
+      ],
+      "scope": "English guide/tooltip text, recipe data and inventory assets; selected special mechanics checked against implementation."
+    }
+  ],
+  "coverage": {
+    "type": "authored_offline_progression",
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "verification": "installed_jar_review",
+    "reviewed": "2026-10-07",
+    "scope": "Altar tiers, LP and Soul Network, Will equipment, alchemy, rituals and Demon Realm materials.",
+    "guide_rows": 30,
+    "manual_checkpoints": 0,
+    "limits": "A curated teaching route, not every item or mechanic. Recipe quantities and conditions follow the installed pack. Manual checkpoints require player confirmation. No complete in-game playthrough claimed."
+  },
+  "content_revision": "2026-10-07: explicit branched prerequisites, practical instructions and primary-source coverage review."
 }

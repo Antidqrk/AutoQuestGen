@@ -1,168 +1,264 @@
 {
- "mod": "mekanismgenerators",
- "verified_against": "MekanismGenerators-1.20.1-10.4.16.80.jar",
- "item_count_in_jar": 33,
- "parent_mod": "mekanism",
- "chain": [
-  {
-   "id": "mekanismgenerators:heat_generator",
-   "title": "Fire Under the Floor",
-   "desc": "Craft from iron, planks, copper, osmium and a furnace; it burns solid fuel for FE and passively drinks heat from adjacent lava."
-  },
-  {
-   "id": "mekanismgenerators:solar_panel",
-   "title": "Wafer of Daylight",
-   "desc": "Craft from glass panes, redstone dust, an infused alloy and osmium ingots; three panels form the face of a Solar Generator."
-  },
-  {
-   "id": "mekanismgenerators:solar_generator",
-   "title": "Standing in the Sun",
-   "desc": "Craft three solar panels over infused alloy, iron, an energy tablet and osmium; it makes free FE under open sky."
-  },
-  {
-   "id": "mekanismgenerators:wind_generator",
-   "title": "Higher Is Windier",
-   "desc": "Craft from osmium, an infused alloy, an energy tablet and a basic control circuit; its FE output scales with the altitude you place it at."
-  },
-  {
-   "id": "mekanismgenerators:bio_generator",
-   "title": "Compost Into Current",
-   "desc": "Craft from redstone, infused alloys, bio fuel, a basic control circuit and iron; it burns Bio Fuel milled out of plant matter in the Crusher."
-  },
-  {
-   "id": "mekanismgenerators:gas_burning_generator",
-   "title": "Ethylene Ignition",
-   "desc": "Craft from osmium, infused alloys, two steel casings and an electrolytic core; it burns hydrogen or Ethylene and out-produces every earlier generator combined."
-  },
-  {
-   "id": "mekanismgenerators:advanced_solar_generator",
-   "title": "Four Suns in One Frame",
-   "desc": "Craft from four Solar Generators, infused alloys and iron; the advanced panel unfolds on placement and is the last passive generator worth building."
-  },
-  {
-   "id": "mekanismgenerators:electromagnetic_coil",
-   "title": "Electromagnetic Coil",
-   "desc": "Craft from steel ingots, gold ingots and an energy tablet; it is the electrical core of the Industrial Turbine."
-  },
-  {
-   "id": "mekanismgenerators:rotational_complex",
-   "title": "Rotational Complex",
-   "desc": "Craft from steel, infused alloys and advanced control circuits; it couples the spinning rotor shaft to the coil that actually makes power."
-  },
-  {
-   "id": "mekanismgenerators:turbine_rotor",
-   "title": "Rotor Shaft",
-   "desc": "Craft from steel ingots and infused alloys; rotors stack up the centre column of the turbine, one per level of height."
-  },
-  {
-   "id": "mekanismgenerators:turbine_blade",
-   "title": "Blades on the Shaft",
-   "desc": "Craft from steel and an infused alloy; two blades slot onto every rotor and set how much steam the turbine can swallow per tick."
-  },
-  {
-   "id": "mekanismgenerators:turbine_casing",
-   "title": "Turbine Casing",
-   "desc": "Craft four at a time from steel and osmium; the casing skins the whole Industrial Turbine multiblock."
-  },
-  {
-   "id": "mekanismgenerators:turbine_valve",
-   "title": "Steam In, Power Out",
-   "desc": "Craft two at a time from turbine casings and an advanced control circuit; valves are the only faces that accept steam and emit FE."
-  },
-  {
-   "id": "mekanismgenerators:saturating_condenser",
-   "title": "Closing the Loop",
-   "desc": "Craft from steel, tin and a bucket; it condenses spent steam back into water so a boiler and turbine can run forever on one fill."
-  },
-  {
-   "id": "mekanismgenerators:fission_reactor_casing",
-   "title": "Fission Reactor Casing",
-   "desc": "Craft four at a time from lead ingots around a steel casing; this is the pressure shell of the Fission Reactor."
-  },
-  {
-   "id": "mekanismgenerators:fission_fuel_assembly",
-   "title": "Fuel Assembly",
-   "desc": "Craft from lead, steel and a basic chemical tank; stack assemblies into columns to hold the Fissile Fuel that actually burns."
-  },
-  {
-   "id": "mekanismgenerators:control_rod_assembly",
-   "title": "Control Rod Assembly",
-   "desc": "Craft from an elite control circuit, lead and steel; one assembly caps each fuel column and gives you a way to scram the reactor."
-  },
-  {
-   "id": "mekanismgenerators:fission_reactor_port",
-   "title": "Fission Reactor Port",
-   "desc": "Craft two at a time from fission casings and an elite control circuit; ports move coolant in and steam, waste and heat out."
-  },
-  {
-   "id": "mekanismgenerators:reactor_glass",
-   "title": "Rated for Fission",
-   "desc": "Craft four at a time from enriched iron, lead and silica glass; it is the only window the fission and fusion shells will accept."
-  },
-  {
-   "id": "mekanismgenerators:fusion_reactor_frame",
-   "title": "Fusion Reactor Frame",
-   "desc": "Craft four at a time from ultimate alloys, polonium pellets and a steel casing; polonium is fission waste, so the reactor you just built is what unlocks this one."
-  },
-  {
-   "id": "mekanismgenerators:hohlraum",
-   "title": "The Ignition Pellet",
-   "desc": "Infuse four gold dust with carbon in the Metallurgic Infuser, then fill it with D-T fuel; it is the capsule the laser shoots to start fusion."
-  },
-  {
-   "id": "mekanismgenerators:laser_focus_matrix",
-   "title": "Laser Focus Matrix",
-   "desc": "Craft two at a time from reactor glass and a block of redstone; the matrix takes the stored laser shot that lights the hohlraum."
-  },
-  {
-   "id": "mekanismgenerators:fusion_reactor_controller",
-   "title": "First Light",
-   "desc": "Craft from ultimate control circuits, fusion frames, a glass pane and a basic chemical tank; it runs the D-T burn that powers everything after it."
-  },
-  {
-   "id": "mekanismgenerators:module_solar_recharging_unit",
-   "title": "Sunlight in the Suit",
-   "desc": "Craft from an Advanced Solar Generator, elite alloys, a Module Base and polonium pellets; install it in a MekaSuit helmet to recharge from daylight."
+  "mod": "mekanismgenerators",
+  "verified_against": "MekanismGenerators-1.20.1-10.4.16.80.jar",
+  "item_count_in_jar": 33,
+  "parent_mod": "mekanism",
+  "chain": [
+    {
+      "id": "mekanismgenerators:heat_generator",
+      "title": "First power from heat",
+      "desc": "Place a Heat Generator and use its active fuel supply or passive heat setup. Connect it to a machine or buffer and watch the actual output before adding more consumers.",
+      "requires": [
+        "mekanism:ingot_osmium"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:solar_panel",
+      "title": "Assemble solar components",
+      "desc": "Craft solar panels for the sunlight-powered generator branch. Solar production depends on the environment, so keep another source or a charged buffer for downtime.",
+      "requires": []
+    },
+    {
+      "id": "mekanismgenerators:solar_generator",
+      "title": "Power while the sun shines",
+      "desc": "Install a Solar Generator with open sky. Solar, wind, and fuel generation are alternative early paths; you do not need every type to run a workshop.",
+      "requires": [
+        "mekanismgenerators:solar_panel"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:wind_generator",
+      "title": "Harness the wind",
+      "desc": "Place a Wind Generator with clear space and route its energy to your base. Check local output at the chosen height instead of assuming a fixed rate across packs.",
+      "requires": [
+        "mekanism:alloy_infused",
+        "mekanism:basic_control_circuit"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:bio_generator",
+      "title": "Put organic fuel to work",
+      "desc": "Feed a Bio-Generator with bio fuel from a Mekanism Crusher. Automate a renewable crop source if this will be your main workshop supply.",
+      "requires": [
+        "mekanism:crusher"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:gas_burning_generator",
+      "title": "Turn a gas supply into power",
+      "desc": "Feed a supported fuel gas and energy output connection. Ethylene can support a larger factory, but it needs the complete Mekanism production chain and a steady organic supply.",
+      "requires": [
+        "mekanism:alloy_infused",
+        "mekanism:steel_casing"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:advanced_solar_generator",
+      "title": "Expand the solar branch",
+      "desc": "Upgrade the solar installation and provide room for its structure. Buffer the daytime production so machines can finish their work after dark.",
+      "requires": [
+        "mekanismgenerators:solar_generator"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:turbine_casing",
+      "title": "Design an industrial turbine",
+      "desc": "Plan the complete turbine using Mekanism's multiblock guide. It converts supplied steam into energy; fission is one possible steam source, not a required recipe dependency.",
+      "requires": []
+    },
+    {
+      "id": "mekanismgenerators:turbine_rotor",
+      "title": "The central shaft",
+      "desc": "Stack the rotors in the turbine's center and fit blades to match the selected size. Check the allowed dimensions before filling the outer shell.",
+      "requires": [
+        "mekanismgenerators:turbine_casing"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:turbine_blade",
+      "title": "Give the rotor working area",
+      "desc": "Fit turbine blades and compare the supported steam flow with your source. Extra casing alone does not make a turbine productive.",
+      "requires": [
+        "mekanismgenerators:turbine_rotor"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:rotational_complex",
+      "title": "Join rotor and generator",
+      "desc": "Place the Rotational Complex above the rotor as shown in the structure guide. Keep space above it for electromagnetic coils and steam-handling parts.",
+      "requires": [
+        "mekanismgenerators:turbine_rotor"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:electromagnetic_coil",
+      "title": "Convert rotation into energy",
+      "desc": "Arrange electromagnetic coils for the installed blades. Balance the generator section with the rotor rather than adding coils without a matching turbine capacity.",
+      "requires": [
+        "mekanismgenerators:rotational_complex"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:turbine_valve",
+      "title": "Connect the steam circuit",
+      "desc": "Use turbine valves for the required input and output connections. Check the completed turbine's interface before starting a high-throughput steam source.",
+      "requires": [
+        "mekanismgenerators:turbine_casing"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:saturating_condenser",
+      "title": "Recover cooling water",
+      "desc": "Add condensers where the guide specifies and return the recovered water to your cooling circuit. Monitor the return rate under load; a closed loop still needs enough capacity.",
+      "requires": [
+        "mekanismgenerators:turbine_valve"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:fission_reactor_casing",
+      "title": "Start a separate fission project",
+      "desc": "Plan a complete fission reactor, a coolant supply, steam handling, and radioactive waste storage before fueling it. Fission is optional for early power and industrial turbines.",
+      "requires": []
+    },
+    {
+      "id": "mekanismgenerators:fission_fuel_assembly",
+      "title": "Arrange the fuel columns",
+      "desc": "Place fuel assemblies within the reactor's permitted layout. Leave room for coolant and use the reactor guide to determine valid dimensions and control-rod placement.",
+      "requires": [
+        "mekanismgenerators:fission_reactor_casing"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:control_rod_assembly",
+      "title": "Control each fuel column",
+      "desc": "Fit the required control-rod assemblies above fuel columns. Complete the shell and verify the reactor forms before preparing fuel or raising the burn rate.",
+      "requires": [
+        "mekanismgenerators:fission_fuel_assembly"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:fission_reactor_port",
+      "title": "Separate fuel, coolant, and waste",
+      "desc": "Configure reactor ports for each resource. Build the Mekanism fissile-fuel chain and radiation-safe waste route before operation, then begin at a low burn rate with coolant monitoring.",
+      "requires": [
+        "mekanismgenerators:fission_reactor_casing"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:reactor_glass",
+      "title": "Inspect the reactor shell",
+      "desc": "Use Reactor Glass where the multiblock permits it. A clear view helps inspection, but the controller's coolant, heat, and damage readings determine whether operation is safe.",
+      "requires": [
+        "mekanismgenerators:fission_reactor_casing"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:fusion_reactor_frame",
+      "title": "Plan a fusion facility",
+      "desc": "Start the fusion branch with its frame and complete structure plan. It requires deuterium and tritium production, startup fuel, laser ignition, and significant supporting machinery.",
+      "requires": [
+        "mekanism:pellet_polonium"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:fusion_reactor_controller",
+      "title": "Control fusion injection",
+      "desc": "Add the controller and required ports. Prepare independent deuterium and tritium supplies, then review injection settings before attempting ignition.",
+      "requires": [
+        "mekanismgenerators:fusion_reactor_frame"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:hohlraum",
+      "title": "Prepare the ignition fuel",
+      "desc": "Infuse gold dust with carbon to make a Hohlraum, then fill it with fusion fuel as directed by the reactor guide. This container can be prepared early, but an empty Hohlraum cannot start the reactor.",
+      "requires": [
+        "mekanism:metallurgic_infuser"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:laser_focus_matrix",
+      "title": "Deliver the ignition pulse",
+      "desc": "Build the laser and energy-storage setup, aiming through the Laser Focus Matrix. Confirm the fueled Hohlraum and gas supplies before sending the startup pulse.",
+      "requires": [
+        "mekanismgenerators:fusion_reactor_controller"
+      ]
+    },
+    {
+      "id": "mekanismgenerators:module_solar_recharging_unit",
+      "title": "Recharge your suit in daylight",
+      "desc": "Install a Solar Recharging Unit in compatible MekaSuit equipment using the Modification Station. This equipment upgrade needs Mekanism's suit progression, not a fusion reactor.",
+      "requires": [
+        "mekanismgenerators:advanced_solar_generator"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "hub": "mekanismgenerators:turbine_casing",
+      "members": [
+        "mekanismgenerators:turbine_rotor",
+        "mekanismgenerators:turbine_blade",
+        "mekanismgenerators:turbine_vent",
+        "mekanismgenerators:turbine_valve",
+        "mekanismgenerators:electromagnetic_coil",
+        "mekanismgenerators:rotational_complex",
+        "mekanismgenerators:saturating_condenser"
+      ]
+    },
+    {
+      "hub": "mekanismgenerators:fission_reactor_casing",
+      "members": [
+        "mekanismgenerators:fission_reactor_port",
+        "mekanismgenerators:fission_reactor_logic_adapter",
+        "mekanismgenerators:control_rod_assembly",
+        "mekanismgenerators:fission_fuel_assembly",
+        "mekanismgenerators:reactor_glass"
+      ]
+    },
+    {
+      "hub": "mekanismgenerators:fusion_reactor_controller",
+      "members": [
+        "mekanismgenerators:fusion_reactor_frame",
+        "mekanismgenerators:fusion_reactor_port",
+        "mekanismgenerators:fusion_reactor_logic_adapter",
+        "mekanismgenerators:laser_focus_matrix",
+        "mekanismgenerators:hohlraum",
+        "mekanismgenerators:reactor_glass",
+        "mekanismgenerators:deuterium_bucket",
+        "mekanismgenerators:tritium_bucket",
+        "mekanismgenerators:fusion_fuel_bucket",
+        "mekanismgenerators:module_geothermal_generator_unit"
+      ]
+    }
+  ],
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "sources": [
+    "https://wiki.aidancbrady.com/wiki/Home",
+    "https://github.com/mekanism/Mekanism"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Alternative early generators",
+      "Steam turbine assembly",
+      "Fission preparation",
+      "Fusion ignition",
+      "Solar suit upgrade"
+    ],
+    "limits": [
+      "Reactor and turbine component tasks do not detect a formed or safely operating multiblock.",
+      "Mekanism core provides fuels, waste processing, lasers, and MekaSuit equipment.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": false,
+    "cached_jar_versions": [
+      "10.4.16"
+    ]
   }
- ],
- "collections": [
-  {
-   "hub": "mekanismgenerators:turbine_casing",
-   "members": [
-    "mekanismgenerators:turbine_rotor",
-    "mekanismgenerators:turbine_blade",
-    "mekanismgenerators:turbine_vent",
-    "mekanismgenerators:turbine_valve",
-    "mekanismgenerators:electromagnetic_coil",
-    "mekanismgenerators:rotational_complex",
-    "mekanismgenerators:saturating_condenser"
-   ]
-  },
-  {
-   "hub": "mekanismgenerators:fission_reactor_casing",
-   "members": [
-    "mekanismgenerators:fission_reactor_port",
-    "mekanismgenerators:fission_reactor_logic_adapter",
-    "mekanismgenerators:control_rod_assembly",
-    "mekanismgenerators:fission_fuel_assembly",
-    "mekanismgenerators:reactor_glass"
-   ]
-  },
-  {
-   "hub": "mekanismgenerators:fusion_reactor_controller",
-   "members": [
-    "mekanismgenerators:fusion_reactor_frame",
-    "mekanismgenerators:fusion_reactor_port",
-    "mekanismgenerators:fusion_reactor_logic_adapter",
-    "mekanismgenerators:laser_focus_matrix",
-    "mekanismgenerators:hohlraum",
-    "mekanismgenerators:reactor_glass",
-    "mekanismgenerators:deuterium_bucket",
-    "mekanismgenerators:tritium_bucket",
-    "mekanismgenerators:fusion_fuel_bucket",
-    "mekanismgenerators:module_geothermal_generator_unit"
-   ]
-  }
- ],
- "notes": "Base Mekanism ships NO generators at all; this module owns the entire power line AND gates Mekanism's own endgame, because Polonium - and therefore the MekaSuit, Meka-Tool upgrades and Antiprotonic Nucleosynthesizer - only exists as Fission Reactor waste. Highest-value addon in this batch. ASSUMES FROM PARENT (mekanism): steel ingot, steel casing, enriched iron, infused/reinforced/atomic alloy, basic/advanced/elite/ultimate control circuits, energy tablet, basic chemical tank, electrolytic core, module base, polonium pellet, Metallurgic Infuser, Crusher (for Bio Fuel), Electrolytic Separator (for hydrogen), Rotary Condensentrator (gas to liquid deuterium/tritium/D-T fuel), and Fissile Fuel from the uranium chain. VERIFICATION: 31 ids from the strict assets/mekanismgenerators/models/item intersection with item./block. lang keys. WIDENED BY 2 - module_solar_recharging_unit and module_geothermal_generator_unit have item models and crafting_shaped recipes in data/mekanismgenerators/recipes but use module.* lang keys instead of item.*, so the strict intersection dropped them; both re-verified as recipe results. DROPPED: mekanismgenerators:bioethanol_bucket - the item and its model exist, but no recipe anywhere in this jar produces Bioethanol, so its source is not verifiable from jar data alone. The four lang-only entries (bioethanol, deuterium, tritium, fusion_fuel) are fluids rather than items; only their _bucket forms are quested, and those are reachable via the Rotary Condensentrator."
 }

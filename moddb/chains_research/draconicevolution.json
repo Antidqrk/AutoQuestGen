@@ -1,265 +1,392 @@
 {
- "mod": "draconicevolution",
- "verified_against": "Draconic-Evolution-1.20.1-3.1.2.621-universal.jar",
- "item_count_in_jar": 182,
- "chain": [
-  {
-   "id": "draconicevolution:draconium_dust",
-   "title": "Dust of the Dragon",
-   "desc": "Draconium Ore spawns deep in the overworld, in the Nether, and richest of all in the End; each ore drops 2-4 dust. Everything this mod does starts as this purple powder."
-  },
-  {
-   "id": "draconicevolution:draconium_ingot",
-   "title": "Smelt Draconium",
-   "desc": "Smelt the dust into ingots and keep the furnace running - the entire ladder from here to the Chaotic tier is paved with these."
-  },
-  {
-   "id": "draconicevolution:draconium_core",
-   "title": "The Draconium Core",
-   "desc": "Draconium, gold and a diamond make the component that sits in nearly every DE recipe - machines, injectors, tools. You will craft dozens of these before you are done."
-  },
-  {
-   "id": "draconicevolution:generator",
-   "title": "Stopgap Power",
-   "desc": "Everything from here on runs on Forge Energy, including fusion crafting itself. This little generator burns anything a furnace burns and holds you over until the Draconic Reactor."
-  },
-  {
-   "id": "draconicevolution:crafting_core",
-   "title": "Fusion Crafting Core",
-   "desc": "The centerpiece of DE's multiblock crafting system. Place it with open air around it - injectors around the room do the actual work while this holds the catalyst."
-  },
-  {
-   "id": "draconicevolution:basic_crafting_injector",
-   "title": "Ring of Injectors",
-   "desc": "Craft several, aim them at the Fusion Crafting Core and feed them power. This Draconium-tier ring crafts everything up to Wyvern gear - your first fusion recipes are now open."
-  },
-  {
-   "id": "draconicevolution:wyvern_energy_core",
-   "title": "Wyvern Energy Core",
-   "desc": "A draconium core wrapped in redstone blocks. This is the power-storage component inside every Wyvern tool, relay crystal and the Energy Core multiblock - stock up."
-  },
-  {
-   "id": "draconicevolution:wyvern_core",
-   "title": "A Star in a Core",
-   "desc": "Four draconium cores around a Nether Star. Killing the Wither is the real cost here; the Wyvern Core gates every mid-tier machine and upgrade in the mod."
-  },
-  {
-   "id": "draconicevolution:wyvern_crafting_injector",
-   "title": "Wyvern Tier Injectors",
-   "desc": "Fuse a Wyvern Core onto each basic injector to upgrade your ring. Wyvern-tier fusion is required for the tools, armor and the awakening recipe coming next."
-  },
-  {
-   "id": "draconicevolution:wyvern_pickaxe",
-   "title": "Wyvern Tools",
-   "desc": "Fusion-craft over a plain diamond pickaxe. Wyvern tools run on RF instead of durability and accept modules - AOE mining, speed, auto-smelt-style upgrades - in their module grid."
-  },
-  {
-   "id": "draconicevolution:wyvern_chestpiece",
-   "title": "Shielded",
-   "desc": "The Wyvern Chestpiece replaces armor points with a rechargeable energy shield. As long as it has power and shield capacity modules, you effectively do not take damage."
-  },
-  {
-   "id": "draconicevolution:module_core",
-   "title": "Modular Everything",
-   "desc": "Every upgrade in DE - speed, AOE, shields, night vision, flight - is a module built on this cheap core and socketed into your gear's module grid. Craft a pile of them."
-  },
-  {
-   "id": "draconicevolution:basic_relay_crystal",
-   "title": "Crystal Network",
-   "desc": "Relay crystals beam energy between machines with no cables. Link them with the Crystal Binder; I/O crystals attach to blocks, wireless crystals charge things at range."
-  },
-  {
-   "id": "draconicevolution:energy_core",
-   "title": "The Energy Sphere",
-   "desc": "The famous floating energy ball. Built with draconium blocks and stabilizers in 8 tiers - tier 1 fits on a table, tier 8 stores functionally infinite power for the reactor era."
-  },
-  {
-   "id": "draconicevolution:energy_pylon",
-   "title": "Tap the Core",
-   "desc": "Pylons are the only way power gets in or out of the Energy Core multiblock. Place at least two - one set to input, one to output - within range of the sphere."
-  },
-  {
-   "id": "draconicevolution:dragon_heart",
-   "title": "Heart of the Dragon",
-   "desc": "The Ender Dragon drops its heart when slain. This is the catalyst that awakens draconium - every kill is four more Awakened Draconium Blocks, so keep respawning her."
-  },
-  {
-   "id": "draconicevolution:awakened_draconium_block",
-   "title": "The Awakening",
-   "desc": "Wyvern-tier fusion: six draconium cores and a Dragon Heart over four draconium blocks transmutes them into four Awakened Draconium Blocks - the orange metal of the Draconic tier."
-  },
-  {
-   "id": "draconicevolution:awakened_draconium_ingot",
-   "title": "Awakened Ingots",
-   "desc": "Break the awakened blocks down into ingots. Draconic-tier tools, cores, injectors and reactor parts all eat these by the stack."
-  },
-  {
-   "id": "draconicevolution:awakened_core",
-   "title": "Core of the Awakened",
-   "desc": "Fuse Wyvern Cores and awakened ingots around another Nether Star. In-game it is called the Draconic Core - the gate component for everything at Draconic tier."
-  },
-  {
-   "id": "draconicevolution:awakened_crafting_injector",
-   "title": "Draconic Tier Injectors",
-   "desc": "Upgrade the injector ring again with awakened draconium. Draconic-tier fusion unlocks the top-end tools, armor and the Chaotic injectors beyond them."
-  },
-  {
-   "id": "draconicevolution:draconic_energy_core",
-   "title": "Draconic Energy Core",
-   "desc": "The awakened version of the Wyvern Energy Core. You need these for every Draconic tool and armor piece, plus the Reactor Stabilizers later - do not craft just one."
-  },
-  {
-   "id": "draconicevolution:draconic_pickaxe",
-   "title": "Draconic Tools",
-   "desc": "Your Wyvern pickaxe is the catalyst - fuse it upward with netherite and awakened draconium. Draconic tools take the bigger AOE and speed modules and never need replacing."
-  },
-  {
-   "id": "draconicevolution:draconic_chestpiece",
-   "title": "Wings Without Wings",
-   "desc": "The Draconic Chestpiece accepts a Flight Module for true creative-style flight, plus a bigger shield. You will want it before picking a fight with what lives on the chaos islands."
-  },
-  {
-   "id": "kill:draconicevolution:draconic_guardian",
-   "title": "The Chaos Guardian",
-   "desc": "Chaos Islands generate far out in the End, each guarded by a corrupted dragon that hits through armor. Kill it and destroy its crystals to claim the island's Chaos Crystal."
-  },
-  {
-   "id": "draconicevolution:chaos_shard",
-   "title": "Chaos, Compressed",
-   "desc": "Harvesting the Chaos Crystal yields fragments - compress tiny into small, small into large, and nine large into a full Chaos Shard, the fuel and catalyst of the endgame."
-  },
-  {
-   "id": "draconicevolution:chaotic_core",
-   "title": "Chaotic Core",
-   "desc": "Draconic-tier fusion of Draconic Cores, awakened ingots and Large Chaos Fragments. The final core component - reactors, Chaotic gear and the last injector tier all want it."
-  },
-  {
-   "id": "draconicevolution:chaotic_crafting_injector",
-   "title": "Chaotic Tier Injectors",
-   "desc": "The last injector upgrade costs chaos fragments and a Dragon Egg per injector. With a Chaotic-tier ring, no recipe in the mod is out of reach."
-  },
-  {
-   "id": "draconicevolution:reactor_core",
-   "title": "Draconic Reactor",
-   "desc": "A reactor fueled by awakened draconium and kickstarted with a Chaos Shard. It outputs millions of RF/t - and detonates like nothing else in the game if you let containment fail."
-  },
-  {
-   "id": "draconicevolution:reactor_stabilizer",
-   "title": "Contain the Burn",
-   "desc": "Four stabilizers frame the core and an Energy Injector charges it. The one hard rule: containment draws power constantly, so give the injector its own dedicated line and never let the shield reach zero - an uncontained reactor does not shut down, it detonates."
-  },
-  {
-   "id": "draconicevolution:chaotic_staff",
-   "title": "Staff of Power",
-   "desc": "Fuse your Chaotic pickaxe, shovel and sword into one weapon - the Chaotic Staff of Power mines, digs and kills better than all three. This is the mod's final crafting recipe."
+  "mod": "draconicevolution",
+  "verified_against": "Draconic-Evolution-1.20.1-3.1.2.621-universal.jar",
+  "item_count_in_jar": 182,
+  "chain": [
+    {
+      "id": "draconicevolution:draconium_dust",
+      "title": "Find the first draconium",
+      "desc": "Mine a supported draconium source and collect the dust. Check the pack's world generation and loot routes before making a large expedition solely for this material.",
+      "requires": []
+    },
+    {
+      "id": "draconicevolution:draconium_ingot",
+      "title": "Smelt the workshop material",
+      "desc": "Smelt draconium dust into ingots. Reserve the first batch for a core and fusion-crafting infrastructure rather than decorative blocks.",
+      "requires": [
+        "draconicevolution:draconium_dust"
+      ]
+    },
+    {
+      "id": "draconicevolution:draconium_core",
+      "title": "A core for the first devices",
+      "desc": "Craft a Draconium Core. This shared component opens the energy, fusion, and equipment branches.",
+      "requires": [
+        "draconicevolution:draconium_ingot"
+      ]
+    },
+    {
+      "id": "draconicevolution:generator",
+      "title": "A starting power option",
+      "desc": "Fuel a Generator and connect it to an energy consumer. Fusion recipes can need much more energy than an early generator supplies, so plan buffering or another compatible source.",
+      "requires": [
+        "draconicevolution:draconium_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:crafting_core",
+      "title": "The center of fusion crafting",
+      "desc": "Place a Fusion Crafting Core with clear space for injectors. The core holds the central ingredient; surrounding injectors hold the other ingredients and receive energy.",
+      "requires": [
+        "draconicevolution:draconium_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:basic_crafting_injector",
+      "title": "Arrange the first injectors",
+      "desc": "Build enough Basic Fusion Crafting Injectors for your selected recipe. Point them toward the core at a valid distance and provide each required ingredient and energy connection.",
+      "requires": [
+        "draconicevolution:crafting_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:wyvern_energy_core",
+      "title": "Prepare Wyvern energy components",
+      "desc": "Craft a Wyvern Energy Core using the installed recipe. Keep these components available for equipment and the next fusion tier.",
+      "requires": [
+        "draconicevolution:draconium_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:wyvern_core",
+      "title": "A successful Wyvern fusion craft",
+      "desc": "Arrange the Wyvern Core recipe around the crafting core and supply the required energy. Confirm that every injector is valid before starting the process.",
+      "requires": [
+        "draconicevolution:basic_crafting_injector",
+        "draconicevolution:wyvern_energy_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:wyvern_crafting_injector",
+      "title": "Raise the injector tier",
+      "desc": "Upgrade the required injectors to Wyvern. Recipe tiers apply to the injectors holding ingredients; one upgraded injector does not upgrade the whole setup.",
+      "requires": [
+        "draconicevolution:wyvern_core",
+        "draconicevolution:basic_crafting_injector"
+      ]
+    },
+    {
+      "id": "draconicevolution:wyvern_pickaxe",
+      "title": "A modular mining tool",
+      "desc": "Craft and charge a Wyvern Pickaxe. Install suitable modules and set its mining behavior before using it near finished construction.",
+      "requires": [
+        "draconicevolution:wyvern_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:wyvern_chestpiece",
+      "title": "Build a configurable chestpiece",
+      "desc": "Craft and charge the Wyvern Chestpiece, then choose compatible energy and protection modules. The base item alone is not a complete defensive setup.",
+      "requires": [
+        "draconicevolution:wyvern_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:module_core",
+      "title": "Choose capabilities with modules",
+      "desc": "Make module components and consult the module recipes and tier limits. Build only the capabilities your current tool or chestpiece can accept.",
+      "requires": [
+        "draconicevolution:draconium_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:basic_relay_crystal",
+      "title": "A crystal energy route",
+      "desc": "Link Energy Crystals using the supported tool and connection modes. Use input/output crystals where a machine connection is required; a relay connects the crystal network.",
+      "requires": [
+        "draconicevolution:draconium_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:energy_core",
+      "title": "Plan scalable energy storage",
+      "desc": "Build an Energy Core and follow the manual's structure for the selected tier, including stabilizers. Start with the capacity your power network can actually charge.",
+      "requires": [
+        "draconicevolution:draconium_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:energy_pylon",
+      "title": "Connect the storage structure",
+      "desc": "Build the required Energy Pylon arrangement and configure input or output. Verify transfer in both directions before treating the core as your workshop's reserve.",
+      "requires": [
+        "draconicevolution:energy_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:dragon_heart",
+      "title": "Recover the dragon's heart",
+      "desc": "Defeat the Ender Dragon in its normal End fight and collect the Dragon Heart above the exit portal podium. Reserve it for awakening draconium; a summoned dragon may not produce one.",
+      "requires": [],
+      "acquisition": "Dropped by code after the normal Ender Dragon fight: LootEventHandler.handleDragonDrops creates a Dragon Heart above the exit podium. Verified in 1.20 source and the 3.1.2.621 JAR bytecode; a summoned dragon without a fight manager is excluded."
+    },
+    {
+      "id": "draconicevolution:awakened_draconium_block",
+      "title": "Awaken the draconium",
+      "desc": "Use the installed fusion recipe to awaken draconium with a Dragon Heart and the other ingredients. Ensure every participating injector meets the recipe tier.",
+      "requires": [
+        "draconicevolution:dragon_heart",
+        "draconicevolution:wyvern_crafting_injector"
+      ]
+    },
+    {
+      "id": "draconicevolution:awakened_draconium_ingot",
+      "title": "Prepare the awakened material",
+      "desc": "Convert an Awakened Draconium Block into ingots as needed. This material opens stronger equipment, injectors, and an optional reactor project.",
+      "requires": [
+        "draconicevolution:awakened_draconium_block"
+      ]
+    },
+    {
+      "id": "draconicevolution:awakened_core",
+      "title": "A core for Draconic equipment",
+      "desc": "Produce an Awakened Core through the installed fusion recipe. Plan the energy and injector layout before committing the ingredients.",
+      "requires": [
+        "draconicevolution:awakened_draconium_ingot",
+        "draconicevolution:wyvern_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:awakened_crafting_injector",
+      "title": "A Draconic fusion setup",
+      "desc": "Upgrade the fusion injectors for Draconic-tier recipes. Keep their energy routes clear and test one supported craft before rebuilding the whole workshop.",
+      "requires": [
+        "draconicevolution:awakened_core",
+        "draconicevolution:wyvern_crafting_injector"
+      ]
+    },
+    {
+      "id": "draconicevolution:draconic_energy_core",
+      "title": "Energy for stronger equipment",
+      "desc": "Craft a Draconic Energy Core for higher-tier devices and modules. Large storage is useful only when your network can recharge it between demanding jobs.",
+      "requires": [
+        "draconicevolution:awakened_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:draconic_pickaxe",
+      "title": "Advance the mining branch",
+      "desc": "Upgrade to a Draconic Pickaxe and review its module arrangement and area settings. Equipment progression remains separate from the optional reactor branch.",
+      "requires": [
+        "draconicevolution:wyvern_pickaxe",
+        "draconicevolution:awakened_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:draconic_chestpiece",
+      "title": "Prepare for the guardian journey",
+      "desc": "Upgrade the chestpiece and fit an appropriate, charged module loadout. Review mobility, protection, and escape options before approaching a chaos island.",
+      "requires": [
+        "draconicevolution:wyvern_chestpiece",
+        "draconicevolution:awakened_core"
+      ]
+    },
+    {
+      "id": "kill:draconicevolution:draconic_guardian",
+      "title": "Defeat the Chaos Guardian",
+      "desc": "Find a chaos island in the End and defeat its guardian. Prepare a charged equipment loadout and understand the encounter mechanics before committing to the fight.",
+      "requires": [
+        "draconicevolution:draconic_chestpiece"
+      ]
+    },
+    {
+      "id": "draconicevolution:chaos_shard",
+      "title": "Claim the chaos resource",
+      "desc": "After the guardian encounter, recover the chaos resource using the supported method and leave the unstable island area. Keep the resulting shards for the planned Chaotic recipes.",
+      "requires": [
+        "kill:draconicevolution:draconic_guardian"
+      ]
+    },
+    {
+      "id": "draconicevolution:chaotic_core",
+      "title": "Craft a Chaotic Core",
+      "desc": "Complete the Chaotic Core fusion recipe with the required shards, ingredients, and energy. Check recipe tiers carefully; a Draconic workshop needs a planned upgrade path.",
+      "requires": [
+        "draconicevolution:chaos_shard",
+        "draconicevolution:awakened_crafting_injector"
+      ]
+    },
+    {
+      "id": "draconicevolution:chaotic_crafting_injector",
+      "title": "The final injector tier",
+      "desc": "Upgrade the necessary injectors to Chaotic tier. Higher-tier recipes still require the full ingredient layout and enough delivered energy.",
+      "requires": [
+        "draconicevolution:chaotic_core",
+        "draconicevolution:awakened_crafting_injector"
+      ]
+    },
+    {
+      "id": "draconicevolution:reactor_core",
+      "title": "Plan a separate reactor project",
+      "desc": "Craft the reactor core and study the complete operating procedure before assembly. It needs stabilizers, an injector, containment power, fuel, and controlled energy flow; it is not required for the tool branch.",
+      "requires": [
+        "draconicevolution:awakened_draconium_ingot"
+      ]
+    },
+    {
+      "id": "draconicevolution:reactor_stabilizer",
+      "title": "Complete the reactor's supporting systems",
+      "desc": "Prepare the full stabilizer and injector arrangement shown by the manual. Establish containment supply, output control, monitoring, and shutdown behavior before activating the assembled reactor.",
+      "requires": [
+        "draconicevolution:reactor_core"
+      ]
+    },
+    {
+      "id": "draconicevolution:chaotic_staff",
+      "title": "Build the combined endgame tool",
+      "desc": "Craft the Chaotic Staff of Power, charge it, and fit the modules you intend to use. Check area and combat settings before using it around your base.",
+      "requires": [
+        "draconicevolution:chaotic_crafting_injector",
+        "draconicevolution:chaotic_core"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "hub": "draconicevolution:wyvern_pickaxe",
+      "members": [
+        "draconicevolution:wyvern_axe",
+        "draconicevolution:wyvern_shovel",
+        "draconicevolution:wyvern_hoe",
+        "draconicevolution:wyvern_sword",
+        "draconicevolution:wyvern_bow",
+        "draconicevolution:wyvern_capacitor"
+      ]
+    },
+    {
+      "hub": "draconicevolution:module_core",
+      "members": [
+        "draconicevolution:item_draconium_energy",
+        "draconicevolution:item_draconium_speed",
+        "draconicevolution:item_draconium_aoe",
+        "draconicevolution:item_draconium_damage",
+        "draconicevolution:item_draconium_auto_feed",
+        "draconicevolution:item_draconium_jump",
+        "draconicevolution:item_wyvern_energy",
+        "draconicevolution:item_wyvern_shield_capacity",
+        "draconicevolution:item_wyvern_shield_control",
+        "draconicevolution:item_wyvern_shield_recovery",
+        "draconicevolution:item_wyvern_flight",
+        "draconicevolution:item_wyvern_night_vision",
+        "draconicevolution:item_wyvern_hill_step",
+        "draconicevolution:item_wyvern_aqua_adapt",
+        "draconicevolution:item_wyvern_ender_collection",
+        "draconicevolution:item_wyvern_mining_stability",
+        "draconicevolution:item_wyvern_junk_filter",
+        "draconicevolution:item_wyvern_energy_link",
+        "draconicevolution:item_wyvern_undying"
+      ]
+    },
+    {
+      "hub": "draconicevolution:basic_relay_crystal",
+      "members": [
+        "draconicevolution:crystal_binder",
+        "draconicevolution:basic_io_crystal",
+        "draconicevolution:basic_wireless_crystal",
+        "draconicevolution:wyvern_relay_crystal",
+        "draconicevolution:wyvern_io_crystal",
+        "draconicevolution:wyvern_wireless_crystal",
+        "draconicevolution:draconic_relay_crystal",
+        "draconicevolution:draconic_io_crystal",
+        "draconicevolution:draconic_wireless_crystal"
+      ]
+    },
+    {
+      "hub": "draconicevolution:generator",
+      "members": [
+        "draconicevolution:grinder",
+        "draconicevolution:disenchanter",
+        "draconicevolution:draconium_chest",
+        "draconicevolution:energy_transfuser",
+        "draconicevolution:particle_generator",
+        "draconicevolution:potentiometer",
+        "draconicevolution:entity_detector",
+        "draconicevolution:entity_detector_advanced",
+        "draconicevolution:fluid_gate",
+        "draconicevolution:flux_gate",
+        "draconicevolution:rain_sensor",
+        "draconicevolution:celestial_manipulator",
+        "draconicevolution:dislocation_inhibitor",
+        "draconicevolution:infused_obsidian"
+      ]
+    },
+    {
+      "hub": "draconicevolution:dislocator",
+      "members": [
+        "draconicevolution:magnet",
+        "draconicevolution:advanced_magnet",
+        "draconicevolution:advanced_dislocator",
+        "draconicevolution:dislocator_pedestal",
+        "draconicevolution:dislocator_receptacle",
+        "draconicevolution:p2p_dislocator_unbound",
+        "draconicevolution:player_dislocator_unbound"
+      ]
+    },
+    {
+      "hub": "draconicevolution:draconic_pickaxe",
+      "members": [
+        "draconicevolution:draconic_axe",
+        "draconicevolution:draconic_shovel",
+        "draconicevolution:draconic_hoe",
+        "draconicevolution:draconic_sword",
+        "draconicevolution:draconic_bow",
+        "draconicevolution:draconic_staff",
+        "draconicevolution:draconic_capacitor"
+      ]
+    },
+    {
+      "hub": "draconicevolution:chaotic_staff",
+      "members": [
+        "draconicevolution:chaotic_pickaxe",
+        "draconicevolution:chaotic_axe",
+        "draconicevolution:chaotic_shovel",
+        "draconicevolution:chaotic_hoe",
+        "draconicevolution:chaotic_sword",
+        "draconicevolution:chaotic_bow",
+        "draconicevolution:chaotic_chestpiece",
+        "draconicevolution:chaotic_capacitor"
+      ]
+    }
+  ],
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "sources": [
+    "https://github.com/Draconic-Inc/Draconic-Evolution",
+    "https://www.curseforge.com/minecraft/mc-mods/draconic-evolution",
+    "https://github.com/Draconic-Inc/Draconic-Evolution/blob/1.20/src/main/java/com/brandon3055/draconicevolution/handlers/LootEventHandler.java"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Fusion tier progression",
+      "Independent energy transport/storage",
+      "Modular equipment",
+      "Dragon awakening and Chaos Guardian",
+      "Optional reactor and Chaotic staff"
+    ],
+    "limits": [
+      "Verified item assets against cached 3.1.2.621 and installed 3.1.2.604 for Minecraft 1.20.1.",
+      "Boss strategy, all module recipes, and operating reactor control designs are not fully specified by this guide.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": true,
+    "cached_jar_versions": [
+      "1.20.1-3.1.2.604",
+      "1.20.1-3.1.2.621"
+    ]
   }
- ],
- "collections": [
-  {
-   "hub": "draconicevolution:wyvern_pickaxe",
-   "members": [
-    "draconicevolution:wyvern_axe",
-    "draconicevolution:wyvern_shovel",
-    "draconicevolution:wyvern_hoe",
-    "draconicevolution:wyvern_sword",
-    "draconicevolution:wyvern_bow",
-    "draconicevolution:wyvern_capacitor"
-   ]
-  },
-  {
-   "hub": "draconicevolution:module_core",
-   "members": [
-    "draconicevolution:item_draconium_energy",
-    "draconicevolution:item_draconium_speed",
-    "draconicevolution:item_draconium_aoe",
-    "draconicevolution:item_draconium_damage",
-    "draconicevolution:item_draconium_auto_feed",
-    "draconicevolution:item_draconium_jump",
-    "draconicevolution:item_wyvern_energy",
-    "draconicevolution:item_wyvern_shield_capacity",
-    "draconicevolution:item_wyvern_shield_control",
-    "draconicevolution:item_wyvern_shield_recovery",
-    "draconicevolution:item_wyvern_flight",
-    "draconicevolution:item_wyvern_night_vision",
-    "draconicevolution:item_wyvern_hill_step",
-    "draconicevolution:item_wyvern_aqua_adapt",
-    "draconicevolution:item_wyvern_ender_collection",
-    "draconicevolution:item_wyvern_mining_stability",
-    "draconicevolution:item_wyvern_junk_filter",
-    "draconicevolution:item_wyvern_energy_link",
-    "draconicevolution:item_wyvern_undying"
-   ]
-  },
-  {
-   "hub": "draconicevolution:basic_relay_crystal",
-   "members": [
-    "draconicevolution:crystal_binder",
-    "draconicevolution:basic_io_crystal",
-    "draconicevolution:basic_wireless_crystal",
-    "draconicevolution:wyvern_relay_crystal",
-    "draconicevolution:wyvern_io_crystal",
-    "draconicevolution:wyvern_wireless_crystal",
-    "draconicevolution:draconic_relay_crystal",
-    "draconicevolution:draconic_io_crystal",
-    "draconicevolution:draconic_wireless_crystal"
-   ]
-  },
-  {
-   "hub": "draconicevolution:generator",
-   "members": [
-    "draconicevolution:grinder",
-    "draconicevolution:disenchanter",
-    "draconicevolution:draconium_chest",
-    "draconicevolution:energy_transfuser",
-    "draconicevolution:particle_generator",
-    "draconicevolution:potentiometer",
-    "draconicevolution:entity_detector",
-    "draconicevolution:entity_detector_advanced",
-    "draconicevolution:fluid_gate",
-    "draconicevolution:flux_gate",
-    "draconicevolution:rain_sensor",
-    "draconicevolution:celestial_manipulator",
-    "draconicevolution:dislocation_inhibitor",
-    "draconicevolution:infused_obsidian"
-   ]
-  },
-  {
-   "hub": "draconicevolution:dislocator",
-   "members": [
-    "draconicevolution:magnet",
-    "draconicevolution:advanced_magnet",
-    "draconicevolution:advanced_dislocator",
-    "draconicevolution:dislocator_pedestal",
-    "draconicevolution:dislocator_receptacle",
-    "draconicevolution:p2p_dislocator_unbound",
-    "draconicevolution:player_dislocator_unbound"
-   ]
-  },
-  {
-   "hub": "draconicevolution:draconic_pickaxe",
-   "members": [
-    "draconicevolution:draconic_axe",
-    "draconicevolution:draconic_shovel",
-    "draconicevolution:draconic_hoe",
-    "draconicevolution:draconic_sword",
-    "draconicevolution:draconic_bow",
-    "draconicevolution:draconic_staff",
-    "draconicevolution:draconic_capacitor"
-   ]
-  },
-  {
-   "hub": "draconicevolution:chaotic_staff",
-   "members": [
-    "draconicevolution:chaotic_pickaxe",
-    "draconicevolution:chaotic_axe",
-    "draconicevolution:chaotic_shovel",
-    "draconicevolution:chaotic_hoe",
-    "draconicevolution:chaotic_sword",
-    "draconicevolution:chaotic_bow",
-    "draconicevolution:chaotic_chestpiece",
-    "draconicevolution:chaotic_capacitor"
-   ]
-  }
- ],
- "notes": "Verified against jar in the a large test pack instance (a 3.1.2.604 copy also exists in 'cobblemon pack for colty test'; 1.10.2 copies in SkyFactory 3 instances ignored). Tier ladder confirmed from recipe 'tier' fields: basic injector (crafting table) -> wyvern injector (DRACONIUM-tier fusion) -> awakened injector (WYVERN-tier) -> chaotic injector (DRACONIC-tier, costs a dragon egg each). In 3.x, awakening draconium is a WYVERN-tier fusion recipe (dragon heart + 6 draconium cores over 4 draconium blocks -> 4 awakened blocks), not the old ritual. Dragon Heart is a code drop from the Ender Dragon (no loot table in jar). Chaos islands and end comets are worldgen configured_features; the boss entity id is draconicevolution:draconic_guardian (display name 'Chaos Guardian'). Ore drops 2-4 draconium_dust (fortune-able); ingots smelt from dust. Naming trap: item id awakened_core displays as 'Draconic Core', and small/medium/large_chaos_frag display as Tiny/Small/Large Chaos Fragment. Energy Core multiblock tiers 1-8 defined in data/draconicevolution/multiblocks/. Draconic-Additions is a separate mod (present in same instance, not covered here). stabilized_spawner and mob_soul excluded: no recipes in jar (obtained via mob grinder soul drops / in-world mechanics). item_count_in_jar = 182 item/block lang entries."
 }

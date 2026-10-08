@@ -1,154 +1,98 @@
-<div align="center">
+# FTB Quests Generator
 
-<img src="logo.png" alt="AutoQuestGen" width="180">
+**7.13 / release v0.2.7-beta** · Windows desktop app · Minecraft 1.20.1 Forge and 1.21.1 NeoForge
 
-# AutoQuestGen
+[Download the Windows app](https://github.com/Antidqrk/AutoQuestGen/releases/download/v0.2.7-beta/AutoQuestGen.exe) · [Release and optional artwork downloads](https://github.com/Antidqrk/AutoQuestGen/releases/tag/v0.2.7-beta)
 
-**Generate a complete, ready-to-play FTB Quests book for any Minecraft 1.20.1 Forge modpack.**
+Create connected, illustrated quest books from your installed Minecraft modpack. The generator uses local items, recipes and curated progression guides—fully offline, with no AI service, account or API key.
 
-Point it at a `mods/` folder, press one button, play.
+![Generated Botania chapter inside Minecraft](docs/screenshots/quest-map.png)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](LICENSE)
-[![Minecraft 1.20.1](https://img.shields.io/badge/Minecraft-1.20.1%20Forge-brightgreen.svg)](#known-limits)
-[![FTB Quests](https://img.shields.io/badge/FTB%20Quests-2001.x-blue.svg)](#known-limits)
-[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776ab.svg)](#run-from-source)
-[![Status: beta](https://img.shields.io/badge/status-beta-orange.svg)](#what-beta-means)
-[![Latest release](https://img.shields.io/github/v/release/Antidqrk/AutoQuestGen?include_prereleases&label=download)](../../releases/latest)
-[![Works offline](https://img.shields.io/badge/works-offline-success.svg)](#what-it-does)
+## What it makes
 
-Created by **antidqrk** · Built with **Claude (Anthropic)** — engineering, QA, and the research pipeline.
+- Branched questlines with real prerequisites, useful descriptions and a clear campaign goal.
+- Full selected-mod books or focused routes for supported goals such as **defeat the Gaia Guardian**. Boss goals use kill objectives; actions the game cannot detect use labelled manual checkpoints.
+- **110 bundled artworks** across twelve themes: 26 landscapes, 12 illustrated landmarks, 60 decorative graphics and **12 native Minecraft animations**.
+- ATM-inspired chapter categories, a prominent main questline, varied quest node sizes, and controllable artwork, motion and decoration sizes.
+- An optional emerald supply shop with repeatable purchases, progress-gated shelves and adjustable prices. No extra currency mod is needed.
+- A local interactive preview so you can read objectives and inspect the map before saving it.
 
-</div>
+![Main questline and themed chapter navigation](docs/screenshots/chapter-navigation.png)
 
----
+## Make a quest book
 
-## What it does
+1. Open **Choose pack**, select an installed instance, then click **Scan this pack**.
+2. In **Quest book**, start with **Epic · ATM-inspired** or **Balanced**. To add a campaign, enable **Connect chapters into a campaign with a final goal** and enter a **Goal of your modpack**. Keep **Book scope → Selected mods + goal** for the wider book, or choose **Goal-focused quest book** for a focused route.
+3. Expand **Appearance & chapter organization** to choose **Quest node sizes**, **Art collection**, **Animated decorations in the quest book**, and **Decoration sizes**. **Browse artwork & animations…** opens the included gallery. For a shop, expand **Optional quest book shop** and enable **Include an emerald supply shop**.
+4. Open **Preview & build** and click **Preview quest book**. When ready, close Minecraft, check **Save quest book to**, and click **Build quest book**.
+5. Launch the selected pack and open FTB Quests. When sharing a book with custom artwork, distribute its companion **AutoQuestGen-Art.zip** and have players enable that resource pack.
 
-Writing a quest book by hand is days of work per pack. AutoQuestGen reads the pack you
-already have and writes the book for you.
+The packaged Windows executable includes its runtime; Python is not required. The target Minecraft instance needs FTB Quests. Guide and recipe coverage depends on the installed mods and pack configuration; **Progression coverage** shows what the generator supports. The illustrations were created during development; using the app or exported book never runs an AI model.
 
-- **Reads your actual jars.** Every mod in `mods/` is opened and parsed for its real
-  items, blocks, entities, advancements, recipes and lang names. Nothing is guessed —
-  every quest task uses an id that verifiably exists in *your* pack, so no purple
-  "Missing Item" icons.
-- **Works entirely offline.** No account, no API key, no internet. The offline builder
-  is the product.
-- **Ships a research database for 300+ mods.** Hand-researched progression chains,
-  gating facts, and ordering signal distilled from how real packs and guides teach each
-  mod. A mod with no research still gets a sensible chapter from the generic path.
-- **Writes real FTB Quests SNBT.** Chapters, chapter groups, reward tables and
-  `data.snbt` land straight in `config/ftbquests/quests/`, and anything it replaces is
-  backed up first.
-- **Designs, not just dumps.** Chapters grouped by theme, progression-ordered quests,
-  dimension/boss/structure goals, written descriptions, icons, rewards, and a laid-out
-  quest graph with short dependency lines.
-- **Stable across rebuilds.** Quest ids are derived deterministically, so regenerating a
-  book does not wipe a player's progress. Pin a seed to reproduce a book exactly.
+![Optional supply shop inside Minecraft](docs/screenshots/supply-shop.png)
 
-An optional AI path (bring your own API key) can draft or improve books. It is
-experimental in this beta — the offline builder is better tested and gets all of the
-research data.
+## Verified for 7.13
+
+- **493 automated checks** and **seven packaged executable cases** passed, covering book sizes, focused goals, scenarios, artwork settings and two shop configurations.
+- The packaged ATM9 Normal example produced **391 quests across 45 chapters**. Counts vary with the pack and selected options.
+- In isolated Minecraft 1.20.1 with FTB Quests 2001.4.21, all **98 static images** loaded correctly and all **12 animations** rendered changing frames. A static control stayed unchanged.
+- Native shop checks verified two paid purchases, reward claims, repeat resets, and no reward for insufficient funds.
+
+The screenshots above come directly from that isolated Minecraft test. The installed ATM9 pack was scanned read-only for generation checks; this is not a complete survival playthrough of every generated book.
 
 ## Install
 
-**Option A — the app.** Download `AutoQuestGen.exe` from the
-[latest release](../../releases/latest) and double-click it. One file, no installer,
-no Python. Settings, logs and scan caches are written next to it, or to
-`%LOCALAPPDATA%\AutoQuestGen` if that folder is read-only. The build is unsigned for
-this beta, so Windows SmartScreen will warn on first run; the release notes carry a
-SHA-256 you can check.
+Download **AutoQuestGen.exe** from the release, put it in a writable folder, and open it. Python is not needed. Keep local settings and scan caches in that folder. Reopen the app after replacing an older executable. The app is unsigned; the source and SHA256 checksums are published with the release.
 
-**Option B — from source.** See [Run from source](#run-from-source).
+The executable already includes the complete artwork library. The optional artwork archive includes PNGs, GIF previews, original illustration prompts, and editable decoration sources. Its embedded standalone resource pack targets Minecraft 1.21.1; use the app export for the correct format for your selected instance.
 
-## Quick start
+## Compatibility and scope
 
-The first launch opens a guided setup window that walks you through all of this. It is
-also available any time from the **Guided setup** button next to the build buttons.
+FTB Quests must be installed in the target modpack. The generator scans existing mod files; it does not install mods, change world generation, or simulate every possible scripted recipe. The curated library contains 60 explicit branched guides with 1,342 authored milestones, plus older researched chains and local recipe discovery. Supported mechanics and version notes are shown in Progression coverage. Unknown runtime registrations and unsupported scripts need author review.
 
-By hand instead:
+Reference quest content can be read from a book already installed locally when reference objectives are enabled. This public distribution excludes copied reference templates, raw research corpora, mod JARs and modpack files. The artwork is original. This is an experimental beta, and generated books should be previewed and reviewed before sharing.
 
-1. **Setup tab** — pick your pack under *Detected instances*, or point *Mods folder* at
-   your pack's `mods/` directory yourself.
-2. Press **Scan mods** and let it finish. Large packs take a few minutes the first time;
-   results are cached after that.
-3. **Generate tab** — choose a quest count (start with *normal*) and press
-   **Build Quest Book**.
-4. Launch the game and open your quest book.
+## Credits and license
 
-### Where the book goes
-
-The output folder **is** the quests folder. The app writes `chapters/`,
-`chapter_groups.snbt` and `data.snbt` directly into it, defaulting to your selected
-pack's `config/ftbquests/quests` — exactly where the game reads them, so the default
-needs no copying.
-
-If you build somewhere else first (a good idea for a look before you commit), copy the
-*contents* of that folder into `<your pack>/config/ftbquests/quests`, not the folder
-itself.
-
-> **Close Minecraft before building into a live pack.** FTB Quests keeps the book in
-> memory and writes it back over your files on exit, so a build under a running game is
-> silently discarded. The app checks for this and refuses rather than letting you lose
-> the work.
+Created by **antidqrk**. The original app was built with Claude, with subsequent development and verification using Codex. Source, bundled original artwork and distributed research data use the existing [MIT license](LICENSE). Third-party mods and locally reused reference content retain their own licenses. AutoQuestGen is independent of the All the Mods team, FTB, Mojang and Microsoft.
 
 ## Run from source
 
-```bash
-git clone https://github.com/antidqrk/AutoQuestGen.git
-cd AutoQuestGen
-pip install -r requirements.txt
-python autoquestgen.py
+The published source contains the sanitized runtime data and original bundled artwork. It does not require downloaded research files, a private modpack, an AI model, or an API key.
+
+The verified development environment is **Windows, CPython 3.13.2**, with Tk included from the python.org installer. To create an isolated environment, install dependencies, and launch the app:
+
+```powershell
+py -3.13 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+.\.venv\Scripts\python.exe autoquestgen.py
 ```
 
-Python 3.11 or newer, on Windows. The GUI is tkinter, which ships with the standard
-python.org installer. `requests` is only needed for the optional AI path and for
-instance-metadata lookups; everything in the offline builder runs on the standard
-library.
+Package versions are pinned to the release environment. Installing packages needs access to a package index (or a local wheel cache); generating and previewing quest books is offline. The source retains optional legacy metadata helpers, but no AI or account setup is part of the offline interface.
 
-## Repository layout
+## Developer checks
 
-| Path | What it is |
-| --- | --- |
-| `autoquestgen.py` | The whole application: jar scanner, quest designer, SNBT writer, tkinter GUI |
-| `mod_progression.py` | Curated progression chains imported by the app |
-| `moddb/chains_research/` | Per-mod researched progression chains |
-| `moddb/guides/` | Ordering signal and notes distilled from community guides |
-| `moddb/gating.json` | Cross-pack progression gates ("this must come before that") |
-| `moddb/moddb.json` | Consensus mod-ordering rows measured from published packs |
-| `moddb/design_rules.json`, `moddb/style_guide.json` | Book design and prose rules |
-| `moddb/immersion_spec.json` | The immersion checks a generated book is measured against |
-| `harvested_order.json` | Published-pack ordering facts read at runtime |
+```powershell
+.\.venv\Scripts\python.exe run_tests.py
+```
 
-## What "beta" means
+This runs each public test identity once, including scanner fixtures, progression, campaigns, scenarios, exports, settings, native artwork, and Tk interface checks. Fixtures construct small synthetic JARs and temporary output folders. No installed modpack is required. Network connections in the main test process are blocked during the run.
 
-- The offline builder is the supported path. The AI path is experimental.
-- Tested end to end against local CurseForge instances ranging from 6 to 338 jars, with
-  every generated book validated against that pack's own jars.
-- The exe is unsigned, and the project has had a release audit but not a formal legal
-  review.
+For an environment without a graphical desktop, use `python run_tests.py --no-gui`; this deliberately omits Tk interface tests. Installed-pack and Minecraft playtesting are separate from this portable regression suite.
 
-## Known limits
+## Build the Windows application
 
-- **1.20.1 Forge focus.** Other Minecraft versions and loaders (Fabric, Quilt,
-  NeoForge-only builds) are not supported in this beta. The scanner will read the jars,
-  but the research data and all testing target 1.20.1 Forge.
-- **FTB Quests must be installed** in your pack for the book to appear. This project is
-  independent and is not affiliated with or endorsed by FTB or Mojang.
-- Mods that compose display names at runtime, or that ship broken item textures, may get
-  fewer quests than they deserve.
-- Very large packs (300+ mods) can take a few minutes to scan.
+```powershell
+.\.venv\Scripts\python.exe build_release.py --stage
+.\.venv\Scripts\python.exe build_release.py
+```
 
-## Credits
+The first command verifies and assembles only runtime files into `build/stage/`. The second also uses PyInstaller to create `dist/AutoQuestGen.exe`. `build/manifest.json` records the final staged file sizes and SHA-256 hashes. It excludes development fixtures, local settings, caches, generated quest books, downloaded mods, and private reference corpora.
 
-- Created by **antidqrk**
-- Built with **Claude (Anthropic)** — engineering, QA, and the research pipeline
+This is a reproducible build procedure, not a promise of identical executable bytes across machines or build timestamps. Locally rebuilt executables are separate from the tested release download and should be smoke-tested before distribution.
 
-## License
+## Edit the original native artwork
 
-**MIT.** Use it, fork it, ship books made with it commercially — no obligations back.
-See [LICENSE](LICENSE).
+`tools/render_decor_assets.py` defines the 60 native ornaments; `tools/render_animated_decor.py` defines the 12 animated landmarks. Their geometry is editable Python code. The illustrated scenes and their recorded prompts are also included. Rendering is optional and uses Pillow from `requirements-dev.txt`; running the app does not regenerate images.
 
-The grant covers this app's own code and the research data it ships. It does not extend
-to Minecraft, to FTB Quests, or to any mod you point it at — those belong to their
-authors, and this app neither contains nor redistributes any of them. It reads the jars
-already installed on your own machine and writes config files you own.
+[Detailed release verification](docs/VALIDATION-7.13.md).

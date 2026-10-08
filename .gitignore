@@ -1,6 +1,8 @@
-# Local settings — the AI path stores an API key here. Never commit it.
+# Local settings and credentials
 autoquestgen_config.json
 *key.txt
+.env
+.env.*
 
 # Runtime state and generated output
 *.log
@@ -15,3 +17,14 @@ chapters.backup-*/
 build/
 dist/
 *.spec
+*.exe
+*.rar
+*.jar
+*.pkl
+*.lnk
+*.zip
+work/
+previews/
+library/
+.venv/
+venv/

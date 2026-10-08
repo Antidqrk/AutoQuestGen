@@ -1,118 +1,215 @@
 {
- "mod": "industrialforegoing",
- "verified_against": "industrial-foregoing-1.20.1-3.5.22.jar",
- "item_count_in_jar": 122,
- "chain": [
-  {
-   "id": "industrialforegoing:machine_frame_pity",
-   "title": "Pity Machine Frame",
-   "desc": "Craft the first machine frame from four logs, four iron ingots and a redstone block; every early IF machine is built around it."
-  },
-  {
-   "id": "industrialforegoing:fluid_extractor",
-   "title": "Tree Fluid Extractor",
-   "desc": "Craft with a pity frame, a piston, iron and a light weighted pressure plate; place it facing a log to slowly extract latex fluid."
-  },
-  {
-   "id": "industrialforegoing:pitiful_generator",
-   "title": "Pitiful Generator",
-   "desc": "Craft with a pity frame, a furnace, gold and iron bars; it burns solid fuel into a small amount of FE to run your first machines."
-  },
-  {
-   "id": "industrialforegoing:latex_processing_unit",
-   "title": "Latex Processing Unit",
-   "desc": "Craft with a pity frame, furnace, buckets and a redstone block; it consumes latex, water and FE to produce tiny dry rubber."
-  },
-  {
-   "id": "industrialforegoing:tinydryrubber",
-   "title": "Tiny Dry Rubber",
-   "desc": "Collect tiny dry rubber from the Latex Processing Unit as it processes latex and water."
-  },
-  {
-   "id": "industrialforegoing:dryrubber",
-   "title": "Dry Rubber",
-   "desc": "Combine nine tiny dry rubber in a crafting grid into one dry rubber ball."
-  },
-  {
-   "id": "industrialforegoing:plastic",
-   "title": "Plastic",
-   "desc": "Smelt dry rubber in a furnace to get plastic, the ingredient gating nearly every IF machine."
-  },
-  {
-   "id": "industrialforegoing:plant_sower",
-   "title": "Plant Sower",
-   "desc": "Craft with a pity frame, plastic, a flower pot, iron gears and a piston; it auto-plants crops and saplings in the area above it."
-  },
-  {
-   "id": "industrialforegoing:plant_gatherer",
-   "title": "Plant Gatherer",
-   "desc": "Craft with a pity frame, plastic, an iron axe and hoe and a gold gear; it harvests grown crops and trees into its inventory."
-  },
-  {
-   "id": "industrialforegoing:mob_slaughter_factory",
-   "title": "Mob Slaughter Factory",
-   "desc": "Craft with a pity frame, plastic, iron swords and axes; it kills mobs dropping no loot but producing liquid meat and pink slime fluid."
-  },
-  {
-   "id": "industrialforegoing:dissolution_chamber",
-   "title": "Dissolution Chamber",
-   "desc": "Craft with a pity frame, plastic, gold, a diamond gear, buckets and a chest; it combines eight items with a fluid and is required for all higher frames."
-  },
-  {
-   "id": "industrialforegoing:machine_frame_simple",
-   "title": "Simple Machine Frame",
-   "desc": "Make in the Dissolution Chamber: a pity frame, plastic, nether bricks, iron and a gold gear with 250 mB of latex."
-  },
-  {
-   "id": "industrialforegoing:machine_frame_advanced",
-   "title": "Advanced Machine Frame",
-   "desc": "Make in the Dissolution Chamber: a simple frame, plastic, netherite scrap, gold and a diamond gear with 500 mB of pink slime."
-  },
-  {
-   "id": "industrialforegoing:mob_crusher",
-   "title": "Mob Crusher",
-   "desc": "Craft with an advanced frame, plastic, gold gears and a book; it kills mobs with Looting, yielding drops, XP and mob essence."
-  },
-  {
-   "id": "industrialforegoing:laser_drill",
-   "title": "Laser Drill",
-   "desc": "Craft with a simple frame, plastic, pistons and a diamond gear; aim drills at a laser base to generate ores from nothing."
-  },
-  {
-   "id": "industrialforegoing:ore_laser_base",
-   "title": "Ore Laser Base",
-   "desc": "Craft with an advanced frame, plastic, iron ore, a diamond pickaxe and a diamond gear; colored lenses in it bias which ores the lasers produce."
-  },
-  {
-   "id": "industrialforegoing:stasis_chamber",
-   "title": "Stasis Chamber",
-   "desc": "Craft with an advanced frame, pistons, soul sand and a ghast tear; it freezes mobs, and is the standard way to hold a Wither safely."
-  },
-  {
-   "id": "industrialforegoing:fluid_laser_base",
-   "title": "Fluid Laser Base",
-   "desc": "Craft with an advanced frame, plastic, a bucket and a diamond gear; laser drills pointed at it while a Wither is trapped nearby collect ether gas."
-  },
-  {
-   "id": "industrialforegoing:machine_frame_supreme",
-   "title": "Supreme Machine Frame",
-   "desc": "Make in the Dissolution Chamber: an advanced frame, plastic, netherite ingots, diamonds and a diamond gear with 135 mB of ether gas."
-  },
-  {
-   "id": "industrialforegoing:wither_builder",
-   "title": "Wither Builder",
-   "desc": "Craft with a supreme frame, plastic, wither skeleton skulls, soul sand and a nether star; it auto-assembles Withers for farming."
-  },
-  {
-   "id": "industrialforegoing:mycelial_reactor",
-   "title": "Mycelial Reactor",
-   "desc": "Make in the Dissolution Chamber from a supreme frame, netherite, diamond gears and a nether star with ether gas; it outputs massive FE when all 16 mycelial generators run beside it."
-  },
-  {
-   "id": "industrialforegoing:infinity_drill",
-   "title": "Infinity Drill",
-   "desc": "Make in the Dissolution Chamber from diamond blocks, a diamond shovel, a tier-11 range addon and gold gears with pink slime; the FE-powered drill mines huge areas."
+  "mod": "industrialforegoing",
+  "verified_against": "industrial-foregoing-1.20.1-3.5.22.jar",
+  "item_count_in_jar": 122,
+  "chain": [
+    {
+      "id": "industrialforegoing:machine_frame_pity",
+      "title": "A frame for the first machines",
+      "desc": "Craft a Pity Machine Frame. The first latex and power machines use this starting frame; advanced frames come from the Dissolution Chamber later.",
+      "requires": []
+    },
+    {
+      "id": "industrialforegoing:fluid_extractor",
+      "title": "Draw latex from logs",
+      "desc": "Place the Fluid Extractor against a supported log and collect its latex. Keep replacement logs and fluid storage available; supplying energy improves the extraction rate.",
+      "requires": [
+        "industrialforegoing:machine_frame_pity"
+      ]
+    },
+    {
+      "id": "industrialforegoing:pitiful_generator",
+      "title": "A small energy supply",
+      "desc": "Burn supported solid fuel in a Pitiful Generator for the first machines. It is a starting option, and any compatible power source can support the factory as it expands.",
+      "requires": [
+        "industrialforegoing:machine_frame_pity"
+      ]
+    },
+    {
+      "id": "industrialforegoing:latex_processing_unit",
+      "title": "Wash latex into rubber",
+      "desc": "Supply latex, water, and energy to the Latex Processing Unit. Keep both fluid inputs supplied and leave room to extract the resulting tiny dry rubber.",
+      "requires": [
+        "industrialforegoing:fluid_extractor"
+      ]
+    },
+    {
+      "id": "industrialforegoing:tinydryrubber",
+      "title": "Collect the first rubber pieces",
+      "desc": "Gather Tiny Dry Rubber from the processing unit. Combine the pieces into Dry Rubber before smelting; this is the material bridge from tree extraction to plastic.",
+      "requires": [
+        "industrialforegoing:latex_processing_unit"
+      ]
+    },
+    {
+      "id": "industrialforegoing:dryrubber",
+      "title": "A batch ready for the furnace",
+      "desc": "Combine Tiny Dry Rubber into Dry Rubber using the installed recipe. Keep enough processing capacity to support the plastic needed by later machines.",
+      "requires": [
+        "industrialforegoing:tinydryrubber"
+      ]
+    },
+    {
+      "id": "industrialforegoing:plastic",
+      "title": "Plastic for the machine room",
+      "desc": "Smelt Dry Rubber into Plastic. A steady plastic supply supports farming, mob processing, and the stronger machine frames.",
+      "requires": [
+        "industrialforegoing:dryrubber"
+      ]
+    },
+    {
+      "id": "industrialforegoing:plant_sower",
+      "title": "Replant the farm",
+      "desc": "Place the Plant Sower in the position shown by its working-area display. Supply seeds or saplings, power, and suitable ground before adding automatic harvesting.",
+      "requires": [
+        "industrialforegoing:plastic"
+      ]
+    },
+    {
+      "id": "industrialforegoing:plant_gatherer",
+      "title": "Harvest without losing the farm",
+      "desc": "Place and power the Plant Gatherer, then check its displayed area. Pair it with replanting and output storage for a sustainable crop or tree loop.",
+      "requires": [
+        "industrialforegoing:plastic"
+      ]
+    },
+    {
+      "id": "industrialforegoing:mob_slaughter_factory",
+      "title": "Collect pink slime separately",
+      "desc": "Build an enclosed mob supply for the Slaughter Factory. It produces liquid meat and pink slime; keep both outputs draining so one full tank does not stop the other.",
+      "requires": [
+        "industrialforegoing:plastic"
+      ]
+    },
+    {
+      "id": "industrialforegoing:dissolution_chamber",
+      "title": "Unlock the frame recipes",
+      "desc": "Supply the Dissolution Chamber with energy, the exact item ingredients, and the required fluid. Different frame tiers use different fluids, so check each recipe before filling it.",
+      "requires": [
+        "industrialforegoing:plastic"
+      ]
+    },
+    {
+      "id": "industrialforegoing:machine_frame_simple",
+      "title": "The simple frame tier",
+      "desc": "Make a Simple Machine Frame in the Dissolution Chamber with latex and its item ingredients. Use it to expand the factory's available machines.",
+      "requires": [
+        "industrialforegoing:dissolution_chamber"
+      ]
+    },
+    {
+      "id": "industrialforegoing:machine_frame_advanced",
+      "title": "A frame made with pink slime",
+      "desc": "Use liquid pink slime in the Advanced Machine Frame recipe. Keep this resource branch supplied; merely collecting a pink slime item does not fill the chamber's fluid tank.",
+      "requires": [
+        "industrialforegoing:machine_frame_simple",
+        "industrialforegoing:mob_slaughter_factory"
+      ]
+    },
+    {
+      "id": "industrialforegoing:mob_crusher",
+      "title": "A farm for normal mob drops",
+      "desc": "Provide an enclosed mob area, power, and output handling. The Mob Crusher collects ordinary drops and essence, serving a different purpose from the Slaughter Factory.",
+      "requires": [
+        "industrialforegoing:machine_frame_advanced"
+      ]
+    },
+    {
+      "id": "industrialforegoing:laser_drill",
+      "title": "Power for laser extraction",
+      "desc": "Build Laser Drills and arrange them around a compatible laser base. Drills provide work; the base, lens, biome, and depth settings determine what a specific setup can extract.",
+      "requires": [
+        "industrialforegoing:machine_frame_simple"
+      ]
+    },
+    {
+      "id": "industrialforegoing:ore_laser_base",
+      "title": "Choose the ore prospect",
+      "desc": "Connect powered Laser Drills to an Ore Laser Base. Consult the installed lens, biome, and depth recipes, then test the output before dedicating more power to the setup.",
+      "requires": [
+        "industrialforegoing:laser_drill",
+        "industrialforegoing:machine_frame_advanced"
+      ]
+    },
+    {
+      "id": "industrialforegoing:stasis_chamber",
+      "title": "Hold a mob for a process",
+      "desc": "Power a Stasis Chamber and confirm its working area before placing a target. A Wither-based ether-gas setup needs a deliberately prepared chamber and extraction line.",
+      "requires": [
+        "industrialforegoing:machine_frame_advanced"
+      ]
+    },
+    {
+      "id": "industrialforegoing:fluid_laser_base",
+      "title": "Extract a selected fluid",
+      "desc": "Pair the Fluid Laser Base with powered drills and the conditions shown in the recipe viewer. Ether gas additionally needs the appropriate Wither arrangement and lens; it is not produced from empty space.",
+      "requires": [
+        "industrialforegoing:laser_drill",
+        "industrialforegoing:machine_frame_advanced"
+      ]
+    },
+    {
+      "id": "industrialforegoing:machine_frame_supreme",
+      "title": "An ether-gas frame",
+      "desc": "Produce ether gas through the configured Wither extraction setup, then use it in the Supreme Machine Frame recipe. Verify the fluid reaches the Dissolution Chamber before supplying expensive ingredients.",
+      "requires": [
+        "industrialforegoing:machine_frame_advanced",
+        "industrialforegoing:fluid_laser_base",
+        "industrialforegoing:stasis_chamber"
+      ]
+    },
+    {
+      "id": "industrialforegoing:wither_builder",
+      "title": "Automate Wither construction",
+      "desc": "Give the Wither Builder the required soul sand and skulls in a prepared containment area. Construction is only one part of the farm; provide a separate defeat and drop-collection solution.",
+      "requires": [
+        "industrialforegoing:machine_frame_supreme"
+      ]
+    },
+    {
+      "id": "industrialforegoing:mycelial_reactor",
+      "title": "Coordinate the mycelial generators",
+      "desc": "Build the Mycelial Reactor and read its operating conditions. Its large output requires the full set of distinct supporting mycelial generators to run; crafting the reactor alone does not activate that output.",
+      "requires": [
+        "industrialforegoing:machine_frame_supreme"
+      ]
+    },
+    {
+      "id": "industrialforegoing:infinity_drill",
+      "title": "A tool with room to grow",
+      "desc": "Craft the Infinity Drill and build its charge and fuel supply. Its effective mining capabilities grow with its stored energy tier; check the current mode before using it near the base.",
+      "requires": [
+        "industrialforegoing:machine_frame_supreme"
+      ]
+    }
+  ],
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "sources": [
+    "https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing",
+    "https://www.curseforge.com/minecraft/mc-mods/industrial-foregoing"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Latex and plastic loop",
+      "Parallel crop and mob farms",
+      "Frame fluid progression",
+      "Ore and ether-gas lasers",
+      "Supreme machines and infinity tool"
+    ],
+    "limits": [
+      "Targets the cached 1.20.1 generation; addon soul and extra-machine systems are outside scope.",
+      "Complex Wither and mycelial operating conditions are explained but not automatically detected by item tasks.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": false,
+    "cached_jar_versions": [
+      "3.5.22"
+    ]
   }
- ],
- "notes": "Frame gating verified from recipes: pity=crafting table, simple/advanced/supreme=dissolution chamber with latex/pink slime/ether gas respectively. Ether gas comes from laser drills targeting a Wither (data/industrialforegoing/recipes/laser_drill_fluid/ether_gas.json), normally held in a stasis chamber. Note the Tree Fluid Extractor registry id is fluid_extractor. All ids set-checked against 122 item models in jar."
 }

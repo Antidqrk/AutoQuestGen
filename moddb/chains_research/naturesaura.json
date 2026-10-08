@@ -1,214 +1,357 @@
 {
- "mod": "naturesaura",
- "verified_against": "naturesaura-39.4.jar",
- "item_count_in_jar": 141,
- "chain": [
-  {
-   "id": "naturesaura:gold_fiber",
-   "title": "Threads of Brilliance",
-   "desc": "Gold nuggets, leaves and a tuft of grass. Placed in the crown of a tree it slowly turns the canopy to Golden Leaves."
+  "mod": "naturesaura",
+  "verified_against": "NaturesAura-39.4.jar",
+  "item_count_in_jar": 141,
+  "chain": [
+    {
+      "id": "naturesaura:gold_fiber",
+      "title": "Threads of Brilliance",
+      "desc": "Place Brilliant Fiber on a tree canopy and let the transformation spread through its leaves. Start with a tree you can reach safely so collecting the finished leaves is straightforward.",
+      "requires": []
+    },
+    {
+      "id": "naturesaura:bottle_two_the_rebottling",
+      "title": "Bottle and Cork",
+      "desc": "A glass bottle and a plank. Right-click the open air with it to catch Aura; a dispenser will do the job for you.",
+      "requires": []
+    },
+    {
+      "id": "naturesaura:end_flower",
+      "title": "Rose of Oblivion",
+      "desc": "Follow the guide's End expedition to find the Rose of Oblivion. Learn its Aura-generation method before planting it as the supply for an expensive new workshop.",
+      "requires": []
+    },
+    {
+      "id": "naturesaura:birth_spirit",
+      "title": "Something Left Over From a Birth",
+      "desc": "Breed suitable animals in an area with the Aura conditions described by the guide and collect Spirits of Birthing. Keep the breeding area supplied rather than expecting every ordinary birth to produce one.",
+      "requires": [],
+      "acquisition": "Breed passive animals in an area with excess Aura; the breeding event can spawn Spirits of Birthing as item drops.",
+      "sources": [
+        "NaturesAura-39.4.jar!assets/naturesaura/patchouli_books/book/en_us/entries/using/animal_spawner.json",
+        "NaturesAura-39.4.jar!de/ellpeck/naturesaura/items/ItemBirthSpirit$EventHandler.class"
+      ]
+    },
+    {
+      "id": "naturesaura:gold_leaf",
+      "title": "Harvest the Brilliant Tree",
+      "desc": "Harvest the transformed Golden Leaves for Gold Leaf. Keep enough for ritual materials and Wooden Stands before turning the rest into powder.",
+      "requires": [
+        "naturesaura:gold_fiber"
+      ]
+    },
+    {
+      "id": "naturesaura:aura_bottle",
+      "title": "Sunlight, Ghosts and Darkness",
+      "desc": "Use the Bottle and Cork to collect Aura in the dimension required by your recipe. Bottled Aura retains its type, so an Overworld bottle is not automatically a substitute for a Nether or End bottle.",
+      "requires": [
+        "naturesaura:bottle_two_the_rebottling"
+      ],
+      "acquisition": "Use a Bottle and Cork in the air to collect Aura. The filled item is an Aura Bottle carrying the dimension-specific stored type.",
+      "sources": [
+        "NaturesAura-39.4.jar!assets/naturesaura/patchouli_books/book/en_us/entries/practices/aura_bottle.json",
+        "NaturesAura-39.4.jar!de/ellpeck/naturesaura/items/ItemAuraBottle.class"
+      ]
+    },
+    {
+      "id": "naturesaura:gold_brick",
+      "title": "Bricks Shot Through With Gold",
+      "desc": "Stone bricks and Brilliant Fiber. Both catalysts are built on a frame of these.",
+      "requires": [
+        "naturesaura:gold_fiber"
+      ]
+    },
+    {
+      "id": "naturesaura:gold_powder",
+      "title": "Crushed to Dust",
+      "desc": "Use Gold Powder to lay out the Ritual of the Forest exactly as the guide shows. Leave room for the sapling and ingredient stands rather than squeezing the ritual into a normal crafting corner.",
+      "requires": [
+        "naturesaura:gold_leaf"
+      ]
+    },
+    {
+      "id": "naturesaura:wood_stand",
+      "title": "Stands Around the Circle",
+      "desc": "Set Wooden Stands in the ritual arrangement and place the selected recipe ingredients on them. The growing tree completes the ritual; prepare the recipe before triggering its growth.",
+      "requires": [
+        "naturesaura:gold_leaf"
+      ]
+    },
+    {
+      "id": "naturesaura:token_joy",
+      "title": "Carved From Gladness",
+      "desc": "Complete the Token of Joy tree ritual with the correct bottled Aura and ingredients. Save a token for the Natural Altar instead of using every early token on side projects.",
+      "requires": [
+        "naturesaura:gold_powder",
+        "naturesaura:wood_stand",
+        "naturesaura:aura_bottle"
+      ]
+    },
+    {
+      "id": "naturesaura:eye",
+      "title": "See What Is Not There",
+      "desc": "Use the Environmental Eye to inspect local Aura while operating the altar. If the area is running low, address the supply before adding more machines to the same workshop.",
+      "requires": [
+        "naturesaura:gold_leaf",
+        "naturesaura:gold_powder",
+        "naturesaura:wood_stand"
+      ]
+    },
+    {
+      "id": "naturesaura:ancient_sapling",
+      "title": "Seed of an Older Forest",
+      "desc": "Complete the tree ritual for an Ancient Sapling and grow it in a clear area. Keep a renewable supply of the wood for the rods and tools that require Ancient materials.",
+      "requires": [
+        "naturesaura:gold_leaf",
+        "naturesaura:gold_powder",
+        "naturesaura:wood_stand"
+      ]
+    },
+    {
+      "id": "naturesaura:nature_altar",
+      "title": "Where Nature Is Infused",
+      "desc": "Create the Natural Altar through the Ritual of the Forest, then build its supporting multiblock. It draws Aura from the surrounding area; plan a replenishment source before running repeated infusions.",
+      "requires": [
+        "naturesaura:token_joy",
+        "naturesaura:gold_powder",
+        "naturesaura:wood_stand"
+      ]
+    },
+    {
+      "id": "naturesaura:ancient_stick",
+      "title": "A Stick With History",
+      "desc": "Split from Ancient Slabs. Every finder, the Staff of Baldur and the Ender Ocular are built around one.",
+      "requires": [
+        "naturesaura:ancient_sapling"
+      ]
+    },
+    {
+      "id": "naturesaura:infused_iron",
+      "title": "Iron That Drank the Air",
+      "desc": "An iron ingot left on the Natural Altar until the surrounding Aura soaks into it. The mod's working metal.",
+      "requires": [
+        "naturesaura:nature_altar"
+      ]
+    },
+    {
+      "id": "naturesaura:infused_stone",
+      "title": "Rock, Similarly Treated",
+      "desc": "Stone infused on the altar. It builds the catalysts, the Aura Cache and most of the mod's machinery.",
+      "requires": [
+        "naturesaura:nature_altar"
+      ]
+    },
+    {
+      "id": "naturesaura:tainted_gold",
+      "title": "Gold, Spoiled",
+      "desc": "Place gold on a working Natural Altar and wait for the Tainted Gold infusion. This recipe consumes Aura over time; deliberately exhausting the area is not a prerequisite.",
+      "requires": [
+        "naturesaura:nature_altar"
+      ]
+    },
+    {
+      "id": "naturesaura:aura_cache",
+      "title": "A Pocket Full of Aura",
+      "desc": "Charge the Aura Cache and carry it to supply supported equipment. Watch its stored amount while testing a trinket so you know how quickly your usual activities drain it.",
+      "requires": [
+        "naturesaura:infused_iron",
+        "naturesaura:infused_stone"
+      ]
+    },
+    {
+      "id": "naturesaura:crushing_catalyst",
+      "title": "The Altar Learns to Grind",
+      "desc": "Build the Crushing Catalyst and place it in the altar arrangement shown by the guide. Test a supported crushing recipe to confirm that the catalyst is positioned correctly.",
+      "requires": [
+        "naturesaura:gold_brick",
+        "naturesaura:infused_stone",
+        "naturesaura:gold_powder",
+        "naturesaura:wood_stand"
+      ]
+    },
+    {
+      "id": "naturesaura:calling_spirit",
+      "title": "A Voice That Reaches Up",
+      "desc": "Bring together Infused Iron, Tainted Gold and the required Aura bottle types to make a Spirit of Calling. This connects your altar workshop with the offering branch.",
+      "requires": [
+        "naturesaura:infused_iron",
+        "naturesaura:tainted_gold",
+        "naturesaura:aura_bottle"
+      ]
+    },
+    {
+      "id": "naturesaura:offering_table",
+      "title": "Offering to the Gods",
+      "desc": "Arrange the Offering Table and its required surroundings according to the guide. Prepare both the offering items and a Spirit of Calling before attempting an exchange.",
+      "requires": [
+        "naturesaura:infused_iron",
+        "naturesaura:gold_powder",
+        "naturesaura:wood_stand"
+      ]
+    },
+    {
+      "id": "naturesaura:sky_ingot",
+      "title": "What the Sky Sends Back",
+      "desc": "Use the offering process to obtain Ingots of the Skies. Reserve the first supply for the Conversion Catalyst or another planned upgrade instead of scattering it across unfinished projects.",
+      "requires": [
+        "naturesaura:offering_table",
+        "naturesaura:calling_spirit"
+      ]
+    },
+    {
+      "id": "naturesaura:token_euphoria",
+      "title": "Joy, Made Greater",
+      "desc": "Offer a Token of Joy and the gods return its stronger form. Each of the four base tokens has such an exchange.",
+      "requires": [
+        "naturesaura:offering_table",
+        "naturesaura:calling_spirit",
+        "naturesaura:token_joy"
+      ]
+    },
+    {
+      "id": "naturesaura:conversion_catalyst",
+      "title": "The Altar Learns to Transmute",
+      "desc": "Use Ingots of the Skies to prepare the Conversion Catalyst. Add it to the altar setup and check the newly available conversions before committing valuable materials.",
+      "requires": [
+        "naturesaura:gold_brick",
+        "naturesaura:infused_stone",
+        "naturesaura:sky_ingot",
+        "naturesaura:gold_powder",
+        "naturesaura:wood_stand"
+      ]
+    },
+    {
+      "id": "naturesaura:depth_ingot",
+      "title": "Pressed Into the Deep",
+      "desc": "Combine Ingots of the Skies, Tainted Gold and the remaining listed ingredients into the deeper metal tier. Choose a specific late tool or device before spending the first ingots.",
+      "requires": [
+        "naturesaura:sky_ingot",
+        "naturesaura:tainted_gold"
+      ]
+    },
+    {
+      "id": "naturesaura:eye_improved",
+      "title": "The Ocular",
+      "desc": "The Environmental Eye rebuilt by ritual with a Rose of Oblivion and an Ingot of the Skies; it reads far more than Aura level.",
+      "requires": [
+        "naturesaura:eye",
+        "naturesaura:end_flower",
+        "naturesaura:sky_ingot"
+      ]
+    },
+    {
+      "id": "naturesaura:animal_spawner",
+      "title": "Altar of Birthing",
+      "desc": "Prepare the Altar of Birthing with the correct offerings and a Spirit of Birthing. Give the resulting creature a safe enclosure before starting the process.",
+      "requires": [
+        "naturesaura:sky_ingot",
+        "naturesaura:token_euphoria",
+        "naturesaura:birth_spirit"
+      ]
+    },
+    {
+      "id": "naturesaura:death_ring",
+      "title": "Ring of Last Chance",
+      "desc": "Craft the Ring of Last Chance with the required advanced tokens and Aura materials. Keep its Aura supply available and read the limitations before treating it as reliable emergency protection.",
+      "requires": [
+        "naturesaura:sky_ingot",
+        "naturesaura:token_euphoria",
+        "naturesaura:aura_bottle"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "hub": "naturesaura:eye",
+      "members": [
+        "naturesaura:cave_finder",
+        "naturesaura:end_city_finder",
+        "naturesaura:fortress_finder",
+        "naturesaura:loot_finder",
+        "naturesaura:netherite_finder",
+        "naturesaura:outpost_finder",
+        "naturesaura:ender_access",
+        "naturesaura:chunk_loader"
+      ]
+    },
+    {
+      "hub": "naturesaura:oak_generator",
+      "members": [
+        "naturesaura:animal_generator",
+        "naturesaura:chorus_generator",
+        "naturesaura:firework_generator",
+        "naturesaura:flower_generator",
+        "naturesaura:moss_generator",
+        "naturesaura:potion_generator",
+        "naturesaura:projectile_generator",
+        "naturesaura:slime_split_generator"
+      ]
+    },
+    {
+      "hub": "naturesaura:token_joy",
+      "members": [
+        "naturesaura:token_anger",
+        "naturesaura:token_fear",
+        "naturesaura:token_sorrow",
+        "naturesaura:token_euphoria",
+        "naturesaura:token_grief",
+        "naturesaura:token_rage",
+        "naturesaura:token_terror"
+      ]
+    },
+    {
+      "hub": "naturesaura:sky_pickaxe",
+      "members": [
+        "naturesaura:sky_axe",
+        "naturesaura:sky_hoe",
+        "naturesaura:sky_shovel",
+        "naturesaura:sky_sword",
+        "naturesaura:sky_chest",
+        "naturesaura:sky_helmet",
+        "naturesaura:sky_pants",
+        "naturesaura:sky_shoes"
+      ]
+    },
+    {
+      "hub": "naturesaura:depth_pickaxe",
+      "members": [
+        "naturesaura:depth_axe",
+        "naturesaura:depth_hoe",
+        "naturesaura:depth_shovel",
+        "naturesaura:depth_sword",
+        "naturesaura:depth_chest",
+        "naturesaura:depth_helmet",
+        "naturesaura:depth_pants",
+        "naturesaura:depth_shoes"
+      ]
+    }
+  ],
+  "notes": "Reviewed against the primary sources listed above. Every chain row now declares its intended prerequisites; an empty list is an intentional independent starting point. The order is topological. Item and checkpoint-icon asset paths and typed objective identifiers were checked against the listed jar or source snapshot. Jar inspection verifies identifiers and selected mechanics, not that every route has been completed in game.",
+  "sources": [
+    {
+      "kind": "installed_mod_jar",
+      "file": "NaturesAura-39.4.jar",
+      "paths": [
+        "assets/naturesaura/lang/en_us.json",
+        "data/naturesaura/recipes/",
+        "assets/naturesaura/lang/en_us.json",
+        "assets/naturesaura/patchouli_books/book/en_us/categories/creating.json",
+        "assets/naturesaura/patchouli_books/book/en_us/categories/devices.json"
+      ],
+      "scope": "English guide/tooltip text, recipe data and inventory assets; selected special mechanics checked against implementation."
+    }
+  ],
+  "coverage": {
+    "type": "authored_offline_progression",
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "verification": "installed_jar_review",
+    "reviewed": "2026-10-07",
+    "scope": "Tree rituals, Aura-aware altar operation, offering exchanges, ancient wood and late devices.",
+    "guide_rows": 28,
+    "manual_checkpoints": 0,
+    "limits": "A curated teaching route, not every item or mechanic. Recipe quantities and conditions follow the installed pack. Manual checkpoints require player confirmation. No complete in-game playthrough claimed."
   },
-  {
-   "id": "naturesaura:gold_leaf",
-   "title": "Harvest the Brilliant Tree",
-   "desc": "Break fully grown Golden Leaves for a 75% chance of Gold Leaf. Every first step in the mod is paid for in these."
-  },
-  {
-   "id": "naturesaura:gold_powder",
-   "title": "Crushed to Dust",
-   "desc": "Gold Leaf ground down. Sprinkled on the ground it draws the ring that the Ritual of the Forest is performed inside."
-  },
-  {
-   "id": "naturesaura:wood_stand",
-   "title": "Stands Around the Circle",
-   "desc": "A log topped with Gold Leaf. Each stand holds one ingredient for the Ritual of the Forest; you never need all of them."
-  },
-  {
-   "id": "naturesaura:token_joy",
-   "title": "Carved From Gladness",
-   "desc": "The first Ritual of the Forest. An Aura Bottle and Gold Leaf grown through an oak sapling into a figurine of joy."
-  },
-  {
-   "id": "naturesaura:nature_altar",
-   "title": "Where Nature Is Infused",
-   "desc": "Stone, gold and a Token of Joy fed to an oak sapling. The altar draws ambient Aura and infuses whatever sits on it."
-  },
-  {
-   "id": "naturesaura:bottle_two_the_rebottling",
-   "title": "Bottle and Cork",
-   "desc": "A glass bottle and a plank. Right-click the open air with it to catch Aura; a dispenser will do the job for you."
-  },
-  {
-   "id": "naturesaura:aura_bottle",
-   "title": "Sunlight, Ghosts and Darkness",
-   "desc": "One item with three faces: Overworld Aura is bottled sunlight, Nether Aura is ghosts, End Aura is an excess of dark."
-  },
-  {
-   "id": "naturesaura:infused_iron",
-   "title": "Iron That Drank the Air",
-   "desc": "An iron ingot left on the Natural Altar until the surrounding Aura soaks into it. The mod's working metal."
-  },
-  {
-   "id": "naturesaura:infused_stone",
-   "title": "Rock, Similarly Treated",
-   "desc": "Stone infused on the altar. It builds the catalysts, the Aura Cache and most of the mod's machinery."
-  },
-  {
-   "id": "naturesaura:aura_cache",
-   "title": "A Pocket Full of Aura",
-   "desc": "Infused Iron around Infused Rock. Carried in your inventory it stores Aura and quietly pays for your trinkets."
-  },
-  {
-   "id": "naturesaura:eye",
-   "title": "See What Is Not There",
-   "desc": "A Ritual of the Forest around Gold Leaf. Held in the offhand the Environmental Eye shows the Aura level of the chunk you stand in."
-  },
-  {
-   "id": "naturesaura:tainted_gold",
-   "title": "Gold, Spoiled",
-   "desc": "A gold ingot infused on the altar in a low-Aura area. Where Infused Iron is nature's metal, this one is its imbalance."
-  },
-  {
-   "id": "naturesaura:gold_brick",
-   "title": "Bricks Shot Through With Gold",
-   "desc": "Stone bricks and Brilliant Fiber. Both catalysts are built on a frame of these."
-  },
-  {
-   "id": "naturesaura:crushing_catalyst",
-   "title": "The Altar Learns to Grind",
-   "desc": "Golden Stone Bricks, Infused Rock and a Token of Anger, grown by ritual. Set beneath the altar it unlocks the crushing recipes."
-  },
-  {
-   "id": "naturesaura:conversion_catalyst",
-   "title": "The Altar Learns to Transmute",
-   "desc": "The second catalyst, needing an Ingot of the Skies. It turns the altar's infusions into outright transmutations."
-  },
-  {
-   "id": "naturesaura:calling_spirit",
-   "title": "A Voice That Reaches Up",
-   "desc": "Infused Iron, Tainted Gold and two Aura Bottles - one Overworld, one Nether. The recipe itself forces the trip below."
-  },
-  {
-   "id": "naturesaura:offering_table",
-   "title": "Offering to the Gods",
-   "desc": "Infused Iron with a Token of Fear and a Token of Sorrow. Ring it with flowers, fill the bowl, and throw down a Spirit of Calling."
-  },
-  {
-   "id": "naturesaura:sky_ingot",
-   "title": "What the Sky Sends Back",
-   "desc": "Offer Infused Iron, or Tainted Gold for a better yield, and the Ingots of the Skies rain down on the table."
-  },
-  {
-   "id": "naturesaura:token_euphoria",
-   "title": "Joy, Made Greater",
-   "desc": "Offer a Token of Joy and the gods return its stronger form. Each of the four base tokens has such an exchange."
-  },
-  {
-   "id": "naturesaura:ancient_sapling",
-   "title": "Seed of an Older Forest",
-   "desc": "A ritual on a dark oak sapling with Gold Leaf. Ancient wood is the only wood the mod's rods and finders will accept."
-  },
-  {
-   "id": "naturesaura:ancient_stick",
-   "title": "A Stick With History",
-   "desc": "Split from Ancient Slabs. Every finder, the Staff of Baldur and the Ender Ocular are built around one."
-  },
-  {
-   "id": "naturesaura:depth_ingot",
-   "title": "Pressed Into the Deep",
-   "desc": "Two Ingots of the Skies, two Tainted Gold and a netherite scrap. The strongest metal Nature's Aura will make."
-  },
-  {
-   "id": "naturesaura:end_flower",
-   "title": "Rose of Oblivion",
-   "desc": "Sprouts across the End island once the Ender Dragon is dead. Feed it an Ender Eye and it floods the area with Aura."
-  },
-  {
-   "id": "naturesaura:eye_improved",
-   "title": "The Ocular",
-   "desc": "The Environmental Eye rebuilt by ritual with a Rose of Oblivion and an Ingot of the Skies; it reads far more than Aura level."
-  },
-  {
-   "id": "naturesaura:birth_spirit",
-   "title": "Something Left Over From a Birth",
-   "desc": "Breed two passive animals where Aura runs high and Spirits of Birthing sometimes fall out of the process."
-  },
-  {
-   "id": "naturesaura:animal_spawner",
-   "title": "Altar of Birthing",
-   "desc": "Ingots of the Skies and a Token of Euphoria. Throw down a Spirit of Birthing with the right offerings and it grows a living creature."
-  },
-  {
-   "id": "naturesaura:death_ring",
-   "title": "Ring of Last Chance",
-   "desc": "End Aura, an Ingot of the Skies and the Tokens of Euphoria and Terror. It spends Aura instead of your life."
-  }
- ],
- "collections": [
-  {
-   "hub": "naturesaura:eye",
-   "members": [
-    "naturesaura:cave_finder",
-    "naturesaura:end_city_finder",
-    "naturesaura:fortress_finder",
-    "naturesaura:loot_finder",
-    "naturesaura:netherite_finder",
-    "naturesaura:outpost_finder",
-    "naturesaura:ender_access",
-    "naturesaura:chunk_loader"
-   ]
-  },
-  {
-   "hub": "naturesaura:oak_generator",
-   "members": [
-    "naturesaura:animal_generator",
-    "naturesaura:chorus_generator",
-    "naturesaura:firework_generator",
-    "naturesaura:flower_generator",
-    "naturesaura:moss_generator",
-    "naturesaura:potion_generator",
-    "naturesaura:projectile_generator",
-    "naturesaura:slime_split_generator"
-   ]
-  },
-  {
-   "hub": "naturesaura:token_joy",
-   "members": [
-    "naturesaura:token_anger",
-    "naturesaura:token_fear",
-    "naturesaura:token_sorrow",
-    "naturesaura:token_euphoria",
-    "naturesaura:token_grief",
-    "naturesaura:token_rage",
-    "naturesaura:token_terror"
-   ]
-  },
-  {
-   "hub": "naturesaura:sky_pickaxe",
-   "members": [
-    "naturesaura:sky_axe",
-    "naturesaura:sky_hoe",
-    "naturesaura:sky_shovel",
-    "naturesaura:sky_sword",
-    "naturesaura:sky_chest",
-    "naturesaura:sky_helmet",
-    "naturesaura:sky_pants",
-    "naturesaura:sky_shoes"
-   ]
-  },
-  {
-   "hub": "naturesaura:depth_pickaxe",
-   "members": [
-    "naturesaura:depth_axe",
-    "naturesaura:depth_hoe",
-    "naturesaura:depth_shovel",
-    "naturesaura:depth_sword",
-    "naturesaura:depth_chest",
-    "naturesaura:depth_helmet",
-    "naturesaura:depth_pants",
-    "naturesaura:depth_shoes"
-   ]
-  }
- ],
- "notes": "VERIFICATION: 148 stems pass (item model OR blockstate) INTERSECT (lang key OR recipe result OR loot entry OR tag OR advancement); 141 survive the obtainability audit. All 28 chain ids, 5 wheel hubs and 39 wheel members (72 ids total) were re-checked, fully namespaced, against the surviving set on a second pass whose derivation is deliberately independent of the first: exact item-model path existence plus the literal \"<ns>:<path>\" string appearing in the jar data trees. 0 failures. DROPS: naturesaura:book is NOT an item - data/naturesaura/recipes/book.json is a shapeless recipe whose result is patchouli:guide_book with the NBT tag {\"patchouli:book\":\"naturesaura:book\"}, exactly the Zenith pattern, so the guide book has no naturesaura-namespaced id and must not be quested as one. Also dropped: the five potted_* blocks (potted_aura_bloom, potted_aura_cactus, potted_aura_mushroom, potted_crimson_aura_mushroom, potted_warped_aura_mushroom), whose loot tables hand back minecraft:flower_pot and which have no item form; and multiblock_maker, which has a model and a lang key but appears in no recipe, loot table, tag, advancement or book page - a creative/debug structure tool with no acquisition path. COMPOSED NAMES: naturesaura:aura_bottle and naturesaura:effect_powder have item models but no item.naturesaura.<stem> key, because their names are assembled at runtime from item.naturesaura.aura_bottle.naturesaura:overworld / .nether / .end / .other and item.naturesaura.effect_powder.naturesaura:plant_boost and four siblings. Both are proven real: aura_bottle is the icon of the practices/aura_bottle book entry written as naturesaura:aura_bottle{stored_type:'naturesaura:overworld'}, is the named result of three advancements, and appears as a forge:nbt ingredient in calling_spirit.json; effect_powder is the declared result of five tree_ritual recipes. Critically these are ONE id each with NBT variants, not 4 and 5 separate ids, so neither can become a wheel. TIER GATE: the analogue of Bewitchment's chalk tier is RITUAL TIER crossed with AURA TYPE. Three ritual tiers exist as distinct recipe types - naturesaura:tree_ritual (17 recipes, gold powder ring plus wood stands, needs only Gold Leaf), naturesaura:altar (36 recipes, the Natural Altar, split into a base set and sets gated behind crushing_catalyst and conversion_catalyst placed under it), and naturesaura:offering (7 recipes, the Offering Table, every one of them requiring a Spirit of Calling). The Spirit of Calling is the hard gate: its recipe demands aura_bottle with stored_type naturesaura:overworld AND stored_type naturesaura:nether in the same grid, so the Nether trip is a recipe-level requirement, not a suggestion. End Aura gates ender_access, end_city_finder, chunk_loader and death_ring the same way. Everything past sky_ingot therefore sits behind two dimensions. ENTITIES: no kill step is offered. The mod registers no hostile mobs of its own; the 60 naturesaura:animal_spawner recipes spawn vanilla passive animals, and killing them would be a vanilla task, not a mod one. OTHER ACQUISITION: birth_spirit and vacuum_bottle have no recipe and are correctly kept - the book states Spirits of Birthing drop when passive animals breed in high Aura, and the Bottled Vacuum is what a Bottle and Cork becomes when used in an area of severe negative Aura imbalance (advancement naturesaura:vacuum_bottle, parented to naturesaura:negative_imbalance, confirms it is reachable). gold_leaf likewise has no recipe: it comes from data/naturesaura/loot_tables/blocks/golden_leaves.json at 75% when the leaves reach stage 3. CONSENSUS: moddb.json has no naturesaura entry, so there is no 6-pack consensus to cross-check. harvested_order.json does carry 12 naturesaura ids - ancient_sapling, conversion_catalyst, nature_altar, furnace_heater, crushing_catalyst, spring, offering_table, death_ring, sky_ingot, generator_limit_remover, oak_generator, depth_ingot - and all 12 exist in the jar. One ordering conflict: it places ancient_sapling and conversion_catalyst before nature_altar, but conversion_catalyst's tree_ritual recipe requires infused_stone and sky_ingot, both of which require the altar, and sky_ingot additionally requires the Offering Table. The recipe graph is preferred and both are moved after the altar and the offering here."
+  "content_revision": "2026-10-07: explicit branched prerequisites, practical instructions and primary-source coverage review."
 }

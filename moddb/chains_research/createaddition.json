@@ -1,152 +1,237 @@
 {
- "mod": "createaddition",
- "verified_against": "createaddition-1.20.1-1.3.3.jar",
- "item_count_in_jar": 47,
- "chain": [
-  {
-   "id": "createaddition:spool",
-   "title": "Something to Wind Onto",
-   "desc": "Two iron plates around an iron nugget, sixteen at a time. Empty until wire is wound on it, and every electrical block in the mod starts here."
-  },
-  {
-   "id": "createaddition:rolling_mill",
-   "title": "Squeezing Metal Thin",
-   "desc": "Iron plates, a shaft, andesite alloy and andesite casing. Fed rotation it draws ingots into rods and plates into wire; nothing electrical happens without it."
-  },
-  {
-   "id": "createaddition:copper_wire",
-   "title": "Drawn Copper",
-   "desc": "A copper plate through the rolling mill gives two. Copper conducts best of the cheap metals, which is why the first spool you build is copper."
-  },
-  {
-   "id": "createaddition:copper_spool",
-   "title": "Wound and Ready",
-   "desc": "Four copper wire around an empty spool. A spool is the coil at the heart of the alternator, the motor and the tesla coil alike."
-  },
-  {
-   "id": "createaddition:capacitor",
-   "title": "Holding the Charge",
-   "desc": "A zinc plate, a copper plate and a redstone torch. Buffers energy inside a machine so the motor does not stall the instant supply dips."
-  },
-  {
-   "id": "createaddition:alternator",
-   "title": "Rotation Becomes Current",
-   "desc": "Mechanical crafting: iron plates and rods around copper spools and a capacitor. Spin it and your windmills start paying out Forge Energy."
-  },
-  {
-   "id": "createaddition:electric_motor",
-   "title": "Current Becomes Rotation",
-   "desc": "The alternator run backwards, built on brass plates instead of iron. Feed it energy and it outputs shaft rotation at a speed you dial in."
-  },
-  {
-   "id": "createaddition:connector",
-   "title": "Where the Wire Lands",
-   "desc": "A copper rod, andesite alloy and a slimeball, three at a time. Stuck to any energy-capable block it becomes an endpoint you can string wire between."
-  },
-  {
-   "id": "createaddition:redstone_relay",
-   "title": "A Switch for Electricity",
-   "desc": "Two connectors either side of an electron tube on a stone bed. Passes current from input to output only while a redstone signal holds it open."
-  },
-  {
-   "id": "createaddition:modular_accumulator",
-   "title": "The Bank",
-   "desc": "Capacitors flanking a brass casing with a copper rod and gold or electrum wire. Stack them into a multiblock and the buffer grows with the tower."
-  },
-  {
-   "id": "createaddition:tesla_coil",
-   "title": "Arcs and Consequences",
-   "desc": "Mechanical crafting from copper spools, capacitors, brass plates, brass casing and an electron tube. Discharges stored energy into whatever stands near it."
-  },
-  {
-   "id": "createaddition:portable_energy_interface",
-   "title": "Charging on the Move",
-   "desc": "Brass casing, a chute and a copper spool. Paired across a contraption gap it passes energy to a moving train or a rotating platform."
-  },
-  {
-   "id": "createaddition:barbed_wire",
-   "title": "Do Not Walk Here",
-   "desc": "Four iron wire in a ring, two at a time. Cheap area denial that hurts anything crossing it, and it needs no power at all."
-  },
-  {
-   "id": "createaddition:zinc_sheet",
-   "title": "Zinc Under the Press",
-   "desc": "One zinc ingot pressed flat. The mod adds plates for metals base Create never bothered to press, and this is the one its own capacitor needs."
-  },
-  {
-   "id": "createaddition:diamond_grit",
-   "title": "Crushed Perfection",
-   "desc": "One diamond through the crushing wheels. The hardest abrasive the pack has, and worth more as grit than it ever was as a gem."
-  },
-  {
-   "id": "createaddition:diamond_grit_sandpaper",
-   "title": "The Last Polish",
-   "desc": "Paper dusted with diamond grit. Outlasts Create's own red sand paper by a wide margin when polishing rose quartz in bulk."
-  },
-  {
-   "id": "createaddition:electrum_ingot",
-   "title": "Pale Gold",
-   "desc": "Gold and silver mixed hot in a basin. The mod's own alloy, and the best conductor it offers, so every long wire run wants it."
-  },
-  {
-   "id": "createaddition:electrum_sheet",
-   "title": "Rolled Pale",
-   "desc": "An electrum ingot pressed into a plate. The intermediate that becomes electrum wire, which carries more current per strand than copper or gold."
-  },
-  {
-   "id": "createaddition:electrum_block",
-   "title": "Stacked Alloy",
-   "desc": "Nine electrum ingots. Storage that also reads as a deliberate flourish in a wiring room, since electrum has no other block form."
-  },
-  {
-   "id": "createaddition:electrum_amulet",
-   "title": "Worn for Luck",
-   "desc": "Electrum ingots and wire wrapped around an emerald. Purely a trinket, but the mod's one piece of jewellery and a natural milestone."
-  },
-  {
-   "id": "createaddition:biomass",
-   "title": "Green Turned Useful",
-   "desc": "Crops, leaves, saplings, flowers or sticks mixed hot with seed oil. The mod's answer to burning coal: grow your fuel instead of digging it."
+  "mod": "createaddition",
+  "verified_against": "createaddition-1.20.1-1.3.3.jar",
+  "item_count_in_jar": 47,
+  "chain": [
+    {
+      "id": "createaddition:rolling_mill",
+      "title": "Turn rotation into shaped metal",
+      "desc": "Connect a Rolling Mill to Create rotational power. Use the installed rolling recipes for wires and rods; keep its output clear before feeding a continuous batch.",
+      "requires": []
+    },
+    {
+      "id": "createaddition:spool",
+      "title": "A reusable wire component",
+      "desc": "Craft empty spools for wound wire. This component is useful alongside the rolling setup and does not require an existing electrical grid.",
+      "requires": []
+    },
+    {
+      "id": "createaddition:copper_wire",
+      "title": "Roll wire for the first circuit",
+      "desc": "Run the installed copper input through the Rolling Mill. Reserve wire for spools and connectors before expanding into larger energy devices.",
+      "requires": [
+        "createaddition:rolling_mill"
+      ]
+    },
+    {
+      "id": "createaddition:copper_spool",
+      "title": "Wind the machine coils",
+      "desc": "Combine wire with a spool. Copper spools are shared components for the alternator and electric motor, which perform opposite energy conversions.",
+      "requires": [
+        "createaddition:copper_wire",
+        "createaddition:spool"
+      ]
+    },
+    {
+      "id": "createaddition:zinc_sheet",
+      "title": "Press zinc into a component",
+      "desc": "Use a Create press and the installed zinc-sheet recipe. Sheets support electrical components while the rolling mill handles the wire branch.",
+      "requires": []
+    },
+    {
+      "id": "createaddition:capacitor",
+      "title": "A component for conversion machines",
+      "desc": "Craft a Capacitor from the installed plate recipe. Prepare it alongside spools before setting up the Mechanical Crafters for larger machines.",
+      "requires": [
+        "createaddition:zinc_sheet"
+      ]
+    },
+    {
+      "id": "createaddition:alternator",
+      "title": "Convert rotation into Forge Energy",
+      "desc": "Assemble the Alternator using Create's Mechanical Crafters. Feed it rotational power and connect an energy consumer; account for the stress load on the mechanical network.",
+      "requires": [
+        "createaddition:copper_spool",
+        "createaddition:capacitor"
+      ]
+    },
+    {
+      "id": "createaddition:electric_motor",
+      "title": "Convert Forge Energy into rotation",
+      "desc": "Assemble the Electric Motor with the required brass parts and Mechanical Crafters. Supply energy and set a suitable speed. A motor feeding an alternator is not a source of free energy.",
+      "requires": [
+        "createaddition:copper_spool",
+        "createaddition:capacitor"
+      ]
+    },
+    {
+      "id": "createaddition:connector",
+      "title": "Give the electrical route endpoints",
+      "desc": "Place connectors and link them with the appropriate wire spool. Check their supported transfer rate and connection distance before spanning the factory.",
+      "requires": [
+        "createaddition:copper_wire"
+      ]
+    },
+    {
+      "id": "createaddition:redstone_relay",
+      "title": "Switch a circuit deliberately",
+      "desc": "Add a Redstone Relay where the electrical route needs on/off control. Test the switching behavior on one machine before applying it to the main power feed.",
+      "requires": [
+        "createaddition:connector"
+      ]
+    },
+    {
+      "id": "createaddition:modular_accumulator",
+      "title": "Buffer the mechanical-electric boundary",
+      "desc": "Build and connect a Modular Accumulator setup using the documented arrangement. Use it to buffer energy between machines with different demand cycles.",
+      "requires": [
+        "createaddition:capacitor"
+      ]
+    },
+    {
+      "id": "createaddition:tesla_coil",
+      "title": "A powered charging station",
+      "desc": "Supply the Tesla Coil with energy and use the supported charging or processing behavior. Keep its operating area intentional and check the recipe viewer for compatible transformations.",
+      "requires": [
+        "createaddition:capacitor",
+        "createaddition:copper_spool"
+      ]
+    },
+    {
+      "id": "createaddition:portable_energy_interface",
+      "title": "Power a moving contraption at a stop",
+      "desc": "Mount a Portable Energy Interface on the contraption and align it with a stationary partner. Test transfer while the contraption is correctly positioned before relying on it in a larger route.",
+      "requires": [
+        "createaddition:capacitor"
+      ]
+    },
+    {
+      "id": "createaddition:barbed_wire",
+      "title": "An optional perimeter material",
+      "desc": "Make Barbed Wire from the installed rolling components. Place it deliberately around a controlled boundary; this building branch does not gate the power machines.",
+      "requires": [
+        "createaddition:rolling_mill"
+      ]
+    },
+    {
+      "id": "createaddition:diamond_grit",
+      "title": "Prepare a tougher abrasive",
+      "desc": "Produce Diamond Grit with the supported crushing recipe. Use it where the addon accepts a stronger abrasive rather than spending diamonds on unrelated electrical parts.",
+      "requires": []
+    },
+    {
+      "id": "createaddition:diamond_grit_sandpaper",
+      "title": "A durable polishing tool",
+      "desc": "Craft Diamond Grit Sandpaper and use it with supported polishing recipes. This utility upgrade is independent of the generator and motor routes.",
+      "requires": [
+        "createaddition:diamond_grit"
+      ]
+    },
+    {
+      "id": "createaddition:electrum_ingot",
+      "title": "A conditional alloy route",
+      "desc": "If the pack supplies silver, mix gold and silver with the required heat to make electrum, or use another installed alloy recipe. Create Crafts and Additions alone does not provide the silver source.",
+      "requires": []
+    },
+    {
+      "id": "createaddition:electrum_sheet",
+      "title": "Press the alloy into sheets",
+      "desc": "Use the installed Create pressing recipe to shape electrum. Keep this optional alloy branch separate from the basic copper power route.",
+      "requires": [
+        "createaddition:electrum_ingot"
+      ]
+    },
+    {
+      "id": "createaddition:electrum_amulet",
+      "title": "An optional personal accessory",
+      "desc": "Craft the Electrum Amulet using the installed recipe and inspect its equipment requirements. This branch depends on an obtainable electrum supply in the pack.",
+      "requires": [
+        "createaddition:electrum_sheet"
+      ]
+    },
+    {
+      "id": "createaddition:biomass",
+      "title": "Turn organic inputs into fuel material",
+      "desc": "Use an accepted mixing recipe to create Biomass from organic ingredients. Follow the processing chain shown by the recipe viewer before treating it as finished fuel.",
+      "requires": []
+    },
+    {
+      "id": "createaddition:biomass_pellet",
+      "requires": [
+        "createaddition:biomass"
+      ],
+      "title": "Prepare a usable biomass fuel",
+      "desc": "Process Biomass into pellets using the installed recipe. Compare accepted fuel uses and automate a renewable ingredient supply if this becomes part of your factory's energy plan."
+    }
+  ],
+  "collections": [
+    {
+      "hub": "createaddition:copper_wire",
+      "members": [
+        "createaddition:iron_wire",
+        "createaddition:gold_wire",
+        "createaddition:electrum_wire",
+        "createaddition:copper_rod",
+        "createaddition:iron_rod",
+        "createaddition:gold_rod",
+        "createaddition:brass_rod",
+        "createaddition:electrum_rod",
+        "createaddition:straw"
+      ]
+    },
+    {
+      "hub": "createaddition:copper_spool",
+      "members": [
+        "createaddition:gold_spool",
+        "createaddition:electrum_spool",
+        "createaddition:festive_spool",
+        "createaddition:large_connector",
+        "createaddition:small_light_connector"
+      ]
+    },
+    {
+      "hub": "createaddition:biomass",
+      "members": [
+        "createaddition:seed_oil_bucket",
+        "createaddition:biomass_pellet",
+        "createaddition:biomass_pellet_block",
+        "createaddition:bioethanol_bucket",
+        "createaddition:cake_base",
+        "createaddition:cake_base_baked",
+        "createaddition:chocolate_cake",
+        "createaddition:honey_cake"
+      ]
+    }
+  ],
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "sources": [
+    "https://github.com/mrh0/createaddition",
+    "https://www.curseforge.com/minecraft/mc-mods/createaddition"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Rolling and coil workshop",
+      "Opposite rotation/FE conversion paths",
+      "Electrical routing and buffering",
+      "Moving-contraption energy",
+      "Conditional electrum and biomass utility branches"
+    ],
+    "limits": [
+      "Item IDs checked against cached jars and installed 1.2.5/1.3.3 Minecraft 1.20.1 jars.",
+      "Requires Create; electrum additionally needs a silver source or pack-added recipe.",
+      "Basic materials tasks do not force unrelated utility and alloy branches onto the power path.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": true,
+    "cached_jar_versions": [
+      "1.20.1-1.2.5",
+      "1.20.1-1.3.3"
+    ]
   }
- ],
- "collections": [
-  {
-   "hub": "createaddition:copper_wire",
-   "members": [
-    "createaddition:iron_wire",
-    "createaddition:gold_wire",
-    "createaddition:electrum_wire",
-    "createaddition:copper_rod",
-    "createaddition:iron_rod",
-    "createaddition:gold_rod",
-    "createaddition:brass_rod",
-    "createaddition:electrum_rod",
-    "createaddition:straw"
-   ]
-  },
-  {
-   "hub": "createaddition:copper_spool",
-   "members": [
-    "createaddition:gold_spool",
-    "createaddition:electrum_spool",
-    "createaddition:festive_spool",
-    "createaddition:large_connector",
-    "createaddition:small_light_connector"
-   ]
-  },
-  {
-   "hub": "createaddition:biomass",
-   "members": [
-    "createaddition:seed_oil_bucket",
-    "createaddition:biomass_pellet",
-    "createaddition:biomass_pellet_block",
-    "createaddition:bioethanol_bucket",
-    "createaddition:cake_base",
-    "createaddition:cake_base_baked",
-    "createaddition:chocolate_cake",
-    "createaddition:honey_cake"
-   ]
-  }
- ],
- "notes": "Create Crafts and Additions bolts Forge Energy onto Create and assumes the base mod is solved. Base-Create dependencies derived from the recipes: create:andesite_alloy, create:andesite_casing, create:brass_casing, create:shaft, create:chute, create:electron_tube, create:cinder_flour, create:dough, create:chocolate, plus a mechanical press (every forge:plates/* input), crushing wheels (diamond_grit), a heated basin/mixer (biomass and the electrum alloy) and mechanical crafting for the alternator, electric motor and tesla coil. THE HARD GATE: the rolling mill must come before every rod and every wire. All ten createaddition:rolling recipes take the mill, so copper_rod / iron_rod / gold_rod / brass_rod / electrum_rod and copper_wire / iron_wire / gold_wire / electrum_wire and straw are all downstream of it. ORDERING CONFLICTS vs moddb consensus (26 entries, ALL 26 id-verified, no renamed ids): the consensus ordering is broadly impossible on the recipe graph. (1) createaddition:rolling_mill sits at pos 0.286 while iron_rod 0.115, gold_rod 0.154, gold_wire 0.192, electrum_wire 0.231 and copper_wire 0.269 all sit BEFORE it, yet all five are rolling-mill-only outputs. The mill was moved to step 2. (2) createaddition:copper_spool sits at 0.646 but electric_motor 0.346, tesla_coil 0.536 and alternator 0.654 all consume copper spools, and portable_energy_interface 0.676 does too. The spool was moved ahead of all four. (3) createaddition:biomass sits at 0.846 but festive_spool 0.547 consumes biomass. (4) createaddition:seed_oil_bucket 0.615 is listed after biomass in effect, but seed oil (create:compacting of forge:seeds) is the forge:plantoil input that every one of the eight biomass mixing recipes requires. Recipe graph preferred in all four cases. DROPPED: createaddition:accumulator - it is a valid id (model plus lang) but has ZERO recipes and its own tooltip reads \"Accumulates electric charge. Deprecated and subject to removal from future releases\". createaddition:modular_accumulator is the live replacement and is used instead. createaddition:creative_energy (Creative Generator) dropped as creative-only, no recipe. ALSO EXCLUDED, with reason: createaddition:digital_adapter is valid and craftable but its only recipe carries a forge:mod_loaded condition on computercraft, so it is dead in a pack without CC:Tweaked - unsafe as a chain step. createaddition:electrum_ingot is kept on the spine but carries a soft gate worth flagging to the pack author: its create:mixing recipe is wrapped in a forge:not/forge:tag_empty condition on forge:ingots/silver, so with no silver-providing mod installed electrum is uncraftable and the entire electrum_ingot / electrum_sheet / electrum_block / electrum_amulet / electrum_rod / electrum_wire / electrum_spool family becomes unobtainable. createaddition:electrum_nugget excluded per desirability (authors quest the ingot, never the nugget). The jar carries a large compat surface that produces no createaddition ids and so contributed nothing: immersiveengineering plates/wires/sticks, tconstruct alloys, mekanism enriching/infusing, ae2 charged certus, computercraft, and jeed. createaddition:liquid_burning (14 recipes) registers lava, ethanol, biofuel, biodiesel, plantoil, creosote, crude oil, diesel and gasoline as burnable liquid fuels with burn times - biofuel is flagged superheated - which is why the biomass wheel is a fuel wheel and not a decoration wheel."
 }

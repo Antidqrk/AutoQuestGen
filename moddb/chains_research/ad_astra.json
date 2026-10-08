@@ -5,123 +5,248 @@
   "chain": [
     {
       "id": "ad_astra:compressor",
-      "title": "Pressure Enters the Workshop",
-      "desc": "Crafted in a crafting table from iron ingots around a piston, and it is the machine that presses ingots and blocks into plates."
+      "title": "Prepare a machine for plates",
+      "desc": "Build and power a Compressor. Use the installed plate recipes to begin the materials chain for machines, oxygen equipment, and rockets.",
+      "requires": []
     },
     {
       "id": "ad_astra:iron_plate",
-      "title": "Flattened Beginnings",
-      "desc": "Produced by running an iron ingot or an iron block through a powered Compressor."
+      "title": "Press the first plates",
+      "desc": "Compress iron into plates for the early workshop. Check this pack for any alternative plate recipe before building a larger production line.",
+      "requires": [
+        "ad_astra:compressor"
+      ]
     },
     {
       "id": "ad_astra:etrionic_blast_furnace",
-      "title": "The Alloy Hearth",
-      "desc": "Crafted from iron plates, redstone and a vanilla blast furnace, and it is the only machine that alloys metals in this mod."
+      "title": "A furnace for rocket materials",
+      "desc": "Build and supply the Etrionic Blast Furnace according to its interface and recipe viewer. It provides the steel needed by the first launch program.",
+      "requires": [
+        "ad_astra:iron_plate"
+      ]
     },
     {
       "id": "ad_astra:steel_ingot",
-      "title": "Iron, Only Angrier",
-      "desc": "Alloyed in the Etrionic Blast Furnace from an iron ingot plus coal or charcoal."
+      "title": "Produce steel for the launch",
+      "desc": "Run the installed steel recipe and keep a substantial reserve for plates, tanks, engines, and the rocket's other parts.",
+      "requires": [
+        "ad_astra:etrionic_blast_furnace"
+      ]
     },
     {
       "id": "ad_astra:steel_plate",
-      "title": "Hull Stock",
-      "desc": "Compressed from steel ingots or steel blocks, and it is the base part for almost every rocket component."
+      "title": "Shape the rocket's shell",
+      "desc": "Compress steel into plates. Build the required components from the recipe viewer before assembling the final rocket at the NASA Workbench.",
+      "requires": [
+        "ad_astra:steel_ingot",
+        "ad_astra:compressor"
+      ]
     },
     {
       "id": "ad_astra:oxygen_gear",
-      "title": "Something to Breathe Through",
-      "desc": "Crafted from steel plates and a steel rod, and it is the piece that connects a gas tank to a space suit."
+      "title": "Prepare the life-support components",
+      "desc": "Craft Oxygen Gear for the space equipment. A complete suit and an oxygen supply are separate requirements from merely owning a rocket.",
+      "requires": [
+        "ad_astra:steel_plate"
+      ]
+    },
+    {
+      "id": "ad_astra:oxygen_loader",
+      "requires": [
+        "ad_astra:steel_plate"
+      ],
+      "title": "Fill oxygen before departure",
+      "desc": "Power an Oxygen Loader, supply its required inputs, and fill supported equipment. Check the suit's oxygen reserve before boarding the rocket."
     },
     {
       "id": "ad_astra:space_suit",
-      "title": "First Skin for Vacuum",
-      "desc": "Crafted from steel plates, wool, a gas tank and the Oxygen Gear, and the full four-piece set is required to survive any airless world."
+      "title": "A chestpiece with life support",
+      "desc": "Craft the Space Suit chestpiece and fill its oxygen storage. It must be worn with the matching helmet, pants, and boots for the intended protection.",
+      "requires": [
+        "ad_astra:oxygen_gear"
+      ]
+    },
+    {
+      "id": "ad_astra:space_helmet",
+      "requires": [
+        "ad_astra:oxygen_gear"
+      ],
+      "title": "Seal the helmet",
+      "desc": "Craft the Space Helmet and keep it with the launch equipment. Wear the complete matching suit and verify oxygen before leaving a breathable environment."
+    },
+    {
+      "id": "ad_astra:space_pants",
+      "requires": [
+        "ad_astra:steel_plate"
+      ],
+      "title": "Complete the suit's lower half",
+      "desc": "Craft Space Pants for the full launch suit. One armored chestpiece is not a substitute for all required space armor pieces."
+    },
+    {
+      "id": "ad_astra:space_boots",
+      "requires": [
+        "ad_astra:steel_plate"
+      ],
+      "title": "Boots for the lunar surface",
+      "desc": "Craft Space Boots and equip all four suit pieces. Carry repair and return supplies appropriate to the pack before the first flight."
     },
     {
       "id": "ad_astra:fuel_refinery",
-      "title": "Cracking the Black Ooze",
-      "desc": "Crafted from steel plates, a bucket and a furnace, and it refines crude oil pumped from ocean Oil Well structures into rocket fuel."
+      "title": "Prepare rocket fuel",
+      "desc": "Power a Fuel Refinery and supply the fluid required by the fuel recipe. Transfer the finished fuel into the rocket using the supported interaction.",
+      "requires": [
+        "ad_astra:steel_plate"
+      ]
     },
     {
       "id": "ad_astra:nasa_workbench",
-      "title": "Where Rockets Are Born",
-      "desc": "Crafted from steel plates, steel blocks, iron rods, a redstone torch and a crafting table, and every rocket tier is assembled in its dedicated grid."
+      "title": "Assemble rockets from their parts",
+      "desc": "Build the NASA Workbench and use its rocket interface. Check the nose cone, fins, tanks, engine, and plate requirements before starting the final craft.",
+      "requires": [
+        "ad_astra:steel_plate"
+      ]
+    },
+    {
+      "id": "ad_astra:launch_pad",
+      "requires": [
+        "ad_astra:steel_plate"
+      ],
+      "title": "A place to leave and return",
+      "desc": "Prepare the launch pad arrangement for the rocket and choose a clear launch site. Pack return infrastructure and fuel before leaving home."
     },
     {
       "id": "ad_astra:tier_1_rocket",
-      "title": "Ignition on the Home World",
-      "desc": "Assembled in the NASA Workbench from a rocket nose cone, steel blocks, rocket fins, a steel tank and a steel engine, then placed on a Launch Pad and fuelled."
+      "title": "Build the first rocket",
+      "desc": "Assemble a Tier 1 Rocket and fuel it on the launch pad. Confirm a complete oxygenated suit and return supplies before launching toward the Moon.",
+      "requires": [
+        "ad_astra:nasa_workbench",
+        "ad_astra:fuel_refinery",
+        "ad_astra:launch_pad"
+      ]
     },
     {
       "id": "dim:ad_astra:moon",
-      "title": "Grey Dust Underfoot",
-      "desc": "The Moon is the tier 1 destination in the mod's planet data and has no breathable atmosphere, so a full oxygen-fed suit is mandatory."
+      "title": "Make your first lunar landing",
+      "desc": "Reach the Moon wearing the complete suit with oxygen. Establish a safe landing area, preserve a return route, and begin looking for desh.",
+      "requires": [
+        "ad_astra:tier_1_rocket",
+        "ad_astra:space_suit",
+        "ad_astra:space_helmet",
+        "ad_astra:space_pants",
+        "ad_astra:space_boots",
+        "ad_astra:oxygen_loader"
+      ]
     },
     {
       "id": "ad_astra:desh_ingot",
-      "title": "The Lunar Alloy",
-      "desc": "Smelted or blasted from Moon Desh Ore or raw desh, both of which only generate below the Moon's surface."
+      "title": "The Moon's new material",
+      "desc": "Mine and process desh using the installed recipes. It supports the next rocket tier and stronger off-world infrastructure.",
+      "requires": [
+        "dim:ad_astra:moon"
+      ]
     },
     {
       "id": "ad_astra:oxygen_distributor",
-      "title": "A Bubble of Home",
-      "desc": "Crafted from desh plates, a fan, a large gas tank, an Oxygen Loader and Oxygen Gear, and it floods a sealed room with breathable air."
+      "title": "Build a breathable outpost",
+      "desc": "Power and supply an Oxygen Distributor, then verify the enclosed area's oxygen behavior before removing a helmet. A machine item in your inventory does not make a room breathable.",
+      "requires": [
+        "ad_astra:desh_ingot"
+      ]
     },
     {
       "id": "ad_astra:tier_2_rocket",
-      "title": "Desh-Clad Ascent",
-      "desc": "Assembled in the NASA Workbench using desh blocks, a desh tank and a desh engine in place of the tier 1 steel parts."
+      "title": "Prepare the Mars expedition",
+      "desc": "Upgrade the rocket using the Tier 2 recipe. Fuel it and bring the same complete life-support and return kit used for the first expedition.",
+      "requires": [
+        "ad_astra:desh_ingot",
+        "ad_astra:nasa_workbench"
+      ]
     },
     {
       "id": "dim:ad_astra:mars",
-      "title": "Rust-Coloured Wastes",
-      "desc": "Mars is flagged tier 2 in the planet data, runs at roughly minus sixty-five degrees and is patrolled by Martian Raptors."
+      "title": "Land on Mars",
+      "desc": "Reach Mars with a charged oxygen reserve and a reliable return plan. Search for ostrum to continue the rocket materials progression.",
+      "requires": [
+        "ad_astra:tier_2_rocket"
+      ]
     },
     {
       "id": "ad_astra:ostrum_ingot",
-      "title": "Red Planet Metal",
-      "desc": "Smelted or blasted from Mars Ostrum Ore or raw ostrum, which generate in Martian stone."
+      "title": "Refine ostrum",
+      "desc": "Process ostrum from the Martian expedition. Use it to prepare stronger equipment and the next rocket rather than spending the first batch on decoration.",
+      "requires": [
+        "dim:ad_astra:mars"
+      ]
     },
     {
       "id": "ad_astra:netherite_space_suit",
-      "title": "Armour That Holds Air",
-      "desc": "Crafted from ostrum plates, a netherite chestplate, Oxygen Gear and a large gas tank, giving a far deeper oxygen reserve than the basic suit."
+      "title": "Upgrade protection for hotter destinations",
+      "desc": "Prepare the complete Netherite space-armor set, including its matching helmet, pants, and boots, and fill the oxygen supply. The chestpiece quest is only one part of the hot-planet travel kit.",
+      "requires": [
+        "ad_astra:ostrum_ingot",
+        "ad_astra:space_suit"
+      ]
     },
     {
       "id": "ad_astra:tier_3_rocket",
-      "title": "Ostrum Bound for the Inner System",
-      "desc": "Assembled in the NASA Workbench from ostrum blocks, an ostrum tank and an ostrum engine."
+      "title": "Reach the hotter planets",
+      "desc": "Build and fuel a Tier 3 Rocket. Prepare the full protective suit required by the intended destination before selecting it on the travel screen.",
+      "requires": [
+        "ad_astra:ostrum_ingot",
+        "ad_astra:nasa_workbench"
+      ]
     },
     {
       "id": "dim:ad_astra:venus",
-      "title": "Furnace Beneath the Clouds",
-      "desc": "Venus sits at tier 3 with an ambient temperature of roughly 464 degrees, and its wastes spawn Moglers, Zombified Pygros and Sulfur Creepers."
+      "title": "Establish a Venus landing",
+      "desc": "Reach Venus with the complete protective equipment and a return route. Gather calorite while keeping the expedition's oxygen and environmental protection intact.",
+      "requires": [
+        "ad_astra:tier_3_rocket",
+        "ad_astra:netherite_space_suit"
+      ]
     },
     {
       "id": "ad_astra:calorite_ingot",
-      "title": "Forged in the Hot Place",
-      "desc": "Smelted or blasted from Venus Calorite Ore or raw calorite, the highest-tier metal in the mod."
+      "title": "The final rocket material",
+      "desc": "Mine and process calorite. Reserve enough for the Tier 4 Rocket and any equipment upgrades that support your next expedition.",
+      "requires": [
+        "dim:ad_astra:venus"
+      ]
     },
     {
       "id": "dim:ad_astra:mercury",
-      "title": "The Scorched Grey Deltas",
-      "desc": "Mercury is the other tier 3 world in the planet data, a mob-free expanse of stone deltas holding Mercury Iron Ore."
+      "title": "An optional Mercury expedition",
+      "desc": "Visit Mercury after checking its environmental requirements and your full suit. This exploration branch is separate from gathering Venus's calorite for the next rocket.",
+      "requires": [
+        "ad_astra:tier_3_rocket",
+        "ad_astra:netherite_space_suit"
+      ]
     },
     {
       "id": "ad_astra:tier_4_rocket",
-      "title": "Reaching Another Star",
-      "desc": "Assembled in the NASA Workbench from calorite blocks, a calorite tank and a calorite engine, the only rocket that leaves the Solar System."
+      "title": "Prepare for another star system",
+      "desc": "Assemble and fuel the Tier 4 Rocket, then stock life support and return supplies. Review the available destinations before committing to the flight.",
+      "requires": [
+        "ad_astra:calorite_ingot",
+        "ad_astra:nasa_workbench"
+      ]
     },
     {
       "id": "dim:ad_astra:glacio",
-      "title": "Snowfall Around Proxima",
-      "desc": "Glacio is the tier 4 world in the Proxima Centauri system, breathable but freezing, and home to Glacian Rams and Ice Shard Ore."
+      "title": "Reach distant Glacio",
+      "desc": "Travel to Glacio and establish a secure landing site. Explore its resources while preserving the equipment and fuel needed to return.",
+      "requires": [
+        "ad_astra:tier_4_rocket"
+      ]
     },
     {
       "id": "ad_astra:jet_suit",
-      "title": "Wings of Molten Calorite",
-      "desc": "Crafted from calorite plates, a calorite engine, a calorite tank, an Etrionic Capacitor and the Netherite Space Suit, and it grants powered flight."
+      "title": "Mobility for the established explorer",
+      "desc": "Craft the Jet Suit and complete its matching equipment as needed. Charge or fuel it as directed by the installed version, then test flight and life-support behavior near a safe base.",
+      "requires": [
+        "ad_astra:calorite_ingot",
+        "ad_astra:netherite_space_suit"
+      ]
     }
   ],
   "collections": [
@@ -171,5 +296,34 @@
       ]
     }
   ],
-  "notes": "Item set = 411 stems of assets/ad_astra/models/item/*.json intersected with item./block. keys across every assets/*/lang/en_us.json in the jar; every id above is a member of that set. Planet tiers and dimension ids read from data/ad_astra/planets/*.json: moon tier 1, mars tier 2, venus and mercury tier 3, glacio tier 4 (Proxima Centauri system); earth is minecraft:overworld so it is not used as a dim: step. Verified dimensions in data/ad_astra/dimension/: earth_orbit, glacio, glacio_orbit, mars, mars_orbit, mercury, mercury_orbit, moon, moon_orbit, venus, venus_orbit. Orbit dimensions were deliberately left out of the chain because they are transit-only. DROPPED as unverifiable or unobtainable: ad_astra:etrium_ingot, ad_astra:etrium_block, ad_astra:etrium_plate, ad_astra:etrium_rod, ad_astra:etrium_nugget, ad_astra:etrium_panel, ad_astra:etrium_plateblock, ad_astra:etrium_factory_block, ad_astra:encased_etrium_block and ad_astra:photovoltaic_vesnium_cell - these exist as items and block models but have no recipe, loot table, or worldgen source anywhere in the jar (only the vesnium/etrium block drop-self loot tables), so there is no in-game way to obtain them in 1.15.20. Also dropped: the fluid names cryo_fuel, fuel, hydrogen, oil and oxygen, which have lang entries but no item model - only their *_bucket items are real items. ad_astra:rendered_item and ad_astra:etrionic_capacitor_off have models but no lang key and are internal. No kill: steps were used: none of the 20 verified entities (lunarian, corrupted_lunarian, martian_raptor, mogler, zombified_mogler, pygro, pygro_brute, zombified_pygro, sulfur_creeper, star_crawler, glacian_ram, air_vortex, ice_spit, lander and the four rocket/rover entities) gate any recipe or dimension, so they belong in optional side quests rather than the spine. Oil is confirmed to come from the ad_astra:oil_well jigsaw structure, whose biome tag targets #minecraft:is_ocean and #minecraft:has_structure/ocean_monument, i.e. Overworld oceans. Structures present: lunar_tower, lunarian_village, mars_temple, moon_dungeon, oil_well, pygro_tower, pygro_village, venus_bullet."
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "sources": [
+    "https://github.com/terrarium-earth/Ad-Astra",
+    "https://www.curseforge.com/minecraft/mc-mods/ad-astra"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Plate and steel workshop",
+      "Complete first-launch kit",
+      "Moon/desh and Mars/ostrum",
+      "Hot-planet protection and calorite",
+      "Tier 4/Glacio with optional Mercury branch"
+    ],
+    "limits": [
+      "Targets cached Ad Astra 1.15.20 for Minecraft 1.20.1.",
+      "Life-support descriptions specify complete armor sets; item tasks only detect the named component.",
+      "Does not cover every celestial orbit, station, or decorative block.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": false,
+    "cached_jar_versions": [
+      "1.15.20"
+    ]
+  }
 }

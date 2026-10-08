@@ -1,138 +1,235 @@
 {
- "mod": "laserio",
- "verified_against": "laserio-1.6.8.jar",
- "item_count_in_jar": 19,
- "chain": [
-  {
-   "id": "laserio:logic_chip_raw",
-   "title": "Raw Logic Chip",
-   "desc": "A block of quartz, gold nuggets, redstone and a clay ball; the single component every other item in the mod is built from."
-  },
-  {
-   "id": "laserio:logic_chip",
-   "title": "Logic Chip",
-   "desc": "Smelt the raw chip. Set up a stack of these before you go further - a working LaserIO network eats them by the dozen."
-  },
-  {
-   "id": "laserio:laser_connector",
-   "title": "Laser Connector",
-   "desc": "Iron, glass, redstone and a Logic Chip. Place one on any inventory, machine or energy block; it is the socket the whole network plugs into."
-  },
-  {
-   "id": "laserio:laser_node",
-   "title": "Laser Node",
-   "desc": "Iron and glass panes around a Laser Connector. Nodes hold the cards and link to connectors by line of sight, so there is no cable to route."
-  },
-  {
-   "id": "laserio:card_item",
-   "title": "Item Card",
-   "desc": "Gold nuggets, lapis, quartz and redstone around a Logic Chip. Slot it into a node's face and set it to Extract, Insert, Stock or Sensor - one card does all four jobs."
-  },
-  {
-   "id": "laserio:laser_wrench",
-   "title": "Laser Wrench",
-   "desc": "Iron around a Logic Chip; it rotates nodes, copies a node's whole card layout and shows you where the beams are actually going."
-  },
-  {
-   "id": "laserio:filter_basic",
-   "title": "Basic Filter",
-   "desc": "Iron bars and glass panes around a Logic Chip; drop it into a card to whitelist or blacklist up to fifteen exact items."
-  },
-  {
-   "id": "laserio:card_holder",
-   "title": "Card Holder",
-   "desc": "A chest and iron around a Logic Chip; it carries a stack of configured cards so you can build out a network without walking back to storage."
-  },
-  {
-   "id": "laserio:overclocker_card",
-   "title": "Overclocker Card",
-   "desc": "Gold and redstone around a Logic Chip. Stack these into a card to raise how much it moves per tick, at the cost of more energy per operation."
-  },
-  {
-   "id": "laserio:card_energy",
-   "title": "Energy Card",
-   "desc": "A redstone block, quartz, gold nuggets and redstone around a Logic Chip; it moves FE between connectors exactly the way the item card moves items."
-  },
-  {
-   "id": "laserio:card_fluid",
-   "title": "Fluid Card",
-   "desc": "The same shape with a bucket in it; fluids follow the same Extract/Insert/Stock/Sensor modes as everything else."
-  },
-  {
-   "id": "laserio:card_redstone",
-   "title": "Redstone Card",
-   "desc": "Quartz, gold nuggets and redstone around a Logic Chip; it reads and emits redstone across the network, turning the laser mesh into a signal bus."
-  },
-  {
-   "id": "laserio:filter_count",
-   "title": "Count Filter",
-   "desc": "An observer plus a Basic Filter. It filters by exact stack counts, which is what makes a Stock card actually hold a target number in a machine."
-  },
-  {
-   "id": "laserio:filter_tag",
-   "title": "Tag Filter",
-   "desc": "Paper plus a Basic Filter; match by item tag instead of by item, so one card handles every ingot or every log at once."
-  },
-  {
-   "id": "laserio:filter_mod",
-   "title": "Mod Filter",
-   "desc": "A book plus a Basic Filter; match everything from a given mod, the fastest way to sort a mixed output stream by namespace."
-  },
-  {
-   "id": "laserio:filter_nbt",
-   "title": "NBT Filter",
-   "desc": "White wool plus a Basic Filter; match on NBT so enchanted books, charged cells and damaged tools stop sharing a slot."
-  },
-  {
-   "id": "laserio:overclocker_node",
-   "title": "Node Overclocker",
-   "desc": "Diamonds and redstone around a Logic Chip; where the card overclocker speeds one card, this speeds the whole node."
-  },
-  {
-   "id": "laserio:laser_connector_advanced",
-   "title": "Advanced Connector",
-   "desc": "Ender pearls, diamonds, gold and redstone around a basic Connector; it reaches much further and connects across chunk lines that stop the basic one."
-  },
-  {
-   "id": "laserio:card_cloner",
-   "title": "Card Cloner",
-   "desc": "Paper and iron around a Logic Chip; stamp one configured card and print copies of it, which is the only sane way to wire a large base."
+  "mod": "laserio",
+  "verified_against": "laserio-1.6.8.jar",
+  "item_count_in_jar": 19,
+  "chain": [
+    {
+      "id": "laserio:logic_chip_raw",
+      "title": "Prepare the logic-chip ingredients",
+      "desc": "Craft Raw Logic Chips using the installed recipe. A small batch supports the first two nodes, cards, and setup tool.",
+      "requires": []
+    },
+    {
+      "id": "laserio:logic_chip",
+      "title": "Fire the network components",
+      "desc": "Smelt the raw chips into Logic Chips. Keep spare chips for filters and cards when the first route is working.",
+      "requires": [
+        "laserio:logic_chip_raw"
+      ]
+    },
+    {
+      "id": "laserio:laser_connector",
+      "title": "A relay between nodes",
+      "desc": "Craft Laser Connectors for intermediate network links. Connectors relay links; the Laser Node beside an inventory is the block that holds cards and interacts with it.",
+      "requires": [
+        "laserio:logic_chip"
+      ]
+    },
+    {
+      "id": "laserio:laser_node",
+      "title": "Put a node beside the inventory",
+      "desc": "Place Laser Nodes next to the source and destination blocks. Open the correct node face for the adjacent block and configure cards on that face.",
+      "requires": [
+        "laserio:laser_connector"
+      ]
+    },
+    {
+      "id": "laserio:laser_wrench",
+      "title": "Link the intended endpoints",
+      "desc": "Use the Laser Wrench to link nodes and connectors. Check the visible connection network and supported distance before configuring a long route.",
+      "requires": [
+        "laserio:logic_chip"
+      ]
+    },
+    {
+      "id": "laserio:card_item",
+      "title": "Set up item extraction and insertion",
+      "desc": "Configure Item Cards on the source and destination faces, using compatible channels and the intended Extract/Insert modes. Test one stack before enabling a continuous supply.",
+      "requires": [
+        "laserio:logic_chip"
+      ]
+    },
+    {
+      "id": "check:laserio:first_item_route",
+      "requires": [
+        "laserio:laser_node",
+        "laserio:laser_wrench",
+        "laserio:card_item"
+      ],
+      "title": "Test the complete item route",
+      "desc": "Link the two nodes, configure the source and destination cards, and move a test stack into the intended inventory. Confirm this milestone after the transfer works.",
+      "icon": "laserio:card_item"
+    },
+    {
+      "id": "laserio:filter_basic",
+      "title": "Keep the route selective",
+      "desc": "Configure a Basic Filter and install it in the appropriate card. Verify allow-list or deny-list behavior before connecting mixed storage.",
+      "requires": [
+        "laserio:logic_chip"
+      ]
+    },
+    {
+      "id": "laserio:card_holder",
+      "title": "Carry configured cards together",
+      "desc": "Use a Card Holder to organize the cards needed for the next network section. Label or separate the planned configurations so building a new route stays manageable.",
+      "requires": [
+        "laserio:logic_chip"
+      ]
+    },
+    {
+      "id": "laserio:overclocker_card",
+      "title": "Improve a card's throughput",
+      "desc": "Install Card Overclockers in a working card to improve its supported transfer behavior. Check both amount and interval, and make sure the receiving machine can accept the faster supply.",
+      "requires": [
+        "laserio:logic_chip",
+        "laserio:card_item"
+      ]
+    },
+    {
+      "id": "laserio:card_energy",
+      "title": "An independent energy channel",
+      "desc": "Configure Energy Cards between an actual source and consumer. Set the channel, direction, and energy-limit behavior deliberately; the cards move energy rather than producing it.",
+      "requires": [
+        "laserio:logic_chip"
+      ]
+    },
+    {
+      "id": "laserio:card_fluid",
+      "title": "An independent fluid channel",
+      "desc": "Configure Fluid Cards on tank or machine faces. Use filters and appropriate channels so the network sends the intended fluid to each destination.",
+      "requires": [
+        "laserio:logic_chip"
+      ]
+    },
+    {
+      "id": "laserio:card_redstone",
+      "title": "Control a machine through the network",
+      "desc": "Configure Redstone Cards to read and output the intended signal. Test both states before using the route to control a valuable production process.",
+      "requires": [
+        "laserio:logic_chip"
+      ]
+    },
+    {
+      "id": "laserio:filter_count",
+      "title": "Stock a measured ingredient amount",
+      "desc": "Use a Count Filter with the appropriate card mode to maintain the intended quantity. Test how restocking reacts to consumed items and a full receiving inventory.",
+      "requires": [
+        "laserio:filter_basic"
+      ]
+    },
+    {
+      "id": "laserio:filter_tag",
+      "title": "Match a family of ingredients",
+      "desc": "Configure a Tag Filter using a real installed item or fluid tag. Inspect the matching entries so an overly broad tag does not route unintended materials.",
+      "requires": [
+        "laserio:filter_basic"
+      ]
+    },
+    {
+      "id": "laserio:filter_mod",
+      "title": "Sort by the producing mod",
+      "desc": "Use a Mod Filter when a route should accept a selected mod's items. This is a sorting choice, not a replacement for ingredient-specific filters in a recipe machine.",
+      "requires": [
+        "laserio:filter_basic"
+      ]
+    },
+    {
+      "id": "laserio:filter_nbt",
+      "title": "Distinguish items with stored data",
+      "desc": "Configure an NBT Filter when item state matters, such as enchantments or stored contents. Test the actual matching behavior with two different examples before enabling the route.",
+      "requires": [
+        "laserio:filter_basic"
+      ]
+    },
+    {
+      "id": "laserio:overclocker_node",
+      "title": "Let more cards work together",
+      "desc": "Use Node Overclockers when the node needs more cards to operate in the same tick. Card overclockers improve individual transfer behavior; the node upgrade addresses simultaneous card work.",
+      "requires": [
+        "laserio:logic_chip",
+        "laserio:laser_node"
+      ]
+    },
+    {
+      "id": "laserio:laser_connector_advanced",
+      "title": "Pair a distant network link",
+      "desc": "Link a pair of Advanced Connectors for a remote connection, including across dimensions where supported. Each advanced connector has one partner; linking another replaces the old pair.",
+      "requires": [
+        "laserio:laser_connector"
+      ]
+    },
+    {
+      "id": "laserio:card_cloner",
+      "title": "Repeat a proven configuration",
+      "desc": "Use the Card Cloner to copy a tested card configuration onto compatible cards. Review faces, channels, and filters at the new location before enabling the copied route.",
+      "requires": [
+        "laserio:logic_chip"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "hub": "laserio:card_item",
+      "members": [
+        "laserio:card_fluid",
+        "laserio:card_energy",
+        "laserio:card_redstone",
+        "laserio:card_holder",
+        "laserio:card_cloner",
+        "laserio:overclocker_card"
+      ]
+    },
+    {
+      "hub": "laserio:filter_basic",
+      "members": [
+        "laserio:filter_count",
+        "laserio:filter_mod",
+        "laserio:filter_nbt",
+        "laserio:filter_tag",
+        "laserio:card_holder",
+        "laserio:card_cloner"
+      ]
+    },
+    {
+      "hub": "laserio:laser_connector_advanced",
+      "members": [
+        "laserio:laser_connector",
+        "laserio:laser_node",
+        "laserio:laser_wrench",
+        "laserio:overclocker_node",
+        "laserio:logic_chip",
+        "laserio:logic_chip_raw"
+      ]
+    }
+  ],
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "sources": [
+    "https://github.com/Direwolf20-MC/LaserIO",
+    "https://www.curseforge.com/minecraft/mc-mods/laserio"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Nodes versus relay connectors",
+      "Tested item route",
+      "Independent energy, fluid, and redstone cards",
+      "Filtering and measured stock",
+      "Card/node throughput and distant pairing"
+    ],
+    "limits": [
+      "Targets cached LaserIO 1.6.8 for Minecraft 1.20.1.",
+      "Modes are card configuration, not separately registered items.",
+      "Corrects legacy guide claims: connectors do not replace inventory-adjacent nodes; advanced pairs are not merely chunk-boundary extenders.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": false,
+    "cached_jar_versions": [
+      "1.6.8"
+    ]
   }
- ],
- "collections": [
-  {
-   "hub": "laserio:card_item",
-   "members": [
-    "laserio:card_fluid",
-    "laserio:card_energy",
-    "laserio:card_redstone",
-    "laserio:card_holder",
-    "laserio:card_cloner",
-    "laserio:overclocker_card"
-   ]
-  },
-  {
-   "hub": "laserio:filter_basic",
-   "members": [
-    "laserio:filter_count",
-    "laserio:filter_mod",
-    "laserio:filter_nbt",
-    "laserio:filter_tag",
-    "laserio:card_holder",
-    "laserio:card_cloner"
-   ]
-  },
-  {
-   "hub": "laserio:laser_connector_advanced",
-   "members": [
-    "laserio:laser_connector",
-    "laserio:laser_node",
-    "laserio:laser_wrench",
-    "laserio:overclocker_node",
-    "laserio:logic_chip",
-    "laserio:logic_chip_raw"
-   ]
-  }
- ],
- "notes": "THE CARDS ARE THE CONTENT. LaserIO ships 19 items and 4 of them are infrastructure (raw chip, chip, connector, node); the other 15 are cards, filters and overclockers, and the mod's actual depth is in card CONFIGURATION - each card has four modes (Extract, Insert, Stock, Sensor), a channel colour, a priority, a round-robin toggle and a filter slot - none of which is a separate registered item. A quest chain therefore has to quest the cards and describe the modes, because there is no deeper item tier to reach for. All 19 items are quested here: 19 in the chain, all 19 across the three wheels. Nothing dropped - every id has a crafting or smelting recipe in data/laserio/recipes. VERIFICATION AND A CORRECTED OVERCOUNT: the naive models INTERSECT lang pass finds 29 item models but only 19 lang keys. The 10 extras (card_item_extract, card_item_stock, card_item_sensor and the same three each for fluid, energy plus card_redstone_extract) are NOT items - assets/laserio/models/item/card_item.json declares them as predicate overrides on 'laserio:mode', and each extra file is a one-line child model that only swaps layer1 to a different mode texture. Confirmed by reading the parent model. Pass 2 re-derived the id set independently from .class constant-pool strings, item textures, blockstates, recipe results and loot tables: all 19 corroborated, nothing missed. The mod also declares a hard dependency on patchouli and ships a guide book, but the book is a patchouli:guide_book with NBT rather than a laserio-namespaced item, so no manual id appears here. JAR SOURCE: LaserIO is not published on Modrinth - the only 1.20.1 Forge builds are on CurseForge (project 626839), and 1.6.8 (file 5074767, 2024-02-01) is the newest. CurseForge tags that file for both Forge and NeoForge on 1.20.1; META-INF/mods.toml is present and there is no fabric.mod.json, Java 17 class files, so it is a valid Forge jar. Its declared minecraft versionRange is the loose [1.18.2,) and pack_format is 9, which is normal for this multi-version single-jar mod and is not evidence of a wrong-version build - the CurseForge 1.20.1+Forge filter and the class-file version are what confirm it. NO CONSENSUS DATA: moddb.json has no laserio entry, so the ordering here is the recipe dependency graph alone (raw chip -> chip -> connector -> node -> cards, filters branching off filter_basic, advanced connector off basic)."
 }

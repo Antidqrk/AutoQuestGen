@@ -1,5 +1,5 @@
 name: Bug report
-description: Something went wrong while scanning a pack or building a book.
+description: Report a scanning, progression, preview, artwork, or quest-book problem.
 labels: ["bug"]
 body:
   - type: textarea
@@ -7,6 +7,14 @@ body:
     attributes:
       label: What happened
       description: What you did, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Generator, Minecraft, mod loader, and FTB Quests versions.
+      placeholder: "Generator 7.13, Minecraft 1.20.1, Forge, FTB Quests 2001.4.21"
     validations:
       required: true
   - type: input
@@ -32,5 +40,6 @@ body:
       label: Log
       description: >
         Paste the relevant part of autoquestgen.log (next to the exe, or in
-        %LOCALAPPDATA%\AutoQuestGen). Remove your API key if the AI path was used.
+        %LOCALAPPDATA%\AutoQuestGen). Remove personal paths and credentials.
+        Include the seed and settings that reproduce the problem when possible.
       render: text

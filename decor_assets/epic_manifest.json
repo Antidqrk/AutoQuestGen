@@ -1,0 +1,447 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "id": "heart_of_the_wild",
+      "theme": "botanical",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/botanical/heart_of_the_wild.png",
+      "texture": "autoquestgen:textures/botanical/heart_of_the_wild.png",
+      "title": "Heart of the Wild",
+      "alpha": 170,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "a01704871f55b2d013ec67d263cea1851f9a1577202146d78745b9e79194b80a",
+      "keywords": [
+        "epic",
+        "botanical",
+        "heart of the wild"
+      ]
+    },
+    {
+      "id": "stormheart_reactor",
+      "theme": "power",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/power/stormheart_reactor.png",
+      "texture": "autoquestgen:textures/power/stormheart_reactor.png",
+      "title": "Stormheart Reactor",
+      "alpha": 170,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "5dc527d74a5112b57c55202df1d7129326ffc7b7c35438b9a4b759b4b4a6340c",
+      "keywords": [
+        "epic",
+        "power",
+        "stormheart reactor"
+      ]
+    },
+    {
+      "id": "astral_citadel",
+      "theme": "arcane",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/arcane/astral_citadel.png",
+      "texture": "autoquestgen:textures/arcane/astral_citadel.png",
+      "title": "Astral Citadel",
+      "alpha": 170,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "0c3fcf98c55961d8cd9139f62b34477c64ae9733c367274794e3ec6e0f82b386",
+      "keywords": [
+        "epic",
+        "arcane",
+        "astral citadel"
+      ]
+    },
+    {
+      "id": "event_horizon",
+      "theme": "space",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/space/event_horizon.png",
+      "texture": "autoquestgen:textures/space/event_horizon.png",
+      "title": "Event Horizon",
+      "alpha": 170,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "3f65c84b2285e04ce01fdb33474fd9c974913078c19b5591ad43b1af8f0ff986",
+      "keywords": [
+        "epic",
+        "space",
+        "event horizon"
+      ]
+    },
+    {
+      "id": "skybound_expedition",
+      "theme": "exploration",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/exploration/skybound_expedition.png",
+      "texture": "autoquestgen:textures/exploration/skybound_expedition.png",
+      "title": "Skybound Expedition",
+      "alpha": 170,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "a807ed7271bb9984eaaec08a21207d67c15e24b4e9682137e3b69186c1f0902d",
+      "keywords": [
+        "epic",
+        "exploration",
+        "skybound expedition"
+      ]
+    },
+    {
+      "id": "leviathan_reef",
+      "theme": "ocean",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/ocean/leviathan_reef.png",
+      "texture": "autoquestgen:textures/ocean/leviathan_reef.png",
+      "title": "Leviathan Reef",
+      "alpha": 170,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "e26af548b7f8bfdb2ba8f9fcc803551d267470dc2fefbe3d9ee68ba59e215e32",
+      "keywords": [
+        "epic",
+        "ocean",
+        "leviathan reef"
+      ]
+    },
+    {
+      "id": "clockwork_megafactory",
+      "theme": "machinery",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/machinery/clockwork_megafactory.png",
+      "texture": "autoquestgen:textures/machinery/clockwork_megafactory.png",
+      "title": "Clockwork Megafactory",
+      "alpha": 170,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "130ecc8eff1ee0e8c50bc984075da2d90ca783f5e39e5e0317cc49fef0801e5d",
+      "keywords": [
+        "epic",
+        "machinery",
+        "clockwork megafactory"
+      ]
+    },
+    {
+      "id": "seasons_of_abundance",
+      "theme": "farming",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/farming/seasons_of_abundance.png",
+      "texture": "autoquestgen:textures/farming/seasons_of_abundance.png",
+      "title": "Seasons of Abundance",
+      "alpha": 170,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "cf12b46bc3866ede72ab670c430fe508e1c222fa28077025b91499eed52d5fd0",
+      "keywords": [
+        "epic",
+        "farming",
+        "seasons of abundance"
+      ]
+    },
+    {
+      "id": "infernal_throne",
+      "theme": "nether",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/nether/infernal_throne.png",
+      "texture": "autoquestgen:textures/nether/infernal_throne.png",
+      "title": "Infernal Throne",
+      "alpha": 170,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "4979cd0ef8a49def004dc18934dded8b1dcfa56df8da6c30a3816436bb95ab66",
+      "keywords": [
+        "epic",
+        "nether",
+        "infernal throne"
+      ]
+    },
+    {
+      "id": "palace_of_the_void",
+      "theme": "end",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/end/palace_of_the_void.png",
+      "texture": "autoquestgen:textures/end/palace_of_the_void.png",
+      "title": "Palace of the Void",
+      "alpha": 170,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "079feafb60960d6fe161e03a0e625d82d3151ce028b47df39479e8eef7e5ceb6",
+      "keywords": [
+        "epic",
+        "end",
+        "palace of the void"
+      ]
+    },
+    {
+      "id": "infinite_archive",
+      "theme": "storage",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/storage/infinite_archive.png",
+      "texture": "autoquestgen:textures/storage/infinite_archive.png",
+      "title": "Infinite Archive",
+      "alpha": 170,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "56dc3df232e2df9e9ea2753f2dacafa91aa2bec7c0dcbab8ff94b8e9ec0fbc37",
+      "keywords": [
+        "epic",
+        "storage",
+        "infinite archive"
+      ]
+    },
+    {
+      "id": "galaxy_of_dreams",
+      "theme": "space",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/space/galaxy_of_dreams.png",
+      "texture": "autoquestgen:textures/space/galaxy_of_dreams.png",
+      "title": "Galaxy of Dreams",
+      "alpha": 170,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "ff7d559a212d66a082032e6cc5ba2a1fcb2a30277f2e8b5cc438b62287ab5c31",
+      "keywords": [
+        "epic",
+        "space",
+        "galaxy of dreams"
+      ]
+    },
+    {
+      "id": "rain_after_ruin",
+      "theme": "restoration",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/restoration/rain_after_ruin.png",
+      "texture": "autoquestgen:textures/restoration/rain_after_ruin.png",
+      "title": "Rain After Ruin",
+      "alpha": 170,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "e1c1f412123434b0fa385625a3a8484b2d4390cd0fae9e660c88e414a8c53b30",
+      "keywords": [
+        "epic",
+        "restoration",
+        "rain after ruin"
+      ]
+    },
+    {
+      "id": "rings_of_the_frontier",
+      "theme": "space",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/space/rings_of_the_frontier.png",
+      "texture": "autoquestgen:textures/space/rings_of_the_frontier.png",
+      "title": "Rings of the Frontier",
+      "alpha": 170,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6c37f26841470fa2ea61a48db1b9971f013b170a2ecb9bfb26338882931b449e",
+      "keywords": [
+        "epic",
+        "space",
+        "rings of the frontier"
+      ]
+    },
+    {
+      "id": "gaia_blossom_landmark",
+      "theme": "botanical",
+      "kind": "landmark",
+      "path": "assets/autoquestgen/textures/botanical/gaia_blossom_landmark.png",
+      "texture": "autoquestgen:textures/botanical/gaia_blossom_landmark.png",
+      "title": "Gaia Blossom",
+      "alpha": 255,
+      "width": 1254,
+      "height": 1254,
+      "sha256": "e67d6cd6e2548cb3e743653171ce25cdc6df33de684d71b6dafa7500513fd381",
+      "keywords": [
+        "epic",
+        "botanical",
+        "gaia blossom"
+      ]
+    },
+    {
+      "id": "astral_grimoire_landmark",
+      "theme": "arcane",
+      "kind": "landmark",
+      "path": "assets/autoquestgen/textures/arcane/astral_grimoire_landmark.png",
+      "texture": "autoquestgen:textures/arcane/astral_grimoire_landmark.png",
+      "title": "Astral Grimoire",
+      "alpha": 255,
+      "width": 1254,
+      "height": 1254,
+      "sha256": "3e7116d2aaf4ceaddb870fb8d43448a07b8c767b456c3c17fdb1bfce493c11d7",
+      "keywords": [
+        "epic",
+        "arcane",
+        "astral grimoire"
+      ]
+    },
+    {
+      "id": "fusion_reactor_landmark",
+      "theme": "power",
+      "kind": "landmark",
+      "path": "assets/autoquestgen/textures/power/fusion_reactor_landmark.png",
+      "texture": "autoquestgen:textures/power/fusion_reactor_landmark.png",
+      "title": "Fusion Reactor",
+      "alpha": 255,
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d39127426dc9093e95fb530c7e36fb6769541ee10b235c9707407e277cca7d37",
+      "keywords": [
+        "epic",
+        "power",
+        "fusion reactor"
+      ]
+    },
+    {
+      "id": "singularity_landmark",
+      "theme": "space",
+      "kind": "landmark",
+      "path": "assets/autoquestgen/textures/space/singularity_landmark.png",
+      "texture": "autoquestgen:textures/space/singularity_landmark.png",
+      "title": "Singularity",
+      "alpha": 255,
+      "width": 1254,
+      "height": 1254,
+      "sha256": "4d2e2894f5e1aa252bf6421915dea8059de1e2a0701d462512e8de5388f7d0bd",
+      "keywords": [
+        "epic",
+        "space",
+        "singularity"
+      ]
+    },
+    {
+      "id": "kinetic_engine_landmark",
+      "theme": "machinery",
+      "kind": "landmark",
+      "path": "assets/autoquestgen/textures/machinery/kinetic_engine_landmark.png",
+      "texture": "autoquestgen:textures/machinery/kinetic_engine_landmark.png",
+      "title": "Kinetic Engine",
+      "alpha": 255,
+      "width": 1254,
+      "height": 1254,
+      "sha256": "9fe14fa4682ccf710ff69b4dcb4d946fadc6fbc913ce1d4d1f9f37f18cdd654d",
+      "keywords": [
+        "epic",
+        "machinery",
+        "kinetic engine"
+      ]
+    },
+    {
+      "id": "wayfarer_airship_landmark",
+      "theme": "exploration",
+      "kind": "landmark",
+      "path": "assets/autoquestgen/textures/exploration/wayfarer_airship_landmark.png",
+      "texture": "autoquestgen:textures/exploration/wayfarer_airship_landmark.png",
+      "title": "Wayfarer Airship",
+      "alpha": 255,
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b586691357d0db6117c66ff7db5f481cc9b118c7812db27eac76e34a1c8868f5",
+      "keywords": [
+        "epic",
+        "exploration",
+        "wayfarer airship"
+      ]
+    },
+    {
+      "id": "harvest_windmill_landmark",
+      "theme": "farming",
+      "kind": "landmark",
+      "path": "assets/autoquestgen/textures/farming/harvest_windmill_landmark.png",
+      "texture": "autoquestgen:textures/farming/harvest_windmill_landmark.png",
+      "title": "Harvest Windmill",
+      "alpha": 255,
+      "width": 1254,
+      "height": 1254,
+      "sha256": "ddce7d4ee6a5195dc8ab70cd314d2ef8bdb983d2d3dfbccd473fa7b2f0dbfe9f",
+      "keywords": [
+        "epic",
+        "farming",
+        "harvest windmill"
+      ]
+    },
+    {
+      "id": "pearl_reef_landmark",
+      "theme": "ocean",
+      "kind": "landmark",
+      "path": "assets/autoquestgen/textures/ocean/pearl_reef_landmark.png",
+      "texture": "autoquestgen:textures/ocean/pearl_reef_landmark.png",
+      "title": "Pearl Reef",
+      "alpha": 255,
+      "width": 1254,
+      "height": 1254,
+      "sha256": "aabcdbea7220e27e6b09d915487b4363ed55282b535c53853335c6ba7c10efde",
+      "keywords": [
+        "epic",
+        "ocean",
+        "pearl reef"
+      ]
+    },
+    {
+      "id": "ember_portal_landmark",
+      "theme": "nether",
+      "kind": "landmark",
+      "path": "assets/autoquestgen/textures/nether/ember_portal_landmark.png",
+      "texture": "autoquestgen:textures/nether/ember_portal_landmark.png",
+      "title": "Ember Portal",
+      "alpha": 255,
+      "width": 1254,
+      "height": 1254,
+      "sha256": "3628626096ca2e3d192516ec81220698768a9892a5c0d87d8826051d4202f86b",
+      "keywords": [
+        "epic",
+        "nether",
+        "ember portal"
+      ]
+    },
+    {
+      "id": "memory_vault_landmark",
+      "theme": "storage",
+      "kind": "landmark",
+      "path": "assets/autoquestgen/textures/storage/memory_vault_landmark.png",
+      "texture": "autoquestgen:textures/storage/memory_vault_landmark.png",
+      "title": "Memory Vault",
+      "alpha": 255,
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b3c6a21f473f84da2227f5b93aa47b47eff18c0147e0fffb58df52d5dd22c072",
+      "keywords": [
+        "epic",
+        "storage",
+        "memory vault"
+      ]
+    },
+    {
+      "id": "void_dragon_landmark",
+      "theme": "end",
+      "kind": "landmark",
+      "path": "assets/autoquestgen/textures/end/void_dragon_landmark.png",
+      "texture": "autoquestgen:textures/end/void_dragon_landmark.png",
+      "title": "Void Dragon",
+      "alpha": 255,
+      "width": 1254,
+      "height": 1254,
+      "sha256": "5faa30be6931cc53886ad5df44ca97a07698e0f462e6342c155b4c44ab64e394",
+      "keywords": [
+        "epic",
+        "end",
+        "void dragon"
+      ]
+    },
+    {
+      "id": "seed_of_renewal_landmark",
+      "theme": "restoration",
+      "kind": "landmark",
+      "path": "assets/autoquestgen/textures/restoration/seed_of_renewal_landmark.png",
+      "texture": "autoquestgen:textures/restoration/seed_of_renewal_landmark.png",
+      "title": "Seed of Renewal",
+      "alpha": 255,
+      "width": 1254,
+      "height": 1254,
+      "sha256": "96e9e91738d53e2615c9925f9e83b2a16dfaa867f4810facae46ceaf531814a2",
+      "keywords": [
+        "epic",
+        "restoration",
+        "seed of renewal"
+      ]
+    }
+  ]
+}

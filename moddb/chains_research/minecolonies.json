@@ -1,174 +1,181 @@
 {
   "mod": "minecolonies",
-  "verified_against": "minecolonies-1.20.1-1.1.1231.jar",
-  "item_count_in_jar": 232,
   "chain": [
     {
       "id": "minecolonies:supplychestdeployer",
-      "title": "Run Aground On Purpose",
-      "desc": "Crafted from five boats and nothing else, it places the Supply Ship whose chest holds the Town Hall block and the build tool."
+      "title": "Choose the Colony's Site",
+      "desc": "Place a Supply Camp on suitable ground. Its starting supplies help establish your settlement.",
+      "requires": []
     },
     {
       "id": "minecolonies:blockhuttownhall",
-      "title": "Plant the Flag",
-      "desc": "Crafted from planks around a gold scepter build tool; placing it founds the colony and is the mod's root advancement step."
+      "title": "Found a New Colony",
+      "desc": "Place the Town Hall using the Build Tool, then create your colony. Reserve room for expansion.",
+      "requires": [
+        "minecolonies:supplychestdeployer"
+      ]
     },
     {
       "id": "minecolonies:blockhutbuilder",
-      "title": "Someone Has To Lift the Stones",
-      "desc": "Planks plus a wooden door and the build tool; hiring a builder here is what turns every later hut into a real building."
+      "title": "Your First Building Crew",
+      "desc": "Place the Builder's Hut and request construction. Supply its worker with the requested materials and tools.",
+      "requires": [
+        "minecolonies:blockhuttownhall"
+      ]
     },
     {
-      "id": "minecolonies:clipboard",
-      "title": "The Endless To-Do List",
-      "desc": "Leather, sticks and the build tool make the clipboard that lists every open worker request in the colony."
-    },
-    {
-      "id": "minecolonies:resourcescroll",
-      "title": "Read the Shortfall",
-      "desc": "Leather, sticks and the build tool; bound to a Builder's Hut it shows the exact materials that build is still missing."
-    },
-    {
-      "id": "minecolonies:blockminecoloniesrack",
-      "title": "Shelves That Never Fill",
-      "desc": "Planks and iron nuggets; racks are the storage every hut uses instead of vanilla chests."
-    },
-    {
-      "id": "minecolonies:blockhutcitizen",
-      "title": "A Roof For Somebody",
-      "desc": "Planks around a torch; the residence hut is what raises the colony's population cap."
+      "id": "check:minecolonies:first_building",
+      "title": "Finish the Builder's Hut",
+      "desc": "Let the builder finish the first hut. Check that it is operational, then confirm this milestone.",
+      "requires": [
+        "minecolonies:blockhutbuilder"
+      ],
+      "icon": "minecolonies:blockhutbuilder"
     },
     {
       "id": "minecolonies:blockhuttavern",
-      "title": "Word Gets Around",
-      "desc": "Planks around a barrel; the tavern draws new citizens and wandering visitors to the colony."
+      "title": "A Place for New Arrivals",
+      "desc": "Build a Tavern for the early settlement. Keep access clear and provide food while planning permanent homes.",
+      "requires": [
+        "check:minecolonies:first_building"
+      ]
+    },
+    {
+      "id": "minecolonies:blockhutcitizen",
+      "title": "Homes for the Workforce",
+      "desc": "Construct a Residence and assign housing. More workers need suitable homes as well as jobs.",
+      "requires": [
+        "check:minecolonies:first_building"
+      ]
     },
     {
       "id": "minecolonies:blockhutlumberjack",
-      "title": "The Forest Answers",
-      "desc": "A production-branch hut whose worker fells and replants trees to keep the builder supplied with wood."
+      "title": "Keep Timber Coming",
+      "desc": "Establish a Forester's Hut with tools and accessible trees. It begins the building-material supply branch.",
+      "requires": [
+        "check:minecolonies:first_building"
+      ]
     },
     {
       "id": "minecolonies:blockhutminer",
-      "title": "Down and Then Sideways",
-      "desc": "A production-branch hut; its miner digs a shaft and side tunnels, unlocking the mod's deep mine advancement."
+      "title": "Materials from Below",
+      "desc": "Build a Mine, supply its requests and allow room for excavation. Check worker messages if production stops.",
+      "requires": [
+        "check:minecolonies:first_building"
+      ]
     },
     {
       "id": "minecolonies:blockhutfarmer",
-      "title": "Break the Sod",
-      "desc": "A production-branch hut; the farmer works the scarecrow-marked fields assigned to it."
+      "title": "Food for the Settlement",
+      "desc": "Build a Farmer's Hut and prepare nearby fields. Set crops and provide tools before expecting harvests.",
+      "requires": [
+        "check:minecolonies:first_building"
+      ]
     },
     {
       "id": "minecolonies:blockhutfield",
-      "title": "Scarecrow Rights",
-      "desc": "The only hut craftable without the build tool: sticks, leather and a hay block or pumpkin mark a farmer's field."
+      "title": "Assign the Crop Fields",
+      "desc": "Place field blocks and configure the crop assignments. Confirm the farmer can reach the plots.",
+      "requires": [
+        "minecolonies:blockhutfarmer"
+      ]
     },
     {
       "id": "minecolonies:blockhutcook",
-      "title": "Nobody Works Hungry",
-      "desc": "A production-branch hut; the cook feeds every citizen, which the citizen_eat_food advancement tracks."
+      "title": "Feed the Workers",
+      "desc": "Build the food-service building available in this version. Stock its requested food so citizens can eat.",
+      "requires": [
+        "minecolonies:blockhutfield"
+      ]
     },
     {
       "id": "minecolonies:blockhutwarehouse",
-      "title": "Everything In One Place",
-      "desc": "Planks around any chest; the warehouse is the central stock the whole colony draws from."
+      "title": "One Place for Shared Supplies",
+      "desc": "Construct the Warehouse and supply its racks. Citizens need the courier network to move materials between workplaces.",
+      "requires": [
+        "check:minecolonies:first_building"
+      ]
     },
     {
       "id": "minecolonies:blockhutdeliveryman",
-      "title": "Legs of the Colony",
-      "desc": "Planks around leather or iron boots; couriers require the warehouse and haul goods between it and every workplace."
+      "title": "Connect the Workplaces",
+      "desc": "Build a Courier's Hut and employ its worker. Couriers collect products and fulfill workplace requests through the Warehouse.",
+      "requires": [
+        "minecolonies:blockhutwarehouse"
+      ]
     },
     {
-      "id": "minecolonies:blockpostbox",
-      "title": "Order From Afar",
-      "desc": "Planks, a chest and the build tool; the postbox lets you request warehouse items directly, and pairs with the stash."
-    },
-    {
-      "id": "minecolonies:blockhutsawmill",
-      "title": "Planks By the Hundred",
-      "desc": "Planks around a wooden axe; the sawmill unlocks the whole crafting branch of huts and requires the courier first."
-    },
-    {
-      "id": "minecolonies:blockhutstonemason",
-      "title": "Cut, Chisel, Repeat",
-      "desc": "A sawmill-gated crafting hut whose mason turns raw stone into the bricks and shaped blocks builds demand."
+      "id": "check:minecolonies:delivery_network",
+      "title": "Watch a Request Arrive",
+      "desc": "Place building materials in the Warehouse and watch a courier deliver an actual worker request. Confirm after the delivery succeeds.",
+      "requires": [
+        "minecolonies:blockhutdeliveryman"
+      ],
+      "icon": "minecolonies:blockhutdeliveryman"
     },
     {
       "id": "minecolonies:blockhutguardtower",
-      "title": "Eyes on the Treeline",
-      "desc": "Planks around a bow; the guard tower is the root of the mod's entire military advancement branch."
-    },
-    {
-      "id": "kill:minecolonies:barbarian",
-      "title": "They Found You",
-      "desc": "Barbarians are raiders that assault the colony as it grows; every raider type drops the ancient tome."
-    },
-    {
-      "id": "minecolonies:blockhutbarracks",
-      "title": "Standing Army",
-      "desc": "Planks around an iron block; the barracks is the fortified core that guard towers attach to."
-    },
-    {
-      "id": "minecolonies:blockhutbarrackstower",
-      "title": "Man the Corners",
-      "desc": "The tower that slots into a barracks; filling every socket completes the all_barracks_towers advancement."
-    },
-    {
-      "id": "minecolonies:blockhutlibrary",
-      "title": "Pupils and Patience",
-      "desc": "Planks around a book; students here study from books and paper and generate the research points the university spends."
+      "title": "Protect the Growing Town",
+      "desc": "Construct a Guard Tower and equip the guard. Position defenses to cover important paths and workplaces.",
+      "requires": [
+        "check:minecolonies:first_building"
+      ]
     },
     {
       "id": "minecolonies:blockhutuniversity",
-      "title": "Unlock the Future",
-      "desc": "Planks around a book; the university opens the 311-node research tree covering civilian, combat, technology and unlockable branches."
-    }
-  ],
-  "collections": [
-    {
-      "hub": "minecolonies:blockhutbaker",
-      "members": [
-        "minecolonies:blockhutblacksmith",
-        "minecolonies:blockhutsmeltery",
-        "minecolonies:blockhutstonesmeltery",
-        "minecolonies:blockhutcrusher",
-        "minecolonies:blockhutsifter",
-        "minecolonies:blockhutcomposter",
-        "minecolonies:blockhutflorist",
-        "minecolonies:blockhutfletcher",
-        "minecolonies:blockhutdyer",
-        "minecolonies:blockhutglassblower",
-        "minecolonies:blockhutconcretemixer",
-        "minecolonies:blockhutmechanic",
-        "minecolonies:blockhutalchemist"
+      "title": "Research the Next Chapter",
+      "desc": "Construct a University and employ researchers. Research requires its listed colony conditions, resources and time.",
+      "requires": [
+        "minecolonies:blockhutcitizen",
+        "check:minecolonies:delivery_network"
       ]
     },
     {
-      "hub": "minecolonies:blockhutshepherd",
-      "members": [
-        "minecolonies:blockhutcowboy",
-        "minecolonies:blockhutswineherder",
-        "minecolonies:blockhutchickenherder",
-        "minecolonies:blockhutrabbithutch",
-        "minecolonies:blockhutbeekeeper",
-        "minecolonies:blockhutstable",
-        "minecolonies:blockhutfisherman"
-      ]
+      "id": "check:minecolonies:first_research",
+      "title": "Turn Resources into Knowledge",
+      "desc": "Complete a useful University research, meeting its displayed building and resource requirements. Confirm after the research finishes.",
+      "requires": [
+        "minecolonies:blockhutuniversity"
+      ],
+      "icon": "minecolonies:blockhutuniversity"
     },
     {
-      "hub": "minecolonies:ancienttome",
-      "members": [
-        "minecolonies:chiefsword",
-        "minecolonies:iron_scimitar",
-        "minecolonies:pharaoscepter",
-        "minecolonies:firearrow",
-        "minecolonies:spear",
-        "minecolonies:pirate_hat",
-        "minecolonies:pirate_cap",
-        "minecolonies:pirate_chest",
-        "minecolonies:pirate_legs"
-      ]
+      "id": "check:minecolonies:self_sufficient_colony",
+      "title": "A Colony That Supports Its Builders",
+      "desc": "Run the food, timber, mining and delivery branches together while a builder completes an upgrade. Confirm when the colony supplies meaningful parts of that project itself.",
+      "requires": [
+        "check:minecolonies:first_research",
+        "minecolonies:blockhutlumberjack",
+        "minecolonies:blockhutminer",
+        "minecolonies:blockhutcook"
+      ],
+      "icon": "minecolonies:blockhuttownhall"
     }
   ],
-  "notes": "Item set = 232 ids from assets/minecolonies/models/item/*.json intersected with item./block. keys in assets/*/lang/en_us.json; entity ids from entity.minecolonies.* (37 found). Every id above is set-membership verified. Build order was taken from the jar's own advancement tree in data/minecolonies/advancements/: minecolonies/root (supply_placed) -> place_townhall -> start_builder -> fulfill_request -> build_builder, which is also the parent of production/root; production/root -> {farmer, fisherman, lumberjack, miner, cook, library, warehouse} , warehouse -> deliveryman -> sawmill -> {blacksmith, crusher, sifter, smeltery, stonesmeltery, stonemason}, cook -> baker, farmer -> composter -> florist, library -> enchanter; military/root is guardtower -> {archery, combatacademy, barracks -> barrackstower -> all_barracks_towers}. Recipes were read from data/minecolonies/recipes/, and the raider drops from data/minecolonies/loot_tables/entities/ (ancienttome drops from all 18 raider types; chiefsword from chiefbarbarian, pharaoscepter and firearrow from pharao, iron_scimitar and the pirate gear from chiefpirate/drownedchiefpirate, spear from amazonspearman). WebSearch confirmed the supply chest contains the Town Hall block and build tool, and the warehouse+courier ordering. VERIFIED AS REQUESTED: minecolonies:supplychestdeployer, minecolonies:supplycampdeployer and minecolonies:resourcescroll all exist in the jar. DROPPED: the scan tool and the build tool are NOT minecolonies ids - every hut recipe in the jar keys on structurize:sceptergold, and the scan tool is structurize:scantool, so neither is set-membership verifiable against this jar; minecolonies:scan_analyzer does exist but its only jar reference is compatibility/itemnbtmatching.json, giving no acquisition source, so it was left out too. Also dropped: minecolonies:largequarry (zero references anywhere in the jar's data, unlike simplequarry and mediumquarry which have recipes). No dim: entries - the jar contains no minecolonies dimension. University research is expressed as the final chain step rather than as individual research nodes because researches are data ids, not item/entity ids."
+  "collections": [],
+  "sources": [
+    "https://minecolonies.com/wiki/tutorials/getting-started/",
+    "https://minecolonies.com/wiki/buildings/builder/",
+    "https://minecolonies.com/wiki/buildings/warehouse/",
+    "https://minecolonies.com/wiki/buildings/university/",
+    "https://github.com/ldtteam/minecolonies/tree/b6987ade75e796dcbab573cdee0144ad54d1da12"
+  ],
+  "content_revision": "2026-10-07: explicit branches, operational guidance, no collection filler",
+  "coverage": {
+    "status": "curated",
+    "scope": "First settlement, food and housing, builder supply, warehouse delivery, research and colony self-sufficiency.",
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "verification": "official_source_assets_and_documentation",
+    "checked_date": "2026-10-07",
+    "reference_version": "release/1.20",
+    "installed_pack_verified": false,
+    "gameplay_tested": false,
+    "limitations": "Official MineColonies documentation reviewed; no local matching JAR was available. Hut item tasks measure obtaining the block, not constructing the building. Manual milestones explicitly confirm construction, delivery and research.",
+    "verification_detail": "Every guide item and mod-specific check icon has a model in the official version source tree. Mechanics use official documentation; no local installation or playthrough was verified.",
+    "source_commit": "b6987ade75e796dcbab573cdee0144ad54d1da12"
+  },
+  "notes": "Each requires list is intentional. Empty lists are independent entry routes. Links describe guided progression or demonstrated recipe/boss gates, not an assertion that every dependency is a game-enforced lock. Runtime scanning still filters unavailable items and entities.",
+  "verified_against": "Official release/1.20 source assets (b6987ade75e7); no installed JAR verified"
 }

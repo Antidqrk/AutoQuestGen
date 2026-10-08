@@ -1,0 +1,8 @@
+AutoQuestGen original quest artwork
+
+110 distinct assets across twelve themes.
+38 original illustrated scenes and transparent landmarks made with the built-in image tool.
+60 editable native decorative graphics and12 editable32-frame animations.
+The12 animations are Minecraft block-atlas textures with matching metadata, not GIF-only previews.
+All shipped artwork, code-native sources, and prompts are included in the asset archive under the app MIT license.
+The application and exported artwork run offline without AI, an API key, or remote image links.

@@ -1,75 +1,156 @@
 {
- "mod": "sophisticatedbackpacks",
- "verified_against": "sophisticatedbackpacks-1.20.1-3.24.67.2109.jar",
- "item_count_in_jar": 71,
- "chain": [
-  {"id": "sophisticatedbackpacks:backpack", "title": "Something to Carry It All", "desc": "Crafted from leather, string and any wooden chest in a crafting table."},
-  {"id": "sophisticatedbackpacks:upgrade_base", "title": "The Blank Slate", "desc": "Crafted from leather, string and an iron ingot, and is the base component of nearly every backpack upgrade."},
-  {"id": "sophisticatedbackpacks:copper_backpack", "title": "First Coat of Copper", "desc": "Crafted by surrounding a plain backpack with copper ingots."},
-  {"id": "sophisticatedbackpacks:pickup_upgrade", "title": "Sweep It Up", "desc": "Crafted from an upgrade base, string, redstone dust and a sticky piston so the backpack absorbs items you walk over."},
-  {"id": "sophisticatedbackpacks:iron_backpack", "title": "Reinforced Seams", "desc": "Crafted by surrounding a plain or copper backpack with iron ingots."},
-  {"id": "sophisticatedbackpacks:magnet_upgrade", "title": "Pull of the Lodestone", "desc": "Crafted by combining a pickup upgrade with iron, lapis, redstone and an ender pearl."},
-  {"id": "sophisticatedbackpacks:stack_upgrade_starter_tier", "title": "Denser Than It Looks", "desc": "Crafted from an upgrade base ringed with copper blocks to double the stack size of every slot."},
-  {"id": "sophisticatedbackpacks:smelting_upgrade", "title": "A Furnace on Your Back", "desc": "Crafted from an upgrade base, iron, redstone and a furnace."},
-  {"id": "sophisticatedbackpacks:gold_backpack", "title": "Gilded Haversack", "desc": "Crafted by surrounding an iron backpack with gold ingots."},
-  {"id": "sophisticatedbackpacks:crafting_upgrade", "title": "Workbench in a Pocket", "desc": "Crafted from an upgrade base, iron, a chest and a crafting table."},
-  {"id": "sophisticatedbackpacks:stack_upgrade_tier_1", "title": "Iron-Bound Capacity", "desc": "Crafted from an upgrade base ringed with iron blocks, or by upgrading the starter tier with iron blocks."},
-  {"id": "sophisticatedbackpacks:tank_upgrade", "title": "Two Bottles of Anything", "desc": "Crafted from an upgrade base and glass to add fluid tanks to the backpack."},
-  {"id": "sophisticatedbackpacks:diamond_backpack", "title": "Cut and Polished Storage", "desc": "Crafted by surrounding a gold backpack with diamonds."},
-  {"id": "sophisticatedbackpacks:advanced_pickup_upgrade", "title": "Wider Net", "desc": "Crafted by combining a pickup upgrade with gold, diamond and redstone in the next-tier upgrade recipe."},
-  {"id": "sophisticatedbackpacks:auto_smelting_upgrade", "title": "The Kiln Runs Itself", "desc": "Crafted by combining a smelting upgrade with gold, diamond, redstone and a hopper."},
-  {"id": "sophisticatedbackpacks:stack_upgrade_tier_3", "title": "Diamond-Compressed", "desc": "Crafted by ringing a tier 2 stack upgrade with diamond blocks."},
-  {"id": "sophisticatedbackpacks:netherite_backpack", "title": "Forged Beyond the Portal", "desc": "Made in a smithing table by combining a diamond backpack, a netherite upgrade template and a netherite ingot."},
-  {"id": "sophisticatedbackpacks:everlasting_upgrade", "title": "It Will Outlive You", "desc": "Crafted from an upgrade base, a nether star and an end crystal so the backpack survives lava and the void."},
-  {"id": "sophisticatedbackpacks:inception_upgrade", "title": "Bags Within Bags", "desc": "Crafted from an upgrade base, diamonds, an eye of ender and a nether star to let backpacks nest inside backpacks."},
-  {"id": "sophisticatedbackpacks:stack_upgrade_omega_tier", "title": "The Last Multiplier", "desc": "Crafted from a full grid of tier 4 stack upgrades."}
- ],
- "collections": [
-  {
-   "hub": "sophisticatedbackpacks:upgrade_base",
-   "members": [
-    "sophisticatedbackpacks:pickup_upgrade",
-    "sophisticatedbackpacks:filter_upgrade",
-    "sophisticatedbackpacks:magnet_upgrade",
-    "sophisticatedbackpacks:void_upgrade",
-    "sophisticatedbackpacks:feeding_upgrade",
-    "sophisticatedbackpacks:refill_upgrade",
-    "sophisticatedbackpacks:restock_upgrade",
-    "sophisticatedbackpacks:deposit_upgrade",
-    "sophisticatedbackpacks:crafting_upgrade",
-    "sophisticatedbackpacks:jukebox_upgrade",
-    "sophisticatedbackpacks:tool_swapper_upgrade",
-    "sophisticatedbackpacks:stonecutter_upgrade",
-    "sophisticatedbackpacks:smithing_upgrade",
-    "sophisticatedbackpacks:anvil_upgrade"
-   ]
+  "mod": "sophisticatedbackpacks",
+  "chain": [
+    {
+      "id": "sophisticatedbackpacks:backpack",
+      "title": "A Base You Can Carry",
+      "desc": "Craft a Backpack, set its keybind and learn how to open or place it. Keep food, tools and building materials organized before your next trip.",
+      "requires": []
+    },
+    {
+      "id": "sophisticatedbackpacks:upgrade_base",
+      "title": "Give the Backpack a Job",
+      "desc": "Craft an Upgrade Base for functional upgrades. Each module uses an upgrade slot, so choose features that match the trip you are planning.",
+      "requires": [
+        "sophisticatedbackpacks:backpack"
+      ]
+    },
+    {
+      "id": "sophisticatedbackpacks:copper_backpack",
+      "title": "An Affordable Capacity Branch",
+      "desc": "Upgrade to a Copper Backpack if it suits your resources. Copper is an optional early tier; some pack recipes allow a direct route to iron.",
+      "requires": [
+        "sophisticatedbackpacks:backpack"
+      ]
+    },
+    {
+      "id": "sophisticatedbackpacks:iron_backpack",
+      "title": "Room for Longer Trips",
+      "desc": "Upgrade to Iron with an available recipe. Backpack upgrades preserve the storage workflow while increasing the room available for items and modules.",
+      "requires": [
+        "sophisticatedbackpacks:backpack"
+      ]
+    },
+    {
+      "id": "sophisticatedbackpacks:gold_backpack",
+      "title": "A Traveling Workshop",
+      "desc": "Upgrade the backpack to Gold and decide which tools or processing upgrades deserve its extra space.",
+      "requires": [
+        "sophisticatedbackpacks:iron_backpack"
+      ]
+    },
+    {
+      "id": "sophisticatedbackpacks:diamond_backpack",
+      "title": "Pack for a Major Expedition",
+      "desc": "Move to a Diamond Backpack for a larger loadout. Organize filters before filling the new capacity with unwanted drops.",
+      "requires": [
+        "sophisticatedbackpacks:gold_backpack"
+      ]
+    },
+    {
+      "id": "sophisticatedbackpacks:netherite_backpack",
+      "title": "The Endgame Travel Pack",
+      "desc": "Apply the installed Netherite upgrade recipe to your Diamond Backpack. Verify the contents and modules after upgrading.",
+      "requires": [
+        "sophisticatedbackpacks:diamond_backpack"
+      ]
+    },
+    {
+      "id": "sophisticatedbackpacks:pickup_upgrade",
+      "title": "Collect Only What You Want",
+      "desc": "Install a Pickup Upgrade and set its filters. Test it with useful drops and unwanted clutter before relying on it while mining.",
+      "requires": [
+        "sophisticatedbackpacks:upgrade_base"
+      ]
+    },
+    {
+      "id": "sophisticatedbackpacks:magnet_upgrade",
+      "title": "Bring Nearby Drops to You",
+      "desc": "Install a Magnet Upgrade and configure its filters and range behavior. This is an alternative collection branch, not a requirement for the pickup module.",
+      "requires": [
+        "sophisticatedbackpacks:upgrade_base"
+      ]
+    },
+    {
+      "id": "sophisticatedbackpacks:crafting_upgrade",
+      "title": "Craft Without Unpacking Everything",
+      "desc": "Add a Crafting Upgrade for a portable crafting workspace. Check which stored ingredients the crafting interface is using.",
+      "requires": [
+        "sophisticatedbackpacks:upgrade_base"
+      ]
+    },
+    {
+      "id": "sophisticatedbackpacks:feeding_upgrade",
+      "title": "Keep Food Ready on the Road",
+      "desc": "Install a Feeding Upgrade and choose which foods it may consume. Keep a renewable supply in the backpack.",
+      "requires": [
+        "sophisticatedbackpacks:upgrade_base"
+      ]
+    },
+    {
+      "id": "sophisticatedbackpacks:smelting_upgrade",
+      "title": "Process Materials During the Trip",
+      "desc": "Add a Smelting Upgrade and provide its input and fuel. Watch the output slot so a full backpack does not stop the process unexpectedly.",
+      "requires": [
+        "sophisticatedbackpacks:upgrade_base"
+      ]
+    },
+    {
+      "id": "sophisticatedbackpacks:auto_smelting_upgrade",
+      "title": "Route Items through the Furnace",
+      "desc": "Upgrade to Auto Smelting and configure the input and fuel rules. Test the processing cycle before adding every ore you find.",
+      "requires": [
+        "sophisticatedbackpacks:smelting_upgrade"
+      ]
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_tier_1",
+      "title": "More of the Materials You Carry Most",
+      "desc": "Install a Stack Upgrade to increase eligible slot stack sizes. This increases quantity per slot rather than replacing the backpack's tier upgrade.",
+      "requires": [
+        "sophisticatedbackpacks:upgrade_base"
+      ]
+    },
+    {
+      "id": "sophisticatedbackpacks:tank_upgrade",
+      "title": "A Separate Space for Fluids",
+      "desc": "Install a Tank Upgrade and test filling and draining it. Check its capacity and handling controls before transporting valuable fluids.",
+      "requires": [
+        "sophisticatedbackpacks:upgrade_base"
+      ]
+    },
+    {
+      "id": "check:sophisticatedbackpacks:expedition_loadout",
+      "title": "Take the Finished Pack Outside",
+      "desc": "Complete a mining or exploration trip with your chosen filters, food and tools configured. Confirm after the backpack collects useful drops and supports the trip as intended.",
+      "requires": [
+        "sophisticatedbackpacks:diamond_backpack",
+        "sophisticatedbackpacks:pickup_upgrade",
+        "sophisticatedbackpacks:feeding_upgrade"
+      ],
+      "icon": "sophisticatedbackpacks:diamond_backpack"
+    }
+  ],
+  "collections": [],
+  "sources": [
+    "https://github.com/P3pp3rF1y/SophisticatedBackpacks/wiki/Description"
+  ],
+  "content_revision": "2026-10-07: explicit branches, operational guidance, no collection filler",
+  "coverage": {
+    "status": "curated",
+    "scope": "Travel storage, genuine backpack tiers, independent upgrade functions and a practical expedition loadout.",
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "verification": "cached_reference_jar_data",
+    "checked_date": "2026-10-07",
+    "reference_version": "1.20.1-3.24.67.2109",
+    "installed_pack_verified": false,
+    "gameplay_tested": false,
+    "limitations": "Recipe quantities, enabled content and progression settings may be changed by the installed pack.",
+    "verification_detail": "Item models, entity language identifiers, dimension data, recipes and bundled guide text where present were inspected; this is data verification, not a Minecraft playthrough."
   },
-  {
-   "hub": "sophisticatedbackpacks:smelting_upgrade",
-   "members": [
-    "sophisticatedbackpacks:blasting_upgrade",
-    "sophisticatedbackpacks:smoking_upgrade",
-    "sophisticatedbackpacks:auto_smelting_upgrade",
-    "sophisticatedbackpacks:auto_blasting_upgrade",
-    "sophisticatedbackpacks:auto_smoking_upgrade",
-    "sophisticatedbackpacks:compacting_upgrade",
-    "sophisticatedbackpacks:alchemy_upgrade",
-    "sophisticatedbackpacks:xp_pump_upgrade"
-   ]
-  },
-  {
-   "hub": "sophisticatedbackpacks:stack_upgrade_starter_tier",
-   "members": [
-    "sophisticatedbackpacks:stack_upgrade_tier_1",
-    "sophisticatedbackpacks:stack_upgrade_tier_2",
-    "sophisticatedbackpacks:stack_upgrade_tier_3",
-    "sophisticatedbackpacks:stack_upgrade_tier_4",
-    "sophisticatedbackpacks:stack_upgrade_omega_tier",
-    "sophisticatedbackpacks:stack_downgrade_tier_1",
-    "sophisticatedbackpacks:stack_downgrade_tier_2",
-    "sophisticatedbackpacks:stack_downgrade_tier_3"
-   ]
-  }
- ],
- "notes": "All ids verified against assets/sophisticatedbackpacks/models/item/*.json intersected with item./block. lang keys (71 items). Progression derived from data/sophisticatedbackpacks/recipes/**: tier ladder is backpack -> copper_backpack -> iron_backpack (also directly from plain) -> gold_backpack -> diamond_backpack -> netherite_backpack (smithing_backpack_upgrade). Basic upgrades use the custom types 'basic_backpack', 'backpack_upgrade', 'smithing_backpack_upgrade' and 'sophisticatedcore:upgrade_next_tier'; advanced_* variants are always the basic upgrade + gold + diamond + redstone. Dropped/excluded: the seven chipped/* upgrades (chipped/alchemy_bench_upgrade, chipped/botanist_workbench_upgrade, chipped/carpenters_table_upgrade, chipped/glassblower_upgrade, chipped/loom_table_upgrade, chipped/mason_table_upgrade, chipped/tinkering_table_upgrade) - they have models but no matching item.* lang key and require the Chipped mod, so they failed the set-membership check. Also excluded from the chain (still real items): infinity_upgrade and survival_infinity_upgrade, which have no recipe file in the jar and are creative/config-gated; battery_upgrade, mob_catcher_upgrade and the stack_upgrade_*_conversion items are craftable but are sidegrades rather than milestones. No unverifiable ids were written."
+  "notes": "Each requires list is intentional. Empty lists are independent entry routes. Links describe guided progression or demonstrated recipe/boss gates, not an assertion that every dependency is a game-enforced lock. Runtime scanning still filters unavailable items and entities.",
+  "verified_against": "sophisticated-backpacks.jar (manifest 1.20.1-3.24.67.2109)",
+  "item_count_in_jar": 78
 }

@@ -1,0 +1,11 @@
+-r requirements.txt
+# Native artwork regeneration and pixel-level asset tests.
+Pillow==12.3.0
+# Windows freezing environment used for this release.
+PyInstaller==6.22.2
+pyinstaller-hooks-contrib==2026.7
+altgraph==0.17.5
+packaging==26.3
+pefile==2024.8.26; sys_platform == "win32"
+pywin32-ctypes==0.2.3; sys_platform == "win32"
+setuptools==84.0.0

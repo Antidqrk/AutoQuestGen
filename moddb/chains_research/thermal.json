@@ -5,124 +5,226 @@
   "chain": [
     {
       "id": "thermal:raw_tin",
-      "title": "Raw Tin",
-      "desc": "Mine Tin Ore, which generates in overworld stone and deepslate; tin is the gateway metal for every Thermal machine."
+      "title": "A supply of tin",
+      "desc": "Mine raw tin and smelt it for gears and alloys. Use the installed recipe viewer to find the pack's ore distribution and any alternative tin sources.",
+      "requires": []
     },
     {
       "id": "thermal:tin_gear",
-      "title": "Tin Gear",
-      "desc": "Craft four tin ingots in a diamond shape around a single iron nugget."
+      "title": "Gears for the workshop",
+      "desc": "Craft a tin gear for machine frames. Gears are shared components; plan your first machines around a steady energy supply and useful outputs.",
+      "requires": [
+        "thermal:raw_tin"
+      ]
     },
     {
       "id": "thermal:machine_frame",
-      "title": "Machine Frame",
-      "desc": "Craft a tin gear surrounded by glass and iron ingots; this is the chassis every Thermal Expansion machine is built around."
+      "title": "Build the machine frames",
+      "desc": "Craft a Machine Frame for Thermal Expansion machines. The frame opens several parallel routes: smelting, pulverizing, pressing, and other processing jobs.",
+      "requires": [
+        "thermal:tin_gear"
+      ]
     },
     {
       "id": "thermal:rf_coil",
-      "title": "Redstone Flux Coil",
-      "desc": "Craft a gold ingot with two redstone dust diagonally; the universal power component in every machine and dynamo."
+      "title": "Power components",
+      "desc": "Make an RF Coil and keep a few spares. It is a basic ingredient for Thermal's machines and energy equipment.",
+      "requires": []
     },
     {
       "id": "thermal:dynamo_stirling",
-      "title": "Stirling Dynamo",
-      "desc": "Craft an RF Coil over an iron gear with stone and redstone; burns coal or charcoal to make your first Redstone Flux."
+      "title": "Solid fuel into energy",
+      "desc": "Connect a Stirling Dynamo to a compatible energy route and feed it an accepted fuel. Configure the coil side as the output and check the installed recipe's coolant requirements.",
+      "requires": [
+        "thermal:rf_coil"
+      ]
     },
     {
       "id": "thermal:machine_furnace",
-      "title": "Redstone Furnace",
-      "desc": "Machine Frame plus RF Coil, a copper gear, bricks and redstone; smelts faster than a vanilla furnace on RF alone."
+      "title": "A powered furnace",
+      "desc": "Supply a Redstone Furnace with energy and a smeltable input. Configure input and output sides before adding automatic item transfer.",
+      "requires": [
+        "thermal:machine_frame",
+        "thermal:rf_coil"
+      ]
     },
     {
       "id": "thermal:machine_pulverizer",
-      "title": "Pulverizer",
-      "desc": "Machine Frame plus RF Coil, a copper gear, flint and a piston; grinds ore into two dusts each, doubling metal yield."
+      "title": "Crush and recover",
+      "desc": "Use the Pulverizer for ore processing, dusts, and useful byproducts. Read the installed recipe for yields and chances; raw ore is not always equivalent to an ore block.",
+      "requires": [
+        "thermal:machine_frame",
+        "thermal:rf_coil"
+      ]
     },
     {
       "id": "thermal:redstone_servo",
-      "title": "Redstone Servo",
-      "desc": "Craft redstone dust between iron ingots; the control part behind Thermal's unpowered devices and duct attachments."
+      "title": "A small part with many uses",
+      "desc": "Craft a Redstone Servo for devices such as the Arboreal Extractor. This utility route can begin before a complete powered processing line.",
+      "requires": []
     },
     {
       "id": "thermal:device_tree_extractor",
-      "title": "Arboreal Extractor",
-      "desc": "Craft a Redstone Servo with an iron gear, bucket, glass and planks, then place it against a rubberwood or jungle trunk to tap Latex."
+      "title": "Harvest a living tree",
+      "desc": "Place an Arboreal Extractor against a suitable grown tree and collect its fluid output. Check the compatible trees and conditions before building a large grove.",
+      "requires": [
+        "thermal:redstone_servo"
+      ]
     },
     {
       "id": "thermal:cured_rubber",
-      "title": "Cured Rubber",
-      "desc": "Turn a Latex Bucket into three Rubber, then smelt the Rubber; required for energy and fluid cells."
+      "title": "A rubber supply",
+      "desc": "Process latex into rubber using the installed recipe, then cure it. Keep fluid handling organized if this branch will supply a larger workshop.",
+      "requires": [
+        "thermal:device_tree_extractor"
+      ]
     },
     {
       "id": "thermal:invar_ingot",
-      "title": "Invar Ingot",
-      "desc": "Alloy two iron with one nickel, either as dusts in a furnace or directly in the Induction Smelter; the mid-tier gear metal."
+      "title": "Alloy for tougher machines",
+      "desc": "Make invar from iron and nickel using an available alloy or blend recipe. A dust blend can bootstrap this material before you build an Induction Smelter.",
+      "requires": [
+        "thermal:machine_pulverizer"
+      ]
     },
     {
       "id": "thermal:machine_smelter",
-      "title": "Induction Smelter",
-      "desc": "Machine Frame plus RF Coil, an invar gear, sand and a blast furnace; alloys metals and smelts ore with sand for bonus Rich Slag."
+      "title": "Alloys in one machine",
+      "desc": "Power an Induction Smelter for alloy and mixed-input recipes. Configure both ingredients and output handling so one accumulated byproduct cannot stop the line.",
+      "requires": [
+        "thermal:machine_frame",
+        "thermal:invar_ingot"
+      ]
     },
     {
       "id": "thermal:upgrade_augment_1",
-      "title": "Hardened Integral Components",
-      "desc": "Craft a gold gear with invar ingots, glass and redstone; drop it into a machine's augment slot to raise it to the Hardened tier."
+      "title": "Improve a machine's base performance",
+      "desc": "Install an Integral Component in compatible machines. Check the resulting energy demand as well as speed; an upgrade is only useful if the generator and transport can keep up.",
+      "requires": [
+        "thermal:invar_ingot"
+      ]
     },
     {
       "id": "thermal:energy_cell",
-      "title": "Redstone Flux Cell",
-      "desc": "Build an Energy Cell Frame from an electrum gear, lead and glass, then combine with an RF Coil, Cured Rubber and a redstone block to buffer power."
+      "title": "Buffer the factory",
+      "desc": "Add an Energy Cell and configure input and output faces. Keep a reserve for startup and short demand peaks rather than relying on generation to match every moment.",
+      "requires": [
+        "thermal:rf_coil"
+      ]
     },
     {
       "id": "thermal:flux_capacitor",
-      "title": "Flux Capacitor",
-      "desc": "Craft an RF Coil with lead ingots and redstone; carries RF to recharge Thermal tools and armor in the field."
+      "title": "Carry a charge",
+      "desc": "Charge a Flux Capacitor and configure which equipped items it may recharge. This equipment branch is independent of advanced alloy processing.",
+      "requires": [
+        "thermal:rf_coil"
+      ]
     },
     {
       "id": "thermal:dynamo_magmatic",
-      "title": "Magmatic Dynamo",
-      "desc": "Craft an RF Coil with an invar gear and invar ingots; burns lava for a large step up in sustained power over the Stirling."
+      "title": "A lava-powered alternative",
+      "desc": "Feed a Magmatic Dynamo with an accepted hot fluid. Choose a sustainable supply and compare its output with the machines you intend to run.",
+      "requires": [
+        "thermal:invar_ingot",
+        "thermal:rf_coil"
+      ]
     },
     {
       "id": "thermal:signalum_ingot",
-      "title": "Signalum Ingot",
-      "desc": "Alloy three copper, one silver and two redstone in the Induction Smelter; the first of the three tiering alloys."
+      "title": "Signals and stronger components",
+      "desc": "Produce signalum with the installed alloy recipe. Use it for advanced components after your basic power and materials loops are reliable.",
+      "requires": [
+        "thermal:machine_smelter"
+      ]
     },
     {
       "id": "thermal:upgrade_augment_2",
-      "title": "Reinforced Integral Components",
-      "desc": "Combine the Hardened kit with a signalum gear, electrum ingots and quartz to push a machine to the Reinforced tier."
+      "title": "Raise the production ceiling",
+      "desc": "Upgrade the Integral Component tier in compatible machines. Recheck energy, input supply, and output capacity after changing machine speed.",
+      "requires": [
+        "thermal:signalum_ingot"
+      ]
     },
     {
       "id": "thermal:machine_press",
-      "title": "Multiservo Press",
-      "desc": "Machine Frame plus RF Coil, a constantan gear, an iron block and bronze; with a Gearworking Die it stamps ingots into gears automatically."
+      "title": "Choose a press mold",
+      "desc": "Power a Multiservo Press and install the mold required for the recipe. Plates, gears, and packing recipes use different configurations; one mold does not cover them all.",
+      "requires": [
+        "thermal:machine_frame"
+      ]
     },
     {
       "id": "thermal:flux_drill",
-      "title": "Fluxbore",
-      "desc": "Craft a Drill Head over an RF Coil with gold and tin gears; an RF-powered pickaxe and shovel that accepts area-mining augments."
+      "title": "Take powered tools underground",
+      "desc": "Craft and charge a Fluxbore from Thermal Innovation, then choose an appropriate mining mode. This optional tool requires the Innovation module to be installed.",
+      "requires": [
+        "thermal:flux_capacitor"
+      ]
     },
     {
       "id": "thermal:obsidian_glass",
-      "title": "Hardened Glass",
-      "desc": "Smelt obsidian, sand and quartz together in the Induction Smelter; the blast-resistant glass needed for the top upgrade kit."
+      "title": "Heat-resistant construction material",
+      "desc": "Make hardened obsidian glass using the installed Induction Smelter recipe. It supports advanced Thermal components without making every utility device an endgame project.",
+      "requires": [
+        "thermal:machine_smelter"
+      ]
     },
     {
       "id": "thermal:lumium_ingot",
-      "title": "Lumium Ingot",
-      "desc": "Alloy three tin, one silver and two glowstone dust in the Induction Smelter; gates the Phytogenic Insolator and the Resonant kit."
+      "title": "A luminous alloy",
+      "desc": "Produce lumium from its installed alloy recipe. Keep this materials branch alongside signalum; the two alloys solve different component requirements.",
+      "requires": [
+        "thermal:machine_smelter"
+      ]
     },
     {
       "id": "thermal:enderium_ingot",
-      "title": "Enderium Ingot",
-      "desc": "Alloy three lead, one diamond and two ender pearls in the Induction Smelter; Thermal's endgame metal."
+      "title": "An alloy for the top tier",
+      "desc": "Produce enderium using the required materials and machine recipe. Confirm the full recipe chain before spending scarce End resources.",
+      "requires": [
+        "thermal:machine_smelter",
+        "thermal:obsidian_glass"
+      ]
     },
     {
       "id": "thermal:upgrade_augment_3",
-      "title": "Resonant Integral Components",
-      "desc": "Combine the Reinforced kit with a lumium gear, enderium ingots and Hardened Glass for the highest craftable machine tier."
+      "title": "Finish the component ladder",
+      "desc": "Install the strongest verified Integral Component tier when the power grid can sustain it. Tune useful machines first instead of upgrading every idle machine.",
+      "requires": [
+        "thermal:enderium_ingot",
+        "thermal:upgrade_augment_2"
+      ]
     }
   ],
-  "notes": "All 24 ids were verified against lang keys (item.thermal.* / block.thermal.*) and models in the downloaded jars; every crafted entry was additionally confirmed against its recipe JSON in data/thermal/recipes/, so the stated ingredients are from the jar, not a wiki. Note thermal_foundation ships thermal_core as a jar-in-jar and the lang files live under assets/thermal_foundation/ and assets/thermal_dynamics/ rather than assets/thermal/, so a naive scan of assets/thermal/lang returns nothing. Ids dropped: thermal:upgrade_augment_4 (Resonant+ Integral Components) exists as a lang key and model but has NO recipe anywhere in the five jars, so it is creative/config-gated and unsuitable as a quest goal; thermal:item_cell and thermal:item_cell_frame likewise have lang entries but no recipe in any scanned jar and were dropped. Machine tiering is done with augment kits inserted into a machine's augment slots, not by crafting separate tiered machine blocks - there is no thermal:hardened_machine_frame or similar, so quests should target the upgrade_augment_N items. Every machine except the Redstone Furnace family follows one pattern: Machine Frame + RF Coil + a tier-appropriate gear + two themed ingredients, which makes Machine Frame and RF Coil the natural hard gates for a quest chain. Alloys can be made either by hand-crafting dusts with a fire charge or in the Induction Smelter; the smelter route is the intended progression. Optional expansions if more entries are wanted, all verified present: thermal:wrench (Crescent Hammer, very early), thermal:machine_crucible (Magma Crucible, melts cobble into lava and pairs with the Magmatic Dynamo), thermal:machine_sawmill, thermal:machine_insolator (lumium gear), thermal:machine_crafter, thermal:machine_centrifuge, thermal:machine_pyrolyzer, thermal:energy_duct, thermal:fluid_cell, thermal:charge_bench, thermal:satchel, thermal:xp_crystal, thermal:flux_saw, thermal:flux_magnet, thermal:dynamo_compression, thermal:dynamo_numismatic, thermal:machine_speed_augment, thermal:rf_coil_augment."
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "sources": [
+    "https://github.com/CoFH/ThermalExpansion",
+    "https://github.com/CoFH/ThermalFoundation",
+    "https://github.com/CoFH/ThermalInnovation"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Early power and parallel machines",
+      "Tree fluids and rubber",
+      "Alloys and integral components",
+      "Energy storage",
+      "Optional powered tools"
+    ],
+    "limits": [
+      "The thermal namespace spans Foundation, Expansion, and optional modules; missing-module items must be filtered by the pack scan.",
+      "This is the 1.20.1 integral-component system, not legacy upgrade kits.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": false,
+    "cached_jar_versions": [
+      "11.0.1",
+      "11.0.6"
+    ]
+  }
 }

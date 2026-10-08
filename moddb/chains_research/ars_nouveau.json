@@ -1,123 +1,227 @@
 {
- "mod": "ars_nouveau",
- "verified_against": "ars_nouveau-1.20.1-4.12.7-all.jar",
- "item_count_in_jar": 327,
- "chain": [
-  {
-   "id": "ars_nouveau:worn_notebook",
-   "title": "Worn Notebook",
-   "desc": "Craft a Book with one Lapis Lazuli; this is the mod's in-game guide and documents every recipe and mechanic that follows."
+  "mod": "ars_nouveau",
+  "verified_against": "ars_nouveau-1.20.1-4.12.7-all.jar",
+  "item_count_in_jar": 327,
+  "chain": [
+    {
+      "id": "ars_nouveau:worn_notebook",
+      "title": "Worn Notebook",
+      "desc": "Keep the Worn Notebook at your workbench. It contains the diagrams, glyph costs and ritual instructions that turn a collection of machines into a working magic workshop.",
+      "requires": []
+    },
+    {
+      "id": "ars_nouveau:novice_spell_book",
+      "title": "Novice Spell Book",
+      "desc": "Open your first spell book and assemble a simple spell from its available glyphs. Test its range and mana cost before adding more effects; this book begins the spellcasting branch independently of your Source workshop.",
+      "requires": []
+    },
+    {
+      "id": "ars_nouveau:imbuement_chamber",
+      "title": "Imbuement Chamber",
+      "desc": "Place lapis or amethyst into the chamber to begin making Source Gems. It can gather the Source it needs passively; nearby Source Jars accelerate the process, so you do not need a running Sourcelink to begin.",
+      "requires": []
+    },
+    {
+      "id": "ars_nouveau:source_jar",
+      "title": "Source Jar",
+      "desc": "Place a Source Jar near the machines you plan to power. Watch its stored Source while a machine works so you can tell whether production is keeping up with demand.",
+      "requires": []
+    },
+    {
+      "id": "ars_nouveau:scribes_table",
+      "title": "Scribe's Table",
+      "desc": "Use the Scribe's Table to learn additional glyphs. Bring the experience and ingredients shown for the glyph, then add the learned effect to a spell you can already cast.",
+      "requires": [
+        "ars_nouveau:novice_spell_book"
+      ]
+    },
+    {
+      "id": "ars_nouveau:source_gem",
+      "title": "Source Gem",
+      "desc": "Finish a Source Gem infusion in the Imbuement Chamber. Keep a reserve for pedestals, the Arcane Core and Sourcelinks instead of spending the first batch on decoration.",
+      "requires": [
+        "ars_nouveau:imbuement_chamber"
+      ]
+    },
+    {
+      "id": "ars_nouveau:agronomic_sourcelink",
+      "title": "Agronomic Sourcelink",
+      "desc": "Build a growing area around the Agronomic Sourcelink and put Source Jars nearby. Natural crop and tree growth produces Source; bonemeal growth does not count for this Sourcelink.",
+      "requires": [
+        "ars_nouveau:source_gem",
+        "ars_nouveau:source_jar"
+      ]
+    },
+    {
+      "id": "ars_nouveau:arcane_pedestal",
+      "title": "Arcane Pedestal",
+      "desc": "Prepare pedestals for the ingredients around an Enchanting Apparatus. Leave room to walk around the arrangement so you can check each ingredient before activating a recipe.",
+      "requires": [
+        "ars_nouveau:source_gem"
+      ]
+    },
+    {
+      "id": "ars_nouveau:arcane_core",
+      "title": "Arcane Core",
+      "desc": "Place the Arcane Core directly below the Enchanting Apparatus. The core and surrounding pedestals form the crafting station used by several branches of your workshop.",
+      "requires": [
+        "ars_nouveau:source_gem"
+      ]
+    },
+    {
+      "id": "ars_nouveau:enchanting_apparatus",
+      "title": "Enchanting Apparatus",
+      "desc": "Set the apparatus on its Arcane Core and arrange Arcane Pedestals around it. Put the recipe ingredients on the pedestals, then use the central reagent; some recipes also require stored Source.",
+      "requires": [
+        "ars_nouveau:arcane_core",
+        "ars_nouveau:arcane_pedestal"
+      ]
+    },
+    {
+      "id": "ars_nouveau:ritual_brazier",
+      "title": "Ritual Brazier",
+      "desc": "Set aside an open ritual area and place the brazier. Ritual tablets and their augments determine what happens here, so inspect the Notebook entry before starting a ritual near your base.",
+      "requires": [
+        "ars_nouveau:arcane_pedestal",
+        "ars_nouveau:source_gem"
+      ]
+    },
+    {
+      "id": "ars_nouveau:magebloom_crop",
+      "title": "Magebloom Seed",
+      "desc": "Use the apparatus to make a Magebloom Seed, then establish a small crop plot. Harvested Magebloom becomes the fibre for mage armour and later armour customisation.",
+      "requires": [
+        "ars_nouveau:enchanting_apparatus",
+        "ars_nouveau:source_gem"
+      ]
+    },
+    {
+      "id": "ars_nouveau:dominion_wand",
+      "title": "Dominion Wand",
+      "desc": "Use the Dominion Wand to assign connections for your magical helpers. Start with a simple source inventory and destination inventory, then confirm the helper follows the intended route.",
+      "requires": [
+        "ars_nouveau:enchanting_apparatus"
+      ]
+    },
+    {
+      "id": "ars_nouveau:apprentice_spell_book",
+      "title": "Apprentice Spell Book",
+      "desc": "Upgrade the Novice Spell Book with the Enchanting Apparatus. The new tier opens stronger glyphs; revise a familiar spell first so you can see what the upgrade changes.",
+      "requires": [
+        "ars_nouveau:novice_spell_book",
+        "ars_nouveau:enchanting_apparatus"
+      ]
+    },
+    {
+      "id": "ars_nouveau:ritual_wilden_summon",
+      "title": "Ritual of Summon Wilden",
+      "desc": "Prepare the Summon Wilden tablet and the listed Wilden augments. The augmented ritual summons the Wilden Chimera; use an arena with room to move and take healing supplies.",
+      "requires": [
+        "ars_nouveau:ritual_brazier"
+      ]
+    },
+    {
+      "id": "ars_nouveau:ritual_flight",
+      "title": "Ritual of Flight",
+      "desc": "Run the Flight ritual where you want a permanent working area and keep its Source supply replenished. Its benefit is local to the ritual, so test the boundary before using it for high construction.",
+      "requires": [
+        "ars_nouveau:ritual_brazier",
+        "ars_nouveau:source_jar"
+      ]
+    },
+    {
+      "id": "ars_nouveau:magebloom_fiber",
+      "title": "Magebloom Fiber",
+      "desc": "Craft a harvested Magebloom flower into fiber; the textile every piece of mage armor is made from.",
+      "requires": [
+        "ars_nouveau:magebloom_crop"
+      ]
+    },
+    {
+      "id": "ars_nouveau:starbuncle_charm",
+      "title": "Starbuncle Charm",
+      "desc": "Obtain a Starbuncle Token from a wild Starbuncle and use the apparatus recipe to turn it into a charm. Summon the helper and use the Dominion Wand to give it a useful item-transport job.",
+      "requires": [
+        "ars_nouveau:dominion_wand",
+        "ars_nouveau:enchanting_apparatus"
+      ]
+    },
+    {
+      "id": "kill:ars_nouveau:wilden_boss",
+      "title": "Wilden Chimera",
+      "desc": "Defeat the Wilden Chimera summoned by the augmented Wilden ritual. Keep moving through its attacks and retrieve the Wilden Tribute after the fight.",
+      "requires": [
+        "ars_nouveau:ritual_wilden_summon"
+      ]
+    },
+    {
+      "id": "ars_nouveau:sorcerer_robes",
+      "title": "Sorceror's Wrap",
+      "desc": "Use the apparatus to make your first mage robe. Wear it while testing spells and compare its mana benefits; this equipment branch can grow alongside book upgrades and familiar automation.",
+      "requires": [
+        "ars_nouveau:magebloom_fiber",
+        "ars_nouveau:enchanting_apparatus"
+      ]
+    },
+    {
+      "id": "ars_nouveau:wilden_tribute",
+      "title": "Wilden Tribute",
+      "desc": "Dropped by the Wilden Chimera; the gating ingredient for the final spell book upgrade.",
+      "requires": [
+        "kill:ars_nouveau:wilden_boss"
+      ],
+      "acquisition": "Defeat the Wilden Chimera; its entity drop method creates a Wilden Tribute item.",
+      "sources": [
+        "ars_nouveau-1.20.1-4.12.7-all.jar!assets/ars_nouveau/lang/en_us.json#tooltip.ars_nouveau.wilden_tribute",
+        "ars_nouveau-1.20.1-4.12.7-all.jar!com/hollingsworth/arsnouveau/common/entity/WildenChimera.class"
+      ]
+    },
+    {
+      "id": "ars_nouveau:alteration_table",
+      "title": "Alteration Table",
+      "desc": "Build the Alteration Table and inspect the thread slots on your mage armour. Choose threads for the way you actually cast rather than filling slots without a plan.",
+      "requires": [
+        "ars_nouveau:scribes_table",
+        "ars_nouveau:magebloom_fiber"
+      ]
+    },
+    {
+      "id": "ars_nouveau:archmage_spell_book",
+      "title": "Archmage Spell Book",
+      "desc": "Bring the Apprentice Spell Book and Wilden Tribute to the apparatus with the remaining upgrade ingredients. This final book tier unlocks Tier 3 glyphs and gives your earlier spell experiments much more room to grow.",
+      "requires": [
+        "ars_nouveau:apprentice_spell_book",
+        "ars_nouveau:wilden_tribute",
+        "ars_nouveau:enchanting_apparatus"
+      ]
+    }
+  ],
+  "notes": "Reviewed against the primary sources listed above. Every chain row now declares its intended prerequisites; an empty list is an intentional independent starting point. The order is topological. Item and checkpoint-icon asset paths and typed objective identifiers were checked against the listed jar or source snapshot. Jar inspection verifies identifiers and selected mechanics, not that every route has been completed in game.",
+  "sources": [
+    {
+      "kind": "installed_mod_jar",
+      "file": "ars_nouveau-1.20.1-4.12.7-all.jar",
+      "paths": [
+        "assets/ars_nouveau/lang/en_us.json",
+        "data/ars_nouveau/recipes/",
+        "assets/ars_nouveau/lang/en_us.json",
+        "assets/ars_nouveau/patchouli_books/worn_notebook/en_us/categories/armor.json",
+        "assets/ars_nouveau/patchouli_books/worn_notebook/en_us/categories/automation.json"
+      ],
+      "scope": "English guide/tooltip text, recipe data and inventory assets; selected special mechanics checked against implementation."
+    }
+  ],
+  "coverage": {
+    "type": "authored_offline_progression",
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "verification": "installed_jar_review",
+    "reviewed": "2026-10-07",
+    "scope": "Spellcasting, renewable Source, apparatus crafting, mage equipment, helpers and the Wilden-to-Archmage route.",
+    "guide_rows": 23,
+    "manual_checkpoints": 0,
+    "limits": "A curated teaching route, not every item or mechanic. Recipe quantities and conditions follow the installed pack. Manual checkpoints require player confirmation. No complete in-game playthrough claimed."
   },
-  {
-   "id": "ars_nouveau:novice_spell_book",
-   "title": "Novice Spell Book",
-   "desc": "Craft shapelessly from a Book plus an iron sword, pickaxe, axe, and shovel; lets you build and cast Tier 1 spells using mana."
-  },
-  {
-   "id": "ars_nouveau:scribes_table",
-   "title": "Scribe's Table",
-   "desc": "Craft from 2 Archwood Logs, 3 Archwood Slabs, and 2 Gold Nuggets; combine it with experience and the listed items to learn new glyphs for your book."
-  },
-  {
-   "id": "ars_nouveau:imbuement_chamber",
-   "title": "Imbuement Chamber",
-   "desc": "Craft from 6 Archwood Planks and 2 Gold Ingots; it slowly infuses items placed inside with Source to transmute them."
-  },
-  {
-   "id": "ars_nouveau:source_gem",
-   "title": "Source Gem",
-   "desc": "Place an Amethyst Shard or Lapis Lazuli in the Imbuement Chamber (500 Source each); the core crafting gem for nearly all Ars devices."
-  },
-  {
-   "id": "ars_nouveau:source_jar",
-   "title": "Source Jar",
-   "desc": "Craft from 6 Archwood Slabs and 2 Glass; stores the Source that the Imbuement Chamber and Enchanting Apparatus draw from."
-  },
-  {
-   "id": "ars_nouveau:agronomic_sourcelink",
-   "title": "Agronomic Sourcelink",
-   "desc": "Craft from 2 Source Gems, 2 Gold Ingots, and Wheat; generates Source from crops growing nearby and pipes it into adjacent Source Jars."
-  },
-  {
-   "id": "ars_nouveau:arcane_pedestal",
-   "title": "Arcane Pedestal",
-   "desc": "Craft from 4 Sourcestone, 4 Gold Nuggets, and a Source Gem; up to eight of these hold the ingredients for apparatus crafting."
-  },
-  {
-   "id": "ars_nouveau:arcane_core",
-   "title": "Arcane Core",
-   "desc": "Craft from 6 Sourcestone, 2 Gold Ingots, and a Source Gem; sits directly under the Enchanting Apparatus to complete the multiblock."
-  },
-  {
-   "id": "ars_nouveau:enchanting_apparatus",
-   "title": "Enchanting Apparatus",
-   "desc": "Craft from 2 Sourcestone, 4 Gold Nuggets, 2 Gold Ingots, and a Diamond; placed on an Arcane Core with pedestals around it, it crafts the mod's advanced gear."
-  },
-  {
-   "id": "ars_nouveau:magebloom_crop",
-   "title": "Magebloom Seed",
-   "desc": "Your first apparatus craft: any seed as the reagent with 4 Source Gems on pedestals; grow it into Magebloom flowers."
-  },
-  {
-   "id": "ars_nouveau:magebloom_fiber",
-   "title": "Magebloom Fiber",
-   "desc": "Craft a harvested Magebloom flower into fiber; the textile every piece of mage armor is made from."
-  },
-  {
-   "id": "ars_nouveau:sorcerer_robes",
-   "title": "Sorceror's Wrap",
-   "desc": "Apparatus craft: a Golden Chestplate surrounded by 4 Magebloom Fiber; mage armor self-repairs from your mana pool and boosts mana regen (Arcanist and Battlemage sets use iron and diamond armor)."
-  },
-  {
-   "id": "ars_nouveau:dominion_wand",
-   "title": "Dominion Wand",
-   "desc": "Apparatus craft: a Stick with 2 Source Gems and a Gold Ingot on pedestals; binds summons like Starbuncles to the inventories they should serve."
-  },
-  {
-   "id": "ars_nouveau:starbuncle_charm",
-   "title": "Starbuncle Charm",
-   "desc": "Hand a wild Starbuncle a Gold Nugget to receive its Token, then apparatus-craft the token with 4 Gold Ingots; the summoned Starbuncle moves items between inventories."
-  },
-  {
-   "id": "ars_nouveau:apprentice_spell_book",
-   "title": "Apprentice Spell Book",
-   "desc": "Upgrade the Novice book at the Enchanting Apparatus with Obsidian, 3 Diamonds, 2 Quartz Blocks, and 2 Blaze Rods; unlocks Tier 2 glyphs and more spell slots."
-  },
-  {
-   "id": "ars_nouveau:ritual_brazier",
-   "title": "Ritual Brazier",
-   "desc": "Craft shapelessly from an Arcane Pedestal, a Source Gem Block, and 3 Gold Ingots; place ritual tablets in it to perform the mod's rituals."
-  },
-  {
-   "id": "ars_nouveau:ritual_wilden_summon",
-   "title": "Ritual of Summon Wilden",
-   "desc": "Craft the tablet from a Purple Archwood Log, 3 Wilden drops (horn, spike, or wing), and a Lapis Block; run it in the brazier augmented with a Wilden Spike, Horn, and Wing to call the Chimera."
-  },
-  {
-   "id": "kill:ars_nouveau:wilden_boss",
-   "title": "Wilden Chimera",
-   "desc": "Defeat the boss summoned by the augmented Summon Wilden ritual; it resists cold damage and warrants Tier 2 spells and mage armor."
-  },
-  {
-   "id": "ars_nouveau:wilden_tribute",
-   "title": "Wilden Tribute",
-   "desc": "Dropped by the Wilden Chimera; the gating ingredient for the final spell book upgrade."
-  },
-  {
-   "id": "ars_nouveau:archmage_spell_book",
-   "title": "Archmage Spell Book",
-   "desc": "Upgrade the Apprentice book at the apparatus with a Nether Star, Wilden Tribute, 2 Emeralds, 3 Ender Pearls, and a Totem of Undying; unlocks Tier 3 glyphs."
-  },
-  {
-   "id": "ars_nouveau:alteration_table",
-   "title": "Alteration Table",
-   "desc": "Craft from a Scribe's Table and 4 Magebloom Fiber; inscribes Threads (perks) onto your mage armor's thread slots."
-  },
-  {
-   "id": "ars_nouveau:ritual_flight",
-   "title": "Ritual of Flight",
-   "desc": "Craft the tablet from a Purple Archwood Log, 3 Wilden Wings, 2 Diamonds, and an Ender Pearl; the running ritual grants nearby players renewable creative flight, paid for in Source."
-  }
- ],
- "notes": "All item ids set-checked against models/item stems intersected with item./block. lang keys (327 ids). Descriptions derived from data/ars_nouveau/recipes/*.json and the bundled Worn Notebook Patchouli book. wilden_boss entity verified in en_us.json (entity.ars_nouveau.wilden_boss = Wilden Chimera). This 1.20.1 version (4.12.x) uses the newer armor system: Sorceror/Arcanist/Battlemage sets replace the old Novice/Apprentice/Archmage robes, tiered up via apparatus upgrade recipes (upgrade_1/upgrade_2). apprentice/archmage books are ars_nouveau:book_upgrade apparatus recipes, not crafting-table recipes. magebloom_crop is the item id of the Magebloom Seed. No ids were dropped."
+  "content_revision": "2026-10-07: explicit branched prerequisites, practical instructions and primary-source coverage review."
 }

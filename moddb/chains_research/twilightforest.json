@@ -1,172 +1,204 @@
 {
- "mod": "twilightforest",
- "verified_against": "twilightforest-1.20.1-4.3.2508-universal.jar",
- "item_count_in_jar": 1039,
- "chain": [
-  {
-   "id": "dim:twilightforest:twilight_forest",
-   "title": "Under the Canopy",
-   "desc": "Fill a two-by-two pool with water, ring it with flowers, and throw in a diamond. The lightning drops you into a forest held at permanent dusk."
+  "mod": "twilightforest",
+  "chain": [
+    {
+      "id": "dim:twilightforest:twilight_forest",
+      "title": "A Door Beneath the Flowers",
+      "desc": "Make the flower-bordered water pool and toss in a diamond. Establish a safe return point before you explore the Twilight Forest.",
+      "requires": []
+    },
+    {
+      "id": "twilightforest:raven_feather",
+      "title": "A Mapmaker's First Find",
+      "desc": "Gather a raven feather for a Magic Map Focus. Mapmaking is a useful side project; it is not a prerequisite for the Naga fight.",
+      "requires": [
+        "dim:twilightforest:twilight_forest"
+      ]
+    },
+    {
+      "id": "twilightforest:magic_map_focus",
+      "title": "Chart the Forest",
+      "desc": "Combine the feather with the focus ingredients shown in your recipe viewer. This focus is the component for a blank Magic Map.",
+      "requires": [
+        "twilightforest:raven_feather"
+      ]
+    },
+    {
+      "id": "twilightforest:magic_map",
+      "title": "Landmarks in the Mist",
+      "desc": "Make and use a Magic Map to reveal nearby landmarks. Boss structures give this expedition its route; ordinary terrain maps do not replace it.",
+      "requires": [
+        "twilightforest:magic_map_focus"
+      ]
+    },
+    {
+      "id": "twilightforest:liveroot",
+      "title": "Living Roots Underground",
+      "desc": "Search the underground roots for Liveroot. Set some aside for ironwood while another route takes you toward the first courtyard.",
+      "requires": [
+        "dim:twilightforest:twilight_forest"
+      ]
+    },
+    {
+      "id": "twilightforest:ironwood_ingot",
+      "title": "Forge with Living Wood",
+      "desc": "Prepare raw ironwood using the installed recipe, then smelt it. Forge equipment to support the first courtyard and tower expeditions.",
+      "requires": [
+        "twilightforest:liveroot"
+      ]
+    },
+    {
+      "id": "kill:twilightforest:naga",
+      "title": "The Courtyard Challenge",
+      "desc": "Find a Naga Courtyard and defeat its guardian. Collect the scales and trophy before leaving so the mod records your first progression milestone.",
+      "requires": [
+        "dim:twilightforest:twilight_forest"
+      ]
+    },
+    {
+      "id": "twilightforest:naga_scale",
+      "title": "Proof of the First Hunt",
+      "desc": "Recover the Naga's scales. They are useful equipment materials and part of the forest's own first-boss advancement.",
+      "requires": [
+        "kill:twilightforest:naga"
+      ]
+    },
+    {
+      "id": "twilightforest:naga_chestplate",
+      "title": "Armor for the Tower",
+      "desc": "Turn your scales into a chestplate for the next expedition. Keep the rest of your scales for the matching leggings before setting out for the Lich Tower.",
+      "requires": [
+        "twilightforest:naga_scale"
+      ]
+    },
+    {
+      "id": "kill:twilightforest:lich",
+      "title": "Break the Tower's Shield",
+      "desc": "Enter a Lich Tower after the Naga. Return the Lich's projectiles to remove its shields, then finish the later phases and recover its drops.",
+      "requires": [
+        "kill:twilightforest:naga"
+      ]
+    },
+    {
+      "id": "twilightforest:lich_trophy",
+      "title": "Three Roads Open",
+      "desc": "Keep a boss trophy for a Stronghold pedestal. After the Lich, the swamp, Dark Forest and snowy routes can be pursued independently.",
+      "requires": [
+        "kill:twilightforest:lich"
+      ]
+    },
+    {
+      "id": "kill:twilightforest:minoshroom",
+      "title": "Below the Swamp",
+      "desc": "Descend through a Labyrinth in the Twilight Swamp and defeat the Minoshroom. Search its chamber for the food needed to advance into the Fire Swamp.",
+      "requires": [
+        "kill:twilightforest:lich"
+      ]
+    },
+    {
+      "id": "twilightforest:meef_stroganoff",
+      "title": "The Meal That Opens the Marsh",
+      "desc": "Collect and eat Meef Stroganoff from the Labyrinth. Holding the bowl completes this item task; eating it is what advances the mod's own swamp progression.",
+      "requires": [
+        "kill:twilightforest:minoshroom"
+      ]
+    },
+    {
+      "id": "kill:twilightforest:hydra",
+      "title": "Beyond the Burning Trees",
+      "desc": "Once the meal advancement is complete, enter the Fire Swamp and challenge the Hydra. Attack its vulnerable mouths during their openings.",
+      "requires": [
+        "twilightforest:meef_stroganoff"
+      ]
+    },
+    {
+      "id": "twilightforest:fiery_ingot",
+      "title": "Work the Fiery Vials",
+      "desc": "Use fiery blood or fiery tears with iron according to the recipe viewer. These materials also come from the Dark Tower route, so neither route requires the other.",
+      "requires": [
+        "kill:twilightforest:hydra"
+      ]
+    },
+    {
+      "id": "kill:twilightforest:knight_phantom",
+      "title": "The Stronghold's Guardians",
+      "desc": "Place a boss trophy on the existing Stronghold pedestal to open its shield. Descend into the Stronghold and clear the Knight Phantom encounter.",
+      "requires": [
+        "twilightforest:lich_trophy"
+      ]
+    },
+    {
+      "id": "twilightforest:knightmetal_ingot",
+      "title": "Reforge the Stronghold's Shards",
+      "desc": "Gather armor shards in the Stronghold, assemble clusters and smelt them into knightmetal. Build the equipment you want before tackling the tower.",
+      "requires": [
+        "kill:twilightforest:knight_phantom"
+      ]
+    },
+    {
+      "id": "kill:twilightforest:ur_ghast",
+      "title": "Atop the Dark Tower",
+      "desc": "Climb the Dark Tower and use its Ghast Traps during the rooftop fight. Defeat the Ur-Ghast and collect the trophy and tears.",
+      "requires": [
+        "kill:twilightforest:knight_phantom"
+      ]
+    },
+    {
+      "id": "kill:twilightforest:alpha_yeti",
+      "title": "The Snowy Branch",
+      "desc": "Locate a Yeti Lair after the Lich and defeat its Alpha Yeti. Collect the fur so the forest records the snowy progression milestone.",
+      "requires": [
+        "kill:twilightforest:lich"
+      ]
+    },
+    {
+      "id": "twilightforest:alpha_yeti_fur",
+      "title": "Warmth for the Glacier",
+      "desc": "Turn the Alpha Yeti's fur into equipment for the glacier expedition. Collecting the fur advances the snowy route and prepares you for the Aurora Palace.",
+      "requires": [
+        "kill:twilightforest:alpha_yeti"
+      ]
+    },
+    {
+      "id": "kill:twilightforest:snow_queen",
+      "title": "The Aurora Palace",
+      "desc": "Climb the Aurora Palace and defeat the Snow Queen. This completes the glacier branch alongside the Hydra and Ur-Ghast routes.",
+      "requires": [
+        "twilightforest:alpha_yeti_fur"
+      ]
+    },
+    {
+      "id": "twilightforest:lamp_of_cinders",
+      "title": "The Three Paths Rejoin",
+      "desc": "With the three branches complete, explore the Highlands, giant clouds and Troll Caves for the Lamp of Cinders. It clears the thorn barrier; Final Castle completion varies with mod version.",
+      "requires": [
+        "kill:twilightforest:hydra",
+        "kill:twilightforest:ur_ghast",
+        "kill:twilightforest:snow_queen"
+      ]
+    }
+  ],
+  "collections": [],
+  "sources": [
+    "https://github.com/TeamTwilight/twilightforest",
+    "https://benimatic.com/tfwiki/index.php?title=Progression"
+  ],
+  "content_revision": "2026-10-07: explicit branches, operational guidance, no collection filler",
+  "coverage": {
+    "status": "curated",
+    "scope": "Portal, mapmaking, the three independent post-Lich boss routes, and their Highlands convergence.",
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "verification": "installed_jar_data",
+    "checked_date": "2026-10-07",
+    "reference_version": "4.3.2145",
+    "installed_pack_verified": true,
+    "gameplay_tested": false,
+    "limitations": "Targets the 1.20.1 boss advancement graph. Item tasks do not detect eating or placing; descriptions explicitly explain those in-world actions. Final Castle content is not treated as a finished boss encounter.",
+    "verification_detail": "Item models, entity language identifiers, dimension data, recipes and bundled guide text where present were inspected; this is data verification, not a Minecraft playthrough."
   },
-  {
-   "id": "twilightforest:raven_feather",
-   "title": "Black Feather, Small Bird",
-   "desc": "Ravens perch in the canopy and inside twilight forest houses. Their feathers are the first ingredient of every magic map you will ever draw."
-  },
-  {
-   "id": "twilightforest:magic_map_focus",
-   "title": "A Lens for the Wood",
-   "desc": "Raven feather, torchberries and glowstone dust. Wrapped in paper it becomes a map that reveals structures rather than terrain."
-  },
-  {
-   "id": "kill:twilightforest:naga",
-   "title": "The Coiled Serpent",
-   "desc": "The Naga circles its scale-walled courtyard in straight charges. Break each charge and it sheds armour in phases until it dies."
-  },
-  {
-   "id": "twilightforest:naga_chestplate",
-   "title": "Scales Turned Outward",
-   "desc": "Naga scales stitched into a tunic. It carries more durability than any comparable early armour and marks the first boss as beaten."
-  },
-  {
-   "id": "kill:twilightforest:lich",
-   "title": "The Tower Falls Quiet",
-   "desc": "The Lich hides behind orbiting shield orbs; reflect his bolts back with a sword to strip them, then chase him through his summoned minions."
-  },
-  {
-   "id": "twilightforest:twilight_scepter",
-   "title": "Bolts of Dusk",
-   "desc": "Dropped by the Lich. It fires homing bursts of twilight magic and recharges from ender pearls in the crafting grid."
-  },
-  {
-   "id": "twilightforest:lich_trophy",
-   "title": "Head on the Wall",
-   "desc": "The Lich's trophy. Mounted on a trophy pedestal it becomes the key to the next tier of the forest, not merely a decoration."
-  },
-  {
-   "id": "twilightforest:liveroot",
-   "title": "Roots That Still Breathe",
-   "desc": "Chop the pale root blocks knotted into hollow hills and twilight oaks. Liveroot is the organic half of ironwood."
-  },
-  {
-   "id": "twilightforest:ironwood_ingot",
-   "title": "Wood Made Metal",
-   "desc": "Liveroot, raw iron and a gold nugget bound into raw ironwood, then smelted. The finished gear slowly repairs itself while carried."
-  },
-  {
-   "id": "twilightforest:maze_map_focus",
-   "title": "Reading the Labyrinth",
-   "desc": "Found in labyrinth and maze chests. It draws a map that cuts through stone to show corridors, and it is also the core of the uncrafting table."
-  },
-  {
-   "id": "kill:twilightforest:minoshroom",
-   "title": "Bull in the Maze",
-   "desc": "The Minoshroom guards the heart of the Labyrinth beneath the swamp, charging down its long halls. It drops the raw meef nobody else carries."
-  },
-  {
-   "id": "twilightforest:meef_stroganoff",
-   "title": "Bowl of the Bullslayer",
-   "desc": "Cooked meef, a bowl and mushrooms. Eating it is the game's own recorded proof that the Labyrinth has been cleared."
-  },
-  {
-   "id": "twilightforest:steeleaf_ingot",
-   "title": "Green Metal",
-   "desc": "Dropped by the Labyrinth's kobolds and hoarded in its vaults. Steeleaf tools swing faster than diamond and armour up the whole set."
-  },
-  {
-   "id": "kill:twilightforest:hydra",
-   "title": "Three Heads, Then More",
-   "desc": "The Hydra squats in its lair breathing fire and lobbing mortars. Sever the heads faster than the stumps regrow or the fight never ends."
-  },
-  {
-   "id": "twilightforest:fiery_ingot",
-   "title": "Blood Poured into Iron",
-   "desc": "The Hydra's fiery blood and tears, forged together with an iron ingot. Fiery gear sets alight whatever it touches."
-  },
-  {
-   "id": "twilightforest:trophy_pedestal",
-   "title": "Claiming the Kill",
-   "desc": "Set a boss trophy on this pedestal and stand on it yourself; the game then formally advances your forest progression to the next gate."
-  },
-  {
-   "id": "kill:twilightforest:knight_phantom",
-   "title": "Armour Without a Body",
-   "desc": "The Knight Phantom rides through the Goblin Knight Stronghold in an empty suit, spawning phantom lances as its health falls."
-  },
-  {
-   "id": "twilightforest:knightmetal_ingot",
-   "title": "Shards Reforged",
-   "desc": "Armour shards from the stronghold's goblins, clustered nine at a time and smelted. It makes the block-and-chain and a shield that never dulls."
-  },
-  {
-   "id": "twilightforest:carminite",
-   "title": "Redstone Given Malice",
-   "desc": "Borer essence from towerwood borers, ghast tears and redstone. It powers the reactors and vanishing blocks that open the Dark Tower's sealed rooms."
-  },
-  {
-   "id": "kill:twilightforest:ur_ghast",
-   "title": "The Weeping Tower",
-   "desc": "The Ur-Ghast hovers above the Dark Tower's roof, raining fire and summoning ghastlings. Its tears are the payment for the climb."
-  },
-  {
-   "id": "kill:twilightforest:alpha_yeti",
-   "title": "White Fury in the Caves",
-   "desc": "The Alpha Yeti hurls you around its ice cave. Its fur is the only material that lets you survive the glacier waiting above."
-  },
-  {
-   "id": "kill:twilightforest:snow_queen",
-   "title": "The Aurora Throne",
-   "desc": "The Snow Queen drops from the ceiling of the Aurora Palace between ice-shard barrages. She is the last boss the glacier holds."
-  },
-  {
-   "id": "twilightforest:experiment_115",
-   "title": "Something Left Cooking",
-   "desc": "A block of pale cake abandoned in the Goblin Knight Stronghold's laboratory. Eat it in slices, and placed back down it regrows itself."
-  }
- ],
- "collections": [
-  {
-   "hub": "twilightforest:lich_trophy",
-   "members": [
-    "twilightforest:naga_trophy",
-    "twilightforest:minoshroom_trophy",
-    "twilightforest:hydra_trophy",
-    "twilightforest:knight_phantom_trophy",
-    "twilightforest:ur_ghast_trophy",
-    "twilightforest:alpha_yeti_trophy",
-    "twilightforest:snow_queen_trophy",
-    "twilightforest:quest_ram_trophy"
-   ]
-  },
-  {
-   "hub": "twilightforest:knightmetal_ingot",
-   "members": [
-    "twilightforest:ironwood_ingot",
-    "twilightforest:steeleaf_ingot",
-    "twilightforest:fiery_ingot",
-    "twilightforest:carminite",
-    "twilightforest:naga_scale",
-    "twilightforest:alpha_yeti_fur",
-    "twilightforest:arctic_fur",
-    "twilightforest:armor_shard_cluster",
-    "twilightforest:liveroot"
-   ]
-  },
-  {
-   "hub": "twilightforest:twilight_scepter",
-   "members": [
-    "twilightforest:lifedrain_scepter",
-    "twilightforest:zombie_scepter",
-    "twilightforest:fortification_scepter",
-    "twilightforest:moonworm_queen",
-    "twilightforest:crumble_horn",
-    "twilightforest:ore_magnet",
-    "twilightforest:transformation_powder",
-    "twilightforest:cube_of_annihilation",
-    "twilightforest:charm_of_life_1",
-    "twilightforest:charm_of_keeping_1"
-   ]
-  }
- ],
- "notes": "Verified against twilightforest-1.20.1-4.3.2508-universal.jar. Every item id resolves to assets/twilightforest/models/item/<id>.json; every kill: target is a real entity key in assets/twilightforest/lang/en_us.json (naga, lich, minoshroom, hydra, knight_phantom, ur_ghast, alpha_yeti, snow_queen); the dimension id is confirmed by data/twilightforest/dimension/twilight_forest.json. The spine order is not guessed - it is lifted from the mod's own advancement graph in data/twilightforest/advancements/: root (portal) -> progress_naga -> progress_lich, which then branches to progress_trophy_pedestal, progress_labyrinth and progress_yeti; progress_labyrinth -> progress_hydra; progress_trophy_pedestal -> progress_knights -> ghast_trap -> progress_ur_ghast; progress_yeti -> progress_glacier; then progress_merge -> troll -> progression_end, with experiment_115 hanging off progress_knights. Two non-obvious details are confirmed there: progress_labyrinth's real criterion is EATING twilightforest:meef_stroganoff (so it is Minoshroom-gated), and progress_knights is gated on progress_trophy_pedestal - which is why trophy_pedestal appears in the chain as a real step rather than decor. Intermediate crafts verified from data/twilightforest/recipes/: magic_map_focus = raven_feather + torchberries + glowstone dust; magic_map = paper + magic_map_focus; raw_ironwood = liveroot + raw_iron + gold nugget, then smelted or blasted to ironwood_ingot; knightmetal_ingot smelted from armor_shard_cluster; fiery_ingot = a fiery vial (fiery_blood / fiery_tears) + an iron ingot; carminite = borer_essence + redstone + ghast_tear. Carminite is placed BEFORE the Ur-Ghast on purpose: it is the Dark Tower's internal progression material (carminite_reactor, carminite_builder, vanishing_block), not a boss drop. PACK CONSENSUS: every high-count moddb twilightforest entry appears here in the chain or a wheel - lich_trophy (7 packs), naga_trophy (6), twilight_scepter (5), naga_chestplate (5), magic_map_focus (4), magic_map (4), steeleaf_helmet (4), raven_feather (3), naga_scale (3), transformation_powder (3), charm_of_life_1/2, ore_magnet, uncrafting_table, quest_ram_trophy. NO consensus item contradicted the advancement graph - the packs and the mod agree on this spine. Chain slots were tight at 24, so these consensus items were routed into collection wheels instead of the spine: naga_scale, every non-Lich trophy, the other three scepters, transformation_powder, ore_magnet, charm_of_life_1, charm_of_keeping_1. Consensus items deliberately left out entirely (verified present in the jar, safe as optional quests): glass_sword, ender_bow, ice_bow, ice_sword, uncrafting_table, naga_banner_pattern, lich_banner_pattern, minoshroom_banner_pattern, raw_venison, lich_tower_miniature_structure, ironwood_helmet, fiery_chestplate, steeleaf_helmet. ID CAUTION: twilightforest:magic_map is the BLANK map and twilightforest:filled_magic_map is the drawn one (same for maze_map / filled_maze_map and ore_map / filled_ore_map). moddb's consensus id is the blank craftable, which is what a craft-this task should target; the advancements instead check the filled_* variants. DROPPED: none - every id in this file verified."
+  "notes": "Each requires list is intentional. Empty lists are independent entry routes. Links describe guided progression or demonstrated recipe/boss gates, not an assertion that every dependency is a game-enforced lock. Runtime scanning still filters unavailable items and entities.",
+  "verified_against": "twilightforest-1.20.1-4.3.2145-universal.jar (manifest 4.3.2145)",
+  "item_count_in_jar": 887
 }

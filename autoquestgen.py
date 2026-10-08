@@ -51,7 +51,7 @@ except Exception:  # pragma: no cover
 
 APP_NAME = "AutoQuestGen"          # release-audit naming: quest books FOR FTB Quests,
                                    # but no FTB/Minecraft in the app's own name
-VERSION = "7.5"
+VERSION = "7.13"
 CREDIT_LINE = "Created by antidqrk  ·  Built with Claude (Anthropic)"
 HERE = Path(__file__).parent
 
@@ -539,6 +539,12 @@ def _reward(raw: dict, seed: str, warn, tables=None) -> dict | None:
     t = str(raw.get("type", "item")).lower()
     rid = ftb_id(seed, "reward", json.dumps(raw, sort_keys=True, default=str))
     out = {"id": rid, "type": t}
+    if raw.get("_shop_bonus") == "autoquestgen" and _HEXID_RE.fullmatch(str(raw.get("id", ""))):
+        out["id"] = _safe_hexid(raw["id"])
+    if "team_reward" in raw:
+        out["team_reward"] = bool(raw["team_reward"])
+    if raw.get("auto") in ("disabled", "enabled", "invisible"):
+        out["auto"] = raw["auto"]
 
     if t == "item":
         item = raw.get("item") or raw.get("target")
@@ -598,6 +604,45 @@ def _reward(raw: dict, seed: str, warn, tables=None) -> dict | None:
     return None
 
 
+def _combine_quest_xp_rewards(rewards: list) -> list:
+    """Combine converted direct XP rewards without changing their total.
+
+    Weighted table entries are alternatives, so this only runs on a quest's
+    guaranteed rewards. Keep the first ID and position of each XP type;
+    every other reward, including item NBT and table references, is untouched.
+    """
+    combined, first = [], {}
+    for reward in rewards:
+        kind = reward.get("type")
+        if kind not in ("xp", "xp_levels"):
+            combined.append(reward)
+        elif kind in first:
+            combined[first[kind]][kind] += reward[kind]
+        else:
+            first[kind] = len(combined)
+            combined.append(dict(reward))
+    return combined
+
+
+def _unique_child_ids(children: list, seed: str, kind: str) -> list:
+    """Keep repeated objectives/rewards while giving every occurrence an ID.
+
+    Content hashing alone gives identical children identical IDs. FTB stores
+    tasks by ID, so later copies otherwise overwrite earlier objectives.
+    Preserve the first ID and all unrelated IDs to keep existing progress.
+    """
+    used = set()
+    for child in children:
+        original = child["id"]
+        candidate, occurrence = original, 1
+        while candidate in used:
+            candidate = ftb_id(seed, kind, original, "duplicate", str(occurrence))
+            occurrence += 1
+        child["id"] = candidate
+        used.add(candidate)
+    return children
+
+
 # ---- reward tables -------------------------------------------------------- #
 
 def build_reward_tables(doc: dict, warn):
@@ -608,7 +653,6 @@ def build_reward_tables(doc: dict, warn):
     for i, rt in enumerate(raw):
         key = str(rt.get("id") or rt.get("name") or ("table_%d" % i))
         hex_id = ftb_id("rewardtable/" + key)
-        key_to_hex[key] = hex_id
         slug = slugify(key)
         while slug in used:
             slug += "_"
@@ -635,6 +679,8 @@ def build_reward_tables(doc: dict, warn):
                 entries.append(ent)
         if not entries:
             continue
+        _unique_child_ids(entries, "table/" + key, "reward")
+        key_to_hex[key] = hex_id
         table = {
             "id": hex_id,
             "order_index": i,
@@ -650,7 +696,18 @@ def build_reward_tables(doc: dict, warn):
     return files, key_to_hex
 
 
-def _quest(raw: dict, chapter_seed: str, id_map: dict, warn, tables=None) -> dict:
+def _verified_quest_icon(icon, scan: dict | None = None) -> str | None:
+    """Only item IDs verified for this pack can override a quest's task icon."""
+    if not isinstance(icon, str) or not _RESLOC_RE.fullmatch(icon):
+        return None
+    scan = scan or {}
+    vanilla = scan.get("vanilla") or _VANILLA_ITEM_SET
+    if icon in vanilla or any(icon in items for items in (scan.get("items") or {}).values()):
+        return icon
+    return None
+
+
+def _quest(raw: dict, chapter_seed: str, id_map: dict, warn, tables=None, scan=None) -> dict:
     tables = tables or {}
     # Prefer the key the id_map pass assigned. It disambiguates duplicates and
     # anonymous quests, which otherwise all keyed on the string "None" and
@@ -660,6 +717,15 @@ def _quest(raw: dict, chapter_seed: str, id_map: dict, warn, tables=None) -> dic
     if qkey not in id_map:
         id_map[qkey] = qid_for(chapter_seed, qkey)
     q = {"id": id_map[qkey]}
+    if "can_repeat" in raw:
+        q["can_repeat"] = bool(raw["can_repeat"])
+    if "repeat_cooldown" in raw:
+        q["repeat_cooldown"] = max(0, _int_of(raw["repeat_cooldown"], 0))
+    icon = _verified_quest_icon(raw.get("icon"), scan)
+    if icon:
+        q["icon"] = icon
+    elif raw.get("icon"):
+        warn("quest %r: unverified item icon skipped" % qkey)
     if raw.get("title"):
         q["title"] = _txt(raw["title"])
     if raw.get("subtitle"):
@@ -696,14 +762,14 @@ def _quest(raw: dict, chapter_seed: str, id_map: dict, warn, tables=None) -> dic
             tasks.append(ct)
     if not tasks:
         tasks = [{"id": ftb_id(seed, "task", "fallback"), "type": "checkmark"}]
-    q["tasks"] = tasks
+    q["tasks"] = _unique_child_ids(tasks, seed, "task")
     rewards = []
     for rr in raw.get("rewards", []) or []:
         cr = _reward(rr, seed, warn, tables)
         if cr:
             rewards.append(cr)
     if rewards:
-        q["rewards"] = rewards
+        q["rewards"] = _unique_child_ids(_combine_quest_xp_rewards(rewards), seed, "reward")
     if raw.get("optional"):
         q["optional"] = True
     if raw.get("min_required_dependencies") is not None:
@@ -724,8 +790,9 @@ def _chapter_icon(raw_chapter: dict, quests: list) -> str:
 # ---- layout engine ----------------------------------------------------- #
 
 LAYOUTS = ["line", "tree", "radial", "spiral", "clusters", "spread",
-           "lanes", "rosette", "matrix", "spine", "ai", "ai+tidy"]
-LAYOUT_HIDE_LINES = {"radial", "spiral", "clusters"}
+           "lanes", "rosette", "matrix", "spine", "reference", "ai", "ai+tidy"]
+OFFLINE_LAYOUTS = [layout for layout in LAYOUTS if layout not in ("ai", "ai+tidy")]
+LAYOUT_HIDE_LINES = set()  # Dependencies stay visible in every generated map.
 
 
 def break_dep_cycles(chapters, warn=None) -> int:
@@ -938,205 +1005,15 @@ def _shorten_links(pos, quests, in_ids, max_len=6.5, rounds=14):
 
 
 def layout_positions(quests, style, jitter, seed):
-    """Return {quest_id: (x, y)} for a chapter, or None to keep AI coordinates."""
+    """Route actual dependency branches without changing the quest graph."""
+    from quest_layout import authored_positions, layout
     if not quests:
         return None
-    ids = [q["id"] for q in quests]
-    in_ids = set(ids)
-    rank = _dep_levels(quests, in_ids)
-    rng = random.Random(seed)
-    j = jitter
-    # Which quest sits where WITHIN a rank was previously ids.index() - the
-    # order they happened to be built in - so a chapter drew itself the same
-    # way on every run and "generate again" produced a book the user could not
-    # tell apart. Rank still decides the tier, so the progression a player
-    # reads is unchanged; only the seating inside a tier moves. Seeded, so the
-    # same seed still reproduces a book exactly.
-    tie = {qid: rng.random() for qid in ids}
-    ids = sorted(ids, key=lambda q: (rank[q], tie[q]))
-
-    def _given():
-        return {q["id"]: (float(q.get("x", 0) or 0), float(q.get("y", 0) or 0))
-                for q in quests}
-
-    def _degenerate(p):
-        """True when the supplied coordinates carry no information (everything
-        on one spot), which happens whenever the model didn't send x/y."""
-        return len({(round(x, 3), round(y, 3)) for x, y in p.values()}) < max(2, len(p) // 3)
-
     if style in ("ai", "ai+tidy"):
-        pos = _given()
-        if _degenerate(pos):
-            style = "spiral"        # nothing usable came back - lay it out ourselves
-        elif style == "ai+tidy":
-            return _declutter(pos, min_d=1.8)
-        else:
-            return None             # keep the model's coordinates as-is
-
-    pos = {}
-    if style == "line":
-        by_rank = {}
-        for qid in ids:
-            by_rank.setdefault(rank[qid], []).append(qid)
-        for rk, group in by_rank.items():
-            for k, qid in enumerate(group):
-                pos[qid] = (2.0 * rk + rng.uniform(-j, j),
-                            (k - (len(group) - 1) / 2) * 2.2 + rng.uniform(-j, j))
-
-    elif style == "tree":
-        by_rank = {}
-        for qid in ids:
-            by_rank.setdefault(rank[qid], []).append(qid)
-        for rk, group in by_rank.items():
-            for k, qid in enumerate(group):
-                pos[qid] = ((k - (len(group) - 1) / 2) * 2.5 + rng.uniform(-j, j),
-                            2.2 * rk + rng.uniform(-j, j))
-
-    elif style == "radial":
-        by_rank = {}
-        for qid in ids:
-            by_rank.setdefault(rank[qid], []).append(qid)
-        maxrk = max(by_rank) or 1
-        for rk, group in sorted(by_rank.items()):
-            radius = 0.0 if (rk == 0 and len(group) == 1) else 2.6 + 5.0 * (rk / maxrk) ** 0.85
-            for k, qid in enumerate(group):
-                ang = (k / max(1, len(group))) * math.tau + rk * 0.7
-                pos[qid] = (radius * math.cos(ang) + rng.uniform(-j, j),
-                            radius * math.sin(ang) + rng.uniform(-j, j))
-
-    elif style == "spiral":
-        # a real Archimedean spiral: one continuous arm winding outward,
-        # points spaced by roughly constant arc length so it reads as a spiral.
-        order = sorted(ids, key=lambda q: (rank[q], tie[q]))
-        ang = 3.4                      # start a little way out so the centre isn't a knot
-        b = 0.62                       # radial growth per radian
-        step_arc = 2.35                # spacing between consecutive quests
-        for qid in order:
-            r = b * ang
-            pos[qid] = (r * math.cos(ang) + rng.uniform(-j * 0.3, j * 0.3),
-                        r * math.sin(ang) + rng.uniform(-j * 0.3, j * 0.3))
-            ang += step_arc / max(r, 1.4)
-
-    elif style == "clusters":
-        # group quests that share a parent into a blob; lay the blobs out by rank
-        deps = {q["id"]: [d for d in (q.get("dependencies") or []) if d in in_ids] for q in quests}
-        anchor = {}
-        for qid in ids:
-            anchor[qid] = deps[qid][0] if deps.get(qid) else "__root__"
-        blobs = {}
-        for qid in ids:
-            blobs.setdefault(anchor[qid], []).append(qid)
-        brank = {}
-        for a, members in blobs.items():
-            brank[a] = min(rank[m] for m in members)
-        by_br = {}
-        for a in blobs:
-            by_br.setdefault(brank[a], []).append(a)
-        for rk, alist in sorted(by_br.items()):
-            for bi, a in enumerate(alist):
-                grp = blobs[a]
-                gx = 3.4 * rk
-                gy = (bi - (len(alist) - 1) / 2) * 4.0
-                for k, qid in enumerate(grp):
-                    if len(grp) == 1:
-                        dx = dy = 0.0
-                    else:
-                        ang2 = (k / len(grp)) * math.tau
-                        rr = 1.05 + 0.6 * (len(grp) > 3)
-                        dx, dy = rr * math.cos(ang2), rr * math.sin(ang2)
-                    pos[qid] = (gx + dx + rng.uniform(-j * 0.3, j * 0.3),
-                                gy + dy + rng.uniform(-j * 0.3, j * 0.3))
-        _declutter(pos, min_d=1.7)
-
-    elif style == "lanes":
-        # Arcanum's parallel-track chapters: the opening quest fans into a few
-        # lanes that run side by side and converge again at the finale. Reads as
-        # "pick your route", which a single chain never does.
-        order = sorted(ids, key=lambda q: (rank[q], tie[q]))
-        head, tail = order[:1], order[-1:] if len(order) > 4 else []
-        body = order[len(head):len(order) - len(tail)]
-        nlane = 3 if len(body) >= 9 else (2 if len(body) >= 4 else 1)
-        lane_y = [(k - (nlane - 1) / 2) * 4.2 for k in range(nlane)]
-        for qid in head:
-            pos[qid] = (0.0, 0.0)
-        cols = -(-len(body) // nlane) if body else 1
-        # CONTIGUOUS runs per lane. Round-robin (k % nlane) sent consecutive
-        # quests to different lanes, so every dependency line zig-zagged the
-        # full height of the chapter - the spaghetti in the screenshot.
-        for k, qid in enumerate(body):
-            lane, col = k // cols, k % cols
-            lane = min(lane, nlane - 1)
-            pos[qid] = (3.0 + 2.6 * col + rng.uniform(-j * 0.2, j * 0.2),
-                        lane_y[lane] + rng.uniform(-j * 0.2, j * 0.2))
-        for qid in tail:
-            pos[qid] = (3.0 + 2.6 * cols + 2.2, 0.0)
-
-    elif style == "rosette":
-        # the repeating flower motif: a hub quest ringed by its follow-ups. Only
-        # quests that actually branch become hubs - ringing a 1-child node just
-        # redraws a chain - and a hub already placed as someone's satellite is
-        # ringed where it really sits, not where its grid cell would be.
-        deps = {q["id"]: [d for d in (q.get("dependencies") or []) if d in in_ids]
-                for q in quests}
-        kids = {}
-        for qid in ids:
-            if deps.get(qid):
-                kids.setdefault(deps[qid][0], []).append(qid)
-        hubs = [q for q in sorted(ids, key=lambda z: (rank[z], tie[z]))
-                if len(kids.get(q, ())) >= 2]
-        if not hubs:                       # nothing branches - a ring per chapter
-            hubs = sorted(ids, key=lambda z: rank[z])[:1]
-        per_row = max(1, int(math.ceil(len(hubs) ** 0.5)))
-        PITCH = 9.0
-        cell = 0
-        for hub in hubs:
-            if hub not in pos:
-                pos[hub] = ((cell % per_row) * PITCH, (cell // per_row) * PITCH)
-                cell += 1
-            hx, hy = pos[hub]
-            ring = [k for k in kids.get(hub, []) if k not in pos]
-            for k, qid in enumerate(ring):
-                ang = (k / max(1, len(ring))) * math.tau - math.pi / 2
-                rr = 2.4 if len(ring) <= 6 else 3.2
-                pos[qid] = (hx + rr * math.cos(ang), hy + rr * math.sin(ang))
-        loose = [q for q in sorted(ids, key=lambda z: rank[z]) if q not in pos]
-        base = ((cell // per_row) + 1) * PITCH
-        for k, qid in enumerate(loose):
-            pos[qid] = ((k % per_row) * PITCH, base + (k // per_row) * PITCH)
-        _declutter(pos, min_d=1.7)
-
-    elif style == "matrix":
-        # the dense collection grid: tidy rows, one tier per row, so a long
-        # "get one of each" chapter reads as a table instead of a sprawl.
-        order = sorted(ids, key=lambda q: (rank[q], tie[q]))
-        width = max(4, min(8, int(round(len(order) ** 0.5)) + 1))
-        for k, qid in enumerate(order):
-            pos[qid] = (1.9 * (k % width), 1.9 * (k // width))
-
-    elif style == "spine":
-        # a long horizontal backbone with side-branches, like Arcanum's main
-        # progression map: the critical path is obvious, extras hang off it.
-        by_rank = {}
-        for qid in ids:
-            by_rank.setdefault(rank[qid], []).append(qid)
-        for rk, group in sorted(by_rank.items()):
-            pos[group[0]] = (2.8 * rk, 0.0)
-            for k, qid in enumerate(group[1:]):
-                side = 1 if k % 2 == 0 else -1
-                step = 1 + k // 2
-                pos[qid] = (2.8 * rk + rng.uniform(-j * 0.2, j * 0.2), side * 2.3 * step)
-
-    elif style == "spread":
-        by_rank = {}
-        for qid in ids:
-            by_rank.setdefault(rank[qid], []).append(qid)
-        for rk, group in by_rank.items():
-            for k, qid in enumerate(group):
-                pos[qid] = (2.4 * rk + rng.uniform(-1.2, 1.2),
-                            (k - (len(group) - 1) / 2) * 2.4 + rng.uniform(-1.2, 1.2))
-        _declutter(pos, min_d=2.1)
-
-    return _shorten_links(pos, quests, in_ids)
+        given = authored_positions(quests)
+        if given is not None:
+            return given if style == "ai+tidy" else None
+    return layout(quests, style, jitter, seed)
 
 
 # The aesthetic setting, as NUMBERS the offline builder can act on.
@@ -1175,7 +1052,7 @@ def layout_positions(quests, style, jitter, seed):
 AESTHETIC_LEVELS = {
     "minimal": {
         "panel": 0, "field": 0, "motifs": 0, "panel_alpha": 0,
-        "images": 0, "shapes": False, "desc_lines": 0,
+        "images": 0, "shapes": False, "desc_lines": 1,
         "prompt": "Keep quest text short. Plain functional icons. Few decorative items.",
     },
     "balanced": {
@@ -1557,9 +1434,9 @@ def _group_title(plain: str, code: str, idx: int, style: str) -> str:
     if style == "bracket":
         return "&%s&l[ %s ]" % (code, name.upper())
     if style == "stage":
-        return "&%s&l&n-=[ %s ]=-" % (code, name.upper())
+        return "&%s&l[ %02d | %s ]" % (code, idx + 1, name.upper())
     if style == "rule":
-        return "&%s&l&n%s" % (code, name)
+        return "&%s&l&n--- %s ---" % (code, name)
     return "&%s&l%s" % (code, name)
 
 
@@ -1692,8 +1569,9 @@ def _size_hierarchy(quests: list) -> None:
              if not any(d in ids for d in (q.get("dependencies") or []))]
     entry = max(roots, key=lambda q: (fanout.get(q["id"], 0),
                                       -quests.index(q))) if roots else None
-    finals = [q for q in quests if q["id"] not in fanout]
-    last = finals[-1]["id"] if finals else None
+    finals = [q for q in quests if q["id"] not in fanout and not q.get("optional")]
+    rank = _dep_levels(quests, ids)
+    last = max(finals, key=lambda q: rank[q["id"]])["id"] if finals else None
     for q in quests:
         if q.get("size"):
             continue
@@ -1702,6 +1580,62 @@ def _size_hierarchy(quests: list) -> None:
         elif (q["id"] == last and len(quests) >= 10
               and not (entry is not None and last == entry["id"])):
             q["size"] = 1.25
+
+
+def _apply_quest_sizes(quests: list, style="varied", landmarks=()) -> None:
+    """Make actual quest footprints communicate progression, before layout.
+
+    This never changes objectives, amounts, IDs or prerequisite edges. Original
+    authored sizes survive only in preserve mode; uniform is genuinely uniform.
+    """
+    if style == "preserve" or not quests:
+        return
+    if style == "uniform":
+        for quest in quests:
+            quest["size"] = _Double(1.0)
+        return
+    support, normal, major, capstone = (.85, 1.0, 1.55, 2.2) if style == "dramatic" else (.9, 1.0, 1.4, 1.9)
+    ids = {q["id"] for q in quests}
+    owners = {t.get("id"): q["id"] for q in quests for t in q.get("tasks", []) if t.get("id")}
+    deps = {q["id"]: {owners.get(d, d) for d in q.get("dependencies", []) if owners.get(d, d) in ids} for q in quests}
+    fanout = collections.Counter(parent for parents in deps.values() for parent in parents)
+    graph = [dict(q, dependencies=list(deps[q["id"]])) for q in quests]
+    ranks = _dep_levels(graph, ids)
+    material = re.compile(r"(?:^|_)(?:raw|ingot|nugget|dust|ore|log|planks?|petal|seed|dye|circuit|processor|component|plate|wire|gear)(?:_|$)")
+    equipment = re.compile(r"(?:^|_)(?:reactor|controller|assembler|crafter|generator|furnace|crusher|compressor|centrifuge|turbine|altar|pylon|portal|pool|spreader|jetpack|chestplate|sword|pickaxe|staff|wand|spellbook|spell_book|terminal|drive|storage|rocket|ring|amulet)(?:_|$)")
+    meaningful = {}
+    routine = {}
+    for q in quests:
+        items = [t.get("item") for t in q.get("tasks", []) if t.get("type", "item") == "item"]
+        leaves = [(i.get("id", "") if isinstance(i, dict) else str(i or "")).split(":")[-1] for i in items]
+        kinds = {t.get("type", "item") for t in q.get("tasks", [])}
+        routine[q["id"]] = bool(leaves) and all(material.search(leaf) and not equipment.search(leaf) for leaf in leaves)
+        meaningful[q["id"]] = bool(kinds & {"kill", "dimension", "structure", "advancement"}) or any(equipment.search(leaf) and not material.search(leaf) for leaf in leaves)
+    caps = set(landmarks) & ids
+    # Existing explicit large authored goals remain recognizable when a user
+    # chooses a new scale, but incidental old 1.25/1.5 entry badges do not.
+    for q in quests:
+        try:
+            if float(q.get("size", 1)) >= 1.9 and not q.get("optional"):
+                caps.add(q["id"])
+        except (TypeError, ValueError):
+            pass
+    endings = [q for q in quests if deps[q["id"]] and not fanout[q["id"]] and not q.get("optional")]
+    if not caps and endings:
+        best = max(endings, key=lambda q: (meaningful[q["id"]], len(deps[q["id"]]) >= 2,
+                                           ranks[q["id"]], len(deps[q["id"]]), q["id"]))
+        caps.add(best["id"])
+    for q in quests:
+        key = q["id"]
+        if key in caps:
+            value = capstone
+        elif meaningful[key] or (not routine[key] and (len(deps[key]) >= 2 or fanout[key] >= 3)):
+            value = major
+        elif q.get("optional") or routine[key]:
+            value = support
+        else:
+            value = normal
+        q["size"] = _Double(value)
 
 
 def _bounds(pos_or_quests):
@@ -1716,6 +1650,14 @@ def _bounds(pos_or_quests):
     if not xs:
         return (-4, -4, 8, 8)
     return (min(xs), min(ys), max(xs) - min(xs), max(ys) - min(ys))
+
+
+def _stock_chapter_decor(ck, quests, level, shape, code):
+    """FTB's own shape art is portable and never borrows unrelated items."""
+    shape = shape if shape in _SHAPE_PANELS else "rsquare"
+    textures = ["ftbquests:textures/shapes/%s/outline.png" % s
+                for s in dict.fromkeys((shape, "diamond", "hexagon"))]
+    return _decor_images(ck, quests, textures, level, shape, code, len(quests))
 
 
 def _wheelify(quests: list, pos: dict, seed=None) -> None:
@@ -1863,28 +1805,13 @@ def _chapter_backdrop(ck: str, rc: dict, scan: dict, used: set, n: int = 1) -> l
 
 
 def _decor_images(ck, quests_or_pos, texs, lv, shape="", code="f", nq=0) -> list:
-    """A chapter's art, in three layers. -> list of FTBQ chapter-image dicts
+    """Generated chapter art using validated textures in three quiet layers.
 
-    `texs` are reslocs the caller has already sourced - harvested from a jar
-    this run by _chapter_backdrop, or the vanilla last resort. Nothing here
-    invents a path, because a path this function made up would render
-    purple-and-black with nothing upstream having checked it. The one exception
-    is the panel, and it comes from ftb-quests' own jar: if that texture were
-    missing the mod could not draw a quest.
-
-    `lv` is the AESTHETIC_LEVELS row. Each layer spends its own budget, so the
-    levels differ by WHAT is drawn and not only how much: minimal draws nothing,
-    balanced gets a tinted card and a couple of accents, decorated adds a tiled
-    floor, lavish fills the ring. This is where "lavish" stops being a word in
-    an AI prompt and becomes something the offline builder does.
-
-    The old version drew ONE image: the sourced texture stretched over the whole
-    chapter, 14 to 33 grid units across at up to 1:2.35. A 16px block texture at
-    that size is not a backdrop, it is a magnified pixel - the second half of
-    "it doesn't even fit". Tiling drops the median tile to 7.8 units at
-    decorated and 4.5 at lavish, and NOTHING this function emits is off 1:1
-    (measured across three packs, max aspect 1.000 at every level). The panel
-    underneath is what carries the colour the stretch used to be asked for."""
+    Minimal draws nothing; balanced adds a tinted panel and rim accents;
+    decorated and lavish add increasingly detailed outline fields. All images
+    stay square, and their opacity keeps quest nodes and dependency lines in
+    the foreground. Imported/authored art bypasses this helper entirely.
+    """
     bx, by, bw, bh = _bounds(quests_or_pos)
     cx, cy = bx + bw / 2, by + bh / 2
     pw, ph = max(bw + 6.0, 10.0), max(bh + 6.0, 10.0)
@@ -1897,23 +1824,16 @@ def _decor_images(ck, quests_or_pos, texs, lv, shape="", code="f", nq=0) -> list
             "width": _Double(round(w, 2)), "height": _Double(round(h, 2)),
             "rotation": _Double(float(rot)), "image": img,
             "alpha": int(alpha), "order": int(order),
+            "color": int(_CODE_HEX.get(code, "#ffffff")[1:], 16),
         })
 
-    # 1. PANEL. Tinted with the SAME code as the chapter's sidebar title, so the
-    # card and its name are one colour by construction - today those came off
-    # two unrelated wheels. FTBQ multiplies the icon by the colour, and the
-    # shape textures are pure white, so the tint lands exactly.
-    # The card is SQUARE and sized to contain the chapter, not sized to it: the
-    # shapes are gears, circles and pentagons, and a circle drawn into a 2.6:1
-    # chapter is an ellipse - the same "doesn't even fit" the stretched backdrop
-    # was. Containing it costs some tinted margin on a wide chapter, which at
-    # alpha 100 of 255 is a faint medallion behind the quests. Distortion has no
-    # equivalent excuse.
+    # 1. PANEL. Match the sidebar tint without painting over the map. Keep the
+    # stock shape square so circles/gears remain undistorted on wide chapters.
     if lv.get("panel"):
         sh = shape if shape in _SHAPE_PANELS else "rsquare"
         side = max(pw, ph)
         add("ftbquests:textures/shapes/%s/background.png" % sh,
-            cx, cy, side, side, lv.get("panel_alpha", 100), -20)
+            cx, cy, side, side, min(50, lv.get("panel_alpha", 100)), -20)
         out[-1]["color"] = int(_CODE_HEX.get(code, "#ffffff")[1:], 16)
 
     if not texs:
@@ -1925,12 +1845,8 @@ def _decor_images(ck, quests_or_pos, texs, lv, shape="", code="f", nq=0) -> list
     # average lands at 22.2 images per chapter and not the nominal 24.
     room = 3 + 2 * nq
 
-    # 2. FIELD. Every tile is SQUARE, because every harvested texture is square
-    # (the scan rejects w != h) and a square source drawn into a rectangle is
-    # precisely the squash the user is looking at. So the grid is sized off the
-    # budget and the tiles keep 1:1 even where that leaves the last row short -
-    # a floor that stops is fine, a stretched brick is not. Two or three
-    # textures alternate so it reads as a floor rather than as a repeat.
+    # 2. FIELD. Faint square outlines provide texture behind the graph. Keep
+    # them quieter than dependency lines, especially on a bright chapter tint.
     nf = min(int(lv.get("field", 0)), max(0, room - len(out)))
     if nf:
         tile = math.sqrt(pw * ph / nf)
@@ -1942,24 +1858,29 @@ def _decor_images(ck, quests_or_pos, texs, lv, shape="", code="f", nq=0) -> list
                 break
             add(texs[k % min(3, len(texs))],
                 fx + tile * (c + 0.5), fy + tile * (r + 0.5),
-                tile, tile, 55, -12)
+                tile, tile, 36, -12)
 
-    # 3. MOTIFS, opaque and at icon scale, ringed OUTSIDE the quests. Real packs
-    # do not fade their art - alpha was 255 on 4,265 of 4,383 corpus images;
-    # only backdrops are faint. The radius is the circumscribed one plus a
-    # margin, so a motif cannot land under a quest node whatever the aspect
-    # ratio. Rotations follow the corpus histogram (0 x3580, 22 x230, 90 x162,
-    # 45 x133, -90 x111, 180 x73) rather than being sprinkled at random.
+    # 3. Small outline accents frame the map. The previous circumscribed
+    # circle put decorative blocks far outside long chapters and doubled the
+    # area a player had to zoom out to see. Follow the rectangular perimeter
+    # instead, keeping every accent beyond the outer quest icons.
     nm = min(int(lv.get("motifs", 0)), max(0, room - len(out)))
     if nm:
-        rad = math.hypot(pw, ph) / 2 + 2.5
-        rots = (0.0, 0.0, 0.0, 0.0, 22.0, 45.0, 90.0, -90.0, 180.0)
+        frame_w, frame_h = bw + 5.0, bh + 5.0
+        perimeter = 2.0 * (frame_w + frame_h)
         seed = int(ftb_id(ck), 16)
         for i in range(nm):
-            ang = (i / nm) * math.tau - math.pi / 2
-            t = texs[(seed + i) % len(texs)]
-            add(t, cx + rad * math.cos(ang), cy + rad * math.sin(ang),
-                2.0, 2.0, 255, 0, rots[(seed + i * 7) % len(rots)])
+            travel = (i + 0.5) * perimeter / nm
+            if travel < frame_w:
+                mx, my = cx - frame_w / 2 + travel, cy - frame_h / 2
+            elif travel < frame_w + frame_h:
+                mx, my = cx + frame_w / 2, cy - frame_h / 2 + travel - frame_w
+            elif travel < 2 * frame_w + frame_h:
+                mx, my = cx + frame_w / 2 - (travel - frame_w - frame_h), cy + frame_h / 2
+            else:
+                mx, my = cx - frame_w / 2, cy + frame_h / 2 - (travel - 2 * frame_w - frame_h)
+            add(texs[(seed + i) % len(texs)], mx, my,
+                0.9, 0.9, 160, -1)
     return out
 
 
@@ -2011,6 +1932,19 @@ def _dedupe_titles(out: list, scan: dict, warn) -> int:
                     break
             label = _mod_display_name(ns, scan) if ns else ""
             cand = "%s (%s)" % (t, label) if label and label.lower() not in t.lower() else ""
+            if not cand or cand in seen:
+                # Same mod, different chapter: the eleven GregTech voltage
+                # chapters each ask for the same molds and dusts, and the mod
+                # name tells them apart from nothing. The chapter's topic
+                # does - "Energium Dust (Low Voltage)" - and reads as a
+                # title, where "(3)" reads as a bug.
+                plain = re.sub(r"&[0-9a-fk-or]", "", str(cd.get("title") or ""), flags=re.I)
+                topic = plain.split(": ", 1)[1] if ": " in plain else plain
+                topic = topic.strip()
+                if topic and topic.lower() not in t.lower():
+                    cand = "%s (%s)" % (t, topic)
+                else:
+                    cand = ""
             if not cand or cand in seen:
                 seen[t] += 1
                 cand = "%s (%d)" % (t, seen[t])
@@ -2067,12 +2001,55 @@ def _soften_first_ask(out: list, cap: int = 2) -> int:
     return softened
 
 
+def _campaign_navigation(doc: dict) -> list:
+    """Keep the main objective visible without changing quest identity or unlocks."""
+    chapters = list(doc.get("chapters") or [])
+    sidebar = (doc.get("campaign") or {}).get("sidebar") or {}
+    group = sidebar.get("group")
+    if not group:
+        return chapters
+    plain = lambda c: re.sub(r"(?:&|\u00a7)[0-9a-fk-or]", "", str(c.get("group") or ""), flags=re.I).strip()
+    campaign = [c for c in chapters if plain(c) == group]
+    if not campaign:
+        return chapters
+    rank = {str(cid): i for i, cid in enumerate(sidebar.get("chapter_ids") or [])}
+    campaign.sort(key=lambda c: rank.get(str(c.get("id")), len(rank)))
+    others = [c for c in chapters if plain(c) != group]
+    after = sidebar.get("after_group", "Getting Started")
+    intro = [c for c in others if plain(c) == after]
+    return intro + campaign + [c for c in others if plain(c) != after]
+
+
 def build_chapters(doc: dict, warn, opts: dict | None = None):
     """Return (chapters, groups, extra). chapters = [(slug, chapter_dict)]."""
-    opts = opts or {}
+    opts = dict(opts or {})
+    from quest_shop import apply_shop, has_generated_shop
+    if opts.get("shop_enabled") or doc.get("shop") or has_generated_shop(doc):
+        doc = apply_shop(doc, opts.get("_scan") or {}, opts)
+    immersive = opts.get("book_style", "classic") == "immersive"
+    if immersive:
+        from quest_book_style import prepare_book
+        doc = prepare_book(doc, "immersive", opts.get("_scan"))
     preserve = opts.get("preserve_ids", False)
     alevel = _aesthetic(opts)
-    raw_chapters = doc.get("chapters") or []
+    library_art = opts.get("decor_source", "stock") in ("library", "accents")
+    if library_art and opts.get("decor_art") and alevel["images"]:
+        from decor_library import load_catalog
+        opts["_decor_catalog"] = load_catalog()
+
+    def decorate(key, quests, shape, color, context, existing=()):
+        if not opts.get("decor_art", True) or not alevel["images"]:
+            return []
+        if library_art:
+            from quest_decor import chapter_images
+            authored = [i for i in existing if not str(i.get("image", "")).startswith("autoquestgen:")]
+            images = chapter_images(key, quests, alevel, opts, context, ftb_id)
+            for image in images:
+                for field in ("x", "y", "width", "height", "rotation"):
+                    image[field] = _Double(image[field])
+            return authored + images
+        return list(existing) or _stock_chapter_decor(key, quests, alevel, shape, color)
+    raw_chapters = _campaign_navigation(doc)
 
     reward_tables, table_map = build_reward_tables(doc, warn)
 
@@ -2108,11 +2085,17 @@ def build_chapters(doc: dict, warn, opts: dict | None = None):
             if qk in id_map:
                 warn("duplicate quest id %r across chapters - disambiguating" % qk)
                 qk = "%s/%s#%d" % (ck, qk, len(id_map))
-            id_map[qk] = qid_for(cs, qk)
+            id_map[qk] = qk if rc.get("_native_reference") else qid_for(cs, qk)
             q["_idkey"] = qk        # so _quest resolves the SAME key later
 
     # chapter groups
     styled = opts.get("style_chapters", False)
+    size_style = opts.get("quest_size_style", "varied" if styled else None)
+    if size_style not in (None, "uniform", "varied", "dramatic", "preserve"):
+        size_style = "varied" if styled else None
+    campaign = doc.get("campaign") or {}
+    raw_landmarks = set(campaign.get("goal_quest_ids") or ()) | set(campaign.get("finale_quest_ids") or ())
+    landmarks = {id_map.get(key, key) for key in raw_landmarks}
     use_groups = opts.get("groups", True)
     group_id: dict = {}
     group_pos: dict = {}
@@ -2133,12 +2116,17 @@ def build_chapters(doc: dict, warn, opts: dict | None = None):
             group_id[plain] = gid
             group_pos[g] = group_pos[plain] = len(groups)
             gcode = _theme_for(plain, len(groups))[0]
-            groups.append({"id": gid,
-                           "title": _group_title(plain, gcode, len(groups),
-                                                 opts.get("group_style", "bold"))
-                                    if styled else _txt(plain)})
+            header = _group_title(plain, gcode, len(groups),
+                                  opts.get("group_style", "bold"))
+            if immersive:
+                from quest_book_style import group_presentation
+                header = group_presentation(plain, gcode, len(groups), opts.get("group_style", "bold"))
+            if not styled:
+                header = re.sub(r"&[0-9a-fk-orA-FK-OR]", "", header)
+            groups.append({"id": gid, "title": header})
 
     used: set = set()
+    templated_slugs: list = []
     # Book-scope, so chapter N knows what the first N-1 are already wearing.
     # Threaded through opts rather than the signature: the GUI, the AI path and
     # three test harnesses all call build_chapters, and none of them should have
@@ -2147,13 +2135,89 @@ def build_chapters(doc: dict, warn, opts: dict | None = None):
     used_tex: set = set()
     out: list = []
     banner_texts: dict = {}
+    native_slugs = set()
+    logical_order = {}
     for idx, rc in enumerate(raw_chapters):
+        if rc.get("_native_reference"):
+            import copy
+            chapter = copy.deepcopy(rc)
+            for key in list(chapter):
+                if key.startswith("_"):
+                    chapter.pop(key)
+            for quest in chapter.get("quests", ()):
+                for key in list(quest):
+                    if key.startswith("_"):
+                        quest.pop(key)
+            slug = str(chapter.get("filename") or "installed_goal")
+            chapter["group"] = group_id.get(rc.get("group"), "")
+            chapter["order_index"] = idx
+            if size_style:
+                _apply_quest_sizes(chapter["quests"], size_style, landmarks)
+            style = opts.get("layout", "reference")
+            if style != "reference":
+                positions = layout_positions(chapter["quests"], style, .15 + 1.4 * opts.get("creativity", .3), slug + "/" + str(_run_seed(opts)))
+                for quest in chapter["quests"]:
+                    quest["x"], quest["y"] = positions[quest["id"]]
+                chapter["images"] = []
+            elif size_style not in (None, "preserve"):
+                from quest_layout import reference_positions
+                positions = reference_positions(chapter["quests"])
+                if positions is None:
+                    positions = layout_positions(chapter["quests"], "reference", .15 + 1.4 * opts.get("creativity", .3), slug + "/" + str(_run_seed(opts)))
+                for quest in chapter["quests"]:
+                    quest["x"], quest["y"] = positions[quest["id"]]
+            if not opts.get("decor_art", True) or not alevel["images"]:
+                chapter["images"] = []
+            if opts.get("progression") == "open":
+                for quest in chapter["quests"]:
+                    quest["dependencies"] = []
+            elif opts.get("progression") == "loose":
+                for quest in chapter["quests"]:
+                    if quest.get("optional"):
+                        quest["dependencies"] = []
+            forced = opts.get("quest_shape", "auto")
+            if not styled:
+                chapter["title"] = re.sub(r"[&§][0-9a-fk-orA-FK-OR]", "", str(chapter.get("title", "")))
+                chapter["default_quest_shape"] = forced if forced != "auto" else ""
+            reward_scale = {"lean": .5, "standard": 1, "generous": 2}.get(opts.get("reward"), opts.get("reward_mult", 1))
+            for quest in chapter["quests"]:
+                if forced != "auto":
+                    quest["shape"] = forced
+                elif not styled:
+                    quest.pop("shape", None)
+                    if size_style is None:
+                        quest.pop("size", None)
+                if opts.get("aesthetic") == "minimal":
+                    quest.pop("description", None)
+                    quest.pop("subtitle", None)
+                if reward_scale != 1:
+                    for reward in quest.get("rewards", ()):
+                        field = {"xp": "xp", "xp_levels": "xp_levels", "item": "count"}.get(reward.get("type"))
+                        if field:
+                            value = reward.get(field)
+                            if not value and field == "count" and isinstance(reward.get("item"), dict):
+                                value = reward["item"].get("count", 1)
+                            reward[field] = max(1, round(int(value or 1) * reward_scale))
+            if opts.get("decor_art", True) and alevel["images"]:
+                color, shape, _emblem, _background = _theme_for(str(rc.get("group") or chapter.get("title") or slug), idx)
+                context = " ".join(str(rc.get(k) or "") for k in ("title", "group", "description"))
+                chapter["images"] = decorate(slug, chapter["quests"], shape if styled else "", color, context, chapter.get("images") or [])
+            out.append((slug, chapter))
+            native_slugs.add(slug)
+            templated_slugs.append(slug)
+            continue
         ck = rc.get("_ckey") or str(rc.get("id") or rc.get("title") or ("chapter_%d" % idx))
         cs = "chapter/" + ck
         raw_quests = rc.get("quests", []) or []
-        quests = [_quest(q, cs, id_map, warn, table_map) for q in raw_quests]
+        quests = [_quest(q, cs, id_map, warn, table_map, scan) for q in raw_quests]
+        # Reference chapters keep useful authored coordinates and semantic
+        # roles. Coordinates still receive the same overlap safety checks.
+        templated = bool(rc.get("_template"))
 
-        if opts.get("auto_chain") and not any(q.get("dependencies") for q in quests):
+        if opts.get("auto_chain") and not doc.get("_offline_generated") \
+                and opts.get("progression") != "open" and not templated \
+                and not rc.get("_shop") \
+                and not any(q.get("dependencies") for q in quests):
             order = sorted(range(len(quests)),
                            key=lambda i: (float(raw_quests[i].get("x", 0) or 0),
                                           float(raw_quests[i].get("y", 0) or 0)))
@@ -2163,10 +2227,18 @@ def build_chapters(doc: dict, warn, opts: dict | None = None):
                 warn("chapter %r: auto-chained %d quests" % (ck, len(order)))
 
         if opts.get("xp_rewards"):
-            base = int((50 + 25 * idx) * opts.get("reward_mult", 1.0))
+            logical_index = rc.get("_book_style_original_index", idx)
+            base = int((50 + 25 * logical_index) * opts.get("reward_mult", 1.0))
             for q in quests:
                 if not q.get("rewards"):
                     q["rewards"] = [{"id": ftb_id(q["id"], "xpreward"), "type": "xp", "xp": base}]
+
+        # Both semantics and actual footprints are known before placement.
+        # Styling controls colors/shapes; an explicit size choice is separate.
+        if not templated:
+            _mark_optional(quests)
+        if size_style:
+            _apply_quest_sizes(quests, size_style, landmarks)
 
         # ---- layout ----
         style = opts.get("layout", "line")
@@ -2174,33 +2246,52 @@ def build_chapters(doc: dict, warn, opts: dict | None = None):
         # Layout gets its OWN seed: cs must stay clean because quest ids hash
         # from it, and a regenerate that renumbers every quest wipes the
         # player's completed set. Positions are cosmetic, so they may vary.
-        pos = layout_positions(quests, style, jitter,
-                               cs + "/" + str(_run_seed(opts)))
+        layout_seed = cs + "/" + str(_run_seed(opts))
+        original_reference_map = False
+        if rc.get("_shop"):
+            from quest_layout import authored_positions
+            pos = authored_positions(quests)
+        elif rc.get("_campaign") and style == "reference":
+            from quest_layout import campaign_positions
+            pos = campaign_positions(quests, jitter, layout_seed)
+        elif templated and style == "reference":
+            from quest_layout import reference_positions
+            pos = reference_positions(quests)
+            if pos is None:
+                pos = layout_positions(quests, "reference", jitter, layout_seed)
+                original_reference_map = True
+                warn("chapter %r: reference coordinates unavailable; using an original map" % ck)
+        elif templated and style in ("ai", "ai+tidy"):
+            from quest_layout import authored_positions
+            pos = authored_positions(quests)
+            if pos is None:
+                pos = layout_positions(quests, style, jitter, layout_seed)
+                warn("chapter %r: repaired unusable template coordinates" % ck)
+        else:
+            pos = layout_positions(quests, style, jitter, layout_seed)
+            original_reference_map = style == "reference"
+        if original_reference_map:
+            from quest_layout import reference_introductions
+            introductions = reference_introductions(quests)
+            for q in quests:
+                if q["id"] in introductions:
+                    # FTB hides only the lines leaving this read-and-confirm
+                    # introduction. Its real completion gate is unchanged;
+                    # all recipe and exploration prerequisite lines remain.
+                    q["hide_dependent_lines"] = True
         if pos:
-            _wheelify(quests, pos, cs + "/" + str(_run_seed(opts)))
-            _declutter(pos, min_d=1.6)
-            # LAST, after the wheels and the declutter. Shortening inside
-            # layout_positions alone achieved nothing here: both passes above
-            # move quests with no view of the dependency graph, so they put the
-            # outliers straight back (measured: SecurityCraft's longest line
-            # 19.5 -> 30.7 with the pull applied only upstream of them).
-            _shorten_links(pos, quests, {q["id"] for q in quests})
             for q in quests:
                 if q["id"] in pos:
                     q["x"] = _Double(round(pos[q["id"]][0], 3))
                     q["y"] = _Double(round(pos[q["id"]][1], 3))
 
-        # ---- convergence ----
-        # After the layout passes and before optional marking: joins are
-        # chosen by distance, and a quest that gains a dependent here must no
-        # longer be a candidate for the optional flag.
-        _converge(quests, cs)
+        # Prerequisites come from authored progression and recipes. Spatial
+        # proximity is never a reason to lock one objective behind another.
 
         # ---- optional side quests ----
         # Semantic, not cosmetic, so this runs whether or not the chapter is
         # styled: a leaf hanging off the side of the graph is skippable in a
         # plain book too, and FTB Quests only knows that if the flag says so.
-        _mark_optional(quests)
 
         # ---- per-group theme (colour / shape / emblem) ----
         # index is STABLE per group so every chapter in a group looks the same
@@ -2216,17 +2307,29 @@ def build_chapters(doc: dict, warn, opts: dict | None = None):
         if forced:
             gshape = forced
         raw_title = str(rc.get("title", ck))
-        if styled and not _has_fmt_code(raw_title):
+        if not styled:
+            title = re.sub(r"&[0-9a-fk-orA-FK-OR]", "", raw_title)
+        elif not _has_fmt_code(raw_title):
             # _txt() first so a stray "&" in the name ("Arts & Alchemy") can't
             # eat the colour code we're about to add
             title = "&%s&l%s" % (code, _txt(raw_title))
         else:
             title = raw_title
+        if styled and immersive:
+            from quest_book_style import chapter_presentation
+            title = chapter_presentation(rc, raw_title, code, idx)
         if forced:
             for q in quests:
                 q["shape"] = forced
-        if styled:
-            _size_hierarchy(quests)
+        elif not styled:
+            for q in quests:
+                q.pop("shape", None)
+                if size_style is None:
+                    q.pop("size", None)
+        elif not alevel["shapes"]:
+            for q in quests:
+                q["shape"] = gshape
+        if styled and not templated:
             # minimal means minimal: every node keeps the chapter's default
             # shape, so the map reads as one uniform grid.
             if not forced and alevel["shapes"]:
@@ -2240,9 +2343,13 @@ def build_chapters(doc: dict, warn, opts: dict | None = None):
         while slug in used:
             slug += "_"
         used.add(slug)
+        if not rc.get("_shop"):
+            logical_order[slug] = rc.get("_book_style_original_index", idx)
+        if templated:
+            templated_slugs.append(slug)
 
         images = []
-        for ri in rc.get("images", []) or []:
+        for ri in (rc.get("images", []) or []) if opts.get("decor_art") and alevel["images"] else []:
             images.append({
                 "id": ri.get("id") or ftb_id("img", ck, str(ri)),
                 "x": _Double(float(ri.get("x", 0.0))),
@@ -2253,21 +2360,13 @@ def build_chapters(doc: dict, warn, opts: dict | None = None):
                 "image": ri.get("image", ""),
                 "alpha": int(ri.get("alpha", 255)),
                 "order": int(ri.get("order", 0)),
+                **({"color": int(ri["color"])} if "color" in ri else {}),
             })
-        if opts.get("decor_art") and not images:
-            # Derived from the chapter's own contents. VANILLA_BACKDROPS is now
-            # only the floor for a scan with no harvested textures at all - an
-            # old cached scan, or a jar-free instance - because a bare chapter
-            # is a worse regression than a repeated one.
-            want = int(alevel.get("field", 0)) + int(alevel.get("motifs", 0))
-            texs = _chapter_backdrop(ck, rc, scan, used_tex, max(1, want)) \
-                or ([VANILLA_BACKDROPS.get(backdrop, VANILLA_BACKDROPS["stone"])]
-                    if want else [])
-            # gshape and code are the chapter's own shape and title colour, so
-            # the panel matches the name above it instead of coming off a
-            # separate wheel.
-            images = _decor_images(ck, pos or quests, texs, alevel,
-                                   gshape if styled else "", code, len(quests))
+        # A reference fallback is still a generated map. Honor the user's
+        # decoration choice, while retaining any supplied authored art.
+        if opts.get("decor_art") and alevel["images"]:
+            context = " ".join(str(rc.get(k) or "") for k in ("title", "group", "description"))
+            images = decorate(ck, quests, gshape if styled else "", code, context, images)
 
         cid = _safe_hexid(ck) if (preserve and _HEXID_RE.match(ck)) else ftb_id(cs)
         out.append((slug, {
@@ -2302,9 +2401,27 @@ def build_chapters(doc: dict, warn, opts: dict | None = None):
     _cut = break_dep_cycles(out, warn)
     if _cut:
         warn("  cut %d dependency edge(s) that would have formed a cycle" % _cut)
-    _soften_first_ask(out)
-    _dedupe_titles(out, scan, warn)
-    return out, groups, {"banners": {}, "reward_tables": reward_tables}
+    generated_out = [entry for entry in out if entry[0] not in native_slugs and entry[0] in logical_order]
+    generated_out.sort(key=lambda entry: logical_order[entry[0]])
+    _soften_first_ask(generated_out)
+    _dedupe_titles(generated_out, scan, warn)
+    return out, groups, {"banners": {}, "reward_tables": reward_tables,
+                         "templated": templated_slugs}
+
+
+def validate_book_settings(book: dict, scan: dict) -> dict:
+    """Reject a custom book icon that the current instance cannot supply."""
+    result = dict(book)
+    icon = str(result.get("icon") or "").strip()
+    if icon:
+        available = set(scan.get("vanilla") or _VANILLA_ITEM_SET)
+        for ids in (scan.get("items") or {}).values():
+            available.update(ids)
+        if icon not in available:
+            raise ValueError("Book icon %r is not an item in the scanned pack. "
+                             "Choose a scanned item ID or leave the icon blank." % icon)
+    result["icon"] = icon
+    return result
 
 
 def _patch_data_snbt(path: Path, book: dict, log):
@@ -2316,10 +2433,10 @@ def _patch_data_snbt(path: Path, book: dict, log):
             raise SNBTError("not a compound")
     except Exception:
         data = snbt_loads(DATA_SNBT_DEFAULT)
-    if book.get("title"):
-        data["title"] = _txt(book["title"])
-    if book.get("icon"):
-        data["icon"] = book["icon"]
+    if "title" in book:
+        data["title"] = _txt(book["title"]) if book["title"] else "Quest Book"
+    if "icon" in book:
+        data["icon"] = book["icon"] or "minecraft:book"
     if book.get("progression_mode") in ("linear", "flexible"):
         data["progression_mode"] = book["progression_mode"]
     path.write_text(snbt_dumps(data) + "\n", encoding="utf-8")
@@ -2349,7 +2466,8 @@ def minecraft_running() -> bool:
 
 def write_snbt(quests_dir: Path, chapters: list, groups: list, backup: bool, log,
                book: dict | None = None, reward_tables: list | None = None,
-               confirm_shrink=None, allow_while_running: bool = False) -> None:
+               confirm_shrink=None, allow_while_running: bool = False,
+               templated: list | None = None, mc_version: str = "") -> None:
     """confirm_shrink(old_n, new_n) -> bool is asked before a write that would
     replace a much larger book with a much smaller one. A one-chapter themed
     generate silently wiping a 25-chapter book is not something to do quietly.
@@ -2383,8 +2501,16 @@ def write_snbt(quests_dir: Path, chapters: list, groups: list, backup: bool, log
         log("  write cancelled — kept the existing %d chapters" % existing)
         raise RuntimeError("cancelled: kept the existing %d-chapter book" % existing)
 
+    from quest_decor import prepare_art_export, finish_art_export
+    prepared_art = prepare_art_export(quests_dir, chapters, mc_version)
+
     if backup and chapters_dir.exists() and any(chapters_dir.iterdir()):
         bak = quests_dir / ("chapters.backup-%s" % time.strftime("%Y%m%d-%H%M%S"))
+        suffix = 1
+        while bak.exists():
+            bak = quests_dir / ("chapters.backup-%s-%d" % (
+                time.strftime("%Y%m%d-%H%M%S"), suffix))
+            suffix += 1
         shutil.copytree(chapters_dir, bak)
         log("  backed up existing chapters/ -> %s" % bak.name)
     chapters_dir.mkdir(parents=True, exist_ok=True)
@@ -2417,12 +2543,12 @@ def write_snbt(quests_dir: Path, chapters: list, groups: list, backup: bool, log
     if groups:
         cg.write_text(snbt_dumps({"chapter_groups": groups}) + "\n", encoding="utf-8")
         log("  wrote chapter_groups.snbt  (%d groups)" % len(groups))
-    elif not cg.exists():
+    else:
         cg.write_text(CHAPTER_GROUPS_EMPTY, encoding="utf-8")
         log("  wrote chapter_groups.snbt")
 
     data = quests_dir / "data.snbt"
-    if book and any(book.get(k) for k in ("title", "icon", "progression_mode")):
+    if book is not None:
         _patch_data_snbt(data, book, log)
     elif not data.exists():
         data.write_text(DATA_SNBT_DEFAULT, encoding="utf-8")
@@ -2447,7 +2573,8 @@ def write_snbt(quests_dir: Path, chapters: list, groups: list, backup: bool, log
             (rt_dir / (slug + ".snbt")).write_text(snbt_dumps(table) + "\n", encoding="utf-8")
             log("  wrote reward_tables/%s.snbt  (%d entries)" % (slug, len(table["rewards"])))
         manifest_path.write_text(json.dumps(
-            {"chapters": new_slugs, "reward_tables": new_rt}, indent=2), encoding="utf-8")
+            {"chapters": new_slugs, "reward_tables": new_rt,
+             "templated": list(templated or [])}, indent=2), encoding="utf-8")
     else:
         try:
             m = json.loads(manifest_path.read_text(encoding="utf-8"))
@@ -2455,6 +2582,7 @@ def write_snbt(quests_dir: Path, chapters: list, groups: list, backup: bool, log
             m = {}
         m["chapters"] = new_slugs
         manifest_path.write_text(json.dumps(m, indent=2), encoding="utf-8")
+    finish_art_export(quests_dir, prepared_art, log)
 
 
 # ========================================================================== #
@@ -2616,7 +2744,8 @@ def quests_to_doc(quests_dir: Path) -> dict:
                     it = t.get("item")
                     it = it.get("id") if isinstance(it, dict) else it
                     tasks.append({"type": "item", "item": it,
-                                  "count": int(t.get("count", 1) or 1)})
+                                  "count": int(t.get("count", 1) or 1),
+                                  **({"consume_items": bool(t["consume_items"])} if "consume_items" in t else {})})
                 elif tt == "checkmark":
                     tasks.append({"type": "checkmark", "title": t.get("title", "")})
                 elif tt == "kill":
@@ -2646,7 +2775,8 @@ def quests_to_doc(quests_dir: Path) -> dict:
                 if rt == "item":
                     it = r.get("item")
                     it = it.get("id") if isinstance(it, dict) else it
-                    rewards.append({"type": "item", "item": it, "count": int(r.get("count", 1) or 1)})
+                    rewards.append({"type": "item", "item": it, "count": int(r.get("count", 1) or 1),
+                                    **{k:r[k] for k in ("id", "team_reward", "auto") if k in r}})
                 elif rt in ("xp", "xp_levels"):
                     rewards.append({"type": rt, "xp": int(r.get("xp", r.get("xp_levels", 100)) or 100)})
                 else:
@@ -2656,6 +2786,9 @@ def quests_to_doc(quests_dir: Path) -> dict:
             qd = {"id": str(q.get("id")), "title": q.get("title", ""),
                   "x": float(q.get("x", 0) or 0), "y": float(q.get("y", 0) or 0),
                   "tasks": tasks}
+            for field in ("can_repeat", "repeat_cooldown"):
+                if field in q:
+                    qd[field] = q[field]
             if q.get("subtitle"):
                 qd["subtitle"] = q["subtitle"]
             # optional marks a side quest. It was not read back, so a save
@@ -2978,7 +3111,7 @@ _VAN_ID_RE = re.compile(r'"(minecraft:[a-z0-9_]+)"')
 # GeckoLib-rendered items live here instead of models/item.
 _MODEL_GEO_RE = re.compile(r"^assets/([a-z0-9_]+)/geo/(?:item/)?([a-z0-9_]+)\.geo\.json$")
 _NON_ITEM_MARK = ("creative_", "_creative", "debug_", "_debug", "technical_",
-                  "_placeholder", "spawner", "command_block", "structure_void",
+                  "_placeholder", "command_block", "structure_void",
                   "light_block", "jigsaw")
 
 JUNK_SUFFIXES = ("_slab", "_stairs", "_wall", "_fence", "_fence_gate", "_button",
@@ -3057,8 +3190,11 @@ def _model_texmap(raw: bytes):
     tex = d.get("textures")
     if isinstance(tex, dict):
         for k, v in tex.items():
-            if isinstance(v, str) and not v.startswith("#"):
-                out[k] = v if ":" in v else "minecraft:" + v
+            if isinstance(v, str):
+                # An alias is still an override. Dropping it here exposes the
+                # parent's placeholder even when the child points at a valid
+                # slot, and hides aliases that never resolve at all.
+                out[k] = v if v.startswith("#") or ":" in v else "minecraft:" + v
     par = d.get("parent")
     if isinstance(par, str):
         par = par if ":" in par else "minecraft:" + par
@@ -3087,7 +3223,87 @@ def _model_parts(raw: bytes):
     return out, par
 
 
-def _recipe_result_ids(obj) -> set:
+def _recipe_condition(value, present_mods=None, known_items=None):
+    """Evaluate supported Forge guards; None means the pack cannot prove it."""
+    if not isinstance(value, dict):
+        return None
+    kind = value.get("type", "")
+    if kind in {"forge:true", "forge:false"}:
+        return kind == "forge:true"
+    if kind == "forge:mod_loaded":
+        return (value.get("modid") in present_mods
+                if present_mods is not None else None)
+    if kind == "forge:item_exists":
+        return (value.get("item") in known_items
+                if known_items is not None else None)
+    if kind == "forge:not":
+        child = _recipe_condition(value.get("value"), present_mods, known_items)
+        return None if child is None else not child
+    if kind in {"forge:and", "forge:or"}:
+        children = value.get("values")
+        if not isinstance(children, list):
+            return None
+        results = [_recipe_condition(v, present_mods, known_items) for v in children]
+        if kind == "forge:and":
+            return False if False in results else (None if None in results else True)
+        return True if True in results else (None if None in results else False)
+    return None
+
+
+def _recipe_variants(obj, present_mods=None, known_items=None, _depth=0):
+    """Unwrap the first enabled Forge recipe without merging alternative routes.
+
+    Unknown configuration/tag conditions are deliberately not evidence of an
+    obtainable output. Nor can we use a fallback when an unknown earlier
+    branch might be selected by the game instead.
+    """
+    if not isinstance(obj, dict) or _depth > 12:
+        return []
+    conditions = obj.get("conditions", [])
+    if not isinstance(conditions, list):
+        return []
+    results = [_recipe_condition(v, present_mods, known_items) for v in conditions]
+    if any(result is not True for result in results):
+        return []
+    if obj.get("type") != "forge:conditional":
+        return [obj]
+    entries = obj.get("recipes", [])
+    if not isinstance(entries, list):
+        return []
+    for entry in entries:
+        if not isinstance(entry, dict) or not isinstance(entry.get("conditions", []), list):
+            return []
+        results = [_recipe_condition(v, present_mods, known_items)
+                   for v in entry.get("conditions", [])]
+        if False in results:
+            continue
+        if None in results:
+            return []
+        return _recipe_variants(entry.get("recipe"), present_mods, known_items, _depth + 1)
+    return []
+
+
+def _recipe_mod_ids(zf, names):
+    """Read every declared mod id before conditional recipe selection."""
+    ids = set()
+    try:
+        meta = next((n for n in ("META-INF/neoforge.mods.toml", "META-INF/mods.toml")
+                     if n in names), None)
+        if meta:
+            doc = tomllib.loads(zf.read(meta).decode("utf-8", "replace"))
+            ids.update(str(m["modId"]) for m in doc.get("mods", []) if m.get("modId"))
+            ids.add("neoforge" if "neoforge" in meta else "forge")
+        elif "fabric.mod.json" in names:
+            doc = json.loads(zf.read("fabric.mod.json"))
+            if doc.get("id"):
+                ids.add(doc["id"])
+            ids.update(v for v in doc.get("provides", []) if isinstance(v, str))
+    except (ValueError, KeyError, TypeError):
+        pass
+    return ids
+
+
+def _recipe_result_ids(obj, present_mods=None, known_items=None) -> set:
     """Pull output item ids out of any vanilla/modded recipe json."""
     out = set()
 
@@ -3101,10 +3317,16 @@ def _recipe_result_ids(obj) -> set:
         elif isinstance(v, list):
             for x in v:
                 take(x)
-    if isinstance(obj, dict):
+    for obj in _recipe_variants(obj, present_mods, known_items):
         for key in ("result", "results", "output", "outputs", "resultItem"):
             if key in obj:
                 take(obj[key])
+        # Roots Classic's crafting ritual stores its item stack inside the
+        # effect configuration. Other ritual effects are not item outputs.
+        if obj.get("type") == "rootsclassic:ritual" and obj.get("effect") == "rootsclassic:crafting":
+            config = obj.get("effectConfig")
+            if isinstance(config, dict):
+                take(config.get("result"))
     return out
 
 
@@ -3127,21 +3349,39 @@ def _instance_mc_version(inst: Path) -> str:
                 cur = cur.get(k) if isinstance(cur, dict) else None
                 if cur is None:
                     break
-            if isinstance(cur, str) and re.match(r"^1\.\d+", cur):
+            if isinstance(cur, str) and re.fullmatch(
+                    r"\d+\.\d+(?:\.\d+)?(?:[-+][a-zA-Z0-9_.-]+)?", cur):
                 return cur
         for comp in (d.get("components") or []):
             if isinstance(comp, dict) and comp.get("uid") == "net.minecraft":
                 v = comp.get("version")
                 if isinstance(v, str):
                     return v
-    # fall back to the mod jars' own declared version
+    # A mod's own semantic version is not Minecraft's version. For example,
+    # iris-fabric-1.11.6+mc26.3.jar runs on 26.3, not Minecraft 1.11.6.
+    # Without metadata, accept only an explicitly labelled MC version.
     try:
         for jar in sorted((inst / "mods").glob("*.jar"))[:40]:
-            m = re.search(r"1\.20\.\d+|1\.\d\d?\.\d+", jar.name)
+            m = re.search(r"(?:^|[-_+])(?:mc|minecraft)[-_]?(\d+\.\d+(?:\.\d+)?)",
+                          jar.name, re.I)
             if m:
-                return m.group(0)
+                return m.group(1)
     except Exception:
         pass
+    return ""
+
+
+def _unsupported_version_note(version: str) -> str:
+    """New item-definition formats need their own scanner/export validation."""
+    match = re.match(r"^(\d+)\.(\d+)(?:\.(\d+))?", version or "")
+    if not match:
+        return ""
+    major, minor, patch = (int(v or 0) for v in match.groups())
+    if major > 1 or (major == 1 and (minor, patch) >= (21, 4)):
+        return ("Minecraft %s uses a newer item-definition format that this "
+                "generator does not yet support. Quest generation and export "
+                "are disabled for this instance; this build targets the "
+                "Minecraft 1.20.1 FTB Quests format." % version)
     return ""
 
 
@@ -3209,9 +3449,11 @@ def _load_vanilla_sources(client_jar) -> dict:
         out.setdefault(item, []).append((weight, text))
 
     for n in names:
-        if not (n.startswith("data/minecraft/loot_tables/") and n.endswith(".json")):
+        loot_prefix = next((p for p in ("data/minecraft/loot_tables/", "data/minecraft/loot_table/")
+                            if n.startswith(p)), None)
+        if not (loot_prefix and n.endswith(".json")):
             continue
-        rel = n[len("data/minecraft/loot_tables/"):-5]
+        rel = n[len(loot_prefix):-5]
         try:
             txt = z.read(n).decode("utf-8", "replace")
         except Exception:
@@ -3269,7 +3511,7 @@ def _load_vanilla_sources(client_jar) -> dict:
 
     # crafted/smelted items: say so, with their key ingredient
     for n in names:
-        if not (n.startswith("data/minecraft/recipes/") and n.endswith(".json")):
+        if not (n.startswith(("data/minecraft/recipes/", "data/minecraft/recipe/")) and n.endswith(".json")):
             continue
         try:
             d = json.loads(z.read(n).decode("utf-8", "replace"))
@@ -3314,135 +3556,228 @@ def _load_vanilla_sources(client_jar) -> dict:
     return final
 
 
-def _vanilla_items_from_client(mods_folder: Path) -> set:
+def _vanilla_client_candidates(mods_folder: Path):
+    """Exact-version candidates shared by the reader and its cache key."""
+    inst = mods_folder.parent
+    wanted = _instance_mc_version(inst)
+    if not wanted or _unsupported_version_note(wanted):
+        return []
+    roots = (inst.parent.parent / "Install" / "versions",
+             inst.parent.parent / "versions", inst / "versions")
+    found = []
+    for root in roots:
+        for jar in sorted(root.glob("*/*.jar")):
+            version = re.search(r"1\.\d+(?:\.\d+)?", jar.stem)
+            if version and version.group(0) == wanted:
+                found.append(jar)
+    return list(dict.fromkeys(found))
+
+
+def _item_tag_documents(zf, names):
+    """Keep raw item-tag layers; block tags are a different registry."""
+    documents = []
+    for name in sorted(names):
+        match = re.fullmatch(r"data/([a-z0-9_.-]+)/tags/items?/(.+)\.json", name)
+        if not match:
+            continue
+        try:
+            doc = json.loads(zf.read(name))
+            if isinstance(doc, dict) and isinstance(doc.get("values"), list):
+                documents.append((match[1] + ":" + match[2], doc))
+        except (ValueError, KeyError, OSError):
+            continue
+    return documents
+
+
+def _resolve_item_tag_documents(documents):
+    """Merge low-to-high layers before expanding nested item tags.
+
+    A mod's replace=true applies to the vanilla definition too. Missing
+    required nested tags and cycles remain unresolved, not invented members.
+    This reads static JAR data; it does not execute pack tag scripts.
+    """
+    raw = {}
+    for name, doc in documents:
+        if doc.get("replace") is True:
+            raw[name] = []
+        entries = raw.setdefault(name, [])
+        for entry in doc["values"]:
+            value = entry.get("id") if isinstance(entry, dict) else entry
+            required = entry.get("required", True) if isinstance(entry, dict) else True
+            if not isinstance(value, str):
+                continue
+            reference = value.startswith("#")
+            identity = value[1:] if reference else value
+            if ":" not in identity:
+                identity = "minecraft:" + identity
+            if _RESLOC_RE.fullmatch(identity):
+                entries.append((("#" if reference else "") + identity, required is not False))
+    resolved = {}
+
+    def expand(name, parents):
+        if name not in raw or name in parents or len(parents) > 128:
+            raise ValueError("Unresolved nested item tag")
+        if name in resolved:
+            return resolved[name]
+        members = set()
+        for value, required in raw[name]:
+            if value.startswith("#"):
+                try:
+                    members.update(expand(value[1:], parents | {name}))
+                except ValueError:
+                    if required:
+                        raise
+            else:
+                members.add(value)
+        resolved[name] = members
+        return members
+
+    for name in sorted(raw):
+        try:
+            expand(name, set())
+        except ValueError:
+            pass
+    return {name: resolved.get(name, set()) for name in raw}
+
+
+def _vanilla_items_from_client(mods_folder: Path, item_tags=None) -> set:
     """Read the real vanilla item list out of the Minecraft client jar when we
     can find it. Falls back to the curated list, which only covers the obvious
     few hundred - the AI legitimately uses things like minecraft:bamboo."""
+    # These facts belong to this client version. Generating a second pack in
+    # the same app must not retain recipes or descriptions from the first.
+    _VANILLA_SOURCE.clear()
+    _VANILLA_CRAFTABLE.clear()
+    if item_tags is not None:
+        item_tags.clear()
     inst = mods_folder.parent
     want_ver = _instance_mc_version(inst)
-    roots = [inst.parent.parent / "Install" / "versions",     # CurseForge layout
-             inst.parent.parent / "versions",
-             inst / "versions"]
+    # Without an identified client, the richest installed jar is just some
+    # other pack's version. Use the conservative built-in list in that case.
+    if not want_ver or _unsupported_version_note(want_ver):
+        return set()
     best: set = set()
     best_exact = False
-    for root in roots:
-        if not root.is_dir():
+    for jar in _vanilla_client_candidates(mods_folder):
+        try:
+            z = zipfile.ZipFile(jar)
+            names = z.namelist()
+        except Exception:
             continue
-        for jar in sorted(root.glob("*/*.jar")):
-            try:
-                z = zipfile.ZipFile(jar)
-                names = z.namelist()
-            except Exception:
-                continue
-            if "assets/minecraft/models/item/diamond.json" not in names:
-                continue
-            model_only = set()
+        if "assets/minecraft/models/item/diamond.json" not in names:
+            continue
+        model_only = set()
+        for n in names:
+            m = _MODEL_ITEM_RE.match(n)
+            if m and m.group(1) == "minecraft":
+                model_only.add("minecraft:" + m.group(2))
+        # the lang file is the complete list - models miss a few hundred
+        out = set()
+        try:
+            d = json.loads(z.read("assets/minecraft/lang/en_us.json")
+                           .decode("utf-8", "replace"))
+            for k in d:
+                mm = re.match(r"^(?:item|block)\.minecraft\.([a-z0-9_]+)$", k)
+                if mm:
+                    out.add("minecraft:" + mm.group(1))
+        except Exception:
+            pass
+        # The lang file names BLOCK STATES as well as items, and a block
+        # state is not something a player can ever put in a bag. 160 of the
+        # 1398 names 1.20.1 hands us can be drawn in the world but never in
+        # a hand: redstone_wire, piston_head, moving_piston, nether_portal,
+        # water, the wall_sign and candle_cake families, and the crop
+        # blocks (carrots is the planted crop; the item is carrot). A
+        # themed chapter seeded from this pool shipped "Obtain Redstone
+        # Wire" and "Craft Nether Portal" - 43 of 914 themed item quests
+        # asked for something the game has no item for, and no player could
+        # ever finish one of them.
+        #
+        # So keep only names the client knows how to render in an
+        # inventory. Filtering on the key PREFIX instead would not work:
+        # vanilla names almost every placeable item under block.minecraft.*
+        # rather than item.minecraft.*, so trusting the prefix would throw
+        # away a thousand real items - stone, chests, every real cake.
+        #
+        # Both render paths have to count. Through 1.21.1 an item is drawn
+        # from models/item/<id>.json; 1.21.4 moved that to items/<id>.json
+        # and left only some behind, so testing models alone would cut a
+        # 1.21.4 pack from 1552 names to 590. Together they hold steady:
+        # 1.20.1 keeps 1238 of 1398, 1.21.11 keeps 1505 of 1675, and every
+        # version in between drops the same ~165 block states.
+        #
+        # The stragglers that carry an item.* key and still fail are dead
+        # names, not losses: the pre-1.20 *_pottery_shard spellings (now
+        # sherd), plus "sign", "smithing_template" and "lodestone_compass",
+        # which name families of ids rather than any id.
+        held = set(model_only)
+        for n in names:
+            mm = re.match(r"^assets/minecraft/items/([a-z0-9_]+)\.json$", n)
+            if mm:
+                held.add("minecraft:" + mm.group(1))
+        out &= held
+        # ...but models miss in one direction and INVENT in the other. 437
+        # vanilla model files have no item lang key, and they are render
+        # variants rather than items: bow_pulling_0, broken_elytra,
+        # bundle_filled, 266 armour-trim overlays, and clock_00 through
+        # clock_63. One of them reached a themed book as "Assemble Crossbow
+        # Arrow" - minecraft:crossbow_arrow is the model of an arrow drawn
+        # inside a loaded crossbow, not a thing anyone can hold.
+        #
+        # Dropping them all would be wrong too. The 17 smithing templates
+        # ARE real, and are missing only because vanilla names them under
+        # trim_pattern.minecraft.rib instead of item.minecraft.<id> - the
+        # same composed-name case already handled for mods.
+        #
+        # So the same test used for mod items decides it: a recipe, a loot
+        # table or an item tag naming the id is proof it is registered.
+        # That keeps all 17 templates and drops all 420 render variants.
+        model_only -= out
+        if model_only:
+            proof: set = set()
             for n in names:
-                m = _MODEL_ITEM_RE.match(n)
-                if m and m.group(1) == "minecraft":
-                    model_only.add("minecraft:" + m.group(2))
-            # the lang file is the complete list - models miss a few hundred
-            out = set()
+                if not (n.endswith(".json")
+                        and ("/recipes/" in n or "/loot_tables/" in n
+                             or "/tags/items/" in n)):
+                    continue
+                try:
+                    raw = z.read(n).decode("utf-8", "replace")
+                except Exception:
+                    continue
+                proof.update(_VAN_ID_RE.findall(raw))
+            out |= (model_only & proof)
+        # Prefer the jar whose version MATCHES this instance. Taking the
+        # richest jar instead pulled 1.21 items - copper tools, copper
+        # chests, copper bulbs - into a 1.20.1 book, where they simply do
+        # not exist. A newer jar is always "richer"; that is exactly why
+        # size is the wrong test.
+        ver = ""
+        mv = re.search(r"1\.\d+(?:\.\d+)?", jar.stem)
+        if mv:
+            ver = mv.group(0)
+        exact = bool(want_ver) and ver == want_ver
+        if exact and not best_exact:
+            best, best_exact = out, True
+            if item_tags is not None:
+                item_tags[:] = _item_tag_documents(z, names)
             try:
-                d = json.loads(z.read("assets/minecraft/lang/en_us.json")
-                               .decode("utf-8", "replace"))
-                for k in d:
-                    mm = re.match(r"^(?:item|block)\.minecraft\.([a-z0-9_]+)$", k)
-                    if mm:
-                        out.add("minecraft:" + mm.group(1))
+                _VANILLA_SOURCE.update(_load_vanilla_sources(jar))
             except Exception:
                 pass
-            # The lang file names BLOCK STATES as well as items, and a block
-            # state is not something a player can ever put in a bag. 160 of the
-            # 1398 names 1.20.1 hands us can be drawn in the world but never in
-            # a hand: redstone_wire, piston_head, moving_piston, nether_portal,
-            # water, the wall_sign and candle_cake families, and the crop
-            # blocks (carrots is the planted crop; the item is carrot). A
-            # themed chapter seeded from this pool shipped "Obtain Redstone
-            # Wire" and "Craft Nether Portal" - 43 of 914 themed item quests
-            # asked for something the game has no item for, and no player could
-            # ever finish one of them.
-            #
-            # So keep only names the client knows how to render in an
-            # inventory. Filtering on the key PREFIX instead would not work:
-            # vanilla names almost every placeable item under block.minecraft.*
-            # rather than item.minecraft.*, so trusting the prefix would throw
-            # away a thousand real items - stone, chests, every real cake.
-            #
-            # Both render paths have to count. Through 1.21.1 an item is drawn
-            # from models/item/<id>.json; 1.21.4 moved that to items/<id>.json
-            # and left only some behind, so testing models alone would cut a
-            # 1.21.4 pack from 1552 names to 590. Together they hold steady:
-            # 1.20.1 keeps 1238 of 1398, 1.21.11 keeps 1505 of 1675, and every
-            # version in between drops the same ~165 block states.
-            #
-            # The stragglers that carry an item.* key and still fail are dead
-            # names, not losses: the pre-1.20 *_pottery_shard spellings (now
-            # sherd), plus "sign", "smithing_template" and "lodestone_compass",
-            # which name families of ids rather than any id.
-            held = set(model_only)
-            for n in names:
-                mm = re.match(r"^assets/minecraft/items/([a-z0-9_]+)\.json$", n)
-                if mm:
-                    held.add("minecraft:" + mm.group(1))
-            out &= held
-            # ...but models miss in one direction and INVENT in the other. 437
-            # vanilla model files have no item lang key, and they are render
-            # variants rather than items: bow_pulling_0, broken_elytra,
-            # bundle_filled, 266 armour-trim overlays, and clock_00 through
-            # clock_63. One of them reached a themed book as "Assemble Crossbow
-            # Arrow" - minecraft:crossbow_arrow is the model of an arrow drawn
-            # inside a loaded crossbow, not a thing anyone can hold.
-            #
-            # Dropping them all would be wrong too. The 17 smithing templates
-            # ARE real, and are missing only because vanilla names them under
-            # trim_pattern.minecraft.rib instead of item.minecraft.<id> - the
-            # same composed-name case already handled for mods.
-            #
-            # So the same test used for mod items decides it: a recipe, a loot
-            # table or an item tag naming the id is proof it is registered.
-            # That keeps all 17 templates and drops all 420 render variants.
-            model_only -= out
-            if model_only:
-                proof: set = set()
-                for n in names:
-                    if not (n.endswith(".json")
-                            and ("/recipes/" in n or "/loot_tables/" in n
-                                 or "/tags/items/" in n)):
-                        continue
-                    try:
-                        raw = z.read(n).decode("utf-8", "replace")
-                    except Exception:
-                        continue
-                    proof.update(_VAN_ID_RE.findall(raw))
-                out |= (model_only & proof)
-            # Prefer the jar whose version MATCHES this instance. Taking the
-            # richest jar instead pulled 1.21 items - copper tools, copper
-            # chests, copper bulbs - into a 1.20.1 book, where they simply do
-            # not exist. A newer jar is always "richer"; that is exactly why
-            # size is the wrong test.
-            ver = ""
-            mv = re.search(r"1\.\d+(?:\.\d+)?", jar.stem)
-            if mv:
-                ver = mv.group(0)
-            exact = bool(want_ver) and ver == want_ver
-            if exact and not best_exact:
-                best, best_exact = out, True
-                try:
-                    _VANILLA_SOURCE.update(_load_vanilla_sources(jar))
-                except Exception:
-                    pass
-            elif exact and len(out) > len(best):
-                best = out
-            elif not best_exact and len(out) > len(best):
-                best = out
+        elif exact and len(out) > len(best):
+            best = out
+            if item_tags is not None:
+                item_tags[:] = _item_tag_documents(z, names)
+        elif not best_exact and len(out) > len(best):
+            best = out
     if want_ver and not best_exact:
-        log_once = "  ! no %s client jar found - vanilla list may include items "\
-                   "from another version" % want_ver
+        log_once = "  ! no %s client jar found - using the built-in vanilla "\
+                   "item list instead of another version's items" % want_ver
         try:
             print(log_once)
         except Exception:
             pass
+        return set()
     return best
 
 
@@ -3508,7 +3843,7 @@ def _scan_guide_books(zf, names, lang: dict, blurbs: dict, book_items: set):
                 break
 
 
-def _recipe_ingredient_ids(obj) -> set:
+def _recipe_ingredient_ids(obj, present_mods=None, known_items=None) -> set:
     """Every item id a recipe consumes (ingredients / key / pattern entries)."""
     out = set()
 
@@ -3557,7 +3892,24 @@ def _recipe_ingredient_ids(obj) -> set:
         elif isinstance(v, list):
             for x in v:
                 take(x, depth + 1)
-    if isinstance(obj, dict):
+    for obj in _recipe_variants(obj, present_mods, known_items):
+        # Ars Nouveau's BookUpgradeRecipe serializer uses parseShapeless:
+        # only "ingredients" is authoritative. Some shipped recipes retain
+        # an obsolete shaped key naming the nonexistent ars_nouveau:spell_book.
+        if obj.get("type") == "ars_nouveau:book_upgrade":
+            take(obj.get("ingredients"))
+            continue
+        # GlyphRecipe reads inputItems[*].item as an Ingredient object/array.
+        # The extra wrapper is part of this serializer, not a generic license
+        # to traverse arbitrary recipe metadata that happens to contain IDs.
+        if obj.get("type") == "ars_nouveau:glyph":
+            inputs = obj.get("inputItems")
+            for entry in inputs if isinstance(inputs, list) else []:
+                if isinstance(entry, dict):
+                    take(entry.get("item"))
+            continue
+        if obj.get("type") == "rootsclassic:ritual":
+            take(obj.get("incenses"))
         for key in ("ingredients", "key", "ingredient", "input", "inputs",
                     "base", "addition", "template", "materials"):
             if key not in obj:
@@ -3645,7 +3997,290 @@ class _NestedJar(io.BytesIO):
 # size/mtime covers it. The key also folds in this file's own size/mtime:
 # three workflows are fixing the scanner today, and a scanner fix that keeps
 # serving yesterday's scan is worse than an unnecessary 17s rescan.
-_SCAN_CACHE_VERSION = 2
+_SCAN_CACHE_VERSION = 9
+
+
+def _pack_asset_inputs(instance: Path):
+    """Only local KubeJS files and explicitly enabled resource packs.
+
+    A downloaded but disabled resource pack is not evidence that an item
+    renders. Do not follow symlinks or resource-pack paths outside this pack.
+    Limits also keep a malformed pack from turning a scan into an unbounded
+    filesystem walk. Returned files are reused by the cache fingerprint.
+    """
+    instance = instance.resolve()
+    files, packs = [], []
+
+    def walk(root):
+        if (not root.is_dir() or root.is_symlink()
+                or not root.resolve().is_relative_to(instance)):
+            return []
+        found = []
+        for base, dirs, names in os.walk(root, followlinks=False):
+            dirs[:] = sorted(d for d in dirs if not (Path(base) / d).is_symlink())
+            for name in sorted(names):
+                p = Path(base) / name
+                if not p.is_symlink() and p.suffix.lower() in {".json", ".png", ".js"}:
+                    found.append(p)
+                    if len(found) >= 20000:
+                        return found
+        return found
+
+    for sub in ("assets", "startup_scripts", "server_scripts"):
+        files.extend(walk(instance / "kubejs" / sub))
+    options = instance / "options.txt"
+    if options.is_file() and not options.is_symlink():
+        files.append(options)
+        try:
+            with options.open(encoding="utf-8", errors="replace") as fh:
+                text = fh.read(2 * 1024 * 1024)
+            line = next((s.partition(":")[2] for s in text.splitlines()
+                         if s.startswith("resourcePacks:")), "[]")
+            enabled = json.loads(line)
+            if not isinstance(enabled, list):
+                enabled = []
+        except (OSError, ValueError):
+            enabled = []
+        root = instance / "resourcepacks"
+        if not root.resolve().is_relative_to(instance):
+            return files, packs
+        for ref in enabled[:128]:
+            if not isinstance(ref, str) or not ref.startswith("file/"):
+                continue
+            name = ref[5:]
+            if not name or Path(name).name != name or "/" in name or "\\" in name:
+                continue
+            p = root / name
+            if p.is_symlink() or not p.resolve().is_relative_to(root.resolve()):
+                continue
+            if p.is_dir():
+                assets = walk(p / "assets")
+                files.extend(assets)
+                packs.append((p, assets))
+            elif p.is_file() and p.suffix.lower() in {".zip", ".jar"}:
+                files.append(p)
+                packs.append((p, None))
+    return files, packs
+
+
+def _literal_kubejs_items(source: str, present_mods: set):
+    """Read a small, explicit subset of startup registrations; never run JS.
+
+    Accept literal item builders directly in a registry callback, plus plain
+    Platform.isLoaded guards. Loops, computed IDs, unknown conditions and
+    custom builder types are deliberately omitted rather than guessed.
+    """
+    if len(source) > 2 * 1024 * 1024:
+        return {}
+    lex = re.compile(r"//[^\n]*|/\*[\s\S]*?\*/|'(?:\\.|[^'\\])*'|"
+                     r'"(?:\\.|[^"\\])*"|`(?:\\.|[^`\\])*`|'
+                     r"[A-Za-z_$][\w$]*|=>|[^\s]", re.M)
+    toks = [(m.group(), m.start(), m.end()) for m in lex.finditer(source)
+            if not m.group().startswith(("//", "/*"))]
+    if len(toks) > 200000:
+        return {}
+    values = [t[0] for t in toks]
+    pairs, stack = {}, []
+    for i, v in enumerate(values):
+        if v in ("(", "{", "["):
+            stack.append((v, i))
+        elif v in (")", "}", "]"):
+            if not stack or stack[-1][0] != {")": "(", "}": "{", "]": "["}[v]:
+                return {}
+            _, start = stack.pop()
+            pairs[start] = i
+    if stack:
+        return {}
+
+    def literal(v):
+        # Escaped/computed strings are outside this intentionally small reader.
+        return v[1:-1] if len(v) >= 2 and v[0] in "\"'" and v[-1] == v[0] and "\\" not in v else None
+
+    def condition(start, end):
+        v = values[start:end]
+        negate = bool(v and v[0] == "!")
+        if negate:
+            v = v[1:]
+        if len(v) == 6 and v[:4] == ["Platform", ".", "isLoaded", "("] and v[-1] == ")":
+            mid = literal(v[4])
+            if mid is not None:
+                yes = mid in present_mods
+                return not yes if negate else yes
+        return None
+
+    def skip_statement(i, end):
+        while i < end:
+            if values[i] == ";":
+                return i + 1
+            if i in pairs:
+                i = pairs[i] + 1
+            else:
+                i += 1
+            if i < end and "\n" in source[toks[i - 1][2]:toks[i][1]]:
+                return i
+        return i
+
+    found = {}
+
+    def body(start, end, event):
+        i = start
+        while i < end:
+            if values[i] == ";":
+                i += 1
+                continue
+            if values[i:i + 2] == ["if", "("] and i + 1 in pairs:
+                ce = pairs[i + 1]
+                yes = condition(i + 2, ce)
+                bs = ce + 1
+                if bs < end and values[bs] == "{" and bs in pairs:
+                    be = pairs[bs]
+                    if yes is True:
+                        body(bs + 1, be, event)
+                    i = be + 1
+                    if values[i:i + 2] == ["else", "{"] and i + 1 in pairs:
+                        ee = pairs[i + 1]
+                        if yes is False:
+                            body(i + 2, ee, event)
+                        i = ee + 1
+                    elif i < end and values[i] == "else":
+                        i = skip_statement(i, end)
+                    continue
+                i = skip_statement(bs, end)
+                continue
+            if values[i:i + 4] != [event, ".", "create", "("] or i + 3 not in pairs:
+                i = skip_statement(i, end)
+                continue
+            ce = pairs[i + 3]
+            args = values[i + 4:ce]
+            raw_id = literal(args[0]) if len(args) == 1 else None
+            record = {}
+            j = ce + 1
+            while j + 2 < end and values[j] == "." and values[j + 2] == "(" and j + 2 in pairs:
+                me = pairs[j + 2]
+                argv = values[j + 3:me]
+                value = literal(argv[0]) if len(argv) == 1 else None
+                if values[j + 1] in ("texture", "displayName"):
+                    # An unparsed texture override must not fall back to a
+                    # coincidentally present default PNG.
+                    record[values[j + 1]] = value
+                j = me + 1
+            if raw_id and re.fullmatch(r"(?:[a-z0-9_.-]+:)?[a-z0-9_./-]+", raw_id):
+                iid = raw_id if ":" in raw_id else "kubejs:" + raw_id
+                if ".." not in iid:
+                    found[iid] = record
+            i = j
+
+    # Only top-level registry calls. A registry inside an unknown conditional
+    # or function is not evidence that it executes in this instance.
+    i = 0
+    while i < len(values):
+        if values[i:i + 4] == ["StartupEvents", ".", "registry", "("] and i + 3 in pairs:
+            end = pairs[i + 3]
+            v = values[i + 4:end]
+            if len(v) >= 6 and literal(v[0]) == "item" and v[1] == ",":
+                cb = i + 6
+                if values[cb:cb + 1] == ["("] and cb in pairs and pairs[cb] == cb + 2:
+                    event, arrow = values[cb + 1], cb + 3
+                else:
+                    event, arrow = values[cb], cb + 1
+                if values[arrow:arrow + 2] == ["=>", "{"] and arrow + 1 in pairs:
+                    body(arrow + 2, pairs[arrow + 1], event)
+            i = end + 1
+        elif values[i] in ("if", "for", "while", "switch", "catch"):
+            # Skip a whole control statement, including an unbraced body.
+            start = i + 1
+            if start in pairs:
+                start = pairs[start] + 1
+            i = skip_statement(start, len(values))
+        elif values[i] == ";":
+            i += 1
+        else:
+            i = skip_statement(i, len(values))
+    return found
+
+
+def _index_pack_assets(instance, all_models, all_states, all_textures, present_mods):
+    """Overlay local assets and return only verified literal KubeJS items."""
+    files, packs = _pack_asset_inputs(instance)
+    notes, lang, records = [], {}, {}
+    budget = [64 * 1024 * 1024]
+
+    def index(name, read, size):
+        if size > 2 * 1024 * 1024 or budget[0] <= 0:
+            return
+        m = re.fullmatch(r"assets/([a-z0-9_.-]+)/(models/(.+)\.json|blockstates/(.+)\.json|textures/(.+)\.png|lang/en_us\.json)", name)
+        if not m or ".." in name.split("/"):
+            return
+        ns = m[1]
+        limit = 24 if m[5] else size
+        try:
+            raw = read(limit)
+            budget[0] -= len(raw)
+            if m[5]:
+                if raw[:8] == b"\x89PNG\r\n\x1a\n":
+                    all_textures.add(ns + ":" + m[5])
+            elif m[3]:
+                all_models[ns + ":" + m[3]] = raw
+            elif m[4]:
+                all_states[ns + ":" + m[4]] = raw
+            else:
+                data = json.loads(raw)
+                if isinstance(data, dict):
+                    lang.update(data)
+        except (OSError, ValueError, RuntimeError, zipfile.BadZipFile):
+            pass
+
+    def disk(p, root):
+        try:
+            with p.open("rb") as fh:
+                index(p.relative_to(root).as_posix(), fh.read, p.stat().st_size)
+        except OSError:
+            pass
+
+    # KubeJS assets act as a resource pack; explicitly selected user packs are
+    # overlaid in their listed order so their model overrides are validated.
+    local = instance / "kubejs"
+    for p in files:
+        if p.is_relative_to(local / "assets"):
+            disk(p, local)
+    for pack, entries in packs:
+        if entries is not None:
+            for p in entries:
+                disk(p, pack)
+        else:
+            try:
+                with zipfile.ZipFile(pack) as zf:
+                    for entry in zf.infolist()[:20000]:
+                        if not entry.is_dir():
+                            with zf.open(entry) as fh:
+                                index(entry.filename, fh.read, entry.file_size)
+            except (OSError, RuntimeError, zipfile.BadZipFile):
+                notes.append("An enabled resource pack could not be read: " + pack.name)
+    if "kubejs" in present_mods:
+        for p in files:
+            if p.is_relative_to(local / "startup_scripts") and p.suffix == ".js":
+                try:
+                    if p.stat().st_size <= 2 * 1024 * 1024:
+                        records.update(_literal_kubejs_items(p.read_text(encoding="utf-8", errors="replace"), present_mods))
+                except OSError:
+                    pass
+    verified = {}
+    for iid, record in records.items():
+        if "texture" in record and not isinstance(record["texture"], str):
+            continue
+        ns, path = iid.split(":", 1)
+        key = ns + ":item/" + path
+        texture = record.get("texture", ns + ":item/" + path)
+        if key not in all_models and isinstance(texture, str) and texture in all_textures:
+            all_models[key] = json.dumps({"parent": "minecraft:item/generated",
+                                          "textures": {"layer0": texture}})
+        if key in all_models and textures_ok(iid, all_models, all_states, all_textures, {}):
+            name = record.get("displayName") or lang.get("item." + ns + "." + path)
+            verified[iid] = re.sub(r"§.", "", name) if isinstance(name, str) else ""
+    if records:
+        notes.append("Read %d literal KubeJS item registrations; %d have verified models and textures. Computed registrations and unknown script conditions are not executed."
+                     % (len(records), len(verified)))
+    return verified, lang, notes
 
 
 def _scan_cache_path(folder: Path) -> Path:
@@ -3655,9 +4290,12 @@ def _scan_cache_path(folder: Path) -> Path:
         str(folder.resolve()).lower().encode("utf-8")).hexdigest()[:12])
 
 
-def _scan_cache_key(folder: Path, per_mod_cap: int) -> str:
+def _scan_cache_key(folder: Path, per_mod_cap: int, runtime_profile=None) -> str:
     try:
         import sys
+        from quest_registry_profile import match_profile
+        if runtime_profile is None:
+            runtime_profile = match_profile(folder.parent, _instance_mc_version(folder.parent))
         # Frozen: stat the exe, not __file__ - the extracted copy inside
         # _MEIPASS gets a fresh mtime on some launches, which would junk the
         # cache every run for no reason.
@@ -3665,10 +4303,34 @@ def _scan_cache_key(folder: Path, per_mod_cap: int) -> str:
             else Path(__file__)
         _src = _src_path.stat()
         sig = ["v%d" % _SCAN_CACHE_VERSION, "cap%d" % per_mod_cap,
-               "src|%d|%d" % (_src.st_size, _src.st_mtime_ns)]
+               "src|%d|%d" % (_src.st_size, _src.st_mtime_ns),
+               "minecraft|%s" % _instance_mc_version(folder.parent),
+               "runtime-profile|%s|%s" % (runtime_profile.get("data_digest", ""),
+                                          runtime_profile.get("signature", "")),
+               "guides|" + hashlib.sha1(json.dumps([
+                   globals().get("_RESEARCHED", {}),
+                   globals().get("_GUIDED_REQUIREMENTS", {}),
+                   globals().get("_GUIDE_REQUIRED_MODS", {}),
+                   globals().get("_GUIDE_ACQUISITION", {}),
+                   globals().get("_GUIDE_CHECKS", {})],
+                   sort_keys=True).encode("utf-8")).hexdigest()]
+        for client in _vanilla_client_candidates(folder):
+            stat = client.stat()
+            sig.append("client|%s|%d|%d" % (client, stat.st_size, stat.st_mtime_ns))
         for p in sorted(folder.glob("*.jar")) + sorted(folder.glob("*.zip")):
             st = p.stat()
             sig.append("%s|%d|%d" % (p.name, st.st_size, st.st_mtime_ns))
+        local_files, _packs = _pack_asset_inputs(folder.parent.resolve())
+        for p in local_files:
+            st = p.stat()
+            sig.append("pack|%s|%d|%d" % (p.relative_to(folder.parent.resolve()),
+                                        st.st_size, st.st_mtime_ns))
+        if not getattr(sys, "frozen", False):
+            for name in ("quest_packdata.py", "quest_registry_profile.py"):
+                helper = Path(__file__).with_name(name)
+                if helper.is_file():
+                    st = helper.stat()
+                    sig.append("%s|%d|%d" % (name, st.st_size, st.st_mtime_ns))
         return hashlib.sha1("\n".join(sig).encode("utf-8")).hexdigest()
     except Exception:
         return ""            # unstattable folder -> never cache
@@ -3689,18 +4351,13 @@ def textures_ok(item_id: str, all_models: dict, all_states: dict,
     if item_id in cache:
         return cache[item_id]
     ns, short = (item_id.split(":", 1) + [""])[:2]
-    ok = True
-    starts = ["%s:item/%s" % (ns, short)]
-    # A block item renders through its BLOCKSTATE's models. When a
-    # blockstate exists it is the authority, and the speculative
-    # "<ns>:block/<name>" model must NOT be consulted: Quark ships a stale
-    # block/feeding_trough naming a texture it no longer includes, while
-    # the block itself renders fine through trough_empty/trough_full. That
-    # dead asset was vetoing a real, craftable item.
+    item_model = "%s:item/%s" % (ns, short)
+    starts = [item_model] if item_model in all_models else []
+    # The inventory model is authoritative for a quest icon. A placed block
+    # can have unrelated or deliberately incomplete model variants; those
+    # must not veto an item whose inventory model renders correctly.
     st = all_states.get("%s:%s" % (ns, short))
-    if not st:
-        starts.append("%s:block/%s" % (ns, short))
-    if st:
+    if not starts and st:
         try:
             sd = json.loads(st)
             cand = []
@@ -3709,31 +4366,72 @@ def textures_ok(item_id: str, all_models: dict, all_states: dict,
             for part in (sd.get("multipart") or []):
                 a = part.get("apply")
                 cand += a if isinstance(a, list) else [a]
-            for c in cand[:8]:
+            for c in cand:
                 mdl = (c or {}).get("model") if isinstance(c, dict) else None
                 if isinstance(mdl, str):
                     starts.append(mdl if ":" in mdl else "minecraft:" + mdl)
         except Exception:
-            pass
-    # check the item model chain AND the same-named block model — a block
-    # item often renders through the block model, and that's where these
-    # decoration mods lose their textures.
-    for start in starts:
+            cache[item_id] = False
+            return False
+    if not starts and not st:
+        block_model = "%s:block/%s" % (ns, short)
+        if block_model in all_models:
+            starts.append(block_model)
+
+    checked = set()
+
+    def check_model(start, stack):
+        if start in checked:
+            return True
+        if start in stack or len(stack) > 32:
+            return False
         key = start
         seen_models = set()
         resolved: dict = {}
-        for depth in range(6):               # depth-limited parent walk
+        overrides = []
+        elements = None              # child elements replace parent elements
+        layered = False
+        known_renderer = True
+        for depth in range(32):
             raw = all_models.get(key)
             if raw is None:
-                # a dangling parent (not the starting model, and not vanilla)
-                # means the model can't render at all
-                if depth > 0 and key.split(":", 1)[0] != "minecraft":
-                    ok = False
+                # These texture-free parents ship with Forge itself, outside
+                # the scanned mods folder. Keep the allowlist exact: accepting
+                # arbitrary forge:* parents would conceal broken model paths.
+                # Forge 1.20.x assets/forge/models/{item,block}/default.json.
+                if (key.split(":", 1)[0] != "minecraft"
+                        and key not in {"forge:item/default", "forge:block/default",
+                                        "neoforge:item/default", "neoforge:block/default"}):
+                    return False
                 break
             if key in seen_models:
-                break
+                return False
             seen_models.add(key)
+            try:
+                model = json.loads(raw)
+            except (ValueError, TypeError):
+                return False
+            if not isinstance(model, dict):
+                return False
+            if elements is None and "elements" in model:
+                elements = model["elements"]
+            loader = model.get("loader")
+            if loader in ("forge:item_layers", "neoforge:item_layers"):
+                layered = True
+            elif loader:
+                known_renderer = False
+            # BlockModel.getOverrides() reads the model's own list; unlike
+            # textures/elements it does not inherit its parent's predicates.
+            # Inheriting them creates artificial cycles when a state model
+            # uses its base item as parent (LaserIO cards, Thermal tools).
+            for override in (model.get("overrides") or []) if depth == 0 else []:
+                mdl = override.get("model") if isinstance(override, dict) else None
+                if isinstance(mdl, str):
+                    overrides.append(mdl if ":" in mdl else "minecraft:" + mdl)
             tmap, parent = _model_texmap(raw)
+            if parent in ("minecraft:item/generated", "minecraft:item/handheld",
+                          "minecraft:item/handheld_rod", "minecraft:builtin/generated"):
+                layered = True
             for slot, val in tmap.items():
                 resolved.setdefault(slot, val)   # child wins over parent
             if parent is None:
@@ -3741,20 +4439,79 @@ def textures_ok(item_id: str, all_models: dict, all_states: dict,
             if parent.split(":", 1)[0] == "minecraft":
                 break                        # vanilla parent, nothing to check
             key = parent
+        else:
+            return False
+        def resolve_texture(value):
+            aliases = set()
+            while isinstance(value, str) and value.startswith("#"):
+                alias = value[1:]
+                if alias in aliases or alias not in resolved:
+                    return None, aliases
+                aliases.add(alias)
+                value = resolved[alias]
+            return value, aliases
+
+        def texture_exists(value):
+            if not isinstance(value, str) or not value:
+                return False
+            if ":" not in value:
+                value = "minecraft:" + value
+            return (
+                value.split(":", 1)[0] == "minecraft" or value in all_textures)
+
+        # The inherited particle slot is used for breaking particles, not the
+        # inventory image. Ignore it ONLY when explicit effective faces or
+        # generated layers all resolve to real visible textures and none goes
+        # through #particle. Custom loaders whose visible slots are unknown
+        # retain the conservative check. EnderIO's conduit overrides texture
+        # 0 for every face but inherits an obsolete particle PNG from its base.
+        visible = []
+        if isinstance(elements, list):
+            for element in elements:
+                faces = element.get("faces") if isinstance(element, dict) else None
+                if not isinstance(faces, dict):
+                    known_renderer = False
+                    continue
+                for face in faces.values():
+                    if not isinstance(face, dict) or not isinstance(face.get("texture"), str):
+                        known_renderer = False
+                    else:
+                        visible.append(face["texture"])
+        elif elements is not None:
+            known_renderer = False
+        if layered:
+            visible.extend("#" + slot for slot in resolved if re.fullmatch(r"layer\d+", slot))
+        unused_particle = bool(visible) and known_renderer
+        for face in visible:
+            value, aliases = resolve_texture(face)
+            if not texture_exists(value):
+                return False
+            if "particle" in aliases:
+                unused_particle = False
+
         # Check only what SURVIVED the child-first merge. A slot the child
         # overrode is never rendered from the parent's value, so a parent
         # template's placeholder must not condemn the item.
         for slot, val in resolved.items():
-            if val.split(":", 1)[0] == "minecraft":
-                continue                     # vanilla textures ship in the client
-            if val not in all_textures:
+            if slot == "particle" and unused_particle:
+                continue
+            val, _aliases = resolve_texture(val)
+            if not texture_exists(val):
                 if os.environ.get("AQG_TRACE_ID") == item_id:
                     print("[trace]   %s slot %r -> missing texture %r"
                           % (start, slot, val))
-                ok = False
-                break
-        if not ok:
-            break
+                return False
+        for override in overrides:
+            # A self-override is used by some custom loaders to reset a
+            # predicate. It adds no new asset to inspect.
+            if override != start and not check_model(override, stack | {start}):
+                return False
+        checked.add(start)
+        return True
+
+    # No conventional model can mean a registered custom renderer. Existence
+    # is checked separately by scan_mods, with geometry and data evidence.
+    ok = all(check_model(start, set()) for start in starts)
     cache[item_id] = ok
     return ok
 
@@ -3769,7 +4526,7 @@ def _jar_format_census(folder: Path) -> dict:
     """
     import zipfile as _zip
     out = {"total": 0, "modern": 0, "legacy": 0, "fabric": 0, "bare": 0,
-           "items": 0}
+           "items": 0, "item_definitions": 0}
     for j in sorted(folder.glob("*.jar")):
         out["total"] += 1
         try:
@@ -3778,7 +4535,10 @@ def _jar_format_census(folder: Path) -> dict:
         except Exception:
             out["bare"] += 1
             continue
-        if any(n.startswith("assets/") and "/models/item/" in n for n in names):
+        definitions = any(re.match(r"^assets/[^/]+/items/.+\.json$", n) for n in names)
+        if definitions:
+            out["item_definitions"] += 1
+        if definitions or any(n.startswith("assets/") and "/models/item/" in n for n in names):
             out["items"] += 1
         if ("META-INF/mods.toml" in names
                 or "META-INF/neoforge.mods.toml" in names):
@@ -3803,7 +4563,18 @@ def _coverage_note(folder: Path, n_mods: int) -> str:
     who loads them, so the loader is only evidence when the metadata format
     itself is one this app cannot parse.
     """
+    version = _instance_mc_version(folder.parent)
+    unsupported = _unsupported_version_note(version)
+    if unsupported:
+        return unsupported
     c = _jar_format_census(folder)
+    # Multiversion mods can bundle newer assets alongside their ordinary
+    # inventory models. The installed instance version decides which format
+    # Minecraft uses; ATM10 1.21.1 includes three such dual-format mods.
+    if c["item_definitions"] and not version:
+        return ("This pack contains newer item-definition files that this "
+                "generator cannot yet validate. Quest generation and export "
+                "are disabled; use a Minecraft 1.20.1 FTB Quests instance.")
     n = c["total"]
     if not n:
         return "that folder has no .jar files in it."
@@ -3838,8 +4609,58 @@ def _why_no_mods(folder: Path) -> str:
     return _coverage_note(folder, 0)
 
 
+def _goal_display_text(value, language: dict) -> str:
+    """Read a literal display label without executing or inventing arguments."""
+    if isinstance(value, dict):
+        value = language.get(value.get("translate", ""), "") or value.get("text", "")
+    if not isinstance(value, str) or re.search(r"%(?:\d+\$)?[sdif]", value):
+        return ""
+    return value.strip()
+
+
+def _goal_registry_names(registry: dict, kind: str, language: dict) -> dict:
+    """Translations label known records; a translation never registers one."""
+    result = {}
+    for ids in registry.values():
+        for identity in sorted(ids):
+            namespace, _, path = identity.partition(":")
+            for candidate in (path, path.replace("/", ".")):
+                label = _goal_display_text(language.get("%s.%s.%s" % (kind, namespace, candidate)), language)
+                if label:
+                    result[identity] = label[:240]
+                    break
+    return result
+
+
+def _goal_advancement_metadata(advancements: dict, language: dict) -> tuple:
+    """Preserve action facts separately from item-only teaching progression."""
+    catalog, info = {}, {}
+    for identity, advancement in sorted(advancements.items()):
+        if not isinstance(advancement, dict):
+            continue
+        catalog.setdefault(identity.split(":", 1)[0], set()).add(identity)
+        display = advancement.get("display")
+        if not isinstance(display, dict):
+            continue
+        icon = display.get("icon") or {}
+        icon = icon.get("item") or icon.get("id") if isinstance(icon, dict) else ""
+        info[identity] = {
+            "id": identity,
+            "title": _goal_display_text(display.get("title"), language)[:240],
+            "description": _goal_display_text(display.get("description"), language)[:1600],
+            "parent": advancement.get("parent") if isinstance(advancement.get("parent"), str) else "",
+            "icon": icon if isinstance(icon, str) else "",
+            "criteria": advancement.get("criteria") if isinstance(advancement.get("criteria"), dict) else {},
+            "requirements": advancement.get("requirements") if isinstance(advancement.get("requirements"), list) else [],
+        }
+    return catalog, info
+
+
 def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
-    _ckey = _scan_cache_key(folder, per_mod_cap)
+    from quest_registry_profile import match_profile, apply_profile
+    _runtime_profile = match_profile(folder.parent, _instance_mc_version(folder.parent))
+    log("  " + _runtime_profile["message"])
+    _ckey = _scan_cache_key(folder, per_mod_cap, _runtime_profile)
     _cpath = _scan_cache_path(folder)
     if _ckey and _cpath.is_file():
         try:
@@ -3850,9 +4671,16 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
                     % _cpath.name)
                 if progress:
                     progress(1.0, "loaded cached scan")
-                return _cached["scan"]
+                cached_scan = _cached["scan"]
+                _restore_colour_siblings(cached_scan)
+                _VANILLA_SOURCE.clear()
+                _VANILLA_SOURCE.update(cached_scan.get("vanilla_sources", {}))
+                _VANILLA_CRAFTABLE.clear()
+                _VANILLA_CRAFTABLE.update(cached_scan.get("vanilla_craftable", ()))
+                return cached_scan
         except Exception:
             pass             # unreadable / stale-format cache -> full rescan
+    _COLOUR_SIBLINGS.clear()  # A fresh pack must not inherit another pack's variants.
     jars = sorted(folder.glob("*.jar")) + sorted(folder.glob("*.zip"))
     # Forge JarJar: a mod may ship whole modules only as nested jars under
     # META-INF/jarjar/. On the 338-jar pack, thermal_core exists NOWHERE at
@@ -3903,6 +4731,7 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
     struct_info: dict = {}          # structure id -> {biomes, step, spawn, spacing}
     biome_tags: dict = {}           # "ns:path" -> biome ids / nested #tags
     tag_members: dict = {}          # "ns:path" -> the item ids in that tag
+    tag_documents: list = []        # raw mod layers, applied after vanilla
     total = max(1, len(jars))
 
     # Pass 0: every texture that actually ships, so we can reject items whose
@@ -3910,7 +4739,9 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
     all_textures: set = set()
     all_models: dict = {}          # "ns:item/foo" / "ns:block/foo" -> raw json
     all_states: dict = {}          # "ns:foo" -> raw blockstate json
+    all_geometry: set = set()      # custom-rendered items can lack flat models
     all_advs: dict = {}            # "ns:path" -> advancement json (progression tree)
+    recipe_mods = {"minecraft"}    # all jars, independent of scan/filename order
     _MODEL_ANY = re.compile(r"^assets/([a-z0-9_]+)/models/(.+)\.json$")
     _STATE_ANY = re.compile(r"^assets/([a-z0-9_]+)/blockstates/([a-z0-9_]+)\.json$")
     _ADV_ANY = re.compile(r"^data/([a-z0-9_]+)/advancements?/(.+)\.json$")
@@ -3934,7 +4765,11 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
             continue
         _names0 = zf0.namelist()
         _nameset0 = set(_names0)
+        recipe_mods.update(_recipe_mod_ids(zf0, _nameset0))
         for nm in _names0:
+            gm = _MODEL_GEO_RE.match(nm)
+            if gm:
+                all_geometry.add("%s:%s" % (gm.group(1), gm.group(2)))
             t = _TEX_RE.match(nm)
             if t:
                 all_textures.add("%s:%s" % (t.group(1), t.group(2)))
@@ -3978,6 +4813,30 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
                     all_advs["%s:%s" % (am.group(1), am.group(2))] = json.loads(zf0.read(nm))
                 except Exception:
                     pass
+
+    pack_items, pack_lang, pack_asset_notes = _index_pack_assets(
+        folder.parent.resolve(), all_models, all_states, all_textures, recipe_mods)
+    from quest_packdata import load_pack_recipes
+    pack_recipe_report = load_pack_recipes(folder.parent)
+    # The selection cap may thin decorative variants, but it must not remove
+    # a verified inventory item required by a concrete pack-authored recipe.
+    # These refs only pin items that survive ordinary model/texture checks.
+    pack_recipe_refs = set()
+    for recipe in pack_recipe_report["recipes"]:
+        pack_recipe_refs.add(recipe["output"]["id"])
+        pack_recipe_refs.update(stack["id"] for stack in recipe["ingredients"]
+                                if not stack["id"].startswith("#"))
+    for note in pack_asset_notes:
+        log("  " + note)
+
+    # Item-exists guards must use inventory evidence, not recipe outputs: a
+    # compat recipe is not proof that its target was registered in this pack.
+    recipe_known_items = set(_VANILLA_ITEMS) | set(all_geometry)
+    recipe_known_items.update(pack_items)
+    for _model in all_models:
+        _ns, _, _path = _model.partition(":")
+        if _ns in recipe_mods and _path.startswith("item/"):
+            recipe_known_items.add(_ns + ":" + _path[len("item/"):])
 
     # Cap each namespace. `chipped` alone yields 6,216 near-identical brick
     # variants; uncapped it swamps the pool, bloats the cached scan, and gives
@@ -4087,26 +4946,22 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
                 rj = json.loads(zf.read(n))
             except Exception:
                 continue
-            outs = _recipe_result_ids(rj)
-            recipe_items |= outs
-            ing = _recipe_ingredient_ids(rj)
-            if ing:
-                _one = (str(rj.get("type") or ""), frozenset(ing))
+            for recipe in _recipe_variants(rj, recipe_mods, recipe_known_items):
+                outs = _recipe_result_ids(recipe, recipe_mods, recipe_known_items)
+                recipe_items |= outs
+                ing = _recipe_ingredient_ids(recipe, recipe_mods, recipe_known_items)
+                if ing:
+                    _one = (str(recipe.get("type") or ""), frozenset(ing))
+                    for o in outs:
+                        craft_edges.setdefault(o, set()).update(ing)
+                        craft_recipes.setdefault(o, []).append(_one)
+                # Keep requirements per selected recipe, never the union of
+                # conditional alternatives or the ids named by its guards.
+                _need = {i.split(":", 1)[0] for i in ing
+                         if ":" in i and not i.startswith("#")}
+                _need -= {"minecraft", "forge", "c"}
                 for o in outs:
-                    craft_edges.setdefault(o, set()).update(ing)
-                    craft_recipes.setdefault(o, []).append(_one)
-            # Which mods THIS recipe needs, kept per-recipe. craft_edges unions
-            # ingredients across every recipe for an output, so it cannot say
-            # whether a particular route is usable. Dreadsteel's ingot - the
-            # sole gate to 10 of its 11 items - requires iceandfire:dread_shard
-            # while its own mods.toml declares no such dependency, so a pack
-            # without Ice and Fire gets a chapter of uncompletable quests and
-            # nothing warns anyone.
-            _need = {i.split(":", 1)[0] for i in ing
-                     if ":" in i and not i.startswith("#")}
-            _need -= {"minecraft", "forge", "c"}
-            for o in outs:
-                recipe_reqs.setdefault(o, []).append(_need)
+                    recipe_reqs.setdefault(o, []).append(_need)
 
         # --- loot sources: an item with no usable RECIPE may still drop ---
         for n in names:
@@ -4164,6 +5019,54 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
                 key = "%s:%s" % (bp[1], "/".join(bp[3:])[:-5])
                 struct_loot.setdefault(key, set()).update(found)
 
+        # Registered global loot modifiers are a separate acquisition path.
+        # Support the verified Deeper and Darker add-item schema narrowly;
+        # an arbitrary JSON field called 'item' is not a loot source.
+        for registry in ("data/neoforge/loot_modifiers/global_loot_modifiers.json",
+                         "data/forge/loot_modifiers/global_loot_modifiers.json"):
+            if registry not in names:
+                continue
+            try:
+                entries = json.loads(zf.read(registry)).get("entries", [])
+            except (ValueError, AttributeError):
+                continue
+            for entry in entries if isinstance(entries, list) else []:
+                if not isinstance(entry, str) or not re.fullmatch(r"[a-z0-9_.-]+:[a-z0-9_/-]+", entry):
+                    continue
+                namespace, path = entry.split(":", 1)
+                if ".." in path:
+                    continue
+                filename = "data/%s/loot_modifiers/%s.json" % (namespace, path)
+                if filename not in names:
+                    continue
+                try:
+                    modifier = json.loads(zf.read(filename))
+                    conditions = modifier.get("conditions", [])
+                    item = modifier.get("item")
+                    if (modifier.get("type") != "deeperdarker:add"
+                            or not isinstance(item, str) or not _RESLOC_RE.fullmatch(item)
+                            or not isinstance(modifier.get("max"), int) or modifier["max"] < 1
+                            or not isinstance(conditions, list) or len(conditions) != 1):
+                        continue
+                    condition = conditions[0]
+                    if not isinstance(condition, dict) or condition.get("condition") not in (
+                            "forge:loot_table_id", "neoforge:loot_table_id"):
+                        continue
+                    table = condition.get("loot_table_id")
+                    if not isinstance(table, str) or not _RESLOC_RE.fullmatch(table):
+                        continue
+                    table_ns, table_path = table.split(":", 1)
+                    kind, separator, source = table_path.partition("/")
+                    if not separator or kind not in ("entities", "blocks", "gameplay", "chests"):
+                        continue
+                    loot_items.add(item)
+                    if kind == "chests":
+                        struct_loot.setdefault(table, set()).add(item)
+                    else:
+                        drops.setdefault(item, {}).setdefault(kind, set()).add(table_ns + ":" + source)
+                except (ValueError, AttributeError, TypeError):
+                    continue
+
         # --- source 2b: the mod's own advancements name its own items ---
         # An advancement is the mod pointing at an item and saying "get this",
         # which is proof of registration in exactly the way a lang key is not.
@@ -4184,21 +5087,13 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
 
         # --- source 3: item tags — ids grouped into tags are real items ---
         tag_items: set = set()
-        for n in names:
-            if not (n.endswith(".json") and ("/tags/item/" in n or "/tags/items/" in n)):
-                continue
-            try:
-                parts = n.replace("\\", "/").split("/")
-                tns = parts[1] if len(parts) > 2 else "minecraft"
-                after = n.split("/tags/item/", 1)[-1] if "/tags/item/" in n                     else n.split("/tags/items/", 1)[-1]
-                tname = "%s:%s" % (tns, after[:-5])
-                for v in (json.loads(zf.read(n)).get("values") or []):
-                    v = v.get("id") if isinstance(v, dict) else v
-                    if isinstance(v, str) and ":" in v and not v.startswith("#"):
-                        tag_items.add(v)
-                        tag_members.setdefault(tname, set()).add(v)
-            except Exception:
-                pass
+        jar_tags = _item_tag_documents(zf, names)
+        tag_documents.extend(jar_tags)
+        for _tname, tag in jar_tags:
+            for value in tag["values"]:
+                value = value.get("id") if isinstance(value, dict) else value
+                if isinstance(value, str) and ":" in value and not value.startswith("#"):
+                    tag_items.add(value)
 
         # --- source 4: lang file — display names + last-ditch fallback ---
         lang_items: set = set()
@@ -4381,7 +5276,8 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
             # this mod's own namespace. A stray `item.modifiers.both_hands`
             # tooltip key in a library jar is not an item.
             real = {i for i in (set(lang_items) | recipe_items | tag_items)
-                    if "/" not in i and i.split(":")[0] == mod_id}
+                    if "/" not in i and i.split(":")[0] == mod_id
+                    and not any(mark in i.split(":", 1)[1] for mark in _NON_ITEM_MARK)}
         # drop missing-texture items, and remember how leaky this mod is: a mod
         # that ships many broken models almost certainly ships more that this
         # static check can't see, so it shouldn't drive quests at all.
@@ -4451,6 +5347,7 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
             # it as fake and swapped it for filler. Pinned ids ride above the
             # cap.
             pinned = set()
+            pinned.update(pack_recipe_refs & it)
             for ref, _t, _d in (_curated_chain(mod_id) or []):
                 for cand in str(ref).split("|"):
                     cand = cand.strip()
@@ -4461,6 +5358,8 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
             for _e in (_HARVESTED_DB.get(mod_id) or []):
                 if isinstance(_e, dict) and _e.get("item") in it:
                     pinned.add(_e["item"])
+            pinned.update(info["icon"] for info in globals().get("_GUIDE_CHECKS", {}).values()
+                          if info["mod"] == mod_id and info["icon"] in it)
             # (the advancement tree is built AFTER this loop, so it cannot be
             # consulted here - curated chains and pack consensus already cover
             # the ids that matter)
@@ -4470,6 +5369,27 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
             keep = pinned | set(ranked[: max(0, per_mod_cap - len(pinned))])
             items[mod_id] = keep
             craftable[mod_id] = cr & keep
+    # Literal startup registrations are inventory evidence even though the
+    # corresponding generated models/lang never appear inside a mod jar.
+    for iid, name in pack_items.items():
+        mid = iid.split(":", 1)[0]
+        items.setdefault(mid, set()).add(iid)
+        craftable.setdefault(mid, set())
+        entities.setdefault(mid, set())
+        if name:
+            disp_names[iid] = name
+        if mid not in seen:
+            mods.append({"mod_id": mid, "name": "Pack items (%s)" % mid,
+                         "filename": "kubejs/startup_scripts", "size": 0,
+                         "category": "utility", "description": "Locally registered pack items with verified assets.",
+                         "authors": "", "url": "", "logo": None})
+            seen.add(mid)
+    for key, value in pack_lang.items():
+        match = _LANG_ITEM_RE.match(key)
+        if match and isinstance(value, str) and 1 < len(value) < 60:
+            iid = "%s:%s" % (match.group(2), match.group(3))
+            if iid in items.get(match.group(2), ()):
+                disp_names[iid] = value
     log("scanned %d mods, %d item IDs (%d craftable), %d entity IDs"
         % (len(mods), sum(len(v) for v in items.values()),
            sum(len(v) for v in craftable.values()),
@@ -4492,6 +5412,8 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
                 except Exception:
                     pass
 
+    lang_names.update(pack_lang)
+    advancement_catalog, advancement_info = _goal_advancement_metadata(all_advs, lang_names)
     progression: dict = {}
     parent_of = {k: v.get("parent") for k, v in all_advs.items()}
 
@@ -4612,10 +5534,12 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
     if leaky:
         log("  ! %d mod(s) ship broken textures, skipped for quests: %s"
             % (len(leaky), ", ".join(leaky[:6]) + (" ..." if len(leaky) > 6 else "")))
-    vanilla = _vanilla_items_from_client(folder)
+    vanilla_tag_documents = []
+    vanilla = _vanilla_items_from_client(folder, item_tags=vanilla_tag_documents)
+    tag_members = _resolve_item_tag_documents(vanilla_tag_documents + tag_documents)
     if vanilla:
         log("  vanilla item list read from the client jar (%d ids)" % len(vanilla))
-    else:
+    elif not _unsupported_version_note(_instance_mc_version(folder.parent)):
         vanilla = set(_VANILLA_ITEMS)
     # filled by the same jar walk, and only when the version matched exactly.
     # Log it like the item list so a missing jar is visible rather than quietly
@@ -4643,6 +5567,50 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
     if resolved:
         log("  resolved %d tag ingredient(s) from %d item tags"
             % (resolved, len(tag_members)))
+    # Pack-authored recipes can replace a mod's ordinary progression. Keep
+    # literal recipe records with their quantities/components, and prefer
+    # those concrete routes to the JAR's recycling recipe for an endgame goal.
+    _known_pack_items = set(vanilla)
+    for _values in items.values():
+        _known_pack_items.update(_values)
+    # A pack can intentionally make a normally creative-only item craftable.
+    # Rescue only that naming exclusion, using independent inventory evidence
+    # and a concrete local recipe. Recipes alone never register an item.
+    for _recipe in pack_recipe_report["recipes"]:
+        _output = _recipe["output"]
+        _iid = _output["id"]
+        _ns, _, _short = _iid.partition(":")
+        if (_output["components"] or _iid in _known_pack_items or _ns not in recipe_mods
+                or not any(mark in _short for mark in ("creative_", "_creative"))
+                or any(mark in _short for mark in _NON_ITEM_MARK
+                       if mark not in ("creative_", "_creative"))
+                or _iid not in disp_names or _ns + ":item/" + _short not in all_models):
+            continue
+        _ingredients = {_stack["id"] for _stack in _recipe["ingredients"]}
+        if any((not tag_members.get(i[1:])) if i.startswith("#") else i not in _known_pack_items
+               for i in _ingredients):
+            continue
+        if textures_ok(_iid, all_models, all_states, all_textures, _tex_cache):
+            items.setdefault(_ns, set()).add(_iid)
+            _known_pack_items.add(_iid)
+    _pack_routes = collections.defaultdict(list)
+    for _recipe in pack_recipe_report["recipes"]:
+        _output = _recipe["output"]
+        _out_id = _output["id"]
+        if _out_id not in _known_pack_items:
+            continue
+        _ingredients = {_stack["id"] for _stack in _recipe["ingredients"]}
+        if any(not _i.startswith("#") and _i not in _known_pack_items for _i in _ingredients):
+            continue
+        craftable.setdefault(_out_id.split(":")[0], set()).add(_out_id)
+        if not _output["components"]:
+            _pack_routes[_out_id].append((_recipe["kind"], frozenset(_ingredients)))
+    for _out_id, _routes in _pack_routes.items():
+        craft_recipes[_out_id] = _routes
+        craft_edges[_out_id] = set.intersection(*(set(ings) for _kind, ings in _routes)) - {_out_id}
+    if pack_recipe_report["recipes"]:
+        log("  read %d literal pack recipes; %d dynamic or unsupported routes need the pack's recipe viewer"
+            % (len(pack_recipe_report["recipes"]), len(pack_recipe_report["skipped"])))
     tiers = _craft_tiers(craft_edges, vanilla=vanilla, alts=craft_alts)
     if tiers:
         log("  crafting tiers derived from %d recipes (max depth %d)"
@@ -4722,6 +5690,7 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
             if ("%s:item/%s" % (ns, short) in all_models
                     or "%s:block/%s" % (ns, short) in all_models
                     or "%s:%s" % (ns, short) in all_states
+                    or _i in all_geometry
                     or _i in vanilla):
                 continue
             _phantom.add(_i)
@@ -4744,12 +5713,18 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
     for _mid, _ids in items.items():
         for _i in _ids:
             if (_i in _craftable_any or _i in loot_items or _i in _tagged
+                    or _i in _GUIDE_ACQUISITION
                     or craft_edges.get(_i) or _i in drops):
                 continue
             unobtainable.add(_i)
     if unobtainable:
         log("  %d item(s) have no recipe, loot table or tag - they will not "
             "be used as quest goals" % len(unobtainable))
+    guide_unavailable = _disabled_guide_objectives({m["mod_id"] for m in mods})
+    if guide_unavailable:
+        unobtainable.update(guide_unavailable)
+        log("  %d guide objective(s) need companion mods that are absent; "
+            "their default progression routes are omitted" % len(guide_unavailable))
 
     # Reported whether or not anything was found. The case that actually hurt
     # was NOT the empty scan - it was 80 jars of which one was readable, which
@@ -4758,19 +5733,37 @@ def scan_mods(folder: Path, per_mod_cap: int, log, progress=None) -> dict:
     if blocked:
         log("  %s %s" % ("NOTHING TO BUILD:" if not mods
                          else "ONLY PART OF THIS PACK COULD BE READ:", blocked))
-    out = {"blocked": blocked,
+    unsupported = bool(blocked and "generation and export" in blocked)
+    out = {"blocked": blocked, "unsupported": unsupported,
+           "instance_dir": str(folder.parent.resolve()),
+           "pack_recipe_report": pack_recipe_report,
+           "minecraft_version": _instance_mc_version(folder.parent),
            "mods": mods, "items": items, "entities": entities,
            "missing_dep": missing_dep, "unobtainable": unobtainable,
            "craftable": craftable, "broken_rate": broken_rate,
            "progression": progression, "vanilla": vanilla, "tier": tiers,
+           "advancements": advancement_catalog, "advancement_info": advancement_info,
            "vanilla_craftable": vanilla_craftable,
+           "vanilla_sources": dict(_VANILLA_SOURCE),
            "edges": craft_edges, "craft_recipes": craft_recipes,
            "alts": craft_alts, "blurbs": blurbs,
            "book_items": book_items, "dimensions": dimensions,
            "names": disp_names, "structures": structures,
+           "colour_siblings": {mid: dict(counts) for mid, counts in _COLOUR_SIBLINGS.items()},
            "struct_info": struct_info, "biome_tags": biome_tags,
+           "tags": tag_members,
+           "pack_items": pack_items, "pack_asset_notes": pack_asset_notes,
            "struct_loot": struct_loot, "drops": drops,
            "backdrops": backdrops}
+    _runtime_removed = apply_profile(out, _runtime_profile)
+    # Match translated goals only against records still present after runtime
+    # filtering. Names are search labels, not evidence of registration.
+    out["entity_names"] = _goal_registry_names(out["entities"], "entity", lang_names)
+    out["dimension_names"] = _goal_registry_names(out["dimensions"], "dimension", lang_names)
+    out["structure_names"] = _goal_registry_names(out["structures"], "structure", lang_names)
+    if _runtime_profile.get("matched"):
+        log("  excluded %d item ID(s) and %d creature ID(s) absent from the verified runtime registries"
+            % (_runtime_removed, out["runtime_item_profile"]["removed_entity_count"]))
     # Applied here rather than left to callers: a rule that only fires when
     # two mods are installed together is exactly the kind a caller forgets.
     _shadow = drop_shadowed(out)
@@ -5548,13 +6541,22 @@ def _strip_research_marks(t: str) -> str:
 
 
 _CONSUMERS: dict = {}
+_CONSUMERS_SCAN = None
 
 
 def _build_consumers(scan: dict) -> None:
     """Reverse the recipe graph once: item -> what it goes into."""
-    if _CONSUMERS:
+    global _CONSUMERS_SCAN
+    if _CONSUMERS_SCAN is scan:
         return
+    _CONSUMERS.clear()
+    _CONSUMERS_SCAN = scan
+    installed = set(scan.get("vanilla") or ())
+    for values in (scan.get("items") or {}).values():
+        installed.update(values)
     for made, ings in (scan.get("edges") or {}).items():
+        if made not in installed:
+            continue
         for g in (ings or ()):
             # An item is never a reason to want itself. 98 ids in this pack
             # have an edge to themselves, because a recipe that returns part
@@ -5813,9 +6815,8 @@ def fill_blank_descriptions(chapters: list, scan: dict) -> int:
                 dl = _drop_line(iid)
                 if dl:
                     cand[iid] = dl
-                elif not ing and iid not in craft:
-                    cand[iid] = ("No recipe makes this - "
-                                 "you'll have to find it.")
+                # A missing scanned recipe is not proof of no recipe: scripts
+                # and runtime mechanics can supply one. Do not invent a source.
     seen: dict = {}
     for line in cand.values():
         seen[line] = seen.get(line, 0) + 1
@@ -5880,7 +6881,12 @@ def rationale_pass(chapters: list, scan: dict) -> int:
     edges = scan.get("edges") or {}
     names = scan.get("names") or {}
     cons_map: dict = {}
+    installed = set(scan.get("vanilla") or ())
+    for values in (scan.get("items") or {}).values():
+        installed.update(values)
     for made, ings in edges.items():
+        if made not in installed:
+            continue
         for g in (ings or ()):
             if g == made:       # an item is never a reason to want itself
                 continue
@@ -5902,7 +6908,7 @@ def rationale_pass(chapters: list, scan: dict) -> int:
                 0 if c in _chain else 1,
                 -_GUIDE_WEIGHT.get(c, 0.0),
                 _junk_score(c),
-                len(c))
+                len(c), c)
 
     # pass 1: compose candidates, so the uniqueness count sees the whole book
     cand: dict = {}
@@ -6020,6 +7026,78 @@ def scrub_generator_tails(chapters: list) -> int:
     return n
 
 
+def subtitle_tidy(chapters: list) -> int:
+    """No paragraph subtitles, no subtitle printed twice. -> quests changed
+
+    Measured on a 338-mod book: 13-16% of subtitled quests opened their
+    description with the subtitle word for word ("Instant resource
+    transportation" as both), and some subtitles were a whole paragraph of
+    mod lore. In the quest screen the subtitle sits directly above the
+    description, so both read as a layout mistake.
+
+    A subtitle over 12 words is not a glance hint: it moves into the
+    description if the description does not already say it, and the
+    subtitle goes. A description that merely repeats its subtitle loses
+    that opening sentence, or, when that sentence is all it had, the
+    subtitle goes instead so the text is kept once in its fuller slot.
+    """
+    def plain(x):
+        return re.sub(r"&[0-9a-fk-or]", "", str(x), flags=re.I).strip()
+
+    def norm(x):
+        return re.sub(r"[^a-z0-9 ]", "", plain(x).lower()).strip()
+
+    n = 0
+    for ch in chapters:
+        for q in ch.get("quests") or []:
+            st = q.get("subtitle")
+            if not st:
+                continue
+            desc = q.get("description") or []
+            if isinstance(desc, str):
+                desc = [desc]
+            # Findability adds an item-name line before subtitles exist.
+            # Once the subtitle names the item, that line is redundant.
+            meaningful = [line for line in desc if plain(line)
+                          and norm(line) not in {norm(st), norm(q.get("title"))}]
+            if meaningful and len(meaningful) < sum(bool(plain(line)) for line in desc):
+                desc = [line for line in desc if not plain(line)
+                        or norm(line) not in {norm(st), norm(q.get("title"))}]
+                while desc and not plain(desc[-1]):
+                    desc.pop()
+                q["description"] = desc
+                n += 1
+            full = " ".join(plain(d) for d in desc).strip()
+            if len(plain(st).split()) > 12:
+                if norm(st) not in norm(full):
+                    q["description"] = ["&7" + plain(st)] + list(desc)
+                q.pop("subtitle", None)
+                n += 1
+                continue
+            if full and norm(full) == norm(st):
+                q.pop("subtitle", None)
+                n += 1
+            elif full and len(norm(st)) >= 8:
+                # A shared prefix is usually the subject of a real sentence:
+                # "Andesite Alloy is ..." and "Cogwheels transfer ..." must
+                # stay intact. Remove only an entire repeated first sentence,
+                # preserving all later paragraphs and their formatting.
+                first = next((i for i, line in enumerate(desc) if plain(line)), None)
+                if first is not None:
+                    prefix = plain(st).rstrip(".!?")
+                    match = re.match(re.escape(prefix) + r"\s*[.!?](?:\s+|$)",
+                                     plain(desc[first]), flags=re.I)
+                    if match:
+                        rest = plain(desc[first])[match.end():].strip()
+                        remaining = (["&7" + rest] if rest else []) + desc[first + 1:]
+                        if any(plain(line) for line in remaining):
+                            q["description"] = desc[:first] + remaining
+                        else:
+                            q.pop("subtitle", None)
+                        n += 1
+    return n
+
+
 def subtitle_pass(chapters: list, scan: dict) -> int:
     """Give 40-60% of quests a short subtitle (immersion CHK-10). -> n
 
@@ -6059,7 +7137,7 @@ def subtitle_pass(chapters: list, scan: dict) -> int:
         item = t0.get("item")
         line, pri = None, None
         if item:
-            disp = names.get(item) or _pretty_name(item)
+            disp = _display_name(item, names)
             dl = disp.lower().strip()
             if dl and dl not in title and title not in dl:
                 line, pri = disp, 0
@@ -6116,6 +7194,12 @@ def role_length_pass(chapters: list, scan: dict) -> int:
         ids = {q.get("id") for q in qs}
         roots = [q for q in qs
                  if not any(d in ids for d in (q.get("dependencies") or ()))]
+        # A copied chapter can have six or more entry quests, and growing each
+        # from the same blurb printed one paragraph six times in one chapter.
+        # Its intro box (or else its first entry) is the page that gets it.
+        if ch.get("_template"):
+            roots = [q for q in roots if str(q.get("id", "")).endswith("q_intro")] \
+                or roots[:1]
         if not roots:
             continue
         # namespaces of this chapter's tasks, the way the builder derives _mid
@@ -6153,20 +7237,8 @@ def role_length_pass(chapters: list, scan: dict) -> int:
                                      % (_mod_display_name(mid, scan), b))
                     if len(texts) >= 2:
                         break
-            # Last resort, from display names alone (a sanctioned source):
-            # the chapter's dependency span. Row order IS crafting-depth
-            # order (see the sort at the row builder), and the trunk's spine
-            # follows it, so first and last item are the progression's two
-            # ends even after the layout jitters sibling reading order.
-            itq = [(q.get("tasks") or [{}])[0].get("item") for q in qs]
-            itq = [i for i in itq if i]
-            if len(itq) >= 2:
-                nmz = scan.get("names") or {}
-                a = nmz.get(itq[0]) or _pretty_name(itq[0])
-                b = nmz.get(itq[-1]) or _pretty_name(itq[-1])
-                if a.lower() != b.lower():
-                    texts.append("You'll work your way up from the %s to "
-                                 "the %s." % (a, b))
+            # A list's final entry can be an optional collection, not the
+            # chapter's finale. Never infer a narrative promise from its index.
             for t in texts:
                 t = " ".join(str(t or "").split())
                 if len(t) < 25:
@@ -6195,18 +7267,8 @@ def _made_from_sentence(item_id: str, scan: dict) -> str:
     and what knowing it gets the player, because a description that states a
     fact to nobody is the register this book is trying not to write in.
     """
-    names = scan.get("names") or {}
-    ings = [g for g in sorted((scan.get("edges") or {}).get(item_id) or ())
-            if _junk_score(g) < 3]
-    if not ings:
-        return ""
-    ings.sort(key=lambda g: (g.split(":", 1)[0] != item_id.split(":", 1)[0],
-                             _junk_score(g), len(g)))
-    got = [names.get(g) or _pretty_name(g) for g in ings[:2]]
-    if len(got) > 1:
-        return ("You make it from %s and %s, so you'll want those in hand "
-                "first." % (got[0], got[1]))
-    return "You make it from %s, so you'll want that in hand first." % got[0]
+    recipe = _one_recipe(item_id, scan)
+    return "%s %s." % (recipe[0], _and_list(recipe[1])) if recipe else ""
 
 
 def auto_description(item_id: str, scan: dict) -> list:
@@ -6223,6 +7285,9 @@ def auto_description(item_id: str, scan: dict) -> list:
     A quest that still has nothing after all three genuinely has nothing to
     say, and gets left alone rather than padded.
     """
+    authored = _RESEARCHED_TEXT.get(item_id)
+    if authored and authored[1]:
+        return style_desc(_clip(authored[1], 560), guide_tip(item_id))
     parts = []
     blurb = _blurb_sentence((scan.get("blurbs") or {}).get(item_id))
     if blurb:
@@ -6248,13 +7313,11 @@ def auto_description(item_id: str, scan: dict) -> list:
     # mine produced the nonsense "Made from Mine and Iron Ore". Blank beats
     # filler, so a variant or a junk-scored id is left alone and only items
     # that carry real signal get a synthesised sentence.
-    _taught = set()
-    for _r in _GUIDE_NOTES.values():
-        _taught.update(_r.get("taught") or ())
-    _chain = {i for rows in _RESEARCHED.values() for i, _t, _d in rows}
-    if (_junk_score(item_id) >= 2
-            or item_id not in (_taught | _chain | set(_GUIDE_WEIGHT))):
+    if _junk_score(item_id) >= 2:
         return []
+    recipe = _made_from_sentence(item_id, scan)
+    if recipe:
+        parts.append(recipe)
     why = why_want(item_id, scan)
     if why and (not parts or why.lower()[:12] not in parts[0].lower()):
         parts.append(why)
@@ -6634,13 +7697,11 @@ def rank_mod_items(mid: str, scan: dict) -> list:
         sc -= 0.4 * max(0, len(toks) - 2)
         return sc
 
-    # One representative per family, by score alone. Preferring the plainer
-    # name on a tie reads nicer ("track_acacia" over "track_byg_rainbow_oak")
-    # but measurably costs ordering accuracy at every window I tried - 4.8% of
-    # ingredient-after-product pairs became 5.4-5.8% - because swapping the
-    # representative changes the dependency graph among the picks. Not worth it.
+    # Score decides the representative; equal scores use the resource ID.
+    # Iterating a set here made identical numbered seeds choose different
+    # families after restarting Python, changing downstream campaign branches.
     best = {}
-    for it in items:
+    for it in sorted(items):
         key = fam[it]
         cur = best.get(key)
         if cur is None or score(it) > score(cur):
@@ -6689,10 +7750,10 @@ def reward_pool(scan: dict) -> list:
     inside furniture chapters."""
     van = set(scan.get("vanilla") or ())
     out = [i for i in _REWARD_STAPLES if not van or i in van]
-    for mid, items in (scan.get("items") or {}).items():
+    for mid, items in sorted((scan.get("items") or {}).items()):
         if is_library(mid, mid):
             continue
-        for it in items:
+        for it in sorted(items):
             short = it.split(":", 1)[1]
             if any(short.endswith(k) for k in ("_ingot", "_gem", "_alloy",
                                                "_crystal", "_shard", "_nugget")):
@@ -6819,7 +7880,7 @@ def _pool_order(pool: list, scan: dict) -> list:
         while stack and steps < 4000:
             steps += 1
             cur = stack.pop()
-            for g in ingredients(cur):
+            for g in sorted(ingredients(cur)):
                 if g in seen:
                     continue
                 seen.add(g)
@@ -7094,6 +8155,11 @@ def best_progression(mid: str, scan: dict) -> list:
     def add(ref, title, why):
         for cand in str(ref).split("|"):        # "a|b" = renamed between versions
             cand = cand.strip()
+            if cand.startswith("check:"):
+                if cand in _available_guide_checks(scan) and cand not in seen:
+                    seen.add(cand)
+                    out.append({"check": cand, "title": title, "why": why})
+                return
             if cand.startswith("dim:"):
                 # "reach this dimension" is not an item. The Twilight portal and
                 # the Tropics have NO obtainable item, so asking for one gave a
@@ -7236,6 +8302,10 @@ def mod_play_order(mid: str, scan: dict, cap: int = 140) -> list:
             add("kill:" + r["kill"])
         elif r.get("dimension"):
             add("dim:" + r["dimension"])
+        elif r.get("structure"):
+            add("structure:" + r["structure"])
+        elif r.get("check"):
+            add(r["check"])
     for it in pick_quest_items(mid, scan, cap):
         add(it)
     rest = [i for i in rank_mod_items(mid, scan)
@@ -7496,6 +8566,26 @@ _COLOUR_WORDS = ("white", "orange", "magenta", "yellow", "lime", "pink",
 _COLOUR_SIBLINGS: dict = {}
 
 
+def _restore_colour_siblings(scan: dict) -> None:
+    """Restore pack-local ranking facts on cached scans and pack switches."""
+    index = scan.get("colour_siblings")
+    if not isinstance(index, dict):
+        # Synthetic/older caller-provided scans still get a deterministic
+        # index from their own available items, never from the last pack.
+        index = {}
+        for mid, items in scan.get("items", {}).items():
+            counts = {}
+            for item in items:
+                short = str(item).partition(":")[2]
+                head, sep, tail = short.partition("_")
+                if sep and head in _COLOUR_WORDS:
+                    counts[tail] = counts.get(tail, 0) + 1
+            if counts:
+                index[mid] = counts
+    _COLOUR_SIBLINGS.clear()
+    _COLOUR_SIBLINGS.update({mid: dict(counts) for mid, counts in index.items()})
+
+
 def _colour_variant(item_id: str) -> bool:
     """Is a colour-prefixed name REALLY one of a colour set?
 
@@ -7544,7 +8634,10 @@ def _matches_marker(name: str, markers) -> bool:
 def _junk_score(item_id: str) -> int:
     """0 = a real goal, higher = more like decoration/filler. >=3 means reject."""
     p = item_id.split(":")[-1]
-    if any(k in p for k in _NOT_A_GOAL):
+    # A creative-tab marker is a suffix, not the beginning of "tablet" or
+    # "table". The substring rule ranked real Mana Tablets and work tables as
+    # fake UI pictures, so the scanner's item cap discarded their valid IDs.
+    if any(p.endswith(k) if k == "_tab" else k in p for k in _NOT_A_GOAL):
         return 3            # a creative-tab picture is not something to fetch
     if _matches_marker(p, _ITEM_BAD):
         return 3
@@ -7755,6 +8848,8 @@ def _curated_chain(mod_id):
     """
     a = _mp_chain(mod_id) or []
     b = globals().get("_RESEARCHED", {}).get(mod_id) or []
+    if b and mod_id in globals().get("_AUTHORED_GRAPH_MODS", set()):
+        return b
     return a if len(a) >= len(b) else b
 
 # Empirical orderings mined from 45 popular CurseForge packs: for each mod, the
@@ -7803,6 +8898,14 @@ def _load_mod_db_rows() -> dict:
 _HARVESTED_DB = _load_mod_db_rows()
 
 
+_GUIDED_REQUIREMENTS: dict = {}
+_AUTHORED_GRAPH_MODS: set = set()
+_GUIDE_METADATA: dict = {}
+_GUIDE_CHECKS: dict = {}
+_GUIDE_REQUIRED_MODS: dict = {}
+_GUIDE_ACQUISITION: dict = {}
+
+
 def _load_researched_chains() -> dict:
     """Hand-researched chains from moddb/chains_research/*.json.
 
@@ -7831,6 +8934,21 @@ def _load_researched_chains() -> dict:
             if not isinstance(e, dict):
                 continue
             i = str(e.get("id") or "").strip()
+            if i.startswith("check:"):
+                _GUIDE_CHECKS[i] = {"mod": mod, "icon": str(e.get("icon") or "").strip()}
+            # Some verified drops and world interactions are implemented in
+            # mod code, without recipe/loot JSON. This records their reviewed
+            # acquisition route; it never bypasses item/model validation.
+            acquisition = str(e.get("acquisition") or "").strip()
+            if i and acquisition and not i.startswith(("check:", "dim:", "kill:", "structure:")):
+                for ref in i.split("|"):
+                    _GUIDE_ACQUISITION[ref.strip()] = acquisition
+            if i and isinstance(e.get("requires_mods"), list):
+                for ref in i.split("|"):
+                    _GUIDE_REQUIRED_MODS[ref.strip()] = list(e["requires_mods"])
+            if i and isinstance(e.get("requires"), list):
+                for ref in i.split("|"):
+                    _GUIDED_REQUIREMENTS[ref.strip()] = list(e["requires"])
             if not i or (":" not in i
                          and not i.startswith(("kill:", "dim:", "structure:"))):
                 continue
@@ -7844,12 +8962,81 @@ def _load_researched_chains() -> dict:
             # cap is now a guard against a runaway paragraph, not an editor.
             rows.append((i, str(e.get("title") or "").strip()[:60],
                          _clip(_strip_module_flag(e.get("desc")), 320)))
-        if mod and len(rows) >= 4:
+        if mod and rows:
             out[mod] = rows
+            authored = [e for e in d.get("chain", ()) if isinstance(e, dict) and e.get("id")]
+            if authored and all(isinstance(e.get("requires"), list) for e in authored):
+                _AUTHORED_GRAPH_MODS.add(mod)
+            _GUIDE_METADATA[mod] = {key: d[key] for key in
+                ("verified_against", "sources", "coverage", "content_revision") if key in d}
     return out
 
 
 _RESEARCHED = _load_researched_chains()
+
+
+def _disabled_guide_objectives(installed) -> set:
+    """Only explicit, researched companion-mod requirements can disable a route."""
+    installed = set(installed)
+    return {ref for ref, needs in _GUIDE_REQUIRED_MODS.items()
+            if ref.removeprefix("check:").split(":")[0] in installed and set(needs) - installed}
+
+
+def _available_guide_checks(scan) -> set:
+    installed = {m["mod_id"] for m in scan.get("mods", ())}
+    known = set(scan.get("vanilla") or ())
+    for values in (scan.get("items") or {}).values():
+        known.update(values)
+    known.difference_update(scan.get("unobtainable") or ())
+    return {ref for ref, info in _GUIDE_CHECKS.items()
+            if info["mod"] in installed and ref not in _disabled_guide_objectives(installed)
+            and (not info["icon"] or info["icon"] in known)}
+
+
+def progression_coverage(scan=None) -> list:
+    """Report available authored objectives, without promising complete mechanics.
+
+    Library counts describe authored milestones. Pack counts resolve every
+    alternative against this scan, including travel and encounter objectives.
+    Neither number is the generated quest count or a survival playthrough.
+    """
+    known = set()
+    if scan is not None:
+        known.update(scan.get("vanilla") or ())
+        for values in (scan.get("items") or {}).values():
+            known.update(values)
+        for field, prefix in (("entities", "kill:"), ("dimensions", "dim:"), ("structures", "structure:")):
+            for values in (scan.get(field) or {}).values():
+                known.update(prefix + v for v in values)
+        known.update("dim:" + v for v in ("minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"))
+        known.difference_update(scan.get("unobtainable") or ())
+        known.update(_available_guide_checks(scan))
+        mods = scan.get("mods") or []
+    else:
+        mods = [{"mod_id": mid, "name": _pretty_name(mid)} for mid in _RESEARCHED]
+    report = []
+    for mod in mods:
+        mid = mod["mod_id"]
+        if is_curated_library(mid):
+            continue
+        chain = _curated_chain(mid)
+        matched = [ref for ref, _t, _d in chain if scan is None or
+                   any(c.strip() in known for c in ref.split("|"))]
+        available = len(matched)
+        if available:
+            kind = "Branched guide" if mid in _AUTHORED_GRAPH_MODS else "Authored milestones"
+        elif scan is not None and any((scan.get(f) or {}).get(mid) for f in ("items", "entities", "dimensions", "structures")):
+            kind = "Recipes & discoveries"
+        else:
+            kind = "No quest content"
+        meta = _GUIDE_METADATA.get(mid, {})
+        report.append({"mod_id": mid, "name": mod.get("name") or _pretty_name(mid),
+                       "kind": kind, "available": available, "total": len(chain),
+                       "missing": [ref for ref, _t, _d in chain if ref not in matched],
+                       "verified_against": meta.get("verified_against", ""),
+                       "sources": meta.get("sources", []), "coverage": meta.get("coverage", {}),
+                       "milestones": [{"ref": ref, "title": title} for ref, title, _d in chain]})
+    return sorted(report, key=lambda r: (r["name"].casefold(), r["mod_id"]))
 
 
 def _researched_text_index() -> dict:
@@ -7872,7 +9059,7 @@ def _researched_text_index() -> dict:
                 continue
             for cand in str(ref).split("|"):
                 cand = cand.strip()
-                if cand and not cand.startswith(("kill:", "dim:", "structure:")):
+                if cand and not cand.startswith(("kill:", "dim:", "structure:", "check:")):
                     out.setdefault(cand, (t, d))
     return out
 
@@ -7926,7 +9113,7 @@ def _all_pinned_ids() -> set:
         for ref, _t, _d in rows:
             for cand in str(ref).split("|"):
                 cand = cand.strip()
-                if cand and not cand.startswith(("kill:", "dim:", "structure:")):
+                if cand and not cand.startswith(("kill:", "dim:", "structure:", "check:")):
                     out.add(cand)
     for wheels in _RESEARCHED_WHEELS.values():
         for hub, mem in wheels:
@@ -7973,7 +9160,7 @@ def _chapter_main_mod(doc: dict) -> str:
     return mod
 
 
-def find_pack_chapters(source: str, log) -> list:
+def find_pack_chapters(source: str, log, allow_remote=True) -> list:
     """Chapters inside a modpack, for the questline-import feature.
 
     `source` is a local instance folder, a local .zip/.mrpack, or - when
@@ -8009,6 +9196,8 @@ def find_pack_chapters(source: str, log) -> list:
         with zipfile.ZipFile(src) as zf:
             from_zip(zf, src.stem)
     else:
+        if not allow_remote:
+            raise ValueError("Choose an existing local instance folder or modpack archive; online search is disabled.")
         UA = {"User-Agent": "AutoQuestGen (questline import)"}
 
         def api(u):
@@ -8351,6 +9540,14 @@ def _pretty_name(item_id: str) -> str:
     return " ".join(out)
 
 
+def _display_name(item_id: str, names: dict) -> str:
+    """A plain item name, excluding translations awaiting stack arguments."""
+    name = names.get(item_id)
+    if name and not re.search(r"%(?:\d+\$)?[sdif]", str(name)):
+        return str(name)
+    return _pretty_name(item_id)
+
+
 def _rank_mod_items(ids: list, drop_junk: bool = True) -> list:
     """Best quest goals first. With drop_junk, decoration/shape variants are
     removed entirely rather than just sorted to the back."""
@@ -8407,6 +9604,8 @@ def bulk_ask_pass(chapters: list, scan: dict) -> None:
     item-name title is restated through _item_title so it can say "16x X" /
     "Gather Xs"; a curated title is left alone (the lich_trophy lesson)."""
     for ch in chapters:
+        if ch.get("_template"):
+            continue              # preserve the reference author's objective amounts
         qs = ch.get("quests") or []
         rows = []                       # (quest_index, item_task)
         for i, q in enumerate(qs):
@@ -8434,9 +9633,13 @@ def bulk_ask_pass(chapters: list, scan: dict) -> None:
             if "first" in prose.lower():
                 continue
             stackable = any(b in p for b in _BULK)
+            if not stackable:
+                continue          # a spellbook or a machine is not a stockpile task
             bare = qs[i].get("title") == _pretty_name(t["item"])
-            cands.append((0 if stackable else 1, 0 if bare else 1, i, t))
-        cands.sort()
+            cands.append((0, 0, i, t))
+        # key on the first three fields only: a quest with two item tasks
+        # appears twice under one index, and the tie would compare the dicts
+        cands.sort(key=lambda c: c[:3])
         for _s, _b, i, t in cands[:want - have]:
             c = rng.choice([8, 12, 16]) if _s == 0 else 4
             t["count"] = c
@@ -8509,7 +9712,36 @@ _RECIPE_VERB = {
     "minecraft:campfire_cooking":   "You cook this from",
     "minecraft:stonecutting":       "You cut this from",
     "minecraft:smithing_transform": "You smith this from",
+    "create:pressing":              "Use a Mechanical Press with",
+    "create:mixing":                "Use a Mechanical Mixer over a Basin with",
+    "create:compacting":            "Use a Mechanical Press over a Basin with",
+    "create:crushing":              "Use Crushing Wheels to process",
+    "create:milling":               "Use a Millstone to process",
+    "create:cutting":               "Use a Mechanical Saw to process",
+    "create:filling":               "Use a Spout to fill",
+    "botania:petal_apothecary":      "Use a Petal Apothecary with",
+    "botania:mana_infusion":         "Use a Mana Pool to infuse",
+    "botania:runic_altar":           "Use a Runic Altar with",
+    "botania:terra_plate":           "Use a Terrestrial Agglomeration Plate with",
+    "botania:elven_trade":           "Trade through the Elven Gateway with",
+    "farmersdelight:cooking":        "Use a Cooking Pot with",
+    "farmersdelight:cutting":        "Use a Cutting Board to process",
 }
+
+
+def _recipe_ingredient_name(ingredient: str, names: dict):
+    """Readable material choices without turning a tag into a concrete item."""
+    if not ingredient.startswith("#"):
+        return names.get(ingredient) or _pretty_name(ingredient)
+    tag = ingredient.split(":", 1)[-1].lstrip("#")
+    bits = tag.split("/")
+    if len(bits) == 2 and bits[0] in {"ingots", "nuggets", "gems", "dusts", "plates", "rods", "storage_blocks"}:
+        family = bits[0].replace("storage_blocks", "blocks").replace("_", " ")
+        return "%s %s" % (bits[1].replace("_", " ").title(), family)
+    if tag in {"logs", "logs_that_burn", "planks", "wooden_rods", "wool", "sand", "stone_crafting_materials"}:
+        return {"logs_that_burn": "burnable logs", "wooden_rods": "wooden rods",
+                "stone_crafting_materials": "stone crafting materials"}.get(tag, tag)
+    return None
 
 
 def _one_recipe(item: str, scan: dict):
@@ -8536,13 +9768,18 @@ def _one_recipe(item: str, scan: dict):
         if not verb:
             continue
         ings = [g for g in ings if g != item]
-        if any(g.startswith("#") for g in ings) or not (1 <= len(ings) <= 4):
+        if not (1 <= len(ings) <= 6):
             continue
         # The mod's own display name, so the sentence spells the ingredient
         # the way the player will read it in the recipe book.
-        names = sorted({disp.get(g) or _pretty_name(g) for g in ings})
-        rank = (0 if verb == _RECIPE_VERB["minecraft:crafting_shaped"] else 1,
-                len(names))
+        names = {_recipe_ingredient_name(g, disp) for g in ings}
+        if None in names:
+            continue
+        names = sorted(names)
+        recycling = any(item in (scan.get("edges") or {}).get(g, ()) for g in ings)
+        rank = (int(recycling),
+                0 if verb == _RECIPE_VERB["minecraft:crafting_shaped"] else 1,
+                len(names), ty, tuple(names))
         if best is None or rank < best[0]:
             best = (rank, verb, names)
     return None if best is None else (best[1], best[2])
@@ -8562,7 +9799,7 @@ def _recipe_line(verb: str, names) -> str:
     to run its uniqueness count on the UNFORMATTED text first (colour
     codes in the counted string would let two identical sentences stop
     colliding and silently weaken the <=2 guard)."""
-    return "%s %s%s." % (verb, DESC_KEY, _and_list(names) + DESC_BODY)
+    return "%s %s%s." % (verb, DESC_KEY, _and_list(names, limit=len(names)) + DESC_BODY)
 
 
 def _recipe_desc(item: str, scan: dict):
@@ -8598,36 +9835,12 @@ def _desc(kind: str, name: str, count: int, mod: str, rng,
     real = (blurbs or {}).get(item)
     if real:
         return DESC_BODY + _blurb_sentence(real)
-    # Second best after the mod's own words: what the recipe actually needs.
-    # Factual, useful, and available for anything craftable - far better than
-    # padding coverage with "small step, big payoff later".
-    if _scan_ref and rng.random() < 0.55:
-        rd = _recipe_desc(item, _scan_ref)
-        if rd:
-            return rd
-    if rng.random() < 0.85:
-        return None
-    nm = name
-    if kind == "item":
-        opts = [
-            "%s is bread-and-butter for %s." % (nm, mod),
-            "Stock up - you'll burn through these.",
-            "%s unlocks the next step here." % nm,
-            "Worth making early.",
-            "Keep a few spare.",
-        ] if count > 1 else [
-            "Your first %s. More to come." % nm,
-            "%s opens up the rest of %s." % (nm, mod),
-            "Small step, big payoff later.",
-            "You'll want this before going further.",
-        ]
-        return "&7" + rng.choice(opts)
+    if kind == "item" and _scan_ref:
+        lines = auto_description(item, _scan_ref)
+        if lines:
+            return " ".join(x for x in lines if x)
     if kind == "kill":
-        return "&7" + rng.choice([
-            "Thin out the local %s." % nm.lower(),
-            "%s are trouble." % nm,
-            "Good practice before the real fights.",
-        ])
+        return "&7Defeat %d %s to complete this hunt." % (count, name)
     return None
 
 
@@ -8856,7 +10069,9 @@ def _collection_wheels(mid: str, scan: dict, spine_items: set, rng,
     Returns [(hub_item, member_item), ...]. The hub is the family's best
     member; the emitter adds it as a spine row if the spine lacks it.
     """
-    items = set(scan.get("items", {}).get(mid, ()))
+    # Collections use the same acquisition guard as the main progression.
+    # Curated wheels can otherwise reintroduce disabled compatibility tools.
+    items = set(scan.get("items", {}).get(mid, ())) - set(scan.get("unobtainable") or ())
     if len(items) < 20:
         return []
 
@@ -8889,7 +10104,7 @@ def _collection_wheels(mid: str, scan: dict, spine_items: set, rng,
     # (securitycraft's "reinforced"), narrower is not a collection
     cands = sorted(((t, m) for t, m in tok_members.items()
                     if 5 <= len(m) <= 24 and len(m) <= len(items) * 0.15),
-                   key=lambda z: -len(z[1]))
+                   key=lambda z: (-len(z[1]), z[0]))
     ranked = rank_mod_items(mid, scan)
     rank = {it: i for i, it in enumerate(ranked)}
     half = max(1, len(ranked)) * 0.55
@@ -8911,7 +10126,7 @@ def _collection_wheels(mid: str, scan: dict, spine_items: set, rng,
             continue
         used |= set(fresh)
         nwheels += 1
-        hub = min(fresh, key=lambda x: rank.get(x, 9999))
+        hub = min(fresh, key=lambda x: (rank.get(x, 9999), x))
         for m in sorted(fresh):
             if m != hub and m not in spine_items:
                 out.append((hub, m))
@@ -9006,7 +10221,7 @@ def structure_reward(sid: str, scan: dict, limit: int = 3) -> str:
     best.sort(key=lambda i: (i.split(":", 1)[0] == "minecraft",
                              _junk_score(i),
                              -_GUIDE_WEIGHT.get(i, 0.0),
-                             len(i)))
+                             len(i), i))
     got = [names.get(i) or _pretty_name(i) for i in best[:limit]]
     if len(got) == 1:
         return "Its chests hold %s." % got[0]
@@ -9225,6 +10440,8 @@ def _mod_quest_rows(m: dict, scan: dict, n: int, rng, creativity: float) -> list
     seen = set()
     uniq = []
     for title, task, desc in rows_in:
+        if task.get("item") in (scan.get("unobtainable") or ()):
+            continue
         key = (task.get("item") or task.get("structure")
                or "kill:" + str(task.get("entity") or task))
         if key in seen:
@@ -9314,20 +10531,18 @@ def _enforce_recipe_order(rows: list, scan: dict) -> list:
     taught order wherever that order is already legal, and only demotes the
     rows that actually break a recipe.
     """
-    edges = scan.get("edges") or {}
-    ids = [r[1].get("item") for r in rows]
+    ids = [_objective_ref(r[1]) for r in rows]
     pos = {i: k for k, i in enumerate(ids) if i}
     if not pos:
         return rows
     out, placed = [], set()
     pending = list(rows)
-    for _pass in range(4):               # bounded: cycles must not hang this
+    while pending:
         again = []
         for row in pending:
-            it = row[1].get("item")
-            need = [g for g in (edges.get(it) or ()) if g in pos]
-            if it and any(g not in placed and pos[g] > pos.get(it, 0)
-                          for g in need):
+            it = _objective_ref(row[1])
+            need = _nearest_quest_ingredients(it, set(pos), scan)
+            if it and any(g not in placed for g in need):
                 again.append(row)        # an ingredient is still ahead of it
                 continue
             out.append(row)
@@ -9341,13 +10556,342 @@ def _enforce_recipe_order(rows: list, scan: dict) -> list:
     return out + pending
 
 
+# Processing recipes express a machine requirement even when that machine
+# is not consumed as an ingredient. These are only used when the exact
+# machine ID is available in the scanned pack and in the chapter.
+_RECIPE_STATIONS = {
+    "create:pressing": ("create:mechanical_press",),
+    "create:mixing": ("create:mechanical_mixer", "create:basin"),
+    "create:compacting": ("create:mechanical_press", "create:basin"),
+    "create:crushing": ("create:crushing_wheel",),
+    "create:milling": ("create:millstone",),
+    "create:cutting": ("create:mechanical_saw",),
+    "create:filling": ("create:spout",),
+    "botania:petal_apothecary": ("botania:apothecary_default",),
+    "botania:mana_infusion": ("botania:mana_pool",),
+    "botania:runic_altar": ("botania:runic_altar",),
+    "botania:terra_plate": ("botania:terra_plate",),
+    "botania:elven_trade": ("botania:alfheim_portal",),
+    "farmersdelight:cooking": ("farmersdelight:cooking_pot",),
+    "farmersdelight:cutting": ("farmersdelight:cutting_board",),
+}
+
+
+def _required_recipe_items(item: str, scan: dict) -> set:
+    """Known prerequisites shared by every route, never their union.
+
+    Compression/unpacking and recycling recipes are alternate acquisition
+    routes, not proof that you must own every output of them to begin.
+    Tags deliberately stay choices rather than all becoming requirements.
+    """
+    if not item:
+        return set()
+    recipes = (scan.get("craft_recipes") or {}).get(item) or ()
+    if not recipes:
+        return {g for g in (scan.get("edges") or {}).get(item, ())
+                if g != item and not str(g).startswith("#")}
+    routes = []
+    for typ, ingredients in recipes:
+        route = {g for g in ingredients if not str(g).startswith("#")}
+        for ingredient in ingredients:
+            if str(ingredient).startswith("#"):
+                members = set((scan.get("tags") or {}).get(ingredient[1:]) or ())
+                if len(members) == 1:
+                    route.update(members)
+        route.update(_RECIPE_STATIONS.get(typ, ()))
+        route.discard(item)
+        routes.append(route)
+    return set.intersection(*routes) if routes else set()
+
+
+def _guided_prereqs(item: str, scan: dict) -> set:
+    if item not in _GUIDED_REQUIREMENTS:
+        return set()
+    known = set(scan.get("vanilla") or ())
+    for values in (scan.get("items") or {}).values():
+        known.update(values)
+    for values in (scan.get("entities") or {}).values():
+        known.update("kill:" + v for v in values)
+    for values in (scan.get("dimensions") or {}).values():
+        known.update("dim:" + v for v in values)
+    known.update("dim:" + v for v in ("minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"))
+    for values in (scan.get("structures") or {}).values():
+        known.update("structure:" + v for v in values)
+    known.difference_update(scan.get("unobtainable") or ())
+    known.update(_available_guide_checks(scan))
+    return {next(candidate.strip() for candidate in str(ref).split("|") if candidate.strip() in known)
+            for ref in _GUIDED_REQUIREMENTS.get(item, ())
+            if any(candidate.strip() in known for candidate in str(ref).split("|"))}
+
+
+def _objective_ref(task: dict) -> str:
+    """One identity for item, encounter, travel and exploration objectives."""
+    if task.get("_guide_ref"):
+        return task["_guide_ref"]
+    if task.get("item"):
+        return task["item"]
+    for field, prefix in (("entity", "kill:"), ("dimension", "dim:"), ("structure", "structure:")):
+        if task.get(field):
+            return prefix + task[field]
+    return ""
+
+
+def _nearest_quest_ingredients(item: str, offered: set, scan: dict, guided=True) -> set:
+    """Follow a missing intermediate to the nearest represented prerequisite."""
+    found, seen = set(), {item}
+    pending = [(item, 0)] if item else []
+    while pending:
+        current, depth = pending.pop()
+        if depth >= 32:
+            continue
+        requirements = _required_recipe_items(current, scan)
+        if guided:
+            requirements |= _guided_prereqs(current, scan)
+        for ingredient in requirements:
+            if ingredient in seen:
+                continue
+            seen.add(ingredient)
+            if ingredient in offered:
+                found.add(ingredient)
+            else:
+                pending.append((ingredient, depth + 1))
+    return found
+
+
+def _progression_dependencies(rows: list, ids: list, scan: dict,
+                              progression="linear", gate=None) -> tuple:
+    """Make branches from crafting and authored milestones, not row numbers.
+
+    Recipe inputs join where a machine needs several branches. Related
+    goals share prerequisites naturally; independent mods remain independent.
+    A linear setting also teaches curated steps with no readable recipe.
+    """
+    deps = {qid: [] for qid in ids}
+    if progression == "open":
+        return deps, {qid: True for qid in ids}
+    tasks = [r[1] for r in rows]
+    objective_quests = {_objective_ref(t): i for i, t in enumerate(tasks) if _objective_ref(t)}
+    intro = next((i for i, t in enumerate(tasks) if t.get("type") == "checkmark" and not t.get("_guide_ref")), None)
+    # Only explicitly curated references carry narrative order. A name-ranked
+    # fallback list is useful for selection but cannot establish causality.
+    chain_rank = {}
+    namespaces = {str(t.get("item") or t.get("entity") or
+                      t.get("dimension") or t.get("structure") or t.get("_guide_mod") or "").split(":")[0]
+                  for t in tasks}
+    for mid in namespaces - {"", "minecraft"}:
+        rank = {}
+        for i, (ref, _title, _desc) in enumerate(_curated_chain(mid)):
+            for candidate in str(ref).split("|"):
+                rank[candidate.strip()] = i
+        chain_rank[mid] = rank
+    previous = {}
+    for i, (qid, task) in enumerate(zip(ids, tasks)):
+        item = task.get("item")
+        key = _objective_ref(task)
+        target = item or task.get("entity") or task.get("dimension") or task.get("structure") or task.get("_guide_mod") or ""
+        mid = target.split(":")[0]
+        parents = sorted({objective_quests[g] for g in
+                          _nearest_quest_ingredients(key, set(objective_quests), scan,
+                                                     guided=progression == "linear")
+                          if g in objective_quests and objective_quests[g] < i})
+        # Loot links teach which actual fight produces this quest's item.
+        if item and not parents:
+            sources = (scan.get("drops") or {}).get(item, {}).get("entities") or ()
+            parents = [j for j, t in enumerate(tasks[:i]) if t.get("entity") in sources]
+        curated = key in chain_rank.get(mid, {})
+        if (not parents and curated and key not in _GUIDED_REQUIREMENTS
+                and progression == "linear" and mid in previous):
+            parents = [previous[mid]]
+        if not parents and intro is not None and intro < i:
+            parents = [intro]
+        if not parents and mid == "minecraft" and progression == "linear":
+            # The vanilla rows are an authored wood-to-End path.
+            parents = [j for j, t in enumerate(tasks[:i])
+                       if str(t.get("item") or "").startswith("minecraft:")][-1:]
+        deps[qid] = [ids[p] for p in parents]
+        if not deps[qid] and gate and i == 0:
+            deps[qid] = [gate]
+        if curated:
+            previous[mid] = i
+    # Remove redundant ancestors: A -> B -> C needs no extra A -> C line.
+    ancestors = {}
+    for qid in ids:
+        parents = deps[qid]
+        indirect = set().union(*(ancestors.get(p, set()) for p in parents)) if parents else set()
+        deps[qid] = [p for p in parents if p not in indirect]
+        ancestors[qid] = set(parents) | indirect
+    used = {p for ps in deps.values() for p in ps}
+    return deps, {qid: qid not in used for qid in ids}
+
+
+def _valid_collection_hubs(hubs, ids, dependencies):
+    """A visual family may decorate an existing route, never reverse it.
+
+    Research collections describe related items, not crafting prerequisites:
+    a circuit's family can include the board used to make that circuit.
+    Retain a satellite treatment only when its hub is already an ancestor.
+    """
+    valid = {}
+    for member, hub in hubs.items():
+        target = ids[hub]
+        seen, pending = set(), list(dependencies.get(ids[member], ()))
+        while pending:
+            parent = pending.pop()
+            if parent == target:
+                valid[member] = hub
+                break
+            if parent not in seen:
+                seen.add(parent)
+                pending.extend(dependencies.get(parent, ()))
+    return valid
+
+
+def _connect_authored_chapters(chapters, scan, progression):
+    """Keep a guide's cross-mod prerequisites when its branches use separate pages."""
+    if progression != "linear":
+        return
+    by_ref = collections.defaultdict(list)
+    graph = {}
+    for ci, chapter in enumerate(chapters):
+        for quest in chapter.get("quests", ()):
+            graph[quest["id"]] = set(quest.get("dependencies") or ())
+            for task in quest.get("tasks", ()):
+                ref = _objective_ref(task)
+                if ref:
+                    by_ref[ref].append((ci, quest))
+    offered = set(by_ref)
+    def reaches(start, target):
+        seen, pending = set(), [start]
+        while pending:
+            key = pending.pop()
+            if key == target:
+                return True
+            if key not in seen:
+                seen.add(key)
+                pending.extend(graph.get(key, ()))
+        return False
+    for ci, chapter in enumerate(chapters):
+        if chapter.get("_template"):
+            continue  # Reference pages retain their author's own prerequisites.
+        for quest in chapter.get("quests", ()):
+            qid = quest["id"]
+            for task in quest.get("tasks", ()):
+                ref = _objective_ref(task)
+                if ref not in _GUIDED_REQUIREMENTS:
+                    continue
+                for parent in sorted(_nearest_quest_ingredients(ref, offered, scan)):
+                    matches = by_ref.get(parent, ())
+                    # Mixed pages interleave mods, so an addon may precede
+                    # its base-machine row. Repair local gates as well as
+                    # cross-page gates, preferring the local representation.
+                    for _other_ci, candidate in sorted(matches, key=lambda pair: pair[0] != ci):
+                        pid = candidate["id"]
+                        if not reaches(pid, qid):
+                            if not reaches(qid, pid):
+                                graph[qid].add(pid)
+                            break
+            if graph[qid]:
+                quest["dependencies"] = sorted(graph[qid])
+
+
+# Vanilla recipes live in the client jar, while the mod recipe scan only
+# contains additions. Keep these small, stable ingredient routes available
+# even when no vanilla recipe files were loaded. Choice tags are deliberately
+# omitted: an oak-log objective must not become the only valid wood recipe.
+_VANILLA_RECIPE_REQUIREMENTS = {
+    "stone_pickaxe": ("cobblestone", "stick"),
+    "shield": ("iron_ingot",), "torch": ("stick",),
+    "enchanting_table": ("diamond", "obsidian", "book"),
+    "brewing_stand": ("blaze_rod",), "ender_eye": ("ender_pearl", "blaze_powder"),
+    "blaze_powder": ("blaze_rod",), "netherite_ingot": ("gold_ingot", "netherite_scrap"),
+    "netherite_scrap": ("ancient_debris",), "bread": ("wheat",),
+}
+_VANILLA_GUIDED_REQUIREMENTS = {
+    "stone_pickaxe": ("oak_log",), "iron_ingot": ("stone_pickaxe",),
+    "shield": ("iron_ingot",), "torch": ("oak_log",),
+    "diamond": ("iron_ingot",), "enchanting_table": ("diamond",),
+    # A bucket can cast a portal; diamonds are not required for Nether access.
+    "obsidian": ("iron_ingot",), "magma_cream": ("obsidian",),
+    "blaze_rod": ("obsidian",), "wither_skeleton_skull": ("obsidian",),
+    "gold_ingot": ("iron_ingot",), "netherite_ingot": ("diamond", "gold_ingot"),
+    "brewing_stand": ("blaze_rod",), "ender_eye": ("blaze_rod",),
+    # Bottling breath is an optional fight objective, not a gate to End cities.
+    "dragon_breath": ("ender_eye",), "elytra": ("ender_eye",),
+    "chorus_fruit": ("ender_eye",), "shulker_shell": ("ender_eye",),
+}
+
+
+def _vanilla_progression_pass(chapters: list, scan: dict, progression: str) -> None:
+    """Branch the authored vanilla route across chapters using actual goals.
+
+    Guide pages remain readable before travel. In particular, the Nether's
+    introduction must never wait for the Overworld's brewing stand, whose
+    Blaze Rod prerequisite is in that very Nether chapter.
+    """
+    vanilla = [c for c in chapters if c.get("_vanilla")]
+    if not vanilla:
+        return
+    records = [(q, c) for c in vanilla for q in c.get("quests", [])]
+    offered = {t["item"]: q for q, _c in records for t in q.get("tasks", []) if t.get("item")}
+    prefix = lambda short: "minecraft:" + short
+
+    def recipe_inputs(item):
+        short = item.split(":")[-1]
+        base = {prefix(s) for s in _VANILLA_RECIPE_REQUIREMENTS.get(short, ())}
+        # Mod-added alternate recipes can remove a normal ingredient gate.
+        # Never force both the vanilla route and a different modded recipe.
+        if base and (scan.get("craft_recipes") or {}).get(item):
+            base &= _required_recipe_items(item, scan)
+        return base
+
+    def recipe_goals(item, seen=None):
+        seen = set(seen or ()) | {item}
+        found = set()
+        for ingredient in recipe_inputs(item):
+            if ingredient in seen:
+                continue
+            if ingredient in offered:
+                found.add(ingredient)
+            else:
+                found.update(recipe_goals(ingredient, seen))
+        return found
+
+    for quest, chapter in records:
+        quest.pop("dependency_requirement", None)
+        quest["dependencies"] = []
+        if progression == "open":
+            continue
+        item = next((t.get("item") for t in quest.get("tasks", []) if t.get("item")), None)
+        if not item:
+            continue                 # orientation checkmarks are always readable
+        parents = recipe_goals(item)
+        if progression == "linear":
+            parents.update(prefix(s) for s in _VANILLA_GUIDED_REQUIREMENTS.get(item.split(":")[-1], ())
+                           if prefix(s) in offered)
+        quest["dependencies"] = sorted({offered[p]["id"] for p in parents
+                                         if p in offered and offered[p]["id"] != quest["id"]})
+    # Only visual redundancy is removed; every prerequisite remains implied.
+    graph = {q["id"]: q.get("dependencies", []) for q, _c in records}
+    def ancestors(key, seen=None):
+        seen = set(seen or ())
+        if key in seen:
+            return set()
+        seen.add(key)
+        parents = set(graph.get(key, []))
+        return parents | set().union(*(ancestors(p, seen) for p in parents)) if parents else set()
+    for quest, _chapter in records:
+        parents = quest.get("dependencies", [])
+        implied = set().union(*(ancestors(p) for p in parents)) if parents else set()
+        quest["dependencies"] = [p for p in parents if p not in implied]
+
+
 def _mod_quest_rows_raw(m: dict, scan: dict, n: int, rng, creativity: float) -> list:
     """-> [(title, task_dict, description), ...] for one mod, at most n rows.
     Prefers craftable items so quests always point at something obtainable."""
     mid = m["mod_id"]
-    all_id_set = set(scan["items"].get(mid, ()))
+    all_id_set = set(scan["items"].get(mid, ())) - set(scan.get("unobtainable") or ())
     craft = set(scan.get("craftable", {}).get(mid, ()))
-    all_ids = list(all_id_set)
+    all_ids = sorted(all_id_set)
     # Data-derived pick: drops material variants and vanilla reskins, then
     # orders by what feeds what. This is what stops a SecurityCraft chapter
     # asking for six wood variants of the same boat instead of the keypad.
@@ -9369,6 +10913,7 @@ def _mod_quest_rows_raw(m: dict, scan: dict, n: int, rng, creativity: float) -> 
     curated = []
     _ents = set(scan["entities"].get(mid, ()))
     _structs = set((scan.get("structures") or {}).get(mid, ()))
+    _checks = _available_guide_checks(scan)
     chain = _curated_chain(mid)
     if not chain:
         # Mined pack consensus is UNVETTED: it records what other authors asked
@@ -9381,13 +10926,20 @@ def _mod_quest_rows_raw(m: dict, scan: dict, n: int, rng, creativity: float) -> 
         # "a|b" lists alternatives - mods rename ids between versions
         for cand in str(ref).split("|"):
             cand = cand.strip()
-            if cand.startswith("kill:"):
+            if cand.startswith("check:"):
+                if cand in _checks:
+                    curated.append({"check": cand, "title": title, "desc": desc})
+                    break
+            elif cand.startswith("kill:"):
                 if cand[5:] in _ents:
                     curated.append({"kill": cand[5:], "title": title, "desc": desc})
                     break
             elif cand.startswith("dim:"):
-                curated.append({"dimension": cand[4:], "title": title, "desc": desc})
-                break
+                known_dimensions = _tpl_flat(scan.get("dimensions")) | {
+                    "minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"}
+                if cand[4:] in known_dimensions:
+                    curated.append({"dimension": cand[4:], "title": title, "desc": desc})
+                    break
             elif cand.startswith("structure:"):
                 # A worldgen mod's chain is mostly places. Verify against the
                 # scan, exactly as kill steps are verified, so a renamed or
@@ -9395,7 +10947,7 @@ def _mod_quest_rows_raw(m: dict, scan: dict, n: int, rng, creativity: float) -> 
                 if cand[10:] in _structs:
                     curated.append({"structure": cand[10:], "title": title,
                                     "desc": desc})
-                break
+                    break
             elif cand in all_id_set or cand in (scan.get("vanilla") or _VANILLA_ITEM_SET):
                 curated.append({"item": cand, "title": title, "desc": desc})
                 break
@@ -9425,7 +10977,10 @@ def _mod_quest_rows_raw(m: dict, scan: dict, n: int, rng, creativity: float) -> 
             _b = (scan.get("blurbs") or {}).get(c["item"])
             if _b:
                 d = DESC_BODY + _blurb_sentence(_b)
-        if "kill" in c:
+        if "check" in c:
+            rows.append((c["title"], {"type": "checkmark", "title": "Confirm after completing this milestone",
+                         "_guide_ref": c["check"], "_guide_mod": mid}, d))
+        elif "kill" in c:
             rows.append((c["title"], {"type": "kill", "entity": c["kill"], "value": 1}, d))
         elif c.get("dimension"):
             rows.append((c["title"] or "Journey Onward",
@@ -9478,9 +11033,10 @@ def _mod_quest_rows_raw(m: dict, scan: dict, n: int, rng, creativity: float) -> 
         items = [i for i in items if i not in used]
 
     if items and not rows:
-        rows.append((rng.choice(_INTRO_TITLES) % m["name"],
+        rows.append((_item_title(items[0], 1, rng),
                      {"type": "item", "item": items[0], "count": 1},
-                     ("&7First stop in %s." % m["name"]) if rng.random() < 0.25 else None))
+                     _desc("item", _pretty_name(items[0]), 1, m["name"], rng,
+                           items[0], scan.get("blurbs"), scan)))
     # kill quests only for adventure/mob mods (tech mods have no real mobs)
     edrops = _entity_drop_map(scan)
     if m["category"] in ("world", "mob"):
@@ -9511,7 +11067,8 @@ def _mod_quest_rows_raw(m: dict, scan: dict, n: int, rng, creativity: float) -> 
             if boss:
                 rows.append(("The %s" % _pretty_name(e),
                              {"type": "kill", "entity": e, "value": 1},
-                             "&7This is the one that matters." if rng.random() < 0.5 else None))
+                             _mob_drop_desc(e, scan)
+                             or "&7Defeat %s to complete this encounter." % _pretty_name(e)))
             else:
                 passive = any(p in e.split(":")[-1] for p in _PASSIVE_MOB)
                 verb = rng.choice(("Hunt", "Round up", "Cull")) if passive \
@@ -9927,7 +11484,8 @@ def _derived_chapter_intro(mid: str, scan: dict, nrows: int) -> str:
         return ""
     name = _mod_display_name(mid, scan)
     items = len((scan.get("items") or {}).get(mid) or ())
-    mobs = len((scan.get("entities") or {}).get(mid) or ())
+    mobs = sum("%s_spawn_egg" % entity in (scan.get("items") or {}).get(mid, ())
+               for entity in (scan.get("entities") or {}).get(mid, ()))
     structs = len((scan.get("structures") or {}).get(mid) or ())
     dims = len((scan.get("dimensions") or {}).get(mid) or ()) \
         if isinstance(scan.get("dimensions"), dict) else 0
@@ -9951,7 +11509,8 @@ def _derived_chapter_facts(mid: str, scan: dict, nrows: int) -> str:
     shorter than the quests below it - which is backwards, and is what CHK-12
     measures (root descriptions against leaf descriptions).
     """
-    mobs = len((scan.get("entities") or {}).get(mid) or ())
+    mobs = sum("%s_spawn_egg" % entity in (scan.get("items") or {}).get(mid, ())
+               for entity in (scan.get("entities") or {}).get(mid, ()))
     structs = len((scan.get("structures") or {}).get(mid) or ())
     dims = len((scan.get("dimensions") or {}).get(mid) or ())         if isinstance(scan.get("dimensions"), dict) else 0
     extra = []
@@ -9964,9 +11523,8 @@ def _derived_chapter_facts(mid: str, scan: dict, nrows: int) -> str:
     out = []
     if extra:
         out.append("It also brings %s." % _and_list(extra, 3))
-    out.append("There are %d quests here, and nothing in the chapter needs "
-               "another mod first - you can start it whenever you like."
-               % nrows)
+    out.append("Follow the dependency branches for the main progression; "
+               "separate branches are projects you can work on in parallel.")
     return " ".join(out)
 
 
@@ -10099,7 +11657,21 @@ def _front_matter_rows(specs: list, scan: dict, opts: dict | None = None) -> lis
     # describe a book the player is not holding.
     _o = opts or {}
     _forced = _forced_shape(_o)
-    if _o.get("style_chapters", True) and not _forced:
+    if _o.get("_templated"):
+        # Replaces the shapes page, whose claims are about derived shapes.
+        # True by construction: _template_chapters_for keeps the reference
+        # layout, and every title and description in it is this book's own.
+        pages.append((
+            "Familiar Ground",
+            "Chapters for the big, well-known mods in this pack are laid out "
+            "the way the large published packs lay them out, so if you have "
+            "played one of those, the map of a mod you know will feel familiar "
+            "- the same shape of tree, the same kinds of asks in the same "
+            "places. The rest is dealt fresh for this book: its own titles and "
+            "words, its own turn of the layout, and a different pick of items "
+            "where the mod offers more than one, every one of them something "
+            "this pack actually ships."))
+    if _o.get("style_chapters", True) and not _forced and not _o.get("_templated"):
         pages.append((
             "What the Shapes Mean",
             # Only claims that hold in the built book. An earlier version
@@ -10291,14 +11863,630 @@ def _merge_title(gname: str, idx: int, total: int, seed: int) -> str:
     return order[idx % len(order)]
 
 
+# ========================================================================== #
+#  Reference-templated chapters
+# ========================================================================== #
+# moddb/templates.json is distilled by moddb/build_templates.py from the
+# hand-authored books on this machine (moddb/refbook.py --all reads them off
+# disk; the builder skips any book this app wrote). A template is a chapter's
+# SKELETON: quest positions, shapes, sizes, optional flags, the dependency
+# graph, and each quest's task and reward KINDS with the reference's item and
+# entity ids. No titles, subtitles or descriptions are stored - the words are
+# always this generator's own, so the book reads like the reference without
+# repeating it.
+#
+# When the pack ships a mod that a reference book has a chapter for, that
+# chapter is built on the template instead of on _mod_quest_rows: same graph,
+# same layout, the same kinds of asks in the same places. Item ids the pack
+# does not have are swapped for the closest of the mod's real items; a seeded
+# share of the rest are swapped for near-tier siblings so two books are never
+# the same; counts drift; rewards keep the reference's rhythm (xp here, an
+# item there, a crate on the finale) but are paid out of THIS pack's lanes.
+
+_TEMPLATES: dict | None = None
+# Share of a copied chapter's item asks that may be bulk ("64x ..."). The
+# references are bulk-heavy (Create Above and Beyond 24%, ATM9's GregTech
+# chapters more) while the authored band over 39 packs is 4-12% (immersion
+# CHK-14), so the copy keeps the biggest stackable asks and restates the
+# rest as single items.
+TEMPLATE_BULK_SHARE = 0.08
+# Share of a reference chapter kept at each density (leaves trimmed first).
+TEMPLATE_KEEP = {"tiny": 0.25, "small": 0.4, "normal": 0.55, "large": 0.7,
+                 "massive": 0.85, "colossal": 1.0, "encyclopedic": 1.0}
+
+
+def _load_templates() -> dict:
+    """mod id -> [template, ...]; {} when the file is absent or unreadable."""
+    global _TEMPLATES
+    if _TEMPLATES is None:
+        try:
+            doc = json.loads(moddb_path("templates.json").read_text(encoding="utf-8"))
+            _TEMPLATES = dict(doc.get("mods") or {})
+        except Exception:
+            _TEMPLATES = {}
+    return _TEMPLATES
+
+
+def _tpl_tokens(item_id: str) -> set:
+    return {t for t in re.split(r"[_:/.-]", item_id.split(":", 1)[-1]) if len(t) > 1}
+
+
+def _tpl_pick_item(want: str, mid: str, scan: dict, used: set):
+    """Missing objectives are omitted; name similarity is not equivalence.
+
+    A brass tunnel is not a brass ingot, even if both share a word. Keeping
+    the source dependencies while changing its objective invents progression.
+    """
+    return None
+
+
+def _tpl_sibling(item: str, mid: str, scan: dict, used: set, rng):
+    """A different item of the same mod within one tier, craftable first."""
+    tiers = scan.get("tier") or {}
+    t = tiers.get(item, 5)
+    src = scan.get("craftable", {}).get(mid) or scan.get("items", {}).get(mid) or ()
+    pool = [i for i in src if i != item and i not in used
+            and abs(tiers.get(i, 5) - t) <= 1 and _junk_score(i) < 2]
+    return rng.choice(sorted(pool)) if pool else None
+
+
+def _tpl_flat(v) -> set:
+    if isinstance(v, dict):
+        out = set()
+        for x in v.values():
+            out |= set(x or ())
+        return out
+    return set(v or ())
+
+
+def _template_chapters_for(m: dict, tpls: list, scan: dict, n: int, density: str,
+                           rng, alevel: dict, use_groups: bool, at: int,
+                           seed: int = 0, layout: str = "",
+                           limit_to_budget: bool = False) -> list:
+    """Raw chapter docs for one mod, built on its reference templates.
+
+    Two passes, and the split is what keeps a player's progress safe.
+
+    PASS 1 decides WHICH quests exist, and uses no randomness at all: a
+    quest survives when the pack can satisfy its task (the reference item,
+    or the mod's closest real item by name), and density trims leaves off
+    the reference graph. Quest ids come from the reference index, so the
+    same pack always yields the same quest set - regenerating with a new
+    seed never renumbers a quest and never wipes completed progress.
+
+    PASS 2 varies what a player SEES, from the run seed: titles are
+    re-rolled, and the layout is dealt a
+    flip and a small nudge. The tree keeps the reference's shape; two
+    books from two seeds do not look or read alike.
+
+    Rewards are NOT assigned here - the payout lanes and crate tables do not
+    exist yet when this runs. Each quest carries the reference's reward kinds
+    under "_tpl_rewards" and _template_rewards() pays them out later.
+    """
+    mid = m["mod_id"]
+    all_items = set(scan.get("vanilla") or ())
+    for v in (scan.get("items") or {}).values():
+        all_items |= set(v)
+    all_items -= set(scan.get("unobtainable") or ())
+    all_entities = set()
+    for v in (scan.get("entities") or {}).values():
+        all_entities |= set(v)
+    structures = _tpl_flat(scan.get("structures"))
+    installed = {mm["mod_id"] for mm in scan.get("mods", [])} | {"minecraft", "forge"}
+    # Density decides how much of each reference chapter survives, leaves
+    # first, so the trunk is always kept: colossal and up is the whole
+    # skeleton, one to one; large keeps most of it; the small settings keep
+    # the spine and its first branches.
+    keep = TEMPLATE_KEEP.get(density, 0.7)
+    prose = alevel.get("desc_lines", 1) > 0
+    nm = m["name"]
+    if nm.islower() and " " not in nm:
+        nm = nm.replace("_", " ").title()
+    grp = _GROUP_FOR_CAT.get(m["category"], "Expansion")
+    # The mod's own guide intro where there is one, else the facts the scan
+    # measured about it - most of the referenced mods have no guide entry,
+    # and without the fallback no copied chapter got an intro box at all.
+    intro_txt = ""
+    if prose:
+        intro_txt = chapter_intro(mid, scan) or _derived_chapter_intro(
+            mid, scan, sum(len(t.get("quests") or []) for t in tpls))
+    # The derived path already knows how to talk about this mod: researched
+    # chains and guide notes give many items a hand-written title and a
+    # description that says what the thing is for. A copied chapter used to
+    # throw that away and fall back to _desc for every quest - measured, the
+    # share of descriptions carrying a consequence, number, place or how-to
+    # fell from passing to 0.339 on Create Above and Beyond. Built once per
+    # mod from a fixed rng, so it cannot move a seed's quest set.
+    curated_title: dict = {}
+    curated_desc: dict = {}
+    try:
+        for _t, _task, _d in _mod_quest_rows(m, scan, 400,
+                                             random.Random("tplrows/" + mid), 0.3):
+            _it = _task.get("item") if isinstance(_task, dict) else None
+            if _it and _it not in curated_desc:
+                curated_title[_it] = _t
+                if _d:
+                    curated_desc[_it] = _d
+    except Exception:
+        pass
+    out = []
+
+    for k, tpl in enumerate(tpls):
+        ck = "tch%d_%d" % (at, k)
+        qs = tpl.get("quests") or []
+        # A topic whose every word is already in the mod's display name is the
+        # name in another spelling ("Extreme" under Extreme Reactors, "Neural"
+        # under Hostile Neural Networks), not a subject worth a suffix.
+        topic = str(tpl.get("topic") or "").strip()
+        _nmw = set(re.findall(r"[a-z0-9]+", nm.lower()))
+        if topic and all(w in _nmw for w in re.findall(r"[a-z0-9]+", topic.lower())):
+            topic = ""
+        ch_title = nm if not topic else "%s: %s" % (nm, topic)
+        subject = topic if topic else nm
+
+        # ---------------------------------------------- PASS 1: survival
+        alive = [False] * len(qs)
+        base: dict = {}              # i -> [task, ...] with no randomness
+        used0: set = set()
+        facts_txt = _derived_chapter_facts(mid, scan, len(qs)) if prose else ""
+        blurb_txt = mod_blurb(mid, scan) if prose else ""
+        # The distinct true texts this chapter's orientation boxes may carry,
+        # in the order they are used. Deduplicated by content: for a mod with
+        # no guide entry the scan's intro and its facts can be one sentence,
+        # and a fixed intro/facts/blurb slotting then placed no second box.
+        sources = []
+        for kind, txt in (("intro", intro_txt), ("facts", facts_txt), ("blurb", blurb_txt)):
+            key = re.sub(r"\W+", " ", str(txt or "")).strip().lower()
+            if key and all(key not in re.sub(r"\W+", " ", o).strip().lower()
+                           and re.sub(r"\W+", " ", o).strip().lower() not in key
+                           for _k, o in sources):
+                sources.append((kind, txt))
+        boxes = 0                    # orientation checkmarks placed so far
+        for i, tq in enumerate(qs):
+            tasks = []
+            for t in tq.get("tasks") or []:
+                tt = t.get("type", "item")
+                if tt == "item":
+                    it = str(t.get("item") or "")
+                    if it.split(":", 1)[0] in ("itemfilters", "ftbquests", "kubejs",
+                                               "ftbfiltersystem"):
+                        continue      # a filter item without its filter is nothing
+                    if it not in all_items:
+                        it = _tpl_pick_item(it, mid, scan, used0)
+                        if not it:
+                            continue
+                    used0.add(it)
+                    tasks.append({"type": "item", "item": it,
+                                  "count": max(1, int(t.get("count") or 1))})
+                elif tt == "kill":
+                    ent = str(t.get("entity") or "")
+                    if ent in all_entities:
+                        tasks.append({"type": "kill", "entity": ent,
+                                      "value": max(1, int(t.get("value") or 1))})
+                elif tt in ("dimension", "structure", "biome", "advancement"):
+                    val = str(t.get(tt) or "")
+                    ns = val.split(":", 1)[0] if ":" in val else "minecraft"
+                    if ns not in installed:
+                        continue
+                    available = _tpl_flat(scan.get({"dimension": "dimensions",
+                                                   "structure": "structures",
+                                                   "biome": "biomes",
+                                                   "advancement": "advancements"}[tt]))
+                    if tt == "dimension":
+                        available |= {"minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"}
+                    if val not in available:
+                        continue
+                    tasks.append({"type": tt, tt: val})
+                elif tt == "checkmark":
+                    # Orientation boxes only with something TRUE on them - an
+                    # untexted checkmark is the empty box this book must never
+                    # ship. The first carries the chapter intro, a second the
+                    # facts the scan measured; any further box is spliced out.
+                    if boxes >= len(sources):
+                        continue
+                    kind, txt = sources[boxes]
+                    boxes += 1
+                    tasks.append({"type": "checkmark", "_box": kind, "_txt": txt})
+            if tasks:
+                alive[i] = True
+                base[i] = tasks
+        def parents(i, seen=()):
+            # a dropped quest is spliced out: its children inherit its parents
+            res = []
+            for p in qs[i].get("deps") or []:
+                if not isinstance(p, int) or p < 0 or p in seen or p >= len(qs):
+                    continue
+                if alive[p]:
+                    res.append(p)
+                else:
+                    res.extend(parents(p, seen + (i,)))
+            return sorted(set(res))
+
+        # Trim leaves first, optional leaves before required ones, lowest on
+        # the reference page first, so the chapter keeps its trunk.
+        n_each = max(8, int(round(len(qs) * keep)))
+        if keep < 1.0:
+            while sum(alive) > n_each:
+                kids = collections.Counter()
+                for i in range(len(qs)):
+                    if alive[i]:
+                        for p in parents(i):
+                            kids[p] += 1
+                # orientation boxes are never trimmed: they are counted as
+                # the chapter's boxes, and losing one here left a chapter
+                # believing it had two when one survived
+                leaves = [i for i in range(len(qs)) if alive[i] and not kids[i]
+                          and not any(t["type"] == "checkmark" for t in base[i])]
+                if not leaves:
+                    break
+                leaves.sort(key=lambda i: (not qs[i].get("optional"),
+                                           -float(qs[i].get("y") or 0), -i))
+                alive[leaves[0]] = False
+                base.pop(leaves[0], None)
+
+        if sum(alive) < 4:
+            continue
+
+        boxes = sum(1 for i in range(len(qs)) if alive[i]
+                    and any(t["type"] == "checkmark" for t in base[i]))
+        # A reference chapter with no orientation box of its own gets one:
+        # authored first-shown quests are a checkmark in 67% of books, and
+        # without it the copied chapters pulled the book's checkmark share
+        # under the 4% floor (CHK-01). Only with true text on it, and seed
+        # independent, so it never changes the quest set between runs.
+        intro_extra = bool(prose and sources and boxes == 0)
+        # A copied chapter is often three times the size of a derived one, so
+        # one box dilutes the book's checkmark share under the 4% floor
+        # (CHK-01) - measured 0.037 on a 22-mod pack whose one templated
+        # chapter was 52 quests. A chapter of 30+ gets the scan's measured
+        # facts as a second box, when that text exists and is not the intro.
+        _used = boxes + (1 if intro_extra else 0)
+        facts_extra = bool(prose and _used < 2 and len(sources) > _used
+                           and sum(alive) >= 30)
+
+        # Keep the author's quantities along with their dependency graph.
+        # Reducing nearly every batch to one erased the reference challenges.
+
+        # --------------------------------------------- PASS 2: variation
+        vr = random.Random("tpl/%s/%d/%s" % (mid, k, seed))
+        used = {t["item"] for ts in base.values() for t in ts if t.get("item")}
+        xs = [float(qs[i].get("x") or 0) for i in range(len(qs)) if alive[i]]
+        ys = [float(qs[i].get("y") or 0) for i in range(len(qs)) if alive[i]]
+        xmax = max(xs) if xs else 0.0
+        preserve_layout = layout == "reference"
+        flip = False if preserve_layout else vr.random() < 0.5
+        quests = []
+        if intro_extra:
+            # left of the whole layout (right of it when flipped), level with
+            # its top row, so it reads first without crossing anything
+            ix = (min(xs) - 2.0) if xs else 0.0
+            if flip:
+                ix = xmax - ix
+            quests.append({
+                "id": "%sq_intro" % ck,
+                "title": vr.choice(("Getting Started with %s" % subject,
+                                    "First Steps in %s" % subject,
+                                    "What %s Adds" % subject,
+                                    "%s, Before You Begin" % subject)),
+                "tasks": [{"type": "checkmark"}],
+                "x": round(ix, 3), "y": round(min(ys) if ys else 0.0, 3),
+                "size": 1.25, "dependencies": [],
+                "description": [sources[0][1]],
+                "_tpl_rewards": [{"type": "xp", "xp": 25}],
+            })
+        if facts_extra:
+            fkind, ftxt = sources[_used]
+            fx = (min(xs) - 2.0) if xs else 0.0
+            if flip:
+                fx = xmax - fx
+            quests.append({
+                "id": "%sq_facts" % ck,
+                "title": (vr.choice(("%s in Its Own Words" % nm,
+                                     "What the %s Author Says" % nm,
+                                     "About %s" % nm)) if fkind == "blurb"
+                          else vr.choice(("%s by the Numbers" % subject,
+                                          "%s at a Glance" % subject,
+                                          "Taking Stock of %s" % subject))),
+                "tasks": [{"type": "checkmark"}],
+                "x": round(fx, 3), "y": round((min(ys) if ys else 0.0) + 1.75, 3),
+                "dependencies": ["%sq_intro" % ck] if intro_extra else [],
+                "description": [ftxt],
+                "_tpl_rewards": [{"type": "xp", "xp": 25}],
+            })
+        for i in range(len(qs)):
+            if not alive[i]:
+                continue
+            tq = qs[i]
+            tasks, title, desc = [], None, ""
+            for bt in base[i]:
+                tt = bt["type"]
+                if tt == "item":
+                    it, c = bt["item"], bt["count"]
+                    tasks.append({"type": "item", "item": it, "count": c})
+                    if title is None:
+                        # a researched title half the time, when there is one
+                        # and the count agrees with it; otherwise a fresh roll
+                        ct = curated_title.get(it)
+                        if ct and c == 1 and vr.random() < 0.5 \
+                                and ct != _pretty_name(it):
+                            title = ct
+                        else:
+                            title = _item_title(it, c, vr)
+                        if prose:
+                            desc = curated_desc.get(it) or _desc(
+                                "item", _pretty_name(it), c, nm, vr, it,
+                                scan.get("blurbs"), scan)
+                elif tt == "kill":
+                    tasks.append({"type": "kill", "entity": bt["entity"],
+                                  "value": bt["value"]})
+                    if title is None:
+                        title = "%s %s" % (vr.choice(_KILL_VERBS),
+                                           _pretty_name(bt["entity"]))
+                elif tt == "checkmark":
+                    tasks.append({"type": "checkmark"})
+                    if bt["_box"] == "intro":
+                        title = vr.choice(("Getting Started with %s" % subject,
+                                           "First Steps in %s" % subject,
+                                           "What %s Adds" % subject,
+                                           "%s, Before You Begin" % subject))
+                    elif bt["_box"] == "blurb":
+                        title = vr.choice(("%s in Its Own Words" % nm,
+                                           "What the %s Author Says" % nm,
+                                           "About %s" % nm))
+                    else:
+                        title = vr.choice(("%s by the Numbers" % subject,
+                                           "%s at a Glance" % subject,
+                                           "Taking Stock of %s" % subject))
+                    desc = bt["_txt"]
+                else:
+                    val = bt[tt]
+                    tasks.append({"type": tt, tt: val})
+                    if title is None:
+                        leaf = val.split("/")[-1].split(":")[-1]
+                        if tt == "advancement" and leaf == "root":
+                            title = vr.choice(("Discover %s" % nm,
+                                               "Your First Taste of %s" % nm))
+                        elif tt == "dimension":
+                            title = vr.choice(("Into %s", "Crossing into %s",
+                                               "A Visit to %s")) % _pretty_name(leaf)
+                        elif tt == "structure":
+                            title = vr.choice(("Find %s", "Track Down %s")) % _pretty_name(leaf)
+                        elif tt == "biome":
+                            title = vr.choice(("Reach %s", "Set Foot in %s")) % _pretty_name(leaf)
+                        else:
+                            title = _pretty_name(leaf)
+            x = float(tq.get("x") or 0)
+            if flip:
+                x = xmax - x
+            q = {"id": "%sq%d" % (ck, i), "title": title or nm, "tasks": tasks,
+                 "x": round(x + (0 if preserve_layout else vr.uniform(-0.12, 0.12)), 3),
+                 "y": round(float(tq.get("y") or 0) + (0 if preserve_layout else vr.uniform(-0.12, 0.12)), 3),
+                 "dependencies": ["%sq%d" % (ck, p) for p in parents(i)],
+                 "_tpl_rewards": list(tq.get("rewards") or [])}
+            if tq.get("shape"):
+                q["shape"] = tq["shape"]
+            size = float(tq.get("size") or 1.0)
+            if abs(size - 1.0) > 0.01:
+                q["size"] = size
+            if tq.get("optional"):
+                q["optional"] = True
+            if desc:
+                q["description"] = [desc]
+            quests.append(q)
+
+        # FTB Quests counts only required quests toward chapter completion.
+        # ATM9 marks whole side-branches optional, so a copied Botania chapter
+        # announced "complete" with a fifth of its page undone (CHK-17: at
+        # most 15% of chapters may fire below 75%). Keep the flag on at most
+        # a quarter of the chapter: leaves first, then the lowest on the page,
+        # decided by reference order so it is the same for every seed.
+        opt_q = [q for q in quests if q.get("optional")]
+        cap_opt = int(len(quests) * 0.25)
+        if len(opt_q) > cap_opt:
+            kids_of = {d for q in quests for d in q["dependencies"]}
+            opt_q.sort(key=lambda q: (q["id"] in kids_of,
+                                      int(re.sub(r"\D", "", q["id"].rsplit("q", 1)[-1]) or 0)))
+            for q in opt_q[cap_opt:]:
+                q.pop("optional", None)
+
+        # Leaves read short and entries read long in authored chapters (root
+        # median >= 2x leaf median, CHK-12). A copied chapter has many more
+        # entries and leaves than a derived one, so its leaves keep their
+        # first sentence - the part that says what the thing is.
+        haskid = {d for q in quests for d in q["dependencies"]}
+        for q in quests:
+            if q["id"] in haskid or not q.get("description"):
+                continue
+            d = str(q["description"][0])
+            if len(d.split()) > 18:
+                cut = re.split(r"(?<=[.!?])\s+", d, maxsplit=1)[0]
+                if 6 <= len(cut.split()) < len(d.split()):
+                    q["description"] = [cut]
+
+        icon = tpl.get("icon") if tpl.get("icon") in all_items else ""
+        if not icon:
+            cands = [t["item"] for q in quests for t in q["tasks"] if t.get("item")]
+            icon = (min(cands, key=lambda it: (_junk_score(it), cands.index(it)))
+                    if cands else "minecraft:book")
+        out.append({
+            "id": ck,
+            "group": (grp if use_groups else ""),
+            "title": ch_title,
+            "icon": icon,
+            **({"description": [intro_txt]} if intro_txt else {}),
+            "quests": quests,
+            "_template": {"mod": mid, "source": str(tpl.get("source") or "")},
+        })
+    if limit_to_budget and out:
+        # Automatic reference sizes follow the source chapter's scale. An
+        # explicit whole-book target instead pays for these chapters from
+        # the same allocation as derived goals, including their orientation
+        # boxes. Keep at least four quests per retained chapter; a requested
+        # boss route may independently need more preparation later.
+        cap = max(4, n + 1)  # the allocator reserves one opener per unit
+        out = out[:max(1, cap // 4)]
+        while sum(len(ch["quests"]) for ch in out) > cap:
+            referenced = {dep for ch in out for q in ch["quests"]
+                          for dep in q.get("dependencies", [])}
+            leaves = [(ci, qi, q) for ci, ch in enumerate(out)
+                      if len(ch["quests"]) > 4
+                      for qi, q in enumerate(ch["quests"])
+                      if q["id"] not in referenced
+                      and not any(t.get("type") == "checkmark" for t in q["tasks"])]
+            if not leaves:
+                break  # report the honest minimum; never sever prerequisites
+            ci, qi, _q = min(leaves, key=lambda row: (
+                -len(out[row[0]]["quests"]), not row[2].get("optional"),
+                -float(row[2].get("y") or 0), -row[0], -row[1]))
+            out[ci]["quests"].pop(qi)
+    return out
+
+
+def _template_rewards(chapters: list, scan: dict, rmult: float, pool_ids: list,
+                      lanes: dict, rng) -> None:
+    """Pay templated quests out of this pack, keeping the reference's rhythm.
+
+    xp stays xp and levels stay levels (scaled by the reward level); an item
+    reward is an item from the chapter's own mod lane; a rolled table is a
+    crate only on the chapter's finale (CHK-13: authored packs hold tables
+    for the end) and plain xp anywhere else.
+    """
+    rpool = reward_pool(scan)
+    for ch in chapters:
+        if not ch.get("_template"):
+            continue
+        mid = ch["_template"]["mod"]
+        lane = list(lanes.get(mid) or lanes.get("minecraft") or rpool)
+        qs = ch.get("quests") or []
+        ids = {q["id"]: q for q in qs}
+        memo: dict = {}
+
+        def level(qid, seen=()):
+            if qid in memo:
+                return memo[qid]
+            if qid in seen:
+                return 0
+            ps = [d for d in ids[qid].get("dependencies") or [] if d in ids]
+            memo[qid] = 1 + max([level(p, seen + (qid,)) for p in ps], default=-1)
+            return memo[qid]
+
+        finale = max(qs, key=lambda q: (level(q["id"]), q["id"]))["id"] if qs else None
+        for q in qs:
+            kinds = q.pop("_tpl_rewards", []) or []
+            rews = []
+            for r in kinds:
+                rt = r.get("type")
+                if rt == "xp":
+                    rews.append({"type": "xp",
+                                 "xp": max(10, min(800, int(int(r.get("xp") or 50) * rmult)))})
+                elif rt == "xp_levels":
+                    rews.append({"type": "xp_levels",
+                                 "xp_levels": max(1, min(30, int(int(r.get("xp_levels") or 3) * rmult)))})
+                elif rt == "item" and lane:
+                    rews.append({"type": "item", "item": rng.choice(lane),
+                                 "count": max(1, min(64, int(r.get("count") or 1)))})
+                elif rt == "table":
+                    if q["id"] == finale and pool_ids:
+                        rews.append({"type": "choice",
+                                     "table": pool_ids[min(len(pool_ids) - 1, 1)]})
+                    else:
+                        rews.append({"type": "xp", "xp": max(10, min(400, int(60 * rmult)))})
+            if not rews:
+                rews.append({"type": "xp", "xp": max(10, min(400, int(40 * rmult)))})
+            q["rewards"] = rews
+
+
+def _use_installed_goal_blueprint(doc, scan, opts):
+    """Explicit reference matching preserves a closed goal map from this pack."""
+    goals = (doc.get("campaign") or {}).get("exact_goal_ids", [])
+    instance = scan.get("instance_dir")
+    if not opts.get("mimic") or len(goals) != 1 or not instance:
+        return doc
+    from quest_reference import load_installed_book, installed_goal_blueprint, ReferenceBookError
+    try:
+        book = load_installed_book(Path(instance), snbt_loads)
+    except ReferenceBookError:
+        return doc
+    blueprint = installed_goal_blueprint(book, goals[0])
+    if not blueprint:
+        return doc
+    import copy
+    chapter = copy.deepcopy(blueprint["chapter"])
+    # This path preserves native tasks, including component filters. It is
+    # available only for the scanned installed book, never a bundled guess.
+    # External reward pools would need their own closed import, so defer them.
+    if any(r.get("type") not in ("item", "xp", "xp_levels")
+           for q in chapter.get("quests", ()) for r in q.get("rewards", ())):
+        return doc
+    installed = {m["mod_id"] for m in scan.get("mods", ())} | {"minecraft", "kubejs"}
+    for quest in chapter.get("quests", ()):
+        for task in quest.get("tasks", ()):
+            item = task.get("item")
+            item = item.get("id", "") if isinstance(item, dict) else item
+            if item and item.split(":")[0] not in installed:
+                return doc
+    old_final = set(doc["campaign"].get("goal_quest_ids", doc["campaign"].get("finale_quest_ids", ())))
+    old_campaign = {key for c in doc["chapters"] if c.get("_campaign") for q in c["quests"]
+                    for key in [q["id"]] + [t["id"] for t in q.get("tasks", ()) if t.get("id")]}
+    old_final.update(t["id"] for c in doc["chapters"] if c.get("_campaign") for q in c["quests"]
+                     if q["id"] in old_final for t in q.get("tasks", ()) if t.get("id"))
+    goal_id = blueprint["provenance"]["goal_id"]
+    doc["chapters"] = [c for c in doc["chapters"] if not c.get("_campaign")]
+    for existing in doc["chapters"]:
+        for quest in existing.get("quests", ()):
+            quest["dependencies"] = list(dict.fromkeys(goal_id if dep in old_final else dep
+                for dep in quest.get("dependencies", ()) if dep not in old_campaign or dep in old_final))
+    chapter.update(_native_reference=True, _template=True, _campaign=True,
+                   _campaign_role="goal", group="Main Goal")
+    doc["chapters"].append(chapter)
+    sidebar = doc["campaign"].setdefault("sidebar", {})
+    sidebar.update(group="Main Goal", after_group="Getting Started",
+                   chapter_ids=[chapter["id"]] + [c["id"] for c in doc["chapters"] if c.get("_campaign_summary")])
+    doc["campaign"]["goal_quest_ids"] = [goal_id]
+    if not any(c.get("_campaign_summary") for c in doc["chapters"]):
+        doc["campaign"]["finale_quest_ids"] = [goal_id]
+    doc["campaign"]["reference_blueprint"] = blueprint["provenance"]
+    doc["campaign"]["explanation"] = ("Reference matching uses this installed pack's original endgame blueprint: "
+        + str(chapter.get("title", "")) + ". Its authored descriptions, tasks, prerequisites and placement are preserved.")
+    from quest_campaign import _assert_dag
+    _assert_dag(doc["chapters"])
+    return doc
+
+
 def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
     """Build a complete quest-book JSON from the mod scan alone. Same shape the
     AI is asked for, so it flows through clean_doc / build_chapters unchanged."""
+    if scan.get("unsupported"):
+        raise ValueError(scan.get("blocked") or "This Minecraft version is not supported.")
+    _restore_colour_siblings(scan)
+    # Item translations such as "Ring of %s Affinity" need stack data. Plain
+    # objectives have no such argument, so prose uses their base item name.
+    # Keep the caller's scan and component-aware campaign facts untouched.
+    scan = dict(scan, names={item: _display_name(item, scan.get("names") or {})
+                            for item in (scan.get("names") or {})})
+    campaign_selection = list(selected_ids)
+    campaign_enabled = bool(opts.get("campaign", False))
+    campaign_goal = str(opts.get("campaign_goal", "")).strip()
+    campaign_scope = opts.get("campaign_scope", "goal")
+    scenario = opts.get("scenario") if campaign_enabled else None
+    if scenario is not None:
+        from quest_scenarios import validate_scenario
+        scenario = validate_scenario(scan, campaign_selection, scenario, strict=True)
+        selected_ids = sorted({mid for stage in scenario["stages"] for mid in stage["resolved_mods"] if mid != "minecraft"}) or ["minecraft"]
+    elif campaign_enabled:
+        from quest_campaign import resolve_goal
+        if campaign_scope not in ("selected", "goal"):
+            raise ValueError("Campaign scope must be 'selected' or 'goal'.")
+        campaign_plan = resolve_goal(scan, campaign_selection, campaign_goal)
+        if campaign_goal and campaign_scope == "goal":
+            selected_ids = list(campaign_plan["focus_mods"]) or ["minecraft"]
     density = opts.get("density", "normal")
     try:
         budget = int(str(opts.get("target", "")).strip())
+        explicit_target = budget > 0
     except (TypeError, ValueError):
         budget = DENSITY_MID.get(density, 150)
+        explicit_target = False
     reward = opts.get("reward", "standard")
     progression = opts.get("progression", "linear")
     creativity = float(opts.get("creativity", 0.3))
@@ -10389,6 +12577,15 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
                   "encyclopedic": 4}.get(density, 8)
         own = [m for m in sorted(mods, key=wt, reverse=True)[:max_own] if wt(m) >= min_wt]
         own_ids = {m["mod_id"] for m in own}
+        # A mod that a reference book gives its own chapter gets one here
+        # too, cap or not - that is what building it the way real packs do
+        # means. Measured before this: ATM9's own mods produced 10 templated
+        # chapters out of the 40 the references cover, because the other 30
+        # had been merged into shared chapters by the cap above.
+        if opts.get("mimic", True):
+            _tp = _load_templates()
+            own += [m for m in mods if m["mod_id"] not in own_ids and _tp.get(m["mod_id"])]
+            own_ids = {m["mod_id"] for m in own}
         own.sort(key=lambda m: (cat_order.get(m["category"], 9), -wt(m)))
         merged = [m for m in mods if m["mod_id"] not in own_ids]
 
@@ -10618,6 +12815,12 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
         alloc[i] += 1
         short -= 1
 
+    # Reference templates: on by default, and only for mods a reference book
+    # has a chapter for. Everything else goes through _mod_quest_rows as before.
+    mimic = bool(opts.get("mimic", True))
+    tpls_all = _load_templates() if mimic else {}
+    pending_tpl: list = []          # (insert-at spec index, chapter docs)
+
     specs = []
     for (g, t, ic, vrows) in vanilla_specs:
         specs.append((g, t, ic, [(vt, {"type": "item", "item": vi, "count": vc}, vd)
@@ -10627,6 +12830,24 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
         n = alloc[i]
         if kind == "own":
             m = data
+            if tpls_all.get(m["mod_id"]):
+                tchs = _template_chapters_for(m, tpls_all[m["mod_id"]], scan, n,
+                                              density, rng, alevel, use_groups,
+                                              len(specs) + len(pending_tpl),
+                                              seed=_run_seed(opts), layout=opts.get("layout", ""),
+                                              limit_to_budget=explicit_target)
+                if tchs:
+                    if progression == "open":
+                        for chapter in tchs:
+                            for quest in chapter["quests"]:
+                                quest.pop("dependencies", None)
+                    elif progression == "loose":
+                        for chapter in tchs:
+                            for quest in chapter["quests"]:
+                                if quest.get("optional"):
+                                    quest.pop("dependencies", None)
+                    pending_tpl.append((len(specs), tchs))
+                    continue
             rows = _mod_quest_rows(m, scan, n, rng, creativity)
             # collection wheels: satellites around the family's spine item.
             # The hub hint rides on the task dict and is honoured when
@@ -10644,7 +12865,7 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
                 # nine-book sweep found nine false Craft verbs and every one
                 # was written here. _item_title no longer takes a verb from
                 # craftability at all, so the whole class is gone.
-                for hub in {h for h, _x in wheels if h and h not in spine}:
+                for hub in sorted({h for h, _x in wheels if h and h not in spine}):
                     ch = _count_for(hub, rng)
                     rows.append((_item_title(hub, ch, rng),
                                  {"type": "item", "item": hub, "count": ch},
@@ -10733,8 +12954,20 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
             op = _chapter_opener_row(s[1], s[3], scan)
             if op:
                 s[3] = [op] + list(s[3])
-        fm = _front_matter_rows(specs, scan, opts)
-        if fm:
+        # The front matter counts chapters and quests; templated chapters are
+        # not specs, so they are handed over as look-alike rows for counting
+        # only. The shapes page is dropped when any chapter carries reference
+        # shapes, because its claims are about derived shapes.
+        # every task, not each quest's first: "Not Every Quest Wants an
+        # Item" is emitted from the task kinds it can see, and handing it
+        # tasks[0] alone hid a book's kill and structure asks from it
+        _tpl_specs = [(c["group"], c["title"], None,
+                       [(q["title"], t, "") for q in c["quests"]
+                        for t in (q.get("tasks") or [])])
+                      for _at, _cs in pending_tpl for c in _cs]
+        fm = _front_matter_rows(list(specs) + _tpl_specs, scan,
+                                dict(opts, _templated=bool(pending_tpl)))
+        if fm and specs:
             specs[0][3] = fm + list(specs[0][3])
         specs = [tuple(s) for s in specs]
 
@@ -10789,7 +13022,7 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
         hub_of = {}
         for qi2, (_t2, task2, _d2) in enumerate(rows):
             hub = task2.pop("_wheel_hub", None)
-            if hub:
+            if hub and progression != "open":
                 for qj2, (_t3, task3, _d3) in enumerate(rows):
                     if task3.get("item") == hub:
                         hub_of[qi2] = qj2
@@ -10800,7 +13033,9 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
         # sqrt(size) made them far too deep and stringy, which is what drew
         # all those long crossing dependency lines.
         # trunk-and-leaves, per the measured norms (see shape_as_trunk)
-        _tdeps, _tleaf = shape_as_trunk(ids, chain_from)
+        _tdeps, _tleaf = _progression_dependencies(
+            rows, ids, scan, progression, chain_from)
+        hub_of = _valid_collection_hubs(hub_of, ids, _tdeps)
         # CHK-13: loot-table rewards retreat to the chapter FINALE. Authored
         # packs hold table rewards for the end (spec: share <= 0.05 of reward
         # entries, mean dependency-order position >= 0.75); handing a crate to
@@ -10813,8 +13048,6 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
         # one per chapter on every chapter would land ~25 of ~350 entries
         # (0.07) and overshoot the share cap.
         _edges13 = {qid: list(_tdeps.get(qid, ())) for qid in ids}
-        for _si, _hi in hub_of.items():
-            _edges13[ids[_si]] = [ids[_hi]]
         _memo13 = {}
 
         def _rank13(qid, _stk=()):
@@ -10846,8 +13079,12 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
         quests = []
         for i, (qtitle, task, desc) in enumerate(rows):
             q = {"id": ids[i], "x": 0.0, "y": 0.0, "title": qtitle, "tasks": [task]}
+            if task.get("_guide_ref") in _GUIDE_CHECKS:
+                guide_icon = _GUIDE_CHECKS[task["_guide_ref"]].get("icon")
+                if guide_icon:
+                    q["icon"] = guide_icon
             if i in hub_of:
-                q["dependencies"] = [ids[hub_of[i]]]
+                q["dependencies"] = list(_tdeps.get(ids[i], ()))
                 # no `optional` here either, for the CHK-16/17 reason spelled
                 # out at the trunk branch below. Wheel satellites are ~30% of
                 # every wheel chapter, so flagging them left 11 of 25 chapters
@@ -11019,6 +13256,7 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
         chapters.append({
             "id": ck,
             "group": (grp if use_groups else ""),
+            "_vanilla": grp == "Vanilla",
             "title": title,
             # First row with an item, not row 0: chapters now open on a free
             # orientation quest (CHK-01), and taking row 0 blindly gave every
@@ -11029,6 +13267,15 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
             **({"description": [_intro]} if _intro else {}),
             "quests": quests,
         })
+
+    # Templated chapters take the seat their mod's spec would have had, so
+    # the book still reads in unit order. Each spec produced exactly one
+    # chapter above, so a spec index is a chapters index.
+    for _at, _cs in reversed(pending_tpl):
+        chapters[_at:_at] = _cs
+    _vanilla_progression_pass(chapters, scan, progression)
+    _connect_authored_chapters(chapters, scan, progression)
+    _template_rewards(chapters, scan, rmult, pool_ids, lanes, rng)
 
     # BEFORE the prose passes: bulk asks retitle bare item titles ("16x X"),
     # and the subtitle/rationale passes key their work off the final title.
@@ -11042,20 +13289,49 @@ def local_quest_doc(scan: dict, selected_ids: list, opts: dict) -> dict:
     # the glance-hint channel (CHK-10) and the front-loaded entry quest
     # (CHK-12); both add prose, so the tail scrub must come after them
     subtitle_pass(chapters, scan)
+    subtitle_tidy(chapters)
     role_length_pass(chapters, scan)
     # LAST: sourced prose (blurbs, guide notes) can carry the five
     # generator-tail skeletons CHK-11 hard-fails on; only a final sweep can
     # guarantee tail_share stays 0.0 on packs nobody has seen
     scrub_generator_tails(chapters)
+    if alevel["desc_lines"] == 0:
+        for chapter in chapters:
+            chapter.pop("description", None)
+            for quest in chapter.get("quests", []):
+                quest.pop("description", None)
+                quest.pop("subtitle", None)
 
-    return {
+    doc = {
         "title": opts.get("book_title") or "Modpack Field Guide",
+        "_offline_generated": True,
         "reward_tables": rtables,
         "chapters": chapters,
         # so a caller can say WHY a picked mod produced nothing, instead of
         # handing back an empty book in silence
         "excluded_mods": _dropped,
     }
+    if campaign_enabled:
+        if scenario is not None:
+            from quest_campaign import apply_scenario
+            doc = apply_scenario(doc, scan, campaign_selection, scenario,
+                                 opts.get("seed", 0), progression)
+        else:
+            from quest_campaign import apply_campaign
+            doc = apply_campaign(doc, scan, campaign_selection, campaign_goal,
+                                 opts.get("seed", 0), progression, scope=campaign_scope)
+            doc = _use_installed_goal_blueprint(doc, scan, opts)
+        if alevel["desc_lines"] == 0:
+            for chapter in doc["chapters"]:
+                if scenario is None:
+                    chapter.pop("description", None)
+                for quest in chapter.get("quests", []):
+                    # A manual scenario's instructions are its completion
+                    # condition; visual minimalism must not erase that meaning.
+                    if scenario is None or not any(task.get("type") == "checkmark" for task in quest.get("tasks", [])):
+                        quest.pop("description", None)
+                    quest.pop("subtitle", None)
+    return doc
 
 
 # ========================================================================== #
@@ -11314,53 +13590,37 @@ def _salvage_objects(blob: str) -> list:
 
 
 def clean_doc(doc: dict, scan: dict, log) -> dict:
+    if scan.get("unsupported"):
+        raise ValueError(scan.get("blocked") or "This Minecraft version is not supported.")
     known = set()
-    by_ns: dict = {}
     for s in scan.get("items", {}).values():
-        known |= s
-        for i in s:
-            by_ns.setdefault(i.split(":")[0], []).append(i)
-    for v in by_ns.values():
-        v.sort()
-
-    vanilla = scan.get("vanilla") or set()
+        known.update(s)
+    vanilla = set(scan.get("vanilla") or _VANILLA_ITEM_SET)
 
     def ok_item(x) -> bool:
         x = str(x)
-        if not x or ":" not in x:
-            return False
-        ns = x.split(":")[0]
-        if ns == "minecraft":
-            # only trust minecraft: ids we can vouch for — models happily invent
-            # "minecraft:brass_ingot" when they mean create:brass_ingot
-            return (x in vanilla) if vanilla else True
-        if not known:                 # nothing scanned -> can't judge, allow
-            return True
-        return x in known
+        return bool(_RESLOC_RE.fullmatch(x)) and (x in known or x in vanilla)
 
     # short name -> real id, so an invented "minecraft:brass_ingot" becomes
     # "create:brass_ingot" rather than something unrelated from the same mod
     by_short: dict = {}
-    for _i in known:
-        by_short.setdefault(_i.split(":", 1)[1], _i)
+    for _i in sorted(known | vanilla):
+        by_short.setdefault(_i.split(":", 1)[1], []).append(_i)
 
     def fix_item(x, seed=""):
-        """Return a valid item id: the same item under its real namespace where
-        one exists, else something from the same mod, else None."""
+        """Correct only an unambiguous namespace typo, never change the goal.
+
+        Substituting an arbitrary item kept the old title and description:
+        a quest about a reactor could silently start asking for a fence.
+        If two mods supply the same short name, neither is a safe guess.
+        """
         if ok_item(x):
             return str(x)
         xs = str(x)
         short = xs.split(":", 1)[1] if ":" in xs else xs
-        if short in by_short:
-            return by_short[short]
-        ns = xs.split(":")[0] if ":" in xs else ""
-        pool = by_ns.get(ns)
-        if pool:
-            # only stand in something worth wanting - hashing into the raw
-            # namespace pool once replaced a bad id with a pressure plate in
-            # the middle of the Twilight Forest chapter
-            worthy = [i for i in pool if _junk_score(i) < 2] or pool
-            return worthy[hash(seed + xs) % len(worthy)]
+        matches = by_short.get(short, [])
+        if len(matches) == 1:
+            return matches[0]
         return None
 
     chapters = doc.get("chapters") or []
@@ -11374,7 +13634,35 @@ def clean_doc(doc: dict, scan: dict, log) -> dict:
         all_entities |= set(_s)
 
     swapped = task_drop = rew_drop = dropped = 0
+
+    def clean_rewards(rewards):
+        nonlocal rew_drop
+        keep = []
+        for rw in rewards:
+            if rw.get("type", "item") == "item":
+                raw = rw.get("item") or rw.get("target")
+                if not ok_item(raw):
+                    replacement = fix_item(raw)
+                    if not replacement:
+                        rew_drop += 1
+                        continue
+                    rw["item"] = replacement
+                    rw.pop("target", None)
+            keep.append(rw)
+        return keep
+
+    # Table rewards are item stacks too. Validating only rewards attached
+    # directly to quests lets an invalid item reappear when a chest is opened.
+    for table in doc.get("reward_tables") or doc.get("reward_pools") or []:
+        key = "rewards" if table.get("rewards") else "items"
+        table[key] = clean_rewards(table.get(key) or [])
+        if table.get("icon") and not ok_item(table["icon"]):
+            table["icon"] = fix_item(table["icon"]) or "minecraft:chest"
+
     for ch in chapters:
+        if ch.get("_native_reference"):
+            log("  preserved the installed pack's original endgame blueprint: " + str(ch.get("title", "")))
+            continue
         if ch.get("icon") and not ok_item(ch["icon"]):
             f = fix_item(ch["icon"], ch.get("id", ""))
             ch["icon"] = f or "minecraft:book"
@@ -11384,17 +13672,16 @@ def clean_doc(doc: dict, scan: dict, log) -> dict:
             dropped += len(q.get("dependencies") or []) - len(deps)
             q["dependencies"] = deps
 
-            if q.get("icon") and not ok_item(q["icon"]):
-                q["icon"] = fix_item(q["icon"], qseed) or None
-                if q["icon"] is None:
-                    q.pop("icon", None)
+            if "icon" in q and _verified_quest_icon(q["icon"], scan) is None:
+                q.pop("icon", None)
 
             new_tasks = []
+            invalid_goal = False
             for tk_ in q.get("tasks") or []:
                 ttype = tk_.get("type", "item")
                 if ttype == "item":
                     raw = tk_.get("item") or tk_.get("target")
-                    if raw and not ok_item(raw):
+                    if not ok_item(raw):
                         rep = fix_item(raw, qseed)
                         if rep:
                             tk_["item"] = rep
@@ -11402,6 +13689,7 @@ def clean_doc(doc: dict, scan: dict, log) -> dict:
                             swapped += 1
                         else:
                             task_drop += 1
+                            invalid_goal = True
                             continue
                 elif ttype == "kill":
                     # a kill task whose entity is missing or not a real mob
@@ -11409,22 +13697,15 @@ def clean_doc(doc: dict, scan: dict, log) -> dict:
                     ent = tk_.get("entity")
                     if not isinstance(ent, str) or ent not in all_entities:
                         task_drop += 1
+                        invalid_goal = True
                         continue
                 new_tasks.append(tk_)
-            q["tasks"] = new_tasks
+            # A partial objective no longer matches its authored instructions.
+            # Drop that quest and preserve its prerequisite links below.
+            q["tasks"] = [] if invalid_goal else new_tasks
 
             if q.get("rewards"):
-                keep = []
-                for rw in q["rewards"]:
-                    if rw.get("type", "item") == "item" and rw.get("item") and not ok_item(rw["item"]):
-                        rep = fix_item(rw["item"], qseed + "r")
-                        if rep:
-                            rw["item"] = rep
-                        else:
-                            rew_drop += 1
-                            continue
-                    keep.append(rw)
-                q["rewards"] = keep
+                q["rewards"] = clean_rewards(q["rewards"])
 
     # --- two quests, one item -------------------------------------------------
     # Only when BOTH are single-task. A multi-task quest repeating items asked
@@ -11435,49 +13716,71 @@ def clean_doc(doc: dict, scan: dict, log) -> dict:
     # Re-pointing it at another item instead looks like a tidy fix but invents
     # nonsense: the title still describes the old item, which is how a quest
     # called "Naga Armorer" ended up asking for an acacia fence.
-    repeat = 0
+    repeat = empty = 0
+    remap = {}
     for ch in chapters:
         quests = ch.get("quests") or []
-        taken, keep, remap = set(), [], {}
+        taken, keep = set(), []
+        # A chapter copied from a reference is exempt. Its quest set is fixed
+        # by _template_chapters_for before any seeded choice, and it already
+        # never picks one item twice except where the author asked for it at
+        # rising counts. Dropping here would key on counts that vary by seed,
+        # and a quest that exists under one seed but not another is a
+        # renumbered book - measured: the sweep flagged exactly that on ATM9.
+        templated = bool(ch.get("_template"))
         for q in quests:
             tasks = q.get("tasks") or []
             if not tasks:                  # nothing left to do -> unfinishable
-                deps0 = [d for d in (q.get("dependencies") or [])]
-                remap[str(q.get("id"))] = deps0[0] if deps0 else None
-                repeat += 1
+                remap[str(q.get("id") or q.get("title"))] = list(q.get("dependencies") or [])
+                empty += 1
                 continue
-            if len(tasks) != 1:
+            if templated or len(tasks) != 1:
                 for t in tasks:
                     if isinstance(t.get("item"), str):
                         taken.add(t["item"])
                 keep.append(q)
                 continue
             it = tasks[0].get("item")
-            if isinstance(it, str) and it in taken:
-                deps = [d for d in (q.get("dependencies") or [])]
-                remap[str(q.get("id"))] = deps[0] if deps else None
+            key = it
+            if isinstance(it, str) and key in taken:
+                remap[str(q.get("id") or q.get("title"))] = list(q.get("dependencies") or [])
                 repeat += 1
                 continue
             if isinstance(it, str):
-                taken.add(it)
+                taken.add(key)
             keep.append(q)
-        if remap:
-            for q in keep:
-                out_deps = []
-                for d in (q.get("dependencies") or []):
-                    d = str(d)
-                    seen_hops = 0
-                    while d in remap and seen_hops < 8:
-                        d = remap[d]
-                        seen_hops += 1
-                        if d is None:
-                            break
-                    if d is not None:
-                        out_deps.append(d)
-                q["dependencies"] = list(dict.fromkeys(out_deps))
-            ch["quests"] = keep
+        ch["quests"] = keep
+    if remap:
+        remaining = {str(q.get("id") or q.get("title"))
+                     for ch in chapters for q in ch.get("quests") or []}
+
+        def surviving_dependencies(dep, visited):
+            dep = str(dep)
+            if dep in visited:
+                return []
+            if dep not in remap:
+                return [dep] if dep in remaining else []
+            out = []
+            for parent in remap[dep]:
+                out.extend(surviving_dependencies(parent, visited | {dep}))
+            return out
+
+        # Removal can affect another chapter, and a removed join may have
+        # several prerequisites. Keep all of them instead of silently
+        # throwing away every branch after the first.
+        for ch in chapters:
+            if ch.get("_native_reference"):
+                continue
+            for q in ch.get("quests") or []:
+                qkey = str(q.get("id") or q.get("title"))
+                deps = []
+                for dep in q.get("dependencies") or []:
+                    deps.extend(surviving_dependencies(dep, {qkey}))
+                q["dependencies"] = list(dict.fromkeys(deps))
     if repeat:
         log("  ! dropped %d duplicate quest(s)" % repeat)
+    if empty:
+        log("  ! dropped %d quest(s) with unavailable objectives; preserved their prerequisite links" % empty)
 
     # Last, because it needs the final title set: the duplicate-quest pass
     # above can be what removes a collision, and qualifying a title that is
@@ -11486,7 +13789,7 @@ def clean_doc(doc: dict, scan: dict, log) -> dict:
     if qualified:
         log("  named %d structure(s) after their mod to tell them apart" % qualified)
 
-    for tag, n in (("swapped %d bad task item(s) for real ones", swapped),
+    for tag, n in (("corrected %d item namespace(s)", swapped),
                    ("dropped %d item task(s) with no valid replacement", task_drop),
                    ("dropped %d reward(s) with a fake item", rew_drop),
                    ("pruned %d broken dependency link(s)", dropped)):
@@ -11847,6 +14150,11 @@ def restore_book_from_library(name: str, quests_dir: Path,
         raise RuntimeError(
             "Minecraft is RUNNING. Close the game before restoring, or FTB "
             "Quests will overwrite the restored book when it exits.")
+    from quest_decor import prepare_art_export, finish_art_export
+    restored_chapters = [(file.stem, snbt_loads(file.read_text(encoding="utf-8")))
+                         for file in sorted((src / "chapters").glob("*.snbt"))]
+    instance = quests_dir.parent.parent.parent
+    prepared_art = prepare_art_export(quests_dir, restored_chapters, _instance_mc_version(instance))
     quests_dir.mkdir(parents=True, exist_ok=True)
     live_ch = quests_dir / "chapters"
     if live_ch.is_dir() and any(live_ch.iterdir()):
@@ -11866,6 +14174,7 @@ def restore_book_from_library(name: str, quests_dir: Path,
             shutil.copytree(s_part, tgt)
         else:
             shutil.copy2(s_part, tgt)
+    finish_art_export(quests_dir, prepared_art, log)
     log("  restored '%s'" % name)
 
 
@@ -11948,164 +14257,134 @@ def _guess_quests_dir() -> str:
 # ========================================================================== #
 
 PALETTE = {
-    "bg": "#14161f", "surface": "#1c1f2b", "surface2": "#262a3a", "text": "#e8eaf2",
-    "muted": "#8b90a6", "accent": "#8a7dff", "accent_h": "#7a6cf0", "border": "#333749",
-    "ok": "#5ec48a", "warn": "#e6b35c", "err": "#e56b6b", "gold": "#e9dcb4",
-    "night_top": "#2b2f52", "night_bot": "#0e1024",
+    "bg": "#101820", "surface": "#17222d", "surface2": "#202f3c", "text": "#edf3f7",
+    "muted": "#9aabb8", "accent": "#37c8b2", "accent_h": "#5fdbc8", "border": "#2d414e",
+    "ok": "#6bd8ac", "warn": "#edbd74", "err": "#ef8b91", "gold": "#dfc392",
+    "night_top": "#172833", "night_bot": "#101820",
 }
 
 
 def apply_theme(root: tk.Tk):
+    """Calm desktop styling shared by the guided flow and expert tools."""
     p = PALETTE
     st = ttk.Style(root)
     st.theme_use("clam")
     root.configure(bg=p["bg"])
-    root.option_add("*Font", ("Segoe UI", 10))
-    st.configure(".", background=p["bg"], foreground=p["text"], fieldbackground=p["surface2"],
+    st.configure(".", font=("Segoe UI", 10), background=p["bg"], foreground=p["text"], fieldbackground=p["surface2"],
                  bordercolor=p["border"], lightcolor=p["surface"], darkcolor=p["surface"],
                  troughcolor=p["surface2"], focuscolor=p["accent"], insertcolor=p["text"])
     st.configure("TFrame", background=p["bg"])
     st.configure("Card.TFrame", background=p["surface"])
     st.configure("TLabel", background=p["bg"], foreground=p["text"])
     st.configure("Muted.TLabel", background=p["bg"], foreground=p["muted"])
+    st.configure("Helper.TLabel", background=p["bg"], foreground=p["muted"], font=("Segoe UI", 10))
     st.configure("Card.TLabel", background=p["surface"], foreground=p["text"])
     st.configure("CardMuted.TLabel", background=p["surface"], foreground=p["muted"])
-    st.configure("Head.TLabel", background=p["bg"], foreground=p["text"],
-                 font=("Segoe UI Semibold", 11))
-    st.configure("Status.TLabel", background=p["surface"], foreground=p["muted"])
+    st.configure("Head.TLabel", background=p["bg"], foreground=p["text"], font=("Segoe UI Semibold", 12))
+    st.configure("PageTitle.TLabel", background=p["bg"], foreground=p["text"], font=("Segoe UI Semibold", 22))
+    st.configure("Eyebrow.TLabel", background=p["bg"], foreground=p["muted"], font=("Segoe UI", 9))
+    st.configure("Hero.TLabel", background=p["surface"], foreground=p["text"], font=("Segoe UI Semibold", 13))
+    st.configure("Status.TLabel", background=p["surface"], foreground=p["muted"], font=("Segoe UI", 9))
     st.configure("TLabelframe", background=p["surface"], bordercolor=p["border"], relief="solid",
-                 borderwidth=1, padding=10)
-    st.configure("TLabelframe.Label", background=p["surface"], foreground=p["accent"],
-                 font=("Segoe UI Semibold", 9))
+                 borderwidth=1, padding=14)
+    st.configure("TLabelframe.Label", background=p["surface"], foreground=p["muted"],
+                 font=("Segoe UI Semibold", 10))
     for base in ("TButton", "Card.TButton"):
         st.configure(base, background=p["surface2"], foreground=p["text"], bordercolor=p["border"],
-                     focusthickness=0, padding=(13, 7), relief="flat", anchor="center")
-        st.map(base, background=[("active", "#333850"), ("disabled", p["surface"])],
+                     focusthickness=1, focuscolor=p["accent"], padding=(14, 9), relief="flat", anchor="center")
+        st.map(base, background=[("active", "#2c4050"), ("disabled", p["surface"])],
                foreground=[("disabled", p["muted"])])
-    st.configure("Accent.TButton", background=p["accent"], foreground="#ffffff", padding=(17, 8),
-                 font=("Segoe UI Semibold", 10))
+    st.configure("Accent.TButton", background=p["accent"], foreground="#082d28", padding=(18, 10),
+                 font=("Segoe UI Semibold", 10), bordercolor=p["accent"])
     st.map("Accent.TButton", background=[("active", p["accent_h"]), ("disabled", p["border"])],
-           foreground=[("disabled", p["muted"])])
-    st.configure("Warn.TButton", background="#5a3b2a", foreground=p["gold"], padding=(15, 8))
-    st.map("Warn.TButton", background=[("active", "#6e4632")])
+           foreground=[("disabled", p["muted"])], bordercolor=[("active", p["accent_h"])])
+    st.configure("Warn.TButton", background="#493a28", foreground=p["warn"], padding=(14, 9))
+    st.map("Warn.TButton", background=[("active", "#5e4930")])
+    st.configure("Nav.TButton", background=p["bg"], foreground=p["muted"], anchor="w",
+                 padding=(14, 12), font=("Segoe UI", 11), borderwidth=0, bordercolor=p["bg"])
+    st.map("Nav.TButton", background=[("active", "#1c2d38")], foreground=[("active", p["text"])])
+    st.configure("Nav.TMenubutton", background=p["bg"], foreground=p["muted"], anchor="w",
+                 padding=(14, 12), font=("Segoe UI", 11), borderwidth=0,
+                 bordercolor=p["bg"], arrowcolor=p["muted"], relief="flat")
+    st.map("Nav.TMenubutton", background=[("active", "#1c2d38")],
+           foreground=[("active", p["text"])])
+    st.configure("NavActive.TButton", background="#193c3d", foreground="#7be4d0", anchor="w",
+                 padding=(14, 12), font=("Segoe UI Semibold", 11), borderwidth=0, bordercolor="#193c3d")
+    st.map("NavActive.TButton", background=[("active", "#1d4647")], foreground=[("active", "#a0f2e2")])
+    st.configure("Section.TButton", background=p["surface"], foreground=p["text"], anchor="w",
+                 padding=(14, 12), font=("Segoe UI Semibold", 11), bordercolor=p["border"])
+    st.map("Section.TButton", background=[("active", "#20333f")])
     st.configure("TEntry", fieldbackground=p["surface2"], foreground=p["text"],
-                 bordercolor=p["border"], padding=6, relief="flat")
+                 bordercolor=p["border"], padding=8, relief="flat")
     st.map("TEntry", bordercolor=[("focus", p["accent"])], lightcolor=[("focus", p["accent"])])
     st.configure("TCombobox", fieldbackground=p["surface2"], foreground=p["text"],
-                 background=p["surface2"], arrowcolor=p["text"], bordercolor=p["border"], padding=5)
-    st.map("TCombobox", fieldbackground=[("readonly", p["surface2"])],
-           bordercolor=[("focus", p["accent"])])
+                 background=p["surface2"], arrowcolor=p["muted"], bordercolor=p["border"], padding=7)
+    st.map("TCombobox", fieldbackground=[("readonly", p["surface2"]), ("disabled", p["surface"])],
+           foreground=[("disabled", p["muted"])], bordercolor=[("focus", p["accent"])])
     root.option_add("*TCombobox*Listbox.background", p["surface2"])
     root.option_add("*TCombobox*Listbox.foreground", p["text"])
-    root.option_add("*TCombobox*Listbox.selectBackground", p["accent"])
+    root.option_add("*TCombobox*Listbox.selectBackground", "#22554f")
     root.option_add("*TCombobox*Listbox.selectForeground", "#ffffff")
     for base in ("TCheckbutton", "Card.TCheckbutton"):
-        st.configure(base, background=p["surface"], foreground=p["text"], focuscolor=p["surface"])
-        st.map(base, background=[("active", p["surface"])],
+        st.configure(base, background=p["surface"], foreground=p["text"], focuscolor=p["accent"])
+        st.map(base, background=[("active", p["surface"])], foreground=[("disabled", p["muted"])],
                indicatorcolor=[("selected", p["accent"]), ("!selected", p["surface2"])])
-    st.configure("TCheckbutton", background=p["bg"], focuscolor=p["bg"])
+    st.configure("TCheckbutton", background=p["bg"])
     st.map("TCheckbutton", background=[("active", p["bg"])])
     st.configure("TScale", background=p["surface"], troughcolor=p["surface2"])
-    st.configure("TNotebook", background=p["bg"], bordercolor=p["border"], tabmargins=(0, 8, 0, 0))
+    st.configure("TNotebook", background=p["bg"], bordercolor=p["border"], tabmargins=(0, 4, 0, 0))
     st.configure("TNotebook.Tab", background=p["surface"], foreground=p["muted"],
-                 padding=(20, 10), bordercolor=p["border"], font=("Segoe UI Semibold", 10))
-    st.map("TNotebook.Tab", background=[("selected", p["accent"])],
-           foreground=[("selected", "#ffffff")], expand=[("selected", (0, 0, 0, 0))])
+                 padding=(16, 10), bordercolor=p["border"], font=("Segoe UI Semibold", 10))
+    st.map("TNotebook.Tab", background=[("selected", "#193c3d")],
+           foreground=[("selected", "#7be4d0")], expand=[("selected", (0, 0, 0, 0))])
     st.configure("TProgressbar", background=p["accent"], troughcolor=p["surface2"],
                  bordercolor=p["border"], thickness=6)
     st.configure("Vertical.TScrollbar", background=p["surface2"], troughcolor=p["bg"],
-                 arrowcolor=p["muted"], bordercolor=p["border"])
-    st.configure("Treeview", background=p["surface2"], fieldbackground=p["surface2"],
-                 foreground=p["text"], bordercolor=p["border"], rowheight=24)
-    st.map("Treeview", background=[("selected", p["accent"])], foreground=[("selected", "#ffffff")])
-    st.configure("Treeview.Heading", background=p["surface"], foreground=p["muted"], relief="flat")
+                 arrowcolor=p["muted"], bordercolor=p["bg"])
+    st.configure("Treeview", background=p["surface"], fieldbackground=p["surface"],
+                 foreground=p["text"], bordercolor=p["border"], rowheight=30)
+    st.map("Treeview", background=[("selected", "#22554f")], foreground=[("selected", "#ffffff")])
+    st.configure("Treeview.Heading", background=p["surface2"], foreground=p["muted"],
+                 relief="flat", font=("Segoe UI Semibold", 10), padding=(8, 8))
 
 
 class HeaderBanner(tk.Canvas):
-    """Night-sky banner: gradient, drifting stars, a moon, the app title."""
+    """Compact static identity bar. Scan status survives redraws and resizing."""
 
-    def __init__(self, parent, height=76):
-        super().__init__(parent, height=height, highlightthickness=0, bd=0,
-                         bg=PALETTE["night_bot"])
+    def __init__(self, parent, height=66):
+        height = min(int(height), 66)
+        super().__init__(parent, height=height, highlightthickness=0, bd=0, bg=PALETTE["bg"])
         self.h = height
-        self._stars = [(random.random(), random.random(), random.uniform(0.6, 1.8),
-                        random.uniform(0.3, 1.0), random.random() * 6.28) for _ in range(46)]
-        self._phase = 0.0
-        self._shooters = []      # [x, y, vx, vy, life]  life 1.0 -> 0.0
+        self._badge = ""
         self.bind("<Configure>", lambda e: self._draw())
-        self._animate()
-
-    def _animate(self):
-        self._phase += 0.05
-        w = self.winfo_width() or 900
-        # occasionally launch a shooting star from the upper area, streaking down-right
-        if len(self._shooters) < 2 and random.random() < 0.03:
-            self._shooters.append([
-                random.uniform(-40, w * 0.5), random.uniform(-6, self.h * 0.5),
-                random.uniform(9, 15), random.uniform(2.5, 5.0), 1.0])
-        for sh in self._shooters:
-            sh[0] += sh[2]
-            sh[1] += sh[3]
-            sh[4] -= 0.045
-        self._shooters = [s for s in self._shooters
-                          if s[4] > 0 and s[0] < w + 60 and s[1] < self.h + 40]
         self._draw()
-        self.after(45, self._animate)
 
     def _draw(self):
         self.delete("all")
-        w = self.winfo_width() or 900
-        h = self.h
-        # vertical gradient
-        steps = 24
-        c1 = tuple(int(PALETTE["night_top"][i:i + 2], 16) for i in (1, 3, 5))
-        c2 = tuple(int(PALETTE["night_bot"][i:i + 2], 16) for i in (1, 3, 5))
-        for s in range(steps):
-            t = s / steps
-            col = "#%02x%02x%02x" % tuple(int(c1[i] + (c2[i] - c1[i]) * t) for i in range(3))
-            self.create_rectangle(0, h * t, w, h * (t + 1 / steps) + 1, fill=col, outline="")
-        # stars
-        for (sx, sy, sr, br, ph) in self._stars:
-            tw = 0.5 + 0.5 * math.sin(self._phase + ph)
-            x = (sx * w + self._phase * 6 * br) % (w + 20) - 10
-            y = sy * h
-            g = int(120 + 135 * br * tw)
-            self.create_oval(x - sr, y - sr, x + sr, y + sr,
-                             fill="#%02x%02x%02x" % (g, g, min(255, g + 20)), outline="")
-        # shooting stars (head + fading trail)
-        for (sx, sy, vx, vy, life) in self._shooters:
-            L = 7
-            for k in range(L):
-                tx, ty = sx - vx * k * 0.55, sy - vy * k * 0.55
-                a = life * (1 - k / L)
-                g = int(90 + 165 * a)
-                self.create_line(tx, ty, tx - vx * 0.4, ty - vy * 0.4,
-                                 fill="#%02x%02x%02x" % (g, g, min(255, g + 30)),
-                                 width=max(1, 2.4 * a))
-            hg = int(200 + 55 * life)
-            self.create_oval(sx - 2, sy - 2, sx + 2, sy + 2,
-                             fill="#%02x%02x%02x" % (hg, hg, 255), outline="")
-        # moon
-        mx, my, mr = 42, h / 2, 20
-        self.create_oval(mx - mr - 6, my - mr - 6, mx + mr + 6, my + mr + 6,
-                         fill="", outline="#3a3f6a")
-        self.create_oval(mx - mr, my - mr, mx + mr, my + mr, fill=PALETTE["gold"], outline="")
-        self.create_oval(mx - mr + 9, my - mr - 3, mx + mr + 9, my + mr - 3,
-                         fill=PALETTE["night_top"], outline="")
-        # title
-        self.create_text(84, my - 9, anchor="w", text=APP_NAME,
-                         fill="#ffffff", font=("Segoe UI Semibold", 16))
-        self.create_text(85, my + 13, anchor="w",
-                         text="AI-built quest books for FTB Quests  -  MC 1.20.1",
-                         fill="#b9bcd8", font=("Segoe UI", 9))
-        self.mc_badge_id = self.create_text(w - 14, my, anchor="e", text="",
-                                            fill=PALETTE["warn"], font=("Consolas", 9))
+        p = PALETTE
+        w = self.winfo_width()
+        if w < 100:
+            w = 900
+        mid = self.h / 2
+        # A small quest branch replaces the animated moon and star field.
+        self.create_line(23, mid + 8, 35, mid - 8, 47, mid + 4,
+                         fill=p["accent"], width=2)
+        for x, y, r in ((23, mid + 8, 4), (35, mid - 8, 5), (47, mid + 4, 4)):
+            self.create_oval(x - r, y - r, x + r, y + r,
+                             fill=p["accent"], outline=p["bg"], width=2)
+        self.create_text(64, mid - 10, anchor="w", text=APP_NAME,
+                         fill=p["text"], font=("Segoe UI Semibold", 16))
+        self.create_text(65, mid + 12, anchor="w", text="Quest books, made on your computer",
+                         fill=p["muted"], font=("Segoe UI", 9))
+        self.create_line(0, self.h - 1, w, self.h - 1, fill=p["border"])
+        self.mc_badge_id = self.create_text(w - 24, mid, anchor="e",
+                                            text=self._badge or "100% OFFLINE",
+                                            fill=p["accent"], font=("Segoe UI Semibold", 9))
 
     def set_badge(self, text):
-        try:
-            self.itemconfigure(self.mc_badge_id, text=text)
-        except Exception:
-            pass
+        self._badge = str(text or "")
+        self._draw()
+
 
 
 def hover_lift(widget, normal="TButton", hover="Card.TButton"):
@@ -12172,7 +14451,8 @@ class QuestPreview(tk.Canvas):
         self.delete("all")
         W = self.winfo_width() or 600
         H = self.h
-        decor = o.get("decor_art")
+        level = _aesthetic(o)
+        decor = o.get("decor_art") and level["images"] > 0
         banners = o.get("banners")
         styled = o.get("style_chapters")
         layout = o.get("layout", "line")
@@ -12209,9 +14489,17 @@ class QuestPreview(tk.Canvas):
         pad = 16
         if decor:
             self.create_rectangle(pad, pad + 22, W - pad, H - pad, outline="#5a5f9c", width=2)
-            es = 16
-            pts = _shape_points(pad + 22, H - pad - 12, es * 0.6, "hexagon" if emblem == "gear" else "pentagon")
-            self.create_polygon(pts, fill="#6b74c8", outline="")
+            count = int(level["field"])
+            cols = max(1, math.ceil(math.sqrt(count)))
+            for i in range(count):
+                x = pad + 14 + (i % cols) * max(1, (W - 2 * pad - 28) / cols)
+                y = pad + 36 + (i // cols) * max(1, (H - 2 * pad - 60) / cols)
+                side = min((W - 2 * pad - 28) / cols, (H - 2 * pad - 60) / cols)
+                self.create_rectangle(x, y, x + side, y + side, fill="#20283d", outline="#293249")
+            for i in range(int(level["motifs"])):
+                x = pad + 18 + (W - 2 * pad - 36) * (i + 0.5) / max(1, level["motifs"])
+                pts = _shape_points(x, H - pad - 10, 5, "hexagon" if emblem == "gear" else "pentagon")
+                self.create_polygon(pts, fill="#6b74c8", outline="")
 
         # ---- title / banner ----
         title = "Adventure Chapter"
@@ -12228,13 +14516,17 @@ class QuestPreview(tk.Canvas):
 
         # ---- quest layout ----
         quests = [dict(q) for q in _PREVIEW_QUESTS]
+        roles = _role_shapes(quests, gshape) if styled and level["shapes"] else {}
+        _apply_quest_sizes(quests, o.get("quest_size_style", "varied" if styled else "preserve"))
         for q in quests:
             if forced:
                 q["shape"] = forced
+            elif styled and not level["shapes"]:
+                q["shape"] = gshape
             else:
-                q["shape"] = _quest_shape(q, gshape) if styled else ""
-        jit = 0.1 + 1.3 * o.get("creativity", 0.3)
-        pos = layout_positions(quests, layout, jit, "preview")
+                q["shape"] = (roles.get(q["id"]) or _quest_shape(q, gshape)) if styled else ""
+        jit = 0.15 + 1.4 * o.get("creativity", 0.3)
+        pos = layout_positions(quests, layout, jit, "preview/" + str(o.get("seed", "auto")))
         if not pos:
             pos = {q["id"]: (q["x"], q["y"]) for q in quests}
         xs = [p[0] for p in pos.values()]
@@ -12261,7 +14553,7 @@ class QuestPreview(tk.Canvas):
         node = _CODE_HEX.get(code, PALETTE["accent"]) if styled else PALETTE["accent"]
         for q in quests:
             cx, cy = sp(q["id"])
-            r = 8
+            r = 8 * float(q.get("size", 1.0))
             pts = _shape_points(cx, cy, r, q["shape"] or "circle")
             if pts:
                 self.create_polygon(pts, fill=node, outline="#0c0d16")
@@ -12412,26 +14704,25 @@ def play_sfx(name: str, enabled: bool):
 # ========================================================================== #
 
 class StarProgress(tk.Canvas):
-    """A night-sky progress bar: the fill is a starfield with a moon at its edge.
-    set(frac) for determinate, set(None) / just start() for an indeterminate sweep."""
+    """Thin progress indicator with determinate and indeterminate modes."""
 
-    def __init__(self, parent, w=460, h=30):
-        super().__init__(parent, width=w, height=h, highlightthickness=1,
-                         highlightbackground="#333a66", bd=0, bg="#0c0e20")
-        self.W, self.H = w, h
+    def __init__(self, parent, w=460, h=8):
+        height = max(4, min(int(h), 8))
+        super().__init__(parent, width=w, height=height, highlightthickness=0,
+                         bd=0, bg=PALETTE["surface2"])
+        self.W, self.H = w, height
         self._frac = 0.0
         self._indef = True
         self._phase = 0.0
         self._running = False
-        self._stars = [(random.random(), random.random(), random.uniform(0.4, 1.7),
-                        random.random() * 6.28) for _ in range(max(16, w // 8))]
-        self._c1 = tuple(int(PALETTE["night_top"][i:i + 2], 16) for i in (1, 3, 5))
-        self._c2 = tuple(int(PALETTE["night_bot"][i:i + 2], 16) for i in (1, 3, 5))
+        self._after_id = None
+        self.bind("<Configure>", lambda _e: self._draw())
 
     def set(self, frac):
         self._indef = frac is None
         if frac is not None:
-            self._frac = max(0.0, min(1.0, frac))
+            self._frac = max(0.0, min(1.0, float(frac)))
+        self._draw()
 
     def start(self):
         if not self._running:
@@ -12440,162 +14731,124 @@ class StarProgress(tk.Canvas):
 
     def stop(self):
         self._running = False
+        if self._after_id is not None:
+            try:
+                self.after_cancel(self._after_id)
+            except tk.TclError:
+                pass
+            self._after_id = None
+        self._draw()
 
     def _loop(self):
+        self._after_id = None
         if not self._running:
             return
-        self._phase += 0.05
+        self._phase += 0.09
         try:
             self._draw()
+            self._after_id = self.after(60 if self._indef else 250, self._loop)
         except tk.TclError:
-            return
-        self.after(55, self._loop)
+            self._running = False
 
     def _draw(self):
         self.delete("all")
-        W = self.winfo_width() or self.W
-        H = self.winfo_height() or self.H
-        self.create_rectangle(0, 0, W, H, fill="#0c0e20", outline="")
-        if self._indef or self._frac <= 0.01:
-            band = 0.30
-            c = math.sin(self._phase * 1.25) * 0.5 + 0.5
-            x0 = (W - 2) * c * (1 - band) + 1
-            x1 = x0 + (W - 2) * band
+        width, height = self.winfo_width(), self.winfo_height()
+        width = self.W if width <= 1 else width
+        height = self.H if height <= 1 else height
+        self.create_rectangle(0, 0, width, height, fill=PALETTE["surface2"], outline="")
+        if self._indef:
+            if not self._running:
+                return
+            band = width * 0.26
+            x0 = (width - band) * (math.sin(self._phase) + 1) / 2
+            x1 = x0 + band
         else:
-            x0, x1 = 1, 1 + (W - 2) * self._frac
-        if x1 - x0 > 1:
-            steps = 9
-            for s in range(steps):
-                t = s / steps
-                col = "#%02x%02x%02x" % tuple(
-                    int(self._c1[i] + (self._c2[i] - self._c1[i]) * t) for i in range(3))
-                self.create_rectangle(x0, H * t, x1, H * (t + 1 / steps) + 1, fill=col, outline="")
-            for (sx, sy, sr, ph) in self._stars:
-                gx = x0 + (x1 - x0) * ((sx + self._phase * 0.12) % 1.0)
-                tw = 0.35 + 0.65 * math.sin(self._phase + ph)
-                g = int(140 + 110 * tw)
-                self.create_oval(gx - sr, sy * H - sr, gx + sr, sy * H + sr,
-                                 fill="#%02x%02x%02x" % (g, g, 255), outline="")
-            mr = max(4, H * 0.32)
-            mx = min(x1, W - mr - 1)
-            self.create_oval(mx - mr - 2, H / 2 - mr - 2, mx + mr + 2, H / 2 + mr + 2,
-                             outline="#4a4270")
-            self.create_oval(mx - mr, H / 2 - mr, mx + mr, H / 2 + mr,
-                             fill=PALETTE["gold"], outline="")
-            self.create_oval(mx - mr + mr * 0.7, H / 2 - mr - 1, mx + mr + mr * 0.7, H / 2 + mr - 1,
-                             fill="#101228", outline="")
-
-
-FLAVOR = [
-    "Summoning the Librarian...", "Rolling on the loot table...",
-    "Chiseling chapter borders...", "Consulting the advancement tree...",
-    "Counting your emeralds...", "Placing bookshelves...",
-    "Aligning quest dependencies...", "Enchanting the quest book...",
-    "Waking the wandering trader...", "Mining for good ideas...",
-    "Feeding the parrots...", "Taming the dependency graph...",
-    "Rendering pixel moons...", "Asking Steve for directions...",
-    "Brewing awkward potions...", "Sorting the ender chest...",
-    "Polishing the diamond pickaxe...", "Herding the quests into chapters...",
-]
+            x0, x1 = 0, width * self._frac
+        if x1 > x0:
+            self.create_rectangle(x0, 0, x1, height, fill=PALETTE["accent"], outline="")
 
 
 class LoadingOverlay(tk.Frame):
-    """Full-window overlay with a blocky Minecraft-style progress bar."""
+    """Focused operation status with elapsed time and an accessible cancel."""
 
     def __init__(self, parent):
         super().__init__(parent, bg=PALETTE["bg"])
         self._active = False
         self._frac = 0.0
         self._creep_to = None
-        self._shimmer = 0.0
         self._t0 = 0.0
-        self._flavor_i = 0
-
-        wrap = tk.Frame(self, bg=PALETTE["bg"])
+        self._tick_id = None
+        wrap = tk.Frame(self, bg=PALETTE["surface"], padx=28, pady=26,
+                        highlightthickness=1, highlightbackground=PALETTE["border"])
         wrap.place(relx=0.5, rely=0.5, anchor="center")
+        self.title_lbl = tk.Label(wrap, text="", bg=PALETTE["surface"], fg=PALETTE["text"],
+                                  font=("Segoe UI Semibold", 18), wraplength=510, justify="left")
+        self.title_lbl.pack(anchor="w", pady=(0, 8))
+        self.step_lbl = tk.Label(wrap, text="", bg=PALETTE["surface"], fg=PALETTE["muted"],
+                                 font=("Segoe UI", 11), wraplength=510, justify="left")
+        self.step_lbl.pack(anchor="w", pady=(0, 22))
+        self.bar = StarProgress(wrap, w=510, h=7)
+        self.bar.pack(fill="x")
+        self.pct_lbl = tk.Label(wrap, text="", bg=PALETTE["surface"], fg=PALETTE["muted"],
+                                font=("Segoe UI", 10))
+        self.pct_lbl.pack(anchor="w", pady=(12, 0))
+        self.cancel_btn = ttk.Button(wrap, text="Cancel", style="Card.TButton")
+        self.cancel_btn.pack(anchor="e", pady=(20, 0))
 
-        self.title_lbl = tk.Label(wrap, text="", bg=PALETTE["bg"], fg=PALETTE["text"],
-                                  font=("Segoe UI Semibold", 15))
-        self.title_lbl.pack(pady=(0, 4))
-        self.step_lbl = tk.Label(wrap, text="", bg=PALETTE["bg"], fg=PALETTE["muted"],
-                                 font=("Consolas", 10))
-        self.step_lbl.pack(pady=(0, 12))
-
-        self.bar = StarProgress(wrap, w=480, h=30)
-        self.bar.pack()
-
-        self.flavor_lbl = tk.Label(wrap, text="", bg=PALETTE["bg"], fg=PALETTE["gold"],
-                                   font=("Consolas", 11))
-        self.flavor_lbl.pack(pady=(14, 0))
-        self.pct_lbl = tk.Label(wrap, text="", bg=PALETTE["bg"], fg=PALETTE["muted"],
-                                font=("Consolas", 9))
-        self.pct_lbl.pack(pady=(4, 0))
-        # The overlay covers the whole window, so the Cancel button on the
-        # Generate tab is unreachable while a run is going. Put one here.
-        self.cancel_btn = ttk.Button(wrap, text="Cancel", style="Warn.TButton")
-        self.cancel_btn.pack(pady=(18, 0))
-
-    # ---- api ---------------------------------------------------------- #
     def show(self, title: str):
+        if self._tick_id is not None:
+            self.after_cancel(self._tick_id)
+            self._tick_id = None
         self._active = True
         self._frac = 0.0
         self._creep_to = None
-        self._t0 = time.time()
-        self._flavor_i = random.randrange(len(FLAVOR))
+        self._t0 = time.monotonic()
         self.title_lbl.configure(text=title)
-        self.step_lbl.configure(text="")
+        self.step_lbl.configure(text="Preparing...")
         self.cancel_btn.configure(state="normal")
         self.place(relwidth=1, relheight=1)
         self.lift()
         self.bar.set(None)
         self.bar.start()
         self._tick()
-        self._rotate_flavor()
 
     def hide(self):
         self._active = False
         self._creep_to = None
+        if self._tick_id is not None:
+            try:
+                self.after_cancel(self._tick_id)
+            except tk.TclError:
+                pass
+            self._tick_id = None
         self.bar.stop()
         self.place_forget()
 
     def creep(self, target: float, label: str = ""):
-        """Ease the bar forward toward `target` on its own clock — for a wait
-        whose real duration is unknown (the AI call). A later set_step() with a
-        concrete fraction takes over again."""
-        self._creep_to = min(0.98, max(self._frac, target))
+        """Show ongoing work until the next concrete progress update arrives."""
+        self._creep_to = min(0.98, max(self._frac, float(target)))
+        self.bar.set(None)
         if label:
             self.step_lbl.configure(text=label)
 
     def set_step(self, frac, label: str):
-        if frac is None:                      # keep sweeping, don't freeze
-            self.bar.set(None)
-            if label:
-                self.step_lbl.configure(text=label)
-            return
         self._creep_to = None
-        self._frac = max(self._frac, min(1.0, frac))
-        self.bar.set(self._frac if self._frac > 0.01 else None)
+        if frac is None:
+            self.bar.set(None)
+        else:
+            self._frac = max(self._frac, min(1.0, max(0.0, float(frac))))
+            self.bar.set(self._frac)
         if label:
             self.step_lbl.configure(text=label)
 
-    # ---- internals -------------------------------------------------- #
-    def _rotate_flavor(self):
-        if not self._active:
-            return
-        self.flavor_lbl.configure(text=FLAVOR[self._flavor_i % len(FLAVOR)])
-        self._flavor_i += 1
-        self.after(2600, self._rotate_flavor)
-
     def _tick(self):
+        self._tick_id = None
         if not self._active:
             return
-        if self._creep_to is not None and self._frac < self._creep_to - 0.002:
-            self._frac += (self._creep_to - self._frac) * 0.035
-            self.bar.set(self._frac)
-        el = int(time.time() - self._t0)
-        self.pct_lbl.configure(text="%d%%    %d:%02d elapsed" % (
-            int(self._frac * 100), el // 60, el % 60))
-        self.after(200, self._tick)
+        elapsed = int(time.monotonic() - self._t0)
+        prefix = "" if self.bar._indef else "%d%%  |  " % int(self._frac * 100)
+        self.pct_lbl.configure(text="%s%d:%02d elapsed" % (prefix, elapsed // 60, elapsed % 60))
+        self._tick_id = self.after(250, self._tick)
 
 
 # ========================================================================== #
@@ -12940,8 +15193,8 @@ class App:
         # the guided wizard should open itself. Captured here because the
         # first _save_cfg makes the file exist forever after.
         self._first_run = not bool(self.cfg)
-        root.geometry(self.cfg.get("geometry", "920x840"))
-        root.minsize(820, 680)
+        root.geometry(self.cfg.get("geometry", "1160x850"))
+        root.minsize(1040, 700)
 
         self.scan_result = None
         self.selected_ids = list(self.cfg.get("selected_ids", []))
@@ -12959,24 +15212,46 @@ class App:
         self.api_key = tk.StringVar(value=g("api_key", ""))
         self.model = tk.StringVar(value=g("model", ""))
         self.max_tokens = tk.StringVar(value=str(g("max_tokens", 32768)))
-        self.temperature = tk.DoubleVar(value=float(g("temperature", 0.4)))
-        self.density = tk.StringVar(value=g("density", "normal"))
+        self.temperature = tk.DoubleVar(value=min(1.0, max(0.0, float(g("temperature", 0.4)))))
+        self.density = tk.StringVar(value=g("density", "large"))
         self.target_count = tk.StringVar(value=g("target_count", ""))
-        self.language = tk.StringVar(value=g("language", "English"))
-        self.aesthetic = tk.StringVar(value=g("aesthetic", "balanced"))
+        self.language = tk.StringVar(value="English")
+        self.aesthetic = tk.StringVar(value=g("aesthetic", "decorated"))
         self.quest_shape = tk.StringVar(value=g("quest_shape", "auto"))
+        self.quest_size_style = tk.StringVar(value=g("quest_size_style", "varied") if g("quest_size_style", "varied") in ("uniform", "varied", "dramatic", "preserve") else "varied")
+        from decor_browser import THEME_LABELS
+        source = g("decor_source", "library")
+        self.decor_source = tk.StringVar(value=source if source in ("library", "accents", "stock") else "library")
+        theme = g("decor_theme", "auto")
+        self.decor_theme = tk.StringVar(value=theme if theme in THEME_LABELS else "auto")
+        self.decor_collection = tk.StringVar(value=g("decor_collection", "epic") if g("decor_collection", "epic") in ("epic", "classic") else "epic")
+        self.decor_motion = tk.BooleanVar(value=g("decor_motion", True))
+        self.decor_size = tk.StringVar(value=g("decor_size", "mixed") if g("decor_size", "mixed") in ("small", "mixed", "large") else "mixed")
+        self.book_style = tk.StringVar(value=g("book_style", "immersive") if g("book_style", "immersive") in ("immersive", "classic") else "immersive")
+        self.shop_enabled = tk.BooleanVar(value=g("shop_enabled", False))
+        self.shop_style = tk.StringVar(value=g("shop_style", "balanced") if g("shop_style", "balanced") in ("balanced", "essentials", "builder", "adventurer") else "balanced")
+        self.shop_prices = tk.StringVar(value=g("shop_prices", "normal") if g("shop_prices", "normal") in ("low", "normal", "high") else "normal")
         # "auto" = a new book every Build. A number reproduces one exactly.
         self.run_seed = tk.StringVar(value=g("run_seed", "auto"))
         self.reward_level = tk.StringVar(value=g("reward_level", "standard"))
         self.progression = tk.StringVar(value=g("progression", "linear"))
-        self.layout = tk.StringVar(value=g("layout", "line"))
+        self.layout = tk.StringVar(value=g("layout", "lanes") if g("layout", "lanes") in OFFLINE_LAYOUTS else "lanes")
         self.group_style = tk.StringVar(value=g("group_style", "bold"))
         self.book_title = tk.StringVar(value=g("book_title", ""))
         self.book_icon = tk.StringVar(value=g("book_icon", ""))
         self.themes_text = g("themes_text", "")
-        self.opt_themes_only = tk.BooleanVar(value=g("opt_themes_only", True))
+        self.opt_themes_only = tk.BooleanVar(value=g("opt_themes_only", False))
         self.opt_vanilla_ch = tk.BooleanVar(value=g("opt_vanilla_ch", True))
         self.opt_decor_mods = tk.BooleanVar(value=g("opt_decor_mods", False))
+        self._templates_available = bool(_load_templates())
+        self.opt_mimic = tk.BooleanVar(value=bool(g("opt_mimic", False)))
+        self.opt_campaign = tk.BooleanVar(value=g("opt_campaign", False))
+        self.campaign_goal = tk.StringVar(value=g("campaign_goal", ""))
+        self.campaign_scope = tk.StringVar(value=g("campaign_scope", "selected") if g("campaign_scope", "selected") in ("selected", "goal") else "selected")
+        self._focused_goal_count = None
+        self._scenario_title = tk.StringVar()
+        self._scenario_plan = g("scenario") if isinstance(g("scenario"), dict) else None
+        self._scenario_draft = g("scenario_draft") if isinstance(g("scenario_draft"), dict) else None
         self.opt_raw_prompt = tk.BooleanVar(value=g("opt_raw_prompt", False))
         self.opt_groups = tk.BooleanVar(value=g("opt_groups", True))
         self.opt_chain = tk.BooleanVar(value=g("opt_chain", True))
@@ -13001,13 +15276,12 @@ class App:
         self.loading = LoadingOverlay(root)
         self.loading.cancel_btn.configure(command=self._do_cancel)
         self._build_ui()
+        self.mods_dir.trace_add("write", self._on_mods_folder_changed)
         if not self.api_url.get():
             self._preset(force=True)
         self._update_scan_lbl()
         self.root.after(80, self._pump)
         self.root.after(400, self._poll_mc)
-        if self._first_run:
-            self.root.after(600, self.on_wizard)
         self.root.protocol("WM_DELETE_WINDOW", self._close)
 
     def on_wizard(self):
@@ -13032,6 +15306,11 @@ class App:
             "language": self.language.get(), "selected_ids": self.selected_ids,
             "aesthetic": self.aesthetic.get(), "reward_level": self.reward_level.get(),
             "quest_shape": self.quest_shape.get(),
+            "quest_size_style": self.quest_size_style.get(),
+            "decor_source": self.decor_source.get(), "decor_theme": self.decor_theme.get(),
+            "decor_collection": self.decor_collection.get(), "decor_motion": self.decor_motion.get(),
+            "decor_size": self.decor_size.get(), "book_style": self.book_style.get(),
+            "shop_enabled": self.shop_enabled.get(), "shop_style": self.shop_style.get(), "shop_prices": self.shop_prices.get(),
             "run_seed": self.run_seed.get(),
             "progression": self.progression.get(), "layout": self.layout.get(),
             "group_style": self.group_style.get(),
@@ -13040,6 +15319,12 @@ class App:
             "opt_themes_only": self.opt_themes_only.get(),
             "opt_vanilla_ch": self.opt_vanilla_ch.get(),
             "opt_decor_mods": self.opt_decor_mods.get(),
+            "opt_mimic": self.opt_mimic.get(),
+            "opt_campaign": self.opt_campaign.get(),
+            "campaign_goal": self.campaign_goal.get().strip(),
+            "campaign_scope": self.campaign_scope.get(),
+            "scenario": self._scenario_plan,
+            "scenario_draft": self._scenario_draft,
             "opt_raw_prompt": self.opt_raw_prompt.get(),
             "opt_groups": self.opt_groups.get(), "opt_chain": self.opt_chain.get(),
             "opt_xp": self.opt_xp.get(), "opt_decor": self.opt_decor.get(),
@@ -13061,15 +15346,59 @@ class App:
             return d
 
     # ---- ui ------------------------------------------------------------- #
-    def _build_ui(self):
-        self.header = HeaderBanner(self.root, height=76)
-        self.header.pack(fill="x")
 
+    def _build_ui(self):
+        self.header = HeaderBanner(self.root, height=68)
+        self.header.pack(fill="x")
         self._scroll_canvases = []
+        self._disclosures = {}
         self.root.bind_all("<MouseWheel>", self._global_wheel, add="+")
 
-        self.nb = ttk.Notebook(self.root)
-        self.nb.pack(fill="both", expand=True, padx=12, pady=(10, 4))
+        status = ttk.Frame(self.root, style="Card.TFrame")
+        status.pack(fill="x", side="bottom")
+        self.status = ttk.Label(status, text="Choose a pack to get started", style="Status.TLabel")
+        self.status.pack(side="left", padx=20, pady=9)
+        self.prog = StarProgress(status, w=130, h=13)
+        self.prog.pack(side="right", padx=16)
+        ttk.Label(status, text=CREDIT_LINE, style="Status.TLabel").pack(side="right", padx=10)
+
+        shell = ttk.Frame(self.root)
+        shell.pack(fill="both", expand=True)
+        nav = ttk.Frame(shell, style="Card.TFrame", width=204, padding=(12, 24))
+        nav.pack(side="left", fill="y")
+        nav.pack_propagate(False)
+        ttk.Label(nav, text="CREATE A QUEST BOOK", style="CardMuted.TLabel",
+                  font=("Segoe UI Semibold", 9)).pack(anchor="w", padx=10, pady=(0, 12))
+        self._nav_buttons = {}
+        for text, page in [("01   Choose pack", "Setup"), ("02   Quest book", "Generate"),
+                           ("03   Preview & build", "Preview & build")]:
+            b = ttk.Button(nav, text=text, style="Nav.TButton", command=lambda n=page: self._show_page(n))
+            b.pack(fill="x", pady=3)
+            self._nav_buttons[page] = b
+        ttk.Separator(nav).pack(fill="x", padx=10, pady=22)
+        b = ttk.Button(nav, text="Saved books", style="Nav.TButton", command=lambda: self._show_page("Library"))
+        b.pack(fill="x", pady=3)
+        self._nav_buttons["Library"] = b
+        self.tools_button = ttk.Menubutton(nav, text="Tools & settings", style="Nav.TMenubutton")
+        self.tools_button.pack(fill="x", pady=3)
+        menu = tk.Menu(self.tools_button, tearoff=False, bg=PALETTE["surface"],
+                       fg=PALETTE["text"], activebackground=PALETTE["accent"], activeforeground="#ffffff")
+        for label, page in [("Choose individual mods", "Mods"), ("Edit tasks & rewards", "Rewards & Tasks"),
+                            ("Import existing quests", "Import"), ("Repair a quest book", "Repair"),
+                            ("App preferences", "Preferences"), ("Activity log", "Log")]:
+            menu.add_command(label=label, command=lambda n=page: self._show_page(n))
+        self.tools_button.configure(menu=menu)
+        self.tools_menu = menu
+        ttk.Label(nav, text="LOCAL GENERATION", style="CardMuted.TLabel",
+                  font=("Segoe UI Semibold", 9)).pack(side="bottom", anchor="w", padx=10, pady=(6, 0))
+        ttk.Label(nav, text="Offline • No AI • No account", style="CardMuted.TLabel",
+                  font=("Segoe UI", 9)).pack(side="bottom", anchor="w", padx=10)
+
+        st = ttk.Style(self.root)
+        st.layout("Flow.TNotebook.Tab", [])
+        st.configure("Flow.TNotebook", borderwidth=0, tabmargins=0)
+        self.nb = ttk.Notebook(shell, style="Flow.TNotebook")
+        self.nb.pack(side="left", fill="both", expand=True, padx=12, pady=8)
         self._tab_setup()
         self._tab_mods()
         self._tab_generate()
@@ -13077,18 +15406,104 @@ class App:
         self._tab_editor()
         self._tab_repair()
         self._tab_import()
-        self._tab_prompt()
         self._tab_log()
+        self._tab_review()
+        self._tab_preferences()
+        self.nb.bind("<<NotebookTabChanged>>", self._navigation_changed)
+        for var in (self.mods_dir, self.out_dir1, self.out_dir2, self.density, self.target_count,
+                    self.layout, self.progression, self.reward_level, self.book_title):
+            var.trace_add("write", self._refresh_flow)
+        self._refresh_flow()
+        self._navigation_changed()
 
-        status = ttk.Frame(self.root, style="Card.TFrame")
-        status.pack(fill="x", side="bottom")
-        self.status = ttk.Label(status, text="ready", style="Status.TLabel")
-        self.status.pack(side="left", padx=14, pady=7)
-        self.prog = StarProgress(status, w=170, h=13)
-        self.prog.pack(side="right", padx=14, pady=7)
-        # About / credits - user-directed, exact wording.
-        ttk.Label(status, text=CREDIT_LINE, style="Status.TLabel").pack(
-            side="right", padx=10, pady=7)
+    def _show_page(self, name):
+        self.nb.select(self._tab_index(name))
+        self._refresh_flow()
+
+    def _navigation_changed(self, *_args):
+        name = self.nb.tab(self.nb.select(), "text").strip()
+        for page, button in self._nav_buttons.items():
+            button.configure(style="NavActive.TButton" if page == name else "Nav.TButton")
+        if name == "Preview & build":
+            self._refresh_preview()
+
+    def _page_heading(self, parent, step, title, description):
+        ttk.Label(parent, text=step.upper(), style="Eyebrow.TLabel").pack(anchor="w", pady=(0, 8))
+        ttk.Label(parent, text=title, style="PageTitle.TLabel").pack(anchor="w")
+        ttk.Label(parent, text=description, style="Muted.TLabel", wraplength=700,
+                  justify="left").pack(anchor="w", pady=(8, 24))
+
+    def _card(self, parent, title, description=""):
+        card = ttk.Frame(parent, style="Card.TFrame", padding=20)
+        card.pack(fill="x", pady=(0, 14))
+        ttk.Label(card, text=title, style="Hero.TLabel").pack(anchor="w", pady=(0, 8))
+        if description:
+            ttk.Label(card, text=description, style="CardMuted.TLabel", wraplength=650,
+                      justify="left").pack(anchor="w", pady=(0, 10))
+        return card
+
+    def _disclosure(self, parent, title, key):
+        outer = ttk.Frame(parent, style="Card.TFrame")
+        outer.pack(fill="x", pady=(0, 10))
+        button = ttk.Button(outer, text="+  " + title, style="Section.TButton")
+        button.pack(fill="x")
+        body = ttk.Frame(outer, style="Card.TFrame", padding=(20, 6, 20, 18))
+        def toggle():
+            if body.winfo_manager():
+                body.pack_forget()
+                button.configure(text="+  " + title)
+            else:
+                body.pack(fill="x")
+                button.configure(text="−  " + title)
+        button.configure(command=toggle)
+        self._disclosures[key] = (button, body)
+        return body
+
+    def _refresh_flow(self, *_args):
+        if not hasattr(self, "_review_summary"):
+            return
+        folder = self.mods_dir.get().strip()
+        pack = Path(folder).parent.name if folder else "No pack selected"
+        ready = bool(self.scan_result) and not self.scan_result.get("unsupported")
+        active = ready and not self._busy and not (self.opt_campaign.get() and getattr(self, "_campaign_error", ""))
+        for name in ("btn_preview", "btn_gen_local", "btn_continue_pack"):
+            enabled = (ready and not self._busy) if name == "btn_continue_pack" else active
+            getattr(self, name).configure(state="normal" if enabled else "disabled")
+        self.btn_scan.configure(state="disabled" if self._busy else "normal")
+        if not ready:
+            self._pack_summary.configure(text="Scan this pack to check its items, recipes, and supported mods.")
+        else:
+            scan = self.scan_result
+            coverage = progression_coverage(scan)
+            guided = sum(r["available"] > 0 for r in coverage)
+            inferred = sum(r["kind"] == "Recipes & discoveries" for r in coverage)
+            self._pack_summary.configure(text="%s is ready. %d mods scanned · %d selected.\n"
+                "%d mods with authored milestones · %d use recipes and discoveries." %
+                (pack, len(scan.get("mods", [])), len(self.selected_ids), guided, inferred))
+        size = ("Target: " + self.target_count.get().strip()) if self.target_count.get().strip() else self.density.get().title()
+        if self.opt_campaign.get() and self._scenario_plan:
+            size = "%d authored stages + preparation" % len(self._scenario_plan.get("stages", []))
+        elif self.opt_campaign.get() and self.campaign_scope.get() == "goal" and self._focused_goal_count is not None:
+            size = "%d-quest focused route" % self._focused_goal_count
+        progression = {"linear": "Guided progression", "loose": "Recipe prerequisites", "open": "Open exploration"}.get(self.progression.get(), self.progression.get())
+        self._review_summary.configure(text="%s\n%s  ·  %s\n%s layout  ·  %s rewards" %
+            (pack, size, progression, self.layout.get().title(), self.reward_level.get().title()))
+        if self.opt_campaign.get():
+            self._review_summary.configure(text=self._review_summary.cget("text") +
+                "\nCampaign: " + (self._scenario_plan.get("title", "Scenario campaign") if self._scenario_plan else
+                                  self.campaign_goal.get().strip() or "A connected whole-pack finale"))
+            if not self._scenario_plan:
+                self._review_summary.configure(text=self._review_summary.cget("text") + "\nScope: " +
+                    ("Selected mods + goal" if self.campaign_scope.get() == "selected" else "Goal-focused quest book"))
+        self._review_hint.configure(text="Ready to preview. Building saves the quest files to the destination below."
+            if ready else "First choose a supported pack and scan it in step 1.")
+        if self.opt_campaign.get() and getattr(self, "_campaign_error", ""):
+            self._review_hint.configure(text="Check your campaign goal in step 2: " + self._campaign_error)
+        # Keep the detected-pack picker in sync after browsing or restoring settings.
+        if hasattr(self, "_inst_var"):
+            label = next((name for name, path in self._instances if Path(path) == Path(folder)), "Custom folder" if folder else "Choose a pack…")
+            if self._inst_var.get() != label:
+                self._inst_var.set(label)
 
     def _global_wheel(self, e):
         """Scroll whatever page-canvas is under the pointer (not just the scrollbar).
@@ -13120,89 +15535,128 @@ class App:
         ttk.Button(f, text="Browse", command=cmd).pack(side="left", padx=(6, 0))
         return f
 
+
     def _tab_setup(self):
         t = ttk.Frame(self.nb)
-        self.nb.add(t, text="  Setup  ")
-        pad = ttk.Frame(t)
-        pad.pack(fill="both", expand=True, padx=14, pady=12)
-
-        lf = ttk.Labelframe(pad, text="FOLDERS", padding=12)
-        lf.pack(fill="x")
-        # Found instances first: a stranger should not have to know where
-        # CurseForge hides its folders. Browse below stays the escape hatch.
+        self.nb.add(t, text="Setup")
+        footer = ttk.Frame(t, padding=(16, 14))
+        footer.pack(side="bottom", fill="x")
+        self.btn_continue_pack = ttk.Button(footer, text="Next: quest book  →", style="Accent.TButton",
+                                            command=lambda: self._show_page("Generate"), state="disabled")
+        self.btn_continue_pack.pack(side="right")
+        pad = self._scrollframe(t)
+        self._page_heading(pad, "Step 01 / 03", "Choose your modpack", "Start with an installed pack. The generator reads its items and recipes on your computer.")
+        card = self._card(pad, "Installed modpack", "Choose the pack you want to make quests for.")
         self._instances = discover_instances()
-        if self._instances:
-            fi = ttk.Frame(lf)
-            fi.pack(fill="x", pady=5)
-            ttk.Label(fi, text="Detected instances", width=22).pack(side="left")
-            self._inst_var = tk.StringVar(value="")
-            inst_cb = ttk.Combobox(fi, textvariable=self._inst_var, state="readonly",
-                                   values=[lbl for lbl, _ in self._instances])
-            inst_cb.pack(side="left", fill="x", expand=True)
-            inst_cb.bind("<<ComboboxSelected>>", self._on_pick_instance)
-        self._row(lf, "Mods / instance folder", self.mods_dir, self._b_mods)
-        self._row(lf, "Output  ..quests", self.out_dir1, lambda: self._b_out(self.out_dir1))
-        self._row(lf, "Output #2 (optional)", self.out_dir2, lambda: self._b_out(self.out_dir2))
-        r = ttk.Frame(lf)
-        r.pack(fill="x", pady=(8, 0))
-        ttk.Button(r, text="🧭  Guided setup", style="Accent.TButton",
-                   command=self.on_wizard).pack(side="left")
-        ttk.Button(r, text="Scan mods", command=self.on_scan).pack(side="left", padx=6)
-        ttk.Button(r, text="Select mods...", command=self.on_select_mods).pack(side="left", padx=6)
-        self.scan_lbl = ttk.Label(r, text="", style="Muted.TLabel")
-        self.scan_lbl.pack(side="left", padx=6)
+        self._inst_var = tk.StringVar(value="")
+        row = ttk.Frame(card, style="Card.TFrame")
+        row.pack(fill="x", pady=(2, 10))
+        picker = ttk.Combobox(row, textvariable=self._inst_var, state="readonly",
+                             values=[label for label, _ in self._instances])
+        picker.pack(side="left", fill="x", expand=True)
+        picker.bind("<<ComboboxSelected>>", self._on_pick_instance)
+        ttk.Button(row, text="Browse folder", command=self._b_mods).pack(side="left", padx=(10, 0))
+        self._folder_hint = ttk.Label(card, text="", style="CardMuted.TLabel", wraplength=650)
+        self._folder_hint.pack(anchor="w", pady=(0, 8))
+        self.btn_scan = ttk.Button(card, text="Scan this pack", style="Accent.TButton", command=self.on_scan)
+        self.btn_scan.pack(anchor="w", pady=(4, 10))
+        self.scan_lbl = ttk.Label(card, text="Not scanned yet", style="CardMuted.TLabel", wraplength=650)
+        self.scan_lbl.pack(anchor="w")
+        info = self._card(pad, "Your pack at a glance")
+        self._pack_summary = ttk.Label(info, style="CardMuted.TLabel", wraplength=650)
+        self._pack_summary.pack(anchor="w", pady=(0, 12))
+        actions = ttk.Frame(info, style="Card.TFrame")
+        actions.pack(fill="x")
+        ttk.Button(actions, text="Choose individual mods", command=lambda: self._show_page("Mods")).pack(side="left")
+        ttk.Button(actions, text="Progression coverage", command=self._show_progression_coverage).pack(side="left", padx=(10, 0))
+        custom = self._disclosure(pad, "Custom mods folder", "folder")
+        ttk.Label(custom, text="Use this if your launcher or pack is not listed above.", style="CardMuted.TLabel").pack(anchor="w", pady=(0, 8))
+        self._row(custom, "Mods folder", self.mods_dir, self._b_mods)
 
-        # This whole block is optional and says so. Setup is the first screen
-        # a new user sees, and five rows of provider/key/model made an API key
-        # look like a prerequisite for using the app at all. It is not one:
-        # Build Quest Book never touches the network.
-        af = ttk.Labelframe(pad, text="AI PROVIDER  (optional)", padding=12)
-        af.pack(fill="x", pady=(14, 0))
-        ttk.Label(af, style="CardMuted.TLabel", wraplength=560, justify="left",
-                  text="Not needed to build a quest book. Leave this empty and use "
-                       "Build Quest Book on the Generate tab — it runs entirely on "
-                       "your machine. Fill this in only if you also want AI-written "
-                       "prose.").pack(anchor="w", pady=(0, 8))
-        r1 = ttk.Frame(af)
-        r1.pack(fill="x", pady=4)
-        ttk.Label(r1, text="Provider", width=22).pack(side="left")
-        cb = ttk.Combobox(r1, textvariable=self.provider, state="readonly",
-                          values=list(PROVIDER_PRESETS.keys()))
-        cb.pack(side="left", fill="x", expand=True)
-        cb.bind("<<ComboboxSelected>>", lambda e: self._preset(force=True))
-        r2 = ttk.Frame(af)
-        r2.pack(fill="x", pady=4)
-        ttk.Label(r2, text="API URL", width=22).pack(side="left")
-        ttk.Entry(r2, textvariable=self.api_url).pack(side="left", fill="x", expand=True)
-        r3 = ttk.Frame(af)
-        r3.pack(fill="x", pady=4)
-        ttk.Label(r3, text="API key", width=22).pack(side="left")
-        self.key_entry = ttk.Entry(r3, textvariable=self.api_key, show="\u2022")
-        self.key_entry.pack(side="left", fill="x", expand=True)
-        ttk.Button(r3, text="Show", width=6, command=self._toggle_key).pack(side="left", padx=(6, 0))
-        r4 = ttk.Frame(af)
-        r4.pack(fill="x", pady=4)
-        ttk.Label(r4, text="Model", width=22).pack(side="left")
-        self.model_cb = ttk.Combobox(r4, textvariable=self.model, values=[])
-        self.model_cb.pack(side="left", fill="x", expand=True)
-        self._fetch_btn = ttk.Button(r4, text="Fetch", width=7, command=self.on_fetch_models)
-        self._fetch_btn.pack(side="left", padx=(6, 0))
-        r5 = ttk.Frame(af)
-        r5.pack(fill="x", pady=4)
-        ttk.Label(r5, text="Max tokens", width=22).pack(side="left")
-        self._maxtok_setup = ttk.Entry(r5, textvariable=self.max_tokens, width=12)
-        self._maxtok_setup.pack(side="left")
-        ttk.Button(r5, text="Test connection", command=self.on_test).pack(side="left", padx=(10, 0))
-        # Model, Fetch and Max tokens only reach call_ai/fetch_models - nothing
-        # on the offline path reads any of them - so with no key they are
-        # controls that silently do nothing (the language-dropdown defect class).
-        # Grey them out and say why. Provider/URL/key stay live: they ARE how
-        # you enter a key. Temperature is NOT greyed anywhere - _opts() feeds
-        # it to build_chapters as "creativity", so it moves offline books too.
-        self._ai_hint_setup = ttk.Label(af, text="", style="CardMuted.TLabel")
-        self._ai_hint_setup.pack(anchor="w", pady=(4, 0))
-        self.api_key.trace_add("write", lambda *a: self._sync_ai_state())
-        self._sync_ai_state()
+    def _show_progression_coverage(self):
+        top = tk.Toplevel(self.root)
+        top.title("Offline progression guides")
+        top.geometry("940x680")
+        top.minsize(740, 500)
+        top.transient(self.root)
+        top.configure(bg=PALETTE["bg"])
+        body = ttk.Frame(top, padding=20)
+        body.pack(fill="both", expand=True)
+        ttk.Label(body, text="Know what your quest book is built on", style="Hero.TLabel").pack(anchor="w")
+        ttk.Label(body, text="Branched guides include authored prerequisites. Milestone guides supply goals and guidance.\n"
+                  "Pack counts show which objectives exist in your version; they are not a promise of every mechanic.",
+                  wraplength=840, justify="left").pack(anchor="w", pady=(8, 14))
+        controls = ttk.Frame(body)
+        controls.pack(fill="x", pady=(0, 12))
+        query = tk.StringVar()
+        library = tk.BooleanVar(value=not bool(self.scan_result))
+        ttk.Label(controls, text="Find a mod").pack(side="left", padx=(0, 8))
+        entry = ttk.Entry(controls, textvariable=query)
+        entry.pack(side="left", fill="x", expand=True)
+        ttk.Checkbutton(controls, text="Entire offline library", variable=library,
+                        state="normal" if self.scan_result else "disabled").pack(side="left", padx=(14, 0))
+        area = ttk.Frame(body)
+        area.pack(fill="both", expand=True)
+        tree = ttk.Treeview(area, columns=("mod", "guide", "count"), show="headings", height=12)
+        for key, title, width in (("mod", "Mod", 260), ("guide", "Progression source", 220),
+                                  ("count", "Available milestones", 160)):
+            tree.heading(key, text=title)
+            tree.column(key, width=width, minwidth=90)
+        bar = ttk.Scrollbar(area, orient="vertical", command=tree.yview)
+        tree.configure(yscrollcommand=bar.set)
+        tree.pack(side="left", fill="both", expand=True)
+        bar.pack(side="right", fill="y")
+        detail = tk.Text(body, height=7, wrap="word", bg=PALETTE["surface"], fg=PALETTE["text"],
+                         font=("Segoe UI", 10), relief="flat", padx=12, pady=10, state="disabled")
+        detail.pack(fill="x", pady=(12, 0))
+        rows = {}
+        def show_details(_event=None):
+            selected = tree.selection()
+            row = rows.get(selected[0]) if selected else None
+            if not row:
+                text = "Choose a mod to see the guide's milestones and version notes. Everything here is stored on your computer."
+            else:
+                text = row["name"] + " · " + row["kind"] + "\n"
+                if row["verified_against"]:
+                    text += "Guide's recorded reference: " + str(row["verified_against"]) + "\n"
+                if row["milestones"]:
+                    titles = [m["title"] or _pretty_name(m["ref"]) for m in row["milestones"]]
+                    text += "Milestones: " + " · ".join(titles) + "\n"
+                else:
+                    text += "This mod currently uses local recipes and discoveries; it has no bundled authored guide.\n"
+                if row["missing"] and not library.get():
+                    text += "%d guide objectives are unavailable in this pack and will be omitted.\n" % len(row["missing"])
+                coverage = row.get("coverage")
+                if isinstance(coverage, dict):
+                    for key in ("scope", "limits", "limitations"):
+                        note = coverage.get(key)
+                        if note:
+                            text += "\n" + (" ".join(str(part) for part in note) if isinstance(note, list) else str(note))
+                elif coverage:
+                    text += "\nGuide notes: " + str(coverage)
+            detail.configure(state="normal")
+            detail.delete("1.0", "end")
+            detail.insert("1.0", text)
+            detail.configure(state="disabled")
+        def refresh(*_args):
+            rows.clear()
+            tree.delete(*tree.get_children())
+            data = progression_coverage(None if library.get() else self.scan_result)
+            needle = query.get().strip().casefold()
+            for row in data:
+                if needle and needle not in (row["name"] + " " + row["mod_id"]).casefold():
+                    continue
+                iid = row["mod_id"]
+                rows[iid] = row
+                count = str(row["total"]) if library.get() else "%d / %d" % (row["available"], row["total"])
+                tree.insert("", "end", iid=iid, values=(row["name"], row["kind"], count if row["total"] else "—"))
+            show_details()
+        tree.bind("<<TreeviewSelect>>", show_details)
+        query.trace_add("write", refresh)
+        library.trace_add("write", refresh)
+        refresh()
+        entry.focus_set()
+        return top
 
     def _scrollframe(self, tab):
         """A vertically scrollable body inside a notebook tab."""
@@ -13224,14 +15678,89 @@ class App:
         inner.pack(fill="both", expand=True, padx=16, pady=14)
         return inner
 
+
     def _combo_row(self, parent, label, var, values, hint=""):
-        f = ttk.Frame(parent)
-        f.pack(fill="x", pady=4)
-        ttk.Label(f, text=label, width=16, style="CardMuted.TLabel").pack(side="left")
-        ttk.Combobox(f, textvariable=var, state="readonly", width=13, values=values).pack(side="left")
+        f = ttk.Frame(parent, style="Card.TFrame")
+        f.pack(fill="x", pady=6)
+        row = ttk.Frame(f, style="Card.TFrame")
+        row.pack(fill="x")
+        ttk.Label(row, text=label, width=18, style="Card.TLabel").pack(side="left")
+        if isinstance(values, dict):
+            labels = values
+            shown = tk.StringVar(value=labels.get(var.get(), var.get()))
+            def sync(*_):
+                shown.set(labels.get(var.get(), var.get()))
+            var.trace_add("write", sync)
+            f.combo = ttk.Combobox(row, textvariable=shown, state="readonly", width=28, values=list(labels.values()))
+            f.combo.bind("<<ComboboxSelected>>", lambda _e: var.set(next(k for k, v in labels.items() if v == shown.get())))
+        else:
+            f.combo = ttk.Combobox(row, textvariable=var, state="readonly", width=28, values=values)
+        f.combo.pack(side="left", fill="x", expand=True)
         if hint:
-            ttk.Label(f, text=hint, style="CardMuted.TLabel").pack(side="left", padx=8)
+            ttk.Label(f, text=hint, style="CardMuted.TLabel", wraplength=640,
+                      justify="left").pack(anchor="w", pady=(6, 2))
         return f
+
+    def _sync_offline_controls(self, *_args):
+        groups_styled = self.opt_groups.get()
+        self._group_style_row.combo.configure(state="readonly" if groups_styled else "disabled")
+        self._group_hint.configure(text="" if groups_styled else
+                                   "Group headers need chapter grouping enabled.")
+        minimal = self.aesthetic.get() == "minimal"
+        self._background_toggle.configure(state="disabled" if minimal else "normal")
+        self._background_hint.configure(text=
+            "Minimal aesthetics hide backgrounds. Choose another aesthetic to add chapter art."
+            if minimal else
+            ("Uses stock Minecraft and FTB textures; no downloads needed." if self.decor_source.get() == "stock" else
+             "Bundled artworks include animations that move in Minecraft. Build enables the offline art pack; exports include a copy."))
+        active_art = not minimal and self.opt_decor.get()
+        if hasattr(self, "_art_source_row"):
+            self._art_source_row.combo.configure(state="readonly" if active_art else "disabled")
+            self._art_theme_row.combo.configure(state="readonly" if active_art and self.decor_source.get() != "stock" else "disabled")
+        bundled = active_art and self.decor_source.get() != "stock"
+        if hasattr(self, "_art_collection_row"):
+            self._art_collection_row.combo.configure(state="readonly" if bundled else "disabled")
+            self._motion_toggle.configure(state="normal" if bundled else "disabled")
+            self._art_size_row.combo.configure(state="readonly" if bundled and (self.decor_motion.get() or self.decor_collection.get() == "epic") else "disabled")
+        if hasattr(self, "_shop_style_row"):
+            for row in (self._shop_style_row, self._shop_prices_row):
+                row.combo.configure(state="readonly" if self.shop_enabled.get() else "disabled")
+        scan = self.scan_result or {}
+        selected = set(self.selected_ids)
+        focused = bool(selected) and len(selected) <= 8
+        decor = [m for m in scan.get("mods", [])
+                 if m.get("category") == "decor"
+                 and (not selected or m["mod_id"] in selected)
+                 and not is_library(m["mod_id"], m.get("name", ""))
+                 and scan.get("items", {}).get(m["mod_id"])
+                 and (scan.get("broken_rate", {}).get(m["mod_id"], 0) <= BROKEN_MOD_LIMIT
+                      or len(scan.get("craftable", {}).get(m["mod_id"], ())) >= 5)]
+        if hasattr(self, "_decor_mods_toggle"):
+            self._decor_mods_toggle.configure(state="normal" if decor and not focused else "disabled")
+            self._decor_mods_hint.configure(text=
+                "Scan a pack to check for decoration mods." if not self.scan_result else
+                "No eligible decoration mods are in the current selection." if not decor else
+                "Explicitly selected decoration mods are already included in this focused book." if focused else "")
+        if hasattr(self, "_themes_only_toggle"):
+            self._themes_only_toggle.configure(state="normal" if self._themes_raw().strip() else "disabled")
+        scenario = self.opt_campaign.get() and bool(self._scenario_plan)
+        fixed_goal = self.opt_campaign.get() and self.campaign_scope.get() == "goal" and self._focused_goal_count is not None
+        if hasattr(self, "_density_row"):
+            self._density_row.combo.configure(state="disabled" if scenario or fixed_goal else "readonly")
+        for name in ("_target_entry", "_vanilla_ch_toggle", "_reference_toggle", "themes_box"):
+            if hasattr(self, name):
+                getattr(self, name).configure(state="disabled" if scenario or fixed_goal else "normal")
+        if hasattr(self, "_campaign_scope_row"):
+            self._campaign_scope_row.combo.configure(state="disabled" if scenario else "readonly")
+        if scenario or fixed_goal:
+            self._decor_mods_toggle.configure(state="disabled")
+            self._themes_only_toggle.configure(state="disabled")
+        self._update_count_hint()
+
+    def _on_themes_changed(self, _event=None):
+        if self.themes_box.edit_modified():
+            self.themes_box.edit_modified(False)
+            self._sync_offline_controls()
 
     def _sync_language_state(self):
         """Grey the Language dropdown out while no API key is set.
@@ -13304,9 +15833,6 @@ class App:
         ttk.Button(top, text="All", width=5, command=lambda: self._mods_bulk("all")).pack(side="left", padx=(8, 2))
         ttk.Button(top, text="None", width=6, command=lambda: self._mods_bulk("none")).pack(side="left", padx=2)
         ttk.Button(top, text="Core", width=6, command=lambda: self._mods_bulk("core")).pack(side="left", padx=2)
-        b = ttk.Button(top, text="Fetch info (Modrinth)", command=self.on_fetch_mod_info)
-        b.pack(side="right")
-        hover_lift(b)
 
         nav = ttk.Frame(t)
         nav.pack(fill="x", padx=16, pady=(0, 4))
@@ -13424,7 +15950,7 @@ class App:
             info = self._mod_info.get(m["mod_id"], {})
             desc = info.get("desc") or m["description"] or ""
             if desc.strip().lower() in BAD:
-                desc = "(no description — try Fetch info)"
+                desc = "(this mod does not include a description)"
             ttk.Label(card, text=desc[:220], style="CardMuted.TLabel", wraplength=390,
                       justify="left").pack(anchor="w", pady=(5, 0))
             ttk.Label(card, text=m["mod_id"] + ("  ·  " + info["url"] if info.get("url") else ""),
@@ -13450,215 +15976,533 @@ class App:
             return "fetched %d / %d mod descriptions" % (got, len(targets))
         self._run(job, "Fetching mod info (Modrinth)")
 
+
     def _tab_generate(self):
         t = ttk.Frame(self.nb)
         self.nb.add(t, text="Generate")
+        footer = ttk.Frame(t, padding=(16, 14))
+        footer.pack(side="bottom", fill="x")
+        ttk.Button(footer, text="←  Choose pack", command=lambda: self._show_page("Setup")).pack(side="left")
+        ttk.Button(footer, text="Next: preview & build  →", style="Accent.TButton",
+                   command=lambda: self._show_page("Preview & build")).pack(side="right")
         pad = self._scrollframe(t)
+        self._page_heading(pad, "Step 02 / 03", "Make it your quest book", "Choose a starting style, set a goal if you want one, then fine-tune your book.")
+        presets = ttk.Frame(pad)
+        presets.pack(fill="x", pady=(0, 16))
+        self.btn_epic_preset = ttk.Button(presets, text="Epic · ATM-inspired", style="Accent.TButton",
+            command=lambda: self._apply_book_preset("epic"))
+        self.btn_epic_preset.pack(side="left")
+        ttk.Button(presets, text="Balanced", command=lambda: self._apply_book_preset("balanced")).pack(side="left", padx=10)
+        self._preset_hint = ttk.Label(presets, text="Presets set the options below; you can change any of them.", style="Muted.TLabel", wraplength=360)
+        self._preset_hint.pack(side="left", padx=6)
 
-        cols = ttk.Frame(pad)
-        cols.pack(fill="x")
-        cols.columnconfigure(0, weight=1, uniform="g")
-        cols.columnconfigure(1, weight=1, uniform="g")
-        left = ttk.Frame(cols)
-        left.grid(row=0, column=0, sticky="nsew", padx=(0, 6))
-        right = ttk.Frame(cols)
-        right.grid(row=0, column=1, sticky="nsew", padx=(6, 0))
+        campaign = self._card(pad, "One goal. A connected journey.")
+        ttk.Checkbutton(campaign, text="Connect chapters into a campaign with a final goal", variable=self.opt_campaign,
+                        style="Card.TCheckbutton").pack(anchor="w", pady=(0, 12))
+        self._goal_fields = ttk.Frame(campaign, style="Card.TFrame")
+        self._goal_label = ttk.Label(self._goal_fields, text="Goal of your modpack", style="Card.TLabel")
+        self._goal_label.pack(anchor="w", pady=(0, 6))
+        self._goal_entry = ttk.Entry(self._goal_fields, textvariable=self.campaign_goal)
+        self._goal_entry.pack(fill="x")
+        ttk.Label(self._goal_fields, text="Describe what you want to achieve: defeat Gaia Guardian, automate mana, reach the Moon, or craft a beacon. Leave blank to connect the supported mod branches.",
+                  style="CardMuted.TLabel", wraplength=650, justify="left").pack(anchor="w", pady=(6, 10))
+        self._campaign_scope_row = self._combo_row(self._goal_fields, "Book scope", self.campaign_scope,
+            {"selected": "Selected mods + goal", "goal": "Goal-focused quest book"},
+            "Selected mods + goal keeps the wider book and adds your goal's route. Goal-focused limits content to that goal and its relevant mods.")
+        goal_actions = ttk.Frame(self._goal_fields, style="Card.TFrame")
+        goal_actions.pack(fill="x", pady=(0, 10))
+        ttk.Button(goal_actions, text="Explore available goals", command=self._show_goal_browser).pack(side="left")
+        ttk.Button(goal_actions, text="Plan a scenario…", command=self._show_scenario_editor).pack(side="left", padx=8)
+        self._single_goal_button = ttk.Button(goal_actions, text="Use a single goal", command=self._clear_scenario)
+        self._goal_feedback = ttk.Label(campaign, style="CardMuted.TLabel", wraplength=650, justify="left")
+        self._goal_feedback.pack(anchor="w")
+        self.opt_campaign.trace_add("write", self._sync_campaign_controls)
+        self.campaign_goal.trace_add("write", self._sync_campaign_controls)
+        self.campaign_scope.trace_add("write", self._sync_campaign_controls)
+        self.progression.trace_add("write", self._sync_campaign_controls)
+        self._sync_campaign_controls()
 
-        of = ttk.Labelframe(left, text="BOOK SHAPE")
-        of.pack(fill="x")
-        qr = ttk.Frame(of)
-        qr.pack(fill="x", pady=4)
-        ttk.Label(qr, text="Quest count", width=16, style="CardMuted.TLabel").pack(side="left")
-        ttk.Combobox(qr, textvariable=self.density, state="readonly", width=13,
-                     values=DENSITY_ORDER).pack(side="left")
-        self._count_hint = ttk.Label(qr, text="", style="CardMuted.TLabel")
-        self._count_hint.pack(side="left", padx=8)
+        main = self._card(pad, "The essentials")
+        self._density_row = self._combo_row(main, "Book size", self.density, {k: k.title() for k in DENSITY_ORDER})
+        self._count_hint = ttk.Label(main, text="", style="CardMuted.TLabel", wraplength=650)
+        self._count_hint.pack(anchor="w", pady=(0, 8))
         self.density.trace_add("write", lambda *a: self._update_count_hint())
         self.target_count.trace_add("write", lambda *a: self._update_count_hint())
-        r = ttk.Frame(of)
-        r.pack(fill="x", pady=3)
-        ttk.Label(r, text="Exact number", width=16, style="CardMuted.TLabel").pack(side="left")
-        ttk.Entry(r, textvariable=self.target_count, width=12).pack(side="left")
-        ttk.Label(r, text="optional — overrides the dropdown",
-                  style="CardMuted.TLabel").pack(side="left", padx=6)
+        self.opt_mimic.trace_add("write", lambda *a: self._update_count_hint())
         self._update_count_hint()
-        self._combo_row(of, "Progression", self.progression, ["linear", "loose", "open"])
-        # Language only reaches the AI prompt builders (build_prompt & friends);
-        # local_quest_doc writes English templates and _prompt_opts carries no
-        # language at all. Measured: offline books for English vs Deutsch were
-        # md5-identical (a4dc39a9 both). Rather than let the dropdown lie on the
-        # offline-only setup (no API key), grey it out and say why.
-        lr = ttk.Frame(of)
-        lr.pack(fill="x", pady=4)
-        ttk.Label(lr, text="Language", width=16, style="CardMuted.TLabel").pack(side="left")
-        self.language_combo = ttk.Combobox(
-            lr, textvariable=self.language, state="readonly", width=13,
-            values=["English", "简体中文", "Deutsch", "Français", "Español",
-                    "Português", "Русский", "日本語", "한국어", "Italiano"])
-        self.language_combo.pack(side="left")
-        self._lang_hint = ttk.Label(lr, text="", style="CardMuted.TLabel")
-        self._lang_hint.pack(side="left", padx=8)
-        self.api_key.trace_add("write", lambda *a: self._sync_language_state())
-        self._sync_language_state()
-        self._combo_row(of, "Layout", self.layout, LAYOUTS)
-        self._combo_row(of, "Group headers", self.group_style, GROUP_STYLES)
-        self._combo_row(of, "Aesthetics", self.aesthetic,
-                        ["minimal", "balanced", "decorated", "lavish"])
-        # "auto" keeps the derived per-group shapes (hexagon=Tech, gear=boss…);
-        # picking one of FTBQ's nine shapes forces it book-wide.
-        self._combo_row(of, "Quest shape", self.quest_shape,
-                        ["auto"] + QUEST_SHAPES)
-        self._combo_row(of, "Rewards", self.reward_level, ["lean", "standard", "generous"])
-        sr = ttk.Frame(of)
-        sr.pack(fill="x", pady=3)
-        ttk.Label(sr, text="Seed", width=14, style="CardMuted.TLabel").pack(side="left")
-        ttk.Entry(sr, textvariable=self.run_seed, width=12).pack(side="left")
-        ttk.Label(sr, text="auto = a different book every time; a number repeats one",
-                  style="CardMuted.TLabel").pack(side="left", padx=8)
+        self._combo_row(main, "Progression", self.progression,
+            {"linear": "Guided milestones", "loose": "Recipe prerequisites", "open": "Open exploration"},
+            "Guided adds authored milestones. Recipe mode follows crafting prerequisites. Open removes unlock requirements.")
+        self._combo_row(main, "Map layout", self.layout, {k: ("Reference maps + varied originals" if k == "reference" else k.replace('_', ' ').title()) for k in OFFLINE_LAYOUTS},
+            "Changes where quests sit on each chapter map. Their real prerequisites stay intact.")
+        self._combo_row(main, "Rewards", self.reward_level,
+            {"lean": "Lean", "standard": "Standard", "generous": "Generous"})
 
-        mf = ttk.Labelframe(left, text="MODEL")
-        mf.pack(fill="x", pady=(10, 0))
-        r3 = ttk.Frame(mf)
-        r3.pack(fill="x", pady=3)
-        ttk.Label(r3, text="Creativity", width=14, style="CardMuted.TLabel").pack(side="left")
-        self._temp_lbl = ttk.Label(r3, text="", style="CardMuted.TLabel")
-        ttk.Scale(r3, from_=0.0, to=1.2, variable=self.temperature, length=150,
-                  command=lambda v: self._temp_lbl.configure(
-                      text="%d%%" % min(100, int(float(v) * 100)))).pack(side="left")
-        self._temp_lbl.configure(text="%d%%" % min(100, int(self.temperature.get() * 100)))
-        self._temp_lbl.pack(side="left", padx=8)
-        r4 = ttk.Frame(mf)
-        r4.pack(fill="x", pady=3)
-        ttk.Label(r4, text="Max tokens", width=14, style="CardMuted.TLabel").pack(side="left")
-        # Same AI-only gating as the Setup copy of this entry - see _sync_ai_state.
-        # Creativity above is deliberately NOT gated: it drives the offline
-        # layout jitter and quest rows via _opts()["creativity"].
-        self._maxtok_gen = ttk.Entry(r4, textvariable=self.max_tokens, width=12)
-        self._maxtok_gen.pack(side="left")
-        self._ai_hint_gen = ttk.Label(r4, text="", style="CardMuted.TLabel")
-        self._ai_hint_gen.pack(side="left", padx=8)
-        self._sync_ai_state()
-        r5 = ttk.Frame(mf)
-        r5.pack(fill="x", pady=3)
-        ttk.Label(r5, text="Book title", width=14, style="CardMuted.TLabel").pack(side="left")
-        ttk.Entry(r5, textvariable=self.book_title, width=22).pack(side="left")
-        r6 = ttk.Frame(mf)
-        r6.pack(fill="x", pady=3)
-        ttk.Label(r6, text="Book icon", width=14, style="CardMuted.TLabel").pack(side="left")
-        ttk.Entry(r6, textvariable=self.book_icon, width=22).pack(side="left")
+        visual = self._disclosure(pad, "Appearance & chapter organization", "appearance")
+        self._combo_row(visual, "Book presentation", self.book_style,
+            {"immersive": "Immersive categories · ATM inspired", "classic": "Original chapter organization"},
+            "Immersive groups chapters by their purpose, emphasizes the main questline and uses quieter chapter titles. Authored scenario order stays intact.")
+        self._combo_row(visual, "Detail level", self.aesthetic, {k: k.title() for k in ["minimal", "balanced", "decorated", "lavish"]})
+        self._combo_row(visual, "Quest shapes", self.quest_shape, {k: ("Automatic by group" if k == "auto" else k.title()) for k in ["auto"] + QUEST_SHAPES})
+        self._combo_row(visual, "Quest node sizes", self.quest_size_style,
+            {"uniform": "Same size", "varied": "Varied by progression", "dramatic": "Bold landmarks", "preserve": "Keep original sizes"},
+            "Changes the size of quest icons on the map. Varied emphasizes milestones; Bold landmarks makes major goals stand out. Keep original sizes preserves authored sizes.")
+        for text, var in [("Organize chapters into groups", self.opt_groups), ("Use group colors and quest shapes", self.opt_style_chapters)]:
+            ttk.Checkbutton(visual, text=text, variable=var, style="Card.TCheckbutton").pack(anchor="w", pady=5)
+        self._group_style_row = self._combo_row(visual, "Group headings", self.group_style, GROUP_STYLES)
+        self._group_hint = ttk.Label(visual, style="CardMuted.TLabel", wraplength=650)
+        self._group_hint.pack(anchor="w")
+        self._background_toggle = ttk.Checkbutton(visual, text="Add chapter background art", variable=self.opt_decor, style="Card.TCheckbutton")
+        self._background_toggle.pack(anchor="w", pady=5)
+        self._background_hint = ttk.Label(visual, style="CardMuted.TLabel", wraplength=650)
+        self._background_hint.pack(anchor="w")
+        self._art_source_row = self._combo_row(visual, "Chapter artwork", self.decor_source,
+            {"library":"Bundled scenes & ornaments", "accents":"Bundled ornaments only", "stock":"Stock FTB shapes"})
+        from decor_browser import THEME_LABELS
+        self._art_theme_row = self._combo_row(visual, "Art theme", self.decor_theme, THEME_LABELS,
+            "Automatic matches each chapter to its subject. Choose a theme to give the whole book a shared look. Original authored artwork is retained.")
+        self._art_collection_row = self._combo_row(visual, "Art collection", self.decor_collection,
+            {"epic": "Epic worlds & illustrated landmarks", "classic": "Original scenes & ornaments"})
+        self._motion_toggle = ttk.Checkbutton(visual, text="Animated decorations in the quest book", variable=self.decor_motion, style="Card.TCheckbutton")
+        self._motion_toggle.pack(anchor="w", pady=5)
+        self._art_size_row = self._combo_row(visual, "Decoration sizes", self.decor_size,
+            {"small": "Small accents", "mixed": "Mixed sizes", "large": "Large landmarks"},
+            "Changes illustrated landmarks and moving accents. Quest node sizes are controlled separately above.")
+        self._art_browser_button = ttk.Button(visual, text="Browse artwork & animations…", command=self._show_art_library)
+        self._art_browser_button.pack(anchor="w", pady=(8, 12))
+        self.decor_source.trace_add("write", self._sync_offline_controls)
+        self.opt_decor.trace_add("write", self._sync_offline_controls)
+        self.decor_collection.trace_add("write", self._sync_offline_controls)
+        self.decor_motion.trace_add("write", self._sync_offline_controls)
 
-        vd = ttk.Labelframe(right, text="VISUAL DESIGN")
-        vd.pack(fill="x")
-        for txt, var in [
-            ("Style chapters by group (colour titles, shape quests)", self.opt_style_chapters),
-            ("Chapter backgrounds (stock Minecraft textures)", self.opt_decor),
-        ]:
-            ttk.Checkbutton(vd, text=txt, variable=var, style="Card.TCheckbutton").pack(anchor="w", pady=1)
-        ttk.Label(vd, style="CardMuted.TLabel", wraplength=360, justify="left",
-                  text="Backgrounds use vanilla advancement-screen textures — no resource "
-                       "pack, no downloads, no generated art.").pack(anchor="w", pady=(2, 0))
+        market = self._disclosure(pad, "Optional quest book shop", "shop")
+        ttk.Checkbutton(market, text="Include an emerald supply shop", variable=self.shop_enabled, style="Card.TCheckbutton").pack(anchor="w", pady=5)
+        ttk.Label(market, text="Adds repeatable purchases for useful supplies. Earn bonus emeralds from milestones; later shelves unlock through your quest progress. Purchases remain optional.", style="CardMuted.TLabel", wraplength=650).pack(anchor="w", pady=(0, 10))
+        self._shop_style_row = self._combo_row(market, "Shop inventory", self.shop_style,
+            {"balanced": "A little of everything", "essentials": "Everyday essentials", "builder": "Building supplies", "adventurer": "Adventure supplies"})
+        self._shop_prices_row = self._combo_row(market, "Shop prices", self.shop_prices,
+            {"low": "Affordable", "normal": "Standard", "high": "Expensive"})
+        ttk.Label(market, text="Uses Minecraft emeralds and FTB Quests. No extra currency mod is needed. Items already required by quests are protected from sale.", style="CardMuted.TLabel", wraplength=650).pack(anchor="w", pady=(0, 8))
+        self.shop_enabled.trace_add("write", self._sync_offline_controls)
 
-        tf = ttk.Labelframe(right, text="THEMED QUESTLINES")
-        tf.pack(fill="x", pady=(10, 0))
-        ttk.Label(tf, style="CardMuted.TLabel", wraplength=360, justify="left",
-                  text="One questline per line. Use an idea (\"Steam power\", "
-                       "\"Beekeeping\", \"Combat gear\") or an exact item "
-                       "(\"minecraft:diamond\"). Each line becomes its own chapter, "
-                       "pulling matching items from every mod you picked. "
-                       "Leave empty for normal per-mod chapters.").pack(anchor="w", pady=(0, 5))
-        self.themes_box = scrolledtext.ScrolledText(tf, height=4, wrap="word")
+        content = self._disclosure(pad, "Content & custom questlines", "content")
+        self._vanilla_ch_toggle = ttk.Checkbutton(content, text="Include Minecraft progression chapters", variable=self.opt_vanilla_ch, style="Card.TCheckbutton")
+        self._vanilla_ch_toggle.pack(anchor="w", pady=5)
+        self._decor_mods_toggle = ttk.Checkbutton(content, text="Include decoration and furniture mods", variable=self.opt_decor_mods, style="Card.TCheckbutton")
+        self._decor_mods_toggle.pack(anchor="w", pady=5)
+        self._decor_mods_hint = ttk.Label(content, style="CardMuted.TLabel", wraplength=650)
+        self._decor_mods_hint.pack(anchor="w", pady=(0, 10))
+        ttk.Label(content, text="Custom questlines (optional)", style="Card.TLabel").pack(anchor="w")
+        ttk.Label(content, text="One idea per line, such as Steam power or Beekeeping. Matching items become extra chapters.", style="CardMuted.TLabel", wraplength=650).pack(anchor="w", pady=(5, 10))
+        self.themes_box = scrolledtext.ScrolledText(content, height=4, wrap="word")
         style_text(self.themes_box)
         self.themes_box.pack(fill="x")
-        if self.themes_text:
-            self.themes_box.insert("1.0", self.themes_text)
-        ttk.Checkbutton(tf, text="Build ONLY these questlines (skip per-mod chapters)",
-                        variable=self.opt_themes_only,
-                        style="Card.TCheckbutton").pack(anchor="w", pady=(5, 1))
-        ttk.Checkbutton(tf, text="Include the vanilla progression chapters",
-                        variable=self.opt_vanilla_ch,
-                        style="Card.TCheckbutton").pack(anchor="w", pady=1)
-        ttk.Checkbutton(tf, text="Include decoration/furniture mods (lots of filler)",
-                        variable=self.opt_decor_mods,
-                        style="Card.TCheckbutton").pack(anchor="w", pady=1)
+        self.themes_box.insert("1.0", self.themes_text)
+        self._themes_only_toggle = ttk.Checkbutton(content, text="Only generate these custom questlines", variable=self.opt_themes_only, style="Card.TCheckbutton")
+        self._themes_only_toggle.pack(anchor="w", pady=(10, 0))
+        self.themes_box.bind("<<Modified>>", self._on_themes_changed)
 
-        cf = ttk.Labelframe(right, text="CONVERTER")
-        cf.pack(fill="x", pady=(10, 0))
-        for txt, var in [("Group chapters by \"group\" field", self.opt_groups),
-                         ("Auto-chain undependent chapters", self.opt_chain),
-                         ("Add XP reward when a quest has none", self.opt_xp),
-                         ("Back up chapters/ before writing", self.opt_backup),
-                         ("Warn me if Minecraft is running", self.opt_mcwarn),
-                         ("Retro sound effects", self.opt_sound)]:
-            ttk.Checkbutton(cf, text=txt, variable=var, style="Card.TCheckbutton").pack(anchor="w", pady=1)
+        advanced = self._disclosure(pad, "Advanced: title, target & variation", "advanced")
+        for label, var, hint in [
+            ("Book title", self.book_title, "Leave blank to use the default quest book title."),
+            ("Book icon", self.book_icon, "Optional item ID, such as minecraft:book. It must exist in this pack."),
+            ("Quest target", self.target_count, "Optional total budget; overrides Book size. Actual counts depend on meaningful content."),
+            ("Variation seed", self.run_seed, "auto makes a new book. Use the same number to repeat a book.")]:
+            r = ttk.Frame(advanced, style="Card.TFrame")
+            r.pack(fill="x", pady=(6, 0))
+            ttk.Label(r, text=label, width=18, style="Card.TLabel").pack(side="left")
+            entry = ttk.Entry(r, textvariable=var)
+            entry.pack(side="left", fill="x", expand=True)
+            if var is self.target_count:
+                self._target_entry = entry
+            ttk.Label(advanced, text=hint, style="CardMuted.TLabel", wraplength=650).pack(anchor="w", pady=(5, 10))
+        r = ttk.Frame(advanced, style="Card.TFrame")
+        r.pack(fill="x", pady=8)
+        ttk.Label(r, text="Map variation", width=18, style="Card.TLabel").pack(side="left")
+        self._temp_lbl = ttk.Label(r, text="%d%%" % (self.temperature.get() * 100), style="CardMuted.TLabel", width=6)
+        self._temp_lbl.pack(side="right")
+        ttk.Scale(r, from_=0, to=1, variable=self.temperature,
+                  command=lambda v: self._temp_lbl.configure(text="%d%%" % (float(v)*100))).pack(side="left", fill="x", expand=True)
+        ttk.Label(advanced, text="Higher values add more variation to chapter layouts and optional branches.", style="CardMuted.TLabel", wraplength=650).pack(anchor="w", pady=(0, 12))
+        self._reference_toggle = ttk.Checkbutton(advanced, text="Use available reference objectives", variable=self.opt_mimic,
+            style="Card.TCheckbutton", state="normal")
+        self._reference_toggle.pack(anchor="w")
+        ttk.Label(advanced, style="CardMuted.TLabel", wraplength=650, text="On: reuse an installed quest book's complete goal chapter when available, including its descriptions, tasks and placement. Other chapters use available reference objectives. Off: build fresh quests from offline guides and local recipes. Visual settings apply to both.").pack(anchor="w", pady=5)
+        for var in (self.opt_groups, self.opt_style_chapters, self.aesthetic, self.layout):
+            var.trace_add("write", self._sync_offline_controls)
+        self._sync_offline_controls()
 
-        pv = ttk.Labelframe(pad, text="LIVE PREVIEW  (mock chapter — updates as you change options)")
-        pv.pack(fill="x", pady=(12, 0))
-        self.preview = QuestPreview(pv, height=240)
+    def _apply_book_preset(self, name):
+        epic = name == "epic"
+        self.density.set("massive" if epic else "large")
+        self.target_count.set("")
+        self.aesthetic.set("lavish" if epic else "balanced")
+        self.layout.set("reference" if epic else "lanes")
+        self.progression.set("linear")
+        self.reward_level.set("standard")
+        self.quest_shape.set("auto")
+        self.quest_size_style.set("dramatic" if epic else "varied")
+        self.decor_source.set("library")
+        self.decor_theme.set("auto")
+        self.decor_collection.set("epic")
+        self.decor_motion.set(True)
+        self.decor_size.set("mixed")
+        self.book_style.set("immersive")
+        self.temperature.set(0.55 if epic else 0.35)
+        self._temp_lbl.configure(text="55%" if epic else "35%")
+        self.run_seed.set("auto")
+        self.opt_groups.set(True)
+        self.group_style.set("bold")
+        self.opt_style_chapters.set(True)
+        self.opt_decor.set(True)
+        self.opt_vanilla_ch.set(True)
+        self.opt_themes_only.set(False)
+        self.opt_mimic.set(epic)
+        self.campaign_scope.set("selected")
+        self.opt_campaign.set(epic)
+        self._preset_hint.configure(text=("Epic styling selected. Your scenario's stages still determine its size." if self._scenario_plan else
+            "Epic selected. Selected mods + goal, a larger book, rich styling, and reference maps.") if epic else
+            "Balanced selected. A large quest book with clear maps and independent chapters.")
+        self._save_cfg()
+        self._refresh_flow()
+
+    def _show_art_library(self):
+        from decor_browser import show_art_library
+        def use(theme):
+            self.decor_theme.set(theme)
+            self.decor_source.set("library")
+            self.opt_decor.set(True)
+            if self.aesthetic.get() == "minimal":
+                self.aesthetic.set("decorated")
+            self._save_cfg()
+            self._refresh_preview()
+        return show_art_library(self.root, use, self.decor_theme.get())
+
+    def _sync_campaign_controls(self, *_args):
+        if not hasattr(self, "_goal_fields"):
+            return
+        self._goal_serial = getattr(self, "_goal_serial", 0) + 1
+        if getattr(self, "_goal_job", None):
+            self.root.after_cancel(self._goal_job)
+            self._goal_job = None
+        self._campaign_error = ""
+        self._focused_goal_count = None
+        self._scenario_title.set((self._scenario_plan or {}).get("title", "Your Campaign"))
+        self._goal_entry.configure(textvariable=self._scenario_title if self._scenario_plan else self.campaign_goal)
+        self._goal_label.configure(text="Scenario campaign" if self._scenario_plan else "Goal of your modpack")
+        self._goal_entry.configure(state="disabled" if self._scenario_plan else "normal")
+        if self._scenario_plan:
+            self._single_goal_button.pack(side="left")
+        else:
+            self._single_goal_button.pack_forget()
+        if not self.opt_campaign.get():
+            self._goal_fields.pack_forget()
+            self._goal_feedback.configure(text="Off: each mod keeps its own questlines. Switch on to give the book a shared destination.", foreground=PALETTE["muted"])
+        else:
+            self._goal_fields.pack(fill="x", before=self._goal_feedback)
+            if not self.scan_result:
+                self._goal_feedback.configure(text="Scan your pack in step 1 to see how this goal will be understood.")
+            else:
+                self._goal_job = self.root.after(200, self._describe_campaign_goal_async)
+        self._refresh_flow()
+
+        if hasattr(self, "_group_style_row"):
+            self._sync_offline_controls()
+
+    def _describe_campaign_goal_async(self):
+        """Keep recipe expansion off Tk's thread and discard outdated answers."""
+        if getattr(self, "_goal_job", None):
+            self.root.after_cancel(self._goal_job)
+        self._goal_job = None
+        if not self.opt_campaign.get() or not self.scan_result:
+            return
+        if not hasattr(self, "_goal_requests"):
+            self._goal_requests = queue.Queue()
+            requests, events = self._goal_requests, self.events
+            def worker():
+                from quest_campaign import resolve_goal
+                while True:
+                    request = requests.get()
+                    if request is None:
+                        return
+                    while not requests.empty():
+                        request = requests.get()
+                        if request is None:
+                            return
+                    serial, scan, selection, goal, progression, scenario, scope = request
+                    fixed_count = None
+                    try:
+                        text, fixed_count = App._campaign_details(scan, selection, goal, scenario, scope)
+                        if progression == "open":
+                            text += " Open exploration removes unlock requirements, including the finale's gates."
+                        error = ""
+                    except ValueError as exc:
+                        text = error = str(exc)
+                    except Exception:
+                        text = error = "This goal could not be checked. Scan the pack again and try a more specific description."
+                    events.put(("goal_feedback", (serial, scan, selection, goal, progression, text, error, scope, fixed_count)))
+            threading.Thread(target=worker, daemon=True).start()
+            self.root.bind("<Destroy>", lambda event: requests.put(None) if event.widget is self.root else None, add="+")
+        request = (self._goal_serial, self.scan_result, list(self.selected_ids),
+                   self.campaign_goal.get().strip(), self.progression.get(), self._scenario_plan, self.campaign_scope.get())
+        self._goal_feedback.configure(text="Checking this goal against your pack…", foreground=PALETTE["muted"])
+        self._goal_requests.put(request)
+
+    def _accept_campaign_goal(self, payload):
+        serial, scan, selection, goal, progression, text, error, scope, fixed_count = payload
+        if (serial != self._goal_serial or scan is not self.scan_result or not self.opt_campaign.get()
+                or selection != list(self.selected_ids) or goal != self.campaign_goal.get().strip()
+                or progression != self.progression.get() or scope != self.campaign_scope.get()):
+            return
+        self._campaign_error = error
+        self._focused_goal_count = fixed_count
+        self._goal_feedback.configure(text=text, foreground=PALETTE["warn"] if error else PALETTE["muted"])
+        self._sync_offline_controls()
+        self._refresh_flow()
+
+    @staticmethod
+    def _campaign_details(scan, selection, goal, scenario=None, scope="selected"):
+        if scenario:
+            from quest_scenarios import validate_scenario
+            report = validate_scenario(scan, selection, scenario, strict=True)
+            manual = sum(s.get("completion") == "manual" for s in report["stages"])
+            return ("Scenario: %s · %d connected stages · %d player-confirmed actions. "
+                    "Edit the route and review starting resources in Plan a scenario." %
+                    (scenario.get("title", "Your Campaign"), len(report["stages"]), manual)), None
+        from quest_campaign import resolve_goal
+        plan = resolve_goal(scan, selection, goal)
+        text = plan["explanation"]
+        count = None
+        if plan.get("kind"):
+            if scope == "selected":
+                text = text.replace("The final quest checks", "The goal quest checks")
+                text += " Selected mods + goal keeps the wider book. Book size applies to its content; the goal's essential preparation is always included. Support and performance mods do not each become a chapter."
+            else:
+                text += " Goal-focused mode limits this book to the goal and its relevant mods."
+                if plan.get("kind") == "objective":
+                    count = len(plan.get("goal_route", {}))
+                    text += " This specific route has %d preparation and goal quests; choose Selected mods + goal for a larger book." % count
+        return text, count
+
+    @staticmethod
+    def _campaign_description(scan, selection, goal, scenario=None, scope="selected"):
+        return App._campaign_details(scan, selection, goal, scenario, scope)[0]
+
+    def _show_scenario_editor(self):
+        if not self.scan_result:
+            messagebox.showinfo("Campaign planner", "Scan your pack first so the planner can check its installed goals.", parent=self.root)
+            return
+        from quest_scenario_editor import ScenarioEditor
+        self._scenario_editor = ScenarioEditor(self)
+        return self._scenario_editor.top
+
+    def _clear_scenario(self):
+        self._scenario_plan = None
+        self._sync_campaign_controls()
+        self._save_cfg()
+
+    def _show_goal_browser(self, on_choose=None):
+        if not self.scan_result:
+            messagebox.showinfo("Explore goals", "Scan your pack first so the suggestions use its installed content.", parent=self.root)
+            return
+        from quest_goal_language import available_goals
+        data = available_goals(self.scan_result, self.selected_ids, limit=100000)
+        top = tk.Toplevel(self.root)
+        top.title("Explore your pack's goals")
+        top.geometry("900x660")
+        top.minsize(700, 480)
+        top.transient(self.root)
+        top.configure(bg=PALETTE["bg"])
+        body = ttk.Frame(top, padding=20)
+        body.pack(fill="both", expand=True)
+        ttk.Label(body, text="Choose where the adventure leads", style="Hero.TLabel").pack(anchor="w")
+        ttk.Label(body, text="Search installed items, creatures, places and supported activities. You can also describe your goal in your own words.",
+                  wraplength=820).pack(anchor="w", pady=(8, 12))
+        search = ttk.Frame(body)
+        search.pack(fill="x", pady=(0, 10))
+        query = tk.StringVar()
+        entry = ttk.Entry(search, textvariable=query)
+        entry.pack(side="left", fill="x", expand=True)
+        category = tk.StringVar(value="All goals")
+        names = {"item": "Items", "entity": "Encounters", "milestone": "Activities", "dimension": "Places",
+                 "structure": "Places", "advancement": "Achievements"}
+        chooser = ttk.Combobox(search, textvariable=category, state="readonly", width=18,
+                               values=["All goals", "Activities", "Encounters", "Achievements", "Places", "Items"])
+        chooser.pack(side="left", padx=(10, 0))
+        area = ttk.Frame(body)
+        area.pack(fill="both", expand=True)
+        tree = ttk.Treeview(area, columns=("goal", "kind", "mod"), show="headings")
+        for key, title, width in (("goal", "Goal", 430), ("kind", "Type", 130), ("mod", "Mod", 160)):
+            tree.heading(key, text=title)
+            tree.column(key, width=width, minwidth=90)
+        bar = ttk.Scrollbar(area, orient="vertical", command=tree.yview)
+        tree.configure(yscrollcommand=bar.set)
+        tree.pack(side="left", fill="both", expand=True)
+        bar.pack(side="right", fill="y")
+        count = ttk.Label(body, style="Muted.TLabel")
+        count.pack(anchor="w", pady=(6, 8))
+        details = ttk.Label(body, text="Choose a goal to see how it will be checked.", wraplength=820, justify="left")
+        details.pack(fill="x", pady=(0, 12))
+        footer = ttk.Frame(body)
+        footer.pack(fill="x")
+        rows = {}
+        resolved_queries = {}
+        mod_names = {mod["mod_id"]: mod.get("name", mod["mod_id"]) for mod in self.scan_result.get("mods", [])}
+        def goal_query(row):
+            from quest_campaign import resolve_goal
+            from quest_goal_language import match_goal
+            verb = {"item": "craft ", "entity": "defeat ", "dimension": "visit ",
+                    "structure": "find ", "advancement": "complete ", "milestone": ""}[row["kind"]]
+            friendly = verb + row["label"] + " from " + mod_names.get(row["mod"], row["mod"])
+            error = None
+            for value in (friendly, row.get("query") or row["label"]):
+                try:
+                    if row["kind"] == "item":
+                        target = match_goal(self.scan_result, self.selected_ids, value)
+                        if target and target["kind"] == "item" and target["target_id"] == row["target_id"]:
+                            return value, "Collect " + row["label"] + ". The goal field checks its recipe route after selection."
+                        continue
+                    plan = resolve_goal(self.scan_result, self.selected_ids, value)
+                    matched = (row["kind"] == "item" and plan.get("exact_goal_ids") == [row["target_id"]]) or (
+                        plan.get("goal_target", {}).get("kind") == row["kind"] and
+                        plan.get("goal_target", {}).get("target_id") == row["target_id"])
+                    if matched:
+                        return value, plan["explanation"]
+                except ValueError as exc:
+                    error = exc
+            raise error or ValueError("This goal needs a more specific description before it can be used.")
+        def choose(_event=None):
+            selection = tree.selection()
+            if not selection or selection[0] not in resolved_queries:
+                return
+            if on_choose:
+                on_choose(resolved_queries[selection[0]])
+            else:
+                self._scenario_plan = None
+                self.campaign_goal.set(resolved_queries[selection[0]])
+                self.opt_campaign.set(True)
+            top.destroy()
+            if not on_choose:
+                self._goal_entry.focus_set()
+        use = ttk.Button(footer, text="Use this goal", command=choose, state="disabled", style="Accent.TButton")
+        use.pack(side="right")
+        ttk.Button(footer, text="Close", command=top.destroy).pack(side="right", padx=10)
+        def select(_event=None):
+            selection = tree.selection()
+            row = rows.get(selection[0]) if selection else None
+            use.configure(state="normal" if row else "disabled")
+            if row:
+                text = row.get("description") or row["label"]
+                if isinstance(text, list):
+                    text = " ".join(text)
+                try:
+                    value, explanation = goal_query(row)
+                    resolved_queries[selection[0]] = value
+                    text += "\n" + explanation
+                except ValueError as exc:
+                    resolved_queries.pop(selection[0], None)
+                    use.configure(state="disabled")
+                    text += "\n" + str(exc)
+                details.configure(text=text)
+            else:
+                details.configure(text="Choose a goal to see how it will be checked.")
+        def refresh(*_args):
+            words = re.findall(r"[\w]+", query.get().casefold())
+            filtered = []
+            for row in data:
+                if category.get() != "All goals" and names.get(row["kind"]) != category.get():
+                    continue
+                haystack = (row["label"] + " " + row["mod"] + " " + row["target_id"] + " " + " ".join(row.get("aliases") or [])).casefold()
+                if all(word in haystack for word in words):
+                    filtered.append(row)
+            tree.delete(*tree.get_children())
+            rows.clear()
+            resolved_queries.clear()
+            for index, row in enumerate(filtered[:150]):
+                key = str(index)
+                rows[key] = row
+                tree.insert("", "end", iid=key, values=(row["label"], names.get(row["kind"], row["kind"]), row["mod"]))
+            count.configure(text=("%s matching goals" % format(len(filtered), ",")) +
+                                  (" · Showing the first 150; refine your search to see more." if len(filtered) > 150 else ""))
+            select()
+        query.trace_add("write", refresh)
+        category.trace_add("write", refresh)
+        tree.bind("<<TreeviewSelect>>", select)
+        tree.bind("<Double-1>", choose)
+        tree.bind("<Return>", choose)
+        top.bind("<Escape>", lambda _event: top.destroy())
+        refresh()
+        entry.focus_set()
+        return top
+
+    def _describe_campaign_goal(self):
+        if getattr(self, "_goal_job", None):
+            self.root.after_cancel(self._goal_job)
+        self._goal_job = None
+        self._goal_serial = getattr(self, "_goal_serial", 0) + 1
+        if not self.opt_campaign.get() or not self.scan_result:
+            return
+        try:
+            self._campaign_error = ""
+            text, self._focused_goal_count = self._campaign_details(self.scan_result, self.selected_ids, self.campaign_goal.get().strip(), self._scenario_plan, self.campaign_scope.get())
+            if self.progression.get() == "open":
+                text += " Open exploration removes unlock requirements, including the finale's gates."
+            self._goal_feedback.configure(text=text, foreground=PALETTE["muted"])
+        except ValueError as exc:
+            self._campaign_error = str(exc)
+            self._focused_goal_count = None
+            self._goal_feedback.configure(text=str(exc), foreground=PALETTE["warn"])
+        self._sync_offline_controls()
+        self._refresh_flow()
+
+    def _tab_review(self):
+        t = ttk.Frame(self.nb)
+        self.nb.add(t, text="Preview & build")
+        footer = ttk.Frame(t, padding=(16, 14))
+        footer.pack(side="bottom", fill="x")
+        ttk.Button(footer, text="←  Quest book", command=lambda: self._show_page("Generate")).pack(side="left")
+        self.btn_gen_local = ttk.Button(footer, text="Build quest book", style="Accent.TButton", command=self.on_generate_local)
+        self.btn_gen_local.pack(side="right")
+        self.btn_preview = ttk.Button(footer, text="Preview quest book", command=self.on_preview)
+        self.btn_preview.pack(side="right", padx=10)
+        self.btn_cancel = ttk.Button(footer, text="Cancel", command=self._do_cancel, state="disabled")
+        self.btn_cancel.pack(side="right", padx=2)
+        pad = self._scrollframe(t)
+        self._page_heading(pad, "Step 03 / 03", "Preview, then build", "Explore the real generated chapters and descriptions before saving the quest files.")
+        info = self._card(pad, "Your quest book")
+        self._review_summary = ttk.Label(info, style="Card.TLabel", justify="left", wraplength=650)
+        self._review_summary.pack(anchor="w", pady=(0, 10))
+        self._review_hint = ttk.Label(info, style="CardMuted.TLabel", wraplength=650)
+        self._review_hint.pack(anchor="w")
+        dest = self._card(pad, "Save quest book to", "Building updates the quest book in this folder. Existing chapters are backed up when backups are enabled.")
+        row = ttk.Frame(dest, style="Card.TFrame")
+        row.pack(fill="x")
+        ttk.Entry(row, textvariable=self.out_dir1).pack(side="left", fill="x", expand=True)
+        ttk.Button(row, text="Change folder", command=lambda: self._b_out(self.out_dir1)).pack(side="right", padx=(10, 0))
+        ttk.Button(dest, text="Open output folder", command=self.on_open_out).pack(anchor="w", pady=(10, 0))
+        extra = self._disclosure(pad, "Additional destination & backup options", "destinations")
+        self._row(extra, "Also save to", self.out_dir2, lambda: self._b_out(self.out_dir2))
+        ttk.Checkbutton(extra, text="Back up existing chapters before writing", variable=self.opt_backup, style="Card.TCheckbutton").pack(anchor="w", pady=8)
+        sample = self._disclosure(pad, "Quick style sample", "sample")
+        ttk.Label(sample, text="An example of node sizes and layout. Use Preview quest book to see your pack's actual quests and artwork.", style="CardMuted.TLabel", wraplength=650).pack(anchor="w", pady=(0, 10))
+        self.preview = QuestPreview(sample, height=220)
         self.preview.pack(fill="x")
-        for v in (self.layout, self.aesthetic, self.quest_shape, self.reward_level,
-                  self.progression, self.density, self.opt_style_chapters,
-                  self.opt_decor, self.temperature):
+        for v in (self.layout, self.aesthetic, self.quest_shape, self.quest_size_style, self.decor_source, self.decor_theme, self.decor_collection, self.decor_motion, self.decor_size, self.book_style, self.reward_level, self.progression,
+                  self.density, self.opt_style_chapters, self.opt_decor, self.temperature, self.run_seed):
             v.trace_add("write", lambda *a: self._refresh_preview())
         self.root.after(300, self._refresh_preview)
 
-        act = ttk.Labelframe(pad, text="RUN")
-        act.pack(fill="x", pady=(12, 0))
-        row = ttk.Frame(act)
-        row.pack(fill="x")
-        # Offline is the primary path and comes first. It needs no API key,
-        # no account and no network, and it is the ONLY path that receives
-        # the researched chain order, the guide entry rituals, the playthrough
-        # positions and the measured item ranking. AI writes livelier prose;
-        # it does not know any of that, so it is the option, not the default.
-        # The guided flow comes FIRST and carries the accent, because a person
-        # who does not already know the order needs it before they need
-        # anything else on this row. It was originally last of six buttons and
-        # auto-opened only on a true first run, which meant the person who
-        # asked for it could not find it in their own build - a feature nobody
-        # can see is not a feature.
-        self.btn_wizard = ttk.Button(row, text="🧭  Guided setup",
-                                     style="Accent.TButton",
-                                     command=self.on_wizard)
-        self.btn_wizard.pack(side="left")
-        hover_lift(self.btn_wizard)
-        self.btn_gen_local = ttk.Button(row, text="✦  Build Quest Book",
-                                        command=self.on_generate_local)
-        self.btn_gen_local.pack(side="left", padx=6)
-        hover_lift(self.btn_gen_local)
-        self.btn_gen = ttk.Button(row, text="Generate with AI (optional)",
-                                  command=self.on_generate)
-        self.btn_gen.pack(side="left", padx=6)
-        hover_lift(self.btn_gen)
-        b = ttk.Button(row, text="Preview (no write)", command=self.on_preview)
-        b.pack(side="left", padx=6)
-        hover_lift(b)
-        self.btn_cancel = ttk.Button(row, text="Cancel", command=self._do_cancel, state="disabled")
-        self.btn_cancel.pack(side="left", padx=6)
-        MoonRollButton(row, self.on_randomize).pack(side="right")
-        ttk.Label(act, style="CardMuted.TLabel", wraplength=560, justify="left",
-                  text="Build Quest Book needs no API key and no internet. It reads your mods "
-                       "and builds everything — chapters, quests, dependencies, layout, groups, "
-                       "rewards — and it is the only path that uses the researched progression "
-                       "order, the guide entry steps and the measured item ranking that ship "
-                       "with the app. AI writes more varied prose but knows none of "
-                       "that.").pack(anchor="w", pady=(6, 0))
-        row2 = ttk.Frame(act)
-        row2.pack(fill="x", pady=(8, 0))
-        for txt, cmd in [("Save prompt to file", self.on_save_prompt),
-                         ("Convert JSON file", self.on_convert_file),
-                         ("Open output folder", self.on_open_out),
-                         ("Clean old backups", self.on_clean_backups)]:
-            b = ttk.Button(row2, text=txt, command=cmd)
-            b.pack(side="left", padx=(0, 6))
-            hover_lift(b)
-
-        pf = ttk.Labelframe(pad, text="PASTE QUEST JSON FROM A WEB AI")
-        pf.pack(fill="both", expand=True, pady=(12, 0))
-        self.paste = scrolledtext.ScrolledText(pf, height=5, wrap="none")
-        style_text(self.paste)
-        self.paste.pack(fill="both", expand=True)
-        ttk.Button(pf, text="Convert pasted JSON", style="Accent.TButton",
-                   command=self.on_convert_paste).pack(anchor="e", pady=(8, 0))
+    def _tab_preferences(self):
+        t = ttk.Frame(self.nb)
+        self.nb.add(t, text="Preferences")
+        pad = self._scrollframe(t)
+        self._page_heading(pad, "Tools & settings", "App preferences", "Settings for working with quest files on your computer.")
+        card = self._card(pad, "While working")
+        for label, var in [("Back up existing chapters before writing", self.opt_backup),
+                           ("Warn when Minecraft is running", self.opt_mcwarn), ("Play sound effects", self.opt_sound)]:
+            ttk.Checkbutton(card, text=label, variable=var, style="Card.TCheckbutton").pack(anchor="w", pady=8)
+        ttk.Button(card, text="Clean old backups…", command=self.on_clean_backups).pack(anchor="w", pady=(12, 0))
+        ttk.Label(pad, text="Changes are saved when you run an action or close the app.", style="Muted.TLabel").pack(anchor="w", pady=8)
 
     # ---- Rewards & Tasks editor tab -------------------------------- #
     TASK_FIELDS = {
@@ -13836,8 +16680,6 @@ class App:
         self.editor_lbl = ttk.Label(top, text="reads chapters/ from the Output folder",
                                     style="Muted.TLabel")
         self.editor_lbl.pack(side="left", padx=10)
-        b = ttk.Button(top, text="✦ AI: fill in rewards", command=self.on_editor_ai_rewards)
-        b.pack(side="right")
         b2 = ttk.Button(top, text="Write book to Output", style="Accent.TButton",
                         command=self.on_editor_write)
         b2.pack(side="right", padx=6)
@@ -14105,7 +16947,8 @@ class App:
             for out in outs:
                 self.log("-> %s" % out)
                 write_snbt(out, chapters, groups, self.opt_backup.get(), self.log,
-                           self._book(), extra.get("reward_tables"))
+                           self._book(), extra.get("reward_tables"),
+                           templated=extra.get("templated"), mc_version=(self.scan_result or {}).get("minecraft_version", ""))
             for w in warns[:40]:
                 self.log("  ! " + w)
             return "wrote edited book (%d chapters, %d pools)" % (len(chapters), len(pools))
@@ -14255,36 +17098,6 @@ class App:
                        command=self.on_repair)
         b.pack(anchor="w")
 
-        pf = ttk.Labelframe(pad, text="POLISH WORDING WITH AI  (words only - nothing else can change)")
-        pf.pack(fill="x", pady=(12, 0))
-        ttk.Label(pf, style="CardMuted.TLabel", justify="left", wraplength=760,
-                  text="Rewrites quest titles, descriptions, chapter names and group names "
-                       "-- and ONLY those. Items, counts, rewards, dependencies and layout "
-                       "are copied across untouched, so the AI cannot ask you for an item "
-                       "that does not exist or add a quest you cannot finish. This is the "
-                       "safe way to use AI on a finished book.").pack(anchor="w", pady=(0, 8))
-        r1 = ttk.Frame(pf)
-        r1.pack(fill="x")
-        self._polish_btn = ttk.Button(r1, text="✒  Polish wording with AI",
-                                      style="Accent.TButton", command=self.on_polish)
-        self._polish_btn.pack(side="left")
-        ttk.Label(r1, text="recommended", style="CardMuted.TLabel").pack(side="left", padx=10)
-
-        imf = ttk.Labelframe(pad, text="IMPROVE WITH AI  (also changes structure)")
-        imf.pack(fill="x", pady=(12, 0))
-        ttk.Label(imf, style="CardMuted.TLabel", justify="left", wraplength=760,
-                  text="The wider version: as well as the wording it adds rewards, rewrites "
-                       "item IDs and invents side quests. That is where the AI makes its "
-                       "mistakes, so prefer Polish above unless you want new content. "
-                       "Needs a scan (Setup tab) for the item-ID list.").pack(
-            anchor="w", pady=(0, 8))
-        r2 = ttk.Frame(imf)
-        r2.pack(fill="x")
-        b = ttk.Button(r2, text="✦  Improve current book with AI", style="Accent.TButton",
-                       command=self.on_improve)
-        b.pack(side="left")
-        ttk.Label(r2, text="uses the Model + options from the Generate tab",
-                  style="CardMuted.TLabel").pack(side="left", padx=10)
 
 
     # ---- Import tab --------------------------------------------------- #
@@ -14298,12 +17111,11 @@ class App:
         ttk.Label(src, wraplength=760, style="CardMuted.TLabel", justify="left",
                   text="Take any pack's chapters 1:1 - titles, layout, rewards, all "
                        "exactly as its author wrote them. Point at an installed "
-                       "instance folder, a downloaded .zip/.mrpack, or type a pack "
-                       "name to fetch it from Modrinth. Quests for mods you don't "
+                       "instance folder or a downloaded .zip/.mrpack on your "
+                       "computer. Quests for mods you don't "
                        "have are dropped automatically (they could never be "
-                       "completed). CurseForge-only packs (All the Mods, etc.) are "
-                       "not on Modrinth - install them in the CurseForge app, then "
-                       "Browse to the instance folder. Imports are for your own "
+                       "completed). Browse to an existing instance folder to "
+                       "reuse its chapters. Imports are for your own "
                        "book - sharing a pack "
                        "with someone else's questline needs their permission."
                   ).pack(anchor="w", pady=(0, 8))
@@ -14391,6 +17203,20 @@ class App:
                         style="Accent.TButton", command=self.on_import_install)
         b4.pack(side="left", padx=(12, 0))
         self._import_rows = []
+        pf = self._disclosure(pad, "Import quest JSON", "json")
+        ttk.Label(pf, text="Paste quest JSON or choose a local file. Conversion uses the destination in Preview & build.",
+                  style="CardMuted.TLabel", wraplength=650).pack(anchor="w", pady=(0, 10))
+        self.paste = scrolledtext.ScrolledText(pf, height=8, wrap="none")
+        style_text(self.paste)
+        self.paste.pack(fill="x")
+        for label, var in [("Connect imported quests that have no dependencies", self.opt_chain),
+                           ("Add XP to imported quests without rewards", self.opt_xp)]:
+            ttk.Checkbutton(pf, text=label, variable=var, style="Card.TCheckbutton").pack(anchor="w", pady=5)
+        actions = ttk.Frame(pf, style="Card.TFrame")
+        actions.pack(fill="x", pady=(10, 0))
+        ttk.Button(actions, text="Choose JSON file", command=self.on_convert_file).pack(side="left")
+        ttk.Button(actions, text="Preview pasted JSON", command=lambda: self.on_preview(imported=True)).pack(side="left", padx=10)
+        ttk.Button(actions, text="Convert pasted JSON", command=self.on_convert_paste).pack(side="left")
 
     def _on_pick_import_dest(self, _e=None):
         lbl = self._import_inst.get()
@@ -14436,14 +17262,16 @@ class App:
 
     def on_import_find(self):
         srcv = self.import_src.get().strip()
-        if not srcv:
-            messagebox.showwarning(APP_NAME, "Enter a pack name, folder or zip first.")
+        source = Path(srcv) if srcv else None
+        if source is None or not (source.is_dir() or
+                                  (source.is_file() and source.suffix.lower() in (".zip", ".mrpack", ".jar"))):
+            messagebox.showwarning(APP_NAME, "Choose an existing local instance folder or modpack archive. Import works offline.")
             return
         self.import_lbl.configure(text="searching...")
 
         def work():
             try:
-                rows = find_pack_chapters(srcv, self.log)
+                rows = find_pack_chapters(srcv, self.log, allow_remote=False)
             except Exception as e:
                 rows = []
                 self.log("import search failed: %s" % e)
@@ -14603,7 +17431,12 @@ class App:
                         self._apply_mc(payload.endswith("1"))
                     else:
                         self.status.configure(text=payload)
+                elif kind == "goal_feedback":
+                    self._accept_campaign_goal(payload)
                 elif kind == "scan_done":
+                    if payload.get("_source_folder") != str(Path(self.mods_dir.get().strip()).resolve()):
+                        self.set_status("The folder changed during scanning. Scan the selected pack again.")
+                        continue
                     self.scan_result = payload
                     valid = {m["mod_id"] for m in payload["mods"]}
                     self.selected_ids = [i for i in self.selected_ids if i in valid] or list(valid)
@@ -14621,14 +17454,20 @@ class App:
                             APP_NAME,
                             "This pack did not read cleanly." + chr(10) * 2
                             + _note + chr(10) * 2
-                            + "You can still build a book from what was "
-                              "read - it will just cover less than you "
-                              "expect.")
+                            + ("Choose a supported instance before building a book."
+                               if payload.get("unsupported") else
+                               "You can still build a book from what was "
+                               "read - it will just cover less than you expect."))
                 elif kind == "mods_refresh":
                     self._mod_imgs.clear()
                     self._render_mod_cards()
+                elif kind == "book_preview":
+                    import webbrowser
+                    self.run_seed.set(str(payload[1]))
+                    webbrowser.open(Path(payload[0]).resolve().as_uri())
                 elif kind == "models":
-                    self.model_cb["values"] = payload
+                    if hasattr(self, "model_cb"):
+                        self.model_cb["values"] = payload
                     if payload and self.model.get() not in payload:
                         self.model.set(payload[0])
                     self.set_status("fetched %d models" % len(payload))
@@ -14674,7 +17513,7 @@ class App:
                 elif kind == "error":
                     self._set_busy(False)
                     self._sfx("error")
-                    self.set_status("error - see the Log tab")
+                    self.set_status("Something went wrong — details are in Activity log")
                     self.nb.select(self._tab_index("Log"))
                     messagebox.showerror(APP_NAME, payload)
         except queue.Empty:
@@ -14696,7 +17535,8 @@ class App:
     def _set_busy(self, busy, title=""):
         self._busy = busy
         self._cancel = False
-        self.btn_gen.configure(state="disabled" if busy else "normal")
+        if hasattr(self, "btn_gen"):
+            self.btn_gen.configure(state="disabled" if busy else "normal")
         if hasattr(self, "btn_gen_local"):
             self.btn_gen_local.configure(state="disabled" if busy else "normal")
         self.btn_cancel.configure(state="normal" if busy else "disabled")
@@ -14707,6 +17547,7 @@ class App:
         else:
             self.prog.stop()
             self.loading.hide()
+        self._refresh_flow()
 
     def _sfx(self, name):
         play_sfx(name, self.opt_sound.get())
@@ -14804,7 +17645,8 @@ class App:
             self.model.set(p["model"])
 
     def _toggle_key(self):
-        self.key_entry.configure(show="" if self.key_entry.cget("show") else "\u2022")
+        if hasattr(self, "key_entry"):
+            self.key_entry.configure(show="" if self.key_entry.cget("show") else "\u2022")
 
     # ---- browse ------------------------------------------------------- #
     def _on_pick_instance(self, _e=None):
@@ -14813,14 +17655,23 @@ class App:
             if name == lbl:
                 self.mods_dir.set(mods)
                 self.out_dir1.set(str(Path(mods).parent / "config/ftbquests/quests"))
-                self.set_status("instance picked - now press Scan mods")
+                self.set_status("Pack selected — press Scan this pack")
                 return
+
+    def _on_mods_folder_changed(self, *_args):
+        # A scan belongs to one folder. Changing the path must not let the
+        # previous pack's items pass the otherwise-correct pack/output guard.
+        self.scan_result = None
+        self.selected_ids = []
+        self._offline_doc = None
+        self._update_scan_lbl()
 
     def _b_mods(self):
         d = filedialog.askdirectory(title="Modpack folder (or its mods/ folder)")
         if d:
             p = Path(d)
             self.mods_dir.set(str(p / "mods" if (p / "mods").is_dir() else p))
+            self.out_dir1.set(_quests_dir_for(self.mods_dir.get()))
 
     def _b_out(self, var):
         d = filedialog.askdirectory(title="config/ftbquests/quests")
@@ -14831,8 +17682,17 @@ class App:
         return [Path(v.strip()) for v in (self.out_dir1.get(), self.out_dir2.get()) if v.strip()]
 
     def _update_scan_lbl(self):
+        self._sync_campaign_controls()
+        if hasattr(self, "_decor_mods_toggle"):
+            self._sync_offline_controls()
+        if hasattr(self, "_folder_hint"):
+            folder = self.mods_dir.get().strip()
+            self._folder_hint.configure(text=
+                "Mods folder not found. Choose a detected instance or browse to its mods folder."
+                if folder and not Path(folder).is_dir() else "")
         if not self.scan_result:
-            self.scan_lbl.configure(text="not scanned")
+            self.scan_lbl.configure(text="Not scanned yet")
+            self._refresh_flow()
             return
         n = len(self.scan_result["mods"])
         it = sum(len(v) for v in self.scan_result["items"].values())
@@ -14840,9 +17700,12 @@ class App:
         # The warning dialog is dismissed once; this line stays. A user who
         # comes back to the tab later should still be able to see that the
         # book they are about to build covers part of their pack.
-        if self.scan_result.get("blocked"):
+        if self.scan_result.get("unsupported"):
+            txt += "   -   UNSUPPORTED MINECRAFT VERSION / ITEM FORMAT"
+        elif self.scan_result.get("blocked"):
             txt += "   -   PART OF THIS PACK COULD NOT BE READ"
         self.scan_lbl.configure(text=txt)
+        self._refresh_flow()
 
     # ---- opts -------------------------------------------------------- #
     _REWARD_MULT = {"lean": 0.5, "standard": 1.0, "generous": 2.0}
@@ -14853,12 +17716,21 @@ class App:
     def _update_count_hint(self):
         if not hasattr(self, "_count_hint"):
             return
+        if self.opt_campaign.get() and self._scenario_plan:
+            self._count_hint.configure(text="Scenario size follows your stages and their complete prerequisites. Edit the planner to change its scope. Whole-pack budgets, extra chapters and reference objectives are inactive for this campaign.")
+            return
+        if self.opt_campaign.get() and self.campaign_scope.get() == "goal" and self._focused_goal_count is not None:
+            self._count_hint.configure(text="This focused route has %d required preparation and goal quests. Book size and extra-content options are inactive. Choose Selected mods + goal above for a wider book." % self._focused_goal_count)
+            return
         exact = self.target_count.get().strip()
         if exact.isdigit():
-            self._count_hint.configure(text="→ exactly %s quests" % exact)
+            self._count_hint.configure(text="Aim for %s quests across the book. Complete goal routes and essential prerequisites can raise this count; limited content can lower it." % exact)
+        elif self.opt_mimic.get() and self._templates_available:
+            self._count_hint.configure(text="%s keeps roughly %d%% of available reference chapter objectives, plus other supported content. Large packs can produce hundreds or thousands of quests. Preview shows the actual count." % (
+                self.density.get().title(), round(TEMPLATE_KEEP.get(self.density.get(), 0.7) * 100)))
         else:
             self._count_hint.configure(
-                text="≈ %s quests total" % DENSITY_TARGETS.get(self.density.get(), "120-180"))
+                text="Whole-book starting budget: ≈ %s quests, limited by playable content. Complete goal routes and essential prerequisites can add quests. Preview shows the actual count." % DENSITY_TARGETS.get(self.density.get(), "120-180"))
 
     def _refresh_preview(self):
         if not hasattr(self, "preview"):
@@ -14899,10 +17771,16 @@ class App:
                 "decor_art": self.opt_decor.get(),
                 "aesthetic": self.aesthetic.get(),
                 "quest_shape": self.quest_shape.get(),
+                "quest_size_style": self.quest_size_style.get(),
+                "decor_source": self.decor_source.get(), "decor_theme": self.decor_theme.get(),
+                "decor_collection": self.decor_collection.get(), "decor_motion": self.decor_motion.get(),
+                "decor_size": self.decor_size.get(), "book_style": self.book_style.get(),
+                "shop_enabled": self.shop_enabled.get(), "shop_style": self.shop_style.get(), "shop_prices": self.shop_prices.get(),
                 "_scan": getattr(self, "scan_result", None),
                 "groups": self.opt_groups.get(),
                 "style_chapters": self.opt_style_chapters.get(),
-                "layout": self.layout.get(), "group_style": self.group_style.get(), "creativity": self._creativity(),
+                "layout": self.layout.get(), "progression": self.progression.get(),
+                "group_style": self.group_style.get(), "creativity": self._creativity(),
                 "preserve_ids": preserve_ids,
                 "reward_mult": self._REWARD_MULT.get(self.reward_level.get(), 1.0)}
 
@@ -14917,6 +17795,7 @@ class App:
 
     def _prompt_opts(self):
         return {"density": self.density.get(), "target": self.target_count.get(),
+                "book_title": self.book_title.get().strip(),
                 "seed": self._seed_for_run(),
                 "groups": self.opt_groups.get(), "aesthetic": self.aesthetic.get(),
                 "reward": self.reward_level.get(), "progression": self.progression.get(),
@@ -14924,6 +17803,10 @@ class App:
                 "themes": self._themes(), "themes_only": self.opt_themes_only.get(),
                 "vanilla_chapters": self.opt_vanilla_ch.get(),
                 "include_decor": self.opt_decor_mods.get(),
+                "mimic": self.opt_mimic.get(),
+                "campaign": self.opt_campaign.get(), "campaign_goal": self.campaign_goal.get().strip(),
+                "campaign_scope": self.campaign_scope.get(),
+                "scenario": self._scenario_plan if self.opt_campaign.get() else None,
                 "mod_desc": {k: v.get("desc") for k, v in self._mod_info.items() if v.get("desc")}}
 
     def _book(self):
@@ -14932,7 +17815,8 @@ class App:
                 "progression_mode": "flexible" if self.progression.get() == "open" else "linear"}
 
     def _prompt_text(self):
-        return self.prompt_box.get("1.0", "end").strip() or build_prompt(
+        raw = self.prompt_box.get("1.0", "end").strip() if hasattr(self, "prompt_box") else ""
+        return raw or build_prompt(
             self.scan_result, self.selected_ids, self.language.get(), self._prompt_opts())
 
     @staticmethod
@@ -15019,16 +17903,21 @@ class App:
         def job():
             self.phase(0.05, "reading jars...")
             scan = scan_mods(folder, 400, self.log, self.phase)
+            scan["_source_folder"] = str(folder.resolve())
             self.phase(1.0, "done")
             self.events.put(("scan_done", scan))
             self._sfx("scan")
             return "scanned %d mods, %d item IDs" % (
                 len(scan["mods"]), sum(len(v) for v in scan["items"].values()))
-        self._run(job, "Scanning mods", goto="Mods")
+        self._run(job, "Scanning pack")
 
     def _need_scan(self):
         if not self.scan_result:
-            messagebox.showwarning(APP_NAME, "Scan the mods first (Setup tab).")
+            messagebox.showwarning(APP_NAME, "Choose a pack and scan it in step 1 first.")
+            return True
+        if self.scan_result.get("unsupported"):
+            messagebox.showwarning(APP_NAME, self.scan_result.get("blocked") or
+                                   "This Minecraft version is not supported.")
             return True
         return False
 
@@ -15043,6 +17932,8 @@ class App:
             self._save_cfg()
 
     def on_fetch_models(self):
+        if not hasattr(self, "model_cb"):
+            return
         url, key = self.api_url.get().strip(), self.api_key.get().strip()
         if not url:
             messagebox.showwarning(APP_NAME, "Set the API URL first.")
@@ -15058,6 +17949,8 @@ class App:
         self._run(job, "Fetching model list")
 
     def on_test(self):
+        if not hasattr(self, "model_cb"):
+            return
         url, key = self.api_url.get().strip(), self.api_key.get().strip()
         if not url:
             messagebox.showwarning(APP_NAME, "Set the API URL first.")
@@ -15077,6 +17970,8 @@ class App:
         self._run(job, "Testing connection", notify=True, notify_out=False)
 
     def on_build_prompt(self):
+        if not hasattr(self, "prompt_box"):
+            return
         if self._need_scan():
             return
         text = build_prompt(self.scan_result, self.selected_ids, self.language.get(),
@@ -15087,10 +17982,14 @@ class App:
         self.nb.select(self._tab_index("Prompt"))
 
     def _prompt_stats(self):
+        if not hasattr(self, "prompt_box"):
+            return
         n = len(self.prompt_box.get("1.0", "end")) - 1
         self.prompt_info.configure(text="%d chars  ~%d tokens" % (n, n // 4))
 
     def _copy_prompt(self):
+        if not hasattr(self, "prompt_box"):
+            return
         self.root.clipboard_clear()
         self.root.clipboard_append(self.prompt_box.get("1.0", "end"))
         self.set_status("prompt copied")
@@ -15102,6 +18001,8 @@ class App:
         return 0
 
     def on_save_prompt(self):
+        if not hasattr(self, "prompt_box"):
+            return
         if self._need_scan():
             return
         path = filedialog.asksaveasfilename(defaultextension=".txt", initialfile="quest_prompt.txt")
@@ -15111,6 +18012,9 @@ class App:
         self.set_status("prompt saved -> %s" % Path(path).name)
 
     def _ai_ready(self):
+        if not hasattr(self, "model_cb"):
+            messagebox.showinfo(APP_NAME, "This app generates quest books offline. AI actions are unavailable.")
+            return None
         url, model = self.api_url.get().strip(), self.model.get().strip()
         if not url or not model:
             messagebox.showwarning(APP_NAME, "Set API URL and model (Setup tab).")
@@ -15131,11 +18035,12 @@ class App:
         # pleasant thing to be handed by a randomise button
         self.density.set(rng.choice(DENSITY_ORDER[:5]))
         self.target_count.set("")
-        self.layout.set(rng.choice([l for l in LAYOUTS if l != "ai"]))
+        self.layout.set(rng.choice(OFFLINE_LAYOUTS))
         self.aesthetic.set(rng.choice(["minimal", "balanced", "decorated", "lavish"]))
         self.reward_level.set(rng.choice(["lean", "standard", "generous"]))
         self.progression.set(rng.choice(["linear", "loose", "open"]))
-        self.temperature.set(round(rng.uniform(0.35, 1.1), 2))
+        self.quest_size_style.set(rng.choice(["varied", "dramatic", "uniform"]))
+        self.temperature.set(round(rng.uniform(0.15, 1.0), 2))
         self._temp_lbl.configure(text="%d%%" % min(100, int(self.temperature.get() * 100)))
         self.opt_style_chapters.set(rng.random() < 0.85)
         self.opt_decor.set(rng.random() < 0.7)
@@ -15155,11 +18060,11 @@ class App:
             self._update_scan_lbl()
         self._save_cfg()
         self._sfx("done")
-        self.set_status("\U0001f319 randomized  —  %s book, %s layout, %s style, creativity %d%%"
+        self.set_status("\U0001f319 randomized  —  %s book, %s layout, %s style, variation %d%%"
                         % (self.density.get(), self.layout.get(), self.aesthetic.get(),
                            int(self.temperature.get() * 100)))
         self.log("randomized: size=%s layout=%s aesthetic=%s rewards=%s progression=%s "
-                 "creativity=%d%% mods=%d" % (
+                 "variation=%d%% mods=%d" % (
                      self.density.get(), self.layout.get(), self.aesthetic.get(),
                      self.reward_level.get(), self.progression.get(),
                      int(self.temperature.get() * 100), len(self.selected_ids)))
@@ -15186,7 +18091,7 @@ class App:
         # Text left over from clicking "Build prompt" used to silently bypass
         # batching and turn one 503 into a dead run.
         edited = (self.prompt_box.get("1.0", "end").strip()
-                  if self.opt_raw_prompt.get() else "")
+                  if self.opt_raw_prompt.get() and hasattr(self, "prompt_box") else "")
 
         def job():
             # --- one-shot path: the user ticked "send my prompt as-is" --------
@@ -15440,31 +18345,42 @@ class App:
                                save_raw=True, base=0.4)
         self._run(job, "Building quest book (offline, no AI)", notify=True)
 
-    def on_preview(self):
-        raw = self.paste.get("1.0", "end").strip()
-        if not raw:
-            path = filedialog.askopenfilename(title="Quest JSON to preview",
-                                              filetypes=[("JSON / text", "*.json *.txt"), ("All", "*.*")])
-            if not path:
-                return
-            raw = Path(path).read_text(encoding="utf-8")
+    def on_preview(self, imported=False):
+        raw = self.paste.get("1.0", "end").strip() if imported else ""
+        if not raw and self._need_scan():
+            return
         scan = self.scan_result or {"mods": [], "items": {}, "entities": {}, "craftable": {}}
+        # Read all Tk variables on the main thread, and use the same seed for
+        # content and layout. Pin it after preview so Build reproduces the map.
+        popts, bopts = self._prompt_opts(), self._opts()
+        selected = list(self.selected_ids)
+        title = self.book_title.get().strip() or "Your quest book"
+        popts["book_title"] = title
 
         def job():
-            self.phase(0.3, "parsing JSON...")
-            doc = extract_json(raw)
+            self.phase(0.3, "building the offline preview...")
+            doc = extract_json(raw) if raw else local_quest_doc(scan, selected, popts)
             self.log("PREVIEW: " + summarize(doc))
             self.phase(0.6, "cleaning...")
             doc = clean_doc(doc, scan, self.log)
             self.phase(0.85, "building chapters...")
             warns = []
-            chapters, groups, _extra = build_chapters(doc, warns.append, self._opts())
+            chapters, groups, _extra = build_chapters(doc, warns.append, bopts)
             self.log("would write %d chapter files%s"
                      % (len(chapters), (", %d groups" % len(groups)) if groups else ""))
             for w in warns[:40]:
                 self.log("  ! " + w)
+            if self._cancel:
+                raise RuntimeError("cancelled — preview was not saved")
+            from quest_preview import write_preview
+            dest = write_preview(chapters, DATA_DIR / "previews" / "quest-book.html", title,
+                                 ["Preview only. No quest files were installed.",
+                                  "Seed: %s" % popts["seed"],
+                                  (doc.get("campaign") or {}).get("explanation", "")] + warns[:12])
+            self.events.put(("book_preview", (str(dest), popts["seed"])))
             self.phase(1.0, "done")
-            return "preview done - %d chapters, %d warnings" % (len(chapters), len(warns))
+            return "preview ready - %d chapters / %d quests; seed pinned for Build" % (
+                len(chapters), sum(len(c.get("quests", [])) for _, c in chapters))
         self._run(job, "Previewing")
 
     def on_convert_paste(self):
@@ -15512,16 +18428,15 @@ class App:
         self.phase(base + span * 0.6, "building chapters...")
         warns = []
         chapters, groups, extra = build_chapters(doc, warns.append, self._opts(preserve_ids=preserve_ids))
-        book = self._book()
+        book = validate_book_settings(self._book(), scan)
         if self._cancel:      # cancel pressed while cleaning/building: still in time
             raise RuntimeError("cancelled — nothing was written; your book is untouched")
-        if self.opt_decor.get():
-            self._retire_decor_pack()
         for i, out in enumerate(outs):
             self.phase(base + span * (0.75 + 0.2 * i / len(outs)), "writing SNBT -> %s" % out.name)
             self.log("-> %s" % out)
             write_snbt(out, chapters, groups, self.opt_backup.get(), self.log, book,
-                       extra.get("reward_tables"), confirm_shrink=self._confirm_shrink)
+                       extra.get("reward_tables"), confirm_shrink=self._confirm_shrink,
+                       templated=extra.get("templated"), mc_version=scan.get("minecraft_version", ""))
             if save_raw:
                 try:
                     (out / "autoquest_raw.json").write_text(
@@ -15753,16 +18668,25 @@ class App:
         self.root.destroy()
 
 
-def run_cli_build(mods_dir: str, out_dir: str, density: str = "normal") -> int:
+def run_cli_build(mods_dir: str, out_dir: str, density: str | None = None,
+                  preset: str | None = None, goal: str | None = None,
+                  scenario: str | dict | None = None, campaign_scope: str = "selected",
+                  quest_size_style: str | None = None, decor_source: str = "library",
+                  decor_theme: str = "auto", decor_collection: str = "epic",
+                  decor_motion: bool = True, decor_size: str = "mixed",
+                  book_style: str = "immersive", shop_enabled: bool = False,
+                  shop_style: str = "balanced", shop_prices: str = "normal") -> int:
     """Headless scan+build+write - the frozen-exe smoke path.
 
-    AutoQuestGen.exe --build <modsdir> <outdir> [--density X]
+    AutoQuestGen.exe --build <modsdir> <outdir> [--preset epic]
+                    [--goal "master Botania"] [--density X]
 
     Deliberately THIN: it walks the exact functions the GUI's offline
     Build Quest Book button walks (scan_mods -> local_quest_doc ->
     extract_json -> clean_doc -> build_chapters -> write_snbt), with the
-    GUI's own defaults for every option, so a CLI pass genuinely proves the
-    GUI pipeline works on this machine. Returns a process exit code.
+    GUI's defaults or chosen book preset. An explicit density overrides the
+    preset's size, and --goal enables a campaign even without a preset.
+    Returns a process exit code.
     """
     import sys
 
@@ -15779,31 +18703,93 @@ def run_cli_build(mods_dir: str, out_dir: str, density: str = "normal") -> int:
             pass
 
     try:
+        if scenario is not None and goal is not None:
+            log("ERROR: --goal and --scenario are alternatives. Put the ordered stage goals in the scenario file.")
+            return 2
+        if scenario is not None and not isinstance(scenario, dict):
+            try:
+                scenario = json.loads(Path(scenario).read_text(encoding="utf-8-sig"))
+            except (OSError, ValueError) as exc:
+                log("ERROR: could not read --scenario JSON: " + str(exc))
+                return 2
+            if not isinstance(scenario, dict):
+                log("ERROR: --scenario must contain a JSON object with an ordered stages list.")
+                return 2
+        if campaign_scope not in ("selected", "goal"):
+            log("ERROR: choose campaign scope selected or goal.")
+            return 2
+        if quest_size_style not in (None, "uniform", "varied", "dramatic", "preserve"):
+            log("ERROR: choose quest sizes uniform, varied, dramatic or preserve.")
+            return 2
+        if (decor_collection not in ("epic", "classic") or decor_size not in ("small", "mixed", "large")
+                or book_style not in ("immersive", "classic") or shop_style not in ("balanced", "essentials", "builder", "adventurer")
+                or shop_prices not in ("low", "normal", "high")):
+            log("ERROR: unsupported artwork, book presentation or shop option")
+            return 2
+        from decor_library import THEMES
+        if decor_source not in ("library", "accents", "stock") or decor_theme not in ("auto",) + THEMES:
+            log("ERROR: choose a valid chapter artwork source and theme.")
+            return 2
         folder = Path(mods_dir)
         if not folder.is_dir():
             log("ERROR: mods folder does not exist: %s" % folder)
             return 2
+        if preset not in (None, "epic", "balanced"):
+            log("ERROR: unknown preset %r (choose epic or balanced)" % preset)
+            return 2
+        density = density if density is not None else ("massive" if preset == "epic" else "large")
         if density not in DENSITY_TARGETS:
             log("ERROR: unknown density %r (choose from: %s)"
                 % (density, ", ".join(DENSITY_ORDER)))
             return 2
         out = Path(out_dir)
+        source_instance = App._instance_of(folder)
+        target_instance = App._instance_of(out)
+        if source_instance and target_instance and source_instance != target_instance:
+            log("ERROR: scanned mods and quest destination belong to different instances. "
+                "Use this pack's quest folder or export into a separate scratch folder.")
+            return 2
         log("AutoQuestGen %s - CLI build" % VERSION)
         log("  mods: %s" % folder)
         log("  out:  %s" % out)
         scan = scan_mods(folder, 400, log)
+        if scan.get("unsupported"):
+            log("ERROR: " + scan["blocked"])
+            return 3
         sel = [m["mod_id"] for m in scan["mods"]]
         if not sel:
             log("ERROR: no mods found in %s" % folder)
             return 3
         # the GUI's defaults (App.__init__ tk vars), minus anything AI-only
         popts = {"density": density, "target": "", "groups": True,
-                 "aesthetic": "balanced", "reward": "standard",
-                 "progression": "linear", "layout": "line",
+                 "aesthetic": "decorated", "reward": "standard",
+                 "progression": "linear", "layout": "lanes",
                  "group_style": "bold", "creativity": 0.4, "themes": [],
-                 "themes_only": True, "vanilla_chapters": True,
-                 "include_decor": False, "mod_desc": {}, "book_title": ""}
+                 "themes_only": False, "vanilla_chapters": True,
+                 "include_decor": False, "mimic": False, "mod_desc": {},
+                 "book_title": "", "campaign": False, "campaign_goal": "", "campaign_scope": campaign_scope}
+        if preset:
+            epic = preset == "epic"
+            popts.update(aesthetic="lavish" if epic else "balanced",
+                         layout="reference" if epic else "lanes",
+                         creativity=0.55 if epic else 0.35,
+                         mimic=epic, campaign=epic,
+                         seed=random.randrange(1, 2 ** 31))
+            log("  preset: %s; density: %s; seed: %s" % (preset, density, popts["seed"]))
+        if goal is not None:
+            popts.update(campaign=True, campaign_goal=str(goal).strip())
+        if scenario is not None:
+            from quest_scenarios import validate_scenario
+            scenario = validate_scenario(scan, sel, scenario, strict=True)
+            popts.update(campaign=True, scenario=scenario)
+            log("  scenario: %d validated authored stages" % len(scenario["stages"]))
+        elif popts["campaign"]:
+            from quest_campaign import resolve_goal
+            plan = resolve_goal(scan, sel, popts["campaign_goal"])
+            log("  campaign: " + plan["explanation"])
         doc = local_quest_doc(scan, sel, popts)
+        if (doc.get("campaign") or {}).get("reference_blueprint"):
+            log("  campaign source: " + doc["campaign"]["explanation"])
         log("offline build: " + summarize(doc))
         doc = extract_json(json.dumps(doc, ensure_ascii=False))
         if not doc.get("chapters"):
@@ -15812,41 +18798,80 @@ def run_cli_build(mods_dir: str, out_dir: str, density: str = "normal") -> int:
         doc = clean_doc(doc, scan, log)
         warns = []
         bopts = {"auto_chain": True, "xp_rewards": False, "decor_art": True,
-                 "aesthetic": "balanced", "quest_shape": "auto", "_scan": scan,
-                 "groups": True, "style_chapters": True, "layout": "line",
-                 "group_style": "bold", "creativity": 0.4,
+                 "decor_source": decor_source, "decor_theme": decor_theme,
+                 "decor_collection": decor_collection, "decor_motion": decor_motion,
+                 "decor_size": decor_size, "book_style": book_style,
+                 "shop_enabled": shop_enabled, "shop_style": shop_style, "shop_prices": shop_prices,
+                 "aesthetic": popts["aesthetic"], "quest_shape": "auto", "_scan": scan,
+                 "quest_size_style": quest_size_style or ("dramatic" if preset == "epic" else "varied"),
+                 "groups": True, "style_chapters": True, "layout": popts["layout"],
+                 "group_style": "bold", "creativity": popts["creativity"],
+                 "progression": popts["progression"],
                  "preserve_ids": False, "reward_mult": 1.0}
+        if "seed" in popts:
+            bopts["seed"] = popts["seed"]
         chapters, groups, extra = build_chapters(doc, warns.append, bopts)
         if not chapters:
             log("ERROR: build produced no chapter files")
             return 3
         write_snbt(out, chapters, groups, True, log, {"title": "", "icon": "",
-                   "progression_mode": "linear"}, extra.get("reward_tables"))
+                   "progression_mode": "linear"}, extra.get("reward_tables"),
+                   templated=extra.get("templated"), mc_version=scan.get("minecraft_version", ""))
         for w in warns[:40]:
             log("  ! " + w)
         log("OK: wrote %d chapters, %d groups -> %s"
             % (len(chapters), len(groups), out))
         return 0
+    except ValueError as exc:
+        log("ERROR: " + str(exc))
+        return 2
     except Exception:
         log("FAILED:\n" + traceback.format_exc())
         return 1
 
 
 def main():
+    import argparse
     import sys
     argv = sys.argv[1:]
-    if "--build" in argv:
-        i = argv.index("--build")
-        rest = argv[i + 1:]
-        if len(rest) < 2:
-            print("usage: AutoQuestGen --build <modsdir> <outdir> [--density X]")
-            raise SystemExit(2)
-        density = "normal"
-        if "--density" in rest:
-            j = rest.index("--density")
-            density = rest[j + 1] if j + 1 < len(rest) else ""
-            del rest[j:j + 2]
-        raise SystemExit(run_cli_build(rest[0], rest[1], density))
+    if argv:
+        parser = argparse.ArgumentParser(prog="AutoQuestGen",
+            description="Build an FTB quest book offline. Run without arguments to open the app.")
+        parser.add_argument("--build", nargs=2, required=True, metavar=("MODS_DIR", "OUT_DIR"),
+                            help="scan this mods folder and write the generated quest book")
+        parser.add_argument("--preset", choices=("epic", "balanced"),
+                            help="apply the same starting settings as the app's book preset")
+        parser.add_argument("--density", choices=DENSITY_ORDER,
+                            help="override book size (default: large; Epic: massive)")
+        parser.add_argument("--goal", metavar="TEXT",
+                            help="enable a connected campaign for this goal; quote multi-word goals")
+        parser.add_argument("--scope", choices=("selected", "goal"), default="selected",
+                            help="selected keeps the selected-mod book plus the goal (default); goal limits content to the goal's route/mods")
+        parser.add_argument("--quest-sizes", choices=("uniform", "varied", "dramatic", "preserve"),
+                            help="quest icon size hierarchy (default: varied; Epic: dramatic)")
+        parser.add_argument("--artwork", choices=("library", "accents", "stock"), default="library",
+                            help="bundled scene+ornaments, ornaments only, or stock FTB shapes")
+        from decor_library import THEMES
+        parser.add_argument("--art-theme", choices=("auto",) + THEMES, default="auto",
+                            help="automatically match chapter themes, or use one shared theme")
+        parser.add_argument("--art-collection", choices=("epic", "classic"), default="epic")
+        parser.add_argument("--animations", action=argparse.BooleanOptionalAction, default=True,
+                            help="include native animated decorations (or --no-animations)")
+        parser.add_argument("--decor-size", choices=("small", "mixed", "large"), default="mixed")
+        parser.add_argument("--book-style", choices=("immersive", "classic"), default="immersive")
+        parser.add_argument("--shop", action="store_true", help="include an optional emerald supply shop")
+        parser.add_argument("--shop-style", choices=("balanced", "essentials", "builder", "adventurer"), default="balanced")
+        parser.add_argument("--shop-prices", choices=("low", "normal", "high"), default="normal")
+        parser.add_argument("--scenario", metavar="JSON_FILE",
+                            help="build a validated authored scenario with ordered stages (alternative to --goal)")
+        args = parser.parse_args(argv)
+        raise SystemExit(run_cli_build(args.build[0], args.build[1], args.density,
+                                       preset=args.preset, goal=args.goal, scenario=args.scenario,
+                                       campaign_scope=args.scope, quest_size_style=args.quest_sizes,
+                                       decor_source=args.artwork, decor_theme=args.art_theme,
+                                       decor_collection=args.art_collection, decor_motion=args.animations,
+                                       decor_size=args.decor_size, book_style=args.book_style,
+                                       shop_enabled=args.shop, shop_style=args.shop_style, shop_prices=args.shop_prices))
     _set_aumid()
     root = tk.Tk()
     App(root)

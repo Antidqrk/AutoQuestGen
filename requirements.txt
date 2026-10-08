@@ -1,3 +1,7 @@
-# The offline quest builder runs on the standard library alone.
-# requests is used by the optional AI path and instance-metadata lookups.
-requests>=2.31
+# Optional legacy metadata helpers; offline quest generation uses no network.
+# Pin the environment used for the verified Windows release.
+requests==2.34.2
+charset-normalizer==3.5.1
+idna==3.19
+urllib3==2.7.0
+certifi==2026.7.22

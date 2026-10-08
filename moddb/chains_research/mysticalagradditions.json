@@ -1,0 +1,113 @@
+{
+  "mod": "mysticalagradditions",
+  "chain": [
+    {
+      "id": "mysticalagradditions:insanium_essence",
+      "title": "Beyond Supremium",
+      "desc": "Advance through Mystical Agriculture first, then combine Supremium Essence around an infusion crystal to make Insanium. This addon extends the existing essence ladder.",
+      "requires": [
+        "mysticalagriculture:supremium_essence"
+      ]
+    },
+    {
+      "id": "mysticalagradditions:insanium_farmland",
+      "title": "Prepare the Highest-Tier Plot",
+      "desc": "Make Insanium Farmland for your crop project. Tier-six crops still need their matching Crux beneath the farmland; the farmland alone is not enough.",
+      "requires": [
+        "mysticalagradditions:insanium_essence"
+      ]
+    },
+    {
+      "id": "mysticalagradditions:insanium_ingot",
+      "title": "Refine an Insanium Material",
+      "desc": "Make an Insanium Ingot using the installed recipe. Keep this material branch separate from the special crop-growing requirements.",
+      "requires": [
+        "mysticalagradditions:insanium_essence"
+      ]
+    },
+    {
+      "id": "mysticalagradditions:insanium_gemstone",
+      "title": "An Insanium Gem",
+      "desc": "Upgrade a gemstone through the available recipe. Inspect its uses before investing large amounts of essence.",
+      "requires": [
+        "mysticalagradditions:insanium_essence"
+      ]
+    },
+    {
+      "id": "mysticalagradditions:withering_soul",
+      "title": "A Reason to Face the Wither",
+      "desc": "Defeat Withers for a chance at Withering Souls. They are part of the Nether Star crop branch; an ordinary Nether Star alone does not replace them.",
+      "requires": [],
+      "acquisition": "Mystical Agradditions 8.0.14 MobDropsHandler.onLivingDrops adds a Withering Soul item entity to Wither death drops when mob loot is enabled and the configured chance succeeds. ModConfigs defaults witheringSoulChance to 0.35; packs may change that chance.",
+      "acquisition_verified_minecraft": "1.21.1",
+      "sources": [
+        "MysticalAgradditions-1.21.1-8.0.14.jar!com/blakebr0/mysticalagradditions/handler/MobDropsHandler.class",
+        "MysticalAgradditions-1.21.1-8.0.14.jar!com/blakebr0/mysticalagradditions/config/ModConfigs.class"
+      ]
+    },
+    {
+      "id": "mysticalagradditions:nether_star_crux",
+      "title": "The Nether Star Crop's Foundation",
+      "desc": "Craft a Nether Star Crux and place it directly below the farmland used by the matching tier-six crop. Follow the installed seed recipe for the rest of the setup.",
+      "requires": [
+        "mysticalagradditions:insanium_essence",
+        "mysticalagradditions:withering_soul"
+      ]
+    },
+    {
+      "id": "mysticalagradditions:dragon_scale",
+      "title": "Return to the Dragon",
+      "desc": "Obtain Dragon Scales through the addon's Ender Dragon progression. Reserve them for the Dragon Egg Crux rather than spending every rare drop immediately.",
+      "requires": []
+    },
+    {
+      "id": "mysticalagradditions:dragon_egg_crux",
+      "title": "A Foundation for Dragon Crops",
+      "desc": "Build the Dragon Egg Crux and place it below the matching crop's farmland. This is a separate branch from the Nether Star Crux.",
+      "requires": [
+        "mysticalagradditions:insanium_essence",
+        "mysticalagradditions:dragon_scale"
+      ]
+    },
+    {
+      "id": "check:mysticalagradditions:tier_six_harvest",
+      "title": "Make a Tier-Six Crop Actually Grow",
+      "desc": "Plant the matching Nether Star seed over its Crux and harvest it successfully. Confirm once growth works; these crops do not normally duplicate seeds when harvested.",
+      "requires": [
+        "mysticalagradditions:insanium_farmland",
+        "mysticalagradditions:nether_star_crux"
+      ],
+      "icon": "mysticalagradditions:nether_star_crux"
+    },
+    {
+      "id": "mysticalagradditions:nether_star_shard",
+      "title": "Turn the Harvest into Star Material",
+      "desc": "Use Nether Star Essence from your working crop to craft a Nether Star Shard. Follow the installed assembly recipe to turn repeated harvests into stars.",
+      "requires": [
+        "check:mysticalagradditions:tier_six_harvest"
+      ]
+    }
+  ],
+  "collections": [],
+  "sources": [
+    "https://github.com/BlakeBr0/MysticalAgradditions"
+  ],
+  "content_revision": "2026-10-07: explicit branches, operational guidance, no collection filler",
+  "coverage": {
+    "status": "curated",
+    "scope": "The real tier-six extension: Insanium, farmland, Wither and dragon crux branches, and crop operation.",
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "verification": "cached_reference_jar_data",
+    "checked_date": "2026-10-07",
+    "reference_version": "7.0.12",
+    "installed_pack_verified": false,
+    "gameplay_tested": false,
+    "limitations": "Checked against cached 7.0.12 JAR recipes and its bundled Mystical Agriculture guide pages. Requires Mystical Agriculture. Compatibility cruxes for absent mods and Creative Essence are deliberately excluded.",
+    "verification_detail": "Item models, entity language identifiers, dimension data, recipes and bundled guide text where present were inspected; this is data verification, not a Minecraft playthrough."
+  },
+  "notes": "Each requires list is intentional. Empty lists are independent entry routes. Links describe guided progression or demonstrated recipe/boss gates, not an assertion that every dependency is a game-enforced lock. Runtime scanning still filters unavailable items and entities.",
+  "verified_against": "mystical-agradditions.jar (manifest 7.0.12)",
+  "item_count_in_jar": 53
+}

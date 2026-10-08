@@ -1,0 +1,270 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "id": "botanical_mana_bloom_animated",
+      "theme": "botanical",
+      "kind": "animation",
+      "texture": "autoquestgen:block/botanical/botanical_mana_bloom_animated",
+      "path": "assets/autoquestgen/textures/block/botanical/botanical_mana_bloom_animated.png",
+      "title": "The Mana Bloom",
+      "width": 1024,
+      "height": 2048,
+      "animation": {
+        "frame_width": 256,
+        "frame_height": 256,
+        "frames": 32,
+        "frametime": 2,
+        "interpolate": false
+      },
+      "alpha": 255,
+      "motion": "Opening petals, moving mana motes, and a living stem",
+      "sha256": "b4d4889bba4d6fb66efcb607c469b2b7b59e766fdc6128644ddc75932549c957",
+      "preview": "animation_previews/botanical_mana_bloom_animated.gif",
+      "poster": "animation_previews/botanical_mana_bloom_animated_poster.png"
+    },
+    {
+      "id": "arcane_celestial_sigil_animated",
+      "theme": "arcane",
+      "kind": "animation",
+      "texture": "autoquestgen:block/arcane/arcane_celestial_sigil_animated",
+      "path": "assets/autoquestgen/textures/block/arcane/arcane_celestial_sigil_animated.png",
+      "title": "Celestial Sigil",
+      "width": 1024,
+      "height": 2048,
+      "animation": {
+        "frame_width": 256,
+        "frame_height": 256,
+        "frames": 32,
+        "frametime": 2,
+        "interpolate": false
+      },
+      "alpha": 255,
+      "motion": "Counter-rotating ritual rings and orbiting sigils",
+      "sha256": "f2581ee51f907e2aa25f58e45f3804c1787996ce38197f47fa56303004deaead",
+      "preview": "animation_previews/arcane_celestial_sigil_animated.gif",
+      "poster": "animation_previews/arcane_celestial_sigil_animated_poster.png"
+    },
+    {
+      "id": "machinery_kinetic_heart_animated",
+      "theme": "machinery",
+      "kind": "animation",
+      "texture": "autoquestgen:block/machinery/machinery_kinetic_heart_animated",
+      "path": "assets/autoquestgen/textures/block/machinery/machinery_kinetic_heart_animated.png",
+      "title": "Kinetic Heart",
+      "width": 1024,
+      "height": 2048,
+      "animation": {
+        "frame_width": 256,
+        "frame_height": 256,
+        "frames": 32,
+        "frametime": 2,
+        "interpolate": false
+      },
+      "alpha": 255,
+      "motion": "Meshing gears drive a connected crank and reciprocating piston",
+      "sha256": "ed4368f5928166979d2dfd4b9cae2d0ad71899f84b7d6d97f3dbe8159e5eaa50",
+      "preview": "animation_previews/machinery_kinetic_heart_animated.gif",
+      "poster": "animation_previews/machinery_kinetic_heart_animated_poster.png"
+    },
+    {
+      "id": "power_storm_core_animated",
+      "theme": "power",
+      "kind": "animation",
+      "texture": "autoquestgen:block/power/power_storm_core_animated",
+      "path": "assets/autoquestgen/textures/block/power/power_storm_core_animated.png",
+      "title": "Storm Core",
+      "width": 1024,
+      "height": 2048,
+      "animation": {
+        "frame_width": 256,
+        "frame_height": 256,
+        "frames": 32,
+        "frametime": 2,
+        "interpolate": false
+      },
+      "alpha": 255,
+      "motion": "Orbiting plasma, traveling energy, and shifting electric arcs",
+      "sha256": "0144dc65833195e0feddeca2959c362b05f11d9a4be4d09f9f2709c1e7be6f6b",
+      "preview": "animation_previews/power_storm_core_animated.gif",
+      "poster": "animation_previews/power_storm_core_animated_poster.png"
+    },
+    {
+      "id": "space_event_horizon_animated",
+      "theme": "space",
+      "kind": "animation",
+      "texture": "autoquestgen:block/space/space_event_horizon_animated",
+      "path": "assets/autoquestgen/textures/block/space/space_event_horizon_animated.png",
+      "title": "Event Horizon",
+      "width": 1024,
+      "height": 2048,
+      "animation": {
+        "frame_width": 256,
+        "frame_height": 256,
+        "frames": 32,
+        "frametime": 2,
+        "interpolate": false
+      },
+      "alpha": 255,
+      "motion": "A dark central void, luminous accretion disk, and orbiting particles",
+      "sha256": "a8bded2ca397e59edc1bfd9d5db728bca2b04226327c041b36c15d954aa1facb",
+      "preview": "animation_previews/space_event_horizon_animated.gif",
+      "poster": "animation_previews/space_event_horizon_animated_poster.png"
+    },
+    {
+      "id": "exploration_wayfinder_animated",
+      "theme": "exploration",
+      "kind": "animation",
+      "texture": "autoquestgen:block/exploration/exploration_wayfinder_animated",
+      "path": "assets/autoquestgen/textures/block/exploration/exploration_wayfinder_animated.png",
+      "title": "The Wayfinder",
+      "width": 1024,
+      "height": 2048,
+      "animation": {
+        "frame_width": 256,
+        "frame_height": 256,
+        "frames": 32,
+        "frametime": 2,
+        "interpolate": false
+      },
+      "alpha": 255,
+      "motion": "A revolving compass and a traveler following a closed route",
+      "sha256": "f96d8afb1de1be7bd3e8386df736f67c5ab9a8fc5df0c154f8f2c12d5b0a5d66",
+      "preview": "animation_previews/exploration_wayfinder_animated.gif",
+      "poster": "animation_previews/exploration_wayfinder_animated_poster.png"
+    },
+    {
+      "id": "farming_pollinator_garden_animated",
+      "theme": "farming",
+      "kind": "animation",
+      "texture": "autoquestgen:block/farming/farming_pollinator_garden_animated",
+      "path": "assets/autoquestgen/textures/block/farming/farming_pollinator_garden_animated.png",
+      "title": "Pollinator Garden",
+      "width": 1024,
+      "height": 2048,
+      "animation": {
+        "frame_width": 256,
+        "frame_height": 256,
+        "frames": 32,
+        "frametime": 2,
+        "interpolate": false
+      },
+      "alpha": 255,
+      "motion": "A flying bee, flapping wings, swaying wheat, and opening flowers",
+      "sha256": "c7f34ee6313d3c8d05a416d7af5dd85ce808493ae80135ba8cf85f24a28a6879",
+      "preview": "animation_previews/farming_pollinator_garden_animated.gif",
+      "poster": "animation_previews/farming_pollinator_garden_animated_poster.png"
+    },
+    {
+      "id": "ocean_tidal_heart_animated",
+      "theme": "ocean",
+      "kind": "animation",
+      "texture": "autoquestgen:block/ocean/ocean_tidal_heart_animated",
+      "path": "assets/autoquestgen/textures/block/ocean/ocean_tidal_heart_animated.png",
+      "title": "Tidal Heart",
+      "width": 1024,
+      "height": 2048,
+      "animation": {
+        "frame_width": 256,
+        "frame_height": 256,
+        "frames": 32,
+        "frametime": 2,
+        "interpolate": false
+      },
+      "alpha": 255,
+      "motion": "Flowing waves, swaying coral branches, and rising bubbles",
+      "sha256": "bad3fa253dd2470175eb31af22734354656ed80a9e6a7aff50b9dbcb6a7ee774",
+      "preview": "animation_previews/ocean_tidal_heart_animated.gif",
+      "poster": "animation_previews/ocean_tidal_heart_animated_poster.png"
+    },
+    {
+      "id": "nether_ember_forge_animated",
+      "theme": "nether",
+      "kind": "animation",
+      "texture": "autoquestgen:block/nether/nether_ember_forge_animated",
+      "path": "assets/autoquestgen/textures/block/nether/nether_ember_forge_animated.png",
+      "title": "Ember Forge",
+      "width": 1024,
+      "height": 2048,
+      "animation": {
+        "frame_width": 256,
+        "frame_height": 256,
+        "frames": 32,
+        "frametime": 2,
+        "interpolate": false
+      },
+      "alpha": 255,
+      "motion": "Curling flames, rising embers, and a circulating lava pool",
+      "sha256": "be191b784cd3e5a929b8fbade06cada0eaa1cb9c2c94dff297b188c2de07235e",
+      "preview": "animation_previews/nether_ember_forge_animated.gif",
+      "poster": "animation_previews/nether_ember_forge_animated_poster.png"
+    },
+    {
+      "id": "end_void_oracle_animated",
+      "theme": "end",
+      "kind": "animation",
+      "texture": "autoquestgen:block/end/end_void_oracle_animated",
+      "path": "assets/autoquestgen/textures/block/end/end_void_oracle_animated.png",
+      "title": "Void Oracle",
+      "width": 1024,
+      "height": 2048,
+      "animation": {
+        "frame_width": 256,
+        "frame_height": 256,
+        "frames": 32,
+        "frametime": 2,
+        "interpolate": false
+      },
+      "alpha": 255,
+      "motion": "A turning faceted crystal with orbiting shards and a rift ring",
+      "sha256": "71393b4f6eb48ccdfd7c8f732075c49d2d8bbf6d9763a470b15dc9090f241a92",
+      "preview": "animation_previews/end_void_oracle_animated.gif",
+      "poster": "animation_previews/end_void_oracle_animated_poster.png"
+    },
+    {
+      "id": "storage_memory_nexus_animated",
+      "theme": "storage",
+      "kind": "animation",
+      "texture": "autoquestgen:block/storage/storage_memory_nexus_animated",
+      "path": "assets/autoquestgen/textures/block/storage/storage_memory_nexus_animated.png",
+      "title": "Memory Nexus",
+      "width": 1024,
+      "height": 2048,
+      "animation": {
+        "frame_width": 256,
+        "frame_height": 256,
+        "frames": 32,
+        "frametime": 2,
+        "interpolate": false
+      },
+      "alpha": 255,
+      "motion": "Traveling packets flow between a central archive and storage nodes",
+      "sha256": "b1bab3496cb2562b87647eda35843cde14246e0f3e2c2ea6852a7ee69c8defda",
+      "preview": "animation_previews/storage_memory_nexus_animated.gif",
+      "poster": "animation_previews/storage_memory_nexus_animated_poster.png"
+    },
+    {
+      "id": "restoration_renewal_cycle_animated",
+      "theme": "restoration",
+      "kind": "animation",
+      "texture": "autoquestgen:block/restoration/restoration_renewal_cycle_animated",
+      "path": "assets/autoquestgen/textures/block/restoration/restoration_renewal_cycle_animated.png",
+      "title": "Cycle of Renewal",
+      "width": 1024,
+      "height": 2048,
+      "animation": {
+        "frame_width": 256,
+        "frame_height": 256,
+        "frames": 32,
+        "frametime": 2,
+        "interpolate": false
+      },
+      "alpha": 255,
+      "motion": "Rain, new leaves, opening blossoms, and a returning sun",
+      "sha256": "b2821063a508f89fed6189af255a50a2abf224b3299a957f058be5609698d8be",
+      "preview": "animation_previews/restoration_renewal_cycle_animated.gif",
+      "poster": "animation_previews/restoration_renewal_cycle_animated_poster.png"
+    }
+  ],
+  "provenance": "Original native animated geometry; tools/render_animated_decor.py; no external artwork."
+}

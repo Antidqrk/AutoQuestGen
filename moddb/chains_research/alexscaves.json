@@ -1,164 +1,195 @@
 {
- "mod": "alexscaves",
- "verified_against": "alexscaves-2.0.2.jar",
- "item_count_in_jar": 525,
- "chain": [
-  {
-   "id": "alexscaves:cave_tablet",
-   "title": "Something Older Than the Stone",
-   "desc": "Cave Tablets are found in Underground Cabins and are the first sign the caves hide more than ore."
+  "mod": "alexscaves",
+  "chain": [
+    {
+      "id": "alexscaves:cave_tablet",
+      "title": "A Message from Below",
+      "desc": "Search underground cabins for Cave Tablets. Each tablet begins research into a specific rare cave biome.",
+      "requires": []
+    },
+    {
+      "id": "alexscaves:spelunkery_table",
+      "title": "Decipher the Tablet",
+      "desc": "Build a Spelunkery Table and bring the tablet with its required research supplies. Complete its word puzzle to recover the cave knowledge.",
+      "requires": [
+        "alexscaves:cave_tablet"
+      ]
+    },
+    {
+      "id": "alexscaves:cave_codex",
+      "title": "Knowledge Made Portable",
+      "desc": "Finish deciphering a tablet to obtain a Cave Codex. Codices connect your research to the Cave Book and biome-finding map workflow.",
+      "requires": [
+        "alexscaves:spelunkery_table"
+      ],
+      "acquisition": "Produced by decoding a Cave Tablet with paper at the Spelunkery Table. Verified in Alex's Caves 2.0.2: assets/alexscaves/books/en_us/root.txt and server.inventory.SpelunkeryTableMenu, which constructs CAVE_CODEX."
+    },
+    {
+      "id": "alexscaves:cave_map",
+      "title": "Follow the Research",
+      "desc": "Make a Cave Map for the biome you researched. Each expedition below is a separate branch; one cave's boss does not unlock all the others.",
+      "requires": [
+        "alexscaves:cave_codex"
+      ],
+      "acquisition": "Crafted from a Cave Codex and paper by the coded alexscaves:cave_map recipe. Verified in Alex's Caves 2.0.2: assets/alexscaves/books/en_us/root.txt and server.recipe.RecipeCaveMap, which constructs CAVE_MAP and calls CaveMapItem.createMap."
+    },
+    {
+      "id": "alexscaves:azure_neodymium_ingot",
+      "title": "Metal of the Magnetic Caves",
+      "desc": "Explore the Magnetic Caves and smelt their azure neodymium. Keep tools and loose materials secure while investigating magnetic machinery.",
+      "requires": [
+        "alexscaves:cave_map"
+      ]
+    },
+    {
+      "id": "alexscaves:azure_magnet",
+      "title": "Put Magnetism to Work",
+      "desc": "Craft an Azure Magnet using the installed recipe. Experiment with a small setup before building a larger magnetic contraption.",
+      "requires": [
+        "alexscaves:azure_neodymium_ingot"
+      ]
+    },
+    {
+      "id": "kill:alexscaves:magnetron",
+      "title": "The Machine Reassembles",
+      "desc": "Defeat a Magnetron in the Magnetic Caves. It builds its body from nearby blocks, and dangerous blocks can make the encounter harder.",
+      "requires": [
+        "alexscaves:cave_map"
+      ]
+    },
+    {
+      "id": "alexscaves:heart_of_iron",
+      "title": "The Heart Left Behind",
+      "desc": "Recover the Heart of Iron after the Magnetron falls apart. Look for the block it leaves behind rather than assuming it appears as ordinary inventory loot.",
+      "requires": [
+        "kill:alexscaves:magnetron"
+      ]
+    },
+    {
+      "id": "alexscaves:serene_salad",
+      "title": "A Peaceful Primordial Visit",
+      "desc": "Prepare Serene Salad for the Primordial Caves. Read its effect and use it while investigating the biome's dinosaurs and resources.",
+      "requires": [
+        "alexscaves:cave_map"
+      ]
+    },
+    {
+      "id": "alexscaves:ominous_catalyst",
+      "title": "An Offering to the Volcano",
+      "desc": "Prepare an Ominous Catalyst and locate a Primordial Caves volcano. Set up your equipment and escape space before waking what is inside.",
+      "requires": [
+        "alexscaves:cave_map"
+      ]
+    },
+    {
+      "id": "kill:alexscaves:luxtructosaurus",
+      "title": "Wake the Volcano",
+      "desc": "Toss the catalyst into the volcano's top to start the encounter. Defeat the Luxtructosaurus while avoiding its eruptions, stomps and destructive attacks.",
+      "requires": [
+        "alexscaves:ominous_catalyst"
+      ]
+    },
+    {
+      "id": "alexscaves:extinction_spear",
+      "title": "Spirits of the Lost Herd",
+      "desc": "Recover Tectonic Shards from the boss and craft an Extinction Spear. This is the Primordial route's weapon goal.",
+      "requires": [
+        "kill:alexscaves:luxtructosaurus"
+      ]
+    },
+    {
+      "id": "alexscaves:hazmat_mask",
+      "title": "Prepare for Toxic Air",
+      "desc": "Assemble radiation protection before handling the Toxic Caves' hazards. A mask is one part of the equipment plan, not a promise of complete protection on its own.",
+      "requires": [
+        "alexscaves:cave_map"
+      ]
+    },
+    {
+      "id": "alexscaves:uranium",
+      "title": "Handle with Care",
+      "desc": "Gather uranium in the Toxic Caves once your protection is ready. Check the Nuclear Furnace and other installed recipes before choosing what to build.",
+      "requires": [
+        "alexscaves:hazmat_mask"
+      ]
+    },
+    {
+      "id": "alexscaves:diving_helmet",
+      "title": "Equip for the Abyss",
+      "desc": "Prepare diving equipment for the Abyssal Chasm. Plan oxygen, visibility and a return route before descending into its deep water.",
+      "requires": [
+        "alexscaves:cave_map"
+      ]
+    },
+    {
+      "id": "alexscaves:pearl",
+      "title": "Trade in the Deep",
+      "desc": "Obtain pearls in the Abyssal Chasm and inspect the local trading and crafting opportunities. Deep One reputation matters during this expedition.",
+      "requires": [
+        "alexscaves:diving_helmet"
+      ]
+    },
+    {
+      "id": "alexscaves:abyssal_altar",
+      "title": "A Place for Deep Offerings",
+      "desc": "Build an Abyssal Altar using the installed recipe. Explore its offering interaction with the Deep Ones rather than treating it as a furnace.",
+      "requires": [
+        "alexscaves:pearl"
+      ]
+    },
+    {
+      "id": "kill:alexscaves:forsaken",
+      "title": "The Forlorn Ritual",
+      "desc": "Investigate Underzealot rituals involving Vespers in the Forlorn Hollows. Defeat the resulting Forsaken; direct light helps against its late-fight regeneration.",
+      "requires": [
+        "alexscaves:cave_map"
+      ]
+    },
+    {
+      "id": "alexscaves:dreadbow",
+      "title": "Shape the Darkness",
+      "desc": "Collect Pure Darkness from the Forsaken and use it for a Dreadbow. This finishes the Forlorn combat branch.",
+      "requires": [
+        "kill:alexscaves:forsaken"
+      ]
+    },
+    {
+      "id": "alexscaves:candy_cane_hook",
+      "title": "Across the Candy Ravines",
+      "desc": "Explore the Candy Cavity and craft a Candy Cane Hook. Use it to cross the biome's steep formations while keeping an eye on hostile candy creatures.",
+      "requires": [
+        "alexscaves:cave_map"
+      ]
+    },
+    {
+      "id": "alexscaves:conversion_crucible",
+      "title": "Reshape a Small Corner of the World",
+      "desc": "Obtain a Conversion Crucible and learn the Biome Treat workflow. Bind a treat in the target biome, then fulfill the crucible's requested materials.",
+      "requires": [
+        "alexscaves:candy_cane_hook"
+      ]
+    }
+  ],
+  "collections": [],
+  "sources": [
+    "https://github.com/AlexModGuy/AlexsCaves"
+  ],
+  "content_revision": "2026-10-07: explicit branches, operational guidance, no collection filler",
+  "coverage": {
+    "status": "curated",
+    "scope": "Cave research followed by independent Magnetic, Primordial, Toxic, Abyssal, Forlorn and Candy branches.",
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "verification": "installed_jar_data",
+    "checked_date": "2026-10-07",
+    "reference_version": "2.0.2",
+    "installed_pack_verified": true,
+    "gameplay_tested": false,
+    "limitations": "Data and bundled cave-book mechanics checked against 2.0.2. Candy Cavity content is conditional on version. Research items may carry biome data; these general item milestones do not assert a specific NBT variant.",
+    "verification_detail": "Item models, entity language identifiers, dimension data, recipes and bundled guide text where present were inspected; this is data verification, not a Minecraft playthrough."
   },
-  {
-   "id": "alexscaves:spelunkery_table",
-   "title": "A Desk for Dead Languages",
-   "desc": "The Spelunkery Table translates Cave Tablets and is the crafting hub for everything the mod adds."
-  },
-  {
-   "id": "alexscaves:cave_codex",
-   "title": "Lorem Ipsum",
-   "desc": "Running a Cave Tablet through the Spelunkery Table yields a Cave Codex, one entry of translated lore."
-  },
-  {
-   "id": "alexscaves:cave_map",
-   "title": "The Journey Begins",
-   "desc": "A Cave Biome Map points at the nearest rare cave biome; without one you may never find them at all."
-  },
-  {
-   "id": "alexscaves:raw_azure_neodymium",
-   "title": "Two Poles, One Cavern",
-   "desc": "The Magnetic Caves grow azure and scarlet neodymium in nodes that attract and repel each other."
-  },
-  {
-   "id": "alexscaves:azure_neodymium_ingot",
-   "title": "An Alloy to Remember",
-   "desc": "Neodymium alloyed with iron becomes the ingot behind every magnetic machine in the mod."
-  },
-  {
-   "id": "alexscaves:azure_magnet",
-   "title": "Magnets, How Do They Work",
-   "desc": "A crafted Magnet drags whole rows of metal blocks toward you, or hurls them away."
-  },
-  {
-   "id": "kill:alexscaves:magnetron",
-   "title": "Magnetron No More",
-   "desc": "The Magnetron is the boss of the Magnetic Caves, a floating engine of iron and current."
-  },
-  {
-   "id": "alexscaves:heart_of_iron",
-   "title": "Torn From the Machine",
-   "desc": "The Heart of Iron is the Magnetron's drop and the key component of the Magnetic Quarry."
-  },
-  {
-   "id": "alexscaves:limestone",
-   "title": "Town of Bedrock",
-   "desc": "Limestone floors the Primordial Caves, and its smooth form is where cave paintings get carved."
-  },
-  {
-   "id": "alexscaves:serene_salad",
-   "title": "Strictly Medicinal Purposes",
-   "desc": "The Serene Salad calms the savage denizens of the Primordial Caves long enough to ride or tame them."
-  },
-  {
-   "id": "kill:alexscaves:tremorsaurus",
-   "title": "The Tyrant King",
-   "desc": "The Tremorsaurus is the apex predator of the Primordial Caves, tameable only once it has been stunned."
-  },
-  {
-   "id": "alexscaves:ominous_catalyst",
-   "title": "Suspicious Looking Item",
-   "desc": "Heavy Bones and an Amber Curiosity make the catalyst that must be thrown into an active volcano."
-  },
-  {
-   "id": "kill:alexscaves:luxtructosaurus",
-   "title": "The End of the Beginning",
-   "desc": "The Luxtructosaurus is the undead titan the Ominous Catalyst summons, and the mod's hardest dinosaur."
-  },
-  {
-   "id": "alexscaves:uranium",
-   "title": "Uranium Fever",
-   "desc": "Radrock uranium ore lines the Toxic Caves and irradiates anyone who mines it unprotected."
-  },
-  {
-   "id": "alexscaves:hazmat_mask",
-   "title": "The One Who Knocks",
-   "desc": "Hazmat armor is the only way to walk the Toxic Caves without accumulating radiation."
-  },
-  {
-   "id": "kill:alexscaves:nucleeper",
-   "title": "Crisis Averted",
-   "desc": "A Nucleeper detonates into an atomic fireball if you let it finish its approach."
-  },
-  {
-   "id": "alexscaves:pearl",
-   "title": "Diamonds of the Sea",
-   "desc": "Pearls come from breaking Mussels in the Abyssal Chasm and are the offering the Deep Ones want."
-  },
-  {
-   "id": "alexscaves:abyssal_altar",
-   "title": "Order of Dagon",
-   "desc": "Placing a Pearl on an Abyssal Altar opens trade with the Deep Ones of the sunken ruins."
-  },
-  {
-   "id": "alexscaves:diving_helmet",
-   "title": "The Cyclops",
-   "desc": "Diving armor is looted piece by piece from the Drowned that haunt the Abyssal Chasm."
-  },
-  {
-   "id": "kill:alexscaves:underzealot",
-   "title": "Hans Moleman",
-   "desc": "Underzealots are mole-like cultists who sacrifice living creatures to something waiting in the dark."
-  },
-  {
-   "id": "kill:alexscaves:forsaken",
-   "title": "Demonslayer",
-   "desc": "The Forsaken is a Vesper warped by dark magic, and the final boss of the Forlorn Hollows."
-  },
-  {
-   "id": "alexscaves:dreadbow",
-   "title": "Blot Out the Sun",
-   "desc": "The Dreadbow turns one arrow into a volley of dark magical shafts, the mod's last weapon."
-  }
- ],
- "collections": [
-  {
-   "hub": "alexscaves:cave_book",
-   "members": [
-    "alexscaves:heart_of_iron",
-    "alexscaves:telecore",
-    "alexscaves:extinction_spear",
-    "alexscaves:toxic_paste",
-    "alexscaves:pearl",
-    "alexscaves:pure_darkness",
-    "alexscaves:desolate_dagger",
-    "alexscaves:corrodent_teeth"
-   ]
-  },
-  {
-   "hub": "alexscaves:polymer_plate",
-   "members": [
-    "alexscaves:hazmat_mask",
-    "alexscaves:hazmat_chestplate",
-    "alexscaves:hazmat_leggings",
-    "alexscaves:hazmat_boots",
-    "alexscaves:uranium_rod",
-    "alexscaves:radon_bottle",
-    "alexscaves:remote_detonator",
-    "alexscaves:nuclear_furnace_component"
-   ]
-  },
-  {
-   "hub": "alexscaves:bioluminesscence",
-   "members": [
-    "alexscaves:lanternfish_bucket",
-    "alexscaves:radgill_bucket",
-    "alexscaves:trilocaris_bucket",
-    "alexscaves:sea_pig_bucket",
-    "alexscaves:gossamer_worm_bucket",
-    "alexscaves:tripodfish_bucket",
-    "alexscaves:marine_snow",
-    "alexscaves:mussel"
-   ]
-  }
- ],
- "notes": "Verified against alexscaves-2.0.2 (Modrinth slug 'alexs-caves', NOT 'alexscaves' - that 404s). CORRECTION to the brief: 2.0.2 ships SIX cave biomes, not four. data/alexscaves/worldgen/biome contains magnetic_caves, primordial_caves, toxic_caves, abyssal_chasm, forlorn_hollows and candy_cavity. The chain runs Magnetic -> Primordial -> Toxic -> Abyssal -> Forlorn, the same order the mod's own advancement tree walks. Candy Cavity is deliberately excluded from the chain: it is a low-threat joke biome that would flatten the difficulty ramp, though all of its items verify (candy_cane, gingerbread_*, rock_candy_*, sweetish_fish_*, sugar_staff, sharpened_candy_cane) if a pack wants it as an optional side branch. Progression was derived from the 148 advancements plus the 471 recipes: cave_tablet -> spelunkery_table -> cave_codex -> cave_book -> cave_map is the mod's literal onboarding sequence. Both neodymium polarities exist; the chain uses azure and the scarlet mirrors (raw_scarlet_neodymium, scarlet_neodymium_ingot, scarlet_magnet) verify identically. Entity ids were cross-checked between entity.alexscaves.* lang keys and data/alexscaves/loot_tables/entities and both sets agree on all 43 mobs, so kill: steps are safe; non-mob lang entries under the same prefix (projectiles, falling blocks, vehicles such as submarine and floater) were excluded. All 26 moddb ids for this mod verify against the jar with no renames, and moddb's early placement of cave_tablet, spelunkery_table, cave_book, cave_codex and cave_map matches this chain exactly."
+  "notes": "Each requires list is intentional. Empty lists are independent entry routes. Links describe guided progression or demonstrated recipe/boss gates, not an assertion that every dependency is a game-enforced lock. Runtime scanning still filters unavailable items and entities.",
+  "verified_against": "alexscaves-2.0.2.jar (manifest 2.0.2)",
+  "item_count_in_jar": 573
 }

@@ -4,125 +4,299 @@
   "item_count_in_jar": 473,
   "chain": [
     {
-      "id": "immersiveengineering:hammer",
-      "title": "Engineer's Hammer",
-      "desc": "Craft it from two iron ingots, two sticks and string; it forms every IE multiblock and hammers ingots into plates on the crafting grid."
-    },
-    {
       "id": "immersiveengineering:manual",
-      "title": "Engineer's Manual",
-      "desc": "Combine a book with a lever for the in-game guide that shows every multiblock layout and machine."
+      "title": "Keep the engineer's plans nearby",
+      "desc": "Craft the Engineer's Manual from a book and lever. Use its rotating multiblock diagrams to check materials, orientation, and the exact block to strike with the hammer.",
+      "requires": []
     },
     {
-      "id": "immersiveengineering:coke_oven",
-      "title": "Coke Oven",
-      "desc": "Craft Coke Oven Bricks from clay, bricks and sandstone, stack them into a 3x3x3 cube and click the center face with the Engineer's Hammer."
+      "id": "immersiveengineering:hammer",
+      "title": "The tool that forms a factory",
+      "desc": "Craft an Engineer's Hammer for plates, configuration, and forming multiblocks. Carry the manual alongside it when starting a new machine.",
+      "requires": []
+    },
+    {
+      "id": "immersiveengineering:cokebrick",
+      "requires": [
+        "immersiveengineering:manual",
+        "immersiveengineering:hammer"
+      ],
+      "title": "Bricks for the first oven",
+      "desc": "Craft enough Coke Bricks for the manual's 3 by 3 by 3 oven. Keep access to the formed machine so you can remove coal coke and collect its creosote."
+    },
+    {
+      "id": "check:immersiveengineering:coke_oven",
+      "requires": [
+        "immersiveengineering:cokebrick"
+      ],
+      "title": "Assemble a Coke Oven",
+      "desc": "Build the complete Coke Oven and form it with the Engineer's Hammer. Run one coal batch and provide somewhere for the creosote to go. Confirm this milestone yourself when the oven works.",
+      "icon": "immersiveengineering:cokebrick"
     },
     {
       "id": "immersiveengineering:coal_coke",
-      "title": "Coal Coke",
-      "desc": "Bake coal in the Coke Oven; each piece also drips creosote oil into the oven's internal tank."
+      "title": "Fuel for the steelworks",
+      "desc": "Collect coal coke from the Coke Oven. Creosote can fill the fluid buffer and stop processing, so make draining it part of the workshop routine.",
+      "requires": [
+        "check:immersiveengineering:coke_oven"
+      ]
     },
     {
       "id": "immersiveengineering:treated_wood_horizontal",
-      "title": "Treated Wood",
-      "desc": "Surround a bucket of creosote oil with eight planks in a crafting grid to get treated wood planks, the base material for most early IE recipes."
+      "title": "Make use of the creosote",
+      "desc": "Combine creosote with planks to make treated wood. It supplies workbenches, structural parts, and early power equipment while keeping the coke oven moving.",
+      "requires": [
+        "check:immersiveengineering:coke_oven"
+      ]
     },
     {
-      "id": "immersiveengineering:blast_furnace",
-      "title": "Crude Blast Furnace",
-      "desc": "Craft Blast Bricks from nether bricks, bricks and a magma block, build a 3x3x3 cube and form it with the hammer."
+      "id": "immersiveengineering:blastbrick",
+      "requires": [
+        "immersiveengineering:manual",
+        "immersiveengineering:hammer"
+      ],
+      "title": "Bricks for a hotter furnace",
+      "desc": "Gather the Nether materials for Blast Bricks and prepare the manual's furnace layout. This is a separate project from the renewable-power branch."
+    },
+    {
+      "id": "check:immersiveengineering:blast_furnace",
+      "requires": [
+        "immersiveengineering:blastbrick",
+        "immersiveengineering:coal_coke"
+      ],
+      "title": "Assemble a Crude Blast Furnace",
+      "desc": "Build and form the furnace from Blast Bricks. Supply iron and an accepted blast-furnace fuel, then confirm this step after it produces steel.",
+      "icon": "immersiveengineering:blastbrick"
     },
     {
       "id": "immersiveengineering:ingot_steel",
-      "title": "Steel",
-      "desc": "Smelt iron ingots with coal coke in the Blast Furnace; steel unlocks nearly every machine that follows."
+      "title": "The first steel batch",
+      "desc": "Collect steel from the Blast Furnace. Reserve it for useful components and machines before spending a large batch on structural decoration.",
+      "requires": [
+        "check:immersiveengineering:blast_furnace"
+      ]
     },
     {
       "id": "immersiveengineering:dynamo",
-      "title": "Kinetic Dynamo",
-      "desc": "Craft it from iron, an iron mechanical component, redstone and an LV coil; it turns rotation from a wheel on its front into Flux."
+      "title": "Turn rotation into power",
+      "desc": "Place a Kinetic Dynamo and connect a compatible windmill or waterwheel. The attached rotating device provides the energy; the dynamo does not run on its own.",
+      "requires": [
+        "immersiveengineering:treated_wood_horizontal"
+      ]
     },
     {
       "id": "immersiveengineering:windmill",
-      "title": "Windmill",
-      "desc": "Craft eight windmill blades around an iron ingot and pin the wheel on a Kinetic Dynamo high in the open air for passive early power."
+      "title": "Power above the workshop",
+      "desc": "Attach a Windmill to the dynamo in an open location. Route the resulting power to a nearby machine or buffer and verify the connection before extending the wire run.",
+      "requires": [
+        "immersiveengineering:dynamo"
+      ]
     },
     {
       "id": "immersiveengineering:wirecoil_copper",
-      "title": "LV Wire Coil",
-      "desc": "Wrap four copper wires around a stick; strung between LV connectors it carries low-voltage power to your first machines."
+      "title": "Wire the first circuit",
+      "desc": "Craft LV Wire Coils for short power connections. Use the correct connectors, observe the wire's limits, and plan the route so exposed wires do not cross busy walkways.",
+      "requires": [
+        "immersiveengineering:hammer"
+      ]
     },
     {
       "id": "immersiveengineering:connector_lv",
-      "title": "LV Wire Connector",
-      "desc": "Craft copper ingots with terracotta insulators; place connectors on machines and link them with copper wire coils to move Flux."
+      "title": "Connect power to a machine",
+      "desc": "Mount LV connectors on the relevant machine faces and link them with copper wire. Add relays for corners; relays and connectors have different jobs.",
+      "requires": [
+        "immersiveengineering:wirecoil_copper"
+      ]
     },
     {
       "id": "immersiveengineering:workbench",
-      "title": "Engineer's Workbench",
-      "desc": "Craft it from treated wood slabs, a treated fence, iron and an Engineer's Crafting Table; it assembles blueprint recipes like components and ammo."
-    },
-    {
-      "id": "immersiveengineering:drill",
-      "title": "Mining Drill",
-      "desc": "Assemble the drill at the Engineer's Workbench, then fit a steel drill head and fill it with diesel or biodiesel to mine 3x3."
+      "title": "Work from blueprints",
+      "desc": "Set up an Engineer's Workbench and use the appropriate blueprint or tool interface. Components, equipment upgrades, and molds give this station several useful jobs.",
+      "requires": [
+        "immersiveengineering:treated_wood_horizontal"
+      ]
     },
     {
       "id": "immersiveengineering:wirecoil_electrum",
-      "title": "MV Wire Coil",
-      "desc": "Alloy gold and silver into electrum and coil its wire around a stick; MV wiring and connectors feed the mid-tier machines."
+      "title": "A medium-voltage branch",
+      "desc": "Make electrum wire for the MV network and use matching connectors. Upgrade a circuit deliberately; changing the wire alone does not change the attached device's limits.",
+      "requires": [
+        "immersiveengineering:hammer"
+      ]
     },
     {
-      "id": "immersiveengineering:metal_press",
-      "title": "Metal Press",
-      "desc": "Build the multiblock from steel scaffolding, a conveyor line and a piston, hammer it into shape, and use steel molds to press plates, rods and gears."
+      "id": "immersiveengineering:light_engineering",
+      "requires": [
+        "immersiveengineering:ingot_steel"
+      ],
+      "title": "Components for working machines",
+      "desc": "Craft Light Engineering Blocks for early multiblocks. Consult the chosen machine's materials list rather than treating this block as a complete machine."
     },
     {
-      "id": "immersiveengineering:crusher",
-      "title": "Crusher",
-      "desc": "Form the large steel-scaffold multiblock with the hammer; fed with MV power it grinds ores into grit for doubled ingot output."
+      "id": "immersiveengineering:heavy_engineering",
+      "requires": [
+        "immersiveengineering:ingot_steel"
+      ],
+      "title": "Components for heavy machinery",
+      "desc": "Craft Heavy Engineering Blocks as required by the larger multiblocks. Start with a machine that solves a real materials or energy bottleneck."
     },
     {
-      "id": "immersiveengineering:fermenter",
-      "title": "Fermenter",
-      "desc": "Build this multiblock to ferment sugary crops like sugar cane or potatoes into ethanol, one half of biodiesel."
+      "id": "immersiveengineering:mold_plate",
+      "requires": [
+        "immersiveengineering:workbench",
+        "immersiveengineering:ingot_steel"
+      ],
+      "title": "A mold for repeatable plates",
+      "desc": "Create the plate mold using the Engineer's Workbench. Metal Press recipes depend on the installed mold, so keep separate molds for the shapes you need."
     },
     {
-      "id": "immersiveengineering:squeezer",
-      "title": "Squeezer",
-      "desc": "Build the sibling multiblock that presses industrial hemp seeds into plant oil, the other half of biodiesel."
+      "id": "check:immersiveengineering:metal_press",
+      "requires": [
+        "immersiveengineering:light_engineering",
+        "immersiveengineering:mold_plate",
+        "immersiveengineering:connector_lv"
+      ],
+      "title": "Assemble and test a Metal Press",
+      "desc": "Build the manual's Metal Press, form it with the hammer, install a mold, and supply power. Feed a test ingot across the conveyor and confirm when a plate comes out.",
+      "icon": "immersiveengineering:mold_plate"
     },
     {
-      "id": "immersiveengineering:refinery",
-      "title": "Refinery",
-      "desc": "This steel multiblock mixes ethanol and plant oil into biodiesel fuel for the Diesel Generator and Mining Drill."
+      "id": "check:immersiveengineering:crusher",
+      "requires": [
+        "immersiveengineering:heavy_engineering",
+        "immersiveengineering:wirecoil_electrum"
+      ],
+      "title": "Assemble and test a Crusher",
+      "desc": "Build the Crusher from the manual's materials list and connect appropriate power. Test a supported input and provide output storage; confirm when the processing path works.",
+      "icon": "immersiveengineering:heavy_engineering"
     },
     {
-      "id": "immersiveengineering:diesel_generator",
-      "title": "Diesel Generator",
-      "desc": "The big steel multiblock burns diesel or biodiesel to produce the large Flux output that HV machines demand."
+      "id": "check:immersiveengineering:fermenter",
+      "requires": [
+        "immersiveengineering:light_engineering",
+        "immersiveengineering:wirecoil_electrum"
+      ],
+      "title": "Ferment a fuel ingredient",
+      "desc": "Build and power the Fermenter, then supply a supported crop to produce ethanol. Connect a tank or pipe to its fluid output and confirm after collecting the first batch.",
+      "icon": "immersiveengineering:light_engineering"
+    },
+    {
+      "id": "check:immersiveengineering:squeezer",
+      "requires": [
+        "immersiveengineering:light_engineering",
+        "immersiveengineering:wirecoil_electrum"
+      ],
+      "title": "Press a supply of plant oil",
+      "desc": "Build and power the Squeezer. Feed a supported seed to produce plant oil, then route the output toward storage or the future refinery. Confirm after the first useful batch.",
+      "icon": "immersiveengineering:light_engineering"
+    },
+    {
+      "id": "check:immersiveengineering:refinery",
+      "requires": [
+        "check:immersiveengineering:fermenter",
+        "check:immersiveengineering:squeezer",
+        "immersiveengineering:heavy_engineering"
+      ],
+      "title": "Blend your first biodiesel",
+      "desc": "Assemble and power the Refinery, supply ethanol and plant oil to the correct inputs, and collect biodiesel. Confirm when both ingredient lines feed a working fuel recipe.",
+      "icon": "immersiveengineering:heavy_engineering"
+    },
+    {
+      "id": "immersiveengineering:drill",
+      "title": "Equip the fuel-powered drill",
+      "desc": "Build the Mining Drill, fit a suitable drill head, and fill it with an accepted fuel. Biodiesel is one option; this tool need not wait for every heavy machine in the chapter.",
+      "requires": [
+        "immersiveengineering:workbench",
+        "immersiveengineering:ingot_steel"
+      ]
+    },
+    {
+      "id": "check:immersiveengineering:diesel_generator",
+      "requires": [
+        "check:immersiveengineering:refinery",
+        "immersiveengineering:heavy_engineering"
+      ],
+      "title": "Run a Diesel Generator",
+      "desc": "Construct the generator using the manual and connect biodiesel and a suitable power output. Confirm after it runs under load, with fuel supply and output capacity both working.",
+      "icon": "immersiveengineering:heavy_engineering"
     },
     {
       "id": "immersiveengineering:wirecoil_steel",
-      "title": "HV Wire Coil",
-      "desc": "Coil steel and aluminum wire around a stick; HV connectors and relays carry high-voltage power to endgame multiblocks."
+      "title": "An HV route for big consumers",
+      "desc": "Craft HV wire and use matching connectors and relays. Keep the route clear and respect voltage conversion when connecting lower-voltage branches.",
+      "requires": [
+        "immersiveengineering:ingot_steel",
+        "immersiveengineering:hammer"
+      ]
     },
     {
-      "id": "immersiveengineering:arc_furnace",
-      "title": "Arc Furnace",
-      "desc": "Build this heavy steel multiblock and feed it graphite electrodes; it smelts steel in seconds and mixes alloys directly from dusts."
+      "id": "immersiveengineering:graphite_electrode",
+      "requires": [
+        "immersiveengineering:workbench",
+        "immersiveengineering:coal_coke"
+      ],
+      "title": "Prepare consumable electrodes",
+      "desc": "Follow the installed graphite and electrode recipes. The Arc Furnace consumes electrodes during operation, so arrange replacements before treating it as an unattended production line."
+    },
+    {
+      "id": "check:immersiveengineering:arc_furnace",
+      "requires": [
+        "immersiveengineering:heavy_engineering",
+        "immersiveengineering:wirecoil_steel",
+        "immersiveengineering:graphite_electrode"
+      ],
+      "title": "Bring the Arc Furnace online",
+      "desc": "Build the Arc Furnace, insert graphite electrodes, and supply power and a valid recipe. Confirm after it produces a useful alloy or recycled metal; diesel generation is only one possible power source.",
+      "icon": "immersiveengineering:graphite_electrode"
     },
     {
       "id": "immersiveengineering:sample_drill",
-      "title": "Core Sample Drill",
-      "desc": "Place and power the drill to extract a core sample revealing which mineral veins run under the chunk."
+      "title": "Survey before you excavate",
+      "desc": "Power a Core Sample Drill and inspect the resulting sample. Look for a useful mineral vein before choosing the location of the Excavator.",
+      "requires": [
+        "immersiveengineering:ingot_steel",
+        "immersiveengineering:connector_lv"
+      ]
     },
     {
-      "id": "immersiveengineering:excavator",
-      "title": "Excavator",
-      "desc": "The largest IE multiblock: a bucket-wheel digger that chews through surveyed mineral veins for effectively endless ore at huge HV power cost."
+      "id": "check:immersiveengineering:excavator",
+      "requires": [
+        "immersiveengineering:sample_drill",
+        "immersiveengineering:heavy_engineering",
+        "immersiveengineering:wirecoil_steel"
+      ],
+      "title": "Excavate a surveyed mineral vein",
+      "desc": "Build both the Excavator and its bucket wheel over a surveyed vein. Connect power and output storage, then confirm when the wheel delivers resources. Veins have limits; inspect the core sample.",
+      "icon": "immersiveengineering:sample_drill"
     }
   ],
-  "notes": "All 24 ids set-checked against assets/immersiveengineering/models/item + en_us lang keys of IE 10.2.0-183 (473 verified items). Recipe facts (hammer, cokebrick, blastbrick, treated wood via creosote bucket, dynamo, wire coils, connectors, watermill/windmill, blastfurnace/steel.json) read from data/immersiveengineering/recipes in the jar. Multiblock ids (coke_oven, blast_furnace, metal_press, crusher, fermenter, squeezer, refinery, diesel_generator, arc_furnace, excavator) are the formed multiblock block ids and exist as items with models; a generator using item-detection tasks may prefer checkmark/observation tasks for them. No kill: or dim: entries needed. Nothing dropped."
+  "notes": "Re-reviewed against cached Immersive Engineering 10.2.0-183 for Minecraft 1.20.1. Removed formed-machine item objectives; component acquisition and honest manual assembly confirmations replace them. Models, registry labels, selected recipes, and the bundled manual ground this guide. The old blanket claim that formed block items were obtainable is superseded.",
+  "sources": [
+    "https://github.com/BluSunrize/ImmersiveEngineering",
+    "https://github.com/BluSunrize/ImmersiveEngineering/tree/1.20.1"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Coke and steel bootstrap",
+      "Independent renewable power and wiring",
+      "Metal press and crusher",
+      "Biodiesel chain",
+      "Arc furnace and surveyed excavation"
+    ],
+    "limits": [
+      "Formed multiblock blocks are not normal inventory targets; assembly milestones use explicit player-confirmed checkmarks with obtainable component icons.",
+      "The manual remains authoritative for complete material counts and layouts.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": false,
+    "cached_jar_versions": [
+      "1.20.1-10.2.0-183"
+    ]
+  }
 }

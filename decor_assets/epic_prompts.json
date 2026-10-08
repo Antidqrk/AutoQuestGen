@@ -1,0 +1,213 @@
+{
+  "method": "built-in imagegen",
+  "assets": [
+    {
+      "id": "heart_of_the_wild",
+      "theme": "botanical",
+      "kind": "background",
+      "title": "Heart of the Wild",
+      "prompt": "Use case: stylized-concept. Asset type: premium wide backdrop for a Minecraft modpack quest map. Create one original exceptionally beautiful, visually ambitious fantasy game illustration, landscape 3:2. Painterly voxel-inspired architecture with cinematic depth and crisp handcrafted details, not a screenshot. Strong specific visual identity, lush material textures, luminous atmosphere. Keep the lower-middle central region calm and dark enough for readable quest nodes; concentrate spectacle at the perimeter, upper third and sides. Artwork fills the canvas, no frame, no labels, no readable words, no UI, no logos, no watermark. Avoid muddy generic ruins and repeated compositions. A colossal living tree grown into an emerald botanical sanctuary, its roots form bridges above glowing blue mana pools; enormous luminous flowers and leaves, golden pollen, twisting boughs and waterfalls. View from inside a root cathedral, canopy blazing teal and warm green, tiny white flowers in the foreground. Fantastical fertile abundance.",
+      "transparent": false
+    },
+    {
+      "id": "stormheart_reactor",
+      "theme": "power",
+      "kind": "background",
+      "title": "Stormheart Reactor",
+      "prompt": "Use case: stylized-concept. Asset type: premium wide backdrop for a Minecraft modpack quest map. Create one original exceptionally beautiful, visually ambitious fantasy game illustration, landscape 3:2. Painterly voxel-inspired architecture with cinematic depth and crisp handcrafted details, not a screenshot. Strong specific visual identity, lush material textures, luminous atmosphere. Keep the lower-middle central region calm and dark enough for readable quest nodes; concentrate spectacle at the perimeter, upper third and sides. Artwork fills the canvas, no frame, no labels, no readable words, no UI, no logos, no watermark. Avoid muddy generic ruins and repeated compositions. A huge science-fantasy fusion reactor inside an industrial mountain chamber. Brilliant contained electric-blue plasma torus in the upper right, concentric copper machinery and magnetic rings, lightning arcs, glowing energy conduits tracing the sides. Dramatic deep navy shadows and neon cyan with small orange highlights. Monumental power, convincing engineered structure.",
+      "transparent": false
+    },
+    {
+      "id": "astral_citadel",
+      "theme": "arcane",
+      "kind": "background",
+      "title": "Astral Citadel",
+      "prompt": "Use case: stylized-concept. Asset type: premium wide backdrop for a Minecraft modpack quest map. Create one original exceptionally beautiful, visually ambitious fantasy game illustration, landscape 3:2. Painterly voxel-inspired architecture with cinematic depth and crisp handcrafted details, not a screenshot. Strong specific visual identity, lush material textures, luminous atmosphere. Keep the lower-middle central region calm and dark enough for readable quest nodes; concentrate spectacle at the perimeter, upper third and sides. Artwork fills the canvas, no frame, no labels, no readable words, no UI, no logos, no watermark. Avoid muddy generic ruins and repeated compositions. An impossible floating wizard citadel inside a sapphire cosmic dome. Monumental gold orrery and violet crystal spires hover in the upper left, spiraling magical stairways over deep midnight clouds. Detailed engraved metal, suspended glowing geometric runes without readable language, purple cyan and antique gold. Awe and precise magical order.",
+      "transparent": false
+    },
+    {
+      "id": "event_horizon",
+      "theme": "space",
+      "kind": "background",
+      "title": "Event Horizon",
+      "prompt": "Use case: stylized-concept. Asset type: premium wide backdrop for a Minecraft modpack quest map. Create one original exceptionally beautiful, visually ambitious fantasy game illustration, landscape 3:2. Painterly voxel-inspired architecture with cinematic depth and crisp handcrafted details, not a screenshot. Strong specific visual identity, lush material textures, luminous atmosphere. Keep the lower-middle central region calm and dark enough for readable quest nodes; concentrate spectacle at the perimeter, upper third and sides. Artwork fills the canvas, no frame, no labels, no readable words, no UI, no logos, no watermark. Avoid muddy generic ruins and repeated compositions. A magnificent supermassive black hole at the upper right: physically inspired gravitational lensing bends a blazing molten-gold accretion disk above and below its black silhouette. Distant violet galaxy, tiny turquoise stars, richly colored nebula clouds at the perimeter, a small ringed rocky moon in the lower left. Deep black-blue center-left negative space, staggering celestial scale, beautiful sharp astrophotographic light painted with subtle fantasy detail.",
+      "transparent": false
+    },
+    {
+      "id": "skybound_expedition",
+      "theme": "exploration",
+      "kind": "background",
+      "title": "Skybound Expedition",
+      "prompt": "Use case: stylized-concept. Asset type: premium wide backdrop for a Minecraft modpack quest map. Create one original exceptionally beautiful, visually ambitious fantasy game illustration, landscape 3:2. Painterly voxel-inspired architecture with cinematic depth and crisp handcrafted details, not a screenshot. Strong specific visual identity, lush material textures, luminous atmosphere. Keep the lower-middle central region calm and dark enough for readable quest nodes; concentrate spectacle at the perimeter, upper third and sides. Artwork fills the canvas, no frame, no labels, no readable words, no UI, no logos, no watermark. Avoid muddy generic ruins and repeated compositions. Adventure across a vast archipelago of floating mountain islands and white waterfalls over a turquoise abyss. A tiny airship at upper left approaches a majestic green-roofed ancient gateway on the right cliff, winding stone paths and banners without words. Golden dawn, teal haze, sapphire shadows, exciting deep layers and distant uncharted lands. Majestic and hopeful, distinct from space art.",
+      "transparent": false
+    },
+    {
+      "id": "leviathan_reef",
+      "theme": "ocean",
+      "kind": "background",
+      "title": "Leviathan Reef",
+      "prompt": "Use case: stylized-concept. Asset type: premium wide backdrop for a Minecraft modpack quest map. Create one original exceptionally beautiful, visually ambitious fantasy game illustration, landscape 3:2. Painterly voxel-inspired architecture with cinematic depth and crisp handcrafted details, not a screenshot. Strong specific visual identity, lush material textures, luminous atmosphere. Keep the lower-middle central region calm and dark enough for readable quest nodes; concentrate spectacle at the perimeter, upper third and sides. Artwork fills the canvas, no frame, no labels, no readable words, no UI, no logos, no watermark. Avoid muddy generic ruins and repeated compositions. A vast submerged luminous coral cathedral in the abyss, enormous curled coral arches at left and right and a glowing pearl-like shrine near the upper right. Shafts of aqua sunlight, blue whales silhouetted far overhead, pink bioluminescent anemones, delicate fish and bubbles. Rich ultramarine depth, cyan and violet reef glow, dark clear central water. Breathtaking underwater scale.",
+      "transparent": false
+    },
+    {
+      "id": "clockwork_megafactory",
+      "theme": "machinery",
+      "kind": "background",
+      "title": "Clockwork Megafactory",
+      "prompt": "Use case: stylized-concept. Asset type: premium wide backdrop for a Minecraft modpack quest map. Create one original exceptionally beautiful, visually ambitious fantasy game illustration, landscape 3:2. Painterly voxel-inspired architecture with cinematic depth and crisp handcrafted details, not a screenshot. Strong specific visual identity, lush material textures, luminous atmosphere. Keep the lower-middle central region calm and dark enough for readable quest nodes; concentrate spectacle at the perimeter, upper third and sides. Artwork fills the canvas, no frame, no labels, no readable words, no UI, no logos, no watermark. Avoid muddy generic ruins and repeated compositions. A breathtaking enormous steampunk factory cross-section, giant brass gear assemblies, suspended mechanical arms and copper conveyors against deep slate blue steel. Dramatic diagonal perspective, amber furnace windows at sides, pipes and riveted platforms, fine clockwork detail. The central factory floor is open, dark and spacious. Mechanical ingenuity.",
+      "transparent": false
+    },
+    {
+      "id": "seasons_of_abundance",
+      "theme": "farming",
+      "kind": "background",
+      "title": "Seasons of Abundance",
+      "prompt": "Use case: stylized-concept. Asset type: premium wide backdrop for a Minecraft modpack quest map. Create one original exceptionally beautiful, visually ambitious fantasy game illustration, landscape 3:2. Painterly voxel-inspired architecture with cinematic depth and crisp handcrafted details, not a screenshot. Strong specific visual identity, lush material textures, luminous atmosphere. Keep the lower-middle central region calm and dark enough for readable quest nodes; concentrate spectacle at the perimeter, upper third and sides. Artwork fills the canvas, no frame, no labels, no readable words, no UI, no logos, no watermark. Avoid muddy generic ruins and repeated compositions. A fantastical bountiful farm viewed from a hillside at golden dusk, cozy lantern-lit windmill at upper left, terraced patchwork fields, giant pumpkins, apple orchards and hanging vines at both sides. A small river winds toward a warm village, fireflies and bees, emerald foliage, amber sunset with dark blue center field. Exquisitely detailed wholesome prosperity.",
+      "transparent": false
+    },
+    {
+      "id": "infernal_throne",
+      "theme": "nether",
+      "kind": "background",
+      "title": "Infernal Throne",
+      "prompt": "Use case: stylized-concept. Asset type: premium wide backdrop for a Minecraft modpack quest map. Create one original exceptionally beautiful, visually ambitious fantasy game illustration, landscape 3:2. Painterly voxel-inspired architecture with cinematic depth and crisp handcrafted details, not a screenshot. Strong specific visual identity, lush material textures, luminous atmosphere. Keep the lower-middle central region calm and dark enough for readable quest nodes; concentrate spectacle at the perimeter, upper third and sides. Artwork fills the canvas, no frame, no labels, no readable words, no UI, no logos, no watermark. Avoid muddy generic ruins and repeated compositions. A spectacular obsidian citadel suspended above rivers of molten lava inside a cavern. Angular black bridges and basalt spires at the sides, a monumental fiery portal arch in the upper center-right, bright scarlet lava waterfalls and glowing gold embers. Dark charcoal lower center, deep red smoky depth, dynamic volcanic illumination, menacing epic fire realm.",
+      "transparent": false
+    },
+    {
+      "id": "palace_of_the_void",
+      "theme": "end",
+      "kind": "background",
+      "title": "Palace of the Void",
+      "prompt": "Use case: stylized-concept. Asset type: premium wide backdrop for a Minecraft modpack quest map. Create one original exceptionally beautiful, visually ambitious fantasy game illustration, landscape 3:2. Painterly voxel-inspired architecture with cinematic depth and crisp handcrafted details, not a screenshot. Strong specific visual identity, lush material textures, luminous atmosphere. Keep the lower-middle central region calm and dark enough for readable quest nodes; concentrate spectacle at the perimeter, upper third and sides. Artwork fills the canvas, no frame, no labels, no readable words, no UI, no logos, no watermark. Avoid muddy generic ruins and repeated compositions. A mysterious otherworldly violet crystal palace on floating pale stone islands in a black cosmic void. Pale end-stone terraces curl from the sides, dark obsidian pillars hold suspended lavender crystals, an immense crescent-shaped dragon-bone arch at upper left. Sparse eerie luminous particles, magenta and lilac accents, strong atmospheric silhouettes and clear dark middle space.",
+      "transparent": false
+    },
+    {
+      "id": "infinite_archive",
+      "theme": "storage",
+      "kind": "background",
+      "title": "Infinite Archive",
+      "prompt": "Use case: stylized-concept. Asset type: premium wide backdrop for a Minecraft modpack quest map. Create one original exceptionally beautiful, visually ambitious fantasy game illustration, landscape 3:2. Painterly voxel-inspired architecture with cinematic depth and crisp handcrafted details, not a screenshot. Strong specific visual identity, lush material textures, luminous atmosphere. Keep the lower-middle central region calm and dark enough for readable quest nodes; concentrate spectacle at the perimeter, upper third and sides. Artwork fills the canvas, no frame, no labels, no readable words, no UI, no logos, no watermark. Avoid muddy generic ruins and repeated compositions. A spectacular magical-technological infinite archive viewed down a grand vaulted chamber. Tall deep-blue shelves made of metal and luminous crystal stretch away along both sides, hundreds of tiny amber drawers, floating cyan data cubes and suspended geometric memory prisms above. Polished obsidian floor with soft reflections, ornate copper railings, teal and warm gold, orderly compelling depth. No letters, diagrams, labels or numbers.",
+      "transparent": false
+    },
+    {
+      "id": "galaxy_of_dreams",
+      "theme": "space",
+      "kind": "background",
+      "title": "Galaxy of Dreams",
+      "prompt": "Use case: stylized-concept. Asset type: premium wide backdrop for a Minecraft modpack quest map. Create one original exceptionally beautiful, visually ambitious fantasy game illustration, landscape 3:2. Painterly voxel-inspired architecture with cinematic depth and crisp handcrafted details, not a screenshot. Strong specific visual identity, lush material textures, luminous atmosphere. Keep the lower-middle central region calm and dark enough for readable quest nodes; concentrate spectacle at the perimeter, upper third and sides. Artwork fills the canvas, no frame, no labels, no readable words, no UI, no logos, no watermark. Avoid muddy generic ruins and repeated compositions. A dazzling huge spiral galaxy sweeping across the upper left, detailed glittering arms of turquoise and violet nebula dust, rose-gold star formation knots and a brilliant pearl core. Deep rich black-blue space across the lower middle, a tiny icy planet at right, scattered sharp stars. Vivid celestial wonder, astronomical grandeur and beautiful long curved composition.",
+      "transparent": false
+    },
+    {
+      "id": "rain_after_ruin",
+      "theme": "restoration",
+      "kind": "background",
+      "title": "Rain After Ruin",
+      "prompt": "Use case: stylized-concept. Asset type: premium wide backdrop for a Minecraft modpack quest map. Create one original exceptionally beautiful, visually ambitious fantasy game illustration, landscape 3:2. Painterly voxel-inspired architecture with cinematic depth and crisp handcrafted details, not a screenshot. Strong specific visual identity, lush material textures, luminous atmosphere. Keep the lower-middle central region calm and dark enough for readable quest nodes; concentrate spectacle at the perimeter, upper third and sides. Artwork fills the canvas, no frame, no labels, no readable words, no UI, no logos, no watermark. Avoid muddy generic ruins and repeated compositions. The breathtaking moment a barren world comes back to life: cracked charcoal wasteland on the left transforms across a rainlit river into vibrant emerald forest and flower-covered slopes on the right. A small radiant sapling on an island in the upper middle, clouds part into warm golden sunlight, a subtle rainbow, vines reaching through broken stone. Hopeful dramatic before-to-after panorama, deep blue quiet lower middle, richly detailed rebirth.",
+      "transparent": false
+    },
+    {
+      "id": "rings_of_the_frontier",
+      "theme": "space",
+      "kind": "background",
+      "title": "Rings of the Frontier",
+      "prompt": "Use case: stylized-concept. Asset type: premium wide backdrop for a Minecraft modpack quest map. Create one original exceptionally beautiful, visually ambitious fantasy game illustration, landscape 3:2. Painterly voxel-inspired architecture with cinematic depth and crisp handcrafted details, not a screenshot. Strong specific visual identity, lush material textures, luminous atmosphere. Keep the lower-middle central region calm and dark enough for readable quest nodes; concentrate spectacle at the perimeter, upper third and sides. Artwork fills the canvas, no frame, no labels, no readable words, no UI, no logos, no watermark. Avoid muddy generic ruins and repeated compositions. A majestic blue-violet gas giant with luminous sweeping ice rings occupying the upper right, rings curve diagonally into the left perimeter. A tiny orbital station near the far edge, sparkling turquoise aurora bands over the planet, a purple nebula behind it, dark starfield center-left. Beautiful premium science-fantasy exploration vista with plausible celestial lighting.",
+      "transparent": false
+    },
+    {
+      "id": "gaia_blossom_landmark",
+      "theme": "botanical",
+      "kind": "landmark",
+      "title": "Gaia Blossom",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent fantasy game decoration for a Minecraft modpack quest map. Create exactly ONE highly polished richly detailed hand-painted game illustration, a premium small landmark with a strong recognizable silhouette. Square canvas, object fully visible, generous 10% padding on all sides. TRUE TRANSPARENT BACKGROUND everywhere outside the isolated object; no scenery, no backdrop, no castle unless explicitly requested, no words or labels, no UI, no frame, no watermark. Bold colors, dimensional materials, jewel-like luminous highlights, exquisite crisp detail that reads at small size, voxel-inspired fantasy without crude pixelation. This is a cutout object, not a panoramic landscape. A magnificent emerald-and-gold magical flower with layered glowing cyan petals, a bright mana jewel at its heart and curling lush leaves around a small mossy stone base. Several tiny suspended golden pollen motes near the petals.",
+      "transparent": true
+    },
+    {
+      "id": "astral_grimoire_landmark",
+      "theme": "arcane",
+      "kind": "landmark",
+      "title": "Astral Grimoire",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent fantasy game decoration for a Minecraft modpack quest map. Create exactly ONE highly polished richly detailed hand-painted game illustration, a premium small landmark with a strong recognizable silhouette. Square canvas, object fully visible, generous 10% padding on all sides. TRUE TRANSPARENT BACKGROUND everywhere outside the isolated object; no scenery, no backdrop, no castle unless explicitly requested, no words or labels, no UI, no frame, no watermark. Bold colors, dimensional materials, jewel-like luminous highlights, exquisite crisp detail that reads at small size, voxel-inspired fantasy without crude pixelation. This is a cutout object, not a panoramic landscape. An ornate open wizard grimoire floating beneath a large amethyst crystal. Embossed brass bookcorners, blank glowing blue pages without writing, small suspended geometric luminous sigils and orbiting crystal fragments. Violet, deep blue and antique gold.",
+      "transparent": true
+    },
+    {
+      "id": "fusion_reactor_landmark",
+      "theme": "power",
+      "kind": "landmark",
+      "title": "Fusion Reactor",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent fantasy game decoration for a Minecraft modpack quest map. Create exactly ONE highly polished richly detailed hand-painted game illustration, a premium small landmark with a strong recognizable silhouette. Square canvas, object fully visible, generous 10% padding on all sides. TRUE TRANSPARENT BACKGROUND everywhere outside the isolated object; no scenery, no backdrop, no castle unless explicitly requested, no words or labels, no UI, no frame, no watermark. Bold colors, dimensional materials, jewel-like luminous highlights, exquisite crisp detail that reads at small size, voxel-inspired fantasy without crude pixelation. This is a cutout object, not a panoramic landscape. A compact spectacular sci-fi fusion reactor: brilliant contained cyan plasma orb suspended inside concentric dark steel magnetic hoops, copper mounts and four small amber power cells. Electric energy streams contained within the circular assembly.",
+      "transparent": true
+    },
+    {
+      "id": "singularity_landmark",
+      "theme": "space",
+      "kind": "landmark",
+      "title": "Singularity",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent fantasy game decoration for a Minecraft modpack quest map. Create exactly ONE highly polished richly detailed hand-painted game illustration, a premium small landmark with a strong recognizable silhouette. Square canvas, object fully visible, generous 10% padding on all sides. TRUE TRANSPARENT BACKGROUND everywhere outside the isolated object; no scenery, no backdrop, no castle unless explicitly requested, no words or labels, no UI, no frame, no watermark. Bold colors, dimensional materials, jewel-like luminous highlights, exquisite crisp detail that reads at small size, voxel-inspired fantasy without crude pixelation. This is a cutout object, not a panoramic landscape. A stunning isolated astrophysical black hole: perfectly black sphere with a spectacular luminous molten-gold accretion disk, bent by gravitational lensing above and below it, purple-blue thin outer halo and a few turquoise orbiting particles. The surrounding square canvas is genuinely transparent, not a black space background. No buildings or landscape.",
+      "transparent": true
+    },
+    {
+      "id": "kinetic_engine_landmark",
+      "theme": "machinery",
+      "kind": "landmark",
+      "title": "Kinetic Engine",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent fantasy game decoration for a Minecraft modpack quest map. Create exactly ONE highly polished richly detailed hand-painted game illustration, a premium small landmark with a strong recognizable silhouette. Square canvas, object fully visible, generous 10% padding on all sides. TRUE TRANSPARENT BACKGROUND everywhere outside the isolated object; no scenery, no backdrop, no castle unless explicitly requested, no words or labels, no UI, no frame, no watermark. Bold colors, dimensional materials, jewel-like luminous highlights, exquisite crisp detail that reads at small size, voxel-inspired fantasy without crude pixelation. This is a cutout object, not a panoramic landscape. An intricate compact brass-and-copper mechanical engine with three interlocking toothed gears, a polished steel flywheel, tiny piston, glowing orange furnace window and small copper tubes. Convincing industrial materials, clean coherent compact silhouette.",
+      "transparent": true
+    },
+    {
+      "id": "wayfarer_airship_landmark",
+      "theme": "exploration",
+      "kind": "landmark",
+      "title": "Wayfarer Airship",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent fantasy game decoration for a Minecraft modpack quest map. Create exactly ONE highly polished richly detailed hand-painted game illustration, a premium small landmark with a strong recognizable silhouette. Square canvas, object fully visible, generous 10% padding on all sides. TRUE TRANSPARENT BACKGROUND everywhere outside the isolated object; no scenery, no backdrop, no castle unless explicitly requested, no words or labels, no UI, no frame, no watermark. Bold colors, dimensional materials, jewel-like luminous highlights, exquisite crisp detail that reads at small size, voxel-inspired fantasy without crude pixelation. This is a cutout object, not a panoramic landscape. An enchanting adventurous small wooden steampunk airship, three-quarter view. Cream and teal inflated balloon with copper fittings, a detailed cozy gondola with lantern and tiny propellers, folded map case on deck. Ship fully in frame on transparent background, warm brass accents.",
+      "transparent": true
+    },
+    {
+      "id": "harvest_windmill_landmark",
+      "theme": "farming",
+      "kind": "landmark",
+      "title": "Harvest Windmill",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent fantasy game decoration for a Minecraft modpack quest map. Create exactly ONE highly polished richly detailed hand-painted game illustration, a premium small landmark with a strong recognizable silhouette. Square canvas, object fully visible, generous 10% padding on all sides. TRUE TRANSPARENT BACKGROUND everywhere outside the isolated object; no scenery, no backdrop, no castle unless explicitly requested, no words or labels, no UI, no frame, no watermark. Bold colors, dimensional materials, jewel-like luminous highlights, exquisite crisp detail that reads at small size, voxel-inspired fantasy without crude pixelation. This is a cutout object, not a panoramic landscape. A delightful cozy compact farm windmill diorama: wooden mill with red tiled roof and four cream sails on a tiny grassy base, golden wheat bundle, plump pumpkin, apple basket and one small bee. Warm wholesome detailed storybook game art.",
+      "transparent": true
+    },
+    {
+      "id": "pearl_reef_landmark",
+      "theme": "ocean",
+      "kind": "landmark",
+      "title": "Pearl Reef",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent fantasy game decoration for a Minecraft modpack quest map. Create exactly ONE highly polished richly detailed hand-painted game illustration, a premium small landmark with a strong recognizable silhouette. Square canvas, object fully visible, generous 10% padding on all sides. TRUE TRANSPARENT BACKGROUND everywhere outside the isolated object; no scenery, no backdrop, no castle unless explicitly requested, no words or labels, no UI, no frame, no watermark. Bold colors, dimensional materials, jewel-like luminous highlights, exquisite crisp detail that reads at small size, voxel-inspired fantasy without crude pixelation. This is a cutout object, not a panoramic landscape. A magnificent bioluminescent reef diorama, glowing giant pearl within an open ornate clam, surrounded by curling pink coral, small cyan anemones, two tiny bright fish and three transparent-looking bubbles. Rich ultramarine, luminous aqua and pink, intricate organic materials.",
+      "transparent": true
+    },
+    {
+      "id": "ember_portal_landmark",
+      "theme": "nether",
+      "kind": "landmark",
+      "title": "Ember Portal",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent fantasy game decoration for a Minecraft modpack quest map. Create exactly ONE highly polished richly detailed hand-painted game illustration, a premium small landmark with a strong recognizable silhouette. Square canvas, object fully visible, generous 10% padding on all sides. TRUE TRANSPARENT BACKGROUND everywhere outside the isolated object; no scenery, no backdrop, no castle unless explicitly requested, no words or labels, no UI, no frame, no watermark. Bold colors, dimensional materials, jewel-like luminous highlights, exquisite crisp detail that reads at small size, voxel-inspired fantasy without crude pixelation. This is a cutout object, not a panoramic landscape. A dramatic miniature angular obsidian portal with a swirling red-orange fiery center, surrounded by fractured black basalt, two chains, small lava drips, bright sparks and a pair of dark crimson crystal spikes. Entire compact object isolated, no surrounding cavern or landscape.",
+      "transparent": true
+    },
+    {
+      "id": "memory_vault_landmark",
+      "theme": "storage",
+      "kind": "landmark",
+      "title": "Memory Vault",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent fantasy game decoration for a Minecraft modpack quest map. Create exactly ONE highly polished richly detailed hand-painted game illustration, a premium small landmark with a strong recognizable silhouette. Square canvas, object fully visible, generous 10% padding on all sides. TRUE TRANSPARENT BACKGROUND everywhere outside the isolated object; no scenery, no backdrop, no castle unless explicitly requested, no words or labels, no UI, no frame, no watermark. Bold colors, dimensional materials, jewel-like luminous highlights, exquisite crisp detail that reads at small size, voxel-inspired fantasy without crude pixelation. This is a cutout object, not a panoramic landscape. A beautifully crafted compact magical technology storage vault: dark blue and copper drawer cube with many tiny amber drawer handles, a radiant cyan crystal hologram above, two floating memory prisms and narrow glowing connection lines. No readable text, labels, numbers or screens.",
+      "transparent": true
+    },
+    {
+      "id": "void_dragon_landmark",
+      "theme": "end",
+      "kind": "landmark",
+      "title": "Void Dragon",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent fantasy game decoration for a Minecraft modpack quest map. Create exactly ONE highly polished richly detailed hand-painted game illustration, a premium small landmark with a strong recognizable silhouette. Square canvas, object fully visible, generous 10% padding on all sides. TRUE TRANSPARENT BACKGROUND everywhere outside the isolated object; no scenery, no backdrop, no castle unless explicitly requested, no words or labels, no UI, no frame, no watermark. Bold colors, dimensional materials, jewel-like luminous highlights, exquisite crisp detail that reads at small size, voxel-inspired fantasy without crude pixelation. This is a cutout object, not a panoramic landscape. A graceful small dark dragon curled around a floating violet end crystal, black obsidian-like scales, luminous lavender eyes, wings folded to frame the jewel, a tiny pale stone island beneath it. Strong distinctive silhouette, elegant and mysterious.",
+      "transparent": true
+    },
+    {
+      "id": "seed_of_renewal_landmark",
+      "theme": "restoration",
+      "kind": "landmark",
+      "title": "Seed of Renewal",
+      "prompt": "Use case: stylized-concept. Asset type: standalone transparent fantasy game decoration for a Minecraft modpack quest map. Create exactly ONE highly polished richly detailed hand-painted game illustration, a premium small landmark with a strong recognizable silhouette. Square canvas, object fully visible, generous 10% padding on all sides. TRUE TRANSPARENT BACKGROUND everywhere outside the isolated object; no scenery, no backdrop, no castle unless explicitly requested, no words or labels, no UI, no frame, no watermark. Bold colors, dimensional materials, jewel-like luminous highlights, exquisite crisp detail that reads at small size, voxel-inspired fantasy without crude pixelation. This is a cutout object, not a panoramic landscape. A hopeful miniature lifeless-to-living-world diorama: cracked dark stone on left of a small island gives way to lush emerald grass and a radiant young tree with pink blossoms on right, a tiny bright stream flows through the middle, several rain droplets and a soft golden sun mote above. Isolated tiny island on transparent background.",
+      "transparent": true
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "id": "arcane_observatory",
+      "theme": "arcane",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/arcane/arcane_observatory.png",
+      "texture": "autoquestgen:textures/arcane/arcane_observatory.png",
+      "title": "Arcane Observatory",
+      "keywords": [
+        "arcane"
+      ],
+      "alpha": 100
+    },
+    {
+      "id": "celestial_frontier",
+      "theme": "space",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/space/celestial_frontier.png",
+      "texture": "autoquestgen:textures/space/celestial_frontier.png",
+      "title": "Celestial Frontier",
+      "keywords": [
+        "space"
+      ],
+      "alpha": 100
+    },
+    {
+      "id": "clockwork_foundry",
+      "theme": "machinery",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/machinery/clockwork_foundry.png",
+      "texture": "autoquestgen:textures/machinery/clockwork_foundry.png",
+      "title": "Clockwork Foundry",
+      "keywords": [
+        "machinery"
+      ],
+      "alpha": 100
+    },
+    {
+      "id": "lost_frontier",
+      "theme": "exploration",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/exploration/lost_frontier.png",
+      "texture": "autoquestgen:textures/exploration/lost_frontier.png",
+      "title": "Lost Frontier",
+      "keywords": [
+        "exploration"
+      ],
+      "alpha": 100
+    },
+    {
+      "id": "harvest_homestead",
+      "theme": "farming",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/farming/harvest_homestead.png",
+      "texture": "autoquestgen:textures/farming/harvest_homestead.png",
+      "title": "Harvest Homestead",
+      "keywords": [
+        "farming"
+      ],
+      "alpha": 100
+    },
+    {
+      "id": "energy_nexus",
+      "theme": "power",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/power/energy_nexus.png",
+      "texture": "autoquestgen:textures/power/energy_nexus.png",
+      "title": "Energy Nexus",
+      "keywords": [
+        "power"
+      ],
+      "alpha": 100
+    },
+    {
+      "id": "void_archipelago",
+      "theme": "end",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/end/void_archipelago.png",
+      "texture": "autoquestgen:textures/end/void_archipelago.png",
+      "title": "Void Archipelago",
+      "keywords": [
+        "end"
+      ],
+      "alpha": 100
+    },
+    {
+      "id": "abyssal_sanctuary",
+      "theme": "ocean",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/ocean/abyssal_sanctuary.png",
+      "texture": "autoquestgen:textures/ocean/abyssal_sanctuary.png",
+      "title": "Abyssal Sanctuary",
+      "keywords": [
+        "ocean"
+      ],
+      "alpha": 100
+    },
+    {
+      "id": "ember_citadel",
+      "theme": "nether",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/nether/ember_citadel.png",
+      "texture": "autoquestgen:textures/nether/ember_citadel.png",
+      "title": "Ember Citadel",
+      "keywords": [
+        "nether"
+      ],
+      "alpha": 100
+    },
+    {
+      "id": "archive_vault",
+      "theme": "storage",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/storage/archive_vault.png",
+      "texture": "autoquestgen:textures/storage/archive_vault.png",
+      "title": "Archive Vault",
+      "keywords": [
+        "storage"
+      ],
+      "alpha": 100
+    },
+    {
+      "id": "world_reborn",
+      "theme": "restoration",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/restoration/world_reborn.png",
+      "texture": "autoquestgen:textures/restoration/world_reborn.png",
+      "title": "World Reborn",
+      "keywords": [
+        "restoration"
+      ],
+      "alpha": 100
+    },
+    {
+      "id": "botanical_sanctuary",
+      "theme": "botanical",
+      "kind": "background",
+      "path": "assets/autoquestgen/textures/botanical/botanical_sanctuary.png",
+      "texture": "autoquestgen:textures/botanical/botanical_sanctuary.png",
+      "title": "Botanical Sanctuary",
+      "keywords": [
+        "botanical",
+        "botania",
+        "forest",
+        "mana"
+      ],
+      "alpha": 160
+    }
+  ]
+}

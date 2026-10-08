@@ -5,124 +5,318 @@
   "chain": [
     {
       "id": "mekanism:ingot_osmium",
-      "title": "Osmium Ingot",
-      "desc": "Osmium Ore generates at nearly every Y level and drops Raw Osmium; smelt it in a furnace. Osmium is the mod's starting metal."
+      "title": "Osmium: the workshop begins",
+      "desc": "Smelt osmium ore or raw osmium from this pack. Keep the first ingots for circuits and machinery; Mekanism's processing, equipment, and storage paths all begin here.",
+      "requires": []
     },
     {
       "id": "mekanism:metallurgic_infuser",
-      "title": "Metallurgic Infuser",
-      "desc": "Hand-crafted from 2 furnaces, 4 iron ingots, 2 redstone dust and 1 Osmium Ingot; the only Mekanism machine you can build before having steel."
+      "title": "The first infuser",
+      "desc": "Build a Metallurgic Infuser and supply energy. The infusion material and the item go into different inputs; start with redstone for circuits and infused alloy.",
+      "requires": [
+        "mekanism:ingot_osmium"
+      ]
     },
     {
       "id": "mekanism:basic_control_circuit",
-      "title": "Basic Control Circuit",
-      "desc": "Infuse an Osmium Ingot with 20 units of Redstone in the Metallurgic Infuser. Circuits are the tier currency of every later machine recipe."
+      "title": "Control the machines",
+      "desc": "Infuse osmium with redstone. Make spare circuits for machines and transport; a reliable infuser is more useful than a single completed craft.",
+      "requires": [
+        "mekanism:metallurgic_infuser"
+      ]
     },
     {
       "id": "mekanism:alloy_infused",
-      "title": "Infused Alloy",
-      "desc": "Infuse an iron ingot with 10 units of Redstone in the Metallurgic Infuser; tier 2 of the four alloy tiers (plain redstone is tier 1)."
+      "title": "Redstone into alloy",
+      "desc": "Infuse iron with redstone to make infused alloy. This is the shared starting material for energy equipment and the stronger alloy tiers.",
+      "requires": [
+        "mekanism:metallurgic_infuser"
+      ]
     },
     {
       "id": "mekanism:ingot_steel",
-      "title": "Steel Ingot",
-      "desc": "Infuse iron with Carbon (coal or charcoal dust) for Enriched Iron, infuse that again with Carbon for Steel Dust, then smelt the dust."
+      "title": "Steel without a blast furnace",
+      "desc": "Infuse iron with carbon to make enriched iron, then infuse it again and smelt the resulting steel dust. Use the pack's recipe viewer for accepted carbon sources.",
+      "requires": [
+        "mekanism:metallurgic_infuser"
+      ]
     },
     {
       "id": "mekanism:steel_casing",
-      "title": "Steel Casing",
-      "desc": "4 Steel Ingots, 4 glass and 1 Osmium Ingot. Almost every Mekanism machine is a Steel Casing wrapped in alloys and circuits."
-    },
-    {
-      "id": "mekanism:enrichment_chamber",
-      "title": "Enrichment Chamber",
-      "desc": "Steel Casing surrounded by 4 redstone, 2 Basic Control Circuits and 2 iron. Turns 1 ore into 2 dust: the first ore-processing tier."
-    },
-    {
-      "id": "mekanism:energized_smelter",
-      "title": "Energized Smelter",
-      "desc": "Steel Casing with 4 redstone, 2 Basic Control Circuits and 2 glass. Smelts on machine power, so it pairs with the Enrichment Chamber for a full 2x ore line."
-    },
-    {
-      "id": "mekanism:crusher",
-      "title": "Crusher",
-      "desc": "Steel Casing with 4 redstone, 2 Basic Control Circuits and 2 lava buckets. Grinds ingots to dust and clumps to dirty dust, closing the higher ore-processing loops."
+      "title": "Frame the factory",
+      "desc": "Craft a steel casing for your first processing machines. Casings are shared components; choose the machine that solves your current bottleneck instead of building every machine in order.",
+      "requires": [
+        "mekanism:ingot_steel",
+        "mekanism:basic_control_circuit"
+      ]
     },
     {
       "id": "mekanism:basic_energy_cube",
-      "title": "Basic Energy Cube",
-      "desc": "Steel Casing with 4 redstone, 2 Energy Tablets and 2 iron. Buffers generator output so machines keep running; Energy Tablets need Infused Alloy, gold and redstone."
+      "title": "Keep a power reserve",
+      "desc": "Place an Energy Cube between generation and your machines. Configure its input and output sides, then confirm it can charge while your workshop is idle.",
+      "requires": [
+        "mekanism:alloy_infused",
+        "mekanism:ingot_steel"
+      ]
+    },
+    {
+      "id": "mekanism:enrichment_chamber",
+      "title": "Make each ore count",
+      "desc": "Feed suitable ores or raw metals into the Enrichment Chamber, then smelt the dust. Check the installed recipe's yield; raw ore and ore blocks do not always use the same ratio.",
+      "requires": [
+        "mekanism:steel_casing"
+      ]
+    },
+    {
+      "id": "mekanism:energized_smelter",
+      "title": "Finish the processing line",
+      "desc": "Add an Energized Smelter to turn processed dust into ingots. Configure automatic output so the enrichment line can run without moving each batch by hand.",
+      "requires": [
+        "mekanism:steel_casing"
+      ]
+    },
+    {
+      "id": "mekanism:crusher",
+      "title": "Crush materials on demand",
+      "desc": "Use a Crusher for dusts and bio fuel. This is a useful materials branch even if you keep a simple ore-processing line.",
+      "requires": [
+        "mekanism:steel_casing"
+      ]
     },
     {
       "id": "mekanism:electrolytic_separator",
-      "title": "Electrolytic Separator",
-      "desc": "Built around an Electrolytic Core with 4 iron, 2 redstone and 2 Infused Alloy. Splits water into Hydrogen and Oxygen, the gases the next ore tiers run on."
+      "title": "Split water into gases",
+      "desc": "Supply water and energy to make oxygen and hydrogen. Route each gas deliberately, and configure surplus handling so a full unwanted tank does not stop production.",
+      "requires": [
+        "mekanism:alloy_infused",
+        "mekanism:basic_control_circuit"
+      ]
     },
     {
       "id": "mekanism:purification_chamber",
-      "title": "Purification Chamber",
-      "desc": "An Enrichment Chamber ringed with 4 Infused Alloy, 2 Advanced Control Circuits and 2 Osmium Ingots. Feeds on Oxygen to turn 1 ore into 3 clumps (3x ore)."
+      "title": "Add an oxygen stage",
+      "desc": "Use oxygen in the Purification Chamber before crushing, enriching, and smelting its output. Keep the downstream machines fed and empty before expanding the input rate.",
+      "requires": [
+        "mekanism:enrichment_chamber",
+        "mekanism:electrolytic_separator"
+      ]
     },
     {
       "id": "mekanism:alloy_reinforced",
-      "title": "Reinforced Alloy",
-      "desc": "Infuse an Infused Alloy with 20 units of Diamond in the Metallurgic Infuser. Gates Elite Control Circuits and every 4x-tier machine."
+      "title": "Reinforce the alloy",
+      "desc": "Infuse infused alloy with diamond material. Enriched infusion materials use resources more efficiently, so revisit the Enrichment Chamber before making large batches.",
+      "requires": [
+        "mekanism:alloy_infused"
+      ]
     },
     {
       "id": "mekanism:chemical_injection_chamber",
-      "title": "Chemical Injection Chamber",
-      "desc": "A Purification Chamber ringed with 4 Reinforced Alloy, 2 Elite Control Circuits and 2 gold. Injects Hydrogen Chloride to turn 1 ore into 4 shards (4x ore)."
+      "title": "A chemical processing branch",
+      "desc": "Add hydrogen chloride and the Chemical Injection Chamber ahead of purification. This optional higher-yield route needs salt processing and reliable gas handling, not just one extra machine.",
+      "requires": [
+        "mekanism:purification_chamber",
+        "mekanism:alloy_reinforced"
+      ]
     },
     {
       "id": "mekanism:alloy_atomic",
-      "title": "Atomic Alloy",
-      "desc": "Infuse a Reinforced Alloy with 40 units of Refined Obsidian in the Metallurgic Infuser; Refined Obsidian Dust comes from infusing obsidian dust with Diamond."
+      "title": "Atomic alloy",
+      "desc": "Infuse reinforced alloy with refined obsidian material. Atomic alloy opens advanced equipment and logistics without requiring the largest ore-processing setup.",
+      "requires": [
+        "mekanism:alloy_reinforced"
+      ]
     },
     {
       "id": "mekanism:chemical_dissolution_chamber",
-      "title": "Chemical Dissolution Chamber",
-      "desc": "Steel Casing with 4 Refined Obsidian Ingots, 2 Basic Chemical Tanks and 2 Ultimate Control Circuits. Dissolves ore in Sulfuric Acid into Dirty Slurry, which a Chemical Washer and Chemical Crystallizer turn into Crystals for the full 5x ore yield."
+      "title": "Dissolve the ore",
+      "desc": "Use sulfuric acid to produce slurry. This is the start of the largest ore-processing branch; leave room for washing and crystallizing before feeding it valuable materials.",
+      "requires": [
+        "mekanism:chemical_injection_chamber",
+        "mekanism:alloy_atomic"
+      ]
+    },
+    {
+      "id": "mekanism:chemical_washer",
+      "requires": [
+        "mekanism:chemical_dissolution_chamber"
+      ],
+      "title": "Wash the slurry",
+      "desc": "Supply water to a Chemical Washer and route dirty slurry into it. Separate incompatible ore batches so a small remainder does not jam the next recipe."
+    },
+    {
+      "id": "mekanism:chemical_crystallizer",
+      "requires": [
+        "mekanism:chemical_washer"
+      ],
+      "title": "Crystals back into the line",
+      "desc": "Crystallize clean slurry, then feed the crystals through injection, purification, crushing, enrichment, and smelting. Check each buffer before scaling the complete chain."
     },
     {
       "id": "mekanism:digital_miner",
-      "title": "Digital Miner",
-      "desc": "Steel Casing with 2 Atomic Alloy, a Basic Control Circuit, 2 Logistical Sorters, a Robit and 2 Teleportation Cores. Filter-mines a whole chunk radius automatically."
+      "title": "Mine by a deliberate filter",
+      "desc": "Power the Digital Miner and configure an item or tag filter, radius, and height range. Test a small job first; its energy draw and replacement settings matter as much as the filter.",
+      "requires": [
+        "mekanism:alloy_atomic"
+      ]
     },
     {
       "id": "mekanism:atomic_disassembler",
-      "title": "Atomic Disassembler",
-      "desc": "4 Infused Alloy, an Energy Tablet, an Atomic Alloy and a Refined Obsidian Ingot. Powered all-purpose tool and the base item of the Meka-Tool."
+      "title": "One tool, several jobs",
+      "desc": "Charge an Atomic Disassembler and choose a mining mode suited to the area. This equipment branch does not require advanced chemical ore processing.",
+      "requires": [
+        "mekanism:alloy_atomic"
+      ]
     },
     {
       "id": "mekanism:pressurized_reaction_chamber",
-      "title": "Pressurized Reaction Chamber",
-      "desc": "An Enrichment Chamber with a Dynamic Tank, 2 Basic Chemical Tanks, 2 Basic Control Circuits, 2 steel and an Infused Alloy. Combines item, fluid and gas inputs."
+      "title": "Start the plastic line",
+      "desc": "Combine the fluids, gas, and organic material shown in the recipe viewer to begin substrate production. Keep this branch's gas inputs separate from ore processing.",
+      "requires": [
+        "mekanism:steel_casing",
+        "mekanism:alloy_reinforced"
+      ]
     },
     {
       "id": "mekanism:hdpe_sheet",
-      "title": "HDPE Sheet",
-      "desc": "Bio Fuel plus water and Hydrogen in the Reaction Chamber makes Substrate, then Substrate plus Ethene and Oxygen makes HDPE Pellets; enrich 3 pellets into a sheet."
+      "title": "Turn ethylene into durable plastic",
+      "desc": "Produce HDPE pellets through the reaction chain, then process them into sheets. Plan liquid ethylene and oxygen supplies before adding more reaction chambers.",
+      "requires": [
+        "mekanism:pressurized_reaction_chamber"
+      ]
+    },
+    {
+      "id": "mekanism:teleportation_core",
+      "requires": [
+        "mekanism:alloy_atomic"
+      ],
+      "title": "A core for distant connections",
+      "desc": "Craft a Teleportation Core for teleporters and quantum transport. This is a logistics branch; it can grow beside your processing factory."
+    },
+    {
+      "id": "mekanism:teleporter",
+      "requires": [
+        "mekanism:teleportation_core"
+      ],
+      "title": "Build a return route",
+      "desc": "Construct the Teleporter frame shown in the in-game guide, supply energy, and assign a matching frequency at both ends. Keep each destination loaded when you need a reliable return."
+    },
+    {
+      "id": "mekanism:quantum_entangloporter",
+      "requires": [
+        "mekanism:teleportation_core"
+      ],
+      "title": "One frequency, many resources",
+      "desc": "Set up matching Quantum Entangloporters to move resources between locations. Configure the sides and frequency permissions before connecting valuable storage."
+    },
+    {
+      "id": "mekanism:solar_neutron_activator",
+      "requires": [
+        "mekanism:alloy_atomic"
+      ],
+      "title": "Research the waste pathway",
+      "desc": "A Solar Neutron Activator converts nuclear waste into polonium in sunlight. A real waste source requires Mekanism Generators fission or a pack-provided alternative; do not build this expecting it to make waste.",
+      "requires_mods": [
+        "mekanismgenerators"
+      ]
     },
     {
       "id": "mekanism:pellet_polonium",
-      "title": "Polonium Pellet",
-      "desc": "Run Nuclear Waste through a Solar Neutron Activator for Polonium gas, then react Polonium with Fluorite Dust and water in the Reaction Chamber."
+      "title": "Stabilize polonium",
+      "desc": "Use polonium gas in the Pressurized Reaction Chamber recipe to make pellets. Follow the radiation-handling guidance before changing pipes or containers on a running waste line.",
+      "requires": [
+        "mekanism:solar_neutron_activator",
+        "mekanism:pressurized_reaction_chamber"
+      ],
+      "requires_mods": [
+        "mekanismgenerators"
+      ]
     },
     {
       "id": "mekanism:meka_tool",
-      "title": "Meka-Tool",
-      "desc": "Atomic Disassembler and a Configurator with 2 HDPE Sheets, 2 Ultimate Control Circuits, 2 Polonium Pellets and a Basic Induction Cell; upgraded at a Modification Station."
+      "title": "Build the modular multitool",
+      "desc": "Craft and charge the Meka-Tool, then add only the modules useful to your play style. Its capabilities come from installed modules, not the base tool alone.",
+      "requires": [
+        "mekanism:pellet_polonium",
+        "mekanism:hdpe_sheet"
+      ],
+      "requires_mods": [
+        "mekanismgenerators"
+      ]
     },
     {
       "id": "mekanism:mekasuit_bodyarmor",
-      "title": "MekaSuit Bodyarmor",
-      "desc": "A netherite chestplate with 4 HDPE Sheets, an Ultimate Control Circuit, 2 Polonium Pellets and a Basic Induction Cell. Modules slot in at a Modification Station."
+      "title": "A suit you can configure",
+      "desc": "Build the MekaSuit body armor and charge it. Complete the other armor pieces and select modules as resources allow; the polonium route is separate from maximum-yield ore processing.",
+      "requires": [
+        "mekanism:pellet_polonium",
+        "mekanism:hdpe_sheet"
+      ],
+      "requires_mods": [
+        "mekanismgenerators"
+      ]
+    },
+    {
+      "id": "mekanism:sps_casing",
+      "requires": [
+        "mekanism:pellet_polonium"
+      ],
+      "title": "Plan antimatter production",
+      "desc": "Craft SPS casings and consult the complete multiblock layout, including ports and supercharged coils. Antimatter production needs polonium gas and a sustained, substantial energy supply.",
+      "requires_mods": [
+        "mekanismgenerators"
+      ]
+    },
+    {
+      "id": "mekanism:pellet_antimatter",
+      "requires": [
+        "mekanism:sps_casing"
+      ],
+      "title": "Condense the antimatter",
+      "desc": "Run the assembled SPS and turn its output into an antimatter pellet through the reaction recipe. This is an optional endgame materials branch with a much larger energy budget.",
+      "requires_mods": [
+        "mekanismgenerators"
+      ]
     },
     {
       "id": "mekanism:antiprotonic_nucleosynthesizer",
-      "title": "Antiprotonic Nucleosynthesizer",
-      "desc": "Steel Casing with 4 Atomic Alloy, 2 Ultimate Control Circuits and 2 Antimatter Pellets; antimatter is produced by the SPS multiblock from Polonium."
+      "title": "Matter on your terms",
+      "desc": "Supply the Antiprotonic Nucleosynthesizer with antimatter and energy, then choose a supported conversion in the recipe viewer. Automate one useful recipe before expanding the system.",
+      "requires": [
+        "mekanism:pellet_antimatter"
+      ],
+      "requires_mods": [
+        "mekanismgenerators"
+      ]
     }
   ],
-  "notes": "All 24 ids were checked against Mekanism-1.20.1-10.4.16.80.jar (Modrinth, Forge/NeoForge 1.20.1); item ids were taken from assets/mekanism/models/item/*.json unioned with item./block. keys in assets/mekanism/lang/en_us.json (415 unique paths). Descriptions were derived from the jar's own data/mekanism/recipes/*.json, so ingredient counts are exact. IMPORTANT CROSS-MOD DEPENDENCY: base Mekanism has no generators. Practical power (Heat Generator, Gas-Burning Generator, Fission and Fusion Reactors) lives in Mekanism: Generators (modid mekanismgenerators), and the Nuclear Waste that gates the Polonium Pellet / Meka-Tool / MekaSuit / Antiprotonic Nucleosynthesizer entries is a Fission Reactor output. If Mekanism: Generators is not in the pack, the last four entries are unreachable without another waste source. Wiki-named things deliberately NOT included because they are not mekanism: items in this jar: Heat Generator, Gas-Burning Generator, Fission Reactor Casing, Fusion Reactor, Turbine and Wind Generator (all mekanismgenerators), and Paxel/armor tiers (mekanismtools). The SPS is represented by the Antiprotonic Nucleosynthesizer rather than mekanism:sps_casing so the chain ends on a machine; mekanism:sps_casing, mekanism:sps_port, mekanism:pellet_antimatter and mekanism:pellet_plutonium all exist in the jar if the integrator wants extra endgame steps. Other verified ids worth using as optional side quests: mekanism:teleportation_core, mekanism:teleporter, mekanism:quantum_entangloporter, mekanism:qio_drive_array, mekanism:thermal_evaporation_controller, mekanism:solar_neutron_activator, mekanism:isotopic_centrifuge, mekanism:modification_station, mekanism:jetpack, mekanism:free_runners, mekanism:robit, mekanism:basic_induction_cell, mekanism:induction_casing, mekanism:chemical_washer, mekanism:chemical_crystallizer (the two 5x-tier machines folded into the Dissolution Chamber entry). Only two entities exist (entity.mekanism.robit, entity.mekanism.flame) and the mod adds no dimensions, so no kill: or dim: steps apply."
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "sources": [
+    "https://wiki.aidancbrady.com/wiki/Ore_Processing",
+    "https://wiki.aidancbrady.com/wiki/Home",
+    "https://github.com/mekanism/Mekanism"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Infusion and steel",
+      "Independent ore-processing tiers",
+      "Equipment and quantum logistics",
+      "HDPE",
+      "Nuclear-waste and antimatter branch"
+    ],
+    "limits": [
+      "Nuclear-waste milestones need Mekanism Generators or a pack-provided waste source.",
+      "Does not cover every factory tier, QIO system, or module.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": false,
+    "cached_jar_versions": [
+      "10.4.16"
+    ]
+  }
 }

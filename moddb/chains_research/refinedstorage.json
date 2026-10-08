@@ -1,170 +1,277 @@
 {
- "mod": "refinedstorage",
- "verified_against": "refinedstorage-1.12.4.jar",
- "item_count_in_jar": 91,
- "chain": [
-  {
-   "id": "refinedstorage:quartz_enriched_iron",
-   "title": "Iron Laced With Quartz",
-   "desc": "Craft quartz enriched iron from iron ingots and nether quartz; it is the base metal of every Refined Storage component."
-  },
-  {
-   "id": "refinedstorage:silicon",
-   "title": "Sand Of Pure Thought",
-   "desc": "Smelt nether quartz into silicon, the wafer every processor is printed on."
-  },
-  {
-   "id": "refinedstorage:processor_binding",
-   "title": "Slime And Sinew",
-   "desc": "Bind slimeballs with string to make the processor binding that holds a raw circuit together."
-  },
-  {
-   "id": "refinedstorage:basic_processor",
-   "title": "The First Circuit Fires",
-   "desc": "Combine silicon, iron, redstone and a processor binding into a raw basic processor, then smelt it into the finished chip."
-  },
-  {
-   "id": "refinedstorage:machine_casing",
-   "title": "A Shell Worth Building In",
-   "desc": "Ring stone with quartz enriched iron to form the machine casing that houses nearly every network block."
-  },
-  {
-   "id": "refinedstorage:improved_processor",
-   "title": "Gilded Logic",
-   "desc": "Swap the iron for gold to print an improved processor, the mid-tier chip used by grids and upgrades."
-  },
-  {
-   "id": "refinedstorage:construction_core",
-   "title": "The Mind That Places",
-   "desc": "Mix a basic processor with glowstone dust to make the construction core, the half of the network that puts things down."
-  },
-  {
-   "id": "refinedstorage:destruction_core",
-   "title": "The Mind That Breaks",
-   "desc": "Mix a basic processor with nether quartz to make the destruction core, the half of the network that takes things apart."
-  },
-  {
-   "id": "refinedstorage:advanced_processor",
-   "title": "Diamond-Cut Reasoning",
-   "desc": "Print a raw advanced processor with a diamond and smelt it; controllers, disk drives and crafters all demand one."
-  },
-  {
-   "id": "refinedstorage:controller",
-   "title": "The Network Draws Breath",
-   "desc": "Build the controller from advanced processors, silicon and a machine casing. Everything downstream needs its power."
-  },
-  {
-   "id": "refinedstorage:cable",
-   "title": "Threading The Network",
-   "desc": "Craft cable from quartz enriched iron, redstone and glass to carry the network signal between blocks."
-  },
-  {
-   "id": "refinedstorage:grid",
-   "title": "A Window Into Everything",
-   "desc": "The grid pairs a construction and destruction core with an improved processor, giving you a searchable view of the whole network."
-  },
-  {
-   "id": "refinedstorage:storage_housing",
-   "title": "An Empty Vessel",
-   "desc": "Craft the storage housing that any storage part can be slotted into to become a finished disk."
-  },
-  {
-   "id": "refinedstorage:1k_storage_part",
-   "title": "One Thousand Promises",
-   "desc": "Silicon, glass, redstone and quartz enriched iron form the 1k storage part, the first rung of the disk ladder."
-  },
-  {
-   "id": "refinedstorage:1k_storage_disk",
-   "title": "First Platter Spun Up",
-   "desc": "Seat a 1k storage part into a storage housing to make a working 1k disk holding one thousand items."
-  },
-  {
-   "id": "refinedstorage:disk_drive",
-   "title": "The Spinning Library",
-   "desc": "Craft the disk drive from a chest, machine casing and advanced processors; it is where the network's disks actually live."
-  },
-  {
-   "id": "refinedstorage:importer",
-   "title": "Pulling Things Inward",
-   "desc": "Cable, a destruction core and an improved processor make the importer, which sucks items out of adjacent inventories."
-  },
-  {
-   "id": "refinedstorage:exporter",
-   "title": "Pushing Things Outward",
-   "desc": "The mirror of the importer, built with a construction core, feeding items back out to machines and chests."
-  },
-  {
-   "id": "refinedstorage:external_storage",
-   "title": "Annexing The Chests",
-   "desc": "External storage exposes an entire adjacent inventory to the network without moving a single item into a disk."
-  },
-  {
-   "id": "refinedstorage:crafting_grid",
-   "title": "Craft Without Carrying",
-   "desc": "Upgrade a grid into a crafting grid so recipes pull their ingredients straight from network storage."
-  },
-  {
-   "id": "refinedstorage:pattern_grid",
-   "title": "Blueprints On Glass",
-   "desc": "The pattern grid writes recipes onto patterns, the instruction sheets autocrafting runs on."
-  },
-  {
-   "id": "refinedstorage:crafter",
-   "title": "Hands That Never Tire",
-   "desc": "Load patterns into a crafter and the network builds recipes on demand instead of waiting on you."
-  },
-  {
-   "id": "refinedstorage:wireless_transmitter",
-   "title": "Casting The Signal Out",
-   "desc": "An ender pearl, advanced processor and machine casing broadcast the network beyond its cables."
-  },
-  {
-   "id": "refinedstorage:wireless_grid",
-   "title": "Your Storage, Untethered",
-   "desc": "Bind a wireless grid to a transmitter and carry the entire network in one inventory slot."
+  "mod": "refinedstorage",
+  "verified_against": "refinedstorage-1.12.4.jar",
+  "item_count_in_jar": 91,
+  "chain": [
+    {
+      "id": "refinedstorage:quartz_enriched_iron",
+      "title": "A material for the storage room",
+      "desc": "Craft Quartz Enriched Iron using this pack's recipe. Keep a supply for machine casings, cables, and storage components.",
+      "requires": []
+    },
+    {
+      "id": "refinedstorage:silicon",
+      "title": "Processor raw material",
+      "desc": "Smelt nether quartz into silicon using the installed recipe. It is one part of every processor, so set aside enough for the controller and your first storage devices.",
+      "requires": []
+    },
+    {
+      "id": "refinedstorage:processor_binding",
+      "title": "Bind the processors",
+      "desc": "Craft Processor Binding and gather the metals required for each processor tier. Raw processors must be smelted before they become usable components.",
+      "requires": []
+    },
+    {
+      "id": "refinedstorage:basic_processor",
+      "title": "Make the basic processors",
+      "desc": "Craft and smelt Raw Basic Processors. These support storage and network hardware; batch them alongside silicon instead of repeatedly rebuilding the recipe.",
+      "requires": [
+        "refinedstorage:silicon",
+        "refinedstorage:processor_binding"
+      ]
+    },
+    {
+      "id": "refinedstorage:machine_casing",
+      "title": "Frame the network devices",
+      "desc": "Make Machine Casings for the controller, grid, and storage hardware. They are shared components, so choose the first devices around a small usable network.",
+      "requires": [
+        "refinedstorage:quartz_enriched_iron"
+      ]
+    },
+    {
+      "id": "refinedstorage:improved_processor",
+      "title": "An improved processor",
+      "desc": "Craft and smelt the gold-based Improved Processor. Use it for more capable network devices as your storage needs grow.",
+      "requires": [
+        "refinedstorage:silicon",
+        "refinedstorage:processor_binding"
+      ]
+    },
+    {
+      "id": "refinedstorage:construction_core",
+      "title": "Insert and construct",
+      "desc": "Create a Construction Core. This component supports devices that place or move stored resources outward from your system.",
+      "requires": [
+        "refinedstorage:basic_processor"
+      ]
+    },
+    {
+      "id": "refinedstorage:destruction_core",
+      "title": "Extract and recover",
+      "desc": "Create a Destruction Core for the extraction side of the network. It complements construction components in grids and item-routing devices.",
+      "requires": [
+        "refinedstorage:basic_processor"
+      ]
+    },
+    {
+      "id": "refinedstorage:advanced_processor",
+      "title": "Advanced control",
+      "desc": "Craft and smelt the diamond-based Advanced Processor. Reserve the first one for the controller, then expand toward crafting and wireless devices.",
+      "requires": [
+        "refinedstorage:silicon",
+        "refinedstorage:processor_binding"
+      ]
+    },
+    {
+      "id": "refinedstorage:controller",
+      "title": "Power the storage network",
+      "desc": "Supply the Controller with Forge Energy and connect the first devices. Watch network power use as you add machines; extra grids and drives also consume energy.",
+      "requires": [
+        "refinedstorage:machine_casing",
+        "refinedstorage:advanced_processor"
+      ]
+    },
+    {
+      "id": "refinedstorage:cable",
+      "title": "Reach the workstations",
+      "desc": "Run cables from the powered controller to nearby devices. Keep the first network compact so power and connection problems are easy to find.",
+      "requires": [
+        "refinedstorage:quartz_enriched_iron"
+      ]
+    },
+    {
+      "id": "refinedstorage:storage_housing",
+      "title": "A shell for the disk",
+      "desc": "Build a Storage Housing for your first item disk. The housing is only the container; a storage part supplies the usable capacity.",
+      "requires": [
+        "refinedstorage:quartz_enriched_iron"
+      ]
+    },
+    {
+      "id": "refinedstorage:1k_storage_part",
+      "title": "The first storage capacity",
+      "desc": "Craft a 1k Storage Part and combine it with a housing. Larger parts can come later; a working small network is enough to start organizing the base.",
+      "requires": [
+        "refinedstorage:basic_processor"
+      ]
+    },
+    {
+      "id": "refinedstorage:1k_storage_disk",
+      "title": "Assemble the first disk",
+      "desc": "Combine the part and housing into a storage disk. Insert it into a Disk Drive before testing the grid.",
+      "requires": [
+        "refinedstorage:storage_housing",
+        "refinedstorage:1k_storage_part"
+      ]
+    },
+    {
+      "id": "refinedstorage:disk_drive",
+      "title": "Install your disks",
+      "desc": "Connect a Disk Drive to the controller and install a storage disk. Leave room for additional drives or use external storage for large bulk inventories.",
+      "requires": [
+        "refinedstorage:machine_casing",
+        "refinedstorage:improved_processor"
+      ]
+    },
+    {
+      "id": "refinedstorage:grid",
+      "title": "Search, store, retrieve",
+      "desc": "Connect a Grid and test both depositing and withdrawing items. A blank grid can mean an empty disk, missing storage, or an unpowered network.",
+      "requires": [
+        "refinedstorage:controller",
+        "refinedstorage:cable",
+        "refinedstorage:disk_drive",
+        "refinedstorage:1k_storage_disk",
+        "refinedstorage:construction_core",
+        "refinedstorage:destruction_core"
+      ]
+    },
+    {
+      "id": "refinedstorage:importer",
+      "title": "Bring machine outputs home",
+      "desc": "Attach an Importer to a chest or machine output. Configure filters and test a small batch before continuously feeding resources into the network.",
+      "requires": [
+        "refinedstorage:grid"
+      ]
+    },
+    {
+      "id": "refinedstorage:exporter",
+      "title": "Keep a machine supplied",
+      "desc": "Use an Exporter to stock selected items in a machine or inventory. Set filters deliberately to avoid filling a machine with the wrong ingredient.",
+      "requires": [
+        "refinedstorage:grid"
+      ]
+    },
+    {
+      "id": "refinedstorage:external_storage",
+      "title": "Keep bulk storage where it is",
+      "desc": "Attach External Storage to an existing inventory and set its priority. Bulk drawers or barrels can stay in place while the Grid presents their contents alongside disk storage.",
+      "requires": [
+        "refinedstorage:grid"
+      ]
+    },
+    {
+      "id": "refinedstorage:crafting_grid",
+      "title": "Craft without leaving storage",
+      "desc": "Upgrade to a Crafting Grid for manual recipes using stored items. This convenience does not depend on completing the autocrafting branch.",
+      "requires": [
+        "refinedstorage:grid",
+        "refinedstorage:advanced_processor"
+      ]
+    },
+    {
+      "id": "refinedstorage:pattern_grid",
+      "title": "Encode repeatable recipes",
+      "desc": "Create a Pattern Grid and encode a simple recipe. For machine processing, describe exact inputs and outputs and ensure the finished products return to storage.",
+      "requires": [
+        "refinedstorage:crafting_grid"
+      ]
+    },
+    {
+      "id": "refinedstorage:crafter",
+      "title": "Request your first automatic craft",
+      "desc": "Connect a Crafter, insert a pattern, and request a small job. Place processing Crafters against the target machine and return its outputs through an Importer or another valid route.",
+      "requires": [
+        "refinedstorage:pattern_grid"
+      ]
+    },
+    {
+      "id": "refinedstorage:wireless_transmitter",
+      "title": "Extend access beyond the room",
+      "desc": "Attach a Wireless Transmitter to the network. Range upgrades and dimension access depend on the installed version and addons, so check the local upgrade recipes.",
+      "requires": [
+        "refinedstorage:grid",
+        "refinedstorage:advanced_processor"
+      ]
+    },
+    {
+      "id": "refinedstorage:wireless_grid",
+      "title": "Storage in your hand",
+      "desc": "Charge a Wireless Grid and link it to the controller. Test it nearby first, then expand range after the basic connection works.",
+      "requires": [
+        "refinedstorage:wireless_transmitter"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "hub": "refinedstorage:disk_drive",
+      "members": [
+        "refinedstorage:1k_storage_part",
+        "refinedstorage:4k_storage_part",
+        "refinedstorage:16k_storage_part",
+        "refinedstorage:64k_storage_part",
+        "refinedstorage:4k_storage_disk",
+        "refinedstorage:16k_storage_disk",
+        "refinedstorage:64k_storage_disk",
+        "refinedstorage:64k_storage_block"
+      ]
+    },
+    {
+      "hub": "refinedstorage:fluid_grid",
+      "members": [
+        "refinedstorage:64k_fluid_storage_part",
+        "refinedstorage:256k_fluid_storage_part",
+        "refinedstorage:1024k_fluid_storage_part",
+        "refinedstorage:4096k_fluid_storage_part",
+        "refinedstorage:64k_fluid_storage_disk",
+        "refinedstorage:256k_fluid_storage_disk",
+        "refinedstorage:1024k_fluid_storage_disk",
+        "refinedstorage:4096k_fluid_storage_disk"
+      ]
+    },
+    {
+      "hub": "refinedstorage:upgrade",
+      "members": [
+        "refinedstorage:speed_upgrade",
+        "refinedstorage:stack_upgrade",
+        "refinedstorage:range_upgrade",
+        "refinedstorage:crafting_upgrade",
+        "refinedstorage:regulator_upgrade",
+        "refinedstorage:silk_touch_upgrade",
+        "refinedstorage:fortune_1_upgrade",
+        "refinedstorage:fortune_2_upgrade",
+        "refinedstorage:fortune_3_upgrade"
+      ]
+    }
+  ],
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "sources": [
+    "https://refinedmods.com/refined-storage/getting-started.html",
+    "https://refinedmods.com/refined-storage/guides/processing-recipes.html",
+    "https://github.com/refinedmods/refinedstorage"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Processor bootstrap",
+      "First disk network",
+      "Import/export and bulk storage",
+      "Pattern crafting",
+      "Wireless access"
+    ],
+    "limits": [
+      "Targets cached Refined Storage 1.12.4 for Minecraft 1.20.1. Current 2.x documentation uses renamed machines; this guide keeps the verified 1.x IDs.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": false,
+    "cached_jar_versions": [
+      "1.12.4"
+    ]
   }
- ],
- "collections": [
-  {
-   "hub": "refinedstorage:disk_drive",
-   "members": [
-    "refinedstorage:1k_storage_part",
-    "refinedstorage:4k_storage_part",
-    "refinedstorage:16k_storage_part",
-    "refinedstorage:64k_storage_part",
-    "refinedstorage:4k_storage_disk",
-    "refinedstorage:16k_storage_disk",
-    "refinedstorage:64k_storage_disk",
-    "refinedstorage:64k_storage_block"
-   ]
-  },
-  {
-   "hub": "refinedstorage:fluid_grid",
-   "members": [
-    "refinedstorage:64k_fluid_storage_part",
-    "refinedstorage:256k_fluid_storage_part",
-    "refinedstorage:1024k_fluid_storage_part",
-    "refinedstorage:4096k_fluid_storage_part",
-    "refinedstorage:64k_fluid_storage_disk",
-    "refinedstorage:256k_fluid_storage_disk",
-    "refinedstorage:1024k_fluid_storage_disk",
-    "refinedstorage:4096k_fluid_storage_disk"
-   ]
-  },
-  {
-   "hub": "refinedstorage:upgrade",
-   "members": [
-    "refinedstorage:speed_upgrade",
-    "refinedstorage:stack_upgrade",
-    "refinedstorage:range_upgrade",
-    "refinedstorage:crafting_upgrade",
-    "refinedstorage:regulator_upgrade",
-    "refinedstorage:silk_touch_upgrade",
-    "refinedstorage:fortune_1_upgrade",
-    "refinedstorage:fortune_2_upgrade",
-    "refinedstorage:fortune_3_upgrade"
-   ]
-  }
- ],
- "notes": "Chain derived from data/refinedstorage/recipes/**. Verified dependency spine: iron+quartz -> quartz_enriched_iron; quartz -(smelt)-> silicon; slimeball+string -> processor_binding; silicon+binding+iron/gold/diamond -> raw_{basic,improved,advanced}_processor -(smelt)-> processor; stone+quartz_enriched_iron -> machine_casing; basic_processor+glowstone/quartz -> construction_core/destruction_core; controller needs advanced_processor+machine_casing+silicon. Storage ladder confirmed as 1k -> 4k (basic_processor) -> 16k (improved_processor) -> 64k (advanced_processor); fluid ladder 64k -> 256k -> 1024k -> 4096k. Disks are part+storage_housing. Autocrafting spine confirmed: pattern (glass+redstone+qei) -> pattern_grid -> crafter (advanced_processor + both cores) -> crafter_manager/crafting_monitor. Wireless line confirmed: wireless_grid = grid + advanced_processor + ender pearl, and wireless_transmitter is the paired network block. MODDB AGREEMENT: quartz_enriched_iron first (pos 0.0), machine_casing 0.073, basic_processor 0.083, controller 0.12, disk_drive 0.397, crafting_grid 0.528 -- all match the recipe order used here. MODDB CONFLICTS: (1) moddb ranks silicon at 0.207, i.e. AFTER machine_casing and basic_processor, but the recipe graph requires silicon before any processor exists -- recipe order used. (2) moddb ranks importer 0.159 / exporter 0.247 before grid 0.456 and disk_drive 0.397; published packs gate these cheap I/O blocks early, but they are useless before a controller and drive exist, so they are placed after the drive here. (3) moddb ranks external_storage and portable_grid at 0.306, before grid -- both literally require a grid/controller in their recipe, so recipe order was used. COLOR VARIANTS: the jar ships 16 dyed recipes for controller/grid/crafter/etc., but only the base ids carry lang keys, so no dyed id is used anywhere in this file. silk_touch_upgrade and fortune_*_upgrade use the custom recipe type refinedstorage:upgrade_with_enchanted_book (enchanted book + upgrade), not a vanilla shaped recipe. ID VERIFICATION: every id in this file was set-membership-checked against the jar; nothing was dropped."
 }

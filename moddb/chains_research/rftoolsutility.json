@@ -1,0 +1,202 @@
+{
+  "mod": "rftoolsutility",
+  "chain": [
+    {
+      "id": "rftoolsutility:crafter1",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "Automate one repeatable craft",
+      "desc": "Power a Tier 1 Crafter, configure a recipe, and assign ingredient slots and output behavior. Run a small batch before connecting an unlimited resource supply."
+    },
+    {
+      "id": "rftoolsutility:crafter2",
+      "requires": [
+        "rftoolsutility:crafter1"
+      ],
+      "title": "More recipes in the same station",
+      "desc": "Upgrade the Crafter when the process needs additional recipe slots. Choose which intermediate outputs stay inside for later recipes and which leave the machine."
+    },
+    {
+      "id": "rftoolsutility:crafter3",
+      "requires": [
+        "rftoolsutility:crafter2"
+      ],
+      "title": "A compact production sequence",
+      "desc": "Use the larger Crafter for a sequence of dependent recipes. Reserve enough internal space for intermediates and test the complete sequence before increasing the input rate."
+    },
+    {
+      "id": "rftoolsutility:matter_receiver",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "Prepare a destination",
+      "desc": "Place and power a Matter Receiver at a safe destination. Name and configure access to it so the teleport route leads somewhere intentional."
+    },
+    {
+      "id": "rftoolsutility:matter_transmitter",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "Build the departure station",
+      "desc": "Place and power a Matter Transmitter. A useful route needs an available receiver and a way to select the destination."
+    },
+    {
+      "id": "rftoolsutility:dialing_device",
+      "requires": [
+        "rftoolsutility:matter_receiver",
+        "rftoolsutility:matter_transmitter"
+      ],
+      "title": "Dial the first teleport route",
+      "desc": "Use the Dialing Device to link the intended transmitter and receiver. Test a short safe route, then verify the return option before adding remote destinations."
+    },
+    {
+      "id": "rftoolsutility:charged_porter",
+      "requires": [
+        "rftoolsutility:matter_receiver"
+      ],
+      "title": "Keep a portable way home",
+      "desc": "Bind and charge a Charged Porter for a prepared receiver. Test the connection while close to safety before depending on it during an expedition."
+    },
+    {
+      "id": "rftoolsutility:advanced_charged_porter",
+      "requires": [
+        "rftoolsutility:charged_porter"
+      ],
+      "title": "Manage several return points",
+      "desc": "Upgrade to an Advanced Charged Porter and configure its supported destinations. Keep each destination powered and available when you travel."
+    },
+    {
+      "id": "rftoolsutility:screen",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "A display for the workshop",
+      "desc": "Place a Screen and add the desired modules. It needs the supported power arrangement and configuration before its useful information appears."
+    },
+    {
+      "id": "rftoolsutility:screen_controller",
+      "requires": [
+        "rftoolsutility:screen"
+      ],
+      "title": "Power the display group",
+      "desc": "Power a Screen Controller and scan for the intended screens. Recheck the detected group after moving displays or adding new ones."
+    },
+    {
+      "id": "rftoolsutility:text_module",
+      "requires": [],
+      "title": "Label what the screen means",
+      "desc": "Configure a Text Module with a useful station label or instruction. Combine it with live readings so players can tell what a displayed value describes."
+    },
+    {
+      "id": "rftoolsutility:energy_module",
+      "requires": [
+        "rftoolsutility:screen"
+      ],
+      "title": "Watch an energy buffer",
+      "desc": "Bind and configure an Energy Module for the intended machine or storage. Display it on a powered screen and verify its reading against the target's own interface."
+    },
+    {
+      "id": "rftoolsutility:inventory_module",
+      "requires": [
+        "rftoolsutility:screen"
+      ],
+      "title": "Show the resources that matter",
+      "desc": "Configure an Inventory Module for selected inventory information. Use it to expose shortages or output jams where the factory operator can see them."
+    },
+    {
+      "id": "rftoolsutility:redstone_transmitter",
+      "requires": [],
+      "title": "Send a control signal wirelessly",
+      "desc": "Place and configure a Redstone Transmitter for a deliberate channel. Test with a simple signal before using it to switch a valuable automated process."
+    },
+    {
+      "id": "rftoolsutility:redstone_receiver",
+      "requires": [
+        "rftoolsutility:redstone_transmitter"
+      ],
+      "title": "Receive the control channel",
+      "desc": "Configure the receiver to match the transmitter and test both on and off states. Wireless redstone controls a device; it does not supply the device's energy."
+    },
+    {
+      "id": "rftoolsutility:environmental_controller",
+      "requires": [
+        "rftoolsbase:machine_frame"
+      ],
+      "title": "Create a supported work area",
+      "desc": "Power an Environmental Controller and configure its area and player filters. Add only the effect modules you need so the ongoing energy demand stays intentional."
+    },
+    {
+      "id": "rftoolsutility:nightvision_module",
+      "requires": [
+        "rftoolsutility:environmental_controller"
+      ],
+      "title": "Light the work area for its users",
+      "desc": "Install a Night Vision module in the configured controller. Verify the effect reaches the intended users and area before expanding the range."
+    },
+    {
+      "id": "rftoolsutility:flight_module",
+      "requires": [
+        "rftoolsutility:environmental_controller"
+      ],
+      "title": "Flight inside the configured area",
+      "desc": "Install a Flight module with enough ongoing power. Test the boundary close to the ground; leaving the active area or losing power can remove the effect."
+    },
+    {
+      "id": "rftoolsutility:syringe",
+      "requires": [],
+      "title": "Sample the intended creature",
+      "desc": "Use a Syringe to gather the mob information required by the spawning system. Check the sample status before building a farm around it."
+    },
+    {
+      "id": "rftoolsutility:spawner",
+      "requires": [
+        "rftoolsbase:machine_frame",
+        "rftoolsutility:syringe"
+      ],
+      "title": "Plan a selected-mob farm",
+      "desc": "Place the Spawner in a prepared chamber with the configured syringe. Its resource requirements depend on the selected creature, so read them before building the supply lines."
+    },
+    {
+      "id": "rftoolsutility:matter_beamer",
+      "requires": [
+        "rftoolsutility:spawner"
+      ],
+      "title": "Feed the spawning recipe",
+      "desc": "Link powered Matter Beamers to the Spawner and supply the required matter categories. Test one spawn cycle and provide separate handling for the resulting mobs."
+    }
+  ],
+  "sources": [
+    "https://github.com/McJtyMods/RFToolsUtility",
+    "https://mcjty.eu/docs/mods/rftools"
+  ],
+  "coverage": {
+    "minecraft_versions": [
+      "1.20.1"
+    ],
+    "reviewed": "2026-10-07",
+    "scope": "Authored branched progression; item and component acquisition objectives, not automatic proof that a factory works.",
+    "milestones": [
+      "Tiered automatic crafting",
+      "Teleport stations and portable returns",
+      "Modular information screens",
+      "Wireless redstone",
+      "Environmental effects",
+      "Resource-fed mob spawning"
+    ],
+    "limits": [
+      "Targets cached RFTools Utility 1.20-6.0.7.",
+      "Effect modules are selected examples, not a demand to craft every variant.",
+      "Teleport routes and spawner settings require player configuration and are not detected by component acquisition.",
+      "Pack scripts, recipe changes, and other Minecraft versions require the installed-pack scan; this guide is not a complete mod manual."
+    ],
+    "verification": "Local JAR item models and English registry names; selected recipes and bundled manuals checked. Not a new in-game playthrough.",
+    "installed_pack_jar_available": false,
+    "cached_jar_versions": [
+      "1.20-6.0.7"
+    ]
+  },
+  "notes": "Re-reviewed 2026-10-07 against local Minecraft 1.20.1 JAR item assets and selected recipes/manuals, with official project sources listed separately. Every authored row now has explicit prerequisites; empty lists identify intentional branch roots. The coverage section states the verified versions and remaining limits. This replaces older list-order and item-count claims.",
+  "verified_against": "rftools-utility.jar (cached Minecraft 1.20.1 research fixture)",
+  "item_count_in_jar": 71
+}
